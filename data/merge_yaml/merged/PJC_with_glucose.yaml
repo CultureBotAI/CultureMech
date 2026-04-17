@@ -1,6 +1,7 @@
-name: PJC with glucose
+id: CultureMech:007432
+name: pjc_with_glucose
 original_name: PJC with glucose
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -20,6 +21,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: Cobaltous sulfate
   concentration:
     value: '0.004'
@@ -31,6 +35,9 @@ ingredients:
   concentration:
     value: '0.811'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -38,6 +45,9 @@ ingredients:
   concentration:
     value: '0.017'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -45,6 +55,9 @@ ingredients:
   concentration:
     value: '37.4'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.043'
@@ -56,10 +69,19 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '7.25'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -76,6 +98,19 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 85, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:49.026769Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007432'
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:07.407005+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PJC with glucose" to "pjc_with_glucose" for consistent
+    matching
 media_term:
   preferred_term: MediaDB Medium 85
   term:
@@ -87,6 +122,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: c1a9c1e89e12e5c824a2f8dd4c95f230af1662f41c8a6c6a5c1860130b76c7f1
+merge_fingerprint: 5e162abfc8d71ab810e192e9ad7cc43287ba669d140c53d29864e6afffa63673
 merged_from:
-- MEDIADB_85_PJC_with_glucose
+- pjc_with_glucose

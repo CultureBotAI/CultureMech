@@ -1,6 +1,7 @@
-name: Beer Medium
+id: CultureMech:009811
+name: beer_medium
 original_name: Beer Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -10,6 +11,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '2'
@@ -19,6 +23,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Sodium acetate
   concentration:
     value: '5'
@@ -27,6 +34,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Tween 80
   concentration:
     value: '1'
@@ -36,6 +46,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '50'
@@ -51,6 +64,9 @@ ingredients:
   term:
     id: CHEBI:63076
     label: diammonium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000400
+    label: Diammonium citrate
 - preferred_term: Glucose
   concentration:
     value: '20'
@@ -60,6 +76,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: hopped beer
   concentration:
     value: '1'
@@ -101,6 +120,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 77263a89203e2d7843b81a6713c692105e571c65571d75eebd5c1e174b26dae2
+- timestamp: '2026-03-13T06:20:09.066470Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009811'
+- timestamp: '2026-03-17T06:30:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.051432+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Beer Medium" to "beer_medium" for consistent matching
+merge_fingerprint: 59f1bdb16bf8a9aa47f8fb7eb6e70b925e23083ff0711f5d41511cb539783de3
 merged_from:
 - TOGO_M426_Beer_Medium

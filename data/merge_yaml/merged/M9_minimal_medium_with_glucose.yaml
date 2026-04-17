@@ -1,6 +1,7 @@
-name: M9 minimal medium with glucose
+id: CultureMech:007424
+name: m9_minimal_medium_with_glucose
 original_name: M9 minimal medium with glucose
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -11,6 +12,9 @@ ingredients:
   concentration:
     value: '11.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
@@ -26,6 +30,9 @@ ingredients:
   concentration:
     value: '8.6'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0'
@@ -37,6 +44,9 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -44,6 +54,9 @@ ingredients:
   concentration:
     value: '19.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -60,6 +73,19 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 76, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:48.988245Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007424'
+- timestamp: '2026-03-17T06:29:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:07.365763+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M9 minimal medium with glucose" to "m9_minimal_medium_with_glucose"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 76
   term:
@@ -73,4 +99,4 @@ applications:
 - Systems biology research
 merge_fingerprint: b11b1306c9c2f2317903ef59be406e908964382e29e5af0a230801411f0d6ccd
 merged_from:
-- MEDIADB_76_M9_minimal_medium_with_glucose
+- m9_minimal_medium_with_glucose

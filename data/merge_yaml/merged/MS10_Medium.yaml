@@ -1,6 +1,7 @@
-name: MS10 Medium
+id: CultureMech:007308
+name: ms10_medium
 original_name: MS10 Medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -11,6 +12,9 @@ ingredients:
   concentration:
     value: '0.2448'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001025
+    label: Tryptophan
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -18,6 +22,9 @@ ingredients:
   concentration:
     value: '55.51'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -26,10 +33,10 @@ ingredients:
     value: '2.265'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.008123'
     unit: MILLIMOLAR
@@ -41,6 +48,9 @@ ingredients:
   concentration:
     value: '1.403'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001023
+    label: Cysteine
 - preferred_term: Glutamine
   concentration:
     value: '3.49'
@@ -53,6 +63,9 @@ ingredients:
     value: '0.04093'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: DL-Serine
   concentration:
     value: '3.235'
@@ -65,6 +78,9 @@ ingredients:
     value: '0.02973'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydam'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001024
+    label: Pyridoxamine
 - preferred_term: Histidine
   term:
     id: CHEBI:27570
@@ -72,6 +88,9 @@ ingredients:
   concentration:
     value: '0.7089'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000355
+    label: Histidine
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -79,6 +98,9 @@ ingredients:
   concentration:
     value: '0.002099'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '66.13'
@@ -98,6 +120,9 @@ ingredients:
   concentration:
     value: '0.8042'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000774
+    label: DL-methionine
 - preferred_term: Leucine
   concentration:
     value: '3.583'
@@ -109,6 +134,9 @@ ingredients:
   concentration:
     value: '5.906'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000396
+    label: Proline
 - preferred_term: Isoleucine
   concentration:
     value: '1.525'
@@ -117,6 +145,9 @@ ingredients:
   concentration:
     value: '1.601'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000316
+    label: DL-Tyrosine
 - preferred_term: Alanine
   concentration:
     value: '2.694'
@@ -128,6 +159,9 @@ ingredients:
   concentration:
     value: '0.6889'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000341
+    label: Arginine
 - preferred_term: Phenylalanine
   concentration:
     value: '1.695'
@@ -139,6 +173,9 @@ ingredients:
   concentration:
     value: '2.573'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000907
+    label: Asparagine
 - preferred_term: Valine
   concentration:
     value: '2.817'
@@ -150,6 +187,9 @@ ingredients:
   concentration:
     value: '1.362'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.9838'
@@ -157,6 +197,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '42.92'
@@ -181,6 +224,23 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:50.550585Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:47.650210Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007308'
+- timestamp: '2026-03-17T06:30:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:05.936070+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MS10 Medium" to "ms10_medium" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 408
   term:
@@ -192,6 +252,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: f63d80279a2d6cbace11396629c79a1f4fd98aab465162eb8fd12a360461bb22
+merge_fingerprint: 8b72512612f0637b63ab0df135d0d3a4bf9668c0bd808c3b130a9e34f93d107e
 merged_from:
-- MEDIADB_408_MS10_Medium
+- ms10_medium

@@ -1,146 +1,246 @@
-name: EGGC Liquid Medium
-original_name: EGGC Liquid Medium
-category: imported
+id: CultureMech:002220
+name: eggc_liquid_medium
+original_name: EGGC LIQUID MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J1036
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Sodium acetate
+    id: mediadive.medium:J1036
+    label: EGGC LIQUID MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1036'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
-    value: '0.3'
+    value: '0.5923'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
-    label: sodium acetate
-- preferred_term: CaCO3
+    label: Sodium acetate
   concentration:
-    value: '0.02'
+    value: '0.29615'
     unit: G_PER_L
-  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic
-    compound, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.29615'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
+- preferred_term: CaCO3
   term:
     id: CHEBI:3311
-    label: calcium carbonate
-- preferred_term: Glucose
+    label: CaCO3
   concentration:
-    value: '0.6'
+    value: '0.0197433'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Casamino acids (BD-Difco)
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Solution A (see below)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Solution B (see below)
-  concentration:
-    value: '8'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: KCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: 0.5 M Na2HPO4--NaH2PO4 buffer (pH 7.3)
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: Na2HPO4-NaH2PO4 buffer
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound,
-    Complex component'
-- preferred_term: Vitamins mix solution (see Medium [M290])
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: FeCl3 solution (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '300'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
-    Inorganic compound'
+- preferred_term: FeCl3 x 6 H2O
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: FeCl3・6H2O
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
   concentration:
-    value: '0.15'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-media_term:
-  preferred_term: TOGO Medium M1100
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
+- preferred_term: Riboflavin
   term:
-    id: TOGO:M1100
-    label: EGGC Liquid Medium
-notes: 'Source: https://togomedium.org/medium/M1100
-
-  Original source: JCM - JCM_M1036
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1036'
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
+- preferred_term: Myo-inositol
+  term:
+    id: CHEBI:17268
+    label: Myo-inositol
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000500
+    label: Myo-inositol
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.0 - 7.2. Autoclave at 115C for 20 min. Separately sterilize
+    Solution B by filtration and add to the medium aseptically.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Mix and filter-sterilize just before addition to the medium.
+- step_number: 3
+  action: MIX
+  description: Prepare just before use.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:53.917998Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1100'
-- timestamp: '2026-01-28T19:48:06.840686Z'
+- timestamp: '2026-01-26T17:53:18.402664Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1036'
+- timestamp: '2026-01-28T19:48:41.170949Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 4368fddad052d0ea814988c2dab61134a5448584f47c8b45f75be76efbf6821e
+- timestamp: '2026-03-13T06:19:11.383644Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002220'
+- timestamp: '2026-03-17T06:30:53.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:24.170378+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "EGGC LIQUID MEDIUM" to "eggc_liquid_medium" for consistent
+    matching
+merge_fingerprint: 82279598ea53d289c0aad917538352def12061f9fdf277053815bc1966886992
 merged_from:
-- TOGO_M1100_EGGC_Liquid_Medium
+- eggc_liquid_medium

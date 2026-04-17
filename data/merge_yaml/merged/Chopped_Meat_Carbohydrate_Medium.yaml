@@ -1,14 +1,10 @@
-name: Chopped Meat Carbohydrate Medium
+id: CultureMech:009264
+name: chopped_meat_carbohydrate_medium
 original_name: Chopped Meat Carbohydrate Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Resazurin Solution (0.025%)
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
 - preferred_term: Yeast Extract
   concentration:
     value: '5'
@@ -23,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Starch
   concentration:
     value: '1'
@@ -32,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:85248
     label: gellan gum
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000929
+    label: Starch
 - preferred_term: Cellobiose
   concentration:
     value: '1'
@@ -41,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Maltose
   concentration:
     value: '1'
@@ -50,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000916
+    label: Maltose
 - preferred_term: Rumen fluid
   concentration:
     value: '150'
@@ -64,6 +72,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -72,6 +83,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Peptone
   concentration:
     value: '30'
@@ -89,11 +103,17 @@ ingredients:
   term:
     id: CHEBI:15356
     label: Cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001023
+    label: Cysteine
 - preferred_term: Nitrogen gas
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: NaOH (1N)
   concentration:
     value: '25'
@@ -133,6 +153,35 @@ curation_history:
   date: '2026-02-03T11:20:55.791897'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Nitrogen gas'
-merge_fingerprint: 95d77aa2f27db6275788a7c94f5c9282d31614a472d85c42f36bf312407dfbb3
+- timestamp: '2026-03-09T08:04:46.356178+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:04.825401Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009264'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:57.782257'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:24.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.587020+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Chopped Meat Carbohydrate Medium" to "chopped_meat_carbohydrate_medium"
+    for consistent matching
+solutions:
+- preferred_term: Resazurin Solution (0.025%)
+  composition: []
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution
+merge_fingerprint: 3306fe0c162047663feab40520f6b174ad0ffe5e57ba49898e1f4643910a39e1
 merged_from:
-- TOGO_M2713_Chopped_Meat_Carbohydrate_Medium
+- chopped_meat_carbohydrate_medium

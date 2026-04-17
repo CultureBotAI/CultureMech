@@ -1,48 +1,58 @@
-name: Nutrient Broth
-original_name: Nutrient Broth
-category: imported
+id: CultureMech:015471
+name: nutrient broth
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Bacto Peptone
   concentration:
-    value: '1'
+    value: '15'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Beef extract
+    id: FOODON:03302071
+    label: Peptone
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 51142-18-8'
+- preferred_term: Yeast Extract
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M681
   term:
-    id: TOGO:M681
-    label: Nutrient Broth
-notes: 'Source: https://togomedium.org/medium/M681
-
-  Original source: JCM - JCM_M663
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=663'
-applications:
-- Microbial cultivation
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
+- preferred_term: D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44'
+description: Nutrient broth medium
+notes: 'Source: FEBA media definitions'
+category: BACTERIAL
+sources:
+- database: CultureBotHT
+  database_id: nutrient broth
+  url: https://github.com/CultureBotAI/CultureBotHT
 curation_history:
-- timestamp: '2026-01-27T06:35:55.519876Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M681'
-- timestamp: '2026-01-28T19:48:29.123817Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 09f2d06f942ffcdbb7d070ec4a559d0991cf00cf76d2d68207953c146c378085
+- timestamp: '2026-03-18T04:31:15.467479+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: nutrient_broth.yaml'
+- timestamp: '2026-03-18T04:33:58.487706Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015471'
+data_quality_flags: []
+kg_microbe_match: mediadive.medium:681
+merge_fingerprint: 3e8602c516ac05955e64653f6a4eb00363ad95448cb2a3f18419b886ddf499c1
 merged_from:
-- TOGO_M681_Nutrient_Broth
+- nutrient_broth

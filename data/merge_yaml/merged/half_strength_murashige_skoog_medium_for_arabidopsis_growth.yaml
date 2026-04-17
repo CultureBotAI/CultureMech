@@ -1,0 +1,71 @@
+name: half_strength_murashige_skoog_medium_for_arabidopsis_growth
+original_name: Half-strength Murashige-Skoog medium for Arabidopsis growth
+category: specialized
+medium_type: DEFINED
+physical_state: LIQUID
+id: CultureMech:015433
+ingredients:
+- preferred_term: Murashige-Skoog basal salts
+  concentration:
+    value: '0.5'
+    unit: VARIABLE
+- preferred_term: Sucrose
+  concentration:
+    value: '1.0'
+    unit: PERCENT_W_V
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000214
+  term:
+    id: CHEBI:17992
+    label: sucrose
+- preferred_term: Agar
+  concentration:
+    value: '0.8'
+    unit: PERCENT_W_V
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000119
+  term:
+    id: CHEBI:2509
+    label: ''
+ph_value: 5.7
+temperature_value: 22.0
+notes: 'Vessel type: square petri plates (vertical orientation)
+
+  Light regime: 16h light / 8h dark
+
+  Light intensity: 120
+
+
+  Gnotobiotic plant growth system with 0.5× MS medium supplemented with 1% sucrose
+  and 0.8% agar. Seeds surface-sterilized prior to inoculation. Plates oriented vertically
+  to allow root observation and bacterial colonization tracking.
+
+  '
+source_data:
+  origin: CommunityMech
+  community_ids:
+  - CommunityMech:000003
+  - CommunityMech:000022
+  import_date: '2026-03-15'
+  notes: Imported from CommunityMech CommunityMech:000003, CommunityMech:000022
+  evidence:
+  - reference: doi:10.1038/nature16192
+    supports: SUPPORT
+    snippet: Using defined bacterial communities and a gnotobiotic Arabidopsis plant
+      system we show that the isolates form assemblies resembling natural microbiota
+      on their cognate host organs, but are also capable of ectopic leaf or root colonization
+curation_history:
+- timestamp: '2026-03-15T00:15:00.393357Z'
+  curator: communitymech-importer-v1.0
+  action: Imported from CommunityMech
+  notes: Created from CommunityMech:000003, CommunityMech:000022 growth_media record
+- timestamp: '2026-03-17T19:46:33.845908+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Half-strength Murashige-Skoog medium for Arabidopsis
+    growth" to "half_strength_murashige_skoog_medium_for_arabidopsis_growth" for consistent
+    matching
+kg_microbe_match: mediadive.medium:263
+merge_fingerprint: f4f564dc3bbc6b904751a943d64e5e8afdcbb7ab975d97f31697faa7e3aa345e
+merged_from:
+- Half_strength_Murashige_Skoog_medium_for_Arabidopsis_growth

@@ -1,7 +1,8 @@
-name: WC Medium
+id: CultureMech:000239
+name: wc_medium
 category: ALGAE
-medium_type: complex
-physical_state: liquid
+medium_type: COMPLEX
+physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
@@ -9,57 +10,62 @@ ingredients:
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: NaCl(Fisher S271-500)'
+  notes: 'Original amount: MES(CAS: 7365-45-9)'
 - preferred_term: '2'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
+  notes: 'Original amount: MWC Metal Solution'
 - preferred_term: '3'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: KCl(Fisher P 217)'
+  notes: 'Original amount: CaCl2•2H2O(CAS: 10035-04-8)'
 - preferred_term: '4'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: NaNO3(Fisher BP360-500)'
+  notes: 'Original amount: MgSO4•7H2O(CAS: 10034-99-8)'
 - preferred_term: '5'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
+  notes: 'Original amount: Na2Glycerophosphate.5H2O(CAS:  13408-09-8)'
 - preferred_term: '6'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: KH2PO4(Sigma P 0662)'
+  notes: 'Original amount: NaNO3(CAS: 7631-99-4)'
 - preferred_term: '7'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: Tricine (adjust to pH 8)(Sigma T-5816-256)'
+  notes: 'Original amount: Na2SiO3•9H2O(CAS: 13517-24-3)'
 - preferred_term: '8'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: P-II Metal Solution'
+  notes: 'Original amount: NH4NO3(CAS: 6484-52-2)'
 - preferred_term: '9'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: Chelated Iron Solution'
+  notes: 'Original amount: KCl(CAS:7447-40-7)'
 - preferred_term: '10'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: NH4Cl(Fisher A 649-500)'
+  notes: 'Original amount: Vitamin B12'
 - preferred_term: '11'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: Vitamin B12'
+  notes: 'Original amount: Biotin Vitamin Solution'
+- preferred_term: '12'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Thiamine Vitamin Solution'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural
@@ -100,35 +106,38 @@ curation_history:
 - curator: utex-import
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
-  notes: 'Source ID: wc-medium, URL: https://utex.org/products/wc-medium'
-- timestamp: '2026-02-19T08:26:36.646971+00:00'
+  notes: 'Source ID: wc-plus-medium, URL: https://utex.org/products/wc-plus-medium'
+- timestamp: '2026-03-13T06:18:53.691350Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000239'
+- timestamp: '2026-03-17T19:45:04.596600+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "WC+ Medium" to "wc_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:07.760348+00:00'
   curator: recipe-merger
-  action: Merged 5 duplicate recipes into canonical record
-  notes: 'Sources: Artificial_Seawater_Medium, LDM_Medium, Modified_Bolds_3N_Medium,
-    N_20_Medium, WC_Medium'
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DYIII_Medium, Modified_COMBO_Medium, P49_Medium, WC+_Medium'
 references:
-- reference_id: UTEX:wc-medium
-- reference_id: https://utex.org/products/wc-medium
-original_name: WC Medium
+- reference_id: UTEX:wc-plus-medium
+- reference_id: https://utex.org/products/wc-plus-medium
+original_name: WC+ Medium
 synonyms:
-- name: Artificial Seawater Medium
+- name: dyiii_medium
   source: unknown
   original_category: ALGAE
-- name: LDM Medium
+- name: modified_combo_medium
   source: unknown
   original_category: ALGAE
-- name: Modified Bolds 3N Medium
-  source: unknown
-  original_category: ALGAE
-- name: N/20 Medium
+- name: p49_medium
   source: unknown
   original_category: ALGAE
 categories:
 - ALGAE
 merged_from:
-- Artificial_Seawater_Medium
-- LDM_Medium
-- Modified_Bolds_3N_Medium
-- N_20_Medium
-- WC_Medium
-merge_fingerprint: 45f7523e48d1b708d46cf2b78b00715ccc525331a6a76c7e14ba1a90455d196d
+- DYIII_Medium
+- Modified_COMBO_Medium
+- P49_Medium
+- WC+_Medium
+merge_fingerprint: 6b820ca9a00625c3e6e7f38471ba0a5267d0b0ed57d40cc2ad07f7c754c0aab2

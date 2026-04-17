@@ -1,17 +1,21 @@
-name: Methanospirillum Medium
+id: CultureMech:008161
+name: methanospirillum_medium
 original_name: Methanospirillum Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '3.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: MgSO2·7H2O
   concentration:
@@ -21,22 +25,28 @@ ingredients:
     Simple component'
 - preferred_term: NaCl
   concentration:
-    value: '0.6'
+    value: '1.6'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 0.6, 1.0]'
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2·2H2O
   concentration:
-    value: '8'
+    value: '8.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 8.0, 0.1]'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.3'
@@ -45,6 +55,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -55,6 +68,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -63,6 +79,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Na2S·9H2O
   concentration:
@@ -73,6 +92,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S·9H2O
 - preferred_term: FeSO2·7H2O
   concentration:
     value: '2'
@@ -88,6 +110,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.3'
@@ -97,6 +122,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Sodium acetate
   concentration:
     value: '2.5'
@@ -105,6 +133,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '2'
@@ -115,6 +146,12 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000389
+    label: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: ''
 - preferred_term: Trypticase peptone (BBL)
   concentration:
     value: '2'
@@ -128,38 +165,33 @@ ingredients:
   term:
     id: CHEBI:62965
     label: sodium formate
-- preferred_term: Trace minerals*
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace vitamins**
-  concentration:
-    value: '10'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Sodium formate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: CHEBI:18276
+    label: ''
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '3'
@@ -169,24 +201,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-- preferred_term: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.01'
@@ -196,6 +213,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -205,12 +225,18 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.1'
@@ -220,6 +246,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: CuSO4·5H2O
   concentration:
     value: '0.01'
@@ -229,12 +258,18 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4·5H2O
 - preferred_term: CoSO4·7H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'
@@ -244,6 +279,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: MnSO4·xH2O
   concentration:
     value: '0.5'
@@ -259,20 +297,9 @@ ingredients:
   term:
     id: CHEBI:86463
     label: potassium aluminium sulfate
-- preferred_term: KOH solution
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001074
+    label: AlK(SO4)2
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -281,6 +308,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '5'
@@ -289,6 +319,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Thiamine-HCl
   concentration:
     value: '5'
@@ -297,6 +330,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine-HCl
 - preferred_term: Ca-pantothenate
   concentration:
     value: '5'
@@ -305,6 +341,9 @@ ingredients:
   term:
     id: CHEBI:29032
     label: (R)-pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000219
+    label: Ca-pantothenate
 - preferred_term: Pyridoxine-HCl
   concentration:
     value: '10'
@@ -313,6 +352,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine-HCl
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -321,6 +363,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '0.1'
@@ -329,6 +374,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -337,6 +385,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -345,6 +396,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Lipoic acid
   concentration:
     value: '5'
@@ -354,6 +408,9 @@ ingredients:
   term:
     id: CHEBI:16494
     label: lipoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: Lipoic acid
 media_term:
   preferred_term: TOGO Medium M1608
   term:
@@ -381,6 +438,58 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: N2; Added default concentration for ingredient:
     Hydrogen gas; Added default concentration for ingredient: KOH solution'
-merge_fingerprint: fd95da1b421cd84a2cc32e0d5bb2449eec2d89f95bb12eb5807da43d8e709e1f
+- timestamp: '2026-03-09T08:04:40.227029+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:10.167409Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:54.028203Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008161'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:49.768047'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:16.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.593443+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanospirillum Medium" to "methanospirillum_medium"
+    for consistent matching
+solutions:
+- preferred_term: Trace minerals*
+  term:
+    id: mediadive.solution:5363
+    label: Trace minerals
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5363_Trace_minerals.yaml for composition
+  name: Unknown solution
+- preferred_term: Trace vitamins**
+  term:
+    id: mediadive.solution:5469
+    label: Trace vitamins
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5469_Trace_vitamins.yaml for composition
+  name: Unknown solution
+- preferred_term: KOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  name: Unknown solution
+merge_fingerprint: acf546936687f4675b332978aa7eb2fed1c1b16b00fd57de4f4e6ec1dab6d411
 merged_from:
-- TOGO_M1608_Methanospirillum_Medium
+- methanospirillum_medium

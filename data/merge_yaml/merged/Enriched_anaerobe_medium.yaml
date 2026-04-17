@@ -1,8 +1,9 @@
-name: Enriched anaerobe medium
+id: CultureMech:009304
+name: enriched_anaerobe_medium
 original_name: Enriched anaerobe medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: 0.025% Resazurin
   concentration:
@@ -18,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -32,6 +36,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Hemin
   concentration:
     value: '5'
@@ -41,6 +48,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Hemin
 - preferred_term: Vitamin K1
   concentration:
     value: '1'
@@ -48,6 +58,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:18067
+    label: Vitamin K1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
     label: Vitamin K1
 - preferred_term: Agar
   concentration:
@@ -57,6 +70,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Trypticase
   concentration:
     value: '30'
@@ -65,6 +81,9 @@ ingredients:
   term:
     id: CHEBI:78018
     label: dodecylphosphocholine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000263
+    label: Trypticase
 - preferred_term: Oxoid Lab-Lemco Powder
   concentration:
     value: '20'
@@ -84,6 +103,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 - preferred_term: N NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   concentration:
@@ -94,16 +116,25 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2753
   term:
@@ -130,6 +161,19 @@ curation_history:
     for ingredient: N NaOH; Added default concentration for ingredient: Carbon dioxide
     gas; Added default concentration for ingredient: Nitrogen gas; Added default concentration
     for ingredient: Hydrogen gas'
-merge_fingerprint: d978c24c62c3849d5545a7d9f86785d18519e31dd614237655f849f96fa0c3a3
+- timestamp: '2026-03-13T06:20:05.435949Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009304'
+- timestamp: '2026-03-17T06:30:37.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:24.337297+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Enriched anaerobe medium" to "enriched_anaerobe_medium"
+    for consistent matching
+merge_fingerprint: 87f4aa1e061de59c816103b5275336a55b1215ec7831b8b90587d392c460e293
 merged_from:
-- TOGO_M2753_Enriched_anaerobe_medium
+- enriched_anaerobe_medium

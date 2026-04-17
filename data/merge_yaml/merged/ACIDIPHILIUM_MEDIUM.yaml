@@ -1,6 +1,7 @@
-name: ACIDIPHILIUM MEDIUM
+id: CultureMech:001368
+name: acidiphilium_medium
 original_name: ACIDIPHILIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 3.0
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.3'
@@ -50,6 +63,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -62,35 +78,42 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 269'
-- timestamp: '2026-02-19T08:26:45.420530+00:00'
+- timestamp: '2026-03-13T06:19:03.428318Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001368'
+- timestamp: '2026-03-17T06:30:02.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:15.355872+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ACIDIPHILIUM MEDIUM" to "acidiphilium_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:53.161241+00:00'
   curator: recipe-merger
-  action: Merged 5 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_269_ACIDIPHILIUM_MEDIUM, KOMODO_269-11237_MEDIUM_269_MODIFIED_FOR_DSM_11237,
-    KOMODO_269-11244_MEDIUM_269_MODIFIED_FOR_DSM_11244, KOMODO_269-11245_MEDIUM_269_MODIFIED_FOR_DSM_11245,
-    KOMODO_269_ACIDIPHILIUM_medium'
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: acidiphilium_medium, medium_269_modified_for_dsm_11237, medium_269_modified_for_dsm_11244,
+    medium_269_modified_for_dsm_11245'
 synonyms:
-- name: MEDIUM 269 MODIFIED FOR DSM 11237
+- name: medium_269_modified_for_dsm_11237
   source: KOMODO
   source_id: komodo.medium:269_11237
-  original_category: imported
-- name: MEDIUM 269 MODIFIED FOR DSM 11244
+  original_category: bacterial
+- name: medium_269_modified_for_dsm_11244
   source: KOMODO
   source_id: komodo.medium:269_11244
-  original_category: imported
-- name: MEDIUM 269 MODIFIED FOR DSM 11245
+  original_category: bacterial
+- name: medium_269_modified_for_dsm_11245
   source: KOMODO
   source_id: komodo.medium:269_11245
-  original_category: imported
-- name: ACIDIPHILIUM medium
-  source: KOMODO
-  source_id: komodo.medium:269
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_269_ACIDIPHILIUM_MEDIUM
-- KOMODO_269-11237_MEDIUM_269_MODIFIED_FOR_DSM_11237
-- KOMODO_269-11244_MEDIUM_269_MODIFIED_FOR_DSM_11244
-- KOMODO_269-11245_MEDIUM_269_MODIFIED_FOR_DSM_11245
-- KOMODO_269_ACIDIPHILIUM_medium
+- acidiphilium_medium
+- medium_269_modified_for_dsm_11237
+- medium_269_modified_for_dsm_11244
+- medium_269_modified_for_dsm_11245
 merge_fingerprint: 9ab0ce721fb8de31e86631723460a917f0f8b383f6db8b1609907e39d252bda3

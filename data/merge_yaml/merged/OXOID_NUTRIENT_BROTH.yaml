@@ -1,15 +1,16 @@
-name: OXOID NUTRIENT BROTH
+id: CultureMech:006886
+name: oxoid_nutrient_broth
 original_name: OXOID NUTRIENT BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 7.2
 media_term:
-  preferred_term: DSMZ Medium 948
+  preferred_term: KOMODO Medium 948
   term:
-    id: mediadive.medium:948
+    id: komodo.medium:948
     label: OXOID NUTRIENT BROTH
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium948.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 948 | DSMZ Medium: 948 (mediadive.medium:948)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Nutrient broth
   concentration:
@@ -34,31 +35,49 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 7.2
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.874485Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 948'
-- timestamp: '2026-02-19T08:26:57.432637+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 948'
+- timestamp: '2026-02-03T11:19:04.770661'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 948
+- timestamp: '2026-03-13T06:19:44.662424Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006886'
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.620291+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "OXOID NUTRIENT BROTH" to "oxoid_nutrient_broth" for
+    consistent matching
+- timestamp: '2026-04-17T06:29:35.330889+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_948_OXOID_NUTRIENT_BROTH, KOMODO_948-16823_MEDIUM_948_MODIFIED_FOR_DSM_16823,
-    KOMODO_948_OXOID_NUTRIENT_BROTH'
+  notes: 'Sources: KOMODO_948_OXOID_NUTRIENT_BROTH, medium_948_modified_for_dsm_16823,
+    oxoid_nutrient_broth'
+ph_value: 7.2
+kg_microbe_match: mediadive.medium:74
 synonyms:
-- name: MEDIUM 948 MODIFIED FOR DSM 16823
+- name: medium_948_modified_for_dsm_16823
   source: KOMODO
   source_id: komodo.medium:948_16823
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_948_OXOID_NUTRIENT_BROTH
-- KOMODO_948-16823_MEDIUM_948_MODIFIED_FOR_DSM_16823
 - KOMODO_948_OXOID_NUTRIENT_BROTH
+- medium_948_modified_for_dsm_16823
+- oxoid_nutrient_broth
 merge_fingerprint: 803bbce644ffb26a5293a52517c5245a8f3e718c7840c795e44965d6c86a7bb8

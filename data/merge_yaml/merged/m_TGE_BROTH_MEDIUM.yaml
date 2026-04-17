@@ -1,8 +1,9 @@
-name: m TGE Broth Medium
+id: CultureMech:010242
+name: m_tge_broth_medium
 original_name: m TGE Broth Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: agar
   concentration:
     value: '15'
@@ -20,6 +24,9 @@ ingredients:
   notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
     label: agar
 - preferred_term: Bacto m TGE broth (BD-Difco)
   concentration:
@@ -47,6 +54,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:12.378287Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010242'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.321972+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "m TGE Broth Medium" to "m_tge_broth_medium" for consistent
+    matching
 merge_fingerprint: 0874b94f22da6884c29652a8d2a96522763e7760c974f233ee97a96c7f54df31
 merged_from:
 - TOGO_M829_m_TGE_Broth_Medium

@@ -1,6 +1,7 @@
-name: modified Luria broth
+id: CultureMech:009490
+name: modified_luria_broth
 original_name: modified Luria broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: N-2-hydroxy- ethylpiperazine-N'-2-ethanesulfonic acid [HEPES; pH
     7.2])
   concentration:
@@ -55,6 +62,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.379731Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009490'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.364884+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "modified Luria broth" to "modified_luria_broth" for
+    consistent matching
 merge_fingerprint: 0c6080d6f8eb405a9724ca997972c58c9134058e14a493c1416fbe144f2bb170
 merged_from:
-- TOGO_M2966_modified_Luria_broth
+- modified_luria_broth

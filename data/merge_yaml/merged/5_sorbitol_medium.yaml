@@ -1,0 +1,89 @@
+id: CultureMech:006132
+name: 5_sorbitol_medium
+original_name: 5% SORBITOL medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 6.0
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 626 | DSMZ Medium: 626 (mediadive.medium:626)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 626
+  term:
+    id: komodo.medium:626
+    label: 5% SORBITOL medium
+ingredients:
+- preferred_term: D-Sorbitol
+  term:
+    id: CHEBI:17924
+    label: D-Sorbitol
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000869
+    label: D-Sorbitol
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: hydrochloric acid
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 626'
+- timestamp: '2026-02-03T11:19:01.420995'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 626
+- timestamp: '2026-03-13T03:08:55.303864Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: HCl'
+- timestamp: '2026-03-13T06:19:38.518158Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006132'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:39.788556'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+- timestamp: '2026-03-17T06:29:59.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.454494+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "5% SORBITOL medium" to "5_sorbitol_medium" for consistent
+    matching
+merge_fingerprint: c395a410b29fafe87ea14870f37fda7f61b01bed6e64153544d480a947215637
+merged_from:
+- KOMODO_626_5_SORBITOL_medium

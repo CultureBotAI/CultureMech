@@ -1,15 +1,30 @@
-name: MIDDLEBROCK 7H11 AGAR
+id: CultureMech:006786
+name: middlebrock_7h11_agar
 original_name: MIDDLEBROCK 7H11 AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_range: 6.4-6.8
+physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 911
+  preferred_term: KOMODO Medium 911
   term:
-    id: mediadive.medium:911
+    id: komodo.medium:911
     label: MIDDLEBROCK 7H11 AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium911.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 911 | DSMZ Medium: 911 (mediadive.medium:911)
+  | Aerobic: No
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
 - preferred_term: Glycerol
   term:
@@ -18,6 +33,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Pancreatic digest of casein
   concentration:
     value: '1.11111'
@@ -29,6 +47,9 @@ ingredients:
   concentration:
     value: '0.555556'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -36,6 +57,9 @@ ingredients:
   concentration:
     value: '1.66667'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -43,6 +67,9 @@ ingredients:
   concentration:
     value: '1.66667'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -50,6 +77,9 @@ ingredients:
   concentration:
     value: '0.444444'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -57,6 +87,9 @@ ingredients:
   concentration:
     value: '0.0555556'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: L-Glutamic acid
   term:
     id: CHEBI:16015
@@ -64,6 +97,9 @@ ingredients:
   concentration:
     value: '0.555556'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000562
+    label: L-Glutamic acid
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
@@ -71,6 +107,9 @@ ingredients:
   concentration:
     value: '0.0444444'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709
@@ -78,6 +117,9 @@ ingredients:
   concentration:
     value: '0.00111111'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -85,6 +127,9 @@ ingredients:
   concentration:
     value: '0.000555556'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Malachite green
   term:
     id: CHEBI:72449
@@ -92,6 +137,9 @@ ingredients:
   concentration:
     value: '0.00111111'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000835
+    label: Malachite green
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -99,6 +147,9 @@ ingredients:
   concentration:
     value: '16.6667'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Oleic acid
   term:
     id: CHEBI:16196
@@ -106,10 +157,62 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: Bovine albumin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001012
+    label: Oleic acid
+- preferred_term: Tryptone
+  term:
+    id: FOODON:03316428
+    label: tryptone
   concentration:
-    value: '50'
+    value: '10.0'
     unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: pancreatic digest of casein
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002960
+    label: yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
 - preferred_term: Dextrose
   term:
     id: CHEBI:4167
@@ -117,6 +220,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000243
+    label: Dextrose
 - preferred_term: Catalase
   term:
     id: CHEBI:3463
@@ -131,38 +237,47 @@ ingredients:
   concentration:
     value: '8.5'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: HEAT
-  description: Sterilize for 10 min by 121°C cool to 50 - 55°C. Add 100 ml Bacto Middelbrook
-    OADC enrichment Difco (see below) under aseptic conditions and mix thoroughly.
-- step_number: 2
-  action: HEAT
-  description: Final pH at 25°C 6.6 ± 0.2.
-- step_number: 3
-  action: MIX
-  description: 'Bacto Middelbrook OADC enrichment (Difco 212240):'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.721777Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 911'
-- timestamp: '2026-02-19T08:26:56.784477+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 911'
+- timestamp: '2026-02-03T11:19:11.589262'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 911
+- timestamp: '2026-03-13T06:19:43.905891Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006786'
+- timestamp: '2026-03-17T06:30:31.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:01.745956+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MIDDLEBROCK 7H11 AGAR" to "middlebrock_7h11_agar" for
+    consistent matching
+- timestamp: '2026-04-17T06:29:34.561068+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_911_MIDDLEBROCK_7H11_AGAR, KOMODO_911-44536_MEDIUM_911_MODIFIED_FOR_DSM_44536,
-    KOMODO_911_MIDDLEBROCK_7H11_AGAR'
+  notes: 'Sources: KOMODO_911_MIDDLEBROCK_7H11_AGAR, medium_911_modified_for_dsm_44536,
+    middlebrock_7h11_agar'
 synonyms:
-- name: MEDIUM 911 MODIFIED FOR DSM 44536
+- name: medium_911_modified_for_dsm_44536
   source: KOMODO
   source_id: komodo.medium:911_44536
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_911_MIDDLEBROCK_7H11_AGAR
-- KOMODO_911-44536_MEDIUM_911_MODIFIED_FOR_DSM_44536
 - KOMODO_911_MIDDLEBROCK_7H11_AGAR
-merge_fingerprint: ae6ab17148ab337d1b085becf2180b305074c48722a886ae14a73a2712dd9df2
+- medium_911_modified_for_dsm_44536
+- middlebrock_7h11_agar
+merge_fingerprint: 3cbb2115abf4f3f9dc3dcebecd1e986a17f957e28d31b4e72c0e47b55a3fa115

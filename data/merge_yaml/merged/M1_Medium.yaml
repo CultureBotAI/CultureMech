@@ -1,8 +1,9 @@
-name: M1 Medium
+id: CultureMech:008342
+name: m1_medium
 original_name: M1 Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -18,11 +19,9 @@ ingredients:
   term:
     id: CHEBI:85248
     label: gellan gum
-- preferred_term: Seawater*
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Complex component, Undefined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000929
+    label: Starch
 - preferred_term: Agar (if needed)
   concentration:
     value: '18'
@@ -53,6 +52,37 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: efe091ff0e9e9ed273b373240cee993e1a96cbf63d9dfa47b22deb0e0537b28c
+- timestamp: '2026-03-09T08:04:23.900486+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:55.889988Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008342'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:51.132249'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:14.434889+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M1 Medium" to "m1_medium" for consistent matching
+solutions:
+- preferred_term: Seawater*
+  term:
+    id: mediadive.solution:1801
+    label: Seawater
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_1801_Seawater.yaml for composition
+  name: Unknown solution
+kg_microbe_match: mediadive.medium:218
+merge_fingerprint: 9f610026522220fe609eca2d8fab64fc0405bf95a6755b78f05985e136a0485d
 merged_from:
-- TOGO_M1776_M1_Medium
+- m1_medium

@@ -1,6 +1,7 @@
-name: MODIFIED MH MEDIUM
+id: CultureMech:002956
+name: modified_mh_medium
 original_name: MODIFIED MH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: X10 Jamarin S
   concentration:
     value: '210'
@@ -42,6 +46,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J609'
+- timestamp: '2026-03-13T06:19:16.816628Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002956'
+- timestamp: '2026-03-17T06:30:15.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.423086+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED MH MEDIUM" to "modified_mh_medium" for consistent
+    matching
 merge_fingerprint: 3f720cfc4e6fde63a9b99596a8dd68400b3057e4cddda31dcd6611a2e5ed1c77
 merged_from:
-- JCM_J609_MODIFIED_MH_MEDIUM
+- modified_mh_medium

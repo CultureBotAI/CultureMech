@@ -1,8 +1,9 @@
-name: Acetobacter Medium
+id: CultureMech:010317
+name: acetobacter_medium
 original_name: Acetobacter Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: Glucose
   concentration:
     value: '100'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -44,6 +54,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 media_term:
   preferred_term: TOGO Medium M89
   term:
@@ -65,6 +78,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:12.960356Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010317'
+- timestamp: '2026-03-17T06:30:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.905807+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Acetobacter Medium" to "acetobacter_medium" for consistent
+    matching
 merge_fingerprint: 873e7cd89836b3e5ee535d9c19e4fe1c29c1619dec6fc21dfc357fedcff39bb2
 merged_from:
 - TOGO_M89_Acetobacter_Medium

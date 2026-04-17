@@ -1,6 +1,7 @@
-name: Trypticase Peptone Yeast broth
+id: CultureMech:009508
+name: trypticase_peptone_yeast_broth
 original_name: Trypticase Peptone Yeast broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: distilled water
 - preferred_term: K2HPO4
   concentration:
     value: '0.15'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Tween 80
   concentration:
     value: '0.1'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: MgCl2
   concentration:
     value: '0.05'
@@ -40,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: glucose
   concentration:
     value: '1'
@@ -49,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: glucose
 - preferred_term: yeast extract (Difco)
   concentration:
     value: '0.25'
@@ -86,6 +102,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.451071Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009508'
+- timestamp: '2026-03-17T06:30:06.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.455407+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Trypticase Peptone Yeast broth" to "trypticase_peptone_yeast_broth"
+    for consistent matching
 merge_fingerprint: a9169d863585ee46f34a02181140adf353c10b1d27ccbf4f892692f9cba10b8a
 merged_from:
-- TOGO_M2989_Trypticase_Peptone_Yeast_broth
+- trypticase_peptone_yeast_broth

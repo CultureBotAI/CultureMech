@@ -1,0 +1,166 @@
+id: CultureMech:003250
+name: brain_heart_infusion_agar_with_5_rabbit_blood
+original_name: BRAIN HEART INFUSION AGAR WITH 5% RABBIT BLOOD
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J901
+  term:
+    id: mediadive.medium:J901
+    label: BRAIN HEART INFUSION AGAR WITH 5% RABBIT BLOOD
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=901
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+ingredients:
+- preferred_term: Calf brains
+  term:
+    id: UBERON:0000955
+    label: brain
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
+- preferred_term: Beef heart
+  term:
+    id: UBERON:0000948
+    label: heart
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
+- preferred_term: Proteose peptone
+  term:
+    id: FOODON:03302071
+    label: proteose peptone
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:17234
+    label: D-glucose
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
+  synonyms:
+  - synonym_text: glucose
+    synonym_type: EXACT
+  - synonym_text: D-glucose
+    synonym_type: EXACT
+  - synonym_text: dextrose
+    synonym_type: EXACT
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: Disodium phosphate
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: Na2HPO4
+    synonym_type: EXACT
+  - synonym_text: disodium hydrogen phosphate
+    synonym_type: EXACT
+  - synonym_text: sodium phosphate dibasic
+    synonym_type: EXACT
+- preferred_term: Rabbit blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients except rabbit blood, autoclave and cool to about 50C.
+    Aseptically add 5% (final) sterile defibrinated rabbit blood. Mix and quickly
+    dispense into sterile petri dishes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.948908Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J901'
+- timestamp: '2026-03-13T06:19:18.924087Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003250'
+- timestamp: '2026-03-17T06:30:19.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:32.816249+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BRAIN HEART INFUSION AGAR WITH 5% RABBIT BLOOD" to
+    "brain_heart_infusion_agar_with_5_rabbit_blood" for consistent matching
+merge_fingerprint: 490a0131420ecb03f8aacc773c60a827aa051d6e396bf157e57ba970768cb3e2
+merged_from:
+- brain_heart_infusion_agar_with_5_rabbit_blood

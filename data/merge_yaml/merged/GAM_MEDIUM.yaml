@@ -1,44 +1,35 @@
-name: GAM Medium
-original_name: GAM Medium
-category: imported
+id: CultureMech:003184
+name: gam_medium
+original_name: GAM MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+media_term:
+  preferred_term: JCM Medium J83
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Nissui GAM Broth*
+    id: mediadive.medium:J83
+    label: GAM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=83'
+ingredients:
+- preferred_term: GAM broth
   concentration:
     value: '59'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M1525
-  term:
-    id: TOGO:M1525
-    label: GAM Medium
-notes: 'Source: https://togomedium.org/medium/M1525
-
-  Original source: NBRC - NBRC_M312
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=312'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.797066Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1525'
-- timestamp: '2026-01-28T19:48:39.725352Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 0ef03281792b63d46169573ac31f0a8e61423ff1d31520619c99051e5886c35c
+- timestamp: '2026-01-26T17:53:15.700153Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J83'
+- timestamp: '2026-03-13T06:19:18.417836Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003184'
+- timestamp: '2026-03-17T19:45:32.267899+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GAM MEDIUM" to "gam_medium" for consistent matching
+merge_fingerprint: d6da557bd09a743f541b8604a3da2dfa0128ee62b8eee0ef1d1ec495d88bf4dc
 merged_from:
-- TOGO_M1525_GAM_Medium
+- gam_medium

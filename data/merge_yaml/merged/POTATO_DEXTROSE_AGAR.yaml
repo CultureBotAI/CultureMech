@@ -1,61 +1,84 @@
-name: POTATO DEXTROSE AGAR
-original_name: POTATO DEXTROSE AGAR
-category: imported
+id: CultureMech:008982
+name: potato_dextrose_agar
+original_name: Potato-Dextrose Agar
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-media_term:
-  preferred_term: KOMODO Medium 129
-  term:
-    id: komodo.medium:129
-    label: POTATO DEXTROSE AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 129 | DSMZ Medium: 129 (mediadive.medium:129)
-  | Aerobic: No'
+physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Potato
+- preferred_term: Distilled water
   concentration:
-    value: '200'
+    value: '1'
     unit: G_PER_L
-  notes: ' ( peeled and cut)'
-- preferred_term: Glucose
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:17234
-    label: Glucose
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: Glucose
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: Agar
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Potato, peeled and cut
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M23
+  term:
+    id: TOGO:M23
+    label: Potato-Dextrose Agar
+notes: 'Source: https://togomedium.org/medium/M23
+
+  Original source: JCM - JCM_M30
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=30'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: 2026-01-27T01:15:01.fZ
-  curator: komodo-web-import
-  action: Imported from KOMODO web table
-  notes: 'Source: KOMODO, ID: 129'
-- timestamp: '2026-02-03T11:19:12.951759'
-  curator: dsmz-resolver-v1.0
-  action: Enriched with DSMZ composition
-  notes: Copied ingredients from DSMZ Medium 129
-- timestamp: '2026-02-19T08:26:58.464376+00:00'
-  curator: recipe-merger
-  action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: JCM_J30_POTATO-DEXTROSE_AGAR, KOMODO_129_POTATO_DEXTROSE_AGAR,
-    DSMZ_129_POTATO_DEXTROSE_AGAR'
-ph_value: 5.6
-synonyms:
-- name: POTATO-DEXTROSE AGAR
-  source: MediaDive
-  source_id: mediadive.medium:J30
-  original_category: imported
-categories:
-- imported
+- timestamp: '2026-01-27T06:35:54.664791Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M23'
+- timestamp: '2026-01-28T19:48:06.754959Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:01.786949Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008982'
+- timestamp: '2026-03-17T06:29:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.529873+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Potato-Dextrose Agar" to "potato_dextrose_agar" for
+    consistent matching
+merge_fingerprint: 04581fbba3b82bf5c8ed9e05ff581f63870fe32189dbe81c8ec626841b6ee6b0
 merged_from:
-- JCM_J30_POTATO-DEXTROSE_AGAR
-- KOMODO_129_POTATO_DEXTROSE_AGAR
-- DSMZ_129_POTATO_DEXTROSE_AGAR
-merge_fingerprint: f23c3edb0839c9f5690bddc32074c18c5cd4420c6072c8b518febcf6e995d1b8
+- TOGO_M23_Potato-Dextrose_Agar

@@ -1,6 +1,7 @@
-name: TREPONEMA MEDIUM
+id: CultureMech:001080
+name: treponema_medium
 original_name: TREPONEMA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.7-7
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.9'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.9'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -64,6 +83,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -71,6 +93,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -78,6 +103,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -102,29 +130,42 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 159'
-- timestamp: '2026-02-19T08:26:43.761467+00:00'
+- timestamp: '2026-03-13T06:19:01.032068Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001080'
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:12.703005+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TREPONEMA MEDIUM" to "treponema_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:19.172773+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_159_TREPONEMA_MEDIUM, KOMODO_159-11370_MEDIUM_159_MODIFIED_FOR_DSM_11370,
-    KOMODO_159-11371_MEDIUM_159_MODIFIED_FOR_DSM_11371, KOMODO_159_TREPONEMA_BRYANTII_medium'
+  notes: 'Sources: KOMODO_159_TREPONEMA_BRYANTII_medium, medium_159_modified_for_dsm_11370,
+    medium_159_modified_for_dsm_11371, treponema_medium'
 synonyms:
-- name: MEDIUM 159 MODIFIED FOR DSM 11370
-  source: KOMODO
-  source_id: komodo.medium:159_11370
-  original_category: imported
-- name: MEDIUM 159 MODIFIED FOR DSM 11371
-  source: KOMODO
-  source_id: komodo.medium:159_11371
-  original_category: imported
-- name: TREPONEMA BRYANTII medium
+- name: treponema_bryantii_medium
   source: KOMODO
   source_id: komodo.medium:159
-  original_category: imported
+  original_category: bacterial
+- name: medium_159_modified_for_dsm_11370
+  source: KOMODO
+  source_id: komodo.medium:159_11370
+  original_category: bacterial
+- name: medium_159_modified_for_dsm_11371
+  source: KOMODO
+  source_id: komodo.medium:159_11371
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_159_TREPONEMA_MEDIUM
-- KOMODO_159-11370_MEDIUM_159_MODIFIED_FOR_DSM_11370
-- KOMODO_159-11371_MEDIUM_159_MODIFIED_FOR_DSM_11371
 - KOMODO_159_TREPONEMA_BRYANTII_medium
+- medium_159_modified_for_dsm_11370
+- medium_159_modified_for_dsm_11371
+- treponema_medium
 merge_fingerprint: 81cb33e9fb3bdecef22316004e27d92ea6d68c9313805a4fc1e5759d2612f99d

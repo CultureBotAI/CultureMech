@@ -1,6 +1,7 @@
-name: VIBRIO SEAWATER MEDIUM
+id: CultureMech:002399
+name: vibrio_seawater_medium
 original_name: VIBRIO SEAWATER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -45,6 +46,15 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1232'
+- timestamp: '2026-03-13T06:19:13.013186Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002399'
+- timestamp: '2026-03-17T19:45:26.073757+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "VIBRIO SEAWATER MEDIUM" to "vibrio_seawater_medium"
+    for consistent matching
 merge_fingerprint: 2a353e9cd464790a60a00858ba08179a5387a62eb42a2b32501d1d399e71b629
 merged_from:
-- JCM_J1232_VIBRIO_SEAWATER_MEDIUM
+- vibrio_seawater_medium

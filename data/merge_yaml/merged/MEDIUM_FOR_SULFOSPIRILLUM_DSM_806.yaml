@@ -1,6 +1,7 @@
-name: MEDIUM FOR SULFOSPIRILLUM DSM 806
+id: CultureMech:000678
+name: medium_for_sulfospirillum_dsm_806
 original_name: MEDIUM FOR SULFOSPIRILLUM DSM 806
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '0.028'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -40,6 +47,9 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaH2PO4
   term:
     id: CHEBI:37585
@@ -47,6 +57,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -54,6 +67,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -61,6 +77,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -68,6 +87,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -75,6 +97,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -82,6 +107,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -89,6 +117,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -96,6 +127,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -103,6 +137,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -110,6 +147,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -117,6 +157,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -124,6 +167,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -140,18 +186,31 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 121'
-- timestamp: '2026-02-19T08:26:41.236863+00:00'
+- timestamp: '2026-03-13T06:18:57.379650Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000678'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:08.647027+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM FOR SULFOSPIRILLUM DSM 806" to "medium_for_sulfospirillum_dsm_806"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:10.692766+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_121_MEDIUM_FOR_SULFOSPIRILLUM_DSM_806, KOMODO_121_medium_FOR_CAMPYLOBACTER_DSM_806'
+  notes: 'Sources: medium_for_campylobacter_dsm_806, medium_for_sulfospirillum_dsm_806'
 synonyms:
-- name: medium FOR CAMPYLOBACTER DSM 806
+- name: medium_for_campylobacter_dsm_806
   source: KOMODO
   source_id: komodo.medium:121
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_121_MEDIUM_FOR_SULFOSPIRILLUM_DSM_806
-- KOMODO_121_medium_FOR_CAMPYLOBACTER_DSM_806
+- medium_for_campylobacter_dsm_806
+- medium_for_sulfospirillum_dsm_806
 merge_fingerprint: 722f7700fb905c4abd4a7a3cf798af84950294131c0da2216ac71b2d37d8e5f5

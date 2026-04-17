@@ -1,6 +1,7 @@
-name: CHM
+id: CultureMech:000331
+name: chm
 original_name: CHM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -14,6 +15,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: ''
 - preferred_term: Lab Lemco powder
   concentration:
     value: '1'
@@ -30,6 +34,14 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C23'
-merge_fingerprint: cf9048d6fce5be6c97e3f7269816bd0334931e950ac6bbaec9bd667aeb0f8111
+- timestamp: '2026-03-13T06:18:54.517110Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000331'
+- timestamp: '2026-03-17T19:45:05.504136+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CHM" to "chm" for consistent matching
+merge_fingerprint: 38969ffa3ea0407c89082b3bc8ca4653a2eda96bd63469418d2073d61781bf1c
 merged_from:
-- CCAP_C23_CHM
+- chm

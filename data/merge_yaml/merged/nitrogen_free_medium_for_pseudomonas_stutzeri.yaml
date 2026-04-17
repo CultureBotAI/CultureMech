@@ -1,0 +1,110 @@
+id: CultureMech:005466
+name: nitrogen_free_medium_for_pseudomonas_stutzeri
+original_name: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 460
+  term:
+    id: komodo.medium:460
+    label: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
+notes: 'Source: KOMODO ModelSEED | ID: 460 | DSMZ Medium: 460 (mediadive.medium:460)
+  | Aerobic: No'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
+- preferred_term: DL-Na-malate
+  term:
+    id: CHEBI:91261
+    label: DL-Na-malate
+  concentration:
+    value: '6.6'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000450
+    label: DL-Na-malate
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 460'
+- timestamp: '2026-02-03T11:19:13.778326'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 460
+- timestamp: '2026-03-13T06:19:33.146658Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005466'
+- timestamp: '2026-03-17T06:30:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:49.216620+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI" to "nitrogen_free_medium_for_pseudomonas_stutzeri"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:25.769651+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_460_NITROGEN-FREE_medium_FOR_PSEUDOMONAS_STUTZERI, medium_460_modified_for_dsm_4166,
+    nitrogen_free_medium_for_pseudomonas_stutzeri'
+synonyms:
+- name: medium_460_modified_for_dsm_4166
+  source: KOMODO
+  source_id: komodo.medium:460_4166
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_460_NITROGEN-FREE_medium_FOR_PSEUDOMONAS_STUTZERI
+- medium_460_modified_for_dsm_4166
+- nitrogen_free_medium_for_pseudomonas_stutzeri
+merge_fingerprint: ebe5300e84188eb6d094a3fba05737334e54fb1d4a1ba5efcbdd385f8d43345f

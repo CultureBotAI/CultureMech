@@ -1,8 +1,9 @@
-name: NBY
+id: CultureMech:008643
+name: nby
 original_name: NBY
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: MgSO4
   concentration:
@@ -12,6 +13,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: Glucose
   concentration:
     value: '50'
@@ -20,6 +24,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Distilled water
   concentration:
     value: '949'
@@ -28,6 +35,9 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast Extract
   concentration:
@@ -43,6 +53,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
     value: '2'
@@ -52,6 +65,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Agar (If needed)
   concentration:
     value: '15'
@@ -83,6 +99,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:58.997060Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008643'
+- timestamp: '2026-03-17T06:30:20.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.618458+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NBY" to "nby" for consistent matching
 merge_fingerprint: 8bc826803237b7baf5bdacee8d6da635c7a55c3a0441c76234dc27d400f3daa2
 merged_from:
-- TOGO_M2052_NBY
+- nby

@@ -1,155 +1,180 @@
-name: Pyvl Medium
-original_name: Pyvl Medium
-category: imported
+id: CultureMech:002207
+name: pyvl_medium
+original_name: PYVL MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: JCM Medium J1023
+  term:
+    id: mediadive.medium:J1023
+    label: PYVL MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1023'
 ingredients:
-- preferred_term: 8% (w/v) Na2CO3
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '9.96016'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+- preferred_term: L-Lysine
+  term:
+    id: CHEBI:18019
+    label: L-Lysine
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000318
+    label: L-Lysine
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 0.1% (w/v) resazurin--Na
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '850'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
+- preferred_term: L-Cysteine HCl x H2O
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: L--Lysine
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
   concentration:
-    value: '5'
+    value: '0.298805'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
-    component'
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Trypticase peptone (BD-BBL)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: L--Cysteine・HCl・H2O
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Salt solution No. 1 (see Medium [M124])
-  concentration:
-    value: '75'
-    unit: G_PER_L
-- preferred_term: Salt solution No. 2 (see Medium [M124])
-  concentration:
-    value: '75'
-    unit: G_PER_L
-- preferred_term: Vitamin mixture (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Biotin
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:15956
-    label: biotin
-- preferred_term: p--Aminobenzoic acid
+    label: Biotin
   concentration:
-    value: '3'
+    value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-- preferred_term: Thiamine・HCl
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
   concentration:
-    value: '5'
+    value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Folic acid
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
-    compound'
   term:
     id: CHEBI:27470
-    label: folic acid
-- preferred_term: Vitamin B12
+    label: Folic acid
   concentration:
-    value: '1'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
-    compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
+- preferred_term: Thiamine HCl
   term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: Riboflavin
+    id: CHEBI:49105
+    label: Thiamine HCl
   concentration:
-    value: '5'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
+- preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: riboflavin
-- preferred_term: Pyridoxamine・2HCl
+    label: Riboflavin
   concentration:
-    value: '15'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Simple component, Organic compound, Defined component'
-media_term:
-  preferred_term: TOGO Medium M1084
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
+- preferred_term: Pyridoxamine hydrochloride
   term:
-    id: TOGO:M1084
-    label: Pyvl Medium
-notes: 'Source: https://togomedium.org/medium/M1084
-
-  Original source: JCM - JCM_M1023
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1023'
+    id: CHEBI:131531
+    label: Pyridoxamine hydrochloride
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxamine hydrochloride
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.3. Prepare medium anaerobically and pour into rubber
+    stopped tubes under oxygen-free N2-CO2 (95:5).
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:53.883806Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1084'
-- timestamp: '2026-01-28T19:48:19.477090Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-01-26T17:53:18.351595Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1023'
+- timestamp: '2026-03-09T08:04:35.792846+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:11.250473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002207'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:45.814973'
+  date: '2026-03-14T21:06:24.443785'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas'
-merge_fingerprint: 36157c9d60b059f7218c24d00961e2de2b8297162575376eb6292c7741100e52
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:11.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:24.023059+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PYVL MEDIUM" to "pyvl_medium" for consistent matching
+solutions:
+- preferred_term: Salt Solution I
+  term:
+    id: mediadive.solution:5691
+    label: Salt Solution I
+  concentration:
+    value: '75'
+    unit: G_PER_L
+  notes: See mediadive_5691_Salt_Solution_I.yaml for composition
+  name: Unknown solution
+- preferred_term: Salt Solution II
+  term:
+    id: mediadive.solution:2571
+    label: Salt Solution II
+  concentration:
+    value: '75'
+    unit: G_PER_L
+  notes: See mediadive_2571_Salt_Solution_II.yaml for composition
+  name: Unknown solution
+merge_fingerprint: 405c0267d6d5db55599097b062557a27ba32e8b16e39b05244d40fae1364811b
 merged_from:
-- TOGO_M1084_Pyvl_Medium
+- pyvl_medium

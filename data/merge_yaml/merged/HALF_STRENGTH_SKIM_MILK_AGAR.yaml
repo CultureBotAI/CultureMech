@@ -1,69 +1,59 @@
-name: Half Strength Skim Milk Agar
-original_name: Half Strength Skim Milk Agar
-category: imported
+id: CultureMech:002250
+name: half_strength_skim_milk_agar
+original_name: HALF STRENGTH SKIM MILK AGAR
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J106
+  term:
+    id: mediadive.medium:J106
+    label: HALF STRENGTH SKIM MILK AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=106'
 ingredients:
-- preferred_term: Solution A
+- preferred_term: Skim milk
   concentration:
-    value: '500'
+    value: '50'
     unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '500'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Skim milk (BD-Difco)
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Distilled water
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
-    label: agar
-media_term:
-  preferred_term: TOGO Medium M98
-  term:
-    id: TOGO:M98
-    label: Half Strength Skim Milk Agar
-notes: 'Source: https://togomedium.org/medium/M98
-
-  Original source: JCM - JCM_M106
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=106'
+    label: Agar
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave Solutions A and B separately, and mix aseptically.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.076587Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M98'
-- timestamp: '2026-01-28T19:48:27.100947Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 35d7f7640e16605c7a1d776a4f4a9d7deb53a59a6554f1a8e6338cb63c5e4527
+- timestamp: '2026-01-26T17:53:15.739729Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J106'
+- timestamp: '2026-03-13T06:19:11.641583Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002250'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:24.482774+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALF STRENGTH SKIM MILK AGAR" to "half_strength_skim_milk_agar"
+    for consistent matching
+kg_microbe_match: mediadive.medium:12
+merge_fingerprint: 878456b783b4eabecf41b53e2a51906fe58ab58d07c10ba0a400e59cea297bae
 merged_from:
-- TOGO_M98_Half_Strength_Skim_Milk_Agar
+- half_strength_skim_milk_agar

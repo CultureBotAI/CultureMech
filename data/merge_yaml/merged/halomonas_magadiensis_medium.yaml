@@ -1,0 +1,146 @@
+id: CultureMech:006929
+name: halomonas_magadiensis_medium
+original_name: HALOMONAS MAGADIENSIS medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 10.0
+media_term:
+  preferred_term: KOMODO Medium 971
+  term:
+    id: komodo.medium:971
+    label: HALOMONAS MAGADIENSIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 971 | DSMZ Medium: 971 (mediadive.medium:971)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: Optional ingredient
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 971'
+- timestamp: '2026-02-03T11:18:56.270608'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 971
+- timestamp: '2026-03-13T06:19:45.057509Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006929'
+- timestamp: '2026-03-17T06:29:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.073804+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOMONAS MAGADIENSIS medium" to "halomonas_magadiensis_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:31.911206+00:00'
+  curator: recipe-merger
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_785_BOGORIELLA_medium, KOMODO_971_HALOMONAS_MAGADIENSIS_medium,
+    bogoriella_medium, halomonas_magadiensis_medium, lysobacter_deserti_medium, medium_785_modified_for_dsm_18337,
+    medium_971_modified_for_dsm_18087'
+synonyms:
+- name: bogoriella_medium
+  source: KOMODO
+  source_id: komodo.medium:785
+  original_category: bacterial
+- name: bogoriella_medium
+  source: MediaDive
+  source_id: mediadive.medium:785
+  original_category: bacterial
+- name: lysobacter_deserti_medium
+  source: MediaDive
+  source_id: mediadive.medium:1060
+  original_category: bacterial
+- name: medium_785_modified_for_dsm_18337
+  source: KOMODO
+  source_id: komodo.medium:785_18337
+  original_category: bacterial
+- name: medium_971_modified_for_dsm_18087
+  source: KOMODO
+  source_id: komodo.medium:971_18087
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_785_BOGORIELLA_medium
+- KOMODO_971_HALOMONAS_MAGADIENSIS_medium
+- bogoriella_medium
+- halomonas_magadiensis_medium
+- lysobacter_deserti_medium
+- medium_785_modified_for_dsm_18337
+- medium_971_modified_for_dsm_18087
+merge_fingerprint: 66c8fe1194a8ae1eadd5dc9ff6d08be4990b6061b8febc6020433bbd3810c5cf

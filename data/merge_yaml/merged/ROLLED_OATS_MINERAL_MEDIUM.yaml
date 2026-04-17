@@ -1,15 +1,16 @@
-name: ROLLED OATS MINERAL MEDIUM
-original_name: ROLLED OATS MINERAL MEDIUM
-category: imported
+id: CultureMech:006657
+name: rolled_oats_mineral_medium
+original_name: ROLLED OATS MINERAL medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_value: 7.2
+physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 84
+  preferred_term: KOMODO Medium 84
   term:
-    id: mediadive.medium:84
-    label: ROLLED OATS MINERAL MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium84.pdf'
+    id: komodo.medium:84
+    label: ROLLED OATS MINERAL medium
+notes: 'Source: KOMODO ModelSEED | ID: 84 | DSMZ Medium: 84 (mediadive.medium:84)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Rolled oats
   concentration:
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -43,62 +53,74 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 7.2
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.129727Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 84'
-- timestamp: '2026-02-19T08:26:55.787669+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 84'
+- timestamp: '2026-02-03T11:18:54.932407'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 84
+- timestamp: '2026-03-13T06:19:42.759386Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006657'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:00.431765+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ROLLED OATS MINERAL medium" to "rolled_oats_mineral_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:33.581310+00:00'
   curator: recipe-merger
   action: Merged 8 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_84_ROLLED_OATS_MINERAL_MEDIUM, KOMODO_84-40886_MEDIUM_84_MODIFIED_FOR_DSM_40886,
-    KOMODO_84-40887_MEDIUM_84_MODIFIED_FOR_DSM_40887, KOMODO_84-40888_MEDIUM_84_MODIFIED_FOR_DSM_40888,
-    KOMODO_84-40889_MEDIUM_84_MODIFIED_FOR_DSM_40889, KOMODO_84-41697_MEDIUM_84_MODIFIED_FOR_DSM_41697,
-    KOMODO_84-44681_MEDIUM_84_MODIFIED_FOR_DSM_44681, KOMODO_84_ROLLED_OATS_MINERAL_medium'
+  notes: 'Sources: KOMODO_84_ROLLED_OATS_MINERAL_medium, medium_84_modified_for_dsm_40886,
+    medium_84_modified_for_dsm_40887, medium_84_modified_for_dsm_40888, medium_84_modified_for_dsm_40889,
+    medium_84_modified_for_dsm_41697, medium_84_modified_for_dsm_44681, rolled_oats_mineral_medium'
+ph_value: 7.2
 synonyms:
-- name: MEDIUM 84 MODIFIED FOR DSM 40886
+- name: medium_84_modified_for_dsm_40886
   source: KOMODO
   source_id: komodo.medium:84_40886
-  original_category: imported
-- name: MEDIUM 84 MODIFIED FOR DSM 40887
+  original_category: bacterial
+- name: medium_84_modified_for_dsm_40887
   source: KOMODO
   source_id: komodo.medium:84_40887
-  original_category: imported
-- name: MEDIUM 84 MODIFIED FOR DSM 40888
+  original_category: bacterial
+- name: medium_84_modified_for_dsm_40888
   source: KOMODO
   source_id: komodo.medium:84_40888
-  original_category: imported
-- name: MEDIUM 84 MODIFIED FOR DSM 40889
+  original_category: bacterial
+- name: medium_84_modified_for_dsm_40889
   source: KOMODO
   source_id: komodo.medium:84_40889
-  original_category: imported
-- name: MEDIUM 84 MODIFIED FOR DSM 41697
+  original_category: bacterial
+- name: medium_84_modified_for_dsm_41697
   source: KOMODO
   source_id: komodo.medium:84_41697
-  original_category: imported
-- name: MEDIUM 84 MODIFIED FOR DSM 44681
+  original_category: bacterial
+- name: medium_84_modified_for_dsm_44681
   source: KOMODO
   source_id: komodo.medium:84_44681
-  original_category: imported
-- name: ROLLED OATS MINERAL medium
-  source: KOMODO
-  source_id: komodo.medium:84
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_84_ROLLED_OATS_MINERAL_MEDIUM
-- KOMODO_84-40886_MEDIUM_84_MODIFIED_FOR_DSM_40886
-- KOMODO_84-40887_MEDIUM_84_MODIFIED_FOR_DSM_40887
-- KOMODO_84-40888_MEDIUM_84_MODIFIED_FOR_DSM_40888
-- KOMODO_84-40889_MEDIUM_84_MODIFIED_FOR_DSM_40889
-- KOMODO_84-41697_MEDIUM_84_MODIFIED_FOR_DSM_41697
-- KOMODO_84-44681_MEDIUM_84_MODIFIED_FOR_DSM_44681
 - KOMODO_84_ROLLED_OATS_MINERAL_medium
+- medium_84_modified_for_dsm_40886
+- medium_84_modified_for_dsm_40887
+- medium_84_modified_for_dsm_40888
+- medium_84_modified_for_dsm_40889
+- medium_84_modified_for_dsm_41697
+- medium_84_modified_for_dsm_44681
+- rolled_oats_mineral_medium
 merge_fingerprint: 79cce701f4eeb9664192e4bb2e2c3e5e0e80c9120208613d9de3c25676ebf17d

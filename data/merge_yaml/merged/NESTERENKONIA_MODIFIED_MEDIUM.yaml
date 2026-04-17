@@ -1,15 +1,16 @@
-name: NESTERENKONIA MODIFIED MEDIUM
-original_name: NESTERENKONIA MODIFIED MEDIUM
-category: imported
+id: CultureMech:006974
+name: nesterenkonia_modified_medium
+original_name: NESTERENKONIA MODIFIED medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_value: 7.2
+physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 993a
+  preferred_term: KOMODO Medium 993a
   term:
-    id: mediadive.medium:993a
-    label: NESTERENKONIA MODIFIED MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium993a.pdf'
+    id: komodo.medium:993a
+    label: NESTERENKONIA MODIFIED medium
+notes: 'Source: KOMODO ModelSEED | ID: 993a | DSMZ Medium: 993a (mediadive.medium:993a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: L-Asparagine
   term:
     id: CHEBI:17196
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagine
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -43,6 +53,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -50,6 +63,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -57,6 +73,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -64,6 +83,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -71,98 +93,101 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Use medium 993 supplemented with Yeast extract (0.5%) and MgCl2 x 6
-    H20 (10%).
-- step_number: 2
-  action: HEAT
-  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if it
-    is within this range. Liquefy agar by steaming at 100°C for 15-20 minutes.
-- step_number: 3
-  action: POUR_PLATES
-  description: Sterilize in flasks for pouring into Petri dishes. Seven standard 90
-    mm dishes containing 25 ml per dish.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.014403Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 993a'
-- timestamp: '2026-02-19T08:26:58.092828+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 993a'
+- timestamp: '2026-02-03T11:19:03.522161'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 993
+- timestamp: '2026-03-13T06:19:45.354154Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006974'
+- timestamp: '2026-03-17T06:30:06.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.409372+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NESTERENKONIA MODIFIED medium" to "nesterenkonia_modified_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:35.911581+00:00'
   curator: recipe-merger
   action: Merged 13 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_993a_NESTERENKONIA_MODIFIED_MEDIUM, KOMODO_993-16375_MEDIUM_993_MODIFIED_FOR_DSM_16375,
-    KOMODO_993-44844_MEDIUM_993_MODIFIED_FOR_DSM_44844, KOMODO_993-45009_MEDIUM_993_MODIFIED_FOR_DSM_45009,
-    KOMODO_993-45010_MEDIUM_993_MODIFIED_FOR_DSM_45010, KOMODO_993-45011_MEDIUM_993_MODIFIED_FOR_DSM_45011,
-    KOMODO_993-45013_MEDIUM_993_MODIFIED_FOR_DSM_45013, KOMODO_993-45014_MEDIUM_993_MODIFIED_FOR_DSM_45014,
-    KOMODO_993-45016_MEDIUM_993_MODIFIED_FOR_DSM_45016, KOMODO_993_ISP_5_MEDIUM, KOMODO_993a_NESTERENKONIA_MODIFIED_medium,
-    KOMODO_993b_MODIFIED_ISP5_medium, KOMODO_993c_MODIFIED_ISP5_MEDIUM_WITH_SODIUM_CHLORIDE'
+  notes: 'Sources: KOMODO_993_ISP_5_MEDIUM, KOMODO_993a_NESTERENKONIA_MODIFIED_medium,
+    KOMODO_993b_MODIFIED_ISP5_medium, KOMODO_993c_MODIFIED_ISP5_MEDIUM_WITH_SODIUM_CHLORIDE,
+    medium_993_modified_for_dsm_16375, medium_993_modified_for_dsm_44844, medium_993_modified_for_dsm_45009,
+    medium_993_modified_for_dsm_45010, medium_993_modified_for_dsm_45011, medium_993_modified_for_dsm_45013,
+    medium_993_modified_for_dsm_45014, medium_993_modified_for_dsm_45016, nesterenkonia_modified_medium'
+ph_value: 7.2
 synonyms:
-- name: MEDIUM 993 MODIFIED FOR DSM 16375
-  source: KOMODO
-  source_id: komodo.medium:993_16375
-  original_category: imported
-- name: MEDIUM 993 MODIFIED FOR DSM 44844
-  source: KOMODO
-  source_id: komodo.medium:993_44844
-  original_category: imported
-- name: MEDIUM 993 MODIFIED FOR DSM 45009
-  source: KOMODO
-  source_id: komodo.medium:993_45009
-  original_category: imported
-- name: MEDIUM 993 MODIFIED FOR DSM 45010
-  source: KOMODO
-  source_id: komodo.medium:993_45010
-  original_category: imported
-- name: MEDIUM 993 MODIFIED FOR DSM 45011
-  source: KOMODO
-  source_id: komodo.medium:993_45011
-  original_category: imported
-- name: MEDIUM 993 MODIFIED FOR DSM 45013
-  source: KOMODO
-  source_id: komodo.medium:993_45013
-  original_category: imported
-- name: MEDIUM 993 MODIFIED FOR DSM 45014
-  source: KOMODO
-  source_id: komodo.medium:993_45014
-  original_category: imported
-- name: MEDIUM 993 MODIFIED FOR DSM 45016
-  source: KOMODO
-  source_id: komodo.medium:993_45016
-  original_category: imported
-- name: ISP 5 MEDIUM
+- name: isp_5_medium
   source: KOMODO
   source_id: komodo.medium:993
-  original_category: imported
-- name: NESTERENKONIA MODIFIED medium
-  source: KOMODO
-  source_id: komodo.medium:993a
-  original_category: imported
-- name: MODIFIED ISP5 medium
+  original_category: bacterial
+- name: modified_isp5_medium
   source: KOMODO
   source_id: komodo.medium:993b
-  original_category: imported
-- name: MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE
+  original_category: bacterial
+- name: modified_isp5_medium_with_sodium_chloride
   source: KOMODO
   source_id: komodo.medium:993c
-  original_category: imported
+  original_category: bacterial
+- name: medium_993_modified_for_dsm_16375
+  source: KOMODO
+  source_id: komodo.medium:993_16375
+  original_category: bacterial
+- name: medium_993_modified_for_dsm_44844
+  source: KOMODO
+  source_id: komodo.medium:993_44844
+  original_category: bacterial
+- name: medium_993_modified_for_dsm_45009
+  source: KOMODO
+  source_id: komodo.medium:993_45009
+  original_category: bacterial
+- name: medium_993_modified_for_dsm_45010
+  source: KOMODO
+  source_id: komodo.medium:993_45010
+  original_category: bacterial
+- name: medium_993_modified_for_dsm_45011
+  source: KOMODO
+  source_id: komodo.medium:993_45011
+  original_category: bacterial
+- name: medium_993_modified_for_dsm_45013
+  source: KOMODO
+  source_id: komodo.medium:993_45013
+  original_category: bacterial
+- name: medium_993_modified_for_dsm_45014
+  source: KOMODO
+  source_id: komodo.medium:993_45014
+  original_category: bacterial
+- name: medium_993_modified_for_dsm_45016
+  source: KOMODO
+  source_id: komodo.medium:993_45016
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_993a_NESTERENKONIA_MODIFIED_MEDIUM
-- KOMODO_993-16375_MEDIUM_993_MODIFIED_FOR_DSM_16375
-- KOMODO_993-44844_MEDIUM_993_MODIFIED_FOR_DSM_44844
-- KOMODO_993-45009_MEDIUM_993_MODIFIED_FOR_DSM_45009
-- KOMODO_993-45010_MEDIUM_993_MODIFIED_FOR_DSM_45010
-- KOMODO_993-45011_MEDIUM_993_MODIFIED_FOR_DSM_45011
-- KOMODO_993-45013_MEDIUM_993_MODIFIED_FOR_DSM_45013
-- KOMODO_993-45014_MEDIUM_993_MODIFIED_FOR_DSM_45014
-- KOMODO_993-45016_MEDIUM_993_MODIFIED_FOR_DSM_45016
 - KOMODO_993_ISP_5_MEDIUM
 - KOMODO_993a_NESTERENKONIA_MODIFIED_medium
 - KOMODO_993b_MODIFIED_ISP5_medium
 - KOMODO_993c_MODIFIED_ISP5_MEDIUM_WITH_SODIUM_CHLORIDE
+- medium_993_modified_for_dsm_16375
+- medium_993_modified_for_dsm_44844
+- medium_993_modified_for_dsm_45009
+- medium_993_modified_for_dsm_45010
+- medium_993_modified_for_dsm_45011
+- medium_993_modified_for_dsm_45013
+- medium_993_modified_for_dsm_45014
+- medium_993_modified_for_dsm_45016
+- nesterenkonia_modified_medium
 merge_fingerprint: 26d18dae74ea1e9f3be8b7f8de895c5e8dab6e60664efa2e16edd2bb1363f697

@@ -1,6 +1,7 @@
-name: LBS medium
+id: CultureMech:009458
+name: lbs_medium
 original_name: LBS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Tris, pH 7.5
   concentration:
     value: '20'
@@ -54,6 +61,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.257544Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009458'
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.231929+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LBS medium" to "lbs_medium" for consistent matching
+high_metal: true
 merge_fingerprint: 65691b5760dffe5c723837f4d4b1f1d17ba81bfad35c520198e439aedf2e6ce2
 merged_from:
-- TOGO_M2922_LBS_medium
+- lbs_medium

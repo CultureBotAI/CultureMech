@@ -1,0 +1,104 @@
+id: CultureMech:000150
+name: wmy
+category: ALGAE
+medium_type: COMPLEX
+physical_state: LIQUID
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_wMY.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  date: '2026-01-28'
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: wMY, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_wMY.pdf'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:23:39.740697'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-02-03T11:26:43.654786'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.297244Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000150'
+- timestamp: '2026-03-17T19:45:04.242919+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "wMY" to "wmy" for consistent matching
+- timestamp: '2026-04-04T12:54:55.153670'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 4 curated ingredients from CCAP
+  source: CCAP Medium MR_wMY.pdf
+references:
+- reference_id: CCAP:wMY
+- reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_wMY.pdf
+ingredients:
+- preferred_term: K HPO
+  term:
+    id: CHEBI:32030
+    label: K HPO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.153637'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  source: CCAP Medium MR_wMY.pdf
+  notes: From CCAP Medium MR_wMY.pdf; Curated from CCAP Medium MR_wMY.pdf specification
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002441
+    label: Yeast extract
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.153646'
+    ontology_source: FOODON
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  source: CCAP Medium MR_wMY.pdf
+  notes: From CCAP Medium MR_wMY.pdf; Curated from CCAP Medium MR_wMY.pdf specification
+- preferred_term: Malt extract
+  term:
+    id: FOODON:00001264
+    label: Malt extract
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.153648'
+    ontology_source: FOODON
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  source: CCAP Medium MR_wMY.pdf
+  notes: From CCAP Medium MR_wMY.pdf; Curated from CCAP Medium MR_wMY.pdf specification
+- preferred_term: Add the above constituents and make up to 1 litre with deionised
+    water. For agar, add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_wMY.pdf; Curated
+    from CCAP Medium MR_wMY.pdf specification
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: CCAP Medium MR_wMY.pdf
+data_quality_flags:
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
+original_name: wMY
+merge_fingerprint: aa38599bea22ed14f2827b234f5460f29061fe29d373c71936a3be2dac89a7fb
+merged_from:
+- wmy

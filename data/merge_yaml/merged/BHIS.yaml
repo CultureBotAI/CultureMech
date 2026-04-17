@@ -1,48 +1,81 @@
+id: CultureMech:015493
 name: BHIS
-original_name: BHIS
-category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Hemin
+- preferred_term: Calf brains
   concentration:
-    value: '50'
+    value: '7.7'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
-    component'
-  term:
-    id: CHEBI:50385
-    label: hemin
-- preferred_term: Menadione
+- preferred_term: Beef heart
   concentration:
-    value: '0.5'
+    value: '9.8'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
-    compound'
+- preferred_term: Proteose Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'CAS: 91079-38-8'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
   term:
-    id: CHEBI:28869
-    label: Menadione
-- preferred_term: Brain heart infusion (BHI) agar
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Disodium phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW:
+    141.96'
+- preferred_term: L-Cysteine
   concentration:
     value: '1'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M2814
   term:
-    id: TOGO:M2814
-    label: BHIS
-notes: 'Source: https://togomedium.org/medium/M2814'
-applications:
-- Microbial cultivation
+    id: CHEBI:17561
+    label: L-cysteine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 52-90-4; MW: 121.16'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
+- preferred_term: Hemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50385
+    label: hemin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 16009-13-5; MW:
+    651.94'
+description: Brain heart infusion salt broth
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: BHIS
+  url: https://github.com/CultureBotAI/CultureBotHT
 curation_history:
-- timestamp: '2026-01-27T06:35:57.328847Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2814'
-- timestamp: '2026-01-28T19:48:37.460530Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: c0372702760d642eb92bb07a560a4358e49e392ff72824112759cff3423b418b
+- timestamp: '2026-03-18T04:31:12.482767+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: BHIS.yaml'
+- timestamp: '2026-03-18T04:33:58.656643Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015493'
+data_quality_flags:
+- has_unmapped_ingredients
+merge_fingerprint: 8d771a65a43d6c31145411569c780a3ddc9aff65859bd50e5b74b92246db87b9
 merged_from:
-- TOGO_M2814_BHIS
+- bhis

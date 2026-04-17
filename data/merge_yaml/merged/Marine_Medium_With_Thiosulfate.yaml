@@ -1,6 +1,7 @@
-name: Marine Medium With Thiosulfate
+id: CultureMech:009751
+name: marine_medium_with_thiosulfate
 original_name: Marine Medium With Thiosulfate
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '30'
@@ -22,12 +26,18 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.15'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
@@ -36,6 +46,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -46,18 +59,27 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -67,6 +89,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaNO3
   concentration:
     value: '1'
@@ -76,6 +101,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: MES
   concentration:
     value: '1.95'
@@ -83,6 +111,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:39010
+    label: MES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
     label: MES
 - preferred_term: sodium thiosulfate
   concentration:
@@ -92,6 +123,9 @@ ingredients:
   term:
     id: CHEBI:132112
     label: Sodium Thiosulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000669
+    label: sodium thiosulfate
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -100,21 +134,33 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 media_term:
   preferred_term: TOGO Medium M370
   term:
@@ -142,6 +188,19 @@ curation_history:
   notes: 'Added default concentration for ingredient: NaOH; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     N2; Added default concentration for ingredient: Hydrogen gas'
-merge_fingerprint: 05ca0cec050942923573facc443ea948f22c0d16e2ede61c8474c836d4836735
+- timestamp: '2026-03-13T06:20:08.598246Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009751'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.590804+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Marine Medium With Thiosulfate" to "marine_medium_with_thiosulfate"
+    for consistent matching
+merge_fingerprint: 2748e6162e36c423dc8e8d6cae96e577e131c3c564ae323ff88d48a8b0a968c8
 merged_from:
-- TOGO_M370_Marine_Medium_With_Thiosulfate
+- marine_medium_with_thiosulfate

@@ -1,8 +1,9 @@
-name: oligotrophic YPG
+id: CultureMech:009569
+name: oligotrophic_ypg
 original_name: oligotrophic YPG
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: D(+)-Glucose
   concentration:
     value: '0.75'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: D(+)-Glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -30,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Yeast Extract(Difco)
   concentration:
     value: '0.75'
@@ -61,6 +71,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.971289Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009569'
+- timestamp: '2026-03-17T06:30:34.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.995015+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "oligotrophic YPG" to "oligotrophic_ypg" for consistent
+    matching
 merge_fingerprint: 4009224d95171dd12dd3cb81b04604b7e1df3499120c642437e72e510d3b9673
 merged_from:
-- TOGO_M3055_oligotrophic_YPG
+- oligotrophic_ypg

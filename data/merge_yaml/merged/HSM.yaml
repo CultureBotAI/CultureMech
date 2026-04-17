@@ -1,6 +1,7 @@
-name: HSM
+id: CultureMech:000348
+name: hsm
 original_name: HSM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -21,6 +22,9 @@ ingredients:
   concentration:
     value: '2.65'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 12 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -28,6 +32,9 @@ ingredients:
   concentration:
     value: '0.41'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -35,6 +42,9 @@ ingredients:
   concentration:
     value: '7.36'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Marmite
   concentration:
     value: '10'
@@ -69,6 +79,18 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C39'
+- timestamp: '2026-03-13T06:18:54.646515Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000348'
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.640222+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HSM" to "hsm" for consistent matching
 merge_fingerprint: 4ec3d672a467f0dea36f812815c8930487b4b13e692a2d0805b6603540bd4323
 merged_from:
-- CCAP_C39_HSM
+- hsm

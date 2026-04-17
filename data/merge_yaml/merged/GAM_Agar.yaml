@@ -1,8 +1,9 @@
-name: GAM Agar
+id: CultureMech:010155
+name: gam_agar
 original_name: GAM Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: GAM agar (Nissui)
   concentration:
@@ -39,6 +43,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:11.734527Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010155'
+- timestamp: '2026-03-17T06:29:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.665352+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GAM Agar" to "gam_agar" for consistent matching
 merge_fingerprint: 8d4796669ca89fe488527cb6f291ad2dfbfeebc0b9d2f785c1b0a79205c13210
 merged_from:
-- TOGO_M74_GAM_Agar
+- gam_agar

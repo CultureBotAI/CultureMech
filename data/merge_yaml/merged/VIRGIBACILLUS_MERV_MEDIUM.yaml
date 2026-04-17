@@ -1,86 +1,98 @@
-name: Virgibacillus Merv Medium
-original_name: Virgibacillus Merv Medium
-category: imported
+id: CultureMech:002283
+name: virgibacillus_merv_medium
+original_name: VIRGIBACILLUS MERV MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J1105
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+    id: mediadive.medium:J1105
+    label: VIRGIBACILLUS MERV MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105'
+ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '10'
+    value: '1000'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
+- preferred_term: Trisodium citrate x 3 H2O
+  concentration:
+    value: '300'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000311
+    label: Trisodium citrate x 3 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
   term:
     id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: Trisodium citrate・3H2O
+    label: KCl
   concentration:
-    value: '3'
+    value: '300'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
-- preferred_term: agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: NaCl
   term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: 10% Na2CO3 solution
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10000'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-media_term:
-  preferred_term: TOGO Medium M1182
-  term:
-    id: TOGO:M1182
-    label: Virgibacillus Merv Medium
-notes: 'Source: https://togomedium.org/medium/M1182
-
-  Original source: JCM - JCM_M1105-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Add components to distilled water and bring volume to 1.0 L. For preparation
+    of solid medium, add 20.0 g/L agar. After autoclaving, add the following solution
+    (autoclaved):'
+- step_number: 2
+  action: ADJUST_PH
+  description: Readjust pH to 8.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.079481Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1182'
-- timestamp: '2026-01-28T19:48:08.560203Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: f46d0b890594a7c5c43797df45ccad1c09b8c1f63e643851c894d000309916de
+- timestamp: '2026-01-26T17:53:18.650080Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1105'
+- timestamp: '2026-03-13T06:19:11.972330Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002283'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:24.866794+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "VIRGIBACILLUS MERV MEDIUM" to "virgibacillus_merv_medium"
+    for consistent matching
+high_metal: true
+merge_fingerprint: 12c24e01a8f8e32b2cdd98ce9c091ae073ccf45ca9c69b5920325809ca1902a2
 merged_from:
-- TOGO_M1182_Virgibacillus_Merv_Medium
+- virgibacillus_merv_medium

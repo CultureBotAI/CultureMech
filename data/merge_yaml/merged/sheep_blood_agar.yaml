@@ -1,14 +1,18 @@
-name: sheep blood agar
+id: CultureMech:009082
+name: sheep_blood_agar
 original_name: sheep blood agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: CO2
   concentration:
     value: '5'
     unit: PERCENT_W_V
   notes: 'Properties: Gas'
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: sheep blood agar
   notes: 'Properties: Undefined component, Complex component'
   concentration:
@@ -31,6 +35,15 @@ curation_history:
   date: '2026-02-03T11:20:54.031426'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sheep blood agar'
-merge_fingerprint: 4e0b80fa57dbd1f9dab289ba29ef344dd66f8e80bfe2f0918a774e4e412124d2
+- timestamp: '2026-03-13T06:20:02.407675Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009082'
+- timestamp: '2026-03-17T19:46:21.183143+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "sheep blood agar" to "sheep_blood_agar" for consistent
+    matching
+merge_fingerprint: daabf53ba9b284e95eb1456b9bfb60cc58d03fc6d05da04d3cec48a14894da38
 merged_from:
-- TOGO_M2510_sheep_blood_agar
+- sheep_blood_agar

@@ -1,150 +1,248 @@
-name: MIXOTROPHIC NITROBACTER MEDIUM
-original_name: MIXOTROPHIC NITROBACTER MEDIUM
-category: imported
+id: CultureMech:008933
+name: mixotrophic_nitrobacter_medium
+original_name: Mixotrophic Nitrobacter Medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 7.4
-media_term:
-  preferred_term: DSMZ Medium 756a
-  term:
-    id: mediadive.medium:756a
-    label: MIXOTROPHIC NITROBACTER MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium756a.pdf'
 ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '2899.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 3 duplicates: 899.0, 1000.0, 1000.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1.5'
     unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Na-pyruvate
+  concentration:
+    value: '0.55'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na-pyruvate
+- preferred_term: NaNO2
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:78870
+    label: sodium nitrite
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000387
+    label: NaNO2
 - preferred_term: Peptone
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: Na-pyruvate
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
-    id: CHEBI:50144
-    label: Na-pyruvate
+    id: CHEBI:32145
+    label: sodium hydroxide
   concentration:
-    value: '0.55'
-    unit: G_PER_L
-- preferred_term: NaNO2
-  term:
-    id: CHEBI:78870
-    label: NaNO2
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: MnSO4 x H2O
-  term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
-  concentration:
-    value: '0.0338'
-    unit: G_PER_L
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: H3BO3
+  concentration:
+    value: '49.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
     label: H3BO3
-  concentration:
-    value: '0.0494'
-    unit: G_PER_L
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '0.0431'
-    unit: G_PER_L
-- preferred_term: (NH4)6Mo7O24
-  concentration:
-    value: '0.0371'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '97.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: ZnSO4 x 7 H2O
   concentration:
-    value: '0.0973'
+    value: '43.1'
     unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
     label: CuSO4 x 5 H2O
+- preferred_term: MnSO4 x H2O
   concentration:
-    value: '0.025'
+    value: '33.8'
     unit: G_PER_L
-- preferred_term: CaCO3
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:3311
-    label: CaCO3
+    id: CHEBI:75211
+    label: manganese(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
+- preferred_term: (NH4)6Mo7O24
   concentration:
-    value: '0.07'
+    value: '37.1'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: KH2PO4
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:63036
-    label: KH2PO4
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 7 H2O
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: KH2PO4
   concentration:
     value: '1.5'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.4 with NaOH or KOH.
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: CaCO3
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  notes: 'Role: Protective agent, Mineral source; Properties: Inorganic compound,
+    Defined component, Simple component'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
+media_term:
+  preferred_term: TOGO Medium M2349
+  term:
+    id: TOGO:M2349
+    label: Mixotrophic Nitrobacter Medium
+notes: 'Source: https://togomedium.org/medium/M2349
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium756a.pdf'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.148833Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 756a'
-- timestamp: '2026-02-19T08:26:53.883224+00:00'
-  curator: recipe-merger
-  action: Merged 6 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_756a_MIXOTROPHIC_NITROBACTER_MEDIUM, DSMZ_756b_10_MIXOTROPHIC_NITROBACTER_MEDIUM,
-    KOMODO_756_HETEROTROPHIC_NITROBACTER_MEDIUM, KOMODO_756a_MIXOTROPHIC_NITROBACTER_medium,
-    KOMODO_756b_10_MIXOTROPHIC_NITROBACTER_medium, KOMODO_756c_AUTOTROPHIC_NITROBACTER_MEDIUM'
-synonyms:
-- name: 10% MIXOTROPHIC NITROBACTER MEDIUM
-  source: MediaDive
-  source_id: mediadive.medium:756b
-  original_category: imported
-- name: HETEROTROPHIC NITROBACTER MEDIUM
-  source: KOMODO
-  source_id: komodo.medium:756
-  original_category: imported
-- name: MIXOTROPHIC NITROBACTER medium
-  source: KOMODO
-  source_id: komodo.medium:756a
-  original_category: imported
-- name: 10% MIXOTROPHIC NITROBACTER medium
-  source: KOMODO
-  source_id: komodo.medium:756b
-  original_category: imported
-- name: AUTOTROPHIC NITROBACTER MEDIUM
-  source: KOMODO
-  source_id: komodo.medium:756c
-  original_category: imported
-categories:
-- imported
+- timestamp: '2026-01-27T06:35:56.380712Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2349'
+- timestamp: '2026-01-28T19:48:33.092717Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:53.382662'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:54.803981+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:26.299878Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:01.396129Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008933'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:55.223478'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.118286+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mixotrophic Nitrobacter Medium" to "mixotrophic_nitrobacter_medium"
+    for consistent matching
+high_metal: true
+solutions:
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution
+- preferred_term: Stock solution
+  term:
+    id: mediadive.solution:6127
+    label: Stock solution
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: See mediadive_6127_Stock_solution.yaml for composition
+  name: Unknown solution
+merge_fingerprint: ba3a56e08ed5f8c44b1f6d50e3116a1a04c08acb7755fda2dc090870cb06d0d3
 merged_from:
-- DSMZ_756a_MIXOTROPHIC_NITROBACTER_MEDIUM
-- DSMZ_756b_10_MIXOTROPHIC_NITROBACTER_MEDIUM
-- KOMODO_756_HETEROTROPHIC_NITROBACTER_MEDIUM
-- KOMODO_756a_MIXOTROPHIC_NITROBACTER_medium
-- KOMODO_756b_10_MIXOTROPHIC_NITROBACTER_medium
-- KOMODO_756c_AUTOTROPHIC_NITROBACTER_MEDIUM
-merge_fingerprint: 02abefc7f7345b7d58f5b5fef948df4636efc35f8593f7301fcde31f3d54ee2b
+- TOGO_M2349_Mixotrophic_Nitrobacter_Medium

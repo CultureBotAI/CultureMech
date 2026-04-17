@@ -1,34 +1,38 @@
-name: HALOMONAS PANTELLERIENSE
+id: CultureMech:006404
+name: halomonas_pantelleriense
 original_name: HALOMONAS PANTELLERIENSE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
 media_term:
-  preferred_term: DSMZ Medium 752
+  preferred_term: KOMODO Medium 752
   term:
-    id: mediadive.medium:752
+    id: komodo.medium:752
     label: HALOMONAS PANTELLERIENSE
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium752.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 752 | DSMZ Medium: 752 (mediadive.medium:752)
+  | Aerobic: No'
 ingredients:
-- preferred_term: Yeast extract
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
-    value: '10'
+    value: '100'
     unit: G_PER_L
-- preferred_term: Na2-citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Trisodium citrate
   term:
     id: CHEBI:53258
-    label: Na2-citrate
+    label: Trisodium citrate
   concentration:
     value: '3'
     unit: G_PER_L
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -36,12 +40,42 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: NaCl
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: KCl
   term:
-    id: CHEBI:26710
-    label: NaCl
+    id: CHEBI:32588
+    label: KCl
   concentration:
-    value: '100'
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.00036'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
     unit: G_PER_L
 - preferred_term: Na2CO3
   term:
@@ -50,59 +84,57 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Liquid medium may be prepared by adding all components together. Agar
-    (2%) medium should be prepared without Na2CO3 and sterilised by autoclaving. Add
-    20-30 ml of a sterile 10% Na2CO3 solution to the autoclaved medium containing
-    agar so that the final pH is 9.0.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.140566Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 752'
-- timestamp: '2026-02-19T08:26:53.851497+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 752'
+- timestamp: '2026-02-03T11:18:57.604000'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 752
+- timestamp: '2026-03-13T06:19:40.483795Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006404'
+- timestamp: '2026-03-17T06:29:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:57.793382+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOMONAS PANTELLERIENSE" to "halomonas_pantelleriense"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:13.610484+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_752_HALOMONAS_PANTELLERIENSE, DSMZ_992_BACILLUS_FILIFORMIS_MEDIUM,
-    JCM_J975_SALINIVIBRIO_SHARMENSIS_MEDIUM, KOMODO_752_HALOMONAS_PANTELLERIENSE,
-    KOMODO_992_BACILLUS_FILIFORMIS_medium'
+  notes: 'Sources: JCM_J975_SALINIVIBRIO_SHARMENSIS_MEDIUM, KOMODO_752_HALOMONAS_PANTELLERIENSE,
+    KOMODO_992_BACILLUS_FILIFORMIS_medium, bacillus_filiformis_medium, halomonas_pantelleriense'
 synonyms:
-- name: BACILLUS FILIFORMIS MEDIUM
-  source: MediaDive
-  source_id: mediadive.medium:992
-  original_category: imported
-- name: SALINIVIBRIO SHARMENSIS MEDIUM
+- name: salinivibrio_sharmensis_medium
   source: MediaDive
   source_id: mediadive.medium:J975
-  original_category: imported
-- name: BACILLUS FILIFORMIS medium
+  original_category: bacterial
+- name: bacillus_filiformis_medium
   source: KOMODO
   source_id: komodo.medium:992
-  original_category: imported
+  original_category: bacterial
+- name: bacillus_filiformis_medium
+  source: MediaDive
+  source_id: mediadive.medium:992
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_752_HALOMONAS_PANTELLERIENSE
-- DSMZ_992_BACILLUS_FILIFORMIS_MEDIUM
 - JCM_J975_SALINIVIBRIO_SHARMENSIS_MEDIUM
 - KOMODO_752_HALOMONAS_PANTELLERIENSE
 - KOMODO_992_BACILLUS_FILIFORMIS_medium
+- bacillus_filiformis_medium
+- halomonas_pantelleriense
 merge_fingerprint: 6f8b5e7176c03b6f5d9af1fb27cdb9b65ecb98fa60324685f9f6c3fc8516678d

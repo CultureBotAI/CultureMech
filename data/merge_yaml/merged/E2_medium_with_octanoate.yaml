@@ -1,6 +1,7 @@
-name: E2 medium with octanoate
+id: CultureMech:007090
+name: e2_medium_with_octanoate
 original_name: E2 medium with octanoate
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -11,6 +12,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.01'
@@ -38,6 +42,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01'
@@ -49,6 +56,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.01'
@@ -77,6 +87,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:46.063238Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007090'
+- timestamp: '2026-03-17T06:30:05.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.192581+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "E2 medium with octanoate" to "e2_medium_with_octanoate"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 199
   term:
@@ -90,4 +113,4 @@ applications:
 - Systems biology research
 merge_fingerprint: cc12885f361adbd630d30034970143c065bee0d698d5c68904576623834c1544
 merged_from:
-- MEDIADB_199_E2_medium_with_octanoate
+- e2_medium_with_octanoate

@@ -1,6 +1,7 @@
-name: Vero B4 Medium
+id: CultureMech:000641
+name: vero_b4_medium
 original_name: Vero B4 Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -54,18 +55,27 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1198'
-- timestamp: '2026-02-19T08:26:40.623522+00:00'
+- timestamp: '2026-03-13T06:18:56.999999Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000641'
+- timestamp: '2026-03-17T19:45:08.153869+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Vero B4 Medium" to "vero_b4_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:59.425516+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1193_CULTIVATION_MEDIUM_FOR_CHLAMYDIAE, DSMZ_1198_Vero_B4_Medium'
+  notes: 'Sources: cultivation_medium_for_chlamydiae, vero_b4_medium'
 synonyms:
-- name: CULTIVATION MEDIUM FOR CHLAMYDIAE
+- name: cultivation_medium_for_chlamydiae
   source: MediaDive
   source_id: mediadive.medium:1193
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1193_CULTIVATION_MEDIUM_FOR_CHLAMYDIAE
-- DSMZ_1198_Vero_B4_Medium
+- cultivation_medium_for_chlamydiae
+- vero_b4_medium
 merge_fingerprint: 3e68d8ecfaa6f88b8917725f1a5f09be5e163c70d449a704f14bab2059f55997

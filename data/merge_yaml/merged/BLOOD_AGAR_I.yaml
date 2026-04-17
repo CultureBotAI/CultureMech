@@ -1,14 +1,30 @@
-name: BLOOD AGAR I
+id: CultureMech:005245
+name: blood_agar_i
 original_name: BLOOD AGAR I
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 420
+  preferred_term: KOMODO Medium 420
   term:
-    id: mediadive.medium:420
+    id: komodo.medium:420
     label: BLOOD AGAR I
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 420 | DSMZ Medium: 420 (mediadive.medium:420)
+  | Aerobic: No
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
 - preferred_term: Blood agar No 2
   concentration:
@@ -31,13 +47,108 @@ ingredients:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '15'
+    value: '30.0'
     unit: G_PER_L
-  notes: ' (for solid medium)'
-- preferred_term: Brain heart infusion
+  notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Calf brains
+  term:
+    id: UBERON:0000955
+    label: brain
   concentration:
-    value: '37'
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
+- preferred_term: Beef heart
+  term:
+    id: UBERON:0000948
+    label: heart
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
+- preferred_term: Proteose peptone
+  term:
+    id: FOODON:03302071
+    label: proteose peptone
+  concentration:
+    value: '10.0'
     unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:17234
+    label: D-glucose
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
+  synonyms:
+  - synonym_text: glucose
+    synonym_type: EXACT
+  - synonym_text: D-glucose
+    synonym_type: EXACT
+  - synonym_text: dextrose
+    synonym_type: EXACT
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: Disodium phosphate
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: Na2HPO4
+    synonym_type: EXACT
+  - synonym_text: disodium hydrogen phosphate
+    synonym_type: EXACT
+  - synonym_text: sodium phosphate dibasic
+    synonym_type: EXACT
 - preferred_term: Casein peptone
   concentration:
     value: '15'
@@ -53,55 +164,49 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: HEAT
-  description: Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50°C,
-    then add 40 ml/l of sterile horse blood.
-- step_number: 2
-  action: STORE
-  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or
-    1. For rehydration of Helicobacter and Campylobacter spp., use medium 215 (brain
-    heart infusion).
-- step_number: 3
-  action: ADJUST_PH
-  description: Adjust pH to 7.0.
-- step_number: 4
-  action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
-- step_number: 5
-  action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
-    CM 131).
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.089235Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 420'
-- timestamp: '2026-02-19T08:26:47.964796+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 420'
+- timestamp: '2026-02-03T11:19:01.872115'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 420
+- timestamp: '2026-03-13T03:08:56.533799Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:31.295985Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005245'
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:47.169530+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BLOOD AGAR I" to "blood_agar_i" for consistent matching
+- timestamp: '2026-04-17T06:29:23.680952+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_420_BLOOD_AGAR_I, KOMODO_420-4690_MEDIUM_420_MODIFIED_FOR_DSM_4690,
-    KOMODO_420_BLOOD_AGAR_I'
+  notes: 'Sources: KOMODO_420_BLOOD_AGAR_I, blood_agar_i, medium_420_modified_for_dsm_4690'
 synonyms:
-- name: MEDIUM 420 MODIFIED FOR DSM 4690
+- name: medium_420_modified_for_dsm_4690
   source: KOMODO
   source_id: komodo.medium:420_4690
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_420_BLOOD_AGAR_I
-- KOMODO_420-4690_MEDIUM_420_MODIFIED_FOR_DSM_4690
 - KOMODO_420_BLOOD_AGAR_I
-merge_fingerprint: ab64c925428dd4e6419c11acf8b7724e0d076aabbca7a89f5d275251e48f3e6b
+- blood_agar_i
+- medium_420_modified_for_dsm_4690
+merge_fingerprint: 1e97aa3292f8073abdb5d5b36876de2d6685437c17dee1e77f85ee6b43ce8945

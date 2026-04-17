@@ -1,0 +1,138 @@
+id: CultureMech:010533
+name: yeast_extract_malt_extract_agar_ph_9_0
+original_name: YEAST EXTRACT-MALT EXTRACT AGAR (pH 9.0)
+category: fungal
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J528
+  term:
+    id: mediadive.medium:J528
+    label: YEAST EXTRACT-MALT EXTRACT AGAR (pH 9.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=528'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare Yeast extract-malt extract agar (ISP-2) (see Medium No. 43).
+    After autoclaving, adjust pH to 9.0 with sterilized 10% Na2CO3 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.849723Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J528'
+- timestamp: '2026-02-03T11:27:23.447941'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:14.252188Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010533'
+- timestamp: '2026-03-17T19:46:33.283361+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YEAST EXTRACT-MALT EXTRACT AGAR (pH 9.0)" to "yeast_extract_malt_extract_agar_ph_9_0"
+    for consistent matching
+- timestamp: '2026-04-04T21:45:12.765861'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (4 ingredients)
+  source: CultureMech:010528
+  notes: Resolved reference by copying from yeast_extract_malt_extract_agar_isp_2
+    (CultureMech:010528)
+- timestamp: '2026-04-04T21:48:41.134531'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (4 ingredients)
+  source: CultureMech:010528
+  notes: Resolved reference by copying from yeast_extract_malt_extract_agar_isp_2
+    (CultureMech:010528)
+- timestamp: '2026-04-17T06:29:13.286756+00:00'
+  curator: recipe-merger
+  action: Merged 9 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J735_MY_MEDIUM, 1_10_yeast_extract_malt_extract_agar, acidic_yeast_extract_malt_extract_agar_ph_5_0,
+    alkaline_yeast_extract_malt_extract_agar, yeast_extract_malt_extract_agar_isp_2,
+    yeast_extract_malt_extract_agar_isp_2_ph_8_5, yeast_extract_malt_extract_agar_ph_5_5,
+    yeast_extract_malt_extract_agar_ph_6_0, yeast_extract_malt_extract_agar_ph_9_0'
+data_quality_flags:
+  incomplete_composition: false
+  resolved_reference: true
+synonyms:
+- name: my_medium
+  source: MediaDive
+  source_id: mediadive.medium:J735
+  original_category: bacterial
+- name: 1_10_yeast_extract_malt_extract_agar
+  source: MediaDive
+  source_id: mediadive.medium:J107
+  original_category: fungal
+- name: acidic_yeast_extract_malt_extract_agar_ph_5_0
+  source: MediaDive
+  source_id: mediadive.medium:J415
+  original_category: fungal
+- name: alkaline_yeast_extract_malt_extract_agar
+  source: MediaDive
+  source_id: mediadive.medium:J82
+  original_category: fungal
+- name: yeast_extract_malt_extract_agar_isp_2
+  source: MediaDive
+  source_id: mediadive.medium:J43
+  original_category: fungal
+- name: yeast_extract_malt_extract_agar_isp_2_ph_8_5
+  source: MediaDive
+  source_id: mediadive.medium:J895
+  original_category: fungal
+- name: yeast_extract_malt_extract_agar_ph_5_5
+  source: MediaDive
+  source_id: mediadive.medium:J1174
+  original_category: fungal
+- name: yeast_extract_malt_extract_agar_ph_6_0
+  source: MediaDive
+  source_id: mediadive.medium:J613
+  original_category: fungal
+categories:
+- bacterial
+- fungal
+merged_from:
+- JCM_J735_MY_MEDIUM
+- 1_10_yeast_extract_malt_extract_agar
+- acidic_yeast_extract_malt_extract_agar_ph_5_0
+- alkaline_yeast_extract_malt_extract_agar
+- yeast_extract_malt_extract_agar_isp_2
+- yeast_extract_malt_extract_agar_isp_2_ph_8_5
+- yeast_extract_malt_extract_agar_ph_5_5
+- yeast_extract_malt_extract_agar_ph_6_0
+- yeast_extract_malt_extract_agar_ph_9_0
+merge_fingerprint: a3b8bc6640a5ece0d86455985682c82dbdd0d923f9472ed9d1447cb58e5eab6d

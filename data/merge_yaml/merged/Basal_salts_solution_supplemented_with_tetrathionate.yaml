@@ -1,6 +1,7 @@
-name: Basal salts solution supplemented with tetrathionate
+id: CultureMech:009680
+name: basal_salts_solution_supplemented_with_tetrathionate
 original_name: Basal salts solution supplemented with tetrathionate
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: K2HPO4
   concentration:
     value: '0.1'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgCl2.6H2O
   concentration:
     value: '0.2'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2.6H2O
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -40,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Ca(NO3)2
   concentration:
     value: '0.01'
@@ -49,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:77732
     label: cadmium nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000859
+    label: Ca(NO3)2
 - preferred_term: Deionized water
   concentration:
     value: '1'
@@ -69,6 +85,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 media_term:
   preferred_term: TOGO Medium M3248
   term:
@@ -90,6 +109,19 @@ curation_history:
   date: '2026-02-03T11:20:58.010486'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
+- timestamp: '2026-03-13T06:20:08.061826Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009680'
+- timestamp: '2026-03-17T06:30:17.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.066946+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Basal salts solution supplemented with tetrathionate"
+    to "basal_salts_solution_supplemented_with_tetrathionate" for consistent matching
 merge_fingerprint: af4cca8bf423ceea44429d7dbf29757560839d858768c37111f77a55d84dc4c8
 merged_from:
-- TOGO_M3248_Basal_salts_solution_supplemented_with_tetrathionate
+- basal_salts_solution_supplemented_with_tetrathionate

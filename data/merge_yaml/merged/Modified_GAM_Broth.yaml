@@ -1,6 +1,7 @@
-name: Modified GAM Broth
+id: CultureMech:009699
+name: modified_gam_broth
 original_name: Modified GAM Broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: GAM broth, modified (Nissui)
   concentration:
@@ -39,6 +43,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:08.230351Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009699'
+- timestamp: '2026-03-17T06:30:30.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.218269+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified GAM Broth" to "modified_gam_broth" for consistent
+    matching
 merge_fingerprint: c63ecf1a3ed1ea2555caa0b524aeca498411bb1b69916ec1753c0fc11306b058
 merged_from:
-- TOGO_M3285_Modified_GAM_Broth
+- modified_gam_broth

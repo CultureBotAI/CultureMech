@@ -1,6 +1,7 @@
-name: Mops medium
+id: CultureMech:006993
+name: mops_medium
 original_name: Mops medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '0.201'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000274
+    label: L-Methionine
 - preferred_term: L-Leucine
   term:
     id: CHEBI:15603
@@ -20,6 +24,9 @@ ingredients:
     value: '0.23'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000278
+    label: L-Leucine
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
@@ -28,6 +35,9 @@ ingredients:
     value: '0.26'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: L-Valine
   term:
     id: CHEBI:16414
@@ -36,6 +46,9 @@ ingredients:
     value: '0.26'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:val-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000304
+    label: L-Valine
 - preferred_term: L-Threonine
   term:
     id: CHEBI:16857
@@ -44,6 +57,9 @@ ingredients:
     value: '0.25'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thr-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000310
+    label: L-Threonine
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
@@ -52,6 +68,9 @@ ingredients:
     value: '0.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: L-Isoleucine
   term:
     id: CHEBI:17191
@@ -60,6 +79,9 @@ ingredients:
     value: '0.23'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000294
+    label: L-Isoleucine
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.523'
@@ -67,6 +89,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0005'
@@ -75,6 +100,9 @@ ingredients:
   concentration:
     value: '0.276'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32036
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.32'
@@ -86,6 +114,9 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -93,6 +124,9 @@ ingredients:
   concentration:
     value: '9.52'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01'
@@ -104,10 +138,16 @@ ingredients:
   concentration:
     value: '40.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000285
+    label: MOPS
 - preferred_term: Tricine
   concentration:
     value: '4.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35920
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -128,6 +168,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:45.491598Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006993'
+- timestamp: '2026-03-17T06:30:19.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.570026+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mops medium" to "mops_medium" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 107
   term:
@@ -139,6 +191,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: c94ff6a668f3f4a8a5dc17b3804c04af6d3dd6cf4cfb0f2847aaa8e2d03ab938
+merge_fingerprint: 773a9fdf37bc508da1cb3dbaac7470d52c04d235798caf29bd7605f75dc2f8e0
 merged_from:
-- MEDIADB_107_Mops_medium
+- mops_medium

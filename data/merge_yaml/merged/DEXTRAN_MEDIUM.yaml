@@ -1,15 +1,17 @@
-name: DEXTRAN MEDIUM
-original_name: DEXTRAN MEDIUM
-category: imported
+id: CultureMech:003624
+name: dextran_medium
+original_name: DEXTRAN medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
-  preferred_term: DSMZ Medium 1050
+  preferred_term: KOMODO Medium 1050
   term:
-    id: mediadive.medium:1050
-    label: DEXTRAN MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1050.pdf'
+    id: komodo.medium:1050
+    label: DEXTRAN medium
+notes: 'Source: KOMODO ModelSEED | ID: 1050 | DSMZ Medium: 1050 (mediadive.medium:1050)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Dextran
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000865
+    label: Dextran
 - preferred_term: Polypeptone
   concentration:
     value: '5'
@@ -29,6 +34,9 @@ ingredients:
   term:
     id: CHEBI:63038
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: NH4NO3
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -36,6 +44,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -43,6 +54,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -50,6 +64,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -57,33 +74,40 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: adjust to pH 6.8
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.208775Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1050'
-- timestamp: '2026-01-28T19:48:36.545193Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:38.656439+00:00'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1050'
+- timestamp: '2026-02-03T11:19:00.801098'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1050
+- timestamp: '2026-03-13T06:19:21.098211Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003624'
+- timestamp: '2026-03-17T06:29:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:35.307369+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DEXTRAN medium" to "dextran_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:14.476753+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1050_DEXTRAN_MEDIUM, KOMODO_1050_DEXTRAN_medium'
-synonyms:
-- name: DEXTRAN medium
-  source: KOMODO
-  source_id: komodo.medium:1050
-  original_category: imported
+  notes: 'Sources: KOMODO_1050_DEXTRAN_medium, dextran_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1050_DEXTRAN_MEDIUM
 - KOMODO_1050_DEXTRAN_medium
+- dextran_medium
 merge_fingerprint: affc6c9c7b7d8e2edee5756f78ae5e3ce7c464380c4876355319e51bb1b061a9

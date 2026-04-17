@@ -1,6 +1,7 @@
-name: Wilkins Chalgren Anaerobic Medium
+id: CultureMech:009302
+name: wilkins_chalgren_anaerobic_medium
 original_name: Wilkins Chalgren Anaerobic Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -28,6 +29,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium Chloride
 - preferred_term: Sodium Pyruvate
   concentration:
     value: '1'
@@ -37,6 +41,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium Pyruvate
 - preferred_term: Haemin
   concentration:
     value: '0.005'
@@ -45,6 +52,9 @@ ingredients:
     component'
   term:
     id: CHEBI:50385
+    label: Haemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
     label: Haemin
 - preferred_term: L-Arginine
   concentration:
@@ -55,6 +65,9 @@ ingredients:
   term:
     id: CHEBI:16467
     label: L-arginine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000289
+    label: L-Arginine
 - preferred_term: Glucose
   concentration:
     value: '1'
@@ -64,6 +77,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Menadione
   concentration:
     value: '0.0005'
@@ -72,6 +88,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:28869
+    label: Menadione
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000903
     label: Menadione
 - preferred_term: Gelatin Peptone
   concentration:
@@ -102,6 +121,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:05.420732Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009302'
+- timestamp: '2026-03-17T06:30:33.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:24.319846+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Wilkins Chalgren Anaerobic Medium" to "wilkins_chalgren_anaerobic_medium"
+    for consistent matching
 merge_fingerprint: cafee058f70799c02f9bd176babc2c22d6f00f988cffa921ad27d1657ace4878
 merged_from:
-- TOGO_M2751_Wilkins_Chalgren_Anaerobic_Medium
+- wilkins_chalgren_anaerobic_medium

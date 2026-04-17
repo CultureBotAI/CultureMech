@@ -1,15 +1,17 @@
-name: SEA WATER AGAR
+id: CultureMech:004619
+name: sea_water_agar
 original_name: SEA WATER AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
-  preferred_term: DSMZ Medium 246
+  preferred_term: KOMODO Medium 246
   term:
-    id: mediadive.medium:246
+    id: komodo.medium:246
     label: SEA WATER AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium246.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 246 | DSMZ Medium: 246 (mediadive.medium:246)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Beef extract
   concentration:
@@ -26,6 +28,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Tap water
   term:
     id: CHEBI:15377
@@ -33,6 +38,9 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Tap water
 - preferred_term: Sea water
   concentration:
     value: '750'
@@ -44,6 +52,9 @@ ingredients:
   concentration:
     value: '28.13'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -51,6 +62,9 @@ ingredients:
   concentration:
     value: '0.77'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -58,6 +72,9 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -65,6 +82,9 @@ ingredients:
   concentration:
     value: '4.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -72,6 +92,9 @@ ingredients:
   concentration:
     value: '0.11'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -79,49 +102,57 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve beef extract and peptone by heating in tap water, adjust pH
-    to 7.8 and boil for 10 min. Readjust pH to 7.3. Add agar and autoclave at 121°C
-    for 20 min. Directly after autoclaving, add warm (55°C) sterile sea water. Liquid
-    medium without agar should be combined when cooled to room temperature.
-- step_number: 2
-  action: STORE
-  description: Natural sea water is stored in the dark for at least three weeks to
-    "age". If natural sea water is not available use artificial sea water.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.585956Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 246'
-- timestamp: '2026-02-19T08:26:45.267958+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 246'
+- timestamp: '2026-02-03T11:18:56.951673'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 246
+- timestamp: '2026-03-13T06:19:27.709814Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004619'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:42.971523+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SEA WATER AGAR" to "sea_water_agar" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:21.000846+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_246_SEA_WATER_AGAR, DSMZ_246a_REACTIVATION_WITH_LIQUID_MEDIUM_246,
-    KOMODO_246-18675_MEDIUM_246_MODIFIED_FOR_DSM_18675, KOMODO_246-2165_MEDIUM_246_MODIFIED_FOR_DSM_2165,
-    KOMODO_246_SEA_WATER_AGAR'
+  notes: 'Sources: KOMODO_246_SEA_WATER_AGAR, medium_246_modified_for_dsm_18675, medium_246_modified_for_dsm_2165,
+    reactivation_with_liquid_medium_246, sea_water_agar'
 synonyms:
-- name: REACTIVATION WITH LIQUID MEDIUM 246
-  source: MediaDive
-  source_id: mediadive.medium:246a
-  original_category: imported
-- name: MEDIUM 246 MODIFIED FOR DSM 18675
+- name: medium_246_modified_for_dsm_18675
   source: KOMODO
   source_id: komodo.medium:246_18675
-  original_category: imported
-- name: MEDIUM 246 MODIFIED FOR DSM 2165
+  original_category: bacterial
+- name: medium_246_modified_for_dsm_2165
   source: KOMODO
   source_id: komodo.medium:246_2165
-  original_category: imported
+  original_category: bacterial
+- name: reactivation_with_liquid_medium_246
+  source: MediaDive
+  source_id: mediadive.medium:246a
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_246_SEA_WATER_AGAR
-- DSMZ_246a_REACTIVATION_WITH_LIQUID_MEDIUM_246
-- KOMODO_246-18675_MEDIUM_246_MODIFIED_FOR_DSM_18675
-- KOMODO_246-2165_MEDIUM_246_MODIFIED_FOR_DSM_2165
 - KOMODO_246_SEA_WATER_AGAR
+- medium_246_modified_for_dsm_18675
+- medium_246_modified_for_dsm_2165
+- reactivation_with_liquid_medium_246
+- sea_water_agar
 merge_fingerprint: a0d2fda5cc698640d4a31e6fbd13785f937b0ad11c7a93e3b9775fdacc08be8c

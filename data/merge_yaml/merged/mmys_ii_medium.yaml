@@ -1,0 +1,164 @@
+id: CultureMech:008454
+name: mmys_ii_medium
+original_name: Mmys-II Medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '8.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86158
+    label: ''
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:86345
+    label: ''
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
+- preferred_term: Na2S2O3・5H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  term:
+    id: CHEBI:32150
+    label: ''
+- preferred_term: Sodium DL-malate
+  concentration:
+    value: '3.6'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:91261
+    label: disodium (S)-malate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000450
+    label: Sodium DL-malate
+- preferred_term: 20 mM Potassium phosphate buffer (pH 7.8)
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound,
+    Complex component'
+media_term:
+  preferred_term: TOGO Medium M187
+  term:
+    id: TOGO:M187
+    label: Mmys-II Medium
+notes: 'Source: https://togomedium.org/medium/M187
+
+  Original source: JCM - JCM_M194
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=194'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.575288Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M187'
+- timestamp: '2026-01-28T19:48:21.293658Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:35.498255+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:57.045615Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008454'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:52.027841'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.634842+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mmys-II Medium" to "mmys_ii_medium" for consistent
+    matching
+high_metal: true
+solutions:
+- preferred_term: Solution I
+  term:
+    id: mediadive.solution:5335
+    label: Solution I
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: See mediadive_5335_Solution_I.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution II
+  term:
+    id: mediadive.solution:5336
+    label: Solution II
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: See mediadive_5336_Solution_II.yaml for composition
+  name: Unknown solution
+- preferred_term: Trace element solution SL8 (see Medium [M183])
+  composition: []
+  notes: Cross-reference to Medium M183
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 15730569a6e0900eebd78d4d2b37ece194a7a027e16ae25b0c7b8428a2401bfa
+merged_from:
+- TOGO_M187_Mmys-II_Medium

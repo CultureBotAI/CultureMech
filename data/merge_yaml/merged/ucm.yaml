@@ -1,0 +1,672 @@
+id: CultureMech:000140
+name: ucm
+category: ALGAE
+medium_type: COMPLEX
+physical_state: LIQUID
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_UCM.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  date: '2026-01-28'
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: UCM, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_UCM.pdf'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:23:39.724012'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-02-03T11:26:43.635582'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.269523Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000140'
+- timestamp: '2026-03-17T19:45:04.217110+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "UCM" to "ucm" for consistent matching
+- timestamp: '2026-04-04T12:54:54.947024'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 48 curated ingredients from CCAP
+  source: CCAP Medium MR_UCM.pdf
+references:
+- reference_id: CCAP:UCM
+- reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_UCM.pdf
+ingredients:
+- preferred_term: NaHCO
+  term:
+    id: CHEBI:32139
+    label: NaHCO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946922'
+    ontology_source: CHEBI
+  concentration:
+    value: '8.8'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Tris
+  notes: Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
+    from CCAP Medium MR_UCM.pdf specification
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  term:
+    id: CHEBI:9754
+    label: ''
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946934'
+    ontology_source: CHEBI
+  concentration:
+    value: '54.2'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: SrCl 6H O
+  notes: Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
+    from CCAP Medium MR_UCM.pdf specification
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+- preferred_term: Na EDTA
+  term:
+    id: CHEBI:64734
+    label: Na EDTA
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946938'
+    ontology_source: CHEBI
+  concentration:
+    value: '6.684'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: H BO
+  term:
+    id: CHEBI:33141
+    label: H BO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946940'
+    ontology_source: CHEBI
+  concentration:
+    value: '11.4'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: FeSO .7H O
+  term:
+    id: CHEBI:75832
+    label: FeSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946942'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.99'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: CuSO .5H O
+  term:
+    id: CHEBI:31440
+    label: CuSO .5H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946944'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.039'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Na MoO .2H O
+  term:
+    id: CHEBI:75216
+    label: Na MoO .2H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946946'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.126'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: MnCl .4H O
+  term:
+    id: CHEBI:86457
+    label: MnCl .4H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946948'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: ZnSO .7H O
+  term:
+    id: CHEBI:86463
+    label: ZnSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946950'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.44'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Co(NO ) .6H O
+  term:
+    id: CHEBI:78038
+    label: Co(NO ) .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946952'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.033'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: NH VO
+  notes: Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
+    from CCAP Medium MR_UCM.pdf specification
+  concentration:
+    value: '0.023'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+- preferred_term: KI
+  term:
+    id: CHEBI:8346
+    label: KI
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946955'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.039'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Na SeO .5H O
+  term:
+    id: CHEBI:85214
+    label: Na SeO .5H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:54.946957'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.00263'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: As O
+  term:
+    id: CHEBI:30621
+    label: As O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946959'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.000093'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Na WO .2H O
+  term:
+    id: CHEBI:86311
+    label: Na WO .2H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946961'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.000066'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: TeO
+  term:
+    id: CHEBI:30452
+    label: TeO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946963'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.000034'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Na SeO .5H O
+  term:
+    id: CHEBI:85214
+    label: Na SeO .5H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:54.946965'
+    ontology_source: CHEBI
+  concentration:
+    value: '2.63'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946967'
+    ontology_source: CHEBI
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: As O
+  term:
+    id: CHEBI:30621
+    label: As O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946968'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.093'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Na WO .2H O
+  term:
+    id: CHEBI:86311
+    label: Na WO .2H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946970'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.066'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946972'
+    ontology_source: CHEBI
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: TeO
+  term:
+    id: CHEBI:30452
+    label: TeO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946974'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.034'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Inositol
+  term:
+    id: CHEBI:17268
+    label: Inositol
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:54.946976'
+    ontology_source: CHEBI
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Thymine
+  term:
+    id: CHEBI:17821
+    label: Thymine
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946978'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Choline chloride
+  term:
+    id: CHEBI:133341
+    label: Choline chloride
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946980'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.72'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Orotic acid
+  notes: Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
+    from CCAP Medium MR_UCM.pdf specification
+  concentration:
+    value: '0.52'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  term:
+    id: CHEBI:16742
+    label: ''
+- preferred_term: Thiamine HCL
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946984'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Niacin
+  term:
+    id: CHEBI:15940
+    label: Niacin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946986'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Ca-panthothenate
+  notes: Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
+    from CCAP Medium MR_UCM.pdf specification
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+- preferred_term: Pyridoxine.HCL
+  notes: Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
+    from CCAP Medium MR_UCM.pdf specification
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+- preferred_term: Putrescine
+  notes: Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
+    from CCAP Medium MR_UCM.pdf specification
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  term:
+    id: CHEBI:17148
+    label: ''
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946991'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946993'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946995'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Folinic acid (citrovorum)
+  term:
+    id: CHEBI:27470
+    label: Folinic acid (citrovorum)
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946997'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.946999'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Pyridoxamine.2HCl
+  term:
+    id: CHEBI:8668
+    label: Pyridoxamine.2HCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.947002'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.00004'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Folinic acid (citrovorum)
+  term:
+    id: CHEBI:27470
+    label: Folinic acid (citrovorum)
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.947004'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.947006'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Pyridoxamine.2HCl
+  term:
+    id: CHEBI:8668
+    label: Pyridoxamine.2HCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.947008'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.947010'
+    ontology_source: CHEBI
+  concentration:
+    value: '19.14'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Na SO .10H O
+  notes: Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
+    from CCAP Medium MR_UCM.pdf specification
+  concentration:
+    value: '7.28'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+- preferred_term: MgCl .6H O
+  term:
+    id: CHEBI:6635
+    label: MgCl .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.947012'
+    ontology_source: CHEBI
+  concentration:
+    value: '8.68'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: CaCl .6H O
+  term:
+    id: CHEBI:3312
+    label: CaCl .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.947014'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.24'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: NaNO
+  term:
+    id: CHEBI:34545
+    label: NaNO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.947017'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.085'
+    unit: G_PER_L
+  source: CCAP Medium MR_UCM.pdf
+  notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
+- preferred_term: Make up to 978 ml with deionised water and adjust pH to 8.1 with
+  notes: Ontology mapping not yet available; From CCAP Medium MR_UCM.pdf; Curated
+    from CCAP Medium MR_UCM.pdf specification
+  concentration:
+    value: '1'
+    unit: MOLAR
+  source: CCAP Medium MR_UCM.pdf
+data_quality_flags:
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
+original_name: UCM
+merge_fingerprint: d300a2b89a0953fee39a55cecc131736653551e8021c6286b27f89d7a3301153
+merged_from:
+- ucm

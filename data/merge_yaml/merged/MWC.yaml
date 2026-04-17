@@ -1,15 +1,15 @@
-name: MWC
+id: CultureMech:000370
+name: mwc
 original_name: MWC
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7-8
 media_term:
-  preferred_term: DSMZ Medium 1828
+  preferred_term: CCAP Medium C59
   term:
-    id: mediadive.medium:1828
+    id: mediadive.medium:C59
     label: MWC
-notes: 'Source: DSMZ'
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MWC.pdf'
 ingredients:
 - preferred_term: TES
   term:
@@ -18,20 +18,9 @@ ingredients:
   concentration:
     value: '0.115'
     unit: G_PER_L
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:59148
-    label: NaNO3
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000506
+    label: TES
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -39,80 +28,153 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: K2HPO4 x 3 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '2.62'
+    value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '0.4'
+    value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4 x 3 H2O
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: Na2SiO3 x 5 H2O
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000993
+    label: Na2SiO3 x 5 H2O
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
     label: Na2-EDTA
   concentration:
-    value: '4.36'
+    value: '43.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
     label: FeCl3 x 6 H2O
   concentration:
-    value: '3.15'
+    value: '31.5'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
     label: CuSO4 x 5 H2O
   concentration:
-    value: '0.8'
+    value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
     label: ZnSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '0.22'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
   concentration:
-    value: '1.667'
+    value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
   concentration:
-    value: '1'
+    value: '1.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
-    value: '2.222'
+    value: '0.06'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001039
+    label: Cyanocobalamine
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -120,53 +182,41 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 preparation_steps:
 - step_number: 1
-  action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    MilliQ water.
-- step_number: 2
   action: AUTOCLAVE
-  description: Autoclave at 121 °C for 20 min.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
+- step_number: 2
+  action: MIX
+  description: First make primary stocks of Cyanocobalamin and Biotin.
 - step_number: 3
-  action: FILTER_STERILIZE
-  description: 'After cooling add the following filter sterilized component under
-    sterile conditions:'
-- step_number: 4
-  action: ADJUST_PH
-  description: Adjust pH to 4.0-4.5.
-- step_number: 5
-  action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    distilled water.
-- step_number: 6
-  action: MIX
-  description: Make up to <span class='amount' data-volume='100'>100</span> ml with
-    MilliQ water.
-- step_number: 7
-  action: FILTER_STERILIZE
-  description: Filter sterilise, aliquot and store frozen.
+  action: POUR_PLATES
+  description: Dispense any excess primary stocks into 1 ml aliquots and freeze.
 applications:
 - Microbial cultivation
+references:
+- reference: doi.org/10.1111/j.1529-8817.1972.tb03995.x
 curation_history:
-- timestamp: '2026-01-26T17:53:15.499250Z'
+- timestamp: '2026-01-26T17:53:19.678419Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1828'
-merge_fingerprint: 23195eefb8dd15e2dffcc476e674aec1ffabc27c565d71c3a88b7c18012acaea
+  notes: 'Source: CCAP, ID: C59'
+- timestamp: '2026-03-13T06:18:54.815861Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000370'
+- timestamp: '2026-03-17T06:29:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.823377+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MWC" to "mwc" for consistent matching
+merge_fingerprint: 2bb3e6a6d4e64ed31b126ab549aef2ddc35eca01fa96c4c0c0253837f25aa7bd
 merged_from:
-- DSMZ_1828_MWC
+- mwc

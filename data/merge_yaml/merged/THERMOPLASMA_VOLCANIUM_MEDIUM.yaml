@@ -1,6 +1,7 @@
-name: THERMOPLASMA VOLCANIUM MEDIUM
+id: CultureMech:001507
+name: thermoplasma_volcanium_medium
 original_name: THERMOPLASMA VOLCANIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -17,6 +18,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -24,6 +28,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -31,6 +38,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -38,6 +48,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -49,6 +62,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
@@ -57,6 +73,9 @@ ingredients:
     value: '4'
     unit: G_PER_L
   notes: ' (for anaerobic media only)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000927
+    label: Sulfur
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -78,29 +97,31 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 398'
-- timestamp: '2026-02-19T08:26:47.653006+00:00'
+- timestamp: '2026-03-13T06:19:04.790397Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001507'
+- timestamp: '2026-03-17T06:30:36.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.853954+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMOPLASMA VOLCANIUM MEDIUM" to "thermoplasma_volcanium_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:04.342141+00:00'
   curator: recipe-merger
-  action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_398_THERMOPLASMA_VOLCANIUM_MEDIUM, KOMODO_398-1_For_DSM_4301,
-    KOMODO_398-2_Aerobic_version, KOMODO_398_THERMOPLASMA_VOLCANIUM_medium'
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: for_dsm_4301, thermoplasma_volcanium_medium'
 synonyms:
-- name: For DSM 4301
+- name: for_dsm_4301
   source: KOMODO
   source_id: komodo.medium:398.1
-  original_category: imported
-- name: Aerobic version
-  source: KOMODO
-  source_id: komodo.medium:398.2
-  original_category: imported
-- name: THERMOPLASMA VOLCANIUM medium
-  source: KOMODO
-  source_id: komodo.medium:398
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_398_THERMOPLASMA_VOLCANIUM_MEDIUM
-- KOMODO_398-1_For_DSM_4301
-- KOMODO_398-2_Aerobic_version
-- KOMODO_398_THERMOPLASMA_VOLCANIUM_medium
+- for_dsm_4301
+- thermoplasma_volcanium_medium
 merge_fingerprint: 5a145f50443775d2f4ac37f3c46d8ccb6d0fb810189a90917e0f147f7bdd9589

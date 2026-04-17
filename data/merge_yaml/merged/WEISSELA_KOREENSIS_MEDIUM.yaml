@@ -1,15 +1,16 @@
-name: WEISSELA KOREENSIS MEDIUM
-original_name: WEISSELA KOREENSIS MEDIUM
-category: imported
+id: CultureMech:004607
+name: weissela_koreensis_medium
+original_name: WEISSELA KOREENSIS medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.2-6.5
 media_term:
-  preferred_term: DSMZ Medium 232b
+  preferred_term: KOMODO Medium 232b
   term:
-    id: mediadive.medium:232b
-    label: WEISSELA KOREENSIS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium232b.pdf'
+    id: komodo.medium:232b
+    label: WEISSELA KOREENSIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 232b | DSMZ Medium: 232b (mediadive.medium:232b)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
@@ -30,6 +31,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -37,6 +41,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -44,6 +51,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
@@ -51,6 +61,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
 - preferred_term: (NH4)2 citrate
   concentration:
     value: '2'
@@ -58,6 +71,9 @@ ingredients:
   term:
     id: CHEBI:63076
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000400
+    label: (NH4)2 citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -65,6 +81,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -72,132 +91,132 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 6.2 - 6.5.
-- step_number: 2
-  action: AUTOCLAVE
-  description: Add 4 ml Resazurin solution (25 mg/100 ml). 0.05% Cysteine-hydrochloride
-    is added after the medium has been boiled and cooled and CO2. Distribute under
-    N2 and autoclave.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.564999Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 232b'
-- timestamp: '2026-01-28T19:48:39.105874Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:45.184662+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 232b'
+- timestamp: '2026-02-03T11:19:18.232003'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 232
+- timestamp: '2026-03-13T06:19:27.633762Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004607'
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:42.884935+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "WEISSELA KOREENSIS medium" to "weissela_koreensis_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:20.932387+00:00'
   curator: recipe-merger
   action: Merged 19 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_232_MRS_MEDIUM_WITH_CYSTEINE, DSMZ_232b_WEISSELA_KOREENSIS_MEDIUM,
-    KOMODO_232-16982_MEDIUM_232_MODIFIED_FOR_DSM_16982, KOMODO_232-17330_MEDIUM_232_MODIFIED_FOR_DSM_17330,
-    KOMODO_232-20079_MEDIUM_232_MODIFIED_FOR_DSM_20079, KOMODO_232-20243_MEDIUM_232_MODIFIED_FOR_DSM_20243,
-    KOMODO_232-20289_MEDIUM_232_MODIFIED_FOR_DSM_20289, KOMODO_232-20356_MEDIUM_232_MODIFIED_FOR_DSM_20356,
-    KOMODO_232-20403_MEDIUM_232_MODIFIED_FOR_DSM_20403, KOMODO_232-20404_MEDIUM_232_MODIFIED_FOR_DSM_20404,
-    KOMODO_232-20405_MEDIUM_232_MODIFIED_FOR_DSM_20405, KOMODO_232-20406_MEDIUM_232_MODIFIED_FOR_DSM_20406,
-    KOMODO_232-20653_MEDIUM_232_MODIFIED_FOR_DSM_20653, KOMODO_232-20654_MEDIUM_232_MODIFIED_FOR_DSM_20654,
-    KOMODO_232-20655_MEDIUM_232_MODIFIED_FOR_DSM_20655, KOMODO_232-20656_MEDIUM_232_MODIFIED_FOR_DSM_20656,
-    KOMODO_232-6306_MEDIUM_232_MODIFIED_FOR_DSM_6306, KOMODO_232_MRS_medium_WITH_CYSTEINE,
-    KOMODO_232b_WEISSELA_KOREENSIS_medium'
+  notes: 'Sources: KOMODO_232_MRS_medium_WITH_CYSTEINE, KOMODO_232b_WEISSELA_KOREENSIS_medium,
+    medium_232_modified_for_dsm_16982, medium_232_modified_for_dsm_17330, medium_232_modified_for_dsm_20079,
+    medium_232_modified_for_dsm_20243, medium_232_modified_for_dsm_20289, medium_232_modified_for_dsm_20356,
+    medium_232_modified_for_dsm_20403, medium_232_modified_for_dsm_20404, medium_232_modified_for_dsm_20405,
+    medium_232_modified_for_dsm_20406, medium_232_modified_for_dsm_20653, medium_232_modified_for_dsm_20654,
+    medium_232_modified_for_dsm_20655, medium_232_modified_for_dsm_20656, medium_232_modified_for_dsm_6306,
+    mrs_medium_with_cysteine, weissela_koreensis_medium'
 synonyms:
-- name: MRS MEDIUM WITH CYSTEINE
-  source: MediaDive
-  source_id: mediadive.medium:232
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 16982
-  source: KOMODO
-  source_id: komodo.medium:232_16982
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 17330
-  source: KOMODO
-  source_id: komodo.medium:232_17330
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20079
-  source: KOMODO
-  source_id: komodo.medium:232_20079
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20243
-  source: KOMODO
-  source_id: komodo.medium:232_20243
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20289
-  source: KOMODO
-  source_id: komodo.medium:232_20289
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20356
-  source: KOMODO
-  source_id: komodo.medium:232_20356
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20403
-  source: KOMODO
-  source_id: komodo.medium:232_20403
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20404
-  source: KOMODO
-  source_id: komodo.medium:232_20404
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20405
-  source: KOMODO
-  source_id: komodo.medium:232_20405
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20406
-  source: KOMODO
-  source_id: komodo.medium:232_20406
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20653
-  source: KOMODO
-  source_id: komodo.medium:232_20653
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20654
-  source: KOMODO
-  source_id: komodo.medium:232_20654
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20655
-  source: KOMODO
-  source_id: komodo.medium:232_20655
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 20656
-  source: KOMODO
-  source_id: komodo.medium:232_20656
-  original_category: imported
-- name: MEDIUM 232 MODIFIED FOR DSM 6306
-  source: KOMODO
-  source_id: komodo.medium:232_6306
-  original_category: imported
-- name: MRS medium WITH CYSTEINE
+- name: mrs_medium_with_cysteine
   source: KOMODO
   source_id: komodo.medium:232
-  original_category: imported
-- name: WEISSELA KOREENSIS medium
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_16982
   source: KOMODO
-  source_id: komodo.medium:232b
-  original_category: imported
+  source_id: komodo.medium:232_16982
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_17330
+  source: KOMODO
+  source_id: komodo.medium:232_17330
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20079
+  source: KOMODO
+  source_id: komodo.medium:232_20079
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20243
+  source: KOMODO
+  source_id: komodo.medium:232_20243
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20289
+  source: KOMODO
+  source_id: komodo.medium:232_20289
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20356
+  source: KOMODO
+  source_id: komodo.medium:232_20356
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20403
+  source: KOMODO
+  source_id: komodo.medium:232_20403
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20404
+  source: KOMODO
+  source_id: komodo.medium:232_20404
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20405
+  source: KOMODO
+  source_id: komodo.medium:232_20405
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20406
+  source: KOMODO
+  source_id: komodo.medium:232_20406
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20653
+  source: KOMODO
+  source_id: komodo.medium:232_20653
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20654
+  source: KOMODO
+  source_id: komodo.medium:232_20654
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20655
+  source: KOMODO
+  source_id: komodo.medium:232_20655
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_20656
+  source: KOMODO
+  source_id: komodo.medium:232_20656
+  original_category: bacterial
+- name: medium_232_modified_for_dsm_6306
+  source: KOMODO
+  source_id: komodo.medium:232_6306
+  original_category: bacterial
+- name: mrs_medium_with_cysteine
+  source: MediaDive
+  source_id: mediadive.medium:232
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_232_MRS_MEDIUM_WITH_CYSTEINE
-- DSMZ_232b_WEISSELA_KOREENSIS_MEDIUM
-- KOMODO_232-16982_MEDIUM_232_MODIFIED_FOR_DSM_16982
-- KOMODO_232-17330_MEDIUM_232_MODIFIED_FOR_DSM_17330
-- KOMODO_232-20079_MEDIUM_232_MODIFIED_FOR_DSM_20079
-- KOMODO_232-20243_MEDIUM_232_MODIFIED_FOR_DSM_20243
-- KOMODO_232-20289_MEDIUM_232_MODIFIED_FOR_DSM_20289
-- KOMODO_232-20356_MEDIUM_232_MODIFIED_FOR_DSM_20356
-- KOMODO_232-20403_MEDIUM_232_MODIFIED_FOR_DSM_20403
-- KOMODO_232-20404_MEDIUM_232_MODIFIED_FOR_DSM_20404
-- KOMODO_232-20405_MEDIUM_232_MODIFIED_FOR_DSM_20405
-- KOMODO_232-20406_MEDIUM_232_MODIFIED_FOR_DSM_20406
-- KOMODO_232-20653_MEDIUM_232_MODIFIED_FOR_DSM_20653
-- KOMODO_232-20654_MEDIUM_232_MODIFIED_FOR_DSM_20654
-- KOMODO_232-20655_MEDIUM_232_MODIFIED_FOR_DSM_20655
-- KOMODO_232-20656_MEDIUM_232_MODIFIED_FOR_DSM_20656
-- KOMODO_232-6306_MEDIUM_232_MODIFIED_FOR_DSM_6306
 - KOMODO_232_MRS_medium_WITH_CYSTEINE
 - KOMODO_232b_WEISSELA_KOREENSIS_medium
+- medium_232_modified_for_dsm_16982
+- medium_232_modified_for_dsm_17330
+- medium_232_modified_for_dsm_20079
+- medium_232_modified_for_dsm_20243
+- medium_232_modified_for_dsm_20289
+- medium_232_modified_for_dsm_20356
+- medium_232_modified_for_dsm_20403
+- medium_232_modified_for_dsm_20404
+- medium_232_modified_for_dsm_20405
+- medium_232_modified_for_dsm_20406
+- medium_232_modified_for_dsm_20653
+- medium_232_modified_for_dsm_20654
+- medium_232_modified_for_dsm_20655
+- medium_232_modified_for_dsm_20656
+- medium_232_modified_for_dsm_6306
+- mrs_medium_with_cysteine
+- weissela_koreensis_medium
 merge_fingerprint: f8bc303fe1621a184fb20fda4d7925ce261b666c9be36a67d2cdba2c73bba9da

@@ -1,6 +1,7 @@
-name: BIFIDOBACTERIUM MEDIUM
+id: CultureMech:001717
+name: bifidobacterium_medium
 original_name: BIFIDOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -37,20 +38,31 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '2'
+    value: '3.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.2'
+    value: '0.7'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.5]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -58,6 +70,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -65,13 +80,20 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '5'
+    value: '7.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 2.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -79,6 +101,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -86,6 +111,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -93,20 +121,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -114,6 +131,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -121,13 +141,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -144,167 +160,174 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:51.551822+00:00'
+- timestamp: '2026-03-13T03:09:35.296055Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:06.653299Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001717'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:18.864701+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BIFIDOBACTERIUM MEDIUM" to "bifidobacterium_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:56.168001+00:00'
   curator: recipe-merger
-  action: Merged 29 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_58_BIFIDOBACTERIUM_MEDIUM, KOMODO_58-16839_MEDIUM_58_MODIFIED_FOR_DSM_16839,
-    KOMODO_58-16840_MEDIUM_58_MODIFIED_FOR_DSM_16840, KOMODO_58-16980_MEDIUM_58_MODIFIED_FOR_DSM_16980,
-    KOMODO_58-16981_MEDIUM_58_MODIFIED_FOR_DSM_16981, KOMODO_58-17042_MEDIUM_58_MODIFIED_FOR_DSM_17042,
-    KOMODO_58-17774_MEDIUM_58_MODIFIED_FOR_DSM_17774, KOMODO_58-17775_MEDIUM_58_MODIFIED_FOR_DSM_17775,
-    KOMODO_58-17776_MEDIUM_58_MODIFIED_FOR_DSM_17776, KOMODO_58-17777_MEDIUM_58_MODIFIED_FOR_DSM_17777,
-    KOMODO_58-17778_MEDIUM_58_MODIFIED_FOR_DSM_17778, KOMODO_58-17779_MEDIUM_58_MODIFIED_FOR_DSM_17779,
-    KOMODO_58-20461_MEDIUM_58_MODIFIED_FOR_DSM_20461, KOMODO_58-20462_MEDIUM_58_MODIFIED_FOR_DSM_20462,
-    KOMODO_58-20465_MEDIUM_58_MODIFIED_FOR_DSM_20465, KOMODO_58-20466_MEDIUM_58_MODIFIED_FOR_DSM_20466,
-    KOMODO_58-20467_MEDIUM_58_MODIFIED_FOR_DSM_20467, KOMODO_58-20756_MEDIUM_58_MODIFIED_FOR_DSM_20756,
-    KOMODO_58-20757_MEDIUM_58_MODIFIED_FOR_DSM_20757, KOMODO_58-20762_MEDIUM_58_MODIFIED_FOR_DSM_20762,
-    KOMODO_58-20764_MEDIUM_58_MODIFIED_FOR_DSM_20764, KOMODO_58-20765_MEDIUM_58_MODIFIED_FOR_DSM_20765,
-    KOMODO_58-21655_MEDIUM_58_MODIFIED_FOR_DSM_21655, KOMODO_58-24661_MEDIUM_58_MODIFIED_FOR_DSM_24661,
-    KOMODO_58-7198_MEDIUM_58_MODIFIED_FOR_DSM_7198, KOMODO_58-7199_MEDIUM_58_MODIFIED_FOR_DSM_7199,
-    KOMODO_58-7200_MEDIUM_58_MODIFIED_FOR_DSM_7200, KOMODO_58-7201_MEDIUM_58_MODIFIED_FOR_DSM_7201,
-    KOMODO_58_BIFIDOBACTERIUM_medium'
+  action: Merged 28 duplicate recipes into canonical record
+  notes: 'Sources: bifidobacterium_medium, medium_58_modified_for_dsm_16839, medium_58_modified_for_dsm_16840,
+    medium_58_modified_for_dsm_16980, medium_58_modified_for_dsm_16981, medium_58_modified_for_dsm_17042,
+    medium_58_modified_for_dsm_17774, medium_58_modified_for_dsm_17775, medium_58_modified_for_dsm_17776,
+    medium_58_modified_for_dsm_17777, medium_58_modified_for_dsm_17778, medium_58_modified_for_dsm_17779,
+    medium_58_modified_for_dsm_20461, medium_58_modified_for_dsm_20462, medium_58_modified_for_dsm_20465,
+    medium_58_modified_for_dsm_20466, medium_58_modified_for_dsm_20467, medium_58_modified_for_dsm_20756,
+    medium_58_modified_for_dsm_20757, medium_58_modified_for_dsm_20762, medium_58_modified_for_dsm_20764,
+    medium_58_modified_for_dsm_20765, medium_58_modified_for_dsm_21655, medium_58_modified_for_dsm_24661,
+    medium_58_modified_for_dsm_7198, medium_58_modified_for_dsm_7199, medium_58_modified_for_dsm_7200,
+    medium_58_modified_for_dsm_7201'
 synonyms:
-- name: MEDIUM 58 MODIFIED FOR DSM 16839
+- name: medium_58_modified_for_dsm_16839
   source: KOMODO
   source_id: komodo.medium:58_16839
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 16840
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_16840
   source: KOMODO
   source_id: komodo.medium:58_16840
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 16980
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_16980
   source: KOMODO
   source_id: komodo.medium:58_16980
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 16981
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_16981
   source: KOMODO
   source_id: komodo.medium:58_16981
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 17042
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17042
   source: KOMODO
   source_id: komodo.medium:58_17042
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 17774
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17774
   source: KOMODO
   source_id: komodo.medium:58_17774
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 17775
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17775
   source: KOMODO
   source_id: komodo.medium:58_17775
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 17776
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17776
   source: KOMODO
   source_id: komodo.medium:58_17776
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 17777
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17777
   source: KOMODO
   source_id: komodo.medium:58_17777
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 17778
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17778
   source: KOMODO
   source_id: komodo.medium:58_17778
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 17779
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_17779
   source: KOMODO
   source_id: komodo.medium:58_17779
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 20461
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20461
   source: KOMODO
   source_id: komodo.medium:58_20461
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 20462
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20462
   source: KOMODO
   source_id: komodo.medium:58_20462
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 20465
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20465
   source: KOMODO
   source_id: komodo.medium:58_20465
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 20466
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20466
   source: KOMODO
   source_id: komodo.medium:58_20466
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 20467
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20467
   source: KOMODO
   source_id: komodo.medium:58_20467
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 20756
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20756
   source: KOMODO
   source_id: komodo.medium:58_20756
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 20757
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20757
   source: KOMODO
   source_id: komodo.medium:58_20757
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 20762
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20762
   source: KOMODO
   source_id: komodo.medium:58_20762
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 20764
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20764
   source: KOMODO
   source_id: komodo.medium:58_20764
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 20765
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_20765
   source: KOMODO
   source_id: komodo.medium:58_20765
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 21655
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_21655
   source: KOMODO
   source_id: komodo.medium:58_21655
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 24661
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_24661
   source: KOMODO
   source_id: komodo.medium:58_24661
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 7198
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_7198
   source: KOMODO
   source_id: komodo.medium:58_7198
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 7199
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_7199
   source: KOMODO
   source_id: komodo.medium:58_7199
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 7200
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_7200
   source: KOMODO
   source_id: komodo.medium:58_7200
-  original_category: imported
-- name: MEDIUM 58 MODIFIED FOR DSM 7201
+  original_category: bacterial
+- name: medium_58_modified_for_dsm_7201
   source: KOMODO
   source_id: komodo.medium:58_7201
-  original_category: imported
-- name: BIFIDOBACTERIUM medium
-  source: KOMODO
-  source_id: komodo.medium:58
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_58_BIFIDOBACTERIUM_MEDIUM
-- KOMODO_58-16839_MEDIUM_58_MODIFIED_FOR_DSM_16839
-- KOMODO_58-16840_MEDIUM_58_MODIFIED_FOR_DSM_16840
-- KOMODO_58-16980_MEDIUM_58_MODIFIED_FOR_DSM_16980
-- KOMODO_58-16981_MEDIUM_58_MODIFIED_FOR_DSM_16981
-- KOMODO_58-17042_MEDIUM_58_MODIFIED_FOR_DSM_17042
-- KOMODO_58-17774_MEDIUM_58_MODIFIED_FOR_DSM_17774
-- KOMODO_58-17775_MEDIUM_58_MODIFIED_FOR_DSM_17775
-- KOMODO_58-17776_MEDIUM_58_MODIFIED_FOR_DSM_17776
-- KOMODO_58-17777_MEDIUM_58_MODIFIED_FOR_DSM_17777
-- KOMODO_58-17778_MEDIUM_58_MODIFIED_FOR_DSM_17778
-- KOMODO_58-17779_MEDIUM_58_MODIFIED_FOR_DSM_17779
-- KOMODO_58-20461_MEDIUM_58_MODIFIED_FOR_DSM_20461
-- KOMODO_58-20462_MEDIUM_58_MODIFIED_FOR_DSM_20462
-- KOMODO_58-20465_MEDIUM_58_MODIFIED_FOR_DSM_20465
-- KOMODO_58-20466_MEDIUM_58_MODIFIED_FOR_DSM_20466
-- KOMODO_58-20467_MEDIUM_58_MODIFIED_FOR_DSM_20467
-- KOMODO_58-20756_MEDIUM_58_MODIFIED_FOR_DSM_20756
-- KOMODO_58-20757_MEDIUM_58_MODIFIED_FOR_DSM_20757
-- KOMODO_58-20762_MEDIUM_58_MODIFIED_FOR_DSM_20762
-- KOMODO_58-20764_MEDIUM_58_MODIFIED_FOR_DSM_20764
-- KOMODO_58-20765_MEDIUM_58_MODIFIED_FOR_DSM_20765
-- KOMODO_58-21655_MEDIUM_58_MODIFIED_FOR_DSM_21655
-- KOMODO_58-24661_MEDIUM_58_MODIFIED_FOR_DSM_24661
-- KOMODO_58-7198_MEDIUM_58_MODIFIED_FOR_DSM_7198
-- KOMODO_58-7199_MEDIUM_58_MODIFIED_FOR_DSM_7199
-- KOMODO_58-7200_MEDIUM_58_MODIFIED_FOR_DSM_7200
-- KOMODO_58-7201_MEDIUM_58_MODIFIED_FOR_DSM_7201
-- KOMODO_58_BIFIDOBACTERIUM_medium
+- bifidobacterium_medium
+- medium_58_modified_for_dsm_16839
+- medium_58_modified_for_dsm_16840
+- medium_58_modified_for_dsm_16980
+- medium_58_modified_for_dsm_16981
+- medium_58_modified_for_dsm_17042
+- medium_58_modified_for_dsm_17774
+- medium_58_modified_for_dsm_17775
+- medium_58_modified_for_dsm_17776
+- medium_58_modified_for_dsm_17777
+- medium_58_modified_for_dsm_17778
+- medium_58_modified_for_dsm_17779
+- medium_58_modified_for_dsm_20461
+- medium_58_modified_for_dsm_20462
+- medium_58_modified_for_dsm_20465
+- medium_58_modified_for_dsm_20466
+- medium_58_modified_for_dsm_20467
+- medium_58_modified_for_dsm_20756
+- medium_58_modified_for_dsm_20757
+- medium_58_modified_for_dsm_20762
+- medium_58_modified_for_dsm_20764
+- medium_58_modified_for_dsm_20765
+- medium_58_modified_for_dsm_21655
+- medium_58_modified_for_dsm_24661
+- medium_58_modified_for_dsm_7198
+- medium_58_modified_for_dsm_7199
+- medium_58_modified_for_dsm_7200
+- medium_58_modified_for_dsm_7201
 merge_fingerprint: 474925c4715a15753d52a3bb8eada71fe6dfddec9ce6ef05ea737587dd8e35c5

@@ -1,6 +1,7 @@
-name: PH MEDIUM
+id: CultureMech:000511
+name: ph_medium
 original_name: PH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -29,6 +30,9 @@ ingredients:
   term:
     id: CHEBI:16991
     label: deoxyribonucleic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000732
+    label: Fish-Sperm DNA
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -50,6 +54,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:55.957963Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000511'
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:06.982389+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PH MEDIUM" to "ph_medium" for consistent matching
+kg_microbe_match: mediadive.medium:1077
 merge_fingerprint: bcd8768f56bdc12fc335fd8ffd04e4529ec417a6624fa67bdb0685704407268a
 merged_from:
-- DSMZ_1077_PH_MEDIUM
+- ph_medium

@@ -1,15 +1,17 @@
-name: THERMOACTINOMYCES MEDIUM
-original_name: THERMOACTINOMYCES MEDIUM
-category: imported
+id: CultureMech:006936
+name: thermoactinomyces_medium
+original_name: THERMOACTINOMYCES medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
-  preferred_term: DSMZ Medium 978
+  preferred_term: KOMODO Medium 978
   term:
-    id: mediadive.medium:978
-    label: THERMOACTINOMYCES MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium978.pdf'
+    id: komodo.medium:978
+    label: THERMOACTINOMYCES medium
+notes: 'Source: KOMODO ModelSEED | ID: 978 | DSMZ Medium: 978 (mediadive.medium:978)
+  | Aerobic: No'
 ingredients:
 - preferred_term: L-Asparagine
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagine
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Polypeptone
   concentration:
     value: '30'
@@ -43,6 +54,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -50,6 +64,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -57,6 +74,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -64,6 +84,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -71,6 +94,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -78,6 +104,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinate
   concentration:
     value: '0.05'
@@ -89,6 +118,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Inositol
   term:
     id: CHEBI:24848
@@ -96,10 +128,16 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000421
+    label: Inositol
 - preferred_term: Calcium panthothenate
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000980
+    label: Calcium panthothenate
 - preferred_term: p-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -107,6 +145,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: p-Aminobenzoate
 - preferred_term: D-Biotin
   term:
     id: CHEBI:15956
@@ -114,36 +155,45 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: FILTER_STERILIZE
-  description: Add components, except vitamin B solution, to distilled water and bring
-    volume to 990 ml. Adjust pH to 7.2. After autoclaving, aseptically add filter-sterilized
-    vitamin B solution.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D-Biotin
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.973769Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 978'
-- timestamp: '2026-02-06T05:10:19.854414Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 978'
+- timestamp: '2026-02-03T11:19:00.124536'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 978
+- timestamp: '2026-02-06T05:10:21.161578Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-02-19T08:26:57.897630+00:00'
+- timestamp: '2026-03-13T06:19:45.119292Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006936'
+- timestamp: '2026-03-17T06:29:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.143142+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMOACTINOMYCES medium" to "thermoactinomyces_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:35.798725+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_978_THERMOACTINOMYCES_MEDIUM, KOMODO_978_THERMOACTINOMYCES_medium'
-synonyms:
-- name: THERMOACTINOMYCES medium
-  source: KOMODO
-  source_id: komodo.medium:978
-  original_category: imported
+  notes: 'Sources: KOMODO_978_THERMOACTINOMYCES_medium, thermoactinomyces_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_978_THERMOACTINOMYCES_MEDIUM
 - KOMODO_978_THERMOACTINOMYCES_medium
+- thermoactinomyces_medium
 merge_fingerprint: 0b40937c3b4c49e50abcaa33e948ff46986e830ca2e9ce0628a9b0ff84e1151b

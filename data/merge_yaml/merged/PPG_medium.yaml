@@ -1,8 +1,9 @@
-name: PPG medium
+id: CultureMech:008679
+name: ppg_medium
 original_name: PPG medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: (NH4)2SO4
   concentration:
     value: '2'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: MgSO4
   concentration:
     value: '0.2'
@@ -45,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: NaH2PO4
   concentration:
     value: '1'
@@ -54,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4
 - preferred_term: Polypropylene glycol 2000 (PPG 2000)
   concentration:
     value: '2'
@@ -85,6 +101,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:59.315601Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008679'
+- timestamp: '2026-03-17T06:29:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.952803+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PPG medium" to "ppg_medium" for consistent matching
 merge_fingerprint: 5d19135a55a776e112a776f82cc761c3cb13fa1248bb4f0754931b301cfede3f
 merged_from:
-- TOGO_M2089_PPG_medium
+- ppg_medium

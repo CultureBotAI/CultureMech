@@ -1,6 +1,7 @@
-name: Clostridial medium
+id: CultureMech:009330
+name: clostridial_medium
 original_name: Clostridial medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast Extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium Chloride
 - preferred_term: Dextrose
   concentration:
     value: '5'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Dextrose
 - preferred_term: Sodium Acetate
   concentration:
     value: '3'
@@ -44,6 +54,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium Acetate
 - preferred_term: Soluble Starch
   concentration:
     value: '1'
@@ -80,6 +93,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:05.687924Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009330'
+- timestamp: '2026-03-17T06:30:28.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:24.602399+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Clostridial medium" to "clostridial_medium" for consistent
+    matching
 merge_fingerprint: 2055a0a38fd2af68acfc692939c78e0f96ceb0a53b6fef7b3c9c73d23558010e
 merged_from:
-- TOGO_M2781_Clostridial_medium
+- clostridial_medium

@@ -1,15 +1,17 @@
-name: FASTIDIOUS ANAEROBE AGAR
+id: CultureMech:003951
+name: fastidious_anaerobe_agar
 original_name: FASTIDIOUS ANAEROBE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_range: 7-7.4
+physical_state: SOLID_AGAR
+ph_range: 7.0-7.4
 media_term:
-  preferred_term: DSMZ Medium 1203
+  preferred_term: KOMODO Medium 1203
   term:
-    id: mediadive.medium:1203
+    id: komodo.medium:1203
     label: FASTIDIOUS ANAEROBE AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1203.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 1203 | DSMZ Medium: 1203 (mediadive.medium:1203)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Fastidious Anaerobe Agar
   term:
@@ -18,38 +20,53 @@ ingredients:
   concentration:
     value: '45.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Fastidious Anaerobe Agar
 - preferred_term: Horse blood
   concentration:
     value: '100'
     unit: G_PER_L
   notes: ' (adjust if required)'
-preparation_steps:
-- step_number: 1
-  action: POUR_PLATES
-  description: 'Allow to soak for 10 minutes, swirl to mix then sterilize by autoclaving
-    at 121°C for 15 minutes. Cool to 47°C then aseptically add 5-10% of sterile defibrinated
-    horse blood, mix well and pour plates. pH: 7.2 ± 0.2'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.675657Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1203'
-- timestamp: '2026-02-19T08:26:40.981603+00:00'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1203'
+- timestamp: '2026-02-03T11:19:19.166022'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1203
+- timestamp: '2026-03-13T06:19:23.589153Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003951'
+- timestamp: '2026-03-17T06:30:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:38.174744+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "FASTIDIOUS ANAEROBE AGAR" to "fastidious_anaerobe_agar"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:16.969427+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1203_FASTIDIOUS_ANAEROBE_AGAR, JCM_J677_BRUCELLA_BLOOD_AGAR_WITH_HEMIN_MENADIONE,
-    KOMODO_1203_FASTIDIOUS_ANAEROBE_AGAR'
+  notes: 'Sources: KOMODO_1203_FASTIDIOUS_ANAEROBE_AGAR, brucella_blood_agar_with_hemin_menadione,
+    fastidious_anaerobe_agar'
+kg_microbe_match: mediadive.medium:12
 synonyms:
-- name: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
+- name: brucella_blood_agar_with_hemin_menadione
   source: MediaDive
   source_id: mediadive.medium:J677
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1203_FASTIDIOUS_ANAEROBE_AGAR
-- JCM_J677_BRUCELLA_BLOOD_AGAR_WITH_HEMIN_MENADIONE
 - KOMODO_1203_FASTIDIOUS_ANAEROBE_AGAR
+- brucella_blood_agar_with_hemin_menadione
+- fastidious_anaerobe_agar
 merge_fingerprint: a575c96f923e64955f76382c18968cfc52d4208ef75fec70d46d85864a22ddc8

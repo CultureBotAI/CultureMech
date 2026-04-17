@@ -1,8 +1,9 @@
-name: FLEXIBACTER MEDIUM
+id: CultureMech:001809
+name: flexibacter_medium
 original_name: FLEXIBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 668
   term:
@@ -25,6 +26,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000432
+    label: Na glutamate
 - preferred_term: Sodium glycerophosphate
   concentration:
     value: '0.1'
@@ -36,6 +40,9 @@ ingredients:
   concentration:
     value: 1e-06
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -43,6 +50,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Sea water
   concentration:
     value: '1000'
@@ -54,6 +64,9 @@ ingredients:
   concentration:
     value: '2.85'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -61,6 +74,9 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: FeSO4
   term:
     id: CHEBI:75832
@@ -68,6 +84,9 @@ ingredients:
   concentration:
     value: '1.36'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001045
+    label: FeSO4
 - preferred_term: Na-tartrate
   term:
     id: CHEBI:63017
@@ -75,6 +94,9 @@ ingredients:
   concentration:
     value: '1.77'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000449
+    label: Na-tartrate
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -82,6 +104,9 @@ ingredients:
   concentration:
     value: '0.0269'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -89,6 +114,9 @@ ingredients:
   concentration:
     value: '0.0208'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -96,6 +124,9 @@ ingredients:
   concentration:
     value: '0.0404'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -103,6 +134,9 @@ ingredients:
   concentration:
     value: '0.0252'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
@@ -110,17 +144,25 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 668'
-- timestamp: '2026-02-19T08:26:52.718137+00:00'
+- timestamp: '2026-03-13T06:19:07.379812Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001809'
+- timestamp: '2026-03-17T06:30:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:19.682409+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "FLEXIBACTER MEDIUM" to "flexibacter_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:11.321794+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_668_FLEXIBACTER_MEDIUM, KOMODO_668_FLEXIBACTER_medium'
-synonyms:
-- name: FLEXIBACTER medium
-  source: KOMODO
-  source_id: komodo.medium:668
-  original_category: imported
 categories:
-- imported
+- bacterial
 merged_from:
 - DSMZ_668_FLEXIBACTER_MEDIUM
 - KOMODO_668_FLEXIBACTER_medium

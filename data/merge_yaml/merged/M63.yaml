@@ -1,6 +1,7 @@
-name: M63
+id: CultureMech:007022
+name: m63
 original_name: M63
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,10 +13,16 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Sodium hydroxide
   concentration:
     value: '75.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32145
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -23,6 +30,9 @@ ingredients:
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0039'
@@ -31,6 +41,12 @@ ingredients:
   concentration:
     value: '100.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -38,6 +54,9 @@ ingredients:
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -54,6 +73,18 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 133, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:45.640906Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007022'
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.736331+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M63" to "m63" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 133
   term:
@@ -65,6 +96,7 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 00ff0c444cd31bee14319f955f77c0aa57a6fcd7e70c804ccfe5888f2d38647e
+high_metal: true
+merge_fingerprint: 065c17be408725fbd3b4eb9ffe6590ed7702c9d89b2628a72519099e3970b55e
 merged_from:
-- MEDIADB_133_M63
+- m63

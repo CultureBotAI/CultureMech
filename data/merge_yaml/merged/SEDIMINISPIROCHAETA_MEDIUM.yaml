@@ -1,6 +1,7 @@
-name: SEDIMINISPIROCHAETA MEDIUM
+id: CultureMech:000424
+name: sediminispirochaeta_medium
 original_name: SEDIMINISPIROCHAETA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -30,6 +31,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Na-thioglycolate
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -37,6 +41,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Charcoal-filtered, natural seawater
   concentration:
     value: '800'
@@ -61,29 +68,37 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1008'
-- timestamp: '2026-02-19T08:26:37.927436+00:00'
+- timestamp: '2026-03-13T06:18:55.143099Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000424'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:06.172101+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SEDIMINISPIROCHAETA MEDIUM" to "sediminispirochaeta_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:10.207947+00:00'
   curator: recipe-merger
-  action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1008_SEDIMINISPIROCHAETA_MEDIUM, KOMODO_1008-19205_MEDIUM_1008_MODIFIED_FOR_DSM_19205,
-    KOMODO_1008-19230_MEDIUM_1008_MODIFIED_FOR_DSM_19230, KOMODO_1008_MARINE_SPIROCHETE_medium'
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: medium_1008_modified_for_dsm_19205, medium_1008_modified_for_dsm_19230,
+    sediminispirochaeta_medium'
 synonyms:
-- name: MEDIUM 1008 MODIFIED FOR DSM 19205
+- name: medium_1008_modified_for_dsm_19205
   source: KOMODO
   source_id: komodo.medium:1008_19205
-  original_category: imported
-- name: MEDIUM 1008 MODIFIED FOR DSM 19230
+  original_category: bacterial
+- name: medium_1008_modified_for_dsm_19230
   source: KOMODO
   source_id: komodo.medium:1008_19230
-  original_category: imported
-- name: MARINE SPIROCHETE medium
-  source: KOMODO
-  source_id: komodo.medium:1008
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1008_SEDIMINISPIROCHAETA_MEDIUM
-- KOMODO_1008-19205_MEDIUM_1008_MODIFIED_FOR_DSM_19205
-- KOMODO_1008-19230_MEDIUM_1008_MODIFIED_FOR_DSM_19230
-- KOMODO_1008_MARINE_SPIROCHETE_medium
+- medium_1008_modified_for_dsm_19205
+- medium_1008_modified_for_dsm_19230
+- sediminispirochaeta_medium
 merge_fingerprint: 84b4a810fb86838d652b37694e7454dde0db5cd08ca7be283da0892bb5d3a395

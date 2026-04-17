@@ -1,222 +1,327 @@
-name: MJAIS/MD Medium
-original_name: MJAIS/MD Medium
-category: imported
-medium_type: COMPLEX
+id: CultureMech:002773
+name: mjais_md_medium
+original_name: MJAIS/MD MEDIUM
+category: bacterial
+medium_type: DEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+ph_value: 6.0
+media_term:
+  preferred_term: JCM Medium J420
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '3.4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    id: mediadive.medium:J420
+    label: MJAIS/MD MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=420'
+ingredients:
 - preferred_term: NaCl
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
+    label: NaCl
   concentration:
-    value: '0.8'
+    value: '29.6736'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.0890208'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.07'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: NH4Cl
   concentration:
-    value: '1.25'
+    value: '0.0692384'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.791296'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: K2HPO4
+    label: NH4Cl
   concentration:
-    value: '0.09'
+    value: '1.2364'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: Resazurin
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '3.36301'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
-    component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.13452'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.326409'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.0098912'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.0098912'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.0098912'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
+- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+  concentration:
+    value: '0.0098912'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000429
+    label: Fe(NH4)2(SO4)2 x 6 H2O
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0197824'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1.97824'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '29.6736'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000927
+    label: Sulfur
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.49456'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
+- preferred_term: Resazurin
   term:
     id: CHEBI:8806
     label: Resazurin
-- preferred_term: MgCl2・6H2O
   concentration:
-    value: '4.18'
+    value: '0.00098912'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: Na2S・9H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: FeSO4・7H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: KCl
-  concentration:
-    value: '0.33'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+- preferred_term: Biotin
   term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: NaHCO3
+    id: CHEBI:15956
+    label: Biotin
   concentration:
-    value: '2'
+    value: '0.002'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+- preferred_term: Folic acid
   term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: NiCl2・6H2O
+    id: CHEBI:27470
+    label: Folic acid
   concentration:
-    value: '10'
+    value: '0.002'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: Na2SeO3・5H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: Na2WO4・2H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: Sulfur (powder)
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
+- preferred_term: Pyridoxine hydrochloride
   term:
-    id: CHEBI:14258
-    label: ''
-- preferred_term: Fe(NH4)2(SO4)2・6H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: Trace mineral solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Hydrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: NaBr
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
+- preferred_term: Thiamine HCl
   term:
-    id: CHEBI:63004
-    label: sodium bromide
-- preferred_term: SrCl2・6H2O
+    id: CHEBI:49105
+    label: Thiamine HCl
   concentration:
-    value: '0.01'
+    value: '0.005'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: KI
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
+- preferred_term: Riboflavin
   term:
-    id: CHEBI:8346
-    label: potassium iodide
-- preferred_term: Trace mineral solution (see Medium [M319])
+    id: CHEBI:17015
+    label: Riboflavin
   concentration:
-    value: '1'
+    value: '0.005'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M418
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
+- preferred_term: Nicotinic acid
   term:
-    id: TOGO:M418
-    label: MJAIS/MD Medium
-notes: 'Source: https://togomedium.org/medium/M418
-
-  Original source: JCM - JCM_M420
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=420'
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
+- preferred_term: Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: Lipoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: Lipoic acid
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients, except Trace vitamins, NaHCO3, sulfur and Na2S x 9H2O,
+    adjust pH to 6.0, and autoclave. Filter-sterilize Trace vitamins and 5% NaHCO3
+    solution, and add to the medium. Steam sulfur for 3 hr on each of 3 successive
+    days. Separately autoclave 5% Na2S x 9H2O solution under a N2 atmosphere. Distribute
+    the medium into culture vessels containing appropriate amount of sulfur (e.g.,
+    20 ml of medium in 120 ml serum bottles containing 0.6 g sulfur) under a stream
+    of H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Aseptically
+    and anaerobically add the sterile Na2S x 9H2O solution. Pressurize the inoculated
+    bottle to 300 kPa H2-CO2 (4:1, v/v).
+- step_number: 2
+  action: MIX
+  description: Use Trace mineral solution of Medium No. 324 supplemented with 0.01
+    g/L SrCl2 x H2O, 0.01 g/L NaBr and 0.01 g/L KI.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.022434Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M418'
-- timestamp: '2026-01-28T19:48:21.318995Z'
+- timestamp: '2026-01-26T17:53:16.567677Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J420'
+- timestamp: '2026-01-28T19:48:19.586788Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.661288'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: N2; Added default concentration for ingredient:
-    Hydrogen gas'
-merge_fingerprint: 080607e94f99a4f11f34b6e21125ebec0176e6ce27519276dca807c921ed15f7
+- timestamp: '2026-03-13T06:19:15.633237Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002773'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:29.055483+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MJAIS/MD MEDIUM" to "mjais_md_medium" for consistent
+    matching
+merge_fingerprint: 6f1497c6ad810a4cb2c6cc00d6e8cff0a7f6b919f612e27e5db2bcaa36883e92
 merged_from:
-- TOGO_M418_MJAIS_MD_Medium
+- mjais_md_medium

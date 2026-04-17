@@ -1,15 +1,17 @@
-name: OAT FLAKES AGAR WITH YEAST EXTRACT
-original_name: OAT FLAKES AGAR WITH YEAST EXTRACT
-category: imported
+id: CultureMech:004620
+name: oat_flakes_agar_with_yeast_extract
+original_name: OAT FLAKES AGAR WITH Yeast extract
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
-  preferred_term: DSMZ Medium 248
+  preferred_term: KOMODO Medium 248
   term:
-    id: mediadive.medium:248
-    label: OAT FLAKES AGAR WITH YEAST EXTRACT
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium248.pdf'
+    id: komodo.medium:248
+    label: OAT FLAKES AGAR WITH Yeast extract
+notes: 'Source: KOMODO ModelSEED | ID: 248 | DSMZ Medium: 248 (mediadive.medium:248)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Oat flakes
   concentration:
@@ -26,6 +28,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -33,6 +38,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -40,6 +48,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -47,33 +58,41 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.2.
-- step_number: 2
-  action: FILTER_STERILIZE
-  description: Boil oat flakes for 20 min, filter through cheese cloth and adjust
-    to 1000 ml. Add trace elements and agar.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.589728Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 248'
-- timestamp: '2026-02-19T08:26:58.882788+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 248'
+- timestamp: '2026-02-03T11:18:56.594385'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 248
+- timestamp: '2026-03-13T06:19:27.713992Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004620'
+- timestamp: '2026-03-17T06:29:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:42.976293+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "OAT FLAKES AGAR WITH Yeast extract" to "oat_flakes_agar_with_yeast_extract"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:18.575330+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: KOMODO_248_OAT_FLAKES_AGAR_WITH_Yeast_extract, DSMZ_248_OAT_FLAKES_AGAR_WITH_YEAST_EXTRACT'
-synonyms:
-- name: OAT FLAKES AGAR WITH Yeast extract
-  source: KOMODO
-  source_id: komodo.medium:248
-  original_category: imported
+  notes: 'Sources: oat_flakes_agar_with_yeast_extract, oat_flakes_agar_with_yeast_extract'
 categories:
-- imported
+- bacterial
+- fungal
 merged_from:
-- KOMODO_248_OAT_FLAKES_AGAR_WITH_Yeast_extract
-- DSMZ_248_OAT_FLAKES_AGAR_WITH_YEAST_EXTRACT
+- oat_flakes_agar_with_yeast_extract
+- oat_flakes_agar_with_yeast_extract
 merge_fingerprint: bd95dee45d0d71c78d14e30aaf3fc7ee813b11b6bc65d5a9aa55edd24702d7a7

@@ -1,0 +1,158 @@
+id: CultureMech:006858
+name: salinibacter_ruber_medium
+original_name: SALINIBACTER RUBER medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 936
+  term:
+    id: komodo.medium:936
+    label: SALINIBACTER RUBER medium
+notes: 'Source: KOMODO ModelSEED | ID: 936 | DSMZ Medium: 936 (mediadive.medium:936)
+  | Aerobic: No'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '195'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '32.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '50.8'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 936'
+- timestamp: '2026-02-03T11:19:04.843046'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 936
+- timestamp: '2026-03-13T06:19:44.418598Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006858'
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.337500+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SALINIBACTER RUBER medium" to "salinibacter_ruber_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:15.937634+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1138_HALOPIGER_medium, KOMODO_936_SALINIBACTER_RUBER_medium,
+    halopiger_medium, salinibacter_ruber_medium, sw_10_medium, sw_20_medium, sw_7_5_medium,
+    halophile_yeast_extract_medium'
+high_metal: true
+synonyms:
+- name: halopiger_medium
+  source: KOMODO
+  source_id: komodo.medium:1138
+  original_category: bacterial
+- name: halopiger_medium
+  source: MediaDive
+  source_id: mediadive.medium:1138
+  original_category: bacterial
+- name: sw_10_medium
+  source: MediaDive
+  source_id: mediadive.medium:J797
+  original_category: bacterial
+- name: sw_20_medium
+  source: MediaDive
+  source_id: mediadive.medium:J620
+  original_category: bacterial
+- name: sw_7_5_medium
+  source: MediaDive
+  source_id: mediadive.medium:J1011
+  original_category: bacterial
+- name: halophile_yeast_extract_medium
+  source: MediaDive
+  source_id: mediadive.medium:J546
+  original_category: fungal
+categories:
+- bacterial
+- fungal
+merged_from:
+- KOMODO_1138_HALOPIGER_medium
+- KOMODO_936_SALINIBACTER_RUBER_medium
+- halopiger_medium
+- salinibacter_ruber_medium
+- sw_10_medium
+- sw_20_medium
+- sw_7_5_medium
+- halophile_yeast_extract_medium
+merge_fingerprint: c2a2e1ebb7ff1830f5a15ce8f0faa408ab85e9b27f7b1c269be6d0da73e7a74c

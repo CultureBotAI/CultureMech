@@ -1,140 +1,122 @@
-name: MRS Medium
-original_name: MRS Medium
-category: imported
+id: CultureMech:000647
+name: mrs_medium
+original_name: MRS MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_range: 6.2-6.5
+media_term:
+  preferred_term: DSMZ Medium 11
+  term:
+    id: mediadive.medium:11
+    label: MRS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium11.pdf'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Casein peptone
   concentration:
-    value: '1'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: Yeast extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: K2HPO4
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: Sodium acetate
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
-  term:
-    id: CHEBI:32954
-    label: sodium acetate
-- preferred_term: Tween 80
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:53426
-    label: polysorbate 80
-- preferred_term: MnSO4·nH2O
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-- preferred_term: Diammonium hydrogen citrate
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Defined component, Organic compound,
-    Simple component'
-  term:
-    id: CHEBI:63076
-    label: diammonium citrate
-- preferred_term: Glucose
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
 - preferred_term: Meat extract
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
+- preferred_term: Yeast extract
   concentration:
-    value: '10'
+    value: '5'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M1523
+- preferred_term: Glucose
   term:
-    id: TOGO:M1523
-    label: MRS Medium
-notes: 'Source: https://togomedium.org/medium/M1523
-
-  Original source: NBRC - NBRC_M310
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=310'
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
+- preferred_term: (NH4)3 citrate
+  term:
+    id: CHEBI:63037
+    label: (NH4)3 citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000335
+    label: (NH4)3 citrate
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.2 - 6.5.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.794722Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1523'
-- timestamp: '2026-01-28T19:48:13.517278Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:27:01.113307+00:00'
-  curator: recipe-merger
-  action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: TOGO_M1523_MRS_Medium, TOGO_M1625_Acidic_MRS_Medium_pH_4.8, TOGO_M1828_Alkalic_MRS_Medium_pH_8.0,
-    TOGO_M1900_Acidic_MRS_Medium_pH_5.2'
-synonyms:
-- name: Acidic MRS Medium (pH 4.8)
-  source: TOGO
-  source_id: TOGO:M1625
-  original_category: imported
-- name: Alkalic MRS Medium (pH 8.0)
-  source: TOGO
-  source_id: TOGO:M1828
-  original_category: imported
-- name: Acidic MRS Medium (pH 5.2)
-  source: TOGO
-  source_id: TOGO:M1900
-  original_category: imported
-categories:
-- imported
+- timestamp: '2026-01-26T17:53:09.971970Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 11'
+- timestamp: '2026-03-13T06:18:57.063796Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000647'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:08.222970+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MRS MEDIUM" to "mrs_medium" for consistent matching
+merge_fingerprint: abcd760ba289f3ca344a6053365af73787e83132905d3d6feadf2b9aec132838
 merged_from:
-- TOGO_M1523_MRS_Medium
-- TOGO_M1625_Acidic_MRS_Medium_pH_4.8
-- TOGO_M1828_Alkalic_MRS_Medium_pH_8.0
-- TOGO_M1900_Acidic_MRS_Medium_pH_5.2
-merge_fingerprint: f8dd39a811299ce9a009532771e5776245fa35e74113005aa554f01229c3b483
+- mrs_medium

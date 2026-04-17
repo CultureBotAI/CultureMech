@@ -1,0 +1,98 @@
+id: CultureMech:006943
+name: my10_12_medium
+original_name: MY10-12 medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 982
+  term:
+    id: komodo.medium:982
+    label: MY10-12 medium
+notes: 'Source: KOMODO ModelSEED | ID: 982 | DSMZ Medium: 982 (mediadive.medium:982)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '120'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 982'
+- timestamp: '2026-02-03T11:18:56.298219'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 982
+- timestamp: '2026-03-13T06:19:45.189007Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006943'
+- timestamp: '2026-03-17T06:29:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.221792+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MY10-12 medium" to "my10_12_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:35.849323+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_982_MY10-12_medium, isp_2_medium_with_10_nacl, modified_isp2_medium,
+    my10_12_medium'
+synonyms:
+- name: isp_2_medium_with_10_nacl
+  source: MediaDive
+  source_id: mediadive.medium:1261
+  original_category: bacterial
+- name: modified_isp2_medium
+  source: MediaDive
+  source_id: mediadive.medium:1832
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_982_MY10-12_medium
+- isp_2_medium_with_10_nacl
+- modified_isp2_medium
+- my10_12_medium
+merge_fingerprint: c46d1dfdff4ef8bf4dc4f9f0becb62ba5da290b80ccc0b318d59aebe22f0e9c4

@@ -1,15 +1,17 @@
-name: C/10 MEDIUM
-original_name: C/10 MEDIUM
-category: imported
+id: CultureMech:005633
+name: c_10_medium
+original_name: C/10 medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
-  preferred_term: DSMZ Medium 49
+  preferred_term: KOMODO Medium 49
   term:
-    id: mediadive.medium:49
-    label: C/10 MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium49.pdf'
+    id: komodo.medium:49
+    label: C/10 medium
+notes: 'Source: KOMODO ModelSEED | ID: 49 | DSMZ Medium: 49 (mediadive.medium:49)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casitone
   concentration:
@@ -22,6 +24,9 @@ ingredients:
   concentration:
     value: '1.36'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -29,35 +34,46 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.2 before adding agar.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.047417Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 49'
-- timestamp: '2026-02-19T08:26:50.277267+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 49'
+- timestamp: '2026-02-03T11:19:18.704650'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 49
+- timestamp: '2026-03-13T06:19:34.799923Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005633'
+- timestamp: '2026-03-17T06:30:53.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:51.095557+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "C/10 medium" to "c_10_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:27.242521+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_49_C_10_MEDIUM, KOMODO_49-435_MEDIUM_49_MODIFIED_FOR_DSM_435,
-    KOMODO_49_C_10_medium'
+  notes: 'Sources: KOMODO_49_C_10_medium, c_10_medium, medium_49_modified_for_dsm_435'
+kg_microbe_match: mediadive.medium:49
 synonyms:
-- name: MEDIUM 49 MODIFIED FOR DSM 435
+- name: medium_49_modified_for_dsm_435
   source: KOMODO
   source_id: komodo.medium:49_435
-  original_category: imported
-- name: C/10 medium
-  source: KOMODO
-  source_id: komodo.medium:49
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_49_C_10_MEDIUM
-- KOMODO_49-435_MEDIUM_49_MODIFIED_FOR_DSM_435
 - KOMODO_49_C_10_medium
+- c_10_medium
+- medium_49_modified_for_dsm_435
 merge_fingerprint: d8ac2a9d1e0f45aa2d6f58569f13e223ac041e6b8ef482b1f380703f03e7970d

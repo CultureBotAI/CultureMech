@@ -1,15 +1,17 @@
-name: MEDIUM FOR DSM 14457 AND 14458
+id: CultureMech:006900
+name: medium_for_dsm_14457_and_14458
 original_name: MEDIUM FOR DSM 14457 AND 14458
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
-  preferred_term: DSMZ Medium 956
+  preferred_term: KOMODO Medium 956
   term:
-    id: mediadive.medium:956
+    id: komodo.medium:956
     label: MEDIUM FOR DSM 14457 AND 14458
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 956 | DSMZ Medium: 956 (mediadive.medium:956)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.125'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Methanol
   term:
     id: CHEBI:17790
@@ -54,6 +71,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: ' (alternative)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000618
+    label: Methanol
 - preferred_term: Methylamine
   term:
     id: CHEBI:16830
@@ -62,32 +82,47 @@ ingredients:
     value: '3'
     unit: G_PER_L
   notes: ' (alternative)'
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 7.2. To the sterilised medium add sterile methanol (to a final concentration
-    of 0.5%) or methylamine (to a final concentration of 0.3%).
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000553
+    label: Methylamine
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.889918Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 956'
-- timestamp: '2026-02-19T08:26:57.500273+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 956'
+- timestamp: '2026-02-03T11:19:03.424399'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 956
+- timestamp: '2026-03-13T06:19:44.752194Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006900'
+- timestamp: '2026-03-17T06:30:06.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.729418+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM FOR DSM 14457 AND 14458" to "medium_for_dsm_14457_and_14458"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:35.419210+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_956_MEDIUM_FOR_DSM_14457_AND_14458, KOMODO_956-replace-Methanol-with-Methylamine_MEDIUM_FOR_DSM_14457_AND_14458_replace_Methanol_with_Methylamine,
-    KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458'
+  notes: 'Sources: KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458, medium_for_dsm_14457_and_14458,
+    medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine'
 synonyms:
-- name: MEDIUM FOR DSM 14457 AND 14458_replace_Methanol_with_Methylamine
+- name: medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine
   source: KOMODO
   source_id: komodo.medium:956_replace_Methanol_with_Methylamine
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_956_MEDIUM_FOR_DSM_14457_AND_14458
-- KOMODO_956-replace-Methanol-with-Methylamine_MEDIUM_FOR_DSM_14457_AND_14458_replace_Methanol_with_Methylamine
 - KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458
+- medium_for_dsm_14457_and_14458
+- medium_for_dsm_14457_and_14458_replace_methanol_with_methylamine
 merge_fingerprint: ea4ec34b2f7f3a32bfbeb6efab62d9024b343ea27840b06118c95eb8574500c3

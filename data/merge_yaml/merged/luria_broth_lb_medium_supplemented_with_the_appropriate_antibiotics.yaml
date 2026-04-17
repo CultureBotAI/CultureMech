@@ -1,0 +1,107 @@
+id: CultureMech:009441
+name: luria_broth_lb_medium_supplemented_with_the_appropriate_antibiotics
+original_name: Luria Broth (LB) medium supplemented with the appropriate antibiotics
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Chloramphenicol
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Simple component'
+- preferred_term: Tryptone
+  term:
+    id: FOODON:03316428
+    label: tryptone
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: pancreatic digest of casein
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002960
+    label: yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+media_term:
+  preferred_term: TOGO Medium M2903
+  term:
+    id: TOGO:M2903
+    label: Luria Broth (LB) medium supplemented with the appropriate antibiotics
+notes: 'Source: https://togomedium.org/medium/M2903
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.395680Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2903'
+- timestamp: '2026-03-13T06:20:06.201692Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009441'
+- timestamp: '2026-03-17T19:46:25.170290+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Luria Broth (LB) medium supplemented with the appropriate
+    antibiotics" to "luria_broth_lb_medium_supplemented_with_the_appropriate_antibiotics"
+    for consistent matching
+kg_microbe_match: mediadive.medium:74
+merge_fingerprint: 22a6ac6b6d72ed8add2b45f64cf9624d23514a63abbbf48a17688330021d4dfc
+merged_from:
+- luria_broth_lb_medium_supplemented_with_the_appropriate_antibiotics

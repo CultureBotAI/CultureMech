@@ -1,6 +1,7 @@
-name: HEPES Medium
+id: CultureMech:008182
+name: hepes_medium
 original_name: HEPES Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '100'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '5'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -39,6 +49,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NaHCO3
   concentration:
@@ -49,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: (NH4)2SO4
   concentration:
     value: '2.5'
@@ -58,11 +74,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-- preferred_term: HEPES*
-  concentration:
-    value: '11.92'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Fe-EDTA
   concentration:
     value: '75'
@@ -89,6 +103,35 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: c4031abb399d09cfdd667b6fcc9e19ee6b242ef19de79646f948adea70027b7c
+- timestamp: '2026-03-09T08:05:08.911586+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:54.210085Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008182'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:49.900817'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.790430+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HEPES Medium" to "hepes_medium" for consistent matching
+high_metal: true
+solutions:
+- preferred_term: HEPES*
+  composition: []
+  concentration:
+    value: '11.92'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  name: Unknown solution
+merge_fingerprint: 8f0de20c26f5e20fb190960baafeedc9706e89fd82ebf481722fcc2152b71f06
 merged_from:
-- TOGO_M1627_HEPES_Medium
+- hepes_medium

@@ -1,8 +1,9 @@
-name: YIM MEDIUM WITH NaCl
+id: CultureMech:000800
+name: yim_medium_with_nacl
 original_name: YIM MEDIUM WITH NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1342
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -41,6 +48,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -58,6 +68,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1342'
+- timestamp: '2026-03-13T06:18:58.452246Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000800'
+- timestamp: '2026-03-17T06:29:53.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:09.866996+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YIM MEDIUM WITH NaCl" to "yim_medium_with_nacl" for
+    consistent matching
 merge_fingerprint: 7dea49bf47e2cc5d2ad9af06090adaec3194549629c92a6b643d6940023d8599
 merged_from:
-- DSMZ_1342_YIM_MEDIUM_WITH_NaCl
+- yim_medium_with_nacl

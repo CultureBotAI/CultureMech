@@ -1,8 +1,9 @@
-name: MODIFIED NUTRIENT AGAR
+id: CultureMech:000775
+name: modified_nutrient_agar
 original_name: MODIFIED NUTRIENT AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1317
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Sea water
   concentration:
     value: '1000'
@@ -41,6 +45,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1317'
+- timestamp: '2026-03-13T06:18:58.265441Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000775'
+- timestamp: '2026-03-17T06:30:11.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:09.654743+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED NUTRIENT AGAR" to "modified_nutrient_agar"
+    for consistent matching
+kg_microbe_match: mediadive.medium:12
 merge_fingerprint: d4485b694d124f4e4a094a1a84c26200ec792a8d145bb8c1cd766abc258b273d
 merged_from:
-- DSMZ_1317_MODIFIED_NUTRIENT_AGAR
+- modified_nutrient_agar

@@ -1,6 +1,7 @@
-name: YM BROTH
+id: CultureMech:003012
+name: ym_broth
 original_name: YM BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.2
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -41,6 +45,18 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J666'
+- timestamp: '2026-03-13T06:19:17.135574Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003012'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.787493+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YM BROTH" to "ym_broth" for consistent matching
 merge_fingerprint: 43caca1a341ea0b2cf01317ca7b8eff88d8862b50a08eb034982d9bfb6acc891
 merged_from:
-- JCM_J666_YM_BROTH
+- ym_broth

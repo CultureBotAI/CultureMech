@@ -1,6 +1,7 @@
-name: THIOBACILLUS DENITRIFICANS MEDIUM
+id: CultureMech:000576
+name: thiobacillus_denitrificans_medium
 original_name: THIOBACILLUS DENITRIFICANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '2.079'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '2.079'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '1.0395'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.831601'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -53,13 +69,20 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '2'
+    value: '2.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 0.2]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -67,6 +90,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -74,13 +100,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -88,6 +110,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -95,6 +120,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -102,6 +130,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -109,6 +140,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -116,6 +150,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -123,6 +160,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -130,6 +170,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: HEAT
@@ -150,6 +193,23 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 113'
+- timestamp: '2026-03-13T03:09:21.332851Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:56.499853Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000576'
+- timestamp: '2026-03-17T06:30:29.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:07.595420+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOBACILLUS DENITRIFICANS MEDIUM" to "thiobacillus_denitrificans_medium"
+    for consistent matching
 merge_fingerprint: c877fd0062aa13d5baf95d06253c0cf416f530c6f2f554cf92e675857b0e372f
 merged_from:
-- DSMZ_113_THIOBACILLUS_DENITRIFICANS_MEDIUM
+- thiobacillus_denitrificans_medium

@@ -1,8 +1,9 @@
-name: Potato solid medium
+id: CultureMech:009385
+name: potato_solid_medium
 original_name: Potato solid medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: CaCO3
   concentration:
     value: '1.5'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: glycerol
   concentration:
     value: '1.5'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: glycerol
 - preferred_term: glucose
   concentration:
     value: '0.5'
@@ -40,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: glucose
 - preferred_term: agar
   concentration:
     value: '1.5'
@@ -47,6 +60,9 @@ ingredients:
   notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
     label: agar
 - preferred_term: yeast extract (BD Difco)
   concentration:
@@ -84,6 +100,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:05.984592Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009385'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:24.915998+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Potato solid medium" to "potato_solid_medium" for consistent
+    matching
 merge_fingerprint: 6712bb16d9a1f5ad509cb005443c4f4cd2e2550795d9ef317b574f8b923080a8
 merged_from:
-- TOGO_M2843_Potato_solid_medium
+- potato_solid_medium

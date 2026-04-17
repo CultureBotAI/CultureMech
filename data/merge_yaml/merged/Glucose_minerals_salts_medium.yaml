@@ -1,8 +1,9 @@
-name: Glucose minerals salts medium
+id: CultureMech:000924
+name: glucose_minerals_salts_medium
 original_name: Glucose minerals salts medium
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1458
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x 5 H2O
   term:
     id: CHEBI:131524
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000549
+    label: MnSO4 x 5 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: CaCl2 x 7 H2O
   term:
     id: CHEBI:3312
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2 x 7 H2O
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -68,6 +90,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -79,6 +104,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1458'
+- timestamp: '2026-03-13T06:18:59.617393Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000924'
+- timestamp: '2026-03-17T06:29:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.146600+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Glucose minerals salts medium" to "glucose_minerals_salts_medium"
+    for consistent matching
 merge_fingerprint: db5ee0b1b9a69b23f064de91929281a127b22804d474e8208f2d3b54ec300dda
 merged_from:
-- DSMZ_1458_Glucose_minerals_salts_medium
+- glucose_minerals_salts_medium

@@ -1,15 +1,16 @@
-name: PHB/PYRUVATE MEDIUM
+id: CultureMech:004228
+name: phb_pyruvate_medium
 original_name: PHB/PYRUVATE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.8-7
 media_term:
-  preferred_term: DSMZ Medium 193a
+  preferred_term: KOMODO Medium 193a
   term:
-    id: mediadive.medium:193a
+    id: komodo.medium:193a
     label: PHB/PYRUVATE MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193a.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 193a | DSMZ Medium: 193a (mediadive.medium:193a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '3.18471'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.212314'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.318471'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '7.431'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '1.38004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.530786'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.159236'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Poly[(R)-3-hydroxybutyric acid]
   concentration:
     value: '1.06157'
@@ -75,6 +97,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Na-pyruvate
   term:
     id: CHEBI:50144
@@ -82,6 +107,9 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na-pyruvate
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -89,6 +117,9 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -96,6 +127,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -103,6 +137,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -110,6 +147,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -117,6 +157,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -124,6 +167,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -131,6 +177,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -138,6 +187,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -145,6 +197,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -152,6 +207,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -159,6 +217,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -166,6 +227,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -173,6 +237,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -180,6 +247,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -187,6 +257,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -194,6 +267,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -201,6 +277,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -208,6 +287,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -215,6 +297,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
@@ -226,6 +311,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -233,6 +321,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
     id: CHEBI:16494
@@ -240,93 +331,89 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Solution A is sparged with 80% H2 and 20% CO2 gas mixture to reach
-    a pH below 6 (at least 30 min), then distributed under the same gas atmosphere
-    in anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclaved.
-    Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions
-    C and D are prepared under 100% N2 gas atmosphere and sterilized by filtration.
-    Solution E is autoclaved separately under 100% N2 gas. To complete the medium
-    appropriate amounts of solutions B to E are added to the sterile solution A in
-    the sequence as indicated. Final pH of the medium should be 6.8 - 7.0.
-- step_number: 2
-  action: MIX
-  description: After inoculation, pressurize vessels with 80% H2 and 20% CO2 gas mixture
-    to 1 bar overpressure.
-- step_number: 3
-  action: FILTER_STERILIZE
-  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
-    5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
-    growth at the beginning. For transfers use 5 - 10% inoculum.'
-- step_number: 4
-  action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: (DL)-alpha-Lipoic acid
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.430582Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 193a'
-- timestamp: '2026-02-06T05:10:41.970971Z'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 193a'
+- timestamp: '2026-02-03T11:19:15.776833'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 193
+- timestamp: '2026-02-06T05:10:48.307463Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-02-19T08:26:44.237422+00:00'
+- timestamp: '2026-03-13T06:19:25.998118Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004228'
+- timestamp: '2026-03-17T06:30:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:40.988079+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PHB/PYRUVATE MEDIUM" to "phb_pyruvate_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:19.503124+00:00'
   curator: recipe-merger
   action: Merged 10 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_193a_PHB_PYRUVATE_MEDIUM, KOMODO_193-1_For_DSM_14956, KOMODO_193-2_For_DSM_15249,
-    KOMODO_193-3_For_DSM_18843, KOMODO_193-4_For_DSM_15102, KOMODO_193-5_For_DSM_16697,
-    KOMODO_193-6637_MEDIUM_193_MODIFIED_FOR_DSM_6637, KOMODO_193-8775_MEDIUM_193_MODIFIED_FOR_DSM_8775,
-    KOMODO_193_DESULFOBACTER_POSTGATEI_MEDIUM, KOMODO_193a_PHB_PYRUVATE_MEDIUM'
+  notes: 'Sources: KOMODO_193a_PHB_PYRUVATE_MEDIUM, desulfobacter_postgatei_medium,
+    for_dsm_14956, for_dsm_15102, for_dsm_15249, for_dsm_16697, for_dsm_18843, medium_193_modified_for_dsm_6637,
+    medium_193_modified_for_dsm_8775, phb_pyruvate_medium'
+high_metal: true
 synonyms:
-- name: For DSM 14956
-  source: KOMODO
-  source_id: komodo.medium:193.1
-  original_category: imported
-- name: For DSM 15249
-  source: KOMODO
-  source_id: komodo.medium:193.2
-  original_category: imported
-- name: For DSM 18843
-  source: KOMODO
-  source_id: komodo.medium:193.3
-  original_category: imported
-- name: For DSM 15102
-  source: KOMODO
-  source_id: komodo.medium:193.4
-  original_category: imported
-- name: For DSM 16697
-  source: KOMODO
-  source_id: komodo.medium:193.5
-  original_category: imported
-- name: MEDIUM 193 MODIFIED FOR DSM 6637
-  source: KOMODO
-  source_id: komodo.medium:193_6637
-  original_category: imported
-- name: MEDIUM 193 MODIFIED FOR DSM 8775
-  source: KOMODO
-  source_id: komodo.medium:193_8775
-  original_category: imported
-- name: DESULFOBACTER POSTGATEI MEDIUM
+- name: desulfobacter_postgatei_medium
   source: KOMODO
   source_id: komodo.medium:193
-  original_category: imported
+  original_category: bacterial
+- name: for_dsm_14956
+  source: KOMODO
+  source_id: komodo.medium:193.1
+  original_category: bacterial
+- name: for_dsm_15102
+  source: KOMODO
+  source_id: komodo.medium:193.4
+  original_category: bacterial
+- name: for_dsm_15249
+  source: KOMODO
+  source_id: komodo.medium:193.2
+  original_category: bacterial
+- name: for_dsm_16697
+  source: KOMODO
+  source_id: komodo.medium:193.5
+  original_category: bacterial
+- name: for_dsm_18843
+  source: KOMODO
+  source_id: komodo.medium:193.3
+  original_category: bacterial
+- name: medium_193_modified_for_dsm_6637
+  source: KOMODO
+  source_id: komodo.medium:193_6637
+  original_category: bacterial
+- name: medium_193_modified_for_dsm_8775
+  source: KOMODO
+  source_id: komodo.medium:193_8775
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_193a_PHB_PYRUVATE_MEDIUM
-- KOMODO_193-1_For_DSM_14956
-- KOMODO_193-2_For_DSM_15249
-- KOMODO_193-3_For_DSM_18843
-- KOMODO_193-4_For_DSM_15102
-- KOMODO_193-5_For_DSM_16697
-- KOMODO_193-6637_MEDIUM_193_MODIFIED_FOR_DSM_6637
-- KOMODO_193-8775_MEDIUM_193_MODIFIED_FOR_DSM_8775
-- KOMODO_193_DESULFOBACTER_POSTGATEI_MEDIUM
 - KOMODO_193a_PHB_PYRUVATE_MEDIUM
+- desulfobacter_postgatei_medium
+- for_dsm_14956
+- for_dsm_15102
+- for_dsm_15249
+- for_dsm_16697
+- for_dsm_18843
+- medium_193_modified_for_dsm_6637
+- medium_193_modified_for_dsm_8775
+- phb_pyruvate_medium
 merge_fingerprint: 96b6c190b6212db8a441fe8ba07445823570e8fb9fb946bbbf756aa3ac88c27f

@@ -1,6 +1,7 @@
-name: 9K Medium
+id: CultureMech:010265
+name: 9k_medium
 original_name: 9K Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -19,12 +20,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -34,12 +41,18 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -49,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: (NH4)2SO4
   concentration:
     value: '3'
@@ -58,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Ca(NO3)2
   concentration:
     value: '10'
@@ -67,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:77732
     label: cadmium nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000859
+    label: Ca(NO3)2
 media_term:
   preferred_term: TOGO Medium M84
   term:
@@ -88,6 +110,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 46335f22014aadd89c03b8ddd03a338d39001884f73763dbbe046e64b28447ff
+- timestamp: '2026-03-13T06:20:12.525542Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010265'
+- timestamp: '2026-03-17T06:30:11.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.469732+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "9K Medium" to "9k_medium" for consistent matching
+merge_fingerprint: 1371d8b6099ffd0314c5893f5e8405622ca8fd3f1ab3e67c991d9e4561808df3
 merged_from:
 - TOGO_M84_9K_Medium

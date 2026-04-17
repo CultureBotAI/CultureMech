@@ -1,8 +1,9 @@
-name: R Agar
+id: CultureMech:008585
+name: r_agar
 original_name: R Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Tween 80
   concentration:
     value: '50'
@@ -28,6 +35,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Glycerol
   concentration:
     value: '2'
@@ -37,6 +47,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
 - preferred_term: Malt extract (BD-Difco)
   concentration:
     value: '5'
@@ -50,6 +63,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '5'
@@ -91,6 +107,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 0bea93eefb4f872ed0bc3d4516d557ebf9367017b330c497081d8063163e68e2
+- timestamp: '2026-03-13T06:19:58.393745Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008585'
+- timestamp: '2026-03-17T06:30:25.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.012959+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R Agar" to "r_agar" for consistent matching
+merge_fingerprint: a991b8172516f0afade20bbd3c1f88bb214f6b5e1f057fd02b936f23de2d029f
 merged_from:
 - TOGO_M19_R_Agar

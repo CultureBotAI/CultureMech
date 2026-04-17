@@ -1,8 +1,9 @@
-name: NUTRIMENT AGAR WITH 150 G/L NACL
+id: CultureMech:000716
+name: nutriment_agar_with_150_g_l_nacl
 original_name: NUTRIMENT AGAR WITH 150 G/L NACL
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1258
@@ -28,8 +29,11 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '150'
+    value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -37,6 +41,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -51,18 +58,32 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1258'
-- timestamp: '2026-02-19T08:26:41.832197+00:00'
+- timestamp: '2026-03-13T06:18:57.738111Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000716'
+- timestamp: '2026-03-17T06:29:53.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:09.055520+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NUTRIMENT AGAR WITH 150 G/L NACL" to "nutriment_agar_with_150_g_l_nacl"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:18.553107+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1258_NUTRIMENT_AGAR_WITH_150_G_L_NACL, DSMZ_1259_NUTRIMENT_AGAR'
+  notes: 'Sources: nutriment_agar, nutriment_agar_with_150_g_l_nacl'
+kg_microbe_match: mediadive.medium:101
 synonyms:
-- name: NUTRIMENT AGAR
+- name: nutriment_agar
   source: MediaDive
   source_id: mediadive.medium:1259
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1258_NUTRIMENT_AGAR_WITH_150_G_L_NACL
-- DSMZ_1259_NUTRIMENT_AGAR
+- nutriment_agar
+- nutriment_agar_with_150_g_l_nacl
 merge_fingerprint: b54e7e92648fea08995107dfc7458d17d800d52db3a018076904e262ec22da8d

@@ -1,6 +1,7 @@
-name: Pfennig Ignisphaera Medium
+id: CultureMech:009692
+name: pfennig_ignisphaera_medium
 original_name: Pfennig Ignisphaera Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.33'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.33'
@@ -30,6 +37,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -40,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -48,6 +61,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: MgCl2·6H2O
   concentration:
@@ -58,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -67,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Beef extract
   concentration:
     value: '0.5'
@@ -77,25 +99,14 @@ ingredients:
     value: '0.2'
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Trace element solution (see Medium [M940])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% Na2S•9H2O solution
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
-    component'
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M3274
   term:
@@ -121,6 +132,51 @@ curation_history:
   date: '2026-02-03T11:20:58.085094'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: 8a3a4bdf3b4dcffb162d76e869c173563f0b35380a304501902eb6503aa6064f
+- timestamp: '2026-03-09T08:05:03.984168+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:08.182843Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009692'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.207307'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.171921+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Pfennig Ignisphaera Medium" to "pfennig_ignisphaera_medium"
+    for consistent matching
+solutions:
+- preferred_term: Trace element solution (see Medium [M940])
+  composition: []
+  notes: Cross-reference to Medium M940
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 5% Na2S•9H2O solution
+  composition: []
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
+    component'
+  name: Unknown solution
+merge_fingerprint: 8130f8929176fc32fb55811f9ff5df231ac0e4dc93e97913ee5890ae4e646b45
 merged_from:
-- TOGO_M3274_Pfennig_Ignisphaera_Medium
+- pfennig_ignisphaera_medium

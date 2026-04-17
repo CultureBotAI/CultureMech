@@ -1,115 +1,331 @@
-name: Halodesulfuriarchaeum Medium
-original_name: Halodesulfuriarchaeum Medium
-category: imported
+id: CultureMech:000946
+name: halodesulfuriarchaeum_medium
+original_name: HALODESULFURIARCHAEUM MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+media_term:
+  preferred_term: DSMZ Medium 1479
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:1479
+    label: HALODESULFURIARCHAEUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1479.pdf'
+ingredients:
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '240'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: NH4Cl
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: (NH4)2SO4
   term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: HEPES
+    id: CHEBI:62946
+    label: (NH4)2SO4
   concentration:
-    value: '7'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
+- preferred_term: HEPES
   term:
     id: CHEBI:46756
     label: HEPES
-- preferred_term: 1 M NaHCO3 solution*
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 1 M MgCl2 solution
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: HEPES
+- preferred_term: Sulfur powder
+  term:
+    id: CHEBI:14258
+    label: Sulfur powder
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001072
+    label: Sulfur powder
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.609909'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.420035'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: Sodium formate
+  term:
+    id: CHEBI:62965
+    label: Sodium formate
+  concentration:
+    value: '3.40035'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Sodium formate
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Disodium sulfide
   concentration:
     value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source'
-- preferred_term: Selenite--tungstate solution (see Medium [M431])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M1148])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: 5% Na2S・9H2O solution
+    unit: MILLIMOLAR
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
-    compound'
-- preferred_term: yeast extract
-  concentration:
-    value: '200'
-    unit: MG_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: sodium formate
-  notes: 'Properties: Defined component, Organic compound, Solution'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
+- preferred_term: FeSO4 x 7 H2O
   term:
-    id: CHEBI:62965
-    label: sodium formate
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M1149
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: ZnSO4
   term:
-    id: TOGO:M1149
-    label: Halodesulfuriarchaeum Medium
-notes: 'Source: https://togomedium.org/medium/M1149
-
-  Original source: JCM - JCM_M1080
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1080'
+    id: CHEBI:35176
+    label: ZnSO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: ZnSO4
+- preferred_term: MnCl2
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
+- preferred_term: CuCl2 x 5 H2O
+  term:
+    id: CHEBI:91245
+    label: CuCl2 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000357
+    label: CuCl2 x 5 H2O
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
+- preferred_term: Thiamin
+  term:
+    id: CHEBI:18385
+    label: Thiamin
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001126
+    label: Thiamin
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+- preferred_term: PABA
+  term:
+    id: CHEBI:30753
+    label: PABA
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: PABA
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
+- preferred_term: Pyridoxine
+  term:
+    id: CHEBI:16709
+    label: Pyridoxine
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
+- preferred_term: B12
+  concentration:
+    value: '0.00125'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: POUR_PLATES
+  description: 'Prepare the liquid medium. Dispense the medium into Hungate tubes
+    or serum bottles under gassing with N2. Steam medium for 3h on each of 3 successive
+    days. Before inoculation add from sterile stock solutions:'
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 3.0-4.0 with HCl.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 4
+  action: AUTOCLAVE
+  description: 'Note: autoclave in closed bottles'
+- step_number: 5
+  action: MIX
+  description: '1: acidic solution (HCl, pH3; 100ml)'
+- step_number: 6
+  action: MIX
+  description: '2: basic solution (100ml 0.1N NaOH)'
+- step_number: 7
+  action: MIX
+  description: '3: Neutral solution in 100 ml demi water'
+- step_number: 8
+  action: MIX
+  description: '4: neutral solution in 100 ml demi water'
+- step_number: 9
+  action: MIX
+  description: Sterilize by filtration.
+- step_number: 10
+  action: MIX
+  description: Mix 1:1:1:1 just after addition or add separatlely, each 1ml/L.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.013468Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1149'
-- timestamp: '2026-01-28T19:48:35.290573Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:46.187269'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: sodium formate'
-merge_fingerprint: f4a0bff3bdacbf87f1ed1320364771b33b35557e714f5d9880fa3f006e62e071
+- timestamp: '2026-01-26T17:53:14.556838Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1479'
+- timestamp: '2026-02-06T05:10:14.197831Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:59.807360Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000946'
+- timestamp: '2026-03-17T06:29:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.356185+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALODESULFURIARCHAEUM MEDIUM" to "halodesulfuriarchaeum_medium"
+    for consistent matching
+high_metal: true
+merge_fingerprint: d3c3788f02495ffa282c4b3b1d0ebb7fbabc83da982fcf0db7c83f54c026930f
 merged_from:
-- TOGO_M1149_Halodesulfuriarchaeum_Medium
+- halodesulfuriarchaeum_medium

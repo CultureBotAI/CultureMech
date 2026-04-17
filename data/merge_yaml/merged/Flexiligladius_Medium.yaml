@@ -1,8 +1,9 @@
-name: Flexiligladius Medium
+id: CultureMech:008126
+name: flexiligladius_medium
 original_name: Flexiligladius Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Agar (if needed)
   concentration:
@@ -44,6 +48,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:53.686649Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008126'
+- timestamp: '2026-03-17T06:30:37.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.234864+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Flexiligladius Medium" to "flexiligladius_medium" for
+    consistent matching
 merge_fingerprint: d0a1e525e588afeb2d46ae3935f5b2fe099e969e94a66a6095c94ee5d4d1936f
 merged_from:
-- TOGO_M1577_Flexiligladius_Medium
+- flexiligladius_medium

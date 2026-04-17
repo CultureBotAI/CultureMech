@@ -1,98 +1,116 @@
-name: Magnetospirillum Gryphiswaldense Medium
-original_name: Magnetospirillum Gryphiswaldense Medium
-category: imported
+id: CultureMech:003006
+name: magnetospirillum_gryphiswaldense_medium
+original_name: MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: JCM Medium J660
+  term:
+    id: mediadive.medium:J660
+    label: MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=660'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: NH4Cl
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
   term:
     id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: Sodium acetate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:32954
-    label: sodium acetate
-- preferred_term: Ferric citrate
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Simple
-    component'
-- preferred_term: agar
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Sodium thioglycolate
+    label: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycolate
   term:
     id: CHEBI:86481
-    label: sodium thioglycolate
-media_term:
-  preferred_term: TOGO Medium M678
+    label: Sodium thioglycolate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Sodium thioglycolate
+- preferred_term: Ferric citrate
   term:
-    id: TOGO:M678
-    label: Magnetospirillum Gryphiswaldense Medium
-notes: 'Source: https://togomedium.org/medium/M678
-
-  Original source: JCM - JCM_M660-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=660'
+    id: CHEBI:144421
+    label: Ferric citrate
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000864
+    label: Ferric citrate
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.8.
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 21280, good growth can be obtained in semisolid
+    medium (1.0 g/L agar).'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.513627Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M678'
-- timestamp: '2026-01-28T19:48:36.943656Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 29a923110b2b81ebcd5d656eb2bb758ecf9e94df3a4a97cf2be572321fd2f490
+- timestamp: '2026-01-26T17:53:17.212107Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J660'
+- timestamp: '2026-02-20T07:49:55.000000Z'
+  curator: organism-data-backfill
+  action: Added curated organism data
+  notes: 'Added organism: MAGNETOSPIRILLUM GRYPHISWALDENSE, culture_type: isolate'
+- timestamp: '2026-03-13T06:19:17.101688Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003006'
+- timestamp: '2026-03-17T06:29:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.749712+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM" to "magnetospirillum_gryphiswaldense_medium"
+    for consistent matching
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: MAGNETOSPIRILLUM GRYPHISWALDENSE
+merge_fingerprint: 6f77a326378a534cdc513b9b4a63618386cdd0f514d206c85991f6faa80362d2
 merged_from:
-- TOGO_M678_Magnetospirillum_Gryphiswaldense_Medium
+- magnetospirillum_gryphiswaldense_medium

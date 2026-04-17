@@ -1,6 +1,7 @@
-name: DESULFUROMONAS ACETOXIDANS MEDIUM
+id: CultureMech:002139
+name: desulfuromonas_acetoxidans_medium
 original_name: DESULFUROMONAS ACETOXIDANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '1.05152'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.315457'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '1.05152'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '2.10305'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '21.0305'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.105152'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '1.8612'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: Na2-DL-malate
   term:
     id: CHEBI:91261
@@ -67,6 +89,9 @@ ingredients:
   concentration:
     value: '2.79706'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000450
+    label: Na2-DL-malate
 - preferred_term: Yeast extract
   concentration:
     value: '0.525762'
@@ -82,6 +107,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -89,6 +117,9 @@ ingredients:
   concentration:
     value: '46.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -96,6 +127,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Na2-EDTA x 2 H2O
   term:
     id: CHEBI:64734
@@ -103,6 +137,9 @@ ingredients:
   concentration:
     value: '5.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA x 2 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -110,6 +147,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -117,6 +157,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -124,6 +167,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -131,6 +177,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -138,6 +187,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -145,6 +197,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -152,6 +207,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -159,6 +217,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -184,18 +245,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 95'
-- timestamp: '2026-02-19T08:26:57.547447+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_95_DESULFUROMONAS_ACETOXIDANS_MEDIUM, KOMODO_95_DESULFUROMONAS_ACETOXIDANS_medium'
-synonyms:
-- name: DESULFUROMONAS ACETOXIDANS medium
-  source: KOMODO
-  source_id: komodo.medium:95
-  original_category: imported
-categories:
-- imported
-merged_from:
-- DSMZ_95_DESULFUROMONAS_ACETOXIDANS_MEDIUM
-- KOMODO_95_DESULFUROMONAS_ACETOXIDANS_medium
+- timestamp: '2026-03-13T06:19:10.655676Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002139'
+- timestamp: '2026-03-17T06:29:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:23.353162+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFUROMONAS ACETOXIDANS MEDIUM" to "desulfuromonas_acetoxidans_medium"
+    for consistent matching
 merge_fingerprint: ba6a4bad194e3cd386f016782d9a0844b5e25c6181b105118063229dc5da0836
+merged_from:
+- desulfuromonas_acetoxidans_medium

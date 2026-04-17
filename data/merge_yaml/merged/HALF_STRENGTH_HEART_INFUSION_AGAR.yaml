@@ -1,52 +1,51 @@
-name: Half Strength Heart Infusion Agar
-original_name: Half Strength Heart Infusion Agar
-category: imported
+id: CultureMech:002240
+name: half_strength_heart_infusion_agar
+original_name: HALF STRENGTH HEART INFUSION AGAR
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J105
+  term:
+    id: mediadive.medium:J105
+    label: HALF STRENGTH HEART INFUSION AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=105'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Heart infusion broth (BD-Difco)
+- preferred_term: Heart Infusion Broth
   concentration:
     value: '12.5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-media_term:
-  preferred_term: TOGO Medium M97
+- preferred_term: Agar
   term:
-    id: TOGO:M97
-    label: Half Strength Heart Infusion Agar
-notes: 'Source: https://togomedium.org/medium/M97
-
-  Original source: JCM - JCM_M105
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=105'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.056657Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M97'
-- timestamp: '2026-01-28T19:48:11.076504Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 44fcb73b1df3d5d6881eaf9bcedd9b250ba23462831d4b2064529f7a91b8e103
+- timestamp: '2026-01-26T17:53:15.738458Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J105'
+- timestamp: '2026-03-13T06:19:11.533041Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002240'
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:24.351716+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALF STRENGTH HEART INFUSION AGAR" to "half_strength_heart_infusion_agar"
+    for consistent matching
+kg_microbe_match: mediadive.medium:12
+merge_fingerprint: c6723b0c3a46a74c219ffa81ab7fd5236e10f2840954bcc7be9d80b47892e6a5
 merged_from:
-- TOGO_M97_Half_Strength_Heart_Infusion_Agar
+- half_strength_heart_infusion_agar

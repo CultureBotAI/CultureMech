@@ -1,17 +1,21 @@
-name: Formate medium
+id: CultureMech:009652
+name: formate_medium
 original_name: Formate medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '2.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: (NH4)2SO4
   concentration:
@@ -22,12 +26,18 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: MgSO4 ⋅ 7H2O
   concentration:
     value: '0.8'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: FeSO4
   concentration:
     value: '0.016'
@@ -37,6 +47,9 @@ ingredients:
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001045
+    label: FeSO4
 - preferred_term: NaH2PO4
   concentration:
     value: '4.68'
@@ -46,15 +59,14 @@ ingredients:
   term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4
 - preferred_term: NaCOOH
   concentration:
     value: '6.8'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
-- preferred_term: Trace element solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -64,6 +76,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -72,51 +87,63 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Na2MoO4 ⋅ 2H2O
   concentration:
     value: '1.8'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: FeSO4 ⋅ 7H2O
   concentration:
     value: '1.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: ZnSO4 ⋅ 7H2O
   concentration:
     value: '2.4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuSO4 ⋅ 5H2O
   concentration:
     value: '0.48'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: CoSO4 ⋅ 7H2O
   concentration:
     value: '4.02'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: MnSO4 ⋅ H2O
   concentration:
     value: '2.4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: Ni2SO4 ⋅ 6H2O
   concentration:
     value: '1.5'
@@ -145,6 +172,41 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: NaOH'
-merge_fingerprint: fe15a48ee3104e32905d9041b7bbde08288b8a3f15bbfb6bb1a679e5b8f31567
+- timestamp: '2026-03-09T08:04:38.534355+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:08.328078Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:07.902786Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009652'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.036827'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.908890+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Formate medium" to "formate_medium" for consistent
+    matching
+solutions:
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution
+merge_fingerprint: 289bc97bff04936d78e945889a887e7cbedc3a2b693f96daa4c0745a91c926da
 merged_from:
-- TOGO_M3211_Formate_medium
+- formate_medium

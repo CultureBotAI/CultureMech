@@ -1,6 +1,7 @@
-name: PYE Rich medium
+id: CultureMech:009405
+name: pye_rich_medium
 original_name: PYE Rich medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -18,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MgSO4
   concentration:
     value: '1'
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: Bacto peptone
   concentration:
     value: '0.2'
@@ -49,6 +56,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.057272Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009405'
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.002498+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PYE Rich medium" to "pye_rich_medium" for consistent
+    matching
 merge_fingerprint: 889bb3b10a16197afc4eb9ff0b0b71d72bb7d2bfaeccc1f28e654c227c924de9
 merged_from:
-- TOGO_M2871_PYE_Rich_medium
+- pye_rich_medium

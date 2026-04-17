@@ -1,175 +1,210 @@
-name: Desulfitocella Medium
-original_name: Desulfitocella Medium
-category: imported
+id: CultureMech:003140
+name: desulfitocella_medium
+original_name: DESULFITOCELLA MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J796
+  term:
+    id: mediadive.medium:J796
+    label: DESULFITOCELLA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=796'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '925'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: NH4Cl
   concentration:
-    value: '1'
+    value: '0.2997'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
   term:
     id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: Resazurin
+    label: K2HPO4
   concentration:
-    value: '1'
+    value: '0.2997'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
-    component, Organic compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0999001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.0999001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+- preferred_term: Resazurin
   term:
     id: CHEBI:8806
     label: Resazurin
-- preferred_term: MgCl2・6H2O
   concentration:
-    value: '0.5'
+    value: '0.000999001'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: KCl
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+- preferred_term: NaHCO3
   term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: Trypticase peptone (BD-BBL)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: L--Cysteine・HCl・H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Properties: Simple component, Defined component, Organic compound'
-- preferred_term: Microelement solution (see Medium [M484])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  term:
-    id: CHEBI:32035
-    label: potassium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 8% NaHCO3 solution*
+    id: CHEBI:32139
+    label: NaHCO3
   concentration:
     value: '25'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 0.1 M Sodium sulfite solution
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: Sodium sulfite
+  term:
+    id: CHEBI:86477
+    label: Sodium sulfite
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
-    component'
-- preferred_term: 1 M Sodium pyruvate solution
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000988
+    label: Sodium sulfite
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Solution, Defined component'
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
-    component'
-- preferred_term: Sodium dithionite solution (100 mg/L)*
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
+- preferred_term: Sodium dithionite
+  term:
+    id: CHEBI:66870
+    label: Sodium dithionite
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Solution, Inorganic compound'
-media_term:
-  preferred_term: TOGO Medium M830
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000496
+    label: Sodium dithionite
+- preferred_term: Na2S x 9 H2O
   term:
-    id: TOGO:M830
-    label: Desulfitocella Medium
-notes: 'Source: https://togomedium.org/medium/M830
-
-  Original source: JCM - JCM_M796
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=796'
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components thoroughly, adjust pH to 7.0 with KOH, distribute the
+    medium into culture vessels under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl
+    rubber stoppers and autoclave. After cooling, add per 925 ml the following solutions
+    from anaerobic stocks (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.795055Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M830'
-- timestamp: '2026-01-28T19:48:36.909987Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-01-26T17:53:17.629638Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J796'
+- timestamp: '2026-03-09T08:04:26.364530+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:18.108214Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003140'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.789640'
+  date: '2026-03-14T21:06:28.286972'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: KOH; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
-    Nitrogen gas'
-merge_fingerprint: 038fdcc41a10d20f777f1b811f378d53075a2538b068bfb2d16b75f7ddc0a4dd
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:59.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:31.918568+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFITOCELLA MEDIUM" to "desulfitocella_medium" for
+    consistent matching
+solutions:
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution
+merge_fingerprint: 430186b9b87157873ce563e124bdc39c97e34c594ea3168ff4a1f916a347e18c
 merged_from:
-- TOGO_M830_Desulfitocella_Medium
+- desulfitocella_medium

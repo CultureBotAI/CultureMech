@@ -1,8 +1,9 @@
-name: Halobaculum magnesiiphilum medium
+id: CultureMech:008541
+name: halobaculum_magnesiiphilum_medium
 original_name: Halobaculum magnesiiphilum medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '20'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.13'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '300'
@@ -40,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1'
@@ -49,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: K2SO4
   concentration:
     value: '5'
@@ -58,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001064
+    label: K2SO4
 - preferred_term: Soluble starch
   concentration:
     value: '2'
@@ -71,6 +90,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '1'
@@ -89,6 +111,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 media_term:
   preferred_term: TOGO Medium M1960
   term:
@@ -114,6 +139,20 @@ curation_history:
   date: '2026-02-03T11:20:51.047137'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-13T06:19:57.881823Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008541'
+- timestamp: '2026-03-17T06:30:11.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:16.507836+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Halobaculum magnesiiphilum medium" to "halobaculum_magnesiiphilum_medium"
+    for consistent matching
+high_metal: true
 merge_fingerprint: 7474295799d790561f8c4e76bc12922acadced4d3baa6288d85ce7ec1e14395b
 merged_from:
-- TOGO_M1960_Halobaculum_magnesiiphilum_medium
+- halobaculum_magnesiiphilum_medium

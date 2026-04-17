@@ -1,17 +1,21 @@
-name: Medium for Acidithiobacillus ferrooxidans
+id: CultureMech:008660
+name: medium_for_acidithiobacillus_ferrooxidans
 original_name: Medium for Acidithiobacillus ferrooxidans
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '890'
+    value: '891.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+    Defined component [Merged 2 duplicates: 890.0, 1.0]'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: K2HPO4
   concentration:
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: (NH4)2SO4
   concentration:
     value: '2'
@@ -40,14 +50,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-- preferred_term: Solution I*
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution II**
-  concentration:
-    value: '100'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
     component'
@@ -57,15 +62,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '50'
@@ -75,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: Ca(NO3)2·4H2O
   concentration:
     value: '1.44'
@@ -84,15 +86,9 @@ ingredients:
   term:
     id: CHEBI:86159
     label: calcium nitrate tetrahydrate
-- preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-  term:
-    id: CHEBI:26836
-    label: sulfuric acid
-  concentration:
-    value: variable
-    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000586
+    label: Ca(NO3)2·4H2O
 - preferred_term: 0.25 N H2SO4
   concentration:
     value: '1'
@@ -105,6 +101,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2071
   term:
@@ -131,6 +130,51 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: H2SO4'
-merge_fingerprint: b1f5c8bce8493d7a5c5a76eb1eecebd40e68acf48897e9bbe5fb468abff72f29
+- timestamp: '2026-03-09T08:04:25.708906+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:54.231590Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:59.130851Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008660'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:53.578746'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.761156+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Medium for Acidithiobacillus ferrooxidans" to "medium_for_acidithiobacillus_ferrooxidans"
+    for consistent matching
+high_metal: true
+solutions:
+- preferred_term: Solution I*
+  term:
+    id: mediadive.solution:5335
+    label: Solution I
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5335_Solution_I.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution II**
+  term:
+    id: mediadive.solution:5336
+    label: Solution II
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: See mediadive_5336_Solution_II.yaml for composition
+  name: Unknown solution
+merge_fingerprint: 077cca6fd1d2d97ab3af94378aeac4bd311a21f2c948a8e7c36893148d95ec77
 merged_from:
-- TOGO_M2071_Medium_for_Acidithiobacillus_ferrooxidans
+- medium_for_acidithiobacillus_ferrooxidans

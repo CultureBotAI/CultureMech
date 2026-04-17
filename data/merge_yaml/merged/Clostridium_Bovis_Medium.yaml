@@ -1,6 +1,7 @@
-name: Clostridium Bovis Medium
+id: CultureMech:010050
+name: clostridium_bovis_medium
 original_name: Clostridium Bovis Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: yeast extract
   concentration:
     value: '0.5'
@@ -33,12 +40,18 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -47,6 +60,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -57,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -66,12 +85,18 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1'
@@ -81,6 +106,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '0.5'
@@ -95,11 +123,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M649
   term:
@@ -126,6 +160,19 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas'
-merge_fingerprint: 92570f56c43a3525153b84e43103c0ebe9df487ff01b20d0ed4de5fdbf1fa6e9
+- timestamp: '2026-03-13T06:20:10.955813Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010050'
+- timestamp: '2026-03-17T06:29:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.884749+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Clostridium Bovis Medium" to "clostridium_bovis_medium"
+    for consistent matching
+merge_fingerprint: 95ec231684bc43d81b9f18f507cde9f28b9343ef371d80c77f76981ea656f9ef
 merged_from:
 - TOGO_M649_Clostridium_Bovis_Medium

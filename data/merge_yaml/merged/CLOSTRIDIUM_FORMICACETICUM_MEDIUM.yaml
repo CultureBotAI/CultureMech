@@ -1,8 +1,9 @@
-name: CLOSTRIDIUM FORMICACETICUM MEDIUM
+id: CultureMech:000969
+name: clostridium_formicaceticum_medium
 original_name: CLOSTRIDIUM FORMICACETICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:
   preferred_term: DSMZ Medium 14
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '9.8912'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '0.00098912'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '0.74184'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Na-thioglycolate
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.00049456'
@@ -47,6 +57,9 @@ ingredients:
   concentration:
     value: '0.98912'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: D-Fructose
   term:
     id: CHEBI:15824
@@ -54,6 +67,9 @@ ingredients:
   concentration:
     value: '4.9456'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000344
+    label: D-Fructose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -62,6 +78,9 @@ ingredients:
     value: '14.8368'
     unit: G_PER_L
   notes: Optional ingredient (for solid medium)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -69,6 +88,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -76,6 +98,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -83,6 +108,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -90,6 +118,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -97,6 +128,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -104,6 +138,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -111,6 +148,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -118,6 +158,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -125,6 +168,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -145,18 +191,31 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 14'
-- timestamp: '2026-02-19T08:26:43.576181+00:00'
+- timestamp: '2026-03-13T06:19:00.049915Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000969'
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.626412+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CLOSTRIDIUM FORMICACETICUM MEDIUM" to "clostridium_formicaceticum_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:58.275738+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_14_CLOSTRIDIUM_FORMICACETICUM_MEDIUM, KOMODO_14_CLOSTRIDIUM_FORMICOACETICUM_medium'
+  notes: 'Sources: clostridium_formicaceticum_medium, clostridium_formicoaceticum_medium'
 synonyms:
-- name: CLOSTRIDIUM FORMICOACETICUM medium
+- name: clostridium_formicoaceticum_medium
   source: KOMODO
   source_id: komodo.medium:14
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_14_CLOSTRIDIUM_FORMICACETICUM_MEDIUM
-- KOMODO_14_CLOSTRIDIUM_FORMICOACETICUM_medium
+- clostridium_formicaceticum_medium
+- clostridium_formicoaceticum_medium
 merge_fingerprint: 9aa40cb064ea359fedc26e4244191648cacaf4ce9633d634018a9ab025170473

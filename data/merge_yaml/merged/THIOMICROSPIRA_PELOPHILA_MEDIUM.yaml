@@ -1,6 +1,7 @@
-name: THIOMICROSPIRA PELOPHILA MEDIUM
+id: CultureMech:000892
+name: thiomicrospira_pelophila_medium
 original_name: THIOMICROSPIRA PELOPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '24.8756'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.995025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -32,13 +39,20 @@ ingredients:
   concentration:
     value: '1.49254'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.41791'
+    value: '5.95791'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.41791, 5.54]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Bromothymol blue
   term:
     id: CHEBI:86155
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.0039801'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001021
+    label: Bromothymol blue
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '0.497512'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
@@ -60,6 +80,9 @@ ingredients:
   concentration:
     value: '4.97512'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -67,6 +90,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -74,13 +100,9 @@ ingredients:
   concentration:
     value: '22'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '5.54'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -88,6 +110,9 @@ ingredients:
   concentration:
     value: '5.06'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -95,6 +120,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '1.1'
@@ -106,6 +134,9 @@ ingredients:
   concentration:
     value: '1.57'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -113,6 +144,9 @@ ingredients:
   concentration:
     value: '1.61'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -120,6 +154,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -127,6 +164,9 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: D-(+)-biotin
   term:
     id: CHEBI:15956
@@ -134,6 +174,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D-(+)-biotin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -141,6 +184,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -148,6 +194,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -155,6 +204,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -162,6 +214,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -188,53 +243,62 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 142'
-- timestamp: '2026-02-19T08:26:43.373227+00:00'
+- timestamp: '2026-03-13T03:09:41.951653Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:59.280972Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000892'
+- timestamp: '2026-03-17T06:30:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:10.779630+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOMICROSPIRA PELOPHILA MEDIUM" to "thiomicrospira_pelophila_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:10.295115+00:00'
   curator: recipe-merger
-  action: Merged 9 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_142_THIOMICROSPIRA_PELOPHILA_MEDIUM, KOMODO_142-12346_MEDIUM_142_MODIFIED_FOR_DSM_12346,
-    KOMODO_142-12350_MEDIUM_142_MODIFIED_FOR_DSM_12350, KOMODO_142-12351_MEDIUM_142_MODIFIED_FOR_DSM_12351,
-    KOMODO_142-12352_MEDIUM_142_MODIFIED_FOR_DSM_12352, KOMODO_142-12353_MEDIUM_142_MODIFIED_FOR_DSM_12353,
-    KOMODO_142-12354_MEDIUM_142_MODIFIED_FOR_DSM_12354, KOMODO_142_THIOMICROSPIRA_PELOPHILA_MEDIUM,
-    KOMODO_142a_THIOMICROSPIRA_PSYCHROPHILA_MEDIUM'
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: medium_142_modified_for_dsm_12346, medium_142_modified_for_dsm_12350,
+    medium_142_modified_for_dsm_12351, medium_142_modified_for_dsm_12352, medium_142_modified_for_dsm_12353,
+    medium_142_modified_for_dsm_12354, thiomicrospira_pelophila_medium'
 synonyms:
-- name: MEDIUM 142 MODIFIED FOR DSM 12346
+- name: medium_142_modified_for_dsm_12346
   source: KOMODO
   source_id: komodo.medium:142_12346
-  original_category: imported
-- name: MEDIUM 142 MODIFIED FOR DSM 12350
+  original_category: bacterial
+- name: medium_142_modified_for_dsm_12350
   source: KOMODO
   source_id: komodo.medium:142_12350
-  original_category: imported
-- name: MEDIUM 142 MODIFIED FOR DSM 12351
+  original_category: bacterial
+- name: medium_142_modified_for_dsm_12351
   source: KOMODO
   source_id: komodo.medium:142_12351
-  original_category: imported
-- name: MEDIUM 142 MODIFIED FOR DSM 12352
+  original_category: bacterial
+- name: medium_142_modified_for_dsm_12352
   source: KOMODO
   source_id: komodo.medium:142_12352
-  original_category: imported
-- name: MEDIUM 142 MODIFIED FOR DSM 12353
+  original_category: bacterial
+- name: medium_142_modified_for_dsm_12353
   source: KOMODO
   source_id: komodo.medium:142_12353
-  original_category: imported
-- name: MEDIUM 142 MODIFIED FOR DSM 12354
+  original_category: bacterial
+- name: medium_142_modified_for_dsm_12354
   source: KOMODO
   source_id: komodo.medium:142_12354
-  original_category: imported
-- name: THIOMICROSPIRA PSYCHROPHILA MEDIUM
-  source: KOMODO
-  source_id: komodo.medium:142a
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_142_THIOMICROSPIRA_PELOPHILA_MEDIUM
-- KOMODO_142-12346_MEDIUM_142_MODIFIED_FOR_DSM_12346
-- KOMODO_142-12350_MEDIUM_142_MODIFIED_FOR_DSM_12350
-- KOMODO_142-12351_MEDIUM_142_MODIFIED_FOR_DSM_12351
-- KOMODO_142-12352_MEDIUM_142_MODIFIED_FOR_DSM_12352
-- KOMODO_142-12353_MEDIUM_142_MODIFIED_FOR_DSM_12353
-- KOMODO_142-12354_MEDIUM_142_MODIFIED_FOR_DSM_12354
-- KOMODO_142_THIOMICROSPIRA_PELOPHILA_MEDIUM
-- KOMODO_142a_THIOMICROSPIRA_PSYCHROPHILA_MEDIUM
+- medium_142_modified_for_dsm_12346
+- medium_142_modified_for_dsm_12350
+- medium_142_modified_for_dsm_12351
+- medium_142_modified_for_dsm_12352
+- medium_142_modified_for_dsm_12353
+- medium_142_modified_for_dsm_12354
+- thiomicrospira_pelophila_medium
 merge_fingerprint: 3039b4e6cad8fb6e948ec964d17860e376c2afaa7e86833a78bfebf165132102

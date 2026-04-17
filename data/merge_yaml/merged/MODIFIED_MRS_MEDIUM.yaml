@@ -1,49 +1,55 @@
-name: Modified MRS Medium
-original_name: Modified MRS Medium
-category: imported
+id: CultureMech:002649
+name: modified_mrs_medium
+original_name: MODIFIED MRS MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J291
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: L--Cysteine・HCl・H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-- preferred_term: Lactobacilli MRS broth (BD-Difco)
+    id: mediadive.medium:J291
+    label: MODIFIED MRS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=291'
+ingredients:
+- preferred_term: Lactobacilli MRS broth
   concentration:
     value: '55'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M285
+- preferred_term: L-Cysteine HCl x H2O
   term:
-    id: TOGO:M285
-    label: Modified MRS Medium
-notes: 'Source: https://togomedium.org/medium/M285
-
-  Original source: JCM - JCM_M291
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=291'
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.5.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.765755Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M285'
-- timestamp: '2026-01-28T19:48:13.984604Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: bdc974a06eff64249bf6bb36d891d0ef4598f13c6218c5c961033ad53c62420e
+- timestamp: '2026-01-26T17:53:16.198997Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J291'
+- timestamp: '2026-03-13T06:19:14.768882Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002649'
+- timestamp: '2026-03-17T06:30:26.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:28.071164+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED MRS MEDIUM" to "modified_mrs_medium" for consistent
+    matching
+merge_fingerprint: b58ca2fa96e7c59e062aeabd78ad599e05338e2e4027c232e0d89b142b292b37
 merged_from:
-- TOGO_M285_Modified_MRS_Medium
+- modified_mrs_medium

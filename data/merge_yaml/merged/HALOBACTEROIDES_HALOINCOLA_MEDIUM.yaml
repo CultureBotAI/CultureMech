@@ -1,15 +1,16 @@
-name: HALOBACTEROIDES/HALOINCOLA MEDIUM
-original_name: HALOBACTEROIDES/HALOINCOLA MEDIUM
-category: imported
+id: CultureMech:006073
+name: halobacteroides_haloincola_medium
+original_name: HALOBACTEROIDES/HALOINCOLA medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 7.5
 media_term:
-  preferred_term: DSMZ Medium 591
+  preferred_term: KOMODO Medium 591
   term:
-    id: mediadive.medium:591
-    label: HALOBACTEROIDES/HALOINCOLA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium591.pdf'
+    id: komodo.medium:591
+    label: HALOBACTEROIDES/HALOINCOLA medium
+notes: 'Source: KOMODO ModelSEED | ID: 591 | DSMZ Medium: 591 (mediadive.medium:591)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.33'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.33'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.33'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.33'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.33'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -54,6 +70,9 @@ ingredients:
     value: '125'
     unit: G_PER_L
   notes: ' (adjust if required in range 100-150)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -61,6 +80,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -68,6 +90,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -75,6 +100,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -86,6 +114,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -93,6 +124,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -100,6 +134,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -107,6 +144,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -114,6 +154,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -121,6 +164,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -128,6 +174,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -135,6 +184,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -142,6 +194,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -149,6 +204,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -156,6 +214,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -163,6 +224,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -170,6 +234,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -177,6 +244,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -184,6 +254,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -191,6 +264,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.005'
@@ -202,6 +278,9 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -209,6 +288,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
     id: CHEBI:16494
@@ -216,54 +298,58 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Prepare the medium without NaHCO3, Na2S, glucose and vitamins, boil
-    and cool under a nitrogen:carbon dioxide (80:20 v/v) atmosphere. Glucose (filter-sterilized
-    and stored under nitrogen), vitamins (filter sterilized and stored under nitrogen),
-    and sodium sulphide (autoclaved under nitrogen) are added from sterile stock solutions.
-    The pH should be pH 7.5.
-- step_number: 2
-  action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: (DL)-alpha-Lipoic acid
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.665386Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 591'
-- timestamp: '2026-02-06T05:10:30.455732Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 591'
+- timestamp: '2026-02-03T11:18:54.295245'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 591
+- timestamp: '2026-02-06T05:10:12.082380Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-02-19T08:26:51.584848+00:00'
+- timestamp: '2026-03-13T06:19:38.094636Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006073'
+- timestamp: '2026-03-17T06:29:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:54.968016+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOBACTEROIDES/HALOINCOLA medium" to "halobacteroides_haloincola_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:29.375553+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_591_HALOBACTEROIDES_HALOINCOLA_MEDIUM, KOMODO_591-1_For_DSM_6641_DSM_6642_DSM_6638_DSM_6639_DSM_6643_and_DSM_7212_and_150.0_g_l_for_,
-    KOMODO_591-2_For_DSM_12596, KOMODO_591_HALOBACTEROIDES_HALOINCOLA_medium'
+  notes: 'Sources: KOMODO_591_HALOBACTEROIDES_HALOINCOLA_medium, for_dsm_12596, for_dsm_6641_dsm_6642_dsm_6638_dsm_6639_dsm_6643_and_dsm_7212_and_150_0_g_l_for_dsm_6640,
+    halobacteroides_haloincola_medium'
+ph_value: 7.5
 synonyms:
-- name: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM 7212 and 150.0
-    g/l for DSM 6640
-  source: KOMODO
-  source_id: komodo.medium:591.1
-  original_category: imported
-- name: For DSM 12596
+- name: for_dsm_12596
   source: KOMODO
   source_id: komodo.medium:591.2
-  original_category: imported
-- name: HALOBACTEROIDES/HALOINCOLA medium
+  original_category: bacterial
+- name: for_dsm_6641_dsm_6642_dsm_6638_dsm_6639_dsm_6643_and_dsm_7212_and_150_0_g_l_for_dsm_6640
   source: KOMODO
-  source_id: komodo.medium:591
-  original_category: imported
+  source_id: komodo.medium:591.1
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_591_HALOBACTEROIDES_HALOINCOLA_MEDIUM
-- KOMODO_591-1_For_DSM_6641_DSM_6642_DSM_6638_DSM_6639_DSM_6643_and_DSM_7212_and_150.0_g_l_for_
-- KOMODO_591-2_For_DSM_12596
 - KOMODO_591_HALOBACTEROIDES_HALOINCOLA_medium
+- for_dsm_12596
+- for_dsm_6641_dsm_6642_dsm_6638_dsm_6639_dsm_6643_and_dsm_7212_and_150_0_g_l_for_dsm_6640
+- halobacteroides_haloincola_medium
 merge_fingerprint: e38054141159165230c5f9961acfb024b7e5f9bd546508970aab54a111d44b10

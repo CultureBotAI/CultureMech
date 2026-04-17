@@ -1,8 +1,9 @@
-name: Beijerinckia medium for isolation
+id: CultureMech:001269
+name: beijerinckia_medium_for_isolation
 original_name: Beijerinckia medium for isolation
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.3-6.7
 media_term:
   preferred_term: DSMZ Medium 1847
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: D-Sucrose
   concentration:
     value: '20'
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: FeCl3
   term:
     id: CHEBI:30808
@@ -43,6 +53,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000705
+    label: FeCl3
 - preferred_term: Na2MoO4
   term:
     id: CHEBI:75215
@@ -50,6 +63,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -57,6 +73,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -78,6 +97,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1847'
+- timestamp: '2026-03-13T06:19:02.715412Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001269'
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.564690+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Beijerinckia medium for isolation" to "beijerinckia_medium_for_isolation"
+    for consistent matching
 merge_fingerprint: e76a2e0f5c5722cf31e07300c7e8eb9f228fd8dec8140d5088514f628d1df993
 merged_from:
-- DSMZ_1847_Beijerinckia_medium_for_isolation
+- beijerinckia_medium_for_isolation

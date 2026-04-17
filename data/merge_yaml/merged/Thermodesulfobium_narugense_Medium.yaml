@@ -1,17 +1,21 @@
-name: Thermodesulfobium narugense Medium
+id: CultureMech:008133
+name: thermodesulfobium_narugense_medium
 original_name: Thermodesulfobium narugense Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '3.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -22,24 +26,33 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: NaCl
   concentration:
-    value: '0.2'
+    value: '1.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 0.2, 1.0]'
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2·2H2O
   concentration:
-    value: '0.03'
+    value: '0.13'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 0.03, 0.1]'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.75'
@@ -48,6 +61,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -58,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: K2HPO4
   concentration:
     value: '0.78'
@@ -67,12 +86,18 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Sodium acetate
   concentration:
     value: '2'
@@ -81,6 +106,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: NaSO4
   concentration:
     value: '20'
@@ -90,48 +118,49 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: NaSO4
 - preferred_term: Cysteine-HCl
   concentration:
     value: '0.25'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000389
+    label: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: ''
 - preferred_term: 3Na-EDTA
   concentration:
     value: '0.04'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Vitamin solution*
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace element solution**
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: CHEBI:18276
+    label: ''
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -140,6 +169,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '5'
@@ -148,6 +180,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Thiamine-HCl
   concentration:
     value: '5'
@@ -156,6 +191,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine-HCl
 - preferred_term: Ca-pantothenate
   concentration:
     value: '5'
@@ -164,6 +202,9 @@ ingredients:
   term:
     id: CHEBI:29032
     label: (R)-pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000219
+    label: Ca-pantothenate
 - preferred_term: Pyridoxine-HCl
   concentration:
     value: '10'
@@ -172,6 +213,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine-HCl
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -180,6 +224,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '0.1'
@@ -188,6 +235,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -196,6 +246,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -204,6 +257,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Lipoic acid
   concentration:
     value: '5'
@@ -213,33 +269,9 @@ ingredients:
   term:
     id: CHEBI:16494
     label: lipoic acid
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: Lipoic acid
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.024'
@@ -249,6 +281,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -258,18 +293,27 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.024'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.12'
@@ -279,6 +323,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2·6H2O
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '0.025'
@@ -288,6 +335,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2·2H2O
 - preferred_term: ZnCl2
   concentration:
     value: '0.1'
@@ -297,6 +347,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: Na2SeO3·5H2O
   concentration:
     value: '0.026'
@@ -306,6 +359,9 @@ ingredients:
   term:
     id: CHEBI:48843
     label: disodium selenite
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000315
+    label: Na2SeO3·5H2O
 - preferred_term: FeCl3·6H2O
   concentration:
     value: '1.35'
@@ -315,6 +371,9 @@ ingredients:
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3·6H2O
 - preferred_term: Nitrilotriacetic acid (NTA)
   concentration:
     value: '12.8'
@@ -324,6 +383,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid (NTA)
 media_term:
   preferred_term: TOGO Medium M1583
   term:
@@ -351,6 +413,50 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Hydrogen gas'
-merge_fingerprint: d07cc00c4e638dd071dc17d7381c3a1bcbb5af697d1cd42e9e7a53415304ee31
+- timestamp: '2026-03-09T08:04:58.857019+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:30.564036Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:53.766370Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008133'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:49.559130'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.314102+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thermodesulfobium narugense Medium" to "thermodesulfobium_narugense_medium"
+    for consistent matching
+solutions:
+- preferred_term: Vitamin solution*
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition
+  name: Unknown solution
+- preferred_term: Trace element solution**
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution
+merge_fingerprint: c4dce287736910a6d48c1bc11f0b8caffa10b7d4fd34b327ed6f79176fae3afc
 merged_from:
-- TOGO_M1583_Thermodesulfobium_narugense_Medium
+- thermodesulfobium_narugense_medium

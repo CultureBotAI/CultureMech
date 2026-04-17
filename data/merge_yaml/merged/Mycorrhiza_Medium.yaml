@@ -1,8 +1,9 @@
-name: Mycorrhiza Medium
+id: CultureMech:007965
+name: mycorrhiza_medium
 original_name: Mycorrhiza Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -35,6 +42,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 media_term:
   preferred_term: TOGO Medium M1427
   term:
@@ -56,18 +66,31 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:27:00.986678+00:00'
+- timestamp: '2026-03-13T06:19:52.748751Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007965'
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:11.223910+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mycorrhiza Medium" to "mycorrhiza_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:10.569314+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: TOGO_M1423_1_5_Mycorrhiza_Medium, TOGO_M1427_Mycorrhiza_Medium'
+  notes: 'Sources: 1_5_mycorrhiza_medium, mycorrhiza_medium'
 synonyms:
-- name: 1/5 Mycorrhiza Medium
+- name: 1_5_mycorrhiza_medium
   source: TOGO
   source_id: TOGO:M1423
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- TOGO_M1423_1_5_Mycorrhiza_Medium
-- TOGO_M1427_Mycorrhiza_Medium
+- 1_5_mycorrhiza_medium
+- mycorrhiza_medium
 merge_fingerprint: 12358e5ba5671bffb83d03d4a5a7da47763de526738e327a1a69404329795395

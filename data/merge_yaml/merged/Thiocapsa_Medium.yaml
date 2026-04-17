@@ -1,6 +1,7 @@
-name: Thiocapsa Medium
+id: CultureMech:010065
+name: thiocapsa_medium
 original_name: Thiocapsa Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -28,12 +29,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '0.4'
@@ -48,12 +55,18 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -62,6 +75,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -72,6 +88,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Sodium pyruvate
   concentration:
     value: '3'
@@ -81,6 +100,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Na2S・9H2O(final conc.)
   concentration:
     value: '1'
@@ -92,10 +114,6 @@ ingredients:
     value: '6'
     unit: MILLIMOLAR
   notes: 'Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Micronutrient solution SL7 (see Medium [M535])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M662
   term:
@@ -117,6 +135,35 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 5b5ba11684955ffe248f465fd6256fe960b271273f52a9f9be35fcfb02e8b51b
+- timestamp: '2026-03-09T08:04:45.978784+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:11.080274Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010065'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:02.335147'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:24.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.006788+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thiocapsa Medium" to "thiocapsa_medium" for consistent
+    matching
+solutions:
+- preferred_term: Micronutrient solution SL7 (see Medium [M535])
+  composition: []
+  notes: Cross-reference to Medium M535
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 15f52414105ef3a276596905f2e8938659d12eae1fa3677d2b0fdedacd37487a
 merged_from:
 - TOGO_M662_Thiocapsa_Medium

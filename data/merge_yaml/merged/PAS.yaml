@@ -1,6 +1,7 @@
-name: PAS
+id: CultureMech:000385
+name: pas
 original_name: PAS
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -17,6 +18,9 @@ ingredients:
   concentration:
     value: '24'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -24,6 +28,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 6 H2O
   term:
     id: CHEBI:91243
@@ -31,6 +38,9 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000327
+    label: CaCl2 x 6 H2O
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -38,6 +48,9 @@ ingredients:
   concentration:
     value: '28.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -45,6 +58,9 @@ ingredients:
   concentration:
     value: '27.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -56,6 +72,18 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C72'
+- timestamp: '2026-03-13T06:18:54.884243Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000385'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.893808+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PAS" to "pas" for consistent matching
 merge_fingerprint: 8de619bad2d9f121c8940a2d7fd3396868d4076b5b7631537b4efb5613f837ec
 merged_from:
-- CCAP_C72_PAS
+- pas

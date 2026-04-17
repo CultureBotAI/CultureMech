@@ -1,0 +1,150 @@
+id: CultureMech:003111
+name: r_agar_with_5_nacl
+original_name: R AGAR WITH 5% NaCl
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J76
+  term:
+    id: mediadive.medium:J76
+    label: R AGAR WITH 5% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=76'
+ingredients:
+- preferred_term: Glycerol-asparagine agar
+  term:
+    id: CHEBI:2509
+    label: Glycerol-asparagine agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Glycerol-asparagine agar
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.686289Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J76'
+- timestamp: '2026-03-13T06:19:17.889466Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003111'
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:31.671475+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R AGAR WITH 5% NaCl" to "r_agar_with_5_nacl" for consistent
+    matching
+- timestamp: '2026-04-17T06:30:05.182714+00:00'
+  curator: recipe-merger
+  action: Merged 17 duplicate recipes into canonical record
+  notes: 'Sources: glycerol_asparagine_agar_isp_5_with_10_nacl, inorganic_salts_starch_agar_isp_4_with_10_nacl,
+    inorganic_salts_starch_agar_isp_4_with_15_nacl, inorganic_salts_starch_agar_isp_4_with_5_nacl,
+    r2a_agar_with_1_nacl, r2a_agar_with_2_nacl, r2a_agar_with_3_nacl, r_agar_with_10_nacl,
+    r_agar_with_3_nacl, r_agar_with_5_nacl, brewer_anaerobic_agar_with_2_nacl, marine_agar_2216_with_10_nacl,
+    marine_agar_2216_with_1_nacl, marine_agar_2216_with_3_1_nacl, marine_agar_2216_with_5_nacl,
+    marine_agar_2216_with_8_0_nacl, marine_agar_2216_with_8_nacl'
+kg_microbe_match: mediadive.medium:101
+synonyms:
+- name: glycerol_asparagine_agar_isp_5_with_10_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J410
+  original_category: bacterial
+- name: inorganic_salts_starch_agar_isp_4_with_10_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J351
+  original_category: bacterial
+- name: inorganic_salts_starch_agar_isp_4_with_15_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J863
+  original_category: bacterial
+- name: inorganic_salts_starch_agar_isp_4_with_5_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J1156
+  original_category: bacterial
+- name: r2a_agar_with_1_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J912
+  original_category: bacterial
+- name: r2a_agar_with_2_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J1153
+  original_category: bacterial
+- name: r2a_agar_with_3_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J1280
+  original_category: bacterial
+- name: r_agar_with_10_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J877
+  original_category: bacterial
+- name: r_agar_with_3_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J113
+  original_category: bacterial
+- name: brewer_anaerobic_agar_with_2_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J667
+  original_category: specialized
+- name: marine_agar_2216_with_10_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J733
+  original_category: specialized
+- name: marine_agar_2216_with_1_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J922
+  original_category: specialized
+- name: marine_agar_2216_with_3_1_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J357
+  original_category: specialized
+- name: marine_agar_2216_with_5_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J732
+  original_category: specialized
+- name: marine_agar_2216_with_8_0_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J1015
+  original_category: specialized
+- name: marine_agar_2216_with_8_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J532
+  original_category: specialized
+categories:
+- bacterial
+- specialized
+merged_from:
+- glycerol_asparagine_agar_isp_5_with_10_nacl
+- inorganic_salts_starch_agar_isp_4_with_10_nacl
+- inorganic_salts_starch_agar_isp_4_with_15_nacl
+- inorganic_salts_starch_agar_isp_4_with_5_nacl
+- r2a_agar_with_1_nacl
+- r2a_agar_with_2_nacl
+- r2a_agar_with_3_nacl
+- r_agar_with_10_nacl
+- r_agar_with_3_nacl
+- r_agar_with_5_nacl
+- brewer_anaerobic_agar_with_2_nacl
+- marine_agar_2216_with_10_nacl
+- marine_agar_2216_with_1_nacl
+- marine_agar_2216_with_3_1_nacl
+- marine_agar_2216_with_5_nacl
+- marine_agar_2216_with_8_0_nacl
+- marine_agar_2216_with_8_nacl
+merge_fingerprint: 2a1694ad0eee0fc62ea8d46e0144cf0d6d8c453fe41c87337660ee7005829d62

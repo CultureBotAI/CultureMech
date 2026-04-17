@@ -1,6 +1,7 @@
-name: THERMOLITHOBACTER MEDIUM
+id: CultureMech:001912
+name: thermolithobacter_medium
 original_name: THERMOLITHOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '0.329013'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '0.329013'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '0.329013'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -43,13 +53,20 @@ ingredients:
   concentration:
     value: '0.329013'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.000199402'
+    value: '0.024199402000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000199402, 0.024]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.997009'
@@ -61,6 +78,9 @@ ingredients:
   concentration:
     value: '2.49252'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -68,6 +88,9 @@ ingredients:
   concentration:
     value: '0.329013'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -75,6 +98,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -82,6 +108,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -89,6 +118,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -96,6 +128,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -103,6 +138,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -110,6 +148,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -117,13 +158,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.024'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -131,6 +168,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -138,6 +178,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -145,6 +188,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -152,6 +198,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -159,6 +208,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -166,6 +218,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -173,6 +228,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -180,6 +238,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -187,6 +248,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -194,6 +258,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
@@ -205,6 +272,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -212,6 +282,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
     id: CHEBI:16494
@@ -219,6 +292,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: (DL)-alpha-Lipoic acid
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -245,34 +321,51 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-02-19T08:26:54.130807+00:00'
+- timestamp: '2026-03-13T03:09:15.020709Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:08.358401Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001912'
+- timestamp: '2026-03-17T06:30:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:20.791863+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMOLITHOBACTER MEDIUM" to "thermolithobacter_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:31.796375+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_778a_THERMOLITHOBACTER_MEDIUM, KOMODO_778-1_For_DSM_13639_and_DSM_13655,
-    KOMODO_778-2_For_DSM_16624, KOMODO_778-3_For_DSM_19393, KOMODO_778_THERMOTERRABACTERIUM_medium'
+  notes: 'Sources: KOMODO_778_THERMOTERRABACTERIUM_medium, for_dsm_13639_and_dsm_13655,
+    for_dsm_16624, for_dsm_19393, thermolithobacter_medium'
 synonyms:
-- name: For DSM 13639 and DSM 13655
-  source: KOMODO
-  source_id: komodo.medium:778.1
-  original_category: imported
-- name: For DSM 16624
-  source: KOMODO
-  source_id: komodo.medium:778.2
-  original_category: imported
-- name: For DSM 19393
-  source: KOMODO
-  source_id: komodo.medium:778.3
-  original_category: imported
-- name: THERMOTERRABACTERIUM medium
+- name: thermoterrabacterium_medium
   source: KOMODO
   source_id: komodo.medium:778
-  original_category: imported
+  original_category: bacterial
+- name: for_dsm_13639_and_dsm_13655
+  source: KOMODO
+  source_id: komodo.medium:778.1
+  original_category: bacterial
+- name: for_dsm_16624
+  source: KOMODO
+  source_id: komodo.medium:778.2
+  original_category: bacterial
+- name: for_dsm_19393
+  source: KOMODO
+  source_id: komodo.medium:778.3
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_778a_THERMOLITHOBACTER_MEDIUM
-- KOMODO_778-1_For_DSM_13639_and_DSM_13655
-- KOMODO_778-2_For_DSM_16624
-- KOMODO_778-3_For_DSM_19393
 - KOMODO_778_THERMOTERRABACTERIUM_medium
+- for_dsm_13639_and_dsm_13655
+- for_dsm_16624
+- for_dsm_19393
+- thermolithobacter_medium
 merge_fingerprint: a741a125db65a0945e325e780ecbacf1468384a45b994e303ed4d5185504d051

@@ -1,14 +1,16 @@
-name: MEDIUM R2A FOR DENITRIFYING BACTERIA
-original_name: MEDIUM R2A FOR DENITRIFYING BACTERIA
-category: imported
+id: CultureMech:006621
+name: medium_r2a_for_denitrifying_bacteria
+original_name: medium R2A FOR DENITRIFYING BACTERIA
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
-  preferred_term: DSMZ Medium 830b
+  preferred_term: KOMODO Medium 830b
   term:
-    id: mediadive.medium:830b
-    label: MEDIUM R2A FOR DENITRIFYING BACTERIA
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium830b.pdf'
+    id: komodo.medium:830b
+    label: medium R2A FOR DENITRIFYING BACTERIA
+notes: 'Source: KOMODO ModelSEED | ID: 830b | DSMZ Medium: 830b (mediadive.medium:830b)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -25,6 +27,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -32,6 +37,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -39,6 +47,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Na-pyruvate
   term:
     id: CHEBI:50144
@@ -46,6 +57,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na-pyruvate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -53,6 +67,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -60,6 +77,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -67,6 +87,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -74,6 +97,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -81,6 +107,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -88,6 +117,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -95,6 +127,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -102,6 +137,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -109,6 +147,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -116,6 +157,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -123,6 +167,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -130,345 +177,318 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Prepare liquid medium under anaerobic conditions (N2).
-- step_number: 2
-  action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.426268Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 830b'
-- timestamp: '2026-01-28T19:48:38.898200Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:55.442317+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 830b'
+- timestamp: '2026-02-03T11:19:12.843628'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 830
+- timestamp: '2026-03-13T06:19:42.428905Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006621'
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:00.050096+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "medium R2A FOR DENITRIFYING BACTERIA" to "medium_r2a_for_denitrifying_bacteria"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:33.336805+00:00'
   curator: recipe-merger
-  action: Merged 58 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_830b_MEDIUM_R2A_FOR_DENITRIFYING_BACTERIA, KOMODO_830-13665_MEDIUM_830_MODIFIED_FOR_DSM_13665,
-    KOMODO_830-14773_MEDIUM_830_MODIFIED_FOR_DSM_14773, KOMODO_830-14805_MEDIUM_830_MODIFIED_FOR_DSM_14805,
-    KOMODO_830-15671_MEDIUM_830_MODIFIED_FOR_DSM_15671, KOMODO_830-16968_MEDIUM_830_MODIFIED_FOR_DSM_16968,
-    KOMODO_830-16969_MEDIUM_830_MODIFIED_FOR_DSM_16969, KOMODO_830-17871_MEDIUM_830_MODIFIED_FOR_DSM_17871,
-    KOMODO_830-17997_MEDIUM_830_MODIFIED_FOR_DSM_17997, KOMODO_830-17998_MEDIUM_830_MODIFIED_FOR_DSM_17998,
-    KOMODO_830-18042_MEDIUM_830_MODIFIED_FOR_DSM_18042, KOMODO_830-18043_MEDIUM_830_MODIFIED_FOR_DSM_18043,
-    KOMODO_830-18045_MEDIUM_830_MODIFIED_FOR_DSM_18045, KOMODO_830-18135_MEDIUM_830_MODIFIED_FOR_DSM_18135,
-    KOMODO_830-18203_MEDIUM_830_MODIFIED_FOR_DSM_18203, KOMODO_830-18221_MEDIUM_830_MODIFIED_FOR_DSM_18221,
-    KOMODO_830-18603_MEDIUM_830_MODIFIED_FOR_DSM_18603, KOMODO_830-18704_MEDIUM_830_MODIFIED_FOR_DSM_18704,
-    KOMODO_830-18758_MEDIUM_830_MODIFIED_FOR_DSM_18758, KOMODO_830-19096_MEDIUM_830_MODIFIED_FOR_DSM_19096,
-    KOMODO_830-19249_MEDIUM_830_MODIFIED_FOR_DSM_19249, KOMODO_830-19250_MEDIUM_830_MODIFIED_FOR_DSM_19250,
-    KOMODO_830-19309_MEDIUM_830_MODIFIED_FOR_DSM_19309, KOMODO_830-19717_MEDIUM_830_MODIFIED_FOR_DSM_19717,
-    KOMODO_830-19724_MEDIUM_830_MODIFIED_FOR_DSM_19724, KOMODO_830-1_For_DSM_22224,
-    KOMODO_830-21036_MEDIUM_830_MODIFIED_FOR_DSM_21036, KOMODO_830-21240_MEDIUM_830_MODIFIED_FOR_DSM_21240,
-    KOMODO_830-21316_MEDIUM_830_MODIFIED_FOR_DSM_21316, KOMODO_830-21346_MEDIUM_830_MODIFIED_FOR_DSM_21346,
-    KOMODO_830-21362_MEDIUM_830_MODIFIED_FOR_DSM_21362, KOMODO_830-21490_MEDIUM_830_MODIFIED_FOR_DSM_21490,
-    KOMODO_830-21568_MEDIUM_830_MODIFIED_FOR_DSM_21568, KOMODO_830-21670_MEDIUM_830_MODIFIED_FOR_DSM_21670,
-    KOMODO_830-21789_MEDIUM_830_MODIFIED_FOR_DSM_21789, KOMODO_830-21942_MEDIUM_830_MODIFIED_FOR_DSM_21942,
-    KOMODO_830-21994_MEDIUM_830_MODIFIED_FOR_DSM_21994, KOMODO_830-22342_MEDIUM_830_MODIFIED_FOR_DSM_22342,
-    KOMODO_830-22349_MEDIUM_830_MODIFIED_FOR_DSM_22349, KOMODO_830-22405_MEDIUM_830_MODIFIED_FOR_DSM_22405,
-    KOMODO_830-22464_MEDIUM_830_MODIFIED_FOR_DSM_22464, KOMODO_830-22489-replace-Glucose-with-fructose_MEDIUM_830_MODIFIED_FOR_DSM_22489_replace_Glucose_with_fructose,
-    KOMODO_830-22489_MEDIUM_830_MODIFIED_FOR_DSM_22489, KOMODO_830-22869_MEDIUM_830_MODIFIED_FOR_DSM_22869,
-    KOMODO_830-23119_MEDIUM_830_MODIFIED_FOR_DSM_23119, KOMODO_830-23228_MEDIUM_830_MODIFIED_FOR_DSM_23228,
-    KOMODO_830-23491_MEDIUM_830_MODIFIED_FOR_DSM_23491, KOMODO_830-23630_MEDIUM_830_MODIFIED_FOR_DSM_23630,
-    KOMODO_830-23886_MEDIUM_830_MODIFIED_FOR_DSM_23886, KOMODO_830-23906_MEDIUM_830_MODIFIED_FOR_DSM_23906,
-    KOMODO_830-24448_MEDIUM_830_MODIFIED_FOR_DSM_24448, KOMODO_830-25262_MEDIUM_830_MODIFIED_FOR_DSM_25262,
-    KOMODO_830_R2A_medium, KOMODO_830a-15637_MEDIUM_830a_MODIFIED_FOR_DSM_15637, KOMODO_830a_medium_R2A_MODIFIED,
-    KOMODO_830b_medium_R2A_FOR_DENITRIFYING_BACTERIA, KOMODO_830c-13663_MEDIUM_830c_MODIFIED_FOR_DSM_13663,
-    KOMODO_830c-25221_MEDIUM_830c_MODIFIED_FOR_DSM_25221'
+  action: Merged 54 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_830_R2A_medium, KOMODO_830a_medium_R2A_MODIFIED, KOMODO_830b_medium_R2A_FOR_DENITRIFYING_BACTERIA,
+    for_dsm_22224, medium_830_modified_for_dsm_13665, medium_830_modified_for_dsm_14773,
+    medium_830_modified_for_dsm_14805, medium_830_modified_for_dsm_15671, medium_830_modified_for_dsm_16968,
+    medium_830_modified_for_dsm_16969, medium_830_modified_for_dsm_17871, medium_830_modified_for_dsm_18042,
+    medium_830_modified_for_dsm_18043, medium_830_modified_for_dsm_18045, medium_830_modified_for_dsm_18135,
+    medium_830_modified_for_dsm_18203, medium_830_modified_for_dsm_18221, medium_830_modified_for_dsm_18603,
+    medium_830_modified_for_dsm_18704, medium_830_modified_for_dsm_18758, medium_830_modified_for_dsm_19096,
+    medium_830_modified_for_dsm_19249, medium_830_modified_for_dsm_19250, medium_830_modified_for_dsm_19309,
+    medium_830_modified_for_dsm_19717, medium_830_modified_for_dsm_19724, medium_830_modified_for_dsm_21036,
+    medium_830_modified_for_dsm_21240, medium_830_modified_for_dsm_21316, medium_830_modified_for_dsm_21346,
+    medium_830_modified_for_dsm_21362, medium_830_modified_for_dsm_21490, medium_830_modified_for_dsm_21568,
+    medium_830_modified_for_dsm_21789, medium_830_modified_for_dsm_21942, medium_830_modified_for_dsm_21994,
+    medium_830_modified_for_dsm_22342, medium_830_modified_for_dsm_22349, medium_830_modified_for_dsm_22405,
+    medium_830_modified_for_dsm_22464, medium_830_modified_for_dsm_22489, medium_830_modified_for_dsm_22489_replace_glucose_with_fructose,
+    medium_830_modified_for_dsm_22869, medium_830_modified_for_dsm_23119, medium_830_modified_for_dsm_23228,
+    medium_830_modified_for_dsm_23491, medium_830_modified_for_dsm_23886, medium_830_modified_for_dsm_23906,
+    medium_830_modified_for_dsm_24448, medium_830_modified_for_dsm_25262, medium_830a_modified_for_dsm_15637,
+    medium_830c_modified_for_dsm_13663, medium_830c_modified_for_dsm_25221, medium_r2a_for_denitrifying_bacteria'
 synonyms:
-- name: MEDIUM 830 MODIFIED FOR DSM 13665
-  source: KOMODO
-  source_id: komodo.medium:830_13665
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 14773
-  source: KOMODO
-  source_id: komodo.medium:830_14773
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 14805
-  source: KOMODO
-  source_id: komodo.medium:830_14805
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 15671
-  source: KOMODO
-  source_id: komodo.medium:830_15671
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 16968
-  source: KOMODO
-  source_id: komodo.medium:830_16968
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 16969
-  source: KOMODO
-  source_id: komodo.medium:830_16969
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 17871
-  source: KOMODO
-  source_id: komodo.medium:830_17871
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 17997
-  source: KOMODO
-  source_id: komodo.medium:830_17997
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 17998
-  source: KOMODO
-  source_id: komodo.medium:830_17998
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 18042
-  source: KOMODO
-  source_id: komodo.medium:830_18042
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 18043
-  source: KOMODO
-  source_id: komodo.medium:830_18043
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 18045
-  source: KOMODO
-  source_id: komodo.medium:830_18045
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 18135
-  source: KOMODO
-  source_id: komodo.medium:830_18135
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 18203
-  source: KOMODO
-  source_id: komodo.medium:830_18203
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 18221
-  source: KOMODO
-  source_id: komodo.medium:830_18221
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 18603
-  source: KOMODO
-  source_id: komodo.medium:830_18603
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 18704
-  source: KOMODO
-  source_id: komodo.medium:830_18704
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 18758
-  source: KOMODO
-  source_id: komodo.medium:830_18758
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 19096
-  source: KOMODO
-  source_id: komodo.medium:830_19096
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 19249
-  source: KOMODO
-  source_id: komodo.medium:830_19249
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 19250
-  source: KOMODO
-  source_id: komodo.medium:830_19250
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 19309
-  source: KOMODO
-  source_id: komodo.medium:830_19309
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 19717
-  source: KOMODO
-  source_id: komodo.medium:830_19717
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 19724
-  source: KOMODO
-  source_id: komodo.medium:830_19724
-  original_category: imported
-- name: For DSM 22224
-  source: KOMODO
-  source_id: komodo.medium:830.1
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 21036
-  source: KOMODO
-  source_id: komodo.medium:830_21036
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 21240
-  source: KOMODO
-  source_id: komodo.medium:830_21240
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 21316
-  source: KOMODO
-  source_id: komodo.medium:830_21316
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 21346
-  source: KOMODO
-  source_id: komodo.medium:830_21346
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 21362
-  source: KOMODO
-  source_id: komodo.medium:830_21362
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 21490
-  source: KOMODO
-  source_id: komodo.medium:830_21490
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 21568
-  source: KOMODO
-  source_id: komodo.medium:830_21568
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 21670
-  source: KOMODO
-  source_id: komodo.medium:830_21670
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 21789
-  source: KOMODO
-  source_id: komodo.medium:830_21789
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 21942
-  source: KOMODO
-  source_id: komodo.medium:830_21942
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 21994
-  source: KOMODO
-  source_id: komodo.medium:830_21994
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 22342
-  source: KOMODO
-  source_id: komodo.medium:830_22342
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 22349
-  source: KOMODO
-  source_id: komodo.medium:830_22349
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 22405
-  source: KOMODO
-  source_id: komodo.medium:830_22405
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 22464
-  source: KOMODO
-  source_id: komodo.medium:830_22464
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 22489_replace_Glucose_with_fructose
-  source: KOMODO
-  source_id: komodo.medium:830_22489_replace_Glucose_with_fructose
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 22489
-  source: KOMODO
-  source_id: komodo.medium:830_22489
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 22869
-  source: KOMODO
-  source_id: komodo.medium:830_22869
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 23119
-  source: KOMODO
-  source_id: komodo.medium:830_23119
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 23228
-  source: KOMODO
-  source_id: komodo.medium:830_23228
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 23491
-  source: KOMODO
-  source_id: komodo.medium:830_23491
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 23630
-  source: KOMODO
-  source_id: komodo.medium:830_23630
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 23886
-  source: KOMODO
-  source_id: komodo.medium:830_23886
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 23906
-  source: KOMODO
-  source_id: komodo.medium:830_23906
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 24448
-  source: KOMODO
-  source_id: komodo.medium:830_24448
-  original_category: imported
-- name: MEDIUM 830 MODIFIED FOR DSM 25262
-  source: KOMODO
-  source_id: komodo.medium:830_25262
-  original_category: imported
-- name: R2A medium
+- name: r2a_medium
   source: KOMODO
   source_id: komodo.medium:830
-  original_category: imported
-- name: MEDIUM 830a MODIFIED FOR DSM 15637
-  source: KOMODO
-  source_id: komodo.medium:830a_15637
-  original_category: imported
-- name: medium R2A MODIFIED
+  original_category: bacterial
+- name: medium_r2a_modified
   source: KOMODO
   source_id: komodo.medium:830a
-  original_category: imported
-- name: medium R2A FOR DENITRIFYING BACTERIA
+  original_category: bacterial
+- name: for_dsm_22224
   source: KOMODO
-  source_id: komodo.medium:830b
-  original_category: imported
-- name: MEDIUM 830c MODIFIED FOR DSM 13663
+  source_id: komodo.medium:830.1
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_13665
+  source: KOMODO
+  source_id: komodo.medium:830_13665
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_14773
+  source: KOMODO
+  source_id: komodo.medium:830_14773
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_14805
+  source: KOMODO
+  source_id: komodo.medium:830_14805
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_15671
+  source: KOMODO
+  source_id: komodo.medium:830_15671
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_16968
+  source: KOMODO
+  source_id: komodo.medium:830_16968
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_16969
+  source: KOMODO
+  source_id: komodo.medium:830_16969
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_17871
+  source: KOMODO
+  source_id: komodo.medium:830_17871
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_18042
+  source: KOMODO
+  source_id: komodo.medium:830_18042
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_18043
+  source: KOMODO
+  source_id: komodo.medium:830_18043
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_18045
+  source: KOMODO
+  source_id: komodo.medium:830_18045
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_18135
+  source: KOMODO
+  source_id: komodo.medium:830_18135
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_18203
+  source: KOMODO
+  source_id: komodo.medium:830_18203
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_18221
+  source: KOMODO
+  source_id: komodo.medium:830_18221
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_18603
+  source: KOMODO
+  source_id: komodo.medium:830_18603
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_18704
+  source: KOMODO
+  source_id: komodo.medium:830_18704
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_18758
+  source: KOMODO
+  source_id: komodo.medium:830_18758
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_19096
+  source: KOMODO
+  source_id: komodo.medium:830_19096
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_19249
+  source: KOMODO
+  source_id: komodo.medium:830_19249
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_19250
+  source: KOMODO
+  source_id: komodo.medium:830_19250
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_19309
+  source: KOMODO
+  source_id: komodo.medium:830_19309
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_19717
+  source: KOMODO
+  source_id: komodo.medium:830_19717
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_19724
+  source: KOMODO
+  source_id: komodo.medium:830_19724
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_21036
+  source: KOMODO
+  source_id: komodo.medium:830_21036
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_21240
+  source: KOMODO
+  source_id: komodo.medium:830_21240
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_21316
+  source: KOMODO
+  source_id: komodo.medium:830_21316
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_21346
+  source: KOMODO
+  source_id: komodo.medium:830_21346
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_21362
+  source: KOMODO
+  source_id: komodo.medium:830_21362
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_21490
+  source: KOMODO
+  source_id: komodo.medium:830_21490
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_21568
+  source: KOMODO
+  source_id: komodo.medium:830_21568
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_21789
+  source: KOMODO
+  source_id: komodo.medium:830_21789
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_21942
+  source: KOMODO
+  source_id: komodo.medium:830_21942
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_21994
+  source: KOMODO
+  source_id: komodo.medium:830_21994
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_22342
+  source: KOMODO
+  source_id: komodo.medium:830_22342
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_22349
+  source: KOMODO
+  source_id: komodo.medium:830_22349
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_22405
+  source: KOMODO
+  source_id: komodo.medium:830_22405
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_22464
+  source: KOMODO
+  source_id: komodo.medium:830_22464
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_22489
+  source: KOMODO
+  source_id: komodo.medium:830_22489
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_22489_replace_glucose_with_fructose
+  source: KOMODO
+  source_id: komodo.medium:830_22489_replace_Glucose_with_fructose
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_22869
+  source: KOMODO
+  source_id: komodo.medium:830_22869
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_23119
+  source: KOMODO
+  source_id: komodo.medium:830_23119
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_23228
+  source: KOMODO
+  source_id: komodo.medium:830_23228
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_23491
+  source: KOMODO
+  source_id: komodo.medium:830_23491
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_23886
+  source: KOMODO
+  source_id: komodo.medium:830_23886
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_23906
+  source: KOMODO
+  source_id: komodo.medium:830_23906
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_24448
+  source: KOMODO
+  source_id: komodo.medium:830_24448
+  original_category: bacterial
+- name: medium_830_modified_for_dsm_25262
+  source: KOMODO
+  source_id: komodo.medium:830_25262
+  original_category: bacterial
+- name: medium_830a_modified_for_dsm_15637
+  source: KOMODO
+  source_id: komodo.medium:830a_15637
+  original_category: bacterial
+- name: medium_830c_modified_for_dsm_13663
   source: KOMODO
   source_id: komodo.medium:830c_13663
-  original_category: imported
-- name: MEDIUM 830c MODIFIED FOR DSM 25221
+  original_category: bacterial
+- name: medium_830c_modified_for_dsm_25221
   source: KOMODO
   source_id: komodo.medium:830c_25221
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_830b_MEDIUM_R2A_FOR_DENITRIFYING_BACTERIA
-- KOMODO_830-13665_MEDIUM_830_MODIFIED_FOR_DSM_13665
-- KOMODO_830-14773_MEDIUM_830_MODIFIED_FOR_DSM_14773
-- KOMODO_830-14805_MEDIUM_830_MODIFIED_FOR_DSM_14805
-- KOMODO_830-15671_MEDIUM_830_MODIFIED_FOR_DSM_15671
-- KOMODO_830-16968_MEDIUM_830_MODIFIED_FOR_DSM_16968
-- KOMODO_830-16969_MEDIUM_830_MODIFIED_FOR_DSM_16969
-- KOMODO_830-17871_MEDIUM_830_MODIFIED_FOR_DSM_17871
-- KOMODO_830-17997_MEDIUM_830_MODIFIED_FOR_DSM_17997
-- KOMODO_830-17998_MEDIUM_830_MODIFIED_FOR_DSM_17998
-- KOMODO_830-18042_MEDIUM_830_MODIFIED_FOR_DSM_18042
-- KOMODO_830-18043_MEDIUM_830_MODIFIED_FOR_DSM_18043
-- KOMODO_830-18045_MEDIUM_830_MODIFIED_FOR_DSM_18045
-- KOMODO_830-18135_MEDIUM_830_MODIFIED_FOR_DSM_18135
-- KOMODO_830-18203_MEDIUM_830_MODIFIED_FOR_DSM_18203
-- KOMODO_830-18221_MEDIUM_830_MODIFIED_FOR_DSM_18221
-- KOMODO_830-18603_MEDIUM_830_MODIFIED_FOR_DSM_18603
-- KOMODO_830-18704_MEDIUM_830_MODIFIED_FOR_DSM_18704
-- KOMODO_830-18758_MEDIUM_830_MODIFIED_FOR_DSM_18758
-- KOMODO_830-19096_MEDIUM_830_MODIFIED_FOR_DSM_19096
-- KOMODO_830-19249_MEDIUM_830_MODIFIED_FOR_DSM_19249
-- KOMODO_830-19250_MEDIUM_830_MODIFIED_FOR_DSM_19250
-- KOMODO_830-19309_MEDIUM_830_MODIFIED_FOR_DSM_19309
-- KOMODO_830-19717_MEDIUM_830_MODIFIED_FOR_DSM_19717
-- KOMODO_830-19724_MEDIUM_830_MODIFIED_FOR_DSM_19724
-- KOMODO_830-1_For_DSM_22224
-- KOMODO_830-21036_MEDIUM_830_MODIFIED_FOR_DSM_21036
-- KOMODO_830-21240_MEDIUM_830_MODIFIED_FOR_DSM_21240
-- KOMODO_830-21316_MEDIUM_830_MODIFIED_FOR_DSM_21316
-- KOMODO_830-21346_MEDIUM_830_MODIFIED_FOR_DSM_21346
-- KOMODO_830-21362_MEDIUM_830_MODIFIED_FOR_DSM_21362
-- KOMODO_830-21490_MEDIUM_830_MODIFIED_FOR_DSM_21490
-- KOMODO_830-21568_MEDIUM_830_MODIFIED_FOR_DSM_21568
-- KOMODO_830-21670_MEDIUM_830_MODIFIED_FOR_DSM_21670
-- KOMODO_830-21789_MEDIUM_830_MODIFIED_FOR_DSM_21789
-- KOMODO_830-21942_MEDIUM_830_MODIFIED_FOR_DSM_21942
-- KOMODO_830-21994_MEDIUM_830_MODIFIED_FOR_DSM_21994
-- KOMODO_830-22342_MEDIUM_830_MODIFIED_FOR_DSM_22342
-- KOMODO_830-22349_MEDIUM_830_MODIFIED_FOR_DSM_22349
-- KOMODO_830-22405_MEDIUM_830_MODIFIED_FOR_DSM_22405
-- KOMODO_830-22464_MEDIUM_830_MODIFIED_FOR_DSM_22464
-- KOMODO_830-22489-replace-Glucose-with-fructose_MEDIUM_830_MODIFIED_FOR_DSM_22489_replace_Glucose_with_fructose
-- KOMODO_830-22489_MEDIUM_830_MODIFIED_FOR_DSM_22489
-- KOMODO_830-22869_MEDIUM_830_MODIFIED_FOR_DSM_22869
-- KOMODO_830-23119_MEDIUM_830_MODIFIED_FOR_DSM_23119
-- KOMODO_830-23228_MEDIUM_830_MODIFIED_FOR_DSM_23228
-- KOMODO_830-23491_MEDIUM_830_MODIFIED_FOR_DSM_23491
-- KOMODO_830-23630_MEDIUM_830_MODIFIED_FOR_DSM_23630
-- KOMODO_830-23886_MEDIUM_830_MODIFIED_FOR_DSM_23886
-- KOMODO_830-23906_MEDIUM_830_MODIFIED_FOR_DSM_23906
-- KOMODO_830-24448_MEDIUM_830_MODIFIED_FOR_DSM_24448
-- KOMODO_830-25262_MEDIUM_830_MODIFIED_FOR_DSM_25262
 - KOMODO_830_R2A_medium
-- KOMODO_830a-15637_MEDIUM_830a_MODIFIED_FOR_DSM_15637
 - KOMODO_830a_medium_R2A_MODIFIED
 - KOMODO_830b_medium_R2A_FOR_DENITRIFYING_BACTERIA
-- KOMODO_830c-13663_MEDIUM_830c_MODIFIED_FOR_DSM_13663
-- KOMODO_830c-25221_MEDIUM_830c_MODIFIED_FOR_DSM_25221
+- for_dsm_22224
+- medium_830_modified_for_dsm_13665
+- medium_830_modified_for_dsm_14773
+- medium_830_modified_for_dsm_14805
+- medium_830_modified_for_dsm_15671
+- medium_830_modified_for_dsm_16968
+- medium_830_modified_for_dsm_16969
+- medium_830_modified_for_dsm_17871
+- medium_830_modified_for_dsm_18042
+- medium_830_modified_for_dsm_18043
+- medium_830_modified_for_dsm_18045
+- medium_830_modified_for_dsm_18135
+- medium_830_modified_for_dsm_18203
+- medium_830_modified_for_dsm_18221
+- medium_830_modified_for_dsm_18603
+- medium_830_modified_for_dsm_18704
+- medium_830_modified_for_dsm_18758
+- medium_830_modified_for_dsm_19096
+- medium_830_modified_for_dsm_19249
+- medium_830_modified_for_dsm_19250
+- medium_830_modified_for_dsm_19309
+- medium_830_modified_for_dsm_19717
+- medium_830_modified_for_dsm_19724
+- medium_830_modified_for_dsm_21036
+- medium_830_modified_for_dsm_21240
+- medium_830_modified_for_dsm_21316
+- medium_830_modified_for_dsm_21346
+- medium_830_modified_for_dsm_21362
+- medium_830_modified_for_dsm_21490
+- medium_830_modified_for_dsm_21568
+- medium_830_modified_for_dsm_21789
+- medium_830_modified_for_dsm_21942
+- medium_830_modified_for_dsm_21994
+- medium_830_modified_for_dsm_22342
+- medium_830_modified_for_dsm_22349
+- medium_830_modified_for_dsm_22405
+- medium_830_modified_for_dsm_22464
+- medium_830_modified_for_dsm_22489
+- medium_830_modified_for_dsm_22489_replace_glucose_with_fructose
+- medium_830_modified_for_dsm_22869
+- medium_830_modified_for_dsm_23119
+- medium_830_modified_for_dsm_23228
+- medium_830_modified_for_dsm_23491
+- medium_830_modified_for_dsm_23886
+- medium_830_modified_for_dsm_23906
+- medium_830_modified_for_dsm_24448
+- medium_830_modified_for_dsm_25262
+- medium_830a_modified_for_dsm_15637
+- medium_830c_modified_for_dsm_13663
+- medium_830c_modified_for_dsm_25221
+- medium_r2a_for_denitrifying_bacteria
 merge_fingerprint: 4d4d8ce5c9882e7b5b182fd0087ce0adc69e6ded9cbd24a88653d26d4b3eb0fa

@@ -1,8 +1,9 @@
-name: T5 MEDIUM modified
+id: CultureMech:001201
+name: t5_medium_modified
 original_name: T5 MEDIUM modified
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1722
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -41,6 +48,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: Optional ingredient (for solid medium)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -55,6 +65,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1722'
+- timestamp: '2026-03-13T06:19:02.185608Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001201'
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:13.991644+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "T5 MEDIUM modified" to "t5_medium_modified" for consistent
+    matching
 merge_fingerprint: c0e1a37516729c4bfeae97a03e46029adfab3f962fe4716002189b5aa64ee543
 merged_from:
-- DSMZ_1722_T5_MEDIUM_modified
+- t5_medium_modified

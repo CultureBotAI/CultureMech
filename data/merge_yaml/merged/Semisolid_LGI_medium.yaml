@@ -1,8 +1,9 @@
-name: Semisolid LGI medium
+id: CultureMech:009386
+name: semisolid_lgi_medium
 original_name: Semisolid LGI medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: 0.2NKOH
   concentration:
@@ -18,18 +19,27 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: CaCl2 · 2H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.6'
@@ -38,6 +48,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -48,12 +61,18 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Na2MoO4 · 2H2O
   concentration:
     value: '0.002'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: FeCl3·6H2O
   concentration:
     value: '0.01'
@@ -63,6 +82,9 @@ ingredients:
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3·6H2O
 - preferred_term: agar
   concentration:
     value: '1.8'
@@ -70,6 +92,9 @@ ingredients:
   notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
     label: agar
 - preferred_term: bromothymol blue
   concentration:
@@ -79,6 +104,9 @@ ingredients:
   term:
     id: CHEBI:86155
     label: Bromothymol blue
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001021
+    label: bromothymol blue
 - preferred_term: crystallized cane sugar
   concentration:
     value: '100'
@@ -101,6 +129,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 2e67aee7fe768a30fafefbe3ec39c1390601d43880121591231c090f1841a292
+- timestamp: '2026-03-13T06:20:05.990292Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009386'
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:24.922023+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Semisolid LGI medium" to "semisolid_lgi_medium" for
+    consistent matching
+merge_fingerprint: a1af77588fb3fb5665f78e098f49cf5e0670531c560322445bc7fe3935030c15
 merged_from:
-- TOGO_M2844_Semisolid_LGI_medium
+- semisolid_lgi_medium

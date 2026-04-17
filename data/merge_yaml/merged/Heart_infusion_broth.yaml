@@ -1,6 +1,7 @@
-name: Heart infusion broth
+id: CultureMech:008803
+name: heart_infusion_broth
 original_name: Heart infusion broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -22,6 +23,15 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2213'
+- timestamp: '2026-03-13T06:20:00.373999Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008803'
+- timestamp: '2026-03-17T19:46:19.047350+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Heart infusion broth" to "heart_infusion_broth" for
+    consistent matching
 merge_fingerprint: 4ef3925a2ab612bf6fb8da2aeaf382877f081524e009d5a2827f7cbfa94f9f82
 merged_from:
-- TOGO_M2213_Heart_infusion_broth
+- heart_infusion_broth

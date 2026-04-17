@@ -1,158 +1,326 @@
-name: RUMINOCOCCUS ALBUS MEDIUM
-original_name: RUMINOCOCCUS ALBUS MEDIUM
-category: imported
+id: CultureMech:010100
+name: ruminococcus_albus_medium
+original_name: Ruminococcus Albus Medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 7.0
-media_term:
-  preferred_term: DSMZ Medium 436
-  term:
-    id: mediadive.medium:436
-    label: RUMINOCOCCUS ALBUS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium436.pdf'
 ingredients:
-- preferred_term: Tryptone
+- preferred_term: Distilled water
   concentration:
-    value: '5'
+    value: '1190.0'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Glucose
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 4 duplicates: 920.0, 100.0, 100.0, 70.0]'
   term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '3'
-    unit: G_PER_L
-- preferred_term: Cellobiose
-  term:
-    id: CHEBI:17057
-    label: Cellobiose
-  concentration:
-    value: '2'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
+    component, Simple component'
   term:
     id: CHEBI:8806
     label: Resazurin
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Na2CO3
-  term:
-    id: CHEBI:29377
-    label: Na2CO3
   concentration:
     value: '4'
     unit: G_PER_L
-- preferred_term: L-Cysteine HCl x H2O
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
+- preferred_term: Cellobiose
   concentration:
-    value: '0.5'
+    value: '2'
     unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:17057
+    label: cellobiose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
+- preferred_term: Glucose
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: L--cysteine・HCl・H2O
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+- preferred_term: fatty acid mixture
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CO2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: K2HPO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
     label: K2HPO4
+- preferred_term: MgSO4・7H2O
   concentration:
-    value: '6'
+    value: '0.25'
     unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
+- preferred_term: NaCl
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-  concentration:
-    value: '6'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
     label: (NH4)2SO4
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '12'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 7 H2O
-  term:
-    id: CHEBI:3312
-    label: CaCl2 x 7 H2O
-  concentration:
-    value: '1.6'
-    unit: G_PER_L
-- preferred_term: Isobutyric acid
-  term:
-    id: CHEBI:16135
-    label: Isobutyric acid
+- preferred_term: Isovaleric acid
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: Isovaleric acid
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:28484
+    label: isovaleric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000305
     label: Isovaleric acid
+- preferred_term: Isobutyric acid
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: 2-Methylbutyric acid
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:37070
-    label: 2-Methylbutyric acid
+    id: CHEBI:16135
+    label: isobutyric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000286
+    label: Isobutyric acid
+- preferred_term: Tryptone
+  term:
+    id: FOODON:03316428
+    label: tryptone
   concentration:
-    value: '10'
+    value: '10.0'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: HEAT
-  description: 'Boil and cool under CO2. Under a gentle stream of CO2 add:'
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 7.0, distribute under N2 into appropriate vessels and
-    sterilize.
-- step_number: 3
-  action: HEAT
-  description: Inoculate under CO2 and incubate at 37°C.
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: pancreatic digest of casein
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002960
+    label: yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+media_term:
+  preferred_term: TOGO Medium M694
+  term:
+    id: TOGO:M694
+    label: Ruminococcus Albus Medium
+notes: 'Source: https://togomedium.org/medium/M694
+
+  Original source: JCM - JCM_M675
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=675
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.129698Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 436'
-- timestamp: '2026-02-19T08:26:48.159620+00:00'
-  curator: recipe-merger
-  action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_436_RUMINOCOCCUS_ALBUS_MEDIUM, KOMODO_436-18848_MEDIUM_436_MODIFIED_FOR_DSM_18848,
-    KOMODO_436_RUMINOCOCCUS_ALBUS_medium'
-synonyms:
-- name: MEDIUM 436 MODIFIED FOR DSM 18848
-  source: KOMODO
-  source_id: komodo.medium:436_18848
-  original_category: imported
-- name: RUMINOCOCCUS ALBUS medium
-  source: KOMODO
-  source_id: komodo.medium:436
-  original_category: imported
-categories:
-- imported
+- timestamp: '2026-01-27T06:35:55.543954Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M694'
+- timestamp: '2026-01-28T19:48:38.458206Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.084612'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: N2'
+- timestamp: '2026-03-09T08:05:04.338557+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:36.297550Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:11.306210Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010100'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:02.503831'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.235282+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Ruminococcus Albus Medium" to "ruminococcus_albus_medium"
+    for consistent matching
+solutions:
+- preferred_term: Mineral solution 1 (see below)
+  composition: []
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Mineral solution 2 (see below)
+  composition: []
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: a570a74d6b9bc7be34af85002d92c3e2dfd2722ac1e3b92189232cc61d1dedc8
 merged_from:
-- DSMZ_436_RUMINOCOCCUS_ALBUS_MEDIUM
-- KOMODO_436-18848_MEDIUM_436_MODIFIED_FOR_DSM_18848
-- KOMODO_436_RUMINOCOCCUS_ALBUS_medium
-merge_fingerprint: 2b4aca44777e7cce63a5b927add48d1712ce68d603a9cc18da1bf3093f48f38a
+- TOGO_M694_Ruminococcus_Albus_Medium

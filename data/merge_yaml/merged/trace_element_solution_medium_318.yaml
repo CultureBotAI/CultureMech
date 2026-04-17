@@ -1,0 +1,138 @@
+id: CultureMech:004859
+name: trace_element_solution_medium_318
+original_name: Trace element solution (medium 318)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.5
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3073 | DSMZ Medium: 3073 (mediadive.medium:3073)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 3073
+  term:
+    id: komodo.medium:3073
+    label: Trace element solution (medium 318)
+ingredients:
+- preferred_term: KOH
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
+  term:
+    id: CHEBI:32035
+    label: ''
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3073'
+- timestamp: '2026-03-13T06:19:28.913537Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004859'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:34.432996'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-17T06:30:27.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:44.405938+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Trace element solution (medium 318)" to "trace_element_solution_medium_318"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:21.684298+00:00'
+  curator: recipe-merger
+  action: Merged 16 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_3073_Trace_element_solution_medium_318, chitin_stock_solution_medium_766,
+    mineral_salt_solution_medium_621, mineral_solution_1_medium_1033, trace_element_solution_630,
+    trace_element_solution_medium_1131, trace_element_solution_medium_1263, trace_element_solution_medium_141,
+    trace_element_solution_medium_144, trace_element_solution_medium_315, trace_element_solution_medium_318,
+    trace_element_solution_medium_574, trace_element_solution_medium_663, trace_element_solution_medium_69,
+    trace_elements_solution_medium_1019, zeikus_trace_elements_solution_medium_1343'
+synonyms:
+- name: chitin_stock_solution_medium_766
+  source: KOMODO
+  source_id: komodo.medium:2003
+  original_category: bacterial
+- name: mineral_salt_solution_medium_621
+  source: KOMODO
+  source_id: komodo.medium:3029
+  original_category: bacterial
+- name: mineral_solution_1_medium_1033
+  source: KOMODO
+  source_id: komodo.medium:3034
+  original_category: bacterial
+- name: trace_element_solution_630
+  source: KOMODO
+  source_id: komodo.medium:3061
+  original_category: bacterial
+- name: trace_element_solution_medium_1131
+  source: KOMODO
+  source_id: komodo.medium:2030
+  original_category: bacterial
+- name: trace_element_solution_medium_1263
+  source: KOMODO
+  source_id: komodo.medium:3067
+  original_category: bacterial
+- name: trace_element_solution_medium_141
+  source: KOMODO
+  source_id: komodo.medium:2039
+  original_category: bacterial
+- name: trace_element_solution_medium_144
+  source: KOMODO
+  source_id: komodo.medium:3070
+  original_category: bacterial
+- name: trace_element_solution_medium_315
+  source: KOMODO
+  source_id: komodo.medium:2041
+  original_category: bacterial
+- name: trace_element_solution_medium_574
+  source: KOMODO
+  source_id: komodo.medium:2047
+  original_category: bacterial
+- name: trace_element_solution_medium_663
+  source: KOMODO
+  source_id: komodo.medium:3075
+  original_category: bacterial
+- name: trace_element_solution_medium_69
+  source: KOMODO
+  source_id: komodo.medium:2049
+  original_category: bacterial
+- name: trace_elements_solution_medium_1019
+  source: KOMODO
+  source_id: komodo.medium:3095
+  original_category: bacterial
+- name: zeikus_trace_elements_solution_medium_1343
+  source: KOMODO
+  source_id: komodo.medium:3134
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_3073_Trace_element_solution_medium_318
+- chitin_stock_solution_medium_766
+- mineral_salt_solution_medium_621
+- mineral_solution_1_medium_1033
+- trace_element_solution_630
+- trace_element_solution_medium_1131
+- trace_element_solution_medium_1263
+- trace_element_solution_medium_141
+- trace_element_solution_medium_144
+- trace_element_solution_medium_315
+- trace_element_solution_medium_318
+- trace_element_solution_medium_574
+- trace_element_solution_medium_663
+- trace_element_solution_medium_69
+- trace_elements_solution_medium_1019
+- zeikus_trace_elements_solution_medium_1343
+merge_fingerprint: a0cafceaaf5da7fdba67edf5697e45fb65ed26e001fdb2aef1acfdc71e21a9d9

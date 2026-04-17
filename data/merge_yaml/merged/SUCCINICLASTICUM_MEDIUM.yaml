@@ -1,15 +1,17 @@
-name: SUCCINICLASTICUM MEDIUM
-original_name: SUCCINICLASTICUM MEDIUM
-category: imported
+id: CultureMech:006255
+name: succiniclasticum_medium
+original_name: SUCCINICLASTICUM medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.7-6.8
+ph_range: 6.6-6.8
 media_term:
-  preferred_term: DSMZ Medium 666
+  preferred_term: KOMODO Medium 666
   term:
-    id: mediadive.medium:666
-    label: SUCCINICLASTICUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium666.pdf'
+    id: komodo.medium:666
+    label: SUCCINICLASTICUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 666 | DSMZ Medium: 666 (mediadive.medium:666)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '0.23'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '0.23'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '0.09'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Indigocarmine
   term:
     id: CHEBI:31695
@@ -60,6 +80,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000487
+    label: Indigocarmine
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -67,6 +90,9 @@ ingredients:
   concentration:
     value: '6.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Disodium succinate
   term:
     id: CHEBI:63675
@@ -74,6 +100,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: Disodium succinate
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -85,6 +114,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -92,79 +124,73 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, succinate, yeast extract,
-    cysteine and sulfide), bring medium to the boil, then cool to room temperature
-    under 100% CO2 gas atmosphere. Add the bicarbonate and equilibrate the medium
-    with the CO2 gas to pH 6.8. Distribute under 100% CO2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Thereafter, add succinate, yeast
-    extract, cysteine and sulfide from sterile anoxic stock solutions prepared under
-    100% N2 gas atmosphere. Adjust pH of complete medium to 6.7 - 6.8, if necessary.
-- step_number: 2
-  action: MIX
-  description: 'Note: Supplementing the medium with 1.50 g/l agar stimulates growth
-    of strains after resuscitation from ampoules.'
-- step_number: 3
-  action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.877457Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 666'
-- timestamp: '2026-02-19T08:26:52.686356+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 666'
+- timestamp: '2026-02-03T11:19:11.890004'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 666
+- timestamp: '2026-03-13T06:19:39.300988Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006255'
+- timestamp: '2026-03-17T06:30:32.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:56.387300+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SUCCINICLASTICUM medium" to "succiniclasticum_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:30.373547+00:00'
   curator: recipe-merger
   action: Merged 8 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_666_SUCCINICLASTICUM_MEDIUM, KOMODO_666-10503_MEDIUM_666_MODIFIED_FOR_DSM_10503,
-    KOMODO_666-10504_MEDIUM_666_MODIFIED_FOR_DSM_10504, KOMODO_666-10505_MEDIUM_666_MODIFIED_FOR_DSM_10505,
-    KOMODO_666-11001_MEDIUM_666_MODIFIED_FOR_DSM_11001, KOMODO_666-11004_MEDIUM_666_MODIFIED_FOR_DSM_11004,
-    KOMODO_666-11016_MEDIUM_666_MODIFIED_FOR_DSM_11016, KOMODO_666_SUCCINICLASTICUM_medium'
+  notes: 'Sources: KOMODO_666_SUCCINICLASTICUM_medium, medium_666_modified_for_dsm_10503,
+    medium_666_modified_for_dsm_10504, medium_666_modified_for_dsm_10505, medium_666_modified_for_dsm_11001,
+    medium_666_modified_for_dsm_11004, medium_666_modified_for_dsm_11016, succiniclasticum_medium'
 synonyms:
-- name: MEDIUM 666 MODIFIED FOR DSM 10503
+- name: medium_666_modified_for_dsm_10503
   source: KOMODO
   source_id: komodo.medium:666_10503
-  original_category: imported
-- name: MEDIUM 666 MODIFIED FOR DSM 10504
+  original_category: bacterial
+- name: medium_666_modified_for_dsm_10504
   source: KOMODO
   source_id: komodo.medium:666_10504
-  original_category: imported
-- name: MEDIUM 666 MODIFIED FOR DSM 10505
+  original_category: bacterial
+- name: medium_666_modified_for_dsm_10505
   source: KOMODO
   source_id: komodo.medium:666_10505
-  original_category: imported
-- name: MEDIUM 666 MODIFIED FOR DSM 11001
+  original_category: bacterial
+- name: medium_666_modified_for_dsm_11001
   source: KOMODO
   source_id: komodo.medium:666_11001
-  original_category: imported
-- name: MEDIUM 666 MODIFIED FOR DSM 11004
+  original_category: bacterial
+- name: medium_666_modified_for_dsm_11004
   source: KOMODO
   source_id: komodo.medium:666_11004
-  original_category: imported
-- name: MEDIUM 666 MODIFIED FOR DSM 11016
+  original_category: bacterial
+- name: medium_666_modified_for_dsm_11016
   source: KOMODO
   source_id: komodo.medium:666_11016
-  original_category: imported
-- name: SUCCINICLASTICUM medium
-  source: KOMODO
-  source_id: komodo.medium:666
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_666_SUCCINICLASTICUM_MEDIUM
-- KOMODO_666-10503_MEDIUM_666_MODIFIED_FOR_DSM_10503
-- KOMODO_666-10504_MEDIUM_666_MODIFIED_FOR_DSM_10504
-- KOMODO_666-10505_MEDIUM_666_MODIFIED_FOR_DSM_10505
-- KOMODO_666-11001_MEDIUM_666_MODIFIED_FOR_DSM_11001
-- KOMODO_666-11004_MEDIUM_666_MODIFIED_FOR_DSM_11004
-- KOMODO_666-11016_MEDIUM_666_MODIFIED_FOR_DSM_11016
 - KOMODO_666_SUCCINICLASTICUM_medium
+- medium_666_modified_for_dsm_10503
+- medium_666_modified_for_dsm_10504
+- medium_666_modified_for_dsm_10505
+- medium_666_modified_for_dsm_11001
+- medium_666_modified_for_dsm_11004
+- medium_666_modified_for_dsm_11016
+- succiniclasticum_medium
 merge_fingerprint: d240465c0b898e459499245d3afef0b43f64801190661ea75e4c0c3813799d26

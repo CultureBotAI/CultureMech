@@ -1,8 +1,9 @@
-name: Mineral salts medium
+id: CultureMech:008457
+name: mineral_salts_medium
 original_name: Mineral salts medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.02'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -40,12 +50,18 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: NaNO3
   concentration:
     value: '2'
@@ -55,6 +71,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: MnSO4·5H2O
   concentration:
     value: '0.02'
@@ -64,12 +83,9 @@ ingredients:
   term:
     id: CHEBI:131524
     label: manganese(II) sulfate pentahydrate
-- preferred_term: Glucose*
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000549
+    label: MnSO4·5H2O
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -96,6 +112,36 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 4691a64d17b674ed2226ec6ba7fdeb30a7a87c4be19ff40e546917c72bab77b6
+- timestamp: '2026-03-09T08:04:27.633824+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:57.081539Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008457'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:52.057306'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.672932+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mineral salts medium" to "mineral_salts_medium" for
+    consistent matching
+solutions:
+- preferred_term: Glucose*
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  name: Unknown solution
+merge_fingerprint: 43f314800eb0f9cb850f26d87c6ce812382a3bcf441efa60d425756bc804f4f6
 merged_from:
-- TOGO_M1883_Mineral_salts_medium
+- mineral_salts_medium

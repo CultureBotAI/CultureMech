@@ -1,0 +1,73 @@
+id: CultureMech:004809
+name: nutrient_broth_with_10_horse_serum
+original_name: NUTRIENT BROTH WITH 10% HORSE SERUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 302
+  term:
+    id: komodo.medium:302
+    label: NUTRIENT BROTH WITH 10% HORSE SERUM
+notes: 'Source: KOMODO ModelSEED | ID: 302 | DSMZ Medium: 302 (mediadive.medium:302)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Horse serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 302'
+- timestamp: '2026-02-03T11:19:16.349093'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 302
+- timestamp: '2026-03-13T06:19:28.834225Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004809'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:44.310406+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NUTRIENT BROTH WITH 10% HORSE SERUM" to "nutrient_broth_with_10_horse_serum"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:21.638719+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_302_NUTRIENT_BROTH_WITH_10_HORSE_SERUM, nutrient_broth_with_10_horse_serum'
+ph_value: 7.0
+kg_microbe_match: mediadive.medium:12
+categories:
+- bacterial
+merged_from:
+- KOMODO_302_NUTRIENT_BROTH_WITH_10_HORSE_SERUM
+- nutrient_broth_with_10_horse_serum
+merge_fingerprint: 8eb43144d7f0fa97dab6691c9ec02683b31f6fbc2405dd6516f9d539c3557659

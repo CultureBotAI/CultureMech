@@ -1,6 +1,7 @@
-name: MRSsi
+id: CultureMech:009065
+name: mrssi
 original_name: MRSsi
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -16,6 +17,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000900
+    label: xylose
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -25,12 +29,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: yeast extract
   concentration:
     value: '5'
@@ -42,6 +52,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: sodium acetate
   concentration:
     value: '5'
@@ -49,6 +62,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
     label: sodium acetate
 - preferred_term: Tween 80
   concentration:
@@ -59,12 +75,18 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: MnSO4 · 4 H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86358
+    label: ''
 - preferred_term: casamino acids
   concentration:
     value: '5'
@@ -73,6 +95,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: casamino acids
 - preferred_term: peptone
   concentration:
     value: '5'
@@ -98,6 +123,18 @@ curation_history:
   date: '2026-02-03T11:20:53.995361'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: xylose'
-merge_fingerprint: 7323c108bac4dd61da42039703a3023a7e9fdb79a163b5b425ccde3e58c3f8a5
+- timestamp: '2026-03-13T06:20:02.340083Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009065'
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:21.113563+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MRSsi" to "mrssi" for consistent matching
+merge_fingerprint: 26dc71338241a3ef726995ee4582dc1c62c79f88856fe7b8d2134c05989e66ee
 merged_from:
-- TOGO_M2491_MRSsi
+- mrssi

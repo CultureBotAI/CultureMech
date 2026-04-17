@@ -1,6 +1,7 @@
-name: Halobacterium starch medium
+id: CultureMech:008958
+name: halobacterium_starch_medium
 original_name: Halobacterium starch medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,18 +31,27 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 · 2H2O
   concentration:
     value: '0.13'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgCl2 · 6H2O
   concentration:
     value: '160'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: K2SO4
   concentration:
     value: '5'
@@ -48,6 +61,9 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001064
+    label: K2SO4
 - preferred_term: Soluble starch
   concentration:
     value: '2'
@@ -77,6 +93,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: eb34a99df706df02519726c11850e17d809f6d19251479ce2164ee31c1718291
+- timestamp: '2026-03-13T06:20:01.579847Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008958'
+- timestamp: '2026-03-17T06:29:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.305497+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Halobacterium starch medium" to "halobacterium_starch_medium"
+    for consistent matching
+merge_fingerprint: 389f8ab36eff9ce6358db53873888ba17f20bc68af5e1b5fea82d0208d7d36f9
 merged_from:
-- TOGO_M2374_Halobacterium_starch_medium
+- halobacterium_starch_medium

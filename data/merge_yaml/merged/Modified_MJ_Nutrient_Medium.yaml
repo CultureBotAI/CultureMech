@@ -1,6 +1,7 @@
-name: Modified MJ Nutrient Medium
+id: CultureMech:009626
+name: modified_mj_nutrient_medium
 original_name: Modified MJ Nutrient Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast Extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: K2HPO4
   concentration:
     value: '2.9'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
   concentration:
     value: '1.5'
@@ -44,6 +54,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Resazurin
   concentration:
@@ -54,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '1'
@@ -63,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: Biotin
   concentration:
     value: '20'
@@ -71,6 +90,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic Acid
   concentration:
     value: '40'
@@ -80,6 +102,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic Acid
 - preferred_term: Sodium Citrate
   concentration:
     value: '3'
@@ -88,6 +113,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000719
+    label: Sodium Citrate
 - preferred_term: MOPS
   concentration:
     value: '10'
@@ -96,12 +124,18 @@ ingredients:
   term:
     id: CHEBI:39074
     label: MOPS
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000285
+    label: MOPS
 - preferred_term: FeSO4·6H2O
   concentration:
     value: '1.25'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Pyridoxamine-HCl
   concentration:
     value: '200'
@@ -111,6 +145,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxamine-HCl
 - preferred_term: Cyanocobalamin
   concentration:
     value: '20'
@@ -119,6 +156,9 @@ ingredients:
   term:
     id: CHEBI:17439
     label: cyanocob(III)alamin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Cyanocobalamin
 - preferred_term: Urea
   concentration:
     value: '2.1'
@@ -127,6 +167,9 @@ ingredients:
   term:
     id: CHEBI:16199
     label: urea
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
 media_term:
   preferred_term: TOGO Medium M3171
   term:
@@ -144,6 +187,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 9d1afe4dc483433ffdcae0473380f0dfbc395a9616ecd2b91f1601638692968e
+- timestamp: '2026-03-13T06:20:07.686722Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009626'
+- timestamp: '2026-03-17T06:30:34.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.700920+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified MJ Nutrient Medium" to "modified_mj_nutrient_medium"
+    for consistent matching
+merge_fingerprint: 0a936bff3761ec8a39e8e503229a02be881680f1600a5665c249519abec08d55
 merged_from:
-- TOGO_M3171_Modified_MJ_Nutrient_Medium
+- modified_mj_nutrient_medium

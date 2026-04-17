@@ -1,8 +1,9 @@
-name: f/2 Quad
+id: CultureMech:000344
+name: f_2_quad
 original_name: f/2 Quad
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:
   preferred_term: CCAP Medium C35
@@ -11,6 +12,11 @@ media_term:
     label: f/2 Quad
 notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_f2.pdf'
 ingredients:
+- preferred_term: Natural sea water
+  concentration:
+    value: '1800.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 800.0, 1000.0]'
 - preferred_term: NaNO3
   term:
     id: CHEBI:59148
@@ -18,6 +24,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: NaH2PO4 x 2 H2O
   term:
     id: CHEBI:37585
@@ -25,10 +34,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Natural sea water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4 x 2 H2O
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -37,6 +45,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -44,6 +55,9 @@ ingredients:
   concentration:
     value: '41.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -51,6 +65,9 @@ ingredients:
   concentration:
     value: '31.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -58,6 +75,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -65,6 +85,9 @@ ingredients:
   concentration:
     value: '0.22'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -72,6 +95,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -79,6 +105,9 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -86,10 +115,16 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Cyanocobalamine
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001039
+    label: Cyanocobalamine
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -97,6 +132,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -104,6 +142,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -129,23 +170,35 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C35'
-- timestamp: '2026-02-19T08:26:37.711055+00:00'
+- timestamp: '2026-03-13T06:18:54.615846Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000344'
+- timestamp: '2026-03-17T06:30:15.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.607623+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "f/2 Quad" to "f_2_quad" for consistent matching
+- timestamp: '2026-04-17T06:30:02.985880+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: CCAP_C34_f_2, CCAP_C35_f_2_Quad, CCAP_C36_f_10'
+  notes: 'Sources: f_10, f_2, f_2_quad'
 synonyms:
-- name: f/2
-  source: MediaDive
-  source_id: mediadive.medium:C34
-  original_category: imported
-- name: f/10
+- name: f_10
   source: MediaDive
   source_id: mediadive.medium:C36
-  original_category: imported
+  original_category: bacterial
+- name: f_2
+  source: MediaDive
+  source_id: mediadive.medium:C34
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- CCAP_C34_f_2
-- CCAP_C35_f_2_Quad
-- CCAP_C36_f_10
+- f_10
+- f_2
+- f_2_quad
 merge_fingerprint: 2e0d4b25fb60194b5a4d934556bec8b91794446d22a6e657caa43417ba33876d

@@ -1,15 +1,17 @@
-name: HORIKOSHI ALKALINE
+id: CultureMech:006870
+name: horikoshi_alkaline
 original_name: HORIKOSHI ALKALINE
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.0
 media_term:
-  preferred_term: DSMZ Medium 940
+  preferred_term: KOMODO Medium 940
   term:
-    id: mediadive.medium:940
+    id: komodo.medium:940
     label: HORIKOSHI ALKALINE
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium940.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 940 | DSMZ Medium: 940 (mediadive.medium:940)
+  | Aerobic: No'
 ingredients:
 - preferred_term: D-Glucose
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -33,6 +38,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -40,6 +48,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -47,6 +58,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -54,36 +68,52 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 9.0
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.834149Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 940'
-- timestamp: '2026-02-19T08:26:57.264272+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 940'
+- timestamp: '2026-02-03T11:19:02.617731'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 940
+- timestamp: '2026-03-13T06:19:44.481161Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006870'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.412404+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HORIKOSHI ALKALINE" to "horikoshi_alkaline" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:35.158592+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_940_HORIKOSHI_ALKALINE, KOMODO_940-18940_MEDIUM_940_MODIFIED_FOR_DSM_18940,
-    KOMODO_940-44686_MEDIUM_940_MODIFIED_FOR_DSM_44686, KOMODO_940_HORIKOSHI_ALKALINE'
+  notes: 'Sources: KOMODO_940_HORIKOSHI_ALKALINE, horikoshi_alkaline, medium_940_modified_for_dsm_18940,
+    medium_940_modified_for_dsm_44686'
 synonyms:
-- name: MEDIUM 940 MODIFIED FOR DSM 18940
+- name: medium_940_modified_for_dsm_18940
   source: KOMODO
   source_id: komodo.medium:940_18940
-  original_category: imported
-- name: MEDIUM 940 MODIFIED FOR DSM 44686
+  original_category: bacterial
+- name: medium_940_modified_for_dsm_44686
   source: KOMODO
   source_id: komodo.medium:940_44686
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_940_HORIKOSHI_ALKALINE
-- KOMODO_940-18940_MEDIUM_940_MODIFIED_FOR_DSM_18940
-- KOMODO_940-44686_MEDIUM_940_MODIFIED_FOR_DSM_44686
 - KOMODO_940_HORIKOSHI_ALKALINE
+- horikoshi_alkaline
+- medium_940_modified_for_dsm_18940
+- medium_940_modified_for_dsm_44686
 merge_fingerprint: eef2848eaa1e111bc8d5a0ba71b0675f4c0673bb402f857514bd8af26b6188e2

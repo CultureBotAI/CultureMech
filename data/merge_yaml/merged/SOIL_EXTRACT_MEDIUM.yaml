@@ -1,15 +1,17 @@
-name: SOIL EXTRACT MEDIUM
-original_name: SOIL EXTRACT MEDIUM
-category: imported
+id: CultureMech:004048
+name: soil_extract_medium
+original_name: SOIL EXTRACT medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_range: 6.8-7
+physical_state: SOLID_AGAR
+ph_range: 6.8-7.0
 media_term:
-  preferred_term: DSMZ Medium 12
+  preferred_term: KOMODO Medium 12
   term:
-    id: mediadive.medium:12
-    label: SOIL EXTRACT MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium12.pdf'
+    id: komodo.medium:12
+    label: SOIL EXTRACT medium
+notes: 'Source: KOMODO ModelSEED | ID: 12 | DSMZ Medium: 12 (mediadive.medium:12)
+  | Aerobic: No'
 ingredients:
 - preferred_term: air-dried garden soil
   concentration:
@@ -22,6 +24,9 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Tap water
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -29,33 +34,40 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Sterilize 400.0 g of air-dried garden soil (with high content of organic
-    matter) in 1000 ml tap water for one hour at 121°C. Allow it to sediment for a
-    few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per
-    1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0
-    and sterilize.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:09.978932Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 12'
-- timestamp: '2026-02-19T08:26:42.331455+00:00'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 12'
+- timestamp: '2026-02-03T11:19:16.123840'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 12
+- timestamp: '2026-03-13T06:19:24.441282Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004048'
+- timestamp: '2026-03-17T06:30:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:39.182028+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SOIL EXTRACT medium" to "soil_extract_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:18.343407+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_12_SOIL_EXTRACT_MEDIUM, KOMODO_12_SOIL_EXTRACT_medium'
-synonyms:
-- name: SOIL EXTRACT medium
-  source: KOMODO
-  source_id: komodo.medium:12
-  original_category: imported
+  notes: 'Sources: KOMODO_12_SOIL_EXTRACT_medium, soil_extract_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_12_SOIL_EXTRACT_MEDIUM
 - KOMODO_12_SOIL_EXTRACT_medium
+- soil_extract_medium
 merge_fingerprint: f0b7050edfa4bb9fb94b01ee5d1bb8a367c177f1cb7709f1514302b28f1209ec

@@ -1,6 +1,7 @@
-name: YPD Liquid Medium
+id: CultureMech:008153
+name: ypd_liquid_medium
 original_name: YPD Liquid Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Peptone
   concentration:
     value: '20'
@@ -52,18 +59,37 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:27:01.005204+00:00'
+- timestamp: '2026-03-13T06:19:53.980425Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008153'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.538584+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YPD Liquid Medium" to "ypd_liquid_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:10.643032+00:00'
   curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: TOGO_M1437_25_Glucose-Yeast_Extract-Peptone, TOGO_M1600_YPD_Liquid_Medium'
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: 25_glucose_yeast_extract_peptone, gyp_for_acetic_acid_bacteria_ph_6_0_glucose_30g,
+    ypd_liquid_medium'
 synonyms:
-- name: 25% Glucose-Yeast Extract-Peptone
+- name: 25_glucose_yeast_extract_peptone
   source: TOGO
   source_id: TOGO:M1437
-  original_category: imported
+  original_category: bacterial
+- name: gyp_for_acetic_acid_bacteria_ph_6_0_glucose_30g
+  source: TOGO
+  source_id: TOGO:M3062
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- TOGO_M1437_25_Glucose-Yeast_Extract-Peptone
-- TOGO_M1600_YPD_Liquid_Medium
+- 25_glucose_yeast_extract_peptone
+- gyp_for_acetic_acid_bacteria_ph_6_0_glucose_30g
+- ypd_liquid_medium
 merge_fingerprint: 31418382bf38b6ba15499a5f56b0205e138fad573dacc23b92f9a36e85680017

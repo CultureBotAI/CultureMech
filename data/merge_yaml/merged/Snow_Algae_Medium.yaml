@@ -1,7 +1,8 @@
-name: Snow Algae Medium
+id: CultureMech:000220
+name: snow_algae_medium
 category: ALGAE
-medium_type: complex
-physical_state: liquid
+medium_type: COMPLEX
+physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
@@ -9,53 +10,52 @@ ingredients:
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: NaCl(Fisher S271-500)'
+  notes: 'Original amount: NaNO3(Fisher BP360-500)'
 - preferred_term: '2'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
+  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
 - preferred_term: '3'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: Na2EDTA•2H2O(Sigma ED255)'
+  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
 - preferred_term: '4'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: KCl(Fisher P 217)'
+  notes: 'Original amount: K2HPO4(Sigma P 3786)'
 - preferred_term: '5'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
+  notes: 'Original amount: KH2PO4(Sigma P 0662)'
 - preferred_term: '6'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: NaNO3(Fisher BP360-500)'
+  notes: 'Original amount: NaCl(Fisher S271-500)'
 - preferred_term: '7'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: KH2PO4(Sigma P 0662)'
+  notes: 'Original amount: P-IV Metal Solution'
 - preferred_term: '8'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: Trizma Base pH 8.2'
+  notes: 'Original amount: Vitamin B12'
 - preferred_term: '9'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: A+ Trace Components (sterilize before adding)'
+  notes: 'Original amount: Biotin Vitamin Solution'
 - preferred_term: '10'
   concentration:
     value: variable
     unit: G_PER_L
-  notes: 'Original amount: Sodium Thiosulfate Pentahydrate (agar media only,sterile)(Baker
-    3946)'
+  notes: 'Original amount: Thiamine Vitamin Solution'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural
@@ -97,33 +97,43 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: snow-algae-medium, URL: https://utex.org/products/snow-algae-medium'
-- timestamp: '2026-02-19T08:26:36.627440+00:00'
+- timestamp: '2026-03-13T06:18:53.593701Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000220'
+- timestamp: '2026-03-17T19:45:04.514633+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Snow Algae Medium" to "snow_algae_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:07.673668+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
-  notes: 'Sources: A+_Medium, BG-11_Medium, Bold_1NV_Medium, Bold_Basal_Medium, Snow_Algae_Medium'
+  notes: 'Sources: Bold_1NV_Medium, Bold_Basal_Medium, Snow_Algae_Medium, a_medium,
+    bg_11_medium'
 references:
 - reference_id: UTEX:snow-algae-medium
 - reference_id: https://utex.org/products/snow-algae-medium
 original_name: Snow Algae Medium
 synonyms:
-- name: A+ Medium
+- name: bold_1nv_medium
   source: unknown
   original_category: ALGAE
-- name: BG-11 Medium
+- name: bold_basal_medium
   source: unknown
   original_category: ALGAE
-- name: Bold 1NV Medium
+- name: a_medium
   source: unknown
   original_category: ALGAE
-- name: Bold Basal Medium
+- name: bg_11_medium
   source: unknown
   original_category: ALGAE
 categories:
 - ALGAE
 merged_from:
-- A+_Medium
-- BG-11_Medium
 - Bold_1NV_Medium
 - Bold_Basal_Medium
 - Snow_Algae_Medium
+- a_medium
+- bg_11_medium
 merge_fingerprint: 5de84be125050c0cd9f9182936c17061578f3047d7ed1206c56b5003526afc32

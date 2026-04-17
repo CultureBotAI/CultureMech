@@ -1,6 +1,7 @@
-name: Artificial seawater base with thiosulfate as the electron donor
+id: CultureMech:008841
+name: artificial_seawater_base_with_thiosulfate_as_the_electron_donor
 original_name: Artificial seawater base with thiosulfate as the electron donor
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -19,6 +20,9 @@ ingredients:
   term:
     id: CHEBI:26977
     label: Thiosulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001096
+    label: thiosulfate
 - preferred_term: O2
   notes: 'Properties: Gas'
   concentration:
@@ -45,6 +49,20 @@ curation_history:
   date: '2026-02-03T11:20:52.902039'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: O2'
+- timestamp: '2026-03-13T06:20:00.679832Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008841'
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.357685+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Artificial seawater base with thiosulfate as the electron
+    donor" to "artificial_seawater_base_with_thiosulfate_as_the_electron_donor" for
+    consistent matching
 merge_fingerprint: 56d84f1f811c62af899070183b301188bcfdeb8edc3a3c2018f34769aa19e91f
 merged_from:
-- TOGO_M2252_Artificial_seawater_base_with_thiosulfate_as_the_electron_donor
+- artificial_seawater_base_with_thiosulfate_as_the_electron_donor

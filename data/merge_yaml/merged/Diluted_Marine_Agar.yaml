@@ -1,8 +1,9 @@
-name: DILUTED MARINE AGAR
+id: CultureMech:015411
+name: diluted_marine_agar
 original_name: DILUTED MARINE AGAR
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J644
   term:
@@ -21,6 +22,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Sea water
   concentration:
     value: '750'
@@ -32,6 +36,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J644'
+- timestamp: '2026-03-13T06:20:42.535628Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015411'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:34.188655+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DILUTED MARINE AGAR" to "diluted_marine_agar" for consistent
+    matching
+kg_microbe_match: mediadive.medium:12
 merge_fingerprint: 46d2ab80a1117772164375e4c6aedc58ca10e83a7f5825f1762be32329e17f3e
 merged_from:
-- JCM_J644_DILUTED_MARINE_AGAR
+- diluted_marine_agar

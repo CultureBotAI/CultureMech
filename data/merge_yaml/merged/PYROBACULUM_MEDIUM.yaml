@@ -1,172 +1,262 @@
-name: PYROBACULUM MEDIUM
-original_name: PYROBACULUM MEDIUM
-category: imported
-medium_type: DEFINED
+id: CultureMech:009169
+name: pyrobaculum_medium
+original_name: Pyrobaculum Medium
+category: bacterial
+medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 6.0
-media_term:
-  preferred_term: DSMZ Medium 390
-  term:
-    id: mediadive.medium:390
-    label: PYROBACULUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium390.pdf'
 ingredients:
-- preferred_term: (NH4)2SO4
-  term:
-    id: CHEBI:62946
-    label: (NH4)2SO4
+- preferred_term: Sodium resazurin (0.1% w/v)
   concentration:
-    value: '1.28713'
+    value: '0.5'
     unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '2000.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 1000.0, 1000.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KH2PO4
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-  concentration:
-    value: '0.277228'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.247525'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.0693069'
-    unit: G_PER_L
-- preferred_term: FeCl3 x 6 H2O
-  term:
-    id: CHEBI:86254
-    label: FeCl3 x 6 H2O
-  concentration:
-    value: '0.019802'
-    unit: G_PER_L
-- preferred_term: Sodium resazurin
-  concentration:
-    value: '0.00049505'
-    unit: G_PER_L
-- preferred_term: Trypticase peptone
-  concentration:
-    value: '0.49505'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.19802'
-    unit: G_PER_L
-- preferred_term: Na2S2O3 x 5 H2O
-  term:
-    id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
-  concentration:
-    value: '1.9802'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
     label: Na2S x 9 H2O
+- preferred_term: (NH4)2SO4
   concentration:
-    value: '0.49505'
+    value: '1.3'
     unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
+- preferred_term: Yeast extract
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Na2S2O3 x 5 H2O
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
+- preferred_term: Trypticase peptone
+  notes: 'Properties: Undefined component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4 x 2 H2O
 - preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '180'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.18'
-    unit: G_PER_L
-- preferred_term: Na2B4O7 x 10 H2O
-  concentration:
-    value: '0.45'
-    unit: G_PER_L
+    label: ''
 - preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '22'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
     label: ZnSO4 x 7 H2O
-  concentration:
-    value: '0.022'
-    unit: G_PER_L
 - preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
     label: CuCl2 x 2 H2O
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.003'
-    unit: G_PER_L
-- preferred_term: VOSO4 x 2 H2O
-  term:
-    id: CHEBI:87009
-    label: VOSO4 x 2 H2O
-  concentration:
-    value: '0.003'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:53470
+    label: cobalt(2+) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
     label: CoSO4 x 7 H2O
+- preferred_term: VOSO4 x 2 H2O
   concentration:
-    value: '0.001'
+    value: '3'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve ingredients (except Trypticase peptone, yeast extract, sodium
-    thiosulfate and sulfide), adjust pH to 6.0 and sparge medium with 100% N2 gas
-    for at least 30 min to remove dissolved oxygen. After autoclaving add peptone,
-    yeast extract, thiosulfate and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas. Stock solutions of substrates can be autoclaved with the exception
-    of sodium thiosulfate which should be sterilized by filtration. Prior to inoculation
-    adjust pH of final medium to 6.0.
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH of final solution to 2 with 1 N HCl.
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:87014
+    label: vanadyl sulfate hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000279
+    label: VOSO4 x 2 H2O
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '450'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: 1 N HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2600
+  term:
+    id: TOGO:M2600
+    label: Pyrobaculum Medium
+notes: 'Source: https://togomedium.org/medium/M2600
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium390.pdf'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.007874Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 390'
-- timestamp: '2026-02-19T08:26:47.517940+00:00'
-  curator: recipe-merger
-  action: Merged 6 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_390_PYROBACULUM_MEDIUM, KOMODO_390-1_For_DSM_4184, KOMODO_390-2_For_DSM_4185,
-    KOMODO_390-3_For_DSM_13380, KOMODO_390-4_For_DSM_13514, KOMODO_390_PYROBACULUM_MEDIUM'
-synonyms:
-- name: For DSM 4184
-  source: KOMODO
-  source_id: komodo.medium:390.1
-  original_category: imported
-- name: For DSM 4185
-  source: KOMODO
-  source_id: komodo.medium:390.2
-  original_category: imported
-- name: For DSM 13380
-  source: KOMODO
-  source_id: komodo.medium:390.3
-  original_category: imported
-- name: For DSM 13514
-  source: KOMODO
-  source_id: komodo.medium:390.4
-  original_category: imported
-categories:
-- imported
+- timestamp: '2026-01-27T06:35:56.834350Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2600'
+- timestamp: '2026-01-28T19:48:36.404664Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.822810'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Yeast extract; Added default
+    concentration for ingredient: Na2S2O3 x 5 H2O; Added default concentration for
+    ingredient: Trypticase peptone; Added default concentration for ingredient: 1
+    N HCl'
+- timestamp: '2026-03-09T08:05:00.693186+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:32.518427Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:03.534767Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009169'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:56.775403'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.260508+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Pyrobaculum Medium" to "pyrobaculum_medium" for consistent
+    matching
+solutions:
+- preferred_term: Allen’s trace element solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 5b8d7bf0ec8cda87b2e80e2ed6b483a6e242e12aa6c15c07b4408740f6f80e5f
 merged_from:
-- DSMZ_390_PYROBACULUM_MEDIUM
-- KOMODO_390-1_For_DSM_4184
-- KOMODO_390-2_For_DSM_4185
-- KOMODO_390-3_For_DSM_13380
-- KOMODO_390-4_For_DSM_13514
-- KOMODO_390_PYROBACULUM_MEDIUM
-merge_fingerprint: c85ea6ed298d52eb8d89e85fbad35c343be3a318f80646aace1cd18ede441c0d
+- TOGO_M2600_Pyrobaculum_Medium

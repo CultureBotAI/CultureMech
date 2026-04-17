@@ -1,8 +1,9 @@
-name: Tryptose blood agar base
+id: CultureMech:009084
+name: tryptose_blood_agar_base
 original_name: Tryptose blood agar base
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tryptose blood agar base (Difco Laboratories, Detroit, MI)
   concentration:
@@ -26,6 +27,15 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Tryptose blood agar base (Difco
     Laboratories, Detroit, MI)'
+- timestamp: '2026-03-13T06:20:02.411857Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009084'
+- timestamp: '2026-03-17T19:46:21.186880+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Tryptose blood agar base" to "tryptose_blood_agar_base"
+    for consistent matching
 merge_fingerprint: 623b037d821cfc7e507b055fffdd941c352b78a6e8643a91eab0901dd225abe1
 merged_from:
-- TOGO_M2512_Tryptose_blood_agar_base
+- tryptose_blood_agar_base

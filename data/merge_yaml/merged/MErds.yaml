@@ -1,6 +1,7 @@
-name: MErds
+id: CultureMech:000364
+name: merds
 original_name: MErds
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -17,6 +18,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -24,6 +28,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: Natural sea water
   concentration:
     value: '1000'
@@ -35,6 +42,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -42,6 +52,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -49,10 +62,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-- preferred_term: Soil
-  concentration:
-    value: variable
-    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: Soil
   concentration:
     value: variable
@@ -131,6 +143,22 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil; Added default concentration
     for ingredient: Soil'
+- timestamp: '2026-03-13T03:09:15.378114Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:54.771044Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000364'
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.777351+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MErds" to "merds" for consistent matching
 merge_fingerprint: 49862b1cb8fc44376175f71610eb46a9184a915323dcf91aa13d3a8fa458fa74
 merged_from:
-- CCAP_C53_MErds
+- merds

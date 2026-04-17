@@ -1,15 +1,16 @@
-name: CORYNEBACTERIUM MEDIUM CII
-original_name: CORYNEBACTERIUM MEDIUM CII
-category: imported
+id: CultureMech:006054
+name: corynebacterium_medium_cii
+original_name: CORYNEBACTERIUM medium CII
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_value: 7.0
+physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 583
+  preferred_term: KOMODO Medium 583
   term:
-    id: mediadive.medium:583
-    label: CORYNEBACTERIUM MEDIUM CII
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium583.pdf'
+    id: komodo.medium:583
+    label: CORYNEBACTERIUM medium CII
+notes: 'Source: KOMODO ModelSEED | ID: 583 | DSMZ Medium: 583 (mediadive.medium:583)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -36,29 +43,42 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.645197Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 583'
-- timestamp: '2026-02-19T08:26:51.330986+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 583'
+- timestamp: '2026-02-03T11:19:10.817675'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 583
+- timestamp: '2026-03-13T06:19:37.915686Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006054'
+- timestamp: '2026-03-17T06:30:28.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:54.762062+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CORYNEBACTERIUM medium CII" to "corynebacterium_medium_cii"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:29.203991+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_583_CORYNEBACTERIUM_MEDIUM_CII, KOMODO_583_CORYNEBACTERIUM_medium_CII'
-synonyms:
-- name: CORYNEBACTERIUM medium CII
-  source: KOMODO
-  source_id: komodo.medium:583
-  original_category: imported
+  notes: 'Sources: KOMODO_583_CORYNEBACTERIUM_medium_CII, corynebacterium_medium_cii'
+ph_value: 7.0
+kg_microbe_match: mediadive.medium:583
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_583_CORYNEBACTERIUM_MEDIUM_CII
 - KOMODO_583_CORYNEBACTERIUM_medium_CII
+- corynebacterium_medium_cii
 merge_fingerprint: 5601787cffb4781cf89ed2743919156730448c85b0aea2dd0a385c0ec4597463

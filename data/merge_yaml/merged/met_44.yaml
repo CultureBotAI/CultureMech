@@ -1,0 +1,159 @@
+id: CultureMech:000096
+name: met_44
+category: ALGAE
+medium_type: COMPLEX
+physical_state: LIQUID
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_MET44.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  date: '2026-01-28'
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: MET44, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_MET44.pdf'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:23:39.651063'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-02-03T11:26:43.553150'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.149795Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000096'
+- timestamp: '2026-03-17T19:45:04.104383+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Met-44" to "met_44" for consistent matching
+- timestamp: '2026-04-04T12:54:55.015085'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 8 curated ingredients from CCAP
+  source: CCAP Medium MR_MET44.pdf
+references:
+- reference_id: CCAP:MET44
+- reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_MET44.pdf
+ingredients:
+- preferred_term: Cyanocobalamin (Vitamin B )
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin (vitamin B )
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.015059'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  source: CCAP Medium MR_MET44.pdf
+  notes: From CCAP Medium MR_MET44.pdf; Curated from CCAP Medium MR_MET44.pdf specification
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.015068'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  source: CCAP Medium MR_MET44.pdf
+  notes: From CCAP Medium MR_MET44.pdf; Curated from CCAP Medium MR_MET44.pdf specification
+- preferred_term: Thiamine HCl (Vitamin B )
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl (vitamin B )
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.015071'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_MET44.pdf
+  notes: From CCAP Medium MR_MET44.pdf; Curated from CCAP Medium MR_MET44.pdf specification
+- preferred_term: Thiamine HCl (B ) -
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl (B ) -
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.015073'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_MET44.pdf
+  notes: From CCAP Medium MR_MET44.pdf; Curated from CCAP Medium MR_MET44.pdf specification
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.015075'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_MET44.pdf
+  notes: From CCAP Medium MR_MET44.pdf; Curated from CCAP Medium MR_MET44.pdf specification
+- preferred_term: Cyanocobalamin (B )
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin (B )
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.015077'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_MET44.pdf
+  notes: From CCAP Medium MR_MET44.pdf; Curated from CCAP Medium MR_MET44.pdf specification
+- preferred_term: Na SiO .9H O
+  term:
+    id: CHEBI:86463
+    label: Na SiO .9H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:55.015079'
+    ontology_source: CHEBI
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  source: CCAP Medium MR_MET44.pdf
+  notes: From CCAP Medium MR_MET44.pdf; Curated from CCAP Medium MR_MET44.pdf specification
+- preferred_term: Make up to 1 litre with filtered natural seawater. For agar, add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_MET44.pdf; Curated
+    from CCAP Medium MR_MET44.pdf specification
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: CCAP Medium MR_MET44.pdf
+data_quality_flags:
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
+original_name: Met-44
+merge_fingerprint: 3fc90bf2c8e77fe945d998f6c748ea01595fde864732cde93c2bd2c1acfdb83e
+merged_from:
+- met_44

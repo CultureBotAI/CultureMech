@@ -1,93 +1,138 @@
-name: MARINITOGA HYDROGENITOLERANS MEDIUM
-original_name: MARINITOGA HYDROGENITOLERANS MEDIUM
-category: imported
+id: CultureMech:007830
+name: marinitoga_hydrogenitolerans_medium
+original_name: Marinitoga Hydrogenitolerans Medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 6.0
-media_term:
-  preferred_term: DSMZ Medium 904a
-  term:
-    id: mediadive.medium:904a
-    label: MARINITOGA HYDROGENITOLERANS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium904a.pdf'
 ingredients:
-- preferred_term: Sea Salt
+- preferred_term: Distilled water
   concentration:
-    value: '30'
+    value: '1'
     unit: G_PER_L
-- preferred_term: MES
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:39010
-    label: MES
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple
+    component, Defined component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+- preferred_term: MES
   concentration:
     value: '4'
     unit: G_PER_L
-- preferred_term: Yeast extract
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:39010
+    label: MES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
+    label: MES
+- preferred_term: Sea salts (Sigma)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Complex component'
+- preferred_term: Tryptone (BD-Difco)
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Tryptone
+  notes: 'Properties: Undefined component'
+- preferred_term: Yeast extract (Oxoid)
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Sodium resazurin
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
   concentration:
-    value: '0.0005'
-    unit: G_PER_L
-- preferred_term: D-Glucose
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:17634
-    label: D-Glucose
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M1297
   term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve ingredients except glucose, sulfide and cysteine, adjust pH
-    to 6.0 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    (to 30% of volume) and autoclave. Add glucose, sulfide and cysteine from sterile
-    anoxic stock solutions prepared under 100% N2 gas.
+    id: TOGO:M1297
+    label: Marinitoga Hydrogenitolerans Medium
+notes: 'Source: https://togomedium.org/medium/M1297
+
+  Original source: JCM - JCM_M1210
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1210'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.703372Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 904a'
-- timestamp: '2026-02-19T08:26:56.702052+00:00'
-  curator: recipe-merger
-  action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_904a_MARINITOGA_HYDROGENITOLERANS_MEDIUM, KOMODO_904-1_For_DSM_15518_DSM_15807_and_DSM_16785,
-    KOMODO_904_MARINITOGA_medium'
-synonyms:
-- name: For DSM 15518, DSM 15807 and DSM 16785
-  source: KOMODO
-  source_id: komodo.medium:904.1
-  original_category: imported
-- name: MARINITOGA medium
-  source: KOMODO
-  source_id: komodo.medium:904
-  original_category: imported
-categories:
-- imported
+- timestamp: '2026-01-27T06:35:54.307372Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1297'
+- timestamp: '2026-01-28T19:48:18.795935Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:47.038064'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:31.182914+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:51.801184Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007830'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.056547'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:05.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.237648+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Marinitoga Hydrogenitolerans Medium" to "marinitoga_hydrogenitolerans_medium"
+    for consistent matching
+solutions:
+- preferred_term: 1.0 M Glucose solution
+  composition: []
+  concentration:
+    value: '14'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
+    component'
+  name: Unknown solution
+- preferred_term: 5% L-Cysteine・HCl・H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
+merge_fingerprint: 039279e9b57a22dfcc4186fe95296e497901b9d507daebf7c6c4b2a9aa042007
 merged_from:
-- DSMZ_904a_MARINITOGA_HYDROGENITOLERANS_MEDIUM
-- KOMODO_904-1_For_DSM_15518_DSM_15807_and_DSM_16785
-- KOMODO_904_MARINITOGA_medium
-merge_fingerprint: cedf8c0b41a5583617fbf7af56c9dcbb92ab9bbeafba116a8a7ce81ab26516da
+- TOGO_M1297_Marinitoga_Hydrogenitolerans_Medium

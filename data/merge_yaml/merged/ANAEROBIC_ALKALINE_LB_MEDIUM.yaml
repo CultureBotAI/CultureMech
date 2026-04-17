@@ -1,6 +1,7 @@
-name: ANAEROBIC ALKALINE LB MEDIUM
+id: CultureMech:015381
+name: anaerobic_alkaline_lb_medium
 original_name: ANAEROBIC ALKALINE LB MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.5
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '2.97619'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000880
+    label: Tris base
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -49,6 +59,21 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1111'
+- timestamp: '2026-03-13T06:20:42.299459Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015381'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.928520+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROBIC ALKALINE LB MEDIUM" to "anaerobic_alkaline_lb_medium"
+    for consistent matching
+high_metal: true
+kg_microbe_match: mediadive.medium:J1111
 merge_fingerprint: 1e17c5d4c2861f78c5f839a2abc0683c3ad1f1367e9906d305e9a3f4fb8b9224
 merged_from:
-- JCM_J1111_ANAEROBIC_ALKALINE_LB_MEDIUM
+- anaerobic_alkaline_lb_medium

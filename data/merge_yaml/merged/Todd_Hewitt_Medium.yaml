@@ -1,44 +1,130 @@
-name: Todd Hewitt Medium
-original_name: Todd Hewitt Medium
-category: imported
+id: CultureMech:006321
+name: todd_hewitt_medium
+original_name: TODD-HEWITT medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Bacto Todd Hewitt Broth (Difco)
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+ph_value: 7.8
 media_term:
-  preferred_term: TOGO Medium M1524
+  preferred_term: KOMODO Medium 697
   term:
-    id: TOGO:M1524
-    label: Todd Hewitt Medium
-notes: 'Source: https://togomedium.org/medium/M1524
-
-  Original source: NBRC - NBRC_M311
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=311'
+    id: komodo.medium:697
+    label: TODD-HEWITT medium
+notes: 'Source: KOMODO ModelSEED | ID: 697 | DSMZ Medium: 697 (mediadive.medium:697)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Meat infusion
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000243
+    label: Dextrose
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.796357Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1524'
-- timestamp: '2026-01-28T19:48:09.799260Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 99c19b0dded05d329162d163ce5cec7cec9dd071e6b7aa8c8205d43ac53a5abc
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 697'
+- timestamp: '2026-02-03T11:19:14.103255'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 697
+- timestamp: '2026-03-13T06:19:39.725655Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006321'
+- timestamp: '2026-03-17T06:30:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:56.876351+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TODD-HEWITT medium" to "todd_hewitt_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:30.738502+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_697_TODD-HEWITT_medium, medium_697_modified_for_dsm_10695,
+    medium_697_modified_for_dsm_11867, medium_697_modified_for_dsm_11868, medium_697_modified_for_dsm_20566,
+    medium_697_modified_for_dsm_20617, medium_697_modified_for_dsm_24048, todd_hewitt_medium'
+synonyms:
+- name: medium_697_modified_for_dsm_10695
+  source: KOMODO
+  source_id: komodo.medium:697_10695
+  original_category: bacterial
+- name: medium_697_modified_for_dsm_11867
+  source: KOMODO
+  source_id: komodo.medium:697_11867
+  original_category: bacterial
+- name: medium_697_modified_for_dsm_11868
+  source: KOMODO
+  source_id: komodo.medium:697_11868
+  original_category: bacterial
+- name: medium_697_modified_for_dsm_20566
+  source: KOMODO
+  source_id: komodo.medium:697_20566
+  original_category: bacterial
+- name: medium_697_modified_for_dsm_20617
+  source: KOMODO
+  source_id: komodo.medium:697_20617
+  original_category: bacterial
+- name: medium_697_modified_for_dsm_24048
+  source: KOMODO
+  source_id: komodo.medium:697_24048
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M1524_Todd_Hewitt_Medium
+- KOMODO_697_TODD-HEWITT_medium
+- medium_697_modified_for_dsm_10695
+- medium_697_modified_for_dsm_11867
+- medium_697_modified_for_dsm_11868
+- medium_697_modified_for_dsm_20566
+- medium_697_modified_for_dsm_20617
+- medium_697_modified_for_dsm_24048
+- todd_hewitt_medium
+merge_fingerprint: f3182b414d05338cb66d4a7622672a6871e663ebcc33a7dab7ba15cc7b3f04d2

@@ -1,0 +1,213 @@
+id: CultureMech:001277
+name: 70_30_sporulation_medium
+original_name: 70:30 sporulation medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: DSMZ Medium 1874
+  term:
+    id: mediadive.medium:1874
+    label: 70:30 sporulation medium
+notes: 'Source: DSMZ
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '63'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: Ammonium Sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium Sulfate
+- preferred_term: Tris base
+  term:
+    id: CHEBI:9754
+    label: Tris base
+  concentration:
+    value: '1.06'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000880
+    label: Tris base
+- preferred_term: Calf brains
+  term:
+    id: UBERON:0000955
+    label: brain
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
+- preferred_term: Beef heart
+  term:
+    id: UBERON:0000948
+    label: heart
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
+- preferred_term: Proteose peptone
+  term:
+    id: FOODON:03302071
+    label: proteose peptone
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:17234
+    label: D-glucose
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
+  synonyms:
+  - synonym_text: glucose
+    synonym_type: EXACT
+  - synonym_text: D-glucose
+    synonym_type: EXACT
+  - synonym_text: dextrose
+    synonym_type: EXACT
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: Disodium phosphate
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: Na2HPO4
+    synonym_type: EXACT
+  - synonym_text: disodium hydrogen phosphate
+    synonym_type: EXACT
+  - synonym_text: sodium phosphate dibasic
+    synonym_type: EXACT
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: L-Cysteine
+  term:
+    id: CHEBI:17561
+    label: L-Cysteine
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: L-Cysteine
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 2
+  action: HEAT
+  description: Add cysteine solution after cooling to approximately 65°C.
+- step_number: 3
+  action: HEAT
+  description: Store plates at 4°C for up to 1 week.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Filtrate (pore size 0.22 µm).
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1371/journal.pgen.1003660
+curation_history:
+- timestamp: '2026-01-26T17:53:15.565440Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1874'
+- timestamp: '2026-03-13T06:19:02.764652Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001277'
+- timestamp: '2026-03-17T06:29:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.617560+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "70:30 sporulation medium" to "70_30_sporulation_medium"
+    for consistent matching
+merge_fingerprint: f15e228388e94a9331203cf5325e44125bf32bda627ab256141ff18d026822a3
+merged_from:
+- 70_30_sporulation_medium

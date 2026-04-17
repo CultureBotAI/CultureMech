@@ -1,8 +1,9 @@
-name: ALB Medium
+id: CultureMech:008403
+name: alb_medium
 original_name: ALB Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,12 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: Na2CO3*
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -48,6 +49,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 media_term:
   preferred_term: TOGO Medium M1830
   term:
@@ -73,6 +77,35 @@ curation_history:
   date: '2026-02-03T11:20:50.078983'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
-merge_fingerprint: 027e68872e783b001630423baecb247fc81cd31b4cc96a76f58b0ec756e649a6
+- timestamp: '2026-03-09T08:04:36.983366+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:56.484047Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008403'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:51.590884'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.052768+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ALB Medium" to "alb_medium" for consistent matching
+solutions:
+- preferred_term: Na2CO3*
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  name: Unknown solution
+merge_fingerprint: 78b09202496e4dfc81c44276470e31882f4b0d133f6c5454c9470ab3042291f5
 merged_from:
-- TOGO_M1830_ALB_Medium
+- alb_medium

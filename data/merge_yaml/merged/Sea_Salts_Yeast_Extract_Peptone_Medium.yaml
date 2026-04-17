@@ -1,6 +1,7 @@
-name: SEA SALTS YEAST EXTRACT PEPTONE MEDIUM
+id: CultureMech:010492
+name: sea_salts_yeast_extract_peptone_medium
 original_name: SEA SALTS YEAST EXTRACT PEPTONE MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -37,6 +41,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000864
+    label: Ferric citrate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -49,6 +56,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1141'
+- timestamp: '2026-03-13T06:20:14.054727Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010492'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.060519+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SEA SALTS YEAST EXTRACT PEPTONE MEDIUM" to "sea_salts_yeast_extract_peptone_medium"
+    for consistent matching
 merge_fingerprint: 3154bd30e8433c800eed7157e71fe784a9d010c405a82cea7ed79b48780da358
 merged_from:
-- JCM_J1141_SEA_SALTS_YEAST_EXTRACT_PEPTONE_MEDIUM
+- sea_salts_yeast_extract_peptone_medium

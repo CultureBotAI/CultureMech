@@ -1,15 +1,17 @@
-name: CENTENUM MEDIUM
-original_name: CENTENUM MEDIUM
-category: imported
+id: CultureMech:006227
+name: centenum_medium
+original_name: CENTENUM medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
-  preferred_term: DSMZ Medium 650
+  preferred_term: KOMODO Medium 650
   term:
-    id: mediadive.medium:650
-    label: CENTENUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium650.pdf'
+    id: komodo.medium:650
+    label: CENTENUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 650 | DSMZ Medium: 650 (mediadive.medium:650)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -36,6 +44,9 @@ ingredients:
   concentration:
     value: 2e-05
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: Tap water
   term:
     id: CHEBI:15377
@@ -43,6 +54,9 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Tap water
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
@@ -50,39 +64,46 @@ ingredients:
   concentration:
     value: '1.741'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0.
-- step_number: 2
-  action: AUTOCLAVE
-  description: Boil under nitrogen gas and autoclave at 121°C for 15 min. Add 20 mM
-    pyruvate after autoclaving.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000367
+    label: Pyruvate
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.841054Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 650'
-- timestamp: '2026-02-19T08:26:52.462299+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 650'
+- timestamp: '2026-02-03T11:19:05.825349'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 650
+- timestamp: '2026-03-13T06:19:39.137041Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006227'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:56.193401+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CENTENUM medium" to "centenum_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:30.137078+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_650_CENTENUM_MEDIUM, KOMODO_650-8319_MEDIUM_650_MODIFIED_FOR_DSM_8319,
-    KOMODO_650_CENTENUM_medium'
+  notes: 'Sources: KOMODO_650_CENTENUM_medium, centenum_medium, medium_650_modified_for_dsm_8319'
 synonyms:
-- name: MEDIUM 650 MODIFIED FOR DSM 8319
+- name: medium_650_modified_for_dsm_8319
   source: KOMODO
   source_id: komodo.medium:650_8319
-  original_category: imported
-- name: CENTENUM medium
-  source: KOMODO
-  source_id: komodo.medium:650
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_650_CENTENUM_MEDIUM
-- KOMODO_650-8319_MEDIUM_650_MODIFIED_FOR_DSM_8319
 - KOMODO_650_CENTENUM_medium
+- centenum_medium
+- medium_650_modified_for_dsm_8319
 merge_fingerprint: e2738ffe702c672711c91f84fce3a936d8b0962ce24158fea56af577b9b7a4c9

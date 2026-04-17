@@ -1,6 +1,7 @@
-name: Reconstituted skim milk medium
+id: CultureMech:009426
+name: reconstituted_skim_milk_medium
 original_name: Reconstituted skim milk medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -32,6 +36,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 media_term:
   preferred_term: TOGO Medium M2890
   term:
@@ -49,6 +56,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.150945Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009426'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.103541+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Reconstituted skim milk medium" to "reconstituted_skim_milk_medium"
+    for consistent matching
 merge_fingerprint: 9061291c832b5b87e2a21029ee41a5366c64152a2bdfd5f29545b199a50258fd
 merged_from:
-- TOGO_M2890_Reconstituted_skim_milk_medium
+- reconstituted_skim_milk_medium

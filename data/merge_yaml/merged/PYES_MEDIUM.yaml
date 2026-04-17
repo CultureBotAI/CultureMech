@@ -1,15 +1,17 @@
-name: PYES MEDIUM
-original_name: PYES MEDIUM
-category: imported
+id: CultureMech:006859
+name: pyes_medium
+original_name: PYES medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
-  preferred_term: DSMZ Medium 937
+  preferred_term: KOMODO Medium 937
   term:
-    id: mediadive.medium:937
-    label: PYES MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium937.pdf'
+    id: komodo.medium:937
+    label: PYES medium
+notes: 'Source: KOMODO ModelSEED | ID: 937 | DSMZ Medium: 937 (mediadive.medium:937)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
@@ -26,6 +28,9 @@ ingredients:
   concentration:
     value: '2.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: Sodium succinate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -34,34 +39,46 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Final pH 7.2. Liquid media may be solidified by adding 15 g/l agar.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.827093Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 937'
-- timestamp: '2026-02-19T08:26:57.213040+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 937'
+- timestamp: '2026-02-03T11:19:05.025916'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 937
+- timestamp: '2026-03-13T06:19:44.422142Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006859'
+- timestamp: '2026-03-17T06:30:11.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.341646+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PYES medium" to "pyes_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:35.091567+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_937_PYES_MEDIUM, KOMODO_937_PYES_medium, KOMODO_937a_MODIFIED_PYES_medium'
+  notes: 'Sources: KOMODO_937_PYES_medium, KOMODO_937a_MODIFIED_PYES_medium, pyes_medium'
+kg_microbe_match: mediadive.medium:937
 synonyms:
-- name: PYES medium
-  source: KOMODO
-  source_id: komodo.medium:937
-  original_category: imported
-- name: MODIFIED PYES medium
+- name: modified_pyes_medium
   source: KOMODO
   source_id: komodo.medium:937a
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_937_PYES_MEDIUM
 - KOMODO_937_PYES_medium
 - KOMODO_937a_MODIFIED_PYES_medium
+- pyes_medium
 merge_fingerprint: b3ed3e9a651c44d979410e9a7fadc89016c6cf8e89ff11b71c1787a4255b962d

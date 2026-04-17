@@ -1,0 +1,141 @@
+id: CultureMech:002269
+name: r_agar_ph_9_0
+original_name: R AGAR (pH 9.0)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J1089
+  term:
+    id: mediadive.medium:J1089
+    label: R AGAR (pH 9.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1089'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
+- preferred_term: Beef extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare R agar (see Medium No. 26). After autoclaving, adjust pH to
+    9.0 with sterilized 10% Na2CO3 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.590784Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1089'
+- timestamp: '2026-02-03T11:26:52.897405'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:11.811584Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002269'
+- timestamp: '2026-03-17T19:45:24.682494+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R AGAR (pH 9.0)" to "r_agar_ph_9_0" for consistent
+    matching
+- timestamp: '2026-04-04T21:34:20.692015'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (9 ingredients)
+  source: CultureMech:002627
+  notes: Resolved reference by copying from r_agar (CultureMech:002627)
+- timestamp: '2026-04-04T21:40:32.859003'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (9 ingredients)
+  source: CultureMech:002627
+  notes: Resolved reference by copying from r_agar (CultureMech:002627)
+- timestamp: '2026-04-04T21:48:41.096300'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (9 ingredients)
+  source: CultureMech:002627
+  notes: Resolved reference by copying from r_agar (CultureMech:002627)
+- timestamp: '2026-04-17T06:30:20.834018+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: r_agar, r_agar_ph_9_0'
+data_quality_flags:
+  incomplete_composition: false
+  resolved_reference: true
+synonyms:
+- name: r_agar
+  source: MediaDive
+  source_id: mediadive.medium:J26
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- r_agar
+- r_agar_ph_9_0
+merge_fingerprint: 00f3e1f781625dac10cb90e071a99bd2d189d748347a474a77a3931d18b06b5e

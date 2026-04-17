@@ -1,6 +1,7 @@
-name: BB
+id: CultureMech:000320
+name: bb
 original_name: BB
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -17,6 +18,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -24,6 +28,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -31,6 +38,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -38,6 +48,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -45,6 +58,9 @@ ingredients:
   concentration:
     value: '23.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -52,6 +68,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -59,6 +78,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -66,6 +88,9 @@ ingredients:
   concentration:
     value: '8.82'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -73,6 +98,9 @@ ingredients:
   concentration:
     value: '1.44'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: MoO3
   term:
     id: CHEBI:30627
@@ -80,6 +108,9 @@ ingredients:
   concentration:
     value: '0.71'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000383
+    label: MoO3
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -87,6 +118,9 @@ ingredients:
   concentration:
     value: '1.57'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
     id: CHEBI:86214
@@ -94,6 +128,9 @@ ingredients:
   concentration:
     value: '0.49'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000525
+    label: Co(NO3)2 x 6 H2O
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -101,6 +138,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: KOH
   term:
     id: CHEBI:32035
@@ -108,6 +148,9 @@ ingredients:
   concentration:
     value: '31'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -115,6 +158,9 @@ ingredients:
   concentration:
     value: '4.98'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -122,6 +168,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -133,6 +182,18 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C13'
+- timestamp: '2026-03-13T06:18:54.427779Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000320'
+- timestamp: '2026-03-17T06:30:31.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.401920+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BB" to "bb" for consistent matching
 merge_fingerprint: e3f0e938eb3b73e6ecf2d870bd62694715892a1fb089e5fedc88b4809cdbd035
 merged_from:
-- CCAP_C13_BB
+- bb

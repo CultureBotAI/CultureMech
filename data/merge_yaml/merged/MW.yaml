@@ -1,6 +1,7 @@
-name: MW
+id: CultureMech:000369
+name: mw
 original_name: MW
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -27,6 +28,14 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C58'
+- timestamp: '2026-03-13T06:18:54.809068Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000369'
+- timestamp: '2026-03-17T19:45:05.816193+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MW" to "mw" for consistent matching
 merge_fingerprint: 2aaeafe0d5ee409d6b58a7ec2d9d542f5732e5856f159376127184baf229485f
 merged_from:
-- CCAP_C58_MW
+- mw

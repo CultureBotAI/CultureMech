@@ -1,15 +1,17 @@
-name: RHODOBACTER ADRIATICUS MEDIUM
+id: CultureMech:005067
+name: rhodobacter_adriaticus_medium
 original_name: RHODOBACTER ADRIATICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
-  preferred_term: DSMZ Medium 351
+  preferred_term: KOMODO Medium 351
   term:
-    id: mediadive.medium:351
+    id: komodo.medium:351
     label: RHODOBACTER ADRIATICUS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium351.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 351 | DSMZ Medium: 351 (mediadive.medium:351)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Na acetate
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '0.82'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na acetate
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -29,6 +34,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -36,6 +44,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -43,6 +54,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -50,6 +64,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -57,6 +74,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -64,6 +84,9 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Na-ascorbate
   term:
     id: CHEBI:113451
@@ -71,6 +94,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001044
+    label: Na-ascorbate
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -78,6 +104,9 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -85,6 +114,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -92,6 +124,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -99,6 +134,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -106,6 +144,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -113,6 +154,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -120,6 +164,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -127,6 +174,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -134,6 +184,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -141,6 +194,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Nicotinic acid amide
   term:
     id: CHEBI:17154
@@ -148,6 +204,9 @@ ingredients:
   concentration:
     value: '0.35'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000539
+    label: Nicotinic acid amide
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -155,6 +214,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -162,6 +224,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Pyridoxal hydrochloride
   term:
     id: CHEBI:131529
@@ -169,6 +234,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000417
+    label: Pyridoxal hydrochloride
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -176,6 +244,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -183,6 +254,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -190,45 +264,40 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0.
-- step_number: 2
-  action: POUR_PLATES
-  description: Prepare the medium under an atmosphere of N2. Dispense into screw capped
-    or crimp top bottles fitted with a rubber septum, or Hungate tubes.
-- step_number: 3
-  action: AUTOCLAVE
-  description: Autoclave at 121 °C for 15 min.
-- step_number: 4
-  action: FILTER_STERILIZE
-  description: After sterilization add filter-sterilized vitamin and neutralized sulfide
-    solutions.
-- step_number: 5
-  action: ADJUST_PH
-  description: Adjust pH to 2.0 - 3.0.
-- step_number: 6
-  action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
-    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
-    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
-    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
-    a syringe without opening the bottle.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.888695Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 351'
-- timestamp: '2026-02-19T08:26:46.847745+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 351'
+- timestamp: '2026-02-03T11:19:13.892742'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 351
+- timestamp: '2026-03-13T06:19:29.916660Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005067'
+- timestamp: '2026-03-17T06:30:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:45.570666+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RHODOBACTER ADRIATICUS MEDIUM" to "rhodobacter_adriaticus_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:22.492864+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_351_RHODOBACTER_ADRIATICUS_MEDIUM, KOMODO_351_RHODOBACTER_ADRIATICUS_MEDIUM'
+  notes: 'Sources: KOMODO_351_RHODOBACTER_ADRIATICUS_MEDIUM, rhodobacter_adriaticus_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_351_RHODOBACTER_ADRIATICUS_MEDIUM
 - KOMODO_351_RHODOBACTER_ADRIATICUS_MEDIUM
+- rhodobacter_adriaticus_medium
 merge_fingerprint: 39b5307e0466e8d50aa686bd0bcee2a6c5b8a8761f09e77feeb82ccb04910f8c

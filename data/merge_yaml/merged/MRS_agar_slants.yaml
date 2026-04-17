@@ -1,6 +1,7 @@
-name: MRS agar slants
+id: CultureMech:009005
+name: mrs_agar_slants
 original_name: MRS agar slants
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: YE
   concentration:
     value: '4'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: sodium acetate
   concentration:
     value: '5'
@@ -43,6 +53,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
     label: sodium acetate
 - preferred_term: CaCO3
   concentration:
@@ -53,18 +66,27 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: MnSO4·H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: triammonium citrate
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:63037
+    label: ''
 - preferred_term: glucose
   concentration:
     value: '20'
@@ -74,6 +96,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: glucose
 - preferred_term: ‘Lab-Lemco’ powder
   concentration:
     value: '8'
@@ -100,6 +125,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 2bc02b2f86f05bbca517a3f963459724a42d9af24532980425e499c44801af42
+- timestamp: '2026-03-13T06:20:01.926631Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009005'
+- timestamp: '2026-03-17T06:30:34.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.676944+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MRS agar slants" to "mrs_agar_slants" for consistent
+    matching
+merge_fingerprint: 4a8a263a3fd953811d7c483574fa0ef6f4d9dc377db3b4a57feaf575077f8ea8
 merged_from:
-- TOGO_M2422_MRS_agar_slants
+- mrs_agar_slants

@@ -1,160 +1,129 @@
-name: Cellulosilyticum Ruminicola Medium
-original_name: Cellulosilyticum Ruminicola Medium
-category: imported
+id: CultureMech:002985
+name: cellulosilyticum_ruminicola_medium
+original_name: CELLULOSILYTICUM RUMINICOLA MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J639
+  term:
+    id: mediadive.medium:J639
+    label: CELLULOSILYTICUM RUMINICOLA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=639'
 ingredients:
-- preferred_term: Solution A
-  concentration:
-    value: '800'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Solution C
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: L--cysteine・HCl・H2O
-  notes: 'Properties: Defined component, Organic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '600'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '0.9'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: NaCl
-  concentration:
-    value: '0.9'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.9'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
 - preferred_term: (NH4)2SO4
-  concentration:
-    value: '0.9'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
   term:
     id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: Cellobiose
+    label: (NH4)2SO4
   concentration:
-    value: '2.5'
+    value: '1.125'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1.125'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1.125'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.125'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: Cellobiose
   term:
     id: CHEBI:17057
-    label: cellobiose
-- preferred_term: Rumen fluid, clarified (see Medium [M258])
+    label: Cellobiose
+  concentration:
+    value: '3.125'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
+- preferred_term: Rumen fluid
   concentration:
     value: '200'
     unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  notes: ' ( clarified)'
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.45'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: K2HPO4
   concentration:
-    value: '0.45'
+    value: '4.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: Distilled water
+    label: K2HPO4
   concentration:
-    value: '100'
+    value: '4.5'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaHCO3
-  concentration:
-    value: '3.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
   term:
     id: CHEBI:32139
-    label: sodium hydrogencarbonate
-media_term:
-  preferred_term: TOGO Medium M653
-  term:
-    id: TOGO:M653
-    label: Cellulosilyticum Ruminicola Medium
-notes: 'Source: https://togomedium.org/medium/M653
-
-  Original source: JCM - JCM_M639
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=639'
+    label: NaHCO3
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave Solutions A and B separately and filter-sterilize Solution
+    C. Combine the three solutions, distribute into culture vessels under a stream
+    of N2-CO2 (80:20, v/v) and seal with butyl rubber stoppers. Prior to inoculation,
+    reduce the medium with 0.05% L-cysteine x HCl x H2O (autoclaved as a 5% solution
+    under a N2 atmosphere).
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.471879Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M653'
-- timestamp: '2026-01-28T19:48:19.366955Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.905490'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: L--cysteine・HCl・H2O; Added default
-    concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas'
-merge_fingerprint: dd8c69c03562e126d76ddba1fad0c0571f76a6f48968f70e3506d78d6ec11c25
+- timestamp: '2026-01-26T17:53:17.158143Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J639'
+- timestamp: '2026-03-13T06:19:16.972396Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002985'
+- timestamp: '2026-03-17T06:30:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.596712+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CELLULOSILYTICUM RUMINICOLA MEDIUM" to "cellulosilyticum_ruminicola_medium"
+    for consistent matching
+merge_fingerprint: 57b6086830d6c04eb4db219caba5d3e89780fb654ba0e21542ebc22a3f616e7e
 merged_from:
-- TOGO_M653_Cellulosilyticum_Ruminicola_Medium
+- cellulosilyticum_ruminicola_medium

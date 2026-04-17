@@ -1,17 +1,21 @@
-name: Alkaliphilic Sulphur Respiring Strains Medium
+id: CultureMech:009037
+name: alkaliphilic_sulphur_respiring_strains_medium
 original_name: Alkaliphilic Sulphur Respiring Strains Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
+    value: '3000.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 3 duplicates: 1000.0, 1000.0, 1000.0]'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
   concentration:
     value: '1'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaHCO3
   concentration:
     value: '10'
@@ -40,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Na2CO3
   concentration:
     value: '20'
@@ -49,15 +62,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '30'
@@ -67,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4 x 2 H2O
 - preferred_term: H3BO3
   concentration:
     value: '300'
@@ -76,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '2'
@@ -85,12 +98,21 @@ ingredients:
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '30'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '200'
@@ -100,6 +122,9 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '20'
@@ -109,6 +134,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '100'
@@ -118,6 +146,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuCl2 x 2 H2O
   concentration:
     value: '10'
@@ -127,6 +158,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: EDTA
   concentration:
     value: '5'
@@ -135,6 +169,9 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
@@ -144,29 +181,15 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: MgCl2 x 6 H2O (200.0 g/l)
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: Trace elements solution
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: KSCN solution (2 M -194 g/l)
-  concentration:
-    value: '15'
-    unit: MILLIMOLAR
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: KSCN
   concentration:
     value: '194'
@@ -175,6 +198,9 @@ ingredients:
   term:
     id: CHEBI:30951
     label: potassium thiocyanate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000608
+    label: KSCN
 media_term:
   preferred_term: TOGO Medium M2459
   term:
@@ -198,6 +224,48 @@ curation_history:
   date: '2026-02-03T11:20:53.816384'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
-merge_fingerprint: 181d390bbdb8f1cf67dd4079529061ae113c688f4c09052dd758945ceba6a671
+- timestamp: '2026-03-09T08:04:25.654968+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:54.169457Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:02.108130Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009037'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:55.724164'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.871068+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Alkaliphilic Sulphur Respiring Strains Medium" to "alkaliphilic_sulphur_respiring_strains_medium"
+    for consistent matching
+high_metal: true
+solutions:
+- preferred_term: Trace elements solution
+  term:
+    id: mediadive.solution:6129
+    label: Trace elements solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: See mediadive_6129_Trace_elements_solution.yaml for composition
+  name: Unknown solution
+- preferred_term: KSCN solution (2 M -194 g/l)
+  composition: []
+  concentration:
+    value: '15'
+    unit: MILLIMOLAR
+  name: Unknown solution
+merge_fingerprint: a8b3057915a85fa0d06bf24a9287dc3756a26826d25578c0e1a91bac4e8dc413
 merged_from:
 - TOGO_M2459_Alkaliphilic_Sulphur_Respiring_Strains_Medium

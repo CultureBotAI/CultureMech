@@ -1,6 +1,7 @@
-name: CYS Medium For YMO722
+id: CultureMech:010028
+name: cys_medium_for_ymo722
 original_name: CYS Medium For YMO722
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '20'
@@ -22,24 +26,36 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.025'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.125'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Soluble starch (BD-Difco)
   concentration:
     value: '1'
@@ -116,18 +132,32 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:27:01.866504+00:00'
+- timestamp: '2026-03-13T06:20:10.811403Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010028'
+- timestamp: '2026-03-17T06:29:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.737428+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CYS Medium For YMO722" to "cys_medium_for_ymo722" for
+    consistent matching
+- timestamp: '2026-04-17T06:29:49.769851+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M627_CYS_Medium, TOGO_M628_CYS_Medium_For_YMO722'
+high_metal: true
 synonyms:
-- name: CYS Medium
+- name: cys_medium
   source: TOGO
   source_id: TOGO:M627
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
 - TOGO_M627_CYS_Medium
 - TOGO_M628_CYS_Medium_For_YMO722
-merge_fingerprint: eb7a137c39a80ee835dc381378db6220b113af13c6564e0a161ba2204a2101ce
+merge_fingerprint: b58d520c4a52bfbe4a94922c58755f2d310391f3e671fe1381e37231b8348920

@@ -1,6 +1,7 @@
-name: Medium for strain JA317
+id: CultureMech:008398
+name: medium_for_strain_ja317
 original_name: Medium for strain JA317
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.5'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Na2S·9H2O
   concentration:
     value: '0.12'
@@ -45,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S·9H2O
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1'
@@ -54,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Peptone
   concentration:
     value: '10'
@@ -63,6 +79,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M1826
   term:
@@ -88,6 +107,19 @@ curation_history:
   date: '2026-02-03T11:20:50.055960'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: 855fe93d6f6a7e4919019a62537b8c681d8398296ba677c4879dedd7b3dd6b6d
+- timestamp: '2026-03-13T06:19:56.447992Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008398'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.015919+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Medium for strain JA317" to "medium_for_strain_ja317"
+    for consistent matching
+merge_fingerprint: 1a0b9273ed28f8e8942e49a63db7b9e8baf67d2e1f5777dc6b0342163976d186
 merged_from:
-- TOGO_M1826_Medium_for_strain_JA317
+- medium_for_strain_ja317

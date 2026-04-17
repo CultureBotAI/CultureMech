@@ -1,6 +1,7 @@
-name: BHI MEDIUM WITH ADDITIONAL GLUCOSE
+id: CultureMech:001316
+name: bhi_medium_with_additional_glucose
 original_name: BHI MEDIUM WITH ADDITIONAL GLUCOSE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,12 +9,118 @@ media_term:
   term:
     id: mediadive.medium:215b
     label: BHI MEDIUM WITH ADDITIONAL GLUCOSE
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium215b.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium215b.pdf
+
+
+  Commercial Product: Brain Heart Infusion
+
+  Supplier: Difco/BD
+
+  Catalog: 237500
+
+  Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
-- preferred_term: Brain heart infusion
+- preferred_term: Calf brains
+  term:
+    id: UBERON:0000955
+    label: brain
   concentration:
-    value: '37'
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
+- preferred_term: Beef heart
+  term:
+    id: UBERON:0000948
+    label: heart
+  concentration:
+    value: variable
+    unit: VARIABLE
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
+- preferred_term: Proteose peptone
+  term:
+    id: FOODON:03302071
+    label: proteose peptone
+  concentration:
+    value: '10.0'
     unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:17234
+    label: D-glucose
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
+  synonyms:
+  - synonym_text: glucose
+    synonym_type: EXACT
+  - synonym_text: D-glucose
+    synonym_type: EXACT
+  - synonym_text: dextrose
+    synonym_type: EXACT
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: Disodium phosphate
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Difco/BD Brain Heart Infusion
+    catalog_number: '237500'
+    product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
+  synonyms:
+  - synonym_text: Na2HPO4
+    synonym_type: EXACT
+  - synonym_text: disodium hydrogen phosphate
+    synonym_type: EXACT
+  - synonym_text: sodium phosphate dibasic
+    synonym_type: EXACT
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -21,6 +128,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 applications:
 - Microbial cultivation
 curation_history:
@@ -28,6 +138,190 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 215b'
-merge_fingerprint: 4e54e47e2a9524dbe5ce6745f1606e4ccb5cf5aba2b7defaaf6ebb788ab25ccf
+- timestamp: '2026-03-13T06:19:03.175911Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001316'
+- timestamp: '2026-03-17T06:29:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:15.069591+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BHI MEDIUM WITH ADDITIONAL GLUCOSE" to "bhi_medium_with_additional_glucose"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:20.311085+00:00'
+  curator: recipe-merger
+  action: Merged 33 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_215_BHI_medium, KOMODO_215a_BHI_medium_modified, KOMODO_215b_BHI_medium_WITH_ADDITIONAL_GLUCOSE,
+    KOMODO_215c_BHI_medium_FOR_STRICT_ANAEROBES, NBRC_1245, TOGO_M2511_brain_heart_infusion_broth,
+    TOGO_M2971_Brain_Heart_Infusion_Agar, bhi_agar, bhi_broth, bhi_medium, bhi_medium_with_additional_glucose,
+    brain_heart_agar_bhi_luqiao_beijing, brain_heart_infusion_bhi_broth, brain_heart_infusion_bhi_difco_agar,
+    brain_heart_infusion_broth_bhi_oxoid, brain_heart_infusion_broth_himedia, brain_heart_infusion_media,
+    brain_heart_infusion_with_5_nacl, for_dsm_10643, for_dsm_19851, medium_215_modified_for_dsm_10548,
+    medium_215_modified_for_dsm_10599, medium_215_modified_for_dsm_13140, medium_215_modified_for_dsm_13191,
+    medium_215_modified_for_dsm_13666, medium_215_modified_for_dsm_13667, medium_215_modified_for_dsm_21511,
+    medium_215_modified_for_dsm_22834, medium_215_modified_for_dsm_23150, medium_215_modified_for_dsm_25050,
+    medium_215_modified_for_dsm_8629, medium_215b_modified_for_dsm_41834, modified_bhi'
+synonyms:
+- name: bhi_medium
+  source: KOMODO
+  source_id: komodo.medium:215
+  original_category: bacterial
+- name: bhi_medium_modified
+  source: KOMODO
+  source_id: komodo.medium:215a
+  original_category: bacterial
+- name: bhi_medium_for_strict_anaerobes
+  source: KOMODO
+  source_id: komodo.medium:215c
+  original_category: bacterial
+- name: '1245'
+  source: unknown
+  original_category: bacterial
+- name: brain_heart_infusion_broth
+  source: TOGO
+  source_id: TOGO:M2511
+  original_category: bacterial
+- name: brain_heart_infusion_agar
+  source: TOGO
+  source_id: TOGO:M2971
+  original_category: bacterial
+- name: bhi_agar
+  source: TOGO
+  source_id: TOGO:M2982
+  original_category: bacterial
+- name: bhi_broth
+  source: TOGO
+  source_id: TOGO:M2485
+  original_category: bacterial
+- name: bhi_medium
+  source: MediaDive
+  source_id: mediadive.medium:215
+  original_category: bacterial
+- name: brain_heart_agar_bhi_luqiao_beijing
+  source: TOGO
+  source_id: TOGO:M2898
+  original_category: bacterial
+- name: brain_heart_infusion_bhi_broth
+  source: TOGO
+  source_id: TOGO:M2507
+  original_category: bacterial
+- name: brain_heart_infusion_bhi_difco_agar
+  source: TOGO
+  source_id: TOGO:M2956
+  original_category: bacterial
+- name: brain_heart_infusion_broth_bhi_oxoid
+  source: TOGO
+  source_id: TOGO:M2905
+  original_category: bacterial
+- name: brain_heart_infusion_broth_himedia
+  source: TOGO
+  source_id: TOGO:M2881
+  original_category: bacterial
+- name: brain_heart_infusion_media
+  source: TOGO
+  source_id: TOGO:M2837
+  original_category: bacterial
+- name: brain_heart_infusion_with_5_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J72
+  original_category: bacterial
+- name: for_dsm_10643
+  source: KOMODO
+  source_id: komodo.medium:215c.1
+  original_category: bacterial
+- name: for_dsm_19851
+  source: KOMODO
+  source_id: komodo.medium:215c.3
+  original_category: bacterial
+- name: medium_215_modified_for_dsm_10548
+  source: KOMODO
+  source_id: komodo.medium:215_10548
+  original_category: bacterial
+- name: medium_215_modified_for_dsm_10599
+  source: KOMODO
+  source_id: komodo.medium:215_10599
+  original_category: bacterial
+- name: medium_215_modified_for_dsm_13140
+  source: KOMODO
+  source_id: komodo.medium:215_13140
+  original_category: bacterial
+- name: medium_215_modified_for_dsm_13191
+  source: KOMODO
+  source_id: komodo.medium:215_13191
+  original_category: bacterial
+- name: medium_215_modified_for_dsm_13666
+  source: KOMODO
+  source_id: komodo.medium:215_13666
+  original_category: bacterial
+- name: medium_215_modified_for_dsm_13667
+  source: KOMODO
+  source_id: komodo.medium:215_13667
+  original_category: bacterial
+- name: medium_215_modified_for_dsm_21511
+  source: KOMODO
+  source_id: komodo.medium:215_21511
+  original_category: bacterial
+- name: medium_215_modified_for_dsm_22834
+  source: KOMODO
+  source_id: komodo.medium:215_22834
+  original_category: bacterial
+- name: medium_215_modified_for_dsm_23150
+  source: KOMODO
+  source_id: komodo.medium:215_23150
+  original_category: bacterial
+- name: medium_215_modified_for_dsm_25050
+  source: KOMODO
+  source_id: komodo.medium:215_25050
+  original_category: bacterial
+- name: medium_215_modified_for_dsm_8629
+  source: KOMODO
+  source_id: komodo.medium:215_8629
+  original_category: bacterial
+- name: medium_215b_modified_for_dsm_41834
+  source: KOMODO
+  source_id: komodo.medium:215b_41834
+  original_category: bacterial
+- name: modified_bhi
+  source: MediaDive
+  source_id: mediadive.medium:J290
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- DSMZ_215b_BHI_MEDIUM_WITH_ADDITIONAL_GLUCOSE
+- KOMODO_215_BHI_medium
+- KOMODO_215a_BHI_medium_modified
+- KOMODO_215b_BHI_medium_WITH_ADDITIONAL_GLUCOSE
+- KOMODO_215c_BHI_medium_FOR_STRICT_ANAEROBES
+- NBRC_1245
+- TOGO_M2511_brain_heart_infusion_broth
+- TOGO_M2971_Brain_Heart_Infusion_Agar
+- bhi_agar
+- bhi_broth
+- bhi_medium
+- bhi_medium_with_additional_glucose
+- brain_heart_agar_bhi_luqiao_beijing
+- brain_heart_infusion_bhi_broth
+- brain_heart_infusion_bhi_difco_agar
+- brain_heart_infusion_broth_bhi_oxoid
+- brain_heart_infusion_broth_himedia
+- brain_heart_infusion_media
+- brain_heart_infusion_with_5_nacl
+- for_dsm_10643
+- for_dsm_19851
+- medium_215_modified_for_dsm_10548
+- medium_215_modified_for_dsm_10599
+- medium_215_modified_for_dsm_13140
+- medium_215_modified_for_dsm_13191
+- medium_215_modified_for_dsm_13666
+- medium_215_modified_for_dsm_13667
+- medium_215_modified_for_dsm_21511
+- medium_215_modified_for_dsm_22834
+- medium_215_modified_for_dsm_23150
+- medium_215_modified_for_dsm_25050
+- medium_215_modified_for_dsm_8629
+- medium_215b_modified_for_dsm_41834
+- modified_bhi
+merge_fingerprint: c9f479eb46e904ba5f4f951ddac3fa23ee2c06f09ce437f640c578c867514d28

@@ -1,0 +1,81 @@
+id: CultureMech:004623
+name: peptone_meat_extract_soil_extract_agar_pfe
+original_name: Peptone - MEAT EXTRACT - SOIL EXTRACT AGAR (PFE)
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 251
+  term:
+    id: komodo.medium:251
+    label: Peptone - MEAT EXTRACT - SOIL EXTRACT AGAR (PFE)
+notes: 'Source: KOMODO ModelSEED | ID: 251 | DSMZ Medium: 251 (mediadive.medium:251)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
+- preferred_term: Soil extract
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 251'
+- timestamp: '2026-02-03T11:19:01.780494'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 251
+- timestamp: '2026-03-13T06:19:27.724469Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004623'
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:42.988419+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Peptone - MEAT EXTRACT - SOIL EXTRACT AGAR (PFE)" to
+    "peptone_meat_extract_soil_extract_agar_pfe" for consistent matching
+- timestamp: '2026-04-17T06:29:21.013446+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_251_Peptone_-_MEAT_EXTRACT_-_SOIL_EXTRACT_AGAR_PFE, peptone_meat_extract_soil_extract_agar_pfe'
+categories:
+- bacterial
+merged_from:
+- KOMODO_251_Peptone_-_MEAT_EXTRACT_-_SOIL_EXTRACT_AGAR_PFE
+- peptone_meat_extract_soil_extract_agar_pfe
+merge_fingerprint: 24dc6219c6a5662d0f59997cfb38b1ec08209c07ec73abf9e8c36749bfe75b1c

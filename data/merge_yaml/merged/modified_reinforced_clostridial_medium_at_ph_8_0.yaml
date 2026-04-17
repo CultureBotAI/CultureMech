@@ -1,0 +1,124 @@
+id: CultureMech:002442
+name: modified_reinforced_clostridial_medium_at_ph_8_0
+original_name: MODIFIED REINFORCED CLOSTRIDIAL MEDIUM AT pH 8.0
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1276
+  term:
+    id: mediadive.medium:J1276
+    label: MODIFIED REINFORCED CLOSTRIDIAL MEDIUM AT pH 8.0
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1276'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 1217 adjusted pH to 8.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.261477Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1276'
+- timestamp: '2026-02-03T11:26:53.686644'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:13.337779Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002442'
+- timestamp: '2026-03-17T19:45:26.444052+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED REINFORCED CLOSTRIDIAL MEDIUM AT pH 8.0" to
+    "modified_reinforced_clostridial_medium_at_ph_8_0" for consistent matching
+- timestamp: '2026-04-04T18:49:19.081478'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (8 ingredients)
+  source: CultureMech:002386
+  notes: Resolved reference by copying from modified_reinforced_clostridial_medium
+    (CultureMech:002386)
+- timestamp: '2026-04-17T06:30:16.804628+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: modified_reinforced_clostridial_medium, modified_reinforced_clostridial_medium_at_ph_8_0'
+data_quality_flags:
+  incomplete_composition: false
+  resolved_reference: true
+synonyms:
+- name: modified_reinforced_clostridial_medium
+  source: MediaDive
+  source_id: mediadive.medium:J1217
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- modified_reinforced_clostridial_medium
+- modified_reinforced_clostridial_medium_at_ph_8_0
+merge_fingerprint: d0480c3166977c732ef03db630ac15949f480fd415975d577f32d06977e5de53

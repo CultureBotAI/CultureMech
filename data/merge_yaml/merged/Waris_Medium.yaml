@@ -1,7 +1,8 @@
-name: Waris Medium
+id: CultureMech:000242
+name: waris_medium
 category: ALGAE
-medium_type: complex
-physical_state: liquid
+medium_type: COMPLEX
+physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
@@ -71,7 +72,15 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: waris-medium, URL: https://utex.org/products/waris-medium'
-- timestamp: '2026-02-19T08:26:36.683907+00:00'
+- timestamp: '2026-03-13T06:18:53.709037Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000242'
+- timestamp: '2026-03-17T19:45:04.611207+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Waris Medium" to "waris_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:07.782744+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: Dasycladales_Seawater_Medium, Euglena_Medium, Waris_Medium'
@@ -80,10 +89,10 @@ references:
 - reference_id: https://utex.org/products/waris-medium
 original_name: Waris Medium
 synonyms:
-- name: Dasycladales Seawater Medium
+- name: dasycladales_seawater_medium
   source: unknown
   original_category: ALGAE
-- name: Euglena Medium
+- name: euglena_medium
   source: unknown
   original_category: ALGAE
 categories:

@@ -1,6 +1,7 @@
-name: CHITINIVIBRIO MEDIUM
+id: CultureMech:000930
+name: chitinivibrio_medium
 original_name: CHITINIVIBRIO MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
@@ -16,15 +17,21 @@ ingredients:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '15'
+    value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
     label: Na2CO3
   concentration:
-    value: '95'
+    value: '22'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -39,11 +49,14 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Chitin
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: ' (adjust volume in range 1-2 if required)'
+  notes: ' (adjust in range 1 - 2 g/l if required)'
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -51,6 +64,9 @@ ingredients:
   concentration:
     value: '0.12037'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: Yeast extract
   concentration:
     value: '0.02'
@@ -62,12 +78,42 @@ ingredients:
   concentration:
     value: '0.21396'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Na2S
   term:
     id: CHEBI:76208
     label: Na2S
   concentration:
     value: '0.07906'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000783
+    label: Na2S
+- preferred_term: Thiamin
+  term:
+    id: CHEBI:18385
+    label: Thiamin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001126
+    label: Thiamin
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
+- preferred_term: B12
+  concentration:
+    value: '0.005'
     unit: G_PER_L
 - preferred_term: Biotin
   term:
@@ -76,6 +122,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: PABA
   term:
     id: CHEBI:30753
@@ -83,6 +132,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: PABA
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -90,6 +142,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709
@@ -97,6 +152,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -104,6 +162,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -111,6 +172,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -118,6 +182,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -125,6 +192,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -132,6 +202,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2
   concentration:
     value: '0.03'
@@ -143,6 +216,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -150,6 +226,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2
   term:
     id: CHEBI:49553
@@ -157,6 +236,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000821
+    label: CuCl2
 - preferred_term: NiCl2 x 2 H2O
   term:
     id: CHEBI:34887
@@ -164,6 +246,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 2 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -171,24 +256,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: Thiamin
-  term:
-    id: CHEBI:18385
-    label: Thiamin
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-- preferred_term: Calcium pantothenate
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-- preferred_term: B12
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -216,18 +286,31 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-02-19T08:26:43.508390+00:00'
+- timestamp: '2026-03-13T06:18:59.657297Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000930'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.189711+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CHITINIVIBRIO MEDIUM" to "chitinivibrio_medium" for
+    consistent matching
+- timestamp: '2026-04-17T06:29:57.832747+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1464_CHITINIVIBRIO_MEDIUM, DSMZ_1465_CHITINISPIRILLUM_MEDIUM'
+  notes: 'Sources: chitinispirillum_medium, chitinivibrio_medium'
 synonyms:
-- name: CHITINISPIRILLUM MEDIUM
+- name: chitinispirillum_medium
   source: MediaDive
   source_id: mediadive.medium:1465
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1464_CHITINIVIBRIO_MEDIUM
-- DSMZ_1465_CHITINISPIRILLUM_MEDIUM
+- chitinispirillum_medium
+- chitinivibrio_medium
 merge_fingerprint: 8a80702872612a6d3f964e5fced6c40f4f2ccd74a12f42bc95600aa46b569e43

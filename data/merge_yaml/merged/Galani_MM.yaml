@@ -1,6 +1,7 @@
-name: Galani MM
+id: CultureMech:007192
+name: galani_mm
 original_name: Galani MM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -11,6 +12,9 @@ ingredients:
   concentration:
     value: '0.019'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '0.0073'
@@ -26,6 +30,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -33,6 +40,9 @@ ingredients:
   concentration:
     value: '0.0086'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Pantothenate
   term:
     id: CHEBI:16454
@@ -41,6 +51,9 @@ ingredients:
     value: '2.3e-06'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pnto-R'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000356
+    label: Pantothenate
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -49,6 +62,9 @@ ingredients:
     value: '0.11'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -65,6 +81,18 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 291, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.716816Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007192'
+- timestamp: '2026-03-17T06:30:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.897120+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Galani MM" to "galani_mm" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 291
   term:
@@ -78,4 +106,4 @@ applications:
 - Systems biology research
 merge_fingerprint: 93115ccb74ed5f87f4d49258189c620dc0e3f4e043b39834164448b5b024b901
 merged_from:
-- MEDIADB_291_Galani_MM
+- galani_mm

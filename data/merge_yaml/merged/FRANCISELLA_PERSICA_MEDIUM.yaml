@@ -1,6 +1,7 @@
-name: FRANCISELLA PERSICA MEDIUM
+id: CultureMech:001081
+name: francisella_persica_medium
 original_name: FRANCISELLA PERSICA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '0.835196'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001005
+    label: DL-aspartic acid
 - preferred_term: L-Glutamic acid
   term:
     id: CHEBI:16015
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '1.39665'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000562
+    label: L-Glutamic acid
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '0.29228'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000220
+    label: L-Glutamine
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
@@ -43,6 +53,9 @@ ingredients:
   concentration:
     value: '0.837989'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: alpha-ketoglutaric acid
   term:
     id: CHEBI:30915
@@ -50,6 +63,9 @@ ingredients:
   concentration:
     value: '0.835196'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000825
+    label: alpha-ketoglutaric acid
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -57,20 +73,20 @@ ingredients:
   concentration:
     value: '6.25419'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Demineralized water
   term:
     id: CHEBI:15377
     label: Demineralized water
   concentration:
-    value: '346'
+    value: '371.0'
     unit: G_PER_L
-- preferred_term: Demineralized water
-  term:
-    id: CHEBI:15377
+  notes: ' [Merged 2 duplicates: 346.0, 25.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Demineralized water
-  concentration:
-    value: '25'
-    unit: G_PER_L
 - preferred_term: Tryptose-phosphate
   concentration:
     value: '5'
@@ -90,6 +106,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnSO4 x 1 H2O
   term:
     id: CHEBI:86360
@@ -97,6 +116,9 @@ ingredients:
   concentration:
     value: '16'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000605
+    label: MnSO4 x 1 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -104,6 +126,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -111,6 +136,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: Na2 MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -118,6 +146,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2 MoO4 x 2 H2O
 - preferred_term: Na2SeO3
   term:
     id: CHEBI:48843
@@ -125,6 +156,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000315
+    label: Na2SeO3
 - preferred_term: Glutathione
   term:
     id: CHEBI:16856
@@ -132,6 +166,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000466
+    label: Glutathione
 - preferred_term: Ascorbic acid
   term:
     id: CHEBI:22652
@@ -139,6 +176,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000326
+    label: Ascorbic acid
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -146,6 +186,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Para-aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -153,6 +196,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: Para-aminobenzoic acid
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -160,6 +206,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: D-Biotin
   term:
     id: CHEBI:15956
@@ -167,6 +216,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D-Biotin
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -194,6 +246,23 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1600'
+- timestamp: '2026-03-13T03:09:03.067085Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:01.041504Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001081'
+- timestamp: '2026-03-17T06:30:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:12.713450+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "FRANCISELLA PERSICA MEDIUM" to "francisella_persica_medium"
+    for consistent matching
 merge_fingerprint: 5c95929992dff909dcfd29e0b764aaa0d84c63849366b3165fa90c17eb864b6c
 merged_from:
-- DSMZ_1600_FRANCISELLA_PERSICA_MEDIUM
+- francisella_persica_medium

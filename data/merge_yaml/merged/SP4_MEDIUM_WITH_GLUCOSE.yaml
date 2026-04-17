@@ -1,6 +1,7 @@
-name: SP4 MEDIUM WITH GLUCOSE
+id: CultureMech:000509
+name: sp4_medium_with_glucose
 original_name: SP4 MEDIUM WITH GLUCOSE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.52'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Tryptone
   concentration:
     value: '9.70874'
@@ -40,12 +44,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
-    value: '3.5'
+    value: '4.5'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.5, 1.0]'
 - preferred_term: Phenol red
   term:
     id: CHEBI:31991
@@ -53,6 +54,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001075
+    label: Phenol red
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050
@@ -60,6 +64,9 @@ ingredients:
   concentration:
     value: '0.0496876'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000220
+    label: L-Glutamine
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
@@ -77,6 +84,23 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1076a'
+- timestamp: '2026-03-13T03:08:50.355711Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:55.946406Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000509'
+- timestamp: '2026-03-17T06:29:53.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:06.972416+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SP4 MEDIUM WITH GLUCOSE" to "sp4_medium_with_glucose"
+    for consistent matching
 merge_fingerprint: 9836e27474fd71d30eac00be20dbe19834486f5995a418bc87ee0c4e73fde6e2
 merged_from:
-- DSMZ_1076a_SP4_MEDIUM_WITH_GLUCOSE
+- sp4_medium_with_glucose

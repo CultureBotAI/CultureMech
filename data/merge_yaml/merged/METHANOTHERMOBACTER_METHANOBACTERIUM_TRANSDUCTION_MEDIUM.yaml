@@ -1,8 +1,9 @@
-name: METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM
+id: CultureMech:002022
+name: methanothermobacter_methanobacterium_transduction_medium
 original_name: METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 863
@@ -11,10 +12,6 @@ media_term:
     label: METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM
 notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium863.pdf'
 ingredients:
-- preferred_term: Sodium carbonate solution
-  concentration:
-    value: '59.7638'
-    unit: G_PER_L
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -22,6 +19,9 @@ ingredients:
   concentration:
     value: '14.7638'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -29,6 +29,9 @@ ingredients:
   concentration:
     value: '68'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -36,6 +39,9 @@ ingredients:
   concentration:
     value: '21.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -43,6 +49,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -50,6 +59,9 @@ ingredients:
   concentration:
     value: '9.55'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -57,6 +69,9 @@ ingredients:
   concentration:
     value: '4.06'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -64,6 +79,9 @@ ingredients:
   concentration:
     value: '0.98'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: Na2WO4 x 6 H2O
   concentration:
     value: '0.264'
@@ -75,6 +93,9 @@ ingredients:
   concentration:
     value: '0.118'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2Se2O3
   concentration:
     value: '0.1'
@@ -86,6 +107,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -93,6 +117,9 @@ ingredients:
   concentration:
     value: '0.023'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -100,6 +127,9 @@ ingredients:
   concentration:
     value: '106'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: L-Cysteine HCl
   term:
     id: CHEBI:52891
@@ -107,6 +137,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
 - preferred_term: Titanium(III) chloride
   concentration:
     value: '0.75'
@@ -118,6 +151,9 @@ ingredients:
   concentration:
     value: '2.5807'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -125,6 +161,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
@@ -167,6 +206,35 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 863'
-merge_fingerprint: 7e7cf991ecb6f623fca979d9b3b95c48b20c4fe37d1f7fd5e2eb971e8e3a7c00
+- timestamp: '2026-03-09T08:04:22.046078+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:09.495934Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002022'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:23.513615'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:53.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:22.064225+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM"
+    to "methanothermobacter_methanobacterium_transduction_medium" for consistent matching
+high_metal: true
+solutions:
+- preferred_term: Sodium carbonate solution
+  composition: []
+  concentration:
+    value: '59.7638'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 25af484ecafc2227ba2a5a925b6f63e497d9c2e5166417bcc54c317366e1f8ec
 merged_from:
-- DSMZ_863_METHANOTHERMOBACTER_METHANOBACTERIUM_TRANSDUCTION_MEDIUM
+- methanothermobacter_methanobacterium_transduction_medium

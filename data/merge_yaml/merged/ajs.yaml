@@ -1,0 +1,124 @@
+id: CultureMech:000041
+name: ajs
+category: ALGAE
+medium_type: COMPLEX
+physical_state: LIQUID
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_AJS.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  date: '2026-01-28'
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: AJS, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_AJS.pdf'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:23:39.559740'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-02-03T11:26:43.447422'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.000473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000041'
+- timestamp: '2026-03-17T19:45:03.957523+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "AJS" to "ajs" for consistent matching
+- timestamp: '2026-04-04T12:54:55.204775'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 6 curated ingredients from CCAP
+  source: CCAP Medium MR_AJS.pdf
+references:
+- reference_id: CCAP:AJS
+- reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_AJS.pdf
+ingredients:
+- preferred_term: EDTANa
+  term:
+    id: CHEBI:64734
+    label: EDTANa
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.204752'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+  source: CCAP Medium MR_AJS.pdf
+  notes: From CCAP Medium MR_AJS.pdf; Curated from CCAP Medium MR_AJS.pdf specification
+- preferred_term: MnCl .4H O
+  term:
+    id: CHEBI:86457
+    label: MnCl .4H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.204763'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.278'
+    unit: G_PER_L
+  source: CCAP Medium MR_AJS.pdf
+  notes: From CCAP Medium MR_AJS.pdf; Curated from CCAP Medium MR_AJS.pdf specification
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.204766'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+  source: CCAP Medium MR_AJS.pdf
+  notes: From CCAP Medium MR_AJS.pdf; Curated from CCAP Medium MR_AJS.pdf specification
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.204768'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+  source: CCAP Medium MR_AJS.pdf
+  notes: From CCAP Medium MR_AJS.pdf; Curated from CCAP Medium MR_AJS.pdf specification
+- preferred_term: Make up to 1 litre with deionized water. For agar, add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_AJS.pdf; Curated
+    from CCAP Medium MR_AJS.pdf specification
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_AJS.pdf
+- preferred_term: Soil is prepared as above.
+  notes: Ontology mapping not yet available; From CCAP Medium MR_AJS.pdf; Curated
+    from CCAP Medium MR_AJS.pdf specification
+  concentration:
+    value: '105'
+    unit: G_PER_L
+  source: CCAP Medium MR_AJS.pdf
+data_quality_flags:
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
+original_name: AJS
+merge_fingerprint: a0e482df5a3dbfe4e67ebb4a6f0c2ffe39dea002ecb5eda15658aefcd5e234cb
+merged_from:
+- ajs

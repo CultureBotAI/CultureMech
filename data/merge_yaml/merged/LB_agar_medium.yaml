@@ -1,27 +1,58 @@
-name: LB agar medium
+id: CultureMech:009664
+name: lb_agar_medium
 original_name: LB agar medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Agar
+- preferred_term: Tryptone
   concentration:
-    value: '2'
+    value: '3.3'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.7'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: agar
-- preferred_term: LB broth (BD)
+    label: Agar
   concentration:
-    value: '1'
+    value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 media_term:
   preferred_term: TOGO Medium M3224
   term:
     id: TOGO:M3224
     label: LB agar medium
-notes: 'Source: https://togomedium.org/medium/M3224'
+notes: 'Source: https://togomedium.org/medium/M3224
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,6 +64,64 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 66b9b1aa9e13f87eeeeb832316868aa8cdb35a6b56c7673c3f97ce9bd0b83d65
+- timestamp: '2026-03-13T06:20:07.974702Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009664'
+- timestamp: '2026-03-17T06:30:05.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.980146+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LB agar medium" to "lb_agar_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:10.544213+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: 1_3_lb_agar, 2yt_medium, half_concentrated_lb_luria_bertani_medium,
+    lb_agar_medium, lb_luria_bertani_agar, lb_luria_bertani_agar_with_5_nacl, lb_luria_bertani_agar_with_5_nacl_ph_9_0,
+    lb_luria_bertani_medium'
+kg_microbe_match: mediadive.medium:101
+synonyms:
+- name: 1_3_lb_agar
+  source: MediaDive
+  source_id: mediadive.medium:J842
+  original_category: bacterial
+- name: 2yt_medium
+  source: TOGO
+  source_id: TOGO:M2921
+  original_category: bacterial
+- name: half_concentrated_lb_luria_bertani_medium
+  source: MediaDive
+  source_id: mediadive.medium:1623
+  original_category: bacterial
+- name: lb_luria_bertani_agar
+  source: MediaDive
+  source_id: mediadive.medium:J443
+  original_category: bacterial
+- name: lb_luria_bertani_agar_with_5_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J1240
+  original_category: bacterial
+- name: lb_luria_bertani_agar_with_5_nacl_ph_9_0
+  source: MediaDive
+  source_id: mediadive.medium:J1185
+  original_category: bacterial
+- name: lb_luria_bertani_medium
+  source: MediaDive
+  source_id: mediadive.medium:381
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M3224_LB_agar_medium
+- 1_3_lb_agar
+- 2yt_medium
+- half_concentrated_lb_luria_bertani_medium
+- lb_agar_medium
+- lb_luria_bertani_agar
+- lb_luria_bertani_agar_with_5_nacl
+- lb_luria_bertani_agar_with_5_nacl_ph_9_0
+- lb_luria_bertani_medium
+merge_fingerprint: 3cb7028f083ead8f828a09615b3852eeb6d919453659873c5dde37bff08442b5

@@ -1,6 +1,7 @@
-name: RCM MEDIUM
+id: CultureMech:001765
+name: rcm_medium
 original_name: RCM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -34,6 +35,14 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 634'
+- timestamp: '2026-03-13T06:19:07.049823Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001765'
+- timestamp: '2026-03-17T19:45:19.308483+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RCM MEDIUM" to "rcm_medium" for consistent matching
 merge_fingerprint: fcbb91cd9cd27fd5e3647906ac8150b6907721524caccaa060330cce4d993c1c
 merged_from:
-- DSMZ_634_RCM_MEDIUM
+- rcm_medium

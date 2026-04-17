@@ -1,6 +1,7 @@
-name: Modified m9 with toluene
+id: CultureMech:007089
+name: modified_m9_with_toluene
 original_name: Modified m9 with toluene
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '6.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tol'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000511
+    label: Toluene
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.00038'
@@ -19,6 +23,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -26,6 +33,9 @@ ingredients:
   concentration:
     value: '0.013'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '220.0'
@@ -38,6 +48,9 @@ ingredients:
   concentration:
     value: '0.00031'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -45,6 +58,9 @@ ingredients:
   concentration:
     value: '86.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -52,6 +68,9 @@ ingredients:
   concentration:
     value: '4.3'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -59,14 +78,26 @@ ingredients:
   concentration:
     value: '187.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0039'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '194.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00015'
@@ -75,6 +106,9 @@ ingredients:
   concentration:
     value: '0.00092'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49976
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -95,6 +129,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:46.057511Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007089'
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.186017+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified m9 with toluene" to "modified_m9_with_toluene"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 198
   term:
@@ -106,6 +153,7 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 65fd79efe260c6fb2fc9fa7a49147eb3fbe787f37730db18c1f04e8b322d9c58
+high_metal: true
+merge_fingerprint: 804d61a3a208bd35507c0423c1b7625f5ebce5112f691e0546d53cc76047ae1e
 merged_from:
-- MEDIADB_198_Modified_m9_with_toluene
+- modified_m9_with_toluene

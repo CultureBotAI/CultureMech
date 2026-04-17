@@ -1,0 +1,95 @@
+id: CultureMech:006004
+name: sporulation_agar_sa
+original_name: SPORULATION-AGAR (SA)
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 555
+  term:
+    id: komodo.medium:555
+    label: SPORULATION-AGAR (SA)
+notes: 'Source: KOMODO ModelSEED | ID: 555 | DSMZ Medium: 555 (mediadive.medium:555)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tryptone peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: FeSO4
+  term:
+    id: CHEBI:75832
+    label: FeSO4
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001045
+    label: FeSO4
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 555'
+- timestamp: '2026-02-03T11:19:02.788020'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 555
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:39.432114'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: FeSO4'
+- timestamp: '2026-03-13T06:19:37.545730Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006004'
+- timestamp: '2026-03-17T06:30:04.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:54.340601+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SPORULATION-AGAR (SA)" to "sporulation_agar_sa" for
+    consistent matching
+- timestamp: '2026-04-17T06:29:29.068195+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_555_SPORULATION-AGAR_SA, sporulation_agar_sa'
+categories:
+- bacterial
+merged_from:
+- KOMODO_555_SPORULATION-AGAR_SA
+- sporulation_agar_sa
+merge_fingerprint: 51b2decd5e881605c34b595a7c8ea6bcdf097e508c94fdfcc98a026042f795b1

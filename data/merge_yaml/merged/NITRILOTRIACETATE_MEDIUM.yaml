@@ -1,15 +1,17 @@
-name: NITRILOTRIACETATE MEDIUM
+id: CultureMech:005507
+name: nitrilotriacetate_medium
 original_name: NITRILOTRIACETATE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:
-  preferred_term: DSMZ Medium 463
+  preferred_term: KOMODO Medium 463
   term:
-    id: mediadive.medium:463
+    id: komodo.medium:463
     label: NITRILOTRIACETATE MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium463.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 463 | DSMZ Medium: 463 (mediadive.medium:463)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '0.41'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '0.26'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Nitrilotriacetate
   term:
     id: CHEBI:25548
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000512
+    label: Nitrilotriacetate
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -60,6 +80,9 @@ ingredients:
   concentration:
     value: '0.068'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -67,6 +90,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -74,6 +100,9 @@ ingredients:
   concentration:
     value: '0.062'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -81,6 +110,9 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -88,6 +120,9 @@ ingredients:
   concentration:
     value: '0.017'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -95,6 +130,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -102,6 +140,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -110,6 +151,9 @@ ingredients:
     value: '1000'
     unit: G_PER_L
   notes: ' (0.05 molar)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -117,6 +161,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: Pantothenic acid
   term:
     id: CHEBI:7916
@@ -124,6 +171,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000242
+    label: Pantothenic acid
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -131,6 +181,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Pyridoxamine hydrochloride
   term:
     id: CHEBI:131531
@@ -138,6 +191,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxamine hydrochloride
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -145,6 +201,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -152,6 +211,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -159,6 +221,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Nicotine amide
   concentration:
     value: '0.025'
@@ -170,6 +235,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: alpha-lipoic acid
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -177,6 +245,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -184,34 +255,46 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 6.5
-- step_number: 2
-  action: FILTER_STERILIZE
-  description: Stir for some hours, filter sterilize the solution.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.218475Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 463'
-- timestamp: '2026-02-19T08:26:49.398053+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 463'
+- timestamp: '2026-02-03T11:19:18.224715'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 463
+- timestamp: '2026-03-13T06:19:33.516117Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005507'
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:49.638492+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NITRILOTRIACETATE MEDIUM" to "nitrilotriacetate_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:26.155307+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_463_NITRILOTRIACETATE_MEDIUM, KOMODO_463_NITRILOTRIACETATE_MEDIUM,
-    KOMODO_463a_EDTA-MEDIUM'
+  notes: 'Sources: KOMODO_463_NITRILOTRIACETATE_MEDIUM, KOMODO_463a_EDTA-MEDIUM, nitrilotriacetate_medium'
 synonyms:
-- name: EDTA-MEDIUM
+- name: edta_medium
   source: KOMODO
   source_id: komodo.medium:463a
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_463_NITRILOTRIACETATE_MEDIUM
 - KOMODO_463_NITRILOTRIACETATE_MEDIUM
 - KOMODO_463a_EDTA-MEDIUM
+- nitrilotriacetate_medium
 merge_fingerprint: 62b8ae8c3a7665ddf42fb44058d9ce93981577bd8070bf0e541445842173fc29

@@ -1,8 +1,9 @@
-name: AURANTIMONAS MEDIUM
+id: CultureMech:000804
+name: aurantimonas_medium
 original_name: AURANTIMONAS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1346
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -40,6 +47,9 @@ ingredients:
   concentration:
     value: '0.345'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -48,6 +58,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -60,6 +73,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1346'
+- timestamp: '2026-03-13T06:18:58.482673Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000804'
+- timestamp: '2026-03-17T06:30:19.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:09.902092+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "AURANTIMONAS MEDIUM" to "aurantimonas_medium" for consistent
+    matching
 merge_fingerprint: 950ad82cd5e1e596fe68885a6d0ddb02ed6489e29d9c57b7c165bf7ba17e625e
 merged_from:
-- DSMZ_1346_AURANTIMONAS_MEDIUM
+- aurantimonas_medium

@@ -1,8 +1,9 @@
-name: Blood agar medium
+id: CultureMech:008862
+name: blood_agar_medium
 original_name: Blood agar medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Blood agar medium
   concentration:
@@ -22,6 +23,15 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2276'
+- timestamp: '2026-03-13T06:20:00.813366Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008862'
+- timestamp: '2026-03-17T19:46:19.499878+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Blood agar medium" to "blood_agar_medium" for consistent
+    matching
 merge_fingerprint: 2944f254f846937988d0c90a108a536d58c628b1c92b83925f1a9a9fe5604db4
 merged_from:
-- TOGO_M2276_Blood_agar_medium
+- blood_agar_medium

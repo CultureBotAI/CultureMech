@@ -1,8 +1,9 @@
-name: GLUCONACETOBACTER MEDIUM
+id: CultureMech:000894
+name: gluconacetobacter_medium
 original_name: GLUCONACETOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1430
   term:
@@ -12,11 +13,11 @@ notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_
 ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '3'
+    value: '2'
     unit: G_PER_L
 - preferred_term: Peptone
   concentration:
-    value: '4'
+    value: '3'
     unit: G_PER_L
 - preferred_term: Glucose
   term:
@@ -25,13 +26,19 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Acetic acid
   term:
     id: CHEBI:15366
     label: Acetic acid
   concentration:
-    value: '30'
+    value: '40'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000342
+    label: Acetic acid
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -39,14 +46,19 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '15'
+    value: '20'
     unit: G_PER_L
-  notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
@@ -60,18 +72,31 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1430'
-- timestamp: '2026-02-19T08:26:43.381797+00:00'
+- timestamp: '2026-03-13T06:18:59.298050Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000894'
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:10.799459+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GLUCONACETOBACTER MEDIUM" to "gluconacetobacter_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:13.521464+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1430_GLUCONACETOBACTER_MEDIUM, JCM_J890_ACETOBACTER_EUROPAEUS_MEDIUM'
+  notes: 'Sources: JCM_J890_ACETOBACTER_EUROPAEUS_MEDIUM, gluconacetobacter_medium'
 synonyms:
-- name: ACETOBACTER EUROPAEUS MEDIUM
+- name: acetobacter_europaeus_medium
   source: MediaDive
   source_id: mediadive.medium:J890
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1430_GLUCONACETOBACTER_MEDIUM
 - JCM_J890_ACETOBACTER_EUROPAEUS_MEDIUM
+- gluconacetobacter_medium
 merge_fingerprint: d2ffb88157313cd2611b568184ff5d2933043a3029aa16d8e78c5c03233183cc

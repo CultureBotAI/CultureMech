@@ -1,15 +1,17 @@
-name: MEDIUM FOR CHLOROBIUM FERROOXIDANS
+id: CultureMech:004776
+name: medium_for_chlorobium_ferrooxidans
 original_name: MEDIUM FOR CHLOROBIUM FERROOXIDANS
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
 media_term:
-  preferred_term: DSMZ Medium 29a
+  preferred_term: KOMODO Medium 29a
   term:
-    id: mediadive.medium:29a
+    id: komodo.medium:29a
     label: MEDIUM FOR CHLOROBIUM FERROOXIDANS
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium29a.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 29a | DSMZ Medium: 29a (mediadive.medium:29a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Bicarbonate
   concentration:
@@ -22,6 +24,9 @@ ingredients:
   concentration:
     value: '1.5191'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001045
+    label: FeSO4
 - preferred_term: Acetate
   term:
     id: CHEBI:30089
@@ -29,6 +34,9 @@ ingredients:
   concentration:
     value: '0.118088'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000944
+    label: Acetate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -36,6 +44,9 @@ ingredients:
   concentration:
     value: '0.543478'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.543478'
@@ -47,6 +58,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -54,6 +68,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -61,6 +78,9 @@ ingredients:
   concentration:
     value: '14'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Ammonium acetate
   term:
     id: CHEBI:62947
@@ -68,6 +88,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000701
+    label: Ammonium acetate
 - preferred_term: Pyruvic acid sodium salt
   term:
     id: CHEBI:113246
@@ -75,6 +98,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000399
+    label: Pyruvic acid sodium salt
 - preferred_term: Dextrose
   term:
     id: CHEBI:4167
@@ -82,6 +108,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000243
+    label: Dextrose
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -89,6 +118,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -96,6 +128,9 @@ ingredients:
   concentration:
     value: '14'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -103,6 +138,9 @@ ingredients:
   concentration:
     value: '14'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -110,6 +148,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -117,6 +158,9 @@ ingredients:
   concentration:
     value: '1.925'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -124,6 +168,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -131,6 +178,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -138,6 +188,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -145,6 +198,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -152,6 +208,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -159,6 +218,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -166,6 +228,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -173,78 +238,52 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: COOL
-  description: Mix solution D, C and E. Bubble with CO2 in an ice bath under sterile
-    conditions.
-- step_number: 2
-  action: MIX
-  description: Fill 50 ml in each bottle of solution A. Before using add 4 ml solution
-    B and 0.1 ml solution F. To final medium add 10 mM bicarbonate, 10 mM FeSO4 and
-    2mM acetate.
-- step_number: 3
-  action: ADJUST_PH
-  description: Adjust pH to 6.8.
-- step_number: 4
-  action: MIX
-  description: Fill in sterile, N2 gassed screw-cap tubes under N2 gas.
-- step_number: 5
-  action: MIX
-  description: At 25C in light the incubation time is about 4 weeks.
-- step_number: 6
-  action: AUTOCLAVE
-  description: Fill 10x 46ml in 100 ml screw-cap bottles. Bubble with N2/CO2 and autoclave
-    121°C 15 min.
-- step_number: 7
-  action: AUTOCLAVE
-  description: Prepare in a screw-cap bottle, bubble with N2 to replace air, close
-    tightly and autoclave.
-- step_number: 8
-  action: FILTER_STERILIZE
-  description: Bubble with CO2 and filter sterilize into sterile, gas-tight, 100 ml
-    screw-cap bottle.
-- step_number: 9
-  action: AUTOCLAVE
-  description: Autoclave in a cotton-stoppered Erlenmeyer flask with an outlet tube
-    for medium, connected to a glass outlet at the bottom of the vessel and has, at
-    the other end, a silicon rubber tube with a pinch cock and a bell for aseptic
-    dispensing of the medium into bottles.
-- step_number: 10
-  action: COOL
-  description: Cool to room temperature under an atmosphere of N2/CO2 in an ice bath.
-- step_number: 11
-  action: FILTER_STERILIZE
-  description: Filter sterilize into sterile, gas-tight, 100 ml screw-cap bottle.
-- step_number: 12
-  action: FILTER_STERILIZE
-  description: Filter sterilized
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.010236Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 29a'
-- timestamp: '2026-02-19T08:26:46.022501+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 29a'
+- timestamp: '2026-02-03T11:19:14.395141'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 29
+- timestamp: '2026-03-13T06:19:28.767517Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004776'
+- timestamp: '2026-03-17T06:30:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:44.230403+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM FOR CHLOROBIUM FERROOXIDANS" to "medium_for_chlorobium_ferrooxidans"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:21.595581+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_29a_MEDIUM_FOR_CHLOROBIUM_FERROOXIDANS, KOMODO_29-12025_MEDIUM_29_MODIFIED_FOR_DSM_12025,
-    KOMODO_29_PFENNIG_S_MEDIUM_II_modified_1988_for_green_sulfur_bacteria, KOMODO_29a_MEDIUM_FOR_CHLOROBIUM_FERROOXIDANS'
+  notes: 'Sources: KOMODO_29a_MEDIUM_FOR_CHLOROBIUM_FERROOXIDANS, medium_29_modified_for_dsm_12025,
+    medium_for_chlorobium_ferrooxidans, pfennigs_medium_ii_modified_1988_for_green_sulfur_bacteria'
 synonyms:
-- name: MEDIUM 29 MODIFIED FOR DSM 12025
+- name: medium_29_modified_for_dsm_12025
   source: KOMODO
   source_id: komodo.medium:29_12025
-  original_category: imported
-- name: PFENNIG'S MEDIUM II (modified 1988, for green sulfur bacteria)
+  original_category: bacterial
+- name: pfennigs_medium_ii_modified_1988_for_green_sulfur_bacteria
   source: KOMODO
   source_id: komodo.medium:29
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_29a_MEDIUM_FOR_CHLOROBIUM_FERROOXIDANS
-- KOMODO_29-12025_MEDIUM_29_MODIFIED_FOR_DSM_12025
-- KOMODO_29_PFENNIG_S_MEDIUM_II_modified_1988_for_green_sulfur_bacteria
 - KOMODO_29a_MEDIUM_FOR_CHLOROBIUM_FERROOXIDANS
+- medium_29_modified_for_dsm_12025
+- medium_for_chlorobium_ferrooxidans
+- pfennigs_medium_ii_modified_1988_for_green_sulfur_bacteria
 merge_fingerprint: 9760dbc332e1965adcdf6666e63ef2726ea666fdfbfcac75548db8a4ed0f67b3

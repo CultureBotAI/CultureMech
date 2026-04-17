@@ -1,8 +1,9 @@
-name: Halobacteria Medium
+id: CultureMech:008953
+name: halobacteria_medium
 original_name: Halobacteria Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '20'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KCl
   concentration:
     value: '2'
@@ -45,12 +55,21 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '0.36'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Na-glutamate
   concentration:
     value: '1'
@@ -60,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:29988
     label: L-glutamate(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000886
+    label: Na-glutamate
 - preferred_term: Na3-citrate
   concentration:
     value: '3'
@@ -67,6 +89,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:53258
+    label: Na3-citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
     label: Na3-citrate
 - preferred_term: FeCl2 x 4 H2O
   concentration:
@@ -77,6 +102,9 @@ ingredients:
   term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -85,6 +113,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Casamino acids
   concentration:
     value: '5'
@@ -93,6 +124,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 media_term:
   preferred_term: TOGO Medium M2369
   term:
@@ -112,6 +146,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 7dbc0f414a987038e4e8af0eaf0521b0df0a350bb2251d217c370845f7f13cf1
+- timestamp: '2026-03-13T06:20:01.539284Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008953'
+- timestamp: '2026-03-17T06:30:05.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.263568+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Halobacteria Medium" to "halobacteria_medium" for consistent
+    matching
+high_metal: true
+merge_fingerprint: 55bb6b95c8c84a76711fea719733a4ed9c4fbf3c232cf7713e60fd005f0c7b6e
 merged_from:
 - TOGO_M2369_Halobacteria_Medium

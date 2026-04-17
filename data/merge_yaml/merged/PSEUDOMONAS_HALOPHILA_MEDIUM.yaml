@@ -1,15 +1,17 @@
-name: PSEUDOMONAS HALOPHILA MEDIUM
+id: CultureMech:005583
+name: pseudomonas_halophila_medium
 original_name: PSEUDOMONAS HALOPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 470 | DSMZ Medium: 470 (mediadive.medium:470)
+  | Aerobic: No'
 media_term:
-  preferred_term: DSMZ Medium 470
+  preferred_term: KOMODO Medium 470
   term:
-    id: mediadive.medium:470
+    id: komodo.medium:470
     label: PSEUDOMONAS HALOPHILA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium470.pdf'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '51.9423'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '43.7292'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '1.10988'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '5.54939'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -60,6 +80,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -67,6 +90,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -74,6 +100,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -81,6 +110,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -88,6 +120,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -95,6 +130,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -102,6 +140,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -109,6 +150,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -116,6 +160,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -123,6 +170,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -130,6 +180,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -137,6 +190,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -144,6 +200,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -151,6 +210,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -158,6 +220,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -165,6 +230,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -172,34 +240,52 @@ ingredients:
   concentration:
     value: 1e-05
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Vitamin solution is filter-sterilized and added after autoclaving.
-    Solution A and B are autoclaved separately and combined after cooling.
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 7.0 with 6 M NaOH or HCl.
-- step_number: 3
-  action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.276956Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 470'
-- timestamp: '2026-02-19T08:26:37.215812+00:00'
-  curator: recipe-merger
-  action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_470_PSEUDOMONAS_HALOPHILA_MEDIUM, JCM_J433_PSEUDOMONAS_HALOPHILA_MEDIUM,
-    KOMODO_470_PSEUDOMONAS_HALOPHILA_MEDIUM'
-categories:
-- imported
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 470'
+- timestamp: '2026-02-03T11:19:11.940284'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 470
+- timestamp: '2026-03-13T03:09:24.080184Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:34.293201Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005583'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:37.392502'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-17T06:30:32.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:50.505925+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PSEUDOMONAS HALOPHILA MEDIUM" to "pseudomonas_halophila_medium"
+    for consistent matching
+merge_fingerprint: 6c062093a591c7b034f1fc85e968e13e00075feed37b80a8435c91ab5edb1e26
 merged_from:
-- DSMZ_470_PSEUDOMONAS_HALOPHILA_MEDIUM
-- JCM_J433_PSEUDOMONAS_HALOPHILA_MEDIUM
-- KOMODO_470_PSEUDOMONAS_HALOPHILA_MEDIUM
-merge_fingerprint: 4d618a090ffc54dd977683246f0fcb6e763a30579519ce87dbb6c2fa7209248d
+- pseudomonas_halophila_medium

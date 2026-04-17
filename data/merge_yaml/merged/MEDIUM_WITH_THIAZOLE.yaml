@@ -1,6 +1,7 @@
-name: MEDIUM WITH THIAZOLE
+id: CultureMech:001772
+name: medium_with_thiazole
 original_name: MEDIUM WITH THIAZOLE
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -21,6 +22,9 @@ ingredients:
   concentration:
     value: '9'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -28,6 +32,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -35,6 +42,9 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -42,6 +52,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: FeCl3
   term:
     id: CHEBI:30808
@@ -49,6 +62,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000705
+    label: FeCl3
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -68,6 +84,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 639'
+- timestamp: '2026-03-13T06:19:07.089078Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001772'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:19.350483+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM WITH THIAZOLE" to "medium_with_thiazole" for
+    consistent matching
 merge_fingerprint: d7f21481e0dc92c8ae84a19f3680465023399189d705179a53be34f8dac9d4e8
 merged_from:
-- DSMZ_639_MEDIUM_WITH_THIAZOLE
+- medium_with_thiazole

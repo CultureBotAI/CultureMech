@@ -1,6 +1,7 @@
-name: SEHGAL AND GIBBONS MEDIUM
+id: CultureMech:000793
+name: sehgal_and_gibbons_medium
 original_name: SEHGAL AND GIBBONS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -47,6 +57,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate x 2 H2O
 - preferred_term: Casein hydrolysate
   concentration:
     value: '5'
@@ -66,6 +79,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.399030Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000793'
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:09.803615+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SEHGAL AND GIBBONS MEDIUM" to "sehgal_and_gibbons_medium"
+    for consistent matching
 merge_fingerprint: 5a7ca819f8e9a357835e646b16958a82802582ff1878ef538cdbc71490899b4f
 merged_from:
-- DSMZ_1336_SEHGAL_AND_GIBBONS_MEDIUM
+- sehgal_and_gibbons_medium

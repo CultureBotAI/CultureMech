@@ -1,8 +1,9 @@
-name: HALF STRENGTH MARINE AGAR
+id: CultureMech:015425
+name: half_strength_marine_agar
 original_name: HALF STRENGTH MARINE AGAR
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J916
   term:
@@ -21,6 +22,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -28,6 +32,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J916'
+- timestamp: '2026-03-13T06:20:42.596001Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015425'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:34.257408+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALF STRENGTH MARINE AGAR" to "half_strength_marine_agar"
+    for consistent matching
+kg_microbe_match: mediadive.medium:12
 merge_fingerprint: 3e2aa29f83ff038aa541b226c72cf931273c1a47ed518311780febbfdb01c644
 merged_from:
-- JCM_J916_HALF_STRENGTH_MARINE_AGAR
+- half_strength_marine_agar

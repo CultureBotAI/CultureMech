@@ -1,6 +1,7 @@
-name: THERMOCHROMATIUM/ALLOCHROMATIUM MEDIUM
+id: CultureMech:000935
+name: thermochromatium_allochromatium_medium
 original_name: THERMOCHROMATIUM/ALLOCHROMATIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -15,6 +16,9 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000658
+    label: Vitamine B12
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -26,13 +30,20 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
-    value: '0.75'
+    value: '8.25'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.75, 7.5]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Double distilled water
   term:
     id: CHEBI:15377
@@ -40,13 +51,20 @@ ingredients:
   concentration:
     value: '700'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Double distilled water
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
     label: EDTA
   concentration:
-    value: '0.0166667'
+    value: '5.2166667'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0166667, 5.2]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -54,6 +72,9 @@ ingredients:
   concentration:
     value: '0.333333'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -61,6 +82,9 @@ ingredients:
   concentration:
     value: '0.125'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -68,6 +92,9 @@ ingredients:
   concentration:
     value: '0.833333'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -75,6 +102,9 @@ ingredients:
   concentration:
     value: '0.666667'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -82,6 +112,9 @@ ingredients:
   concentration:
     value: '0.666667'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Na acetate
   term:
     id: CHEBI:32954
@@ -89,6 +122,9 @@ ingredients:
   concentration:
     value: '1.66667'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na acetate
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -96,6 +132,9 @@ ingredients:
   concentration:
     value: '1.75'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000285
+    label: MOPS
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -103,20 +142,9 @@ ingredients:
   concentration:
     value: '3.33333'
     unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '7.5'
-    unit: G_PER_L
-- preferred_term: EDTA
-  term:
-    id: CHEBI:64755
-    label: EDTA
-  concentration:
-    value: '5.2'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -124,6 +152,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -131,6 +162,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -138,6 +172,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -145,6 +182,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -152,6 +192,9 @@ ingredients:
   concentration:
     value: '0.017'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -159,6 +202,9 @@ ingredients:
   concentration:
     value: '0.188'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -166,6 +212,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -173,6 +222,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: VOSO4 x 2 H2O
   term:
     id: CHEBI:87009
@@ -180,6 +232,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000279
+    label: VOSO4 x 2 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -187,6 +242,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: NaHSeO3
   concentration:
     value: '0.002'
@@ -244,6 +302,23 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1469'
+- timestamp: '2026-03-13T03:09:28.531749Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:59.694443Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000935'
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.231852+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMOCHROMATIUM/ALLOCHROMATIUM MEDIUM" to "thermochromatium_allochromatium_medium"
+    for consistent matching
 merge_fingerprint: 78515fdec03b68f34acea865d53b27b95e9771112973c6ca09e5a7b0b77c1c8d
 merged_from:
-- DSMZ_1469_THERMOCHROMATIUM_ALLOCHROMATIUM_MEDIUM
+- thermochromatium_allochromatium_medium

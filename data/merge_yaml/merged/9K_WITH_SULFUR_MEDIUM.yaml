@@ -1,6 +1,7 @@
-name: 9K WITH SULFUR MEDIUM
+id: CultureMech:002485
+name: 9k_with_sulfur_medium
 original_name: 9K WITH SULFUR MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -39,13 +49,19 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Ca(NO3)2
-  term:
-    id: CHEBI:10124375
-    label: Ca(NO3)2
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000470
+    label: Ca(NO3)2
+  term:
+    id: CHEBI:77732
+    label: ''
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000927
+    label: Sulfur
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -65,6 +84,24 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1321'
-merge_fingerprint: e1d3a4c8b00eca75410cb880ab5cba72448a7bde3871c60fedb500cb6e659e99
+- timestamp: '2026-02-06T05:10:43.041110Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:13.732959Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002485'
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:26.885896+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "9K WITH SULFUR MEDIUM" to "9k_with_sulfur_medium" for
+    consistent matching
+merge_fingerprint: ea105eb22d602b9e5e23fad352de6820d1c002cc7c6ffbfd860bb1e1e6d5df3f
 merged_from:
-- JCM_J1321_9K_WITH_SULFUR_MEDIUM
+- 9k_with_sulfur_medium

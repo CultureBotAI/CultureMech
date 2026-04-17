@@ -1,15 +1,17 @@
-name: HALOMONAS DESIDERATA MEDIUM
+id: CultureMech:006417
+name: halomonas_desiderata_medium
 original_name: HALOMONAS DESIDERATA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 9.5-10
+ph_range: 9.5-10.0
 media_term:
-  preferred_term: DSMZ Medium 762
+  preferred_term: KOMODO Medium 762
   term:
-    id: mediadive.medium:762
+    id: komodo.medium:762
     label: HALOMONAS DESIDERATA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium762.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 762 | DSMZ Medium: 762 (mediadive.medium:762)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '5.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -53,26 +70,40 @@ ingredients:
   concentration:
     value: '4.2'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Prepare the medium without Na2CO3 and NaHCO3 in 900 ml distilled water
-    and autoclave. Prepare the Na2CO3 and NaHCO3 in 100 ml water, sterilise separately
-    and add to the cooled medium. Final pH 9.5-10.0.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.163380Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 762'
-- timestamp: '2026-02-19T08:26:53.918742+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 762'
+- timestamp: '2026-02-03T11:19:05.836660'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 762
+- timestamp: '2026-03-13T06:19:40.570460Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006417'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:57.907640+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOMONAS DESIDERATA MEDIUM" to "halomonas_desiderata_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:31.572030+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_762_HALOMONAS_DESIDERATA_MEDIUM, KOMODO_762_HALOMONAS_DESIDERATA_MEDIUM'
+  notes: 'Sources: KOMODO_762_HALOMONAS_DESIDERATA_MEDIUM, halomonas_desiderata_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_762_HALOMONAS_DESIDERATA_MEDIUM
 - KOMODO_762_HALOMONAS_DESIDERATA_MEDIUM
+- halomonas_desiderata_medium
 merge_fingerprint: 01d4381820e6469d2128565e67591e841ec1bfcb8d9215b825c9c697ca99e32f

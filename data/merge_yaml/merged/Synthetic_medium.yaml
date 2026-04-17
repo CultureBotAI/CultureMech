@@ -1,6 +1,7 @@
-name: Synthetic medium
+id: CultureMech:007203
+name: synthetic_medium
 original_name: Synthetic medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '233.7'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lcts'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000339
+    label: Lactose
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '8.61'
@@ -23,6 +27,9 @@ ingredients:
   concentration:
     value: '2.03'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '3.06'
@@ -34,6 +41,9 @@ ingredients:
   concentration:
     value: '0.179'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -41,6 +51,9 @@ ingredients:
   concentration:
     value: '0.0696'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.072'
@@ -49,6 +62,9 @@ ingredients:
   concentration:
     value: '0.00827'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.00401'
@@ -65,6 +81,9 @@ ingredients:
     value: '8.69'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050
@@ -73,6 +92,9 @@ ingredients:
     value: '6.84'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gln-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000220
+    label: L-Glutamine
 - preferred_term: L-Isoleucine
   term:
     id: CHEBI:17191
@@ -81,6 +103,9 @@ ingredients:
     value: '1.14'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000294
+    label: L-Isoleucine
 - preferred_term: L-Arginine
   term:
     id: CHEBI:16467
@@ -89,6 +114,9 @@ ingredients:
     value: '2.87'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000289
+    label: L-Arginine
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
@@ -97,6 +125,9 @@ ingredients:
     value: '0.00153'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -105,6 +136,9 @@ ingredients:
     value: '9.41e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Pantothenate
   term:
     id: CHEBI:16454
@@ -113,6 +147,9 @@ ingredients:
     value: '0.000105'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pnto-R'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000356
+    label: Pantothenate
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -121,6 +158,9 @@ ingredients:
     value: '0.000292'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -128,6 +168,9 @@ ingredients:
   concentration:
     value: '8.85e-05'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709
@@ -136,6 +179,9 @@ ingredients:
     value: '0.00313'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydxn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -144,10 +190,10 @@ ingredients:
     value: '0.000729'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-Aminobenzoate
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.0487'
     unit: MILLIMOLAR
@@ -160,6 +206,9 @@ ingredients:
     value: '0.527'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:inost'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000500
+    label: myo-Inositol
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -176,6 +225,24 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 300, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-02-06T05:10:32.522586Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:46.848068Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007203'
+- timestamp: '2026-03-17T06:30:16.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:05.030110+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Synthetic medium" to "synthetic_medium" for consistent
+    matching
 media_term:
   preferred_term: MediaDB Medium 300
   term:
@@ -187,6 +254,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: a5791444d70b52960628b1f3ef8b6b8ab3bcbfdabc848dd77b2b1c640cbcb334
+merge_fingerprint: 7c5319ee0cdb293529ad83dd3e89fc94a01e140868827f582cb74b161b196f31
 merged_from:
-- MEDIADB_300_Synthetic_medium
+- synthetic_medium

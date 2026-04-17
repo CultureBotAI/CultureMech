@@ -1,6 +1,7 @@
-name: Microaerophilic Thermus Medium
+id: CultureMech:010357
+name: microaerophilic_thermus_medium
 original_name: Microaerophilic Thermus Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '1'
@@ -23,10 +27,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Castenholz basal salt solution (see Medium [M266])
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -35,11 +35,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Nitrogen gas
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Oxygen gas
   notes: 'Properties: Gas'
   concentration:
@@ -72,6 +78,35 @@ curation_history:
   notes: 'Added default concentration for ingredient: NaOH; Added default concentration
     for ingredient: Nitrogen gas; Added default concentration for ingredient: Oxygen
     gas'
-merge_fingerprint: 0b795ad64b36e42969aa8e7c8f42f7a46fb80add1af6a39269bbf1a4e637a7d9
+- timestamp: '2026-03-09T08:04:16.290437+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:13.244379Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010357'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:03.997649'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.222682+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Microaerophilic Thermus Medium" to "microaerophilic_thermus_medium"
+    for consistent matching
+solutions:
+- preferred_term: Castenholz basal salt solution (see Medium [M266])
+  composition: []
+  notes: Cross-reference to Medium M266
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 96d8cfe794dc35274269345b5986500f03b34a2132b208a3444f93f9abecabbc
 merged_from:
 - TOGO_M935_Microaerophilic_Thermus_Medium

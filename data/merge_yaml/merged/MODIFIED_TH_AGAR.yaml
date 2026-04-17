@@ -1,15 +1,17 @@
-name: MODIFIED TH AGAR
+id: CultureMech:003644
+name: modified_th_agar
 original_name: MODIFIED TH AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
-  preferred_term: DSMZ Medium 1061
+  preferred_term: KOMODO Medium 1061
   term:
-    id: mediadive.medium:1061
+    id: komodo.medium:1061
     label: MODIFIED TH AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1061.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 1061 | DSMZ Medium: 1061 (mediadive.medium:1061)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -26,6 +28,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -33,6 +38,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -40,6 +48,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -47,6 +58,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -54,6 +68,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -61,6 +78,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -68,6 +88,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -75,6 +98,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -82,6 +108,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -89,24 +118,40 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: adjust to pH 7.5
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.268972Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1061'
-- timestamp: '2026-02-19T08:26:38.839104+00:00'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1061'
+- timestamp: '2026-02-03T11:19:05.380546'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1061
+- timestamp: '2026-03-13T06:19:21.318167Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003644'
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:35.561377+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED TH AGAR" to "modified_th_agar" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:14.689227+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1061_MODIFIED_TH_AGAR, KOMODO_1061_MODIFIED_TH_AGAR'
+  notes: 'Sources: KOMODO_1061_MODIFIED_TH_AGAR, modified_th_agar'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1061_MODIFIED_TH_AGAR
 - KOMODO_1061_MODIFIED_TH_AGAR
+- modified_th_agar
 merge_fingerprint: 6eb52a224533da796c6a2ab800d737caee5d70d6e77fba656db9ba3bad143243

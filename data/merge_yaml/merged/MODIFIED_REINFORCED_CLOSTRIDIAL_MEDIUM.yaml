@@ -1,8 +1,9 @@
-name: Modified Reinforced Clostridial Medium
+id: CultureMech:007841
+name: modified_reinforced_clostridial_medium
 original_name: Modified Reinforced Clostridial Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Sodium acetate
   concentration:
     value: '3'
@@ -35,6 +42,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Glucose
   concentration:
     value: '5'
@@ -44,6 +54,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Soluble starch
   concentration:
     value: '1'
@@ -56,6 +69,9 @@ ingredients:
   notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
     label: agar
 - preferred_term: Beef extract
   concentration:
@@ -77,6 +93,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M1306
   term:
@@ -102,6 +121,19 @@ curation_history:
   date: '2026-02-03T11:20:47.097792'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: 8972b091c643a2ae4362c9e5ff4ff33144f338bd40d2d3609344c2e1699e5e3d
+- timestamp: '2026-03-13T06:19:51.886400Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007841'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.325275+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Reinforced Clostridial Medium" to "modified_reinforced_clostridial_medium"
+    for consistent matching
+merge_fingerprint: bc69325ac0f250210928115f69c0322aeeff28d3befa1e865517ee5c87bda682
 merged_from:
 - TOGO_M1306_Modified_Reinforced_Clostridial_Medium

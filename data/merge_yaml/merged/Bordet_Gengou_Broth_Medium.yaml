@@ -1,6 +1,7 @@
-name: Bordet Gengou Broth Medium
+id: CultureMech:008894
+name: bordet_gengou_broth_medium
 original_name: Bordet Gengou Broth Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
 - preferred_term: Proteose Peptone
   concentration:
     value: '10'
@@ -36,6 +40,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: DI Water
   concentration:
     value: '1000'
@@ -66,6 +73,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:01.106160Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008894'
+- timestamp: '2026-03-17T06:30:30.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.809381+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Bordet Gengou Broth Medium" to "bordet_gengou_broth_medium"
+    for consistent matching
 merge_fingerprint: 5f9849e2178f9bca1e30438d3bd731920e0ca9bf9c8e5c508c77540424b7a7f5
 merged_from:
-- TOGO_M2308_Bordet_Gengou_Broth_Medium
+- bordet_gengou_broth_medium

@@ -1,6 +1,7 @@
-name: SULFURIFERULA MEDIUM
+id: CultureMech:001696
+name: sulfuriferula_medium
 original_name: SULFURIFERULA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.295566'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,13 +29,20 @@ ingredients:
   concentration:
     value: '2.70936'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.39901'
+    value: '6.3990100000000005'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.39901, 3.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -39,13 +50,20 @@ ingredients:
   concentration:
     value: '1.23153'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.137931'
+    value: '0.237931'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.137931, 0.1]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -53,27 +71,42 @@ ingredients:
   concentration:
     value: '0.137931'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.492611'
+    value: '1.4926110000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.492611, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.00492611'
+    value: '0.034926109999999996'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00492611, 0.03]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
     label: Na2WO4 x 2 H2O
   concentration:
-    value: '0.000492611'
+    value: '0.000892611'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000492611, 0.0004]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -81,13 +114,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -95,13 +124,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -109,6 +134,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
@@ -116,13 +144,9 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -130,6 +154,9 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -137,6 +164,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: AlK(SO4)2 x 12 H2O
   term:
     id: CHEBI:86465
@@ -144,6 +174,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000293
+    label: AlK(SO4)2 x 12 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -151,6 +184,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -158,13 +194,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -172,13 +204,9 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: G_PER_L
-- preferred_term: Na2WO4 x 2 H2O
-  term:
-    id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
-  concentration:
-    value: '0.0004'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -202,18 +230,35 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 561'
-- timestamp: '2026-02-19T08:26:51.239220+00:00'
+- timestamp: '2026-03-13T03:08:51.501149Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:06.523332Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001696'
+- timestamp: '2026-03-17T06:29:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:18.727772+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SULFURIFERULA MEDIUM" to "sulfuriferula_medium" for
+    consistent matching
+- timestamp: '2026-04-17T06:30:23.068042+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_561_SULFURIFERULA_MEDIUM, KOMODO_561_THIOBACILLUS_PLUMBOPHILUS_MEDIUM'
+  notes: 'Sources: sulfuriferula_medium, thiobacillus_plumbophilus_medium'
 synonyms:
-- name: THIOBACILLUS PLUMBOPHILUS MEDIUM
+- name: thiobacillus_plumbophilus_medium
   source: KOMODO
   source_id: komodo.medium:561
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_561_SULFURIFERULA_MEDIUM
-- KOMODO_561_THIOBACILLUS_PLUMBOPHILUS_MEDIUM
+- sulfuriferula_medium
+- thiobacillus_plumbophilus_medium
 merge_fingerprint: 8fa31e096c1485cb3497b09028c6500bf34c35510de2e54839694c8262ff188c

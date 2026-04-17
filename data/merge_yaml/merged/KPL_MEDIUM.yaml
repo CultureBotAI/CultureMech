@@ -1,15 +1,17 @@
-name: KPL MEDIUM
-original_name: KPL MEDIUM
-category: imported
+id: CultureMech:005306
+name: kpl_medium
+original_name: KPL medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.5
 media_term:
-  preferred_term: DSMZ Medium 456
+  preferred_term: KOMODO Medium 456
   term:
-    id: mediadive.medium:456
-    label: KPL MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium456.pdf'
+    id: komodo.medium:456
+    label: KPL medium
+notes: 'Source: KOMODO ModelSEED | ID: 456 | DSMZ Medium: 456 (mediadive.medium:456)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '8.76424'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Galactose
   term:
     id: CHEBI:28260
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '8.76424'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000523
+    label: Galactose
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '13.1464'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Skim milk
   concentration:
     value: '100'
@@ -47,40 +61,36 @@ ingredients:
   concentration:
     value: '140'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Combine components, except white table wine. Adjust pH to 5.5. Autoclave
-    for 15 min at 121°C, Cool to 45-50°C. Aseptically add filter sterilized white
-    table wine. Mix thoroughly. Pour into sterile Petri dishes.
-- step_number: 2
-  action: HEAT
-  description: Adjust 10% skim milk to pH 5.5 with lactic acid and heat at 100°C for
-    30 minutes. Remove precipitate by filtration. For preparing broth medium, adjust
-    filtrate to pH 7.0 with 2 N NaOH and heat at 100°C for 30 minutes. Remove precipitate
-    by filtration. Adjust filtrate to pH 5.5 with 2 N HCl.
-- step_number: 3
-  action: AUTOCLAVE
-  description: Filter-sterilize and add to autoclaved basal medium.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.171128Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 456'
-- timestamp: '2026-02-19T08:26:48.297272+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 456'
+- timestamp: '2026-02-03T11:19:15.310296'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 456
+- timestamp: '2026-03-13T06:19:31.603482Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005306'
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:47.506191+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "KPL medium" to "kpl_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:24.125595+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_456_KPL_MEDIUM, KOMODO_456_KPL_medium'
-synonyms:
-- name: KPL medium
-  source: KOMODO
-  source_id: komodo.medium:456
-  original_category: imported
+  notes: 'Sources: KOMODO_456_KPL_medium, kpl_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_456_KPL_MEDIUM
 - KOMODO_456_KPL_medium
+- kpl_medium
 merge_fingerprint: 3514dc6f5b6d99cbb85a465ddaeb89d0091e3b891eb830c101466c97680b43de

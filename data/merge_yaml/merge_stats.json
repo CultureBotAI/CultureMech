@@ -1,120 +1,122 @@
 {
-  "timestamp": "2026-02-19T08:26:36.416501+00:00",
-  "input_recipes": 10595,
-  "output_recipes": 1350,
-  "reduction": 9245,
-  "reduction_percentage": 87.3,
-  "cross_category_merges": 0,
+  "timestamp": "2026-04-17T06:29:07.405302+00:00",
+  "input_recipes": 15827,
+  "output_recipes": 6248,
+  "reduction": 9579,
+  "reduction_percentage": 60.5,
+  "cross_category_merges": 111,
   "largest_group_size": 157,
   "top_duplicates": [
     {
-      "name": "MINERAL MEDIUM WITH DIBENZOFURAN",
+      "name": "medium_514_plus_additional_salt",
       "count": 157,
       "sources": [
         "KOMODO",
         "MediaDive"
       ],
       "categories": [
-        "imported"
+        "bacterial",
+        "specialized"
       ]
     },
     {
-      "name": "MEDIUM 514 MODIFIED FOR DSM 11573",
-      "count": 157,
+      "name": "mineral_medium_brunner",
+      "count": 156,
       "sources": [
         "KOMODO",
         "MediaDive"
       ],
       "categories": [
-        "imported"
+        "bacterial"
       ]
     },
     {
-      "name": "Nutrient bromothymol blue agar NBTA",
+      "name": "nutrient_agar",
       "count": 154,
       "sources": [
         "KOMODO",
         "MediaDive"
       ],
       "categories": [
-        "imported"
+        "bacterial"
       ]
     },
     {
-      "name": "TRYPTONE SOYA BROTH (TSB) WITH ADDITIONAL SALTS",
-      "count": 148,
+      "name": "caso_agar_merck_105458",
+      "count": 147,
       "sources": [
         "KOMODO",
         "MediaDive"
       ],
       "categories": [
-        "imported"
+        "bacterial"
       ]
     },
     {
-      "name": "SP4 MEDIUM",
+      "name": "trypticase_soy_broth_agar",
+      "count": 82,
+      "sources": [
+        "KOMODO",
+        "MediaDive",
+        "TOGO"
+      ],
+      "categories": [
+        "bacterial"
+      ]
+    },
+    {
+      "name": "sp4_medium",
       "count": 68,
       "sources": [
         "KOMODO",
         "MediaDive"
       ],
       "categories": [
-        "imported"
+        "bacterial"
       ]
     },
     {
-      "name": "ANAEROBACULUM MEDIUM",
+      "name": "mineral_medium_with_2_hydroxybiphenyl",
       "count": 59,
       "sources": [
         "KOMODO",
         "MediaDive"
       ],
       "categories": [
-        "imported"
+        "bacterial"
       ]
     },
     {
-      "name": "MINERAL MEDIUM WITH 2-HYDROXYBIPHENYL",
-      "count": 59,
+      "name": "pyx_medium",
+      "count": 57,
       "sources": [
         "KOMODO",
         "MediaDive"
       ],
       "categories": [
-        "imported"
+        "bacterial"
       ]
     },
     {
-      "name": "MEDIUM R2A FOR DENITRIFYING BACTERIA",
-      "count": 58,
-      "sources": [
-        "KOMODO",
-        "MediaDive"
-      ],
-      "categories": [
-        "imported"
-      ]
-    },
-    {
-      "name": "TRYPTICASE SOY BROTH AGAR",
+      "name": "medium_r2a_for_denitrifying_bacteria",
       "count": 54,
       "sources": [
         "KOMODO",
         "MediaDive"
       ],
       "categories": [
-        "imported"
+        "bacterial"
       ]
     },
     {
-      "name": "ALKALINE NUTRIENT AGAR",
+      "name": "alkaline_nutrient_agar",
       "count": 53,
       "sources": [
         "KOMODO",
         "MediaDive"
       ],
       "categories": [
-        "imported"
+        "bacterial"
       ]
     }
   ]

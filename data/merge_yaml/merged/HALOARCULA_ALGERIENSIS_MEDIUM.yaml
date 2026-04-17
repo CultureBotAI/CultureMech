@@ -1,8 +1,9 @@
-name: HALOARCULA ALGERIENSIS MEDIUM
+id: CultureMech:000916
+name: haloarcula_algeriensis_medium
 original_name: HALOARCULA ALGERIENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1450
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Casamino acids
   concentration:
     value: '0.5'
@@ -46,6 +59,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Bacto peptone
   concentration:
     value: '0.5'
@@ -61,6 +77,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -68,6 +87,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
@@ -75,6 +97,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -83,6 +108,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -102,6 +130,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:59.540621Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000916'
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.061629+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOARCULA ALGERIENSIS MEDIUM" to "haloarcula_algeriensis_medium"
+    for consistent matching
+high_metal: true
 merge_fingerprint: 9e06b666fec67fa346cf8a6b4d76c18a97f8e13fb8a6010e5cf3a2360f915b0e
 merged_from:
-- DSMZ_1450_HALOARCULA_ALGERIENSIS_MEDIUM
+- haloarcula_algeriensis_medium

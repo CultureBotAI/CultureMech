@@ -1,6 +1,7 @@
-name: M17 medium supplemented with 20 g/L of lactose
+id: CultureMech:008819
+name: m17_medium_supplemented_with_20_g_l_of_lactose
 original_name: M17 medium supplemented with 20 g/L of lactose
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:36218
     label: beta-lactose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001003
+    label: Lactose
 - preferred_term: M17 medium (Scharlau)
   concentration:
     value: '1'
@@ -34,6 +38,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:00.484557Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008819'
+- timestamp: '2026-03-17T06:30:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.158687+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M17 medium supplemented with 20 g/L of lactose" to
+    "m17_medium_supplemented_with_20_g_l_of_lactose" for consistent matching
+kg_microbe_match: mediadive.medium:J697
 merge_fingerprint: db8716a665c2934a24e6b73bbe05eab08a66686ef78723dec02c4101597dc9b1
 merged_from:
-- TOGO_M2230_M17_medium_supplemented_with_20_g_L_of_lactose
+- m17_medium_supplemented_with_20_g_l_of_lactose

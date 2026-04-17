@@ -1,6 +1,7 @@
-name: METHANOMASSILIICOCCUS MEDIUM
+id: CultureMech:000645
+name: methanomassiliicoccus_medium
 original_name: METHANOMASSILIICOCCUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.6
@@ -9,7 +10,21 @@ media_term:
   term:
     id: mediadive.medium:119b
     label: METHANOMASSILIICOCCUS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119b.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium119b.pdf
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -18,6 +33,9 @@ ingredients:
   concentration:
     value: '0.498008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -25,6 +43,9 @@ ingredients:
   concentration:
     value: '0.398406'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -32,6 +53,9 @@ ingredients:
   concentration:
     value: '0.398406'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -39,6 +63,9 @@ ingredients:
   concentration:
     value: '0.398406'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -46,10 +73,14 @@ ingredients:
   concentration:
     value: '0.0498008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
-    value: '0.996016'
+    value: '4.996016'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.996016, 4.0]'
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
@@ -57,6 +88,9 @@ ingredients:
   concentration:
     value: '0.996016'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
 - preferred_term: Na-formate
   term:
     id: CHEBI:62965
@@ -64,6 +98,9 @@ ingredients:
   concentration:
     value: '1.99203'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Na-formate
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000498008'
@@ -75,6 +112,9 @@ ingredients:
   concentration:
     value: '7.88845'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000618
+    label: Methanol
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -82,6 +122,9 @@ ingredients:
   concentration:
     value: '0.996016'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -89,6 +132,9 @@ ingredients:
   concentration:
     value: '0.498008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -96,6 +142,9 @@ ingredients:
   concentration:
     value: '0.498008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -103,6 +152,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -110,6 +162,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -117,6 +172,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -124,6 +182,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -131,6 +192,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -138,6 +202,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -145,6 +212,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -152,6 +222,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -159,6 +232,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -166,6 +242,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -173,6 +252,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -180,10 +262,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '4'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: Sludge
   concentration:
     value: '1000'
@@ -195,13 +276,62 @@ ingredients:
   concentration:
     value: '23'
     unit: G_PER_L
-- preferred_term: DL-2-Methylbutyric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000286
+    label: Isobutyric acid
+- preferred_term: Tryptone
   term:
-    id: CHEBI:37070
-    label: DL-2-Methylbutyric acid
+    id: FOODON:03316428
+    label: tryptone
   concentration:
-    value: '27'
+    value: '10.0'
     unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: pancreatic digest of casein
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002960
+    label: yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
 - preferred_term: Valeric acid
   term:
     id: CHEBI:17418
@@ -209,6 +339,9 @@ ingredients:
   concentration:
     value: '27'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000303
+    label: Valeric acid
 - preferred_term: Isovaleric acid
   term:
     id: CHEBI:28484
@@ -216,6 +349,9 @@ ingredients:
   concentration:
     value: '27'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000305
+    label: Isovaleric acid
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -223,6 +359,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -230,6 +369,9 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -273,95 +415,110 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 119b'
-- timestamp: '2026-02-19T08:26:40.797988+00:00'
+- timestamp: '2026-03-13T03:09:43.316548Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:57.041409Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000645'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:08.198780+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOMASSILIICOCCUS MEDIUM" to "methanomassiliicoccus_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:16.751924+00:00'
   curator: recipe-merger
   action: Merged 16 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_119b_METHANOMASSILIICOCCUS_MEDIUM, KOMODO_119-11975_MEDIUM_119_MODIFIED_FOR_DSM_11975,
-    KOMODO_119-11977_MEDIUM_119_MODIFIED_FOR_DSM_11977, KOMODO_119-11978_MEDIUM_119_MODIFIED_FOR_DSM_11978,
-    KOMODO_119-11979_MEDIUM_119_MODIFIED_FOR_DSM_11979, KOMODO_119-11995_MEDIUM_119_MODIFIED_FOR_DSM_11995,
-    KOMODO_119-1224_MEDIUM_119_MODIFIED_FOR_DSM_1224, KOMODO_119-15163_MEDIUM_119_MODIFIED_FOR_DSM_15163,
-    KOMODO_119-1_For_DSM_16632_and_DSM_16643, KOMODO_119-3468_MEDIUM_119_MODIFIED_FOR_DSM_3468,
-    KOMODO_119-4855_MEDIUM_119_MODIFIED_FOR_DSM_4855, KOMODO_119-6216_MEDIUM_119_MODIFIED_FOR_DSM_6216,
-    KOMODO_119-7057_MEDIUM_119_MODIFIED_FOR_DSM_7057, KOMODO_119-7256_MEDIUM_119_MODIFIED_FOR_DSM_7256,
-    KOMODO_119-9575_MEDIUM_119_MODIFIED_FOR_DSM_9575, KOMODO_119_METHANOBACTERIUM_medium'
+  notes: 'Sources: KOMODO_119_METHANOBACTERIUM_medium, for_dsm_16632_and_dsm_16643,
+    medium_119_modified_for_dsm_11975, medium_119_modified_for_dsm_11977, medium_119_modified_for_dsm_11978,
+    medium_119_modified_for_dsm_11979, medium_119_modified_for_dsm_11995, medium_119_modified_for_dsm_1224,
+    medium_119_modified_for_dsm_15163, medium_119_modified_for_dsm_3468, medium_119_modified_for_dsm_4855,
+    medium_119_modified_for_dsm_6216, medium_119_modified_for_dsm_7057, medium_119_modified_for_dsm_7256,
+    medium_119_modified_for_dsm_9575, methanomassiliicoccus_medium'
 synonyms:
-- name: MEDIUM 119 MODIFIED FOR DSM 11975
-  source: KOMODO
-  source_id: komodo.medium:119_11975
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 11977
-  source: KOMODO
-  source_id: komodo.medium:119_11977
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 11978
-  source: KOMODO
-  source_id: komodo.medium:119_11978
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 11979
-  source: KOMODO
-  source_id: komodo.medium:119_11979
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 11995
-  source: KOMODO
-  source_id: komodo.medium:119_11995
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 1224
-  source: KOMODO
-  source_id: komodo.medium:119_1224
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 15163
-  source: KOMODO
-  source_id: komodo.medium:119_15163
-  original_category: imported
-- name: For DSM 16632 and DSM 16643
-  source: KOMODO
-  source_id: komodo.medium:119.1
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 3468
-  source: KOMODO
-  source_id: komodo.medium:119_3468
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 4855
-  source: KOMODO
-  source_id: komodo.medium:119_4855
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 6216
-  source: KOMODO
-  source_id: komodo.medium:119_6216
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 7057
-  source: KOMODO
-  source_id: komodo.medium:119_7057
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 7256
-  source: KOMODO
-  source_id: komodo.medium:119_7256
-  original_category: imported
-- name: MEDIUM 119 MODIFIED FOR DSM 9575
-  source: KOMODO
-  source_id: komodo.medium:119_9575
-  original_category: imported
-- name: METHANOBACTERIUM medium
+- name: methanobacterium_medium
   source: KOMODO
   source_id: komodo.medium:119
-  original_category: imported
+  original_category: bacterial
+- name: for_dsm_16632_and_dsm_16643
+  source: KOMODO
+  source_id: komodo.medium:119.1
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_11975
+  source: KOMODO
+  source_id: komodo.medium:119_11975
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_11977
+  source: KOMODO
+  source_id: komodo.medium:119_11977
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_11978
+  source: KOMODO
+  source_id: komodo.medium:119_11978
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_11979
+  source: KOMODO
+  source_id: komodo.medium:119_11979
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_11995
+  source: KOMODO
+  source_id: komodo.medium:119_11995
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_1224
+  source: KOMODO
+  source_id: komodo.medium:119_1224
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_15163
+  source: KOMODO
+  source_id: komodo.medium:119_15163
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_3468
+  source: KOMODO
+  source_id: komodo.medium:119_3468
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_4855
+  source: KOMODO
+  source_id: komodo.medium:119_4855
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_6216
+  source: KOMODO
+  source_id: komodo.medium:119_6216
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_7057
+  source: KOMODO
+  source_id: komodo.medium:119_7057
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_7256
+  source: KOMODO
+  source_id: komodo.medium:119_7256
+  original_category: bacterial
+- name: medium_119_modified_for_dsm_9575
+  source: KOMODO
+  source_id: komodo.medium:119_9575
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_119b_METHANOMASSILIICOCCUS_MEDIUM
-- KOMODO_119-11975_MEDIUM_119_MODIFIED_FOR_DSM_11975
-- KOMODO_119-11977_MEDIUM_119_MODIFIED_FOR_DSM_11977
-- KOMODO_119-11978_MEDIUM_119_MODIFIED_FOR_DSM_11978
-- KOMODO_119-11979_MEDIUM_119_MODIFIED_FOR_DSM_11979
-- KOMODO_119-11995_MEDIUM_119_MODIFIED_FOR_DSM_11995
-- KOMODO_119-1224_MEDIUM_119_MODIFIED_FOR_DSM_1224
-- KOMODO_119-15163_MEDIUM_119_MODIFIED_FOR_DSM_15163
-- KOMODO_119-1_For_DSM_16632_and_DSM_16643
-- KOMODO_119-3468_MEDIUM_119_MODIFIED_FOR_DSM_3468
-- KOMODO_119-4855_MEDIUM_119_MODIFIED_FOR_DSM_4855
-- KOMODO_119-6216_MEDIUM_119_MODIFIED_FOR_DSM_6216
-- KOMODO_119-7057_MEDIUM_119_MODIFIED_FOR_DSM_7057
-- KOMODO_119-7256_MEDIUM_119_MODIFIED_FOR_DSM_7256
-- KOMODO_119-9575_MEDIUM_119_MODIFIED_FOR_DSM_9575
 - KOMODO_119_METHANOBACTERIUM_medium
-merge_fingerprint: b2e14ecd537859c027846577ea014138401da8aedb08e1472373299220241c8b
+- for_dsm_16632_and_dsm_16643
+- medium_119_modified_for_dsm_11975
+- medium_119_modified_for_dsm_11977
+- medium_119_modified_for_dsm_11978
+- medium_119_modified_for_dsm_11979
+- medium_119_modified_for_dsm_11995
+- medium_119_modified_for_dsm_1224
+- medium_119_modified_for_dsm_15163
+- medium_119_modified_for_dsm_3468
+- medium_119_modified_for_dsm_4855
+- medium_119_modified_for_dsm_6216
+- medium_119_modified_for_dsm_7057
+- medium_119_modified_for_dsm_7256
+- medium_119_modified_for_dsm_9575
+- methanomassiliicoccus_medium
+merge_fingerprint: 9aab516a3e72913a39d041bdbadf09b3819e9e4af9c6ab5d4f9884d61d73b2e3

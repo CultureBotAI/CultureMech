@@ -1,7 +1,8 @@
-name: F/2 Medium
+id: CultureMech:000170
+name: f_2_medium
 category: ALGAE
-medium_type: complex
-physical_state: liquid
+medium_type: COMPLEX
+physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 ingredients:
@@ -82,7 +83,15 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: f-2-medium, URL: https://utex.org/products/f-2-medium'
-- timestamp: '2026-02-19T08:26:36.607750+00:00'
+- timestamp: '2026-03-13T06:18:53.395564Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000170'
+- timestamp: '2026-03-17T19:45:04.333217+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "F/2 Medium" to "f_2_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:07.631451+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: 8_ppt_F_2_Medium, F_2_Medium'
@@ -91,7 +100,7 @@ references:
 - reference_id: https://utex.org/products/f-2-medium
 original_name: F/2 Medium
 synonyms:
-- name: 8 ppt F/2 Medium
+- name: 8_ppt_f_2_medium
   source: unknown
   original_category: ALGAE
 categories:

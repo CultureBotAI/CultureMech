@@ -1,6 +1,7 @@
-name: Calvo et al
+id: CultureMech:007149
+name: calvo_et_al
 original_name: Calvo et al
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '60.2755'
@@ -27,6 +31,9 @@ ingredients:
   concentration:
     value: '0.405729'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -34,6 +41,9 @@ ingredients:
   concentration:
     value: '7.56773'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -41,6 +51,9 @@ ingredients:
   concentration:
     value: '1.50583'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -57,6 +70,18 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 251, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.454249Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007149'
+- timestamp: '2026-03-17T06:30:24.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.614079+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Calvo et al" to "calvo_et_al" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 251
   term:
@@ -70,4 +95,4 @@ applications:
 - Systems biology research
 merge_fingerprint: 8c85380b94e186fd7d51bcca52b7e5e2bc73fe5e4f9a3426d96b8dd3c9b6240c
 merged_from:
-- MEDIADB_251_Calvo_et_al
+- calvo_et_al

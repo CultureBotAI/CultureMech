@@ -1,6 +1,7 @@
-name: CULTIVATION MEDIUM FOR CHLAMYDOPHILA PECORUM
+id: CultureMech:000973
+name: cultivation_medium_for_chlamydophila_pecorum
 original_name: CULTIVATION MEDIUM FOR CHLAMYDOPHILA PECORUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -55,6 +56,15 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1503'
+- timestamp: '2026-03-13T06:19:00.082804Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000973'
+- timestamp: '2026-03-17T19:45:11.662212+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CULTIVATION MEDIUM FOR CHLAMYDOPHILA PECORUM" to "cultivation_medium_for_chlamydophila_pecorum"
+    for consistent matching
 merge_fingerprint: 031aed77bb9396d94a0a5ebd5a2551023d9671189687c7145e480b383b5a7df2
 merged_from:
-- DSMZ_1503_CULTIVATION_MEDIUM_FOR_CHLAMYDOPHILA_PECORUM
+- cultivation_medium_for_chlamydophila_pecorum

@@ -1,6 +1,7 @@
-name: TREBONIA MEDIUM
+id: CultureMech:001178
+name: trebonia_medium
 original_name: TREBONIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -26,6 +27,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -40,6 +47,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Na-pyruvate
   term:
     id: CHEBI:50144
@@ -47,6 +57,9 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na-pyruvate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -54,6 +67,9 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -61,6 +77,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MES acids
   concentration:
     value: '3.9'
@@ -68,6 +87,9 @@ ingredients:
   term:
     id: CHEBI:39005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000942
+    label: MES acids
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -83,6 +105,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:01.945611Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001178'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:13.722189+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TREBONIA MEDIUM" to "trebonia_medium" for consistent
+    matching
 merge_fingerprint: 04a7ba76e9ffcee89e323565b8b5f36f0ac94c11cac20ccd1e0311d8540cfffc
 merged_from:
-- DSMZ_1698_TREBONIA_MEDIUM
+- trebonia_medium

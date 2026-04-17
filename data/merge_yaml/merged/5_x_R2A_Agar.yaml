@@ -1,8 +1,9 @@
-name: 5 x R2A Agar
+id: CultureMech:007685
+name: 5_x_r2a_agar
 original_name: 5 x R2A Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.25'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '1.5'
@@ -28,6 +35,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1.5'
@@ -37,6 +47,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Glucose
   concentration:
     value: '2.5'
@@ -46,6 +59,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Soluble starch
   concentration:
     value: '2.5'
@@ -59,6 +75,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Yeast extract (BD--Difco)
   concentration:
     value: '2.5'
@@ -95,6 +114,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 30d5c4e002611382ee527149270f12cb8644901bad208f473f98992992167ef8
+- timestamp: '2026-03-13T06:19:50.603810Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007685'
+- timestamp: '2026-03-17T06:30:04.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:09.002857+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "5 x R2A Agar" to "5_x_r2a_agar" for consistent matching
+merge_fingerprint: c9087594f6dbdcb8ede6868ac4144d616162c9dba06e079b5738f7621379492d
 merged_from:
 - TOGO_M1161_5_x_R2A_Agar

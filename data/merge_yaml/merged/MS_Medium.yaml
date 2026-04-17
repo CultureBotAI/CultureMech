@@ -1,6 +1,7 @@
-name: MS Medium
+id: CultureMech:009187
+name: ms_medium
 original_name: MS Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -9,10 +10,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
-- preferred_term: SULFOLOBUS MEDIUM (see Medium [M156])
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  term:
+    id: CHEBI:32150
+    label: ''
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -21,6 +21,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 media_term:
   preferred_term: TOGO Medium M261
   term:
@@ -46,6 +49,34 @@ curation_history:
   date: '2026-02-03T11:20:54.989284'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
-merge_fingerprint: d25b148dc52a933344c47525e9aec5a51d92645516e2eb4e088e2150e245f93a
+- timestamp: '2026-03-09T08:04:31.197827+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:03.760328Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009187'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:56.941034'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:05.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.488854+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MS Medium" to "ms_medium" for consistent matching
+solutions:
+- preferred_term: SULFOLOBUS MEDIUM (see Medium [M156])
+  composition: []
+  notes: Cross-reference to Medium M156
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 1107fa94aca9bf8228c0ab40856637dc219aff6a05a4da9382c0b8526e4f6078
 merged_from:
 - TOGO_M261_MS_Medium

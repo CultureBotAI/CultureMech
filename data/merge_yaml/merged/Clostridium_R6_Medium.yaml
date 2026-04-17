@@ -1,23 +1,19 @@
-name: Clostridium R6 Medium
+id: CultureMech:010053
+name: clostridium_r6_medium
 original_name: Clostridium R6 Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Solution A
-  concentration:
-    value: '860'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '102'
-    unit: G_PER_L
 - preferred_term: Na2S・9H2O
   notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
     Solution'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: L--cysteine・HCl・H2O
   notes: 'Properties: Defined component, Organic compound, Solution'
   concentration:
@@ -28,24 +24,36 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 - preferred_term: Distilled water
   concentration:
-    value: '860'
+    value: '960.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    Simple component [Merged 2 duplicates: 860.0, 100.0]'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: KH2PO4
   concentration:
@@ -56,6 +64,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -64,6 +75,9 @@ ingredients:
     component, Organic compound'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Na2HPO4
   concentration:
@@ -74,6 +88,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '3'
@@ -84,15 +101,6 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '0.19'
@@ -102,12 +110,18 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.006'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: NH4Cl
   concentration:
     value: '0.19'
@@ -117,29 +131,18 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.063'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
-- preferred_term: FeCl2 solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: 8% NaHCO3 solution
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: ''
 media_term:
   preferred_term: TOGO Medium M651
   term:
@@ -168,6 +171,80 @@ curation_history:
     for ingredient: L--cysteine・HCl・H2O; Added default concentration for ingredient:
     Carbon dioxide gas; Added default concentration for ingredient: N2; Added default
     concentration for ingredient: Hydrogen gas'
-merge_fingerprint: f516b9f7909ab147c52dbb68833058a323d922d844bf205d056df73e7479d95c
+- timestamp: '2026-03-09T08:04:45.497248+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 6 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:15.961763Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:10.982833Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010053'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:02.264208'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.910830+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Clostridium R6 Medium" to "clostridium_r6_medium" for
+    consistent matching
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '860'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '102'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
+- preferred_term: FeCl2 solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Trace element solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 8% NaHCO3 solution
+  composition: []
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 2cfd7f565f2e2ade8b8a0996caed2f6810bebdedd28a02c909c76a20504999a1
 merged_from:
 - TOGO_M651_Clostridium_R6_Medium

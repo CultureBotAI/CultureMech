@@ -1,8 +1,9 @@
-name: GAUZE 1 WITH ADDITIONAL YEAST EXTRACT
+id: CultureMech:010449
+name: gauze_1_with_additional_yeast_extract
 original_name: GAUZE 1 WITH ADDITIONAL YEAST EXTRACT
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1366
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '180'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4 x 3 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -65,6 +84,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -77,6 +99,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1366'
+- timestamp: '2026-03-13T06:20:13.868169Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010449'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.850628+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GAUZE 1 WITH ADDITIONAL YEAST EXTRACT" to "gauze_1_with_additional_yeast_extract"
+    for consistent matching
+high_metal: true
 merge_fingerprint: acf647f16e1cdc8c2fe2141ab86b449ef2f24a4acea2b598dac42d8a94069378
 merged_from:
-- DSMZ_1366_GAUZE_1_WITH_ADDITIONAL_YEAST_EXTRACT
+- gauze_1_with_additional_yeast_extract

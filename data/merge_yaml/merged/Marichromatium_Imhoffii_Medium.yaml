@@ -1,13 +1,10 @@
-name: Marichromatium Imhoffii Medium
+id: CultureMech:009909
+name: marichromatium_imhoffii_medium
 original_name: Marichromatium Imhoffii Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Rhodobium gokurnum medium (see Medium [M517])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Na2S
   notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
     Solution'
@@ -17,6 +14,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000783
+    label: Na2S
 media_term:
   preferred_term: TOGO Medium M518
   term:
@@ -42,6 +42,35 @@ curation_history:
   date: '2026-02-03T11:20:59.205777'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2S'
-merge_fingerprint: 2531c77021251e7cd5b3ccc2898d5acd0ecb93cafebd0f52e60fee19bc4e2735
+- timestamp: '2026-03-09T08:04:11.814857+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:09.883070Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009909'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:01.449617'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.831109+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Marichromatium Imhoffii Medium" to "marichromatium_imhoffii_medium"
+    for consistent matching
+solutions:
+- preferred_term: Rhodobium gokurnum medium (see Medium [M517])
+  composition: []
+  notes: Cross-reference to Medium M517
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 8d14684b376e49a90825909a16fbfd17eb2664b9b71f1662a37f8c635c06c01a
 merged_from:
 - TOGO_M518_Marichromatium_Imhoffii_Medium

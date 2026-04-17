@@ -1,15 +1,17 @@
-name: SULFOPHOBOCOCCUS ZILLIGII MEDIUM
-original_name: SULFOPHOBOCOCCUS ZILLIGII MEDIUM
-category: imported
+id: CultureMech:006427
+name: sulfophobococcus_zilligii_medium
+original_name: SULFOPHOBOCOCCUS ZILLIGII medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 7.5
+ph_value: 7.6
 media_term:
-  preferred_term: DSMZ Medium 770
+  preferred_term: KOMODO Medium 770
   term:
-    id: mediadive.medium:770
-    label: SULFOPHOBOCOCCUS ZILLIGII MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium770.pdf'
+    id: komodo.medium:770
+    label: SULFOPHOBOCOCCUS ZILLIGII medium
+notes: 'Source: KOMODO ModelSEED | ID: 770 | DSMZ Medium: 770 (mediadive.medium:770)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2-EDTA
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '0.0329897'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '0.0680412'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.0319588'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.0319588'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.0021'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '0.0023'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.0018'
@@ -64,6 +84,9 @@ ingredients:
   concentration:
     value: '1.54639'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -75,6 +98,9 @@ ingredients:
   concentration:
     value: '0.237113'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Yeast extract
   concentration:
     value: '100'
@@ -90,6 +116,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -97,6 +126,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: Dithiothreitol
   term:
     id: CHEBI:18320
@@ -104,44 +136,40 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve ingredients of solution A except carbonate, sparge with 100%
-    N2 gas for 30 - 45 min to make it anoxic, then add carbonate and adjust pH to
-    9.0 - 9.3. Dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes
-    or serum vials (e.g., 30 ml medium per 100 ml bottle) and autoclave. Solutions
-    B and C are autoclaved separately under 100% N2 gas atmosphere. Solutions D and
-    E are prepared under 100% N2 gas and sterilized by filtration. To complete the
-    medium add appropriate amounts of solutions B to E to the sterile solution A in
-    the sequence as indicated. Adjust pH of complete medium to 7.5.
-- step_number: 2
-  action: FILTER_STERILIZE
-  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
-    5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
-    growth at the beginning.'
-- step_number: 3
-  action: MIX
-  description: For transfers use 10% (v/v) inoculum.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000793
+    label: Dithiothreitol
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.188927Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 770'
-- timestamp: '2026-02-19T08:26:54.040202+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 770'
+- timestamp: '2026-02-03T11:19:17.222884'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 770
+- timestamp: '2026-03-13T06:19:40.660152Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006427'
+- timestamp: '2026-03-17T06:30:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:58.010887+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SULFOPHOBOCOCCUS ZILLIGII medium" to "sulfophobococcus_zilligii_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:31.706004+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_770_SULFOPHOBOCOCCUS_ZILLIGII_MEDIUM, KOMODO_770_SULFOPHOBOCOCCUS_ZILLIGII_medium'
-synonyms:
-- name: SULFOPHOBOCOCCUS ZILLIGII medium
-  source: KOMODO
-  source_id: komodo.medium:770
-  original_category: imported
+  notes: 'Sources: KOMODO_770_SULFOPHOBOCOCCUS_ZILLIGII_medium, sulfophobococcus_zilligii_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_770_SULFOPHOBOCOCCUS_ZILLIGII_MEDIUM
 - KOMODO_770_SULFOPHOBOCOCCUS_ZILLIGII_medium
+- sulfophobococcus_zilligii_medium
 merge_fingerprint: c7eb69f8c2090f89e033957d4858aca2000e407f6d2a3d6b640a51f09a994566

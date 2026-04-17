@@ -1,6 +1,7 @@
-name: Modified SAP2 Medium
+id: CultureMech:010379
+name: modified_sap2_medium
 original_name: Modified SAP2 Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -14,10 +15,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: 1.0 x Artificial seawater (see Medium [M954])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M955
   term:
@@ -35,6 +32,31 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M955'
-merge_fingerprint: f5b1498f84c9705aa898dd0837ed0865502af06e3de9946e07d1fe7ea7241ca4
+- timestamp: '2026-03-09T08:04:54.177718+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:13.410086Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010379'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:04.122708'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T19:46:32.386959+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified SAP2 Medium" to "modified_sap2_medium" for
+    consistent matching
+solutions:
+- preferred_term: 1.0 x Artificial seawater (see Medium [M954])
+  composition: []
+  notes: Cross-reference to Medium M954
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 8615ab3d05621aeb548e53269c3a3fb1ee685b57b23f26e6ed0726b96fb94e78
 merged_from:
 - TOGO_M955_Modified_SAP2_Medium

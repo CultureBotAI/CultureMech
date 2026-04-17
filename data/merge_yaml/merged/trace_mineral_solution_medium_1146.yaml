@@ -1,0 +1,138 @@
+id: CultureMech:004354
+name: trace_mineral_solution_medium_1146
+original_name: Trace mineral solution (medium 1146)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 3.0
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2077 | DSMZ Medium: 2077 (mediadive.medium:2077)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 2077
+  term:
+    id: komodo.medium:2077
+    label: Trace mineral solution (medium 1146)
+ingredients:
+- preferred_term: HCl
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
+  term:
+    id: CHEBI:17883
+    label: ''
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2077'
+- timestamp: '2026-03-13T06:19:26.648921Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004354'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:33.156372'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:41.779291+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Trace mineral solution (medium 1146)" to "trace_mineral_solution_medium_1146"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:22.142905+00:00'
+  curator: recipe-merger
+  action: Merged 15 duplicate recipes into canonical record
+  notes: 'Sources: solution_a_medium_1003, solution_a_medium_1145, trace_element_solution_a_medium_253,
+    trace_element_solution_medium_1228, trace_element_solution_medium_1229, trace_element_solution_medium_1230,
+    trace_element_solution_medium_1272, trace_element_solution_medium_796, trace_element_solution_medium_925,
+    trace_elements_solution_medium_1183, trace_metals_solution_pfennig_lippert_1966,
+    trace_metals_solution_pfennig_lippert_1966_replace_na2moo4_x_2_h2o_with_nh4moo4,
+    trace_mineral_solution_ferguson_and_mah_1983, trace_mineral_solution_medium_1003,
+    trace_mineral_solution_medium_1146'
+synonyms:
+- name: solution_a_medium_1003
+  source: KOMODO
+  source_id: komodo.medium:2025
+  original_category: bacterial
+- name: solution_a_medium_1145
+  source: KOMODO
+  source_id: komodo.medium:2026
+  original_category: bacterial
+- name: trace_element_solution_a_medium_253
+  source: KOMODO
+  source_id: komodo.medium:3062
+  original_category: bacterial
+- name: trace_element_solution_medium_1228
+  source: KOMODO
+  source_id: komodo.medium:2034
+  original_category: bacterial
+- name: trace_element_solution_medium_1229
+  source: KOMODO
+  source_id: komodo.medium:2035
+  original_category: bacterial
+- name: trace_element_solution_medium_1230
+  source: KOMODO
+  source_id: komodo.medium:2036
+  original_category: bacterial
+- name: trace_element_solution_medium_1272
+  source: KOMODO
+  source_id: komodo.medium:2114
+  original_category: bacterial
+- name: trace_element_solution_medium_796
+  source: KOMODO
+  source_id: komodo.medium:2051
+  original_category: bacterial
+- name: trace_element_solution_medium_925
+  source: KOMODO
+  source_id: komodo.medium:2056
+  original_category: bacterial
+- name: trace_elements_solution_medium_1183
+  source: KOMODO
+  source_id: komodo.medium:3096
+  original_category: bacterial
+- name: trace_metals_solution_pfennig_lippert_1966
+  source: KOMODO
+  source_id: komodo.medium:2072
+  original_category: bacterial
+- name: trace_metals_solution_pfennig_lippert_1966_replace_na2moo4_x_2_h2o_with_nh4moo4
+  source: KOMODO
+  source_id: komodo.medium:2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  original_category: bacterial
+- name: trace_mineral_solution_ferguson_and_mah_1983
+  source: KOMODO
+  source_id: komodo.medium:2073
+  original_category: bacterial
+- name: trace_mineral_solution_medium_1003
+  source: KOMODO
+  source_id: komodo.medium:2075
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- solution_a_medium_1003
+- solution_a_medium_1145
+- trace_element_solution_a_medium_253
+- trace_element_solution_medium_1228
+- trace_element_solution_medium_1229
+- trace_element_solution_medium_1230
+- trace_element_solution_medium_1272
+- trace_element_solution_medium_796
+- trace_element_solution_medium_925
+- trace_elements_solution_medium_1183
+- trace_metals_solution_pfennig_lippert_1966
+- trace_metals_solution_pfennig_lippert_1966_replace_na2moo4_x_2_h2o_with_nh4moo4
+- trace_mineral_solution_ferguson_and_mah_1983
+- trace_mineral_solution_medium_1003
+- trace_mineral_solution_medium_1146
+merge_fingerprint: 609b3a7836255e3d48e7c831734e13de1d285bc894e03c4c5ac873806ff461de

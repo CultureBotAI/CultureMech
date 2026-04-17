@@ -1,6 +1,7 @@
-name: Revised Sulfolobus medium
+id: CultureMech:008895
+name: revised_sulfolobus_medium
 original_name: Revised Sulfolobus medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.25'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.05'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.28'
@@ -44,6 +54,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Na2MoO4·2H2O
   concentration:
@@ -54,12 +67,18 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '1.8'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.22'
@@ -69,6 +88,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '0.05'
@@ -78,6 +100,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2·2H2O
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.3'
@@ -87,6 +112,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: FeCl3·6H2O
   concentration:
     value: '0.02'
@@ -96,6 +124,9 @@ ingredients:
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3·6H2O
 - preferred_term: Na2B4O7
   concentration:
     value: '4.5'
@@ -105,12 +136,18 @@ ingredients:
   term:
     id: CHEBI:38892
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000554
+    label: Na2B4O7
 - preferred_term: VOSO4·2 H2O
   concentration:
     value: '0.03'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:87009
+    label: ''
 - preferred_term: CoSO4
   concentration:
     value: '0.01'
@@ -120,6 +157,9 @@ ingredients:
   term:
     id: CHEBI:53470
     label: cobalt(2+) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4
 - preferred_term: Tryptone (BD 211705)
   concentration:
     value: '1'
@@ -134,6 +174,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 media_term:
   preferred_term: TOGO Medium M2309
   term:
@@ -157,6 +200,19 @@ curation_history:
   date: '2026-02-03T11:20:53.194895'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
-merge_fingerprint: 936a7c18fe05bd28a510b38a7529c20e5f30803cfddc704daee5f33fb94f36ee
+- timestamp: '2026-03-13T06:20:01.113501Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008895'
+- timestamp: '2026-03-17T06:30:31.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.816933+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Revised Sulfolobus medium" to "revised_sulfolobus_medium"
+    for consistent matching
+merge_fingerprint: 3e8edcc22fa99bfbd0c407b87059f6cf4380f71582fd31258c4cbea7dec5a903
 merged_from:
-- TOGO_M2309_Revised_Sulfolobus_medium
+- revised_sulfolobus_medium

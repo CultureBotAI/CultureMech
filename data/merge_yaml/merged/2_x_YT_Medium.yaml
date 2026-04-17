@@ -1,6 +1,7 @@
-name: 2 x YT Medium
+id: CultureMech:009625
+name: 2_x_yt_medium
 original_name: 2 x YT Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '0.5'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '10'
@@ -40,6 +47,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 media_term:
   preferred_term: TOGO Medium M316
   term:
@@ -65,6 +75,18 @@ curation_history:
   date: '2026-02-03T11:20:57.791214'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-13T06:20:07.679152Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009625'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.693616+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "2 x YT Medium" to "2_x_yt_medium" for consistent matching
 merge_fingerprint: fb80c869dd6984cf5b4a00a30fd506de572258c043e1bfe8441f44ed47eba16a
 merged_from:
 - TOGO_M316_2_x_YT_Medium

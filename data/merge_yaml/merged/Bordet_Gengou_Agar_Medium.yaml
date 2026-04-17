@@ -1,8 +1,9 @@
-name: Bordet Gengou Agar Medium
+id: CultureMech:008893
+name: bordet_gengou_agar_medium
 original_name: Bordet Gengou Agar Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Glycerol
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
 - preferred_term: DI Water
   concentration:
     value: '840'
@@ -52,6 +56,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:01.102207Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008893'
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.805022+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Bordet Gengou Agar Medium" to "bordet_gengou_agar_medium"
+    for consistent matching
+kg_microbe_match: mediadive.medium:780
 merge_fingerprint: f0096b941a294ccb93855adf0027cd1ff92d34c6be320cc9948b9c38ccc1bb09
 merged_from:
-- TOGO_M2307_Bordet_Gengou_Agar_Medium
+- bordet_gengou_agar_medium

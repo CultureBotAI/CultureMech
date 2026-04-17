@@ -1,6 +1,7 @@
-name: TREPONEMA RECTALE MEDIUM
+id: CultureMech:001311
+name: treponema_rectale_medium
 original_name: TREPONEMA RECTALE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,7 +10,21 @@ media_term:
   term:
     id: mediadive.medium:212a
     label: TREPONEMA RECTALE MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium212a.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium212a.pdf
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -18,6 +33,9 @@ ingredients:
   concentration:
     value: '0.545256'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,6 +43,9 @@ ingredients:
   concentration:
     value: '0.359869'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -32,6 +53,9 @@ ingredients:
   concentration:
     value: '0.436205'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -39,6 +63,9 @@ ingredients:
   concentration:
     value: '0.436205'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -46,6 +73,9 @@ ingredients:
   concentration:
     value: '0.0545256'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Trypticase peptone
   concentration:
     value: '1.09051'
@@ -57,6 +87,9 @@ ingredients:
   concentration:
     value: '3.05344'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000545256'
@@ -68,6 +101,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -75,6 +111,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -82,6 +121,9 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Na-pyruvate
   term:
     id: CHEBI:50144
@@ -89,6 +131,9 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na-pyruvate
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -96,6 +141,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: DL-Dithiothreitol
   term:
     id: CHEBI:18320
@@ -103,6 +151,9 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000793
+    label: DL-Dithiothreitol
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -110,6 +161,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -117,6 +171,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -124,6 +181,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -131,6 +191,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -138,6 +201,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -145,6 +211,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -152,6 +221,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -159,6 +231,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -166,6 +241,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -173,6 +251,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -180,6 +261,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -187,6 +271,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
@@ -194,6 +281,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: Vitamin K1
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -201,6 +291,9 @@ ingredients:
   concentration:
     value: '950'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 - preferred_term: Acetic acid
   term:
     id: CHEBI:15366
@@ -208,6 +301,9 @@ ingredients:
   concentration:
     value: '573.182'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000342
+    label: Acetic acid
 - preferred_term: Propionic acid
   term:
     id: CHEBI:30768
@@ -215,6 +311,9 @@ ingredients:
   concentration:
     value: '192.145'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000366
+    label: Propionic acid
 - preferred_term: Butyric acid
   term:
     id: CHEBI:30772
@@ -222,6 +321,9 @@ ingredients:
   concentration:
     value: '129'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000471
+    label: Butyric acid
 - preferred_term: n-Valeric acid
   term:
     id: CHEBI:17418
@@ -229,6 +331,9 @@ ingredients:
   concentration:
     value: '30.2827'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000303
+    label: n-Valeric acid
 - preferred_term: iso-Butyric acid
   term:
     id: CHEBI:16135
@@ -236,13 +341,62 @@ ingredients:
   concentration:
     value: '30.6375'
     unit: G_PER_L
-- preferred_term: DL-2-Methylbutyric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000286
+    label: iso-Butyric acid
+- preferred_term: Tryptone
   term:
-    id: CHEBI:37070
-    label: DL-2-Methylbutyric acid
+    id: FOODON:03316428
+    label: tryptone
   concentration:
-    value: '32.25'
+    value: '10.0'
     unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: pancreatic digest of casein
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002960
+    label: yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
 - preferred_term: iso-Valeric acid
   term:
     id: CHEBI:503742
@@ -250,6 +404,9 @@ ingredients:
   concentration:
     value: '30.0247'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000378
+    label: iso-Valeric acid
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -257,6 +414,9 @@ ingredients:
   concentration:
     value: '56.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
@@ -264,6 +424,9 @@ ingredients:
   concentration:
     value: '56.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Maltose x H2O
   term:
     id: CHEBI:17306
@@ -271,6 +434,9 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose x H2O
 - preferred_term: Trehalose
   term:
     id: CHEBI:27082
@@ -278,6 +444,9 @@ ingredients:
   concentration:
     value: '63.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000545
+    label: Trehalose
 - preferred_term: D-Xylose
   term:
     id: CHEBI:65327
@@ -285,6 +454,9 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000996
+    label: D-Xylose
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -292,6 +464,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -299,6 +474,9 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: D-(+)-biotin
   term:
     id: CHEBI:15956
@@ -306,6 +484,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D-(+)-biotin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -313,6 +494,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -320,6 +504,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -327,6 +514,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -334,6 +524,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -375,18 +568,32 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 212a'
-- timestamp: '2026-02-19T08:26:44.988189+00:00'
+- timestamp: '2026-03-13T06:19:03.145689Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001311'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:15.035721+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TREPONEMA RECTALE MEDIUM" to "treponema_rectale_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:20.130890+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_212a_TREPONEMA_RECTALE_MEDIUM, KOMODO_212_SYNTHROPHOMONAS_medium'
+  notes: 'Sources: KOMODO_212_SYNTHROPHOMONAS_medium, treponema_rectale_medium'
+high_metal: true
 synonyms:
-- name: SYNTHROPHOMONAS medium
+- name: synthrophomonas_medium
   source: KOMODO
   source_id: komodo.medium:212
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_212a_TREPONEMA_RECTALE_MEDIUM
 - KOMODO_212_SYNTHROPHOMONAS_medium
-merge_fingerprint: ce1e5926fdd828f77f386e95809341fc4559a6b96d99118953a67814ac4fbdc7
+- treponema_rectale_medium
+merge_fingerprint: c8b391dff104d7fcead74d13354c1052e25f14b4277abb47518f1bd1f18678a0

@@ -1,8 +1,9 @@
-name: GYA
+id: CultureMech:008468
+name: gya
 original_name: GYA
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DW
   concentration:
@@ -24,6 +25,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -32,6 +36,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 media_term:
   preferred_term: TOGO Medium M1893
   term:
@@ -53,6 +60,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:57.157509Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008468'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.757765+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GYA" to "gya" for consistent matching
+kg_microbe_match: mediadive.medium:7
 merge_fingerprint: 76a1ec184e36b0b3d9e027ac79ed8aaa0d32770873abd3905d49273fd59c10fa
 merged_from:
-- TOGO_M1893_GYA
+- gya

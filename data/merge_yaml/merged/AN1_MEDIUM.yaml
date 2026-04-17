@@ -1,90 +1,131 @@
-name: AN1 MEDIUM
-original_name: AN1 MEDIUM
-category: imported
+id: CultureMech:009167
+name: an1_medium
+original_name: AN1 Medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 7.3
-media_term:
-  preferred_term: DSMZ Medium 376
-  term:
-    id: mediadive.medium:376
-    label: AN1 MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium376.pdf'
 ingredients:
-- preferred_term: Trypticase
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  term:
-    id: CHEBI:78018
-    label: dodecylphosphocholine
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-- preferred_term: Na-thioglycolate
-  term:
-    id: CHEBI:86481
-    label: Na-thioglycolate
+- preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Sulfur
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:26833
-    label: Sulfur
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: NaCl
   concentration:
-    value: '8'
+    value: '2.5'
     unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+- preferred_term: Sulfur (powder)
   concentration:
-    value: '0.001'
+    value: '8'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.3.
-- step_number: 2
-  action: MIX
-  description: Prepare the medium anaerobically under 100% nitrogen. Sterilize thioglycolate
-    and sulfur separately. Sterilize the sulfur by steaming for 3 h on each of three
-    successive days.
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:14258
+    label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001072
+    label: Sulfur (powder)
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Sodium thioglycolate
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M259
+  term:
+    id: TOGO:M259
+    label: AN1 Medium
+notes: 'Source: https://togomedium.org/medium/M259
+
+  Original source: JCM - JCM_M267
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=267'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.942729Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 376'
-- timestamp: '2026-01-28T19:48:37.849836Z'
+- timestamp: '2026-01-27T06:35:54.717622Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M259'
+- timestamp: '2026-01-28T19:48:20.156387Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:47.075183+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_376_AN1_MEDIUM, KOMODO_376_AN1_medium'
-synonyms:
-- name: AN1 medium
-  source: KOMODO
-  source_id: komodo.medium:376
-  original_category: imported
-categories:
-- imported
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.813649'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-13T06:20:03.520694Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009167'
+- timestamp: '2026-03-17T06:30:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.246740+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "AN1 Medium" to "an1_medium" for consistent matching
+merge_fingerprint: fa21b729f991a9f9c91ae05c3cd2f291753beddd730e2136f2d41389d9a36a8c
 merged_from:
-- DSMZ_376_AN1_MEDIUM
-- KOMODO_376_AN1_medium
-merge_fingerprint: 17c7dcb329d803d2062d676f25f11fd188b4b96a93d47b2fd63848165a919f54
+- TOGO_M259_AN1_Medium

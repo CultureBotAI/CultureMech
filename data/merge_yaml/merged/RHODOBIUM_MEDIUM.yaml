@@ -1,14 +1,16 @@
-name: RHODOBIUM MEDIUM
+id: CultureMech:006396
+name: rhodobium_medium
 original_name: RHODOBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
-  preferred_term: DSMZ Medium 745
+  preferred_term: KOMODO Medium 745
   term:
-    id: mediadive.medium:745
+    id: komodo.medium:745
     label: RHODOBIUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium745.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 745 | DSMZ Medium: 745 (mediadive.medium:745)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -17,6 +19,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -24,6 +29,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -31,6 +39,9 @@ ingredients:
   concentration:
     value: '50.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -38,6 +49,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -45,6 +59,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Na-DL-malate
   term:
     id: CHEBI:91261
@@ -52,6 +69,9 @@ ingredients:
   concentration:
     value: '3.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000450
+    label: Na-DL-malate
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -63,6 +83,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -70,6 +93,9 @@ ingredients:
   concentration:
     value: '5.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -77,6 +103,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -84,6 +113,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -91,6 +123,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -98,6 +133,9 @@ ingredients:
   concentration:
     value: '0.062'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -105,6 +143,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -112,6 +153,9 @@ ingredients:
   concentration:
     value: '0.017'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -119,6 +163,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoSO4 x 2 H2O
   concentration:
     value: '0.036'
@@ -126,38 +173,57 @@ ingredients:
   term:
     id: CHEBI:75213
     label: ''
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Boil the medium under a stream of nitrogen gas for few minutes and
-    distribute in screw-capped bottles or tubes. Autoclave at 121°C for 15 minutes.
-- step_number: 2
-  action: MIX
-  description: pH 6.8
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoSO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.120183Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 745'
-- timestamp: '2026-01-28T19:48:12.892847Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:53.762302+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 745'
+- timestamp: '2026-02-03T11:19:10.783189'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 745
+- timestamp: '2026-03-13T06:19:40.424350Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006396'
+- timestamp: '2026-03-17T06:30:28.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:57.723991+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RHODOBIUM MEDIUM" to "rhodobium_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:31.401391+00:00'
   curator: recipe-merger
-  action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_745_RHODOBIUM_MEDIUM, JCM_J193_MMYS-I_MEDIUM, KOMODO_745_RHODOBIUM_MEDIUM'
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_745_RHODOBIUM_MEDIUM, mmys_i_medium, mmys_iii_medium, mys_medium,
+    rhodobium_medium'
 synonyms:
-- name: MMYS-I MEDIUM
+- name: mmys_i_medium
   source: MediaDive
   source_id: mediadive.medium:J193
-  original_category: imported
+  original_category: bacterial
+- name: mmys_iii_medium
+  source: MediaDive
+  source_id: mediadive.medium:J199
+  original_category: bacterial
+- name: mys_medium
+  source: MediaDive
+  source_id: mediadive.medium:J200
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_745_RHODOBIUM_MEDIUM
-- JCM_J193_MMYS-I_MEDIUM
 - KOMODO_745_RHODOBIUM_MEDIUM
+- mmys_i_medium
+- mmys_iii_medium
+- mys_medium
+- rhodobium_medium
 merge_fingerprint: f1240f50f20bbb41aad2917eed6d97dc320ba43b81f9407a5be347d8837dcb68

@@ -1,8 +1,9 @@
-name: THIOBACILLUS MEDIUM
+id: CultureMech:001471
+name: thiobacillus_medium
 original_name: THIOBACILLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.6
 media_term:
   preferred_term: DSMZ Medium 36
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -68,6 +90,9 @@ ingredients:
     value: '12'
     unit: G_PER_L
   notes: Optional ingredient (for solid medium)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
@@ -75,6 +100,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -88,23 +116,36 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 36'
-- timestamp: '2026-02-19T08:26:46.977457+00:00'
+- timestamp: '2026-03-13T06:19:04.424639Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001471'
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.445325+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOBACILLUS MEDIUM" to "thiobacillus_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:30:03.987448+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_36_THIOBACILLUS_MEDIUM, KOMODO_36-1_For_DSM_18181, KOMODO_36_THIOBACILLUS_THIOPARUS_MEDIUM'
+  notes: 'Sources: for_dsm_18181, thiobacillus_medium, thiobacillus_thioparus_medium'
 synonyms:
-- name: For DSM 18181
+- name: for_dsm_18181
   source: KOMODO
   source_id: komodo.medium:36.1
-  original_category: imported
-- name: THIOBACILLUS THIOPARUS MEDIUM
+  original_category: bacterial
+- name: thiobacillus_thioparus_medium
   source: KOMODO
   source_id: komodo.medium:36
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_36_THIOBACILLUS_MEDIUM
-- KOMODO_36-1_For_DSM_18181
-- KOMODO_36_THIOBACILLUS_THIOPARUS_MEDIUM
+- for_dsm_18181
+- thiobacillus_medium
+- thiobacillus_thioparus_medium
 merge_fingerprint: 616538cf13aae98910c080859b4d595d965da86ea472ee81e84757babd5b4b38

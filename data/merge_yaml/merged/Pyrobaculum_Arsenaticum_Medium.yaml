@@ -1,6 +1,7 @@
-name: Pyrobaculum Arsenaticum Medium
+id: CultureMech:009563
+name: pyrobaculum_arsenaticum_medium
 original_name: Pyrobaculum Arsenaticum Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.2'
@@ -37,10 +44,9 @@ ingredients:
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
-- preferred_term: Modified Brock's salt base solution (see Medium [M156])
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -50,11 +56,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M304
   term:
@@ -81,6 +93,35 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: N2'
-merge_fingerprint: 3892133497c0e9e6c5c097c73939746a03a2e2903d8f1aebf65dee82d974a1bb
+- timestamp: '2026-03-09T08:04:57.675375+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:06.925119Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009563'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:59.314535'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.949173+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Pyrobaculum Arsenaticum Medium" to "pyrobaculum_arsenaticum_medium"
+    for consistent matching
+solutions:
+- preferred_term: Modified Brock's salt base solution (see Medium [M156])
+  composition: []
+  notes: Cross-reference to Medium M156
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 3899fc3241f799f752d8ffa9e5f342f680a6f106c4589361b19e25b1f4d0a339
 merged_from:
 - TOGO_M304_Pyrobaculum_Arsenaticum_Medium

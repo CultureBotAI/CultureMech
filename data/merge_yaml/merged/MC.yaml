@@ -1,6 +1,7 @@
-name: MC
+id: CultureMech:000359
+name: mc
 original_name: MC
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -25,6 +26,9 @@ ingredients:
   concentration:
     value: '2.77778'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -32,6 +36,9 @@ ingredients:
   concentration:
     value: '0.888889'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Yeast extract
   concentration:
     value: '5.55556'
@@ -43,6 +50,9 @@ ingredients:
   concentration:
     value: '2.77778'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Liver digest
   concentration:
     value: '2.77778'
@@ -74,6 +84,18 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C49'
+- timestamp: '2026-03-13T06:18:54.739432Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000359'
+- timestamp: '2026-03-17T06:30:33.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.743010+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MC" to "mc" for consistent matching
 merge_fingerprint: 217a73987f5a94598358bd15f44f52cdde00620a3b0a9c0daa89efd8b7a9b597
 merged_from:
-- CCAP_C49_MC
+- mc

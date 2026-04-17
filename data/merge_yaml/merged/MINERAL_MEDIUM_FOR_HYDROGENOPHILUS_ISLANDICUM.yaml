@@ -1,6 +1,7 @@
-name: Mineral Medium For Hydrogenophilus Islandicum
+id: CultureMech:010215
+name: mineral_medium_for_hydrogenophilus_islandicum
 original_name: Mineral Medium For Hydrogenophilus Islandicum
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -21,12 +22,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '2.3'
@@ -35,6 +42,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -45,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: NaHCO3
   concentration:
     value: '0.5'
@@ -54,38 +67,40 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Na2HPO4・6H2O
   concentration:
     value: '2.9'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
-- preferred_term: SL-6 trace element solution (see Medium [M158])
-  concentration:
-    value: '5'
-    unit: G_PER_L
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: 0.1% Fe(NH4) citrate
   concentration:
     value: '0.4'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Solution'
-- preferred_term: 0.5% MgSO4・7H2O solution
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
-    component'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 media_term:
   preferred_term: TOGO Medium M803
   term:
@@ -112,6 +127,43 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Hydrogen gas'
-merge_fingerprint: bc0f41a662c8f5db127c852385436ff4670472e19f40067d707d65c3a89f8307
+- timestamp: '2026-03-09T08:04:12.069426+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:12.173245Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010215'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:03.181375'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.114672+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mineral Medium For Hydrogenophilus Islandicum" to "mineral_medium_for_hydrogenophilus_islandicum"
+    for consistent matching
+solutions:
+- preferred_term: SL-6 trace element solution (see Medium [M158])
+  composition: []
+  notes: Cross-reference to Medium M158
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 0.5% MgSO4・7H2O solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
+    component'
+  name: Unknown solution
+merge_fingerprint: 79a54d9ec581f773838dd5dd07afb43b84b08b151216ad9b270405cd59c56f93
 merged_from:
 - TOGO_M803_Mineral_Medium_For_Hydrogenophilus_Islandicum

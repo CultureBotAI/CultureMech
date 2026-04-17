@@ -1,0 +1,101 @@
+id: CultureMech:003603
+name: gluconacetobacter_rhaeticus_medium
+original_name: GLUCONACETOBACTER RHAETICUS medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 1044
+  term:
+    id: komodo.medium:1044
+    label: GLUCONACETOBACTER RHAETICUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1044 | DSMZ Medium: 1044 (mediadive.medium:1044)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1044'
+- timestamp: '2026-02-03T11:19:00.385275'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1044
+- timestamp: '2026-03-13T06:19:20.966847Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003603'
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:35.159631+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GLUCONACETOBACTER RHAETICUS medium" to "gluconacetobacter_rhaeticus_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:14.153862+00:00'
+  curator: recipe-merger
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1044_GLUCONACETOBACTER_RHAETICUS_medium, KOMODO_850_ALTERNATIVE_ACETOBACTER_INTERMEDIUS_medium,
+    acetobacter_musti_medium, alternative_acetobacter_intermedius_medium, gluconacetobacter_rhaeticus_medium,
+    gy_medium, yed_acetobacter_medium'
+synonyms:
+- name: alternative_acetobacter_intermedius_medium
+  source: KOMODO
+  source_id: komodo.medium:850
+  original_category: bacterial
+- name: acetobacter_musti_medium
+  source: MediaDive
+  source_id: mediadive.medium:1603
+  original_category: bacterial
+- name: alternative_acetobacter_intermedius_medium
+  source: MediaDive
+  source_id: mediadive.medium:850
+  original_category: bacterial
+- name: gy_medium
+  source: MediaDive
+  source_id: mediadive.medium:1543
+  original_category: bacterial
+- name: yed_acetobacter_medium
+  source: MediaDive
+  source_id: mediadive.medium:1424
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_1044_GLUCONACETOBACTER_RHAETICUS_medium
+- KOMODO_850_ALTERNATIVE_ACETOBACTER_INTERMEDIUS_medium
+- acetobacter_musti_medium
+- alternative_acetobacter_intermedius_medium
+- gluconacetobacter_rhaeticus_medium
+- gy_medium
+- yed_acetobacter_medium
+merge_fingerprint: 6a102f2691f01edf1c5f601010c632e32e487eaa6781f6ab50ec8553666af2ae

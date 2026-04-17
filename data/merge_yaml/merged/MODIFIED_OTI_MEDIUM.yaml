@@ -1,8 +1,9 @@
-name: MODIFIED OTI MEDIUM
+id: CultureMech:002505
+name: modified_oti_medium
 original_name: MODIFIED OTI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: JCM Medium J146
@@ -30,6 +31,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000531
+    label: Pectin
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -37,6 +41,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -44,6 +51,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
@@ -51,6 +61,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -58,6 +71,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
@@ -65,6 +81,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Ribose
   term:
     id: CHEBI:33942
@@ -72,6 +91,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000672
+    label: Ribose
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -79,6 +101,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -86,6 +111,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -93,6 +121,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -100,6 +131,9 @@ ingredients:
   concentration:
     value: '0.68'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Clarified rumen fluid
   concentration:
     value: '500'
@@ -111,6 +145,9 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
@@ -127,6 +164,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J146'
+- timestamp: '2026-03-13T06:19:13.867930Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002505'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:27.037608+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED OTI MEDIUM" to "modified_oti_medium" for consistent
+    matching
 merge_fingerprint: 53f9462079712d4c02549b5bdc30d39a015ae1202098931eb558ba78c07bd115
 merged_from:
-- JCM_J146_MODIFIED_OTI_MEDIUM
+- modified_oti_medium

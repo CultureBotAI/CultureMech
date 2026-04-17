@@ -1,8 +1,9 @@
-name: MEDIUM R2A MODIFIED
+id: CultureMech:001985
+name: medium_r2a_modified
 original_name: MEDIUM R2A MODIFIED
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 830a
@@ -26,6 +27,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Na-pyruvate
   term:
     id: CHEBI:50144
@@ -40,6 +47,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na-pyruvate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -47,6 +57,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -54,6 +67,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -61,6 +77,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -68,6 +87,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -85,6 +107,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:09.115613Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001985'
+- timestamp: '2026-03-17T06:29:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:21.633791+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM R2A MODIFIED" to "medium_r2a_modified" for consistent
+    matching
 merge_fingerprint: 2a3fd353ee38b22d8619835e8b3be9bede60dc41cefda3e43be613cc8bd6419d
 merged_from:
-- DSMZ_830a_MEDIUM_R2A_MODIFIED
+- medium_r2a_modified

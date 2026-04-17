@@ -1,79 +1,121 @@
-name: DUBOS SALTS MEDIUM
-original_name: DUBOS SALTS MEDIUM
-category: imported
-medium_type: DEFINED
-physical_state: LIQUID
-ph_value: 7.2
-media_term:
-  preferred_term: DSMZ Medium 1161
-  term:
-    id: mediadive.medium:1161
-    label: DUBOS SALTS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1161.pdf'
+id: CultureMech:008012
+name: dubos_salts_medium
+original_name: Dubos Salts Medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:59148
-    label: NaNO3
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
+- preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: KCl
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:32588
-    label: KCl
+    id: CHEBI:32599
+    label: ''
+- preferred_term: K2HPO4
   concentration:
-    value: '0.5'
+    value: '1'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: FeSO4・7H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:75836
-    label: FeSO4 x 7 H2O
+    label: ''
+- preferred_term: KCl
   concentration:
-    value: '0.01'
+    value: '0.5'
     unit: G_PER_L
-- preferred_term: Agar
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
-    id: CHEBI:2509
-    label: Agar
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: NaNO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:63005
+    label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
+- preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Adjust to pH 7.2. Autoclave at 121°C/15 min. Dispense into slopes.
-    When the agar has solidified, place a strip of sterile filter paper on to the
-    surface of each slope. Inoculate on to the filter paper.
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+media_term:
+  preferred_term: TOGO Medium M146
+  term:
+    id: TOGO:M146
+    label: Dubos Salts Medium
+notes: 'Source: https://togomedium.org/medium/M146
+
+  Original source: JCM - JCM_M155
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=155'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.544545Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1161'
-- timestamp: '2026-02-19T08:26:40.213729+00:00'
-  curator: recipe-merger
-  action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1161_DUBOS_SALTS_MEDIUM, JCM_J155_DUBOS_SALTS_MEDIUM, KOMODO_1161_DUBOS_SALTS_MEDIUM'
-categories:
-- imported
+- timestamp: '2026-01-27T06:35:54.516206Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M146'
+- timestamp: '2026-01-28T19:48:11.557684Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:52.979858Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008012'
+- timestamp: '2026-03-17T06:29:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:11.476284+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Dubos Salts Medium" to "dubos_salts_medium" for consistent
+    matching
+merge_fingerprint: 9b3f0d2493c7b2fe4c21c065be1893ce593402b246a5454080e881c1c156429e
 merged_from:
-- DSMZ_1161_DUBOS_SALTS_MEDIUM
-- JCM_J155_DUBOS_SALTS_MEDIUM
-- KOMODO_1161_DUBOS_SALTS_MEDIUM
-merge_fingerprint: 44a83112fcb16df5cd7f9db5023ff043e49b15d505d996494290255387ecea41
+- TOGO_M146_Dubos_Salts_Medium

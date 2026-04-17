@@ -1,57 +1,159 @@
-name: PY4SR Agar
-original_name: PY4SR Agar
-category: imported
+id: CultureMech:002723
+name: py4sr_agar
+original_name: PY4SR AGAR
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J364
+  term:
+    id: mediadive.medium:J364
+    label: PY4SR AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=364'
 ingredients:
-- preferred_term: PY4S AGAR (see Medium [M357])
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '9.96016'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Sodium resazurin
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: plant residue extract (see below)
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
   concentration:
-    value: '50'
+    value: '2.5'
     unit: G_PER_L
-- preferred_term: water
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: L-Cysteine HCl x H2O
   term:
-    id: CHEBI:15377
-    label: Water
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: rice straw
-  notes: 'Role: Nutrient source'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M358
+    value: '0.298805'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Agar
   term:
-    id: TOGO:M358
-    label: PY4SR Agar
-notes: 'Source: https://togomedium.org/medium/M358
-
-  Original source: JCM - JCM_M364
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=364'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.9402'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+  notes: Copied from referenced JCM Medium 363
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Medium No. 363 supplemented with 50 ml/L plant residue extract.
+    To prepare the plant residue extract, autoclave rice straw in water (1:5) at 120C
+    for 20 min, and use the supernatant after centrifugation.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.906326Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M358'
-- timestamp: '2026-01-28T19:48:25.210017Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.312468'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: water; Added default concentration
-    for ingredient: rice straw'
-merge_fingerprint: 135fafce0508553afb9d2e1e8b974d892098b98a2e4cba8a3a9a4d4b373db812
+- timestamp: '2026-01-26T17:53:16.403424Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J364'
+- timestamp: '2026-02-03T11:26:54.674375'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.261985Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002723'
+- timestamp: '2026-03-17T19:45:28.634772+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PY4SR AGAR" to "py4sr_agar" for consistent matching
+- timestamp: '2026-04-04T18:49:19.519350'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (10 ingredients)
+  source: CultureMech:002722
+  notes: Resolved reference by copying from py4s_agar (CultureMech:002722)
+- timestamp: '2026-04-17T06:30:16.767474+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: modified_py4s_agar, py4s_agar, py4sr_agar'
+data_quality_flags:
+  incomplete_composition: false
+  resolved_reference: true
+synonyms:
+- name: modified_py4s_agar
+  source: MediaDive
+  source_id: mediadive.medium:J617
+  original_category: bacterial
+- name: py4s_agar
+  source: MediaDive
+  source_id: mediadive.medium:J363
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M358_PY4SR_Agar
+- modified_py4s_agar
+- py4s_agar
+- py4sr_agar
+merge_fingerprint: dafa0bbed476704f0ee84c3f0e5e15840c71c3d9c0702f76a2d9a2adfca59375

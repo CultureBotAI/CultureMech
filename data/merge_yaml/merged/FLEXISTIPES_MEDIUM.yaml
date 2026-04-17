@@ -1,6 +1,7 @@
-name: FLEXISTIPES MEDIUM
+id: CultureMech:001656
+name: flexistipes_medium
 original_name: FLEXISTIPES MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '58.35'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '37.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '9.72'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '7.14'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '1.65'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: KBr
   term:
     id: CHEBI:32030
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.24'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
+    label: KBr
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.17'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2 x 6 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -67,6 +89,9 @@ ingredients:
   concentration:
     value: '0.66'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:34683
@@ -74,6 +99,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 2 H2O
 - preferred_term: Na-meta silicate
   concentration:
     value: '0.012'
@@ -85,6 +113,9 @@ ingredients:
   concentration:
     value: '0.007'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000182
+    label: NaF
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -96,6 +127,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -107,6 +141,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -114,6 +151,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -131,18 +171,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 524'
-- timestamp: '2026-02-19T08:26:50.761493+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_524_FLEXISTIPES_MEDIUM, KOMODO_524_FLEXISTIPES_medium'
-synonyms:
-- name: FLEXISTIPES medium
-  source: KOMODO
-  source_id: komodo.medium:524
-  original_category: imported
-categories:
-- imported
-merged_from:
-- DSMZ_524_FLEXISTIPES_MEDIUM
-- KOMODO_524_FLEXISTIPES_medium
+- timestamp: '2026-03-13T06:19:06.246741Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001656'
+- timestamp: '2026-03-17T06:30:30.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:18.423663+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "FLEXISTIPES MEDIUM" to "flexistipes_medium" for consistent
+    matching
 merge_fingerprint: 327ff4588a9a511f69883c9c37b27caec17d0368d6e048752fe87c57575a0cef
+merged_from:
+- flexistipes_medium

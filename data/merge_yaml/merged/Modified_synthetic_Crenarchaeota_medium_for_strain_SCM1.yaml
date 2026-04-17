@@ -1,17 +1,22 @@
-name: Modified synthetic Crenarchaeota medium for strain SCM1
+id: CultureMech:009549
+name: modified_synthetic_crenarchaeota_medium_for_strain_scm1
 original_name: Modified synthetic Crenarchaeota medium for strain SCM1
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '305.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 8 duplicates: 1.0, 1.0, 100.0, 1.0, 1.0, 1.0, 100.0,
+    100.0]'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -22,6 +27,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: NaCl
   concentration:
     value: '26'
@@ -31,6 +39,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '1.5'
@@ -40,6 +51,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '5'
@@ -49,6 +63,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: KBr
   concentration:
     value: '0.1'
@@ -58,43 +75,9 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
-- preferred_term: HEPES buffer*
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: 1 M NaHCO3 buffer**
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: KH2PO4 solution***
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: FeNaEDTA solution****
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Trace element solution*****
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: NH4Cl solution******
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-- preferred_term: Sodium alpha-Ketoglutamate solution*******
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
+    label: KBr
 - preferred_term: HEPES
   concentration:
     value: '238.4'
@@ -102,6 +85,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:46756
+    label: HEPES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
     label: HEPES
 - preferred_term: NaOH
   concentration:
@@ -111,23 +97,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: NaHCO3
   concentration:
     value: '8.4'
@@ -137,15 +109,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: KH2PO4
   concentration:
     value: '0.4'
@@ -155,29 +121,14 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: FeNaEDTA
   concentration:
     value: '578'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2MoO4·2H2O
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
@@ -187,6 +138,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
 - preferred_term: H3BO3
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
@@ -196,18 +150,27 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: MnCl2·4H2O
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2·6H2O
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: NiCl2·6H2O
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
@@ -217,6 +180,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2·6H2O
 - preferred_term: ZnSO4·7H2O
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
@@ -226,6 +192,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: CuCl2·2H2O
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
@@ -235,21 +204,15 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2·2H2O
 - preferred_term: HCl (35%)
   notes: 'Role: Solvating media; Properties: Inorganic compound, Solution, Defined
     component'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: NH4Cl
   concentration:
     value: '2.14'
@@ -259,15 +222,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Sodium alpha-ketoglutamate
   concentration:
     value: '0.34'
@@ -303,6 +260,80 @@ curation_history:
     for ingredient: CoCl2·6H2O; Added default concentration for ingredient: NiCl2·6H2O;
     Added default concentration for ingredient: ZnSO4·7H2O; Added default concentration
     for ingredient: CuCl2·2H2O; Added default concentration for ingredient: HCl (35%)'
-merge_fingerprint: 5b3ea7fd9b0134a2567ed96cfadcd333b30a4743d7054896a7acf598d92f9435
+- timestamp: '2026-03-09T08:04:41.425340+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:11.435162Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 8 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:06.820644Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009549'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:59.238837'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.845074+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified synthetic Crenarchaeota medium for strain
+    SCM1" to "modified_synthetic_crenarchaeota_medium_for_strain_scm1" for consistent
+    matching
+solutions:
+- preferred_term: HEPES buffer*
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 1 M NaHCO3 buffer**
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: KH2PO4 solution***
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: FeNaEDTA solution****
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Trace element solution*****
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution
+- preferred_term: NH4Cl solution******
+  composition: []
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Sodium alpha-Ketoglutamate solution*******
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 33358e9a8c8578255b30ca5f5fbe0e87afdddb0f944610eefe78633b6296b8dc
 merged_from:
-- TOGO_M3037_Modified_synthetic_Crenarchaeota_medium_for_strain_SCM1
+- modified_synthetic_crenarchaeota_medium_for_strain_scm1

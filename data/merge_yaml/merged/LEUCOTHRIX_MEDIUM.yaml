@@ -1,15 +1,16 @@
-name: LEUCOTHRIX MEDIUM
-original_name: LEUCOTHRIX MEDIUM
-category: imported
+id: CultureMech:006512
+name: leucothrix_medium
+original_name: LEUCOTHRIX medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 7.8
 media_term:
-  preferred_term: DSMZ Medium 79
+  preferred_term: KOMODO Medium 79
   term:
-    id: mediadive.medium:79
-    label: LEUCOTHRIX MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium79.pdf'
+    id: komodo.medium:79
+    label: LEUCOTHRIX medium
+notes: 'Source: KOMODO ModelSEED | ID: 79 | DSMZ Medium: 79 (mediadive.medium:79)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '24'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '11'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: CaCl2 x 6 H2O
   term:
     id: CHEBI:91243
@@ -43,6 +53,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000327
+    label: CaCl2 x 6 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -50,6 +63,9 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: KBr
   term:
     id: CHEBI:32030
@@ -57,6 +73,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
+    label: KBr
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -64,10 +83,16 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: NaSiO3 x 9 H2O
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000444
+    label: NaSiO3 x 9 H2O
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -75,6 +100,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2 x 6 H2O
 - preferred_term: NaF
   term:
     id: CHEBI:28741
@@ -82,6 +110,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000182
+    label: NaF
 - preferred_term: NH4NO3
   concentration:
     value: '0.002'
@@ -89,6 +120,9 @@ ingredients:
   term:
     id: CHEBI:63038
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: NH4NO3
 - preferred_term: Fe(III)PO4 x 4 H2O
   term:
     id: CHEBI:131372
@@ -96,33 +130,41 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.8.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000676
+    label: Fe(III)PO4 x 4 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.116221Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 79'
-- timestamp: '2026-01-28T19:48:31.163588Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:54.701421+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 79'
+- timestamp: '2026-02-03T11:18:58.485724'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 79
+- timestamp: '2026-03-13T06:19:41.485173Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006512'
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:58.949094+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LEUCOTHRIX medium" to "leucothrix_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:32.451238+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_79_LEUCOTHRIX_MEDIUM, KOMODO_79_LEUCOTHRIX_medium'
-synonyms:
-- name: LEUCOTHRIX medium
-  source: KOMODO
-  source_id: komodo.medium:79
-  original_category: imported
+  notes: 'Sources: KOMODO_79_LEUCOTHRIX_medium, leucothrix_medium'
+ph_value: 7.8
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_79_LEUCOTHRIX_MEDIUM
 - KOMODO_79_LEUCOTHRIX_medium
+- leucothrix_medium
 merge_fingerprint: 816901eb6b55277143faa14535ea024cecc2f7714c268ab8ef619ada6a60b94f

@@ -1,6 +1,7 @@
-name: GAM BROTH WITH SODIUM PYRUVATE
+id: CultureMech:002478
+name: gam_broth_with_sodium_pyruvate
 original_name: GAM BROTH WITH SODIUM PYRUVATE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -33,6 +37,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1314'
+- timestamp: '2026-03-13T06:19:13.665393Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002478'
+- timestamp: '2026-03-17T06:29:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:26.811039+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GAM BROTH WITH SODIUM PYRUVATE" to "gam_broth_with_sodium_pyruvate"
+    for consistent matching
+kg_microbe_match: mediadive.medium:J1244
 merge_fingerprint: 81775fceeb9748dbe78b0eb991c621b2534d09dc9666106bd66b8d210faf1246
 merged_from:
-- JCM_J1314_GAM_BROTH_WITH_SODIUM_PYRUVATE
+- gam_broth_with_sodium_pyruvate

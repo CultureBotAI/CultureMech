@@ -1,53 +1,50 @@
-name: MRS Fructose Medium
-original_name: MRS Fructose Medium
-category: imported
+id: CultureMech:003199
+name: mrs_fructose_medium
+original_name: MRS FRUCTOSE MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J853
+  term:
+    id: mediadive.medium:J853
+    label: MRS FRUCTOSE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=853'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Fructose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:28645
-    label: beta-D-fructofuranose
-- preferred_term: Lactobacilli MRS broth (BD-Difco)
+- preferred_term: Lactobacilli MRS broth
   concentration:
     value: '55'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M889
+- preferred_term: Fructose
   term:
-    id: TOGO:M889
-    label: MRS Fructose Medium
-notes: 'Source: https://togomedium.org/medium/M889
-
-  Original source: JCM - JCM_M853
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=853'
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000288
+    label: Fructose
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.907638Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M889'
-- timestamp: '2026-01-28T19:48:25.498558Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: f101d979a87e69e5c389ff56849c769be48c32e786db1be8363f2a90ee1b3d21
+- timestamp: '2026-01-26T17:53:17.803664Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J853'
+- timestamp: '2026-03-13T06:19:18.529679Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003199'
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:32.408305+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MRS FRUCTOSE MEDIUM" to "mrs_fructose_medium" for consistent
+    matching
+merge_fingerprint: 3d9e8ee8f881b6d5ac5b5069100f5ea544f577fbf71e2f5e3d52e0f6d4d97854
 merged_from:
-- TOGO_M889_MRS_Fructose_Medium
+- mrs_fructose_medium

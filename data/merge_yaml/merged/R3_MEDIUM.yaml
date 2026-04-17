@@ -1,15 +1,17 @@
-name: R3 MEDIUM
-original_name: R3 MEDIUM
-category: imported
+id: CultureMech:006924
+name: r3_medium
+original_name: R3 medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
 media_term:
-  preferred_term: DSMZ Medium 966
+  preferred_term: KOMODO Medium 966
   term:
-    id: mediadive.medium:966
-    label: R3 MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium966.pdf'
+    id: komodo.medium:966
+    label: R3 medium
+notes: 'Source: KOMODO ModelSEED | ID: 966 | DSMZ Medium: 966 (mediadive.medium:966)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -26,6 +28,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -33,6 +38,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -40,6 +48,9 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -47,6 +58,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Na pyruvate
   term:
     id: CHEBI:50144
@@ -54,42 +68,45 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Final pH should be 7.8
-- step_number: 2
-  action: AUTOCLAVE
-  description: Autoclave at 121°C for 15 minutes.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na pyruvate
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.928319Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 966'
-- timestamp: '2026-01-28T19:48:35.257662Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:57.768019+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 966'
+- timestamp: '2026-02-03T11:19:04.210394'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 966
+- timestamp: '2026-03-13T06:19:45.017700Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006924'
+- timestamp: '2026-03-17T06:30:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.028034+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R3 medium" to "r3_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:35.679092+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_966_R3_MEDIUM, KOMODO_966-17972_MEDIUM_966_MODIFIED_FOR_DSM_17972,
-    KOMODO_966_R3_medium'
+  notes: 'Sources: KOMODO_966_R3_medium, medium_966_modified_for_dsm_17972, r3_medium'
 synonyms:
-- name: MEDIUM 966 MODIFIED FOR DSM 17972
+- name: medium_966_modified_for_dsm_17972
   source: KOMODO
   source_id: komodo.medium:966_17972
-  original_category: imported
-- name: R3 medium
-  source: KOMODO
-  source_id: komodo.medium:966
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_966_R3_MEDIUM
-- KOMODO_966-17972_MEDIUM_966_MODIFIED_FOR_DSM_17972
 - KOMODO_966_R3_medium
+- medium_966_modified_for_dsm_17972
+- r3_medium
 merge_fingerprint: d0a55330002c9d917cf5c8b80032912fcfbda91661f0e76419551dd9d2ee0c83

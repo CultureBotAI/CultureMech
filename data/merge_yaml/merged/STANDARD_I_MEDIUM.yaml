@@ -1,15 +1,17 @@
-name: STANDARD I MEDIUM
-original_name: STANDARD I MEDIUM
-category: imported
+id: CultureMech:005303
+name: standard_i_medium
+original_name: STANDARD I medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
-  preferred_term: DSMZ Medium 453
+  preferred_term: KOMODO Medium 453
   term:
-    id: mediadive.medium:453
-    label: STANDARD I MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium453.pdf'
+    id: komodo.medium:453
+    label: STANDARD I medium
+notes: 'Source: KOMODO ModelSEED | ID: 453 | DSMZ Medium: 453 (mediadive.medium:453)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Meat peptone
   concentration:
@@ -30,6 +32,9 @@ ingredients:
   concentration:
     value: '5.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: D(+)-Glucose
   term:
     id: CHEBI:17634
@@ -37,90 +42,100 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Autoclave for 15 min at 121°C. pH of the final medium is 7.5.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D(+)-Glucose
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.165245Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 453'
-- timestamp: '2026-02-19T08:26:48.270761+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 453'
+- timestamp: '2026-02-03T11:19:13.034553'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 453
+- timestamp: '2026-03-13T06:19:31.585923Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005303'
+- timestamp: '2026-03-17T06:30:36.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:47.486219+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "STANDARD I medium" to "standard_i_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:24.089981+00:00'
   curator: recipe-merger
   action: Merged 13 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_453_STANDARD_I_MEDIUM, KOMODO_453-43934_MEDIUM_453_MODIFIED_FOR_DSM_43934,
-    KOMODO_453-6341_MEDIUM_453_MODIFIED_FOR_DSM_6341, KOMODO_453-6349_MEDIUM_453_MODIFIED_FOR_DSM_6349,
-    KOMODO_453-6364_MEDIUM_453_MODIFIED_FOR_DSM_6364, KOMODO_453-6366_MEDIUM_453_MODIFIED_FOR_DSM_6366,
-    KOMODO_453-6406_MEDIUM_453_MODIFIED_FOR_DSM_6406, KOMODO_453-6453_MEDIUM_453_MODIFIED_FOR_DSM_6453,
-    KOMODO_453-6454_MEDIUM_453_MODIFIED_FOR_DSM_6454, KOMODO_453-6455_MEDIUM_453_MODIFIED_FOR_DSM_6455,
-    KOMODO_453-6458_MEDIUM_453_MODIFIED_FOR_DSM_6458, KOMODO_453-6472_MEDIUM_453_MODIFIED_FOR_DSM_6472,
-    KOMODO_453_STANDARD_I_medium'
+  notes: 'Sources: KOMODO_453_STANDARD_I_medium, medium_453_modified_for_dsm_43934,
+    medium_453_modified_for_dsm_6341, medium_453_modified_for_dsm_6349, medium_453_modified_for_dsm_6364,
+    medium_453_modified_for_dsm_6366, medium_453_modified_for_dsm_6406, medium_453_modified_for_dsm_6453,
+    medium_453_modified_for_dsm_6454, medium_453_modified_for_dsm_6455, medium_453_modified_for_dsm_6458,
+    medium_453_modified_for_dsm_6472, standard_i_medium'
 synonyms:
-- name: MEDIUM 453 MODIFIED FOR DSM 43934
+- name: medium_453_modified_for_dsm_43934
   source: KOMODO
   source_id: komodo.medium:453_43934
-  original_category: imported
-- name: MEDIUM 453 MODIFIED FOR DSM 6341
+  original_category: bacterial
+- name: medium_453_modified_for_dsm_6341
   source: KOMODO
   source_id: komodo.medium:453_6341
-  original_category: imported
-- name: MEDIUM 453 MODIFIED FOR DSM 6349
+  original_category: bacterial
+- name: medium_453_modified_for_dsm_6349
   source: KOMODO
   source_id: komodo.medium:453_6349
-  original_category: imported
-- name: MEDIUM 453 MODIFIED FOR DSM 6364
+  original_category: bacterial
+- name: medium_453_modified_for_dsm_6364
   source: KOMODO
   source_id: komodo.medium:453_6364
-  original_category: imported
-- name: MEDIUM 453 MODIFIED FOR DSM 6366
+  original_category: bacterial
+- name: medium_453_modified_for_dsm_6366
   source: KOMODO
   source_id: komodo.medium:453_6366
-  original_category: imported
-- name: MEDIUM 453 MODIFIED FOR DSM 6406
+  original_category: bacterial
+- name: medium_453_modified_for_dsm_6406
   source: KOMODO
   source_id: komodo.medium:453_6406
-  original_category: imported
-- name: MEDIUM 453 MODIFIED FOR DSM 6453
+  original_category: bacterial
+- name: medium_453_modified_for_dsm_6453
   source: KOMODO
   source_id: komodo.medium:453_6453
-  original_category: imported
-- name: MEDIUM 453 MODIFIED FOR DSM 6454
+  original_category: bacterial
+- name: medium_453_modified_for_dsm_6454
   source: KOMODO
   source_id: komodo.medium:453_6454
-  original_category: imported
-- name: MEDIUM 453 MODIFIED FOR DSM 6455
+  original_category: bacterial
+- name: medium_453_modified_for_dsm_6455
   source: KOMODO
   source_id: komodo.medium:453_6455
-  original_category: imported
-- name: MEDIUM 453 MODIFIED FOR DSM 6458
+  original_category: bacterial
+- name: medium_453_modified_for_dsm_6458
   source: KOMODO
   source_id: komodo.medium:453_6458
-  original_category: imported
-- name: MEDIUM 453 MODIFIED FOR DSM 6472
+  original_category: bacterial
+- name: medium_453_modified_for_dsm_6472
   source: KOMODO
   source_id: komodo.medium:453_6472
-  original_category: imported
-- name: STANDARD I medium
-  source: KOMODO
-  source_id: komodo.medium:453
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_453_STANDARD_I_MEDIUM
-- KOMODO_453-43934_MEDIUM_453_MODIFIED_FOR_DSM_43934
-- KOMODO_453-6341_MEDIUM_453_MODIFIED_FOR_DSM_6341
-- KOMODO_453-6349_MEDIUM_453_MODIFIED_FOR_DSM_6349
-- KOMODO_453-6364_MEDIUM_453_MODIFIED_FOR_DSM_6364
-- KOMODO_453-6366_MEDIUM_453_MODIFIED_FOR_DSM_6366
-- KOMODO_453-6406_MEDIUM_453_MODIFIED_FOR_DSM_6406
-- KOMODO_453-6453_MEDIUM_453_MODIFIED_FOR_DSM_6453
-- KOMODO_453-6454_MEDIUM_453_MODIFIED_FOR_DSM_6454
-- KOMODO_453-6455_MEDIUM_453_MODIFIED_FOR_DSM_6455
-- KOMODO_453-6458_MEDIUM_453_MODIFIED_FOR_DSM_6458
-- KOMODO_453-6472_MEDIUM_453_MODIFIED_FOR_DSM_6472
 - KOMODO_453_STANDARD_I_medium
+- medium_453_modified_for_dsm_43934
+- medium_453_modified_for_dsm_6341
+- medium_453_modified_for_dsm_6349
+- medium_453_modified_for_dsm_6364
+- medium_453_modified_for_dsm_6366
+- medium_453_modified_for_dsm_6406
+- medium_453_modified_for_dsm_6453
+- medium_453_modified_for_dsm_6454
+- medium_453_modified_for_dsm_6455
+- medium_453_modified_for_dsm_6458
+- medium_453_modified_for_dsm_6472
+- standard_i_medium
 merge_fingerprint: 02d0ca210f6969bf165af67c00b2791e7bf900b97e696bd0721dbff44dacb326

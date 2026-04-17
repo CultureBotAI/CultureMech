@@ -1,6 +1,7 @@
-name: METHANOSALSUM WeN5 MEDIUM
+id: CultureMech:001829
+name: methanosalsum_wen5_medium
 original_name: METHANOSALSUM WeN5 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9.2-9.4
@@ -16,8 +17,12 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '14.6771'
+    value: '15.6771'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.6771, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '9.78474'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.293542'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -39,13 +50,20 @@ ingredients:
   concentration:
     value: '0.489237'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.00195695'
+    value: '0.03195695'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00195695, 0.03]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.489237'
@@ -61,6 +79,9 @@ ingredients:
   concentration:
     value: '3.91389'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Methanol
   term:
     id: CHEBI:17790
@@ -68,6 +89,9 @@ ingredients:
   concentration:
     value: '7.74951'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000618
+    label: Methanol
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -75,6 +99,9 @@ ingredients:
   concentration:
     value: '0.978474'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -82,6 +109,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -89,6 +119,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -96,13 +129,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -110,6 +139,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
@@ -117,6 +149,9 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -124,6 +159,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -131,6 +169,9 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -138,6 +179,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: AlK(SO4)2 x 12 H2O
   term:
     id: CHEBI:86465
@@ -145,6 +189,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000293
+    label: AlK(SO4)2 x 12 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -152,6 +199,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -159,13 +209,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -173,6 +219,9 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -180,6 +229,9 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -200,18 +252,35 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 692'
-- timestamp: '2026-02-19T08:26:53.027070+00:00'
+- timestamp: '2026-03-13T03:08:39.777167Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:07.564864Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001829'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:19.891663+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOSALSUM WeN5 MEDIUM" to "methanosalsum_wen5_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:53.645480+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_692_METHANOSALSUM_WeN5_MEDIUM, KOMODO_692_ALKALIPHILIC_METHANOGEN_medium'
+  notes: 'Sources: alkaliphilic_methanogen_medium, methanosalsum_wen5_medium'
 synonyms:
-- name: ALKALIPHILIC METHANOGEN medium
+- name: alkaliphilic_methanogen_medium
   source: KOMODO
   source_id: komodo.medium:692
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_692_METHANOSALSUM_WeN5_MEDIUM
-- KOMODO_692_ALKALIPHILIC_METHANOGEN_medium
+- alkaliphilic_methanogen_medium
+- methanosalsum_wen5_medium
 merge_fingerprint: 990227f2c8548ee472e4b04eba6fae0abcddc1ea50af4787a6e28824bb84b825

@@ -1,15 +1,17 @@
-name: MEDIUM WITH EDTA AS CARBON SOURCE
+id: CultureMech:005588
+name: medium_with_edta_as_carbon_source
 original_name: MEDIUM WITH EDTA AS CARBON SOURCE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.5-7.6
 media_term:
-  preferred_term: DSMZ Medium 473
+  preferred_term: KOMODO Medium 473
   term:
-    id: mediadive.medium:473
+    id: komodo.medium:473
     label: MEDIUM WITH EDTA AS CARBON SOURCE
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium473.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 473 | DSMZ Medium: 473 (mediadive.medium:473)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '1.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '0.272'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
     id: CHEBI:86159
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000586
+    label: Ca(NO3)2 x 4 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.49'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -60,13 +80,20 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
     label: Biotin
   concentration:
-    value: '0.8'
+    value: '0.802'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.8, 0.002]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -74,6 +101,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -81,6 +111,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -88,6 +121,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -95,6 +131,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -102,6 +141,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -109,6 +151,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -116,6 +161,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -123,6 +171,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -130,6 +181,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: p-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -137,13 +191,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: p-Aminobenzoate
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -151,6 +201,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -158,6 +211,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -165,6 +221,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Pyridoxamine
   term:
     id: CHEBI:16410
@@ -172,6 +231,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001024
+    label: Pyridoxamine
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -179,32 +241,51 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Autoclave phosphate buffer separately. pH should be 7.5 - 7.6. Add
-    5.0 ml sterile stock solution (see medium 462).
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.284294Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 473'
-- timestamp: '2026-02-19T08:26:49.888204+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 473'
+- timestamp: '2026-02-03T11:19:07.426525'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 473
+- timestamp: '2026-03-13T03:09:11.970625Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:34.334029Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005588'
+- timestamp: '2026-03-17T06:30:19.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:50.554948+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM WITH EDTA AS CARBON SOURCE" to "medium_with_edta_as_carbon_source"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:27.001808+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_473_MEDIUM_WITH_EDTA_AS_CARBON_SOURCE, KOMODO_473-6780_MEDIUM_473_MODIFIED_FOR_DSM_6780,
-    KOMODO_473_MEDIUM_WITH_EDTA_AS_CARBON_SOURCE'
+  notes: 'Sources: KOMODO_473_MEDIUM_WITH_EDTA_AS_CARBON_SOURCE, medium_473_modified_for_dsm_6780,
+    medium_with_edta_as_carbon_source'
 synonyms:
-- name: MEDIUM 473 MODIFIED FOR DSM 6780
+- name: medium_473_modified_for_dsm_6780
   source: KOMODO
   source_id: komodo.medium:473_6780
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_473_MEDIUM_WITH_EDTA_AS_CARBON_SOURCE
-- KOMODO_473-6780_MEDIUM_473_MODIFIED_FOR_DSM_6780
 - KOMODO_473_MEDIUM_WITH_EDTA_AS_CARBON_SOURCE
+- medium_473_modified_for_dsm_6780
+- medium_with_edta_as_carbon_source
 merge_fingerprint: 5622c375c20628fffa2d5353bc3162cb921cd17c25c19ce72fd4621c94a37d89

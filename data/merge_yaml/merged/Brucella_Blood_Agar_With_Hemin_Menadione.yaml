@@ -1,8 +1,9 @@
-name: Brucella Blood Agar With Hemin Menadione
+id: CultureMech:010102
+name: brucella_blood_agar_with_hemin_menadione
 original_name: Brucella Blood Agar With Hemin Menadione
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Horse blood
   concentration:
@@ -23,14 +27,6 @@ ingredients:
     value: '43'
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Hemin solution (see Medium [M470])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Menadione solution (see Medium [M470])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M696
   term:
@@ -52,6 +48,42 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: a945fdf9ff297f6f1ede91378781a451172500db4c7976d37f68719fbbeb5975
+- timestamp: '2026-03-09T08:05:08.390129+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:11.322760Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010102'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:02.517598'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.252553+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Brucella Blood Agar With Hemin Menadione" to "brucella_blood_agar_with_hemin_menadione"
+    for consistent matching
+solutions:
+- preferred_term: Hemin solution (see Medium [M470])
+  composition: []
+  notes: Cross-reference to Medium M470
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Menadione solution (see Medium [M470])
+  composition: []
+  notes: Cross-reference to Medium M470
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: bc6bad7e07d15bdf9b323a1ed4ddbd8bdc6fe7789c73c7c5ff4d5d1ef81b67c3
 merged_from:
 - TOGO_M696_Brucella_Blood_Agar_With_Hemin_Menadione

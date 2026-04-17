@@ -1,8 +1,9 @@
-name: PHOTOBACTERIUM MEDIUM
+id: CultureMech:015353
+name: photobacterium_medium
 original_name: PHOTOBACTERIUM MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.2-7.5
 media_term:
   preferred_term: DSMZ Medium 32
@@ -30,6 +31,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Tris
   term:
     id: CHEBI:9754
@@ -37,6 +41,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000880
+    label: Tris
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -44,6 +51,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
@@ -52,6 +62,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: ' (if required)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -60,6 +73,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (if required)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -74,6 +90,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 32'
+- timestamp: '2026-03-13T06:20:42.105743Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015353'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.688462+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PHOTOBACTERIUM MEDIUM" to "photobacterium_medium" for
+    consistent matching
 merge_fingerprint: 41a27ce2fdde7043fe1eb187b97e669e1bb873545636d962a6610f56dca7baa2
 merged_from:
-- DSMZ_32_PHOTOBACTERIUM_MEDIUM
+- photobacterium_medium

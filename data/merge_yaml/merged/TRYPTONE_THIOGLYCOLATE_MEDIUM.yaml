@@ -1,15 +1,17 @@
-name: TRYPTONE THIOGLYCOLATE MEDIUM
-original_name: TRYPTONE THIOGLYCOLATE MEDIUM
-category: imported
+id: CultureMech:005615
+name: tryptone_thioglycolate_medium
+original_name: TRYPTONE THIOGLYCOLATE medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
-  preferred_term: DSMZ Medium 48
+  preferred_term: KOMODO Medium 48
   term:
-    id: mediadive.medium:48
-    label: TRYPTONE THIOGLYCOLATE MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium48.pdf'
+    id: komodo.medium:48
+    label: TRYPTONE THIOGLYCOLATE medium
+notes: 'Source: KOMODO ModelSEED | ID: 48 | DSMZ Medium: 48 (mediadive.medium:48)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '5.45'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.015'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -60,6 +80,9 @@ ingredients:
   concentration:
     value: '0.0025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -67,6 +90,9 @@ ingredients:
   concentration:
     value: '0.0025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -74,6 +100,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Peptone
   concentration:
     value: '2'
@@ -93,35 +122,40 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve ingredients (except glucose), adjust pH to 7.5 and sparge
-    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-- step_number: 2
-  action: MIX
-  description: Add glucose to the medium after autoclaving from a sterile stock solution
-    prepared under 100% N2 gas.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Na-thioglycolate
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.045291Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 48'
-- timestamp: '2026-02-19T08:26:50.114492+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 48'
+- timestamp: '2026-02-03T11:19:03.557709'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 48
+- timestamp: '2026-03-13T06:19:34.598318Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005615'
+- timestamp: '2026-03-17T06:30:06.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:50.863668+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TRYPTONE THIOGLYCOLATE medium" to "tryptone_thioglycolate_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:27.146205+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_48_TRYPTONE_THIOGLYCOLATE_MEDIUM, KOMODO_48_TRYPTONE_THIOGLYCOLATE_medium'
-synonyms:
-- name: TRYPTONE THIOGLYCOLATE medium
-  source: KOMODO
-  source_id: komodo.medium:48
-  original_category: imported
+  notes: 'Sources: KOMODO_48_TRYPTONE_THIOGLYCOLATE_medium, tryptone_thioglycolate_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_48_TRYPTONE_THIOGLYCOLATE_MEDIUM
 - KOMODO_48_TRYPTONE_THIOGLYCOLATE_medium
+- tryptone_thioglycolate_medium
 merge_fingerprint: 10e1e58bac9328932fff51230e719f65e366c084e8045041580de48589cc3453

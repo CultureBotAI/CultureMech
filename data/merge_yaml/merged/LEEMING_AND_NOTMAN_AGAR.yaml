@@ -1,101 +1,106 @@
-name: Leeming And Notman Agar
-original_name: Leeming And Notman Agar
-category: imported
+id: CultureMech:002512
+name: leeming_and_notman_agar
+original_name: LEEMING AND NOTMAN AGAR
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J153
+  term:
+    id: mediadive.medium:J153
+    label: LEEMING AND NOTMAN AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=153'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Bacto peptone
   concentration:
-    value: '1'
+    value: '9.88142'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Glycerol
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-- preferred_term: Cow's milk (whole fat)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Undefined component'
-- preferred_term: Oxgall (BD-Difco)
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Role: Selective agent; Properties: Simple component, Undefined component'
 - preferred_term: Glucose
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Agar
+    id: CHEBI:17234
+    label: Glucose
   concentration:
-    value: '12'
+    value: '4.94071'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0988142'
+    unit: G_PER_L
+- preferred_term: Oxgall
+  concentration:
+    value: '7.90514'
+    unit: G_PER_L
+- preferred_term: Glycerol
   term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Yeast extract (BD-Difco)
+    id: CHEBI:17754
+    label: Glycerol
   concentration:
-    value: '0.1'
+    value: '1'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Bacto peptone (BD-Difco)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Glycerol monostearate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:75456
-    label: 2-stearoylglycerol
+    label: Glycerol monostearate
+  concentration:
+    value: '0.494071'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000691
+    label: Glycerol monostearate
 - preferred_term: Tween 60
+  term:
+    id: CHEBI:53425
+    label: Tween 60
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000692
+    label: Tween 60
+- preferred_term: Cow's milk
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
   term:
-    id: CHEBI:53425
-    label: polysorbate 60
-media_term:
-  preferred_term: TOGO Medium M144
-  term:
-    id: TOGO:M144
-    label: Leeming And Notman Agar
-notes: 'Source: https://togomedium.org/medium/M144
-
-  Original source: JCM - JCM_M153
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=153'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '11.8577'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 110C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.513167Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M144'
-- timestamp: '2026-01-28T19:48:16.773477Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 8976b5642a65100d1312f98468d066dd8e78b6ad9cbd47688585ef3b2f398740
+- timestamp: '2026-01-26T17:53:15.831938Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J153'
+- timestamp: '2026-03-13T06:19:13.905454Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002512'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:27.079469+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LEEMING AND NOTMAN AGAR" to "leeming_and_notman_agar"
+    for consistent matching
+merge_fingerprint: 33424fefd3be01b798b2adb03b0673f9ef2465275082cb88ca934094d4921e6a
 merged_from:
-- TOGO_M144_Leeming_And_Notman_Agar
+- leeming_and_notman_agar

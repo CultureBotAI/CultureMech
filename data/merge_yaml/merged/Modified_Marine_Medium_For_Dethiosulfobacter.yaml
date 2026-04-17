@@ -1,6 +1,7 @@
-name: MODIFIED MARINE MEDIUM FOR DETHIOSULFOBACTER
+id: CultureMech:015408
+name: modified_marine_medium_for_dethiosulfobacter
 original_name: MODIFIED MARINE MEDIUM FOR DETHIOSULFOBACTER
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '26.1438'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '3.92157'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '5.22876'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.261438'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.653595'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.326797'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.196078'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.653595'
@@ -71,6 +93,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: Sodium glutamate monohydrate
   term:
     id: CHEBI:64243
@@ -78,6 +103,9 @@ ingredients:
   concentration:
     value: '18.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000493
+    label: Sodium glutamate monohydrate
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
@@ -85,6 +113,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -92,6 +123,9 @@ ingredients:
   concentration:
     value: '83.3333'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Sodium dithionite
   term:
     id: CHEBI:66870
@@ -99,6 +133,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000496
+    label: Sodium dithionite
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -106,6 +143,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -113,6 +153,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -120,6 +163,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -127,6 +173,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -134,6 +183,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -141,6 +193,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -148,6 +203,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -155,6 +213,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -162,6 +223,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -169,6 +233,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -176,6 +243,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -183,6 +253,9 @@ ingredients:
   concentration:
     value: '0.008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -190,6 +263,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -197,6 +273,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -204,6 +283,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: DL-Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -211,6 +293,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: DL-Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -218,6 +303,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Sodium phosphate buffer
   concentration:
     value: '100'
@@ -247,6 +335,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J501'
+- timestamp: '2026-03-13T06:20:42.513718Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015408'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:34.163823+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED MARINE MEDIUM FOR DETHIOSULFOBACTER" to "modified_marine_medium_for_dethiosulfobacter"
+    for consistent matching
+high_metal: true
 merge_fingerprint: 3e9fd0fedff7125c97e405b244d1a6a7d101bc38f51fc497fdc6f605a870c746
 merged_from:
-- JCM_J501_MODIFIED_MARINE_MEDIUM_FOR_DETHIOSULFOBACTER
+- modified_marine_medium_for_dethiosulfobacter

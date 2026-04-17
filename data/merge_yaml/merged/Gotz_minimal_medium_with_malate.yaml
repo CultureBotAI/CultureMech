@@ -1,6 +1,7 @@
-name: Gotz minimal medium with malate
+id: CultureMech:007119
+name: gotz_minimal_medium_with_malate
 original_name: Gotz minimal medium with malate
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '8.2e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: '''(S'
   concentration:
     value: '27.0'
@@ -25,6 +29,9 @@ ingredients:
     value: '5.3e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709
@@ -33,6 +40,9 @@ ingredients:
     value: '0.00012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydxn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -41,6 +51,9 @@ ingredients:
     value: '0.00015'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-Aminobenzoate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
@@ -53,6 +66,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -60,6 +76,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -67,6 +86,9 @@ ingredients:
   concentration:
     value: '6.6e-05'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '3.9'
@@ -78,6 +100,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.001'
@@ -89,6 +114,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -96,6 +124,9 @@ ingredients:
   concentration:
     value: '40.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000285
+    label: MOPS
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -112,6 +143,19 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 224, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.298609Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007119'
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.447373+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Gotz minimal medium with malate" to "gotz_minimal_medium_with_malate"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 224
   term:
@@ -123,6 +167,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 624c58867b6ab1fc12a8a81b6a7b6227ba5f05cd274fc5ac4fcb8d1b0a322ec6
+merge_fingerprint: 8a86fe0bd280689d23fdd07c57311a66b1ba6733fc8a9b0985ab0217ddbeb371
 merged_from:
-- MEDIADB_224_Gotz_minimal_medium_with_malate
+- gotz_minimal_medium_with_malate

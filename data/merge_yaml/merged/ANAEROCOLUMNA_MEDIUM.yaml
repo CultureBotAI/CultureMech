@@ -1,6 +1,7 @@
-name: ANAEROCOLUMNA MEDIUM
+id: CultureMech:002019
+name: anaerocolumna_medium
 original_name: ANAEROCOLUMNA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.299401'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.299401'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.199601'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.0998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.0998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.598802'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Yeast extract
   concentration:
     value: '0.998004'
@@ -75,6 +97,9 @@ ingredients:
   concentration:
     value: '1.49701'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: D-Fructose
   term:
     id: CHEBI:15824
@@ -82,6 +107,9 @@ ingredients:
   concentration:
     value: '3.99202'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000344
+    label: D-Fructose
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -89,6 +117,9 @@ ingredients:
   concentration:
     value: '0.499002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -96,6 +127,9 @@ ingredients:
   concentration:
     value: '0.299401'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -103,6 +137,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -110,6 +147,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -117,6 +157,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -124,6 +167,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -131,6 +177,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -138,6 +187,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -145,6 +197,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -152,6 +207,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -159,6 +217,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -180,50 +241,62 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 860'
-- timestamp: '2026-02-19T08:26:55.944743+00:00'
+- timestamp: '2026-03-13T06:19:09.452350Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002019'
+- timestamp: '2026-03-17T06:30:29.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:22.016095+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROCOLUMNA MEDIUM" to "anaerocolumna_medium" for
+    consistent matching
+- timestamp: '2026-04-17T06:29:54.545552+00:00'
   curator: recipe-merger
   action: Merged 8 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_860_ANAEROCOLUMNA_MEDIUM, KOMODO_860-1_For_DSM_12503, KOMODO_860-2_For_DSM_12504,
-    KOMODO_860-3_For_DSM_12505, KOMODO_860-4_For_DSM_13105, KOMODO_860-5_For_DSM_13106_and_DSM_23801,
-    KOMODO_860-6_For_DSM_13116, KOMODO_860_HESP1_SR1_TMC4_LUP_medium'
+  notes: 'Sources: anaerocolumna_medium, for_dsm_12503, for_dsm_12504, for_dsm_12505,
+    for_dsm_13105, for_dsm_13106_and_dsm_23801, for_dsm_13116, hesp1_sr1_tmc4_lup_medium'
 synonyms:
-- name: For DSM 12503
+- name: for_dsm_12503
   source: KOMODO
   source_id: komodo.medium:860.1
-  original_category: imported
-- name: For DSM 12504
+  original_category: bacterial
+- name: for_dsm_12504
   source: KOMODO
   source_id: komodo.medium:860.2
-  original_category: imported
-- name: For DSM 12505
+  original_category: bacterial
+- name: for_dsm_12505
   source: KOMODO
   source_id: komodo.medium:860.3
-  original_category: imported
-- name: For DSM 13105
+  original_category: bacterial
+- name: for_dsm_13105
   source: KOMODO
   source_id: komodo.medium:860.4
-  original_category: imported
-- name: For DSM 13106 and DSM 23801
+  original_category: bacterial
+- name: for_dsm_13106_and_dsm_23801
   source: KOMODO
   source_id: komodo.medium:860.5
-  original_category: imported
-- name: For DSM 13116
+  original_category: bacterial
+- name: for_dsm_13116
   source: KOMODO
   source_id: komodo.medium:860.6
-  original_category: imported
-- name: HESP1/SR1/TMC4/LUP medium
+  original_category: bacterial
+- name: hesp1_sr1_tmc4_lup_medium
   source: KOMODO
   source_id: komodo.medium:860
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_860_ANAEROCOLUMNA_MEDIUM
-- KOMODO_860-1_For_DSM_12503
-- KOMODO_860-2_For_DSM_12504
-- KOMODO_860-3_For_DSM_12505
-- KOMODO_860-4_For_DSM_13105
-- KOMODO_860-5_For_DSM_13106_and_DSM_23801
-- KOMODO_860-6_For_DSM_13116
-- KOMODO_860_HESP1_SR1_TMC4_LUP_medium
+- anaerocolumna_medium
+- for_dsm_12503
+- for_dsm_12504
+- for_dsm_12505
+- for_dsm_13105
+- for_dsm_13106_and_dsm_23801
+- for_dsm_13116
+- hesp1_sr1_tmc4_lup_medium
 merge_fingerprint: 94fec3c9dda62a93780e02279d57ac15bdbbf1af3620b64c331d92a1ae07620a

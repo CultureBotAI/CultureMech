@@ -1,24 +1,89 @@
-name: SODALIS GLOSSINIDIUS MEDIUM
-original_name: SODALIS GLOSSINIDIUS MEDIUM
-category: imported
+id: CultureMech:003534
+name: sodalis_glossinidius_medium
+original_name: SODALIS GLOSSINIDIUS medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:
-  preferred_term: DSMZ Medium 1021
+  preferred_term: KOMODO Medium 1021
   term:
-    id: mediadive.medium:1021
-    label: SODALIS GLOSSINIDIUS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1021.pdf'
+    id: komodo.medium:1021
+    label: SODALIS GLOSSINIDIUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1021 | DSMZ Medium: 1021 (mediadive.medium:1021)
+  | Aerobic: No
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '6.88889'
     unit: G_PER_L
-- preferred_term: Lactalbumin hydrolysate
+- preferred_term: Tryptone
+  term:
+    id: FOODON:03316428
+    label: tryptone
   concentration:
-    value: '9'
+    value: '10.0'
     unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: pancreatic digest of casein
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002960
+    label: yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -26,6 +91,9 @@ ingredients:
   concentration:
     value: '5.55556'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -33,6 +101,9 @@ ingredients:
   concentration:
     value: '0.277778'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -40,6 +111,9 @@ ingredients:
   concentration:
     value: '0.133333'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -47,6 +121,9 @@ ingredients:
   concentration:
     value: '0.277778'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -54,6 +131,9 @@ ingredients:
   concentration:
     value: '9.66667'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -61,6 +141,9 @@ ingredients:
   concentration:
     value: '0.166667'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -68,6 +151,9 @@ ingredients:
   concentration:
     value: '18.8889'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: NaH2PO4 x 2 H2O
   term:
     id: CHEBI:37585
@@ -75,40 +161,47 @@ ingredients:
   concentration:
     value: '2.8'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Sterilize solution A and B separately at 121°C for 20 min. Cool to
-    50°C, then combine. To 4 parts of the above, add 1 part sterile foetal or new
-    borne calf serum. Liquid medium should be filter sterilized instead of autoclaved.
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 8.0.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.129815Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1021'
-- timestamp: '2026-02-19T08:26:38.138399+00:00'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1021'
+- timestamp: '2026-02-03T11:19:02.237920'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1021
+- timestamp: '2026-03-13T06:19:20.490626Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003534'
+- timestamp: '2026-03-17T06:30:02.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:34.633595+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SODALIS GLOSSINIDIUS medium" to "sodalis_glossinidius_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:13.914299+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1021_SODALIS_GLOSSINIDIUS_MEDIUM, KOMODO_1021-16929_MEDIUM_1021_MODIFIED_FOR_DSM_16929,
-    KOMODO_1021_SODALIS_GLOSSINIDIUS_medium'
+  notes: 'Sources: KOMODO_1021_SODALIS_GLOSSINIDIUS_medium, medium_1021_modified_for_dsm_16929,
+    sodalis_glossinidius_medium'
 synonyms:
-- name: MEDIUM 1021 MODIFIED FOR DSM 16929
+- name: medium_1021_modified_for_dsm_16929
   source: KOMODO
   source_id: komodo.medium:1021_16929
-  original_category: imported
-- name: SODALIS GLOSSINIDIUS medium
-  source: KOMODO
-  source_id: komodo.medium:1021
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1021_SODALIS_GLOSSINIDIUS_MEDIUM
-- KOMODO_1021-16929_MEDIUM_1021_MODIFIED_FOR_DSM_16929
 - KOMODO_1021_SODALIS_GLOSSINIDIUS_medium
-merge_fingerprint: dbce4bcb998cc992c8877660f15d2aa094d2931d1f60741c94b2c740c37ca2e1
+- medium_1021_modified_for_dsm_16929
+- sodalis_glossinidius_medium
+merge_fingerprint: 3f16314131bb23eb286ebc16ba69ae7ca5702588ddb9d2c8125891b6e99bd24c

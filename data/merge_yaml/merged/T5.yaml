@@ -1,8 +1,9 @@
-name: T5
+id: CultureMech:008696
+name: t5
 original_name: T5
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: Calcium Carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: Calcium carbonate
 - preferred_term: Glucose
   concentration:
     value: '1'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: agar
   concentration:
     value: '20'
@@ -43,6 +53,9 @@ ingredients:
   notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
     label: agar
 - preferred_term: Tryptone
   concentration:
@@ -70,6 +83,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:59.492611Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008696'
+- timestamp: '2026-03-17T06:29:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:18.131814+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "T5" to "t5" for consistent matching
 merge_fingerprint: d15df0490fcc6875b497dba0b92818192d90fff2ee72c45cc3ddba8678b6f584
 merged_from:
-- TOGO_M2104_T5
+- t5

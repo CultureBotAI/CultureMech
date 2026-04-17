@@ -1,8 +1,9 @@
-name: COW MANURE AGAR
+id: CultureMech:001794
+name: cow_manure_agar
 original_name: COW MANURE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 657
   term:
@@ -21,6 +22,9 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Tap water
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -28,6 +32,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
@@ -41,6 +48,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 657'
+- timestamp: '2026-03-13T06:19:07.263721Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001794'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:19.547939+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "COW MANURE AGAR" to "cow_manure_agar" for consistent
+    matching
 merge_fingerprint: 4d38254d4646c7dafe2a38aa06a9187c268d7d355df08c4b7ca6986747af1469
 merged_from:
-- DSMZ_657_COW_MANURE_AGAR
+- cow_manure_agar

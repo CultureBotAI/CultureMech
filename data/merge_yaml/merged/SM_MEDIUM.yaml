@@ -1,155 +1,171 @@
-name: SM Medium
-original_name: SM Medium
-category: imported
-medium_type: COMPLEX
+id: CultureMech:003248
+name: sm_medium
+original_name: SM MEDIUM
+category: bacterial
+medium_type: DEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: 10% Na2S2O3 solution
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '900'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 6.0
+media_term:
+  preferred_term: JCM Medium J89
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+    id: mediadive.medium:J89
+    label: SM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=89'
+ingredients:
 - preferred_term: KH2PO4
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: NH4Cl
   concentration:
-    value: '0.3'
+    value: '1.49254'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Na2HPO4
-  concentration:
-    value: '4.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
-    compound'
   term:
     id: CHEBI:34683
-    label: disodium hydrogenphosphate
-- preferred_term: Trace metal solution (see below)
+    label: Na2HPO4
   concentration:
-    value: '5'
+    value: '4.47761'
     unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
+- preferred_term: NH4Cl
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: FeSO4・7H2O
+    id: CHEBI:31206
+    label: NH4Cl
   concentration:
-    value: '4.99'
+    value: '0.298507'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-- preferred_term: MnCl2・4H2O
-  concentration:
-    value: '5.06'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: CoCl2・6H2O
-  concentration:
-    value: '1.61'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: ZnSO4・7H2O
-  concentration:
-    value: '22'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: CuSO4・5H2O
-  concentration:
-    value: '1.57'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: CaCl2
-  concentration:
-    value: '5.54'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:3312
-    label: calcium dichloride
-- preferred_term: (NH4)6Mo7O24・4H2O
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '1.1'
+    value: '0.0995025'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: Na2S2O3
+  term:
+    id: CHEBI:59168
+    label: Na2S2O3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000321
+    label: Na2S2O3
 - preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
+- preferred_term: ZnSO4 x 7 H2O
   term:
-    id: CHEBI:64755
-    label: EDTA(2-)
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  term:
-    id: CHEBI:32035
-    label: potassium hydroxide
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M80
+    value: '22'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+- preferred_term: CaCl2
   term:
-    id: TOGO:M80
-    label: SM Medium
-notes: 'Source: https://togomedium.org/medium/M80
-
-  Original source: JCM - JCM_M89
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=89'
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '5.54'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '5.06'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '4.99'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '1.57'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '1.61'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+- step_number: 2
+  action: MIX
+  description: Separately sterilize Na2S2O3 solution by filtration. Aseptically add
+    sterile Na2S2O3 solution to the medium.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.738462Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M80'
-- timestamp: '2026-01-28T19:48:41.831502Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.688850'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: KOH'
-merge_fingerprint: fec9264c30022689087d7507aee7865e489ade6083a4dfa596c7b43b6fc6afa2
+- timestamp: '2026-01-26T17:53:15.710751Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J89'
+- timestamp: '2026-03-13T06:19:18.909266Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003248'
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:32.799735+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SM MEDIUM" to "sm_medium" for consistent matching
+merge_fingerprint: 6f474ccbb41fd5c411924ccad6f160e8341e4ad9399b2bf133d69bce2b55a296
 merged_from:
-- TOGO_M80_SM_Medium
+- sm_medium

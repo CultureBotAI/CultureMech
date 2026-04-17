@@ -1,6 +1,7 @@
-name: USAB 49 MEDIUM
+id: CultureMech:003062
+name: usab_49_medium
 original_name: USAB 49 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.986193'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.295858'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -32,20 +39,31 @@ ingredients:
   concentration:
     value: '0.295858'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.986193'
+    value: '1.986193'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.986193, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0986193'
+    value: '0.1986193'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0986193, 0.1]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -53,6 +71,9 @@ ingredients:
   concentration:
     value: '0.0986193'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Yeast extract
   concentration:
     value: '0.986193'
@@ -64,6 +85,9 @@ ingredients:
   concentration:
     value: '3.5503'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Peptone
   concentration:
     value: '0.986193'
@@ -75,6 +99,9 @@ ingredients:
   concentration:
     value: '12.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -82,6 +109,9 @@ ingredients:
   concentration:
     value: '0.000986193'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -89,6 +119,9 @@ ingredients:
   concentration:
     value: '12.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -96,6 +129,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -103,6 +139,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -110,13 +149,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -124,6 +159,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: CuCl2
   term:
     id: CHEBI:49553
@@ -131,6 +169,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000821
+    label: CuCl2
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -138,6 +179,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -145,13 +189,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -159,6 +199,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -177,6 +220,23 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J715'
+- timestamp: '2026-03-13T03:08:56.840818Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:17.512441Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003062'
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:31.230938+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "USAB 49 MEDIUM" to "usab_49_medium" for consistent
+    matching
 merge_fingerprint: c8fa5f16890344e2318f30d3c3f56282bc712ac90f4ed17da5205bd5c5d3d42a
 merged_from:
-- JCM_J715_USAB_49_MEDIUM
+- usab_49_medium

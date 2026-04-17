@@ -1,113 +1,225 @@
-name: Minimal media
-original_name: Minimal media
-category: imported
+id: CultureMech:008900
+name: minimal_media
+original_name: minimal media
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: yeast extract
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    value: '0.05'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.05'
+    unit: PERCENT_W_V
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4·7H2O
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: D-glucose
   concentration:
     value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: K2HPO4
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: D-glucose
+- preferred_term: N-acetyl-D-glucosamine
   concentration:
-    value: '1.6'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: CuSO4·5H2O
+    id: CHEBI:8006
+    label: Peptidoglycan(N-acetyl-D-glucosamine)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000994
+    label: N-acetyl-D-glucosamine
+- preferred_term: Tris-HCl
   concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    value: '50'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Defined component, Complex component, Solution'
+- preferred_term: D-galactose
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-- preferred_term: KCl
+    id: CHEBI:12936
+    label: D-galactose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000995
+    label: D-galactose
+- preferred_term: D-xylose
   concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: MnSO4·H2O
+    id: CHEBI:65327
+    label: D-xylose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000996
+    label: D-xylose
+- preferred_term: D-galacturonic acid
   concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: FeCl3
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:30808
-    label: iron trichloride
-- preferred_term: Nitrogen
+    id: CHEBI:18024
+    label: D-galacturonic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000844
+    label: D-galacturonic acid
+- preferred_term: L-arabinose
   concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Properties: Gas'
-- preferred_term: NH4NO3
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: L-rhamnose
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
-    id: CHEBI:63038
-    label: ''
+    id: CHEBI:62345
+    label: L-Rhamnose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000997
+    label: L-rhamnose
+- preferred_term: D-mannose
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:16024
+    label: D-Mannose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000998
+    label: D-mannose
+- preferred_term: D-trehalose
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:27082
+    label: D-Trehalose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000545
+    label: D-trehalose
+- preferred_term: xylan (oat spelts)
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: pectin (apple)
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: pectin (citrus peel)
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: galatcomannan (Ceratonia siliqua)
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source, Thickening agent'
+- preferred_term: mannan (Saccharomyces cerevisiae)
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source'
+- preferred_term: arabinan (sugar beet)
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source'
+- preferred_term: arabinogalactan (larch)
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source'
+- preferred_term: laminarin (brown algae)
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Growth factor'
+- preferred_term: chitin (shrimp shells)
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source'
+- preferred_term: sea salts
+  concentration:
+    value: '2.3'
+    unit: PERCENT_W_V
+  notes: 'Role: Mineral source'
+- preferred_term: alginate (brown algae)
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source'
 media_term:
-  preferred_term: TOGO Medium M3231
+  preferred_term: TOGO Medium M2313
   term:
-    id: TOGO:M3231
-    label: Minimal media
-notes: 'Source: https://togomedium.org/medium/M3231'
+    id: TOGO:M2313
+    label: minimal media
+notes: 'Source: https://togomedium.org/medium/M2313'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.624162Z'
+- timestamp: '2026-01-27T06:35:56.326504Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M3231'
-- timestamp: '2026-01-28T19:48:17.132669Z'
+  notes: 'Source: TOGO, ID: M2313'
+- timestamp: '2026-01-28T19:48:17.980480Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.981845'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NH4NO3'
-merge_fingerprint: 4bc33439905805dd865bc93234977dad8353e11ab6eaff45b2374a6ca7e0c92f
+- timestamp: '2026-02-06T05:10:25.566835Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:20:01.158811Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008900'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.863510+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "minimal media" to "minimal_media" for consistent matching
+merge_fingerprint: 805aefdd88eac5b243e488b00100d616d87c2eab16a4ea78e31322856967d924
 merged_from:
-- TOGO_M3231_Minimal_media
+- minimal_media

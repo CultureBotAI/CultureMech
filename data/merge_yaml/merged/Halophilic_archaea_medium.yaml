@@ -1,8 +1,9 @@
-name: Halophilic archaea medium
+id: CultureMech:008628
+name: halophilic_archaea_medium
 original_name: Halophilic archaea medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '200'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.2'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '20'
@@ -40,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: KCl
   concentration:
     value: '2'
@@ -49,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Tris
   concentration:
     value: '12.1'
@@ -57,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:9754
     label: tris
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000880
+    label: Tris
 - preferred_term: Agar (if needed)
   concentration:
     value: '20'
@@ -75,6 +94,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 media_term:
   preferred_term: TOGO Medium M2039
   term:
@@ -96,6 +118,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:58.848046Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008628'
+- timestamp: '2026-03-17T06:30:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.469878+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Halophilic archaea medium" to "halophilic_archaea_medium"
+    for consistent matching
+high_metal: true
 merge_fingerprint: b0bc2a6643a3fcb4441298cb5dac01107c12c39b38667385a22ea7c1fdfd0bd6
 merged_from:
-- TOGO_M2039_Halophilic_archaea_medium
+- halophilic_archaea_medium

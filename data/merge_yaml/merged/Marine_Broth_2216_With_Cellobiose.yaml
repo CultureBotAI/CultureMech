@@ -1,6 +1,7 @@
-name: MARINE BROTH 2216 WITH CELLOBIOSE
+id: CultureMech:015385
+name: marine_broth_2216_with_cellobiose
 original_name: MARINE BROTH 2216 WITH CELLOBIOSE
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -21,6 +22,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 applications:
 - Microbial cultivation
 curation_history:
@@ -28,6 +32,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1127'
+- timestamp: '2026-03-13T06:20:42.327333Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015385'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.959233+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MARINE BROTH 2216 WITH CELLOBIOSE" to "marine_broth_2216_with_cellobiose"
+    for consistent matching
+kg_microbe_match: mediadive.medium:J1127
 merge_fingerprint: da510b4cc772e2797a44571091dcd46248b4eaa61da396ade0f4f74a9dff6aa1
 merged_from:
-- JCM_J1127_MARINE_BROTH_2216_WITH_CELLOBIOSE
+- marine_broth_2216_with_cellobiose

@@ -1,6 +1,7 @@
-name: UREAPLASMA MEDIUM
+id: CultureMech:000527
+name: ureaplasma_medium
 original_name: UREAPLASMA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '0.142857'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
 - preferred_term: Fish-Sperm DNA
   concentration:
     value: '0.285714'
@@ -29,6 +33,9 @@ ingredients:
   term:
     id: CHEBI:16991
     label: deoxyribonucleic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000732
+    label: Fish-Sperm DNA
 - preferred_term: Phenol red
   term:
     id: CHEBI:31991
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '0.0285714'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001075
+    label: Phenol red
 - preferred_term: Urea
   term:
     id: CHEBI:16199
@@ -43,6 +53,9 @@ ingredients:
   concentration:
     value: '0.571429'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -72,18 +85,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:39.323337+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1096_UREAPLASMA_MEDIUM, KOMODO_1096_UREAPLASMA_medium'
-synonyms:
-- name: UREAPLASMA medium
-  source: KOMODO
-  source_id: komodo.medium:1096
-  original_category: imported
-categories:
-- imported
-merged_from:
-- DSMZ_1096_UREAPLASMA_MEDIUM
-- KOMODO_1096_UREAPLASMA_medium
+- timestamp: '2026-03-13T06:18:56.086405Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000527'
+- timestamp: '2026-03-17T06:29:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:07.122493+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "UREAPLASMA MEDIUM" to "ureaplasma_medium" for consistent
+    matching
 merge_fingerprint: b8daddf67235780e4110033d785739842f14f3f5eabe298e005af7b7b2e9aac5
+merged_from:
+- ureaplasma_medium

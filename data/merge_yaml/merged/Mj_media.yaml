@@ -1,6 +1,7 @@
-name: Mj media
+id: CultureMech:007044
+name: mj_media
 original_name: Mj media
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '34.965'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:urea'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -20,6 +24,9 @@ ingredients:
     value: '0.000819'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -27,6 +34,9 @@ ingredients:
   concentration:
     value: '14.6071'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -35,6 +45,9 @@ ingredients:
     value: '0.002917'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-Aminobenzoate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -42,6 +55,9 @@ ingredients:
   concentration:
     value: '0.0001476'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: Magnesium chloride
   concentration:
     value: '4.9186'
@@ -49,6 +65,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '1.0203'
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.00873'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '16.6475'
@@ -75,6 +97,9 @@ ingredients:
   concentration:
     value: '6.34437'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: Cysteine-HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '11.0224'
@@ -90,6 +115,9 @@ ingredients:
   concentration:
     value: '10.2006'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -97,6 +125,9 @@ ingredients:
   concentration:
     value: '47.7867'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000285
+    label: MOPS
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -117,6 +148,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:45.760903Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007044'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.868486+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mj media" to "mj_media" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 153
   term:
@@ -130,4 +173,4 @@ applications:
 - Systems biology research
 merge_fingerprint: f6e5c2413b587a1b1e217aabbfd701fc73061f7156020e1e5fb591a0493b140e
 merged_from:
-- MEDIADB_153_Mj_media
+- mj_media

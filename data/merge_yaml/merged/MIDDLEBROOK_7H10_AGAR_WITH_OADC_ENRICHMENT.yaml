@@ -1,8 +1,9 @@
-name: MIDDLEBROOK 7H10 AGAR WITH OADC ENRICHMENT
+id: CultureMech:002743
+name: middlebrook_7h10_agar_with_oadc_enrichment
 original_name: MIDDLEBROOK 7H10 AGAR WITH OADC ENRICHMENT
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J386
   term:
@@ -17,6 +18,10 @@ ingredients:
   concentration:
     value: '21.1111'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Middlebrook 7H10 agar
+  notes: Copied from referenced JCM Medium 386
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -24,6 +29,10 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
+  notes: Copied from referenced JCM Medium 386
 preparation_steps:
 - step_number: 1
   action: COOL
@@ -36,6 +45,31 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J386'
-merge_fingerprint: adf81a1cf56625a81ca91eb04d6777b6f59df7995129596355599573bdcab692
+- timestamp: '2026-03-13T06:19:15.424569Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002743'
+- timestamp: '2026-03-17T06:30:02.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:28.820479+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MIDDLEBROOK 7H10 AGAR WITH OADC ENRICHMENT" to "middlebrook_7h10_agar_with_oadc_enrichment"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:13.243065+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J714_HEMIN_MEDIUM_FOR_MYCOBACTERIUM, middlebrook_7h10_agar_with_oadc_enrichment'
+synonyms:
+- name: hemin_medium_for_mycobacterium
+  source: MediaDive
+  source_id: mediadive.medium:J714
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- JCM_J386_MIDDLEBROOK_7H10_AGAR_WITH_OADC_ENRICHMENT
+- JCM_J714_HEMIN_MEDIUM_FOR_MYCOBACTERIUM
+- middlebrook_7h10_agar_with_oadc_enrichment
+merge_fingerprint: adf81a1cf56625a81ca91eb04d6777b6f59df7995129596355599573bdcab692

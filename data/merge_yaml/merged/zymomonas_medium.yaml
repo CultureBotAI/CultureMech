@@ -1,0 +1,98 @@
+id: CultureMech:003753
+name: zymomonas_medium
+original_name: ZYMOMONAS medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 10
+  term:
+    id: komodo.medium:10
+    label: ZYMOMONAS medium
+notes: 'Source: KOMODO ModelSEED | ID: 10 | DSMZ Medium: 10 (mediadive.medium:10)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 10'
+- timestamp: '2026-02-03T11:18:55.933521'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 10
+- timestamp: '2026-03-13T06:19:21.937534Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003753'
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:36.242551+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ZYMOMONAS medium" to "zymomonas_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:13.865180+00:00'
+  curator: recipe-merger
+  action: Merged 6 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1015_YPGA, KOMODO_10_ZYMOMONAS_medium, medium_1015_modified_for_dsm_16734,
+    pyg_agar_h, ypga, zymomonas_medium'
+synonyms:
+- name: ypga
+  source: KOMODO
+  source_id: komodo.medium:1015
+  original_category: bacterial
+- name: medium_1015_modified_for_dsm_16734
+  source: KOMODO
+  source_id: komodo.medium:1015_16734
+  original_category: bacterial
+- name: pyg_agar_h
+  source: MediaDive
+  source_id: mediadive.medium:J328
+  original_category: bacterial
+- name: ypga
+  source: MediaDive
+  source_id: mediadive.medium:1015
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_1015_YPGA
+- KOMODO_10_ZYMOMONAS_medium
+- medium_1015_modified_for_dsm_16734
+- pyg_agar_h
+- ypga
+- zymomonas_medium
+merge_fingerprint: 5eac4c042c0b9d47baffaca43461aedba087248cca78306fe7610a435ba078dd

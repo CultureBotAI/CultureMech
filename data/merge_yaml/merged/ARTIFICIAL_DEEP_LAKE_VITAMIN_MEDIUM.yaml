@@ -1,98 +1,139 @@
-name: Artificial Deep Lake Vitamin Medium
-original_name: Artificial Deep Lake Vitamin Medium
-category: imported
+id: CultureMech:002530
+name: artificial_deep_lake_vitamin_medium
+original_name: ARTIFICIAL DEEP LAKE VITAMIN MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: distilled water
-  concentration:
-    value: '990'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 7.4
+media_term:
+  preferred_term: JCM Medium J170
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '7.4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+    id: mediadive.medium:J170
+    label: ARTIFICIAL DEEP LAKE VITAMIN MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170'
+ingredients:
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '180'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: MgCl2・6H2O
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
   concentration:
     value: '75'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-- preferred_term: KCl
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '7.4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: Sodium succinate
+    label: KCl
   concentration:
-    value: '10'
+    value: '7.4'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Simple component, Defined component, Organic
-    compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: CaCl2 x 2 H2O
   term:
-    id: CHEBI:63675
-    label: sodium succinate (anhydrous)
-- preferred_term: Noble Agar (BD-Difco)
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component; Properties: Defined component'
-- preferred_term: Yeast extract (BD-Difco)
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Vitamin solution (see Medium [M162])
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: Sodium succinate
+  term:
+    id: CHEBI:63675
+    label: Sodium succinate
   concentration:
     value: '10'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M163
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: Sodium succinate
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Biotin
   term:
-    id: TOGO:M163
-    label: Artificial Deep Lake Vitamin Medium
-notes: 'Source: https://togomedium.org/medium/M163
-
-  Original source: JCM - JCM_M170-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=170'
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Add components, except vitamin solution, to distilled water and bring
+    volume to 990 ml. Adjust pH to 7.4. For preparation of solid medium, add 20.0
+    g/L Noble Agar (BD-Difco). Autoclave. After cooling to 50C, aseptically add the
+    following vitamin solution (filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.542030Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M163'
-- timestamp: '2026-01-28T19:48:26.776556Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: ffef58e54ab06051298aa9cf157e17c9ae65559abd0c79cfce103addfd91cb0f
+- timestamp: '2026-01-26T17:53:15.871201Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J170'
+- timestamp: '2026-03-13T06:19:13.993083Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002530'
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:27.178852+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ARTIFICIAL DEEP LAKE VITAMIN MEDIUM" to "artificial_deep_lake_vitamin_medium"
+    for consistent matching
+high_metal: true
+merge_fingerprint: 83e173f719ac11b6d6d595a09638b2d14c8cd28498655edf0e8fdf54a863e543
 merged_from:
-- TOGO_M163_Artificial_Deep_Lake_Vitamin_Medium
+- artificial_deep_lake_vitamin_medium

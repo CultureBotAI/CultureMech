@@ -1,8 +1,9 @@
-name: HEART INFUSION BLOOD AGAR
+id: CultureMech:001090
+name: heart_infusion_blood_agar
 original_name: HEART INFUSION BLOOD AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7-7.4
 media_term:
   preferred_term: DSMZ Medium 1609
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Defibrinated Blood
   concentration:
     value: '75'
@@ -39,6 +43,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1609'
+- timestamp: '2026-03-13T06:19:01.112124Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001090'
+- timestamp: '2026-03-17T06:29:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:12.795742+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HEART INFUSION BLOOD AGAR" to "heart_infusion_blood_agar"
+    for consistent matching
+kg_microbe_match: mediadive.medium:12
 merge_fingerprint: 2a83ca8b97ede6ea3486a43e20aeee32d0cd4cd7a2fe37fa25e83724852dc923
 merged_from:
-- DSMZ_1609_HEART_INFUSION_BLOOD_AGAR
+- heart_infusion_blood_agar

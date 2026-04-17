@@ -1,6 +1,7 @@
-name: SERPENTINICELLA MEDIUM
+id: CultureMech:002063
+name: serpentinicella_medium
 original_name: SERPENTINICELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9.5-9.7
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.199601'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.0998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.199601'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '1.49701'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000499002'
@@ -64,6 +83,9 @@ ingredients:
   concentration:
     value: '2.75449'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -71,6 +93,9 @@ ingredients:
   concentration:
     value: '9.98004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Yeast extract
   concentration:
     value: '4.99002'
@@ -82,6 +107,9 @@ ingredients:
   concentration:
     value: '1.71657'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000595
+    label: Na-crotonate
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -89,6 +117,9 @@ ingredients:
   concentration:
     value: '0.499002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -96,6 +127,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -103,6 +137,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -110,6 +147,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -117,6 +157,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -124,6 +167,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -131,6 +177,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -138,6 +187,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -145,6 +197,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -152,6 +207,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -159,6 +217,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -166,6 +227,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -173,6 +237,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -180,6 +247,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -187,6 +257,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -194,6 +267,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
@@ -205,6 +281,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -212,6 +291,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
     id: CHEBI:16494
@@ -219,6 +301,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: (DL)-alpha-Lipoic acid
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -245,39 +330,36 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-02-19T08:26:56.608748+00:00'
+- timestamp: '2026-03-13T06:19:09.939713Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002063'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:22.549241+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SERPENTINICELLA MEDIUM" to "serpentinicella_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:04.018142+00:00'
   curator: recipe-merger
-  action: Merged 6 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_898b_SERPENTINICELLA_MEDIUM, KOMODO_898-1_For_DSM_16504, KOMODO_898-2_For_DSM_17722,
-    KOMODO_898-3_For_DSM_18346_and_DSM_18979, KOMODO_898-4_For_DSM_18978, KOMODO_898_ANOXYBACILLUS_medium'
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: for_dsm_18346_and_dsm_18979, for_dsm_18978, serpentinicella_medium'
 synonyms:
-- name: For DSM 16504
-  source: KOMODO
-  source_id: komodo.medium:898.1
-  original_category: imported
-- name: For DSM 17722
-  source: KOMODO
-  source_id: komodo.medium:898.2
-  original_category: imported
-- name: For DSM 18346 and DSM 18979
+- name: for_dsm_18346_and_dsm_18979
   source: KOMODO
   source_id: komodo.medium:898.3
-  original_category: imported
-- name: For DSM 18978
+  original_category: bacterial
+- name: for_dsm_18978
   source: KOMODO
   source_id: komodo.medium:898.4
-  original_category: imported
-- name: ANOXYBACILLUS medium
-  source: KOMODO
-  source_id: komodo.medium:898
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_898b_SERPENTINICELLA_MEDIUM
-- KOMODO_898-1_For_DSM_16504
-- KOMODO_898-2_For_DSM_17722
-- KOMODO_898-3_For_DSM_18346_and_DSM_18979
-- KOMODO_898-4_For_DSM_18978
-- KOMODO_898_ANOXYBACILLUS_medium
+- for_dsm_18346_and_dsm_18979
+- for_dsm_18978
+- serpentinicella_medium
 merge_fingerprint: 0a0ef53a2e8a3805f0bd4aebe4d63dc93f06e50a500c500072b031b8cf8bebd9

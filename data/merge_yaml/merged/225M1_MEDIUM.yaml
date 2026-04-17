@@ -1,8 +1,9 @@
-name: 225M1 Medium
+id: CultureMech:010371
+name: 225m1_medium
 original_name: 225M1 Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '20'
@@ -22,18 +26,27 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.13'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '300'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.13'
@@ -43,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: K2SO4
   concentration:
     value: '5'
@@ -52,6 +68,9 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001064
+    label: K2SO4
 - preferred_term: Soluble starch
   concentration:
     value: '2'
@@ -80,6 +99,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 media_term:
   preferred_term: TOGO Medium M948
   term:
@@ -105,6 +127,18 @@ curation_history:
   date: '2026-02-03T11:21:01.405847'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
-merge_fingerprint: bbc8e1b4fcc6a0384d93127235dc1310d00216dafb12df4543a87b6386a1515f
+- timestamp: '2026-03-13T06:20:13.351836Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010371'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.329981+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "225M1 Medium" to "225m1_medium" for consistent matching
+merge_fingerprint: d38016ca6c690784620f1ae5d33604e9c19149d3ecaa96a6796684599f537676
 merged_from:
 - TOGO_M948_225M1_Medium

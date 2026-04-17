@@ -1,6 +1,7 @@
-name: JCM Medium 161
+id: CultureMech:009223
+name: jcm_medium_161
 original_name: JCM Medium 161
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -19,6 +20,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -27,6 +31,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Sulfur
   concentration:
@@ -37,6 +44,9 @@ ingredients:
   term:
     id: CHEBI:26833
     label: sulfur atom
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000927
+    label: Sulfur
 - preferred_term: Peptone, Bacto (BD 211677)
   concentration:
     value: '5'
@@ -51,6 +61,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -60,18 +73,27 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '0.25'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: CaCl2 . 2H2O
   concentration:
     value: '0.07'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.28'
@@ -81,30 +103,45 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Na2MoO4 . 2H2O
   concentration:
     value: '0.03'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: MnCl2 . 4H2O
   concentration:
     value: '1.8'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: ZnSO4 . 7H2O
   concentration:
     value: '0.22'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuCl2 . 2H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.3'
@@ -114,18 +151,27 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: FeCl3 . 6H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86254
+    label: ''
 - preferred_term: VOSO4 . 2H2O
   concentration:
     value: '0.03'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:87009
+    label: ''
 - preferred_term: Na2B4O7 . 10H2O
   concentration:
     value: '4.5'
@@ -141,6 +187,9 @@ ingredients:
   term:
     id: CHEBI:53470
     label: cobalt(2+) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4
 - preferred_term: Yeast Extract (BD 212750)
   concentration:
     value: '1'
@@ -176,6 +225,19 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: 10 N H2SO4'
-merge_fingerprint: ad5c329cef65cba2045ad9b8a5428d77cd1fe64bff1077913ebcce7a3e884e9b
+- timestamp: '2026-03-13T06:20:04.359340Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009223'
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.097634+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "JCM Medium 161" to "jcm_medium_161" for consistent
+    matching
+merge_fingerprint: db936d1c5372ead31c16b5eedd8ba5ea6b9a8e69dc4a862118ab95fa81745b6f
 merged_from:
-- TOGO_M2668_JCM_Medium_161
+- jcm_medium_161

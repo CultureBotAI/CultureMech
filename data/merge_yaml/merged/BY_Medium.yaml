@@ -1,6 +1,7 @@
-name: BY Medium
+id: CultureMech:009522
+name: by_medium
 original_name: BY Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.13'
@@ -45,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '1'
@@ -53,6 +66,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -63,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -71,6 +90,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: NaHCO3
   concentration:
@@ -81,6 +103,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.25'
@@ -90,6 +115,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Cellobiose
   concentration:
     value: '5'
@@ -99,6 +127,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Rumen fluid, clarified (see below)
   concentration:
     value: '300'
@@ -109,15 +140,14 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
-- preferred_term: Trace element solution SL--10 (see Medium [M433])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 media_term:
   preferred_term: TOGO Medium M3005
   term:
@@ -143,6 +173,34 @@ curation_history:
   date: '2026-02-03T11:20:57.018422'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
-merge_fingerprint: ab6e10aaa69747cfd312dcc3996a9ff21622d809ee9d9a17deac8bb3b19e7309
+- timestamp: '2026-03-09T08:04:19.320702+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:06.562231Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009522'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:59.024429'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.573376+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BY Medium" to "by_medium" for consistent matching
+solutions:
+- preferred_term: Trace element solution SL--10 (see Medium [M433])
+  composition: []
+  notes: Cross-reference to Medium M433
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 9dae9cae3bd94d3bf624e08b223dc49340836425cacd49d0d853904d0bef466c
 merged_from:
-- TOGO_M3005_BY_Medium
+- by_medium

@@ -1,72 +1,77 @@
-name: Malt Extract Agar
-original_name: Malt Extract Agar
-category: imported
+id: CultureMech:010520
+name: malt_extract_agar
+original_name: MALT EXTRACT AGAR
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J31
+  term:
+    id: mediadive.medium:J31
+    label: MALT EXTRACT AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=31'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Glucose
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Malt extract
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Peptone
   concentration:
-    value: '1'
+    value: '10'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M1410
+- preferred_term: Glucose
   term:
-    id: TOGO:M1410
-    label: Malt Extract Agar
-notes: 'Source: https://togomedium.org/medium/M1410
-
-  Original source: NBRC - NBRC_M5
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=5'
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.651032Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1410'
-- timestamp: '2026-01-28T19:48:23.366518Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:27:00.971909+00:00'
+- timestamp: '2026-01-26T17:53:15.615362Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J31'
+- timestamp: '2026-03-13T06:20:14.212976Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010520'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.239834+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MALT EXTRACT AGAR" to "malt_extract_agar" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:55.282188+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: TOGO_M1410_Malt_Extract_Agar, TOGO_M24_Malt_Extract_Agar'
+  notes: 'Sources: aspergillus_complete_medium, malt_extract_agar'
+synonyms:
+- name: aspergillus_complete_medium
+  source: MediaDive
+  source_id: mediadive.medium:J1134
+  original_category: bacterial
 categories:
-- imported
+- bacterial
+- fungal
 merged_from:
-- TOGO_M1410_Malt_Extract_Agar
-- TOGO_M24_Malt_Extract_Agar
-merge_fingerprint: 64a45104d66ee6e62238f70a0a883616697d104c8cca6d5eb7f36e6ce7f6c22a
+- aspergillus_complete_medium
+- malt_extract_agar
+merge_fingerprint: 6b70798f5872d94738a9e13311461ed0f8c50adb854c7a64be23edac8068085c

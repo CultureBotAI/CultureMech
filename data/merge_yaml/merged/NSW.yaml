@@ -1,6 +1,7 @@
-name: NSW
+id: CultureMech:000384
+name: nsw
 original_name: NSW
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -26,6 +27,14 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C71'
+- timestamp: '2026-03-13T06:18:54.880959Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000384'
+- timestamp: '2026-03-17T19:45:05.890337+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NSW" to "nsw" for consistent matching
 merge_fingerprint: 1191c1671b9e6e5586d31f1ebab673aef7d69e725b9e19b3fbc83e3de7ebba40
 merged_from:
-- CCAP_C71_NSW
+- nsw

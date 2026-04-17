@@ -1,59 +1,69 @@
-name: Mycoplasma Medium
-original_name: Mycoplasma Medium
-category: imported
+id: CultureMech:003105
+name: mycoplasma_medium
+original_name: MYCOPLASMA MEDIUM
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '700'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+physical_state: SOLID_AGAR
+ph_value: 7.4
+media_term:
+  preferred_term: JCM Medium J761
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Bacto agar (BD-Difco)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Heart infusion broth (BD-Difco)
+    id: mediadive.medium:J761
+    label: MYCOPLASMA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=761'
+ingredients:
+- preferred_term: Heart Infusion Broth
   concentration:
     value: '17.5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: 25% Yeast Extract Solution
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
-    value: '100'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Horse serum (heat--inactivated)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Horse serum
   concentration:
     value: '200'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M787
-  term:
-    id: TOGO:M787
-    label: Mycoplasma Medium
-notes: 'Source: https://togomedium.org/medium/M787
-
-  Original source: JCM - JCM_M761
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=761'
+- preferred_term: Yeast extract
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Autoclave at 121C for 15 min. Cool to 55C and aseptically add the
+    following filter-sterilized solutions:'
+- step_number: 2
+  action: ADJUST_PH
+  description: Warm serum and yeast extract solution to 55C before adding to the basal
+    medium. Adjust pH to 7.4&;0.2 (final).
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.714727Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M787'
-- timestamp: '2026-01-28T19:48:07.423575Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: c8bab9388f54710439c202dc34117557568bac80227e163cdb9fc5d3c544bc8f
+- timestamp: '2026-01-26T17:53:17.523395Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J761'
+- timestamp: '2026-03-13T06:19:17.859611Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003105'
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:31.635248+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MYCOPLASMA MEDIUM" to "mycoplasma_medium" for consistent
+    matching
+kg_microbe_match: mediadive.medium:12
+merge_fingerprint: b532b60d389e076298eee5d9bd6405758af729895cf63653b011a3344960e32c
 merged_from:
-- TOGO_M787_Mycoplasma_Medium
+- mycoplasma_medium

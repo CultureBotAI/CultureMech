@@ -1,6 +1,7 @@
-name: GRACILIBACILLUS MEDIUM
+id: CultureMech:001946
+name: gracilibacillus_medium
 original_name: GRACILIBACILLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -58,6 +71,9 @@ ingredients:
   concentration:
     value: '23.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -65,6 +81,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -72,6 +91,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -79,13 +101,20 @@ ingredients:
   concentration:
     value: '3.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
     label: FeCl2 x 4 H2O
   concentration:
-    value: '1.9802'
+    value: '21.9802'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.9802, 20.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -93,13 +122,20 @@ ingredients:
   concentration:
     value: '0.247525'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
   concentration:
-    value: '0.0990099'
+    value: '20.0990099'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0990099, 20.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -107,6 +143,9 @@ ingredients:
   concentration:
     value: '0.0693069'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -114,6 +153,9 @@ ingredients:
   concentration:
     value: '0.00594059'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -121,6 +163,9 @@ ingredients:
   concentration:
     value: '0.039604'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -128,6 +173,9 @@ ingredients:
   concentration:
     value: '0.0693069'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -135,6 +183,9 @@ ingredients:
   concentration:
     value: '0.0019802'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: AlCl3 x 6 H2O
   term:
     id: CHEBI:30115
@@ -142,6 +193,9 @@ ingredients:
   concentration:
     value: '0.0594059'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000728
+    label: AlCl3 x 6 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -149,20 +203,9 @@ ingredients:
   concentration:
     value: '0.00594059'
     unit: G_PER_L
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -186,18 +229,23 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-02-19T08:26:54.715157+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_802_GRACILIBACILLUS_MEDIUM, KOMODO_802_GRACILIBACILLUS_medium'
-synonyms:
-- name: GRACILIBACILLUS medium
-  source: KOMODO
-  source_id: komodo.medium:802
-  original_category: imported
-categories:
-- imported
-merged_from:
-- DSMZ_802_GRACILIBACILLUS_MEDIUM
-- KOMODO_802_GRACILIBACILLUS_medium
+- timestamp: '2026-03-13T03:08:59.529875Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:08.713201Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001946'
+- timestamp: '2026-03-17T06:30:04.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:21.183688+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GRACILIBACILLUS MEDIUM" to "gracilibacillus_medium"
+    for consistent matching
 merge_fingerprint: 42ee192f06a7db13b333b4396396d05755239ba985c55270a911cf47c6fb060e
+merged_from:
+- gracilibacillus_medium

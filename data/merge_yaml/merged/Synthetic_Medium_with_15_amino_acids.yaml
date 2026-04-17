@@ -1,6 +1,7 @@
-name: Synthetic Medium with 15 amino acids
+id: CultureMech:007213
+name: synthetic_medium_with_15_amino_acids
 original_name: Synthetic Medium with 15 amino acids
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -17,6 +18,9 @@ ingredients:
     value: '0.0021'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
@@ -25,6 +29,9 @@ ingredients:
     value: '0.0165'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '4000.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: L-Tyrosine
   term:
     id: CHEBI:17895
@@ -40,6 +50,9 @@ ingredients:
     value: '1.5'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000316
+    label: L-Tyrosine
 - preferred_term: L-Threonine
   term:
     id: CHEBI:16857
@@ -48,6 +61,9 @@ ingredients:
     value: '8.3'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thr-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000310
+    label: L-Threonine
 - preferred_term: L-Lysine
   term:
     id: CHEBI:18019
@@ -56,6 +72,9 @@ ingredients:
     value: '2.7'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lys-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000318
+    label: L-Lysine
 - preferred_term: L-Valine
   term:
     id: CHEBI:16414
@@ -64,6 +83,9 @@ ingredients:
     value: '1.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:val-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000304
+    label: L-Valine
 - preferred_term: L-Serine
   term:
     id: CHEBI:17115
@@ -72,6 +94,9 @@ ingredients:
     value: '12.6'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ser-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000270
+    label: L-Serine
 - preferred_term: L-Phenylalanine
   term:
     id: CHEBI:17295
@@ -80,10 +105,16 @@ ingredients:
     value: '0.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000312
+    label: L-Phenylalanine
 - preferred_term: Potassium nitrate
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63043
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '27.0'
@@ -91,6 +122,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0018'
@@ -102,6 +136,9 @@ ingredients:
   concentration:
     value: '0.0015'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0116'
@@ -125,6 +162,9 @@ ingredients:
   concentration:
     value: '81.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -132,6 +172,9 @@ ingredients:
   concentration:
     value: '1.7'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: L-Alanine
   term:
     id: CHEBI:16977
@@ -140,6 +183,9 @@ ingredients:
     value: '7.4'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ala-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000403
+    label: L-Alanine
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -148,6 +194,9 @@ ingredients:
     value: '2.9'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: L-Leucine
   term:
     id: CHEBI:15603
@@ -156,6 +205,9 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000278
+    label: L-Leucine
 - preferred_term: L-Glutamate
   concentration:
     value: '16.9'
@@ -169,6 +221,9 @@ ingredients:
     value: '2.4'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: L-Methionine
   term:
     id: CHEBI:16643
@@ -177,6 +232,9 @@ ingredients:
     value: '2.3'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000274
+    label: L-Methionine
 - preferred_term: L-Isoleucine
   term:
     id: CHEBI:17191
@@ -185,6 +243,9 @@ ingredients:
     value: '3.4'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000294
+    label: L-Isoleucine
 - preferred_term: L-Arginine
   term:
     id: CHEBI:16467
@@ -193,6 +254,9 @@ ingredients:
     value: '3.5'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000289
+    label: L-Arginine
 - preferred_term: L-Aspartate
   concentration:
     value: '6.2'
@@ -202,6 +266,9 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -222,6 +289,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:46.917249Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007213'
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:05.101597+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Synthetic Medium with 15 amino acids" to "synthetic_medium_with_15_amino_acids"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 314
   term:
@@ -233,6 +313,7 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: b15e3e01f10863544fa40e0cdefa260758cf484a5a7337bb59136cd93e07e2cf
+high_metal: true
+merge_fingerprint: 1a805a276e7b088f7448e5cc9f43bbcb133b2dc45ef3ad57b2fc59b2247f332f
 merged_from:
-- MEDIADB_314_Synthetic_Medium_with_15_amino_acids
+- synthetic_medium_with_15_amino_acids

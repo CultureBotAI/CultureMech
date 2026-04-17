@@ -1,8 +1,9 @@
-name: HALOFERAX MEDIUM RS75
+id: CultureMech:000949
+name: haloferax_medium_rs75
 original_name: HALOFERAX MEDIUM RS75
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: DSMZ Medium 1481
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '160'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: K2SO4
   term:
     id: CHEBI:32036
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001064
+    label: K2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Na pyruvate
   term:
     id: CHEBI:50144
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na pyruvate
 - preferred_term: Na acetate x 3 H2O
   concentration:
     value: '0.5'
@@ -57,6 +73,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000450
+    label: Na malate
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -72,6 +91,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -79,6 +101,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -90,6 +115,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1481'
+- timestamp: '2026-03-13T06:18:59.824860Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000949'
+- timestamp: '2026-03-17T06:30:37.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.376649+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOFERAX MEDIUM RS75" to "haloferax_medium_rs75" for
+    consistent matching
 merge_fingerprint: 9eb65cbf9a62b39aaa7342a22add1b9e20e0d2e8ccb0389107a9761c28752996
 merged_from:
-- DSMZ_1481_HALOFERAX_MEDIUM_RS75
+- haloferax_medium_rs75

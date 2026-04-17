@@ -1,6 +1,7 @@
-name: MEDIUM S
+id: CultureMech:001511
+name: medium_s
 original_name: MEDIUM S
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.7
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Peptone
   concentration:
     value: '4'
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -40,6 +47,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -47,6 +57,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -58,6 +71,18 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 401'
+- timestamp: '2026-03-13T06:19:04.827995Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001511'
+- timestamp: '2026-03-17T06:30:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.896311+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM S" to "medium_s" for consistent matching
 merge_fingerprint: ed42500bfa76cb6c2f6ad654320f97e205c7ed2ddf773ee80800a64a9288493b
 merged_from:
-- DSMZ_401_MEDIUM_S
+- medium_s

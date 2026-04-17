@@ -1,8 +1,9 @@
-name: MEIOTHERMUS MEDIUM R8
+id: CultureMech:000863
+name: meiothermus_medium_r8
 original_name: MEIOTHERMUS MEDIUM R8
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1402
@@ -22,6 +23,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '7.35075'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -44,6 +54,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -60,6 +73,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.993167Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000863'
+- timestamp: '2026-03-17T06:30:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:10.460600+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEIOTHERMUS MEDIUM R8" to "meiothermus_medium_r8" for
+    consistent matching
+kg_microbe_match: mediadive.medium:1402
 merge_fingerprint: 371f282b6a7a77d9ba74bf62852d8e2abd71e6590d30c86fef2b38d921356978
 merged_from:
-- DSMZ_1402_MEIOTHERMUS_MEDIUM_R8
+- meiothermus_medium_r8

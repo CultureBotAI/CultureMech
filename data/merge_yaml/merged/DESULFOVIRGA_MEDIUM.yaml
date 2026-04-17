@@ -1,6 +1,7 @@
-name: DESULFOVIRGA MEDIUM
+id: CultureMech:001289
+name: desulfovirga_medium
 original_name: DESULFOVIRGA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '1.50215'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.214592'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.321888'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '1.07296'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.429185'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.536481'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.160944'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000536481'
@@ -71,6 +93,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: m-Xylene
   term:
     id: CHEBI:28488
@@ -78,6 +103,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000550
+    label: m-Xylene
 - preferred_term: 2,2,4,4,6,8,8-Heptamethylnonane
   term:
     id: CHEBI:131383
@@ -85,6 +113,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000517
+    label: 2,2,4,4,6,8,8-Heptamethylnonane
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -92,6 +123,9 @@ ingredients:
   concentration:
     value: '80'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -99,6 +133,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -106,6 +143,9 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -113,6 +153,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -120,6 +163,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -127,6 +173,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -134,6 +183,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -141,6 +193,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -148,6 +203,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -155,6 +213,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -162,6 +223,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -169,6 +233,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -176,6 +243,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -183,6 +253,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -190,6 +263,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -197,6 +273,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -204,6 +283,9 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: D-(+)-biotin
   term:
     id: CHEBI:15956
@@ -211,6 +293,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D-(+)-biotin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -218,6 +303,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -225,6 +313,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -232,6 +323,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -239,6 +333,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -265,51 +362,63 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 194a'
-- timestamp: '2026-02-19T08:26:44.454409+00:00'
+- timestamp: '2026-03-13T06:19:02.875204Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001289'
+- timestamp: '2026-03-17T06:30:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.735998+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFOVIRGA MEDIUM" to "desulfovirga_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:19.590033+00:00'
   curator: recipe-merger
   action: Merged 8 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_194a_DESULFOVIRGA_MEDIUM, KOMODO_194-13527_MEDIUM_194_MODIFIED_FOR_DSM_13527,
-    KOMODO_194-1_For_DSM_1744, KOMODO_194-2_For_DSM_14880, KOMODO_194-3_For_DSM_21556,
-    KOMODO_194-5092_MEDIUM_194_MODIFIED_FOR_DSM_5092, KOMODO_194-6523_MEDIUM_194_MODIFIED_FOR_DSM_6523,
-    KOMODO_194_DESULFOBULBUS_MEDIUM'
+  notes: 'Sources: KOMODO_194_DESULFOBULBUS_MEDIUM, desulfovirga_medium, for_dsm_14880,
+    for_dsm_1744, for_dsm_21556, medium_194_modified_for_dsm_13527, medium_194_modified_for_dsm_5092,
+    medium_194_modified_for_dsm_6523'
 synonyms:
-- name: MEDIUM 194 MODIFIED FOR DSM 13527
-  source: KOMODO
-  source_id: komodo.medium:194_13527
-  original_category: imported
-- name: For DSM 1744
-  source: KOMODO
-  source_id: komodo.medium:194.1
-  original_category: imported
-- name: For DSM 14880
-  source: KOMODO
-  source_id: komodo.medium:194.2
-  original_category: imported
-- name: For DSM 21556
-  source: KOMODO
-  source_id: komodo.medium:194.3
-  original_category: imported
-- name: MEDIUM 194 MODIFIED FOR DSM 5092
-  source: KOMODO
-  source_id: komodo.medium:194_5092
-  original_category: imported
-- name: MEDIUM 194 MODIFIED FOR DSM 6523
-  source: KOMODO
-  source_id: komodo.medium:194_6523
-  original_category: imported
-- name: DESULFOBULBUS MEDIUM
+- name: desulfobulbus_medium
   source: KOMODO
   source_id: komodo.medium:194
-  original_category: imported
+  original_category: bacterial
+- name: for_dsm_14880
+  source: KOMODO
+  source_id: komodo.medium:194.2
+  original_category: bacterial
+- name: for_dsm_1744
+  source: KOMODO
+  source_id: komodo.medium:194.1
+  original_category: bacterial
+- name: for_dsm_21556
+  source: KOMODO
+  source_id: komodo.medium:194.3
+  original_category: bacterial
+- name: medium_194_modified_for_dsm_13527
+  source: KOMODO
+  source_id: komodo.medium:194_13527
+  original_category: bacterial
+- name: medium_194_modified_for_dsm_5092
+  source: KOMODO
+  source_id: komodo.medium:194_5092
+  original_category: bacterial
+- name: medium_194_modified_for_dsm_6523
+  source: KOMODO
+  source_id: komodo.medium:194_6523
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_194a_DESULFOVIRGA_MEDIUM
-- KOMODO_194-13527_MEDIUM_194_MODIFIED_FOR_DSM_13527
-- KOMODO_194-1_For_DSM_1744
-- KOMODO_194-2_For_DSM_14880
-- KOMODO_194-3_For_DSM_21556
-- KOMODO_194-5092_MEDIUM_194_MODIFIED_FOR_DSM_5092
-- KOMODO_194-6523_MEDIUM_194_MODIFIED_FOR_DSM_6523
 - KOMODO_194_DESULFOBULBUS_MEDIUM
+- desulfovirga_medium
+- for_dsm_14880
+- for_dsm_1744
+- for_dsm_21556
+- medium_194_modified_for_dsm_13527
+- medium_194_modified_for_dsm_5092
+- medium_194_modified_for_dsm_6523
 merge_fingerprint: 8c5bdb8f71d5c7fee44a7f76a7132117a94bbae36e4f6003b5f03bcf2453ecc2

@@ -1,116 +1,113 @@
-name: Clostridum G4 Medium
-original_name: Clostridum G4 Medium
-category: imported
-medium_type: COMPLEX
+id: CultureMech:002341
+name: clostridum_g4_medium
+original_name: CLOSTRIDUM G4 MEDIUM
+category: bacterial
+medium_type: DEFINED
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1169
+  term:
+    id: mediadive.medium:J1169
+    label: CLOSTRIDUM G4 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1169'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: NH4Cl
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: K2HPO4
   concentration:
     value: '0.7'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+    label: K2HPO4
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Sodium ascorbate
+  term:
+    id: CHEBI:113451
+    label: Sodium ascorbate
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:113451
-    label: sodium ascorbate
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  term:
-    id: CHEBI:32035
-    label: potassium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M1251
-  term:
-    id: TOGO:M1251
-    label: Clostridum G4 Medium
-notes: 'Source: https://togomedium.org/medium/M1251
-
-  Original source: JCM - JCM_M1169
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1169'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001044
+    label: Sodium ascorbate
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components thoroughly and adjust pH to 7.0 with KOH. Distribute
+    the medium into culture vessels (e.g., 5 ml of the medium in Hungate tubes) under
+    a N2 atmosphere, seal with butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.222213Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1251'
-- timestamp: '2026-01-28T19:48:30.558887Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:46.793214'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: KOH; Added default concentration
-    for ingredient: N2'
-merge_fingerprint: bb72448697b932032eb5e3d28b8385351a5ba5fab0fda0f1b97748837c254b04
+- timestamp: '2026-01-26T17:53:18.880852Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1169'
+- timestamp: '2026-03-13T06:19:12.519641Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002341'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:25.508405+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CLOSTRIDUM G4 MEDIUM" to "clostridum_g4_medium" for
+    consistent matching
+merge_fingerprint: 2a278907ba8081b7171028a885e39b9422ef6832d918fd69e928942590faf52b
 merged_from:
-- TOGO_M1251_Clostridum_G4_Medium
+- clostridum_g4_medium

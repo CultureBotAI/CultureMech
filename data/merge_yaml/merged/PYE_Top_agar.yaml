@@ -1,8 +1,9 @@
-name: PYE Top agar
+id: CultureMech:009407
+name: pye_top_agar
 original_name: PYE Top agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: yeast extract
   concentration:
@@ -18,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MgSO4
   concentration:
     value: '1'
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: glucose
   concentration:
     value: '0.3'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: glucose
 - preferred_term: Bacto agar
   concentration:
     value: '0.3'
@@ -63,6 +73,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.064224Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009407'
+- timestamp: '2026-03-17T06:30:05.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.010718+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PYE Top agar" to "pye_top_agar" for consistent matching
+kg_microbe_match: mediadive.medium:914
 merge_fingerprint: c3449ed2baea2a405b835d6e94aba845486c60a89024358ca2634455c79d7857
 merged_from:
-- TOGO_M2873_PYE_Top_agar
+- pye_top_agar

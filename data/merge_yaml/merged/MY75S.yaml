@@ -1,8 +1,9 @@
-name: MY75S
+id: CultureMech:000372
+name: my75s
 original_name: MY75S
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C60
   term:
@@ -29,6 +30,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -43,6 +47,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C60'
+- timestamp: '2026-03-13T06:18:54.830303Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000372'
+- timestamp: '2026-03-17T06:30:05.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.838485+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MY75S" to "my75s" for consistent matching
+kg_microbe_match: mediadive.medium:12
 merge_fingerprint: 961f6b1842ef60b9dbbf1f2a7d8b02be5e897b522f2b551d02206b189452bb9f
 merged_from:
-- CCAP_C60_MY75S
+- my75s

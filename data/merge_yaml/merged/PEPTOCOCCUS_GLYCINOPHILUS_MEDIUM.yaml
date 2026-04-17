@@ -1,6 +1,7 @@
-name: PEPTOCOCCUS GLYCINOPHILUS MEDIUM
+id: CultureMech:001331
+name: peptococcus_glycinophilus_medium
 original_name: PEPTOCOCCUS GLYCINOPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -33,13 +34,20 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '2'
+    value: '3.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -47,6 +55,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -54,6 +65,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -61,6 +75,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Haemin
   term:
     id: CHEBI:50385
@@ -68,6 +85,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Haemin
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -75,6 +95,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
@@ -82,6 +105,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: Vitamin K1
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -89,6 +115,9 @@ ingredients:
   concentration:
     value: '950'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -96,6 +125,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -103,13 +135,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -117,6 +145,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -124,6 +155,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -131,6 +165,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -152,6 +189,23 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 228'
+- timestamp: '2026-03-13T03:09:08.517744Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:03.233050Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001331'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:15.132780+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PEPTOCOCCUS GLYCINOPHILUS MEDIUM" to "peptococcus_glycinophilus_medium"
+    for consistent matching
 merge_fingerprint: ce447239c42b511bb6517aa98020c34275ab597945eae5dbe99fdbbbbcd5eb52
 merged_from:
-- DSMZ_228_PEPTOCOCCUS_GLYCINOPHILUS_MEDIUM
+- peptococcus_glycinophilus_medium

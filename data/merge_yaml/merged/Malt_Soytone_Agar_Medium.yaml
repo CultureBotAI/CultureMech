@@ -1,8 +1,9 @@
-name: Malt Soytone Agar Medium
+id: CultureMech:008673
+name: malt_soytone_agar_medium
 original_name: Malt Soytone Agar Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled Water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled Water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -35,6 +42,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Malt extract
   concentration:
     value: '10'
@@ -69,6 +79,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:59.279157Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008673'
+- timestamp: '2026-03-17T06:30:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.913601+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Malt Soytone Agar Medium" to "malt_soytone_agar_medium"
+    for consistent matching
 merge_fingerprint: d462758402c2cf0de152c44cc5d756c58c923da0e28dbc848aa1579e785a61e3
 merged_from:
-- TOGO_M2083_Malt_Soytone_Agar_Medium
+- malt_soytone_agar_medium

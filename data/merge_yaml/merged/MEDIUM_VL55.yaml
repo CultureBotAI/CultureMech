@@ -1,8 +1,9 @@
-name: MEDIUM VL55
+id: CultureMech:000725
+name: medium_vl55
 original_name: MEDIUM VL55
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.5
 media_term:
   preferred_term: DSMZ Medium 1266
@@ -16,71 +17,56 @@ ingredients:
     id: CHEBI:39010
     label: MES
   concentration:
-    value: '1.95'
+    value: '5.85'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.0492952'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.0441045'
-    unit: G_PER_L
-- preferred_term: (NH4)2HPO4
-  term:
-    id: CHEBI:62476
-    label: (NH4)2HPO4
-  concentration:
-    value: '0.026412'
-    unit: G_PER_L
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '0.36032'
-    unit: G_PER_L
-- preferred_term: MES
-  term:
-    id: CHEBI:39010
+  notes: ' [Merged 2 duplicates: 1.95, 3.9]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
     label: MES
-  concentration:
-    value: '3.9'
-    unit: G_PER_L
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.0985904'
+    value: '5.047885600000001'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 0.0492952, 0.0985904, 4.9]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.088209'
+    value: '4.532313500000001'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 0.0441045, 0.088209, 4.4]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: (NH4)2HPO4
   term:
     id: CHEBI:62476
     label: (NH4)2HPO4
   concentration:
-    value: '0.052824'
+    value: '2.679236'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 0.026412, 0.052824, 2.6]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000385
+    label: (NH4)2HPO4
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
     label: Glucose
   concentration:
-    value: '0.36032'
+    value: '0.72064'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.36032, 0.36032]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -88,34 +74,20 @@ ingredients:
   concentration:
     value: '7.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '4.9'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '4.4'
-    unit: G_PER_L
-- preferred_term: (NH4)2HPO4
-  term:
-    id: CHEBI:62476
-    label: (NH4)2HPO4
-  concentration:
-    value: '2.6'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '8'
+    value: '8.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 8.0, 0.5]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: KOH
   term:
     id: CHEBI:32035
@@ -123,13 +95,9 @@ ingredients:
   concentration:
     value: '5.6'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -137,6 +105,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -144,6 +115,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -151,6 +125,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -158,6 +135,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -165,6 +145,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -172,6 +155,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -179,6 +165,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -186,6 +175,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -193,6 +185,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -200,6 +195,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -207,6 +205,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -214,6 +215,9 @@ ingredients:
   concentration:
     value: '0.017'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: 4-aminobenzoate
   term:
     id: CHEBI:17836
@@ -221,6 +225,9 @@ ingredients:
   concentration:
     value: '0.013'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-aminobenzoate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -228,6 +235,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -235,6 +245,9 @@ ingredients:
   concentration:
     value: '0.033'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Hemicalcium D-(+)-pantothenate
   concentration:
     value: '0.017'
@@ -246,6 +259,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxamine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -253,6 +269,9 @@ ingredients:
   concentration:
     value: '0.033'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 - preferred_term: DL-6,8-thioctic acid
   term:
     id: CHEBI:16494
@@ -260,6 +279,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: DL-6,8-thioctic acid
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -267,6 +289,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -274,6 +299,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -304,6 +332,22 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1266'
+- timestamp: '2026-03-13T03:08:39.834308Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 9 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:57.800301Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000725'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:09.123899+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM VL55" to "medium_vl55" for consistent matching
 merge_fingerprint: 04430dc442353c0603e6c6bcf7d57839db9db7fa51d90ee31e597791364ac6b8
 merged_from:
-- DSMZ_1266_MEDIUM_VL55
+- medium_vl55

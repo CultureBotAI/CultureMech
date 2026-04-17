@@ -1,8 +1,9 @@
-name: GW3 MEDIUM
+id: CultureMech:000967
+name: gw3_medium
 original_name: GW3 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7-7.5
 media_term:
   preferred_term: DSMZ Medium 1499
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Casein hydrolysate
   concentration:
     value: '0.5'
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -43,6 +53,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -50,6 +63,9 @@ ingredients:
   concentration:
     value: '150'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -57,6 +73,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -64,6 +83,9 @@ ingredients:
   concentration:
     value: '18'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -75,6 +97,18 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1499'
+- timestamp: '2026-03-13T06:19:00.031084Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000967'
+- timestamp: '2026-03-17T06:30:30.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.605887+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GW3 MEDIUM" to "gw3_medium" for consistent matching
 merge_fingerprint: 5b781022428e48dec0f569db3354170056adb58585059ab12535f3b270e2393b
 merged_from:
-- DSMZ_1499_GW3_MEDIUM
+- gw3_medium

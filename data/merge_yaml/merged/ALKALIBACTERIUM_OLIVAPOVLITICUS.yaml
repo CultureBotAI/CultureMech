@@ -1,14 +1,16 @@
-name: ALKALIBACTERIUM OLIVAPOVLITICUS
+id: CultureMech:006829
+name: alkalibacterium_olivapovliticus
 original_name: ALKALIBACTERIUM OLIVAPOVLITICUS
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 923
+  preferred_term: KOMODO Medium 923
   term:
-    id: mediadive.medium:923
+    id: komodo.medium:923
     label: ALKALIBACTERIUM OLIVAPOVLITICUS
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium923.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 923 | DSMZ Medium: 923 (mediadive.medium:923)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na glutamate
   term:
@@ -17,6 +19,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000432
+    label: Na glutamate
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -28,6 +33,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -35,6 +43,9 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -42,6 +53,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -49,6 +63,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -57,28 +74,40 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: We recommend that liquid media be made by autoclaving the Na2CO3 separately,
-    otherwise the high pH will cause ammonia to be lost. When making media solidified
-    with agar (20 g/l) the agar should also not be autoclaved with the Na2CO3 otherwise
-    the agar will be hydrolysed. When mixing the ingredients for solid media cool
-    all components to about 55°C otherwise hydrolysis of the agar may occur.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.762073Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 923'
-- timestamp: '2026-02-19T08:26:56.955594+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 923'
+- timestamp: '2026-02-03T11:19:16.271419'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 923
+- timestamp: '2026-03-13T06:19:44.120983Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006829'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:01.997795+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ALKALIBACTERIUM OLIVAPOVLITICUS" to "alkalibacterium_olivapovliticus"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:34.684423+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_923_ALKALIBACTERIUM_OLIVAPOVLITICUS, KOMODO_923_ALKALIBACTERIUM_OLIVAPOVLITICUS'
+  notes: 'Sources: KOMODO_923_ALKALIBACTERIUM_OLIVAPOVLITICUS, alkalibacterium_olivapovliticus'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_923_ALKALIBACTERIUM_OLIVAPOVLITICUS
 - KOMODO_923_ALKALIBACTERIUM_OLIVAPOVLITICUS
+- alkalibacterium_olivapovliticus
 merge_fingerprint: 19d3d17b69b2015765c3820d47bfb9def6423e1908a21d0fa33c6e6b5a30c546

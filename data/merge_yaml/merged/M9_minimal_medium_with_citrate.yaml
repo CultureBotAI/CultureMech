@@ -1,6 +1,7 @@
-name: M9 minimal medium with citrate
+id: CultureMech:007421
+name: m9_minimal_medium_with_citrate
 original_name: M9 minimal medium with citrate
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -24,6 +25,9 @@ ingredients:
   concentration:
     value: '8.6'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0'
@@ -35,6 +39,9 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -42,6 +49,9 @@ ingredients:
   concentration:
     value: '19.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -58,6 +68,19 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 73, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:48.974915Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007421'
+- timestamp: '2026-03-17T06:30:30.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:07.351522+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M9 minimal medium with citrate" to "m9_minimal_medium_with_citrate"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 73
   term:
@@ -71,4 +94,4 @@ applications:
 - Systems biology research
 merge_fingerprint: 8b81ae91232c105cc1625bc67b97146a6decefb38e61eb47a35968144ad9da32
 merged_from:
-- MEDIADB_73_M9_minimal_medium_with_citrate
+- m9_minimal_medium_with_citrate

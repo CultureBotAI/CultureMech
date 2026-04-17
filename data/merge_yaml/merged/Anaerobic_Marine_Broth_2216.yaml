@@ -1,6 +1,7 @@
-name: ANAEROBIC MARINE BROTH 2216
+id: CultureMech:015415
+name: anaerobic_marine_broth_2216
 original_name: ANAEROBIC MARINE BROTH 2216
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -21,6 +22,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -28,6 +32,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -35,6 +42,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -51,6 +61,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J719'
+- timestamp: '2026-03-13T06:20:42.562742Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015415'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:34.218751+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROBIC MARINE BROTH 2216" to "anaerobic_marine_broth_2216"
+    for consistent matching
 merge_fingerprint: f02944c40def0f6d2cda23bd2111d3782f7eed6ac528b0bc0cff84a336e9d21e
 merged_from:
-- JCM_J719_ANAEROBIC_MARINE_BROTH_2216
+- anaerobic_marine_broth_2216

@@ -1,0 +1,100 @@
+id: CultureMech:003089
+name: mannitol_agar_without_calcium_carbonate
+original_name: MANNITOL AGAR WITHOUT CALCIUM CARBONATE
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J746
+  term:
+    id: mediadive.medium:J746
+    label: MANNITOL AGAR WITHOUT CALCIUM CARBONATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=746'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Mannitol
+  term:
+    id: CHEBI:29864
+    label: Mannitol
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001010
+    label: Mannitol
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 598 without CaCO3.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.468728Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J746'
+- timestamp: '2026-02-03T11:26:55.944183'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:17.717238Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003089'
+- timestamp: '2026-03-17T19:45:31.470533+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MANNITOL AGAR WITHOUT CALCIUM CARBONATE" to "mannitol_agar_without_calcium_carbonate"
+    for consistent matching
+- timestamp: '2026-04-04T18:49:19.871953'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (5 ingredients)
+  source: CultureMech:002946
+  notes: Resolved reference by copying from mannitol_agar (CultureMech:002946)
+- timestamp: '2026-04-17T06:30:09.582544+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: mannitol_agar, mannitol_agar_without_calcium_carbonate'
+data_quality_flags:
+  incomplete_composition: false
+  resolved_reference: true
+kg_microbe_match: mediadive.medium:J598
+synonyms:
+- name: mannitol_agar
+  source: MediaDive
+  source_id: mediadive.medium:J598
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- mannitol_agar
+- mannitol_agar_without_calcium_carbonate
+merge_fingerprint: 8a2646aa8d124238fe51c54eaaeb75508aba51aaeeaff4fd49d0f321993631f8

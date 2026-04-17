@@ -1,0 +1,38 @@
+id: CultureMech:015795
+name: ZMB ALS noAdenine
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: ZMB_ALS
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: Adenine hydrochloride hydrate
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  notes: 'CAS: 2922-28-3; MW: 171.59'
+  term:
+    id: CHEBI:64139
+    label: ''
+description: Media for culturing Bifidobacterium minus adenine
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: ZMB ALS noAdenine
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.341844+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: ZMB_ALS_noAdenine.yaml'
+- timestamp: '2026-03-18T04:34:01.582719Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015795'
+data_quality_flags:
+- has_unmapped_ingredients
+merge_fingerprint: d6b5953dc9f2ef587c201dacb6928fb57611e090ef288e6a5b3e9a0e25a1d89c
+merged_from:
+- zmb_als_noadenine

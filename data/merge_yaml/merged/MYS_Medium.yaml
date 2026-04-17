@@ -1,6 +1,7 @@
-name: MYS Medium
+id: CultureMech:008518
+name: mys_medium
 original_name: MYS Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,12 +31,18 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '1'
@@ -42,12 +52,18 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1'
@@ -57,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Sodium DL-malate
   concentration:
     value: '3.6'
@@ -65,10 +84,9 @@ ingredients:
   term:
     id: CHEBI:91261
     label: disodium (S)-malate
-- preferred_term: Trace element solution SL8 (see Medium [M183])
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000450
+    label: Sodium DL-malate
 media_term:
   preferred_term: TOGO Medium M193
   term:
@@ -90,6 +108,34 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 76ad6ca2fd04d0f3e9bf195ef1d8d80151c420273332f080a2c5f15880f801ed
+- timestamp: '2026-03-09T08:04:11.118077+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:57.697038Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008518'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:52.529661'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:16.318425+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MYS Medium" to "mys_medium" for consistent matching
+solutions:
+- preferred_term: Trace element solution SL8 (see Medium [M183])
+  composition: []
+  notes: Cross-reference to Medium M183
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 7183049d4420a651a69b68faf07b0139c60a8579dd4f53112366500efc571d90
 merged_from:
 - TOGO_M193_MYS_Medium

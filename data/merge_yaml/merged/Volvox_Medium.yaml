@@ -1,7 +1,8 @@
-name: Volvox Medium
+id: CultureMech:000238
+name: volvox_medium
 category: ALGAE
-medium_type: complex
-physical_state: liquid
+medium_type: COMPLEX
+physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
@@ -86,7 +87,15 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: volvox-medium, URL: https://utex.org/products/volvox-medium'
-- timestamp: '2026-02-19T08:26:36.695406+00:00'
+- timestamp: '2026-03-13T06:18:53.684075Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000238'
+- timestamp: '2026-03-17T19:45:04.590968+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Volvox Medium" to "volvox_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:07.794503+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: HEPES_Medium, Modified_Desmidiacean_Medium, Volvox_Medium'
@@ -95,10 +104,10 @@ references:
 - reference_id: https://utex.org/products/volvox-medium
 original_name: Volvox Medium
 synonyms:
-- name: HEPES Medium
+- name: hepes_medium
   source: unknown
   original_category: ALGAE
-- name: Modified Desmidiacean Medium
+- name: modified_desmidiacean_medium
   source: unknown
   original_category: ALGAE
 categories:

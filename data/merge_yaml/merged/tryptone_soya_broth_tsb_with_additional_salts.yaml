@@ -1,0 +1,887 @@
+id: CultureMech:000823
+name: tryptone_soya_broth_tsb_with_additional_salts
+original_name: TRYPTONE SOYA BROTH (TSB) WITH ADDITIONAL SALTS
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_range: 7.2-7.5
+media_term:
+  preferred_term: DSMZ Medium 1362
+  term:
+    id: mediadive.medium:1362
+    label: TRYPTONE SOYA BROTH (TSB) WITH ADDITIONAL SALTS
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1362.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '32.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 15.0, 17.0]'
+- preferred_term: Soy peptone
+  concentration:
+    value: '8.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 3.0]'
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 5.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D(+)-Glucose
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2 - 7.5.
+- step_number: 2
+  action: MIX
+  description: The basic medium is the same as Caso Bouillon (Merck or Oxoid). The
+    medium may be solidified by adding 15.0 g/l agar.
+- step_number: 3
+  action: MIX
+  description: When using commercially available Caso Bouillon (Merck or Oxoid) for
+    strains DSM 24264, DSM 24313, DSM 24197 increase the NaCl concentration to 100.0
+    g/L.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.205620Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1362'
+- timestamp: '2026-03-13T06:18:58.664980Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000823'
+- timestamp: '2026-03-17T06:29:53.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:10.105201+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TRYPTONE SOYA BROTH (TSB) WITH ADDITIONAL SALTS" to
+    "tryptone_soya_broth_tsb_with_additional_salts" for consistent matching
+- timestamp: '2026-04-17T06:29:20.757734+00:00'
+  curator: recipe-merger
+  action: Merged 147 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_220_CASO_AGAR_Merck_105458, for_strain_dsm_21449_und_dsm_21450,
+    medium_220_modified_for_dsm_11483, medium_220_modified_for_dsm_11705, medium_220_modified_for_dsm_11706,
+    medium_220_modified_for_dsm_11707, medium_220_modified_for_dsm_11713, medium_220_modified_for_dsm_12654,
+    medium_220_modified_for_dsm_12655, medium_220_modified_for_dsm_12656, medium_220_modified_for_dsm_12833,
+    medium_220_modified_for_dsm_13060, medium_220_modified_for_dsm_13240, medium_220_modified_for_dsm_13815,
+    medium_220_modified_for_dsm_14791, medium_220_modified_for_dsm_14914, medium_220_modified_for_dsm_14988,
+    medium_220_modified_for_dsm_15028, medium_220_modified_for_dsm_15077, medium_220_modified_for_dsm_15220,
+    medium_220_modified_for_dsm_15391, medium_220_modified_for_dsm_15392, medium_220_modified_for_dsm_15402,
+    medium_220_modified_for_dsm_15428, medium_220_modified_for_dsm_15478, medium_220_modified_for_dsm_15534,
+    medium_220_modified_for_dsm_15595, medium_220_modified_for_dsm_15596, medium_220_modified_for_dsm_15730,
+    medium_220_modified_for_dsm_15820, medium_220_modified_for_dsm_15822, medium_220_modified_for_dsm_15865,
+    medium_220_modified_for_dsm_15866, medium_220_modified_for_dsm_16012, medium_220_modified_for_dsm_16013,
+    medium_220_modified_for_dsm_16014, medium_220_modified_for_dsm_16016, medium_220_modified_for_dsm_16117,
+    medium_220_modified_for_dsm_16288, medium_220_modified_for_dsm_16317, medium_220_modified_for_dsm_16318,
+    medium_220_modified_for_dsm_16319, medium_220_modified_for_dsm_16325, medium_220_modified_for_dsm_16423,
+    medium_220_modified_for_dsm_16467, medium_220_modified_for_dsm_16557, medium_220_modified_for_dsm_16731,
+    medium_220_modified_for_dsm_16920, medium_220_modified_for_dsm_16921, medium_220_modified_for_dsm_16941,
+    medium_220_modified_for_dsm_16942, medium_220_modified_for_dsm_16943, medium_220_modified_for_dsm_16944,
+    medium_220_modified_for_dsm_16945, medium_220_modified_for_dsm_16970, medium_220_modified_for_dsm_16971,
+    medium_220_modified_for_dsm_17040, medium_220_modified_for_dsm_17057, medium_220_modified_for_dsm_17075,
+    medium_220_modified_for_dsm_17127, medium_220_modified_for_dsm_17140, medium_220_modified_for_dsm_17253,
+    medium_220_modified_for_dsm_17254, medium_220_modified_for_dsm_17255, medium_220_modified_for_dsm_17256,
+    medium_220_modified_for_dsm_17376, medium_220_modified_for_dsm_17399, medium_220_modified_for_dsm_17608,
+    medium_220_modified_for_dsm_17643, medium_220_modified_for_dsm_17723, medium_220_modified_for_dsm_17842,
+    medium_220_modified_for_dsm_18677, medium_220_modified_for_dsm_18679, medium_220_modified_for_dsm_18784,
+    medium_220_modified_for_dsm_18926, medium_220_modified_for_dsm_19097, medium_220_modified_for_dsm_19099,
+    medium_220_modified_for_dsm_19248, medium_220_modified_for_dsm_19268, medium_220_modified_for_dsm_19269,
+    medium_220_modified_for_dsm_19292, medium_220_modified_for_dsm_19293, medium_220_modified_for_dsm_19409,
+    medium_220_modified_for_dsm_19613, medium_220_modified_for_dsm_21291, medium_220_modified_for_dsm_21292,
+    medium_220_modified_for_dsm_21315, medium_220_modified_for_dsm_21336, medium_220_modified_for_dsm_21356,
+    medium_220_modified_for_dsm_21510, medium_220_modified_for_dsm_21623, medium_220_modified_for_dsm_21631,
+    medium_220_modified_for_dsm_21861, medium_220_modified_for_dsm_21911, medium_220_modified_for_dsm_21989,
+    medium_220_modified_for_dsm_21993, medium_220_modified_for_dsm_22072, medium_220_modified_for_dsm_22073,
+    medium_220_modified_for_dsm_22132, medium_220_modified_for_dsm_22162, medium_220_modified_for_dsm_22170,
+    medium_220_modified_for_dsm_22203, medium_220_modified_for_dsm_22204, medium_220_modified_for_dsm_22253,
+    medium_220_modified_for_dsm_22254, medium_220_modified_for_dsm_22255, medium_220_modified_for_dsm_22280,
+    medium_220_modified_for_dsm_22281, medium_220_modified_for_dsm_22342, medium_220_modified_for_dsm_22343,
+    medium_220_modified_for_dsm_22699, medium_220_modified_for_dsm_22866, medium_220_modified_for_dsm_22868,
+    medium_220_modified_for_dsm_22870, medium_220_modified_for_dsm_22905, medium_220_modified_for_dsm_22952,
+    medium_220_modified_for_dsm_22953, medium_220_modified_for_dsm_22991, medium_220_modified_for_dsm_23019,
+    medium_220_modified_for_dsm_23020, medium_220_modified_for_dsm_23148, medium_220_modified_for_dsm_23149,
+    medium_220_modified_for_dsm_23151, medium_220_modified_for_dsm_23175, medium_220_modified_for_dsm_23211,
+    medium_220_modified_for_dsm_23212, medium_220_modified_for_dsm_23332, medium_220_modified_for_dsm_23494,
+    medium_220_modified_for_dsm_23495, medium_220_modified_for_dsm_23520, medium_220_modified_for_dsm_23540,
+    medium_220_modified_for_dsm_23541, medium_220_modified_for_dsm_23542, medium_220_modified_for_dsm_23543,
+    medium_220_modified_for_dsm_23544, medium_220_modified_for_dsm_23966, medium_220_modified_for_dsm_25300,
+    medium_220_modified_for_dsm_33, medium_220_modified_for_dsm_6379, medium_220_modified_for_dsm_6458,
+    medium_220_modified_for_dsm_6459, medium_220_modified_for_dsm_6460, medium_220_modified_for_dsm_6472,
+    medium_220_modified_for_dsm_6706, reactivation_with_tryptone_soya_broth, tryptone_soya_broth_tsb_with_additional,
+    tryptone_soya_broth_tsb_with_additional_salts'
+synonyms:
+- name: caso_agar_merck_105458
+  source: KOMODO
+  source_id: komodo.medium:220
+  original_category: bacterial
+- name: for_strain_dsm_21449_und_dsm_21450
+  source: KOMODO
+  source_id: komodo.medium:220.1
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_11483
+  source: KOMODO
+  source_id: komodo.medium:220_11483
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_11705
+  source: KOMODO
+  source_id: komodo.medium:220_11705
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_11706
+  source: KOMODO
+  source_id: komodo.medium:220_11706
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_11707
+  source: KOMODO
+  source_id: komodo.medium:220_11707
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_11713
+  source: KOMODO
+  source_id: komodo.medium:220_11713
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_12654
+  source: KOMODO
+  source_id: komodo.medium:220_12654
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_12655
+  source: KOMODO
+  source_id: komodo.medium:220_12655
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_12656
+  source: KOMODO
+  source_id: komodo.medium:220_12656
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_12833
+  source: KOMODO
+  source_id: komodo.medium:220_12833
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_13060
+  source: KOMODO
+  source_id: komodo.medium:220_13060
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_13240
+  source: KOMODO
+  source_id: komodo.medium:220_13240
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_13815
+  source: KOMODO
+  source_id: komodo.medium:220_13815
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_14791
+  source: KOMODO
+  source_id: komodo.medium:220_14791
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_14914
+  source: KOMODO
+  source_id: komodo.medium:220_14914
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_14988
+  source: KOMODO
+  source_id: komodo.medium:220_14988
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15028
+  source: KOMODO
+  source_id: komodo.medium:220_15028
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15077
+  source: KOMODO
+  source_id: komodo.medium:220_15077
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15220
+  source: KOMODO
+  source_id: komodo.medium:220_15220
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15391
+  source: KOMODO
+  source_id: komodo.medium:220_15391
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15392
+  source: KOMODO
+  source_id: komodo.medium:220_15392
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15402
+  source: KOMODO
+  source_id: komodo.medium:220_15402
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15428
+  source: KOMODO
+  source_id: komodo.medium:220_15428
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15478
+  source: KOMODO
+  source_id: komodo.medium:220_15478
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15534
+  source: KOMODO
+  source_id: komodo.medium:220_15534
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15595
+  source: KOMODO
+  source_id: komodo.medium:220_15595
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15596
+  source: KOMODO
+  source_id: komodo.medium:220_15596
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15730
+  source: KOMODO
+  source_id: komodo.medium:220_15730
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15820
+  source: KOMODO
+  source_id: komodo.medium:220_15820
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15822
+  source: KOMODO
+  source_id: komodo.medium:220_15822
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15865
+  source: KOMODO
+  source_id: komodo.medium:220_15865
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_15866
+  source: KOMODO
+  source_id: komodo.medium:220_15866
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16012
+  source: KOMODO
+  source_id: komodo.medium:220_16012
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16013
+  source: KOMODO
+  source_id: komodo.medium:220_16013
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16014
+  source: KOMODO
+  source_id: komodo.medium:220_16014
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16016
+  source: KOMODO
+  source_id: komodo.medium:220_16016
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16117
+  source: KOMODO
+  source_id: komodo.medium:220_16117
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16288
+  source: KOMODO
+  source_id: komodo.medium:220_16288
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16317
+  source: KOMODO
+  source_id: komodo.medium:220_16317
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16318
+  source: KOMODO
+  source_id: komodo.medium:220_16318
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16319
+  source: KOMODO
+  source_id: komodo.medium:220_16319
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16325
+  source: KOMODO
+  source_id: komodo.medium:220_16325
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16423
+  source: KOMODO
+  source_id: komodo.medium:220_16423
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16467
+  source: KOMODO
+  source_id: komodo.medium:220_16467
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16557
+  source: KOMODO
+  source_id: komodo.medium:220_16557
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16731
+  source: KOMODO
+  source_id: komodo.medium:220_16731
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16920
+  source: KOMODO
+  source_id: komodo.medium:220_16920
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16921
+  source: KOMODO
+  source_id: komodo.medium:220_16921
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16941
+  source: KOMODO
+  source_id: komodo.medium:220_16941
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16942
+  source: KOMODO
+  source_id: komodo.medium:220_16942
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16943
+  source: KOMODO
+  source_id: komodo.medium:220_16943
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16944
+  source: KOMODO
+  source_id: komodo.medium:220_16944
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16945
+  source: KOMODO
+  source_id: komodo.medium:220_16945
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16970
+  source: KOMODO
+  source_id: komodo.medium:220_16970
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_16971
+  source: KOMODO
+  source_id: komodo.medium:220_16971
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17040
+  source: KOMODO
+  source_id: komodo.medium:220_17040
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17057
+  source: KOMODO
+  source_id: komodo.medium:220_17057
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17075
+  source: KOMODO
+  source_id: komodo.medium:220_17075
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17127
+  source: KOMODO
+  source_id: komodo.medium:220_17127
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17140
+  source: KOMODO
+  source_id: komodo.medium:220_17140
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17253
+  source: KOMODO
+  source_id: komodo.medium:220_17253
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17254
+  source: KOMODO
+  source_id: komodo.medium:220_17254
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17255
+  source: KOMODO
+  source_id: komodo.medium:220_17255
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17256
+  source: KOMODO
+  source_id: komodo.medium:220_17256
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17376
+  source: KOMODO
+  source_id: komodo.medium:220_17376
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17399
+  source: KOMODO
+  source_id: komodo.medium:220_17399
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17608
+  source: KOMODO
+  source_id: komodo.medium:220_17608
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17643
+  source: KOMODO
+  source_id: komodo.medium:220_17643
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17723
+  source: KOMODO
+  source_id: komodo.medium:220_17723
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_17842
+  source: KOMODO
+  source_id: komodo.medium:220_17842
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_18677
+  source: KOMODO
+  source_id: komodo.medium:220_18677
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_18679
+  source: KOMODO
+  source_id: komodo.medium:220_18679
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_18784
+  source: KOMODO
+  source_id: komodo.medium:220_18784
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_18926
+  source: KOMODO
+  source_id: komodo.medium:220_18926
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_19097
+  source: KOMODO
+  source_id: komodo.medium:220_19097
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_19099
+  source: KOMODO
+  source_id: komodo.medium:220_19099
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_19248
+  source: KOMODO
+  source_id: komodo.medium:220_19248
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_19268
+  source: KOMODO
+  source_id: komodo.medium:220_19268
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_19269
+  source: KOMODO
+  source_id: komodo.medium:220_19269
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_19292
+  source: KOMODO
+  source_id: komodo.medium:220_19292
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_19293
+  source: KOMODO
+  source_id: komodo.medium:220_19293
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_19409
+  source: KOMODO
+  source_id: komodo.medium:220_19409
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_19613
+  source: KOMODO
+  source_id: komodo.medium:220_19613
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21291
+  source: KOMODO
+  source_id: komodo.medium:220_21291
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21292
+  source: KOMODO
+  source_id: komodo.medium:220_21292
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21315
+  source: KOMODO
+  source_id: komodo.medium:220_21315
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21336
+  source: KOMODO
+  source_id: komodo.medium:220_21336
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21356
+  source: KOMODO
+  source_id: komodo.medium:220_21356
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21510
+  source: KOMODO
+  source_id: komodo.medium:220_21510
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21623
+  source: KOMODO
+  source_id: komodo.medium:220_21623
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21631
+  source: KOMODO
+  source_id: komodo.medium:220_21631
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21861
+  source: KOMODO
+  source_id: komodo.medium:220_21861
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21911
+  source: KOMODO
+  source_id: komodo.medium:220_21911
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21989
+  source: KOMODO
+  source_id: komodo.medium:220_21989
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_21993
+  source: KOMODO
+  source_id: komodo.medium:220_21993
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22072
+  source: KOMODO
+  source_id: komodo.medium:220_22072
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22073
+  source: KOMODO
+  source_id: komodo.medium:220_22073
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22132
+  source: KOMODO
+  source_id: komodo.medium:220_22132
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22162
+  source: KOMODO
+  source_id: komodo.medium:220_22162
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22170
+  source: KOMODO
+  source_id: komodo.medium:220_22170
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22203
+  source: KOMODO
+  source_id: komodo.medium:220_22203
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22204
+  source: KOMODO
+  source_id: komodo.medium:220_22204
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22253
+  source: KOMODO
+  source_id: komodo.medium:220_22253
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22254
+  source: KOMODO
+  source_id: komodo.medium:220_22254
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22255
+  source: KOMODO
+  source_id: komodo.medium:220_22255
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22280
+  source: KOMODO
+  source_id: komodo.medium:220_22280
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22281
+  source: KOMODO
+  source_id: komodo.medium:220_22281
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22342
+  source: KOMODO
+  source_id: komodo.medium:220_22342
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22343
+  source: KOMODO
+  source_id: komodo.medium:220_22343
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22699
+  source: KOMODO
+  source_id: komodo.medium:220_22699
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22866
+  source: KOMODO
+  source_id: komodo.medium:220_22866
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22868
+  source: KOMODO
+  source_id: komodo.medium:220_22868
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22870
+  source: KOMODO
+  source_id: komodo.medium:220_22870
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22905
+  source: KOMODO
+  source_id: komodo.medium:220_22905
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22952
+  source: KOMODO
+  source_id: komodo.medium:220_22952
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22953
+  source: KOMODO
+  source_id: komodo.medium:220_22953
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_22991
+  source: KOMODO
+  source_id: komodo.medium:220_22991
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23019
+  source: KOMODO
+  source_id: komodo.medium:220_23019
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23020
+  source: KOMODO
+  source_id: komodo.medium:220_23020
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23148
+  source: KOMODO
+  source_id: komodo.medium:220_23148
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23149
+  source: KOMODO
+  source_id: komodo.medium:220_23149
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23151
+  source: KOMODO
+  source_id: komodo.medium:220_23151
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23175
+  source: KOMODO
+  source_id: komodo.medium:220_23175
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23211
+  source: KOMODO
+  source_id: komodo.medium:220_23211
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23212
+  source: KOMODO
+  source_id: komodo.medium:220_23212
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23332
+  source: KOMODO
+  source_id: komodo.medium:220_23332
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23494
+  source: KOMODO
+  source_id: komodo.medium:220_23494
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23495
+  source: KOMODO
+  source_id: komodo.medium:220_23495
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23520
+  source: KOMODO
+  source_id: komodo.medium:220_23520
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23540
+  source: KOMODO
+  source_id: komodo.medium:220_23540
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23541
+  source: KOMODO
+  source_id: komodo.medium:220_23541
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23542
+  source: KOMODO
+  source_id: komodo.medium:220_23542
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23543
+  source: KOMODO
+  source_id: komodo.medium:220_23543
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23544
+  source: KOMODO
+  source_id: komodo.medium:220_23544
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_23966
+  source: KOMODO
+  source_id: komodo.medium:220_23966
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_25300
+  source: KOMODO
+  source_id: komodo.medium:220_25300
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_33
+  source: KOMODO
+  source_id: komodo.medium:220_33
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_6379
+  source: KOMODO
+  source_id: komodo.medium:220_6379
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_6458
+  source: KOMODO
+  source_id: komodo.medium:220_6458
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_6459
+  source: KOMODO
+  source_id: komodo.medium:220_6459
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_6460
+  source: KOMODO
+  source_id: komodo.medium:220_6460
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_6472
+  source: KOMODO
+  source_id: komodo.medium:220_6472
+  original_category: bacterial
+- name: medium_220_modified_for_dsm_6706
+  source: KOMODO
+  source_id: komodo.medium:220_6706
+  original_category: bacterial
+- name: reactivation_with_tryptone_soya_broth
+  source: MediaDive
+  source_id: mediadive.medium:220a
+  original_category: bacterial
+- name: tryptone_soya_broth_tsb_with_additional
+  source: MediaDive
+  source_id: mediadive.medium:1518
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_220_CASO_AGAR_Merck_105458
+- for_strain_dsm_21449_und_dsm_21450
+- medium_220_modified_for_dsm_11483
+- medium_220_modified_for_dsm_11705
+- medium_220_modified_for_dsm_11706
+- medium_220_modified_for_dsm_11707
+- medium_220_modified_for_dsm_11713
+- medium_220_modified_for_dsm_12654
+- medium_220_modified_for_dsm_12655
+- medium_220_modified_for_dsm_12656
+- medium_220_modified_for_dsm_12833
+- medium_220_modified_for_dsm_13060
+- medium_220_modified_for_dsm_13240
+- medium_220_modified_for_dsm_13815
+- medium_220_modified_for_dsm_14791
+- medium_220_modified_for_dsm_14914
+- medium_220_modified_for_dsm_14988
+- medium_220_modified_for_dsm_15028
+- medium_220_modified_for_dsm_15077
+- medium_220_modified_for_dsm_15220
+- medium_220_modified_for_dsm_15391
+- medium_220_modified_for_dsm_15392
+- medium_220_modified_for_dsm_15402
+- medium_220_modified_for_dsm_15428
+- medium_220_modified_for_dsm_15478
+- medium_220_modified_for_dsm_15534
+- medium_220_modified_for_dsm_15595
+- medium_220_modified_for_dsm_15596
+- medium_220_modified_for_dsm_15730
+- medium_220_modified_for_dsm_15820
+- medium_220_modified_for_dsm_15822
+- medium_220_modified_for_dsm_15865
+- medium_220_modified_for_dsm_15866
+- medium_220_modified_for_dsm_16012
+- medium_220_modified_for_dsm_16013
+- medium_220_modified_for_dsm_16014
+- medium_220_modified_for_dsm_16016
+- medium_220_modified_for_dsm_16117
+- medium_220_modified_for_dsm_16288
+- medium_220_modified_for_dsm_16317
+- medium_220_modified_for_dsm_16318
+- medium_220_modified_for_dsm_16319
+- medium_220_modified_for_dsm_16325
+- medium_220_modified_for_dsm_16423
+- medium_220_modified_for_dsm_16467
+- medium_220_modified_for_dsm_16557
+- medium_220_modified_for_dsm_16731
+- medium_220_modified_for_dsm_16920
+- medium_220_modified_for_dsm_16921
+- medium_220_modified_for_dsm_16941
+- medium_220_modified_for_dsm_16942
+- medium_220_modified_for_dsm_16943
+- medium_220_modified_for_dsm_16944
+- medium_220_modified_for_dsm_16945
+- medium_220_modified_for_dsm_16970
+- medium_220_modified_for_dsm_16971
+- medium_220_modified_for_dsm_17040
+- medium_220_modified_for_dsm_17057
+- medium_220_modified_for_dsm_17075
+- medium_220_modified_for_dsm_17127
+- medium_220_modified_for_dsm_17140
+- medium_220_modified_for_dsm_17253
+- medium_220_modified_for_dsm_17254
+- medium_220_modified_for_dsm_17255
+- medium_220_modified_for_dsm_17256
+- medium_220_modified_for_dsm_17376
+- medium_220_modified_for_dsm_17399
+- medium_220_modified_for_dsm_17608
+- medium_220_modified_for_dsm_17643
+- medium_220_modified_for_dsm_17723
+- medium_220_modified_for_dsm_17842
+- medium_220_modified_for_dsm_18677
+- medium_220_modified_for_dsm_18679
+- medium_220_modified_for_dsm_18784
+- medium_220_modified_for_dsm_18926
+- medium_220_modified_for_dsm_19097
+- medium_220_modified_for_dsm_19099
+- medium_220_modified_for_dsm_19248
+- medium_220_modified_for_dsm_19268
+- medium_220_modified_for_dsm_19269
+- medium_220_modified_for_dsm_19292
+- medium_220_modified_for_dsm_19293
+- medium_220_modified_for_dsm_19409
+- medium_220_modified_for_dsm_19613
+- medium_220_modified_for_dsm_21291
+- medium_220_modified_for_dsm_21292
+- medium_220_modified_for_dsm_21315
+- medium_220_modified_for_dsm_21336
+- medium_220_modified_for_dsm_21356
+- medium_220_modified_for_dsm_21510
+- medium_220_modified_for_dsm_21623
+- medium_220_modified_for_dsm_21631
+- medium_220_modified_for_dsm_21861
+- medium_220_modified_for_dsm_21911
+- medium_220_modified_for_dsm_21989
+- medium_220_modified_for_dsm_21993
+- medium_220_modified_for_dsm_22072
+- medium_220_modified_for_dsm_22073
+- medium_220_modified_for_dsm_22132
+- medium_220_modified_for_dsm_22162
+- medium_220_modified_for_dsm_22170
+- medium_220_modified_for_dsm_22203
+- medium_220_modified_for_dsm_22204
+- medium_220_modified_for_dsm_22253
+- medium_220_modified_for_dsm_22254
+- medium_220_modified_for_dsm_22255
+- medium_220_modified_for_dsm_22280
+- medium_220_modified_for_dsm_22281
+- medium_220_modified_for_dsm_22342
+- medium_220_modified_for_dsm_22343
+- medium_220_modified_for_dsm_22699
+- medium_220_modified_for_dsm_22866
+- medium_220_modified_for_dsm_22868
+- medium_220_modified_for_dsm_22870
+- medium_220_modified_for_dsm_22905
+- medium_220_modified_for_dsm_22952
+- medium_220_modified_for_dsm_22953
+- medium_220_modified_for_dsm_22991
+- medium_220_modified_for_dsm_23019
+- medium_220_modified_for_dsm_23020
+- medium_220_modified_for_dsm_23148
+- medium_220_modified_for_dsm_23149
+- medium_220_modified_for_dsm_23151
+- medium_220_modified_for_dsm_23175
+- medium_220_modified_for_dsm_23211
+- medium_220_modified_for_dsm_23212
+- medium_220_modified_for_dsm_23332
+- medium_220_modified_for_dsm_23494
+- medium_220_modified_for_dsm_23495
+- medium_220_modified_for_dsm_23520
+- medium_220_modified_for_dsm_23540
+- medium_220_modified_for_dsm_23541
+- medium_220_modified_for_dsm_23542
+- medium_220_modified_for_dsm_23543
+- medium_220_modified_for_dsm_23544
+- medium_220_modified_for_dsm_23966
+- medium_220_modified_for_dsm_25300
+- medium_220_modified_for_dsm_33
+- medium_220_modified_for_dsm_6379
+- medium_220_modified_for_dsm_6458
+- medium_220_modified_for_dsm_6459
+- medium_220_modified_for_dsm_6460
+- medium_220_modified_for_dsm_6472
+- medium_220_modified_for_dsm_6706
+- reactivation_with_tryptone_soya_broth
+- tryptone_soya_broth_tsb_with_additional
+- tryptone_soya_broth_tsb_with_additional_salts
+merge_fingerprint: 7359e1a4f52cec5098a2639be25f6788b30890abc89c6162f34d8bde4a823904

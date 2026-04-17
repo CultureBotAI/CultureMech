@@ -1,8 +1,9 @@
-name: MODIFIED PYES MEDIUM
+id: CultureMech:002112
+name: modified_pyes_medium
 original_name: MODIFIED PYES MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 937a
@@ -27,6 +28,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -38,6 +42,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 937a'
+- timestamp: '2026-03-13T06:19:10.434703Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002112'
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:23.100641+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED PYES MEDIUM" to "modified_pyes_medium" for
+    consistent matching
+kg_microbe_match: mediadive.medium:12
 merge_fingerprint: b550b35d64b0ae4836cef4a1f5213746754198c611a34e4b1e1d7c0572b25ae6
 merged_from:
-- DSMZ_937a_MODIFIED_PYES_MEDIUM
+- modified_pyes_medium

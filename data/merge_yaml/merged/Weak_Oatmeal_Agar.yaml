@@ -1,8 +1,9 @@
-name: Weak Oatmeal Agar
+id: CultureMech:007822
+name: weak_oatmeal_agar
 original_name: Weak Oatmeal Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Agar
   concentration:
     value: '12'
@@ -21,6 +25,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Oatmeal agar (BD-Difco)
   concentration:
     value: '15'
@@ -47,6 +54,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:51.735660Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007822'
+- timestamp: '2026-03-17T06:30:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.170162+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Weak Oatmeal Agar" to "weak_oatmeal_agar" for consistent
+    matching
 merge_fingerprint: 434d393a07e39312eac6f41caafe1acc390e189683888dbfc9834cd38038f2ba
 merged_from:
 - TOGO_M1288_Weak_Oatmeal_Agar

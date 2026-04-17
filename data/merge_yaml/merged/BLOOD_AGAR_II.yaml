@@ -1,15 +1,16 @@
-name: BLOOD AGAR II
+id: CultureMech:004616
+name: blood_agar_ii
 original_name: BLOOD AGAR II
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_value: 7.3
+physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 245
+  preferred_term: KOMODO Medium 245
   term:
-    id: mediadive.medium:245
+    id: komodo.medium:245
     label: BLOOD AGAR II
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium245.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 245 | DSMZ Medium: 245 (mediadive.medium:245)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Defibrinated sheep blood
   concentration:
@@ -30,6 +31,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -37,25 +41,41 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
-    CM 131).
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.584889Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 245'
-- timestamp: '2026-02-19T08:26:45.252040+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 245'
+- timestamp: '2026-02-03T11:18:58.579568'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 245
+- timestamp: '2026-03-13T06:19:27.694517Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004616'
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:42.954340+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BLOOD AGAR II" to "blood_agar_ii" for consistent matching
+- timestamp: '2026-04-17T06:29:20.980029+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_245_BLOOD_AGAR_II, KOMODO_245_BLOOD_AGAR_II'
+  notes: 'Sources: KOMODO_245_BLOOD_AGAR_II, blood_agar_ii'
+ph_value: 7.3
+kg_microbe_match: mediadive.medium:101
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_245_BLOOD_AGAR_II
 - KOMODO_245_BLOOD_AGAR_II
+- blood_agar_ii
 merge_fingerprint: 4e7b98969fb25608d2758fa2e7a7865525d72206ab17e2393a6648f281d05f5c

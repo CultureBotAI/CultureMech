@@ -1,15 +1,16 @@
-name: METHYLONATRUM MEDIUM
+id: CultureMech:000570
+name: methylonatrum_medium
 original_name: METHYLONATRUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:
-  preferred_term: DSMZ Medium 1170
+  preferred_term: DSMZ Medium 1134
   term:
-    id: mediadive.medium:1170
+    id: mediadive.medium:1134
     label: METHYLONATRUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1170.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1134.pdf'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '11'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Methanol
   term:
     id: CHEBI:17790
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '1.584'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000618
+    label: Methanol
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -46,34 +59,39 @@ ingredients:
   concentration:
     value: '18'
     unit: G_PER_L
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.16'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.24'
+    value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: NaS2O3 x 5 H2O
   concentration:
-    value: '0.024'
+    value: '18'
     unit: G_PER_L
   term:
     id: CHEBI:32150
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: NaS2O3 x 5 H2O
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.1'
+    value: '0.0001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -81,6 +99,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -88,6 +109,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -95,6 +119,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -102,6 +129,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -109,6 +139,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -116,6 +149,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -123,6 +159,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -138,28 +177,27 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.580603Z'
+- timestamp: '2026-01-26T17:53:13.477260Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1170'
-- timestamp: '2026-01-28T19:48:14.516881Z'
+  notes: 'Source: DSMZ, ID: 1134'
+- timestamp: '2026-01-28T19:48:12.969366Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:40.409879+00:00'
-  curator: recipe-merger
-  action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1170_METHYLONATRUM_MEDIUM, KOMODO_1170-replace-Methanol-with-Sodium
-    acetate_METHYLONATRUM_MEDIUM_replace_Methanol_with_Sodium_acetate, KOMODO_1170_METHYLONATRUM_MEDIUM'
-synonyms:
-- name: METHYLONATRUM MEDIUM_replace_Methanol_with_Sodium acetate
-  source: KOMODO
-  source_id: komodo.medium:1170_replace_Methanol_with_Sodium acetate
-  original_category: imported
-categories:
-- imported
+- timestamp: '2026-03-13T06:18:56.459234Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000570'
+- timestamp: '2026-03-17T06:29:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:07.547681+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHYLONATRUM MEDIUM" to "methylonatrum_medium" for
+    consistent matching
+merge_fingerprint: 645fe46cb7fce8aa2357c4a07d073e1602c04380d4f8779a64d2b57012345615
 merged_from:
-- DSMZ_1170_METHYLONATRUM_MEDIUM
-- KOMODO_1170-replace-Methanol-with-Sodium acetate_METHYLONATRUM_MEDIUM_replace_Methanol_with_Sodium_acetate
-- KOMODO_1170_METHYLONATRUM_MEDIUM
-merge_fingerprint: bbfdb67326ec3ba3d0cea4d4db62941c49180ff8a9e2a26662e1d096c0dc9e95
+- methylonatrum_medium

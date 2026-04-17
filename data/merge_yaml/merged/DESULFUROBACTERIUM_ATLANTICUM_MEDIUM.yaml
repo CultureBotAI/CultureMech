@@ -1,6 +1,7 @@
-name: DESULFUROBACTERIUM ATLANTICUM MEDIUM
+id: CultureMech:001979
+name: desulfurobacterium_atlanticum_medium
 original_name: DESULFUROBACTERIUM ATLANTICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '29.4118'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '2.94118'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.147059'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.490196'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.490196'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MES [2-(N-morpholino) ethane sulfonic acid]
   concentration:
     value: '1.91176'
@@ -53,6 +69,9 @@ ingredients:
   term:
     id: CHEBI:39005
     label: 2-(N-morpholino)ethanesulfonic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000942
+    label: MES [2-(N-morpholino) ethane sulfonic acid]
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.196078'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000490196'
@@ -71,6 +93,9 @@ ingredients:
   concentration:
     value: '2.45098'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -78,6 +103,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -110,6 +138,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:09.054909Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001979'
+- timestamp: '2026-03-17T06:30:32.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:21.566622+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFUROBACTERIUM ATLANTICUM MEDIUM" to "desulfurobacterium_atlanticum_medium"
+    for consistent matching
 merge_fingerprint: 0e5ce6f928bbd5515e2072351cc28e21fb1dfa5b72d495c07b72fa753ab88d5e
 merged_from:
-- DSMZ_829a_DESULFUROBACTERIUM_ATLANTICUM_MEDIUM
+- desulfurobacterium_atlanticum_medium

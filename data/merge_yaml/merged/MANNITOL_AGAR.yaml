@@ -1,8 +1,9 @@
-name: Mannitol Agar
+id: CultureMech:010003
+name: mannitol_agar
 original_name: Mannitol Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: Mannitol
   concentration:
     value: '25'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:29864
     label: mannitol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001010
+    label: Mannitol
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -44,6 +54,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Peptone
   concentration:
     value: '3'
@@ -69,6 +82,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:10.637003Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010003'
+- timestamp: '2026-03-17T06:30:15.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.565208+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mannitol Agar" to "mannitol_agar" for consistent matching
 merge_fingerprint: e10adf911955ba1cebbfd6933c820fc420f3a69aa13a4255b0a3876b2cebc96c
 merged_from:
 - TOGO_M604_Mannitol_Agar

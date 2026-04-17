@@ -1,6 +1,7 @@
-name: Acidianus medium
+id: CultureMech:008458
+name: acidianus_medium
 original_name: Acidianus medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.25'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.07'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.28'
@@ -39,6 +49,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Na2MoO4·2H2O
   concentration:
@@ -49,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -57,6 +73,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Na2S·9H2O
   concentration:
@@ -67,12 +86,18 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S·9H2O
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '1.8'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.22'
@@ -82,6 +107,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '0.05'
@@ -91,6 +119,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2·2H2O
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.3'
@@ -100,6 +131,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: FeCl3·6H2O
   concentration:
     value: '0.02'
@@ -109,12 +143,18 @@ ingredients:
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3·6H2O
 - preferred_term: CoSO4·7H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Sulfur (powder)
   concentration:
     value: '1'
@@ -124,6 +164,9 @@ ingredients:
   term:
     id: CHEBI:14258
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001072
+    label: Sulfur (powder)
 - preferred_term: VOSO4·xH2O
   concentration:
     value: '0.03'
@@ -133,6 +176,9 @@ ingredients:
   term:
     id: CHEBI:87020
     label: vanadyl sulfate hydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000671
+    label: VOSO4·xH2O
 - preferred_term: Na2B4O7·10H2O
   concentration:
     value: '4.5'
@@ -153,21 +199,33 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 media_term:
   preferred_term: TOGO Medium M1884
   term:
@@ -195,6 +253,19 @@ curation_history:
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     N2; Added default concentration for ingredient: Hydrogen gas'
-merge_fingerprint: a24ea4095a665149fd724b25b4904ba6b347dc081ec02f87c2236b0a227fa121
+- timestamp: '2026-03-13T06:19:57.091035Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008458'
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.682927+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Acidianus medium" to "acidianus_medium" for consistent
+    matching
+merge_fingerprint: 579acadca40d5519c01321daa5feeeea2157d589d13cdbaa0be7388b5f4b3268
 merged_from:
-- TOGO_M1884_Acidianus_medium
+- acidianus_medium

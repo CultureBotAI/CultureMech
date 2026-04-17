@@ -1,15 +1,17 @@
-name: GEOALKALIBACTER MEDIUM
-original_name: GEOALKALIBACTER MEDIUM
-category: imported
+id: CultureMech:003642
+name: geoalkalibacter_medium
+original_name: GEOALKALIBACTER medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9-9.2
+ph_range: 9.0-9.2
 media_term:
-  preferred_term: DSMZ Medium 1059
+  preferred_term: KOMODO Medium 1059
   term:
-    id: mediadive.medium:1059
-    label: GEOALKALIBACTER MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1059.pdf'
+    id: komodo.medium:1059
+    label: GEOALKALIBACTER medium
+notes: 'Source: KOMODO ModelSEED | ID: 1059 | DSMZ Medium: 1059 (mediadive.medium:1059)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '0.499002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '0.199601'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.0998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.199601'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '2.99401'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -60,6 +80,9 @@ ingredients:
   concentration:
     value: '9.98004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
@@ -67,6 +90,9 @@ ingredients:
   concentration:
     value: '9.98004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000927
+    label: Sulfur
 - preferred_term: Yeast extract
   concentration:
     value: '0.0998004'
@@ -78,6 +104,9 @@ ingredients:
   concentration:
     value: '2.49501'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -85,6 +114,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -92,6 +124,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -99,6 +134,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -106,6 +144,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -113,6 +154,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -120,6 +164,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -127,6 +174,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -134,6 +184,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -141,6 +194,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -148,6 +204,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -155,6 +214,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -162,39 +224,40 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Dissolve ingredients (ecxept carbonate, hydrogencarbonate, sulfur,
-    yeast extract and acetate), then sparge medium with 100% N2 gas for 30 - 45 min
-    to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.0 - 9.2,
-    and dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum
-    vials containing already the appropriate amount of sulfur. Sterilize medium by
-    autoclaving at <b>110°C</b> for 20 min. Add yeast extract and acetate from sterile
-    anoxic stock solutions prepared under 100% N2 gas.
-- step_number: 2
-  action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.263985Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1059'
-- timestamp: '2026-02-19T08:26:38.796266+00:00'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1059'
+- timestamp: '2026-02-03T11:19:17.439910'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1059
+- timestamp: '2026-03-13T06:19:21.307900Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003642'
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:35.548477+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GEOALKALIBACTER medium" to "geoalkalibacter_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:14.654086+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1059_GEOALKALIBACTER_MEDIUM, KOMODO_1059_GEOALKALIBACTER_medium'
-synonyms:
-- name: GEOALKALIBACTER medium
-  source: KOMODO
-  source_id: komodo.medium:1059
-  original_category: imported
+  notes: 'Sources: KOMODO_1059_GEOALKALIBACTER_medium, geoalkalibacter_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1059_GEOALKALIBACTER_MEDIUM
 - KOMODO_1059_GEOALKALIBACTER_medium
+- geoalkalibacter_medium
 merge_fingerprint: 3c495c064c60dc4f58aba1a07140347f1e5ecf05da8d50550e1d84c30c473290

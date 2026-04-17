@@ -1,6 +1,7 @@
-name: Kim medium
+id: CultureMech:009676
+name: kim_medium
 original_name: Kim medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,18 +14,27 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4⋅7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: FeSO4⋅7H2O
   concentration:
     value: '44'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -34,6 +44,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: (NH4)H2PO4
   concentration:
     value: '2'
@@ -43,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:62982
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000515
+    label: (NH4)H2PO4
 - preferred_term: 10N H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -70,6 +86,18 @@ curation_history:
   date: '2026-02-03T11:20:57.994404'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: 10N H2SO4'
-merge_fingerprint: 77661c8ad98d9f3b18d89d4297b273f3a1552e2249f8534ad5c8903b9627193c
+- timestamp: '2026-03-13T06:20:08.037869Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009676'
+- timestamp: '2026-03-17T06:30:33.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.042753+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Kim medium" to "kim_medium" for consistent matching
+merge_fingerprint: b8faa0d8c6e25119fe3b65468f4ccf8c439c3eb104a9de15578f685a79904e8e
 merged_from:
-- TOGO_M3239_Kim_medium
+- kim_medium

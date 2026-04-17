@@ -1,8 +1,9 @@
-name: MODIFIED THERMUS 162 MEDIUM
+id: CultureMech:001761
+name: modified_thermus_162_medium
 original_name: MODIFIED THERMUS 162 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 630
@@ -26,13 +27,20 @@ ingredients:
   concentration:
     value: '28'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
     label: Nitrilotriacetic acid
   concentration:
-    value: '0.1'
+    value: '12.9'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 12.8]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: CaSO4 x 2 H2O
   term:
     id: CHEBI:32583
@@ -40,6 +48,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000465
+    label: CaSO4 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -47,6 +58,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: Fe(III) citrate
   term:
     id: CHEBI:144421
@@ -54,6 +68,9 @@ ingredients:
   concentration:
     value: '0.00122472'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000864
+    label: Fe(III) citrate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -61,6 +78,9 @@ ingredients:
   concentration:
     value: '5.44'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Na2HPO4 x 12 H2O
   term:
     id: CHEBI:34683
@@ -68,13 +88,9 @@ ingredients:
   concentration:
     value: '43'
     unit: G_PER_L
-- preferred_term: Nitrilotriacetic acid
-  term:
-    id: CHEBI:44557
-    label: Nitrilotriacetic acid
-  concentration:
-    value: '12.8'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 12 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -82,6 +98,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -89,6 +108,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 4 H2O
   term:
     id: CHEBI:35696
@@ -96,6 +118,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 4 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -103,6 +128,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -110,6 +138,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -117,6 +148,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -124,6 +158,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -144,46 +181,57 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 630'
-- timestamp: '2026-02-19T08:26:52.089649+00:00'
+- timestamp: '2026-03-13T03:09:34.405849Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:07.027246Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001761'
+- timestamp: '2026-03-17T06:30:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:19.281167+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED THERMUS 162 MEDIUM" to "modified_thermus_162_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:10.479360+00:00'
   curator: recipe-merger
-  action: Merged 7 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_630_MODIFIED_THERMUS_162_MEDIUM, KOMODO_630-12048_MEDIUM_630_MODIFIED_FOR_DSM_12048,
-    KOMODO_630-12049_MEDIUM_630_MODIFIED_FOR_DSM_12049, KOMODO_630-22673_MEDIUM_630_MODIFIED_FOR_DSM_22673,
-    KOMODO_630-4252_MEDIUM_630_MODIFIED_FOR_DSM_4252, KOMODO_630-4253_MEDIUM_630_MODIFIED_FOR_DSM_4253,
-    KOMODO_630_MODIFIED_THERMUS_162_medium'
+  action: Merged 6 duplicate recipes into canonical record
+  notes: 'Sources: medium_630_modified_for_dsm_12048, medium_630_modified_for_dsm_12049,
+    medium_630_modified_for_dsm_22673, medium_630_modified_for_dsm_4252, medium_630_modified_for_dsm_4253,
+    modified_thermus_162_medium'
 synonyms:
-- name: MEDIUM 630 MODIFIED FOR DSM 12048
+- name: medium_630_modified_for_dsm_12048
   source: KOMODO
   source_id: komodo.medium:630_12048
-  original_category: imported
-- name: MEDIUM 630 MODIFIED FOR DSM 12049
+  original_category: bacterial
+- name: medium_630_modified_for_dsm_12049
   source: KOMODO
   source_id: komodo.medium:630_12049
-  original_category: imported
-- name: MEDIUM 630 MODIFIED FOR DSM 22673
+  original_category: bacterial
+- name: medium_630_modified_for_dsm_22673
   source: KOMODO
   source_id: komodo.medium:630_22673
-  original_category: imported
-- name: MEDIUM 630 MODIFIED FOR DSM 4252
+  original_category: bacterial
+- name: medium_630_modified_for_dsm_4252
   source: KOMODO
   source_id: komodo.medium:630_4252
-  original_category: imported
-- name: MEDIUM 630 MODIFIED FOR DSM 4253
+  original_category: bacterial
+- name: medium_630_modified_for_dsm_4253
   source: KOMODO
   source_id: komodo.medium:630_4253
-  original_category: imported
-- name: MODIFIED THERMUS 162 medium
-  source: KOMODO
-  source_id: komodo.medium:630
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_630_MODIFIED_THERMUS_162_MEDIUM
-- KOMODO_630-12048_MEDIUM_630_MODIFIED_FOR_DSM_12048
-- KOMODO_630-12049_MEDIUM_630_MODIFIED_FOR_DSM_12049
-- KOMODO_630-22673_MEDIUM_630_MODIFIED_FOR_DSM_22673
-- KOMODO_630-4252_MEDIUM_630_MODIFIED_FOR_DSM_4252
-- KOMODO_630-4253_MEDIUM_630_MODIFIED_FOR_DSM_4253
-- KOMODO_630_MODIFIED_THERMUS_162_medium
+- medium_630_modified_for_dsm_12048
+- medium_630_modified_for_dsm_12049
+- medium_630_modified_for_dsm_22673
+- medium_630_modified_for_dsm_4252
+- medium_630_modified_for_dsm_4253
+- modified_thermus_162_medium
 merge_fingerprint: 4af53d83b7103baff61d460153c1b8a868945490dea98f8225eca5a49af43529

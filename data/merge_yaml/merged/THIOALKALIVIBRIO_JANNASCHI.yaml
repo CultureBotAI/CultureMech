@@ -1,15 +1,17 @@
-name: THIOALKALIVIBRIO JANNASCHI
+id: CultureMech:004026
+name: thioalkalivibrio_jannaschi
 original_name: THIOALKALIVIBRIO JANNASCHI
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:
-  preferred_term: DSMZ Medium 1272
+  preferred_term: KOMODO Medium 1272
   term:
-    id: mediadive.medium:1272
+    id: komodo.medium:1272
     label: THIOALKALIVIBRIO JANNASCHI
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1272.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 1272 | DSMZ Medium: 1272 (mediadive.medium:1272)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -60,6 +80,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -67,6 +90,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -74,6 +100,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -81,6 +110,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -88,6 +120,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -95,6 +130,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -102,6 +140,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -109,93 +150,96 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: HEAT
-  description: Sterilize at 110°C 20 min in a closed vessel (i.e. a serum tube or
-    bottle). pH after sterilization will about 10.
-- step_number: 2
-  action: DISSOLVE
-  description: (a white colloid will form which will rapidly dissolve after mixing)
-- step_number: 3
-  action: MIX
-  description: 'After sterilization add:'
-- step_number: 4
-  action: HEAT
-  description: Final pH should be 3, add HCl if needed. Sterilization - 120°C 20 min.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.941726Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1272'
-- timestamp: '2026-02-19T08:26:42.016926+00:00'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1272'
+- timestamp: '2026-02-03T11:19:05.664413'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1272
+- timestamp: '2026-03-13T06:19:24.241742Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004026'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:38.951003+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOALKALIVIBRIO JANNASCHI" to "thioalkalivibrio_jannaschi"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:18.099907+00:00'
   curator: recipe-merger
   action: Merged 12 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1272_THIOALKALIVIBRIO_JANNASCHI, DSMZ_925_ALKALIPHILIC_SULPHUR_RESPIRING_STRAINS_MEDIUM,
-    KOMODO_1272_THIOALKALIVIBRIO_JANNASCHI, KOMODO_925-1_DSM_13531_ARh1_and_DSM_13532_ARh2_KSCN_grown,
-    KOMODO_925-2_DSM_13541_ARh2_thiosulphate_grown, KOMODO_925-3_DSM_13542_ARh1_thiosulphate_grown,
-    KOMODO_925-4_DSM_13533_ALRh, KOMODO_925-5_Thioalkalivibrio_versutus_AL_2_DSM_13738_Tv.nitratus_ALJ_12_DSM_13741_and_Tv.den,
-    KOMODO_925-6_Thioalkalimicrobium_aerophilum_AL_3_DSM_13739_and_Tm.sibericum_AL_7_DSM_13740,
-    KOMODO_925-7_Thioalkalispira_microaerophila_ALEN_1_DSM_14786, KOMODO_925-8_Thioalkalivibrio_nitratireducens_ALEN_2_DSM_14787,
-    KOMODO_925_ALKALIPHILIC_SULPHUR_RESPIRING_STRAINS_MEDIUM'
+  notes: 'Sources: KOMODO_1272_THIOALKALIVIBRIO_JANNASCHI, KOMODO_925_ALKALIPHILIC_SULPHUR_RESPIRING_STRAINS_MEDIUM,
+    alkaliphilic_sulphur_respiring_strains_medium, dsm_13531_arh1_and_dsm_13532_arh2_kscn_grown,
+    dsm_13533_alrh, dsm_13541_arh2_thiosulphate_grown, dsm_13542_arh1_thiosulphate_grown,
+    thioalkalimicrobium_aerophilum_al_3_dsm_13739_and_tm_sibericum_al_7_dsm_13740,
+    thioalkalispira_microaerophila_alen_1_dsm_14786, thioalkalivibrio_jannaschi, thioalkalivibrio_nitratireducens_alen_2_dsm_14787,
+    thioalkalivibrio_versutus_al_2_dsm_13738_tv_nitratus_alj_12_dsm_13741_and_tv_denitrificans_aljd_dsm_13742'
 synonyms:
-- name: ALKALIPHILIC SULPHUR RESPIRING STRAINS MEDIUM
-  source: MediaDive
-  source_id: mediadive.medium:925
-  original_category: imported
-- name: DSM 13531 = ARh1 and DSM 13532 = ARh2 (KSCN grown)
-  source: KOMODO
-  source_id: komodo.medium:925.1
-  original_category: imported
-- name: DSM 13541 = ARh2 (thiosulphate grown)
-  source: KOMODO
-  source_id: komodo.medium:925.2
-  original_category: imported
-- name: DSM 13542 = ARh1 (thiosulphate grown)
-  source: KOMODO
-  source_id: komodo.medium:925.3
-  original_category: imported
-- name: DSM 13533 = ALRh
-  source: KOMODO
-  source_id: komodo.medium:925.4
-  original_category: imported
-- name: Thioalkalivibrio versutus AL 2 = DSM 13738, Tv.nitratus ALJ 12 = DSM 13741,
-    and Tv.denitrificans ALJD = DSM 13742
-  source: KOMODO
-  source_id: komodo.medium:925.5
-  original_category: imported
-- name: Thioalkalimicrobium aerophilum AL 3 = DSM 13739 and Tm.sibericum AL 7 = DSM
-    13740
-  source: KOMODO
-  source_id: komodo.medium:925.6
-  original_category: imported
-- name: Thioalkalispira microaerophila, ALEN 1 = DSM 14786
-  source: KOMODO
-  source_id: komodo.medium:925.7
-  original_category: imported
-- name: Thioalkalivibrio nitratireducens ALEN 2 = DSM 14787
-  source: KOMODO
-  source_id: komodo.medium:925.8
-  original_category: imported
-- name: ALKALIPHILIC SULPHUR RESPIRING STRAINS MEDIUM
+- name: alkaliphilic_sulphur_respiring_strains_medium
   source: KOMODO
   source_id: komodo.medium:925
-  original_category: imported
+  original_category: bacterial
+- name: alkaliphilic_sulphur_respiring_strains_medium
+  source: MediaDive
+  source_id: mediadive.medium:925
+  original_category: bacterial
+- name: dsm_13531_arh1_and_dsm_13532_arh2_kscn_grown
+  source: KOMODO
+  source_id: komodo.medium:925.1
+  original_category: bacterial
+- name: dsm_13533_alrh
+  source: KOMODO
+  source_id: komodo.medium:925.4
+  original_category: bacterial
+- name: dsm_13541_arh2_thiosulphate_grown
+  source: KOMODO
+  source_id: komodo.medium:925.2
+  original_category: bacterial
+- name: dsm_13542_arh1_thiosulphate_grown
+  source: KOMODO
+  source_id: komodo.medium:925.3
+  original_category: bacterial
+- name: thioalkalimicrobium_aerophilum_al_3_dsm_13739_and_tm_sibericum_al_7_dsm_13740
+  source: KOMODO
+  source_id: komodo.medium:925.6
+  original_category: bacterial
+- name: thioalkalispira_microaerophila_alen_1_dsm_14786
+  source: KOMODO
+  source_id: komodo.medium:925.7
+  original_category: bacterial
+- name: thioalkalivibrio_nitratireducens_alen_2_dsm_14787
+  source: KOMODO
+  source_id: komodo.medium:925.8
+  original_category: bacterial
+- name: thioalkalivibrio_versutus_al_2_dsm_13738_tv_nitratus_alj_12_dsm_13741_and_tv_denitrificans_aljd_dsm_13742
+  source: KOMODO
+  source_id: komodo.medium:925.5
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1272_THIOALKALIVIBRIO_JANNASCHI
-- DSMZ_925_ALKALIPHILIC_SULPHUR_RESPIRING_STRAINS_MEDIUM
 - KOMODO_1272_THIOALKALIVIBRIO_JANNASCHI
-- KOMODO_925-1_DSM_13531_ARh1_and_DSM_13532_ARh2_KSCN_grown
-- KOMODO_925-2_DSM_13541_ARh2_thiosulphate_grown
-- KOMODO_925-3_DSM_13542_ARh1_thiosulphate_grown
-- KOMODO_925-4_DSM_13533_ALRh
-- KOMODO_925-5_Thioalkalivibrio_versutus_AL_2_DSM_13738_Tv.nitratus_ALJ_12_DSM_13741_and_Tv.den
-- KOMODO_925-6_Thioalkalimicrobium_aerophilum_AL_3_DSM_13739_and_Tm.sibericum_AL_7_DSM_13740
-- KOMODO_925-7_Thioalkalispira_microaerophila_ALEN_1_DSM_14786
-- KOMODO_925-8_Thioalkalivibrio_nitratireducens_ALEN_2_DSM_14787
 - KOMODO_925_ALKALIPHILIC_SULPHUR_RESPIRING_STRAINS_MEDIUM
+- alkaliphilic_sulphur_respiring_strains_medium
+- dsm_13531_arh1_and_dsm_13532_arh2_kscn_grown
+- dsm_13533_alrh
+- dsm_13541_arh2_thiosulphate_grown
+- dsm_13542_arh1_thiosulphate_grown
+- thioalkalimicrobium_aerophilum_al_3_dsm_13739_and_tm_sibericum_al_7_dsm_13740
+- thioalkalispira_microaerophila_alen_1_dsm_14786
+- thioalkalivibrio_jannaschi
+- thioalkalivibrio_nitratireducens_alen_2_dsm_14787
+- thioalkalivibrio_versutus_al_2_dsm_13738_tv_nitratus_alj_12_dsm_13741_and_tv_denitrificans_aljd_dsm_13742
 merge_fingerprint: 2d272f120d0e3317d68c830ac6cff9bb25c3656971aeeabb89cfb0fce8730e68

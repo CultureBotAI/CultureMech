@@ -1,255 +1,291 @@
-name: Sulfurimonas JS Medium
-original_name: Sulfurimonas JS Medium
-category: imported
-medium_type: COMPLEX
+id: CultureMech:002291
+name: sulfurimonas_js_medium
+original_name: SULFURIMONAS JS MEDIUM
+category: bacterial
+medium_type: DEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J1118
   term:
-    id: CHEBI:63036
-    label: KH2PO4
+    id: mediadive.medium:J1118
+    label: SULFURIMONAS JS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1118'
+ingredients:
 - preferred_term: NH4NO3
   concentration:
-    value: '0.1'
+    value: '0.0976562'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:63038
     label: ''
-- preferred_term: PIPES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: NH4NO3
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
   concentration:
-    value: '15.05'
+    value: '0.00976562'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: Fe(III)-EDTA
+  term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+  concentration:
+    value: '0.00244141'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000348
+    label: Fe(III)-EDTA
+- preferred_term: PIPES
   term:
     id: CHEBI:39033
     label: PIPES
-- preferred_term: Fe(III)・EDTA
   concentration:
-    value: '2.5'
+    value: '14.6973'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Vitamin mixture(see below)
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-- preferred_term: Metal mixture (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Artificial seawater (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000276
+    label: PIPES
+- preferred_term: NaHCO3
   term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 8% NaHCO3 solution
+    id: CHEBI:32139
+    label: NaHCO3
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 1 M Na2S2O3 solution
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: Na2S2O3
+  term:
+    id: CHEBI:59168
+    label: Na2S2O3
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000321
+    label: Na2S2O3
+- preferred_term: Vitamin B12
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0011'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: Biotin
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:15956
-    label: biotin
-- preferred_term: Thiamine・HCl
+    label: Biotin
   concentration:
-    value: '200'
+    value: '0.001'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-- preferred_term: Vitamin B12
-  concentration:
-    value: '1.1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+- preferred_term: Thiamine HCl
   term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: Distilled water
+    id: CHEBI:49105
+    label: Thiamine HCl
   concentration:
-    value: '1'
+    value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
+- preferred_term: Na2-EDTA
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: CoCl2・6H2O
-  concentration:
-    value: '0.6'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: ZnSO4・7H2O
-  concentration:
-    value: '5.75'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: CuSO4・5H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: (NH4)Mo7O24・4H2O
-  concentration:
-    value: '0.27'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: MnCl2・6H2O
-  concentration:
-    value: '4.55'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: EDTA・2Na
+    id: CHEBI:64734
+    label: Na2-EDTA
   concentration:
     value: '0.372'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
+- preferred_term: CuSO4 x 5 H2O
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
   concentration:
-    value: '7'
+    value: '0.00025'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.00575'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+- preferred_term: MnCl2 x 6 H2O
+  concentration:
+    value: '0.00455'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.0006'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '0.00027'
+    unit: G_PER_L
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '26.3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: CaCl2 x 2 H2O
   term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
   concentration:
     value: '1.54'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: MgCl2・6H2O
-  concentration:
-    value: '5.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: H3BO3
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: KCl
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: SrCl2・6H2O
-  concentration:
-    value: '17'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32030
-    label: potassium bromide
-- preferred_term: KHCO3
-  concentration:
-    value: '0.24'
-    unit: G_PER_L
-  notes: 'Role: Buffer, Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:81862
-    label: potassium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
+    label: KBr
 - preferred_term: KF
+  term:
+    id: CHEBI:73605
+    label: KF
   concentration:
     value: '0.004'
     unit: G_PER_L
-  notes: 'Role: Mineral source'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000673
+    label: KF
+- preferred_term: KCl
   term:
-    id: CHEBI:73605
-    label: Lys-Phe
-media_term:
-  preferred_term: TOGO Medium M1196
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: H3BO3
   term:
-    id: TOGO:M1196
-    label: Sulfurimonas JS Medium
-notes: 'Source: https://togomedium.org/medium/M1196
-
-  Original source: JCM - JCM_M1118
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1118'
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: KHCO3
+  term:
+    id: CHEBI:81862
+    label: KHCO3
+  concentration:
+    value: '0.24'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000433
+    label: KHCO3
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.017'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2 x 6 H2O
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components, adjust pH to 6.5 with NaOH, then distribute the medium
+    into culture vessels (e.g., 50 ml per 120 ml serum bottles), seal with butyl rubber
+    stoppers and autoclave at 110C for 5 min. After cooling, add per liter the following
+    solutions (filter-sterilized):'
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Artificial seawater can be replaced with natural seawater. In this
+    case, filtrate seawater (pore size, 02 ï¿½m) and boil. After cooling, filtrate
+    again (pore size, 0.45 ï¿½m).
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.104238Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1196'
-- timestamp: '2026-01-28T19:48:20.660569Z'
+- timestamp: '2026-01-26T17:53:18.692417Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1118'
+- timestamp: '2026-01-28T19:48:30.485504Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:46.459348'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaOH'
-merge_fingerprint: 9c8caa541f1781661e6933988b96e8ca7c872a2798d3b63158800afff77e913a
+- timestamp: '2026-03-13T06:19:12.043832Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002291'
+- timestamp: '2026-03-17T06:30:30.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:24.948527+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SULFURIMONAS JS MEDIUM" to "sulfurimonas_js_medium"
+    for consistent matching
+merge_fingerprint: c34a12dd11e916f4fc627acc696ab8534b1ab6be96d621d09227d42c98cc385d
 merged_from:
-- TOGO_M1196_Sulfurimonas_JS_Medium
+- sulfurimonas_js_medium

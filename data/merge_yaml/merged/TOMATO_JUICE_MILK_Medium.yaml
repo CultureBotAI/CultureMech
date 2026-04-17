@@ -1,6 +1,7 @@
-name: TOMATO JUICE MILK Medium
+id: CultureMech:001453
+name: tomato_juice_milk_medium
 original_name: TOMATO JUICE MILK Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -38,6 +39,15 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 353'
+- timestamp: '2026-03-13T06:19:04.337798Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001453'
+- timestamp: '2026-03-17T19:45:16.348178+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TOMATO JUICE MILK Medium" to "tomato_juice_milk_medium"
+    for consistent matching
 merge_fingerprint: 1a4580aabc9d798347ca5aba5db05b004ec37edb97b5a3a601b9866feb200d05
 merged_from:
-- DSMZ_353_TOMATO_JUICE_MILK_Medium
+- tomato_juice_milk_medium

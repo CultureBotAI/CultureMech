@@ -1,15 +1,17 @@
-name: HELIOBACTERIUM CHLORUM MEDIUM
-original_name: HELIOBACTERIUM CHLORUM MEDIUM
-category: imported
+id: CultureMech:005092
+name: heliobacterium_chlorum_medium
+original_name: HELIOBACTERIUM CHLORUM medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
 media_term:
-  preferred_term: DSMZ Medium 370
+  preferred_term: KOMODO Medium 370
   term:
-    id: mediadive.medium:370
-    label: HELIOBACTERIUM CHLORUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium370.pdf'
+    id: komodo.medium:370
+    label: HELIOBACTERIUM CHLORUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 370 | DSMZ Medium: 370 (mediadive.medium:370)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -36,43 +44,40 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0 .
-- step_number: 2
-  action: HEAT
-  description: "Boil the medium for few minutes under nitrogen gas. Add sodium ascorbate\
-    \ (0.5 g) and\r\ncontinue to bubble with nitrogen gas."
-- step_number: 3
-  action: ADJUST_PH
-  description: Adjust pH to 6.8.
-- step_number: 4
-  action: MIX
-  description: Fill immediately about 10 ml medium in 15 mL hungate tubes (with rubber
-    septum).
-- step_number: 5
-  action: AUTOCLAVE
-  description: Autoclave at 121 °C for 15 min.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001044
+    label: Sodium ascorbate
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.922475Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 370'
-- timestamp: '2026-02-19T08:26:46.983238+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 370'
+- timestamp: '2026-02-03T11:19:10.576470'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 370
+- timestamp: '2026-03-13T06:19:30.045207Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005092'
+- timestamp: '2026-03-17T06:30:28.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:45.722041+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HELIOBACTERIUM CHLORUM medium" to "heliobacterium_chlorum_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:22.647674+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_370_HELIOBACTERIUM_CHLORUM_MEDIUM, KOMODO_370_HELIOBACTERIUM_CHLORUM_medium'
-synonyms:
-- name: HELIOBACTERIUM CHLORUM medium
-  source: KOMODO
-  source_id: komodo.medium:370
-  original_category: imported
+  notes: 'Sources: KOMODO_370_HELIOBACTERIUM_CHLORUM_medium, heliobacterium_chlorum_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_370_HELIOBACTERIUM_CHLORUM_MEDIUM
 - KOMODO_370_HELIOBACTERIUM_CHLORUM_medium
+- heliobacterium_chlorum_medium
 merge_fingerprint: 05c4645e96bf2d2b1255715ef7163bff1fd0103e932aa961c11c3746a4d6a96b

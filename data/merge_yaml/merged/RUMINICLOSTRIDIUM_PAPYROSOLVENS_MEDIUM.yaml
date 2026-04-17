@@ -1,6 +1,7 @@
-name: RUMINICLOSTRIDIUM PAPYROSOLVENS MEDIUM
+id: CultureMech:001386
+name: ruminiclostridium_papyrosolvens_medium
 original_name: RUMINICLOSTRIDIUM PAPYROSOLVENS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Yeast extract
   concentration:
     value: '0.6'
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '1.65'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -44,6 +51,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -51,6 +61,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Cellulose
   term:
     id: CHEBI:18246
@@ -59,6 +72,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: Optional ingredient (Lens tissue or MN 301)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000114
+    label: Cellulose
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -66,6 +82,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -73,6 +92,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -80,6 +102,9 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -87,6 +112,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -107,24 +135,37 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 289'
-- timestamp: '2026-02-19T08:26:45.765517+00:00'
+- timestamp: '2026-03-13T06:19:03.630313Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001386'
+- timestamp: '2026-03-17T06:30:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:15.585334+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RUMINICLOSTRIDIUM PAPYROSOLVENS MEDIUM" to "ruminiclostridium_papyrosolvens_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:58.641379+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_289_RUMINICLOSTRIDIUM_PAPYROSOLVENS_MEDIUM, KOMODO_289-replace-Cellobiose-with-Cellulose_CLOSTRIDIUM_PAPYROSOLVENS_medium_replace_Cellobiose_with_Cellulose,
-    KOMODO_289_CLOSTRIDIUM_PAPYROSOLVENS_medium'
+  notes: 'Sources: clostridium_papyrosolvens_medium, clostridium_papyrosolvens_medium_replace_cellobiose_with_cellulose,
+    ruminiclostridium_papyrosolvens_medium'
 synonyms:
-- name: CLOSTRIDIUM PAPYROSOLVENS medium_replace_Cellobiose_with_Cellulose
-  source: KOMODO
-  source_id: komodo.medium:289_replace_Cellobiose_with_Cellulose
-  original_category: imported
-- name: CLOSTRIDIUM PAPYROSOLVENS medium
+- name: clostridium_papyrosolvens_medium
   source: KOMODO
   source_id: komodo.medium:289
-  original_category: imported
+  original_category: bacterial
+- name: clostridium_papyrosolvens_medium_replace_cellobiose_with_cellulose
+  source: KOMODO
+  source_id: komodo.medium:289_replace_Cellobiose_with_Cellulose
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_289_RUMINICLOSTRIDIUM_PAPYROSOLVENS_MEDIUM
-- KOMODO_289-replace-Cellobiose-with-Cellulose_CLOSTRIDIUM_PAPYROSOLVENS_medium_replace_Cellobiose_with_Cellulose
-- KOMODO_289_CLOSTRIDIUM_PAPYROSOLVENS_medium
+- clostridium_papyrosolvens_medium
+- clostridium_papyrosolvens_medium_replace_cellobiose_with_cellulose
+- ruminiclostridium_papyrosolvens_medium
 merge_fingerprint: 8ff09563b29ab38cc84596f67866eb9872388ff19e4ce032c7b3cde26dbb0a29

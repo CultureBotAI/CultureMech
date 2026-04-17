@@ -1,8 +1,9 @@
-name: 1/2 YTSS MEDIUM
+id: CultureMech:002156
+name: 1_2_ytss_medium
 original_name: 1/2 YTSS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 974
@@ -31,6 +32,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -45,18 +49,27 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 974'
-- timestamp: '2026-02-19T08:26:57.828600+00:00'
+- timestamp: '2026-03-13T06:19:10.811082Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002156'
+- timestamp: '2026-03-17T06:30:06.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:23.531845+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "1/2 YTSS MEDIUM" to "1_2_ytss_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:10.510705+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_974_1_2_YTSS_MEDIUM, KOMODO_974_1_2_YTSS_medium'
-synonyms:
-- name: 1/2 YTSS medium
-  source: KOMODO
-  source_id: komodo.medium:974
-  original_category: imported
+  notes: 'Sources: 1_2_ytss_medium, KOMODO_974_1_2_YTSS_medium'
+kg_microbe_match: mediadive.medium:12
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_974_1_2_YTSS_MEDIUM
+- 1_2_ytss_medium
 - KOMODO_974_1_2_YTSS_medium
 merge_fingerprint: b0a9567b5e7c0be8562ea6be2c7ee2592b821b80f7ff5ea312a6f27c48ac6ce3

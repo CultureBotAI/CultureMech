@@ -1,6 +1,7 @@
-name: CY/H LIQUID MEDIUM FOR MYXOBACTERIA
+id: CultureMech:001020
+name: cy_h_liquid_medium_for_myxobacteria
 original_name: CY/H LIQUID MEDIUM FOR MYXOBACTERIA
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Soy flour
   concentration:
     value: '1'
@@ -38,6 +42,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -45,6 +52,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -52,6 +62,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: HEPES
   term:
     id: CHEBI:46756
@@ -59,6 +72,9 @@ ingredients:
   concentration:
     value: '11.9'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: HEPES
 - preferred_term: Fe(III)-EDTA
   term:
     id: CHEBI:30729
@@ -66,6 +82,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000348
+    label: Fe(III)-EDTA
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -73,6 +92,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -86,6 +108,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1542'
+- timestamp: '2026-03-13T06:19:00.539803Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001020'
+- timestamp: '2026-03-17T06:30:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:12.166731+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CY/H LIQUID MEDIUM FOR MYXOBACTERIA" to "cy_h_liquid_medium_for_myxobacteria"
+    for consistent matching
 merge_fingerprint: 28a339f74f420ff70ad75874210da773f8be39241c83ae58f85f090846601f48
 merged_from:
-- DSMZ_1542_CY_H_LIQUID_MEDIUM_FOR_MYXOBACTERIA
+- cy_h_liquid_medium_for_myxobacteria

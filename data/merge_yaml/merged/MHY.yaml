@@ -1,6 +1,7 @@
-name: MHY
+id: CultureMech:000366
+name: mhy
 original_name: MHY
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
     id: CHEBI:86159
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000586
+    label: Ca(NO3)2 x 4 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2CO3
   term:
     id: CHEBI:131526
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.345'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000596
+    label: K2CO3
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.097'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -67,6 +89,9 @@ ingredients:
   concentration:
     value: '0.041'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -74,6 +99,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -81,6 +109,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: Na2 MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -88,6 +119,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2 MoO4 x 2 H2O
 - preferred_term: Thiamine hydrochloride
   term:
     id: CHEBI:49105
@@ -95,10 +129,16 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine hydrochloride
 - preferred_term: Cyanocobalamine
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001039
+    label: Cyanocobalamine
 - preferred_term: Soil
   concentration:
     value: variable
@@ -160,6 +200,18 @@ curation_history:
   date: '2026-02-03T11:20:17.125415'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+- timestamp: '2026-03-13T06:18:54.791630Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000366'
+- timestamp: '2026-03-17T06:30:27.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.797056+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MHY" to "mhy" for consistent matching
 merge_fingerprint: f8a395fbf85d40ca0634d61ee354b79223f01c05e925ca1fce4da22a3e4057f5
 merged_from:
-- CCAP_C55_MHY
+- mhy

@@ -1,6 +1,7 @@
-name: PE
+id: CultureMech:000387
+name: pe
 original_name: PE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -25,6 +26,9 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -32,6 +36,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -76,6 +83,18 @@ curation_history:
   date: '2026-02-03T11:20:17.178228'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+- timestamp: '2026-03-13T06:18:54.892983Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000387'
+- timestamp: '2026-03-17T06:30:32.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.903121+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PE" to "pe" for consistent matching
 merge_fingerprint: df5787c3b8009ef980c89e55160d6fc91a1683903fe9a6033a1a2d2b04396675
 merged_from:
-- CCAP_C74_PE
+- pe

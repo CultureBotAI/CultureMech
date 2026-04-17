@@ -1,15 +1,17 @@
-name: SYNTROPHOCOCCUS SUCROMUTANS MEDIUM
-original_name: SYNTROPHOCOCCUS SUCROMUTANS MEDIUM
-category: imported
+id: CultureMech:005034
+name: syntrophococcus_sucromutans_medium
+original_name: SYNTROPHOCOCCUS SUCROMUTANS medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.4-6.8
 media_term:
-  preferred_term: DSMZ Medium 337
+  preferred_term: KOMODO Medium 337
   term:
-    id: mediadive.medium:337
-    label: SYNTROPHOCOCCUS SUCROMUTANS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium337.pdf'
+    id: komodo.medium:337
+    label: SYNTROPHOCOCCUS SUCROMUTANS medium
+notes: 'Source: KOMODO ModelSEED | ID: 337 | DSMZ Medium: 337 (mediadive.medium:337)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:
@@ -22,6 +24,9 @@ ingredients:
   concentration:
     value: '0.651466'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Na-formate
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000542888'
@@ -33,6 +38,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Lactose
   term:
     id: CHEBI:17716
@@ -40,6 +48,9 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000339
+    label: Lactose
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -47,6 +58,9 @@ ingredients:
   concentration:
     value: '24'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -54,6 +68,9 @@ ingredients:
   concentration:
     value: '78'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -61,6 +78,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -68,6 +88,9 @@ ingredients:
   concentration:
     value: '6.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -75,6 +98,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -82,6 +108,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -89,6 +118,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -96,6 +128,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -103,6 +138,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -110,6 +148,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -117,6 +158,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -124,6 +168,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -131,6 +178,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -138,6 +188,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -145,6 +198,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -152,6 +208,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -159,6 +218,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -166,6 +228,9 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: D-(+)-biotin
   term:
     id: CHEBI:15956
@@ -173,6 +238,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D-(+)-biotin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -180,6 +248,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -187,6 +258,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -194,6 +268,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -201,68 +278,54 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
-    to make it anoxic. Adjust pH to 6.4 and dispense under same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials and autoclave. Solution B is autoclaved
-    separately under 80% N2 and 20% CO2 gas atmosphere. Solution C is prepared under
-    100% N2 gas atmosphere and sterilized by filtration. Solutions D, E and F are
-    autoclaved separately under 100% N2 gas. To complete the medium add appropriate
-    amounts of solutions B - F to the sterile solution A in the sequence as indicated.
-    Adjust pH of the complete medium to 6.4 - 6.8, if necessary.
-- step_number: 2
-  action: MIX
-  description: 'Note: Rumen fluid may be replaced by supplementing the medium with
-    200 µg/ml of crude egg yolk phosphatidylcholine (SIGMA, type IX-E).'
-- step_number: 3
-  action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
-- step_number: 4
-  action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.845305Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 337'
-- timestamp: '2026-02-19T08:26:46.671721+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 337'
+- timestamp: '2026-02-03T11:18:54.812882'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 337
+- timestamp: '2026-03-13T06:19:29.730416Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005034'
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:45.344851+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SYNTROPHOCOCCUS SUCROMUTANS medium" to "syntrophococcus_sucromutans_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:22.314864+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_337_SYNTROPHOCOCCUS_SUCROMUTANS_MEDIUM, KOMODO_337-replace-Trypticase
-    (BBL)-with-Casitone_SYNTROPHOCOCCUS_SUCROMUTANS_medium_replace_Trypticase_BBL_with_Casitone,
-    KOMODO_337-replace-rumen fluid-with-crude egg yolk phosphatidylcholine (Sigma,
-    type IX-E)_SYNTROPHOCOCCUS_SUCROMUTANS_medium_replace_rumen_fluid_with_crude_egg_yolk_phosp,
-    KOMODO_337_SYNTROPHOCOCCUS_SUCROMUTANS_medium'
+  notes: 'Sources: KOMODO_337_SYNTROPHOCOCCUS_SUCROMUTANS_medium, syntrophococcus_sucromutans_medium,
+    syntrophococcus_sucromutans_medium_replace_rumen_fluid_with_crude_egg_yolk_phosphatidylcholine_sigma_type_ix_e,
+    syntrophococcus_sucromutans_medium_replace_trypticase_bbl_with_casitone'
 synonyms:
-- name: SYNTROPHOCOCCUS SUCROMUTANS medium_replace_Trypticase (BBL)_with_Casitone
-  source: KOMODO
-  source_id: komodo.medium:337_replace_Trypticase (BBL)_with_Casitone
-  original_category: imported
-- name: SYNTROPHOCOCCUS SUCROMUTANS medium_replace_rumen fluid_with_crude egg yolk
-    phosphatidylcholine (Sigma, type IX-E)
+- name: syntrophococcus_sucromutans_medium_replace_rumen_fluid_with_crude_egg_yolk_phosphatidylcholine_sigma_type_ix_e
   source: KOMODO
   source_id: komodo.medium:337_replace_rumen fluid_with_crude egg yolk phosphatidylcholine
     (Sigma, type IX-E)
-  original_category: imported
-- name: SYNTROPHOCOCCUS SUCROMUTANS medium
+  original_category: bacterial
+- name: syntrophococcus_sucromutans_medium_replace_trypticase_bbl_with_casitone
   source: KOMODO
-  source_id: komodo.medium:337
-  original_category: imported
+  source_id: komodo.medium:337_replace_Trypticase (BBL)_with_Casitone
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_337_SYNTROPHOCOCCUS_SUCROMUTANS_MEDIUM
-- KOMODO_337-replace-Trypticase (BBL)-with-Casitone_SYNTROPHOCOCCUS_SUCROMUTANS_medium_replace_Trypticase_BBL_with_Casitone
-- KOMODO_337-replace-rumen fluid-with-crude egg yolk phosphatidylcholine (Sigma, type
-  IX-E)_SYNTROPHOCOCCUS_SUCROMUTANS_medium_replace_rumen_fluid_with_crude_egg_yolk_phosp
 - KOMODO_337_SYNTROPHOCOCCUS_SUCROMUTANS_medium
+- syntrophococcus_sucromutans_medium
+- syntrophococcus_sucromutans_medium_replace_rumen_fluid_with_crude_egg_yolk_phosphatidylcholine_sigma_type_ix_e
+- syntrophococcus_sucromutans_medium_replace_trypticase_bbl_with_casitone
 merge_fingerprint: d45d9f9ef7ab90151dfb4bc85f9ed288af721f55ebb496f1a8adae6360f05f2e

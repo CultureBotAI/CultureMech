@@ -1,6 +1,7 @@
-name: VERRUCOMICROBIA MEDIUM
+id: CultureMech:000961
+name: verrucomicrobia_medium
 original_name: VERRUCOMICROBIA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: MgSO4 x 6 H2O
   term:
     id: CHEBI:32599
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 6 H2O
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: Li2B4O7
   concentration:
     value: '0.01'
@@ -64,6 +83,9 @@ ingredients:
   concentration:
     value: '1.54'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Na-EDTA
   term:
     id: CHEBI:64734
@@ -71,6 +93,9 @@ ingredients:
   concentration:
     value: '2.06'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na-EDTA
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -78,6 +103,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '0.2'
@@ -85,10 +113,16 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000429
+    label: Fe(NH4)2(SO4)2 x 6 H2O
 - preferred_term: Na2SeO4 x 10 H2O
   concentration:
     value: '0.44'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000700
+    label: Na2SeO4 x 10 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -96,6 +130,9 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -103,6 +140,9 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: Na2MoO4
   term:
     id: CHEBI:75215
@@ -110,6 +150,9 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4
 - preferred_term: Na2WO4
   term:
     id: CHEBI:63940
@@ -117,6 +160,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000240
+    label: Na2WO4
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -124,6 +170,9 @@ ingredients:
   concentration:
     value: '0.54'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: AlCl3
   term:
     id: CHEBI:30114
@@ -131,6 +180,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000292
+    label: AlCl3
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -138,6 +190,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -145,6 +200,9 @@ ingredients:
   concentration:
     value: '0.11'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CuSO4
   term:
     id: CHEBI:23414
@@ -152,10 +210,10 @@ ingredients:
   concentration:
     value: '0.21'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: CuSO4
 - preferred_term: MnCl2
-  term:
-    id: CHEBI:7773015
-    label: MnCl2
   concentration:
     value: '0.19'
     unit: G_PER_L
@@ -191,6 +249,24 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 0b43617e6d438a6e893e8491a9b5f4fd82ebef1b9c1f62b02ba2432e7db79593
+- timestamp: '2026-02-06T05:10:18.299500Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:59.940891Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000961'
+- timestamp: '2026-03-17T06:29:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.508657+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "VERRUCOMICROBIA MEDIUM" to "verrucomicrobia_medium"
+    for consistent matching
+merge_fingerprint: dad7c563a299057d480d7d60438442a47fda9deacb89d1b440a1ade40ccd30b0
 merged_from:
-- DSMZ_1493_VERRUCOMICROBIA_MEDIUM
+- verrucomicrobia_medium

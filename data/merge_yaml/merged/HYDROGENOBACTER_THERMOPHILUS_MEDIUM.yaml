@@ -1,6 +1,7 @@
-name: Hydrogenobacter Thermophilus Medium
+id: CultureMech:008001
+name: hydrogenobacter_thermophilus_medium
 original_name: Hydrogenobacter Thermophilus Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -28,6 +35,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '1.5'
@@ -37,12 +47,18 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: CaCl2
   concentration:
     value: '10'
@@ -52,6 +68,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: Na2HPO4
   concentration:
     value: '4.5'
@@ -61,6 +80,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: NH4NO3
   concentration:
     value: '1'
@@ -70,16 +92,18 @@ ingredients:
   term:
     id: CHEBI:63038
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: NH4NO3
 - preferred_term: NiSO4・7H2O
   concentration:
     value: '0.06'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
-- preferred_term: Trace element solution (see Medium [M120])
-  concentration:
-    value: '2'
-    unit: G_PER_L
+  term:
+    id: CHEBI:53001
+    label: ''
 media_term:
   preferred_term: TOGO Medium M145
   term:
@@ -101,6 +125,35 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 0b48bb0d0b1a0127e6057f2938b9125203e19048a4a574d29108ea6d37bcc83a
+- timestamp: '2026-03-09T08:04:35.143006+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:52.919675Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008001'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.904728'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:11.408012+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Hydrogenobacter Thermophilus Medium" to "hydrogenobacter_thermophilus_medium"
+    for consistent matching
+solutions:
+- preferred_term: Trace element solution (see Medium [M120])
+  composition: []
+  notes: Cross-reference to Medium M120
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 0b2fabfc307f38697f7759d580fedbec226e04024fd12b4b7aa4bcfc74e1d269
 merged_from:
-- TOGO_M145_Hydrogenobacter_Thermophilus_Medium
+- hydrogenobacter_thermophilus_medium

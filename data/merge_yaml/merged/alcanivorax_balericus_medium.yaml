@@ -1,0 +1,111 @@
+id: CultureMech:004039
+name: alcanivorax_balericus_medium
+original_name: ALCANIVORAX BALERICUS medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 1289
+  term:
+    id: komodo.medium:1289
+    label: ALCANIVORAX BALERICUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1289 | DSMZ Medium: 1289 (mediadive.medium:1289)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1289'
+- timestamp: '2026-02-03T11:19:04.467565'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1289
+- timestamp: '2026-03-13T06:19:24.356456Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004039'
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:39.082299+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ALCANIVORAX BALERICUS medium" to "alcanivorax_balericus_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:12.085478+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J23_1_10_NUTRIENT_AGAR_NO._2, JCM_J24_1_100_NUTRIENT_AGAR_NO._2,
+    KOMODO_1289_ALCANIVORAX_BALERICUS_medium, alcanivorax_balericus_medium, na_sphingobacterium_medium,
+    nutrient_agar_no_2, nutrient_agar_with_50_soil_extract_and_5_nacl, volcanobacter_medium'
+kg_microbe_match: mediadive.medium:101
+synonyms:
+- name: 1_10_nutrient_agar_no_2
+  source: MediaDive
+  source_id: mediadive.medium:J23
+  original_category: bacterial
+- name: 1_100_nutrient_agar_no_2
+  source: MediaDive
+  source_id: mediadive.medium:J24
+  original_category: bacterial
+- name: na_sphingobacterium_medium
+  source: MediaDive
+  source_id: mediadive.medium:1364
+  original_category: bacterial
+- name: nutrient_agar_no_2
+  source: MediaDive
+  source_id: mediadive.medium:J22
+  original_category: bacterial
+- name: nutrient_agar_with_50_soil_extract_and_5_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J407
+  original_category: bacterial
+- name: volcanobacter_medium
+  source: MediaDive
+  source_id: mediadive.medium:1345
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- JCM_J23_1_10_NUTRIENT_AGAR_NO._2
+- JCM_J24_1_100_NUTRIENT_AGAR_NO._2
+- KOMODO_1289_ALCANIVORAX_BALERICUS_medium
+- alcanivorax_balericus_medium
+- na_sphingobacterium_medium
+- nutrient_agar_no_2
+- nutrient_agar_with_50_soil_extract_and_5_nacl
+- volcanobacter_medium
+merge_fingerprint: 4352086db8321d484a1a5e498d1c9d492c4bcca89f8f517df881ab41f4f30bb7

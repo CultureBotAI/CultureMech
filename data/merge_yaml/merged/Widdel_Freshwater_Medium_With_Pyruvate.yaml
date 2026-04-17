@@ -1,6 +1,7 @@
-name: Widdel Freshwater Medium With Pyruvate
+id: CultureMech:007853
+name: widdel_freshwater_medium_with_pyruvate
 original_name: Widdel Freshwater Medium With Pyruvate
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -22,12 +26,18 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
@@ -36,6 +46,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -46,6 +59,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -55,12 +71,18 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -70,6 +92,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Na2SO4
   concentration:
     value: '4'
@@ -79,47 +104,17 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: sodium pyruvate solution
-  concentration:
-    value: '7'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-- preferred_term: Trace element solution (see Medium [M296])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin solution (see Medium [M401])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Thiamine solution (see Medium [M401])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution (see Medium [M401])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Selenite--tungstate solution (see Medium [M431])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
-    component'
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M1317
   term:
@@ -146,6 +141,102 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: N2'
-merge_fingerprint: cc9ca1ef45f4368f75c60d754d0518b60e476e3e14da5591f4745c8f47caf893
+- timestamp: '2026-03-09T08:04:32.796718+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:02.100623Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:51.978395Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007853'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.191523'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.420837+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Widdel Freshwater Medium With Pyruvate" to "widdel_freshwater_medium_with_pyruvate"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:39.826149+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1315_Widdel_Freshwater_Medium_With_Lactate, TOGO_M1316_Widdel_Freshwater_Medium_With_Glycerin,
+    TOGO_M1317_Widdel_Freshwater_Medium_With_Pyruvate'
+solutions:
+- preferred_term: sodium pyruvate solution
+  composition: []
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
+- preferred_term: Trace element solution (see Medium [M296])
+  composition: []
+  notes: Cross-reference to Medium M296
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Vitamin solution (see Medium [M401])
+  composition: []
+  notes: Cross-reference to Medium M401
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Thiamine solution (see Medium [M401])
+  composition: []
+  notes: Cross-reference to Medium M401
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Vitamin B12 solution (see Medium [M401])
+  composition: []
+  notes: Cross-reference to Medium M401
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Selenite--tungstate solution (see Medium [M431])
+  composition: []
+  notes: Cross-reference to Medium M431
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
+    component'
+  name: Unknown solution
+synonyms:
+- name: widdel_freshwater_medium_with_lactate
+  source: TOGO
+  source_id: TOGO:M1315
+  original_category: bacterial
+- name: widdel_freshwater_medium_with_glycerin
+  source: TOGO
+  source_id: TOGO:M1316
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
+- TOGO_M1315_Widdel_Freshwater_Medium_With_Lactate
+- TOGO_M1316_Widdel_Freshwater_Medium_With_Glycerin
 - TOGO_M1317_Widdel_Freshwater_Medium_With_Pyruvate
+merge_fingerprint: 5601370f13ab3cf42bc98930b43611e3c6736378154a894de7c79b941711f8c2

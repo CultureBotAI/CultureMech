@@ -1,0 +1,183 @@
+id: CultureMech:001679
+name: tryptone_soya_broth_anaerob
+original_name: TRYPTONE SOYA BROTH (ANAEROB)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: DSMZ Medium 545c
+  term:
+    id: mediadive.medium:545c
+    label: TRYPTONE SOYA BROTH (ANAEROB)
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D(+)-Glucose
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Na-thioglycolate
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except cysteine and thioglycolate), boil medium
+    for 1 minute, then cool to room temperature under 100% N2 gas atmosphere. Add
+    cysteine and thioglycolate, then adjust the pH to 8.0. Dispense medium under the
+    same gas atmosphere in culture vessels and autoclave at 121ºC for <b>15</b> minutes.
+    Check and adjust the pH of the complete medium to 8.0, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.583037Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 545c'
+- timestamp: '2026-03-13T06:19:06.399968Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001679'
+- timestamp: '2026-03-17T06:30:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:18.591752+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TRYPTONE SOYA BROTH (ANAEROB)" to "tryptone_soya_broth_anaerob"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:29.014030+00:00'
+  curator: recipe-merger
+  action: Merged 14 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_545_TRYPTONE_SOYA_BROTH_TSB, KOMODO_545a_DILUTED_TRYPTONE_SOYA_BROTH_TSB,
+    for_dsm_22112, medium_545_modified_for_dsm_13887, medium_545_modified_for_dsm_14656,
+    medium_545_modified_for_dsm_15825, medium_545_modified_for_dsm_17447, medium_545_modified_for_dsm_17566,
+    medium_545_modified_for_dsm_21372, medium_545_modified_for_dsm_21886, medium_545_modified_for_dsm_23581,
+    medium_545_modified_for_dsm_6385, medium_545a_modified_for_dsm_17448, tryptone_soya_broth_anaerob'
+synonyms:
+- name: tryptone_soya_broth_tsb
+  source: KOMODO
+  source_id: komodo.medium:545
+  original_category: bacterial
+- name: diluted_tryptone_soya_broth_tsb
+  source: KOMODO
+  source_id: komodo.medium:545a
+  original_category: bacterial
+- name: for_dsm_22112
+  source: KOMODO
+  source_id: komodo.medium:545.1
+  original_category: bacterial
+- name: medium_545_modified_for_dsm_13887
+  source: KOMODO
+  source_id: komodo.medium:545_13887
+  original_category: bacterial
+- name: medium_545_modified_for_dsm_14656
+  source: KOMODO
+  source_id: komodo.medium:545_14656
+  original_category: bacterial
+- name: medium_545_modified_for_dsm_15825
+  source: KOMODO
+  source_id: komodo.medium:545_15825
+  original_category: bacterial
+- name: medium_545_modified_for_dsm_17447
+  source: KOMODO
+  source_id: komodo.medium:545_17447
+  original_category: bacterial
+- name: medium_545_modified_for_dsm_17566
+  source: KOMODO
+  source_id: komodo.medium:545_17566
+  original_category: bacterial
+- name: medium_545_modified_for_dsm_21372
+  source: KOMODO
+  source_id: komodo.medium:545_21372
+  original_category: bacterial
+- name: medium_545_modified_for_dsm_21886
+  source: KOMODO
+  source_id: komodo.medium:545_21886
+  original_category: bacterial
+- name: medium_545_modified_for_dsm_23581
+  source: KOMODO
+  source_id: komodo.medium:545_23581
+  original_category: bacterial
+- name: medium_545_modified_for_dsm_6385
+  source: KOMODO
+  source_id: komodo.medium:545_6385
+  original_category: bacterial
+- name: medium_545a_modified_for_dsm_17448
+  source: KOMODO
+  source_id: komodo.medium:545a_17448
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_545_TRYPTONE_SOYA_BROTH_TSB
+- KOMODO_545a_DILUTED_TRYPTONE_SOYA_BROTH_TSB
+- for_dsm_22112
+- medium_545_modified_for_dsm_13887
+- medium_545_modified_for_dsm_14656
+- medium_545_modified_for_dsm_15825
+- medium_545_modified_for_dsm_17447
+- medium_545_modified_for_dsm_17566
+- medium_545_modified_for_dsm_21372
+- medium_545_modified_for_dsm_21886
+- medium_545_modified_for_dsm_23581
+- medium_545_modified_for_dsm_6385
+- medium_545a_modified_for_dsm_17448
+- tryptone_soya_broth_anaerob
+merge_fingerprint: 023599b7d1c785dc926ff5d49fd0645c8de238a16af288b1b72c08a9d4c4fbc8

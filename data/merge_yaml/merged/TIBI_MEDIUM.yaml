@@ -1,6 +1,7 @@
-name: TIBI MEDIUM
+id: CultureMech:001362
+name: tibi_medium
 original_name: TIBI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -17,6 +18,9 @@ ingredients:
   concentration:
     value: '150'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Fig
   concentration:
     value: '1'
@@ -32,6 +36,9 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Tap water
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -44,6 +51,18 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 263'
+- timestamp: '2026-03-13T06:19:03.398568Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001362'
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:15.322825+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TIBI MEDIUM" to "tibi_medium" for consistent matching
 merge_fingerprint: ecef465acd0254bf15782c4657eecd0289a3f66cdfcedaac8952a247d7a73103
 merged_from:
-- DSMZ_263_TIBI_MEDIUM
+- tibi_medium

@@ -1,0 +1,359 @@
+id: CultureMech:004654
+name: starch_mineral_salt_agar_stms
+original_name: STARCH - MINERAL salt - AGAR (STMS)
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 252
+  term:
+    id: komodo.medium:252
+    label: STARCH - MINERAL salt - AGAR (STMS)
+notes: 'Source: KOMODO ModelSEED | ID: 252 | DSMZ Medium: 252 (mediadive.medium:252)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '101.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 100.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 252'
+- timestamp: '2026-02-03T11:19:10.004083'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 252
+- timestamp: '2026-03-13T06:19:27.891505Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004654'
+- timestamp: '2026-03-17T06:30:26.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:43.190198+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "STARCH - MINERAL salt - AGAR (STMS)" to "starch_mineral_salt_agar_stms"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:17.744464+00:00'
+  curator: recipe-merger
+  action: Merged 41 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1240_STARCH-MINERAL_SALT-AGAR_10_NACL, KOMODO_252_STARCH_-_MINERAL_salt_-_AGAR_STMS,
+    KOMODO_547_ISP_medium_4, inorganic_salts_starch_agar_isp_4, isp_medium_4, medium_252_modified_for_dsm_41399,
+    medium_252_modified_for_dsm_41400, medium_252_modified_for_dsm_41403, medium_252_modified_for_dsm_41404,
+    medium_252_modified_for_dsm_41405, medium_252_modified_for_dsm_41406, medium_252_modified_for_dsm_41407,
+    medium_252_modified_for_dsm_41408, medium_252_modified_for_dsm_41410, medium_252_modified_for_dsm_41411,
+    medium_252_modified_for_dsm_41412, medium_252_modified_for_dsm_41413, medium_252_modified_for_dsm_41415,
+    medium_252_modified_for_dsm_41416, medium_252_modified_for_dsm_41417, medium_252_modified_for_dsm_41418,
+    medium_252_modified_for_dsm_41419, medium_252_modified_for_dsm_41420, medium_252_modified_for_dsm_41877,
+    medium_252_modified_for_dsm_44410, medium_252_modified_for_dsm_44964, medium_252_modified_for_dsm_45004,
+    medium_252_modified_for_dsm_45007, medium_252_modified_for_dsm_45009, medium_252_modified_for_dsm_45012,
+    medium_252_modified_for_dsm_45015, medium_252_modified_for_dsm_45017, medium_252_modified_for_dsm_45088,
+    medium_252_modified_for_dsm_45210, medium_252_modified_for_dsm_45211, medium_547_modified_for_dsm_44048,
+    medium_547_modified_for_dsm_44681, medium_547_modified_for_dsm_44682, starch_mineral_salt_agar_10_nacl,
+    starch_mineral_salt_agar_stms, starch_mineral_salt_agar_stms_15_nacl'
+synonyms:
+- name: starch_mineral_salt_agar_10_nacl
+  source: KOMODO
+  source_id: komodo.medium:1240
+  original_category: bacterial
+- name: isp_medium_4
+  source: KOMODO
+  source_id: komodo.medium:547
+  original_category: bacterial
+- name: inorganic_salts_starch_agar_isp_4
+  source: MediaDive
+  source_id: mediadive.medium:J58
+  original_category: bacterial
+- name: isp_medium_4
+  source: MediaDive
+  source_id: mediadive.medium:547
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41399
+  source: KOMODO
+  source_id: komodo.medium:252_41399
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41400
+  source: KOMODO
+  source_id: komodo.medium:252_41400
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41403
+  source: KOMODO
+  source_id: komodo.medium:252_41403
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41404
+  source: KOMODO
+  source_id: komodo.medium:252_41404
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41405
+  source: KOMODO
+  source_id: komodo.medium:252_41405
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41406
+  source: KOMODO
+  source_id: komodo.medium:252_41406
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41407
+  source: KOMODO
+  source_id: komodo.medium:252_41407
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41408
+  source: KOMODO
+  source_id: komodo.medium:252_41408
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41410
+  source: KOMODO
+  source_id: komodo.medium:252_41410
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41411
+  source: KOMODO
+  source_id: komodo.medium:252_41411
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41412
+  source: KOMODO
+  source_id: komodo.medium:252_41412
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41413
+  source: KOMODO
+  source_id: komodo.medium:252_41413
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41415
+  source: KOMODO
+  source_id: komodo.medium:252_41415
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41416
+  source: KOMODO
+  source_id: komodo.medium:252_41416
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41417
+  source: KOMODO
+  source_id: komodo.medium:252_41417
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41418
+  source: KOMODO
+  source_id: komodo.medium:252_41418
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41419
+  source: KOMODO
+  source_id: komodo.medium:252_41419
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41420
+  source: KOMODO
+  source_id: komodo.medium:252_41420
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_41877
+  source: KOMODO
+  source_id: komodo.medium:252_41877
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_44410
+  source: KOMODO
+  source_id: komodo.medium:252_44410
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_44964
+  source: KOMODO
+  source_id: komodo.medium:252_44964
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_45004
+  source: KOMODO
+  source_id: komodo.medium:252_45004
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_45007
+  source: KOMODO
+  source_id: komodo.medium:252_45007
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_45009
+  source: KOMODO
+  source_id: komodo.medium:252_45009
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_45012
+  source: KOMODO
+  source_id: komodo.medium:252_45012
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_45015
+  source: KOMODO
+  source_id: komodo.medium:252_45015
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_45017
+  source: KOMODO
+  source_id: komodo.medium:252_45017
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_45088
+  source: KOMODO
+  source_id: komodo.medium:252_45088
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_45210
+  source: KOMODO
+  source_id: komodo.medium:252_45210
+  original_category: bacterial
+- name: medium_252_modified_for_dsm_45211
+  source: KOMODO
+  source_id: komodo.medium:252_45211
+  original_category: bacterial
+- name: medium_547_modified_for_dsm_44048
+  source: KOMODO
+  source_id: komodo.medium:547_44048
+  original_category: bacterial
+- name: medium_547_modified_for_dsm_44681
+  source: KOMODO
+  source_id: komodo.medium:547_44681
+  original_category: bacterial
+- name: medium_547_modified_for_dsm_44682
+  source: KOMODO
+  source_id: komodo.medium:547_44682
+  original_category: bacterial
+- name: starch_mineral_salt_agar_10_nacl
+  source: MediaDive
+  source_id: mediadive.medium:1240
+  original_category: bacterial
+- name: starch_mineral_salt_agar_stms_15_nacl
+  source: MediaDive
+  source_id: mediadive.medium:1241
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_1240_STARCH-MINERAL_SALT-AGAR_10_NACL
+- KOMODO_252_STARCH_-_MINERAL_salt_-_AGAR_STMS
+- KOMODO_547_ISP_medium_4
+- inorganic_salts_starch_agar_isp_4
+- isp_medium_4
+- medium_252_modified_for_dsm_41399
+- medium_252_modified_for_dsm_41400
+- medium_252_modified_for_dsm_41403
+- medium_252_modified_for_dsm_41404
+- medium_252_modified_for_dsm_41405
+- medium_252_modified_for_dsm_41406
+- medium_252_modified_for_dsm_41407
+- medium_252_modified_for_dsm_41408
+- medium_252_modified_for_dsm_41410
+- medium_252_modified_for_dsm_41411
+- medium_252_modified_for_dsm_41412
+- medium_252_modified_for_dsm_41413
+- medium_252_modified_for_dsm_41415
+- medium_252_modified_for_dsm_41416
+- medium_252_modified_for_dsm_41417
+- medium_252_modified_for_dsm_41418
+- medium_252_modified_for_dsm_41419
+- medium_252_modified_for_dsm_41420
+- medium_252_modified_for_dsm_41877
+- medium_252_modified_for_dsm_44410
+- medium_252_modified_for_dsm_44964
+- medium_252_modified_for_dsm_45004
+- medium_252_modified_for_dsm_45007
+- medium_252_modified_for_dsm_45009
+- medium_252_modified_for_dsm_45012
+- medium_252_modified_for_dsm_45015
+- medium_252_modified_for_dsm_45017
+- medium_252_modified_for_dsm_45088
+- medium_252_modified_for_dsm_45210
+- medium_252_modified_for_dsm_45211
+- medium_547_modified_for_dsm_44048
+- medium_547_modified_for_dsm_44681
+- medium_547_modified_for_dsm_44682
+- starch_mineral_salt_agar_10_nacl
+- starch_mineral_salt_agar_stms
+- starch_mineral_salt_agar_stms_15_nacl
+merge_fingerprint: d8ebfa5e95b8104fe9eafba59181d3d5f37d4fd79ef792fbef7a9d8f1296d5a8

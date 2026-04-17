@@ -1,15 +1,17 @@
-name: THERMOANAEROBACTER SULFUROPHILUS MEDIUM
-original_name: THERMOANAEROBACTER SULFUROPHILUS MEDIUM
-category: imported
+id: CultureMech:006558
+name: thermoanaerobacter_sulfurophilus_medium
+original_name: THERMOANAEROBACTER SULFUROPHILUS medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7
+ph_value: 7.0
 media_term:
-  preferred_term: DSMZ Medium 827
+  preferred_term: KOMODO Medium 827
   term:
-    id: mediadive.medium:827
-    label: THERMOANAEROBACTER SULFUROPHILUS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium827.pdf'
+    id: komodo.medium:827
+    label: THERMOANAEROBACTER SULFUROPHILUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 827 | DSMZ Medium: 827 (mediadive.medium:827)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '0.329341'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '0.329341'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.329341'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.329341'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.329341'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000499002'
@@ -57,6 +74,9 @@ ingredients:
   concentration:
     value: '9.98004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000927
+    label: Sulfur
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -64,6 +84,9 @@ ingredients:
   concentration:
     value: '0.998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Yeast extract
   concentration:
     value: '0.499002'
@@ -75,6 +98,9 @@ ingredients:
   concentration:
     value: '4.99002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -82,6 +108,9 @@ ingredients:
   concentration:
     value: '0.499002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -89,6 +118,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -96,6 +128,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -103,6 +138,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -110,6 +148,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -117,6 +158,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -124,6 +168,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -131,6 +178,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -138,6 +188,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -145,6 +198,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -152,6 +208,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -159,6 +218,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -166,6 +228,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -173,6 +238,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -180,6 +248,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -187,6 +258,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
@@ -198,6 +272,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -205,6 +282,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
     id: CHEBI:16494
@@ -212,53 +292,52 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: POUR_PLATES
-  description: Dissolve ingredients except sulfur, carbonate, yeast extract, glucose,
-    vitamins, and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture
-    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials containing already the appropriate amount
-    of sulfur. Heat the medium vials to 90-100°C for 1 hour on each of 3 successive
-    days to sterilize the medium. Add yeast extract, glucose, vitamins (sterilized
-    by filtration), and sulfide from sterile anoxic stock solutions prepared under
-    100% N2 gas and carbonate from a sterile anoxic stock solution prepared under
-    80% N2 and 20% CO2 gas mixture. Prior to use check pH of complete medium and adjust
-    to 6.8 - 7.0, if necessary.
-- step_number: 2
-  action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: (DL)-alpha-Lipoic acid
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.393765Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 827'
-- timestamp: '2026-02-06T05:10:28.664509Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 827'
+- timestamp: '2026-02-03T11:19:06.340328'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 827
+- timestamp: '2026-02-06T05:10:32.348605Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-02-19T08:26:55.120691+00:00'
+- timestamp: '2026-03-13T06:19:41.879917Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006558'
+- timestamp: '2026-03-17T06:30:15.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:59.399506+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMOANAEROBACTER SULFUROPHILUS medium" to "thermoanaerobacter_sulfurophilus_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:32.882560+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_827_THERMOANAEROBACTER_SULFUROPHILUS_MEDIUM, KOMODO_827-1_For_DSM_16547,
-    KOMODO_827_THERMOANAEROBACTER_SULFUROPHILUS_medium'
+  notes: 'Sources: KOMODO_827_THERMOANAEROBACTER_SULFUROPHILUS_medium, for_dsm_16547,
+    thermoanaerobacter_sulfurophilus_medium'
 synonyms:
-- name: For DSM 16547
+- name: for_dsm_16547
   source: KOMODO
   source_id: komodo.medium:827.1
-  original_category: imported
-- name: THERMOANAEROBACTER SULFUROPHILUS medium
-  source: KOMODO
-  source_id: komodo.medium:827
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_827_THERMOANAEROBACTER_SULFUROPHILUS_MEDIUM
-- KOMODO_827-1_For_DSM_16547
 - KOMODO_827_THERMOANAEROBACTER_SULFUROPHILUS_medium
+- for_dsm_16547
+- thermoanaerobacter_sulfurophilus_medium
 merge_fingerprint: 64042f444d2fe858fe45665ef08ec5c6a4d926623bba60a8ff3cf776c8f1e0d1

@@ -1,15 +1,17 @@
-name: SALISAETA LONGA MEDIUM
-original_name: SALISAETA LONGA MEDIUM
-category: imported
+id: CultureMech:003974
+name: salisaeta_longa_medium
+original_name: SALISAETA LONGA medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
-  preferred_term: DSMZ Medium 1221
+  preferred_term: KOMODO Medium 1221
   term:
-    id: mediadive.medium:1221
-    label: SALISAETA LONGA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1221.pdf'
+    id: komodo.medium:1221
+    label: SALISAETA LONGA medium
+notes: 'Source: KOMODO ModelSEED | ID: 1221 | DSMZ Medium: 1221 (mediadive.medium:1221)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2SO4
   term:
     id: CHEBI:32036
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001064
+    label: K2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -50,6 +64,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -57,6 +74,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -65,40 +85,46 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Adjust to pH 7.0. Agar may be added at 15 g/l for solid media. Plates
-    should be sealed during incubation to prevent drying out.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.754775Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1221'
-- timestamp: '2026-01-28T19:48:36.392693Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:41.257051+00:00'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1221'
+- timestamp: '2026-02-03T11:19:09.657121'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1221
+- timestamp: '2026-03-13T06:19:23.786645Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003974'
+- timestamp: '2026-03-17T06:30:25.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:38.403431+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SALISAETA LONGA medium" to "salisaeta_longa_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:17.303979+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1221_SALISAETA_LONGA_MEDIUM, JCM_J225_HALOBACULUM_MEDIUM,
-    KOMODO_1221_SALISAETA_LONGA_medium'
+  notes: 'Sources: KOMODO_1221_SALISAETA_LONGA_medium, halobaculum_medium, salisaeta_longa_medium'
 synonyms:
-- name: HALOBACULUM MEDIUM
+- name: halobaculum_medium
   source: MediaDive
   source_id: mediadive.medium:J225
-  original_category: imported
-- name: SALISAETA LONGA medium
-  source: KOMODO
-  source_id: komodo.medium:1221
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1221_SALISAETA_LONGA_MEDIUM
-- JCM_J225_HALOBACULUM_MEDIUM
 - KOMODO_1221_SALISAETA_LONGA_medium
+- halobaculum_medium
+- salisaeta_longa_medium
 merge_fingerprint: 88b2f0bc4f008e7ef55940681924de115164ffaa51903e074f2b2c3f715421ce

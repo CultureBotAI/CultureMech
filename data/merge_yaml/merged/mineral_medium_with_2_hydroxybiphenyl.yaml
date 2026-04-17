@@ -1,0 +1,737 @@
+id: CultureMech:005567
+name: mineral_medium_with_2_hydroxybiphenyl
+original_name: MINERAL MEDIUM WITH 2-HYDROXYBIPHENYL
+category: bacterial
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 465a
+  term:
+    id: komodo.medium:465a
+    label: MINERAL MEDIUM WITH 2-HYDROXYBIPHENYL
+notes: 'Source: KOMODO ModelSEED | ID: 465a | DSMZ Medium: 465a (mediadive.medium:465a)
+  | Aerobic: No
+
+
+  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+
+  Supplier: Multiple suppliers (BD, Sigma, Neogen)
+
+  Catalog: Multiple (22092 Sigma, 211825 BD)
+
+  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+ingredients:
+- preferred_term: '[1,1′-Biphenyl]-2-ol'
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 2 H2O
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000586
+    label: Ca(NO3)2 x 4 H2O
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '65.0'
+    unit: G_PER_L
+  notes: ' (for solid medium) [Merged 4 duplicates: 15.0, 15.0, 20.0, 15.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Casein peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Pancreatic digest of casein
+  term:
+    id: FOODON:03316428
+    label: tryptone
+  concentration:
+    value: '17.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Pancreatic enzymatic digest of casein providing amino acids and peptides;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: tryptone
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+  - synonym_text: Bacto Tryptone
+    synonym_type: EXACT
+- preferred_term: Peptic digest of soybean meal
+  term:
+    id: FOODON:03303126
+    label: soy peptone
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Peptic digest of soybean meal providing additional peptides and carbohydrates;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: soytone
+    synonym_type: EXACT
+  - synonym_text: soy peptone
+    synonym_type: EXACT
+  - synonym_text: Bacto Soytone
+    synonym_type: EXACT
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: D-glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy
+    Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: dextrose
+    synonym_type: EXACT
+  - synonym_text: D-glucose
+    synonym_type: EXACT
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic
+    Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: Dipotassium phosphate
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+    commercial product
+  synonyms:
+  - synonym_text: K2HPO4
+    synonym_type: EXACT
+  - synonym_text: potassium phosphate dibasic
+    synonym_type: EXACT
+  - synonym_text: dipotassium hydrogen phosphate
+    synonym_type: EXACT
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
+    Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na-pyruvate
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 465a'
+- timestamp: '2026-02-03T11:18:56.461224'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 465
+- timestamp: '2026-03-13T03:08:43.182857Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:34.135369Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005567'
+- timestamp: '2026-03-17T06:29:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:50.327256+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MINERAL MEDIUM WITH 2-HYDROXYBIPHENYL" to "mineral_medium_with_2_hydroxybiphenyl"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:26.930376+00:00'
+  curator: recipe-merger
+  action: Merged 59 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_465_MINERAL_MEDIUM_PH_7.25, KOMODO_465a_MINERAL_MEDIUM_WITH_2-HYDROXYBIPHENYL,
+    KOMODO_465b_MINERAL_MEDIUM_WITH_PCP, KOMODO_465c_MINERAL_MEDIUM_WITH_DICHLOROMETHANE,
+    KOMODO_465d_MINERAL_MEDIUM_WITH_BENZYLCYANIDE_AS_NITROGEN_SOURCE, KOMODO_465e_MINERAL_MEDIUM_WITH_SULFOBENZOIC_ACID,
+    KOMODO_465f_MINERAL_MEDIUM_WITH_3-AMINOPHENOL, KOMODO_465g_MINERAL_MEDIUM_WITH_CYANURIC_ACID_AS_NITROGEN_SOURCE,
+    KOMODO_465h_MINERALMEDIUM_WITH_6-METHYLNICOTINATE, KOMODO_465i_MINERAL_MEDIUM_WITH_ATRAZIN,
+    for_dsm_6813, for_dsm_9675_and_dsm_9685, medium_465_modified_for_dsm_10063, medium_465_modified_for_dsm_10064,
+    medium_465_modified_for_dsm_10065, medium_465_modified_for_dsm_10066, medium_465_modified_for_dsm_10698,
+    medium_465_modified_for_dsm_10699, medium_465_modified_for_dsm_10700, medium_465_modified_for_dsm_11098,
+    medium_465_modified_for_dsm_11199, medium_465_modified_for_dsm_11414, medium_465_modified_for_dsm_11437,
+    medium_465_modified_for_dsm_12578, medium_465_modified_for_dsm_12579, medium_465_modified_for_dsm_12584,
+    medium_465_modified_for_dsm_12585, medium_465_modified_for_dsm_12678, medium_465_modified_for_dsm_12775,
+    medium_465_modified_for_dsm_12877, medium_465_modified_for_dsm_13640, medium_465_modified_for_dsm_13640_replace_taurine_with_ethanedisulfonate,
+    medium_465_modified_for_dsm_14773, medium_465_modified_for_dsm_16812, medium_465_modified_for_dsm_16843,
+    medium_465_modified_for_dsm_16845, medium_465_modified_for_dsm_16851, medium_465_modified_for_dsm_16962,
+    medium_465_modified_for_dsm_16963, medium_465_modified_for_dsm_16964, medium_465_modified_for_dsm_17507,
+    medium_465_modified_for_dsm_17540, medium_465_modified_for_dsm_17854, medium_465_modified_for_dsm_18361,
+    medium_465_modified_for_dsm_19529, medium_465_modified_for_dsm_19550, medium_465_modified_for_dsm_6383,
+    medium_465_modified_for_dsm_6428, medium_465_modified_for_dsm_6428_replace_phenol_with_2_4_6_trichlorophenol,
+    medium_465_modified_for_dsm_6431, medium_465_modified_for_dsm_6432, medium_465_modified_for_dsm_6434,
+    medium_465_modified_for_dsm_6577, medium_465_modified_for_dsm_6708, medium_465_modified_for_dsm_6985,
+    medium_465_modified_for_dsm_6986, medium_465_modified_for_dsm_7005, medium_465b_modified_for_dsm_6824,
+    mineral_medium_with_2_hydroxybiphenyl'
+synonyms:
+- name: mineral_medium_ph_7_25
+  source: KOMODO
+  source_id: komodo.medium:465
+  original_category: bacterial
+- name: mineral_medium_with_pcp
+  source: KOMODO
+  source_id: komodo.medium:465b
+  original_category: bacterial
+- name: mineral_medium_with_dichloromethane
+  source: KOMODO
+  source_id: komodo.medium:465c
+  original_category: bacterial
+- name: mineral_medium_with_benzylcyanide_as_nitrogen_source
+  source: KOMODO
+  source_id: komodo.medium:465d
+  original_category: bacterial
+- name: mineral_medium_with_sulfobenzoic_acid
+  source: KOMODO
+  source_id: komodo.medium:465e
+  original_category: bacterial
+- name: mineral_medium_with_3_aminophenol
+  source: KOMODO
+  source_id: komodo.medium:465f
+  original_category: bacterial
+- name: mineral_medium_with_cyanuric_acid_as_nitrogen_source
+  source: KOMODO
+  source_id: komodo.medium:465g
+  original_category: bacterial
+- name: mineralmedium_with_6_methylnicotinate
+  source: KOMODO
+  source_id: komodo.medium:465h
+  original_category: bacterial
+- name: mineral_medium_with_atrazin
+  source: KOMODO
+  source_id: komodo.medium:465i
+  original_category: bacterial
+- name: for_dsm_6813
+  source: KOMODO
+  source_id: komodo.medium:465c.1
+  original_category: bacterial
+- name: for_dsm_9675_and_dsm_9685
+  source: KOMODO
+  source_id: komodo.medium:465d.1
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_10063
+  source: KOMODO
+  source_id: komodo.medium:465_10063
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_10064
+  source: KOMODO
+  source_id: komodo.medium:465_10064
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_10065
+  source: KOMODO
+  source_id: komodo.medium:465_10065
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_10066
+  source: KOMODO
+  source_id: komodo.medium:465_10066
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_10698
+  source: KOMODO
+  source_id: komodo.medium:465_10698
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_10699
+  source: KOMODO
+  source_id: komodo.medium:465_10699
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_10700
+  source: KOMODO
+  source_id: komodo.medium:465_10700
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_11098
+  source: KOMODO
+  source_id: komodo.medium:465_11098
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_11199
+  source: KOMODO
+  source_id: komodo.medium:465_11199
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_11414
+  source: KOMODO
+  source_id: komodo.medium:465_11414
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_11437
+  source: KOMODO
+  source_id: komodo.medium:465_11437
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_12578
+  source: KOMODO
+  source_id: komodo.medium:465_12578
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_12579
+  source: KOMODO
+  source_id: komodo.medium:465_12579
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_12584
+  source: KOMODO
+  source_id: komodo.medium:465_12584
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_12585
+  source: KOMODO
+  source_id: komodo.medium:465_12585
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_12678
+  source: KOMODO
+  source_id: komodo.medium:465_12678
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_12775
+  source: KOMODO
+  source_id: komodo.medium:465_12775
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_12877
+  source: KOMODO
+  source_id: komodo.medium:465_12877
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_13640
+  source: KOMODO
+  source_id: komodo.medium:465_13640
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_13640_replace_taurine_with_ethanedisulfonate
+  source: KOMODO
+  source_id: komodo.medium:465_13640_replace_taurine_with_ethanedisulfonate
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_14773
+  source: KOMODO
+  source_id: komodo.medium:465_14773
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_16812
+  source: KOMODO
+  source_id: komodo.medium:465_16812
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_16843
+  source: KOMODO
+  source_id: komodo.medium:465_16843
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_16845
+  source: KOMODO
+  source_id: komodo.medium:465_16845
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_16851
+  source: KOMODO
+  source_id: komodo.medium:465_16851
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_16962
+  source: KOMODO
+  source_id: komodo.medium:465_16962
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_16963
+  source: KOMODO
+  source_id: komodo.medium:465_16963
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_16964
+  source: KOMODO
+  source_id: komodo.medium:465_16964
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_17507
+  source: KOMODO
+  source_id: komodo.medium:465_17507
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_17540
+  source: KOMODO
+  source_id: komodo.medium:465_17540
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_17854
+  source: KOMODO
+  source_id: komodo.medium:465_17854
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_18361
+  source: KOMODO
+  source_id: komodo.medium:465_18361
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_19529
+  source: KOMODO
+  source_id: komodo.medium:465_19529
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_19550
+  source: KOMODO
+  source_id: komodo.medium:465_19550
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_6383
+  source: KOMODO
+  source_id: komodo.medium:465_6383
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_6428
+  source: KOMODO
+  source_id: komodo.medium:465_6428
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_6428_replace_phenol_with_2_4_6_trichlorophenol
+  source: KOMODO
+  source_id: komodo.medium:465_6428_replace_phenol_with_2,4,6-trichlorophenol
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_6431
+  source: KOMODO
+  source_id: komodo.medium:465_6431
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_6432
+  source: KOMODO
+  source_id: komodo.medium:465_6432
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_6434
+  source: KOMODO
+  source_id: komodo.medium:465_6434
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_6577
+  source: KOMODO
+  source_id: komodo.medium:465_6577
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_6708
+  source: KOMODO
+  source_id: komodo.medium:465_6708
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_6985
+  source: KOMODO
+  source_id: komodo.medium:465_6985
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_6986
+  source: KOMODO
+  source_id: komodo.medium:465_6986
+  original_category: bacterial
+- name: medium_465_modified_for_dsm_7005
+  source: KOMODO
+  source_id: komodo.medium:465_7005
+  original_category: bacterial
+- name: medium_465b_modified_for_dsm_6824
+  source: KOMODO
+  source_id: komodo.medium:465b_6824
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_465_MINERAL_MEDIUM_PH_7.25
+- KOMODO_465a_MINERAL_MEDIUM_WITH_2-HYDROXYBIPHENYL
+- KOMODO_465b_MINERAL_MEDIUM_WITH_PCP
+- KOMODO_465c_MINERAL_MEDIUM_WITH_DICHLOROMETHANE
+- KOMODO_465d_MINERAL_MEDIUM_WITH_BENZYLCYANIDE_AS_NITROGEN_SOURCE
+- KOMODO_465e_MINERAL_MEDIUM_WITH_SULFOBENZOIC_ACID
+- KOMODO_465f_MINERAL_MEDIUM_WITH_3-AMINOPHENOL
+- KOMODO_465g_MINERAL_MEDIUM_WITH_CYANURIC_ACID_AS_NITROGEN_SOURCE
+- KOMODO_465h_MINERALMEDIUM_WITH_6-METHYLNICOTINATE
+- KOMODO_465i_MINERAL_MEDIUM_WITH_ATRAZIN
+- for_dsm_6813
+- for_dsm_9675_and_dsm_9685
+- medium_465_modified_for_dsm_10063
+- medium_465_modified_for_dsm_10064
+- medium_465_modified_for_dsm_10065
+- medium_465_modified_for_dsm_10066
+- medium_465_modified_for_dsm_10698
+- medium_465_modified_for_dsm_10699
+- medium_465_modified_for_dsm_10700
+- medium_465_modified_for_dsm_11098
+- medium_465_modified_for_dsm_11199
+- medium_465_modified_for_dsm_11414
+- medium_465_modified_for_dsm_11437
+- medium_465_modified_for_dsm_12578
+- medium_465_modified_for_dsm_12579
+- medium_465_modified_for_dsm_12584
+- medium_465_modified_for_dsm_12585
+- medium_465_modified_for_dsm_12678
+- medium_465_modified_for_dsm_12775
+- medium_465_modified_for_dsm_12877
+- medium_465_modified_for_dsm_13640
+- medium_465_modified_for_dsm_13640_replace_taurine_with_ethanedisulfonate
+- medium_465_modified_for_dsm_14773
+- medium_465_modified_for_dsm_16812
+- medium_465_modified_for_dsm_16843
+- medium_465_modified_for_dsm_16845
+- medium_465_modified_for_dsm_16851
+- medium_465_modified_for_dsm_16962
+- medium_465_modified_for_dsm_16963
+- medium_465_modified_for_dsm_16964
+- medium_465_modified_for_dsm_17507
+- medium_465_modified_for_dsm_17540
+- medium_465_modified_for_dsm_17854
+- medium_465_modified_for_dsm_18361
+- medium_465_modified_for_dsm_19529
+- medium_465_modified_for_dsm_19550
+- medium_465_modified_for_dsm_6383
+- medium_465_modified_for_dsm_6428
+- medium_465_modified_for_dsm_6428_replace_phenol_with_2_4_6_trichlorophenol
+- medium_465_modified_for_dsm_6431
+- medium_465_modified_for_dsm_6432
+- medium_465_modified_for_dsm_6434
+- medium_465_modified_for_dsm_6577
+- medium_465_modified_for_dsm_6708
+- medium_465_modified_for_dsm_6985
+- medium_465_modified_for_dsm_6986
+- medium_465_modified_for_dsm_7005
+- medium_465b_modified_for_dsm_6824
+- mineral_medium_with_2_hydroxybiphenyl
+merge_fingerprint: 5830c57c3a06cd7e4a457bc39232cfe2ce4c1142f85d9313fd91f012ea5a5f73

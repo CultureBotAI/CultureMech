@@ -1,0 +1,104 @@
+id: CultureMech:003868
+name: gym_streptomyces_medium_10_nacl
+original_name: GYM STREPTOMYCES medium 10% NACL
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 1159
+  term:
+    id: komodo.medium:1159
+    label: GYM STREPTOMYCES medium 10% NACL
+notes: 'Source: KOMODO ModelSEED | ID: 1159 | DSMZ Medium: 1159 (mediadive.medium:1159)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1159'
+- timestamp: '2026-02-03T11:19:06.264678'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1159
+- timestamp: '2026-03-13T06:19:22.833716Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003868'
+- timestamp: '2026-03-17T06:30:15.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:37.281534+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GYM STREPTOMYCES medium 10% NACL" to "gym_streptomyces_medium_10_nacl"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:16.147040+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1159_GYM_STREPTOMYCES_medium_10_NACL, gym_agar_with_15_nacl,
+    gym_streptomyces_medium_10_nacl'
+synonyms:
+- name: gym_agar_with_15_nacl
+  source: MediaDive
+  source_id: mediadive.medium:J999
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_1159_GYM_STREPTOMYCES_medium_10_NACL
+- gym_agar_with_15_nacl
+- gym_streptomyces_medium_10_nacl
+merge_fingerprint: 0ba7a14559831a63c6352c257a01f543d306c280959153c0ce2d3697d09bc70b

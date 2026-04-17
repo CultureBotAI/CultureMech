@@ -1,15 +1,17 @@
-name: LuPhet1 MEDIUM
-original_name: LuPhet1 MEDIUM
-category: imported
+id: CultureMech:004768
+name: luphet1_medium
+original_name: LuPhet1 medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.2-7.5
+ph_range: 7.2-7.4
 media_term:
-  preferred_term: DSMZ Medium 298a
+  preferred_term: KOMODO Medium 298e
   term:
-    id: mediadive.medium:298a
-    label: LuPhet1 MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium298a.pdf'
+    id: komodo.medium:298e
+    label: LuPhet1 medium
+notes: 'Source: KOMODO ModelSEED | ID: 298e | DSMZ Medium: 298e (mediadive.medium:298e)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -68,6 +88,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Na-DL-lactate
   term:
     id: CHEBI:75228
@@ -75,6 +98,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Na-DL-lactate
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -82,6 +108,9 @@ ingredients:
   concentration:
     value: '0.36'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -89,6 +118,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -96,6 +128,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -103,6 +138,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -110,6 +148,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -117,6 +158,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -124,6 +168,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -131,6 +178,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -138,6 +188,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -145,6 +198,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -152,6 +208,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -159,6 +218,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -166,6 +228,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -173,6 +238,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -180,6 +248,9 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: D-(+)-biotin
   term:
     id: CHEBI:15956
@@ -187,6 +258,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D-(+)-biotin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -194,6 +268,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -201,6 +278,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -208,6 +288,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -215,99 +298,93 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, lactate, vitamins, and sulfide,
-    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense medium in anoxic tubes or bottles under the same gas atmosphere
-    and autoclave. Add vitamins (sterilized by filtration), lactate and sulfide from
-    sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a
-    sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior
-    to use adjust pH of complete medium to 7.2 - 7.5.
-- step_number: 2
-  action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.701591Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 298a'
-- timestamp: '2026-02-19T08:26:45.993965+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 298e'
+- timestamp: '2026-02-03T11:19:12.600785'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 298
+- timestamp: '2026-03-13T06:19:28.682119Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004768'
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:44.126637+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LuPhet1 medium" to "luphet1_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:10.161171+00:00'
   curator: recipe-merger
-  action: Merged 13 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_298a_LuPhet1_MEDIUM, KOMODO_298_PELOBACTER_PROPIONICUS_MEDIUM,
-    KOMODO_298a_HQG_1_medium, KOMODO_298b-1_For_DSM_8271, KOMODO_298b_FlGlyM-MEDIUM,
-    KOMODO_298c_GOL_CHI1_MEDIUM, KOMODO_298d_LuTria3_MEDIUM, KOMODO_298e_LuPhet1_medium,
-    KOMODO_298f-replace-galactose-with-Cellobiose_16AV_medium_replace_galactose_with_Cellobiose,
-    KOMODO_298f_16AV_medium, KOMODO_298g_PB90-1_MEDIUM, KOMODO_298h_ACB90-MEDIUM,
-    KOMODO_298i_VeEG4-MEDIUM'
+  action: Merged 12 duplicate recipes into canonical record
+  notes: 'Sources: 16av_medium, 16av_medium_replace_galactose_with_cellobiose, KOMODO_298e_LuPhet1_medium,
+    acb90_medium, flglym_medium, for_dsm_8271, gol_chi1_medium, luphet1_medium, lutria3_medium,
+    pb90_1_medium, pelobacter_propionicus_medium, veeg4_medium'
 synonyms:
-- name: PELOBACTER PROPIONICUS MEDIUM
-  source: KOMODO
-  source_id: komodo.medium:298
-  original_category: imported
-- name: HQG?1 medium
-  source: KOMODO
-  source_id: komodo.medium:298a
-  original_category: imported
-- name: For DSM 8271
-  source: KOMODO
-  source_id: komodo.medium:298b.1
-  original_category: imported
-- name: FlGlyM-MEDIUM
-  source: KOMODO
-  source_id: komodo.medium:298b
-  original_category: imported
-- name: GOL CHI1 MEDIUM
-  source: KOMODO
-  source_id: komodo.medium:298c
-  original_category: imported
-- name: LuTria3 MEDIUM
-  source: KOMODO
-  source_id: komodo.medium:298d
-  original_category: imported
-- name: LuPhet1 medium
-  source: KOMODO
-  source_id: komodo.medium:298e
-  original_category: imported
-- name: 16AV medium_replace_galactose_with_Cellobiose
-  source: KOMODO
-  source_id: komodo.medium:298f_replace_galactose_with_Cellobiose
-  original_category: imported
-- name: 16AV medium
+- name: 16av_medium
   source: KOMODO
   source_id: komodo.medium:298f
-  original_category: imported
-- name: PB90-1 MEDIUM
+  original_category: bacterial
+- name: 16av_medium_replace_galactose_with_cellobiose
   source: KOMODO
-  source_id: komodo.medium:298g
-  original_category: imported
-- name: ACB90-MEDIUM
+  source_id: komodo.medium:298f_replace_galactose_with_Cellobiose
+  original_category: bacterial
+- name: acb90_medium
   source: KOMODO
   source_id: komodo.medium:298h
-  original_category: imported
-- name: VeEG4-MEDIUM
+  original_category: bacterial
+- name: flglym_medium
+  source: KOMODO
+  source_id: komodo.medium:298b
+  original_category: bacterial
+- name: for_dsm_8271
+  source: KOMODO
+  source_id: komodo.medium:298b.1
+  original_category: bacterial
+- name: gol_chi1_medium
+  source: KOMODO
+  source_id: komodo.medium:298c
+  original_category: bacterial
+- name: lutria3_medium
+  source: KOMODO
+  source_id: komodo.medium:298d
+  original_category: bacterial
+- name: pb90_1_medium
+  source: KOMODO
+  source_id: komodo.medium:298g
+  original_category: bacterial
+- name: pelobacter_propionicus_medium
+  source: KOMODO
+  source_id: komodo.medium:298
+  original_category: bacterial
+- name: veeg4_medium
   source: KOMODO
   source_id: komodo.medium:298i
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_298a_LuPhet1_MEDIUM
-- KOMODO_298_PELOBACTER_PROPIONICUS_MEDIUM
-- KOMODO_298a_HQG_1_medium
-- KOMODO_298b-1_For_DSM_8271
-- KOMODO_298b_FlGlyM-MEDIUM
-- KOMODO_298c_GOL_CHI1_MEDIUM
-- KOMODO_298d_LuTria3_MEDIUM
+- 16av_medium
+- 16av_medium_replace_galactose_with_cellobiose
 - KOMODO_298e_LuPhet1_medium
-- KOMODO_298f-replace-galactose-with-Cellobiose_16AV_medium_replace_galactose_with_Cellobiose
-- KOMODO_298f_16AV_medium
-- KOMODO_298g_PB90-1_MEDIUM
-- KOMODO_298h_ACB90-MEDIUM
-- KOMODO_298i_VeEG4-MEDIUM
+- acb90_medium
+- flglym_medium
+- for_dsm_8271
+- gol_chi1_medium
+- luphet1_medium
+- lutria3_medium
+- pb90_1_medium
+- pelobacter_propionicus_medium
+- veeg4_medium
 merge_fingerprint: caf667eb4072d939fad10e0ae7c28974fb26637dc333667a587629722e4dddc3

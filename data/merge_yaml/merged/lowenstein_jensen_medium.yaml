@@ -1,0 +1,165 @@
+id: CultureMech:003059
+name: lowenstein_jensen_medium
+original_name: LOWENSTEIN-JENSEN MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J712
+  term:
+    id: mediadive.medium:J712
+    label: LOWENSTEIN-JENSEN MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=712'
+ingredients:
+- preferred_term: L-asparagine
+  notes: From BD 220908 (Lowenstein-Jensen Medium); Nitrogen source for mycobacterial
+    growth
+  source: BD 220908
+  concentration:
+    value: '3.6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17196
+    label: L-asparagine
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:06:21.196642'
+    ontology_source: CHEBI
+- preferred_term: Monopotassium phosphate
+  notes: From BD 220908 (Lowenstein-Jensen Medium); Buffer and phosphate source
+  source: BD 220908
+  concentration:
+    value: '2.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:06:21.196649'
+    ontology_source: CHEBI
+- preferred_term: Magnesium sulfate
+  notes: From BD 220908 (Lowenstein-Jensen Medium); Mineral supplement
+  source: BD 220908
+  concentration:
+    value: '0.24'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:06:21.196651'
+    ontology_source: CHEBI
+- preferred_term: Magnesium citrate
+  notes: From BD 220908 (Lowenstein-Jensen Medium); Carbon source and chelating agent
+  source: BD 220908
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:6637
+    label: magnesium citrate
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:06:21.196652'
+    ontology_source: CHEBI
+- preferred_term: Potato flour
+  notes: From BD 220908 (Lowenstein-Jensen Medium); Carbohydrate source and detoxifying
+    agent
+  source: BD 220908
+  concentration:
+    value: '30.0'
+    unit: G_PER_L
+  term:
+    id: FOODON:00002316
+    label: potato starch
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:06:21.196654'
+    ontology_source: FOODON
+- preferred_term: Glycerol
+  notes: From BD 220908 (Lowenstein-Jensen Medium); Carbon source favoring M. tuberculosis
+    growth
+  source: BD 220908
+  concentration:
+    value: '12.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:17754
+    label: glycerol
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:06:21.196655'
+    ontology_source: CHEBI
+- preferred_term: Malachite green
+  notes: From BD 220908 (Lowenstein-Jensen Medium); Selective agent inhibiting contaminating
+    bacteria
+  source: BD 220908
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: CHEBI:87106
+    label: malachite green
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:06:21.196656'
+    ontology_source: CHEBI
+- preferred_term: Whole eggs
+  notes: 1000 mL per 600 mL base; From BD 220908 (Lowenstein-Jensen Medium); Protein
+    source and solidifying agent via coagulation (inspissation)
+  source: BD 220908
+  term:
+    id: FOODON:00002527
+    label: hen egg
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:06:21.196658'
+    ontology_source: FOODON
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use commercially available Lowenstein-Jensen medium slants (BD 220908).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.370652Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J712'
+- timestamp: '2026-02-03T11:26:55.824599'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:17.486487Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003059'
+- timestamp: '2026-03-17T19:45:31.200552+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LOWENSTEIN-JENSEN MEDIUM" to "lowenstein_jensen_medium"
+    for consistent matching
+- timestamp: '2026-04-04T21:06:21.196660'
+  curator: expand_lowenstein_jensen
+  action: EXPANDED_COMMERCIAL_PRODUCT
+  changes: Replaced placeholder with BD 220908 composition (8 ingredients)
+  source: BD 220908 (Lowenstein-Jensen Medium)
+  notes: 'Commercial product expansion: BD Lowenstein-Jensen Medium ready-to-use slants'
+data_quality_flags:
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  commercial_product: true
+merge_fingerprint: 5b793217c5df6864b22119df9b650c0da514132afbd330481d9ed3a3f199d55e
+merged_from:
+- lowenstein_jensen_medium

@@ -1,6 +1,7 @@
-name: Nmm with lactate
+id: CultureMech:007047
+name: nmm_with_lactate
 original_name: Nmm with lactate
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -16,6 +17,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0005'
@@ -24,6 +28,9 @@ ingredients:
   concentration:
     value: '0.276'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32036
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.32'
@@ -35,6 +42,9 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -42,6 +52,9 @@ ingredients:
   concentration:
     value: '9.52'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01'
@@ -53,10 +66,16 @@ ingredients:
   concentration:
     value: '40.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000285
+    label: MOPS
 - preferred_term: Tricine
   concentration:
     value: '4.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35920
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -77,6 +96,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:45.778313Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007047'
+- timestamp: '2026-03-17T06:30:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.887156+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Nmm with lactate" to "nmm_with_lactate" for consistent
+    matching
 media_term:
   preferred_term: MediaDB Medium 157
   term:
@@ -88,6 +120,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 6c8c27a2492cfdf26f163c53e7fced896e5c409e97c58e92ef3b24e1d9ee663d
+merge_fingerprint: aa06132e5f2cf19ed36165e6c61a86273130dbf9a6d750ed8af0addb8c761cff
 merged_from:
-- MEDIADB_157_Nmm_with_lactate
+- nmm_with_lactate

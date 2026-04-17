@@ -1,6 +1,7 @@
-name: LACTOBACILLUS KEFIRANOFACIENS
+id: CultureMech:000713
+name: lactobacillus_kefiranofaciens
 original_name: LACTOBACILLUS KEFIRANOFACIENS
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '9.8912'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
 - preferred_term: White wine
   concentration:
     value: '100'
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Hemin
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -40,6 +47,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Cysteine hydrochloride
   term:
     id: CHEBI:91248
@@ -47,6 +57,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: Cysteine hydrochloride
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -67,6 +80,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1253'
+- timestamp: '2026-03-13T06:18:57.700550Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000713'
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:09.018630+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LACTOBACILLUS KEFIRANOFACIENS" to "lactobacillus_kefiranofaciens"
+    for consistent matching
 merge_fingerprint: 0fceb2d329e50e175ad0fe413ad62c7fb82ad40758cacaea5c4503e8cd83e85b
 merged_from:
-- DSMZ_1253_LACTOBACILLUS_KEFIRANOFACIENS
+- lactobacillus_kefiranofaciens

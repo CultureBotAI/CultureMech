@@ -1,8 +1,9 @@
-name: Pae II Medium
+id: CultureMech:008404
+name: pae_ii_medium
 original_name: Pae II Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
   concentration:
     value: '1'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4
   concentration:
     value: '0.2'
@@ -45,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: Maltose
   concentration:
     value: '10'
@@ -54,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000916
+    label: Maltose
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -94,6 +110,18 @@ curation_history:
   date: '2026-02-03T11:20:50.082871'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Tris-HCl buffer'
+- timestamp: '2026-03-13T06:19:56.489413Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008404'
+- timestamp: '2026-03-17T06:30:36.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.058551+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Pae II Medium" to "pae_ii_medium" for consistent matching
 merge_fingerprint: fd5830b5b95072835d0bd5378ad26e64691b3362588d18358a94b241efcec125
 merged_from:
-- TOGO_M1831_Pae_II_Medium
+- pae_ii_medium

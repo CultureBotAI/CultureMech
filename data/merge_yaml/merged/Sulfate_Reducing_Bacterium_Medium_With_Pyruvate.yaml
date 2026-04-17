@@ -1,150 +1,306 @@
-name: Sulfate Reducing Bacterium Medium With Pyruvate
-original_name: Sulfate Reducing Bacterium Medium With Pyruvate
-category: imported
+id: CultureMech:002901
+name: sulfate_reducing_bacterium_medium_with_pyruvate
+original_name: SULFATE REDUCING BACTERIUM MEDIUM WITH PYRUVATE
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 6.7
+media_term:
+  preferred_term: JCM Medium J553
+  term:
+    id: mediadive.medium:J553
+    label: SULFATE REDUCING BACTERIUM MEDIUM WITH PYRUVATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=553'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: NaCl
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: NH4Cl
   concentration:
-    value: '1'
+    value: '0.498504'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: Resazurin
+    label: NH4Cl
   concentration:
-    value: '1'
+    value: '0.997009'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
-    component, Organic compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0997009'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1.99402'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '9.97009'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.498504'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: L-Sodium lactate
+  term:
+    id: CHEBI:867561
+    label: L-Sodium lactate
+  concentration:
+    value: '2.29312'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000540
+    label: L-Sodium lactate
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: Resazurin
   term:
     id: CHEBI:8806
     label: Resazurin
-- preferred_term: Na2SO4
   concentration:
-    value: '1'
+    value: '0.000997009'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: L-Cysteine HCl x H2O
   term:
-    id: CHEBI:32149
-    label: sodium sulfate
-- preferred_term: sodium pyruvate
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
   concentration:
-    value: '1.9'
+    value: '0.498504'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: Biotin
   term:
-    id: CHEBI:50144
-    label: sodium pyruvate
-- preferred_term: agar (BD-Difco)
+    id: CHEBI:15956
+    label: Biotin
   concentration:
-    value: '15'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: L--Cysteine・H2O・HCl
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Vitamin solution (see Medium [M554])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeCl2 solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: p-Aminobenzoic acid
   term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M557
+    value: '40'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: Nicotinic acid
   term:
-    id: TOGO:M557
-    label: Sulfate Reducing Bacterium Medium With Pyruvate
-notes: 'Source: https://togomedium.org/medium/M557
-
-  Original source: JCM - JCM_M553-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=553'
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 552
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
+  notes: Copied from referenced JCM Medium 552
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 552 supplemented with final 30.0 g/L NaCl, replacing
+    sodium lactate with 1.9 g/L sodium pyruvate. Adjust pH to 6.7.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.294867Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M557'
-- timestamp: '2026-01-28T19:48:15.175528Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.431225'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
-    for ingredient: N2'
-merge_fingerprint: e54707745f4f2c145ecf0c41e9e3bf354de36e7a379e387a9f55110faea88f8f
+- timestamp: '2026-01-26T17:53:16.918221Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J553'
+- timestamp: '2026-02-03T11:26:55.294507'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.446690Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002901'
+- timestamp: '2026-03-17T19:45:29.998500+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SULFATE REDUCING BACTERIUM MEDIUM WITH PYRUVATE" to
+    "sulfate_reducing_bacterium_medium_with_pyruvate" for consistent matching
+- timestamp: '2026-04-04T18:49:19.791920'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (22 ingredients)
+  source: CultureMech:002900
+  notes: Resolved reference by copying from sulfate_reducing_bacterium_medium_with_lactate
+    (CultureMech:002900)
+- timestamp: '2026-04-17T06:30:22.854064+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: sulfate_reducing_bacterium_medium_with_2_nacl_and_lactate, sulfate_reducing_bacterium_medium_with_lactate,
+    sulfate_reducing_bacterium_medium_with_pyruvate'
+data_quality_flags:
+  incomplete_composition: false
+  resolved_reference: true
+synonyms:
+- name: sulfate_reducing_bacterium_medium_with_2_nacl_and_lactate
+  source: MediaDive
+  source_id: mediadive.medium:J627
+  original_category: bacterial
+- name: sulfate_reducing_bacterium_medium_with_lactate
+  source: MediaDive
+  source_id: mediadive.medium:J552
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M557_Sulfate_Reducing_Bacterium_Medium_With_Pyruvate
+- sulfate_reducing_bacterium_medium_with_2_nacl_and_lactate
+- sulfate_reducing_bacterium_medium_with_lactate
+- sulfate_reducing_bacterium_medium_with_pyruvate
+merge_fingerprint: 371d2fbd9f2db78e529e0cfcb422486b1780c5c9b13783087caea7f4f1be2619

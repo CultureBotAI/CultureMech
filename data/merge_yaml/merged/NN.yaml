@@ -1,8 +1,9 @@
-name: NN
+id: CultureMech:000380
+name: nn
 original_name: NN
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C68
   term:
@@ -17,6 +18,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -24,6 +28,9 @@ ingredients:
   concentration:
     value: '24'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -31,6 +38,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 6 H2O
   term:
     id: CHEBI:91243
@@ -38,6 +48,9 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000327
+    label: CaCl2 x 6 H2O
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -45,6 +58,9 @@ ingredients:
   concentration:
     value: '28.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -52,6 +68,9 @@ ingredients:
   concentration:
     value: '27.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -65,6 +84,18 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C68'
+- timestamp: '2026-03-13T06:18:54.866732Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000380'
+- timestamp: '2026-03-17T06:30:05.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.876375+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NN" to "nn" for consistent matching
 merge_fingerprint: a113b19935c2148349eeddc0104dd2f004c5574c7c6eac3da80209710076c4f8
 merged_from:
-- CCAP_C68_NN
+- nn

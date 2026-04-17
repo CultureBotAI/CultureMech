@@ -1,15 +1,17 @@
-name: CLOSTRIDIUM AMINOBUTYRICUM MEDIUM
-original_name: CLOSTRIDIUM AMINOBUTYRICUM MEDIUM
-category: imported
+id: CultureMech:004743
+name: clostridium_aminobutyricum_medium
+original_name: CLOSTRIDIUM AMINOBUTYRICUM medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
-  preferred_term: DSMZ Medium 286
+  preferred_term: KOMODO Medium 286
   term:
-    id: mediadive.medium:286
-    label: CLOSTRIDIUM AMINOBUTYRICUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium286.pdf'
+    id: komodo.medium:286
+    label: CLOSTRIDIUM AMINOBUTYRICUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 286 | DSMZ Medium: 286 (mediadive.medium:286)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '1.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -64,6 +84,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000908
+    label: gamma-Aminobutyric acid
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -71,6 +94,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -82,33 +108,40 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve ingredients (except sulfide), adjust pH to 7.2, bring medium
-    to the boil, then cool to room temperature under 100% N2 gas. Dispense medium
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    After sterilization add sulfide from a sterile anoxic stock solution prepared
-    under 100% N2 gas atmosphere.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.665916Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 286'
-- timestamp: '2026-02-19T08:26:45.709333+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 286'
+- timestamp: '2026-02-03T11:19:09.322534'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 286
+- timestamp: '2026-03-13T06:19:28.455813Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004743'
+- timestamp: '2026-03-17T06:30:24.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:43.859743+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CLOSTRIDIUM AMINOBUTYRICUM medium" to "clostridium_aminobutyricum_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:21.429786+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_286_CLOSTRIDIUM_AMINOBUTYRICUM_MEDIUM, KOMODO_286_CLOSTRIDIUM_AMINOBUTYRICUM_medium'
-synonyms:
-- name: CLOSTRIDIUM AMINOBUTYRICUM medium
-  source: KOMODO
-  source_id: komodo.medium:286
-  original_category: imported
+  notes: 'Sources: KOMODO_286_CLOSTRIDIUM_AMINOBUTYRICUM_medium, clostridium_aminobutyricum_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_286_CLOSTRIDIUM_AMINOBUTYRICUM_MEDIUM
 - KOMODO_286_CLOSTRIDIUM_AMINOBUTYRICUM_medium
+- clostridium_aminobutyricum_medium
 merge_fingerprint: ab4b29e6f846e184805885e6386d3c1172711e0141f1dfc5fdc9f8e656f4d2cd

@@ -1,15 +1,16 @@
-name: BTU MEDIUM
-original_name: BTU MEDIUM
-category: imported
+id: CultureMech:005240
+name: btu_medium
+original_name: BTU medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_value: 7.0
+physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 413
+  preferred_term: KOMODO Medium 413
   term:
-    id: mediadive.medium:413
-    label: BTU MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium413.pdf'
+    id: komodo.medium:413
+    label: BTU medium
+notes: 'Source: KOMODO ModelSEED | ID: 413 | DSMZ Medium: 413 (mediadive.medium:413)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na-formiate
   term:
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Na-formiate
 - preferred_term: Na-fumarate
   term:
     id: CHEBI:115156
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000656
+    label: Na-fumarate
 - preferred_term: Ground beef
   concentration:
     value: '487.805'
@@ -34,8 +41,12 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '25'
+    value: '26.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 25.0, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Casitone
   concentration:
     value: '29.2683'
@@ -51,6 +62,9 @@ ingredients:
   concentration:
     value: '4.87805'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -58,6 +72,9 @@ ingredients:
   concentration:
     value: '0.00097561'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: L-Cysteine HCl
   term:
     id: CHEBI:52891
@@ -65,6 +82,9 @@ ingredients:
   concentration:
     value: '0.487805'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -73,6 +93,9 @@ ingredients:
     value: '14.6341'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Haemin
   term:
     id: CHEBI:50385
@@ -80,13 +103,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Haemin
 - preferred_term: Vitamin K3
   concentration:
     value: '0.05'
@@ -96,8 +115,12 @@ ingredients:
     id: CHEBI:16236
     label: Ethanol
   concentration:
-    value: '9.5'
+    value: '959.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.5, 950.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
@@ -105,87 +128,61 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: Ethanol
-  term:
-    id: CHEBI:16236
-    label: Ethanol
-  concentration:
-    value: '950'
-    unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Add 30 µl Formiate/Fumarate Solution per ml of medium 78 before inoculation.
-- step_number: 2
-  action: FILTER_STERILIZE
-  description: Filter sterilize.
-- step_number: 3
-  action: AUTOCLAVE
-  description: To make medium anoxic bring it to a boil, cool under 100% N2 gas atmosphere,
-    add 0.5 g/l L-cysteine hydrochloride and adjust pH to 7.0. Dispense under 100%
-    N2 gas atmosphere by filling 7 ml medium into anoxic Hungate-type tubes (for strains
-    demanding meat particles put those first into the tube (use 1 part meat particles
-    to 4 or 5 parts fluid)). Autoclave at 121°C for 30 min. For agar slants use 15.0
-    g agar per 1000.0 ml medium.
-- step_number: 4
-  action: MIX
-  description: 'In some cases (as indicated in the catalogue) the addition of Haemin
-    and Vitamin K1 or Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:'
-- step_number: 5
-  action: FILTER_STERILIZE
-  description: "Use lean beef or horse meat. Remove fat and connective tissue before\
-    \ grinding. Mix\r\nmeat, water and NaOH, then boil for 15 min with stirring. Cool\
-    \ to room temperature,\r\nskim fat off surface, and filter, retaining both meat\
-    \ particles and filtrate. To the filtrate\r\nadd water to a final volume of 1000\
-    \ ml, and then add:"
-- step_number: 6
-  action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
-    water and filter sterilize. Store refrigerated.
-- step_number: 7
-  action: FILTER_STERILIZE
-  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
-    in water and filter sterilize. Store refrigerated in a brown bottle.
-- step_number: 8
-  action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
-    Store refrigerated in a brown bottle.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: Vitamin K1
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.080682Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 413'
-- timestamp: '2026-02-19T08:26:47.931145+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 413'
+- timestamp: '2026-02-03T11:19:14.423020'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 413
+- timestamp: '2026-03-13T03:09:30.624556Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:31.269602Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005240'
+- timestamp: '2026-03-17T06:30:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:47.140905+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BTU medium" to "btu_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:23.630328+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_413_BTU_MEDIUM, KOMODO_413-20703_MEDIUM_413_MODIFIED_FOR_DSM_20703,
-    KOMODO_413-6644_MEDIUM_413_MODIFIED_FOR_DSM_6644, KOMODO_413-replace-Formiate-with-Fumarate_BTU_medium_replace_Formiate_with_Fumarate,
-    KOMODO_413_BTU_medium'
+  notes: 'Sources: KOMODO_413_BTU_medium, btu_medium, btu_medium_replace_formiate_with_fumarate,
+    medium_413_modified_for_dsm_20703, medium_413_modified_for_dsm_6644'
+ph_value: 7.0
 synonyms:
-- name: MEDIUM 413 MODIFIED FOR DSM 20703
-  source: KOMODO
-  source_id: komodo.medium:413_20703
-  original_category: imported
-- name: MEDIUM 413 MODIFIED FOR DSM 6644
-  source: KOMODO
-  source_id: komodo.medium:413_6644
-  original_category: imported
-- name: BTU medium_replace_Formiate_with_Fumarate
+- name: btu_medium_replace_formiate_with_fumarate
   source: KOMODO
   source_id: komodo.medium:413_replace_Formiate_with_Fumarate
-  original_category: imported
-- name: BTU medium
+  original_category: bacterial
+- name: medium_413_modified_for_dsm_20703
   source: KOMODO
-  source_id: komodo.medium:413
-  original_category: imported
+  source_id: komodo.medium:413_20703
+  original_category: bacterial
+- name: medium_413_modified_for_dsm_6644
+  source: KOMODO
+  source_id: komodo.medium:413_6644
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_413_BTU_MEDIUM
-- KOMODO_413-20703_MEDIUM_413_MODIFIED_FOR_DSM_20703
-- KOMODO_413-6644_MEDIUM_413_MODIFIED_FOR_DSM_6644
-- KOMODO_413-replace-Formiate-with-Fumarate_BTU_medium_replace_Formiate_with_Fumarate
 - KOMODO_413_BTU_medium
+- btu_medium
+- btu_medium_replace_formiate_with_fumarate
+- medium_413_modified_for_dsm_20703
+- medium_413_modified_for_dsm_6644
 merge_fingerprint: ce834752cffb59ebe86256790660e5745e1fe55a74a564d28609eca5ea5743fa

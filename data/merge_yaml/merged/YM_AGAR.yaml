@@ -1,83 +1,89 @@
-name: YM Agar
-original_name: YM Agar
-category: imported
+id: CultureMech:002617
+name: ym_agar
+original_name: YM AGAR
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+physical_state: SOLID_AGAR
+ph_value: 6.2
+media_term:
+  preferred_term: JCM Medium J25
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+    id: mediadive.medium:J25
+    label: YM AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=25'
+ingredients:
 - preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Peptone
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Agar
+- preferred_term: Yeast extract
   concentration:
-    value: '15'
+    value: '6'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Malt extract
   concentration:
-    value: '3'
+    value: '6'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M1431
+- preferred_term: Agar
   term:
-    id: TOGO:M1431
-    label: YM Agar
-notes: 'Source: https://togomedium.org/medium/M1431
-
-  Original source: NBRC - NBRC_M108
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=108'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.670684Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1431'
-- timestamp: '2026-01-28T19:48:35.489797Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:27:01.000320+00:00'
+- timestamp: '2026-01-26T17:53:15.604754Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J25'
+- timestamp: '2026-03-13T06:19:14.572943Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002617'
+- timestamp: '2026-03-17T06:30:29.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:27.854428+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YM AGAR" to "ym_agar" for consistent matching
+- timestamp: '2026-04-17T06:29:53.294532+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: TOGO_M1431_YM_Agar, TOGO_M18_YM_Agar, TOGO_M25_MY20_Agar'
+  notes: 'Sources: acidomonas_medium, my20_agar, ym_agar'
 synonyms:
-- name: MY20 Agar
-  source: TOGO
-  source_id: TOGO:M25
-  original_category: imported
+- name: acidomonas_medium
+  source: MediaDive
+  source_id: mediadive.medium:J122
+  original_category: bacterial
+- name: my20_agar
+  source: MediaDive
+  source_id: mediadive.medium:J32
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- TOGO_M1431_YM_Agar
-- TOGO_M18_YM_Agar
-- TOGO_M25_MY20_Agar
-merge_fingerprint: d7a6b652eba5c93085a8987ce41fc547074dfd6c3b0c28d245a16b93bff8ba46
+- acidomonas_medium
+- my20_agar
+- ym_agar
+merge_fingerprint: 5bf4e54aa7d51fb813d73629d2163ced4ed7eb6fab586777263f284a0ba98c82

@@ -1,0 +1,115 @@
+id: CultureMech:006825
+name: gluconacetobacter_johannae_and_g_azotocaptans_medium
+original_name: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 6.7
+media_term:
+  preferred_term: KOMODO Medium 920
+  term:
+    id: komodo.medium:920
+    label: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS medium
+notes: 'Source: KOMODO ModelSEED | ID: 920 | DSMZ Medium: 920 (mediadive.medium:920)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Mannitol
+  term:
+    id: CHEBI:29864
+    label: Mannitol
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001010
+    label: Mannitol
+- preferred_term: MES buffer
+  concentration:
+    value: '4.4'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.81'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.65'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 920'
+- timestamp: '2026-02-03T11:19:17.446205'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 920
+- timestamp: '2026-03-13T06:19:44.095886Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006825'
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:01.968357+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS medium"
+    to "gluconacetobacter_johannae_and_g_azotocaptans_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:34.640356+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_920_GLUCONACETOBACTER_JOHANNAE_AND_G._AZOTOCAPTANS_medium,
+    dsm_13594_and_dsm_13595, gluconacetobacter_johannae_and_g_azotocaptans_medium'
+synonyms:
+- name: dsm_13594_and_dsm_13595
+  source: KOMODO
+  source_id: komodo.medium:920.1
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_920_GLUCONACETOBACTER_JOHANNAE_AND_G._AZOTOCAPTANS_medium
+- dsm_13594_and_dsm_13595
+- gluconacetobacter_johannae_and_g_azotocaptans_medium
+merge_fingerprint: 999494acc91f2b417503a6898aa7defcc0c264ac2fa7b8a977b3ea2da8f3c063

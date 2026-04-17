@@ -1,8 +1,9 @@
-name: Levulinic acid medium
+id: CultureMech:008697
+name: levulinic_acid_medium
 original_name: Levulinic acid medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '1'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -38,11 +45,6 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
-- preferred_term: Hipolypepton*
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M2105
   term:
@@ -64,6 +66,35 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 0591014053f4fbf418c53908a32736517fbed7d4b31c23b76e7a06288b376271
+- timestamp: '2026-03-09T08:04:30.496755+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:59.497007Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008697'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:53.857667'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:04.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:18.136408+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Levulinic acid medium" to "levulinic_acid_medium" for
+    consistent matching
+solutions:
+- preferred_term: Hipolypepton*
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+  name: Unknown solution
+merge_fingerprint: bb63f6ab6010865e9b819d425c59811dfa6baa75bfddc5b35e42e9a264410204
 merged_from:
-- TOGO_M2105_Levulinic_acid_medium
+- levulinic_acid_medium

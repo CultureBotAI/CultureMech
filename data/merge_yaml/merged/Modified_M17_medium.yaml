@@ -1,6 +1,7 @@
-name: Modified M17 medium
+id: CultureMech:008804
+name: modified_m17_medium
 original_name: Modified M17 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -18,6 +19,9 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Ascorbic acid (Sigma)
   concentration:
@@ -39,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Yeast extract (BBL)
   concentration:
     value: '2.5'
@@ -76,6 +83,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:00.377765Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008804'
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.051393+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified M17 medium" to "modified_m17_medium" for consistent
+    matching
 merge_fingerprint: 33a69f957e8bff3324df62d6a7b3eb0abac495928c2720cbbe369296664a1b36
 merged_from:
-- TOGO_M2214_Modified_M17_medium
+- modified_m17_medium

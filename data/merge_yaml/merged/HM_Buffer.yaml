@@ -1,6 +1,7 @@
-name: HM Buffer
+id: CultureMech:009705
+name: hm_buffer
 original_name: HM Buffer
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,17 +13,9 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
-- preferred_term: CaCl2 solution
-  concentration:
-    value: '600'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
-    component'
-- preferred_term: MgCl2 solution
-  concentration:
-    value: '333'
-    unit: G_PER_L
-  notes: 'Role: Mineral source'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: HEPES
 - preferred_term: UPW
   concentration:
     value: '100'
@@ -50,6 +43,42 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: ff3a252b66738fde033d2b949d26ff638e146082f5d88af37ad75e8f4b3e095a
+- timestamp: '2026-03-09T08:04:13.648159+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:08.276072Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009705'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.278204'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.267195+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HM Buffer" to "hm_buffer" for consistent matching
+solutions:
+- preferred_term: CaCl2 solution
+  composition: []
+  concentration:
+    value: '600'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
+    component'
+  name: Unknown solution
+- preferred_term: MgCl2 solution
+  composition: []
+  concentration:
+    value: '333'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+  name: Unknown solution
+merge_fingerprint: ea3946239a582a1a0cdbb021b8996d049413cb4e54d225499e611c9694ac7727
 merged_from:
-- TOGO_M3294_HM_Buffer
+- hm_buffer

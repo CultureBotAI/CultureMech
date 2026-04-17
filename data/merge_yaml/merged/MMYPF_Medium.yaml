@@ -1,6 +1,7 @@
-name: MMYPF Medium
+id: CultureMech:008593
+name: mmypf_medium
 original_name: MMYPF Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.1'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
     value: '8'
@@ -45,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -53,6 +66,9 @@ ingredients:
     compound, Defined component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Sodium pyruvate
   concentration:
@@ -63,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Sodium citrate dihydrate
   concentration:
     value: '0.5'
@@ -70,6 +89,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:32142
+    label: Sodium citrate dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000719
     label: Sodium citrate dihydrate
 - preferred_term: Disodium fumarate
   concentration:
@@ -79,11 +101,17 @@ ingredients:
   term:
     id: CHEBI:115156
     label: disodium fumarate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000656
+    label: Disodium fumarate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2006
   term:
@@ -109,6 +137,18 @@ curation_history:
   date: '2026-02-03T11:20:51.433841'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: e9e38dded278a0a5a3b2ca1c559319087e29f9e258dd74876869b44456e5054f
+- timestamp: '2026-03-13T06:19:58.469368Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008593'
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.087434+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MMYPF Medium" to "mmypf_medium" for consistent matching
+merge_fingerprint: a5c366b3f451945f700c48288158bb1376ec7f9356ebcc7896709f5a151a95ec
 merged_from:
-- TOGO_M2006_MMYPF_Medium
+- mmypf_medium

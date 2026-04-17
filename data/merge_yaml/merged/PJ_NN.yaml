@@ -1,8 +1,9 @@
-name: PJ/NN
+id: CultureMech:000390
+name: pj_nn
 original_name: PJ/NN
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C77
   term:
@@ -17,13 +18,20 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '1.8'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 0.8]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -31,6 +39,9 @@ ingredients:
   concentration:
     value: '4.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -38,6 +49,9 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -45,6 +59,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -52,13 +69,9 @@ ingredients:
   concentration:
     value: '24'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.8'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 x 6 H2O
   term:
     id: CHEBI:91243
@@ -66,6 +79,9 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000327
+    label: CaCl2 x 6 H2O
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -73,6 +89,9 @@ ingredients:
   concentration:
     value: '28.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -80,6 +99,9 @@ ingredients:
   concentration:
     value: '27.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -100,6 +122,22 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C77'
+- timestamp: '2026-03-13T03:08:59.236044Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:54.910203Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000390'
+- timestamp: '2026-03-17T06:30:04.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.919881+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PJ/NN" to "pj_nn" for consistent matching
 merge_fingerprint: 3465738cfd00cdc9511b696c92c7de8ba95547791b6a2866c5da2023df962c98
 merged_from:
-- CCAP_C77_PJ_NN
+- pj_nn

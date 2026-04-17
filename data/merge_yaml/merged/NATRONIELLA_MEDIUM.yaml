@@ -1,15 +1,16 @@
-name: NATRONIELLA MEDIUM
-original_name: NATRONIELLA MEDIUM
-category: imported
+id: CultureMech:006484
+name: natroniella_medium
+original_name: NATRONIELLA medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9.5-10
 media_term:
-  preferred_term: DSMZ Medium 784
+  preferred_term: KOMODO Medium 784
   term:
-    id: mediadive.medium:784
-    label: NATRONIELLA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium784.pdf'
+    id: komodo.medium:784
+    label: NATRONIELLA medium
+notes: 'Source: KOMODO ModelSEED | ID: 784 | DSMZ Medium: 784 (mediadive.medium:784)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.19861'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.0993049'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.993049'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.19861'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '15.8888'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Yeast extract
   concentration:
     value: '0.19861'
@@ -61,6 +77,9 @@ ingredients:
   concentration:
     value: '67.5273'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -68,6 +87,9 @@ ingredients:
   concentration:
     value: '37.7358'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Ethanol absolute
   term:
     id: CHEBI:64175
@@ -75,6 +97,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000536
+    label: Ethanol absolute
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -82,6 +107,9 @@ ingredients:
   concentration:
     value: '0.993049'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Na2-EDTA x 2 H2O
   term:
     id: CHEBI:64734
@@ -89,6 +117,9 @@ ingredients:
   concentration:
     value: '5.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA x 2 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -96,6 +127,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -103,6 +137,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -110,6 +147,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -117,6 +157,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -124,6 +167,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -131,6 +177,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -138,6 +187,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -145,6 +197,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -152,6 +207,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -159,6 +217,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -166,6 +227,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -173,6 +237,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -180,6 +247,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -187,6 +257,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
@@ -198,6 +271,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -205,6 +281,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
     id: CHEBI:16494
@@ -212,55 +291,52 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, bicarbonate, ethanol, vitamins
-    and sulfide. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
-    Add and dissolve carbonates and sulfide while gassing the head space only. Dispense
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Before use add ethanol and vitamins from sterile anoxic stock solution prepared
-    under 100% N2 gas. Vitamins are sterilized by filtration. Adjust pH of the complete
-    medium to 9.5 - 10.0, if necessary.
-- step_number: 2
-  action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: (DL)-alpha-Lipoic acid
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.229371Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 784'
-- timestamp: '2026-02-06T05:10:51.952759Z'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 784'
+- timestamp: '2026-02-03T11:19:01.228131'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 784
+- timestamp: '2026-02-06T05:10:23.018491Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-02-19T08:26:54.210167+00:00'
+- timestamp: '2026-03-13T06:19:41.224068Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006484'
+- timestamp: '2026-03-17T06:29:59.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:58.651938+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NATRONIELLA medium" to "natroniella_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:31.884020+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_784_NATRONIELLA_MEDIUM, KOMODO_784-replace-Trace element solution
-    SL-4 (medium 457)-with-Trace element solution SL-11 (medium 784)_NATRONIELLA_medium_replace_Trace_element_solution_SL-4_medium_457_with_Trace_ele,
-    KOMODO_784_NATRONIELLA_medium'
+  notes: 'Sources: KOMODO_784_NATRONIELLA_medium, natroniella_medium, natroniella_medium_replace_trace_element_solution_sl_4_medium_457_with_trace_element_solution_sl_11_medium_784'
 synonyms:
-- name: NATRONIELLA medium_replace_Trace element solution SL-4 (medium 457)_with_Trace
-    element solution SL-11 (medium 784)
+- name: natroniella_medium_replace_trace_element_solution_sl_4_medium_457_with_trace_element_solution_sl_11_medium_784
   source: KOMODO
   source_id: komodo.medium:784_replace_Trace element solution SL-4 (medium 457)_with_Trace
     element solution SL-11 (medium 784)
-  original_category: imported
-- name: NATRONIELLA medium
-  source: KOMODO
-  source_id: komodo.medium:784
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_784_NATRONIELLA_MEDIUM
-- KOMODO_784-replace-Trace element solution SL-4 (medium 457)-with-Trace element solution
-  SL-11 (medium 784)_NATRONIELLA_medium_replace_Trace_element_solution_SL-4_medium_457_with_Trace_ele
 - KOMODO_784_NATRONIELLA_medium
+- natroniella_medium
+- natroniella_medium_replace_trace_element_solution_sl_4_medium_457_with_trace_element_solution_sl_11_medium_784
 merge_fingerprint: cd8baa280afe4dc1df43581340b038a6d4695367311b1a8248a188452b49a51a

@@ -1,6 +1,7 @@
-name: NMM with pyruvate
+id: CultureMech:007046
+name: nmm_with_pyruvate
 original_name: NMM with pyruvate
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '57.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000367
+    label: Pyruvate
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.523'
@@ -19,6 +23,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0005'
@@ -27,6 +34,9 @@ ingredients:
   concentration:
     value: '0.276'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32036
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '1.32'
@@ -38,6 +48,9 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -45,6 +58,9 @@ ingredients:
   concentration:
     value: '9.52'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01'
@@ -56,10 +72,16 @@ ingredients:
   concentration:
     value: '40.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000285
+    label: MOPS
 - preferred_term: Tricine
   concentration:
     value: '4.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35920
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -80,6 +102,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:45.772861Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007046'
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.881441+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NMM with pyruvate" to "nmm_with_pyruvate" for consistent
+    matching
 media_term:
   preferred_term: MediaDB Medium 156
   term:
@@ -91,6 +126,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 36e8a40ea2ab3be6d5c47bd5d4285a7c9a7c5444e2bb3edc8d2cde03560b1909
+merge_fingerprint: c5edb442bb5fcc4a2363f4ee85308ba110aad9b0de0417282d466ebbcb731a3a
 merged_from:
-- MEDIADB_156_NMM_with_pyruvate
+- nmm_with_pyruvate

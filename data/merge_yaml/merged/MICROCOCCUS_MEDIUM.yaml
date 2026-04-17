@@ -1,8 +1,9 @@
-name: MICROCOCCUS MEDIUM
+id: CultureMech:001462
+name: micrococcus_medium
 original_name: MICROCOCCUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
   preferred_term: DSMZ Medium 361
@@ -30,6 +31,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -37,6 +41,9 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -48,6 +55,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 361'
+- timestamp: '2026-03-13T06:19:04.386580Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001462'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.401915+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MICROCOCCUS MEDIUM" to "micrococcus_medium" for consistent
+    matching
 merge_fingerprint: d54b7e5c352646ebce5d00cf032292fd4d557b7c717952f0d783ab6c4359d0a4
 merged_from:
-- DSMZ_361_MICROCOCCUS_MEDIUM
+- micrococcus_medium

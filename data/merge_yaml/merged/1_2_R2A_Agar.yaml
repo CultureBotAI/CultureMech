@@ -1,8 +1,9 @@
-name: 1/2 R2A Agar
+id: CultureMech:010300
+name: 1_2_r2a_agar
 original_name: 1/2 R2A Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -21,6 +25,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: R2A agar (BD-Difco)
   concentration:
     value: '1.82'
@@ -47,17 +54,29 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:27:01.909728+00:00'
+- timestamp: '2026-03-13T06:20:12.806059Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010300'
+- timestamp: '2026-03-17T06:30:02.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.753743+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "1/2 R2A Agar" to "1_2_r2a_agar" for consistent matching
+- timestamp: '2026-04-17T06:29:51.292367+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M839_1_10_R2A_Agar, TOGO_M881_1_2_R2A_Agar'
 synonyms:
-- name: 1/10 R2A Agar
+- name: 1_10_r2a_agar
   source: TOGO
   source_id: TOGO:M839
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
 - TOGO_M839_1_10_R2A_Agar
 - TOGO_M881_1_2_R2A_Agar

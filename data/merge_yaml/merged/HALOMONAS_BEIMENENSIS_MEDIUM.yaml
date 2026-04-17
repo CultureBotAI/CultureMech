@@ -1,98 +1,111 @@
-name: Halomonas Beimenensis Medium
-original_name: Halomonas Beimenensis Medium
-category: imported
+id: CultureMech:003113
+name: halomonas_beimenensis_medium
+original_name: HALOMONAS BEIMENENSIS MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+media_term:
+  preferred_term: JCM Medium J771
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
+    id: mediadive.medium:J771
+    label: HALOMONAS BEIMENENSIS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=771'
+ingredients:
+- preferred_term: Casamino acids
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: NaCl
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
   term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: KCl
+    id: CHEBI:78020
+    label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
+- preferred_term: Yeast extract
   concentration:
-    value: '2'
+    value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+- preferred_term: Na glutamate
   term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: Sodium glutamate
+    id: CHEBI:64220
+    label: Na glutamate
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
-  term:
-    id: CHEBI:64220
-    label: monosodium glutamate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000432
+    label: Na glutamate
 - preferred_term: Trisodium citrate
+  term:
+    id: CHEBI:53258
+    label: Trisodium citrate
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:53258
-    label: sodium citrate
-- preferred_term: agar
-  concentration:
-    value: '18'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Yeast extract (BD-Difco)
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casamino acids (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M800
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: KCl
   term:
-    id: TOGO:M800
-    label: Halomonas Beimenensis Medium
-notes: 'Source: https://togomedium.org/medium/M800
-
-  Original source: JCM - JCM_M771-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=771'
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add components to distilled water and bring volume to 1.0 L.
+- step_number: 2
+  action: MIX
+  description: For preparation of solid medium, add 18.0 g/L agar.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.740653Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M800'
-- timestamp: '2026-01-28T19:48:27.792502Z'
+- timestamp: '2026-01-26T17:53:17.550827Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J771'
+- timestamp: '2026-01-28T19:48:43.197731Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 4a8edbffd2a33a2c0fca664e931304697b33bc577cb9399e3a654467141ec74b
+- timestamp: '2026-03-13T06:19:17.909547Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003113'
+- timestamp: '2026-03-17T06:30:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:31.694627+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOMONAS BEIMENENSIS MEDIUM" to "halomonas_beimenensis_medium"
+    for consistent matching
+merge_fingerprint: a042c4a66e2abefeb475da4b67bc894d953a0e3e689854eda284ef819db707cf
 merged_from:
-- TOGO_M800_Halomonas_Beimenensis_Medium
+- halomonas_beimenensis_medium

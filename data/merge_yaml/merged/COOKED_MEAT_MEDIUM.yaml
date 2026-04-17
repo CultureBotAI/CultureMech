@@ -1,53 +1,55 @@
-name: Cooked Meat Medium
-original_name: Cooked Meat Medium
-category: imported
+id: CultureMech:002953
+name: cooked_meat_medium
+original_name: COOKED MEAT MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J605
+  term:
+    id: mediadive.medium:J605
+    label: COOKED MEAT MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=605'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Cooked meat medium (Oxoid)
+- preferred_term: Cooked meat medium
   concentration:
     value: '55'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-media_term:
-  preferred_term: TOGO Medium M612
+- preferred_term: Glucose
   term:
-    id: TOGO:M612
-    label: Cooked Meat Medium
-notes: 'Source: https://togomedium.org/medium/M612
-
-  Original source: JCM - JCM_M605
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=605'
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Check the final pH to be around 7.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.405850Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M612'
-- timestamp: '2026-01-28T19:48:17.368889Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 2462a0f63ea8c3683708f5aa290bdf32d4fa5c482a237e62ba610b335145dec6
+- timestamp: '2026-01-26T17:53:17.070878Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J605'
+- timestamp: '2026-03-13T06:19:16.796119Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002953'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.399588+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "COOKED MEAT MEDIUM" to "cooked_meat_medium" for consistent
+    matching
+merge_fingerprint: 5c313447b093c15764d9638bf404cc9c1dd67100cf5590b4cc78e294aab8055e
 merged_from:
-- TOGO_M612_Cooked_Meat_Medium
+- cooked_meat_medium

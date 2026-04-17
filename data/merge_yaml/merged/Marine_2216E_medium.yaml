@@ -1,6 +1,7 @@
-name: Marine 2216E medium
+id: CultureMech:008777
+name: marine_2216e_medium
 original_name: Marine 2216E medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Inorganic compound'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: FePO4
   concentration:
     value: '0.01'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:131371
     label: iron(3+) phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000874
+    label: FePO4
 - preferred_term: Tryptone
   concentration:
     value: '0.5'
@@ -58,6 +68,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:00.225048Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008777'
+- timestamp: '2026-03-17T06:30:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:18.890150+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Marine 2216E medium" to "marine_2216e_medium" for consistent
+    matching
 merge_fingerprint: 272a6ef7088b575290703b368aaeac1483754a40090526b1fc4eb47abb1be09e
 merged_from:
-- TOGO_M2183_Marine_2216E_medium
+- marine_2216e_medium

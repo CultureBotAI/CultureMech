@@ -1,8 +1,9 @@
-name: NZ Amine with Soluble Starch and Glucose Agar Medium
+id: CultureMech:008078
+name: nz_amine_with_soluble_starch_and_glucose_agar_medium
 original_name: NZ Amine with Soluble Starch and Glucose Agar Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -33,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Soluble starch
   concentration:
     value: '20'
@@ -46,6 +53,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: N-Z-Amine A
   concentration:
     value: '5'
@@ -71,6 +81,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:53.383762Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008078'
+- timestamp: '2026-03-17T06:30:34.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:11.912640+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NZ Amine with Soluble Starch and Glucose Agar Medium"
+    to "nz_amine_with_soluble_starch_and_glucose_agar_medium" for consistent matching
 merge_fingerprint: 840393575b6d6f9951215ce444d78ac3a910bcfb95f9a6a66cc3e809210615f5
 merged_from:
-- TOGO_M1531_NZ_Amine_with_Soluble_Starch_and_Glucose_Agar_Medium
+- nz_amine_with_soluble_starch_and_glucose_agar_medium

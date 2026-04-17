@@ -1,8 +1,9 @@
-name: M 05
+id: CultureMech:000910
+name: m_05
 original_name: M 05
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1447
   term:
@@ -21,6 +22,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -33,6 +37,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1447'
+- timestamp: '2026-03-13T06:18:59.476850Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000910'
+- timestamp: '2026-03-17T06:29:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:10.991658+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M 05" to "m_05" for consistent matching
+kg_microbe_match: mediadive.medium:12
 merge_fingerprint: 078a0337abe1021c0dfe953a103912c5a0ee550c2a46561caa3f4ffb3fe0e54f
 merged_from:
-- DSMZ_1447_M_05
+- m_05

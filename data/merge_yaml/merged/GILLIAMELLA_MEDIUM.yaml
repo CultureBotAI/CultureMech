@@ -1,8 +1,9 @@
-name: GILLIAMELLA MEDIUM
+id: CultureMech:001136
+name: gilliamella_medium
 original_name: GILLIAMELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1654
@@ -34,6 +35,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000243
+    label: Dextrose
 - preferred_term: ACES
   term:
     id: CHEBI:65994
@@ -41,6 +45,9 @@ ingredients:
   concentration:
     value: '3.64'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000555
+    label: ACES
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -49,6 +56,9 @@ ingredients:
     value: '14'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Charcoal
   term:
     id: CHEBI:91090
@@ -56,6 +66,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000781
+    label: Charcoal
 - preferred_term: Na-ascorbate
   term:
     id: CHEBI:113451
@@ -63,6 +76,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001044
+    label: Na-ascorbate
 preparation_steps:
 - step_number: 1
   action: COOL
@@ -75,6 +91,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1654'
+- timestamp: '2026-03-13T06:19:01.527430Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001136'
+- timestamp: '2026-03-17T06:30:32.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:13.256225+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GILLIAMELLA MEDIUM" to "gilliamella_medium" for consistent
+    matching
 merge_fingerprint: 0e9b81a55f9f9cee5ee6fc294ca1fdb3f430cb0f4cbf6bbc59b773d3804100ec
 merged_from:
-- DSMZ_1654_GILLIAMELLA_MEDIUM
+- gilliamella_medium

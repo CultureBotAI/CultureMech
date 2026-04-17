@@ -1,226 +1,178 @@
-name: modified PYG Medium
-original_name: modified PYG Medium
-category: imported
+id: CultureMech:008619
+name: modified_pyg_medium
+original_name: Modified PYG Medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '950'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.016'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
+- preferred_term: NaCl
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
-    value: '2'
+    value: '0.04'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-- preferred_term: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: NaHCO3
   concentration:
-    value: '1'
+    value: '0.4'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
-    component, Simple component'
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: Tween 80
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Organic compound, Defined component, Simple
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
   term:
-    id: CHEBI:53426
-    label: polysorbate 80
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Glucose
   concentration:
-    value: '5'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Cysteine-HCl
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Beef extract
+- preferred_term: Bacto Tryptone (Difco)
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Tripticase peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Sal Solution*
-  concentration:
-    value: '40'
-    unit: G_PER_L
-- preferred_term: Vitamin K1 solution**
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-- preferred_term: Hemin solution***
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: NaCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: KH2PO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: K2HPO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: NaHCO3
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: Ethanol
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
-    Simple component'
-  term:
-    id: CHEBI:16236
-    label: ethanol
-- preferred_term: vitamin K1
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Solution'
-  term:
-    id: CHEBI:18067
-    label: Vitamin K1
-- preferred_term: NaOH
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Hemin
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:50385
-    label: hemin
+    id: CHEBI:17997
+    label: ''
 media_term:
-  preferred_term: TOGO Medium M3290
+  preferred_term: TOGO Medium M2030
   term:
-    id: TOGO:M3290
-    label: modified PYG Medium
-notes: 'Source: https://togomedium.org/medium/M3290
+    id: TOGO:M2030
+    label: Modified PYG Medium
+notes: 'Source: https://togomedium.org/medium/M2030
 
-  Original source: NBRC - NBRC_M1660
+  Original source: NBRC - NBRC_M1322
 
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1660'
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1322'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:59.264283Z'
+- timestamp: '2026-01-27T06:35:58.912885Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M3290'
-- timestamp: '2026-01-28T19:48:12.189362Z'
+  notes: 'Source: NBRC, ID: M2030'
+- timestamp: '2026-01-28T19:48:42.198687Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.168084'
+  date: '2026-02-03T11:20:51.608415'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: 829560c2bcea1188b77c0583f4e2ed9f22fb08c3b396a46f2e2bfd184d283748
+- timestamp: '2026-03-09T08:05:11.124514+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:58.734913Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008619'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:53.291374'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.355630+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified PYG Medium" to "modified_pyg_medium" for consistent
+    matching
+solutions:
+- preferred_term: Hipolypepton*
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+  name: Unknown solution
+merge_fingerprint: 70bb0b5abccab554424d203b7b99a661c2abdda0371f0283c0fc4d0a456cecd5
 merged_from:
-- TOGO_M3290_modified_PYG_Medium
+- modified_pyg_medium

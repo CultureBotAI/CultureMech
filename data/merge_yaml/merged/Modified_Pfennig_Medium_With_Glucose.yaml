@@ -1,6 +1,7 @@
-name: Modified Pfennig Medium With Glucose
+id: CultureMech:009529
+name: modified_pfennig_medium_with_glucose
 original_name: Modified Pfennig Medium With Glucose
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.16'
@@ -35,6 +42,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -45,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.16'
@@ -54,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: KCl
   concentration:
     value: '0.16'
@@ -63,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MOPS
   concentration:
     value: '2'
@@ -70,6 +89,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:39074
+    label: MOPS
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000285
     label: MOPS
 - preferred_term: Glucose
   concentration:
@@ -80,14 +102,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-- preferred_term: Vitamin solution (see Medium [M940])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M940])
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 media_term:
   preferred_term: TOGO Medium M3011
   term:
@@ -109,6 +126,42 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: fd6ee47c5a054fee71f55dba4116780d530dc183e714f8bae2b89fb4d8e556d8
+- timestamp: '2026-03-09T08:04:38.293075+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:06.618980Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009529'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:59.073412'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.633912+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Pfennig Medium With Glucose" to "modified_pfennig_medium_with_glucose"
+    for consistent matching
+solutions:
+- preferred_term: Vitamin solution (see Medium [M940])
+  composition: []
+  notes: Cross-reference to Medium M940
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Trace element solution (see Medium [M940])
+  composition: []
+  notes: Cross-reference to Medium M940
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: e27e062c3fc4c9e4011b7ef56482884ee075b90d415a4b3368f1ab4cd8013d92
 merged_from:
-- TOGO_M3011_Modified_Pfennig_Medium_With_Glucose
+- modified_pfennig_medium_with_glucose

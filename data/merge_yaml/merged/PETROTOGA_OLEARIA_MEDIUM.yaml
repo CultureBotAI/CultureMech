@@ -1,6 +1,7 @@
-name: PETROTOGA OLEARIA MEDIUM
+id: CultureMech:002137
+name: petrotoga_olearia_medium
 original_name: PETROTOGA OLEARIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -16,8 +17,11 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '15'
+    value: '26'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: PIPES
   term:
     id: CHEBI:39033
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '3.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000276
+    label: PIPES
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.35'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -67,6 +89,9 @@ ingredients:
   concentration:
     value: '0.35'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Na-acetate x 3 H2O
   concentration:
     value: '2.72'
@@ -90,6 +115,9 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -97,6 +125,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -113,29 +144,42 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 959'
-- timestamp: '2026-02-19T08:26:57.534668+00:00'
+- timestamp: '2026-03-13T06:19:10.640049Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002137'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:23.335550+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PETROTOGA OLEARIA MEDIUM" to "petrotoga_olearia_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:04.142049+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_959_PETROTOGA_OLEARIA_MEDIUM, DSMZ_959a_MARINITOGA_LITORALIS_MEDIUM,
-    KOMODO_959-1_For_DSM_21709, KOMODO_959_SL_medium'
+  notes: 'Sources: for_dsm_21709, marinitoga_litoralis_medium, petrotoga_olearia_medium,
+    sl_medium'
 synonyms:
-- name: MARINITOGA LITORALIS MEDIUM
-  source: MediaDive
-  source_id: mediadive.medium:959a
-  original_category: imported
-- name: For DSM 21709
+- name: for_dsm_21709
   source: KOMODO
   source_id: komodo.medium:959.1
-  original_category: imported
-- name: SL medium
+  original_category: bacterial
+- name: marinitoga_litoralis_medium
+  source: MediaDive
+  source_id: mediadive.medium:959a
+  original_category: bacterial
+- name: sl_medium
   source: KOMODO
   source_id: komodo.medium:959
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_959_PETROTOGA_OLEARIA_MEDIUM
-- DSMZ_959a_MARINITOGA_LITORALIS_MEDIUM
-- KOMODO_959-1_For_DSM_21709
-- KOMODO_959_SL_medium
+- for_dsm_21709
+- marinitoga_litoralis_medium
+- petrotoga_olearia_medium
+- sl_medium
 merge_fingerprint: 82299b1232a783eebc1188c4bd6299182e2c40de40d6eb54fd3e668415e91fb9

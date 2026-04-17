@@ -1,8 +1,9 @@
-name: BSW3 Agar
+id: CultureMech:007839
+name: bsw3_agar
 original_name: BSW3 Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Malt extract (BD-Difco)
   concentration:
@@ -24,6 +25,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -32,6 +36,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.4'
@@ -58,6 +65,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:51.875523Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007839'
+- timestamp: '2026-03-17T06:30:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.314311+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BSW3 Agar" to "bsw3_agar" for consistent matching
+kg_microbe_match: mediadive.medium:7
 merge_fingerprint: 4c3144cb6db8ff7bb1c65f5b3c38105a8a04f313ddcceafbdededd2e5ec71b0c
 merged_from:
 - TOGO_M1304_BSW3_Agar

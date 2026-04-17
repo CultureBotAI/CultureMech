@@ -1,6 +1,7 @@
-name: BSK II Medium
+id: CultureMech:008994
+name: bsk_ii_medium
 original_name: BSK II Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: sodium bicarbonate
   concentration:
     value: '2.2'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: sodium bicarbonate
 - preferred_term: sodium pyruvate
   concentration:
     value: '0.8'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: sodium pyruvate
 - preferred_term: sodium citrate
   concentration:
     value: '0.7'
@@ -39,12 +49,62 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
-- preferred_term: bovine serum albumin, FractionV (Miles Laboratories, Elkhart, IN,
-    No.81-003)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000719
+    label: sodium citrate
+- preferred_term: Tryptone
+  term:
+    id: FOODON:03316428
+    label: tryptone
   concentration:
-    value: '50'
+    value: '10.0'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: pancreatic digest of casein
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002960
+    label: yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
 - preferred_term: Yeastolate (Difco)
   concentration:
     value: '2'
@@ -71,6 +131,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: glucose
 - preferred_term: 10X concentrate of CMRL 1066 without glutamine (Gibco Laboratories,
     GrandIsland, NY, No.330-1540)
   concentration:
@@ -90,12 +153,29 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 media_term:
   preferred_term: TOGO Medium M2410
   term:
     id: TOGO:M2410
     label: BSK II Medium
-notes: 'Source: https://togomedium.org/medium/M2410'
+notes: 'Source: https://togomedium.org/medium/M2410
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -111,6 +191,18 @@ curation_history:
   date: '2026-02-03T11:20:53.677801'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
-merge_fingerprint: a04309e21cf329ca178aa3e646374fbbce0282e27bde6184044de807ec31fa7e
+- timestamp: '2026-03-13T06:20:01.880605Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008994'
+- timestamp: '2026-03-17T06:30:31.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.626924+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BSK II Medium" to "bsk_ii_medium" for consistent matching
+merge_fingerprint: 3729dbe6af23b738a93670f79ccfe3eb398cf8a4657e226798dce1015f3be422
 merged_from:
-- TOGO_M2410_BSK_II_Medium
+- bsk_ii_medium

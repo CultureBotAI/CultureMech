@@ -1,6 +1,7 @@
-name: Sterile human urine
+id: CultureMech:009456
+name: sterile_human_urine
 original_name: Sterile human urine
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -22,6 +23,15 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2920'
+- timestamp: '2026-03-13T06:20:06.251482Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009456'
+- timestamp: '2026-03-17T19:46:25.224659+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Sterile human urine" to "sterile_human_urine" for consistent
+    matching
 merge_fingerprint: b9d38810ed1c0bce860a3bf3d45ca5ef801d2a18e612783aa05a42f038d8fef7
 merged_from:
-- TOGO_M2920_Sterile_human_urine
+- sterile_human_urine

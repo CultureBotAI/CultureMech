@@ -1,6 +1,7 @@
-name: PATEL LABORATORY MEDIUM WITH GLYCERIN
+id: CultureMech:003123
+name: patel_laboratory_medium_with_glycerin
 original_name: PATEL LABORATORY MEDIUM WITH GLYCERIN
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -17,6 +18,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 applications:
 - Microbial cultivation
 curation_history:
@@ -24,6 +28,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J780'
+- timestamp: '2026-03-13T06:19:17.980104Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003123'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:31.774788+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PATEL LABORATORY MEDIUM WITH GLYCERIN" to "patel_laboratory_medium_with_glycerin"
+    for consistent matching
+kg_microbe_match: mediadive.medium:J780
 merge_fingerprint: 2149ee660cdadc7603b05f29501a5ac0d5ae23f5ba956298893d0928478375ce
 merged_from:
-- JCM_J780_PATEL_LABORATORY_MEDIUM_WITH_GLYCERIN
+- patel_laboratory_medium_with_glycerin

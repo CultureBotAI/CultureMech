@@ -1,6 +1,7 @@
-name: ANAEROBIC TRYPTIC SOY BROTH MEDIUM
+id: CultureMech:015369
+name: anaerobic_tryptic_soy_broth_medium
 original_name: ANAEROBIC TRYPTIC SOY BROTH MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -43,24 +50,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 869'
-- timestamp: '2026-02-19T08:26:59.930298+00:00'
-  curator: recipe-merger
-  action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: KOMODO_869-12992_MEDIUM_869_MODIFIED_FOR_DSM_12992, KOMODO_869_CLOSTRIDIUM_CK_medium,
-    DSMZ_869_ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM'
-synonyms:
-- name: MEDIUM 869 MODIFIED FOR DSM 12992
-  source: KOMODO
-  source_id: komodo.medium:869_12992
-  original_category: imported
-- name: CLOSTRIDIUM CK medium
-  source: KOMODO
-  source_id: komodo.medium:869
-  original_category: imported
-categories:
-- imported
-merged_from:
-- KOMODO_869-12992_MEDIUM_869_MODIFIED_FOR_DSM_12992
-- KOMODO_869_CLOSTRIDIUM_CK_medium
-- DSMZ_869_ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM
+- timestamp: '2026-03-13T06:20:42.222013Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015369'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.826084+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROBIC TRYPTIC SOY BROTH MEDIUM" to "anaerobic_tryptic_soy_broth_medium"
+    for consistent matching
 merge_fingerprint: 5ed6566986682e5271b86e6424efe23403f60bbe162235c6ab351e09526b5a59
+merged_from:
+- anaerobic_tryptic_soy_broth_medium

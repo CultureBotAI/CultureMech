@@ -1,8 +1,9 @@
-name: YpSs Agar
+id: CultureMech:009706
+name: ypss_agar
 original_name: YpSs Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,29 +14,41 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: MgSO4・7H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
   concentration:
-    value: '0.5'
+    value: '0.125'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
-    value: '4'
+    value: '1'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: K2HPO4
   concentration:
-    value: '1'
+    value: '0.25'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
     compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Soluble starch
   concentration:
-    value: '15'
+    value: '3.75'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
 - preferred_term: Agar
@@ -46,6 +59,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 media_term:
   preferred_term: TOGO Medium M329
   term:
@@ -67,6 +83,30 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 0c204182b1d49efb6ea45466cc5c8e60a19c7c193375eb17470b7e35584b7873
+- timestamp: '2026-03-13T06:20:08.280285Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009706'
+- timestamp: '2026-03-17T06:30:53.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.271509+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YpSs Agar" to "ypss_agar" for consistent matching
+- timestamp: '2026-04-17T06:29:10.551928+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: 1_4_ypss, TOGO_M329_YpSs_Agar'
+synonyms:
+- name: 1_4_ypss
+  source: TOGO
+  source_id: TOGO:M1716
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
+- 1_4_ypss
 - TOGO_M329_YpSs_Agar
+merge_fingerprint: fb910d89ea0c6c5824ca664b8ff942847fcd016ab3f172b969c2e8843e0336f2

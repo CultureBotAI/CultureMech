@@ -1,31 +1,26 @@
-name: Caminibacter Mediatlanticus Medium
+id: CultureMech:009594
+name: caminibacter_mediatlanticus_medium
 original_name: Caminibacter Mediatlanticus Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Solution A
-  concentration:
-    value: '989'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution C
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 - preferred_term: Sodium resazurin (0.1% w/v)
   concentration:
     value: '0.5'
@@ -39,6 +34,9 @@ ingredients:
   term:
     id: CHEBI:36385
     label: strontium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2 x 6 H2O (0.1% w/v)
 - preferred_term: KI (0.01% w/v)
   concentration:
     value: '0.5'
@@ -47,40 +45,52 @@ ingredients:
     compound'
 - preferred_term: Distilled water
   concentration:
-    value: '980'
+    value: '2000.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 4 duplicates: 980.0, 10.0, 10.0, 1000.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
-    value: '3.5'
+    value: '33.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 3.5, 30.0]'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   concentration:
-    value: '30'
+    value: '40.0'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 30.0, 10.0]'
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 x 2 H2O
   concentration:
-    value: '0.75'
+    value: '1.75'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 0.75, 1.0]'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '2.75'
@@ -90,15 +100,21 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2 x 6 H2O
 - preferred_term: H3BO3
   concentration:
-    value: '15'
+    value: '15.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 15.0, 0.1]'
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -108,6 +124,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaBr
   concentration:
     value: '0.05'
@@ -117,29 +136,13 @@ ingredients:
   term:
     id: CHEBI:63004
     label: sodium bromide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: Wolfe's mineral elixir
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Hydrogen gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -148,6 +151,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: KNO3
   concentration:
@@ -158,25 +164,17 @@ ingredients:
   term:
     id: CHEBI:17632
     label: nitrate
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.15'
@@ -186,47 +184,17 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: NaCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.1'
@@ -236,15 +204,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-- preferred_term: H3BO3
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4 x 2 H2O
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '1'
@@ -253,6 +215,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
     label: FeSO4 x 7 H2O
 - preferred_term: CoCl2 x 6 H2O
   concentration:
@@ -263,6 +228,9 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '1.8'
@@ -272,6 +240,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '0.1'
@@ -281,6 +252,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.18'
@@ -289,6 +263,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000293
     label: AlK(SO4)2 x 12 H2O
 - preferred_term: Na2WO4 x 2 H2O
   concentration:
@@ -299,6 +276,9 @@ ingredients:
   term:
     id: CHEBI:63939
     label: sodium tungstate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '5'
@@ -308,6 +288,9 @@ ingredients:
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
   concentration:
     value: '2.8'
@@ -316,6 +299,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86149
+    label: (NH4)2Ni(SO4)2 x 6 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001059
     label: (NH4)2Ni(SO4)2 x 6 H2O
 - preferred_term: Na2SeO4
   concentration:
@@ -326,12 +312,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-- preferred_term: H2SO4 solution
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SeO4
 media_term:
   preferred_term: TOGO Medium M3122
   term:
@@ -360,6 +343,68 @@ curation_history:
     Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     N2; Added default concentration for ingredient: H2SO4 solution'
-merge_fingerprint: 86e85679b2271a5586a49c70f01288b4a0e6f726f4043139f34c9f3795fd2871
+- timestamp: '2026-03-09T08:05:11.954023+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:43.811782Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 10 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:07.180976Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009594'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:59.504847'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.206828+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Caminibacter Mediatlanticus Medium" to "caminibacter_mediatlanticus_medium"
+    for consistent matching
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '989'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution C
+  term:
+    id: mediadive.solution:5312
+    label: Solution C
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5312_Solution_C.yaml for composition
+  name: Unknown solution
+- preferred_term: H2SO4 solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+  name: Unknown solution
+merge_fingerprint: 3a74a5142f1d722546535aa956dc4b772156f4582472110f40911f9828ef8b49
 merged_from:
 - TOGO_M3122_Caminibacter_Mediatlanticus_Medium

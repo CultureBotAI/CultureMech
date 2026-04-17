@@ -1,6 +1,7 @@
-name: M9 minimal medium with gluconate
+id: CultureMech:007423
+name: m9_minimal_medium_with_gluconate
 original_name: M9 minimal medium with gluconate
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -24,6 +25,9 @@ ingredients:
   concentration:
     value: '8.6'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0'
@@ -35,6 +39,9 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -42,6 +49,9 @@ ingredients:
   concentration:
     value: '19.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -58,6 +68,19 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 75, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:48.983707Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007423'
+- timestamp: '2026-03-17T06:30:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:07.361057+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M9 minimal medium with gluconate" to "m9_minimal_medium_with_gluconate"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 75
   term:
@@ -71,4 +94,4 @@ applications:
 - Systems biology research
 merge_fingerprint: c1acfd0db5b67157692dfdbb69b02812adb8c393a26b247dde774d83786858a2
 merged_from:
-- MEDIADB_75_M9_minimal_medium_with_gluconate
+- m9_minimal_medium_with_gluconate

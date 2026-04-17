@@ -1,6 +1,7 @@
-name: Distilled Water
+id: CultureMech:010087
+name: distilled_water
 original_name: Distilled Water
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 media_term:
   preferred_term: TOGO Medium M682
@@ -34,6 +38,43 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: f6481d0bcfa02ad682282ee3d57c5eac82754fe1de56a29860075f15c1842b69
+- timestamp: '2026-03-13T06:20:11.200012Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010087'
+- timestamp: '2026-03-17T06:30:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.125761+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Distilled Water" to "distilled_water" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:40.640755+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1525_GAM_Medium, TOGO_M682_Distilled_Water, distilled_water,
+    togo_medium_m1444, water'
+synonyms:
+- name: gam_medium
+  source: TOGO
+  source_id: TOGO:M1525
+  original_category: bacterial
+- name: togo_medium_m1444
+  source: TOGO
+  source_id: TOGO:M1444
+  original_category: bacterial
+- name: Water
+  source: unknown
+  original_category: SPECIALIZED
+categories:
+- SPECIALIZED
+- bacterial
 merged_from:
+- TOGO_M1525_GAM_Medium
 - TOGO_M682_Distilled_Water
+- distilled_water
+- togo_medium_m1444
+- water
+merge_fingerprint: f6481d0bcfa02ad682282ee3d57c5eac82754fe1de56a29860075f15c1842b69

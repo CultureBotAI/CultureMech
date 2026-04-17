@@ -1,6 +1,7 @@
-name: ASWP
+id: CultureMech:000319
+name: aswp
 original_name: ASWP
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.6-7.8
@@ -19,6 +20,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:35920
+    label: ''
 - preferred_term: NaNO3
   term:
     id: CHEBI:59148
@@ -26,6 +30,9 @@ ingredients:
   concentration:
     value: '5.625'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -33,6 +40,9 @@ ingredients:
   concentration:
     value: '0.225'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -40,6 +50,9 @@ ingredients:
   concentration:
     value: '0.188'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Soil
   concentration:
     value: variable
@@ -84,6 +97,18 @@ curation_history:
   date: '2026-02-03T11:20:16.893893'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
-merge_fingerprint: d21442ec67b11fb68557df4e2de4b2283c6be5132315bc4aec9302659d009333
+- timestamp: '2026-03-13T06:18:54.420670Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000319'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.393642+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ASWP" to "aswp" for consistent matching
+merge_fingerprint: 380386d683174932abbd55c37e49bd16b11d24acf2da2c25c270198dfe920eab
 merged_from:
-- CCAP_C12_ASWP
+- aswp

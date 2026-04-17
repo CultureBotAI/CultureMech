@@ -1,15 +1,17 @@
-name: CYS MEDIUM WITH MODIFIED NACL CONCENTRATION
+id: CultureMech:003809
+name: cys_medium_with_modified_nacl_concentration
 original_name: CYS MEDIUM WITH MODIFIED NACL CONCENTRATION
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
-  preferred_term: DSMZ Medium 1108a
+  preferred_term: KOMODO Medium 1108a
   term:
-    id: mediadive.medium:1108a
+    id: komodo.medium:1108a
     label: CYS MEDIUM WITH MODIFIED NACL CONCENTRATION
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1108a.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 1108a | DSMZ Medium: 1108a (mediadive.medium:1108a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: N-Z-Case
   concentration:
@@ -26,13 +28,19 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '3'
+    value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -40,6 +48,9 @@ ingredients:
   concentration:
     value: '0.125'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -47,6 +58,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -54,6 +68,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Gelrite
   term:
     id: CHEBI:85248
@@ -61,6 +78,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000929
+    label: Gelrite
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -68,6 +88,9 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: VOSO4 x H2O
   concentration:
     value: '1'
@@ -79,6 +102,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -86,6 +112,9 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -93,6 +122,9 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -100,6 +132,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -107,41 +142,52 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: 'Add 100 µl each of Trace Metal solutions according to the following
-    order:'
-- step_number: 2
-  action: AUTOCLAVE
-  description: Adjust to pH 7.5 at room temperature and add water to the final volume
-    of 1 liter. Sterilize with and autoclave at 121°C for 15 min.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.405784Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1108a'
-- timestamp: '2026-02-19T08:26:39.525703+00:00'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1108a'
+- timestamp: '2026-02-03T11:19:01.845808'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1108
+- timestamp: '2026-03-13T06:19:22.400274Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003809'
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:36.784433+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CYS MEDIUM WITH MODIFIED NACL CONCENTRATION" to "cys_medium_with_modified_nacl_concentration"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:15.469553+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1108_CYS_MEDIUM, DSMZ_1108a_CYS_MEDIUM_WITH_MODIFIED_NACL_CONCENTRATION,
-    KOMODO_1108_CYS_MEDIUM, KOMODO_1108a_CYS_MEDIUM_WITH_MODIFIED_NACL_CONCENTRATION'
+  notes: 'Sources: KOMODO_1108_CYS_MEDIUM, KOMODO_1108a_CYS_MEDIUM_WITH_MODIFIED_NACL_CONCENTRATION,
+    cys_medium, cys_medium_with_modified_nacl_concentration'
 synonyms:
-- name: CYS MEDIUM
-  source: MediaDive
-  source_id: mediadive.medium:1108
-  original_category: imported
-- name: CYS MEDIUM
+- name: cys_medium
   source: KOMODO
   source_id: komodo.medium:1108
-  original_category: imported
+  original_category: bacterial
+- name: cys_medium
+  source: MediaDive
+  source_id: mediadive.medium:1108
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1108_CYS_MEDIUM
-- DSMZ_1108a_CYS_MEDIUM_WITH_MODIFIED_NACL_CONCENTRATION
 - KOMODO_1108_CYS_MEDIUM
 - KOMODO_1108a_CYS_MEDIUM_WITH_MODIFIED_NACL_CONCENTRATION
+- cys_medium
+- cys_medium_with_modified_nacl_concentration
 merge_fingerprint: 6dd1f66e84dc624e2a99a76cfa33fec9a2ec8bd8a2471f7382da83ffda2934cc

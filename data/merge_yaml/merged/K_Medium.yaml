@@ -1,95 +1,209 @@
-name: K Medium
+id: CultureMech:000352
+name: k_medium
 original_name: K Medium
-category: imported
-medium_type: COMPLEX
+category: bacterial
+medium_type: DEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '990'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 8.0
+media_term:
+  preferred_term: CCAP Medium C42
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
+    id: mediadive.medium:C42
+    label: K Medium
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_K.pdf'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
   concentration:
-    value: '0.125'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: NaCl
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+- preferred_term: (NH4)Cl
+  term:
+    id: CHEBI:31206
+    label: (NH4)Cl
+  concentration:
+    value: '1.5274'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: (NH4)Cl
+- preferred_term: Sodium beta-glycerophosphate
+  term:
+    id: CHEBI:132089
+    label: Sodium beta-glycerophosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000486
+    label: Sodium beta-glycerophosphate
+- preferred_term: H2SeO3
+  term:
+    id: CHEBI:26642
+    label: H2SeO3
+  concentration:
+    value: '0.03004'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000434
+    label: H2SeO3
+- preferred_term: Tris base
+  term:
+    id: CHEBI:9754
+    label: Tris base
+  concentration:
+    value: '0.6181'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000880
+    label: Tris base
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '43.6'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '31.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
+- preferred_term: Cyanocobalamin
   term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: KH2PO4
+    id: CHEBI:17439
+    label: Cyanocobalamin
   concentration:
-    value: '2'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Cyanocobalamin
+- preferred_term: Biotin
   term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: FeSO4・7H2O
+    id: CHEBI:15956
+    label: Biotin
   concentration:
-    value: '0.02'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: (NH4)2SO4
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: Methanol
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:17790
-    label: methanol
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-media_term:
-  preferred_term: TOGO Medium M1236
-  term:
-    id: TOGO:M1236
-    label: K Medium
-notes: 'Source: https://togomedium.org/medium/M1236
-
-  Original source: JCM - JCM_M1154
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1154'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: "Note for Tris base: First add to 50ml of DIW and pH. Then slowly top\
+    \ up to 100ml with DIW ensuring\r\nto check pH remains at 7.2."
+- step_number: 2
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
+    \ with 1M NaOH or 1M HCl.\r\nAutoclave at 15 psi for 15 minutes."
+- step_number: 3
+  action: DISSOLVE
+  description: "There are 7 chemicals. Prepare Primary stock solutions first. Add\
+    \ first three\r\nchemicals separately in 100ml/dH2O, allowing each to completely\
+    \ dissolve\r\nbefore adding the primary stocks in order:"
+- step_number: 4
+  action: MIX
+  description: First make primary stocks of Cyanocobalamin and Biotin.
+- step_number: 5
+  action: POUR_PLATES
+  description: Dispense any excess primary stocks into 1 ml aliquots and freeze.
+- step_number: 6
+  action: MIX
+  description: 'For final vitamin mix stock solution:'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.191203Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1236'
-- timestamp: '2026-01-28T19:48:30.773166Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 43026bf1ee679a59fc9149b20198cfbdcdd8feb3bd15769ad5a082806c0e45f2
+- timestamp: '2026-01-26T17:53:19.613546Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C42'
+- timestamp: '2026-03-13T06:18:54.678187Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000352'
+- timestamp: '2026-03-17T06:30:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.675661+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "K Medium" to "k_medium" for consistent matching
+merge_fingerprint: 83e9ec2c301735908fd8e69c116a53ee5451a825c95060daf11b296bc06b6d51
 merged_from:
-- TOGO_M1236_K_Medium
+- k_medium

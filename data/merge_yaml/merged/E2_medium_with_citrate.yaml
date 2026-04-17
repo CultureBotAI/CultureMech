@@ -1,6 +1,7 @@
-name: E2 medium with citrate
+id: CultureMech:007094
+name: e2_medium_with_citrate
 original_name: E2 medium with citrate
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -16,6 +17,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.01'
@@ -39,6 +43,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01'
@@ -50,6 +57,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.01'
@@ -78,6 +88,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:46.099080Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007094'
+- timestamp: '2026-03-17T06:30:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.230200+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "E2 medium with citrate" to "e2_medium_with_citrate"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 201
   term:
@@ -91,4 +114,4 @@ applications:
 - Systems biology research
 merge_fingerprint: e075c76c8f1f1b88b6bcd7688651fcaea8e04085bd450ec4c9a58da358b19bf0
 merged_from:
-- MEDIADB_201_E2_medium_with_citrate
+- e2_medium_with_citrate

@@ -1,15 +1,17 @@
-name: MYCT MEDIUM
-original_name: MYCT MEDIUM
-category: imported
+id: CultureMech:006930
+name: myct_medium
+original_name: MYCT medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
 media_term:
-  preferred_term: DSMZ Medium 972
+  preferred_term: KOMODO Medium 972
   term:
-    id: mediadive.medium:972
-    label: MYCT MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium972.pdf'
+    id: komodo.medium:972
+    label: MYCT medium
+notes: 'Source: KOMODO ModelSEED | ID: 972 | DSMZ Medium: 972 (mediadive.medium:972)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '13.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: MnSO4 x 4 H2O
   term:
     id: CHEBI:86358
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000711
+    label: MnSO4 x 4 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -68,6 +88,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Cyclomaltoheptaose
   term:
     id: CHEBI:495055
@@ -75,29 +98,39 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 6.5.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000853
+    label: Cyclomaltoheptaose
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.945385Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 972'
-- timestamp: '2026-02-19T08:26:57.807989+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 972'
+- timestamp: '2026-02-03T11:18:59.540379'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 972
+- timestamp: '2026-03-13T06:19:45.062427Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006930'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.079217+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MYCT medium" to "myct_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:35.696723+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_972_MYCT_MEDIUM, KOMODO_972_MYCT_medium'
-synonyms:
-- name: MYCT medium
-  source: KOMODO
-  source_id: komodo.medium:972
-  original_category: imported
+  notes: 'Sources: KOMODO_972_MYCT_medium, myct_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_972_MYCT_MEDIUM
 - KOMODO_972_MYCT_medium
+- myct_medium
 merge_fingerprint: 6b426328a678923444417ba4f631be3e746e6ded2091f02e2d87372b056bd623

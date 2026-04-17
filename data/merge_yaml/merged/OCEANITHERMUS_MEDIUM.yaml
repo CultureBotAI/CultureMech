@@ -1,263 +1,421 @@
-name: OCEANITHERMUS MEDIUM
-original_name: OCEANITHERMUS MEDIUM
-category: imported
+id: CultureMech:008122
+name: oceanithermus_medium
+original_name: Oceanithermus medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 6.5
-media_term:
-  preferred_term: DSMZ Medium 1149
-  term:
-    id: mediadive.medium:1149
-    label: OCEANITHERMUS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1149.pdf'
 ingredients:
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
+- preferred_term: Distilled water
   concentration:
-    value: '0.78'
+    value: '3.0'
     unit: G_PER_L
-- preferred_term: KH2PO4
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '0.75'
-    unit: G_PER_L
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '0.36'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.53'
-    unit: G_PER_L
-- preferred_term: Na2SO4
-  term:
-    id: CHEBI:32149
-    label: Na2SO4
-  concentration:
-    value: '0.14'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '20'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
-- preferred_term: NaNO3
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '21.0'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 20.0, 1.0]'
   term:
-    id: CHEBI:59148
-    label: NaNO3
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.23'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 0.1, 0.13]'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.78'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
+- preferred_term: NaHCO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: NaNO3
   concentration:
     value: '1.7'
     unit: G_PER_L
-- preferred_term: Nitrilotriacetic acid
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:44557
-    label: Nitrilotriacetic acid
+    id: CHEBI:63005
+    label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
+- preferred_term: N2
+  notes: 'Properties: Gas'
   concentration:
-    value: '12.8'
-    unit: G_PER_L
-- preferred_term: FeCl3 x 6 H2O
+    value: variable
+    unit: VARIABLE
   term:
-    id: CHEBI:86254
-    label: FeCl3 x 6 H2O
+    id: CHEBI:17997
+    label: ''
+- preferred_term: MgSO4·7H2O
   concentration:
-    value: '1.35'
+    value: '6.2'
     unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
+- preferred_term: Na2MoO4·2H2O
+  concentration:
+    value: '0.011'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
+- preferred_term: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
+- preferred_term: FeSO4·7H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: CoCl2 x 6 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
+- preferred_term: CoCl2·6H2O
+  concentration:
+    value: '0.17'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '0.024'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: ZnCl2
-  term:
-    id: CHEBI:49976
-    label: ZnCl2
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: CuCl2 x 2 H2O
+    label: ''
+- preferred_term: NiCl2·6H2O
   concentration:
     value: '0.025'
     unit: G_PER_L
-- preferred_term: H3BO3
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:33118
-    label: H3BO3
+    id: CHEBI:34887
+    label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2·6H2O
+- preferred_term: ZnSO4·7H2O
   concentration:
-    value: '0.01'
+    value: '0.18'
     unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
+- preferred_term: KAl(SO4)2·12H2O
   concentration:
-    value: '0.024'
+    value: '0.018'
     unit: G_PER_L
-- preferred_term: NaCl
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:26710
-    label: NaCl
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000293
+    label: KAl(SO4)2·12H2O
+- preferred_term: MnSO4·4H2O
+  concentration:
+    value: '0.55'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86358
+    label: ''
+- preferred_term: CuSO4
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: CuSO4
+- preferred_term: 2Na-EDTA
+  concentration:
+    value: '0.64'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: 2Na-EDTA
+- preferred_term: Biotin
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+- preferred_term: p-Aminobenzoic acid
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
+- preferred_term: Thiamine-HCl
   concentration:
-    value: '0.12'
+    value: '5'
     unit: G_PER_L
-- preferred_term: Na2SeO3 x 5 H2O
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine-HCl
+- preferred_term: Ca-pantothenate
   concentration:
-    value: '0.026'
+    value: '5'
     unit: G_PER_L
-- preferred_term: Biotin
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:15956
-    label: Biotin
+    id: CHEBI:29032
+    label: (R)-pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000219
+    label: Ca-pantothenate
+- preferred_term: Pyridoxine-HCl
   concentration:
-    value: '0.002'
+    value: '10'
     unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine-HCl
 - preferred_term: Folic acid
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:27470
+    label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
     label: Folic acid
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
+- preferred_term: Vitamin B12
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: Thiamine-HCl x 2 H2O
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
+    id: CHEBI:176843
+    label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:17015
+    label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
     label: Riboflavin
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
 - preferred_term: Nicotinic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:15940
+    label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
     label: Nicotinic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-- preferred_term: D-Calcium pantothenate
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M1573
   term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-- preferred_term: Lipoic acid
-  term:
-    id: CHEBI:16494
-    label: Lipoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: FILTER_STERILIZE
-  description: Prepare the medium without vitamins, boil and cool under a nitrogen:carbon
-    dioxide (80:20 v/v) atmosphere. Vitamins (filter sterilized and stored under nitrogen)
-    and 100 ml 0.6 M NaHCO3 solution (sterilized and stored under nitrogen) are added
-    from stock solutions.
-- step_number: 2
-  action: MIX
-  description: The pH should be pH 6.5.
+    id: TOGO:M1573
+    label: Oceanithermus medium
+notes: 'Source: https://togomedium.org/medium/M1573
+
+  Original source: NBRC - NBRC_M377
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=377'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.515654Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1149'
-- timestamp: '2026-01-28T19:48:26.270697Z'
+- timestamp: '2026-01-27T06:35:57.862071Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1573'
+- timestamp: '2026-01-28T19:48:27.319888Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:40.113457+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1149_OCEANITHERMUS_MEDIUM, KOMODO_1149_OCEANITHERMUS_medium'
-synonyms:
-- name: OCEANITHERMUS medium
-  source: KOMODO
-  source_id: komodo.medium:1149
-  original_category: imported
-categories:
-- imported
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:48.179685'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:45.281137+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:15.725839Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:53.661049Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008122'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:49.478850'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.208786+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Oceanithermus medium" to "oceanithermus_medium" for
+    consistent matching
+solutions:
+- preferred_term: Trace element solution*
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution
+- preferred_term: Vitamin solution**
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition
+  name: Unknown solution
+merge_fingerprint: c4ab41d0b95e86fabbf02b610f652edd61a1c5c0f0bdd71464514cfca4d53b86
 merged_from:
-- DSMZ_1149_OCEANITHERMUS_MEDIUM
-- KOMODO_1149_OCEANITHERMUS_medium
-merge_fingerprint: 4b4ff35b17598548a5df5d32210ecf19856a82b623c00be8f7a6bb5f7f40ec06
+- TOGO_M1573_Oceanithermus_medium

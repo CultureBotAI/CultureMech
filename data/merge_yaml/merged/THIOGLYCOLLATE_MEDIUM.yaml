@@ -1,53 +1,51 @@
-name: Thioglycollate Medium
-original_name: Thioglycollate Medium
-category: imported
-medium_type: COMPLEX
+id: CultureMech:002878
+name: thioglycollate_medium
+original_name: THIOGLYCOLLATE MEDIUM
+category: bacterial
+medium_type: DEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+media_term:
+  preferred_term: JCM Medium J529
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Thioglycollate medium (Sigma)
+    id: mediadive.medium:J529
+    label: THIOGLYCOLLATE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=529'
+ingredients:
+- preferred_term: Thioglycolate
+  term:
+    id: CHEBI:30066
+    label: Thioglycolate
   concentration:
     value: '29.8'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M531
-  term:
-    id: TOGO:M531
-    label: Thioglycollate Medium
-notes: 'Source: https://togomedium.org/medium/M531
-
-  Original source: JCM - JCM_M529-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=529'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000649
+    label: Thioglycolate
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Comment: The medium is semisolid. For strain JCM 13596, prepare the
+    medium anaerobically (under N2).'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.242306Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M531'
-- timestamp: '2026-01-28T19:48:35.029417Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.275681'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: 037e5b5ba8bef5fa988eaf6c5af3ed6e69b7a0b70b05b2ab5cf3ae05a191ca28
+- timestamp: '2026-01-26T17:53:16.851048Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J529'
+- timestamp: '2026-03-13T06:19:16.282478Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002878'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:29.807989+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOGLYCOLLATE MEDIUM" to "thioglycollate_medium" for
+    consistent matching
+merge_fingerprint: bfdc2c9bc6afc8e9c2b651e49cfe403b6111c61e8fa5125a6c87c1690cd93d99
 merged_from:
-- TOGO_M531_Thioglycollate_Medium
+- thioglycollate_medium

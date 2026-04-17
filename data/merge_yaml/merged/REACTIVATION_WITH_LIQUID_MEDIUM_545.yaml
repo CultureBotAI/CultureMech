@@ -1,8 +1,9 @@
-name: REACTIVATION WITH LIQUID MEDIUM 545
+id: CultureMech:001684
+name: reactivation_with_liquid_medium_545
 original_name: REACTIVATION WITH LIQUID MEDIUM 545
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: DSMZ Medium 54a
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -37,6 +44,9 @@ ingredients:
     value: '17'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Casein peptone
   concentration:
     value: '17'
@@ -52,6 +62,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D(+)-Glucose
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -59,6 +72,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -66,6 +82,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -85,6 +104,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 54a'
+- timestamp: '2026-03-13T06:19:06.423980Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001684'
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:18.617188+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "REACTIVATION WITH LIQUID MEDIUM 545" to "reactivation_with_liquid_medium_545"
+    for consistent matching
 merge_fingerprint: de9f4b372d31d4789430cfa4f54126310ac0bbdd80031930576a5a1939189bfb
 merged_from:
-- DSMZ_54a_REACTIVATION_WITH_LIQUID_MEDIUM_545
+- reactivation_with_liquid_medium_545

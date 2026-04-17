@@ -1,139 +1,125 @@
-name: SPORULATION MEDIUM
-original_name: SPORULATION MEDIUM
-category: imported
+id: CultureMech:008442
+name: sporulation_medium
+original_name: Sporulation Medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-media_term:
-  preferred_term: DSMZ Medium 531
-  term:
-    id: mediadive.medium:531
-    label: SPORULATION MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium531.pdf'
+physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Nutrient broth
+- preferred_term: Distilled water
   concentration:
-    value: '6'
+    value: '1000.0'
     unit: G_PER_L
-- preferred_term: Yeast extract
+  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
+    Inorganic compound [Merged 3 duplicates: 800.0, 100.0, 100.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '0.278'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:75836
+    label: ''
+- preferred_term: KCl
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Trypticase
-  concentration:
-    value: '2'
-    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
-    id: CHEBI:78018
-    label: dodecylphosphocholine
-- preferred_term: MnSO4 x H2O
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Nutrient broth
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Ca(NO3)2·4H2O
+  concentration:
+    value: '236.15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
+    id: CHEBI:86159
+    label: calcium nitrate tetrahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000586
+    label: Ca(NO3)2·4H2O
+- preferred_term: MnCl2·4H2O
   concentration:
-    value: '0.0005'
+    value: '1.979'
     unit: G_PER_L
-- preferred_term: Marine Broth
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Agar
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Inosin
+    id: CHEBI:86368
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M1868
   term:
-    id: CHEBI:17596
-    label: Inosin
-  concentration:
-    value: '0.00134113'
-    unit: G_PER_L
+    id: TOGO:M1868
+    label: Sporulation Medium
+notes: 'Source: https://togomedium.org/medium/M1868
+
+  Original source: NBRC - NBRC_M1113
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1113'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.546402Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 531'
-- timestamp: '2026-01-28T19:48:37.602466Z'
+- timestamp: '2026-01-27T06:35:58.546074Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1868'
+- timestamp: '2026-01-28T19:48:17.696550Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:50.858824+00:00'
-  curator: recipe-merger
-  action: Merged 13 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_531_SPORULATION_MEDIUM, KOMODO_531-1314_MEDIUM_531_MODIFIED_FOR_DSM_1314,
-    KOMODO_531-4332_MEDIUM_531_MODIFIED_FOR_DSM_4332, KOMODO_531-4333_MEDIUM_531_MODIFIED_FOR_DSM_4333,
-    KOMODO_531-4334_MEDIUM_531_MODIFIED_FOR_DSM_4334, KOMODO_531-4335_MEDIUM_531_MODIFIED_FOR_DSM_4335,
-    KOMODO_531-6800_MEDIUM_531_MODIFIED_FOR_DSM_6800, KOMODO_531-6801_MEDIUM_531_MODIFIED_FOR_DSM_6801,
-    KOMODO_531-6802_MEDIUM_531_MODIFIED_FOR_DSM_6802, KOMODO_531-6803_MEDIUM_531_MODIFIED_FOR_DSM_6803,
-    KOMODO_531-6804_MEDIUM_531_MODIFIED_FOR_DSM_6804, KOMODO_531-6805_MEDIUM_531_MODIFIED_FOR_DSM_6805,
-    KOMODO_531_SPORULATION_medium'
-synonyms:
-- name: MEDIUM 531 MODIFIED FOR DSM 1314
-  source: KOMODO
-  source_id: komodo.medium:531_1314
-  original_category: imported
-- name: MEDIUM 531 MODIFIED FOR DSM 4332
-  source: KOMODO
-  source_id: komodo.medium:531_4332
-  original_category: imported
-- name: MEDIUM 531 MODIFIED FOR DSM 4333
-  source: KOMODO
-  source_id: komodo.medium:531_4333
-  original_category: imported
-- name: MEDIUM 531 MODIFIED FOR DSM 4334
-  source: KOMODO
-  source_id: komodo.medium:531_4334
-  original_category: imported
-- name: MEDIUM 531 MODIFIED FOR DSM 4335
-  source: KOMODO
-  source_id: komodo.medium:531_4335
-  original_category: imported
-- name: MEDIUM 531 MODIFIED FOR DSM 6800
-  source: KOMODO
-  source_id: komodo.medium:531_6800
-  original_category: imported
-- name: MEDIUM 531 MODIFIED FOR DSM 6801
-  source: KOMODO
-  source_id: komodo.medium:531_6801
-  original_category: imported
-- name: MEDIUM 531 MODIFIED FOR DSM 6802
-  source: KOMODO
-  source_id: komodo.medium:531_6802
-  original_category: imported
-- name: MEDIUM 531 MODIFIED FOR DSM 6803
-  source: KOMODO
-  source_id: komodo.medium:531_6803
-  original_category: imported
-- name: MEDIUM 531 MODIFIED FOR DSM 6804
-  source: KOMODO
-  source_id: komodo.medium:531_6804
-  original_category: imported
-- name: MEDIUM 531 MODIFIED FOR DSM 6805
-  source: KOMODO
-  source_id: komodo.medium:531_6805
-  original_category: imported
-- name: SPORULATION medium
-  source: KOMODO
-  source_id: komodo.medium:531
-  original_category: imported
-categories:
-- imported
+- timestamp: '2026-03-13T03:08:58.157641Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:56.921579Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008442'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.502649+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Sporulation Medium" to "sporulation_medium" for consistent
+    matching
+high_metal: true
+merge_fingerprint: d65a443a55fd6627624bdfb3b596cf3265b54ebedee97a2fa31aa0e0996e097a
 merged_from:
-- DSMZ_531_SPORULATION_MEDIUM
-- KOMODO_531-1314_MEDIUM_531_MODIFIED_FOR_DSM_1314
-- KOMODO_531-4332_MEDIUM_531_MODIFIED_FOR_DSM_4332
-- KOMODO_531-4333_MEDIUM_531_MODIFIED_FOR_DSM_4333
-- KOMODO_531-4334_MEDIUM_531_MODIFIED_FOR_DSM_4334
-- KOMODO_531-4335_MEDIUM_531_MODIFIED_FOR_DSM_4335
-- KOMODO_531-6800_MEDIUM_531_MODIFIED_FOR_DSM_6800
-- KOMODO_531-6801_MEDIUM_531_MODIFIED_FOR_DSM_6801
-- KOMODO_531-6802_MEDIUM_531_MODIFIED_FOR_DSM_6802
-- KOMODO_531-6803_MEDIUM_531_MODIFIED_FOR_DSM_6803
-- KOMODO_531-6804_MEDIUM_531_MODIFIED_FOR_DSM_6804
-- KOMODO_531-6805_MEDIUM_531_MODIFIED_FOR_DSM_6805
-- KOMODO_531_SPORULATION_medium
-merge_fingerprint: a796b155355f196a255a899434711effbc5098925af39c640be490a3ca43e5da
+- TOGO_M1868_Sporulation_Medium

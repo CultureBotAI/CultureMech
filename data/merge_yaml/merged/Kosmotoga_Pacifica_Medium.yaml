@@ -1,6 +1,7 @@
-name: Kosmotoga Pacifica Medium
+id: CultureMech:007550
+name: kosmotoga_pacifica_medium
 original_name: Kosmotoga Pacifica Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -18,20 +19,25 @@ ingredients:
   term:
     id: CHEBI:16283
     label: L-cystine
-- preferred_term: METHANOCALDOCOCCUS JANNASCHII MEDIUM (see Medium [M225])
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001062
+    label: L-cystine
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M1035
   term:
@@ -58,6 +64,35 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas'
-merge_fingerprint: 328dd89eaa0f4568a15d1b120408f8841dd62efd1f531db22a2fe30c06c07019
+- timestamp: '2026-03-09T08:04:54.443394+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:49.589195Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007550'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.189878'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:07.935491+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Kosmotoga Pacifica Medium" to "kosmotoga_pacifica_medium"
+    for consistent matching
+solutions:
+- preferred_term: METHANOCALDOCOCCUS JANNASCHII MEDIUM (see Medium [M225])
+  composition: []
+  notes: Cross-reference to Medium M225
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: f1b0c49f6552e8585dd27be3521de5560065f6b8a585ea3fa7dee2fb3b5fa7d0
 merged_from:
 - TOGO_M1035_Kosmotoga_Pacifica_Medium

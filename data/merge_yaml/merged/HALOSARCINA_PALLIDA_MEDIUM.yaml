@@ -1,6 +1,7 @@
-name: HALOSARCINA PALLIDA MEDIUM
+id: CultureMech:002991
+name: halosarcina_pallida_medium
 original_name: HALOSARCINA PALLIDA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -11,13 +12,6 @@ media_term:
     label: HALOSARCINA PALLIDA MEDIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=645'
 ingredients:
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '180'
-    unit: G_PER_L
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,13 +19,19 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-- preferred_term: K2SO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+- preferred_term: K2SO4 x 7 H2O
   term:
     id: CHEBI:32036
-    label: K2SO4
+    label: K2SO4 x 7 H2O
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001064
+    label: K2SO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -39,13 +39,19 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: NH4Cl
   concentration:
-    value: '0.5'
+    value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -53,17 +59,33 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
     unit: G_PER_L
 - preferred_term: Casamino acids
   concentration:
-    value: '5'
+    value: '0.5'
     unit: G_PER_L
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '180'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -83,18 +105,32 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:58.560143+00:00'
+- timestamp: '2026-03-13T06:19:17.017559Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002991'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.650128+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOSARCINA PALLIDA MEDIUM" to "halosarcina_pallida_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:05.820061+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: JCM_J645_HALOSARCINA_PALLIDA_MEDIUM, JCM_J878_HALOBACTERIA_HMD_MEDIUM'
+  notes: 'Sources: halobacteria_hmd_medium, halosarcina_pallida_medium'
+high_metal: true
 synonyms:
-- name: HALOBACTERIA HMD MEDIUM
+- name: halobacteria_hmd_medium
   source: MediaDive
   source_id: mediadive.medium:J878
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- JCM_J645_HALOSARCINA_PALLIDA_MEDIUM
-- JCM_J878_HALOBACTERIA_HMD_MEDIUM
+- halobacteria_hmd_medium
+- halosarcina_pallida_medium
 merge_fingerprint: fcf8d1da0a9e73225fc32236e21d0d8e2aaac655fb2cf7afc3887124d084776f

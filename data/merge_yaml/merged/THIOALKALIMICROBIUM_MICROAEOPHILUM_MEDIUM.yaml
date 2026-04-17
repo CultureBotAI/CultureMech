@@ -1,6 +1,7 @@
-name: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
+id: CultureMech:000689
+name: thioalkalimicrobium_microaeophilum_medium
 original_name: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 9-9.5
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: Sodium thiosulfate pentahydrate
   term:
     id: CHEBI:32150
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '4.96372'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Sodium thiosulfate pentahydrate
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -67,6 +89,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -74,6 +99,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -81,6 +109,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -88,6 +119,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -95,6 +129,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -102,6 +139,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -109,6 +149,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -116,6 +159,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -141,13 +187,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1230'
-- timestamp: '2026-02-19T08:26:41.383925+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1230_THIOALKALIMICROBIUM_MICROAEOPHILUM_MEDIUM, KOMODO_1230_THIOALKALIMICROBIUM_MICROAEOPHILUM_MEDIUM'
-categories:
-- imported
-merged_from:
-- DSMZ_1230_THIOALKALIMICROBIUM_MICROAEOPHILUM_MEDIUM
-- KOMODO_1230_THIOALKALIMICROBIUM_MICROAEOPHILUM_MEDIUM
+- timestamp: '2026-03-13T06:18:57.472481Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000689'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:08.756060+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM" to "thioalkalimicrobium_microaeophilum_medium"
+    for consistent matching
 merge_fingerprint: 82ff26adda4005cad6466b4ee8c17276c875d09c7dab75d9ff0711fd62710d6b
+merged_from:
+- thioalkalimicrobium_microaeophilum_medium

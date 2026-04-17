@@ -1,6 +1,7 @@
-name: VY MEDIUM
+id: CultureMech:001704
+name: vy_medium
 original_name: VY MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -30,6 +31,14 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 577'
+- timestamp: '2026-03-13T06:19:06.569662Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001704'
+- timestamp: '2026-03-17T19:45:18.778253+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "VY MEDIUM" to "vy_medium" for consistent matching
 merge_fingerprint: 9a8486e2440905fae2b4c2f0bc327770d838ef806df2101a06de55b43add60e2
 merged_from:
-- DSMZ_577_VY_MEDIUM
+- vy_medium

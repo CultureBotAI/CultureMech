@@ -1,6 +1,7 @@
-name: mannitol standard medium
+id: CultureMech:009387
+name: mannitol_standard_medium
 original_name: mannitol standard medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: yeast extract
   concentration:
@@ -26,6 +30,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:29864
+    label: mannitol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001010
     label: mannitol
 - preferred_term: peptone
   concentration:
@@ -58,6 +65,19 @@ curation_history:
   date: '2026-02-03T11:20:56.673540'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Hydrochloric acid'
+- timestamp: '2026-03-13T06:20:05.994683Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009387'
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:24.926997+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "mannitol standard medium" to "mannitol_standard_medium"
+    for consistent matching
 merge_fingerprint: bff17664cf136369fd149c3937669b4fe8f00dd64f8611c9763d2d8bee7912db
 merged_from:
-- TOGO_M2845_mannitol_standard_medium
+- mannitol_standard_medium

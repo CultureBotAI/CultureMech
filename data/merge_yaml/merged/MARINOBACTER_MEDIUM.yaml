@@ -1,15 +1,17 @@
-name: MARINOBACTER MEDIUM
-original_name: MARINOBACTER MEDIUM
-category: imported
+id: CultureMech:006927
+name: marinobacter_medium
+original_name: MARINOBACTER medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
 media_term:
-  preferred_term: DSMZ Medium 970
+  preferred_term: KOMODO Medium 970
   term:
-    id: mediadive.medium:970
-    label: MARINOBACTER MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium970.pdf'
+    id: komodo.medium:970
+    label: MARINOBACTER medium
+notes: 'Source: KOMODO ModelSEED | ID: 970 | DSMZ Medium: 970 (mediadive.medium:970)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '11.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '7.85'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.74'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Tris
   term:
     id: CHEBI:9754
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000880
+    label: Tris
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '1.47'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -61,29 +81,38 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 7.8
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.942222Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 970'
-- timestamp: '2026-02-19T08:26:57.801097+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 970'
+- timestamp: '2026-02-03T11:19:06.308969'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 970
+- timestamp: '2026-03-13T06:19:45.048675Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006927'
+- timestamp: '2026-03-17T06:30:15.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.063900+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MARINOBACTER medium" to "marinobacter_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:35.687305+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_970_MARINOBACTER_MEDIUM, KOMODO_970_MARINOBACTER_medium'
-synonyms:
-- name: MARINOBACTER medium
-  source: KOMODO
-  source_id: komodo.medium:970
-  original_category: imported
+  notes: 'Sources: KOMODO_970_MARINOBACTER_medium, marinobacter_medium'
+kg_microbe_match: mediadive.medium:970
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_970_MARINOBACTER_MEDIUM
 - KOMODO_970_MARINOBACTER_medium
+- marinobacter_medium
 merge_fingerprint: 40b777c25c06b5c9653d204211ede167566876a98dff09ee385681ae399e7664

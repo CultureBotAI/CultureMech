@@ -1,7 +1,8 @@
-name: Modified Artificial Seawater Medium
+id: CultureMech:000178
+name: modified_artificial_seawater_medium
 category: ALGAE
-medium_type: complex
-physical_state: liquid
+medium_type: COMPLEX
+physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 ingredients:
@@ -112,7 +113,16 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: modified-artificial-seawater-medium, URL: https://utex.org/products/modified-artificial-seawater-medium'
-- timestamp: '2026-02-19T08:26:36.673832+00:00'
+- timestamp: '2026-03-13T06:18:53.438935Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000178'
+- timestamp: '2026-03-17T19:45:04.372745+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Artificial Seawater Medium" to "modified_artificial_seawater_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:07.771422+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DYV_Medium, Modified_Artificial_Seawater_Medium'
@@ -121,7 +131,7 @@ references:
 - reference_id: https://utex.org/products/modified-artificial-seawater-medium
 original_name: Modified Artificial Seawater Medium
 synonyms:
-- name: DYV Medium
+- name: dyv_medium
   source: unknown
   original_category: ALGAE
 categories:

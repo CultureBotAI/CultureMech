@@ -1,6 +1,7 @@
-name: MINERAL MEDIUM WITH SALICYLATE
+id: CultureMech:001554
+name: mineral_medium_with_salicylate
 original_name: MINERAL MEDIUM WITH SALICYLATE
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '9'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 12 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -43,6 +53,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
@@ -50,6 +63,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -57,6 +73,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -64,6 +83,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CoSO4
   term:
     id: CHEBI:53470
@@ -71,6 +93,9 @@ ingredients:
   concentration:
     value: 1e-05
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -78,6 +103,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -97,6 +125,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 445'
+- timestamp: '2026-03-13T06:19:05.158548Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001554'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:17.255332+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MINERAL MEDIUM WITH SALICYLATE" to "mineral_medium_with_salicylate"
+    for consistent matching
 merge_fingerprint: 68f2fdc4fa5e5ab590767eeae58b45abf08dc36d0b28debd2fd4583a379d4f14
 merged_from:
-- DSMZ_445_MINERAL_MEDIUM_WITH_SALICYLATE
+- mineral_medium_with_salicylate

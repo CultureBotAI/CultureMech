@@ -1,15 +1,17 @@
-name: RHODOVULUM STRICTUM MEDIUM
-original_name: RHODOVULUM STRICTUM MEDIUM
-category: imported
+id: CultureMech:006397
+name: rhodovulum_strictum_medium
+original_name: RHODOVULUM STRICTUM medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
 media_term:
-  preferred_term: DSMZ Medium 746
+  preferred_term: KOMODO Medium 746
   term:
-    id: mediadive.medium:746
-    label: RHODOVULUM STRICTUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium746.pdf'
+    id: komodo.medium:746
+    label: RHODOVULUM STRICTUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 746 | DSMZ Medium: 746 (mediadive.medium:746)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '16.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Na-DL-malate
   term:
     id: CHEBI:91261
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '7.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000450
+    label: Na-DL-malate
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -57,6 +74,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
 - preferred_term: Potassium phosphate buffer
   concentration:
     value: '500'
@@ -68,6 +88,9 @@ ingredients:
   concentration:
     value: '5.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -75,6 +98,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -82,6 +108,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -89,6 +118,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -96,6 +128,9 @@ ingredients:
   concentration:
     value: '0.062'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -103,6 +138,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -110,6 +148,9 @@ ingredients:
   concentration:
     value: '0.017'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -117,6 +158,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoSO4 x 2 H2O
   concentration:
     value: '0.036'
@@ -124,50 +168,47 @@ ingredients:
   term:
     id: CHEBI:75213
     label: ''
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: "Boil both solutions under a stream of nitrogen gas for few minutes\
-    \ and autoclave\r\nseparately under anaerobic conditions at 121C for 15 minutes.\
-    \ Mix aseptically after\r\nautoclaving under a stream of sterile nitrogen gas\
-    \ and adjust final pH to 7.8. Distribute\r\nin screw-capped bottles or tubes."
-- step_number: 2
-  action: AUTOCLAVE
-  description: Boil both solutions under a stream of nitrogen gas for few minutes
-    and autoclave separately under anaerobic conditions at 121°C for 15 minutes. Mix
-    aseptically after autoclaving under a stream of sterile nitrogen gas and adjust
-    final pH to 7.8. Distribute in screw-capped bottles or tubes.
-- step_number: 3
-  action: MIX
-  description: pH 6.8
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoSO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.122738Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 746'
-- timestamp: '2026-01-28T19:48:29.707217Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:53.777685+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 746'
+- timestamp: '2026-02-03T11:19:11.873952'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 746
+- timestamp: '2026-03-13T06:19:40.432171Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006397'
+- timestamp: '2026-03-17T06:30:32.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:57.733278+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RHODOVULUM STRICTUM medium" to "rhodovulum_strictum_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:31.423230+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_746_RHODOVULUM_STRICTUM_MEDIUM, JCM_J194_MMYS-II_MEDIUM, KOMODO_746_RHODOVULUM_STRICTUM_medium'
+  notes: 'Sources: KOMODO_746_RHODOVULUM_STRICTUM_medium, mmys_ii_medium, rhodovulum_strictum_medium'
+high_metal: true
 synonyms:
-- name: MMYS-II MEDIUM
+- name: mmys_ii_medium
   source: MediaDive
   source_id: mediadive.medium:J194
-  original_category: imported
-- name: RHODOVULUM STRICTUM medium
-  source: KOMODO
-  source_id: komodo.medium:746
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_746_RHODOVULUM_STRICTUM_MEDIUM
-- JCM_J194_MMYS-II_MEDIUM
 - KOMODO_746_RHODOVULUM_STRICTUM_medium
+- mmys_ii_medium
+- rhodovulum_strictum_medium
 merge_fingerprint: 5ba88900adaa90c904bfafac626aedd2819226d62f86aaf7d23987ee8edb4004

@@ -1,6 +1,7 @@
-name: Basal synthetic medium
+id: CultureMech:007204
+name: basal_synthetic_medium
 original_name: Basal synthetic medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '233.7'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lcts'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000339
+    label: Lactose
 - preferred_term: Ammonium phosphate
   concentration:
     value: '121.2'
@@ -27,6 +31,9 @@ ingredients:
   concentration:
     value: '0.0812'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.072'
@@ -35,6 +42,9 @@ ingredients:
   concentration:
     value: '0.00827'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0401'
@@ -55,6 +65,19 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 301, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.854599Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007204'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:05.037319+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Basal synthetic medium" to "basal_synthetic_medium"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 301
   term:
@@ -66,6 +89,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 57db23e8a1195239a15b3fbe272cba62fcb54bd99d6aa4f6c98e5b303ad6e452
+merge_fingerprint: 16dc750db6ab8ac3931f4c3c5a8ff85610abd79cce89c4616a33177440335f3b
 merged_from:
-- MEDIADB_301_Basal_synthetic_medium
+- basal_synthetic_medium

@@ -1,8 +1,9 @@
-name: DILUTE FILTERED MALT EXTRACT AGAR
+id: CultureMech:004153
+name: dilute_filtered_malt_extract_agar
 original_name: DILUTE FILTERED MALT EXTRACT AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1427
   term:
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '150'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,25 +37,39 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1427
-- timestamp: '2026-02-19T08:26:58.840091+00:00'
+- timestamp: '2026-03-13T06:19:25.446951Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004153'
+- timestamp: '2026-03-17T06:30:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:40.352512+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DILUTE FILTERED MALT EXTRACT AGAR" to "dilute_filtered_malt_extract_agar"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:02.317903+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: KOMODO_1427_DILUTE_FILTERED_MALT_EXTRACT_AGAR, DSMZ_1427_DILUTE_FILTERED_MALT_EXTRACT_AGAR,
-    JCM_J253_4_MALT_AGAR, JCM_J38_2_MALT_AGAR'
+  notes: 'Sources: dilute_filtered_malt_extract_agar, 2_malt_agar, 4_malt_agar, dilute_filtered_malt_extract_agar'
+kg_microbe_match: mediadive.medium:12
 synonyms:
-- name: 4% MALT AGAR
-  source: MediaDive
-  source_id: mediadive.medium:J253
-  original_category: imported
-- name: 2% MALT AGAR
+- name: 2_malt_agar
   source: MediaDive
   source_id: mediadive.medium:J38
-  original_category: imported
+  original_category: fungal
+- name: 4_malt_agar
+  source: MediaDive
+  source_id: mediadive.medium:J253
+  original_category: fungal
 categories:
-- imported
+- bacterial
+- fungal
 merged_from:
-- KOMODO_1427_DILUTE_FILTERED_MALT_EXTRACT_AGAR
-- DSMZ_1427_DILUTE_FILTERED_MALT_EXTRACT_AGAR
-- JCM_J253_4_MALT_AGAR
-- JCM_J38_2_MALT_AGAR
+- dilute_filtered_malt_extract_agar
+- 2_malt_agar
+- 4_malt_agar
+- dilute_filtered_malt_extract_agar
 merge_fingerprint: 4303d0b80f02dce7e30231f44cc046d30a0de11515fa2f05086b374396a014a9

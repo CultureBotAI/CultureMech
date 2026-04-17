@@ -1,8 +1,9 @@
-name: MALT EXTRACT GLUCOSE AGAR
+id: CultureMech:006382
+name: malt_extract_glucose_agar
 original_name: MALT EXTRACT GLUCOSE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 735
   term:
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -40,14 +47,28 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 735
-- timestamp: '2026-02-19T08:26:59.852179+00:00'
+- timestamp: '2026-03-13T06:19:40.298986Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006382'
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:57.573047+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MALT EXTRACT GLUCOSE AGAR" to "malt_extract_glucose_agar"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:09.537241+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: KOMODO_735_MALT_EXTRACT_GLUCOSE_AGAR, DSMZ_735_MALT_EXTRACT_GLUCOSE_AGAR'
+  notes: 'Sources: malt_extract_glucose_agar, malt_extract_glucose_agar'
 ph_value: 5.4
 categories:
-- imported
+- bacterial
+- fungal
 merged_from:
-- KOMODO_735_MALT_EXTRACT_GLUCOSE_AGAR
-- DSMZ_735_MALT_EXTRACT_GLUCOSE_AGAR
+- malt_extract_glucose_agar
+- malt_extract_glucose_agar
 merge_fingerprint: f9a5864db6506b907d89f3ea8cf7857fda8172eaf78b8b067dd18dde76ce4ee6

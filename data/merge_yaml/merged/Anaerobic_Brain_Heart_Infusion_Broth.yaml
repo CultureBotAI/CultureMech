@@ -1,6 +1,7 @@
-name: ANAEROBIC BRAIN HEART INFUSION BROTH
+id: CultureMech:015416
+name: anaerobic_brain_heart_infusion_broth
 original_name: ANAEROBIC BRAIN HEART INFUSION BROTH
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -21,6 +22,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -28,6 +32,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -41,6 +48,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J723'
+- timestamp: '2026-03-13T06:20:42.565773Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015416'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:34.222316+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROBIC BRAIN HEART INFUSION BROTH" to "anaerobic_brain_heart_infusion_broth"
+    for consistent matching
 merge_fingerprint: f2621dabf584b5fa657449002cc78a7b59c0974dc66d22c7fd74e64ca08c583b
 merged_from:
-- JCM_J723_ANAEROBIC_BRAIN_HEART_INFUSION_BROTH
+- anaerobic_brain_heart_infusion_broth

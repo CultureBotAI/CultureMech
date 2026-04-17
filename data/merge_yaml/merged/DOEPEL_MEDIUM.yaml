@@ -1,15 +1,17 @@
-name: DOEPEL MEDIUM
-original_name: DOEPEL MEDIUM
-category: imported
+id: CultureMech:006322
+name: doepel_medium
+original_name: DOEPEL medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
-  preferred_term: DSMZ Medium 698
+  preferred_term: KOMODO Medium 698
   term:
-    id: mediadive.medium:698
-    label: DOEPEL MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium698.pdf'
+    id: komodo.medium:698
+    label: DOEPEL medium
+notes: 'Source: KOMODO ModelSEED | ID: 698 | DSMZ Medium: 698 (mediadive.medium:698)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Casein hydrolysate
   concentration:
     value: '8'
@@ -33,6 +38,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -40,29 +48,39 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 7.2
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.957390Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 698'
-- timestamp: '2026-02-19T08:26:53.105150+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 698'
+- timestamp: '2026-02-03T11:19:13.394392'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 698
+- timestamp: '2026-03-13T06:19:39.728929Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006322'
+- timestamp: '2026-03-17T06:30:37.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:56.880063+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DOEPEL medium" to "doepel_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:30.745677+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_698_DOEPEL_MEDIUM, KOMODO_698_DOEPEL_medium'
-synonyms:
-- name: DOEPEL medium
-  source: KOMODO
-  source_id: komodo.medium:698
-  original_category: imported
+  notes: 'Sources: KOMODO_698_DOEPEL_medium, doepel_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_698_DOEPEL_MEDIUM
 - KOMODO_698_DOEPEL_medium
+- doepel_medium
 merge_fingerprint: 1de1581c37602849fb16e37b1d1f7bf4bb3e07005e388fbef8cc0d79b9e08819

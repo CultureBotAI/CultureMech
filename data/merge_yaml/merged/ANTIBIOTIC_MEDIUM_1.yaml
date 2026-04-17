@@ -1,8 +1,9 @@
-name: ANTIBIOTIC MEDIUM 1
+id: CultureMech:001010
+name: antibiotic_medium_1
 original_name: ANTIBIOTIC MEDIUM 1
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:
   preferred_term: DSMZ Medium 1532
@@ -34,6 +35,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -41,6 +45,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -55,6 +62,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1532'
+- timestamp: '2026-03-13T06:19:00.458850Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001010'
+- timestamp: '2026-03-17T06:30:30.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:12.076345+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANTIBIOTIC MEDIUM 1" to "antibiotic_medium_1" for consistent
+    matching
 merge_fingerprint: a88ec2ab4b1c32685affc17e1d1ea773027c6d26a1cf593be1f272faa7c1553f
 merged_from:
-- DSMZ_1532_ANTIBIOTIC_MEDIUM_1
+- antibiotic_medium_1

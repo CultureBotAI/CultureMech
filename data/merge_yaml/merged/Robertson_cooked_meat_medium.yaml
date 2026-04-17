@@ -1,6 +1,7 @@
-name: Robertson cooked meat medium
+id: CultureMech:009341
+name: robertson_cooked_meat_medium
 original_name: Robertson cooked meat medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -22,6 +23,15 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2793'
+- timestamp: '2026-03-13T06:20:05.762926Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009341'
+- timestamp: '2026-03-17T19:46:24.679397+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Robertson cooked meat medium" to "robertson_cooked_meat_medium"
+    for consistent matching
 merge_fingerprint: bafa6d0876d71d9499319944d464ba5c843176466e742597388094bf620bed21
 merged_from:
-- TOGO_M2793_Robertson_cooked_meat_medium
+- robertson_cooked_meat_medium

@@ -1,8 +1,9 @@
-name: YSP MEDIUM
+id: CultureMech:001468
+name: ysp_medium
 original_name: YSP MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 367
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -44,6 +51,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 367'
+- timestamp: '2026-03-13T06:19:04.408801Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001468'
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.427763+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YSP MEDIUM" to "ysp_medium" for consistent matching
+kg_microbe_match: mediadive.medium:187
 merge_fingerprint: e0ff7193549cfaae1926dfcf3df5835ca550405054c635f1fbf3d69cc26b4699
 merged_from:
-- DSMZ_367_YSP_MEDIUM
+- ysp_medium

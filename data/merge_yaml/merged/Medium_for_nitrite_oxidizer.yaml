@@ -1,6 +1,7 @@
-name: Medium for nitrite oxidizer
+id: CultureMech:009565
+name: medium_for_nitrite_oxidizer
 original_name: Medium for nitrite oxidizer
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '40.6'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '6.6'
@@ -31,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: K2HPO4
   concentration:
     value: '25.4'
@@ -40,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: H3BO3
   concentration:
     value: '49.4'
@@ -49,12 +62,18 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '3.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: NaHCO3
   concentration:
     value: '200'
@@ -64,6 +83,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '43.1'
@@ -73,6 +95,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: CuSO4·5H2O
   concentration:
     value: '25'
@@ -82,6 +107,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4·5H2O
 - preferred_term: MnSO4·5H2O
   concentration:
     value: '54.2'
@@ -91,6 +119,9 @@ ingredients:
   term:
     id: CHEBI:131524
     label: manganese(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000549
+    label: MnSO4·5H2O
 - preferred_term: NaNO2
   concentration:
     value: '49.2'
@@ -100,6 +131,9 @@ ingredients:
   term:
     id: CHEBI:78870
     label: sodium nitrite
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000387
+    label: NaNO2
 - preferred_term: Na2Mo4O4
   concentration:
     value: '27.6'
@@ -127,6 +161,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: aecad714cf3e248b4777193a83f65491632efdfeb7dbe99185d9508160b284eb
+- timestamp: '2026-03-13T06:20:06.940381Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009565'
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.964554+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Medium for nitrite oxidizer" to "medium_for_nitrite_oxidizer"
+    for consistent matching
+high_metal: true
+merge_fingerprint: f4df3439f7ff8545556dc1a2d20aae56a7ac9aaeb106fad8d8483f005792fee2
 merged_from:
-- TOGO_M3051_Medium_for_nitrite_oxidizer
+- medium_for_nitrite_oxidizer

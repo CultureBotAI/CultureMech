@@ -1,169 +1,160 @@
-name: RHODOVULUM VISAKHUM MEDIUM
-original_name: RHODOVULUM VISAKHUM MEDIUM
-category: imported
+id: CultureMech:009907
+name: rhodovulum_visakhum_medium
+original_name: Rhodovulum Visakhum Medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 6.8
-media_term:
-  preferred_term: DSMZ Medium 1128
-  term:
-    id: mediadive.medium:1128
-    label: RHODOVULUM VISAKHUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1128.pdf'
 ingredients:
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: MgCl2 x 7 H2O
+- preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:6636
-    label: magnesium dichloride
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.6'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.15'
-    unit: G_PER_L
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '0.4'
     unit: G_PER_L
-- preferred_term: Sodium pyruvate
-  term:
-    id: CHEBI:50144
-    label: Sodium pyruvate
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
   concentration:
-    value: '3'
+    value: '20'
     unit: G_PER_L
-- preferred_term: Vitamin B12
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
-    id: CHEBI:17439
-    label: Vitamin B12
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: MgCl2・6H2O
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Na2-EDTA
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
-    id: CHEBI:64734
-    label: Na2-EDTA
+    id: CHEBI:86345
+    label: ''
+- preferred_term: Sodium pyruvate
   concentration:
-    value: '5.2'
+    value: '3'
     unit: G_PER_L
-- preferred_term: FeCl2 x 4 H2O
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
+- preferred_term: Sorbitol
   concentration:
-    value: '1.5'
+    value: '3'
     unit: G_PER_L
-- preferred_term: ZnCl2
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
-    id: CHEBI:49976
-    label: ZnCl2
+    id: CHEBI:30911
+    label: glucitol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000447
+    label: Sorbitol
+- preferred_term: Vitamin B12 (20 μg/ml) (filter--sterilized)
   concentration:
-    value: '0.07'
+    value: '1'
     unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Solution'
+media_term:
+  preferred_term: TOGO Medium M516
   term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.062'
-    unit: G_PER_L
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '0.19'
-    unit: G_PER_L
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: CuCl2 x 2 H2O
-  concentration:
-    value: '0.017'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.024'
-    unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.036'
-    unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: Adjust to pH 6.8
-- step_number: 2
-  action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
-    a rubber septum under a stream of nitrogen gas.
-- step_number: 3
-  action: MIX
-  description: 'Add the following component after autoclaving from sterile stock solutions:'
-- step_number: 4
-  action: MIX
-  description: Adjust to pH 6.5
+    id: TOGO:M516
+    label: Rhodovulum Visakhum Medium
+notes: 'Source: https://togomedium.org/medium/M516
+
+  Original source: JCM - JCM_M515
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=515'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.460251Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1128'
-- timestamp: '2026-01-28T19:48:18.314718Z'
+- timestamp: '2026-01-27T06:35:55.214044Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M516'
+- timestamp: '2026-01-28T19:48:15.435569Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:39.861900+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1128_RHODOVULUM_VISAKHUM_MEDIUM, KOMODO_1128_RHODOVULUM_VISAKHUM_medium'
-synonyms:
-- name: RHODOVULUM VISAKHUM medium
-  source: KOMODO
-  source_id: komodo.medium:1128
-  original_category: imported
-categories:
-- imported
+- timestamp: '2026-03-09T08:04:25.507591+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:09.867849Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009907'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:01.436757'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.816189+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Rhodovulum Visakhum Medium" to "rhodovulum_visakhum_medium"
+    for consistent matching
+solutions:
+- preferred_term: Trace element solution SL8 (see Medium [M183])
+  composition: []
+  notes: Cross-reference to Medium M183
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 69bd8d394a525b7ad557244a2033fcddcdcfa55d17a452268f49566e7f63c309
 merged_from:
-- DSMZ_1128_RHODOVULUM_VISAKHUM_MEDIUM
-- KOMODO_1128_RHODOVULUM_VISAKHUM_medium
-merge_fingerprint: 50de029912887a8da8be4d8df8305f885f724256569825b3bd7a048731d93ce7
+- TOGO_M516_Rhodovulum_Visakhum_Medium

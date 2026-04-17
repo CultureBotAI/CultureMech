@@ -1,0 +1,84 @@
+id: CultureMech:005282
+name: kdm_2_medium
+original_name: KDM-2 medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 435
+  term:
+    id: komodo.medium:435
+    label: KDM-2 medium
+notes: 'Source: KOMODO ModelSEED | ID: 435 | DSMZ Medium: 435 (mediadive.medium:435)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Activated charcoal
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '200'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 435'
+- timestamp: '2026-02-03T11:19:00.118725'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 435
+- timestamp: '2026-03-13T06:19:31.490665Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005282'
+- timestamp: '2026-03-17T06:29:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:47.377805+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "KDM-2 medium" to "kdm_2_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:23.956971+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_435_KDM-2_medium, kdm_2_medium'
+categories:
+- bacterial
+merged_from:
+- KOMODO_435_KDM-2_medium
+- kdm_2_medium
+merge_fingerprint: a86de0b81a4313bc4212a5dd72cb2d6d3158d36a47ff72aca7059ab8c9d41dac

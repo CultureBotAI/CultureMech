@@ -1,6 +1,7 @@
-name: FASTIDIOUS ANAEROBE BROTH
+id: CultureMech:000654
+name: fastidious_anaerobe_broth
 original_name: FASTIDIOUS ANAEROBE BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -26,6 +27,15 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1203a'
+- timestamp: '2026-03-13T06:18:57.120309Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000654'
+- timestamp: '2026-03-17T19:45:08.287331+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "FASTIDIOUS ANAEROBE BROTH" to "fastidious_anaerobe_broth"
+    for consistent matching
 merge_fingerprint: 36ea57e45693ad1602c2e19ea10a86e6584c2fb38533e453a16a90284db42c16
 merged_from:
-- DSMZ_1203a_FASTIDIOUS_ANAEROBE_BROTH
+- fastidious_anaerobe_broth

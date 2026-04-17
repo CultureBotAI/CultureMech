@@ -1,8 +1,9 @@
-name: SL7 solid medium
+id: CultureMech:009649
+name: sl7_solid_medium
 original_name: SL7 solid medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,18 +14,27 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: CaCl2 × 2 H2O
   concentration:
     value: '0.14'
     unit: MILLIMOLAR
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgSO4 × 7 H2O
   concentration:
     value: '0.8'
     unit: MILLIMOLAR
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NH4Cl
   concentration:
     value: '18.7'
@@ -34,12 +44,18 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Na2HPO4 × 12 H2O
   concentration:
     value: '25'
     unit: MILLIMOLAR
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Fe(III)NH4-Citrate
   concentration:
     value: '4.6'
@@ -60,6 +76,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: sodium gluconate
   concentration:
     value: '0.4'
@@ -67,6 +86,9 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:84997
+    label: sodium gluconate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001052
     label: sodium gluconate
 media_term:
   preferred_term: TOGO Medium M3209
@@ -85,6 +107,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 3faa4c66478cb20ecb82807282828ff7d258b29c5a7e3e5dacde884abac05847
+- timestamp: '2026-03-13T06:20:07.882748Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009649'
+- timestamp: '2026-03-17T06:30:29.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.889737+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SL7 solid medium" to "sl7_solid_medium" for consistent
+    matching
+merge_fingerprint: 27ee15a70a4acd07e6eb193c4ce956c49029dda225b6953ca5a56861ac5a5a3f
 merged_from:
-- TOGO_M3209_SL7_solid_medium
+- sl7_solid_medium

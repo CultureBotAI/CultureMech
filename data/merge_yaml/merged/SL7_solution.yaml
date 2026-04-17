@@ -1,6 +1,7 @@
-name: SL7 solution
+id: CultureMech:009648
+name: sl7_solution
 original_name: SL7 solution
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,18 +14,27 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: CaCl2 × 2 H2O
   concentration:
     value: '0.14'
     unit: MILLIMOLAR
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgSO4 × 7 H2O
   concentration:
     value: '0.8'
     unit: MILLIMOLAR
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NH4Cl
   concentration:
     value: '18.7'
@@ -34,12 +44,18 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Na2HPO4 × 12 H2O
   concentration:
     value: '25'
     unit: MILLIMOLAR
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Fe(III)NH4-Citrate
   concentration:
     value: '4.6'
@@ -60,6 +76,9 @@ ingredients:
   term:
     id: CHEBI:84997
     label: sodium gluconate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001052
+    label: Sodium gluconate
 media_term:
   preferred_term: TOGO Medium M3208
   term:
@@ -77,6 +96,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: f992b74039bfcaac55ce20d5451a2fecc9cd68dee55f1905777dfab2cc965eeb
+- timestamp: '2026-03-13T06:20:07.877422Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009648'
+- timestamp: '2026-03-17T06:29:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.884550+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SL7 solution" to "sl7_solution" for consistent matching
+merge_fingerprint: fef8495dfe3b82d44bce5eb9e2fef584fa757d6156f23d13c5da380c1685d64d
 merged_from:
-- TOGO_M3208_SL7_solution
+- sl7_solution

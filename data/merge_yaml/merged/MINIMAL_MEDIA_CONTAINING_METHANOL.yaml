@@ -1,8 +1,9 @@
-name: MINIMAL MEDIA CONTAINING METHANOL
+id: CultureMech:001108
+name: minimal_media_containing_methanol
 original_name: MINIMAL MEDIA CONTAINING METHANOL
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.1
 media_term:
   preferred_term: DSMZ Medium 1629
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '1.62'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '2.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaH2PO4 x 2 H2O
   term:
     id: CHEBI:37585
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '1.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4 x 2 H2O
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.015'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: FeSO4 x 6 H2O
   term:
     id: CHEBI:75832
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001045
+    label: FeSO4 x 6 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.0045'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -67,6 +89,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -74,6 +99,9 @@ ingredients:
   concentration:
     value: '0.00064'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -81,6 +109,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -88,6 +119,9 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: CuSO4 x 2 H2O
   term:
     id: CHEBI:23414
@@ -95,6 +129,9 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: CuSO4 x 2 H2O
 - preferred_term: CaCl2 x 6 H2O
   term:
     id: CHEBI:91243
@@ -102,6 +139,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000327
+    label: CaCl2 x 6 H2O
 - preferred_term: Methanol
   term:
     id: CHEBI:17790
@@ -109,6 +149,9 @@ ingredients:
   concentration:
     value: '3.96'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000618
+    label: Methanol
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -116,6 +159,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -131,6 +177,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1629'
+- timestamp: '2026-03-13T06:19:01.234655Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001108'
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:12.931688+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MINIMAL MEDIA CONTAINING METHANOL" to "minimal_media_containing_methanol"
+    for consistent matching
 merge_fingerprint: 18947c2197e2cdbb83d290e3a1c1fe37678a0b6361e9614ac2f7591eb3846fb4
 merged_from:
-- DSMZ_1629_MINIMAL_MEDIA_CONTAINING_METHANOL
+- minimal_media_containing_methanol

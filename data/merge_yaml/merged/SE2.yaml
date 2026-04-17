@@ -1,6 +1,7 @@
-name: SE2
+id: CultureMech:000406
+name: se2
 original_name: SE2
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -44,23 +45,31 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C91'
-- timestamp: '2026-02-19T08:26:37.761456+00:00'
+- timestamp: '2026-03-13T06:18:54.994192Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000406'
+- timestamp: '2026-03-17T19:45:06.004460+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SE2" to "se2" for consistent matching
+- timestamp: '2026-04-17T06:30:21.455641+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: CCAP_C90_SE1, CCAP_C91_SE2, CCAP_C99_S_W'
+  notes: 'Sources: s_w, se1, se2'
 synonyms:
-- name: SE1
-  source: MediaDive
-  source_id: mediadive.medium:C90
-  original_category: imported
-- name: S/W
+- name: s_w
   source: MediaDive
   source_id: mediadive.medium:C99
-  original_category: imported
+  original_category: bacterial
+- name: se1
+  source: MediaDive
+  source_id: mediadive.medium:C90
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- CCAP_C90_SE1
-- CCAP_C91_SE2
-- CCAP_C99_S_W
+- s_w
+- se1
+- se2
 merge_fingerprint: e93d59a02163f846fecf6bb6bd7135d093d8e40b46b1e5c2dda57cd74e655e1e

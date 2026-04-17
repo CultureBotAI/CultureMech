@@ -1,6 +1,7 @@
-name: ANAEROTIGNUM MEDIUM
+id: CultureMech:001046
+name: anaerotignum_medium
 original_name: ANAEROTIGNUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000403
+    label: L-Alanine
 - preferred_term: Peptone
   concentration:
     value: '3'
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -40,6 +47,9 @@ ingredients:
   concentration:
     value: '0.018'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Potassium phosphate buffer
   concentration:
     value: '5'
@@ -51,6 +61,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000924
+    label: CaSO4
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -62,6 +75,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -69,6 +85,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -84,24 +103,36 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 156'
-- timestamp: '2026-02-19T08:26:43.730422+00:00'
+- timestamp: '2026-03-13T06:19:00.728674Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001046'
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:12.365990+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROTIGNUM MEDIUM" to "anaerotignum_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:54.578682+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_156_ANAEROTIGNUM_MEDIUM, KOMODO_156-6251_MEDIUM_156_MODIFIED_FOR_DSM_6251,
-    KOMODO_156_CLOSTRIDIUM_PROPIONICUM_medium'
+  notes: 'Sources: anaerotignum_medium, clostridium_propionicum_medium, medium_156_modified_for_dsm_6251'
 synonyms:
-- name: MEDIUM 156 MODIFIED FOR DSM 6251
-  source: KOMODO
-  source_id: komodo.medium:156_6251
-  original_category: imported
-- name: CLOSTRIDIUM PROPIONICUM medium
+- name: clostridium_propionicum_medium
   source: KOMODO
   source_id: komodo.medium:156
-  original_category: imported
+  original_category: bacterial
+- name: medium_156_modified_for_dsm_6251
+  source: KOMODO
+  source_id: komodo.medium:156_6251
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_156_ANAEROTIGNUM_MEDIUM
-- KOMODO_156-6251_MEDIUM_156_MODIFIED_FOR_DSM_6251
-- KOMODO_156_CLOSTRIDIUM_PROPIONICUM_medium
+- anaerotignum_medium
+- clostridium_propionicum_medium
+- medium_156_modified_for_dsm_6251
 merge_fingerprint: 8690b3f684f810c87e01d5ab97d075e1d03aee5e85221a5d0248ea7e3a25077f

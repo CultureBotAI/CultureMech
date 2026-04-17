@@ -1,15 +1,17 @@
-name: ASAIA GYP MEDIUM
-original_name: ASAIA GYP MEDIUM
-category: imported
+id: CultureMech:004094
+name: asaia_gyp_medium
+original_name: ASAIA GYP medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
-  preferred_term: DSMZ Medium 1330
+  preferred_term: KOMODO Medium 1330
   term:
-    id: mediadive.medium:1330
-    label: ASAIA GYP MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf'
+    id: komodo.medium:1330
+    label: ASAIA GYP medium
+notes: 'Source: KOMODO ModelSEED | ID: 1330 | DSMZ Medium: 1330 (mediadive.medium:1330)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Peptone
   concentration:
     value: '10'
@@ -40,6 +48,9 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -48,33 +59,40 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-preparation_steps:
-- step_number: 1
-  action: DISSOLVE
-  description: The medium may be solidified by adding 15 g/l agar. Calcium carbonate
-    in the medium serves as a buffer. The calcium carbonate will settle in agar plates
-    before the agar has set, producing an opaque layer in the bottom. As the strain
-    grows and acid is produced this will react with the calcium carbonate, causing
-    it to dissolve and form zones of clearing immediately below the colonies. pH 6.8
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:14.119321Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1330'
-- timestamp: '2026-02-19T08:26:42.567487+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1330'
+- timestamp: '2026-02-03T11:18:55.793677'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1330
+- timestamp: '2026-03-13T06:19:24.764865Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004094'
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:39.567908+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ASAIA GYP medium" to "asaia_gyp_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:18.633918+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1330_ASAIA_GYP_MEDIUM, KOMODO_1330_ASAIA_GYP_medium'
-synonyms:
-- name: ASAIA GYP medium
-  source: KOMODO
-  source_id: komodo.medium:1330
-  original_category: imported
+  notes: 'Sources: KOMODO_1330_ASAIA_GYP_medium, asaia_gyp_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1330_ASAIA_GYP_MEDIUM
 - KOMODO_1330_ASAIA_GYP_medium
+- asaia_gyp_medium
 merge_fingerprint: f298883b822f7018c3f40a68e4f264aa9890065f353cc841b093592dc3a97c3c

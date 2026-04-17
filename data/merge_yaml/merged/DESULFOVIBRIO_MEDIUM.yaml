@@ -1,6 +1,7 @@
-name: Desulfovibrio Medium
+id: CultureMech:009765
+name: desulfovibrio_medium
 original_name: Desulfovibrio Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -30,6 +37,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -39,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -48,6 +61,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -57,12 +73,18 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Na2SO4
   concentration:
     value: '1'
@@ -72,6 +94,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: Sodium lactate
   concentration:
     value: '2'
@@ -81,6 +106,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Sodium lactate
 - preferred_term: Ascorbic acid
   concentration:
     value: '0.1'
@@ -89,6 +117,9 @@ ingredients:
   term:
     id: CHEBI:22652
     label: ascorbic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000326
+    label: Ascorbic acid
 - preferred_term: Sodium thioglycolate
   concentration:
     value: '0.1'
@@ -97,6 +128,9 @@ ingredients:
   term:
     id: CHEBI:86481
     label: sodium thioglycolate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Sodium thioglycolate
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -105,11 +139,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M384
   term:
@@ -136,6 +176,19 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH; Added default concentration
     for ingredient: N2'
-merge_fingerprint: 06053c68426f29fde27b19183a5f999ff51e3d960a77dcc2e6512497a4006268
+- timestamp: '2026-03-13T06:20:08.709461Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009765'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.705025+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Desulfovibrio Medium" to "desulfovibrio_medium" for
+    consistent matching
+merge_fingerprint: 466a68da9e107763c9501ab808231164faecd39e877f2b395cf99d5af62bcc34
 merged_from:
 - TOGO_M384_Desulfovibrio_Medium

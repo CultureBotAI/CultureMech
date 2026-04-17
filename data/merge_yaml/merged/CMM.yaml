@@ -1,6 +1,7 @@
-name: CMM
+id: CultureMech:007191
+name: cmm
 original_name: CMM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '9.09'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000367
+    label: Pyruvate
 - preferred_term: L-Glutamate
   concentration:
     value: '0.68'
@@ -25,6 +29,9 @@ ingredients:
     value: '1.33'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: L-Alanine
   term:
     id: CHEBI:16977
@@ -33,6 +40,9 @@ ingredients:
     value: '1.12'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ala-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000403
+    label: L-Alanine
 - preferred_term: L-Aspartate
   concentration:
     value: '0.751'
@@ -46,6 +56,9 @@ ingredients:
     value: '0.574'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000289
+    label: L-Arginine
 - preferred_term: L-Serine
   term:
     id: CHEBI:17115
@@ -54,6 +67,9 @@ ingredients:
     value: '0.952'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ser-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000270
+    label: L-Serine
 - preferred_term: L-Phenylalanine
   term:
     id: CHEBI:17295
@@ -62,6 +78,9 @@ ingredients:
     value: '0.605'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000312
+    label: L-Phenylalanine
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -70,6 +89,9 @@ ingredients:
     value: '27.4'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -78,6 +100,9 @@ ingredients:
     value: '0.000409'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: L-Leucine
   term:
     id: CHEBI:15603
@@ -86,6 +111,9 @@ ingredients:
     value: '0.762'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000278
+    label: L-Leucine
 - preferred_term: L-Asparagine
   term:
     id: CHEBI:17196
@@ -94,6 +122,9 @@ ingredients:
     value: '15.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asn-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagine
 - preferred_term: L-Isoleucine
   term:
     id: CHEBI:17191
@@ -102,6 +133,9 @@ ingredients:
     value: '0.762'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000294
+    label: L-Isoleucine
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.00374'
@@ -113,10 +147,16 @@ ingredients:
   concentration:
     value: '1.53'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Potassium hydroxide
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32035
+    label: ''
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '0.5'
@@ -124,6 +164,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: Sodium bicarbonate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '1.63'
@@ -135,6 +178,9 @@ ingredients:
   concentration:
     value: '0.8869'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.367'
@@ -143,6 +189,9 @@ ingredients:
   concentration:
     value: '0.00202'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -150,6 +199,9 @@ ingredients:
   concentration:
     value: '0.00141'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.000101'
@@ -165,6 +217,9 @@ ingredients:
   concentration:
     value: '54.9'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000555
+    label: ACES
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -185,6 +240,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:46.709771Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007191'
+- timestamp: '2026-03-17T06:30:34.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.889442+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CMM" to "cmm" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 290
   term:
@@ -196,6 +263,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: d9cf590c308167bfb962aac6ecf9dedf9bf13f29f4ce6d37b7cfdf9786f3157b
+merge_fingerprint: a97b3e4c4ced3b3006c931374e38ef9251b18a2d28194c9d7884f8011af34c5c
 merged_from:
-- MEDIADB_290_CMM
+- cmm

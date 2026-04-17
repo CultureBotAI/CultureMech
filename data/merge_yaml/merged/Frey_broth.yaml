@@ -1,6 +1,7 @@
-name: Frey broth
+id: CultureMech:008822
+name: frey_broth
 original_name: Frey broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Monopotassium phosphate
   concentration:
     value: '0.1'
@@ -36,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: Monopotassium phosphate
 - preferred_term: Potassium chloride
   concentration:
     value: '0.4'
@@ -45,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Disodium phosphate
   concentration:
     value: '1.6'
@@ -54,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Disodium phosphate
 - preferred_term: Magnesium sulphate
   concentration:
     value: '0.2'
@@ -92,6 +108,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:00.522036Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008822'
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.197481+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Frey broth" to "frey_broth" for consistent matching
 merge_fingerprint: 888168470707a4731803db5b09d725856f8c5428e9b14bc96a2cf51c0647f613
 merged_from:
-- TOGO_M2233_Frey_broth
+- frey_broth

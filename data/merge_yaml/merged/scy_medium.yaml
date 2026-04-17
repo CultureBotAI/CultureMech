@@ -1,0 +1,215 @@
+id: CultureMech:004977
+name: scy_medium
+original_name: SCY - medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: KOMODO Medium 312
+  term:
+    id: komodo.medium:312
+    label: SCY - medium
+notes: 'Source: KOMODO ModelSEED | ID: 312 | DSMZ Medium: 312 (mediadive.medium:312)
+  | Aerobic: No
+
+
+  Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+
+  Supplier: Multiple suppliers (BD, Sigma, Neogen)
+
+  Catalog: Multiple (22092 Sigma, 211825 BD)
+
+  Source: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
+ingredients:
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
+- preferred_term: Casitone
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Pancreatic digest of casein
+  term:
+    id: FOODON:03316428
+    label: tryptone
+  concentration:
+    value: '17.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Pancreatic enzymatic digest of casein providing amino acids and peptides;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: tryptone
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+  - synonym_text: Bacto Tryptone
+    synonym_type: EXACT
+- preferred_term: Peptic digest of soybean meal
+  term:
+    id: FOODON:03303126
+    label: soy peptone
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Peptic digest of soybean meal providing additional peptides and carbohydrates;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: soytone
+    synonym_type: EXACT
+  - synonym_text: soy peptone
+    synonym_type: EXACT
+  - synonym_text: Bacto Soytone
+    synonym_type: EXACT
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: D-glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy
+    Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: dextrose
+    synonym_type: EXACT
+  - synonym_text: D-glucose
+    synonym_type: EXACT
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic
+    Soy Agar (TSA) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
+- preferred_term: Dipotassium phosphate
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+    commercial product
+  synonyms:
+  - synonym_text: K2HPO4
+    synonym_type: EXACT
+  - synonym_text: potassium phosphate dibasic
+    synonym_type: EXACT
+  - synonym_text: dipotassium hydrogen phosphate
+    synonym_type: EXACT
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
+    catalog_number: Multiple (22092 Sigma, 211825 BD)
+    product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
+  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
+    Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 312'
+- timestamp: '2026-02-03T11:19:08.491581'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 312
+- timestamp: '2026-03-13T06:19:29.294027Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004977'
+- timestamp: '2026-03-17T06:30:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:44.848475+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SCY - medium" to "scy_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:21.827589+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_312_SCY_-_medium, scy_medium'
+categories:
+- bacterial
+merged_from:
+- KOMODO_312_SCY_-_medium
+- scy_medium
+merge_fingerprint: 9a91b1e0bbe95cc58e3eca40cb3e39ca325515ef1ceb6a5c16837573b10678f7

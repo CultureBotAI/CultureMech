@@ -1,15 +1,17 @@
-name: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
+id: CultureMech:003983
+name: thioalkalivibrio_thiocyanodenitrificans_medium
 original_name: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:
-  preferred_term: DSMZ Medium 1228
+  preferred_term: KOMODO Medium 1228
   term:
-    id: mediadive.medium:1228
+    id: komodo.medium:1228
     label: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1228.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 1228 | DSMZ Medium: 1228 (mediadive.medium:1228)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '22'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -25,6 +30,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -32,6 +40,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -39,6 +50,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -46,6 +60,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: Sodium thiosulfate pentahydrate
   term:
     id: CHEBI:32150
@@ -53,6 +70,9 @@ ingredients:
   concentration:
     value: '9.92744'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Sodium thiosulfate pentahydrate
 - preferred_term: KSCN
   term:
     id: CHEBI:30951
@@ -60,6 +80,9 @@ ingredients:
   concentration:
     value: '0.9718'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000608
+    label: KSCN
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -67,6 +90,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -74,6 +100,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -81,6 +110,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -88,6 +120,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -95,6 +130,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -102,6 +140,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -109,6 +150,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -116,6 +160,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -123,38 +170,40 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: HEAT
-  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube or
-    bottle) with a liquid to air ratio of about 1:10. pH after sterilization will
-    about 10.
-- step_number: 2
-  action: MIX
-  description: 'After sterilization add from sterile stock solutions:'
-- step_number: 3
-  action: MIX
-  description: Incubate statically until growth occurs, then shake at 100 rpm.
-- step_number: 4
-  action: DISSOLVE
-  description: (a white colloid will form which will rapidly dissolve after mixing)
-- step_number: 5
-  action: HEAT
-  description: Final pH should be 3, add HCl if needed. Sterilization - 120°C 20 min.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.777279Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1228'
-- timestamp: '2026-02-19T08:26:41.349095+00:00'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1228'
+- timestamp: '2026-02-03T11:19:13.674469'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1228
+- timestamp: '2026-03-13T06:19:23.863759Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003983'
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:38.492291+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM" to
+    "thioalkalivibrio_thiocyanodenitrificans_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:17.418897+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1228_THIOALKALIVIBRIO_THIOCYANODENITRIFICANS_MEDIUM, KOMODO_1228_THIOALKALIVIBRIO_THIOCYANODENITRIFICANS_MEDIUM'
+  notes: 'Sources: KOMODO_1228_THIOALKALIVIBRIO_THIOCYANODENITRIFICANS_MEDIUM, thioalkalivibrio_thiocyanodenitrificans_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1228_THIOALKALIVIBRIO_THIOCYANODENITRIFICANS_MEDIUM
 - KOMODO_1228_THIOALKALIVIBRIO_THIOCYANODENITRIFICANS_MEDIUM
+- thioalkalivibrio_thiocyanodenitrificans_medium
 merge_fingerprint: c85727666ac0b045d27bcc839a9b92f0e219e8f3d13b9ce4f07c56662a29523f

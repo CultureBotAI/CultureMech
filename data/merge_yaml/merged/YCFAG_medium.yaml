@@ -1,6 +1,7 @@
-name: YCFAG medium
+id: CultureMech:009194
+name: ycfag_medium
 original_name: YCFAG medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
     value: '0.009'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: yeast extract
   concentration:
     value: '0.25'
@@ -33,6 +40,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '0.045'
@@ -41,6 +51,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -51,6 +64,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: resazurin
   concentration:
     value: '0.1'
@@ -60,6 +76,9 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: resazurin
 - preferred_term: NaHCO3
   concentration:
     value: '0.4'
@@ -69,6 +88,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: biotin
   concentration:
     value: '1'
@@ -76,6 +98,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
     label: biotin
 - preferred_term: p-aminobenzoic acid
   concentration:
@@ -85,6 +110,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-aminobenzoic acid
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.09'
@@ -94,6 +122,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: folic acid
   concentration:
     value: '5'
@@ -101,6 +132,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:27470
+    label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
     label: folic acid
 - preferred_term: cobalamin
   concentration:
@@ -116,6 +150,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: hemin
   concentration:
     value: '1'
@@ -124,6 +161,9 @@ ingredients:
     component'
   term:
     id: CHEBI:50385
+    label: hemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
     label: hemin
 - preferred_term: cysteine
   concentration:
@@ -134,6 +174,9 @@ ingredients:
   term:
     id: CHEBI:15356
     label: Cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001023
+    label: cysteine
 - preferred_term: pyridoxamine
   concentration:
     value: '15'
@@ -141,6 +184,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:16410
+    label: pyridoxamine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001024
     label: pyridoxamine
 - preferred_term: glucose
   concentration:
@@ -151,6 +197,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: glucose
 - preferred_term: Casitone
   concentration:
     value: '1'
@@ -173,6 +222,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: ae5e34bbe90ccdeb6312151c9948f7fdfd24339b1441d7b393e7e224f4388cbe
+- timestamp: '2026-03-13T06:20:03.850911Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009194'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.579821+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YCFAG medium" to "ycfag_medium" for consistent matching
+merge_fingerprint: 3f7aa867579c9f0a50d1f6efae5f6848eef15a8ab2dfec7f32fb18c7cdc6b552
 merged_from:
-- TOGO_M2637_YCFAG_medium
+- ycfag_medium

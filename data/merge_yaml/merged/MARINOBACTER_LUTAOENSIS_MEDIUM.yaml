@@ -1,15 +1,17 @@
-name: MARINOBACTER LUTAOENSIS MEDIUM
-original_name: MARINOBACTER LUTAOENSIS MEDIUM
-category: imported
+id: CultureMech:003649
+name: marinobacter_lutaoensis_medium
+original_name: MARINOBACTER LUTAOENSIS medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
-  preferred_term: DSMZ Medium 1066
+  preferred_term: KOMODO Medium 1066
   term:
-    id: mediadive.medium:1066
-    label: MARINOBACTER LUTAOENSIS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1066.pdf'
+    id: komodo.medium:1066
+    label: MARINOBACTER LUTAOENSIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1066 | DSMZ Medium: 1066 (mediadive.medium:1066)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
@@ -26,6 +28,9 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -33,29 +38,40 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.282497Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1066'
-- timestamp: '2026-02-19T08:26:38.890502+00:00'
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1066'
+- timestamp: '2026-02-03T11:19:06.500992'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1066
+- timestamp: '2026-03-13T06:19:21.354596Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003649'
+- timestamp: '2026-03-17T06:30:16.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:35.603089+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MARINOBACTER LUTAOENSIS medium" to "marinobacter_lutaoensis_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:14.755414+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1066_MARINOBACTER_LUTAOENSIS_MEDIUM, KOMODO_1066_MARINOBACTER_LUTAOENSIS_medium'
-synonyms:
-- name: MARINOBACTER LUTAOENSIS medium
-  source: KOMODO
-  source_id: komodo.medium:1066
-  original_category: imported
+  notes: 'Sources: KOMODO_1066_MARINOBACTER_LUTAOENSIS_medium, marinobacter_lutaoensis_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_1066_MARINOBACTER_LUTAOENSIS_MEDIUM
 - KOMODO_1066_MARINOBACTER_LUTAOENSIS_medium
+- marinobacter_lutaoensis_medium
 merge_fingerprint: 7c4cbd3f0f9b9d0df5e53ba3f5e7106d3cafa4a262a48679450e54f89972f32d

@@ -1,6 +1,7 @@
-name: CELLULOMONAS FERMENTANS MEDIUM
+id: CultureMech:001450
+name: cellulomonas_fermentans_medium
 original_name: CELLULOMONAS FERMENTANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '2.21'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '1.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.00125'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -64,6 +83,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -71,6 +93,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -78,6 +103,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -85,6 +113,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -100,24 +131,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 350'
-- timestamp: '2026-02-19T08:26:46.832907+00:00'
-  curator: recipe-merger
-  action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_350_CELLULOMONAS_FERMENTANS_MEDIUM, KOMODO_350-1_For_aerobic_growth,
-    KOMODO_350_CELLULOMONAS_FERMENTANS_medium'
-synonyms:
-- name: For aerobic growth
-  source: KOMODO
-  source_id: komodo.medium:350.1
-  original_category: imported
-- name: CELLULOMONAS FERMENTANS medium
-  source: KOMODO
-  source_id: komodo.medium:350
-  original_category: imported
-categories:
-- imported
-merged_from:
-- DSMZ_350_CELLULOMONAS_FERMENTANS_MEDIUM
-- KOMODO_350-1_For_aerobic_growth
-- KOMODO_350_CELLULOMONAS_FERMENTANS_medium
+- timestamp: '2026-03-13T06:19:04.316208Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001450'
+- timestamp: '2026-03-17T06:30:04.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.324271+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CELLULOMONAS FERMENTANS MEDIUM" to "cellulomonas_fermentans_medium"
+    for consistent matching
 merge_fingerprint: f6cda013bb5a606b965560d575951b812fadfe85007a5f089152831516663f02
+merged_from:
+- cellulomonas_fermentans_medium

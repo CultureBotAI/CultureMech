@@ -1,6 +1,7 @@
-name: OCEANISPIROCHAETA LITORALIS MEDIUM
+id: CultureMech:001217
+name: oceanispirochaeta_litoralis_medium
 original_name: OCEANISPIROCHAETA LITORALIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Trypticase peptone
   concentration:
     value: '1'
@@ -45,6 +49,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -59,18 +66,31 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 173'
-- timestamp: '2026-02-19T08:26:44.023470+00:00'
+- timestamp: '2026-03-13T06:19:02.332813Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001217'
+- timestamp: '2026-03-17T06:30:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.153028+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "OCEANISPIROCHAETA LITORALIS MEDIUM" to "oceanispirochaeta_litoralis_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:18.627942+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_173_OCEANISPIROCHAETA_LITORALIS_MEDIUM, KOMODO_173_SPIROCHAETA_LITORALIS_medium'
+  notes: 'Sources: oceanispirochaeta_litoralis_medium, spirochaeta_litoralis_medium'
 synonyms:
-- name: SPIROCHAETA LITORALIS medium
+- name: spirochaeta_litoralis_medium
   source: KOMODO
   source_id: komodo.medium:173
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_173_OCEANISPIROCHAETA_LITORALIS_MEDIUM
-- KOMODO_173_SPIROCHAETA_LITORALIS_medium
+- oceanispirochaeta_litoralis_medium
+- spirochaeta_litoralis_medium
 merge_fingerprint: dcadecaedd54e1bef4fc47ba413ae18fa80596f6fa6278e25f28fc00954d90d0

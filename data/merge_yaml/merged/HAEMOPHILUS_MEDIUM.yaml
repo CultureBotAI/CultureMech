@@ -1,59 +1,133 @@
-name: HAEMOPHILUS MEDIUM
-original_name: HAEMOPHILUS MEDIUM
-category: imported
+id: CultureMech:006522
+name: haemophilus_medium
+original_name: HAEMOPHILUS medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
-  preferred_term: DSMZ Medium 804
+  preferred_term: KOMODO Medium 804
   term:
-    id: mediadive.medium:804
-    label: HAEMOPHILUS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium804.pdf'
+    id: komodo.medium:804
+    label: HAEMOPHILUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 804 | DSMZ Medium: 804 (mediadive.medium:804)
+  | Aerobic: No
+
+
+  Commercial Product: Mueller-Hinton Agar
+
+  Supplier: Multiple suppliers (BD, Sigma-Aldrich, HiMedia)
+
+  Catalog: BD 211443, Sigma 70191
+
+  Source: https://microbenotes.com/mueller-hinton-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
-- preferred_term: Mueller-Hinton broth
+- preferred_term: Beef extract
+  term:
+    id: FOODON:03302088
+    label: beef extract
   concentration:
-    value: '21'
+    value: '2.0'
     unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
+      Agar
+    catalog_number: BD 211443, Sigma 70191
+    product_url: https://microbenotes.com/mueller-hinton-agar/
+  notes: Aqueous beef extract providing nutrients and growth factors; Constituent
+    of Mueller-Hinton Agar commercial product
+- preferred_term: Acid hydrolysate of casein
+  term:
+    id: FOODON:03316428
+    label: tryptone
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
+      Agar
+    catalog_number: BD 211443, Sigma 70191
+    product_url: https://microbenotes.com/mueller-hinton-agar/
+  notes: Casein enzymatic hydrolysate, provides amino acids and peptides. Low PABA
+    and thymine content critical for sulfonamide/trimethoprim testing; Constituent
+    of Mueller-Hinton Agar commercial product
+  synonyms:
+  - synonym_text:
+      synonym_text: casein hydrolysate
+      synonym_type: EXACT
+    synonym_type: EXACT
+  - synonym_text:
+      synonym_text: acid casein hydrolysate
+      synonym_type: EXACT
+    synonym_type: EXACT
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: starch
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
+      Agar
+    catalog_number: BD 211443, Sigma 70191
+    product_url: https://microbenotes.com/mueller-hinton-agar/
+  notes: Acts as protective colloid and absorbs toxic metabolites released from bacteria;
+    Constituent of Mueller-Hinton Agar commercial product
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: agar
+  concentration:
+    value: '17.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
+      Agar
+    catalog_number: BD 211443, Sigma 70191
+    product_url: https://microbenotes.com/mueller-hinton-agar/
+  notes: Solidifying agent; Constituent of Mueller-Hinton Agar commercial product
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: For Haemophilus spp., add 15 mg NAD and 15 mg hemine per L (X + V factors).
-- step_number: 2
-  action: FILTER_STERILIZE
-  description: 'NAD stock solution: dissolve 1 mg NAD per ml dist. water, filter sterilize.'
-- step_number: 3
-  action: FILTER_STERILIZE
-  description: 'Hemine stock solution: dissolve 50 mg hemine in 1 ml 1 M NaOH, make
-    up to 25 ml with dist. water, filter sterilize.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.308368Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 804'
-- timestamp: '2026-02-19T08:26:54.728831+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 804'
+- timestamp: '2026-02-03T11:19:10.179840'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 804
+- timestamp: '2026-03-13T06:19:41.518153Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006522'
+- timestamp: '2026-03-17T19:45:58.990102+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HAEMOPHILUS medium" to "haemophilus_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:32.485533+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_804_HAEMOPHILUS_MEDIUM, KOMODO_804-1_For_Haemophilus_spp,
-    KOMODO_804_HAEMOPHILUS_medium'
+  notes: 'Sources: KOMODO_804_HAEMOPHILUS_medium, for_haemophilus_spp, haemophilus_medium'
 synonyms:
-- name: For Haemophilus spp
+- name: for_haemophilus_spp
   source: KOMODO
   source_id: komodo.medium:804.1
-  original_category: imported
-- name: HAEMOPHILUS medium
-  source: KOMODO
-  source_id: komodo.medium:804
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_804_HAEMOPHILUS_MEDIUM
-- KOMODO_804-1_For_Haemophilus_spp
 - KOMODO_804_HAEMOPHILUS_medium
-merge_fingerprint: 85868454b50047abf9bec68aeaf9e38292951ceab24d6557d78c0f3a0bca4b49
+- for_haemophilus_spp
+- haemophilus_medium
+merge_fingerprint: e84080997fdeae4e0af8ddfb08e89439623ad1e54888b497fe92c4bfe0a6a766

@@ -1,15 +1,16 @@
-name: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
+id: CultureMech:004665
+name: medium_for_chemolithotrophic_growth_of_bacillus_schlegelii
 original_name: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
-ph_value: 7.1
+physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 261
+  preferred_term: KOMODO Medium 261
   term:
-    id: mediadive.medium:261
+    id: komodo.medium:261
     label: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 261 | DSMZ Medium: 261 (mediadive.medium:261)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '4.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -68,6 +90,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -75,6 +100,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -82,6 +110,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -89,6 +120,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -96,6 +130,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -103,6 +140,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -110,6 +150,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -117,42 +160,54 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.1. Agar if necessary 15.0 g. Distribute in 30 - 50 ml
-    amounts in Erlenmeyer flasks and sterilize for 15 minutes at 121°C.
-- step_number: 2
-  action: MIX
-  description: "Incubate at 65C without agitation under 5% (v/v)\r\nO2, 10% CO2,\
-    \ 45% H2"
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.610202Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 261'
-- timestamp: '2026-02-19T08:26:45.367363+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 261'
+- timestamp: '2026-02-03T11:19:19.343354'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 261
+- timestamp: '2026-03-13T06:19:27.954427Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004665'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:43.264571+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII"
+    to "medium_for_chemolithotrophic_growth_of_bacillus_schlegelii" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:21.121165+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_261_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_OF_BACILLUS_SCHLEGELII,
-    DSMZ_369_BACILLUS_TUSCIAE_MEDIUM, KOMODO_261_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_OF_BACILLUS_SCHLEGELII,
-    KOMODO_369_BACILLUS_TUSCIAE_MEDIUM'
+  notes: 'Sources: KOMODO_261_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_OF_BACILLUS_SCHLEGELII,
+    KOMODO_369_BACILLUS_TUSCIAE_MEDIUM, bacillus_tusciae_medium, medium_for_chemolithotrophic_growth_of_bacillus_schlegelii'
+ph_value: 7.1
 synonyms:
-- name: BACILLUS TUSCIAE MEDIUM
-  source: MediaDive
-  source_id: mediadive.medium:369
-  original_category: imported
-- name: BACILLUS TUSCIAE MEDIUM
+- name: bacillus_tusciae_medium
   source: KOMODO
   source_id: komodo.medium:369
-  original_category: imported
+  original_category: bacterial
+- name: bacillus_tusciae_medium
+  source: MediaDive
+  source_id: mediadive.medium:369
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_261_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_OF_BACILLUS_SCHLEGELII
-- DSMZ_369_BACILLUS_TUSCIAE_MEDIUM
 - KOMODO_261_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_OF_BACILLUS_SCHLEGELII
 - KOMODO_369_BACILLUS_TUSCIAE_MEDIUM
+- bacillus_tusciae_medium
+- medium_for_chemolithotrophic_growth_of_bacillus_schlegelii
 merge_fingerprint: 4b4971bb395cecb9008faea0031b90f9091e9b93814adf813911794812a0fa6b

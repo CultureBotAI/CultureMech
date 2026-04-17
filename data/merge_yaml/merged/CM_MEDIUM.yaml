@@ -1,64 +1,112 @@
-name: CM MEDIUM
+id: CultureMech:000974
+name: cm_medium
 original_name: CM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_range: 7-7.2
+physical_state: SOLID_AGAR
+ph_value: 7.4
 media_term:
-  preferred_term: DSMZ Medium 1595
+  preferred_term: DSMZ Medium 1504
   term:
-    id: mediadive.medium:1595
+    id: mediadive.medium:1504
     label: CM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1595.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1504.pdf'
 ingredients:
-- preferred_term: Beef extract
+- preferred_term: Peptone
   concentration:
-    value: '0.5'
+    value: '7.5'
     unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
-    value: '0.5'
+    value: '10'
     unit: G_PER_L
-- preferred_term: Peptone
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: Na3-citrate
+  term:
+    id: CHEBI:53258
+    label: Na3-citrate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Na3-citrate
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.5'
+    value: '150'
     unit: G_PER_L
-- preferred_term: D-Glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: FeSO4 x 7 H2O
   term:
-    id: CHEBI:17634
-    label: D-Glucose
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '14'
+    value: '20'
     unit: G_PER_L
-  notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0-7.2.
+  action: MIX
+  description: pH 7.4 (NaOH)
 - step_number: 2
   action: MIX
-  description: Media may be solidified by adding 14.0 g/l agar.
+  description: Prepare 4.98% FeSO4 x 7 H2O (= 10 g Fe in 1l 0.001 M HCl); add 1 ml
+    per liter medium.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:14.944087Z'
+- timestamp: '2026-01-26T17:53:14.645571Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1595'
-merge_fingerprint: 0dbb31be8c4ae64ddb46069fb3d791e2a3c8d8bae69304205e9100046c57b97a
+  notes: 'Source: DSMZ, ID: 1504'
+- timestamp: '2026-03-13T06:19:00.087032Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000974'
+- timestamp: '2026-03-17T06:30:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.666919+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CM MEDIUM" to "cm_medium" for consistent matching
+merge_fingerprint: 1222fbae65bc5b84a54549459cfd6fc1e16a6aa99fa6fea5060ebfc28a2e1348
 merged_from:
-- DSMZ_1595_CM_MEDIUM
+- cm_medium

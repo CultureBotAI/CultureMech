@@ -1,8 +1,9 @@
-name: NAG MEDIUM
+id: CultureMech:001467
+name: nag_medium
 original_name: NAG MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 366
@@ -27,6 +28,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -34,6 +38,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -46,6 +53,18 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 366'
+- timestamp: '2026-03-13T06:19:04.405987Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001467'
+- timestamp: '2026-03-17T06:30:17.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.424512+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NAG MEDIUM" to "nag_medium" for consistent matching
 merge_fingerprint: 4ac0b504e9baab787b2b5454a4cd17172b8947a1933d797fbe2d50a145f3e266
 merged_from:
-- DSMZ_366_NAG_MEDIUM
+- nag_medium

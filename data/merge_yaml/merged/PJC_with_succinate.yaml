@@ -1,6 +1,7 @@
-name: PJC with succinate
+id: CultureMech:007433
+name: pjc_with_succinate
 original_name: PJC with succinate
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '15.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000420
+    label: Succinate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '18.6'
@@ -23,6 +27,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: Cobaltous sulfate
   concentration:
     value: '0.004'
@@ -34,6 +41,9 @@ ingredients:
   concentration:
     value: '0.811'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -41,6 +51,9 @@ ingredients:
   concentration:
     value: '0.017'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -48,6 +61,9 @@ ingredients:
   concentration:
     value: '37.4'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.043'
@@ -59,10 +75,19 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '7.25'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -79,6 +104,19 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 86, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:49.032292Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007433'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:07.413309+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PJC with succinate" to "pjc_with_succinate" for consistent
+    matching
 media_term:
   preferred_term: MediaDB Medium 86
   term:
@@ -90,6 +128,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: dc669d074f45aaeb56b83d7650c14db7b0ddd29d82b08a5a9347812a45c897a6
+merge_fingerprint: 49f56defeeb133806c5bb760eecbd53b5b17aaf855f261f22a5e668963d2655e
 merged_from:
-- MEDIADB_86_PJC_with_succinate
+- pjc_with_succinate

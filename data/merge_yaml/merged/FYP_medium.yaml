@@ -1,17 +1,21 @@
-name: FYP medium
+id: CultureMech:008675
+name: fyp_medium
 original_name: FYP medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '3.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Sodium acetate
   concentration:
@@ -21,6 +25,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Fructose
   concentration:
     value: '10'
@@ -30,33 +37,14 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000288
+    label: Fructose
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Polypepton*
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Tween 80 solution**
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Salts solution***
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Distilled Water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Tween 80
   concentration:
     value: '50'
@@ -66,15 +54,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
-- preferred_term: Distilled Water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '40'
@@ -84,6 +66,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: NaCl
   concentration:
     value: '2'
@@ -93,18 +78,27 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnSO4·4H2O
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86358
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2085
   term:
@@ -126,6 +120,54 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 4a61e1a502c4f99f8a6faaa20c91fa1aa2a9a75d0342832591c6dbc17455aca6
+- timestamp: '2026-03-09T08:04:49.390705+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:20.536519Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:59.293610Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008675'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:53.705875'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:28.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.929613+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "FYP medium" to "fyp_medium" for consistent matching
+solutions:
+- preferred_term: Polypepton*
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+  name: Unknown solution
+- preferred_term: Tween 80 solution**
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Salts solution***
+  term:
+    id: mediadive.solution:4429
+    label: Salts solution
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: See mediadive_4429_Salts_solution.yaml for composition
+  name: Unknown solution
+merge_fingerprint: 4f14f15bf6a3becc0625d3f2364a79eef757dcae4abec95a95188c2b45ccc0fd
 merged_from:
-- TOGO_M2085_FYP_medium
+- fyp_medium

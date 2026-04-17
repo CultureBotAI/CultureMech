@@ -1,14 +1,10 @@
-name: Methanoculleus Bourgense Medium
+id: CultureMech:009207
+name: methanoculleus_bourgense_medium
 original_name: Methanoculleus Bourgense Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -17,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: NH4Cl
   concentration:
@@ -27,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.1'
@@ -36,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2 x 6 H2O
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.2'
@@ -45,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Na-acetate
   concentration:
     value: '1'
@@ -52,6 +60,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:32954
+    label: Na-acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
     label: Na-acetate
 - preferred_term: Na2CO3
   concentration:
@@ -62,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: K2HPO4 x 3 H2O
   concentration:
     value: '0.4'
@@ -71,6 +85,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4 x 3 H2O
 - preferred_term: Trypticase peptone (BD BBL)
   concentration:
     value: '1'
@@ -84,6 +101,9 @@ ingredients:
   term:
     id: CHEBI:62965
     label: Na-formate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Na-formate
 - preferred_term: L-Cysteine-HCl x H2O
   concentration:
     value: '0.5'
@@ -92,6 +112,9 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: L-Cysteine-HCl x H2O
 - preferred_term: Yeast extract (OXOID)
   concentration:
     value: '1'
@@ -102,11 +125,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2652
   term:
@@ -131,6 +160,35 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Hydrogen gas'
-merge_fingerprint: f60c550024621718b5735daee9c7bf6c17132c50120de86478a80d251ddaea37
+- timestamp: '2026-03-09T08:04:15.017321+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:04.037222Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009207'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:57.152737'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.765685+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanoculleus Bourgense Medium" to "methanoculleus_bourgense_medium"
+    for consistent matching
+solutions:
+- preferred_term: Na-resazurin solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution
+merge_fingerprint: e29a0b63a5ce88cb40a35a1ef8656b5a2224bc058093a7a78491fa67809fa386
 merged_from:
-- TOGO_M2652_Methanoculleus_Bourgense_Medium
+- methanoculleus_bourgense_medium

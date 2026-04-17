@@ -1,6 +1,7 @@
-name: Luria broth
+id: CultureMech:009507
+name: luria_broth
 original_name: Luria broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '5'
@@ -22,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Bacto yeast extract
   concentration:
     value: '5'
@@ -49,18 +56,30 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:27:01.722555+00:00'
+- timestamp: '2026-03-13T06:20:06.446557Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009507'
+- timestamp: '2026-03-17T06:30:30.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.450494+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Luria broth" to "luria_broth" for consistent matching
+- timestamp: '2026-04-17T06:30:08.368014+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: TOGO_M2985_Lennox, TOGO_M2986_Luria_broth'
+  notes: 'Sources: lennox, luria_broth'
 synonyms:
-- name: Lennox
+- name: lennox
   source: TOGO
   source_id: TOGO:M2985
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- TOGO_M2985_Lennox
-- TOGO_M2986_Luria_broth
+- lennox
+- luria_broth
 merge_fingerprint: 92073b844b5a258a897e12f20755236a948977e997bf59d9cb296ec71d9a66aa

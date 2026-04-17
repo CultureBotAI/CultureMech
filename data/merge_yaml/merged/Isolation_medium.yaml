@@ -1,6 +1,7 @@
-name: Isolation medium
+id: CultureMech:007150
+name: isolation_medium
 original_name: Isolation medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -15,6 +16,9 @@ ingredients:
   concentration:
     value: '3.23e-06'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '12.6'
@@ -26,6 +30,9 @@ ingredients:
   concentration:
     value: '17.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '11.0'
@@ -37,6 +44,9 @@ ingredients:
   concentration:
     value: '0.81'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -44,6 +54,9 @@ ingredients:
   concentration:
     value: '8.3e-06'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.036'
@@ -52,6 +65,9 @@ ingredients:
   concentration:
     value: '8.41e-06'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -59,6 +75,9 @@ ingredients:
   concentration:
     value: '5.68e-05'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: 4e-06
@@ -70,10 +89,16 @@ ingredients:
   concentration:
     value: '12.5'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: Ammonium nitrate
 - preferred_term: Molybdenum trioxide
   concentration:
     value: '1.39e-05'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001119
+    label: Molybdenum trioxide
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -90,6 +115,19 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 252, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.459611Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007150'
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.620048+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Isolation medium" to "isolation_medium" for consistent
+    matching
 media_term:
   preferred_term: MediaDB Medium 252
   term:
@@ -101,6 +139,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: e8c75a1f1dbe809897b8ce974203a4eec2984f4e220abc9ca51b4b57543a2844
+merge_fingerprint: cef0214aa3ccbd848a822b7fbfc3577a101965a23a5e561c3806e241c7cd8c22
 merged_from:
-- MEDIADB_252_Isolation_medium
+- isolation_medium

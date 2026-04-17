@@ -1,6 +1,7 @@
-name: CH
+id: CultureMech:000330
+name: ch
 original_name: CH
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -17,6 +18,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -24,6 +28,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -31,6 +38,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -43,6 +53,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C22'
+- timestamp: '2026-03-13T06:18:54.514758Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000330'
+- timestamp: '2026-03-17T06:29:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.501310+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CH" to "ch" for consistent matching
+kg_microbe_match: mediadive.medium:C22
 merge_fingerprint: da65274ac32c196eba9c922452f04ba77bbf2605852236c26b415ba4426eb70b
 merged_from:
-- CCAP_C22_CH
+- ch

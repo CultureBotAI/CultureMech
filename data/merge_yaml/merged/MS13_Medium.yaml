@@ -1,6 +1,7 @@
-name: MS13 Medium
+id: CultureMech:007311
+name: ms13_medium
 original_name: MS13 Medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,10 +13,10 @@ ingredients:
     value: '0.002657'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.008123'
     unit: MILLIMOLAR
@@ -31,6 +32,9 @@ ingredients:
   concentration:
     value: '55.51'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -39,6 +43,9 @@ ingredients:
     value: '0.04093'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Pyridoxamine
   term:
     id: CHEBI:16410
@@ -47,6 +54,9 @@ ingredients:
     value: '0.02973'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydam'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001024
+    label: Pyridoxamine
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -54,6 +64,9 @@ ingredients:
   concentration:
     value: '0.002099'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: DL-methionine
   term:
     id: CHEBI:16811
@@ -61,6 +74,9 @@ ingredients:
   concentration:
     value: '0.8042'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000774
+    label: DL-methionine
 - preferred_term: L-Glutamate
   concentration:
     value: '0.6797'
@@ -81,6 +97,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Isoleucine
   concentration:
     value: '1.525'
@@ -113,6 +132,23 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:33.009391Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:47.675680Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007311'
+- timestamp: '2026-03-17T06:30:17.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:05.963543+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MS13 Medium" to "ms13_medium" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 410
   term:
@@ -124,6 +160,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 793280acd0b84da23d184fe144ac4d4121acc3bd917dc2ad3d52b072c68246d1
+merge_fingerprint: 15581c7aada8c36ef51b34cddcd1e59ce778396ab51b56464549042321d32fde
 merged_from:
-- MEDIADB_410_MS13_Medium
+- ms13_medium

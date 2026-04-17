@@ -1,0 +1,105 @@
+id: CultureMech:004981
+name: vr_salts_b
+original_name: VR salts B
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 3133 | DSMZ Medium: 3133
+  (mediadive.medium:3133) | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 3133
+  term:
+    id: komodo.medium:3133
+    label: VR salts B
+ingredients:
+- preferred_term: NaOH
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
+  term:
+    id: CHEBI:32145
+    label: ''
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3133'
+- timestamp: '2026-03-13T06:19:29.300574Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004981'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:34.655409'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:44.856499+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "VR salts B" to "vr_salts_b" for consistent matching
+- timestamp: '2026-04-17T06:30:03.051068+00:00'
+  curator: recipe-merger
+  action: Merged 9 duplicate recipes into canonical record
+  notes: 'Sources: fe_iii_nta_solution_medium_1001, hutners_salts_medium_590, mineral_salt_solution_medium_289,
+    solution_of_growth_stimulating_factors_medium_829, trace_element_solution_medium_939,
+    trace_element_solution_sl_4_medium_457, trace_metal_solution_kelly_solution_t,
+    trace_metal_solution_kelly_solution_t_replace_cacl2_x_2_h2o_with_cacl2_x_2_h2o,
+    vr_salts_b'
+synonyms:
+- name: fe_iii_nta_solution_medium_1001
+  source: KOMODO
+  source_id: komodo.medium:2005
+  original_category: bacterial
+- name: hutners_salts_medium_590
+  source: KOMODO
+  source_id: komodo.medium:2110
+  original_category: bacterial
+- name: mineral_salt_solution_medium_289
+  source: KOMODO
+  source_id: komodo.medium:3028
+  original_category: bacterial
+- name: solution_of_growth_stimulating_factors_medium_829
+  source: KOMODO
+  source_id: komodo.medium:2027
+  original_category: bacterial
+- name: trace_element_solution_medium_939
+  source: KOMODO
+  source_id: komodo.medium:2058
+  original_category: bacterial
+- name: trace_element_solution_sl_4_medium_457
+  source: KOMODO
+  source_id: komodo.medium:2065
+  original_category: bacterial
+- name: trace_metal_solution_kelly_solution_t
+  source: KOMODO
+  source_id: komodo.medium:2070
+  original_category: bacterial
+- name: trace_metal_solution_kelly_solution_t_replace_cacl2_x_2_h2o_with_cacl2_x_2_h2o
+  source: KOMODO
+  source_id: komodo.medium:2070_replace_CaCl2 x 2 H2O_with_CaCl2 x 2 H2O
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- fe_iii_nta_solution_medium_1001
+- hutners_salts_medium_590
+- mineral_salt_solution_medium_289
+- solution_of_growth_stimulating_factors_medium_829
+- trace_element_solution_medium_939
+- trace_element_solution_sl_4_medium_457
+- trace_metal_solution_kelly_solution_t
+- trace_metal_solution_kelly_solution_t_replace_cacl2_x_2_h2o_with_cacl2_x_2_h2o
+- vr_salts_b
+merge_fingerprint: e97cce461170431dd3967233cce26e79fd110a94fda9faffa3f081834981a89c

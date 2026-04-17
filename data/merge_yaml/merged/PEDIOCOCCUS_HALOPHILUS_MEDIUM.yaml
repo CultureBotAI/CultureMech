@@ -1,6 +1,7 @@
-name: PEDIOCOCCUS HALOPHILUS MEDIUM
+id: CultureMech:000258
+name: pediococcus_halophilus_medium
 original_name: PEDIOCOCCUS HALOPHILUS MEDIUM
-category: imported
+category: ARCHAEA
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.2-6.5
@@ -30,6 +31,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -37,6 +41,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -44,6 +51,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
@@ -51,6 +61,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
 - preferred_term: (NH4)3 citrate
   term:
     id: CHEBI:63037
@@ -58,6 +71,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000335
+    label: (NH4)3 citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -65,6 +81,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -72,6 +91,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -79,6 +101,9 @@ ingredients:
   concentration:
     value: '65'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -90,18 +115,27 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 227'
-- timestamp: '2026-02-19T08:26:37.083094+00:00'
+- timestamp: '2026-03-13T06:18:53.830708Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000258'
+- timestamp: '2026-03-17T17:06:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:04.744256+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PEDIOCOCCUS HALOPHILUS MEDIUM" to "pediococcus_halophilus_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:09.610818+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_227_PEDIOCOCCUS_HALOPHILUS_MEDIUM, KOMODO_227_PEDIOCOCCUS_HALOPHILUS_medium'
-synonyms:
-- name: PEDIOCOCCUS HALOPHILUS medium
-  source: KOMODO
-  source_id: komodo.medium:227
-  original_category: imported
+  notes: 'Sources: pediococcus_halophilus_medium, pediococcus_halophilus_medium'
 categories:
-- imported
+- ARCHAEA
+- bacterial
 merged_from:
-- DSMZ_227_PEDIOCOCCUS_HALOPHILUS_MEDIUM
-- KOMODO_227_PEDIOCOCCUS_HALOPHILUS_medium
+- pediococcus_halophilus_medium
+- pediococcus_halophilus_medium
 merge_fingerprint: f424fef05e94314ed273da90335749c48f7d12cf2d54404702db556a6150f48d

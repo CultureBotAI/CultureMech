@@ -1,15 +1,17 @@
-name: GLYCEROL CORNSTEEP AGAR
+id: CultureMech:006052
+name: glycerol_cornsteep_agar
 original_name: GLYCEROL CORNSTEEP AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
-  preferred_term: DSMZ Medium 581
+  preferred_term: KOMODO Medium 581
   term:
-    id: mediadive.medium:581
+    id: komodo.medium:581
     label: GLYCEROL CORNSTEEP AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium581.pdf'
+notes: 'Source: KOMODO ModelSEED | ID: 581 | DSMZ Medium: 581 (mediadive.medium:581)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glycerol
   term:
@@ -18,6 +20,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Corn steep powder
   concentration:
     value: '5'
@@ -41,6 +46,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -48,24 +56,40 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 7.2
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.642104Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 581'
-- timestamp: '2026-02-19T08:26:51.317567+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 581'
+- timestamp: '2026-02-03T11:19:11.384506'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 581
+- timestamp: '2026-03-13T06:19:37.907450Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006052'
+- timestamp: '2026-03-17T06:30:30.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:54.752403+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GLYCEROL CORNSTEEP AGAR" to "glycerol_cornsteep_agar"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:29.197996+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_581_GLYCEROL_CORNSTEEP_AGAR, KOMODO_581_GLYCEROL_CORNSTEEP_AGAR'
+  notes: 'Sources: KOMODO_581_GLYCEROL_CORNSTEEP_AGAR, glycerol_cornsteep_agar'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_581_GLYCEROL_CORNSTEEP_AGAR
 - KOMODO_581_GLYCEROL_CORNSTEEP_AGAR
+- glycerol_cornsteep_agar
 merge_fingerprint: b4052b276e678540fdde8142ce37fa5caf5d92f41e1053be43ff1b842aefde51

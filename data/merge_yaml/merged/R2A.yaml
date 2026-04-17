@@ -1,6 +1,7 @@
-name: R2A
+id: CultureMech:009495
+name: r2a
 original_name: R2A
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -22,6 +23,14 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2972'
+- timestamp: '2026-03-13T06:20:06.409313Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009495'
+- timestamp: '2026-03-17T19:46:25.409227+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R2A" to "r2a" for consistent matching
 merge_fingerprint: 14176dbf04e58573aecffed1f1ce9264cd8ec45f4b46d28b9eeee82ac8781572
 merged_from:
-- TOGO_M2972_R2A
+- r2a

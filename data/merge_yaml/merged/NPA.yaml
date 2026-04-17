@@ -1,6 +1,7 @@
-name: NPA
+id: CultureMech:000381
+name: npa
 original_name: NPA
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -21,6 +22,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -28,6 +32,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -35,6 +42,9 @@ ingredients:
   concentration:
     value: '4.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -42,6 +52,9 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -60,23 +73,35 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C69'
-- timestamp: '2026-02-19T08:26:37.724132+00:00'
+- timestamp: '2026-03-13T06:18:54.870500Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000381'
+- timestamp: '2026-03-17T06:30:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.880626+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NPA" to "npa" for consistent matching
+- timestamp: '2026-04-17T06:30:18.061317+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: CCAP_C63_NCL, CCAP_C65_NCL_PJ, CCAP_C69_NPA'
+  notes: 'Sources: ncl, ncl_pj, npa'
 synonyms:
-- name: NCL
+- name: ncl
   source: MediaDive
   source_id: mediadive.medium:C63
-  original_category: imported
-- name: NCL:PJ
+  original_category: bacterial
+- name: ncl_pj
   source: MediaDive
   source_id: mediadive.medium:C65
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- CCAP_C63_NCL
-- CCAP_C65_NCL_PJ
-- CCAP_C69_NPA
+- ncl
+- ncl_pj
+- npa
 merge_fingerprint: f20546ee693aebea50cffc31eedd7548e380397180d3a0f46be4d1243b659562

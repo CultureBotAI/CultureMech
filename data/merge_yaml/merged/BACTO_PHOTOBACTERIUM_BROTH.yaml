@@ -1,6 +1,7 @@
-name: BACTO PHOTOBACTERIUM BROTH
+id: CultureMech:015365
+name: bacto_photobacterium_broth
 original_name: BACTO PHOTOBACTERIUM BROTH
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.2
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: FeCl2
   term:
     id: CHEBI:30812
@@ -40,6 +47,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000566
+    label: FeCl2
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
@@ -47,6 +57,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -54,6 +67,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Na-glycerol phosphate
   concentration:
     value: '23.5'
@@ -65,6 +81,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -76,6 +95,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 608'
+- timestamp: '2026-03-13T06:20:42.192236Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015365'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.791381+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BACTO PHOTOBACTERIUM BROTH" to "bacto_photobacterium_broth"
+    for consistent matching
 merge_fingerprint: 4f8b03cd6f7118e2a73f0afd0d28f5110fce589bdbe97dc6bcbbcdd27c09dbaa
 merged_from:
-- DSMZ_608_BACTO_PHOTOBACTERIUM_BROTH
+- bacto_photobacterium_broth

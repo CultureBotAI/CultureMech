@@ -1,6 +1,7 @@
-name: Medium YCFAGSC
+id: CultureMech:009196
+name: medium_ycfagsc
 original_name: Medium YCFAGSC
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
     value: '0.009'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '0.25'
@@ -33,6 +40,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '0.045'
@@ -41,6 +51,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -51,6 +64,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   concentration:
     value: '0.1'
@@ -59,6 +75,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: NaHCO3
   concentration:
@@ -69,6 +88,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Biotin
   concentration:
     value: '1'
@@ -77,11 +99,20 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-amino benzoic acid
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000729
+    label: p-amino benzoic acid
+  term:
+    id: CHEBI:194474
+    label: ''
 - preferred_term: Folic acid
   concentration:
     value: '5'
@@ -90,6 +121,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Cobalamin
   concentration:
     value: '1'
@@ -103,6 +137,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Starch
   concentration:
     value: '0.2'
@@ -112,6 +149,9 @@ ingredients:
   term:
     id: CHEBI:85248
     label: gellan gum
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000929
+    label: Starch
 - preferred_term: CaCl2
   concentration:
     value: '0.009'
@@ -121,6 +161,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: Cellobiose
   concentration:
     value: '0.2'
@@ -130,6 +173,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Thiamine
   concentration:
     value: '5'
@@ -138,6 +184,9 @@ ingredients:
   term:
     id: CHEBI:26948
     label: vitamin B1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: Hemin
   concentration:
     value: '1'
@@ -147,6 +196,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Hemin
 - preferred_term: Cysteine
   concentration:
     value: '0.1'
@@ -156,6 +208,9 @@ ingredients:
   term:
     id: CHEBI:15356
     label: Cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001023
+    label: Cysteine
 - preferred_term: Pyridoxamine
   concentration:
     value: '15'
@@ -164,6 +219,9 @@ ingredients:
   term:
     id: CHEBI:16410
     label: pyridoxamine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001024
+    label: Pyridoxamine
 - preferred_term: Glucose
   concentration:
     value: '0.2'
@@ -173,6 +231,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Casitone
   concentration:
     value: '1'
@@ -183,6 +244,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2639
   term:
@@ -204,6 +268,19 @@ curation_history:
   date: '2026-02-03T11:20:55.069241'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
-merge_fingerprint: 82e6defc56abe00174ccea46b392c37648c7558ca0934d6bd668c4855d5b87d3
+- timestamp: '2026-03-13T06:20:03.869581Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009196'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.598863+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Medium YCFAGSC" to "medium_ycfagsc" for consistent
+    matching
+merge_fingerprint: a3cdb735a3535acd8d4bd0e2d5a12f7fc8878dfb4257c955f5ac2d0ef1b2790f
 merged_from:
-- TOGO_M2639_Medium_YCFAGSC
+- medium_ycfagsc

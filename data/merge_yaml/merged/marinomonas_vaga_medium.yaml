@@ -1,0 +1,130 @@
+id: CultureMech:006109
+name: marinomonas_vaga_medium
+original_name: MARINOMONAS VAGA medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 617
+  term:
+    id: komodo.medium:617
+    label: MARINOMONAS VAGA medium
+notes: 'Source: KOMODO ModelSEED | ID: 617 | DSMZ Medium: 617 (mediadive.medium:617)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Tap water
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 617'
+- timestamp: '2026-02-03T11:19:17.963339'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 617
+- timestamp: '2026-03-13T06:19:38.352182Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006109'
+- timestamp: '2026-03-17T06:30:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.262911+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MARINOMONAS VAGA medium" to "marinomonas_vaga_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:29.653163+00:00'
+  curator: recipe-merger
+  action: Merged 10 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_617_MARINOMONAS_VAGA_medium, KOMODO_617a_BLOOD_AGAR_BASE_OXOID_CM55,
+    TOGO_M15_Nutrient_Agar_NO._2, TOGO_M16_1_10_Nutrient_Agar_NO._2, TOGO_M17_1_100_Nutrient_Agar_NO._2,
+    TOGO_M405_Nutrient_Agar_With_50_Soil_Extract_And_5_NaCl, blood_agar_base_oxoid_cm55,
+    for_dsm_7232, marinomonas_vaga_medium, na_medium'
+synonyms:
+- name: blood_agar_base_oxoid_cm55
+  source: KOMODO
+  source_id: komodo.medium:617a
+  original_category: bacterial
+- name: nutrient_agar_no_2
+  source: TOGO
+  source_id: TOGO:M15
+  original_category: bacterial
+- name: 1_10_nutrient_agar_no_2
+  source: TOGO
+  source_id: TOGO:M16
+  original_category: bacterial
+- name: 1_100_nutrient_agar_no_2
+  source: TOGO
+  source_id: TOGO:M17
+  original_category: bacterial
+- name: nutrient_agar_with_50_soil_extract_and_5_nacl
+  source: TOGO
+  source_id: TOGO:M405
+  original_category: bacterial
+- name: blood_agar_base_oxoid_cm55
+  source: MediaDive
+  source_id: mediadive.medium:617a
+  original_category: bacterial
+- name: for_dsm_7232
+  source: KOMODO
+  source_id: komodo.medium:617a.1
+  original_category: bacterial
+- name: na_medium
+  source: TOGO
+  source_id: TOGO:M2163
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_617_MARINOMONAS_VAGA_medium
+- KOMODO_617a_BLOOD_AGAR_BASE_OXOID_CM55
+- TOGO_M15_Nutrient_Agar_NO._2
+- TOGO_M16_1_10_Nutrient_Agar_NO._2
+- TOGO_M17_1_100_Nutrient_Agar_NO._2
+- TOGO_M405_Nutrient_Agar_With_50_Soil_Extract_And_5_NaCl
+- blood_agar_base_oxoid_cm55
+- for_dsm_7232
+- marinomonas_vaga_medium
+- na_medium
+merge_fingerprint: 81f6c5d1e83b8e380fb9c8c5a21d6e990ef9a1328cd05475fac79c94b00cddcc

@@ -1,6 +1,7 @@
-name: YEL
+id: CultureMech:000314
+name: yel
 original_name: YEL
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -29,6 +30,14 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C107'
+- timestamp: '2026-03-13T06:18:54.375184Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000314'
+- timestamp: '2026-03-17T19:45:05.343458+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YEL" to "yel" for consistent matching
 merge_fingerprint: 1005361ed435a27dd13428ecf051d6701c6d790347a72068f184ffec4e3a9a79
 merged_from:
-- CCAP_C107_YEL
+- yel

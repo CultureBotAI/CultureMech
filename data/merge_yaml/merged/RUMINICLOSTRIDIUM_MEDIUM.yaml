@@ -1,6 +1,7 @@
-name: RUMINICLOSTRIDIUM MEDIUM
+id: CultureMech:000871
+name: ruminiclostridium_medium
 original_name: RUMINICLOSTRIDIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -64,6 +83,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -71,6 +93,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -78,6 +103,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -85,6 +113,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '4'
@@ -125,27 +156,38 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 140'
-- timestamp: '2026-02-19T08:26:43.226879+00:00'
+- timestamp: '2026-03-13T06:18:59.056162Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000871'
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:10.531485+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RUMINICLOSTRIDIUM MEDIUM" to "ruminiclostridium_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:58.246399+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_140_RUMINICLOSTRIDIUM_MEDIUM, KOMODO_140-replace-Rumen fluid,
-    clarified-with-Sludge fluid (medium 119)_CLOSTRIDIUM_CELLOBIOPARUM_medium_replace_Rumen_fluid_clarified_with_Sludge_fluid,
-    KOMODO_140_CLOSTRIDIUM_CELLOBIOPARUM_medium'
+  notes: 'Sources: clostridium_cellobioparum_medium, clostridium_cellobioparum_medium_replace_rumen_fluid_clarified_with_sludge_fluid_medium_119,
+    ruminiclostridium_medium'
 synonyms:
-- name: CLOSTRIDIUM CELLOBIOPARUM medium_replace_Rumen fluid, clarified_with_Sludge
-    fluid (medium 119)
+- name: clostridium_cellobioparum_medium
+  source: KOMODO
+  source_id: komodo.medium:140
+  original_category: bacterial
+- name: clostridium_cellobioparum_medium_replace_rumen_fluid_clarified_with_sludge_fluid_medium_119
   source: KOMODO
   source_id: komodo.medium:140_replace_Rumen fluid, clarified_with_Sludge fluid (medium
     119)
-  original_category: imported
-- name: CLOSTRIDIUM CELLOBIOPARUM medium
-  source: KOMODO
-  source_id: komodo.medium:140
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_140_RUMINICLOSTRIDIUM_MEDIUM
-- KOMODO_140-replace-Rumen fluid, clarified-with-Sludge fluid (medium 119)_CLOSTRIDIUM_CELLOBIOPARUM_medium_replace_Rumen_fluid_clarified_with_Sludge_fluid
-- KOMODO_140_CLOSTRIDIUM_CELLOBIOPARUM_medium
+- clostridium_cellobioparum_medium
+- clostridium_cellobioparum_medium_replace_rumen_fluid_clarified_with_sludge_fluid_medium_119
+- ruminiclostridium_medium
 merge_fingerprint: d7b229138d0d711ef4c7e6a8d42cef06bf809780b41e6d413a97dc85a4db3351

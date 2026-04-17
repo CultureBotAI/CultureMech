@@ -1,15 +1,30 @@
-name: ANAEROFILUM MEDIUM
-original_name: ANAEROFILUM MEDIUM
-category: imported
+id: CultureMech:006361
+name: anaerofilum_medium
+original_name: ANAEROFILUM medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7
 media_term:
-  preferred_term: DSMZ Medium 719
+  preferred_term: KOMODO Medium 719
   term:
-    id: mediadive.medium:719
-    label: ANAEROFILUM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium719.pdf'
+    id: komodo.medium:719
+    label: ANAEROFILUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 719 | DSMZ Medium: 719 (mediadive.medium:719)
+  | Aerobic: Yes
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -18,6 +33,9 @@ ingredients:
   concentration:
     value: '0.488759'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -25,6 +43,9 @@ ingredients:
   concentration:
     value: '0.391007'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -32,6 +53,9 @@ ingredients:
   concentration:
     value: '0.391007'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -39,6 +63,9 @@ ingredients:
   concentration:
     value: '0.391007'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -46,6 +73,9 @@ ingredients:
   concentration:
     value: '0.0488759'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.977517'
@@ -57,6 +87,9 @@ ingredients:
   concentration:
     value: '0.977517'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
 - preferred_term: Na-formate
   term:
     id: CHEBI:62965
@@ -64,6 +97,9 @@ ingredients:
   concentration:
     value: '1.95503'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Na-formate
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000488759'
@@ -75,6 +111,9 @@ ingredients:
   concentration:
     value: '3.91007'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -82,6 +121,9 @@ ingredients:
   concentration:
     value: '4.88759'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -89,6 +131,9 @@ ingredients:
   concentration:
     value: '0.488759'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -96,6 +141,9 @@ ingredients:
   concentration:
     value: '0.488759'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -103,6 +151,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -110,6 +161,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -117,6 +171,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -124,6 +181,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -131,6 +191,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -138,6 +201,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -145,6 +211,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -152,6 +221,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -159,6 +231,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: Isobutyric acid
   term:
     id: CHEBI:16135
@@ -166,13 +241,62 @@ ingredients:
   concentration:
     value: '23'
     unit: G_PER_L
-- preferred_term: DL-2-Methylbutyric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000286
+    label: Isobutyric acid
+- preferred_term: Tryptone
   term:
-    id: CHEBI:37070
-    label: DL-2-Methylbutyric acid
+    id: FOODON:03316428
+    label: tryptone
   concentration:
-    value: '27'
+    value: '10.0'
     unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: pancreatic digest of casein
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002960
+    label: yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
 - preferred_term: Valeric acid
   term:
     id: CHEBI:17418
@@ -180,6 +304,9 @@ ingredients:
   concentration:
     value: '27'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000303
+    label: Valeric acid
 - preferred_term: Isovaleric acid
   term:
     id: CHEBI:28484
@@ -187,6 +314,9 @@ ingredients:
   concentration:
     value: '27'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000305
+    label: Isovaleric acid
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -194,6 +324,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -201,44 +334,40 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, glucose, cysteine and sulfide.
-    Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
-    Add and dissolve bicarbonate, then dispense medium under same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, cysteine
-    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Prior
-    to use check pH of complete medium and adjust to 6.8 - 7.0, if necessary.
-- step_number: 2
-  action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
-- step_number: 3
-  action: ADJUST_PH
-  description: Adjust pH to 7.5 with concentrated NaOH.
-- step_number: 4
-  action: MIX
-  description: The ferrous sulfate solution is not stable and should be freshly prepared.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.031883Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 719'
-- timestamp: '2026-02-19T08:26:53.395925+00:00'
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 719'
+- timestamp: '2026-02-03T11:19:02.341109'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 719
+- timestamp: '2026-03-13T06:19:40.106527Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006361'
+- timestamp: '2026-03-17T06:30:02.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:57.311327+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROFILUM medium" to "anaerofilum_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:29:31.021419+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_719_ANAEROFILUM_MEDIUM, KOMODO_719_ANAEROFILUM_medium'
-synonyms:
-- name: ANAEROFILUM medium
-  source: KOMODO
-  source_id: komodo.medium:719
-  original_category: imported
+  notes: 'Sources: KOMODO_719_ANAEROFILUM_medium, anaerofilum_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_719_ANAEROFILUM_MEDIUM
 - KOMODO_719_ANAEROFILUM_medium
-merge_fingerprint: 533acb7aa16ec9b0561420f23dcf0fd218bc5ccb68421cefe3819f6f5b48a517
+- anaerofilum_medium
+merge_fingerprint: 9eff07f9e829063bb660ec568b756dace62a7a64ba9b6cef9b472940c1e35acd

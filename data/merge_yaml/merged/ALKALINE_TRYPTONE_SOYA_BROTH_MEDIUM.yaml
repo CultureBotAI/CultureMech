@@ -1,8 +1,9 @@
-name: Alkaline Tryptone Soya Broth Medium
+id: CultureMech:010200
+name: alkaline_tryptone_soya_broth_medium
 original_name: Alkaline Tryptone Soya Broth Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: agar
   concentration:
     value: '20'
@@ -21,16 +25,14 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: agar
 - preferred_term: Tryptone soya broth (Oxoid)
   concentration:
     value: '30'
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
-- preferred_term: sodium carbonate solution
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M790
   term:
@@ -56,6 +58,35 @@ curation_history:
   date: '2026-02-03T11:21:00.573683'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sodium carbonate solution'
-merge_fingerprint: fb92863d30cadb1908e35646ba72c4768e2aae1c1c241a86630e2fc56a717eca
+- timestamp: '2026-03-09T08:04:11.693668+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:12.055964Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010200'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:03.092249'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.995306+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Alkaline Tryptone Soya Broth Medium" to "alkaline_tryptone_soya_broth_medium"
+    for consistent matching
+solutions:
+- preferred_term: sodium carbonate solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
+merge_fingerprint: 76f736a7b577b7c021587f6042eb3fe63e8f35fee4409df666111cb12ab57f75
 merged_from:
 - TOGO_M790_Alkaline_Tryptone_Soya_Broth_Medium

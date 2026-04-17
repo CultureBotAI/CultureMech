@@ -1,6 +1,7 @@
-name: Artificial Seawater For Halophiles
+id: CultureMech:009844
+name: artificial_seawater_for_halophiles
 original_name: Artificial Seawater For Halophiles
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '0.05'
@@ -33,12 +40,18 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.05'
@@ -47,6 +60,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -57,12 +73,18 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '35'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '5'
@@ -72,6 +94,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaHCO3
   concentration:
     value: '0.25'
@@ -81,6 +106,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaNO3
   concentration:
     value: '1'
@@ -90,6 +118,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1'
@@ -99,6 +130,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Tris base
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
   term:
@@ -107,6 +141,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000880
+    label: Tris base
 media_term:
   preferred_term: TOGO Medium M457
   term:
@@ -132,6 +169,20 @@ curation_history:
   date: '2026-02-03T11:20:58.851662'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Tris base'
-merge_fingerprint: a8b6fb4dcdf827767914b48a1dae57815b9affdc653845d53f363d686961b773
+- timestamp: '2026-03-13T06:20:09.331047Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009844'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.302990+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Artificial Seawater For Halophiles" to "artificial_seawater_for_halophiles"
+    for consistent matching
+high_metal: true
+merge_fingerprint: dd24b9b3602cf46de2950e95cf5545e1d8a6175d99ffc7a9f6176dbc10d170d7
 merged_from:
-- TOGO_M457_Artificial_Seawater_For_Halophiles
+- artificial_seawater_for_halophiles

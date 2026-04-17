@@ -1,8 +1,9 @@
-name: MRS agar
+id: CultureMech:009471
+name: mrs_agar
 original_name: MRS agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: MRS agar (Oxoid)
   concentration:
@@ -21,6 +22,14 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2940'
+- timestamp: '2026-03-13T06:20:06.309791Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009471'
+- timestamp: '2026-03-17T19:46:25.286424+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MRS agar" to "mrs_agar" for consistent matching
 merge_fingerprint: 486ac22cb87bba0af29c14313c590a4450338234ae2e13f4a8f351b974c22fc6
 merged_from:
-- TOGO_M2940_MRS_agar
+- mrs_agar

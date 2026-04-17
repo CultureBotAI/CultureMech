@@ -1,6 +1,7 @@
-name: ANOXYNATRONUM MEDIUM
+id: CultureMech:000869
+name: anoxynatronum_medium
 original_name: ANOXYNATRONUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -29,6 +33,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: NaCO3
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
@@ -45,6 +52,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:59.043873Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000869'
+- timestamp: '2026-03-17T06:30:28.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:10.518016+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANOXYNATRONUM MEDIUM" to "anoxynatronum_medium" for
+    consistent matching
+kg_microbe_match: mediadive.medium:1408
 merge_fingerprint: d1833e921370745affd432b21b99606a0b5620285d2ae6aa6dd3b6dad291ce2f
 merged_from:
-- DSMZ_1408_ANOXYNATRONUM_MEDIUM
+- anoxynatronum_medium

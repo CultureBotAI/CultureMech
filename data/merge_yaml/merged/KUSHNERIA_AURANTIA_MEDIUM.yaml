@@ -1,15 +1,15 @@
-name: KUSHNERIA AURANTIA MEDIUM
+id: CultureMech:003330
+name: kushneria_aurantia_medium
 original_name: KUSHNERIA AURANTIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_range: 7.2-7.4
+physical_state: SOLID_AGAR
 media_term:
-  preferred_term: DSMZ Medium 1195
+  preferred_term: JCM Medium J980
   term:
-    id: mediadive.medium:1195
+    id: mediadive.medium:J980
     label: KUSHNERIA AURANTIA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1195.pdf'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=980'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -22,6 +22,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -29,6 +32,9 @@ ingredients:
   concentration:
     value: '32.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -36,6 +42,9 @@ ingredients:
   concentration:
     value: '50.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -43,6 +52,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -50,6 +62,9 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -57,6 +72,9 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -64,6 +82,9 @@ ingredients:
   concentration:
     value: '195'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -72,63 +93,72 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Adjust to pH 7.2 - 7.4 and autoclave.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.643336Z'
+- timestamp: '2026-01-26T17:53:18.202693Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1195'
-- timestamp: '2026-02-19T08:26:36.833273+00:00'
+  notes: 'Source: JCM, ID: J980'
+- timestamp: '2026-03-13T06:19:19.547429Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003330'
+- timestamp: '2026-03-17T06:29:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:33.565877+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "KUSHNERIA AURANTIA MEDIUM" to "kushneria_aurantia_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:08.823577+00:00'
   curator: recipe-merger
   action: Merged 9 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1184_MEDIUM_FOR_HALOPHILIC_ARCHAEA, DSMZ_1194_HALORUBRUM_CALIFORNIENSE_MEDIUM,
-    DSMZ_1195_KUSHNERIA_AURANTIA_MEDIUM, DSMZ_1213_THALASSOBACILLUS_CYRI_MEDIUM, JCM_J980_KUSHNERIA_AURANTIA_MEDIUM,
-    KOMODO_1184_medium_FOR_HALOPHILIC_ARCHAEA, KOMODO_1194_HALORUBRUM_CALIFORNIENSE_medium,
-    KOMODO_1195_KUSHNERIA_AURANTIA_medium, KOMODO_1213_THALASSOBACILLUS_CYRI_medium'
+  notes: 'Sources: medium_for_halophilic_archaea, JCM_J980_KUSHNERIA_AURANTIA_MEDIUM,
+    KOMODO_1194_HALORUBRUM_CALIFORNIENSE_medium, KOMODO_1195_KUSHNERIA_AURANTIA_medium,
+    KOMODO_1213_THALASSOBACILLUS_CYRI_medium, halorubrum_californiense_medium, kushneria_aurantia_medium,
+    medium_for_halophilic_archaea, thalassobacillus_cyri_medium'
 synonyms:
-- name: MEDIUM FOR HALOPHILIC ARCHAEA
+- name: medium_for_halophilic_archaea
   source: MediaDive
   source_id: mediadive.medium:1184
-  original_category: imported
-- name: HALORUBRUM CALIFORNIENSE MEDIUM
-  source: MediaDive
-  source_id: mediadive.medium:1194
-  original_category: imported
-- name: THALASSOBACILLUS CYRI MEDIUM
-  source: MediaDive
-  source_id: mediadive.medium:1213
-  original_category: imported
-- name: medium FOR HALOPHILIC ARCHAEA
-  source: KOMODO
-  source_id: komodo.medium:1184
-  original_category: imported
-- name: HALORUBRUM CALIFORNIENSE medium
+  original_category: ARCHAEA
+- name: halorubrum_californiense_medium
   source: KOMODO
   source_id: komodo.medium:1194
-  original_category: imported
-- name: KUSHNERIA AURANTIA medium
-  source: KOMODO
-  source_id: komodo.medium:1195
-  original_category: imported
-- name: THALASSOBACILLUS CYRI medium
+  original_category: bacterial
+- name: thalassobacillus_cyri_medium
   source: KOMODO
   source_id: komodo.medium:1213
-  original_category: imported
+  original_category: bacterial
+- name: halorubrum_californiense_medium
+  source: MediaDive
+  source_id: mediadive.medium:1194
+  original_category: bacterial
+- name: medium_for_halophilic_archaea
+  source: KOMODO
+  source_id: komodo.medium:1184
+  original_category: bacterial
+- name: thalassobacillus_cyri_medium
+  source: MediaDive
+  source_id: mediadive.medium:1213
+  original_category: bacterial
 categories:
-- imported
+- ARCHAEA
+- bacterial
 merged_from:
-- DSMZ_1184_MEDIUM_FOR_HALOPHILIC_ARCHAEA
-- DSMZ_1194_HALORUBRUM_CALIFORNIENSE_MEDIUM
-- DSMZ_1195_KUSHNERIA_AURANTIA_MEDIUM
-- DSMZ_1213_THALASSOBACILLUS_CYRI_MEDIUM
+- medium_for_halophilic_archaea
 - JCM_J980_KUSHNERIA_AURANTIA_MEDIUM
-- KOMODO_1184_medium_FOR_HALOPHILIC_ARCHAEA
 - KOMODO_1194_HALORUBRUM_CALIFORNIENSE_medium
 - KOMODO_1195_KUSHNERIA_AURANTIA_medium
 - KOMODO_1213_THALASSOBACILLUS_CYRI_medium
+- halorubrum_californiense_medium
+- kushneria_aurantia_medium
+- medium_for_halophilic_archaea
+- thalassobacillus_cyri_medium
 merge_fingerprint: 23ca5eb5ef99c79f93998777a61bed49ccd51e3147917394d5e0c684c60e4439

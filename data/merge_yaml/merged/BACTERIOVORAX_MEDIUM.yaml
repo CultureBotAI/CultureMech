@@ -1,23 +1,27 @@
-name: BACTERIOVORAX MEDIUM
+id: CultureMech:000434
+name: bacteriovorax_medium
 original_name: BACTERIOVORAX MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.2
 media_term:
-  preferred_term: DSMZ Medium 844
+  preferred_term: DSMZ Medium 1012b
   term:
-    id: mediadive.medium:844
+    id: mediadive.medium:1012b
     label: BACTERIOVORAX MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium844.pdf'
+notes: 'Source: DSMZ'
 ingredients:
-- preferred_term: Proteose peptone no. 3
+- preferred_term: HEPES buffer
+  term:
+    id: CHEBI:19708
+    label: HEPES buffer
   concentration:
-    value: '1'
+    value: '6'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000426
+    label: HEPES buffer
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -32,39 +39,42 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '12'
-    unit: G_PER_L
-  notes: Optional ingredient
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 preparation_steps:
 - step_number: 1
-  action: DISSOLVE
-  description: Dissolve ingredients except magnesium chloride and calcium chloride.
-    Add magnesium chloride and calcium chloride after autoclaving from sterile stock
-    solutions of 5% (w/v) each. For agar plates add 1.2% Bacto agar
+  action: MIX
+  description: Grow prey bacteria on agar plates using the medium indicated below.
+    Use one plate of a 24-hour-old culture and wash off grown cells in 5 ml sterile
+    water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Prepare HEPES buffer, adjust pH to 7.2, and autoclave. After cooling
+    to room temperature add 5 ml cell suspension of the host organism to 50 ml HEPES
+    buffer and mix. The prey medium suspension should contain approx. 10<sup>7</sup>
+    to 10<sup>9</sup> cells. Inoculate the complete medium immediately after preparation
+    and incubate the suspension with shaking until a decrease in turbidity is visible.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.477107Z'
+- timestamp: '2026-01-26T17:53:13.108168Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 844'
-- timestamp: '2026-02-19T08:26:55.682753+00:00'
-  curator: recipe-merger
-  action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_844_BACTERIOVORAX_MEDIUM, KOMODO_844_PPYE_medium'
-synonyms:
-- name: PPYE medium
-  source: KOMODO
-  source_id: komodo.medium:844
-  original_category: imported
-categories:
-- imported
+  notes: 'Source: DSMZ, ID: 1012b'
+- timestamp: '2026-03-13T06:18:55.256153Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000434'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:06.296772+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BACTERIOVORAX MEDIUM" to "bacteriovorax_medium" for
+    consistent matching
+merge_fingerprint: 36dd67722910faefac738bbed7e4c841dc796b48f42e47149844e0189114dbea
 merged_from:
-- DSMZ_844_BACTERIOVORAX_MEDIUM
-- KOMODO_844_PPYE_medium
-merge_fingerprint: ad9b0a77f7bd2047181360e6cb446b5dc8904a18c955db3b66e2e8f23fad1d0c
+- bacteriovorax_medium

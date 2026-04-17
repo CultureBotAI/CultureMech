@@ -1,6 +1,7 @@
-name: THERMUS THERMOPHILUS MEDIUM
+id: CultureMech:000282
+name: thermus_thermophilus_medium
 original_name: THERMUS THERMOPHILUS MEDIUM
-category: imported
+category: ARCHAEA
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -41,18 +45,28 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 74'
-- timestamp: '2026-02-19T08:26:37.536230+00:00'
+- timestamp: '2026-03-13T06:18:54.092210Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000282'
+- timestamp: '2026-03-17T17:06:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.029954+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMUS THERMOPHILUS MEDIUM" to "thermus_thermophilus_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:09.809781+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_74_THERMUS_THERMOPHILUS_MEDIUM, KOMODO_74_THERMUS_THERMOPHILUS_medium'
-synonyms:
-- name: THERMUS THERMOPHILUS medium
-  source: KOMODO
-  source_id: komodo.medium:74
-  original_category: imported
+  notes: 'Sources: thermus_thermophilus_medium, thermus_thermophilus_medium'
+kg_microbe_match: mediadive.medium:74
 categories:
-- imported
+- ARCHAEA
+- bacterial
 merged_from:
-- DSMZ_74_THERMUS_THERMOPHILUS_MEDIUM
-- KOMODO_74_THERMUS_THERMOPHILUS_medium
+- thermus_thermophilus_medium
+- thermus_thermophilus_medium
 merge_fingerprint: 04867de2ede9e144c4a67a8f8cf47cb6efe10c866e8e2743eeb12b5ca1c0888e

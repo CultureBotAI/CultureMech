@@ -1,0 +1,173 @@
+id: CultureMech:006668
+name: gyp_glucose_yeast_peptone_medium
+original_name: GYP GLUCOSE-YEAST-Peptone medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 852
+  term:
+    id: komodo.medium:852
+    label: GYP GLUCOSE-YEAST-Peptone medium
+notes: 'Source: KOMODO ModelSEED | ID: 852 | DSMZ Medium: 852 (mediadive.medium:852)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: MnSO4 x 4 H2O
+  term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000711
+    label: MnSO4 x 4 H2O
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 852'
+- timestamp: '2026-02-03T11:19:02.109364'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 852
+- timestamp: '2026-03-13T06:19:42.813813Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006668'
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:00.494153+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GYP GLUCOSE-YEAST-Peptone medium" to "gyp_glucose_yeast_peptone_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:05.446057+00:00'
+  curator: recipe-merger
+  action: Merged 10 duplicate recipes into canonical record
+  notes: 'Sources: gyp_glucose_yeast_peptone_medium, medium_852_modified_for_dsm_45022,
+    medium_852_modified_for_dsm_45023, medium_852_modified_for_dsm_45025, medium_852_modified_for_dsm_45026,
+    medium_852_modified_for_dsm_45027, medium_852_modified_for_dsm_45029, medium_852_modified_for_dsm_45031,
+    medium_852_modified_for_dsm_45032, gyp_glucose_yeast_peptone_medium'
+ph_value: 6.8
+synonyms:
+- name: medium_852_modified_for_dsm_45022
+  source: KOMODO
+  source_id: komodo.medium:852_45022
+  original_category: bacterial
+- name: medium_852_modified_for_dsm_45023
+  source: KOMODO
+  source_id: komodo.medium:852_45023
+  original_category: bacterial
+- name: medium_852_modified_for_dsm_45025
+  source: KOMODO
+  source_id: komodo.medium:852_45025
+  original_category: bacterial
+- name: medium_852_modified_for_dsm_45026
+  source: KOMODO
+  source_id: komodo.medium:852_45026
+  original_category: bacterial
+- name: medium_852_modified_for_dsm_45027
+  source: KOMODO
+  source_id: komodo.medium:852_45027
+  original_category: bacterial
+- name: medium_852_modified_for_dsm_45029
+  source: KOMODO
+  source_id: komodo.medium:852_45029
+  original_category: bacterial
+- name: medium_852_modified_for_dsm_45031
+  source: KOMODO
+  source_id: komodo.medium:852_45031
+  original_category: bacterial
+- name: medium_852_modified_for_dsm_45032
+  source: KOMODO
+  source_id: komodo.medium:852_45032
+  original_category: bacterial
+categories:
+- bacterial
+- fungal
+merged_from:
+- gyp_glucose_yeast_peptone_medium
+- medium_852_modified_for_dsm_45022
+- medium_852_modified_for_dsm_45023
+- medium_852_modified_for_dsm_45025
+- medium_852_modified_for_dsm_45026
+- medium_852_modified_for_dsm_45027
+- medium_852_modified_for_dsm_45029
+- medium_852_modified_for_dsm_45031
+- medium_852_modified_for_dsm_45032
+- gyp_glucose_yeast_peptone_medium
+merge_fingerprint: a64d67ec0efde2bdaf9d9139b8160d65c98e694d16f5a0cf4a48380bec14c096

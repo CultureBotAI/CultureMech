@@ -1,6 +1,7 @@
-name: Vogels Medium N
+id: CultureMech:007187
+name: vogels_medium_n
 original_name: Vogels Medium N
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -22,6 +23,9 @@ ingredients:
     value: '29.21'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:sucr'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -30,6 +34,9 @@ ingredients:
     value: '0.00103'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Citrate
   concentration:
     value: '660.0'
@@ -85,6 +92,19 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 287, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.675452Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007187'
+- timestamp: '2026-03-17T06:30:04.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.854317+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Vogels Medium N" to "vogels_medium_n" for consistent
+    matching
 media_term:
   preferred_term: MediaDB Medium 287
   term:
@@ -96,6 +116,7 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+high_metal: true
 merge_fingerprint: 91d116f626c9a7ab31776c1dc0c9e4ba61818df3b827193e6200e7bb1777e6c2
 merged_from:
-- MEDIADB_287_Vogels_Medium_N
+- vogels_medium_n

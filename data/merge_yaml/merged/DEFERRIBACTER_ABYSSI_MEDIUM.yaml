@@ -1,132 +1,385 @@
-name: Deferribacter Abyssi Medium
-original_name: Deferribacter Abyssi Medium
-category: imported
+id: CultureMech:002724
+name: deferribacter_abyssi_medium
+original_name: DEFERRIBACTER ABYSSI MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J365
+  term:
+    id: mediadive.medium:J365
+    label: DEFERRIBACTER ABYSSI MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=365'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: NH4Cl
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: NaCl
+    id: CHEBI:31206
+    label: NH4Cl
   concentration:
-    value: '30'
+    value: '0.323529'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: KCl
   term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
+    id: CHEBI:32588
+    label: KCl
   concentration:
-    value: '0.33'
+    value: '0.323529'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+  notes: Copied from referenced JCM Medium 365
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.33'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: NH4Cl
   concentration:
-    value: '0.33'
+    value: '0.323529'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
-    Inorganic compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: CaCl2 x 2 H2O
   term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: MgCl2・6H2O
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
   concentration:
-    value: '0.33'
+    value: '0.42352900000000004'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: Na2S・9H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound,
-    Defined component'
-- preferred_term: KCl
-  concentration:
-    value: '0.33'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: ' [Merged 2 duplicates: 0.323529, 0.1] | Copied from JCM Medium 365'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.323529'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30.4118'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 29.4118, 1.0] | Copied from JCM Medium 365'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0980392'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 365
 - preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '2.94118'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '9.80392'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000927
+    label: Sulfur
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
-  term:
-    id: CHEBI:32954
-    label: sodium acetate
-- preferred_term: Sulfur
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: MnSO4 x n H2O
   concentration:
-    value: '10'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: FeSO4 x 7 H2O
   term:
-    id: CHEBI:26833
-    label: sulfur atom
-- preferred_term: Yeast extract (BD-Difco)
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Trace minerals (see Medium [M142])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M359
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: CoSO4 x 7 H2O
   term:
-    id: TOGO:M359
-    label: Deferribacter Abyssi Medium
-notes: 'Source: https://togomedium.org/medium/M359
-
-  Original source: JCM - JCM_M365
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=365'
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: AlK(SO4)2
+  term:
+    id: CHEBI:86463
+    label: AlK(SO4)2
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001074
+    label: AlK(SO4)2
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
+  notes: Copied from referenced JCM Medium 365
+- preferred_term: Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: Lipoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: Lipoic acid
+  notes: Copied from referenced JCM Medium 365
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients except CaCl2 x 2H2O, MgCl2 x 6H2O, sulfur and Na2S
+    x 9H2O, adjust pH to 6.5 and autoclave. Separately autoclave CaCl2 x 2H2O and
+    MgCl2 x 6H2O and add to the medium. Steam sulfur for 3 hr on each of 3 successive
+    days. Autoclave neutralized 5% Na2S x 9H2O under a N2 atmosphere. Dispense the
+    medium into culture vessels containing sulfur under a N2 atmosphere, and seal
+    with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S x 9H2O
+    solution to the medium and readjust pH, if necessary.
+- step_number: 2
+  action: ADJUST_PH
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.907052Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M359'
-- timestamp: '2026-01-28T19:48:36.549331Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.317065'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: 4c75ced8351c449fe925cedbd412317035cd8a3e87680905c29e7b669dbc9d0b
+- timestamp: '2026-01-26T17:53:16.404891Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J365'
+- timestamp: '2026-03-13T03:08:48.327407Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:15.271955Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002724'
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:28.645558+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DEFERRIBACTER ABYSSI MEDIUM" to "deferribacter_abyssi_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:57.184750+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: caminibacter_medium, deferribacter_abyssi_medium'
+synonyms:
+- name: caminibacter_medium
+  source: MediaDive
+  source_id: mediadive.medium:J367
+  original_category: bacterial
+categories:
+- bacterial
 merged_from:
-- TOGO_M359_Deferribacter_Abyssi_Medium
+- caminibacter_medium
+- deferribacter_abyssi_medium
+merge_fingerprint: abc7ba009d60fffeaa0e4f169e904e94209be20cdd7f4ee6ab2bb4960340542f

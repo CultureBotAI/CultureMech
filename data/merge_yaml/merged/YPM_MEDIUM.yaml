@@ -1,8 +1,9 @@
-name: YPM Medium
+id: CultureMech:010294
+name: ypm_medium
 original_name: YPM Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -12,6 +13,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -27,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:29864
     label: mannitol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001010
+    label: Mannitol
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -35,6 +42,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Peptone
   concentration:
     value: '3'
@@ -60,17 +70,29 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:27:01.891530+00:00'
+- timestamp: '2026-03-13T06:20:12.762322Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010294'
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.708040+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YPM Medium" to "ypm_medium" for consistent matching
+- timestamp: '2026-04-17T06:29:50.811452+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M771_Mannitol_Agar_Without_Calcium_Carbonate, TOGO_M876_YPM_Medium'
 synonyms:
-- name: Mannitol Agar Without Calcium Carbonate
+- name: mannitol_agar_without_calcium_carbonate
   source: TOGO
   source_id: TOGO:M771
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
 - TOGO_M771_Mannitol_Agar_Without_Calcium_Carbonate
 - TOGO_M876_YPM_Medium

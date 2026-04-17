@@ -1,6 +1,7 @@
-name: THERMOCLOSTRIDIUM CAENICOLA MEDIUM
+id: CultureMech:001778
+name: thermoclostridium_caenicola_medium
 original_name: THERMOCLOSTRIDIUM CAENICOLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.9'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.9'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Trypticase peptone
   concentration:
     value: '2'
@@ -61,6 +77,9 @@ ingredients:
   concentration:
     value: '0.0025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -72,6 +91,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -79,6 +101,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -86,6 +111,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -93,6 +121,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -100,6 +131,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -107,6 +141,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -114,6 +151,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -121,6 +161,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -128,6 +171,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -135,6 +181,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -142,6 +191,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -149,6 +201,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -170,79 +225,90 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 640a'
-- timestamp: '2026-02-19T08:26:52.259397+00:00'
+- timestamp: '2026-03-13T06:19:07.130928Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001778'
+- timestamp: '2026-03-17T06:30:17.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:19.396822+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMOCLOSTRIDIUM CAENICOLA MEDIUM" to "thermoclostridium_caenicola_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:30.017561+00:00'
   curator: recipe-merger
   action: Merged 13 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_640a_THERMOCLOSTRIDIUM_CAENICOLA_MEDIUM, KOMODO_640-10061_MEDIUM_640_MODIFIED_FOR_DSM_10061,
-    KOMODO_640-10170_MEDIUM_640_MODIFIED_FOR_DSM_10170, KOMODO_640-10319_MEDIUM_640_MODIFIED_FOR_DSM_10319,
-    KOMODO_640-11055_MEDIUM_640_MODIFIED_FOR_DSM_11055, KOMODO_640-11056_MEDIUM_640_MODIFIED_FOR_DSM_11056,
-    KOMODO_640-11057_MEDIUM_640_MODIFIED_FOR_DSM_11057, KOMODO_640-11426_MEDIUM_640_MODIFIED_FOR_DSM_11426,
-    KOMODO_640-19027_MEDIUM_640_MODIFIED_FOR_DSM_19027, KOMODO_640-8685_MEDIUM_640_MODIFIED_FOR_DSM_8685,
-    KOMODO_640-8691_MEDIUM_640_MODIFIED_FOR_DSM_8691, KOMODO_640-8692_MEDIUM_640_MODIFIED_FOR_DSM_8692,
-    KOMODO_640_CALDICELLULOSIRUPTOR_medium'
+  notes: 'Sources: KOMODO_640_CALDICELLULOSIRUPTOR_medium, medium_640_modified_for_dsm_10061,
+    medium_640_modified_for_dsm_10170, medium_640_modified_for_dsm_10319, medium_640_modified_for_dsm_11055,
+    medium_640_modified_for_dsm_11056, medium_640_modified_for_dsm_11057, medium_640_modified_for_dsm_11426,
+    medium_640_modified_for_dsm_19027, medium_640_modified_for_dsm_8685, medium_640_modified_for_dsm_8691,
+    medium_640_modified_for_dsm_8692, thermoclostridium_caenicola_medium'
 synonyms:
-- name: MEDIUM 640 MODIFIED FOR DSM 10061
-  source: KOMODO
-  source_id: komodo.medium:640_10061
-  original_category: imported
-- name: MEDIUM 640 MODIFIED FOR DSM 10170
-  source: KOMODO
-  source_id: komodo.medium:640_10170
-  original_category: imported
-- name: MEDIUM 640 MODIFIED FOR DSM 10319
-  source: KOMODO
-  source_id: komodo.medium:640_10319
-  original_category: imported
-- name: MEDIUM 640 MODIFIED FOR DSM 11055
-  source: KOMODO
-  source_id: komodo.medium:640_11055
-  original_category: imported
-- name: MEDIUM 640 MODIFIED FOR DSM 11056
-  source: KOMODO
-  source_id: komodo.medium:640_11056
-  original_category: imported
-- name: MEDIUM 640 MODIFIED FOR DSM 11057
-  source: KOMODO
-  source_id: komodo.medium:640_11057
-  original_category: imported
-- name: MEDIUM 640 MODIFIED FOR DSM 11426
-  source: KOMODO
-  source_id: komodo.medium:640_11426
-  original_category: imported
-- name: MEDIUM 640 MODIFIED FOR DSM 19027
-  source: KOMODO
-  source_id: komodo.medium:640_19027
-  original_category: imported
-- name: MEDIUM 640 MODIFIED FOR DSM 8685
-  source: KOMODO
-  source_id: komodo.medium:640_8685
-  original_category: imported
-- name: MEDIUM 640 MODIFIED FOR DSM 8691
-  source: KOMODO
-  source_id: komodo.medium:640_8691
-  original_category: imported
-- name: MEDIUM 640 MODIFIED FOR DSM 8692
-  source: KOMODO
-  source_id: komodo.medium:640_8692
-  original_category: imported
-- name: CALDICELLULOSIRUPTOR medium
+- name: caldicellulosiruptor_medium
   source: KOMODO
   source_id: komodo.medium:640
-  original_category: imported
+  original_category: bacterial
+- name: medium_640_modified_for_dsm_10061
+  source: KOMODO
+  source_id: komodo.medium:640_10061
+  original_category: bacterial
+- name: medium_640_modified_for_dsm_10170
+  source: KOMODO
+  source_id: komodo.medium:640_10170
+  original_category: bacterial
+- name: medium_640_modified_for_dsm_10319
+  source: KOMODO
+  source_id: komodo.medium:640_10319
+  original_category: bacterial
+- name: medium_640_modified_for_dsm_11055
+  source: KOMODO
+  source_id: komodo.medium:640_11055
+  original_category: bacterial
+- name: medium_640_modified_for_dsm_11056
+  source: KOMODO
+  source_id: komodo.medium:640_11056
+  original_category: bacterial
+- name: medium_640_modified_for_dsm_11057
+  source: KOMODO
+  source_id: komodo.medium:640_11057
+  original_category: bacterial
+- name: medium_640_modified_for_dsm_11426
+  source: KOMODO
+  source_id: komodo.medium:640_11426
+  original_category: bacterial
+- name: medium_640_modified_for_dsm_19027
+  source: KOMODO
+  source_id: komodo.medium:640_19027
+  original_category: bacterial
+- name: medium_640_modified_for_dsm_8685
+  source: KOMODO
+  source_id: komodo.medium:640_8685
+  original_category: bacterial
+- name: medium_640_modified_for_dsm_8691
+  source: KOMODO
+  source_id: komodo.medium:640_8691
+  original_category: bacterial
+- name: medium_640_modified_for_dsm_8692
+  source: KOMODO
+  source_id: komodo.medium:640_8692
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_640a_THERMOCLOSTRIDIUM_CAENICOLA_MEDIUM
-- KOMODO_640-10061_MEDIUM_640_MODIFIED_FOR_DSM_10061
-- KOMODO_640-10170_MEDIUM_640_MODIFIED_FOR_DSM_10170
-- KOMODO_640-10319_MEDIUM_640_MODIFIED_FOR_DSM_10319
-- KOMODO_640-11055_MEDIUM_640_MODIFIED_FOR_DSM_11055
-- KOMODO_640-11056_MEDIUM_640_MODIFIED_FOR_DSM_11056
-- KOMODO_640-11057_MEDIUM_640_MODIFIED_FOR_DSM_11057
-- KOMODO_640-11426_MEDIUM_640_MODIFIED_FOR_DSM_11426
-- KOMODO_640-19027_MEDIUM_640_MODIFIED_FOR_DSM_19027
-- KOMODO_640-8685_MEDIUM_640_MODIFIED_FOR_DSM_8685
-- KOMODO_640-8691_MEDIUM_640_MODIFIED_FOR_DSM_8691
-- KOMODO_640-8692_MEDIUM_640_MODIFIED_FOR_DSM_8692
 - KOMODO_640_CALDICELLULOSIRUPTOR_medium
+- medium_640_modified_for_dsm_10061
+- medium_640_modified_for_dsm_10170
+- medium_640_modified_for_dsm_10319
+- medium_640_modified_for_dsm_11055
+- medium_640_modified_for_dsm_11056
+- medium_640_modified_for_dsm_11057
+- medium_640_modified_for_dsm_11426
+- medium_640_modified_for_dsm_19027
+- medium_640_modified_for_dsm_8685
+- medium_640_modified_for_dsm_8691
+- medium_640_modified_for_dsm_8692
+- thermoclostridium_caenicola_medium
 merge_fingerprint: 424a2c4f9211014cc5784357b65587bb77ca6092c668057561557b43e6d31d6b

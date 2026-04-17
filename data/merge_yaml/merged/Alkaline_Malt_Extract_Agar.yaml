@@ -1,8 +1,9 @@
-name: ALKALINE MALT EXTRACT AGAR
+id: CultureMech:010507
+name: alkaline_malt_extract_agar
 original_name: ALKALINE MALT EXTRACT AGAR
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.4
 media_term:
   preferred_term: JCM Medium J147
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '22.2222'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -50,6 +57,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J147'
+- timestamp: '2026-03-13T06:20:14.172027Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010507'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.193581+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ALKALINE MALT EXTRACT AGAR" to "alkaline_malt_extract_agar"
+    for consistent matching
+kg_microbe_match: mediadive.medium:J147
 merge_fingerprint: 21f4f5899a21bd29a5aaa64bef1bd8fa890fde5596f741f54cf2947b494cbf6f
 merged_from:
-- JCM_J147_ALKALINE_MALT_EXTRACT_AGAR
+- alkaline_malt_extract_agar

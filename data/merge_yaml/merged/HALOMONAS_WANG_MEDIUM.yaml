@@ -1,8 +1,9 @@
-name: HALOMONAS WANG MEDIUM
+id: CultureMech:000854
+name: halomonas_wang_medium
 original_name: HALOMONAS WANG MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 9-9.5
 media_term:
   preferred_term: DSMZ Medium 1393
@@ -18,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -37,6 +44,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -53,6 +63,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.923673Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000854'
+- timestamp: '2026-03-17T06:30:29.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:10.386727+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOMONAS WANG MEDIUM" to "halomonas_wang_medium" for
+    consistent matching
+kg_microbe_match: mediadive.medium:1393
 merge_fingerprint: 6bec80d1f5d07bd86f01126d85965d2157a3cba4df6cb1c33f550d0976454ef5
 merged_from:
-- DSMZ_1393_HALOMONAS_WANG_MEDIUM
+- halomonas_wang_medium

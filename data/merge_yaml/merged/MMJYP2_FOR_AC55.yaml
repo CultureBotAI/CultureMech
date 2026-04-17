@@ -1,165 +1,262 @@
-name: MMJYP2 For AC55
-original_name: MMJYP2 For AC55
-category: imported
+id: CultureMech:003241
+name: mmjyp2_for_ac55
+original_name: MMJYP2 FOR AC55
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J892
+  term:
+    id: mediadive.medium:J892
+    label: MMJYP2 FOR AC55
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=892'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '4'
+    value: '3.91389'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Tryptone (BD-Difco)
+- preferred_term: Tryptone
   concentration:
-    value: '1'
+    value: '0.978474'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Modified MJ synthetic seawater B (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 8% NaHCO3 solution*
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
   concentration:
     value: '12.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 5% Na2S・9H2O solution (pH 7.5)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
-    compound'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '3.4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: NaCl
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
   term:
     id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
+    label: NaCl
   concentration:
-    value: '0.7'
+    value: '25.7525'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: ' [Merged 2 duplicates: 24.7525, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.15842'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '6.36634'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.36634, 3.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.49505'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NH4Cl
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
-    Inorganic compound'
   term:
     id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: K2HPO4
+    label: NH4Cl
   concentration:
-    value: '0.14'
+    value: '0.247525'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: MgCl2・6H2O
+    label: K2HPO4
   concentration:
-    value: '4.2'
+    value: '0.138614'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: KCl
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.793069'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.693069, 0.1]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.025990099000000003'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000990099, 0.025]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.0012900989999999998'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000990099, 0.0003]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
+- preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+- preferred_term: FeSO4 x 7 H2O
   term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: NiCl2・6H2O
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: Na2SeO3・5H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: Trace mineral solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: NiCl2・6H2O
-  concentration:
-    value: '0.025'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-- preferred_term: Na2SeO3・5H2O
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: Trace minerals (see Medium [M142])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M933
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: CoSO4 x 7 H2O
   term:
-    id: TOGO:M933
-    label: MMJYP2 For AC55
-notes: 'Source: https://togomedium.org/medium/M933
-
-  Original source: JCM - JCM_M892
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=892'
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4 x 7 H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
+- preferred_term: AlK(SO4)2
+  term:
+    id: CHEBI:86463
+    label: AlK(SO4)2
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001074
+    label: AlK(SO4)2
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components and adjust pH to 7.0. Distribute the medium into culture
+    vessels under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers
+    and autoclave. After cooling, aseptically and anaerobically add per liter the
+    following solutions from anaerobic stocks (*filter-sterilized or autoclaved):'
+- step_number: 2
+  action: MIX
+  description: Pressurize the inoculated vessels to 200 kPa with the same gas mixture.
+- step_number: 3
+  action: ADJUST_PH
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.986102Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M933'
-- timestamp: '2026-01-28T19:48:08.415200Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:01.321980'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas'
-merge_fingerprint: 8f6106bc3c790fec6a0d17684192ef00c1a5ca13bf4626315781b61af46aca3b
+- timestamp: '2026-01-26T17:53:17.919839Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J892'
+- timestamp: '2026-03-13T03:08:46.141320Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:18.856317Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003241'
+- timestamp: '2026-03-17T06:29:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:32.738116+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MMJYP2 FOR AC55" to "mmjyp2_for_ac55" for consistent
+    matching
+merge_fingerprint: 447d633f6d065aaba346c0bbafaa6e8ecb9f3e27d893bda7a1d0ee30f7fb7977
 merged_from:
-- TOGO_M933_MMJYP2_For_AC55
+- mmjyp2_for_ac55

@@ -1,6 +1,7 @@
-name: Asp2
+id: CultureMech:007196
+name: asp2
 original_name: Asp2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -11,6 +12,9 @@ ingredients:
   concentration:
     value: '308.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -18,6 +22,9 @@ ingredients:
   concentration:
     value: '20.3'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Potassium chloride
   concentration:
     value: '8.05'
@@ -25,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.901'
@@ -36,6 +46,9 @@ ingredients:
   concentration:
     value: '0.588'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: Sodium nitrate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '0.0287'
@@ -51,6 +64,9 @@ ingredients:
   concentration:
     value: '1.48e-06'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -58,6 +74,9 @@ ingredients:
   concentration:
     value: '0.131'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.00493'
@@ -66,6 +85,9 @@ ingredients:
   concentration:
     value: '0.0011'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: Manganese chloride
   concentration:
     value: '9.54e-06'
@@ -74,6 +96,9 @@ ingredients:
   concentration:
     value: '2.31e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Cupric chloride
   concentration:
     value: '8.93e-06'
@@ -85,6 +110,9 @@ ingredients:
   concentration:
     value: '9.7e-05'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -92,10 +120,10 @@ ingredients:
   concentration:
     value: '0.00166'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.000812'
     unit: MILLIMOLAR
@@ -107,6 +135,9 @@ ingredients:
   concentration:
     value: '0.000456'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -115,6 +146,9 @@ ingredients:
     value: '7.29e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-Aminobenzoate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -123,6 +157,9 @@ ingredients:
     value: '4.09e-06'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: L-Inositol
   concentration:
     value: '0.0278'
@@ -140,6 +177,9 @@ ingredients:
     value: '0.0238'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thym'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000503
+    label: Thymine
 - preferred_term: sodium silicate
   term:
     id: CHEBI:60720
@@ -147,6 +187,9 @@ ingredients:
   concentration:
     value: '1.23'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000833
+    label: sodium silicate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -167,6 +210,23 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:33.837105Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:46.746731Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007196'
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.928226+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Asp2" to "asp2" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 295
   term:
@@ -178,6 +238,7 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 7df10eac2628b308a51f7ab5713b900980c2645dd164275d71d4dc85bf536822
+high_metal: true
+merge_fingerprint: ba3f29de71e99670d0d6f8f0fda0327098bdfeac35a8ad52efda2288b3d00b45
 merged_from:
-- MEDIADB_295_Asp2
+- asp2

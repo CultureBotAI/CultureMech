@@ -1,8 +1,9 @@
-name: ALKALOPHILIC HALOPHILE MEDIUM
+id: CultureMech:000255
+name: alkalophilic_halophile_medium
 original_name: ALKALOPHILIC HALOPHILE MEDIUM
-category: imported
+category: ARCHAEA
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.0
 media_term:
   preferred_term: DSMZ Medium 1431
@@ -22,6 +23,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Trisodium citrate
   term:
     id: CHEBI:53258
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -43,6 +53,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -50,6 +63,9 @@ ingredients:
   concentration:
     value: '0.00036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -57,6 +73,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -64,6 +83,9 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -71,6 +93,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -78,6 +103,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -96,18 +124,28 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-19T08:26:37.075562+00:00'
+- timestamp: '2026-03-13T06:18:53.815164Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000255'
+- timestamp: '2026-03-17T17:06:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:04.725995+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ALKALOPHILIC HALOPHILE MEDIUM" to "alkalophilic_halophile_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:08.613334+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_1431_ALKALOPHILIC_HALOPHILE_MEDIUM, KOMODO_1431_ALKALOPHILIC_HALOPHILE_medium'
-synonyms:
-- name: ALKALOPHILIC HALOPHILE medium
-  source: KOMODO
-  source_id: komodo.medium:1431
-  original_category: imported
+  notes: 'Sources: alkalophilic_halophile_medium, alkalophilic_halophile_medium'
+high_metal: true
 categories:
-- imported
+- ARCHAEA
+- bacterial
 merged_from:
-- DSMZ_1431_ALKALOPHILIC_HALOPHILE_MEDIUM
-- KOMODO_1431_ALKALOPHILIC_HALOPHILE_medium
+- alkalophilic_halophile_medium
+- alkalophilic_halophile_medium
 merge_fingerprint: 1fb9bdb4962d7bcc461f976051d924c451903def901e9a390d5812f8ed971a99

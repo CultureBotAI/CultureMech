@@ -1,52 +1,51 @@
-name: Todd Hewitt Agar
-original_name: Todd Hewitt Agar
-category: imported
+id: CultureMech:002606
+name: todd_hewitt_agar
+original_name: TODD HEWITT AGAR
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J245
+  term:
+    id: mediadive.medium:J245
+    label: TODD HEWITT AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=245'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Todd Hewitt Broth (BD-Difco)
+- preferred_term: Todd Hewitt Broth
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-media_term:
-  preferred_term: TOGO Medium M237
+- preferred_term: Agar
   term:
-    id: TOGO:M237
-    label: Todd Hewitt Agar
-notes: 'Source: https://togomedium.org/medium/M237
-
-  Original source: JCM - JCM_M245
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=245'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.681704Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M237'
-- timestamp: '2026-01-28T19:48:22.871932Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: e48e6fc21e997c03cbb67f29f508baf7d95f06fbcda89f1a3e86969dda121b73
+- timestamp: '2026-01-26T17:53:16.078454Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J245'
+- timestamp: '2026-03-13T06:19:14.514074Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002606'
+- timestamp: '2026-03-17T06:30:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:27.788243+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TODD HEWITT AGAR" to "todd_hewitt_agar" for consistent
+    matching
+kg_microbe_match: mediadive.medium:12
+merge_fingerprint: caa6bd234094965e840f991795f16cd8da0510e2ed526299edebfead2239bc19
 merged_from:
-- TOGO_M237_Todd_Hewitt_Agar
+- todd_hewitt_agar

@@ -1,103 +1,121 @@
-name: S6 Medium
-original_name: S6 Medium
-category: imported
-medium_type: COMPLEX
+id: CultureMech:003258
+name: s6_medium
+original_name: S6 MEDIUM
+category: bacterial
+medium_type: DEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: 10% Na2S2O3 solution
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '900'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J90
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+    id: mediadive.medium:J90
+    label: S6 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=90'
+ingredients:
 - preferred_term: KH2PO4
-  concentration:
-    value: '1.8'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: (NH4)2SO4
   concentration:
-    value: '0.1'
+    value: '1.8'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: FeCl3・6H2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: MnSO4・xH2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
   concentration:
     value: '1.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
+- preferred_term: (NH4)2SO4
   term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-- preferred_term: agar
+    id: CHEBI:62946
+    label: (NH4)2SO4
   concentration:
-    value: '15'
+    value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:2509
-    label: agar
-media_term:
-  preferred_term: TOGO Medium M82
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: FeCl3 x 6 H2O
   term:
-    id: TOGO:M82
-    label: S6 Medium
-notes: 'Source: https://togomedium.org/medium/M82
-
-  Original source: JCM - JCM_M90-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=90'
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: Na2S2O3
+  term:
+    id: CHEBI:59168
+    label: Na2S2O3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000321
+    label: Na2S2O3
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: MIX
+  description: Separately sterilize Na2S2O3 solution by filtration. Aseptically add
+    sterile Na2S2O3 solution to the medium.
+- step_number: 3
+  action: MIX
+  description: For preparation of solid medium, add 15.0 g/L agar.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.778079Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M82'
-- timestamp: '2026-01-28T19:48:42.203238Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 2777b826c4706eede8206ff7a2ef317529f6080d792d30182b52ca064b854a12
+- timestamp: '2026-01-26T17:53:15.713272Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J90'
+- timestamp: '2026-03-13T06:19:18.996071Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003258'
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:32.897346+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "S6 MEDIUM" to "s6_medium" for consistent matching
+merge_fingerprint: e9137850117eb703619bcb8650307b7ab8fa142a40ac38ae5def7091762bb60a
 merged_from:
-- TOGO_M82_S6_Medium
+- s6_medium

@@ -1,6 +1,7 @@
-name: PHOTOTROPHIC MEDIUM
+id: CultureMech:003838
+name: phototrophic_medium
 original_name: PHOTOTROPHIC MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.4'
@@ -57,6 +73,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000864
+    label: Ferric citrate
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -64,6 +83,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -71,6 +93,9 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -78,6 +103,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -85,6 +113,9 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -92,6 +123,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -99,6 +133,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -106,6 +143,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -113,6 +153,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -120,6 +163,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 applications:
 - Microbial cultivation
 curation_history:
@@ -131,41 +177,54 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1129
-- timestamp: '2026-02-19T08:26:58.653429+00:00'
+- timestamp: '2026-03-13T06:19:22.622616Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003838'
+- timestamp: '2026-03-17T06:30:32.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:37.042345+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PHOTOTROPHIC MEDIUM" to "phototrophic_medium" for consistent
+    matching
+- timestamp: '2026-04-17T06:30:03.971951+00:00'
   curator: recipe-merger
   action: Merged 7 duplicate recipes into canonical record
-  notes: 'Sources: KOMODO_1129-1_For_DSM_17935, KOMODO_1129-2_For_DSM_17936, KOMODO_1129-3_For_DSM_18632,
-    KOMODO_1129-4_For_DSM_18805, KOMODO_1129-5_For_DSM_18858, KOMODO_1129_PHOTOTROPHIC_MEDIUM,
-    DSMZ_1129_PHOTOTROPHIC_MEDIUM'
+  notes: 'Sources: for_dsm_17935, for_dsm_17936, for_dsm_18632, for_dsm_18805, for_dsm_18858,
+    phototrophic_medium, phototrophic_medium'
 synonyms:
-- name: For DSM 17935
+- name: for_dsm_17935
   source: KOMODO
   source_id: komodo.medium:1129.1
-  original_category: imported
-- name: For DSM 17936
+  original_category: bacterial
+- name: for_dsm_17936
   source: KOMODO
   source_id: komodo.medium:1129.2
-  original_category: imported
-- name: For DSM 18632
+  original_category: bacterial
+- name: for_dsm_18632
   source: KOMODO
   source_id: komodo.medium:1129.3
-  original_category: imported
-- name: For DSM 18805
+  original_category: bacterial
+- name: for_dsm_18805
   source: KOMODO
   source_id: komodo.medium:1129.4
-  original_category: imported
-- name: For DSM 18858
+  original_category: bacterial
+- name: for_dsm_18858
   source: KOMODO
   source_id: komodo.medium:1129.5
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
+- specialized
 merged_from:
-- KOMODO_1129-1_For_DSM_17935
-- KOMODO_1129-2_For_DSM_17936
-- KOMODO_1129-3_For_DSM_18632
-- KOMODO_1129-4_For_DSM_18805
-- KOMODO_1129-5_For_DSM_18858
-- KOMODO_1129_PHOTOTROPHIC_MEDIUM
-- DSMZ_1129_PHOTOTROPHIC_MEDIUM
+- for_dsm_17935
+- for_dsm_17936
+- for_dsm_18632
+- for_dsm_18805
+- for_dsm_18858
+- phototrophic_medium
+- phototrophic_medium
 merge_fingerprint: 2f20c482ca5a2c82a65bfa5ccf083b7a0c9e4df4c6ce571bd6ef726bf9ef0c60

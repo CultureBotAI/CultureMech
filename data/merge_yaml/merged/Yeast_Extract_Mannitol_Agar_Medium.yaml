@@ -1,8 +1,9 @@
-name: YEAST EXTRACT MANNITOL AGAR MEDIUM
+id: CultureMech:010513
+name: yeast_extract_mannitol_agar_medium
 original_name: YEAST EXTRACT MANNITOL AGAR MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: JCM Medium J250
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001010
+    label: Mannitol
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -43,6 +53,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Congo red
   term:
     id: CHEBI:34653
@@ -50,6 +63,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000895
+    label: Congo red
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -57,6 +73,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -68,6 +87,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J250'
+- timestamp: '2026-03-13T06:20:14.190474Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010513'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.213876+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YEAST EXTRACT MANNITOL AGAR MEDIUM" to "yeast_extract_mannitol_agar_medium"
+    for consistent matching
 merge_fingerprint: 20c5fe1bd64d699337564af08605391949bbe1735e3c9cd3815cb10523c74bee
 merged_from:
-- JCM_J250_YEAST_EXTRACT_MANNITOL_AGAR_MEDIUM
+- yeast_extract_mannitol_agar_medium

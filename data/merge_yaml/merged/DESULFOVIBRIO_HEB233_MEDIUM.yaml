@@ -1,6 +1,7 @@
-name: DESULFOVIBRIO HEB233 MEDIUM
+id: CultureMech:002914
+name: desulfovibrio_heb233_medium
 original_name: DESULFOVIBRIO HEB233 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.29703'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '0.29703'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '2.9703'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -53,6 +69,9 @@ ingredients:
   concentration:
     value: '0.0990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -60,6 +79,9 @@ ingredients:
   concentration:
     value: '0.0990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -67,6 +89,9 @@ ingredients:
   concentration:
     value: '0.49505'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.0990099'
@@ -78,6 +103,9 @@ ingredients:
   concentration:
     value: '0.990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Sodium lactate
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -85,6 +113,9 @@ ingredients:
   concentration:
     value: '1.9802'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -92,6 +123,9 @@ ingredients:
   concentration:
     value: '0.49505'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -99,6 +133,9 @@ ingredients:
   concentration:
     value: '0.39604'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -106,6 +143,9 @@ ingredients:
   concentration:
     value: '0.000990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -113,6 +153,9 @@ ingredients:
   concentration:
     value: '12.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -120,6 +163,9 @@ ingredients:
   concentration:
     value: '2.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -127,6 +173,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -134,6 +183,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -141,6 +193,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -148,6 +203,9 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -155,6 +213,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -162,6 +223,9 @@ ingredients:
   concentration:
     value: '0.144'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -169,6 +233,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -189,18 +256,31 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J565'
-- timestamp: '2026-02-19T08:26:58.539966+00:00'
+- timestamp: '2026-03-13T06:19:16.528725Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002914'
+- timestamp: '2026-03-17T06:30:31.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.092067+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFOVIBRIO HEB233 MEDIUM" to "desulfovibrio_heb233_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:30:01.629114+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: JCM_J545_DESULFOTOMACULUM_Lam5_MEDIUM, JCM_J565_DESULFOVIBRIO_HEB233_MEDIUM'
+  notes: 'Sources: desulfotomaculum_lam5_medium, desulfovibrio_heb233_medium'
 synonyms:
-- name: DESULFOTOMACULUM Lam5 MEDIUM
+- name: desulfotomaculum_lam5_medium
   source: MediaDive
   source_id: mediadive.medium:J545
-  original_category: imported
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- JCM_J545_DESULFOTOMACULUM_Lam5_MEDIUM
-- JCM_J565_DESULFOVIBRIO_HEB233_MEDIUM
+- desulfotomaculum_lam5_medium
+- desulfovibrio_heb233_medium
 merge_fingerprint: f557e3cde1d8ee695aa89ee267f8ccd2902e6d8c9f2eba27ea62a6dad18a65db

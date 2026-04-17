@@ -1,6 +1,7 @@
-name: MMJH Medium
+id: CultureMech:009744
+name: mmjh_medium
 original_name: MMJH Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '3.4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NaCl
   concentration:
     value: '30'
@@ -28,12 +35,18 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -43,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: K2HPO4
   concentration:
     value: '0.14'
@@ -52,12 +68,18 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '4.18'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -67,6 +89,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaHCO3
   concentration:
     value: '1'
@@ -76,18 +101,27 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Na2SeO3・5H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: NaNO3
   concentration:
     value: '1'
@@ -97,6 +131,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: Fe2(SO4)3・xH2O
   concentration:
     value: '0.05'
@@ -112,19 +149,17 @@ ingredients:
   term:
     id: CHEBI:36272
     label: tungstic acid
-- preferred_term: Trace mineral solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000397
+    label: H2WO4
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Oxygen gas
   notes: 'Properties: ガス'
   concentration:
@@ -135,6 +170,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 - preferred_term: NaBr
   concentration:
     value: '0.01'
@@ -144,6 +182,9 @@ ingredients:
   term:
     id: CHEBI:63004
     label: sodium bromide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: KI
   concentration:
     value: '0.01'
@@ -153,15 +194,14 @@ ingredients:
   term:
     id: CHEBI:8346
     label: potassium iodide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000505
+    label: KI
 - preferred_term: SrCl2・H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component'
-- preferred_term: Trace mineral solution (see Medium [M319])
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M363
   term:
@@ -190,6 +230,48 @@ curation_history:
     concentration for ingredient: Oxygen gas; Added default concentration for ingredient:
     Hydrogen gas; Added default concentration for ingredient: Trace mineral solution
     (see Medium [M319])'
-merge_fingerprint: b8c992138c3645f9bc6f51b9ff8fc787a180b36938da311456513b7076b8653a
+- timestamp: '2026-03-09T08:04:17.994579+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:08.546012Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009744'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.483218'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:29:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.534825+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MMJH Medium" to "mmjh_medium" for consistent matching
+solutions:
+- preferred_term: Trace mineral solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Trace mineral solution (see Medium [M319])
+  composition: []
+  notes: Cross-reference to Medium M319
+  concentration:
+    value: variable
+    unit: VARIABLE
+  name: Unknown solution
+merge_fingerprint: 16325180208fb73d1044b6f96e85c877748657b99060dceb54aca60ad13e2498
 merged_from:
 - TOGO_M363_MMJH_Medium

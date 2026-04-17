@@ -1,6 +1,7 @@
-name: Halophile Yeast Extract Medium
+id: CultureMech:009941
+name: halophile_yeast_extract_medium
 original_name: Halophile Yeast Extract Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '50.8'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -33,18 +40,27 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.8'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '32.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '5'
@@ -54,6 +70,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaHCO3
   concentration:
     value: '0.16'
@@ -63,6 +82,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaBr
   concentration:
     value: '0.6'
@@ -72,6 +94,9 @@ ingredients:
   term:
     id: CHEBI:63004
     label: sodium bromide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -80,6 +105,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 media_term:
   preferred_term: TOGO Medium M548
   term:
@@ -105,6 +133,20 @@ curation_history:
   date: '2026-02-03T11:20:59.371971'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
-merge_fingerprint: c3e2baa99b24da8abea9d5291115444d53c5c59fd2be29b94b42437a94d218b3
+- timestamp: '2026-03-13T06:20:10.147669Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009941'
+- timestamp: '2026-03-17T06:30:37.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.079134+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Halophile Yeast Extract Medium" to "halophile_yeast_extract_medium"
+    for consistent matching
+high_metal: true
+merge_fingerprint: c31c8b9db63f75ddac7d99d62cb5a6e53fe4dd94f66e776bbe4965d18051635c
 merged_from:
-- TOGO_M548_Halophile_Yeast_Extract_Medium
+- halophile_yeast_extract_medium

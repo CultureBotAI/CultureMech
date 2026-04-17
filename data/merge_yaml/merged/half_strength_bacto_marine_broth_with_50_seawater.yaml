@@ -1,0 +1,1050 @@
+id: CultureMech:015362
+name: half_strength_bacto_marine_broth_with_50_seawater
+original_name: HALF STRENGTH BACTO MARINE BROTH with 50% Seawater
+category: specialized
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.6
+media_term:
+  preferred_term: DSMZ Medium 514g
+  term:
+    id: mediadive.medium:514g
+    label: HALF STRENGTH BACTO MARINE BROTH with 50% Seawater
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium514g.pdf'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000864
+    label: Fe(III) citrate
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '9.725'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '2.95'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '1.62'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.275'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
+    label: KBr
+- preferred_term: SrCl2
+  term:
+    id: CHEBI:36383
+    label: SrCl2
+  concentration:
+    value: '0.017'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000196
+    label: SrCl2
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.011'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
+- preferred_term: Na-silicate
+  term:
+    id: CHEBI:60720
+    label: Na-silicate
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000833
+    label: Na-silicate
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: NaF
+  concentration:
+    value: '0.0012'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000182
+    label: NaF
+- preferred_term: (NH4)NO3
+  term:
+    id: CHEBI:63038
+    label: (NH4)NO3
+  concentration:
+    value: '0.0008'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: (NH4)NO3
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
+- preferred_term: Sea water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Final pH should be 7.6 ± 0.2 at 25°C. If using Difco Bacto Marine Broth
+    use 18.7 g/l to 1 litre water.
+- step_number: 2
+  action: MIX
+  description: The medium may be solidified by adding 15 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.493527Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 514g'
+- timestamp: '2026-03-13T06:20:42.181959Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015362'
+- timestamp: '2026-03-17T17:06:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.779442+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALF STRENGTH BACTO MARINE BROTH with 50% Seawater"
+    to "half_strength_bacto_marine_broth_with_50_seawater" for consistent matching
+- timestamp: '2026-04-17T06:29:28.618889+00:00'
+  curator: recipe-merger
+  action: Merged 157 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_514b_medium_514_plus_additional_salt, bacto_marine_broth_difco_2216,
+    for_strains_dsm_21167_dsm_21194, for_strains_dsm_21373_dsm_21449_dsm_21450_dsm_21621_and_dsm_21632,
+    for_strains_dsm_23437_dsm_23508_dsm23509_dsm_21076_dsm_26132, for_strains_dsm_23438_dsm_21056_dsm_21166_dsm_21888_dsm_5160,
+    for_strains_dsm_24014, for_strains_dsm_5349_dsm_24106_dsm_24107_dsm_24186_dsm_23100_dsm_21021_dsm_19800_dsm_19821,
+    for_strains_dsm_5351_dsm_23229_dsm_22730_dsm_22404_dsm_22403_dsm_22402, half_strength_bacto_marine_broth,
+    medium_514_modified_for_dsm_11573, medium_514_modified_for_dsm_11708, medium_514_modified_for_dsm_11709,
+    medium_514_modified_for_dsm_12178, medium_514_modified_for_dsm_13445, medium_514_modified_for_dsm_13778,
+    medium_514_modified_for_dsm_13965, medium_514_modified_for_dsm_14014, medium_514_modified_for_dsm_14161,
+    medium_514_modified_for_dsm_14323, medium_514_modified_for_dsm_14512, medium_514_modified_for_dsm_14852,
+    medium_514_modified_for_dsm_14866, medium_514_modified_for_dsm_14867, medium_514_modified_for_dsm_14868,
+    medium_514_modified_for_dsm_14913, medium_514_modified_for_dsm_15140, medium_514_modified_for_dsm_15367,
+    medium_514_modified_for_dsm_15516, medium_514_modified_for_dsm_15517, medium_514_modified_for_dsm_15547,
+    medium_514_modified_for_dsm_15686, medium_514_modified_for_dsm_15720, medium_514_modified_for_dsm_15721,
+    medium_514_modified_for_dsm_15722, medium_514_modified_for_dsm_15723, medium_514_modified_for_dsm_15724,
+    medium_514_modified_for_dsm_15725, medium_514_modified_for_dsm_15911, medium_514_modified_for_dsm_16094,
+    medium_514_modified_for_dsm_16096, medium_514_modified_for_dsm_16098, medium_514_modified_for_dsm_16108,
+    medium_514_modified_for_dsm_16189, medium_514_modified_for_dsm_16226, medium_514_modified_for_dsm_16287,
+    medium_514_modified_for_dsm_16303, medium_514_modified_for_dsm_16354, medium_514_modified_for_dsm_16425,
+    medium_514_modified_for_dsm_16459, medium_514_modified_for_dsm_16460, medium_514_modified_for_dsm_16461,
+    medium_514_modified_for_dsm_16462, medium_514_modified_for_dsm_16463, medium_514_modified_for_dsm_16464,
+    medium_514_modified_for_dsm_16465, medium_514_modified_for_dsm_16468, medium_514_modified_for_dsm_16502,
+    medium_514_modified_for_dsm_16628, medium_514_modified_for_dsm_16817, medium_514_modified_for_dsm_16826,
+    medium_514_modified_for_dsm_16966, medium_514_modified_for_dsm_17056, medium_514_modified_for_dsm_17110,
+    medium_514_modified_for_dsm_17331, medium_514_modified_for_dsm_17332, medium_514_modified_for_dsm_17333,
+    medium_514_modified_for_dsm_17334, medium_514_modified_for_dsm_17335, medium_514_modified_for_dsm_17336,
+    medium_514_modified_for_dsm_17337, medium_514_modified_for_dsm_17346, medium_514_modified_for_dsm_17544,
+    medium_514_modified_for_dsm_17546, medium_514_modified_for_dsm_17547, medium_514_modified_for_dsm_17548,
+    medium_514_modified_for_dsm_17549, medium_514_modified_for_dsm_17550, medium_514_modified_for_dsm_17551,
+    medium_514_modified_for_dsm_17586, medium_514_modified_for_dsm_17587, medium_514_modified_for_dsm_17740,
+    medium_514_modified_for_dsm_17747, medium_514_modified_for_dsm_17846, medium_514_modified_for_dsm_17856,
+    medium_514_modified_for_dsm_17858, medium_514_modified_for_dsm_17892, medium_514_modified_for_dsm_18005,
+    medium_514_modified_for_dsm_18005_replace_horse_blood_with_sheep_blood, medium_514_modified_for_dsm_18045,
+    medium_514_modified_for_dsm_18098, medium_514_modified_for_dsm_18193, medium_514_modified_for_dsm_18252,
+    medium_514_modified_for_dsm_18393, medium_514_modified_for_dsm_18394, medium_514_modified_for_dsm_18694,
+    medium_514_modified_for_dsm_18936, medium_514_modified_for_dsm_18961, medium_514_modified_for_dsm_19029,
+    medium_514_modified_for_dsm_19122, medium_514_modified_for_dsm_19219, medium_514_modified_for_dsm_19340,
+    medium_514_modified_for_dsm_19582, medium_514_modified_for_dsm_19612, medium_514_modified_for_dsm_19633,
+    medium_514_modified_for_dsm_19751, medium_514_modified_for_dsm_19794, medium_514_modified_for_dsm_19796,
+    medium_514_modified_for_dsm_19797, medium_514_modified_for_dsm_19802, medium_514_modified_for_dsm_19939,
+    medium_514_modified_for_dsm_19980, medium_514_modified_for_dsm_21077, medium_514_modified_for_dsm_21189,
+    medium_514_modified_for_dsm_21190, medium_514_modified_for_dsm_21201, medium_514_modified_for_dsm_21365,
+    medium_514_modified_for_dsm_21475, medium_514_modified_for_dsm_21539, medium_514_modified_for_dsm_21559,
+    medium_514_modified_for_dsm_21619, medium_514_modified_for_dsm_21620, medium_514_modified_for_dsm_21935,
+    medium_514_modified_for_dsm_22259, medium_514_modified_for_dsm_22302, medium_514_modified_for_dsm_22388,
+    medium_514_modified_for_dsm_22440, medium_514_modified_for_dsm_22441, medium_514_modified_for_dsm_22530,
+    medium_514_modified_for_dsm_22782, medium_514_modified_for_dsm_22784, medium_514_modified_for_dsm_22818,
+    medium_514_modified_for_dsm_23007, medium_514_modified_for_dsm_23008, medium_514_modified_for_dsm_23009,
+    medium_514_modified_for_dsm_23010, medium_514_modified_for_dsm_23111, medium_514_modified_for_dsm_23127,
+    medium_514_modified_for_dsm_23507, medium_514_modified_for_dsm_23531, medium_514_modified_for_dsm_23775,
+    medium_514_modified_for_dsm_23924, medium_514_modified_for_dsm_23995, medium_514_modified_for_dsm_44818,
+    medium_514_modified_for_dsm_8798, medium_514a_modified_for_dsm_15882, medium_514a_modified_for_dsm_22212,
+    medium_514b_modified_for_dsm_16010, medium_514b_modified_for_dsm_21020, medium_514b_modified_for_dsm_22359,
+    medium_514b_modified_for_dsm_26530, medium_514b_modified_for_dsm_735, medium_514c_modified_for_dsm_23364,
+    medium_514d_modified_for_dsm_21633, medium_514d_modified_for_dsm_21756, modified_bacto_marine_broth,
+    half_strength_bacto_marine_broth_with_50_seawater'
+synonyms:
+- name: medium_514_plus_additional_salt
+  source: KOMODO
+  source_id: komodo.medium:514b
+  original_category: bacterial
+- name: bacto_marine_broth_difco_2216
+  source: KOMODO
+  source_id: komodo.medium:514
+  original_category: bacterial
+- name: for_strains_dsm_21167_dsm_21194
+  source: KOMODO
+  source_id: komodo.medium:514b.1
+  original_category: bacterial
+- name: for_strains_dsm_21373_dsm_21449_dsm_21450_dsm_21621_and_dsm_21632
+  source: KOMODO
+  source_id: komodo.medium:514d.1
+  original_category: bacterial
+- name: for_strains_dsm_23437_dsm_23508_dsm23509_dsm_21076_dsm_26132
+  source: KOMODO
+  source_id: komodo.medium:514b.6
+  original_category: bacterial
+- name: for_strains_dsm_23438_dsm_21056_dsm_21166_dsm_21888_dsm_5160
+  source: KOMODO
+  source_id: komodo.medium:514b.3
+  original_category: bacterial
+- name: for_strains_dsm_24014
+  source: KOMODO
+  source_id: komodo.medium:514b.5
+  original_category: bacterial
+- name: for_strains_dsm_5349_dsm_24106_dsm_24107_dsm_24186_dsm_23100_dsm_21021_dsm_19800_dsm_19821
+  source: KOMODO
+  source_id: komodo.medium:514b.2
+  original_category: bacterial
+- name: for_strains_dsm_5351_dsm_23229_dsm_22730_dsm_22404_dsm_22403_dsm_22402
+  source: KOMODO
+  source_id: komodo.medium:514b.4
+  original_category: bacterial
+- name: half_strength_bacto_marine_broth
+  source: KOMODO
+  source_id: komodo.medium:514a
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_11573
+  source: KOMODO
+  source_id: komodo.medium:514_11573
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_11708
+  source: KOMODO
+  source_id: komodo.medium:514_11708
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_11709
+  source: KOMODO
+  source_id: komodo.medium:514_11709
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_12178
+  source: KOMODO
+  source_id: komodo.medium:514_12178
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_13445
+  source: KOMODO
+  source_id: komodo.medium:514_13445
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_13778
+  source: KOMODO
+  source_id: komodo.medium:514_13778
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_13965
+  source: KOMODO
+  source_id: komodo.medium:514_13965
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_14014
+  source: KOMODO
+  source_id: komodo.medium:514_14014
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_14161
+  source: KOMODO
+  source_id: komodo.medium:514_14161
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_14323
+  source: KOMODO
+  source_id: komodo.medium:514_14323
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_14512
+  source: KOMODO
+  source_id: komodo.medium:514_14512
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_14852
+  source: KOMODO
+  source_id: komodo.medium:514_14852
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_14866
+  source: KOMODO
+  source_id: komodo.medium:514_14866
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_14867
+  source: KOMODO
+  source_id: komodo.medium:514_14867
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_14868
+  source: KOMODO
+  source_id: komodo.medium:514_14868
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_14913
+  source: KOMODO
+  source_id: komodo.medium:514_14913
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15140
+  source: KOMODO
+  source_id: komodo.medium:514_15140
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15367
+  source: KOMODO
+  source_id: komodo.medium:514_15367
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15516
+  source: KOMODO
+  source_id: komodo.medium:514_15516
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15517
+  source: KOMODO
+  source_id: komodo.medium:514_15517
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15547
+  source: KOMODO
+  source_id: komodo.medium:514_15547
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15686
+  source: KOMODO
+  source_id: komodo.medium:514_15686
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15720
+  source: KOMODO
+  source_id: komodo.medium:514_15720
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15721
+  source: KOMODO
+  source_id: komodo.medium:514_15721
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15722
+  source: KOMODO
+  source_id: komodo.medium:514_15722
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15723
+  source: KOMODO
+  source_id: komodo.medium:514_15723
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15724
+  source: KOMODO
+  source_id: komodo.medium:514_15724
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15725
+  source: KOMODO
+  source_id: komodo.medium:514_15725
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_15911
+  source: KOMODO
+  source_id: komodo.medium:514_15911
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16094
+  source: KOMODO
+  source_id: komodo.medium:514_16094
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16096
+  source: KOMODO
+  source_id: komodo.medium:514_16096
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16098
+  source: KOMODO
+  source_id: komodo.medium:514_16098
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16108
+  source: KOMODO
+  source_id: komodo.medium:514_16108
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16189
+  source: KOMODO
+  source_id: komodo.medium:514_16189
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16226
+  source: KOMODO
+  source_id: komodo.medium:514_16226
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16287
+  source: KOMODO
+  source_id: komodo.medium:514_16287
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16303
+  source: KOMODO
+  source_id: komodo.medium:514_16303
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16354
+  source: KOMODO
+  source_id: komodo.medium:514_16354
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16425
+  source: KOMODO
+  source_id: komodo.medium:514_16425
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16459
+  source: KOMODO
+  source_id: komodo.medium:514_16459
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16460
+  source: KOMODO
+  source_id: komodo.medium:514_16460
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16461
+  source: KOMODO
+  source_id: komodo.medium:514_16461
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16462
+  source: KOMODO
+  source_id: komodo.medium:514_16462
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16463
+  source: KOMODO
+  source_id: komodo.medium:514_16463
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16464
+  source: KOMODO
+  source_id: komodo.medium:514_16464
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16465
+  source: KOMODO
+  source_id: komodo.medium:514_16465
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16468
+  source: KOMODO
+  source_id: komodo.medium:514_16468
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16502
+  source: KOMODO
+  source_id: komodo.medium:514_16502
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16628
+  source: KOMODO
+  source_id: komodo.medium:514_16628
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16817
+  source: KOMODO
+  source_id: komodo.medium:514_16817
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16826
+  source: KOMODO
+  source_id: komodo.medium:514_16826
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_16966
+  source: KOMODO
+  source_id: komodo.medium:514_16966
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17056
+  source: KOMODO
+  source_id: komodo.medium:514_17056
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17110
+  source: KOMODO
+  source_id: komodo.medium:514_17110
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17331
+  source: KOMODO
+  source_id: komodo.medium:514_17331
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17332
+  source: KOMODO
+  source_id: komodo.medium:514_17332
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17333
+  source: KOMODO
+  source_id: komodo.medium:514_17333
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17334
+  source: KOMODO
+  source_id: komodo.medium:514_17334
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17335
+  source: KOMODO
+  source_id: komodo.medium:514_17335
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17336
+  source: KOMODO
+  source_id: komodo.medium:514_17336
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17337
+  source: KOMODO
+  source_id: komodo.medium:514_17337
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17346
+  source: KOMODO
+  source_id: komodo.medium:514_17346
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17544
+  source: KOMODO
+  source_id: komodo.medium:514_17544
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17546
+  source: KOMODO
+  source_id: komodo.medium:514_17546
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17547
+  source: KOMODO
+  source_id: komodo.medium:514_17547
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17548
+  source: KOMODO
+  source_id: komodo.medium:514_17548
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17549
+  source: KOMODO
+  source_id: komodo.medium:514_17549
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17550
+  source: KOMODO
+  source_id: komodo.medium:514_17550
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17551
+  source: KOMODO
+  source_id: komodo.medium:514_17551
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17586
+  source: KOMODO
+  source_id: komodo.medium:514_17586
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17587
+  source: KOMODO
+  source_id: komodo.medium:514_17587
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17740
+  source: KOMODO
+  source_id: komodo.medium:514_17740
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17747
+  source: KOMODO
+  source_id: komodo.medium:514_17747
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17846
+  source: KOMODO
+  source_id: komodo.medium:514_17846
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17856
+  source: KOMODO
+  source_id: komodo.medium:514_17856
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17858
+  source: KOMODO
+  source_id: komodo.medium:514_17858
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_17892
+  source: KOMODO
+  source_id: komodo.medium:514_17892
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_18005
+  source: KOMODO
+  source_id: komodo.medium:514_18005
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_18005_replace_horse_blood_with_sheep_blood
+  source: KOMODO
+  source_id: komodo.medium:514_18005_replace_horse blood_with_sheep blood
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_18045
+  source: KOMODO
+  source_id: komodo.medium:514_18045
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_18098
+  source: KOMODO
+  source_id: komodo.medium:514_18098
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_18193
+  source: KOMODO
+  source_id: komodo.medium:514_18193
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_18252
+  source: KOMODO
+  source_id: komodo.medium:514_18252
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_18393
+  source: KOMODO
+  source_id: komodo.medium:514_18393
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_18394
+  source: KOMODO
+  source_id: komodo.medium:514_18394
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_18694
+  source: KOMODO
+  source_id: komodo.medium:514_18694
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_18936
+  source: KOMODO
+  source_id: komodo.medium:514_18936
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_18961
+  source: KOMODO
+  source_id: komodo.medium:514_18961
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19029
+  source: KOMODO
+  source_id: komodo.medium:514_19029
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19122
+  source: KOMODO
+  source_id: komodo.medium:514_19122
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19219
+  source: KOMODO
+  source_id: komodo.medium:514_19219
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19340
+  source: KOMODO
+  source_id: komodo.medium:514_19340
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19582
+  source: KOMODO
+  source_id: komodo.medium:514_19582
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19612
+  source: KOMODO
+  source_id: komodo.medium:514_19612
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19633
+  source: KOMODO
+  source_id: komodo.medium:514_19633
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19751
+  source: KOMODO
+  source_id: komodo.medium:514_19751
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19794
+  source: KOMODO
+  source_id: komodo.medium:514_19794
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19796
+  source: KOMODO
+  source_id: komodo.medium:514_19796
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19797
+  source: KOMODO
+  source_id: komodo.medium:514_19797
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19802
+  source: KOMODO
+  source_id: komodo.medium:514_19802
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19939
+  source: KOMODO
+  source_id: komodo.medium:514_19939
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_19980
+  source: KOMODO
+  source_id: komodo.medium:514_19980
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_21077
+  source: KOMODO
+  source_id: komodo.medium:514_21077
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_21189
+  source: KOMODO
+  source_id: komodo.medium:514_21189
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_21190
+  source: KOMODO
+  source_id: komodo.medium:514_21190
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_21201
+  source: KOMODO
+  source_id: komodo.medium:514_21201
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_21365
+  source: KOMODO
+  source_id: komodo.medium:514_21365
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_21475
+  source: KOMODO
+  source_id: komodo.medium:514_21475
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_21539
+  source: KOMODO
+  source_id: komodo.medium:514_21539
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_21559
+  source: KOMODO
+  source_id: komodo.medium:514_21559
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_21619
+  source: KOMODO
+  source_id: komodo.medium:514_21619
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_21620
+  source: KOMODO
+  source_id: komodo.medium:514_21620
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_21935
+  source: KOMODO
+  source_id: komodo.medium:514_21935
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_22259
+  source: KOMODO
+  source_id: komodo.medium:514_22259
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_22302
+  source: KOMODO
+  source_id: komodo.medium:514_22302
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_22388
+  source: KOMODO
+  source_id: komodo.medium:514_22388
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_22440
+  source: KOMODO
+  source_id: komodo.medium:514_22440
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_22441
+  source: KOMODO
+  source_id: komodo.medium:514_22441
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_22530
+  source: KOMODO
+  source_id: komodo.medium:514_22530
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_22782
+  source: KOMODO
+  source_id: komodo.medium:514_22782
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_22784
+  source: KOMODO
+  source_id: komodo.medium:514_22784
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_22818
+  source: KOMODO
+  source_id: komodo.medium:514_22818
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_23007
+  source: KOMODO
+  source_id: komodo.medium:514_23007
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_23008
+  source: KOMODO
+  source_id: komodo.medium:514_23008
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_23009
+  source: KOMODO
+  source_id: komodo.medium:514_23009
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_23010
+  source: KOMODO
+  source_id: komodo.medium:514_23010
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_23111
+  source: KOMODO
+  source_id: komodo.medium:514_23111
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_23127
+  source: KOMODO
+  source_id: komodo.medium:514_23127
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_23507
+  source: KOMODO
+  source_id: komodo.medium:514_23507
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_23531
+  source: KOMODO
+  source_id: komodo.medium:514_23531
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_23775
+  source: KOMODO
+  source_id: komodo.medium:514_23775
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_23924
+  source: KOMODO
+  source_id: komodo.medium:514_23924
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_23995
+  source: KOMODO
+  source_id: komodo.medium:514_23995
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_44818
+  source: KOMODO
+  source_id: komodo.medium:514_44818
+  original_category: bacterial
+- name: medium_514_modified_for_dsm_8798
+  source: KOMODO
+  source_id: komodo.medium:514_8798
+  original_category: bacterial
+- name: medium_514a_modified_for_dsm_15882
+  source: KOMODO
+  source_id: komodo.medium:514a_15882
+  original_category: bacterial
+- name: medium_514a_modified_for_dsm_22212
+  source: KOMODO
+  source_id: komodo.medium:514a_22212
+  original_category: bacterial
+- name: medium_514b_modified_for_dsm_16010
+  source: KOMODO
+  source_id: komodo.medium:514b_16010
+  original_category: bacterial
+- name: medium_514b_modified_for_dsm_21020
+  source: KOMODO
+  source_id: komodo.medium:514b_21020
+  original_category: bacterial
+- name: medium_514b_modified_for_dsm_22359
+  source: KOMODO
+  source_id: komodo.medium:514b_22359
+  original_category: bacterial
+- name: medium_514b_modified_for_dsm_26530
+  source: KOMODO
+  source_id: komodo.medium:514b_26530
+  original_category: bacterial
+- name: medium_514b_modified_for_dsm_735
+  source: KOMODO
+  source_id: komodo.medium:514b_735
+  original_category: bacterial
+- name: medium_514c_modified_for_dsm_23364
+  source: KOMODO
+  source_id: komodo.medium:514c_23364
+  original_category: bacterial
+- name: medium_514d_modified_for_dsm_21633
+  source: KOMODO
+  source_id: komodo.medium:514d_21633
+  original_category: bacterial
+- name: medium_514d_modified_for_dsm_21756
+  source: KOMODO
+  source_id: komodo.medium:514d_21756
+  original_category: bacterial
+- name: modified_bacto_marine_broth
+  source: KOMODO
+  source_id: komodo.medium:514d
+  original_category: bacterial
+categories:
+- bacterial
+- specialized
+merged_from:
+- KOMODO_514b_medium_514_plus_additional_salt
+- bacto_marine_broth_difco_2216
+- for_strains_dsm_21167_dsm_21194
+- for_strains_dsm_21373_dsm_21449_dsm_21450_dsm_21621_and_dsm_21632
+- for_strains_dsm_23437_dsm_23508_dsm23509_dsm_21076_dsm_26132
+- for_strains_dsm_23438_dsm_21056_dsm_21166_dsm_21888_dsm_5160
+- for_strains_dsm_24014
+- for_strains_dsm_5349_dsm_24106_dsm_24107_dsm_24186_dsm_23100_dsm_21021_dsm_19800_dsm_19821
+- for_strains_dsm_5351_dsm_23229_dsm_22730_dsm_22404_dsm_22403_dsm_22402
+- half_strength_bacto_marine_broth
+- medium_514_modified_for_dsm_11573
+- medium_514_modified_for_dsm_11708
+- medium_514_modified_for_dsm_11709
+- medium_514_modified_for_dsm_12178
+- medium_514_modified_for_dsm_13445
+- medium_514_modified_for_dsm_13778
+- medium_514_modified_for_dsm_13965
+- medium_514_modified_for_dsm_14014
+- medium_514_modified_for_dsm_14161
+- medium_514_modified_for_dsm_14323
+- medium_514_modified_for_dsm_14512
+- medium_514_modified_for_dsm_14852
+- medium_514_modified_for_dsm_14866
+- medium_514_modified_for_dsm_14867
+- medium_514_modified_for_dsm_14868
+- medium_514_modified_for_dsm_14913
+- medium_514_modified_for_dsm_15140
+- medium_514_modified_for_dsm_15367
+- medium_514_modified_for_dsm_15516
+- medium_514_modified_for_dsm_15517
+- medium_514_modified_for_dsm_15547
+- medium_514_modified_for_dsm_15686
+- medium_514_modified_for_dsm_15720
+- medium_514_modified_for_dsm_15721
+- medium_514_modified_for_dsm_15722
+- medium_514_modified_for_dsm_15723
+- medium_514_modified_for_dsm_15724
+- medium_514_modified_for_dsm_15725
+- medium_514_modified_for_dsm_15911
+- medium_514_modified_for_dsm_16094
+- medium_514_modified_for_dsm_16096
+- medium_514_modified_for_dsm_16098
+- medium_514_modified_for_dsm_16108
+- medium_514_modified_for_dsm_16189
+- medium_514_modified_for_dsm_16226
+- medium_514_modified_for_dsm_16287
+- medium_514_modified_for_dsm_16303
+- medium_514_modified_for_dsm_16354
+- medium_514_modified_for_dsm_16425
+- medium_514_modified_for_dsm_16459
+- medium_514_modified_for_dsm_16460
+- medium_514_modified_for_dsm_16461
+- medium_514_modified_for_dsm_16462
+- medium_514_modified_for_dsm_16463
+- medium_514_modified_for_dsm_16464
+- medium_514_modified_for_dsm_16465
+- medium_514_modified_for_dsm_16468
+- medium_514_modified_for_dsm_16502
+- medium_514_modified_for_dsm_16628
+- medium_514_modified_for_dsm_16817
+- medium_514_modified_for_dsm_16826
+- medium_514_modified_for_dsm_16966
+- medium_514_modified_for_dsm_17056
+- medium_514_modified_for_dsm_17110
+- medium_514_modified_for_dsm_17331
+- medium_514_modified_for_dsm_17332
+- medium_514_modified_for_dsm_17333
+- medium_514_modified_for_dsm_17334
+- medium_514_modified_for_dsm_17335
+- medium_514_modified_for_dsm_17336
+- medium_514_modified_for_dsm_17337
+- medium_514_modified_for_dsm_17346
+- medium_514_modified_for_dsm_17544
+- medium_514_modified_for_dsm_17546
+- medium_514_modified_for_dsm_17547
+- medium_514_modified_for_dsm_17548
+- medium_514_modified_for_dsm_17549
+- medium_514_modified_for_dsm_17550
+- medium_514_modified_for_dsm_17551
+- medium_514_modified_for_dsm_17586
+- medium_514_modified_for_dsm_17587
+- medium_514_modified_for_dsm_17740
+- medium_514_modified_for_dsm_17747
+- medium_514_modified_for_dsm_17846
+- medium_514_modified_for_dsm_17856
+- medium_514_modified_for_dsm_17858
+- medium_514_modified_for_dsm_17892
+- medium_514_modified_for_dsm_18005
+- medium_514_modified_for_dsm_18005_replace_horse_blood_with_sheep_blood
+- medium_514_modified_for_dsm_18045
+- medium_514_modified_for_dsm_18098
+- medium_514_modified_for_dsm_18193
+- medium_514_modified_for_dsm_18252
+- medium_514_modified_for_dsm_18393
+- medium_514_modified_for_dsm_18394
+- medium_514_modified_for_dsm_18694
+- medium_514_modified_for_dsm_18936
+- medium_514_modified_for_dsm_18961
+- medium_514_modified_for_dsm_19029
+- medium_514_modified_for_dsm_19122
+- medium_514_modified_for_dsm_19219
+- medium_514_modified_for_dsm_19340
+- medium_514_modified_for_dsm_19582
+- medium_514_modified_for_dsm_19612
+- medium_514_modified_for_dsm_19633
+- medium_514_modified_for_dsm_19751
+- medium_514_modified_for_dsm_19794
+- medium_514_modified_for_dsm_19796
+- medium_514_modified_for_dsm_19797
+- medium_514_modified_for_dsm_19802
+- medium_514_modified_for_dsm_19939
+- medium_514_modified_for_dsm_19980
+- medium_514_modified_for_dsm_21077
+- medium_514_modified_for_dsm_21189
+- medium_514_modified_for_dsm_21190
+- medium_514_modified_for_dsm_21201
+- medium_514_modified_for_dsm_21365
+- medium_514_modified_for_dsm_21475
+- medium_514_modified_for_dsm_21539
+- medium_514_modified_for_dsm_21559
+- medium_514_modified_for_dsm_21619
+- medium_514_modified_for_dsm_21620
+- medium_514_modified_for_dsm_21935
+- medium_514_modified_for_dsm_22259
+- medium_514_modified_for_dsm_22302
+- medium_514_modified_for_dsm_22388
+- medium_514_modified_for_dsm_22440
+- medium_514_modified_for_dsm_22441
+- medium_514_modified_for_dsm_22530
+- medium_514_modified_for_dsm_22782
+- medium_514_modified_for_dsm_22784
+- medium_514_modified_for_dsm_22818
+- medium_514_modified_for_dsm_23007
+- medium_514_modified_for_dsm_23008
+- medium_514_modified_for_dsm_23009
+- medium_514_modified_for_dsm_23010
+- medium_514_modified_for_dsm_23111
+- medium_514_modified_for_dsm_23127
+- medium_514_modified_for_dsm_23507
+- medium_514_modified_for_dsm_23531
+- medium_514_modified_for_dsm_23775
+- medium_514_modified_for_dsm_23924
+- medium_514_modified_for_dsm_23995
+- medium_514_modified_for_dsm_44818
+- medium_514_modified_for_dsm_8798
+- medium_514a_modified_for_dsm_15882
+- medium_514a_modified_for_dsm_22212
+- medium_514b_modified_for_dsm_16010
+- medium_514b_modified_for_dsm_21020
+- medium_514b_modified_for_dsm_22359
+- medium_514b_modified_for_dsm_26530
+- medium_514b_modified_for_dsm_735
+- medium_514c_modified_for_dsm_23364
+- medium_514d_modified_for_dsm_21633
+- medium_514d_modified_for_dsm_21756
+- modified_bacto_marine_broth
+- half_strength_bacto_marine_broth_with_50_seawater
+merge_fingerprint: 0afc0a1f985a9b7ccbbb677c2b0e5cce0a2d1eee7589d96114d6dd94ad9ec402

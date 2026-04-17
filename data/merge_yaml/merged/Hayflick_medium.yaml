@@ -1,6 +1,7 @@
-name: Hayflick medium
+id: CultureMech:009333
+name: hayflick_medium
 original_name: Hayflick medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -23,6 +24,9 @@ ingredients:
   term:
     id: CHEBI:31991
     label: Phenol red
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001075
+    label: Phenol Red
 - preferred_term: DI Water
   concentration:
     value: '843'
@@ -56,6 +60,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:05.704677Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009333'
+- timestamp: '2026-03-17T06:29:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:24.619623+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Hayflick medium" to "hayflick_medium" for consistent
+    matching
 merge_fingerprint: 8d963606c762b3443008d37a5e2b936e277ca61ac29405f1de7a518960a7221d
 merged_from:
-- TOGO_M2785_Hayflick_medium
+- hayflick_medium

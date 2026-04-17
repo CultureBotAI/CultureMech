@@ -1,8 +1,9 @@
-name: BL Agar
+id: CultureMech:008201
+name: bl_agar
 original_name: BL Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
@@ -13,11 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: BL Agar*
-  concentration:
-    value: '58'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component; Properties: Undefined component, Complex component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Defibrinated horse blood
   concentration:
     value: '50'
@@ -44,6 +43,34 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 9184cf03f4ca89250ad081659b086b15536dab469183766e8fd15a4714424897
+- timestamp: '2026-03-09T08:04:23.098341+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:54.397311Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008201'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:50.043362'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.988144+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BL Agar" to "bl_agar" for consistent matching
+solutions:
+- preferred_term: BL Agar*
+  composition: []
+  concentration:
+    value: '58'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component; Properties: Undefined component, Complex component'
+  name: Unknown solution
+merge_fingerprint: 2ba2e650a6bca51c104fad346564d233a8c13c23d5569d058ce72ebdf4c584dd
 merged_from:
-- TOGO_M1645_BL_Agar
+- bl_agar

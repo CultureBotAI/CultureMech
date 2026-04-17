@@ -1,7 +1,8 @@
-name: Malt Medium
+id: CultureMech:000175
+name: malt_medium
 category: ALGAE
-medium_type: complex
-physical_state: liquid
+medium_type: COMPLEX
+physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
@@ -51,9 +52,18 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: malt-medium, URL: https://utex.org/products/malt-medium'
+- timestamp: '2026-03-13T06:18:53.423657Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000175'
+- timestamp: '2026-03-17T19:45:04.358804+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Malt Medium" to "malt_medium" for consistent matching
 references:
 - reference_id: UTEX:malt-medium
 - reference_id: https://utex.org/products/malt-medium
+original_name: Malt Medium
 merge_fingerprint: 6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b
 merged_from:
 - Malt_Medium

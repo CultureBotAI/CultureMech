@@ -1,6 +1,7 @@
-name: LSG Medium
+id: CultureMech:007078
+name: lsg_medium
 original_name: LSG Medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '20.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000420
+    label: Succinate
 - preferred_term: beta-D-Glucose
   concentration:
     value: '27.753'
@@ -27,10 +31,19 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Sodium sulfate
   concentration:
     value: '5.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Sodium sulfate
+  term:
+    id: CHEBI:32149
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '12.5'
@@ -43,6 +56,9 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '12.5'
@@ -54,6 +70,9 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -61,10 +80,16 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0004'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Manganese chloride
   concentration:
     value: '0.002'
@@ -85,6 +110,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49976
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -101,6 +129,18 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 187, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:45.992871Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007078'
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.117180+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LSG Medium" to "lsg_medium" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 187
   term:
@@ -112,6 +152,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 2a66f802178d9aa0b467875e975bd4c111c72993327c3306a2942c2144444fe9
+merge_fingerprint: a3e13d548d5690575e7adc5b09720b8ffe91984780d36fd5430aa921f182c540
 merged_from:
-- MEDIADB_187_LSG_Medium
+- lsg_medium

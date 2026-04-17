@@ -1,15 +1,17 @@
-name: PSEUDOMONAS INDIGOFERA MEDIUM
-original_name: PSEUDOMONAS INDIGOFERA MEDIUM
-category: imported
+id: CultureMech:005088
+name: pseudomonas_indigofera_medium
+original_name: PSEUDOMONAS INDIGOFERA medium
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
-ph_range: 7-7.2
+physical_state: SOLID_AGAR
+ph_range: 7.0-7.2
 media_term:
-  preferred_term: DSMZ Medium 365
+  preferred_term: KOMODO Medium 365
   term:
-    id: mediadive.medium:365
-    label: PSEUDOMONAS INDIGOFERA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium365.pdf'
+    id: komodo.medium:365
+    label: PSEUDOMONAS INDIGOFERA medium
+notes: 'Source: KOMODO ModelSEED | ID: 365 | DSMZ Medium: 365 (mediadive.medium:365)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -22,6 +24,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
@@ -29,6 +34,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -36,30 +44,40 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0 - 7.2. Rehydrate and grow lyophilized cells in liquid
-    broth and on agar.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:10.915211Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 365'
-- timestamp: '2026-02-19T08:26:46.962928+00:00'
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 365'
+- timestamp: '2026-02-03T11:19:05.845601'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 365
+- timestamp: '2026-03-13T06:19:30.026541Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005088'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:45.699102+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PSEUDOMONAS INDIGOFERA medium" to "pseudomonas_indigofera_medium"
+    for consistent matching
+- timestamp: '2026-04-17T06:29:22.635368+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_365_PSEUDOMONAS_INDIGOFERA_MEDIUM, KOMODO_365_PSEUDOMONAS_INDIGOFERA_medium'
-synonyms:
-- name: PSEUDOMONAS INDIGOFERA medium
-  source: KOMODO
-  source_id: komodo.medium:365
-  original_category: imported
+  notes: 'Sources: KOMODO_365_PSEUDOMONAS_INDIGOFERA_medium, pseudomonas_indigofera_medium'
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_365_PSEUDOMONAS_INDIGOFERA_MEDIUM
 - KOMODO_365_PSEUDOMONAS_INDIGOFERA_medium
+- pseudomonas_indigofera_medium
 merge_fingerprint: 62d73333a00ad77852332393fa7c390270abb653958df43cc13ee751cbfb734a

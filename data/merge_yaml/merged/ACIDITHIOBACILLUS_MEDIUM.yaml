@@ -1,6 +1,7 @@
-name: ACIDITHIOBACILLUS MEDIUM
+id: CultureMech:001459
+name: acidithiobacillus_medium
 original_name: ACIDITHIOBACILLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 4.2
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -25,6 +29,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -32,6 +39,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -39,6 +49,9 @@ ingredients:
   concentration:
     value: '0.14'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
@@ -46,6 +59,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000927
+    label: Sulfur
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -64,6 +80,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 35'
+- timestamp: '2026-03-13T06:19:04.375439Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001459'
+- timestamp: '2026-03-17T06:30:28.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.389251+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ACIDITHIOBACILLUS MEDIUM" to "acidithiobacillus_medium"
+    for consistent matching
 merge_fingerprint: ef9327e0cec54c5a29e72a284fb84fdfe450e333f0ece089ccb35d7a4e5fe960
 merged_from:
-- DSMZ_35_ACIDITHIOBACILLUS_MEDIUM
+- acidithiobacillus_medium

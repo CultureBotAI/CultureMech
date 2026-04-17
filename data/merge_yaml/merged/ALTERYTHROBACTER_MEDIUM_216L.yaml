@@ -1,8 +1,9 @@
-name: ALTERYTHROBACTER MEDIUM 216L
+id: CultureMech:000919
+name: alterythrobacter_medium_216l
 original_name: ALTERYTHROBACTER MEDIUM 216L
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: DSMZ Medium 1453
@@ -18,6 +19,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Tryptone
   concentration:
     value: '10'
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: NH4NO3
   concentration:
     value: '0.2'
@@ -40,6 +47,9 @@ ingredients:
   term:
     id: CHEBI:63038
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: NH4NO3
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -48,6 +58,9 @@ ingredients:
     value: '12'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -55,6 +68,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -75,6 +91,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:59.563778Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000919'
+- timestamp: '2026-03-17T06:30:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.087132+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ALTERYTHROBACTER MEDIUM 216L" to "alterythrobacter_medium_216l"
+    for consistent matching
 merge_fingerprint: ba2efed44abc370dab686b1201a1b8baa001e8f9a677149ca35b6b1b61c9ef90
 merged_from:
-- DSMZ_1453_ALTERYTHROBACTER_MEDIUM_216L
+- alterythrobacter_medium_216l

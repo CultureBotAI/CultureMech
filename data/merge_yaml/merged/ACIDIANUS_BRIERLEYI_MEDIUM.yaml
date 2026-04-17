@@ -1,108 +1,110 @@
-name: Acidianus Brierleyi Medium
-original_name: Acidianus Brierleyi Medium
-category: imported
+id: CultureMech:000980
+name: acidianus_brierleyi_medium
+original_name: ACIDIANUS BRIERLEYI MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_range: 1.5-2.5
+media_term:
+  preferred_term: DSMZ Medium 150
+  term:
+    id: mediadive.medium:150
+    label: ACIDIANUS BRIERLEYI MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium150.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: KCl
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
 - preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
+- preferred_term: K2HPO4 x 3 H2O
   term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: Sulfur (powder)
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
   concentration:
-    value: '10'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4 x 3 H2O
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:14258
-    label: ''
-- preferred_term: Ca(NO3)2
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '0.01'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: KCl
   term:
-    id: CHEBI:77732
-    label: cadmium nitrate
-- preferred_term: Yeast extract (BD-Difco)
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000586
+    label: Ca(NO3)2 x 4 H2O
+- preferred_term: Yeast extract
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+- preferred_term: Sulfur
   term:
-    id: CHEBI:26836
-    label: sulfuric acid
+    id: CHEBI:26833
+    label: Sulfur
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M169
-  term:
-    id: TOGO:M169
-    label: Acidianus Brierleyi Medium
-notes: 'Source: https://togomedium.org/medium/M169
-
-  Original source: JCM - JCM_M176
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=176'
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000927
+    label: Sulfur
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except yeast extract and sulfur. Adjust pH with
+    6 N H2SO4 to 1.5 - 2.5. Yeast extract (10% w/v in distilled water) is autoclaved
+    separately. For sterilization of the sulfur place it in screw-capped tubes or
+    bottles, wet with a few drops of water and heat for 3 hours to 90 - 100°C in a
+    water bath on each of three successive days. Before use, aseptically layer the
+    sulfur onto the surface of the autoclaved liquid basal medium.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.547974Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M169'
-- timestamp: '2026-01-28T19:48:27.498398Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:49.134940'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H2SO4'
-merge_fingerprint: b3f6b601612fc4f8101b610bd7a2f4e9441cc9f705822b63552359f17103e6e4
+- timestamp: '2026-01-26T17:53:10.354379Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 150'
+- timestamp: '2026-03-13T06:19:00.132562Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000980'
+- timestamp: '2026-03-17T06:29:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.719132+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ACIDIANUS BRIERLEYI MEDIUM" to "acidianus_brierleyi_medium"
+    for consistent matching
+merge_fingerprint: 37d28f597183bb9d254a9ad45744b0ac7ea09cf707893739342ebeaff51409ee
 merged_from:
-- TOGO_M169_Acidianus_Brierleyi_Medium
+- acidianus_brierleyi_medium

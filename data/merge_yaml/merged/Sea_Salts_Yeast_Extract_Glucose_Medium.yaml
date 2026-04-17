@@ -1,6 +1,7 @@
-name: SEA SALTS YEAST EXTRACT GLUCOSE MEDIUM
+id: CultureMech:010485
+name: sea_salts_yeast_extract_glucose_medium
 original_name: SEA SALTS YEAST EXTRACT GLUCOSE MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -29,6 +33,9 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -36,6 +43,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -47,6 +57,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -54,6 +67,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -61,6 +77,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -68,6 +87,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -82,6 +104,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1063'
+- timestamp: '2026-03-13T06:20:14.019851Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010485'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.021794+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SEA SALTS YEAST EXTRACT GLUCOSE MEDIUM" to "sea_salts_yeast_extract_glucose_medium"
+    for consistent matching
 merge_fingerprint: 8c73375045ad6864eab8d15cb1120a2c2b1f1e5c9288fa77709ce056957b37b5
 merged_from:
-- JCM_J1063_SEA_SALTS_YEAST_EXTRACT_GLUCOSE_MEDIUM
+- sea_salts_yeast_extract_glucose_medium

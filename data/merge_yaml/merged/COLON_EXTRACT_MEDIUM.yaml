@@ -1,6 +1,7 @@
-name: COLON EXTRACT MEDIUM
+id: CultureMech:003200
+name: colon_extract_medium
 original_name: COLON EXTRACT MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '3.15657'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '0.000631313'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -40,6 +47,9 @@ ingredients:
   concentration:
     value: '0.631313'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
@@ -47,6 +57,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: Vitamin K1
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -54,6 +67,9 @@ ingredients:
   concentration:
     value: '5.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -61,6 +77,9 @@ ingredients:
   concentration:
     value: '2.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -68,6 +87,9 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -75,6 +97,9 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.07'
@@ -86,6 +111,9 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -93,6 +121,9 @@ ingredients:
   concentration:
     value: '5.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -100,6 +131,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -107,6 +141,9 @@ ingredients:
   concentration:
     value: '2.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -114,6 +151,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -121,6 +161,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -128,6 +171,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Xylose
   term:
     id: CHEBI:18222
@@ -135,6 +181,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000900
+    label: Xylose
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -157,6 +206,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J854'
+- timestamp: '2026-03-13T06:19:18.536418Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003200'
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:32.415475+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "COLON EXTRACT MEDIUM" to "colon_extract_medium" for
+    consistent matching
 merge_fingerprint: 9a02ea47dea3ba16d15ec4656f1d2f345b5665aeb4fc28bd28244a641b6c99b0
 merged_from:
-- JCM_J854_COLON_EXTRACT_MEDIUM
+- colon_extract_medium

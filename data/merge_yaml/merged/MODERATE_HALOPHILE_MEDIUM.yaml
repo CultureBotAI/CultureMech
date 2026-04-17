@@ -1,6 +1,7 @@
-name: Moderate Halophile Medium
+id: CultureMech:010004
+name: moderate_halophile_medium
 original_name: Moderate Halophile Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,12 +14,18 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '9.6'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -33,18 +40,27 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.36'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '7'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '2'
@@ -54,6 +70,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaHCO3
   concentration:
     value: '0.06'
@@ -63,6 +82,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaBr
   concentration:
     value: '0.026'
@@ -72,6 +94,9 @@ ingredients:
   term:
     id: CHEBI:63004
     label: sodium bromide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: Glucose
   concentration:
     value: '1'
@@ -81,40 +106,48 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-- preferred_term: agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Proteose peptone No. 3 (BD-Difco)
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 media_term:
-  preferred_term: TOGO Medium M606
+  preferred_term: TOGO Medium M605
   term:
-    id: TOGO:M606
+    id: TOGO:M605
     label: Moderate Halophile Medium
-notes: 'Source: https://togomedium.org/medium/M606
+notes: 'Source: https://togomedium.org/medium/M605
 
-  Original source: JCM - JCM_M599-2
+  Original source: JCM - JCM_M599
 
   Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=599'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.391453Z'
+- timestamp: '2026-01-27T06:35:55.389851Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M606'
-- timestamp: '2026-01-28T19:48:39.196078Z'
+  notes: 'Source: JCM, ID: M605'
+- timestamp: '2026-01-28T19:48:15.449262Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: cb12cb07242a82b55dacacd23ea8f0de98c967cee69951f1f33958126250c7be
+- timestamp: '2026-03-13T06:20:10.642523Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010004'
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.570980+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Moderate Halophile Medium" to "moderate_halophile_medium"
+    for consistent matching
+merge_fingerprint: 345ed6b32bfb76271445f6d41c430b891daf586899a44b3fef438e3973470937
 merged_from:
-- TOGO_M606_Moderate_Halophile_Medium
+- moderate_halophile_medium

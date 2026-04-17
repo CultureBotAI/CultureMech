@@ -1,6 +1,7 @@
-name: M9zb with mannose
+id: CultureMech:006998
+name: m9zb_with_mannose
 original_name: M9zb with mannose
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -12,6 +13,9 @@ ingredients:
     value: '22.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:man'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000998
+    label: D-Mannose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
@@ -27,6 +31,9 @@ ingredients:
   concentration:
     value: '8.6'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0'
@@ -38,6 +45,9 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -45,6 +55,9 @@ ingredients:
   concentration:
     value: '19.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -61,6 +74,19 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 111, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:45.515626Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006998'
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.597394+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M9zb with mannose" to "m9zb_with_mannose" for consistent
+    matching
 media_term:
   preferred_term: MediaDB Medium 111
   term:
@@ -74,4 +100,4 @@ applications:
 - Systems biology research
 merge_fingerprint: b233d08d31c25e7af59bed2d717630296db1568e80be1c1483a98f196a3ae851
 merged_from:
-- MEDIADB_111_M9zb_with_mannose
+- m9zb_with_mannose

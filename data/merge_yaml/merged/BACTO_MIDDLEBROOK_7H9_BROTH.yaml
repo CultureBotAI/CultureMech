@@ -1,6 +1,7 @@
-name: BACTO MIDDLEBROOK 7H9 BROTH
+id: CultureMech:002016
+name: bacto_middlebrook_7h9_broth
 original_name: BACTO MIDDLEBROOK 7H9 BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.4-6.8
@@ -9,7 +10,21 @@ media_term:
   term:
     id: mediadive.medium:857
     label: BACTO MIDDLEBROOK 7H9 BROTH
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf
+
+
+  Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+
+  Supplier: Multiple suppliers (Difco, Sigma, etc.)
+
+  Catalog: Multiple (L3522 Sigma, 244520 BD)
+
+  Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
 - preferred_term: Ammonium Sulfate
   term:
@@ -18,6 +33,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium Sulfate
 - preferred_term: Monopotassium Phosphate
   term:
     id: CHEBI:63036
@@ -25,6 +43,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: Monopotassium Phosphate
 - preferred_term: Disodium Phosphate
   term:
     id: CHEBI:34683
@@ -32,6 +53,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Disodium Phosphate
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -39,6 +63,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -46,6 +73,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Calcium Chloride
   term:
     id: CHEBI:3312
@@ -53,6 +83,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: Calcium Chloride
 - preferred_term: Zinc Sulfate
   term:
     id: CHEBI:35176
@@ -60,6 +93,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc Sulfate
 - preferred_term: Copper Sulfate
   term:
     id: CHEBI:23414
@@ -67,6 +103,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: Copper Sulfate
 - preferred_term: L-Glutamic acid
   term:
     id: CHEBI:16015
@@ -74,6 +113,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000562
+    label: L-Glutamic acid
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
@@ -81,6 +123,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709
@@ -88,6 +133,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -95,10 +143,62 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
-- preferred_term: Bovine albumin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+- preferred_term: Tryptone
+  term:
+    id: FOODON:03316428
+    label: tryptone
   concentration:
-    value: '50'
+    value: '10.0'
     unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: pancreatic digest of casein
+    synonym_type: EXACT
+  - synonym_text: casein peptone
+    synonym_type: EXACT
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002960
+    label: yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
+    catalog_number: Multiple (L3522 Sigma, 244520 BD)
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
+  synonyms:
+  - synonym_text: NaCl
+    synonym_type: EXACT
+  - synonym_text: table salt
+    synonym_type: EXACT
 - preferred_term: Dextrose
   term:
     id: CHEBI:4167
@@ -106,6 +206,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000243
+    label: Dextrose
 - preferred_term: Catalase
   term:
     id: CHEBI:3463
@@ -134,6 +237,19 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 857'
-merge_fingerprint: a27973eb6ca888512529bcfb0f606626f4d4d004f559c68f7bfa0913b2cd1199
+- timestamp: '2026-03-13T06:19:09.433755Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002016'
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:21.994750+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BACTO MIDDLEBROOK 7H9 BROTH" to "bacto_middlebrook_7h9_broth"
+    for consistent matching
+merge_fingerprint: ee8ba771f8eb74cd88574cf3396a97f880c2f1437b3fcf8bbf84bde5ea197790
 merged_from:
-- DSMZ_857_BACTO_MIDDLEBROOK_7H9_BROTH
+- bacto_middlebrook_7h9_broth

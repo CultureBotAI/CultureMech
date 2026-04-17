@@ -1,89 +1,94 @@
-name: Pectin Medium
-original_name: Pectin Medium
-category: imported
+id: CultureMech:001273
+name: pectin_medium
+original_name: Pectin medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+media_term:
+  preferred_term: DSMZ Medium 1855
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:1855
+    label: Pectin medium
+notes: 'Source: DSMZ'
+ingredients:
 - preferred_term: Yeast extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: 0.1% Resazurin solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-- preferred_term: Pectin (from citrus)
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
-- preferred_term: L-Cysteine·HCl·H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
 - preferred_term: Hipolypepton
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M3283
+- preferred_term: Pectin
   term:
-    id: TOGO:M3283
-    label: Pectin Medium
-notes: 'Source: https://togomedium.org/medium/M3283
-
-  Original source: JCM - JCM_M1453
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1453'
+    id: CHEBI:17309
+    label: Pectin
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000531
+    label: Pectin
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add cysteine solution after the medium has been boiled and cooled under
+    CO2. Adjust pH to 6.5 using NaOH, Distribute under N2 and autoclave.
+- step_number: 2
+  action: MIX
+  description: When preparing the plate medium, add 15g/L agar
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:53.725437Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M3283'
-- timestamp: '2026-01-28T19:48:14.230269Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.137779'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas'
-merge_fingerprint: f940b7b43c11e8a60ceb750c30e79387d286f616581c97508eb187db8aef8da3
+- timestamp: '2026-01-26T17:53:15.552333Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1855'
+- timestamp: '2026-03-13T06:19:02.729950Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001273'
+- timestamp: '2026-03-17T06:29:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.580633+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Pectin medium" to "pectin_medium" for consistent matching
+merge_fingerprint: d8bc472f1c7ba0ea2144604a181b213e62a15349881a98c19b210e29c1c5c58c
 merged_from:
-- TOGO_M3283_Pectin_Medium
+- pectin_medium

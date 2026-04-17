@@ -1,15 +1,16 @@
-name: Spiroplasma Medium
+id: CultureMech:009147
+name: spiroplasma_medium
 original_name: Spiroplasma Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DI Water
   concentration:
-    value: '500'
+    value: '700.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+    Defined component [Merged 2 duplicates: 500.0, 200.0]'
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -18,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Tryptone (Difco)
   concentration:
     value: '10'
@@ -33,22 +37,11 @@ ingredients:
     value: '170'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Phenol red solution (0.1% soln.)
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Organic compound, Solution, Defined component'
 - preferred_term: TC Yeastolate (2% soln.) (BD 255772)
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: DI water
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
 - preferred_term: Glucose
   concentration:
     value: '5'
@@ -58,13 +51,12 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Mycoplasma Growth Supplement (CMRL 1066)(10X)
   concentration:
     value: '50'
-    unit: G_PER_L
-- preferred_term: Yeast Extract Solution
-  concentration:
-    value: '35'
     unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
@@ -74,6 +66,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: CMRL-1066 (ATCC 20-2206)
   concentration:
@@ -110,6 +105,45 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 9a0f8f1f75ffce2de1a6fe56ecd3cec0592c4761508874e1a5c4d2b72c4a98b8
+- timestamp: '2026-03-09T08:04:17.339897+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:44.876633Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:03.270821Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009147'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:56.577683'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.000497+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Spiroplasma Medium" to "spiroplasma_medium" for consistent
+    matching
+solutions:
+- preferred_term: Phenol red solution (0.1% soln.)
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: pH indicator; Properties: Organic compound, Solution, Defined component'
+  name: Unknown solution
+- preferred_term: Yeast Extract Solution
+  composition: []
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  name: Unknown solution
+merge_fingerprint: 23e4c1eabb0a9f917a000c359695900a0926e46fe524477dbad2aec77580f184
 merged_from:
-- TOGO_M2578_Spiroplasma_Medium
+- spiroplasma_medium

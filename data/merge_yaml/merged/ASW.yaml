@@ -1,6 +1,7 @@
-name: ASW
+id: CultureMech:000360
+name: asw
 original_name: ASW
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.6-7.8
@@ -15,6 +16,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:35920
+    label: ''
 - preferred_term: NaNO3
   term:
     id: CHEBI:59148
@@ -22,6 +26,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -29,6 +36,9 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -36,6 +46,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -43,6 +56,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -50,10 +66,16 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Cyanocobalamine
   concentration:
     value: '0.004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001039
+    label: Cyanocobalamine
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -61,6 +83,9 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Inositol
   term:
     id: CHEBI:24848
@@ -68,6 +93,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000421
+    label: Inositol
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -75,6 +103,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -82,6 +113,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Thymine
   term:
     id: CHEBI:17821
@@ -89,6 +123,9 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000503
+    label: Thymine
 - preferred_term: Soil
   concentration:
     value: variable
@@ -138,6 +175,18 @@ curation_history:
   date: '2026-02-03T11:20:17.094606'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
-merge_fingerprint: aec5a1e496d08aa2f4d7e89825996c38865ca27d25430b6f4705e6d05ce0da0e
+- timestamp: '2026-03-13T06:18:54.746603Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000360'
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.750476+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ASW" to "asw" for consistent matching
+merge_fingerprint: 0515f790cbcfb713d6a98f7152ad34418ed765a3dafed8b2dc3542ce393f5c27
 merged_from:
-- CCAP_C4_ASW
+- asw

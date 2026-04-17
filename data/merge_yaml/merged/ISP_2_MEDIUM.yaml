@@ -1,8 +1,9 @@
-name: ISP 2 MEDIUM
+id: CultureMech:002169
+name: isp_2_medium
 original_name: ISP 2 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 987
@@ -26,6 +27,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000243
+    label: Dextrose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -33,6 +37,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -44,57 +51,67 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 987'
-- timestamp: '2026-02-19T08:26:58.032964+00:00'
+- timestamp: '2026-03-13T06:19:10.940661Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002169'
+- timestamp: '2026-03-17T06:30:15.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:23.673330+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ISP 2 MEDIUM" to "isp_2_medium" for consistent matching
+- timestamp: '2026-04-17T06:30:07.317127+00:00'
   curator: recipe-merger
   action: Merged 9 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_987_ISP_2_MEDIUM, KOMODO_987-15665_MEDIUM_987_MODIFIED_FOR_DSM_15665,
-    KOMODO_987-41839_MEDIUM_987_MODIFIED_FOR_DSM_41839, KOMODO_987-44928_MEDIUM_987_MODIFIED_FOR_DSM_44928,
-    KOMODO_987-45080_MEDIUM_987_MODIFIED_FOR_DSM_45080, KOMODO_987-45096_MEDIUM_987_MODIFIED_FOR_DSM_45096,
-    KOMODO_987-45452_MEDIUM_987_MODIFIED_FOR_DSM_45452, KOMODO_987-45783_MEDIUM_987_MODIFIED_FOR_DSM_45783,
-    KOMODO_987_ISP2_medium'
+  notes: 'Sources: isp2_medium, isp_2_medium, medium_987_modified_for_dsm_15665, medium_987_modified_for_dsm_41839,
+    medium_987_modified_for_dsm_44928, medium_987_modified_for_dsm_45080, medium_987_modified_for_dsm_45096,
+    medium_987_modified_for_dsm_45452, medium_987_modified_for_dsm_45783'
 synonyms:
-- name: MEDIUM 987 MODIFIED FOR DSM 15665
-  source: KOMODO
-  source_id: komodo.medium:987_15665
-  original_category: imported
-- name: MEDIUM 987 MODIFIED FOR DSM 41839
-  source: KOMODO
-  source_id: komodo.medium:987_41839
-  original_category: imported
-- name: MEDIUM 987 MODIFIED FOR DSM 44928
-  source: KOMODO
-  source_id: komodo.medium:987_44928
-  original_category: imported
-- name: MEDIUM 987 MODIFIED FOR DSM 45080
-  source: KOMODO
-  source_id: komodo.medium:987_45080
-  original_category: imported
-- name: MEDIUM 987 MODIFIED FOR DSM 45096
-  source: KOMODO
-  source_id: komodo.medium:987_45096
-  original_category: imported
-- name: MEDIUM 987 MODIFIED FOR DSM 45452
-  source: KOMODO
-  source_id: komodo.medium:987_45452
-  original_category: imported
-- name: MEDIUM 987 MODIFIED FOR DSM 45783
-  source: KOMODO
-  source_id: komodo.medium:987_45783
-  original_category: imported
-- name: ISP2 medium
+- name: isp2_medium
   source: KOMODO
   source_id: komodo.medium:987
-  original_category: imported
+  original_category: bacterial
+- name: medium_987_modified_for_dsm_15665
+  source: KOMODO
+  source_id: komodo.medium:987_15665
+  original_category: bacterial
+- name: medium_987_modified_for_dsm_41839
+  source: KOMODO
+  source_id: komodo.medium:987_41839
+  original_category: bacterial
+- name: medium_987_modified_for_dsm_44928
+  source: KOMODO
+  source_id: komodo.medium:987_44928
+  original_category: bacterial
+- name: medium_987_modified_for_dsm_45080
+  source: KOMODO
+  source_id: komodo.medium:987_45080
+  original_category: bacterial
+- name: medium_987_modified_for_dsm_45096
+  source: KOMODO
+  source_id: komodo.medium:987_45096
+  original_category: bacterial
+- name: medium_987_modified_for_dsm_45452
+  source: KOMODO
+  source_id: komodo.medium:987_45452
+  original_category: bacterial
+- name: medium_987_modified_for_dsm_45783
+  source: KOMODO
+  source_id: komodo.medium:987_45783
+  original_category: bacterial
 categories:
-- imported
+- bacterial
 merged_from:
-- DSMZ_987_ISP_2_MEDIUM
-- KOMODO_987-15665_MEDIUM_987_MODIFIED_FOR_DSM_15665
-- KOMODO_987-41839_MEDIUM_987_MODIFIED_FOR_DSM_41839
-- KOMODO_987-44928_MEDIUM_987_MODIFIED_FOR_DSM_44928
-- KOMODO_987-45080_MEDIUM_987_MODIFIED_FOR_DSM_45080
-- KOMODO_987-45096_MEDIUM_987_MODIFIED_FOR_DSM_45096
-- KOMODO_987-45452_MEDIUM_987_MODIFIED_FOR_DSM_45452
-- KOMODO_987-45783_MEDIUM_987_MODIFIED_FOR_DSM_45783
-- KOMODO_987_ISP2_medium
+- isp2_medium
+- isp_2_medium
+- medium_987_modified_for_dsm_15665
+- medium_987_modified_for_dsm_41839
+- medium_987_modified_for_dsm_44928
+- medium_987_modified_for_dsm_45080
+- medium_987_modified_for_dsm_45096
+- medium_987_modified_for_dsm_45452
+- medium_987_modified_for_dsm_45783
 merge_fingerprint: 92f23da652855286c1f0f1688f9ead05bb6b6551c2585ee28eb7b6a407fa9e9a

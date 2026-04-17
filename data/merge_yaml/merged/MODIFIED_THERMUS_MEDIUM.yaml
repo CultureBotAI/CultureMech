@@ -1,8 +1,9 @@
-name: MODIFIED THERMUS MEDIUM
+id: CultureMech:001038
+name: modified_thermus_medium
 original_name: MODIFIED THERMUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6-7
 media_term:
   preferred_term: DSMZ Medium 1562
@@ -27,6 +28,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -38,6 +42,20 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1562'
+- timestamp: '2026-03-13T06:19:00.643117Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001038'
+- timestamp: '2026-03-17T06:30:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:12.274403+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED THERMUS MEDIUM" to "modified_thermus_medium"
+    for consistent matching
+kg_microbe_match: mediadive.medium:12
 merge_fingerprint: a4210d2ec412b073c3163964ac9aa0f7160fde6b2fc9ff12b771b9972e95c4f4
 merged_from:
-- DSMZ_1562_MODIFIED_THERMUS_MEDIUM
+- modified_thermus_medium

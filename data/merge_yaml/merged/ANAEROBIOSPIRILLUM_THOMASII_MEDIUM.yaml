@@ -1,6 +1,7 @@
-name: ANAEROBIOSPIRILLUM THOMASII MEDIUM
+id: CultureMech:001945
+name: anaerobiospirillum_thomasii_medium
 original_name: ANAEROBIOSPIRILLUM THOMASII MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -22,6 +23,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000725
+    label: 5-Aminovaleric acid
 - preferred_term: Fildes Enrichment
   concentration:
     value: '1'
@@ -31,15 +35,12 @@ ingredients:
     id: CHEBI:30764
     label: 3-Hydroxybenzoic acid
   concentration:
-    value: '0.1'
+    value: '0.2'
     unit: G_PER_L
-- preferred_term: 3-Hydroxybenzoic acid
-  term:
-    id: CHEBI:30764
+  notes: ' [Merged 2 duplicates: 0.1, 0.1]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000662
     label: 3-Hydroxybenzoic acid
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: COOL
@@ -58,6 +59,23 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 800'
+- timestamp: '2026-03-13T03:08:43.976609Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:08.704903Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001945'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:21.175224+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROBIOSPIRILLUM THOMASII MEDIUM" to "anaerobiospirillum_thomasii_medium"
+    for consistent matching
 merge_fingerprint: 8ca22612bc50f2f0ef4269b5db05a5cb8544e45db28b35973f8773d27b6e1516
 merged_from:
-- DSMZ_800_ANAEROBIOSPIRILLUM_THOMASII_MEDIUM
+- anaerobiospirillum_thomasii_medium

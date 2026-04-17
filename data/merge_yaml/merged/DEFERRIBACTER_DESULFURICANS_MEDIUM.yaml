@@ -1,312 +1,478 @@
-name: DEFERRIBACTER DESULFURICANS MEDIUM
-original_name: DEFERRIBACTER DESULFURICANS MEDIUM
-category: imported
+id: CultureMech:009171
+name: deferribacter_desulfuricans_medium
+original_name: Deferribacter Desulfuricans Medium
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 6.5
-media_term:
-  preferred_term: DSMZ Medium 935a
-  term:
-    id: mediadive.medium:935a
-    label: DEFERRIBACTER DESULFURICANS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium935b.pdf'
 ingredients:
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
+- preferred_term: Distilled water
   concentration:
-    value: '0.326409'
+    value: '3000.0'
     unit: G_PER_L
-- preferred_term: KCl
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 3 duplicates: 1000.0, 1000.0, 1000.0]'
   term:
-    id: CHEBI:32588
-    label: KCl
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: Yeast extract
   concentration:
-    value: '0.326409'
+    value: '0.15'
     unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '26.0'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 25.0, 1.0]'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.43000000000000005'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 0.33, 0.1]'
   term:
     id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
     label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.326409'
-    unit: G_PER_L
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '0.326409'
-    unit: G_PER_L
 - preferred_term: KH2PO4
+  concentration:
+    value: '0.33'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: NH4Cl
   concentration:
-    value: '0.326409'
+    value: '0.33'
     unit: G_PER_L
-- preferred_term: NaCl
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:26710
-    label: NaCl
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: MgCl2 x 6 H2O
   concentration:
-    value: '24.728'
+    value: '0.33'
     unit: G_PER_L
-- preferred_term: KNO3
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:58242
-    label: KNO3
+    id: CHEBI:6636
+    label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2 x 6 H2O
+- preferred_term: KCl
   concentration:
-    value: '0.49456'
+    value: '0.33'
     unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Na-acetate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:32954
     label: Na-acetate
-  concentration:
-    value: '0.791296'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.49456'
-    unit: G_PER_L
-- preferred_term: Na2CO3
-  term:
-    id: CHEBI:29377
-    label: Na2CO3
-  concentration:
-    value: '0.49456'
-    unit: G_PER_L
-- preferred_term: Na2S
-  term:
-    id: CHEBI:76208
-    label: Na2S
-  concentration:
-    value: '0.296736'
-    unit: G_PER_L
-- preferred_term: Nitrilotriacetic acid
-  term:
-    id: CHEBI:44557
-    label: Nitrilotriacetic acid
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
-- preferred_term: MnSO4 x H2O
-  term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
+- preferred_term: KNO3
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:26710
-    label: NaCl
+    id: CHEBI:17632
+    label: nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
+- preferred_term: MgSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '3'
     unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 7 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4 x 2 H2O
+- preferred_term: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CoSO4 x 7 H2O
-  term:
-    id: CHEBI:53470
-    label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '0.18'
-    unit: G_PER_L
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: CuSO4 x 5 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-- preferred_term: AlK(SO4)2 x 12 H2O
-  term:
-    id: CHEBI:86465
-    label: AlK(SO4)2 x 12 H2O
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
   concentration:
     value: '0.03'
     unit: G_PER_L
-- preferred_term: Na2SeO3 x 5 H2O
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
+    id: CHEBI:34887
+    label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
+- preferred_term: ZnSO4 x 7 H2O
   concentration:
-    value: '0.0003'
+    value: '0.18'
     unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
+- preferred_term: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:48843
+    label: disodium selenite
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000315
+    label: Na2SeO3 x 5 H2O
+- preferred_term: CoSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4 x 7 H2O
+- preferred_term: AIK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:63939
+    label: sodium tungstate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
     label: Na2WO4 x 2 H2O
+- preferred_term: MnSO4 x H2O
   concentration:
-    value: '0.0004'
+    value: '0.5'
     unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75211
+    label: manganese(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: Biotin
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
     label: Biotin
+- preferred_term: p-Aminobenzoic acid
   concentration:
-    value: '0.02'
+    value: '5'
     unit: G_PER_L
-- preferred_term: Folic acid
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:27470
-    label: Folic acid
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
+- preferred_term: Thiamine-HCl
   concentration:
-    value: '0.02'
+    value: '5'
     unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine-HCl
 - preferred_term: Pyridoxine hydrochloride
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:30961
+    label: pyridoxine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
     label: Pyridoxine hydrochloride
+- preferred_term: Folic acid
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
+- preferred_term: Vitamin B12
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: Thiamine HCl
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
+    id: CHEBI:176843
+    label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:17015
+    label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
     label: Riboflavin
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
 - preferred_term: Nicotinic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:15940
+    label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
     label: Nicotinic acid
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-- preferred_term: Calcium D-(+)-pantothenate
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
 - preferred_term: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:16494
     label: (DL)-alpha-Lipoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: (DL)-alpha-Lipoic acid
+- preferred_term: Calcium D-(+)-pantothenate
   concentration:
-    value: '0.05'
+    value: '5'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, vitamins and sulfide), then
-    sparge medium with  80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it
-    anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials to 30% of their volume and autoclave. Add vitamins and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas. Vitamins should
-    be sterilized by filtration. Add carbonate from a sterile anoxic stock solution
-    prepared under 80% N2 and 20% CO2 gas atmosphere. The pH of the complete medium
-    should be 6.5.
-- step_number: 2
-  action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  notes: 'Role: Vitamin; Properties: Defined component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M2602
+  term:
+    id: TOGO:M2602
+    label: Deferribacter Desulfuricans Medium
+notes: 'Source: https://togomedium.org/medium/M2602
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium935b.pdf'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:12.820286Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 935a'
-- timestamp: '2026-02-06T05:10:41.555886Z'
+- timestamp: '2026-01-27T06:35:56.838990Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2602'
+- timestamp: '2026-01-28T19:48:37.538717Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.841623'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH solution; Added default
+    concentration for ingredient: N2'
+- timestamp: '2026-02-06T05:10:48.795746Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
-- timestamp: '2026-02-19T08:26:57.202512+00:00'
-  curator: recipe-merger
-  action: Merged 4 duplicate recipes into canonical record
-  notes: 'Sources: DSMZ_935a_DEFERRIBACTER_DESULFURICANS_MEDIUM, KOMODO_935-14783_MEDIUM_935_MODIFIED_FOR_DSM_14783,
-    KOMODO_935-1_For_DSM_14813, KOMODO_935_DEFERRIBACTER_medium'
-synonyms:
-- name: MEDIUM 935 MODIFIED FOR DSM 14783
-  source: KOMODO
-  source_id: komodo.medium:935_14783
-  original_category: imported
-- name: For DSM 14813
-  source: KOMODO
-  source_id: komodo.medium:935.1
-  original_category: imported
-- name: DEFERRIBACTER medium
-  source: KOMODO
-  source_id: komodo.medium:935
-  original_category: imported
-categories:
-- imported
+- timestamp: '2026-03-09T08:05:02.650416+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:34.538029Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:03.562106Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009171'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:56.793630'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.291660+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Deferribacter Desulfuricans Medium" to "deferribacter_desulfuricans_medium"
+    for consistent matching
+solutions:
+- preferred_term: Modified Wolin's mineral solution
+  term:
+    id: mediadive.solution:241
+    label: Modified Wolin's mineral solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_241_Modified_Wolin_s_mineral_solution.yaml for composition
+  name: Unknown solution
+- preferred_term: Wolin's vitamin solution
+  term:
+    id: mediadive.solution:242
+    label: Wolin's vitamin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_242_Wolin_s_vitamin_solution.yaml for composition
+  name: Unknown solution
+- preferred_term: KOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  name: Unknown solution
+merge_fingerprint: 01ee66e54b99d79ecc16d1da002b07c58dea6590f310640f25d316af342239ea
 merged_from:
-- DSMZ_935a_DEFERRIBACTER_DESULFURICANS_MEDIUM
-- KOMODO_935-14783_MEDIUM_935_MODIFIED_FOR_DSM_14783
-- KOMODO_935-1_For_DSM_14813
-- KOMODO_935_DEFERRIBACTER_medium
-merge_fingerprint: 5d40a3bcd51d1098f775528804ea7e0b06e908b89bf8fd346f1f52908ee73f53
+- TOGO_M2602_Deferribacter_Desulfuricans_Medium
