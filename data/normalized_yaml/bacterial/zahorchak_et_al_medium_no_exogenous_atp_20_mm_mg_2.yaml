@@ -10,6 +10,9 @@ ingredients:
     value: '81.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -136,6 +139,9 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: L-Valine
   term:
     id: CHEBI:16414
@@ -184,6 +190,9 @@ ingredients:
   concentration:
     value: '4.5'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16977
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '20.0'
@@ -198,6 +207,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -236,6 +248,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:30812
+    label: ''
 - preferred_term: Potassium Gluconate
   concentration:
     value: '10.0'

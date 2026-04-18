@@ -11,6 +11,9 @@ ingredients:
     value: '13.5934'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -36,6 +39,9 @@ ingredients:
   concentration:
     value: '0.302682'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17295
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.049556'
@@ -47,6 +53,9 @@ ingredients:
   concentration:
     value: '80.3673'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00247985'
@@ -58,6 +67,9 @@ ingredients:
   concentration:
     value: '44.0898'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -99,6 +111,9 @@ ingredients:
   concentration:
     value: '0.0025222'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenate
   concentration:
     value: '0.00248756'

@@ -222,6 +222,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  term:
+    id: CHEBI:15940
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:

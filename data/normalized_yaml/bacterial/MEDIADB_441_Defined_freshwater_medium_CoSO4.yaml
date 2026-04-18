@@ -28,6 +28,9 @@ ingredients:
     value: '4.531e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -65,11 +68,17 @@ ingredients:
     value: '0.0004061'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Lipoate
   concentration:
     value: '0.0002423'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lipoate'
+  term:
+    id: CHEBI:16494
+    label: ''
 - preferred_term: p-Hydroxybenzyl alcohol
   concentration:
     value: '0.5'
@@ -213,6 +222,9 @@ ingredients:
   concentration:
     value: '0.006494'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -227,6 +239,9 @@ ingredients:
   concentration:
     value: '0.003597'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599

@@ -10,14 +10,23 @@ ingredients:
     value: '0.6797'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Alanine
   concentration:
     value: '1.1224'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16977
+    label: ''
 - preferred_term: Phenylalanine
   concentration:
     value: '0.6054'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17295
+    label: ''
 - preferred_term: Menadione
   term:
     id: CHEBI:28869
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '1.1481'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Aspartate
   concentration:
     value: '0.7513'
@@ -68,6 +80,9 @@ ingredients:
   concentration:
     value: '7.3483'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599

@@ -65,10 +65,16 @@ ingredients:
     value: '9.5'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '57.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105

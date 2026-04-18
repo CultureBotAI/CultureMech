@@ -31,6 +31,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Tryptone
   concentration:
     value: '2'

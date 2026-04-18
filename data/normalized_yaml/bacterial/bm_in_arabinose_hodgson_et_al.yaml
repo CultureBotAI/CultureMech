@@ -31,6 +31,9 @@ ingredients:
   concentration:
     value: '0.015'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -45,6 +48,9 @@ ingredients:
   concentration:
     value: '0.00359648'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176

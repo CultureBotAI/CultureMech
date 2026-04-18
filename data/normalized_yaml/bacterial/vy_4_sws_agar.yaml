@@ -43,6 +43,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001039
     label: Cyanocobalamine
+  term:
+    id: CHEBI:17439
+    label: ''
 - preferred_term: Ferric citrate
   term:
     id: CHEBI:144421

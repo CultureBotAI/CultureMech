@@ -110,6 +110,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:28869
+    label: ''
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236

@@ -147,6 +147,9 @@ ingredients:
   concentration:
     value: '0.0023'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.0018'

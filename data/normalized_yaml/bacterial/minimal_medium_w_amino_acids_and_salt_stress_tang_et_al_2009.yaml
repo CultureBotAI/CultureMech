@@ -10,6 +10,9 @@ ingredients:
     value: '0.025'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -60,6 +63,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16977
+    label: ''
 - preferred_term: DL-Tyrosine
   concentration:
     value: '0.025'
@@ -71,6 +77,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17295
+    label: ''
 - preferred_term: Arginine
   term:
     id: CHEBI:29016
@@ -115,6 +124,9 @@ ingredients:
   concentration:
     value: '4.4'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0017986'
@@ -130,6 +142,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: Proline
   term:
     id: CHEBI:26271
@@ -144,10 +159,16 @@ ingredients:
   concentration:
     value: '0.025'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: Leucine
   concentration:
     value: '0.025'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15603
+    label: ''
 - preferred_term: Lysine
   concentration:
     value: '0.025'
@@ -197,10 +218,16 @@ ingredients:
   concentration:
     value: '0.000117316'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenite
   concentration:
     value: '0.000228102'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: Zinc Chloride
   concentration:
     value: '0.0146718'
@@ -212,6 +239,9 @@ ingredients:
   concentration:
     value: '0.0502992'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:30812
+    label: ''
 - preferred_term: Sodium tungstate
   concentration:
     value: '0.000242527'

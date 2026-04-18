@@ -126,6 +126,9 @@ ingredients:
   concentration:
     value: '0.000496032'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833

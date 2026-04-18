@@ -261,6 +261,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenate
   concentration:
     value: '20'

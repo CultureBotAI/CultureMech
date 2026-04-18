@@ -9,10 +9,16 @@ ingredients:
   concentration:
     value: '0.8536'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '8.441'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '3.163'
@@ -28,6 +34,9 @@ ingredients:
     value: '1.767'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -43,10 +52,16 @@ ingredients:
     value: '2.266e-06'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: Leucine
   concentration:
     value: '1.22'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15603
+    label: ''
 - preferred_term: Urea
   term:
     id: CHEBI:16199
@@ -88,6 +103,9 @@ ingredients:
   concentration:
     value: '0.4574'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: Histidine
   term:
     id: CHEBI:27570
@@ -140,10 +158,16 @@ ingredients:
   concentration:
     value: '2.133'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16977
+    label: ''
 - preferred_term: Phenylalanine
   concentration:
     value: '0.3632'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17295
+    label: ''
 - preferred_term: Arginine
   term:
     id: CHEBI:29016
@@ -158,6 +182,9 @@ ingredients:
   concentration:
     value: '0.0004463'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.0284'

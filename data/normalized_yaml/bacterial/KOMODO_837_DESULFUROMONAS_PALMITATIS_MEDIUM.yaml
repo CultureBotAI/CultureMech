@@ -80,10 +80,16 @@ ingredients:
   concentration:
     value: '1.56322'
     unit: G_PER_L
+  term:
+    id: CHEBI:32138
+    label: ''
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000574713'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -298,6 +304,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439

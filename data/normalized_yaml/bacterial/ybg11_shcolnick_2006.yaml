@@ -9,11 +9,17 @@ ingredients:
   concentration:
     value: '1.75'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Citrate
   concentration:
     value: '0.03'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118

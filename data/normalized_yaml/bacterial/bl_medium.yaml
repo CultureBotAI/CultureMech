@@ -75,6 +75,9 @@ ingredients:
     value: '21.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Pantothenate
   term:
     id: CHEBI:16454
@@ -161,10 +164,16 @@ ingredients:
   concentration:
     value: '1.3'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Molybdic acid ammonium salt tetrahydrate
   concentration:
     value: 3e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: 3e-05
@@ -230,6 +239,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -262,6 +274,9 @@ ingredients:
     value: '0.0023'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: Biotin
   term:
     id: CHEBI:15956

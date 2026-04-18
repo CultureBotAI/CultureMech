@@ -14,6 +14,9 @@ ingredients:
     value: '8.83572'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -232,6 +235,9 @@ ingredients:
   concentration:
     value: '20.0918'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -256,6 +262,9 @@ ingredients:
   concentration:
     value: '19.8404'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Hemin
   term:
     id: CHEBI:50385

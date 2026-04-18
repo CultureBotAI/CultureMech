@@ -190,6 +190,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Pyridoxal hydrochloride
   term:
     id: CHEBI:131529
@@ -238,6 +241,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001039
     label: Cyanocobalamine
+  term:
+    id: CHEBI:17439
+    label: ''
 - preferred_term: Double distilled water
   term:
     id: CHEBI:15377

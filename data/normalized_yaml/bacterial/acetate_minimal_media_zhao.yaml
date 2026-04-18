@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '48.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00248'
@@ -58,6 +61,9 @@ ingredients:
   concentration:
     value: '22.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -93,6 +99,9 @@ ingredients:
   concentration:
     value: '0.00252'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.06165'

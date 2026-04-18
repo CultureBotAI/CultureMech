@@ -32,6 +32,9 @@ ingredients:
     value: '0.0004061'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -47,6 +50,9 @@ ingredients:
     value: '4.531e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -63,6 +69,9 @@ ingredients:
     value: '0.0002423'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lipoate'
+  term:
+    id: CHEBI:16494
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -108,6 +117,9 @@ ingredients:
   concentration:
     value: '0.8038'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118

@@ -69,6 +69,9 @@ ingredients:
   concentration:
     value: '0.000499002'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -273,6 +276,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439

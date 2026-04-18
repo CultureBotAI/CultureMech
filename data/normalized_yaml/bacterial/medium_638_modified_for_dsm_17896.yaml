@@ -68,6 +68,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: CHEBI:32138
+    label: ''
 - preferred_term: (NH4)2 citrate
   concentration:
     value: '2'

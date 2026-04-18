@@ -9,6 +9,9 @@ ingredients:
   concentration:
     value: '28.71'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Lactose
   term:
     id: CHEBI:17716
@@ -34,10 +37,16 @@ ingredients:
   concentration:
     value: '0.7194'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.136'
@@ -79,10 +88,16 @@ ingredients:
   concentration:
     value: '0.02933'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Molybdic acid ammonium salt tetrahydrate
   concentration:
     value: '0.004045'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Sodium Glutamate
   concentration:
     value: '66.8'

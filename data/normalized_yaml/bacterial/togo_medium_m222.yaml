@@ -113,6 +113,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
@@ -197,6 +200,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: AlK(SO4)2
   concentration:
     value: '0.01'

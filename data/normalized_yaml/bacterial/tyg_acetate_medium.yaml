@@ -71,6 +71,9 @@ ingredients:
   concentration:
     value: '0.18981'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795

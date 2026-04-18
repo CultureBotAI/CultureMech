@@ -97,6 +97,9 @@ ingredients:
   concentration:
     value: '2.72'
     unit: G_PER_L
+  term:
+    id: CHEBI:32138
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -109,6 +112,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Maltose
   term:
     id: CHEBI:17306

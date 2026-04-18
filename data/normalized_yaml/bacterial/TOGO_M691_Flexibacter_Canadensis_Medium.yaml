@@ -40,6 +40,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: ''
 - preferred_term: Vitamin B12
   concentration:
     value: '1'

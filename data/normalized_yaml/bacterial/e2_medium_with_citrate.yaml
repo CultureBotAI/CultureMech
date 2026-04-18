@@ -10,6 +10,9 @@ ingredients:
     value: '13.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.01'
@@ -31,14 +34,23 @@ ingredients:
   concentration:
     value: '43.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Cobaltous sulfate
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '27.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -53,6 +65,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -67,6 +82,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium ammonium phosphate
   concentration:
     value: '0.47'

@@ -102,12 +102,18 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:49105
+    label: ''
 - preferred_term: Pyridoxine・HCl
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:131531
+    label: ''
 - preferred_term: Folic acid
   concentration:
     value: '2'

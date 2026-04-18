@@ -19,10 +19,16 @@ ingredients:
   concentration:
     value: '0.0073'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '0.0057'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599

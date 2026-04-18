@@ -37,6 +37,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -181,6 +184,9 @@ ingredients:
   concentration:
     value: '0.00925'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836

@@ -44,6 +44,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Urea
   term:
     id: CHEBI:16199

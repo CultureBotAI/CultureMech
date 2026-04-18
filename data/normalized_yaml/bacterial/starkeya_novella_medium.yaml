@@ -141,6 +141,9 @@ ingredients:
   concentration:
     value: '1.1'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440

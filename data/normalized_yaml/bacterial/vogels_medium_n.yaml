@@ -42,6 +42,9 @@ ingredients:
     value: '660.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Potassium
   concentration:
     value: '6390.0'

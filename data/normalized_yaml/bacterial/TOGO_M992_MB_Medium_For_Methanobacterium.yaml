@@ -202,6 +202,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:

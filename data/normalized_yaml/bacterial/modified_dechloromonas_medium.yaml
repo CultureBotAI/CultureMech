@@ -46,6 +46,9 @@ ingredients:
   concentration:
     value: '3.02222'
     unit: G_PER_L
+  term:
+    id: CHEBI:32138
+    label: ''
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -301,6 +304,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  term:
+    id: CHEBI:17154
+    label: ''
 - preferred_term: alpha-lipoic acid
   term:
     id: CHEBI:16494

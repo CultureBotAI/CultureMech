@@ -289,6 +289,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Choline chloride
   term:
     id: CHEBI:133341
@@ -934,6 +937,9 @@ ingredients:
   concentration:
     value: '12.4'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Fe SO4 x 7 H2O
   term:
     id: CHEBI:75836

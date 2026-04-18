@@ -51,6 +51,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Bacto agar (BD-Difco)
   concentration:
     value: '15'
@@ -162,6 +165,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86360
+    label: ''
 media_term:
   preferred_term: TOGO Medium M6
   term:

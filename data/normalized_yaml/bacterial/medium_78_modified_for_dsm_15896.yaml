@@ -116,6 +116,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  term:
+    id: CHEBI:17154
+    label: ''
 - preferred_term: alpha-lipoic acid
   term:
     id: CHEBI:16494
@@ -224,6 +227,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:28869
+    label: ''
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236

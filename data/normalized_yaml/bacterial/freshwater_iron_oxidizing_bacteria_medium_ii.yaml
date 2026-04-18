@@ -109,6 +109,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: NaCl
   term:
     id: CHEBI:26710

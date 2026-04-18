@@ -67,6 +67,9 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426

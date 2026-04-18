@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '80.3673'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Asparagine
   term:
     id: CHEBI:22653
@@ -33,6 +36,9 @@ ingredients:
   concentration:
     value: '44.0898'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599

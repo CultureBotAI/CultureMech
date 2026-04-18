@@ -56,6 +56,9 @@ ingredients:
   concentration:
     value: '0.0287'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Tromethamine
   concentration:
     value: '8.25'
@@ -106,6 +109,9 @@ ingredients:
   concentration:
     value: '8.93e-06'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -131,6 +137,9 @@ ingredients:
     value: '0.000812'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -172,6 +181,9 @@ ingredients:
     value: '4.53e-06'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: Thymine
   term:
     id: CHEBI:17821

@@ -54,6 +54,9 @@ ingredients:
   concentration:
     value: '0.000490196'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Methanol
   term:
     id: CHEBI:17790

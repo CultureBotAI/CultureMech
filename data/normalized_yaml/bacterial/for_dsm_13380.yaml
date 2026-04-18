@@ -67,6 +67,9 @@ ingredients:
   concentration:
     value: '0.00049505'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Trypticase peptone
   concentration:
     value: '0.49505'

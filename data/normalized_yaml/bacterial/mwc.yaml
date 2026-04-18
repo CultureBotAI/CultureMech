@@ -165,6 +165,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001039
     label: Cyanocobalamine
+  term:
+    id: CHEBI:17439
+    label: ''
 - preferred_term: Biotin
   term:
     id: CHEBI:15956

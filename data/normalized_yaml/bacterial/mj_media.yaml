@@ -89,6 +89,9 @@ ingredients:
   concentration:
     value: '16.6475'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Pyridoxamine HCl
   concentration:
     value: '0.00977'
@@ -107,10 +110,16 @@ ingredients:
   concentration:
     value: '11.0224'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.00481'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258

@@ -243,6 +243,9 @@ ingredients:
   concentration:
     value: '0.01156'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '1.085'
@@ -254,6 +257,9 @@ ingredients:
   concentration:
     value: '0.8038'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

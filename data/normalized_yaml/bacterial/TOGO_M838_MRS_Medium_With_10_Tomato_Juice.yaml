@@ -27,6 +27,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: MRS broth (BD-Difco)
   concentration:
     value: '55'

@@ -112,6 +112,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: Rumen fluid, clarified (see below)
   concentration:
     value: '300'

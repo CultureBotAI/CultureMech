@@ -9,6 +9,9 @@ ingredients:
   concentration:
     value: '7.348'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: L-Arginine
   term:
     id: CHEBI:16467
@@ -24,6 +27,9 @@ ingredients:
   concentration:
     value: '5.741'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -48,6 +54,9 @@ ingredients:
   concentration:
     value: '0.007194'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -96,6 +105,9 @@ ingredients:
   concentration:
     value: '3.049'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: Spermine phosphate
   concentration:
     value: '0.1004'
@@ -125,6 +137,9 @@ ingredients:
   concentration:
     value: '3.414'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: L-Histidine
   term:
     id: CHEBI:15971

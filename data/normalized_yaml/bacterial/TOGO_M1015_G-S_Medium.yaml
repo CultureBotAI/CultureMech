@@ -98,6 +98,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component [Merged
     2 duplicates: 3.0, 0.03]'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:

@@ -151,6 +151,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000729
     label: p--Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: ''
 - preferred_term: Pyridoxine·HCl
   concentration:
     value: '25'

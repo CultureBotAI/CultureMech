@@ -218,6 +218,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Pyridoxamine hydrochloride
   term:
     id: CHEBI:131531

@@ -67,6 +67,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: Diammonium citrate
   concentration:
     value: '2'

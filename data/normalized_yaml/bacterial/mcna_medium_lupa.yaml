@@ -131,6 +131,9 @@ ingredients:
   concentration:
     value: '0.8038'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium sulfide
   concentration:
     value: '2.073'
@@ -245,6 +248,9 @@ ingredients:
   concentration:
     value: '0.01156'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599

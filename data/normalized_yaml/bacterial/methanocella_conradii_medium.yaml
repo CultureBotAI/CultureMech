@@ -80,6 +80,9 @@ ingredients:
   concentration:
     value: '0.000498008'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -348,6 +351,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
     id: CHEBI:16494

@@ -63,6 +63,9 @@ ingredients:
   concentration:
     value: '0.898939'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710

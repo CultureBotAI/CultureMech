@@ -49,6 +49,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: Diammonium citrate
   concentration:
     value: '3.5'
@@ -95,6 +98,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: Casein peptone, tryptic digest
   concentration:
     value: '10'

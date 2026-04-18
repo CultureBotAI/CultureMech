@@ -122,6 +122,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Simple component, Defined component, Organic compound'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:

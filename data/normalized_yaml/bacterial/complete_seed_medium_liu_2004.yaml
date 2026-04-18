@@ -42,6 +42,9 @@ ingredients:
     value: '0.03249'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -76,6 +79,9 @@ ingredients:
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206

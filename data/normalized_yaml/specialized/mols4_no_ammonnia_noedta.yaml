@@ -121,6 +121,9 @@ ingredients:
     value: '0.06'
     unit: MICROMOLAR
   notes: 'CAS: 10125-13-0; MW: 170.48'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.21'

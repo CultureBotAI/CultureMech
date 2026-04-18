@@ -27,10 +27,16 @@ ingredients:
   concentration:
     value: '8.8'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -55,6 +61,9 @@ ingredients:
   concentration:
     value: '0.033'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

@@ -10,6 +10,9 @@ ingredients:
     value: '5.20497'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: L-Threonine
   term:
     id: CHEBI:16857
@@ -25,6 +28,9 @@ ingredients:
   concentration:
     value: '28.0899'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '9.92605'

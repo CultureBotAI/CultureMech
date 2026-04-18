@@ -100,6 +100,9 @@ ingredients:
     value: '0.50000594059'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 5.94059e-06, 0.5]'
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
   term:
     id: CHEBI:86149

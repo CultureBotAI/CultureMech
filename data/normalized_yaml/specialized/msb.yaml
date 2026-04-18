@@ -59,6 +59,9 @@ ingredients:
     value: '1.85E-04'
     unit: G_PER_L
   notes: 'CAS: 12027-67-7; MW: 1235.86'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Iron (II) sulfate heptahydrate
   concentration:
     value: '1.98E-03'

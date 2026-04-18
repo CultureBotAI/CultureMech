@@ -252,6 +252,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Pyridoxine hydrochloride
   concentration:
     value: '10'

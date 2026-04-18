@@ -67,6 +67,9 @@ ingredients:
   concentration:
     value: 3e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -121,6 +124,9 @@ ingredients:
     value: '8.12e-06'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Pyridoxal HCl
   concentration:
     value: '4.91e-06'
@@ -150,10 +156,16 @@ ingredients:
   concentration:
     value: '1.23'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '0.77'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: L-Arginine
   term:
     id: CHEBI:16467
@@ -329,6 +341,9 @@ ingredients:
     value: '0.78'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Glycine
   term:
     id: CHEBI:15428

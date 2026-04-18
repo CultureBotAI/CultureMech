@@ -101,6 +101,9 @@ ingredients:
     value: '1.40E-03'
     unit: G_PER_L
   notes: 'CAS: 12027-67-7; MW: 1235.86'
+  term:
+    id: CHEBI:91249
+    label: ''
 description: Used for growing Xanthomonas
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

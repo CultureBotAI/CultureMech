@@ -116,6 +116,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.5'

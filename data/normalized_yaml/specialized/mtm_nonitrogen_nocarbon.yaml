@@ -69,6 +69,9 @@ ingredients:
     value: '0.03'
     unit: MG_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48; From MME Trace Minerals'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '0.05'

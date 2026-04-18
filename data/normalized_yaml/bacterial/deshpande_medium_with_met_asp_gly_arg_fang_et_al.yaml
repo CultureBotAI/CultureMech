@@ -53,10 +53,16 @@ ingredients:
   concentration:
     value: '80.3673'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '44.0898'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '8.40583e-05'
@@ -107,6 +113,9 @@ ingredients:
   concentration:
     value: '3.23661e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

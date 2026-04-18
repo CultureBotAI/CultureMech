@@ -224,6 +224,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: (NH4)2Ni(SO4)2・6H2O
   concentration:
     value: '2.8'

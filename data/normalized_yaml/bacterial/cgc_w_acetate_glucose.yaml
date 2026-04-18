@@ -60,10 +60,16 @@ ingredients:
   concentration:
     value: '2.87'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '3.67'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -88,6 +94,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176

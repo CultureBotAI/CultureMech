@@ -146,6 +146,9 @@ ingredients:
   concentration:
     value: '0.00925'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Na-EDTA
   term:
     id: CHEBI:64734

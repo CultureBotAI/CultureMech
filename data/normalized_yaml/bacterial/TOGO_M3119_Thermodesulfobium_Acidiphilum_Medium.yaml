@@ -323,6 +323,9 @@ ingredients:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component'
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Distilled water 100.00 ml
   concentration:
     value: '100'

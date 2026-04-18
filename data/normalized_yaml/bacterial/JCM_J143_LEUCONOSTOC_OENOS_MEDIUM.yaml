@@ -55,6 +55,9 @@ ingredients:
   concentration:
     value: '0.04995'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: Diammonium Citrate
   term:
     id: CHEBI:63076

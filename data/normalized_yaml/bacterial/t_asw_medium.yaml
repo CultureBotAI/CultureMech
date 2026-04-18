@@ -99,6 +99,9 @@ ingredients:
     value: '200'
     unit: G_PER_L
   notes: ' (0.1 M, pH 7.5)'
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -143,6 +146,9 @@ ingredients:
   concentration:
     value: '1.1'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440

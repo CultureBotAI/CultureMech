@@ -13,6 +13,9 @@ ingredients:
   concentration:
     value: '0.0004045'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: D-Fructose
   term:
     id: CHEBI:15824
@@ -62,6 +65,9 @@ ingredients:
   concentration:
     value: '0.1798'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -77,10 +83,16 @@ ingredients:
     value: '4.164'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '49.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium phosphate
   concentration:
     value: '30.29'

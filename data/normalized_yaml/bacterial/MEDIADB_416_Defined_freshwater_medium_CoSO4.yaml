@@ -27,6 +27,9 @@ ingredients:
     value: '0.0004061'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '1.341'
@@ -52,6 +55,9 @@ ingredients:
     value: '0.0002423'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lipoate'
+  term:
+    id: CHEBI:16494
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -136,6 +142,9 @@ ingredients:
   concentration:
     value: '0.003597'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -202,6 +211,9 @@ ingredients:
     value: '4.531e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -237,6 +249,9 @@ ingredients:
   concentration:
     value: '0.006494'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.0004863'

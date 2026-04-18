@@ -115,6 +115,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Solution, Defined component'
+  term:
+    id: CHEBI:28869
+    label: ''
 - preferred_term: 95% ethanol
   notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
     Simple component'

@@ -38,10 +38,16 @@ ingredients:
   concentration:
     value: '49.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Leucine
   concentration:
     value: '0.38'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15603
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -66,6 +72,9 @@ ingredients:
   concentration:
     value: '22.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599

@@ -181,6 +181,9 @@ ingredients:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Casitone
   concentration:
     value: '1'

@@ -99,6 +99,9 @@ ingredients:
     value: '3.92e-05'
     unit: G_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48; From UW concentrated base no sulfur'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '2.5e-05'

@@ -10,6 +10,9 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Solution'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:

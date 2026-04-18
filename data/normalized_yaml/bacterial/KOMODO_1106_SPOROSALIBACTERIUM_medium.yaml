@@ -65,6 +65,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345

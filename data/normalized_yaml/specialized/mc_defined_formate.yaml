@@ -104,6 +104,9 @@ ingredients:
     value: '0.0001'
     unit: G_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48; From Mc_trace_minerals_SO4free'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: aluminum chloride hydrate
   concentration:
     value: '0.0001'
@@ -159,6 +162,9 @@ ingredients:
     value: '0.001'
     unit: G_PER_L
   notes: 'CAS: 62758-13-8; MW: 251.17'
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: sodium formate
   concentration:
     value: '13.60'

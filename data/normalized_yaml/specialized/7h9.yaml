@@ -101,6 +101,9 @@ ingredients:
     value: '1.00E-03'
     unit: G_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: bovine serum albumin
   concentration:
     value: '5.00E+00'

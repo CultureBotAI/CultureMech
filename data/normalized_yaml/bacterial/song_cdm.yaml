@@ -53,6 +53,9 @@ ingredients:
   concentration:
     value: '55.7'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -107,6 +110,9 @@ ingredients:
   concentration:
     value: '0.329'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -142,6 +148,9 @@ ingredients:
   concentration:
     value: '0.000405'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

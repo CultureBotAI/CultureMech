@@ -80,6 +80,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Sodium succinate
   term:
     id: CHEBI:63675

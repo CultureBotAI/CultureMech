@@ -90,6 +90,9 @@ ingredients:
     value: '0.68'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: Polypeptone peptone (BD-BBL)
   concentration:
     value: '5'

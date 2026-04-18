@@ -135,6 +135,9 @@ ingredients:
   concentration:
     value: '0.000488281'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036

@@ -13,6 +13,9 @@ ingredients:
   concentration:
     value: '18.6'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -61,6 +67,9 @@ ingredients:
   concentration:
     value: '0.043'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176

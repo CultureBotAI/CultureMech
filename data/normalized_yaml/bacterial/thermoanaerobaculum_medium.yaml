@@ -90,6 +90,9 @@ ingredients:
   concentration:
     value: 5e-05
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: HCl
   term:
     id: CHEBI:17883

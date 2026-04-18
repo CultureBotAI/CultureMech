@@ -80,6 +80,9 @@ ingredients:
     value: '500'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: fatty acid mixture
   concentration:
     value: '1'

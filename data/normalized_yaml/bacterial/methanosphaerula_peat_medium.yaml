@@ -46,6 +46,9 @@ ingredients:
   concentration:
     value: '7.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Nitrilotriacetate
   term:
     id: CHEBI:25548
@@ -291,6 +294,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439

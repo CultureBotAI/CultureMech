@@ -41,6 +41,9 @@ ingredients:
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: DL-Serine
   concentration:
     value: '130.9'
@@ -50,6 +53,9 @@ ingredients:
     value: '0.09747'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105

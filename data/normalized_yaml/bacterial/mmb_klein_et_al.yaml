@@ -76,6 +76,9 @@ ingredients:
   concentration:
     value: '25.719'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -100,6 +103,9 @@ ingredients:
   concentration:
     value: '15.4994'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Hemin
   term:
     id: CHEBI:50385

@@ -46,6 +46,9 @@ ingredients:
     value: '0.0004061'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -61,6 +64,9 @@ ingredients:
     value: '4.531e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -77,6 +83,9 @@ ingredients:
     value: '0.0002423'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lipoate'
+  term:
+    id: CHEBI:16494
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -104,6 +113,9 @@ ingredients:
   concentration:
     value: '0.003597'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -178,6 +190,9 @@ ingredients:
   concentration:
     value: '0.006494'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345

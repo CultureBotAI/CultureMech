@@ -10,6 +10,9 @@ ingredients:
     value: '8.8485'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: beta-D-Glucose
   concentration:
     value: '27.753'
@@ -50,6 +53,9 @@ ingredients:
   concentration:
     value: '97.7323'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -75,6 +81,9 @@ ingredients:
   concentration:
     value: '0.008799'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Ammonium phosphate
   concentration:
     value: '30.287'

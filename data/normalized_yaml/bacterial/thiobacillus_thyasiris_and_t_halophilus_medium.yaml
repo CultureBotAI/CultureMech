@@ -218,6 +218,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836

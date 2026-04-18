@@ -26,6 +26,9 @@ ingredients:
   concentration:
     value: '11.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -40,6 +43,9 @@ ingredients:
   concentration:
     value: '7.3'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -74,6 +80,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -88,6 +97,9 @@ ingredients:
   concentration:
     value: '8.4e-06'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: 4e-06

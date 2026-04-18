@@ -76,6 +76,9 @@ ingredients:
     value: '0.02379'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -117,6 +120,9 @@ ingredients:
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

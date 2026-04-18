@@ -78,6 +78,9 @@ ingredients:
   concentration:
     value: '5.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '13.0'

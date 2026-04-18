@@ -21,11 +21,17 @@ ingredients:
     value: '0.6797'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Nicotinate
   concentration:
     value: '0.008123'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.9838'
@@ -76,6 +82,9 @@ ingredients:
   concentration:
     value: '42.92'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -90,6 +99,9 @@ ingredients:
   concentration:
     value: '66.13'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Threonine
   concentration:
     value: '1.931'
@@ -108,6 +120,9 @@ ingredients:
   concentration:
     value: '1.525'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: DL-methionine
   term:
     id: CHEBI:16811
@@ -122,10 +137,16 @@ ingredients:
   concentration:
     value: '2.817'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: Leucine
   concentration:
     value: '3.583'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15603
+    label: ''
 - preferred_term: Arginine
   term:
     id: CHEBI:29016

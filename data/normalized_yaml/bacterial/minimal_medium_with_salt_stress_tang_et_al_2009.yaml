@@ -39,6 +39,9 @@ ingredients:
   concentration:
     value: '4.4'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0017986'
@@ -91,10 +94,16 @@ ingredients:
   concentration:
     value: '0.000117316'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenite
   concentration:
     value: '0.000228102'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: Zinc Chloride
   concentration:
     value: '0.0146718'
@@ -106,6 +115,9 @@ ingredients:
   concentration:
     value: '0.0502992'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:30812
+    label: ''
 - preferred_term: Sodium tungstate
   concentration:
     value: '0.000242527'

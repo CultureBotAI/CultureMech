@@ -134,6 +134,9 @@ ingredients:
     value: '0.75'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:

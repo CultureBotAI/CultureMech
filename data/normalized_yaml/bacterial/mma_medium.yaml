@@ -86,6 +86,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: Fe(III)-EDTA
   term:
     id: CHEBI:30729

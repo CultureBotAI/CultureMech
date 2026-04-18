@@ -47,6 +47,9 @@ ingredients:
   concentration:
     value: '0.0039'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '11.0'

@@ -15,6 +15,9 @@ ingredients:
     value: '0.03123'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -53,6 +56,9 @@ ingredients:
   concentration:
     value: '0.2239'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118

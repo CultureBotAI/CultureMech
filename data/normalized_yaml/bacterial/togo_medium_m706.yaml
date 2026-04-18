@@ -53,6 +53,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: Sodium succinate
   concentration:
     value: '1'

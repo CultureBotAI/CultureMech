@@ -35,6 +35,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Sea water
   concentration:
     value: '750'
@@ -43,6 +46,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248

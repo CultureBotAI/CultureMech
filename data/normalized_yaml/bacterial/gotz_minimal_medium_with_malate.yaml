@@ -65,6 +65,9 @@ ingredients:
   concentration:
     value: '6.1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.01'
@@ -96,6 +99,9 @@ ingredients:
   concentration:
     value: '3.9'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -110,6 +116,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946

@@ -76,6 +76,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -102,6 +105,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: Lab--Lemco powder (Oxoid)
   concentration:
     value: '2.4'

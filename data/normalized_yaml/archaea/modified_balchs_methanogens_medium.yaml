@@ -180,6 +180,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: Copied from referenced JCM Medium 242
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470

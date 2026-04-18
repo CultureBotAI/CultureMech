@@ -110,6 +110,9 @@ ingredients:
   concentration:
     value: '0.000505561'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: KNO3
   term:
     id: CHEBI:58242

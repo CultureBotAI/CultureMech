@@ -10,6 +10,9 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Solution'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -148,16 +151,25 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000729
     label: p--Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: ''
 - preferred_term: Thiamine・HCl
   concentration:
     value: '6.7'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: ''
 - preferred_term: Pyridoxine・HCl
   concentration:
     value: '4.1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:131531
+    label: ''
 - preferred_term: Folic acid
   concentration:
     value: '8.8'

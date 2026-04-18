@@ -64,11 +64,17 @@ ingredients:
     value: '0.01212'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lipoate'
+  term:
+    id: CHEBI:16494
+    label: ''
 - preferred_term: Folate
   concentration:
     value: '0.002266'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: Adenine
   concentration:
     value: '0.074'
@@ -109,14 +115,23 @@ ingredients:
     value: '0.008123'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Valine
   concentration:
     value: '2.817'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: Leucine
   concentration:
     value: '3.659'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15603
+    label: ''
 - preferred_term: Orotate
   concentration:
     value: '0.03203'
@@ -126,6 +141,9 @@ ingredients:
   concentration:
     value: '2.694'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16977
+    label: ''
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.009725'
@@ -197,6 +215,9 @@ ingredients:
   concentration:
     value: '1.695'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17295
+    label: ''
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -211,6 +232,9 @@ ingredients:
   concentration:
     value: '0.2515'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:30812
+    label: ''
 - preferred_term: Glutamine
   concentration:
     value: '2.668'
@@ -281,6 +305,9 @@ ingredients:
   concentration:
     value: '14.31'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Lactose
   term:
     id: CHEBI:17716
@@ -307,15 +334,24 @@ ingredients:
   concentration:
     value: '22.04'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: L-Glutamate
   concentration:
     value: '2.719'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Isoleucine
   concentration:
     value: '1.677'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.3401'

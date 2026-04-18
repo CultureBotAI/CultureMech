@@ -53,6 +53,9 @@ ingredients:
   concentration:
     value: '3.18564'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -67,6 +70,9 @@ ingredients:
   concentration:
     value: '4.07785'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -91,6 +97,9 @@ ingredients:
   concentration:
     value: '0.0399165'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium Acetate
   term:
     id: CHEBI:62947

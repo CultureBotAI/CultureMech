@@ -70,6 +70,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: Copied from referenced JCM Medium 363
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377

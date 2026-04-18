@@ -60,6 +60,9 @@ ingredients:
   concentration:
     value: '0.000498504'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -284,6 +287,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439

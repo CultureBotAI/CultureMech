@@ -147,6 +147,9 @@ ingredients:
     value: '0.088'
     unit: G_PER_L
   notes: 'Properties: Simple component, Defined component, Organic compound'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: DL--Sodium malate
   concentration:
     value: '1.8'

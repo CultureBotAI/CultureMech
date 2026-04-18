@@ -74,6 +74,9 @@ ingredients:
   concentration:
     value: '34.443'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.408'
@@ -88,6 +91,9 @@ ingredients:
   concentration:
     value: '14.6965'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -122,6 +128,9 @@ ingredients:
   concentration:
     value: '0.0071929'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium nitrate
   term:
     id: CHEBI:63038

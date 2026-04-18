@@ -136,6 +136,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312

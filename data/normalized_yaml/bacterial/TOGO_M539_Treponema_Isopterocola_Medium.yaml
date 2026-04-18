@@ -154,6 +154,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000729
     label: p--Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: ''
 - preferred_term: Calcium pantothenate
   concentration:
     value: '100'
@@ -170,6 +173,9 @@ ingredients:
     value: '300'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:131531
+    label: ''
 - preferred_term: Vitamin B12
   concentration:
     value: '100'

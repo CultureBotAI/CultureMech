@@ -10,6 +10,9 @@ ingredients:
     value: '3.39836'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -236,6 +239,9 @@ ingredients:
     value: '0.00812'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -284,6 +290,9 @@ ingredients:
     value: '0.00227'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -300,10 +309,16 @@ ingredients:
     value: '0.00485'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lipoate'
+  term:
+    id: CHEBI:16494
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '5.74053'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -352,6 +367,9 @@ ingredients:
   concentration:
     value: '36.7415'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954

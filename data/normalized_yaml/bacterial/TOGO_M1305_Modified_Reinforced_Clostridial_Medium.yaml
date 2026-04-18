@@ -62,6 +62,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Beef extract
   concentration:
     value: '10'
@@ -72,6 +75,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: Tryptone
   concentration:
     value: '10'

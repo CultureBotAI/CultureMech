@@ -313,6 +313,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component'
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: 2-Mercaptoethanesulfonic acid (Coenzyme M)
   concentration:
     value: '0.08'

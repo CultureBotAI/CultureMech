@@ -354,6 +354,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component'
+  term:
+    id: CHEBI:31345
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2654
   term:

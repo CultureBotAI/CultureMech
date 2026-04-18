@@ -201,6 +201,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: Fe(NH4)2(SO4)2・6H2O
   concentration:
     value: '0.2'

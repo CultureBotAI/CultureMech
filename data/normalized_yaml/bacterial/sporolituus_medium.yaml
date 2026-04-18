@@ -75,6 +75,9 @@ ingredients:
   concentration:
     value: '0.000492611'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -300,6 +303,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439

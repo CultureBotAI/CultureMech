@@ -68,6 +68,9 @@ ingredients:
     value: '0.25'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Bacto agar (BD-Difco)
   concentration:
     value: '15'
@@ -88,6 +91,9 @@ ingredients:
     value: '0.3'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:

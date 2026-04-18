@@ -135,6 +135,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696

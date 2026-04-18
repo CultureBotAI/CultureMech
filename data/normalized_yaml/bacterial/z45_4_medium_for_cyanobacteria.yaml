@@ -105,6 +105,9 @@ ingredients:
   concentration:
     value: '0.088'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: KBr
   term:
     id: CHEBI:32030

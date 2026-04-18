@@ -40,6 +40,9 @@ ingredients:
   concentration:
     value: '220.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Nickel chloride
   concentration:
     value: '0.00021'
@@ -105,6 +108,9 @@ ingredients:
   concentration:
     value: '0.00015'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Zinc Chloride
   concentration:
     value: '0.00092'

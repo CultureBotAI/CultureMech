@@ -26,6 +26,9 @@ ingredients:
   concentration:
     value: '12.6'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -40,6 +43,9 @@ ingredients:
   concentration:
     value: '11.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -64,6 +70,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '8.41e-06'

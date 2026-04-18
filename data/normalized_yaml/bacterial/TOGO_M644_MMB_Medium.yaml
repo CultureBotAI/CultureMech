@@ -98,6 +98,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:49105
+    label: ''
 - preferred_term: Nicotinic acid
   concentration:
     value: '50'
@@ -127,6 +130,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:

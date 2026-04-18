@@ -66,6 +66,9 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '1'

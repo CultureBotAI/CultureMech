@@ -37,10 +37,16 @@ ingredients:
   concentration:
     value: '25.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '31.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -100,10 +106,16 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenite
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.003'

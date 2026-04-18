@@ -91,6 +91,9 @@ ingredients:
   concentration:
     value: '0.000560538'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Potassium phosphate buffer
   concentration:
     value: '10'
@@ -341,6 +344,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439

@@ -34,6 +34,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: Agar
   term:
     id: CHEBI:2509

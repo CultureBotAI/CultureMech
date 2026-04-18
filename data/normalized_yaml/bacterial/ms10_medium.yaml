@@ -41,6 +41,9 @@ ingredients:
     value: '0.008123'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Cysteine
   term:
     id: CHEBI:15356
@@ -105,6 +108,9 @@ ingredients:
   concentration:
     value: '66.13'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Threonine
   concentration:
     value: '1.931'
@@ -127,6 +133,9 @@ ingredients:
   concentration:
     value: '3.583'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15603
+    label: ''
 - preferred_term: Proline
   term:
     id: CHEBI:26271
@@ -141,6 +150,9 @@ ingredients:
   concentration:
     value: '1.525'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: DL-Tyrosine
   concentration:
     value: '1.601'
@@ -152,6 +164,9 @@ ingredients:
   concentration:
     value: '2.694'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16977
+    label: ''
 - preferred_term: Arginine
   term:
     id: CHEBI:29016
@@ -166,6 +181,9 @@ ingredients:
   concentration:
     value: '1.695'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17295
+    label: ''
 - preferred_term: Asparagine
   term:
     id: CHEBI:22653
@@ -180,6 +198,9 @@ ingredients:
   concentration:
     value: '2.817'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -204,6 +225,9 @@ ingredients:
   concentration:
     value: '42.92'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

@@ -20,6 +20,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound [Merged
     2 duplicates: 0.3, 0.5]'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:

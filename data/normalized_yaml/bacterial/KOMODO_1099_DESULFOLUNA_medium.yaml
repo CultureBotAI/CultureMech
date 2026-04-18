@@ -91,6 +91,9 @@ ingredients:
   concentration:
     value: '0.0004995'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248

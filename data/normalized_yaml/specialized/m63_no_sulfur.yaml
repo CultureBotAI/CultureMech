@@ -130,6 +130,9 @@ ingredients:
     value: '0.0001'
     unit: G_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48; From Sulfur free mineral mix'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '0.0001'

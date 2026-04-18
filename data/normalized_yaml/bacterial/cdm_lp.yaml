@@ -14,6 +14,9 @@ ingredients:
     value: '0.34'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -267,6 +270,9 @@ ingredients:
     value: 4e-05
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -318,6 +324,9 @@ ingredients:
     value: '0.003'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -405,6 +414,9 @@ ingredients:
   concentration:
     value: '6.22'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Asparagine
   term:
     id: CHEBI:22653
@@ -469,6 +481,9 @@ ingredients:
   concentration:
     value: '0.09'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954

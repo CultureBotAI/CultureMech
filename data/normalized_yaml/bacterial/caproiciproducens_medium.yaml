@@ -66,6 +66,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158

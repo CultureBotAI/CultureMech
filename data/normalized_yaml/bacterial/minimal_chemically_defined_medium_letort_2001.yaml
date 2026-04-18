@@ -50,6 +50,9 @@ ingredients:
   concentration:
     value: '2.817'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: Cysteine
   term:
     id: CHEBI:15356
@@ -68,10 +71,16 @@ ingredients:
   concentration:
     value: '1.677'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: Leucine
   concentration:
     value: '3.659'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15603
+    label: ''
 - preferred_term: Pyridoxamine HCl
   concentration:
     value: '0.02443'
@@ -92,11 +101,17 @@ ingredients:
   concentration:
     value: '14.31'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: L-Glutamate
   concentration:
     value: '2.719'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -122,10 +137,16 @@ ingredients:
     value: '0.008123'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.04'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Lactose
   term:
     id: CHEBI:17716

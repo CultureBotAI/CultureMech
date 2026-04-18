@@ -189,6 +189,9 @@ ingredients:
   concentration:
     value: '0.0501505'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: AlCl3
   term:
     id: CHEBI:30114

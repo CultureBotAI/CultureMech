@@ -55,6 +55,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -79,6 +82,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: MOPS
   term:
     id: CHEBI:39074

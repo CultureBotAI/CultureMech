@@ -100,6 +100,9 @@ ingredients:
   concentration:
     value: '0.00052521'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -124,6 +127,9 @@ ingredients:
   concentration:
     value: '7.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Na3-NTA x H2O
   concentration:
     value: '4.8'
@@ -316,6 +322,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439

@@ -103,6 +103,9 @@ ingredients:
   concentration:
     value: '3.67414'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -127,6 +130,9 @@ ingredients:
   concentration:
     value: '0.00539471'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0115527'

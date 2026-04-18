@@ -240,6 +240,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15603
+    label: ''
 - preferred_term: Glycine
   concentration:
     value: '0.175'
@@ -357,6 +360,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: Lysine
   concentration:
     value: '0.44'
@@ -369,6 +375,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:17295
+    label: ''
 - preferred_term: Serine
   concentration:
     value: '0.34'
@@ -393,6 +402,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: L-ascorbic acid
   concentration:
     value: '0.5'
@@ -469,6 +481,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Guanine
   concentration:
     value: '27'
@@ -516,6 +531,9 @@ ingredients:
     value: '0.24'
     unit: G_PER_L
   notes: 'Role: Nitrogen source'
+  term:
+    id: CHEBI:16977
+    label: ''
 - preferred_term: Proline
   concentration:
     value: '0.675'

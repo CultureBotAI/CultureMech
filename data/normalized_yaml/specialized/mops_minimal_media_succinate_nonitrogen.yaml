@@ -81,6 +81,9 @@ ingredients:
     value: '3.00E-09'
     unit: MOLAR
   notes: 'CAS: 12027-67-7; MW: 1235.86'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '4.00E-07'

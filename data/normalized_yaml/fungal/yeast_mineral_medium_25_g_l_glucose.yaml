@@ -31,6 +31,9 @@ ingredients:
     value: '0.008123'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Potassium iodide
   term:
     id: CHEBI:8346
@@ -169,6 +172,9 @@ ingredients:
   concentration:
     value: '0.01079'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -183,6 +189,9 @@ ingredients:
   concentration:
     value: '22.04'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

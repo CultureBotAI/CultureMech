@@ -10,6 +10,9 @@ ingredients:
     value: '1.35934'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -238,6 +241,9 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Nickel chloride
   concentration:
     value: '0.0004'
@@ -256,6 +262,9 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -291,10 +300,16 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenite
   concentration:
     value: '0.0004'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.01'

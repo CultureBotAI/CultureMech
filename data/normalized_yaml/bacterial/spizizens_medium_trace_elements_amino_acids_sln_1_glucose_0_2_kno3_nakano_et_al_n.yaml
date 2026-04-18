@@ -11,6 +11,9 @@ ingredients:
     value: '0.339836'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -86,6 +89,9 @@ ingredients:
   concentration:
     value: '0.56123'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16977
+    label: ''
 - preferred_term: DL-Tyrosine
   concentration:
     value: '0.275953'
@@ -97,6 +103,9 @@ ingredients:
   concentration:
     value: '0.302682'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17295
+    label: ''
 - preferred_term: Arginine
   term:
     id: CHEBI:29016
@@ -118,6 +127,9 @@ ingredients:
   concentration:
     value: '80.3673'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00247985'
@@ -133,6 +145,9 @@ ingredients:
   concentration:
     value: '0.381185'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: Proline
   term:
     id: CHEBI:26271
@@ -147,6 +162,9 @@ ingredients:
   concentration:
     value: '0.426803'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: Asparagine
   term:
     id: CHEBI:22653
@@ -161,6 +179,9 @@ ingredients:
   concentration:
     value: '0.381185'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15603
+    label: ''
 - preferred_term: Lysine
   concentration:
     value: '0.342021'
@@ -169,6 +190,9 @@ ingredients:
   concentration:
     value: '44.0898'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -210,6 +234,9 @@ ingredients:
   concentration:
     value: '0.0025222'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenate
   concentration:
     value: '0.00248756'

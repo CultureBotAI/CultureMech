@@ -27,6 +27,9 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '15'

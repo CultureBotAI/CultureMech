@@ -40,6 +40,9 @@ ingredients:
   concentration:
     value: '3.37'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '4.856e-05'
@@ -51,6 +54,9 @@ ingredients:
   concentration:
     value: '3.557e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -65,6 +71,9 @@ ingredients:
   concentration:
     value: '2.2'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -79,6 +88,9 @@ ingredients:
   concentration:
     value: '0.0007194'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176

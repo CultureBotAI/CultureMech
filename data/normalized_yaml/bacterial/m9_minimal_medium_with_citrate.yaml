@@ -10,6 +10,9 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
@@ -21,6 +24,9 @@ ingredients:
   concentration:
     value: '49.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -35,6 +41,9 @@ ingredients:
   concentration:
     value: '22.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599

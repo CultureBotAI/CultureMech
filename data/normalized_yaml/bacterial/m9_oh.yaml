@@ -30,6 +30,9 @@ ingredients:
   concentration:
     value: '42.2654'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -44,6 +47,9 @@ ingredients:
   concentration:
     value: '22.0449'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599

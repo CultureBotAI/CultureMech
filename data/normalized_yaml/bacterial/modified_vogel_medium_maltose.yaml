@@ -17,6 +17,9 @@ ingredients:
     value: '0.02379'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -60,6 +63,9 @@ ingredients:
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0002066'

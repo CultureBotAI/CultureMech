@@ -111,6 +111,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:28869
+    label: ''
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE

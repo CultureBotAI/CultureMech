@@ -100,6 +100,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:49105
+    label: ''
 - preferred_term: Nicotinic acid
   concentration:
     value: '1'
@@ -117,6 +120,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: Sodium glutamate
   concentration:
     value: '2'

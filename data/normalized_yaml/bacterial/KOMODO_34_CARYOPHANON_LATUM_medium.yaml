@@ -96,6 +96,9 @@ ingredients:
     value: '1000'
     unit: G_PER_L
   notes: ' (pH 7.8)'
+  term:
+    id: CHEBI:9754
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:

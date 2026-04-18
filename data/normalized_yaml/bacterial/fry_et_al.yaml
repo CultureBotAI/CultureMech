@@ -47,6 +47,9 @@ ingredients:
   concentration:
     value: '15.6142'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.99944'
@@ -71,6 +74,9 @@ ingredients:
   concentration:
     value: '7.34829'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206

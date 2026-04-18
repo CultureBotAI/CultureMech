@@ -326,6 +326,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:17154
+    label: ''
 - preferred_term: Thiamine-HCl x 2 H2O
   concentration:
     value: '50'

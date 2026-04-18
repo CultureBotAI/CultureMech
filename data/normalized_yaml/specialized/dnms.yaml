@@ -65,6 +65,9 @@ ingredients:
     value: '0.017'
     unit: MG_PER_L
   notes: 'CAS: 10125-13-0; MW: 170.48'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Iron (II) chloride tetrahydrate
   concentration:
     value: '1.5'

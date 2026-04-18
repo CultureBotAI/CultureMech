@@ -172,16 +172,25 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000729
     label: p--Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: ''
 - preferred_term: Thiamine・HCl
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: ''
 - preferred_term: Pyridoxine・HCl
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:131531
+    label: ''
 - preferred_term: Vitamin B12
   concentration:
     value: '1'

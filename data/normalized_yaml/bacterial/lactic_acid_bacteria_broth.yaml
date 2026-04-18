@@ -94,6 +94,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:86360
+    label: ''
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

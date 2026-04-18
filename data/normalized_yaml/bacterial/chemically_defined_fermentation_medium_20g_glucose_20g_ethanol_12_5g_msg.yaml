@@ -48,6 +48,9 @@ ingredients:
   concentration:
     value: '28.71'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -72,10 +75,16 @@ ingredients:
   concentration:
     value: '36.74'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.7194'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -90,10 +99,16 @@ ingredients:
   concentration:
     value: '0.02933'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Molybdic acid ammonium salt tetrahydrate
   concentration:
     value: '0.004045'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Sodium Glutamate
   concentration:
     value: '66.8'

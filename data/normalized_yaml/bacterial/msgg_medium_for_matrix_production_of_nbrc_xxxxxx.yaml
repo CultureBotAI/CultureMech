@@ -141,6 +141,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:17295
+    label: ''
 - preferred_term: Threonine
   concentration:
     value: '50'

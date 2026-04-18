@@ -21,6 +21,9 @@ ingredients:
     value: '0.008123'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: DL-Serine
   concentration:
     value: '3.235'
@@ -82,14 +85,23 @@ ingredients:
     value: '0.6797'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glu-L'
+  term:
+    id: CHEBI:16015
+    label: ''
 - preferred_term: Valine
   concentration:
     value: '2.817'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '42.92'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.9838'
@@ -104,14 +116,23 @@ ingredients:
   concentration:
     value: '1.525'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: ''
 - preferred_term: Leucine
   concentration:
     value: '3.583'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:15603
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '66.13'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

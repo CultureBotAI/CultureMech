@@ -27,10 +27,16 @@ ingredients:
   concentration:
     value: '77.497'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '34.5369'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599

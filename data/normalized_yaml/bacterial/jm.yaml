@@ -120,6 +120,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Cyanocobalamine
   concentration:
     value: '0.04'
@@ -127,6 +130,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001039
     label: Cyanocobalamine
+  term:
+    id: CHEBI:17439
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105

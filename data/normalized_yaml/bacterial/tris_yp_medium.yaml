@@ -24,6 +24,9 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:

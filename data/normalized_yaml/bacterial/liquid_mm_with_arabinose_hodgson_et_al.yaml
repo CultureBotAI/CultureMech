@@ -42,6 +42,9 @@ ingredients:
   concentration:
     value: '2.87026'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -56,6 +59,9 @@ ingredients:
   concentration:
     value: '0.0359648'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

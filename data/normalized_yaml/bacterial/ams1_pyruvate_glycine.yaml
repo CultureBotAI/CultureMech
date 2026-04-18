@@ -105,6 +105,9 @@ ingredients:
   concentration:
     value: 1e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946

@@ -56,10 +56,16 @@ ingredients:
   concentration:
     value: '1.03'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0216'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -194,6 +200,9 @@ ingredients:
     value: '0.0162'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Pantothenate
   term:
     id: CHEBI:16454

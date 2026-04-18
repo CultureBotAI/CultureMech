@@ -46,6 +46,9 @@ ingredients:
   concentration:
     value: '11.4811'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '35.2014'
@@ -101,6 +104,9 @@ ingredients:
   concentration:
     value: '0.00249296'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.0540999'

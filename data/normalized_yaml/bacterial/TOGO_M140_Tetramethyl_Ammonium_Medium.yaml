@@ -10,6 +10,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: ''
 - preferred_term: Tetramethyl ammonium
   concentration:
     value: '1'
@@ -115,6 +118,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: KOH
   concentration:
     value: '7.3'
@@ -155,6 +161,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: Co(NO3)2・6H2O
   concentration:
     value: '24.8'

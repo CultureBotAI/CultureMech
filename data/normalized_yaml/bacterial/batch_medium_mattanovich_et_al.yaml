@@ -37,6 +37,9 @@ ingredients:
     value: '9.369'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1496'
@@ -95,6 +98,9 @@ ingredients:
   concentration:
     value: '0.08273'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.017714'

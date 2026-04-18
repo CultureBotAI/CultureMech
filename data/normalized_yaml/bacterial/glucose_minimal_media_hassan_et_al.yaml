@@ -21,6 +21,9 @@ ingredients:
     value: '9.51728'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cit'
+  term:
+    id: CHEBI:30769
+    label: ''
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
@@ -46,6 +49,9 @@ ingredients:
   concentration:
     value: '57.405'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599

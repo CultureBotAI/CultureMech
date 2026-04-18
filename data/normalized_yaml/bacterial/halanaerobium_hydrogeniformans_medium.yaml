@@ -101,6 +101,9 @@ ingredients:
     value: '0.5045'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0045, 0.5]'
+  term:
+    id: CHEBI:86360
+    label: ''
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158

@@ -113,6 +113,9 @@ ingredients:
     value: '0.175'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: 5.0 mM Toluene (water--saturated)
   concentration:
     value: '40'

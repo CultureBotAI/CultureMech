@@ -131,6 +131,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709

@@ -9,6 +9,9 @@ ingredients:
   concentration:
     value: '0.02482'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Nickel chloride
   concentration:
     value: '0.001052'
@@ -74,6 +77,9 @@ ingredients:
   concentration:
     value: '11.02'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946

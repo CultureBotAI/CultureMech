@@ -132,6 +132,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: ZnSO4
   term:
     id: CHEBI:35176

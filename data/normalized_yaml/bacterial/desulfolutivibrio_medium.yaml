@@ -76,6 +76,9 @@ ingredients:
   concentration:
     value: '0.000530786'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -90,6 +93,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  term:
+    id: CHEBI:32138
+    label: ''
 - preferred_term: Na2S2O5
   term:
     id: CHEBI:114786

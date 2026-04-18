@@ -21,6 +21,9 @@ ingredients:
     value: '0.00040614'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:nac'
+  term:
+    id: CHEBI:15940
+    label: ''
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -48,6 +51,9 @@ ingredients:
     value: '4.531e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fol'
+  term:
+    id: CHEBI:27470
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -64,6 +70,9 @@ ingredients:
     value: '0.0002423'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lipoate'
+  term:
+    id: CHEBI:16494
+    label: ''
 - preferred_term: Pantothenate
   term:
     id: CHEBI:16454
@@ -126,6 +135,9 @@ ingredients:
   concentration:
     value: '4.35'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -187,6 +199,9 @@ ingredients:
   concentration:
     value: '0.0107894'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0114981'
@@ -212,6 +227,9 @@ ingredients:
   concentration:
     value: '0.00175974'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49553
+    label: ''
 - preferred_term: Sodium selenate
   concentration:
     value: '0.001'

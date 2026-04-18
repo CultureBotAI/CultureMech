@@ -39,6 +39,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Complex component, Solution'
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Tryptone (Difco 0123)
   concentration:
     value: '2'

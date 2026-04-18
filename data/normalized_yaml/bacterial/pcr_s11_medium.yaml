@@ -183,6 +183,9 @@ ingredients:
     unit: MICROMOLAR
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: VSO5.5H2O
   concentration:
     value: '0.6'

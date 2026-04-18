@@ -110,6 +110,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
 - preferred_term: Iron powder
   term:
     id: CHEBI:82664

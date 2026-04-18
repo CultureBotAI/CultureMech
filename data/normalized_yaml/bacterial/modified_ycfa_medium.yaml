@@ -275,11 +275,17 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000729
     label: p--Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: ''
 - preferred_term: Pyridoxine・HCl
   concentration:
     value: '75'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:131531
+    label: ''
 - preferred_term: Folic acid
   concentration:
     value: '25'
@@ -307,6 +313,9 @@ ingredients:
     value: '25'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: ''
 - preferred_term: Riboflavin
   concentration:
     value: '25'

@@ -37,10 +37,16 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -75,6 +81,9 @@ ingredients:
   concentration:
     value: '0.03114'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -110,6 +119,9 @@ ingredients:
   concentration:
     value: '0.00016183'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Cobalt nitrate
   concentration:
     value: '0.000852146'

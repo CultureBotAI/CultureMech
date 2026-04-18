@@ -26,10 +26,16 @@ ingredients:
   concentration:
     value: '40.05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.006583'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75832
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -74,6 +80,9 @@ ingredients:
   concentration:
     value: '14.7'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

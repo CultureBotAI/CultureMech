@@ -386,6 +386,9 @@ ingredients:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: ''
 - preferred_term: Calcium pantothenate
   concentration:
     value: '100'
@@ -402,6 +405,9 @@ ingredients:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:131531
+    label: ''
 - preferred_term: Folic acid
   concentration:
     value: '100'

@@ -177,6 +177,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001039
     label: Cyanocobalamine
+  term:
+    id: CHEBI:17439
+    label: ''
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
