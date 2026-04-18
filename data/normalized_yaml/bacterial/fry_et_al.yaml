@@ -91,6 +91,9 @@ ingredients:
   concentration:
     value: '0.0672435'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.00799112'

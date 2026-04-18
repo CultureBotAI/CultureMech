@@ -165,6 +165,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Solution, Inorganic
     compound'

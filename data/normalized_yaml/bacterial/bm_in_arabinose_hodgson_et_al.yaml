@@ -65,6 +65,9 @@ ingredients:
   concentration:
     value: '0.0044829'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Ammonium nitrate
   term:
     id: CHEBI:63038

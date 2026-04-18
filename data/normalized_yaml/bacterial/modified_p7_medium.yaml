@@ -246,6 +246,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63940
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.2'

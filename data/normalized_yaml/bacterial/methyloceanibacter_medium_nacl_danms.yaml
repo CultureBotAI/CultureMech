@@ -56,6 +56,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118

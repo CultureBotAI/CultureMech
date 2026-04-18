@@ -83,6 +83,9 @@ ingredients:
   concentration:
     value: '0.009145'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0003164'

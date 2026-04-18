@@ -131,6 +131,9 @@ ingredients:
   concentration:
     value: 9e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: O-Phospho-L-serine
   concentration:
     value: '0.001'

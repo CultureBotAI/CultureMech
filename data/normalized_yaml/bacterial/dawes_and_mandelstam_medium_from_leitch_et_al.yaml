@@ -84,6 +84,9 @@ ingredients:
   concentration:
     value: '0.39917'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258

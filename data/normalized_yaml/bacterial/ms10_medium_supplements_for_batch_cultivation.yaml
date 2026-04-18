@@ -176,6 +176,9 @@ ingredients:
   concentration:
     value: '9.933e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.9838'

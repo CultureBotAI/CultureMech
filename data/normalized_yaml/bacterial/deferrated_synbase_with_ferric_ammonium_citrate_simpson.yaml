@@ -69,6 +69,9 @@ ingredients:
   concentration:
     value: '0.0202'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Sodium Succinate
   term:
     id: CHEBI:63675

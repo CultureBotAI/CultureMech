@@ -221,6 +221,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:131395
+    label: ''
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976

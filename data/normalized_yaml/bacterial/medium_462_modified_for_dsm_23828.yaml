@@ -31,6 +31,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: CHEBI:33083
+    label: ''
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683

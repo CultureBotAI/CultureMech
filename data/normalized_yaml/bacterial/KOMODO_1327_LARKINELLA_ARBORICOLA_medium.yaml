@@ -180,6 +180,9 @@ ingredients:
     value: '0.0354'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0177, 0.0177]'
+  term:
+    id: CHEBI:131366
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:

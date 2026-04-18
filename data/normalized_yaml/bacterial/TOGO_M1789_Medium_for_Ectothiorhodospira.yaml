@@ -237,6 +237,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:131395
+    label: ''
 - preferred_term: Na2-EDTA
   concentration:
     value: '3'

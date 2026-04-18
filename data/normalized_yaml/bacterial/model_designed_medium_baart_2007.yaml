@@ -50,6 +50,9 @@ ingredients:
   concentration:
     value: '0.0008'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00016'

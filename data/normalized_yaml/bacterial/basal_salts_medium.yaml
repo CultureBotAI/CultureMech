@@ -110,6 +110,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: CoSO4
   concentration:
     value: '0.01'

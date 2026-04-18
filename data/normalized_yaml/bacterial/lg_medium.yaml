@@ -95,6 +95,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric chloride
   concentration:
     value: '0.0004'

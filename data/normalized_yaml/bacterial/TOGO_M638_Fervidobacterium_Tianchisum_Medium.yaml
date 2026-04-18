@@ -131,6 +131,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: Glucose
   concentration:
     value: '5'

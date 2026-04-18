@@ -287,6 +287,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  term:
+    id: CHEBI:63041
+    label: ''
 preparation_steps:
 - step_number: 1
   action: MIX

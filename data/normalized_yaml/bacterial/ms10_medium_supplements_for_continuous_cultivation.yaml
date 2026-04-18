@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '9.933e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Glucose
   term:
     id: CHEBI:17234

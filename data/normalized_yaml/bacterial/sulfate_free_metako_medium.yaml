@@ -95,6 +95,9 @@ ingredients:
   concentration:
     value: '0.0333988'
     unit: G_PER_L
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385

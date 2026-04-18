@@ -62,6 +62,9 @@ ingredients:
   concentration:
     value: '0.02526'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118

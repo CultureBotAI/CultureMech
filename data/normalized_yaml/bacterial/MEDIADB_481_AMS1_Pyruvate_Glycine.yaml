@@ -150,6 +150,9 @@ ingredients:
   concentration:
     value: 9e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Sodium selenite
   concentration:
     value: 1e-06

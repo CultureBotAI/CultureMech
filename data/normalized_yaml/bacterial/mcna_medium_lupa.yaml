@@ -244,6 +244,9 @@ ingredients:
   concentration:
     value: '0.003032'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63940
+    label: ''
 - preferred_term: Sodium selenite
   concentration:
     value: '0.01156'

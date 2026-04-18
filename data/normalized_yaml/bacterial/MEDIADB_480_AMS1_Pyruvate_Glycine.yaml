@@ -165,6 +165,9 @@ ingredients:
   concentration:
     value: 9e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: 5e-07

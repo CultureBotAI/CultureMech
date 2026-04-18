@@ -100,6 +100,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:28145
+    label: ''
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'

@@ -261,6 +261,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Pantothenate
   concentration:
     value: '1'

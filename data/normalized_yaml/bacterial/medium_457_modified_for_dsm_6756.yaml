@@ -81,6 +81,9 @@ ingredients:
   concentration:
     value: '8.4'
     unit: G_PER_L
+  term:
+    id: CHEBI:28145
+    label: ''
 - preferred_term: Dimethyl sulfoxide
   term:
     id: CHEBI:28262

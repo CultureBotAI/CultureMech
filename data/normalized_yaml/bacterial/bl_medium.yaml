@@ -292,6 +292,9 @@ ingredients:
   concentration:
     value: 8e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Pyridoxal HCl
   concentration:
     value: '0.01'

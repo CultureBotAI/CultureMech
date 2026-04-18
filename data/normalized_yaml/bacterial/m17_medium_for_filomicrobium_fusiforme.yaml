@@ -225,6 +225,9 @@ ingredients:
   concentration:
     value: '0.0177'
     unit: G_PER_L
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: Biotin
   term:
     id: CHEBI:15956

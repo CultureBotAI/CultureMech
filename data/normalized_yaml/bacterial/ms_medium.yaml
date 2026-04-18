@@ -88,6 +88,9 @@ ingredients:
     value: '0.0045'
     unit: G_PER_L
   notes: Copied from referenced JCM Medium 165
+  term:
+    id: CHEBI:131366
+    label: ''
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312

@@ -223,6 +223,9 @@ ingredients:
   concentration:
     value: '0.0044829'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63041
+    label: ''
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00175974'
@@ -251,6 +254,9 @@ ingredients:
   concentration:
     value: '0.000606318'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63940
+    label: ''
 - preferred_term: Nickel Sulfate
   concentration:
     value: '0.0041849'

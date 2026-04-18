@@ -164,6 +164,9 @@ ingredients:
   concentration:
     value: '0.009095'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63940
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '7.04'
