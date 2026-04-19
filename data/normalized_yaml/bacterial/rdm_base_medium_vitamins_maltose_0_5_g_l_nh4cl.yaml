@@ -198,6 +198,9 @@ ingredients:
   concentration:
     value: '0.486'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63004
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206

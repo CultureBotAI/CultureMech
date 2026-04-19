@@ -56,6 +56,9 @@ ingredients:
     value: '6.25E-02'
     unit: G_PER_L
   notes: 'CAS: 139-33-3; MW: 336.21'
+  term:
+    id: CHEBI:64758
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '2.25E-02'

@@ -171,6 +171,9 @@ ingredients:
   concentration:
     value: '0.242968'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63004
+    label: ''
 - preferred_term: Sodium sulfide
   concentration:
     value: '6.40654'

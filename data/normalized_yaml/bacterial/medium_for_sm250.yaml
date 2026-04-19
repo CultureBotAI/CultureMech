@@ -256,6 +256,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  term:
+    id: CHEBI:28911
+    label: ''
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753

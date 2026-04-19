@@ -67,6 +67,9 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
   notes: 'CAS: 7783-85-9'
+  term:
+    id: CHEBI:76181
+    label: ''
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.0125'

@@ -56,6 +56,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131529
+    label: ''
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050

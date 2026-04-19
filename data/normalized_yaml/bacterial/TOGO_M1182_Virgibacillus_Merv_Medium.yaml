@@ -60,6 +60,9 @@ ingredients:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:53258
+    label: ''
 - preferred_term: agar
   concentration:
     value: '20'

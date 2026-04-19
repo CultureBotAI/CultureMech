@@ -88,6 +88,9 @@ ingredients:
     value: '0.005'
     unit: G_PER_L
   notes: From Mc_trace_minerals
+  term:
+    id: CHEBI:86356
+    label: ''
 - preferred_term: cobalt chloride
   concentration:
     value: '0.001'

@@ -83,6 +83,9 @@ ingredients:
   concentration:
     value: '20.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Fe2+
   concentration:
     value: '0.0179'

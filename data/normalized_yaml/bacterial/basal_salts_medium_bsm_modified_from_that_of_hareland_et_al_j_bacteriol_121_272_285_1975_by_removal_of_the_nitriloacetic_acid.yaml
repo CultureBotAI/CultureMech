@@ -53,6 +53,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.3'
@@ -77,6 +80,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001118
     label: Manganese sulfate monohydrate
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: di‐Potassium hydrogen orthophosphate trihydrate
   concentration:
     value: '85'

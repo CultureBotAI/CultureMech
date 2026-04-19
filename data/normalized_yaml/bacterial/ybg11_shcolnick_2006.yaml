@@ -106,6 +106,9 @@ ingredients:
   concentration:
     value: '0.00016'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:86209
+    label: ''
 - preferred_term: HEPES
   term:
     id: CHEBI:46756

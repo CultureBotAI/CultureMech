@@ -102,6 +102,9 @@ ingredients:
     value: '0.54'
     unit: G_PER_L
   notes: 'Role: Growth factor'
+  term:
+    id: CHEBI:63686
+    label: ''
 - preferred_term: Disodium oxalate
   concentration:
     value: '0.268'

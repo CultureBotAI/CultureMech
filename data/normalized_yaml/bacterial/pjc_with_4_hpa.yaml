@@ -10,6 +10,9 @@ ingredients:
     value: '5.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4hphac'
+  term:
+    id: CHEBI:18101
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '18.6'

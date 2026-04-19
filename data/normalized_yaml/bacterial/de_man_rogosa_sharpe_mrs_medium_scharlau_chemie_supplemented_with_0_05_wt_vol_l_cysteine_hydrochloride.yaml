@@ -100,6 +100,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:53426
+    label: ''
 - preferred_term: Magnesium sulfate
   concentration:
     value: '0.2'

@@ -10,6 +10,9 @@ ingredients:
     value: '5.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4hbz'
+  term:
+    id: CHEBI:17879
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.034'

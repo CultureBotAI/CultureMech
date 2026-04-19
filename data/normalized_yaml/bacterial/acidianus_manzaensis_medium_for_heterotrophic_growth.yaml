@@ -67,6 +67,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000183
     label: NaMoO4·2H2O
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '5'

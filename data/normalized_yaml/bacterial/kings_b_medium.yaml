@@ -26,6 +26,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000614
     label: Magnesium sulphate heptahydrate
+  term:
+    id: CHEBI:31795
+    label: ''
 - preferred_term: Dipotassium hydrogen phosphate
   concentration:
     value: '1.5'

@@ -80,6 +80,9 @@ ingredients:
   concentration:
     value: '100.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634

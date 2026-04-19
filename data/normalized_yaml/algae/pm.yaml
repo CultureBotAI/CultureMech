@@ -87,3 +87,4 @@ data_quality_flags:
   ingredients_curated: true
   curation_method: automated_expert_mapping
 original_name: PM
+kg_microbe_match: mediadive.medium:C78

@@ -100,6 +100,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: H3BO4
   concentration:
     value: '0.1'

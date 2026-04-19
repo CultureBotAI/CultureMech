@@ -28,6 +28,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Defined component,
     Organic compound'
+  term:
+    id: CHEBI:16236
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '15'

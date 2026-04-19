@@ -96,6 +96,9 @@ ingredients:
   concentration:
     value: '0.00977'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131531
+    label: ''
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:52891

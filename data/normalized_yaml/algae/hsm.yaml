@@ -85,6 +85,9 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   source: CCAP Medium MR_HSM.pdf
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Sterile
   notes: Ontology mapping not yet available; From CCAP Medium MR_HSM.pdf; Curated
     from CCAP Medium MR_HSM.pdf specification

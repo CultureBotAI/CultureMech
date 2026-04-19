@@ -134,6 +134,9 @@ ingredients:
   concentration:
     value: '4.91e-06'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131529
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105

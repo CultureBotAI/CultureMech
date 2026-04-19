@@ -116,6 +116,9 @@ ingredients:
   concentration:
     value: '0.02443'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131531
+    label: ''
 - preferred_term: Ascorbate
   concentration:
     value: '2.839'

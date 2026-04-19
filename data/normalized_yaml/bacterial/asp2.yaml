@@ -63,6 +63,9 @@ ingredients:
   concentration:
     value: '8.25'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439

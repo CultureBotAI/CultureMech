@@ -72,10 +72,16 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:17883
+    label: ''
 - preferred_term: Tromethamine
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '50.0'

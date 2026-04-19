@@ -28,6 +28,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Glucose
   concentration:
     value: '10'

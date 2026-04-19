@@ -114,6 +114,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001119
     label: Molybdenum trioxide
+  term:
+    id: CHEBI:30627
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

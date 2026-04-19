@@ -60,6 +60,9 @@ ingredients:
     value: '0.5'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4hbz'
+  term:
+    id: CHEBI:17879
+    label: ''
 - preferred_term: Nicotinate
   concentration:
     value: '0.0004061'

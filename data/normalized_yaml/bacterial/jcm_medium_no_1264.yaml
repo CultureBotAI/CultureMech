@@ -64,6 +64,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:63686
+    label: ''
 - preferred_term: DL-Malic acid
   term:
     id: CHEBI:6650

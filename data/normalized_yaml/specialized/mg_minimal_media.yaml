@@ -66,6 +66,9 @@ ingredients:
     value: '0.00486'
     unit: MG_PER_L
   notes: 'CAS: 10025-77-1; MW: 270.3; From ferric malate solution'
+  term:
+    id: CHEBI:30808
+    label: ''
 - preferred_term: D,L-Malic Acid
   concentration:
     value: '0.01207'

@@ -508,6 +508,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131529
+    label: ''
 - preferred_term: Ferric nitrate
   concentration:
     value: '0.00036'

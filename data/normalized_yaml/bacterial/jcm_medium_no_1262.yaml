@@ -66,6 +66,9 @@ ingredients:
   concentration:
     value: '0.54'
     unit: G_PER_L
+  term:
+    id: CHEBI:63686
+    label: ''
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954

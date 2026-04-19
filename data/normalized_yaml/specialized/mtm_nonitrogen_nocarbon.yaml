@@ -48,6 +48,9 @@ ingredients:
     value: '2.0'
     unit: MG_PER_L
   notes: 'CAS: 10025-77-1; MW: 270.3; From MME Trace Minerals'
+  term:
+    id: CHEBI:30808
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '0.05'

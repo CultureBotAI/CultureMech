@@ -76,6 +76,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:53426
+    label: ''
 - preferred_term: MnSO4.4H2O
   concentration:
     value: '0.12'

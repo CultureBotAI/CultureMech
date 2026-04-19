@@ -23,6 +23,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000311
     label: Trisodium citrate x 3 H2O
+  term:
+    id: CHEBI:53258
+    label: ''
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795

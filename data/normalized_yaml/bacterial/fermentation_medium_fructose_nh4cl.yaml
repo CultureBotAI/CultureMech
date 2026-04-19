@@ -9,6 +9,9 @@ ingredients:
   concentration:
     value: '111.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:28645
+    label: ''
 - preferred_term: Biotin
   term:
     id: CHEBI:15956

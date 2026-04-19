@@ -42,10 +42,16 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:15956
+    label: ''
 - preferred_term: Vitamin B6
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16709
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:176843

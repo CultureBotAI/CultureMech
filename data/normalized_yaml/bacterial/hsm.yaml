@@ -53,6 +53,9 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
+  term:
+    id: CHEBI:28017
+    label: ''
 preparation_steps:
 - step_number: 1
   action: MIX

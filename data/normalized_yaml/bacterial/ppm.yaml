@@ -120,6 +120,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:33118
+    label: ''
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '0.1'

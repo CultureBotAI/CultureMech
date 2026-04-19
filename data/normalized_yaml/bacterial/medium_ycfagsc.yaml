@@ -129,6 +129,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:28911
+    label: ''
 - preferred_term: Riboflavin
   concentration:
     value: '5'

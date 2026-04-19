@@ -137,6 +137,9 @@ ingredients:
     value: '10.0'
     unit: ML_PER_L
   source: JCM Medium 1188
+  term:
+    id: CHEBI:50144
+    label: ''
 - preferred_term: 8% NaHCO3solution*
   notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
     Medium 1188 specification

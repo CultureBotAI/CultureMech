@@ -92,6 +92,9 @@ ingredients:
     value: '0.25'
     unit: G_PER_L
   source: CCAP Medium MR_MHY.pdf
+  term:
+    id: CHEBI:31795
+    label: ''
 - preferred_term: Na EDTA
   term:
     id: CHEBI:64734

@@ -161,6 +161,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin'
+  term:
+    id: CHEBI:16709
+    label: ''
 - preferred_term: Citric acid
   concentration:
     value: '2'

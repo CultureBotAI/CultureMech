@@ -121,6 +121,9 @@ ingredients:
   concentration:
     value: '1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:76208
+    label: ''
 - preferred_term: EDTA
   term:
     id: CHEBI:64755

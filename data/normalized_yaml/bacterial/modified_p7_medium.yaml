@@ -66,6 +66,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Ammonium chloride
   concentration:
     value: '100'

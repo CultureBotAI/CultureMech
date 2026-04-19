@@ -47,6 +47,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:63939
+    label: ''
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:

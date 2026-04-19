@@ -98,6 +98,9 @@ ingredients:
   concentration:
     value: '99.06'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:9754
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

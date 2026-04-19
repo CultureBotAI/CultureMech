@@ -40,6 +40,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:17750
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '15'
