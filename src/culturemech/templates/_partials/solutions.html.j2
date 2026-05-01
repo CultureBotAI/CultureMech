@@ -1,0 +1,32 @@
+<section id="solutions">
+<h2>Solutions</h2>
+{% for sol in medium.solutions %}
+<div class="solution">
+  <h3>{{ sol.name or 'Solution ' ~ loop.index }}</h3>
+  {% if sol.solution_type %}
+    <div class="muted small">{{ sol.solution_type }}</div>
+  {% endif %}
+  {% if sol.ingredients %}
+  <table class="ingredients">
+    <thead>
+      <tr><th>Ingredient</th><th class="right">Concentration</th></tr>
+    </thead>
+    <tbody>
+    {% for ing in sol.ingredients %}
+      <tr>
+        <td>{{ ing.preferred_term or ing.name or '' }}</td>
+        <td class="right">
+          {% if ing.concentration %}
+            {{ ing.concentration.value }}
+            <span class="muted">{{ ing.concentration.unit }}</span>
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+  {% if sol.notes %}<div class="prewrap small">{{ sol.notes }}</div>{% endif %}
+</div>
+{% endfor %}
+</section>

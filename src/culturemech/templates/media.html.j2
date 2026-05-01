@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ medium.name }} ({{ medium.id }}) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>{{ medium.id }}</span>
+</nav>
+
+<header>
+  <h1>{{ medium.name }}</h1>
+  <div class="meta">
+    <span class="curie">{{ medium.id }}</span>
+    {% if medium.category %}
+      <span class="badge">{{ medium.category }}</span>
+    {% endif %}
+    {% if medium.medium_type %}
+      <span class="badge">{{ medium.medium_type }}</span>
+    {% endif %}
+    {% if medium.physical_state %}
+      <span class="badge">{{ medium.physical_state }}</span>
+    {% endif %}
+  </div>
+  {% if medium.original_name and medium.original_name != medium.name %}
+    <div class="muted">Original name: <em>{{ medium.original_name }}</em></div>
+  {% endif %}
+</header>
+
+{% include "_partials/overview.html.j2" %}
+{% include "_partials/ingredients.html.j2" %}
+{% if medium.preparation_steps %}{% include "_partials/preparation.html.j2" %}{% endif %}
+{% if medium.solutions %}{% include "_partials/solutions.html.j2" %}{% endif %}
+{% include "_partials/provenance.html.j2" %}
+
+<footer>
+  <small class="muted">
+    Generated {{ generated_at }} from
+    <code>{{ source_path }}</code>
+  </small>
+</footer>
+
+</body>
+</html>

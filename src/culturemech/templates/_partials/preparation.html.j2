@@ -1,0 +1,8 @@
+<section id="preparation">
+<h2>Preparation</h2>
+<ol class="prep">
+{% for step in medium.preparation_steps %}
+  <li class="prewrap">{{ step if step is string else step.text or step.description or step }}</li>
+{% endfor %}
+</ol>
+</section>

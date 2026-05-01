@@ -1,0 +1,44 @@
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+  {% if medium.media_term and medium.media_term.term %}
+    <dt>External ontology</dt>
+    <dd>
+      {% set t = medium.media_term.term %}
+      <a href="{{ curie_to_url(t.id) }}" rel="nofollow noreferrer">{{ t.id }}</a>
+      &mdash; {{ t.label or '' }}
+    </dd>
+  {% endif %}
+  {% if medium.applications %}
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+        {% for a in medium.applications %}<li>{{ a }}</li>{% endfor %}
+      </ul>
+    </dd>
+  {% endif %}
+  {% if medium.synonyms %}
+    <dt>Synonyms</dt>
+    <dd>
+      <ul class="inline">
+        {% for s in medium.synonyms %}<li>{{ s }}</li>{% endfor %}
+      </ul>
+    </dd>
+  {% endif %}
+  {% if medium.ph_value %}
+    <dt>pH</dt>
+    <dd>{{ medium.ph_value }}</dd>
+  {% elif medium.ph_range %}
+    <dt>pH range</dt>
+    <dd>{{ medium.ph_range }}</dd>
+  {% endif %}
+  {% if medium.high_metal %}
+    <dt>High-metal flag</dt>
+    <dd>{{ medium.high_metal }}</dd>
+  {% endif %}
+  {% if medium.notes %}
+    <dt>Notes</dt>
+    <dd class="prewrap">{{ medium.notes }}</dd>
+  {% endif %}
+</dl>
+</section>

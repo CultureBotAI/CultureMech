@@ -1,0 +1,65 @@
+# CultureMech QC config — drives the kg_microbe_qc dashboard generator
+# (lives in culturebotai-claw/src/kg_microbe_qc/).
+#
+# Each slot is checked against every medium YAML in yaml_dir matching pattern.
+# - threshold: coverage required to pass (0.0-1.0)
+# - required: if true, missing the threshold reports FAIL (CI-blocking);
+#             if false, reports WARN
+
+repo_name: CultureMech
+yaml_dir: ../data/merge_yaml/merged_2026
+pattern: "*.yaml"
+
+slots:
+  # core identity (must be 100%)
+  - path: id
+    threshold: 1.0
+    required: true
+  - path: name
+    threshold: 1.0
+    required: true
+  - path: category
+    threshold: 1.0
+    required: true
+
+  # composition (high coverage expected)
+  - path: ingredients
+    threshold: 0.95
+    required: true
+  - path: physical_state
+    threshold: 0.95
+    required: true
+  - path: medium_type
+    threshold: 0.95
+    required: true
+
+  # provenance & curation (medium coverage expected)
+  - path: media_term
+    threshold: 0.85
+    required: false
+  - path: curation_history
+    threshold: 0.90
+    required: false
+  - path: applications
+    threshold: 0.85
+    required: false
+  - path: notes
+    threshold: 0.80
+    required: false
+
+  # optional metadata (low coverage acceptable)
+  - path: preparation_steps
+    threshold: 0.30
+    required: false
+  - path: solutions
+    threshold: 0.20
+    required: false
+  - path: ph_value
+    threshold: 0.20
+    required: false
+  - path: synonyms
+    threshold: 0.20
+    required: false
+  - path: references
+    threshold: 0.05
+    required: false

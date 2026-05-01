@@ -1,0 +1,39 @@
+<section id="ingredients">
+<h2>Ingredients <small class="muted">({{ medium.ingredients|length }})</small></h2>
+{% if medium.ingredients %}
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+{% for ing in medium.ingredients %}
+<tr>
+  <td class="right muted">{{ loop.index }}</td>
+  <td><strong>{{ ing.preferred_term }}</strong></td>
+  <td class="right">
+    {% if ing.concentration %}
+      {{ ing.concentration.value }}
+      <span class="muted">{{ ing.concentration.unit }}</span>
+    {% endif %}
+  </td>
+  <td>
+    {% if ing.term and ing.term.id %}
+      <a href="{{ curie_to_url(ing.term.id) }}" rel="nofollow noreferrer">{{ ing.term.id }}</a>
+      <div class="muted small">{{ ing.term.label or '' }}</div>
+    {% endif %}
+  </td>
+  <td class="prewrap small">{{ ing.notes or '' }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% else %}
+<p class="muted"><em>No ingredients recorded.</em></p>
+{% endif %}
+</section>

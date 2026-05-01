@@ -1,0 +1,23 @@
+<section id="provenance">
+<h2>Provenance</h2>
+{% if medium.merged_from %}
+  <p class="muted">Merged from {{ medium.merged_from|length }} source record{{ '' if medium.merged_from|length == 1 else 's' }}.</p>
+{% endif %}
+{% if medium.curation_history %}
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+{% for ev in medium.curation_history %}
+<tr>
+  <td class="muted small">{{ ev.timestamp }}</td>
+  <td>{{ ev.curator }}</td>
+  <td>{{ ev.action }}</td>
+  <td class="small prewrap">{{ ev.notes or '' }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+</section>
