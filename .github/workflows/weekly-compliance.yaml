@@ -1,0 +1,55 @@
+name: Weekly QC compliance dashboard
+
+on:
+  schedule:
+    - cron: "13 4 * * 0"   # Sunday 04:13 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout CultureMech
+        uses: actions/checkout@v4
+        with:
+          path: CultureMech
+
+      - name: Checkout claw (kg_microbe_qc package)
+        uses: actions/checkout@v4
+        with:
+          repository: CultureBotAI/culturebotai-claw
+          path: culturebotai-claw
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pyyaml jinja2 matplotlib
+
+      - name: Generate dashboard
+        env:
+          PYTHONPATH: ${{ github.workspace }}/culturebotai-claw/src
+        run: |
+          cd CultureMech
+          python -m kg_microbe_qc \
+            --config conf/qc_config.yaml \
+            --output dashboard
+
+      - name: Show summary
+        run: |
+          ls -la CultureMech/dashboard
+          echo "--- index.html (head) ---"
+          head -60 CultureMech/dashboard/index.html
+
+      - name: Upload dashboard artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: culturemech-qc-${{ github.run_id }}
+          path: CultureMech/dashboard/
+          retention-days: 90
