@@ -1,0 +1,84 @@
+name: Generate per-medium pages + deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/merge_yaml/merged_2026/**.yaml"
+      - "src/culturemech/templates/**"
+      - "src/culturemech/render_media_pages.py"
+      - "conf/qc_config.yaml"
+      - ".github/workflows/generate-pages.yaml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout CultureMech
+        uses: actions/checkout@v4
+        with:
+          path: CultureMech
+
+      - name: Checkout claw (kg_microbe_browser + kg_microbe_qc)
+        uses: actions/checkout@v4
+        with:
+          repository: CultureBotAI/culturebotai-claw
+          path: culturebotai-claw
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pyyaml jinja2 markupsafe matplotlib
+
+      - name: Render per-medium pages
+        env:
+          PYTHONPATH: ${{ github.workspace }}/culturebotai-claw/src
+        run: |
+          cd CultureMech
+          python src/culturemech/render_media_pages.py
+
+      - name: Render QC dashboard
+        env:
+          PYTHONPATH: ${{ github.workspace }}/culturebotai-claw/src
+        run: |
+          cd CultureMech
+          python -m kg_microbe_qc \
+            --config conf/qc_config.yaml \
+            --output dashboard
+
+      - name: Stage site
+        run: |
+          mkdir -p site
+          cp -r CultureMech/pages/* site/
+          mkdir -p site/dashboard
+          cp -r CultureMech/dashboard/* site/dashboard/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <title>{{ medium.name }} ({{ medium.id }}) — CultureMech</title>
 <link rel="stylesheet" href="../style.css">
+{% if composition_graph %}
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+{% endif %}
 </head>
 <body>
 
@@ -33,6 +39,12 @@
 </header>
 
 {% include "_partials/overview.html.j2" %}
+{% if composition_graph %}
+<section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+{{ composition_graph|safe_mermaid }}
+</section>
+{% endif %}
 {% include "_partials/ingredients.html.j2" %}
 {% if medium.preparation_steps %}{% include "_partials/preparation.html.j2" %}{% endif %}
 {% if medium.solutions %}{% include "_partials/solutions.html.j2" %}{% endif %}

@@ -20,6 +20,23 @@ from pathlib import Path
 
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup
+
+# Make the shared kg_microbe_browser package importable. PYTHONPATH may
+# already provide it; sibling-dir fallback covers default `python -m` runs.
+# parents[2] is CultureMech repo root; sibling is culturebotai-claw.
+CLAW_SRC = (Path(__file__).resolve().parents[2].parent
+            / "culturebotai-claw" / "src")
+if CLAW_SRC.is_dir():
+    sys.path.insert(0, str(CLAW_SRC))
+
+try:
+    from kg_microbe_browser import build_ingredient_composition_graph
+except ImportError:
+    def build_ingredient_composition_graph(medium: dict,  # type: ignore
+                                           max_ingredients: int = 30) -> str:
+        return ""
+
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_YAML_DIR = REPO_ROOT / "data" / "merge_yaml" / "merged_2026"
@@ -64,6 +81,19 @@ def slug_for(medium: dict, source_path: Path) -> str:
     return _SLUG_RE.sub("_", source_path.stem)
 
 
+def safe_mermaid(value: str) -> Markup:
+    """Strip the ```mermaid fence from the graph builder's output and
+    wrap in <pre class="mermaid"> for the Mermaid JS init."""
+    if not value:
+        return Markup("")
+    s = value.strip()
+    if s.startswith("```mermaid"):
+        s = s[len("```mermaid"):].lstrip()
+    if s.endswith("```"):
+        s = s[:-3].rstrip()
+    return Markup(f'<pre class="mermaid">\n{s}\n</pre>')
+
+
 def make_env() -> Environment:
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
@@ -72,6 +102,7 @@ def make_env() -> Environment:
         lstrip_blocks=True,
     )
     env.globals["curie_to_url"] = curie_to_url
+    env.filters["safe_mermaid"] = safe_mermaid
     return env
 
 
@@ -93,6 +124,7 @@ def render_one(env: Environment, source_path: Path, out_dir: Path,
     template = env.get_template("media.html.j2")
     html = template.render(
         medium=medium,
+        composition_graph=build_ingredient_composition_graph(medium),
         source_path=str(source_path.relative_to(REPO_ROOT)),
         generated_at=_dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds"),
     )
