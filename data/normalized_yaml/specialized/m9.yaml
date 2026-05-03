@@ -80,6 +80,10 @@ curation_history:
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
   notes: organisms_added=1 metrics_added=1 genomes_added=0
+- timestamp: '2026-05-03T08:15:54.237909+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=0 metrics_added=1 genomes_added=0
 data_quality_flags:
 - has_unmapped_ingredients
 target_organisms:

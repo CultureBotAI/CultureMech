@@ -116,8 +116,23 @@ def apply_candidate(recipe: dict, candidate: dict) -> dict:
         gm_entry: dict = dict(metrics)
         if pmid:
             gm_entry["evidence"] = [make_evidence_item(pmid, snippet, query)]
-        organism.setdefault("growth_metrics", []).append(gm_entry)
-        counts["metrics_added"] += 1
+        # Dedup: skip when an existing growth_metrics entry already
+        # cites the same PMID. Keeps `apply-growth --apply` idempotent
+        # across re-runs of the same proposal.
+        existing_metrics = organism.get("growth_metrics") or []
+        already_present = False
+        if pmid:
+            ref_match = f"PMID:{pmid}"
+            for existing in existing_metrics:
+                for ev in (existing.get("evidence") or []):
+                    if (ev.get("reference") or "").strip() == ref_match:
+                        already_present = True
+                        break
+                if already_present:
+                    break
+        if not already_present:
+            organism.setdefault("growth_metrics", []).append(gm_entry)
+            counts["metrics_added"] += 1
 
     new_genomes = extracted.get("genome_assembly_ids") or []
     if new_genomes:

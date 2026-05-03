@@ -51,5 +51,23 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015471'
+- timestamp: '2026-05-03T08:15:54.275208+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0
 data_quality_flags: []
 kg_microbe_match: mediadive.medium:681
+target_organisms:
+- preferred_term: Mycolicibacterium cosmeticum
+  term:
+    id: NCBITaxon:258533
+    label: Mycolicibacterium cosmeticum
+  growth_metrics:
+  - doubling_time_minutes: 1752.0
+    evidence:
+    - reference: PMID:16461697
+      supports: SUPPORT
+      snippet: The strain, designated strain DM-11, grew optimally at 25 degrees C
+        and had a doubling time of 29.2 h.
+      explanation: 'Auto-applied from literature query: "nutrient broth"[All Fields]
+        AND doubling time[All Fields]'
