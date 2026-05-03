@@ -32,3 +32,35 @@ gen-qc-dashboard:
 
 # Composite: media pages + QC dashboard (Phase 2 outputs).
 gen-phase2: gen-media-pages gen-qc-dashboard
+
+# === Growth-evidence literature pipeline (per plan
+# `now-focus-on-culturemech-piped-shell.md`) ============================
+
+# Phase A: mine PubMed for candidate (organism, genome_id, growth_metrics,
+# evidence) tuples per MediaRecipe and emit one proposal YAML per medium
+# under workspace/reports/growth_evidence_proposals/. Default dry-run.
+propose-growth *args:
+    /opt/homebrew/bin/python3.13 scripts/propose_growth_evidence.py {{args}}
+
+# Phase B: harvest PMIDs from data/normalized_yaml/**/*.yaml evidence blocks
+# and cache abstracts as Markdown under references_cache/. Idempotent.
+fetch-pubmed *args:
+    /opt/homebrew/bin/python3.13 scripts/fetch_pubmed_abstracts.py {{args}}
+
+# Phase C: read curator-vetted proposals from
+# workspace/reports/growth_evidence_proposals/ and write target_organisms /
+# growth_metrics / genome_assembly_id blocks into the MediaRecipe YAMLs.
+apply-growth *args:
+    /opt/homebrew/bin/python3.13 scripts/apply_growth_evidence.py {{args}}
+
+# Phase D: anti-hallucination gate. Verify every evidence snippet attached
+# to a target_organisms or growth_metrics block appears verbatim in the
+# cached PubMed abstract for the cited PMID. Exit 2 on any mismatch.
+validate-growth *args:
+    /opt/homebrew/bin/python3.13 scripts/validate_evidence_references.py {{args}}
+
+# Phase E: fill missing genome_assembly_id values for organisms with a
+# resolved NCBITaxon term — local SAMN TSV first, then NCBI Datasets API
+# fallback. Default dry-run.
+enrich-genomes *args:
+    /opt/homebrew/bin/python3.13 scripts/enrich_genome_ids.py {{args}}

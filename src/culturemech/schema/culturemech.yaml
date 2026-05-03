@@ -43,6 +43,10 @@ prefixes:
   sra: https://www.ncbi.nlm.nih.gov/sra/
   # Genomic taxonomy
   GTDB: https://gtdb.ecogenomic.org/genome?gid=
+  # Genome assemblies
+  RefSeq: https://www.ncbi.nlm.nih.gov/datasets/genome/
+  GenBank: https://www.ncbi.nlm.nih.gov/datasets/genome/
+  BioSample: https://www.ncbi.nlm.nih.gov/biosample/
   # Suppliers
   sigma: https://www.sigmaaldrich.com/catalog/product/
   thermofisher: https://www.thermofisher.com/order/catalog/product/
@@ -671,6 +675,17 @@ classes:
         range: GTDBTerm
         inlined: true
 
+      genome_assembly_id:
+        description: >-
+          Genome assembly accession(s) for this organism, complementing gtdb_term.
+          Accepts RefSeq (GCF_), GenBank (GCA_), or BioSample (SAMN) identifiers.
+        range: string
+        multivalued: true
+        pattern: "^(GCF_|GCA_|SAMN)[0-9.]+$"
+        comments:
+          - "Examples: GCF_000005845.2, GCA_000005845.2, SAMN02604091"
+          - Complements gtdb_term for cases where assembly accession is the primary genome reference
+
       strain:
         description: Specific strain designation (e.g., "K-12", "MG1655")
         range: string
@@ -678,6 +693,15 @@ classes:
       growth_phase:
         description: Target growth phase (e.g., "exponential", "stationary")
         range: string
+
+      growth_metrics:
+        description: Quantitative growth measurements observed for this organism on this medium
+        range: GrowthMetrics
+        multivalued: true
+        inlined_as_list: true
+        comments:
+          - Captures empirical growth performance (max OD, doubling time, growth rate, etc.)
+          - Each entry should be tied to a literature reference via its evidence list
 
       community_role:
         description: Functional role in microbial community
@@ -832,6 +856,54 @@ classes:
       per_volume:
         description: Volume basis (e.g., "per liter", "per 100 mL")
         range: string
+
+  GrowthMetrics:
+    description: >-
+      Quantitative growth measurements for an organism on a medium.
+      Captures empirical growth performance (max OD, doubling time, growth rate)
+      observed under defined conditions. Every non-empty record must cite at least
+      one literature reference via the evidence list.
+    attributes:
+      max_od600:
+        description: Maximum optical density observed (default wavelength 600 nm)
+        range: float
+
+      max_od_wavelength_nm:
+        description: Wavelength at which OD was measured, in nanometers (default 600)
+        range: integer
+        ifabsent: int(600)
+
+      doubling_time_minutes:
+        description: Population doubling time in minutes
+        range: float
+
+      growth_rate_per_hour:
+        description: Specific growth rate μ in h⁻¹ (inverse hours)
+        range: float
+
+      temperature_celsius:
+        description: Temperature at which the measurement was taken, in degrees Celsius
+        range: float
+
+      ph_at_measurement:
+        description: Medium pH at the time of measurement
+        range: float
+
+      measurement_conditions:
+        description: >-
+          Free-text description of measurement context (e.g., "shake flask, 200 rpm",
+          "microtiter plate, 96-well, plate reader Tecan Spark")
+        range: string
+
+      evidence:
+        description: Literature evidence supporting these growth measurements
+        range: EvidenceItem
+        multivalued: true
+        required: true
+        inlined_as_list: true
+        comments:
+          - Required for any populated GrowthMetrics record
+          - Each evidence item should cite the paper reporting the measurement
 
   TemperatureValue:
     description: Temperature with units

@@ -57,6 +57,9 @@ pages/style.css
 .oak_cache/
 references_cache/
 
+# Pipeline runtime artifacts (proposals, validation reports, NCBI lookup cache)
+workspace/
+
 # UMAP embedding cache (large pickle files - DO NOT commit)
 .umap_cache/
 
