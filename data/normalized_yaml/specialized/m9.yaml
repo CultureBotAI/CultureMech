@@ -76,5 +76,23 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015542'
+- timestamp: '2026-05-03T02:38:31.073342+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0
 data_quality_flags:
 - has_unmapped_ingredients
+target_organisms:
+- preferred_term: Escherichia coli
+  term:
+    id: NCBITaxon:562
+    label: Escherichia coli
+  growth_metrics:
+  - max_od600: 10.0
+    evidence:
+    - reference: PMID:27709314
+      supports: SUPPORT
+      snippet: Using a modified M9 medium and optimized growth conditions, we were
+        able to grow cells in linear log phase to an OD600 of up to 10.
+      explanation: 'Auto-applied from literature query: "M9"[All Fields] AND OD600[All
+        Fields]'
