@@ -237,13 +237,61 @@ def extract_strains(text: str) -> list[str]:
     return sorted(set(m.group(1) for m in STRAIN_RE.finditer(text or "")))
 
 
+# Phrases that indicate the OD value is a setpoint (inoculum density,
+# harvest density, induction OD, suspension prep) rather than a
+# max-attained density. When any of these appear within ~80 chars
+# before the OD match, skip the extraction — the curator would only
+# reject these anyway, and surfacing them as candidates wastes the
+# triage step's time.
+_OD_SETPOINT_PRECEDENTS = (
+    "diluted to", "diluted at", "adjusted to", "adjusted at",
+    "resuspended to", "resuspended at", "suspended to", "suspended at",
+    "harvested at", "harvested when", "collected at",
+    "induced at", "induced with", "induction at",
+    "inoculated at", "inoculated to",
+    "prepared at", "prepared to",
+    "spotted at",
+    "starting at",
+    "until reaching", "to reach an",
+    "containing 10", "containing approximately",  # CFU/ml conversions
+    "= 0.0", "= 0.1", "= 0.2", "= 0.3", "= 0.5",  # canonical inoculum levels
+    "of 0.0", "of 0.1", "of 0.2", "of 0.3", "of 0.5",
+)
+
+_MAX_OD_AFFIRMATIVES = (
+    "up to", "reached", "reaches", "grew to", "growth to",
+    "stationary phase", "final od", "maximum od", "max od",
+    "attained", "exponential phase",
+)
+
+
+def _is_max_od_context(text: str, span_start: int) -> bool:
+    """True if the OD600 match looks like a max-attained-density
+    claim, not a setpoint/inoculum density. Heuristic — checks ~80
+    chars before the match for affirmative max-attained markers, and
+    rejects when the immediate antecedent is a known inoculum/setpoint
+    phrase."""
+    window = (text or "")[max(0, span_start - 80): span_start].lower()
+    if any(phrase in window for phrase in _OD_SETPOINT_PRECEDENTS):
+        return False
+    # If an affirmative max marker is present nearby, accept.
+    if any(phrase in window for phrase in _MAX_OD_AFFIRMATIVES):
+        return True
+    # No clear signal either way — also check the trailing 60 chars
+    # for max-affirmative phrases that follow the value (e.g. "an
+    # OD600 of up to 10").
+    tail = (text or "")[span_start: span_start + 80].lower()
+    return any(phrase in tail for phrase in _MAX_OD_AFFIRMATIVES)
+
+
 def extract_growth_metrics(text: str) -> dict:
     """Return possibly-empty dict of the metrics found, with regex match
     spans suitable for later snippet selection."""
     m: dict = {}
-    if (mm := OD_RE.search(text or "")) or (mm := OD_GENERIC_RE.search(text or "")):
+    od_match = OD_RE.search(text or "") or OD_GENERIC_RE.search(text or "")
+    if od_match and _is_max_od_context(text or "", od_match.start()):
         try:
-            m["max_od600"] = float(mm.group(1))
+            m["max_od600"] = float(od_match.group(1))
         except (ValueError, IndexError):
             pass
     if (mm := DT_RE.search(text or "")) or (mm := TD_RE.search(text or "")):
