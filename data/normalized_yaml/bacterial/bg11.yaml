@@ -200,6 +200,10 @@ curation_history:
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
   notes: organisms_added=1 metrics_added=1 genomes_added=0
+- timestamp: '2026-05-04T02:38:51.030913+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=2 metrics_added=2 genomes_added=0
 target_organisms:
 - preferred_term: Synechocystis sp. PCC 6803
   term:
@@ -216,3 +220,31 @@ target_organisms:
         the textbook value of 0.09 h-1 (8 h doubling time).
       explanation: 'Auto-applied from literature query: "bg11"[All Fields] AND doubling
         time[All Fields]'
+- preferred_term: Synechococcus elongatus PCC 11801
+  term:
+    id: NCBITaxon:2219813
+    label: Synechococcus elongatus PCC 11801
+  growth_metrics:
+  - doubling_time_minutes: 138.0
+    evidence:
+    - reference: PMID:30413737
+      supports: SUPPORT
+      snippet: PCC 11801 shows a doubling time of 2.3 h, that is the fastest growth
+        for any cyanobacteria reported so far under ambient CO2 conditions.
+      explanation: 'Auto-applied from literature query: targeted: Synechococcus elongatus
+        PCC 11801'
+- preferred_term: Synechococcus elongatus PCC 11802
+  term:
+    id: NCBITaxon:2283154
+    label: Synechococcus elongatus PCC 11802
+  growth_metrics:
+  - doubling_time_minutes: 168.0
+    evidence:
+    - reference: PMID:31932622
+      supports: SUPPORT
+      snippet: The new isolate has a doubling time of 2.8 h at 1% CO2, 1000 µmole
+        photons.m-2.s-1 and grows faster under high CO2 and temperature compared to
+        PCC 11801 thus making it an attractive host for outdoor cultivations and eventual
+        applications in the biorefinery.
+      explanation: 'Auto-applied from literature query: targeted: Synechococcus elongatus
+        PCC 11802'
