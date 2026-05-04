@@ -74,3 +74,29 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CAULOBACTER MEDIUM" to "caulobacter_medium" for consistent
     matching
+- timestamp: '2026-05-04T06:34:23.033204+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=0
+target_organisms:
+- preferred_term: Caulobacter sp. K31
+  term:
+    id: NCBITaxon:366602
+    label: Caulobacter sp. K31
+  growth_metrics:
+  - doubling_time_minutes: 2400.0
+    evidence:
+    - reference: PMID:25274120
+      supports: SUPPORT
+      snippet: K31 is a novel Caulobacter isolate that has the ability to tolerate
+        copper and chlorophenols, and can grow at 4 ° C with a doubling time of 40
+        h.
+      explanation: 'Auto-applied from literature query: backfill PMID:25274120'
+    is_max_attainment: false
+    growth_mode: BATCH
+    perturbations:
+    - perturbation_type: TEMPERATURE_STRESS
+      descriptor: cold growth at 4°C
+      target: temperature
+      level: 4.0
+      level_unit: °C

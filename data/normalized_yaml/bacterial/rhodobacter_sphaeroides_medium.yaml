@@ -203,3 +203,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RHODOBACTER SPHAEROIDES MEDIUM" to "rhodobacter_sphaeroides_medium"
     for consistent matching
+- timestamp: '2026-05-04T06:34:23.096312+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=0
+target_organisms:
+- preferred_term: Rhodobacter sphaeroides
+  term:
+    id: NCBITaxon:1063
+    label: Rhodobacter sphaeroides
+  growth_metrics:
+  - doubling_time_minutes: 1080.0
+    evidence:
+    - reference: PMID:19826864
+      supports: SUPPORT
+      snippet: Rhodobacter sphaeroides OU5 grows phototrophically with generation
+        doubling time of 18 h on L-phenylalanine when used as sole source of nitrogen.
+      explanation: 'Auto-applied from literature query: backfill PMID:19826864'
+    is_max_attainment: false
+    growth_mode: BATCH
+    nutrient_overrides:
+    - role: NITROGEN_SOURCE
+      source: L-phenylalanine
+      is_sole_source: true
+      ontology_id: CHEBI:17295
