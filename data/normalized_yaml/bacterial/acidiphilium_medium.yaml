@@ -91,3 +91,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACIDIPHILIUM MEDIUM" to "acidiphilium_medium" for consistent
     matching
+- timestamp: '2026-05-04T08:06:37.014586+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0
+target_organisms:
+- preferred_term: Acidiphilium cryptum
+  term:
+    id: NCBITaxon:524
+    label: Acidiphilium cryptum
+  growth_metrics:
+  - doubling_time_minutes: 312.0
+    ph_at_measurement: 3.0
+    evidence:
+    - reference: PMID:12420179
+      supports: SUPPORT
+      snippet: with a doubling time of 7.6 h, as compared to 5.2 h of growth without
+        aluminum
+      explanation: 'Auto-applied from literature query: targeted: Acidiphilium cryptum
+        doubling time'
+    is_max_attainment: true
