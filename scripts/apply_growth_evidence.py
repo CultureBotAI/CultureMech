@@ -82,9 +82,43 @@ def make_evidence_item(pmid: str, snippet: str, query: str | None) -> dict:
     return ev
 
 
+def _merge_strain_modifications(organism: dict, new_mods: list[dict]) -> int:
+    """Merge new StrainModification entries onto the OrganismDescriptor.
+
+    Dedup is by (modification_type, target_lower) — same gene knockout
+    cited from two PMIDs is one logical modification, not two.
+    Returns count of newly added entries.
+    """
+    if not new_mods:
+        return 0
+    existing = organism.setdefault("strain_modifications", [])
+    seen: set[tuple[str, str]] = set()
+    for em in existing:
+        key = ((em.get("modification_type") or ""),
+               (em.get("target") or "").strip().lower())
+        seen.add(key)
+    added = 0
+    for m in new_mods:
+        if not isinstance(m, dict):
+            continue
+        key = ((m.get("modification_type") or ""),
+               (m.get("target") or "").strip().lower())
+        if key in seen:
+            continue
+        seen.add(key)
+        existing.append(dict(m))
+        added += 1
+    return added
+
+
 def apply_candidate(recipe: dict, candidate: dict) -> dict:
     """Mutate recipe in place; return a count dict describing changes."""
-    counts = {"organisms_added": 0, "metrics_added": 0, "genomes_added": 0}
+    counts = {
+        "organisms_added": 0,
+        "metrics_added": 0,
+        "genomes_added": 0,
+        "strain_mods_added": 0,
+    }
     extracted = candidate.get("extracted") or {}
     pmid = candidate.get("pmid") or ""
     snippet = candidate.get("snippet") or ""
@@ -111,11 +145,27 @@ def apply_candidate(recipe: dict, candidate: dict) -> dict:
 
     organism = target_organisms[idx]
 
+    # v2 schema: strain_modifications live on the OrganismDescriptor
+    # (carry across observations). Apply before growth-metrics so the
+    # mods are in place when downstream tooling joins them up.
+    counts["strain_mods_added"] = _merge_strain_modifications(
+        organism, extracted.get("strain_modifications") or [],
+    )
+
     metrics = extracted.get("growth_metrics") or {}
     if metrics:
         gm_entry: dict = dict(metrics)
         if pmid:
             gm_entry["evidence"] = [make_evidence_item(pmid, snippet, query)]
+        # v2 schema: per-observation perturbation context fields.
+        if "is_max_attainment" in extracted:
+            gm_entry["is_max_attainment"] = extracted["is_max_attainment"]
+        if extracted.get("growth_mode"):
+            gm_entry["growth_mode"] = extracted["growth_mode"]
+        if extracted.get("perturbations"):
+            gm_entry["perturbations"] = list(extracted["perturbations"])
+        if extracted.get("nutrient_overrides"):
+            gm_entry["nutrient_overrides"] = list(extracted["nutrient_overrides"])
         # Dedup: skip when an existing growth_metrics entry already
         # cites the same PMID. Keeps `apply-growth --apply` idempotent
         # across re-runs of the same proposal.
@@ -156,7 +206,8 @@ def append_curation_history(recipe: dict, summary: dict) -> None:
         "notes": (
             f"organisms_added={summary['organisms_added']} "
             f"metrics_added={summary['metrics_added']} "
-            f"genomes_added={summary['genomes_added']}"
+            f"genomes_added={summary['genomes_added']} "
+            f"strain_mods_added={summary.get('strain_mods_added', 0)}"
         ),
     })
 
@@ -174,6 +225,7 @@ def process_proposal(proposal_path: Path, apply: bool) -> dict:
         "organisms_added": 0,
         "metrics_added": 0,
         "genomes_added": 0,
+        "strain_mods_added": 0,
         "wrote": False,
     }
     try:
@@ -202,11 +254,12 @@ def process_proposal(proposal_path: Path, apply: bool) -> dict:
     with open(recipe_path) as f:
         recipe = yaml.safe_load(f) or {}
 
-    cum = {"organisms_added": 0, "metrics_added": 0, "genomes_added": 0}
+    cum = {"organisms_added": 0, "metrics_added": 0, "genomes_added": 0,
+           "strain_mods_added": 0}
     for c in high_conf:
         deltas = apply_candidate(recipe, c)
         for k in cum:
-            cum[k] += deltas[k]
+            cum[k] += deltas.get(k, 0)
         summary["applied"] += 1
 
     summary.update(cum)
@@ -244,7 +297,8 @@ def main() -> int:
 
     totals = {"applied": 0, "skipped_no_support": 0,
               "skipped_missing_recipe": 0, "organisms_added": 0,
-              "metrics_added": 0, "genomes_added": 0, "wrote": 0}
+              "metrics_added": 0, "genomes_added": 0,
+              "strain_mods_added": 0, "wrote": 0}
 
     for p in proposals:
         s = process_proposal(p, apply=args.apply)
@@ -252,13 +306,15 @@ def main() -> int:
             f"  {p.name}: applied={s['applied']} "
             f"orgs+={s['organisms_added']} metrics+={s['metrics_added']} "
             f"genomes+={s['genomes_added']} "
+            f"strain_mods+={s.get('strain_mods_added', 0)} "
             f"skipped_no_support={s['skipped_no_support']} "
             f"missing_recipe={s['skipped_missing_recipe']} "
             f"{'(wrote)' if s['wrote'] else ''}"
         )
         for k in ("applied", "skipped_no_support", "skipped_missing_recipe",
-                  "organisms_added", "metrics_added", "genomes_added"):
-            totals[k] += s[k]
+                  "organisms_added", "metrics_added", "genomes_added",
+                  "strain_mods_added"):
+            totals[k] += s.get(k, 0)
         if s["wrote"]:
             totals["wrote"] += 1
 

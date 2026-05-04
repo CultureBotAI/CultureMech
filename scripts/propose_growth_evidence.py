@@ -69,6 +69,133 @@ TD_RE = re.compile(rf"\btd\s*(?:=|:|~|≈)?\s*{NUMERIC_RE}\s*(min(?:utes?)?|h|ho
 GROWTH_RATE_RE = re.compile(rf"(?:growth rate|μ|mu)\s*(?:of|=|:|~|≈)?\s*{NUMERIC_RE}\s*(?:h\^?-?1|/h|hr-1|per hour|h\^\(-1\))", re.IGNORECASE)
 
 
+# ---------------- perturbation / conditional-growth patterns ----------------
+#
+# These regexes drive the v2-schema extraction (PerturbationContext,
+# StrainModification, NutrientOverride, growth_mode, is_max_attainment)
+# added by commit 0a81ef48c. The extractor does NOT auto-resolve
+# ontology CURIEs — the curator supplies those at review time. We only
+# surface descriptors, types, and quantitative levels when extractable.
+
+# StrainModification — knockouts, deletions, insertions, mutants, adapted strains.
+_STRAIN_MOD_PATTERNS: list[tuple[re.Pattern, str]] = [
+    (re.compile(r"\b(?P<target>[A-Za-z][\w-]{1,30})\s*[:]{2}\s*Tn\d+\b"),
+     "INSERTION"),
+    (re.compile(r"\b(?P<target>[A-Za-z][\w-]{1,30})\s*[:]{2}knockout\b", re.IGNORECASE),
+     "KNOCKOUT"),
+    (re.compile(r"\bknockout(?:\s+(?:strain|mutant))?\s+(?:of\s+)?(?P<target>[A-Za-z][\w-]{1,30})\b", re.IGNORECASE),
+     "KNOCKOUT"),
+    (re.compile(r"\b(?P<target>[A-Za-z][\w-]{1,30})\s+knockout\b", re.IGNORECASE),
+     "KNOCKOUT"),
+    (re.compile(r"\b(?:Δ|delta)\s*(?P<target>[A-Za-z][\w-]{1,30})\b", re.IGNORECASE),
+     "DELETION"),
+    (re.compile(r"\bdeletion\s+(?:strain|mutant)?\s*(?:of\s+)?(?P<target>[A-Za-z][\w-]{1,30})\b", re.IGNORECASE),
+     "DELETION"),
+    (re.compile(r"\b(?P<target>[A-Za-z][\w-]{1,30})\s+deletion\b", re.IGNORECASE),
+     "DELETION"),
+    (re.compile(r"\b(?P<target>[A-Za-z][\w-]{1,30})-deficient\b", re.IGNORECASE),
+     "KNOCKOUT"),
+    (re.compile(r"\bserially\s+adapted\s+for\s+(?:growth\s+on\s+)?(?P<target>[A-Za-z][\w\-\s]{2,40})\b", re.IGNORECASE),
+     "ADAPTATION"),
+    (re.compile(r"\b(?:experimentally\s+)?adapted\s+(?:for|to)\s+(?:growth\s+on\s+)?(?P<target>[A-Za-z][\w\-\s]{2,40})\b", re.IGNORECASE),
+     "ADAPTATION"),
+    (re.compile(r"\bselected\s+for\s+(?P<target>[A-Za-z][\w\-\s]{2,40})\b", re.IGNORECASE),
+     "SELECTION"),
+    (re.compile(r"\bmutant\s+strain(?:\s+(?:of|in)\s+)?(?P<target>[A-Za-z][\w-]{1,30})?\b", re.IGNORECASE),
+     "POINT_MUTATION"),
+]
+
+# Chemical-stress detection — heavy metals, oxidative agents, antibiotics.
+# Heavy-metal pattern: matches "<agent> ... <level> <unit>" within ~40
+# chars. Levels often appear before the agent ("addition of 10 mg L-1
+# Cr(VI)") so we anchor on either order. Units accept the common
+# formatter variants used in PubMed abstracts: "mg/L", "mg L-1",
+# "mg·L-1", "mM", "µM", etc.
+_LEVEL_UNIT = r"(?P<level>\d+(?:\.\d+)?)\s*(?P<unit>mg\s*[·\s/]?\s*L\s*-?\s*1|mg\s*/\s*L|mg/L|mM|µM|uM|μM|µg/mL|ug/mL|nM|%)"
+_METAL_AGENT = r"(?P<agent>Cr\(VI\)|Cr6\+|Cr\(III\)|Cd\d*\+?|Pb\d*\+?|Hg\d*\+?|As\d*\+?|Ni\d*\+?|Cu\d*\+?|Zn\d*\+?)"
+_HEAVY_METAL_RE = re.compile(
+    rf"{_METAL_AGENT}(?:\s+at\s+|\s+of\s+|\s+\(|\s+){_LEVEL_UNIT}",
+    re.IGNORECASE,
+)
+# Reverse-order ("10 mg L-1 Cr(VI)") — common in chemistry abstracts.
+_HEAVY_METAL_REV_RE = re.compile(
+    rf"{_LEVEL_UNIT}\s+(?:of\s+)?{_METAL_AGENT}",
+    re.IGNORECASE,
+)
+# Even without a numeric level — flag heavy-metal mention.
+_HEAVY_METAL_LITE_RE = re.compile(
+    r"\b(?P<agent>Cr\(VI\)|Cr6\+|Cr\(III\)|Cd2\+|Pb2\+|Hg2\+|As\d+\+|chromate|chromium|cadmium|mercury|arsenic|nickel)\b",
+    re.IGNORECASE,
+)
+_OXIDATIVE_RE = re.compile(
+    r"\b(?P<agent>H2O2|hydrogen\s+peroxide|peroxide|paraquat|menadione|oxidative\s+stress)\b",
+    re.IGNORECASE,
+)
+_ANTIBIOTIC_RE = re.compile(
+    r"\b(?P<agent>ampicillin|kanamycin|tetracycline|chloramphenicol|streptomycin|rifampicin|gentamicin|spectinomycin)"
+    r"(?:\s+at\s+(?P<level>\d+(?:\.\d+)?)\s*(?P<unit>mg/mL|µg/mL|ug/mL|µg·mL-1|mM|µM|uM))?",
+    re.IGNORECASE,
+)
+
+# Temperature-stress — explicit cold-shock / heat-stress / "at N°C" phrasing.
+_TEMP_STRESS_AFFIRMATIVES = (
+    "cold shock", "cold-shock", "cold stress", "cold growth",
+    "heat shock", "heat-shock", "heat stress",
+    "low temperature", "elevated temperature", "temperature shock",
+)
+_TEMP_RE = re.compile(
+    rf"\bat\s+{NUMERIC_RE}\s*(?:°\s*C|degrees?\s*C|°?C)\b",
+    re.IGNORECASE,
+)
+_TEMP_AND_GROWTH_RE = re.compile(
+    rf"\b(?:grow|grew|growth|cultivation|cultivated|incubated)\s+(?:at\s+)?{NUMERIC_RE}\s*(?:°\s*C|degrees?\s*C|°?C)\b",
+    re.IGNORECASE,
+)
+
+# Nutrient overrides — "sole carbon source", "as the only nitrogen source", etc.
+_SOLE_SOURCE_RE = re.compile(
+    r"(?:^|\b)(?P<source>[A-Za-z][\w\-\(\),]{1,40}(?:\s+[\w\-\(\),]{1,40}){0,3})"
+    r"\s+(?:when\s+used\s+)?as\s+(?:the\s+)?(?:sole|only)\s+source\s+of\s+(?P<role>nitrogen|carbon|sulfur|phosphate|phosphorus|electron)\b",
+    re.IGNORECASE,
+)
+_SOLE_SOURCE_ALT_RE = re.compile(
+    r"\b(?:sole|only)\s+(?P<role>nitrogen|carbon|sulfur|phosphate|phosphorus|electron)\s+(?:source|donor|acceptor)\s*[:\-]?\s*(?P<source>[A-Za-z][\w\-\(\),]{1,40}(?:\s+[\w\-\(\),]{1,40}){0,3})",
+    re.IGNORECASE,
+)
+_WITH_SOURCE_RE = re.compile(
+    r"\bwith\s+(?P<source>[A-Za-z][\w\-\(\),]{1,40}(?:\s+[\w\-\(\),]{1,40}){0,2})"
+    r"\s+as\s+(?:the\s+)?(?:sole\s+)?(?P<role>carbon|nitrogen|sulfur|phosphate|phosphorus|electron)\s+source\b",
+    re.IGNORECASE,
+)
+
+# Growth mode — chemostat / fed-batch / biofilm / continuous flow.
+_GROWTH_MODE_PATTERNS: list[tuple[re.Pattern, str]] = [
+    (re.compile(r"\bchemostat\b", re.IGNORECASE), "CHEMOSTAT"),
+    (re.compile(r"\bturbidostat\b", re.IGNORECASE), "TURBIDOSTAT"),
+    (re.compile(r"\bfed[\s-]batch\b", re.IGNORECASE), "FED_BATCH"),
+    (re.compile(r"\bcontinuous(?:[\s-]flow)?\s+(?:culture|cultivation)\b", re.IGNORECASE), "CONTINUOUS_FLOW"),
+    (re.compile(r"\bbiofilm\b", re.IGNORECASE), "BIOFILM"),
+    (re.compile(r"\bbatch\s+(?:culture|growth|cultivation)\b", re.IGNORECASE), "BATCH"),
+]
+
+# Max-attainment affirmatives extending the OD-context ones to apply
+# across all metric types. Used for is_max_attainment detection.
+_MAX_ATTAINMENT_AFFIRMATIVES = (
+    "up to", "maximum", "minimum doubling time", "fastest", "shortest",
+    "exponential phase", "exponential growth",
+    "optimum growth", "optimal growth", "highest", "max ",
+)
+_CONDITIONAL_MARKERS = (
+    "during slow growth", "slow-growth",
+    "lag phase", "stress", "deficient", "knockout", "mutant",
+    "adapted", "limited", "limitation",
+    "cold shock", "heat shock", "cold growth",
+    "as sole source", "as the sole source", "as the only source",
+    "as the sole carbon", "as the sole nitrogen",
+    "chemostat", "fed-batch", "biofilm",
+)
+
+
 # ---------------- recipe loading ----------------
 
 def iter_recipes(medium_glob: str | None,
@@ -321,6 +448,292 @@ def find_snippet_for(text: str, needle: str) -> str | None:
     return None
 
 
+# ---------------- v2: perturbation / conditional-growth extraction ----------------
+
+def _normalize_role(raw: str) -> str:
+    r = raw.strip().lower()
+    return {
+        "carbon": "CARBON_SOURCE",
+        "nitrogen": "NITROGEN_SOURCE",
+        "sulfur": "SULFUR_SOURCE",
+        "phosphate": "PHOSPHATE_SOURCE",
+        "phosphorus": "PHOSPHATE_SOURCE",
+        "electron": "ELECTRON_DONOR",
+    }.get(r, "OTHER")
+
+
+def _dedup_dicts(items: list[dict]) -> list[dict]:
+    """Stable dedup of small dicts by their JSON repr (fields are scalar)."""
+    seen: set[str] = set()
+    out: list[dict] = []
+    for d in items:
+        key = json.dumps(d, sort_keys=True, default=str)
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(d)
+    return out
+
+
+def extract_strain_modifications(text: str) -> list[dict]:
+    """Return a list of StrainModification candidate dicts."""
+    if not text:
+        return []
+    out: list[dict] = []
+    seen_targets: set[tuple[str, str]] = set()
+    for pat, mod_type in _STRAIN_MOD_PATTERNS:
+        for m in pat.finditer(text):
+            tgt = (m.groupdict().get("target") or "").strip()
+            if not tgt or len(tgt) < 2:
+                continue
+            # Skip very generic words masquerading as targets.
+            if tgt.lower() in {"the", "a", "an", "and", "for", "with", "of", "in",
+                               "strain", "mutant", "growth", "study"}:
+                continue
+            key = (mod_type, tgt.lower())
+            if key in seen_targets:
+                continue
+            seen_targets.add(key)
+            entry: dict = {
+                "modification_type": mod_type,
+                "target": tgt,
+            }
+            if mod_type == "KNOCKOUT":
+                entry["ontology_term"] = "NCIT:C120956"
+            out.append(entry)
+    return out
+
+
+def extract_perturbations(text: str) -> list[dict]:
+    """Return a list of PerturbationContext candidate dicts.
+
+    Detects chemical stress (heavy metals, oxidative agents, antibiotics),
+    temperature stress, and growth-phase markers. Numeric levels and
+    units are extracted when adjacent to the agent name.
+    """
+    if not text:
+        return []
+    out: list[dict] = []
+
+    # Chemical stress — heavy metals (with quantitative level).
+    # Try both orderings: "<agent> at <level> <unit>" and the chemistry-
+    # paper-common reverse "<level> <unit> <agent>".
+    for pat in (_HEAVY_METAL_RE, _HEAVY_METAL_REV_RE):
+        for m in pat.finditer(text):
+            agent = m.group("agent").strip()
+            level = m.group("level")
+            unit = (m.group("unit") or "").strip()
+            # Normalize "mg L-1", "mg·L-1", "mg L 1", "mg/L" → "mg/L"
+            unit_norm = re.sub(r"\s+", "", unit)
+            unit_norm = unit_norm.replace("·", "/").replace("L-1", "/L")
+            unit_norm = unit_norm.replace("L1", "/L")
+            unit_norm = re.sub(r"/+", "/", unit_norm).rstrip("/")
+            if unit_norm.lower() == "mgl":
+                unit_norm = "mg/L"
+            descriptor = f"{agent} at {level} {unit_norm}".strip()
+            entry = {
+                "perturbation_type": "CHEMICAL_STRESS",
+                "descriptor": descriptor,
+                "target": agent,
+            }
+            try:
+                entry["level"] = float(level)
+            except (ValueError, TypeError):
+                pass
+            if unit_norm:
+                entry["level_unit"] = unit_norm
+            out.append(entry)
+
+    # Lite heavy-metal mention (no quantitative level extractable)
+    if not any(p.get("perturbation_type") == "CHEMICAL_STRESS" for p in out):
+        m = _HEAVY_METAL_LITE_RE.search(text)
+        if m:
+            agent = m.group("agent").strip()
+            out.append({
+                "perturbation_type": "CHEMICAL_STRESS",
+                "descriptor": f"{agent} stress",
+                "target": agent,
+            })
+
+    # Oxidative stress
+    for m in _OXIDATIVE_RE.finditer(text):
+        agent = m.group("agent").strip()
+        out.append({
+            "perturbation_type": "OXIDATIVE_STRESS",
+            "descriptor": agent,
+            "target": agent,
+        })
+        break  # one is sufficient
+
+    # Antibiotics — chemical-stress class
+    for m in _ANTIBIOTIC_RE.finditer(text):
+        agent = m.group("agent").strip()
+        entry = {
+            "perturbation_type": "CHEMICAL_STRESS",
+            "descriptor": agent,
+            "target": agent,
+        }
+        level = m.group("level")
+        unit = (m.group("unit") or "").strip() if m.group("unit") else ""
+        if level:
+            try:
+                entry["level"] = float(level)
+            except ValueError:
+                pass
+            if unit:
+                entry["level_unit"] = unit
+        out.append(entry)
+        break
+
+    # Temperature stress — affirmative cold/heat-shock context, OR "at N°C"
+    # paired with a growth/cultivation verb. We flag when:
+    #   (a) an affirmative shock/stress phrase is present, OR
+    #   (b) the abstract reports growth at a low temperature (≤10°C) or
+    #       a high temperature (≥45°C) tied to a growth verb — these
+    #       are non-default for typical mesophilic curated organisms.
+    # Avoids tagging routine "incubated at 37°C" mentions.
+    text_l = text.lower()
+    has_temp_affirmative = any(p in text_l for p in _TEMP_STRESS_AFFIRMATIVES)
+    temp_match = None
+    descriptor_phrase = None
+    if has_temp_affirmative:
+        temp_match = _TEMP_AND_GROWTH_RE.search(text) or _TEMP_RE.search(text)
+        if temp_match:
+            descriptor_phrase = next((p for p in _TEMP_STRESS_AFFIRMATIVES
+                                      if p in text_l), "temperature stress")
+    else:
+        # Implicit cold/heat — growth verb paired with extreme temp.
+        for m in _TEMP_AND_GROWTH_RE.finditer(text):
+            try:
+                t = float(m.group(1))
+            except ValueError:
+                continue
+            if t <= 10.0:
+                temp_match = m
+                descriptor_phrase = f"cold growth at {m.group(1)}°C"
+                break
+            if t >= 45.0:
+                temp_match = m
+                descriptor_phrase = f"thermophilic growth at {m.group(1)}°C"
+                break
+
+    if temp_match is not None and descriptor_phrase is not None:
+        level = temp_match.group(1)
+        entry: dict = {
+            "perturbation_type": "TEMPERATURE_STRESS",
+            "descriptor": descriptor_phrase if "°C" in descriptor_phrase
+                          else f"{descriptor_phrase} at {level}°C",
+            "target": "temperature",
+            "level_unit": "°C",
+        }
+        try:
+            entry["level"] = float(level)
+        except ValueError:
+            pass
+        out.append(entry)
+
+    # Growth-phase — slow-growth / lag-phase markers as conditional context.
+    # We *don't* treat plain "stationary phase" as a perturbation: a
+    # max-OD measurement reported at stationary phase is the standard
+    # max-attainment claim. We only flag explicit slow-growth / lag-phase
+    # qualifiers, which the curator triages have actually rejected as
+    # conditional kinetic claims (PMID:21097629 etc).
+    slow_phrases = (
+        "during slow growth", "slow-growth phase", "slow growth phase",
+        "lag phase",
+    )
+    if any(phrase in text_l for phrase in slow_phrases):
+        descriptor_phrase = next((p for p in slow_phrases if p in text_l),
+                                 "slow growth")
+        out.append({
+            "perturbation_type": "GROWTH_PHASE",
+            "descriptor": descriptor_phrase,
+            "target": "growth phase",
+        })
+
+    return _dedup_dicts(out)
+
+
+def extract_nutrient_overrides(text: str) -> list[dict]:
+    """Return a list of NutrientOverride candidate dicts."""
+    if not text:
+        return []
+    out: list[dict] = []
+    for pat in (_SOLE_SOURCE_RE, _SOLE_SOURCE_ALT_RE, _WITH_SOURCE_RE):
+        for m in pat.finditer(text):
+            role_raw = m.group("role")
+            source = (m.group("source") or "").strip(" ,.;:-")
+            if not source or len(source) < 2:
+                continue
+            # Trim trailing prepositions / articles
+            source = re.sub(
+                r"\s+(when\s+used|when|as|in|for|of|the|a|an)$",
+                "", source, flags=re.IGNORECASE,
+            ).strip(" ,.;:-")
+            # Trim leading prepositions / articles (".on L-phenylalanine")
+            source = re.sub(
+                r"^(?:on|with|in|using|the|a|an)\s+",
+                "", source, flags=re.IGNORECASE,
+            ).strip(" ,.;:-")
+            if not source or len(source) < 2:
+                continue
+            entry = {
+                "role": _normalize_role(role_raw),
+                "source": source,
+                "is_sole_source": True,
+            }
+            out.append(entry)
+    return _dedup_dicts(out)
+
+
+def extract_growth_mode(text: str) -> str | None:
+    """Return a GrowthModeEnum value or None.
+
+    Priority: non-batch modes (CHEMOSTAT, TURBIDOSTAT, FED_BATCH,
+    CONTINUOUS_FLOW, BIOFILM) win over BATCH when both are mentioned —
+    a paper that explicitly contrasts batch vs chemostat is reporting
+    on the more-specific mode.
+    """
+    if not text:
+        return None
+    found_batch = False
+    for pat, mode in _GROWTH_MODE_PATTERNS:
+        if pat.search(text):
+            if mode == "BATCH":
+                found_batch = True
+                continue
+            return mode
+    return "BATCH" if found_batch else None
+
+
+def detect_max_attainment(text: str,
+                          perturbations: list[dict],
+                          strain_mods: list[dict],
+                          nutrient_overrides: list[dict],
+                          growth_mode: str | None) -> bool | None:
+    """Return True/False/None for is_max_attainment.
+
+    Heuristic order (matches the schema-doc's intent):
+      1. If any perturbation/conditional marker is present (perturbations,
+         strain_mods, nutrient_overrides, or non-BATCH growth_mode), the
+         metric is conditional — return False.
+      2. Else if affirmative max-attainment language is present, return True.
+      3. Else None (curator decides).
+    """
+    if perturbations or strain_mods or nutrient_overrides:
+        return False
+    if growth_mode and growth_mode != "BATCH":
+        return False
+    if not text:
+        return None
+    text_l = text.lower()
+    if any(m in text_l for m in _CONDITIONAL_MARKERS):
+        return False
+    if any(p in text_l for p in _MAX_ATTAINMENT_AFFIRMATIVES):
+        return True
+    return None
+
+
 # ---------------- per-recipe proposal ----------------
 
 def propose_for_recipe(recipe: dict, recipe_path: Path,
@@ -363,6 +776,16 @@ def propose_for_recipe(recipe: dict, recipe_path: Path,
             organisms_in_abs = extract_organisms(abstract)
             strains = extract_strains(abstract)
 
+            # v2 schema additions: perturbation / conditional-growth context.
+            strain_modifications = extract_strain_modifications(abstract)
+            perturbations = extract_perturbations(abstract)
+            nutrient_overrides = extract_nutrient_overrides(abstract)
+            growth_mode = extract_growth_mode(abstract)
+            is_max_attainment = detect_max_attainment(
+                abstract, perturbations, strain_modifications,
+                nutrient_overrides, growth_mode,
+            )
+
             if not (metrics or genomes or organisms_in_abs):
                 continue
 
@@ -372,17 +795,31 @@ def propose_for_recipe(recipe: dict, recipe_path: Path,
                 if metric_snippet:
                     break
 
+            extracted: dict = {
+                "organisms": organisms_in_abs,
+                "strains": strains,
+                "genome_assembly_ids": genomes,
+                "growth_metrics": metrics,
+            }
+            # Only emit v2 fields when populated — keeps proposal YAMLs
+            # tidy for non-perturbed papers.
+            if strain_modifications:
+                extracted["strain_modifications"] = strain_modifications
+            if perturbations:
+                extracted["perturbations"] = perturbations
+            if nutrient_overrides:
+                extracted["nutrient_overrides"] = nutrient_overrides
+            if growth_mode is not None:
+                extracted["growth_mode"] = growth_mode
+            if is_max_attainment is not None:
+                extracted["is_max_attainment"] = is_max_attainment
+
             candidates.append({
                 "pmid": pmid,
                 "title": data.get("title", ""),
                 "year": data.get("year", ""),
                 "query": q,
-                "extracted": {
-                    "organisms": organisms_in_abs,
-                    "strains": strains,
-                    "genome_assembly_ids": genomes,
-                    "growth_metrics": metrics,
-                },
+                "extracted": extracted,
                 "snippet": metric_snippet or "",
                 "supports": "REVIEW",
             })
