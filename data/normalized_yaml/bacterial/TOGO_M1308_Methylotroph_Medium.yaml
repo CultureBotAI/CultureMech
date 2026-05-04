@@ -152,6 +152,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Methylotroph Medium" to "methylotroph_medium" for consistent
     matching
+- timestamp: '2026-05-04T07:57:10.478117+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=0
 solutions:
 - preferred_term: Trace element solution (see Medium [M278])
   composition: []
@@ -188,3 +192,20 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source'
   name: Unknown solution
+target_organisms:
+- preferred_term: Methylovorus mays
+  term:
+    id: NCBITaxon:184077
+    label: Methylovorus mays
+  growth_metrics:
+  - doubling_time_minutes: 120.0
+    temperature_celsius: 37.5
+    ph_at_measurement: 7.25
+    evidence:
+    - reference: PMID:11315676
+      supports: SUPPORT
+      snippet: The optimum growth temperature is 35-40 degrees C; the optimum pH is
+        7.0-7.5. The doubling time is 2 h.
+      explanation: 'Auto-applied from literature query: targeted: Methylovorus mays
+        doubling time'
+    is_max_attainment: true

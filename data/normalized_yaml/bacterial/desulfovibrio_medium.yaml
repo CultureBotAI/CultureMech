@@ -145,3 +145,23 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFOVIBRIO MEDIUM" to "desulfovibrio_medium" for
     consistent matching
+- timestamp: '2026-05-04T07:57:10.548403+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=0
+target_organisms:
+- preferred_term: Desulfovibrio intestinalis
+  term:
+    id: NCBITaxon:58621
+    label: Desulfovibrio intestinalis
+  growth_metrics:
+  - doubling_time_minutes: 750.0
+    temperature_celsius: 37.0
+    evidence:
+    - reference: PMID:10380647
+      supports: SUPPORT
+      snippet: Fastest growth with a doubling time of 12.5 h was obtained at 37 degrees
+        C and not at 28 degrees C, the temperature at which the termites were grown.
+      explanation: 'Auto-applied from literature query: targeted: Desulfovibrio intestinalis
+        doubling time'
+    is_max_attainment: true
