@@ -735,6 +735,15 @@ classes:
         multivalued: true
         inlined_as_list: true
 
+      strain_modifications:
+        description: >-
+          Genotype/phenotype modifications relative to the wild-type or
+          type strain. Strain-level (carries across observations) and
+          distinct from per-observation `growth_metrics[].perturbations`.
+        range: StrainModification
+        multivalued: true
+        inlined_as_list: true
+
   SourceEnvironmentDescriptor:
     is_a: Descriptor
     description: >-
@@ -904,6 +913,159 @@ classes:
         comments:
           - Required for any populated GrowthMetrics record
           - Each evidence item should cite the paper reporting the measurement
+
+      is_max_attainment:
+        description: >-
+          TRUE when the metric represents max-attained / standard / textbook
+          growth on this medium for this organism. FALSE when it's
+          conditional on a perturbation, mutation, or non-default condition
+          (in which case `perturbations` and/or the OrganismDescriptor's
+          `strain_modifications` should be populated). Optional; absence
+          means "not asserted either way".
+        range: boolean
+
+      growth_mode:
+        description: Cultivation mode under which the metric was measured.
+        range: GrowthModeEnum
+
+      perturbations:
+        description: >-
+          Applied stresses, modifications, or non-default conditions that
+          accompanied this growth observation. When non-empty,
+          `is_max_attainment` should typically be FALSE.
+        range: PerturbationContext
+        multivalued: true
+        inlined_as_list: true
+
+      nutrient_overrides:
+        description: >-
+          C/N/S/electron-source nutrients used in this observation that
+          differ from the recipe's prescribed ingredients (e.g.,
+          "succinate as sole carbon source", "L-phenylalanine as sole
+          nitrogen source").
+        range: NutrientOverride
+        multivalued: true
+        inlined_as_list: true
+
+  PerturbationContext:
+    description: >-
+      A non-default condition under which a growth metric was observed —
+      chemical stress, temperature stress, nutrient limitation, adaptation,
+      or non-batch culture mode. When PerturbationContext is non-empty,
+      GrowthMetrics.is_max_attainment should be FALSE (the metric is
+      conditional, not a max claim).
+    attributes:
+      perturbation_type:
+        description: Class of perturbation applied during the observation.
+        range: PerturbationTypeEnum
+        required: true
+
+      descriptor:
+        description: >-
+          Free-text description (e.g. "Cr(VI) at 10 mg/L",
+          "magnetosome-deficient strain", "cellulose-adapted",
+          "induced at OD600=0.6").
+        range: string
+
+      target:
+        description: >-
+          Subject of the perturbation — gene/locus for genetic, stressor
+          compound for chemical, limiting nutrient for nutritional,
+          substrate for adaptation.
+        range: string
+
+      level:
+        description: Quantitative level of the perturbation (e.g. 10.0 for 10 mg/L Cr(VI), 4.0 for 4 °C).
+        range: float
+
+      level_unit:
+        description: Unit for `level` (e.g. "mg/L", "mM", "%", "°C", "µmol·m⁻²·s⁻¹").
+        range: string
+
+      ontology_term:
+        description: >-
+          Optional ontology CURIE for the perturbation type or agent
+          (CHEBI for chemical agents, ENVO for environmental stress,
+          NCIT for genetic-modification class, PATO for phenotypic
+          qualities). Curator-supplied; pipeline does not auto-resolve.
+        range: string
+        pattern: "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"
+
+      evidence:
+        description: Literature evidence supporting the perturbation claim.
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+  StrainModification:
+    description: >-
+      A genotype/phenotype modification of the OrganismDescriptor's
+      strain relative to the wild-type or type strain. Applies to the
+      strain itself (carries across all media on which it grows), as
+      distinct from PerturbationContext which applies per-observation.
+    attributes:
+      modification_type:
+        description: Class of modification applied to the strain.
+        range: StrainModificationTypeEnum
+        required: true
+
+      target:
+        description: >-
+          Gene/locus name, phenotype label, or substrate the modification
+          targets (e.g. "magnetosome operon", "spo0A", "cellulose
+          utilization").
+        range: string
+
+      description:
+        description: Curator free-text describing the modification.
+        range: string
+
+      ontology_term:
+        description: >-
+          Optional CURIE — NCIT:C120956 (Knockout), NCIT:C17026
+          (Genetic Modification), PATO:0015009 (mutant), etc.
+        range: string
+        pattern: "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"
+
+      evidence:
+        description: Literature evidence supporting the modification claim.
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+  NutrientOverride:
+    description: >-
+      A nutrient source used in this observation that differs from the
+      medium's nominal recipe — typically a "sole carbon source",
+      "sole nitrogen source", or specific electron donor/acceptor
+      pairing the original recipe doesn't enforce. Distinct from the
+      medium's prescribed `ingredients`; represents experimental
+      substitution at observation time.
+    attributes:
+      role:
+        description: Functional role the override fills in the experiment.
+        range: NutrientRoleEnum
+        required: true
+
+      source:
+        description: e.g. "succinate", "L-phenylalanine", "acetate".
+        range: string
+        required: true
+
+      ontology_id:
+        description: Preferred CHEBI / FOODON CURIE for the source compound.
+        range: string
+        pattern: "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"
+
+      is_sole_source:
+        description: TRUE when this is the only source for that role in the experiment.
+        range: boolean
+
+      evidence:
+        description: Literature evidence supporting the nutrient-override claim.
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
 
   TemperatureValue:
     description: Temperature with units
@@ -1780,3 +1942,103 @@ enums:
         description: Updated from source database refresh
       NORMALIZED:
         description: Format or structure normalized to schema
+
+  PerturbationTypeEnum:
+    description: >-
+      Class of perturbation applied during a growth observation. Used by
+      PerturbationContext.perturbation_type to flag conditional growth
+      claims so downstream consumers can distinguish them from
+      max-attainment / standard-condition observations.
+    permissible_values:
+      GENETIC_MODIFICATION:
+        description: Knockout, deletion, insertion, or point mutation acting at observation time.
+        meaning: NCIT:C17026
+      CHEMICAL_STRESS:
+        description: Heavy metals, antibiotics, oxidative agents, salts at non-default levels.
+        meaning: NCIT:C25574
+      TEMPERATURE_STRESS:
+        description: Temperature outside the organism's optimum range (heat or cold shock).
+      OXIDATIVE_STRESS:
+        description: Reactive oxygen species, peroxide, paraquat, etc.
+      NUTRIENT_LIMITATION:
+        description: Sole-source / depletion / unusual substrate as growth driver.
+      ADAPTATION:
+        description: Serial passage / experimental evolution to grow on a substrate or condition.
+      GROWTH_PHASE:
+        description: Slow-growth, lag, or stationary-phase observations distinct from exponential max.
+      CULTURE_MODE:
+        description: Chemostat, fed-batch, or biofilm vs. standard batch.
+      PH_STRESS:
+        description: pH outside the organism's optimum.
+      OTHER:
+        description: Use sparingly; prefer a more specific value above.
+
+  StrainModificationTypeEnum:
+    description: >-
+      Class of genetic or selection-derived modification carried by a
+      strain relative to the wild-type or type strain.
+    permissible_values:
+      KNOCKOUT:
+        description: Targeted gene disruption (most commonly via insertion).
+        meaning: NCIT:C120956
+      DELETION:
+        description: Targeted gene or operon deletion.
+      INSERTION:
+        description: Targeted gene or marker insertion.
+      POINT_MUTATION:
+        description: Single-nucleotide or small-residue substitution.
+      OVEREXPRESSION:
+        description: Gene placed under stronger promoter / on multi-copy vector.
+      COMPLEMENTATION:
+        description: Wild-type allele restored on knockout background.
+      ADAPTATION:
+        description: Serial selection / experimental evolution producing a stable phenotype.
+      SELECTION:
+        description: Strain isolated by selective pressure (e.g. plate selection, enrichment).
+      OTHER:
+        description: Use sparingly; prefer a more specific value above.
+
+  NutrientRoleEnum:
+    description: >-
+      Functional role a NutrientOverride source fills in the experiment
+      (carbon, nitrogen, electron donor/acceptor, etc.).
+    permissible_values:
+      CARBON_SOURCE:
+        description: Sole or dominant carbon source.
+      NITROGEN_SOURCE:
+        description: Sole or dominant nitrogen source.
+      SULFUR_SOURCE:
+        description: Sole or dominant sulfur source.
+      PHOSPHATE_SOURCE:
+        description: Sole or dominant phosphorus source.
+      ELECTRON_DONOR:
+        description: Substrate oxidized for energy.
+      ELECTRON_ACCEPTOR:
+        description: Terminal acceptor for respiratory electron flow.
+      LIGHT_SOURCE:
+        description: For phototrophs — captures light intensity / wavelength as nutrient.
+      OTHER:
+        description: Use sparingly; prefer a more specific value above.
+
+  GrowthModeEnum:
+    description: >-
+      Cultivation mode under which a growth metric was measured.
+      Distinct from MediaRecipe.culture_vessel which describes the
+      vessel itself.
+    permissible_values:
+      BATCH:
+        description: Standard closed-system batch culture.
+      CHEMOSTAT:
+        description: Continuous culture with controlled dilution rate.
+      TURBIDOSTAT:
+        description: Continuous culture controlled to maintain a target turbidity.
+      CONTINUOUS_FLOW:
+        description: Other continuous-flow cultivation modes.
+      FED_BATCH:
+        description: Batch culture with controlled nutrient feed.
+      BIOFILM:
+        description: Surface-attached / biofilm cultivation.
+      SOLID_SURFACE:
+        description: Plate / agar / solid-substrate cultivation.
+      UNSPECIFIED:
+        description: Mode not stated in the source paper.

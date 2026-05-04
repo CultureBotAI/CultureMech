@@ -220,6 +220,7 @@ target_organisms:
         the textbook value of 0.09 h-1 (8 h doubling time).
       explanation: 'Auto-applied from literature query: "bg11"[All Fields] AND doubling
         time[All Fields]'
+    is_max_attainment: true
 - preferred_term: Synechococcus elongatus PCC 11801
   term:
     id: NCBITaxon:2219813
@@ -233,6 +234,7 @@ target_organisms:
         for any cyanobacteria reported so far under ambient CO2 conditions.
       explanation: 'Auto-applied from literature query: targeted: Synechococcus elongatus
         PCC 11801'
+    is_max_attainment: true
 - preferred_term: Synechococcus elongatus PCC 11802
   term:
     id: NCBITaxon:2283154
@@ -248,3 +250,4 @@ target_organisms:
         applications in the biorefinery.
       explanation: 'Auto-applied from literature query: targeted: Synechococcus elongatus
         PCC 11802'
+    is_max_attainment: true

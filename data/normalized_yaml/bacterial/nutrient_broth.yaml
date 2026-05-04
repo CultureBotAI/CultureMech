@@ -71,3 +71,4 @@ target_organisms:
         and had a doubling time of 29.2 h.
       explanation: 'Auto-applied from literature query: "nutrient broth"[All Fields]
         AND doubling time[All Fields]'
+    is_max_attainment: true

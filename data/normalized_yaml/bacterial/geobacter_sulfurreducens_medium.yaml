@@ -377,3 +377,4 @@ target_organisms:
         acceptor)
       explanation: 'Auto-applied from literature query: targeted: Geobacter sulfurreducens
         doubling time'
+    is_max_attainment: true

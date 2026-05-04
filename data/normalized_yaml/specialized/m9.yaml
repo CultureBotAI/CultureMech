@@ -100,3 +100,4 @@ target_organisms:
         able to grow cells in linear log phase to an OD600 of up to 10.
       explanation: 'Auto-applied from literature query: "M9"[All Fields] AND OD600[All
         Fields]'
+    is_max_attainment: true
