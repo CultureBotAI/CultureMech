@@ -389,3 +389,27 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOSARCINA MEDIUM" to "methanosarcina_medium" for
     consistent matching
+- timestamp: '2026-05-04T06:34:23.060619+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=0
+target_organisms:
+- preferred_term: Methanosarcina acetivorans
+  term:
+    id: NCBITaxon:2214
+    label: Methanosarcina acetivorans
+  growth_metrics:
+  - doubling_time_minutes: 2940.0
+    evidence:
+    - reference: PMID:21097629
+      supports: SUPPORT
+      snippet: M. acetivorans was found to be polyploid during fast growth (t(D) =
+        6 h; 17 genome copies) and oligoploid during slow growth (doubling time =
+        49 h; 3 genome copies).
+      explanation: 'Auto-applied from literature query: backfill PMID:21097629'
+    is_max_attainment: false
+    growth_mode: BATCH
+    perturbations:
+    - perturbation_type: GROWTH_PHASE
+      descriptor: slow-growth phase
+      target: growth phase

@@ -327,3 +327,31 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PYROCOCCUS MEDIUM" to "pyrococcus_medium" for consistent
     matching
+- timestamp: '2026-05-04T06:34:23.081340+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=1
+target_organisms:
+- preferred_term: Pyrococcus furiosus
+  term:
+    id: NCBITaxon:2261
+    label: Pyrococcus furiosus
+  strain_modifications:
+  - modification_type: ADAPTATION
+    target: cellulose utilization
+    description: serially adapted for growth on CF11 cellulose
+  growth_metrics:
+  - doubling_time_minutes: 64.0
+    evidence:
+    - reference: PMID:21421788
+      supports: SUPPORT
+      snippet: P. furiosus was serially adapted for growth on CF11 cellulose and H₂
+        production, which is the first reported instance of hyperthermophilic growth
+        on cellulose, with a doubling time of 64 min.
+      explanation: 'Auto-applied from literature query: backfill PMID:21421788'
+    is_max_attainment: false
+    growth_mode: BATCH
+    nutrient_overrides:
+    - role: CARBON_SOURCE
+      source: CF11 cellulose
+      is_sole_source: true
