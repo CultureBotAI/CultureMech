@@ -30,6 +30,8 @@ jobs:
           path: CultureMech
 
       - name: Checkout claw (kg_microbe_browser + kg_microbe_qc)
+        id: checkout-claw
+        continue-on-error: true
         uses: actions/checkout@v4
         with:
           repository: CultureBotAI/culturebotai-claw
@@ -52,6 +54,7 @@ jobs:
           python src/culturemech/render_media_pages.py
 
       - name: Render QC dashboard
+        if: steps.checkout-claw.outcome == 'success'
         env:
           PYTHONPATH: ${{ github.workspace }}/culturebotai-claw/src
         run: |
@@ -64,8 +67,10 @@ jobs:
         run: |
           mkdir -p site
           cp -r CultureMech/pages/* site/
-          mkdir -p site/dashboard
-          cp -r CultureMech/dashboard/* site/dashboard/
+          if [ -d CultureMech/dashboard ]; then
+            mkdir -p site/dashboard
+            cp -r CultureMech/dashboard/* site/dashboard/
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

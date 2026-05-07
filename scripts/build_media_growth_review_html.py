@@ -220,7 +220,6 @@ input, select {{
 <header>
   <nav>
     <a href="index.html">Media index</a>
-    <a href="dashboard/index.html">QC dashboard</a>
   </nav>
   <h1>CultureMech Media Growth Evidence Review</h1>
   <p class="muted">Coverage report for medium-centered growth-evidence review. Generated {escape(generated_at)} from <code>{escape(str(source_path.relative_to(REPO_ROOT)))}</code>.</p>

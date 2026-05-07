@@ -145,7 +145,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <header>
 <h1>CultureMech — Media index</h1>
 <p class="muted">{count:,} media records, generated {generated_at}.</p>
-<p><a href="media_growth_review.html">Media growth evidence review</a> <span class="muted">·</span> <a href="dashboard/index.html">QC dashboard</a></p>
+<p><a href="media_growth_review.html">Media growth evidence review</a></p>
 </header>
 {by_category}
 </body>
