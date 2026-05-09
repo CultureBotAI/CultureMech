@@ -1,6 +1,8 @@
 # CultureMech - Main Build File
 # Imports project-specific recipes from project.justfile
 
+set dotenv-load := true
+
 import 'project.justfile'
 
 # Default recipe: show help

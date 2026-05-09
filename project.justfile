@@ -16,6 +16,8 @@ merge_yaml_dir := "data/merge_yaml"
 processed_data_dir := "data/processed"
 cmm_automation_dir := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/cmm-ai-automation/data"
 microbe_media_param_dir := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/MicrobeMediaParam/MicroMediaParam/pipeline_output/merge_mappings"
+research_dir := "research"
+templates_dir := "templates"
 
 # ================================================================
 # DATA LAYERS (Layer 1: Raw → Layer 2: Processed → Layer 3: KB)
@@ -31,6 +33,27 @@ fetch-raw-data:
     @echo ""
     @echo "Optional: just fetch-bacdive-raw, just scrape-nbrc-raw"
     @echo "See raw/*/README.md for provenance information"
+
+# ================================================================
+# DEEP RESEARCH
+# ================================================================
+
+[group('Research')]
+research-media provider target *args="":
+    uv run --extra dev python scripts/research_media.py \
+      --provider {{provider}} \
+      --target {{target}} \
+      --template {{templates_dir}}/media_growth_research.md \
+      --research-dir {{research_dir}} \
+      {{args}}
+
+[group('Research')]
+research-providers:
+    uv run --extra dev python scripts/research_media.py --list-providers
+
+[group('Research')]
+research-provider provider:
+    uv run --extra dev python scripts/research_media.py --provider {{provider}} --provider-info
 
 [group('Data')]
 fetch-mediadive-raw:

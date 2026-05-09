@@ -26,6 +26,11 @@ ENV/
 env/
 .venv
 
+# Local secrets
+.env
+.env.*
+!.env.example
+
 # IDE
 .vscode/
 .idea/
@@ -59,6 +64,9 @@ references_cache/
 
 # Pipeline runtime artifacts (proposals, validation reports, NCBI lookup cache)
 workspace/
+
+# Generated deep-research outputs
+research/
 
 # UMAP embedding cache (large pickle files - DO NOT commit)
 .umap_cache/
