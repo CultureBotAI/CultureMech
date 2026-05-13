@@ -1,7 +1,8 @@
 id: CultureMech:003613
-name: for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553
-original_name: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522, DSM
-  22681, DSM 23576 and DSM 24553
+name:
+  for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553
+original_name: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522,
+  DSM 22681, DSM 23576 and DSM 24553
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -12,8 +13,8 @@ media_term:
   preferred_term: KOMODO Medium 104b.1
   term:
     id: komodo.medium:104b.1
-    label: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522, DSM 22681,
-      DSM 23576 and DSM 24553
+    label: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522, DSM
+      22681, DSM 23576 and DSM 24553
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:
@@ -151,6 +152,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:35.235927+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592,
-    DSM 19522, DSM 22681, DSM 23576 and DSM 24553" to "for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553"
+  notes: Normalized name from "For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM
+    17592, DSM 19522, DSM 22681, DSM 23576 and DSM 24553" to
+    "for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553"
     for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_104b_PYX-MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003622
+  name: pyx_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

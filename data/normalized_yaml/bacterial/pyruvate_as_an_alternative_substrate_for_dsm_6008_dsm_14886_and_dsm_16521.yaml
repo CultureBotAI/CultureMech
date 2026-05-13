@@ -1,7 +1,7 @@
 id: CultureMech:005700
 name: pyruvate_as_an_alternative_substrate_for_dsm_6008_dsm_14886_and_dsm_16521
-original_name: pyruvate as an alternative substrate for DSM 6008, DSM 14886 and DSM
-  16521
+original_name: pyruvate as an alternative substrate for DSM 6008, DSM 14886 and
+  DSM 16521
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -10,7 +10,8 @@ media_term:
   preferred_term: KOMODO Medium 507.1
   term:
     id: komodo.medium:507.1
-    label: pyruvate as an alternative substrate for DSM 6008, DSM 14886 and DSM 16521
+    label: pyruvate as an alternative substrate for DSM 6008, DSM 14886 and DSM
+      16521
 notes: 'Source: KOMODO ModelSEED | ID: 507.1 | DSMZ Medium: 507 (mediadive.medium:507)
   | Aerobic: Yes'
 ingredients:
@@ -283,8 +284,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.802315Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:35.521123Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -296,6 +297,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:51.941653+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "pyruvate as an alternative substrate for DSM 6008,
-    DSM 14886 and DSM 16521" to "pyruvate_as_an_alternative_substrate_for_dsm_6008_dsm_14886_and_dsm_16521"
+  notes: Normalized name from "pyruvate as an alternative substrate for DSM
+    6008, DSM 14886 and DSM 16521" to
+    "pyruvate_as_an_alternative_substrate_for_dsm_6008_dsm_14886_and_dsm_16521"
     for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_507_CARBOXYDOTHERMUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005708
+  name: carboxydothermus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

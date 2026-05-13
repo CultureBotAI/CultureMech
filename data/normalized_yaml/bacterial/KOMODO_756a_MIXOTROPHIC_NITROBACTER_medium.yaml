@@ -159,6 +159,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:57.823680+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MIXOTROPHIC NITROBACTER medium" to "mixotrophic_nitrobacter_medium"
-    for consistent matching
+  notes: Normalized name from "MIXOTROPHIC NITROBACTER medium" to
+    "mixotrophic_nitrobacter_medium" for consistent matching
 ph_value: 8.6
+variant_children:
+- path: data/normalized_yaml/bacterial/10_mixotrophic_nitrobacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001890
+  name: 10_mixotrophic_nitrobacter_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

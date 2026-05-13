@@ -68,6 +68,15 @@ curation_history:
 - timestamp: '2026-03-17T19:46:01.561237+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 9 MODIFIED FOR DSM 53191" to "medium_9_modified_for_dsm_53191"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 9 MODIFIED FOR DSM 53191" to
+    "medium_9_modified_for_dsm_53191" for consistent matching
 ph_value: 7.2
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_9a_VY_2_REDUCED_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006986
+  name: vy_2_reduced_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -289,5 +289,25 @@ curation_history:
 - timestamp: '2026-03-17T19:46:01.066129+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CHLOROFLEXUS medium (modified)" to "chloroflexus_medium_modified"
-    for consistent matching
+  notes: Normalized name from "CHLOROFLEXUS medium (modified)" to
+    "chloroflexus_medium_modified" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_87a_CHLOROFLEXUS_AGGREGANS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006721
+  name: chloroflexus_aggregans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/chloroflexus_aggregans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002039
+  name: chloroflexus_aggregans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_87a_modified_for_dsm_13941.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006720
+  name: medium_87a_modified_for_dsm_13941
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

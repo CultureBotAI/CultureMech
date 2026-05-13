@@ -57,7 +57,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:11.877578+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GAM Medium" to "gam_medium" for consistent matching
+  notes: Normalized name from "GAM Medium" to "gam_medium" for consistent
+    matching
 solutions:
 - preferred_term: Nissui GAM Broth*
   composition: []
@@ -66,3 +67,10 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M682_Distilled_Water.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010087
+  name: distilled_water
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

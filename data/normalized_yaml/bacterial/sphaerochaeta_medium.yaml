@@ -124,13 +124,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, maltose and DTT, then sparge
-    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave
-    at 121°C for 20 minutes. Add maltose and DTT from sterile anoxic stock solutions
-    prepared under 100% N2 gas and sterilized by filtration and carbonate from a sterile
-    stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Check pH of complete
-    medium and adjust to 7.4, if necessary.
+  description: Dissolve ingredients except carbonate, maltose and DTT, then
+    sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave at 121°C for 20 minutes. Add maltose and DTT from
+    sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by
+    filtration and carbonate from a sterile stock solution prepared under 80% N2
+    and 20% CO2 gas atmosphere. Check pH of complete medium and adjust to 7.4,
+    if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -149,5 +150,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.292743+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPHAEROCHAETA MEDIUM" to "sphaerochaeta_medium" for
-    consistent matching
+  notes: Normalized name from "SPHAEROCHAETA MEDIUM" to "sphaerochaeta_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/spirochaeta_coccoides_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003952
+  name: spirochaeta_coccoides_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

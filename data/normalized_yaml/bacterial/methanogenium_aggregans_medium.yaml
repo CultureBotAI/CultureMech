@@ -312,5 +312,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.068150+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOGENIUM AGGREGANS medium" to "methanogenium_aggregans_medium"
-    for consistent matching
+  notes: Normalized name from "METHANOGENIUM AGGREGANS medium" to
+    "methanogenium_aggregans_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/methanocorpusculum_aggregans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001423
+  name: methanocorpusculum_aggregans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

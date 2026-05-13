@@ -62,6 +62,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:49.665545+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 464 MODIFIED FOR DSM 15727" to "medium_464_modified_for_dsm_15727"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 464 MODIFIED FOR DSM 15727" to
+    "medium_464_modified_for_dsm_15727" for consistent matching
 ph_value: 7.0
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_464_PLATE_COUNT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005519
+  name: plate_count_agar
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

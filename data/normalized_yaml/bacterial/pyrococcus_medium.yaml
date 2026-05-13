@@ -305,6 +305,22 @@ preparation_steps:
     a syringe without opening the bottle.
 applications:
 - Microbial cultivation
+variants:
+- name: cf11_cellulose_adapted_pyrococcus_furiosus
+  description: Serially adapted Pyrococcus furiosus growth on CF11 cellulose.
+  modifications:
+  - Use Pyrococcus furiosus serially adapted for cellulose utilization.
+  - Use CF11 cellulose as the growth substrate.
+  purpose: Capture cellulose-adapted hyperthermophilic growth evidence under the
+    parent Pyrococcus Medium record.
+  evidence:
+  - reference: PMID:21421788
+    supports: SUPPORT
+    snippet: P. furiosus was serially adapted for growth on CF11 cellulose and H₂
+      production, which is the first reported instance of hyperthermophilic growth
+      on cellulose, with a doubling time of 64 min.
+    explanation: Literature evidence supports a CF11-cellulose-adapted growth
+      variant for Pyrococcus furiosus under the parent Pyrococcus Medium record.
 curation_history:
 - timestamp: '2026-01-26T17:53:10.944283Z'
   curator: mediadive-import
@@ -331,6 +347,10 @@ curation_history:
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
   notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=1
+- timestamp: '2026-05-05T07:23:23.171579+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0
 target_organisms:
 - preferred_term: Pyrococcus furiosus
   term:

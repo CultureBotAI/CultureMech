@@ -295,6 +295,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:47.325459+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 430 MODIFIED FOR DSM 13718" to "medium_430_modified_for_dsm_13718"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 430 MODIFIED FOR DSM 13718" to
+    "medium_430_modified_for_dsm_13718" for consistent matching
 ph_value: 8.5
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/ectothiorhodospira_abdelmalekii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001539
+  name: ectothiorhodospira_abdelmalekii_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

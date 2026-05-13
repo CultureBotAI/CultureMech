@@ -77,5 +77,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:27.239061+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Potato-Sucrose Agar" to "potato_sucrose_agar" for consistent
-    matching
+  notes: Normalized name from "Potato-Sucrose Agar" to "potato_sucrose_agar" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/potato_sucrose_agar_psa.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:007942
+  name: potato_sucrose_agar_psa
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

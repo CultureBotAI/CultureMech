@@ -326,15 +326,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve hydrogen carbonate, carbonate, sodium chloride, and hydrogen
-    phosphate, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
-    Dispense solution under the same gas atmosphere into anoxic Hungate-type tubes
-    or serum vials and autoclave. After sterilization add ammonium chloride, magnesium
-    chloride, yeast extract, trace elements, glycerol, vitamins, and sulfide from
-    a sterile anoxic stock solution prepared under 100% N2 gas. The vitamin solution
-    should be sterilized by filtration. Sulfur is sterilized by steaming for 3 hours
-    on each of 3 successive days (see medium 35) and added aseptically to the sterile
-    medium as powder while retaining anoxic conditions. Adjust the pH of the complete
+  description: Dissolve hydrogen carbonate, carbonate, sodium chloride, and
+    hydrogen phosphate, then sparge medium with 100% N2 gas for 30 - 45 min to
+    make it anoxic. Dispense solution under the same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. After sterilization add
+    ammonium chloride, magnesium chloride, yeast extract, trace elements,
+    glycerol, vitamins, and sulfide from a sterile anoxic stock solution
+    prepared under 100% N2 gas. The vitamin solution should be sterilized by
+    filtration. Sulfur is sterilized by steaming for 3 hours on each of 3
+    successive days (see medium 35) and added aseptically to the sterile medium
+    as powder while retaining anoxic conditions. Adjust the pH of the complete
     medium to 9.8 - 10.0, if necessary.
 - step_number: 2
   action: MIX
@@ -349,8 +350,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.466677Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:18:58.144657Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -362,6 +363,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.508709+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NATRONIELLA SULFIDIGENA MEDIUM" to "natroniella_sulfidigena_medium"
-    for consistent matching
+  notes: Normalized name from "NATRONIELLA SULFIDIGENA MEDIUM" to
+    "natroniella_sulfidigena_medium" for consistent matching
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/aht3_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004045
+  name: aht3_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

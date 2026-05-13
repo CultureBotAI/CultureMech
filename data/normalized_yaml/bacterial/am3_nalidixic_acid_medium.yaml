@@ -124,8 +124,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:17.258688+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AM3 + Nalidixic acid medium" to "am3_nalidixic_acid_medium"
-    for consistent matching
+  notes: Normalized name from "AM3 + Nalidixic acid medium" to
+    "am3_nalidixic_acid_medium" for consistent matching
 solutions:
 - preferred_term: Nalidixic acid solution (50 mg/ml)*
   composition: []
@@ -134,3 +134,12 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Solution, Defined component, Complex component'
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/am3_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008609
+  name: am3_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

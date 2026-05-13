@@ -286,5 +286,13 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.015156+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOANAEROBACTER TENGCONGENSIS medium" to "thermoanaerobacter_tengcongensis_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOANAEROBACTER TENGCONGENSIS medium" to
+    "thermoanaerobacter_tengcongensis_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/thermoanaerobacter_kreatinophilus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002146
+  name: thermoanaerobacter_kreatinophilus_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

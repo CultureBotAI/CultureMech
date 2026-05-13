@@ -308,17 +308,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except CaCl2 x 2H2O, MgCl2 x 6H2O, sulfur and Na2S
-    x 9H2O, adjust pH to 6.5 and autoclave. Separately autoclave CaCl2 x 2H2O and
-    MgCl2 x 6H2O and add to the medium. Steam sulfur for 3 hr on each of 3 successive
-    days. Autoclave neutralized 5% Na2S x 9H2O under a N2 atmosphere. Dispense the
-    medium into culture vessels containing sulfur under a N2 atmosphere, and seal
-    with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S x 9H2O
-    solution to the medium and readjust pH, if necessary.
+  description: Mix ingredients except CaCl2 x 2H2O, MgCl2 x 6H2O, sulfur and
+    Na2S x 9H2O, adjust pH to 6.5 and autoclave. Separately autoclave CaCl2 x
+    2H2O and MgCl2 x 6H2O and add to the medium. Steam sulfur for 3 hr on each
+    of 3 successive days. Autoclave neutralized 5% Na2S x 9H2O under a N2
+    atmosphere. Dispense the medium into culture vessels containing sulfur under
+    a N2 atmosphere, and seal with butyl rubber stoppers. Prior to inoculation,
+    add the sterile Na2S x 9H2O solution to the medium and readjust pH, if
+    necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH
+    solution. Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -341,5 +342,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:28.645558+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DEFERRIBACTER ABYSSI MEDIUM" to "deferribacter_abyssi_medium"
-    for consistent matching
+  notes: Normalized name from "DEFERRIBACTER ABYSSI MEDIUM" to
+    "deferribacter_abyssi_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/caminibacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002726
+  name: caminibacter_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

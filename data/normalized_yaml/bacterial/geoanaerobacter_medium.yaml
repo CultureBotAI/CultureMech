@@ -215,20 +215,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: First dissolve ferric citrate by heating the water under continuous
-    stirring. After cooling to room temperature adjust the pH to 6.0, then add and
-    dissolve the remaining ingredients, except carbonate, acetate and ascorbate. Sparge
-    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
-    then dispense under the same gas atmosphere into anoxic Hungate-type tubes or
-    serum vials and autoclave. After autoclaving add acetate and ascorbate from sterile
-    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to
-    inoculation check the medium pH and adjust to 6.8, if necessary.
+  description: First dissolve ferric citrate by heating the water under
+    continuous stirring. After cooling to room temperature adjust the pH to 6.0,
+    then add and dissolve the remaining ingredients, except carbonate, acetate
+    and ascorbate. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic, then dispense under the same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving
+    add acetate and ascorbate from sterile anoxic stock solutions prepared under
+    100% N2 gas and carbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Prior to inoculation check the medium
+    pH and adjust to 6.8, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N
+    NaOH and add ferrous chloride. After ferrous chloride has dissolved add
+    other compounds. Finally adjust pH to 6.0 and bring volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -247,5 +248,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.750808+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GEOANAEROBACTER MEDIUM" to "geoanaerobacter_medium"
-    for consistent matching
+  notes: Normalized name from "GEOANAEROBACTER MEDIUM" to
+    "geoanaerobacter_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_9736.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006631
+  name: for_dsm_9736
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

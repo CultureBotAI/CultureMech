@@ -83,9 +83,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients and adjust pH to 7.5. Sparge medium with 100%
-    N2 gas for 30 - 45 min to make it anoxic. Distribute medium under same gas atmosphere
-    in anoxic Hungate-type tubes or serum vials and autoclave.
+  description: Dissolve ingredients and adjust pH to 7.5. Sparge medium with
+    100% N2 gas for 30 - 45 min to make it anoxic. Distribute medium under same
+    gas atmosphere in anoxic Hungate-type tubes or serum vials and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -104,5 +104,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.238470+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FAECALICATENA OROTICA MEDIUM" to "faecalicatena_orotica_medium"
-    for consistent matching
+  notes: Normalized name from "FAECALICATENA OROTICA MEDIUM" to
+    "faecalicatena_orotica_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/orotic_acid_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004621
+  name: orotic_acid_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

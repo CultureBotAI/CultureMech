@@ -136,9 +136,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave Salt base solution and yeast extract (as a 10% solution)
-    separately and combine after cooling. Steam sulfur for 3 hr on each of 3 successive
-    days.
+  description: Autoclave Salt base solution and yeast extract (as a 10%
+    solution) separately and combine after cooling. Steam sulfur for 3 hr on
+    each of 3 successive days.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 2.5 with 10 N H2SO4.
@@ -160,5 +160,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:31.011613+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AEROBIC SULFOLOBALES MEDIUM" to "aerobic_sulfolobales_medium"
-    for consistent matching
+  notes: Normalized name from "AEROBIC SULFOLOBALES MEDIUM" to
+    "aerobic_sulfolobales_medium" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/JCM_J693_AEROBIC_SULFOLOBALES_MEDIUM_WITHOUT_SULFUR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003038
+  name: aerobic_sulfolobales_medium_without_sulfur
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

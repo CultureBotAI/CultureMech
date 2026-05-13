@@ -119,5 +119,74 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.403525+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ISP 5 MEDIUM" to "isp_5_medium" for consistent matching
+  notes: Normalized name from "ISP 5 MEDIUM" to "isp_5_medium" for consistent
+    matching
 ph_value: 7.2
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_993a_NESTERENKONIA_MODIFIED_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006974
+  name: nesterenkonia_modified_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/KOMODO_993b_MODIFIED_ISP5_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006975
+  name: modified_isp5_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_993_modified_for_dsm_16375.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006965
+  name: medium_993_modified_for_dsm_16375
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_993_modified_for_dsm_44844.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006966
+  name: medium_993_modified_for_dsm_44844
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_993_modified_for_dsm_45009.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006967
+  name: medium_993_modified_for_dsm_45009
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_993_modified_for_dsm_45010.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006968
+  name: medium_993_modified_for_dsm_45010
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_993_modified_for_dsm_45011.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006969
+  name: medium_993_modified_for_dsm_45011
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_993_modified_for_dsm_45013.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006970
+  name: medium_993_modified_for_dsm_45013
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_993_modified_for_dsm_45014.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006971
+  name: medium_993_modified_for_dsm_45014
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_993_modified_for_dsm_45016.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006972
+  name: medium_993_modified_for_dsm_45016
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/nesterenkonia_modified_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002176
+  name: nesterenkonia_modified_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

@@ -25,10 +25,11 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:32139
-    label: null
+    label:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
-description: Mueller Hinton II Broth for cultivation and antimicrobial susceptibility
-  testing; with bicarbonate; Chelated with a resin, and then the resin is removed
+description: Mueller Hinton II Broth for cultivation and antimicrobial
+  susceptibility testing; with bicarbonate; Chelated with a resin, and then the
+  resin is removed
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED
 sources:
@@ -46,3 +47,12 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015595'
 data_quality_flags:
 - has_unmapped_ingredients
+parent_media:
+  path: data/normalized_yaml/specialized/mhii_biocarbonate.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:015594
+  name: MHII biocarbonate
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

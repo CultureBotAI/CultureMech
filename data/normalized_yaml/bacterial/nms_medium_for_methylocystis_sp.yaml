@@ -168,9 +168,9 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 2
   action: AUTOCLAVE
-  description: Dispense the medium into the growth vessels. If using sealed vessels
-    it is appropriate to add 50% methane to the gas phase Autoclave at 121°C for 15
-    min.
+  description: Dispense the medium into the growth vessels. If using sealed
+    vessels it is appropriate to add 50% methane to the gas phase Autoclave at
+    121°C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -189,5 +189,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.986658+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NMS MEDIUM FOR METHYLOCYSTIS SP." to "nms_medium_for_methylocystis_sp"
-    for consistent matching
+  notes: Normalized name from "NMS MEDIUM FOR METHYLOCYSTIS SP." to
+    "nms_medium_for_methylocystis_sp" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/nms_medium_for_methanotrophs.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003899
+  name: nms_medium_for_methanotrophs
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

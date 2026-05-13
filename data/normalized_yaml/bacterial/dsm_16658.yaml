@@ -271,3 +271,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "DSM 16658" to "dsm_16658" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_792_PYROLOBUS_FUMARII_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006501
+  name: pyrolobus_fumarii_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

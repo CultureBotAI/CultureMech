@@ -326,16 +326,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except vitamins and cysteine, adjust pH to 7.2
-    and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. Prior to inoculation add vitamins and cysteine from sterile anoxic
-    stock solutions prepared under 100% N2 gas. Vitamins should be sterilized by filtration.
-    Adjust pH of complete medium to 7.0, if necessary.
+  description: Dissolve ingredients except vitamins and cysteine, adjust pH to
+    7.2 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. Prior to inoculation add vitamins and cysteine
+    from sterile anoxic stock solutions prepared under 100% N2 gas. Vitamins
+    should be sterilized by filtration. Adjust pH of complete medium to 7.0, if
+    necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 - step_number: 3
   action: MIX
   description: Sterilize by filtration under 100% N2 gas atmosphere.
@@ -349,8 +350,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:24.974192Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:09.888307Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -362,5 +363,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.495330+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SOLIDESULFOVIBRIO MEDIUM" to "solidesulfovibrio_medium"
-    for consistent matching
+  notes: Normalized name from "SOLIDESULFOVIBRIO MEDIUM" to
+    "solidesulfovibrio_medium" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_896_DESULFOVIBRIO_MAGNETICUS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006751
+  name: desulfovibrio_magneticus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

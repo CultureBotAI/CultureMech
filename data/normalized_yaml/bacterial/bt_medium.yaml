@@ -267,3 +267,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BT medium" to "bt_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/sporotomaculum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001963
+  name: sporotomaculum_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

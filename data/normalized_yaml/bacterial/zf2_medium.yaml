@@ -310,4 +310,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:02.463790+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ZF2 medium" to "zf2_medium" for consistent matching
+  notes: Normalized name from "ZF2 medium" to "zf2_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/sedimentibacter_saalensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002119
+  name: sedimentibacter_saalensis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

@@ -52,5 +52,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:31.511963+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NUTRIENT AGAR" to "nutrient_agar" for consistent matching
+  notes: Normalized name from "NUTRIENT AGAR" to "nutrient_agar" for consistent
+    matching
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002194
+  name: alkaline_nutrient_agar
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

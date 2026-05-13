@@ -302,4 +302,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.314876+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 14385" to "for_dsm_14385" for consistent matching
+  notes: Normalized name from "For DSM 14385" to "for_dsm_14385" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/pseudothermotoga_lettingae_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001803
+  name: pseudothermotoga_lettingae_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/thermotoga_elfii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006247
+  name: thermotoga_elfii_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

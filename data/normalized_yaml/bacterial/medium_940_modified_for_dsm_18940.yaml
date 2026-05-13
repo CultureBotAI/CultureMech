@@ -92,6 +92,15 @@ curation_history:
 - timestamp: '2026-03-17T19:46:02.403141+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 940 MODIFIED FOR DSM 18940" to "medium_940_modified_for_dsm_18940"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 940 MODIFIED FOR DSM 18940" to
+    "medium_940_modified_for_dsm_18940" for consistent matching
 ph_value: 9.0
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_940_HORIKOSHI_ALKALINE.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006870
+  name: horikoshi_alkaline
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

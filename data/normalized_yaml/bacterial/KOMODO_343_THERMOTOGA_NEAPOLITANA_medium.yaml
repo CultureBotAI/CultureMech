@@ -305,5 +305,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.459813+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOTOGA NEAPOLITANA medium" to "thermotoga_neapolitana_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOTOGA NEAPOLITANA medium" to
+    "thermotoga_neapolitana_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_343_modified_for_dsm_12029.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005051
+  name: medium_343_modified_for_dsm_12029
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_343_modified_for_dsm_5068.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005052
+  name: medium_343_modified_for_dsm_5068
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/thermosipho_melanesiensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001444
+  name: thermosipho_melanesiensis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

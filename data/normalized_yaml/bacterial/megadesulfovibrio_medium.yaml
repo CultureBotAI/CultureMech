@@ -252,14 +252,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
-    to make it anoxic, then dispense under the same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Solution B is autoclaved under 80% N2 and
-    20% CO2 gas atmosphere. Solution C is prepared under 100% N2 gas atmosphere and
-    sterilized by filtration. Solution D is autoclaved separately under 100% N2 gas.
-    To complete the medium appropriate amounts of solutions B to D are added to the
-    sterile solution A in the sequence as indicated. Final pH of the medium should
-    be 7.0 - 7.2.
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic, then dispense under the same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Solution B is
+    autoclaved under 80% N2 and 20% CO2 gas atmosphere. Solution C is prepared
+    under 100% N2 gas atmosphere and sterilized by filtration. Solution D is
+    autoclaved separately under 100% N2 gas. To complete the medium appropriate
+    amounts of solutions B to D are added to the sterile solution A in the
+    sequence as indicated. Final pH of the medium should be 7.0 - 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
   description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
@@ -287,5 +287,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:11.615867+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEGADESULFOVIBRIO MEDIUM" to "megadesulfovibrio_medium"
-    for consistent matching
+  notes: Normalized name from "MEGADESULFOVIBRIO MEDIUM" to
+    "megadesulfovibrio_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/desulfovibrio_gigas_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004170
+  name: desulfovibrio_gigas_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

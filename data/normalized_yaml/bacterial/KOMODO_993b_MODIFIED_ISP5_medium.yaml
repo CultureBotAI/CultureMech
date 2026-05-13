@@ -119,5 +119,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.415406+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED ISP5 medium" to "modified_isp5_medium" for
-    consistent matching
+  notes: Normalized name from "MODIFIED ISP5 medium" to "modified_isp5_medium"
+    for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_993_ISP_5_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006973
+  name: isp_5_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

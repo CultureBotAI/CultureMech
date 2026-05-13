@@ -75,29 +75,27 @@ preparation_steps:
   description: 3:1 mixture
 - step_number: 3
   action: AUTOCLAVE
-  description: See separate recipes.  Autoclave separately.  Mix aseptically when
-    cool.
+  description: See separate recipes.  Autoclave separately.  Mix aseptically
+    when cool.
 - step_number: 4
   action: AUTOCLAVE
-  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue\
-    \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with\
-    \ deionized water.  Filter through GF/C paper \r\nand autoclave at 15 psi for\
-    \ 15 minutes."
+  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue
+    to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with deionized
+    water.  Filter through GF/C paper \r\nand autoclave at 15 psi for 15 minutes."
 - step_number: 5
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
-    minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for
+    15 minutes.
 - step_number: 6
   action: AUTOCLAVE
-  description: "Make up 1 litre of New Cereal Leaf-­Prescott Liquid (NCL ­- see separate\
-    \ recipe), but\r\nuse only 0.1 g of cereal leaves.  Mix with 15 g of Bacteriological\
-    \ Agar (Oxoid L11).\r\nAutoclave at 15 psi for 15 minutes."
+  description: "Make up 1 litre of New Cereal Leaf-­Prescott Liquid (NCL ­- see separate
+    recipe), but\r\nuse only 0.1 g of cereal leaves.  Mix with 15 g of Bacteriological
+    Agar (Oxoid L11).\r\nAutoclave at 15 psi for 15 minutes."
 - step_number: 7
   action: AUTOCLAVE
-  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue\
-    \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with\
-    \ deionized water.  Filter through GF/C paper \r\nand autoclave at 15 psi for\
-    \ 15 minutes."
+  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue
+    to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with deionized
+    water.  Filter through GF/C paper \r\nand autoclave at 15 psi for 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:
@@ -120,5 +118,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:05.870984+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NCL:PJ/0.01%NPA" to "ncl_pj_0_01_npa" for consistent
-    matching
+  notes: Normalized name from "NCL:PJ/0.01%NPA" to "ncl_pj_0_01_npa" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/ncl_0_01_npa.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000378
+  name: ncl_0_01_npa
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

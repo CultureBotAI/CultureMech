@@ -262,16 +262,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine and thiosulfate), bring medium
-    to the boil then cool to room temperature under 100% N2 gas atmosphere. Add cysteine
-    and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Before inoculation, add thiosulfate
-    from a sterile anoxic stock solution prepared under 100% N2 gas and sterilized
-    by filtration. Adjust pH of complete medium to 7.5, if necessary.
+  description: Dissolve ingredients (except cysteine and thiosulfate), bring
+    medium to the boil then cool to room temperature under 100% N2 gas
+    atmosphere. Add cysteine and adjust pH to 7.5, then dispense medium under
+    100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and
+    autoclave. Before inoculation, add thiosulfate from a sterile anoxic stock
+    solution prepared under 100% N2 gas and sterilized by filtration. Adjust pH
+    of complete medium to 7.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -294,5 +295,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.449744+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOANAEROBACTER KREATINOPHILUS MEDIUM" to "thermoanaerobacter_kreatinophilus_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOANAEROBACTER KREATINOPHILUS MEDIUM" to
+    "thermoanaerobacter_kreatinophilus_medium" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/thermoanaerobacter_tengcongensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006922
+  name: thermoanaerobacter_tengcongensis_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

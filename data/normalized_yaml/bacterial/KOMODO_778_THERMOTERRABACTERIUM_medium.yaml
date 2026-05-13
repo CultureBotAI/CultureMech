@@ -313,8 +313,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.250623Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:08:46.008455Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -330,5 +330,30 @@ curation_history:
 - timestamp: '2026-03-17T19:45:58.119882+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOTERRABACTERIUM medium" to "thermoterrabacterium_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOTERRABACTERIUM medium" to
+    "thermoterrabacterium_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_13639_and_dsm_13655.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006436
+  name: for_dsm_13639_and_dsm_13655
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_16624.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006437
+  name: for_dsm_16624
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_19393.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006438
+  name: for_dsm_19393
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/thermolithobacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001912
+  name: thermolithobacter_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

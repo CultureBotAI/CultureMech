@@ -122,5 +122,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:15.430235+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TOGO Medium M1861" to "togo_medium_m1861" for consistent
-    matching
+  notes: Normalized name from "TOGO Medium M1861" to "togo_medium_m1861" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/togo_medium_m1853.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008428
+  name: togo_medium_m1853
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -95,5 +95,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:43.528478+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 271 MODIFIED FOR DSM 11477" to "medium_271_modified_for_dsm_11477"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 271 MODIFIED FOR DSM 11477" to
+    "medium_271_modified_for_dsm_11477" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/acidithiobacillus_aph_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001370
+  name: acidithiobacillus_aph_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

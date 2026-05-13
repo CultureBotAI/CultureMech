@@ -266,5 +266,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.355295+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPIRILLUM D427 medium" to "spirillum_d427_medium" for
-    consistent matching
+  notes: Normalized name from "SPIRILLUM D427 medium" to "spirillum_d427_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/spirillum_winogradskyi_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002001
+  name: spirillum_winogradskyi_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

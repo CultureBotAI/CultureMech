@@ -348,8 +348,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:50.738409Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:23.004992Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -361,4 +361,42 @@ curation_history:
 - timestamp: '2026-03-17T19:45:37.483665+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ASO4 medium" to "aso4_medium" for consistent matching
+  notes: Normalized name from "ASO4 medium" to "aso4_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/desulfuribacillus_medium_arsenate.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000608
+  name: desulfuribacillus_medium_arsenate
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_22071.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003879
+  name: for_dsm_22071
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_22410.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003881
+  name: for_dsm_22410
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_24176_and_dsm_24629.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003882
+  name: for_dsm_24176_and_dsm_24629
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_24179.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003883
+  name: for_dsm_24179
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_24400.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003880
+  name: for_dsm_24400
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

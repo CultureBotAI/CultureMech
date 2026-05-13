@@ -380,8 +380,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.478292Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:44.395763Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -397,5 +397,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:46.987766+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOSPHAERA medium II" to "methanosphaera_medium_ii"
-    for consistent matching
+  notes: Normalized name from "METHANOSPHAERA medium II" to
+    "methanosphaera_medium_ii" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/methanosphaera_cuniculi_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001514
+  name: methanosphaera_cuniculi_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

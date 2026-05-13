@@ -106,9 +106,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except thiosulfate and adjust the pH to 6.6. Dispense
-    in suitable culivation vials and autoclave. Add thiosulfate to the autoclaved
-    medium from a sterile stock solution.
+  description: Dissolve ingredients except thiosulfate and adjust the pH to 6.6.
+    Dispense in suitable culivation vials and autoclave. Add thiosulfate to the
+    autoclaved medium from a sterile stock solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -127,5 +127,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.445325+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOBACILLUS MEDIUM" to "thiobacillus_medium" for consistent
-    matching
+  notes: Normalized name from "THIOBACILLUS MEDIUM" to "thiobacillus_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_18181.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005082
+  name: for_dsm_18181
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

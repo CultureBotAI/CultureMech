@@ -295,19 +295,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except sulfur, peptone, yeast extract, bicarbonate,
-    and sulfide, adjust the pH to 6.8, and sparge medium with 80% N2 and 20% CO2 gas
-    mixture for 30 - 45 min to make it anoxic. Distribute medium under the same gas
-    atmosphere into anoxic Hungate-type tubes or serum vials that already contain
-    the appropriate amount of sulfur. Sterilize the medium by autoclaving at <b>110°C</b>
-    for 20 min. After sterilization add peptone, yeast extract, and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas atmosphere and bicarbonate from
-    a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust
-    the pH of the complete medium to 6.8, if necessary.
+  description: Dissolve ingredients except sulfur, peptone, yeast extract,
+    bicarbonate, and sulfide, adjust the pH to 6.8, and sparge medium with 80%
+    N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Distribute
+    medium under the same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials that already contain the appropriate amount of sulfur. Sterilize the
+    medium by autoclaving at <b>110°C</b> for 20 min. After sterilization add
+    peptone, yeast extract, and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas atmosphere and bicarbonate from a sterile stock
+    solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust the pH of the
+    complete medium to 6.8, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -330,5 +331,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.545762+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYROCOCCUS ST04 MEDIUM" to "pyrococcus_st04_medium"
-    for consistent matching
+  notes: Normalized name from "PYROCOCCUS ST04 MEDIUM" to
+    "pyrococcus_st04_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_19918.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005112
+  name: for_dsm_19918
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

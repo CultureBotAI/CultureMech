@@ -100,5 +100,85 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.235927+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TRYPTONE SOYA BROTH (TSB)" to "tryptone_soya_broth_tsb"
-    for consistent matching
+  notes: Normalized name from "TRYPTONE SOYA BROTH (TSB)" to
+    "tryptone_soya_broth_tsb" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_545a_DILUTED_TRYPTONE_SOYA_BROTH_TSB.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005986
+  name: diluted_tryptone_soya_broth_tsb
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_22112.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005979
+  name: for_dsm_22112
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_545_modified_for_dsm_13887.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005974
+  name: medium_545_modified_for_dsm_13887
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_545_modified_for_dsm_14656.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005975
+  name: medium_545_modified_for_dsm_14656
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_545_modified_for_dsm_15825.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005976
+  name: medium_545_modified_for_dsm_15825
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_545_modified_for_dsm_17447.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005977
+  name: medium_545_modified_for_dsm_17447
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_545_modified_for_dsm_17566.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005978
+  name: medium_545_modified_for_dsm_17566
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_545_modified_for_dsm_21372.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005980
+  name: medium_545_modified_for_dsm_21372
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_545_modified_for_dsm_21886.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005981
+  name: medium_545_modified_for_dsm_21886
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_545_modified_for_dsm_23581.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005982
+  name: medium_545_modified_for_dsm_23581
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_545_modified_for_dsm_6385.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005983
+  name: medium_545_modified_for_dsm_6385
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_545a_modified_for_dsm_17448.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005985
+  name: medium_545a_modified_for_dsm_17448
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/tryptone_soya_broth_anaerob.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001679
+  name: tryptone_soya_broth_anaerob
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

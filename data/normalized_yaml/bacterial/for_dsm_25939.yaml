@@ -49,5 +49,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:40.838627+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 25939" to "for_dsm_25939" for consistent matching
+  notes: Normalized name from "For DSM 25939" to "for_dsm_25939" for consistent
+    matching
 kg_microbe_match: mediadive.medium:12
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_191_CORN_MEAL_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004218
+  name: corn_meal_agar
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

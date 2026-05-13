@@ -321,8 +321,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:34.190663Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:35.429031Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -334,5 +334,32 @@ curation_history:
 - timestamp: '2026-03-17T19:45:51.848873+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 5885" to "for_dsm_5885" for consistent matching
+  notes: Normalized name from "For DSM 5885" to "for_dsm_5885" for consistent
+    matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_6139.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005695
+  name: for_dsm_6139
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_6150.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005696
+  name: for_dsm_6150
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/formivibrio_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001637
+  name: formivibrio_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/propionivibrio_acetivibrio_formivibrio_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005697
+  name: propionivibrio_acetivibrio_formivibrio_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

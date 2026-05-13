@@ -63,4 +63,54 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.308946+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ISP2 medium" to "isp2_medium" for consistent matching
+  notes: Normalized name from "ISP2 medium" to "isp2_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/isp_2_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002169
+  name: isp_2_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_987_modified_for_dsm_15665.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006949
+  name: medium_987_modified_for_dsm_15665
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_987_modified_for_dsm_41839.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006950
+  name: medium_987_modified_for_dsm_41839
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_987_modified_for_dsm_44928.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006951
+  name: medium_987_modified_for_dsm_44928
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_987_modified_for_dsm_45080.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006952
+  name: medium_987_modified_for_dsm_45080
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_987_modified_for_dsm_45096.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006953
+  name: medium_987_modified_for_dsm_45096
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_987_modified_for_dsm_45452.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006954
+  name: medium_987_modified_for_dsm_45452
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_987_modified_for_dsm_45783.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006955
+  name: medium_987_modified_for_dsm_45783
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

@@ -203,4 +203,319 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.022203+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "R2A medium" to "r2a_medium" for consistent matching
+  notes: Normalized name from "R2A medium" to "r2a_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_830a_medium_R2A_MODIFIED.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006620
+  name: medium_r2a_modified
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/KOMODO_830b_medium_R2A_FOR_DENITRIFYING_BACTERIA.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006621
+  name: medium_r2a_for_denitrifying_bacteria
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_22224.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006591
+  name: for_dsm_22224
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_13665.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006567
+  name: medium_830_modified_for_dsm_13665
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_14773.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006568
+  name: medium_830_modified_for_dsm_14773
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_14805.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006569
+  name: medium_830_modified_for_dsm_14805
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_15671.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006570
+  name: medium_830_modified_for_dsm_15671
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_16968.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006571
+  name: medium_830_modified_for_dsm_16968
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_16969.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006572
+  name: medium_830_modified_for_dsm_16969
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_17871.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006573
+  name: medium_830_modified_for_dsm_17871
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_18042.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006576
+  name: medium_830_modified_for_dsm_18042
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_18043.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006577
+  name: medium_830_modified_for_dsm_18043
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_18045.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006578
+  name: medium_830_modified_for_dsm_18045
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_18135.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006579
+  name: medium_830_modified_for_dsm_18135
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_18203.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006580
+  name: medium_830_modified_for_dsm_18203
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_18221.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006581
+  name: medium_830_modified_for_dsm_18221
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_18603.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006582
+  name: medium_830_modified_for_dsm_18603
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_18704.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006583
+  name: medium_830_modified_for_dsm_18704
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_18758.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006584
+  name: medium_830_modified_for_dsm_18758
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_19096.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006585
+  name: medium_830_modified_for_dsm_19096
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_19249.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006586
+  name: medium_830_modified_for_dsm_19249
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_19250.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006587
+  name: medium_830_modified_for_dsm_19250
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_19309.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006588
+  name: medium_830_modified_for_dsm_19309
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_19717.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006589
+  name: medium_830_modified_for_dsm_19717
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_19724.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006590
+  name: medium_830_modified_for_dsm_19724
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_21036.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006592
+  name: medium_830_modified_for_dsm_21036
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_21240.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006593
+  name: medium_830_modified_for_dsm_21240
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_21316.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006594
+  name: medium_830_modified_for_dsm_21316
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_21346.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006595
+  name: medium_830_modified_for_dsm_21346
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_21362.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006596
+  name: medium_830_modified_for_dsm_21362
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_21490.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006597
+  name: medium_830_modified_for_dsm_21490
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_21568.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006598
+  name: medium_830_modified_for_dsm_21568
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_21789.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006600
+  name: medium_830_modified_for_dsm_21789
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_21942.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006601
+  name: medium_830_modified_for_dsm_21942
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_21994.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006602
+  name: medium_830_modified_for_dsm_21994
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_22342.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006603
+  name: medium_830_modified_for_dsm_22342
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_22349.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006604
+  name: medium_830_modified_for_dsm_22349
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_22405.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006605
+  name: medium_830_modified_for_dsm_22405
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_22464.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006606
+  name: medium_830_modified_for_dsm_22464
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_22489.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006608
+  name: medium_830_modified_for_dsm_22489
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_22869.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006609
+  name: medium_830_modified_for_dsm_22869
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_23119.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006610
+  name: medium_830_modified_for_dsm_23119
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_23228.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006611
+  name: medium_830_modified_for_dsm_23228
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_23491.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006612
+  name: medium_830_modified_for_dsm_23491
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_23886.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006614
+  name: medium_830_modified_for_dsm_23886
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_23906.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006615
+  name: medium_830_modified_for_dsm_23906
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_24448.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006616
+  name: medium_830_modified_for_dsm_24448
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830_modified_for_dsm_25262.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006617
+  name: medium_830_modified_for_dsm_25262
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830a_modified_for_dsm_15637.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006619
+  name: medium_830a_modified_for_dsm_15637
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830c_modified_for_dsm_13663.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006622
+  name: medium_830c_modified_for_dsm_13663
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_830c_modified_for_dsm_25221.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006623
+  name: medium_830c_modified_for_dsm_25221
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_r2a_for_denitrifying_bacteria.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001986
+  name: medium_r2a_for_denitrifying_bacteria
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

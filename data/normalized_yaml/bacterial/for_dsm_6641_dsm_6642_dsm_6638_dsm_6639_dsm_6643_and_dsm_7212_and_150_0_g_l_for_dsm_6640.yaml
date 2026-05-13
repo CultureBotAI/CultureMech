@@ -1,7 +1,8 @@
 id: CultureMech:006071
-name: for_dsm_6641_dsm_6642_dsm_6638_dsm_6639_dsm_6643_and_dsm_7212_and_150_0_g_l_for_dsm_6640
-original_name: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM 7212
-  and 150.0 g/l for DSM 6640
+name:
+  for_dsm_6641_dsm_6642_dsm_6638_dsm_6639_dsm_6643_and_dsm_7212_and_150_0_g_l_for_dsm_6640
+original_name: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM
+  7212 and 150.0 g/l for DSM 6640
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -10,8 +11,8 @@ media_term:
   preferred_term: KOMODO Medium 591.1
   term:
     id: komodo.medium:591.1
-    label: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM 7212 and
-      150.0 g/l for DSM 6640
+    label: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM 7212
+      and 150.0 g/l for DSM 6640
 notes: 'Source: KOMODO ModelSEED | ID: 591.1 | DSMZ Medium: 591 (mediadive.medium:591)
   | Aerobic: No'
 ingredients:
@@ -321,8 +322,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:12.853771Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:38.068764Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -334,6 +335,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.938278+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643,
-    and DSM 7212 and 150.0 g/l for DSM 6640" to "for_dsm_6641_dsm_6642_dsm_6638_dsm_6639_dsm_6643_and_dsm_7212_and_150_0_g_l_for_dsm_6640"
+  notes: Normalized name from "For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM
+    6643, and DSM 7212 and 150.0 g/l for DSM 6640" to
+    "for_dsm_6641_dsm_6642_dsm_6638_dsm_6639_dsm_6643_and_dsm_7212_and_150_0_g_l_for_dsm_6640"
     for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_591_HALOBACTEROIDES_HALOINCOLA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006073
+  name: halobacteroides_haloincola_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -139,10 +139,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 6.8. Boil the medium for few minutes. Fill in tubes with
-    rubber stoppers under nitrogen gas. Fill immediately about 45 ml Sterilize at
-    121°C for 15 min. Cool to room temperature and aseptically add the following filter-sterilized
-    solutions.
+  description: Adjust pH to 6.8. Boil the medium for few minutes. Fill in tubes
+    with rubber stoppers under nitrogen gas. Fill immediately about 45 ml
+    Sterilize at 121°C for 15 min. Cool to room temperature and aseptically add
+    the following filter-sterilized solutions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -161,5 +161,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.519739+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HELIOBACILLUS MOBILIS MEDIUM (modified van Niel's medium)"
-    to "heliobacillus_mobilis_medium_modified_van_niels_medium" for consistent matching
+  notes: Normalized name from "HELIOBACILLUS MOBILIS MEDIUM (modified van Niel's
+    medium)" to "heliobacillus_mobilis_medium_modified_van_niels_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/heliobacillus_mobilis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005963
+  name: heliobacillus_mobilis_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

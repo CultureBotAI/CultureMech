@@ -107,8 +107,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:14.984107+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Oatmeal Agar (ISP medium No.3, pH 5.5)" to "oatmeal_agar_isp_medium_no_3_ph_5_5"
-    for consistent matching
+  notes: Normalized name from "Oatmeal Agar (ISP medium No.3, pH 5.5)" to
+    "oatmeal_agar_isp_medium_no_3_ph_5_5" for consistent matching
 solutions:
 - preferred_term: Trace salts solution*
   term:
@@ -119,3 +119,12 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_3683_Trace_salts_solution.yaml for composition
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/oatmeal_agar_isp_medium_no_3.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008009
+  name: oatmeal_agar_isp_medium_no_3
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -178,6 +178,34 @@ ingredients:
     unit: G_PER_L
 applications:
 - Microbial cultivation
+variants:
+- name: columbia_blood_agar_staphylococcus_saccharolyticus_anaerobic
+  description: Columbia blood agar cultivation evidence for the type strain
+    Staphylococcus saccharolyticus ATCC 14953 / DSM 20359 / NCTC 11807, formerly
+    Peptococcus saccharolyticus.
+  modifications:
+  - BacDive DSMZ Medium 693 specifies Columbia agar base with 50 g/L defibrinated
+    sheep blood; the local parent record contains a Columbia blood agar base with
+    horse blood at 40 g/L.
+  - Incubate anaerobically or under reduced oxygen at 37 C for this anaerobic
+    organism.
+  purpose: Capture strain-specific qualitative growth evidence while preserving
+    the blood-source and concentration difference as a variant-level formulation
+    note.
+  evidence:
+  - reference: PMID:7077295
+    supports: SUPPORT
+    snippet: The highest bacterial counts were obtained on Columbia blood agar incubated
+      anaerobically.
+    explanation: The primary literature reports quantitative culture of
+      Peptococcus saccharolyticus strains, now Staphylococcus saccharolyticus,
+      on Columbia blood agar under anaerobic incubation.
+  - reference: https://bacdive.dsmz.de/strain/14567
+    supports: SUPPORT
+    explanation: BacDive identifies Staphylococcus saccharolyticus S1 as the
+      type strain with DSM 20359, ATCC 14953, JCM 1768, and NCTC 11807 aliases;
+      its cultivation data list Columbia Blood Medium with positive growth at
+      37 C.
 curation_history:
 - timestamp: 2026-01-27T01:15:02.fZ
   curator: komodo-web-import
@@ -200,3 +228,42 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "COLUMBIA BLOOD AGAR" to "columbia_blood_agar" for consistent
     matching
+- timestamp: '2026-05-05T00:00:00+00:00'
+  curator: literature_review_manual
+  action: ADDED_GROWTH_EVIDENCE
+  notes: Added qualitative Columbia blood agar growth evidence for
+    Staphylococcus saccharolyticus ATCC 14953 / DSM 20359 / NCTC 11807 from
+    PMID:7077295 and BacDive strain 14567.
+target_organisms:
+- preferred_term: Staphylococcus saccharolyticus
+  term:
+    id: NCBITaxon:33028
+    label: Staphylococcus saccharolyticus
+  genome_assembly_id:
+  - GCA_003968885.1
+  - SAMN05977977
+  strain: ATCC 14953; DSM 20359; JCM 1768; NCTC 11807; VPI 5661; S1
+  evidence:
+  - reference: https://bacdive.dsmz.de/strain/14567
+    supports: SUPPORT
+    explanation: BacDive lists the type strain aliases, NCBI taxon 33028,
+      Columbia Blood Medium cultivation, and positive growth at 37 C for this
+      strain.
+  growth_metrics:
+  - temperature_celsius: 37.0
+    measurement_conditions: Columbia blood agar; anaerobic incubation; qualitative
+      positive growth/count evidence rather than OD or doubling-time measurement.
+    evidence:
+    - reference: PMID:7077295
+      supports: SUPPORT
+      snippet: The highest bacterial counts were obtained on Columbia blood agar incubated
+        anaerobically.
+      explanation: The abstract directly supports growth of Peptococcus
+        saccharolyticus, now Staphylococcus saccharolyticus, on Columbia blood
+        agar under anaerobic incubation.
+    - reference: https://bacdive.dsmz.de/strain/14567
+      supports: SUPPORT
+      explanation: BacDive strain 14567 links the ATCC 14953 / DSM 20359 /
+        NCTC 11807 type strain to positive growth on Columbia Blood Medium at
+        37 C.
+    is_max_attainment: false

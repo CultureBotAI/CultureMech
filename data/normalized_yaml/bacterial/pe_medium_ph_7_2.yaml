@@ -260,6 +260,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:28.430358+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PE MEDIUM (pH 7.2)" to "pe_medium_ph_7_2" for consistent
-    matching
+  notes: Normalized name from "PE MEDIUM (pH 7.2)" to "pe_medium_ph_7_2" for
+    consistent matching
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/pe_medium_ph_6_8.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002695
+  name: pe_medium_ph_6_8
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -64,3 +64,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YPGA" to "ypga" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_1015_modified_for_dsm_16734.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003525
+  name: medium_1015_modified_for_dsm_16734
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

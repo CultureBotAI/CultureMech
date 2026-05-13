@@ -283,5 +283,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:50.811678+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOBACILLUS THIOPARUS II MEDIUM" to "thiobacillus_thioparus_ii_medium"
-    for consistent matching
+  notes: Normalized name from "THIOBACILLUS THIOPARUS II MEDIUM" to
+    "thiobacillus_thioparus_ii_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/thiobacillus_thioparus_tk_m_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001614
+  name: thiobacillus_thioparus_tk_m_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

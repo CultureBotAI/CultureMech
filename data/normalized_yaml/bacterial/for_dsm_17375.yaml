@@ -347,8 +347,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.772897Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:03.631273Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -364,4 +364,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.473809+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 17375" to "for_dsm_17375" for consistent matching
+  notes: Normalized name from "For DSM 17375" to "for_dsm_17375" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/mj_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003521
+  name: mj_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

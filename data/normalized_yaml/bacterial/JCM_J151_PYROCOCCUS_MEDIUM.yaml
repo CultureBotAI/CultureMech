@@ -263,16 +263,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.5
-    with H2SO4. Sterilize by filtration under a N2 atmosphere. Steam sulfur for 3
-    hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5% solution, and
-    autoclave under a N2 atmosphere. Aseptically and anaerobically add sterile sulfur
-    to the medium. Prior to inoculation, add the sterile Na2S x 9H2O solution, and
-    readjust pH to 6.5, if necessary.
+  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to
+    6.5 with H2SO4. Sterilize by filtration under a N2 atmosphere. Steam sulfur
+    for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5%
+    solution, and autoclave under a N2 atmosphere. Aseptically and anaerobically
+    add sterile sulfur to the medium. Prior to inoculation, add the sterile Na2S
+    x 9H2O solution, and readjust pH to 6.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH
+    solution. Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -295,5 +295,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.067522+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYROCOCCUS MEDIUM" to "pyrococcus_medium" for consistent
-    matching
+  notes: Normalized name from "PYROCOCCUS MEDIUM" to "pyrococcus_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/jcm_medium_no_261.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002619
+  name: jcm_medium_no_261
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

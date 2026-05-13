@@ -267,12 +267,12 @@ preparation_steps:
     add per litter the following solution (autoclave and stored under a N2 atmosphere):'
 - step_number: 2
   action: ADJUST_PH
-  description: Readjust pH to 5.5, if necessary. Pressurize inoculated vessels to
-    200kPa H2 -CO2 (80:20, v/v).
+  description: Readjust pH to 5.5, if necessary. Pressurize inoculated vessels
+    to 200kPa H2 -CO2 (80:20, v/v).
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH
+    solution. Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -295,5 +295,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.413742+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYRODICTIUM BROCKII MEDIUM" to "pyrodictium_brockii_medium"
-    for consistent matching
+  notes: Normalized name from "PYRODICTIUM BROCKII MEDIUM" to
+    "pyrodictium_brockii_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/pyrodictium_abysii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002567
+  name: pyrodictium_abysii_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

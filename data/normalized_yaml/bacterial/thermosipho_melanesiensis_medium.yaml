@@ -281,16 +281,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except sulfide and cysteine) and adjust pH to
-    6.5. Boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
-    Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    to 30% of volume and autoclave. Add sulfide and cysteine from sterile anoxic stock
-    solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if
-    necessary.
+  description: Dissolve ingredients (except sulfide and cysteine) and adjust pH
+    to 6.5. Boil medium for 1 min, then cool to room temperature under 100% N2
+    gas atmosphere. Dispense under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials to 30% of volume and autoclave. Add sulfide and
+    cysteine from sterile anoxic stock solutions prepared under 100% N2 gas.
+    Adjust pH of complete medium to 6.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -313,5 +313,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.256431+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOSIPHO MELANESIENSIS MEDIUM" to "thermosipho_melanesiensis_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOSIPHO MELANESIENSIS MEDIUM" to
+    "thermosipho_melanesiensis_medium" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_343_THERMOTOGA_NEAPOLITANA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005053
+  name: thermotoga_neapolitana_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

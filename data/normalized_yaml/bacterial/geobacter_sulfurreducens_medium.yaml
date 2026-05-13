@@ -322,19 +322,38 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, fumarate and vitamins), sparge
-    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
-    Add bicarbonate and equilibrate the medium with 80% N2 and 20% CO2 gas mixture
-    to reach a pH of 6.8, then dispense medium under the same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving add
-    fumarate and vitamins from anoxic stock solutions prepared under 100% N2 gas atmosphere
-    and sterilized by filtration. Check medium pH and adjust to 6.8, if necessary.
+  description: Dissolve ingredients (except bicarbonate, fumarate and vitamins),
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it
+    anoxic. Add bicarbonate and equilibrate the medium with 80% N2 and 20% CO2
+    gas mixture to reach a pH of 6.8, then dispense medium under the same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After autoclaving add fumarate and vitamins from anoxic stock solutions
+    prepared under 100% N2 gas atmosphere and sterilized by filtration. Check
+    medium pH and adjust to 6.8, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
+variants:
+- name: acetate_fumarate_geobacter_sulfurreducens_growth
+  description: Geobacter sulfurreducens growth with acetate as electron donor
+    and fumarate as electron acceptor.
+  modifications:
+  - Use acetate as the electron donor.
+  - Use fumarate as the electron acceptor.
+  - Use Geobacter sulfurreducens as the target organism.
+  purpose: Capture electron donor/acceptor-specific growth evidence under the
+    parent Geobacter sulfurreducens Medium record.
+  evidence:
+  - reference: PMID:35960254
+    supports: SUPPORT
+    snippet: engineering of the slow-growing Geobacter sulfurreducens (a
+      doubling time of 5 h with acetate as the electron donor and fumarate as
+      the electron acceptor)
+    explanation: Literature evidence supports modeling the acetate/fumarate
+      growth condition under the parent Geobacter sulfurreducens Medium record.
 curation_history:
 - timestamp: '2026-01-26T17:53:12.389425Z'
   curator: mediadive-import
@@ -343,8 +362,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:31.346117Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:09.004914Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -356,8 +375,8 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.510989+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GEOBACTER SULFURREDUCENS MEDIUM" to "geobacter_sulfurreducens_medium"
-    for consistent matching
+  notes: Normalized name from "GEOBACTER SULFURREDUCENS MEDIUM" to
+    "geobacter_sulfurreducens_medium" for consistent matching
 - timestamp: '2026-05-04T02:34:24.019323+00:00'
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
@@ -372,9 +391,18 @@ target_organisms:
     evidence:
     - reference: PMID:35960254
       supports: SUPPORT
-      snippet: engineering of the slow-growing Geobacter sulfurreducens (a doubling
-        time of 5 h with acetate as the electron donor and fumarate as the electron
-        acceptor)
+      snippet: engineering of the slow-growing Geobacter sulfurreducens (a
+        doubling time of 5 h with acetate as the electron donor and fumarate as
+        the electron acceptor)
       explanation: 'Auto-applied from literature query: targeted: Geobacter sulfurreducens
         doubling time'
     is_max_attainment: true
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_826_GEOBACTER_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006556
+  name: geobacter_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

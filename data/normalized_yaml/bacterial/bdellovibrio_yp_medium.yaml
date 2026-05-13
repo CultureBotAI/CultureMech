@@ -30,16 +30,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Preparation of double layered agar plates:<p>\r\n<b>Bottom layer:</b>\
-    \ Dissolve 12.0 g Bacto agar in 900 ml distilled water and autoclave. After cooling\
-    \ to 60°C add 100 ml of sterile YP medium (autoclaved at 121°C for 15 min) and\
-    \ pour plates. Dry plates at room temperature for 2 - 3 days .<p>\r\n<b>Top layer:</b>\
-    \ Grow prey bacterium on agar slants using medium 54. Prepare 5 ml aliquots of\
-    \ 0.6% Bacto agar in distilled water and autoclave in test tubes. After cooling\
-    \ to 45°C in a water bath add 0.5 ml sterile YP medium (autoclaved at 121°C for\
-    \ 15 min) and 0.5 ml cell suspension of host organism, mix and pour top layer.\
-    \ For the top layer of one plate use one 24 h old agar slant culture and wash\
-    \ off grown cells in 0.5 ml sterile water.<p>"
+  description: "Preparation of double layered agar plates:<p>\r\n<b>Bottom layer:</b>
+    Dissolve 12.0 g Bacto agar in 900 ml distilled water and autoclave. After cooling
+    to 60°C add 100 ml of sterile YP medium (autoclaved at 121°C for 15 min) and pour
+    plates. Dry plates at room temperature for 2 - 3 days .<p>\r\n<b>Top layer:</b>
+    Grow prey bacterium on agar slants using medium 54. Prepare 5 ml aliquots of 0.6%
+    Bacto agar in distilled water and autoclave in test tubes. After cooling to 45°C
+    in a water bath add 0.5 ml sterile YP medium (autoclaved at 121°C for 15 min)
+    and 0.5 ml cell suspension of host organism, mix and pour top layer. For the top
+    layer of one plate use one 24 h old agar slant culture and wash off grown cells
+    in 0.5 ml sterile water.<p>"
 - step_number: 2
   action: MIX
   description: Inoculate double layer plates the same day when prepared.
@@ -57,5 +57,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.283810+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BDELLOVIBRIO (YP) MEDIUM" to "bdellovibrio_yp_medium"
-    for consistent matching
+  notes: Normalized name from "BDELLOVIBRIO (YP) MEDIUM" to
+    "bdellovibrio_yp_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/tris_yp_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004661
+  name: tris_yp_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

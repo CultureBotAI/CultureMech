@@ -278,7 +278,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:18.549383+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AF6 (pH4.0)" to "af6_ph4_0" for consistent matching
+  notes: Normalized name from "AF6 (pH4.0)" to "af6_ph4_0" for consistent
+    matching
 solutions:
 - preferred_term: P IV Metals solution*
   composition: []
@@ -286,3 +287,12 @@ solutions:
     value: '5'
     unit: G_PER_L
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/af6.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008317
+  name: af6
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

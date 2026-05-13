@@ -220,5 +220,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.936643+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CATENOCOCCUS MEDIUM" to "catenococcus_medium" for consistent
-    matching
+  notes: Normalized name from "CATENOCOCCUS MEDIUM" to "catenococcus_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/allocatenococcus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001781
+  name: allocatenococcus_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

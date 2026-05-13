@@ -124,11 +124,56 @@ ingredients:
     label: ''
 description: For growing Synechococcus elongatus PCC 7942, pH should be 7.1
 notes: 'Source: FEBA media definitions'
-category: ALGAE
-sources:
-- database: CultureBotHT
-  database_id: BG11
-  url: https://github.com/CultureBotAI/CultureBotHT
+category: algae
+source_data:
+  origin: CultureBotHT
+  notes: 'database_id: BG11; url: https://github.com/CultureBotAI/CultureBotHT'
+variants:
+- name: nitrate_replete_bg11_nostoc_linckia
+  description: BG11 nitrate-replete condition used for Nostoc linckia growth and
+    biomass productivity comparison with nitrate-free BG110.
+  modifications:
+  - Use BG11 medium with nitrate present.
+  - Compare with BG110 medium lacking nitrate.
+  purpose: Capture nitrate-replete BG11 growth evidence for Nostoc linckia.
+  evidence:
+  - reference: PMID:36550226
+    supports: SUPPORT
+    snippet: Cultures grown in BG11 accumulated more cell biomass reaching a dry weight
+      of 1.65 ± 0.06 g L-1, compared to 0.92 ± 0.01 g L-1 in BG110 after 240 h
+      of culture.
+    explanation: Literature evidence reports higher biomass and productivity of
+      Nostoc linckia in BG11 than nitrate-free BG110.
+- name: bg11_synechococcus_ucp002
+  description: BG-11 cultivation condition for unaxenic Synechococcus sp. UCP002
+    isolated from the Peruvian Amazon Basin.
+  modifications:
+  - Culture Synechococcus sp. UCP002 in BG-11 medium.
+  - Use standardized growth-parameter and biochemical-profile measurements.
+  purpose: Capture strain-specific BG-11 growth and genome-context evidence for
+    Synechococcus sp. UCP002.
+  evidence:
+  - reference: PMID:36437912
+    supports: SUPPORT
+    snippet: The cyanobacterium was isolated from the Peruvian Amazon Basin region
+      and cultured in BG-11 medium.
+    explanation: Literature evidence directly states that Synechococcus sp. UCP002
+      was cultured in BG-11 medium.
+- name: bg11_scenedesmus_obliquus_abc009_photoautotrophic
+  description: BG-11 photoautotrophic cultivation condition for the lutein-producing
+    algal strain reported as Scenedesmus obliquus ABC-009.
+  modifications:
+  - Use BG-11 medium under photoautotrophic cultivation.
+  - Compare air and 2% CO2 gas conditions.
+  purpose: Capture strain-level BG-11 growth evidence for Scenedesmus obliquus
+    ABC-009, currently mapped by NCBI to Tetradesmus obliquus.
+  evidence:
+  - reference: PMID:34584038
+    supports: SUPPORT
+    snippet: photoautotrophic mode using BG-11 medium with air or 2% CO2 and heterotrophic
+      mode using YM medium.
+    explanation: Literature evidence directly states that strain ABC-009 was
+      evaluated under photoautotrophic BG-11 cultivation conditions.
 curation_history:
 - timestamp: '2026-03-18T04:31:12.439728+00:00'
   curator: import_from_culturebotht.py
@@ -140,3 +185,71 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015450'
 data_quality_flags:
 - has_unmapped_ingredients
+target_organisms:
+- preferred_term: Nostoc linckia
+  term:
+    id: NCBITaxon:92942
+    label: Nostoc linckia
+  growth_metrics:
+  - measurement_conditions: BG11 nitrate-replete medium after 240 h of culture;
+      compared with nitrate-free BG110.
+    evidence:
+    - reference: PMID:36550226
+      supports: SUPPORT
+      snippet: Cultures grown in BG11 accumulated more cell biomass reaching a dry weight
+        of 1.65 ± 0.06 g L-1, compared to 0.92 ± 0.01 g L-1 in BG110 after 240 h
+        of culture.
+      explanation: Literature evidence reports biomass accumulation of Nostoc
+        linckia in BG11.
+    is_max_attainment: false
+- preferred_term: Synechococcus sp. UCP002
+  strain: UCP002
+  term:
+    id: NCBITaxon:2885151
+    label: Synechococcus sp. UCP002
+  growth_metrics:
+  - growth_rate_per_hour: 0.086
+    doubling_time_minutes: 484.8
+    measurement_conditions: BG-11 medium culture of an unaxenic Synechococcus sp.
+      UCP002 isolate from the Peruvian Amazon Basin.
+    evidence:
+    - reference: PMID:36437912
+      supports: SUPPORT
+      snippet: Synechococcus sp. UCP002 had a specific growth rate of 0.086 ± 0.008 μ
+        and a doubling time of 8.08 ± 0.78 h.
+      explanation: Literature evidence reports growth rate and doubling time for
+        Synechococcus sp. UCP002 cultured in BG-11 medium.
+    is_max_attainment: false
+  evidence:
+  - reference: PMID:36437912
+    supports: SUPPORT
+    snippet: Growth parameters, genome features, and the biochemical profile of the
+      cyanobacterium were determined using standardized methods.
+    explanation: Literature evidence reports a complete genome for UCP002, but no
+      NCBI GCA/GCF/SAMN accession was resolved from NCBI assembly or nuccore search.
+- preferred_term: Tetradesmus obliquus
+  strain: ABC-009
+  term:
+    id: NCBITaxon:3088
+    label: Tetradesmus obliquus
+  growth_metrics:
+  - measurement_conditions: Photoautotrophic BG-11 medium cultivation with air
+      or 2% CO2 for the strain reported in the source as Scenedesmus obliquus
+      ABC-009.
+    growth_mode: BATCH
+    evidence:
+    - reference: PMID:34584038
+      supports: SUPPORT
+      snippet: Scenedesmus obliquus ABC-009 is a microalgal strain that accumulates large
+        amounts of lutein, particularly when subjected to growth-limiting conditions.
+      explanation: Literature evidence identifies the strain studied under BG-11
+        photoautotrophic cultivation; NCBI nuccore record MG971386.1 links strain
+        ABC-009 to the accepted taxonomy Tetradesmus obliquus, but it is a partial
+        marker sequence rather than a genome assembly.
+    - reference: PMID:34584038
+      supports: SUPPORT
+      snippet: While the cell concentrations of the cultures grown under BG-11 and CO2
+        were largely similar to those grown in YM medium
+      explanation: Literature evidence reports cell concentrations for the BG-11
+        plus CO2 condition relative to YM medium.
+    is_max_attainment: false

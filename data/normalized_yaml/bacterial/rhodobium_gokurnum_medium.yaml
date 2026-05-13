@@ -201,5 +201,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:29.719794+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RHODOBIUM GOKURNUM MEDIUM" to "rhodobium_gokurnum_medium"
-    for consistent matching
+  notes: Normalized name from "RHODOBIUM GOKURNUM MEDIUM" to
+    "rhodobium_gokurnum_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/marichromatium_imhoffii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002868
+  name: marichromatium_imhoffii_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

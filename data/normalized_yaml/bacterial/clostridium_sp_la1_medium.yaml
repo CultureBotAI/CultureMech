@@ -167,14 +167,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except potassium carbonate) and sparge medium
-    with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same
-    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. An
-    anoxic stock solution of the potassium carbonate is autoclaved separately under
-    80% N2 and 20% CO2 gas mixture and thereafter added to the sterile medium. Adjust
-    pH of the complete medium to 6.8 - 7.0. Prior to inoculation add 10 - 20 mg/l
-    sodium dithionite from a 5% (w/v) stock solution that has been freshly prepared
-    under 100% N2 gas and sterilized by filtration to reduce the medium.
+  description: Dissolve ingredients (except potassium carbonate) and sparge
+    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and
+    autoclave. An anoxic stock solution of the potassium carbonate is autoclaved
+    separately under 80% N2 and 20% CO2 gas mixture and thereafter added to the
+    sterile medium. Adjust pH of the complete medium to 6.8 - 7.0. Prior to
+    inoculation add 10 - 20 mg/l sodium dithionite from a 5% (w/v) stock
+    solution that has been freshly prepared under 100% N2 gas and sterilized by
+    filtration to reduce the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -193,5 +194,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.891192+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM SP. LA1 MEDIUM" to "clostridium_sp_la1_medium"
-    for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM SP. LA1 MEDIUM" to
+    "clostridium_sp_la1_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/clostridium_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004158
+  name: clostridium_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

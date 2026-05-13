@@ -271,5 +271,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:59.068521+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For growth on nitrogen-free medium" to "for_growth_on_nitrogen_free_medium"
-    for consistent matching
+  notes: Normalized name from "For growth on nitrogen-free medium" to
+    "for_growth_on_nitrogen_free_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_81-3_For_heterotrophic_growth.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006531
+  name: for_heterotrophic_growth
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

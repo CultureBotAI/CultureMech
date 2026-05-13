@@ -30,5 +30,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:23.445676+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Man‐Rogosa‐Sharpe (MRS) broth (Difco)" to "man_rogosa_sharpe_mrs_broth_difco"
-    for consistent matching
+  notes: Normalized name from "Man‐Rogosa‐Sharpe (MRS) broth (Difco)" to
+    "man_rogosa_sharpe_mrs_broth_difco" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M2489_MRS_broth.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009062
+  name: mrs_broth
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

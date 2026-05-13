@@ -163,15 +163,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A, B and C and filter sterilize solution D. To
-    complete the medium combine sterile solutions when cool.
+  description: Autoclave solutions A, B and C and filter sterilize solution D.
+    To complete the medium combine sterile solutions when cool.
 - step_number: 2
   action: MIX
   description: Adjust to pH 7.6.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
-    then add other compounds. Adjust pH of final solution to 6.0 with NaOH.
+  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N
+    NaOH; then add other compounds. Adjust pH of final solution to 6.0 with
+    NaOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -190,5 +191,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.727832+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ANNWOODIA MEDIUM" to "annwoodia_medium" for consistent
-    matching
+  notes: Normalized name from "ANNWOODIA MEDIUM" to "annwoodia_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/thiobacillus_aquaesulis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005166
+  name: thiobacillus_aquaesulis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

@@ -159,5 +159,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.094393+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HELIOBACILLUS MOBILIS medium" to "heliobacillus_mobilis_medium"
-    for consistent matching
+  notes: Normalized name from "HELIOBACILLUS MOBILIS medium" to
+    "heliobacillus_mobilis_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/heliobacillus_mobilis_medium_modified_van_niels_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001669
+  name: heliobacillus_mobilis_medium_modified_van_niels_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

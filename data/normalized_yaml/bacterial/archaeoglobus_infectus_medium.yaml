@@ -310,23 +310,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, coenzyme M, vitamins, thiosulfate,
-    and dithiothreitol), then sparge medium with 80% H2 and 20% CO2 gas mixture for
-    30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into
-    anoxic serum vials (e.g., Balch-type tubes) to 30% of their volume and autoclave.
-    Add coenzyme M, vitamins, thiosulfate, and dithiothreitol from sterile anoxic
-    stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
-    stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. The vitamin and
-    dithiothreitol solutions should be sterilized by filtration. Adjust the pH of
-    the complete medium to 6.5.
+  description: Dissolve ingredients (except bicarbonate, coenzyme M, vitamins,
+    thiosulfate, and dithiothreitol), then sparge medium with 80% H2 and 20% CO2
+    gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the
+    same gas atmosphere into anoxic serum vials (e.g., Balch-type tubes) to 30%
+    of their volume and autoclave. Add coenzyme M, vitamins, thiosulfate, and
+    dithiothreitol from sterile anoxic stock solutions prepared under 100% N2
+    gas and carbonate from a sterile anoxic stock solution prepared under 80% N2
+    and 20% CO2 gas atmosphere. The vitamin and dithiothreitol solutions should
+    be sterilized by filtration. Adjust the pH of the complete medium to 6.5.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize culture vessels to 1.5 bar overpressure
-    with sterile 80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize culture vessels to 1.5 bar
+    overpressure with sterile 80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
-    salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve
+    the salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -345,5 +345,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.149829+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ARCHAEOGLOBUS INFECTUS MEDIUM" to "archaeoglobus_infectus_medium"
-    for consistent matching
+  notes: Normalized name from "ARCHAEOGLOBUS INFECTUS MEDIUM" to
+    "archaeoglobus_infectus_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/arc51_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003750
+  name: arc51_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

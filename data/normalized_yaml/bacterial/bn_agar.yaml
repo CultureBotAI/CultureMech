@@ -84,3 +84,10 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/bacterial/nutrient_agar_broth.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008307
+  name: nutrient_agar_broth
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

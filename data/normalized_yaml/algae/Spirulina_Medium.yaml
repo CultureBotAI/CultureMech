@@ -1,6 +1,6 @@
 id: CultureMech:000232
 name: spirulina_medium
-category: ALGAE
+category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -18,32 +18,41 @@ ingredients:
   notes: 'Original amount: Spir solution 2'
 preparation_steps:
 - step_number: 1
-  instruction: Important Notes To Consider:The quality of water, including natural
+  action: MIX
+  description: Important Notes To Consider:The quality of water, including natural
     seawater, is important.
 - step_number: 2
-  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+  action: MIX
+  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.
 - step_number: 3
-  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
+  action: MIX
+  description: Natural seawater and natural freshwater should be obtained from a non-polluted
     source.When dissolving chemicals, wait for the first component to dissolve before
     adding the second.
 - step_number: 4
-  instruction: Stirring, and sometimes the addition of heat, is often required to
+  action: MIX
+  description: Stirring, and sometimes the addition of heat, is often required to
     dissolve the chemicals efficiently.
 - step_number: 5
-  instruction: Preparation of stock solutions for frequently made algal culture media
+  action: MIX
+  description: Preparation of stock solutions for frequently made algal culture media
     make preparing media convenient but also necessary to avoid errors from weighing
     very tiny amounts.Attention should be given to the pH of the final medium.
 - step_number: 6
-  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+  action: ADJUST_PH
+  description: In most cases, if pH adjustment is required, this occurs before sterilization.
 - step_number: 7
-  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+  action: AUTOCLAVE
+  description: Please note that autoclaving removes carbon dioxide from media lacking
     carbonate stabilizing buffers.
 - step_number: 8
-  instruction: This would make the medium very alkaline soon after removal from the
+  action: MIX
+  description: This would make the medium very alkaline soon after removal from the
     autoclave.
 - step_number: 9
-  instruction: In these cases, you should wait approximately 24 hours for gaseous
+  action: MIX
+  description: In these cases, you should wait approximately 24 hours for gaseous
     equilibrium before inoculating the medium.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -54,7 +63,7 @@ applications:
 - Microalgae research
 curation_history:
 - curator: utex-import
-  date: '2026-01-28'
+  timestamp: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: spirulina-medium, URL: https://utex.org/products/spirulina-medium'
 - timestamp: '2026-03-13T06:18:53.653526Z'
@@ -67,6 +76,41 @@ curation_history:
   notes: Normalized name from "Spirulina Medium" to "spirulina_medium" for consistent
     matching
 references:
-- reference_id: UTEX:spirulina-medium
-- reference_id: https://utex.org/products/spirulina-medium
+- reference: UTEX:spirulina-medium
+- reference: https://utex.org/products/spirulina-medium
 original_name: Spirulina Medium
+variants:
+- name: biogas_effluent_based_arthrospira_platensis
+  description: Effluent-based cultivation medium compared with conventional Spirulina
+    medium for Arthrospira platensis biomass production.
+  modifications:
+  - Use effluent from biogas production as the nutrient source.
+  - Compare biomass composition and pigment production with conventional Spirulina
+    medium.
+  purpose: Capture a study-specific Spirulina medium alternative using biogas
+    effluent as recycled nutrients.
+  evidence:
+  - reference: PMID:28025700
+    supports: SUPPORT
+    snippet: The effluent from the biogas process was tested as a nutrient source
+      during cultivation of the protein-rich and edible microalgae Spirulina
+      (Arthrospira platensis) and compared with conventional Spirulina medium.
+    explanation: Literature evidence describes an effluent-based medium variant
+      compared with the conventional Spirulina parent medium.
+target_organisms:
+- preferred_term: Arthrospira platensis
+  term:
+    id: NCBITaxon:118562
+    label: Arthrospira platensis
+  growth_metrics:
+  - measurement_conditions: Conventional Spirulina medium control compared with
+      effluent-based medium during Arthrospira platensis cultivation.
+    evidence:
+    - reference: PMID:28025700
+      supports: SUPPORT
+      snippet: Equal biomass production was observed until late exponential phase and
+        no significant differences could be observed between the treatments in protein
+        amount, amino acid composition, and total lipid concentration.
+      explanation: Literature evidence reports biomass production for Arthrospira
+        platensis in conventional Spirulina medium and effluent-based medium.
+    is_max_attainment: false

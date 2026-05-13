@@ -54,12 +54,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except thioglycolate and cellobiose, then sparge
-    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add thioglycolate and
-    adjust pH of medium to 7.5 with 10 N KOH. Dispense medium under 100% N2 gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave at 121°C for 15 min.
-    Add cellobiose from a sterile anoxic stock solution prepared under 100% N2 gas
-    atmosphere and sterilized by filtration.
+  description: Dissolve ingredients except thioglycolate and cellobiose, then
+    sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add
+    thioglycolate and adjust pH of medium to 7.5 with 10 N KOH. Dispense medium
+    under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave at 121°C for 15 min. Add cellobiose from a sterile anoxic
+    stock solution prepared under 100% N2 gas atmosphere and sterilized by
+    filtration.
 - step_number: 2
   action: FILTER_STERILIZE
   description: 'Note: Bottled seawater from Biomaris GmbH can be used instead of filtered
@@ -82,5 +83,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.172101+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SEDIMINISPIROCHAETA MEDIUM" to "sediminispirochaeta_medium"
-    for consistent matching
+  notes: Normalized name from "SEDIMINISPIROCHAETA MEDIUM" to
+    "sediminispirochaeta_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_1008_modified_for_dsm_19205.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003511
+  name: medium_1008_modified_for_dsm_19205
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_1008_modified_for_dsm_19230.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003512
+  name: medium_1008_modified_for_dsm_19230
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

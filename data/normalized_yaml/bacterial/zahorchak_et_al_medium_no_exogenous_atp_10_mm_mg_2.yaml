@@ -261,13 +261,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:42.914300Z'
   curator: mediadb-import
@@ -289,8 +291,9 @@ curation_history:
 - timestamp: '2026-03-17T19:46:06.537232+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Zahorchak et al medium; No exogenous ATP, 10 mM Mg^2+"
-    to "zahorchak_et_al_medium_no_exogenous_atp_10_mm_mg_2" for consistent matching
+  notes: Normalized name from "Zahorchak et al medium; No exogenous ATP, 10 mM
+    Mg^2+" to "zahorchak_et_al_medium_no_exogenous_atp_10_mm_mg_2" for
+    consistent matching
 media_term:
   preferred_term: MediaDB Medium 44
   term:
@@ -302,3 +305,32 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_1_25_mm_mg_2.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007321
+  name: zahorchak_et_al_medium_no_exogenous_atp_1_25_mm_mg_2
+  notes: Same ingredient identity signature but concentration signature differs
+    from parent.
+- path:
+    data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_20_mm_mg_2.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007365
+  name: zahorchak_et_al_medium_no_exogenous_atp_20_mm_mg_2
+  notes: Same ingredient identity signature but concentration signature differs
+    from parent.
+- path:
+    data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_2_5_mm_mg_2.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007332
+  name: zahorchak_et_al_medium_no_exogenous_atp_2_5_mm_mg_2
+  notes: Same ingredient identity signature but concentration signature differs
+    from parent.
+- path:
+    data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_5_0_mm_mg_2.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007343
+  name: zahorchak_et_al_medium_no_exogenous_atp_5_0_mm_mg_2
+  notes: Same ingredient identity signature but concentration signature differs
+    from parent.

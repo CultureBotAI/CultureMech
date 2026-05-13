@@ -193,5 +193,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.243552+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOBACILLUS TEPIDARIUS MEDIUM" to "thiobacillus_tepidarius_medium"
-    for consistent matching
+  notes: Normalized name from "THIOBACILLUS TEPIDARIUS MEDIUM" to
+    "thiobacillus_tepidarius_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/thermithiobacillus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001432
+  name: thermithiobacillus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

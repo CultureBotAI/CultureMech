@@ -310,6 +310,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.513817+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SYNTROPHOMONAS ZEHNDERI medium" to "syntrophomonas_zehnderi_medium"
-    for consistent matching
+  notes: Normalized name from "SYNTROPHOMONAS ZEHNDERI medium" to
+    "syntrophomonas_zehnderi_medium" for consistent matching
 ph_value: 7.2
+variant_children:
+- path: data/normalized_yaml/bacterial/syntrophomonas_bryantii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005059
+  name: syntrophomonas_bryantii_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/syntrophomonas_sapovorans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001447
+  name: syntrophomonas_sapovorans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

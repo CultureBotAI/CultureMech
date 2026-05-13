@@ -332,10 +332,10 @@ preparation_steps:
   description: Autoclave in culture vessels.
 - step_number: 3
   action: AUTOCLAVE
-  description: To complete the medium, combine Solution A and substrate in the culture
-    vessels under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers.
-    Finally, reduce the medium with 0.01 volume of 5% Na2S x 9H2O solution (autoclaved
-    and stored under a N2 atmosphere).
+  description: To complete the medium, combine Solution A and substrate in the
+    culture vessels under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl
+    rubber stoppers. Finally, reduce the medium with 0.01 volume of 5% Na2S x
+    9H2O solution (autoclaved and stored under a N2 atmosphere).
 applications:
 - Microbial cultivation
 curation_history:
@@ -370,8 +370,8 @@ curation_history:
 - timestamp: '2026-03-17T19:45:30.180953+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFATIBACILLUS OLEFINIVORANS MEDIUM" to "desulfatibacillus_olefinivorans_medium"
-    for consistent matching
+  notes: Normalized name from "DESULFATIBACILLUS OLEFINIVORANS MEDIUM" to
+    "desulfatibacillus_olefinivorans_medium" for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Trace element solution SL12
@@ -383,3 +383,12 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_2036_Trace_element_solution_SL12.yaml for composition
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/desulfatiferula_berrense_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003274
+  name: desulfatiferula_berrense_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

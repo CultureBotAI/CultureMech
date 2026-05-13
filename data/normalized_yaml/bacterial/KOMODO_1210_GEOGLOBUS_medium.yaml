@@ -351,8 +351,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.527912Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:23.700201Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -364,5 +364,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.302260+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GEOGLOBUS medium" to "geoglobus_medium" for consistent
-    matching
+  notes: Normalized name from "GEOGLOBUS medium" to "geoglobus_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/dsm_24515.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003961
+  name: dsm_24515
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/thermosulfuriphilus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000668
+  name: thermosulfuriphilus_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

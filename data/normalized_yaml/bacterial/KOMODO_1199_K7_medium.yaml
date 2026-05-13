@@ -53,3 +53,16 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "K7 medium" to "k7_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_19966.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003936
+  name: for_dsm_19966
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_25088.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003937
+  name: for_dsm_25088
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

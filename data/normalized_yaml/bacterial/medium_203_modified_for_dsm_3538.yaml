@@ -363,8 +363,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:37.549965Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:17.362386Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -380,6 +380,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:41.619656+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 203 MODIFIED FOR DSM 3538" to "medium_203_modified_for_dsm_3538"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 203 MODIFIED FOR DSM 3538" to
+    "medium_203_modified_for_dsm_3538" for consistent matching
 ph_value: 6.5
+parent_media:
+  path: data/normalized_yaml/bacterial/methanothermus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001302
+  name: methanothermus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

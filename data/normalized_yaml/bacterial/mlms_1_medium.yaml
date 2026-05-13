@@ -341,8 +341,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.940019Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:45.041560Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -354,4 +354,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.055167+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MLMS-1 MEDIUM" to "mlms_1_medium" for consistent matching
+  notes: Normalized name from "MLMS-1 MEDIUM" to "mlms_1_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/bacillus_selenitireducens_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006925
+  name: bacillus_selenitireducens_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/mlms_1_medium_arsenate.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002150
+  name: mlms_1_medium_arsenate
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

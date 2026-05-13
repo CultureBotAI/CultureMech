@@ -223,12 +223,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except hydrogenphosphate, thiosulfate and vitamins),
-    adjust pH to 7.2 and autoclave. K2HPO4 and Na2S2O3 are autoclaved separately each
-    in 10% of the final volume. Filter sterilize the vitamins solution. Adjust pH
-    of the complete medium to 7.2 with sterile 0.4% (w/v) Na2CO3 solution.  Acidification
-    of the medium during growth causes the pH indicator bromothymol blue to turn from
-    blue to yellow.
+  description: Dissolve ingredients (except hydrogenphosphate, thiosulfate and
+    vitamins), adjust pH to 7.2 and autoclave. K2HPO4 and Na2S2O3 are autoclaved
+    separately each in 10% of the final volume. Filter sterilize the vitamins
+    solution. Adjust pH of the complete medium to 7.2 with sterile 0.4% (w/v)
+    Na2CO3 solution.  Acidification of the medium during growth causes the pH
+    indicator bromothymol blue to turn from blue to yellow.
 - step_number: 2
   action: MIX
   description: 'Note: Growth of most Thiomicrospira strains is more reliable if the
@@ -237,8 +237,8 @@ preparation_steps:
     The pH is adjusted with a sterile stock solution of Na2CO3 (5% w/v) after autoclaving.'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
-    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH,
+    then add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -261,5 +261,42 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.779630+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOMICROSPIRA PELOPHILA MEDIUM" to "thiomicrospira_pelophila_medium"
-    for consistent matching
+  notes: Normalized name from "THIOMICROSPIRA PELOPHILA MEDIUM" to
+    "thiomicrospira_pelophila_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_142_modified_for_dsm_12346.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004146
+  name: medium_142_modified_for_dsm_12346
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_142_modified_for_dsm_12350.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004147
+  name: medium_142_modified_for_dsm_12350
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_142_modified_for_dsm_12351.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004148
+  name: medium_142_modified_for_dsm_12351
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_142_modified_for_dsm_12352.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004149
+  name: medium_142_modified_for_dsm_12352
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_142_modified_for_dsm_12353.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004150
+  name: medium_142_modified_for_dsm_12353
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_142_modified_for_dsm_12354.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004151
+  name: medium_142_modified_for_dsm_12354
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

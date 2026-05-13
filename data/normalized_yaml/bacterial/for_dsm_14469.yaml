@@ -368,8 +368,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:22.217230Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:08:53.673845Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -385,5 +385,25 @@ curation_history:
 - timestamp: '2026-03-17T19:46:01.822944+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 14469" to "for_dsm_14469" for consistent matching
+  notes: Normalized name from "For DSM 14469" to "for_dsm_14469" for consistent
+    matching
 ph_value: 7.0
+variant_children:
+- path: data/normalized_yaml/bacterial/blautia_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002083
+  name: blautia_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006790
+  name: for_dsm_14465_and_dsm_14466
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006792
+  name: medium_for_carbon_dioxide_reducers
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

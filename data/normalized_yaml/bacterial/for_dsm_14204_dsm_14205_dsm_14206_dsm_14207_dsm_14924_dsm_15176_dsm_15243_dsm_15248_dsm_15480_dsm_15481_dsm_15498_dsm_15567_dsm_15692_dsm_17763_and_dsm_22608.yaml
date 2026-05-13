@@ -1,8 +1,9 @@
 id: CultureMech:005039
-name: for_dsm_14204_dsm_14205_dsm_14206_dsm_14207_dsm_14924_dsm_15176_dsm_15243_dsm_15248_dsm_15480_dsm_15481_dsm_15498_dsm_15567_dsm_15692_dsm_17763_and_dsm_22608
-original_name: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176,
-  DSM 15243, DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM
-  17763 and DSM 22608
+name:
+  for_dsm_14204_dsm_14205_dsm_14206_dsm_14207_dsm_14924_dsm_15176_dsm_15243_dsm_15248_dsm_15480_dsm_15481_dsm_15498_dsm_15567_dsm_15692_dsm_17763_and_dsm_22608
+original_name: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM
+  15176, DSM 15243, DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM
+  15692, DSM 17763 and DSM 22608
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -11,9 +12,9 @@ media_term:
   preferred_term: KOMODO Medium 339.1
   term:
     id: komodo.medium:339.1
-    label: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM
-      15243, DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM
-      17763 and DSM 22608
+    label: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176,
+      DSM 15243, DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM
+      15692, DSM 17763 and DSM 22608
 notes: 'Source: KOMODO ModelSEED | ID: 339.1 | DSMZ Medium: 339 (mediadive.medium:339)
   | Aerobic: Yes'
 ingredients:
@@ -60,7 +61,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.368360+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM
-    14924, DSM 15176, DSM 15243, DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567,
-    DSM 15692, DSM 17763 and DSM 22608" to "for_dsm_14204_dsm_14205_dsm_14206_dsm_14207_dsm_14924_dsm_15176_dsm_15243_dsm_15248_dsm_15480_dsm_15481_dsm_15498_dsm_15567_dsm_15692_dsm_17763_and_dsm_22608"
+  notes: Normalized name from "For DSM 14204, DSM 14205, DSM 14206, DSM 14207,
+    DSM 14924, DSM 15176, DSM 15243, DSM 15248, DSM 15480, DSM 15481, DSM 15498,
+    DSM 15567, DSM 15692, DSM 17763 and DSM 22608" to
+    "for_dsm_14204_dsm_14205_dsm_14206_dsm_14207_dsm_14924_dsm_15176_dsm_15243_dsm_15248_dsm_15480_dsm_15481_dsm_15498_dsm_15567_dsm_15692_dsm_17763_and_dsm_22608"
     for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_14428.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005041
+  name: for_dsm_14428
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

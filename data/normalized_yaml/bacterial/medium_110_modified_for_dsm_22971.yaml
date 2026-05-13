@@ -178,6 +178,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:36.568602+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 110 MODIFIED FOR DSM 22971" to "medium_110_modified_for_dsm_22971"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 110 MODIFIED FOR DSM 22971" to
+    "medium_110_modified_for_dsm_22971" for consistent matching
 ph_value: 7.0
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_110_CHOPPED_MEAT_medium_WITH_CARBOHYDRATES.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003811
+  name: chopped_meat_medium_with_carbohydrates
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

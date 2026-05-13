@@ -124,5 +124,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.611604+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CM + YE MEDIUM" to "cm_ye_medium" for consistent matching
+  notes: Normalized name from "CM + YE MEDIUM" to "cm_ye_medium" for consistent
+    matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_549_modified_for_dsm_25790.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005994
+  name: medium_549_modified_for_dsm_25790
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_549_modified_for_dsm_44640.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005995
+  name: medium_549_modified_for_dsm_44640
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

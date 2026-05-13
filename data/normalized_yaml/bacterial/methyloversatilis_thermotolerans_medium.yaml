@@ -98,8 +98,9 @@ preparation_steps:
   description: Adjust to pH 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: After autoclaving add methanol (sterilized separately) to a concentration
-    of 0.5 % (v/v) and 0.1 ml vitamin solution B12 (10µg /ml, filter sterilized).
+  description: After autoclaving add methanol (sterilized separately) to a
+    concentration of 0.5 % (v/v) and 0.1 ml vitamin solution B12 (10µg /ml,
+    filter sterilized).
 applications:
 - Microbial cultivation
 curation_history:
@@ -118,5 +119,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.471726+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOVERSATILIS THERMOTOLERANS MEDIUM" to "methyloversatilis_thermotolerans_medium"
-    for consistent matching
+  notes: Normalized name from "METHYLOVERSATILIS THERMOTOLERANS MEDIUM" to
+    "methyloversatilis_thermotolerans_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_1122_MEDIUM_K.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003826
+  name: medium_k
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -86,6 +86,23 @@ preparation_steps:
     medium (1.0 g/L agar).'
 applications:
 - Microbial cultivation
+variants:
+- name: crvi_stress_magnetosome_deficient_b17316
+  description: Cr(VI) stress condition for magnetosome-deficient Magnetospirillum
+    gryphiswaldense strain B17316.
+  modifications:
+  - Use magnetosome-deficient strain B17316 derived from M. gryphiswaldense MSR-1.
+  - Add Cr(VI) at 10 mg/L.
+  purpose: Capture strain-modification and chromium-stress growth evidence under
+    the parent Magnetospirillum gryphiswaldense Medium record.
+  evidence:
+  - reference: PMID:37088211
+    supports: SUPPORT
+    snippet: The addition of 10 mg L-1 Cr(VI) significantly inhibited cell growth,
+      but the magnetosome-deficient strain, B17316, showed an average specific growth
+      rate of 0.062 h-1 at the same dosage.
+    explanation: Literature evidence supports a Cr(VI)-stress variant for
+      magnetosome-deficient Magnetospirillum gryphiswaldense strain B17316.
 curation_history:
 - timestamp: '2026-01-26T17:53:17.212107Z'
   curator: mediadive-import
@@ -112,6 +129,10 @@ curation_history:
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
   notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=1
+- timestamp: '2026-05-05T07:23:23.129830+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: MAGNETOSPIRILLUM GRYPHISWALDENSE

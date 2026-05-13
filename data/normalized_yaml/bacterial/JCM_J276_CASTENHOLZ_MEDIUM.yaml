@@ -125,5 +125,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.966101+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CASTENHOLZ MEDIUM" to "castenholz_medium" for consistent
-    matching
+  notes: Normalized name from "CASTENHOLZ MEDIUM" to "castenholz_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/microaerophilic_thermus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003243
+  name: microaerophilic_thermus_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

@@ -196,6 +196,15 @@ curation_history:
 - timestamp: '2026-03-17T19:46:02.633573+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 950 MODIFIED FOR DSM 14913" to "medium_950_modified_for_dsm_14913"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 950 MODIFIED FOR DSM 14913" to
+    "medium_950_modified_for_dsm_14913" for consistent matching
 ph_value: 7.6
+parent_media:
+  path: data/normalized_yaml/bacterial/onr7a_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002128
+  name: onr7a_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

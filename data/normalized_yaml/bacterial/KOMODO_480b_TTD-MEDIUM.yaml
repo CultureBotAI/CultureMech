@@ -325,8 +325,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.011781Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:34.432123Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -338,4 +338,37 @@ curation_history:
 - timestamp: '2026-03-17T19:45:50.668534+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TTD-MEDIUM" to "ttd_medium" for consistent matching
+  notes: Normalized name from "TTD-MEDIUM" to "ttd_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_480_DESULFURELLA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005596
+  name: desulfurella_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/KOMODO_480d_THERMOPROTEUS_UZONIENSIS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005602
+  name: thermoproteus_uzoniensis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/desulfurella_k_119_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001608
+  name: desulfurella_k_119_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/desulfurella_multipotens_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005597
+  name: desulfurella_multipotens_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_11321.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005595
+  name: for_dsm_11321
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

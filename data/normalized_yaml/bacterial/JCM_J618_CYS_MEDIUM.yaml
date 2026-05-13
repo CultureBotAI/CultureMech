@@ -147,7 +147,8 @@ preparation_steps:
     following solutions in order listed:'
 - step_number: 2
   action: AUTOCLAVE
-  description: Adjust pH to 7.5, bring volume to 1.0 L with distilled water and autoclave.
+  description: Adjust pH to 7.5, bring volume to 1.0 L with distilled water and
+    autoclave.
 - step_number: 3
   action: HEAT
   description: 'Comment: Inoculate into the medium prewarmed to the optimal growth
@@ -170,5 +171,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:30.471476+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CYS MEDIUM" to "cys_medium" for consistent matching
+  notes: Normalized name from "CYS MEDIUM" to "cys_medium" for consistent
+    matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/cys_medium_for_ymo722.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002966
+  name: cys_medium_for_ymo722
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

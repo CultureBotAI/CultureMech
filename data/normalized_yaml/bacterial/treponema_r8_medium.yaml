@@ -367,25 +367,27 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, rumen fluid, vitamins, cysteine
-    and sulfide) and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
-    min to make it anoxic. Add bicarbonate, adjust pH to 7.2, distribute medium under
-    80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. After sterilization add rumen fluid, vitamins, cysteine and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. Vitamins
-    should be sterilized by filtration. Check pH of complete medium and adjust to
-    7.2, if necessary.
+  description: Dissolve ingredients (except bicarbonate, rumen fluid, vitamins,
+    cysteine and sulfide) and sparge medium with 80% N2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic. Add bicarbonate, adjust pH to 7.2,
+    distribute medium under 80% N2 and 20% CO2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. After sterilization add
+    rumen fluid, vitamins, cysteine and sulfide from sterile anoxic stock
+    solutions prepared under 100% N2 gas atmosphere. Vitamins should be
+    sterilized by filtration. Check pH of complete medium and adjust to 7.2, if
+    necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 - step_number: 3
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals
+    or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15
+    min and then centrifuged at 27,000 g for 20 min. The supernatant is made
+    anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas
+    atmosphere into anoxic serum vials to 30% of volume and then stored frozen
+    at -20°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -396,8 +398,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:38.631770Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:10.105250Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -409,5 +411,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.736672+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TREPONEMA R8 MEDIUM" to "treponema_r8_medium" for consistent
-    matching
+  notes: Normalized name from "TREPONEMA R8 MEDIUM" to "treponema_r8_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/r8_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006787
+  name: r8_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

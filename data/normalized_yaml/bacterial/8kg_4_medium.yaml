@@ -350,7 +350,8 @@ curation_history:
 - timestamp: '2026-03-17T19:45:32.244981+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "8KG-4 MEDIUM" to "8kg_4_medium" for consistent matching
+  notes: Normalized name from "8KG-4 MEDIUM" to "8kg_4_medium" for consistent
+    matching
 - timestamp: '2026-04-04T18:49:20.073114'
   curator: copy_referenced_compositions
   action: RESOLVED_REFERENCE
@@ -360,3 +361,12 @@ curation_history:
 data_quality_flags:
   incomplete_composition: false
   resolved_reference: true
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J434_ANAEROLINEA_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002785
+  name: anaerolinea_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

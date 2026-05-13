@@ -58,8 +58,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 701 with 3.0 g/L (final) yeast extract and 2.5 g/L (final)
-    peptone.
+  description: Use Medium No. 701 with 3.0 g/L (final) yeast extract and 2.5 g/L
+    (final) peptone.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.5.
@@ -81,15 +81,23 @@ curation_history:
 - timestamp: '2026-03-17T19:45:33.478623+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ARTIFICIAL SEAWATER MEDIUM" to "artificial_seawater_medium"
-    for consistent matching
+  notes: Normalized name from "ARTIFICIAL SEAWATER MEDIUM" to
+    "artificial_seawater_medium" for consistent matching
 - timestamp: '2026-04-04T18:49:19.936468'
   curator: copy_referenced_compositions
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (5 ingredients)
   source: CultureMech:003047
-  notes: Resolved reference by copying from low_strength_artificial_seawater_medium
-    (CultureMech:003047)
+  notes: Resolved reference by copying from
+    low_strength_artificial_seawater_medium (CultureMech:003047)
 data_quality_flags:
   incomplete_composition: false
   resolved_reference: true
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/low_strength_artificial_seawater_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003047
+  name: low_strength_artificial_seawater_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

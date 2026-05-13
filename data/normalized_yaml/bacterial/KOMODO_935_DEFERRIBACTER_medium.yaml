@@ -360,8 +360,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:22.287400Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:08:53.772363Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -377,5 +377,24 @@ curation_history:
 - timestamp: '2026-03-17T19:46:02.328071+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DEFERRIBACTER medium" to "deferribacter_medium" for
-    consistent matching
+  notes: Normalized name from "DEFERRIBACTER medium" to "deferribacter_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/deferribacter_desulfuricans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002109
+  name: deferribacter_desulfuricans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_14813.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006856
+  name: for_dsm_14813
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_935_modified_for_dsm_14783.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006855
+  name: medium_935_modified_for_dsm_14783
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

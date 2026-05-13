@@ -71,6 +71,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.530111+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CYC AGAR (pH 8.0)" to "cyc_agar_ph_8_0" for consistent
-    matching
+  notes: Normalized name from "CYC AGAR (pH 8.0)" to "cyc_agar_ph_8_0" for
+    consistent matching
 kg_microbe_match: mediadive.medium:550
+parent_media:
+  path: data/normalized_yaml/bacterial/cyc_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002851
+  name: cyc_agar
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

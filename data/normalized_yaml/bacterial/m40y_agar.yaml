@@ -59,3 +59,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M40Y AGAR" to "m40y_agar" for consistent matching
 kg_microbe_match: mediadive.medium:187
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_187_medium_FOR_OSMOPHILIC_FUNGI_M_40_Y.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004211
+  name: medium_for_osmophilic_fungi_m_40_y
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

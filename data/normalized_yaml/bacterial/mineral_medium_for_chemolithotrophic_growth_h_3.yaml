@@ -247,18 +247,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solutions A, B, C are autoclaved separately for 15 min at 121°C, cooled
-    down to 50°C and then mixed aseptically with 5.0 ml filter-sterilized standard
-    vitamin solution (see below).The final pH of this medium should be 6.8 without
-    adjustment.
+  description: Solutions A, B, C are autoclaved separately for 15 min at 121°C,
+    cooled down to 50°C and then mixed aseptically with 5.0 ml filter-sterilized
+    standard vitamin solution (see below).The final pH of this medium should be
+    6.8 without adjustment.
 - step_number: 2
   action: MIX
-  description: For chemolithotrophic growth incubate the culture under an atmosphere
-    of 2% (v/v) O2, 10% CO2, 60% H2 and 28% N2. For heterotrophic growth supplement
-    the mineral medium with an appropriate carbon source (0.2% carbohydrate or 0.1%
-    organic acid). For growth on nitrogen-free medium, omit NH4Cl and incubate the
-    culture under an atmosphere of 2% (v/v) O2, 10% CO2, 10% H2 and 78% N2 or heterotrophically
-    under 2% (v/v) O2 and 98% N2. For more details see Ref. 1515 and Ref. 3363.
+  description: For chemolithotrophic growth incubate the culture under an
+    atmosphere of 2% (v/v) O2, 10% CO2, 60% H2 and 28% N2. For heterotrophic
+    growth supplement the mineral medium with an appropriate carbon source (0.2%
+    carbohydrate or 0.1% organic acid). For growth on nitrogen-free medium, omit
+    NH4Cl and incubate the culture under an atmosphere of 2% (v/v) O2, 10% CO2,
+    10% H2 and 78% N2 or heterotrophically under 2% (v/v) O2 and 98% N2. For
+    more details see Ref. 1515 and Ref. 3363.
 applications:
 - Microbial cultivation
 curation_history:
@@ -281,5 +282,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.409852+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH (H-3)"
-    to "mineral_medium_for_chemolithotrophic_growth_h_3" for consistent matching
+  notes: Normalized name from "MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH
+    (H-3)" to "mineral_medium_for_chemolithotrophic_growth_h_3" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_81-3_For_heterotrophic_growth.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006531
+  name: for_heterotrophic_growth
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

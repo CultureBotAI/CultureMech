@@ -195,5 +195,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.620791+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MBM MEDIUM (modified)" to "mbm_medium_modified" for
-    consistent matching
+  notes: Normalized name from "MBM MEDIUM (modified)" to "mbm_medium_modified"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/sulfuricurvum_mbm_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000442
+  name: sulfuricurvum_mbm_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

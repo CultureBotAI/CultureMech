@@ -291,12 +291,14 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and
+    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -310,13 +312,14 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
+    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
+    formulation) commercial product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -325,12 +328,13 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
+    Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -402,5 +406,96 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.009342+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOBACTERIUM medium" to "methanobacterium_medium"
-    for consistent matching
+  notes: Normalized name from "METHANOBACTERIUM medium" to
+    "methanobacterium_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_16632_and_dsm_16643.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003918
+  name: for_dsm_16632_and_dsm_16643
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11975.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003911
+  name: medium_119_modified_for_dsm_11975
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11977.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003912
+  name: medium_119_modified_for_dsm_11977
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11978.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003913
+  name: medium_119_modified_for_dsm_11978
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11979.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003914
+  name: medium_119_modified_for_dsm_11979
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_11995.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003915
+  name: medium_119_modified_for_dsm_11995
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_1224.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003916
+  name: medium_119_modified_for_dsm_1224
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_15163.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003917
+  name: medium_119_modified_for_dsm_15163
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_3468.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003919
+  name: medium_119_modified_for_dsm_3468
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_4855.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003920
+  name: medium_119_modified_for_dsm_4855
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_6216.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003921
+  name: medium_119_modified_for_dsm_6216
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7057.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003922
+  name: medium_119_modified_for_dsm_7057
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_7256.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003923
+  name: medium_119_modified_for_dsm_7256
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_119_modified_for_dsm_9575.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003924
+  name: medium_119_modified_for_dsm_9575
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/methanomassiliicoccus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000645
+  name: methanomassiliicoccus_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

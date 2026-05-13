@@ -79,17 +79,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH of the mineral base to about 2 with sulfuric acid and autoclave.
-    Add glucose and yeast extract from filter-sterilized stock solutions.
+  description: Adjust pH of the mineral base to about 2 with sulfuric acid and
+    autoclave. Add glucose and yeast extract from filter-sterilized stock
+    solutions.
 - step_number: 2
   action: ADJUST_PH
   description: Check pH to be 2 to 3.
 - step_number: 3
   action: MIX
-  description: For anaerobic growth, the acidified mineral base containing sulfur
-    is filled into serum bottles (20 ml per 100 ml bottle) under N2 + CO2 (80 + 20)
-    gas mixture. Then, the bottles are sterilized by tyndallisation. Yeast extract
-    and glucose are added from separately sterilized stock solutions.
+  description: For anaerobic growth, the acidified mineral base containing
+    sulfur is filled into serum bottles (20 ml per 100 ml bottle) under N2 + CO2
+    (80 + 20) gas mixture. Then, the bottles are sterilized by tyndallisation.
+    Yeast extract and glucose are added from separately sterilized stock
+    solutions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -108,5 +110,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.853954+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOPLASMA VOLCANIUM MEDIUM" to "thermoplasma_volcanium_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOPLASMA VOLCANIUM MEDIUM" to
+    "thermoplasma_volcanium_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_4301.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005185
+  name: for_dsm_4301
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

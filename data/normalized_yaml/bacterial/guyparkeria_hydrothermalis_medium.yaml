@@ -171,11 +171,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissove ingredients and adjust pH to 7.5. Sterilize the medium by filtration.
+  description: Dissove ingredients and adjust pH to 7.5. Sterilize the medium by
+    filtration.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7 using 2 N
-    KOH. Adjust pH of final solution to 6.0 with KOH.
+  description: First dissolve EDTA in distilled water and adjust pH to 7 using 2
+    N KOH. Adjust pH of final solution to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -198,5 +199,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.764457+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GUYPARKERIA HYDROTHERMALIS MEDIUM" to "guyparkeria_hydrothermalis_medium"
-    for consistent matching
+  notes: Normalized name from "GUYPARKERIA HYDROTHERMALIS MEDIUM" to
+    "guyparkeria_hydrothermalis_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/t_asw_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006021
+  name: t_asw_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

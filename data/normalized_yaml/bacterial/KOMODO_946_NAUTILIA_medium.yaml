@@ -405,8 +405,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.833486Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:08:46.906134Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -422,5 +422,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:02.591957+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NAUTILIA medium" to "nautilia_medium" for consistent
-    matching
+  notes: Normalized name from "NAUTILIA medium" to "nautilia_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_13497.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006881
+  name: for_dsm_13497
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_21940.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006882
+  name: for_dsm_21940
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

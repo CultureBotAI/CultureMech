@@ -100,8 +100,8 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-03-14T21:06:50.325113'
   action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name; Added default solution
-    name
+  notes: Added default solution name; Added default solution name; Added default
+    solution name
 - timestamp: '2026-03-17T06:30:14.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -109,8 +109,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:13.376665+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GYP medium (pH 6)" to "gyp_medium_ph_6" for consistent
-    matching
+  notes: Normalized name from "GYP medium (pH 6)" to "gyp_medium_ph_6" for
+    consistent matching
 solutions:
 - preferred_term: Hipolypepton*
   composition: []
@@ -133,3 +133,12 @@ solutions:
     value: '5'
     unit: G_PER_L
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M1693_GYP_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008253
+  name: gyp_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

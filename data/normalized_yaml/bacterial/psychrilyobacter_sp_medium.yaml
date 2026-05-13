@@ -231,14 +231,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine), bring medium to the boil, then
-    cool to room temperature under 100% N2 gas atmosphere. Add and dissolve cysteine,
-    adjust pH to 7.0 and dispense medium under 100% N2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave.
+  description: Dissolve ingredients (except cysteine), bring medium to the boil,
+    then cool to room temperature under 100% N2 gas atmosphere. Add and dissolve
+    cysteine, adjust pH to 7.0 and dispense medium under 100% N2 gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -265,5 +265,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.960807+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PSYCHRILYOBACTER SP. MEDIUM" to "psychrilyobacter_sp_medium"
-    for consistent matching
+  notes: Normalized name from "PSYCHRILYOBACTER SP. MEDIUM" to
+    "psychrilyobacter_sp_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/py_glutamate_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005228
+  name: py_glutamate_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

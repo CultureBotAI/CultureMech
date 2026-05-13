@@ -185,6 +185,23 @@ preparation_steps:
   description: 'Add the following component after autoclaving:'
 applications:
 - Microbial cultivation
+variants:
+- name: phototrophic_l_phenylalanine_sole_nitrogen_ou5
+  description: Phototrophic Rhodobacter sphaeroides OU5 growth using L-phenylalanine
+    as the sole nitrogen source.
+  modifications:
+  - Use Rhodobacter sphaeroides strain OU5.
+  - Use L-phenylalanine as the sole nitrogen source.
+  - Culture phototrophically.
+  purpose: Capture organism- and nitrogen-source-specific growth evidence under
+    the parent Rhodobacter sphaeroides Medium record.
+  evidence:
+  - reference: PMID:19826864
+    supports: SUPPORT
+    snippet: Rhodobacter sphaeroides OU5 grows phototrophically with generation doubling
+      time of 18 h on L-phenylalanine when used as sole source of nitrogen.
+    explanation: Literature evidence supports a phototrophic L-phenylalanine
+      sole-nitrogen variant for Rhodobacter sphaeroides OU5.
 curation_history:
 - timestamp: '2026-01-26T17:53:16.996212Z'
   curator: mediadive-import
@@ -207,6 +224,10 @@ curation_history:
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
   notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=0
+- timestamp: '2026-05-05T07:23:23.192843+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0
 target_organisms:
 - preferred_term: Rhodobacter sphaeroides
   term:

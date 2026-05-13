@@ -339,6 +339,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.126047+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "M13 VERRUCOMICROBIUM medium" to "m13_verrucomicrobium_medium"
-    for consistent matching
+  notes: Normalized name from "M13 VERRUCOMICROBIUM medium" to
+    "m13_verrucomicrobium_medium" for consistent matching
 ph_value: 6.8
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_607a_FILOBACILLUS_MILOSENSIS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006097
+  name: filobacillus_milosensis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/filobacillus_milosensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001736
+  name: filobacillus_milosensis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

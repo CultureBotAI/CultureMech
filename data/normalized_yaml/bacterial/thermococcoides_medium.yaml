@@ -136,6 +136,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.711245+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOCOCCOIDES medium" to "thermococcoides_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOCOCCOIDES medium" to
+    "thermococcoides_medium" for consistent matching
 ph_value: 7.0
+variant_children:
+- path: data/normalized_yaml/bacterial/kosmotoga_shengliensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000707
+  name: kosmotoga_shengliensis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

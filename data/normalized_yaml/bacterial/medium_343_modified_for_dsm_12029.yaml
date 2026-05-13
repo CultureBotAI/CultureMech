@@ -304,6 +304,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.428677+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 343 MODIFIED FOR DSM 12029" to "medium_343_modified_for_dsm_12029"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 343 MODIFIED FOR DSM 12029" to
+    "medium_343_modified_for_dsm_12029" for consistent matching
 ph_value: 6.5
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_343_THERMOTOGA_NEAPOLITANA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005053
+  name: thermotoga_neapolitana_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -185,8 +185,8 @@ preparation_steps:
   description: Prepare liquid medium under anaerobic conditions (N2).
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -209,5 +209,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.641968+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM R2A FOR DENITRIFYING BACTERIA" to "medium_r2a_for_denitrifying_bacteria"
-    for consistent matching
+  notes: Normalized name from "MEDIUM R2A FOR DENITRIFYING BACTERIA" to
+    "medium_r2a_for_denitrifying_bacteria" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_830_R2A_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006618
+  name: r2a_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

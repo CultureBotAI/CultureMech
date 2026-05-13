@@ -282,17 +282,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, glucose, cysteine and sulfide)
-    and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add glucose, cysteine and sulfide form sterile
-    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH
-    of the complete medium to 7.2, if necessary.
+  description: Dissolve ingredients (except carbonate, glucose, cysteine and
+    sulfide) and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add glucose, cysteine and
+    sulfide form sterile anoxic stock solutions prepared under 100% N2 gas and
+    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20%
+    CO2 gas mixture. Adjust pH of the complete medium to 7.2, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -315,5 +315,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.467508+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CALDICOPROBACTER ALGERIENSIS MEDIUM" to "caldicoprobacter_algeriensis_medium"
-    for consistent matching
+  notes: Normalized name from "CALDICOPROBACTER ALGERIENSIS MEDIUM" to
+    "caldicoprobacter_algeriensis_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/th7c1_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004042
+  name: th7c1_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

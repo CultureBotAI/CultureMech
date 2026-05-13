@@ -56,6 +56,21 @@ preparation_steps:
   description: Add 15.0 g/l agar for solid medium.
 applications:
 - Microbial cultivation
+variants:
+- name: cold_growth_caulobacter_k31
+  description: Cold-growth condition for Caulobacter sp. K31 on Caulobacter Medium.
+  modifications:
+  - Incubate at 4 C.
+  - Use Caulobacter sp. K31 as the target strain.
+  purpose: Capture strain-specific cold-growth evidence under the parent Caulobacter
+    Medium record.
+  evidence:
+  - reference: PMID:25274120
+    supports: SUPPORT
+    snippet: K31 is a novel Caulobacter isolate that has the ability to tolerate copper
+      and chlorophenols, and can grow at 4 ° C with a doubling time of 40 h.
+    explanation: Literature evidence supports a cold-growth variant for Caulobacter
+      sp. K31 on the parent Caulobacter Medium record.
 curation_history:
 - timestamp: '2026-01-26T17:53:11.675863Z'
   curator: mediadive-import
@@ -78,6 +93,10 @@ curation_history:
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
   notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=0
+- timestamp: '2026-05-05T07:23:23.120055+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0
 target_organisms:
 - preferred_term: Caulobacter sp. K31
   term:

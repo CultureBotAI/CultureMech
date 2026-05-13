@@ -6,9 +6,6 @@ medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tryptone
-  term:
-    id: FOODON:03316428
-    label: tryptone
   concentration:
     value: '10.0'
     unit: G_PER_L
@@ -18,16 +15,11 @@ ingredients:
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
     product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
   notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: pancreatic digest of casein
-    synonym_type: EXACT
-  - synonym_text: casein peptone
-    synonym_type: EXACT
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product. Original FOODON mapping was FOODON:03316428 tryptone. Exact
+    synonyms from source normalization were pancreatic digest of casein and
+    casein peptone.
 - preferred_term: Yeast extract
-  term:
-    id: FOODON:00002960
-    label: yeast extract
   concentration:
     value: '5.0'
     unit: G_PER_L
@@ -36,9 +28,10 @@ ingredients:
       Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
     product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
+    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
+    formulation) commercial product. Original FOODON mapping was
+    FOODON:00002960 yeast extract.
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -52,12 +45,8 @@ ingredients:
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
     product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
   notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
-  synonyms:
-  - synonym_text: NaCl
-    synonym_type: EXACT
-  - synonym_text: table salt
-    synonym_type: EXACT
+    (Luria-Bertani, Miller formulation) commercial product. Exact synonyms from
+    source normalization were NaCl and table salt.
 media_term:
   preferred_term: TOGO Medium M2314
   term:
@@ -80,6 +69,14 @@ notes: 'Source: https://togomedium.org/medium/M2314
   Constituent composition researched from product specification.'
 applications:
 - Microbial cultivation
+references:
+- reference: PMID:16628448
+  year: 2006
+  notes: Primary literature source reporting growth of Escherichia coli MG1655
+    on LB medium and monitoring nutrient utilization during batch culture.
+- reference: NCBI:GCF_000005845.2
+  notes: NCBI RefSeq assembly ASM584v2 for Escherichia coli str. K-12 substr.
+    MG1655; BioSample SAMN02604091.
 curation_history:
 - timestamp: '2026-01-27T06:35:56.329102Z'
   curator: togo-import
@@ -93,4 +90,47 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "LB medium" to "lb_medium" for consistent matching
+- timestamp: '2026-05-05T00:00:00Z'
+  curator: literature_review_manual
+  action: ADDED_GROWTH_EVIDENCE
+  notes: Added strain-specific Escherichia coli K-12 MG1655 growth evidence on
+    LB medium from PMID:16628448.
 kg_microbe_match: mediadive.medium:74
+target_organisms:
+- preferred_term: Escherichia coli K-12 MG1655
+  term:
+    id: NCBITaxon:511145
+    label: Escherichia coli str. K-12 substr. MG1655
+  genome_assembly_id:
+  - GCA_000005845.2
+  - GCF_000005845.2
+  strain: K-12 MG1655
+  growth_metrics:
+  - measurement_conditions: LB medium batch culture; source monitored
+      utilization of sugars, alcohols, and organic acids with transcriptional
+      microarrays and associated nutrient utilization with the highest growth
+      rate phase.
+    evidence:
+    - reference: PMID:16628448
+      supports: SUPPORT
+      snippet: Utilization of these nutrients associated with the highest growth rate
+        of the culture was followed by simultaneous induction of enzymes
+        involved in assimilation of a large group of other carbon sources
+        including D-mannose, melibiose, D-galactose, L-fucose, L-rhamnose,
+        D-mannitol, amino sugars, trehalose, L-arabinose, glycerol, and
+        lactate.
+      explanation: The article title and abstract directly identify growth of
+        Escherichia coli MG1655 on LB medium. The CultureMech record is LB
+        Miller liquid medium, so this is modeled as exact-parent evidence rather
+        than a variant.
+    is_max_attainment: false
+  evidence:
+  - reference: PMID:16628448
+    supports: SUPPORT
+    explanation: The source title states growth of Escherichia coli MG1655 on
+      LB medium and the abstract discusses the growth-rate phase of that
+      culture.
+  - reference: NCBI:GCF_000005845.2
+    supports: SUPPORT
+    explanation: NCBI lists RefSeq assembly GCF_000005845.2 and BioSample
+      SAMN02604091 for Escherichia coli str. K-12 substr. MG1655.

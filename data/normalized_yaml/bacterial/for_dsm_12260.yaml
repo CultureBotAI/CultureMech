@@ -365,8 +365,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.884447Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:42.718070Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -378,4 +378,24 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.386730+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 12260" to "for_dsm_12260" for consistent matching
+  notes: Normalized name from "For DSM 12260" to "for_dsm_12260" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/aminomonas_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002002
+  name: aminomonas_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/anaerobic_serine_arginine_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006653
+  name: anaerobic_serine_arginine_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_12261_and_dsm_12262.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006651
+  name: for_dsm_12261_and_dsm_12262
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

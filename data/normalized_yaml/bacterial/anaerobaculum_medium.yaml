@@ -125,12 +125,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine, glucose and thiosulfate), boil
-    medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
-    Add cysteine and adjust pH to 7.0. Thereafter, dispense under100% N2 gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving
-    add glucose and thiosulfate from sterile anoxic stock solutions prepared under
-    100% N2 gas. Adjust pH of complete medium to 7.0, if necessary.
+  description: Dissolve ingredients (except cysteine, glucose and thiosulfate),
+    boil medium for 1 min, then cool to room temperature under 100% N2 gas
+    atmosphere. Add cysteine and adjust pH to 7.0. Thereafter, dispense
+    under100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. After autoclaving add glucose and thiosulfate from sterile
+    anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete
+    medium to 7.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -153,5 +154,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.633101+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ANAEROBACULUM MEDIUM" to "anaerobaculum_medium" for
-    consistent matching
+  notes: Normalized name from "ANAEROBACULUM MEDIUM" to "anaerobaculum_medium"
+    for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_104b_PYX-MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003622
+  name: pyx_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

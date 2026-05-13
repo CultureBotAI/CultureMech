@@ -60,10 +60,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except sulfide), adjust pH to 7.0, bring medium
-    to the boil, then cool to room temperature under 100% N2 gas. Dispense under same
-    gas atmosphere in culture vessels and autoclave. After sterilization add sulfide
-    from a sterile anoxic stock solution prepared under 100% N2 gas.
+  description: Dissolve ingredients (except sulfide), adjust pH to 7.0, bring
+    medium to the boil, then cool to room temperature under 100% N2 gas.
+    Dispense under same gas atmosphere in culture vessels and autoclave. After
+    sterilization add sulfide from a sterile anoxic stock solution prepared
+    under 100% N2 gas.
 applications:
 - Microbial cultivation
 curation_history:
@@ -82,5 +83,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.733524+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACETOANAEROBIUM MEDIUM" to "acetoanaerobium_medium"
-    for consistent matching
+  notes: Normalized name from "ACETOANAEROBIUM MEDIUM" to
+    "acetoanaerobium_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/clostridium_sticklandii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005167
+  name: clostridium_sticklandii_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

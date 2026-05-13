@@ -318,8 +318,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:12.082380Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:38.094636Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -331,6 +331,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.968016+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOBACTEROIDES/HALOINCOLA medium" to "halobacteroides_haloincola_medium"
-    for consistent matching
+  notes: Normalized name from "HALOBACTEROIDES/HALOINCOLA medium" to
+    "halobacteroides_haloincola_medium" for consistent matching
 ph_value: 7.5
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_12596.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006072
+  name: for_dsm_12596
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/for_dsm_6641_dsm_6642_dsm_6638_dsm_6639_dsm_6643_and_dsm_7212_and_150_0_g_l_for_dsm_6640.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006071
+  name:
+    for_dsm_6641_dsm_6642_dsm_6638_dsm_6639_dsm_6643_and_dsm_7212_and_150_0_g_l_for_dsm_6640
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
