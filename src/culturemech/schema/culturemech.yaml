@@ -45,7 +45,7 @@ prefixes:
   GTDB: https://gtdb.ecogenomic.org/genome?gid=
   # Genome assemblies
   RefSeq: https://www.ncbi.nlm.nih.gov/datasets/genome/
-  GenBank: https://www.ncbi.nlm.nih.gov/datasets/genome/
+  GenBank: https://www.ncbi.nlm.nih.gov/assembly/
   BioSample: https://www.ncbi.nlm.nih.gov/biosample/
   # Suppliers
   sigma: https://www.sigmaaldrich.com/catalog/product/
@@ -68,6 +68,12 @@ classes:
       A complete growth medium formulation for culturing microorganisms.
       This is the root entity - one per YAML file.
     attributes:
+      id:
+        description: Stable CultureMech identifier for this media recipe.
+        range: string
+        required: false
+        pattern: "^CultureMech:\\d{6}$"
+
       name:
         description: Human-readable medium name (e.g., "LB Broth", "M9 Minimal Medium")
         identifier: true
@@ -331,6 +337,34 @@ classes:
         range: MediaVariant
         multivalued: true
         inlined_as_list: true
+
+      parent_media:
+        description: >-
+          Canonical parent medium when this record is a child/variant
+          formulation. Used for parent-child media variant modeling where each
+          variant remains a full MediaRecipe YAML record.
+        range: MediaRecipeReference
+        inlined: true
+
+      variant_children:
+        description: >-
+          Child MediaRecipe YAML records that are variants of this canonical
+          parent medium.
+        range: MediaRecipeReference
+        multivalued: true
+        inlined_as_list: true
+
+      variant_relationship:
+        description: >-
+          Relationship type to the parent medium when this recipe is a child
+          variant record.
+        range: MediaVariantRelationshipEnum
+
+      variant_modifications:
+        description: >-
+          Summary of how this child formulation differs from its parent medium.
+        range: string
+        multivalued: true
 
       references:
         description: Original literature sources
@@ -1197,6 +1231,37 @@ classes:
         multivalued: true
         inlined_as_list: true
 
+  MediaRecipeReference:
+    description: Reference to another CultureMech media recipe record
+    attributes:
+      id:
+        description: Stable CultureMech identifier for the referenced media record
+        range: string
+        pattern: "^CultureMech:\\d{6}$"
+
+      name:
+        description: Referenced media recipe name
+        range: string
+
+      path:
+        description: Repository-relative YAML path for the referenced media record
+        range: string
+        pattern: "^data/normalized_yaml/.+\\.ya?ml$"
+
+      relationship:
+        description: Parent-child relationship type for this link
+        range: MediaVariantRelationshipEnum
+
+      notes:
+        description: Curator notes about the relationship or unresolved mapping
+        range: string
+
+      evidence:
+        description: Evidence supporting the media parent-child relationship
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
   SupplierInfo:
     description: Commercial supplier information
     attributes:
@@ -1874,6 +1939,32 @@ enums:
         description: Named hydrate (monohydrate, heptahydrate, etc.)
       CHEMICAL_VARIANT:
         description: Other chemical variant of parent
+
+  MediaVariantRelationshipEnum:
+    description: Type of parent-child relationship between media recipes
+    permissible_values:
+      CONCENTRATION_VARIANT:
+        description: Same recognizable base medium with one or more concentration changes
+      PHYSICAL_STATE_VARIANT:
+        description: Same recognizable base medium with broth, agar, semisolid, or biphasic state change
+      SUPPLEMENTED_VARIANT:
+        description: Parent medium plus added supplement, antibiotic, blood, serum, carbon source, or other component
+      OMITTED_COMPONENT_VARIANT:
+        description: Parent medium with one or more components omitted
+      SUBSTITUTED_COMPONENT_VARIANT:
+        description: Parent medium with one or more components substituted
+      PH_VARIANT:
+        description: Parent medium adjusted to a different pH or pH range
+      SALINITY_VARIANT:
+        description: Parent medium adjusted to a different salt or salinity level
+      STRAIN_SPECIFIC_VARIANT:
+        description: Parent medium modified for a specific organism or strain
+      SOURCE_DUPLICATE:
+        description: Separate source record for the same formulation as the parent
+      DERIVED_FROM:
+        description: Broad parent-child relationship when a more specific relationship is not yet curated
+      UNCERTAIN:
+        description: Candidate relationship that requires additional source or formulation review
 
   MergeReasonEnum:
     description: Reason why recipes were merged together

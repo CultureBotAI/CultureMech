@@ -102,8 +102,16 @@ def check_evidence(ev: dict, yaml_path: str, container: str) -> Verdict | None:
     if not snippet and not pmid and not doi and not reference:
         return None
 
+    if reference and not pmid and not doi and not snippet:
+        # Database/catalog references such as DSMZ:J1219 are useful
+        # provenance but cannot be checked against PubMed abstract cache.
+        return Verdict(yaml_path, container, "", "", "",
+                       "NO_EVIDENCE",
+                       f"non-literature reference without snippet: {reference!r}")
+
     if reference and not pmid and not doi:
-        # Reference present but couldn't be parsed as PMID:/DOI:
+        # Reference present with a snippet but couldn't be parsed as
+        # PMID:/DOI:, so the snippet is not independently checkable.
         return Verdict(yaml_path, container, "", "", snippet,
                        "MISSING_REFERENCE",
                        f"unrecognized reference format: {reference!r}")
@@ -153,6 +161,11 @@ def iter_evidence_containers(y: dict):
     sd = y.get("source_data")
     if isinstance(sd, dict) and isinstance(sd.get("evidence"), list):
         yield "source_data.evidence", sd["evidence"]
+    for j, variant in enumerate(y.get("variants") or []):
+        if not isinstance(variant, dict):
+            continue
+        if isinstance(variant.get("evidence"), list):
+            yield f"variants[{j}].evidence", variant["evidence"]
     for j, tg in enumerate(y.get("target_organisms") or []):
         if not isinstance(tg, dict):
             continue

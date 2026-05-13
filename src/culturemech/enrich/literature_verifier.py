@@ -26,6 +26,11 @@ import json
 from pathlib import Path
 from typing import Optional, Tuple, Dict, List, Any
 
+try:
+    import PyPDF2
+except ImportError:  # pragma: no cover - exercised by tests via monkeypatch
+    PyPDF2 = None
+
 
 class LiteratureVerifier:
     """
@@ -817,9 +822,11 @@ class LiteratureVerifier:
         Returns:
             Extracted text or None
         """
-        try:
-            import PyPDF2
+        if PyPDF2 is None:
+            print("✗ PyPDF2 not installed. Install with: pip install PyPDF2")
+            return None
 
+        try:
             with open(pdf_path, 'rb') as f:
                 reader = PyPDF2.PdfReader(f)
                 text = ""
@@ -828,9 +835,6 @@ class LiteratureVerifier:
 
             return text
 
-        except ImportError:
-            print("✗ PyPDF2 not installed. Install with: pip install PyPDF2")
-            return None
         except Exception as e:
             print(f"✗ Error extracting PDF text: {e}")
             return None

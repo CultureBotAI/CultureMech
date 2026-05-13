@@ -1,0 +1,74 @@
+[
+  {
+    "action": "add_variant_child",
+    "child_path": "data/normalized_yaml/bacterial/rdm_20_mm_nacl.yaml",
+    "confidence": "HIGH",
+    "message": "add child reference to parent",
+    "parent_path": "data/normalized_yaml/bacterial/rdm_10_mm_nacl.yaml",
+    "relationship": "SALINITY_VARIANT",
+    "status": "PLANNED"
+  },
+  {
+    "action": "add_parent_media",
+    "child_path": "data/normalized_yaml/bacterial/rdm_20_mm_nacl.yaml",
+    "confidence": "HIGH",
+    "message": "add parent reference to child",
+    "parent_path": "data/normalized_yaml/bacterial/rdm_10_mm_nacl.yaml",
+    "relationship": "SALINITY_VARIANT",
+    "status": "PLANNED"
+  },
+  {
+    "action": "set_variant_relationship",
+    "child_path": "data/normalized_yaml/bacterial/rdm_20_mm_nacl.yaml",
+    "confidence": "HIGH",
+    "message": "set child variant relationship",
+    "parent_path": "data/normalized_yaml/bacterial/rdm_10_mm_nacl.yaml",
+    "relationship": "SALINITY_VARIANT",
+    "status": "PLANNED"
+  },
+  {
+    "action": "add_variant_modification",
+    "child_path": "data/normalized_yaml/bacterial/rdm_20_mm_nacl.yaml",
+    "confidence": "HIGH",
+    "message": "add child modification summary",
+    "parent_path": "data/normalized_yaml/bacterial/rdm_10_mm_nacl.yaml",
+    "relationship": "SALINITY_VARIANT",
+    "status": "PLANNED"
+  },
+  {
+    "action": "add_variant_child",
+    "child_path": "data/normalized_yaml/bacterial/rdm_50_mm_nacl.yaml",
+    "confidence": "HIGH",
+    "message": "add child reference to parent",
+    "parent_path": "data/normalized_yaml/bacterial/rdm_10_mm_nacl.yaml",
+    "relationship": "SALINITY_VARIANT",
+    "status": "PLANNED"
+  },
+  {
+    "action": "add_parent_media",
+    "child_path": "data/normalized_yaml/bacterial/rdm_50_mm_nacl.yaml",
+    "confidence": "HIGH",
+    "message": "add parent reference to child",
+    "parent_path": "data/normalized_yaml/bacterial/rdm_10_mm_nacl.yaml",
+    "relationship": "SALINITY_VARIANT",
+    "status": "PLANNED"
+  },
+  {
+    "action": "set_variant_relationship",
+    "child_path": "data/normalized_yaml/bacterial/rdm_50_mm_nacl.yaml",
+    "confidence": "HIGH",
+    "message": "set child variant relationship",
+    "parent_path": "data/normalized_yaml/bacterial/rdm_10_mm_nacl.yaml",
+    "relationship": "SALINITY_VARIANT",
+    "status": "PLANNED"
+  },
+  {
+    "action": "add_variant_modification",
+    "child_path": "data/normalized_yaml/bacterial/rdm_50_mm_nacl.yaml",
+    "confidence": "HIGH",
+    "message": "add child modification summary",
+    "parent_path": "data/normalized_yaml/bacterial/rdm_10_mm_nacl.yaml",
+    "relationship": "SALINITY_VARIANT",
+    "status": "PLANNED"
+  }
+]

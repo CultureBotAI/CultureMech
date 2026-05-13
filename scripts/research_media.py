@@ -35,7 +35,7 @@ def _normal_key(value: str) -> str:
 def _candidate_paths(target: str) -> list[Path]:
     target_path = Path(target)
     if target_path.exists():
-        return [target_path]
+        return [target_path.resolve()]
 
     normalized_target = _normal_key(target)
     matches = []
@@ -175,8 +175,9 @@ def summarize_conditions(doc: dict[str, Any]) -> str:
 
 def template_vars(doc: dict[str, Any], media_file: Path) -> dict[str, str]:
     media_term = doc.get("media_term")
+    media_path = media_file.resolve()
     return {
-        "record_path": str(media_file.relative_to(REPO_ROOT)),
+        "record_path": str(media_path.relative_to(REPO_ROOT)),
         "media_id": str(doc.get("id", "")),
         "media_name": str(doc.get("name", media_file.stem)),
         "original_name": str(doc.get("original_name", "")),
