@@ -235,12 +235,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Before autoclaving, the pH of the Medium is adjusted with NaOH to 7.5-8.0.
-    After autoclaving, the filter-sterilized vitamin solution (0.1% volume), and each
-    of the separately autoclaved, concentrated solutions are added to the medium at
-    a final concentration described below. Then a mix gas (80% H2, 20% CO2) is purged
-    for 5 min. Finally, the mix gas is compressed into gas phase (> 80% volume of
-    the tube or bottle) at 3 atm.
+  description: Before autoclaving, the pH of the Medium is adjusted with NaOH to
+    7.5-8.0. After autoclaving, the filter-sterilized vitamin solution (0.1%
+    volume), and each of the separately autoclaved, concentrated solutions are
+    added to the medium at a final concentration described below. Then a mix gas
+    (80% H2, 20% CO2) is purged for 5 min. Finally, the mix gas is compressed
+    into gas phase (> 80% volume of the tube or bottle) at 3 atm.
 applications:
 - Microbial cultivation
 curation_history:
@@ -259,5 +259,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.076757+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MJANHOX-NO3 MEDIUM WITH SUPPLEMENT" to "mjanhox_no3_medium_with_supplement"
-    for consistent matching
+  notes: Normalized name from "MJANHOX-NO3 MEDIUM WITH SUPPLEMENT" to
+    "mjanhox_no3_medium_with_supplement" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1000_MJANHOX-NO3_MEDIUM_WITH_SUPPLEMENT.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003497
+  name: mjanhox_no3_medium_with_supplement
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

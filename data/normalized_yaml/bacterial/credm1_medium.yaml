@@ -292,14 +292,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except vitamins, bicarbonate and malate. Adjust
-    pH to 6.5, dispense medium in culture vessels and autoclave. Prior to inoculation
-    add vitamins, bicarbonate and malate from stock solutions sterilized by filtration.
-    Adjust pH of complete medium to 6.7 - 6.9.
+  description: Dissolve ingredients except vitamins, bicarbonate and malate.
+    Adjust pH to 6.5, dispense medium in culture vessels and autoclave. Prior to
+    inoculation add vitamins, bicarbonate and malate from stock solutions
+    sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.9.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -310,8 +310,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:50.580776Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:07.553325Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -323,4 +323,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.878793+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CreDm1 MEDIUM" to "credm1_medium" for consistent matching
+  notes: Normalized name from "CreDm1 MEDIUM" to "credm1_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_691_CreDm1_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006296
+  name: credm1_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

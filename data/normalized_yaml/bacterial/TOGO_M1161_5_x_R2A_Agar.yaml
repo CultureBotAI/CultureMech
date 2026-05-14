@@ -128,4 +128,15 @@ curation_history:
 - timestamp: '2026-03-17T19:46:09.002857+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "5 x R2A Agar" to "5_x_r2a_agar" for consistent matching
+  notes: Normalized name from "5 x R2A Agar" to "5_x_r2a_agar" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M341_R2A_Agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009720
+  name: r2a_agar
+  notes: Both records are TOGO/NBRC R2A Agar formulations; the child is
+    explicitly named 5 x R2A Agar and retains the solid agar base.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- R2A nutrient and salt components increase five-fold while agar remains 15 g/L.

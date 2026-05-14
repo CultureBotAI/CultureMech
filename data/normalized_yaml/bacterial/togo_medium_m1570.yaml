@@ -59,5 +59,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:12.164655+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TOGO Medium M1570" to "togo_medium_m1570" for consistent
-    matching
+  notes: Normalized name from "TOGO Medium M1570" to "togo_medium_m1570" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/bn_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008539
+  name: bn_agar
+  notes: Both records are TOGO/NBRC solid complex nutrient-broth agar records
+    with one Nutrient Broth (OXOID) concentration axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Nutrient Broth (OXOID) decreases from 13 g/L to 6.5 g/L; agar remains 15 g/L
+  and the parsed ingredient set otherwise matches.

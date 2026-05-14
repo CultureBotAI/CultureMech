@@ -102,8 +102,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.437512Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:35.476467Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -123,5 +123,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.639258+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MANNING medium" to "manning_medium" for consistent
-    matching
+  notes: Normalized name from "MANNING medium" to "manning_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/sulfobacillus_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001804
+  name: sulfobacillus_medium
+  notes: Reviewed Manning/Sulfobacillus pair; child keeps the same component set
+    and yeast extract level, changes ammonium sulfate, KCl, K2HPO4, MgSO4,
+    Ca(NO3)2, and FeSO4 concentrations, and resolves H2SO4 from variable to 1
+    g/L.

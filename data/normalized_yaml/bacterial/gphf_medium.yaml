@@ -76,4 +76,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.633134+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GPHF-MEDIUM" to "gphf_medium" for consistent matching
+  notes: Normalized name from "GPHF-MEDIUM" to "gphf_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_553_GPHF-MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006001
+  name: gphf_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

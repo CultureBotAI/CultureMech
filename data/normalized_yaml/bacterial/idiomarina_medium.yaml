@@ -76,12 +76,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.324634+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "IDIOMARINA MEDIUM" to "idiomarina_medium" for consistent
-    matching
+  notes: Normalized name from "IDIOMARINA MEDIUM" to "idiomarina_medium" for
+    consistent matching
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: AUTOCLAVE
   description: Sterilize by autoclaving (121°C, 15 psi, 15-20 min)
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1016_IDIOMARINA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003527
+  name: idiomarina_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

@@ -119,6 +119,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.124731+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALORUBRUM CALIFORNIENSE MEDIUM" to "halorubrum_californiense_medium"
-    for consistent matching
+  notes: Normalized name from "HALORUBRUM CALIFORNIENSE MEDIUM" to
+    "halorubrum_californiense_medium" for consistent matching
 high_metal: true
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1194_HALORUBRUM_CALIFORNIENSE_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003930
+  name: halorubrum_californiense_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1194; local
+    ingredient and concentration signatures match.

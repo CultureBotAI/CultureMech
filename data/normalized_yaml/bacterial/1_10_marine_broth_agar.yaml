@@ -59,5 +59,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:14.421815+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/10 Marine Broth (Agar)" to "1_10_marine_broth_agar"
-    for consistent matching
+  notes: Normalized name from "1/10 Marine Broth (Agar)" to
+    "1_10_marine_broth_agar" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/1_2_marine_broth_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008758
+  name: 1_2_marine_broth_agar
+  notes: Both records are TOGO/NBRC diluted Marine Broth/Agar formulations with
+    explicit 1/2 and 1/10 strength names and matching Marine Broth 2216 base.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- 1/10 Marine Broth (Agar) decreases Bacto Marine Broth 2216 from 18.7 g/L to
+  3.7 g/L while agar remains 15 g/L.

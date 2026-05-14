@@ -233,9 +233,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave the NaHCO3 and Na2CO3 separately and add to the medium. Add
-    the vitamin B12 solution from a filter sterilised stock solution to the autoclaved,
-    cooled medium. Final is pH 8.5.
+  description: Autoclave the NaHCO3 and Na2CO3 separately and add to the medium.
+    Add the vitamin B12 solution from a filter sterilised stock solution to the
+    autoclaved, cooled medium. Final is pH 8.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -254,5 +254,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.614606+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ROSEOCOCCUS SUDUNTUYENSIS MEDIUM" to "roseococcus_suduntuyensis_medium"
-    for consistent matching
+  notes: Normalized name from "ROSEOCOCCUS SUDUNTUYENSIS MEDIUM" to
+    "roseococcus_suduntuyensis_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1217_ROSEOCOCCUS_SUDUNTUYENSIS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003968
+  name: roseococcus_suduntuyensis_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1217; local
+    ingredient and concentration signatures match.

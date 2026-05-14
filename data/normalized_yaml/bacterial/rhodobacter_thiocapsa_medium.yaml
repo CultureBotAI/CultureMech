@@ -172,8 +172,8 @@ preparation_steps:
   description: pH 7.2
 - step_number: 2
   action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
-    a rubber septum under a stream of nitrogen gas.
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes
+    with a rubber septum under a stream of nitrogen gas.
 - step_number: 3
   action: MIX
   description: 'Add the following component after autoclaving from sterile stock solutions:'
@@ -195,5 +195,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.148370+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RHODOBACTER /THIOCAPSA MEDIUM" to "rhodobacter_thiocapsa_medium"
-    for consistent matching
+  notes: Normalized name from "RHODOBACTER /THIOCAPSA MEDIUM" to
+    "rhodobacter_thiocapsa_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1197_RHODOBACTER_THIOCAPSA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003935
+  name: rhodobacter_thiocapsa_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1197; local
+    ingredient and concentration signatures match.

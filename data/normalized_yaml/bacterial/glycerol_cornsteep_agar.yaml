@@ -80,5 +80,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.802479+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GLYCEROL CORNSTEEP AGAR" to "glycerol_cornsteep_agar"
-    for consistent matching
+  notes: Normalized name from "GLYCEROL CORNSTEEP AGAR" to
+    "glycerol_cornsteep_agar" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_581_GLYCEROL_CORNSTEEP_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006052
+  name: glycerol_cornsteep_agar
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

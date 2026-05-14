@@ -135,8 +135,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:23.361617+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified CM+YE Medium (B)" to "modified_cm_ye_medium_b"
-    for consistent matching
+  notes: Normalized name from "Modified CM+YE Medium (B)" to
+    "modified_cm_ye_medium_b" for consistent matching
 solutions:
 - preferred_term: Fe(2+) solution (see below)
   composition: []
@@ -144,3 +144,14 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M51_CM_YE_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009911
+  name: cm_ye_medium
+  notes: Both records are TOGO/JCM CM+YE solid agar formulations; modified
+    medium B is a lower MgSO4/NaCl variant of the same base recipe.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Modified CM+YE Medium B decreases MgSO4 from 20 g/L to 10 g/L and NaCl from
+  200 g/L to 100 g/L while other parsed ingredients remain unchanged.

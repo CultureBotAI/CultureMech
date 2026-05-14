@@ -105,13 +105,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:43.729912Z'
   curator: mediadb-import
@@ -129,8 +131,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.686515+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "'M9 with 16 g/l glucose (kazan" to "m9_with_16_g_l_glucose_kazan"
-    for consistent matching
+  notes: Normalized name from "'M9 with 16 g/l glucose (kazan" to
+    "m9_with_16_g_l_glucose_kazan" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 126
   term:
@@ -142,3 +144,14 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+parent_media:
+  path: data/normalized_yaml/bacterial/m9_with_2_g_l_glucose_kazan.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007011
+  name: m9_with_2_g_l_glucose_kazan
+  notes: MediaDB M9 Kazan glucose-dose grid; reviewed as concentration variant
+    of the 2 g/L glucose record.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Glucose concentration increased from 2 g/L (11.1012 mM) to 16 g/L (88.8099
+  mM); all other parsed ingredient concentrations match the parent.

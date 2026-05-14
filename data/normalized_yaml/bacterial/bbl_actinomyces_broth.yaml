@@ -100,8 +100,9 @@ preparation_steps:
   description: final pH 6.9
 - step_number: 2
   action: HEAT
-  description: Distribute into screw-capped Wheaton tubes. For anaerobic handling
-    prepare and distribute into Hungate tubes by using the Hungate technique.
+  description: Distribute into screw-capped Wheaton tubes. For anaerobic
+    handling prepare and distribute into Hungate tubes by using the Hungate
+    technique.
 applications:
 - Microbial cultivation
 curation_history:
@@ -120,5 +121,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.434295+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BBL ACTINOMYCES BROTH" to "bbl_actinomyces_broth" for
-    consistent matching
+  notes: Normalized name from "BBL ACTINOMYCES BROTH" to "bbl_actinomyces_broth"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1029_BBL_ACTINOMYCES_BROTH.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003541
+  name: bbl_actinomyces_broth
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

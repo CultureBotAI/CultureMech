@@ -345,8 +345,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.116794Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:28.538689Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -358,5 +358,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:43.955871+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDAMINOBACTER medium" to "acidaminobacter_medium"
-    for consistent matching
+  notes: Normalized name from "ACIDAMINOBACTER medium" to
+    "acidaminobacter_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/acidaminobacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001391
+  name: acidaminobacter_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 292; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 292; local
+  ingredient and concentration signatures match.

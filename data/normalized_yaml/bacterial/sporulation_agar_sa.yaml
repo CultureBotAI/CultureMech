@@ -80,5 +80,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.641183+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPORULATION-AGAR (SA)" to "sporulation_agar_sa" for
-    consistent matching
+  notes: Normalized name from "SPORULATION-AGAR (SA)" to "sporulation_agar_sa"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_555_SPORULATION-AGAR_SA.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006004
+  name: sporulation_agar_sa
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -261,3 +261,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MACROMONAS medium" to "macromonas_medium" for consistent
     matching
+parent_media:
+  path: data/normalized_yaml/bacterial/macromonas_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002004
+  name: macromonas_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

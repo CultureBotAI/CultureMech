@@ -378,3 +378,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SPOROHALOBACTER LORTETII MEDIUM" to "sporohalobacter_lortetii_medium"
     for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_319_SPOROHALOBACTER_LORTETII_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005007
+  name: sporohalobacter_lortetii_medium
+  notes: Same source medium number and matching ingredient/concentration signature;
+    child records NaOH as a variable pH-adjuster extracted from source notes.

@@ -66,4 +66,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.426290+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TCG medium" to "tcg_medium" for consistent matching
+  notes: Normalized name from "TCG medium" to "tcg_medium" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J720_TCG_MEDIUM.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003065
+  name: tcg_medium
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Same ingredient identity signature but concentration signature differs from
+  parent.

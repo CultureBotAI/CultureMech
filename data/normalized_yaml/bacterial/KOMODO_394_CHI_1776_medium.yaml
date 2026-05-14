@@ -78,8 +78,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.882969Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:30.849394Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -91,5 +91,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:46.660328+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CHI 1776 medium" to "chi_1776_medium" for consistent
-    matching
+  notes: Normalized name from "CHI 1776 medium" to "chi_1776_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/chi_1776_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001501
+  name: chi_1776_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 394; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 394; local
+  ingredient and concentration signatures match.

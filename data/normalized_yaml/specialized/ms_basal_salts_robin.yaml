@@ -128,3 +128,19 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015639'
 data_quality_flags:
 - has_unmapped_ingredients
+variant_children:
+- path: data/normalized_yaml/specialized/ms_basal_salts_robin_0_5x.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015640
+  name: MS Basal Salts Robin 0.5x
+  notes: 0.5x MS Basal Salts Robin halves the parsed basal salt and trace
+    element concentrations, including ammonium nitrate 1650 to 825 mg/L and
+    potassium nitrate 1900 to 950 mg/L.
+- path:
+    data/normalized_yaml/specialized/ms_basal_salts_robin_lowphosphate_0_5x.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015641
+  name: MS Basal Salts Robin LowPhosphate 0.5x
+  notes: LowPhosphate 0.5x MS Basal Salts Robin halves most parsed basal salt
+    and trace element concentrations and lowers potassium phosphate monobasic
+    from 1250 uM to 30 uM.

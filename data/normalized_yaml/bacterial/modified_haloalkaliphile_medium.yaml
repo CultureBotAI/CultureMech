@@ -105,10 +105,10 @@ preparation_steps:
   description: Add components to distilled water and bring volume to 500 ml.
 - step_number: 3
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately and combine them after cooling.
-    For preparation of solid medium, add 18.0 g agar to Solution A (500 ml), combine
-    them after cooling to 60-70C, mix well and quickly distribute into sterile petri
-    dishes or test tubes.
+  description: Autoclave solutions A and B separately and combine them after
+    cooling. For preparation of solid medium, add 18.0 g agar to Solution A (500
+    ml), combine them after cooling to 60-70C, mix well and quickly distribute
+    into sterile petri dishes or test tubes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -135,6 +135,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:25.951739+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED HALOALKALIPHILE MEDIUM" to "modified_haloalkaliphile_medium"
-    for consistent matching
+  notes: Normalized name from "MODIFIED HALOALKALIPHILE MEDIUM" to
+    "modified_haloalkaliphile_medium" for consistent matching
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/haloalkaliphile_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002663
+  name: haloalkaliphile_medium
+  notes: Reviewed Modified Haloalkaliphile concentration variant; child shares
+    the parent formulation with carbonate concentration as the curated axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed Haloalkaliphile pair; child keeps yeast extract, casamino acids, Na
+  glutamate, MgSO4, CaSO4, KCl, and NaCl unchanged while Na2CO3 increases from 8
+  to 80 g/L; citrate hydrate label differs.

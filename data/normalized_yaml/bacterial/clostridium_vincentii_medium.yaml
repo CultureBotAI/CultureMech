@@ -185,15 +185,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, phosphate-buffer, lactose,
-    vitamins, cysteine and sulfide), then sparge medium with 80% N2 and 20% CO2 gas
-    mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization
-    add phosphate-buffer, lactose, cysteine and sulfide from sterile anoxic stock
-    solutions autoclaved under 100% N2 gas and bicarbonate from a sterile anoxic stock
-    solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins are prepared
-    under N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium
-    to 6.5, if necessary.
+  description: Dissolve ingredients (except bicarbonate, phosphate-buffer,
+    lactose, vitamins, cysteine and sulfide), then sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and
+    autoclave. After sterilization add phosphate-buffer, lactose, cysteine and
+    sulfide from sterile anoxic stock solutions autoclaved under 100% N2 gas and
+    bicarbonate from a sterile anoxic stock solution prepared under 80% N2 and
+    20% CO2 gas mixture. Vitamins are prepared under N2 gas atmosphere and
+    sterilized by filtration. Adjust pH of complete medium to 6.5, if necessary.
 - step_number: 2
   action: FILTER_STERILIZE
   description: 'Note: Sea salts can be replaced by 300.0 ml/l of filtered aged sea
@@ -212,8 +212,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:51.893102Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:08.270616Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -225,5 +225,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.694363+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM VINCENTII MEDIUM" to "clostridium_vincentii_medium"
-    for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM VINCENTII MEDIUM" to
+    "clostridium_vincentii_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006425
+  name: clostridium_vincentii_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

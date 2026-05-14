@@ -78,5 +78,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:40.829310+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YpSs medium" to "ypss_medium" for consistent matching
+  notes: Normalized name from "YpSs medium" to "ypss_medium" for consistent
+    matching
 ph_value: 6.5
+parent_media:
+  path: data/normalized_yaml/bacterial/ypss_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001282
+  name: ypss_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 190; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 190; local
+  ingredient and concentration signatures match.

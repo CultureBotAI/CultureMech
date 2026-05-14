@@ -140,10 +140,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dispense the medium into the culture vessels. For small volumes serum
-    bottles or Hungate tubes may be used. The gas phase to liquid ratio should be
-    about 1:10. Use a gas phase containing air, 20-30% methane and autoclave at 121°C
-    for 15 minutes. When the growth medium is cool the phosphate buffer is added.
+  description: Dispense the medium into the culture vessels. For small volumes
+    serum bottles or Hungate tubes may be used. The gas phase to liquid ratio
+    should be about 1:10. Use a gas phase containing air, 20-30% methane and
+    autoclave at 121°C for 15 minutes. When the growth medium is cool the
+    phosphate buffer is added.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121°C for 15 min.
@@ -181,5 +182,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.005999+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOCELLA SILVERSTRIS MEDIUM" to "methylocella_silverstris_medium"
-    for consistent matching
+  notes: Normalized name from "METHYLOCELLA SILVERSTRIS MEDIUM" to
+    "methylocella_silverstris_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1181_METHYLOCELLA_SILVERSTRIS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003901
+  name: methylocella_silverstris_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1181; local
+    ingredient and concentration signatures match.

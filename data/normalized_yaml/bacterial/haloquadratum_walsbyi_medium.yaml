@@ -135,8 +135,8 @@ preparation_steps:
   description: Final pH 7.4
 - step_number: 3
   action: AUTOCLAVE
-  description: Yeast extract and sodium pyruvate are added from sterile (autoclaved)
-    stock solutions to the respective concentrations.
+  description: Yeast extract and sodium pyruvate are added from sterile
+    (autoclaved) stock solutions to the respective concentrations.
 applications:
 - Microbial cultivation
 curation_history:
@@ -155,6 +155,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.070957+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOQUADRATUM WALSBYI MEDIUM" to "haloquadratum_walsbyi_medium"
-    for consistent matching
+  notes: Normalized name from "HALOQUADRATUM WALSBYI MEDIUM" to
+    "haloquadratum_walsbyi_medium" for consistent matching
 high_metal: true
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1091_HALOQUADRATUM_WALSBYI_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003742
+  name: haloquadratum_walsbyi_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

@@ -199,9 +199,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Prepare the NH4Cl, CaCl2, carbonate, bicarbonate and sulfide as a single
-    sterile stock solution and add to the sterile medium after autoclaving. The pH
-    should be adjust to 9-9.5.
+  description: Prepare the NH4Cl, CaCl2, carbonate, bicarbonate and sulfide as a
+    single sterile stock solution and add to the sterile medium after
+    autoclaving. The pH should be adjust to 9-9.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -220,5 +220,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.104467+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ECTOTHIORHODOSYNUS MEDIUM" to "ectothiorhodosynus_medium"
-    for consistent matching
+  notes: Normalized name from "ECTOTHIORHODOSYNUS MEDIUM" to
+    "ectothiorhodosynus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1002_ECTOTHIORHODOSYNUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003499
+  name: ectothiorhodosynus_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

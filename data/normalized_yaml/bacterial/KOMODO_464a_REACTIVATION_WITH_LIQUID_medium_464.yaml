@@ -62,6 +62,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:49.696930+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "REACTIVATION WITH LIQUID medium 464" to "reactivation_with_liquid_medium_464"
-    for consistent matching
+  notes: Normalized name from "REACTIVATION WITH LIQUID medium 464" to
+    "reactivation_with_liquid_medium_464" for consistent matching
 ph_value: 7.0
+parent_media:
+  path: data/normalized_yaml/bacterial/reactivation_with_liquid_medium_464.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001584
+  name: reactivation_with_liquid_medium_464
+  notes: KOMODO record states DSMZ Medium 464a provenance and exactly matches
+    the single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

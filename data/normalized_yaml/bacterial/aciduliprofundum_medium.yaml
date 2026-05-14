@@ -253,17 +253,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except sulfur and sulfide) and sparge medium
-    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    containing already the appropriate amount of powdered sulfur and autoclave for
-    60 min at <b>105°C</b>. Prior to inoculation add sulfide from a sterile anoxic
-    stock solution prepared under 100% N2 gas and adjust pH of complete medium to
-    4.5.
+  description: Dissolve ingredients (except sulfur and sulfide) and sparge
+    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it
+    anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials containing already the appropriate amount of powdered
+    sulfur and autoclave for 60 min at <b>105°C</b>. Prior to inoculation add
+    sulfide from a sterile anoxic stock solution prepared under 100% N2 gas and
+    adjust pH of complete medium to 4.5.
 - step_number: 2
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
-    salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve
+    the salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -286,5 +286,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.029862+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDULIPROFUNDUM MEDIUM" to "aciduliprofundum_medium"
-    for consistent matching
+  notes: Normalized name from "ACIDULIPROFUNDUM MEDIUM" to
+    "aciduliprofundum_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1083_ACIDULIPROFUNDUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003735
+  name: aciduliprofundum_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

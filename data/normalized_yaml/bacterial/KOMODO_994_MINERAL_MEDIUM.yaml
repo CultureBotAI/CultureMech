@@ -292,5 +292,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.445789+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MINERAL MEDIUM" to "mineral_medium" for consistent
-    matching
+  notes: Normalized name from "MINERAL MEDIUM" to "mineral_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/DSMZ_994_MINERAL_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002179
+  name: mineral_medium
+  notes: KOMODO record states DSMZ Medium 994 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

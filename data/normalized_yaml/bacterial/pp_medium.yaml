@@ -63,3 +63,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PP-MEDIUM" to "pp_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_513_PP-MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005714
+  name: pp_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

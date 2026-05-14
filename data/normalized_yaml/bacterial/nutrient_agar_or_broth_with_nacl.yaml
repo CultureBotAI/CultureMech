@@ -58,6 +58,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.348924+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NUTRIENT AGAR or BROTH WITH NaCl" to "nutrient_agar_or_broth_with_nacl"
-    for consistent matching
+  notes: Normalized name from "NUTRIENT AGAR or BROTH WITH NaCl" to
+    "nutrient_agar_or_broth_with_nacl" for consistent matching
 kg_microbe_match: mediadive.medium:101
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_101_NUTRIENT_AGAR_or_BROTH_WITH_NaCl.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003531
+  name: nutrient_agar_or_broth_with_nacl
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

@@ -53,6 +53,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.848664+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS MEDIUM WITH 10% NaCl" to "mrs_medium_with_10_nacl"
-    for consistent matching
+  notes: Normalized name from "MRS MEDIUM WITH 10% NaCl" to
+    "mrs_medium_with_10_nacl" for consistent matching
 kg_microbe_match: mediadive.medium:101
+variant_children:
+- path: data/normalized_yaml/bacterial/mrs_medium_with_2_5_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002944
+  name: mrs_medium_with_2_5_nacl
+  notes: NaCl concentration decreased from 100 g/L (10%) to 25 g/L (2.5%); all
+    other parsed ingredient concentrations match the parent.
+- path: data/normalized_yaml/bacterial/mrs_medium_with_2_5_nacl_ph_9_0.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:003279
+  name: mrs_medium_with_2_5_nacl_ph_9_0
+  notes: NaCl concentration decreased from 100 g/L (10%) to 25 g/L (2.5%) and pH
+    is specified as 9.0; all other parsed ingredient concentrations match the
+    parent.

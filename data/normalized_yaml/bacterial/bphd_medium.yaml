@@ -318,15 +318,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve phosphates separately, Adjust pH to 6.5. Add cresol/phenol
-    and vitamin solution after autoclaving.
+  description: Dissolve phosphates separately, Adjust pH to 6.5. Add
+    cresol/phenol and vitamin solution after autoclaving.
 - step_number: 2
   action: MIX
   description: '(e.g.: 20 ml/l of a 4.7 g/l phenol-solution)'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -337,8 +337,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.402812Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:44.281255Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -354,4 +354,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.410280+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BPHD Medium" to "bphd_medium" for consistent matching
+  notes: Normalized name from "BPHD Medium" to "bphd_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_738_BPHD_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006387
+  name: bphd_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

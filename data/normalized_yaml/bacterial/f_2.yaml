@@ -150,9 +150,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
-    \ with 1M NaOH or 1 M HCl\r\nprior to autoclaving. For agar add 15g per litre\
-    \ Bacteriological Agar. Autoclave at 15 psi for 15\r\nminutes."
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0
+    with 1M NaOH or 1 M HCl\r\nprior to autoclaving. For agar add 15g per litre Bacteriological
+    Agar. Autoclave at 15 psi for 15\r\nminutes."
 - step_number: 2
   action: MIX
   description: First make primary stocks of Cyanocobalamin and Biotin.
@@ -180,3 +180,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "f/2" to "f_2" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/f_2_quad.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000344
+  name: f_2_quad
+  notes: f/2 Quad increases NaNO3 and NaH2PO4 x 2 H2O from 1 g/L to 4 g/L while
+    seawater, agar, trace metals, and vitamins remain unchanged.

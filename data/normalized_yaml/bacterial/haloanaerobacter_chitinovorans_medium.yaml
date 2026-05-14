@@ -259,18 +259,18 @@ preparation_steps:
   description: pH 7.2
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without the Na2S, Na2CO3, NaHCO3, L-cysteine and
-    substrate. Boil the medium and cool under a stream of nitrogen. Add the Na2CO3
-    and NaHCO3 . Adjust the pH to 7.2. If chitin is used as the substrate it must
-    be added before autoclaving. Autoclave the medium and add the Na2S (from a sterile,
-    neutralized stock solution prepared under nitrogen), L-cysteine (from a stock
-    solution prepared under nitrogen), and the glucose or N-acetylglucosamine (if
-    used as substrate) from sterile stock solution prepared under nitrogen. Check
-    the final pH.
+  description: Prepare the medium without the Na2S, Na2CO3, NaHCO3, L-cysteine
+    and substrate. Boil the medium and cool under a stream of nitrogen. Add the
+    Na2CO3 and NaHCO3 . Adjust the pH to 7.2. If chitin is used as the substrate
+    it must be added before autoclaving. Autoclave the medium and add the Na2S
+    (from a sterile, neutralized stock solution prepared under nitrogen),
+    L-cysteine (from a stock solution prepared under nitrogen), and the glucose
+    or N-acetylglucosamine (if used as substrate) from sterile stock solution
+    prepared under nitrogen. Check the final pH.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -293,5 +293,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.967990+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOANAEROBACTER CHITINOVORANS MEDIUM" to "haloanaerobacter_chitinovorans_medium"
-    for consistent matching
+  notes: Normalized name from "HALOANAEROBACTER CHITINOVORANS MEDIUM" to
+    "haloanaerobacter_chitinovorans_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_701_HALOANAEROBACTER_CHITINOVORANS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006331
+  name: haloanaerobacter_chitinovorans_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -67,4 +67,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:25.450494+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Luria broth" to "luria_broth" for consistent matching
+  notes: Normalized name from "Luria broth" to "luria_broth" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/lennox.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:009506
+  name: lennox
+  notes: Reviewed TOGO Lennox/Luria broth salt pair; Luria broth is modeled as
+    the 10 g/L NaCl child variant of Lennox broth.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl increased from 5 g/L to 10 g/L while Bacto yeast extract and Bacto
+  tryptone remain unchanged.

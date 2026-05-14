@@ -89,8 +89,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 6.5 and autoclave.
+  description: Add components to distilled water and bring volume to 1.0 L.
+    Adjust pH to 6.5 and autoclave.
 - step_number: 2
   action: MIX
   description: For preparation of solid medium, add 20.0 g/L agar.
@@ -116,6 +116,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:30.650128+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOSARCINA PALLIDA MEDIUM" to "halosarcina_pallida_medium"
-    for consistent matching
+  notes: Normalized name from "HALOSARCINA PALLIDA MEDIUM" to
+    "halosarcina_pallida_medium" for consistent matching
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/halobacteria_hmd_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003225
+  name: halobacteria_hmd_medium
+  notes: Reviewed Halosarcina pallida medium as a concentration variant of
+    Halobacteria HMD medium with ammonium and casamino-acid axes.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed Halobacteria HMD/Halosarcina pallida pair; child keeps NaCl, MgCl2,
+  sulfate, CaCl2, KH2PO4, and yeast extract unchanged, raises NH4Cl from 0.1 to
+  0.5 g/L and casamino acids from 0.5 to 5 g/L, and changes pH from 7.1 to 6.5.

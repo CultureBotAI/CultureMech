@@ -165,8 +165,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0. Autoclave at 121°C for 15 min. Cool to 50°C. Add
-    a filter-sterilized solution of methanol to give a final concentration of 0.2%.
+  description: Adjust pH to 7.0. Autoclave at 121°C for 15 min. Cool to 50°C.
+    Add a filter-sterilized solution of methanol to give a final concentration
+    of 0.2%.
 applications:
 - Microbial cultivation
 curation_history:
@@ -185,5 +186,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.035050+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "COLBY AND ZATHMAN MEDIUM" to "colby_and_zathman_medium"
-    for consistent matching
+  notes: Normalized name from "COLBY AND ZATHMAN MEDIUM" to
+    "colby_and_zathman_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_606_COLBY_AND_ZATHMAN_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006095
+  name: colby_and_zathman_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

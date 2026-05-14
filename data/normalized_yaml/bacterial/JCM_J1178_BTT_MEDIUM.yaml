@@ -66,4 +66,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:25.605969+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BTT MEDIUM" to "btt_medium" for consistent matching
+  notes: Normalized name from "BTT MEDIUM" to "btt_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003810
+  name: btt_medium
+  notes: Same ingredient identity signature but concentration signature differs
+    from parent.
+- path: data/normalized_yaml/bacterial/btt_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000543
+  name: btt_medium
+  notes: Same ingredient identity signature but concentration signature differs
+    from parent.

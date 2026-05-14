@@ -108,4 +108,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.108042+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SP - MEDIUM" to "sp_medium" for consistent matching
+  notes: Normalized name from "SP - MEDIUM" to "sp_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_222_SP_-_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004577
+  name: sp_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 222; local
+    ingredient and concentration signatures match.

@@ -80,3 +80,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MYX AGAR" to "myx_agar" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_729_MYX_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006371
+  name: myx_agar
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

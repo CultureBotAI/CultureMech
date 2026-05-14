@@ -130,3 +130,15 @@ variant_children:
   name: medium_1160_modified_for_dsm_23178
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/payne_seghal_gibbons_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000600
+  name: payne_seghal_gibbons_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1160; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1160; local
+  ingredient and concentration signatures match.

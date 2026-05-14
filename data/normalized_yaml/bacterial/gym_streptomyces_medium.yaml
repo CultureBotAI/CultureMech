@@ -54,8 +54,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.2 before adding agar. Delete CaCO3 if liquid medium
-    is used.
+  description: Adjust pH to 7.2 before adding agar. Delete CaCO3 if liquid
+    medium is used.
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,5 +74,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.560316+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GYM STREPTOMYCES MEDIUM" to "gym_streptomyces_medium"
-    for consistent matching
+  notes: Normalized name from "GYM STREPTOMYCES MEDIUM" to
+    "gym_streptomyces_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_65_GYM_STREPTOMYCES_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006237
+  name: gym_streptomyces_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

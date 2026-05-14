@@ -89,3 +89,15 @@ variant_children:
   name: medium_550_modified_for_dsm_17572
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/cyc_medium_modified_following_cross_and_attwell_1973.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001686
+  name: cyc_medium_modified_following_cross_and_attwell_1973
+  notes: KOMODO record states DSMZ Medium 550 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

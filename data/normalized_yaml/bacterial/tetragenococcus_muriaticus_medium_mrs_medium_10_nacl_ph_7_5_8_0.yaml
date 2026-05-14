@@ -1,6 +1,7 @@
 id: CultureMech:008171
 name: tetragenococcus_muriaticus_medium_mrs_medium_10_nacl_ph_7_5_8_0
-original_name: Tetragenococcus muriaticus Medium (MRS Medium + 10% NaCl, pH 7.5-8.0)
+original_name: Tetragenococcus muriaticus Medium (MRS Medium + 10% NaCl, pH
+  7.5-8.0)
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
@@ -160,6 +161,20 @@ curation_history:
 - timestamp: '2026-03-17T19:46:12.708198+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Tetragenococcus muriaticus Medium (MRS Medium + 10%
-    NaCl, pH 7.5-8.0)" to "tetragenococcus_muriaticus_medium_mrs_medium_10_nacl_ph_7_5_8_0"
-    for consistent matching
+  notes: Normalized name from "Tetragenococcus muriaticus Medium (MRS Medium +
+    10% NaCl, pH 7.5-8.0)" to
+    "tetragenococcus_muriaticus_medium_mrs_medium_10_nacl_ph_7_5_8_0" for
+    consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/tetragenococcus_halophilus_medium_to_mrs_medium_add_6_5_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008170
+  name: tetragenococcus_halophilus_medium_to_mrs_medium_add_6_5_nacl
+  notes: Reviewed TOGO Tetragenococcus MRS salt pair; records differ in parsed
+    YAML only by NaCl concentration, with pH condition retained in the child
+    name/modification note.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl increased from 65 g/L to 100 g/L; child name specifies pH 7.5-8.0 while
+  the MRS-based formulation remains unchanged in parsed ingredients.

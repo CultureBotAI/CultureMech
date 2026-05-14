@@ -109,9 +109,9 @@ preparation_steps:
   description: pH 6.8-7.0
 - step_number: 2
   action: DISSOLVE
-  description: The first three salts must be dissolved in the indicated sequence.
-    After autoclaving for 20 min at 121°C the pH of the medium shifted to 8.5-9.0.
-    Solid medium contained 1.5 to 2.0% (w/v) of Bacto-Agar (Difco).
+  description: The first three salts must be dissolved in the indicated
+    sequence. After autoclaving for 20 min at 121°C the pH of the medium shifted
+    to 8.5-9.0. Solid medium contained 1.5 to 2.0% (w/v) of Bacto-Agar (Difco).
 applications:
 - Microbial cultivation
 curation_history:
@@ -130,4 +130,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.836017+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "OM-2 MEDIUM" to "om_2_medium" for consistent matching
+  notes: Normalized name from "OM-2 MEDIUM" to "om_2_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_782_OM-2_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006481
+  name: om_2_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -192,5 +192,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.419464+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RHODOVULUM MARINUM MEDIUM" to "rhodovulum_marinum_medium"
-    for consistent matching
+  notes: Normalized name from "RHODOVULUM MARINUM MEDIUM" to
+    "rhodovulum_marinum_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/rhodovulum_marinum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000681
+  name: rhodovulum_marinum_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1222; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1222; local
+  ingredient and concentration signatures match.

@@ -124,5 +124,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.344429+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AZOSPIRILLUM AMAZONENSE MEDIUM" to "azospirillum_amazonense_medium"
-    for consistent matching
+  notes: Normalized name from "AZOSPIRILLUM AMAZONENSE MEDIUM" to
+    "azospirillum_amazonense_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_352_AZOSPIRILLUM_AMAZONENSE_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005068
+  name: azospirillum_amazonense_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 352; local
+    ingredient and concentration signatures match.

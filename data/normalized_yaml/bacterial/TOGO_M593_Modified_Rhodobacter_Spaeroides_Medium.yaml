@@ -219,8 +219,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:29.470786+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified Rhodobacter Spaeroides Medium" to "modified_rhodobacter_spaeroides_medium"
-    for consistent matching
+  notes: Normalized name from "Modified Rhodobacter Spaeroides Medium" to
+    "modified_rhodobacter_spaeroides_medium" for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Fe--Citrate solution (0.1%, w/v)
@@ -236,3 +236,16 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M517_Rhodobium_Gokurnum_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009908
+  name: rhodobium_gokurnum_medium
+  notes: Reviewed source-local modified Rhodobacter concentration variant; child
+    shares the parent formulation with salt, ammonium, and yeast-extract
+    concentration differences.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed TOGO Rhodobium/modified Rhodobacter source-local pair; child shares
+  the parsed base formulation but lowers NaCl, CaCl2, MgCl2, and NH4Cl and
+  raises yeast extract from 0.4 to 0.6 g/L.

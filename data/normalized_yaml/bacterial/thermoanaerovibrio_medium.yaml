@@ -307,19 +307,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, except magnesium chloride, calcium chloride,
-    carbonate, vitamins, glucose and sulfide, then sparge medium for 30 - 45 min with
-    80% N2 and 20% CO2 gas mixture to make it anoxic. Dispense medium under same gas
-    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
-    autoclaving, add magnesium chloride, calcium chloride, vitamins, glucose and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
-    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
-    Vitamins should be sterilized by filtration. Adjust pH of the complete medium
-    to 7.0 - 7.3, if necessary.
+  description: Dissolve ingredients, except magnesium chloride, calcium
+    chloride, carbonate, vitamins, glucose and sulfide, then sparge medium for
+    30 - 45 min with 80% N2 and 20% CO2 gas mixture to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. After autoclaving, add magnesium chloride, calcium
+    chloride, vitamins, glucose and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock
+    solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should be
+    sterilized by filtration. Adjust pH of the complete medium to 7.0 - 7.3, if
+    necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -330,8 +331,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:46.264137Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:09.593461Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -343,5 +344,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.171066+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOANAEROVIBRIO MEDIUM" to "thermoanaerovibrio_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOANAEROVIBRIO MEDIUM" to
+    "thermoanaerovibrio_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_873_THERMOANAEROVIBRIO_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006708
+  name: thermoanaerovibrio_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

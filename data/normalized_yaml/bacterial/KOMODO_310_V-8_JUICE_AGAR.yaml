@@ -59,7 +59,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:44.673959+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "V-8 JUICE AGAR" to "v_8_juice_agar" for consistent
-    matching
+  notes: Normalized name from "V-8 JUICE AGAR" to "v_8_juice_agar" for
+    consistent matching
 high_metal: true
 kg_microbe_match: mediadive.medium:310
+parent_media:
+  path: data/normalized_yaml/bacterial/v_8_juice_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001408
+  name: v_8_juice_agar
+  notes: KOMODO record explicitly cites DSMZ Medium 310; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 310; local
+  ingredient and concentration signatures match.

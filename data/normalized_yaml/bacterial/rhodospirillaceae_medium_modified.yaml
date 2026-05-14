@@ -202,10 +202,10 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 2
   action: AUTOCLAVE
-  description: Boil the medium for a few minute. Bubble the medium with nitrogen gas
-    and fill 10 ml in 15 ml tubes with a rubber septum under a stream of nitrogen
-    gas. Autoclave at 121°C for 15 min. Sterile syringes are used to inoculate and
-    remove samples.
+  description: Boil the medium for a few minute. Bubble the medium with nitrogen
+    gas and fill 10 ml in 15 ml tubes with a rubber septum under a stream of
+    nitrogen gas. Autoclave at 121°C for 15 min. Sterile syringes are used to
+    inoculate and remove samples.
 - step_number: 3
   action: MIX
   description: Incubate in the light using a tungsten lamp.
@@ -227,5 +227,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.416027+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RHODOSPIRILLACEAE MEDIUM (modified)" to "rhodospirillaceae_medium_modified"
-    for consistent matching
+  notes: Normalized name from "RHODOSPIRILLACEAE MEDIUM (modified)" to
+    "rhodospirillaceae_medium_modified" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_27_RHODOSPIRILLACEAE_medium_modified.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004707
+  name: rhodospirillaceae_medium_modified
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 27; local
+    ingredient and concentration signatures match.

@@ -79,3 +79,9 @@ variant_children:
   name: malt_extract_ebios_agar_meba
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+- path: data/normalized_yaml/bacterial/ma4.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007978
+  name: ma4
+  notes: Malt extract increased from 20 g/L to 40 g/L while the MA agar base
+    remains unchanged.

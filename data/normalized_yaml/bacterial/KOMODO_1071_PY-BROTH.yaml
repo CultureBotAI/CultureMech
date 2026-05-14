@@ -114,3 +114,13 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PY-BROTH" to "py_broth" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/py_broth.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000503
+  name: py_broth
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

@@ -348,3 +348,15 @@ variant_children:
   name: medium_1245_modified_for_dsm_18691
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/oteb_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000704
+  name: oteb_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1245; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1245; local
+  ingredient and concentration signatures match.

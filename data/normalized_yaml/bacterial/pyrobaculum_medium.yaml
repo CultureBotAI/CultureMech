@@ -167,13 +167,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except Trypticase peptone, yeast extract, sodium
-    thiosulfate and sulfide), adjust pH to 6.0 and sparge medium with 100% N2 gas
-    for at least 30 min to remove dissolved oxygen. After autoclaving add peptone,
-    yeast extract, thiosulfate and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas. Stock solutions of substrates can be autoclaved with the exception
-    of sodium thiosulfate which should be sterilized by filtration. Prior to inoculation
-    adjust pH of final medium to 6.0.
+  description: Dissolve ingredients (except Trypticase peptone, yeast extract,
+    sodium thiosulfate and sulfide), adjust pH to 6.0 and sparge medium with
+    100% N2 gas for at least 30 min to remove dissolved oxygen. After
+    autoclaving add peptone, yeast extract, thiosulfate and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas. Stock solutions of
+    substrates can be autoclaved with the exception of sodium thiosulfate which
+    should be sterilized by filtration. Prior to inoculation adjust pH of final
+    medium to 6.0.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.
@@ -195,5 +196,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.740623+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYROBACULUM MEDIUM" to "pyrobaculum_medium" for consistent
-    matching
+  notes: Normalized name from "PYROBACULUM MEDIUM" to "pyrobaculum_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_390_PYROBACULUM_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005172
+  name: pyrobaculum_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 390; local
+    ingredient and concentration signatures match.

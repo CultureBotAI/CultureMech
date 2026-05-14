@@ -122,8 +122,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Adjust pH to 8.6 with NaOH or KOH. Autoclave and leave the medium\
-    \ to stand for 2 - 3\r\ndays so that pH can adjust itself to pH 7.4 - 7.6."
+  description: "Adjust pH to 8.6 with NaOH or KOH. Autoclave and leave the medium
+    to stand for 2 - 3\r\ndays so that pH can adjust itself to pH 7.4 - 7.6."
 applications:
 - Microbial cultivation
 curation_history:
@@ -142,5 +142,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.585088+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AUTOTROPHIC NITROBACTER MEDIUM" to "autotrophic_nitrobacter_medium"
-    for consistent matching
+  notes: Normalized name from "AUTOTROPHIC NITROBACTER MEDIUM" to
+    "autotrophic_nitrobacter_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/nitrospira_moscoviensis.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001892
+  name: nitrospira_moscoviensis
+  notes: Reviewed DSMZ Nitrospira/Nitrobacter defined-medium pair; records
+    differ only in nitrite concentration.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- NaNO2 increased from 0.5 g/L to 2 g/L while the DSMZ defined autotrophic
+  nitrifier formulation remains unchanged.

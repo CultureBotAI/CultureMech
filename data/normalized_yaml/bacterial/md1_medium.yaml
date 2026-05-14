@@ -139,8 +139,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: After autoclaving and cooling, add 0.5 mg /l vitamin B12 from a filter
-    sterilized stock solution. pH should be 7.0 -7.2.
+  description: After autoclaving and cooling, add 0.5 mg /l vitamin B12 from a
+    filter sterilized stock solution. pH should be 7.0 -7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -159,4 +159,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.420560+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MD1-MEDIUM" to "md1_medium" for consistent matching
+  notes: Normalized name from "MD1-MEDIUM" to "md1_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1118_MD1-MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003820
+  name: md1_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

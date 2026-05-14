@@ -135,7 +135,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:15.513030+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Mmys-I Medium" to "mmys_i_medium" for consistent matching
+  notes: Normalized name from "Mmys-I Medium" to "mmys_i_medium" for consistent
+    matching
 solutions:
 - preferred_term: Trace element solution SL8 (see Medium [M183])
   composition: []
@@ -144,3 +145,10 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M192_Mmys-III_Medium.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008508
+  name: mmys_iii_medium
+  notes: NaCl increased from 30.2 g/L to 50.2 g/L while the TOGO MMYS liquid
+    medium formulation remains unchanged.

@@ -344,23 +344,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, fructose, vitamins, cysteine,
-    and sulfide, bring to the boil, and cool to room temperature under 80% N2 and
-    20% CO2 gas mixture. Add bicarbonate (solid) and equilibrate the medium with the
-    gas until a pH of around 7.4 is reached. Then distribute under the same gas atmosphere
-    in anoxic Hungate-type tubes or serum vials and autoclave. Before use adjust the
-    pH to 7.5 - 8.0 by adding a sterile anoxic stock solution of sodium carbonate
-    (5% w/v) prepared under 80% N2 and 20% CO2 gas mixture and add fructose, vitamins
-    (sterilized by filtration), cysteine, and sulfide from anoxic sterile stock solutions
-    prepared under 100% N2.
+  description: Dissolve ingredients except bicarbonate, fructose, vitamins,
+    cysteine, and sulfide, bring to the boil, and cool to room temperature under
+    80% N2 and 20% CO2 gas mixture. Add bicarbonate (solid) and equilibrate the
+    medium with the gas until a pH of around 7.4 is reached. Then distribute
+    under the same gas atmosphere in anoxic Hungate-type tubes or serum vials
+    and autoclave. Before use adjust the pH to 7.5 - 8.0 by adding a sterile
+    anoxic stock solution of sodium carbonate (5% w/v) prepared under 80% N2 and
+    20% CO2 gas mixture and add fructose, vitamins (sterilized by filtration),
+    cysteine, and sulfide from anoxic sterile stock solutions prepared under
+    100% N2.
 - step_number: 2
   action: MIX
   description: 'Note: For autotrophic growth D-fructose is omitted and a gas atmosphere
     of 80% H2 and 20% CO2 is used.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -371,8 +372,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.575823Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:23.907231Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -388,5 +389,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.030206+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACETOBACTERIUM MEDIUM" to "acetobacterium_medium" for
-    consistent matching
+  notes: Normalized name from "ACETOBACTERIUM MEDIUM" to "acetobacterium_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/moorella_thermoacetica_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000820
+  name: moorella_thermoacetica_medium
+  notes: Reviewed Acetobacterium/Moorella thermoacetica pair; child keeps the
+    same anaerobic base, fructose, reductants, trace elements, and vitamins but
+    lowers NaHCO3 from 9.79432 to 0.979432 g/L and records pH 6.5.

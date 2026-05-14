@@ -150,7 +150,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 5.0 - 5.5. Agar may be added at 15 g/l for solid media.
+  description: Adjust to pH 5.0 - 5.5. Agar may be added at 15 g/l for solid
+    media.
 applications:
 - Microbial cultivation
 curation_history:
@@ -169,5 +170,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.655933+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDOSOMA MEDIUM" to "acidosoma_medium" for consistent
-    matching
+  notes: Normalized name from "ACIDOSOMA MEDIUM" to "acidosoma_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003973
+  name: acidosoma_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1220; local
+    ingredient and concentration signatures match.

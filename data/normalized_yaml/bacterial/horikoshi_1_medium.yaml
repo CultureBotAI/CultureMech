@@ -73,8 +73,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution
-    to the medium. Check final pH to be about 10.0.
+  description: After autoclaving, aseptically add 100 ml of a 10% Na2CO3
+    solution to the medium. Check final pH to be about 10.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -93,5 +93,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.002040+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HORIKOSHI-1 MEDIUM" to "horikoshi_1_medium" for consistent
-    matching
+  notes: Normalized name from "HORIKOSHI-1 MEDIUM" to "horikoshi_1_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1081_HORIKOSHI-1_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003731
+  name: horikoshi_1_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

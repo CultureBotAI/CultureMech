@@ -116,4 +116,28 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.746770+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "R3 A MEDIUM" to "r3_a_medium" for consistent matching
+  notes: Normalized name from "R3 A MEDIUM" to "r3_a_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1153_R3_A_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003863
+  name: r3_a_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1153; local
+    ingredient and concentration signatures match.
+- path: data/normalized_yaml/bacterial/half_strength_r2a.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000960
+  name: half_strength_r2a
+  notes: 'Half Strength R2A lowers the R3 A/R2A nutrient and salt components: yeast
+    extract, proteose peptone, casamino acids, glucose, and starch from 1 g/L to 0.25
+    g/L; sodium pyruvate from 0.5 to 0.25 g/L; K2HPO4 from 0.6 to 0.15 g/L; MgSO4
+    x 7 H2O from 0.1 to 0.025 g/L; agar remains 15 g/L.'
+- path: data/normalized_yaml/bacterial/1_10_r2a_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001052
+  name: 1_10_r2a_medium
+  notes: '1/10 R2A Medium lowers the R3 A/R2A nutrient and salt components ten-fold
+    or near ten-fold: yeast extract, proteose peptone, casamino acids, glucose, and
+    starch from 1 g/L to 0.05 g/L; sodium pyruvate from 0.5 to 0.03 g/L; K2HPO4 from
+    0.6 to 0.03 g/L; MgSO4 x 7 H2O from 0.1 to 0.005 g/L; agar remains 15 g/L.'

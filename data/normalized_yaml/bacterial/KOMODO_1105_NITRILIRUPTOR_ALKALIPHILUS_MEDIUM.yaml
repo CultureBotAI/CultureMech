@@ -197,8 +197,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.855211Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:22.373681Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -210,6 +210,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:36.754074+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NITRILIRUPTOR ALKALIPHILUS MEDIUM" to "nitriliruptor_alkaliphilus_medium"
-    for consistent matching
+  notes: Normalized name from "NITRILIRUPTOR ALKALIPHILUS MEDIUM" to
+    "nitriliruptor_alkaliphilus_medium" for consistent matching
 ph_value: 10.0
+parent_media:
+  path: data/normalized_yaml/bacterial/nitriliruptor_alkaliphilus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000538
+  name: nitriliruptor_alkaliphilus_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

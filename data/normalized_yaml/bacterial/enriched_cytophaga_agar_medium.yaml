@@ -51,9 +51,9 @@ preparation_steps:
   description: Adjust to pH 7.2-7.4 and autoclave at 121°C/15 min.
 - step_number: 2
   action: POUR_PLATES
-  description: For soft agar for the maintenance of active cultures reduce agar content
-    to 4.0 g/l. Dispense in 3 to 4 ml amounts in 7 ml screw-capped bottles (bijou
-    bottles).
+  description: For soft agar for the maintenance of active cultures reduce agar
+    content to 4.0 g/l. Dispense in 3 to 4 ml amounts in 7 ml screw-capped
+    bottles (bijou bottles).
 applications:
 - Microbial cultivation
 curation_history:
@@ -76,6 +76,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.539583+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ENRICHED CYTOPHAGA AGAR MEDIUM" to "enriched_cytophaga_agar_medium"
-    for consistent matching
+  notes: Normalized name from "ENRICHED CYTOPHAGA AGAR MEDIUM" to
+    "enriched_cytophaga_agar_medium" for consistent matching
 kg_microbe_match: mediadive.medium:1133
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1133_ENRICHED_CYTOPHAGA_AGAR_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003843
+  name: enriched_cytophaga_agar_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

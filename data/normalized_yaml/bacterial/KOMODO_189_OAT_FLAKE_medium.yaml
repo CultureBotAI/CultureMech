@@ -48,7 +48,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:40.825907+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "OAT FLAKE medium" to "oat_flake_medium" for consistent
-    matching
+  notes: Normalized name from "OAT FLAKE medium" to "oat_flake_medium" for
+    consistent matching
 ph_value: 6.0
 kg_microbe_match: mediadive.medium:12
+parent_media:
+  path: data/normalized_yaml/bacterial/oat_flake_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001281
+  name: oat_flake_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 189; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 189; local
+  ingredient and concentration signatures match.

@@ -65,3 +65,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THERMUS RUBER medium" to "thermus_ruber_medium" for
     consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/thermus_ruber_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001355
+  name: thermus_ruber_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

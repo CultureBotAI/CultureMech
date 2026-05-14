@@ -275,3 +275,14 @@ variant_children:
   name: medium_911_modified_for_dsm_44536
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/middlebrock_7h11_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002079
+  name: middlebrock_7h11_agar
+  notes: KOMODO record states DSMZ Medium 911 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

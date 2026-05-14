@@ -83,9 +83,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Steam the three solutions separately, mix together solutions B and
-    C and adjust pH to 8.4. Autoclave the skim milk at 112°C for 15 min, and the agar
-    salt mixture at 121°C for 20 min. Add the hot mixture to the warm skim milk aseptically.
+  description: Steam the three solutions separately, mix together solutions B
+    and C and adjust pH to 8.4. Autoclave the skim milk at 112°C for 15 min, and
+    the agar salt mixture at 121°C for 20 min. Add the hot mixture to the warm
+    skim milk aseptically.
 - step_number: 2
   action: MIX
   description: Use trace of Fe(III)citrate.
@@ -107,6 +108,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:11.241007+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOCOCCUS MEDIUM" to "halococcus_medium" for consistent
-    matching
+  notes: Normalized name from "HALOCOCCUS MEDIUM" to "halococcus_medium" for
+    consistent matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_146_HALOCOCCUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004167
+  name: halococcus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 146; local
+    ingredient and concentration signatures match.

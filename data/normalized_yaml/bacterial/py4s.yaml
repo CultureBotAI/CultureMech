@@ -160,8 +160,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: The cysteine, Na2CO3, and vitamin B12 are added after the medium has
-    been boiled and cooled under CO2. Adjust pH to 7.3 Distribute under N2 and autoclave.
+  description: The cysteine, Na2CO3, and vitamin B12 are added after the medium
+    has been boiled and cooled under CO2. Adjust pH to 7.3 Distribute under N2
+    and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -181,3 +182,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PY4S" to "py4s" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1308_PY4S.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004063
+  name: py4s
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1308; local
+    ingredient and concentration signatures match.

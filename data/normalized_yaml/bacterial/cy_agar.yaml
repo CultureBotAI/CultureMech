@@ -64,3 +64,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CY-AGAR" to "cy_agar" for consistent matching
 kg_microbe_match: mediadive.medium:49
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_67_CY-AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006279
+  name: cy_agar
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -92,5 +92,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:19.978967+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GYM Streptomyces Medium" to "gym_streptomyces_medium"
-    for consistent matching
+  notes: Normalized name from "GYM Streptomyces Medium" to
+    "gym_streptomyces_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/full_media_gym_streptomyces_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009668
+  name: full_media_gym_streptomyces_medium
+  notes: Full media GYM Streptomyces Medium increases agar from 12 g/L to 20 g/L
+    while yeast extract, CaCO3, glucose, and malt extract remain unchanged.

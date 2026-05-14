@@ -48,3 +48,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "K7 MEDIUM" to "k7_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1199_K7_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003938
+  name: k7_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1199; local
+    ingredient and concentration signatures match.

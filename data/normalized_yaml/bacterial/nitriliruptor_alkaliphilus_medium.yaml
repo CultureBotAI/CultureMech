@@ -186,23 +186,25 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve in this order in 1L preferably MilliQ water. Sterilize in
-    closed bottles at 120°C 20 min. After cooling, usually there will be some precipitate
-    on the bottom. That´s why it is handy to have another empty 1L bottle to decant
-    clear top solution into it.
+  description: Dissolve in this order in 1L preferably MilliQ water. Sterilize
+    in closed bottles at 120°C 20 min. After cooling, usually there will be some
+    precipitate on the bottom. That´s why it is handy to have another empty 1L
+    bottle to decant clear top solution into it.
 - step_number: 2
   action: MIX
   description: 'After sterilization add from concentrated steril stock solutions:'
 - step_number: 3
   action: AUTOCLAVE
-  description: Trace metals, MgSO4 x 7 H2O and Na2S2O3 x 5 H2O solution you can autoclave
+  description: Trace metals, MgSO4 x 7 H2O and Na2S2O3 x 5 H2O solution you can
+    autoclave
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Vitamin B12 and Isobutyramide solution you have to filter-sterilize
+  description: Vitamin B12 and Isobutyramide solution you have to
+    filter-sterilize
 - step_number: 5
   action: FILTER_STERILIZE
-  description: 50% solution of Na2S2O3 (Fluka), pH 9-10 >> filter sterilize or 110°C
-    20 min
+  description: 50% solution of Na2S2O3 (Fluka), pH 9-10 >> filter sterilize or
+    110°C 20 min
 - step_number: 6
   action: MIX
   description: pH final 3-4 by HCl
@@ -216,8 +218,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.629971Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:18:56.210303Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -229,5 +231,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.261547+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NITRILIRUPTOR ALKALIPHILUS MEDIUM" to "nitriliruptor_alkaliphilus_medium"
-    for consistent matching
+  notes: Normalized name from "NITRILIRUPTOR ALKALIPHILUS MEDIUM" to
+    "nitriliruptor_alkaliphilus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1105_NITRILIRUPTOR_ALKALIPHILUS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003805
+  name: nitriliruptor_alkaliphilus_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

@@ -79,3 +79,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TYB" to "tyb" for consistent matching
 kg_microbe_match: mediadive.medium:1247
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1247_TYB.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004004
+  name: tyb
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1247; local
+    ingredient and concentration signatures match.

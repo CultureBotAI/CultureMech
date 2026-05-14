@@ -90,8 +90,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 7.0. Agar may be added at 15 g/l for solid media. Plates
-    should be sealed during incubation to prevent drying out.
+  description: Adjust to pH 7.0. Agar may be added at 15 g/l for solid media.
+    Plates should be sealed during incubation to prevent drying out.
 applications:
 - Microbial cultivation
 curation_history:
@@ -114,5 +114,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.662741+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SALISAETA LONGA MEDIUM" to "salisaeta_longa_medium"
-    for consistent matching
+  notes: Normalized name from "SALISAETA LONGA MEDIUM" to
+    "salisaeta_longa_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1221_SALISAETA_LONGA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003974
+  name: salisaeta_longa_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1221; local
+    ingredient and concentration signatures match.

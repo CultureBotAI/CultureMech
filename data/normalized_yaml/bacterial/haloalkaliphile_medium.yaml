@@ -99,10 +99,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components except Na2CO3 to distilled water and bring volume to
-    900 ml. Adjust pH to 6.5 and autoclave. Dissolve Na2CO3 in 100 ml distilled water
-    and autoclave separately. Aseptically add the sterile Na2CO3 solution to the medium.
-    Check final pH to be 9.0 - 9.5.
+  description: Add components except Na2CO3 to distilled water and bring volume
+    to 900 ml. Adjust pH to 6.5 and autoclave. Dissolve Na2CO3 in 100 ml
+    distilled water and autoclave separately. Aseptically add the sterile Na2CO3
+    solution to the medium. Check final pH to be 9.0 - 9.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -125,6 +125,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:28.176480+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOALKALIPHILE MEDIUM" to "haloalkaliphile_medium"
-    for consistent matching
+  notes: Normalized name from "HALOALKALIPHILE MEDIUM" to
+    "haloalkaliphile_medium" for consistent matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/modified_haloalkaliphile_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002384
+  name: modified_haloalkaliphile_medium
+  notes: Reviewed Haloalkaliphile pair; child keeps yeast extract, casamino
+    acids, Na glutamate, MgSO4, CaSO4, KCl, and NaCl unchanged while Na2CO3
+    increases from 8 to 80 g/L; citrate hydrate label differs.

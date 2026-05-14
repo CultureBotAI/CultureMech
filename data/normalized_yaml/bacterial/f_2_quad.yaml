@@ -150,13 +150,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
-    \ with 1M NaOH or 1 M HCl\r\nprior to autoclaving. For agar add 15g per litre\
-    \ Bacteriological Agar. Autoclave at 15 psi for 15\r\nminutes."
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0
+    with 1M NaOH or 1 M HCl\r\nprior to autoclaving. For agar add 15g per litre Bacteriological
+    Agar. Autoclave at 15 psi for 15\r\nminutes."
 - step_number: 2
   action: MIX
-  description: "This medium will provide nutrients for long lasting, dense cultures\
-    \ and can be used in liquid\r\nand agar forms."
+  description: "This medium will provide nutrients for long lasting, dense cultures
+    and can be used in liquid\r\nand agar forms."
 - step_number: 3
   action: MIX
   description: First make primary stocks of Cyanocobalamin and Biotin.
@@ -184,3 +184,15 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "f/2 Quad" to "f_2_quad" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/f_2.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000343
+  name: f_2
+  notes: Both records are MediaDive f/2 solid agar formulations; the child is
+    explicitly labeled f/2 Quad and changes the macronutrient concentration
+    axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- f/2 Quad increases NaNO3 and NaH2PO4 x 2 H2O from 1 g/L to 4 g/L while
+  seawater, agar, trace metals, and vitamins remain unchanged.

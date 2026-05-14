@@ -140,5 +140,20 @@ curation_history:
 - timestamp: '2026-03-17T19:46:29.752975+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SW-20 Medium" to "sw_20_medium" for consistent matching
+  notes: Normalized name from "SW-20 Medium" to "sw_20_medium" for consistent
+    matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M832_SW-10_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:010246
+  name: sw_10_medium
+  notes: SW-10 agar medium halves the SW-20 salt and yeast extract
+    concentrations; agar changes from 20 g/L to 18 g/L.
+- path: data/normalized_yaml/bacterial/TOGO_M1033_Kushneria_Aurantia_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007548
+  name: kushneria_aurantia_medium
+  notes: Reviewed TOGO SW-20/Kushneria Aurantia pair; child keeps the same solid
+    agar base but halves MgSO4, yeast extract, NaCl, CaCl2, MgCl2, KCl, NaHCO3,
+    and NaBr concentrations while agar remains 20 g/L.

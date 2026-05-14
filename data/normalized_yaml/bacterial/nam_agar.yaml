@@ -33,12 +33,13 @@ ingredients:
     value: '17.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
+      (TSB) / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Pancreatic enzymatic digest of casein providing amino acids and peptides;
-    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  notes: Pancreatic enzymatic digest of casein providing amino acids and
+    peptides; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+    commercial product
   synonyms:
   - synonym_text: tryptone
     synonym_type: EXACT
@@ -54,12 +55,13 @@ ingredients:
     value: '3.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
+      (TSB) / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Peptic digest of soybean meal providing additional peptides and carbohydrates;
-    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  notes: Peptic digest of soybean meal providing additional peptides and
+    carbohydrates; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar
+    (TSA) commercial product
   synonyms:
   - synonym_text: soytone
     synonym_type: EXACT
@@ -75,12 +77,12 @@ ingredients:
     value: '2.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
+      (TSB) / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy
-    Agar (TSA) commercial product
+  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic
+    Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: dextrose
     synonym_type: EXACT
@@ -94,12 +96,12 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
+      (TSB) / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic
-    Soy Agar (TSA) commercial product
+  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) /
+    Tryptic Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -113,12 +115,12 @@ ingredients:
     value: '2.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
+      (TSB) / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
-    commercial product
+  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar
+    (TSA) commercial product
   synonyms:
   - synonym_text: K2HPO4
     synonym_type: EXACT
@@ -134,12 +136,12 @@ ingredients:
     value: '15.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
-      / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
+      (TSB) / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
-    Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic
+    Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
 - preferred_term: Defibrinated sheep blood
   concentration:
     value: '50'
@@ -147,12 +149,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: After preparing the Trypticase soy agar plate with 5%sheep blood, spreading
-    the subculture on the agar surface and place one NAM disk aseptically. Incubate
-    the agar plate under a H2-CO2-N2 (1:1:8) gas mixture. To prepare the NAM disk,
-    impregnate with 20 ï¿½l filter-sterilized 1.5% NAM (<I>N</I>-acetylmuramic acid,
-    Sigma) aqueous solution to a sterile paper disk (0.64 cm in diameter). Stored
-    the air-dried disk at room temperature.
+  description: After preparing the Trypticase soy agar plate with 5%sheep blood,
+    spreading the subculture on the agar surface and place one NAM disk
+    aseptically. Incubate the agar plate under a H2-CO2-N2 (1:1:8) gas mixture.
+    To prepare the NAM disk, impregnate with 20 ï¿½l filter-sterilized 1.5% NAM
+    (<I>N</I>-acetylmuramic acid, Sigma) aqueous solution to a sterile paper
+    disk (0.64 cm in diameter). Stored the air-dried disk at room temperature.
 applications:
 - Microbial cultivation
 curation_history:
@@ -168,3 +170,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "NAM AGAR" to "nam_agar" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/TOGO_M2771_Serpulina_Murdochii_Medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009319
+  name: serpulina_murdochii_medium
+  notes: Reviewed NAM Agar as an equivalent source formulation of the Serpulina
+    Murdochii medium record; blood unit representation differs but the
+    formulation is otherwise equivalent.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Reviewed Serpulina Murdochii/NAM Agar pair; both records share the same
+  tryptic soy agar base and blood supplement, with 5% w/v sheep blood
+  represented as 50 g/L in the child.

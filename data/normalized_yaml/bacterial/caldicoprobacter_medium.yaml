@@ -174,3 +174,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CALDICOPROBACTER MEDIUM" to "caldicoprobacter_medium"
     for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1233_CALDICOPROBACTER_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003989
+  name: caldicoprobacter_medium
+  notes: Same source medium number and matching ingredient/concentration signature.

@@ -86,3 +86,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ML MEDIUM" to "ml_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/ml_15_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002228
+  name: ml_15_medium
+  notes: Reviewed ML/ML-15 pair; child keeps the same alkaline salt base with
+    small normalization-scale differences and increases yeast extract from 5 to
+    20 g/L.

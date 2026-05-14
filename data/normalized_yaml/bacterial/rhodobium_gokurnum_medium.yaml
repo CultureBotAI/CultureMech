@@ -210,3 +210,12 @@ variant_children:
   name: marichromatium_imhoffii_medium
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/modified_rhodobacter_spaeroides_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002935
+  name: modified_rhodobacter_spaeroides_medium
+  notes: Reviewed Rhodobium/modified Rhodobacter pair; child keeps phosphate,
+    sorbitol, pyruvate, ferric citrate, HCl, and trace components effectively
+    unchanged but lowers MgCl2, NaCl, NH4Cl, and CaCl2, raises yeast extract,
+    and changes pH from 6.8 to 7.0.

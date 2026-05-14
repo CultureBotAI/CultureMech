@@ -151,4 +151,15 @@ curation_history:
 - timestamp: '2026-03-17T19:46:13.628841+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS+8% NaCl" to "mrs_8_nacl" for consistent matching
+  notes: Normalized name from "MRS+8% NaCl" to "mrs_8_nacl" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/mrs_5_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008329
+  name: mrs_5_nacl
+  notes: Reviewed TOGO MRS NaCl salinity pair; records differ only in NaCl
+    concentration.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl increased from 50 g/L to 80 g/L while MRS ingredients remain unchanged.

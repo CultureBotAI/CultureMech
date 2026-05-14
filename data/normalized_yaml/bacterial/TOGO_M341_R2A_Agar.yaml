@@ -129,3 +129,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "R2A Agar" to "r2a_agar" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M1161_5_x_R2A_Agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007685
+  name: 5_x_r2a_agar
+  notes: R2A nutrient and salt components increase five-fold while agar remains
+    15 g/L.

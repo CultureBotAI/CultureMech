@@ -166,5 +166,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:32.672727+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HYPHOMICROBIUM MEDIUM" to "hyphomicrobium_medium" for
-    consistent matching
+  notes: Normalized name from "HYPHOMICROBIUM MEDIUM" to "hyphomicrobium_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/hyphomicrobium_strain_x_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001154
+  name: hyphomicrobium_strain_x_medium
+  notes: Reviewed Hyphomicrobium/strain X pair; child shares the methylamine
+    agar and trace-element formulation but changes
+    phosphate/ammonium/methylamine and raises the trace-element stock
+    concentrations, with pH 7.2 recorded in the child.

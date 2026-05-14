@@ -158,8 +158,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:11.611889+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Inorganic Salts Starch Agar (ISP Medium No.4)" to "inorganic_salts_starch_agar_isp_medium_no_4"
-    for consistent matching
+  notes: Normalized name from "Inorganic Salts Starch Agar (ISP Medium No.4)" to
+    "inorganic_salts_starch_agar_isp_medium_no_4" for consistent matching
 solutions:
 - preferred_term: Trace salts solution*
   term:
@@ -170,3 +170,17 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_3683_Trace_salts_solution.yaml for composition
   name: Unknown solution
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/inorganic_salt_solution_agar_isp_medium_no_4_10_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008544
+  name: inorganic_salt_solution_agar_isp_medium_no_4_10_nacl
+  notes: NaCl increased from 1 g/L to 100 g/L while the TOGO ISP Medium No. 4
+    agar formulation remains unchanged.
+- path: data/normalized_yaml/bacterial/isp_4_plus_20_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:009704
+  name: isp_4_plus_20_nacl
+  notes: NaCl increased from 1 g/L to 200 g/L while the TOGO ISP Medium No. 4
+    agar formulation remains unchanged.

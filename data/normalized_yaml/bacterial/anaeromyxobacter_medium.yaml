@@ -365,11 +365,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare solutions A, B, and D separately and anaerobically under 80%
-    N2 + 20% CO2 and autoclave. Filter-sterilize solutions C, E and F and outgas with
-    N2. After cooling, add about 1 ml solution B per 10 ml solution A, by this way
-    adjusting pH to 7.2. Add 0.2 ml solution C, 0.2 ml solution D, 0.2 ml solution
-    F and 0.05 ml solution E, each per 10 ml solution A.
+  description: Prepare solutions A, B, and D separately and anaerobically under
+    80% N2 + 20% CO2 and autoclave. Filter-sterilize solutions C, E and F and
+    outgas with N2. After cooling, add about 1 ml solution B per 10 ml solution
+    A, by this way adjusting pH to 7.2. Add 0.2 ml solution C, 0.2 ml solution
+    D, 0.2 ml solution F and 0.05 ml solution E, each per 10 ml solution A.
 applications:
 - Microbial cultivation
 curation_history:
@@ -392,5 +392,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.251890+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ANAEROMYXOBACTER-MEDIUM" to "anaeromyxobacter_medium"
-    for consistent matching
+  notes: Normalized name from "ANAEROMYXOBACTER-MEDIUM" to
+    "anaeromyxobacter_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1200_ANAEROMYXOBACTER-MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003948
+  name: anaeromyxobacter_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1200; local
+    ingredient and concentration signatures match.

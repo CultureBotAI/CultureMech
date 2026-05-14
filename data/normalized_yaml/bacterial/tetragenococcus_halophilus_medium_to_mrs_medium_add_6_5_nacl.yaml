@@ -160,6 +160,15 @@ curation_history:
 - timestamp: '2026-03-17T19:46:12.700180+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Tetragenococcus halophilus Medium (To MRS Medium add
-    6.5% NaCl)" to "tetragenococcus_halophilus_medium_to_mrs_medium_add_6_5_nacl"
-    for consistent matching
+  notes: Normalized name from "Tetragenococcus halophilus Medium (To MRS Medium
+    add 6.5% NaCl)" to
+    "tetragenococcus_halophilus_medium_to_mrs_medium_add_6_5_nacl" for
+    consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/tetragenococcus_muriaticus_medium_mrs_medium_10_nacl_ph_7_5_8_0.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008171
+  name: tetragenococcus_muriaticus_medium_mrs_medium_10_nacl_ph_7_5_8_0
+  notes: NaCl increased from 65 g/L to 100 g/L; child name specifies pH 7.5-8.0
+    while the MRS-based formulation remains unchanged in parsed ingredients.

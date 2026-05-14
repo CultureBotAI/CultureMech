@@ -321,3 +321,15 @@ variant_children:
   name: for_marinobacter
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/medium_for_arhodomonas_and_marinobacter.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002117
+  name: medium_for_arhodomonas_and_marinobacter
+  notes: KOMODO record states DSMZ Medium 941 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

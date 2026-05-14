@@ -34,8 +34,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Boil potatoes and carrots until cooked, filter through cheesecloth,
-    make up volume to 1.0 L and add agar.
+  description: Boil potatoes and carrots until cooked, filter through
+    cheesecloth, make up volume to 1.0 L and add agar.
 - step_number: 2
   action: MIX
   description: pH unadjusted.
@@ -57,6 +57,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:29.971270+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "POTATO-CARROT AGAR" to "potato_carrot_agar" for consistent
-    matching
+  notes: Normalized name from "POTATO-CARROT AGAR" to "potato_carrot_agar" for
+    consistent matching
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/1_10_potato_carrot_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002908
+  name: 1_10_potato_carrot_agar
+  notes: Same ingredient identity signature but concentration signature differs
+    from parent.
+- path: data/normalized_yaml/bacterial/potato_carrot_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001233
+  name: potato_carrot_agar
+  notes: Same ingredient identity signature but concentration signature differs
+    from parent.

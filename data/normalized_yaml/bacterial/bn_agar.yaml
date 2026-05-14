@@ -57,7 +57,7 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008539'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:52.652769'
+  timestamp: '2026-03-14T21:06:52.652769'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
 - timestamp: '2026-03-17T06:29:48.000000Z'
@@ -74,16 +74,11 @@ solutions:
   concentration:
     value: '250'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component,
-    Organic compound'
-  name: Unknown solution
 - preferred_term: Sodium benzoate*
   composition: []
   concentration:
     value: '1.44'
     unit: G_PER_L
-  notes: 'Properties: Organic compound, Simple component, Defined component'
-  name: Unknown solution
 variant_children:
 - path: data/normalized_yaml/bacterial/nutrient_agar_broth.yaml
   relationship: SOURCE_DUPLICATE
@@ -91,3 +86,9 @@ variant_children:
   name: nutrient_agar_broth
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+- path: data/normalized_yaml/bacterial/togo_medium_m1570.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008119
+  name: togo_medium_m1570
+  notes: Nutrient Broth (OXOID) decreases from 13 g/L to 6.5 g/L; agar remains
+    15 g/L and the parsed ingredient set otherwise matches.

@@ -67,6 +67,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.693398+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FLAVOBACTERIUM AQUATILE medium" to "flavobacterium_aquatile_medium"
-    for consistent matching
+  notes: Normalized name from "FLAVOBACTERIUM AQUATILE medium" to
+    "flavobacterium_aquatile_medium" for consistent matching
 kg_microbe_match: mediadive.medium:102
+parent_media:
+  path: data/normalized_yaml/bacterial/flavobacterium_aquatile_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000451
+  name: flavobacterium_aquatile_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

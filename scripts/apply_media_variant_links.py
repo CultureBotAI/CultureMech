@@ -236,7 +236,7 @@ def plan_links(rows: list[dict[str, str]], args: argparse.Namespace) -> list[dic
 def write_plan(plans: list[dict[str, str]], reports_dir: Path) -> None:
     reports_dir.mkdir(parents=True, exist_ok=True)
     with DRY_RUN_TSV.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=PLAN_COLUMNS, delimiter="\t")
+        writer = csv.DictWriter(handle, fieldnames=PLAN_COLUMNS, delimiter="\t", lineterminator="\n")
         writer.writeheader()
         writer.writerows(plans)
     DRY_RUN_JSON.write_text(json.dumps(plans, indent=2, sort_keys=True) + "\n")

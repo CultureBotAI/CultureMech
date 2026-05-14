@@ -175,5 +175,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.951003+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOALKALIVIBRIO JANNASCHI" to "thioalkalivibrio_jannaschi"
-    for consistent matching
+  notes: Normalized name from "THIOALKALIVIBRIO JANNASCHI" to
+    "thioalkalivibrio_jannaschi" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/thioalkalivibrio_jannaschi.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000734
+  name: thioalkalivibrio_jannaschi
+  notes: KOMODO record explicitly cites DSMZ Medium 1272; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1272; local
+  ingredient and concentration signatures match.

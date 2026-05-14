@@ -91,8 +91,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:12.564631+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TOGO Medium M1605" to "togo_medium_m1605" for consistent
-    matching
+  notes: Normalized name from "TOGO Medium M1605" to "togo_medium_m1605" for
+    consistent matching
 solutions:
 - preferred_term: Hipolypepton*
   composition: []
@@ -101,3 +101,14 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/802_5_glucose.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008387
+  name: 802_5_glucose
+  notes: TOGO/NBRC 802 glucose concentration family; reviewed as concentration
+    variant of 802 + 5% glucose.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Glucose concentration decreased from 50 g/L to 5 g/L; all other parsed
+  ingredient and solution concentrations match the parent.

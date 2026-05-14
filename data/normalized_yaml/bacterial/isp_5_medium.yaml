@@ -85,12 +85,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if it
-    is within this range. Liquefy agar by steaming at 100°C for 15-20 minutes.
+  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if
+    it is within this range. Liquefy agar by steaming at 100°C for 15-20
+    minutes.
 - step_number: 2
   action: POUR_PLATES
-  description: Sterilize in flasks for pouring into Petri dishes. Seven standard 90
-    mm dishes containing 25 ml per dish.
+  description: Sterilize in flasks for pouring into Petri dishes. Seven standard
+    90 mm dishes containing 25 ml per dish.
 applications:
 - Microbial cultivation
 curation_history:
@@ -109,4 +110,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.711712+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ISP 5 MEDIUM" to "isp_5_medium" for consistent matching
+  notes: Normalized name from "ISP 5 MEDIUM" to "isp_5_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/glycerol_asparagine_agar_isp_5.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002957
+  name: glycerol_asparagine_agar_isp_5
+  notes: Glycerol-asparagine agar ISP-5 keeps the ISP-5 defined ingredient set
+    with near-identical rounded concentrations and lowers agar from 20 g/L to
+    about 15 g/L.

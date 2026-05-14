@@ -88,9 +88,9 @@ preparation_steps:
   description: Adjust pH to 7.2 (use pH indicator-paper).
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Aseptically add one or more sterile strips of filter paper to slants
-    or plates. Inoculate the filter papers with a small (5 mm x 5mm) agar cube or
-    a piece of filter paper overgrown with the strain.
+  description: Aseptically add one or more sterile strips of filter paper to
+    slants or plates. Inoculate the filter papers with a small (5 mm x 5mm) agar
+    cube or a piece of filter paper overgrown with the strain.
 applications:
 - Microbial cultivation
 curation_history:
@@ -109,5 +109,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.113285+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "POLYANGIUM MEDIUM" to "polyangium_medium" for consistent
-    matching
+  notes: Normalized name from "POLYANGIUM MEDIUM" to "polyangium_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_223_POLYANGIUM_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004578
+  name: polyangium_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 223; local
+    ingredient and concentration signatures match.

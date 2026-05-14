@@ -88,12 +88,14 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and
+    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -107,13 +109,14 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
+    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
+    formulation) commercial product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -122,12 +125,13 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
+    Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -160,8 +164,8 @@ preparation_steps:
     components:'
 - step_number: 2
   action: MIX
-  description: For liquid medium, omit corn meal agar and change the phosphate concentration
-    to KH2PO4, 1.5 g and K2HPO4, 0.5 g.
+  description: For liquid medium, omit corn meal agar and change the phosphate
+    concentration to KH2PO4, 1.5 g and K2HPO4, 0.5 g.
 applications:
 - Microbial cultivation
 curation_history:
@@ -181,3 +185,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SC MEDIUM" to "sc_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_751_SC_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006403
+  name: sc_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

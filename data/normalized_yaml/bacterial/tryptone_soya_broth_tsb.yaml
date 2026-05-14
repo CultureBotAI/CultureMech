@@ -87,3 +87,10 @@ variant_children:
   name: diluted_tryptone_soya_broth_tsb
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+- path: data/normalized_yaml/bacterial/diluted_tryptone_soya_broth_tsb_1_10.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001194
+  name: diluted_tryptone_soya_broth_tsb_1_10
+  notes: Diluted TSB 1:10 decreases casein peptone 17 to 1.7 g/L, soy peptone 3
+    to 0.3 g/L, glucose 2.5 to 0.25 g/L, NaCl 5 to 0.5 g/L, and K2HPO4 2.5 to
+    0.25 g/L.

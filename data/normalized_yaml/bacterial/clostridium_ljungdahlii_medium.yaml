@@ -346,18 +346,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, yeast extract, fructose,
-    vitamins, and reducing agents), sparge medium with 80% N2 and 20% CO2 gas mixture
-    for 30 - 45 min to make it anoxic and adjust pH to 5.0. Dispense medium under
-    the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave
-    at 121°C for 15 min. Add yeast extract, fructose, vitamins (sterilized by filtration),
-    cysteine, and sulfide from sterile stock solutions prepared under a 100% N2 gas
-    atmosphere and bicarbonate from a sterile stock solution prepared under an 80%
-    N2 and 20% CO2 gas atmosphere. Adjust the pH of the complete medium to 5.9!
+  description: Dissolve ingredients (except bicarbonate, yeast extract,
+    fructose, vitamins, and reducing agents), sparge medium with 80% N2 and 20%
+    CO2 gas mixture for 30 - 45 min to make it anoxic and adjust pH to 5.0.
+    Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave at 121°C for 15 min. Add yeast extract,
+    fructose, vitamins (sterilized by filtration), cysteine, and sulfide from
+    sterile stock solutions prepared under a 100% N2 gas atmosphere and
+    bicarbonate from a sterile stock solution prepared under an 80% N2 and 20%
+    CO2 gas atmosphere. Adjust the pH of the complete medium to 5.9!
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -368,8 +369,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:31.904765Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:08.614450Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -385,5 +386,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.242241+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM LJUNGDAHLII MEDIUM" to "clostridium_ljungdahlii_medium"
-    for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM LJUNGDAHLII MEDIUM" to
+    "clostridium_ljungdahlii_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_879_CLOSTRIDIUM_LJUNGDAHLII_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006718
+  name: clostridium_ljungdahlii_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -160,5 +160,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:15.345685+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS + 1% Fructose" to "mrs_1_fructose" for consistent
-    matching
+  notes: Normalized name from "MRS + 1% Fructose" to "mrs_1_fructose" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/mrs_2_fructose.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009560
+  name: mrs_2_fructose
+  notes: Fructose concentration increased from 1% (10 g/L) to 2% (20 g/L); all
+    other parsed ingredient concentrations match the parent.
+- path: data/normalized_yaml/bacterial/mrs_10_fructose.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008722
+  name: mrs_10_fructose
+  notes: Fructose concentration increased from 1% (10 g/L) to 10% (100 g/L); all
+    other parsed ingredient concentrations match the parent.

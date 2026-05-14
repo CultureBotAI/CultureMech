@@ -62,3 +62,10 @@ variant_children:
   name: alkaline_nutrient_agar
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+- path: data/normalized_yaml/bacterial/NBRC_NUTRIENT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:007511
+  name: nutrient_agar
+  notes: Reviewed JCM/NBRC Nutrient Agar records; both parsed formulations
+    contain beef extract 3 g/L, peptone 5 g/L, and agar 15 g/L, with the JCM
+    parent carrying pH 7.0 and the NBRC record not specifying pH.

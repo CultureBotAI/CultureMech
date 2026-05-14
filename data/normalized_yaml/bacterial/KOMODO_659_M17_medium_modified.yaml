@@ -101,5 +101,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.249216+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "M17 medium (modified)" to "m17_medium_modified" for
-    consistent matching
+  notes: Normalized name from "M17 medium (modified)" to "m17_medium_modified"
+    for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/m17_medium_modified.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001796
+  name: m17_medium_modified
+  notes: KOMODO record states DSMZ Medium 659 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

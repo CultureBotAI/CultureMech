@@ -157,5 +157,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.166898+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MINERAL MEDIUM" to "mineral_medium" for consistent
-    matching
+  notes: Normalized name from "MINERAL MEDIUM" to "mineral_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1007_MINERAL_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003510
+  name: mineral_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

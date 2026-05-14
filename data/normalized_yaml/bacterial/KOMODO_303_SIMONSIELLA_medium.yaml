@@ -87,6 +87,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:44.331466+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SIMONSIELLA medium" to "simonsiella_medium" for consistent
-    matching
+  notes: Normalized name from "SIMONSIELLA medium" to "simonsiella_medium" for
+    consistent matching
 kg_microbe_match: mediadive.medium:303
+parent_media:
+  path: data/normalized_yaml/bacterial/simonsiella_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001403
+  name: simonsiella_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 303; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 303; local
+  ingredient and concentration signatures match.

@@ -104,5 +104,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.598728+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GAUZE'S SYNTHETIC MEDIUM NO.1" to "gauzes_synthetic_medium_no_1"
-    for consistent matching
+  notes: Normalized name from "GAUZE'S SYNTHETIC MEDIUM NO.1" to
+    "gauzes_synthetic_medium_no_1" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1048_GAUZE_S_SYNTHETIC_MEDIUM_NO.1.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003606
+  name: gauzes_synthetic_medium_no_1
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

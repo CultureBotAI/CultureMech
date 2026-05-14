@@ -93,9 +93,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium.
-    Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and FeCl3 x 6 H2O solution
-    separately.
+  description: Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar
+    medium. Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and FeCl3 x
+    6 H2O solution separately.
 - step_number: 2
   action: MIX
   description: Aseptically add all solutions to the basal medium.
@@ -117,5 +117,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:13.589080+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Alicyclobacillus cellulosilyticus Medium" to "alicyclobacillus_cellulosilyticus_medium"
-    for consistent matching
+  notes: Normalized name from "Alicyclobacillus cellulosilyticus Medium" to
+    "alicyclobacillus_cellulosilyticus_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/573c_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002235
+  name: 573c_medium
+  notes: Reviewed Alicyclobacillus cellulosilyticus medium as a concentration
+    variant of 573C medium with mineral salt concentrations as the curated axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed 573C/Alicyclobacillus cellulosilyticus pair; child keeps the
+  cellulose, ammonium sulfate, phosphate, glucose, yeast extract, and tryptone
+  levels effectively unchanged but lowers MgSO4, CaCl2, and FeCl3
+  concentrations.

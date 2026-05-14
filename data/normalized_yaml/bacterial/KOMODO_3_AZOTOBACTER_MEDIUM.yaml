@@ -144,3 +144,15 @@ variant_children:
   name: medium_3_modified_for_dsm_44106
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/azotobacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001510
+  name: azotobacter_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 3; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 3; local ingredient
+  and concentration signatures match.

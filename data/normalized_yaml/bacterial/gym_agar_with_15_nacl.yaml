@@ -82,5 +82,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:33.749237+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GYM AGAR WITH 15% NaCl" to "gym_agar_with_15_nacl"
-    for consistent matching
+  notes: Normalized name from "GYM AGAR WITH 15% NaCl" to
+    "gym_agar_with_15_nacl" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/gym_streptomyces_medium_10_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:000597
+  name: gym_streptomyces_medium_10_nacl
+  notes: Both records are MediaDive GYM Streptomyces solid agar formulations;
+    the child is explicitly labeled 15% NaCl relative to the 10% NaCl parent.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- GYM agar with 15% NaCl increases NaCl from 100 g/L to 150 g/L while glucose,
+  yeast extract, malt extract, CaCO3, and agar remain unchanged.

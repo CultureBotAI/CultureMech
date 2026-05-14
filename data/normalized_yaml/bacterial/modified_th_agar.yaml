@@ -142,5 +142,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.845843+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED TH AGAR" to "modified_th_agar" for consistent
-    matching
+  notes: Normalized name from "MODIFIED TH AGAR" to "modified_th_agar" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1061_MODIFIED_TH_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003644
+  name: modified_th_agar
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

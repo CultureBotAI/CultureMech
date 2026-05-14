@@ -93,9 +93,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding
-    agar. Add agar, heat medium to boiling to dissolve agar, and autoclave for 15
-    min at 121°C.
+  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before
+    adding agar. Add agar, heat medium to boiling to dissolve agar, and
+    autoclave for 15 min at 121°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -118,5 +118,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:12.433928+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/10 R2A MEDIUM" to "1_10_r2a_medium" for consistent
-    matching
+  notes: Normalized name from "1/10 R2A MEDIUM" to "1_10_r2a_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/r3_a_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000592
+  name: r3_a_medium
+  notes: Both records are MediaDive/DSMZ R3 A/R2A solid agar formulations with
+    pH 7.2; the child is explicitly labeled 1/10 R2A Medium.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- '1/10 R2A Medium lowers the R3 A/R2A nutrient and salt components ten-fold or near
+  ten-fold: yeast extract, proteose peptone, casamino acids, glucose, and starch from
+  1 g/L to 0.05 g/L; sodium pyruvate from 0.5 to 0.03 g/L; K2HPO4 from 0.6 to 0.03
+  g/L; MgSO4 x 7 H2O from 0.1 to 0.005 g/L; agar remains 15 g/L.'

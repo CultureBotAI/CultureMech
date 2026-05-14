@@ -65,4 +65,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:20.877800+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "4% Malt Agar" to "4_malt_agar" for consistent matching
+  notes: Normalized name from "4% Malt Agar" to "4_malt_agar" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/2_malt_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009585
+  name: 2_malt_agar
+  notes: Reviewed TOGO 2% and 4% malt agar pair; records differ only in malt
+    extract concentration.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Malt extract (BD-Difco) increased from 20 g/L to 40 g/L while the malt agar
+  base remains unchanged.

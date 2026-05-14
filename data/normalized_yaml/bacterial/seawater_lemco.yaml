@@ -38,12 +38,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Dissolve ingredients, by heating if necessary. Adjust pH to 7.8, boil
-    3-5 min, filter. Readjust pH to 7.3. Sterilize by autoclaving for 15 min at 121°C.
+  description: Dissolve ingredients, by heating if necessary. Adjust pH to 7.8,
+    boil 3-5 min, filter. Readjust pH to 7.3. Sterilize by autoclaving for 15
+    min at 121°C.
 - step_number: 2
   action: DISSOLVE
-  description: For solid medium add 15.0 g agar after readjusting pH and steam to
-    dissolve the agar prior to autoclaving.
+  description: For solid medium add 15.0 g agar after readjusting pH and steam
+    to dissolve the agar prior to autoclaving.
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,6 +63,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.248662+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SEAWATER LEMCO" to "seawater_lemco" for consistent
-    matching
+  notes: Normalized name from "SEAWATER LEMCO" to "seawater_lemco" for
+    consistent matching
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_627_SEAWATER_LEMCO.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006133
+  name: seawater_lemco
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -92,13 +92,14 @@ preparation_steps:
   description: pH 10.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose
-    or yeast extract. Boil the medium in a water bath and cool under a stream of nitrogen.
-    Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0) and
-    dispense the medium into Hungate tubes or serum bottles under a stream of nitrogen.
-    Seal the tubes under nitrogen gas and autoclave. To the cooled medium at the appropriate
-    amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic
-    stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract).
+  description: Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O,
+    cellulobiose or yeast extract. Boil the medium in a water bath and cool
+    under a stream of nitrogen. Add the Na2CO3 and NaHCO3 to the cooled medium
+    (the pH should be about 10.0) and dispense the medium into Hungate tubes or
+    serum bottles under a stream of nitrogen. Seal the tubes under nitrogen gas
+    and autoclave. To the cooled medium at the appropriate amounts of Na2S x 9
+    H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions
+    (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract).
 applications:
 - Microbial cultivation
 curation_history:
@@ -117,5 +118,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.962504+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALKALIFLEXUS MEDIUM" to "alkaliflexus_medium" for consistent
-    matching
+  notes: Normalized name from "ALKALIFLEXUS MEDIUM" to "alkaliflexus_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003895
+  name: alkaliflexus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1175; local
+    ingredient and concentration signatures match.

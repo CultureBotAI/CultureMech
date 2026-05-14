@@ -167,5 +167,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:36.784433+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CYS MEDIUM WITH MODIFIED NACL CONCENTRATION" to "cys_medium_with_modified_nacl_concentration"
-    for consistent matching
+  notes: Normalized name from "CYS MEDIUM WITH MODIFIED NACL CONCENTRATION" to
+    "cys_medium_with_modified_nacl_concentration" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/cys_medium_with_modified_nacl_concentration.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000542
+  name: cys_medium_with_modified_nacl_concentration
+  notes: KOMODO record states DSMZ Medium 1108a provenance and exactly matches
+    the single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

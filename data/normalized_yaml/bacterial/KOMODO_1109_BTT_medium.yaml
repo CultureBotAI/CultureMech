@@ -67,4 +67,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:36.789388+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BTT medium" to "btt_medium" for consistent matching
+  notes: Normalized name from "BTT medium" to "btt_medium" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002349
+  name: btt_medium
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Same ingredient identity signature but concentration signature differs from
+  parent.

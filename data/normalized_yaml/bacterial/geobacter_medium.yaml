@@ -322,21 +322,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: First dissolve ferric citrate in water by heating and adjust to pH
-    6.0, then add other medium ingredients except bicarbonate and vitamins. Sparge
-    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
-    then add and dissolve bicarbonate and adjust pH to 6.8. Thereafter, dispense medium
-    under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. Add vitamins to the sterile medium from an anoxic stock solution
-    prepared under 100% N2 gas and sterilized by filtration. Adjust pH of complete
-    medium to 6.7 - 7.0, if necessary.
+  description: First dissolve ferric citrate in water by heating and adjust to
+    pH 6.0, then add other medium ingredients except bicarbonate and vitamins.
+    Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it
+    anoxic, then add and dissolve bicarbonate and adjust pH to 6.8. Thereafter,
+    dispense medium under 80% N2 and 20% CO2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add vitamins to the sterile
+    medium from an anoxic stock solution prepared under 100% N2 gas and
+    sterilized by filtration. Adjust pH of complete medium to 6.7 - 7.0, if
+    necessary.
 - step_number: 2
   action: MIX
   description: 'Note: Use 5 - 10% (v/v) inoculum.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -347,8 +348,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:30.307647Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:06.580431Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -360,5 +361,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.789210+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GEOBACTER MEDIUM" to "geobacter_medium" for consistent
-    matching
+  notes: Normalized name from "GEOBACTER MEDIUM" to "geobacter_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_579_GEOBACTER_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006023
+  name: geobacter_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

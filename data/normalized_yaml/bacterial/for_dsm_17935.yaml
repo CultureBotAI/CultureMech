@@ -189,4 +189,42 @@ curation_history:
 - timestamp: '2026-03-17T19:45:36.997246+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 17935" to "for_dsm_17935" for consistent matching
+  notes: Normalized name from "For DSM 17935" to "for_dsm_17935" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_17936.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003834
+  name: for_dsm_17936
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    phototrophic medium source record.
+- path: data/normalized_yaml/bacterial/for_dsm_18632.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003835
+  name: for_dsm_18632
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    phototrophic medium source record.
+- path: data/normalized_yaml/bacterial/for_dsm_18805.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003836
+  name: for_dsm_18805
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    phototrophic medium source record.
+- path: data/normalized_yaml/bacterial/for_dsm_18858.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003837
+  name: for_dsm_18858
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    phototrophic medium source record.
+- path: data/normalized_yaml/bacterial/phototrophic_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003838
+  name: phototrophic_medium
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    phototrophic medium source record.
+- path: data/normalized_yaml/specialized/phototrophic_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:015333
+  name: phototrophic_medium
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    phototrophic medium source record.

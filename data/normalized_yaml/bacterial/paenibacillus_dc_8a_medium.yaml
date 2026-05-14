@@ -137,5 +137,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:26.643758+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PAENIBACILLUS DC-8A MEDIUM" to "paenibacillus_dc_8a_medium"
-    for consistent matching
+  notes: Normalized name from "PAENIBACILLUS DC-8A MEDIUM" to
+    "paenibacillus_dc_8a_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/dc_8a_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001246
+  name: dc_8a_medium
+  notes: Reviewed Paenibacillus DC-8A medium as a concentration variant of DC-8A
+    medium with xylose as the curated concentration axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed DC-8A/Paenibacillus DC-8A pair; child keeps pH and all parsed
+  ingredients unchanged except xylose, which increases from 10 to 100 g/L.

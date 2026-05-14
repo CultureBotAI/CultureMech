@@ -151,8 +151,8 @@ preparation_steps:
     order:'
 - step_number: 2
   action: AUTOCLAVE
-  description: Adjust to pH 7.5 at room temperature and add water to the final volume
-    of 1 liter. Sterilize with and autoclave at 121°C for 15 min.
+  description: Adjust to pH 7.5 at room temperature and add water to the final
+    volume of 1 liter. Sterilize with and autoclave at 121°C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -171,5 +171,25 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.294646+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CYS MEDIUM WITH MODIFIED NACL CONCENTRATION" to "cys_medium_with_modified_nacl_concentration"
-    for consistent matching
+  notes: Normalized name from "CYS MEDIUM WITH MODIFIED NACL CONCENTRATION" to
+    "cys_medium_with_modified_nacl_concentration" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1108a_CYS_MEDIUM_WITH_MODIFIED_NACL_CONCENTRATION.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003809
+  name: cys_medium_with_modified_nacl_concentration
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.
+parent_media:
+  path: data/normalized_yaml/bacterial/cys_medium.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:000541
+  name: cys_medium
+  notes: Both records are MediaDive CYS liquid formulations; the child is
+    explicitly labeled with modified NaCl concentration and preserves the rest
+    of the base recipe.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- CYS medium with modified NaCl concentration increases NaCl from 3 g/L to 20
+  g/L while all other parsed ingredients remain unchanged.

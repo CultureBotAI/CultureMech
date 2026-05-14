@@ -152,12 +152,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.2. For liquid medium use only 0.7 g of methylamine hydrochloride
-    per liter.
+  description: Adjust pH to 7.2. For liquid medium use only 0.7 g of methylamine
+    hydrochloride per liter.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
-    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH,
+    then add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -176,5 +176,27 @@ curation_history:
 - timestamp: '2026-03-17T19:45:13.466145+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HYPHOMICROBIUM STRAIN X MEDIUM" to "hyphomicrobium_strain_x_medium"
-    for consistent matching
+  notes: Normalized name from "HYPHOMICROBIUM STRAIN X MEDIUM" to
+    "hyphomicrobium_strain_x_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_166_HYPHOMICROBIUM_STRAIN_X_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004193
+  name: hyphomicrobium_strain_x_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 166; local
+    ingredient and concentration signatures match.
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J884_HYPHOMICROBIUM_MEDIUM.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003232
+  name: hyphomicrobium_medium
+  notes: Reviewed Hyphomicrobium strain X medium as a concentration variant of
+    JCM Hyphomicrobium medium with methylamine, phosphate, ammonium, and
+    trace-element concentration axes.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed Hyphomicrobium/strain X pair; child shares the methylamine agar and
+  trace-element formulation but changes phosphate/ammonium/methylamine and
+  raises the trace-element stock concentrations, with pH 7.2 recorded in the
+  child.

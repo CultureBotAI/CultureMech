@@ -44,7 +44,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: Aseptically add neomycin to a final concentration of 1.0 mg/ml of medium.
+  description: Aseptically add neomycin to a final concentration of 1.0 mg/ml of
+    medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,4 +64,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.789045+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NEOMYCIN AGAR" to "neomycin_agar" for consistent matching
+  notes: Normalized name from "NEOMYCIN AGAR" to "neomycin_agar" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_309_NEOMYCIN_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004886
+  name: neomycin_agar
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 309; local
+    ingredient and concentration signatures match.

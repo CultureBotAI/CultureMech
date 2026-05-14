@@ -95,3 +95,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CAMINICELLA MEDIUM" to "caminicella_medium" for consistent
     matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006921
+  name: caminicella_medium
+  notes: Same source medium number and matching ingredient/concentration signature.

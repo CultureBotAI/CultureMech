@@ -85,9 +85,9 @@ preparation_steps:
   description: Adjust pH to 7.6 - 7.8.
 - step_number: 2
   action: HEAT
-  description: Add the horse blood to the heat sterilized medium after being cooled
-    to 50°C. Incubate under air plus 5% CO2 or anaerobically under 95% N2 plus 5%
-    CO2.
+  description: Add the horse blood to the heat sterilized medium after being
+    cooled to 50°C. Incubate under air plus 5% CO2 or anaerobically under 95% N2
+    plus 5% CO2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -106,5 +106,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.817878+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CAPNOCYTOPHAGA II MEDIUM" to "capnocytophaga_ii_medium"
-    for consistent matching
+  notes: Normalized name from "CAPNOCYTOPHAGA II MEDIUM" to
+    "capnocytophaga_ii_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_779_CAPNOCYTOPHAGA_II_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006440
+  name: capnocytophaga_ii_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

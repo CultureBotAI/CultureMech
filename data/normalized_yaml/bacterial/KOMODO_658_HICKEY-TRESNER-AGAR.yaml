@@ -77,6 +77,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.244469+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HICKEY-TRESNER-AGAR" to "hickey_tresner_agar" for consistent
-    matching
+  notes: Normalized name from "HICKEY-TRESNER-AGAR" to "hickey_tresner_agar" for
+    consistent matching
 kg_microbe_match: mediadive.medium:658
+parent_media:
+  path: data/normalized_yaml/bacterial/hickey_tresner_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001795
+  name: hickey_tresner_agar
+  notes: KOMODO record states DSMZ Medium 658 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

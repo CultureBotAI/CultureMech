@@ -94,3 +94,14 @@ variant_children:
   name: flexibacter_medium
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/myx_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001864
+  name: myx_agar
+  notes: KOMODO record states DSMZ Medium 729 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

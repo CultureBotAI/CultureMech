@@ -122,5 +122,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:30.552876+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Gauze's Synthetic Medium NO. 1" to "gauzes_synthetic_medium_no_1"
-    for consistent matching
+  notes: Normalized name from "Gauze's Synthetic Medium NO. 1" to
+    "gauzes_synthetic_medium_no_1" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/TOGO_M920_Gauze_s_Synthetic_Medium_NO._1_With_18_NaCl.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:010341
+  name: gauzes_synthetic_medium_no_1_with_18_nacl
+  notes: Reviewed TOGO Gauze synthetic medium pair; child keeps water, MgSO4,
+    K2HPO4, KNO3, and soluble starch unchanged, increases NaCl from 0.5 to 180
+    g/L, lowers FeSO4 from 10 to 0.01 g/L, and changes agar from 15 to 18 g/L.

@@ -183,8 +183,8 @@ preparation_steps:
   description: Adjust to pH 7.2.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using
+    2 N NaOH; then add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -203,5 +203,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.907607+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NSY-MEDIUM FOR POLYNUCLEOBACTER" to "nsy_medium_for_polynucleobacter"
-    for consistent matching
+  notes: Normalized name from "NSY-MEDIUM FOR POLYNUCLEOBACTER" to
+    "nsy_medium_for_polynucleobacter" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1167_NSY-MEDIUM_FOR_POLYNUCLEOBACTER.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003885
+  name: nsy_medium_for_polynucleobacter
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1167; local
+    ingredient and concentration signatures match.

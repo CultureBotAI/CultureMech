@@ -396,3 +396,15 @@ variant_children:
   name: medium_412_modified_for_dsm_23131
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/acetomicrobium_faecalis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001521
+  name: acetomicrobium_faecalis_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 412; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 412; local
+  ingredient and concentration signatures match.

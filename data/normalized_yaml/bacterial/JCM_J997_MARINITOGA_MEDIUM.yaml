@@ -77,10 +77,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except glucose and reducing agents. Prepare medium
-    anaerobically under a 100% N2 gas-atmosphere, adjust pH to 7.0, dispense in anaerobic
-    vials (1/3 vol.) and autoclave. Add glucose, cysteine and sulfide from sterile,
-    anoxic stock solutions prepared under N2.
+  description: Dissolve ingredients except glucose and reducing agents. Prepare
+    medium anaerobically under a 100% N2 gas-atmosphere, adjust pH to 7.0,
+    dispense in anaerobic vials (1/3 vol.) and autoclave. Add glucose, cysteine
+    and sulfide from sterile, anoxic stock solutions prepared under N2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -99,5 +99,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:33.729721+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINITOGA MEDIUM" to "marinitoga_medium" for consistent
-    matching
+  notes: Normalized name from "MARINITOGA MEDIUM" to "marinitoga_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J1047_MARINITOGA_MEDIUM.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002231
+  name: marinitoga_medium
+  notes: Reviewed JCM Marinitoga same-name concentration variant with glucose,
+    sulfide, and cysteine concentrations as the curated axes.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed same-name JCM Marinitoga pair; child keeps pH 7.0 and the same
+  sea-salt/PIPES/yeast-extract/tryptone/reducing-agent base but lowers glucose
+  from 14 to 2.5 g/L and reducing agents from 10 to 0.5 g/L, with small rounded
+  base concentrations.

@@ -66,3 +66,14 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MA4" to "ma4" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/ma2.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007977
+  name: ma2
+  notes: Reviewed TOGO MA2/MA4 pair; MA4 is modeled as the higher-malt-extract
+    child under the existing MA2 parent group.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Malt extract increased from 20 g/L to 40 g/L while the MA agar base remains
+  unchanged.

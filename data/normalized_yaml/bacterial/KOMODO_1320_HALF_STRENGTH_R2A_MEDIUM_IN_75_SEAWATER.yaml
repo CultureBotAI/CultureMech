@@ -112,5 +112,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:39.399097+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALF STRENGTH R2A MEDIUM IN 75% SEAWATER" to "half_strength_r2a_medium_in_75_seawater"
-    for consistent matching
+  notes: Normalized name from "HALF STRENGTH R2A MEDIUM IN 75% SEAWATER" to
+    "half_strength_r2a_medium_in_75_seawater" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/half_strength_r2a_medium_in_75_seawater.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000777
+  name: half_strength_r2a_medium_in_75_seawater
+  notes: KOMODO record explicitly cites DSMZ Medium 1320; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1320; local
+  ingredient and concentration signatures match.

@@ -282,10 +282,11 @@ preparation_steps:
   description: Adjust pH to 8.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: Bubble with nitrogen gas and fill in tubes with a rubber septum under
-    a stream of nitrogen gas. Autoclave at 121°C for 15 min. After sterilization add
-    1 ml/l filter-sterilized vitamin solution (B), 200 ml of filter-sterilized solution
-    Bicarbonate solution (C) and 10 ml/l sterilised Na2S x 9H2O solution (D). pH 8.5
+  description: Bubble with nitrogen gas and fill in tubes with a rubber septum
+    under a stream of nitrogen gas. Autoclave at 121°C for 15 min. After
+    sterilization add 1 ml/l filter-sterilized vitamin solution (B), 200 ml of
+    filter-sterilized solution Bicarbonate solution (C) and 10 ml/l sterilised
+    Na2S x 9H2O solution (D). pH 8.5
 - step_number: 3
   action: ADJUST_PH
   description: For dissolving adjust pH to about 3 with 1 N HCl.
@@ -307,6 +308,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.263034+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM FOR ECTOTHIORHODOSPIRA" to "medium_for_ectothiorhodospira"
-    for consistent matching
+  notes: Normalized name from "MEDIUM FOR ECTOTHIORHODOSPIRA" to
+    "medium_for_ectothiorhodospira" for consistent matching
 high_metal: true
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_253_medium_FOR_ECTOTHIORHODOSPIRA.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004655
+  name: medium_for_ectothiorhodospira
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 253; local
+    ingredient and concentration signatures match.

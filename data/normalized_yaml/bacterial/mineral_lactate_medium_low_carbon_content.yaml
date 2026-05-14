@@ -156,8 +156,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
-    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH,
+    then add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -180,5 +180,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.260261+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MINERAL LACTATE MEDIUM (low carbon content)" to "mineral_lactate_medium_low_carbon_content"
-    for consistent matching
+  notes: Normalized name from "MINERAL LACTATE MEDIUM (low carbon content)" to
+    "mineral_lactate_medium_low_carbon_content" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_137_MINERAL_LACTATE_MEDIUM_low_carbon_content.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004110
+  name: mineral_lactate_medium_low_carbon_content
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 137; local
+    ingredient and concentration signatures match.

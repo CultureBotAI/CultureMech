@@ -99,5 +99,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:39.813646+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BACILLUS ACIDOCALDARIUS medium" to "bacillus_acidocaldarius_medium"
-    for consistent matching
+  notes: Normalized name from "BACILLUS ACIDOCALDARIUS medium" to
+    "bacillus_acidocaldarius_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/bacillus_acidocaldarius_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000861
+  name: bacillus_acidocaldarius_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 13; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 13; local ingredient
+  and concentration signatures match.

@@ -70,7 +70,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: The medium may be solidified with 15 g/l agar. Adjust to pH 4.5 - 5.2.
+  description: The medium may be solidified with 15 g/l agar. Adjust to pH 4.5 -
+    5.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -93,5 +94,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.404501+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GRANULICELLA MEDIUM" to "granulicella_medium" for consistent
-    matching
+  notes: Normalized name from "GRANULICELLA MEDIUM" to "granulicella_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1284_GRANULICELLA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004036
+  name: granulicella_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1284; local
+    ingredient and concentration signatures match.

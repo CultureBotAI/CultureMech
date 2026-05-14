@@ -269,8 +269,8 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-03-14T21:06:28.440920'
   action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name; Added default solution
-    name
+  notes: Added default solution name; Added default solution name; Added default
+    solution name
 - timestamp: '2026-03-17T06:30:54.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -278,8 +278,8 @@ curation_history:
 - timestamp: '2026-03-17T19:45:32.212070+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOVIBRIO ARSENICITOLERANS MEDIUM" to "desulfovibrio_arsenicitolerans_medium"
-    for consistent matching
+  notes: Normalized name from "DESULFOVIBRIO ARSENICITOLERANS MEDIUM" to
+    "desulfovibrio_arsenicitolerans_medium" for consistent matching
 solutions:
 - preferred_term: Vitamin solution (see Medium No. 403)
   composition: []
@@ -299,3 +299,16 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/desulfovibrio_oceani_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003107
+  name: desulfovibrio_oceani_medium
+  notes: Reviewed Desulfovibrio arsenicitolerans medium as a concentration
+    variant of Desulfovibrio oceani medium with salinity, bicarbonate, sulfide,
+    and lactate axes.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed Desulfovibrio oceani/arsenicitolerans pair; child keeps the defined
+  sulfate-reducer base, trace elements, NaOH, selenium, and tungsten unchanged
+  but lowers NaCl, MgCl2, NaHCO3, and sulfide while increasing lactate.

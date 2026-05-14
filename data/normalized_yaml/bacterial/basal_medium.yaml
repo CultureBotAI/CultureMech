@@ -316,22 +316,22 @@ preparation_steps:
   description: Add all basal medium ingredients without vitamins.
 - step_number: 2
   action: MIX
-  description: Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble
-    the medium with N2:CO2 (80:20) to make anoxic.
+  description: Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min
+    Bubble the medium with N2:CO2 (80:20) to make anoxic.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.8-7.0.
 - step_number: 4
   action: POUR_PLATES
-  description: Dispense into serum bottles (using 10ml medium in 100 ml bottles with
-    N2:CO2 headspace).
+  description: Dispense into serum bottles (using 10ml medium in 100 ml bottles
+    with N2:CO2 headspace).
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
 - step_number: 6
   action: MIX
-  description: After autoclaving, add the following solutions to a final volume of
-    10ml/L each.
+  description: After autoclaving, add the following solutions to a final volume
+    of 10ml/L each.
 - step_number: 7
   action: STORE
   description: 'Note: This medium should not be exposed to direct sunlight! Store
@@ -346,8 +346,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.267595Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:29.698532Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -363,4 +363,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.091870+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BASAL MEDIUM" to "basal_medium" for consistent matching
+  notes: Normalized name from "BASAL MEDIUM" to "basal_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1001_BASAL_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003498
+  name: basal_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

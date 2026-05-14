@@ -172,5 +172,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.721824+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM FOR METHYLOBACTERIUM PODARIUM" to "medium_for_methylobacterium_podarium"
-    for consistent matching
+  notes: Normalized name from "MEDIUM FOR METHYLOBACTERIUM PODARIUM" to
+    "medium_for_methylobacterium_podarium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/medium_for_methylobacterium_podarium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000455
+  name: medium_for_methylobacterium_podarium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

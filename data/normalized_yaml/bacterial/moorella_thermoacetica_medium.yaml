@@ -345,21 +345,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, fructose, vitamins, cysteine
-    and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
-    to make it anoxic, then dispense under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add fructose, vitamins, cysteine and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas and bicarbonate
-    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
-    The pH of the complete medium should be at 6.5.
+  description: Dissolve ingredients except bicarbonate, fructose, vitamins,
+    cysteine and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for
+    30 - 45 min to make it anoxic, then dispense under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add fructose,
+    vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas and bicarbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. The pH of the complete medium
+    should be at 6.5.
 - step_number: 2
   action: MIX
   description: 'Note: For autotrophic growth fructose is omitted and a gas atmosphere
     of 80% H2 and 20% CO2 is used.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -370,8 +371,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:24.741382Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:08:57.440572Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -387,5 +388,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.064912+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MOORELLA THERMOACETICA MEDIUM" to "moorella_thermoacetica_medium"
-    for consistent matching
+  notes: Normalized name from "MOORELLA THERMOACETICA MEDIUM" to
+    "moorella_thermoacetica_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/acetobacterium_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000818
+  name: acetobacterium_medium
+  notes: Reviewed Moorella thermoacetica medium as a concentration variant of
+    Acetobacterium medium with bicarbonate as the curated concentration axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed Acetobacterium/Moorella thermoacetica pair; child keeps the same
+  anaerobic base, fructose, reductants, trace elements, and vitamins but lowers
+  NaHCO3 from 9.79432 to 0.979432 g/L and records pH 6.5.

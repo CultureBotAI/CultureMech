@@ -113,9 +113,10 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:32139
-    label: null
+    label:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
-description: Defined medium for B.theta without carbon and low Cysteine concentration
+description: Defined medium for B.theta without carbon and low Cysteine
+  concentration
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED
 sources:
@@ -133,3 +134,14 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015783'
 data_quality_flags:
 - has_unmapped_ingredients
+parent_media:
+  path: data/normalized_yaml/specialized/varel_bryant_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015771
+  name: Varel Bryant medium
+  notes: Reviewed FEBA Varel Bryant medium pair; lowCys record differs only in
+    L-cysteine concentration.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- L-Cysteine decreased from 8.25 mM to 3 mM while the Varel Bryant medium
+  formulation remains unchanged.

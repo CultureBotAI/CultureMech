@@ -94,5 +94,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:14.834895+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/2 ISP-2 + 10% NaCl" to "1_2_isp_2_10_nacl" for consistent
-    matching
+  notes: Normalized name from "1/2 ISP-2 + 10% NaCl" to "1_2_isp_2_10_nacl" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/1_2_isp_2_15_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008381
+  name: 1_2_isp_2_15_nacl
+  notes: NaCl increased from 100 g/L to 150 g/L while 1/2 ISP 2 ingredients
+    remain unchanged.

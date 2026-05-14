@@ -54,3 +54,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TY MEDIUM" to "ty_medium" for consistent matching
 kg_microbe_match: mediadive.medium:1143
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1143_TY_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003854
+  name: ty_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

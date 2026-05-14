@@ -74,7 +74,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:40.646983+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CYTOPHAGA HUTCHINSONII medium" to "cytophaga_hutchinsonii_medium"
-    for consistent matching
+  notes: Normalized name from "CYTOPHAGA HUTCHINSONII medium" to
+    "cytophaga_hutchinsonii_medium" for consistent matching
 ph_value: 7.2
 kg_microbe_match: mediadive.medium:160
+parent_media:
+  path: data/normalized_yaml/bacterial/cytophaga_hutchinsonii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001091
+  name: cytophaga_hutchinsonii_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 160; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 160; local
+  ingredient and concentration signatures match.

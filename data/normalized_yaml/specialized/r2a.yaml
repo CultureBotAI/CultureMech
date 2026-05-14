@@ -84,3 +84,11 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015687'
 data_quality_flags: []
+variant_children:
+- path: data/normalized_yaml/specialized/r2a_1x.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015688
+  name: R2A_.1x
+  notes: R2A .1x decreases all parsed R2A components ten-fold, including
+    peptone, casamino acids, yeast extract, glucose, starch, phosphate,
+    magnesium sulfate, and sodium pyruvate.

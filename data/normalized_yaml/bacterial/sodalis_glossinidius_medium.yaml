@@ -38,12 +38,14 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and
+    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -57,13 +59,14 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
+    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
+    formulation) commercial product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -72,12 +75,13 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
+    Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -166,9 +170,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sterilize solution A and B separately at 121°C for 20 min. Cool to
-    50°C, then combine. To 4 parts of the above, add 1 part sterile foetal or new
-    borne calf serum. Liquid medium should be filter sterilized instead of autoclaved.
+  description: Sterilize solution A and B separately at 121°C for 20 min. Cool
+    to 50°C, then combine. To 4 parts of the above, add 1 part sterile foetal or
+    new borne calf serum. Liquid medium should be filter sterilized instead of
+    autoclaved.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 8.0.
@@ -190,5 +195,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.364563+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SODALIS GLOSSINIDIUS MEDIUM" to "sodalis_glossinidius_medium"
-    for consistent matching
+  notes: Normalized name from "SODALIS GLOSSINIDIUS MEDIUM" to
+    "sodalis_glossinidius_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1021_SODALIS_GLOSSINIDIUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003534
+  name: sodalis_glossinidius_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

@@ -159,5 +159,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.570747+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MIXOTROPHIC NITROBACTER MEDIUM" to "mixotrophic_nitrobacter_medium"
-    for consistent matching
+  notes: Normalized name from "MIXOTROPHIC NITROBACTER MEDIUM" to
+    "mixotrophic_nitrobacter_medium" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_756a_MIXOTROPHIC_NITROBACTER_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:006410
+  name: mixotrophic_nitrobacter_medium
+  notes: Reviewed same-name Mixotrophic Nitrobacter medium concentration
+    variant; child shares the parsed base formulation but raises organic
+    nutrient and pyruvate concentrations by 10-fold and has a lower pH.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed same-name Mixotrophic Nitrobacter medium records; child increases
+  yeast extract, peptone, and sodium pyruvate from 0.15/0.15/0.055 g/L to
+  1.5/1.5/0.55 g/L while the remaining parsed base ingredients are unchanged; pH
+  differs from 8.6 to 7.4.

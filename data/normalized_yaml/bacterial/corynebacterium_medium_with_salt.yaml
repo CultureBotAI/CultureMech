@@ -72,5 +72,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.138547+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CORYNEBACTERIUM MEDIUM WITH SALT" to "corynebacterium_medium_with_salt"
-    for consistent matching
+  notes: Normalized name from "CORYNEBACTERIUM MEDIUM WITH SALT" to
+    "corynebacterium_medium_with_salt" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_229_CORYNEBACTERIUM_medium_WITH_SALT.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004582
+  name: corynebacterium_medium_with_salt
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 229; local
+    ingredient and concentration signatures match.

@@ -83,4 +83,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.492408+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TPT 18 MEDIUM" to "tpt_18_medium" for consistent matching
+  notes: Normalized name from "TPT 18 MEDIUM" to "tpt_18_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1127_TPT_18_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003831
+  name: tpt_18_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

@@ -76,8 +76,8 @@ preparation_steps:
   description: Adjust pH to 7.5 with 1 M Tris base.
 - step_number: 2
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 7.5 with 1 M Tris base.
+  description: Add components to distilled water and bring volume to 1.0 L.
+    Adjust pH to 7.5 with 1 M Tris base.
 applications:
 - Microbial cultivation
 curation_history:
@@ -96,6 +96,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:32.763535+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "5% SALT WATER GROWTH MEDIUM" to "5_salt_water_growth_medium"
-    for consistent matching
+  notes: Normalized name from "5% SALT WATER GROWTH MEDIUM" to
+    "5_salt_water_growth_medium" for consistent matching
 high_metal: true
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/modified_growth_medium_with_23_total_salt_concentration.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003304
+  name: modified_growth_medium_with_23_total_salt_concentration
+  notes: Modified growth medium with 23% total salt keeps the parsed salt
+    concentrations unchanged and increases peptone from 5 to 10 g/L and yeast
+    extract from 1 to 2 g/L.

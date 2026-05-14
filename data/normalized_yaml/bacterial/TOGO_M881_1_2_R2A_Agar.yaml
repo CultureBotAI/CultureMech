@@ -65,4 +65,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:31.753743+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/2 R2A Agar" to "1_2_r2a_agar" for consistent matching
+  notes: Normalized name from "1/2 R2A Agar" to "1_2_r2a_agar" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:010253
+  name: 1_10_r2a_agar
+  notes: 1/10 R2A Agar decreases R2A agar powder from 9.1 g/L to 1.82 g/L and
+    adjusts added agar from 7.5 g/L to 15 g/L.

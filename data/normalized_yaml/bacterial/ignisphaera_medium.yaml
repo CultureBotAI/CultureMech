@@ -242,17 +242,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except ferric chloride, cysteine, starch and
-    sulfide), sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add
-    ferric chloride and solid cysteine, then adjust pH to 6.3. Dispense medium under
-    100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials (e.g., 20
-    ml medium in 50 ml bottles) and autoclave. Prior to inoculation add starch and
-    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust
-    pH of complete medium to 6.5, if necessary.
+  description: Dissolve ingredients (except ferric chloride, cysteine, starch
+    and sulfide), sparge medium with 100% N2 gas for 30 - 45 min to make it
+    anoxic. Add ferric chloride and solid cysteine, then adjust pH to 6.3.
+    Dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes
+    or serum vials (e.g., 20 ml medium in 50 ml bottles) and autoclave. Prior to
+    inoculation add starch and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if
+    necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -275,5 +276,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.574778+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "IGNISPHAERA MEDIUM" to "ignisphaera_medium" for consistent
-    matching
+  notes: Normalized name from "IGNISPHAERA MEDIUM" to "ignisphaera_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1043_IGNISPHAERA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003602
+  name: ignisphaera_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

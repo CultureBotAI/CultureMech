@@ -223,3 +223,15 @@ variant_children:
   name: weissela_koreensis_medium
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/mrs_medium_with_cysteine.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001334
+  name: mrs_medium_with_cysteine
+  notes: KOMODO record explicitly cites DSMZ Medium 232; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 232; local
+  ingredient and concentration signatures match.

@@ -72,5 +72,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.339005+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ISP MEDIUM 2 WITH 5% NaCl" to "isp_medium_2_with_5_nacl"
-    for consistent matching
+  notes: Normalized name from "ISP MEDIUM 2 WITH 5% NaCl" to
+    "isp_medium_2_with_5_nacl" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_636_ISP_medium_2_WITH_5_NaCl.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006155
+  name: isp_medium_2_with_5_nacl
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

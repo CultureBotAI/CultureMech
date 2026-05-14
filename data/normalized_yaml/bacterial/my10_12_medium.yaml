@@ -52,8 +52,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize by steaming for 30 min. Overheating will cause softening.
-    Final aw is 0.88.
+  description: Sterilize by steaming for 30 min. Overheating will cause
+    softening. Final aw is 0.88.
 applications:
 - Microbial cultivation
 curation_history:
@@ -72,5 +72,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.629167+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MY10-12 MEDIUM" to "my10_12_medium" for consistent
-    matching
+  notes: Normalized name from "MY10-12 MEDIUM" to "my10_12_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_982_MY10-12_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006943
+  name: my10_12_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

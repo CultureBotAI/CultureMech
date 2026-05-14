@@ -214,11 +214,12 @@ preparation_steps:
   description: 'Add solutions A, B, and Trace mineral solution (see recipes below):'
 - step_number: 3
   action: AUTOCLAVE
-  description: pH the media to 6.0 and gas the flask containing the media with CO2
-    for 20 min at least. Gas first culture tube in rack and place 5 ml of media in
-    previous tube. Place stopper on loaded culture tube, crimp tube cap onto stopper.
-    Autoclave the medium for 20 min., 121°C. Add 1 ml of O2 to each tube before inoculation.
-    After the inoculation the tubes are pressurized with H2 (138 KP).
+  description: pH the media to 6.0 and gas the flask containing the media with
+    CO2 for 20 min at least. Gas first culture tube in rack and place 5 ml of
+    media in previous tube. Place stopper on loaded culture tube, crimp tube cap
+    onto stopper. Autoclave the medium for 20 min., 121°C. Add 1 ml of O2 to
+    each tube before inoculation. After the inoculation the tubes are
+    pressurized with H2 (138 KP).
 - step_number: 4
   action: ADJUST_PH
   description: Adjust the pH to 4 with HCl.
@@ -251,6 +252,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.115510+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HYDROGEN-OXYDIZING MEDIUM" to "hydrogen_oxydizing_medium"
-    for consistent matching
+  notes: Normalized name from "HYDROGEN-OXYDIZING MEDIUM" to
+    "hydrogen_oxydizing_medium" for consistent matching
 high_metal: true
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1003_HYDROGEN-OXYDIZING_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003500
+  name: hydrogen_oxydizing_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

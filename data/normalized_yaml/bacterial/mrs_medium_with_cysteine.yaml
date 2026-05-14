@@ -123,5 +123,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.149808+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS MEDIUM WITH CYSTEINE" to "mrs_medium_with_cysteine"
-    for consistent matching
+  notes: Normalized name from "MRS MEDIUM WITH CYSTEINE" to
+    "mrs_medium_with_cysteine" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_232_MRS_medium_WITH_CYSTEINE.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004606
+  name: mrs_medium_with_cysteine
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 232; local
+    ingredient and concentration signatures match.

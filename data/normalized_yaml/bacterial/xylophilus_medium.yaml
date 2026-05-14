@@ -58,8 +58,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add 0.25 g/l ferric ammonium citrate from a separately autoclaved stock
-    solution.
+  description: Add 0.25 g/l ferric ammonium citrate from a separately autoclaved
+    stock solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -78,6 +78,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.845337+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "XYLOPHILUS MEDIUM" to "xylophilus_medium" for consistent
-    matching
+  notes: Normalized name from "XYLOPHILUS MEDIUM" to "xylophilus_medium" for
+    consistent matching
 kg_microbe_match: mediadive.medium:587
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_587_XYLOPHILUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006066
+  name: xylophilus_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

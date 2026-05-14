@@ -90,3 +90,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SPIRILLUM MEDIUM" to "spirillum_medium" for consistent
     matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_37_SPIRILLUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005115
+  name: spirillum_medium
+  notes: Same source medium number and matching ingredient/concentration signature.

@@ -196,15 +196,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine) and sparge medium with 100%
-    N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. Add cysteine form
-    a sterile anoxic stock solution prepared under 100% N2 gas and adjust pH of the
-    complete medium to 6.5, if necessary.
+  description: Dissolve ingredients (except cysteine) and sparge medium with
+    100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add cysteine form a sterile anoxic stock solution prepared under 100% N2 gas
+    and adjust pH of the complete medium to 6.5, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -227,5 +227,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.162020+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOLUNA MEDIUM" to "desulfoluna_medium" for consistent
-    matching
+  notes: Normalized name from "DESULFOLUNA MEDIUM" to "desulfoluna_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1099_DESULFOLUNA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003751
+  name: desulfoluna_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

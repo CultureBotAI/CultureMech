@@ -156,10 +156,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Add solutions B and C to solution A, adjust pH of the combined solution
-    to 1.6 - 1.8 with H2SO4, then sterilize using membrane filter and dispense in
-    sterile culture vessels. Prior to use, add the appropriate volume of solution
-    D sterilized by autoclaving.
+  description: Add solutions B and C to solution A, adjust pH of the combined
+    solution to 1.6 - 1.8 with H2SO4, then sterilize using membrane filter and
+    dispense in sterile culture vessels. Prior to use, add the appropriate
+    volume of solution D sterilized by autoclaving.
 applications:
 - Microbial cultivation
 curation_history:
@@ -178,6 +178,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.182137+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FERROPLASMA ACIDIPHILUM MEDIUM" to "ferroplasma_acidiphilum_medium"
-    for consistent matching
+  notes: Normalized name from "FERROPLASMA ACIDIPHILUM MEDIUM" to
+    "ferroplasma_acidiphilum_medium" for consistent matching
 high_metal: true
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_874_FERROPLASMA_ACIDIPHILUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006711
+  name: ferroplasma_acidiphilum_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

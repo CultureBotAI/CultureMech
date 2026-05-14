@@ -99,8 +99,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.4. Add the agar after dissolving all ingredients in
-    the water and adjustment of pH.
+  description: Adjust pH to 7.4. Add the agar after dissolving all ingredients
+    in the water and adjustment of pH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -123,6 +123,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.607235+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOBACTERIUM MEDIUM" to "halobacterium_medium" for
-    consistent matching
+  notes: Normalized name from "HALOBACTERIUM MEDIUM" to "halobacterium_medium"
+    for consistent matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_97_HALOBACTERIUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006940
+  name: halobacterium_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

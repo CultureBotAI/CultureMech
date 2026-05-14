@@ -94,9 +94,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: After autoclaving add 20ml 1M HEPES sterile buffer (pH 7.8) and 0.1ml
-    of a sterile 3mg/ml of ferric ammonium citrate. Final pH is 7.5. The medium may
-    be solidified by adding 15 g/l agar.
+  description: After autoclaving add 20ml 1M HEPES sterile buffer (pH 7.8) and
+    0.1ml of a sterile 3mg/ml of ferric ammonium citrate. Final pH is 7.5. The
+    medium may be solidified by adding 15 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -115,5 +115,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.724225+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AURANTIMONAS MANGANOXYDANS MEDIUM" to "aurantimonas_manganoxydans_medium"
-    for consistent matching
+  notes: Normalized name from "AURANTIMONAS MANGANOXYDANS MEDIUM" to
+    "aurantimonas_manganoxydans_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1326_AURANTIMONAS_MANGANOXYDANS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004082
+  name: aurantimonas_manganoxydans_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1326; local
+    ingredient and concentration signatures match.

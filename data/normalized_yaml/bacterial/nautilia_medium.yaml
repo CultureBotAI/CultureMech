@@ -393,20 +393,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients (except sulfur, carbonate, formate, vitamins and
-    sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
-    to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials that contain already the appropriate amount of sulfur. For
-    sterilization heat cultivation vessels for 1 - 2 hours to 90 - 100°C in a water
-    bath on each of three successive days. Prior to inoculation add carbonate from
-    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere
-    and formate, vitamins and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas. Vitamins are sterilized by filtration. Adjust pH of complete
-    medium to 6.8, if necessary.
+  description: Dissolve ingredients (except sulfur, carbonate, formate, vitamins
+    and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30
+    - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials that contain already the
+    appropriate amount of sulfur. For sterilization heat cultivation vessels for
+    1 - 2 hours to 90 - 100°C in a water bath on each of three successive days.
+    Prior to inoculation add carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas atmosphere and formate, vitamins and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.
+    Vitamins are sterilized by filtration. Adjust pH of complete medium to 6.8,
+    if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -417,8 +418,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:47.235341Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:32.262144Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -434,5 +435,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.220613+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NAUTILIA MEDIUM" to "nautilia_medium" for consistent
-    matching
+  notes: Normalized name from "NAUTILIA MEDIUM" to "nautilia_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_946_NAUTILIA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006883
+  name: nautilia_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

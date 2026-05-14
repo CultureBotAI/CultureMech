@@ -58,8 +58,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately and combine after cooling to
-    approximately 50°C.
+  description: Autoclave solutions A and B separately and combine after cooling
+    to approximately 50°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -78,5 +78,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.330761+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TWEEN 80-AGAR" to "tween_80_agar" for consistent matching
+  notes: Normalized name from "TWEEN 80-AGAR" to "tween_80_agar" for consistent
+    matching
 kg_microbe_match: mediadive.medium:884
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_884_TWEEN_80-AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006735
+  name: tween_80_agar
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

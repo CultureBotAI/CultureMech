@@ -195,11 +195,11 @@ preparation_steps:
   description: 'after autoclaving add the following sterile solutions:'
 - step_number: 6
   action: FILTER_STERILIZE
-  description: "Note: lipid fraction can be prepared from fresh or freeze-dried biomass.\
-    \ Cells are disrupted by autoclaving or sonication, then filter-sterilized.\r\n\
-    \r\nUse 5 g wet or 0,2 g dried biomass in 10 ml water or buffer, and use 10ml/l\
-    \ of the sterile-filtered extract. Prepare under N2 conditions.\r\n\r\nModified\
-    \ from  W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87"
+  description: "Note: lipid fraction can be prepared from fresh or freeze-dried biomass.
+    Cells are disrupted by autoclaving or sonication, then filter-sterilized.\r\n\r\
+    \nUse 5 g wet or 0,2 g dried biomass in 10 ml water or buffer, and use 10ml/l
+    of the sterile-filtered extract. Prepare under N2 conditions.\r\n\r\nModified
+    from  W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87"
 applications:
 - Microbial cultivation
 curation_history:
@@ -218,5 +218,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.333339+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOFILUM PENDENS MEDIUM" to "thermofilum_pendens_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOFILUM PENDENS MEDIUM" to
+    "thermofilum_pendens_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004668
+  name: thermofilum_pendens_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 265; local
+    ingredient and concentration signatures match.

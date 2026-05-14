@@ -169,3 +169,11 @@ variant_children:
   name: 10_mixotrophic_nitrobacter_medium
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+- path: data/normalized_yaml/bacterial/mixotrophic_nitrobacter_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001889
+  name: mixotrophic_nitrobacter_medium
+  notes: Reviewed same-name Mixotrophic Nitrobacter medium records; child
+    increases yeast extract, peptone, and sodium pyruvate from 0.15/0.15/0.055
+    g/L to 1.5/1.5/0.55 g/L while the remaining parsed base ingredients are
+    unchanged; pH differs from 8.6 to 7.4.

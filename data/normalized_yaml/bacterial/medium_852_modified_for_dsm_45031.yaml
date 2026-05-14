@@ -114,5 +114,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.483087+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 852 MODIFIED FOR DSM 45031" to "medium_852_modified_for_dsm_45031"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 852 MODIFIED FOR DSM 45031" to
+    "medium_852_modified_for_dsm_45031" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/gyp_glucose_yeast_peptone_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006668
+  name: gyp_glucose_yeast_peptone_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
+  852/GYP source record.

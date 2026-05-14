@@ -233,5 +233,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.476768+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "STALEY'S MAINTENANCE medium" to "staleys_maintenance_medium"
-    for consistent matching
+  notes: Normalized name from "STALEY'S MAINTENANCE medium" to
+    "staleys_maintenance_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/staleys_maintenance_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001760
+  name: staleys_maintenance_medium
+  notes: KOMODO record states DSMZ Medium 629 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

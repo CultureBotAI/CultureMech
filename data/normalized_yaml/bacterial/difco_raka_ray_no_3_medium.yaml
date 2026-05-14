@@ -144,5 +144,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.593064+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DIFCO RAKA-RAY NO.3 MEDIUM" to "difco_raka_ray_no_3_medium"
-    for consistent matching
+  notes: Normalized name from "DIFCO RAKA-RAY NO.3 MEDIUM" to
+    "difco_raka_ray_no_3_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1047_DIFCO_RAKA-RAY_NO.3_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003605
+  name: difco_raka_ray_no_3_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

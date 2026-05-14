@@ -78,9 +78,9 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 2
   action: MIX
-  description: Prepare the medium anaerobically under 100% nitrogen. Sterilize thioglycolate
-    and sulfur separately. Sterilize the sulfur by steaming for 3 h on each of three
-    successive days.
+  description: Prepare the medium anaerobically under 100% nitrogen. Sterilize
+    thioglycolate and sulfur separately. Sterilize the sulfur by steaming for 3
+    h on each of three successive days.
 applications:
 - Microbial cultivation
 curation_history:
@@ -103,4 +103,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.500686+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AN1 MEDIUM" to "an1_medium" for consistent matching
+  notes: Normalized name from "AN1 MEDIUM" to "an1_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_376_AN1_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005108
+  name: an1_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 376; local
+    ingredient and concentration signatures match.

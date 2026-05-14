@@ -308,3 +308,14 @@ variant_children:
   name: to_make_medium_anoxic
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/chopped_meat_medium_with_carbohydrates.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000544
+  name: chopped_meat_medium_with_carbohydrates
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

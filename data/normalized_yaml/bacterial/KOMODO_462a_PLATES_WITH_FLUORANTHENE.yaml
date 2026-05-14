@@ -553,3 +553,14 @@ variant_children:
   name: medium_462a_modified_for_dsm_12247
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/plates_with_fluoranthene.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001580
+  name: plates_with_fluoranthene
+  notes: KOMODO record states DSMZ Medium 462a provenance and exactly matches
+    the single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

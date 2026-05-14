@@ -143,5 +143,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:53.835647+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AMPHIBACILLUS medium" to "amphibacillus_medium" for
-    consistent matching
+  notes: Normalized name from "AMPHIBACILLUS medium" to "amphibacillus_medium"
+    for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/DSMZ_529_AMPHIBACILLUS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001660
+  name: amphibacillus_medium
+  notes: KOMODO record states DSMZ Medium 529 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

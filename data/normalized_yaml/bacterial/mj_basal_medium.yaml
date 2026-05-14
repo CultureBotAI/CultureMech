@@ -269,3 +269,11 @@ variant_children:
   name: mj_n_basal_medium
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/mj_medium_for_microaerophilic_autotrophs.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003251
+  name: mj_medium_for_microaerophilic_autotrophs
+  notes: Reviewed MJ basal/autotroph pair; child keeps the marine salt, trace
+    metal, and vitamin base unchanged but raises NaHCO3 from 1.4985 to 5 g/L and
+    Na2S2O3 x 5 H2O from 1.4985 to 15 g/L, with pH 5.5 recorded in the child.

@@ -72,4 +72,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.916743+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SEAWATER YPG" to "seawater_ypg" for consistent matching
+  notes: Normalized name from "SEAWATER YPG" to "seawater_ypg" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1169_SEAWATER_YPG.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003887
+  name: seawater_ypg
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1169; local
+    ingredient and concentration signatures match.

@@ -355,8 +355,8 @@ preparation_steps:
   description: Autoclave under 2 bar N2:CO2 (80:20).
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -367,8 +367,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.101208Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:08:55.001604Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -384,5 +384,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:17.010041+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACETOMICROBIUM FAECALIS MEDIUM" to "acetomicrobium_faecalis_medium"
-    for consistent matching
+  notes: Normalized name from "ACETOMICROBIUM FAECALIS MEDIUM" to
+    "acetomicrobium_faecalis_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_412_ACETOMICROBIUM_FAECALIS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005236
+  name: acetomicrobium_faecalis_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 412; local
+    ingredient and concentration signatures match.

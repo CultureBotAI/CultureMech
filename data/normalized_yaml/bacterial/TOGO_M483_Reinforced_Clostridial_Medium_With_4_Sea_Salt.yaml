@@ -70,5 +70,17 @@ curation_history:
 - timestamp: '2026-03-17T19:46:28.499050+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Reinforced Clostridial Medium With 4%  Sea Salt" to
-    "reinforced_clostridial_medium_with_4_sea_salt" for consistent matching
+  notes: Normalized name from "Reinforced Clostridial Medium With 4%  Sea Salt"
+    to "reinforced_clostridial_medium_with_4_sea_salt" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/TOGO_M482_Reinforced_Clostridial_Medium_With_3_Sea_Salt.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:009869
+  name: reinforced_clostridial_medium_with_3_sea_salt
+  notes: 'Reviewed source-family salinity variant: TOGO/JCM 3% sea salt parent and
+    4% sea salt child share the same reinforced clostridial base formulation.'
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Sea salts (Sigma) increased from 30 g/L to 40 g/L while reinforced clostridial
+  medium and agar remain unchanged.

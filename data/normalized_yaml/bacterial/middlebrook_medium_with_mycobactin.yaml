@@ -42,17 +42,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Reconstitute the contents of one vial of 2 mg Mycobactine J with 2
-    ml absolute ethanol (analytical grade). Shake carefully so that the product is
-    completely dissolved. Pour the contents of the bottle into 1 litre of medium 645
-    kept melted in a water bath at +56°C, taking care to pour out all of the product.
-    Rinse out the vial that contained the Mycobactine J with an additional 2 ml of
-    absolute ethanol and pour into the culture medium. Mix the Mycobactine J alcohol
-    solution and the culture medium very thoroughly.
+  description: Reconstitute the contents of one vial of 2 mg Mycobactine J with
+    2 ml absolute ethanol (analytical grade). Shake carefully so that the
+    product is completely dissolved. Pour the contents of the bottle into 1
+    litre of medium 645 kept melted in a water bath at +56°C, taking care to
+    pour out all of the product. Rinse out the vial that contained the
+    Mycobactine J with an additional 2 ml of absolute ethanol and pour into the
+    culture medium. Mix the Mycobactine J alcohol solution and the culture
+    medium very thoroughly.
 - step_number: 2
   action: HEAT
-  description: Sterilize for 15 min by 121°C cool to 50 - 55°C. Add 100 ml Middlebrook
-    OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly.
+  description: Sterilize for 15 min by 121°C cool to 50 - 55°C. Add 100 ml
+    Middlebrook OADC enrichment (Becton Dickinson 212240) under aseptic
+    conditions and mix thoroughly.
 - step_number: 3
   action: MIX
   description: 'If you can´t order the commercial media then prepare the media in
@@ -75,5 +77,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.825896+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MIDDLEBROOK MEDIUM WITH MYCOBACTIN" to "middlebrook_medium_with_mycobactin"
-    for consistent matching
+  notes: Normalized name from "MIDDLEBROOK MEDIUM WITH MYCOBACTIN" to
+    "middlebrook_medium_with_mycobactin" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_780_MIDDLEBROOK_MEDIUM_WITH_MYCOBACTIN.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006479
+  name: middlebrook_medium_with_mycobactin
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

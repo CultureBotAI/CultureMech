@@ -60,3 +60,15 @@ curation_history:
   notes: Normalized name from "NY-AGAR" to "ny_agar" for consistent matching
 ph_value: 7.0
 kg_microbe_match: mediadive.medium:12
+parent_media:
+  path: data/normalized_yaml/bacterial/ny_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001405
+  name: ny_agar
+  notes: KOMODO record explicitly cites DSMZ Medium 306; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 306; local
+  ingredient and concentration signatures match.

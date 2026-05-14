@@ -88,14 +88,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solution A, cool down to 50°C and combine solution A with
-    70 ml of solution B.
+  description: Autoclave solution A, cool down to 50°C and combine solution A
+    with 70 ml of solution B.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 1.8 - 2.5 with H2SO4.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Dissolve in 0.2 N H2SO4 and fill up to a volume of 100 ml. Filter sterilize.
+  description: Dissolve in 0.2 N H2SO4 and fill up to a volume of 100 ml. Filter
+    sterilize.
 applications:
 - Microbial cultivation
 curation_history:
@@ -118,6 +119,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.261810+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALICYCLOBACILLUS FERROOXYDANS MEDIUM" to "alicyclobacillus_ferrooxydans_medium"
-    for consistent matching
+  notes: Normalized name from "ALICYCLOBACILLUS FERROOXYDANS MEDIUM" to
+    "alicyclobacillus_ferrooxydans_medium" for consistent matching
 high_metal: true
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1201_ALICYCLOBACILLUS_FERROOXYDANS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003949
+  name: alicyclobacillus_ferrooxydans_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1201; local
+    ingredient and concentration signatures match.

@@ -53,6 +53,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:30.051234+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/10 POTATO-CARROT AGAR" to "1_10_potato_carrot_agar"
-    for consistent matching
+  notes: Normalized name from "1/10 POTATO-CARROT AGAR" to
+    "1_10_potato_carrot_agar" for consistent matching
 kg_microbe_match: mediadive.medium:12
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J54_POTATO-CARROT_AGAR.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002897
+  name: potato_carrot_agar
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Same ingredient identity signature but concentration signature differs from
+  parent.

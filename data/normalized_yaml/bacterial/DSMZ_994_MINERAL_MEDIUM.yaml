@@ -278,8 +278,8 @@ preparation_steps:
   description: Stir for some hours, filter sterilize the solution.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using
+    2 N NaOH; then add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -298,5 +298,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.740066+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MINERAL MEDIUM" to "mineral_medium" for consistent
-    matching
+  notes: Normalized name from "MINERAL MEDIUM" to "mineral_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_994_MINERAL_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006978
+  name: mineral_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

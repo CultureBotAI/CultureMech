@@ -58,19 +58,21 @@ applications:
 - Microbial cultivation
 variants:
 - name: cold_growth_caulobacter_k31
-  description: Cold-growth condition for Caulobacter sp. K31 on Caulobacter Medium.
+  description: Cold-growth condition for Caulobacter sp. K31 on Caulobacter
+    Medium.
   modifications:
   - Incubate at 4 C.
   - Use Caulobacter sp. K31 as the target strain.
-  purpose: Capture strain-specific cold-growth evidence under the parent Caulobacter
-    Medium record.
+  purpose: Capture strain-specific cold-growth evidence under the parent
+    Caulobacter Medium record.
   evidence:
   - reference: PMID:25274120
     supports: SUPPORT
-    snippet: K31 is a novel Caulobacter isolate that has the ability to tolerate copper
-      and chlorophenols, and can grow at 4 ° C with a doubling time of 40 h.
-    explanation: Literature evidence supports a cold-growth variant for Caulobacter
-      sp. K31 on the parent Caulobacter Medium record.
+    snippet: K31 is a novel Caulobacter isolate that has the ability to tolerate
+      copper and chlorophenols, and can grow at 4 ° C with a doubling time of 40
+      h.
+    explanation: Literature evidence supports a cold-growth variant for
+      Caulobacter sp. K31 on the parent Caulobacter Medium record.
 curation_history:
 - timestamp: '2026-01-26T17:53:11.675863Z'
   curator: mediadive-import
@@ -87,8 +89,8 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.908067+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CAULOBACTER MEDIUM" to "caulobacter_medium" for consistent
-    matching
+  notes: Normalized name from "CAULOBACTER MEDIUM" to "caulobacter_medium" for
+    consistent matching
 - timestamp: '2026-05-04T06:34:23.033204+00:00'
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
@@ -107,9 +109,9 @@ target_organisms:
     evidence:
     - reference: PMID:25274120
       supports: SUPPORT
-      snippet: K31 is a novel Caulobacter isolate that has the ability to tolerate
-        copper and chlorophenols, and can grow at 4 ° C with a doubling time of 40
-        h.
+      snippet: K31 is a novel Caulobacter isolate that has the ability to
+        tolerate copper and chlorophenols, and can grow at 4 ° C with a doubling
+        time of 40 h.
       explanation: 'Auto-applied from literature query: backfill PMID:25274120'
     is_max_attainment: false
     growth_mode: BATCH
@@ -119,3 +121,10 @@ target_organisms:
       target: temperature
       level: 4.0
       level_unit: °C
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_595_CAULOBACTER_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006076
+  name: caulobacter_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

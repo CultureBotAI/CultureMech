@@ -268,3 +268,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MACROMONAS MEDIUM" to "macromonas_medium" for consistent
     matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_847_MACROMONAS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006654
+  name: macromonas_medium
+  notes: Same source medium number and matching ingredient/concentration signature.

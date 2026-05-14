@@ -10,28 +10,30 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product. Original FOODON mapping was FOODON:03316428 tryptone. Exact
-    synonyms from source normalization were pancreatic digest of casein and
-    casein peptone.
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and
+    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product. Original FOODON mapping was FOODON:03316428 tryptone.
+    Exact synonyms from source normalization were pancreatic digest of casein
+    and casein peptone.
 - preferred_term: Yeast extract
   concentration:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
   notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
     and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
-    formulation) commercial product. Original FOODON mapping was
-    FOODON:00002960 yeast extract.
+    formulation) commercial product. Original FOODON mapping was FOODON:00002960
+    yeast extract.
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -40,13 +42,14 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product. Exact synonyms from
-    source normalization were NaCl and table salt.
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
+    Medium (Luria-Bertani, Miller formulation) commercial product. Exact
+    synonyms from source normalization were NaCl and table salt.
 media_term:
   preferred_term: TOGO Medium M2314
   term:
@@ -113,12 +116,11 @@ target_organisms:
     evidence:
     - reference: PMID:16628448
       supports: SUPPORT
-      snippet: Utilization of these nutrients associated with the highest growth rate
-        of the culture was followed by simultaneous induction of enzymes
+      snippet: Utilization of these nutrients associated with the highest growth
+        rate of the culture was followed by simultaneous induction of enzymes
         involved in assimilation of a large group of other carbon sources
         including D-mannose, melibiose, D-galactose, L-fucose, L-rhamnose,
-        D-mannitol, amino sugars, trehalose, L-arabinose, glycerol, and
-        lactate.
+        D-mannitol, amino sugars, trehalose, L-arabinose, glycerol, and lactate.
       explanation: The article title and abstract directly identify growth of
         Escherichia coli MG1655 on LB medium. The CultureMech record is LB
         Miller liquid medium, so this is modeled as exact-parent evidence rather
@@ -127,10 +129,16 @@ target_organisms:
   evidence:
   - reference: PMID:16628448
     supports: SUPPORT
-    explanation: The source title states growth of Escherichia coli MG1655 on
-      LB medium and the abstract discusses the growth-rate phase of that
-      culture.
+    explanation: The source title states growth of Escherichia coli MG1655 on LB
+      medium and the abstract discusses the growth-rate phase of that culture.
   - reference: NCBI:GCF_000005845.2
     supports: SUPPORT
     explanation: NCBI lists RefSeq assembly GCF_000005845.2 and BioSample
       SAMN02604091 for Escherichia coli str. K-12 substr. MG1655.
+variant_children:
+- path: data/normalized_yaml/bacterial/lb_0_1x.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015465
+  name: LB_0.1x
+  notes: LB 0.1x decreases tryptone from 10 g/L to 1 g/L, yeast extract from 5
+    g/L to 0.5 g/L, and sodium chloride from 10 g/L to 0.5 g/L.

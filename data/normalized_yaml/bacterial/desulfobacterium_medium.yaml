@@ -339,14 +339,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
-    a pH below 6 (at least 30 min), then distributed in anoxic cultivation vials and
-    autoclaved under the same gas atmosphere. Solution B is autoclaved separately
-    under 80% N2 and 20% CO2 gas atmosphere. Solutions C and D are prepared under
-    100% N2 gas and filter-sterilized. Solution E is autoclaved under 100% N2 gas.
-    To complete the medium appropriate amounts of solutions B to E are added to the
-    sterile solution A in the sequence as indicated. Final pH of the medium should
-    be 7.0 – 7.2.
+  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to
+    reach a pH below 6 (at least 30 min), then distributed in anoxic cultivation
+    vials and autoclaved under the same gas atmosphere. Solution B is autoclaved
+    separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C and D are
+    prepared under 100% N2 gas and filter-sterilized. Solution E is autoclaved
+    under 100% N2 gas. To complete the medium appropriate amounts of solutions B
+    to E are added to the sterile solution A in the sequence as indicated. Final
+    pH of the medium should be 7.0 – 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
   description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
@@ -355,8 +355,8 @@ preparation_steps:
     all strains in the dark.'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -367,8 +367,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:53.882505Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:04.594407Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -380,6 +380,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.631975+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOBACTERIUM MEDIUM" to "desulfobacterium_medium"
-    for consistent matching
+  notes: Normalized name from "DESULFOBACTERIUM MEDIUM" to
+    "desulfobacterium_medium" for consistent matching
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/desulfotignum_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001490
+  name: desulfotignum_medium
+  notes: Reviewed Desulfobacterium medium as a concentration variant of
+    Desulfotignum medium with salinity, pyruvate, and sulfide concentration
+    axes.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed Desulfotignum/Desulfobacterium pair; child keeps the same defined
+  sulfate-reducer base, carbonate, trace elements, and vitamins but changes
+  NaCl, MgCl2, pyruvate, and sulfide concentrations.

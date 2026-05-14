@@ -184,7 +184,7 @@ def write_reports(findings: list[Finding], index: RecipeIndex, reports_dir: Path
     warnings = sum(1 for finding in findings if finding.severity == "WARNING")
 
     with OUT_TSV.open("w", newline="") as handle:
-        writer = csv.writer(handle, delimiter="\t")
+        writer = csv.writer(handle, delimiter="\t", lineterminator="\n")
         writer.writerow(["severity", "yaml_path", "field", "reference", "message"])
         for finding in findings:
             writer.writerow(

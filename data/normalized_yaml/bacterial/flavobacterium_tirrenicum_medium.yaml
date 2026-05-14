@@ -51,8 +51,8 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is
+    recommended for sporulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -71,6 +71,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.405481+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FLAVOBACTERIUM TIRRENICUM MEDIUM" to "flavobacterium_tirrenicum_medium"
-    for consistent matching
+  notes: Normalized name from "FLAVOBACTERIUM TIRRENICUM MEDIUM" to
+    "flavobacterium_tirrenicum_medium" for consistent matching
 kg_microbe_match: mediadive.medium:101
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_362_FLAVOBACTERIUM_TIRRENICUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005084
+  name: flavobacterium_tirrenicum_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 362; local
+    ingredient and concentration signatures match.

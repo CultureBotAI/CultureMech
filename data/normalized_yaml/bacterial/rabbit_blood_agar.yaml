@@ -22,9 +22,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Prepare Blood Agar Base from Difco 0045 according to directions on
-    the bottle (40.0 g/l). Sterilize and cool to 45°C. Aseptically add 5% sterile
-    defibrinated rabbit blood or sheep blood, mix well.
+  description: Prepare Blood Agar Base from Difco 0045 according to directions
+    on the bottle (40.0 g/l). Sterilize and cool to 45°C. Aseptically add 5%
+    sterile defibrinated rabbit blood or sheep blood, mix well.
 applications:
 - Microbial cultivation
 curation_history:
@@ -39,5 +39,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.462815+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RABBIT BLOOD AGAR" to "rabbit_blood_agar" for consistent
-    matching
+  notes: Normalized name from "RABBIT BLOOD AGAR" to "rabbit_blood_agar" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_646_RABBIT_BLOOD_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006192
+  name: rabbit_blood_agar
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -133,11 +133,12 @@ preparation_steps:
   description: Final pH 9.5
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without the Na2CO3, which can be sterilised separately
-    by autoclaving. 10 ml/l sterile methanol is added to the cooled medium. When preparing
-    liquid media cool the mineral salts solution and Na2CO3 to room temperature before
-    mixing. When preparing agar add 2.0 % agar to the mineral salts solution and autoclave.
-    Cool the Na2CO3 stock solution and agar to 50-55°C before mixing.
+  description: Prepare the medium without the Na2CO3, which can be sterilised
+    separately by autoclaving. 10 ml/l sterile methanol is added to the cooled
+    medium. When preparing liquid media cool the mineral salts solution and
+    Na2CO3 to room temperature before mixing. When preparing agar add 2.0 % agar
+    to the mineral salts solution and autoclave. Cool the Na2CO3 stock solution
+    and agar to 50-55°C before mixing.
 applications:
 - Microbial cultivation
 curation_history:
@@ -156,5 +157,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.554237+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOPHAGA ALCALICA MEDIUM" to "methylophaga_alcalica_medium"
-    for consistent matching
+  notes: Normalized name from "METHYLOPHAGA ALCALICA MEDIUM" to
+    "methylophaga_alcalica_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_976_METHYLOPHAGA_ALCALICA_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006934
+  name: methylophaga_alcalica_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

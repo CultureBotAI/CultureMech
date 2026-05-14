@@ -117,5 +117,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.689158+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BBL ACTINOMYCES BROTH" to "bbl_actinomyces_broth" for
-    consistent matching
+  notes: Normalized name from "BBL ACTINOMYCES BROTH" to "bbl_actinomyces_broth"
+    for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/bbl_actinomyces_broth.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000450
+  name: bbl_actinomyces_broth
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

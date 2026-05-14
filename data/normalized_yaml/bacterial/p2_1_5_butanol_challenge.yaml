@@ -117,13 +117,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:43.421560Z'
   curator: mediadb-import
@@ -141,8 +143,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:07.454251+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "P2, 1.5% butanol challenge" to "p2_1_5_butanol_challenge"
-    for consistent matching
+  notes: Normalized name from "P2, 1.5% butanol challenge" to
+    "p2_1_5_butanol_challenge" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 91
   term:
@@ -154,3 +156,14 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+parent_media:
+  path: data/normalized_yaml/bacterial/p2_1_butanol_challenge.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007438
+  name: p2_1_butanol_challenge
+  notes: Reviewed MediaDB P2 butanol challenge pair; both records share the same
+    P2 formulation and differ only in butanol challenge concentration.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- 1-Butanol increased from 98.4633 mM to 147.695 mM while the P2 challenge
+  medium base remains unchanged.

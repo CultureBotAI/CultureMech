@@ -176,4 +176,48 @@ curation_history:
 - timestamp: '2026-03-17T19:46:01.136892+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 18786" to "for_dsm_18786" for consistent matching
+  notes: Normalized name from "For DSM 18786" to "for_dsm_18786" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_88_modified_for_dsm_10039.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006722
+  name: medium_88_modified_for_dsm_10039
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    Medium 88/Sulfolobus source record.
+- path: data/normalized_yaml/bacterial/medium_88_modified_for_dsm_12421.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006723
+  name: medium_88_modified_for_dsm_12421
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    Medium 88/Sulfolobus source record.
+- path: data/normalized_yaml/bacterial/medium_88_modified_for_dsm_18247.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006724
+  name: medium_88_modified_for_dsm_18247
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    Medium 88/Sulfolobus source record.
+- path: data/normalized_yaml/bacterial/medium_88_modified_for_dsm_5389.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006727
+  name: medium_88_modified_for_dsm_5389
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    Medium 88/Sulfolobus source record.
+- path: data/normalized_yaml/bacterial/medium_88_modified_for_dsm_6482.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006728
+  name: medium_88_modified_for_dsm_6482
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    Medium 88/Sulfolobus source record.
+- path: data/normalized_yaml/bacterial/medium_88_modified_for_dsm_7519.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006729
+  name: medium_88_modified_for_dsm_7519
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    Medium 88/Sulfolobus source record.
+- path: data/normalized_yaml/specialized/sulfolobus_medium_anaerobic.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:015370
+  name: sulfolobus_medium_anaerobic
+  notes: Same ingredient and concentration signature; reviewed as duplicate
+    Medium 88/Sulfolobus source record.

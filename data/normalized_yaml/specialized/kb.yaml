@@ -51,3 +51,10 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015533'
 data_quality_flags:
 - has_unmapped_ingredients
+variant_children:
+- path: data/normalized_yaml/specialized/kb_half.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015534
+  name: KB-half
+  notes: 'KB-half halves all parsed KB components: Bacto peptone 10 to 5 g/L, K2HPO4
+    1.5 to 0.75 g/L, glycerol 15 to 7.5 g/L, and magnesium sulfate 0.6 to 0.3 g/L.'

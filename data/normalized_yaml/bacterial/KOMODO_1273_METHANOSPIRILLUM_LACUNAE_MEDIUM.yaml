@@ -356,8 +356,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:47.718270Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:32.989941Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -373,5 +373,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.964368+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOSPIRILLUM LACUNAE MEDIUM" to "methanospirillum_lacunae_medium"
-    for consistent matching
+  notes: Normalized name from "METHANOSPIRILLUM LACUNAE MEDIUM" to
+    "methanospirillum_lacunae_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/methanospirillum_lacunae_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000735
+  name: methanospirillum_lacunae_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1273; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1273; local
+  ingredient and concentration signatures match.

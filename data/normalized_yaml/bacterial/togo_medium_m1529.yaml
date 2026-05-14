@@ -79,8 +79,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:11.898468+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TOGO Medium M1529" to "togo_medium_m1529" for consistent
-    matching
+  notes: Normalized name from "TOGO Medium M1529" to "togo_medium_m1529" for
+    consistent matching
 solutions:
 - preferred_term: Na2CO3**
   composition: []
@@ -97,3 +97,14 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M1553_Methylobacterium_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008102
+  name: methylobacterium_medium
+  notes: Reviewed TOGO Methylobacterium medium pair; M1529 differs only in
+    MgSO4·7H2O concentration.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- MgSO4·7H2O decreased from 1 g/L to 0.5 g/L while the TOGO Methylobacterium
+  medium formulation remains unchanged.

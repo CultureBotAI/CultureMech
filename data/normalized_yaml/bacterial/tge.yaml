@@ -64,3 +64,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "TGE" to "tge" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1207_TGE.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003955
+  name: tge
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1207; local
+    ingredient and concentration signatures match.

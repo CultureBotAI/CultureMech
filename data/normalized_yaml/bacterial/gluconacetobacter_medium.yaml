@@ -63,9 +63,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: The ethanol and acetic acid are sterilized separately by filtration
-    (use filters resistant to these solvents) and added aseptically to the sterile
-    medium. The medium may be solidified by adding 15.0 g/l agar.
+  description: The ethanol and acetic acid are sterilized separately by
+    filtration (use filters resistant to these solvents) and added aseptically
+    to the sterile medium. The medium may be solidified by adding 15.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,5 +84,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.799459+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GLUCONACETOBACTER MEDIUM" to "gluconacetobacter_medium"
-    for consistent matching
+  notes: Normalized name from "GLUCONACETOBACTER MEDIUM" to
+    "gluconacetobacter_medium" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/JCM_J890_ACETOBACTER_EUROPAEUS_MEDIUM.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003239
+  name: acetobacter_europaeus_medium
+  notes: Reviewed Gluconacetobacter medium as a concentration variant of
+    Acetobacter europaeus medium with yeast extract, peptone, acetic acid, and
+    agar differences.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed Acetobacter/Gluconacetobacter pair; child keeps glucose and ethanol
+  unchanged, raises yeast extract and peptone, lowers acetic acid, and lowers
+  agar from 20 to 15 g/L.

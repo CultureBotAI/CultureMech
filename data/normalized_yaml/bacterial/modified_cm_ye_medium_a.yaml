@@ -113,6 +113,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:25.412202+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED CM+YE MEDIUM (A)" to "modified_cm_ye_medium_a"
-    for consistent matching
+  notes: Normalized name from "MODIFIED CM+YE MEDIUM (A)" to
+    "modified_cm_ye_medium_a" for consistent matching
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J59_CM_YE_MEDIUM.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002947
+  name: cm_ye_medium
+  notes: Reviewed JCM CM+YE medium pair; modified CM+YE medium A differs only in
+    NaCl concentration.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl decreased from 199.8 g/L to 149.85 g/L while CM+YE medium components and
+  pH remain unchanged.

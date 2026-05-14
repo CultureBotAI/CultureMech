@@ -71,5 +71,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.908326+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM FOR ERYTHROBACTER LONGUS" to "medium_for_erythrobacter_longus"
-    for consistent matching
+  notes: Normalized name from "MEDIUM FOR ERYTHROBACTER LONGUS" to
+    "medium_for_erythrobacter_longus" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_695_medium_FOR_ERYTHROBACTER_LONGUS.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006313
+  name: medium_for_erythrobacter_longus
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

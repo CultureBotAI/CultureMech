@@ -84,13 +84,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:44.835765Z'
   curator: mediadb-import
@@ -108,9 +110,9 @@ curation_history:
 - timestamp: '2026-03-17T19:46:04.563303+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "M9 with 6.03% zinc acetate and .05% cysteine HCl; Park
-    et al" to "m9_with_6_03_zinc_acetate_and_05_cysteine_hcl_park_et_al" for consistent
-    matching
+  notes: Normalized name from "M9 with 6.03% zinc acetate and .05% cysteine HCl;
+    Park et al" to "m9_with_6_03_zinc_acetate_and_05_cysteine_hcl_park_et_al"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 243
   term:
@@ -123,3 +125,15 @@ applications:
 - Metabolic modeling
 - Systems biology research
 high_metal: true
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/m9_with_0_67_zinc_acetate_and_05_cysteine_hcl_park_et_al.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007138
+  name: m9_with_0_67_zinc_acetate_and_05_cysteine_hcl_park_et_al
+  notes: MediaDB M9 Park zinc-dose grid; reviewed as concentration variant of
+    the lowest zinc-dose record.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Zinc Acetate concentration increased from 30.5239 mM to 274.715 mM; all other
+  parsed ingredient concentrations match the parent.

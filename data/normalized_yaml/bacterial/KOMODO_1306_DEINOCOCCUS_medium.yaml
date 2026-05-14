@@ -263,5 +263,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:39.272096+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DEINOCOCCUS medium" to "deinococcus_medium" for consistent
-    matching
+  notes: Normalized name from "DEINOCOCCUS medium" to "deinococcus_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/deinococcus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000768
+  name: deinococcus_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 1306; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1306; local
+  ingredient and concentration signatures match.

@@ -168,12 +168,14 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and
+    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -187,13 +189,14 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
+    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
+    formulation) commercial product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -202,12 +205,13 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
+    Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -243,8 +247,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize for 10 min by 121°C cool to 50 - 55°C. Add 100 ml Bacto Middelbrook
-    OADC enrichment Difco (see below) under aseptic conditions and mix thoroughly.
+  description: Sterilize for 10 min by 121°C cool to 50 - 55°C. Add 100 ml Bacto
+    Middelbrook OADC enrichment Difco (see below) under aseptic conditions and
+    mix thoroughly.
 - step_number: 2
   action: HEAT
   description: Final pH at 25°C 6.6 ± 0.2.
@@ -269,5 +274,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.721548+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MIDDLEBROCK 7H11 AGAR" to "middlebrock_7h11_agar" for
-    consistent matching
+  notes: Normalized name from "MIDDLEBROCK 7H11 AGAR" to "middlebrock_7h11_agar"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_911_MIDDLEBROCK_7H11_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006786
+  name: middlebrock_7h11_agar
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

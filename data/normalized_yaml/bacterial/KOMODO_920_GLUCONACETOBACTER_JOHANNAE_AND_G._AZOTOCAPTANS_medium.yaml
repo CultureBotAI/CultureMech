@@ -104,3 +104,15 @@ variant_children:
   name: dsm_13594_and_dsm_13595
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/gluconacetobacter_johannae_and_g_azotocaptans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002089
+  name: gluconacetobacter_johannae_and_g_azotocaptans_medium
+  notes: KOMODO record states DSMZ Medium 920 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

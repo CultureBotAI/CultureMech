@@ -129,4 +129,19 @@ curation_history:
 - timestamp: '2026-03-17T19:46:31.344259+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SW-10 Medium" to "sw_10_medium" for consistent matching
+  notes: Normalized name from "SW-10 Medium" to "sw_10_medium" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M629_SW-20_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:010029
+  name: sw_20_medium
+  notes: Both records are TOGO/NBRC liquid SW medium formulations; the child is
+    explicitly SW-10 and is a half-strength version of SW-20 across parsed
+    solute concentrations.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- 'SW-10 liquid medium halves the SW-20 salt and yeast extract concentrations: MgSO4
+  40.6 to 20.3 g/L, yeast extract 10 to 5 g/L, NaCl 156 to 78 g/L, CaCl2 0.66 to 0.33
+  g/L, MgCl2 26 to 13 g/L, KCl 4 to 2 g/L, NaHCO3 0.12 to 0.06 g/L, and NaBr 0.46
+  to 0.23 g/L.'

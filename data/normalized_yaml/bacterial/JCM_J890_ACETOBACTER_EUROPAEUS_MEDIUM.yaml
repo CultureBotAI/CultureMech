@@ -62,8 +62,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Separately filter-sterilize acetic acid and ethanol (use filter resistant
-    to these solvents), and aseptically add to the sterile medium.
+  description: Separately filter-sterilize acetic acid and ethanol (use filter
+    resistant to these solvents), and aseptically add to the sterile medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -82,5 +82,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:32.724431+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACETOBACTER EUROPAEUS MEDIUM" to "acetobacter_europaeus_medium"
-    for consistent matching
+  notes: Normalized name from "ACETOBACTER EUROPAEUS MEDIUM" to
+    "acetobacter_europaeus_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/gluconacetobacter_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000894
+  name: gluconacetobacter_medium
+  notes: Reviewed Acetobacter/Gluconacetobacter pair; child keeps glucose and
+    ethanol unchanged, raises yeast extract and peptone, lowers acetic acid, and
+    lowers agar from 20 to 15 g/L.

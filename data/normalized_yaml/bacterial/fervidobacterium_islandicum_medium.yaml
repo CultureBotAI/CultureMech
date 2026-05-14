@@ -163,12 +163,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except glucose and sulfide), adjust pH at room
-    temperature to 7.0 and sparge medium with 100% N2 gas for 30 - 45 min to make
-    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add glucose and sulfide from sterile anoxic
-    stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and
-    adjust to 7.0, if necessary.
+  description: Dissolve ingredients (except glucose and sulfide), adjust pH at
+    room temperature to 7.0 and sparge medium with 100% N2 gas for 30 - 45 min
+    to make it anoxic. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add glucose and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to
+    inoculation check pH and adjust to 7.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.
@@ -190,5 +190,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.052710+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FERVIDOBACTERIUM ISLANDICUM MEDIUM" to "fervidobacterium_islandicum_medium"
-    for consistent matching
+  notes: Normalized name from "FERVIDOBACTERIUM ISLANDICUM MEDIUM" to
+    "fervidobacterium_islandicum_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_501_FERVIDOBACTERIUM_ISLANDICUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005656
+  name: fervidobacterium_islandicum_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

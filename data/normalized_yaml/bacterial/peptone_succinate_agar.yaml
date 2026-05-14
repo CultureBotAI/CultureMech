@@ -98,5 +98,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.531758+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PEPTONE-SUCCINATE AGAR" to "peptone_succinate_agar"
-    for consistent matching
+  notes: Normalized name from "PEPTONE-SUCCINATE AGAR" to
+    "peptone_succinate_agar" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_653_Peptone-SUCCINATE_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006230
+  name: peptone_succinate_agar
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

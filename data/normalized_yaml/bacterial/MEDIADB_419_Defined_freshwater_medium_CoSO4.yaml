@@ -273,13 +273,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:46.449514Z'
   curator: mediadb-import
@@ -293,8 +295,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:50.221785Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:47.782087Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -306,8 +308,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:06.086678+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "'Defined freshwater medium (CoSO4" to "defined_freshwater_medium_coso4"
-    for consistent matching
+  notes: Normalized name from "'Defined freshwater medium (CoSO4" to
+    "defined_freshwater_medium_coso4" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 419
   term:
@@ -319,3 +321,11 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/MEDIADB_421_Defined_freshwater_medium_CoSO4.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007323
+  name: defined_freshwater_medium_coso4
+  notes: Nitrate increased from 5 mM to 20 mM while the CoSO4 defined freshwater
+    formulation remains unchanged.

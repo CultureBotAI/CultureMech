@@ -81,5 +81,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:13.622785+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/10 Nutrient Agar NO. 2" to "1_10_nutrient_agar_no_2"
-    for consistent matching
+  notes: Normalized name from "1/10 Nutrient Agar NO. 2" to
+    "1_10_nutrient_agar_no_2" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M15_Nutrient_Agar_NO._2.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008152
+  name: nutrient_agar_no_2
+  notes: Both records are TOGO/NBRC Nutrient Agar No. 2 formulations; the child
+    is explicitly named 1/10 Nutrient Agar No. 2.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- NaCl decreases from 5 g/L to 0.5 g/L, beef extract from 10 g/L to 1 g/L, and
+  peptone from 10 g/L to 1 g/L; agar remains 15 g/L.

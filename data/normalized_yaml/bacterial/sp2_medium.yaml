@@ -110,8 +110,8 @@ preparation_steps:
   description: If natural sea water is used, the pH need not be adjusted.
 - step_number: 3
   action: AUTOCLAVE
-  description: To prevent precipitation, CaCl2 and NaHCO3 are autoclaved each as separate
-    stock solutions in 10 ml distilled water.
+  description: To prevent precipitation, CaCl2 and NaHCO3 are autoclaved each as
+    separate stock solutions in 10 ml distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -130,4 +130,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.935728+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SP2 MEDIUM" to "sp2_medium" for consistent matching
+  notes: Normalized name from "SP2 MEDIUM" to "sp2_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_405_SP2_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005225
+  name: sp2_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 405; local
+    ingredient and concentration signatures match.

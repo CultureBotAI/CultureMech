@@ -84,9 +84,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately and mix when cool. The medium
-    may be solidified by adding 20 g/l agar to solution A. Solutions A and B are then
-    cooled to 50°C, mixed and plates poured immediately.
+  description: Autoclave solutions A and B separately and mix when cool. The
+    medium may be solidified by adding 20 g/l agar to solution A. Solutions A
+    and B are then cooled to 50°C, mixed and plates poured immediately.
 - step_number: 2
   action: MIX
   description: Final pH of the medium is 9.5.
@@ -108,6 +108,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.012968+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AQUISALIMONAS MEDIUM" to "aquisalimonas_medium" for
-    consistent matching
+  notes: Normalized name from "AQUISALIMONAS MEDIUM" to "aquisalimonas_medium"
+    for consistent matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003902
+  name: aquisalimonas_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1182; local
+    ingredient and concentration signatures match.

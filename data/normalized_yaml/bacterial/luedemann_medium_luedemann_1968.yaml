@@ -92,5 +92,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.220881+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LUEDEMANN MEDIUM (LUEDEMANN; 1968)" to "luedemann_medium_luedemann_1968"
-    for consistent matching
+  notes: Normalized name from "LUEDEMANN MEDIUM (LUEDEMANN; 1968)" to
+    "luedemann_medium_luedemann_1968" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_877_LUEDEMANN_medium_LUEDEMANN_1968.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006714
+  name: luedemann_medium_luedemann_1968
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

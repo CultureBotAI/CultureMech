@@ -115,5 +115,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:59.030450+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALCANIVORAX BORKUMENSIS MEDIUM" to "alcanivorax_borkumensis_medium"
-    for consistent matching
+  notes: Normalized name from "ALCANIVORAX BORKUMENSIS MEDIUM" to
+    "alcanivorax_borkumensis_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/alcanivorax_borkumensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001953
+  name: alcanivorax_borkumensis_medium
+  notes: KOMODO record states DSMZ Medium 809 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

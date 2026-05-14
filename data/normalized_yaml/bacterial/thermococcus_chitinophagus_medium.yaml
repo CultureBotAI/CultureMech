@@ -322,10 +322,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without Na2S x 9 H2O and NaHCO3, boil and cool under
-    N2. Add the NaHCO3 to the cooled medium and adjust the pH to 6.7. Dispense into
-    Hungate tubes or serum bottles under N2 and autoclave. Reduce the medium before
-    use from a sterile stock solution of neutralised Na2S x 9 H2O.
+  description: Prepare the medium without Na2S x 9 H2O and NaHCO3, boil and cool
+    under N2. Add the NaHCO3 to the cooled medium and adjust the pH to 6.7.
+    Dispense into Hungate tubes or serum bottles under N2 and autoclave. Reduce
+    the medium before use from a sterile stock solution of neutralised Na2S x 9
+    H2O.
 - step_number: 2
   action: FILTER_STERILIZE
   description: 'The chitin solution is prepared as follows: mix 20 g chitin (practical
@@ -337,8 +338,8 @@ preparation_steps:
     Filter and wash with 3 litres of distilled water to remove KCl.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -361,5 +362,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.655980+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOCOCCUS CHITINOPHAGUS MEDIUM" to "thermococcus_chitinophagus_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOCOCCUS CHITINOPHAGUS MEDIUM" to
+    "thermococcus_chitinophagus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_766_THERMOCOCCUS_CHITINOPHAGUS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006420
+  name: thermococcus_chitinophagus_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -78,3 +78,10 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015696'
 data_quality_flags:
 - has_unmapped_ingredients
+variant_children:
+- path: data/normalized_yaml/specialized/r2a_high_k2hpo4.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015691
+  name: R2A_high_K2HPO4
+  notes: Potassium phosphate dibasic increased from 50 micromolar to 1.75 mM
+    while the R2A formulation remains unchanged.

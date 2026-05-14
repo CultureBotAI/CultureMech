@@ -145,8 +145,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:29.333229+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified Halobacteria Medium" to "modified_halobacteria_medium"
-    for consistent matching
+  notes: Normalized name from "Modified Halobacteria Medium" to
+    "modified_halobacteria_medium" for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Na2CO3 solution
@@ -156,3 +156,14 @@ solutions:
     unit: VARIABLE
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M159_Halobacteria_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008151
+  name: halobacteria_medium
+  notes: Reviewed TOGO modified Halobacteria medium pair; modified record
+    differs only in MgSO4 hydrate concentration.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- MgSO4・7H2O decreased from 20 g/L to 2 g/L while the TOGO liquid Halobacteria
+  medium formulation remains unchanged.

@@ -99,9 +99,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add nicotinic acid to the given amount of water, boil until dissolved
-    and cool to room temperature. Add the other substances, adjust pH to 8.2 and distribute
-    under 100% nitrogen atmosphere.
+  description: Add nicotinic acid to the given amount of water, boil until
+    dissolved and cool to room temperature. Add the other substances, adjust pH
+    to 8.2 and distribute under 100% nitrogen atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -120,5 +120,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:12.053490+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NICOTINIC ACID MEDIUM" to "nicotinic_acid_medium" for
-    consistent matching
+  notes: Normalized name from "NICOTINIC ACID MEDIUM" to "nicotinic_acid_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_152_NICOTINIC_ACID_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004175
+  name: nicotinic_acid_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 152; local
+    ingredient and concentration signatures match.

@@ -91,3 +91,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SPIRILLUM medium" to "spirillum_medium" for consistent
     matching
+parent_media:
+  path: data/normalized_yaml/bacterial/spirillum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001483
+  name: spirillum_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

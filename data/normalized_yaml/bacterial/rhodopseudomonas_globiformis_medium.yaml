@@ -202,9 +202,9 @@ preparation_steps:
   description: 'Adjust pH to 4.9, then add:'
 - step_number: 2
   action: COOL
-  description: "Sterilize in screw-capped bottles. Cool to room temperature; to each\
-    \ 100 ml medium add\r\n0.2 ml of a sterile 10% Na<sub>2</sub>S<sub>2</sub>0<sub>3\
-    \ </sub>solution. Incubate in the light using a tungsten lamp"
+  description: "Sterilize in screw-capped bottles. Cool to room temperature; to each
+    100 ml medium add\r\n0.2 ml of a sterile 10% Na<sub>2</sub>S<sub>2</sub>0<sub>3
+    </sub>solution. Incubate in the light using a tungsten lamp"
 applications:
 - Microbial cultivation
 curation_history:
@@ -223,5 +223,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.295038+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RHODOPSEUDOMONAS GLOBIFORMIS MEDIUM" to "rhodopseudomonas_globiformis_medium"
-    for consistent matching
+  notes: Normalized name from "RHODOPSEUDOMONAS GLOBIFORMIS MEDIUM" to
+    "rhodopseudomonas_globiformis_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_25_RHODOPSEUDOMONAS_GLOBIFORMIS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004663
+  name: rhodopseudomonas_globiformis_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 25; local
+    ingredient and concentration signatures match.

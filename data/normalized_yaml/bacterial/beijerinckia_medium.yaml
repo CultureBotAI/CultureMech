@@ -115,8 +115,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O)
-    and mix after cooling.
+  description: Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml
+    H2O) and mix after cooling.
 applications:
 - Microbial cultivation
 curation_history:
@@ -135,5 +135,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.437156+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BEIJERINCKIA MEDIUM" to "beijerinckia_medium" for consistent
-    matching
+  notes: Normalized name from "BEIJERINCKIA MEDIUM" to "beijerinckia_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_111_BEIJERINCKIA_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003822
+  name: beijerinckia_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

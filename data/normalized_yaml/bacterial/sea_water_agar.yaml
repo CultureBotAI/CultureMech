@@ -107,14 +107,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve beef extract and peptone by heating in tap water, adjust pH
-    to 7.8 and boil for 10 min. Readjust pH to 7.3. Add agar and autoclave at 121°C
-    for 20 min. Directly after autoclaving, add warm (55°C) sterile sea water. Liquid
-    medium without agar should be combined when cooled to room temperature.
+  description: Dissolve beef extract and peptone by heating in tap water, adjust
+    pH to 7.8 and boil for 10 min. Readjust pH to 7.3. Add agar and autoclave at
+    121°C for 20 min. Directly after autoclaving, add warm (55°C) sterile sea
+    water. Liquid medium without agar should be combined when cooled to room
+    temperature.
 - step_number: 2
   action: STORE
-  description: Natural sea water is stored in the dark for at least three weeks to
-    "age". If natural sea water is not available use artificial sea water.
+  description: Natural sea water is stored in the dark for at least three weeks
+    to "age". If natural sea water is not available use artificial sea water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -133,5 +134,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.225952+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SEA WATER AGAR" to "sea_water_agar" for consistent
-    matching
+  notes: Normalized name from "SEA WATER AGAR" to "sea_water_agar" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_246_SEA_WATER_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004619
+  name: sea_water_agar
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 246; local
+    ingredient and concentration signatures match.

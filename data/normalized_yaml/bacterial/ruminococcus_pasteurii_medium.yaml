@@ -223,17 +223,17 @@ preparation_steps:
     growth of some strains at the beginning.'
 - step_number: 2
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate and sulfide, then sparge medium
-    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense
-    medium in anoxic Hungate-type tubes or serum vials under the same gas atmosphere
-    and autoclave. Add sulfide from sterile anoxic stock solutions prepared under
-    100% N2 gas and carbonate from a sterile anoxic stock solution prepared under
-    80% N2 and 20% CO2 gas mixture. Prior to use adjust pH of complete medium to 7.2
-    - 7.5.
+  description: Dissolve ingredients except carbonate and sulfide, then sparge
+    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it
+    anoxic. Dispense medium in anoxic Hungate-type tubes or serum vials under
+    the same gas atmosphere and autoclave. Add sulfide from sterile anoxic stock
+    solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
+    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to use
+    adjust pH of complete medium to 7.2 - 7.5.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -252,5 +252,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.760792+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RUMINOCOCCUS PASTEURII MEDIUM" to "ruminococcus_pasteurii_medium"
-    for consistent matching
+  notes: Normalized name from "RUMINOCOCCUS PASTEURII MEDIUM" to
+    "ruminococcus_pasteurii_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_300_RUMINOCOCCUS_PASTEURII_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004788
+  name: ruminococcus_pasteurii_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 300; local
+    ingredient and concentration signatures match.

@@ -99,5 +99,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:24.260677+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINITOGA MEDIUM" to "marinitoga_medium" for consistent
-    matching
+  notes: Normalized name from "MARINITOGA MEDIUM" to "marinitoga_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/JCM_J997_MARINITOGA_MEDIUM.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003346
+  name: marinitoga_medium
+  notes: Reviewed same-name JCM Marinitoga pair; child keeps pH 7.0 and the same
+    sea-salt/PIPES/yeast-extract/tryptone/reducing-agent base but lowers glucose
+    from 14 to 2.5 g/L and reducing agents from 10 to 0.5 g/L, with small
+    rounded base concentrations.

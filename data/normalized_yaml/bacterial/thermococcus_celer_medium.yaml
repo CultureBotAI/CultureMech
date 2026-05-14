@@ -192,5 +192,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.342925+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOCOCCUS CELER MEDIUM" to "thermococcus_celer_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOCOCCUS CELER MEDIUM" to
+    "thermococcus_celer_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_266_THERMOCOCCUS_CELER_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004669
+  name: thermococcus_celer_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 266; local
+    ingredient and concentration signatures match.

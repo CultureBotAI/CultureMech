@@ -80,5 +80,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:11.638834+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TOGO Medium M1491" to "togo_medium_m1491" for consistent
-    matching
+  notes: Normalized name from "TOGO Medium M1491" to "togo_medium_m1491" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M1540_Enriched_Cytophaga_Agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008088
+  name: enriched_cytophaga_agar
+  notes: Reviewed source-local Enriched Cytophaga Agar concentration variant;
+    child shares the parsed base formulation with lower tryptone and beef
+    extract concentrations.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed TOGO Enriched Cytophaga Agar source-local pair; child keeps water,
+  yeast extract, sodium acetate, and agar unchanged but lowers Bacto Tryptone
+  from 2.0 to 0.5 g/L and beef extract from 0.5 to 0.2 g/L.

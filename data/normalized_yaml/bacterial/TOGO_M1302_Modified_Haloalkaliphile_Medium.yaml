@@ -148,8 +148,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:10.300637+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified Haloalkaliphile Medium" to "modified_haloalkaliphile_medium"
-    for consistent matching
+  notes: Normalized name from "Modified Haloalkaliphile Medium" to
+    "modified_haloalkaliphile_medium" for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Solution A
@@ -170,3 +170,17 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M301_Haloalkaliphile_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009534
+  name: haloalkaliphile_medium
+  notes: Reviewed source-local Modified Haloalkaliphile concentration variant;
+    child shares the parent formulation with carbonate concentration as the
+    curated axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed TOGO Haloalkaliphile pair; child keeps MgSO4, NaCl, KCl, CaSO4,
+  sodium glutamate, citrate, yeast extract, and casamino acids unchanged while
+  Na2CO3 increases from 8 to 80 g/L; water amount differs by source
+  normalization.

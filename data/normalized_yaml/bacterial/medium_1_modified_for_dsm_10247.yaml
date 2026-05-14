@@ -63,5 +63,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:33.763506+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 1 MODIFIED FOR DSM 10247" to "medium_1_modified_for_dsm_10247"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 1 MODIFIED FOR DSM 10247" to
+    "medium_1_modified_for_dsm_10247" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_1_NUTRIENT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004261
+  name: nutrient_agar
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
+  1 source record.

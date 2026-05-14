@@ -218,3 +218,13 @@ variant_children:
   name: for_dsm_24766
   notes: Same ingredient and concentration signature; review as possible
     duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/modified_biebl_and_pfennigs_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000501
+  name: modified_biebl_and_pfennigs_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

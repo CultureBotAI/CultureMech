@@ -149,8 +149,8 @@ preparation_steps:
   description: Final pH 5.0-5.8.
 - step_number: 2
   action: MIX
-  description: 20-30% methane is added to the gas phase. The strain should be grown
-    with shaking.
+  description: 20-30% methane is added to the gas phase. The strain should be
+    grown with shaking.
 - step_number: 3
   action: MIX
   description: pH 5.8
@@ -176,5 +176,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.700315+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOCAPSA AUREA MEDIUM" to "methylocapsa_aurea_medium"
-    for consistent matching
+  notes: Normalized name from "METHYLOCAPSA AUREA MEDIUM" to
+    "methylocapsa_aurea_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1323_METHYLOCAPSA_AUREA_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004079
+  name: methylocapsa_aurea_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1323; local
+    ingredient and concentration signatures match.

@@ -79,9 +79,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 7.4. After sterilization add 100 ml of a filter-sterilized
-    solution of 1 mM diethyl phosphonate (Eastman Organic Chemical Div., Rochester,
-    N.Y., USA) or of 20 mM phosphate buffer.
+  description: Adjust pH to 7.4. After sterilization add 100 ml of a
+    filter-sterilized solution of 1 mM diethyl phosphonate (Eastman Organic
+    Chemical Div., Rochester, N.Y., USA) or of 20 mM phosphate buffer.
 applications:
 - Microbial cultivation
 curation_history:
@@ -100,5 +100,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.201147+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DIETHYL PHOSPHONATE MEDIUM" to "diethyl_phosphonate_medium"
-    for consistent matching
+  notes: Normalized name from "DIETHYL PHOSPHONATE MEDIUM" to
+    "diethyl_phosphonate_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_239_DIETHYL_PHOSPHONATE_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004612
+  name: diethyl_phosphonate_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 239; local
+    ingredient and concentration signatures match.

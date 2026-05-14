@@ -156,5 +156,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.120609+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LACTOBACILLUS MEDIUM II" to "lactobacillus_medium_ii"
-    for consistent matching
+  notes: Normalized name from "LACTOBACILLUS MEDIUM II" to
+    "lactobacillus_medium_ii" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_93_LACTOBACILLUS_medium_II.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006867
+  name: lactobacillus_medium_ii
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

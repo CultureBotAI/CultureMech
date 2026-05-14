@@ -136,5 +136,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:43.859743+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM AMINOBUTYRICUM medium" to "clostridium_aminobutyricum_medium"
-    for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM AMINOBUTYRICUM medium" to
+    "clostridium_aminobutyricum_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/clostridium_aminobutyricum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001383
+  name: clostridium_aminobutyricum_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 286; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 286; local
+  ingredient and concentration signatures match.

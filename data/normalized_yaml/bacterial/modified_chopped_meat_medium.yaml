@@ -124,13 +124,13 @@ preparation_steps:
   description: 'Boil and cool medium under 80% N2, 10% H2, 10% CO2, and add:'
 - step_number: 3
   action: POUR_PLATES
-  description: Adjust medium for final pH 7.0. Anaerobically dispense 7 ml into tubes
-    containing meat particles (use 1 part meat to 5 parts fluid) under the same gas
-    phase.
+  description: Adjust medium for final pH 7.0. Anaerobically dispense 7 ml into
+    tubes containing meat particles (use 1 part meat to 5 parts fluid) under the
+    same gas phase.
 - step_number: 4
   action: STORE
-  description: Store solution in brown bottle under refrigeration. Discard after one
-    month.
+  description: Store solution in brown bottle under refrigeration. Discard after
+    one month.
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave at 121°C for 15 min.
@@ -160,5 +160,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.146274+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED CHOPPED MEAT MEDIUM" to "modified_chopped_meat_medium"
-    for consistent matching
+  notes: Normalized name from "MODIFIED CHOPPED MEAT MEDIUM" to
+    "modified_chopped_meat_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_797_MODIFIED_CHOPPED_MEAT_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006508
+  name: modified_chopped_meat_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.
