@@ -27,7 +27,7 @@ from culturemech.visualization.ingredient_umap_generator import IngredientUMAPGe
 
 _REPO_ROOT = Path(__file__).parent.parent
 
-_EMBEDDINGS_FILENAME = "DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_2026-02-01_05_54_01.tsv.gz"
+_EMBEDDINGS_FILENAME = "DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v2_2026-04-25_20_44_08.tsv.gz"
 # Prefer local data/embeddings/; fall back to sibling CommunityMech location
 _LOCAL_EMBEDDINGS = _REPO_ROOT / "data" / "embeddings" / _EMBEDDINGS_FILENAME
 _COMMUNITYMECH_EMBEDDINGS = (

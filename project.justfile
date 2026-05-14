@@ -1889,7 +1889,7 @@ help:
 # ================================================================
 
 # Default path to KG-Microbe embeddings (local copy in data/embeddings/)
-kg_microbe_embeddings := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CultureMech/data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_2026-02-01_05_54_01.tsv.gz"
+kg_microbe_embeddings := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CommunityMech/CommunityMech/data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v2_2026-04-25_20_44_08.tsv.gz"
 
 [group('Visualization')]
 gen-media-umap embeddings_path=kg_microbe_embeddings:
