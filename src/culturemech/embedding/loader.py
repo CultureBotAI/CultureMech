@@ -5,6 +5,7 @@ Loads embeddings from TSV.gz file and caches as pickle for fast reloading.
 """
 
 import gzip
+import hashlib
 import pickle
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -44,9 +45,13 @@ class EmbeddingLoader:
 
         cache_dir.mkdir(exist_ok=True)
 
-        # Load from cache if available
+        # Load from cache if available. Cache filename is keyed on
+        # (embedding source identity, prefix set), so bumping the source
+        # file (e.g. 2026-02-01 → 2026-04-25) automatically misses the
+        # cache without requiring manual `rm -rf .umap_cache/`.
+        cache_file = cache_dir / EmbeddingLoader._cache_key(embeddings_path, node_prefixes)
         if not force_reload:
-            embeddings = EmbeddingLoader._try_load_from_cache(cache_dir, node_prefixes)
+            embeddings = EmbeddingLoader._try_load_from_cache(cache_file)
             if embeddings is not None:
                 print(f"✓ Loaded {len(embeddings):,} embeddings from cache")
                 return embeddings
@@ -56,18 +61,33 @@ class EmbeddingLoader:
         embeddings = EmbeddingLoader._load_from_source(embeddings_path, node_prefixes)
 
         # Save to cache
-        EmbeddingLoader._save_to_cache(cache_dir, embeddings, node_prefixes)
+        EmbeddingLoader._save_to_cache(cache_file, embeddings)
 
         print(f"✓ Loaded {len(embeddings):,} embeddings")
         return embeddings
 
     @staticmethod
-    def _try_load_from_cache(
-        cache_dir: Path, node_prefixes: List[str]
-    ) -> Optional[Dict[str, np.ndarray]]:
-        """Try to load embeddings from pickle cache."""
-        cache_file = cache_dir / f"{'_'.join(sorted(node_prefixes))}_embeddings.pkl"
+    def _cache_key(embeddings_path: Path, node_prefixes: List[str]) -> str:
+        """Pickle filename keyed on embedding source identity + prefix set.
 
+        Identity is the basename plus a (size, mtime) fingerprint — cheap and
+        sensitive enough to detect a swap between dated artifacts of the same
+        embedding family.
+        """
+        try:
+            stat = embeddings_path.stat()
+            fp = f"{stat.st_size}-{int(stat.st_mtime)}"
+        except FileNotFoundError:
+            fp = "missing"
+        prefix_tag = "_".join(sorted(node_prefixes))
+        digest = hashlib.sha1(
+            f"{embeddings_path.name}|{fp}|{prefix_tag}".encode()
+        ).hexdigest()[:12]
+        return f"{prefix_tag}__{digest}_embeddings.pkl"
+
+    @staticmethod
+    def _try_load_from_cache(cache_file: Path) -> Optional[Dict[str, np.ndarray]]:
+        """Try to load embeddings from a pickle cache file."""
         if not cache_file.exists():
             return None
 
@@ -116,11 +136,10 @@ class EmbeddingLoader:
 
     @staticmethod
     def _save_to_cache(
-        cache_dir: Path, embeddings: Dict[str, np.ndarray], node_prefixes: List[str]
+        cache_file: Path, embeddings: Dict[str, np.ndarray]
     ) -> None:
-        """Save embeddings to pickle cache."""
-        cache_file = cache_dir / f"{'_'.join(sorted(node_prefixes))}_embeddings.pkl"
-
+        """Save embeddings to pickle cache. Cache filename is provided by
+        the caller (already keyed on source identity + prefix set)."""
         try:
             with open(cache_file, "wb") as f:
                 pickle.dump(embeddings, f, protocol=pickle.HIGHEST_PROTOCOL)
