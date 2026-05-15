@@ -338,8 +338,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:42.018580Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:39.933940Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -351,6 +351,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:57.114365+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPOROBACTER medium" to "sporobacter_medium" for consistent
-    matching
+  notes: Normalized name from "SPOROBACTER medium" to "sporobacter_medium" for
+    consistent matching
 ph_value: 7.0
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_711a_EUBACTERIUM_AGGREGANS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006349
+  name: eubacterium_aggregans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/eubacterium_aggregans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001850
+  name: eubacterium_aggregans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

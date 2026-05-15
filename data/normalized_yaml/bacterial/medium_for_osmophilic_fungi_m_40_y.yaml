@@ -62,6 +62,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:14.637547+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM FOR OSMOPHILIC FUNGI (M 40 Y)" to "medium_for_osmophilic_fungi_m_40_y"
-    for consistent matching
+  notes: Normalized name from "MEDIUM FOR OSMOPHILIC FUNGI (M 40 Y)" to
+    "medium_for_osmophilic_fungi_m_40_y" for consistent matching
 kg_microbe_match: mediadive.medium:187
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_187_medium_FOR_OSMOPHILIC_FUNGI_M_40_Y.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004211
+  name: medium_for_osmophilic_fungi_m_40_y
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 187; local
+    ingredient and concentration signatures match.

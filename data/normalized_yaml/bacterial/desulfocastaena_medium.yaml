@@ -350,15 +350,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach\
-    \ a pH below 6 (at least 30 min), then distributed under the same gas atmosphere\
-    \ into anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is\
-    \ autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C and\
-    \ F are autoclaved under 100% N2 gas.\r\nSolutions D and E are prepared under\
-    \ 100% N2 gas and sterilized by filtration. The pyrocatechol stock solution has\
-    \ to be prepared always freshly prior to use. To complete the medium appropriate\
-    \ amounts of the solutions B to F are added to the sterile solution A in the sequence\
-    \ as indicated. Final pH of the medium should be at 6.9 - 7.1."
+  description: "Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at least 30 min), then distributed under the same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved
+    separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C and F are autoclaved
+    under 100% N2 gas.\r\nSolutions D and E are prepared under 100% N2 gas and sterilized
+    by filtration. The pyrocatechol stock solution has to be prepared always freshly
+    prior to use. To complete the medium appropriate amounts of the solutions B to
+    F are added to the sterile solution A in the sequence as indicated. Final pH of
+    the medium should be at 6.9 - 7.1."
 - step_number: 2
   action: FILTER_STERILIZE
   description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
@@ -366,8 +366,8 @@ preparation_steps:
     growth of some strains at the beginning. For transfers use 10 - 20% inoculum.'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -378,8 +378,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:37.979130Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:18.047026Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -395,5 +395,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.685304+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOCASTAENA MEDIUM" to "desulfocastaena_medium"
-    for consistent matching
+  notes: Normalized name from "DESULFOCASTAENA MEDIUM" to
+    "desulfocastaena_medium" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_385_DESULFOBACTERIUM_CATECHOLICUM_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005161
+  name: desulfobacterium_catecholicum_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

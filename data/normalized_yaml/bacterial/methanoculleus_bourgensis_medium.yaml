@@ -110,14 +110,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine, carbonate and sulfide. Sparge
-    medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
-    Add and dissolve cysteine, then dispense medium under same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave.
-    Add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20%
-    CO2 gas mixture and sulfide from a sterile anoxic stock solution prepared under
-    100% N2 gas. Prior to use check pH of complete medium and adjust to 6.8 - 7.0,
-    if necessary.
+  description: Dissolve ingredients except cysteine, carbonate and sulfide.
+    Sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it
+    anoxic. Add and dissolve cysteine, then dispense medium under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials to 30% of their
+    volume and autoclave. Add carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture and sulfide from a sterile
+    anoxic stock solution prepared under 100% N2 gas. Prior to use check pH of
+    complete medium and adjust to 6.8 - 7.0, if necessary.
 - step_number: 2
   action: MIX
   description: 'Note: After growth has started add sterile 80% H2 and 20% CO2 gas
@@ -140,5 +140,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.108070+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOCULLEUS BOURGENSIS MEDIUM" to "methanoculleus_bourgensis_medium"
-    for consistent matching
+  notes: Normalized name from "METHANOCULLEUS BOURGENSIS MEDIUM" to
+    "methanoculleus_bourgensis_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/methanogenium_bourgense_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005026
+  name: methanogenium_bourgense_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -81,9 +81,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: After autoclaving add a lactose solution (sterilized by filtration)
-    up to a concentration of 8.0 g/l, and 1.2 ml 1M CaCl2 x 2 H2O. Adjust pH to 7.15
-    ± 0.05.
+  description: After autoclaving add a lactose solution (sterilized by
+    filtration) up to a concentration of 8.0 g/l, and 1.2 ml 1M CaCl2 x 2 H2O.
+    Adjust pH to 7.15 ± 0.05.
 applications:
 - Microbial cultivation
 curation_history:
@@ -102,5 +102,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.556044+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "M17 MEDIUM (modified)" to "m17_medium_modified" for
-    consistent matching
+  notes: Normalized name from "M17 MEDIUM (modified)" to "m17_medium_modified"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_659_M17_medium_modified.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006236
+  name: m17_medium_modified
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

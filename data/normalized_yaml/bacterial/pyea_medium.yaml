@@ -62,5 +62,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.417676+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYEA MEDIUM" to "pyea_medium" for consistent matching
+  notes: Normalized name from "PYEA MEDIUM" to "pyea_medium" for consistent
+    matching
 kg_microbe_match: mediadive.medium:101
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_364_PYEA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005087
+  name: pyea_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 364; local
+    ingredient and concentration signatures match.

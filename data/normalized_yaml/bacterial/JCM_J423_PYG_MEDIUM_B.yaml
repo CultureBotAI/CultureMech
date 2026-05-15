@@ -116,4 +116,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:29.079975+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYG MEDIUM (B)" to "pyg_medium_b" for consistent matching
+  notes: Normalized name from "PYG MEDIUM (B)" to "pyg_medium_b" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/pyg_medium_c.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002806
+  name: pyg_medium_c
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/pyg_medium_d.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002913
+  name: pyg_medium_d
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

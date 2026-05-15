@@ -63,7 +63,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:37.223313+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PARACOCCUS HALODENITRIFICANS medium" to "paracoccus_halodenitrificans_medium"
-    for consistent matching
+  notes: Normalized name from "PARACOCCUS HALODENITRIFICANS medium" to
+    "paracoccus_halodenitrificans_medium" for consistent matching
 ph_value: 7.0
 kg_microbe_match: mediadive.medium:101
+parent_media:
+  path: data/normalized_yaml/bacterial/paracoccus_halodenitrificans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000588
+  name: paracoccus_halodenitrificans_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 114; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 114; local
+  ingredient and concentration signatures match.

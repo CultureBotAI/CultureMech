@@ -307,10 +307,10 @@ preparation_steps:
     of N2-CO2 (80:20, v/v), then add the following solutions (filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: Distribute the medium into culture vessels under the same gas mixture
-    and seal with butyl rubber stoppers. Prior to inoculation, reduce the medium with
-    0.025% L-cysteine x HCl x H2O and 0.025% Na2S x 9H2O (autoclaved as 5% solutions
-    under a N2 atmosphere).
+  description: Distribute the medium into culture vessels under the same gas
+    mixture and seal with butyl rubber stoppers. Prior to inoculation, reduce
+    the medium with 0.025% L-cysteine x HCl x H2O and 0.025% Na2S x 9H2O
+    (autoclaved as 5% solutions under a N2 atmosphere).
 applications:
 - Microbial cultivation
 curation_history:
@@ -329,5 +329,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:30.585006+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOLOBUS R15 MEDIUM" to "methanolobus_r15_medium"
-    for consistent matching
+  notes: Normalized name from "METHANOLOBUS R15 MEDIUM" to
+    "methanolobus_r15_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/clostridium_r6_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002984
+  name: clostridium_r6_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -77,4 +77,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:15.518459+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PDA (pH 3.0)" to "pda_ph_3_0" for consistent matching
+  notes: Normalized name from "PDA (pH 3.0)" to "pda_ph_3_0" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/pda_hygromycin_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008534
+  name: pda_hygromycin_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/potato_dextrose_agar_pda.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008210
+  name: potato_dextrose_agar_pda
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

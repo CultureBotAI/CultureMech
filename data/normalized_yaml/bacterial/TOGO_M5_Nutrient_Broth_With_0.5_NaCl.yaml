@@ -71,5 +71,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:29.532914+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Nutrient Broth With 0.5% NaCl" to "nutrient_broth_with_0_5_nacl"
-    for consistent matching
+  notes: Normalized name from "Nutrient Broth With 0.5% NaCl" to
+    "nutrient_broth_with_0_5_nacl" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M3_Nutrient_Broth_With_1.0_NaCl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:009783
+  name: nutrient_broth_with_1_0_nacl
+  notes: NaCl increased from 5 g/L to 10 g/L while Bacto peptone and beef
+    extract remain unchanged.

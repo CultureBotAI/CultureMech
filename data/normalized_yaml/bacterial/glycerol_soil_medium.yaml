@@ -47,11 +47,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0. Soil extract is prepared by sieving air dried garden
-    soil through a coarse sieve and autoclaving 400 g with 960 ml of distilled water
-    at 121°C for one hour. After the mixture is cool and settled, the supernatant
-    is carefully decanted, filtered through paper, autoclaved in 200 ml quantities,
-    and stored at room temperature until cleared by sedimentation.
+  description: Adjust pH to 7.0. Soil extract is prepared by sieving air dried
+    garden soil through a coarse sieve and autoclaving 400 g with 960 ml of
+    distilled water at 121°C for one hour. After the mixture is cool and
+    settled, the supernatant is carefully decanted, filtered through paper,
+    autoclaved in 200 ml quantities, and stored at room temperature until
+    cleared by sedimentation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,5 +71,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.250861+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GLYCEROL-SOIL MEDIUM" to "glycerol_soil_medium" for
-    consistent matching
+  notes: Normalized name from "GLYCEROL-SOIL MEDIUM" to "glycerol_soil_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_80_GLYCEROL-SOIL_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006527
+  name: glycerol_soil_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

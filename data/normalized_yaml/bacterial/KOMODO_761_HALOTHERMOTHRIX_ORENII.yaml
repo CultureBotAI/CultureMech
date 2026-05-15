@@ -247,6 +247,30 @@ ingredients:
     label: Na2SeO3 x 5 H2O
 applications:
 - Microbial cultivation
+variants:
+- name: strict_anaerobic_halothermothrix_orenii_h168_growth
+  description: DSMZ/KOMODO Halothermothrix orenii medium condition representing
+    the original strain H168 thermohalophilic anaerobic growth evidence.
+  modifications:
+  - Maintain strict anaerobic cultivation conditions.
+  - Use high-salt growth conditions centered on 100 g/L NaCl, matching the
+    parent medium's approximately 101 g/L NaCl formulation.
+  - Incubate at 60 C for optimal growth of strain H168.
+  purpose: Capture strain-specific growth evidence for Halothermothrix orenii
+    H168 under the existing parent medium instead of creating a duplicate
+    organism-named medium record.
+  evidence:
+  - reference: PMID:7520742
+    supports: SUPPORT
+    snippet: A long rod, present only in the 40- to 60-cm layer, was isolated at
+      60 degrees C
+    explanation: The source directly reports isolation of strain H168 at 60 C in
+      a medium containing 100 g/L NaCl, which matches the high-salt
+      Halothermothrix parent medium closely enough for a variant-level record.
+  - reference: https://www.ncbi.nlm.nih.gov/bioproject/16377
+    supports: SUPPORT
+    explanation: NCBI BioProject PRJNA16377 links Halothermothrix orenii H168 to
+      complete genome assembly GCA_000020485.1 and BioSample SAMN00623047.
 curation_history:
 - timestamp: 2026-01-27T01:15:03.fZ
   curator: komodo-web-import
@@ -271,5 +295,51 @@ curation_history:
 - timestamp: '2026-03-17T19:45:57.900183+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOTHERMOTHRIX ORENII" to "halothermothrix_orenii"
-    for consistent matching
+  notes: Normalized name from "HALOTHERMOTHRIX ORENII" to
+    "halothermothrix_orenii" for consistent matching
+- timestamp: '2026-05-05T00:00:00+00:00'
+  curator: literature_review_manual
+  action: ADDED_GROWTH_EVIDENCE
+  notes: Added strain-specific thermohalophilic anaerobic growth evidence for
+    Halothermothrix orenii H168 from PMID:7520742 and genome identifiers from
+    NCBI BioProject PRJNA16377.
+target_organisms:
+- preferred_term: Halothermothrix orenii
+  term:
+    id: NCBITaxon:373903
+    label: Halothermothrix orenii H 168
+  genome_assembly_id:
+  - GCA_000020485.1
+  - SAMN00623047
+  strain: H168; H 168; DSM 9562; OCM 544
+  evidence:
+  - reference: https://www.ncbi.nlm.nih.gov/bioproject/16377
+    supports: SUPPORT
+    explanation: NCBI BioProject PRJNA16377 identifies Halothermothrix orenii
+      H168, Taxonomy ID 373903, complete genome assembly GCA_000020485.1, and
+      BioSample SAMN00623047.
+  growth_metrics:
+  - temperature_celsius: 60.0
+    measurement_conditions: Strict anaerobic cultivation in Halothermothrix
+      orenii medium; source medium contained 100 g/L NaCl; parent medium has
+      approximately 101 g/L NaCl and pH 7.0.
+    evidence:
+    - reference: PMID:7520742
+      supports: SUPPORT
+      snippet: Strain H168 grew optimally in NaCl concentrations ranging from 50
+        to 100 g per liter
+      explanation: The abstract directly reports growth of strain H168 at 60 C
+        and optimum growth across 50-100 g/L NaCl, supporting a high-salt
+        anaerobic variant of the parent Halothermothrix orenii medium.
+    is_max_attainment: false
+parent_media:
+  path: data/normalized_yaml/bacterial/halothermothrix_orenii.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001894
+  name: halothermothrix_orenii
+  notes: KOMODO record states DSMZ Medium 761 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

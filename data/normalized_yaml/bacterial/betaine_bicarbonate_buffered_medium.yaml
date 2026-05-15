@@ -379,21 +379,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
-    gas mixture.
+  description: Mix components thoroughly and autoclave under a N2-CO2 (80:20,
+    v/v) gas mixture.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Mix components thoroughly and filter-sterilize. Stock the solution
-    under a N2-CO2 (80:20, v/v) gas mixture.
+  description: Mix components thoroughly and filter-sterilize. Stock the
+    solution under a N2-CO2 (80:20, v/v) gas mixture.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Mix components thoroughly and filter-sterilize. Stock the solution
-    under a N2-CO2 (80:20, v/v) gas mixture.
+  description: Mix components thoroughly and filter-sterilize. Stock the
+    solution under a N2-CO2 (80:20, v/v) gas mixture.
 - step_number: 4
   action: ADJUST_PH
-  description: To complete the medium, combine Solutions A, B and C aseptically and
-    anaerobically under a N2-CO2 (80:20, v/v) gas mixture. Check the final pH to be
-    6.9 - 7.2.
+  description: To complete the medium, combine Solutions A, B and C aseptically
+    and anaerobically under a N2-CO2 (80:20, v/v) gas mixture. Check the final
+    pH to be 6.9 - 7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -412,5 +412,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:31.684572+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BETAINE+BICARBONATE BUFFERED MEDIUM" to "betaine_bicarbonate_buffered_medium"
-    for consistent matching
+  notes: Normalized name from "BETAINE+BICARBONATE BUFFERED MEDIUM" to
+    "betaine_bicarbonate_buffered_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/lactate_bicarbonate_buffered_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003203
+  name: lactate_bicarbonate_buffered_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

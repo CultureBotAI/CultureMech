@@ -186,5 +186,32 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.709593+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BACILLUS TUSCIAE MEDIUM" to "bacillus_tusciae_medium"
-    for consistent matching
+  notes: Normalized name from "BACILLUS TUSCIAE MEDIUM" to
+    "bacillus_tusciae_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_261_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_OF_BACILLUS_SCHLEGELII.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004665
+  name: medium_for_chemolithotrophic_growth_of_bacillus_schlegelii
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/medium_for_chemolithotrophic_growth_of_bacillus_schlegelii.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001360
+  name: medium_for_chemolithotrophic_growth_of_bacillus_schlegelii
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/bacillus_tusciae_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001470
+  name: bacillus_tusciae_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 369; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 369; local
+  ingredient and concentration signatures match.

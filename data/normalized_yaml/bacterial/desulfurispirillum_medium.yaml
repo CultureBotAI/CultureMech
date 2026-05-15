@@ -185,11 +185,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Flush the medium with N2 and dispense 20 ml into 100ml serum bottles
-    under an N2 atmosphere, seal with butyl rubber stoppers and autoclave. To the
-    cooled. sterile medium add, from anaerobic, sterile stock solutions, MgSO4 (1
-    mM), yeast extract (50 mg/l), sodium acetate (20 mM), KNO3 (20 mM) and Na2S (0.1
-    mM).
+  description: Flush the medium with N2 and dispense 20 ml into 100ml serum
+    bottles under an N2 atmosphere, seal with butyl rubber stoppers and
+    autoclave. To the cooled. sterile medium add, from anaerobic, sterile stock
+    solutions, MgSO4 (1 mM), yeast extract (50 mg/l), sodium acetate (20 mM),
+    KNO3 (20 mM) and Na2S (0.1 mM).
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.0.
@@ -211,5 +211,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.864958+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFURISPIRILLUM MEDIUM" to "desulfurispirillum_medium"
-    for consistent matching
+  notes: Normalized name from "DESULFURISPIRILLUM MEDIUM" to
+    "desulfurispirillum_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1239_DESULFURISPIRILLUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003996
+  name: desulfurispirillum_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1239; local
+    ingredient and concentration signatures match.

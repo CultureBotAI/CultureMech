@@ -140,4 +140,17 @@ curation_history:
 - timestamp: '2026-03-17T19:46:31.350322+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SW-10 Medium" to "sw_10_medium" for consistent matching
+  notes: Normalized name from "SW-10 Medium" to "sw_10_medium" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M630_SW-20_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:010031
+  name: sw_20_medium
+  notes: Both records are TOGO/NBRC solid SW medium formulations; the child is
+    explicitly SW-10 and preserves the SW base at lower strength with a small
+    agar adjustment.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- SW-10 agar medium halves the SW-20 salt and yeast extract concentrations; agar
+  changes from 20 g/L to 18 g/L.

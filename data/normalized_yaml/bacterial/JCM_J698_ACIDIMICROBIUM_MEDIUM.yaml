@@ -94,5 +94,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:31.061463+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDIMICROBIUM MEDIUM" to "acidimicrobium_medium" for
-    consistent matching
+  notes: Normalized name from "ACIDIMICROBIUM MEDIUM" to "acidimicrobium_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/acidimicrobium_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001846
+  name: acidimicrobium_medium
+  notes: Reviewed same-name Acidimicrobium medium records; child rounds the
+    inorganic salts to the same effective levels but lowers yeast extract from
+    2.5 g/L to 0.25 g/L and changes pH from 1.7 to 2.0.
+- path:
+    data/normalized_yaml/bacterial/JCM_J283_FERROPLASMA_ACIDIPHILUM_MEDIUM.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002641
+  name: ferroplasma_acidiphilum_medium
+  notes: Reviewed JCM Acidimicrobium/Ferroplasma pair; child keeps acidic pH 1.7
+    and same component set but changes sulfate/phosphate salts, raises FeSO4
+    from 0.00998004 to 25 g/L, and lowers yeast extract from 2.5 to 0.16 g/L.

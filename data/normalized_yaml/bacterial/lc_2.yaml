@@ -186,13 +186,13 @@ preparation_steps:
   description: Adjust to pH 6.8.
 - step_number: 3
   action: MIX
-  description: Incubate in sealed containers. The strain held in the DSMZ has been
-    cultivated on methanol, but the original publication indicates that the strain
-    will also grow on methane.
+  description: Incubate in sealed containers. The strain held in the DSMZ has
+    been cultivated on methanol, but the original publication indicates that the
+    strain will also grow on methane.
 - step_number: 4
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -212,3 +212,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "LC 2" to "lc_2" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1132_LC_2.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003842
+  name: lc_2
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

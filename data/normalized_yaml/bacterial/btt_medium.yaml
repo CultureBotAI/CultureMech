@@ -47,7 +47,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 5.5 - 6.0 (can optionally be buffered with 25 mM MES).
+  description: Adjust to pH 5.5 - 6.0 (can optionally be buffered with 25 mM
+    MES).
 applications:
 - Microbial cultivation
 curation_history:
@@ -66,4 +67,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.299790+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BTT MEDIUM" to "btt_medium" for consistent matching
+  notes: Normalized name from "BTT MEDIUM" to "btt_medium" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002349
+  name: btt_medium
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Same ingredient identity signature but concentration signature differs from
+  parent.

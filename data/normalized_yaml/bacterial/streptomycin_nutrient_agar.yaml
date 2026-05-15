@@ -38,8 +38,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4
-    x H2O is recommended for sporulation.
+  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg
+    MnSO4 x H2O is recommended for sporulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,6 +58,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.196502+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "STREPTOMYCIN NUTRIENT AGAR" to "streptomycin_nutrient_agar"
-    for consistent matching
+  notes: Normalized name from "STREPTOMYCIN NUTRIENT AGAR" to
+    "streptomycin_nutrient_agar" for consistent matching
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_238_STREPTOMYCIN_NUTRIENT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004611
+  name: streptomycin_nutrient_agar
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 238; local
+    ingredient and concentration signatures match.

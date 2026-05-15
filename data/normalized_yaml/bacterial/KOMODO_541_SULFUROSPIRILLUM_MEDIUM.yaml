@@ -195,5 +195,23 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.162594+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SULFUROSPIRILLUM MEDIUM" to "sulfurospirillum_medium"
-    for consistent matching
+  notes: Normalized name from "SULFUROSPIRILLUM MEDIUM" to
+    "sulfurospirillum_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_18149.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005969
+  name: for_dsm_18149
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/sulfurospirillum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001674
+  name: sulfurospirillum_medium
+  notes: KOMODO record states DSMZ Medium 541 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

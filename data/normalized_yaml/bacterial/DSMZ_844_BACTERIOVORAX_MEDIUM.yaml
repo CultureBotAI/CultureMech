@@ -53,9 +53,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve ingredients except magnesium chloride and calcium chloride.
-    Add magnesium chloride and calcium chloride after autoclaving from sterile stock
-    solutions of 5% (w/v) each. For agar plates add 1.2% Bacto agar
+  description: Dissolve ingredients except magnesium chloride and calcium
+    chloride. Add magnesium chloride and calcium chloride after autoclaving from
+    sterile stock solutions of 5% (w/v) each. For agar plates add 1.2% Bacto
+    agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,5 +75,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.811377+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BACTERIOVORAX MEDIUM" to "bacteriovorax_medium" for
-    consistent matching
+  notes: Normalized name from "BACTERIOVORAX MEDIUM" to "bacteriovorax_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/ppye_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006649
+  name: ppye_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

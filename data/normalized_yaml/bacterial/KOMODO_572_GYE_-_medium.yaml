@@ -69,4 +69,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.484893+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GYE - medium" to "gye_medium" for consistent matching
+  notes: Normalized name from "GYE - medium" to "gye_medium" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/DSMZ_572_GYE_-_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001700
+  name: gye_medium
+  notes: KOMODO record states DSMZ Medium 572 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

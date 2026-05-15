@@ -354,8 +354,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:48.307463Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:25.998118Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -367,6 +367,66 @@ curation_history:
 - timestamp: '2026-03-17T19:45:40.988079+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PHB/PYRUVATE MEDIUM" to "phb_pyruvate_medium" for consistent
-    matching
+  notes: Normalized name from "PHB/PYRUVATE MEDIUM" to "phb_pyruvate_medium" for
+    consistent matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/desulfobacter_postgatei_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004227
+  name: desulfobacter_postgatei_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_14956.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004220
+  name: for_dsm_14956
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_15102.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004223
+  name: for_dsm_15102
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_15249.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004221
+  name: for_dsm_15249
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_16697.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004224
+  name: for_dsm_16697
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_18843.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004222
+  name: for_dsm_18843
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_193_modified_for_dsm_6637.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004225
+  name: medium_193_modified_for_dsm_6637
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_193_modified_for_dsm_8775.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004226
+  name: medium_193_modified_for_dsm_8775
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/phb_pyruvate_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001286
+  name: phb_pyruvate_medium
+  notes: KOMODO record states DSMZ Medium 193a provenance and exactly matches
+    the single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

@@ -329,8 +329,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:44.147525Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:28.075640Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -346,7 +346,17 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.187188+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GEOCOCCUS NITRATIREDUCENS AND PETROBACTER SUCCINIMANDENS
-    medium" to "geococcus_nitratireducens_and_petrobacter_succinimandens_medium" for
+  notes: Normalized name from "GEOCOCCUS NITRATIREDUCENS AND PETROBACTER
+    SUCCINIMANDENS medium" to
+    "geococcus_nitratireducens_and_petrobacter_succinimandens_medium" for
     consistent matching
 ph_value: 7.0
+parent_media:
+  path: data/normalized_yaml/bacterial/for_geococcus_nitratireducens.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006937
+  name: for_geococcus_nitratireducens
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

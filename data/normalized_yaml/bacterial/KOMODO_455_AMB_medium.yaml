@@ -118,3 +118,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "AMB medium" to "amb_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/amb_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001565
+  name: amb_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

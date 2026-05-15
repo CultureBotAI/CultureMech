@@ -225,11 +225,11 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 3
   action: ADJUST_PH
-  description: To medium add 0.1% sodium malate and 0.05% sodium thiosulfate (). Adjust
-    pH to 6.8 and sterilize at 121°C for 15 min. The liquid medium is sterilized in
-    rubber stoppered or screw-capped bottles under anaerobic conditions (Ref. 3365).
-    After sterilization neutralized sterile sodium sulfide solution is added to a
-    final concentration of 0.03% (see medium 27).
+  description: To medium add 0.1% sodium malate and 0.05% sodium thiosulfate ().
+    Adjust pH to 6.8 and sterilize at 121°C for 15 min. The liquid medium is
+    sterilized in rubber stoppered or screw-capped bottles under anaerobic
+    conditions (Ref. 3365). After sterilization neutralized sterile sodium
+    sulfide solution is added to a final concentration of 0.03% (see medium 27).
 applications:
 - Microbial cultivation
 curation_history:
@@ -248,5 +248,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.173378+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RHODOPSEUDOMONAS SULFOVIRIDIS MEDIUM" to "rhodopseudomonas_sulfoviridis_medium"
-    for consistent matching
+  notes: Normalized name from "RHODOPSEUDOMONAS SULFOVIRIDIS MEDIUM" to
+    "rhodopseudomonas_sulfoviridis_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_109_RHODOPSEUDOMONAS_SULFOVIRIDIS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003752
+  name: rhodopseudomonas_sulfoviridis_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

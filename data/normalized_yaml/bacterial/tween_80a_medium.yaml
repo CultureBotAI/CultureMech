@@ -54,9 +54,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: For solid media add 15.0 g agar. Dissolve ingredients and adjust the
-    pH to 7.2. Sterilize by autoclaving. After sterilization add sterile Tween 80
-    to a final concentration of 1.0%.
+  description: For solid media add 15.0 g agar. Dissolve ingredients and adjust
+    the pH to 7.2. Sterilize by autoclaving. After sterilization add sterile
+    Tween 80 to a final concentration of 1.0%.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,5 +75,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.169750+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TWEEN 80A MEDIUM" to "tween_80a_medium" for consistent
-    matching
+  notes: Normalized name from "TWEEN 80A MEDIUM" to "tween_80a_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_618_TWEEN_80A_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006112
+  name: tween_80a_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

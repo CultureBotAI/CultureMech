@@ -234,10 +234,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except NaHCO3, Na2S2O3 x 5H2O and Trace vitamins,
-    and autoclave. Filter-sterilize 8% (w/v) NaHCO3, 10% (w/v) Na2S2O3 x 5H2O and
-    Trace vitamins and add to the medium. Replace the gas phase with a N2-CO2-O2 (77:17:6,
-    v/v) gas mixture, and pressurize to 200 kPa.
+  description: Mix ingredients, except NaHCO3, Na2S2O3 x 5H2O and Trace
+    vitamins, and autoclave. Filter-sterilize 8% (w/v) NaHCO3, 10% (w/v) Na2S2O3
+    x 5H2O and Trace vitamins and add to the medium. Replace the gas phase with
+    a N2-CO2-O2 (77:17:6, v/v) gas mixture, and pressurize to 200 kPa.
 applications:
 - Microbial cultivation
 curation_history:
@@ -260,5 +260,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:28.584400+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MJ BASAL MEDIUM" to "mj_basal_medium" for consistent
-    matching
+  notes: Normalized name from "MJ BASAL MEDIUM" to "mj_basal_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/mj_n_basal_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002733
+  name: mj_n_basal_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/mj_medium_for_microaerophilic_autotrophs.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:003251
+  name: mj_medium_for_microaerophilic_autotrophs
+  notes: Reviewed MJ basal/autotroph pair; child keeps the marine salt, trace
+    metal, and vitamin base unchanged but raises NaHCO3 from 1.4985 to 5 g/L and
+    Na2S2O3 x 5 H2O from 1.4985 to 15 g/L, with pH 5.5 recorded in the child.

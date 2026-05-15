@@ -74,11 +74,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except glucose, sulfide and cysteine, adjust pH
-    to 6.0 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    (to 30% of volume) and autoclave. Add glucose, sulfide and cysteine from sterile
-    anoxic stock solutions prepared under 100% N2 gas.
+  description: Dissolve ingredients except glucose, sulfide and cysteine, adjust
+    pH to 6.0 and sparge medium with 100% N2 gas for 30 - 45 min to make it
+    anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials (to 30% of volume) and autoclave. Add glucose, sulfide
+    and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas.
 applications:
 - Microbial cultivation
 curation_history:
@@ -97,5 +97,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.654054+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINITOGA HYDROGENITOLERANS MEDIUM" to "marinitoga_hydrogenitolerans_medium"
-    for consistent matching
+  notes: Normalized name from "MARINITOGA HYDROGENITOLERANS MEDIUM" to
+    "marinitoga_hydrogenitolerans_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_904_MARINITOGA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006775
+  name: marinitoga_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

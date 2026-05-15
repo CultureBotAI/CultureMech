@@ -148,4 +148,30 @@ curation_history:
 - timestamp: '2026-03-17T19:46:11.870002+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS Medium" to "mrs_medium" for consistent matching
+  notes: Normalized name from "MRS Medium" to "mrs_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/acidic_mrs_medium_ph_4_8.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008180
+  name: acidic_mrs_medium_ph_4_8
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/acidic_mrs_medium_ph_5_2.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008477
+  name: acidic_mrs_medium_ph_5_2
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/alkalic_mrs_medium_ph_8_0.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008400
+  name: alkalic_mrs_medium_ph_8_0
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/togo_medium_m1564.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008113
+  name: togo_medium_m1564
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

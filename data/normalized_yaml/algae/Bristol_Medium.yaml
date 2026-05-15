@@ -1,6 +1,6 @@
 id: CultureMech:000037
 name: bristol_medium
-category: ALGAE
+category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -38,32 +38,41 @@ ingredients:
   notes: 'Original amount: NaCl (Fisher S271-500)'
 preparation_steps:
 - step_number: 1
-  instruction: Important Notes To Consider:The quality of water, including natural
+  action: MIX
+  description: Important Notes To Consider:The quality of water, including natural
     seawater, is important.
 - step_number: 2
-  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+  action: MIX
+  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.
 - step_number: 3
-  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
+  action: MIX
+  description: Natural seawater and natural freshwater should be obtained from a non-polluted
     source.When dissolving chemicals, wait for the first component to dissolve before
     adding the second.
 - step_number: 4
-  instruction: Stirring, and sometimes the addition of heat, is often required to
+  action: MIX
+  description: Stirring, and sometimes the addition of heat, is often required to
     dissolve the chemicals efficiently.
 - step_number: 5
-  instruction: Preparation of stock solutions for frequently made algal culture media
+  action: MIX
+  description: Preparation of stock solutions for frequently made algal culture media
     make preparing media convenient but also necessary to avoid errors from weighing
     very tiny amounts.Attention should be given to the pH of the final medium.
 - step_number: 6
-  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+  action: ADJUST_PH
+  description: In most cases, if pH adjustment is required, this occurs before sterilization.
 - step_number: 7
-  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+  action: AUTOCLAVE
+  description: Please note that autoclaving removes carbon dioxide from media lacking
     carbonate stabilizing buffers.
 - step_number: 8
-  instruction: This would make the medium very alkaline soon after removal from the
+  action: MIX
+  description: This would make the medium very alkaline soon after removal from the
     autoclave.
 - step_number: 9
-  instruction: In these cases, you should wait approximately 24 hours for gaseous
+  action: MIX
+  description: In these cases, you should wait approximately 24 hours for gaseous
     equilibrium before inoculating the medium.
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -74,7 +83,7 @@ applications:
 - Microalgae research
 curation_history:
 - curator: utex-import
-  date: '2026-01-28'
+  timestamp: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: bristol-medium, URL: https://utex.org/products/bristol-medium'
 - timestamp: '2026-03-13T06:18:52.988824Z'
@@ -87,6 +96,22 @@ curation_history:
   notes: Normalized name from "Bristol Medium" to "bristol_medium" for consistent
     matching
 references:
-- reference_id: UTEX:bristol-medium
-- reference_id: https://utex.org/products/bristol-medium
+- reference: UTEX:bristol-medium
+- reference: https://utex.org/products/bristol-medium
 original_name: Bristol Medium
+target_organisms:
+- preferred_term: Chlorella pyrenoidosa
+  term:
+    id: NCBITaxon:3077
+    label: Chlorella pyrenoidosa
+  growth_metrics:
+  - measurement_conditions: Commercial Bristol medium comparator in settled and
+      activated sewage growth study.
+    evidence:
+    - reference: PMID:15092268
+      supports: SUPPORT
+      snippet: Good growth was obtained in both types of wastewater and the algal production
+        was comparable to and even higher than that found in commercial Bristol medium.
+      explanation: Literature evidence supports qualitative growth of Chlorella
+        pyrenoidosa on commercial Bristol medium as a comparator.
+    is_max_attainment: false

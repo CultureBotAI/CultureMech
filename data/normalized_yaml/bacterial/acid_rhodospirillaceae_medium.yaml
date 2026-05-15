@@ -208,8 +208,8 @@ preparation_steps:
   description: Sparge medium with 100% N2 gas mixture to make it anoxic.
 - step_number: 4
   action: MIX
-  description: Fill 10 ml in 15 ml tubes with a rubber septum under a stream of nitrogen
-    gas.
+  description: Fill 10 ml in 15 ml tubes with a rubber septum under a stream of
+    nitrogen gas.
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -237,5 +237,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.364359+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACID RHODOSPIRILLACEAE MEDIUM" to "acid_rhodospirillaceae_medium"
-    for consistent matching
+  notes: Normalized name from "ACID RHODOSPIRILLACEAE MEDIUM" to
+    "acid_rhodospirillaceae_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_26_ACID_RHODOSPIRILLACEAE_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004676
+  name: acid_rhodospirillaceae_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 26; local
+    ingredient and concentration signatures match.

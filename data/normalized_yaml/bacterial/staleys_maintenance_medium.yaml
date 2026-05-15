@@ -209,9 +209,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve peptone and yeast extract in the distilled water, adjust the
-    pH to 7.2 and sterilize. After the medium has cooled add the Hutner's salts and
-    Vitamin solution.
+  description: Dissolve peptone and yeast extract in the distilled water, adjust
+    the pH to 7.2 and sterilize. After the medium has cooled add the Hutner's
+    salts and Vitamin solution.
 - step_number: 2
   action: MIX
   description: For solid medium use 15.0 g agar.
@@ -232,8 +232,8 @@ preparation_steps:
   description: Filter-sterilized.
 - step_number: 8
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to
+    retard precipitation of the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -256,5 +256,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.270422+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "STALEY'S MAINTENANCE MEDIUM" to "staleys_maintenance_medium"
-    for consistent matching
+  notes: Normalized name from "STALEY'S MAINTENANCE MEDIUM" to
+    "staleys_maintenance_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_629_STALEY_S_MAINTENANCE_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006135
+  name: staleys_maintenance_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

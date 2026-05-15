@@ -90,6 +90,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:37.048647+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RE-101/102 medium" to "re_101_102_medium" for consistent
-    matching
+  notes: Normalized name from "RE-101/102 medium" to "re_101_102_medium" for
+    consistent matching
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/re_101_102_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000566
+  name: re_101_102_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

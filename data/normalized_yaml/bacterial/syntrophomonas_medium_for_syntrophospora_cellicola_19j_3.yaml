@@ -254,16 +254,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components, adjust pH to 7.2, bring to a boil for a few seconds
-    and cool down under a stream of a N2-CO2 (80:20) gas mixture. Distribute Solution
-    A into culture vessels (e.g., 9 ml per tube) under the same gas mixture, seal
-    with butyl rubber stoppers and autoclave.
+  description: Mix components, adjust pH to 7.2, bring to a boil for a few
+    seconds and cool down under a stream of a N2-CO2 (80:20) gas mixture.
+    Distribute Solution A into culture vessels (e.g., 9 ml per tube) under the
+    same gas mixture, seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: AUTOCLAVE
-  description: To complete the medium, add 0.1 volume of 3.5% NaHCO3 solution [filter-sterilized
-    and stored under a N2-CO2 (80:20) gas mixture] and reduce the medium with 0.3
-    g/L (final) L-cysteine x HCl x H2O and 0.3 g/L (final) Na2S x 9H2O (autoclave
-    and store 3% stock solutions under a N2 atmosphere).
+  description: To complete the medium, add 0.1 volume of 3.5% NaHCO3 solution
+    [filter-sterilized and stored under a N2-CO2 (80:20) gas mixture] and reduce
+    the medium with 0.3 g/L (final) L-cysteine x HCl x H2O and 0.3 g/L (final)
+    Na2S x 9H2O (autoclave and store 3% stock solutions under a N2 atmosphere).
 applications:
 - Microbial cultivation
 curation_history:
@@ -282,6 +282,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:29.736999+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SYNTROPHOMONAS MEDIUM (for Syntrophospora cellicola
-    19J-3)" to "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3" for consistent
+  notes: Normalized name from "SYNTROPHOMONAS MEDIUM (for Syntrophospora
+    cellicola 19J-3)" to
+    "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3" for consistent
     matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/syntrophomonas_medium_without_sulfate.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002903
+  name: syntrophomonas_medium_without_sulfate
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

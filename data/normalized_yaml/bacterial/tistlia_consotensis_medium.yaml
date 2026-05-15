@@ -209,8 +209,8 @@ preparation_steps:
   description: Autoclave at 121 °C for 15 min.
 - step_number: 3
   action: MIX
-  description: Neutralise the nitrilotriacetic acid to a pH of 6.5 with KOH before
-    adding the other trace elements.
+  description: Neutralise the nitrilotriacetic acid to a pH of 6.5 with KOH
+    before adding the other trace elements.
 applications:
 - Microbial cultivation
 curation_history:
@@ -233,5 +233,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.875485+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TISTLIA CONSOTENSIS MEDIUM" to "tistlia_consotensis_medium"
-    for consistent matching
+  notes: Normalized name from "TISTLIA CONSOTENSIS MEDIUM" to
+    "tistlia_consotensis_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1343_TISTLIA_CONSOTENSIS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004100
+  name: tistlia_consotensis_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1343; local
+    ingredient and concentration signatures match.

@@ -243,9 +243,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Autoclave the NaHCO3 and Na2CO3 separately and add to the medium.\
-    \ Add the vitamin\r\nB12 solution from a filter sterilised stock solution to the\
-    \ autoclaved, cooled medium. Final\r\nis pH 9.0 - 9.5"
+  description: "Autoclave the NaHCO3 and Na2CO3 separately and add to the medium.
+    Add the vitamin\r\nB12 solution from a filter sterilised stock solution to the
+    autoclaved, cooled medium. Final\r\nis pH 9.0 - 9.5"
 applications:
 - Microbial cultivation
 curation_history:
@@ -264,5 +264,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.627169+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ROSEINATRONOBACTER MONICUS MEDIUM" to "roseinatronobacter_monicus_medium"
-    for consistent matching
+  notes: Normalized name from "ROSEINATRONOBACTER MONICUS MEDIUM" to
+    "roseinatronobacter_monicus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1218_ROSEINATRONOBACTER_MONICUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003969
+  name: roseinatronobacter_monicus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1218; local
+    ingredient and concentration signatures match.

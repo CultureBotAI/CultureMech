@@ -85,4 +85,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:57.072669+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 14366" to "for_dsm_14366" for consistent matching
+  notes: Normalized name from "For DSM 14366" to "for_dsm_14366" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/acidithiobacillus_thiooxidans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001858
+  name: acidithiobacillus_thiooxidans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

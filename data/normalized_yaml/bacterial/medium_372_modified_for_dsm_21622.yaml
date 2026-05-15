@@ -128,6 +128,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.772355+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 372 MODIFIED FOR DSM 21622" to "medium_372_modified_for_dsm_21622"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 372 MODIFIED FOR DSM 21622" to
+    "medium_372_modified_for_dsm_21622" for consistent matching
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_372_HALOBACTERIA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005104
+  name: halobacteria_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

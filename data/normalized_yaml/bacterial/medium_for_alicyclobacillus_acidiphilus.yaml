@@ -131,8 +131,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:13.212534+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Medium for Alicyclobacillus acidiphilus" to "medium_for_alicyclobacillus_acidiphilus"
-    for consistent matching
+  notes: Normalized name from "Medium for Alicyclobacillus acidiphilus" to
+    "medium_for_alicyclobacillus_acidiphilus" for consistent matching
 solutions:
 - preferred_term: Solution A*
   term:
@@ -152,3 +152,12 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/togo_medium_m1532.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008079
+  name: togo_medium_m1532
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

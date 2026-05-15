@@ -113,5 +113,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:40.605053+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 156 MODIFIED FOR DSM 6251" to "medium_156_modified_for_dsm_6251"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 156 MODIFIED FOR DSM 6251" to
+    "medium_156_modified_for_dsm_6251" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/anaerotignum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001046
+  name: anaerotignum_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

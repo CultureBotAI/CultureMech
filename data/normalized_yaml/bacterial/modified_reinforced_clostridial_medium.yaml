@@ -77,10 +77,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 6.0-6.5. For preparation
-    of solid medium, add per liter 20.0 g agar. Bring to a boil (and dissolve agar),
-    cool down and distribute the medium into culture vessels (e.g., 10 ml medium in
-    Balch type tubes) under a stream of N2, seal with butyl rubber stoppers and autoclave.
+  description: Mix components thoroughly and adjust pH to 6.0-6.5. For
+    preparation of solid medium, add per liter 20.0 g agar. Bring to a boil (and
+    dissolve agar), cool down and distribute the medium into culture vessels
+    (e.g., 10 ml medium in Balch type tubes) under a stream of N2, seal with
+    butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -99,5 +100,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:25.960936+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED REINFORCED CLOSTRIDIAL MEDIUM" to "modified_reinforced_clostridial_medium"
-    for consistent matching
+  notes: Normalized name from "MODIFIED REINFORCED CLOSTRIDIAL MEDIUM" to
+    "modified_reinforced_clostridial_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/modified_reinforced_clostridial_medium_at_ph_8_0.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002442
+  name: modified_reinforced_clostridial_medium_at_ph_8_0
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

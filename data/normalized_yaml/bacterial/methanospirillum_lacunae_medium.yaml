@@ -344,22 +344,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, vitamins, cysteine and sulfide)
-    and sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials to 30% of their volume and autoclave. Add vitamins, cysteine
-    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
-    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
-    gas mixture. The vitamin solution should be sterilized by filtration. Adjust pH
-    of complete medium to 6.8, if necessary.
+  description: Dissolve ingredients (except carbonate, vitamins, cysteine and
+    sulfide) and sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials to 30% of their volume and autoclave. Add
+    vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. The vitamin solution should
+    be sterilized by filtration. Adjust pH of complete medium to 6.8, if
+    necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize vials to 1 bar overpressure with sterile
-    80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize vials to 1 bar overpressure with
+    sterile 80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -370,8 +371,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:19.381458Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:08:49.358941Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -387,5 +388,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.246950+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOSPIRILLUM LACUNAE MEDIUM" to "methanospirillum_lacunae_medium"
-    for consistent matching
+  notes: Normalized name from "METHANOSPIRILLUM LACUNAE MEDIUM" to
+    "methanospirillum_lacunae_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1273_METHANOSPIRILLUM_LACUNAE_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004027
+  name: methanospirillum_lacunae_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1273; local
+    ingredient and concentration signatures match.

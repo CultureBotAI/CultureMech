@@ -209,5 +209,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:39.803167+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/10 PYGV medium modified" to "1_10_pygv_medium_modified"
-    for consistent matching
+  notes: Normalized name from "1/10 PYGV medium modified" to
+    "1_10_pygv_medium_modified" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/1_10_pygv_medium_modified.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000859
+  name: 1_10_pygv_medium_modified
+  notes: KOMODO record explicitly cites DSMZ Medium 1398; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1398; local
+  ingredient and concentration signatures match.

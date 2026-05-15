@@ -31,3 +31,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS broth" to "mrs_broth" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/man_rogosa_sharpe_mrs_broth_difco.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009250
+  name: man_rogosa_sharpe_mrs_broth_difco
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

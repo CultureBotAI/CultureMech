@@ -121,3 +121,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "R2A AGAR" to "r2a_agar" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/5_x_r2a_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002271
+  name: 5_x_r2a_agar
+  notes: 5 x R2A Agar increases all parsed R2A nutrient and salt components
+    five-fold while agar remains 15 g/L.

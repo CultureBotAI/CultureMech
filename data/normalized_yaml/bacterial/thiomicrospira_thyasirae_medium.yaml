@@ -253,9 +253,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A, B and C separately and mix when cool. After
-    autoclaving, add thiosulfate, trace elements and vitamins from sterile stock solutions
-    to complete the medium. Adjust pH of complete medium to 7.3 - 7.6.
+  description: Autoclave solutions A, B and C separately and mix when cool.
+    After autoclaving, add thiosulfate, trace elements and vitamins from sterile
+    stock solutions to complete the medium. Adjust pH of complete medium to 7.3
+    - 7.6.
 - step_number: 2
   action: MIX
   description: Adjust to pH 7.6.
@@ -264,8 +265,9 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
-    then add other compounds. Adjust pH of final solution to 6.0 with NaOH.
+  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N
+    NaOH; then add other compounds. Adjust pH of final solution to 6.0 with
+    NaOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -284,5 +286,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:17.845636+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOMICROSPIRA THYASIRAE MEDIUM" to "thiomicrospira_thyasirae_medium"
-    for consistent matching
+  notes: Normalized name from "THIOMICROSPIRA THYASIRAE MEDIUM" to
+    "thiomicrospira_thyasirae_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/for_thiobacillus_halophilus_dsm_6132.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005606
+  name: for_thiobacillus_halophilus_dsm_6132
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/thiobacillus_thyasiris_and_t_halophilus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005607
+  name: thiobacillus_thyasiris_and_t_halophilus_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

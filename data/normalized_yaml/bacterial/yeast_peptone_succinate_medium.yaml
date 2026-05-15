@@ -64,6 +64,19 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.318929+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YEAST-Peptone-SUCCINATE medium" to "yeast_peptone_succinate_medium"
-    for consistent matching
+  notes: Normalized name from "YEAST-Peptone-SUCCINATE medium" to
+    "yeast_peptone_succinate_medium" for consistent matching
 kg_microbe_match: mediadive.medium:937
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_988_modified_for_dsm_15761.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006957
+  name: medium_988_modified_for_dsm_15761
+  notes: Same DSMZ/KOMODO Medium 988 ingredient and concentration signature;
+    reviewed as duplicate DSM 15761 source record.
+- path: data/normalized_yaml/bacterial/medium_988_modified_for_dsm_15867.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006958
+  name: medium_988_modified_for_dsm_15867
+  notes: Same DSMZ/KOMODO Medium 988 ingredient and concentration signature;
+    reviewed as duplicate DSM 15867 source record.

@@ -345,8 +345,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:13.268675Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:44.652830Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -358,5 +358,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:02.609053+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CALORAMATOR VITERBENSIS medium" to "caloramator_viterbensis_medium"
-    for consistent matching
+  notes: Normalized name from "CALORAMATOR VITERBENSIS medium" to
+    "caloramator_viterbensis_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/caloramator_viterbiensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002126
+  name: caloramator_viterbiensis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

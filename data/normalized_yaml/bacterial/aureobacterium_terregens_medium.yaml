@@ -82,8 +82,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone
-    in ethanol.
+  description: After sterilization, aseptically add 1 ml/l of a 10% solution of
+    acetylacetone in ethanol.
 applications:
 - Microbial cultivation
 curation_history:
@@ -106,5 +106,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.124964+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AUREOBACTERIUM TERREGENS MEDIUM" to "aureobacterium_terregens_medium"
-    for consistent matching
+  notes: Normalized name from "AUREOBACTERIUM TERREGENS MEDIUM" to
+    "aureobacterium_terregens_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_226_AUREOBACTERIUM_TERREGENS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004580
+  name: aureobacterium_terregens_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 226; local
+    ingredient and concentration signatures match.

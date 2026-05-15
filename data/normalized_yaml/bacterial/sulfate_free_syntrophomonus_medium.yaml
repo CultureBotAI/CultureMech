@@ -274,17 +274,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients of Solution A, adjust pH to 7.2, bring to a boil for
-    a few minutes and cool down to room temperature under a stream of N2-CO2 (4:1,
-    v/v) gas mixture. Distribute the solution into culture vessels under the same
-    gas mixture, seal with butyl rubber stoppers and autoclave. Filter-sterilize Solution
-    B and equilibrate by gassing with the same gas mixture for at least 15 min. Autoclave
-    Solutions C and D under a N2 atmosphere. Add appropriate amounts of Solutions
-    B, C and D to Solution A to complete the medium.
+  description: Mix ingredients of Solution A, adjust pH to 7.2, bring to a boil
+    for a few minutes and cool down to room temperature under a stream of N2-CO2
+    (4:1, v/v) gas mixture. Distribute the solution into culture vessels under
+    the same gas mixture, seal with butyl rubber stoppers and autoclave.
+    Filter-sterilize Solution B and equilibrate by gassing with the same gas
+    mixture for at least 15 min. Autoclave Solutions C and D under a N2
+    atmosphere. Add appropriate amounts of Solutions B, C and D to Solution A to
+    complete the medium.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
-    and add the remaining salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled
+    water and add the remaining salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -303,5 +304,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:29.580751+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SULFATE-FREE SYNTROPHOMONUS MEDIUM" to "sulfate_free_syntrophomonus_medium"
-    for consistent matching
+  notes: Normalized name from "SULFATE-FREE SYNTROPHOMONUS MEDIUM" to
+    "sulfate_free_syntrophomonus_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/syntrophus_aciditrophicus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003308
+  name: syntrophus_aciditrophicus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

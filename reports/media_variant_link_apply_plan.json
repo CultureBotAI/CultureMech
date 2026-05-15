@@ -1,0 +1,74 @@
+[
+  {
+    "action": "add_variant_child",
+    "child_path": "data/normalized_yaml/bacterial/medium_988_modified_for_dsm_15761.yaml",
+    "confidence": "HIGH",
+    "message": "add child reference to parent",
+    "parent_path": "data/normalized_yaml/bacterial/yeast_peptone_succinate_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE",
+    "status": "PLANNED"
+  },
+  {
+    "action": "add_parent_media",
+    "child_path": "data/normalized_yaml/bacterial/medium_988_modified_for_dsm_15761.yaml",
+    "confidence": "HIGH",
+    "message": "add parent reference to child",
+    "parent_path": "data/normalized_yaml/bacterial/yeast_peptone_succinate_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE",
+    "status": "PLANNED"
+  },
+  {
+    "action": "set_variant_relationship",
+    "child_path": "data/normalized_yaml/bacterial/medium_988_modified_for_dsm_15761.yaml",
+    "confidence": "HIGH",
+    "message": "set child variant relationship",
+    "parent_path": "data/normalized_yaml/bacterial/yeast_peptone_succinate_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE",
+    "status": "PLANNED"
+  },
+  {
+    "action": "add_variant_modification",
+    "child_path": "data/normalized_yaml/bacterial/medium_988_modified_for_dsm_15761.yaml",
+    "confidence": "HIGH",
+    "message": "add child modification summary",
+    "parent_path": "data/normalized_yaml/bacterial/yeast_peptone_succinate_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE",
+    "status": "PLANNED"
+  },
+  {
+    "action": "add_variant_child",
+    "child_path": "data/normalized_yaml/bacterial/medium_988_modified_for_dsm_15867.yaml",
+    "confidence": "HIGH",
+    "message": "add child reference to parent",
+    "parent_path": "data/normalized_yaml/bacterial/yeast_peptone_succinate_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE",
+    "status": "PLANNED"
+  },
+  {
+    "action": "add_parent_media",
+    "child_path": "data/normalized_yaml/bacterial/medium_988_modified_for_dsm_15867.yaml",
+    "confidence": "HIGH",
+    "message": "add parent reference to child",
+    "parent_path": "data/normalized_yaml/bacterial/yeast_peptone_succinate_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE",
+    "status": "PLANNED"
+  },
+  {
+    "action": "set_variant_relationship",
+    "child_path": "data/normalized_yaml/bacterial/medium_988_modified_for_dsm_15867.yaml",
+    "confidence": "HIGH",
+    "message": "set child variant relationship",
+    "parent_path": "data/normalized_yaml/bacterial/yeast_peptone_succinate_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE",
+    "status": "PLANNED"
+  },
+  {
+    "action": "add_variant_modification",
+    "child_path": "data/normalized_yaml/bacterial/medium_988_modified_for_dsm_15867.yaml",
+    "confidence": "HIGH",
+    "message": "add child modification summary",
+    "parent_path": "data/normalized_yaml/bacterial/yeast_peptone_succinate_medium.yaml",
+    "relationship": "SOURCE_DUPLICATE",
+    "status": "PLANNED"
+  }
+]

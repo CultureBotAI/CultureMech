@@ -244,5 +244,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.889414+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALGORIPHAGUS ALKALIPHILUS MEDIUM" to "algoriphagus_alkaliphilus_medium"
-    for consistent matching
+  notes: Normalized name from "ALGORIPHAGUS ALKALIPHILUS MEDIUM" to
+    "algoriphagus_alkaliphilus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1242_ALGORIPHAGUS_ALKALIPHILUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003999
+  name: algoriphagus_alkaliphilus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1242; local
+    ingredient and concentration signatures match.

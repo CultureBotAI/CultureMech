@@ -107,8 +107,8 @@ preparation_steps:
   description: After sterilization add 5% bovine serum.
 - step_number: 3
   action: MIX
-  description: For anaerobic handling prepare and distribute into tubes under 100%
-    N2 by using the Hungate technique.
+  description: For anaerobic handling prepare and distribute into tubes under
+    100% N2 by using the Hungate technique.
 applications:
 - Microbial cultivation
 curation_history:
@@ -127,5 +127,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.913507+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "STREPTOCOCCUS SUIS MEDIUM" to "streptococcus_suis_medium"
-    for consistent matching
+  notes: Normalized name from "STREPTOCOCCUS SUIS MEDIUM" to
+    "streptococcus_suis_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_696_STREPTOCOCCUS_SUIS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006314
+  name: streptococcus_suis_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

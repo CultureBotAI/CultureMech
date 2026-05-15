@@ -327,11 +327,12 @@ preparation_steps:
   description: Autoclave at 121 °C for 20 min.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: After cooling add vitamins from a filter sterilised stock solution.
+  description: After cooling add vitamins from a filter sterilised stock
+    solution.
 - step_number: 5
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -342,8 +343,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.189183Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:08:44.325307Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -359,5 +360,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.597728+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PETROBACTER SUCCINIMANDENS MEDIUM" to "petrobacter_succinimandens_medium"
-    for consistent matching
+  notes: Normalized name from "PETROBACTER SUCCINIMANDENS MEDIUM" to
+    "petrobacter_succinimandens_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_geococcus_nitratireducens.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006937
+  name: for_geococcus_nitratireducens
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

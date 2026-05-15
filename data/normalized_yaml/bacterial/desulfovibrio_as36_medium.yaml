@@ -229,9 +229,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients and adjust pH to 7.2. Distribute 0.9 volume of the
-    medium into tubes (e.g., 4.5 ml of the medium in the Hungate tubes) under a N2-CO2
-    (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave.
+  description: Mix ingredients and adjust pH to 7.2. Distribute 0.9 volume of
+    the medium into tubes (e.g., 4.5 ml of the medium in the Hungate tubes)
+    under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and
+    autoclave.
 - step_number: 2
   action: AUTOCLAVE
   description: 'To complete the medium, add the following stock solutions [Filter-sterilize
@@ -256,5 +257,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:29.965040+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOVIBRIO As36 MEDIUM" to "desulfovibrio_as36_medium"
-    for consistent matching
+  notes: Normalized name from "DESULFOVIBRIO As36 MEDIUM" to
+    "desulfovibrio_as36_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/desulfovibrio_marinus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002899
+  name: desulfovibrio_marinus_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

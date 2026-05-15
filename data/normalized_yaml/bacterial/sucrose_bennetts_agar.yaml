@@ -62,6 +62,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:14.267344+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Sucrose-Bennett's Agar" to "sucrose_bennetts_agar"
-    for consistent matching
+  notes: Normalized name from "Sucrose-Bennett's Agar" to
+    "sucrose_bennetts_agar" for consistent matching
 kg_microbe_match: mediadive.medium:187
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J104_SUCROSE-BENNETT_S_AGAR.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002232
+  name: sucrose_bennetts_agar
+  notes: Both records are MediaDive Sucrose-Bennett's Agar solid complex
+    formulations; the child differs by a single agar concentration axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Sucrose-Bennett's Agar increases agar from 15 g/L to 20 g/L while yeast
+  extract, beef extract, N-Z amine, and sucrose remain unchanged.

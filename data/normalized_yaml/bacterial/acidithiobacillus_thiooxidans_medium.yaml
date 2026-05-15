@@ -65,9 +65,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without thiosulfate, adjust pH to 4.4 - 4.7 and
-    autoclave at 121°C for 15 min. Sterilize thiosulfate separately by filtration
-    and add after autoclaving.
+  description: Prepare the medium without thiosulfate, adjust pH to 4.4 - 4.7
+    and autoclave at 121°C for 15 min. Sterilize thiosulfate separately by
+    filtration and add after autoclaving.
 - step_number: 2
   action: MIX
   description: 'Note: Incubate statically without shaking.'
@@ -89,5 +89,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.186982+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDITHIOBACILLUS THIOOXIDANS MEDIUM" to "acidithiobacillus_thiooxidans_medium"
-    for consistent matching
+  notes: Normalized name from "ACIDITHIOBACILLUS THIOOXIDANS MEDIUM" to
+    "acidithiobacillus_thiooxidans_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_14366.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006345
+  name: for_dsm_14366
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

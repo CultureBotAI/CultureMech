@@ -61,5 +61,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.348208+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GINGER BEER PLANT MEDIUM" to "ginger_beer_plant_medium"
-    for consistent matching
+  notes: Normalized name from "GINGER BEER PLANT MEDIUM" to
+    "ginger_beer_plant_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_267_GINGER_BEER_PLANT_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004670
+  name: ginger_beer_plant_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 267; local
+    ingredient and concentration signatures match.

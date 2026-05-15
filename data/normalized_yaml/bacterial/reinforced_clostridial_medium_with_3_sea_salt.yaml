@@ -47,6 +47,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:29.433970+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "REINFORCED CLOSTRIDIAL MEDIUM WITH 3%  SEA SALT" to
-    "reinforced_clostridial_medium_with_3_sea_salt" for consistent matching
+  notes: Normalized name from "REINFORCED CLOSTRIDIAL MEDIUM WITH 3%  SEA SALT"
+    to "reinforced_clostridial_medium_with_3_sea_salt" for consistent matching
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/reinforced_clostridial_medium_with_4_sea_salt.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:002832
+  name: reinforced_clostridial_medium_with_4_sea_salt
+  notes: Sea Salt increased from 30 g/L to 40 g/L while reinforced clostridial
+    medium and agar remain unchanged.

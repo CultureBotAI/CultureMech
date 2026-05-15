@@ -254,5 +254,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:24.581731+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALKALIPHILUS 3B MEDIUM" to "alkaliphilus_3b_medium"
-    for consistent matching
+  notes: Normalized name from "ALKALIPHILUS 3B MEDIUM" to
+    "alkaliphilus_3b_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/alkaliphilus_lacv_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002257
+  name: alkaliphilus_lacv_medium
+  notes: Reviewed Alkaliphilus 3B/LacV pair; child keeps pH and most
+    base/supplement concentrations unchanged, increases NaCl from 0.993049 to
+    9.93049 g/L and thiosulfate from 1.48957 to 2.97915 g/L, and lowers yeast
+    extract from 50 to 20 g/L.

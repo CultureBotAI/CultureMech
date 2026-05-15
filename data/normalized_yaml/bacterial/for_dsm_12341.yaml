@@ -371,8 +371,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:14.308314Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:08:41.226919Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -388,5 +388,38 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.738160+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 12341" to "for_dsm_12341" for consistent matching
+  notes: Normalized name from "For DSM 12341" to "for_dsm_12341" for consistent
+    matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/desulfotalea_psychrophila_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002021
+  name: desulfotalea_psychrophila_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/for_dsm_12342_dsm_12343_and_dsm_12345.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006690
+  name: for_dsm_12342_dsm_12343_and_dsm_12345
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_12343.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006688
+  name: for_dsm_12343
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_12344.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006691
+  name: for_dsm_12344
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/srb_psychrophile_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006692
+  name: srb_psychrophile_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

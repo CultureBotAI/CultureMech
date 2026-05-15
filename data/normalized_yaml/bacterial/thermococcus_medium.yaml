@@ -370,17 +370,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium without NaHCO3, cysteine hydrochloride, Na2S x 9
-    H2O, and vitamin solution. Boil the medium and cool under N2. Add the NaHCO3 to
-    the cooled medium and adjust the pH to about pH 7.2. Sterilise the medium at 100°C
-    for 3 hours on 3 consecutive days. Reduce the medium by adding 10% neutralised
-    sodium sulphide and cysteine hydrochloride from sterile stock solutions. The vitamins
-    are added from a sterile (filter sterilised) stock solution prepared under nitrogen.
-    The final pH is 7.2.
+  description: Prepare the medium without NaHCO3, cysteine hydrochloride, Na2S x
+    9 H2O, and vitamin solution. Boil the medium and cool under N2. Add the
+    NaHCO3 to the cooled medium and adjust the pH to about pH 7.2. Sterilise the
+    medium at 100°C for 3 hours on 3 consecutive days. Reduce the medium by
+    adding 10% neutralised sodium sulphide and cysteine hydrochloride from
+    sterile stock solutions. The vitamins are added from a sterile (filter
+    sterilised) stock solution prepared under nitrogen. The final pH is 7.2.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -395,8 +395,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.936648Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:36.230326Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -412,5 +412,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.212156+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOCOCCUS MEDIUM" to "thermococcus_medium" for consistent
-    matching
+  notes: Normalized name from "THERMOCOCCUS MEDIUM" to "thermococcus_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_806_THERMOCOCCUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006524
+  name: thermococcus_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

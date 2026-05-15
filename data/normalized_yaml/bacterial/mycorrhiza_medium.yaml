@@ -77,5 +77,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:11.223910+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Mycorrhiza Medium" to "mycorrhiza_medium" for consistent
-    matching
+  notes: Normalized name from "Mycorrhiza Medium" to "mycorrhiza_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/1_5_mycorrhiza_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007961
+  name: 1_5_mycorrhiza_medium
+  notes: 1/5 Mycorrhiza Medium decreases yeast extract from 2 g/L to 0.4 g/L and
+    glucose from 20 g/L to 4 g/L while agar remains 15 g/L.

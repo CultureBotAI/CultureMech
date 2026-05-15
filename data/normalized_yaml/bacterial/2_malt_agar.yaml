@@ -65,4 +65,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:26.101078+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "2% Malt Agar" to "2_malt_agar" for consistent matching
+  notes: Normalized name from "2% Malt Agar" to "2_malt_agar" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/4_malt_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009038
+  name: 4_malt_agar
+  notes: Malt extract (BD-Difco) increased from 20 g/L to 40 g/L while the malt
+    agar base remains unchanged.

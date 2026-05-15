@@ -86,4 +86,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.616975+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYG MEDIUM (E)" to "pyg_medium_e" for consistent matching
+  notes: Normalized name from "PYG MEDIUM (E)" to "pyg_medium_e" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1140_PYG_medium_E.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003850
+  name: pyg_medium_e
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

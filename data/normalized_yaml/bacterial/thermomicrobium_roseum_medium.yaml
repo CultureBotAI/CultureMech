@@ -144,8 +144,8 @@ preparation_steps:
   description: Adjust pH to 8.5.
 - step_number: 2
   action: ADD_AGAR
-  description: Add 20.0 g/l agar for solid media and pour short slants with a long
-    butt in screw-capped tubes.
+  description: Add 20.0 g/l agar for solid media and pour short slants with a
+    long butt in screw-capped tubes.
 - step_number: 3
   action: MIX
   description: pH adjusted to 2.0 with H2SO4.
@@ -167,5 +167,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.887995+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOMICROBIUM ROSEUM MEDIUM" to "thermomicrobium_roseum_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOMICROBIUM ROSEUM MEDIUM" to
+    "thermomicrobium_roseum_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_592_THERMOMICROBIUM_ROSEUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006074
+  name: thermomicrobium_roseum_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

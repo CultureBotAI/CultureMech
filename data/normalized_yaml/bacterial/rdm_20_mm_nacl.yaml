@@ -410,13 +410,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:45.350528Z'
   curator: mediadb-import
@@ -430,8 +432,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.157452Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:46.799769Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -443,8 +445,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:04.980836+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RDM - 20 mM NaCl" to "rdm_20_mm_nacl" for consistent
-    matching
+  notes: Normalized name from "RDM - 20 mM NaCl" to "rdm_20_mm_nacl" for
+    consistent matching
 media_term:
   preferred_term: MediaDB Medium 298
   term:
@@ -456,3 +458,11 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+parent_media:
+  path: data/normalized_yaml/bacterial/rdm_10_mm_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:007198
+  name: rdm_10_mm_nacl
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Name suggests salt/salinity change; verify concentration delta against source.

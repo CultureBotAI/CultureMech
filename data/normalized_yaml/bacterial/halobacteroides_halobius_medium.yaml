@@ -102,10 +102,10 @@ preparation_steps:
   description: pH 6.5
 - step_number: 2
   action: MIX
-  description: Prepare salts (in 850 ml distilled water, do not adjust the pH), glucose
-    (50 ml of a 10% solution), and PIPES (100 ml of 400 mM solution, 12.096 g/100
-    ml), separately under nitrogen using normal anaerobic techniques. Add glucose
-    and PIPES using anaerobic techniques.
+  description: Prepare salts (in 850 ml distilled water, do not adjust the pH),
+    glucose (50 ml of a 10% solution), and PIPES (100 ml of 400 mM solution,
+    12.096 g/100 ml), separately under nitrogen using normal anaerobic
+    techniques. Add glucose and PIPES using anaerobic techniques.
 applications:
 - Microbial cultivation
 curation_history:
@@ -124,5 +124,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.850510+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOBACTEROIDES HALOBIUS MEDIUM" to "halobacteroides_halobius_medium"
-    for consistent matching
+  notes: Normalized name from "HALOBACTEROIDES HALOBIUS MEDIUM" to
+    "halobacteroides_halobius_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_588_HALOBACTEROIDES_HALOBIUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006067
+  name: halobacteroides_halobius_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

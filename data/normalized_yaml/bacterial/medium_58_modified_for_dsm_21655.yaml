@@ -170,6 +170,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.705160+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 58 MODIFIED FOR DSM 21655" to "medium_58_modified_for_dsm_21655"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 58 MODIFIED FOR DSM 21655" to
+    "medium_58_modified_for_dsm_21655" for consistent matching
 ph_value: 6.8
+parent_media:
+  path: data/normalized_yaml/bacterial/bifidobacterium_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001717
+  name: bifidobacterium_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

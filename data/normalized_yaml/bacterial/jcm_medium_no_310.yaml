@@ -164,9 +164,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Filter-sterilize KSCN solution and separately autoclave Trace elements
-    solution and MgCl2 x 6H2O solution. Aseptically add KSCN solution, Trace elements
-    solution and MgCl2 x 6H2O solution to the medium.
+  description: Filter-sterilize KSCN solution and separately autoclave Trace
+    elements solution and MgCl2 x 6H2O solution. Aseptically add KSCN solution,
+    Trace elements solution and MgCl2 x 6H2O solution to the medium.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3 with HCl.
@@ -188,5 +188,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:28.210657+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "JCM MEDIUM No. 310" to "jcm_medium_no_310" for consistent
-    matching
+  notes: Normalized name from "JCM MEDIUM No. 310" to "jcm_medium_no_310" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/jcm_medium_no_311.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002669
+  name: jcm_medium_no_311
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/jcm_medium_no_312.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002670
+  name: jcm_medium_no_312
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

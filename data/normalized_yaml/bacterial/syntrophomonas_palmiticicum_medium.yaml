@@ -327,10 +327,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 284 supplemented with final 0.5 g yeast extract and
-    1.0 ml Trace vitamins solution in Solution A (per 900 ml), and with 0.86 g crotonic
-    acid in Solution B (per 100 ml) instead of sodium pyruvate. Otherwise, prepare
-    the medium as described in the recipe of Medium No. 284.
+  description: Use Medium No. 284 supplemented with final 0.5 g yeast extract
+    and 1.0 ml Trace vitamins solution in Solution A (per 900 ml), and with 0.86
+    g crotonic acid in Solution B (per 100 ml) instead of sodium pyruvate.
+    Otherwise, prepare the medium as described in the recipe of Medium No. 284.
 applications:
 - Microbial cultivation
 curation_history:
@@ -349,8 +349,8 @@ curation_history:
 - timestamp: '2026-03-17T19:45:30.169119+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SYNTROPHOMONAS PALMITICICUM MEDIUM" to "syntrophomonas_palmiticicum_medium"
-    for consistent matching
+  notes: Normalized name from "SYNTROPHOMONAS PALMITICICUM MEDIUM" to
+    "syntrophomonas_palmiticicum_medium" for consistent matching
 - timestamp: '2026-04-04T18:49:19.381765'
   curator: copy_referenced_compositions
   action: RESOLVED_REFERENCE
@@ -360,3 +360,12 @@ curation_history:
 data_quality_flags:
   incomplete_composition: false
   resolved_reference: true
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J434_ANAEROLINEA_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002785
+  name: anaerolinea_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

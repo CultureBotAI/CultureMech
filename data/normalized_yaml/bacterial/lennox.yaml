@@ -68,3 +68,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Lennox" to "lennox" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/luria_broth.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:009507
+  name: luria_broth
+  notes: NaCl increased from 5 g/L to 10 g/L while Bacto yeast extract and Bacto
+    tryptone remain unchanged.

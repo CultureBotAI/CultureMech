@@ -85,5 +85,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.434867+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 2392, DSM 9464 and DSM 9465" to "for_dsm_2392_dsm_9464_and_dsm_9465"
-    for consistent matching
+  notes: Normalized name from "For DSM 2392, DSM 9464 and DSM 9465" to
+    "for_dsm_2392_dsm_9464_and_dsm_9465" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006265
+  name: ms_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

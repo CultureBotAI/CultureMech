@@ -23,6 +23,11 @@ def test_resolve_media_file_finds_slug_record():
     assert path == REPO_ROOT / "data" / "normalized_yaml" / "bacterial" / "ko2_no3.yaml"
 
 
+def test_resolve_media_file_accepts_relative_path():
+    path = resolve_media_file("data/normalized_yaml/bacterial/ko2_no3.yaml")
+    assert path == REPO_ROOT / "data" / "normalized_yaml" / "bacterial" / "ko2_no3.yaml"
+
+
 def test_resolve_media_file_finds_culturemech_identifier():
     path = resolve_media_file("CultureMech:008318")
     assert path == REPO_ROOT / "data" / "normalized_yaml" / "bacterial" / "ko2_no3.yaml"

@@ -148,6 +148,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.825521+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 104 MODIFIED FOR DSM 17243" to "medium_104_modified_for_dsm_17243"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 104 MODIFIED FOR DSM 17243" to
+    "medium_104_modified_for_dsm_17243" for consistent matching
 ph_value: 7.0
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_104b_PYX-MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003622
+  name: pyx_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

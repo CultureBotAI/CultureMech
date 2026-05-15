@@ -45,3 +45,14 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015467'
 data_quality_flags: []
 kg_microbe_match: mediadive.medium:74
+parent_media:
+  path: data/normalized_yaml/bacterial/lb.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:015464
+  name: LB
+  notes: Reviewed FEBA LB salt family; LB_highSalt is modeled as the 35 g/L NaCl
+    child variant of FEBA LB.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Sodium Chloride increased from 5 g/L to 35 g/L while tryptone and yeast
+  extract remain unchanged.

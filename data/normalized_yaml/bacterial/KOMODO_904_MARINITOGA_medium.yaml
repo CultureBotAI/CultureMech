@@ -94,5 +94,19 @@ curation_history:
 - timestamp: '2026-03-17T19:46:01.655558+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINITOGA medium" to "marinitoga_medium" for consistent
-    matching
+  notes: Normalized name from "MARINITOGA medium" to "marinitoga_medium" for
+    consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/for_dsm_15518_dsm_15807_and_dsm_16785.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006774
+  name: for_dsm_15518_dsm_15807_and_dsm_16785
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/marinitoga_hydrogenitolerans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002072
+  name: marinitoga_hydrogenitolerans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

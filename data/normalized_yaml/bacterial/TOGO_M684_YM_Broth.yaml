@@ -76,3 +76,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YM Broth" to "ym_broth" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/ym_liquid_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008150
+  name: ym_liquid_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

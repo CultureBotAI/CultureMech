@@ -146,9 +146,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 2.5 with 10 N H2SO4. Autoclave yeast extract separately
-    and steam sulfur for 3 hr on each of 3 successive days. Cultivate under air enriched
-    with 1-10% CO2.
+  description: Adjust pH to 2.5 with 10 N H2SO4. Autoclave yeast extract
+    separately and steam sulfur for 3 hr on each of 3 successive days. Cultivate
+    under air enriched with 1-10% CO2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -167,5 +167,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.206733+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDIANUS INFERNUS MEDIUM (A)" to "acidianus_infernus_medium_a"
-    for consistent matching
+  notes: Normalized name from "ACIDIANUS INFERNUS MEDIUM (A)" to
+    "acidianus_infernus_medium_a" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/jcm_medium_no_185.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002546
+  name: jcm_medium_no_185
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

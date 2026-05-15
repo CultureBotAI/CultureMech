@@ -148,8 +148,8 @@ preparation_steps:
   description: To 1 l of medium 125 pH adjusted to 4.0-5.4 add 10 ml CH3OH.
 - step_number: 2
   action: ADJUST_PH
-  description: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to
-    6.8.
+  description: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH
+    to 6.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -168,5 +168,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.740265+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 125 WITH METHANOL" to "medium_125_with_methanol"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 125 WITH METHANOL" to
+    "medium_125_with_methanol" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_569_MEDIUM_125_WITH_METHANOL.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006016
+  name: medium_125_with_methanol
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

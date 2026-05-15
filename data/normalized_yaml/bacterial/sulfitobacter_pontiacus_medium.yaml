@@ -226,13 +226,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare the HEPES, NaCl, K2HPO4 and NH4Cl as a basal salt solution,
-    adjusting the pH to 7.5-7.8 with NaOH before sterilisation. All other components
-    are added from sterile stock solutions.
+  description: Prepare the HEPES, NaCl, K2HPO4 and NH4Cl as a basal salt
+    solution, adjusting the pH to 7.5-7.8 with NaOH before sterilisation. All
+    other components are added from sterile stock solutions.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -255,5 +255,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.347973+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SULFITOBACTER PONTIACUS MEDIUM" to "sulfitobacter_pontiacus_medium"
-    for consistent matching
+  notes: Normalized name from "SULFITOBACTER PONTIACUS MEDIUM" to
+    "sulfitobacter_pontiacus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_733_SULFITOBACTER_PONTIACUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006378
+  name: sulfitobacter_pontiacus_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

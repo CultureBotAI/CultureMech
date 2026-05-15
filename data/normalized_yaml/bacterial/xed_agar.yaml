@@ -60,3 +60,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "XED-AGAR" to "xed_agar" for consistent matching
 kg_microbe_match: mediadive.medium:1026
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J581_XED_AGAR.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002929
+  name: xed_agar
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Same ingredient identity signature but concentration signature differs from
+  parent.

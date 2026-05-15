@@ -274,13 +274,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:44.179713Z'
   curator: mediadb-import
@@ -294,8 +296,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:24.725775Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:45.900345Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -307,8 +309,9 @@ curation_history:
 - timestamp: '2026-03-17T19:46:04.018470+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified m1 medium with 20 mm lactate; pinchuk et al"
-    to "modified_m1_medium_with_20_mm_lactate_pinchuk_et_al" for consistent matching
+  notes: Normalized name from "Modified m1 medium with 20 mm lactate; pinchuk et
+    al" to "modified_m1_medium_with_20_mm_lactate_pinchuk_et_al" for consistent
+    matching
 media_term:
   preferred_term: MediaDB Medium 178
   term:
@@ -320,3 +323,11 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/modified_m1_medium_with_18_mm_lactate_pinchuk_et_al.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007070
+  name: modified_m1_medium_with_18_mm_lactate_pinchuk_et_al
+  notes: Lactate decreased from 20 mM to 18 mM while the remaining modified M1
+    medium components remain unchanged.

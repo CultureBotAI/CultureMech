@@ -307,8 +307,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH or H2SO4.
 - step_number: 10
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to
+    retard precipitation of the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -335,5 +335,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.703045+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALF STRENGHS HYPHOMICROBIUM MEDIUM" to "half_strenghs_hyphomicrobium_medium"
-    for consistent matching
+  notes: Normalized name from "HALF STRENGHS HYPHOMICROBIUM MEDIUM" to
+    "half_strenghs_hyphomicrobium_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/DSMZ_1419_HYPHOMICROBIUM_MEDIUM.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000880
+  name: hyphomicrobium_medium
+  notes: Both records are MediaDive Hyphomicrobium medium formulations; the
+    child is explicitly labeled half-strength.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Half-strength Hyphomicrobium medium halves phosphate, methylamine
+  hydrochloride, ammonium sulfate, and peptone concentrations while agar and
+  trace/vitamin solutions remain effectively unchanged.

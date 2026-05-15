@@ -54,12 +54,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is
+    recommended for sporulation.
 - step_number: 2
   action: MIX
-  description: After sterilization add sterile 1 M Na-sesquicarbonate solution (1
-    ml in 10 ml)  to achieve a pH of 9.7
+  description: After sterilization add sterile 1 M Na-sesquicarbonate solution
+    (1 ml in 10 ml)  to achieve a pH of 9.7
 applications:
 - Microbial cultivation
 curation_history:
@@ -78,5 +78,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.971318+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALKALINE NUTRIENT AGAR" to "alkaline_nutrient_agar"
-    for consistent matching
+  notes: Normalized name from "ALKALINE NUTRIENT AGAR" to
+    "alkaline_nutrient_agar" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005008
+  name: alkaline_nutrient_agar
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 31; local
+    ingredient and concentration signatures match.

@@ -160,5 +160,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:25.931648+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS + 2 % fructose" to "mrs_2_fructose" for consistent
-    matching
+  notes: Normalized name from "MRS + 2 % fructose" to "mrs_2_fructose" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/mrs_1_fructose.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008427
+  name: mrs_1_fructose
+  notes: TOGO/NBRC MRS fructose-dose grid; reviewed as concentration variant of
+    the 1% fructose record.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Fructose concentration increased from 1% (10 g/L) to 2% (20 g/L); all other
+  parsed ingredient concentrations match the parent.

@@ -313,8 +313,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:51.988604Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:42.477328Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -326,5 +326,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.104400+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "COPROTHERMOBACTER PLATENSIS medium" to "coprothermobacter_platensis_medium"
-    for consistent matching
+  notes: Normalized name from "COPROTHERMOBACTER PLATENSIS medium" to
+    "coprothermobacter_platensis_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001991
+  name: coprothermobacter_platensis_medium
+  notes: KOMODO record states DSMZ Medium 834 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

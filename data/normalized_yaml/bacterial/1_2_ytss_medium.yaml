@@ -60,6 +60,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.531845+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/2 YTSS MEDIUM" to "1_2_ytss_medium" for consistent
-    matching
+  notes: Normalized name from "1/2 YTSS MEDIUM" to "1_2_ytss_medium" for
+    consistent matching
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_974_1_2_YTSS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006932
+  name: 1_2_ytss_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

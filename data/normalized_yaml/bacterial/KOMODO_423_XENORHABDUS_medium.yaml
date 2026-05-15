@@ -64,6 +64,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:47.180402+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "XENORHABDUS medium" to "xenorhabdus_medium" for consistent
-    matching
+  notes: Normalized name from "XENORHABDUS medium" to "xenorhabdus_medium" for
+    consistent matching
 kg_microbe_match: mediadive.medium:101
+parent_media:
+  path: data/normalized_yaml/bacterial/xenorhabdus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001528
+  name: xenorhabdus_medium
+  notes: KOMODO record states DSMZ Medium 423 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

@@ -200,10 +200,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and
-    acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add
-    trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose
-    from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.
+  description: Dissolve sodium chloride, hydrogenphosphates, ammonium chloride
+    and acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After
+    autoclaving add trace elements, magnesium sulfate, calcium chloride, yeast
+    extract and glucose from sterile stock solutions. Adjust pH of complete
+    medium to 7.0, if necessary.
 - step_number: 2
   action: MIX
   description: pH 3.0-4.0
@@ -225,5 +226,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.442811+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALLOCATENOCOCCUS MEDIUM" to "allocatenococcus_medium"
-    for consistent matching
+  notes: Normalized name from "ALLOCATENOCOCCUS MEDIUM" to
+    "allocatenococcus_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/catenococcus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006184
+  name: catenococcus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

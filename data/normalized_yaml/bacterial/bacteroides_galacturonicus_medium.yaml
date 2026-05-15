@@ -103,11 +103,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.1 and prepare medium in a gas atmosphere of 100% N2.
+  description: Adjust pH to 7.1 and prepare medium in a gas atmosphere of 100%
+    N2.
 - step_number: 2
   action: AUTOCLAVE
-  description: NaHCO3 is prepared as 5% (w/v) solution, filter sterilized and added
-    to the autoclaved medium.
+  description: NaHCO3 is prepared as 5% (w/v) solution, filter sterilized and
+    added to the autoclaved medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -130,5 +131,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.111630+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BACTEROIDES GALACTURONICUS MEDIUM" to "bacteroides_galacturonicus_medium"
-    for consistent matching
+  notes: Normalized name from "BACTEROIDES GALACTURONICUS MEDIUM" to
+    "bacteroides_galacturonicus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1265_BACTEROIDES_GALACTURONICUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004022
+  name: bacteroides_galacturonicus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1265; local
+    ingredient and concentration signatures match.

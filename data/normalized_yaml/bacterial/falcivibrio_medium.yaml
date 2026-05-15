@@ -42,9 +42,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Wilkins-Chalgren-Anaerobe-Broth (Oxoid) is supplemented with 0.3 g/l
-    of L-cysteine and 1.0 mg/l of resazurin. Prepare the medium under 100% nitrogen
-    gas. To the autoclaved medium add 50 ml/l of sterile serum (horse, bovine or lamb).
+  description: Wilkins-Chalgren-Anaerobe-Broth (Oxoid) is supplemented with 0.3
+    g/l of L-cysteine and 1.0 mg/l of resazurin. Prepare the medium under 100%
+    nitrogen gas. To the autoclaved medium add 50 ml/l of sterile serum (horse,
+    bovine or lamb).
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,6 +64,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.767041+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FALCIVIBRIO MEDIUM" to "falcivibrio_medium" for consistent
-    matching
+  notes: Normalized name from "FALCIVIBRIO MEDIUM" to "falcivibrio_medium" for
+    consistent matching
 kg_microbe_match: mediadive.medium:301
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_301_FALCIVIBRIO_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004799
+  name: falcivibrio_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 301; local
+    ingredient and concentration signatures match.

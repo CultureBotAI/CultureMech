@@ -127,13 +127,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except glucose), adjust pH to 7.5 and sparge
-    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+  description: Dissolve ingredients (except glucose), adjust pH to 7.5 and
+    sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave.
 - step_number: 2
   action: MIX
-  description: Add glucose to the medium after autoclaving from a sterile stock solution
-    prepared under 100% N2 gas.
+  description: Add glucose to the medium after autoclaving from a sterile stock
+    solution prepared under 100% N2 gas.
 applications:
 - Microbial cultivation
 curation_history:
@@ -152,5 +153,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:17.890632+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TRYPTONE THIOGLYCOLATE MEDIUM" to "tryptone_thioglycolate_medium"
-    for consistent matching
+  notes: Normalized name from "TRYPTONE THIOGLYCOLATE MEDIUM" to
+    "tryptone_thioglycolate_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_48_TRYPTONE_THIOGLYCOLATE_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005615
+  name: tryptone_thioglycolate_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

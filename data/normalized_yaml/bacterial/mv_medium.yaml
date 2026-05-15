@@ -345,8 +345,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.585119Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:38.899790Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -359,3 +359,49 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MV medium" to "mv_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/desulfovibrio_mv_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001779
+  name: desulfovibrio_mv_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/for_dsm_16036_dsm_16058_and_dsm_21394.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006179
+  name: for_dsm_16036_dsm_16058_and_dsm_21394
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_18151.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006180
+  name: for_dsm_18151
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/for_dsm_749_dsm_1741_dsm_7074_dsm_7075_dsm_8344_dsm_15449_dsm_16022_dsm_16057_dsm_16059_dsm_16695_dsm_17215_dsm_17524_dsm_17734_dsm_17965_dsm_18033_dsm_19190_dsm_19191_dsm_19430_dsm_19637_and_dsm_23265.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006178
+  name:
+    for_dsm_749_dsm_1741_dsm_7074_dsm_7075_dsm_8344_dsm_15449_dsm_16022_dsm_16057_dsm_16059_dsm_16695_dsm_17215_dsm_17524_dsm_17734_dsm_17965_dsm_18033_dsm_19190_dsm_19191_dsm_19430_dsm_19637_and_dsm_23265
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_641_modified_for_dsm_10349.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006175
+  name: medium_641_modified_for_dsm_10349
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_641_modified_for_dsm_13257.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006176
+  name: medium_641_modified_for_dsm_13257
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_641_modified_for_dsm_16056.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006177
+  name: medium_641_modified_for_dsm_16056
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

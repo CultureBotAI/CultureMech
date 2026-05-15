@@ -127,5 +127,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.962614+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PPES-II AGAR MEDIUM" to "ppes_ii_agar_medium" for consistent
-    matching
+  notes: Normalized name from "PPES-II AGAR MEDIUM" to "ppes_ii_agar_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1075_PPES-II_AGAR_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003662
+  name: ppes_ii_agar_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

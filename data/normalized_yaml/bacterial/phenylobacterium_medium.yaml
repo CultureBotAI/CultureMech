@@ -199,5 +199,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.412476+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PHENYLOBACTERIUM MEDIUM" to "phenylobacterium_medium"
-    for consistent matching
+  notes: Normalized name from "PHENYLOBACTERIUM MEDIUM" to
+    "phenylobacterium_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_363_PHENYLOBACTERIUM_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005086
+  name: phenylobacterium_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 363; local
+    ingredient and concentration signatures match.

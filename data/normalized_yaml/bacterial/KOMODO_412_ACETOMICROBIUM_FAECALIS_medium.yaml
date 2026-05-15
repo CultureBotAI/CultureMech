@@ -364,8 +364,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.296892Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:42.694056Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -381,5 +381,30 @@ curation_history:
 - timestamp: '2026-03-17T19:45:47.107898+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACETOMICROBIUM FAECALIS medium" to "acetomicrobium_faecalis_medium"
-    for consistent matching
+  notes: Normalized name from "ACETOMICROBIUM FAECALIS medium" to
+    "acetomicrobium_faecalis_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_412_modified_for_dsm_18806.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005234
+  name: medium_412_modified_for_dsm_18806
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_412_modified_for_dsm_23131.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005235
+  name: medium_412_modified_for_dsm_23131
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/acetomicrobium_faecalis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001521
+  name: acetomicrobium_faecalis_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 412; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 412; local
+  ingredient and concentration signatures match.

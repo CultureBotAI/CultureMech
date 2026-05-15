@@ -92,15 +92,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Refer to the composition of DSMZ medium 830 and either make up the
-    medium in 2 litres of 75% seawater or use half of the amounts of the components
-    specified and make up the medium in 1 litre of 75% seawater. Liquid medium can
-    be prepared by leaving out the agar.
+  description: Refer to the composition of DSMZ medium 830 and either make up
+    the medium in 2 litres of 75% seawater or use half of the amounts of the
+    components specified and make up the medium in 1 litre of 75% seawater.
+    Liquid medium can be prepared by leaving out the agar.
 - step_number: 2
   action: AUTOCLAVE
-  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding
-    agar. Add agar, heat medium to boiling to dissolve agar, and autoclave for 15
-    min at 121°C.
+  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before
+    adding agar. Add agar, heat medium to boiling to dissolve agar, and
+    autoclave for 15 min at 121°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -123,5 +123,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.677903+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALF STRENGTH R2A MEDIUM IN 75% SEAWATER" to "half_strength_r2a_medium_in_75_seawater"
-    for consistent matching
+  notes: Normalized name from "HALF STRENGTH R2A MEDIUM IN 75% SEAWATER" to
+    "half_strength_r2a_medium_in_75_seawater" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1320_HALF_STRENGTH_R2A_MEDIUM_IN_75_SEAWATER.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004075
+  name: half_strength_r2a_medium_in_75_seawater
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1320; local
+    ingredient and concentration signatures match.

@@ -368,7 +368,7 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:005007'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:34.735735'
+  timestamp: '2026-03-14T21:06:34.735735'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
 - timestamp: '2026-03-17T06:29:39.000000Z'
@@ -383,3 +383,12 @@ curation_history:
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: SPOROHALOBACTER LORTETII
+parent_media:
+  path: data/normalized_yaml/bacterial/sporohalobacter_lortetii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001420
+  name: sporohalobacter_lortetii_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature; child
+  records NaOH as a variable pH-adjuster extracted from source notes.

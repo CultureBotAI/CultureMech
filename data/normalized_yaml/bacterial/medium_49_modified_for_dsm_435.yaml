@@ -58,7 +58,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:50.868347+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 49 MODIFIED FOR DSM 435" to "medium_49_modified_for_dsm_435"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 49 MODIFIED FOR DSM 435" to
+    "medium_49_modified_for_dsm_435" for consistent matching
 ph_value: 7.2
 kg_microbe_match: mediadive.medium:49
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_49_C_10_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005633
+  name: c_10_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

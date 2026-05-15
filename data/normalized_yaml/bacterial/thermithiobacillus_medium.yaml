@@ -173,15 +173,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except phosphates and tetrathionate. The phosphates
-    are sterilized separately in 1/10 of medium volume and mixed with the other salts
-    when cool. Tetrathionate is sterilized by filtration and added to the autoclaved
-    medium. Adjust pH of complete medium to 6.9. For agar medium autoclave the phosphates
-    (in 100 ml), other salts (in 300 ml), and agar (in 600 ml) separately.
+  description: Dissolve ingredients except phosphates and tetrathionate. The
+    phosphates are sterilized separately in 1/10 of medium volume and mixed with
+    the other salts when cool. Tetrathionate is sterilized by filtration and
+    added to the autoclaved medium. Adjust pH of complete medium to 6.9. For
+    agar medium autoclave the phosphates (in 100 ml), other salts (in 300 ml),
+    and agar (in 600 ml) separately.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
-    then add other compounds. Adjust pH of final solution to 6.0 with NaOH.
+  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N
+    NaOH; then add other compounds. Adjust pH of final solution to 6.0 with
+    NaOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -204,5 +206,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.116541+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMITHIOBACILLUS MEDIUM" to "thermithiobacillus_medium"
-    for consistent matching
+  notes: Normalized name from "THERMITHIOBACILLUS MEDIUM" to
+    "thermithiobacillus_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/thiobacillus_tepidarius_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005027
+  name: thiobacillus_tepidarius_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

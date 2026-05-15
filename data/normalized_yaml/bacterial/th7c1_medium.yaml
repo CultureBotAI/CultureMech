@@ -306,4 +306,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:39.120200+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TH7C1 medium" to "th7c1_medium" for consistent matching
+  notes: Normalized name from "TH7C1 medium" to "th7c1_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/caldicoprobacter_algeriensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000755
+  name: caldicoprobacter_algeriensis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

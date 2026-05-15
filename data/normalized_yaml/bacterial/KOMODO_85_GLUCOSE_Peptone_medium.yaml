@@ -72,6 +72,17 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.603311+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GLUCOSE Peptone medium" to "glucose_peptone_medium"
-    for consistent matching
+  notes: Normalized name from "GLUCOSE Peptone medium" to
+    "glucose_peptone_medium" for consistent matching
 ph_value: 6.0
+parent_media:
+  path: data/normalized_yaml/bacterial/glucose_peptone_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002018
+  name: glucose_peptone_medium
+  notes: KOMODO record states DSMZ Medium 85 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

@@ -129,5 +129,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:11.167543+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TOGO Medium M1414" to "togo_medium_m1414" for consistent
-    matching
+  notes: Normalized name from "TOGO Medium M1414" to "togo_medium_m1414" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/togo_medium_m1415.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007952
+  name: togo_medium_m1415
+  notes: Sucrose increased from 200 g/L to 400 g/L while the TOGO M1414/M1415
+    base formulation remains unchanged.

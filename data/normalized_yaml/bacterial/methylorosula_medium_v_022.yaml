@@ -136,9 +136,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the liquid medium. Adjust to pH 6.0. Dispense the medium in
-    tubes or flasks fitted with screw caps. Sterilize by autoclaving. Before inoculation
-    add filter sterilized CH3OH to a final concentration of 0.5% v/v.
+  description: Prepare the liquid medium. Adjust to pH 6.0. Dispense the medium
+    in tubes or flasks fitted with screw caps. Sterilize by autoclaving. Before
+    inoculation add filter sterilized CH3OH to a final concentration of 0.5%
+    v/v.
 applications:
 - Microbial cultivation
 curation_history:
@@ -161,5 +162,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.466947+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOROSULA MEDIUM V-022" to "methylorosula_medium_v_022"
-    for consistent matching
+  notes: Normalized name from "METHYLOROSULA MEDIUM V-022" to
+    "methylorosula_medium_v_022" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1403_METHYLOROSULA_MEDIUM_V-022.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004119
+  name: methylorosula_medium_v_022
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1403; local
+    ingredient and concentration signatures match.

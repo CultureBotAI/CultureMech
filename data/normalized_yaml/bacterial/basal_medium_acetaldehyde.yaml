@@ -91,8 +91,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:17.280396+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Basal medium + Acetaldehyde" to "basal_medium_acetaldehyde"
-    for consistent matching
+  notes: Normalized name from "Basal medium + Acetaldehyde" to
+    "basal_medium_acetaldehyde" for consistent matching
 solutions:
 - preferred_term: Acetaldehyde**
   composition: []
@@ -109,3 +109,16 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/bacterial/basal_medium_benzaldehyde.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008614
+  name: basal_medium_benzaldehyde
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/basal_medium_formaldehyde.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008615
+  name: basal_medium_formaldehyde
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

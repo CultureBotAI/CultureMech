@@ -58,10 +58,10 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: AUTOCLAVE
-  description: To medium add 0.5% cellobiose (filter-sterilized) or distribute medium
-    (without agar) in 5 ml amounts in test tubes, add a strip of filter paper (7 cm
-    long) to each and autoclave, or place sterile pieces of filter paper on the surface
-    of agarized medium.
+  description: To medium add 0.5% cellobiose (filter-sterilized) or distribute
+    medium (without agar) in 5 ml amounts in test tubes, add a strip of filter
+    paper (7 cm long) to each and autoclave, or place sterile pieces of filter
+    paper on the surface of agarized medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -80,6 +80,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:12.799434+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CYTOPHAGA HUTCHINSONII MEDIUM" to "cytophaga_hutchinsonii_medium"
-    for consistent matching
+  notes: Normalized name from "CYTOPHAGA HUTCHINSONII MEDIUM" to
+    "cytophaga_hutchinsonii_medium" for consistent matching
 kg_microbe_match: mediadive.medium:160
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_160_CYTOPHAGA_HUTCHINSONII_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004185
+  name: cytophaga_hutchinsonii_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 160; local
+    ingredient and concentration signatures match.

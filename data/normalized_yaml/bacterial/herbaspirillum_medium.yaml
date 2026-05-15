@@ -112,8 +112,8 @@ preparation_steps:
   description: pH 7.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave at 121°C for 15 min and after sterilization add filter sterilized
-    solution A.
+  description: Autoclave at 121°C for 15 min and after sterilization add filter
+    sterilized solution A.
 - step_number: 3
   action: MIX
   description: pH 7.0.
@@ -135,5 +135,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.526438+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HERBASPIRILLUM MEDIUM" to "herbaspirillum_medium" for
-    consistent matching
+  notes: Normalized name from "HERBASPIRILLUM MEDIUM" to "herbaspirillum_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_538_HERBASPIRILLUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005964
+  name: herbaspirillum_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

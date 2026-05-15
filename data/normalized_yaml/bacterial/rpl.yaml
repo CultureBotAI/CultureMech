@@ -58,14 +58,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Bring PJ (Mail sol. C 76) to the boil then add rye grass.  Continue\
-    \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with\
-    \ deionized water.  Filter through GF/C paper \r\nand autoclave at 15 psi for\
-    \ 15 minutes."
+  description: "Bring PJ (Mail sol. C 76) to the boil then add rye grass.  Continue
+    to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with deionized
+    water.  Filter through GF/C paper \r\nand autoclave at 15 psi for 15 minutes."
 - step_number: 2
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
-    minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for
+    15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -85,3 +84,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "RPL" to "rpl" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/rpl_pj.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000398
+  name: rpl_pj
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

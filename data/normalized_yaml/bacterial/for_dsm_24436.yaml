@@ -313,4 +313,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.505007+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 24436" to "for_dsm_24436" for consistent matching
+  notes: Normalized name from "For DSM 24436" to "for_dsm_24436" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/fusibacter_paucivorans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006670
+  name: fusibacter_paucivorans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/fusibacter_tunisiensis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002011
+  name: fusibacter_tunisiensis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

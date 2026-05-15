@@ -68,5 +68,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.476094+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YED MEDIUM, salted" to "yed_medium_salted" for consistent
-    matching
+  notes: Normalized name from "YED MEDIUM, salted" to "yed_medium_salted" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1123_YED_medium_salted.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003827
+  name: yed_medium_salted
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

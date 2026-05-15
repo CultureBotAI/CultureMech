@@ -199,13 +199,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:46.235325Z'
   curator: mediadb-import
@@ -219,8 +221,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:57.076402Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:20:14.362882Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -232,8 +234,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:33.407543+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "'Yeast Mineral Medium (7.5 g/L Ethanol" to "yeast_mineral_medium_7_5_g_l_ethanol"
-    for consistent matching
+  notes: Normalized name from "'Yeast Mineral Medium (7.5 g/L Ethanol" to
+    "yeast_mineral_medium_7_5_g_l_ethanol" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 398
   term:
@@ -245,3 +247,10 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+variant_children:
+- path: data/normalized_yaml/fungal/yeast_mineral_medium_7_9_g_l_ethanol.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:010558
+  name: yeast_mineral_medium_7_9_g_l_ethanol
+  notes: Ethanol increased from 162.8 mM to 171.5 mM while the yeast mineral
+    medium formulation remains unchanged.

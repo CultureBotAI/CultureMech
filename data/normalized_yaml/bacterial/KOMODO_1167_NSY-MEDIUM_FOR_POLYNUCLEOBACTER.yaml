@@ -196,6 +196,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:37.496266+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NSY-MEDIUM FOR POLYNUCLEOBACTER" to "nsy_medium_for_polynucleobacter"
-    for consistent matching
+  notes: Normalized name from "NSY-MEDIUM FOR POLYNUCLEOBACTER" to
+    "nsy_medium_for_polynucleobacter" for consistent matching
 ph_value: 7.2
+parent_media:
+  path: data/normalized_yaml/bacterial/nsy_medium_for_polynucleobacter.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000609
+  name: nsy_medium_for_polynucleobacter
+  notes: KOMODO record explicitly cites DSMZ Medium 1167; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1167; local
+  ingredient and concentration signatures match.

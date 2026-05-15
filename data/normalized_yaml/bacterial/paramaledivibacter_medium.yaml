@@ -201,13 +201,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, glucose, vitamins, cysteine
-    and sulfide), sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
-    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. Add vitamins, glucose, sulfide and cysteine from sterile
-    anoxic stock solutions prepared under 100% N2 gas and bicarbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins
-    should be sterilized by filtration. The pH of the complete medium should be 7.0.
+  description: Dissolve ingredients (except bicarbonate, glucose, vitamins,
+    cysteine and sulfide), sparge medium with 100% N2 gas for 30 - 45 min to
+    make it anoxic. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add vitamins, glucose,
+    sulfide and cysteine from sterile anoxic stock solutions prepared under 100%
+    N2 gas and bicarbonate from a sterile anoxic stock solution prepared under
+    80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration.
+    The pH of the complete medium should be 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -218,8 +219,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.363070Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:10.935569Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -231,5 +232,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.666886+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PARAMALEDIVIBACTER MEDIUM" to "paramaledivibacter_medium"
-    for consistent matching
+  notes: Normalized name from "PARAMALEDIVIBACTER MEDIUM" to
+    "paramaledivibacter_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/clostridium_caminithermalis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006948
+  name: clostridium_caminithermalis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

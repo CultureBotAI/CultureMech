@@ -85,8 +85,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 7.4. After autoclaving, aseptically add filter-sterilized
-    methanol.
+  description: Adjust pH to 7.4. After autoclaving, aseptically add
+    filter-sterilized methanol.
 applications:
 - Microbial cultivation
 curation_history:
@@ -106,3 +106,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "K MEDIUM" to "k_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_k.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000559
+  name: medium_k
+  notes: Reviewed K Medium/Medium K pair; child keeps ammonium sulfate, KH2PO4,
+    NaCl, and MgSO4 unchanged but lowers FeSO4 from 0.02 to 0.002 g/L, lowers
+    methanol from 10 to 1 g/L, increases agar from 15 to 20 g/L, and changes pH
+    from 7.4 to 7.2.

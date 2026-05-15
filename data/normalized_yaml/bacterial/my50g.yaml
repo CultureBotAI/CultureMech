@@ -83,3 +83,14 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MY50G" to "my50g" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M26_M40Y_Agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009253
+  name: m40y_agar
+  notes: TOGO M40Y/M60Y/MY50G sucrose-dose family; reviewed as concentration
+    variant of M40Y agar.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Sucrose concentration increased from 400 g/L to 500 g/L; all other parsed
+  ingredient concentrations match the parent.

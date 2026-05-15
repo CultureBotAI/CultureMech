@@ -655,3 +655,18 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015740'
 data_quality_flags:
 - has_unmapped_ingredients
+variant_children:
+- path: data/normalized_yaml/specialized/sgw_northen_exometabolite_mix_2x.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015741
+  name: SGW Northen Exometabolite mix 2x
+  notes: SGW Northen Exometabolite mix 2x keeps salts and vitamins unchanged
+    while lowering the parsed exometabolite components, for example D-mannitol
+    from 880.5 uM to 176.1 uM and D-glucose from 824.8 uM to 164.96 uM.
+- path: data/normalized_yaml/specialized/sgw_northen_exometabolite_mix_5x.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015742
+  name: SGW Northen Exometabolite mix 5x
+  notes: SGW Northen Exometabolite mix 5x keeps salts and vitamins unchanged
+    while lowering the parsed exometabolite components, for example D-mannitol
+    from 880.5 uM to 440.25 uM and D-glucose from 824.8 uM to 412.4 uM.

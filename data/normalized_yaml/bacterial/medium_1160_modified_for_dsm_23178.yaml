@@ -119,7 +119,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:37.290222+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 1160 MODIFIED FOR DSM 23178" to "medium_1160_modified_for_dsm_23178"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 1160 MODIFIED FOR DSM 23178" to
+    "medium_1160_modified_for_dsm_23178" for consistent matching
 ph_value: 7.4
 high_metal: true
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_1160_PAYNE_SEGHAL_GIBBONS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003871
+  name: payne_seghal_gibbons_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

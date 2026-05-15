@@ -49,8 +49,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0 - 7.2. Rehydrate and grow lyophilized cells in liquid
-    broth and on agar.
+  description: Adjust pH to 7.0 - 7.2. Rehydrate and grow lyophilized cells in
+    liquid broth and on agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -69,5 +69,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.421030+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PSEUDOMONAS INDIGOFERA MEDIUM" to "pseudomonas_indigofera_medium"
-    for consistent matching
+  notes: Normalized name from "PSEUDOMONAS INDIGOFERA MEDIUM" to
+    "pseudomonas_indigofera_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_365_PSEUDOMONAS_INDIGOFERA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005088
+  name: pseudomonas_indigofera_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 365; local
+    ingredient and concentration signatures match.

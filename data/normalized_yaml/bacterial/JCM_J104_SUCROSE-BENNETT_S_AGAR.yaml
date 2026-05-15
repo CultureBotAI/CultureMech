@@ -67,6 +67,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:24.264595+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SUCROSE-BENNETT'S AGAR" to "sucrose_bennetts_agar"
-    for consistent matching
+  notes: Normalized name from "SUCROSE-BENNETT'S AGAR" to
+    "sucrose_bennetts_agar" for consistent matching
 kg_microbe_match: mediadive.medium:187
+variant_children:
+- path: data/normalized_yaml/bacterial/sucrose_bennetts_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001230
+  name: sucrose_bennetts_agar
+  notes: Sucrose-Bennett's Agar increases agar from 15 g/L to 20 g/L while yeast
+    extract, beef extract, N-Z amine, and sucrose remain unchanged.

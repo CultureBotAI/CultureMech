@@ -237,5 +237,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.121016+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM TERMITIDIS medium" to "clostridium_termitidis_medium"
-    for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM TERMITIDIS medium" to
+    "clostridium_termitidis_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/ruminiclostridium_cellobioparum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001671
+  name: ruminiclostridium_cellobioparum_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

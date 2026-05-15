@@ -33,7 +33,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: After autoclaving, adjust pH to 10.0 with sterile 10% Na2CO3 solution.
+  description: After autoclaving, adjust pH to 10.0 with sterile 10% Na2CO3
+    solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,6 +53,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.888439+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALKALINE NUTRIENT AGAR" to "alkaline_nutrient_agar"
-    for consistent matching
+  notes: Normalized name from "ALKALINE NUTRIENT AGAR" to
+    "alkaline_nutrient_agar" for consistent matching
 kg_microbe_match: mediadive.medium:12
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J74_NUTRIENT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003093
+  name: nutrient_agar
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

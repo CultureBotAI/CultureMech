@@ -175,9 +175,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube or
-    bottle) with a liquid to air ratio of about 1:10. pH after sterilization will
-    about 10.
+  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube
+    or bottle) with a liquid to air ratio of about 1:10. pH after sterilization
+    will about 10.
 - step_number: 2
   action: MIX
   description: 'After sterilization add from sterile stock solutions:'
@@ -186,10 +186,12 @@ preparation_steps:
   description: Incubate statically until growth occurs, then shake at 100 rpm.
 - step_number: 4
   action: DISSOLVE
-  description: (a white colloid will form which will rapidly dissolve after mixing)
+  description: (a white colloid will form which will rapidly dissolve after
+    mixing)
 - step_number: 5
   action: HEAT
-  description: Final pH should be 3, add HCl if needed. Sterilization - 120°C 20 min.
+  description: Final pH should be 3, add HCl if needed. Sterilization - 120°C 20
+    min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -208,5 +210,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.729601+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM" to
-    "thioalkalivibrio_thiocyanodenitrificans_medium" for consistent matching
+  notes: Normalized name from "THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM"
+    to "thioalkalivibrio_thiocyanodenitrificans_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1228_THIOALKALIVIBRIO_THIOCYANODENITRIFICANS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003983
+  name: thioalkalivibrio_thiocyanodenitrificans_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1228; local
+    ingredient and concentration signatures match.

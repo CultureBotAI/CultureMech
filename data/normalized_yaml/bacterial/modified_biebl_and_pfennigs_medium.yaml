@@ -159,8 +159,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
-    a rubber septum under a stream of nitrogen gas.
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes
+    with a rubber septum under a stream of nitrogen gas.
 applications:
 - Microbial cultivation
 curation_history:
@@ -179,5 +179,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.909688+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED BIEBL AND PFENNIG'S MEDIUM" to "modified_biebl_and_pfennigs_medium"
-    for consistent matching
+  notes: Normalized name from "MODIFIED BIEBL AND PFENNIG'S MEDIUM" to
+    "modified_biebl_and_pfennigs_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1069_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003657
+  name: modified_biebl_and_pfennigs_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

@@ -74,8 +74,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Agar may be added (15.0-18.0 g/l) to prepare solid media. Final pH
-    6.7.
+  description: Agar may be added (15.0-18.0 g/l) to prepare solid media. Final
+    pH 6.7.
 applications:
 - Microbial cultivation
 curation_history:
@@ -94,5 +94,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.828569+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS MEDIUM"
-    to "gluconacetobacter_johannae_and_g_azotocaptans_medium" for consistent matching
+  notes: Normalized name from "GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS
+    MEDIUM" to "gluconacetobacter_johannae_and_g_azotocaptans_medium" for
+    consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_920_GLUCONACETOBACTER_JOHANNAE_AND_G._AZOTOCAPTANS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006825
+  name: gluconacetobacter_johannae_and_g_azotocaptans_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

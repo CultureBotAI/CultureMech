@@ -121,11 +121,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine and cellobiose) and sparge medium
-    with 100% N2 gas for 30 - 45 m in to make it anoxic. Add cysteine, adjust pH to
-    7.2 and dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or
-    serum vials and autoclave. After sterilization add cellobiose from an anoxic stock
-    solution sterilized by filtration.
+  description: Dissolve ingredients (except cysteine and cellobiose) and sparge
+    medium with 100% N2 gas for 30 - 45 m in to make it anoxic. Add cysteine,
+    adjust pH to 7.2 and dispense under 100% N2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. After sterilization add
+    cellobiose from an anoxic stock solution sterilized by filtration.
 - step_number: 2
   action: ADJUST_PH
   description: 'Note: Some strains can be adapted to cellulose as substrate using
@@ -149,5 +149,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.585334+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RUMINICLOSTRIDIUM PAPYROSOLVENS MEDIUM" to "ruminiclostridium_papyrosolvens_medium"
-    for consistent matching
+  notes: Normalized name from "RUMINICLOSTRIDIUM PAPYROSOLVENS MEDIUM" to
+    "ruminiclostridium_papyrosolvens_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/clostridium_papyrosolvens_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004747
+  name: clostridium_papyrosolvens_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

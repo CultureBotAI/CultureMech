@@ -82,5 +82,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:39.023529+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MICROMONOSPORA MEGALOMICEA medium" to "micromonospora_megalomicea_medium"
-    for consistent matching
+  notes: Normalized name from "MICROMONOSPORA MEGALOMICEA medium" to
+    "micromonospora_megalomicea_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/micromonospora_megalomicea_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000743
+  name: micromonospora_megalomicea_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 127; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 127; local
+  ingredient and concentration signatures match.

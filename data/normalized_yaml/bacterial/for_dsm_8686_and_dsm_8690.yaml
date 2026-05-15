@@ -90,5 +90,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.156923+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 8686 and DSM 8690" to "for_dsm_8686_and_dsm_8690"
-    for consistent matching
+  notes: Normalized name from "For DSM 8686 and DSM 8690" to
+    "for_dsm_8686_and_dsm_8690" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/clostridium_thermohydrosulfuricum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006114
+  name: clostridium_thermohydrosulfuricum_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/thermoanaerobacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001750
+  name: thermoanaerobacter_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

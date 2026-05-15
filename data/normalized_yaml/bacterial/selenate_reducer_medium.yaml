@@ -380,9 +380,10 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 3
   action: MIX
-  description: It is recommended to cultivate strain DSM 17993 on agar plates which
-    may be prepared under aerobic conditions. Plates are then preincubated under anaerobic
-    conditions prior to inoculation. They will stay pink coloured.
+  description: It is recommended to cultivate strain DSM 17993 on agar plates
+    which may be prepared under aerobic conditions. Plates are then preincubated
+    under anaerobic conditions prior to inoculation. They will stay pink
+    coloured.
 - step_number: 4
   action: AUTOCLAVE
   description: 'For liquid medium, prepare solution A, distribute to anaerobic cultivation
@@ -393,8 +394,8 @@ preparation_steps:
     1.00 g KNO3 in 10 ml).'
 - step_number: 5
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 - step_number: 6
   action: FILTER_STERILIZE
   description: Stir for some hours, filter sterilize the solution.
@@ -416,6 +417,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.612100+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SELENATE REDUCER MEDIUM" to "selenate_reducer_medium"
-    for consistent matching
+  notes: Normalized name from "SELENATE REDUCER MEDIUM" to
+    "selenate_reducer_medium" for consistent matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1049_SELENATE_REDUCER_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003607
+  name: selenate_reducer_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

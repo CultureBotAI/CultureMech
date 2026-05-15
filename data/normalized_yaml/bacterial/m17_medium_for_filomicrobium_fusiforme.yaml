@@ -324,8 +324,8 @@ preparation_steps:
   description: Final pH 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Add NaHCO3 from a filter-sterilized stock solution when the medium
-    has cooled.
+  description: Add NaHCO3 from a filter-sterilized stock solution when the
+    medium has cooled.
 - step_number: 3
   action: DISSOLVE
   description: Dissolve the nitrilotriacetic acid.
@@ -340,8 +340,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH or H2SO4.
 - step_number: 7
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to
+    retard precipitation of the heavy metal ions.
 - step_number: 8
   action: HEAT
   description: Store in the dark and cold (5°C).
@@ -371,5 +371,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.681651+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "M17 MEDIUM FOR FILOMICROBIUM FUSIFORME" to "m17_medium_for_filomicrobium_fusiforme"
-    for consistent matching
+  notes: Normalized name from "M17 MEDIUM FOR FILOMICROBIUM FUSIFORME" to
+    "m17_medium_for_filomicrobium_fusiforme" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_768_M17_MEDIUM_FOR_FILOMICROBIUM_FUSIFORME.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006423
+  name: m17_medium_for_filomicrobium_fusiforme
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

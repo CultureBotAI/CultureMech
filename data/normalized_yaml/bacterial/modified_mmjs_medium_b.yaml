@@ -286,12 +286,12 @@ preparation_steps:
     (per liter):'
 - step_number: 2
   action: MIX
-  description: Finally, replace the gas phase with a N2-CO2-O2 (79:20:1, by volume)
-    gas mixture and pressurize to 200 kPa with the same gas mixture.
+  description: Finally, replace the gas phase with a N2-CO2-O2 (79:20:1, by
+    volume) gas mixture and pressurize to 200 kPa with the same gas mixture.
 - step_number: 3
   action: MIX
-  description: Use Trace mineral solution of Medium No. 413 with 0.01 g/L (final)
-    Na2MoO4 x 2H2O.
+  description: Use Trace mineral solution of Medium No. 413 with 0.01 g/L
+    (final) Na2MoO4 x 2H2O.
 applications:
 - Microbial cultivation
 curation_history:
@@ -310,5 +310,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:30.287489+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED MMJS MEDIUM (B)" to "modified_mmjs_medium_b"
-    for consistent matching
+  notes: Normalized name from "MODIFIED MMJS MEDIUM (B)" to
+    "modified_mmjs_medium_b" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/mmmjs_pt.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002951
+  name: mmmjs_pt
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

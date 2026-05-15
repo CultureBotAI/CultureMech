@@ -38,13 +38,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Add tea and sucrose to a 1 l flask, pour on freshly boiled tap water
-    and allow to stand for 15 minutes. Filter and cool to room temperature. When starting
-    with a small amount of tea fungus use a 50 ml beaker and 10 ml of the sweetened
-    tea (freed of leaves) which has been acidified by addition of 0.05 ml of boiled
-    vinegar (5%). Place a small disc of a cork stopper on the surface of the tea and
-    place the inoculum onto it. Cover the beaker with aluminium foil and incubate.
-    (Steam the cork disc for 15 min on two successive days).
+  description: Add tea and sucrose to a 1 l flask, pour on freshly boiled tap
+    water and allow to stand for 15 minutes. Filter and cool to room
+    temperature. When starting with a small amount of tea fungus use a 50 ml
+    beaker and 10 ml of the sweetened tea (freed of leaves) which has been
+    acidified by addition of 0.05 ml of boiled vinegar (5%). Place a small disc
+    of a cork stopper on the surface of the tea and place the inoculum onto it.
+    Cover the beaker with aluminium foil and incubate. (Steam the cork disc for
+    15 min on two successive days).
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,5 +64,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.351624+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TEA FUNGUS MEDIUM" to "tea_fungus_medium" for consistent
-    matching
+  notes: Normalized name from "TEA FUNGUS MEDIUM" to "tea_fungus_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_268_TEA_FUNGUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004671
+  name: tea_fungus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 268; local
+    ingredient and concentration signatures match.

@@ -93,11 +93,11 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Place a strip of sterile cellulose filter paper onto an agar plate.
-    Alternatively, place a strip of sterile cellulose filter paper into a culture
-    tube containing 5 ml of medium, thereby leaving 1 - 2 cm of the strip outside
-    of the medium. Inoculate the strain onto the cellulose filter paper. The strain
-    will grow on the cellulose paper only.
+  description: Place a strip of sterile cellulose filter paper onto an agar
+    plate. Alternatively, place a strip of sterile cellulose filter paper into a
+    culture tube containing 5 ml of medium, thereby leaving 1 - 2 cm of the
+    strip outside of the medium. Inoculate the strain onto the cellulose filter
+    paper. The strain will grow on the cellulose paper only.
 applications:
 - Microbial cultivation
 curation_history:
@@ -116,5 +116,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:13.533687+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPOROCYTOPHAGA MEDIUM" to "sporocytophaga_medium" for
-    consistent matching
+  notes: Normalized name from "SPOROCYTOPHAGA MEDIUM" to "sporocytophaga_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_167_SPOROCYTOPHAGA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004194
+  name: sporocytophaga_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 167; local
+    ingredient and concentration signatures match.

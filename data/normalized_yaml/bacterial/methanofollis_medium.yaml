@@ -279,12 +279,14 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and
+    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -298,13 +300,14 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
+    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
+    formulation) commercial product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -313,12 +316,13 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
+    Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -444,26 +448,28 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, vitamins, cysteine and sulfide)
-    and sparge medium for 30 - 45 min with 80% H2 and 20% CO2 gas mixture to make
-    it anoxic. Add and dissolve bicarbonate and adjust pH to 6.8, then distribute
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    After sterilization add cysteine and sulfide from sterile anoxic stock solutions
-    autoclaved under 100% N2 gas atmosphere. Vitamins are prepared under 100% N2 gas
-    atmosphere and sterilized by filtration. Adjust pH of complete medium to 6.5.
-    For incubation use sterile 80% H2 and 20% CO2 gas mixture at two atmospheres of
+  description: Dissolve ingredients (except bicarbonate, vitamins, cysteine and
+    sulfide) and sparge medium for 30 - 45 min with 80% H2 and 20% CO2 gas
+    mixture to make it anoxic. Add and dissolve bicarbonate and adjust pH to
+    6.8, then distribute under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. After sterilization add cysteine and
+    sulfide from sterile anoxic stock solutions autoclaved under 100% N2 gas
+    atmosphere. Vitamins are prepared under 100% N2 gas atmosphere and
+    sterilized by filtration. Adjust pH of complete medium to 6.5. For
+    incubation use sterile 80% H2 and 20% CO2 gas mixture at two atmospheres of
     pressure.
 - step_number: 2
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals
+    or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15
+    min and then centrifuged at 27,000 g for 20 min. The supernatant is made
+    anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas
+    atmosphere into anoxic serum vials to 30% of volume and then stored frozen
+    at -20°C.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to 7.5 with concentrated NaOH.
@@ -481,8 +487,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:44.598268Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:28.715510Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -498,5 +504,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:12.884090+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOFOLLIS MEDIUM" to "methanofollis_medium" for
-    consistent matching
+  notes: Normalized name from "METHANOFOLLIS MEDIUM" to "methanofollis_medium"
+    for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_161_METHANOMICROBIUM_MOBILE_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004186
+  name: methanomicrobium_mobile_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

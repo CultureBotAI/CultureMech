@@ -46,8 +46,8 @@ preparation_steps:
   description: Autoclave at 121 °C for 21 min.
 - step_number: 2
   action: MIX
-  description: After autoclavation add 4 mL from a sterile 2,3,5-triphenyltetrazolium
-    chloride stock solution (1% w/v).
+  description: After autoclavation add 4 mL from a sterile
+    2,3,5-triphenyltetrazolium chloride stock solution (1% w/v).
 applications:
 - Microbial cultivation
 references:
@@ -68,5 +68,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:14.863722+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Nutrient bromothymol blue agar NBTA" to "nutrient_bromothymol_blue_agar_nbta"
-    for consistent matching
+  notes: Normalized name from "Nutrient bromothymol blue agar NBTA" to
+    "nutrient_bromothymol_blue_agar_nbta" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_1_NUTRIENT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004261
+  name: nutrient_agar
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
+  1 source record.

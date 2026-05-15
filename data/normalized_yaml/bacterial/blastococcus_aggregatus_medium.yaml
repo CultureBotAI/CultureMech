@@ -131,7 +131,8 @@ preparation_steps:
   description: pH 7.0
 - step_number: 2
   action: MIX
-  description: Artificial sea water is prepared from a marine aquarium salts mixture.
+  description: Artificial sea water is prepared from a marine aquarium salts
+    mixture.
 applications:
 - Microbial cultivation
 curation_history:
@@ -142,8 +143,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.632182Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:06.699315Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -155,5 +156,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.913901+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BLASTOCOCCUS AGGREGATUS MEDIUM" to "blastococcus_aggregatus_medium"
-    for consistent matching
+  notes: Normalized name from "BLASTOCOCCUS AGGREGATUS MEDIUM" to
+    "blastococcus_aggregatus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_596_BLASTOCOCCUS_AGGREGATUS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006077
+  name: blastococcus_aggregatus_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

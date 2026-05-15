@@ -88,8 +88,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Carboxymethyl cellulose, sodium salt, high viscosity (Sigma No. C-5013),
-    works well.
+  description: Carboxymethyl cellulose, sodium salt, high viscosity (Sigma No.
+    C-5013), works well.
 applications:
 - Microbial cultivation
 curation_history:
@@ -108,5 +108,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.337489+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CARBOXYMETHYL CELLULOSE MEDIUM" to "carboxymethyl_cellulose_medium"
-    for consistent matching
+  notes: Normalized name from "CARBOXYMETHYL CELLULOSE MEDIUM" to
+    "carboxymethyl_cellulose_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1111_CARBOXYMETHYL_CELLULOSE_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003813
+  name: carboxymethyl_cellulose_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

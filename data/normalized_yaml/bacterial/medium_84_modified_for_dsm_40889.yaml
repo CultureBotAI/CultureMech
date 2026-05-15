@@ -79,5 +79,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.237952+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 84 MODIFIED FOR DSM 40889" to "medium_84_modified_for_dsm_40889"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 84 MODIFIED FOR DSM 40889" to
+    "medium_84_modified_for_dsm_40889" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_84_ROLLED_OATS_MINERAL_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006657
+  name: rolled_oats_mineral_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

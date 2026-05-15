@@ -87,4 +87,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:37.141536+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYG medium (E)" to "pyg_medium_e" for consistent matching
+  notes: Normalized name from "PYG medium (E)" to "pyg_medium_e" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/pyg_agar_e.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002930
+  name: pyg_agar_e
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/pyg_medium_e.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000578
+  name: pyg_medium_e
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

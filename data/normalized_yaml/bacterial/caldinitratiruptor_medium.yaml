@@ -251,17 +251,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate and glucose), sparge medium
-    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. Prior to inoculation add glucose from a sterile anoxic stock solutions
-    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
-    prepared under 80% N2 and 20% CO2 gas mixture. The pH of the complete medium should
-    be 7.0.
+  description: Dissolve ingredients (except carbonate and glucose), sparge
+    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it
+    anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Prior to inoculation add glucose from a
+    sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas
+    mixture. The pH of the complete medium should be 7.0.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -284,5 +284,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.006768+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CALDINITRATIRUPTOR MEDIUM" to "caldinitratiruptor_medium"
-    for consistent matching
+  notes: Normalized name from "CALDINITRATIRUPTOR MEDIUM" to
+    "caldinitratiruptor_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004013
+  name: caldinitratiruptor_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1251; local
+    ingredient and concentration signatures match.

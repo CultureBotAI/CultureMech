@@ -345,8 +345,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.358618Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:39.537479Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -358,4 +358,36 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.667343+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MPOB medium" to "mpob_medium" for consistent matching
+  notes: Normalized name from "MPOB medium" to "mpob_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_14823.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006286
+  name: for_dsm_14823
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_17232.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006288
+  name: for_dsm_17232
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_684_modified_for_dsm_14055.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006285
+  name: medium_684_modified_for_dsm_14055
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_684_modified_for_dsm_23957.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006287
+  name: medium_684_modified_for_dsm_23957
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/syntrophobacter_mpob_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001821
+  name: syntrophobacter_mpob_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

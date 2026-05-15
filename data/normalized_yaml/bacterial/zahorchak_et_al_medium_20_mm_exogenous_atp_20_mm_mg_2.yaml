@@ -265,13 +265,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:43.249039Z'
   curator: mediadb-import
@@ -293,9 +295,9 @@ curation_history:
 - timestamp: '2026-03-17T19:46:07.324359+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Zahorchak et al medium; 20 mM exogenous ATP, 20 mM
-    Mg^2+" to "zahorchak_et_al_medium_20_mm_exogenous_atp_20_mm_mg_2" for consistent
-    matching
+  notes: Normalized name from "Zahorchak et al medium; 20 mM exogenous ATP, 20
+    mM Mg^2+" to "zahorchak_et_al_medium_20_mm_exogenous_atp_20_mm_mg_2" for
+    consistent matching
 media_term:
   preferred_term: MediaDB Medium 70
   term:
@@ -307,3 +309,13 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/zahorchak_et_al_medium_10_mm_exogenous_atp_10_mm_mg_2.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007411
+  name: zahorchak_et_al_medium_10_mm_exogenous_atp_10_mm_mg_2
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Same ingredient identity signature but concentration signature differs from
+  parent.

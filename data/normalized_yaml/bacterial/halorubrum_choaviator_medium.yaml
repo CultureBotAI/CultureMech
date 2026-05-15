@@ -92,6 +92,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.594222+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALORUBRUM CHOAVIATOR MEDIUM" to "halorubrum_choaviator_medium"
-    for consistent matching
+  notes: Normalized name from "HALORUBRUM CHOAVIATOR MEDIUM" to
+    "halorubrum_choaviator_medium" for consistent matching
 high_metal: true
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1214_HALORUBRUM_CHOAVIATOR_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003965
+  name: halorubrum_choaviator_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1214; local
+    ingredient and concentration signatures match.

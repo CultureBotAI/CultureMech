@@ -69,8 +69,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 3.0 with 10 N H2SO4. Separately autoclave yeast extract
-    and glucose as 10% solutions, and add aseptically to the medium.
+  description: Adjust pH to 3.0 with 10 N H2SO4. Separately autoclave yeast
+    extract and glucose as 10% solutions, and add aseptically to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,5 +89,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.621419+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOGYMNOMONAS MEDIUM" to "thermogymnomonas_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOGYMNOMONAS MEDIUM" to
+    "thermogymnomonas_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/picrophilus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002594
+  name: picrophilus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

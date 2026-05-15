@@ -246,22 +246,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
-    to make it anoxic, dispense under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Solutions B, C, F, G, and H are autoclaved
-    separately under 100% N2 gas. Solution D is autoclaved under 80% N2 and 20% CO2
-    gas atmosphere and autoclaved. Solution E is prepared under 100% N2 gas atmosphere
-    and sterilized by filtration. To complete the medium appropriate amounts of solutions
-    B to H are added to the sterile solution A in the sequence as indicated. Final
-    pH of the medium should be checked and adjusted to 7.6 with a sterile anoxic stock
-    solution of Na2CO3 (5% w/v), if necessary.
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic, dispense under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Solutions B, C, F, G, and H
+    are autoclaved separately under 100% N2 gas. Solution D is autoclaved under
+    80% N2 and 20% CO2 gas atmosphere and autoclaved. Solution E is prepared
+    under 100% N2 gas atmosphere and sterilized by filtration. To complete the
+    medium appropriate amounts of solutions B to H are added to the sterile
+    solution A in the sequence as indicated. Final pH of the medium should be
+    checked and adjusted to 7.6 with a sterile anoxic stock solution of Na2CO3
+    (5% w/v), if necessary.
 - step_number: 2
   action: MIX
   description: Neutralized with NaOH.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -284,5 +285,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.353818+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPOROTOMACULUM MEDIUM" to "sporotomaculum_medium" for
-    consistent matching
+  notes: Normalized name from "SPOROTOMACULUM MEDIUM" to "sporotomaculum_medium"
+    for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/bt_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006540
+  name: bt_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

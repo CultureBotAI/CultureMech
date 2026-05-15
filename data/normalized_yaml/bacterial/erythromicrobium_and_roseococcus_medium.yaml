@@ -185,5 +185,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.667806+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ERYTHROMICROBIUM AND ROSEOCOCCUS MEDIUM" to "erythromicrobium_and_roseococcus_medium"
-    for consistent matching
+  notes: Normalized name from "ERYTHROMICROBIUM AND ROSEOCOCCUS MEDIUM" to
+    "erythromicrobium_and_roseococcus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_767_ERYTHROMICROBIUM_AND_ROSEOCOCCUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006422
+  name: erythromicrobium_and_roseococcus_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -329,5 +329,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:46.527275+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SULFORHABDUS MEDIUM" to "sulforhabdus_medium" for consistent
-    matching
+  notes: Normalized name from "SULFORHABDUS MEDIUM" to "sulforhabdus_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/desulfolutivibrio_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001493
+  name: desulfolutivibrio_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/desulfovibrio_sulfodismutans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005162
+  name: desulfovibrio_sulfodismutans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

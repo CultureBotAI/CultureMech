@@ -78,5 +78,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:14.504567+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TRICHOCOCCUS MEDIUM" to "trichococcus_medium" for consistent
-    matching
+  notes: Normalized name from "TRICHOCOCCUS MEDIUM" to "trichococcus_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_183_TRICHOCOCCUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004207
+  name: trichococcus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 183; local
+    ingredient and concentration signatures match.

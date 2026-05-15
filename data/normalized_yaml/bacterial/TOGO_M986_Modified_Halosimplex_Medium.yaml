@@ -143,8 +143,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:32.650514+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified Halosimplex Medium" to "modified_halosimplex_medium"
-    for consistent matching
+  notes: Normalized name from "Modified Halosimplex Medium" to
+    "modified_halosimplex_medium" for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Trace metal solution (see Medium [M292])
@@ -154,3 +154,16 @@ solutions:
     value: '2'
     unit: G_PER_L
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M293_Halosimplex_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009470
+  name: halosimplex_medium
+  notes: Reviewed source-local Modified Halosimplex concentration variant; child
+    shares the parsed base formulation with MgSO4 and NaCl concentration
+    differences.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed TOGO Halosimplex pair; child keeps K2HPO4, KCl, ammonium sulfate,
+  sodium pyruvate, glycerol, and agar unchanged while MgSO4 decreases from 20 to
+  10 g/L and NaCl increases from 200 to 210 g/L.

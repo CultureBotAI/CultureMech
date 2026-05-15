@@ -85,8 +85,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 7.0. After autoclaving, readjust pH to 8.5 with a sterile 5% Na2CO3 solution.
+  description: Add components to distilled water and bring volume to 1.0 L.
+    Adjust pH to 7.0. After autoclaving, readjust pH to 8.5 with a sterile 5%
+    Na2CO3 solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -109,6 +110,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.144162+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "JCM MEDIUM No. 166" to "jcm_medium_no_166" for consistent
-    matching
+  notes: Normalized name from "JCM MEDIUM No. 166" to "jcm_medium_no_166" for
+    consistent matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/natronobacterium_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001304
+  name: natronobacterium_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

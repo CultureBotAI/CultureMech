@@ -83,3 +83,15 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "M40Y agar" to "m40y_agar" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M26_M40Y_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009253
+  name: m40y_agar
+  notes: TOGO/JCM and TOGO/NBRC M40Y records have matching parsed ingredient
+    identities and concentrations; reviewed as source duplicate under the JCM
+    M40Y parent.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same parsed M40Y formulation as parent; source differs (JCM M33 parent, NBRC
+  M1598 child).

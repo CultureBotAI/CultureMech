@@ -49,10 +49,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sterilize vitamin B12 separately by filtration. Prepare and store yeast
-    cells as autoclaved stock suspension (5 g baker's yeast/100 ml distilled water,
-    adjust pH to 6.5 and autoclave). Adjust pH of medium to 7.2 with KOH before, and
-    after autoclaving and cooling to 50°C (use pH-indicator paper).
+  description: Sterilize vitamin B12 separately by filtration. Prepare and store
+    yeast cells as autoclaved stock suspension (5 g baker's yeast/100 ml
+    distilled water, adjust pH to 6.5 and autoclave). Adjust pH of medium to 7.2
+    with KOH before, and after autoclaving and cooling to 50°C (use pH-indicator
+    paper).
 - step_number: 2
   action: DISSOLVE
   description: 'Cultures of myxobacteria delivered freeze-dried: Please see our video
@@ -74,10 +75,11 @@ preparation_steps:
     plate.'
 - step_number: 4
   action: MIX
-  description: Incubate for up to 3 weeks (in particular Sorangium and Nannocystis
-    strains) at the temperature given for the strain, taking measures against desiccation.
-    If there is no growth after ten days, carefully split up the agar-culture-cubes
-    and squeeze the material to the agar plate and reincubate.
+  description: Incubate for up to 3 weeks (in particular Sorangium and
+    Nannocystis strains) at the temperature given for the strain, taking
+    measures against desiccation. If there is no growth after ten days,
+    carefully split up the agar-culture-cubes and squeeze the material to the
+    agar plate and reincubate.
 applications:
 - Microbial cultivation
 curation_history:
@@ -97,3 +99,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "VY/2 AGAR" to "vy_2_agar" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_9a_VY_2_REDUCED_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006986
+  name: vy_2_reduced_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

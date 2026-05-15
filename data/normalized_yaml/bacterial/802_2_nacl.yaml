@@ -91,7 +91,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:14.993206+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "802 + 2% NaCl" to "802_2_nacl" for consistent matching
+  notes: Normalized name from "802 + 2% NaCl" to "802_2_nacl" for consistent
+    matching
 solutions:
 - preferred_term: Hipolypepton*
   composition: []
@@ -100,3 +101,22 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
   name: Unknown solution
+variant_children:
+- path: data/normalized_yaml/bacterial/802_10_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008295
+  name: 802_10_nacl
+  notes: Name suggests salt/salinity change; verify concentration delta against
+    source.
+- path: data/normalized_yaml/bacterial/802_3_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008695
+  name: 802_3_nacl
+  notes: Name suggests salt/salinity change; verify concentration delta against
+    source.
+- path: data/normalized_yaml/bacterial/802_5_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008294
+  name: 802_5_nacl
+  notes: Name suggests salt/salinity change; verify concentration delta against
+    source.

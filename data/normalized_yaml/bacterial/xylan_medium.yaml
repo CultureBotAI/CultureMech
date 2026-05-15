@@ -102,4 +102,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.815329+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "XYLAN MEDIUM" to "xylan_medium" for consistent matching
+  notes: Normalized name from "XYLAN MEDIUM" to "xylan_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1235_XYLAN_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003992
+  name: xylan_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1235; local
+    ingredient and concentration signatures match.

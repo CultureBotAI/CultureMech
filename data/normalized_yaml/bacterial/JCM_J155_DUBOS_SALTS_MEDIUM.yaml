@@ -75,9 +75,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2. Autoclave and dispense into slopes. When the agar
-    has solidified, place a strip of sterile filter paper onto the surface of each
-    slope. Inoculate onto the filter paper.
+  description: Adjust pH to 7.2. Autoclave and dispense into slopes. When the
+    agar has solidified, place a strip of sterile filter paper onto the surface
+    of each slope. Inoculate onto the filter paper.
 applications:
 - Microbial cultivation
 curation_history:
@@ -96,5 +96,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.084131+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DUBOS SALTS MEDIUM" to "dubos_salts_medium" for consistent
-    matching
+  notes: Normalized name from "DUBOS SALTS MEDIUM" to "dubos_salts_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/dubos_salts_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000601
+  name: dubos_salts_medium
+  notes: Both records are MediaDive Dubos Salts Medium solid agar formulations
+    with identical parsed concentrations; model as a source duplicate under the
+    existing canonical Dubos Salts parent.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same Dubos Salts Medium ingredient and concentration signature; pH 7.2 and
+  solid agar state match.

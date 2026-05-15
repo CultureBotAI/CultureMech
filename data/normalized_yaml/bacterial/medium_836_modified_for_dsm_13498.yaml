@@ -230,6 +230,15 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.130699+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 836 MODIFIED FOR DSM 13498" to "medium_836_modified_for_dsm_13498"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 836 MODIFIED FOR DSM 13498" to
+    "medium_836_modified_for_dsm_13498" for consistent matching
 ph_value: 7.5
+parent_media:
+  path: data/normalized_yaml/bacterial/desulfitobacterium_pcp_1_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001993
+  name: desulfitobacterium_pcp_1_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

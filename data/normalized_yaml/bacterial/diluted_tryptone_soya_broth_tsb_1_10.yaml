@@ -75,5 +75,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:13.908023+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DILUTED TRYPTONE SOYA BROTH (TSB) 1:10" to "diluted_tryptone_soya_broth_tsb_1_10"
-    for consistent matching
+  notes: Normalized name from "DILUTED TRYPTONE SOYA BROTH (TSB) 1:10" to
+    "diluted_tryptone_soya_broth_tsb_1_10" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/tryptone_soya_broth_tsb.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001677
+  name: tryptone_soya_broth_tsb
+  notes: Both records are MediaDive Tryptone Soya Broth formulations; the child
+    is explicitly labeled 1:10 and scales all parsed components ten-fold lower.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Diluted TSB 1:10 decreases casein peptone 17 to 1.7 g/L, soy peptone 3 to 0.3
+  g/L, glucose 2.5 to 0.25 g/L, NaCl 5 to 0.5 g/L, and K2HPO4 2.5 to 0.25 g/L.

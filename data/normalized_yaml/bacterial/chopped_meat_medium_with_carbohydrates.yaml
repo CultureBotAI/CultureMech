@@ -162,11 +162,12 @@ preparation_steps:
     add:'
 - step_number: 2
   action: AUTOCLAVE
-  description: To make medium anoxic boil it, cool under 100% N2 gas atmosphere, add
-    0.5 g/l L-cysteine hydrochloride and adjust pH to 7.0. Dispense under same gas
-    atmosphere 7 ml medium into Hungate-type tubes (for strains demanding meat particles
-    put those first into the tube (use 1 part meat particles to 4 or 5 parts fluid)).
-    Autoclave at 121°C for 30 min. For agar slants use 15.0 g agar per 1000.0 ml medium.
+  description: To make medium anoxic boil it, cool under 100% N2 gas atmosphere,
+    add 0.5 g/l L-cysteine hydrochloride and adjust pH to 7.0. Dispense under
+    same gas atmosphere 7 ml medium into Hungate-type tubes (for strains
+    demanding meat particles put those first into the tube (use 1 part meat
+    particles to 4 or 5 parts fluid)). Autoclave at 121°C for 30 min. For agar
+    slants use 15.0 g agar per 1000.0 ml medium.
 - step_number: 3
   action: MIX
   description: 'In some cases (as indicated in the catalogue) the addition of Haemin
@@ -174,16 +175,16 @@ preparation_steps:
     either  or'
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
-    water and filter sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with
+    distilled water and filter sterilize. Store refrigerated.
 - step_number: 5
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
-    Store refrigerated in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter
+    sterilize. Store refrigerated in a brown bottle.
 - step_number: 6
   action: FILTER_STERILIZE
-  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
-    in water and filter sterilize. Store refrigerated in a brown bottle.
+  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05
+    mg/ml in water and filter sterilize. Store refrigerated in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -206,5 +207,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.306937+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CHOPPED MEAT MEDIUM WITH CARBOHYDRATES" to "chopped_meat_medium_with_carbohydrates"
-    for consistent matching
+  notes: Normalized name from "CHOPPED MEAT MEDIUM WITH CARBOHYDRATES" to
+    "chopped_meat_medium_with_carbohydrates" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_110_CHOPPED_MEAT_medium_WITH_CARBOHYDRATES.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003811
+  name: chopped_meat_medium_with_carbohydrates
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

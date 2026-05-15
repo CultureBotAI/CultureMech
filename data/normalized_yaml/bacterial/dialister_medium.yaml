@@ -150,7 +150,8 @@ preparation_steps:
   description: 'To 10 ml of the dialister medium add aseptically:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Filter-sterilize all solutions and incubate them in oxygen-free atmosphere.
+  description: Filter-sterilize all solutions and incubate them in oxygen-free
+    atmosphere.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.0.
@@ -159,8 +160,8 @@ preparation_steps:
   description: Incubate in oxygen-free, 5 - 10% CO2 containing atmosphere.
 - step_number: 5
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
-    Store refrigerated in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter
+    sterilize. Store refrigerated in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -183,5 +184,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.277792+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DIALISTER MEDIUM" to "dialister_medium" for consistent
-    matching
+  notes: Normalized name from "DIALISTER MEDIUM" to "dialister_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1107_DIALISTER_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003807
+  name: dialister_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

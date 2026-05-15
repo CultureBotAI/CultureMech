@@ -78,6 +78,15 @@ curation_history:
 - timestamp: '2026-03-17T19:46:01.220837+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 884 MODIFIED FOR DSM 13023" to "medium_884_modified_for_dsm_13023"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 884 MODIFIED FOR DSM 13023" to
+    "medium_884_modified_for_dsm_13023" for consistent matching
 kg_microbe_match: mediadive.medium:884
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_884_TWEEN_80-AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006735
+  name: tween_80_agar
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

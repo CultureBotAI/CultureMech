@@ -89,5 +89,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:49.216620+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI" to "nitrogen_free_medium_for_pseudomonas_stutzeri"
-    for consistent matching
+  notes: Normalized name from "NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI" to
+    "nitrogen_free_medium_for_pseudomonas_stutzeri" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_460_modified_for_dsm_4166.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005465
+  name: medium_460_modified_for_dsm_4166
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/nitrogen_free_medium_for_pseudomonas_stutzeri.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001574
+  name: nitrogen_free_medium_for_pseudomonas_stutzeri
+  notes: KOMODO record states DSMZ Medium 460 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

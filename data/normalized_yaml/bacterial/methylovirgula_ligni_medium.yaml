@@ -150,10 +150,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust to pH 5.0 - 5.8. Prepare the medium in flasks or tubes with
-    screw caps. The methanol may either be filter sterilised or autoclaved in half
-    full serum bottles sealed with a rubber stopper and a crimp closure. Add to the
-    cooled autoclaved medium. Agar may be added at 15 g/l for solid media.
+  description: Adjust to pH 5.0 - 5.8. Prepare the medium in flasks or tubes
+    with screw caps. The methanol may either be filter sterilised or autoclaved
+    in half full serum bottles sealed with a rubber stopper and a crimp closure.
+    Add to the cooled autoclaved medium. Agar may be added at 15 g/l for solid
+    media.
 applications:
 - Microbial cultivation
 curation_history:
@@ -176,8 +177,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.637635+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOVIRGULA LIGNI MEDIUM" to "methylovirgula_ligni_medium"
-    for consistent matching
+  notes: Normalized name from "METHYLOVIRGULA LIGNI MEDIUM" to
+    "methylovirgula_ligni_medium" for consistent matching
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: METHYLOVIRGULA LIGNI
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1219_METHYLOVIRGULA_LIGNI_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003970
+  name: methylovirgula_ligni_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1219; local
+    ingredient and concentration signatures match.

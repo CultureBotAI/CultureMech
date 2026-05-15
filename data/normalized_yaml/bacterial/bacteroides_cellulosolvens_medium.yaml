@@ -354,8 +354,8 @@ preparation_steps:
   description: Filter sterilize cellobiose separately.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Final pH 7.0 (with KOH).
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Final pH 7.0 (with KOH).
 applications:
 - Microbial cultivation
 curation_history:
@@ -382,5 +382,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.879522+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BACTEROIDES CELLULOSOLVENS MEDIUM" to "bacteroides_cellulosolvens_medium"
-    for consistent matching
+  notes: Normalized name from "BACTEROIDES CELLULOSOLVENS MEDIUM" to
+    "bacteroides_cellulosolvens_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_315_BACTEROIDES_CELLULOSOLVENS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005002
+  name: bacteroides_cellulosolvens_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 315; local
+    ingredient and concentration signatures match.

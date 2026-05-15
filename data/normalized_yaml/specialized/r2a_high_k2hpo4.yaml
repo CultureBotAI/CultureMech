@@ -78,3 +78,14 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015691'
 data_quality_flags:
 - has_unmapped_ingredients
+parent_media:
+  path: data/normalized_yaml/specialized/r2a_low_k2hpo4.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015696
+  name: R2A_low_K2HPO4
+  notes: Reviewed FEBA R2A phosphate pair; high-K2HPO4 record differs only in
+    potassium phosphate dibasic concentration.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Potassium phosphate dibasic increased from 50 micromolar to 1.75 mM while the
+  R2A formulation remains unchanged.

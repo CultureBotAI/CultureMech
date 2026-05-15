@@ -182,6 +182,30 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.860818+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CASTENHOLZ MEDIUM" to "castenholz_medium" for consistent
-    matching
+  notes: Normalized name from "CASTENHOLZ MEDIUM" to "castenholz_medium" for
+    consistent matching
 ph_value: 8.2
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_86_modified_for_dsm_11376.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006678
+  name: medium_86_modified_for_dsm_11376
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_86_modified_for_dsm_11377.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006679
+  name: medium_86_modified_for_dsm_11377
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/castenholz_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002026
+  name: castenholz_medium
+  notes: KOMODO record states DSMZ Medium 86 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

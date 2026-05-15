@@ -165,5 +165,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:29.453430+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified Brock's Basal Salts-Yeast Extract Medeium
-    (B)" to "modified_brocks_basal_salts_yeast_extract_medeium_b" for consistent matching
+  notes: Normalized name from "Modified Brock's Basal Salts-Yeast Extract
+    Medeium (B)" to "modified_brocks_basal_salts_yeast_extract_medeium_b" for
+    consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/modified_brocks_basal_salts_yeast_extract_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009937
+  name: modified_brocks_basal_salts_yeast_extract_medium
+  notes: Reviewed TOGO modified Brock basal salts yeast-extract pair; variant B
+    differs only in yeast extract concentration.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Yeast extract (BD-Difco) decreased from 5 g/L to 0.5 g/L while the modified
+  Brock basal salts medium remains unchanged.

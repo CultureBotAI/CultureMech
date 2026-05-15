@@ -64,9 +64,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: Make up the medium without the ethanol, adjust to pH 7.0 and sterilize
-    by autoclaving. Add sterile ethanol to the sterile cooled medium. The medium may
-    be solidified by adding 15.0 g/l agar.
+  description: Make up the medium without the ethanol, adjust to pH 7.0 and
+    sterilize by autoclaving. Add sterile ethanol to the sterile cooled medium.
+    The medium may be solidified by adding 15.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -85,5 +85,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.109632+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TUA ACETOBACTER MEDIUM" to "tua_acetobacter_medium"
-    for consistent matching
+  notes: Normalized name from "TUA ACETOBACTER MEDIUM" to
+    "tua_acetobacter_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/JCM_J709_TUA_ACETOBACTER_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003055
+  name: tua_acetobacter_medium
+  notes: Same TUA Acetobacter Medium formulation with only rounding-scale
+    differences in glucose, glycerol, peptone, yeast extract, and agar.

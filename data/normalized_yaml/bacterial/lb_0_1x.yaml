@@ -40,3 +40,14 @@ curation_history:
 data_quality_flags:
 - has_unmapped_ingredients
 kg_microbe_match: mediadive.medium:74
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M2314_LB_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008901
+  name: lb_medium
+  notes: Both records are liquid LB formulations; the child is explicitly
+    labeled LB 0.1x and preserves the LB ingredient set at lower concentration.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- LB 0.1x decreases tryptone from 10 g/L to 1 g/L, yeast extract from 5 g/L to
+  0.5 g/L, and sodium chloride from 10 g/L to 0.5 g/L.

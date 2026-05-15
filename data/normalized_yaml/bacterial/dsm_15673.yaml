@@ -155,3 +155,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "DSM 15673" to "dsm_15673" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_1007_MINERAL_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003510
+  name: mineral_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

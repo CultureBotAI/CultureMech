@@ -87,8 +87,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 7.2. Place a strip of sterile filter paper on cooled agar
-    and inoculate on filter strip.
+  description: Adjust pH to 7.2. Place a strip of sterile filter paper on cooled
+    agar and inoculate on filter strip.
 applications:
 - Microbial cultivation
 curation_history:
@@ -107,5 +107,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:14.642300+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CHAETOMIUM MEDIUM" to "chaetomium_medium" for consistent
-    matching
+  notes: Normalized name from "CHAETOMIUM MEDIUM" to "chaetomium_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_188_CHAETOMIUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004212
+  name: chaetomium_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 188; local
+    ingredient and concentration signatures match.

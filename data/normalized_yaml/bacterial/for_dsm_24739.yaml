@@ -358,8 +358,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.541763Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:29.991242Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -375,4 +375,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:37.342360+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 24739" to "for_dsm_24739" for consistent matching
+  notes: Normalized name from "For DSM 24739" to "for_dsm_24739" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_15011_and_dsm_24906.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003874
+  name: for_dsm_15011_and_dsm_24906
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/oceanotoga_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000604
+  name: oceanotoga_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

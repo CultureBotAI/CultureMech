@@ -83,3 +83,28 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "M40Y Agar" to "m40y_agar" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M3048_M40Y_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009561
+  name: m40y_agar
+  notes: Same parsed M40Y formulation as parent; source differs (JCM M33 parent,
+    NBRC M1598 child).
+- path: data/normalized_yaml/bacterial/TOGO_M27_M60Y_Agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009348
+  name: m60y_agar
+  notes: Sucrose concentration increased from 400 g/L to 600 g/L; all other
+    parsed ingredient concentrations match the parent.
+- path: data/normalized_yaml/bacterial/m60y.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008594
+  name: m60y
+  notes: Sucrose concentration increased from 400 g/L to 600 g/L; all other
+    parsed ingredient concentrations match the parent.
+- path: data/normalized_yaml/bacterial/my50g.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008657
+  name: my50g
+  notes: Sucrose concentration increased from 400 g/L to 500 g/L; all other
+    parsed ingredient concentrations match the parent.

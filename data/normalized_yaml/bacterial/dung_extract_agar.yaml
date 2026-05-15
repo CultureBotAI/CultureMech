@@ -87,5 +87,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.830389+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DUNG EXTRACT AGAR" to "dung_extract_agar" for consistent
-    matching
+  notes: Normalized name from "DUNG EXTRACT AGAR" to "dung_extract_agar" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_781_DUNG_EXTRACT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006480
+  name: dung_extract_agar
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

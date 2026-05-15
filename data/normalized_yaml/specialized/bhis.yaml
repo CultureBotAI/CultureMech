@@ -60,11 +60,27 @@ ingredients:
     651.94'
 description: Brain heart infusion salt broth
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
-sources:
-- database: CultureBotHT
-  database_id: BHIS
-  url: https://github.com/CultureBotAI/CultureBotHT
+category: specialized
+source_data:
+  origin: CultureBotHT
+  notes: 'database_id: BHIS; url: https://github.com/CultureBotAI/CultureBotHT'
+variants:
+- name: bhis_brachyspira_pilosicoli_p43_growth
+  description: BHIS broth condition supporting growth of the Brachyspira pilosicoli
+    type strain P43/6/78T.
+  modifications:
+  - Incubate BHIS broth anaerobically for Brachyspira growth.
+  - Source reports growth at 37 to 42 degrees C.
+  purpose: Capture strain-specific BHIS growth evidence under the parent BHIS
+    broth record.
+  evidence:
+  - reference: PMID:8573497
+    supports: SUPPORT
+    snippet: In BHIS broth, P43/6/78T cells had a doubling time of 1 to 2 h and grew
+      to a maximum cell density of 2 x 10(9) cells per ml at 37 to 42 degrees C.
+    explanation: The source directly reports growth of the Brachyspira pilosicoli
+      type strain P43/6/78T in BHIS broth, supporting this strain-specific growth
+      condition as a variant of the BHIS parent record.
 curation_history:
 - timestamp: '2026-03-18T04:31:12.482767+00:00'
   curator: import_from_culturebotht.py
@@ -76,3 +92,26 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015493'
 data_quality_flags:
 - has_unmapped_ingredients
+target_organisms:
+- preferred_term: Brachyspira pilosicoli
+  term:
+    id: NCBITaxon:1042417
+    label: Brachyspira pilosicoli P43/6/78
+  genome_assembly_id:
+  - GCA_000325665.1
+  - GCF_000325665.1
+  strain: P43/6/78T; ATCC 51139
+  growth_metrics:
+  - doubling_time_minutes: 60.0
+    temperature_celsius: 37.0
+    measurement_conditions: BHIS broth; source reports 1 to 2 h doubling time,
+      maximum cell density of 2 x 10(9) cells per ml, and growth at 37 to 42
+      degrees C.
+    evidence:
+    - reference: PMID:8573497
+      supports: SUPPORT
+      snippet: In BHIS broth, P43/6/78T cells had a doubling time of 1 to 2 h and grew
+        to a maximum cell density of 2 x 10(9) cells per ml at 37 to 42 degrees C.
+      explanation: Auto-curated from specialized media review; the source reports
+        quantitative growth of Brachyspira pilosicoli P43/6/78T in BHIS broth.
+    is_max_attainment: false

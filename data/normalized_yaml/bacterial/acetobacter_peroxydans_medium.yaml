@@ -42,7 +42,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: After sterilization add 60 ml ethanol (50% v/v), sterilized by filtration.
+  description: After sterilization add 60 ml ethanol (50% v/v), sterilized by
+    filtration.
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,6 +62,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.270468+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACETOBACTER PEROXYDANS MEDIUM" to "acetobacter_peroxydans_medium"
-    for consistent matching
+  notes: Normalized name from "ACETOBACTER PEROXYDANS MEDIUM" to
+    "acetobacter_peroxydans_medium" for consistent matching
 kg_microbe_match: mediadive.medium:254
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_254_ACETOBACTER_PEROXYDANS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004656
+  name: acetobacter_peroxydans_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 254; local
+    ingredient and concentration signatures match.

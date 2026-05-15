@@ -313,16 +313,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve the ingredients (except carbonate, bicarbonate, vitamins,
-    formate and sulfide,) and sparge medium with 100% N2 gas for 30 - 45 min to make
-    it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 8.8 - 9.0,
-    then dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. Before use add vitamins (sterilized by filtration), formate
-    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.
+  description: Dissolve the ingredients (except carbonate, bicarbonate,
+    vitamins, formate and sulfide,) and sparge medium with 100% N2 gas for 30 -
+    45 min to make it anoxic. Add and dissolve carbonate and bicarbonate, adjust
+    pH to 8.8 - 9.0, then dispense under 100% N2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Before use add vitamins
+    (sterilized by filtration), formate and sulfide from sterile anoxic stock
+    solutions prepared under 100% N2 gas.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -333,8 +334,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.809898Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:09.517624Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -346,5 +347,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.088327+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOFALX MEDIUM" to "desulfofalx_medium" for consistent
-    matching
+  notes: Normalized name from "DESULFOFALX MEDIUM" to "desulfofalx_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_16529.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006695
+  name: for_dsm_16529
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

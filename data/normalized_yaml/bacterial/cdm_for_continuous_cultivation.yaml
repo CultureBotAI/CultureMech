@@ -93,13 +93,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:45.745511Z'
   curator: mediadb-import
@@ -117,8 +119,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:05.343971+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CDM for Continuous Cultivation" to "cdm_for_continuous_cultivation"
-    for consistent matching
+  notes: Normalized name from "CDM for Continuous Cultivation" to
+    "cdm_for_continuous_cultivation" for consistent matching
 media_term:
   preferred_term: MediaDB Medium 343
   term:
@@ -130,3 +132,17 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+parent_media:
+  path: data/normalized_yaml/bacterial/cdm_for_batch_cultivation.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007211
+  name: cdm_for_batch_cultivation
+  notes: Reviewed defined CDM cultivation pair; continuous-cultivation child
+    shares the parent formulation with glucose and ammonium sulfate
+    concentration changes as the curated variant axis.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed CDM batch/continuous cultivation records; child keeps the same
+  defined base formulation but lowers glucose from 126.2 to 40.37 mM and
+  ammonium sulfate from 55.24 to 37.84 mM while the remaining parsed
+  concentrations match.

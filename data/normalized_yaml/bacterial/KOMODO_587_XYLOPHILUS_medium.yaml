@@ -78,6 +78,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.895583+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "XYLOPHILUS medium" to "xylophilus_medium" for consistent
-    matching
+  notes: Normalized name from "XYLOPHILUS medium" to "xylophilus_medium" for
+    consistent matching
 kg_microbe_match: mediadive.medium:587
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_587_modified_for_dsm_7250.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006065
+  name: medium_587_modified_for_dsm_7250
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/xylophilus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001714
+  name: xylophilus_medium
+  notes: KOMODO record states DSMZ Medium 587 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

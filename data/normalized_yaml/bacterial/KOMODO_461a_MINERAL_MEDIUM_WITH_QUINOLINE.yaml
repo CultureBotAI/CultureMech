@@ -112,6 +112,86 @@ curation_history:
 - timestamp: '2026-03-17T19:45:49.301025+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MINERAL MEDIUM WITH QUINOLINE" to "mineral_medium_with_quinoline"
-    for consistent matching
+  notes: Normalized name from "MINERAL MEDIUM WITH QUINOLINE" to
+    "mineral_medium_with_quinoline" for consistent matching
 high_metal: true
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_461_MINERAL_MEDIUM_NAGEL_AND_ANDREESEN.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005480
+  name: mineral_medium_nagel_and_andreesen
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_11853.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005468
+  name: medium_461_modified_for_dsm_11853
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_13477.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005469
+  name: medium_461_modified_for_dsm_13477
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_14262.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005470
+  name: medium_461_modified_for_dsm_14262
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_16637.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005471
+  name: medium_461_modified_for_dsm_16637
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_6284.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005472
+  name: medium_461_modified_for_dsm_6284
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_6384.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005473
+  name: medium_461_modified_for_dsm_6384
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_6387.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005474
+  name: medium_461_modified_for_dsm_6387
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_6388.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005475
+  name: medium_461_modified_for_dsm_6388
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_6392.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005476
+  name: medium_461_modified_for_dsm_6392
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_7215.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005477
+  name: medium_461_modified_for_dsm_7215
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_7216.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005478
+  name: medium_461_modified_for_dsm_7216
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_461_modified_for_dsm_9506.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005479
+  name: medium_461_modified_for_dsm_9506
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

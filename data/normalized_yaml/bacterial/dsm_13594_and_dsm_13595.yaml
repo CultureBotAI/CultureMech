@@ -94,5 +94,15 @@ curation_history:
 - timestamp: '2026-03-17T19:46:01.963614+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DSM 13594 and DSM 13595" to "dsm_13594_and_dsm_13595"
-    for consistent matching
+  notes: Normalized name from "DSM 13594 and DSM 13595" to
+    "dsm_13594_and_dsm_13595" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_920_GLUCONACETOBACTER_JOHANNAE_AND_G._AZOTOCAPTANS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006825
+  name: gluconacetobacter_johannae_and_g_azotocaptans_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

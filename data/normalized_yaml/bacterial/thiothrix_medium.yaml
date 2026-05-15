@@ -167,9 +167,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.5 before autoclaving. Sterilize separately a 10% (w/v)
-    solution of Na2S x 9 H2O; add the following amount of this solution to the medium
-    after autoclaving (= shortly before using the medium).
+  description: Adjust pH to 7.5 before autoclaving. Sterilize separately a 10%
+    (w/v) solution of Na2S x 9 H2O; add the following amount of this solution to
+    the medium after autoclaving (= shortly before using the medium).
 - step_number: 2
   action: MIX
   description: 'Note: For small volumes, such as 5 mL agar slants, you can use the
@@ -203,5 +203,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.755408+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOTHRIX MEDIUM" to "thiothrix_medium" for consistent
-    matching
+  notes: Normalized name from "THIOTHRIX MEDIUM" to "thiothrix_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_573_THIOTHRIX_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006020
+  name: thiothrix_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

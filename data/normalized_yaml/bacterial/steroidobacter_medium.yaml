@@ -322,23 +322,25 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: For growth with testosterone, dissolve testosterone in acetone (20
-    mg/ml), dispense portions of the solution, e.g. 0.1 ml portions for 10 ml medium,
-    to anaerobic culture tubes. Let the solvent evaporate to dryness. Dispense 10
-    ml portions of medium and stream with N2/CO2 (80:20). Close the vessels and autoclave.
-    Treat the vessels in an ultrasonic bath to detach and suspend the testosterone.
+  description: For growth with testosterone, dissolve testosterone in acetone
+    (20 mg/ml), dispense portions of the solution, e.g. 0.1 ml portions for 10
+    ml medium, to anaerobic culture tubes. Let the solvent evaporate to dryness.
+    Dispense 10 ml portions of medium and stream with N2/CO2 (80:20). Close the
+    vessels and autoclave. Treat the vessels in an ultrasonic bath to detach and
+    suspend the testosterone.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: For growth with heptanoate, omit testosterone. Sterilize the gassed
-    medium in anaerobic vessels by autoclaving. After cooling, add 325 mg/l heptanoic
-    acid from a 20fold, pH adjusted, filter sterilized anaerobic stock solution.
+  description: For growth with heptanoate, omit testosterone. Sterilize the
+    gassed medium in anaerobic vessels by autoclaving. After cooling, add 325
+    mg/l heptanoic acid from a 20fold, pH adjusted, filter sterilized anaerobic
+    stock solution.
 - step_number: 3
   action: AUTOCLAVE
-  description: After autoclaving, add (per 10 ml) 0.3 ml NaHCO3-solution (84 g/l,
-    autoclaved under CO2-atmosphere), 100 µl trace element solution SL 10 (see below),
-    100 µl selenite tungstate solution (see below), and 100 µl vitamin solution (see
-    below). Adjust pH to 7.2. Incubate the cultures in the dark for up to 4 weeks.
-    Briefly shake the cultures once per day.
+  description: After autoclaving, add (per 10 ml) 0.3 ml NaHCO3-solution (84
+    g/l, autoclaved under CO2-atmosphere), 100 µl trace element solution SL 10
+    (see below), 100 µl selenite tungstate solution (see below), and 100 µl
+    vitamin solution (see below). Adjust pH to 7.2. Incubate the cultures in the
+    dark for up to 4 weeks. Briefly shake the cultures once per day.
 - step_number: 4
   action: FILTER_STERILIZE
   description: Stir for some hours, filter sterilize the solution.
@@ -360,5 +362,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.405660+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "STEROIDOBACTER MEDIUM" to "steroidobacter_medium" for
-    consistent matching
+  notes: Normalized name from "STEROIDOBACTER MEDIUM" to "steroidobacter_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1116_STEROIDOBACTER_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003818
+  name: steroidobacter_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

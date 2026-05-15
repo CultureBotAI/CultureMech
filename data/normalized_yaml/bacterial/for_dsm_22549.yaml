@@ -365,8 +365,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.023490Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:29.340556Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -382,4 +382,36 @@ curation_history:
 - timestamp: '2026-03-17T19:45:43.763793+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 22549" to "for_dsm_22549" for consistent matching
+  notes: Normalized name from "For DSM 22549" to "for_dsm_22549" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_22612.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004737
+  name: for_dsm_22612
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_282_modified_for_dsm_16983.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004735
+  name: medium_282_modified_for_dsm_16983
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_282_modified_for_dsm_5666.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004738
+  name: medium_282_modified_for_dsm_5666
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/methanocaldococcus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001378
+  name: methanocaldococcus_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/methanococcus_jannaschii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004739
+  name: methanococcus_jannaschii_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

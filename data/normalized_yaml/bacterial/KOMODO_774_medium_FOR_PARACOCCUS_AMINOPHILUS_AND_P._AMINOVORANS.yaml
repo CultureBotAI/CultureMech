@@ -63,5 +63,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:58.049796+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "medium FOR PARACOCCUS AMINOPHILUS AND P. AMINOVORANS"
-    to "medium_for_paracoccus_aminophilus_and_p_aminovorans" for consistent matching
+  notes: Normalized name from "medium FOR PARACOCCUS AMINOPHILUS AND P.
+    AMINOVORANS" to "medium_for_paracoccus_aminophilus_and_p_aminovorans" for
+    consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/medium_for_paracoccus_aminophilus_and_p_aminovorans.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001908
+  name: medium_for_paracoccus_aminophilus_and_p_aminovorans
+  notes: KOMODO record states DSMZ Medium 774 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

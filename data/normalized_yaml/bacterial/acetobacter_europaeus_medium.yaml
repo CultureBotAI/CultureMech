@@ -52,14 +52,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: The ethanol and acetic acid are sterilized separately by filtration
-    (use filter resistant to these solvents), and added aseptically to the sterile
-    medium. Acetobacter europaeus will not grow on plates containing 1-2% agar, and
-    a double layer system has to be used. A layer of growth medium containing 0.5%
-    agar (about 35 ml) is poured into a plate and allowed to solidify. A thin layer
-    (5-10 ml) of the growth medium containing 1% agar is then poured on top. Carefully
-    streak the plates, which are best incubated in closed containers (e.g. plastic
-    boxes) at 30°C.
+  description: The ethanol and acetic acid are sterilized separately by
+    filtration (use filter resistant to these solvents), and added aseptically
+    to the sterile medium. Acetobacter europaeus will not grow on plates
+    containing 1-2% agar, and a double layer system has to be used. A layer of
+    growth medium containing 0.5% agar (about 35 ml) is poured into a plate and
+    allowed to solidify. A thin layer (5-10 ml) of the growth medium containing
+    1% agar is then poured on top. Carefully streak the plates, which are best
+    incubated in closed containers (e.g. plastic boxes) at 30°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -78,5 +78,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.287529+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACETOBACTER EUROPAEUS MEDIUM" to "acetobacter_europaeus_medium"
-    for consistent matching
+  notes: Normalized name from "ACETOBACTER EUROPAEUS MEDIUM" to
+    "acetobacter_europaeus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_631_ACETOBACTER_EUROPAEUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006146
+  name: acetobacter_europaeus_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

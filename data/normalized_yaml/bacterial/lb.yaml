@@ -45,3 +45,16 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015464'
 data_quality_flags: []
 kg_microbe_match: mediadive.medium:74
+variant_children:
+- path: data/normalized_yaml/bacterial/lb_miller.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:015468
+  name: LB_Miller
+  notes: Sodium Chloride increased from 5 g/L to 10 g/L while tryptone and yeast
+    extract remain unchanged.
+- path: data/normalized_yaml/bacterial/lb_highsalt.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:015467
+  name: LB_highSalt
+  notes: Sodium Chloride increased from 5 g/L to 35 g/L while tryptone and yeast
+    extract remain unchanged.

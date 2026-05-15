@@ -47,8 +47,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
-    CM 131).
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar
+    (Oxoid CM 131).
 applications:
 - Microbial cultivation
 curation_history:
@@ -67,5 +67,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.220580+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BLOOD AGAR II" to "blood_agar_ii" for consistent matching
+  notes: Normalized name from "BLOOD AGAR II" to "blood_agar_ii" for consistent
+    matching
 kg_microbe_match: mediadive.medium:101
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_245_BLOOD_AGAR_II.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004616
+  name: blood_agar_ii
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 245; local
+    ingredient and concentration signatures match.

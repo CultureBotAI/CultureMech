@@ -76,3 +76,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "LB Medium" to "lb_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/1_3_lb.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008632
+  name: 1_3_lb
+  notes: 1/3 LB decreases yeast extract from 5 g/L to 1.67 g/L and peptone from
+    10 g/L to 3.33 g/L while NaCl and agar remain unchanged.

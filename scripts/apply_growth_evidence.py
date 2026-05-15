@@ -288,7 +288,7 @@ def main() -> int:
         print("(Run scripts/propose_growth_evidence.py --apply first.)")
         return 1
 
-    proposals = sorted(args.proposal_dir.glob("*.yaml"))
+    proposals = sorted(args.proposal_dir.rglob("*.yaml"))
     if not proposals:
         print(f"No proposal YAMLs in {args.proposal_dir}")
         return 1

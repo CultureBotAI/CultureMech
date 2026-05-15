@@ -266,22 +266,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine and sulfide, sparge medium with
-    80% H2 and  20%  CO2 gas mixture for 30 - 45 min to make it anoxic, then distribute
-    under same gas atmosphere into Hungate-type tubes or serum vials to 30% of their
-    volume and autoclave. Add cysteine and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas atmosphere. Adjust pH of complete medium to 6.5.
+  description: Dissolve ingredients except cysteine and sulfide, sparge medium
+    with 80% H2 and  20%  CO2 gas mixture for 30 - 45 min to make it anoxic,
+    then distribute under same gas atmosphere into Hungate-type tubes or serum
+    vials to 30% of their volume and autoclave. Add cysteine and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. Adjust
+    pH of complete medium to 6.5.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize cultivation vessels to one bar overpressure
-    with sterile 80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize cultivation vessels to one bar
+    overpressure with sterile 80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 - step_number: 4
   action: MIX
-  description: The ferrous sulfate solution is not stable and should be freshly prepared.
+  description: The ferrous sulfate solution is not stable and should be freshly
+    prepared.
 applications:
 - Microbial cultivation
 curation_history:
@@ -304,5 +306,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:13.962500+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOANAEROBACTER KIVUI MEDIUM" to "thermoanaerobacter_kivui_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOANAEROBACTER KIVUI MEDIUM" to
+    "thermoanaerobacter_kivui_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/acetogenium_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004198
+  name: acetogenium_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

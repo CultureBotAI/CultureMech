@@ -272,12 +272,14 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
-    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and
+    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
+    commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -291,13 +293,14 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
-    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
-    product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
+    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
+    formulation) commercial product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -306,12 +309,13 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
-      Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
+      (Luria-Bertani, Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
-    (Luria-Bertani, Miller formulation) commercial product
+    product_url:
+      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
+    Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -337,15 +341,15 @@ preparation_steps:
     solutions (autoclaved and stored under a N2 atmosphere):'
 - step_number: 2
   action: MIX
-  description: Pressurize inoculated vessels to 200 kPa with a H2-CO2 (80:20, v/v)
-    gas mixture.
+  description: Pressurize inoculated vessels to 200 kPa with a H2-CO2 (80:20,
+    v/v) gas mixture.
 - step_number: 3
   action: AUTOCLAVE
-  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and after
-    gassing with nitrogen gas for a few minutes incubate it at 37°C for 24 hours.
-    Then centrifuge the sludge at 13000 g and autoclave the resulting, clear supernatant
-    in screw-capped vessels under nitrogen gas. The sludge fluid can be stored at
-    8-12°C in the dark.
+  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and
+    after gassing with nitrogen gas for a few minutes incubate it at 37°C for 24
+    hours. Then centrifuge the sludge at 13000 g and autoclave the resulting,
+    clear supernatant in screw-capped vessels under nitrogen gas. The sludge
+    fluid can be stored at 8-12°C in the dark.
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to 7.5 with concentrated NaOH solution.
@@ -371,5 +375,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:32.555372+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOBACTERIUM MEDIUM (IV)" to "methanobacterium_medium_iv"
-    for consistent matching
+  notes: Normalized name from "METHANOBACTERIUM MEDIUM (IV)" to
+    "methanobacterium_medium_iv" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/methanobacterium_medium_vi.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002222
+  name: methanobacterium_medium_vi
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

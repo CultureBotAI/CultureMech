@@ -101,5 +101,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.488973+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALKALIPHILIC HALOMONAS MEDIUM" to "alkaliphilic_halomonas_medium"
-    for consistent matching
+  notes: Normalized name from "ALKALIPHILIC HALOMONAS MEDIUM" to
+    "alkaliphilic_halomonas_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1034_ALKALIPHILIC_HALOMONAS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003547
+  name: alkaliphilic_halomonas_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

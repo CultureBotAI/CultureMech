@@ -107,5 +107,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:02.729418+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM FOR DSM 14457 AND 14458" to "medium_for_dsm_14457_and_14458"
-    for consistent matching
+  notes: Normalized name from "MEDIUM FOR DSM 14457 AND 14458" to
+    "medium_for_dsm_14457_and_14458" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/medium_for_dsm_14457_and_14458.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002134
+  name: medium_for_dsm_14457_and_14458
+  notes: KOMODO record states DSMZ Medium 956 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

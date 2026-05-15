@@ -120,13 +120,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:44.677526Z'
   curator: mediadb-import
@@ -144,8 +146,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:04.460973+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Inorganic medium" to "inorganic_medium" for consistent
-    matching
+  notes: Normalized name from "Inorganic medium" to "inorganic_medium" for
+    consistent matching
 media_term:
   preferred_term: MediaDB Medium 226
   term:
@@ -157,3 +159,10 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+variant_children:
+- path: data/normalized_yaml/bacterial/fex5_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007122
+  name: fex5_medium
+  notes: Ferrous sulfate increased from 0.05 mM to 0.25 mM while the inorganic
+    medium base remains unchanged.

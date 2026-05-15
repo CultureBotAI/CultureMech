@@ -204,8 +204,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Sterilize methanol by filtration, and add to other components sterilized
-    by autoclaving.
+  description: Sterilize methanol by filtration, and add to other components
+    sterilized by autoclaving.
 applications:
 - Microbial cultivation
 curation_history:
@@ -224,5 +224,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.178018+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HYPHOMICROBIUM METHYLOVORUM MEDIUM" to "hyphomicrobium_methylovorum_medium"
-    for consistent matching
+  notes: Normalized name from "HYPHOMICROBIUM METHYLOVORUM MEDIUM" to
+    "hyphomicrobium_methylovorum_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_619_HYPHOMICROBIUM_METHYLOVORUM_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006113
+  name: hyphomicrobium_methylovorum_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

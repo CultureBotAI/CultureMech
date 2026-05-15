@@ -114,5 +114,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.246103+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALCANIVORAX BORKUMENSIS MEDIUM" to "alcanivorax_borkumensis_medium"
-    for consistent matching
+  notes: Normalized name from "ALCANIVORAX BORKUMENSIS MEDIUM" to
+    "alcanivorax_borkumensis_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_809_ALCANIVORAX_BORKUMENSIS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006526
+  name: alcanivorax_borkumensis_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -67,3 +67,18 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YM AGAR" to "ym_agar" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/my20_agar.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002688
+  name: my20_agar
+  notes: Reviewed YM Agar/MY20 Agar pair; child keeps peptone, yeast extract,
+    malt extract, and agar unchanged but increases glucose from 10 g/L to 200
+    g/L.
+- path: data/normalized_yaml/bacterial/acidomonas_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002396
+  name: acidomonas_medium
+  notes: Reviewed YM Agar/Acidomonas Medium pair; child doubles glucose,
+    peptone, yeast extract, malt extract, and agar concentrations and changes pH
+    from 6.2 to 4.0.

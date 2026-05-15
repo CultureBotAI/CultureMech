@@ -71,5 +71,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:17.688250+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PITYROSPORUM MEDIUM" to "pityrosporum_medium" for consistent
-    matching
+  notes: Normalized name from "PITYROSPORUM MEDIUM" to "pityrosporum_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_472_PITYROSPORUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005586
+  name: pityrosporum_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -43,6 +43,22 @@ curation_history:
 - timestamp: '2026-03-17T19:46:33.063428+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2% NaCl"
-    to "yeast_extract_malt_extract_agar_isp_2_with_2_nacl" for consistent matching
+  notes: Normalized name from "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2%
+    NaCl" to "yeast_extract_malt_extract_agar_isp_2_with_2_nacl" for consistent
+    matching
 kg_microbe_match: mediadive.medium:74
+variant_children:
+- path:
+    data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2_with_5_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010509
+  name: yeast_extract_malt_extract_agar_isp_2_with_5_nacl
+  notes: NaCl increased from 20 g/L to 50 g/L while the yeast extract-malt
+    extract agar ISP-2 base remains unchanged.
+- path:
+    data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010532
+  name: yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0
+  notes: NaCl increased from 20 g/L to 50 g/L; child record also specifies pH
+    9.0 while the yeast extract-malt extract agar ISP-2 base remains unchanged.

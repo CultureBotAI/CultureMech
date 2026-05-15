@@ -81,8 +81,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:32.181785+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Alkaline Nutrient Agar" to "alkaline_nutrient_agar"
-    for consistent matching
+  notes: Normalized name from "Alkaline Nutrient Agar" to
+    "alkaline_nutrient_agar" for consistent matching
 solutions:
 - preferred_term: Na2CO3 solution
   composition: []
@@ -91,3 +91,12 @@ solutions:
     unit: VARIABLE
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M65_Nutrient_Agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:010062
+  name: nutrient_agar
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -349,8 +349,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:52.220137Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:23.644301Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -362,5 +362,63 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.238207+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOSARCINA medium" to "methanosarcina_medium" for
-    consistent matching
+  notes: Normalized name from "METHANOSARCINA medium" to "methanosarcina_medium"
+    for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_120b_METHANOMICROCOCCUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003960
+  name: methanomicrococcus_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_21571.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003946
+  name: for_dsm_21571
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_4556_dsm_10334_and_dsm_13486.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003944
+  name: for_dsm_4556_dsm_10334_and_dsm_13486
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_9195.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003945
+  name: for_dsm_9195
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/for_strains_of_methanosarcina_mazei_and_dsm_1538_dsm_11429_dsm_11430_dsm11431_dsm_11432_dsm_11433_and_dsm_11434.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003943
+  name:
+    for_strains_of_methanosarcina_mazei_and_dsm_1538_dsm_11429_dsm_11430_dsm11431_dsm_11432_dsm_11433_and_dsm_11434
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/g_1_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003959
+  name: g_1_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_120_modified_for_dsm_7058.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003947
+  name: medium_120_modified_for_dsm_7058
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/methanosarcina_barkeri_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000661
+  name: methanosarcina_barkeri_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/to_adapt_dsm_804_on_acetate.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003942
+  name: to_adapt_dsm_804_on_acetate
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

@@ -272,17 +272,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine, bicarbonate, carbonate, trimethylamine
-    and sulfide, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
-    Add cysteine and dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add trimethylamine and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas, whereas bicarbonate and carbonate
-    are added from sterile anoxic stock solutions prepared under 80% N2 and 20% CO2
-    gas atmosphere. Adjust pH of complete medium to 9.2 - 9.4.
+  description: Dissolve ingredients except cysteine, bicarbonate, carbonate,
+    trimethylamine and sulfide, then sparge medium with 100% N2 gas for 30 - 45
+    min to make it anoxic. Add cysteine and dispense medium under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
+    trimethylamine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas, whereas bicarbonate and carbonate are added from sterile
+    anoxic stock solutions prepared under 80% N2 and 20% CO2 gas atmosphere.
+    Adjust pH of complete medium to 9.2 - 9.4.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -309,5 +310,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.828776+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOSALSUM ZHILINAE MEDIUM" to "methanosalsum_zhilinae_medium"
-    for consistent matching
+  notes: Normalized name from "METHANOSALSUM ZHILINAE MEDIUM" to
+    "methanosalsum_zhilinae_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/methanohalophilus_zhilinae_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005183
+  name: methanohalophilus_zhilinae_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

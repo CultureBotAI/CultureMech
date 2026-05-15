@@ -358,5 +358,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.065260+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "M13a (PIRELLULA) medium" to "m13a_pirellula_medium"
-    for consistent matching
+  notes: Normalized name from "M13a (PIRELLULA) medium" to
+    "m13a_pirellula_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_600_M14_PIRELLULA_MARINA_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006087
+  name: m14_pirellula_marina_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/m13_3x_pirellula_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001729
+  name: m13_3x_pirellula_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

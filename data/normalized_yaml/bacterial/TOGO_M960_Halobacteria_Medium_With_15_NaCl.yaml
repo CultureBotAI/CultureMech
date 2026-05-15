@@ -144,6 +144,17 @@ curation_history:
 - timestamp: '2026-03-17T19:46:32.421339+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Halobacteria Medium With 15% NaCl" to "halobacteria_medium_with_15_nacl"
-    for consistent matching
+  notes: Normalized name from "Halobacteria Medium With 15% NaCl" to
+    "halobacteria_medium_with_15_nacl" for consistent matching
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/TOGO_M160_Halobacteria_Medium.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:008163
+  name: halobacteria_medium
+  notes: Reviewed TOGO solid Halobacteria salinity pair; 15% NaCl record differs
+    only in NaCl concentration.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl decreased from 200 g/L to 150 g/L while the TOGO solid Halobacteria
+  medium formulation remains unchanged.

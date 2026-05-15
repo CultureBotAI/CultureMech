@@ -102,5 +102,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:58.128609+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CAPNOCYTOPHAGA II medium" to "capnocytophaga_ii_medium"
-    for consistent matching
+  notes: Normalized name from "CAPNOCYTOPHAGA II medium" to
+    "capnocytophaga_ii_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/capnocytophaga_ii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001914
+  name: capnocytophaga_ii_medium
+  notes: KOMODO record states DSMZ Medium 779 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

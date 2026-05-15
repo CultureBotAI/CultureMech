@@ -158,3 +158,16 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SL medium" to "sl_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/for_dsm_21709.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006903
+  name: for_dsm_21709
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/marinitoga_litoralis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002138
+  name: marinitoga_litoralis_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

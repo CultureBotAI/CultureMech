@@ -234,21 +234,21 @@ preparation_steps:
   description: pH 7
 - step_number: 2
   action: AUTOCLAVE
-  description: Make up the medium without the vitamin solution and autoclave it. The
-    filter-sterilized vitamin solution is added to the cooled medium. The medium may
-    be solidified by adding 15 g/l agar.
+  description: Make up the medium without the vitamin solution and autoclave it.
+    The filter-sterilized vitamin solution is added to the cooled medium. The
+    medium may be solidified by adding 15 g/l agar.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter-sterilized
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about
-    7.3 g). Dissolve other salts separately, combine and adjust the pH to 6.8 with
-    NaOH or H2SO4.
+  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH
+    (about 7.3 g). Dissolve other salts separately, combine and adjust the pH to
+    6.8 with NaOH or H2SO4.
 - step_number: 5
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to
+    retard precipitation of the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -271,5 +271,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.017622+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ANCALOMICROBIUM MEDIUM" to "ancalomicrobium_medium"
-    for consistent matching
+  notes: Normalized name from "ANCALOMICROBIUM MEDIUM" to
+    "ancalomicrobium_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_603_ANCALOMICROBIUM_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006091
+  name: ancalomicrobium_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

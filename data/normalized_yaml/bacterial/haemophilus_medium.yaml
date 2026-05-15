@@ -33,12 +33,12 @@ ingredients:
     value: '2.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
-      Agar
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia)
+      Mueller-Hinton Agar
     catalog_number: BD 211443, Sigma 70191
     product_url: https://microbenotes.com/mueller-hinton-agar/
-  notes: Aqueous beef extract providing nutrients and growth factors; Constituent
-    of Mueller-Hinton Agar commercial product
+  notes: Aqueous beef extract providing nutrients and growth factors;
+    Constituent of Mueller-Hinton Agar commercial product
 - preferred_term: Acid hydrolysate of casein
   term:
     id: FOODON:03316428
@@ -47,13 +47,13 @@ ingredients:
     value: '17.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
-      Agar
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia)
+      Mueller-Hinton Agar
     catalog_number: BD 211443, Sigma 70191
     product_url: https://microbenotes.com/mueller-hinton-agar/
-  notes: Casein enzymatic hydrolysate, provides amino acids and peptides. Low PABA
-    and thymine content critical for sulfonamide/trimethoprim testing; Constituent
-    of Mueller-Hinton Agar commercial product
+  notes: Casein enzymatic hydrolysate, provides amino acids and peptides. Low
+    PABA and thymine content critical for sulfonamide/trimethoprim testing;
+    Constituent of Mueller-Hinton Agar commercial product
   synonyms:
   - synonym_text:
       synonym_text: casein hydrolysate
@@ -71,12 +71,12 @@ ingredients:
     value: '1.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
-      Agar
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia)
+      Mueller-Hinton Agar
     catalog_number: BD 211443, Sigma 70191
     product_url: https://microbenotes.com/mueller-hinton-agar/
-  notes: Acts as protective colloid and absorbs toxic metabolites released from bacteria;
-    Constituent of Mueller-Hinton Agar commercial product
+  notes: Acts as protective colloid and absorbs toxic metabolites released from
+    bacteria; Constituent of Mueller-Hinton Agar commercial product
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -85,11 +85,12 @@ ingredients:
     value: '17.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
-      Agar
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia)
+      Mueller-Hinton Agar
     catalog_number: BD 211443, Sigma 70191
     product_url: https://microbenotes.com/mueller-hinton-agar/
-  notes: Solidifying agent; Constituent of Mueller-Hinton Agar commercial product
+  notes: Solidifying agent; Constituent of Mueller-Hinton Agar commercial
+    product
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -97,7 +98,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: For Haemophilus spp., add 15 mg NAD and 15 mg hemine per L (X + V factors).
+  description: For Haemophilus spp., add 15 mg NAD and 15 mg hemine per L (X + V
+    factors).
 - step_number: 2
   action: FILTER_STERILIZE
   description: 'NAD stock solution: dissolve 1 mg NAD per ml dist. water, filter sterilize.'
@@ -119,5 +121,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.194707+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HAEMOPHILUS MEDIUM" to "haemophilus_medium" for consistent
-    matching
+  notes: Normalized name from "HAEMOPHILUS MEDIUM" to "haemophilus_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_804_HAEMOPHILUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006522
+  name: haemophilus_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

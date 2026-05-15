@@ -170,13 +170,13 @@ preparation_steps:
   description: Dissolve ingredients, adjust pH to 7.0 and autoclave.
 - step_number: 2
   action: MIX
-  description: For chemoautotrophic growth incubate under a gas atmosphere of a) 20
-    - 80% carbon monoxide + 10% O2 + 70 - 10% N2 or b) 70% H2 + 20% O2 + 10% CO2 adding
-    2.50 g NaHCO3 per liter of medium.
+  description: For chemoautotrophic growth incubate under a gas atmosphere of a)
+    20 - 80% carbon monoxide + 10% O2 + 70 - 10% N2 or b) 70% H2 + 20% O2 + 10%
+    CO2 adding 2.50 g NaHCO3 per liter of medium.
 - step_number: 3
   action: MIX
-  description: For chemoorganotrophic growth add 3.00 g sodium acetate and incubate
-    under air atmosphere.
+  description: For chemoorganotrophic growth add 3.00 g sodium acetate and
+    incubate under air atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -195,5 +195,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.833737+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CARBON MONOXIDE OXIDIZER MEDIUM" to "carbon_monoxide_oxidizer_medium"
-    for consistent matching
+  notes: Normalized name from "CARBON MONOXIDE OXIDIZER MEDIUM" to
+    "carbon_monoxide_oxidizer_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_1083.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004088
+  name: for_dsm_1083
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -175,7 +175,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0 with HCl. After autoclave, pH goes up to around 7.5.
+  description: Adjust pH to 7.0 with HCl. After autoclave, pH goes up to around
+    7.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -194,5 +195,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:33.884232+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINE AOB MEDIUM (B)" to "marine_aob_medium_b" for
-    consistent matching
+  notes: Normalized name from "MARINE AOB MEDIUM (B)" to "marine_aob_medium_b"
+    for consistent matching
+parent_media:
+  path: data/normalized_yaml/specialized/marine_aob_medium_a.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:015376
+  name: marine_aob_medium_a
+  notes: Reviewed JCM Marine AOB medium A/B pair; records differ only in NaCl
+    concentration and share pH 7.0 liquid defined medium state.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl increased from 29.1036 g/L to 40.7869 g/L while the Marine AOB defined
+  formulation remains unchanged.

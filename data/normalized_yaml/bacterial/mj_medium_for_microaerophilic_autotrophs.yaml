@@ -239,9 +239,9 @@ preparation_steps:
     aseptically the following solutions (filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Distribute the medium into sterile culture vessels under a N2-CO2-O2
-    (76:19:5, v/v) gas mixture and seal with butyl rubber stoppers. Pressurize the
-    culture vessels to 50 kPa with the same gas mixture.
+  description: Distribute the medium into sterile culture vessels under a
+    N2-CO2-O2 (76:19:5, v/v) gas mixture and seal with butyl rubber stoppers.
+    Pressurize the culture vessels to 50 kPa with the same gas mixture.
 applications:
 - Microbial cultivation
 curation_history:
@@ -264,5 +264,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:32.824901+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MJ MEDIUM FOR MICROAEROPHILIC AUTOTROPHS" to "mj_medium_for_microaerophilic_autotrophs"
-    for consistent matching
+  notes: Normalized name from "MJ MEDIUM FOR MICROAEROPHILIC AUTOTROPHS" to
+    "mj_medium_for_microaerophilic_autotrophs" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/mj_basal_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002716
+  name: mj_basal_medium
+  notes: Reviewed MJ medium for microaerophilic autotrophs as a concentration
+    variant of MJ basal medium with bicarbonate and thiosulfate axes.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed MJ basal/autotroph pair; child keeps the marine salt, trace metal,
+  and vitamin base unchanged but raises NaHCO3 from 1.4985 to 5 g/L and Na2S2O3
+  x 5 H2O from 1.4985 to 15 g/L, with pH 5.5 recorded in the child.

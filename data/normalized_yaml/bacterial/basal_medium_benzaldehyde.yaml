@@ -91,8 +91,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:17.285842+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Basal medium + Benzaldehyde" to "basal_medium_benzaldehyde"
-    for consistent matching
+  notes: Normalized name from "Basal medium + Benzaldehyde" to
+    "basal_medium_benzaldehyde" for consistent matching
 solutions:
 - preferred_term: Hipolypepton*
   composition: []
@@ -108,3 +108,12 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/basal_medium_acetaldehyde.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:008613
+  name: basal_medium_acetaldehyde
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

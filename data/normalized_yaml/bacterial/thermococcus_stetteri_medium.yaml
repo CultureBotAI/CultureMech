@@ -170,13 +170,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except yeast extract, sulfur and Na2S x 9H2O, adjust
-    pH to 6.5 with H2SO4, and autoclave under a N2 atmosphere. Separately autoclave
-    yeast extract and peptone as 10% solutions under a N2 atmosphere. Steam sulfur
-    for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5% solution,
-    and autoclave under a N2 atmosphere. Aseptically and anaerobically add the yeast
-    extract and peptone solutions, and sulfur to the medium. Prior to inoculation,
-    add the sterile Na2S x 9H2O solution, and readjust pH to 6.5, if necessary.
+  description: Mix ingredients, except yeast extract, sulfur and Na2S x 9H2O,
+    adjust pH to 6.5 with H2SO4, and autoclave under a N2 atmosphere. Separately
+    autoclave yeast extract and peptone as 10% solutions under a N2 atmosphere.
+    Steam sulfur for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O
+    as a 5% solution, and autoclave under a N2 atmosphere. Aseptically and
+    anaerobically add the yeast extract and peptone solutions, and sulfur to the
+    medium. Prior to inoculation, add the sterile Na2S x 9H2O solution, and
+    readjust pH to 6.5, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -195,5 +196,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.111031+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOCOCCUS STETTERI MEDIUM" to "thermococcus_stetteri_medium"
-    for consistent matching
+  notes: Normalized name from "THERMOCOCCUS STETTERI MEDIUM" to
+    "thermococcus_stetteri_medium" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/JCM_J161_THERMOCOCCUS_LITORALIS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002520
+  name: thermococcus_litoralis_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -224,8 +224,8 @@ preparation_steps:
   description: NaHCO3 2.625 g per 50 ml distilled water
 - step_number: 4
   action: AUTOCLAVE
-  description: Autoclave for 20 min. at 121°C and add 8 ml/l sterile solution II shortly,
-    before inoculation of bacterial culture.
+  description: Autoclave for 20 min. at 121°C and add 8 ml/l sterile solution II
+    shortly, before inoculation of bacterial culture.
 - step_number: 5
   action: MIX
   description: H3P-vitamine solution (see medium 428)
@@ -262,5 +262,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.767530+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MSV-THIOTRIX-MEDIUM" to "msv_thiotrix_medium" for consistent
-    matching
+  notes: Normalized name from "MSV-THIOTRIX-MEDIUM" to "msv_thiotrix_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_841_MSV-THIOTRIX-MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006644
+  name: msv_thiotrix_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

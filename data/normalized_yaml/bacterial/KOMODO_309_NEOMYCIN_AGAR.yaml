@@ -61,4 +61,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:44.458050+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NEOMYCIN AGAR" to "neomycin_agar" for consistent matching
+  notes: Normalized name from "NEOMYCIN AGAR" to "neomycin_agar" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/neomycin_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001407
+  name: neomycin_agar
+  notes: KOMODO record explicitly cites DSMZ Medium 309; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 309; local
+  ingredient and concentration signatures match.

@@ -82,8 +82,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: The NaCl and Na2CO3 were dissolved and autoclaved separately and added
-    to the organic components at 60°C before pouring the agar medium.
+  description: The NaCl and Na2CO3 were dissolved and autoclaved separately and
+    added to the organic components at 60°C before pouring the agar medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -102,5 +102,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.625082+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BACILLUS LOCISALIS MEDIUM" to "bacillus_locisalis_medium"
-    for consistent matching
+  notes: Normalized name from "BACILLUS LOCISALIS MEDIUM" to
+    "bacillus_locisalis_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004064
+  name: bacillus_locisalis_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1309; local
+    ingredient and concentration signatures match.

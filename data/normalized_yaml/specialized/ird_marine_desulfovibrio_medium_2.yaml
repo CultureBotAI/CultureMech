@@ -256,5 +256,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:33.937050+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "IRD MARINE DESULFOVIBRIO MEDIUM-2" to "ird_marine_desulfovibrio_medium_2"
-    for consistent matching
+  notes: Normalized name from "IRD MARINE DESULFOVIBRIO MEDIUM-2" to
+    "ird_marine_desulfovibrio_medium_2" for consistent matching
+variant_children:
+- path: data/normalized_yaml/specialized/ird_marine_desulfovibrio_medium_3.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:015383
+  name: ird_marine_desulfovibrio_medium_3
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

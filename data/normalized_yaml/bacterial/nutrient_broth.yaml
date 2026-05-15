@@ -7,18 +7,14 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  term:
-    id: FOODON:03302071
-    label: Peptone
-  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 51142-18-8'
+  notes: 'Mapping: curated_dict (confidence: 0.98); FOODON:03302071 Peptone; CAS:
+    51142-18-8'
 - preferred_term: Yeast Extract
   concentration:
     value: '3'
     unit: G_PER_L
-  term:
-    id: FOODON:03315426
-    label: Yeast extract
-  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
+  notes: 'Mapping: curated_dict (confidence: 0.98); FOODON:03315426 Yeast extract;
+    CAS: 232-387-9'
 - preferred_term: D-Glucose
   concentration:
     value: '1'
@@ -37,11 +33,26 @@ ingredients:
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44'
 description: Nutrient broth medium
 notes: 'Source: FEBA media definitions'
-category: BACTERIAL
-sources:
-- database: CultureBotHT
-  database_id: nutrient broth
-  url: https://github.com/CultureBotAI/CultureBotHT
+category: bacterial
+source_data:
+  origin: CultureBotHT
+  notes: 'database_id: nutrient broth; url: https://github.com/CultureBotAI/CultureBotHT'
+variants:
+- name: nutrient_broth_mycolicibacterium_cosmeticum_dm11_25c
+  description: Nutrient broth growth condition for Mycolicibacterium cosmeticum
+    strain DM-11 at 25 C.
+  modifications:
+  - Use Mycolicibacterium cosmeticum strain DM-11 as the target strain.
+  - Incubate at 25 C.
+  purpose: Capture strain-specific nutrient broth growth evidence under the parent
+    Nutrient Broth record.
+  evidence:
+  - reference: PMID:16461697
+    supports: SUPPORT
+    snippet: The strain, designated strain DM-11, grew optimally at 25 degrees C
+      and had a doubling time of 29.2 h.
+    explanation: Literature evidence supports a strain-specific 25 C growth
+      condition variant under the parent Nutrient Broth record.
 curation_history:
 - timestamp: '2026-03-18T04:31:15.467479+00:00'
   curator: import_from_culturebotht.py

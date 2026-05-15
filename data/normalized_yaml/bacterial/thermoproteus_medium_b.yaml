@@ -200,14 +200,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:30.191436+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOPROTEUS MEDIUM (B)" to "thermoproteus_medium_b"
-    for consistent matching
+  notes: Normalized name from "THERMOPROTEUS MEDIUM (B)" to
+    "thermoproteus_medium_b" for consistent matching
 - timestamp: '2026-04-04T18:49:19.470365'
   curator: copy_referenced_compositions
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (16 ingredients)
   source: CultureMech:002654
-  notes: Resolved reference by copying from vulcanisaeta_medium (CultureMech:002654)
+  notes: Resolved reference by copying from vulcanisaeta_medium
+    (CultureMech:002654)
 data_quality_flags:
   incomplete_composition: false
   resolved_reference: true
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J183_DESULFUROCOCCUS_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002544
+  name: desulfurococcus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

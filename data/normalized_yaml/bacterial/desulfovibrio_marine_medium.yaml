@@ -145,5 +145,25 @@ curation_history:
 - timestamp: '2026-03-17T19:45:40.685336+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOVIBRIO (marine) medium" to "desulfovibrio_marine_medium"
-    for consistent matching
+  notes: Normalized name from "DESULFOVIBRIO (marine) medium" to
+    "desulfovibrio_marine_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/halodesulfovibrio_postgate_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001124
+  name: halodesulfovibrio_postgate_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path:
+    data/normalized_yaml/bacterial/brackish_water_desulfovibrio_postgate_medium.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:001519
+  name: brackish_water_desulfovibrio_postgate_medium
+  notes: NaCl concentration decreased from 25.5102 g/L to 10.2041 g/L; all other
+    parsed ingredient concentrations match the parent.
+- path: data/normalized_yaml/bacterial/desulfovibrio_medium_brackish.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:005232
+  name: desulfovibrio_medium_brackish
+  notes: NaCl concentration decreased from 25.5102 g/L to 10.2041 g/L; all other
+    parsed ingredient concentrations match the parent.

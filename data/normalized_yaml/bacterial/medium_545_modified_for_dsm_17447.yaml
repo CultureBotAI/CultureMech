@@ -99,6 +99,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.198286+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 545 MODIFIED FOR DSM 17447" to "medium_545_modified_for_dsm_17447"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 545 MODIFIED FOR DSM 17447" to
+    "medium_545_modified_for_dsm_17447" for consistent matching
 ph_value: 8.0
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_545_TRYPTONE_SOYA_BROTH_TSB.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005984
+  name: tryptone_soya_broth_tsb
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

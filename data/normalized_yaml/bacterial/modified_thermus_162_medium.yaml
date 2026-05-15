@@ -164,16 +164,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2 with NaOH. Autoclave at 121°C for 15 min. Autoclave
-    the phosphate buffer separately and then add to the medium.
+  description: Adjust pH to 7.2 with NaOH. Autoclave at 121°C for 15 min.
+    Autoclave the phosphate buffer separately and then add to the medium.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about
-    8 - 9 g). Dissolve other salts separately, combine and adjust the pH to 6.8 with
-    NaOH or H2SO4.
+  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH
+    (about 8 - 9 g). Dissolve other salts separately, combine and adjust the pH
+    to 6.8 with NaOH or H2SO4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -196,5 +196,36 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.281167+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED THERMUS 162 MEDIUM" to "modified_thermus_162_medium"
-    for consistent matching
+  notes: Normalized name from "MODIFIED THERMUS 162 MEDIUM" to
+    "modified_thermus_162_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_630_modified_for_dsm_12048.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006140
+  name: medium_630_modified_for_dsm_12048
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_630_modified_for_dsm_12049.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006141
+  name: medium_630_modified_for_dsm_12049
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_630_modified_for_dsm_22673.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006142
+  name: medium_630_modified_for_dsm_22673
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_630_modified_for_dsm_4252.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006143
+  name: medium_630_modified_for_dsm_4252
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_630_modified_for_dsm_4253.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006144
+  name: medium_630_modified_for_dsm_4253
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

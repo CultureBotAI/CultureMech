@@ -113,8 +113,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 276 and adjust pH to 8.0. Cultivate under a N2-O2 (99:1,
-    v/v) gas atmosphere.
+  description: Use Medium No. 276 and adjust pH to 8.0. Cultivate under a N2-O2
+    (99:1, v/v) gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -133,14 +133,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:32.753027+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MICROAEROPHILIC THERMUS MEDIUM" to "microaerophilic_thermus_medium"
-    for consistent matching
+  notes: Normalized name from "MICROAEROPHILIC THERMUS MEDIUM" to
+    "microaerophilic_thermus_medium" for consistent matching
 - timestamp: '2026-04-04T18:49:19.340542'
   curator: copy_referenced_compositions
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (10 ingredients)
   source: CultureMech:002633
-  notes: Resolved reference by copying from castenholz_medium (CultureMech:002633)
+  notes: Resolved reference by copying from castenholz_medium
+    (CultureMech:002633)
 data_quality_flags:
   incomplete_composition: false
   resolved_reference: true
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J276_CASTENHOLZ_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002633
+  name: castenholz_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

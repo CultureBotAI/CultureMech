@@ -230,5 +230,78 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.793916+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CALDICELLULOSIRUPTOR medium" to "caldicellulosiruptor_medium"
-    for consistent matching
+  notes: Normalized name from "CALDICELLULOSIRUPTOR medium" to
+    "caldicellulosiruptor_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_640_modified_for_dsm_10061.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006163
+  name: medium_640_modified_for_dsm_10061
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_640_modified_for_dsm_10170.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006164
+  name: medium_640_modified_for_dsm_10170
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_640_modified_for_dsm_10319.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006165
+  name: medium_640_modified_for_dsm_10319
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_640_modified_for_dsm_11055.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006166
+  name: medium_640_modified_for_dsm_11055
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_640_modified_for_dsm_11056.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006167
+  name: medium_640_modified_for_dsm_11056
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_640_modified_for_dsm_11057.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006168
+  name: medium_640_modified_for_dsm_11057
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_640_modified_for_dsm_11426.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006169
+  name: medium_640_modified_for_dsm_11426
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_640_modified_for_dsm_19027.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006170
+  name: medium_640_modified_for_dsm_19027
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_640_modified_for_dsm_8685.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006171
+  name: medium_640_modified_for_dsm_8685
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_640_modified_for_dsm_8691.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006172
+  name: medium_640_modified_for_dsm_8691
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_640_modified_for_dsm_8692.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006173
+  name: medium_640_modified_for_dsm_8692
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/thermoclostridium_caenicola_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001778
+  name: thermoclostridium_caenicola_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

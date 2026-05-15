@@ -62,5 +62,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.242448+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PEPTONE MEAT EXTRACT GLYCEROL AGAR" to "peptone_meat_extract_glycerol_agar"
-    for consistent matching
+  notes: Normalized name from "PEPTONE MEAT EXTRACT GLYCEROL AGAR" to
+    "peptone_meat_extract_glycerol_agar" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_250_Peptone_MEAT_EXTRACT_GLYCEROL_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004622
+  name: peptone_meat_extract_glycerol_agar
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 250; local
+    ingredient and concentration signatures match.

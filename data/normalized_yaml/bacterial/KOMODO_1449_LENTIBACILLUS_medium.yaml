@@ -122,3 +122,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LENTIBACILLUS medium" to "lentibacillus_medium" for
     consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/lentibacillus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000912
+  name: lentibacillus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

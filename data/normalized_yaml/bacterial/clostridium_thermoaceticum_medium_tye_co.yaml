@@ -340,8 +340,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.149628Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:21.686553Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -357,5 +357,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:44.949012+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM THERMOACETICUM medium (TYE-CO)" to "clostridium_thermoaceticum_medium_tye_co"
-    for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM THERMOACETICUM medium (TYE-CO)" to
+    "clostridium_thermoaceticum_medium_tye_co" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/moorella_thermoacetica_tye_co_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001416
+  name: moorella_thermoacetica_tye_co_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

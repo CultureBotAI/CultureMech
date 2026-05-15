@@ -176,9 +176,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.1. Agar if necessary 15.0 g. Distribute in 30 - 50 ml
-    amounts in Erlenmeyer flasks and sterilize for 15 minutes at 121°C. Incubate without
-    agitation at 65°C.
+  description: Adjust pH to 7.1. Agar if necessary 15.0 g. Distribute in 30 - 50
+    ml amounts in Erlenmeyer flasks and sterilize for 15 minutes at 121°C.
+    Incubate without agitation at 65°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -197,5 +197,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.304519+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM" to "bacillus_schlegelii_heterotrophic_medium"
-    for consistent matching
+  notes: Normalized name from "BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM" to
+    "bacillus_schlegelii_heterotrophic_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_260_BACILLUS_SCHLEGELII_HETEROTROPHIC_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004664
+  name: bacillus_schlegelii_heterotrophic_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 260; local
+    ingredient and concentration signatures match.

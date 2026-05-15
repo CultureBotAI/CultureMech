@@ -38,8 +38,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
-    Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain
+    tissue; Constituent of Brain Heart Infusion commercial product
 - preferred_term: Beef heart
   term:
     id: UBERON:0000948
@@ -51,8 +51,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
-    tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox
+    heart tissue; Constituent of Brain Heart Infusion commercial product
 - preferred_term: Proteose peptone
   term:
     id: FOODON:03302071
@@ -64,8 +64,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
-    of Brain Heart Infusion commercial product
+  notes: Enzymatic digest of animal protein providing amino acids and peptides;
+    Constituent of Brain Heart Infusion commercial product
 - preferred_term: Dextrose
   term:
     id: CHEBI:17234
@@ -77,7 +77,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: glucose
     synonym_type: EXACT
@@ -96,8 +97,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
-    product
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion
+    commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -114,8 +115,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
-    product
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion
+    commercial product
   synonyms:
   - synonym_text: Na2HPO4
     synonym_type: EXACT
@@ -217,6 +218,24 @@ ingredients:
     label: KH2PO4
 applications:
 - Microbial cultivation
+variants:
+- name: friis_medium_mycoplasma_hyopneumoniae_isolate_growth
+  description: Modified Friis medium condition supporting growth of seven
+    Mycoplasma hyopneumoniae isolates measured by ATP luminometry.
+  modifications:
+  - Use modified Friis medium as described by Friis 1975.
+  - Incubate slowly shaken Mycoplasma hyopneumoniae cultures; source reports
+    isolate-dependent behavior across five Friis medium batches.
+  purpose: Capture isolate-level Mycoplasma hyopneumoniae growth evidence under
+    the parent Friis medium record.
+  evidence:
+  - reference: PMID:20851152
+    supports: SUPPORT
+    snippet: Doubling times (Tds) of the isolates grown in slowly shaken
+      cultures varied between 4.8 and 7.8 h.
+    explanation: The source directly measured growth kinetics for seven named
+      Mycoplasma hyopneumoniae isolates in modified Friis medium, supporting
+      this condition as a variant of the Friis parent medium.
 curation_history:
 - timestamp: 2026-01-27T01:15:01.fZ
   curator: komodo-web-import
@@ -237,4 +256,40 @@ curation_history:
 - timestamp: '2026-03-17T19:45:36.019533+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FRIIS medium" to "friis_medium" for consistent matching
+  notes: Normalized name from "FRIIS medium" to "friis_medium" for consistent
+    matching
+- timestamp: '2026-05-05T00:00:00+00:00'
+  curator: literature_review_manual
+  action: ADDED_GROWTH_EVIDENCE
+  notes: Added Mycoplasma hyopneumoniae isolate growth evidence from
+    PMID:20851152 as a Friis medium variant.
+target_organisms:
+- preferred_term: Mycoplasma hyopneumoniae
+  term:
+    id: NCBITaxon:2099
+    label: Mesomycoplasma hyopneumoniae
+  strain: F1.12A; F5.6A; F6.12D; F7.2C; F12.6A; 13.7B; Mp143
+  growth_metrics:
+  - doubling_time_minutes: 288.0
+    measurement_conditions: Modified Friis medium; seven M. hyopneumoniae
+      isolates in slowly shaken cultures; source reports doubling times ranging
+      from 4.8 to 7.8 h, with this value recording the lower bound.
+    evidence:
+    - reference: PMID:20851152
+      supports: SUPPORT
+      snippet: Doubling times (Tds) of the isolates grown in slowly shaken
+        cultures varied between 4.8 and 7.8 h.
+      explanation: Manual literature review found direct growth-kinetics
+        evidence for seven named Mycoplasma hyopneumoniae isolates in modified
+        Friis medium.
+    is_max_attainment: false
+parent_media:
+  path: data/normalized_yaml/bacterial/friis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000512
+  name: friis_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

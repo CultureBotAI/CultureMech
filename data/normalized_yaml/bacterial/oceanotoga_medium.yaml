@@ -346,16 +346,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine, maltose and vitamins. Sparge
-    medium with 100% N2 gas for 30 - 45 min to make it anoxic, then add and dissolve
-    cysteine and adjust pH to 7.5 with NaOH. Dispense medium under 100% N2 gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose and vitamins
-    after autoclaving from anoxic stock solutions prepared under 100% N2 gas and sterilized
-    by filtration.
+  description: Dissolve ingredients except cysteine, maltose and vitamins.
+    Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, then add
+    and dissolve cysteine and adjust pH to 7.5 with NaOH. Dispense medium under
+    100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and
+    autoclave. Add glucose and vitamins after autoclaving from anoxic stock
+    solutions prepared under 100% N2 gas and sterilized by filtration.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -366,8 +366,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.475528Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:27.050022Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -383,5 +383,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.839268+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "OCEANOTOGA MEDIUM" to "oceanotoga_medium" for consistent
-    matching
+  notes: Normalized name from "OCEANOTOGA MEDIUM" to "oceanotoga_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_24739.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003875
+  name: for_dsm_24739
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

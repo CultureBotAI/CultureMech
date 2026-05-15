@@ -65,10 +65,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Dissolve ingredients except ferrous sulfate and adjust pH to 2.2 with
-    4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121°C. Before use, add  FeSO4
-    x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized
-    under 100% N2 gas atmosphere.
+  description: Dissolve ingredients except ferrous sulfate and adjust pH to 2.2
+    with 4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121°C. Before
+    use, add  FeSO4 x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N
+    H2SO4 and filter-sterilized under 100% N2 gas atmosphere.
 - step_number: 2
   action: MIX
   description: 'Note: Incubate statically without shaking.'
@@ -90,5 +90,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.693487+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDIFERROBACTER (MS) MEDIUM" to "acidiferrobacter_ms_medium"
-    for consistent matching
+  notes: Normalized name from "ACIDIFERROBACTER (MS) MEDIUM" to
+    "acidiferrobacter_ms_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_670_MS-MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006265
+  name: ms_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

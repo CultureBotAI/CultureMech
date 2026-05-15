@@ -190,12 +190,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 100% CO2 gas for 30 - 45 min to make it anoxic,
-    dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. Solution B is autoclaved under 80% N2 and 20% CO2 gas mixture.
-    Solutions C, D and E are autoclaved under 100% N2 gas atmosphere. To complete
-    the medium appropriate amounts of solutions B to E are added to the sterile solution
-    A in the sequence as indicated. Adjust pH of complete medium to 6.9, if necessary
+  description: Sparge solution A with 100% CO2 gas for 30 - 45 min to make it
+    anoxic, dispense under same gas atmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. Solution B is autoclaved under 80% N2 and 20% CO2
+    gas mixture. Solutions C, D and E are autoclaved under 100% N2 gas
+    atmosphere. To complete the medium appropriate amounts of solutions B to E
+    are added to the sterile solution A in the sequence as indicated. Adjust pH
+    of complete medium to 6.9, if necessary
 applications:
 - Microbial cultivation
 curation_history:
@@ -218,5 +219,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.442452+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MOORELLA THERMOACETICA (G-20) MEDIUM" to "moorella_thermoacetica_g_20_medium"
-    for consistent matching
+  notes: Normalized name from "MOORELLA THERMOACETICA (G-20) MEDIUM" to
+    "moorella_thermoacetica_g_20_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/clostridium_thermoaceticum_ii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005890
+  name: clostridium_thermoaceticum_ii_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

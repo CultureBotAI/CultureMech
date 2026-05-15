@@ -168,8 +168,8 @@ preparation_steps:
   description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre\
-    \ Bacterialogical Agar.\r\nAutoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre
+    Bacterialogical Agar.\r\nAutoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: MIX
   description: 'Ensure elements are added in the following sequence:'
@@ -181,7 +181,8 @@ preparation_steps:
   description: Filter sterile
 - step_number: 6
   action: FILTER_STERILIZE
-  description: Take 1 ml of this solution and add 99 ml Deionised water. Filter sterile.
+  description: Take 1 ml of this solution and add 99 ml Deionised water. Filter
+    sterile.
 applications:
 - Microbial cultivation
 curation_history:
@@ -201,3 +202,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "3N-BBM+V" to "3n_bbm_v" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/3n_bbm_v_recipe_for_customer_orders.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000322
+  name: 3n_bbm_v_recipe_for_customer_orders
+  notes: Reviewed 3N-BBM+V records; child keeps the same defined agar base but
+    lowers CaCl2, MgSO4, K2HPO4, KH2PO4, and NaCl from the parent stock-like
+    levels while NaNO3, agar, EDTA, trace metals, thiamine, and cyanocobalamine
+    remain unchanged.

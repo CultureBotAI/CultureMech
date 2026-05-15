@@ -181,5 +181,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.206925+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "B12 - MEDIUM GUTTMAN" to "b12_medium_guttman" for consistent
-    matching
+  notes: Normalized name from "B12 - MEDIUM GUTTMAN" to "b12_medium_guttman" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1270_B12_-_MEDIUM_GUTTMAN.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004025
+  name: b12_medium_guttman
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1270; local
+    ingredient and concentration signatures match.

@@ -305,13 +305,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified concentrations
+  description: Dissolve all ingredients in distilled water to specified
+    concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
+    components
 curation_history:
 - timestamp: '2026-01-27T07:21:46.266337Z'
   curator: mediadb-import
@@ -345,3 +347,10 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+variant_children:
+- path: data/normalized_yaml/bacterial/bl_medium_low_mops.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:007305
+  name: bl_medium_low_mops
+  notes: MOPS decreased from 190 mM to 40 mM while the MediaDB BL medium
+    formulation remains unchanged.

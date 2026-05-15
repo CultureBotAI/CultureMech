@@ -58,5 +58,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.587677+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ANOXYBACILLUS AMYLOLYTICUS MEDIUM" to "anoxybacillus_amylolyticus_medium"
-    for consistent matching
+  notes: Normalized name from "ANOXYBACILLUS AMYLOLYTICUS MEDIUM" to
+    "anoxybacillus_amylolyticus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1046_ANOXYBACILLUS_AMYLOLYTICUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003604
+  name: anoxybacillus_amylolyticus_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

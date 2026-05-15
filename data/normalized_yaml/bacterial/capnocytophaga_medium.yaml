@@ -72,8 +72,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: Sterilize glucose separately. Incubate in oxygen-free, 5 - 10% CO2
-    containing atmosphere.
+  description: Sterilize glucose separately. Incubate in oxygen-free, 5 - 10%
+    CO2 containing atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -96,5 +96,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.214097+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CAPNOCYTOPHAGA MEDIUM" to "capnocytophaga_medium" for
-    consistent matching
+  notes: Normalized name from "CAPNOCYTOPHAGA MEDIUM" to "capnocytophaga_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_340_CAPNOCYTOPHAGA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005049
+  name: capnocytophaga_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 340; local
+    ingredient and concentration signatures match.

@@ -115,5 +115,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.600015+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BEIJERINCKIA DOEBEREINERAE MEDIUM" to "beijerinckia_doebereinerae_medium"
-    for consistent matching
+  notes: Normalized name from "BEIJERINCKIA DOEBEREINERAE MEDIUM" to
+    "beijerinckia_doebereinerae_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1215_BEIJERINCKIA_DOEBEREINERAE_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003966
+  name: beijerinckia_doebereinerae_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1215; local
+    ingredient and concentration signatures match.

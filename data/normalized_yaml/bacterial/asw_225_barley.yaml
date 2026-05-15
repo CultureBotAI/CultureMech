@@ -64,9 +64,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Add  20  ml of  the  autoclaved artificial seawater  with 255  psu\
-    \ and  4 \r\nautoclaved barley grains to a T­25 tissue culture flask (Corning\
-    \ 25100)."
+  description: "Add  20  ml of  the  autoclaved artificial seawater  with 255  psu
+    and  4 \r\nautoclaved barley grains to a T­25 tissue culture flask (Corning 25100)."
 applications:
 - Microbial cultivation
 curation_history:
@@ -85,6 +84,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:05.931968+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ASW 225 + barley" to "asw_225_barley" for consistent
-    matching
+  notes: Normalized name from "ASW 225 + barley" to "asw_225_barley" for
+    consistent matching
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/asw_150_barley.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:000382
+  name: asw_150_barley
+  notes: CCAP artificial seawater plus barley formulation with higher stated
+    salinity; reviewed as salinity variant of ASW 150 + barley.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- Artificial seawater salinity increased relative to 150 psu parent; record name/source
+  ID indicate 225 psu, preparation text says 255 psu. NaCl, MgCl2 x 6 H2O, and
+  MgSO4 x 7 H2O concentrations differ from parent while ingredient identities
+  are unchanged.

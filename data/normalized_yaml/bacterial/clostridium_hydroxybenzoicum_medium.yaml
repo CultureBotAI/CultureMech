@@ -361,8 +361,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.822412Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:24.646665Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -378,6 +378,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.923693+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM HYDROXYBENZOICUM medium" to "clostridium_hydroxybenzoicum_medium"
-    for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM HYDROXYBENZOICUM medium" to
+    "clostridium_hydroxybenzoicum_medium" for consistent matching
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/sedimentibacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001780
+  name: sedimentibacter_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

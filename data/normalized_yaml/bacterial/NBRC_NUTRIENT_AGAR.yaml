@@ -52,6 +52,20 @@ curation_history:
 - timestamp: '2026-03-17T19:46:07.617151+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Nutrient Agar" to "nutrient_agar" for consistent matching
+  notes: Normalized name from "Nutrient Agar" to "nutrient_agar" for consistent
+    matching
 notes: General purpose medium for bacteria
 kg_microbe_match: mediadive.medium:12
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J74_NUTRIENT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003093
+  name: nutrient_agar
+  notes: Reviewed exact same-name Nutrient Agar formulation across source
+    records; ingredient identity, concentrations, and agar state match, with
+    only missing pH metadata in the child.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Reviewed JCM/NBRC Nutrient Agar records; both parsed formulations contain beef
+  extract 3 g/L, peptone 5 g/L, and agar 15 g/L, with the JCM parent carrying pH
+  7.0 and the NBRC record not specifying pH.

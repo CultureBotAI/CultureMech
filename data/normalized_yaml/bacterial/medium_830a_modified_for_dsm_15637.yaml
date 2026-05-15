@@ -202,5 +202,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.031471+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 830a MODIFIED FOR DSM 15637" to "medium_830a_modified_for_dsm_15637"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 830a MODIFIED FOR DSM 15637" to
+    "medium_830a_modified_for_dsm_15637" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_830_R2A_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006618
+  name: r2a_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

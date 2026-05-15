@@ -62,8 +62,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:13.402097+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TSB + 0.2%(w/v) Na2CO3" to "tsb_0_2_w_v_na2co3" for
-    consistent matching
+  notes: Normalized name from "TSB + 0.2%(w/v) Na2CO3" to "tsb_0_2_w_v_na2co3"
+    for consistent matching
 solutions:
 - preferred_term: Na2CO3**
   composition: []
@@ -80,3 +80,12 @@ solutions:
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
   name: Unknown solution
+parent_media:
+  path: data/normalized_yaml/bacterial/hgam.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:009551
+  name: hgam
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

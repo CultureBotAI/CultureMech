@@ -227,14 +227,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 8.0 before autoclaving. The medium may be solidified by
-    adding 15 g/l agar.
+  description: Adjust pH to 8.0 before autoclaving. The medium may be solidified
+    by adding 15 g/l agar.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.8.
 - step_number: 3
   action: AUTOCLAVE
-  description: Filter sterilise and add to the medium after it has been autoclaved.
+  description: Filter sterilise and add to the medium after it has been
+    autoclaved.
 applications:
 - Microbial cultivation
 curation_history:
@@ -253,5 +254,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.783887+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALGORIPHAGUS AQUAEDUCTUS MEDIUM" to "algoriphagus_aquaeductus_medium"
-    for consistent matching
+  notes: Normalized name from "ALGORIPHAGUS AQUAEDUCTUS MEDIUM" to
+    "algoriphagus_aquaeductus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1332_ALGORIPHAGUS_AQUAEDUCTUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004095
+  name: algoriphagus_aquaeductus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1332; local
+    ingredient and concentration signatures match.

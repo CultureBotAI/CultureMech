@@ -159,9 +159,9 @@ preparation_steps:
     add the following solutions (autoclaved):'
 - step_number: 2
   action: MIX
-  description: Aseptically distribute the medium into culture vessels (e.g., 20 ml
-    in 120 ml serum bottles) and seal with butyl rubber stoppers. Then, pressurize
-    to 100 kPa with H2-CO2 (4:1, v/v).
+  description: Aseptically distribute the medium into culture vessels (e.g., 20
+    ml in 120 ml serum bottles) and seal with butyl rubber stoppers. Then,
+    pressurize to 100 kPa with H2-CO2 (4:1, v/v).
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 3.6.
@@ -183,5 +183,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:31.719329+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MINERAL MEDIUM FOR HYDROGENOPHILUS ISLANDICUM" to "mineral_medium_for_hydrogenophilus_islandicum"
-    for consistent matching
+  notes: Normalized name from "MINERAL MEDIUM FOR HYDROGENOPHILUS ISLANDICUM" to
+    "mineral_medium_for_hydrogenophilus_islandicum" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/mineral_medium_for_thiomonas_islandicum.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003117
+  name: mineral_medium_for_thiomonas_islandicum
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

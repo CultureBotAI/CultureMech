@@ -73,6 +73,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:44.653610+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 31 MODIFIED FOR DSM 9881" to "medium_31_modified_for_dsm_9881"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 31 MODIFIED FOR DSM 9881" to
+    "medium_31_modified_for_dsm_9881" for consistent matching
 ph_value: 9.7
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_31_ALKALINE_NUTRIENT_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005008
+  name: alkaline_nutrient_agar
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

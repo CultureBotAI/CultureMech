@@ -56,8 +56,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave soil suspension for one hour at 121°C. To obtain a clear
-    supernatant allow to settle and centrifuge. Adjust pH to 7.2.
+  description: Autoclave soil suspension for one hour at 121°C. To obtain a
+    clear supernatant allow to settle and centrifuge. Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -76,6 +76,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.681015+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RHIZOBIUM MEDIUM" to "rhizobium_medium" for consistent
-    matching
+  notes: Normalized name from "RHIZOBIUM MEDIUM" to "rhizobium_medium" for
+    consistent matching
 kg_microbe_match: mediadive.medium:98
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_98_RHIZOBIUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006961
+  name: rhizobium_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

@@ -325,8 +325,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.658024Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:24.362682Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -342,5 +342,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.269962+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BASAL MEDIUM" to "basal_medium" for consistent matching
+  notes: Normalized name from "BASAL MEDIUM" to "basal_medium" for consistent
+    matching
 ph_value: 6.9
+parent_media:
+  path: data/normalized_yaml/bacterial/basal_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000417
+  name: basal_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

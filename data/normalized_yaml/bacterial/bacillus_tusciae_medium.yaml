@@ -166,11 +166,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 4.0. Agar if necessary 15.0 g. Distribute in 30 - 50 ml
-    amounts in Erlenmeyer flasks and sterilize for 15 minutes at 121°C.
+  description: Adjust pH to 4.0. Agar if necessary 15.0 g. Distribute in 30 - 50
+    ml amounts in Erlenmeyer flasks and sterilize for 15 minutes at 121°C.
 - step_number: 2
   action: HEAT
-  description: Incubate at 50°C without agitation under 5% O2, 10% CO2, 45% H2 (v/v).
+  description: Incubate at 50°C without agitation under 5% O2, 10% CO2, 45% H2
+    (v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -189,5 +190,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.438314+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BACILLUS TUSCIAE MEDIUM" to "bacillus_tusciae_medium"
-    for consistent matching
+  notes: Normalized name from "BACILLUS TUSCIAE MEDIUM" to
+    "bacillus_tusciae_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_369_BACILLUS_TUSCIAE_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005090
+  name: bacillus_tusciae_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 369; local
+    ingredient and concentration signatures match.

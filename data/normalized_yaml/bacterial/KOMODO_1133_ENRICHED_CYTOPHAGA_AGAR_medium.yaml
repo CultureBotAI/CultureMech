@@ -72,6 +72,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:37.087541+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ENRICHED CYTOPHAGA AGAR medium" to "enriched_cytophaga_agar_medium"
-    for consistent matching
+  notes: Normalized name from "ENRICHED CYTOPHAGA AGAR medium" to
+    "enriched_cytophaga_agar_medium" for consistent matching
 kg_microbe_match: mediadive.medium:1133
+parent_media:
+  path: data/normalized_yaml/bacterial/enriched_cytophaga_agar_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000569
+  name: enriched_cytophaga_agar_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

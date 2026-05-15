@@ -94,3 +94,14 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015477'
 data_quality_flags:
 - has_unmapped_ingredients
+parent_media:
+  path: data/normalized_yaml/fungal/fungal_growth_media_mcafes_v1.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:015475
+  name: Fungal growth media mCAFEs v1
+  notes: CultureBotHT fungal mCAFEs glucose-dose family; reviewed as
+    concentration variants of v1.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- D-Glucose concentration changed from 20 g/L to 5 g/L; all other parsed
+  ingredient concentrations match the parent.

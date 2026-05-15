@@ -39,11 +39,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Sterilize 400.0 g of air-dried garden soil (with high content of organic
-    matter) in 1000 ml tap water for one hour at 121°C. Allow it to sediment for a
-    few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per
-    1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0
-    and sterilize.
+  description: Sterilize 400.0 g of air-dried garden soil (with high content of
+    organic matter) in 1000 ml tap water for one hour at 121°C. Allow it to
+    sediment for a few hours at room temperature. Centrifuge the supernatant.
+    Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained.
+    Adjust pH to 6.8 - 7.0 and sterilize.
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,5 +62,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.542665+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SOIL EXTRACT MEDIUM" to "soil_extract_medium" for consistent
-    matching
+  notes: Normalized name from "SOIL EXTRACT MEDIUM" to "soil_extract_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_12_SOIL_EXTRACT_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004048
+  name: soil_extract_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 12; local
+    ingredient and concentration signatures match.

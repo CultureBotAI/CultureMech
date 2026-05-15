@@ -167,9 +167,9 @@ preparation_steps:
   description: Final pH to 9.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave the Na2CO3 solution separately and combine with the rest
-    of the medium after cooling both to about 50°C. Agar may be added at 15g/l to
-    solidify the medium
+  description: Autoclave the Na2CO3 solution separately and combine with the
+    rest of the medium after cooling both to about 50°C. Agar may be added at
+    15g/l to solidify the medium
 applications:
 - Microbial cultivation
 curation_history:
@@ -188,5 +188,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.717658+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PARACOCCUS BOGORIENSIS MEDIUM" to "paracoccus_bogoriensis_medium"
-    for consistent matching
+  notes: Normalized name from "PARACOCCUS BOGORIENSIS MEDIUM" to
+    "paracoccus_bogoriensis_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1325_PARACOCCUS_BOGORIENSIS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004081
+  name: paracoccus_bogoriensis_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1325; local
+    ingredient and concentration signatures match.

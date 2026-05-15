@@ -415,8 +415,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 770, replacing betaine solution in Solution B with 1.0
-    M sodium lactate solution (final 10.0 mM).
+  description: Use Medium No. 770, replacing betaine solution in Solution B with
+    1.0 M sodium lactate solution (final 10.0 mM).
 applications:
 - Microbial cultivation
 curation_history:
@@ -435,14 +435,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:32.425655+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LACTATE+BICARBONATE BUFFERED MEDIUM" to "lactate_bicarbonate_buffered_medium"
-    for consistent matching
+  notes: Normalized name from "LACTATE+BICARBONATE BUFFERED MEDIUM" to
+    "lactate_bicarbonate_buffered_medium" for consistent matching
 - timestamp: '2026-04-04T18:49:19.985890'
   curator: copy_referenced_compositions
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (37 ingredients)
   source: CultureMech:003112
-  notes: Resolved reference by copying from betaine_bicarbonate_buffered_medium (CultureMech:003112)
+  notes: Resolved reference by copying from betaine_bicarbonate_buffered_medium
+    (CultureMech:003112)
 data_quality_flags:
   incomplete_composition: false
   resolved_reference: true
+parent_media:
+  path: data/normalized_yaml/bacterial/betaine_bicarbonate_buffered_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003112
+  name: betaine_bicarbonate_buffered_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

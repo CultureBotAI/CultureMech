@@ -267,12 +267,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, cysteine and vitamins), bring
-    medium to the boil, then cool to room temperature under 100% N2 gas atmosphere.
-    Add and dissolve carbonate and cysteine, adjust pH to 7.2, then dispense under
-    100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Add vitamins from an anoxic stock solution prepared under 100% N2 gas and sterilized
-    by filtration. Adjust pH of complete medium to 7.2, if necessary.
+  description: Dissolve ingredients (except carbonate, cysteine and vitamins),
+    bring medium to the boil, then cool to room temperature under 100% N2 gas
+    atmosphere. Add and dissolve carbonate and cysteine, adjust pH to 7.2, then
+    dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. Add vitamins from an anoxic stock solution
+    prepared under 100% N2 gas and sterilized by filtration. Adjust pH of
+    complete medium to 7.2, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -287,8 +288,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.743651Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:04.668082Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -300,5 +301,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.717101+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DICTYOGLOMUS MEDIUM" to "dictyoglomus_medium" for consistent
-    matching
+  notes: Normalized name from "DICTYOGLOMUS MEDIUM" to "dictyoglomus_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_388_DICTYOGLOMUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005165
+  name: dictyoglomus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 388; local
+    ingredient and concentration signatures match.

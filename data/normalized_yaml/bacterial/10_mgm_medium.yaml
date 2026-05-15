@@ -84,8 +84,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 7.0 with 2 M Tris-Base and sterilize by autoclaving. The
-    medium may be solidified by adding 20.0 g/l agar.
+  description: Adjust to pH 7.0 with 2 M Tris-Base and sterilize by autoclaving.
+    The medium may be solidified by adding 20.0 g/l agar.
 - step_number: 2
   action: MIX
   description: Adjust to pH 7.5 with 2 M Tris-Base and sterilize by autoclaving.
@@ -107,5 +107,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.826131+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "10% MGM-MEDIUM" to "10_mgm_medium" for consistent matching
+  notes: Normalized name from "10% MGM-MEDIUM" to "10_mgm_medium" for consistent
+    matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/15_mgm_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000848
+  name: 15_mgm_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

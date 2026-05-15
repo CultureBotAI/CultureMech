@@ -232,8 +232,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve chemicals one at a time in approximately 200.0 ml distilled
-    water. Bring final volume to 250.0 ml with additional water.
+  description: Dissolve chemicals one at a time in approximately 200.0 ml
+    distilled water. Bring final volume to 250.0 ml with additional water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -260,4 +260,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.516911+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CENS MEDIUM" to "cens_medium" for consistent matching
+  notes: Normalized name from "CENS MEDIUM" to "cens_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_748_CENS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006399
+  name: cens_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

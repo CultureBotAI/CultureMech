@@ -219,8 +219,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.930429Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:08:47.044998Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -236,5 +236,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:47.365402+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOBACTEROIDES ACETOETHYLICUS medium" to "halobacteroides_acetoethylicus_medium"
-    for consistent matching
+  notes: Normalized name from "HALOBACTEROIDES ACETOETHYLICUS medium" to
+    "halobacteroides_acetoethylicus_medium" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/halobacteroides_acetoethylicus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001541
+  name: halobacteroides_acetoethylicus_medium
+  notes: KOMODO record states DSMZ Medium 432 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

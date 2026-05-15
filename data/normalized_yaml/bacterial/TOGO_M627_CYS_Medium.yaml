@@ -143,5 +143,13 @@ curation_history:
 - timestamp: '2026-03-17T19:46:29.730466+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CYS Medium" to "cys_medium" for consistent matching
+  notes: Normalized name from "CYS Medium" to "cys_medium" for consistent
+    matching
 high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/TOGO_M628_CYS_Medium_For_YMO722.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:010028
+  name: cys_medium_for_ymo722
+  notes: NaCl decreased from 20 g/L to 16 g/L while the TOGO CYS medium
+    formulation remains unchanged.

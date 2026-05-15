@@ -78,5 +78,24 @@ curation_history:
 - timestamp: '2026-03-17T19:46:01.225634+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TWEEN 80-AGAR" to "tween_80_agar" for consistent matching
+  notes: Normalized name from "TWEEN 80-AGAR" to "tween_80_agar" for consistent
+    matching
 kg_microbe_match: mediadive.medium:884
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_884_modified_for_dsm_13023.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006734
+  name: medium_884_modified_for_dsm_13023
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/tween_80_agar.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002044
+  name: tween_80_agar
+  notes: KOMODO record states DSMZ Medium 884 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

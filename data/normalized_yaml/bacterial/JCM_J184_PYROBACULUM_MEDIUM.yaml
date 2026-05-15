@@ -170,12 +170,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except yeast extract, peptone, sulfur and Na2S x 9H2O,
-    and autoclave under a N2 atmosphere. Separately autoclave yeast extract and peptone
-    as 10% solutions, and Na2S x 9H2O as a 5% solution under a N2 atmosphere. Steam
-    sulfur for 3 hr on each of 3 successive days. Aseptically and anaerobically add
-    the yeast extract and peptone solutions and sulfur to the medium. Prior to inoculation,
-    add the sterile Na2S x 9H2O solution, and adjust pH to 5.5 with sterile 1 N H2SO4.
+  description: Mix ingredients, except yeast extract, peptone, sulfur and Na2S x
+    9H2O, and autoclave under a N2 atmosphere. Separately autoclave yeast
+    extract and peptone as 10% solutions, and Na2S x 9H2O as a 5% solution under
+    a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days.
+    Aseptically and anaerobically add the yeast extract and peptone solutions
+    and sulfur to the medium. Prior to inoculation, add the sterile Na2S x 9H2O
+    solution, and adjust pH to 5.5 with sterile 1 N H2SO4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -194,5 +195,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.264029+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYROBACULUM MEDIUM" to "pyrobaculum_medium" for consistent
-    matching
+  notes: Normalized name from "PYROBACULUM MEDIUM" to "pyrobaculum_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/pyrobaculum_arsenaticum_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002666
+  name: pyrobaculum_arsenaticum_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

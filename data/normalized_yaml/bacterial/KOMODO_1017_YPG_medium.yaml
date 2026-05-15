@@ -73,7 +73,7 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003528'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:29.567605'
+  timestamp: '2026-03-14T21:06:29.567605'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
 - timestamp: '2026-03-17T06:30:01.000000Z'
@@ -84,3 +84,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YPG medium" to "ypg_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/ypg_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000438
+  name: ypg_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature; child
+  records HCl as a variable pH-adjuster extracted from source notes.

@@ -66,3 +66,21 @@ validate-growth *args:
 # fallback. Default dry-run.
 enrich-genomes *args:
     /opt/homebrew/bin/python3.13 scripts/enrich_genome_ids.py {{args}}
+
+# Assess ingredient, concentration, and candidate media-variant state across
+# data/normalized_yaml/**/*.yaml.
+review-media-content *args:
+    /opt/homebrew/bin/python3.13 scripts/build_media_content_review_manifest.py {{args}}
+
+# Propose parent/child MediaRecipe variant links from the content review manifest.
+propose-media-variant-links *args:
+    /opt/homebrew/bin/python3.13 scripts/propose_media_variant_links.py {{args}}
+
+# Validate bidirectional parent/child MediaRecipe variant links.
+validate-media-variant-links *args:
+    /opt/homebrew/bin/python3.13 scripts/validate_media_variant_links.py {{args}}
+
+# Dry-run or apply proposed parent/child MediaRecipe variant links. Pass --apply
+# explicitly to write YAML edits.
+apply-media-variant-links *args:
+    uv run python scripts/apply_media_variant_links.py {{args}}

@@ -159,12 +159,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium without glucose, cellobiose, maltose, and soluble
-    starch. Boil the medium and cool under an atmosphere of N2:CO2 (80:20) and adjust
-    the pH to 6.8. Dispense into Hungate tubes or serum bottles under the same gas
-    atmosphere and seal with rubber stoppers. Add the glucose, cellobiose, maltose,
-    and soluble starch from N2/CO2 gassed and sterile-filtered stock solutions (pH
-    6.8).
+  description: Prepare the medium without glucose, cellobiose, maltose, and
+    soluble starch. Boil the medium and cool under an atmosphere of N2:CO2
+    (80:20) and adjust the pH to 6.8. Dispense into Hungate tubes or serum
+    bottles under the same gas atmosphere and seal with rubber stoppers. Add the
+    glucose, cellobiose, maltose, and soluble starch from N2/CO2 gassed and
+    sterile-filtered stock solutions (pH 6.8).
 applications:
 - Microbial cultivation
 curation_history:
@@ -187,5 +187,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.423530+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RHIZOMICROBIUM MEDIUM" to "rhizomicrobium_medium" for
-    consistent matching
+  notes: Normalized name from "RHIZOMICROBIUM MEDIUM" to "rhizomicrobium_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1288_RHIZOMICROBIUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004038
+  name: rhizomicrobium_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1288; local
+    ingredient and concentration signatures match.

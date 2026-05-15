@@ -69,6 +69,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.055520+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NUTRIMENT AGAR WITH 150 G/L NACL" to "nutriment_agar_with_150_g_l_nacl"
-    for consistent matching
+  notes: Normalized name from "NUTRIMENT AGAR WITH 150 G/L NACL" to
+    "nutriment_agar_with_150_g_l_nacl" for consistent matching
 kg_microbe_match: mediadive.medium:101
+parent_media:
+  path: data/normalized_yaml/bacterial/nutriment_agar.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:000717
+  name: nutriment_agar
+  notes: Reviewed DSMZ Nutriment agar salt pair; records differ only in NaCl
+    concentration.
+variant_relationship: SALINITY_VARIANT
+variant_modifications:
+- NaCl increased from 5 g/L to 150 g/L while the DSMZ Nutriment agar formulation
+  remains unchanged.

@@ -67,5 +67,83 @@ curation_history:
 - timestamp: '2026-03-17T19:45:47.486219+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "STANDARD I medium" to "standard_i_medium" for consistent
-    matching
+  notes: Normalized name from "STANDARD I medium" to "standard_i_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_453_modified_for_dsm_43934.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005292
+  name: medium_453_modified_for_dsm_43934
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6341.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005293
+  name: medium_453_modified_for_dsm_6341
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6349.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005294
+  name: medium_453_modified_for_dsm_6349
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6364.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005295
+  name: medium_453_modified_for_dsm_6364
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6366.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005296
+  name: medium_453_modified_for_dsm_6366
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6406.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005297
+  name: medium_453_modified_for_dsm_6406
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6453.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005298
+  name: medium_453_modified_for_dsm_6453
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6454.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005299
+  name: medium_453_modified_for_dsm_6454
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6455.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005300
+  name: medium_453_modified_for_dsm_6455
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6458.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005301
+  name: medium_453_modified_for_dsm_6458
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_453_modified_for_dsm_6472.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005302
+  name: medium_453_modified_for_dsm_6472
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/standard_i_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001563
+  name: standard_i_medium
+  notes: KOMODO record states DSMZ Medium 453 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

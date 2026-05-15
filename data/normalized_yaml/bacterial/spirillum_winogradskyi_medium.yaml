@@ -246,19 +246,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except trace elements, vitamins and catalase,
-    adjust pH to 7.2 - 7.4, bring medium to the boil and cool to room temperature
-    under 100% N2 gas atmosphere. Dispense under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. To complete the medium add trace elements,
-    vitamins and catalase from sterile anoxic stock solutions prepared under 100%
-    N2 gas atmosphere. Vitamins and catalase should be sterilized by filtration. After
-    inoculation, inject sterile air into the culture vessel up to about 20% of the
-    total gas volume (i.e., 4 parts N2 and 1 part air).
+  description: Dissolve ingredients except trace elements, vitamins and
+    catalase, adjust pH to 7.2 - 7.4, bring medium to the boil and cool to room
+    temperature under 100% N2 gas atmosphere. Dispense under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. To complete the
+    medium add trace elements, vitamins and catalase from sterile anoxic stock
+    solutions prepared under 100% N2 gas atmosphere. Vitamins and catalase
+    should be sterilized by filtration. After inoculation, inject sterile air
+    into the culture vessel up to about 20% of the total gas volume (i.e., 4
+    parts N2 and 1 part air).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N
+    NaOH and add ferrous chloride. After ferrous chloride has dissolved add
+    other compounds. Finally adjust pH to 6.0 and bring volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -277,5 +278,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.821058+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPIRILLUM WINOGRADSKYI MEDIUM" to "spirillum_winogradskyi_medium"
-    for consistent matching
+  notes: Normalized name from "SPIRILLUM WINOGRADSKYI MEDIUM" to
+    "spirillum_winogradskyi_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/spirillum_d427_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006650
+  name: spirillum_d427_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

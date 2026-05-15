@@ -219,8 +219,8 @@ curation_history:
 - timestamp: '2026-03-17T19:46:28.825028+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Rhodobium Gokurnum Medium" to "rhodobium_gokurnum_medium"
-    for consistent matching
+  notes: Normalized name from "Rhodobium Gokurnum Medium" to
+    "rhodobium_gokurnum_medium" for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Ferric citrate solution (0.1%)
@@ -236,3 +236,20 @@ solutions:
     value: '1'
     unit: G_PER_L
   name: Unknown solution
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/TOGO_M585_Rhodobacter_Sphaeroides_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009981
+  name: rhodobacter_sphaeroides_medium
+  notes: Reviewed TOGO Rhodobium/Rhodobacter source-local pair; child keeps
+    water, yeast extract, KH2PO4, pyruvate, sorbitol, HCl, and trace components
+    unchanged but lowers NaCl, CaCl2, and MgCl2 and raises NH4Cl.
+- path:
+    data/normalized_yaml/bacterial/TOGO_M593_Modified_Rhodobacter_Spaeroides_Medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:009990
+  name: modified_rhodobacter_spaeroides_medium
+  notes: Reviewed TOGO Rhodobium/modified Rhodobacter source-local pair; child
+    shares the parsed base formulation but lowers NaCl, CaCl2, MgCl2, and NH4Cl
+    and raises yeast extract from 0.4 to 0.6 g/L.

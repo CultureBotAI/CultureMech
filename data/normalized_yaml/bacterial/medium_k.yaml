@@ -88,8 +88,8 @@ preparation_steps:
   description: Adjust to pH 7.2.
 - step_number: 2
   action: MIX
-  description: After autoclaving add methanol (sterilized separately) to a concentration
-    of 1% (v/v).
+  description: After autoclaving add methanol (sterilized separately) to a
+    concentration of 1% (v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -109,3 +109,16 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM K" to "medium_k" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/JCM_J1154_K_MEDIUM.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002326
+  name: k_medium
+  notes: Reviewed Medium K as a same-name concentration variant of JCM K Medium
+    with FeSO4, methanol, agar, and pH differences.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed K Medium/Medium K pair; child keeps ammonium sulfate, KH2PO4, NaCl,
+  and MgSO4 unchanged but lowers FeSO4 from 0.02 to 0.002 g/L, lowers methanol
+  from 10 to 1 g/L, increases agar from 15 to 20 g/L, and changes pH from 7.4 to
+  7.2.

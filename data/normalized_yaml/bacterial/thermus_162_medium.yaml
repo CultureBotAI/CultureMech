@@ -166,7 +166,8 @@ preparation_steps:
   description: Adjust pH to 7.2 with NaOH. Autoclave at 121°C for 15 min.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave the phosphate buffer separately and then add to the medium.
+  description: Autoclave the phosphate buffer separately and then add to the
+    medium.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.2
@@ -188,5 +189,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.228114+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMUS 162 MEDIUM" to "thermus_162_medium" for consistent
-    matching
+  notes: Normalized name from "THERMUS 162 MEDIUM" to "thermus_162_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_878_modified_for_dsm_21543.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006715
+  name: medium_878_modified_for_dsm_21543
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_878_modified_for_dsm_9941.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006716
+  name: medium_878_modified_for_dsm_9941
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

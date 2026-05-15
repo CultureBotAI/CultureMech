@@ -248,8 +248,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use JCM Medium No. 791 with 5.0 g/L MgSO4 x 7H2O instead of CaCl2 x
-    2H2O. Adjust pH to 7.5.
+  description: Use JCM Medium No. 791 with 5.0 g/L MgSO4 x 7H2O instead of CaCl2
+    x 2H2O. Adjust pH to 7.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -268,8 +268,8 @@ curation_history:
 - timestamp: '2026-03-17T19:45:32.062744+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALANAEROBACTER JERIDENSIS MEDIUM" to "halanaerobacter_jeridensis_medium"
-    for consistent matching
+  notes: Normalized name from "HALANAEROBACTER JERIDENSIS MEDIUM" to
+    "halanaerobacter_jeridensis_medium" for consistent matching
 - timestamp: '2026-04-04T21:48:41.582855'
   curator: resolve_option_c_references
   action: RESOLVED_REFERENCE
@@ -285,3 +285,12 @@ curation_history:
 data_quality_flags:
   incomplete_composition: false
   resolved_reference: true
+parent_media:
+  path: data/normalized_yaml/bacterial/s200_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003135
+  name: s200_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

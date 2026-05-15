@@ -175,4 +175,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.236658+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ONR7a MEDIUM" to "onr7a_medium" for consistent matching
+  notes: Normalized name from "ONR7a MEDIUM" to "onr7a_medium" for consistent
+    matching
+parent_media:
+  path: data/normalized_yaml/bacterial/DSMZ_983_ONR7a_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002165
+  name: onr7a_medium
+  notes: KOMODO record states DSMZ Medium 983 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

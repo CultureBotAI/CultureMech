@@ -237,5 +237,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:53.697345+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 520 MODIFIED FOR DSM 7093" to "medium_520_modified_for_dsm_7093"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 520 MODIFIED FOR DSM 7093" to
+    "medium_520_modified_for_dsm_7093" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_520_CM3_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005882
+  name: cm3_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

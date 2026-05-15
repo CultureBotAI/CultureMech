@@ -112,3 +112,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MMN" to "mmn" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1305_MMN.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004060
+  name: mmn
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1305; local
+    ingredient and concentration signatures match.

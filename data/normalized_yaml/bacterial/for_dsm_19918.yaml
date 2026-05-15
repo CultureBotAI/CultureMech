@@ -319,4 +319,36 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.914025+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 19918" to "for_dsm_19918" for consistent matching
+  notes: Normalized name from "For DSM 19918" to "for_dsm_19918" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_377_modified_for_dsm_12428.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005109
+  name: medium_377_modified_for_dsm_12428
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_377_modified_for_dsm_13482.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005110
+  name: medium_377_modified_for_dsm_13482
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_377_modified_for_dsm_15127.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005111
+  name: medium_377_modified_for_dsm_15127
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/pyrococcus_st04_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001480
+  name: pyrococcus_st04_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/pyrococcus_staphylothermus_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005113
+  name: pyrococcus_staphylothermus_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

@@ -230,5 +230,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.761122+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 640 MODIFIED FOR DSM 8685" to "medium_640_modified_for_dsm_8685"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 640 MODIFIED FOR DSM 8685" to
+    "medium_640_modified_for_dsm_8685" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_640_CALDICELLULOSIRUPTOR_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006174
+  name: caldicellulosiruptor_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

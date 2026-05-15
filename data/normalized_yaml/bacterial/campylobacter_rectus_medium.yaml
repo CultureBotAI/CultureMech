@@ -106,8 +106,9 @@ preparation_steps:
   description: Adjust pH to 7.5. Prepare the medium anaerobically under 100% N2.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave solutions of haemin (dissolved in 0.1 ml 1N NaOH, then diluted
-    with water to 10 ml and neutralized), formate, and fumarate separately under nitrogen.
+  description: Autoclave solutions of haemin (dissolved in 0.1 ml 1N NaOH, then
+    diluted with water to 10 ml and neutralized), formate, and fumarate
+    separately under nitrogen.
 applications:
 - Microbial cultivation
 curation_history:
@@ -130,5 +131,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.200974+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CAMPYLOBACTER RECTUS MEDIUM" to "campylobacter_rectus_medium"
-    for consistent matching
+  notes: Normalized name from "CAMPYLOBACTER RECTUS MEDIUM" to
+    "campylobacter_rectus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_338_CAMPYLOBACTER_RECTUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005035
+  name: campylobacter_rectus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 338; local
+    ingredient and concentration signatures match.

@@ -82,7 +82,8 @@ preparation_steps:
   description: Adjust pH 1.7 with H2SO4 and autoclave.
 - step_number: 2
   action: AUTOCLAVE
-  description: Adjust pH to 1.25 and autoclave at 115C for 10 min or filter-sterilize.
+  description: Adjust pH to 1.25 and autoclave at 115C for 10 min or
+    filter-sterilize.
 - step_number: 3
   action: MIX
   description: Sterilize by filtration.
@@ -91,8 +92,8 @@ preparation_steps:
   description: Sterilize by autoclaving.
 - step_number: 5
   action: COOL
-  description: Aseptically combine solutions A and B after cooling. Then, add solutions
-    C and D to the medium.
+  description: Aseptically combine solutions A and B after cooling. Then, add
+    solutions C and D to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -115,5 +116,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:25.745611+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDIHALOBACTER MEDIUM" to "acidihalobacter_medium"
-    for consistent matching
+  notes: Normalized name from "ACIDIHALOBACTER MEDIUM" to
+    "acidihalobacter_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/acidihalobacter_ferrooxidans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000778
+  name: acidihalobacter_ferrooxidans_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

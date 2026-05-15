@@ -366,6 +366,23 @@ preparation_steps:
     the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
+variants:
+- name: slow_growth_phase_methanosarcina_acetivorans
+  description: Slow-growth phase condition for Methanosarcina acetivorans on
+    Methanosarcina Medium.
+  modifications:
+  - Capture slow-growth phase physiology separately from faster growth conditions.
+  - Use Methanosarcina acetivorans as the target organism.
+  purpose: Represent growth-phase-specific doubling time evidence without creating
+    a separate medium record.
+  evidence:
+  - reference: PMID:21097629
+    supports: SUPPORT
+    snippet: M. acetivorans was found to be polyploid during fast growth (t(D) = 6
+      h; 17 genome copies) and oligoploid during slow growth (doubling time = 49
+      h; 3 genome copies).
+    explanation: Literature evidence supports modeling the slow-growth phase as a
+      condition variant under the parent Methanosarcina Medium record.
 curation_history:
 - timestamp: '2026-01-26T17:53:10.222748Z'
   curator: mediadive-import
@@ -393,6 +410,10 @@ curation_history:
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
   notes: organisms_added=1 metrics_added=1 genomes_added=0 strain_mods_added=0
+- timestamp: '2026-05-05T07:23:23.149455+00:00'
+  curator: literature_review_apply
+  action: ADDED_GROWTH_EVIDENCE
+  notes: organisms_added=1 metrics_added=1 genomes_added=0
 target_organisms:
 - preferred_term: Methanosarcina acetivorans
   term:

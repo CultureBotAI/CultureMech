@@ -218,18 +218,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Prepare the medium anaerobically under nitrogen. Do not adjust the
-    pH.
+  description: Prepare the medium anaerobically under nitrogen. Do not adjust
+    the pH.
 - step_number: 2
   action: MIX
-  description: Prepare separate anaerobic stock solutions of, Casamino acids(10%),
-    Yeast extract (10%), and glycine (2M = 150 g/l). A 0.5M polysulphide solution
-    is prepared by dissolving 12.0 g Na2S x 9 H2O in oxygen free water, followed by
-    adding 1.6 g sulphur - the solution will be dark yellow.
+  description: Prepare separate anaerobic stock solutions of, Casamino
+    acids(10%), Yeast extract (10%), and glycine (2M = 150 g/l). A 0.5M
+    polysulphide solution is prepared by dissolving 12.0 g Na2S x 9 H2O in
+    oxygen free water, followed by adding 1.6 g sulphur - the solution will be
+    dark yellow.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -252,5 +253,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.937166+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALKALIPHILIC THERMOCOCCUS MEDIUM" to "alkaliphilic_thermococcus_medium"
-    for consistent matching
+  notes: Normalized name from "ALKALIPHILIC THERMOCOCCUS MEDIUM" to
+    "alkaliphilic_thermococcus_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_926_ALKALIPHILIC_THERMOCOCCUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006844
+  name: alkaliphilic_thermococcus_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

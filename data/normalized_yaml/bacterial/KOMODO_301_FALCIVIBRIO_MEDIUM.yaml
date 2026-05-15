@@ -62,6 +62,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:44.289079+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FALCIVIBRIO MEDIUM" to "falcivibrio_medium" for consistent
-    matching
+  notes: Normalized name from "FALCIVIBRIO MEDIUM" to "falcivibrio_medium" for
+    consistent matching
 kg_microbe_match: mediadive.medium:301
+parent_media:
+  path: data/normalized_yaml/bacterial/falcivibrio_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001401
+  name: falcivibrio_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 301; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 301; local
+  ingredient and concentration signatures match.

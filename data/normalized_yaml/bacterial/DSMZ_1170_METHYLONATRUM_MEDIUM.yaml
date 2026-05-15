@@ -178,12 +178,13 @@ preparation_steps:
   description: pH 10.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without methanol, vitamin B12, MgSO4 x 7 H2O and
-    NaS2O3 x 5 H2O in closed vessels with a medium to headspace ratio of 1:5 to 1:10.
-    Add the methanol, MgSO4 x 7 H2O and NaS2O3 x 5 H2O from autoclaved stock solutions
-    after sterilisation of the medium. Vitamin B12 is added from a filter sterilised
-    stock solution to the sterile medium. Incubate the strains with shaking at 150
-    rpm. Growth is faster in the presence of 20 mM sodium acetate instead of methanol.
+  description: Prepare the medium without methanol, vitamin B12, MgSO4 x 7 H2O
+    and NaS2O3 x 5 H2O in closed vessels with a medium to headspace ratio of 1:5
+    to 1:10. Add the methanol, MgSO4 x 7 H2O and NaS2O3 x 5 H2O from autoclaved
+    stock solutions after sterilisation of the medium. Vitamin B12 is added from
+    a filter sterilised stock solution to the sterile medium. Incubate the
+    strains with shaking at 150 rpm. Growth is faster in the presence of 20 mM
+    sodium acetate instead of methanol.
 applications:
 - Microbial cultivation
 curation_history:
@@ -206,5 +207,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.924168+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLONATRUM MEDIUM" to "methylonatrum_medium" for
-    consistent matching
+  notes: Normalized name from "METHYLONATRUM MEDIUM" to "methylonatrum_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1170_METHYLONATRUM_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003889
+  name: methylonatrum_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1170; local
+    ingredient and concentration signatures match.

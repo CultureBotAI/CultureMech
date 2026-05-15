@@ -361,5 +361,48 @@ curation_history:
 - timestamp: '2026-03-17T19:45:41.101715+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOBULBUS MEDIUM" to "desulfobulbus_medium" for
-    consistent matching
+  notes: Normalized name from "DESULFOBULBUS MEDIUM" to "desulfobulbus_medium"
+    for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/desulfovirga_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001289
+  name: desulfovirga_medium
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_14880.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004231
+  name: for_dsm_14880
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_1744.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004230
+  name: for_dsm_1744
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/for_dsm_21556.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004232
+  name: for_dsm_21556
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_194_modified_for_dsm_13527.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004229
+  name: medium_194_modified_for_dsm_13527
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_194_modified_for_dsm_5092.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004233
+  name: medium_194_modified_for_dsm_5092
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_194_modified_for_dsm_6523.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004234
+  name: medium_194_modified_for_dsm_6523
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.

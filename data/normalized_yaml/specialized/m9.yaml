@@ -62,11 +62,26 @@ ingredients:
     53.49'
 description: E. coli defined media
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
-sources:
-- database: CultureBotHT
-  database_id: M9
-  url: https://github.com/CultureBotAI/CultureBotHT
+category: specialized
+source_data:
+  origin: CultureBotHT
+  notes: 'database_id: M9; url: https://github.com/CultureBotAI/CultureBotHT'
+variants:
+- name: modified_m9_high_density_e_coli_expression
+  description: Modified M9 condition for high-density Escherichia coli protein
+    expression cultures.
+  modifications:
+  - Use modified M9 medium and optimized growth conditions.
+  - Grow Escherichia coli to high culture density.
+  purpose: Capture high-density modified-M9 growth evidence under the parent M9
+    record.
+  evidence:
+  - reference: PMID:27709314
+    supports: SUPPORT
+    snippet: Using a modified M9 medium and optimized growth conditions, we were
+      able to grow cells in linear log phase to an OD600 of up to 10.
+    explanation: Literature evidence supports modeling the modified high-density
+      M9 condition as a variant under the parent M9 record.
 curation_history:
 - timestamp: '2026-03-18T04:31:12.887972+00:00'
   curator: import_from_culturebotht.py

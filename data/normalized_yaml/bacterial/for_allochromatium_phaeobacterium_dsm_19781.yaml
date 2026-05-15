@@ -229,5 +229,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.461926+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For Allochromatium phaeobacterium DSM 19781" to "for_allochromatium_phaeobacterium_dsm_19781"
-    for consistent matching
+  notes: Normalized name from "For Allochromatium phaeobacterium DSM 19781" to
+    "for_allochromatium_phaeobacterium_dsm_19781" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_1226_THIOHALOCAPSA_MARINA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003981
+  name: thiohalocapsa_marina_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

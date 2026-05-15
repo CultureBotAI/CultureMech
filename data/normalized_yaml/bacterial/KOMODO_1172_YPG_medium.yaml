@@ -65,3 +65,11 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YPG medium" to "ypg_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/DSMZ_1172_YPG_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000614
+  name: ypg_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

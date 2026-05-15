@@ -67,9 +67,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Prepare the medium without horse serum. After autoclaving cool to 50°C,
-    then add 100 ml/l of sterile horse serum. Transfer cultures when actively growing.
-    Cultures die rapidly in stationary growth phase!
+  description: Prepare the medium without horse serum. After autoclaving cool to
+    50°C, then add 100 ml/l of sterile horse serum. Transfer cultures when
+    actively growing. Cultures die rapidly in stationary growth phase!
 applications:
 - Microbial cultivation
 curation_history:
@@ -92,6 +92,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.774926+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SIMONSIELLA MEDIUM" to "simonsiella_medium" for consistent
-    matching
+  notes: Normalized name from "SIMONSIELLA MEDIUM" to "simonsiella_medium" for
+    consistent matching
 kg_microbe_match: mediadive.medium:303
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_303_SIMONSIELLA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004820
+  name: simonsiella_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 303; local
+    ingredient and concentration signatures match.

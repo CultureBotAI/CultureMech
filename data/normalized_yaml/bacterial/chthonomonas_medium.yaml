@@ -229,20 +229,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Add gellan gum and boil to dissolve. Then add the remaining ingredients
-    (except magnesium chloride, yeast extract and vitamins), adjust the pH value to
-    5.0 to 5.3 and fill the medium under an air atmosphere into tubes of the Hungate
-    type or similar vials up to 30% their volume. After autoclaving add magnesium
-    chloride, yeast extract and vitamins from steril stock solutions. Vitamins should
-    be sterilized by filtration.
+  description: Add gellan gum and boil to dissolve. Then add the remaining
+    ingredients (except magnesium chloride, yeast extract and vitamins), adjust
+    the pH value to 5.0 to 5.3 and fill the medium under an air atmosphere into
+    tubes of the Hungate type or similar vials up to 30% their volume. After
+    autoclaving add magnesium chloride, yeast extract and vitamins from steril
+    stock solutions. Vitamins should be sterilized by filtration.
 - step_number: 2
   action: MIX
   description: 'Note: Incubation with shaking may improve cell yield.'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N
+    NaOH and add ferrous chloride. After ferrous chloride has dissolved add
+    other compounds. Finally adjust pH to 6.0 and bring volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -261,5 +261,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.454134+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CHTHONOMONAS MEDIUM" to "chthonomonas_medium" for consistent
-    matching
+  notes: Normalized name from "CHTHONOMONAS MEDIUM" to "chthonomonas_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/t49_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004041
+  name: t49_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

@@ -29,10 +29,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Blend 50.0 g corn meal in 800 ml of distilled water. Leave overnight
-    in the refrigerator. Heat at 60°C for one hour. Filter and make up volume to 1
-    l. Add 10.0 g agar and heat to dissolve, then autoclave at 121°C for 15 minutes.
-    pH 6.0.
+  description: Blend 50.0 g corn meal in 800 ml of distilled water. Leave
+    overnight in the refrigerator. Heat at 60°C for one hour. Filter and make up
+    volume to 1 l. Add 10.0 g agar and heat to dissolve, then autoclave at 121°C
+    for 15 minutes. pH 6.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -51,6 +51,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:14.652611+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CORN MEAL AGAR" to "corn_meal_agar" for consistent
-    matching
+  notes: Normalized name from "CORN MEAL AGAR" to "corn_meal_agar" for
+    consistent matching
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_191_CORN_MEAL_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004218
+  name: corn_meal_agar
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 191; local
+    ingredient and concentration signatures match.

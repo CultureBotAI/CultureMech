@@ -282,13 +282,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust solutions A and B to pH 7.2, autoclave separately and combine
-    after cooling. Add 10 ml of sterile trace elements solution SL-10 (see below)
-    and 5 ml vitamin solution (see below).
+  description: Adjust solutions A and B to pH 7.2, autoclave separately and
+    combine after cooling. Add 10 ml of sterile trace elements solution SL-10
+    (see below) and 5 ml vitamin solution (see below).
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Stir for some hours, filter sterilize the solution.
@@ -310,5 +310,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.837933+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THAUERA AROMATICA MEDIUM" to "thauera_aromatica_medium"
-    for consistent matching
+  notes: Normalized name from "THAUERA AROMATICA MEDIUM" to
+    "thauera_aromatica_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_586_THAUERA_AROMATICA_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006064
+  name: thauera_aromatica_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

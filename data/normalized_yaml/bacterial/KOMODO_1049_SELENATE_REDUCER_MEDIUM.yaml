@@ -391,7 +391,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:35.188092+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SELENATE REDUCER MEDIUM" to "selenate_reducer_medium"
-    for consistent matching
+  notes: Normalized name from "SELENATE REDUCER MEDIUM" to
+    "selenate_reducer_medium" for consistent matching
 ph_value: 7.0
 high_metal: true
+parent_media:
+  path: data/normalized_yaml/bacterial/selenate_reducer_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000472
+  name: selenate_reducer_medium
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
+    concentration signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same source medium number and matching ingredient/concentration signature.

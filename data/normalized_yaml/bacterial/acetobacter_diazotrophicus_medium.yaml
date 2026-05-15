@@ -83,5 +83,17 @@ curation_history:
 - timestamp: '2026-03-17T19:46:17.577152+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Acetobacter diazotrophicus medium" to "acetobacter_diazotrophicus_medium"
-    for consistent matching
+  notes: Normalized name from "Acetobacter diazotrophicus medium" to
+    "acetobacter_diazotrophicus_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/gluconacetobacter_xylinus_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:008548
+  name: gluconacetobacter_xylinus_medium
+  notes: Reviewed Acetobacter diazotrophicus medium as a concentration variant
+    of Gluconacetobacter xylinus medium with glucose and CaCO3 axes.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed Gluconacetobacter xylinus/Acetobacter diazotrophicus pair; child
+  keeps water, yeast extract, and agar unchanged, lowers glucose from 100 to 50
+  g/L, and raises CaCO3 from 20 to 30 g/L.

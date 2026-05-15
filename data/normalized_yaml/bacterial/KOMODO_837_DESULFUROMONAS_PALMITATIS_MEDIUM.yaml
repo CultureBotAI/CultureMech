@@ -371,8 +371,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.530338Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:35.602224Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -388,5 +388,16 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.156532+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFUROMONAS PALMITATIS MEDIUM" to "desulfuromonas_palmitatis_medium"
-    for consistent matching
+  notes: Normalized name from "DESULFUROMONAS PALMITATIS MEDIUM" to
+    "desulfuromonas_palmitatis_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/desulfuromonas_palmitatis_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001994
+  name: desulfuromonas_palmitatis_medium
+  notes: KOMODO record states DSMZ Medium 837 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

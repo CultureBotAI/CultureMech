@@ -182,5 +182,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:57.947268+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 767 MODIFIED FOR DSM 8509" to "medium_767_modified_for_dsm_8509"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 767 MODIFIED FOR DSM 8509" to
+    "medium_767_modified_for_dsm_8509" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/KOMODO_767_ERYTHROMICROBIUM_AND_ROSEOCOCCUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006422
+  name: erythromicrobium_and_roseococcus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

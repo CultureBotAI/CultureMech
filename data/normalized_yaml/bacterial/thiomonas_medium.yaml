@@ -80,10 +80,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Solutions A, B and D are sterilized separately by autoclaving. Solution
-    C is sterilized by filtration. After autoclaving the solutions A and B are combined
-    and then supplemented with the sterile solutions C and D. Best growth is observed
-    in the syneresis water of slant agar tubes.
+  description: Solutions A, B and D are sterilized separately by autoclaving.
+    Solution C is sterilized by filtration. After autoclaving the solutions A
+    and B are combined and then supplemented with the sterile solutions C and D.
+    Best growth is observed in the syneresis water of slant agar tubes.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.0 with NaOH.
@@ -105,5 +105,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.394420+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOMONAS MEDIUM" to "thiomonas_medium" for consistent
-    matching
+  notes: Normalized name from "THIOMONAS MEDIUM" to "thiomonas_medium" for
+    consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_612.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005064
+  name: for_dsm_612
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

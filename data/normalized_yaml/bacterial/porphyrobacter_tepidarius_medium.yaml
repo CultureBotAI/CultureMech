@@ -290,7 +290,8 @@ preparation_steps:
   description: Final pH 7.5
 - step_number: 2
   action: AUTOCLAVE
-  description: Add the vitamin solution, aseptically to the cooled, autoclaved medium.
+  description: Add the vitamin solution, aseptically to the cooled, autoclaved
+    medium.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter sterilize.
@@ -320,6 +321,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.994164+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PORPHYROBACTER TEPIDARIUS MEDIUM" to "porphyrobacter_tepidarius_medium"
-    for consistent matching
+  notes: Normalized name from "PORPHYROBACTER TEPIDARIUS MEDIUM" to
+    "porphyrobacter_tepidarius_medium" for consistent matching
 high_metal: true
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_791_PORPHYROBACTER_TEPIDARIUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006498
+  name: porphyrobacter_tepidarius_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

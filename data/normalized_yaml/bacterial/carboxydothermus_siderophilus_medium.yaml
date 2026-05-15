@@ -270,22 +270,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, yeast extract, vitamins and
-    sulfide, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
-    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials to 30% of their volume and autoclave. Add yeast extract, vitamins (sterilized
-    by filtration) and sulfide from sterile anoxic stock solutions prepared under
-    100% N2 gas atmosphere and bicarbonate from a sterile anoxic stock solution prepared
-    under 80% N2 and 20% CO2 gas mixture. After completing the medium adjust pH to
-    6.8 - 7.0.
+  description: Dissolve ingredients except bicarbonate, yeast extract, vitamins
+    and sulfide, then sparge medium with 100% N2 gas for 30 - 45 min to make it
+    anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials to 30% of their volume and autoclave. Add yeast
+    extract, vitamins (sterilized by filtration) and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas atmosphere and bicarbonate from a
+    sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    After completing the medium adjust pH to 6.8 - 7.0.
 - step_number: 2
   action: MIX
-  description: Inoculated vessels are pressurized with sterile carbon monoxide gas
-    to 1 bar overpressure.
+  description: Inoculated vessels are pressurized with sterile carbon monoxide
+    gas to 1 bar overpressure.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using
+    2 N NaOH; then add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -296,8 +296,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.679312Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:06.069038Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -309,5 +309,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.229672+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CARBOXYDOTHERMUS SIDEROPHILUS MEDIUM" to "carboxydothermus_siderophilus_medium"
-    for consistent matching
+  notes: Normalized name from "CARBOXYDOTHERMUS SIDEROPHILUS MEDIUM" to
+    "carboxydothermus_siderophilus_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_507_CARBOXYDOTHERMUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005708
+  name: carboxydothermus_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

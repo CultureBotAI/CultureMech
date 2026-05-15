@@ -70,12 +70,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except urea and thioglycolate), boil medium for
-    1 min, then cool to room temperature under 80% N2 and 20% CO2 gas mixture. Add
-    thioglycolate, dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. After autoclaving add urea from a 10% (w/v)
-    stock solution sterilized by filtration and stored under 100% N2 gas. Adjust pH
-    of complete medium to 7.4.
+  description: Dissolve ingredients (except urea and thioglycolate), boil medium
+    for 1 min, then cool to room temperature under 80% N2 and 20% CO2 gas
+    mixture. Add thioglycolate, dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving
+    add urea from a 10% (w/v) stock solution sterilized by filtration and stored
+    under 100% N2 gas. Adjust pH of complete medium to 7.4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -94,5 +94,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.037884+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HOWARDELLA MEDIUM" to "howardella_medium" for consistent
-    matching
+  notes: Normalized name from "HOWARDELLA MEDIUM" to "howardella_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1085_HOWARDELLA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003737
+  name: howardella_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

@@ -365,8 +365,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.620923Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:19:42.702997Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -378,5 +378,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.370428+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 12261 and DSM 12262" to "for_dsm_12261_and_dsm_12262"
-    for consistent matching
+  notes: Normalized name from "For DSM 12261 and DSM 12262" to
+    "for_dsm_12261_and_dsm_12262" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_12260.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006652
+  name: for_dsm_12260
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

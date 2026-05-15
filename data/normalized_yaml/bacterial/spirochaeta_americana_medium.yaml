@@ -326,13 +326,13 @@ preparation_steps:
   description: Adjust to pH 9.4
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without the Na2S, yeast extract, glucose, Na2CO3,
-    NaHCO3 and vitamins. Heat the medium in a boiling water bath and cool under a
-    stream of nitrogen. Add the Na2CO3, and NaHCO3 to the cooled medium and check
-    the pH. Dispense into appropriate vessels (Hungate tubes or serum bottles) and
-    autoclave. To the sterile medium add Na2S, yeast extract, and glucose from autoclaved
-    stock solutions. The vitamin solution is filter sterilised and added to the sterilised
-    medium.
+  description: Prepare the medium without the Na2S, yeast extract, glucose,
+    Na2CO3, NaHCO3 and vitamins. Heat the medium in a boiling water bath and
+    cool under a stream of nitrogen. Add the Na2CO3, and NaHCO3 to the cooled
+    medium and check the pH. Dispense into appropriate vessels (Hungate tubes or
+    serum bottles) and autoclave. To the sterile medium add Na2S, yeast extract,
+    and glucose from autoclaved stock solutions. The vitamin solution is filter
+    sterilised and added to the sterilised medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -355,5 +355,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.861803+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPIROCHAETA AMERICANA MEDIUM" to "spirochaeta_americana_medium"
-    for consistent matching
+  notes: Normalized name from "SPIROCHAETA AMERICANA MEDIUM" to
+    "spirochaeta_americana_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1165_SPIROCHAETA_AMERICANA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003878
+  name: spirochaeta_americana_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1165; local
+    ingredient and concentration signatures match.

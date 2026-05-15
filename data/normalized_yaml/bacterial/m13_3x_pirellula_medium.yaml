@@ -352,8 +352,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH or H2SO4.
 - step_number: 7
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to
+    retard precipitation of the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -376,5 +376,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.990520+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "M13 (3x) PIRELLULA MEDIUM" to "m13_3x_pirellula_medium"
-    for consistent matching
+  notes: Normalized name from "M13 (3x) PIRELLULA MEDIUM" to
+    "m13_3x_pirellula_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/KOMODO_600a_M13a_PIRELLULA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006088
+  name: m13a_pirellula_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

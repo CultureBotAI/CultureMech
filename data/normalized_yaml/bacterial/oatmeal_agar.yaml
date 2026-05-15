@@ -52,5 +52,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:17.067537+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "OATMEAL AGAR" to "oatmeal_agar" for consistent matching
+  notes: Normalized name from "OATMEAL AGAR" to "oatmeal_agar" for consistent
+    matching
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_425_OATMEAL_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005249
+  name: oatmeal_agar
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

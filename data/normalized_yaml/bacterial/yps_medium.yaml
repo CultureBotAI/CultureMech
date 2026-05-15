@@ -56,5 +56,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.913213+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YPS MEDIUM" to "yps_medium" for consistent matching
+  notes: Normalized name from "YPS MEDIUM" to "yps_medium" for consistent
+    matching
 kg_microbe_match: mediadive.medium:12
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1168_YPS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003886
+  name: yps_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1168; local
+    ingredient and concentration signatures match.

@@ -279,5 +279,17 @@ curation_history:
 - timestamp: '2026-03-17T19:46:02.240218+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALCALIPHILIC AMPHIBACILLUS STRAINS medium" to "alcaliphilic_amphibacillus_strains_medium"
-    for consistent matching
+  notes: Normalized name from "ALCALIPHILIC AMPHIBACILLUS STRAINS medium" to
+    "alcaliphilic_amphibacillus_strains_medium" for consistent matching
+parent_media:
+  path:
+    data/normalized_yaml/bacterial/alcaliphilic_amphibacillus_strains_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002104
+  name: alcaliphilic_amphibacillus_strains_medium
+  notes: KOMODO record states DSMZ Medium 931 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

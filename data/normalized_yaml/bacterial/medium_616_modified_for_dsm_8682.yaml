@@ -110,5 +110,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.252243+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 616 MODIFIED FOR DSM 8682" to "medium_616_modified_for_dsm_8682"
-    for consistent matching
+  notes: Normalized name from "MEDIUM 616 MODIFIED FOR DSM 8682" to
+    "medium_616_modified_for_dsm_8682" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/alkalithermobacter_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001745
+  name: alkalithermobacter_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

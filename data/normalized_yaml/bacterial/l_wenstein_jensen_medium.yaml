@@ -89,8 +89,8 @@ preparation_steps:
   description: pH 7.0
 - step_number: 3
   action: HEAT
-  description: Sterilize medium for 30 min at 121°C, cool to 30°C and add fresh egg
-    mixture carefully to the medium.
+  description: Sterilize medium for 30 min at 121°C, cool to 30°C and add fresh
+    egg mixture carefully to the medium.
 - step_number: 4
   action: MIX
   description: '* You need for 1 l of egg mixture 20 - 25 fresh eggs (not older then
@@ -114,5 +114,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.352560+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LÖWENSTEIN-JENSEN MEDIUM" to "l_wenstein_jensen_medium"
-    for consistent matching
+  notes: Normalized name from "LÖWENSTEIN-JENSEN MEDIUM" to
+    "l_wenstein_jensen_medium" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_354_L_WENSTEIN-JENSEN_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005071
+  name: l_wenstein_jensen_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 354; local
+    ingredient and concentration signatures match.

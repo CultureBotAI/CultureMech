@@ -18,8 +18,8 @@ Strategy (no LLM/provider — uses NCBI E-utilities directly):
   4. Extract candidate (organism, genome_id, growth_metrics, evidence)
      tuples per abstract using regex.
   5. Emit one proposal YAML per medium under
-     workspace/reports/growth_evidence_proposals/{medium_id}.yaml for
-     curator review.
+     workspace/reports/growth_evidence_proposals/{relative_recipe_path}.yaml
+     for curator review.
 
 Default is dry-run (no proposal files written). `--apply` writes.
 
@@ -200,21 +200,29 @@ _CONDITIONAL_MARKERS = (
 
 def iter_recipes(medium_glob: str | None,
                  media_terms: set[str] | None,
+                 categories: set[str] | None,
+                 offset: int,
                  limit: int | None) -> list[Path]:
     """Yield MediaRecipe YAML paths matching the filters."""
-    out: list[Path] = []
+    matched: list[Path] = []
     if not DATA_DIR.is_dir():
-        return out
+        return matched
     for path in sorted(DATA_DIR.rglob("*.yaml")):
         stem = path.stem
+        rel_parts = path.relative_to(DATA_DIR).parts
+        category = rel_parts[0] if rel_parts else ""
+        if categories is not None and category not in categories:
+            continue
         if medium_glob and not fnmatch.fnmatch(stem, medium_glob):
             continue
         if media_terms is not None and stem not in media_terms:
             continue
-        out.append(path)
-        if limit is not None and len(out) >= limit:
-            break
-    return out
+        matched.append(path)
+    if offset:
+        matched = matched[offset:]
+    if limit is not None:
+        matched = matched[:limit]
+    return matched
 
 
 def load_recipe(path: Path) -> dict | None:
@@ -320,18 +328,46 @@ def load_cached_abstract(pmid: str) -> dict:
 
 # ---------------- query construction ----------------
 
-def build_queries(medium_name: str, organisms: list[dict]) -> list[str]:
+NORMALIZED_NAME_RE = re.compile(r'Normalized name from "([^"]+)" to "([^"]+)"')
+
+
+def _append_unique(items: list[str], value: str | None) -> None:
+    value = re.sub(r"\s+", " ", (value or "").replace("_", " ")).strip()
+    if value and value not in items:
+        items.append(value)
+
+
+def medium_search_terms(recipe: dict, recipe_path: Path) -> list[str]:
+    """Return source-like medium names to query, preferring unsanitized names."""
+    terms: list[str] = []
+    _append_unique(terms, recipe.get("original_name"))
+    for event in recipe.get("curation_history") or []:
+        if not isinstance(event, dict):
+            continue
+        notes = event.get("notes") or ""
+        if m := NORMALIZED_NAME_RE.search(notes):
+            _append_unique(terms, m.group(1))
+    for synonym in recipe.get("synonyms") or []:
+        if isinstance(synonym, dict):
+            _append_unique(terms, synonym.get("name") or synonym.get("value"))
+        elif isinstance(synonym, str):
+            _append_unique(terms, synonym)
+    _append_unique(terms, recipe.get("name") or recipe_path.stem)
+    return terms
+
+
+def build_queries(medium_terms: list[str], organisms: list[dict]) -> list[str]:
     queries: list[str] = []
-    medium_q = medium_name.replace("_", " ")
-    if organisms:
-        for o in organisms:
-            term = (o.get("preferred_term") or "").strip()
-            if not term:
-                continue
-            queries.append(f'("{term}"[Title/Abstract]) AND ("{medium_q}"[All Fields] OR culture[All Fields] OR growth[All Fields])')
-    else:
-        for tail in ("growth", "OD600", "doubling time", "cultivation"):
-            queries.append(f'"{medium_q}"[All Fields] AND {tail}[All Fields]')
+    for medium_q in medium_terms:
+        if organisms:
+            for o in organisms:
+                term = (o.get("preferred_term") or "").strip()
+                if not term:
+                    continue
+                queries.append(f'("{term}"[Title/Abstract]) AND ("{medium_q}"[All Fields] OR culture[All Fields] OR growth[All Fields])')
+        else:
+            for tail in ("growth", "OD600", "doubling time", "cultivation"):
+                queries.append(f'"{medium_q}"[All Fields] AND {tail}[All Fields]')
     return queries
 
 
@@ -742,7 +778,8 @@ def propose_for_recipe(recipe: dict, recipe_path: Path,
     medium_name = recipe.get("name") or recipe_path.stem
     medium_id = recipe.get("id") or f"path:{recipe_path.stem}"
     organisms = recipe.get("target_organisms") or []
-    queries = build_queries(medium_name, organisms)
+    medium_terms = medium_search_terms(recipe, recipe_path)
+    queries = build_queries(medium_terms, organisms)
 
     candidates: list[dict] = []
     seen_pmids: set[str] = set()
@@ -827,6 +864,7 @@ def propose_for_recipe(recipe: dict, recipe_path: Path,
     return {
         "medium_id": medium_id,
         "medium_name": medium_name,
+        "medium_search_terms": medium_terms,
         "recipe_path": str(recipe_path.relative_to(REPO_ROOT)),
         "queries": queries,
         "candidates": candidates,
@@ -841,6 +879,10 @@ def main() -> int:
                     help="filename glob filter (matches the YAML stem, e.g. 'lb_broth*')")
     ap.add_argument("--media-term", type=str, default=None,
                     help="comma-separated set of YAML stems")
+    ap.add_argument("--category", type=str, default=None,
+                    help="comma-separated normalized_yaml top-level directories, e.g. 'algae,bacterial'")
+    ap.add_argument("--offset", type=int, default=0,
+                    help="skip this many recipes after filtering, for batch runs")
     ap.add_argument("--limit", type=int, default=None,
                     help="cap how many recipes to process")
     ap.add_argument("--retmax", type=int, default=3,
@@ -849,14 +891,18 @@ def main() -> int:
                     help="req/s (default 3, or 10 with NCBI_API_KEY)")
     ap.add_argument("--apply", action="store_true",
                     help="write proposal YAMLs (default: dry-run)")
+    ap.add_argument("--write-empty", action="store_true",
+                    help="with --apply, also write proposal YAMLs when no candidates are found")
     args = ap.parse_args()
 
     api_key = os.environ.get("NCBI_API_KEY")
     rate = args.rate or (KEYED_RATE if api_key else DEFAULT_RATE)
     media_terms = (set(t.strip() for t in args.media_term.split(",") if t.strip())
                    if args.media_term else None)
+    categories = (set(t.strip() for t in args.category.split(",") if t.strip())
+                  if args.category else None)
 
-    recipes = iter_recipes(args.medium, media_terms, args.limit)
+    recipes = iter_recipes(args.medium, media_terms, categories, args.offset, args.limit)
     if not recipes:
         print("No recipes matched the filter.")
         return 1
@@ -886,8 +932,9 @@ def main() -> int:
                 n_with_genomes += 1
         print(f"  candidates: {n_cand}")
 
-        if args.apply and n_cand > 0:
-            out_path = OUT_DIR / f"{p.stem}.yaml"
+        if args.apply and (n_cand > 0 or args.write_empty):
+            out_path = OUT_DIR / p.relative_to(DATA_DIR)
+            out_path.parent.mkdir(parents=True, exist_ok=True)
             with open(out_path, "w") as f:
                 yaml.safe_dump(proposal, f, sort_keys=False, allow_unicode=True)
             written.append(out_path)

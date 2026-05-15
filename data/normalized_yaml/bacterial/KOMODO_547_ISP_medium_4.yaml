@@ -135,5 +135,36 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.278512+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ISP medium 4" to "isp_medium_4" for consistent matching
+  notes: Normalized name from "ISP medium 4" to "isp_medium_4" for consistent
+    matching
 ph_value: 7.2
+variant_children:
+- path: data/normalized_yaml/bacterial/medium_547_modified_for_dsm_44048.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005988
+  name: medium_547_modified_for_dsm_44048
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_547_modified_for_dsm_44681.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005989
+  name: medium_547_modified_for_dsm_44681
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+- path: data/normalized_yaml/bacterial/medium_547_modified_for_dsm_44682.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005990
+  name: medium_547_modified_for_dsm_44682
+  notes: Same ingredient and concentration signature; review as possible
+    duplicate source record.
+parent_media:
+  path: data/normalized_yaml/bacterial/isp_medium_4.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001681
+  name: isp_medium_4
+  notes: KOMODO record states DSMZ Medium 547 provenance and exactly matches the
+    single same-category DSMZ parent signature.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; KOMODO record copied from the
+  matching DSMZ medium source.

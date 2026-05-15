@@ -201,5 +201,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:30.249206+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED RHODOBACTER SPAEROIDES MEDIUM" to "modified_rhodobacter_spaeroides_medium"
-    for consistent matching
+  notes: Normalized name from "MODIFIED RHODOBACTER SPAEROIDES MEDIUM" to
+    "modified_rhodobacter_spaeroides_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/rhodobium_gokurnum_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:002867
+  name: rhodobium_gokurnum_medium
+  notes: Reviewed modified Rhodobacter medium as a concentration variant of
+    Rhodobium gokurnum medium with salt, ammonium, calcium, magnesium, and
+    yeast-extract axes.
+variant_relationship: CONCENTRATION_VARIANT
+variant_modifications:
+- Reviewed Rhodobium/modified Rhodobacter pair; child keeps phosphate, sorbitol,
+  pyruvate, ferric citrate, HCl, and trace components effectively unchanged but
+  lowers MgCl2, NaCl, NH4Cl, and CaCl2, raises yeast extract, and changes pH
+  from 6.8 to 7.0.

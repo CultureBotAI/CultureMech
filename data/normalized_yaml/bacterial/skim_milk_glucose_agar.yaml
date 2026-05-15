@@ -58,5 +58,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.254737+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SKIM MILK/GLUCOSE AGAR" to "skim_milk_glucose_agar"
-    for consistent matching
+  notes: Normalized name from "SKIM MILK/GLUCOSE AGAR" to
+    "skim_milk_glucose_agar" for consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_810_SKIM_MILK_GLUCOSE_AGAR.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006533
+  name: skim_milk_glucose_agar
+  notes: Same ingredient and concentration signature; KOMODO record copied from
+    the matching DSMZ medium source.

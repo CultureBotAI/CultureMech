@@ -192,10 +192,10 @@ preparation_steps:
   description: pH 7.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without the vitamin solution under an atmosphere
-    of N2 and dispense into Hungate tubes. Seal under an atmosphere of nitrogen with
-    rubber stoppers and autoclave. Aseptically add the vitamin solution from a filter
-    sterilised stock solution to the sterile medium.
+  description: Prepare the medium without the vitamin solution under an
+    atmosphere of N2 and dispense into Hungate tubes. Seal under an atmosphere
+    of nitrogen with rubber stoppers and autoclave. Aseptically add the vitamin
+    solution from a filter sterilised stock solution to the sterile medium.
 - step_number: 3
   action: MIX
   description: SII
@@ -221,5 +221,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.436400+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/10 PYGV MEDIUM modified" to "1_10_pygv_medium_modified"
-    for consistent matching
+  notes: Normalized name from "1/10 PYGV MEDIUM modified" to
+    "1_10_pygv_medium_modified" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1398_1_10_PYGV_medium_modified.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004115
+  name: 1_10_pygv_medium_modified
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1398; local
+    ingredient and concentration signatures match.

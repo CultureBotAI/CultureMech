@@ -323,18 +323,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, yeast extract, vitamins,
-    glucose, and reducing agents), then sparge medium with 80% N2 and 20% CO2 gas
-    mixture for 30 - 45 min to make it anoxic. Add solid bicarbonate and adjust pH
-    to 6.4 - 6.8. Dispense medium under 80% N2 and 20% CO2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Add yeast extract, vitamins (sterilized
-    by filtration), glucose, sulfide, and cysteine from sterile anoxic stock solutions
-    prepared under 100% N2 gas. Adjust the pH of the complete medium to 7.0, if necessary.
+  description: Dissolve ingredients (except bicarbonate, yeast extract,
+    vitamins, glucose, and reducing agents), then sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add solid bicarbonate
+    and adjust pH to 6.4 - 6.8. Dispense medium under 80% N2 and 20% CO2 gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
+    yeast extract, vitamins (sterilized by filtration), glucose, sulfide, and
+    cysteine from sterile anoxic stock solutions prepared under 100% N2 gas.
+    Adjust the pH of the complete medium to 7.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N
+    NaOH and add ferrous chloride. After ferrous chloride has dissolved add
+    other compounds. Finally adjust pH to 6.0 and bring volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -345,8 +346,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:19.178263Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T06:18:55.104908Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -358,5 +359,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.129785+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ANAEROLINEA MEDIUM" to "anaerolinea_medium" for consistent
-    matching
+  notes: Normalized name from "ANAEROLINEA MEDIUM" to "anaerolinea_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1004_ANAEROLINEA_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003504
+  name: anaerolinea_medium
+  notes: Same source medium number and matching ingredient/concentration
+    signature.

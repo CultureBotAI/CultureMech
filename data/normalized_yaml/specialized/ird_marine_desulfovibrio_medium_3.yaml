@@ -269,14 +269,24 @@ curation_history:
 - timestamp: '2026-03-17T19:46:33.942819+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "IRD MARINE DESULFOVIBRIO MEDIUM-3" to "ird_marine_desulfovibrio_medium_3"
-    for consistent matching
+  notes: Normalized name from "IRD MARINE DESULFOVIBRIO MEDIUM-3" to
+    "ird_marine_desulfovibrio_medium_3" for consistent matching
 - timestamp: '2026-04-04T18:49:19.071658'
   curator: copy_referenced_compositions
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (22 ingredients)
   source: CultureMech:015382
-  notes: Resolved reference by copying from ird_marine_desulfovibrio_medium_2 (CultureMech:015382)
+  notes: Resolved reference by copying from ird_marine_desulfovibrio_medium_2
+    (CultureMech:015382)
 data_quality_flags:
   incomplete_composition: false
   resolved_reference: true
+parent_media:
+  path: data/normalized_yaml/specialized/ird_marine_desulfovibrio_medium_2.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:015382
+  name: ird_marine_desulfovibrio_medium_2
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

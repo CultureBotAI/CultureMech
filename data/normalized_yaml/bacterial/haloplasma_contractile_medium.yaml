@@ -164,11 +164,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without the Na2S x 9 H2O by boiling and cooling
-    under a nitrogen atmosphere. Adjust the pH to 6.5 - 7.0. Dispense into Hungate
-    tubes or serum bottles fitted with butyl rubber stoppers. Autoclave and reduce
-    the medium before use by adding the appropriate amount of Na2S x 9 H2O from a
-    neutralised, sterile stock solution.
+  description: Prepare the medium without the Na2S x 9 H2O by boiling and
+    cooling under a nitrogen atmosphere. Adjust the pH to 6.5 - 7.0. Dispense
+    into Hungate tubes or serum bottles fitted with butyl rubber stoppers.
+    Autoclave and reduce the medium before use by adding the appropriate amount
+    of Na2S x 9 H2O from a neutralised, sterile stock solution.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 5.5 - 6.0.
@@ -194,5 +194,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.765170+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOPLASMA CONTRACTILE MEDIUM" to "haloplasma_contractile_medium"
-    for consistent matching
+  notes: Normalized name from "HALOPLASMA CONTRACTILE MEDIUM" to
+    "haloplasma_contractile_medium" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1231_HALOPLASMA_CONTRACTILE_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003987
+  name: haloplasma_contractile_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1231; local
+    ingredient and concentration signatures match.

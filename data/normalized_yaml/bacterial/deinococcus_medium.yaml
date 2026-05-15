@@ -246,8 +246,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -270,5 +270,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.599933+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DEINOCOCCUS MEDIUM" to "deinococcus_medium" for consistent
-    matching
+  notes: Normalized name from "DEINOCOCCUS MEDIUM" to "deinococcus_medium" for
+    consistent matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_1306_DEINOCOCCUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004061
+  name: deinococcus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1306; local
+    ingredient and concentration signatures match.

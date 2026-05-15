@@ -288,35 +288,37 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, cysteine and sulfide, then sparge
-    medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
-    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials to 30% of their volume and autoclave. Add cysteine and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to
-    use check pH of complete medium and adjust to 6.8 - 7.0, if necessary.
+  description: Dissolve ingredients except carbonate, cysteine and sulfide, then
+    sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it
+    anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials to 30% of their volume and autoclave. Add cysteine and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
+    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20%
+    CO2 gas mixture. Prior to use check pH of complete medium and adjust to 6.8
+    - 7.0, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2 bar
-    overpressure.
+  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2
+    bar overpressure.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
 - step_number: 4
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals
+    or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15
+    min and then centrifuged at 27,000 g for 20 min. The supernatant is made
+    anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas
+    atmosphere into anoxic serum vials to 30% of volume and then stored frozen
+    at -20°C.
 - step_number: 5
   action: AUTOCLAVE
-  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and after
-    gassing with nitrogen gas for a few minutes incubate it at 37°C for 24 hours.
-    Then centrifuge the sludge at 13000 g and autoclave the resulting, clear supernatant
-    in screw-capped vessels under nitrogen gas. The sludge fluid can be stored at
-    8-12°C in the dark.
+  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and
+    after gassing with nitrogen gas for a few minutes incubate it at 37°C for 24
+    hours. Then centrifuge the sludge at 13000 g and autoclave the resulting,
+    clear supernatant in screw-capped vessels under nitrogen gas. The sludge
+    fluid can be stored at 8-12°C in the dark.
 applications:
 - Microbial cultivation
 curation_history:
@@ -339,5 +341,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.995466+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOCORPUSCULUM AGGREGANS MEDIUM" to "methanocorpusculum_aggregans_medium"
-    for consistent matching
+  notes: Normalized name from "METHANOCORPUSCULUM AGGREGANS MEDIUM" to
+    "methanocorpusculum_aggregans_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/methanogenium_aggregans_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005012
+  name: methanogenium_aggregans_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.

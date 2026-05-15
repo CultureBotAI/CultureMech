@@ -140,5 +140,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.638801+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "STARCH-MINERAL SALT-AGAR + 10% NACL" to "starch_mineral_salt_agar_10_nacl"
-    for consistent matching
+  notes: Normalized name from "STARCH-MINERAL SALT-AGAR + 10% NACL" to
+    "starch_mineral_salt_agar_10_nacl" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/starch_mineral_salt_agar_10_nacl.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000699
+  name: starch_mineral_salt_agar_10_nacl
+  notes: KOMODO record explicitly cites DSMZ Medium 1240; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 1240; local
+  ingredient and concentration signatures match.

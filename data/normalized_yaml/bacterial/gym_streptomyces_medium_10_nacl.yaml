@@ -82,5 +82,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.780310+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GYM STREPTOMYCES MEDIUM 10% NACL" to "gym_streptomyces_medium_10_nacl"
-    for consistent matching
+  notes: Normalized name from "GYM STREPTOMYCES MEDIUM 10% NACL" to
+    "gym_streptomyces_medium_10_nacl" for consistent matching
+variant_children:
+- path:
+    data/normalized_yaml/bacterial/KOMODO_1159_GYM_STREPTOMYCES_medium_10_NACL.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003868
+  name: gym_streptomyces_medium_10_nacl
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1159; local
+    ingredient and concentration signatures match.
+- path: data/normalized_yaml/bacterial/gym_agar_with_15_nacl.yaml
+  relationship: SALINITY_VARIANT
+  id: CultureMech:003348
+  name: gym_agar_with_15_nacl
+  notes: GYM agar with 15% NaCl increases NaCl from 100 g/L to 150 g/L while
+    glucose, yeast extract, malt extract, CaCO3, and agar remain unchanged.

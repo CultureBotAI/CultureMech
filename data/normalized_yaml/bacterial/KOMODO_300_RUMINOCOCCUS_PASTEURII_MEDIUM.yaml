@@ -237,5 +237,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:44.266567+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RUMINOCOCCUS PASTEURII MEDIUM" to "ruminococcus_pasteurii_medium"
-    for consistent matching
+  notes: Normalized name from "RUMINOCOCCUS PASTEURII MEDIUM" to
+    "ruminococcus_pasteurii_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/ruminococcus_pasteurii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:001400
+  name: ruminococcus_pasteurii_medium
+  notes: KOMODO record explicitly cites DSMZ Medium 300; one unlinked DSMZ
+    parent record exists and the local physical state, pH, ingredient, and
+    concentration signatures match exactly.
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- KOMODO record is an exact source duplicate of DSMZ Medium 300; local
+  ingredient and concentration signatures match.

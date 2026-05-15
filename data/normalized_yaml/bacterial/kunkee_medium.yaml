@@ -73,4 +73,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.431292+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "KUNKEE MEDIUM" to "kunkee_medium" for consistent matching
+  notes: Normalized name from "KUNKEE MEDIUM" to "kunkee_medium" for consistent
+    matching
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_368_KUNKEE_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:005089
+  name: kunkee_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 368; local
+    ingredient and concentration signatures match.

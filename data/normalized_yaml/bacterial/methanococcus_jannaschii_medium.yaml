@@ -365,8 +365,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:47.030449Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from
+    MicrobeMediaParam source data
 - timestamp: '2026-03-13T03:09:31.959227Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -382,5 +382,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:43.814907+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOCOCCUS JANNASCHII MEDIUM" to "methanococcus_jannaschii_medium"
-    for consistent matching
+  notes: Normalized name from "METHANOCOCCUS JANNASCHII MEDIUM" to
+    "methanococcus_jannaschii_medium" for consistent matching
+parent_media:
+  path: data/normalized_yaml/bacterial/for_dsm_22549.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004736
+  name: for_dsm_22549
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate
+  source record.
