@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-05-16T02:27:38
+# Generation date: 2026-05-16T02:32:28
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -664,6 +664,10 @@ class IngredientDescriptor(Descriptor):
     variant_type: Optional[Union[str, "VariantTypeEnum"]] = None
     modifier: Optional[Union[str, "ModifierEnum"]] = None
     chemical_formula: Optional[str] = None
+    synonyms: Optional[Union[Union[dict, "IngredientSynonym"], list[Union[dict, "IngredientSynonym"]]]] = empty_list()
+    source: Optional[str] = None
+    curation_metadata: Optional[Union[dict, "IngredientCurationMetadata"]] = None
+    data_quality_flags: Optional[Union[str, list[str]]] = empty_list()
     molecular_weight: Optional[float] = None
     supplier_catalog: Optional[Union[dict, "SupplierInfo"]] = None
     notes: Optional[str] = None
@@ -706,6 +710,20 @@ class IngredientDescriptor(Descriptor):
         if self.chemical_formula is not None and not isinstance(self.chemical_formula, str):
             self.chemical_formula = str(self.chemical_formula)
 
+        if not isinstance(self.synonyms, list):
+            self.synonyms = [self.synonyms] if self.synonyms is not None else []
+        self.synonyms = [v if isinstance(v, IngredientSynonym) else IngredientSynonym(**as_dict(v)) for v in self.synonyms]
+
+        if self.source is not None and not isinstance(self.source, str):
+            self.source = str(self.source)
+
+        if self.curation_metadata is not None and not isinstance(self.curation_metadata, IngredientCurationMetadata):
+            self.curation_metadata = IngredientCurationMetadata(**as_dict(self.curation_metadata))
+
+        if not isinstance(self.data_quality_flags, list):
+            self.data_quality_flags = [self.data_quality_flags] if self.data_quality_flags is not None else []
+        self.data_quality_flags = [v if isinstance(v, str) else str(v) for v in self.data_quality_flags]
+
         if self.molecular_weight is not None and not isinstance(self.molecular_weight, float):
             self.molecular_weight = float(self.molecular_weight)
 
@@ -743,10 +761,12 @@ class SolutionDescriptor(Descriptor):
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.SolutionDescriptor
 
     preferred_term: str = None
-    composition: Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]] = None
+    name: Optional[str] = None
+    notes: Optional[str] = None
     term: Optional[Union[dict, Term]] = None
     mediaingredientmech_term: Optional[Union[dict, "MediaIngredientMechTerm"]] = None
     culturemech_term: Optional[Union[dict, "CultureMechTerm"]] = None
+    composition: Optional[Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]] = empty_list()
     concentration: Optional[Union[dict, "ConcentrationValue"]] = None
     preparation_notes: Optional[str] = None
     storage_conditions: Optional[Union[dict, "StorageConditions"]] = None
@@ -758,11 +778,11 @@ class SolutionDescriptor(Descriptor):
         if not isinstance(self.preferred_term, str):
             self.preferred_term = str(self.preferred_term)
 
-        if self._is_empty(self.composition):
-            self.MissingRequiredField("composition")
-        if not isinstance(self.composition, list):
-            self.composition = [self.composition] if self.composition is not None else []
-        self.composition = [v if isinstance(v, IngredientDescriptor) else IngredientDescriptor(**as_dict(v)) for v in self.composition]
+        if self.name is not None and not isinstance(self.name, str):
+            self.name = str(self.name)
+
+        if self.notes is not None and not isinstance(self.notes, str):
+            self.notes = str(self.notes)
 
         if self.term is not None and not isinstance(self.term, Term):
             self.term = Term(**as_dict(self.term))
@@ -772,6 +792,10 @@ class SolutionDescriptor(Descriptor):
 
         if self.culturemech_term is not None and not isinstance(self.culturemech_term, CultureMechTerm):
             self.culturemech_term = CultureMechTerm(**as_dict(self.culturemech_term))
+
+        if not isinstance(self.composition, list):
+            self.composition = [self.composition] if self.composition is not None else []
+        self.composition = [v if isinstance(v, IngredientDescriptor) else IngredientDescriptor(**as_dict(v)) for v in self.composition]
 
         if self.concentration is not None and not isinstance(self.concentration, ConcentrationValue):
             self.concentration = ConcentrationValue(**as_dict(self.concentration))
@@ -966,6 +990,67 @@ class CofactorDescriptor(Descriptor):
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class IngredientSynonym(YAMLRoot):
+    """
+    An alternate name for an ingredient (e.g. brand name, abbreviation).
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["IngredientSynonym"]
+    class_class_curie: ClassVar[str] = "culturemech:IngredientSynonym"
+    class_name: ClassVar[str] = "IngredientSynonym"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.IngredientSynonym
+
+    synonym_text: str = None
+    synonym_type: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.synonym_text):
+            self.MissingRequiredField("synonym_text")
+        if not isinstance(self.synonym_text, str):
+            self.synonym_text = str(self.synonym_text)
+
+        if self.synonym_type is not None and not isinstance(self.synonym_type, str):
+            self.synonym_type = str(self.synonym_type)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class IngredientCurationMetadata(YAMLRoot):
+    """
+    Structured metadata describing how an ingredient mapping was produced (mapping quality, confidence, source).
+    Populated by curation pipelines.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["IngredientCurationMetadata"]
+    class_class_curie: ClassVar[str] = "culturemech:IngredientCurationMetadata"
+    class_name: ClassVar[str] = "IngredientCurationMetadata"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.IngredientCurationMetadata
+
+    mapping_quality: Optional[str] = None
+    confidence_score: Optional[float] = None
+    curation_date: Optional[str] = None
+    ontology_source: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self.mapping_quality is not None and not isinstance(self.mapping_quality, str):
+            self.mapping_quality = str(self.mapping_quality)
+
+        if self.confidence_score is not None and not isinstance(self.confidence_score, float):
+            self.confidence_score = float(self.confidence_score)
+
+        if self.curation_date is not None and not isinstance(self.curation_date, str):
+            self.curation_date = str(self.curation_date)
+
+        if self.ontology_source is not None and not isinstance(self.ontology_source, str):
+            self.ontology_source = str(self.ontology_source)
 
         super().__post_init__(**kwargs)
 
@@ -3178,6 +3263,18 @@ slots.ingredientDescriptor__modifier = Slot(uri=CULTUREMECH.modifier, name="ingr
 slots.ingredientDescriptor__chemical_formula = Slot(uri=CULTUREMECH.chemical_formula, name="ingredientDescriptor__chemical_formula", curie=CULTUREMECH.curie('chemical_formula'),
                    model_uri=CULTUREMECH.ingredientDescriptor__chemical_formula, domain=None, range=Optional[str])
 
+slots.ingredientDescriptor__synonyms = Slot(uri=CULTUREMECH.synonyms, name="ingredientDescriptor__synonyms", curie=CULTUREMECH.curie('synonyms'),
+                   model_uri=CULTUREMECH.ingredientDescriptor__synonyms, domain=None, range=Optional[Union[Union[dict, IngredientSynonym], list[Union[dict, IngredientSynonym]]]])
+
+slots.ingredientDescriptor__source = Slot(uri=CULTUREMECH.source, name="ingredientDescriptor__source", curie=CULTUREMECH.curie('source'),
+                   model_uri=CULTUREMECH.ingredientDescriptor__source, domain=None, range=Optional[str])
+
+slots.ingredientDescriptor__curation_metadata = Slot(uri=CULTUREMECH.curation_metadata, name="ingredientDescriptor__curation_metadata", curie=CULTUREMECH.curie('curation_metadata'),
+                   model_uri=CULTUREMECH.ingredientDescriptor__curation_metadata, domain=None, range=Optional[Union[dict, IngredientCurationMetadata]])
+
+slots.ingredientDescriptor__data_quality_flags = Slot(uri=CULTUREMECH.data_quality_flags, name="ingredientDescriptor__data_quality_flags", curie=CULTUREMECH.curie('data_quality_flags'),
+                   model_uri=CULTUREMECH.ingredientDescriptor__data_quality_flags, domain=None, range=Optional[Union[str, list[str]]])
+
 slots.ingredientDescriptor__molecular_weight = Slot(uri=CULTUREMECH.molecular_weight, name="ingredientDescriptor__molecular_weight", curie=CULTUREMECH.curie('molecular_weight'),
                    model_uri=CULTUREMECH.ingredientDescriptor__molecular_weight, domain=None, range=Optional[float])
 
@@ -3199,6 +3296,12 @@ slots.ingredientDescriptor__evidence = Slot(uri=CULTUREMECH.evidence, name="ingr
 slots.solutionDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="solutionDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
                    model_uri=CULTUREMECH.solutionDescriptor__preferred_term, domain=None, range=str)
 
+slots.solutionDescriptor__name = Slot(uri=CULTUREMECH.name, name="solutionDescriptor__name", curie=CULTUREMECH.curie('name'),
+                   model_uri=CULTUREMECH.solutionDescriptor__name, domain=None, range=Optional[str])
+
+slots.solutionDescriptor__notes = Slot(uri=CULTUREMECH.notes, name="solutionDescriptor__notes", curie=CULTUREMECH.curie('notes'),
+                   model_uri=CULTUREMECH.solutionDescriptor__notes, domain=None, range=Optional[str])
+
 slots.solutionDescriptor__term = Slot(uri=CULTUREMECH.term, name="solutionDescriptor__term", curie=CULTUREMECH.curie('term'),
                    model_uri=CULTUREMECH.solutionDescriptor__term, domain=None, range=Optional[Union[dict, Term]])
 
@@ -3209,7 +3312,7 @@ slots.solutionDescriptor__culturemech_term = Slot(uri=CULTUREMECH.culturemech_te
                    model_uri=CULTUREMECH.solutionDescriptor__culturemech_term, domain=None, range=Optional[Union[dict, CultureMechTerm]])
 
 slots.solutionDescriptor__composition = Slot(uri=CULTUREMECH.composition, name="solutionDescriptor__composition", curie=CULTUREMECH.curie('composition'),
-                   model_uri=CULTUREMECH.solutionDescriptor__composition, domain=None, range=Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]])
+                   model_uri=CULTUREMECH.solutionDescriptor__composition, domain=None, range=Optional[Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]])
 
 slots.solutionDescriptor__concentration = Slot(uri=CULTUREMECH.concentration, name="solutionDescriptor__concentration", curie=CULTUREMECH.curie('concentration'),
                    model_uri=CULTUREMECH.solutionDescriptor__concentration, domain=None, range=Optional[Union[dict, ConcentrationValue]])
@@ -3307,6 +3410,24 @@ slots.cofactorDescriptor__bioavailability = Slot(uri=CULTUREMECH.bioavailability
 
 slots.cofactorDescriptor__notes = Slot(uri=CULTUREMECH.notes, name="cofactorDescriptor__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.cofactorDescriptor__notes, domain=None, range=Optional[str])
+
+slots.ingredientSynonym__synonym_text = Slot(uri=CULTUREMECH.synonym_text, name="ingredientSynonym__synonym_text", curie=CULTUREMECH.curie('synonym_text'),
+                   model_uri=CULTUREMECH.ingredientSynonym__synonym_text, domain=None, range=str)
+
+slots.ingredientSynonym__synonym_type = Slot(uri=CULTUREMECH.synonym_type, name="ingredientSynonym__synonym_type", curie=CULTUREMECH.curie('synonym_type'),
+                   model_uri=CULTUREMECH.ingredientSynonym__synonym_type, domain=None, range=Optional[str])
+
+slots.ingredientCurationMetadata__mapping_quality = Slot(uri=CULTUREMECH.mapping_quality, name="ingredientCurationMetadata__mapping_quality", curie=CULTUREMECH.curie('mapping_quality'),
+                   model_uri=CULTUREMECH.ingredientCurationMetadata__mapping_quality, domain=None, range=Optional[str])
+
+slots.ingredientCurationMetadata__confidence_score = Slot(uri=CULTUREMECH.confidence_score, name="ingredientCurationMetadata__confidence_score", curie=CULTUREMECH.curie('confidence_score'),
+                   model_uri=CULTUREMECH.ingredientCurationMetadata__confidence_score, domain=None, range=Optional[float])
+
+slots.ingredientCurationMetadata__curation_date = Slot(uri=CULTUREMECH.curation_date, name="ingredientCurationMetadata__curation_date", curie=CULTUREMECH.curie('curation_date'),
+                   model_uri=CULTUREMECH.ingredientCurationMetadata__curation_date, domain=None, range=Optional[str])
+
+slots.ingredientCurationMetadata__ontology_source = Slot(uri=CULTUREMECH.ontology_source, name="ingredientCurationMetadata__ontology_source", curie=CULTUREMECH.curie('ontology_source'),
+                   model_uri=CULTUREMECH.ingredientCurationMetadata__ontology_source, domain=None, range=Optional[str])
 
 slots.ingredientReference__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="ingredientReference__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
                    model_uri=CULTUREMECH.ingredientReference__preferred_term, domain=None, range=str)

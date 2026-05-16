@@ -723,6 +723,30 @@ classes:
         description: Molecular formula (e.g., "C6H12O6")
         range: string
 
+      synonyms:
+        description: >-
+          Alternate names for this ingredient (e.g. brand names, abbreviations).
+          Each entry is an `IngredientSynonym` with `synonym_text` and `synonym_type`.
+        range: IngredientSynonym
+        multivalued: true
+        inlined_as_list: true
+
+      source:
+        description: Provenance attribution for this ingredient entry.
+        range: string
+
+      curation_metadata:
+        description: >-
+          Structured curation metadata for this ingredient mapping (mapping
+          quality, confidence score, ontology source, etc.).
+        range: IngredientCurationMetadata
+        inlined: true
+
+      data_quality_flags:
+        description: Ingredient-level data quality indicators.
+        range: string
+        multivalued: true
+
       molecular_weight:
         description: Molecular weight in g/mol
         range: float
@@ -763,6 +787,14 @@ classes:
         required: true
         range: string
 
+      name:
+        description: Human-readable solution label (kept alongside preferred_term).
+        range: string
+
+      notes:
+        description: Free-text notes about this solution as used in the parent recipe.
+        range: string
+
       term:
         description: Ontology term if available
         range: Term
@@ -784,10 +816,11 @@ classes:
           - "Example: Bold Trace Stock (CultureMech:015441)"
 
       composition:
-        description: Ingredients in the stock solution
+        description: >-
+          Ingredients in the stock solution. Optional when the solution is
+          referenced by name only (no inline composition copied from the source).
         range: IngredientDescriptor
         multivalued: true
-        required: true
         inlined_as_list: true
 
       concentration:
@@ -988,6 +1021,35 @@ classes:
 # ================================================================
 # SUPPORTING CLASSES
 # ================================================================
+
+  IngredientSynonym:
+    description: An alternate name for an ingredient (e.g. brand name, abbreviation).
+    attributes:
+      synonym_text:
+        description: The alternate name string.
+        range: string
+        required: true
+      synonym_type:
+        description: Synonym match type (e.g. EXACT, RELATED, BROAD).
+        range: string
+
+  IngredientCurationMetadata:
+    description: >-
+      Structured metadata describing how an ingredient mapping was produced
+      (mapping quality, confidence, source). Populated by curation pipelines.
+    attributes:
+      mapping_quality:
+        description: Quality tier of the mapping (e.g. EXACT, LLM_ASSISTED, KG_FALLBACK).
+        range: string
+      confidence_score:
+        description: Confidence score for the mapping (0.0-1.0).
+        range: float
+      curation_date:
+        description: When the curation was performed (ISO-8601).
+        range: string
+      ontology_source:
+        description: Ontology used as the mapping target (e.g. CHEBI).
+        range: string
 
   IngredientReference:
     description: Reference to canonical ingredient
