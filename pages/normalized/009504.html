@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>lb_glucose_10_g_l_medium (CultureMech:009504) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:009504</span>
+</nav>
+
+<header>
+  <h1>lb_glucose_10_g_l_medium</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:009504</span>
+      <span class="badge">bacterial</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">LIQUID</span>
+  </div>
+    <div class="muted">Original name: <em>LB + glucose (10 g/L) medium</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>External ontology</dt>
+    <dd>
+      <a href="https://togomedium.org/medium/M2983" rel="nofollow noreferrer">TOGO:M2983</a>
+      &mdash; LB + glucose (10 g/L) medium
+    </dd>
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Microbial cultivation</li>      </ul>
+    </dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: https://togomedium.org/medium/M2983
+
+Commercial Product: LB Medium (Luria-Bertani, Miller formulation)
+Supplier: Multiple suppliers (Difco, Sigma, etc.)
+Catalog: Multiple (L3522 Sigma, 244520 BD)
+Source: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+Accessed: 2026-03-28
+
+Constituent composition researched from product specification.</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_009504["lb_glucose_10_g_l_medium"]
+    ing0_glucose["glucose"]
+    CultureMech_009504 --> ing0_glucose
+    CHEBI_42758["CHEBI:42758"]
+    ing0_glucose -.-> CHEBI_42758
+    ing1_Tryptone["Tryptone"]
+    CultureMech_009504 --> ing1_Tryptone
+    ing2_Yeast_extract["Yeast extract"]
+    CultureMech_009504 --> ing2_Yeast_extract
+    ing3_Sodium_chloride["Sodium chloride"]
+    CultureMech_009504 --> ing3_Sodium_chloride
+    CHEBI_26710["CHEBI:26710"]
+    ing3_Sodium_chloride -.-> CHEBI_26710
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(4)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>glucose</strong></td>
+  <td class="right">
+      10
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_42758" rel="nofollow noreferrer">CHEBI:42758</a>
+      <div class="muted small">aldehydo-D-glucose</div>
+  </td>
+  <td class="prewrap small">Role: Carbon source; Properties: Defined component, Organic compound, Simple component</td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Tryptone</strong></td>
+  <td class="right">
+      10.0
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/foodon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FFOODON_03316428" rel="nofollow noreferrer">FOODON:03316428</a>
+      <div class="muted small">tryptone</div>
+  </td>
+  <td class="prewrap small">Pancreatic digest of casein providing amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product</td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Yeast extract</strong></td>
+  <td class="right">
+      5.0
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/foodon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FFOODON_00002960" rel="nofollow noreferrer">FOODON:00002960</a>
+      <div class="muted small">yeast extract</div>
+  </td>
+  <td class="prewrap small">Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product</td>
+</tr>
+<tr>
+  <td class="right muted">4</td>
+  <td><strong>Sodium chloride</strong></td>
+  <td class="right">
+      10.0
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_26710" rel="nofollow noreferrer">CHEBI:26710</a>
+      <div class="muted small">sodium chloride</div>
+  </td>
+  <td class="prewrap small">Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product</td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-01-27T06:35:57.440548Z</td>
+  <td>togo-import</td>
+  <td>Imported from TOGO Medium</td>
+  <td class="small prewrap">Source: TOGO, ID: M2983</td>
+</tr>
+<tr>
+  <td class="muted small">2026-01-28T19:48:21.172032Z</td>
+  <td>chebi-enrichment</td>
+  <td>Added CHEBI ontology terms to ingredients</td>
+  <td class="small prewrap">Enriched using MicrobeMediaParam and MediaDive chemical mappings</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:20:06.438681Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:009504</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T06:30:10.000000Z</td>
+  <td>mediaingredientmech-enrichment-v1.0</td>
+  <td>Added MediaIngredientMech links</td>
+  <td class="small prewrap">Linked ingredients to MediaIngredientMech identifiers</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:46:25.440245+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;LB + glucose (10 g/L) medium&#34; to &#34;lb_glucose_10_g_l_medium&#34; for consistent matching</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:04:24+00:00 from
+    <code>data/normalized_yaml/bacterial/lb_glucose_10_g_l_medium.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

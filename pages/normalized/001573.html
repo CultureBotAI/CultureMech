@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>sucrose_peptone_medium (CultureMech:001573) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:001573</span>
+</nav>
+
+<header>
+  <h1>sucrose_peptone_medium</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:001573</span>
+      <span class="badge">bacterial</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">LIQUID</span>
+  </div>
+    <div class="muted">Original name: <em>SUCROSE-PEPTONE-MEDIUM</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>External ontology</dt>
+    <dd>
+      <a href="#" rel="nofollow noreferrer">mediadive.medium:459</a>
+      &mdash; SUCROSE-PEPTONE-MEDIUM
+    </dd>
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Microbial cultivation</li>      </ul>
+    </dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium459.pdf</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_001573["sucrose_peptone_medium"]
+    ing0_Peptone["Peptone"]
+    CultureMech_001573 --> ing0_Peptone
+    ing1_Sucrose["Sucrose"]
+    CultureMech_001573 --> ing1_Sucrose
+    CHEBI_17992["CHEBI:17992"]
+    ing1_Sucrose -.-> CHEBI_17992
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(2)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Peptone</strong></td>
+  <td class="right">
+      20
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Sucrose</strong></td>
+  <td class="right">
+      20
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_17992" rel="nofollow noreferrer">CHEBI:17992</a>
+      <div class="muted small">Sucrose</div>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-01-26T17:53:11.197014Z</td>
+  <td>mediadive-import</td>
+  <td>Imported from MediaDive</td>
+  <td class="small prewrap">Source: DSMZ, ID: 459</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:19:05.290408Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:001573</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T06:30:30.000000Z</td>
+  <td>mediaingredientmech-enrichment-v1.0</td>
+  <td>Added MediaIngredientMech links</td>
+  <td class="small prewrap">Linked ingredients to MediaIngredientMech identifiers</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:45:17.402626+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;SUCROSE-PEPTONE-MEDIUM&#34; to &#34;sucrose_peptone_medium&#34; for consistent matching</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:05:07+00:00 from
+    <code>data/normalized_yaml/bacterial/sucrose_peptone_medium.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

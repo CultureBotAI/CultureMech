@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>modified_sw_25_medium (CultureMech:007718) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:007718</span>
+</nav>
+
+<header>
+  <h1>modified_sw_25_medium</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:007718</span>
+      <span class="badge">bacterial</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">SOLID_AGAR</span>
+  </div>
+    <div class="muted">Original name: <em>Modified SW-25 Medium</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>External ontology</dt>
+    <dd>
+      <a href="https://togomedium.org/medium/M1192" rel="nofollow noreferrer">TOGO:M1192</a>
+      &mdash; Modified SW-25 Medium
+    </dd>
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Microbial cultivation</li>      </ul>
+    </dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: https://togomedium.org/medium/M1192
+Original source: JCM - JCM_M1114-2
+Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1114</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_007718["modified_sw_25_medium"]
+    ing0_Yeast_extract["Yeast extract"]
+    CultureMech_007718 --> ing0_Yeast_extract
+    ing1_agar["agar"]
+    CultureMech_007718 --> ing1_agar
+    CHEBI_2509["CHEBI:2509"]
+    ing1_agar -.-> CHEBI_2509
+    ing2_Casamino_acids__BD_Difco_["Casamino acids (BD-Difco)"]
+    CultureMech_007718 --> ing2_Casamino_acids__BD_Difco_
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(3)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Yeast extract</strong></td>
+  <td class="right">
+      1
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">Role: Nutrient source; Properties: Undefined component</td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>agar</strong></td>
+  <td class="right">
+      20
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_2509" rel="nofollow noreferrer">CHEBI:2509</a>
+      <div class="muted small">agar</div>
+  </td>
+  <td class="prewrap small">Role: Solidifying component</td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Casamino acids (BD-Difco)</strong></td>
+  <td class="right">
+      1
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">Properties: Undefined component</td>
+</tr>
+</tbody>
+</table>
+</section><section id="solutions">
+<h2>Solutions</h2>
+<div class="solution">
+  <h3>Unknown solution</h3>
+<div class="prewrap small">Cross-reference to Medium M1191</div></div>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-01-27T06:35:54.096978Z</td>
+  <td>togo-import</td>
+  <td>Imported from TOGO Medium</td>
+  <td class="small prewrap">Source: JCM, ID: M1192</td>
+</tr>
+<tr>
+  <td class="muted small">2026-01-28T19:48:23.086579Z</td>
+  <td>chebi-enrichment</td>
+  <td>Added CHEBI ontology terms to ingredients</td>
+  <td class="small prewrap">Enriched using MicrobeMediaParam and MediaDive chemical mappings</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-09T08:04:38.338060+00:00</td>
+  <td>solution-migrator-v1.0</td>
+  <td>Migrated solutions from ingredients to solutions array</td>
+  <td class="small prewrap">Moved 1 solution(s) from ingredients</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:19:50.871039Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:007718</td>
+</tr>
+<tr>
+  <td class="muted small"></td>
+  <td>schema-defaulter-v1.0</td>
+  <td>Applied schema defaults and normalizations</td>
+  <td class="small prewrap">Added default solution name</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T06:30:14.000000Z</td>
+  <td>mediaingredientmech-enrichment-v1.0</td>
+  <td>Added MediaIngredientMech links</td>
+  <td class="small prewrap">Linked ingredients to MediaIngredientMech identifiers</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:46:09.278554+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;Modified SW-25 Medium&#34; to &#34;modified_sw_25_medium&#34; for consistent matching</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:03:58+00:00 from
+    <code>data/normalized_yaml/bacterial/TOGO_M1192_Modified_SW-25_Medium.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

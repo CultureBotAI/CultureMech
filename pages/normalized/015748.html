@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SMSA (CultureMech:015748) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:015748</span>
+</nav>
+
+<header>
+  <h1>SMSA</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:015748</span>
+      <span class="badge">SPECIALIZED</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">LIQUID</span>
+  </div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: FEBA media definitions</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_015748["SMSA"]
+    ing0_Bacto_Peptone["Bacto Peptone"]
+    CultureMech_015748 --> ing0_Bacto_Peptone
+    ing1_casamino_acids["casamino acids"]
+    CultureMech_015748 --> ing1_casamino_acids
+    CHEBI_78020["CHEBI:78020"]
+    ing1_casamino_acids -.-> CHEBI_78020
+    ing2_Glycerol["Glycerol"]
+    CultureMech_015748 --> ing2_Glycerol
+    CHEBI_15978["CHEBI:15978"]
+    ing2_Glycerol -.-> CHEBI_15978
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(3)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Bacto Peptone</strong></td>
+  <td class="right">
+      10
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">CAS: 51142-18-8</td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>casamino acids</strong></td>
+  <td class="right">
+      1
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_78020" rel="nofollow noreferrer">CHEBI:78020</a>
+      <div class="muted small">heptacosanoate</div>
+  </td>
+  <td class="prewrap small">Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 65072-00-6</td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Glycerol</strong></td>
+  <td class="right">
+      68
+      <span class="muted">MILLIMOLAR</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_15978" rel="nofollow noreferrer">CHEBI:15978</a>
+      <div class="muted small">sn-glycerol 3-phosphate</div>
+  </td>
+  <td class="prewrap small">Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-81-5; MW: 92.09</td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-03-18T04:31:14.809625+00:00</td>
+  <td>import_from_culturebotht.py</td>
+  <td>IMPORTED</td>
+  <td class="small prewrap">Imported from CultureBotHT repository: SMSA.yaml</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-18T04:34:01.118686Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:015748</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:05:17+00:00 from
+    <code>data/normalized_yaml/specialized/smsa.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

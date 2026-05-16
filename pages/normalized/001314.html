@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>bhi_medium (CultureMech:001314) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:001314</span>
+</nav>
+
+<header>
+  <h1>bhi_medium</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:001314</span>
+      <span class="badge">bacterial</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">LIQUID</span>
+  </div>
+    <div class="muted">Original name: <em>BHI MEDIUM</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>External ontology</dt>
+    <dd>
+      <a href="#" rel="nofollow noreferrer">mediadive.medium:215</a>
+      &mdash; BHI MEDIUM
+    </dd>
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Microbial cultivation</li>      </ul>
+    </dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium215.pdf
+
+Commercial Product: Brain Heart Infusion
+Supplier: Difco/BD
+Catalog: 237500
+Source: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+Accessed: 2026-03-28
+
+Constituent composition researched from product specification.</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_001314["bhi_medium"]
+    ing0_Calf_brains["Calf brains"]
+    CultureMech_001314 --> ing0_Calf_brains
+    ing1_Beef_heart["Beef heart"]
+    CultureMech_001314 --> ing1_Beef_heart
+    ing2_Proteose_peptone["Proteose peptone"]
+    CultureMech_001314 --> ing2_Proteose_peptone
+    ing3_Dextrose["Dextrose"]
+    CultureMech_001314 --> ing3_Dextrose
+    CHEBI_17234["CHEBI:17234"]
+    ing3_Dextrose -.-> CHEBI_17234
+    ing4_Sodium_chloride["Sodium chloride"]
+    CultureMech_001314 --> ing4_Sodium_chloride
+    CHEBI_26710["CHEBI:26710"]
+    ing4_Sodium_chloride -.-> CHEBI_26710
+    ing5_Disodium_phosphate["Disodium phosphate"]
+    CultureMech_001314 --> ing5_Disodium_phosphate
+    CHEBI_34683["CHEBI:34683"]
+    ing5_Disodium_phosphate -.-> CHEBI_34683
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(6)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Calf brains</strong></td>
+  <td class="right">
+      variable
+      <span class="muted">VARIABLE</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000955" rel="nofollow noreferrer">UBERON:0000955</a>
+      <div class="muted small">brain</div>
+  </td>
+  <td class="prewrap small">infusion from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent of Brain Heart Infusion commercial product</td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Beef heart</strong></td>
+  <td class="right">
+      variable
+      <span class="muted">VARIABLE</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000948" rel="nofollow noreferrer">UBERON:0000948</a>
+      <div class="muted small">heart</div>
+  </td>
+  <td class="prewrap small">infusion from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent of Brain Heart Infusion commercial product</td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Proteose peptone</strong></td>
+  <td class="right">
+      10.0
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/foodon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FFOODON_03302071" rel="nofollow noreferrer">FOODON:03302071</a>
+      <div class="muted small">proteose peptone</div>
+  </td>
+  <td class="prewrap small">Enzymatic digest of animal protein providing amino acids and peptides; Constituent of Brain Heart Infusion commercial product</td>
+</tr>
+<tr>
+  <td class="right muted">4</td>
+  <td><strong>Dextrose</strong></td>
+  <td class="right">
+      2.0
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_17234" rel="nofollow noreferrer">CHEBI:17234</a>
+      <div class="muted small">D-glucose</div>
+  </td>
+  <td class="prewrap small">Carbon/energy source; Constituent of Brain Heart Infusion commercial product</td>
+</tr>
+<tr>
+  <td class="right muted">5</td>
+  <td><strong>Sodium chloride</strong></td>
+  <td class="right">
+      5.0
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_26710" rel="nofollow noreferrer">CHEBI:26710</a>
+      <div class="muted small">sodium chloride</div>
+  </td>
+  <td class="prewrap small">Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial product</td>
+</tr>
+<tr>
+  <td class="right muted">6</td>
+  <td><strong>Disodium phosphate</strong></td>
+  <td class="right">
+      2.5
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_34683" rel="nofollow noreferrer">CHEBI:34683</a>
+      <div class="muted small">disodium hydrogen phosphate</div>
+  </td>
+  <td class="prewrap small">pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial product</td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-01-26T17:53:10.536494Z</td>
+  <td>mediadive-import</td>
+  <td>Imported from MediaDive</td>
+  <td class="small prewrap">Source: DSMZ, ID: 215</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:19:03.172090Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:001314</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:45:15.064877+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;BHI MEDIUM&#34; to &#34;bhi_medium&#34; for consistent matching</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:04:10+00:00 from
+    <code>data/normalized_yaml/bacterial/bhi_medium.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

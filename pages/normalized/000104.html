@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ncl_pj_0_01_npa (CultureMech:000104) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:000104</span>
+</nav>
+
+<header>
+  <h1>ncl_pj_0_01_npa</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:000104</span>
+      <span class="badge">ALGAE</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">LIQUID</span>
+  </div>
+    <div class="muted">Original name: <em>NCL:PJ/0.01%NPA</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Algae cultivation</li><li>Phytoplankton culture</li><li>Microalgae research</li>      </ul>
+    </dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_NCL_PJ_0_01_NPA.pdf</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_000104["ncl_pj_0_01_npa"]
+    ing0_KCl["KCl"]
+    CultureMech_000104 --> ing0_KCl
+    CHEBI_32588["CHEBI:32588"]
+    ing0_KCl -.-> CHEBI_32588
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(1)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>KCl</strong></td>
+  <td class="right">
+      0.16
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_32588" rel="nofollow noreferrer">CHEBI:32588</a>
+      <div class="muted small">KCl</div>
+  </td>
+  <td class="prewrap small">From CCAP Medium MR_NCL_PJ_0_01_NPA.pdf; Curated from CCAP Medium MR_NCL_PJ_0_01_NPA.pdf specification</td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small"></td>
+  <td>ccap-import</td>
+  <td>Imported from CCAP Culture Collection</td>
+  <td class="small prewrap">Source ID: NCL_PJ_0_01_NPA, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_NCL_PJ_0_01_NPA.pdf</td>
+</tr>
+<tr>
+  <td class="muted small"></td>
+  <td>schema-defaulter-v1.0</td>
+  <td>Applied schema defaults and normalizations</td>
+  <td class="small prewrap">Added placeholder ingredients for missing composition</td>
+</tr>
+<tr>
+  <td class="muted small">2026-02-03T11:26:43.568171</td>
+  <td>quality-tagger-v1.0</td>
+  <td>Added data quality flag</td>
+  <td class="small prewrap">Marked as incomplete_composition due to placeholder ingredients</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:18:53.171519Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:000104</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:45:04.124506+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;NCL:PJ/0.01%NPA&#34; to &#34;ncl_pj_0_01_npa&#34; for consistent matching</td>
+</tr>
+<tr>
+  <td class="muted small">2026-04-04T12:54:54.872016</td>
+  <td>batch_process_collection_media</td>
+  <td>EXPANDED_INGREDIENTS</td>
+  <td class="small prewrap"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:03:47+00:00 from
+    <code>data/normalized_yaml/algae/ncl_pj_0_01_npa.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

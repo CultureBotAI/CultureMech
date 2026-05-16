@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>hayflick_medium (CultureMech:009333) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:009333</span>
+</nav>
+
+<header>
+  <h1>hayflick_medium</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:009333</span>
+      <span class="badge">bacterial</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">LIQUID</span>
+  </div>
+    <div class="muted">Original name: <em>Hayflick medium</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>External ontology</dt>
+    <dd>
+      <a href="https://togomedium.org/medium/M2785" rel="nofollow noreferrer">TOGO:M2785</a>
+      &mdash; Hayflick medium
+    </dd>
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Microbial cultivation</li>      </ul>
+    </dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: https://togomedium.org/medium/M2785</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_009333["hayflick_medium"]
+    ing0_Yeast_Extract["Yeast Extract"]
+    CultureMech_009333 --> ing0_Yeast_Extract
+    ing1_Horse_serum["Horse serum"]
+    CultureMech_009333 --> ing1_Horse_serum
+    ing2_Phenol_Red["Phenol Red"]
+    CultureMech_009333 --> ing2_Phenol_Red
+    CHEBI_31991["CHEBI:31991"]
+    ing2_Phenol_Red -.-> CHEBI_31991
+    ing3_DI_Water["DI Water"]
+    CultureMech_009333 --> ing3_DI_Water
+    ing4_DNA_sodium_salt__Sigma__D1501_["DNA sodium salt (Sigma, D1501)"]
+    CultureMech_009333 --> ing4_DNA_sodium_salt__Sigma__D1501_
+    ing5_PPLO["PPLO"]
+    CultureMech_009333 --> ing5_PPLO
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(6)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Yeast Extract</strong></td>
+  <td class="right">
+      19.6
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">Role: Nutrient source; Properties: Undefined component</td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Horse serum</strong></td>
+  <td class="right">
+      157
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">Role: Nutrient source; Properties: Undefined component</td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Phenol Red</strong></td>
+  <td class="right">
+      24
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_31991" rel="nofollow noreferrer">CHEBI:31991</a>
+      <div class="muted small">Phenol red</div>
+  </td>
+  <td class="prewrap small">Role: pH indicator; Properties: Organic compound, Simple component, Defined component</td>
+</tr>
+<tr>
+  <td class="right muted">4</td>
+  <td><strong>DI Water</strong></td>
+  <td class="right">
+      843
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound</td>
+</tr>
+<tr>
+  <td class="right muted">5</td>
+  <td><strong>DNA sodium salt (Sigma, D1501)</strong></td>
+  <td class="right">
+      0.24
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">Role: Growth factor</td>
+</tr>
+<tr>
+  <td class="right muted">6</td>
+  <td><strong>PPLO</strong></td>
+  <td class="right">
+      17.7
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">Properties: Undefined component, Complex component</td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-01-27T06:35:57.298279Z</td>
+  <td>togo-import</td>
+  <td>Imported from TOGO Medium</td>
+  <td class="small prewrap">Source: TOGO, ID: M2785</td>
+</tr>
+<tr>
+  <td class="muted small">2026-01-28T19:48:08.704043Z</td>
+  <td>chebi-enrichment</td>
+  <td>Added CHEBI ontology terms to ingredients</td>
+  <td class="small prewrap">Enriched using MicrobeMediaParam and MediaDive chemical mappings</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:20:05.704677Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:009333</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T06:29:43.000000Z</td>
+  <td>mediaingredientmech-enrichment-v1.0</td>
+  <td>Added MediaIngredientMech links</td>
+  <td class="small prewrap">Linked ingredients to MediaIngredientMech identifiers</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:46:24.619623+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;Hayflick medium&#34; to &#34;hayflick_medium&#34; for consistent matching</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:04:22+00:00 from
+    <code>data/normalized_yaml/bacterial/hayflick_medium.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

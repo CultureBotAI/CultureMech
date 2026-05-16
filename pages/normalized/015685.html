@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PYE (CultureMech:015685) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:015685</span>
+</nav>
+
+<header>
+  <h1>PYE</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:015685</span>
+      <span class="badge">SPECIALIZED</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">LIQUID</span>
+  </div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: FEBA media definitions</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_015685["PYE"]
+    ing0_Peptone["Peptone"]
+    CultureMech_015685 --> ing0_Peptone
+    ing1_Yeast_Extract["Yeast Extract"]
+    CultureMech_015685 --> ing1_Yeast_Extract
+    ing2_Magnesium_sulfate["Magnesium sulfate"]
+    CultureMech_015685 --> ing2_Magnesium_sulfate
+    CHEBI_32599["CHEBI:32599"]
+    ing2_Magnesium_sulfate -.-> CHEBI_32599
+    ing3_Calcium_chloride["Calcium chloride"]
+    CultureMech_015685 --> ing3_Calcium_chloride
+    CHEBI_86158["CHEBI:86158"]
+    ing3_Calcium_chloride -.-> CHEBI_86158
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(4)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Peptone</strong></td>
+  <td class="right">
+      2
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/foodon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FFOODON_03302071" rel="nofollow noreferrer">FOODON:03302071</a>
+      <div class="muted small">Peptone</div>
+  </td>
+  <td class="prewrap small">Mapping: curated_dict (confidence: 0.98)</td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Yeast Extract</strong></td>
+  <td class="right">
+      1
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/foodon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FFOODON_03315426" rel="nofollow noreferrer">FOODON:03315426</a>
+      <div class="muted small">Yeast extract</div>
+  </td>
+  <td class="prewrap small">Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9</td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Magnesium sulfate</strong></td>
+  <td class="right">
+      0.8
+      <span class="muted">MILLIMOLAR</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_32599" rel="nofollow noreferrer">CHEBI:32599</a>
+      <div class="muted small">magnesium sulfate</div>
+  </td>
+  <td class="prewrap small">Mapping: micromediaparam (confidence: 0.95); CAS: 7487-88-9; MW: 120.37</td>
+</tr>
+<tr>
+  <td class="right muted">4</td>
+  <td><strong>Calcium chloride</strong></td>
+  <td class="right">
+      0.5
+      <span class="muted">MILLIMOLAR</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_86158" rel="nofollow noreferrer">CHEBI:86158</a>
+      <div class="muted small">calcium chloride dihydrate</div>
+  </td>
+  <td class="prewrap small">Mapping: micromediaparam (confidence: 0.95); CAS: 10043-52-4; MW: 110.98</td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-03-18T04:31:14.213293+00:00</td>
+  <td>import_from_culturebotht.py</td>
+  <td>IMPORTED</td>
+  <td class="small prewrap">Imported from CultureBotHT repository: PYE.yaml</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-18T04:34:00.467461Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:015685</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:05:16+00:00 from
+    <code>data/normalized_yaml/specialized/pye.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

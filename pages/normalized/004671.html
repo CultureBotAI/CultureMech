@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>tea_fungus_medium (CultureMech:004671) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:004671</span>
+</nav>
+
+<header>
+  <h1>tea_fungus_medium</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:004671</span>
+      <span class="badge">bacterial</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">LIQUID</span>
+  </div>
+    <div class="muted">Original name: <em>TEA FUNGUS medium</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>External ontology</dt>
+    <dd>
+      <a href="#" rel="nofollow noreferrer">komodo.medium:268</a>
+      &mdash; TEA FUNGUS medium
+    </dd>
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Microbial cultivation</li>      </ul>
+    </dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: KOMODO ModelSEED | ID: 268 | DSMZ Medium: 268 (mediadive.medium:268) | Aerobic: No</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_004671["tea_fungus_medium"]
+    ing0_Tea["Tea"]
+    CultureMech_004671 --> ing0_Tea
+    ing1_Sucrose["Sucrose"]
+    CultureMech_004671 --> ing1_Sucrose
+    CHEBI_17992["CHEBI:17992"]
+    ing1_Sucrose -.-> CHEBI_17992
+    ing2_Tap_water["Tap water"]
+    CultureMech_004671 --> ing2_Tap_water
+    CHEBI_15377["CHEBI:15377"]
+    ing2_Tap_water -.-> CHEBI_15377
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(3)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Tea</strong></td>
+  <td class="right">
+      5
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Sucrose</strong></td>
+  <td class="right">
+      50
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_17992" rel="nofollow noreferrer">CHEBI:17992</a>
+      <div class="muted small">Sucrose</div>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Tap water</strong></td>
+  <td class="right">
+      1000
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_15377" rel="nofollow noreferrer">CHEBI:15377</a>
+      <div class="muted small">Tap water</div>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-01-27T01:15:02.fZ</td>
+  <td>komodo-web-import</td>
+  <td>Imported from KOMODO web table</td>
+  <td class="small prewrap">Source: KOMODO, ID: 268</td>
+</tr>
+<tr>
+  <td class="muted small">2026-02-03T11:19:06.861920</td>
+  <td>dsmz-resolver-v1.0</td>
+  <td>Enriched with DSMZ composition</td>
+  <td class="small prewrap">Copied ingredients from DSMZ Medium 268</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:19:27.982541Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:004671</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T06:30:17.000000Z</td>
+  <td>mediaingredientmech-enrichment-v1.0</td>
+  <td>Added MediaIngredientMech links</td>
+  <td class="small prewrap">Linked ingredients to MediaIngredientMech identifiers</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:45:43.297285+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;TEA FUNGUS medium&#34; to &#34;tea_fungus_medium&#34; for consistent matching</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:03:52+00:00 from
+    <code>data/normalized_yaml/bacterial/KOMODO_268_TEA_FUNGUS_medium.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

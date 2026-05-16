@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CPG (CultureMech:015504) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:015504</span>
+</nav>
+
+<header>
+  <h1>CPG</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:015504</span>
+      <span class="badge">SPECIALIZED</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">LIQUID</span>
+  </div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: FEBA media definitions</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_015504["CPG"]
+    ing0_casamino_acids["casamino acids"]
+    CultureMech_015504 --> ing0_casamino_acids
+    CHEBI_78020["CHEBI:78020"]
+    ing0_casamino_acids -.-> CHEBI_78020
+    ing1_Bacto_Peptone["Bacto Peptone"]
+    CultureMech_015504 --> ing1_Bacto_Peptone
+    ing2_D_Glucose["D-Glucose"]
+    CultureMech_015504 --> ing2_D_Glucose
+    CHEBI_42758["CHEBI:42758"]
+    ing2_D_Glucose -.-> CHEBI_42758
+    ing3_Yeast_extract["Yeast extract"]
+    CultureMech_015504 --> ing3_Yeast_extract
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(4)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>casamino acids</strong></td>
+  <td class="right">
+      1
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_78020" rel="nofollow noreferrer">CHEBI:78020</a>
+      <div class="muted small">heptacosanoate</div>
+  </td>
+  <td class="prewrap small">Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 65072-00-6</td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Bacto Peptone</strong></td>
+  <td class="right">
+      10
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">CAS: 51142-18-8</td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>D-Glucose</strong></td>
+  <td class="right">
+      5
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_42758" rel="nofollow noreferrer">CHEBI:42758</a>
+      <div class="muted small">aldehydo-D-glucose</div>
+  </td>
+  <td class="prewrap small">Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16</td>
+</tr>
+<tr>
+  <td class="right muted">4</td>
+  <td><strong>Yeast extract</strong></td>
+  <td class="right">
+      1
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-03-18T04:31:12.513490+00:00</td>
+  <td>import_from_culturebotht.py</td>
+  <td>IMPORTED</td>
+  <td class="small prewrap">Imported from CultureBotHT repository: CPG.yaml</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-18T04:33:58.715854Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:015504</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:05:14+00:00 from
+    <code>data/normalized_yaml/specialized/cpg.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

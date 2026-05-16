@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>vy_2_asw_agar (CultureMech:009714) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:009714</span>
+</nav>
+
+<header>
+  <h1>vy_2_asw_agar</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:009714</span>
+      <span class="badge">bacterial</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">SOLID_AGAR</span>
+  </div>
+    <div class="muted">Original name: <em>VY/2-ASW Agar</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>External ontology</dt>
+    <dd>
+      <a href="https://togomedium.org/medium/M336" rel="nofollow noreferrer">TOGO:M336</a>
+      &mdash; VY/2-ASW Agar
+    </dd>
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Microbial cultivation</li>      </ul>
+    </dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: https://togomedium.org/medium/M336
+Original source: JCM - JCM_M341
+Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=341</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_009714["vy_2_asw_agar"]
+    ing0_Vitamin_B12["Vitamin B12"]
+    CultureMech_009714 --> ing0_Vitamin_B12
+    CHEBI_176843["CHEBI:176843"]
+    ing0_Vitamin_B12 -.-> CHEBI_176843
+    ing1_Artificial_seawater["Artificial seawater"]
+    CultureMech_009714 --> ing1_Artificial_seawater
+    ing2_Yeast_cell_paste__see_below_["Yeast cell paste (see below)"]
+    CultureMech_009714 --> ing2_Yeast_cell_paste__see_below_
+    ing3_Agar["Agar"]
+    CultureMech_009714 --> ing3_Agar
+    CHEBI_2509["CHEBI:2509"]
+    ing3_Agar -.-> CHEBI_2509
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(4)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Vitamin B12</strong></td>
+  <td class="right">
+      0.5
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_176843" rel="nofollow noreferrer">CHEBI:176843</a>
+      <div class="muted small">vitamin B12</div>
+  </td>
+  <td class="prewrap small">Role: Vitamin; Properties: Defined component, Simple component, Organic compound</td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Artificial seawater</strong></td>
+  <td class="right">
+      1
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">Role: Solvating media, Mineral source; Properties: Complex component, Solution, Defined component</td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Yeast cell paste (see below)</strong></td>
+  <td class="right">
+      5
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">Role: Nutrient source; Properties: Undefined component</td>
+</tr>
+<tr>
+  <td class="right muted">4</td>
+  <td><strong>Agar</strong></td>
+  <td class="right">
+      15
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_2509" rel="nofollow noreferrer">CHEBI:2509</a>
+      <div class="muted small">agar</div>
+  </td>
+  <td class="prewrap small">Role: Solidifying component</td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-01-27T06:35:54.870694Z</td>
+  <td>togo-import</td>
+  <td>Imported from TOGO Medium</td>
+  <td class="small prewrap">Source: JCM, ID: M336</td>
+</tr>
+<tr>
+  <td class="muted small">2026-01-28T19:48:18.905814Z</td>
+  <td>chebi-enrichment</td>
+  <td>Added CHEBI ontology terms to ingredients</td>
+  <td class="small prewrap">Enriched using MicrobeMediaParam and MediaDive chemical mappings</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:20:08.324758Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:009714</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T06:30:05.000000Z</td>
+  <td>mediaingredientmech-enrichment-v1.0</td>
+  <td>Added MediaIngredientMech links</td>
+  <td class="small prewrap">Linked ingredients to MediaIngredientMech identifiers</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:46:27.315492+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;VY/2-ASW Agar&#34; to &#34;vy_2_asw_agar&#34; for consistent matching</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:04:04+00:00 from
+    <code>data/normalized_yaml/bacterial/TOGO_M336_VY_2-ASW_Agar.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

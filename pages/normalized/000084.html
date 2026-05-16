@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>mc_ii (CultureMech:000084) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:000084</span>
+</nav>
+
+<header>
+  <h1>mc_ii</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:000084</span>
+      <span class="badge">ALGAE</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">LIQUID</span>
+  </div>
+    <div class="muted">Original name: <em>MC II</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Algae cultivation</li><li>Phytoplankton culture</li><li>Microalgae research</li>      </ul>
+    </dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_MCII.pdf</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_000084["mc_ii"]
+    ing0_Na_HPO_anydrous["Na HPO anydrous"]
+    CultureMech_000084 --> ing0_Na_HPO_anydrous
+    CHEBI_34683["CHEBI:34683"]
+    ing0_Na_HPO_anydrous -.-> CHEBI_34683
+    ing1_KH_PO["KH PO"]
+    CultureMech_000084 --> ing1_KH_PO
+    CHEBI_63036["CHEBI:63036"]
+    ing1_KH_PO -.-> CHEBI_63036
+    ing2_Aseptically_add_the_foetal_calf_serum_to_a_final_concentration_of["Aseptically add the foetal calf serum to a final concentration of"]
+    CultureMech_000084 --> ing2_Aseptically_add_the_foetal_calf_serum_to_a_final_concentration_of
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(3)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Na HPO anydrous</strong></td>
+  <td class="right">
+      1.325
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_34683" rel="nofollow noreferrer">CHEBI:34683</a>
+      <div class="muted small">Na HPO anydrous</div>
+  </td>
+  <td class="prewrap small">From CCAP Medium MR_MCII.pdf; Curated from CCAP Medium MR_MCII.pdf specification</td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>KH PO</strong></td>
+  <td class="right">
+      0.8
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_63036" rel="nofollow noreferrer">CHEBI:63036</a>
+      <div class="muted small">KH PO</div>
+  </td>
+  <td class="prewrap small">From CCAP Medium MR_MCII.pdf; Curated from CCAP Medium MR_MCII.pdf specification</td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Aseptically add the foetal calf serum to a final concentration of</strong></td>
+  <td class="right">
+      10
+      <span class="muted">PERCENT</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small">Ontology mapping not yet available; From CCAP Medium MR_MCII.pdf; Curated from CCAP Medium MR_MCII.pdf specification</td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small"></td>
+  <td>ccap-import</td>
+  <td>Imported from CCAP Culture Collection</td>
+  <td class="small prewrap">Source ID: MCII, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_MCII.pdf</td>
+</tr>
+<tr>
+  <td class="muted small"></td>
+  <td>schema-defaulter-v1.0</td>
+  <td>Applied schema defaults and normalizations</td>
+  <td class="small prewrap">Added placeholder ingredients for missing composition</td>
+</tr>
+<tr>
+  <td class="muted small">2026-02-03T11:26:43.529410</td>
+  <td>quality-tagger-v1.0</td>
+  <td>Added data quality flag</td>
+  <td class="small prewrap">Marked as incomplete_composition due to placeholder ingredients</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:18:53.117269Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:000084</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:45:04.072327+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;MC II&#34; to &#34;mc_ii&#34; for consistent matching</td>
+</tr>
+<tr>
+  <td class="muted small">2026-04-04T12:54:54.927374</td>
+  <td>batch_process_collection_media</td>
+  <td>EXPANDED_INGREDIENTS</td>
+  <td class="small prewrap"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:03:47+00:00 from
+    <code>data/normalized_yaml/algae/mc_ii.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>
