@@ -121,7 +121,7 @@ ingredients:
 description: A defined Ralstonia growth medium from Tiffany Lowe-Power lab (note,
   no carbon is added)
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MSB
@@ -135,5 +135,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015644'
+- timestamp: '2026-05-16T09:04:42.034090+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

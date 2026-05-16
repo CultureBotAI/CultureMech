@@ -69,9 +69,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008075'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:49.246024'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:07.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -79,8 +79,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:11.898468+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TOGO Medium M1529" to "togo_medium_m1529" for
-    consistent matching
+  notes: Normalized name from "TOGO Medium M1529" to "togo_medium_m1529" for consistent
+    matching
+- timestamp: '2026-05-16T09:04:36.380534+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Na2CO3**
   composition: []
@@ -102,9 +106,9 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:008102
   name: methylobacterium_medium
-  notes: Reviewed TOGO Methylobacterium medium pair; M1529 differs only in
-    MgSO4·7H2O concentration.
+  notes: Reviewed TOGO Methylobacterium medium pair; M1529 differs only in MgSO4·7H2O
+    concentration.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- MgSO4·7H2O decreased from 1 g/L to 0.5 g/L while the TOGO Methylobacterium
-  medium formulation remains unchanged.
+- MgSO4·7H2O decreased from 1 g/L to 0.5 g/L while the TOGO Methylobacterium medium
+  formulation remains unchanged.

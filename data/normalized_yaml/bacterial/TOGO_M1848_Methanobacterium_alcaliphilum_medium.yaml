@@ -452,12 +452,12 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:50.253776'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: H2; Added default concentration for ingredient: N2; Added default
     concentration for ingredient: Tris; Added default concentration for ingredient:
     HCl; Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:40.158396+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -471,10 +471,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008422'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:51.778504'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:16.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -484,6 +484,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Methanobacterium alcaliphilum medium" to "methanobacterium_alcaliphilum_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:11.482281+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Tris-HCl buffer**
   composition: []

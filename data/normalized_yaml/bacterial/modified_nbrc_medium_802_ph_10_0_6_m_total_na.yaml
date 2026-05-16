@@ -109,11 +109,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:50.300299'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaCl; Added default concentration
     for ingredient: K2HPO4; Added default concentration for ingredient: NaHCO3; Added
     default concentration for ingredient: Na2CO3'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:59.594673+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -127,9 +127,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008430'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:51.829274'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:41.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -139,6 +139,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified NBRC medium 802 (pH 10, 0.6 M total Na+)"
     to "modified_nbrc_medium_802_ph_10_0_6_m_total_na" for consistent matching
+- timestamp: '2026-05-16T09:04:26.039989+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Hipolypepton*
   composition: []

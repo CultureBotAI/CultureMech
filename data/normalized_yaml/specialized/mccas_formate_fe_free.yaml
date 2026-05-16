@@ -297,7 +297,7 @@ ingredients:
     label: ''
 description: McCas_formate with sulfate removed, no FeCl2
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: McCas formate Fe Free
@@ -311,5 +311,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015573'
+- timestamp: '2026-05-16T09:04:41.405577+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

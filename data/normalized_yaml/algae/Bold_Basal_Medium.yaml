@@ -1,6 +1,6 @@
 id: CultureMech:000034
 name: bold_basal_medium
-category: ALGAE
+category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -58,7 +58,8 @@ ingredients:
   notes: 'Original amount: Bold Trace Stock'
 preparation_steps:
 - step_number: 1
-  instruction: 'Important Notes To Consider: The quality of water, including natural seawater, is important.'
+  instruction: 'Important Notes To Consider: The quality of water, including natural
+    seawater, is important.'
 - step_number: 2
   instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.
@@ -108,19 +109,23 @@ curation_history:
 - timestamp: '2026-05-09T19:07:13Z'
   curator: culturemech-agentic-curation
   action: ADDED_GROWTH_EVIDENCE
-  notes: Added Scenedesmus quadricauda CPCC-158 BBM growth evidence and modeled
-    pH/aeration/estradiol assay conditions as a BBM variant.
+  notes: Added Scenedesmus quadricauda CPCC-158 BBM growth evidence and modeled pH/aeration/estradiol
+    assay conditions as a BBM variant.
+- timestamp: '2026-05-16T09:02:55.861551+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 references:
 - reference: UTEX:bold-basal-medium
 - reference: https://utex.org/products/bold-basal-medium
 - reference: PMID:35807621
   title: Effect of 17β-Estradiol on Growth and Biosynthesis of Microalgae Scenedesmus
-    quadricauda (CPCC-158) and Duckweed Lemna minor (CPCC-490) Grown in Three
-    Different Media
+    quadricauda (CPCC-158) and Duckweed Lemna minor (CPCC-490) Grown in Three Different
+    Media
   authors: Kozlova, T. A.; Levin, D. B.
   year: 2022
-  notes: Primary source supporting Scenedesmus quadricauda CPCC-158 cultivation
-    in Bold Basal Medium with study-specific pH, aeration, and estradiol treatments.
+  notes: Primary source supporting Scenedesmus quadricauda CPCC-158 cultivation in
+    Bold Basal Medium with study-specific pH, aeration, and estradiol treatments.
 original_name: Bold Basal Medium
 variants:
 - name: bbm_estradiol_exposure_assay
@@ -138,8 +143,8 @@ variants:
     supports: SUPPORT
     snippet: 'The study was conducted using three types of media: Bold Basal Medium
       (BBM)'
-    explanation: The paper explicitly used BBM as one of three media for the
-      Scenedesmus quadricauda CPCC-158 growth experiment.
+    explanation: The paper explicitly used BBM as one of three media for the Scenedesmus
+      quadricauda CPCC-158 growth experiment.
 target_organisms:
 - preferred_term: Scenedesmus quadricauda
   term:
@@ -159,5 +164,5 @@ target_organisms:
   - reference: PMID:35807621
     supports: SUPPORT
     snippet: Scenedesmus quadricauda (CPCC-158)
-    explanation: Kozlova and Levin used Scenedesmus quadricauda CPCC-158 in BBM
-      and measured algal cell-density growth over an 11-day experiment.
+    explanation: Kozlova and Levin used Scenedesmus quadricauda CPCC-158 in BBM and
+      measured algal cell-density growth over an 11-day experiment.

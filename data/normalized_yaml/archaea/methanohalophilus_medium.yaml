@@ -1,7 +1,7 @@
 id: CultureMech:000266
 name: methanohalophilus_medium
 original_name: METHANOHALOPHILUS MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -301,3 +301,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOHALOPHILUS MEDIUM" to "methanohalophilus_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.541589+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

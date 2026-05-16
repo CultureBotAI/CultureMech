@@ -151,10 +151,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:55.701848'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2 ; Added default concentration
     for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:04.700383Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -169,3 +169,7 @@ curation_history:
   notes: Normalized name from "Modified Schaedler medium (Infect. Immun. 29:768-777,1980)
     without glucose but supplemented with 0.1 M sodium lactate" to "modified_schaedler_medium_infect_immun_29_768_777_1980_without_glucose_but_supplemented_with_0_1_m_sodium_lactate"
     for consistent matching
+- timestamp: '2026-05-16T09:04:26.212379+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

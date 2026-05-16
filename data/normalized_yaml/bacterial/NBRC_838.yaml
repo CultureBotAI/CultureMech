@@ -39,9 +39,13 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007497'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.910801'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.722234+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: KH2PO40.75gK2HPO40.75gMgCl2·6H2O0.36gNH4Cl1gBacto Yeast Extract
     (Difco)0.1gHipolypepton*0.1gSodium acetate2.5gTrimethylamine-HCl8gTrace mineral

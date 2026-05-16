@@ -235,7 +235,7 @@ ingredients:
     From Wolfe''s vitamin mix'
 description: Northen lab media for experiments with mixtures of carbon sources
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: SDM noCarbon
@@ -249,5 +249,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015739'
+- timestamp: '2026-05-16T09:04:43.346616+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

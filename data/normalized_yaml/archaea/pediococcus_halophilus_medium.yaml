@@ -1,7 +1,7 @@
 id: CultureMech:000258
 name: pediococcus_halophilus_medium
 original_name: PEDIOCOCCUS HALOPHILUS MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.2-6.5
@@ -128,3 +128,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PEDIOCOCCUS HALOPHILUS MEDIUM" to "pediococcus_halophilus_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.746473+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

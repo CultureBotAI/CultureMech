@@ -129,9 +129,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006861'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:43.217323'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:59.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -141,3 +141,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ST21 AGAR FOR CELLULOSE DEGRADERS" to "st21_agar_for_cellulose_degraders"
     for consistent matching
+- timestamp: '2026-05-16T09:03:05.587016+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

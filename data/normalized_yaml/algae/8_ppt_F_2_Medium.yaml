@@ -1,6 +1,6 @@
 id: CultureMech:000021
 name: 8_ppt_f_2_medium
-category: ALGAE
+category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
@@ -43,7 +43,8 @@ ingredients:
   notes: 'Original amount: Thiamine Vitamin Solution'
 preparation_steps:
 - step_number: 1
-  instruction: 'Important Notes To Consider: The quality of water, including natural seawater, is important.'
+  instruction: 'Important Notes To Consider: The quality of water, including natural
+    seawater, is important.'
 - step_number: 2
   instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.
@@ -79,9 +80,9 @@ applications:
 - Microalgae research
 curation_history:
 - curator: utex-import
-  date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: 8-ppt-f-2-medium, URL: https://utex.org/products/8-ppt-f-2-medium'
+  timestamp: '2026-01-28T00:00:00+00:00'
 - timestamp: '2026-03-13T06:18:52.893835Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -91,7 +92,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "8 ppt F/2 Medium" to "8_ppt_f_2_medium" for consistent
     matching
+- timestamp: '2026-05-16T09:02:55.816580+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;
+    category->lowercase=1
 references:
-- reference_id: UTEX:8-ppt-f-2-medium
-- reference_id: https://utex.org/products/8-ppt-f-2-medium
+- reference: UTEX:8-ppt-f-2-medium
+- reference: https://utex.org/products/8-ppt-f-2-medium
 original_name: 8 ppt F/2 Medium

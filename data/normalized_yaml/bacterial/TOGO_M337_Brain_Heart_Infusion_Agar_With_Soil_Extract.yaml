@@ -156,9 +156,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009715'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.316282'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:13.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -168,6 +168,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brain Heart Infusion Agar With Soil Extract" to "brain_heart_infusion_agar_with_soil_extract"
     for consistent matching
+- timestamp: '2026-05-16T09:03:17.229515+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Soil extract (see Medium [M94])
   composition: []

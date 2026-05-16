@@ -207,9 +207,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.977017'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T03:09:15.067302Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -228,3 +228,7 @@ curation_history:
   notes: Normalized name from "MN Marine medium (ATCC Medium 957) with 20 mcg/L of
     vitamin B12" to "mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12"
     for consistent matching
+- timestamp: '2026-05-16T09:04:24.783551+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

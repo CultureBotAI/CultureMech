@@ -109,8 +109,12 @@ curation_history:
   changes: 'Set category to ''bacterial'' (was: MISSING)'
   notes: 'Automated categorization (confidence: 0.11). Weak match (score: 0.13), defaulting
     to bacterial'
+- timestamp: '2026-05-16T09:02:58.417642+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: references.reference_id->reference=3
 references:
-- reference_id: https://utex.org/products/das-vitamin-cocktail
-- reference_id: UTEX:das-vitamin-cocktail
-- reference_id: MediaIngredientMech:UNMAPPED_0045
+- reference: https://utex.org/products/das-vitamin-cocktail
+- reference: UTEX:das-vitamin-cocktail
+- reference: MediaIngredientMech:UNMAPPED_0045
 category: bacterial

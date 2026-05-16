@@ -1,6 +1,6 @@
 id: CultureMech:000139
 name: tap_medium
-category: ALGAE
+category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
@@ -47,6 +47,10 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:55.919190+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 references:
 - reference: CCAP:TAP
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_TAP.pdf

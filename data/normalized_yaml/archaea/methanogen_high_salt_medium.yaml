@@ -1,7 +1,7 @@
 id: CultureMech:000287
 name: methanogen_high_salt_medium
 original_name: METHANOGEN HIGH SALT MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -406,3 +406,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOGEN HIGH SALT MEDIUM" to "methanogen_high_salt_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.392423+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

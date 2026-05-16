@@ -110,10 +110,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: ''
-description: Murashige and Skoog Basal Salts Medium from Robin at 0.5X
-  concentration
+description: Murashige and Skoog Basal Salts Medium from Robin at 0.5X concentration
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MS Basal Salts Robin 0.5x
@@ -127,6 +126,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015640'
+- timestamp: '2026-05-16T09:04:42.001252+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients
 parent_media:
@@ -134,11 +137,10 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:015639
   name: MS Basal Salts Robin
-  notes: Both specialized records are MS Basal Salts Robin formulations; the
-    child is explicitly labeled 0.5x and all parsed components are half-strength
-    relative to the parent.
+  notes: Both specialized records are MS Basal Salts Robin formulations; the child
+    is explicitly labeled 0.5x and all parsed components are half-strength relative
+    to the parent.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- 0.5x MS Basal Salts Robin halves the parsed basal salt and trace element
-  concentrations, including ammonium nitrate 1650 to 825 mg/L and potassium
-  nitrate 1900 to 950 mg/L.
+- 0.5x MS Basal Salts Robin halves the parsed basal salt and trace element concentrations,
+  including ammonium nitrate 1650 to 825 mg/L and potassium nitrate 1900 to 950 mg/L.

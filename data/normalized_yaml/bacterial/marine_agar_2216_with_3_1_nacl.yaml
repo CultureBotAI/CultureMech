@@ -47,9 +47,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009731'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.386525'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:23.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -59,6 +59,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine Agar 2216 With  3.1% NaCl" to "marine_agar_2216_with_3_1_nacl"
     for consistent matching
+- timestamp: '2026-05-16T09:03:40.146376+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Marine agar 2216 (see Medium [M110])
   composition: []

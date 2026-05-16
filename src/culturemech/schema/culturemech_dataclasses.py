@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-05-16T01:54:51
+# Generation date: 2026-05-16T02:04:52
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -2041,6 +2041,15 @@ class ConcentrationUnitEnum(EnumDefinitionImpl):
     PERCENT_V_V = PermissibleValue(
         text="PERCENT_V_V",
         description="percent volume per volume")
+    ML_PER_L = PermissibleValue(
+        text="ML_PER_L",
+        description="milliliters per liter (for solution/component additions)")
+    MG_PER_ML = PermissibleValue(
+        text="MG_PER_ML",
+        description="milligrams per milliliter")
+    FOLD_DILUTION = PermissibleValue(
+        text="FOLD_DILUTION",
+        description="dilution factor expressed as 1:N (e.g. \"10-fold dilution\")")
     VARIABLE = PermissibleValue(
         text="VARIABLE",
         description="variable or unspecified concentration")

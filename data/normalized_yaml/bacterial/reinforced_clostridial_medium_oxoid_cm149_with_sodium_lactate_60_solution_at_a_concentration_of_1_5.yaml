@@ -52,9 +52,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009180'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:56.901104'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:58.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -65,6 +65,10 @@ curation_history:
   notes: Normalized name from "Reinforced Clostridial medium (Oxoid CM149) with sodium
     lactate (60% solution) at a concentration of 1.5%" to "reinforced_clostridial_medium_oxoid_cm149_with_sodium_lactate_60_solution_at_a_concentration_of_1_5"
     for consistent matching
+- timestamp: '2026-05-16T09:04:30.520907+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Sodium lactate (60% solution)
   composition: []

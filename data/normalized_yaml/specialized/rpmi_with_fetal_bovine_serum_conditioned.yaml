@@ -330,7 +330,7 @@ ingredients:
 description: RPMI 1640 Medium conditioned with Mesenchymal Stromal Cells grown for
   2 days
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RPMI with Fetal bovine serum Conditioned
@@ -344,5 +344,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015733'
+- timestamp: '2026-05-16T09:04:43.260088+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

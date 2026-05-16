@@ -31,14 +31,18 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009776'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.678650'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:46:27.805503+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Acidic Oatmeal Agar (pH 5.0)" to "acidic_oatmeal_agar_ph_5_0"
     for consistent matching
+- timestamp: '2026-05-16T09:03:17.694167+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Oatmeal agar (ISP-3) (see Medium [M42])
   composition: []

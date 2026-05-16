@@ -217,9 +217,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008730'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:54.164950'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:45.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -227,8 +227,11 @@ curation_history:
 - timestamp: '2026-03-17T19:46:18.537094+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BG11（pH9.0）" to "bg11_ph9_0" for consistent
-    matching
+  notes: Normalized name from "BG11（pH9.0）" to "bg11_ph9_0" for consistent matching
+- timestamp: '2026-05-16T09:03:25.663224+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 solutions:
 - preferred_term: Stock solution1*
@@ -250,5 +253,5 @@ parent_media:
   name: bg11
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

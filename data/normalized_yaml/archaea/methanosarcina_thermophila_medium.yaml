@@ -1,7 +1,7 @@
 id: CultureMech:000259
 name: methanosarcina_thermophila_medium
 original_name: METHANOSARCINA THERMOPHILA MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -304,3 +304,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOSARCINA THERMOPHILA MEDIUM" to "methanosarcina_thermophila_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.660806+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

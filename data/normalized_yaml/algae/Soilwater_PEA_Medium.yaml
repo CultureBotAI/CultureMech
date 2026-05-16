@@ -1,6 +1,6 @@
 id: CultureMech:000229
 name: soilwater_pea_medium
-category: ALGAE
+category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -28,7 +28,8 @@ ingredients:
   notes: 'Original amount: dH2O'
 preparation_steps:
 - step_number: 1
-  instruction: 'Important Notes To Consider: The quality of water, including natural seawater, is important.'
+  instruction: 'Important Notes To Consider: The quality of water, including natural
+    seawater, is important.'
 - step_number: 2
   instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.
@@ -63,9 +64,9 @@ applications:
 - Microalgae research
 curation_history:
 - curator: utex-import
-  date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: soilwater-pea-medium, URL: https://utex.org/products/soilwater-pea-medium'
+  timestamp: '2026-01-28T00:00:00+00:00'
 - timestamp: '2026-03-13T06:18:53.639138Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -75,7 +76,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: 'Normalized name from "Soilwater: PEA Medium" to "soilwater_pea_medium" for
     consistent matching'
+- timestamp: '2026-05-16T09:02:56.129585+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;
+    category->lowercase=1
 references:
-- reference_id: UTEX:soilwater-pea-medium
-- reference_id: https://utex.org/products/soilwater-pea-medium
+- reference: UTEX:soilwater-pea-medium
+- reference: https://utex.org/products/soilwater-pea-medium
 original_name: 'Soilwater: PEA Medium'

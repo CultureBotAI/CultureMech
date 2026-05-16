@@ -207,9 +207,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003953'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:31.358123'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:18.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -219,3 +219,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "1/2 TRYPTIC SOY BROTH (ANAEROBE)" to "1_2_tryptic_soy_broth_anaerobe"
     for consistent matching
+- timestamp: '2026-05-16T09:02:58.110283+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

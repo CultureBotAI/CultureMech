@@ -53,7 +53,7 @@ ingredients:
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 471-34-1; MW: 100.0869'
 description: Yeast mannitol media
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: YM
@@ -67,4 +67,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015790'
+- timestamp: '2026-05-16T09:04:44.021420+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags: []

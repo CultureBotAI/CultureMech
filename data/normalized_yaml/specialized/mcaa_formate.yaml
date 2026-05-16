@@ -476,7 +476,7 @@ ingredients:
     From Day_AminoAcid20'
 description: formate McCas with amino acid mix instead of casamino acids
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: McAA formate
@@ -490,5 +490,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015560'
+- timestamp: '2026-05-16T09:04:41.117384+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

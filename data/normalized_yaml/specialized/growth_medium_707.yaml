@@ -29,7 +29,7 @@ ingredients:
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10034-99-8; MW: 246.47'
 description: medium 707
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: growth medium 707
@@ -43,4 +43,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015527'
+- timestamp: '2026-05-16T09:04:40.593770+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags: []

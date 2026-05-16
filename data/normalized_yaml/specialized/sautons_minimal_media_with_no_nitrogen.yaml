@@ -79,7 +79,7 @@ ingredients:
 description: Minimal media for Mycobacterium tuberculosis (H37Rv) with no nitrogen
   source
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Sautons minimal media with no nitrogen
@@ -93,5 +93,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015736'
+- timestamp: '2026-05-16T09:04:43.290079+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

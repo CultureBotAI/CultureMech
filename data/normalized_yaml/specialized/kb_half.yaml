@@ -35,7 +35,7 @@ ingredients:
     120.37'
 description: King's medium B half strength
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: KB-half
@@ -49,6 +49,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015534'
+- timestamp: '2026-05-16T09:04:40.737533+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients
 parent_media:
@@ -56,8 +60,8 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:015533
   name: KB
-  notes: Both records are specialized KB liquid formulations; the child is
-    explicitly labeled KB-half and all parsed components are half-strength.
+  notes: Both records are specialized KB liquid formulations; the child is explicitly
+    labeled KB-half and all parsed components are half-strength.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - 'KB-half halves all parsed KB components: Bacto peptone 10 to 5 g/L, K2HPO4 1.5

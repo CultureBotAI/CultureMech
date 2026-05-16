@@ -44,9 +44,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:014794'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:26.643737'
   action: Applied schema defaults and normalizations
   notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-14T21:09:45.661714'
   curator: quality-tagger-v1.0
   action: Added data quality flag
@@ -57,6 +57,10 @@ curation_history:
   changes: 'Set category to ''bacterial'' (was: MISSING)'
   notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
     to bacterial'
+- timestamp: '2026-05-16T09:04:07.682164+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 ingredients:
 - preferred_term: See source for composition
   concentration:

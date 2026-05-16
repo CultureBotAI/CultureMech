@@ -253,11 +253,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.257235'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: N2; Added default concentration for ingredient:
     Hydrogen gas; Added default concentration for ingredient: clarified rumen fluid'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:46.531169+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -267,9 +267,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009728'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.374439'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:24.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -279,6 +279,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Methanosphaera Medium" to "methanosphaera_medium" for
     consistent matching
+- timestamp: '2026-05-16T09:03:17.308315+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []

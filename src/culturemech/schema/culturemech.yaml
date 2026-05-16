@@ -1717,6 +1717,12 @@ enums:
         description: percent weight per volume
       PERCENT_V_V:
         description: percent volume per volume
+      ML_PER_L:
+        description: milliliters per liter (for solution/component additions)
+      MG_PER_ML:
+        description: milligrams per milliliter
+      FOLD_DILUTION:
+        description: dilution factor expressed as 1:N (e.g. "10-fold dilution")
       VARIABLE:
         description: variable or unspecified concentration
 

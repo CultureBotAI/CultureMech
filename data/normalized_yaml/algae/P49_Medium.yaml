@@ -1,6 +1,6 @@
 id: CultureMech:000185
 name: p49_medium
-category: ALGAE
+category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -68,7 +68,8 @@ ingredients:
   notes: 'Original amount: Thiamine Vitamin Solution'
 preparation_steps:
 - step_number: 1
-  instruction: 'Important Notes To Consider: The quality of water, including natural seawater, is important.'
+  instruction: 'Important Notes To Consider: The quality of water, including natural
+    seawater, is important.'
 - step_number: 2
   instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.
@@ -103,9 +104,9 @@ applications:
 - Microalgae research
 curation_history:
 - curator: utex-import
-  date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: p49-medium, URL: https://utex.org/products/p49-medium'
+  timestamp: '2026-01-28T00:00:00+00:00'
 - timestamp: '2026-03-13T06:18:53.482458Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -114,7 +115,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "P49 Medium" to "p49_medium" for consistent matching
+- timestamp: '2026-05-16T09:02:56.080749+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;
+    category->lowercase=1
 references:
-- reference_id: UTEX:p49-medium
-- reference_id: https://utex.org/products/p49-medium
+- reference: UTEX:p49-medium
+- reference: https://utex.org/products/p49-medium
 original_name: P49 Medium
