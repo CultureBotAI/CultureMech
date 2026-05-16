@@ -63,8 +63,7 @@ ingredients:
   notes: 'Original amount: Biotin Vitamin Solution'
 preparation_steps:
 - step_number: 1
-  instruction: Important Notes To Consider: The quality of water, including natural
-    seawater, is important.
+  instruction: 'Important Notes To Consider: The quality of water, including natural seawater, is important.'
 - step_number: 2
   instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.

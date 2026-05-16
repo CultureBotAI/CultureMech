@@ -64,8 +64,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Important Notes To Consider: The quality of water, including natural
-    seawater, is important.
+  description: 'Important Notes To Consider: The quality of water, including natural seawater, is important.'
 - step_number: 2
   action: MIX
   description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
