@@ -221,7 +221,7 @@ preparation_steps:
   action: AUTOCLAVE
   description: Mix components thoroughly and adjust pH to 7.0. Distribute the medium
     into culture vessels (e.g., 20 ml medium in 60 ml serum bottle) under a N2 gas
-    atmosphere, seal with butyl rubber stoppers and autoclave.After cooling, aseptically
+    atmosphere, seal with butyl rubber stoppers and autoclave. After cooling, aseptically
     and anaerobically add per liter the following solutions (autoclaved and stored
     under N2)
 - step_number: 2
