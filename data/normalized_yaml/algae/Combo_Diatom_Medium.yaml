@@ -23,14 +23,14 @@ ingredients:
   notes: 'Original amount: Modified COMBO Medium'
 preparation_steps:
 - step_number: 1
-  instruction: Important Notes To Consider:The quality of water, including natural
+  instruction: Important Notes To Consider: The quality of water, including natural
     seawater, is important.
 - step_number: 2
   instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.
 - step_number: 3
   instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
-    source.When dissolving chemicals, wait for the first component to dissolve before
+    source. When dissolving chemicals, wait for the first component to dissolve before
     adding the second.
 - step_number: 4
   instruction: Stirring, and sometimes the addition of heat, is often required to
@@ -38,7 +38,7 @@ preparation_steps:
 - step_number: 5
   instruction: Preparation of stock solutions for frequently made algal culture media
     make preparing media convenient but also necessary to avoid errors from weighing
-    very tiny amounts.Attention should be given to the pH of the final medium.
+    very tiny amounts. Attention should be given to the pH of the final medium.
 - step_number: 6
   instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
 - step_number: 7
