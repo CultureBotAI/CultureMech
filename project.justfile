@@ -741,6 +741,17 @@ qc:
     echo ""
     echo "✓ QC complete!"
 
+# Strict in-process validation: walks normalized_yaml, runs linkml-validate with
+# closed=True (catches unknown fields that `just validate-all` ignores), writes
+# a categorized TSV, and exits non-zero if any ERROR rows are emitted.
+# Pass arguments through, e.g.:
+#     just validate-strict --sample 50
+#     just validate-strict data/normalized_yaml/algae
+[group('QC')]
+validate-strict *args:
+    #!/usr/bin/env bash
+    uv run python scripts/validate_strict.py {{args}}
+
 # ================================================================
 # VALIDATION AND FIXING (Track 3)
 # ================================================================

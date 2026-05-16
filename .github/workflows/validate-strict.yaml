@@ -1,0 +1,47 @@
+name: validate-strict
+
+on:
+  pull_request:
+    paths:
+      - 'data/normalized_yaml/**'
+      - 'src/culturemech/schema/**'
+      - 'scripts/validate_strict.py'
+      - 'project.justfile'
+      - '.github/workflows/validate-strict.yaml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-strict-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install just
+        uses: extractions/setup-just@v2
+
+      - name: Sync dependencies
+        run: uv sync --frozen
+
+      - name: Run validate-strict
+        run: just validate-strict
+
+      - name: Upload failure TSV
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: instance_validation_failures
+          path: reports/instance_validation_failures.tsv
+          if-no-files-found: ignore

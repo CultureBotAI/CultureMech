@@ -1,0 +1,16 @@
+# Pre-commit hooks for CultureMech.
+#
+# Install: pre-commit install
+# Run manually on all files: pre-commit run --all-files
+
+repos:
+  - repo: local
+    hooks:
+      - id: validate-strict-changed
+        name: validate-strict on changed YAMLs
+        description: Run linkml-validate (closed schema) on staged YAMLs under data/normalized_yaml/.
+        entry: bash -c 'files=$(git diff --cached --name-only --diff-filter=ACMR -- "data/normalized_yaml/*.yaml" "data/normalized_yaml/**/*.yaml"); [ -z "$files" ] && exit 0; uv run python scripts/validate_strict.py --quiet --out reports/instance_validation_failures.tsv $files'
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-commit]
