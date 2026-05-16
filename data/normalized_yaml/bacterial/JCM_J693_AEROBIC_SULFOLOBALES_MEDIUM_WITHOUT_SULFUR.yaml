@@ -167,22 +167,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:31.015877+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AEROBIC SULFOLOBALES MEDIUM WITHOUT SULFUR" to
-    "aerobic_sulfolobales_medium_without_sulfur" for consistent matching
+  notes: Normalized name from "AEROBIC SULFOLOBALES MEDIUM WITHOUT SULFUR" to "aerobic_sulfolobales_medium_without_sulfur"
+    for consistent matching
 - timestamp: '2026-04-04T18:49:19.929413'
   curator: copy_referenced_compositions
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (13 ingredients)
   source: CultureMech:003037
-  notes: Resolved reference by copying from aerobic_sulfolobales_medium
-    (CultureMech:003037)
+  notes: Resolved reference by copying from aerobic_sulfolobales_medium (CultureMech:003037)
+- timestamp: '2026-05-16T08:57:04.795018+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
 variant_children:
 - path: data/normalized_yaml/bacterial/aerobic_sulfolobales_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003037
   name: aerobic_sulfolobales_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

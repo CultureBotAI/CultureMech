@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-05-11T17:02:08
+# Generation date: 2026-05-16T01:54:51
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -74,6 +74,7 @@ DOI = CurieNamespace('DOI', 'https://doi.org/')
 DSMZ = CurieNamespace('DSMZ', 'https://mediadive.dsmz.de/medium/')
 EC = CurieNamespace('EC', 'https://enzyme.expasy.org/EC/')
 ENVO = CurieNamespace('ENVO', 'http://purl.obolibrary.org/obo/ENVO_')
+FOODON = CurieNamespace('FOODON', 'http://purl.obolibrary.org/obo/FOODON_')
 GTDB = CurieNamespace('GTDB', 'https://gtdb.ecogenomic.org/genome?gid=')
 GENBANK = CurieNamespace('GenBank', 'https://www.ncbi.nlm.nih.gov/assembly/')
 KEGG = CurieNamespace('KEGG', 'https://www.genome.jp/entry/')
@@ -1698,7 +1699,9 @@ class TransporterAnnotation(YAMLRoot):
 @dataclass(repr=False)
 class ChemicalEntityTerm(Term):
     """
-    A CHEBI term representing a chemical entity
+    A term identifying a chemical or biological ingredient. Primarily CHEBI, but FOODON / UBERON / ENVO are accepted
+    for ingredients (food products, anatomical tissues, environmental samples) where no CHEBI equivalent exists
+    upstream (e.g. peptone -> FOODON:03316428, bovine brain -> UBERON:0000955).
     """
     _inherited_slots: ClassVar[list[str]] = []
 
@@ -3470,7 +3473,7 @@ slots.updateEvent__notes = Slot(uri=CULTUREMECH.notes, name="updateEvent__notes"
 
 slots.ChemicalEntityTerm_id = Slot(uri=CULTUREMECH.id, name="ChemicalEntityTerm_id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.ChemicalEntityTerm_id, domain=ChemicalEntityTerm, range=Union[str, ChemicalEntityTermId],
-                   pattern=re.compile(r'^CHEBI:\d+$'))
+                   pattern=re.compile(r'^(CHEBI|FOODON|UBERON|ENVO):\d+$'))
 
 slots.OrganismTerm_id = Slot(uri=CULTUREMECH.id, name="OrganismTerm_id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.OrganismTerm_id, domain=OrganismTerm, range=Union[str, OrganismTermId],

@@ -72,6 +72,9 @@ curation_history:
   source: CultureMech:002743
   notes: Resolved reference by copying from middlebrook_7h10_agar_with_oadc_enrichment
     (CultureMech:002743)
+- timestamp: '2026-05-16T08:57:04.817533+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference

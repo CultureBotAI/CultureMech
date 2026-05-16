@@ -42,6 +42,10 @@ curation_history:
   source: CCAP PE medium PDF - manual extraction after parse failure
   notes: PDF was accessible but failed automated table extraction; composition manually
     extracted from text
+- timestamp: '2026-05-16T08:57:02.638014+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
 references:
 - reference_id: CCAP:PE
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_PE.pdf
@@ -104,8 +108,7 @@ ingredients:
   notes: Contains NaNO3 and Na2HPO4·12H2O (see above for individual concentrations)
   source: CCAP PE medium PDF
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  manual_extraction: true
+- has_ontology_mappings
+- ingredients_curated
+- manual_extraction
 original_name: PE

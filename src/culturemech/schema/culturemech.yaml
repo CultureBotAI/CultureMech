@@ -32,6 +32,8 @@ prefixes:
   UO: http://purl.obolibrary.org/obo/UO_
   # Anatomy (for tissue extracts)
   UBERON: http://purl.obolibrary.org/obo/UBERON_
+  # Food products (peptone, yeast extract, wheat germ, etc.)
+  FOODON: http://purl.obolibrary.org/obo/FOODON_
   # References
   PMID: http://www.ncbi.nlm.nih.gov/pubmed/
   DOI: https://doi.org/
@@ -1499,12 +1501,20 @@ classes:
 
   ChemicalEntityTerm:
     is_a: Term
-    description: A CHEBI term representing a chemical entity
+    description: >-
+      A term identifying a chemical or biological ingredient. Primarily CHEBI,
+      but FOODON / UBERON / ENVO are accepted for ingredients (food products,
+      anatomical tissues, environmental samples) where no CHEBI equivalent
+      exists upstream (e.g. peptone -> FOODON:03316428, bovine brain ->
+      UBERON:0000955).
     slot_usage:
       id:
-        pattern: "^CHEBI:\\d+$"
+        pattern: "^(CHEBI|FOODON|UBERON|ENVO):\\d+$"
     id_prefixes:
       - CHEBI
+      - FOODON
+      - UBERON
+      - ENVO
 
   OrganismTerm:
     is_a: Term

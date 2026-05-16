@@ -328,9 +328,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 330 with final 3 ml vitamin solution in solution A
-    (per 900 ml). Otherwise, prepare the medium as described in the recipe of
-    Medium No. 330.
+  description: Use Medium No. 330 with final 3 ml vitamin solution in solution A (per
+    900 ml). Otherwise, prepare the medium as described in the recipe of Medium No.
+    330.
 - step_number: 2
   action: MIX
   description: 'Comment: For strain JCM 11824, incubate with a 10 - 15% inoculum.'
@@ -358,11 +358,13 @@ curation_history:
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (29 ingredients)
   source: CultureMech:002689
-  notes: Resolved reference by copying from sporotomaculum_medium
-    (CultureMech:002689)
+  notes: Resolved reference by copying from sporotomaculum_medium (CultureMech:002689)
+- timestamp: '2026-05-16T08:57:36.457433+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J434_ANAEROLINEA_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
@@ -370,5 +372,5 @@ parent_media:
   name: anaerolinea_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

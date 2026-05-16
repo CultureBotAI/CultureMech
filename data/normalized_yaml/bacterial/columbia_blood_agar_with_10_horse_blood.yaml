@@ -158,9 +158,12 @@ curation_history:
     ingredients)
   source: Oxoid CM331 + blood additive
   notes: 'Commercial product expansion: Columbia Agar Base (CM331) with horse blood'
+- timestamp: '2026-05-16T08:57:26.727145+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  commercial_product: true
+- has_ontology_mappings
+- ingredients_curated
+- commercial_product
 kg_microbe_match: mediadive.medium:687

@@ -43,19 +43,22 @@ curation_history:
   action: ADDED_GROWTH_EVIDENCE
   notes: Added Chlorella vulgaris UTEX 395 TAP growth evidence with NCBI Taxonomy,
     BioSample, and GenBank genome-project identifiers in references.
+- timestamp: '2026-05-16T08:57:01.884460+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
 references:
 - reference: CCAP:TAP
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_TAP.pdf
 - reference: PMID:39168352
-  title: Influence of growth medium on the species-specific interactions between
-    algae and bacteria
+  title: Influence of growth medium on the species-specific interactions between algae
+    and bacteria
   authors: Lastauskienė, E. et al.
   year: 2024
-  notes: Primary source supporting Chlorella vulgaris UTEX 395 cultivation and
-    growth comparison in TAP medium.
+  notes: Primary source supporting Chlorella vulgaris UTEX 395 cultivation and growth
+    comparison in TAP medium.
 - reference: GenBank:LDKB00000000.1
-  title: Chlorella vulgaris strain UTEX 395, whole genome shotgun sequencing
-    project
+  title: Chlorella vulgaris strain UTEX 395, whole genome shotgun sequencing project
   year: 2015
   notes: NCBI nucleotide master record for the Chlorella vulgaris UTEX 395 genome
     project.
@@ -191,10 +194,9 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_TAP.pdf
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  curation_method: automated_expert_mapping
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
 original_name: TAP Medium
 target_organisms:
 - preferred_term: Chlorella vulgaris
@@ -205,18 +207,18 @@ target_organisms:
   genome_assembly_id:
   - SAMN03453227
   growth_metrics:
-  - measurement_conditions: TAP medium laboratory co-culture condition comparing
-      Chlorella vulgaris growth with and without Delftia sp.
+  - measurement_conditions: TAP medium laboratory co-culture condition comparing Chlorella
+      vulgaris growth with and without Delftia sp.
     evidence:
     - reference: PMID:39168352
       supports: SUPPORT
-      snippet: Under laboratory conditions, we found that Delftia sp. had a negative effect
-        on C. vulgaris growth when co-cultured in a TAP medium.
+      snippet: Under laboratory conditions, we found that Delftia sp. had a negative
+        effect on C. vulgaris growth when co-cultured in a TAP medium.
       explanation: The source explicitly reports Chlorella vulgaris growth behavior
         in TAP medium under laboratory culture conditions.
   evidence:
   - reference: PMID:39168352
     supports: SUPPORT
     snippet: Chlorella vulgaris and bacteria of the genus Delftia
-    explanation: The source studied Chlorella vulgaris UTEX 395 growth in TAP
-      medium and compared algal growth with and without Delftia sp. co-culture.
+    explanation: The source studied Chlorella vulgaris UTEX 395 growth in TAP medium
+      and compared algal growth with and without Delftia sp. co-culture.

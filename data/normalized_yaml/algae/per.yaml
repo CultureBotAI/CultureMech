@@ -40,6 +40,10 @@ curation_history:
   action: EXPANDED_INGREDIENTS
   changes: Replaced placeholder with 1 curated ingredients from CCAP
   source: CCAP Medium MR_PER.pdf
+- timestamp: '2026-05-16T08:57:02.642943+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(2 entries)
 references:
 - reference_id: CCAP:PER
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_PER.pdf
@@ -52,8 +56,6 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_PER.pdf
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: false
-  ingredients_curated: true
-  curation_method: automated_expert_mapping
+- ingredients_curated
+- curation_method:automated_expert_mapping
 original_name: PER

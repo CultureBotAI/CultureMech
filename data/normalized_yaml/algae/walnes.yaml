@@ -40,6 +40,10 @@ curation_history:
   action: EXPANDED_INGREDIENTS
   changes: Replaced placeholder with 11 curated ingredients from CCAP
   source: CCAP Medium MR_Walnes.pdf
+- timestamp: '2026-05-16T08:57:02.869170+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
 references:
 - reference_id: CCAP:Walnes
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_Walnes.pdf
@@ -164,8 +168,7 @@ ingredients:
   source: CCAP Medium MR_Walnes.pdf
   notes: From CCAP Medium MR_Walnes.pdf; Curated from CCAP Medium MR_Walnes.pdf specification
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  curation_method: automated_expert_mapping
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
 original_name: Walne's

@@ -155,8 +155,11 @@ curation_history:
   changes: Replaced placeholder with BD 220908 composition (8 ingredients)
   source: BD 220908 (Lowenstein-Jensen Medium)
   notes: 'Commercial product expansion: BD Lowenstein-Jensen Medium ready-to-use slants'
+- timestamp: '2026-05-16T08:57:37.220600+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  commercial_product: true
+- has_ontology_mappings
+- ingredients_curated
+- commercial_product

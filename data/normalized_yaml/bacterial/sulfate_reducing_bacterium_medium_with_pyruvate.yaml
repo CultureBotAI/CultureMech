@@ -280,6 +280,9 @@ curation_history:
   source: CultureMech:002900
   notes: Resolved reference by copying from sulfate_reducing_bacterium_medium_with_lactate
     (CultureMech:002900)
+- timestamp: '2026-05-16T08:58:16.141771+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference

@@ -51,10 +51,13 @@ curation_history:
   action: EXPANDED_TRIVIAL
   changes: Replaced placeholder with trivial composition (1 ingredient)
   notes: Trivial medium (simple composition) - manually curated
+- timestamp: '2026-05-16T08:57:29.382403+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(5 keys) -> list(4 entries)
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  curation_method: manual_trivial
-  trivial_medium: true
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:manual_trivial
+- trivial_medium
 description: Autoclaved distilled water
