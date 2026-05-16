@@ -1086,19 +1086,38 @@ build-browser: gen-browser-data
 # PAGES
 # ================================================================
 
+# Generate per-medium HTML pages from the normalized YAML layer.
+# Wraps the unified `render_media_pages` renderer (the modern Phase 2
+# dismech-pattern pipeline) and points it at the raw `normalized_yaml/`
+# dataset (15,827 records, pre-merge per-source view).
+#
+# Companion to `gen-media-pages` (in `justfile`) which targets
+# `data/merge_yaml/merged_2026/` (4,289 canonical merged records →
+# `pages/media/`). Both recipes use the same renderer + template; only
+# the source dir and output dir differ.
 [group('Pages')]
 gen-pages:
     #!/usr/bin/env bash
-    echo "Generating HTML pages for all recipes..."
-    uv run python -m culturemech.render --all
-    echo "✓ HTML pages generated in {{pages_dir}}/"
+    echo "Generating HTML pages from {{normalized_yaml_dir}}/ → {{pages_dir}}/normalized/"
+    uv run python src/culturemech/render_media_pages.py \
+        --yaml-dir {{justfile_directory()}}/{{normalized_yaml_dir}} \
+        --out-dir {{justfile_directory()}}/{{pages_dir}}/normalized \
+        --index-dir {{justfile_directory()}}/{{pages_dir}}/normalized
+    echo "✓ HTML pages generated in {{pages_dir}}/normalized/"
 
+# Render a single recipe YAML to HTML for ad-hoc dev. The output goes
+# into a tmp `pages/single/` dir so it doesn't disturb the canonical
+# `pages/media/` / `pages/normalized/` trees.
 [group('Pages')]
 gen-page file:
     #!/usr/bin/env bash
     echo "Generating HTML page for {{file}}..."
-    uv run python -m culturemech.render {{file}}
-    echo "✓ HTML page generated"
+    uv run python src/culturemech/render_media_pages.py \
+        --yaml-dir {{justfile_directory()}}/$(dirname {{file}}) \
+        --out-dir {{justfile_directory()}}/{{pages_dir}}/single \
+        --index-dir {{justfile_directory()}}/{{pages_dir}}/single \
+        --limit 1 --force
+    echo "✓ HTML page generated → {{pages_dir}}/single/"
 
 # ================================================================
 # TESTING

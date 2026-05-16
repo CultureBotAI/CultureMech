@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>v_8_juice_tap_water_agar (CultureMech:008056) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:008056</span>
+</nav>
+
+<header>
+  <h1>v_8_juice_tap_water_agar</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:008056</span>
+      <span class="badge">bacterial</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">SOLID_AGAR</span>
+  </div>
+    <div class="muted">Original name: <em>V-8 Juice Tap Water Agar</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>External ontology</dt>
+    <dd>
+      <a href="https://togomedium.org/medium/M1511" rel="nofollow noreferrer">TOGO:M1511</a>
+      &mdash; V-8 Juice Tap Water Agar
+    </dd>
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Microbial cultivation</li>      </ul>
+    </dd>
+    <dt>High-metal flag</dt>
+    <dd>True</dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: https://togomedium.org/medium/M1511
+Original source: NBRC - NBRC_M296
+Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=296</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_008056["v_8_juice_tap_water_agar"]
+    ing0_Tap_water["Tap water"]
+    CultureMech_008056 --> ing0_Tap_water
+    CHEBI_15377["CHEBI:15377"]
+    ing0_Tap_water -.-> CHEBI_15377
+    ing1_Agar["Agar"]
+    CultureMech_008056 --> ing1_Agar
+    CHEBI_2509["CHEBI:2509"]
+    ing1_Agar -.-> CHEBI_2509
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(2)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Tap water</strong></td>
+  <td class="right">
+      800
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_15377" rel="nofollow noreferrer">CHEBI:15377</a>
+      <div class="muted small">Tap water</div>
+  </td>
+  <td class="prewrap small">Role: Solvating media; Properties: Undefined component</td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Agar</strong></td>
+  <td class="right">
+      15
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_2509" rel="nofollow noreferrer">CHEBI:2509</a>
+      <div class="muted small">agar</div>
+  </td>
+  <td class="prewrap small">Role: Solidifying component</td>
+</tr>
+</tbody>
+</table>
+</section><section id="solutions">
+<h2>Solutions</h2>
+<div class="solution">
+  <h3>Unknown solution</h3>
+<div class="prewrap small">Role: Mineral source, Protective agent; Properties: Defined component, Inorganic compound, Simple component</div></div>
+<div class="solution">
+  <h3>Unknown solution</h3>
+<div class="prewrap small">Role: Nutrient source; Properties: Undefined component</div></div>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-01-27T06:35:57.778251Z</td>
+  <td>togo-import</td>
+  <td>Imported from TOGO Medium</td>
+  <td class="small prewrap">Source: NBRC, ID: M1511</td>
+</tr>
+<tr>
+  <td class="muted small">2026-01-28T19:48:28.527710Z</td>
+  <td>chebi-enrichment</td>
+  <td>Added CHEBI ontology terms to ingredients</td>
+  <td class="small prewrap">Enriched using MicrobeMediaParam and MediaDive chemical mappings</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-09T08:04:47.228065+00:00</td>
+  <td>solution-migrator-v1.0</td>
+  <td>Migrated solutions from ingredients to solutions array</td>
+  <td class="small prewrap">Moved 2 solution(s) from ingredients</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:19:53.265723Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:008056</td>
+</tr>
+<tr>
+  <td class="muted small"></td>
+  <td>schema-defaulter-v1.0</td>
+  <td>Applied schema defaults and normalizations</td>
+  <td class="small prewrap">Added default solution name; Added default solution name</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T06:30:25.000000Z</td>
+  <td>mediaingredientmech-enrichment-v1.0</td>
+  <td>Added MediaIngredientMech links</td>
+  <td class="small prewrap">Linked ingredients to MediaIngredientMech identifiers</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:46:11.785391+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;V-8 Juice Tap Water Agar&#34; to &#34;v_8_juice_tap_water_agar&#34; for consistent matching</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:05:12+00:00 from
+    <code>data/normalized_yaml/bacterial/v_8_juice_tap_water_agar.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>thioglycolate_medium (CultureMech:001662) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:001662</span>
+</nav>
+
+<header>
+  <h1>thioglycolate_medium</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:001662</span>
+      <span class="badge">bacterial</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">SOLID_AGAR</span>
+  </div>
+    <div class="muted">Original name: <em>THIOGLYCOLATE MEDIUM</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>External ontology</dt>
+    <dd>
+      <a href="#" rel="nofollow noreferrer">mediadive.medium:530</a>
+      &mdash; THIOGLYCOLATE MEDIUM
+    </dd>
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Microbial cultivation</li>      </ul>
+    </dd>
+    <dt>pH</dt>
+    <dd>5.5</dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium530.pdf</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_001662["thioglycolate_medium"]
+    ing0_Casein_peptone["Casein peptone"]
+    CultureMech_001662 --> ing0_Casein_peptone
+    ing1_Meat_extract["Meat extract"]
+    CultureMech_001662 --> ing1_Meat_extract
+    ing2_Na_thioglycolate["Na-thioglycolate"]
+    CultureMech_001662 --> ing2_Na_thioglycolate
+    CHEBI_86481["CHEBI:86481"]
+    ing2_Na_thioglycolate -.-> CHEBI_86481
+    ing3_Agar["Agar"]
+    CultureMech_001662 --> ing3_Agar
+    CHEBI_2509["CHEBI:2509"]
+    ing3_Agar -.-> CHEBI_2509
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(4)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Casein peptone</strong></td>
+  <td class="right">
+      5
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Meat extract</strong></td>
+  <td class="right">
+      3
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Na-thioglycolate</strong></td>
+  <td class="right">
+      0.5
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_86481" rel="nofollow noreferrer">CHEBI:86481</a>
+      <div class="muted small">Na-thioglycolate</div>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+<tr>
+  <td class="right muted">4</td>
+  <td><strong>Agar</strong></td>
+  <td class="right">
+      15
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_2509" rel="nofollow noreferrer">CHEBI:2509</a>
+      <div class="muted small">Agar</div>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+</tbody>
+</table>
+</section><section id="preparation">
+<h2>Preparation</h2>
+<ol class="prep">
+  <li class="prewrap">Adjust pH to 5.5.</li>
+  <li class="prewrap">Sterilize Na-Thioglycolate separately by filtration.</li>
+  <li class="prewrap">Optimal pO2 for growth on solid media is 0.03 - 0.08 atm.</li>
+</ol>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-01-26T17:53:11.545208Z</td>
+  <td>mediadive-import</td>
+  <td>Imported from MediaDive</td>
+  <td class="small prewrap">Source: DSMZ, ID: 530</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:19:06.297933Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:001662</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T06:30:29.000000Z</td>
+  <td>mediaingredientmech-enrichment-v1.0</td>
+  <td>Added MediaIngredientMech links</td>
+  <td class="small prewrap">Linked ingredients to MediaIngredientMech identifiers</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:45:18.480492+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;THIOGLYCOLATE MEDIUM&#34; to &#34;thioglycolate_medium&#34; for consistent matching</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:05:10+00:00 from
+    <code>data/normalized_yaml/bacterial/thioglycolate_medium.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

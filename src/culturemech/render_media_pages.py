@@ -122,10 +122,19 @@ def render_one(env: Environment, source_path: Path, out_dir: Path,
         if out_path.stat().st_mtime >= source_path.stat().st_mtime:
             return "skipped", medium, slug
     template = env.get_template("media.html.j2")
+    # source_path is shown in the footer; render it relative to the repo
+    # root when reachable (matches index-link convention) and fall back to a
+    # plain absolute string for paths the renderer was invoked on from
+    # outside the repo (or via a relative path that doesn't anchor at REPO_ROOT).
+    abs_source = source_path.resolve()
+    try:
+        src_display = str(abs_source.relative_to(REPO_ROOT))
+    except ValueError:
+        src_display = str(abs_source)
     html = template.render(
         medium=medium,
         composition_graph=build_ingredient_composition_graph(medium),
-        source_path=str(source_path.relative_to(REPO_ROOT)),
+        source_path=src_display,
         generated_at=_dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds"),
     )
     out_path.write_text(html)
@@ -204,7 +213,12 @@ def main() -> int:
     args.out_dir.mkdir(parents=True, exist_ok=True)
 
     env = make_env()
-    files = sorted(args.yaml_dir.glob("*.yaml"))
+    # ``rglob`` so the renderer works against both layouts: flat
+    # (``data/merge_yaml/merged_2026/*.yaml``) and category-nested
+    # (``data/normalized_yaml/<category>/*.yaml``). The latter is the
+    # unified raw-pages mode introduced by retiring the legacy
+    # ``culturemech.render`` script.
+    files = sorted(args.yaml_dir.rglob("*.yaml"))
     if args.limit:
         files = files[: args.limit]
     print(f"Rendering up to {len(files)} medium pages → {args.out_dir}")

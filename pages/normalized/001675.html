@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>pennassay_g_thy_medium (CultureMech:001675) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:001675</span>
+</nav>
+
+<header>
+  <h1>pennassay_g_thy_medium</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:001675</span>
+      <span class="badge">bacterial</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">LIQUID</span>
+  </div>
+    <div class="muted">Original name: <em>PENNASSAY G-THY MEDIUM</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>External ontology</dt>
+    <dd>
+      <a href="#" rel="nofollow noreferrer">mediadive.medium:542</a>
+      &mdash; PENNASSAY G-THY MEDIUM
+    </dd>
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Microbial cultivation</li>      </ul>
+    </dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium542.pdf</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_001675["pennassay_g_thy_medium"]
+    ing0_Pennassay_Broth["Pennassay Broth"]
+    CultureMech_001675 --> ing0_Pennassay_Broth
+    ing1_Glucose["Glucose"]
+    CultureMech_001675 --> ing1_Glucose
+    CHEBI_17234["CHEBI:17234"]
+    ing1_Glucose -.-> CHEBI_17234
+    ing2_Thymine["Thymine"]
+    CultureMech_001675 --> ing2_Thymine
+    CHEBI_17821["CHEBI:17821"]
+    ing2_Thymine -.-> CHEBI_17821
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(3)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Pennassay Broth</strong></td>
+  <td class="right">
+      17.5
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Glucose</strong></td>
+  <td class="right">
+      20
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_17234" rel="nofollow noreferrer">CHEBI:17234</a>
+      <div class="muted small">Glucose</div>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Thymine</strong></td>
+  <td class="right">
+      0.05
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_17821" rel="nofollow noreferrer">CHEBI:17821</a>
+      <div class="muted small">Thymine</div>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-01-26T17:53:11.578074Z</td>
+  <td>mediadive-import</td>
+  <td>Imported from MediaDive</td>
+  <td class="small prewrap">Source: DSMZ, ID: 542</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:19:06.384938Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:001675</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T06:30:30.000000Z</td>
+  <td>mediaingredientmech-enrichment-v1.0</td>
+  <td>Added MediaIngredientMech links</td>
+  <td class="small prewrap">Linked ingredients to MediaIngredientMech identifiers</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:45:18.575216+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;PENNASSAY G-THY MEDIUM&#34; to &#34;pennassay_g_thy_medium&#34; for consistent matching</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:05:03+00:00 from
+    <code>data/normalized_yaml/bacterial/pennassay_g_thy_medium.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>

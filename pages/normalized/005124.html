@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>medium_381_modified_for_dsm_6188 (CultureMech:005124) — CultureMech</title>
+<link rel="stylesheet" href="../style.css">
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true, theme: "neutral" });
+</script>
+</head>
+<body>
+
+<nav class="breadcrumb">
+  <a href="../index.html">CultureMech</a> &rsaquo;
+  <a href="index.html">media</a> &rsaquo;
+  <span>CultureMech:005124</span>
+</nav>
+
+<header>
+  <h1>medium_381_modified_for_dsm_6188</h1>
+  <div class="meta">
+    <span class="curie">CultureMech:005124</span>
+      <span class="badge">bacterial</span>
+      <span class="badge">COMPLEX</span>
+      <span class="badge">SOLID_AGAR</span>
+  </div>
+    <div class="muted">Original name: <em>MEDIUM 381 MODIFIED FOR DSM 6188</em></div>
+</header>
+
+<section id="overview">
+<h2>Overview</h2>
+<dl class="kv">
+    <dt>External ontology</dt>
+    <dd>
+      <a href="#" rel="nofollow noreferrer">komodo.medium:381_6188</a>
+      &mdash; MEDIUM 381 MODIFIED FOR DSM 6188
+    </dd>
+    <dt>Applications</dt>
+    <dd>
+      <ul class="inline">
+<li>Microbial cultivation</li>      </ul>
+    </dd>
+    <dt>pH</dt>
+    <dd>7.2</dd>
+    <dt>Notes</dt>
+    <dd class="prewrap">Source: KOMODO ModelSEED | ID: 381_6188 | DSMZ Medium: 381 (mediadive.medium:381) | Aerobic: No</dd>
+</dl>
+</section><section id="composition">
+<h2>Composition <small class="muted">(Mermaid)</small></h2>
+<pre class="mermaid">
+flowchart LR
+    CultureMech_005124["medium_381_modified_for_dsm_6188"]
+    ing0_Peptone["Peptone"]
+    CultureMech_005124 --> ing0_Peptone
+    ing1_Yeast_extract["Yeast extract"]
+    CultureMech_005124 --> ing1_Yeast_extract
+    ing2_Sea_Salt["Sea Salt"]
+    CultureMech_005124 --> ing2_Sea_Salt
+    ing3_Agar["Agar"]
+    CultureMech_005124 --> ing3_Agar
+    CHEBI_2509["CHEBI:2509"]
+    ing3_Agar -.-> CHEBI_2509
+</pre>
+</section>
+<section id="ingredients">
+<h2>Ingredients <small class="muted">(4)</small></h2>
+<table class="ingredients">
+<thead>
+<tr>
+  <th>#</th>
+  <th>Ingredient</th>
+  <th class="right">Concentration</th>
+  <th>Ontology</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="right muted">1</td>
+  <td><strong>Peptone</strong></td>
+  <td class="right">
+      10
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+<tr>
+  <td class="right muted">2</td>
+  <td><strong>Yeast extract</strong></td>
+  <td class="right">
+      5
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+<tr>
+  <td class="right muted">3</td>
+  <td><strong>Sea Salt</strong></td>
+  <td class="right">
+      25
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+  </td>
+  <td class="prewrap small"></td>
+</tr>
+<tr>
+  <td class="right muted">4</td>
+  <td><strong>Agar</strong></td>
+  <td class="right">
+      12
+      <span class="muted">G_PER_L</span>
+  </td>
+  <td>
+      <a href="https://www.ebi.ac.uk/ols4/ontologies/chebi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_2509" rel="nofollow noreferrer">CHEBI:2509</a>
+      <div class="muted small">Agar</div>
+  </td>
+  <td class="prewrap small"> (for solid medium)</td>
+</tr>
+</tbody>
+</table>
+</section><section id="provenance">
+<h2>Provenance</h2>
+<table class="curation">
+<thead>
+<tr><th>Timestamp</th><th>Curator</th><th>Action</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="muted small">2026-01-27T01:15:02.fZ</td>
+  <td>komodo-web-import</td>
+  <td>Imported from KOMODO web table</td>
+  <td class="small prewrap">Source: KOMODO, ID: 381_6188</td>
+</tr>
+<tr>
+  <td class="muted small">2026-02-03T11:19:05.434673</td>
+  <td>dsmz-resolver-v1.0</td>
+  <td>Enriched with DSMZ composition</td>
+  <td class="small prewrap">Copied ingredients from DSMZ Medium 381</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-13T06:19:30.269252Z</td>
+  <td>culturemech-id-assigner-v1.0</td>
+  <td>Assigned CultureMech ID</td>
+  <td class="small prewrap">Assigned stable identifier: CultureMech:005124</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T06:30:12.000000Z</td>
+  <td>mediaingredientmech-enrichment-v1.0</td>
+  <td>Added MediaIngredientMech links</td>
+  <td class="small prewrap">Linked ingredients to MediaIngredientMech identifiers</td>
+</tr>
+<tr>
+  <td class="muted small">2026-03-17T19:45:45.990297+00:00</td>
+  <td>normalize_media_names_to_snake_case.py</td>
+  <td>NAME_NORMALIZED</td>
+  <td class="small prewrap">Normalized name from &#34;MEDIUM 381 MODIFIED FOR DSM 6188&#34; to &#34;medium_381_modified_for_dsm_6188&#34; for consistent matching</td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+  <small class="muted">
+    Generated 2026-05-16T08:04:48+00:00 from
+    <code>data/normalized_yaml/bacterial/medium_381_modified_for_dsm_6188.yaml</code>
+  </small>
+</footer>
+
+</body>
+</html>
