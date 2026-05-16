@@ -1,73 +1,42 @@
-# Instance validation summary
+# Instance validation summary (post-cleanup)
 
 Source: `reports/instance_validation_failures.tsv` (regenerate with `just validate-strict`).
 
-## Headline numbers
+## Before → After
 
-| Metric | Count |
-|---|---:|
-| Files scanned | **15,827** |
-| Files with at least one ERROR | **8,669** (54.8%) |
-| Files clean | **7,158** (45.2%) |
-| Total ERROR rows | **59,401** |
+| Metric | Pre-cleanup | Post-cleanup | Δ |
+|---|---:|---:|---:|
+| Files scanned | 15,827 | 15,827 | – |
+| Files with at least one ERROR | **8,669** (54.8%) | **57** (0.36%) | **−99.3%** |
+| Files clean | 7,158 (45.2%) | 15,770 (99.6%) | +120% |
+| Total ERROR rows | **59,401** | **93** | **−99.8%** |
 
-The previous `just validate-all` target missed all of these because it ran each file through `linkml-validate` without enabling closed-schema checks and the loop swallowed non-zero exit codes. `just validate-strict` is the new harness; it walks the corpus in-process with `JsonschemaValidationPlugin(closed=True)` and propagates exit codes.
+The cleanup landed across Phases A–E.
 
-## Errors by category
+1. **Phase A — schema fixes (G06, G07):** `ChemicalEntityTerm.id` pattern broadened to admit `FOODON|UBERON|ENVO` (closed 1,872 pattern_mismatch errors); 273 dict-shape `data_quality_flags` migrated to schema's list shape.
+2. **Phase B — field-rename migrations (G02, G03, G04, G05, G17):**
+   - `curation_history[*].date` → `timestamp` (8,688 entries)
+   - `preparation_steps[*].instruction` → `action` + `description` (846 entries across 94 files; action guessed by keyword scan, description preserves text verbatim)
+   - `references[*].reference_id` → `reference` (497)
+   - `category` UPPER → lowercase (675)
+   - `concentration.unit`: `UG_PER_L`→`MICROG_PER_L` (437), `PERCENT`→`PERCENT_W_V` (12); enum extended with `ML_PER_L`, `MG_PER_ML`, `FOLD_DILUTION`
+3. **Phase C — new `SolutionRecipe` root class (G08):** The 4,784 standalone stock-solution records (term.id `mediadive.solution:*` or `MediaIngredientMech:*`) now validate against `SolutionRecipe` instead of being mis-classified as `MediaRecipe`. Schema extended for `mediadive.compound:` upstream grounding, `IngredientDescriptor.chebi_term`, `Term.confidence` + `Term.match_type`, `CurationEvent.changes` + `CurationEvent.source`.
+4. **Phase D — schema accommodations for remaining metadata:** New slots on `IngredientDescriptor` (`synonyms` as `IngredientSynonym`, `source`, `curation_metadata` as `IngredientCurationMetadata`, `data_quality_flags`), `SolutionDescriptor` (`name`, `notes`; `composition` recommended instead of required), `MediaRecipe`/`SolutionRecipe` (`sources` as `SourceReference[]`). New supporting classes: `IngredientSynonym`, `IngredientCurationMetadata`, `SourceReference`.
+5. **Phase D (continued) — pipeline gates (G01, G15):** `.github/workflows/validate-strict.yaml` runs `just validate-strict` on PRs touching schema or normalized YAMLs; `.pre-commit-config.yaml` runs it on changed YAMLs locally. Future regressions of the schema-rename type can't land silently.
 
-| Category | Count | What it means |
+## What's left (93 errors / 57 files)
+
+These are real data quality issues, not schema gaps. Carry forward to a curator pass:
+
+| Category | Count | What it is |
 |---|---:|---|
-| `missing_required` | 26,472 | A schema-required field is absent. |
-| `unexpected_field` | 19,403 | The record has a field not declared on its class (closed schema). |
-| `other` | 10,171 | Multi-key "Additional properties" errors that the single-key regex doesn't split. The bulk are "many fields unexpected at /" — wrong shape. |
-| `pattern_mismatch` | 1,872 | A field violates its `pattern:` regex (e.g. CHEBI prefix). |
-| `enum_mismatch` | 1,210 | A value isn't in the declared enum. |
-| `type_mismatch` | 273 | Wrong JSON type (object vs array etc.). |
+| `missing_required: concentration` on `/ingredients/N` | **47** | Real data gap — ingredients without a value/unit pair. |
+| `missing_required: explanation` on `/evidence/N` | 3 | EvidenceItem missing its explanation field. |
+| `unexpected_field: mediaingredientmech_id` on `/ingredients/N` | 10 | Per-ingredient MediaIngredientMech reference using a different key than the schema's `mediaingredientmech_term`. Decide: add the slot, or normalize the data. |
+| `enum_mismatch: G_PER_100ML / ML_PER_40ML / L / BUFFER / NEGATIVE_CONTROL` | 11 | Exotic concentration units; one-off curation outliers. Either add as enum values or hand-fix. |
+| `type_mismatch: synonym_text` double-wrap | 22 | A handful of `IngredientSynonym` entries are doubly-wrapped (`synonym_text: {synonym_text: 'X', synonym_type: 'EXACT'}`). Migration bug; flatten in a single pass. |
 
-## Top single-field migrations
-
-These are ~paired counts: a record has both an unexpected old-name field AND a missing new-name field. Each pair is one mechanical rename.
-
-| Old field (unexpected) | New field (missing) | Pair count | Schema-driven by |
-|---|---|---:|---|
-| `curation_history[*].date` | `curation_history[*].timestamp` | **8,688** | `CurationEvent.timestamp` (required) |
-| `preparation_steps[*].instruction` | `preparation_steps[*].action` + `description` | **846** each | `PreparationStep.action` + `description` (required) |
-| `references[*].reference_id` | `references[*].reference` | **497** | `PublicationReference.reference` (required) |
-
-These three cover **10,031 unexpected_field rows + 11,019 missing_required rows = 21,050 errors (35% of all errors)**.
-
-## Other high-volume drivers
-
-- **`physical_state`, `name`, `medium_type` missing on 4,784 records each** — these three are co-required at the `MediaRecipe` root (`src/culturemech/schema/culturemech.yaml:238-243`) and absent together, suggesting the affected records were imported as a non-`MediaRecipe` shape (likely solutions or stub records that should use a different target class).
-- **`solutions[*].composition` missing on 1,228 records** — `SolutionDescriptor.composition` is required but solution-block entries omit it. Paired with **4,171 records** that put `composition`, `preferred_term`, `preparation_notes`, `term` at the *root* (multi-key "other" rows) — solutions are being inlined at the wrong level.
-- **`solutions[*].name` / `notes` unexpected** — `SolutionDescriptor` has neither a `name` nor `notes` slot; ~4,000 rows across `/solutions/0..7`.
-- **Old curation event fields** — `changes` (4,821) and `sources` (377) appear on `curation_history[*]` but are not declared on `CurationEvent`.
-- **`synonyms` unexpected at root on 3,130 records** — schema declares `synonyms: RecipeSynonym` but bulk records carry a different shape (likely list-of-strings vs list-of-objects).
-
-## Enum-mismatch drivers (1,210 rows)
-
-- **Concentration units** — `UG_PER_L` (437), `FOLD_DILUTION` (67), `PERCENT` (12), `ML_PER_L` (11), `MG_PER_ML` (5), `L` (1), `BUFFER` (1) are emitted by curation pipelines but are not in `ConcentrationUnitEnum`.
-- **Category casing** — uppercase `SPECIALIZED` (349), `ALGAE` (241), `ARCHAEA` (63), `BACTERIAL` (17), `FUNGAL` (5) collide with the lowercase `CategoryEnum` permissible values. This is the single most mechanical fix in the corpus.
-
-## Pattern-mismatch drivers (1,872 rows)
-
-100% are CHEBI prefix violations on ingredient `term.id`:
-- `FOODON:*` (Food Ontology) used as ingredient identifier — the largest single source.
-- `UBERON:*` used for blood/tissue ingredients (e.g. `UBERON:0000955` brain).
-
-The schema demands `^CHEBI:\d+$`. Either the schema should accept polymorphic IDs (FOODON, UBERON, ENVO) or the ingredient curation needs to map these to CHEBI equivalents before write.
-
-## Type-mismatch drivers (273 rows)
-
-All 273 are `data_quality_flags` shape collisions: schema declares `range: string, multivalued: true` (a list of strings — `culturemech.yaml:410-413`), but 273 records carry a dict like `{incomplete_composition: false, has_ontology_mappings: true, ingredients_curated: true, curation_method: 'automated_expert_mapping'}`.
-
-This is a real schema gap — the dict shape carries useful information that the array of strings can't represent. Either the schema needs a structured `DataQualityFlags` class, or the curation output needs flattening.
-
-## What's *not* in the TSV
-
-- `EvidenceItem.reference` semantic checks (does the cited PMID actually support the claim?). Beyond schema validation.
-- Cross-record reference integrity: `variant_children[*].path` pointing to non-existent files. The full-corpus variant audit at `reports/media_variant_completion_audit.md` already covers this (0 broken paths reported).
-- Term-validator and reference-validator results — `just validate` runs these via `linkml-term-validator` and `linkml-reference-validator`, but the strict harness here only runs the schema layer. Adding term + reference passes is on the backlog.
+These belong on the backlog as small, file-by-file curator passes. None require schema or pipeline changes.
 
 ## How to reproduce
 
@@ -83,3 +52,7 @@ just validate-strict
 # -> reports/instance_validation_failures.tsv
 # Exit code 1 if any ERROR rows; 0 if clean.
 ```
+
+## What changed about the harness
+
+`scripts/validate_strict.py` gained `infer_target_class()` which inspects each record's `term.id` prefix to route MediaDive/MediaIngredientMech solution records to `SolutionRecipe` and everything else to `MediaRecipe`. Without this, the validator was 4,784 false-positives on standalone solutions.
