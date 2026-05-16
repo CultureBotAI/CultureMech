@@ -96,8 +96,22 @@ class RecipeRenderer:
         sanitized = sanitized.strip('_')
         return sanitized
 
-    def render_recipe(self, recipe_path: Path) -> Path:
-        """Generate HTML page for a single recipe."""
+    def render_recipe(self, recipe_path: Path, kb_dir: Optional[Path] = None) -> Path:
+        """Generate HTML page for a single recipe.
+
+        Output layout: ``<output_dir>/<category>/<yaml_stem>.html`` where
+        ``category`` is the immediate parent directory of ``recipe_path``
+        relative to ``kb_dir`` (e.g. ``algae``, ``bacterial``, ``solutions``).
+        Using the YAML *stem* — not the ``name`` field — guarantees a unique
+        filename per source YAML (cross-category collisions like
+        ``algae/a_medium.yaml`` vs ``bacterial/a_medium.yaml`` and within-
+        category collisions like 223 ``Solution_A`` YAMLs all in
+        ``bacterial/`` are both resolved).
+
+        ``kb_dir`` defaults to a one-up search if not provided so the CLI's
+        single-file mode keeps working without the caller supplying it.
+        """
+        recipe_path = Path(recipe_path)
         with open(recipe_path) as f:
             recipe_data = yaml.safe_load(f)
 
@@ -108,11 +122,18 @@ class RecipeRenderer:
             source_file=recipe_path.name,
         )
 
-        # Generate output filename (sanitize for filesystem)
-        # Use 'name' for media, 'preferred_term' for solutions
-        recipe_name = recipe_data.get('name') or recipe_data.get('preferred_term', 'Unknown')
-        output_filename = self._sanitize_filename(recipe_name) + ".html"
-        output_path = self.output_dir / output_filename
+        # Derive `<category>/<stem>.html` from the source path.
+        if kb_dir is not None:
+            kb_dir = Path(kb_dir).resolve()
+            rel = recipe_path.resolve().relative_to(kb_dir)
+            category = rel.parts[0] if len(rel.parts) > 1 else ""
+        else:
+            # Single-file mode: take immediate parent dir name.
+            category = recipe_path.parent.name
+        stem_safe = self._sanitize_filename(recipe_path.stem)
+        output_dir = (self.output_dir / category) if category else self.output_dir
+        output_dir.mkdir(parents=True, exist_ok=True)
+        output_path = output_dir / f"{stem_safe}.html"
 
         output_path.write_text(html)
         return output_path
@@ -124,9 +145,9 @@ class RecipeRenderer:
 
         for recipe_file in kb_dir.rglob("*.yaml"):
             try:
-                output_path = self.render_recipe(recipe_file)
+                output_path = self.render_recipe(recipe_file, kb_dir=kb_dir)
                 generated.append(output_path)
-                print(f"✓ Generated {output_path.name}")
+                print(f"✓ Generated {output_path.relative_to(self.output_dir)}")
             except Exception as e:
                 print(f"✗ Error rendering {recipe_file}: {e}")
 
