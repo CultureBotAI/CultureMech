@@ -34,6 +34,8 @@ prefixes:
   UBERON: http://purl.obolibrary.org/obo/UBERON_
   # Food products (peptone, yeast extract, wheat germ, etc.)
   FOODON: http://purl.obolibrary.org/obo/FOODON_
+  # Upstream MediaDive compound URI (kept alongside CHEBI grounding on solution composition entries)
+  mediadive.compound: https://mediadive.dsmz.de/compound/
   # References
   PMID: http://www.ncbi.nlm.nih.gov/pubmed/
   DOI: https://doi.org/
@@ -432,6 +434,109 @@ classes:
           - Records imported from CommunityMech include community IDs and evidence
           - Preserves bidirectional linking between repositories
 
+  SolutionRecipe:
+    class_uri: culturemech:SolutionRecipe
+    description: >-
+      A standalone stock-solution record (one per YAML file). Used for
+      pre-prepared solutions that are referenced as ingredients by
+      MediaRecipes — e.g. MediaDive's "Main sol." or "Trace metals SL10"
+      records. SolutionDescriptor is the inlined-in-recipe form; this is
+      the root form with its own id, curation history, and provenance.
+    attributes:
+      id:
+        description: Stable CultureMech identifier for this solution record.
+        range: string
+        required: false
+        pattern: "^CultureMech:\\d{6}$"
+
+      preferred_term:
+        description: Solution name (e.g., "Trace Metal Solution", "Vitamin Stock")
+        identifier: true
+        required: true
+        range: string
+
+      term:
+        description: Ontology term identifying this solution
+        range: Term
+        inlined: true
+
+      mediaingredientmech_term:
+        description: MediaIngredientMech identifier for this solution
+        range: MediaIngredientMechTerm
+        recommended: false
+        inlined: true
+
+      culturemech_term:
+        description: Reference to another CultureMech recipe (if this solution is also catalogued there)
+        range: CultureMechTerm
+        recommended: false
+        inlined: true
+
+      category:
+        description: Source / collection category (algae, bacterial, fungal, …)
+        range: CategoryEnum
+
+      composition:
+        description: Ingredients in the stock solution
+        range: IngredientDescriptor
+        multivalued: true
+        required: true
+        inlined_as_list: true
+
+      ingredients:
+        description: >-
+          Placeholder/stub ingredient entries from upstream imports (kept
+          alongside the authoritative `composition`). Intended to be
+          empty or carry a "See source for composition" marker.
+        range: IngredientDescriptor
+        multivalued: true
+        recommended: false
+        inlined_as_list: true
+
+      concentration:
+        description: Working concentration when added to a medium
+        range: ConcentrationValue
+        inlined: true
+
+      preparation_notes:
+        description: How to prepare the stock solution
+        range: string
+
+      storage_conditions:
+        description: Storage requirements
+        range: StorageConditions
+        inlined: true
+
+      shelf_life:
+        description: Stability duration (e.g., "6 months at 4°C")
+        range: string
+
+      references:
+        description: Source references for this solution
+        range: PublicationReference
+        multivalued: true
+        inlined_as_list: true
+
+      source_data:
+        description: Provenance tracking for imported solution records
+        range: SourceData
+        inlined: true
+
+      curation_history:
+        description: Audit trail of curation events
+        range: CurationEvent
+        multivalued: true
+        inlined_as_list: true
+
+      data_quality_flags:
+        description: Data quality indicators
+        range: string
+        multivalued: true
+
+      notes:
+        description: Additional free-text notes
+        range: string
+
   RecipeSynonym:
     description: An alternate name for a recipe from a specific source
     attributes:
@@ -526,6 +631,12 @@ classes:
       label:
         description: Ontology term label
         range: string
+      confidence:
+        description: Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.
+        range: float
+      match_type:
+        description: Provenance/method of the term mapping (e.g. "kg_fallback", "exact", "manual_curated").
+        range: string
 
 # ================================================================
 # DESCRIPTOR CLASSES
@@ -555,9 +666,15 @@ classes:
         range: string
 
       term:
-        description: CHEBI term for the chemical entity
+        description: Primary ontology grounding (CHEBI, FOODON, UBERON, ENVO, or upstream mediadive.compound).
         range: ChemicalEntityTerm
         recommended: true
+        inlined: true
+
+      chebi_term:
+        description: CHEBI grounding kept alongside `term` when `term` carries the upstream identifier (e.g. mediadive.compound on solution compositions).
+        range: ChemicalEntityTerm
+        recommended: false
         inlined: true
 
       mediaingredientmech_term:
@@ -1386,6 +1503,19 @@ classes:
         description: Additional context
         range: string
 
+      changes:
+        description: >-
+          Structured summary of what changed in this event (free-text or
+          semi-structured; used by automated curators e.g. `Set category
+          to 'bacterial' (was: MISSING)`).
+        range: string
+
+      source:
+        description: >-
+          Source attribution for this curation event (e.g. a source PDF,
+          a sibling CultureMech recipe, an external dataset).
+        range: string
+
   SourceData:
     description: Provenance information for imported records
     attributes:
@@ -1503,18 +1633,20 @@ classes:
     is_a: Term
     description: >-
       A term identifying a chemical or biological ingredient. Primarily CHEBI,
-      but FOODON / UBERON / ENVO are accepted for ingredients (food products,
+      with FOODON / UBERON / ENVO accepted for ingredients (food products,
       anatomical tissues, environmental samples) where no CHEBI equivalent
-      exists upstream (e.g. peptone -> FOODON:03316428, bovine brain ->
-      UBERON:0000955).
+      exists upstream. `mediadive.compound:*` is also accepted as the
+      upstream MediaDive grounding kept alongside CHEBI mappings on
+      solution-composition entries.
     slot_usage:
       id:
-        pattern: "^(CHEBI|FOODON|UBERON|ENVO):\\d+$"
+        pattern: "^(CHEBI|FOODON|UBERON|ENVO|mediadive\\.compound):\\w+$"
     id_prefixes:
       - CHEBI
       - FOODON
       - UBERON
       - ENVO
+      - mediadive.compound
 
   OrganismTerm:
     is_a: Term
