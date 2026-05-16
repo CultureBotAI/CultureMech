@@ -419,6 +419,14 @@ classes:
           - Used to mark recipes with known quality issues
           - Common values: incomplete_composition, pending_curation, low_confidence
 
+      sources:
+        description: >-
+          Upstream database attribution(s) for this record (e.g. MediaDive,
+          CultureBotHT). Multivalued for cross-listings.
+        range: SourceReference
+        multivalued: true
+        inlined_as_list: true
+
       incubation_atmosphere:
         description: Atmospheric conditions for incubation
         range: AtmosphereEnum
@@ -532,6 +540,12 @@ classes:
         description: Data quality indicators
         range: string
         multivalued: true
+
+      sources:
+        description: Upstream database attribution(s) for this solution record.
+        range: SourceReference
+        multivalued: true
+        inlined_as_list: true
 
       notes:
         description: Additional free-text notes
@@ -1021,6 +1035,24 @@ classes:
 # ================================================================
 # SUPPORTING CLASSES
 # ================================================================
+
+  SourceReference:
+    description: >-
+      Upstream database attribution for a record. Carried alongside
+      curation_history; multivalued because a record can have multiple
+      upstream sources (e.g. originally from MediaDive, also catalogued in
+      CultureBotHT).
+    attributes:
+      database:
+        description: Source database/repository name (e.g. CultureBotHT, MediaDive).
+        range: string
+        required: true
+      database_id:
+        description: Identifier or name in the source database.
+        range: string
+      url:
+        description: Direct URL to the source record.
+        range: string
 
   IngredientSynonym:
     description: An alternate name for an ingredient (e.g. brand name, abbreviation).

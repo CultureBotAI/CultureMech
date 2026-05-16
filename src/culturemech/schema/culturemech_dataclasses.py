@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-05-16T02:32:28
+# Generation date: 2026-05-16T02:35:17
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -207,6 +207,7 @@ class MediaRecipe(YAMLRoot):
     import_metadata: Optional[Union[dict, "ImportMetadata"]] = None
     curation_history: Optional[Union[Union[dict, "CurationEvent"], list[Union[dict, "CurationEvent"]]]] = empty_list()
     data_quality_flags: Optional[Union[str, list[str]]] = empty_list()
+    sources: Optional[Union[Union[dict, "SourceReference"], list[Union[dict, "SourceReference"]]]] = empty_list()
     incubation_atmosphere: Optional[Union[str, "AtmosphereEnum"]] = None
     source_data: Optional[Union[dict, "SourceData"]] = None
 
@@ -384,6 +385,10 @@ class MediaRecipe(YAMLRoot):
             self.data_quality_flags = [self.data_quality_flags] if self.data_quality_flags is not None else []
         self.data_quality_flags = [v if isinstance(v, str) else str(v) for v in self.data_quality_flags]
 
+        if not isinstance(self.sources, list):
+            self.sources = [self.sources] if self.sources is not None else []
+        self.sources = [v if isinstance(v, SourceReference) else SourceReference(**as_dict(v)) for v in self.sources]
+
         if self.incubation_atmosphere is not None and not isinstance(self.incubation_atmosphere, AtmosphereEnum):
             self.incubation_atmosphere = AtmosphereEnum(self.incubation_atmosphere)
 
@@ -423,6 +428,7 @@ class SolutionRecipe(YAMLRoot):
     source_data: Optional[Union[dict, "SourceData"]] = None
     curation_history: Optional[Union[Union[dict, "CurationEvent"], list[Union[dict, "CurationEvent"]]]] = empty_list()
     data_quality_flags: Optional[Union[str, list[str]]] = empty_list()
+    sources: Optional[Union[Union[dict, "SourceReference"], list[Union[dict, "SourceReference"]]]] = empty_list()
     notes: Optional[str] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -482,6 +488,10 @@ class SolutionRecipe(YAMLRoot):
         if not isinstance(self.data_quality_flags, list):
             self.data_quality_flags = [self.data_quality_flags] if self.data_quality_flags is not None else []
         self.data_quality_flags = [v if isinstance(v, str) else str(v) for v in self.data_quality_flags]
+
+        if not isinstance(self.sources, list):
+            self.sources = [self.sources] if self.sources is not None else []
+        self.sources = [v if isinstance(v, SourceReference) else SourceReference(**as_dict(v)) for v in self.sources]
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
@@ -990,6 +1000,38 @@ class CofactorDescriptor(Descriptor):
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class SourceReference(YAMLRoot):
+    """
+    Upstream database attribution for a record. Carried alongside curation_history; multivalued because a record can
+    have multiple upstream sources (e.g. originally from MediaDive, also catalogued in CultureBotHT).
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["SourceReference"]
+    class_class_curie: ClassVar[str] = "culturemech:SourceReference"
+    class_name: ClassVar[str] = "SourceReference"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.SourceReference
+
+    database: str = None
+    database_id: Optional[str] = None
+    url: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.database):
+            self.MissingRequiredField("database")
+        if not isinstance(self.database, str):
+            self.database = str(self.database)
+
+        if self.database_id is not None and not isinstance(self.database_id, str):
+            self.database_id = str(self.database_id)
+
+        if self.url is not None and not isinstance(self.url, str):
+            self.url = str(self.url)
 
         super().__post_init__(**kwargs)
 
@@ -3127,6 +3169,9 @@ slots.mediaRecipe__curation_history = Slot(uri=CULTUREMECH.curation_history, nam
 slots.mediaRecipe__data_quality_flags = Slot(uri=CULTUREMECH.data_quality_flags, name="mediaRecipe__data_quality_flags", curie=CULTUREMECH.curie('data_quality_flags'),
                    model_uri=CULTUREMECH.mediaRecipe__data_quality_flags, domain=None, range=Optional[Union[str, list[str]]])
 
+slots.mediaRecipe__sources = Slot(uri=CULTUREMECH.sources, name="mediaRecipe__sources", curie=CULTUREMECH.curie('sources'),
+                   model_uri=CULTUREMECH.mediaRecipe__sources, domain=None, range=Optional[Union[Union[dict, SourceReference], list[Union[dict, SourceReference]]]])
+
 slots.mediaRecipe__incubation_atmosphere = Slot(uri=CULTUREMECH.incubation_atmosphere, name="mediaRecipe__incubation_atmosphere", curie=CULTUREMECH.curie('incubation_atmosphere'),
                    model_uri=CULTUREMECH.mediaRecipe__incubation_atmosphere, domain=None, range=Optional[Union[str, "AtmosphereEnum"]])
 
@@ -3181,6 +3226,9 @@ slots.solutionRecipe__curation_history = Slot(uri=CULTUREMECH.curation_history, 
 
 slots.solutionRecipe__data_quality_flags = Slot(uri=CULTUREMECH.data_quality_flags, name="solutionRecipe__data_quality_flags", curie=CULTUREMECH.curie('data_quality_flags'),
                    model_uri=CULTUREMECH.solutionRecipe__data_quality_flags, domain=None, range=Optional[Union[str, list[str]]])
+
+slots.solutionRecipe__sources = Slot(uri=CULTUREMECH.sources, name="solutionRecipe__sources", curie=CULTUREMECH.curie('sources'),
+                   model_uri=CULTUREMECH.solutionRecipe__sources, domain=None, range=Optional[Union[Union[dict, SourceReference], list[Union[dict, SourceReference]]]])
 
 slots.solutionRecipe__notes = Slot(uri=CULTUREMECH.notes, name="solutionRecipe__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.solutionRecipe__notes, domain=None, range=Optional[str])
@@ -3410,6 +3458,15 @@ slots.cofactorDescriptor__bioavailability = Slot(uri=CULTUREMECH.bioavailability
 
 slots.cofactorDescriptor__notes = Slot(uri=CULTUREMECH.notes, name="cofactorDescriptor__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.cofactorDescriptor__notes, domain=None, range=Optional[str])
+
+slots.sourceReference__database = Slot(uri=CULTUREMECH.database, name="sourceReference__database", curie=CULTUREMECH.curie('database'),
+                   model_uri=CULTUREMECH.sourceReference__database, domain=None, range=str)
+
+slots.sourceReference__database_id = Slot(uri=CULTUREMECH.database_id, name="sourceReference__database_id", curie=CULTUREMECH.curie('database_id'),
+                   model_uri=CULTUREMECH.sourceReference__database_id, domain=None, range=Optional[str])
+
+slots.sourceReference__url = Slot(uri=CULTUREMECH.url, name="sourceReference__url", curie=CULTUREMECH.curie('url'),
+                   model_uri=CULTUREMECH.sourceReference__url, domain=None, range=Optional[str])
 
 slots.ingredientSynonym__synonym_text = Slot(uri=CULTUREMECH.synonym_text, name="ingredientSynonym__synonym_text", curie=CULTUREMECH.curie('synonym_text'),
                    model_uri=CULTUREMECH.ingredientSynonym__synonym_text, domain=None, range=str)
