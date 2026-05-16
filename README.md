@@ -377,6 +377,7 @@ The schema (`src/culturemech/schema/culturemech.yaml`) defines:
 - `MediaRecipe` - Root entity (one per YAML file)
 - `IngredientDescriptor` - Chemicals with CHEBI terms
 - `OrganismDescriptor` - Target organisms with NCBITaxon IDs
+- `SourceEnvironmentDescriptor` - Source environments with ENVO terms
 - `SolutionDescriptor` - Stock solutions
 - `PreparationStep` - Ordered protocol steps
 - `MediaVariant` - Related formulations
@@ -384,6 +385,7 @@ The schema (`src/culturemech/schema/culturemech.yaml`) defines:
 **Ontology Bindings**:
 - **CHEBI** - Chemical ingredients
 - **NCBITaxon** - Target organisms
+- **ENVO** - Source environments (e.g., peatland, marine, soil)
 - **UO** - Units of measurement
 - **Source databases** - DSMZ, TOGO, ATCC, UTEX, CCAP, SAG
 
