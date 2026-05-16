@@ -575,10 +575,15 @@
                 <h2>References</h2>
                 <ul>
                     {% for ref in recipe.references %}
+                    {% set ref_url = resolve_curie(ref.reference) %}
                     <li>
-                        <a href="{{ resolve_curie(ref.reference) }}" class="external-link" target="_blank">
+                        {% if ref_url %}
+                        <a href="{{ ref_url }}" class="external-link" target="_blank">
                             {{ ref.reference }}
                         </a>
+                        {% else %}
+                        <code>{{ ref.reference }}</code>
+                        {% endif %}
                         {% if ref.title %} - {{ ref.title }}{% endif %}
                         {% if ref.authors %} ({{ ref.authors }}){% endif %}
                     </li>

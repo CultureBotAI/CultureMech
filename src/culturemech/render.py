@@ -10,13 +10,27 @@ import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
-# CURIE to URL mappings
+# CURIE to URL mappings. When a prefix is not present here, ``resolve_curie``
+# returns an empty string so the template renders the reference as plain text
+# rather than emitting an unusable ``href="CURIE:..."`` link that browsers
+# treat as a custom protocol.
 CURIE_RESOLVERS = {
     "CHEBI": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:{id}",
     "NCBITaxon": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id={id}",
+    # NCBI BioProject / GenBank / SRA accessions — referenced from media notes.
+    "NCBI": "https://www.ncbi.nlm.nih.gov/bioproject/{id}",
     "DSMZ": "https://mediadive.dsmz.de/medium/{id}",
     "TOGO": "http://togodb.org/db/medium/{id}",
     "ATCC": "https://www.atcc.org/products/{id}",
+    # Algae culture collections.
+    "CCAP": "https://www.ccap.ac.uk/catalogue/strain-{id}",
+    "UTEX": "https://utex.org/products/utex-{id}",
+    "SAG": "https://sagdb.uni-goettingen.de/detailedList.php?str_number={id}",
+    # Ontology terms occasionally cited as references.
+    "ENVO": "http://purl.obolibrary.org/obo/ENVO_{id}",
+    "FOODON": "http://purl.obolibrary.org/obo/FOODON_{id}",
+    "UBERON": "http://purl.obolibrary.org/obo/UBERON_{id}",
+    "MEDIADB": "https://mediadb.systemsbiology.net/medium/{id}",
     "NCIT": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code={id}",
     "PMID": "https://pubmed.ncbi.nlm.nih.gov/{id}/",
     "DOI": "https://doi.org/{id}",
@@ -48,18 +62,23 @@ class RecipeRenderer:
         self.env.globals['resolve_curie'] = self.resolve_curie
 
     def resolve_curie(self, curie: str) -> str:
-        """Convert CURIE to URL."""
-        if not curie or ':' not in curie:
-            return curie
+        """Convert CURIE to URL, or return empty string for unknown prefixes.
 
+        Returning ``""`` lets the template detect the unresolved case and
+        render the reference as plain text instead of emitting an unusable
+        ``href="CURIE:..."`` link (browsers treat those as custom protocols).
+        """
+        if not curie or ':' not in curie:
+            return ""
+        if curie.startswith(("http://", "https://")):
+            # Already a URL — emit as-is.
+            return curie
         prefix, id_part = curie.split(":", 1)
         template = CURIE_RESOLVERS.get(prefix)
-
         if template:
             return template.format(id=id_part)
-
-        # Fallback: return as-is
-        return curie
+        # Unknown prefix → no resolvable URL; template renders as plain text.
+        return ""
 
     def _sanitize_filename(self, name: str) -> str:
         """
