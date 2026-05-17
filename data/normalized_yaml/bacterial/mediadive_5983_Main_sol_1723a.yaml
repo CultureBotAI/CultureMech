@@ -45,6 +45,9 @@ composition:
   term:
     id: mediadive.compound:2346
     label: Wheat Grains
+  concentration:
+    value: variable
+    unit: VARIABLE
 preparation_notes: "Make up to <span class='amount' data-volume='1000'>1000</span>\
   \ ml with MilliQ water.\nAutoclave at 121 °C for 20 min.\nAfter cooling, add the\
   \ following filter sterilized (0.2 µm) components to complete the\r\nmedium:\nThe\
@@ -75,6 +78,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-17T07:07:10.812921+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R03_fill_missing_concentration=1
 ingredients:
 - preferred_term: See source for composition
   concentration:

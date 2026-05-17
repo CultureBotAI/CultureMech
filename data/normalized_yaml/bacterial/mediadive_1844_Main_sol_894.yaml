@@ -85,6 +85,9 @@ composition:
     label: cobalt dichloride
     confidence: 0.9
     match_type: synonym_match_ambiguous
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Ferric ammonium citrate
   term:
     id: mediadive.compound:97
@@ -94,6 +97,9 @@ composition:
     label: ferric ammonium citrate
     confidence: 1.0
     match_type: exact_match
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -142,6 +148,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-17T07:06:53.293709+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R03_fill_missing_concentration=2
 ingredients:
 - preferred_term: See source for composition
   concentration:

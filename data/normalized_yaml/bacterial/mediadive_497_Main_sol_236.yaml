@@ -49,6 +49,9 @@ composition:
     label: zinc sulfate heptahydrate
     confidence: 0.7
     match_type: kg_fallback
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Glycerol
   concentration:
     value: '2'
@@ -133,6 +136,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-17T07:07:06.583361+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R03_fill_missing_concentration=1
 ingredients:
 - preferred_term: See source for composition
   concentration:

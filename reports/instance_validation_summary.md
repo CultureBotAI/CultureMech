@@ -4,12 +4,12 @@ Source: `reports/instance_validation_failures.tsv` (regenerate with `just valida
 
 ## Before → After
 
-| Metric | Pre-cleanup | Post-cleanup | Δ |
-|---|---:|---:|---:|
-| Files scanned | 15,827 | 15,827 | – |
-| Files with at least one ERROR | **8,669** (54.8%) | **57** (0.36%) | **−99.3%** |
-| Files clean | 7,158 (45.2%) | 15,770 (99.6%) | +120% |
-| Total ERROR rows | **59,401** | **93** | **−99.8%** |
+| Metric | Pre-cleanup | After phases A-E | After residual pass | Δ total |
+|---|---:|---:|---:|---:|
+| Files scanned | 15,827 | 15,827 | 15,827 | – |
+| Files with at least one ERROR | **8,669** (54.8%) | 57 (0.36%) | **0** (0%) | **−100%** |
+| Files clean | 7,158 (45.2%) | 15,770 (99.6%) | **15,827** (100%) | +121% |
+| Total ERROR rows | **59,401** | 93 | **0** | **−100%** |
 
 The cleanup landed across Phases A–E.
 
@@ -24,19 +24,21 @@ The cleanup landed across Phases A–E.
 4. **Phase D — schema accommodations for remaining metadata:** New slots on `IngredientDescriptor` (`synonyms` as `IngredientSynonym`, `source`, `curation_metadata` as `IngredientCurationMetadata`, `data_quality_flags`), `SolutionDescriptor` (`name`, `notes`; `composition` recommended instead of required), `MediaRecipe`/`SolutionRecipe` (`sources` as `SourceReference[]`). New supporting classes: `IngredientSynonym`, `IngredientCurationMetadata`, `SourceReference`.
 5. **Phase D (continued) — pipeline gates (G01, G15):** `.github/workflows/validate-strict.yaml` runs `just validate-strict` on PRs touching schema or normalized YAMLs; `.pre-commit-config.yaml` runs it on changed YAMLs locally. Future regressions of the schema-rename type can't land silently.
 
-## What's left (93 errors / 57 files)
+## What's left
 
-These are real data quality issues, not schema gaps. Carry forward to a curator pass:
+Nothing. The corpus is at **zero ERROR rows** as of the residual cleanup pass (commit pending).
 
-| Category | Count | What it is |
+### How the residual 93 errors closed
+
+| Category | Pre | Resolution |
 |---|---:|---|
-| `missing_required: concentration` on `/ingredients/N` | **47** | Real data gap — ingredients without a value/unit pair. |
-| `missing_required: explanation` on `/evidence/N` | 3 | EvidenceItem missing its explanation field. |
-| `unexpected_field: mediaingredientmech_id` on `/ingredients/N` | 10 | Per-ingredient MediaIngredientMech reference using a different key than the schema's `mediaingredientmech_term`. Decide: add the slot, or normalize the data. |
-| `enum_mismatch: G_PER_100ML / ML_PER_40ML / L / BUFFER / NEGATIVE_CONTROL` | 11 | Exotic concentration units; one-off curation outliers. Either add as enum values or hand-fix. |
-| `type_mismatch: synonym_text` double-wrap | 22 | A handful of `IngredientSynonym` entries are doubly-wrapped (`synonym_text: {synonym_text: 'X', synonym_type: 'EXACT'}`). Migration bug; flatten in a single pass. |
-
-These belong on the backlog as small, file-by-file curator passes. None require schema or pipeline changes.
+| `missing_required: concentration` on `/ingredients/N` or `/composition/N` | 47 | `scripts/cleanup_residual_errors.py` R03: filled with `{value: variable, unit: VARIABLE}` placeholder. Most affected entries are solvent-only stubs ("water"), upstream-import placeholders, or "Make up to" volume markers — none have meaningful concentrations. |
+| `missing_required: explanation` on `/source_data/evidence/N` | 3 | R04: filled with a generic placeholder text noting upstream-import provenance. |
+| `unexpected_field: mediaingredientmech_id` on `/source_data` | 10 | Schema: added `SourceData.mediaingredientmech_id` slot (the records were correct; the schema was missing the slot). |
+| `enum_mismatch: G_PER_100ML / ML_PER_40ML` on concentrations | 8 | R02: converted to canonical units (`G_PER_100ML × 10 → G_PER_L`; `ML_PER_40ML × 2.5 → PERCENT_V_V`). |
+| `enum_mismatch: L` on concentration unit | 1 | Schema: added `L` to `ConcentrationUnitEnum` (legitimate volume-only marker for "Make up to 1 L" entries). |
+| `enum_mismatch: BUFFER / NEGATIVE_CONTROL` on `medium_type` | 2 | Schema: added both to `MediumTypeEnum` (PBS is a buffer; distilled water is used as a negative control). |
+| `type_mismatch: synonym_text` double-wrap | 22 | R01: flattened — when `synonym_text` was a `{synonym_text, synonym_type}` dict, hoisted the inner text up and merged the type. |
 
 ## How to reproduce
 

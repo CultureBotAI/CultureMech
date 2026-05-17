@@ -1649,6 +1649,13 @@ classes:
         description: Import notes and additional context
         range: string
 
+      mediaingredientmech_id:
+        description: >-
+          MediaIngredientMech identifier for this imported solution record
+          (carried when origin is `MediaIngredientMech`). Format
+          `UNMAPPED_NNNN` or `MediaIngredientMech:NNNNNN`.
+        range: string
+
   CofactorRequirement:
     description: Cofactor requirement for an organism
     attributes:
@@ -1909,6 +1916,10 @@ enums:
         description: Medium that enriches for specific organisms
       MINIMAL:
         description: Medium with minimal nutrients required for growth
+      BUFFER:
+        description: Buffer solution (e.g. PBS) — not a growth medium per se but stored alongside media for context.
+      NEGATIVE_CONTROL:
+        description: Negative-control "medium" used as an experimental baseline (e.g. distilled water).
 
   PhysicalStateEnum:
     description: Physical form of the medium
@@ -1949,6 +1960,8 @@ enums:
         description: milligrams per milliliter
       FOLD_DILUTION:
         description: dilution factor expressed as 1:N (e.g. "10-fold dilution")
+      L:
+        description: liters — used for volume-only entries like "Make up to 1 L" final-volume markers.
       VARIABLE:
         description: variable or unspecified concentration
 

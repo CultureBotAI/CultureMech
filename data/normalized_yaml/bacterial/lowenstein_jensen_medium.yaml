@@ -125,6 +125,9 @@ ingredients:
     confidence_score: 1.0
     curation_date: '2026-04-04T21:06:21.196658'
     ontology_source: FOODON
+  concentration:
+    value: variable
+    unit: VARIABLE
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -159,6 +162,10 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-17T07:06:48.301612+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R03_fill_missing_concentration=1
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated

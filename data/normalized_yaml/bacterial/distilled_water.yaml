@@ -22,6 +22,9 @@ ingredients:
     ontology_source: CHEBI
   notes: Autoclaved distilled water (trivial medium)
   source: JCM Medium 664
+  concentration:
+    value: variable
+    unit: VARIABLE
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -55,6 +58,10 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(5 keys) -> list(4 entries)
+- timestamp: '2026-05-17T07:06:38.523326+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R03_fill_missing_concentration=1
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated

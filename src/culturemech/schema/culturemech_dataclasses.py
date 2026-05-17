@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-05-16T02:35:17
+# Generation date: 2026-05-17T00:03:27
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -1823,6 +1823,7 @@ class SourceData(YAMLRoot):
     import_date: Optional[str] = None
     evidence: Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]] = empty_list()
     notes: Optional[str] = None
+    mediaingredientmech_id: Optional[str] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.origin):
@@ -1843,6 +1844,9 @@ class SourceData(YAMLRoot):
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
+
+        if self.mediaingredientmech_id is not None and not isinstance(self.mediaingredientmech_id, str):
+            self.mediaingredientmech_id = str(self.mediaingredientmech_id)
 
         super().__post_init__(**kwargs)
 
@@ -2232,6 +2236,12 @@ class MediumTypeEnum(EnumDefinitionImpl):
     MINIMAL = PermissibleValue(
         text="MINIMAL",
         description="Medium with minimal nutrients required for growth")
+    BUFFER = PermissibleValue(
+        text="BUFFER",
+        description="""Buffer solution (e.g. PBS) — not a growth medium per se but stored alongside media for context.""")
+    NEGATIVE_CONTROL = PermissibleValue(
+        text="NEGATIVE_CONTROL",
+        description="Negative-control \"medium\" used as an experimental baseline (e.g. distilled water).")
 
     _defn = EnumDefinition(
         name="MediumTypeEnum",
@@ -2299,6 +2309,9 @@ class ConcentrationUnitEnum(EnumDefinitionImpl):
     FOLD_DILUTION = PermissibleValue(
         text="FOLD_DILUTION",
         description="dilution factor expressed as 1:N (e.g. \"10-fold dilution\")")
+    L = PermissibleValue(
+        text="L",
+        description="liters — used for volume-only entries like \"Make up to 1 L\" final-volume markers.")
     VARIABLE = PermissibleValue(
         text="VARIABLE",
         description="variable or unspecified concentration")
@@ -3770,6 +3783,9 @@ slots.sourceData__evidence = Slot(uri=CULTUREMECH.evidence, name="sourceData__ev
 
 slots.sourceData__notes = Slot(uri=CULTUREMECH.notes, name="sourceData__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.sourceData__notes, domain=None, range=Optional[str])
+
+slots.sourceData__mediaingredientmech_id = Slot(uri=CULTUREMECH.mediaingredientmech_id, name="sourceData__mediaingredientmech_id", curie=CULTUREMECH.curie('mediaingredientmech_id'),
+                   model_uri=CULTUREMECH.sourceData__mediaingredientmech_id, domain=None, range=Optional[str])
 
 slots.cofactorRequirement__cofactor = Slot(uri=CULTUREMECH.cofactor, name="cofactorRequirement__cofactor", curie=CULTUREMECH.curie('cofactor'),
                    model_uri=CULTUREMECH.cofactorRequirement__cofactor, domain=None, range=Union[dict, CofactorDescriptor])
