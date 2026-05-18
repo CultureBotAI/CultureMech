@@ -577,9 +577,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.834879'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: MOPS buffer'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-06T05:10:46.923831Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -598,4 +598,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CDM-LAB medium" to "cdm_lab_medium" for consistent
     matching
+- timestamp: '2026-05-16T09:03:26.934913+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true

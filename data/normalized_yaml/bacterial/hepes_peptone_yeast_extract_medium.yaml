@@ -149,9 +149,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010201'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:03.097882'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:42.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -161,6 +161,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HEPES Peptone-Yeast Extract Medium" to "hepes_peptone_yeast_extract_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:37.103737+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Trace elements (see Medium [M631])
   composition: []

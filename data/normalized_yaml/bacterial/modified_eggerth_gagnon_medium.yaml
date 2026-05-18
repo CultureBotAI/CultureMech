@@ -54,9 +54,7 @@ ingredients:
   notes: Pancreatic digest of gelatin, provides nitrogen and amino acids; Constituent
     of MacConkey Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: pancreatic gelatin digest
-      synonym_type: EXACT
+  - synonym_text: pancreatic gelatin digest
     synonym_type: EXACT
 - preferred_term: Proteose peptone
   term:
@@ -87,9 +85,7 @@ ingredients:
   notes: Fermentable carbohydrate for differentiation. Fermentation produces acid
     causing pH drop and color change; Constituent of MacConkey Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: lactose
-      synonym_type: EXACT
+  - synonym_text: lactose
     synonym_type: EXACT
 - preferred_term: Bile salts
   term:
@@ -198,3 +194,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED EGGERTH-GAGNON MEDIUM" to "modified_eggerth_gagnon_medium"
     for consistent matching
+- timestamp: '2026-05-17T07:07:31.197980+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R01_flatten_synonym_text=2

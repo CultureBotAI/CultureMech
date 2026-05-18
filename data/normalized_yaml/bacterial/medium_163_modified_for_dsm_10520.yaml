@@ -147,9 +147,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004188'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:32.592092'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sodium'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:15.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -159,3 +159,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM 163 MODIFIED FOR DSM 10520" to "medium_163_modified_for_dsm_10520"
     for consistent matching
+- timestamp: '2026-05-16T09:04:11.553515+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

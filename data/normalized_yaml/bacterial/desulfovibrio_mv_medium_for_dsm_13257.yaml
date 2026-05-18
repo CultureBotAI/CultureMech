@@ -407,10 +407,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.113484'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: N2 gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:42.431192+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -424,10 +424,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009288'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:58.114076'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:19.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -437,6 +437,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Desulfovibrio (MV) Medium (For DSM 13257)" to "desulfovibrio_mv_medium_for_dsm_13257"
     for consistent matching
+- timestamp: '2026-05-16T09:03:30.303488+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 high_metal: true
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)

@@ -360,12 +360,12 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.912956'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: 2 N NaOH; Added default concentration for ingredient: N2; Added
     default concentration for ingredient: 2 M H2SO4; Added default concentration for
     ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-06T05:10:40.611245Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -384,10 +384,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009176'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:56.864171'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:30.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -397,6 +397,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Carboxydothermus Medium" to "carboxydothermus_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:14.617708+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 high_metal: true
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)

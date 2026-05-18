@@ -30,7 +30,7 @@ ingredients:
     unit: G_PER_L
 description: Casamino acid-Peptone-Glucose (CPG) medium
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: CPG
@@ -44,5 +44,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015504'
+- timestamp: '2026-05-16T09:04:40.376191+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

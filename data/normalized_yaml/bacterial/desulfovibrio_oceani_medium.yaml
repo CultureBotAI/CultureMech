@@ -267,10 +267,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003107'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:28.147048'
   action: Applied schema defaults and normalizations
-  notes: Added default solution name; Added default solution name; Added default
-    solution name
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:42.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -278,8 +278,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:31.647838+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOVIBRIO OCEANI MEDIUM" to
-    "desulfovibrio_oceani_medium" for consistent matching
+  notes: Normalized name from "DESULFOVIBRIO OCEANI MEDIUM" to "desulfovibrio_oceani_medium"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:30.322049+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Vitamin solution (see Medium No. 403)
   composition: []
@@ -300,12 +304,10 @@ solutions:
     unit: G_PER_L
   name: Unknown solution
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/desulfovibrio_arsenicitolerans_medium.yaml
+- path: data/normalized_yaml/bacterial/desulfovibrio_arsenicitolerans_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:003175
   name: desulfovibrio_arsenicitolerans_medium
-  notes: Reviewed Desulfovibrio oceani/arsenicitolerans pair; child keeps the
-    defined sulfate-reducer base, trace elements, NaOH, selenium, and tungsten
-    unchanged but lowers NaCl, MgCl2, NaHCO3, and sulfide while increasing
-    lactate.
+  notes: Reviewed Desulfovibrio oceani/arsenicitolerans pair; child keeps the defined
+    sulfate-reducer base, trace elements, NaOH, selenium, and tungsten unchanged but
+    lowers NaCl, MgCl2, NaHCO3, and sulfide while increasing lactate.

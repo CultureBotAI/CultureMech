@@ -178,7 +178,7 @@ ingredients:
 - preferred_term: Folic Acid
   concentration:
     value: '20.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:27470
     label: folic acid
@@ -187,7 +187,7 @@ ingredients:
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '100.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
@@ -196,7 +196,7 @@ ingredients:
 - preferred_term: Riboflavin
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17015
     label: riboflavin
@@ -205,7 +205,7 @@ ingredients:
 - preferred_term: biotin
   concentration:
     value: '20.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:15956
     label: biotin
@@ -214,7 +214,7 @@ ingredients:
 - preferred_term: Thiamine HCl
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
@@ -223,7 +223,7 @@ ingredients:
 - preferred_term: Nicotinic Acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:15940
     label: nicotinic acid
@@ -232,7 +232,7 @@ ingredients:
 - preferred_term: calcium pantothenate
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
@@ -241,7 +241,7 @@ ingredients:
 - preferred_term: Cyanocobalamin
   concentration:
     value: '1.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:17439
     label: cyanocob(III)alamin
@@ -250,7 +250,7 @@ ingredients:
 - preferred_term: 4-Aminobenzoic acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   notes: 'CAS: 150-13-0; MW: 137.14; From ATCC Wolfe''s vitamin mix; Ontology enriched
     via CAS-RN lookup'
   term:
@@ -259,7 +259,7 @@ ingredients:
 - preferred_term: Lipoic acid
   concentration:
     value: '50.0'
-    unit: UG_PER_L
+    unit: MICROG_PER_L
   term:
     id: CHEBI:16494
     label: lipoic acid
@@ -326,7 +326,7 @@ ingredients:
     label: ''
 description: Defined minimal media for 4CarbonMix Nitrate reducing for pH 5.3
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: UGA defined 4CarbonMix Nitrate anaerobic pH 5.3
@@ -340,5 +340,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015754'
+- timestamp: '2026-05-16T09:04:43.622305+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1; concentration.unit aliases=10
 data_quality_flags:
 - has_unmapped_ingredients

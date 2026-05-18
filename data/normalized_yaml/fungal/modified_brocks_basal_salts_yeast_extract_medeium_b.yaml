@@ -185,6 +185,9 @@ curation_history:
   source: CultureMech:010534
   notes: Resolved reference by copying from modified_brocks_basal_salts_yeast_extract_medium
     (CultureMech:010534)
+- timestamp: '2026-05-16T08:58:22.099569+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference

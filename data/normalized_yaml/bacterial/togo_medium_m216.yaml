@@ -106,9 +106,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008764'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:54.337146'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:39.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -118,6 +118,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M216" to "togo_medium_m216" for consistent
     matching
+- timestamp: '2026-05-16T09:04:37.150986+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: 1% Resazurin solution
   composition: []

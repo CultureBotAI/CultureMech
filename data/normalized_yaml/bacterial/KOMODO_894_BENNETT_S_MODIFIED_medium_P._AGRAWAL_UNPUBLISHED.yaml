@@ -97,10 +97,10 @@ curation_history:
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 894
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:42.530189'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CoCl2; Added default concentration
     for ingredient: Ferric ammonium citrate'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:19:43.568748Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -112,18 +112,20 @@ curation_history:
 - timestamp: '2026-03-17T19:46:01.353044+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BENNETT'S MODIFIED medium (P. AGRAWAL,
-    UNPUBLISHED)" to "bennetts_modified_medium_p_agrawal_unpublished" for
-    consistent matching
+  notes: Normalized name from "BENNETT'S MODIFIED medium (P. AGRAWAL, UNPUBLISHED)"
+    to "bennetts_modified_medium_p_agrawal_unpublished" for consistent matching
+- timestamp: '2026-05-16T09:03:05.277389+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/bennetts_modified_medium_p_agrawal_unpublished.yaml
+  path: data/normalized_yaml/bacterial/bennetts_modified_medium_p_agrawal_unpublished.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002057
   name: bennetts_modified_medium_p_agrawal_unpublished
-  notes: KOMODO record states DSMZ Medium 894 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 894 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

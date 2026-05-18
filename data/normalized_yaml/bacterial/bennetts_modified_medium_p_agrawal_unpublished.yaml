@@ -96,10 +96,10 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 894'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:25.018562'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CoCl2; Added default concentration
     for ingredient: Ferric ammonium citrate'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:19:09.860331Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -111,14 +111,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.465511+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BENNETT'S MODIFIED MEDIUM (P. AGRAWAL,
-    UNPUBLISHED)" to "bennetts_modified_medium_p_agrawal_unpublished" for
-    consistent matching
+  notes: Normalized name from "BENNETT'S MODIFIED MEDIUM (P. AGRAWAL, UNPUBLISHED)"
+    to "bennetts_modified_medium_p_agrawal_unpublished" for consistent matching
+- timestamp: '2026-05-16T09:03:25.617649+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_894_BENNETT_S_MODIFIED_medium_P._AGRAWAL_UNPUBLISHED.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_894_BENNETT_S_MODIFIED_medium_P._AGRAWAL_UNPUBLISHED.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006747
   name: bennetts_modified_medium_p_agrawal_unpublished
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

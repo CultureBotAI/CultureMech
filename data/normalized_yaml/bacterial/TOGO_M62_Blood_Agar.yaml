@@ -33,10 +33,10 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M62'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.788071'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sterile defibrinated rabbit
     blood'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:10.821056Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -45,3 +45,7 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Blood Agar" to "blood_agar" for consistent matching
+- timestamp: '2026-05-16T09:03:19.617872+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

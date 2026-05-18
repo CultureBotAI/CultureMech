@@ -292,9 +292,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:50.633493'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:50.518511+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -308,9 +308,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008480'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:52.192097'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:30.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -320,6 +320,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium for Strain JA333 and JA492" to "medium_for_strain_ja333_and_ja492"
     for consistent matching
+- timestamp: '2026-05-16T09:04:20.394953+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 high_metal: true
 solutions:
 - preferred_term: Ferric citrate solution* (0.1%)

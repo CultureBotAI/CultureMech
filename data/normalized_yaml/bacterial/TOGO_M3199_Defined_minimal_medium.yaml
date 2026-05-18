@@ -184,7 +184,6 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.866465'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KH2PO4; Added default concentration
     for ingredient: NH4Cl; Added default concentration for ingredient: NaNO3; Added
@@ -195,6 +194,7 @@ curation_history:
     default concentration for ingredient: MnCl2; Added default concentration for ingredient:
     ZnSO4; Added default concentration for ingredient: (NH4)6Mo7O24; Added default
     concentration for ingredient: EDTA'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-06T05:10:12.440401Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -213,9 +213,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009640'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.969282'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:40.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -225,6 +225,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Defined minimal medium" to "defined_minimal_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:16.993359+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Vishniac and Santer trace elements solution
   composition: []

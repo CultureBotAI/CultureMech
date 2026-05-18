@@ -1,7 +1,7 @@
 id: CultureMech:000262
 name: methanohalophilus_portucalensis_medium
 original_name: METHANOHALOPHILUS PORTUCALENSIS MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.3-7.4
@@ -296,3 +296,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOHALOPHILUS PORTUCALENSIS MEDIUM" to "methanohalophilus_portucalensis_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.595576+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

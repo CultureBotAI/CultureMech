@@ -1,7 +1,7 @@
 id: CultureMech:000264
 name: medium_for_bacillus_stearothermophilus
 original_name: MEDIUM FOR BACILLUS STEAROTHERMOPHILUS
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -192,3 +192,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM FOR BACILLUS STEAROTHERMOPHILUS" to "medium_for_bacillus_stearothermophilus"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.362992+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

@@ -36,14 +36,18 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010285'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:03.580523'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:46:31.646236+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "R2A Agar With Artificial Seawater" to "r2a_agar_with_artificial_seawater"
     for consistent matching
+- timestamp: '2026-05-16T09:03:21.569648+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Artificial seawater (see Medium [M761])
   composition: []

@@ -40,7 +40,11 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007484'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.876085'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Bacto Tryptone (Difco)3gYeast
     extract5gGlucose5gDistilled water1LAgar20gpH 7.0'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.676783+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

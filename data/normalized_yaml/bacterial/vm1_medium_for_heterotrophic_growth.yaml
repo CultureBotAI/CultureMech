@@ -256,9 +256,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006742'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:42.662004'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:45.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -268,3 +268,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "VM1 MEDIUM for heterotrophic growth" to "vm1_medium_for_heterotrophic_growth"
     for consistent matching
+- timestamp: '2026-05-16T09:04:38.634116+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

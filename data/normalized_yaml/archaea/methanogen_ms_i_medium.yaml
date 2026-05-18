@@ -1,7 +1,7 @@
 id: CultureMech:000293
 name: methanogen_ms_i_medium
 original_name: METHANOGEN MS-I MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -363,3 +363,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOGEN MS-I MEDIUM" to "methanogen_ms_i_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.410204+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

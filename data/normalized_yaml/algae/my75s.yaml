@@ -1,6 +1,6 @@
 id: CultureMech:000095
 name: my75s
-category: ALGAE
+category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
@@ -16,13 +16,13 @@ applications:
 - Microalgae research
 curation_history:
 - curator: ccap-import
-  date: '2026-01-28'
   action: Imported from CCAP Culture Collection
   notes: 'Source ID: MY75S, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:23:39.649605'
   action: Applied schema defaults and normalizations
   notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-03T11:26:43.551229'
   curator: quality-tagger-v1.0
   action: Added data quality flag
@@ -40,9 +40,18 @@ curation_history:
   action: EXPANDED_INGREDIENTS
   changes: Replaced placeholder with 4 curated ingredients from CCAP
   source: CCAP Medium MR_MY75S.pdf
+- timestamp: '2026-05-16T08:57:02.569233+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.774102+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1; concentration.unit aliases=1
 references:
-- reference_id: CCAP:MY75S
-- reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf
+- reference: CCAP:MY75S
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf
 ingredients:
 - preferred_term: Malt extract
   term:
@@ -91,12 +100,11 @@ ingredients:
     from CCAP Medium MR_MY75S.pdf specification
   concentration:
     value: '75'
-    unit: PERCENT
+    unit: PERCENT_W_V
   source: CCAP Medium MR_MY75S.pdf
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  curation_method: automated_expert_mapping
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
 original_name: MY75S
 kg_microbe_match: mediadive.medium:12

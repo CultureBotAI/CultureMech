@@ -1,7 +1,7 @@
 id: CultureMech:000255
 name: alkalophilic_halophile_medium
 original_name: ALKALOPHILIC HALOPHILE MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ph_value: 9.0
@@ -137,4 +137,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ALKALOPHILIC HALOPHILE MEDIUM" to "alkalophilic_halophile_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.215762+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 high_metal: true

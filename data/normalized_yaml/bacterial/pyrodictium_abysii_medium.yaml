@@ -280,8 +280,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 203 with 0.5 g/L (final) yeast extract and 0.1
-    mg/L Na2WO4 x 2H2O, and omit citric acid.
+  description: Use Medium No. 203 with 0.5 g/L (final) yeast extract and 0.1 mg/L
+    Na2WO4 x 2H2O, and omit citric acid.
 applications:
 - Microbial cultivation
 curation_history:
@@ -300,28 +300,30 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.422561+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYRODICTIUM ABYSII MEDIUM" to
-    "pyrodictium_abysii_medium" for consistent matching
+  notes: Normalized name from "PYRODICTIUM ABYSII MEDIUM" to "pyrodictium_abysii_medium"
+    for consistent matching
 - timestamp: '2026-04-04T18:49:19.219927'
   curator: copy_referenced_compositions
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (25 ingredients)
   source: CultureMech:002565
-  notes: Resolved reference by copying from pyrodictium_brockii_medium
-    (CultureMech:002565)
+  notes: Resolved reference by copying from pyrodictium_brockii_medium (CultureMech:002565)
+- timestamp: '2026-05-16T08:58:13.635291+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
 variant_children:
 - path: data/normalized_yaml/bacterial/pyrodictium_brockii_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002565
   name: pyrodictium_brockii_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/pyrodictium_ocultum_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002566
   name: pyrodictium_ocultum_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

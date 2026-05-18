@@ -64,6 +64,7 @@ source_data:
       promoting nodulation than inoculation with BXYD3 alone and achieved effects
       comparable to those of a complex elite SynCom previously constructed on the
       basis of potential beneficial functions between microbes and plants alone
+    explanation: 'Auto-filled placeholder: explanation not supplied by upstream import.'
 curation_history:
 - timestamp: '2026-03-15T00:15:00.480042Z'
   curator: communitymech-importer-v1.0
@@ -74,3 +75,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nitrogen-free plant nutrient solution for soybean growth"
     to "nitrogen_free_plant_nutrient_solution_for_soybean_growth" for consistent matching
+- timestamp: '2026-05-17T07:07:47.535377+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R04_fill_missing_explanation=1

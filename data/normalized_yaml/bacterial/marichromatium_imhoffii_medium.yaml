@@ -195,8 +195,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Rhodobium gokurnum medium (see Medium No. 516) with 0.5 to
-    1.0 mM Na2S.
+  description: Use Rhodobium gokurnum medium (see Medium No. 516) with 0.5 to 1.0
+    mM Na2S.
 applications:
 - Microbial cultivation
 curation_history:
@@ -215,25 +215,26 @@ curation_history:
 - timestamp: '2026-03-17T19:45:29.724709+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARICHROMATIUM IMHOFFII MEDIUM" to
-    "marichromatium_imhoffii_medium" for consistent matching
+  notes: Normalized name from "MARICHROMATIUM IMHOFFII MEDIUM" to "marichromatium_imhoffii_medium"
+    for consistent matching
 - timestamp: '2026-04-04T21:48:41.537667'
   curator: resolve_option_c_references
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (17 ingredients)
   source: CultureMech:002867
-  notes: Resolved reference by copying from rhodobium_gokurnum_medium
-    (CultureMech:002867)
+  notes: Resolved reference by copying from rhodobium_gokurnum_medium (CultureMech:002867)
 - timestamp: '2026-04-04T22:07:25.089144'
   curator: resolve_option_c_references
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (17 ingredients)
   source: CultureMech:002867
-  notes: Resolved reference by copying from rhodobium_gokurnum_medium
-    (CultureMech:002867)
+  notes: Resolved reference by copying from rhodobium_gokurnum_medium (CultureMech:002867)
+- timestamp: '2026-05-16T08:57:38.016161+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
 parent_media:
   path: data/normalized_yaml/bacterial/rhodobium_gokurnum_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -241,5 +242,5 @@ parent_media:
   name: rhodobium_gokurnum_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

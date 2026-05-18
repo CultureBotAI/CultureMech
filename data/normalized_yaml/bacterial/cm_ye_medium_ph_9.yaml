@@ -131,6 +131,9 @@ curation_history:
   changes: Copied composition from referenced medium (8 ingredients)
   source: CultureMech:002947
   notes: Resolved reference by copying from cm_ye_medium (CultureMech:002947)
+- timestamp: '2026-05-16T08:57:26.643666+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference

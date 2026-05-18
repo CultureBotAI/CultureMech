@@ -78,7 +78,7 @@ ingredients:
     label: ''
 description: Growth media for diverse fungi with 5 g/L D-Glucose
 notes: 'Source: FEBA media definitions'
-category: FUNGAL
+category: fungal
 sources:
 - database: CultureBotHT
   database_id: Fungal growth media mCAFEs v2
@@ -92,6 +92,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015477'
+- timestamp: '2026-05-16T09:04:39.639528+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients
 parent_media:
@@ -99,9 +103,9 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:015475
   name: Fungal growth media mCAFEs v1
-  notes: CultureBotHT fungal mCAFEs glucose-dose family; reviewed as
-    concentration variants of v1.
+  notes: CultureBotHT fungal mCAFEs glucose-dose family; reviewed as concentration
+    variants of v1.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- D-Glucose concentration changed from 20 g/L to 5 g/L; all other parsed
-  ingredient concentrations match the parent.
+- D-Glucose concentration changed from 20 g/L to 5 g/L; all other parsed ingredient
+  concentrations match the parent.

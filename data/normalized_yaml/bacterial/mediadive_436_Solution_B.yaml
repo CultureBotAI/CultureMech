@@ -25,6 +25,9 @@ composition:
     label: zinc sulfate heptahydrate
     confidence: 0.7
     match_type: kg_fallback
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: mediadive.compound:35
@@ -34,6 +37,9 @@ composition:
     label: magnesium sulfate
     confidence: 0.7
     match_type: kg_fallback
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Agar
   concentration:
     value: '60'
@@ -65,9 +71,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:013365'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:18.928360'
   action: Applied schema defaults and normalizations
   notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-14T21:09:35.887601'
   curator: quality-tagger-v1.0
   action: Added data quality flag
@@ -78,6 +84,14 @@ curation_history:
   changes: 'Set category to ''bacterial'' (was: MISSING)'
   notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
     to bacterial'
+- timestamp: '2026-05-16T09:03:58.660864+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-17T07:07:03.844743+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R03_fill_missing_concentration=2
 ingredients:
 - preferred_term: See source for composition
   concentration:

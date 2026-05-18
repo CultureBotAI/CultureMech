@@ -62,7 +62,7 @@ ingredients:
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 113-24-6; MW: 110.04'
 description: Reasoner's 2A media with high K2HPO4
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: R2A_high_K2HPO4
@@ -76,6 +76,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015691'
+- timestamp: '2026-05-16T09:04:42.778409+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients
 parent_media:
@@ -83,9 +87,9 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:015696
   name: R2A_low_K2HPO4
-  notes: Reviewed FEBA R2A phosphate pair; high-K2HPO4 record differs only in
-    potassium phosphate dibasic concentration.
+  notes: Reviewed FEBA R2A phosphate pair; high-K2HPO4 record differs only in potassium
+    phosphate dibasic concentration.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Potassium phosphate dibasic increased from 50 micromolar to 1.75 mM while the
-  R2A formulation remains unchanged.
+- Potassium phosphate dibasic increased from 50 micromolar to 1.75 mM while the R2A
+  formulation remains unchanged.

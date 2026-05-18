@@ -1,12 +1,11 @@
 id: CultureMech:000052
 name: asw_ses
-category: ALGAE
+category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
-description: Algae culture medium from CCAP Culture Collection. Suitable for
-  saltwater algae cultivation. Recipe available in PDF format.
-notes: Full recipe available at
-  https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_SES.pdf
+description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_SES.pdf
 salinity: marine (natural seawater or artificial seawater)
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -17,13 +16,13 @@ applications:
 - Microalgae research
 curation_history:
 - curator: ccap-import
-  date: '2026-01-28'
   action: Imported from CCAP Culture Collection
   notes: 'Source ID: ASW_SES, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_SES.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:23:39.579247'
   action: Applied schema defaults and normalizations
   notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-03T11:26:43.468994'
   curator: quality-tagger-v1.0
   action: Added data quality flag
@@ -41,9 +40,18 @@ curation_history:
   action: EXPANDED_INGREDIENTS
   changes: Replaced placeholder with 12 curated ingredients from CCAP
   source: CCAP Medium MR_ASW_SES.pdf
+- timestamp: '2026-05-16T08:57:02.127840+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:56.268800+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
 references:
-- reference_id: CCAP:ASW_SES
-- reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_SES.pdf
+- reference: CCAP:ASW_SES
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_SES.pdf
 ingredients:
 - preferred_term: NaNO
   term:
@@ -58,8 +66,8 @@ ingredients:
     value: '30.00'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 - preferred_term: Na HPO
   term:
     id: CHEBI:34683
@@ -73,8 +81,8 @@ ingredients:
     value: '1.20'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 - preferred_term: K HPO
   term:
     id: CHEBI:32030
@@ -88,8 +96,8 @@ ingredients:
     value: '1.0'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -103,8 +111,8 @@ ingredients:
     value: '0.0002'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:3374
@@ -118,8 +126,8 @@ ingredients:
     value: '0.02'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 - preferred_term: Cyanocobalamin
   term:
     id: CHEBI:17439
@@ -133,8 +141,8 @@ ingredients:
     value: '0.004'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 - preferred_term: Folic Acid
   term:
     id: CHEBI:27470
@@ -148,8 +156,8 @@ ingredients:
     value: '0.0004'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 - preferred_term: Inositol
   term:
     id: CHEBI:17268
@@ -163,8 +171,8 @@ ingredients:
     value: '1.0'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 - preferred_term: Nicotinic Acid
   term:
     id: CHEBI:15940
@@ -178,8 +186,8 @@ ingredients:
     value: '0.02'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -193,8 +201,8 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 - preferred_term: Thymine
   term:
     id: CHEBI:17821
@@ -208,8 +216,8 @@ ingredients:
     value: '0.6'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 - preferred_term: Tricine
   term:
     id: CHEBI:35920
@@ -223,18 +231,17 @@ ingredients:
     value: '0.50'
     unit: G_PER_L
   source: CCAP Medium MR_ASW_SES.pdf
-  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium
-    MR_ASW_SES.pdf specification
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  curation_method: automated_expert_mapping
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
 original_name: ASW:SES
 variant_children:
 - path: data/normalized_yaml/algae/nss_low.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:000107
   name: nss_low
-  notes: Reviewed ASW:SES/NSS Low pair; child keeps vitamins, inositol, thymine,
-    and tricine unchanged but halves NaNO, Na HPO, and K HPO concentrations.
+  notes: Reviewed ASW:SES/NSS Low pair; child keeps vitamins, inositol, thymine, and
+    tricine unchanged but halves NaNO, Na HPO, and K HPO concentrations.

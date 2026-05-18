@@ -64,6 +64,7 @@ source_data:
       microbiota assembly, where established communities are resilient to invasion
       by latecomers, and that host preference of commensal bacteria confers a competitive
       advantage in their cognate host
+    explanation: 'Auto-filled placeholder: explanation not supplied by upstream import.'
 curation_history:
 - timestamp: '2026-03-15T00:15:00.465121Z'
   curator: communitymech-importer-v1.0
@@ -74,3 +75,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nitrogen-free B&D medium for Lotus japonicus growth"
     to "nitrogen_free_b_d_medium_for_lotus_japonicus_growth" for consistent matching
+- timestamp: '2026-05-17T07:07:49.388030+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R04_fill_missing_explanation=1

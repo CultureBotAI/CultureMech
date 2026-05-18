@@ -19,10 +19,10 @@ ingredients:
     id: CHEBI:85248
     label: gellan gum
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-25-8'
-description: Mueller Hinton II Broth for cultivation and antimicrobial
-  susceptibility testing
+description: Mueller Hinton II Broth for cultivation and antimicrobial susceptibility
+  testing
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MHII
@@ -36,6 +36,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015593'
+- timestamp: '2026-05-16T09:04:41.659801+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients
 kg_microbe_match: mediadive.medium:218
@@ -44,5 +48,5 @@ variant_children:
   relationship: SOURCE_DUPLICATE
   id: CultureMech:015598
   name: MHII Chelated
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

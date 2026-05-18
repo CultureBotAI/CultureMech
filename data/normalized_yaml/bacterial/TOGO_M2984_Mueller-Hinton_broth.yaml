@@ -35,13 +35,9 @@ ingredients:
     and thymine content critical for sulfonamide/trimethoprim testing; Constituent
     of Mueller-Hinton Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: casein hydrolysate
-      synonym_type: EXACT
+  - synonym_text: casein hydrolysate
     synonym_type: EXACT
-  - synonym_text:
-      synonym_text: acid casein hydrolysate
-      synonym_type: EXACT
+  - synonym_text: acid casein hydrolysate
     synonym_type: EXACT
 - preferred_term: Starch
   term:
@@ -106,3 +102,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Mueller-Hinton broth" to "mueller_hinton_broth" for
     consistent matching
+- timestamp: '2026-05-17T07:06:23.921211+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R01_flatten_synonym_text=2

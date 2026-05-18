@@ -404,9 +404,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004128'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:32.241854'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:27.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -416,3 +416,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "For DSM 15219, DSM 16458 and DSM 18860" to "for_dsm_15219_dsm_16458_and_dsm_18860"
     for consistent matching
+- timestamp: '2026-05-16T09:03:33.047446+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

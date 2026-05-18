@@ -421,9 +421,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003824'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:30.746174'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:49.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -433,3 +433,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MMJS MEDIUM (modified)" to "mmjs_medium_modified" for
     consistent matching
+- timestamp: '2026-05-16T09:03:00.196635+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

@@ -171,10 +171,10 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C93'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:17.242921'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil; Added default concentration
     for ingredient: Soil'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T03:09:14.815060Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -191,3 +191,7 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SES:MP" to "ses_mp" for consistent matching
+- timestamp: '2026-05-16T09:04:31.660712+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

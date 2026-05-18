@@ -193,7 +193,6 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.938288'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CaCl2; Added default concentration
     for ingredient: Micronutrients; Added default concentration for ingredient: H3BO3;
@@ -201,6 +200,7 @@ curation_history:
     for ingredient: CoCl2; Added default concentration for ingredient: MnCl2; Added
     default concentration for ingredient: ZnSO4; Added default concentration for ingredient:
     (NH4)6(MO7)24'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-06T05:10:37.943745Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -219,3 +219,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MOPS (morpholinethanesulfonic acid) minimal medium"
     to "mops_morpholinethanesulfonic_acid_minimal_medium" for consistent matching
+- timestamp: '2026-05-16T09:04:26.625130+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

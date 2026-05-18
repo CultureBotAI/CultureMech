@@ -46,9 +46,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.902039'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: O2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:00.679832Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -63,3 +63,7 @@ curation_history:
   notes: Normalized name from "Artificial seawater base with thiosulfate as the electron
     donor" to "artificial_seawater_base_with_thiosulfate_as_the_electron_donor" for
     consistent matching
+- timestamp: '2026-05-16T09:03:24.914736+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

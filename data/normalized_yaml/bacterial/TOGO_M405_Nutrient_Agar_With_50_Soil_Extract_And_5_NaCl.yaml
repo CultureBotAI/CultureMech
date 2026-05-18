@@ -79,9 +79,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009789'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.736780'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:01.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -91,6 +91,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient Agar With 50% Soil Extract And 5% NaCl" to
     "nutrient_agar_with_50_soil_extract_and_5_nacl" for consistent matching
+- timestamp: '2026-05-16T09:03:17.773607+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Soil extract (see Medium [M94])
   composition: []

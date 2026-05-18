@@ -1,7 +1,7 @@
 id: CultureMech:000283
 name: desulfocella_halophila_medium
 original_name: DESULFOCELLA HALOPHILA MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -273,3 +273,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFOCELLA HALOPHILA MEDIUM" to "desulfocella_halophila_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.233188+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

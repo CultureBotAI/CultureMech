@@ -50,9 +50,9 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C101'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:16.841771'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:18:54.343516Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -65,4 +65,8 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "S/W + Ca" to "s_w_ca" for consistent matching
+- timestamp: '2026-05-16T09:04:31.109287+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 kg_microbe_match: mediadive.medium:C101
