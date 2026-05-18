@@ -27,10 +27,8 @@ from __future__ import annotations
 
 import argparse
 import datetime
-import glob
 import sys
 from pathlib import Path
-from typing import Any
 
 import yaml
 

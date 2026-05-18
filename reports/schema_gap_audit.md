@@ -2,7 +2,7 @@
 
 Probes: `scripts/audit_schema.py` (re-runnable). Cross-referenced against the full-corpus validation TSV at `reports/instance_validation_failures.tsv`.
 
-Schema dimensions: 40 classes, 25 enums, 0 top-level slots (everything is class-attached attributes), 2,135 lines.
+Schema dimensions at the time of the original audit: 40 classes, 25 enums, 0 top-level slots (everything is class-attached attributes), 2,135 lines. After the schema changes in PR #15, the schema is ~2,400 lines with 44 classes (added: `SolutionRecipe`, `ChebiTerm`, `IngredientSynonym`, `IngredientCurationMetadata`, `SourceReference`). The findings below describe the **pre-PR** schema; items marked ✓ are addressed by this PR. Re-run `scripts/audit_schema.py` after merge for a refreshed snapshot.
 
 ## 1. Closed-schema validation isn't wired into the validator
 

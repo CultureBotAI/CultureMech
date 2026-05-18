@@ -686,8 +686,8 @@ classes:
         inlined: true
 
       chebi_term:
-        description: CHEBI grounding kept alongside `term` when `term` carries the upstream identifier (e.g. mediadive.compound on solution compositions).
-        range: ChemicalEntityTerm
+        description: CHEBI-only grounding kept alongside `term` when `term` carries the upstream identifier (e.g. mediadive.compound on solution compositions).
+        range: ChebiTerm
         recommended: false
         inlined: true
 
@@ -1748,6 +1748,19 @@ classes:
       - UBERON
       - ENVO
       - mediadive.compound
+
+  ChebiTerm:
+    is_a: Term
+    description: >-
+      A strictly-CHEBI term reference. Use for the `chebi_term` slot where
+      the contract is "this is the CHEBI grounding specifically" — distinct
+      from the polymorphic `ChemicalEntityTerm` used by `term` slots that
+      may carry upstream non-CHEBI IDs.
+    slot_usage:
+      id:
+        pattern: "^CHEBI:\\d+$"
+    id_prefixes:
+      - CHEBI
 
   OrganismTerm:
     is_a: Term

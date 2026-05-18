@@ -26,12 +26,19 @@ This is the root cause of the 8,669 invalid records in the corpus today. The mig
 
 ## CI / pre-commit gate state
 
-- `.pre-commit-config.yaml` — **does not exist**. No commit-time validation.
+**Pre-PR (the state this audit ran against):**
+
+- `.pre-commit-config.yaml` did not exist — no commit-time validation.
 - `.github/workflows/`:
-  - `generate-pages.yaml` — renders per-medium HTML to GitHub Pages. Runs only on push to specific paths. **No validation step.**
+  - `generate-pages.yaml` — rendered per-medium HTML to GitHub Pages. Runs only on push to specific paths. No validation step.
   - `weekly-compliance.yaml` — Sunday 04:13 UTC cron, builds a QC dashboard via `kg_microbe_qc`. Does not block merges. Runs after-the-fact.
 
-Validation never runs as a gate.
+Validation never ran as a gate.
+
+**Post-PR (state added by this PR):**
+
+- `.pre-commit-config.yaml` runs `scripts/validate_strict.py` against staged YAMLs under `data/normalized_yaml/`. Local commit-time gate; output goes to a `mktemp` TSV so the tracked `reports/instance_validation_failures.tsv` artifact isn't overwritten.
+- `.github/workflows/validate-strict.yaml` runs `just validate-strict` on PRs touching schema or YAMLs; uploads the failure TSV as an artifact if validation fails. CI-time gate that closes the original root-cause gap.
 
 ## 31 writers that do not append to `curation_history`
 

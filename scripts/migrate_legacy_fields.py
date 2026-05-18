@@ -62,19 +62,20 @@ def to_iso_timestamp(value: Any) -> str | None:
         # Already-ISO with timezone -> leave as-is.
         if text.endswith("Z") or "+" in text[10:] or "-" in text[10:]:
             return text
-        # date-only string YYYY-MM-DD -> midnight UTC
-        try:
-            d = datetime.date.fromisoformat(text[:10])
-            return datetime.datetime.combine(d, datetime.time(0, 0, 0),
-                                              tzinfo=datetime.timezone.utc).isoformat()
-        except ValueError:
-            pass
-        # ISO-without-tz -> assume UTC
+        # Try full ISO datetime *first* so time components aren't truncated
+        # by the date-only fallback (e.g. "2026-03-14T21:07:04.735164").
         try:
             dt = datetime.datetime.fromisoformat(text)
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=datetime.timezone.utc)
             return dt.isoformat()
+        except ValueError:
+            pass
+        # date-only string YYYY-MM-DD -> midnight UTC
+        try:
+            d = datetime.date.fromisoformat(text[:10])
+            return datetime.datetime.combine(d, datetime.time(0, 0, 0),
+                                              tzinfo=datetime.timezone.utc).isoformat()
         except ValueError:
             pass
         return None

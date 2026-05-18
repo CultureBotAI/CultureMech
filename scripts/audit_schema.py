@@ -101,7 +101,6 @@ def main() -> int:
         has_id = any((a or {}).get("identifier") for a in attrs.values())
         if not has_id and attrs:
             line = cls_lines.get(cname, "?")
-            kind = "concrete"
             print(f"- `{cname}` (line {line}) — {len(attrs)} attrs, no identifier slot")
 
     # 2. Suspect `range: string` slots (likely should be enum or typed term).

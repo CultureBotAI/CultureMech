@@ -195,6 +195,19 @@ def main() -> int:
           file=sys.stderr)
 
     all_rows: list[dict] = []
+    with ProcessPoolExecutor(max_workers=args.workers) as pool:
+        futures = {pool.submit(validate_one, p): p for p in files}
+        done = 0
+        for fut in as_completed(futures):
+            done += 1
+            rows = fut.result()
+            all_rows.extend(rows)
+            if not args.quiet and done % 250 == 0:
+                print(f"  {done}/{len(files)} files processed, {len(all_rows)} ERROR rows so far",
+                      file=sys.stderr)
+
+    # Sort for deterministic TSV output (avoids noisy diffs from worker scheduling).
+    all_rows.sort(key=lambda r: (r["file"], r["path"], r["category"], r["message"]))
     with args.out.open("w", newline="") as fh:
         writer = csv.DictWriter(
             fh,
@@ -204,18 +217,7 @@ def main() -> int:
             lineterminator="\n",
         )
         writer.writeheader()
-        with ProcessPoolExecutor(max_workers=args.workers) as pool:
-            futures = {pool.submit(validate_one, p): p for p in files}
-            done = 0
-            for fut in as_completed(futures):
-                done += 1
-                rows = fut.result()
-                for row in rows:
-                    writer.writerow(row)
-                    all_rows.append(row)
-                if not args.quiet and done % 250 == 0:
-                    print(f"  {done}/{len(files)} files processed, {len(all_rows)} ERROR rows so far",
-                          file=sys.stderr)
+        writer.writerows(all_rows)
 
     by_cat: dict[str, int] = {}
     files_with_errors: set[str] = set()

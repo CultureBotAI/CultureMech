@@ -2,6 +2,8 @@
 
 Source: `reports/instance_validation_failures.tsv` (regenerate with `just validate-strict`).
 
+> **Reading on the `audit-code` branch (PR #15):** the numbers below describe the **post-merge state** once both `audit-code` (this PR) *and* `audit-data` (PR #16, the bulk YAML migrations) land on `main`. On the `audit-code` branch in isolation the migrations have not been applied, so `just validate-strict` will still report the pre-cleanup error counts and `instance_validation_failures.tsv` is intentionally checked in as the *expected post-merge* artifact, not the current-branch artifact. Re-running validate-strict against this branch alone will regenerate the TSV with the unmigrated counts; that's expected.
+
 ## Before → After
 
 | Metric | Pre-cleanup | After phases A-E | After residual pass | Δ total |

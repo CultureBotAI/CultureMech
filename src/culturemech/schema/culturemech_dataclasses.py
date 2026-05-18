@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-05-17T00:03:27
+# Generation date: 2026-05-18T11:57:53
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -118,6 +118,10 @@ class TermId(extended_str):
 
 
 class ChemicalEntityTermId(TermId):
+    pass
+
+
+class ChebiTermId(TermId):
     pass
 
 
@@ -667,7 +671,7 @@ class IngredientDescriptor(Descriptor):
     preferred_term: str = None
     concentration: Union[dict, "ConcentrationValue"] = None
     term: Optional[Union[dict, "ChemicalEntityTerm"]] = None
-    chebi_term: Optional[Union[dict, "ChemicalEntityTerm"]] = None
+    chebi_term: Optional[Union[dict, "ChebiTerm"]] = None
     mediaingredientmech_term: Optional[Union[dict, "MediaIngredientMechTerm"]] = None
     culturemech_term: Optional[Union[dict, "CultureMechTerm"]] = None
     parent_ingredient: Optional[Union[dict, "IngredientReference"]] = None
@@ -699,8 +703,8 @@ class IngredientDescriptor(Descriptor):
         if self.term is not None and not isinstance(self.term, ChemicalEntityTerm):
             self.term = ChemicalEntityTerm(**as_dict(self.term))
 
-        if self.chebi_term is not None and not isinstance(self.chebi_term, ChemicalEntityTerm):
-            self.chebi_term = ChemicalEntityTerm(**as_dict(self.chebi_term))
+        if self.chebi_term is not None and not isinstance(self.chebi_term, ChebiTerm):
+            self.chebi_term = ChebiTerm(**as_dict(self.chebi_term))
 
         if self.mediaingredientmech_term is not None and not isinstance(self.mediaingredientmech_term, MediaIngredientMechTerm):
             self.mediaingredientmech_term = MediaIngredientMechTerm(**as_dict(self.mediaingredientmech_term))
@@ -1970,6 +1974,31 @@ class ChemicalEntityTerm(Term):
             self.MissingRequiredField("id")
         if not isinstance(self.id, ChemicalEntityTermId):
             self.id = ChemicalEntityTermId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class ChebiTerm(Term):
+    """
+    A strictly-CHEBI term reference. Use for the `chebi_term` slot where the contract is "this is the CHEBI grounding
+    specifically" — distinct from the polymorphic `ChemicalEntityTerm` used by `term` slots that may carry upstream
+    non-CHEBI IDs.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["ChebiTerm"]
+    class_class_curie: ClassVar[str] = "culturemech:ChebiTerm"
+    class_name: ClassVar[str] = "ChebiTerm"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.ChebiTerm
+
+    id: Union[str, ChebiTermId] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, ChebiTermId):
+            self.id = ChebiTermId(self.id)
 
         super().__post_init__(**kwargs)
 
@@ -3301,7 +3330,7 @@ slots.ingredientDescriptor__term = Slot(uri=CULTUREMECH.term, name="ingredientDe
                    model_uri=CULTUREMECH.ingredientDescriptor__term, domain=None, range=Optional[Union[dict, ChemicalEntityTerm]])
 
 slots.ingredientDescriptor__chebi_term = Slot(uri=CULTUREMECH.chebi_term, name="ingredientDescriptor__chebi_term", curie=CULTUREMECH.curie('chebi_term'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__chebi_term, domain=None, range=Optional[Union[dict, ChemicalEntityTerm]])
+                   model_uri=CULTUREMECH.ingredientDescriptor__chebi_term, domain=None, range=Optional[Union[dict, ChebiTerm]])
 
 slots.ingredientDescriptor__mediaingredientmech_term = Slot(uri=CULTUREMECH.mediaingredientmech_term, name="ingredientDescriptor__mediaingredientmech_term", curie=CULTUREMECH.curie('mediaingredientmech_term'),
                    model_uri=CULTUREMECH.ingredientDescriptor__mediaingredientmech_term, domain=None, range=Optional[Union[dict, MediaIngredientMechTerm]])
@@ -3866,6 +3895,10 @@ slots.updateEvent__notes = Slot(uri=CULTUREMECH.notes, name="updateEvent__notes"
 slots.ChemicalEntityTerm_id = Slot(uri=CULTUREMECH.id, name="ChemicalEntityTerm_id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.ChemicalEntityTerm_id, domain=ChemicalEntityTerm, range=Union[str, ChemicalEntityTermId],
                    pattern=re.compile(r'^(CHEBI|FOODON|UBERON|ENVO|mediadive\.compound):\w+$'))
+
+slots.ChebiTerm_id = Slot(uri=CULTUREMECH.id, name="ChebiTerm_id", curie=CULTUREMECH.curie('id'),
+                   model_uri=CULTUREMECH.ChebiTerm_id, domain=ChebiTerm, range=Union[str, ChebiTermId],
+                   pattern=re.compile(r'^CHEBI:\d+$'))
 
 slots.OrganismTerm_id = Slot(uri=CULTUREMECH.id, name="OrganismTerm_id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.OrganismTerm_id, domain=OrganismTerm, range=Union[str, OrganismTermId],

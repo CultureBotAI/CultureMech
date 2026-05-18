@@ -29,7 +29,6 @@ import datetime
 import re
 import sys
 from pathlib import Path
-from typing import Any
 
 import yaml
 

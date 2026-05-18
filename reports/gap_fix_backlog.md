@@ -45,8 +45,8 @@ Today, `just validate-all` swallows non-zero exits and runs the schema in open m
 ### G07 · Broaden `Term.id` pattern beyond CHEBI · *Schema · S*
 **1,872 ingredient records** use `FOODON:*` (peptone, yeast extract, wheat) and `UBERON:*` (brain, heart for BHI media) — these are the *correct* ontologies for those entities, but the schema regex `^CHEBI:\d+$` rejects them. Loosen the pattern to `^(CHEBI|FOODON|UBERON|ENVO):\d+$` (or per-class).
 
-### G06 · Restructure `data_quality_flags` (string array → typed class) · *Schema · M*
-**273 records** carry a dict like `{incomplete_composition: false, has_ontology_mappings: true, ingredients_curated: true, curation_method: 'automated_expert_mapping'}`. The dict shape carries genuinely useful information that the current `range: string, multivalued: true` cannot. Introduce `DataQualityFlags` class; migrate 273 records.
+### G06 · Normalize `data_quality_flags` to the schema's list shape · *Instance · S* ✓ closed
+**273 records** carried a dict like `{incomplete_composition: false, has_ontology_mappings: true, ingredients_curated: true, curation_method: 'automated_expert_mapping'}` instead of the schema's `range: string, multivalued: true`. `scripts/migrate_data_quality_flags.py` converged them on the list shape used by the other 5,220 list-shape records: boolean-true keys become bare flag names, false keys are dropped (absence == false), non-bool fields encode as `key:value` strings. The richer structured-class redesign (originally drafted as the M-effort version of G06) is deferred — open as a follow-up only if downstream consumers actually need the boolean negation distinction.
 
 ### G19 · `SolutionDescriptor` schema vs `solutions[*]` instance shape · *Instance · M*
 **~4,000 rows** carry `name`/`notes` on `solutions[*]` but `SolutionDescriptor` has neither slot. **1,228 rows** are missing the required `composition`. Decide: extend the schema to add `name`/`notes` (probably correct — humans want to label solutions), or strip the fields. This is the largest unresolved instance question.
