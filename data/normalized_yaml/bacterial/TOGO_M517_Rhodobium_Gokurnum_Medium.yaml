@@ -209,9 +209,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009908'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:01.444411'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:14.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -219,8 +219,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:28.825028+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Rhodobium Gokurnum Medium" to
-    "rhodobium_gokurnum_medium" for consistent matching
+  notes: Normalized name from "Rhodobium Gokurnum Medium" to "rhodobium_gokurnum_medium"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:18.703553+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 solutions:
 - preferred_term: Ferric citrate solution (0.1%)
@@ -237,19 +241,17 @@ solutions:
     unit: G_PER_L
   name: Unknown solution
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/TOGO_M585_Rhodobacter_Sphaeroides_Medium.yaml
+- path: data/normalized_yaml/bacterial/TOGO_M585_Rhodobacter_Sphaeroides_Medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:009981
   name: rhodobacter_sphaeroides_medium
-  notes: Reviewed TOGO Rhodobium/Rhodobacter source-local pair; child keeps
-    water, yeast extract, KH2PO4, pyruvate, sorbitol, HCl, and trace components
-    unchanged but lowers NaCl, CaCl2, and MgCl2 and raises NH4Cl.
-- path:
-    data/normalized_yaml/bacterial/TOGO_M593_Modified_Rhodobacter_Spaeroides_Medium.yaml
+  notes: Reviewed TOGO Rhodobium/Rhodobacter source-local pair; child keeps water,
+    yeast extract, KH2PO4, pyruvate, sorbitol, HCl, and trace components unchanged
+    but lowers NaCl, CaCl2, and MgCl2 and raises NH4Cl.
+- path: data/normalized_yaml/bacterial/TOGO_M593_Modified_Rhodobacter_Spaeroides_Medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:009990
   name: modified_rhodobacter_spaeroides_medium
-  notes: Reviewed TOGO Rhodobium/modified Rhodobacter source-local pair; child
-    shares the parsed base formulation but lowers NaCl, CaCl2, MgCl2, and NH4Cl
-    and raises yeast extract from 0.4 to 0.6 g/L.
+  notes: Reviewed TOGO Rhodobium/modified Rhodobacter source-local pair; child shares
+    the parsed base formulation but lowers NaCl, CaCl2, MgCl2, and NH4Cl and raises
+    yeast extract from 0.4 to 0.6 g/L.

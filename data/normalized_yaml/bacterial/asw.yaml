@@ -175,9 +175,9 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C4'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:17.094606'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:18:54.746603Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -190,3 +190,7 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ASW" to "asw" for consistent matching
+- timestamp: '2026-05-16T09:03:25.057340+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

@@ -1,7 +1,7 @@
 id: CultureMech:000277
 name: medium_for_aciduric_thermophilic_bacillus_strains
 original_name: MEDIUM FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 media_term:
@@ -117,3 +117,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS"
     to "medium_for_aciduric_thermophilic_bacillus_strains" for consistent matching
+- timestamp: '2026-05-16T09:02:57.355210+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

@@ -233,10 +233,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008117'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:49.433220'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:58.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -246,6 +246,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MMYS-II Medium" to "mmys_ii_medium" for consistent
     matching
+- timestamp: '2026-05-16T09:03:10.205289+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 solutions:
 - preferred_term: Solution I*

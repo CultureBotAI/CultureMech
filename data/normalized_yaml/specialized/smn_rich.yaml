@@ -127,7 +127,7 @@ ingredients:
   notes: 'CAS: 10031-43-3; MW: 241.6016'
 description: Rich medium for R. rubrum
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: SMN rich
@@ -141,5 +141,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015747'
+- timestamp: '2026-05-16T09:04:43.512909+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

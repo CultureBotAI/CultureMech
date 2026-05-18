@@ -81,9 +81,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008613'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:53.230804'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:43.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -91,8 +91,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:17.280396+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Basal medium + Acetaldehyde" to
-    "basal_medium_acetaldehyde" for consistent matching
+  notes: Normalized name from "Basal medium + Acetaldehyde" to "basal_medium_acetaldehyde"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:25.445998+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Acetaldehyde**
   composition: []
@@ -114,11 +118,11 @@ variant_children:
   relationship: SOURCE_DUPLICATE
   id: CultureMech:008614
   name: basal_medium_benzaldehyde
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/basal_medium_formaldehyde.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:008615
   name: basal_medium_formaldehyde
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

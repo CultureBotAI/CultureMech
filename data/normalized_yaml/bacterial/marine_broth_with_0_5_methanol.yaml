@@ -57,9 +57,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008300'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:50.828088'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:09.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -69,6 +69,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine Broth with 0.5% Methanol" to "marine_broth_with_0_5_methanol"
     for consistent matching
+- timestamp: '2026-05-16T09:03:40.232255+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Methanol*
   composition: []

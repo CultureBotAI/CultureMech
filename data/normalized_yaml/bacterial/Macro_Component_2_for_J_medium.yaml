@@ -83,8 +83,12 @@ curation_history:
   changes: 'Set category to ''bacterial'' (was: MISSING)'
   notes: 'Automated categorization (confidence: 0.11). Weak match (score: 0.13), defaulting
     to bacterial'
+- timestamp: '2026-05-16T09:03:06.541048+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: references.reference_id->reference=3
 references:
-- reference_id: https://utex.org/products/macro-component-2-for-j-medium
-- reference_id: UTEX:macro-component-2-for-j-medium
-- reference_id: MediaIngredientMech:UNMAPPED_0096
+- reference: https://utex.org/products/macro-component-2-for-j-medium
+- reference: UTEX:macro-component-2-for-j-medium
+- reference: MediaIngredientMech:UNMAPPED_0096
 category: bacterial

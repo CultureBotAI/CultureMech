@@ -44,11 +44,11 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M3016'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.073865'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Oxygen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:10.478435+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -58,16 +58,20 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009532'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.094415'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name; Added default solution name; Added default
     solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:46:25.660095+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Freshwater Thiosulfate-Oxidizing Bacteria Medium" to
     "freshwater_thiosulfate_oxidizing_bacteria_medium" for consistent matching
+- timestamp: '2026-05-16T09:03:35.220428+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Modified Wolfe's solution (see Medium [M641])
   composition: []

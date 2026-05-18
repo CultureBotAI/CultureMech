@@ -434,6 +434,9 @@ curation_history:
   changes: Copied composition from referenced medium (37 ingredients)
   source: CultureMech:000295
   notes: Resolved reference by copying from methanogenium_medium (CultureMech:000295)
+- timestamp: '2026-05-16T08:58:06.967693+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference

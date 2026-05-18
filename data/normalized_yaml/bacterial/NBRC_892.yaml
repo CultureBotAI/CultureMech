@@ -40,7 +40,11 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007502'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.925190'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Casein peptone15gSoybean peptone5gNaCl5gAgar15gDistilled
     water1LpH 7.1-7.5'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.738496+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

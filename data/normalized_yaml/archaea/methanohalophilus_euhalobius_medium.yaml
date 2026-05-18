@@ -1,7 +1,7 @@
 id: CultureMech:000278
 name: methanohalophilus_euhalobius_medium
 original_name: METHANOHALOPHILUS EUHALOBIUS MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -411,3 +411,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOHALOPHILUS EUHALOBIUS MEDIUM" to "methanohalophilus_euhalobius_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.505718+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

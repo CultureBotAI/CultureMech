@@ -140,9 +140,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.622011'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:05.915781Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -156,4 +156,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "salt solution 25% sea water (SW) agar plate" to "salt_solution_25_sea_water_sw_agar_plate"
     for consistent matching
+- timestamp: '2026-05-16T09:04:31.263244+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true

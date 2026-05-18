@@ -1,7 +1,7 @@
 id: CultureMech:000248
 name: halophilic_methanotrophic_bacterium_medium
 original_name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.5-7.5
@@ -183,3 +183,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM" to "halophilic_methanotrophic_bacterium_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.295683+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

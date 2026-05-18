@@ -105,10 +105,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.915005'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Hydrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-06T05:10:41.008083Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -123,9 +123,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009650'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:00.027058'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:31.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -135,6 +135,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "<html>MJ/Anhox-NO<sub>3</sub> With Thiosulfate Medium</html>"
     to "html_mj_anhox_no_sub_3_sub_with_thiosulfate_medium_html" for consistent matching
+- timestamp: '2026-05-16T09:03:37.381300+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []

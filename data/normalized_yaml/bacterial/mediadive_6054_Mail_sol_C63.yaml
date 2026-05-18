@@ -25,6 +25,9 @@ composition:
     label: iron dichloride tetrahydrate
     confidence: 0.7
     match_type: kg_fallback
+  concentration:
+    value: variable
+    unit: VARIABLE
 preparation_notes: "Make up 1 litre of PJ (Main sol. C 76) with deionized water. Bring\
   \ 500 ml of PJ (Main sol. C 76) to the boil then\r\nadd cereal leaves. Continue\
   \ to boil for 5 minutes. Allow to cool to room temperature then\r\nrestore volume\
@@ -37,9 +40,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:014779'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:26.589629'
   action: Applied schema defaults and normalizations
   notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-14T21:09:45.604275'
   curator: quality-tagger-v1.0
   action: Added data quality flag
@@ -50,6 +53,14 @@ curation_history:
   changes: 'Set category to ''bacterial'' (was: MISSING)'
   notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
     to bacterial'
+- timestamp: '2026-05-16T09:04:07.616000+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-17T07:07:11.056199+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R03_fill_missing_concentration=1
 ingredients:
 - preferred_term: See source for composition
   concentration:

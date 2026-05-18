@@ -41,8 +41,12 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007490'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.891200'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Peptone10gMeat extract10gYeast
     extract5gGlucose20gTween 801gK2HPO42gSodium acetate5gDiammonium hydrogencitrate2gMgSO4·7H2O0.2gMnSO4·nH2O0.05gDistilled
     water1LAgar (if needed)15gpH 5.5'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.694710+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

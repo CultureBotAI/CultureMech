@@ -191,8 +191,11 @@ curation_history:
   action: EXPANDED_INGREDIENTS
   changes: Replaced placeholder with 14 curated ingredients from JCM
   source: JCM Medium 1188
+- timestamp: '2026-05-16T08:58:23.063340+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  curation_method: automated_expert_mapping
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping

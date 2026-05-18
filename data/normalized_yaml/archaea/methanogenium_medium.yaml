@@ -1,7 +1,7 @@
 id: CultureMech:000295
 name: methanogenium_medium
 original_name: METHANOGENIUM MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -415,3 +415,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOGENIUM MEDIUM" to "methanogenium_medium" for
     consistent matching
+- timestamp: '2026-05-16T09:02:57.447158+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

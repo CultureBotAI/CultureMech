@@ -13,6 +13,9 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 0.7
     match_type: kg_fallback
+  concentration:
+    value: variable
+    unit: VARIABLE
 preparation_notes: "Put a layer about 1 cm deep of air-dried, sieved good calcareous\
   \ garden loam into a\r\ntest tube or jar. (The use of mud from rivers or ponds is\
   \ rarely satisfactory.)\r\nCarefully add deionised water to a depth of 7 to 10 cm,\
@@ -26,9 +29,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:014796'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:26.650936'
   action: Applied schema defaults and normalizations
   notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-14T21:09:45.669192'
   curator: quality-tagger-v1.0
   action: Added data quality flag
@@ -39,6 +42,14 @@ curation_history:
   changes: 'Set category to ''bacterial'' (was: MISSING)'
   notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
     to bacterial'
+- timestamp: '2026-05-16T09:04:07.690940+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-17T07:07:11.117363+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R03_fill_missing_concentration=1
 ingredients:
 - preferred_term: See source for composition
   concentration:

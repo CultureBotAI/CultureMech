@@ -305,9 +305,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 592 supplemented with 2.0 g/L yeast extract, and
-    replace the gas phase of the final medium with a N2-CO2-O2 (77:20:3, by
-    volume) gas mixture at 200 kPa.
+  description: Use Medium No. 592 supplemented with 2.0 g/L yeast extract, and replace
+    the gas phase of the final medium with a N2-CO2-O2 (77:20:3, by volume) gas mixture
+    at 200 kPa.
 applications:
 - Microbial cultivation
 curation_history:
@@ -332,15 +332,17 @@ curation_history:
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (27 ingredients)
   source: CultureMech:002940
-  notes: Resolved reference by copying from modified_mmjs_medium_b
-    (CultureMech:002940)
+  notes: Resolved reference by copying from modified_mmjs_medium_b (CultureMech:002940)
+- timestamp: '2026-05-16T08:58:08.997920+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
 variant_children:
 - path: data/normalized_yaml/bacterial/modified_mmjs_medium_b.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002940
   name: modified_mmjs_medium_b
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

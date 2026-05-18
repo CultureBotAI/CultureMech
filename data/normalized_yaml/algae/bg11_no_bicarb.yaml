@@ -116,7 +116,7 @@ ingredients:
     label: ''
 description: For growing cyanobacteria, from Luis; no sodium bicarbonate
 notes: 'Source: FEBA media definitions'
-category: ALGAE
+category: algae
 sources:
 - database: CultureBotHT
   database_id: BG11 no bicarb
@@ -130,5 +130,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015451'
+- timestamp: '2026-05-16T09:02:56.323575+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

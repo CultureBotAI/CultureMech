@@ -39,15 +39,19 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009049'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:55.811760'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:46:20.994763+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PPLO broth with bovine serum" to "pplo_broth_with_bovine_serum"
     for consistent matching
+- timestamp: '2026-05-16T09:04:29.387292+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Phenol red solution, 1% stock solution
   composition: []

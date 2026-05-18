@@ -6,8 +6,8 @@ term:
 composition:
 - preferred_term: Sodium nitrate (0.70 M stock)
   concentration:
-    value: '10'
-    unit: ML_PER_40ML
+    value: '25.0'
+    unit: PERCENT_V_V
   term:
     id: CHEBI:65246
     label: sodium nitrate
@@ -16,8 +16,8 @@ composition:
     id: MediaIngredientMech:001124
 - preferred_term: Disodium phosphate heptahydrate (0.02 M stock)
   concentration:
-    value: '30'
-    unit: ML_PER_40ML
+    value: '75.0'
+    unit: PERCENT_V_V
   term:
     id: CHEBI:131825
     label: disodium hydrogen phosphate heptahydrate
@@ -70,8 +70,16 @@ curation_history:
   changes: 'Set category to ''bacterial'' (was: MISSING)'
   notes: 'Automated categorization (confidence: 0.11). Weak match (score: 0.13), defaulting
     to bacterial'
+- timestamp: '2026-05-16T09:02:58.413261+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: references.reference_id->reference=3
+- timestamp: '2026-05-17T07:06:06.184928+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R02_convert_exotic_units=2
 references:
-- reference_id: https://utex.org/products/das-macro-solution
-- reference_id: UTEX:das-macro-solution
-- reference_id: MediaIngredientMech:UNMAPPED_0081
+- reference: https://utex.org/products/das-macro-solution
+- reference: UTEX:das-macro-solution
+- reference: MediaIngredientMech:UNMAPPED_0081
 category: bacterial

@@ -23,9 +23,9 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M1057'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:45.694821'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3 solution'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:21.140038+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -35,14 +35,18 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007573'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:46.347034'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:46:08.123412+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine Agar 2216 (pH 8.5)" to "marine_agar_2216_ph_8_5"
     for consistent matching
+- timestamp: '2026-05-16T09:03:40.127537+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Marine agar 2216 (see Medium [M110])
   composition: []

@@ -126,6 +126,9 @@ curation_history:
   changes: Copied composition from referenced medium (7 ingredients)
   source: CultureMech:002957
   notes: Resolved reference by copying from glycerol_asparagine_agar_isp_5 (CultureMech:002957)
+- timestamp: '2026-05-16T08:57:22.138919+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference

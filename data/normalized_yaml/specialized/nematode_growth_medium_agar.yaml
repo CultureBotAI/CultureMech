@@ -60,7 +60,7 @@ ingredients:
   notes: 'CAS: 7758-11-4; MW: 174.18'
 description: Used for growing C. elegans
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: Nematode growth medium agar
@@ -74,5 +74,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015646'
+- timestamp: '2026-05-16T09:04:42.046032+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

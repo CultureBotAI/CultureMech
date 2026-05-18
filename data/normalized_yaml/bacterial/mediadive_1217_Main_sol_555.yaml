@@ -49,6 +49,9 @@ composition:
     label: ferrous sulfate
     confidence: 1.0
     match_type: exact_match
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Glucose
   concentration:
     value: '10'
@@ -92,9 +95,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010713'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:05.434830'
   action: Applied schema defaults and normalizations
   notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-14T21:09:17.657434'
   curator: quality-tagger-v1.0
   action: Added data quality flag
@@ -105,6 +108,14 @@ curation_history:
   changes: 'Set category to ''bacterial'' (was: MISSING)'
   notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
     to bacterial'
+- timestamp: '2026-05-16T09:03:41.589378+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-17T07:06:50.607899+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R03_fill_missing_concentration=1
 ingredients:
 - preferred_term: See source for composition
   concentration:

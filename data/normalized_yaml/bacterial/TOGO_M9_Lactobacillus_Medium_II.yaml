@@ -171,9 +171,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010429'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:04.430911'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:17.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -183,6 +183,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Lactobacillus Medium II" to "lactobacillus_medium_ii"
     for consistent matching
+- timestamp: '2026-05-16T09:03:22.682300+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Salt solution R (see below)
   composition: []

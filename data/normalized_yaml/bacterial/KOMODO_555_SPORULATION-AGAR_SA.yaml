@@ -67,9 +67,9 @@ curation_history:
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 555
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:39.432114'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: FeSO4'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:19:37.545730Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -81,16 +81,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.340601+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPORULATION-AGAR (SA)" to "sporulation_agar_sa"
-    for consistent matching
+  notes: Normalized name from "SPORULATION-AGAR (SA)" to "sporulation_agar_sa" for
+    consistent matching
+- timestamp: '2026-05-16T09:03:03.460523+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 parent_media:
   path: data/normalized_yaml/bacterial/sporulation_agar_sa.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001690
   name: sporulation_agar_sa
-  notes: KOMODO record states DSMZ Medium 555 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 555 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

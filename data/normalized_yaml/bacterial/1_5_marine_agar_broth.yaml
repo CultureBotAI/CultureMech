@@ -57,9 +57,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008494'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:52.375792'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:46.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -67,8 +67,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:16.107210+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/5 Marine Agar/Broth" to "1_5_marine_agar_broth"
-    for consistent matching
+  notes: Normalized name from "1/5 Marine Agar/Broth" to "1_5_marine_agar_broth" for
+    consistent matching
+- timestamp: '2026-05-16T09:02:58.158601+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Sea water*
   composition: []
@@ -82,10 +86,10 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:008758
   name: 1_2_marine_broth_agar
-  notes: Both records are TOGO/NBRC diluted Marine Broth/Agar formulations with
-    explicit 1/2 and 1/5 strength names and matching Marine Broth 2216 base.
+  notes: Both records are TOGO/NBRC diluted Marine Broth/Agar formulations with explicit
+    1/2 and 1/5 strength names and matching Marine Broth 2216 base.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- 1/5 Marine Agar/Broth decreases Bacto Marine Broth 2216 from 18.7 g/L to 7 g/L
-  while agar remains 15 g/L; parsed water amount differs and is treated as a
-  source normalization artifact for review.
+- 1/5 Marine Agar/Broth decreases Bacto Marine Broth 2216 from 18.7 g/L to 7 g/L while
+  agar remains 15 g/L; parsed water amount differs and is treated as a source normalization
+  artifact for review.

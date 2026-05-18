@@ -124,7 +124,7 @@ ingredients:
     label: ''
 description: For growing Synechococcus elongatus PCC 7942, pH should be 7.1
 notes: 'Source: FEBA media definitions'
-category: ALGAE
+category: algae
 sources:
 - database: CultureBotHT
   database_id: BG11R
@@ -138,5 +138,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015456'
+- timestamp: '2026-05-16T09:02:56.359602+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

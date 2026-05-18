@@ -34,10 +34,10 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2696'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:55.681165'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Antifoam (Union Carbide Corp.,
     SAG-471)'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:04.672516Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -47,3 +47,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M2696" to "togo_medium_m2696" for consistent
     matching
+- timestamp: '2026-05-16T09:04:37.235250+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

@@ -385,12 +385,12 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:55.907238'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaHCO3 solution; Added default
     concentration for ingredient: Carbon dioxide gas; Added default concentration
     for ingredient: Nitrogen gas; Added default concentration for ingredient: KOH
     solution'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-06T05:10:28.540188Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -409,10 +409,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009273'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:57.899528'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:08.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -422,6 +422,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Clostridium aldrichii medium" to "clostridium_aldrichii_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:27.587450+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Wolfe's Mineral Solution
   term:

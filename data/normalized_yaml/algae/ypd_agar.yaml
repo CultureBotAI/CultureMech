@@ -1,6 +1,6 @@
 id: CultureMech:000145
 name: ypd_agar
-category: ALGAE
+category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
@@ -15,13 +15,13 @@ applications:
 - Microalgae research
 curation_history:
 - curator: ccap-import
-  date: '2026-01-28'
   action: Imported from CCAP Culture Collection
   notes: 'Source ID: YPD, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_YPD.pdf'
+  timestamp: '2026-01-28T00:00:00+00:00'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:23:39.731955'
   action: Applied schema defaults and normalizations
   notes: Added placeholder ingredients for missing composition
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-03T11:26:43.644993'
   curator: quality-tagger-v1.0
   action: Added data quality flag
@@ -39,9 +39,18 @@ curation_history:
   action: EXPANDED_INGREDIENTS
   changes: Replaced placeholder with 3 curated ingredients from CCAP
   source: CCAP Medium MR_YPD.pdf
+- timestamp: '2026-05-16T08:57:02.901970+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-05-16T09:02:57.147153+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
+    category->lowercase=1
 references:
-- reference_id: CCAP:YPD
-- reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_YPD.pdf
+- reference: CCAP:YPD
+- reference: https://www.ccap.ac.uk/wp-content/uploads/MR_YPD.pdf
 ingredients:
 - preferred_term: Yeast extract
   term:
@@ -86,9 +95,8 @@ ingredients:
   source: CCAP Medium MR_YPD.pdf
   notes: From CCAP Medium MR_YPD.pdf; Curated from CCAP Medium MR_YPD.pdf specification
 data_quality_flags:
-  incomplete_composition: false
-  has_ontology_mappings: true
-  ingredients_curated: true
-  curation_method: automated_expert_mapping
+- has_ontology_mappings
+- ingredients_curated
+- curation_method:automated_expert_mapping
 original_name: YPD Agar
 kg_microbe_match: mediadive.medium:12

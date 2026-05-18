@@ -125,9 +125,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008444'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:51.934867'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:08.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -135,8 +135,11 @@ curation_history:
 - timestamp: '2026-03-17T19:46:15.513030+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Mmys-I Medium" to "mmys_i_medium" for consistent
-    matching
+  notes: Normalized name from "Mmys-I Medium" to "mmys_i_medium" for consistent matching
+- timestamp: '2026-05-16T09:03:11.530557+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Trace element solution SL8 (see Medium [M183])
   composition: []
@@ -150,5 +153,5 @@ variant_children:
   relationship: SALINITY_VARIANT
   id: CultureMech:008508
   name: mmys_iii_medium
-  notes: NaCl increased from 30.2 g/L to 50.2 g/L while the TOGO MMYS liquid
-    medium formulation remains unchanged.
+  notes: NaCl increased from 30.2 g/L to 50.2 g/L while the TOGO MMYS liquid medium
+    formulation remains unchanged.

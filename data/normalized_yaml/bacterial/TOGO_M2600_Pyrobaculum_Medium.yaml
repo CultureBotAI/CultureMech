@@ -222,12 +222,12 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.822810'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Yeast extract; Added default
     concentration for ingredient: Na2S2O3 x 5 H2O; Added default concentration for
     ingredient: Trypticase peptone; Added default concentration for ingredient: 1
     N HCl'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:05:00.693186+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -241,9 +241,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009169'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:56.775403'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:42.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -253,6 +253,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Pyrobaculum Medium" to "pyrobaculum_medium" for consistent
     matching
+- timestamp: '2026-05-16T09:03:14.544131+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []

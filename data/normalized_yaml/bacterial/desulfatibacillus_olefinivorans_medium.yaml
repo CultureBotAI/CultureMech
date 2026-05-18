@@ -332,10 +332,10 @@ preparation_steps:
   description: Autoclave in culture vessels.
 - step_number: 3
   action: AUTOCLAVE
-  description: To complete the medium, combine Solution A and substrate in the
-    culture vessels under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl
-    rubber stoppers. Finally, reduce the medium with 0.01 volume of 5% Na2S x
-    9H2O solution (autoclaved and stored under a N2 atmosphere).
+  description: To complete the medium, combine Solution A and substrate in the culture
+    vessels under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers.
+    Finally, reduce the medium with 0.01 volume of 5% Na2S x 9H2O solution (autoclaved
+    and stored under a N2 atmosphere).
 applications:
 - Microbial cultivation
 curation_history:
@@ -360,9 +360,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002924'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:27.435848'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:51.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -370,8 +370,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:30.180953+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFATIBACILLUS OLEFINIVORANS MEDIUM" to
-    "desulfatibacillus_olefinivorans_medium" for consistent matching
+  notes: Normalized name from "DESULFATIBACILLUS OLEFINIVORANS MEDIUM" to "desulfatibacillus_olefinivorans_medium"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:28.915914+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 solutions:
 - preferred_term: Trace element solution SL12
@@ -390,5 +394,5 @@ parent_media:
   name: desulfatiferula_berrense_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

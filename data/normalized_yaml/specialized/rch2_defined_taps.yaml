@@ -257,7 +257,7 @@ ingredients:
 description: Defined minimal media for soil and groundwater bacteria with lactate
   and TAPS buffer
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RCH2 defined TAPS
@@ -271,5 +271,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015723'
+- timestamp: '2026-05-16T09:04:43.123892+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

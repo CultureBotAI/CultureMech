@@ -250,7 +250,7 @@ ingredients:
 description: Lactate-sulfate media for sulfate-reducing bacteria with no ammonium,
   pH should be 7.2
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MoLS4 no ammonia
@@ -264,5 +264,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015608'
+- timestamp: '2026-05-16T09:04:41.825681+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

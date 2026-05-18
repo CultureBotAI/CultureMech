@@ -275,7 +275,7 @@ ingredients:
 description: Variation of ENIGMA denitrification media for aerobic growth, with homemade
   Wolfe's vitamins and minerals, and PIPES buffer
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: UGA PIPES noCarbon
@@ -289,5 +289,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015770'
+- timestamp: '2026-05-16T09:04:43.881753+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

@@ -27,7 +27,7 @@ ingredients:
 description: Lactate-sulfate media for sulfate-reducing bacteria with no ammonia or
   Mo
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MoLS4 no ammonium no Mo
@@ -41,5 +41,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015610'
+- timestamp: '2026-05-16T09:04:41.834361+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

@@ -36,15 +36,19 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008702'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:53.887288'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:46:18.176156+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Inorganic Salts-Starch Agar (ISP-4) With 0.05% Yeast
     Extract" to "inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract" for consistent
     matching
+- timestamp: '2026-05-16T09:03:37.800433+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Inorganic salts--starch agar (ISP--4) (see Medium [M50])
   composition: []

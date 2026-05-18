@@ -125,9 +125,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009242'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:57.621404'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:29.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -135,8 +135,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:23.361617+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified CM+YE Medium (B)" to
-    "modified_cm_ye_medium_b" for consistent matching
+  notes: Normalized name from "Modified CM+YE Medium (B)" to "modified_cm_ye_medium_b"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:15.218226+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Fe(2+) solution (see below)
   composition: []
@@ -149,9 +153,9 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:009911
   name: cm_ye_medium
-  notes: Both records are TOGO/JCM CM+YE solid agar formulations; modified
-    medium B is a lower MgSO4/NaCl variant of the same base recipe.
+  notes: Both records are TOGO/JCM CM+YE solid agar formulations; modified medium
+    B is a lower MgSO4/NaCl variant of the same base recipe.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Modified CM+YE Medium B decreases MgSO4 from 20 g/L to 10 g/L and NaCl from
-  200 g/L to 100 g/L while other parsed ingredients remain unchanged.
+- Modified CM+YE Medium B decreases MgSO4 from 20 g/L to 10 g/L and NaCl from 200
+  g/L to 100 g/L while other parsed ingredients remain unchanged.

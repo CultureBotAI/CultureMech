@@ -152,7 +152,7 @@ ingredients:
 description: Harwood UW media for growing RPal; PM media with some Yeast Extract and
   casmino acids
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: CAAc
@@ -166,5 +166,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015500'
+- timestamp: '2026-05-16T09:04:40.343803+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

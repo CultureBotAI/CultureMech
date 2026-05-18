@@ -1,7 +1,7 @@
 id: CultureMech:000245
 name: thiohalospira_halophila_medium
 original_name: THIOHALOSPIRA HALOPHILA MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -278,4 +278,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOHALOSPIRA HALOPHILA MEDIUM" to "thiohalospira_halophila_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.897940+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 high_metal: true

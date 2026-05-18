@@ -29,7 +29,7 @@ ingredients:
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44'
 description: Luria-Bertani broth with alot of salt
 notes: 'Source: FEBA media definitions'
-category: BACTERIAL
+category: bacterial
 sources:
 - database: CultureBotHT
   database_id: LB_highSalt
@@ -43,6 +43,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015467'
+- timestamp: '2026-05-16T09:03:38.835335+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags: []
 kg_microbe_match: mediadive.medium:74
 parent_media:
@@ -50,9 +54,9 @@ parent_media:
   relationship: SALINITY_VARIANT
   id: CultureMech:015464
   name: LB
-  notes: Reviewed FEBA LB salt family; LB_highSalt is modeled as the 35 g/L NaCl
-    child variant of FEBA LB.
+  notes: Reviewed FEBA LB salt family; LB_highSalt is modeled as the 35 g/L NaCl child
+    variant of FEBA LB.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- Sodium Chloride increased from 5 g/L to 35 g/L while tryptone and yeast
-  extract remain unchanged.
+- Sodium Chloride increased from 5 g/L to 35 g/L while tryptone and yeast extract
+  remain unchanged.

@@ -54,6 +54,7 @@ source_data:
     snippet: Using defined bacterial communities and a gnotobiotic Arabidopsis plant
       system we show that the isolates form assemblies resembling natural microbiota
       on their cognate host organs, but are also capable of ectopic leaf or root colonization
+    explanation: 'Auto-filled placeholder: explanation not supplied by upstream import.'
 curation_history:
 - timestamp: '2026-03-15T00:15:00.393357Z'
   curator: communitymech-importer-v1.0
@@ -65,4 +66,8 @@ curation_history:
   notes: Normalized name from "Half-strength Murashige-Skoog medium for Arabidopsis
     growth" to "half_strength_murashige_skoog_medium_for_arabidopsis_growth" for consistent
     matching
+- timestamp: '2026-05-17T07:07:47.519318+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R04_fill_missing_explanation=1
 kg_microbe_match: mediadive.medium:263
