@@ -2,6 +2,14 @@
 
 20 actionable items derived from the schema, instance, and pipeline audits. Source-of-truth: `reports/gap_fix_backlog.tsv`.
 
+**Status (as of the 2026-05-17 cleanup pass):**
+
+| Closed | Open |
+|---|---|
+| G01, G02, G03, G04, G05, G06, G07, G08, G15, G17, G19 (11 items) | G09, G10, G11, G12, G13, G14, G16, G18, G20 (9 items) |
+
+After the closed items landed, full-corpus `just validate-strict` reports **0 ERROR rows across 15,827 records**. The remaining items are forward-looking hygiene (G09, G10, G14, G18, G20) and schema polish (G11, G12, G13, G16); none currently produce validation failures.
+
 Ranking heuristic: items with the largest "records-affected × ease-of-fix" go first; structural prerequisites (CI gate, normalization helpers) precede their dependents. Effort: **S** = a single PR, mostly mechanical; **M** = a few PRs, some judgment calls; **L** = cross-cutting redesign.
 
 ---
