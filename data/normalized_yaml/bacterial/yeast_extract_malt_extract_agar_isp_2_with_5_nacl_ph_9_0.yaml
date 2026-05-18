@@ -39,9 +39,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.267638'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3 solution'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:23.302956+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -51,9 +51,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009920'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:01.519319'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:55.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -64,6 +64,10 @@ curation_history:
   notes: Normalized name from "Yeast Extract-Malt Extract Agar (ISP-2) With 5% NaCl
     (pH 9.0)" to "yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0" for consistent
     matching
+- timestamp: '2026-05-16T09:04:39.002993+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Yeast extract--malt extract agar (ISP--2) (see Medium [M35])
   composition: []

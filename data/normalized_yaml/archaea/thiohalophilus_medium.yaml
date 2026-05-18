@@ -1,7 +1,7 @@
 id: CultureMech:000244
 name: thiohalophilus_medium
 original_name: THIOHALOPHILUS MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.5-7.8
@@ -280,3 +280,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOHALOPHILUS MEDIUM" to "thiohalophilus_medium" for
     consistent matching
+- timestamp: '2026-05-16T09:02:57.885075+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

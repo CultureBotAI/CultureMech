@@ -167,9 +167,9 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1723a'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:21.005230'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Wheat Grains'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:19:02.199225Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -184,3 +184,7 @@ curation_history:
   notes: Normalized name from "Enriched Artificial Seawater Medium f/2 suppl. with
     Wheat Grains" to "enriched_artificial_seawater_medium_f_2_suppl_with_wheat_grains"
     for consistent matching
+- timestamp: '2026-05-16T09:03:31.501955+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

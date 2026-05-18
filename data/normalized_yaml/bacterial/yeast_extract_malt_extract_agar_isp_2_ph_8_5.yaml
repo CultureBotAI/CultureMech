@@ -23,9 +23,9 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M936'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:01.336589'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3 solution'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:42.411447+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -35,14 +35,18 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010358'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:04.001288'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:46:32.226493+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Yeast Extract-Malt Extract Agar (ISP-2) (pH 8.5)" to
     "yeast_extract_malt_extract_agar_isp_2_ph_8_5" for consistent matching
+- timestamp: '2026-05-16T09:04:38.991125+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Yeast extract--malt extract agar (ISP--2) (see Medium [M35])
   composition: []

@@ -40,7 +40,11 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007453'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.790548'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Tryptone5gYeast extract3gNaCl10gUrea1gDistilled
     water1LAgar (if needed)15gAdjust pH to 8.5 with 50 mM Tris-HCl buffer.'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.569585+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

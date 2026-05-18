@@ -372,11 +372,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.396774'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2 gas; Added default concentration
     for ingredient: H2SO4; Added default concentration for ingredient: 2 M H2SO4;
     Added default concentration for ingredient: nitrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-02-06T05:10:52.626109Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -395,10 +395,10 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009590'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:59.459330'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:52.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -408,6 +408,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Thermodesulfobium Acidiphilum Medium" to "thermodesulfobium_acidiphilum_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:16.605806+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 high_metal: true
 solutions:
 - preferred_term: Trace element solution SL-10

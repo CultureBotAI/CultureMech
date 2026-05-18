@@ -1,7 +1,7 @@
 id: CultureMech:000289
 name: modified_methanohalophilus_medium
 original_name: MODIFIED METHANOHALOPHILUS MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -372,4 +372,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED METHANOHALOPHILUS MEDIUM" to "modified_methanohalophilus_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.735829+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 high_metal: true

@@ -57,10 +57,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.984779'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: L-tryptophan; Added default
     concentration for ingredient: tryptose blood agar base (Difco)'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:02.322603Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -75,3 +75,7 @@ curation_history:
   notes: Normalized name from "tryptose blood agar base (containing  glucose, L-tryptophan,
     and casein hydrolyzate acid)" to "tryptose_blood_agar_base_containing_glucose_l_tryptophan_and_casein_hydrolyzate_acid"
     for consistent matching
+- timestamp: '2026-05-16T09:04:38.182693+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

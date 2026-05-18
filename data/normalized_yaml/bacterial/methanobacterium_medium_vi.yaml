@@ -284,14 +284,13 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and
-    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
-    commercial product | Copied from referenced JCM Medium 872
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
+    | Copied from referenced JCM Medium 872
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -305,14 +304,13 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
-    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
-    formulation) commercial product | Copied from referenced JCM Medium 872
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product | Copied from referenced JCM Medium 872
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -321,14 +319,13 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
-    Medium (Luria-Bertani, Miller formulation) commercial product | Copied from
-    referenced JCM Medium 872
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product | Copied from referenced
+    JCM Medium 872
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -373,18 +370,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:24.186838+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOBACTERIUM MEDIUM (VI)" to
-    "methanobacterium_medium_vi" for consistent matching
+  notes: Normalized name from "METHANOBACTERIUM MEDIUM (VI)" to "methanobacterium_medium_vi"
+    for consistent matching
 - timestamp: '2026-04-05T13:16:52.524224'
   curator: resolve_option_c_references
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (29 ingredients)
   source: CultureMech:003219
-  notes: Resolved reference by copying from methanobacterium_medium_iv
-    (CultureMech:003219)
+  notes: Resolved reference by copying from methanobacterium_medium_iv (CultureMech:003219)
+- timestamp: '2026-05-16T08:58:05.999484+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
 parent_media:
   path: data/normalized_yaml/bacterial/methanobacterium_medium_iv.yaml
   relationship: SOURCE_DUPLICATE
@@ -392,5 +391,5 @@ parent_media:
   name: methanobacterium_medium_iv
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

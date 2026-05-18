@@ -1,7 +1,7 @@
 id: CultureMech:000285
 name: halophilic_sob_medium
 original_name: HALOPHILIC SOB MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -361,9 +361,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000285'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:15.394839'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T17:06:12.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -373,6 +373,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALOPHILIC SOB MEDIUM" to "halophilic_sob_medium" for
     consistent matching
+- timestamp: '2026-05-16T09:02:57.310332+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1; category->lowercase=1
 solutions:
 - preferred_term: Trace element solution
   term:

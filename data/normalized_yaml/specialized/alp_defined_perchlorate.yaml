@@ -190,7 +190,7 @@ ingredients:
   notes: 'CAS: 7791-07-3; MW: 140.46'
 description: Defined media for Dechlorosoma suillum PS, pH should be 7.2
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: ALP defined perchlorate
@@ -204,5 +204,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015489'
+- timestamp: '2026-05-16T09:04:40.117873+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

@@ -1,7 +1,7 @@
 id: CultureMech:000304
 name: modified_balchs_methanogen_medium_1_b
 original_name: MODIFIED BALCH'S METHANOGEN MEDIUM 1/B
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -377,3 +377,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED BALCH'S METHANOGEN MEDIUM 1/B" to "modified_balchs_methanogen_medium_1_b"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.698802+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

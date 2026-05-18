@@ -42,6 +42,10 @@ curation_history:
   changes: Marked as source_information_unavailable
   notes: 'Source database has no composition data. Category: EMPTY. JCM page returns
     "Nothing found"'
+- timestamp: '2026-05-16T08:58:11.338331+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(2 entries)
 data_quality_flags:
-  incomplete_composition: true
-  source_information_unavailable: true
+- incomplete_composition
+- source_information_unavailable

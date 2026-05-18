@@ -1,7 +1,7 @@
 id: CultureMech:000290
 name: moderate_halophile_medium_2
 original_name: MODERATE HALOPHILE MEDIUM 2
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -129,3 +129,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODERATE HALOPHILE MEDIUM 2" to "moderate_halophile_medium_2"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.685347+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

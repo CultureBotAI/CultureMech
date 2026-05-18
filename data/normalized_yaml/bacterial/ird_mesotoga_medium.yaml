@@ -280,8 +280,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use Medium No. 875, replacing the L-sodium lactate solution with
-    20.0 ml/L 1.0 M fructose solution (autoclaved and stored under N2).
+  description: Use Medium No. 875, replacing the L-sodium lactate solution with 20.0
+    ml/L 1.0 M fructose solution (autoclaved and stored under N2).
 applications:
 - Microbial cultivation
 curation_history:
@@ -300,18 +300,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:33.020265+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "IRD MESOTOGA MEDIUM" to "ird_mesotoga_medium" for
-    consistent matching
+  notes: Normalized name from "IRD MESOTOGA MEDIUM" to "ird_mesotoga_medium" for consistent
+    matching
 - timestamp: '2026-04-04T18:49:20.108485'
   curator: copy_referenced_compositions
   action: RESOLVED_REFERENCE
   changes: Copied composition from referenced medium (25 ingredients)
   source: CultureMech:003222
-  notes: Resolved reference by copying from phosphoac3_medium
-    (CultureMech:003222)
+  notes: Resolved reference by copying from phosphoac3_medium (CultureMech:003222)
+- timestamp: '2026-05-16T08:57:35.996760+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference
 parent_media:
   path: data/normalized_yaml/bacterial/phosphoac3_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -319,5 +321,5 @@ parent_media:
   name: phosphoac3_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

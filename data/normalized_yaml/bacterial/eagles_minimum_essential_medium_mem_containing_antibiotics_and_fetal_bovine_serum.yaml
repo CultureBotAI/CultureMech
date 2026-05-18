@@ -62,9 +62,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.681619'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: penicillin'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:06.007726Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -79,3 +79,7 @@ curation_history:
   notes: Normalized name from "Eagle's  minimum  essential  medium  (MEM) (containing
     antibiotics and fetal  bovine  serum)" to "eagles_minimum_essential_medium_mem_containing_antibiotics_and_fetal_bovine_serum"
     for consistent matching
+- timestamp: '2026-05-16T09:03:31.265341+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

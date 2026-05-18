@@ -249,9 +249,9 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C29'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:16.978379'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T03:08:42.796150Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -269,3 +269,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "E26 + Biotin:ANT" to "e26_biotin_ant" for consistent
     matching
+- timestamp: '2026-05-16T09:03:31.203783+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

@@ -150,10 +150,14 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007451'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.784934'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Bacto Tryptic Soy Broth w/o
     Dextrose (Difco)2.75gNaCl5gK2HPO42.5gAgar (if needed)15gDistilled water1LpH 5.0'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.560436+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 notes: 'Commercial Product: Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
 
   Supplier: Multiple suppliers (BD, Sigma, Neogen)

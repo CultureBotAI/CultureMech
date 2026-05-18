@@ -1,7 +1,7 @@
 id: CultureMech:000284
 name: halophile_starch_casein_medium
 original_name: HALOPHILE STARCH-CASEIN MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -105,4 +105,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALOPHILE STARCH-CASEIN MEDIUM" to "halophile_starch_casein_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.282268+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 high_metal: true

@@ -63,9 +63,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.502159'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:20:03.086597Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -80,3 +80,7 @@ curation_history:
   notes: Normalized name from "Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented
     with 0.15% soluble starch and 2% horse serum (Oxoid)" to "tryptone_soya_broth_oxoid_basingstoke_uk_supplemented_with_0_15_soluble_starch_and_2_horse_serum_oxoid"
     for consistent matching
+- timestamp: '2026-05-16T09:04:38.139379+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

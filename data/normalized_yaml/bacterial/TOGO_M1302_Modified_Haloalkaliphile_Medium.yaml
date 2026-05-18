@@ -138,9 +138,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007837'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:48.106416'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:41.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -148,8 +148,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:10.300637+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified Haloalkaliphile Medium" to
-    "modified_haloalkaliphile_medium" for consistent matching
+  notes: Normalized name from "Modified Haloalkaliphile Medium" to "modified_haloalkaliphile_medium"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:09.261514+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 solutions:
 - preferred_term: Solution A
@@ -175,12 +179,10 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:009534
   name: haloalkaliphile_medium
-  notes: Reviewed source-local Modified Haloalkaliphile concentration variant;
-    child shares the parent formulation with carbonate concentration as the
-    curated axis.
+  notes: Reviewed source-local Modified Haloalkaliphile concentration variant; child
+    shares the parent formulation with carbonate concentration as the curated axis.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Reviewed TOGO Haloalkaliphile pair; child keeps MgSO4, NaCl, KCl, CaSO4,
-  sodium glutamate, citrate, yeast extract, and casamino acids unchanged while
-  Na2CO3 increases from 8 to 80 g/L; water amount differs by source
-  normalization.
+- Reviewed TOGO Haloalkaliphile pair; child keeps MgSO4, NaCl, KCl, CaSO4, sodium
+  glutamate, citrate, yeast extract, and casamino acids unchanged while Na2CO3 increases
+  from 8 to 80 g/L; water amount differs by source normalization.

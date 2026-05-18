@@ -639,7 +639,7 @@ ingredients:
     label: ''
 description: SGW media with Northen lab exometabolite mix 1
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: SGW Northen Exometabolite mix 2x
@@ -653,6 +653,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015741'
+- timestamp: '2026-05-16T09:04:43.402339+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients
 parent_media:
@@ -660,11 +664,11 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:015740
   name: SGW Northen Exometabolite mix 1
-  notes: Both specialized records are SGW Northen Exometabolite mix formulations
-    with matching basal salts and vitamins; the child differs in the
-    exometabolite concentration set.
+  notes: Both specialized records are SGW Northen Exometabolite mix formulations with
+    matching basal salts and vitamins; the child differs in the exometabolite concentration
+    set.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- SGW Northen Exometabolite mix 2x keeps salts and vitamins unchanged while
-  lowering the parsed exometabolite components, for example D-mannitol from
-  880.5 uM to 176.1 uM and D-glucose from 824.8 uM to 164.96 uM.
+- SGW Northen Exometabolite mix 2x keeps salts and vitamins unchanged while lowering
+  the parsed exometabolite components, for example D-mannitol from 880.5 uM to 176.1
+  uM and D-glucose from 824.8 uM to 164.96 uM.

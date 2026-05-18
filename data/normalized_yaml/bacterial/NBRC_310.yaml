@@ -40,7 +40,11 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007486'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.880717'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: K2HPO42.9gKH2PO42.1gNH4Cl2gMgSO4·7H2O0.4gNaCl30mgCaCl2·2H2O3mgFeSO4·7H2O1mgYeast
     extract3gRhamnose10gDistilled water1LpH 7.0'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.682530+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

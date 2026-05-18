@@ -47,9 +47,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010084'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:02.415458'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:07.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -59,6 +59,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "R Agar With 5% NaCl" to "r_agar_with_5_nacl" for consistent
     matching
+- timestamp: '2026-05-16T09:03:19.994523+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: R agar (see Medium [M19])
   composition: []

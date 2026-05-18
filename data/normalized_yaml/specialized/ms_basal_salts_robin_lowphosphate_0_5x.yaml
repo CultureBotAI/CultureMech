@@ -110,10 +110,10 @@ ingredients:
   term:
     id: CHEBI:32312
     label: ''
-description: Murashige and Skoog Basal Salts Medium from Robin at 0.5X
-  concentration with low phosphate - 30uM
+description: Murashige and Skoog Basal Salts Medium from Robin at 0.5X concentration
+  with low phosphate - 30uM
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: MS Basal Salts Robin LowPhosphate 0.5x
@@ -127,6 +127,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015641'
+- timestamp: '2026-05-16T09:04:42.008407+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients
 parent_media:
@@ -134,11 +138,10 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:015639
   name: MS Basal Salts Robin
-  notes: Both specialized records are MS Basal Salts Robin formulations; the
-    child is explicitly labeled LowPhosphate 0.5x and is a strength/phosphate
-    variant of the parent.
+  notes: Both specialized records are MS Basal Salts Robin formulations; the child
+    is explicitly labeled LowPhosphate 0.5x and is a strength/phosphate variant of
+    the parent.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- LowPhosphate 0.5x MS Basal Salts Robin halves most parsed basal salt and trace
-  element concentrations and lowers potassium phosphate monobasic from 1250 uM
-  to 30 uM.
+- LowPhosphate 0.5x MS Basal Salts Robin halves most parsed basal salt and trace element
+  concentrations and lowers potassium phosphate monobasic from 1250 uM to 30 uM.

@@ -207,10 +207,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.266311'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: HCl'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:39.152848+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -224,9 +224,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008911'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:55.106160'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:15.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -236,6 +236,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Sulfolobus Medium (For DSM 9790)" to "sulfolobus_medium_for_dsm_9790"
     for consistent matching
+- timestamp: '2026-05-16T09:04:32.801256+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []

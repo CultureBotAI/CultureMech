@@ -1,7 +1,7 @@
 id: CultureMech:000298
 name: artificial_seawater_for_halophiles
 original_name: ARTIFICIAL SEAWATER FOR HALOPHILES
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -143,4 +143,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ARTIFICIAL SEAWATER FOR HALOPHILES" to "artificial_seawater_for_halophiles"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.222626+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 high_metal: true

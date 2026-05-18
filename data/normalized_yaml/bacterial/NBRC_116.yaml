@@ -40,8 +40,12 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007460'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.809514'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Bacto-Yeast Nitrogen Base w/o
     Amino acids (Difco)6.7gGlucose20gL-Leucine60mgL-Histidine20mgL-Tryptophan20mgL-Methionine20mgDistilled
     water1LAgar15g'
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.591026+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

@@ -186,13 +186,13 @@ preparation_steps:
   description: 'Sterilize 20 min./121°C. After cooling to 60°C add to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 7.5 (the medium is only weakly buffered; one needs
-    approx. 10 drops/l medium of 6 N KOH).
+  description: Adjust pH to 7.5 (the medium is only weakly buffered; one needs approx.
+    10 drops/l medium of 6 N KOH).
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve NTA first by neutralizing with KOH, then add other
-    salts. Adjust pH to 7.2 with KOH or H2SO4. Adjust volume to 1000.0 ml with
-    distilled water.
+  description: Dissolve NTA first by neutralizing with KOH, then add other salts.
+    Adjust pH to 7.2 with KOH or H2SO4. Adjust volume to 1000.0 ml with distilled
+    water.
 - step_number: 4
   action: HEAT
   description: Store in the dark and cold (5°C).
@@ -216,9 +216,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001752'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:22.160795'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:47.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -227,6 +227,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PYGV AGAR" to "pygv_agar" for consistent matching
+- timestamp: '2026-05-16T09:04:29.865203+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Metall salt sol. 44
   composition: []
@@ -241,5 +245,5 @@ parent_media:
   name: ekho_lake_strains_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

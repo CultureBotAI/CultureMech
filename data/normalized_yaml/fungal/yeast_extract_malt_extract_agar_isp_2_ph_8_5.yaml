@@ -83,6 +83,9 @@ curation_history:
   source: CultureMech:010528
   notes: Resolved reference by copying from yeast_extract_malt_extract_agar_isp_2
     (CultureMech:010528)
+- timestamp: '2026-05-16T08:58:22.244815+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference

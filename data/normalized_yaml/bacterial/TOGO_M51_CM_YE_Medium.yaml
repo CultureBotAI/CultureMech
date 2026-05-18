@@ -125,9 +125,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009911'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:01.456124'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:27.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -135,8 +135,11 @@ curation_history:
 - timestamp: '2026-03-17T19:46:28.840471+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CM+YE Medium" to "cm_ye_medium" for consistent
-    matching
+  notes: Normalized name from "CM+YE Medium" to "cm_ye_medium" for consistent matching
+- timestamp: '2026-05-16T09:03:18.720612+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 solutions:
 - preferred_term: Fe(2+) solution (see below)
@@ -150,11 +153,11 @@ variant_children:
   relationship: SALINITY_VARIANT
   id: CultureMech:007595
   name: modified_cm_ye_medium_a
-  notes: NaCl decreased from 200 g/L to 150 g/L while CM+YE medium components
-    remain unchanged.
+  notes: NaCl decreased from 200 g/L to 150 g/L while CM+YE medium components remain
+    unchanged.
 - path: data/normalized_yaml/bacterial/TOGO_M268_Modified_CM_YE_Medium_B.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:009242
   name: modified_cm_ye_medium_b
-  notes: Modified CM+YE Medium B decreases MgSO4 from 20 g/L to 10 g/L and NaCl
-    from 200 g/L to 100 g/L while other parsed ingredients remain unchanged.
+  notes: Modified CM+YE Medium B decreases MgSO4 from 20 g/L to 10 g/L and NaCl from
+    200 g/L to 100 g/L while other parsed ingredients remain unchanged.

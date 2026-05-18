@@ -1,7 +1,7 @@
 id: CultureMech:000254
 name: methanogenium_medium_h2_co2
 original_name: METHANOGENIUM MEDIUM (H2/CO2)
-category: ARCHAEA
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -423,3 +423,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOGENIUM MEDIUM (H2/CO2)" to "methanogenium_medium_h2_co2"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.467246+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

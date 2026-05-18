@@ -248,7 +248,7 @@ ingredients:
 description: Minimal media for marine bacteria with Sodium L-Lactate as the carbon
   source and more vitamins and minerals
 notes: 'Source: FEBA media definitions'
-category: BACTERIAL
+category: bacterial
 sources:
 - database: CultureBotHT
   database_id: DinoMM L lactateCarbon HighNutrient
@@ -262,5 +262,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015457'
+- timestamp: '2026-05-16T09:03:30.809057+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

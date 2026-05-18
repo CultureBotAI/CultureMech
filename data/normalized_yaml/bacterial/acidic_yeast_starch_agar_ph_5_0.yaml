@@ -31,14 +31,18 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010249'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:03.369383'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T19:46:31.363045+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Acidic Yeast-Starch Agar (pH 5.0)" to "acidic_yeast_starch_agar_ph_5_0"
     for consistent matching
+- timestamp: '2026-05-16T09:03:23.172157+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Yeast--starch agar (A) (see Medium [M34])
   composition: []

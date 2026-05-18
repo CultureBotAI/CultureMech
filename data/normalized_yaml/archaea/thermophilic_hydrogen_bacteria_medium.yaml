@@ -1,7 +1,7 @@
 id: CultureMech:000271
 name: thermophilic_hydrogen_bacteria_medium
 original_name: THERMOPHILIC HYDROGEN BACTERIA MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -174,3 +174,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THERMOPHILIC HYDROGEN BACTERIA MEDIUM" to "thermophilic_hydrogen_bacteria_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.838979+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1

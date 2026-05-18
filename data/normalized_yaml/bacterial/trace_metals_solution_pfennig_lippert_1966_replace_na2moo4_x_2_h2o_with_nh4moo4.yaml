@@ -39,9 +39,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004348'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:33.146907'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:49.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -52,3 +52,7 @@ curation_history:
   notes: Normalized name from "Trace metals solution (Pfennig & Lippert, 1966)_replace_Na2MoO4
     x 2 H2O_with_NH4MoO4" to "trace_metals_solution_pfennig_lippert_1966_replace_na2moo4_x_2_h2o_with_nh4moo4"
     for consistent matching
+- timestamp: '2026-05-16T09:04:37.636813+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

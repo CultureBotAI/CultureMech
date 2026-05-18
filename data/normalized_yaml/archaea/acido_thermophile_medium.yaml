@@ -1,7 +1,7 @@
 id: CultureMech:000256
 name: acido_thermophile_medium
 original_name: ACIDO-THERMOPHILE MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ph_value: 5.2
@@ -95,9 +95,7 @@ ingredients:
   notes: Pancreatic digest of gelatin, provides nitrogen and amino acids; Constituent
     of MacConkey Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: pancreatic gelatin digest
-      synonym_type: EXACT
+  - synonym_text: pancreatic gelatin digest
     synonym_type: EXACT
 - preferred_term: Proteose peptone
   term:
@@ -128,9 +126,7 @@ ingredients:
   notes: Fermentable carbohydrate for differentiation. Fermentation produces acid
     causing pH drop and color change; Constituent of MacConkey Agar commercial product
   synonyms:
-  - synonym_text:
-      synonym_text: lactose
-      synonym_type: EXACT
+  - synonym_text: lactose
     synonym_type: EXACT
 - preferred_term: Bile salts
   term:
@@ -247,3 +243,11 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACIDO-THERMOPHILE MEDIUM" to "acido_thermophile_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:02:57.207028+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
+- timestamp: '2026-05-17T07:06:05.053686+00:00'
+  curator: cleanup_residual_errors.py
+  action: CLEANUP_RESIDUAL_ERRORS
+  notes: R01_flatten_synonym_text=2

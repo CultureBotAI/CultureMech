@@ -39,9 +39,13 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007471'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:45.840435'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-05-16T09:03:06.637254+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: KH2PO40.136gNH4Cl0.54gMgCl2·6H2O3.05gCaCl2·2H2O0.147gNaCl20gTrimethylamine-HCl1.2gNaHCO32.52gVitamin
     solution*2mlTrace element solution**1mlResazurin1mgCysteine-HCl0.5gNa2S·9H2O0.5gDistilled

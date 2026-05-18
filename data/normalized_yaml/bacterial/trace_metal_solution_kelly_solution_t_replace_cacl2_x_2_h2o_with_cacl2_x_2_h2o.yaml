@@ -40,9 +40,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004345'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:33.141551'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:49.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -53,3 +53,7 @@ curation_history:
   notes: Normalized name from "Trace metal solution (Kelly solution T)_replace_CaCl2
     x 2 H2O_with_CaCl2 x 2 H2O" to "trace_metal_solution_kelly_solution_t_replace_cacl2_x_2_h2o_with_cacl2_x_2_h2o"
     for consistent matching
+- timestamp: '2026-05-16T09:04:37.628475+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

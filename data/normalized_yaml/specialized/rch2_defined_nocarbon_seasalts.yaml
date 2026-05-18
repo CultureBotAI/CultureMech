@@ -255,7 +255,7 @@ ingredients:
     unit: G_PER_L
 description: Defined minimal media with no carbon and added sea salts
 notes: 'Source: FEBA media definitions'
-category: SPECIALIZED
+category: specialized
 sources:
 - database: CultureBotHT
   database_id: RCH2 defined noCarbon SeaSalts
@@ -269,5 +269,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015720'
+- timestamp: '2026-05-16T09:04:43.083066+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
 - has_unmapped_ingredients

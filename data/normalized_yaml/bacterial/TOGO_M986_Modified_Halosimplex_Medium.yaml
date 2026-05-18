@@ -133,9 +133,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010413'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:07:04.323414'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:28.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -143,8 +143,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:32.650514+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified Halosimplex Medium" to
-    "modified_halosimplex_medium" for consistent matching
+  notes: Normalized name from "Modified Halosimplex Medium" to "modified_halosimplex_medium"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:22.546659+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 solutions:
 - preferred_term: Trace metal solution (see Medium [M292])
@@ -159,11 +163,10 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:009470
   name: halosimplex_medium
-  notes: Reviewed source-local Modified Halosimplex concentration variant; child
-    shares the parsed base formulation with MgSO4 and NaCl concentration
-    differences.
+  notes: Reviewed source-local Modified Halosimplex concentration variant; child shares
+    the parsed base formulation with MgSO4 and NaCl concentration differences.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Reviewed TOGO Halosimplex pair; child keeps K2HPO4, KCl, ammonium sulfate,
-  sodium pyruvate, glycerol, and agar unchanged while MgSO4 decreases from 20 to
-  10 g/L and NaCl increases from 200 to 210 g/L.
+- Reviewed TOGO Halosimplex pair; child keeps K2HPO4, KCl, ammonium sulfate, sodium
+  pyruvate, glycerol, and agar unchanged while MgSO4 decreases from 20 to 10 g/L and
+  NaCl increases from 200 to 210 g/L.

@@ -1,7 +1,7 @@
 id: CultureMech:000300
 name: modified_balchs_methanogens_medium
 original_name: MODIFIED BALCH'S METHANOGENS MEDIUM
-category: ARCHAEA
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -391,6 +391,13 @@ curation_history:
   changes: Copied composition from referenced medium (33 ingredients)
   source: CultureMech:002603
   notes: Resolved reference by copying from jcm_medium_no_242 (CultureMech:002603)
+- timestamp: '2026-05-16T08:57:03.267787+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-05-16T09:02:57.717404+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: category->lowercase=1
 data_quality_flags:
-  incomplete_composition: false
-  resolved_reference: true
+- resolved_reference

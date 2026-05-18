@@ -107,10 +107,10 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 204'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:21.468248'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default
     concentration for ingredient: ZnSO4 x 7 H2O'
+  timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-13T06:19:03.042851Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -124,3 +124,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ASPERGILLUS NIDULANS MINIMAL MEDIUM" to "aspergillus_nidulans_minimal_medium"
     for consistent matching
+- timestamp: '2026-05-16T09:03:25.047404+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1

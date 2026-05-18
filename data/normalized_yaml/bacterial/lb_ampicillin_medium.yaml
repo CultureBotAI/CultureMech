@@ -74,9 +74,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008244'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:50.383035'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:29:40.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -84,8 +84,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:13.454375+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LB + Ampicillin medium" to "lb_ampicillin_medium"
-    for consistent matching
+  notes: Normalized name from "LB + Ampicillin medium" to "lb_ampicillin_medium" for
+    consistent matching
+- timestamp: '2026-05-16T09:03:38.805482+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Sodium ampicillin solution (50 mg/ml)*
   composition: []
@@ -102,5 +106,5 @@ parent_media:
   name: lb_kanamycin_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

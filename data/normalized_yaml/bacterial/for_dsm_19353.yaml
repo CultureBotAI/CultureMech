@@ -398,8 +398,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:27.291172Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:09:01.305504Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -409,9 +409,9 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003628'
 - curator: schema-defaulter-v1.0
-  date: '2026-03-14T21:06:29.967794'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-03-14T00:00:00+00:00'
 - timestamp: '2026-03-17T06:30:06.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
@@ -419,17 +419,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:35.355722+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 19353" to "for_dsm_19353" for consistent
-    matching
+  notes: Normalized name from "For DSM 19353" to "for_dsm_19353" for consistent matching
+- timestamp: '2026-05-16T09:03:33.830049+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/KOMODO_1053_SULFURIMONAS_PARALVINELLA_MEDIUM.yaml
+  path: data/normalized_yaml/bacterial/KOMODO_1053_SULFURIMONAS_PARALVINELLA_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003629
   name: sulfurimonas_paralvinella_medium
-  notes: Manual review found matching DSMZ Medium 1053 source, liquid state, pH,
-    ingredient identity, and concentration signature.
+  notes: Manual review found matching DSMZ Medium 1053 source, liquid state, pH, ingredient
+    identity, and concentration signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same DSMZ/KOMODO Medium 1053 ingredient and concentration signature; reviewed
-  as duplicate DSM 19353 source record.
+- Same DSMZ/KOMODO Medium 1053 ingredient and concentration signature; reviewed as
+  duplicate DSM 19353 source record.
