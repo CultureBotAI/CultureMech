@@ -14,6 +14,30 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 
+def _infer_prep_action(text: str) -> str:
+    """Best-guess PreparationActionEnum value from a free-text step description."""
+    s = text.lower()
+    if "autoclave" in s:
+        return "AUTOCLAVE"
+    if "filter" in s and "steril" in s:
+        return "FILTER_STERILIZE"
+    if "adjust" in s and "ph" in s:
+        return "ADJUST_PH"
+    if "agar" in s:
+        return "ADD_AGAR"
+    if "pour" in s and "plate" in s:
+        return "POUR_PLATES"
+    if "aliquot" in s:
+        return "ALIQUOT"
+    if "cool" in s:
+        return "COOL"
+    if "heat" in s or "boil" in s:
+        return "HEAT"
+    if "mix" in s or "stir" in s:
+        return "MIX"
+    return "DISSOLVE"
+
+
 class CCAPImporter:
     """Import CCAP media data to CultureMech format."""
 
@@ -192,7 +216,7 @@ class CCAPImporter:
         cm_recipe['curation_history'] = [
             {
                 'curator': 'ccap-import',
-                'date': datetime.now(timezone.utc).strftime('%Y-%m-%d'),
+                'timestamp': datetime.now(timezone.utc).isoformat(),
                 'action': f'Imported from CCAP Culture Collection',
                 'notes': f'Source ID: {ccap_id}, PDF URL: {pdf_url}'
             }
@@ -205,7 +229,7 @@ class CCAPImporter:
         if pdf_url:
             xrefs.append(pdf_url)
         if xrefs:
-            cm_recipe['references'] = [{'reference_id': xref} for xref in xrefs]
+            cm_recipe['references'] = [{'reference': xref} for xref in xrefs]
 
         return cm_recipe, safe_name
 
@@ -260,7 +284,8 @@ class CCAPImporter:
                 if len(line.strip()) > 20 and not line.strip().startswith('#'):
                     steps.append({
                         'step_number': step_num,
-                        'instruction': line.strip()
+                        'action': _infer_prep_action(line.strip()),
+                        'description': line.strip()
                     })
                     step_num += 1
 
