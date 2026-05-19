@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bulk migrations for legacy field shapes in CultureMech YAMLs.
 
-Applies four mechanical migrations idempotently:
+Applies five mechanical migrations idempotently:
 
   G02  curation_history[*].date           -> timestamp (ISO-8601 with timezone)
   G04  references[*].reference_id          -> reference
@@ -9,6 +9,8 @@ Applies four mechanical migrations idempotently:
   G17  concentration.unit aliases:
          UG_PER_L  -> MICROG_PER_L
          PERCENT   -> PERCENT_W_V (when no W_V/V_V context is available)
+  G19  preparation_steps[*].instruction    -> description (+ infer `action`
+       from text when missing; PreparationActionEnum)
 
 Every file modified gets a CurationEvent appended documenting which
 migrations fired. Re-runs are no-ops.
@@ -137,11 +139,59 @@ def migrate_unit_aliases(recipe: dict) -> int:
     return _walk_concentrations(recipe)
 
 
+def _infer_prep_action(text: str) -> str:
+    """Best-guess PreparationActionEnum value from a free-text step description.
+
+    Mirrors the heuristic in src/culturemech/import/{ccap,sag,utex}_importer.py
+    so newly-written records and migrated records pick the same action.
+    """
+    s = (text or "").lower()
+    if "autoclave" in s:
+        return "AUTOCLAVE"
+    if "filter" in s and "steril" in s:
+        return "FILTER_STERILIZE"
+    if "adjust" in s and "ph" in s:
+        return "ADJUST_PH"
+    if "agar" in s:
+        return "ADD_AGAR"
+    if "pour" in s and "plate" in s:
+        return "POUR_PLATES"
+    if "aliquot" in s:
+        return "ALIQUOT"
+    if "cool" in s:
+        return "COOL"
+    if "heat" in s or "boil" in s:
+        return "HEAT"
+    if "mix" in s or "stir" in s:
+        return "MIX"
+    return "DISSOLVE"
+
+
+def migrate_preparation_step_instruction(recipe: dict) -> int:
+    steps = recipe.get("preparation_steps") or []
+    n = 0
+    for step in steps:
+        if not isinstance(step, dict):
+            continue
+        if "instruction" in step and "description" not in step:
+            text = step.pop("instruction")
+            step["description"] = text
+            if "action" not in step:
+                step["action"] = _infer_prep_action(text)
+            n += 1
+        elif "action" not in step and isinstance(step.get("description"), str):
+            # Records that already had description but never got an action.
+            step["action"] = _infer_prep_action(step["description"])
+            n += 1
+    return n
+
+
 MIGRATIONS = [
     ("curation_history.date->timestamp", migrate_curation_history_date),
     ("references.reference_id->reference", migrate_reference_id),
     ("category->lowercase", migrate_category_case),
     ("concentration.unit aliases", migrate_unit_aliases),
+    ("preparation_steps.instruction->description+action", migrate_preparation_step_instruction),
 ]
 
 
