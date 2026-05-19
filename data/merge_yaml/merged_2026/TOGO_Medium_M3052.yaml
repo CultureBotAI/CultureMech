@@ -168,7 +168,6 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.285372'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Cobalamin (1 μg/μL); Added default
     concentration for ingredient: Resazurin (1 mg/L); Added default concentration
@@ -176,10 +175,15 @@ curation_history:
     ingredient: Folic acid (5 μg/μL); Added default concentration for ingredient:
     Pyridoxamine (15 μg/μL); Added default concentration for ingredient: Biotin (1
     μg/μL); Added default concentration for ingredient: Thiamine (0.05 μg/mL)'
+  timestamp: '2026-02-03T11:20:57.285372+00:00'
 - timestamp: '2026-03-13T06:20:06.950346Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009566'
+- timestamp: '2026-05-19T00:57:55.195616+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 2b31fc560dbb36001de6e6fb3ffd8769aa556e3b290ed86e079a23eb9c5eb619
 merged_from:
 - TOGO_M3052_Unnamed_medium

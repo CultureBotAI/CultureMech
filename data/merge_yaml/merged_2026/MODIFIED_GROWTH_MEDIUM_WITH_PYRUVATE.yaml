@@ -99,13 +99,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.783137'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Tris base'
+  timestamp: '2026-02-03T11:20:58.783137+00:00'
 - timestamp: '2026-03-13T06:20:09.216362Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009828'
+- timestamp: '2026-05-19T00:57:44.900951+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 merge_fingerprint: 449965da094b01551e3ce94b489120fb124cf044ad74680dbf0797cb93be4ed5
 merged_from:

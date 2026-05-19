@@ -63,13 +63,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.598626'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Distilled water'
+  timestamp: '2026-02-03T11:20:56.598626+00:00'
 - timestamp: '2026-03-13T06:20:05.880642Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009363'
+- timestamp: '2026-05-19T00:57:55.178868+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: a42f31961a78e062e1ce2fcbbc543e5d314c4b36f28b01276101780a0b96f55f
 merged_from:
 - TOGO_M2815_Unnamed_medium

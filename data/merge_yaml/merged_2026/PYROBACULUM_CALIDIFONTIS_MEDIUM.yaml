@@ -59,13 +59,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.191712'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-02-03T11:20:58.191712+00:00'
 - timestamp: '2026-03-13T06:20:08.302888Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009711'
+- timestamp: '2026-05-19T00:57:49.914681+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: e943f35756a15ec24d3011c24df970c33b2c6db1330656e82013916a922836c4
 merged_from:
 - TOGO_M333_Pyrobaculum_Calidifontis_Medium

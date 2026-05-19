@@ -165,13 +165,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.474857'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T11:20:56.474857+00:00'
 - timestamp: '2026-03-13T06:20:05.723002Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009336'
+- timestamp: '2026-05-19T00:57:41.931695+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: e36dcf9ef5e25556fdc4f31487357ef92c686a132deeb524e211960c79556f04
 merged_from:
 - TOGO_M2789_M2SGC_broth_containing_tetracycline_10_μg_ml_or_rifampin_100_μg_ml

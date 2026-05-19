@@ -130,15 +130,19 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.426887'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Hydrogen gas'
+  timestamp: '2026-02-03T11:20:56.426887+00:00'
 - timestamp: '2026-03-13T06:20:05.648542Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009325'
+- timestamp: '2026-05-19T00:57:56.804683+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 439d7abb00d21da8998040ce9117895ff02071d81488f467b3417969b5c68c12
 merged_from:
 - TOGO_M2777_de_Man-Rogosa-Sharpe_MRS_medium_Scharlau_Chemie_supplemented_with_0.05_wt_vol_l-cysteine_hydrochloride

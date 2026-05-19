@@ -96,13 +96,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.995361'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: xylose'
+  timestamp: '2026-02-03T11:20:53.995361+00:00'
 - timestamp: '2026-03-13T06:20:02.340083Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009065'
+- timestamp: '2026-05-19T00:57:45.446258+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 7323c108bac4dd61da42039703a3023a7e9fdb79a163b5b425ccde3e58c3f8a5
 merged_from:
 - TOGO_M2491_MRSsi

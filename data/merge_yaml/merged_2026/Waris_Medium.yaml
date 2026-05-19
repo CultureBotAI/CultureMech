@@ -33,33 +33,42 @@ ingredients:
   notes: 'Original amount: DAS Vitamin Cocktail'
 preparation_steps:
 - step_number: 1
-  instruction: Important Notes To Consider:The quality of water, including natural
+  description: Important Notes To Consider:The quality of water, including natural
     seawater, is important.
+  action: DISSOLVE
 - step_number: 2
-  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+  description: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
     water, Milli-Q water (Millipore Corp.), etc.
+  action: DISSOLVE
 - step_number: 3
-  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
+  description: Natural seawater and natural freshwater should be obtained from a non-polluted
     source.When dissolving chemicals, wait for the first component to dissolve before
     adding the second.
+  action: DISSOLVE
 - step_number: 4
-  instruction: Stirring, and sometimes the addition of heat, is often required to
+  description: Stirring, and sometimes the addition of heat, is often required to
     dissolve the chemicals efficiently.
+  action: HEAT
 - step_number: 5
-  instruction: Preparation of stock solutions for frequently made algal culture media
+  description: Preparation of stock solutions for frequently made algal culture media
     make preparing media convenient but also necessary to avoid errors from weighing
     very tiny amounts.Attention should be given to the pH of the final medium.
+  action: DISSOLVE
 - step_number: 6
-  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+  description: In most cases, if pH adjustment is required, this occurs before sterilization.
+  action: ADJUST_PH
 - step_number: 7
-  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+  description: Please note that autoclaving removes carbon dioxide from media lacking
     carbonate stabilizing buffers.
+  action: AUTOCLAVE
 - step_number: 8
-  instruction: This would make the medium very alkaline soon after removal from the
+  description: This would make the medium very alkaline soon after removal from the
     autoclave.
+  action: AUTOCLAVE
 - step_number: 9
-  instruction: In these cases, you should wait approximately 24 hours for gaseous
+  description: In these cases, you should wait approximately 24 hours for gaseous
     equilibrium before inoculating the medium.
+  action: DISSOLVE
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
 temperature_range: 15-30°C depending on species
@@ -69,9 +78,9 @@ applications:
 - Microalgae research
 curation_history:
 - curator: utex-import
-  date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: waris-medium, URL: https://utex.org/products/waris-medium'
+  timestamp: '2026-01-28T00:00:00+00:00'
 - timestamp: '2026-03-13T06:18:53.709037Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -80,9 +89,14 @@ curation_history:
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: Dasycladales_Seawater_Medium, Euglena_Medium, Waris_Medium'
+- timestamp: '2026-05-19T00:57:56.478493+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1; references.reference_id->reference=2;
+    preparation_steps.instruction->description+action=9
 references:
-- reference_id: UTEX:waris-medium
-- reference_id: https://utex.org/products/waris-medium
+- reference: UTEX:waris-medium
+- reference: https://utex.org/products/waris-medium
 original_name: Waris Medium
 synonyms:
 - name: Dasycladales Seawater Medium

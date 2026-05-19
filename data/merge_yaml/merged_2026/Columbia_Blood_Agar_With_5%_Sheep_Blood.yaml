@@ -33,13 +33,17 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M248'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.990721'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sterile defibrinated sheep blood'
+  timestamp: '2026-02-03T11:20:53.990721+00:00'
 - timestamp: '2026-03-13T06:20:02.332825Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009063'
+- timestamp: '2026-05-19T00:57:36.583192+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 54452d86f4bd4271b235feca97d91580860c7687e21e7484a81523865e3555e3
 merged_from:
 - TOGO_M248_Columbia_Blood_Agar_With_5_Sheep_Blood

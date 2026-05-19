@@ -36,9 +36,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.205777'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2S'
+  timestamp: '2026-02-03T11:20:59.205777+00:00'
 - timestamp: '2026-03-09T08:04:11.814857+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -47,6 +47,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009909'
+- timestamp: '2026-05-19T00:57:45.751291+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Rhodobium gokurnum medium (see Medium [M517])
   composition: []

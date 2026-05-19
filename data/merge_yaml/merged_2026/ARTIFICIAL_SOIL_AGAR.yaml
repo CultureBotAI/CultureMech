@@ -126,14 +126,18 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.201674'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: tap water; Added default concentration
     for ingredient: leafy soil'
+  timestamp: '2026-02-03T11:20:53.201674+00:00'
 - timestamp: '2026-03-13T06:20:01.121752Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008896'
+- timestamp: '2026-05-19T00:57:33.942811+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: daf4e197868829dda1bfaa35255222fbc9ec66c7ca13dc65d834a2356cb8c5bb
 merged_from:
 - TOGO_M230_Artificial_Soil_Agar

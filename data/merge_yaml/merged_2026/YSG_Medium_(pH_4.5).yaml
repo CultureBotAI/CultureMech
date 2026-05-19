@@ -69,9 +69,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:49.726354'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-02-03T11:20:49.726354+00:00'
 - timestamp: '2026-03-09T08:04:36.326432+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -88,6 +88,10 @@ curation_history:
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1739_YSG_Medium, TOGO_M1780_YSG_Medium_pH_4.5'
+- timestamp: '2026-05-19T00:57:56.657860+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Solution A*
   term:

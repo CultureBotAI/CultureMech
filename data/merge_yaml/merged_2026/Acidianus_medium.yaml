@@ -191,15 +191,19 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:50.511091'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     N2; Added default concentration for ingredient: Hydrogen gas'
+  timestamp: '2026-02-03T11:20:50.511091+00:00'
 - timestamp: '2026-03-13T06:19:57.091035Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008458'
+- timestamp: '2026-05-19T00:57:34.156205+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: a24ea4095a665149fd724b25b4904ba6b347dc081ec02f87c2236b0a227fa121
 merged_from:
 - TOGO_M1884_Acidianus_medium

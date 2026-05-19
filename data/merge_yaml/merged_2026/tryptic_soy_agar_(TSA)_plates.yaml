@@ -29,13 +29,17 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2931'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.853021'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: tryptic soy agar (TSA) plates'
+  timestamp: '2026-02-03T11:20:56.853021+00:00'
 - timestamp: '2026-03-13T06:20:06.292408Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009465'
+- timestamp: '2026-05-19T00:57:56.940214+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: fc60a0e7cee427ae4a390f2ea7a0e90a917f494f803f388c8bee81458f668c0b
 merged_from:
 - TOGO_M2931_tryptic_soy_agar_TSA_plates

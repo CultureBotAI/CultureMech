@@ -80,13 +80,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.445431'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T11:20:52.445431+00:00'
 - timestamp: '2026-03-13T06:19:59.962965Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008742'
+- timestamp: '2026-05-19T00:57:48.450055+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: d56ce2417ab7f729c72bbde6405eb40b2225b99f9712f42a73148b9ef71d5f11
 merged_from:
 - TOGO_M2148_Nissui_Plate_Sheep_Blood_Agar_with_CO2

@@ -224,7 +224,6 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.954608'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
@@ -232,6 +231,7 @@ curation_history:
     default concentration for ingredient: TiCl3; Added default concentration for ingredient:
     Na2CO3 solution; Added default concentration for ingredient: NaOH; Added default
     concentration for ingredient: N2'
+  timestamp: '2026-02-03T11:21:00.954608+00:00'
 - timestamp: '2026-02-06T05:10:30.640486Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -249,6 +249,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010279'
+- timestamp: '2026-05-19T00:57:36.806203+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []

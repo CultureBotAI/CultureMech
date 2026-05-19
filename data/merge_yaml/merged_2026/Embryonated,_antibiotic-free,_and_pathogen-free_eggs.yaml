@@ -24,13 +24,17 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2275'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.985927'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Whole egg'
+  timestamp: '2026-02-03T11:20:52.985927+00:00'
 - timestamp: '2026-03-13T06:20:00.811403Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008861'
+- timestamp: '2026-05-19T00:57:38.568464+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: ca118df8a4c6dc94fbcbb096a956a16d54019b8247d763700a84b7d738ec708b
 merged_from:
 - TOGO_M2275_Embryonated_antibiotic-free_and_pathogen-free_eggs
