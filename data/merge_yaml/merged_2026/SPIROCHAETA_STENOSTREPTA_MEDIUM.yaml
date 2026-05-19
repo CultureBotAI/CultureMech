@@ -94,14 +94,18 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.840978'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: agar; Added default concentration
     for ingredient: KOH; Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T11:21:00.840978+00:00'
 - timestamp: '2026-03-13T06:20:12.479455Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010259'
+- timestamp: '2026-05-19T00:40:22.921492+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: f8caf22c9898f98e88c7042cfd9ad76c13d0813726b344c32ef0d986a4455899
 merged_from:
 - TOGO_M844_Spirochaeta_Stenostrepta_Medium

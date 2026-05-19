@@ -47,13 +47,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.500977'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T11:20:56.500977+00:00'
 - timestamp: '2026-03-13T06:20:05.758493Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009339'
+- timestamp: '2026-05-19T00:40:06.086279+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 0f6eef9ef0b9f4a1bbf20365a1e04c35cd41ac1441886a692f7f07b57e6f3600
 merged_from:
 - TOGO_M2791_Blood_agar_TSA_with_5_sheep_blood_Remel

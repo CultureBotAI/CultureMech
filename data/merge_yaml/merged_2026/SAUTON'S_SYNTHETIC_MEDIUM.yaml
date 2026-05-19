@@ -95,13 +95,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.447604'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NH4OH'
+  timestamp: '2026-02-03T11:20:59.447604+00:00'
 - timestamp: '2026-03-13T06:20:10.263395Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009954'
+- timestamp: '2026-05-19T00:40:22.342480+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 89af22c9362734d03681671e94f6c23189e27d9887a6ca4d3b11ad15538f4c31
 merged_from:
 - TOGO_M55_Sauton_s_Synthetic_Medium

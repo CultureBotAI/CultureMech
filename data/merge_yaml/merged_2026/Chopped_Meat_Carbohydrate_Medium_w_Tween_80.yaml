@@ -131,13 +131,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:55.894934'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Nitrogen gas'
+  timestamp: '2026-02-03T11:20:55.894934+00:00'
 - timestamp: '2026-03-13T06:20:04.958000Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009272'
+- timestamp: '2026-05-19T00:40:07.383381+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: a13cbb7bd13e603da46bb803a0cb733ff1b7b5c3b1ac4857a0f459552e85af43
 merged_from:
 - TOGO_M2721_Chopped_Meat_Carbohydrate_Medium_w_Tween_80

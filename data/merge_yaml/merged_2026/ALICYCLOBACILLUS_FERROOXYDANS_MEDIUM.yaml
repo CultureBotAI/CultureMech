@@ -97,9 +97,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.151585'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-02-03T11:21:00.151585+00:00'
 - timestamp: '2026-03-09T08:05:10.266272+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -116,6 +116,10 @@ curation_history:
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M704_Alicyclobacillus_Ferrooxydans_Medium, TOGO_M705_Alicyclobacillus_Ferrooxydans_Medium'
+- timestamp: '2026-05-19T00:40:04.122666+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Solution A
   term:

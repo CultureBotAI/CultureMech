@@ -259,9 +259,9 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C89'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:17.222760'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+  timestamp: '2026-02-03T11:20:17.222760+00:00'
 - timestamp: '2026-03-13T03:09:02.914436Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -270,6 +270,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000403'
+- timestamp: '2026-05-19T00:40:22.361651+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: b63bd9967a21002f2fd1676be5b7ef20822d925a0988049ba129ee9ad3f134af
 merged_from:
 - CCAP_C89_SBBM

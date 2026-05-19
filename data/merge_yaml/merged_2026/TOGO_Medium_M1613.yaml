@@ -123,13 +123,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:48.500412'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: FeCl3'
+  timestamp: '2026-02-03T11:20:48.500412+00:00'
 - timestamp: '2026-03-13T06:19:54.114021Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008167'
+- timestamp: '2026-05-19T00:40:26.113294+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 3be7bd229666bec917d921be6d3ad8440e48c39724a8769bb2975ead8621664f
 merged_from:
 - TOGO_M1613_Unnamed_medium

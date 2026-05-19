@@ -123,9 +123,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.462587'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T11:20:58.462587+00:00'
 - timestamp: '2026-03-09T08:05:06.278760+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -138,6 +138,10 @@ curation_history:
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M383_MV_Lactate_Medium, TOGO_M396_Desulfovibrio_Piger_Medium'
+- timestamp: '2026-05-19T00:40:16.846226+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []

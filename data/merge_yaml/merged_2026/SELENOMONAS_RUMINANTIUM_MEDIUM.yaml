@@ -110,13 +110,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:55.061205'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T11:20:55.061205+00:00'
 - timestamp: '2026-03-13T06:20:03.859126Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009195'
+- timestamp: '2026-05-19T00:40:22.537634+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 609f01c67c431f8dcf32db44ae8591845f7bbd95c30fd02d40b87545abf34d57
 merged_from:
 - TOGO_M2638_Selenomonas_Ruminantium_Medium

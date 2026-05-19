@@ -297,11 +297,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:51.723292'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: nitrogen gas; Added default concentration for ingredient:
     CO2 gas; Added default concentration for ingredient: N2 gas'
+  timestamp: '2026-02-03T11:20:51.723292+00:00'
 - timestamp: '2026-03-09T08:04:37.998770+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -318,6 +318,10 @@ curation_history:
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1977_Medium_for_Strain_BSN1, TOGO_M2044_Medium_for_Strain_T08'
+- timestamp: '2026-05-19T00:40:17.532589+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 solutions:
 - preferred_term: Trace element mixture*

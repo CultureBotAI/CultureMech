@@ -191,14 +191,18 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:48.628660'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas'
+  timestamp: '2026-02-03T11:20:48.628660+00:00'
 - timestamp: '2026-03-13T06:19:54.308699Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008190'
+- timestamp: '2026-05-19T00:40:27.162466+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: b9f2732e1efd3ff42416eb85628e626f7c3c675c5fe7c4ebc5ac854093795d36
 merged_from:
 - TOGO_M1635_Thermoproteus_tenax_Medium_2

@@ -129,14 +129,18 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:49.603924'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas'
+  timestamp: '2026-02-03T11:20:49.603924+00:00'
 - timestamp: '2026-03-13T06:19:55.782951Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008330'
+- timestamp: '2026-05-19T00:40:07.552360+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: e554eb0be804a923d1e1774f1e8bf43d1ee3a501c025f60d3ad876b4f0a87e5e
 merged_from:
 - TOGO_M1765_Clostridium_thermocellum_Medium_D58_Medium

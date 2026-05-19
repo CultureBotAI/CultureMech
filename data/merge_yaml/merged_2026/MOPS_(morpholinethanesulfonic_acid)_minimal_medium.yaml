@@ -151,7 +151,6 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.938288'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CaCl2; Added default concentration
     for ingredient: Micronutrients; Added default concentration for ingredient: H3BO3;
@@ -159,6 +158,7 @@ curation_history:
     for ingredient: CoCl2; Added default concentration for ingredient: MnCl2; Added
     default concentration for ingredient: ZnSO4; Added default concentration for ingredient:
     (NH4)6(MO7)24'
+  timestamp: '2026-02-03T11:20:56.938288+00:00'
 - timestamp: '2026-02-06T05:10:37.943745Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -168,6 +168,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009501'
+- timestamp: '2026-05-19T00:40:16.580404+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 03b86fdc1670c9a1491648742388a3e42efbc69e651f51093602a5c5ee0d5165
 merged_from:
 - TOGO_M2978_MOPS_morpholinethanesulfonic_acid_minimal_medium

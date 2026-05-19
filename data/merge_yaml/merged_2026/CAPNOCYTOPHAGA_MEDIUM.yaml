@@ -87,13 +87,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.859123'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T11:20:58.859123+00:00'
 - timestamp: '2026-03-13T06:20:09.344294Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009846'
+- timestamp: '2026-05-19T00:40:06.395585+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: f483e636fcbd6d22e41f4b13a5b6dee8832a459fd906532ef74781e296be7483
 merged_from:
 - TOGO_M459_Capnocytophaga_Medium

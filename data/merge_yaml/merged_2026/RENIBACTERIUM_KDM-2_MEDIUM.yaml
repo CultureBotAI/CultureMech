@@ -72,13 +72,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.976155'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-02-03T11:20:57.976155+00:00'
 - timestamp: '2026-03-13T06:20:08.005974Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009669'
+- timestamp: '2026-05-19T00:40:21.759722+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 5317c4040c527d132f61eaaa8d8b71f43b6344ef6cb9c924fc153acfe1d660c1
 merged_from:
 - TOGO_M322_Renibacterium_KDM-2_Medium

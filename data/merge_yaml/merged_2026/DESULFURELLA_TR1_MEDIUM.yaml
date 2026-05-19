@@ -119,12 +119,12 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:46.201104'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Resazurin; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Nitrogen gas; Added default concentration for ingredient: Carbon dioxide gas;
     Added default concentration for ingredient: Nitrogen gas'
+  timestamp: '2026-02-03T11:20:46.201104+00:00'
 - timestamp: '2026-03-09T08:04:41.323502+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -137,6 +137,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007676'
+- timestamp: '2026-05-19T00:40:08.742205+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Acid trace element solution (see Medium [M609])
   composition: []

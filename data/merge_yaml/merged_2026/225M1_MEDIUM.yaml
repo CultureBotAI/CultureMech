@@ -103,13 +103,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:01.405847'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+  timestamp: '2026-02-03T11:21:01.405847+00:00'
 - timestamp: '2026-03-13T06:20:13.351836Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010371'
+- timestamp: '2026-05-19T00:40:03.387693+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: bbc8e1b4fcc6a0384d93127235dc1310d00216dafb12df4543a87b6386a1515f
 merged_from:
 - TOGO_M948_225M1_Medium

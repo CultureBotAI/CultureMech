@@ -93,13 +93,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.940171'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Agar'
+  timestamp: '2026-02-03T11:20:52.940171+00:00'
 - timestamp: '2026-03-13T06:20:00.733554Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008848'
+- timestamp: '2026-05-19T00:40:24.415553+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: e1fc70ef52027951d4863bb06231f02bca658eaa709955b70743417edfd14989
 merged_from:
 - TOGO_M2261_THB_agar_plates_containing_5_vol_vol_sheep_blood

@@ -23,13 +23,17 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2829'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.633850'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: LB agar'
+  timestamp: '2026-02-03T11:20:56.633850+00:00'
 - timestamp: '2026-03-13T06:20:05.933986Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009373'
+- timestamp: '2026-05-19T00:40:12.600335+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 867729a21a13372ad5f2fa61d33530d52a1e21621e70c9c153be4e2aa2ce5007
 merged_from:
 - TOGO_M2829_LB_agar

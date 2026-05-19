@@ -79,15 +79,19 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.506325'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Hydrogen gas'
+  timestamp: '2026-02-03T11:20:56.506325+00:00'
 - timestamp: '2026-03-13T06:20:05.767130Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009342'
+- timestamp: '2026-05-19T00:40:27.376862+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 4aa5f4714d56d88227a5ab054449c33f322819a2e3158fd3bef86e57f0635d6e
 merged_from:
 - TOGO_M2794_Tryptic_soy_broth_medium_supplemented_with_0.5_yeast_extract_0.05_cysteine_HCl-H2O_0.5_mg_ml_of_hemin_2_μg_ml_of_vitamin_K1_and_5_sheep_blood

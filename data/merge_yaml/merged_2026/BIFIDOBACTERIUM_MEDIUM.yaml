@@ -90,14 +90,18 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:48.196787'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sodium ascorbate; Added default
     concentration for ingredient: cysteine-HCl'
+  timestamp: '2026-02-03T11:20:48.196787+00:00'
 - timestamp: '2026-03-13T06:19:53.691416Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008127'
+- timestamp: '2026-05-19T00:40:05.759473+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: ad9e567d96d6f5f5db04fbdc3285a442088915041868c0af5a55d0c70ebc25a7
 merged_from:
 - TOGO_M1578_Bifidobacterium_Medium

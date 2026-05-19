@@ -77,13 +77,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.940125'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3'
+  timestamp: '2026-02-03T11:20:58.940125+00:00'
 - timestamp: '2026-03-13T06:20:09.471077Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009863'
+- timestamp: '2026-05-19T00:40:05.516808+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 213a0a937073a11c73f888071a0f8a918cf25dbf64bd7dcf0470ebb2b23a601d
 merged_from:
 - TOGO_M477_Bacillus_Okhensis_Medium

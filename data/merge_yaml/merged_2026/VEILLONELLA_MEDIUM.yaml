@@ -107,13 +107,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.912409'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: K2CO3'
+  timestamp: '2026-02-03T11:20:58.912409+00:00'
 - timestamp: '2026-03-13T06:20:09.426637Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009857'
+- timestamp: '2026-05-19T00:40:27.513402+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: e057c5de659f29ddc9be6e37df1a2566da62427ba04843dee82efdef5e00c40d
 merged_from:
 - TOGO_M469_Veillonella_Medium

@@ -30,14 +30,18 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2486'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.982550'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: BHI (Becton, Dickinson and Company,
     Baltimore, MD)'
+  timestamp: '2026-02-03T11:20:53.982550+00:00'
 - timestamp: '2026-03-13T06:20:02.319429Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009059'
+- timestamp: '2026-05-19T00:40:05.732032+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 10716401995c43537b1bf8c72faf2791ebe3fb941f2fd1788d198e9038ad1b54
 merged_from:
 - TOGO_M2486_BHI_supplemented_with_0.1_Tween_80_pH_8.0

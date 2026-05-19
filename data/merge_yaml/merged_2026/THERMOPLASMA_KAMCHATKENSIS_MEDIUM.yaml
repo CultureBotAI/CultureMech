@@ -108,15 +108,19 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:47.220505'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Nitrogen gas'
+  timestamp: '2026-02-03T11:20:47.220505+00:00'
 - timestamp: '2026-03-13T06:19:52.079928Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007869'
+- timestamp: '2026-05-19T00:40:25.005819+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 07766cd7f2cf0687c181776d74218262abcd9f24d6dcef234193d6543f6085d7
 merged_from:
 - TOGO_M1333_Thermoplasma_Kamchatkensis_Medium

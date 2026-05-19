@@ -442,9 +442,9 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.834879'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: MOPS buffer'
+  timestamp: '2026-02-03T11:20:52.834879+00:00'
 - timestamp: '2026-02-06T05:10:46.923831Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
@@ -454,6 +454,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008827'
+- timestamp: '2026-05-19T00:40:06.530261+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 merge_fingerprint: 41e7330c2b0108f52b014bbaa06bf59b34bd1146583c4e34fa4386c9743b8400
 merged_from:

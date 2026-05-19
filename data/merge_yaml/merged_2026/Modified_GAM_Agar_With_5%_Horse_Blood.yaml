@@ -46,13 +46,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.100211'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Defibrinated horse blood'
+  timestamp: '2026-02-03T11:20:57.100211+00:00'
 - timestamp: '2026-03-13T06:20:06.678447Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009536'
+- timestamp: '2026-05-19T00:40:18.708793+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: fd487ceca476e5200debc0ad766872eb5b1a496977789e0ee735f2d803cb1f74
 merged_from:
 - TOGO_M3025_Modified_GAM_Agar_With_5_Horse_Blood

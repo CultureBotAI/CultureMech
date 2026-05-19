@@ -86,10 +86,10 @@ curation_history:
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 204
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:33.659857'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default
     concentration for ingredient: ZnSO4 x 7 H2O'
+  timestamp: '2026-02-03T11:20:33.659857+00:00'
 - timestamp: '2026-03-13T03:08:38.268255Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -98,6 +98,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004322'
+- timestamp: '2026-05-19T00:40:04.948415+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: f6fd3ce1b9ef02f72228494487e9c2ab1f04babfcc7ac08df79d50ee7dfcc4e4
 merged_from:
 - KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM

@@ -119,13 +119,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.726890'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-02-03T11:20:56.726890+00:00'
 - timestamp: '2026-03-13T06:20:06.083032Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009411'
+- timestamp: '2026-05-19T00:40:28.190794+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: eafc4e09f67f76b78a48e18648749efc41eea2eb681ef7580af6b960ba010898
 merged_from:
 - TOGO_M2877_basal_salts_medium

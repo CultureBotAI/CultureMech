@@ -60,13 +60,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.859540'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: 1,4--dithiothreitol (DTT)'
+  timestamp: '2026-02-03T11:21:00.859540+00:00'
 - timestamp: '2026-03-13T06:20:12.508875Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010263'
+- timestamp: '2026-05-19T00:40:12.558997+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: f24f8fdcc4c5fe7a10e320657b80ae94c101788e63e5e0602c3acd16d1c69f74
 merged_from:
 - TOGO_M848_LB_Luria-Bertani_Broth_With_1_mM_DTT

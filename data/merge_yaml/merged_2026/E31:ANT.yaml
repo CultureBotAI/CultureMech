@@ -198,9 +198,9 @@ curation_history:
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C32'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:17.005270'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+  timestamp: '2026-02-03T11:20:17.005270+00:00'
 - timestamp: '2026-03-13T03:09:23.824882Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -213,6 +213,10 @@ curation_history:
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: CCAP_C29_E26_Biotin_ANT, CCAP_C32_E31_ANT'
+- timestamp: '2026-05-19T00:40:09.387915+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 synonyms:
 - name: E26 + Biotin:ANT
   source: MediaDive
