@@ -305,11 +305,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.377611'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     NaOH'
+  timestamp: '2026-02-03T11:20:52.377611+00:00'
 - timestamp: '2026-03-09T08:04:11.094255+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -326,6 +326,10 @@ curation_history:
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2111_MM_W_medium_MeOH, TOGO_M2132_Modified_MB_W_medium'
+- timestamp: '2026-05-19T00:57:47.559118+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Vitamin solution*
   term:

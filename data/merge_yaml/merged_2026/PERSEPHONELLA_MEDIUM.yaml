@@ -228,11 +228,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.066395'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: CO2; Added default concentration for ingredient: O2; Added default
     concentration for ingredient: H2'
+  timestamp: '2026-02-03T11:20:53.066395+00:00'
 - timestamp: '2026-03-09T08:04:29.229883+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -241,6 +241,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008870'
+- timestamp: '2026-05-19T00:57:49.097386+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 solutions:
 - preferred_term: Trace element solution (see below)

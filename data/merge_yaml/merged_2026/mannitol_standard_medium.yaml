@@ -56,13 +56,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.673540'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Hydrochloric acid'
+  timestamp: '2026-02-03T11:20:56.673540+00:00'
 - timestamp: '2026-03-13T06:20:05.994683Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009387'
+- timestamp: '2026-05-19T00:57:56.853892+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: bff17664cf136369fd149c3937669b4fe8f00dd64f8611c9763d2d8bee7912db
 merged_from:
 - TOGO_M2845_mannitol_standard_medium

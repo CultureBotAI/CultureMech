@@ -132,11 +132,11 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:51.391667'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     nitrogen gas; Added default concentration for ingredient: nitrogen gas'
+  timestamp: '2026-02-03T11:20:51.391667+00:00'
 - timestamp: '2026-03-09T08:05:05.835268+00:00'
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
@@ -153,6 +153,10 @@ curation_history:
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1766_Clostridium_thermocellum_Medium_D58_Medium, TOGO_M2000_Modified_D58_medium'
+- timestamp: '2026-05-19T00:57:47.423440+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 solutions:
 - preferred_term: Solution A*
   term:

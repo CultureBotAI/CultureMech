@@ -108,10 +108,10 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.968115'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: H2'
+  timestamp: '2026-02-03T11:20:54.968115+00:00'
 - timestamp: '2026-03-13T03:09:18.764637Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -120,6 +120,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009183'
+- timestamp: '2026-05-19T00:57:47.389110+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: c1d18dbf595b0d1c78052f141449f3468eedbf2f98274c51458a2964a8979a80
 merged_from:
 - TOGO_M2616_Modified_Baar_s_Medium_For_Sulfate_Reducers

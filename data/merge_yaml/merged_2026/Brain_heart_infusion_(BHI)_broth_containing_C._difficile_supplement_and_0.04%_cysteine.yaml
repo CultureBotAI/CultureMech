@@ -69,17 +69,21 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.586617'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Hydrogen gas; Added default concentration for ingredient: C. difficile supplement;
     Added default concentration for ingredient: D-cycloserine; Added default concentration
     for ingredient: Cefoxitin'
+  timestamp: '2026-02-03T11:20:56.586617+00:00'
 - timestamp: '2026-03-13T06:20:05.863937Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009359'
+- timestamp: '2026-05-19T00:57:35.146249+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 46b41d9013826eaabf53bc2119e2cf4a8c4d0a72debbb6dfe652cafbabe857c0
 merged_from:
 - TOGO_M2811_Brain_heart_infusion_BHI_broth_containing_C._difficile_supplement_and_0.04_cysteine

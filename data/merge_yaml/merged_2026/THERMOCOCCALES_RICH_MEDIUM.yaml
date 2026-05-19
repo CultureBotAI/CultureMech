@@ -167,13 +167,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.847330'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+  timestamp: '2026-02-03T11:21:00.847330+00:00'
 - timestamp: '2026-03-13T06:20:12.488093Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010260'
+- timestamp: '2026-05-19T00:57:53.324339+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: c2123a51db329c08d7d4bade07e99f16d3299b47d9de957972684980cb2586c0
 merged_from:
 - TOGO_M845_Thermococcales_Rich_Medium

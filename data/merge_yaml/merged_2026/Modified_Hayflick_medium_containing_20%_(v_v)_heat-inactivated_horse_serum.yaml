@@ -67,13 +67,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.736670'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Penicillin G (Parke)'
+  timestamp: '2026-02-03T11:20:52.736670+00:00'
 - timestamp: '2026-03-13T06:20:00.436335Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008811'
+- timestamp: '2026-05-19T00:57:47.478838+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: e4c24c293759574db5ff9fc329ec631d2bda204329913d229a939dde0d108f2b
 merged_from:
 - TOGO_M2223_Modified_Hayflick_medium_containing_20_v_v_heat-inactivated_horse_serum

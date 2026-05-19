@@ -108,14 +108,18 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:46.793214'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH; Added default concentration
     for ingredient: N2'
+  timestamp: '2026-02-03T11:20:46.793214+00:00'
 - timestamp: '2026-03-13T06:19:51.421651Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007782'
+- timestamp: '2026-05-19T00:57:35.975950+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: bb72448697b932032eb5e3d28b8385351a5ba5fab0fda0f1b97748837c254b04
 merged_from:
 - TOGO_M1251_Clostridum_G4_Medium

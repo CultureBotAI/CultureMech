@@ -104,13 +104,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:45.727666'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+  timestamp: '2026-02-03T11:20:45.727666+00:00'
 - timestamp: '2026-03-13T06:19:49.816817Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007579'
+- timestamp: '2026-05-19T00:57:40.030107+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 high_metal: true
 merge_fingerprint: a70e9c8522cbc368d19881784e40b190cd2cad35320685d87ffb83167238d41d
 merged_from:

@@ -24,14 +24,18 @@ curation_history:
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2515'
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.038086'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: tryptic soy broth (TSB; Difco,
     Detroit, MI, USA)'
+  timestamp: '2026-02-03T11:20:54.038086+00:00'
 - timestamp: '2026-03-13T06:20:02.418772Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009086'
+- timestamp: '2026-05-19T00:57:55.978552+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 59aae1763d1f3fc4fc2fd68eed940a8c522ea3fa323016c18ff228e529254a23
 merged_from:
 - TOGO_M2515_tryptic_soy_broth

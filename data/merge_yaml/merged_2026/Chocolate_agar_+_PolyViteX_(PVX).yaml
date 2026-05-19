@@ -94,13 +94,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:52.449867'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+  timestamp: '2026-02-03T11:20:52.449867+00:00'
 - timestamp: '2026-03-13T06:19:59.968373Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008743'
+- timestamp: '2026-05-19T00:57:36.375853+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 7fe02e588d4458e6f7bf15dd395bed26ff85090bc3df0becf6c57fa1d41b688d
 merged_from:
 - TOGO_M2149_Chocolate_agar_PolyViteX_PVX

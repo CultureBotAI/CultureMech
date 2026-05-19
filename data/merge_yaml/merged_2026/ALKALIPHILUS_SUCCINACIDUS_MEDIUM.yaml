@@ -128,14 +128,18 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.868721'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas'
+  timestamp: '2026-02-03T11:20:59.868721+00:00'
 - timestamp: '2026-03-13T06:20:10.948392Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010049'
+- timestamp: '2026-05-19T00:57:33.321173+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: 1b52d85f8892f8df0f6c8fe9cd81266773553387c93ea99454ca5ee26f76c891
 merged_from:
 - TOGO_M648_Alkaliphilus_Succinacidus_Medium

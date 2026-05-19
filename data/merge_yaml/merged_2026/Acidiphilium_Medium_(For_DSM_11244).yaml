@@ -93,13 +93,17 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.272112'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+  timestamp: '2026-02-03T11:20:53.272112+00:00'
 - timestamp: '2026-03-13T06:20:01.241412Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008912'
+- timestamp: '2026-05-19T00:57:34.174525+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=1
 merge_fingerprint: e4b6cd06312f7a4a7ed87f3a235e953e9fa4bcd851d4275fd7665e775f4159ef
 merged_from:
 - TOGO_M2325_Acidiphilium_Medium_For_DSM_11244
