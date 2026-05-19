@@ -6,7 +6,7 @@ to maximize successful schema validation.
 
 import logging
 from copy import deepcopy
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Dict, List
 
 logger = logging.getLogger(__name__)
@@ -286,7 +286,7 @@ class SchemaDefaulter:
 
         entry = {
             'curator': 'schema-defaulter-v1.0',
-            'date': datetime.now().isoformat(),
+            'timestamp': datetime.now(timezone.utc).isoformat(),
             'action': 'Applied schema defaults and normalizations',
             'notes': '; '.join(self.changes_made)
         }

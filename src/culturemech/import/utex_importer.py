@@ -14,6 +14,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+from culturemech.preparation_actions import infer_prep_action
+
 
 class UTEXImporter:
     """Import UTEX media data to CultureMech format."""
@@ -150,8 +152,12 @@ class UTEXImporter:
             # Split preparation into steps
             steps = self._parse_preparation(prep)
             if steps:
-                cm_recipe['preparation_steps'] = [{'step_number': i+1, 'instruction': step}
-                                                    for i, step in enumerate(steps)]
+                cm_recipe['preparation_steps'] = [
+                    {'step_number': i + 1,
+                     'action': infer_prep_action(step),
+                     'description': step}
+                    for i, step in enumerate(steps)
+                ]
 
         # Add notes
         notes = recipe.get('notes')
@@ -179,7 +185,7 @@ class UTEXImporter:
         cm_recipe['curation_history'] = [
             {
                 'curator': 'utex-import',
-                'date': datetime.now(timezone.utc).strftime('%Y-%m-%d'),
+                'timestamp': datetime.now(timezone.utc).isoformat(),
                 'action': f'Imported from UTEX Culture Collection',
                 'notes': f'Source ID: {utex_id}, URL: {recipe.get("url", "")}'
             }
@@ -192,7 +198,7 @@ class UTEXImporter:
         if recipe.get('url'):
             xrefs.append(recipe['url'])
         if xrefs:
-            cm_recipe['references'] = [{'reference_id': xref} for xref in xrefs]
+            cm_recipe['references'] = [{'reference': xref} for xref in xrefs]
 
         return cm_recipe, safe_name
 

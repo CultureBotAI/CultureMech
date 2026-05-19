@@ -13,6 +13,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+from culturemech.preparation_actions import infer_prep_action
+
 
 class CCAPImporter:
     """Import CCAP media data to CultureMech format."""
@@ -192,7 +194,7 @@ class CCAPImporter:
         cm_recipe['curation_history'] = [
             {
                 'curator': 'ccap-import',
-                'date': datetime.now(timezone.utc).strftime('%Y-%m-%d'),
+                'timestamp': datetime.now(timezone.utc).isoformat(),
                 'action': f'Imported from CCAP Culture Collection',
                 'notes': f'Source ID: {ccap_id}, PDF URL: {pdf_url}'
             }
@@ -205,7 +207,7 @@ class CCAPImporter:
         if pdf_url:
             xrefs.append(pdf_url)
         if xrefs:
-            cm_recipe['references'] = [{'reference_id': xref} for xref in xrefs]
+            cm_recipe['references'] = [{'reference': xref} for xref in xrefs]
 
         return cm_recipe, safe_name
 
@@ -260,7 +262,8 @@ class CCAPImporter:
                 if len(line.strip()) > 20 and not line.strip().startswith('#'):
                     steps.append({
                         'step_number': step_num,
-                        'instruction': line.strip()
+                        'action': infer_prep_action(line.strip()),
+                        'description': line.strip()
                     })
                     step_num += 1
 

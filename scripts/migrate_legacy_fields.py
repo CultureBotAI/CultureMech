@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bulk migrations for legacy field shapes in CultureMech YAMLs.
 
-Applies four mechanical migrations idempotently:
+Applies five mechanical migrations idempotently:
 
   G02  curation_history[*].date           -> timestamp (ISO-8601 with timezone)
   G04  references[*].reference_id          -> reference
@@ -9,6 +9,8 @@ Applies four mechanical migrations idempotently:
   G17  concentration.unit aliases:
          UG_PER_L  -> MICROG_PER_L
          PERCENT   -> PERCENT_W_V (when no W_V/V_V context is available)
+  G19  preparation_steps[*].instruction    -> description (+ infer `action`
+       from text when missing; PreparationActionEnum)
 
 Every file modified gets a CurationEvent appended documenting which
 migrations fired. Re-runs are no-ops.
@@ -26,6 +28,8 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+
+from culturemech.preparation_actions import infer_prep_action
 
 CURATOR = "migrate_legacy_fields.py"
 ACTION = "MIGRATED_LEGACY_FIELDS"
@@ -137,11 +141,49 @@ def migrate_unit_aliases(recipe: dict) -> int:
     return _walk_concentrations(recipe)
 
 
+def migrate_preparation_step_instruction(recipe: dict) -> int:
+    """Drop legacy ``instruction`` keys from preparation steps.
+
+    The schema's ``PreparationStep`` class declares ``additionalProperties:
+    false`` and requires ``description`` + ``action``. The legacy importers
+    (and an earlier pass of this script) wrote ``instruction`` instead of
+    ``description``; some records have only ``instruction``, others have
+    both ``instruction`` and ``description`` after a partial migration.
+
+    For every step we now:
+
+    - drop ``instruction`` unconditionally if it is present (it is never
+      schema-valid);
+    - promote its value to ``description`` only if ``description`` is
+      absent (don't overwrite curator-set descriptions);
+    - back-fill ``action`` from the text when missing, using the same
+      heuristic as the importers (``infer_prep_action``).
+    """
+    steps = recipe.get("preparation_steps") or []
+    n = 0
+    for step in steps:
+        if not isinstance(step, dict):
+            continue
+        changed = False
+        if "instruction" in step:
+            legacy = step.pop("instruction")
+            if "description" not in step and isinstance(legacy, str):
+                step["description"] = legacy
+            changed = True
+        if "action" not in step and isinstance(step.get("description"), str):
+            step["action"] = infer_prep_action(step["description"])
+            changed = True
+        if changed:
+            n += 1
+    return n
+
+
 MIGRATIONS = [
     ("curation_history.date->timestamp", migrate_curation_history_date),
     ("references.reference_id->reference", migrate_reference_id),
     ("category->lowercase", migrate_category_case),
     ("concentration.unit aliases", migrate_unit_aliases),
+    ("preparation_steps.instruction->description+action", migrate_preparation_step_instruction),
 ]
 
 

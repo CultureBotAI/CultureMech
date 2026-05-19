@@ -724,9 +724,12 @@ classes:
           - Populated from MediaIngredientMech metadata
 
       concentration:
-        description: Amount of ingredient
+        description: >-
+          Amount of ingredient. Recommended but not required: pH-adjustment
+          ingredients (HCl/H2SO4/NaOH/KOH titrated "to pH") and similar
+          "to-effect" reagents legitimately lack a fixed concentration.
         range: ConcentrationValue
-        required: true
+        recommended: true
         inlined: true
 
       modifier:
