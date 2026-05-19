@@ -13,29 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-
-def _infer_prep_action(text: str) -> str:
-    """Best-guess PreparationActionEnum value from a free-text step description."""
-    s = text.lower()
-    if "autoclave" in s:
-        return "AUTOCLAVE"
-    if "filter" in s and "steril" in s:
-        return "FILTER_STERILIZE"
-    if "adjust" in s and "ph" in s:
-        return "ADJUST_PH"
-    if "agar" in s:
-        return "ADD_AGAR"
-    if "pour" in s and "plate" in s:
-        return "POUR_PLATES"
-    if "aliquot" in s:
-        return "ALIQUOT"
-    if "cool" in s:
-        return "COOL"
-    if "heat" in s or "boil" in s:
-        return "HEAT"
-    if "mix" in s or "stir" in s:
-        return "MIX"
-    return "DISSOLVE"
+from culturemech.preparation_actions import infer_prep_action
 
 
 class SAGImporter:
@@ -303,7 +281,7 @@ class SAGImporter:
                 if len(line.strip()) > 20 and not line.strip().startswith('#'):
                     steps.append({
                         'step_number': step_num,
-                        'action': _infer_prep_action(line.strip()),
+                        'action': infer_prep_action(line.strip()),
                         'description': line.strip()
                     })
                     step_num += 1

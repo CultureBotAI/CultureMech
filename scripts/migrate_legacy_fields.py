@@ -29,6 +29,8 @@ from typing import Any
 
 import yaml
 
+from culturemech.preparation_actions import infer_prep_action
+
 CURATOR = "migrate_legacy_fields.py"
 ACTION = "MIGRATED_LEGACY_FIELDS"
 DEFAULT_ROOT = "data/normalized_yaml"
@@ -139,49 +141,39 @@ def migrate_unit_aliases(recipe: dict) -> int:
     return _walk_concentrations(recipe)
 
 
-def _infer_prep_action(text: str) -> str:
-    """Best-guess PreparationActionEnum value from a free-text step description.
-
-    Mirrors the heuristic in src/culturemech/import/{ccap,sag,utex}_importer.py
-    so newly-written records and migrated records pick the same action.
-    """
-    s = (text or "").lower()
-    if "autoclave" in s:
-        return "AUTOCLAVE"
-    if "filter" in s and "steril" in s:
-        return "FILTER_STERILIZE"
-    if "adjust" in s and "ph" in s:
-        return "ADJUST_PH"
-    if "agar" in s:
-        return "ADD_AGAR"
-    if "pour" in s and "plate" in s:
-        return "POUR_PLATES"
-    if "aliquot" in s:
-        return "ALIQUOT"
-    if "cool" in s:
-        return "COOL"
-    if "heat" in s or "boil" in s:
-        return "HEAT"
-    if "mix" in s or "stir" in s:
-        return "MIX"
-    return "DISSOLVE"
-
-
 def migrate_preparation_step_instruction(recipe: dict) -> int:
+    """Drop legacy ``instruction`` keys from preparation steps.
+
+    The schema's ``PreparationStep`` class declares ``additionalProperties:
+    false`` and requires ``description`` + ``action``. The legacy importers
+    (and an earlier pass of this script) wrote ``instruction`` instead of
+    ``description``; some records have only ``instruction``, others have
+    both ``instruction`` and ``description`` after a partial migration.
+
+    For every step we now:
+
+    - drop ``instruction`` unconditionally if it is present (it is never
+      schema-valid);
+    - promote its value to ``description`` only if ``description`` is
+      absent (don't overwrite curator-set descriptions);
+    - back-fill ``action`` from the text when missing, using the same
+      heuristic as the importers (``infer_prep_action``).
+    """
     steps = recipe.get("preparation_steps") or []
     n = 0
     for step in steps:
         if not isinstance(step, dict):
             continue
-        if "instruction" in step and "description" not in step:
-            text = step.pop("instruction")
-            step["description"] = text
-            if "action" not in step:
-                step["action"] = _infer_prep_action(text)
-            n += 1
-        elif "action" not in step and isinstance(step.get("description"), str):
-            # Records that already had description but never got an action.
-            step["action"] = _infer_prep_action(step["description"])
+        changed = False
+        if "instruction" in step:
+            legacy = step.pop("instruction")
+            if "description" not in step and isinstance(legacy, str):
+                step["description"] = legacy
+            changed = True
+        if "action" not in step and isinstance(step.get("description"), str):
+            step["action"] = infer_prep_action(step["description"])
+            changed = True
+        if changed:
             n += 1
     return n
 
