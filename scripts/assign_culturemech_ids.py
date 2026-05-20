@@ -39,6 +39,9 @@ class CultureMechIDAssigner:
             'errors': []
         }
         self.id_registry = {}  # Maps CultureMech ID → file path
+        # Maps CultureMech ID → list of file paths (only populated when >1).
+        # Used by --check to detect cross-file ID collisions.
+        self.duplicates: Dict[str, List[str]] = defaultdict(list)
 
     def format_id(self, id_number: int) -> str:
         """Format ID as CultureMech:NNNNNN."""
@@ -82,7 +85,14 @@ class CultureMechIDAssigner:
                     if id_num:
                         self.stats['files_with_id'] += 1
                         highest_id = max(highest_id, id_num)
-                        self.id_registry[existing_id] = str(yaml_path)
+                        if existing_id in self.id_registry:
+                            # Cross-file duplicate. Remember both sides.
+                            entry = self.duplicates[existing_id]
+                            if not entry:
+                                entry.append(self.id_registry[existing_id])
+                            entry.append(str(yaml_path))
+                        else:
+                            self.id_registry[existing_id] = str(yaml_path)
 
             except Exception as e:
                 self.stats['errors'].append(f"Error scanning {yaml_path.name}: {e}")
@@ -264,6 +274,12 @@ def main():
         action='store_true',
         help='Dry run mode - no files will be modified'
     )
+    parser.add_argument(
+        '--check',
+        action='store_true',
+        help='Scan-only: detect cross-file ID collisions and exit non-zero if any found. '
+             'No files modified. Use this as a pre-commit / CI gate.'
+    )
 
     args = parser.parse_args()
 
@@ -284,6 +300,19 @@ def main():
 
     # Step 1: Scan for existing IDs
     highest_existing = assigner.scan_existing_ids(args.input_dir)
+
+    # Collision detection — applies in --check mode and is also a pre-flight
+    # check before any new assignment runs.
+    if assigner.duplicates:
+        print(f"\n❌ {len(assigner.duplicates)} duplicate CultureMech ID(s) detected:")
+        for id_str, paths in sorted(assigner.duplicates.items()):
+            print(f"  {id_str}: {len(paths)} files")
+            for p in paths:
+                print(f"    - {p}")
+        return 2
+    if args.check:
+        print("\n✓ No duplicate IDs detected.")
+        return 0
 
     # Step 2: Set starting ID to next available
     if highest_existing > 0:
