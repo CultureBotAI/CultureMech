@@ -216,6 +216,7 @@ classes:
         range: OrganismDescriptor
         multivalued: true
         recommended: true
+        inlined_as_list: true
 
       source_environment:
         description: >-
@@ -584,11 +585,11 @@ classes:
 
       merge_mode:
         description: Merge mode used (conservative/aggressive/variant-aware)
-        range: string
+        range: MergeModeEnum
         comments:
-          - conservative - Only merge with explicit rules or exact match
-          - aggressive - Merge all variants with same parent
-          - variant-aware - Balanced approach, merge some variants
+          - CONSERVATIVE - Only merge with explicit rules or exact match
+          - AGGRESSIVE - Merge all variants with same parent
+          - VARIANT_AWARE - Balanced approach, merge some variants
 
       merge_reason:
         description: Why these recipes were merged together
@@ -616,7 +617,7 @@ classes:
 
       fingerprint_mode:
         description: Fingerprinting mode used (chemical/variant/original)
-        range: string
+        range: FingerprintModeEnum
         comments:
           - Indicates which fingerprint algorithm was used
           - Enables comparing merge results across modes
@@ -650,7 +651,7 @@ classes:
         range: float
       match_type:
         description: Provenance/method of the term mapping (e.g. "kg_fallback", "exact", "manual_curated").
-        range: string
+        range: TermMatchTypeEnum
 
 # ================================================================
 # DESCRIPTOR CLASSES
@@ -865,6 +866,7 @@ classes:
       preferred_term:
         description: Organism name (e.g., "Escherichia coli")
         required: true
+        identifier: true
         range: string
 
       term:
@@ -895,7 +897,7 @@ classes:
 
       growth_phase:
         description: Target growth phase (e.g., "exponential", "stationary")
-        range: string
+        range: GrowthPhaseEnum
 
       growth_metrics:
         description: Quantitative growth measurements observed for this organism on this medium
@@ -1066,7 +1068,7 @@ classes:
         required: true
       synonym_type:
         description: Synonym match type (e.g. EXACT, RELATED, BROAD).
-        range: string
+        range: SynonymTypeEnum
 
   IngredientCurationMetadata:
     description: >-
@@ -1232,12 +1234,16 @@ classes:
         description: Unit for `level` (e.g. "mg/L", "mM", "%", "°C", "µmol·m⁻²·s⁻¹").
         range: string
 
-      ontology_term:
+      ontology_id:
         description: >-
           Optional ontology CURIE for the perturbation type or agent
           (CHEBI for chemical agents, ENVO for environmental stress,
           NCIT for genetic-modification class, PATO for phenotypic
           qualities). Curator-supplied; pipeline does not auto-resolve.
+          Renamed from `ontology_term` (G13) to align with the
+          `<provenance>_id` convention used for bare-string CURIEs
+          elsewhere in the schema. The typed-Term-object convention is
+          `<provenance>_term`.
         range: string
         pattern: "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"
 
@@ -1270,10 +1276,12 @@ classes:
         description: Curator free-text describing the modification.
         range: string
 
-      ontology_term:
+      ontology_id:
         description: >-
           Optional CURIE — NCIT:C120956 (Knockout), NCIT:C17026
           (Genetic Modification), PATO:0015009 (mutant), etc.
+          Renamed from `ontology_term` (G13) to align with the
+          `<provenance>_id` convention used for bare-string CURIEs.
         range: string
         pattern: "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$"
 
@@ -1421,7 +1429,18 @@ classes:
       name:
         description: Variant name (e.g., "Low Salt LB", "LB + Ampicillin")
         required: true
+        identifier: true
         range: string
+
+      relationship:
+        description: >-
+          Typed relationship to the base recipe, drawn from the same enum
+          that MediaRecipeReference.relationship uses. Curators should set
+          this whenever a clean enum value applies; the free-text
+          `modifications` slot remains for nuance or for variants whose
+          relationship is genuinely composite.
+        range: MediaVariantRelationshipEnum
+        recommended: true
 
       description:
         description: Purpose and context
@@ -1533,11 +1552,13 @@ classes:
         description: Citation (PMID, DOI, or historical reference)
         range: string
         required: true
+        identifier: true
         implements:
           - linkml:authoritative_reference
         comments:
           - This is automatically validated by the linkml-reference-validator tool.
           - Use format PMID:12345678 or doi:10.1038/... for automatic validation.
+          - Acts as the natural identifier inside an `evidence:` list (no duplicates within a single record's evidence array).
 
       supports:
         description: Level of support
@@ -1568,7 +1589,7 @@ classes:
 
       dataset_type:
         description: Type of omics data (genomics, transcriptomics, metabolomics, etc.)
-        range: string
+        range: DatasetTypeEnum
 
       description:
         description: Brief description of the dataset
@@ -2404,3 +2425,93 @@ enums:
         description: Plate / agar / solid-substrate cultivation.
       UNSPECIFIED:
         description: Mode not stated in the source paper.
+
+
+  # ----------------------------------------------------------------------
+  # Audit-followup enums (G12). All values are derived from existing slot
+  # descriptions / observed in-corpus values; introducing them turns the
+  # corresponding `range: string` slots into typed enums so the linkml
+  # validator (and downstream consumers) get real type checking.
+  # ----------------------------------------------------------------------
+
+  MergeModeEnum:
+    description: Merge pipeline mode used by `MergeMetadata.merge_mode`.
+    permissible_values:
+      CONSERVATIVE:
+        description: Only merge on identical fingerprints.
+      AGGRESSIVE:
+        description: Merge across hydration / parent-ingredient equivalence.
+      VARIANT_AWARE:
+        description: Use the hierarchy-aware variant fingerprint to merge.
+
+  FingerprintModeEnum:
+    description: Algorithm used to compute the ingredient fingerprint.
+    permissible_values:
+      ORIGINAL:
+        description: Original ingredient set, no hierarchy resolution.
+      CHEMICAL:
+        description: Parent CHEBI IDs from MediaIngredientMech hierarchy.
+      VARIANT:
+        description: Parent CHEBI + variant type (HYDRATE / ANHYDROUS / SALT_FORM).
+
+  GrowthPhaseEnum:
+    description: Target microbial growth phase for a measurement / inoculum.
+    permissible_values:
+      LAG:
+        description: Lag phase (no significant net growth).
+      EXPONENTIAL:
+        description: Exponential / log phase.
+      STATIONARY:
+        description: Stationary phase.
+      DEATH:
+        description: Death / decline phase.
+      UNSPECIFIED:
+        description: Phase not stated by the source.
+
+  TermMatchTypeEnum:
+    description: >-
+      Provenance of an ontology-term mapping (`Term.match_type`). Values
+      use the lowercase-snake convention emitted by upstream grounding
+      pipelines (kg-microbe, manual curation). Three values are observed
+      in the current corpus (kg_fallback, exact_match,
+      synonym_match_ambiguous); the others are reserved for explicit
+      curator use.
+    permissible_values:
+      exact_match:
+        description: Exact label / synonym match.
+      kg_fallback:
+        description: Inferred from the kg-microbe ingredient graph as a fallback.
+      synonym_match_ambiguous:
+        description: Multiple equally-good synonym matches; mapping is uncertain.
+      manual_curated:
+        description: Human curator selected this term.
+      automated_expert_mapping:
+        description: Produced by an automated expert-mapping pipeline (e.g. LLM-assisted).
+      fuzzy:
+        description: Fuzzy / approximate string match.
+
+  SynonymTypeEnum:
+    description: Type of synonym relationship for an IngredientSynonym.
+    permissible_values:
+      EXACT:
+        description: Exact synonym.
+      RELATED:
+        description: Related but not interchangeable.
+      BROAD:
+        description: Broader concept.
+      NARROW:
+        description: Narrower concept.
+      ABBREVIATION:
+        description: Abbreviation or shorthand (e.g. "TSB" for "Tryptic Soy Broth").
+
+  DatasetTypeEnum:
+    description: Type of omics dataset linked by `Dataset.dataset_type`.
+    permissible_values:
+      GENOMICS:
+      TRANSCRIPTOMICS:
+      PROTEOMICS:
+      METABOLOMICS:
+      FLUXOMICS:
+      PHENOMICS:
+      MULTI_OMICS:
+      OTHER:
