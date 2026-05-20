@@ -26,7 +26,7 @@ from pathlib import Path
 
 import yaml
 
-from culturemech.curate import record_curation_event
+from culturemech.curate.curation_event import record_curation_event
 from culturemech.enrich.hierarchy_importer import MediaIngredientMechHierarchyImporter
 from culturemech.merge.fingerprint import RecipeFingerprinter
 from culturemech.merge.hierarchy_fingerprint import HierarchyAwareFingerprinter

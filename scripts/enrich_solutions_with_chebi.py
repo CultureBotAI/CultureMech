@@ -25,7 +25,7 @@ import yaml
 from tqdm import tqdm
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
-from culturemech.curate import record_curation_event  # noqa: E402
+from culturemech.curate.curation_event import record_curation_event  # noqa: E402
 
 CURATOR = "enrich_solutions_with_chebi.py"
 ACTION = "ENRICHED_SOLUTIONS_WITH_CHEBI"

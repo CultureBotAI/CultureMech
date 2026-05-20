@@ -30,7 +30,7 @@ from typing import Any
 import yaml
 
 from culturemech.preparation_actions import infer_prep_action
-from culturemech.curate import record_curation_event
+from culturemech.curate.curation_event import record_curation_event
 
 CURATOR = "migrate_legacy_fields.py"
 ACTION = "MIGRATED_LEGACY_FIELDS"

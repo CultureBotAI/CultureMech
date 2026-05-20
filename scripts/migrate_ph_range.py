@@ -30,15 +30,18 @@ from typing import Any
 import yaml
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
-from culturemech.curate import record_curation_event  # noqa: E402
+from culturemech.curate.curation_event import record_curation_event  # noqa: E402
 
 CURATOR = "migrate_ph_range.py"
 ACTION = "MIGRATED_PH_RANGE"
 DEFAULT_ROOT = "data/normalized_yaml"
 
-# Match optional leading text + "<num>" or "<num> - <num>" + optional trailing text.
+# Match "<num>" or "<num> <sep> <num>" with `sep` ∈ { hyphen-minus, en/em dash,
+# the word "to" }. Earlier versions used a character class `[-–to]+` which
+# accidentally matched any combination of t/o/- characters (e.g. "7tt8" would
+# parse as 7..8) — Copilot caught that on PR #23.
 _RANGE_PATTERN = re.compile(
-    r"(?P<low>\d+(?:\.\d+)?)\s*(?:[-–to]+\s*(?P<high>\d+(?:\.\d+)?))?"
+    r"(?P<low>\d+(?:\.\d+)?)\s*(?:(?:-|–|—|\bto\b)\s*(?P<high>\d+(?:\.\d+)?))?"
 )
 
 

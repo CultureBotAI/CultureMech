@@ -20,7 +20,7 @@ except ImportError:  # pragma: no cover - exercised only outside the uv env
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "src"))
-from culturemech.curate import record_curation_event  # noqa: E402
+from culturemech.curate.curation_event import record_curation_event  # noqa: E402
 
 CURATOR = "apply_media_variant_links.py"
 ACTION = "APPLIED_VARIANT_LINKS"

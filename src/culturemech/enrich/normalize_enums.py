@@ -15,7 +15,7 @@ from typing import Dict, Any, Optional
 import yaml
 import re
 
-from culturemech.curate import record_curation_event
+from culturemech.curate.curation_event import record_curation_event
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
