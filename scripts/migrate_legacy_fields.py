@@ -30,6 +30,7 @@ from typing import Any
 import yaml
 
 from culturemech.preparation_actions import infer_prep_action
+from culturemech.curate import record_curation_event
 
 CURATOR = "migrate_legacy_fields.py"
 ACTION = "MIGRATED_LEGACY_FIELDS"
@@ -41,10 +42,6 @@ UNIT_ALIASES = {
     "UG_PER_L": "MICROG_PER_L",
     "PERCENT": "PERCENT_W_V",
 }
-
-
-def now_iso() -> str:
-    return datetime.datetime.now(datetime.timezone.utc).isoformat()
 
 
 def to_iso_timestamp(value: Any) -> str | None:
@@ -204,13 +201,7 @@ def migrate_one(path: Path, dry_run: bool) -> dict[str, int] | None:
     if not counts:
         return None
     notes = "; ".join(f"{k}={v}" for k, v in counts.items())
-    history = data.setdefault("curation_history", [])
-    history.append({
-        "timestamp": now_iso(),
-        "curator": CURATOR,
-        "action": ACTION,
-        "notes": notes,
-    })
+    record_curation_event(data, curator=CURATOR, action=ACTION, notes=notes)
     if not dry_run:
         with path.open("w") as f:
             yaml.safe_dump(data, f, sort_keys=False, allow_unicode=True, width=80)

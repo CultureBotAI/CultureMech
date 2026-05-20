@@ -26,11 +26,13 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import datetime
 import sys
 from pathlib import Path
 
 import yaml
+
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+from culturemech.curate import record_curation_event  # noqa: E402
 
 CURATOR = "migrate_data_quality_flags.py"
 ACTION = "MIGRATED_DATA_QUALITY_FLAGS"
@@ -48,18 +50,13 @@ def dict_to_list(flags: dict) -> list[str]:
     return out
 
 
-def now_iso() -> str:
-    return datetime.datetime.now(datetime.timezone.utc).isoformat()
-
-
 def append_curation_event(recipe: dict, before_count: int, after_count: int) -> None:
-    history = recipe.setdefault("curation_history", [])
-    history.append({
-        "timestamp": now_iso(),
-        "curator": CURATOR,
-        "action": ACTION,
-        "notes": f"dict({before_count} keys) -> list({after_count} entries)",
-    })
+    record_curation_event(
+        recipe,
+        curator=CURATOR,
+        action=ACTION,
+        notes=f"dict({before_count} keys) -> list({after_count} entries)",
+    )
 
 
 def migrate_one(path: Path, dry_run: bool) -> bool:
