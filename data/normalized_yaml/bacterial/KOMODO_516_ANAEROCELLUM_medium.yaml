@@ -4,7 +4,9 @@ original_name: ANAEROCELLUM medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.1-7.3
+ph_range:
+  min: 7.1
+  max: 7.3
 media_term:
   preferred_term: KOMODO Medium 516
   term:
@@ -305,8 +307,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.908912Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:36.961330Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -318,29 +320,33 @@ curation_history:
 - timestamp: '2026-03-17T19:45:53.593086+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ANAEROCELLUM medium" to "anaerocellum_medium" for
-    consistent matching
+  notes: Normalized name from "ANAEROCELLUM medium" to "anaerocellum_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:00:52.425510+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.1-7.3'' -> {''min'': 7.1, ''max'': 7.3}'
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_6724.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005872
   name: for_dsm_6724
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_516_modified_for_dsm_9003.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005873
   name: medium_516_modified_for_dsm_9003
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/anaerocellum_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001648
   name: anaerocellum_medium
-  notes: KOMODO record states DSMZ Medium 516 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 516 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

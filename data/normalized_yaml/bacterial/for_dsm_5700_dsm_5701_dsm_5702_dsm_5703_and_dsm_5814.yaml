@@ -4,7 +4,9 @@ original_name: For DSM 5700, DSM 5701, DSM 5702, DSM 5703 and DSM 5814
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.9-7.0
+ph_range:
+  min: 6.9
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 525.1
   term:
@@ -404,3 +406,7 @@ curation_history:
   notes: Normalized name from "For DSM 5700, DSM 5701, DSM 5702, DSM 5703 and DSM
     5814" to "for_dsm_5700_dsm_5701_dsm_5702_dsm_5703_and_dsm_5814" for consistent
     matching
+- timestamp: '2026-05-20T06:01:19.784182+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.9-7.0'' -> {''min'': 6.9, ''max'': 7.0}'

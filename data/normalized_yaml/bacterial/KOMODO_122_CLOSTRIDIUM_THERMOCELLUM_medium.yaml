@@ -4,7 +4,9 @@ original_name: CLOSTRIDIUM THERMOCELLUM medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.0-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 122
   term:
@@ -135,12 +137,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.508348+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM THERMOCELLUM medium" to
-    "clostridium_thermocellum_medium" for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM THERMOCELLUM medium" to "clostridium_thermocellum_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:49.632559+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 variant_children:
 - path: data/normalized_yaml/bacterial/acetivibrio_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000688
   name: acetivibrio_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

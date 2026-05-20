@@ -4,7 +4,9 @@ original_name: HALOMONAS DESIDERATA MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 9.5-10
+ph_range:
+  min: 9.5
+  max: 10.0
 media_term:
   preferred_term: DSMZ Medium 762
   term:
@@ -75,9 +77,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without Na2CO3 and NaHCO3 in 900 ml distilled
-    water and autoclave. Prepare the Na2CO3 and NaHCO3 in 100 ml water,
-    sterilise separately and add to the cooled medium. Final pH 9.5-10.0.
+  description: Prepare the medium without Na2CO3 and NaHCO3 in 900 ml distilled water
+    and autoclave. Prepare the Na2CO3 and NaHCO3 in 100 ml water, sterilise separately
+    and add to the cooled medium. Final pH 9.5-10.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -96,13 +98,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.613391+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOMONAS DESIDERATA MEDIUM" to
-    "halomonas_desiderata_medium" for consistent matching
+  notes: Normalized name from "HALOMONAS DESIDERATA MEDIUM" to "halomonas_desiderata_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:22.108701+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9.5-10'' -> {''min'': 9.5, ''max'': 10.0}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_762_HALOMONAS_DESIDERATA_MEDIUM.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_762_HALOMONAS_DESIDERATA_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006417
   name: halomonas_desiderata_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

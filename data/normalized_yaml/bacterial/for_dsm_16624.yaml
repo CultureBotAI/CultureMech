@@ -4,7 +4,9 @@ original_name: For DSM 16624
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.5-8.0
+ph_range:
+  min: 7.5
+  max: 8.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 778.2 | DSMZ Medium: 778
   (mediadive.medium:778) | Aerobic: Yes'
 media_term:
@@ -313,8 +315,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.881255Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:09:16.278799Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -330,16 +332,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:58.089664+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 16624" to "for_dsm_16624" for consistent
-    matching
+  notes: Normalized name from "For DSM 16624" to "for_dsm_16624" for consistent matching
+- timestamp: '2026-05-20T06:01:18.388700+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-8.0'' -> {''min'': 7.5, ''max'': 8.0}'
 ph_value: 7.2
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/KOMODO_778_THERMOTERRABACTERIUM_medium.yaml
+  path: data/normalized_yaml/bacterial/KOMODO_778_THERMOTERRABACTERIUM_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006439
   name: thermoterrabacterium_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

@@ -4,7 +4,9 @@ original_name: SPOROMUSA SILVACETICA medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-6.7
+ph_range:
+  min: 6.5
+  max: 6.7
 media_term:
   preferred_term: KOMODO Medium 777
   term:
@@ -29,3 +31,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SPOROMUSA SILVACETICA medium" to "sporomusa_silvacetica_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:05.905380+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.7'' -> {''min'': 6.5, ''max'': 6.7}'

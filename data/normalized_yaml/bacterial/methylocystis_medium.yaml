@@ -4,7 +4,9 @@ original_name: METHYLOCYSTIS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 5.8-6.2
+ph_range:
+  min: 5.8
+  max: 6.2
 media_term:
   preferred_term: DSMZ Medium 1409
   term:
@@ -135,10 +137,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the liquid medium. Final pH 5.8-6.2. Dispense the medium
-    into serum bottles with a medium to headspace ratio of about 1:4. Add 20%
-    methane to the gas phase. Sterilize by autoclaving. Incubate the cultures
-    with shaking.
+  description: Prepare the liquid medium. Final pH 5.8-6.2. Dispense the medium into
+    serum bottles with a medium to headspace ratio of about 1:4. Add 20% methane to
+    the gas phase. Sterilize by autoclaving. Incubate the cultures with shaking.
 applications:
 - Microbial cultivation
 curation_history:
@@ -157,12 +158,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.523851+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOCYSTIS MEDIUM" to "methylocystis_medium"
-    for consistent matching
+  notes: Normalized name from "METHYLOCYSTIS MEDIUM" to "methylocystis_medium" for
+    consistent matching
+- timestamp: '2026-05-20T06:01:56.784025+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.8-6.2'' -> {''min'': 5.8, ''max'': 6.2}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1409_METHYLOCYSTIS_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004120
   name: methylocystis_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1409; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1409; local ingredient
+    and concentration signatures match.

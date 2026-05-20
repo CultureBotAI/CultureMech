@@ -4,7 +4,9 @@ original_name: THERMODESULFOBACTERIUM medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.0
+ph_range:
+  min: 6.8
+  max: 7.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 206 | DSMZ Medium: 206 (mediadive.medium:206)
   | Aerobic: Yes'
 media_term:
@@ -373,3 +375,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:50.648379+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.0'' -> {''min'': 6.8, ''max'': 7.0}'

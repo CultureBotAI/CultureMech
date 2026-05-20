@@ -4,7 +4,9 @@ original_name: ALICYCLOBACILLUS FERROOXYDANS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 1.8-2.5
+ph_range:
+  min: 1.8
+  max: 2.5
 media_term:
   preferred_term: KOMODO Medium 1201
   term:
@@ -109,18 +111,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.154344+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALICYCLOBACILLUS FERROOXYDANS medium" to
-    "alicyclobacillus_ferrooxydans_medium" for consistent matching
+  notes: Normalized name from "ALICYCLOBACILLUS FERROOXYDANS medium" to "alicyclobacillus_ferrooxydans_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:49.408663+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''1.8-2.5'' -> {''min'': 1.8, ''max'': 2.5}'
 high_metal: true
 parent_media:
   path: data/normalized_yaml/bacterial/alicyclobacillus_ferrooxydans_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000651
   name: alicyclobacillus_ferrooxydans_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 1201; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 1201; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 1201; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 1201; local ingredient
+  and concentration signatures match.

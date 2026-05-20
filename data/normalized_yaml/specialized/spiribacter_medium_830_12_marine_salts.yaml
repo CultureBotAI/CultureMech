@@ -4,7 +4,9 @@ original_name: SPIRIBACTER MEDIUM (830 + 12% Marine salts)
 category: specialized
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 1537
   term:
@@ -114,3 +116,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SPIRIBACTER MEDIUM (830 + 12% Marine salts)" to "spiribacter_medium_830_12_marine_salts"
     for consistent matching
+- timestamp: '2026-05-20T06:02:15.652110+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'

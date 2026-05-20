@@ -4,7 +4,9 @@ original_name: BHI MEDIUM FOR STRICT ANAEROBES
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.2-7.6
+ph_range:
+  min: 7.2
+  max: 7.6
 media_term:
   preferred_term: DSMZ Medium 215c
   term:
@@ -167,3 +169,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BHI MEDIUM FOR STRICT ANAEROBES" to "bhi_medium_for_strict_anaerobes"
     for consistent matching
+- timestamp: '2026-05-20T06:01:09.871727+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.6'' -> {''min'': 7.2, ''max'': 7.6}'

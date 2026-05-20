@@ -4,7 +4,9 @@ original_name: SYMBIOBACTERIUM THERMOPHILUM medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.5-7.8
+ph_range:
+  min: 7.5
+  max: 7.8
 media_term:
   preferred_term: KOMODO Medium 1293
   term:
@@ -75,3 +77,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SYMBIOBACTERIUM THERMOPHILUM medium" to "symbiobacterium_thermophilum_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:06.928142+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-7.8'' -> {''min'': 7.5, ''max'': 7.8}'

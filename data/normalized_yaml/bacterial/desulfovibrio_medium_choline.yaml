@@ -4,7 +4,9 @@ original_name: DESULFOVIBRIO MEDIUM (CHOLINE)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 63c
   term:
@@ -142,3 +144,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFOVIBRIO MEDIUM (CHOLINE)" to "desulfovibrio_medium_choline"
     for consistent matching
+- timestamp: '2026-05-20T06:01:14.899817+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'

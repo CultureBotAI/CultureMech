@@ -4,7 +4,9 @@ original_name: NEVSKIA MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: SOLID_AGAR
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 828
   term:
@@ -234,12 +236,11 @@ preparation_steps:
   description: Adjust the pH to 7.0 - 7.2.
 - step_number: 2
   action: AUTOCLAVE
-  description: Filter sterilize the vitamin solution and add to the autoclaved
-    medium.
+  description: Filter sterilize the vitamin solution and add to the autoclaved medium.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
-    dissolve the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to 6.0 .
@@ -261,12 +262,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.539619+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NEVSKIA MEDIUM" to "nevskia_medium" for
-    consistent matching
+  notes: Normalized name from "NEVSKIA MEDIUM" to "nevskia_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:02:00.975685+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_828_NEVSKIA_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006559
   name: nevskia_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

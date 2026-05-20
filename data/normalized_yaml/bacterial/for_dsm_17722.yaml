@@ -4,7 +4,9 @@ original_name: For DSM 17722
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9.5-9.7
+ph_range:
+  min: 9.5
+  max: 9.7
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 898.2 | DSMZ Medium: 898
   (mediadive.medium:898) | Aerobic: Yes'
 media_term:
@@ -362,3 +364,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:01:18.602533+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9.5-9.7'' -> {''min'': 9.5, ''max'': 9.7}'

@@ -4,7 +4,9 @@ original_name: OM-2 MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: SOLID_AGAR
-ph_range: 8.5-9.0
+ph_range:
+  min: 8.5
+  max: 9.0
 media_term:
   preferred_term: KOMODO Medium 782
   term:
@@ -126,16 +128,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:58.614005+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "OM-2 MEDIUM" to "om_2_medium" for consistent
-    matching
+  notes: Normalized name from "OM-2 MEDIUM" to "om_2_medium" for consistent matching
+- timestamp: '2026-05-20T06:00:53.784036+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.5-9.0'' -> {''min'': 8.5, ''max'': 9.0}'
 parent_media:
   path: data/normalized_yaml/bacterial/om_2_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001918
   name: om_2_medium
-  notes: KOMODO record states DSMZ Medium 782 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 782 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

@@ -4,7 +4,9 @@ original_name: ASW
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.6-7.8
+ph_range:
+  min: 7.6
+  max: 7.8
 media_term:
   preferred_term: CCAP Medium C4
   term:
@@ -194,3 +196,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:01:09.226264+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.6-7.8'' -> {''min'': 7.6, ''max'': 7.8}'

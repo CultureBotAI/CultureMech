@@ -4,7 +4,9 @@ original_name: 'For DSM 15286 and DSM 21156:'
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.5-6.7
+ph_range:
+  min: 6.5
+  max: 6.7
 media_term:
   preferred_term: KOMODO Medium 383.13
   term:
@@ -341,8 +343,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.794416Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:30.377421Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -354,8 +356,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:46.115866+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 15286 and DSM 21156:" to
-    "for_dsm_15286_and_dsm_21156" for consistent matching
+  notes: Normalized name from "For DSM 15286 and DSM 21156:" to "for_dsm_15286_and_dsm_21156"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:18.035869+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.7'' -> {''min'': 6.5, ''max'': 6.7}'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_383d_DESULFONAUTICUS_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -363,5 +369,5 @@ parent_media:
   name: desulfonauticus_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

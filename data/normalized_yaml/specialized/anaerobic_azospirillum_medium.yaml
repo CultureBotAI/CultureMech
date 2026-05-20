@@ -4,7 +4,9 @@ original_name: ANAEROBIC AZOSPIRILLUM MEDIUM
 category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 1701
   term:
@@ -237,4 +239,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ANAEROBIC AZOSPIRILLUM MEDIUM" to "anaerobic_azospirillum_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:13.356979+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 high_metal: true

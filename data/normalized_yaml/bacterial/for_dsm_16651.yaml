@@ -4,7 +4,9 @@ original_name: For DSM 16651
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 1.6-1.8
+ph_range:
+  min: 1.6
+  max: 1.8
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 874.1 | DSMZ Medium: 874
   (mediadive.medium:874) | Aerobic: No'
 media_term:
@@ -176,16 +178,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.959094+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 16651" to "for_dsm_16651" for consistent
-    matching
+  notes: Normalized name from "For DSM 16651" to "for_dsm_16651" for consistent matching
+- timestamp: '2026-05-20T06:01:18.412587+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''1.6-1.8'' -> {''min'': 1.6, ''max'': 1.8}'
 high_metal: true
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/KOMODO_874_FERROPLASMA_ACIDIPHILUM_medium.yaml
+  path: data/normalized_yaml/bacterial/KOMODO_874_FERROPLASMA_ACIDIPHILUM_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006711
   name: ferroplasma_acidiphilum_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

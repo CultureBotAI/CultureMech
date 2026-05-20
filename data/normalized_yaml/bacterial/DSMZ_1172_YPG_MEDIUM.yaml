@@ -4,7 +4,9 @@ original_name: YPG MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 5.6-6
+ph_range:
+  min: 5.6
+  max: 6.0
 media_term:
   preferred_term: DSMZ Medium 1172
   term:
@@ -67,6 +69,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "YPG MEDIUM" to "ypg_medium" for consistent matching
+- timestamp: '2026-05-20T06:00:47.051023+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.6-6'' -> {''min'': 5.6, ''max'': 6.0}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1172_YPG_medium.yaml
   relationship: SOURCE_DUPLICATE

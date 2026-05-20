@@ -4,7 +4,9 @@ original_name: MEDIUM 710 MODIFIED FOR DSM 12299
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-6.8
+ph_range:
+  min: 6.5
+  max: 6.8
 media_term:
   preferred_term: KOMODO Medium 710_12299
   term:
@@ -323,8 +325,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:52.273636Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:39.906458Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -336,8 +338,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:57.083965+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 710 MODIFIED FOR DSM 12299" to
-    "medium_710_modified_for_dsm_12299" for consistent matching
+  notes: Normalized name from "MEDIUM 710 MODIFIED FOR DSM 12299" to "medium_710_modified_for_dsm_12299"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:52.628184+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.8'' -> {''min'': 6.5, ''max'': 6.8}'
 ph_value: 7.0
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_710_KoKo_medium.yaml
@@ -346,5 +352,5 @@ parent_media:
   name: koko_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

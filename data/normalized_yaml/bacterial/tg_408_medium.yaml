@@ -4,7 +4,9 @@ original_name: TG 408 MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.5-8
+ph_range:
+  min: 7.5
+  max: 8.0
 media_term:
   preferred_term: DSMZ Medium 1349
   term:
@@ -162,3 +164,7 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "TG 408 MEDIUM" to "tg_408_medium" for consistent matching
+- timestamp: '2026-05-20T06:02:07.623450+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-8'' -> {''min'': 7.5, ''max'': 8.0}'

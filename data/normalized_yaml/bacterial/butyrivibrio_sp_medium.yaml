@@ -4,7 +4,9 @@ original_name: BUTYRIVIBRIO SP. MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.7-6.8
+ph_range:
+  min: 6.7
+  max: 6.8
 media_term:
   preferred_term: DSMZ Medium 704
   term:
@@ -239,14 +241,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and
-    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
-    commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -260,14 +260,13 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
-    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
-    formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -276,13 +275,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
-    Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -321,26 +319,25 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, carbohydrates, cysteine
-    and sulfide) and sparge medium with 100% CO2 gas for 30 - 45 min to make it
-    anoxic. Add the carbonate and equilibrate the medium with the CO2 gas to pH
-    6.8. Distribute under 100% CO2 gas atmosphere into anoxic Hungate-type tubes
-    or serum vials and autoclave. Thereafter, add glucose, maltose, cellobiose,
-    starch, cysteine and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas. Cellobiose should be sterilized by filtration. Adjust pH
-    of complete medium to 6.7 - 6.8, if necessary.
+  description: Dissolve ingredients (except carbonate, carbohydrates, cysteine and
+    sulfide) and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.
+    Add the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute
+    under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and
+    autoclave. Thereafter, add glucose, maltose, cellobiose, starch, cysteine and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Cellobiose
+    should be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8,
+    if necessary.
 - step_number: 2
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals
-    or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15
-    min and then centrifuged at 27,000 g for 20 min. The supernatant is made
-    anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas
-    atmosphere into anoxic serum vials to 30% of volume and then stored frozen
-    at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
+    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
+    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
+    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
+    vials to 30% of volume and then stored frozen at -20°C.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with
-    distilled water and filter sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
 applications:
 - Microbial cultivation
 curation_history:
@@ -359,12 +356,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.002529+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BUTYRIVIBRIO SP. MEDIUM" to
-    "butyrivibrio_sp_medium" for consistent matching
+  notes: Normalized name from "BUTYRIVIBRIO SP. MEDIUM" to "butyrivibrio_sp_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:10.473329+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.7-6.8'' -> {''min'': 6.7, ''max'': 6.8}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_704_BUTYRIVIBRIO_SP._medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006335
   name: butyrivibrio_sp_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

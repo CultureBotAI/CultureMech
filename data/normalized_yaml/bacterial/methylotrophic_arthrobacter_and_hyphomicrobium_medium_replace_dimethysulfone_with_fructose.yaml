@@ -4,7 +4,9 @@ original_name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM_replace_dim
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.5
+ph_range:
+  min: 7.2
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 939_replace_dimethysulfone_with_Fructose
   term:
@@ -165,3 +167,7 @@ curation_history:
   notes: Normalized name from "METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM_replace_dimethysulfone_with_Fructose"
     to "methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfone_with_fructose"
     for consistent matching
+- timestamp: '2026-05-20T06:01:57.041082+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.5'' -> {''min'': 7.2, ''max'': 7.5}'

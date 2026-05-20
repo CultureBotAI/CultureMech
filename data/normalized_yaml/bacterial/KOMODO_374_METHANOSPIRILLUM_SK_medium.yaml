@@ -4,7 +4,9 @@ original_name: METHANOSPIRILLUM SK medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.0-7.4
+ph_range:
+  min: 7.0
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 374
   term:
@@ -252,17 +254,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.836348+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOSPIRILLUM SK medium" to
-    "methanospirillum_sk_medium" for consistent matching
+  notes: Normalized name from "METHANOSPIRILLUM SK medium" to "methanospirillum_sk_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:51.457031+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.4'' -> {''min'': 7.0, ''max'': 7.4}'
 parent_media:
   path: data/normalized_yaml/bacterial/methanospirillum_sk_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001475
   name: methanospirillum_sk_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 374; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 374; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 374; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 374; local ingredient
+  and concentration signatures match.

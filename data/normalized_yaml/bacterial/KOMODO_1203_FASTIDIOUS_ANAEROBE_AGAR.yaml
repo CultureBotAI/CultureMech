@@ -4,7 +4,9 @@ original_name: FASTIDIOUS ANAEROBE AGAR
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.0-7.4
+ph_range:
+  min: 7.0
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 1203
   term:
@@ -50,18 +52,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.174744+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FASTIDIOUS ANAEROBE AGAR" to
-    "fastidious_anaerobe_agar" for consistent matching
+  notes: Normalized name from "FASTIDIOUS ANAEROBE AGAR" to "fastidious_anaerobe_agar"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:49.413743+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.4'' -> {''min'': 7.0, ''max'': 7.4}'
 kg_microbe_match: mediadive.medium:12
 parent_media:
   path: data/normalized_yaml/bacterial/fastidious_anaerobe_agar.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000653
   name: fastidious_anaerobe_agar
-  notes: KOMODO record explicitly cites DSMZ Medium 1203; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 1203; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 1203; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 1203; local ingredient
+  and concentration signatures match.

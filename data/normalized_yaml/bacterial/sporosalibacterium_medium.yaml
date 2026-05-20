@@ -4,7 +4,9 @@ original_name: SPOROSALIBACTERIUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 1106
   term:
@@ -120,15 +122,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except magnesium chloride, carbonate,
-    glucose and reducing agents) and sparge medium with 80% N2 and 20% CO2 gas
-    mixture for 30 -45 min to make it anoxic. Dispense medium under same gas
-    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
-    magnesium chloride, glucose, cysteine and sulfide from sterile anoxic stock
-    solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
-    stock solution prepared under 80% N2 and 20% CO2 gas mixture. The glucose
-    solution should be sterilized by filtration. Adjust pH of complete medium to
-    6.8 - 7.0, if necessary.
+  description: Dissolve ingredients (except magnesium chloride, carbonate, glucose
+    and reducing agents) and sparge medium with 80% N2 and 20% CO2 gas mixture for
+    30 -45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add magnesium chloride, glucose,
+    cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2
+    gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and
+    20% CO2 gas mixture. The glucose solution should be sterilized by filtration.
+    Adjust pH of complete medium to 6.8 - 7.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -147,13 +148,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.269953+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPOROSALIBACTERIUM MEDIUM" to
-    "sporosalibacterium_medium" for consistent matching
+  notes: Normalized name from "SPOROSALIBACTERIUM MEDIUM" to "sporosalibacterium_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:02:05.929208+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_1106_SPOROSALIBACTERIUM_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_1106_SPOROSALIBACTERIUM_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003806
   name: sporosalibacterium_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

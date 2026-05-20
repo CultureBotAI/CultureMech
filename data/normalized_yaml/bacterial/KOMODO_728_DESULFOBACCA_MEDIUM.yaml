@@ -4,7 +4,9 @@ original_name: DESULFOBACCA MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 728
   term:
@@ -332,16 +334,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:57.376153+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOBACCA MEDIUM" to "desulfobacca_medium" for
-    consistent matching
+  notes: Normalized name from "DESULFOBACCA MEDIUM" to "desulfobacca_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:00:53.440015+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 parent_media:
   path: data/normalized_yaml/bacterial/desulfobacca_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001863
   name: desulfobacca_medium
-  notes: KOMODO record states DSMZ Medium 728 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 728 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

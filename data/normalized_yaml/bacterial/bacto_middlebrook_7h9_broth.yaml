@@ -4,7 +4,9 @@ original_name: BACTO MIDDLEBROOK 7H9 BROTH
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.4-6.8
+ph_range:
+  min: 6.4
+  max: 6.8
 media_term:
   preferred_term: DSMZ Medium 857
   term:
@@ -250,3 +252,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BACTO MIDDLEBROOK 7H9 BROTH" to "bacto_middlebrook_7h9_broth"
     for consistent matching
+- timestamp: '2026-05-20T06:01:09.567977+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.4-6.8'' -> {''min'': 6.4, ''max'': 6.8}'

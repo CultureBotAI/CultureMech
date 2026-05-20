@@ -4,7 +4,9 @@ original_name: PEDIOCOCCUS HALOPHILUS MEDIUM
 category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.2-6.5
+ph_range:
+  min: 6.2
+  max: 6.5
 media_term:
   preferred_term: DSMZ Medium 227
   term:
@@ -132,3 +134,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-05-20T06:00:46.392812+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.2-6.5'' -> {''min'': 6.2, ''max'': 6.5}'

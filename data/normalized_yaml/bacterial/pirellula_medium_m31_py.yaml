@@ -4,7 +4,9 @@ original_name: PIRELLULA MEDIUM (M31 PY)
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.5-8.5
+ph_range:
+  min: 7.5
+  max: 8.5
 media_term:
   preferred_term: DSMZ Medium 1438
   term:
@@ -319,3 +321,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PIRELLULA MEDIUM (M31 PY)" to "pirellula_medium_m31_py"
     for consistent matching
+- timestamp: '2026-05-20T06:02:02.563245+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-8.5'' -> {''min'': 7.5, ''max'': 8.5}'

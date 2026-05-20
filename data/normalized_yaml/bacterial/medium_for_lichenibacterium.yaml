@@ -4,7 +4,9 @@ original_name: Medium for Lichenibacterium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 5-6
+ph_range:
+  min: 5.0
+  max: 6.0
 media_term:
   preferred_term: DSMZ Medium 1686
   term:
@@ -191,3 +193,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium for Lichenibacterium" to "medium_for_lichenibacterium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:54.054925+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5-6'' -> {''min'': 5.0, ''max'': 6.0}'

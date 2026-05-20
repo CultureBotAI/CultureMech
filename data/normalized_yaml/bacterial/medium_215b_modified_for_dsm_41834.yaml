@@ -4,7 +4,9 @@ original_name: MEDIUM 215b MODIFIED FOR DSM 41834
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9.5-10.0
+ph_range:
+  min: 9.5
+  max: 10.0
 media_term:
   preferred_term: KOMODO Medium 215b_41834
   term:
@@ -143,3 +145,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM 215b MODIFIED FOR DSM 41834" to "medium_215b_modified_for_dsm_41834"
     for consistent matching
+- timestamp: '2026-05-20T06:01:46.234682+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9.5-10.0'' -> {''min'': 9.5, ''max'': 10.0}'

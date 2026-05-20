@@ -4,7 +4,9 @@ original_name: BUTYRIVIBRIO M2 MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-6.8
+ph_range:
+  min: 6.5
+  max: 6.8
 media_term:
   preferred_term: DSMZ Medium 1310
   term:
@@ -160,21 +162,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, cysteine and sulfide),
-    boil medium for 1 min, then cool to room temperature under 100% CO2 gas
-    atmosphere. Dispense medium under same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Add carbonate from a
-    sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
-    Add cysteine and sulfide form sterile anoxic stock solutions prepared under
-    100% N2 gas. Adjust pH of the complete medium to 6.5 - 6.8, if necessary.
+  description: Dissolve ingredients (except carbonate, cysteine and sulfide), boil
+    medium for 1 min, then cool to room temperature under 100% CO2 gas atmosphere.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add carbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Add cysteine and sulfide form sterile anoxic
+    stock solutions prepared under 100% N2 gas. Adjust pH of the complete medium to
+    6.5 - 6.8, if necessary.
 - step_number: 2
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals
-    or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15
-    min and then centrifuged at 27,000 g for 20 min. The supernatant is made
-    anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas
-    atmosphere into anoxic serum vials to 30% of volume and then stored frozen
-    at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
+    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
+    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
+    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
+    vials to 30% of volume and then stored frozen at -20°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -193,8 +194,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.632888+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BUTYRIVIBRIO M2 MEDIUM" to
-    "butyrivibrio_m2_medium" for consistent matching
+  notes: Normalized name from "BUTYRIVIBRIO M2 MEDIUM" to "butyrivibrio_m2_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:10.458718+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.8'' -> {''min'': 6.5, ''max'': 6.8}'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1310_M2_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -202,5 +207,5 @@ parent_media:
   name: m2_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

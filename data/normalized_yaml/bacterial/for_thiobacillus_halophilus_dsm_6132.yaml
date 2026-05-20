@@ -4,7 +4,9 @@ original_name: For Thiobacillus halophilus DSM 6132
 category: bacterial
 medium_type: DEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.3-7.6
+ph_range:
+  min: 7.3
+  max: 7.6
 media_term:
   preferred_term: KOMODO Medium 484.1
   term:
@@ -273,8 +275,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:50.785109+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For Thiobacillus halophilus DSM 6132" to
-    "for_thiobacillus_halophilus_dsm_6132" for consistent matching
+  notes: Normalized name from "For Thiobacillus halophilus DSM 6132" to "for_thiobacillus_halophilus_dsm_6132"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:20.391554+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.3-7.6'' -> {''min'': 7.3, ''max'': 7.6}'
 parent_media:
   path: data/normalized_yaml/bacterial/thiomicrospira_thyasirae_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -282,5 +288,5 @@ parent_media:
   name: thiomicrospira_thyasirae_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

@@ -4,7 +4,9 @@ original_name: For DSM 4301
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 2-3
+ph_range:
+  min: 2.0
+  max: 3.0
 media_term:
   preferred_term: KOMODO Medium 398.1
   term:
@@ -100,12 +102,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:46.751055+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 4301" to "for_dsm_4301" for consistent
-    matching
+  notes: Normalized name from "For DSM 4301" to "for_dsm_4301" for consistent matching
+- timestamp: '2026-05-20T06:01:19.614470+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''2-3'' -> {''min'': 2.0, ''max'': 3.0}'
 variant_children:
 - path: data/normalized_yaml/bacterial/thermoplasma_volcanium_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001507
   name: thermoplasma_volcanium_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

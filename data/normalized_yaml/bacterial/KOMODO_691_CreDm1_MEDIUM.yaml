@@ -4,7 +4,9 @@ original_name: CreDm1 MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.7-6.9
+ph_range:
+  min: 6.7
+  max: 6.9
 media_term:
   preferred_term: KOMODO Medium 691
   term:
@@ -304,8 +306,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.922442Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:39.611426Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -317,16 +319,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.752319+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CreDm1 MEDIUM" to "credm1_medium" for consistent
-    matching
+  notes: Normalized name from "CreDm1 MEDIUM" to "credm1_medium" for consistent matching
+- timestamp: '2026-05-20T06:00:53.226701+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.7-6.9'' -> {''min'': 6.7, ''max'': 6.9}'
 parent_media:
   path: data/normalized_yaml/bacterial/credm1_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001828
   name: credm1_medium
-  notes: KOMODO record states DSMZ Medium 691 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 691 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

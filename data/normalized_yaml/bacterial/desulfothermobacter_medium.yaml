@@ -4,7 +4,9 @@ original_name: DESULFOTHERMOBACTER MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 4.5-4.8
+ph_range:
+  min: 4.5
+  max: 4.8
 media_term:
   preferred_term: DSMZ Medium 1675
   term:
@@ -337,3 +339,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFOTHERMOBACTER MEDIUM" to "desulfothermobacter_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:14.496801+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''4.5-4.8'' -> {''min'': 4.5, ''max'': 4.8}'

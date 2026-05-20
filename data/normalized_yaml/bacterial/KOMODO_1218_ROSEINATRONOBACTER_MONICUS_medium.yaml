@@ -4,7 +4,9 @@ original_name: ROSEINATRONOBACTER MONICUS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9.0-9.5
+ph_range:
+  min: 9.0
+  max: 9.5
 media_term:
   preferred_term: KOMODO Medium 1218
   term:
@@ -263,17 +265,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.364715+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ROSEINATRONOBACTER MONICUS medium" to
-    "roseinatronobacter_monicus_medium" for consistent matching
+  notes: Normalized name from "ROSEINATRONOBACTER MONICUS medium" to "roseinatronobacter_monicus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:49.544425+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9.0-9.5'' -> {''min'': 9.0, ''max'': 9.5}'
 parent_media:
   path: data/normalized_yaml/bacterial/roseinatronobacter_monicus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000676
   name: roseinatronobacter_monicus_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 1218; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 1218; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 1218; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 1218; local ingredient
+  and concentration signatures match.

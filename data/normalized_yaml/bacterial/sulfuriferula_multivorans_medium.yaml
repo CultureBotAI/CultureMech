@@ -4,7 +4,9 @@ original_name: SULFURIFERULA MULTIVORANS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.5-7
+ph_range:
+  min: 6.5
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 1585
   term:
@@ -120,3 +122,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SULFURIFERULA MULTIVORANS MEDIUM" to "sulfuriferula_multivorans_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:06.560504+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-7'' -> {''min'': 6.5, ''max'': 7.0}'

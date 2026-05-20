@@ -6,7 +6,9 @@ original_name: DSM 2476, DSM 5473, DSM 5474, DSM 9503, DSM 10343, DSM 10394, DSM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.0-7.5
+ph_range:
+  min: 6.0
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 760.1
   term:
@@ -191,3 +193,7 @@ curation_history:
     DSM 10394, DSM 10395, DSM 11113, DSM 11836, DSM 12593, DSM 12819, DSM 12820, DSM
     12597, DSM 12767, DSM 14981, DSM 15226, DSM 16538, DSM 17994, DSM 17882" to "dsm_2476_dsm_5473_dsm_5474_dsm_9503_dsm_10343_dsm_10394_dsm_10395_dsm_11113_dsm_11836_dsm_12593_dsm_12819_dsm_12820_dsm_12597_dsm_12767_dsm_14981_dsm_15226_dsm_16538_dsm_17994_dsm_17882"
     for consistent matching
+- timestamp: '2026-05-20T06:01:15.907946+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.0-7.5'' -> {''min'': 6.0, ''max'': 7.5}'

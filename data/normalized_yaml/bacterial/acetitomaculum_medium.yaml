@@ -4,7 +4,9 @@ original_name: ACETITOMACULUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 540
   term:
@@ -407,18 +409,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, glucose, vitamins and
-    reducing agents), then sparge medium with 80% N2 and 20% CO2 gas mixture for
-    30 - 45 min to make it anoxic. Add solid bicarbonate and equilibrate pH to
-    6.8 with 80% N2 and 20% CO2 gas mixture, then dispense under same gas
-    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
-    glucose, vitamins, cysteine and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas atmosphere. Vitamins should be sterilized by
-    filtration. Adjust pH of complete medium to 6.8 - 7.0, if necessary.
+  description: Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing
+    agents), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic. Add solid bicarbonate and equilibrate pH to 6.8 with 80% N2
+    and 20% CO2 gas mixture, then dispense under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add glucose, vitamins, cysteine and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. Vitamins
+    should be sterilized by filtration. Adjust pH of complete medium to 6.8 - 7.0,
+    if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
-    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -429,8 +431,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:52.437408Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:09:39.896308Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -446,12 +448,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.555904+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACETITOMACULUM MEDIUM" to "acetitomaculum_medium"
-    for consistent matching
+  notes: Normalized name from "ACETITOMACULUM MEDIUM" to "acetitomaculum_medium" for
+    consistent matching
+- timestamp: '2026-05-20T06:01:07.006727+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_540_ACETITOMACULUM_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005968
   name: acetitomaculum_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

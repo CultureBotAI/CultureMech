@@ -4,7 +4,9 @@ original_name: CONTUBERNALIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9.5-9.7
+ph_range:
+  min: 9.5
+  max: 9.7
 media_term:
   preferred_term: DSMZ Medium 1599
   term:
@@ -280,3 +282,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CONTUBERNALIS MEDIUM" to "contubernalis_medium" for
     consistent matching
+- timestamp: '2026-05-20T06:01:12.491387+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9.5-9.7'' -> {''min'': 9.5, ''max'': 9.7}'

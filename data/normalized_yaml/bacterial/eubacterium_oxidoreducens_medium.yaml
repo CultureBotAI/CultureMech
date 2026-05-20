@@ -4,7 +4,9 @@ original_name: EUBACTERIUM OXIDOREDUCENS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7-7.5
+ph_range:
+  min: 7.0
+  max: 7.5
 media_term:
   preferred_term: DSMZ Medium 335
   term:
@@ -279,19 +281,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare solution A under 80% N2 and 20% CO2 gas mixture,
-    distribute 8.9 ml per Hungate-type tube under same gas atmosphere and
-    autoclave. Filter sterilize NaHCO3 solution and gas for 20 min with 80% N2
-    and 20% CO2 gas mixture. Autoclave cysteine and sulfide under 100% N2 gas.
-    Complete medium by adding the solutions B, C, and D with a syringe to
-    solution A. Adjust final pH of medium to 7.0 - 7.5.
+  description: Prepare solution A under 80% N2 and 20% CO2 gas mixture, distribute
+    8.9 ml per Hungate-type tube under same gas atmosphere and autoclave. Filter sterilize
+    NaHCO3 solution and gas for 20 min with 80% N2 and 20% CO2 gas mixture. Autoclave
+    cysteine and sulfide under 100% N2 gas. Complete medium by adding the solutions
+    B, C, and D with a syringe to solution A. Adjust final pH of medium to 7.0 - 7.5.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.9 before autoclaving.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
-    dissolve the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -310,13 +311,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.162489+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "EUBACTERIUM OXIDOREDUCENS MEDIUM" to
-    "eubacterium_oxidoreducens_medium" for consistent matching
+  notes: Normalized name from "EUBACTERIUM OXIDOREDUCENS MEDIUM" to "eubacterium_oxidoreducens_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:16.345237+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.5'' -> {''min'': 7.0, ''max'': 7.5}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_335_EUBACTERIUM_OXIDOREDUCENS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_335_EUBACTERIUM_OXIDOREDUCENS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005030
   name: eubacterium_oxidoreducens_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 335; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 335; local ingredient
+    and concentration signatures match.

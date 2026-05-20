@@ -4,7 +4,9 @@ original_name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.5
+ph_range:
+  min: 7.2
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 939
   term:
@@ -162,18 +164,20 @@ curation_history:
 - timestamp: '2026-03-17T19:46:02.390387+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM
-    MEDIUM" to "methylotrophic_arthrobacter_and_hyphomicrobium_medium" for
-    consistent matching
+  notes: Normalized name from "METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM"
+    to "methylotrophic_arthrobacter_and_hyphomicrobium_medium" for consistent matching
+- timestamp: '2026-05-20T06:00:55.011084+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.5'' -> {''min'': 7.2, ''max'': 7.5}'
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/methylotrophic_arthrobacter_and_hyphomicrobium_medium.yaml
+  path: data/normalized_yaml/bacterial/methylotrophic_arthrobacter_and_hyphomicrobium_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002114
   name: methylotrophic_arthrobacter_and_hyphomicrobium_medium
-  notes: KOMODO record states DSMZ Medium 939 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 939 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

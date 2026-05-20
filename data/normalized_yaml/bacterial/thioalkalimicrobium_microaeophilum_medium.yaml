@@ -4,7 +4,9 @@ original_name: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 9-9.5
+ph_range:
+  min: 9.0
+  max: 9.5
 media_term:
   preferred_term: DSMZ Medium 1230
   term:
@@ -200,3 +202,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM" to "thioalkalimicrobium_microaeophilum_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:08.990217+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9-9.5'' -> {''min'': 9.0, ''max'': 9.5}'

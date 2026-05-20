@@ -4,7 +4,9 @@ original_name: FERROPLASMA ACIDIPHILUM medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 1.6-1.8
+ph_range:
+  min: 1.6
+  max: 1.8
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 874 | DSMZ Medium: 874 (mediadive.medium:874)
   | Aerobic: No'
 media_term:
@@ -176,30 +178,34 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.975787+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FERROPLASMA ACIDIPHILUM medium" to
-    "ferroplasma_acidiphilum_medium" for consistent matching
+  notes: Normalized name from "FERROPLASMA ACIDIPHILUM medium" to "ferroplasma_acidiphilum_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:54.423536+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''1.6-1.8'' -> {''min'': 1.6, ''max'': 1.8}'
 high_metal: true
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_16651.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006709
   name: for_dsm_16651
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_18409.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006710
   name: for_dsm_18409
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/ferroplasma_acidiphilum_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002032
   name: ferroplasma_acidiphilum_medium
-  notes: KOMODO record states DSMZ Medium 874 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 874 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

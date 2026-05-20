@@ -4,7 +4,9 @@ original_name: METHYLOMONAS MEDIUM (WSC)
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.8-7.9
+ph_range:
+  min: 7.8
+  max: 7.9
 media_term:
   preferred_term: DSMZ Medium 1738
   term:
@@ -377,4 +379,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHYLOMONAS MEDIUM (WSC)" to "methylomonas_medium_wsc"
     for consistent matching
+- timestamp: '2026-05-20T06:01:56.868182+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.8-7.9'' -> {''min'': 7.8, ''max'': 7.9}'
 high_ree: true

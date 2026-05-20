@@ -4,7 +4,9 @@ original_name: medium FOR HALOPHILIC ARCHAEA
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 6.5-7.0
+ph_range:
+  min: 6.5
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 1184
   term:
@@ -122,4 +124,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "medium FOR HALOPHILIC ARCHAEA" to "medium_for_halophilic_archaea"
     for consistent matching
+- timestamp: '2026-05-20T06:01:54.015157+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-7.0'' -> {''min'': 6.5, ''max'': 7.0}'
 high_metal: true

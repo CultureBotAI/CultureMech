@@ -4,7 +4,9 @@ original_name: BHA MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.6-8
+ph_range:
+  min: 7.6
+  max: 8.0
 media_term:
   preferred_term: DSMZ Medium 1540
   term:
@@ -117,3 +119,7 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BHA MEDIUM" to "bha_medium" for consistent matching
+- timestamp: '2026-05-20T06:01:09.822480+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.6-8'' -> {''min'': 7.6, ''max'': 8.0}'

@@ -4,7 +4,9 @@ original_name: DSM 24515
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.5-6.8
+ph_range:
+  min: 6.5
+  max: 6.8
 media_term:
   preferred_term: KOMODO Medium 1210.1
   term:
@@ -351,8 +353,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.610179Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:23.686277Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -365,6 +367,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "DSM 24515" to "dsm_24515" for consistent matching
+- timestamp: '2026-05-20T06:01:15.895338+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.8'' -> {''min'': 6.5, ''max'': 6.8}'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1210_GEOGLOBUS_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -372,5 +378,5 @@ parent_media:
   name: geoglobus_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

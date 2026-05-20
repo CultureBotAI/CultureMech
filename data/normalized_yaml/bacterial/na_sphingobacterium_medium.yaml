@@ -4,7 +4,9 @@ original_name: NA SPHINGOBACTERIUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7-8
+ph_range:
+  min: 7.0
+  max: 8.0
 media_term:
   preferred_term: DSMZ Medium 1364
   term:
@@ -69,4 +71,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NA SPHINGOBACTERIUM MEDIUM" to "na_sphingobacterium_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:00.624702+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-8'' -> {''min'': 7.0, ''max'': 8.0}'
 kg_microbe_match: mediadive.medium:101

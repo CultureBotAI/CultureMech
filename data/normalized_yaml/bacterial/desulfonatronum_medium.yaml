@@ -4,7 +4,9 @@ original_name: DESULFONATRONUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 8.8-9
+ph_range:
+  min: 8.8
+  max: 9.0
 media_term:
   preferred_term: DSMZ Medium 813
   term:
@@ -338,3 +340,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFONATRONUM MEDIUM" to "desulfonatronum_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:14.111102+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.8-9'' -> {''min'': 8.8, ''max'': 9.0}'

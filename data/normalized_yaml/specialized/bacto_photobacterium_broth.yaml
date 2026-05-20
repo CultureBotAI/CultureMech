@@ -4,7 +4,9 @@ original_name: BACTO PHOTOBACTERIUM BROTH
 category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.2
+ph_range:
+  min: 6.8
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 608
   term:
@@ -108,3 +110,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BACTO PHOTOBACTERIUM BROTH" to "bacto_photobacterium_broth"
     for consistent matching
+- timestamp: '2026-05-20T06:02:13.510357+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.2'' -> {''min'': 6.8, ''max'': 7.2}'

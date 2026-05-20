@@ -4,7 +4,9 @@ original_name: MRS medium WITH CYSTEINE
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.2-6.5
+ph_range:
+  min: 6.2
+  max: 6.5
 media_term:
   preferred_term: KOMODO Medium 232
   term:
@@ -117,121 +119,124 @@ curation_history:
 - timestamp: '2026-03-17T19:45:42.879271+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS medium WITH CYSTEINE" to
-    "mrs_medium_with_cysteine" for consistent matching
+  notes: Normalized name from "MRS medium WITH CYSTEINE" to "mrs_medium_with_cysteine"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:50.808268+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.2-6.5'' -> {''min'': 6.2, ''max'': 6.5}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_232b_WEISSELA_KOREENSIS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_232b_WEISSELA_KOREENSIS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004607
   name: weissela_koreensis_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_16982.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004591
   name: medium_232_modified_for_dsm_16982
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_17330.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004592
   name: medium_232_modified_for_dsm_17330
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20079.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004593
   name: medium_232_modified_for_dsm_20079
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20243.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004594
   name: medium_232_modified_for_dsm_20243
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20289.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004595
   name: medium_232_modified_for_dsm_20289
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20356.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004596
   name: medium_232_modified_for_dsm_20356
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20403.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004597
   name: medium_232_modified_for_dsm_20403
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20404.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004598
   name: medium_232_modified_for_dsm_20404
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20405.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004599
   name: medium_232_modified_for_dsm_20405
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20406.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004600
   name: medium_232_modified_for_dsm_20406
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20653.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004601
   name: medium_232_modified_for_dsm_20653
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20654.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004602
   name: medium_232_modified_for_dsm_20654
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20655.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004603
   name: medium_232_modified_for_dsm_20655
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_20656.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004604
   name: medium_232_modified_for_dsm_20656
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_232_modified_for_dsm_6306.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004605
   name: medium_232_modified_for_dsm_6306
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/weissela_koreensis_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001335
   name: weissela_koreensis_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/mrs_medium_with_cysteine.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001334
   name: mrs_medium_with_cysteine
-  notes: KOMODO record explicitly cites DSMZ Medium 232; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 232; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 232; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 232; local ingredient
+  and concentration signatures match.

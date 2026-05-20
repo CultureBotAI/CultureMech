@@ -4,7 +4,9 @@ original_name: For DSM 17232
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.0-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 684.2
   term:
@@ -345,8 +347,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.217976Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:39.523656Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -358,8 +360,11 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.650809+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 17232" to "for_dsm_17232" for consistent
-    matching
+  notes: Normalized name from "For DSM 17232" to "for_dsm_17232" for consistent matching
+- timestamp: '2026-05-20T06:01:18.490459+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_684_MPOB_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -367,5 +372,5 @@ parent_media:
   name: mpob_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

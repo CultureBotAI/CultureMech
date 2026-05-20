@@ -4,7 +4,9 @@ original_name: HALORHODOSPIRA medium
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 999
   term:
@@ -248,8 +250,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:13.934562Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:45.443714Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -261,16 +263,20 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.515139+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALORHODOSPIRA medium" to "halorhodospira_medium"
-    for consistent matching
+  notes: Normalized name from "HALORHODOSPIRA medium" to "halorhodospira_medium" for
+    consistent matching
+- timestamp: '2026-05-20T06:00:55.427889+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 parent_media:
   path: data/normalized_yaml/bacterial/halorhodospira_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002184
   name: halorhodospira_medium
-  notes: KOMODO record states DSMZ Medium 999 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 999 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

@@ -4,7 +4,9 @@ original_name: M17 medium FOR LACTIC STREPTOCOCCI
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.7-7.1
+ph_range:
+  min: 6.7
+  max: 7.1
 media_term:
   preferred_term: KOMODO Medium 449
   term:
@@ -91,16 +93,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:47.429682+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "M17 medium FOR LACTIC STREPTOCOCCI" to
-    "m17_medium_for_lactic_streptococci" for consistent matching
+  notes: Normalized name from "M17 medium FOR LACTIC STREPTOCOCCI" to "m17_medium_for_lactic_streptococci"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:51.853199+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.7-7.1'' -> {''min'': 6.7, ''max'': 7.1}'
 parent_media:
   path: data/normalized_yaml/bacterial/m17_medium_for_lactic_streptococci.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001558
   name: m17_medium_for_lactic_streptococci
-  notes: KOMODO record states DSMZ Medium 449 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 449 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

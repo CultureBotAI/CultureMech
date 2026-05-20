@@ -4,7 +4,9 @@ original_name: MEDIUM 548 MODIFIED FOR DSM 41755
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 4.5-5.5
+ph_range:
+  min: 4.5
+  max: 5.5
 media_term:
   preferred_term: KOMODO Medium 548_41755
   term:
@@ -67,8 +69,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.283488+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 548 MODIFIED FOR DSM 41755" to
-    "medium_548_modified_for_dsm_41755" for consistent matching
+  notes: Normalized name from "MEDIUM 548 MODIFIED FOR DSM 41755" to "medium_548_modified_for_dsm_41755"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:51.818699+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''4.5-5.5'' -> {''min'': 4.5, ''max'': 5.5}'
 ph_value: 7.3
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J44_BENNETT_S_AGAR.yaml
@@ -77,5 +83,5 @@ parent_media:
   name: bennetts_agar
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

@@ -4,7 +4,9 @@ original_name: MEDIUM 830 MODIFIED FOR DSM 22464
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 4-5
+ph_range:
+  min: 4.0
+  max: 5.0
 media_term:
   preferred_term: KOMODO Medium 830_22464
   term:
@@ -203,8 +205,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:59.904833+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 830 MODIFIED FOR DSM 22464" to
-    "medium_830_modified_for_dsm_22464" for consistent matching
+  notes: Normalized name from "MEDIUM 830 MODIFIED FOR DSM 22464" to "medium_830_modified_for_dsm_22464"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:53.245476+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''4-5'' -> {''min'': 4.0, ''max'': 5.0}'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_830_R2A_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -212,5 +218,5 @@ parent_media:
   name: r2a_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

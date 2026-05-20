@@ -4,7 +4,9 @@ original_name: SYPG medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.4-7.8
+ph_range:
+  min: 7.4
+  max: 7.8
 notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 1115 | DSMZ Medium: 1115
   (mediadive.medium:1115) | Aerobic: Yes'
 media_term:
@@ -337,3 +339,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:02:07.250352+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.4-7.8'' -> {''min'': 7.4, ''max'': 7.8}'

@@ -4,7 +4,9 @@ original_name: THERMODESULFITIMONAS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6-6.5
+ph_range:
+  min: 6.0
+  max: 6.5
 media_term:
   preferred_term: DSMZ Medium 503e
   term:
@@ -382,3 +384,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THERMODESULFITIMONAS MEDIUM" to "thermodesulfitimonas_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:08.233745+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6-6.5'' -> {''min'': 6.0, ''max'': 6.5}'

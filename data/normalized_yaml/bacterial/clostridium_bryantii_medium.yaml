@@ -4,7 +4,9 @@ original_name: CLOSTRIDIUM BRYANTII MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 325
   term:
@@ -321,8 +323,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.033355Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:29.541938Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -334,8 +336,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.127616+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM BRYANTII MEDIUM" to
-    "clostridium_bryantii_medium" for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM BRYANTII MEDIUM" to "clostridium_bryantii_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:11.743752+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 parent_media:
   path: data/normalized_yaml/bacterial/for_dsm_3014_b.yaml
   relationship: SOURCE_DUPLICATE
@@ -343,5 +349,5 @@ parent_media:
   name: for_dsm_3014_b
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

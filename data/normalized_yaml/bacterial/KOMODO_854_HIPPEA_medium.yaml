@@ -4,7 +4,9 @@ original_name: HIPPEA medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.0-6.2
+ph_range:
+  min: 6.0
+  max: 6.2
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 854 | DSMZ Medium: 854 (mediadive.medium:854)
   | Aerobic: Yes'
 media_term:
@@ -404,3 +406,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:54.318441+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.0-6.2'' -> {''min'': 6.0, ''max'': 6.2}'

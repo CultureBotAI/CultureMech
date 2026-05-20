@@ -4,7 +4,9 @@ original_name: MACROMONAS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 847
   term:
@@ -261,6 +263,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MACROMONAS medium" to "macromonas_medium" for consistent
     matching
+- timestamp: '2026-05-20T06:00:54.280118+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 parent_media:
   path: data/normalized_yaml/bacterial/macromonas_medium.yaml
   relationship: SOURCE_DUPLICATE

@@ -4,7 +4,9 @@ original_name: MEDIUM 500 MODIFIED FOR DSM 9179
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-6.7
+ph_range:
+  min: 6.5
+  max: 6.7
 media_term:
   preferred_term: KOMODO Medium 500_9179
   term:
@@ -365,8 +367,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:53.079968Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:34.913080Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -378,8 +380,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:51.241353+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 500 MODIFIED FOR DSM 9179" to
-    "medium_500_modified_for_dsm_9179" for consistent matching
+  notes: Normalized name from "MEDIUM 500 MODIFIED FOR DSM 9179" to "medium_500_modified_for_dsm_9179"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:50.530257+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.7'' -> {''min'': 6.5, ''max'': 6.7}'
 parent_media:
   path: data/normalized_yaml/bacterial/gv_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -387,5 +393,5 @@ parent_media:
   name: gv_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

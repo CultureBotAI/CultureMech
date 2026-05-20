@@ -4,7 +4,9 @@ original_name: AZOARCUS TAIWANENSIS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 8.5-9
+ph_range:
+  min: 8.5
+  max: 9.0
 media_term:
   preferred_term: DSMZ Medium 1639
   term:
@@ -206,3 +208,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "AZOARCUS TAIWANENSIS MEDIUM" to "azoarcus_taiwanensis_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:09.357225+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.5-9'' -> {''min'': 8.5, ''max'': 9.0}'

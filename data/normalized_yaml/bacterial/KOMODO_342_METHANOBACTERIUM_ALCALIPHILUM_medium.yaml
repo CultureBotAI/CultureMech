@@ -4,7 +4,9 @@ original_name: METHANOBACTERIUM ALCALIPHILUM medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 8.3-8.4
+ph_range:
+  min: 8.3
+  max: 8.4
 media_term:
   preferred_term: KOMODO Medium 342
   term:
@@ -273,17 +275,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.415417+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOBACTERIUM ALCALIPHILUM medium" to
-    "methanobacterium_alcaliphilum_medium" for consistent matching
+  notes: Normalized name from "METHANOBACTERIUM ALCALIPHILUM medium" to "methanobacterium_alcaliphilum_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:51.311198+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.3-8.4'' -> {''min'': 8.3, ''max'': 8.4}'
 parent_media:
   path: data/normalized_yaml/bacterial/methanobacterium_alcaliphilum_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001442
   name: methanobacterium_alcaliphilum_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 342; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 342; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 342; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 342; local ingredient
+  and concentration signatures match.

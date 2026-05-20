@@ -4,7 +4,9 @@ original_name: CORYNEBACTERIUM MEDIUM WITH BLOOD
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 240
   term:
@@ -57,8 +59,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize medium and cool to about 45°C . Aseptically add 5%
-    defibrinated blood.
+  description: Sterilize medium and cool to about 45°C . Aseptically add 5% defibrinated
+    blood.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2 - 7.4.
@@ -80,13 +82,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.205655+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CORYNEBACTERIUM MEDIUM WITH BLOOD" to
-    "corynebacterium_medium_with_blood" for consistent matching
+  notes: Normalized name from "CORYNEBACTERIUM MEDIUM WITH BLOOD" to "corynebacterium_medium_with_blood"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:12.554943+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004613
   name: corynebacterium_medium_with_blood
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 240; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 240; local ingredient
+    and concentration signatures match.

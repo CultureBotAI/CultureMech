@@ -4,7 +4,9 @@ original_name: SPOROSALIBACTERIUM medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.0
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 1106
   term:
@@ -140,15 +142,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:36.762004+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPOROSALIBACTERIUM medium" to
-    "sporosalibacterium_medium" for consistent matching
+  notes: Normalized name from "SPOROSALIBACTERIUM medium" to "sporosalibacterium_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:48.866529+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.0'' -> {''min'': 6.8, ''max'': 7.0}'
 parent_media:
   path: data/normalized_yaml/bacterial/sporosalibacterium_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000539
   name: sporosalibacterium_medium
-  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
-    concentration signature.
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same source medium number and matching ingredient/concentration signature.

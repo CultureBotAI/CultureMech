@@ -4,7 +4,9 @@ original_name: METHYLOBACTER MEDIUM M10 XCF
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 8-8.4
+ph_range:
+  min: 8.0
+  max: 8.4
 media_term:
   preferred_term: DSMZ Medium 1502
   term:
@@ -188,3 +190,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHYLOBACTER MEDIUM M10 XCF" to "methylobacter_medium_m10_xcf"
     for consistent matching
+- timestamp: '2026-05-20T06:01:56.690452+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8-8.4'' -> {''min'': 8.0, ''max'': 8.4}'

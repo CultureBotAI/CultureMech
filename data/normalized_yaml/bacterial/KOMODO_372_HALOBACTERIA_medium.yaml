@@ -4,7 +4,9 @@ original_name: HALOBACTERIA medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.0-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 372
   term:
@@ -129,67 +131,71 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.807355+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOBACTERIA medium" to "halobacteria_medium" for
-    consistent matching
+  notes: Normalized name from "HALOBACTERIA medium" to "halobacteria_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:00:51.444559+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 high_metal: true
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_18341.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005094
   name: medium_372_modified_for_dsm_18341
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_18342.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005095
   name: medium_372_modified_for_dsm_18342
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_19336.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005098
   name: medium_372_modified_for_dsm_19336
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_21622.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005099
   name: medium_372_modified_for_dsm_21622
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_21769.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005100
   name: medium_372_modified_for_dsm_21769
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_21771.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005101
   name: medium_372_modified_for_dsm_21771
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_23158.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005102
   name: medium_372_modified_for_dsm_23158
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_372_modified_for_dsm_23862.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005103
   name: medium_372_modified_for_dsm_23862
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/halobacteria_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001474
   name: halobacteria_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 372; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 372; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 372; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 372; local ingredient
+  and concentration signatures match.

@@ -4,7 +4,9 @@ original_name: METHANOGENIUM CV medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.0
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 373
   term:
@@ -401,3 +403,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOGENIUM CV medium" to "methanogenium_cv_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:55.683782+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.0'' -> {''min'': 6.8, ''max'': 7.0}'

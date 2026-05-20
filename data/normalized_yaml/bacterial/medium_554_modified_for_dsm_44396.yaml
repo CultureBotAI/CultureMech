@@ -4,7 +4,9 @@ original_name: MEDIUM 554 MODIFIED FOR DSM 44396
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.5-8.0
+ph_range:
+  min: 7.5
+  max: 8.0
 media_term:
   preferred_term: KOMODO Medium 554_44396
   term:
@@ -83,8 +85,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.332369+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 554 MODIFIED FOR DSM 44396" to
-    "medium_554_modified_for_dsm_44396" for consistent matching
+  notes: Normalized name from "MEDIUM 554 MODIFIED FOR DSM 44396" to "medium_554_modified_for_dsm_44396"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:51.834363+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-8.0'' -> {''min'': 7.5, ''max'': 8.0}'
 ph_value: 7.2
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_554_N-Z-AMINE-MEDIUM.yaml
@@ -93,5 +99,5 @@ parent_media:
   name: n_z_amine_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

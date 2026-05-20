@@ -4,7 +4,9 @@ original_name: FUCHSIELLA ALKALIACETIGENA MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 8.8-9.5
+ph_range:
+  min: 8.8
+  max: 9.5
 media_term:
   preferred_term: DSMZ Medium 1352
   term:
@@ -319,12 +321,12 @@ preparation_steps:
   description: 'pH 8.8- 9.5; gas atmosphere: 100% N2.'
 - step_number: 2
   action: AUTOCLAVE
-  description: Dissolve ingredients except the sodium carbonate, sodium
-    bicarbonate, ethanol, and sodium sulphide. Boil medium for a few minutes and
-    cool to room temperature while flushing with N2. Add and dissolve sodium
-    carbonate, sodium bicarbonate and sodium sulphide while gassing the head
-    space only. Dispense and autoclave under N2. Before use add 10 ml/l (v/v) of
-    50% (v/v) ethanol solution (flushed and autoclaved under N2).
+  description: Dissolve ingredients except the sodium carbonate, sodium bicarbonate,
+    ethanol, and sodium sulphide. Boil medium for a few minutes and cool to room temperature
+    while flushing with N2. Add and dissolve sodium carbonate, sodium bicarbonate
+    and sodium sulphide while gassing the head space only. Dispense and autoclave
+    under N2. Before use add 10 ml/l (v/v) of 50% (v/v) ethanol solution (flushed
+    and autoclaved under N2).
 applications:
 - Microbial cultivation
 curation_history:
@@ -335,8 +337,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.855866Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:18:58.527325Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -348,13 +350,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.951306+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FUCHSIELLA ALKALIACETIGENA MEDIUM" to
-    "fuchsiella_alkaliacetigena_medium" for consistent matching
+  notes: Normalized name from "FUCHSIELLA ALKALIACETIGENA MEDIUM" to "fuchsiella_alkaliacetigena_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:20.556441+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.8-9.5'' -> {''min'': 8.8, ''max'': 9.5}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_1352_FUCHSIELLA_ALKALIACETIGENA_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_1352_FUCHSIELLA_ALKALIACETIGENA_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004106
   name: fuchsiella_alkaliacetigena_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1352; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1352; local ingredient
+    and concentration signatures match.

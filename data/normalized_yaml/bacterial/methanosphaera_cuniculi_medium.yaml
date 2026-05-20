@@ -4,7 +4,9 @@ original_name: METHANOSPHAERA CUNICULI MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 404
   term:
@@ -368,23 +370,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, methanol, vitamins,
-    cysteine and sulfide), then sparge medium with 80% H2 and 20% CO2 gas
-    mixture for 30 - 45 min to make it anoxic. Add and dissolve bicarbonate and
-    adjust pH to 7.0, then distribute under 80% H2 and 20% CO2 gas atmosphere
-    into anoxic Hungate-type tubes or serum vials to 30% of their volume and
-    autoclave. After sterilization add methanol (50% v/v), vitamins, cysteine
-    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas
-    atmosphere. Vitamins are sterilized by filtration. Adjust pH of complete
-    medium to 7.0 - 7.2.
+  description: Dissolve ingredients (except bicarbonate, methanol, vitamins, cysteine
+    and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 -
+    45 min to make it anoxic. Add and dissolve bicarbonate and adjust pH to 7.0, then
+    distribute under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes
+    or serum vials to 30% of their volume and autoclave. After sterilization add methanol
+    (50% v/v), vitamins, cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas atmosphere. Vitamins are sterilized by filtration.
+    Adjust pH of complete medium to 7.0 - 7.2.
 - step_number: 2
   action: MIX
-  description: After inoculation, pressurize culture bottles with sterile 80% H2
-    and 20% CO2 gas mixture to 2 bar overpressure.
+  description: After inoculation, pressurize culture bottles with sterile 80% H2 and
+    20% CO2 gas mixture to 2 bar overpressure.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
-    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -395,8 +396,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:25.341932Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:08:58.339793Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -412,8 +413,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.925170+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOSPHAERA CUNICULI MEDIUM" to
-    "methanosphaera_cuniculi_medium" for consistent matching
+  notes: Normalized name from "METHANOSPHAERA CUNICULI MEDIUM" to "methanosphaera_cuniculi_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:56.416362+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 parent_media:
   path: data/normalized_yaml/bacterial/methanosphaera_medium_ii.yaml
   relationship: SOURCE_DUPLICATE
@@ -421,5 +426,5 @@ parent_media:
   name: methanosphaera_medium_ii
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

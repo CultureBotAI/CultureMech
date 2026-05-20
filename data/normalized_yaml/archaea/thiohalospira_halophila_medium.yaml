@@ -4,7 +4,9 @@ original_name: THIOHALOSPIRA HALOPHILA MEDIUM
 category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 1058a
   term:
@@ -282,4 +284,8 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-05-20T06:00:46.527358+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 high_metal: true

@@ -4,7 +4,9 @@ original_name: OTEB-MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.2
+ph_range:
+  min: 6.8
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 1245
   term:
@@ -137,14 +139,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and
-    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
-    commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -158,14 +158,13 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
-    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
-    formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -174,13 +173,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
-    Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -315,26 +313,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: OTEB-medium is available from Anaerobe Systems
-    (http://www.anaerobesystems.com)
+  description: OTEB-medium is available from Anaerobe Systems (http://www.anaerobesystems.com)
 - step_number: 2
   action: MIX
-  description: "The following text was taken from the above page: \r\n\r\n- ORAL TREPONEME
-    ENRICHMENT BROTH (OTEB)\r\n\r\n- Products: AS-603 Oral Treponeme Enrichment Broth
-    (OTEB) 10 tubes / pkg"
+  description: "The following text was taken from the above page: \r\n\r\n- ORAL TREPONEME\
+    \ ENRICHMENT BROTH (OTEB)\r\n\r\n- Products: AS-603 Oral Treponeme Enrichment\
+    \ Broth (OTEB) 10 tubes / pkg"
 - step_number: 3
   action: MIX
   description: 'Intended Use: OTEB is an enriched medium for the isolation, cultivation
     and maintenance of Treponemes found as part of the oral flora.'
 - step_number: 4
   action: POUR_PLATES
-  description: OTEB is a complex peptone-yeast extract medium containing
-    volatile fatty acids and serum for a source of long chain fatty acids.
-    Volatile fatty acids and serum are necessary nutrients for recovery of
-    Treponemes from the oral flora. Inoculation of the medium can be done using
-    a gassing cannula or inside an anaerobic chamber. This medium is prepared,
-    stored and dispensed under oxygen-free conditions to prevent the formation
-    of oxidized products prior to use.
+  description: OTEB is a complex peptone-yeast extract medium containing volatile
+    fatty acids and serum for a source of long chain fatty acids. Volatile fatty acids
+    and serum are necessary nutrients for recovery of Treponemes from the oral flora.
+    Inoculation of the medium can be done using a gassing cannula or inside an anaerobic
+    chamber. This medium is prepared, stored and dispensed under oxygen-free conditions
+    to prevent the formation of oxidized products prior to use.
 - step_number: 5
   action: HEAT
   description: Final pH 7.0 +/- 0.2 at 25 degrees C.
@@ -363,12 +359,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.929200+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "OTEB-MEDIUM" to "oteb_medium" for consistent
-    matching
+  notes: Normalized name from "OTEB-MEDIUM" to "oteb_medium" for consistent matching
+- timestamp: '2026-05-20T06:02:01.671640+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.2'' -> {''min'': 6.8, ''max'': 7.2}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004003
   name: oteb_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1245; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1245; local ingredient
+    and concentration signatures match.

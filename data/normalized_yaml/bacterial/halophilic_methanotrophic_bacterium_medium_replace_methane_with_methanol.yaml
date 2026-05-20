@@ -4,7 +4,9 @@ original_name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM_replace_methane_with_M
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.5-7.5
+ph_range:
+  min: 6.5
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 1156_replace_methane_with_Methanol
   term:
@@ -168,3 +170,7 @@ curation_history:
   notes: Normalized name from "HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM_replace_methane_with_Methanol"
     to "halophilic_methanotrophic_bacterium_medium_replace_methane_with_methanol"
     for consistent matching
+- timestamp: '2026-05-20T06:01:22.234058+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-7.5'' -> {''min'': 6.5, ''max'': 7.5}'

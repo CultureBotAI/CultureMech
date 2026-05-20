@@ -4,7 +4,9 @@ original_name: SACCHAROLOBUS SOLFATARICUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 4-4.2
+ph_range:
+  min: 4.0
+  max: 4.2
 media_term:
   preferred_term: DSMZ Medium 182
   term:
@@ -166,3 +168,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SACCHAROLOBUS SOLFATARICUS MEDIUM" to "saccharolobus_solfataricus_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:04.630974+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''4-4.2'' -> {''min'': 4.0, ''max'': 4.2}'

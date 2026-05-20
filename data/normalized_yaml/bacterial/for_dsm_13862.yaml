@@ -4,7 +4,9 @@ original_name: For DSM 13862
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 843.1 | DSMZ Medium: 843
   (mediadive.medium:843) | Aerobic: Yes'
 media_term:
@@ -484,24 +486,27 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.311162+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 13862" to "for_dsm_13862" for consistent
-    matching
+  notes: Normalized name from "For DSM 13862" to "for_dsm_13862" for consistent matching
+- timestamp: '2026-05-20T06:01:17.451572+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 variant_children:
 - path: data/normalized_yaml/bacterial/helmutkoenigia_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001999
   name: helmutkoenigia_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_843_modified_for_dsm_18056.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006646
   name: medium_843_modified_for_dsm_18056
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/treponema_zas_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006648
   name: treponema_zas_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

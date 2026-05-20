@@ -4,7 +4,9 @@ original_name: METHANOBREVIBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 119a
   term:
@@ -380,3 +382,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOBREVIBACTER MEDIUM" to "methanobrevibacter_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:55.206057+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'

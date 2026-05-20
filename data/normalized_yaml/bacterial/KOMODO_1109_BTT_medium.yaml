@@ -4,7 +4,9 @@ original_name: BTT medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 5.5-6.0
+ph_range:
+  min: 5.5
+  max: 6.0
 media_term:
   preferred_term: KOMODO Medium 1109
   term:
@@ -67,8 +69,11 @@ curation_history:
 - timestamp: '2026-03-17T19:45:36.789388+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BTT medium" to "btt_medium" for consistent
-    matching
+  notes: Normalized name from "BTT medium" to "btt_medium" for consistent matching
+- timestamp: '2026-05-20T06:00:48.888844+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.5-6.0'' -> {''min'': 5.5, ''max'': 6.0}'
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J1178_BTT_MEDIUM.yaml
   relationship: CONCENTRATION_VARIANT
@@ -76,5 +81,4 @@ parent_media:
   name: btt_medium
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Same ingredient identity signature but concentration signature differs from
-  parent.
+- Same ingredient identity signature but concentration signature differs from parent.

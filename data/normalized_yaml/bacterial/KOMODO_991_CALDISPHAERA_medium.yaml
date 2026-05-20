@@ -4,7 +4,9 @@ original_name: CALDISPHAERA medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 4.0-4.5
+ph_range:
+  min: 4.0
+  max: 4.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 991 | DSMZ Medium: 991 (mediadive.medium:991)
   | Aerobic: Yes'
 media_term:
@@ -320,3 +322,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:55.323700+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''4.0-4.5'' -> {''min'': 4.0, ''max'': 4.5}'

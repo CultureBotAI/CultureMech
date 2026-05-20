@@ -4,7 +4,9 @@ original_name: BACTO MARINE BROTH (DIFCO 2216)
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.4-7.8
+ph_range:
+  min: 7.4
+  max: 7.8
 media_term:
   preferred_term: KOMODO Medium 514
   term:
@@ -200,4 +202,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BACTO MARINE BROTH (DIFCO 2216)" to "bacto_marine_broth_difco_2216"
     for consistent matching
+- timestamp: '2026-05-20T06:01:09.546791+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.4-7.8'' -> {''min'': 7.4, ''max'': 7.8}'
 ph_value: 7.6

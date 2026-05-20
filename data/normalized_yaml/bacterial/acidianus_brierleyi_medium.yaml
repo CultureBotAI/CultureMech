@@ -4,7 +4,9 @@ original_name: ACIDIANUS BRIERLEYI MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 1.5-2.5
+ph_range:
+  min: 1.5
+  max: 2.5
 media_term:
   preferred_term: DSMZ Medium 150
   term:
@@ -105,3 +107,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACIDIANUS BRIERLEYI MEDIUM" to "acidianus_brierleyi_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:07.291243+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''1.5-2.5'' -> {''min'': 1.5, ''max'': 2.5}'

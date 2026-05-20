@@ -4,7 +4,9 @@ original_name: TRYPTICASE SOY Yeast extract medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.0-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 92
   term:
@@ -181,3 +183,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TRYPTICASE SOY Yeast extract medium" to "trypticase_soy_yeast_extract_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:11.349025+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'

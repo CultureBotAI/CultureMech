@@ -4,7 +4,9 @@ original_name: THIOHALOPHILUS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.5-7.8
+ph_range:
+  min: 7.5
+  max: 7.8
 notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 1058 | DSMZ Medium: 1058
   (mediadive.medium:1058) | Aerobic: Yes'
 media_term:
@@ -267,4 +269,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOHALOPHILUS MEDIUM" to "thiohalophilus_medium" for
     consistent matching
+- timestamp: '2026-05-20T06:02:09.265624+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-7.8'' -> {''min'': 7.5, ''max'': 7.8}'
 high_metal: true

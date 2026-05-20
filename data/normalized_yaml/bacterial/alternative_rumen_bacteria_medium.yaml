@@ -4,7 +4,9 @@ original_name: ALTERNATIVE RUMEN BACTERIA MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.6-6.8
+ph_range:
+  min: 6.6
+  max: 6.8
 media_term:
   preferred_term: DSMZ Medium 1455
   term:
@@ -517,3 +519,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ALTERNATIVE RUMEN BACTERIA MEDIUM" to "alternative_rumen_bacteria_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:08.133137+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.6-6.8'' -> {''min'': 6.6, ''max'': 6.8}'

@@ -4,7 +4,9 @@ original_name: TINDALLIA MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9.5-10
+ph_range:
+  min: 9.5
+  max: 10.0
 media_term:
   preferred_term: DSMZ Medium 1148
   term:
@@ -357,3 +359,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TINDALLIA MEDIUM" to "tindallia_medium" for consistent
     matching
+- timestamp: '2026-05-20T06:02:09.496965+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9.5-10'' -> {''min'': 9.5, ''max'': 10.0}'

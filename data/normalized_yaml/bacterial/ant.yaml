@@ -4,7 +4,9 @@ original_name: ANT
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.6-7.8
+ph_range:
+  min: 7.6
+  max: 7.8
 media_term:
   preferred_term: CCAP Medium C3
   term:
@@ -184,3 +186,7 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ANT" to "ant" for consistent matching
+- timestamp: '2026-05-20T06:01:08.846565+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.6-7.8'' -> {''min'': 7.6, ''max'': 7.8}'

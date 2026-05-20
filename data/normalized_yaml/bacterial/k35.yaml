@@ -4,7 +4,9 @@ original_name: K35
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 8.1-8.4
+ph_range:
+  min: 8.1
+  max: 8.4
 media_term:
   preferred_term: CCAP Medium C44
   term:
@@ -220,3 +222,7 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "K35" to "k35" for consistent matching
+- timestamp: '2026-05-20T06:01:23.735695+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.1-8.4'' -> {''min'': 8.1, ''max'': 8.4}'
