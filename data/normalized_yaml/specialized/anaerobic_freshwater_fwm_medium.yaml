@@ -4,7 +4,9 @@ original_name: ANAEROBIC FRESHWATER (FWM) MEDIUM
 category: specialized
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 503
   term:
@@ -334,3 +336,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ANAEROBIC FRESHWATER (FWM) MEDIUM" to "anaerobic_freshwater_fwm_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:13.404246+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'

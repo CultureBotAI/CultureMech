@@ -4,7 +4,9 @@ original_name: B12 - MEDIUM GUTTMAN
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.8-7.2
+ph_range:
+  min: 6.8
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 1270
   term:
@@ -181,12 +183,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.206925+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "B12 - MEDIUM GUTTMAN" to "b12_medium_guttman" for
-    consistent matching
+  notes: Normalized name from "B12 - MEDIUM GUTTMAN" to "b12_medium_guttman" for consistent
+    matching
+- timestamp: '2026-05-20T06:01:09.391474+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.2'' -> {''min'': 6.8, ''max'': 7.2}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1270_B12_-_MEDIUM_GUTTMAN.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004025
   name: b12_medium_guttman
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1270; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1270; local ingredient
+    and concentration signatures match.

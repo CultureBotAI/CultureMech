@@ -4,7 +4,9 @@ original_name: CLOSTRIDIUM THERMOCELLUM medium_replace_Cellulose_with_Cellobiose
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.0-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 122_replace_Cellulose_with_Cellobiose
   term:
@@ -138,3 +140,7 @@ curation_history:
   notes: Normalized name from "CLOSTRIDIUM THERMOCELLUM medium_replace_Cellulose_with_Cellobiose"
     to "clostridium_thermocellum_medium_replace_cellulose_with_cellobiose" for consistent
     matching
+- timestamp: '2026-05-20T06:01:12.162218+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'

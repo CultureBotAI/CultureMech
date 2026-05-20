@@ -4,7 +4,9 @@ original_name: THIOBACILLUS FERROOXIDANS MEDIUM WITH THIOSULFATE
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 4.4-4.7
+ph_range:
+  min: 4.4
+  max: 4.7
 media_term:
   preferred_term: KOMODO Medium 71
   term:
@@ -87,3 +89,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOBACILLUS FERROOXIDANS MEDIUM WITH THIOSULFATE"
     to "thiobacillus_ferrooxidans_medium_with_thiosulfate" for consistent matching
+- timestamp: '2026-05-20T06:02:09.078225+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''4.4-4.7'' -> {''min'': 4.4, ''max'': 4.7}'

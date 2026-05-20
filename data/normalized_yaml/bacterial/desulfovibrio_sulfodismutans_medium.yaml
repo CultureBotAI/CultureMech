@@ -4,7 +4,9 @@ original_name: DESULFOVIBRIO SULFODISMUTANS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.1-7.4
+ph_range:
+  min: 7.1
+  max: 7.4
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 386 | DSMZ Medium: 386 (mediadive.medium:386)
   | Aerobic: Yes'
 media_term:
@@ -329,8 +331,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:46.512585+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOVIBRIO SULFODISMUTANS MEDIUM" to
-    "desulfovibrio_sulfodismutans_medium" for consistent matching
+  notes: Normalized name from "DESULFOVIBRIO SULFODISMUTANS MEDIUM" to "desulfovibrio_sulfodismutans_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:15.004642+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.1-7.4'' -> {''min'': 7.1, ''max'': 7.4}'
 parent_media:
   path: data/normalized_yaml/bacterial/sulforhabdus_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -338,5 +344,5 @@ parent_media:
   name: sulforhabdus_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

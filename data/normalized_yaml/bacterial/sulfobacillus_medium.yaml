@@ -4,7 +4,9 @@ original_name: SULFOBACILLUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 1.9-2.4
+ph_range:
+  min: 1.9
+  max: 2.4
 media_term:
   preferred_term: DSMZ Medium 665
   term:
@@ -90,15 +92,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: After autoclaving, combine the three solutions. Medium pH 1.9 -
-    2.4.
+  description: After autoclaving, combine the three solutions. Medium pH 1.9 - 2.4.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 2.0 - 2.2 with sulfuric acid.
 - step_number: 3
   action: MIX
-  description: (sterilize by filtration or handle under N2 before autoclaving to
-    prevent oxidation of the iron)
+  description: (sterilize by filtration or handle under N2 before autoclaving to prevent
+    oxidation of the iron)
 applications:
 - Microbial cultivation
 curation_history:
@@ -109,8 +110,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:14.799006Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:07.335537Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -122,24 +123,28 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.631456+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SULFOBACILLUS MEDIUM" to "sulfobacillus_medium"
-    for consistent matching
+  notes: Normalized name from "SULFOBACILLUS MEDIUM" to "sulfobacillus_medium" for
+    consistent matching
+- timestamp: '2026-05-20T06:02:06.376499+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''1.9-2.4'' -> {''min'': 1.9, ''max'': 2.4}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_665_SULFOBACILLUS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006248
   name: sulfobacillus_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1023_MANNING_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:003535
   name: manning_medium
-  notes: Reviewed Sulfobacillus medium as a concentration variant of Manning
-    medium with mineral salt and FeSO4 concentration axes.
+  notes: Reviewed Sulfobacillus medium as a concentration variant of Manning medium
+    with mineral salt and FeSO4 concentration axes.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Reviewed Manning/Sulfobacillus pair; child keeps the same component set and
-  yeast extract level, changes ammonium sulfate, KCl, K2HPO4, MgSO4, Ca(NO3)2,
-  and FeSO4 concentrations, and resolves H2SO4 from variable to 1 g/L.
+- Reviewed Manning/Sulfobacillus pair; child keeps the same component set and yeast
+  extract level, changes ammonium sulfate, KCl, K2HPO4, MgSO4, Ca(NO3)2, and FeSO4
+  concentrations, and resolves H2SO4 from variable to 1 g/L.

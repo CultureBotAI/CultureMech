@@ -4,7 +4,9 @@ original_name: PALUDISPHAERA BOREALIS MEDIUM (PX4)
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 5.8-6.5
+ph_range:
+  min: 5.8
+  max: 6.5
 media_term:
   preferred_term: DSMZ Medium 1557
   term:
@@ -214,3 +216,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PALUDISPHAERA BOREALIS MEDIUM (PX4)" to "paludisphaera_borealis_medium_px4"
     for consistent matching
+- timestamp: '2026-05-20T06:02:01.805038+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.8-6.5'' -> {''min'': 5.8, ''max'': 6.5}'

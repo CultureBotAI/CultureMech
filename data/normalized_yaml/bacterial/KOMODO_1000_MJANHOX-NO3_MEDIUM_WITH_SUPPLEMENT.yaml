@@ -4,7 +4,9 @@ original_name: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.5-8.0
+ph_range:
+  min: 7.5
+  max: 8.0
 media_term:
   preferred_term: KOMODO Medium 1000
   term:
@@ -255,16 +257,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.256327+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MJANHOX-NO3 MEDIUM WITH SUPPLEMENT" to
-    "mjanhox_no3_medium_with_supplement" for consistent matching
+  notes: Normalized name from "MJANHOX-NO3 MEDIUM WITH SUPPLEMENT" to "mjanhox_no3_medium_with_supplement"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:48.230285+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-8.0'' -> {''min'': 7.5, ''max'': 8.0}'
 ph_value: 7.9
 parent_media:
   path: data/normalized_yaml/bacterial/mjanhox_no3_medium_with_supplement.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000416
   name: mjanhox_no3_medium_with_supplement
-  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
-    concentration signature.
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same source medium number and matching ingredient/concentration signature.

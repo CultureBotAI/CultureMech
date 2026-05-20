@@ -4,7 +4,9 @@ original_name: TREPONEMA SACCHAROPHILUM medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 6.7-7.0
+ph_range:
+  min: 6.7
+  max: 7.0
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 323 | DSMZ Medium: 323 (mediadive.medium:323)
   | Aerobic: Yes
 
@@ -283,4 +285,8 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:51.201206+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.7-7.0'' -> {''min'': 6.7, ''max'': 7.0}'
 ph_value: 7.0

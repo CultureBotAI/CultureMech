@@ -4,7 +4,9 @@ original_name: MODIFIED BA medium_replace_Cellobiose_with_Cellulose
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.9-7.0
+ph_range:
+  min: 6.9
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 671_replace_Cellobiose_with_Cellulose
   term:
@@ -377,4 +379,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED BA medium_replace_Cellobiose_with_Cellulose"
     to "modified_ba_medium_replace_cellobiose_with_cellulose" for consistent matching
+- timestamp: '2026-05-20T06:01:58.758609+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.9-7.0'' -> {''min'': 6.9, ''max'': 7.0}'
 ph_value: 7.0

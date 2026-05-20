@@ -4,7 +4,9 @@ original_name: CALORAMATOR MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 788
   term:
@@ -296,19 +298,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except calcium chloride, carbonate, glucose,
-    vitamins and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for
-    30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. Add calcium
-    chloride, glucose, vitamins and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas and carbonate from a sterile anoxic stock
-    solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins should be
-    sterilized by filtration. Prior to use adjust pH of complete medium to 7.2 -
-    7.4, if necessary.
+  description: Dissolve ingredients except calcium chloride, carbonate, glucose, vitamins
+    and sulfide. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add calcium chloride, glucose, vitamins and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Vitamins should be sterilized by filtration. Prior to use adjust pH of complete
+    medium to 7.2 - 7.4, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
-    dissolve the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -327,12 +328,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.911137+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CALORAMATOR MEDIUM" to "caloramator_medium" for
-    consistent matching
+  notes: Normalized name from "CALORAMATOR MEDIUM" to "caloramator_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:01:10.795818+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 variant_children:
 - path: data/normalized_yaml/bacterial/caloramator_proteoclasticus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006489
   name: caloramator_proteoclasticus_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

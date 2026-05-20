@@ -4,7 +4,9 @@ original_name: ROSEICYCLUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 8-8.5
+ph_range:
+  min: 8.0
+  max: 8.5
 media_term:
   preferred_term: DSMZ Medium 1183
   term:
@@ -236,8 +238,7 @@ preparation_steps:
   description: pH is about 5.9 before autoclaving.
 - step_number: 2
   action: AUTOCLAVE
-  description: Add to the autoclaved medium the following, from sterile stock
-    solutions
+  description: Add to the autoclaved medium the following, from sterile stock solutions
 - step_number: 3
   action: MIX
   description: The pH of the final medium should be 8.0-8.5.
@@ -265,12 +266,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.026527+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ROSEICYCLUS MEDIUM" to "roseicyclus_medium" for
-    consistent matching
+  notes: Normalized name from "ROSEICYCLUS MEDIUM" to "roseicyclus_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:02:04.309097+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8-8.5'' -> {''min'': 8.0, ''max'': 8.5}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1183_ROSEICYCLUS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003903
   name: roseicyclus_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1183; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1183; local ingredient
+    and concentration signatures match.

@@ -1,18 +1,19 @@
 id: CultureMech:003943
-name:
-  for_strains_of_methanosarcina_mazei_and_dsm_1538_dsm_11429_dsm_11430_dsm11431_dsm_11432_dsm_11433_and_dsm_11434
-original_name: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM
-  11430, DSM11431, DSM 11432, DSM 11433 and DSM 11434
+name: for_strains_of_methanosarcina_mazei_and_dsm_1538_dsm_11429_dsm_11430_dsm11431_dsm_11432_dsm_11433_and_dsm_11434
+original_name: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 11430,
+  DSM11431, DSM 11432, DSM 11433 and DSM 11434
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-6.8
+ph_range:
+  min: 6.5
+  max: 6.8
 media_term:
   preferred_term: KOMODO Medium 120.2
   term:
     id: komodo.medium:120.2
-    label: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM
-      11430, DSM11431, DSM 11432, DSM 11433 and DSM 11434
+    label: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 11430,
+      DSM11431, DSM 11432, DSM 11433 and DSM 11434
 notes: 'Source: KOMODO ModelSEED | ID: 120.2 | DSMZ Medium: 120 (mediadive.medium:120)
   | Aerobic: Yes'
 ingredients:
@@ -352,8 +353,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.131293Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:23.491955Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -365,10 +366,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.063558+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For strains of Methanosarcina mazei and DSM 1538,
-    DSM 11429, DSM 11430, DSM11431, DSM 11432, DSM 11433 and DSM 11434" to
-    "for_strains_of_methanosarcina_mazei_and_dsm_1538_dsm_11429_dsm_11430_dsm11431_dsm_11432_dsm_11433_and_dsm_11434"
+  notes: Normalized name from "For strains of Methanosarcina mazei and DSM 1538, DSM
+    11429, DSM 11430, DSM11431, DSM 11432, DSM 11433 and DSM 11434" to "for_strains_of_methanosarcina_mazei_and_dsm_1538_dsm_11429_dsm_11430_dsm11431_dsm_11432_dsm_11433_and_dsm_11434"
     for consistent matching
+- timestamp: '2026-05-20T06:01:20.376255+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.8'' -> {''min'': 6.5, ''max'': 6.8}'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_120_METHANOSARCINA_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -376,5 +380,5 @@ parent_media:
   name: methanosarcina_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

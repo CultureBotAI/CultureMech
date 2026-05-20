@@ -4,7 +4,9 @@ original_name: COLUMBIA AGAR
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 715
   term:
@@ -68,13 +70,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.113451+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "COLUMBIA AGAR" to "columbia_agar" for consistent
-    matching
+  notes: Normalized name from "COLUMBIA AGAR" to "columbia_agar" for consistent matching
+- timestamp: '2026-05-20T06:01:12.343556+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 kg_microbe_match: mediadive.medium:687
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_715_COLUMBIA_AGAR.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006352
   name: columbia_agar
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

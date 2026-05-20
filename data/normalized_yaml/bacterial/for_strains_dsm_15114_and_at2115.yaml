@@ -4,7 +4,9 @@ original_name: For strains DSM 15114 and AT2115
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.0
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 998.1
   term:
@@ -242,8 +244,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.304615Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:45.423805Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -255,8 +257,12 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.492096+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For strains DSM 15114 and AT2115" to
-    "for_strains_dsm_15114_and_at2115" for consistent matching
+  notes: Normalized name from "For strains DSM 15114 and AT2115" to "for_strains_dsm_15114_and_at2115"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:20.311304+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.0'' -> {''min'': 6.8, ''max'': 7.0}'
 ph_value: 6.9
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_998_medium_FOR_ROSEOSPIRA.yaml
@@ -265,5 +271,5 @@ parent_media:
   name: medium_for_roseospira
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

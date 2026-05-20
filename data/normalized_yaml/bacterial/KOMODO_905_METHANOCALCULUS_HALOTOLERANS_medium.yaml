@@ -4,7 +4,9 @@ original_name: METHANOCALCULUS HALOTOLERANS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.2-7.6
+ph_range:
+  min: 7.2
+  max: 7.6
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 905 | DSMZ Medium: 905 (mediadive.medium:905)
   | Aerobic: Yes'
 media_term:
@@ -323,3 +325,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:54.752846+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.6'' -> {''min'': 7.2, ''max'': 7.6}'

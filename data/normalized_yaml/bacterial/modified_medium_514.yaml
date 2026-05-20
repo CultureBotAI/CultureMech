@@ -4,7 +4,9 @@ original_name: MODIFIED MEDIUM 514
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.4-7.8
+ph_range:
+  min: 7.4
+  max: 7.8
 media_term:
   preferred_term: DSMZ Medium 1173
   term:
@@ -182,12 +184,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.950850+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED MEDIUM 514" to "modified_medium_514" for
-    consistent matching
+  notes: Normalized name from "MODIFIED MEDIUM 514" to "modified_medium_514" for consistent
+    matching
+- timestamp: '2026-05-20T06:01:59.328663+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.4-7.8'' -> {''min'': 7.4, ''max'': 7.8}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1173_MODIFIED_medium_514.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003893
   name: modified_medium_514
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1173; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1173; local ingredient
+    and concentration signatures match.

@@ -4,7 +4,9 @@ original_name: For DSM 15841 and DSM 16925
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.5-7.8
+ph_range:
+  min: 7.5
+  max: 7.8
 notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 1058.4 | DSMZ Medium: 1058
   (mediadive.medium:1058) | Aerobic: Yes'
 media_term:
@@ -267,4 +269,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "For DSM 15841 and DSM 16925" to "for_dsm_15841_and_dsm_16925"
     for consistent matching
+- timestamp: '2026-05-20T06:01:18.139245+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-7.8'' -> {''min'': 7.5, ''max'': 7.8}'
 high_metal: true

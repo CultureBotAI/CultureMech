@@ -4,7 +4,9 @@ original_name: 1/10 NUTRIENT AGAR NO.2
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 952
   term:
@@ -62,13 +64,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.293885+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/10 NUTRIENT AGAR NO.2" to
-    "1_10_nutrient_agar_no_2" for consistent matching
+  notes: Normalized name from "1/10 NUTRIENT AGAR NO.2" to "1_10_nutrient_agar_no_2"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:46.646075+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 kg_microbe_match: mediadive.medium:101
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_952_1_10_NUTRIENT_AGAR_NO.2.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006895
   name: 1_10_nutrient_agar_no_2
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

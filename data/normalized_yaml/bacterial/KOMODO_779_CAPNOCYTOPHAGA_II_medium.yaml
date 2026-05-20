@@ -4,7 +4,9 @@ original_name: CAPNOCYTOPHAGA II medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.6-7.8
+ph_range:
+  min: 7.6
+  max: 7.8
 media_term:
   preferred_term: KOMODO Medium 779
   term:
@@ -102,16 +104,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:58.128609+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CAPNOCYTOPHAGA II medium" to
-    "capnocytophaga_ii_medium" for consistent matching
+  notes: Normalized name from "CAPNOCYTOPHAGA II medium" to "capnocytophaga_ii_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:53.771023+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.6-7.8'' -> {''min'': 7.6, ''max'': 7.8}'
 parent_media:
   path: data/normalized_yaml/bacterial/capnocytophaga_ii_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001914
   name: capnocytophaga_ii_medium
-  notes: KOMODO record states DSMZ Medium 779 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 779 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

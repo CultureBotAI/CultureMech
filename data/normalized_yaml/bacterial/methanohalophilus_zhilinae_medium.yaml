@@ -4,7 +4,9 @@ original_name: METHANOHALOPHILUS ZHILINAE medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9.2-9.4
+ph_range:
+  min: 9.2
+  max: 9.4
 media_term:
   preferred_term: KOMODO Medium 396
   term:
@@ -296,8 +298,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:46.728845+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOHALOPHILUS ZHILINAE medium" to
-    "methanohalophilus_zhilinae_medium" for consistent matching
+  notes: Normalized name from "METHANOHALOPHILUS ZHILINAE medium" to "methanohalophilus_zhilinae_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:55.824643+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9.2-9.4'' -> {''min'': 9.2, ''max'': 9.4}'
 parent_media:
   path: data/normalized_yaml/bacterial/methanosalsum_zhilinae_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -305,5 +311,5 @@ parent_media:
   name: methanosalsum_zhilinae_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

@@ -4,7 +4,9 @@ original_name: HYPHOMICROBIUM MEDIUM SAF
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6-6.5
+ph_range:
+  min: 6.0
+  max: 6.5
 media_term:
   preferred_term: DSMZ Medium 1386
   term:
@@ -287,3 +289,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HYPHOMICROBIUM MEDIUM SAF" to "hyphomicrobium_medium_saf"
     for consistent matching
+- timestamp: '2026-05-20T06:01:23.030646+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6-6.5'' -> {''min'': 6.0, ''max'': 6.5}'

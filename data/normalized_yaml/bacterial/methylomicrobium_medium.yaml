@@ -4,7 +4,9 @@ original_name: METHYLOMICROBIUM MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 8.5-9
+ph_range:
+  min: 8.5
+  max: 9.0
 media_term:
   preferred_term: DSMZ Medium 1180
   term:
@@ -188,11 +190,11 @@ preparation_steps:
   description: 'Final pH of the medium: 8.5-9.0'
 - step_number: 2
   action: AUTOCLAVE
-  description: Dispense the medium into the culture vessels. For small volumes
-    serum bottles or Hungate tubes may be used. The gas phase to liquid ratio
-    should be about 10:1. Use a gas phase containing air, 50% methane and
-    autoclave at 121°C for 15 minutes. When the growth medium is cool the
-    NaHCO3, the Na2CO3 and phosphate buffer are added.
+  description: Dispense the medium into the culture vessels. For small volumes serum
+    bottles or Hungate tubes may be used. The gas phase to liquid ratio should be
+    about 10:1. Use a gas phase containing air, 50% methane and autoclave at 121°C
+    for 15 minutes. When the growth medium is cool the NaHCO3, the Na2CO3 and phosphate
+    buffer are added.
 - step_number: 3
   action: MIX
   description: Liquid cultures should be grown with shaking.
@@ -217,12 +219,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.996375+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOMICROBIUM MEDIUM" to
-    "methylomicrobium_medium" for consistent matching
+  notes: Normalized name from "METHYLOMICROBIUM MEDIUM" to "methylomicrobium_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:56.826549+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.5-9'' -> {''min'': 8.5, ''max'': 9.0}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1180_METHYLOMICROBIUM_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003900
   name: methylomicrobium_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1180; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1180; local ingredient
+    and concentration signatures match.

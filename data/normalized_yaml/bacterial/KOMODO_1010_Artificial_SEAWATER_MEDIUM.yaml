@@ -4,7 +4,9 @@ original_name: Artificial SEAWATER MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.5
+ph_range:
+  min: 7.2
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 1010
   term:
@@ -395,8 +397,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:25.360544Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:08:58.363705Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -412,18 +414,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.456943+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Artificial SEAWATER MEDIUM" to
-    "artificial_seawater_medium" for consistent matching
+  notes: Normalized name from "Artificial SEAWATER MEDIUM" to "artificial_seawater_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:48.324875+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.5'' -> {''min'': 7.2, ''max'': 7.5}'
 variant_children:
 - path: data/normalized_yaml/bacterial/desulfopila_corrodens_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000426
   name: desulfopila_corrodens_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_15769.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003515
   name: for_dsm_15769
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

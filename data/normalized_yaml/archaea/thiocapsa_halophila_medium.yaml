@@ -4,7 +4,9 @@ original_name: THIOCAPSA HALOPHILA MEDIUM
 category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.3
+ph_range:
+  min: 7.2
+  max: 7.3
 media_term:
   preferred_term: DSMZ Medium 536
   term:
@@ -236,3 +238,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-05-20T06:00:46.500345+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.3'' -> {''min'': 7.2, ''max'': 7.3}'

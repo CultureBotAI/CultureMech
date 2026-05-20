@@ -4,7 +4,9 @@ original_name: DESULFUROBACTERIUM INDICUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6-6.5
+ph_range:
+  min: 6.0
+  max: 6.5
 media_term:
   preferred_term: DSMZ Medium 829d
   term:
@@ -391,3 +393,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFUROBACTERIUM INDICUM MEDIUM" to "desulfurobacterium_indicum_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:15.247756+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6-6.5'' -> {''min'': 6.0, ''max'': 6.5}'

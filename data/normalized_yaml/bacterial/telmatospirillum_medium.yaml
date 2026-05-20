@@ -4,7 +4,9 @@ original_name: TELMATOSPIRILLUM MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 5.5-6.5
+ph_range:
+  min: 5.5
+  max: 6.5
 media_term:
   preferred_term: DSMZ Medium 1126
   term:
@@ -198,3 +200,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TELMATOSPIRILLUM MEDIUM" to "telmatospirillum_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:07.389254+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.5-6.5'' -> {''min'': 5.5, ''max'': 6.5}'

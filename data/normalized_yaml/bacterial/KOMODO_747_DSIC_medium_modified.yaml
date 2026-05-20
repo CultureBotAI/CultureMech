@@ -4,7 +4,9 @@ original_name: DSIC medium (modified)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.0-7.1
+ph_range:
+  min: 7.0
+  max: 7.1
 media_term:
   preferred_term: KOMODO Medium 747
   term:
@@ -239,17 +241,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:57.743787+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DSIC medium (modified)" to "dsic_medium_modified"
-    for consistent matching
+  notes: Normalized name from "DSIC medium (modified)" to "dsic_medium_modified" for
+    consistent matching
+- timestamp: '2026-05-20T06:00:53.583108+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.1'' -> {''min'': 7.0, ''max'': 7.1}'
 high_metal: true
 parent_media:
   path: data/normalized_yaml/bacterial/dsic_medium_modified.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001881
   name: dsic_medium_modified
-  notes: KOMODO record states DSMZ Medium 747 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 747 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

@@ -4,7 +4,9 @@ original_name: 'For DSM 10691:'
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-6.7
+ph_range:
+  min: 6.5
+  max: 6.7
 media_term:
   preferred_term: KOMODO Medium 718.2
   term:
@@ -386,3 +388,7 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "For DSM 10691:" to "for_dsm_10691" for consistent matching
+- timestamp: '2026-05-20T06:01:16.902461+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.7'' -> {''min'': 6.5, ''max'': 6.7}'

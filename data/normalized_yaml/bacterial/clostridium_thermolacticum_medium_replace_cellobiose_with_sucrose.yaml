@@ -4,7 +4,9 @@ original_name: CLOSTRIDIUM THERMOLACTICUM medium_replace_Cellobiose_with_sucrose
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.0-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 326_replace_Cellobiose_with_sucrose
   term:
@@ -314,6 +316,10 @@ curation_history:
   notes: Normalized name from "CLOSTRIDIUM THERMOLACTICUM medium_replace_Cellobiose_with_sucrose"
     to "clostridium_thermolacticum_medium_replace_cellobiose_with_sucrose" for consistent
     matching
+- timestamp: '2026-05-20T06:01:12.196241+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: CLOSTRIDIUM THERMOLACTICUM

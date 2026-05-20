@@ -4,7 +4,9 @@ original_name: MINERAL MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 5.5-6
+ph_range:
+  min: 5.5
+  max: 6.0
 media_term:
   preferred_term: DSMZ Medium 1007
   term:
@@ -157,12 +159,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.166898+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MINERAL MEDIUM" to "mineral_medium" for
-    consistent matching
+  notes: Normalized name from "MINERAL MEDIUM" to "mineral_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:01:57.421358+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.5-6'' -> {''min'': 5.5, ''max'': 6.0}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1007_MINERAL_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003510
   name: mineral_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

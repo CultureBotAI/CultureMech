@@ -4,7 +4,9 @@ original_name: HALOANAEROBACTER SALINARIUS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 842
   term:
@@ -296,16 +298,20 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.270361+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOANAEROBACTER SALINARIUS medium" to
-    "haloanaerobacter_salinarius_medium" for consistent matching
+  notes: Normalized name from "HALOANAEROBACTER SALINARIUS medium" to "haloanaerobacter_salinarius_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:54.265410+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 parent_media:
   path: data/normalized_yaml/bacterial/haloanaerobacter_salinarius_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001998
   name: haloanaerobacter_salinarius_medium
-  notes: KOMODO record states DSMZ Medium 842 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 842 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

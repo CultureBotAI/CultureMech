@@ -4,7 +4,9 @@ original_name: MG-MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.9-7.0
+ph_range:
+  min: 6.9
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 525
   term:
@@ -402,3 +404,7 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MG-MEDIUM" to "mg_medium" for consistent matching
+- timestamp: '2026-05-20T06:01:57.102084+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.9-7.0'' -> {''min'': 6.9, ''max'': 7.0}'

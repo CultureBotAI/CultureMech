@@ -4,7 +4,9 @@ original_name: DESULFOVIBRIO HALOPHILUS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.8-7.0
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 496
   term:
@@ -351,8 +353,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.348937Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:34.715390Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -364,8 +366,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:50.996852+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOVIBRIO HALOPHILUS MEDIUM" to
-    "desulfovibrio_halophilus_medium" for consistent matching
+  notes: Normalized name from "DESULFOVIBRIO HALOPHILUS MEDIUM" to "desulfovibrio_halophilus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:14.830866+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.0'' -> {''min'': 6.8, ''max'': 7.0}'
 high_metal: true
 parent_media:
   path: data/normalized_yaml/bacterial/pseudodesulfovibrio_medium.yaml
@@ -374,5 +380,5 @@ parent_media:
   name: pseudodesulfovibrio_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

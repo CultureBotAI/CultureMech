@@ -4,7 +4,9 @@ original_name: HMD-MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7-7.5
+ph_range:
+  min: 7.0
+  max: 7.5
 media_term:
   preferred_term: DSMZ Medium 1572
   term:
@@ -103,4 +105,8 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "HMD-MEDIUM" to "hmd_medium" for consistent matching
+- timestamp: '2026-05-20T06:00:47.081582+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.5'' -> {''min'': 7.0, ''max'': 7.5}'
 high_metal: true

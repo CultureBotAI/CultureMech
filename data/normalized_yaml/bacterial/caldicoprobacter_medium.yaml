@@ -4,7 +4,9 @@ original_name: CALDICOPROBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.3-7.5
+ph_range:
+  min: 7.3
+  max: 7.5
 media_term:
   preferred_term: DSMZ Medium 1233
   term:
@@ -174,6 +176,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CALDICOPROBACTER MEDIUM" to "caldicoprobacter_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:10.658368+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.3-7.5'' -> {''min'': 7.3, ''max'': 7.5}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1233_CALDICOPROBACTER_medium.yaml
   relationship: SOURCE_DUPLICATE

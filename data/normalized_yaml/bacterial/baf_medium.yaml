@@ -4,7 +4,9 @@ original_name: BAF Medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 5.8-6.3
+ph_range:
+  min: 5.8
+  max: 6.3
 media_term:
   preferred_term: DSMZ Medium 392
   term:
@@ -162,12 +164,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.764965+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BAF Medium" to "baf_medium" for consistent
-    matching
+  notes: Normalized name from "BAF Medium" to "baf_medium" for consistent matching
+- timestamp: '2026-05-20T06:01:09.577982+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.8-6.3'' -> {''min'': 5.8, ''max'': 6.3}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_392_BAF_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005176
   name: baf_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 392; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 392; local ingredient
+    and concentration signatures match.

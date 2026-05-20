@@ -4,7 +4,9 @@ original_name: THIOBACILLUS DENITRIFICANS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 113
   term:
@@ -210,3 +212,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOBACILLUS DENITRIFICANS MEDIUM" to "thiobacillus_denitrificans_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:09.063350+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'

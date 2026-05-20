@@ -4,7 +4,9 @@ original_name: DESULFOBACTERIUM CETONICUM MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 612
   term:
@@ -222,13 +224,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.187217+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOBACTERIUM CETONICUM MEDIUM" to
-    "desulfobacterium_cetonicum_medium" for consistent matching
+  notes: Normalized name from "DESULFOBACTERIUM CETONICUM MEDIUM" to "desulfobacterium_cetonicum_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:52.884657+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 high_metal: true
 variant_children:
 - path: data/normalized_yaml/bacterial/desulfosarcina_cetonica_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001741
   name: desulfosarcina_cetonica_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

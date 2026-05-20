@@ -4,7 +4,9 @@ original_name: DSM 5262
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.0-7.5
+ph_range:
+  min: 6.0
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 769.2
   term:
@@ -197,8 +199,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.794485Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:40.634565Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -211,14 +213,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "DSM 5262" to "dsm_5262" for consistent matching
+- timestamp: '2026-05-20T06:01:15.920114+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.0-7.5'' -> {''min'': 6.0, ''max'': 7.5}'
 ph_value: 6.5
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+  path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006425
   name: clostridium_vincentii_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

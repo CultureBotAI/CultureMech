@@ -4,7 +4,9 @@ original_name: ACIDITHIOBACILLUS THIOOXIDANS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 4.4-4.7
+ph_range:
+  min: 4.4
+  max: 4.7
 media_term:
   preferred_term: DSMZ Medium 71
   term:
@@ -65,9 +67,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without thiosulfate, adjust pH to 4.4 - 4.7
-    and autoclave at 121°C for 15 min. Sterilize thiosulfate separately by
-    filtration and add after autoclaving.
+  description: Prepare the medium without thiosulfate, adjust pH to 4.4 - 4.7 and
+    autoclave at 121°C for 15 min. Sterilize thiosulfate separately by filtration
+    and add after autoclaving.
 - step_number: 2
   action: MIX
   description: 'Note: Incubate statically without shaking.'
@@ -89,8 +91,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.186982+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDITHIOBACILLUS THIOOXIDANS MEDIUM" to
-    "acidithiobacillus_thiooxidans_medium" for consistent matching
+  notes: Normalized name from "ACIDITHIOBACILLUS THIOOXIDANS MEDIUM" to "acidithiobacillus_thiooxidans_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:07.502656+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''4.4-4.7'' -> {''min'': 4.4, ''max'': 4.7}'
 parent_media:
   path: data/normalized_yaml/bacterial/for_dsm_14366.yaml
   relationship: SOURCE_DUPLICATE
@@ -98,5 +104,5 @@ parent_media:
   name: for_dsm_14366
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

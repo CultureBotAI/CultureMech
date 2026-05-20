@@ -4,7 +4,9 @@ original_name: MYCOPLASMA MEDIUM (CIP MEDIUM 89)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7-7.4
+ph_range:
+  min: 7.0
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 1080
   term:
@@ -90,3 +92,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MYCOPLASMA MEDIUM (CIP MEDIUM 89)" to "mycoplasma_medium_cip_medium_89"
     for consistent matching
+- timestamp: '2026-05-20T06:02:00.570794+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.4'' -> {''min'': 7.0, ''max'': 7.4}'

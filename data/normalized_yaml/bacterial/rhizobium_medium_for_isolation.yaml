@@ -4,7 +4,9 @@ original_name: Rhizobium medium for isolation
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 6.6-7
+ph_range:
+  min: 6.6
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 1848
   term:
@@ -100,4 +102,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Rhizobium medium for isolation" to "rhizobium_medium_for_isolation"
     for consistent matching
+- timestamp: '2026-05-20T06:02:04.061372+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.6-7'' -> {''min'': 6.6, ''max'': 7.0}'
 kg_microbe_match: mediadive.medium:1848

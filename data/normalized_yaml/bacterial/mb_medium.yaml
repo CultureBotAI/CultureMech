@@ -4,7 +4,9 @@ original_name: MB medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.2
+ph_range:
+  min: 6.8
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 924
   term:
@@ -381,8 +383,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.123554Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:09:13.475104Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -399,36 +401,39 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MB medium" to "mb_medium" for consistent matching
+- timestamp: '2026-05-20T06:01:25.737123+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.2'' -> {''min'': 6.8, ''max'': 7.2}'
 ph_value: 7.2
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/for_dsm_14539_dsm_14646_and_dsm_14648.yaml
+- path: data/normalized_yaml/bacterial/for_dsm_14539_dsm_14646_and_dsm_14648.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006831
   name: for_dsm_14539_dsm_14646_and_dsm_14648
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_14661.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006830
   name: for_dsm_14661
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_14663_and_dsm_15483.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006832
   name: for_dsm_14663_and_dsm_15483
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_14888.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006833
   name: for_dsm_14888
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/methanocalculus_mb_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002094
   name: methanocalculus_mb_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

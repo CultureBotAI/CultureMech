@@ -4,7 +4,9 @@ original_name: DESULFUROCOCCUS AMYLOLYTICUS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.2-6.4
+ph_range:
+  min: 6.2
+  max: 6.4
 media_term:
   preferred_term: KOMODO Medium 395
   term:
@@ -309,8 +311,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:42.094163Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:30.897926Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -322,30 +324,34 @@ curation_history:
 - timestamp: '2026-03-17T19:45:46.714502+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFUROCOCCUS AMYLOLYTICUS medium" to
-    "desulfurococcus_amylolyticus_medium" for consistent matching
+  notes: Normalized name from "DESULFUROCOCCUS AMYLOLYTICUS medium" to "desulfurococcus_amylolyticus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:51.607723+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.2-6.4'' -> {''min'': 6.2, ''max'': 6.4}'
 variant_children:
 - path: data/normalized_yaml/bacterial/fervidicoccus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001504
   name: fervidicoccus_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_16532.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005179
   name: for_dsm_16532
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_18924.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005180
   name: for_dsm_18924
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_19380.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005181
   name: for_dsm_19380
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

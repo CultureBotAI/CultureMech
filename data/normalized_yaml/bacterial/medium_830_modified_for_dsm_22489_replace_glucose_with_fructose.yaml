@@ -4,7 +4,9 @@ original_name: MEDIUM 830 MODIFIED FOR DSM 22489_replace_Glucose_with_fructose
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 5.0-5.8
+ph_range:
+  min: 5.0
+  max: 5.8
 media_term:
   preferred_term: KOMODO Medium 830_22489_replace_Glucose_with_fructose
   term:
@@ -206,3 +208,7 @@ curation_history:
   notes: Normalized name from "MEDIUM 830 MODIFIED FOR DSM 22489_replace_Glucose_with_fructose"
     to "medium_830_modified_for_dsm_22489_replace_glucose_with_fructose" for consistent
     matching
+- timestamp: '2026-05-20T06:01:53.266274+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.0-5.8'' -> {''min'': 5.0, ''max'': 5.8}'

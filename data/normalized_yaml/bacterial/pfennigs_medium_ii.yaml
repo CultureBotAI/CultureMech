@@ -4,7 +4,9 @@ original_name: PFENNIG'S MEDIUM II
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.1
+ph_range:
+  min: 6.8
+  max: 7.1
 media_term:
   preferred_term: DSMZ Medium 29
   term:
@@ -338,3 +340,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PFENNIG'S MEDIUM II" to "pfennigs_medium_ii" for consistent
     matching
+- timestamp: '2026-05-20T06:02:02.348791+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.1'' -> {''min'': 6.8, ''max'': 7.1}'

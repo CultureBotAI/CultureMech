@@ -4,7 +4,9 @@ original_name: ACIDOSOMA medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 5.0-5.5
+ph_range:
+  min: 5.0
+  max: 5.5
 media_term:
   preferred_term: KOMODO Medium 1220
   term:
@@ -170,17 +172,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.397313+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDOSOMA medium" to "acidosoma_medium" for
-    consistent matching
+  notes: Normalized name from "ACIDOSOMA medium" to "acidosoma_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:00:49.564411+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.0-5.5'' -> {''min'': 5.0, ''max'': 5.5}'
 parent_media:
   path: data/normalized_yaml/bacterial/acidosoma_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000679
   name: acidosoma_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 1220; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 1220; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 1220; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 1220; local ingredient
+  and concentration signatures match.

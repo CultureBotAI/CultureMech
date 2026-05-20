@@ -4,7 +4,9 @@ original_name: 2% MH MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7-7.5
+ph_range:
+  min: 7.0
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 620
   term:
@@ -105,16 +107,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.293612+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "2% MH MEDIUM" to "2_mh_medium" for consistent
-    matching
+  notes: Normalized name from "2% MH MEDIUM" to "2_mh_medium" for consistent matching
+- timestamp: '2026-05-20T06:00:52.913576+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.5'' -> {''min'': 7.0, ''max'': 7.5}'
 parent_media:
   path: data/normalized_yaml/bacterial/2_mh_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001751
   name: 2_mh_medium
-  notes: KOMODO record states DSMZ Medium 620 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 620 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

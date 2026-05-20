@@ -4,7 +4,9 @@ original_name: SPOROMUSA MEDIUM (MARINE)
 category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.5-7.7
+ph_range:
+  min: 7.5
+  max: 7.7
 media_term:
   preferred_term: DSMZ Medium 311b
   term:
@@ -394,3 +396,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SPOROMUSA MEDIUM (MARINE)" to "sporomusa_medium_marine"
     for consistent matching
+- timestamp: '2026-05-20T06:02:15.666069+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-7.7'' -> {''min'': 7.5, ''max'': 7.7}'

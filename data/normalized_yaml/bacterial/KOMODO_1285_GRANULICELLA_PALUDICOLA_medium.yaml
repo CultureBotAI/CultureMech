@@ -4,7 +4,9 @@ original_name: GRANULICELLA PALUDICOLA medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 4.0-5.0
+ph_range:
+  min: 4.0
+  max: 5.0
 notes: 'pH buffer: alginic acid | Source: KOMODO ModelSEED | ID: 1285 | DSMZ Medium:
   1285 (mediadive.medium:1285) | Aerobic: No'
 media_term:
@@ -127,3 +129,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:49.950042+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''4.0-5.0'' -> {''min'': 4.0, ''max'': 5.0}'

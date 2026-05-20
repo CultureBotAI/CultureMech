@@ -4,7 +4,9 @@ original_name: DESULFOBACTER SP. MEDIUM (LACTATE)
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.1-7.4
+ph_range:
+  min: 7.1
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 195c
   term:
@@ -385,4 +387,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFOBACTER SP. MEDIUM (LACTATE)" to "desulfobacter_sp_medium_lactate"
     for consistent matching
+- timestamp: '2026-05-20T06:01:13.541457+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.1-7.4'' -> {''min'': 7.1, ''max'': 7.4}'
 high_metal: true

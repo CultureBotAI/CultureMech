@@ -4,7 +4,9 @@ original_name: THERMOFILUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 5.8-6.2
+ph_range:
+  min: 5.8
+  max: 6.2
 media_term:
   preferred_term: DSMZ Medium 1516
   term:
@@ -338,3 +340,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THERMOFILUM MEDIUM" to "thermofilum_medium" for consistent
     matching
+- timestamp: '2026-05-20T06:02:08.389470+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.8-6.2'' -> {''min'': 5.8, ''max'': 6.2}'

@@ -4,7 +4,9 @@ original_name: CORYNEBACTERIUM AGAR
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 53
   term:
@@ -72,12 +74,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.542211+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CORYNEBACTERIUM AGAR" to "corynebacterium_agar"
-    for consistent matching
+  notes: Normalized name from "CORYNEBACTERIUM AGAR" to "corynebacterium_agar" for
+    consistent matching
+- timestamp: '2026-05-20T06:01:12.547382+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_53_CORYNEBACTERIUM_AGAR.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005967
   name: corynebacterium_agar
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

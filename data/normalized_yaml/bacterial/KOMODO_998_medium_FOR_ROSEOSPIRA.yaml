@@ -4,7 +4,9 @@ original_name: medium FOR ROSEOSPIRA
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.0
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 998
   term:
@@ -242,8 +244,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:29.475759Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:45.433669Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -255,24 +257,28 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.503459+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "medium FOR ROSEOSPIRA" to "medium_for_roseospira"
-    for consistent matching
+  notes: Normalized name from "medium FOR ROSEOSPIRA" to "medium_for_roseospira" for
+    consistent matching
+- timestamp: '2026-05-20T06:00:55.404900+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.0'' -> {''min'': 6.8, ''max'': 7.0}'
 ph_value: 6.9
 variant_children:
 - path: data/normalized_yaml/bacterial/for_strains_dsm_15114_and_at2115.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006982
   name: for_strains_dsm_15114_and_at2115
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/medium_for_roseospira.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002183
   name: medium_for_roseospira
-  notes: KOMODO record states DSMZ Medium 998 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 998 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

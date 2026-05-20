@@ -4,7 +4,9 @@ original_name: RB-1/RB-9 medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 3.5-6
+ph_range:
+  min: 3.5
+  max: 6.0
 media_term:
   preferred_term: KOMODO Medium 558
   term:
@@ -365,8 +367,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.013438Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:37.615296Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -378,18 +380,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.418887+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RB-1/RB-9 medium" to "rb_1_rb_9_medium" for
-    consistent matching
+  notes: Normalized name from "RB-1/RB-9 medium" to "rb_1_rb_9_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:02:03.829069+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''3.5-6'' -> {''min'': 3.5, ''max'': 6.0}'
 variant_children:
 - path: data/normalized_yaml/bacterial/clostridium_rb_1_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001692
   name: clostridium_rb_1_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/clostridium_rb_9_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001693
   name: clostridium_rb_9_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

@@ -4,7 +4,9 @@ original_name: DESULFOBULBUS SP. MEDIUM (MARINE)
 category: specialized
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.1-7.4
+ph_range:
+  min: 7.1
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 195b
   term:
@@ -381,4 +383,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFOBULBUS SP. MEDIUM (MARINE)" to "desulfobulbus_sp_medium_marine"
     for consistent matching
+- timestamp: '2026-05-20T06:02:13.627424+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.1-7.4'' -> {''min'': 7.1, ''max'': 7.4}'
 high_metal: true

@@ -4,7 +4,9 @@ original_name: CLOSTRIDIUM ALKALICELLUM medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 8.8-9.0
+ph_range:
+  min: 8.8
+  max: 9.0
 media_term:
   preferred_term: KOMODO Medium 1036
   term:
@@ -249,12 +251,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.749721+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM ALKALICELLUM medium" to
-    "clostridium_alkalicellum_medium" for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM ALKALICELLUM medium" to "clostridium_alkalicellum_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:11.711481+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.8-9.0'' -> {''min'': 8.8, ''max'': 9.0}'
 variant_children:
 - path: data/normalized_yaml/bacterial/acetivibrio_alkalicellulosi_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000459
   name: acetivibrio_alkalicellulosi_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

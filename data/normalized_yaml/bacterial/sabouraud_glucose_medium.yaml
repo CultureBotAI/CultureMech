@@ -4,7 +4,9 @@ original_name: SABOURAUD GLUCOSE MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 3-4
+ph_range:
+  min: 3.0
+  max: 4.0
 media_term:
   preferred_term: KOMODO Medium 1429
   term:
@@ -51,4 +53,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SABOURAUD GLUCOSE MEDIUM" to "sabouraud_glucose_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:04.615645+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''3-4'' -> {''min'': 3.0, ''max'': 4.0}'
 kg_microbe_match: mediadive.medium:12

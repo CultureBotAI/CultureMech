@@ -4,7 +4,9 @@ original_name: DESULFOBACTER CURVATUS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.1-7.4
+ph_range:
+  min: 7.1
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 195
   term:
@@ -336,15 +338,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to
-    reach a pH below 6 (at least 30 min), then distributed under the same gas
-    atmosphere in anoxic Hungate-type tubes or serum vials and autoclaved.
-    Solutions C and E are autoclaved separately under 100% N2 gas. Solution B is
-    autoclaved under 80% N2 and 20% CO2 gas atmosphere. Solution D is prepared
-    under 100% N2 gas atmosphere and sterilized by filtration. To complete the
-    medium appropriate amounts of solutions B to E are added to the sterile
-    solution A in the sequence as indicated. Final pH of the medium should be
-    7.1 - 7.4.
+  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at least 30 min), then distributed under the same gas atmosphere
+    in anoxic Hungate-type tubes or serum vials and autoclaved. Solutions C and E
+    are autoclaved separately under 100% N2 gas. Solution B is autoclaved under 80%
+    N2 and 20% CO2 gas atmosphere. Solution D is prepared under 100% N2 gas atmosphere
+    and sterilized by filtration. To complete the medium appropriate amounts of solutions
+    B to E are added to the sterile solution A in the sequence as indicated. Final
+    pH of the medium should be 7.1 - 7.4.
 - step_number: 2
   action: FILTER_STERILIZE
   description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
@@ -352,8 +353,8 @@ preparation_steps:
     growth of some strains at the beginning. For transfers use 5 - 10% (v/v) inoculum.'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
-    dissolve the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -364,8 +365,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.738217Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:02.905986Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -377,18 +378,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:14.769263+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOBACTER CURVATUS MEDIUM" to
-    "desulfobacter_curvatus_medium" for consistent matching
+  notes: Normalized name from "DESULFOBACTER CURVATUS MEDIUM" to "desulfobacter_curvatus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:13.450451+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.1-7.4'' -> {''min'': 7.1, ''max'': 7.4}'
 high_metal: true
 parent_media:
   path: data/normalized_yaml/bacterial/desulfobacter_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:001285
   name: desulfobacter_medium
-  notes: Reviewed Desulfobacter curvatus medium as a concentration variant of
-    Desulfobacter medium with salinity and acetate concentration axes.
+  notes: Reviewed Desulfobacter curvatus medium as a concentration variant of Desulfobacter
+    medium with salinity and acetate concentration axes.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Reviewed Desulfobacter/Desulfobacter curvatus pair; child keeps the same
-  defined sulfate-reducer base, carbonate, sulfide, trace elements, and vitamins
-  but raises NaCl, MgCl2, and sodium acetate concentrations.
+- Reviewed Desulfobacter/Desulfobacter curvatus pair; child keeps the same defined
+  sulfate-reducer base, carbonate, sulfide, trace elements, and vitamins but raises
+  NaCl, MgCl2, and sodium acetate concentrations.

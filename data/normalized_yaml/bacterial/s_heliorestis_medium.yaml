@@ -4,7 +4,9 @@ original_name: ½ S° HELIORESTIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9-9.5
+ph_range:
+  min: 9.0
+  max: 9.5
 media_term:
   preferred_term: DSMZ Medium 1381
   term:
@@ -244,9 +246,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare under N2 gas and add vitamin B12, NaHCO3, Na2CO3 and
-    sulfide as single sterile stock solutions to sterile medium after
-    autoclaving. Adjust pH to 9 - 9.5.
+  description: Prepare under N2 gas and add vitamin B12, NaHCO3, Na2CO3 and sulfide
+    as single sterile stock solutions to sterile medium after autoclaving. Adjust
+    pH to 9 - 9.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -269,12 +271,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.270968+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "½ S° HELIORESTIS MEDIUM" to
-    "s_heliorestis_medium" for consistent matching
+  notes: Normalized name from "½ S° HELIORESTIS MEDIUM" to "s_heliorestis_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:02:04.574681+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9-9.5'' -> {''min'': 9.0, ''max'': 9.5}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1381_S_HELIORESTIS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004111
   name: s_heliorestis_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1381; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1381; local ingredient
+    and concentration signatures match.

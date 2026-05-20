@@ -4,7 +4,9 @@ original_name: RHODOBACA BARGUZINENSIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9-9.5
+ph_range:
+  min: 9.0
+  max: 9.5
 media_term:
   preferred_term: DSMZ Medium 1227
   term:
@@ -212,12 +214,11 @@ preparation_steps:
   description: Adjust pH to 9.0-9.5
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare and boil the medium in the absence of Na2S2O3 x 5 H2O,
-    NaHCO3, Vitamin B12, MgCl2 x 6 H2O. Cool under a stream of nitrogen and add
-    the remaining components, except vitamin B12 and Na2S2O3 x 5 H2O. Dispense
-    into tubes or bottle fitted with rubber stoppers and autoclave. Add the
-    vitamin B12 (filter sterilized) and Na2S2O3 x 5 H2O from sterile stock
-    solutions.
+  description: Prepare and boil the medium in the absence of Na2S2O3 x 5 H2O, NaHCO3,
+    Vitamin B12, MgCl2 x 6 H2O. Cool under a stream of nitrogen and add the remaining
+    components, except vitamin B12 and Na2S2O3 x 5 H2O. Dispense into tubes or bottle
+    fitted with rubber stoppers and autoclave. Add the vitamin B12 (filter sterilized)
+    and Na2S2O3 x 5 H2O from sterile stock solutions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -236,13 +237,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.719361+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RHODOBACA BARGUZINENSIS MEDIUM" to
-    "rhodobaca_barguzinensis_medium" for consistent matching
+  notes: Normalized name from "RHODOBACA BARGUZINENSIS MEDIUM" to "rhodobaca_barguzinensis_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:02:04.084003+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9-9.5'' -> {''min'': 9.0, ''max'': 9.5}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_1227_RHODOBACA_BARGUZINENSIS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_1227_RHODOBACA_BARGUZINENSIS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003982
   name: rhodobaca_barguzinensis_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1227; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1227; local ingredient
+    and concentration signatures match.

@@ -4,7 +4,9 @@ original_name: METHANOBACTERIUM SUBTERRANEUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 8-8.5
+ph_range:
+  min: 8.0
+  max: 8.5
 media_term:
   preferred_term: DSMZ Medium 814
   term:
@@ -258,18 +260,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, vitamins, cysteine and
-    sulfide, then sparge medium with 100% N2 gas for 30 - 45 min to make it
-    anoxic. Dispense medium under the same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Add vitamins (sterilized by
-    filtration), cysteine and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas and carbonate from a sterile anoxic stock
-    solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to use adjust
-    pH of complete medium to 8.0 - 8.5.
+  description: Dissolve ingredients except carbonate, vitamins, cysteine and sulfide,
+    then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
+    medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Add vitamins (sterilized by filtration), cysteine and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a
+    sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior
+    to use adjust pH of complete medium to 8.0 - 8.5.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
-    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -292,13 +293,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.328561+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOBACTERIUM SUBTERRANEUM MEDIUM" to
-    "methanobacterium_subterraneum_medium" for consistent matching
+  notes: Normalized name from "METHANOBACTERIUM SUBTERRANEUM MEDIUM" to "methanobacterium_subterraneum_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:55.143948+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8-8.5'' -> {''min'': 8.0, ''max'': 8.5}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_814_METHANOBACTERIUM_SUBTERRANEUM_MEDIUM.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_814_METHANOBACTERIUM_SUBTERRANEUM_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006537
   name: methanobacterium_subterraneum_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

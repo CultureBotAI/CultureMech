@@ -5,7 +5,9 @@ original_name: SYNTROPHOCOCCUS SUCROMUTANS medium_replace_rumen fluid_with_crude
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.4-6.8
+ph_range:
+  min: 6.4
+  max: 6.8
 media_term:
   preferred_term: KOMODO Medium 337_replace_rumen fluid_with_crude egg yolk phosphatidylcholine
     (Sigma, type IX-E)
@@ -315,3 +317,7 @@ curation_history:
   notes: Normalized name from "SYNTROPHOCOCCUS SUCROMUTANS medium_replace_rumen fluid_with_crude
     egg yolk phosphatidylcholine (Sigma, type IX-E)" to "syntrophococcus_sucromutans_medium_replace_rumen_fluid_with_crude_egg_yolk_phosphatidylcholine_sigma_type_ix_e"
     for consistent matching
+- timestamp: '2026-05-20T06:02:07.064058+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.4-6.8'' -> {''min'': 6.4, ''max'': 6.8}'

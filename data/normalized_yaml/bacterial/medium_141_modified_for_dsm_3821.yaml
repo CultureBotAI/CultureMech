@@ -4,7 +4,9 @@ original_name: MEDIUM 141 MODIFIED FOR DSM 3821
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.8-7.0
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 141_3821
   term:
@@ -401,3 +403,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM 141 MODIFIED FOR DSM 3821" to "medium_141_modified_for_dsm_3821"
     for consistent matching
+- timestamp: '2026-05-20T06:01:45.410238+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.0'' -> {''min'': 6.8, ''max'': 7.0}'

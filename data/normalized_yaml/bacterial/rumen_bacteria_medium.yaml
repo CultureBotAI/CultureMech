@@ -4,7 +4,9 @@ original_name: RUMEN BACTERIA MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.7-6.8
+ph_range:
+  min: 6.7
+  max: 6.8
 media_term:
   preferred_term: DSMZ Medium 330
   term:
@@ -240,14 +242,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and
-    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
-    commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -261,14 +261,13 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
-    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
-    formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -277,13 +276,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
-    Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -322,18 +320,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, glucose, maltose,
-    cellobiose, soluble starch, cysteine and sulfide), then sparge medium with
-    100% CO2 gas for 30 - 45 min to make it anoxic. Add the carbonate and
-    equilibrate the medium with the CO2 gas to pH 6.8. Distribute under 100% CO2
-    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Thereafter, add glucose, maltose, cellobiose, soluble starch, cysteine and
-    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas
-    atmosphere. Adjust pH of complete medium to 6.7 - 6.8, if necessary.
+  description: Dissolve ingredients (except carbonate, glucose, maltose, cellobiose,
+    soluble starch, cysteine and sulfide), then sparge medium with 100% CO2 gas for
+    30 - 45 min to make it anoxic. Add the carbonate and equilibrate the medium with
+    the CO2 gas to pH 6.8. Distribute under 100% CO2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Thereafter, add glucose, maltose, cellobiose,
+    soluble starch, cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas atmosphere. Adjust pH of complete medium to 6.7 - 6.8, if necessary.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with
-    distilled water and filter sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
 applications:
 - Microbial cultivation
 curation_history:
@@ -352,12 +349,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.083237+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RUMEN BACTERIA MEDIUM" to "rumen_bacteria_medium"
-    for consistent matching
+  notes: Normalized name from "RUMEN BACTERIA MEDIUM" to "rumen_bacteria_medium" for
+    consistent matching
+- timestamp: '2026-05-20T06:02:04.441355+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.7-6.8'' -> {''min'': 6.7, ''max'': 6.8}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_330_RUMEN_BACTERIA_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005024
   name: rumen_bacteria_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 330; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 330; local ingredient
+    and concentration signatures match.

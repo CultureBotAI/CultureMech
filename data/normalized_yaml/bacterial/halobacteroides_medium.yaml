@@ -4,7 +4,9 @@ original_name: HALOBACTEROIDES MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 1410
   term:
@@ -273,4 +275,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALOBACTEROIDES MEDIUM" to "halobacteroides_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:21.971661+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 high_metal: true

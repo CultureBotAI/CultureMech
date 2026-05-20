@@ -4,7 +4,9 @@ original_name: Corn meal Agar (Oxoid CM103)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 5.8-6.2
+ph_range:
+  min: 5.8
+  max: 6.2
 media_term:
   preferred_term: KOMODO Medium 5010
   term:
@@ -29,3 +31,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Corn meal Agar (Oxoid CM103)" to "corn_meal_agar_oxoid_cm103"
     for consistent matching
+- timestamp: '2026-05-20T06:01:12.533085+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.8-6.2'' -> {''min'': 5.8, ''max'': 6.2}'

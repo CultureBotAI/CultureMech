@@ -4,7 +4,9 @@ original_name: YEAST EXTRACT MINERAL MEDIUM
 category: fungal
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 259
   term:
@@ -90,3 +92,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "YEAST EXTRACT MINERAL MEDIUM" to "yeast_extract_mineral_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:13.120595+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'

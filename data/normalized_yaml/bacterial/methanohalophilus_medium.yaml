@@ -4,7 +4,9 @@ original_name: METHANOHALOPHILUS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.0-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 479
   term:
@@ -288,3 +290,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOHALOPHILUS medium" to "methanohalophilus_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:55.801947+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'

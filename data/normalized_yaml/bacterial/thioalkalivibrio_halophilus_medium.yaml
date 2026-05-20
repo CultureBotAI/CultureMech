@@ -4,7 +4,9 @@ original_name: THIOALKALIVIBRIO HALOPHILUS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 8.0-8.5
+ph_range:
+  min: 8.0
+  max: 8.5
 media_term:
   preferred_term: KOMODO Medium 1014
   term:
@@ -197,4 +199,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOALKALIVIBRIO HALOPHILUS MEDIUM" to "thioalkalivibrio_halophilus_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:09.005457+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.0-8.5'' -> {''min'': 8.0, ''max'': 8.5}'
 high_metal: true
