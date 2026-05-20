@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-05-19T19:51:07
+# Generation date: 2026-05-19T20:18:42
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -1252,7 +1252,7 @@ class PerturbationContext(YAMLRoot):
     target: Optional[str] = None
     level: Optional[float] = None
     level_unit: Optional[str] = None
-    ontology_term: Optional[str] = None
+    ontology_id: Optional[str] = None
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -1273,8 +1273,8 @@ class PerturbationContext(YAMLRoot):
         if self.level_unit is not None and not isinstance(self.level_unit, str):
             self.level_unit = str(self.level_unit)
 
-        if self.ontology_term is not None and not isinstance(self.ontology_term, str):
-            self.ontology_term = str(self.ontology_term)
+        if self.ontology_id is not None and not isinstance(self.ontology_id, str):
+            self.ontology_id = str(self.ontology_id)
 
         self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
@@ -1298,7 +1298,7 @@ class StrainModification(YAMLRoot):
     modification_type: Union[str, "StrainModificationTypeEnum"] = None
     target: Optional[str] = None
     description: Optional[str] = None
-    ontology_term: Optional[str] = None
+    ontology_id: Optional[str] = None
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -1313,8 +1313,8 @@ class StrainModification(YAMLRoot):
         if self.description is not None and not isinstance(self.description, str):
             self.description = str(self.description)
 
-        if self.ontology_term is not None and not isinstance(self.ontology_term, str):
-            self.ontology_term = str(self.ontology_term)
+        if self.ontology_id is not None and not isinstance(self.ontology_id, str):
+            self.ontology_id = str(self.ontology_id)
 
         self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
@@ -3721,8 +3721,8 @@ slots.perturbationContext__level = Slot(uri=CULTUREMECH.level, name="perturbatio
 slots.perturbationContext__level_unit = Slot(uri=CULTUREMECH.level_unit, name="perturbationContext__level_unit", curie=CULTUREMECH.curie('level_unit'),
                    model_uri=CULTUREMECH.perturbationContext__level_unit, domain=None, range=Optional[str])
 
-slots.perturbationContext__ontology_term = Slot(uri=CULTUREMECH.ontology_term, name="perturbationContext__ontology_term", curie=CULTUREMECH.curie('ontology_term'),
-                   model_uri=CULTUREMECH.perturbationContext__ontology_term, domain=None, range=Optional[str],
+slots.perturbationContext__ontology_id = Slot(uri=CULTUREMECH.ontology_id, name="perturbationContext__ontology_id", curie=CULTUREMECH.curie('ontology_id'),
+                   model_uri=CULTUREMECH.perturbationContext__ontology_id, domain=None, range=Optional[str],
                    pattern=re.compile(r'^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$'))
 
 slots.perturbationContext__evidence = Slot(uri=CULTUREMECH.evidence, name="perturbationContext__evidence", curie=CULTUREMECH.curie('evidence'),
@@ -3737,8 +3737,8 @@ slots.strainModification__target = Slot(uri=CULTUREMECH.target, name="strainModi
 slots.strainModification__description = Slot(uri=CULTUREMECH.description, name="strainModification__description", curie=CULTUREMECH.curie('description'),
                    model_uri=CULTUREMECH.strainModification__description, domain=None, range=Optional[str])
 
-slots.strainModification__ontology_term = Slot(uri=CULTUREMECH.ontology_term, name="strainModification__ontology_term", curie=CULTUREMECH.curie('ontology_term'),
-                   model_uri=CULTUREMECH.strainModification__ontology_term, domain=None, range=Optional[str],
+slots.strainModification__ontology_id = Slot(uri=CULTUREMECH.ontology_id, name="strainModification__ontology_id", curie=CULTUREMECH.curie('ontology_id'),
+                   model_uri=CULTUREMECH.strainModification__ontology_id, domain=None, range=Optional[str],
                    pattern=re.compile(r'^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$'))
 
 slots.strainModification__evidence = Slot(uri=CULTUREMECH.evidence, name="strainModification__evidence", curie=CULTUREMECH.curie('evidence'),

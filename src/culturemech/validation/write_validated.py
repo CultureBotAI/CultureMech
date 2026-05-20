@@ -38,7 +38,7 @@ from linkml.validator.report import Severity, ValidationResult
 
 DEFAULT_SCHEMA_PATH = Path("src/culturemech/schema/culturemech.yaml")
 
-_VALIDATOR: Validator | None = None
+_VALIDATORS: dict[Path, Validator] = {}
 _VALIDATOR_LOCK = Lock()
 
 _SOLUTION_TERM_PREFIXES = ("mediadive.solution:", "MediaIngredientMech:")
@@ -65,14 +65,16 @@ class ValidationFailedError(Exception):
 
 
 def _get_validator(schema_path: Path) -> Validator:
-    global _VALIDATOR
+    """Cache validators keyed by resolved schema path so callers can mix
+    schemas in the same process without silently reusing a stale instance."""
+    key = Path(schema_path).resolve()
     with _VALIDATOR_LOCK:
-        if _VALIDATOR is None:
-            _VALIDATOR = Validator(
-                schema=str(schema_path),
+        if key not in _VALIDATORS:
+            _VALIDATORS[key] = Validator(
+                schema=str(key),
                 validation_plugins=[JsonschemaValidationPlugin(closed=True)],
             )
-        return _VALIDATOR
+        return _VALIDATORS[key]
 
 
 def infer_target_class(instance: dict[str, Any]) -> str:

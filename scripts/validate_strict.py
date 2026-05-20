@@ -116,6 +116,7 @@ def validate_one(path: Path) -> list[dict]:
     except yaml.YAMLError as e:
         return [{
             "file": str(path),
+            "layer": "schema",
             "category": "yaml_parse_error",
             "detail": "",
             "path": "",
@@ -124,6 +125,7 @@ def validate_one(path: Path) -> list[dict]:
     if instance is None:
         return [{
             "file": str(path),
+            "layer": "schema",
             "category": "empty_file",
             "detail": "",
             "path": "",
@@ -136,6 +138,7 @@ def validate_one(path: Path) -> list[dict]:
     except Exception as e:  # noqa: BLE001 — surface anything weird as a row
         return [{
             "file": str(path),
+            "layer": "schema",
             "category": "validator_crash",
             "detail": type(e).__name__,
             "path": "",
@@ -196,36 +199,55 @@ def _run_external_validator(cmd: list[str], path: Path, layer: str) -> list[dict
     return rows
 
 
-def validate_terms(path: Path) -> list[dict]:
+def _peek_target_class(path: Path) -> str:
+    """Lightweight target-class inference for external validators
+    (which take the class as a CLI flag, not as data).
+    Same routing rule as the in-process validator's `infer_target_class`.
+    """
+    try:
+        with path.open() as f:
+            instance = yaml.safe_load(f)
+    except (yaml.YAMLError, OSError):
+        return "MediaRecipe"
+    return infer_target_class(instance)
+
+
+def validate_terms(path: Path, target_class: str) -> list[dict]:
     return _run_external_validator(
         [
             "uv", "run", "linkml-term-validator", "validate-data", str(path),
-            "-s", str(SCHEMA_PATH), "-t", "MediaRecipe",
+            "-s", str(SCHEMA_PATH), "-t", target_class,
             "--labels", "-c", str(OAK_CONFIG_PATH),
         ],
         path, "terms",
     )
 
 
-def validate_references(path: Path) -> list[dict]:
+def validate_references(path: Path, target_class: str) -> list[dict]:
     return _run_external_validator(
         [
             "uv", "run", "linkml-reference-validator", "validate", "data", str(path),
-            "--schema", str(SCHEMA_PATH), "--target-class", "MediaRecipe",
+            "--schema", str(SCHEMA_PATH), "--target-class", target_class,
         ],
         path, "references",
     )
 
 
 def validate_one_layered(path: Path, layers: tuple[str, ...]) -> list[dict]:
-    """Run the configured set of validation layers on a single file."""
+    """Run the configured set of validation layers on a single file.
+
+    External validators (terms / references) need the target class as a CLI
+    flag — peek the file once to route MediaRecipe vs SolutionRecipe so
+    standalone solution records aren't false-failed against MediaRecipe.
+    """
     rows: list[dict] = []
+    target_class = _peek_target_class(path) if {"terms", "references"} & set(layers) else "MediaRecipe"
     if "schema" in layers:
         rows.extend(validate_one(path))
     if "terms" in layers:
-        rows.extend(validate_terms(path))
+        rows.extend(validate_terms(path, target_class))
     if "references" in layers:
-        rows.extend(validate_references(path))
+        rows.extend(validate_references(path, target_class))
     return rows
 
 
