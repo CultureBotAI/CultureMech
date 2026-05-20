@@ -4,7 +4,9 @@ original_name: STYGIOLOBUS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 2.5-3.0
+ph_range:
+  min: 2.5
+  max: 3.0
 media_term:
   preferred_term: KOMODO Medium 510
   term:
@@ -29,3 +31,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "STYGIOLOBUS medium" to "stygiolobus_medium" for consistent
     matching
+- timestamp: '2026-05-20T06:00:52.388710+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''2.5-3.0'' -> {''min'': 2.5, ''max'': 3.0}'

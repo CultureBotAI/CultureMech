@@ -4,7 +4,9 @@ original_name: THERMOANAEROBIUM medium_replace_Tryptone_with_Trypticase
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 144_replace_Tryptone_with_Trypticase
   term:
@@ -354,3 +356,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THERMOANAEROBIUM medium_replace_Tryptone_with_Trypticase"
     to "thermoanaerobium_medium_replace_tryptone_with_trypticase" for consistent matching
+- timestamp: '2026-05-20T06:02:08.000515+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'

@@ -4,7 +4,9 @@ original_name: METHYLOCAPSA ACIDOPHILA MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 4-4.5
+ph_range:
+  min: 4.0
+  max: 4.5
 media_term:
   preferred_term: DSMZ Medium 922
   term:
@@ -129,10 +131,10 @@ preparation_steps:
   description: Final pH 4.0-4.5.
 - step_number: 2
   action: MIX
-  description: The medium is fairly weakly buffered so the pH should be checked
-    before and after autoclaving. In the early stage of growth the strain may
-    form aggregates which break as the culture ages. 10-30% methane is added to
-    the gas phase. Adding 100 mg/litre KNO3 enhances growth.
+  description: The medium is fairly weakly buffered so the pH should be checked before
+    and after autoclaving. In the early stage of growth the strain may form aggregates
+    which break as the culture ages. 10-30% methane is added to the gas phase. Adding
+    100 mg/litre KNO3 enhances growth.
 - step_number: 3
   action: MIX
   description: The strain should be grown with shaking.
@@ -154,13 +156,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.856171+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOCAPSA ACIDOPHILA MEDIUM" to
-    "methylocapsa_acidophila_medium" for consistent matching
+  notes: Normalized name from "METHYLOCAPSA ACIDOPHILA MEDIUM" to "methylocapsa_acidophila_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:56.725734+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''4-4.5'' -> {''min'': 4.0, ''max'': 4.5}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_922_METHYLOCAPSA_ACIDOPHILA_MEDIUM.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_922_METHYLOCAPSA_ACIDOPHILA_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006828
   name: methylocapsa_acidophila_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

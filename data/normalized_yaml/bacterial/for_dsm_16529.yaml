@@ -4,7 +4,9 @@ original_name: For DSM 16529
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 8.7-9.0
+ph_range:
+  min: 8.7
+  max: 9.0
 media_term:
   preferred_term: KOMODO Medium 866.1
   term:
@@ -325,8 +327,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.033974Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:43.099627Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -338,18 +340,21 @@ curation_history:
 - timestamp: '2026-03-17T19:46:00.815393+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 16529" to "for_dsm_16529" for consistent
-    matching
+  notes: Normalized name from "For DSM 16529" to "for_dsm_16529" for consistent matching
+- timestamp: '2026-05-20T06:01:18.324109+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.7-9.0'' -> {''min'': 8.7, ''max'': 9.0}'
 variant_children:
 - path: data/normalized_yaml/bacterial/desulfofalx_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002024
   name: desulfofalx_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/desulfotomaculum_alkaliphilum_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006696
   name: desulfotomaculum_alkaliphilum_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

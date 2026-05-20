@@ -4,7 +4,9 @@ original_name: CLOSTRIDIUM THERMOSULFUROGENES medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.0-6.5
+ph_range:
+  min: 6.0
+  max: 6.5
 media_term:
   preferred_term: KOMODO Medium 211
   term:
@@ -325,8 +327,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:13.837643Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:26.769527Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -338,18 +340,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:41.919884+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM THERMOSULFUROGENES medium" to
-    "clostridium_thermosulfurogenes_medium" for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM THERMOSULFUROGENES medium" to "clostridium_thermosulfurogenes_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:50.692804+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.0-6.5'' -> {''min'': 6.0, ''max'': 6.5}'
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_8683_dsm_8684_and_dsm_16487.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004391
   name: for_dsm_8683_dsm_8684_and_dsm_16487
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/thermoanaerobacterium_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001309
   name: thermoanaerobacterium_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

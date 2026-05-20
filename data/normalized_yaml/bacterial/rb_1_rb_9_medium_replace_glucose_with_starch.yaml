@@ -4,7 +4,9 @@ original_name: RB-1/RB-9 medium_replace_Glucose_with_Starch
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 3.5-6
+ph_range:
+  min: 3.5
+  max: 6.0
 media_term:
   preferred_term: KOMODO Medium 558_replace_Glucose_with_Starch
   term:
@@ -380,3 +382,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RB-1/RB-9 medium_replace_Glucose_with_Starch" to "rb_1_rb_9_medium_replace_glucose_with_starch"
     for consistent matching
+- timestamp: '2026-05-20T06:02:03.847159+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''3.5-6'' -> {''min'': 3.5, ''max'': 6.0}'

@@ -4,7 +4,9 @@ original_name: J - AGAR
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.3-7.5
+ph_range:
+  min: 7.3
+  max: 7.5
 media_term:
   preferred_term: DSMZ Medium 262
   term:
@@ -53,9 +55,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.3 - 7.5. Dissolve glucose in 10 ml of distilled
-    water and sterilize glucose separately. Aseptically add to the basis medium
-    after sterilization.
+  description: Adjust pH to 7.3 - 7.5. Dissolve glucose in 10 ml of distilled water
+    and sterilize glucose separately. Aseptically add to the basis medium after sterilization.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,10 +76,14 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "J - AGAR" to "j_agar" for consistent matching
+- timestamp: '2026-05-20T06:01:23.404371+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.3-7.5'' -> {''min'': 7.3, ''max'': 7.5}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_262_J_-_AGAR.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004666
   name: j_agar
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 262; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 262; local ingredient
+    and concentration signatures match.

@@ -4,7 +4,9 @@ original_name: AUTOTROPHIC NITROBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.4-7.6
+ph_range:
+  min: 7.4
+  max: 7.6
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 756c | DSMZ Medium: 756c
   (mediadive.medium:756c) | Aerobic: No'
 media_term:
@@ -185,4 +187,8 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:53.646550+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.4-7.6'' -> {''min'': 7.4, ''max'': 7.6}'
 ph_value: 8.6

@@ -4,7 +4,9 @@ original_name: SH SEAWATER MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.5-8.5
+ph_range:
+  min: 7.5
+  max: 8.5
 media_term:
   preferred_term: DSMZ Medium 1282
   term:
@@ -367,9 +369,9 @@ preparation_steps:
   description: pH 7.5 - 8.5
 - step_number: 2
   action: AUTOCLAVE
-  description: To solid media add 15.0 g/l agar. Add the vitamin solution
-    (filter sterilized) and the NaHCO3 (0.2 g in 10 ml H2O, filter sterilized)
-    to the autoclaved, cooled medium.
+  description: To solid media add 15.0 g/l agar. Add the vitamin solution (filter
+    sterilized) and the NaHCO3 (0.2 g in 10 ml H2O, filter sterilized) to the autoclaved,
+    cooled medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -396,12 +398,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.391057+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SH SEAWATER MEDIUM" to "sh_seawater_medium" for
-    consistent matching
+  notes: Normalized name from "SH SEAWATER MEDIUM" to "sh_seawater_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:02:05.221351+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-8.5'' -> {''min'': 7.5, ''max'': 8.5}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1282_SH_SEAWATER_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004034
   name: sh_seawater_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1282; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1282; local ingredient
+    and concentration signatures match.

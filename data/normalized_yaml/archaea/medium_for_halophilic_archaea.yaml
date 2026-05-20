@@ -4,7 +4,9 @@ original_name: MEDIUM FOR HALOPHILIC ARCHAEA
 category: archaea
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 6.5-7
+ph_range:
+  min: 6.5
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 1184
   term:
@@ -128,4 +130,8 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-05-20T06:00:46.081474+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-7'' -> {''min'': 6.5, ''max'': 7.0}'
 high_metal: true

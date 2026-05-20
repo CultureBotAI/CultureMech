@@ -4,7 +4,9 @@ original_name: THERMOSIPHO AFFECTUS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-7.0
+ph_range:
+  min: 6.5
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 1299
   term:
@@ -253,8 +255,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:46.216818Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:24.433191Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -266,17 +268,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:39.172772+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOSIPHO AFFECTUS medium" to
-    "thermosipho_affectus_medium" for consistent matching
+  notes: Normalized name from "THERMOSIPHO AFFECTUS medium" to "thermosipho_affectus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:49.985297+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-7.0'' -> {''min'': 6.5, ''max'': 7.0}'
 parent_media:
   path: data/normalized_yaml/bacterial/thermosipho_affectus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000761
   name: thermosipho_affectus_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 1299; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 1299; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 1299; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 1299; local ingredient
+  and concentration signatures match.

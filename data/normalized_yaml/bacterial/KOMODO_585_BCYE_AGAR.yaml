@@ -4,7 +4,9 @@ original_name: BCYE AGAR
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 6.4-7.4
+ph_range:
+  min: 6.4
+  max: 7.4
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 585 | DSMZ Medium: 585 (mediadive.medium:585)
   | Aerobic: No'
 media_term:
@@ -111,3 +113,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:52.725555+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.4-7.4'' -> {''min'': 6.4, ''max'': 7.4}'

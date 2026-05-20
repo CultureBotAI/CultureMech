@@ -4,7 +4,9 @@ original_name: AQUASPIRILLUM MEDIUM II
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.4-7.6
+ph_range:
+  min: 7.4
+  max: 7.6
 media_term:
   preferred_term: DSMZ Medium 1495
   term:
@@ -279,3 +281,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "AQUASPIRILLUM MEDIUM II" to "aquaspirillum_medium_ii"
     for consistent matching
+- timestamp: '2026-05-20T06:01:08.888893+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.4-7.6'' -> {''min'': 7.4, ''max'': 7.6}'

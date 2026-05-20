@@ -4,7 +4,9 @@ original_name: SMB medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 6.8-7.1
+ph_range:
+  min: 6.8
+  max: 7.1
 media_term:
   preferred_term: KOMODO Medium 1185
   term:
@@ -144,17 +146,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:37.632180+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SMB medium" to "smb_medium" for consistent
-    matching
+  notes: Normalized name from "SMB medium" to "smb_medium" for consistent matching
+- timestamp: '2026-05-20T06:00:49.277431+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.1'' -> {''min'': 6.8, ''max'': 7.1}'
 parent_media:
   path: data/normalized_yaml/bacterial/smb_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000627
   name: smb_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 1185; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 1185; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 1185; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 1185; local ingredient
+  and concentration signatures match.

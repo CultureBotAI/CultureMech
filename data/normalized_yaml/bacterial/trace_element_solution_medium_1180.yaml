@@ -4,7 +4,9 @@ original_name: Trace element solution (medium 1180)
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 8.5-9.0
+ph_range:
+  min: 8.5
+  max: 9.0
 media_term:
   preferred_term: KOMODO Medium 2032
   term:
@@ -29,3 +31,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Trace element solution (medium 1180)" to "trace_element_solution_medium_1180"
     for consistent matching
+- timestamp: '2026-05-20T06:02:10.781971+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.5-9.0'' -> {''min'': 8.5, ''max'': 9.0}'

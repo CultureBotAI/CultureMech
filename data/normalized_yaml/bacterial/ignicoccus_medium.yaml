@@ -4,7 +4,9 @@ original_name: IGNICOCCUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 5-5.5
+ph_range:
+  min: 5.0
+  max: 5.5
 media_term:
   preferred_term: DSMZ Medium 897
   term:
@@ -188,3 +190,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "IGNICOCCUS MEDIUM" to "ignicoccus_medium" for consistent
     matching
+- timestamp: '2026-05-20T06:01:23.090885+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5-5.5'' -> {''min'': 5.0, ''max'': 5.5}'

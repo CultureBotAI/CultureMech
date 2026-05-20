@@ -4,7 +4,9 @@ original_name: METHYLOFERULA STELLATA MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 5.0-5.8
+ph_range:
+  min: 5.0
+  max: 5.8
 notes: 'pH buffer: H3PO4 | Source: KOMODO ModelSEED | ID: 1322 | DSMZ Medium: 1322
   (mediadive.medium:1322) | Aerobic: No'
 media_term:
@@ -197,3 +199,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:50.102943+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.0-5.8'' -> {''min'': 5.0, ''max'': 5.8}'

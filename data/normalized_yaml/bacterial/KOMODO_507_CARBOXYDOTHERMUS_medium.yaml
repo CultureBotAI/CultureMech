@@ -4,7 +4,9 @@ original_name: CARBOXYDOTHERMUS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.0
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 507
   term:
@@ -282,8 +284,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.444857Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:35.615426Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -295,57 +297,59 @@ curation_history:
 - timestamp: '2026-03-17T19:45:52.049168+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CARBOXYDOTHERMUS medium" to
-    "carboxydothermus_medium" for consistent matching
+  notes: Normalized name from "CARBOXYDOTHERMUS medium" to "carboxydothermus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:52.380617+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.0'' -> {''min'': 6.8, ''max'': 7.0}'
 ph_value: 6.9
 variant_children:
 - path: data/normalized_yaml/bacterial/carboxydothermus_siderophilus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001640
   name: carboxydothermus_siderophilus_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_12326.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005701
   name: for_dsm_12326
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_18923.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005702
   name: for_dsm_18923
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_21278.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005703
   name: for_dsm_21278
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_21830.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005704
   name: for_dsm_21830
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_23698.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005707
   name: for_dsm_23698
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_507_modified_for_dsm_7242.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005706
   name: medium_507_modified_for_dsm_7242
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
-- path:
-    data/normalized_yaml/bacterial/pyruvate_as_an_alternative_substrate_for_dsm_6008_dsm_14886_and_dsm_16521.yaml
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/pyruvate_as_an_alternative_substrate_for_dsm_6008_dsm_14886_and_dsm_16521.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005700
-  name:
-    pyruvate_as_an_alternative_substrate_for_dsm_6008_dsm_14886_and_dsm_16521
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  name: pyruvate_as_an_alternative_substrate_for_dsm_6008_dsm_14886_and_dsm_16521
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

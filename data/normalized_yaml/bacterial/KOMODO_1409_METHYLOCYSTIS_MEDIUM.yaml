@@ -4,7 +4,9 @@ original_name: METHYLOCYSTIS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 5.8-6.2
+ph_range:
+  min: 5.8
+  max: 6.2
 media_term:
   preferred_term: KOMODO Medium 1409
   term:
@@ -155,17 +157,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:39.834537+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOCYSTIS MEDIUM" to "methylocystis_medium"
-    for consistent matching
+  notes: Normalized name from "METHYLOCYSTIS MEDIUM" to "methylocystis_medium" for
+    consistent matching
+- timestamp: '2026-05-20T06:00:50.316519+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.8-6.2'' -> {''min'': 5.8, ''max'': 6.2}'
 parent_media:
   path: data/normalized_yaml/bacterial/methylocystis_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000870
   name: methylocystis_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 1409; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 1409; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 1409; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 1409; local ingredient
+  and concentration signatures match.

@@ -4,7 +4,9 @@ original_name: METHANOCALCULUS PUMILUS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.3-7.5
+ph_range:
+  min: 7.3
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 892
   term:
@@ -340,8 +342,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:18.965247Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:08:48.724126Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -357,16 +359,20 @@ curation_history:
 - timestamp: '2026-03-17T19:46:01.340167+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOCALCULUS PUMILUS medium" to
-    "methanocalculus_pumilus_medium" for consistent matching
+  notes: Normalized name from "METHANOCALCULUS PUMILUS medium" to "methanocalculus_pumilus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:54.621955+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.3-7.5'' -> {''min'': 7.3, ''max'': 7.5}'
 parent_media:
   path: data/normalized_yaml/bacterial/methanocalculus_pumilus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002055
   name: methanocalculus_pumilus_medium
-  notes: KOMODO record states DSMZ Medium 892 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 892 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

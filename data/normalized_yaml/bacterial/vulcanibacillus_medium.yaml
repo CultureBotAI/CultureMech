@@ -4,7 +4,9 @@ original_name: VULCANIBACILLUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 1042
   term:
@@ -308,17 +310,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except ferrous sulfate, bicarbonate, yeast
-    extract, pyruvate and vitamins), adjust pH to 7.0 and sparge medium with
-    100% N2 gas for 30 - 45 min to make it anoxic. Dispense the medium under
-    same gas atmosphere into Hungate-type tubes or serum vials and autoclave.
-    Add ferrous sulfate, bicarbonate, yeast extract, pyruvate and vitamins from
-    sterile anoxic stock solutions prepared under 100% N2 gas and bicarbonate
-    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas
-    atmosphere. Prepare the stock solution of ferrous sulfate by dissolving 1%
-    (w/v) FeSO4 x 7 H2O in 0.1 N H2SO4. The stock solutions of pyruvate and
-    vitamins should be sterilized by filtration. Adjust pH of the complete
-    medium to 6.8-7.0.
+  description: Dissolve ingredients (except ferrous sulfate, bicarbonate, yeast extract,
+    pyruvate and vitamins), adjust pH to 7.0 and sparge medium with 100% N2 gas for
+    30 - 45 min to make it anoxic. Dispense the medium under same gas atmosphere into
+    Hungate-type tubes or serum vials and autoclave. Add ferrous sulfate, bicarbonate,
+    yeast extract, pyruvate and vitamins from sterile anoxic stock solutions prepared
+    under 100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas atmosphere. Prepare the stock solution of ferrous
+    sulfate by dissolving 1% (w/v) FeSO4 x 7 H2O in 0.1 N H2SO4. The stock solutions
+    of pyruvate and vitamins should be sterilized by filtration. Adjust pH of the
+    complete medium to 6.8-7.0.
 - step_number: 2
   action: FILTER_STERILIZE
   description: 'Note: It may be necessary to add 10-20 mg sodium dithionite per liter
@@ -326,8 +327,8 @@ preparation_steps:
     if the medium is not completely reduced after inoculation.'
 - step_number: 3
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve
-    the salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
+    salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -338,8 +339,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.800303Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:08:45.275960Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -355,12 +356,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.560803+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "VULCANIBACILLUS MEDIUM" to
-    "vulcanibacillus_medium" for consistent matching
+  notes: Normalized name from "VULCANIBACILLUS MEDIUM" to "vulcanibacillus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:02:11.891266+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1042_VULCANIBACILLUS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003601
   name: vulcanibacillus_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

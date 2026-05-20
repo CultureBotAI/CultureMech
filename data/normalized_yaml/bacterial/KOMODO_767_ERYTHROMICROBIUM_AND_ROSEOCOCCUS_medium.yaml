@@ -4,7 +4,9 @@ original_name: ERYTHROMICROBIUM AND ROSEOCOCCUS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.5-7.8
+ph_range:
+  min: 7.5
+  max: 7.8
 media_term:
   preferred_term: KOMODO Medium 767
   term:
@@ -183,24 +185,27 @@ curation_history:
 - timestamp: '2026-03-17T19:45:57.955986+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ERYTHROMICROBIUM AND ROSEOCOCCUS medium" to
-    "erythromicrobium_and_roseococcus_medium" for consistent matching
+  notes: Normalized name from "ERYTHROMICROBIUM AND ROSEOCOCCUS medium" to "erythromicrobium_and_roseococcus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:53.702574+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-7.8'' -> {''min'': 7.5, ''max'': 7.8}'
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_767_modified_for_dsm_8509.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006421
   name: medium_767_modified_for_dsm_8509
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/erythromicrobium_and_roseococcus_medium.yaml
+  path: data/normalized_yaml/bacterial/erythromicrobium_and_roseococcus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001900
   name: erythromicrobium_and_roseococcus_medium
-  notes: KOMODO record states DSMZ Medium 767 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 767 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

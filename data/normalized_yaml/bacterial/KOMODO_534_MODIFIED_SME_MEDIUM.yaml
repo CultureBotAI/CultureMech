@@ -4,7 +4,9 @@ original_name: MODIFIED SME MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.5-6.8
+ph_range:
+  min: 6.5
+  max: 6.8
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 534 | DSMZ Medium: 534 (mediadive.medium:534)
   | Aerobic: No'
 media_term:
@@ -303,4 +305,8 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:52.527811+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.8'' -> {''min'': 6.5, ''max'': 6.8}'
 ph_value: 6.6

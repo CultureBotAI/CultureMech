@@ -4,7 +4,9 @@ original_name: YCFA MEDIUM (modified)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.7-6.8
+ph_range:
+  min: 6.7
+  max: 6.8
 media_term:
   preferred_term: DSMZ Medium 1611
   term:
@@ -314,3 +316,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "YCFA MEDIUM (modified)" to "ycfa_medium_modified" for
     consistent matching
+- timestamp: '2026-05-20T06:02:12.162714+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.7-6.8'' -> {''min'': 6.7, ''max'': 6.8}'

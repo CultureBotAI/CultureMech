@@ -4,7 +4,9 @@ original_name: MRS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.2-6.5
+ph_range:
+  min: 6.2
+  max: 6.5
 media_term:
   preferred_term: KOMODO Medium 11
   term:
@@ -190,54 +192,52 @@ applications:
 references:
 - reference: PMID:39353547
   year: 2024
-  notes: Primary literature source reporting MRS growth kinetics for
-    Heyndrickxia coagulans ATCC 7050 and Lactiplantibacillus plantarum ATCC
-    10012.
+  notes: Primary literature source reporting MRS growth kinetics for Heyndrickxia
+    coagulans ATCC 7050 and Lactiplantibacillus plantarum ATCC 10012.
 - reference: PMID:38194015
   year: 2024
-  notes: Primary literature source reporting growth optimization of
-    Lactiplantibacillus plantarum BG24 in original MRS broth and modified MRS
-    broth.
+  notes: Primary literature source reporting growth optimization of Lactiplantibacillus
+    plantarum BG24 in original MRS broth and modified MRS broth.
 variants:
 - name: mrs_bsh_oxygen_condition_atcc7050_atcc10012
-  description: MRS medium condition used to compare oxygen-level effects on bile
-    salt hydrolase production and growth kinetics in Heyndrickxia coagulans ATCC
-    7050 and Lactiplantibacillus plantarum ATCC 10012.
+  description: MRS medium condition used to compare oxygen-level effects on bile salt
+    hydrolase production and growth kinetics in Heyndrickxia coagulans ATCC 7050 and
+    Lactiplantibacillus plantarum ATCC 10012.
   modifications:
   - Compare MRS medium with M17 medium for bile salt hydrolase production.
-  - Evaluate oxygen concentration effects in MRS medium, including anaerobic and
-    microaerophilic conditions.
-  purpose: Capture strain-specific MRS growth and doubling-time evidence under
-    the parent MRS medium record.
+  - Evaluate oxygen concentration effects in MRS medium, including anaerobic and microaerophilic
+    conditions.
+  purpose: Capture strain-specific MRS growth and doubling-time evidence under the
+    parent MRS medium record.
   evidence:
   - reference: PMID:39353547
     supports: SUPPORT
-    snippet: Cultivation of cultures in MRS and M17 media revealed that MRS
-      medium enhanced BSH production by 235.98 % in H. coagulans ATCC 7050 and
-      147.37 % in L. plantarum ATCC 10012, compared to M 17 medium.
-    explanation: The source directly compares growth-associated fermentation
-      performance of the two named ATCC strains in MRS versus M17 and then
-      reports oxygen-condition doubling times for the same strains.
+    snippet: Cultivation of cultures in MRS and M17 media revealed that MRS medium
+      enhanced BSH production by 235.98 % in H. coagulans ATCC 7050 and 147.37 % in
+      L. plantarum ATCC 10012, compared to M 17 medium.
+    explanation: The source directly compares growth-associated fermentation performance
+      of the two named ATCC strains in MRS versus M17 and then reports oxygen-condition
+      doubling times for the same strains.
 - name: mrs_broth_bg24_ph_yeast_extract_optimization
-  description: MRS broth growth optimization condition for Lactiplantibacillus
-    plantarum BG24, comparing static and shaken cultures and an MRS broth
-    condition adjusted to pH 6.5 with additional yeast extract.
+  description: MRS broth growth optimization condition for Lactiplantibacillus plantarum
+    BG24, comparing static and shaken cultures and an MRS broth condition adjusted
+    to pH 6.5 with additional yeast extract.
   modifications:
   - Compare static culture with 100 rpm and 200 rpm shaking in MRS broth.
-  - Compare original MRS broth at pH 5.7 with MRS broth at pH 6.5 enriched with
-    5 g/L yeast extract.
-  purpose: Capture strain-specific BG24 MRS broth growth optimization evidence
-    under the shared MRS parent medium.
+  - Compare original MRS broth at pH 5.7 with MRS broth at pH 6.5 enriched with 5
+    g/L yeast extract.
+  purpose: Capture strain-specific BG24 MRS broth growth optimization evidence under
+    the shared MRS parent medium.
   evidence:
   - reference: PMID:38194015
     supports: SUPPORT
-    snippet: The specific growth rate of L. plantarum BG24 was 0.416 h-1, the
-      doubling time was 1.67 h, and the biomass productivity value was 0.14 gL-1
-      h-1 in the original MRS broth (pH 5.7) while higher values were found as
-      0.483 h-1, 1.43 h and 0.17 gL-1 h-1, respectively, in MRS broth (pH 6.5)
-      medium enriched with 5 g/L yeast extract.
-    explanation: The source directly reports quantitative growth kinetics for
-      Lactiplantibacillus plantarum BG24 in original and modified MRS broth.
+    snippet: The specific growth rate of L. plantarum BG24 was 0.416 h-1, the doubling
+      time was 1.67 h, and the biomass productivity value was 0.14 gL-1 h-1 in the
+      original MRS broth (pH 5.7) while higher values were found as 0.483 h-1, 1.43
+      h and 0.17 gL-1 h-1, respectively, in MRS broth (pH 6.5) medium enriched with
+      5 g/L yeast extract.
+    explanation: The source directly reports quantitative growth kinetics for Lactiplantibacillus
+      plantarum BG24 in original and modified MRS broth.
 curation_history:
 - timestamp: 2026-01-27T01:15:01.fZ
   curator: komodo-web-import
@@ -258,19 +258,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.020929+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS medium" to "mrs_medium" for consistent
-    matching
+  notes: Normalized name from "MRS medium" to "mrs_medium" for consistent matching
 - timestamp: '2026-05-05T00:00:00+00:00'
   curator: literature_review_manual
   action: ADDED_GROWTH_EVIDENCE
-  notes: Added strain-specific MRS growth-kinetics evidence from PMID:39353547
-    for Heyndrickxia coagulans ATCC 7050 and Lactiplantibacillus plantarum ATCC
-    10012.
+  notes: Added strain-specific MRS growth-kinetics evidence from PMID:39353547 for
+    Heyndrickxia coagulans ATCC 7050 and Lactiplantibacillus plantarum ATCC 10012.
 - timestamp: '2026-05-05T00:00:00+00:00'
   curator: literature_review_manual
   action: ADDED_GROWTH_EVIDENCE
-  notes: Added Lactiplantibacillus plantarum BG24 MRS broth growth-optimization
-    evidence from PMID:38194015.
+  notes: Added Lactiplantibacillus plantarum BG24 MRS broth growth-optimization evidence
+    from PMID:38194015.
+- timestamp: '2026-05-20T06:00:49.375353+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.2-6.5'' -> {''min'': 6.2, ''max'': 6.5}'
 target_organisms:
 - preferred_term: Heyndrickxia coagulans
   term:
@@ -282,16 +284,16 @@ target_organisms:
   strain: ATCC 7050; DSM 1
   growth_metrics:
   - doubling_time_minutes: 79.8
-    measurement_conditions: MRS medium; anaerobic conditions; source compared
-      MRS with M17 and evaluated oxygen concentration effects.
+    measurement_conditions: MRS medium; anaerobic conditions; source compared MRS
+      with M17 and evaluated oxygen concentration effects.
     evidence:
     - reference: PMID:39353547
       supports: SUPPORT
-      snippet: H. coagulans ATCC 7050 exhibited its minimum doubling time of
-        79.8 ± 0.64 min in anaerobic conditions
-      explanation: Manual literature review found direct strain-specific
-        doubling-time evidence for Heyndrickxia coagulans ATCC 7050 in the MRS
-        selected-medium oxygen-condition experiment.
+      snippet: H. coagulans ATCC 7050 exhibited its minimum doubling time of 79.8 ± 0.64 min
+        in anaerobic conditions
+      explanation: Manual literature review found direct strain-specific doubling-time
+        evidence for Heyndrickxia coagulans ATCC 7050 in the MRS selected-medium oxygen-condition
+        experiment.
     is_max_attainment: false
 - preferred_term: Lactiplantibacillus plantarum BG24
   term:
@@ -300,54 +302,50 @@ target_organisms:
   strain: BG24
   growth_metrics:
   - max_od600: 6.6
-    measurement_conditions: MRS broth; static culture compared with 100 rpm and
-      200 rpm shaking.
+    measurement_conditions: MRS broth; static culture compared with 100 rpm and 200
+      rpm shaking.
     evidence:
     - reference: PMID:38194015
       supports: SUPPORT
-      snippet: L. plantarum BG24 strain showed higher microbial growth under
-        static conditions (6.60 OD600) compared to 100 rpm (5.73 OD600) and 200
-        rpm (5.02 OD600) shaking speed due to its facultative anaerobic
-        characteristic.
-      explanation: The source directly reports strain-specific growth of
-        Lactiplantibacillus plantarum BG24 in MRS broth under static and shaken
-        culture conditions.
+      snippet: L. plantarum BG24 strain showed higher microbial growth under static
+        conditions (6.60 OD600) compared to 100 rpm (5.73 OD600) and 200 rpm (5.02
+        OD600) shaking speed due to its facultative anaerobic characteristic.
+      explanation: The source directly reports strain-specific growth of Lactiplantibacillus
+        plantarum BG24 in MRS broth under static and shaken culture conditions.
     is_max_attainment: true
   - growth_rate_per_hour: 0.416
     doubling_time_minutes: 100.2
     ph_at_measurement: 5.7
-    measurement_conditions: Original MRS broth, pH 5.7; source also reports
-      biomass productivity of 0.14 g/L/h.
+    measurement_conditions: Original MRS broth, pH 5.7; source also reports biomass
+      productivity of 0.14 g/L/h.
     evidence:
     - reference: PMID:38194015
       supports: SUPPORT
-      snippet: The specific growth rate of L. plantarum BG24 was 0.416 h-1, the
-        doubling time was 1.67 h, and the biomass productivity value was 0.14
-        gL-1 h-1 in the original MRS broth (pH 5.7)
-      explanation: The source directly reports growth rate and doubling time for
-        Lactiplantibacillus plantarum BG24 in original MRS broth.
+      snippet: The specific growth rate of L. plantarum BG24 was 0.416 h-1, the doubling
+        time was 1.67 h, and the biomass productivity value was 0.14 gL-1 h-1 in the
+        original MRS broth (pH 5.7)
+      explanation: The source directly reports growth rate and doubling time for Lactiplantibacillus
+        plantarum BG24 in original MRS broth.
     is_max_attainment: false
   - growth_rate_per_hour: 0.483
     doubling_time_minutes: 85.8
     ph_at_measurement: 6.5
-    measurement_conditions: MRS broth at pH 6.5 enriched with 5 g/L yeast
-      extract; source also reports biomass productivity of 0.17 g/L/h.
+    measurement_conditions: MRS broth at pH 6.5 enriched with 5 g/L yeast extract;
+      source also reports biomass productivity of 0.17 g/L/h.
     evidence:
     - reference: PMID:38194015
       supports: SUPPORT
-      snippet: higher values were found as 0.483 h-1, 1.43 h and 0.17 gL-1 h-1,
-        respectively, in MRS broth (pH 6.5) medium enriched with 5 g/L yeast
-        extract.
-      explanation: The source directly reports improved growth rate and doubling
-        time for Lactiplantibacillus plantarum BG24 in a pH-adjusted,
-        yeast-extract-enriched MRS broth variant.
+      snippet: higher values were found as 0.483 h-1, 1.43 h and 0.17 gL-1 h-1, respectively,
+        in MRS broth (pH 6.5) medium enriched with 5 g/L yeast extract.
+      explanation: The source directly reports improved growth rate and doubling time
+        for Lactiplantibacillus plantarum BG24 in a pH-adjusted, yeast-extract-enriched
+        MRS broth variant.
     is_max_attainment: true
   evidence:
   - reference: PMID:38194015
     supports: SUPPORT
-    explanation: The abstract identifies Lactiplantibacillus plantarum BG24 and
-      reports quantitative growth optimization in original and modified MRS
-      broth.
+    explanation: The abstract identifies Lactiplantibacillus plantarum BG24 and reports
+      quantitative growth optimization in original and modified MRS broth.
 - preferred_term: Lactiplantibacillus plantarum
   term:
     id: NCBITaxon:337330
@@ -355,171 +353,171 @@ target_organisms:
   strain: ATCC 10012; DSM 20246; NCDO 352; NCIB 8016
   growth_metrics:
   - doubling_time_minutes: 85.5
-    measurement_conditions: MRS medium; microaerophilic conditions; source
-      compared MRS with M17 and evaluated oxygen concentration effects.
+    measurement_conditions: MRS medium; microaerophilic conditions; source compared
+      MRS with M17 and evaluated oxygen concentration effects.
     evidence:
     - reference: PMID:39353547
       supports: SUPPORT
-      snippet: L.plantarum ATCC 10012 demonstrated its minimum doubling time of
-        85.5 ± 1.2 min under microaerophilic conditions
-      explanation: Manual literature review found direct strain-specific
-        doubling-time evidence for Lactiplantibacillus plantarum ATCC 10012 in
-        the MRS selected-medium oxygen-condition experiment.
+      snippet: L.plantarum ATCC 10012 demonstrated its minimum doubling time of 85.5 ± 1.2 min
+        under microaerophilic conditions
+      explanation: Manual literature review found direct strain-specific doubling-time
+        evidence for Lactiplantibacillus plantarum ATCC 10012 in the MRS selected-medium
+        oxygen-condition experiment.
     is_max_attainment: false
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_11a_MODIFIED_medium_11.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003941
   name: modified_medium_11
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_13613.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003754
   name: medium_11_modified_for_dsm_13613
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_14800.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003755
   name: medium_11_modified_for_dsm_14800
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_14925.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003756
   name: medium_11_modified_for_dsm_14925
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_15429.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003757
   name: medium_11_modified_for_dsm_15429
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_15502.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003758
   name: medium_11_modified_for_dsm_15502
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_15638.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003759
   name: medium_11_modified_for_dsm_15638
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_15685.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003760
   name: medium_11_modified_for_dsm_15685
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_15814.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003761
   name: medium_11_modified_for_dsm_15814
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_16043.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003762
   name: medium_11_modified_for_dsm_16043
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_16044.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003763
   name: medium_11_modified_for_dsm_16044
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_16047.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003764
   name: medium_11_modified_for_dsm_16047
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_16048.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003765
   name: medium_11_modified_for_dsm_16048
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_16381.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003766
   name: medium_11_modified_for_dsm_16381
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_16382.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003767
   name: medium_11_modified_for_dsm_16382
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_17732.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003768
   name: medium_11_modified_for_dsm_17732
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_18631.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003769
   name: medium_11_modified_for_dsm_18631
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_18933.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003770
   name: medium_11_modified_for_dsm_18933
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_19582.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003771
   name: medium_11_modified_for_dsm_19582
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_19906.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003772
   name: medium_11_modified_for_dsm_19906
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_19910.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003773
   name: medium_11_modified_for_dsm_19910
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_20355.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003774
   name: medium_11_modified_for_dsm_20355
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_20634.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003775
   name: medium_11_modified_for_dsm_20634
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_22689.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003776
   name: medium_11_modified_for_dsm_22689
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_11_modified_for_dsm_23246.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003777
   name: medium_11_modified_for_dsm_23246
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/modified_medium_11.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000648
   name: modified_medium_11
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

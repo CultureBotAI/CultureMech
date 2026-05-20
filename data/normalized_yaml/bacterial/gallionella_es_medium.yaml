@@ -4,7 +4,9 @@ original_name: GALLIONELLA (ES) MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: SOLID_AGAR
-ph_range: 6.1-6.4
+ph_range:
+  min: 6.1
+  max: 6.4
 media_term:
   preferred_term: DSMZ Medium 1267b
   term:
@@ -366,4 +368,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GALLIONELLA (ES) MEDIUM" to "gallionella_es_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:20.802290+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.1-6.4'' -> {''min'': 6.1, ''max'': 6.4}'
 high_metal: true

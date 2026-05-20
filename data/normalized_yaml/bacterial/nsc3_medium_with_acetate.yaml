@@ -4,7 +4,9 @@ original_name: NSC3-MEDIUM WITH ACETATE
 category: bacterial
 medium_type: DEFINED
 physical_state: SOLID_AGAR
-ph_range: 8.5-9
+ph_range:
+  min: 8.5
+  max: 9.0
 media_term:
   preferred_term: DSMZ Medium 1246
   term:
@@ -196,3 +198,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NSC3-MEDIUM WITH ACETATE" to "nsc3_medium_with_acetate"
     for consistent matching
+- timestamp: '2026-05-20T06:02:01.271635+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8.5-9'' -> {''min'': 8.5, ''max'': 9.0}'

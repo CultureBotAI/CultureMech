@@ -4,7 +4,9 @@ original_name: CALDIMICROBIUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 778b
   term:
@@ -375,3 +377,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CALDIMICROBIUM MEDIUM" to "caldimicrobium_medium" for
     consistent matching
+- timestamp: '2026-05-20T06:01:10.673244+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'

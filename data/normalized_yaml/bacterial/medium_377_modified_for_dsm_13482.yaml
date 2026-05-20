@@ -4,7 +4,9 @@ original_name: MEDIUM 377 MODIFIED FOR DSM 13482
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.0-6.5
+ph_range:
+  min: 6.0
+  max: 6.5
 media_term:
   preferred_term: KOMODO Medium 377_13482
   term:
@@ -319,8 +321,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.884651+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 377 MODIFIED FOR DSM 13482" to
-    "medium_377_modified_for_dsm_13482" for consistent matching
+  notes: Normalized name from "MEDIUM 377 MODIFIED FOR DSM 13482" to "medium_377_modified_for_dsm_13482"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:47.520942+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.0-6.5'' -> {''min'': 6.0, ''max'': 6.5}'
 ph_value: 6.8
 parent_media:
   path: data/normalized_yaml/bacterial/for_dsm_19918.yaml
@@ -329,5 +335,5 @@ parent_media:
   name: for_dsm_19918
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

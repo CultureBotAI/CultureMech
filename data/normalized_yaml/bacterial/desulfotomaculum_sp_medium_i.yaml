@@ -4,7 +4,9 @@ original_name: DESULFOTOMACULUM SP. medium I
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-7.0
+ph_range:
+  min: 6.5
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 63a
   term:
@@ -146,8 +148,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.658168+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFOTOMACULUM SP. medium I" to
-    "desulfotomaculum_sp_medium_i" for consistent matching
+  notes: Normalized name from "DESULFOTOMACULUM SP. medium I" to "desulfotomaculum_sp_medium_i"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:14.662510+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-7.0'' -> {''min'': 6.5, ''max'': 7.0}'
 parent_media:
   path: data/normalized_yaml/bacterial/medium_for_d_indonesiensis.yaml
   relationship: SOURCE_DUPLICATE
@@ -155,5 +161,5 @@ parent_media:
   name: medium_for_d_indonesiensis
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

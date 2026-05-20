@@ -4,7 +4,9 @@ original_name: THIOMONAS INTERMEDIA MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 5.5-6.0
+ph_range:
+  min: 5.5
+  max: 6.0
 media_term:
   preferred_term: KOMODO Medium 35a
   term:
@@ -100,8 +102,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.658790+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOMONAS INTERMEDIA MEDIUM" to
-    "thiomonas_intermedia_medium" for consistent matching
+  notes: Normalized name from "THIOMONAS INTERMEDIA MEDIUM" to "thiomonas_intermedia_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:02:09.374387+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.5-6.0'' -> {''min'': 5.5, ''max'': 6.0}'
 ph_value: 6.0
 parent_media:
   path: data/normalized_yaml/bacterial/for_dsm_612.yaml
@@ -110,5 +116,5 @@ parent_media:
   name: for_dsm_612
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

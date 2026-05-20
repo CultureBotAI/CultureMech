@@ -4,7 +4,9 @@ original_name: SMITHELLA medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.0-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 1030
   term:
@@ -360,8 +362,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:25.780499Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:08:58.961387Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -377,15 +379,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.705188+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SMITHELLA medium" to "smithella_medium" for
-    consistent matching
+  notes: Normalized name from "SMITHELLA medium" to "smithella_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:00:48.395951+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 parent_media:
   path: data/normalized_yaml/bacterial/smithella_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000452
   name: smithella_medium
-  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
-    concentration signature.
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same source medium number and matching ingredient/concentration signature.

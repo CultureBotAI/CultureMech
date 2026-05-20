@@ -4,7 +4,9 @@ original_name: CELLULOSILYTICUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 6.7-6.8
+ph_range:
+  min: 6.7
+  max: 6.8
 media_term:
   preferred_term: DSMZ Medium 666a
   term:
@@ -174,3 +176,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CELLULOSILYTICUM MEDIUM" to "cellulosilyticum_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:11.212365+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.7-6.8'' -> {''min'': 6.7, ''max'': 6.8}'

@@ -4,7 +4,9 @@ original_name: '1650: Medium for Strain J5B'
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 1650
   term:
@@ -367,3 +369,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: 'Normalized name from "1650: Medium for Strain J5B" to "1650_medium_for_strain_j5b"
     for consistent matching'
+- timestamp: '2026-05-20T06:00:46.596123+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'

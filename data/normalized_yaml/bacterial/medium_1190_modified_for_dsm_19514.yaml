@@ -4,7 +4,9 @@ original_name: MEDIUM 1190 MODIFIED FOR DSM 19514
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 1.8-2.0
+ph_range:
+  min: 1.8
+  max: 2.0
 media_term:
   preferred_term: KOMODO Medium 1190_19514
   term:
@@ -111,5 +113,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM 1190 MODIFIED FOR DSM 19514" to "medium_1190_modified_for_dsm_19514"
     for consistent matching
+- timestamp: '2026-05-20T06:01:44.906893+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''1.8-2.0'' -> {''min'': 1.8, ''max'': 2.0}'
 ph_value: 2.0
 high_metal: true

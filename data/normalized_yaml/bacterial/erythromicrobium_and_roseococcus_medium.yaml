@@ -4,7 +4,9 @@ original_name: ERYTHROMICROBIUM AND ROSEOCOCCUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.5-7.8
+ph_range:
+  min: 7.5
+  max: 7.8
 media_term:
   preferred_term: DSMZ Medium 767
   term:
@@ -185,13 +187,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.667806+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ERYTHROMICROBIUM AND ROSEOCOCCUS MEDIUM" to
-    "erythromicrobium_and_roseococcus_medium" for consistent matching
+  notes: Normalized name from "ERYTHROMICROBIUM AND ROSEOCOCCUS MEDIUM" to "erythromicrobium_and_roseococcus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:16.256741+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-7.8'' -> {''min'': 7.5, ''max'': 7.8}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_767_ERYTHROMICROBIUM_AND_ROSEOCOCCUS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_767_ERYTHROMICROBIUM_AND_ROSEOCOCCUS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006422
   name: erythromicrobium_and_roseococcus_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

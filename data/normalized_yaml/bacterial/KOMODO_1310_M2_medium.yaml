@@ -4,7 +4,9 @@ original_name: M2 medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-6.8
+ph_range:
+  min: 6.5
+  max: 6.8
 media_term:
   preferred_term: KOMODO Medium 1310
   term:
@@ -181,10 +183,14 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "M2 medium" to "m2_medium" for consistent matching
+- timestamp: '2026-05-20T06:00:50.070382+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.8'' -> {''min'': 6.5, ''max'': 6.8}'
 variant_children:
 - path: data/normalized_yaml/bacterial/butyrivibrio_m2_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000772
   name: butyrivibrio_m2_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

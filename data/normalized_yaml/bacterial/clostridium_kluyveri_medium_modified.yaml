@@ -4,7 +4,9 @@ original_name: CLOSTRIDIUM KLUYVERI medium (modified)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.0
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 52
   term:
@@ -326,8 +328,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:53.847847+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM KLUYVERI medium (modified)" to
-    "clostridium_kluyveri_medium_modified" for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM KLUYVERI medium (modified)" to "clostridium_kluyveri_medium_modified"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:11.888029+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.0'' -> {''min'': 6.8, ''max'': 7.0}'
 parent_media:
   path: data/normalized_yaml/bacterial/clostridium_kluyveri_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -335,5 +341,5 @@ parent_media:
   name: clostridium_kluyveri_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

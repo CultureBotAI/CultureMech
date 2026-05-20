@@ -4,7 +4,9 @@ original_name: MRS MEDIUM (pre-reduced)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.2-6.5
+ph_range:
+  min: 6.2
+  max: 6.5
 media_term:
   preferred_term: DSMZ Medium 11b
   term:
@@ -139,3 +141,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS MEDIUM (pre-reduced)" to "mrs_medium_pre_reduced"
     for consistent matching
+- timestamp: '2026-05-20T06:02:00.194992+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.2-6.5'' -> {''min'': 6.2, ''max'': 6.5}'

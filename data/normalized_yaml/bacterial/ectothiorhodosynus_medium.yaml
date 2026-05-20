@@ -4,7 +4,9 @@ original_name: ECTOTHIORHODOSYNUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9-9.5
+ph_range:
+  min: 9.0
+  max: 9.5
 media_term:
   preferred_term: DSMZ Medium 1002
   term:
@@ -199,9 +201,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Prepare the NH4Cl, CaCl2, carbonate, bicarbonate and sulfide as a
-    single sterile stock solution and add to the sterile medium after
-    autoclaving. The pH should be adjust to 9-9.5.
+  description: Prepare the NH4Cl, CaCl2, carbonate, bicarbonate and sulfide as a single
+    sterile stock solution and add to the sterile medium after autoclaving. The pH
+    should be adjust to 9-9.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -220,13 +222,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.104467+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ECTOTHIORHODOSYNUS MEDIUM" to
-    "ectothiorhodosynus_medium" for consistent matching
+  notes: Normalized name from "ECTOTHIORHODOSYNUS MEDIUM" to "ectothiorhodosynus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:16.089119+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9-9.5'' -> {''min'': 9.0, ''max'': 9.5}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_1002_ECTOTHIORHODOSYNUS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_1002_ECTOTHIORHODOSYNUS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003499
   name: ectothiorhodosynus_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

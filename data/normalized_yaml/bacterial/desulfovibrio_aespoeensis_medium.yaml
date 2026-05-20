@@ -4,7 +4,9 @@ original_name: DESULFOVIBRIO AESPOEENSIS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.3-7.5
+ph_range:
+  min: 7.3
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 721
   term:
@@ -29,3 +31,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DESULFOVIBRIO AESPOEENSIS MEDIUM" to "desulfovibrio_aespoeensis_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:14.742932+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.3-7.5'' -> {''min'': 7.3, ''max'': 7.5}'

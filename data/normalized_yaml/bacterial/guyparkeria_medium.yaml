@@ -4,7 +4,9 @@ original_name: GUYPARKERIA MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.3-7.5
+ph_range:
+  min: 7.3
+  max: 7.5
 media_term:
   preferred_term: DSMZ Medium 518
   term:
@@ -183,15 +185,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except thiosulfate and adjust pH of medium
-    to 7.3 - 7.5. Add thiosulfate to the medium after autoclaving from a sterile
-    stock solution sterilized by filtration. For liquid medium also sterilize
-    the phosphates separately in 1/10 of medium volume.
+  description: Dissolve ingredients except thiosulfate and adjust pH of medium to
+    7.3 - 7.5. Add thiosulfate to the medium after autoclaving from a sterile stock
+    solution sterilized by filtration. For liquid medium also sterilize the phosphates
+    separately in 1/10 of medium volume.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N
-    NaOH; then add other compounds. Adjust pH of final solution to 6.0 with
-    NaOH.
+  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
+    then add other compounds. Adjust pH of final solution to 6.0 with NaOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -210,12 +211,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.361508+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GUYPARKERIA MEDIUM" to "guyparkeria_medium" for
-    consistent matching
+  notes: Normalized name from "GUYPARKERIA MEDIUM" to "guyparkeria_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:01:21.414830+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.3-7.5'' -> {''min'': 7.3, ''max'': 7.5}'
 variant_children:
 - path: data/normalized_yaml/bacterial/thiobacillus_halophilus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005876
   name: thiobacillus_halophilus_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

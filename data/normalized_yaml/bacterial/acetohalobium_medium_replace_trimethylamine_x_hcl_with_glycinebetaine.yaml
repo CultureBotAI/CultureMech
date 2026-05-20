@@ -4,7 +4,9 @@ original_name: ACETOHALOBIUM medium_replace_Trimethylamine x HCl_with_Glycinebet
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.6-8.0
+ph_range:
+  min: 7.6
+  max: 8.0
 notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 494_replace_Trimethylamine
   x HCl_with_Glycinebetaine | DSMZ Medium: 494 (mediadive.medium:494) | Aerobic: Yes'
 media_term:
@@ -377,3 +379,7 @@ curation_history:
   notes: Normalized name from "ACETOHALOBIUM medium_replace_Trimethylamine x HCl_with_Glycinebetaine"
     to "acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine" for
     consistent matching
+- timestamp: '2026-05-20T06:01:07.225550+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.6-8.0'' -> {''min'': 7.6, ''max'': 8.0}'

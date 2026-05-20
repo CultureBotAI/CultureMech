@@ -4,7 +4,9 @@ original_name: MWC
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7-8
+ph_range:
+  min: 7.0
+  max: 8.0
 media_term:
   preferred_term: DSMZ Medium 1828
   term:
@@ -234,3 +236,7 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MWC" to "mwc" for consistent matching
+- timestamp: '2026-05-20T06:00:47.124050+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-8'' -> {''min'': 7.0, ''max'': 8.0}'

@@ -4,7 +4,9 @@ original_name: For strains DSM 12138, 12139, 12140 and 12143
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.1-7.5
+ph_range:
+  min: 7.1
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 1315.1
   term:
@@ -364,3 +366,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "For strains DSM 12138, 12139, 12140 and 12143" to "for_strains_dsm_12138_12139_12140_and_12143"
     for consistent matching
+- timestamp: '2026-05-20T06:01:20.296528+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.1-7.5'' -> {''min'': 7.1, ''max'': 7.5}'

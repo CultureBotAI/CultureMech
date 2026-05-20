@@ -4,7 +4,9 @@ original_name: ANOXYBACILLUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9.5-9.7
+ph_range:
+  min: 9.5
+  max: 9.7
 media_term:
   preferred_term: DSMZ Medium 898
   term:
@@ -303,18 +305,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve all ingredients except carbonates, yeast extract,
-    glucose, vitamins and sulfide, then sparge medium with 100% N2 gas for 30 -
-    45 min to make it anoxic. Add carbonate and hydrogencarbonate, adjust pH to
-    9.0 - 9.5, dispense medium under 100% N2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Add yeast extract, glucose,
-    vitamins and sulfide from sterile anoxic stock solutions prepared under 100%
-    N2 gas. Vitamins should be sterilized by filtration. Adjust pH of complete
-    medium to 9.5 - 9.7.
+  description: Dissolve all ingredients except carbonates, yeast extract, glucose,
+    vitamins and sulfide, then sparge medium with 100% N2 gas for 30 - 45 min to make
+    it anoxic. Add carbonate and hydrogencarbonate, adjust pH to 9.0 - 9.5, dispense
+    medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Add yeast extract, glucose, vitamins and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas. Vitamins should be sterilized by filtration.
+    Adjust pH of complete medium to 9.5 - 9.7.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
-    dissolve the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -325,8 +326,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:38.345639Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:09.910468Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -338,12 +339,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.519147+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ANOXYBACILLUS MEDIUM" to "anoxybacillus_medium"
-    for consistent matching
+  notes: Normalized name from "ANOXYBACILLUS MEDIUM" to "anoxybacillus_medium" for
+    consistent matching
+- timestamp: '2026-05-20T06:01:08.816214+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9.5-9.7'' -> {''min'': 9.5, ''max'': 9.7}'
 variant_children:
 - path: data/normalized_yaml/bacterial/anaerobacillus_medium.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:002062
   name: anaerobacillus_medium
-  notes: NaCl increased from 4.99002 g/L to 14.9701 g/L while the DSMZ 898/898a
-    base formulation remains unchanged.
+  notes: NaCl increased from 4.99002 g/L to 14.9701 g/L while the DSMZ 898/898a base
+    formulation remains unchanged.

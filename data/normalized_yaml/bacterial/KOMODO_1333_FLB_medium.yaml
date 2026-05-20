@@ -4,7 +4,9 @@ original_name: FLB medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 6.5-7.0
+ph_range:
+  min: 6.5
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 1333
   term:
@@ -64,18 +66,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:39.582708+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FLB medium" to "flb_medium" for consistent
-    matching
+  notes: Normalized name from "FLB medium" to "flb_medium" for consistent matching
+- timestamp: '2026-05-20T06:00:50.185191+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-7.0'' -> {''min'': 6.5, ''max'': 7.0}'
 kg_microbe_match: mediadive.medium:1333
 parent_media:
   path: data/normalized_yaml/bacterial/flb_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000790
   name: flb_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 1333; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 1333; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 1333; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 1333; local ingredient
+  and concentration signatures match.

@@ -4,7 +4,9 @@ original_name: ACETIC ACID BACTERIUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 6.6-7
+ph_range:
+  min: 6.6
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 989
   term:
@@ -76,13 +78,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.677159+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACETIC ACID BACTERIUM MEDIUM" to
-    "acetic_acid_bacterium_medium" for consistent matching
+  notes: Normalized name from "ACETIC ACID BACTERIUM MEDIUM" to "acetic_acid_bacterium_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:06.991580+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.6-7'' -> {''min'': 6.6, ''max'': 7.0}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_989_ACETIC_ACID_BACTERIUM_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_989_ACETIC_ACID_BACTERIUM_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006960
   name: acetic_acid_bacterium_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

@@ -4,7 +4,9 @@ original_name: NITROSPIRA MOSCOVIENSIS
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.4-7.6
+ph_range:
+  min: 7.4
+  max: 7.6
 media_term:
   preferred_term: DSMZ Medium 756d
   term:
@@ -122,8 +124,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 8.6 with NaOH or KOH. Autoclave and leave the medium
-    to stand for 2 - 3 days so that pH can ajust itself to pH 7.4 - 7.6 .
+  description: Adjust pH to 8.6 with NaOH or KOH. Autoclave and leave the medium to
+    stand for 2 - 3 days so that pH can ajust itself to pH 7.4 - 7.6 .
 applications:
 - Microbial cultivation
 curation_history:
@@ -142,12 +144,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.591590+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NITROSPIRA MOSCOVIENSIS" to
-    "nitrospira_moscoviensis" for consistent matching
+  notes: Normalized name from "NITROSPIRA MOSCOVIENSIS" to "nitrospira_moscoviensis"
+    for consistent matching
+- timestamp: '2026-05-20T06:02:01.174117+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.4-7.6'' -> {''min'': 7.4, ''max'': 7.6}'
 variant_children:
 - path: data/normalized_yaml/bacterial/autotrophic_nitrobacter_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:001891
   name: autotrophic_nitrobacter_medium
-  notes: NaNO2 increased from 0.5 g/L to 2 g/L while the DSMZ defined
-    autotrophic nitrifier formulation remains unchanged.
+  notes: NaNO2 increased from 0.5 g/L to 2 g/L while the DSMZ defined autotrophic
+    nitrifier formulation remains unchanged.

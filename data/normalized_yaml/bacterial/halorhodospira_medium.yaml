@@ -4,7 +4,9 @@ original_name: HALORHODOSPIRA MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: DSMZ Medium 999
   term:
@@ -240,12 +242,12 @@ preparation_steps:
     are added:'
 - step_number: 2
   action: HEAT
-  description: The pH is adjusted to pH 7.2-7.4 For better growth of pure
-    cultures, the growth medium should be supplemented with acetate (2 mM final
-    concentration), succinate (1 mM final concentration) and yeast extract (0.5
-    g/l). Pure cultures should be incubated at 30°C and light intensity of 500
-    lux from a tungsten lamp (16 h light, 8 h dark). Pure cultures in liquid
-    medium can be stored in 60 ml screw cap bottles at 4°C in the dark.
+  description: The pH is adjusted to pH 7.2-7.4 For better growth of pure cultures,
+    the growth medium should be supplemented with acetate (2 mM final concentration),
+    succinate (1 mM final concentration) and yeast extract (0.5 g/l). Pure cultures
+    should be incubated at 30°C and light intensity of 500 lux from a tungsten lamp
+    (16 h light, 8 h dark). Pure cultures in liquid medium can be stored in 60 ml
+    screw cap bottles at 4°C in the dark.
 - step_number: 3
   action: MIX
   description: Sterilized by filtration.
@@ -262,8 +264,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:29.163762Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:11.053552Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -275,12 +277,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.797982+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALORHODOSPIRA MEDIUM" to "halorhodospira_medium"
-    for consistent matching
+  notes: Normalized name from "HALORHODOSPIRA MEDIUM" to "halorhodospira_medium" for
+    consistent matching
+- timestamp: '2026-05-20T06:01:22.310412+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_999_HALORHODOSPIRA_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006984
   name: halorhodospira_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

@@ -4,7 +4,9 @@ original_name: WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.0-7.4
+ph_range:
+  min: 6.0
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 339
   term:
@@ -56,8 +58,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.391474+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)"
-    to "wilkins_chalgren_anaerobe_broth_oxoid_cm_643" for consistent matching
+  notes: Normalized name from "WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)" to
+    "wilkins_chalgren_anaerobe_broth_oxoid_cm_643" for consistent matching
+- timestamp: '2026-05-20T06:02:12.053437+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.0-7.4'' -> {''min'': 6.0, ''max'': 7.4}'
 parent_media:
   path: data/normalized_yaml/bacterial/for_dsm_14428.yaml
   relationship: SOURCE_DUPLICATE
@@ -65,5 +71,5 @@ parent_media:
   name: for_dsm_14428
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

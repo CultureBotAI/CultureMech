@@ -4,7 +4,9 @@ original_name: TELMATOSPIRILLUM (PEAT) MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 5.5-6
+ph_range:
+  min: 5.5
+  max: 6.0
 media_term:
   preferred_term: DSMZ Medium 380a
   term:
@@ -393,3 +395,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TELMATOSPIRILLUM (PEAT) MEDIUM" to "telmatospirillum_peat_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:07.404298+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.5-6'' -> {''min'': 5.5, ''max'': 6.0}'

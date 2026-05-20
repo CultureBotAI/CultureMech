@@ -4,7 +4,9 @@ original_name: ENRICHED CYTOPHAGA AGAR medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 1133
   term:
@@ -72,16 +74,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:37.087541+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ENRICHED CYTOPHAGA AGAR medium" to
-    "enriched_cytophaga_agar_medium" for consistent matching
+  notes: Normalized name from "ENRICHED CYTOPHAGA AGAR medium" to "enriched_cytophaga_agar_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:49.028545+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 kg_microbe_match: mediadive.medium:1133
 parent_media:
   path: data/normalized_yaml/bacterial/enriched_cytophaga_agar_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000569
   name: enriched_cytophaga_agar_medium
-  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
-    concentration signature.
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same source medium number and matching ingredient/concentration signature.

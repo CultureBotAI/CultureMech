@@ -4,7 +4,9 @@ original_name: THIOHALORHABDUS DENITRIFICANS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.5-7.8
+ph_range:
+  min: 7.5
+  max: 7.8
 media_term:
   preferred_term: DSMZ Medium 1058c
   term:
@@ -287,4 +289,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THIOHALORHABDUS DENITRIFICANS MEDIUM" to "thiohalorhabdus_denitrificans_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:09.279175+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-7.8'' -> {''min'': 7.5, ''max'': 7.8}'
 high_metal: true

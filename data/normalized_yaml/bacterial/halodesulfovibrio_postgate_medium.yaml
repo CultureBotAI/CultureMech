@@ -4,7 +4,9 @@ original_name: HALODESULFOVIBRIO (POSTGATE) MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 163
   term:
@@ -126,12 +128,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Bring solution A to the boil, then cool to room temperature while
-    sparging with 100% N2 gas. Add solutions B and C, adjust pH to 7.8 with
-    NaOH, and distribute under N2 gas atmosphere into anoxic Hungate-type tubes.
-    During distribution continuously swirl the medium to keep the grey
-    precipitate suspended. Autoclave 15 min at 121°C. Adjust pH of the complete
-    medium to 6.8 - 7.0, if necessary.
+  description: Bring solution A to the boil, then cool to room temperature while sparging
+    with 100% N2 gas. Add solutions B and C, adjust pH to 7.8 with NaOH, and distribute
+    under N2 gas atmosphere into anoxic Hungate-type tubes. During distribution continuously
+    swirl the medium to keep the grey precipitate suspended. Autoclave 15 min at 121°C.
+    Adjust pH of the complete medium to 6.8 - 7.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -150,8 +151,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:13.123535+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALODESULFOVIBRIO (POSTGATE) MEDIUM" to
-    "halodesulfovibrio_postgate_medium" for consistent matching
+  notes: Normalized name from "HALODESULFOVIBRIO (POSTGATE) MEDIUM" to "halodesulfovibrio_postgate_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:22.027767+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'
 parent_media:
   path: data/normalized_yaml/bacterial/desulfovibrio_marine_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -159,5 +164,5 @@ parent_media:
   name: desulfovibrio_marine_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

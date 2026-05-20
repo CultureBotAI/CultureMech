@@ -4,7 +4,9 @@ original_name: CHERRY AGAR (CBS formula)
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 3.8-4.6
+ph_range:
+  min: 3.8
+  max: 4.6
 media_term:
   preferred_term: DSMZ Medium 277
   term:
@@ -61,4 +63,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CHERRY AGAR (CBS formula)" to "cherry_agar_cbs_formula"
     for consistent matching
+- timestamp: '2026-05-20T06:01:11.395228+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''3.8-4.6'' -> {''min'': 3.8, ''max'': 4.6}'
 kg_microbe_match: mediadive.medium:12

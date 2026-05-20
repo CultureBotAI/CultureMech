@@ -4,7 +4,9 @@ original_name: BACILLUS THERMANTARCTICUS medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 5.6-5.8
+ph_range:
+  min: 5.6
+  max: 5.8
 media_term:
   preferred_term: KOMODO Medium 675
   term:
@@ -53,17 +55,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.509240+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BACILLUS THERMANTARCTICUS medium" to
-    "bacillus_thermantarcticus_medium" for consistent matching
+  notes: Normalized name from "BACILLUS THERMANTARCTICUS medium" to "bacillus_thermantarcticus_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:53.160415+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.6-5.8'' -> {''min'': 5.6, ''max'': 5.8}'
 kg_microbe_match: mediadive.medium:74
 parent_media:
   path: data/normalized_yaml/bacterial/bacillus_thermantarcticus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001815
   name: bacillus_thermantarcticus_medium
-  notes: KOMODO record states DSMZ Medium 675 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 675 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

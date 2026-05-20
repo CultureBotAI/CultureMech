@@ -4,7 +4,9 @@ original_name: NATRANAEROARCHAEUM MEDIUM AARC1
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 3-4
+ph_range:
+  min: 3.0
+  max: 4.0
 media_term:
   preferred_term: DSMZ Medium 1478
   term:
@@ -355,4 +357,8 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NATRANAEROARCHAEUM MEDIUM AARC1" to "natranaeroarchaeum_medium_aarc1"
     for consistent matching
+- timestamp: '2026-05-20T06:02:00.685009+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''3-4'' -> {''min'': 3.0, ''max'': 4.0}'
 high_metal: true

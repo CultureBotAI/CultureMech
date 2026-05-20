@@ -4,7 +4,9 @@ original_name: ISP medium 4
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7.0-7.4
+ph_range:
+  min: 7.0
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 547
   term:
@@ -135,36 +137,39 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.278512+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ISP medium 4" to "isp_medium_4" for consistent
-    matching
+  notes: Normalized name from "ISP medium 4" to "isp_medium_4" for consistent matching
+- timestamp: '2026-05-20T06:00:52.614268+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.4'' -> {''min'': 7.0, ''max'': 7.4}'
 ph_value: 7.2
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_547_modified_for_dsm_44048.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005988
   name: medium_547_modified_for_dsm_44048
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_547_modified_for_dsm_44681.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005989
   name: medium_547_modified_for_dsm_44681
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_547_modified_for_dsm_44682.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005990
   name: medium_547_modified_for_dsm_44682
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/isp_medium_4.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001681
   name: isp_medium_4
-  notes: KOMODO record states DSMZ Medium 547 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 547 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

@@ -4,7 +4,9 @@ original_name: GNYS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 4-4.5
+ph_range:
+  min: 4.0
+  max: 4.5
 media_term:
   preferred_term: DSMZ Medium 1119
   term:
@@ -183,8 +185,8 @@ preparation_steps:
   description: Adjust pH to 4.0 - 4.5.
 - step_number: 2
   action: ADJUST_PH
-  description: For solid medium, add 1.8% agar (final) and adjust pH to 5.0 to
-    avoid hydrolysis of agar.
+  description: For solid medium, add 1.8% agar (final) and adjust pH to 5.0 to avoid
+    hydrolysis of agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -203,12 +205,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.429313+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GNYS MEDIUM" to "gnys_medium" for consistent
-    matching
+  notes: Normalized name from "GNYS MEDIUM" to "gnys_medium" for consistent matching
+- timestamp: '2026-05-20T06:01:21.250610+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''4-4.5'' -> {''min'': 4.0, ''max'': 4.5}'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1119_GNYS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003821
   name: gnys_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

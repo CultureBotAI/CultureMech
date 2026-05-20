@@ -4,7 +4,9 @@ original_name: MEDIUM WITH EDTA AS CARBON SOURCE
 category: bacterial
 medium_type: DEFINED
 physical_state: SOLID_AGAR
-ph_range: 7.5-7.6
+ph_range:
+  min: 7.5
+  max: 7.6
 media_term:
   preferred_term: DSMZ Medium 473
   term:
@@ -246,8 +248,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave phosphate buffer separately. pH should be 7.5 - 7.6.
-    Add 5.0 ml sterile stock solution (see medium 462).
+  description: Autoclave phosphate buffer separately. pH should be 7.5 - 7.6. Add
+    5.0 ml sterile stock solution (see medium 462).
 applications:
 - Microbial cultivation
 curation_history:
@@ -270,13 +272,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:17.697280+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM WITH EDTA AS CARBON SOURCE" to
-    "medium_with_edta_as_carbon_source" for consistent matching
+  notes: Normalized name from "MEDIUM WITH EDTA AS CARBON SOURCE" to "medium_with_edta_as_carbon_source"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:54.800153+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.5-7.6'' -> {''min'': 7.5, ''max'': 7.6}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_473_MEDIUM_WITH_EDTA_AS_CARBON_SOURCE.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_473_MEDIUM_WITH_EDTA_AS_CARBON_SOURCE.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005588
   name: medium_with_edta_as_carbon_source
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

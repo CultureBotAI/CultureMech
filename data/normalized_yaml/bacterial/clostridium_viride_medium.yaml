@@ -4,7 +4,9 @@ original_name: CLOSTRIDIUM VIRIDE MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.6-7.8
+ph_range:
+  min: 7.6
+  max: 7.8
 media_term:
   preferred_term: DSMZ Medium 526
   term:
@@ -209,3 +211,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CLOSTRIDIUM VIRIDE MEDIUM" to "clostridium_viride_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:01:12.249672+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.6-7.8'' -> {''min'': 7.6, ''max'': 7.8}'

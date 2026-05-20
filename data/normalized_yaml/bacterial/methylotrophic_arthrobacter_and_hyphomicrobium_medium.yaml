@@ -4,7 +4,9 @@ original_name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.5
+ph_range:
+  min: 7.2
+  max: 7.5
 media_term:
   preferred_term: DSMZ Medium 939
   term:
@@ -145,16 +147,15 @@ preparation_steps:
   description: Final pH 7.2-7.5
 - step_number: 2
   action: MIX
-  description: After autoclaving add 10 ml methanol to 1 litre of the sterile
-    Mineral Salts Solution.
+  description: After autoclaving add 10 ml methanol to 1 litre of the sterile Mineral
+    Salts Solution.
 - step_number: 3
   action: AUTOCLAVE
-  description: Dissolve the EDTA in about 400 ml of water, then add 9 g NaOH.
-    Dissolve each of the salts individually in about 40-50 ml of water and add
-    them to the EDTA-NaOH solution. Adjust the final pH of the solution to pH
-    6.0 with 1M NaOH (about 24 ml). Make up to 1 litre with distilled water,
-    store in the dark and do not autoclave the stock solution before it is added
-    to the medium.
+  description: Dissolve the EDTA in about 400 ml of water, then add 9 g NaOH. Dissolve
+    each of the salts individually in about 40-50 ml of water and add them to the
+    EDTA-NaOH solution. Adjust the final pH of the solution to pH 6.0 with 1M NaOH
+    (about 24 ml). Make up to 1 litre with distilled water, store in the dark and
+    do not autoclave the stock solution before it is added to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -173,14 +174,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.112990+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM
-    MEDIUM" to "methylotrophic_arthrobacter_and_hyphomicrobium_medium" for
-    consistent matching
+  notes: Normalized name from "METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM"
+    to "methylotrophic_arthrobacter_and_hyphomicrobium_medium" for consistent matching
+- timestamp: '2026-05-20T06:01:57.032348+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.5'' -> {''min'': 7.2, ''max'': 7.5}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_939_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_939_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006866
   name: methylotrophic_arthrobacter_and_hyphomicrobium_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

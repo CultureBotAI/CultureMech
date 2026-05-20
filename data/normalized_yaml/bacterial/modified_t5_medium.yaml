@@ -4,7 +4,9 @@ original_name: MODIFIED T5 MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7-7.5
+ph_range:
+  min: 7.0
+  max: 7.5
 media_term:
   preferred_term: DSMZ Medium 1335
   term:
@@ -86,3 +88,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED T5 MEDIUM" to "modified_t5_medium" for consistent
     matching
+- timestamp: '2026-05-20T06:01:59.785170+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.5'' -> {''min'': 7.0, ''max'': 7.5}'

@@ -4,7 +4,9 @@ original_name: DESULFITOBACTERIUM PCE MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.0-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: KOMODO Medium 717
   term:
@@ -380,8 +382,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:25.752744Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:08:58.918676Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -397,16 +399,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:57.189744+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFITOBACTERIUM PCE MEDIUM" to
-    "desulfitobacterium_pce_medium" for consistent matching
+  notes: Normalized name from "DESULFITOBACTERIUM PCE MEDIUM" to "desulfitobacterium_pce_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:00:53.375085+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.0-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
 parent_media:
   path: data/normalized_yaml/bacterial/desulfitobacterium_pce_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001855
   name: desulfitobacterium_pce_medium
-  notes: KOMODO record states DSMZ Medium 717 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 717 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

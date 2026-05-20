@@ -4,7 +4,9 @@ original_name: ACETOBACTERIUM MEDIUM (MARINE)
 category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7-7.2
+ph_range:
+  min: 7.0
+  max: 7.2
 media_term:
   preferred_term: DSMZ Medium 135a
   term:
@@ -389,3 +391,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACETOBACTERIUM MEDIUM (MARINE)" to "acetobacterium_medium_marine"
     for consistent matching
+- timestamp: '2026-05-20T06:02:13.243506+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'

@@ -4,7 +4,9 @@ original_name: For DSM 19306
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-7.0
+ph_range:
+  min: 6.5
+  max: 7.0
 media_term:
   preferred_term: KOMODO Medium 985.1
   term:
@@ -365,8 +367,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:27.812222Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:45.213563Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -378,18 +380,21 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.250457+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 19306" to "for_dsm_19306" for consistent
-    matching
+  notes: Normalized name from "For DSM 19306" to "for_dsm_19306" for consistent matching
+- timestamp: '2026-05-20T06:01:18.899302+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-7.0'' -> {''min'': 6.5, ''max'': 7.0}'
 variant_children:
 - path: data/normalized_yaml/bacterial/deferribacter_autotrophicus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002167
   name: deferribacter_autotrophicus_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/tepidibacter_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006947
   name: tepidibacter_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

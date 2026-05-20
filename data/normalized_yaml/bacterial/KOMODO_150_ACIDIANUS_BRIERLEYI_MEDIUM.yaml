@@ -4,7 +4,9 @@ original_name: ACIDIANUS BRIERLEYI MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 1.5-2.5
+ph_range:
+  min: 1.5
+  max: 2.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 150 | DSMZ Medium: 150 (mediadive.medium:150)
   | Aerobic: No'
 media_term:
@@ -190,4 +192,8 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:50.416036+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''1.5-2.5'' -> {''min'': 1.5, ''max'': 2.5}'
 ph_value: 2.5

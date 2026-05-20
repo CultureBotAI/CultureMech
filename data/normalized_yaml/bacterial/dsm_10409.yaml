@@ -4,7 +4,9 @@ original_name: DSM 10409
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7
+ph_range:
+  min: 6.8
+  max: 7.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 480c.1 | DSMZ Medium: 480c
   (mediadive.medium:480c) | Aerobic: Yes'
 media_term:
@@ -362,3 +364,7 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:01:15.758917+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'

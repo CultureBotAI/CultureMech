@@ -4,7 +4,9 @@ original_name: METHANOLOBUS MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 6.8-7
+ph_range:
+  min: 6.8
+  max: 7.0
 media_term:
   preferred_term: DSMZ Medium 120d
   term:
@@ -372,3 +374,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOLOBUS MEDIUM" to "methanolobus_medium" for consistent
     matching
+- timestamp: '2026-05-20T06:01:55.904061+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'

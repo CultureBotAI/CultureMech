@@ -4,7 +4,9 @@ original_name: ALCALIPHILIC AMPHIBACILLUS STRAINS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 9.5-10
+ph_range:
+  min: 9.5
+  max: 10.0
 media_term:
   preferred_term: DSMZ Medium 931
   term:
@@ -262,18 +264,17 @@ preparation_steps:
   description: Final pH 9.5-10.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without adding the vitamins, sucrose, yeast
-    extract, NH4Cl, Na2CO3, and NaHCO3 using anaerobic conditions, under
-    nitrogen. If the medium has been boiled to remove oxygen add the NH4Cl,
-    Na2CO3, and NaHCO3 after the medium had cooled. Dispense into tubes stopper
-    with rubber stoppers (serum tubes or bottles, or screw capped tubes).
-    Autoclave, and to the cooled medium add the vitamins (filter sterilised
-    under N2), sucrose, yeast extract, and Na2S x 9 H2O from anaerobic, sterile
-    stock solutions.
+  description: Prepare the medium without adding the vitamins, sucrose, yeast extract,
+    NH4Cl, Na2CO3, and NaHCO3 using anaerobic conditions, under nitrogen. If the medium
+    has been boiled to remove oxygen add the NH4Cl, Na2CO3, and NaHCO3 after the medium
+    had cooled. Dispense into tubes stopper with rubber stoppers (serum tubes or bottles,
+    or screw capped tubes). Autoclave, and to the cooled medium add the vitamins (filter
+    sterilised under N2), sucrose, yeast extract, and Na2S x 9 H2O from anaerobic,
+    sterile stock solutions.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
-    KOH, then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -292,13 +293,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.012898+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALCALIPHILIC AMPHIBACILLUS STRAINS MEDIUM" to
-    "alcaliphilic_amphibacillus_strains_medium" for consistent matching
+  notes: Normalized name from "ALCALIPHILIC AMPHIBACILLUS STRAINS MEDIUM" to "alcaliphilic_amphibacillus_strains_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:07.719066+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''9.5-10'' -> {''min'': 9.5, ''max'': 10.0}'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006851
   name: alcaliphilic_amphibacillus_strains_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

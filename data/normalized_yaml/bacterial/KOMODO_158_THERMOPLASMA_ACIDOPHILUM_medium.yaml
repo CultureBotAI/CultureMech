@@ -4,7 +4,9 @@ original_name: THERMOPLASMA ACIDOPHILUM medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 1.0-2.0
+ph_range:
+  min: 1.0
+  max: 2.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 158 | DSMZ Medium: 158 (mediadive.medium:158)
   | Aerobic: No'
 media_term:
@@ -191,4 +193,8 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-05-20T06:00:50.436689+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''1.0-2.0'' -> {''min'': 1.0, ''max'': 2.0}'
 ph_value: 1.0

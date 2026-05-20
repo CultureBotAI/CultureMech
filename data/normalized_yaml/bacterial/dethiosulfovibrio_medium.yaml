@@ -4,7 +4,9 @@ original_name: DETHIOSULFOVIBRIO MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.7-6.8
+ph_range:
+  min: 6.7
+  max: 6.8
 media_term:
   preferred_term: DSMZ Medium 906
   term:
@@ -184,16 +186,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except calcium chloride, thiosulfate and
-    sulfide. Sparge medium with 100% N2 gas for at least 30 - 45 min to make it
-    anoxic, then dispense medium under same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Add calcium chloride,
-    thiosulfate and sulfide from sterile anoxic stock solutions prepared under
-    100% N2 gas. The pH of the complete medium should be at 6.7 - 6.8.
+  description: Dissolve ingredients except calcium chloride, thiosulfate and sulfide.
+    Sparge medium with 100% N2 gas for at least 30 - 45 min to make it anoxic, then
+    dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add calcium chloride, thiosulfate and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas. The pH of the complete medium
+    should be at 6.7 - 6.8.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
-    dissolve the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -212,15 +214,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.676715+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DETHIOSULFOVIBRIO MEDIUM" to
-    "dethiosulfovibrio_medium" for consistent matching
+  notes: Normalized name from "DETHIOSULFOVIBRIO MEDIUM" to "dethiosulfovibrio_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:15.482478+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.7-6.8'' -> {''min'': 6.7, ''max'': 6.8}'
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/KOMODO_906_DETHIOSULFOVIBRIO_II_medium.yaml
+  path: data/normalized_yaml/bacterial/KOMODO_906_DETHIOSULFOVIBRIO_II_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006777
   name: dethiosulfovibrio_ii_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

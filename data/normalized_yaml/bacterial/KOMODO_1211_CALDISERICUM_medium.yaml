@@ -4,7 +4,9 @@ original_name: CALDISERICUM medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-6.8
+ph_range:
+  min: 6.5
+  max: 6.8
 media_term:
   preferred_term: KOMODO Medium 1211
   term:
@@ -346,8 +348,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:37.294291Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:09:16.940513Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -363,17 +365,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.318781+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CALDISERICUM medium" to "caldisericum_medium" for
-    consistent matching
+  notes: Normalized name from "CALDISERICUM medium" to "caldisericum_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:00:49.505973+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.8'' -> {''min'': 6.5, ''max'': 6.8}'
 parent_media:
   path: data/normalized_yaml/bacterial/caldisericum_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000669
   name: caldisericum_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 1211; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 1211; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 1211; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 1211; local ingredient
+  and concentration signatures match.

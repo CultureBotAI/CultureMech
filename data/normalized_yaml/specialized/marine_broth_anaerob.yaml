@@ -4,7 +4,9 @@ original_name: MARINE BROTH (ANAEROB)
 category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.3-7.5
+ph_range:
+  min: 7.3
+  max: 7.5
 media_term:
   preferred_term: DSMZ Medium 514e
   term:
@@ -195,3 +197,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINE BROTH (ANAEROB)" to "marine_broth_anaerob" for
     consistent matching
+- timestamp: '2026-05-20T06:02:13.951355+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.3-7.5'' -> {''min'': 7.3, ''max'': 7.5}'

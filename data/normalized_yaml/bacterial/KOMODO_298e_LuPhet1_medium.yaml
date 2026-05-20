@@ -4,7 +4,9 @@ original_name: LuPhet1 medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.2-7.4
+ph_range:
+  min: 7.2
+  max: 7.4
 media_term:
   preferred_term: KOMODO Medium 298e
   term:
@@ -326,60 +328,64 @@ curation_history:
 - timestamp: '2026-03-17T19:45:44.126637+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LuPhet1 medium" to "luphet1_medium" for
-    consistent matching
+  notes: Normalized name from "LuPhet1 medium" to "luphet1_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:00:51.052015+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
 variant_children:
 - path: data/normalized_yaml/bacterial/16av_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004770
   name: 16av_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/acb90_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004772
   name: acb90_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/flglym_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004765
   name: flglym_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_8271.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004764
   name: for_dsm_8271
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/gol_chi1_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004766
   name: gol_chi1_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/lutria3_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004767
   name: lutria3_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/pb90_1_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004771
   name: pb90_1_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/pelobacter_propionicus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004762
   name: pelobacter_propionicus_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/veeg4_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004773
   name: veeg4_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

@@ -4,7 +4,9 @@ original_name: Beijerinckia medium for isolation
 category: bacterial
 medium_type: DEFINED
 physical_state: SOLID_AGAR
-ph_range: 6.3-6.7
+ph_range:
+  min: 6.3
+  max: 6.7
 media_term:
   preferred_term: DSMZ Medium 1847
   term:
@@ -110,3 +112,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Beijerinckia medium for isolation" to "beijerinckia_medium_for_isolation"
     for consistent matching
+- timestamp: '2026-05-20T06:01:09.740964+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.3-6.7'' -> {''min'': 6.3, ''max'': 6.7}'

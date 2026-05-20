@@ -4,7 +4,9 @@ original_name: BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.8-7.4
+ph_range:
+  min: 6.8
+  max: 7.4
 media_term:
   preferred_term: public Medium P10
   term:
@@ -38,5 +40,9 @@ curation_history:
   notes: Normalized name from "BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)"
     to "bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo" for consistent
     matching
+- timestamp: '2026-05-20T06:01:09.748944+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.8-7.4'' -> {''min'': 6.8, ''max'': 7.4}'
 data_quality_flags:
 - incomplete_composition

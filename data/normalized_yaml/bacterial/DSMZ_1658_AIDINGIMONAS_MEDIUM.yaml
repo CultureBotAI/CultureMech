@@ -4,7 +4,9 @@ original_name: AIDINGIMONAS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 7-7.5
+ph_range:
+  min: 7.0
+  max: 7.5
 media_term:
   preferred_term: DSMZ Medium 1658
   term:
@@ -64,5 +66,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "AIDINGIMONAS MEDIUM" to "aidingimonas_medium" for consistent
     matching
+- timestamp: '2026-05-20T06:00:47.109094+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7-7.5'' -> {''min'': 7.0, ''max'': 7.5}'
 high_metal: true
 kg_microbe_match: mediadive.medium:101

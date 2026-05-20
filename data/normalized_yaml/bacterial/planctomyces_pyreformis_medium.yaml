@@ -4,7 +4,9 @@ original_name: PLANCTOMYCES PYREFORMIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ph_range: 5.8-6.5
+ph_range:
+  min: 5.8
+  max: 6.5
 media_term:
   preferred_term: DSMZ Medium 1531
   term:
@@ -307,3 +309,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PLANCTOMYCES PYREFORMIS MEDIUM" to "planctomyces_pyreformis_medium"
     for consistent matching
+- timestamp: '2026-05-20T06:02:02.674525+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5.8-6.5'' -> {''min'': 5.8, ''max'': 6.5}'

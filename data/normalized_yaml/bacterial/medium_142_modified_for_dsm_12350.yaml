@@ -4,7 +4,9 @@ original_name: MEDIUM 142 MODIFIED FOR DSM 12350
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.6
+ph_range:
+  min: 7.2
+  max: 7.6
 media_term:
   preferred_term: KOMODO Medium 142_12350
   term:
@@ -247,8 +249,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:40.281335+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 142 MODIFIED FOR DSM 12350" to
-    "medium_142_modified_for_dsm_12350" for consistent matching
+  notes: Normalized name from "MEDIUM 142 MODIFIED FOR DSM 12350" to "medium_142_modified_for_dsm_12350"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:45.474637+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.6'' -> {''min'': 7.2, ''max'': 7.6}'
 ph_value: 7.2
 parent_media:
   path: data/normalized_yaml/bacterial/thiomicrospira_pelophila_medium.yaml
@@ -257,5 +263,5 @@ parent_media:
   name: thiomicrospira_pelophila_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

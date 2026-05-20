@@ -4,7 +4,9 @@ original_name: MEDIUM FOR STRAIN 2M70-1
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 7.2-7.3
+ph_range:
+  min: 7.2
+  max: 7.3
 media_term:
   preferred_term: DSMZ Medium 1404
   term:
@@ -354,3 +356,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM FOR STRAIN 2M70-1" to "medium_for_strain_2m70_1"
     for consistent matching
+- timestamp: '2026-05-20T06:01:54.172056+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.3'' -> {''min'': 7.2, ''max'': 7.3}'

@@ -4,7 +4,9 @@ original_name: METHANOFOLLIS MB MEDIUM (5 g/l NaCl)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range: 6.5-6.8
+ph_range:
+  min: 6.5
+  max: 6.8
 media_term:
   preferred_term: DSMZ Medium 924a
   term:
@@ -399,3 +401,7 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOFOLLIS MB MEDIUM (5 g/l NaCl)" to "methanofollis_mb_medium_5_g_l_nacl"
     for consistent matching
+- timestamp: '2026-05-20T06:01:55.616918+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.8'' -> {''min'': 6.5, ''max'': 6.8}'

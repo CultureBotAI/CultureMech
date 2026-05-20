@@ -4,7 +4,9 @@ original_name: For DSM 5671 (strain KN245)
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_range: 7.2-7.5
+ph_range:
+  min: 7.2
+  max: 7.5
 media_term:
   preferred_term: KOMODO Medium 497.1
   term:
@@ -345,8 +347,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.898923Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:34.729272Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -358,8 +360,12 @@ curation_history:
 - timestamp: '2026-03-17T19:45:51.012965+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 5671 (strain KN245)" to
-    "for_dsm_5671_strain_kn245" for consistent matching
+  notes: Normalized name from "For DSM 5671 (strain KN245)" to "for_dsm_5671_strain_kn245"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:19.730900+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''7.2-7.5'' -> {''min'': 7.2, ''max'': 7.5}'
 parent_media:
   path: data/normalized_yaml/bacterial/hydroxybenzoate_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -367,5 +373,5 @@ parent_media:
   name: hydroxybenzoate_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.
