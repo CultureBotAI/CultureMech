@@ -25,6 +25,10 @@ import yaml
 from tqdm import tqdm
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+from culturemech.curate import record_curation_event  # noqa: E402
+
+CURATOR = "enrich_solutions_with_chebi.py"
+ACTION = "ENRICHED_SOLUTIONS_WITH_CHEBI"
 
 
 def load_compound_mapping(mapping_path: Path) -> dict:
@@ -101,6 +105,13 @@ def enrich_solution_yaml(
             num_enriched += 1
 
     # Save enriched YAML
+    if num_enriched > 0:
+        record_curation_event(
+            data,
+            curator=CURATOR,
+            action=ACTION,
+            notes=f"added chebi_term to {num_enriched}/{num_total} composition entries",
+        )
     if not dry_run and num_enriched > 0:
         with open(yaml_path, 'w') as f:
             yaml.dump(data, f, default_flow_style=False, sort_keys=False, allow_unicode=True)

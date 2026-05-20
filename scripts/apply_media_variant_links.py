@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
@@ -18,6 +19,11 @@ except ImportError:  # pragma: no cover - exercised only outside the uv env
     RuamelYAML = None
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT / "src"))
+from culturemech.curate import record_curation_event  # noqa: E402
+
+CURATOR = "apply_media_variant_links.py"
+ACTION = "APPLIED_VARIANT_LINKS"
 DEFAULT_PROPOSALS = REPO_ROOT / "reports" / "media_variant_link_proposals.tsv"
 REPORTS_DIR = REPO_ROOT / "reports"
 DRY_RUN_JSON = REPORTS_DIR / "media_variant_link_apply_plan.json"
@@ -228,6 +234,12 @@ def plan_links(rows: list[dict[str, str]], args: argparse.Namespace) -> list[dic
 
     if args.apply:
         for rel_path in sorted(dirty):
+            record_curation_event(
+                recipes[rel_path],
+                curator=CURATOR,
+                action=ACTION,
+                notes=f"applied variant-link plan ({rel_path})",
+            )
             write_yaml(REPO_ROOT / rel_path, recipes[rel_path])
 
     return plans

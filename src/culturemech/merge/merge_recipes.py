@@ -26,12 +26,16 @@ from pathlib import Path
 
 import yaml
 
+from culturemech.curate import record_curation_event
 from culturemech.enrich.hierarchy_importer import MediaIngredientMechHierarchyImporter
 from culturemech.merge.fingerprint import RecipeFingerprinter
 from culturemech.merge.hierarchy_fingerprint import HierarchyAwareFingerprinter
 from culturemech.merge.matcher import RecipeMatcher
 from culturemech.merge.merge_rules import MergeRuleEngine
 from culturemech.merge.merger import RecipeMerger
+
+CURATOR = "merge_recipes.py"
+ACTION = "MERGED_RECIPES"
 
 
 def find_all_recipes(normalized_dir: Path) -> list[Path]:
@@ -422,6 +426,16 @@ Examples:
             # Generate output filename (use canonical name)
             filename = merged_recipe['name'].replace('/', '_').replace(' ', '_') + '.yaml'
             output_path = args.output_dir / filename
+
+            # Record provenance for the merge so the audit trail captures
+            # how this canonical record was produced.
+            record_curation_event(
+                merged_recipe,
+                curator=CURATOR,
+                action=ACTION,
+                notes=f"merged {len(paths)} source recipe(s) on fingerprint {fp}",
+                source=", ".join(p.name for p in paths)[:500],
+            )
 
             # Write merged recipe
             with open(output_path, 'w', encoding='utf-8') as f:

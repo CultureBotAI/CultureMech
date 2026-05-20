@@ -5,7 +5,7 @@ scripts/aggregate_unmapped_ingredients.py	yes	no	no	no	yes
 scripts/analyze_metal_concentrations.py	yes	no	no	no	no
 scripts/apply_edison_results.py	yes	yes	yes	no	no
 scripts/apply_growth_evidence.py	yes	yes	no	no	yes
-scripts/apply_media_variant_links.py	yes	no	no	no	yes
+scripts/apply_media_variant_links.py	yes	yes	no	no	yes
 scripts/assign_culturemech_ids.py	yes	yes	yes	no	yes
 scripts/assign_taxonomy.py	yes	no	yes	no	no
 scripts/audit_writers.py	yes	yes	yes	yes	no
@@ -17,7 +17,7 @@ scripts/cleanup_residual_errors.py	yes	yes	yes	no	no
 scripts/compare_fingerprints.py	yes	no	no	no	no
 scripts/create_recipe_from_input.py	yes	yes	yes	no	no
 scripts/enrich_genome_ids.py	yes	no	no	no	yes
-scripts/enrich_solutions_with_chebi.py	yes	no	yes	no	no
+scripts/enrich_solutions_with_chebi.py	yes	yes	yes	no	no
 scripts/enrich_with_chebi.py	yes	yes	yes	no	yes
 scripts/enrich_with_kg_microbe_matches.py	yes	yes	yes	no	no
 scripts/fetch_pubmed_abstracts.py	yes	no	yes	no	yes
@@ -62,10 +62,10 @@ src/culturemech/import/togo_importer.py	yes	yes	no	no	yes
 src/culturemech/import/utex_importer.py	yes	yes	no	no	yes
 src/culturemech/enrich/backfill_pipeline.py	yes	yes	yes	no	no
 src/culturemech/enrich/dsmz_resolver.py	yes	yes	yes	no	no
-src/culturemech/enrich/fix_unnamed_and_physical_state.py	yes	no	yes	no	no
+src/culturemech/enrich/fix_unnamed_and_physical_state.py	yes	yes	yes	no	no
 src/culturemech/enrich/hierarchy_enricher.py	yes	yes	yes	no	no
 src/culturemech/enrich/mediaingredientmech_linker.py	yes	yes	yes	no	no
-src/culturemech/enrich/normalize_enums.py	yes	no	yes	no	no
+src/culturemech/enrich/normalize_enums.py	yes	yes	yes	no	no
 src/culturemech/enrich/preparation_steps_extractor.py	yes	yes	yes	no	no
 src/culturemech/enrich/role_importer.py	yes	yes	yes	no	no
-src/culturemech/merge/merge_recipes.py	yes	no	yes	no	yes
+src/culturemech/merge/merge_recipes.py	yes	yes	yes	no	yes

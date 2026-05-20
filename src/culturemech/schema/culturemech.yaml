@@ -255,8 +255,9 @@ classes:
         range: float
 
       ph_range:
-        description: Acceptable pH range (e.g., "6.8-7.2")
-        range: string
+        description: Acceptable pH range. Structured as PhRange (min/max floats; notes for unparseable values).
+        range: PhRange
+        inlined: true
 
       # Algae-specific culture conditions
       light_intensity:
@@ -1337,6 +1338,24 @@ classes:
         description: Temperature unit
         range: TemperatureUnitEnum
         required: true
+
+  PhRange:
+    description: >-
+      Acceptable pH range for a medium. Use `min` and `max` (floats) for
+      parseable ranges; `notes` preserves the original free-text whenever
+      a value can't be parsed cleanly (avoids data loss during migration).
+    attributes:
+      min:
+        description: Lower bound of the acceptable pH range (inclusive).
+        range: float
+      max:
+        description: Upper bound of the acceptable pH range (inclusive).
+        range: float
+      notes:
+        description: >-
+          Free-text qualifier or the original unparseable value
+          (e.g. "varies by species", "alkaline 9-10 for halophiles").
+        range: string
 
   PreparationStep:
     description: A step in medium preparation

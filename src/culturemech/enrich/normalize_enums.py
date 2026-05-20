@@ -15,8 +15,13 @@ from typing import Dict, Any, Optional
 import yaml
 import re
 
+from culturemech.curate import record_curation_event
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+CURATOR = "normalize_enums.py"
+ACTION = "NORMALIZED_ENUMS"
 
 
 class EnumNormalizer:
@@ -260,6 +265,14 @@ class EnumNormalizer:
                 logger.info(f"{'[DRY RUN] ' if self.dry_run else ''}Modified {yaml_path.name}")
                 for change in changes:
                     logger.info(f"  - {change}")
+
+                record_curation_event(
+                    data,
+                    curator=CURATOR,
+                    action=ACTION,
+                    notes=f"normalized {len(changes)} enum value(s)",
+                    changes="; ".join(changes)[:500],
+                )
 
                 if not self.dry_run:
                     # Write back to file, preserving formatting as much as possible
