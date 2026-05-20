@@ -93,16 +93,16 @@ variants:
   modifications:
   - Use magnetosome-deficient strain B17316 derived from M. gryphiswaldense MSR-1.
   - Add Cr(VI) at 10 mg/L.
-  purpose: Capture strain-modification and chromium-stress growth evidence under
-    the parent Magnetospirillum gryphiswaldense Medium record.
+  purpose: Capture strain-modification and chromium-stress growth evidence under the
+    parent Magnetospirillum gryphiswaldense Medium record.
   evidence:
   - reference: PMID:37088211
     supports: SUPPORT
     snippet: The addition of 10 mg L-1 Cr(VI) significantly inhibited cell growth,
       but the magnetosome-deficient strain, B17316, showed an average specific growth
       rate of 0.062 h-1 at the same dosage.
-    explanation: Literature evidence supports a Cr(VI)-stress variant for
-      magnetosome-deficient Magnetospirillum gryphiswaldense strain B17316.
+    explanation: Literature evidence supports a Cr(VI)-stress variant for magnetosome-deficient
+      Magnetospirillum gryphiswaldense strain B17316.
 curation_history:
 - timestamp: '2026-01-26T17:53:17.212107Z'
   curator: mediadive-import
@@ -133,6 +133,10 @@ curation_history:
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
   notes: organisms_added=1 metrics_added=1 genomes_added=0
+- timestamp: '2026-05-20T02:54:07.099061+00:00'
+  curator: migrate_ontology_term_rename.py
+  action: MIGRATED_ONTOLOGY_TERM_RENAME
+  notes: ontology_term->ontology_id for 2 entry/entries
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: MAGNETOSPIRILLUM GRYPHISWALDENSE
@@ -144,7 +148,7 @@ target_organisms:
   - modification_type: KNOCKOUT
     target: magnetosome operon
     description: magnetosome-deficient strain B17316
-    ontology_term: NCIT:C120956
+    ontology_id: NCIT:C120956
   growth_metrics:
   - growth_rate_per_hour: 0.062
     evidence:
@@ -162,4 +166,4 @@ target_organisms:
       target: chromium hexavalent
       level: 10.0
       level_unit: mg/L
-      ontology_term: CHEBI:53456
+      ontology_id: CHEBI:53456

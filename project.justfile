@@ -752,6 +752,23 @@ validate-strict *args:
     #!/usr/bin/env bash
     uv run python scripts/validate_strict.py {{args}}
 
+# Scan-only collision check for CultureMech:NNNNNN IDs. Exits non-zero if any
+# cross-file duplicates are detected. Use as a pre-commit / CI safety net.
+[group('QC')]
+assign-ids-check:
+    #!/usr/bin/env bash
+    uv run python scripts/assign_culturemech_ids.py --check
+
+# Mint CultureMech:NNNNNN IDs for any YAML records missing one. Refuses to run
+# if cross-file collisions exist among existing IDs (run `assign-ids-check`
+# first to surface them).
+#     just assign-ids --dry-run   # rehearse only
+#     just assign-ids             # apply
+[group('QC')]
+assign-ids *args:
+    #!/usr/bin/env bash
+    uv run python scripts/assign_culturemech_ids.py {{args}}
+
 # ================================================================
 # VALIDATION AND FIXING (Track 3)
 # ================================================================

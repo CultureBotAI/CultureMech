@@ -49,6 +49,7 @@ _VALIDATE_BEFORE_WRITE = re.compile(
     r"|RecipeValidator"
     r"|validate_recipe\("
     r"|validator\.validate\("
+    r"|write_validated_recipe\("  # G09 helper from culturemech.validation
 )
 
 
@@ -63,6 +64,9 @@ def script_paths() -> list[Path]:
 
 def looks_like_yaml_writer(text: str) -> bool:
     if "yaml.safe_dump(" in text or "yaml.dump(" in text:
+        return True
+    # write_validated_recipe is the G09 helper that wraps yaml.safe_dump.
+    if "write_validated_recipe(" in text:
         return True
     # `.write_text(` only counts if combined with a yaml hint nearby.
     if ".write_text(" in text and _WRITE_YAML_HINT.search(text):

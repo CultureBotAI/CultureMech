@@ -25,12 +25,14 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import datetime
 import re
 import sys
 from pathlib import Path
 
 import yaml
+
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+from culturemech.curate import record_curation_event  # noqa: E402
 
 CURATOR = "migrate_preparation_steps.py"
 ACTION = "MIGRATED_PREPARATION_STEPS"
@@ -53,8 +55,6 @@ ACTION_PATTERNS: list[tuple[str, list[str]]] = [
 ]
 
 
-def now_iso() -> str:
-    return datetime.datetime.now(datetime.timezone.utc).isoformat()
 
 
 def guess_action(text: str) -> str:
@@ -89,13 +89,12 @@ def migrate_one(path: Path, dry_run: bool) -> int:
             migrated += 1
     if migrated == 0:
         return 0
-    history = data.setdefault("curation_history", [])
-    history.append({
-        "timestamp": now_iso(),
-        "curator": CURATOR,
-        "action": ACTION,
-        "notes": f"instruction->action+description for {migrated} step(s)",
-    })
+    record_curation_event(
+        data,
+        curator=CURATOR,
+        action=ACTION,
+        notes=f"instruction->action+description for {migrated} step(s)",
+    )
     if not dry_run:
         with path.open("w") as f:
             yaml.safe_dump(data, f, sort_keys=False, allow_unicode=True, width=80)

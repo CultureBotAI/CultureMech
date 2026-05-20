@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-05-18T11:57:53
+# Generation date: 2026-05-19T20:18:42
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -117,6 +117,18 @@ class TermId(extended_str):
     pass
 
 
+class OrganismDescriptorPreferredTerm(extended_str):
+    pass
+
+
+class MediaVariantName(extended_str):
+    pass
+
+
+class EvidenceItemReference(extended_str):
+    pass
+
+
 class ChemicalEntityTermId(TermId):
     pass
 
@@ -181,7 +193,7 @@ class MediaRecipe(YAMLRoot):
     media_term: Optional[Union[dict, "MediaTypeDescriptor"]] = None
     kg_microbe_match: Optional[str] = None
     description: Optional[str] = None
-    target_organisms: Optional[Union[Union[dict, "OrganismDescriptor"], list[Union[dict, "OrganismDescriptor"]]]] = empty_list()
+    target_organisms: Optional[Union[dict[Union[str, OrganismDescriptorPreferredTerm], Union[dict, "OrganismDescriptor"]], list[Union[dict, "OrganismDescriptor"]]]] = empty_dict()
     source_environment: Optional[Union[Union[dict, "SourceEnvironmentDescriptor"], list[Union[dict, "SourceEnvironmentDescriptor"]]]] = empty_list()
     organism_culture_type: Optional[Union[str, "OrganismCultureTypeEnum"]] = None
     ph_value: Optional[float] = None
@@ -199,14 +211,14 @@ class MediaRecipe(YAMLRoot):
     sterilization: Optional[Union[dict, "SterilizationDescriptor"]] = None
     storage: Optional[Union[dict, "StorageConditions"]] = None
     applications: Optional[Union[str, list[str]]] = empty_list()
-    variants: Optional[Union[Union[dict, "MediaVariant"], list[Union[dict, "MediaVariant"]]]] = empty_list()
+    variants: Optional[Union[dict[Union[str, MediaVariantName], Union[dict, "MediaVariant"]], list[Union[dict, "MediaVariant"]]]] = empty_dict()
     parent_media: Optional[Union[dict, "MediaRecipeReference"]] = None
     variant_children: Optional[Union[Union[dict, "MediaRecipeReference"], list[Union[dict, "MediaRecipeReference"]]]] = empty_list()
     variant_relationship: Optional[Union[str, "MediaVariantRelationshipEnum"]] = None
     variant_modifications: Optional[Union[str, list[str]]] = empty_list()
     references: Optional[Union[Union[dict, "PublicationReference"], list[Union[dict, "PublicationReference"]]]] = empty_list()
     notes: Optional[str] = None
-    evidence: Optional[Union[Union[dict, "EvidenceItem"], list[Union[dict, "EvidenceItem"]]]] = empty_list()
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
     datasets: Optional[Union[Union[dict, "Dataset"], list[Union[dict, "Dataset"]]]] = empty_list()
     import_metadata: Optional[Union[dict, "ImportMetadata"]] = None
     curation_history: Optional[Union[Union[dict, "CurationEvent"], list[Union[dict, "CurationEvent"]]]] = empty_list()
@@ -288,7 +300,7 @@ class MediaRecipe(YAMLRoot):
         if self.description is not None and not isinstance(self.description, str):
             self.description = str(self.description)
 
-        self._normalize_inlined_as_dict(slot_name="target_organisms", slot_type=OrganismDescriptor, key_name="preferred_term", keyed=False)
+        self._normalize_inlined_as_list(slot_name="target_organisms", slot_type=OrganismDescriptor, key_name="preferred_term", keyed=True)
 
         if not isinstance(self.source_environment, list):
             self.source_environment = [self.source_environment] if self.source_environment is not None else []
@@ -345,9 +357,7 @@ class MediaRecipe(YAMLRoot):
             self.applications = [self.applications] if self.applications is not None else []
         self.applications = [v if isinstance(v, str) else str(v) for v in self.applications]
 
-        if not isinstance(self.variants, list):
-            self.variants = [self.variants] if self.variants is not None else []
-        self.variants = [v if isinstance(v, MediaVariant) else MediaVariant(**as_dict(v)) for v in self.variants]
+        self._normalize_inlined_as_list(slot_name="variants", slot_type=MediaVariant, key_name="name", keyed=True)
 
         if self.parent_media is not None and not isinstance(self.parent_media, MediaRecipeReference):
             self.parent_media = MediaRecipeReference(**as_dict(self.parent_media))
@@ -370,9 +380,7 @@ class MediaRecipe(YAMLRoot):
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, EvidenceItem) else EvidenceItem(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         if not isinstance(self.datasets, list):
             self.datasets = [self.datasets] if self.datasets is not None else []
@@ -553,18 +561,18 @@ class MergeMetadata(YAMLRoot):
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.MergeMetadata
 
     merge_version: Optional[str] = None
-    merge_mode: Optional[str] = None
+    merge_mode: Optional[Union[str, "MergeModeEnum"]] = None
     merge_reason: Optional[Union[str, "MergeReasonEnum"]] = None
     merge_confidence: Optional[float] = None
     hierarchy_conflicts: Optional[Union[str, list[str]]] = empty_list()
-    fingerprint_mode: Optional[str] = None
+    fingerprint_mode: Optional[Union[str, "FingerprintModeEnum"]] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self.merge_version is not None and not isinstance(self.merge_version, str):
             self.merge_version = str(self.merge_version)
 
-        if self.merge_mode is not None and not isinstance(self.merge_mode, str):
-            self.merge_mode = str(self.merge_mode)
+        if self.merge_mode is not None and not isinstance(self.merge_mode, MergeModeEnum):
+            self.merge_mode = MergeModeEnum(self.merge_mode)
 
         if self.merge_reason is not None and not isinstance(self.merge_reason, MergeReasonEnum):
             self.merge_reason = MergeReasonEnum(self.merge_reason)
@@ -576,8 +584,8 @@ class MergeMetadata(YAMLRoot):
             self.hierarchy_conflicts = [self.hierarchy_conflicts] if self.hierarchy_conflicts is not None else []
         self.hierarchy_conflicts = [v if isinstance(v, str) else str(v) for v in self.hierarchy_conflicts]
 
-        if self.fingerprint_mode is not None and not isinstance(self.fingerprint_mode, str):
-            self.fingerprint_mode = str(self.fingerprint_mode)
+        if self.fingerprint_mode is not None and not isinstance(self.fingerprint_mode, FingerprintModeEnum):
+            self.fingerprint_mode = FingerprintModeEnum(self.fingerprint_mode)
 
         super().__post_init__(**kwargs)
 
@@ -609,7 +617,7 @@ class Term(YAMLRoot):
     id: Union[str, TermId] = None
     label: Optional[str] = None
     confidence: Optional[float] = None
-    match_type: Optional[str] = None
+    match_type: Optional[Union[str, "TermMatchTypeEnum"]] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.id):
@@ -623,8 +631,8 @@ class Term(YAMLRoot):
         if self.confidence is not None and not isinstance(self.confidence, float):
             self.confidence = float(self.confidence)
 
-        if self.match_type is not None and not isinstance(self.match_type, str):
-            self.match_type = str(self.match_type)
+        if self.match_type is not None and not isinstance(self.match_type, TermMatchTypeEnum):
+            self.match_type = TermMatchTypeEnum(self.match_type)
 
         super().__post_init__(**kwargs)
 
@@ -669,13 +677,13 @@ class IngredientDescriptor(Descriptor):
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.IngredientDescriptor
 
     preferred_term: str = None
-    concentration: Union[dict, "ConcentrationValue"] = None
     term: Optional[Union[dict, "ChemicalEntityTerm"]] = None
     chebi_term: Optional[Union[dict, "ChebiTerm"]] = None
     mediaingredientmech_term: Optional[Union[dict, "MediaIngredientMechTerm"]] = None
     culturemech_term: Optional[Union[dict, "CultureMechTerm"]] = None
     parent_ingredient: Optional[Union[dict, "IngredientReference"]] = None
     variant_type: Optional[Union[str, "VariantTypeEnum"]] = None
+    concentration: Optional[Union[dict, "ConcentrationValue"]] = None
     modifier: Optional[Union[str, "ModifierEnum"]] = None
     chemical_formula: Optional[str] = None
     synonyms: Optional[Union[Union[dict, "IngredientSynonym"], list[Union[dict, "IngredientSynonym"]]]] = empty_list()
@@ -687,18 +695,13 @@ class IngredientDescriptor(Descriptor):
     notes: Optional[str] = None
     role: Optional[Union[Union[str, "IngredientRoleEnum"], list[Union[str, "IngredientRoleEnum"]]]] = empty_list()
     cofactors_provided: Optional[Union[Union[dict, "CofactorDescriptor"], list[Union[dict, "CofactorDescriptor"]]]] = empty_list()
-    evidence: Optional[Union[Union[dict, "EvidenceItem"], list[Union[dict, "EvidenceItem"]]]] = empty_list()
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.preferred_term):
             self.MissingRequiredField("preferred_term")
         if not isinstance(self.preferred_term, str):
             self.preferred_term = str(self.preferred_term)
-
-        if self._is_empty(self.concentration):
-            self.MissingRequiredField("concentration")
-        if not isinstance(self.concentration, ConcentrationValue):
-            self.concentration = ConcentrationValue(**as_dict(self.concentration))
 
         if self.term is not None and not isinstance(self.term, ChemicalEntityTerm):
             self.term = ChemicalEntityTerm(**as_dict(self.term))
@@ -717,6 +720,9 @@ class IngredientDescriptor(Descriptor):
 
         if self.variant_type is not None and not isinstance(self.variant_type, VariantTypeEnum):
             self.variant_type = VariantTypeEnum(self.variant_type)
+
+        if self.concentration is not None and not isinstance(self.concentration, ConcentrationValue):
+            self.concentration = ConcentrationValue(**as_dict(self.concentration))
 
         if self.modifier is not None and not isinstance(self.modifier, ModifierEnum):
             self.modifier = ModifierEnum(self.modifier)
@@ -755,9 +761,7 @@ class IngredientDescriptor(Descriptor):
             self.cofactors_provided = [self.cofactors_provided] if self.cofactors_provided is not None else []
         self.cofactors_provided = [v if isinstance(v, CofactorDescriptor) else CofactorDescriptor(**as_dict(v)) for v in self.cofactors_provided]
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, EvidenceItem) else EvidenceItem(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         super().__post_init__(**kwargs)
 
@@ -838,26 +842,26 @@ class OrganismDescriptor(Descriptor):
     class_name: ClassVar[str] = "OrganismDescriptor"
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.OrganismDescriptor
 
-    preferred_term: str = None
+    preferred_term: Union[str, OrganismDescriptorPreferredTerm] = None
     term: Optional[Union[dict, "OrganismTerm"]] = None
     gtdb_term: Optional[Union[dict, "GTDBTerm"]] = None
     genome_assembly_id: Optional[Union[str, list[str]]] = empty_list()
     strain: Optional[str] = None
-    growth_phase: Optional[str] = None
+    growth_phase: Optional[Union[str, "GrowthPhaseEnum"]] = None
     growth_metrics: Optional[Union[Union[dict, "GrowthMetrics"], list[Union[dict, "GrowthMetrics"]]]] = empty_list()
     community_role: Optional[Union[Union[str, "CellularRoleEnum"], list[Union[str, "CellularRoleEnum"]]]] = empty_list()
     target_abundance: Optional[float] = None
     community_function: Optional[Union[str, list[str]]] = empty_list()
     cofactor_requirements: Optional[Union[Union[dict, "CofactorRequirement"], list[Union[dict, "CofactorRequirement"]]]] = empty_list()
     transporters: Optional[Union[Union[dict, "TransporterAnnotation"], list[Union[dict, "TransporterAnnotation"]]]] = empty_list()
-    evidence: Optional[Union[Union[dict, "EvidenceItem"], list[Union[dict, "EvidenceItem"]]]] = empty_list()
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
     strain_modifications: Optional[Union[Union[dict, "StrainModification"], list[Union[dict, "StrainModification"]]]] = empty_list()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.preferred_term):
             self.MissingRequiredField("preferred_term")
-        if not isinstance(self.preferred_term, str):
-            self.preferred_term = str(self.preferred_term)
+        if not isinstance(self.preferred_term, OrganismDescriptorPreferredTerm):
+            self.preferred_term = OrganismDescriptorPreferredTerm(self.preferred_term)
 
         if self.term is not None and not isinstance(self.term, OrganismTerm):
             self.term = OrganismTerm(**as_dict(self.term))
@@ -872,8 +876,8 @@ class OrganismDescriptor(Descriptor):
         if self.strain is not None and not isinstance(self.strain, str):
             self.strain = str(self.strain)
 
-        if self.growth_phase is not None and not isinstance(self.growth_phase, str):
-            self.growth_phase = str(self.growth_phase)
+        if self.growth_phase is not None and not isinstance(self.growth_phase, GrowthPhaseEnum):
+            self.growth_phase = GrowthPhaseEnum(self.growth_phase)
 
         if not isinstance(self.growth_metrics, list):
             self.growth_metrics = [self.growth_metrics] if self.growth_metrics is not None else []
@@ -898,9 +902,7 @@ class OrganismDescriptor(Descriptor):
             self.transporters = [self.transporters] if self.transporters is not None else []
         self.transporters = [v if isinstance(v, TransporterAnnotation) else TransporterAnnotation(**as_dict(v)) for v in self.transporters]
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, EvidenceItem) else EvidenceItem(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         if not isinstance(self.strain_modifications, list):
             self.strain_modifications = [self.strain_modifications] if self.strain_modifications is not None else []
@@ -1053,7 +1055,7 @@ class IngredientSynonym(YAMLRoot):
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.IngredientSynonym
 
     synonym_text: str = None
-    synonym_type: Optional[str] = None
+    synonym_type: Optional[Union[str, "SynonymTypeEnum"]] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.synonym_text):
@@ -1061,8 +1063,8 @@ class IngredientSynonym(YAMLRoot):
         if not isinstance(self.synonym_text, str):
             self.synonym_text = str(self.synonym_text)
 
-        if self.synonym_type is not None and not isinstance(self.synonym_type, str):
-            self.synonym_type = str(self.synonym_type)
+        if self.synonym_type is not None and not isinstance(self.synonym_type, SynonymTypeEnum):
+            self.synonym_type = SynonymTypeEnum(self.synonym_type)
 
         super().__post_init__(**kwargs)
 
@@ -1175,7 +1177,7 @@ class GrowthMetrics(YAMLRoot):
     class_name: ClassVar[str] = "GrowthMetrics"
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.GrowthMetrics
 
-    evidence: Union[Union[dict, "EvidenceItem"], list[Union[dict, "EvidenceItem"]]] = None
+    evidence: Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]] = empty_dict()
     max_od600: Optional[float] = None
     max_od_wavelength_nm: Optional[int] = 600
     doubling_time_minutes: Optional[float] = None
@@ -1191,9 +1193,7 @@ class GrowthMetrics(YAMLRoot):
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.evidence):
             self.MissingRequiredField("evidence")
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, EvidenceItem) else EvidenceItem(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         if self.max_od600 is not None and not isinstance(self.max_od600, float):
             self.max_od600 = float(self.max_od600)
@@ -1252,8 +1252,8 @@ class PerturbationContext(YAMLRoot):
     target: Optional[str] = None
     level: Optional[float] = None
     level_unit: Optional[str] = None
-    ontology_term: Optional[str] = None
-    evidence: Optional[Union[Union[dict, "EvidenceItem"], list[Union[dict, "EvidenceItem"]]]] = empty_list()
+    ontology_id: Optional[str] = None
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.perturbation_type):
@@ -1273,12 +1273,10 @@ class PerturbationContext(YAMLRoot):
         if self.level_unit is not None and not isinstance(self.level_unit, str):
             self.level_unit = str(self.level_unit)
 
-        if self.ontology_term is not None and not isinstance(self.ontology_term, str):
-            self.ontology_term = str(self.ontology_term)
+        if self.ontology_id is not None and not isinstance(self.ontology_id, str):
+            self.ontology_id = str(self.ontology_id)
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, EvidenceItem) else EvidenceItem(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         super().__post_init__(**kwargs)
 
@@ -1300,8 +1298,8 @@ class StrainModification(YAMLRoot):
     modification_type: Union[str, "StrainModificationTypeEnum"] = None
     target: Optional[str] = None
     description: Optional[str] = None
-    ontology_term: Optional[str] = None
-    evidence: Optional[Union[Union[dict, "EvidenceItem"], list[Union[dict, "EvidenceItem"]]]] = empty_list()
+    ontology_id: Optional[str] = None
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.modification_type):
@@ -1315,12 +1313,10 @@ class StrainModification(YAMLRoot):
         if self.description is not None and not isinstance(self.description, str):
             self.description = str(self.description)
 
-        if self.ontology_term is not None and not isinstance(self.ontology_term, str):
-            self.ontology_term = str(self.ontology_term)
+        if self.ontology_id is not None and not isinstance(self.ontology_id, str):
+            self.ontology_id = str(self.ontology_id)
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, EvidenceItem) else EvidenceItem(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         super().__post_init__(**kwargs)
 
@@ -1344,7 +1340,7 @@ class NutrientOverride(YAMLRoot):
     source: str = None
     ontology_id: Optional[str] = None
     is_sole_source: Optional[Union[bool, Bool]] = None
-    evidence: Optional[Union[Union[dict, "EvidenceItem"], list[Union[dict, "EvidenceItem"]]]] = empty_list()
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.role):
@@ -1363,9 +1359,7 @@ class NutrientOverride(YAMLRoot):
         if self.is_sole_source is not None and not isinstance(self.is_sole_source, Bool):
             self.is_sole_source = Bool(self.is_sole_source)
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, EvidenceItem) else EvidenceItem(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         super().__post_init__(**kwargs)
 
@@ -1540,18 +1534,22 @@ class MediaVariant(YAMLRoot):
     class_name: ClassVar[str] = "MediaVariant"
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.MediaVariant
 
-    name: str = None
+    name: Union[str, MediaVariantName] = None
+    relationship: Optional[Union[str, "MediaVariantRelationshipEnum"]] = None
     description: Optional[str] = None
     modifications: Optional[Union[str, list[str]]] = empty_list()
     purpose: Optional[str] = None
     supplier_info: Optional[Union[dict, "SupplierInfo"]] = None
-    evidence: Optional[Union[Union[dict, "EvidenceItem"], list[Union[dict, "EvidenceItem"]]]] = empty_list()
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.name):
             self.MissingRequiredField("name")
-        if not isinstance(self.name, str):
-            self.name = str(self.name)
+        if not isinstance(self.name, MediaVariantName):
+            self.name = MediaVariantName(self.name)
+
+        if self.relationship is not None and not isinstance(self.relationship, MediaVariantRelationshipEnum):
+            self.relationship = MediaVariantRelationshipEnum(self.relationship)
 
         if self.description is not None and not isinstance(self.description, str):
             self.description = str(self.description)
@@ -1566,9 +1564,7 @@ class MediaVariant(YAMLRoot):
         if self.supplier_info is not None and not isinstance(self.supplier_info, SupplierInfo):
             self.supplier_info = SupplierInfo(**as_dict(self.supplier_info))
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, EvidenceItem) else EvidenceItem(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         super().__post_init__(**kwargs)
 
@@ -1590,7 +1586,7 @@ class MediaRecipeReference(YAMLRoot):
     path: Optional[str] = None
     relationship: Optional[Union[str, "MediaVariantRelationshipEnum"]] = None
     notes: Optional[str] = None
-    evidence: Optional[Union[Union[dict, "EvidenceItem"], list[Union[dict, "EvidenceItem"]]]] = empty_list()
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self.id is not None and not isinstance(self.id, str):
@@ -1608,9 +1604,7 @@ class MediaRecipeReference(YAMLRoot):
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, EvidenceItem) else EvidenceItem(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         super().__post_init__(**kwargs)
 
@@ -1701,7 +1695,7 @@ class EvidenceItem(YAMLRoot):
     class_name: ClassVar[str] = "EvidenceItem"
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.EvidenceItem
 
-    reference: str = None
+    reference: Union[str, EvidenceItemReference] = None
     supports: Union[str, "EvidenceItemSupportEnum"] = None
     explanation: str = None
     snippet: Optional[str] = None
@@ -1709,8 +1703,8 @@ class EvidenceItem(YAMLRoot):
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.reference):
             self.MissingRequiredField("reference")
-        if not isinstance(self.reference, str):
-            self.reference = str(self.reference)
+        if not isinstance(self.reference, EvidenceItemReference):
+            self.reference = EvidenceItemReference(self.reference)
 
         if self._is_empty(self.supports):
             self.MissingRequiredField("supports")
@@ -1741,7 +1735,7 @@ class Dataset(YAMLRoot):
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.Dataset
 
     dataset_id: str = None
-    dataset_type: Optional[str] = None
+    dataset_type: Optional[Union[str, "DatasetTypeEnum"]] = None
     description: Optional[str] = None
     url: Optional[Union[str, URI]] = None
 
@@ -1751,8 +1745,8 @@ class Dataset(YAMLRoot):
         if not isinstance(self.dataset_id, str):
             self.dataset_id = str(self.dataset_id)
 
-        if self.dataset_type is not None and not isinstance(self.dataset_type, str):
-            self.dataset_type = str(self.dataset_type)
+        if self.dataset_type is not None and not isinstance(self.dataset_type, DatasetTypeEnum):
+            self.dataset_type = DatasetTypeEnum(self.dataset_type)
 
         if self.description is not None and not isinstance(self.description, str):
             self.description = str(self.description)
@@ -1825,7 +1819,7 @@ class SourceData(YAMLRoot):
     origin: str = None
     community_ids: Optional[Union[str, list[str]]] = empty_list()
     import_date: Optional[str] = None
-    evidence: Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]] = empty_list()
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]] = empty_dict()
     notes: Optional[str] = None
     mediaingredientmech_id: Optional[str] = None
 
@@ -1842,9 +1836,7 @@ class SourceData(YAMLRoot):
         if self.import_date is not None and not isinstance(self.import_date, str):
             self.import_date = str(self.import_date)
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, EvidenceItem) else EvidenceItem(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
@@ -1870,7 +1862,7 @@ class CofactorRequirement(YAMLRoot):
     cofactor: Union[dict, CofactorDescriptor] = None
     can_biosynthesize: Union[bool, Bool] = None
     confidence: Optional[float] = None
-    evidence: Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]] = empty_list()
+    evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]] = empty_dict()
     genes: Optional[Union[str, list[str]]] = empty_list()
 
     def __post_init__(self, *_: str, **kwargs: Any):
@@ -1887,9 +1879,7 @@ class CofactorRequirement(YAMLRoot):
         if self.confidence is not None and not isinstance(self.confidence, float):
             self.confidence = float(self.confidence)
 
-        if not isinstance(self.evidence, list):
-            self.evidence = [self.evidence] if self.evidence is not None else []
-        self.evidence = [v if isinstance(v, EvidenceItem) else EvidenceItem(**as_dict(v)) for v in self.evidence]
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         if not isinstance(self.genes, list):
             self.genes = [self.genes] if self.genes is not None else []
@@ -3055,6 +3045,142 @@ class GrowthModeEnum(EnumDefinitionImpl):
         description="""Cultivation mode under which a growth metric was measured. Distinct from MediaRecipe.culture_vessel which describes the vessel itself.""",
     )
 
+class MergeModeEnum(EnumDefinitionImpl):
+    """
+    Merge pipeline mode used by `MergeMetadata.merge_mode`.
+    """
+    CONSERVATIVE = PermissibleValue(
+        text="CONSERVATIVE",
+        description="Only merge on identical fingerprints.")
+    AGGRESSIVE = PermissibleValue(
+        text="AGGRESSIVE",
+        description="Merge across hydration / parent-ingredient equivalence.")
+    VARIANT_AWARE = PermissibleValue(
+        text="VARIANT_AWARE",
+        description="Use the hierarchy-aware variant fingerprint to merge.")
+
+    _defn = EnumDefinition(
+        name="MergeModeEnum",
+        description="Merge pipeline mode used by `MergeMetadata.merge_mode`.",
+    )
+
+class FingerprintModeEnum(EnumDefinitionImpl):
+    """
+    Algorithm used to compute the ingredient fingerprint.
+    """
+    ORIGINAL = PermissibleValue(
+        text="ORIGINAL",
+        description="Original ingredient set, no hierarchy resolution.")
+    CHEMICAL = PermissibleValue(
+        text="CHEMICAL",
+        description="Parent CHEBI IDs from MediaIngredientMech hierarchy.")
+    VARIANT = PermissibleValue(
+        text="VARIANT",
+        description="Parent CHEBI + variant type (HYDRATE / ANHYDROUS / SALT_FORM).")
+
+    _defn = EnumDefinition(
+        name="FingerprintModeEnum",
+        description="Algorithm used to compute the ingredient fingerprint.",
+    )
+
+class GrowthPhaseEnum(EnumDefinitionImpl):
+    """
+    Target microbial growth phase for a measurement / inoculum.
+    """
+    LAG = PermissibleValue(
+        text="LAG",
+        description="Lag phase (no significant net growth).")
+    EXPONENTIAL = PermissibleValue(
+        text="EXPONENTIAL",
+        description="Exponential / log phase.")
+    STATIONARY = PermissibleValue(
+        text="STATIONARY",
+        description="Stationary phase.")
+    DEATH = PermissibleValue(
+        text="DEATH",
+        description="Death / decline phase.")
+    UNSPECIFIED = PermissibleValue(
+        text="UNSPECIFIED",
+        description="Phase not stated by the source.")
+
+    _defn = EnumDefinition(
+        name="GrowthPhaseEnum",
+        description="Target microbial growth phase for a measurement / inoculum.",
+    )
+
+class TermMatchTypeEnum(EnumDefinitionImpl):
+    """
+    Provenance of an ontology-term mapping (`Term.match_type`). Values use the lowercase-snake convention emitted by
+    upstream grounding pipelines (kg-microbe, manual curation). Three values are observed in the current corpus
+    (kg_fallback, exact_match, synonym_match_ambiguous); the others are reserved for explicit curator use.
+    """
+    exact_match = PermissibleValue(
+        text="exact_match",
+        description="Exact label / synonym match.")
+    kg_fallback = PermissibleValue(
+        text="kg_fallback",
+        description="Inferred from the kg-microbe ingredient graph as a fallback.")
+    synonym_match_ambiguous = PermissibleValue(
+        text="synonym_match_ambiguous",
+        description="Multiple equally-good synonym matches; mapping is uncertain.")
+    manual_curated = PermissibleValue(
+        text="manual_curated",
+        description="Human curator selected this term.")
+    automated_expert_mapping = PermissibleValue(
+        text="automated_expert_mapping",
+        description="Produced by an automated expert-mapping pipeline (e.g. LLM-assisted).")
+    fuzzy = PermissibleValue(
+        text="fuzzy",
+        description="Fuzzy / approximate string match.")
+
+    _defn = EnumDefinition(
+        name="TermMatchTypeEnum",
+        description="""Provenance of an ontology-term mapping (`Term.match_type`). Values use the lowercase-snake convention emitted by upstream grounding pipelines (kg-microbe, manual curation). Three values are observed in the current corpus (kg_fallback, exact_match, synonym_match_ambiguous); the others are reserved for explicit curator use.""",
+    )
+
+class SynonymTypeEnum(EnumDefinitionImpl):
+    """
+    Type of synonym relationship for an IngredientSynonym.
+    """
+    EXACT = PermissibleValue(
+        text="EXACT",
+        description="Exact synonym.")
+    RELATED = PermissibleValue(
+        text="RELATED",
+        description="Related but not interchangeable.")
+    BROAD = PermissibleValue(
+        text="BROAD",
+        description="Broader concept.")
+    NARROW = PermissibleValue(
+        text="NARROW",
+        description="Narrower concept.")
+    ABBREVIATION = PermissibleValue(
+        text="ABBREVIATION",
+        description="Abbreviation or shorthand (e.g. \"TSB\" for \"Tryptic Soy Broth\").")
+
+    _defn = EnumDefinition(
+        name="SynonymTypeEnum",
+        description="Type of synonym relationship for an IngredientSynonym.",
+    )
+
+class DatasetTypeEnum(EnumDefinitionImpl):
+    """
+    Type of omics dataset linked by `Dataset.dataset_type`.
+    """
+    GENOMICS = PermissibleValue(text="GENOMICS")
+    TRANSCRIPTOMICS = PermissibleValue(text="TRANSCRIPTOMICS")
+    PROTEOMICS = PermissibleValue(text="PROTEOMICS")
+    METABOLOMICS = PermissibleValue(text="METABOLOMICS")
+    FLUXOMICS = PermissibleValue(text="FLUXOMICS")
+    PHENOMICS = PermissibleValue(text="PHENOMICS")
+    MULTI_OMICS = PermissibleValue(text="MULTI_OMICS")
+    OTHER = PermissibleValue(text="OTHER")
+
+    _defn = EnumDefinition(
+        name="DatasetTypeEnum",
+        description="Type of omics dataset linked by `Dataset.dataset_type`.",
+    )
+
 # Slots
 class slots:
     pass
@@ -3113,7 +3239,7 @@ slots.mediaRecipe__description = Slot(uri=CULTUREMECH.description, name="mediaRe
                    model_uri=CULTUREMECH.mediaRecipe__description, domain=None, range=Optional[str])
 
 slots.mediaRecipe__target_organisms = Slot(uri=CULTUREMECH.target_organisms, name="mediaRecipe__target_organisms", curie=CULTUREMECH.curie('target_organisms'),
-                   model_uri=CULTUREMECH.mediaRecipe__target_organisms, domain=None, range=Optional[Union[Union[dict, OrganismDescriptor], list[Union[dict, OrganismDescriptor]]]])
+                   model_uri=CULTUREMECH.mediaRecipe__target_organisms, domain=None, range=Optional[Union[dict[Union[str, OrganismDescriptorPreferredTerm], Union[dict, OrganismDescriptor]], list[Union[dict, OrganismDescriptor]]]])
 
 slots.mediaRecipe__source_environment = Slot(uri=CULTUREMECH.source_environment, name="mediaRecipe__source_environment", curie=CULTUREMECH.curie('source_environment'),
                    model_uri=CULTUREMECH.mediaRecipe__source_environment, domain=None, range=Optional[Union[Union[dict, SourceEnvironmentDescriptor], list[Union[dict, SourceEnvironmentDescriptor]]]])
@@ -3176,7 +3302,7 @@ slots.mediaRecipe__applications = Slot(uri=CULTUREMECH.applications, name="media
                    model_uri=CULTUREMECH.mediaRecipe__applications, domain=None, range=Optional[Union[str, list[str]]])
 
 slots.mediaRecipe__variants = Slot(uri=CULTUREMECH.variants, name="mediaRecipe__variants", curie=CULTUREMECH.curie('variants'),
-                   model_uri=CULTUREMECH.mediaRecipe__variants, domain=None, range=Optional[Union[Union[dict, MediaVariant], list[Union[dict, MediaVariant]]]])
+                   model_uri=CULTUREMECH.mediaRecipe__variants, domain=None, range=Optional[Union[dict[Union[str, MediaVariantName], Union[dict, MediaVariant]], list[Union[dict, MediaVariant]]]])
 
 slots.mediaRecipe__parent_media = Slot(uri=CULTUREMECH.parent_media, name="mediaRecipe__parent_media", curie=CULTUREMECH.curie('parent_media'),
                    model_uri=CULTUREMECH.mediaRecipe__parent_media, domain=None, range=Optional[Union[dict, MediaRecipeReference]])
@@ -3197,7 +3323,7 @@ slots.mediaRecipe__notes = Slot(uri=CULTUREMECH.notes, name="mediaRecipe__notes"
                    model_uri=CULTUREMECH.mediaRecipe__notes, domain=None, range=Optional[str])
 
 slots.mediaRecipe__evidence = Slot(uri=CULTUREMECH.evidence, name="mediaRecipe__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.mediaRecipe__evidence, domain=None, range=Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]])
+                   model_uri=CULTUREMECH.mediaRecipe__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.mediaRecipe__datasets = Slot(uri=CULTUREMECH.datasets, name="mediaRecipe__datasets", curie=CULTUREMECH.curie('datasets'),
                    model_uri=CULTUREMECH.mediaRecipe__datasets, domain=None, range=Optional[Union[Union[dict, Dataset], list[Union[dict, Dataset]]]])
@@ -3291,7 +3417,7 @@ slots.mergeMetadata__merge_version = Slot(uri=CULTUREMECH.merge_version, name="m
                    model_uri=CULTUREMECH.mergeMetadata__merge_version, domain=None, range=Optional[str])
 
 slots.mergeMetadata__merge_mode = Slot(uri=CULTUREMECH.merge_mode, name="mergeMetadata__merge_mode", curie=CULTUREMECH.curie('merge_mode'),
-                   model_uri=CULTUREMECH.mergeMetadata__merge_mode, domain=None, range=Optional[str])
+                   model_uri=CULTUREMECH.mergeMetadata__merge_mode, domain=None, range=Optional[Union[str, "MergeModeEnum"]])
 
 slots.mergeMetadata__merge_reason = Slot(uri=CULTUREMECH.merge_reason, name="mergeMetadata__merge_reason", curie=CULTUREMECH.curie('merge_reason'),
                    model_uri=CULTUREMECH.mergeMetadata__merge_reason, domain=None, range=Optional[Union[str, "MergeReasonEnum"]])
@@ -3303,7 +3429,7 @@ slots.mergeMetadata__hierarchy_conflicts = Slot(uri=CULTUREMECH.hierarchy_confli
                    model_uri=CULTUREMECH.mergeMetadata__hierarchy_conflicts, domain=None, range=Optional[Union[str, list[str]]])
 
 slots.mergeMetadata__fingerprint_mode = Slot(uri=CULTUREMECH.fingerprint_mode, name="mergeMetadata__fingerprint_mode", curie=CULTUREMECH.curie('fingerprint_mode'),
-                   model_uri=CULTUREMECH.mergeMetadata__fingerprint_mode, domain=None, range=Optional[str])
+                   model_uri=CULTUREMECH.mergeMetadata__fingerprint_mode, domain=None, range=Optional[Union[str, "FingerprintModeEnum"]])
 
 slots.term__id = Slot(uri=CULTUREMECH.id, name="term__id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.term__id, domain=None, range=URIRef)
@@ -3315,7 +3441,7 @@ slots.term__confidence = Slot(uri=CULTUREMECH.confidence, name="term__confidence
                    model_uri=CULTUREMECH.term__confidence, domain=None, range=Optional[float])
 
 slots.term__match_type = Slot(uri=CULTUREMECH.match_type, name="term__match_type", curie=CULTUREMECH.curie('match_type'),
-                   model_uri=CULTUREMECH.term__match_type, domain=None, range=Optional[str])
+                   model_uri=CULTUREMECH.term__match_type, domain=None, range=Optional[Union[str, "TermMatchTypeEnum"]])
 
 slots.mediaTypeDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="mediaTypeDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
                    model_uri=CULTUREMECH.mediaTypeDescriptor__preferred_term, domain=None, range=str)
@@ -3345,7 +3471,7 @@ slots.ingredientDescriptor__variant_type = Slot(uri=CULTUREMECH.variant_type, na
                    model_uri=CULTUREMECH.ingredientDescriptor__variant_type, domain=None, range=Optional[Union[str, "VariantTypeEnum"]])
 
 slots.ingredientDescriptor__concentration = Slot(uri=CULTUREMECH.concentration, name="ingredientDescriptor__concentration", curie=CULTUREMECH.curie('concentration'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__concentration, domain=None, range=Union[dict, ConcentrationValue])
+                   model_uri=CULTUREMECH.ingredientDescriptor__concentration, domain=None, range=Optional[Union[dict, ConcentrationValue]])
 
 slots.ingredientDescriptor__modifier = Slot(uri=CULTUREMECH.modifier, name="ingredientDescriptor__modifier", curie=CULTUREMECH.curie('modifier'),
                    model_uri=CULTUREMECH.ingredientDescriptor__modifier, domain=None, range=Optional[Union[str, "ModifierEnum"]])
@@ -3381,7 +3507,7 @@ slots.ingredientDescriptor__cofactors_provided = Slot(uri=CULTUREMECH.cofactors_
                    model_uri=CULTUREMECH.ingredientDescriptor__cofactors_provided, domain=None, range=Optional[Union[Union[dict, CofactorDescriptor], list[Union[dict, CofactorDescriptor]]]])
 
 slots.ingredientDescriptor__evidence = Slot(uri=CULTUREMECH.evidence, name="ingredientDescriptor__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__evidence, domain=None, range=Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]])
+                   model_uri=CULTUREMECH.ingredientDescriptor__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.solutionDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="solutionDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
                    model_uri=CULTUREMECH.solutionDescriptor__preferred_term, domain=None, range=str)
@@ -3417,7 +3543,7 @@ slots.solutionDescriptor__shelf_life = Slot(uri=CULTUREMECH.shelf_life, name="so
                    model_uri=CULTUREMECH.solutionDescriptor__shelf_life, domain=None, range=Optional[str])
 
 slots.organismDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="organismDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
-                   model_uri=CULTUREMECH.organismDescriptor__preferred_term, domain=None, range=str)
+                   model_uri=CULTUREMECH.organismDescriptor__preferred_term, domain=None, range=URIRef)
 
 slots.organismDescriptor__term = Slot(uri=CULTUREMECH.term, name="organismDescriptor__term", curie=CULTUREMECH.curie('term'),
                    model_uri=CULTUREMECH.organismDescriptor__term, domain=None, range=Optional[Union[dict, OrganismTerm]])
@@ -3433,7 +3559,7 @@ slots.organismDescriptor__strain = Slot(uri=CULTUREMECH.strain, name="organismDe
                    model_uri=CULTUREMECH.organismDescriptor__strain, domain=None, range=Optional[str])
 
 slots.organismDescriptor__growth_phase = Slot(uri=CULTUREMECH.growth_phase, name="organismDescriptor__growth_phase", curie=CULTUREMECH.curie('growth_phase'),
-                   model_uri=CULTUREMECH.organismDescriptor__growth_phase, domain=None, range=Optional[str])
+                   model_uri=CULTUREMECH.organismDescriptor__growth_phase, domain=None, range=Optional[Union[str, "GrowthPhaseEnum"]])
 
 slots.organismDescriptor__growth_metrics = Slot(uri=CULTUREMECH.growth_metrics, name="organismDescriptor__growth_metrics", curie=CULTUREMECH.curie('growth_metrics'),
                    model_uri=CULTUREMECH.organismDescriptor__growth_metrics, domain=None, range=Optional[Union[Union[dict, GrowthMetrics], list[Union[dict, GrowthMetrics]]]])
@@ -3454,7 +3580,7 @@ slots.organismDescriptor__transporters = Slot(uri=CULTUREMECH.transporters, name
                    model_uri=CULTUREMECH.organismDescriptor__transporters, domain=None, range=Optional[Union[Union[dict, TransporterAnnotation], list[Union[dict, TransporterAnnotation]]]])
 
 slots.organismDescriptor__evidence = Slot(uri=CULTUREMECH.evidence, name="organismDescriptor__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.organismDescriptor__evidence, domain=None, range=Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]])
+                   model_uri=CULTUREMECH.organismDescriptor__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.organismDescriptor__strain_modifications = Slot(uri=CULTUREMECH.strain_modifications, name="organismDescriptor__strain_modifications", curie=CULTUREMECH.curie('strain_modifications'),
                    model_uri=CULTUREMECH.organismDescriptor__strain_modifications, domain=None, range=Optional[Union[Union[dict, StrainModification], list[Union[dict, StrainModification]]]])
@@ -3514,7 +3640,7 @@ slots.ingredientSynonym__synonym_text = Slot(uri=CULTUREMECH.synonym_text, name=
                    model_uri=CULTUREMECH.ingredientSynonym__synonym_text, domain=None, range=str)
 
 slots.ingredientSynonym__synonym_type = Slot(uri=CULTUREMECH.synonym_type, name="ingredientSynonym__synonym_type", curie=CULTUREMECH.curie('synonym_type'),
-                   model_uri=CULTUREMECH.ingredientSynonym__synonym_type, domain=None, range=Optional[str])
+                   model_uri=CULTUREMECH.ingredientSynonym__synonym_type, domain=None, range=Optional[Union[str, "SynonymTypeEnum"]])
 
 slots.ingredientCurationMetadata__mapping_quality = Slot(uri=CULTUREMECH.mapping_quality, name="ingredientCurationMetadata__mapping_quality", curie=CULTUREMECH.curie('mapping_quality'),
                    model_uri=CULTUREMECH.ingredientCurationMetadata__mapping_quality, domain=None, range=Optional[str])
@@ -3566,7 +3692,7 @@ slots.growthMetrics__measurement_conditions = Slot(uri=CULTUREMECH.measurement_c
                    model_uri=CULTUREMECH.growthMetrics__measurement_conditions, domain=None, range=Optional[str])
 
 slots.growthMetrics__evidence = Slot(uri=CULTUREMECH.evidence, name="growthMetrics__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.growthMetrics__evidence, domain=None, range=Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]])
+                   model_uri=CULTUREMECH.growthMetrics__evidence, domain=None, range=Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]])
 
 slots.growthMetrics__is_max_attainment = Slot(uri=CULTUREMECH.is_max_attainment, name="growthMetrics__is_max_attainment", curie=CULTUREMECH.curie('is_max_attainment'),
                    model_uri=CULTUREMECH.growthMetrics__is_max_attainment, domain=None, range=Optional[Union[bool, Bool]])
@@ -3595,12 +3721,12 @@ slots.perturbationContext__level = Slot(uri=CULTUREMECH.level, name="perturbatio
 slots.perturbationContext__level_unit = Slot(uri=CULTUREMECH.level_unit, name="perturbationContext__level_unit", curie=CULTUREMECH.curie('level_unit'),
                    model_uri=CULTUREMECH.perturbationContext__level_unit, domain=None, range=Optional[str])
 
-slots.perturbationContext__ontology_term = Slot(uri=CULTUREMECH.ontology_term, name="perturbationContext__ontology_term", curie=CULTUREMECH.curie('ontology_term'),
-                   model_uri=CULTUREMECH.perturbationContext__ontology_term, domain=None, range=Optional[str],
+slots.perturbationContext__ontology_id = Slot(uri=CULTUREMECH.ontology_id, name="perturbationContext__ontology_id", curie=CULTUREMECH.curie('ontology_id'),
+                   model_uri=CULTUREMECH.perturbationContext__ontology_id, domain=None, range=Optional[str],
                    pattern=re.compile(r'^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$'))
 
 slots.perturbationContext__evidence = Slot(uri=CULTUREMECH.evidence, name="perturbationContext__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.perturbationContext__evidence, domain=None, range=Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]])
+                   model_uri=CULTUREMECH.perturbationContext__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.strainModification__modification_type = Slot(uri=CULTUREMECH.modification_type, name="strainModification__modification_type", curie=CULTUREMECH.curie('modification_type'),
                    model_uri=CULTUREMECH.strainModification__modification_type, domain=None, range=Union[str, "StrainModificationTypeEnum"])
@@ -3611,12 +3737,12 @@ slots.strainModification__target = Slot(uri=CULTUREMECH.target, name="strainModi
 slots.strainModification__description = Slot(uri=CULTUREMECH.description, name="strainModification__description", curie=CULTUREMECH.curie('description'),
                    model_uri=CULTUREMECH.strainModification__description, domain=None, range=Optional[str])
 
-slots.strainModification__ontology_term = Slot(uri=CULTUREMECH.ontology_term, name="strainModification__ontology_term", curie=CULTUREMECH.curie('ontology_term'),
-                   model_uri=CULTUREMECH.strainModification__ontology_term, domain=None, range=Optional[str],
+slots.strainModification__ontology_id = Slot(uri=CULTUREMECH.ontology_id, name="strainModification__ontology_id", curie=CULTUREMECH.curie('ontology_id'),
+                   model_uri=CULTUREMECH.strainModification__ontology_id, domain=None, range=Optional[str],
                    pattern=re.compile(r'^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$'))
 
 slots.strainModification__evidence = Slot(uri=CULTUREMECH.evidence, name="strainModification__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.strainModification__evidence, domain=None, range=Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]])
+                   model_uri=CULTUREMECH.strainModification__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.nutrientOverride__role = Slot(uri=CULTUREMECH.role, name="nutrientOverride__role", curie=CULTUREMECH.curie('role'),
                    model_uri=CULTUREMECH.nutrientOverride__role, domain=None, range=Union[str, "NutrientRoleEnum"])
@@ -3632,7 +3758,7 @@ slots.nutrientOverride__is_sole_source = Slot(uri=CULTUREMECH.is_sole_source, na
                    model_uri=CULTUREMECH.nutrientOverride__is_sole_source, domain=None, range=Optional[Union[bool, Bool]])
 
 slots.nutrientOverride__evidence = Slot(uri=CULTUREMECH.evidence, name="nutrientOverride__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.nutrientOverride__evidence, domain=None, range=Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]])
+                   model_uri=CULTUREMECH.nutrientOverride__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.temperatureValue__value = Slot(uri=CULTUREMECH.value, name="temperatureValue__value", curie=CULTUREMECH.curie('value'),
                    model_uri=CULTUREMECH.temperatureValue__value, domain=None, range=float)
@@ -3692,7 +3818,10 @@ slots.storageConditions__notes = Slot(uri=CULTUREMECH.notes, name="storageCondit
                    model_uri=CULTUREMECH.storageConditions__notes, domain=None, range=Optional[str])
 
 slots.mediaVariant__name = Slot(uri=CULTUREMECH.name, name="mediaVariant__name", curie=CULTUREMECH.curie('name'),
-                   model_uri=CULTUREMECH.mediaVariant__name, domain=None, range=str)
+                   model_uri=CULTUREMECH.mediaVariant__name, domain=None, range=URIRef)
+
+slots.mediaVariant__relationship = Slot(uri=CULTUREMECH.relationship, name="mediaVariant__relationship", curie=CULTUREMECH.curie('relationship'),
+                   model_uri=CULTUREMECH.mediaVariant__relationship, domain=None, range=Optional[Union[str, "MediaVariantRelationshipEnum"]])
 
 slots.mediaVariant__description = Slot(uri=CULTUREMECH.description, name="mediaVariant__description", curie=CULTUREMECH.curie('description'),
                    model_uri=CULTUREMECH.mediaVariant__description, domain=None, range=Optional[str])
@@ -3707,7 +3836,7 @@ slots.mediaVariant__supplier_info = Slot(uri=CULTUREMECH.supplier_info, name="me
                    model_uri=CULTUREMECH.mediaVariant__supplier_info, domain=None, range=Optional[Union[dict, SupplierInfo]])
 
 slots.mediaVariant__evidence = Slot(uri=CULTUREMECH.evidence, name="mediaVariant__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.mediaVariant__evidence, domain=None, range=Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]])
+                   model_uri=CULTUREMECH.mediaVariant__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.mediaRecipeReference__id = Slot(uri=CULTUREMECH.id, name="mediaRecipeReference__id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.mediaRecipeReference__id, domain=None, range=Optional[str],
@@ -3727,7 +3856,7 @@ slots.mediaRecipeReference__notes = Slot(uri=CULTUREMECH.notes, name="mediaRecip
                    model_uri=CULTUREMECH.mediaRecipeReference__notes, domain=None, range=Optional[str])
 
 slots.mediaRecipeReference__evidence = Slot(uri=CULTUREMECH.evidence, name="mediaRecipeReference__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.mediaRecipeReference__evidence, domain=None, range=Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]])
+                   model_uri=CULTUREMECH.mediaRecipeReference__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.supplierInfo__supplier_name = Slot(uri=CULTUREMECH.supplier_name, name="supplierInfo__supplier_name", curie=CULTUREMECH.curie('supplier_name'),
                    model_uri=CULTUREMECH.supplierInfo__supplier_name, domain=None, range=str)
@@ -3757,7 +3886,7 @@ slots.publicationReference__notes = Slot(uri=CULTUREMECH.notes, name="publicatio
                    model_uri=CULTUREMECH.publicationReference__notes, domain=None, range=Optional[str])
 
 slots.evidenceItem__reference = Slot(uri=CULTUREMECH.reference, name="evidenceItem__reference", curie=CULTUREMECH.curie('reference'),
-                   model_uri=CULTUREMECH.evidenceItem__reference, domain=None, range=str)
+                   model_uri=CULTUREMECH.evidenceItem__reference, domain=None, range=URIRef)
 
 slots.evidenceItem__supports = Slot(uri=CULTUREMECH.supports, name="evidenceItem__supports", curie=CULTUREMECH.curie('supports'),
                    model_uri=CULTUREMECH.evidenceItem__supports, domain=None, range=Union[str, "EvidenceItemSupportEnum"])
@@ -3772,7 +3901,7 @@ slots.dataset__dataset_id = Slot(uri=CULTUREMECH.dataset_id, name="dataset__data
                    model_uri=CULTUREMECH.dataset__dataset_id, domain=None, range=str)
 
 slots.dataset__dataset_type = Slot(uri=CULTUREMECH.dataset_type, name="dataset__dataset_type", curie=CULTUREMECH.curie('dataset_type'),
-                   model_uri=CULTUREMECH.dataset__dataset_type, domain=None, range=Optional[str])
+                   model_uri=CULTUREMECH.dataset__dataset_type, domain=None, range=Optional[Union[str, "DatasetTypeEnum"]])
 
 slots.dataset__description = Slot(uri=CULTUREMECH.description, name="dataset__description", curie=CULTUREMECH.curie('description'),
                    model_uri=CULTUREMECH.dataset__description, domain=None, range=Optional[str])
@@ -3808,7 +3937,7 @@ slots.sourceData__import_date = Slot(uri=CULTUREMECH.import_date, name="sourceDa
                    model_uri=CULTUREMECH.sourceData__import_date, domain=None, range=Optional[str])
 
 slots.sourceData__evidence = Slot(uri=CULTUREMECH.evidence, name="sourceData__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.sourceData__evidence, domain=None, range=Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]])
+                   model_uri=CULTUREMECH.sourceData__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.sourceData__notes = Slot(uri=CULTUREMECH.notes, name="sourceData__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.sourceData__notes, domain=None, range=Optional[str])
@@ -3826,7 +3955,7 @@ slots.cofactorRequirement__confidence = Slot(uri=CULTUREMECH.confidence, name="c
                    model_uri=CULTUREMECH.cofactorRequirement__confidence, domain=None, range=Optional[float])
 
 slots.cofactorRequirement__evidence = Slot(uri=CULTUREMECH.evidence, name="cofactorRequirement__evidence", curie=CULTUREMECH.curie('evidence'),
-                   model_uri=CULTUREMECH.cofactorRequirement__evidence, domain=None, range=Optional[Union[Union[dict, EvidenceItem], list[Union[dict, EvidenceItem]]]])
+                   model_uri=CULTUREMECH.cofactorRequirement__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.cofactorRequirement__genes = Slot(uri=CULTUREMECH.genes, name="cofactorRequirement__genes", curie=CULTUREMECH.curie('genes'),
                    model_uri=CULTUREMECH.cofactorRequirement__genes, domain=None, range=Optional[Union[str, list[str]]])

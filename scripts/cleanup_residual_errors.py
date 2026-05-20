@@ -27,12 +27,14 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import datetime
 import sys
 from pathlib import Path
 from typing import Any
 
 import yaml
+
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+from culturemech.curate import record_curation_event  # noqa: E402
 
 CURATOR = "cleanup_residual_errors.py"
 ACTION = "CLEANUP_RESIDUAL_ERRORS"
@@ -44,10 +46,6 @@ UNIT_CONVERSIONS = {
     "G_PER_100ML": ("G_PER_L", 10.0),
     "ML_PER_40ML": ("PERCENT_V_V", 2.5),
 }
-
-
-def now_iso() -> str:
-    return datetime.datetime.now(datetime.timezone.utc).isoformat()
 
 
 def _to_float(value: Any) -> float | None:
@@ -171,13 +169,7 @@ def migrate_one(path: Path, dry_run: bool) -> dict[str, int] | None:
     if not counts:
         return None
     notes = "; ".join(f"{k}={v}" for k, v in counts.items())
-    history = data.setdefault("curation_history", [])
-    history.append({
-        "timestamp": now_iso(),
-        "curator": CURATOR,
-        "action": ACTION,
-        "notes": notes,
-    })
+    record_curation_event(data, curator=CURATOR, action=ACTION, notes=notes)
     if not dry_run:
         with path.open("w") as f:
             yaml.safe_dump(data, f, sort_keys=False, allow_unicode=True, width=80)

@@ -12,6 +12,16 @@ from typing import Dict, List
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+from culturemech.curate import record_curation_event  # noqa: E402
+from culturemech.validation import (  # noqa: E402
+    ValidationFailedError,
+    write_validated_recipe,
+)
+
+CURATOR = "fix_schema_inconsistencies.py"
+ACTION = "FIXED_SCHEMA_INCONSISTENCIES"
+
 
 def fix_ingredient_schema(ingredient: Dict) -> Dict:
     """Fix ingredient to match LinkML schema.
@@ -146,10 +156,23 @@ def fix_recipe_file(recipe_path: Path, dry_run: bool = False) -> tuple[bool, Lis
             # No issues found
             return False, []
 
-        # Write fixed recipe
+        # Record provenance before write so the audit trail is preserved.
+        record_curation_event(
+            fixed_recipe,
+            curator=CURATOR,
+            action=ACTION,
+            notes=f"fixed {len(issues)} schema issue(s)",
+            changes="; ".join(issues)[:500],
+        )
+
+        # Write fixed recipe. write_validated_recipe runs closed-schema
+        # validation; if the "fix" didn't actually produce a valid record,
+        # we surface that loudly instead of writing more bad data.
         if not dry_run:
-            with open(recipe_path, 'w', encoding='utf-8') as f:
-                yaml.dump(fixed_recipe, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+            try:
+                write_validated_recipe(fixed_recipe, recipe_path)
+            except ValidationFailedError as exc:
+                return False, issues + [f"REFUSED_TO_WRITE: {exc.summary()[:400]}"]
 
         return True, issues
 

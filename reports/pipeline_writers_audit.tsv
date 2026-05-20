@@ -6,13 +6,14 @@ scripts/analyze_metal_concentrations.py	yes	no	no	no	no
 scripts/apply_edison_results.py	yes	yes	yes	no	no
 scripts/apply_growth_evidence.py	yes	yes	no	no	yes
 scripts/apply_media_variant_links.py	yes	no	no	no	yes
-scripts/assign_culturemech_ids.py	yes	yes	yes	no	no
+scripts/assign_culturemech_ids.py	yes	yes	yes	no	yes
 scripts/assign_taxonomy.py	yes	no	yes	no	no
 scripts/audit_writers.py	yes	yes	yes	yes	no
 scripts/build_media_content_review_manifest.py	yes	no	no	no	yes
 scripts/build_media_growth_review_manifest.py	yes	no	no	no	no
 scripts/cleanup_media_quality.py	yes	yes	no	no	no
 scripts/cleanup_recipe_ingredients.py	yes	no	yes	no	yes
+scripts/cleanup_residual_errors.py	yes	yes	yes	no	no
 scripts/compare_fingerprints.py	yes	no	no	no	no
 scripts/create_recipe_from_input.py	yes	yes	yes	no	no
 scripts/enrich_genome_ids.py	yes	no	no	no	yes
@@ -20,7 +21,7 @@ scripts/enrich_solutions_with_chebi.py	yes	no	yes	no	no
 scripts/enrich_with_chebi.py	yes	yes	yes	no	yes
 scripts/enrich_with_kg_microbe_matches.py	yes	yes	yes	no	no
 scripts/fetch_pubmed_abstracts.py	yes	no	yes	no	yes
-scripts/fix_schema_inconsistencies.py	yes	no	yes	no	no
+scripts/fix_schema_inconsistencies.py	yes	yes	yes	yes	no
 scripts/fix_validation_errors.py	yes	no	yes	yes	yes
 scripts/generate_sssom_mappings.py	yes	no	no	no	yes
 scripts/import_from_communitymech.py	yes	yes	yes	no	no
@@ -28,7 +29,11 @@ scripts/import_from_culturebotht.py	yes	yes	yes	no	no
 scripts/import_mediadive_solutions.py	yes	no	yes	no	no
 scripts/infer_ph_values.py	yes	yes	yes	no	no
 scripts/infer_sterilization_method.py	yes	yes	yes	no	no
+scripts/migrate_data_quality_flags.py	yes	yes	yes	no	no
 scripts/migrate_growth_metrics_v2.py	yes	no	no	no	no
+scripts/migrate_legacy_fields.py	yes	yes	yes	no	no
+scripts/migrate_ontology_term_rename.py	yes	yes	yes	no	no
+scripts/migrate_preparation_steps.py	yes	yes	yes	no	no
 scripts/migrate_solutions_from_ingredients.py	yes	yes	yes	no	no
 scripts/monitor_merges.py	yes	no	no	no	no
 scripts/normalize_media_names_to_snake_case.py	yes	yes	yes	no	no
