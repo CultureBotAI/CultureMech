@@ -23,6 +23,7 @@ import argparse
 import csv
 import os
 import re
+import subprocess
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
@@ -34,6 +35,7 @@ from linkml.validator.plugins import JsonschemaValidationPlugin
 from linkml.validator.report import Severity
 
 SCHEMA_PATH = Path("src/culturemech/schema/culturemech.yaml")
+OAK_CONFIG_PATH = Path("conf/oak_config.yaml")
 DEFAULT_ROOTS = [Path(f"data/normalized_yaml/{sub}") for sub in
                  ("algae", "bacterial", "fungal", "archaea", "specialized")]
 
@@ -147,11 +149,83 @@ def validate_one(path: Path) -> list[dict]:
         category, detail = classify(result.message)
         rows.append({
             "file": str(path),
+            "layer": "schema",
             "category": category,
             "detail": detail,
             "path": result.instance_index or "",
             "message": result.message[:300],
         })
+    return rows
+
+
+def _run_external_validator(cmd: list[str], path: Path, layer: str) -> list[dict]:
+    """Run a CLI validator on a single file and capture ERROR lines into rows.
+
+    Both `linkml-term-validator` and `linkml-reference-validator` emit lines
+    that start with the LinkML severity marker (`[ERROR] ...` or `ERROR:...`).
+    We capture anything matching that and turn it into a row.
+    """
+    try:
+        proc = subprocess.run(
+            cmd, capture_output=True, text=True, timeout=120, check=False
+        )
+    except subprocess.TimeoutExpired:
+        return [{
+            "file": str(path), "layer": layer, "category": "validator_timeout",
+            "detail": "", "path": "", "message": f"{layer} validator timed out",
+        }]
+    out = (proc.stdout or "") + "\n" + (proc.stderr or "")
+    rows: list[dict] = []
+    for line in out.splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if stripped.startswith("[ERROR]") or stripped.startswith("ERROR:") or "ERROR" in stripped.split()[:2]:
+            msg = stripped[:300]
+            rows.append({
+                "file": str(path), "layer": layer, "category": "external_error",
+                "detail": "", "path": "", "message": msg,
+            })
+    if proc.returncode != 0 and not rows:
+        # Validator exited nonzero but emitted no parseable ERROR line; surface anyway.
+        rows.append({
+            "file": str(path), "layer": layer, "category": "external_error",
+            "detail": f"rc={proc.returncode}", "path": "",
+            "message": (out.strip()[:300] or f"{layer} validator returned {proc.returncode}"),
+        })
+    return rows
+
+
+def validate_terms(path: Path) -> list[dict]:
+    return _run_external_validator(
+        [
+            "uv", "run", "linkml-term-validator", "validate-data", str(path),
+            "-s", str(SCHEMA_PATH), "-t", "MediaRecipe",
+            "--labels", "-c", str(OAK_CONFIG_PATH),
+        ],
+        path, "terms",
+    )
+
+
+def validate_references(path: Path) -> list[dict]:
+    return _run_external_validator(
+        [
+            "uv", "run", "linkml-reference-validator", "validate", "data", str(path),
+            "--schema", str(SCHEMA_PATH), "--target-class", "MediaRecipe",
+        ],
+        path, "references",
+    )
+
+
+def validate_one_layered(path: Path, layers: tuple[str, ...]) -> list[dict]:
+    """Run the configured set of validation layers on a single file."""
+    rows: list[dict] = []
+    if "schema" in layers:
+        rows.extend(validate_one(path))
+    if "terms" in layers:
+        rows.extend(validate_terms(path))
+    if "references" in layers:
+        rows.extend(validate_references(path))
     return rows
 
 
@@ -179,7 +253,19 @@ def main() -> int:
                         help="Exit non-zero policy. 'error' (default) exits 1 if any ERROR row was emitted.")
     parser.add_argument("--quiet", action="store_true",
                         help="Suppress per-file progress dots.")
+    parser.add_argument("--layer", default="schema",
+                        choices=("schema", "terms", "references", "all"),
+                        help="Validation layer(s) to run. 'schema' (default) is the in-process "
+                             "closed-schema check (fast). 'terms' and 'references' shell out to "
+                             "linkml-term-validator / linkml-reference-validator per file and are "
+                             "much slower at corpus scale. 'all' runs all three.")
     args = parser.parse_args()
+
+    layers = (
+        ("schema", "terms", "references")
+        if args.layer == "all"
+        else (args.layer,)
+    )
 
     roots = args.paths or DEFAULT_ROOTS
     files = iter_yaml_files(roots)
@@ -191,12 +277,13 @@ def main() -> int:
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
 
-    print(f"Validating {len(files)} files with {args.workers} workers; schema={SCHEMA_PATH}",
+    print(f"Validating {len(files)} files with {args.workers} workers; "
+          f"layers={','.join(layers)}; schema={SCHEMA_PATH}",
           file=sys.stderr)
 
     all_rows: list[dict] = []
     with ProcessPoolExecutor(max_workers=args.workers) as pool:
-        futures = {pool.submit(validate_one, p): p for p in files}
+        futures = {pool.submit(validate_one_layered, p, layers): p for p in files}
         done = 0
         for fut in as_completed(futures):
             done += 1
@@ -207,11 +294,11 @@ def main() -> int:
                       file=sys.stderr)
 
     # Sort for deterministic TSV output (avoids noisy diffs from worker scheduling).
-    all_rows.sort(key=lambda r: (r["file"], r["path"], r["category"], r["message"]))
+    all_rows.sort(key=lambda r: (r["file"], r["layer"], r["path"], r["category"], r["message"]))
     with args.out.open("w", newline="") as fh:
         writer = csv.DictWriter(
             fh,
-            fieldnames=["file", "category", "detail", "path", "message"],
+            fieldnames=["file", "layer", "category", "detail", "path", "message"],
             delimiter="\t",
             quoting=csv.QUOTE_MINIMAL,
             lineterminator="\n",
@@ -219,22 +306,24 @@ def main() -> int:
         writer.writeheader()
         writer.writerows(all_rows)
 
-    by_cat: dict[str, int] = {}
+    by_cat: dict[tuple[str, str], int] = {}
     files_with_errors: set[str] = set()
     for row in all_rows:
-        by_cat[row["category"]] = by_cat.get(row["category"], 0) + 1
+        key = (row["layer"], row["category"])
+        by_cat[key] = by_cat.get(key, 0) + 1
         files_with_errors.add(row["file"])
 
     print("", file=sys.stderr)
     print(f"=== validate-strict summary ===", file=sys.stderr)
     print(f"  files scanned:      {len(files)}", file=sys.stderr)
+    print(f"  layers:             {','.join(layers)}", file=sys.stderr)
     print(f"  files with ERROR:   {len(files_with_errors)}", file=sys.stderr)
     print(f"  total ERROR rows:   {len(all_rows)}", file=sys.stderr)
     print(f"  TSV:                {args.out}", file=sys.stderr)
     if by_cat:
-        print(f"  by category:", file=sys.stderr)
-        for cat, count in sorted(by_cat.items(), key=lambda kv: -kv[1]):
-            print(f"    {cat:24s} {count:>8d}", file=sys.stderr)
+        print(f"  by layer/category:", file=sys.stderr)
+        for (layer, cat), count in sorted(by_cat.items(), key=lambda kv: -kv[1]):
+            print(f"    {layer:>10s} {cat:24s} {count:>8d}", file=sys.stderr)
 
     if args.fail_on == "error" and all_rows:
         return 1
