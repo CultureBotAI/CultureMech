@@ -11,8 +11,13 @@ from pathlib import Path
 import yaml
 import re
 
+from culturemech.curate.curation_event import record_curation_event
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+CURATOR = "fix_unnamed_and_physical_state.py"
+ACTION = "FIXED_UNNAMED_AND_PHYSICAL_STATE"
 
 
 class MediaFixer:
@@ -140,6 +145,14 @@ class MediaFixer:
                 logger.info(f"{'[DRY RUN] ' if self.dry_run else ''}Modified {yaml_path.name}")
                 for change in changes:
                     logger.info(f"  - {change}")
+
+                record_curation_event(
+                    data,
+                    curator=CURATOR,
+                    action=ACTION,
+                    notes=f"fixed {len(changes)} field(s)",
+                    changes="; ".join(changes)[:500],
+                )
 
                 if not self.dry_run:
                     # Write back to file

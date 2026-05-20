@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-05-19T20:18:42
+# Generation date: 2026-05-19T22:59:07
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -197,7 +197,7 @@ class MediaRecipe(YAMLRoot):
     source_environment: Optional[Union[Union[dict, "SourceEnvironmentDescriptor"], list[Union[dict, "SourceEnvironmentDescriptor"]]]] = empty_list()
     organism_culture_type: Optional[Union[str, "OrganismCultureTypeEnum"]] = None
     ph_value: Optional[float] = None
-    ph_range: Optional[str] = None
+    ph_range: Optional[Union[dict, "PhRange"]] = None
     light_intensity: Optional[str] = None
     light_cycle: Optional[str] = None
     light_quality: Optional[str] = None
@@ -312,8 +312,8 @@ class MediaRecipe(YAMLRoot):
         if self.ph_value is not None and not isinstance(self.ph_value, float):
             self.ph_value = float(self.ph_value)
 
-        if self.ph_range is not None and not isinstance(self.ph_range, str):
-            self.ph_range = str(self.ph_range)
+        if self.ph_range is not None and not isinstance(self.ph_range, PhRange):
+            self.ph_range = PhRange(**as_dict(self.ph_range))
 
         if self.light_intensity is not None and not isinstance(self.light_intensity, str):
             self.light_intensity = str(self.light_intensity)
@@ -1389,6 +1389,36 @@ class TemperatureValue(YAMLRoot):
             self.MissingRequiredField("unit")
         if not isinstance(self.unit, TemperatureUnitEnum):
             self.unit = TemperatureUnitEnum(self.unit)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class PhRange(YAMLRoot):
+    """
+    Acceptable pH range for a medium. Use `min` and `max` (floats) for parseable ranges; `notes` preserves the
+    original free-text whenever a value can't be parsed cleanly (avoids data loss during migration).
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["PhRange"]
+    class_class_curie: ClassVar[str] = "culturemech:PhRange"
+    class_name: ClassVar[str] = "PhRange"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.PhRange
+
+    min: Optional[float] = None
+    max: Optional[float] = None
+    notes: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self.min is not None and not isinstance(self.min, float):
+            self.min = float(self.min)
+
+        if self.max is not None and not isinstance(self.max, float):
+            self.max = float(self.max)
+
+        if self.notes is not None and not isinstance(self.notes, str):
+            self.notes = str(self.notes)
 
         super().__post_init__(**kwargs)
 
@@ -3257,7 +3287,7 @@ slots.mediaRecipe__ph_value = Slot(uri=CULTUREMECH.ph_value, name="mediaRecipe__
                    model_uri=CULTUREMECH.mediaRecipe__ph_value, domain=None, range=Optional[float])
 
 slots.mediaRecipe__ph_range = Slot(uri=CULTUREMECH.ph_range, name="mediaRecipe__ph_range", curie=CULTUREMECH.curie('ph_range'),
-                   model_uri=CULTUREMECH.mediaRecipe__ph_range, domain=None, range=Optional[str])
+                   model_uri=CULTUREMECH.mediaRecipe__ph_range, domain=None, range=Optional[Union[dict, PhRange]])
 
 slots.mediaRecipe__light_intensity = Slot(uri=CULTUREMECH.light_intensity, name="mediaRecipe__light_intensity", curie=CULTUREMECH.curie('light_intensity'),
                    model_uri=CULTUREMECH.mediaRecipe__light_intensity, domain=None, range=Optional[str])
@@ -3765,6 +3795,15 @@ slots.temperatureValue__value = Slot(uri=CULTUREMECH.value, name="temperatureVal
 
 slots.temperatureValue__unit = Slot(uri=CULTUREMECH.unit, name="temperatureValue__unit", curie=CULTUREMECH.curie('unit'),
                    model_uri=CULTUREMECH.temperatureValue__unit, domain=None, range=Union[str, "TemperatureUnitEnum"])
+
+slots.phRange__min = Slot(uri=CULTUREMECH.min, name="phRange__min", curie=CULTUREMECH.curie('min'),
+                   model_uri=CULTUREMECH.phRange__min, domain=None, range=Optional[float])
+
+slots.phRange__max = Slot(uri=CULTUREMECH.max, name="phRange__max", curie=CULTUREMECH.curie('max'),
+                   model_uri=CULTUREMECH.phRange__max, domain=None, range=Optional[float])
+
+slots.phRange__notes = Slot(uri=CULTUREMECH.notes, name="phRange__notes", curie=CULTUREMECH.curie('notes'),
+                   model_uri=CULTUREMECH.phRange__notes, domain=None, range=Optional[str])
 
 slots.preparationStep__step_number = Slot(uri=CULTUREMECH.step_number, name="preparationStep__step_number", curie=CULTUREMECH.curie('step_number'),
                    model_uri=CULTUREMECH.preparationStep__step_number, domain=None, range=int)

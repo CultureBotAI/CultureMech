@@ -32,7 +32,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
-from culturemech.curate import record_curation_event  # noqa: E402
+from culturemech.curate.curation_event import record_curation_event  # noqa: E402
 
 CURATOR = "migrate_data_quality_flags.py"
 ACTION = "MIGRATED_DATA_QUALITY_FLAGS"

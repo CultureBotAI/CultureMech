@@ -13,7 +13,7 @@ from typing import Dict, List
 import yaml
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
-from culturemech.curate import record_curation_event  # noqa: E402
+from culturemech.curate.curation_event import record_curation_event  # noqa: E402
 from culturemech.validation import (  # noqa: E402
     ValidationFailedError,
     write_validated_recipe,
