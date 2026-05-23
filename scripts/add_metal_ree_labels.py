@@ -3,10 +3,12 @@
 Add high_metal and high_ree labels to media YAML files based on analysis.
 """
 
+import sys
 import yaml
 from pathlib import Path
 
-from culturemech.curate.curation_event import record_curation_event
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
+from culturemech.curate.curation_event import record_curation_event  # noqa: E402
 
 
 def add_labels_to_media():

@@ -5,10 +5,22 @@ For every Python module under `scripts/` and `src/culturemech/{import,enrich,mer
 that writes a YAML (looks for `yaml.dump`, `yaml.safe_dump`, or `.write_text(`
 on a `.yaml` path), record:
 
+  - target_kind: `recipe` (writes back to per-recipe YAML in
+    data/normalized_yaml/), `report` (writes a manifest / report /
+    log / analysis output), `mixed` (does both — typically importers
+    that write recipes plus a sibling index), or `unknown` (couldn't
+    classify from the script source).
   - appends to `curation_history`?
   - has a `--dry-run` flag?
   - calls `linkml-validate` (in any form) before writing?
   - is mentioned in `project.justfile` (i.e. wired into a target)?
+
+TSV columns: path, writes_yaml, target_kind, appends_curation_history,
+has_dry_run, validates_before_write, wired_into_just.
+
+Use `target_kind` to scope follow-up work — `record_curation_event()`
+adoption (G10) is meaningful only for `recipe` and `mixed` writers;
+reports/manifests/logs aren't recipes and don't have a curation history.
 
 Output: TSV to stdout (and via --out to a file).
 """
@@ -63,13 +75,19 @@ _RECIPE_WRITER = re.compile(
     r"|output_path\s*=\s*self\.output_dir"  # mediadive solution importer
 )
 _REPORT_WRITER = re.compile(
-    r"output_path\s*=\s*"
-    r"|args\.output\b"
+    # Narrowly target report/manifest/log sinks. We deliberately do NOT
+    # match a bare `output_path = ...` assignment because importers like
+    # scripts/import_mediadive_solutions.py legitimately use that name
+    # for the per-recipe YAML they emit — Copilot caught that on PR #26.
+    r"args\.output\b"
     r"|args\.report\b"
     r"|out\.write_text\b"
-    r"|report_file"
-    r"|log_file"
-    r"|manifest"
+    r"|report_file\b"
+    r"|report_path\b"
+    r"|log_file\b"
+    r"|manifest\b"
+    r"|\.tsv\b"
+    r"|\.json\b"
 )
 
 

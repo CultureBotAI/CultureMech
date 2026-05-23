@@ -71,7 +71,7 @@ Hypothesis confirmed: these are standalone stock-solution records, identified by
 ## Tier 5 — pipeline hygiene (prevents future regressions)
 
 ### G09 · Write-time validation helper · *Pipeline · M* ✓ closed (#15)
-`src/culturemech/validation/write_validated.py` provides `record_validated_yaml(path, instance)` with closed-schema validation; high-volume writers route through it.
+`src/culturemech/validation/write_validated.py` provides `write_validated_recipe(recipe, path)` (and `validate_recipe()`) with closed-schema validation; high-volume writers route through it.
 
 ### G10 · Standardize `record_curation_event()` · *Pipeline · M* ✓ closed (#22 + 2026-05-23 follow-up)
 Helper landed: `src/culturemech/curate/curation_event.py`. After #22 + #23 + the 2026-05-23 follow-up, **every recipe-modifying writer (22/22) now appends `curation_history`**. The other 49 writers in the audit are reports, manifests, proposals, or cross-repo writers where curation events don't apply — `scripts/audit_writers.py` was extended with a `target_kind` column to keep the categorization honest.
@@ -79,7 +79,7 @@ Helper landed: `src/culturemech/curate/curation_event.py`. After #22 + #23 + the
 ### G15 · Pre-commit hook for `validate-strict` on changed YAMLs · *Pipeline · S* ✓ closed (#15)
 
 ### G18 · Extend `validate-strict` to cover terms + references · *Pipeline · M* ✓ closed (#15, #22)
-`scripts/validate_strict.py` now layers schema + terms + references with per-file target-class peek; CLI accepts `--layers`.
+`scripts/validate_strict.py` now layers schema + terms + references with per-file target-class peek; CLI accepts `--layer` (choices: schema/terms/references/all).
 
 ### G14 · Wire `assign_culturemech_ids.py` into a `just` target with collision detection · *Pipeline · S* ✓ closed (#22)
 `just assign-ids` (apply) and `just assign-ids-check` (collision-only scan, exits non-zero on duplicates) plus `--check` flag in the script.
