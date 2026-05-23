@@ -38,6 +38,9 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data" / "normalized_yaml"
+
+sys.path.insert(0, str(REPO_ROOT / "src"))
+from culturemech.curate.curation_event import record_curation_event
 CACHE_FILE = REPO_ROOT / "workspace" / "cache" / "ncbi_genome_lookups.json"
 KG_MICROBE_ROOT = Path(os.environ.get(
     "KGMICROBE_ROOT",
@@ -227,6 +230,17 @@ def main() -> int:
                     org["genome_assembly_id"] = accs
                     modified = True
             if modified:
+                record_curation_event(
+                    recipe,
+                    curator="enrich_genome_ids.py",
+                    action="ENRICHED_GENOME_IDS",
+                    notes=(
+                        f"organisms_resolved={sum(1 for o in organisms if o.get('genome_assembly_id'))} "
+                        f"of {len(organisms)}"
+                    ),
+                    source="NCBI Datasets API + samn_to_ncbitaxon.tsv",
+                    skip_if_recent=True,
+                )
                 with open(p, "w") as f:
                     yaml.safe_dump(recipe, f, sort_keys=False, allow_unicode=True)
                 n_recipes_modified += 1

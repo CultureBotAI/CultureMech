@@ -38,6 +38,9 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data" / "normalized_yaml"
 
+sys.path.insert(0, str(REPO_ROOT / "src"))
+from culturemech.curate.curation_event import record_curation_event
+
 _METRIC_KEYS = ("max_od600", "doubling_time_minutes", "growth_rate_per_hour")
 
 
@@ -94,6 +97,13 @@ def main() -> int:
         rel = p.relative_to(REPO_ROOT)
         print(f"  {rel}: stamped {n} growth_metrics entries")
         if args.apply:
+            record_curation_event(
+                doc,
+                curator="migrate_growth_metrics_v2.py",
+                action="MIGRATED_GROWTH_METRICS_V2",
+                notes=f"is_max_attainment stamped on {n} growth_metrics entries",
+                skip_if_recent=True,
+            )
             p.write_text(yaml.safe_dump(doc, sort_keys=False, allow_unicode=True))
 
     print()
