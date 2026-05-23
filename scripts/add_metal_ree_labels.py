@@ -6,6 +6,8 @@ Add high_metal and high_ree labels to media YAML files based on analysis.
 import yaml
 from pathlib import Path
 
+from culturemech.curate.curation_event import record_curation_event
+
 
 def add_labels_to_media():
     """Add high_metal and high_ree labels to media files."""
@@ -63,6 +65,15 @@ def add_labels_to_media():
 
                 # Write back if modified
                 if modified:
+                    flags = [k for k in ("high_metal", "high_ree") if media_data.get(k)]
+                    record_curation_event(
+                        media_data,
+                        curator="add_metal_ree_labels.py",
+                        action="LABELED_METAL_REE",
+                        notes=f"flags={','.join(flags) if flags else 'none'}",
+                        source=str(analysis_file),
+                        skip_if_recent=True,
+                    )
                     with open(yaml_file, 'w') as f:
                         yaml.dump(media_data, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
                     updated_count += 1

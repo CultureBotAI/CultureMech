@@ -19,6 +19,9 @@ from typing import Dict, List, Optional, Tuple
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'src'))
+from culturemech.curate.curation_event import record_curation_event
+
 
 def find_all_recipes(directory: Path) -> List[Path]:
     """Find all recipe YAML files."""
@@ -304,6 +307,14 @@ def cleanup_recipe(
 
     # Save if changes were made
     if all_changes and not dry_run:
+        record_curation_event(
+            recipe,
+            curator="cleanup_recipe_ingredients.py",
+            action="CLEANED_RECIPE_INGREDIENTS",
+            notes=f"changes={len(all_changes)}",
+            changes="; ".join(all_changes)[:500] or None,
+            skip_if_recent=True,
+        )
         save_recipe(recipe, recipe_path)
 
     # Report

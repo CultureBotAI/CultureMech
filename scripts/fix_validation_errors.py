@@ -31,6 +31,7 @@ import yaml
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
 from culturemech.validation import YAMLFixer, SchemaDefaulter, RecipeValidator
+from culturemech.curate.curation_event import record_curation_event
 
 
 logger = logging.getLogger(__name__)
@@ -193,6 +194,20 @@ class ValidationFixer:
             return False
 
         if not self.dry_run:
+            fixed = [
+                label for label, was in (
+                    ("yaml", yaml_was_fixed),
+                    ("schema_defaults", schema_was_fixed),
+                    ("enums_types", types_was_fixed),
+                ) if was
+            ]
+            record_curation_event(
+                recipe,
+                curator="fix_validation_errors.py",
+                action="FIXED_VALIDATION_ERRORS",
+                notes=f"fixed={','.join(fixed)}",
+                skip_if_recent=True,
+            )
             # Write fixed content
             with open(recipe_path, 'w', encoding='utf-8') as f:
                 yaml.safe_dump(recipe, f, default_flow_style=False, allow_unicode=True, sort_keys=False)

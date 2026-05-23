@@ -72,7 +72,7 @@ Complex media contain undefined components (e.g., yeast extract, peptone), while
 - 🔍 Automated detection of numeric placeholders ('1', '2', '3'), generic terms, and empty values
 - 🧪 Chemical name extraction from notes fields for mapping assistance
 - 📈 Priority-based mapping recommendations (critical: 51+ occurrences)
-- See [UNMAPPED_INGREDIENTS_SUMMARY.md](UNMAPPED_INGREDIENTS_SUMMARY.md) and [docs/unmapped_ingredients_guide.md](docs/unmapped_ingredients_guide.md)
+- See [docs/unmapped_ingredients_guide.md](docs/unmapped_ingredients_guide.md) (executive summary archived at [docs/archive/UNMAPPED_INGREDIENTS_SUMMARY.md](docs/archive/UNMAPPED_INGREDIENTS_SUMMARY.md))
 
 **Advanced Normalization & SSSOM Enrichment** (2026-02):
 - ✨ Integrated MicroMediaParam's production-grade 16-step chemical normalization pipeline
@@ -313,9 +313,9 @@ Comprehensive documentation is available in the [`docs/`](docs/) directory:
 
 ### Data Quality & Enrichment
 - **[Enrichment Guide](docs/ENRICHMENT_GUIDE.md)** - Data quality improvement workflow
-- **[Implementation Summary](IMPLEMENTATION_SUMMARY.md)** - Literature verification & enum normalization
+- **[Implementation Summary](docs/archive/IMPLEMENTATION_SUMMARY.md)** - Literature verification & enum normalization (archived 2026-05-23)
 - **[Unmapped Ingredients Guide](docs/unmapped_ingredients_guide.md)** - System for tracking ingredients needing ontology mapping
-- **[Unmapped Ingredients Summary](UNMAPPED_INGREDIENTS_SUMMARY.md)** - Executive summary with statistics and priorities
+- **[Unmapped Ingredients Summary](docs/archive/UNMAPPED_INGREDIENTS_SUMMARY.md)** - Executive summary with statistics and priorities (archived 2026-05-23)
 
 ## 🧬 Recipe Format
 
@@ -503,7 +503,7 @@ python -m culturemech.enrich.atcc_crossref_builder generate --verify-literature
 - Full provenance tracking
 - No auto-distribution of PDFs
 
-See [IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md) for complete documentation.
+See [docs/archive/IMPLEMENTATION_SUMMARY.md](docs/archive/IMPLEMENTATION_SUMMARY.md) for complete documentation.
 
 ## 🌐 Browser Interface
 
@@ -569,7 +569,7 @@ less output/unmapped_ingredients.yaml
 cat docs/unmapped_ingredients_guide.md
 
 # Read the executive summary
-cat UNMAPPED_INGREDIENTS_SUMMARY.md
+cat docs/archive/UNMAPPED_INGREDIENTS_SUMMARY.md
 ```
 
 ### Adding New Recipes

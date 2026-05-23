@@ -170,5 +170,5 @@ The value is always a `mediadive.medium:XXX` node ID. When multiple KG-Microbe m
 - **Matcher module**: `src/culturemech/match/kg_media_matcher.py`
 - **Schema field**: `src/culturemech/schema/culturemech.yaml` → `kg_microbe_match`
 - **MIM counterpart skill**: `match-kg-microbe` in MediaIngredientMech (uses `kg_microbe_node_id` field)
-- **Implementation notes**: `KG_MICROBE_MATCHER_IMPLEMENTATION.md`
+- **Implementation notes**: `docs/archive/KG_MICROBE_MATCHER_IMPLEMENTATION.md`
 - **Ontology enrichment**: `just feba-enrich-ontology` in culturebotai-claw (adds CHEBI IDs to expand matchable media)

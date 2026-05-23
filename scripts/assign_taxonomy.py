@@ -23,6 +23,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
 from culturemech.taxonomy import TaxonomyClassifier
+from culturemech.curate.curation_event import record_curation_event
 
 
 def assign_taxonomy_to_recipes(
@@ -91,6 +92,16 @@ def assign_taxonomy_to_recipes(
             if not dry_run:
                 recipe['taxonomy'] = taxonomy
 
+                record_curation_event(
+                    recipe,
+                    curator="assign_taxonomy.py",
+                    action="ASSIGNED_TAXONOMY",
+                    notes=(
+                        f"domain={taxonomy['domain']} "
+                        f"confidence={taxonomy['confidence_score']:.2f}"
+                    ),
+                    skip_if_recent=True,
+                )
                 with open(yaml_file, 'w') as f:
                     yaml.dump(recipe, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
 

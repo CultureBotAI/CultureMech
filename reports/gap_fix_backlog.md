@@ -2,13 +2,21 @@
 
 20 actionable items derived from the schema, instance, and pipeline audits. Source-of-truth: `reports/gap_fix_backlog.tsv`.
 
-**Status (as of the 2026-05-17 cleanup pass):**
+**Status (as of 2026-05-23):**
 
 | Closed | Open |
 |---|---|
-| G01, G02, G03, G04, G05, G06, G07, G08, G15, G17, G19 (11 items) | G09, G10, G11, G12, G13, G14, G16, G18, G20 (9 items) |
+| G01-G20 (20 items) | — |
 
-After the closed items landed, full-corpus `just validate-strict` reports **0 ERROR rows across 15,827 records**. The remaining items are forward-looking hygiene (G09, G10, G14, G18, G20) and schema polish (G11, G12, G13, G16); none currently produce validation failures.
+Full-corpus `just validate-strict` reports **0 ERROR rows across 15,827 records**.
+
+Per-PR closure record:
+- #15 (audit-code): G01, G06, G07, G08 (SolutionRecipe + target-class routing), G09 (write-time validator), G15 (pre-commit hook), G17 (enum additions), G18 (term + reference layers), G19 (Solution slots)
+- #17 (audit-data): G02, G04, G05
+- #19/#20 (process fixes + merged-corpus migration): completes G02/G04/G05 + G03 over 1,195 merged records
+- #22 (audit cleanup): G10 helper (4 writers), G11, G13, G14, G16, G18, G20
+- #23 + #25 (PhRange): G12 (one structured class landed; sibling slots `temperature_range`/`salinity`/`light_cycle` deliberately left as `range: string` per #23 — single-placeholder corpus, no structuring value)
+- Follow-up (2026-05-23): G10 completed — every recipe-modifying writer (22/22) now appends `curation_history`; remaining writers without it are reports/proposals/cross-repo by design. `scripts/audit_writers.py` extended with a `target_kind` column to keep the categorization honest in future runs.
 
 Ranking heuristic: items with the largest "records-affected × ease-of-fix" go first; structural prerequisites (CI gate, normalization helpers) precede their dependents. Effort: **S** = a single PR, mostly mechanical; **M** = a few PRs, some judgment calls; **L** = cross-cutting redesign.
 
@@ -45,7 +53,7 @@ Today, `just validate-all` swallows non-zero exits and runs the schema in open m
 ### G07 · Broaden `Term.id` pattern beyond CHEBI · *Schema · S*
 **1,872 ingredient records** use `FOODON:*` (peptone, yeast extract, wheat) and `UBERON:*` (brain, heart for BHI media) — these are the *correct* ontologies for those entities, but the schema regex `^CHEBI:\d+$` rejects them. Loosen the pattern to `^(CHEBI|FOODON|UBERON|ENVO):\d+$` (or per-class).
 
-### G06 · Normalize `data_quality_flags` to the schema's list shape · *Instance · S* ✓ closed
+### G06 · Normalize `data_quality_flags` to the schema's list shape · *Instance · S* ✓ closed (#15)
 **273 records** carried a dict like `{incomplete_composition: false, has_ontology_mappings: true, ingredients_curated: true, curation_method: 'automated_expert_mapping'}` instead of the schema's `range: string, multivalued: true`. `scripts/migrate_data_quality_flags.py` converged them on the list shape used by the other 5,220 list-shape records: boolean-true keys become bare flag names, false keys are dropped (absence == false), non-bool fields encode as `key:value` strings. The richer structured-class redesign (originally drafted as the M-effort version of G06) is deferred — open as a follow-up only if downstream consumers actually need the boolean negation distinction.
 
 ### G19 · `SolutionDescriptor` schema vs `solutions[*]` instance shape · *Instance · M*
@@ -55,65 +63,52 @@ Today, `just validate-all` swallows non-zero exits and runs the schema in open m
 
 ## Tier 4 — investigation needed
 
-### G08 · 4,784 records that look like they aren't `MediaRecipe` · *Instance · L*
-The `physical_state`, `name`, and `medium_type` fields are **all three** missing on the same 4,784 records (they are co-required at `MediaRecipe` root). Plus another **4,171 records** put `composition`, `preferred_term`, `preparation_notes`, `term` at the root level — exactly the shape of `SolutionDescriptor`/`MediaTypeDescriptor`. Hypothesis: a hidden second record type lurks under `data/normalized_yaml/` and is being validated against `MediaRecipe` when it shouldn't be. Investigation should:
-1. Sample 20 affected files; categorize by what fields they *do* have.
-2. Determine if a separate target class (e.g. `MediaSolution`, `IngredientReference` root) was intended.
-3. Either route them through the right validator or migrate them to a sibling directory.
-
-This is the biggest single chunk of unresolved error volume (~30% of corpus). Doing it before G01–G07 land would obscure the diagnosis.
+### G08 · 4,784 records that look like they aren't `MediaRecipe` · *Instance · L* ✓ closed (#15)
+Hypothesis confirmed: these are standalone stock-solution records, identified by `term.id` starting with `mediadive.solution:` or `MediaIngredientMech:` (~2,749 `*_Main_sol_*` files + ~2,000 sibling `mediadive_*` records). #15 added a new root class `SolutionRecipe` and target-class routing in `scripts/validate_strict.py:46-62` so each instance validates against the right class. Sample of 20 random `*_Main_sol_*.yaml` files (2026-05-23) confirmed all carry `mediadive.solution:*` term IDs and none of `physical_state`/`name`/`medium_type` — i.e. they were never MediaRecipes.
 
 ---
 
 ## Tier 5 — pipeline hygiene (prevents future regressions)
 
-### G09 · Write-time validation helper · *Pipeline · M*
-A single `record_validated_yaml(path, instance)` helper that wraps `yaml.safe_dump` in a closed-schema `Validator` check. Refactor the 10 highest-volume writers (importers, `apply_growth_evidence.py`, `enrich_with_chebi.py`, `merge_recipes.py`) to use it. Once in place, future migrations like G02–G05 *can't* land bad data.
+### G09 · Write-time validation helper · *Pipeline · M* ✓ closed (#15)
+`src/culturemech/validation/write_validated.py` provides `record_validated_yaml(path, instance)` with closed-schema validation; high-volume writers route through it.
 
-### G10 · Standardize `record_curation_event()` · *Pipeline · M*
-**31 of 65 writers do not append to `curation_history`.** Without provenance, future debugging of "where did this field come from?" is impossible. Single helper + refactor.
+### G10 · Standardize `record_curation_event()` · *Pipeline · M* ✓ closed (#22 + 2026-05-23 follow-up)
+Helper landed: `src/culturemech/curate/curation_event.py`. After #22 + #23 + the 2026-05-23 follow-up, **every recipe-modifying writer (22/22) now appends `curation_history`**. The other 49 writers in the audit are reports, manifests, proposals, or cross-repo writers where curation events don't apply — `scripts/audit_writers.py` was extended with a `target_kind` column to keep the categorization honest.
 
-### G15 · Pre-commit hook for `validate-strict` on changed YAMLs · *Pipeline · S*
-Cheaper than CI for catching local regressions. Run only on changed files via `git diff` (much faster than full corpus).
+### G15 · Pre-commit hook for `validate-strict` on changed YAMLs · *Pipeline · S* ✓ closed (#15)
 
-### G18 · Extend `validate-strict` to cover terms + references · *Pipeline · M*
-Today the strict harness only runs `JsonschemaValidationPlugin`. The existing `just validate` target also runs `linkml-term-validator` (ontology grounding) and `linkml-reference-validator` (PMID/DOI). Fold both into the strict harness so one command covers all three layers.
+### G18 · Extend `validate-strict` to cover terms + references · *Pipeline · M* ✓ closed (#15, #22)
+`scripts/validate_strict.py` now layers schema + terms + references with per-file target-class peek; CLI accepts `--layers`.
 
-### G14 · Wire `assign_culturemech_ids.py` into a `just` target with collision detection · *Pipeline · S*
-ID minting is currently honor-system. A `just assign-ids` target with a pre-check (`max(existing) + 1`, fail if collisions detected) closes the loop.
+### G14 · Wire `assign_culturemech_ids.py` into a `just` target with collision detection · *Pipeline · S* ✓ closed (#22)
+`just assign-ids` (apply) and `just assign-ids-check` (collision-only scan, exits non-zero on duplicates) plus `--check` flag in the script.
 
-### G20 · Add `--dry-run` + curation events to `fix_schema_inconsistencies.py` · *Pipeline · S*
-This script has historically rewritten large parts of the corpus without leaving a trail. Make it safer before anyone re-runs it.
+### G20 · Add `--dry-run` + curation events to `fix_schema_inconsistencies.py` · *Pipeline · S* ✓ closed (#22)
 
 ---
 
 ## Tier 6 — schema cleanups (no records affected today, but pay dividends)
 
-### G11 · Add `identifier:` to high-traffic descriptors · *Schema · M*
-30 of 40 classes have no identifier. Lifting `term` (or `preferred_term`) to identifier on `IngredientDescriptor`, `OrganismDescriptor`, `SolutionDescriptor`, `MediaVariant`, `EvidenceItem` enables stable cross-recipe references and dedup.
+### G11 · Add `identifier:` to high-traffic descriptors · *Schema · M* ✓ closed (#22)
 
-### G12 · Replace 16 `range: string` slots with enums or typed classes · *Schema · L*
-`growth_phase`, `salinity`, `light_cycle`, `ph_range`, `temperature_range`, `merge_mode`, `merge_version`, `fingerprint_version`, `dataset_type`, `container_type`, etc. Each gets a small enum or a tiny typed class (`PhRange { min: float, max: float }`, `TemperatureRange`). Each conversion is small; together they tighten the schema substantially.
+### G12 · Replace 16 `range: string` slots with enums or typed classes · *Schema · L* ✓ closed (#22, #23, #25)
+Each slot in the original list was triaged to one of three outcomes:
+- **Typed**: `ph_range` → `PhRange` class; `growth_phase` → `GrowthPhaseEnum`; `merge_mode` → `MergeModeEnum`; `dataset_type` → `DatasetTypeEnum` (latter three in #22).
+- **Deliberately left string** (PR #23 commit msg): `temperature_range`, `salinity`, `light_cycle` — each carries a single boilerplate algae-importer string across 241/67/241 records; structuring adds no analytic value.
+- **Version strings or unused**: `merge_version`, `fingerprint_version` are naturally semantic-version strings; `container_type`, `light_quality`, `aeration` have 0 records in the corpus today.
 
-### G13 · Reconcile term/ontology slot naming · *Schema · M*
-`term` vs `<provenance>_term` vs `<provenance>_id` vs `ontology_term` — pick one convention and migrate. Pure cleanup; downstream consumers benefit from a single accessor pattern.
+Re-open only if a new use case introduces real variation in the "left as string" slots.
 
-### G16 · Reconcile `MediaVariant.modifications` with `MediaVariantRelationshipEnum` · *Schema · M*
-Today there are two parallel ways to express variants: free-text `modifications: string[]` and typed `MediaRecipeReference.relationship: enum`. Curators pick one; consumers can't query uniformly. Add `relationship: MediaVariantRelationshipEnum` to `MediaVariant`; migrate free-text where mappable.
+### G13 · Reconcile term/ontology slot naming · *Schema · M* ✓ closed (#22)
+
+### G16 · Reconcile `MediaVariant.modifications` with `MediaVariantRelationshipEnum` · *Schema · M* ✓ closed (#22)
 
 ---
 
-## Reading order for an implementer
+## Remaining work
 
-1. **Land G01** (CI gate + harness promotion). Without this, everything else can regress.
-2. **Investigate G08** in parallel — pick 20 sample files, decide whether they're `MediaRecipe` or a sibling type. The decision changes the scope of every other instance migration.
-3. **Land G02, G05, G04, G17, G07** — cheap wins, ~11,000 errors closed.
-4. **Land G06** + **decide G19** — ~4,000 errors closed; resolves the solutions question.
-5. **Land G03** — preparation_steps migration, the only remaining "M" in Tier 2-3.
-6. **Pipeline hygiene (G09, G10, G15, G18, G14, G20)** — locks in the gains.
-7. **Schema polish (G11, G12, G13, G16)** — when there's time.
-
-After G01-G08 land, expected post-state: ~7,000 records still failing → mostly the structured-rewrite work (preparation_steps + the still-unresolved subset of G08). After Tier 5 lands, the validation gate prevents any new regressions.
+None. All twenty originally-numbered backlog items are closed; the corpus reports 0 ERROR rows under `just validate-strict`. New gap items would be filed as new IDs rather than reopened against this list.
 
 ## Re-generate
 

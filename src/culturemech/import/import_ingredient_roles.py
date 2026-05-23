@@ -8,6 +8,8 @@ from pathlib import Path
 import yaml
 import sys
 
+from culturemech.curate.curation_event import record_curation_event
+
 PFAS_REPO = Path("/Users/marcin/Documents/VIMSS/ontology/PFAS/PFASCommunityAgents")
 INGREDIENT_FILE = PFAS_REPO / "data/sheets_pfas/PFAS_Data_for_AI_media_ingredients_extended.tsv"
 
@@ -70,6 +72,14 @@ def enrich_recipe_with_roles(recipe_path: Path, roles_db: dict, dry_run: bool = 
 
     if modified:
         if not dry_run:
+            record_curation_event(
+                recipe,
+                curator="import_ingredient_roles.py",
+                action="ENRICHED_INGREDIENT_ROLES",
+                notes=f"roles_added_to={len(changes)} ingredients",
+                source="PFAS_Data_for_AI_media_ingredients_extended.tsv",
+                skip_if_recent=True,
+            )
             with open(recipe_path, 'w') as f:
                 yaml.dump(recipe, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
             print(f"✓ Updated {recipe_path.name}")

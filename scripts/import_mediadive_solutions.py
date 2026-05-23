@@ -17,6 +17,7 @@ Usage:
 """
 
 import json
+import sys
 import yaml
 import re
 from pathlib import Path
@@ -24,6 +25,9 @@ from datetime import datetime, timezone
 from typing import Dict, List, Optional, Any
 from collections import Counter
 import logging
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
+from culturemech.curate.curation_event import record_curation_event
 
 logging.basicConfig(
     level=logging.INFO,
@@ -371,6 +375,13 @@ class MediaDiveSolutionImporter:
 
             # Write YAML
             if not self.dry_run:
+                record_curation_event(
+                    descriptor,
+                    curator="import_mediadive_solutions.py",
+                    action="CREATED_FROM_MEDIADIVE",
+                    notes=f"composition_entries={len(descriptor['composition'])}",
+                    source=f"mediadive.solution:{solution_id}",
+                )
                 output_path = self.output_dir / filename
                 with open(output_path, 'w') as f:
                     yaml.dump(
