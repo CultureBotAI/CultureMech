@@ -110,3 +110,36 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "9K MEDIUM" to "9k_medium" for consistent matching
+- timestamp: '2026-05-24T04:38:33.227537+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=2 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
+source_environment:
+- preferred_term: mine tailing
+  term:
+    id: ENVO:00000072
+    label: mine tailing
+  notes: 'Industrial copper sulfide ore heap leach operation. Crushed low-grade ore
+    is piled in heaps and irrigated with acidic solution (pH 1.5-2.5) containing the
+    microbial consortium. The heaps provide a heterogeneous environment with spatial
+    gradients in pH (1.67-2.5), Fe²⁺/Fe³⁺ ratios, oxygen availability, temperature,
+    and copper concentration. Heap age ranges from fresh ore (<100 days) to aged ore
+    (>250 days), with microbial succession reflecting changing chemical conditions.
+    The engineered environment promotes iron and sulfur oxidation to generate sulfuric
+    acid and ferric iron for mineral dissolution.
+
+    '
+- preferred_term: acid mine drainage
+  term:
+    id: ENVO:00002186
+    label: acid mine drainage
+  notes: 'Extremely acidic (pH <2), metal-rich environments including natural acid
+    mine drainage and industrial biomining operations. The consortium thrives on pyrite
+    (FeS₂) and chalcopyrite (CuFeS₂) surfaces where ferrous iron concentrations are
+    high. Environments are aerobic to microaerobic, with temperatures ranging from
+    30-50°C. High concentrations of dissolved metals (Fe, Cu, Zn) and sulfate are
+    characteristic. The extreme acidity and metal content exclude most organisms,
+    creating niches for specialized acidophiles.
+
+    '

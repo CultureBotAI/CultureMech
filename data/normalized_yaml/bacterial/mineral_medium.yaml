@@ -165,9 +165,53 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''5.5-6'' -> {''min'': 5.5, ''max'': 6.0}'
+- timestamp: '2026-05-24T04:38:33.207592+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=4 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1007_MINERAL_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003510
   name: mineral_medium
   notes: Same source medium number and matching ingredient/concentration signature.
+source_environment:
+- preferred_term: sulfate-free anaerobic environment
+  term:
+    id: ENVO:01001405
+    label: laboratory bioreactor
+  notes: 'Grown in continuous culture on lactate without sulfate under strict anaerobic
+    conditions. In the absence of sulfate, D. vulgaris cannot use its typical respiratory
+    pathway and must rely on syntrophic partnership with a H2-consuming organism.
+    The system demonstrates obligate dependence on interspecies hydrogen transfer
+    for energy conservation.
+
+    '
+- preferred_term: soil
+  term:
+    id: ENVO:00001998
+    label: soil
+- preferred_term: acid mine drainage
+  term:
+    id: ENVO:00002186
+    label: acid mine drainage
+  notes: 'Extremely acidic (pH 0.5-1.0) subaerial biofilm formed at the air-solution
+    interface of underground AMD streams and pools within the Richmond Mine. The mine
+    contains massive pyrite (FeS₂) deposits that undergo microbially-mediated oxidation,
+    generating sulfuric acid and solubilizing metals. Temperatures range from 30-50°C
+    at sampling sites and exceed 56°C deeper in the mine. Metal concentrations reach
+    decagrams per liter, creating one of Earth''s most extreme habitats.
+
+    '
+- preferred_term: anaerobic environment
+  term:
+    id: ENVO:00002229
+    label: anaerobic environment
+  notes: 'Isolated from anaerobic granular sludge. Grown as syntrophic coculture under
+    strict anaerobic conditions. S. fumaroxidans oxidizes propionate syntrophically
+    in co-culture with the hydrogen- and formate-utilizing M. hungatei. The consortium
+    operates via interspecies electron transfer through both H2 and formate as electron
+    carriers.
+
+    '

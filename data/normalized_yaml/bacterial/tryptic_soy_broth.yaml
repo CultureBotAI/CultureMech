@@ -163,30 +163,30 @@ references:
   title: Production of amylase by Arthrobacter psychrolactophilus
   authors: Smith, M. R.; Zahnley, J. C.
   year: 2005
-  notes: Reports growth of Arthrobacter psychrolactophilus ATCC 700733 in TSB
-    without dextrose supplemented with soluble starch or maltose.
+  notes: Reports growth of Arthrobacter psychrolactophilus ATCC 700733 in TSB without
+    dextrose supplemented with soluble starch or maltose.
 - reference: BacDive:7598
   title: Arthrobacter psychrolactophilus B7 strain record
   authors: BacDive / DSMZ
   year: 2026
-  notes: Strain record linking B7 to ATCC 700733, DSM 15612, JCM 12399, CIP
-    107481, NCBITaxon:92442, and genome assembly GCA_003219795.
+  notes: Strain record linking B7 to ATCC 700733, DSM 15612, JCM 12399, CIP 107481,
+    NCBITaxon:92442, and genome assembly GCA_003219795.
 variants:
 - name: tsb_without_dextrose_plus_starch_or_maltose
-  description: Tryptic Soy Broth without dextrose, supplemented with soluble
-    starch or maltose as the fermentable substrate.
+  description: Tryptic Soy Broth without dextrose, supplemented with soluble starch
+    or maltose as the fermentable substrate.
   modifications:
   - Omit dextrose/glucose from the parent Tryptic Soy Broth formulation.
   - Add 0.5% or 1.0% (w/v) soluble starch or maltose.
-  purpose: Growth and extracellular amylase production by Arthrobacter
-    psychrolactophilus ATCC 700733 at 22 degrees C.
+  purpose: Growth and extracellular amylase production by Arthrobacter psychrolactophilus
+    ATCC 700733 at 22 degrees C.
   evidence:
   - reference: PMID:15931519
     supports: SUPPORT
     snippet: tryptic soy broth without dextrose (TSBWD) containing 0.5% or 1.0%
-    explanation: Smith and Zahnley report the study-specific TSBWD variant and
-      the starch/maltose supplement levels used for Arthrobacter
-      psychrolactophilus ATCC 700733 growth.
+    explanation: Smith and Zahnley report the study-specific TSBWD variant and the
+      starch/maltose supplement levels used for Arthrobacter psychrolactophilus ATCC
+      700733 growth.
 target_organisms:
 - preferred_term: Arthrobacter psychrolactophilus
   term:
@@ -197,33 +197,33 @@ target_organisms:
   strain: B7; ATCC 700733; DSM 15612; JCM 12399; CIP 107481
   growth_metrics:
   - temperature_celsius: 22.0
-    measurement_conditions: Source reports a 1.5-2.3 h doubling-time range in
-      TSB without dextrose containing 0.5% or 1.0% soluble starch or maltose.
+    measurement_conditions: Source reports a 1.5-2.3 h doubling-time range in TSB
+      without dextrose containing 0.5% or 1.0% soluble starch or maltose.
     evidence:
     - reference: PMID:15931519
       supports: SUPPORT
       snippet: grew with a doubling time of 1.5-2.3 h (22 degrees C)
-      explanation: The PubMed-indexed abstract explicitly reports growth and a
-        doubling-time range for Arthrobacter psychrolactophilus ATCC 700733 in
-        the TSBWD starch/maltose variant.
+      explanation: The PubMed-indexed abstract explicitly reports growth and a doubling-time
+        range for Arthrobacter psychrolactophilus ATCC 700733 in the TSBWD starch/maltose
+        variant.
     is_max_attainment: false
   evidence:
   - reference: PMID:15931519
     supports: SUPPORT
-    explanation: The study names Arthrobacter psychrolactophilus ATCC 700733 and
-      reports positive growth in the TSBWD starch/maltose formulation.
+    explanation: The study names Arthrobacter psychrolactophilus ATCC 700733 and reports
+      positive growth in the TSBWD starch/maltose formulation.
   - reference: BacDive:7598
     supports: SUPPORT
-    explanation: BacDive identifies B7 as the type strain corresponding to ATCC
-      700733, DSM 15612, JCM 12399, and CIP 107481, with NCBI taxon 92442 and
-      genome assembly GCA_003219795.
+    explanation: BacDive identifies B7 as the type strain corresponding to ATCC 700733,
+      DSM 15612, JCM 12399, and CIP 107481, with NCBI taxon 92442 and genome assembly
+      GCA_003219795.
 curation_history:
 - timestamp: '2026-05-11T00:00:00Z'
   curator: culturemech-agentic-curation
   action: Added literature-backed TSBWD growth variant
   notes: Modeled Arthrobacter psychrolactophilus ATCC 700733 growth evidence from
-    PMID:15931519 as a Tryptic Soy Broth variant because the source omits
-    dextrose and adds soluble starch or maltose.
+    PMID:15931519 as a Tryptic Soy Broth variant because the source omits dextrose
+    and adds soluble starch or maltose.
 - timestamp: '2026-01-27T06:35:58.102455Z'
   curator: togo-import
   action: Imported from TOGO Medium
@@ -245,3 +245,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Tryptic Soy Broth" to "tryptic_soy_broth" for consistent
     matching
+- timestamp: '2026-05-24T04:38:33.238120+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=1 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
+source_environment:
+- preferred_term: rhizosphere
+  term:
+    id: ENVO:00005801
+    label: rhizosphere

@@ -92,3 +92,21 @@ curation_history:
   notes: Normalized name from "Nitrogen-Free Medium for Leptospirillum ferrodiazotrophum"
     to "nitrogen_free_medium_for_leptospirillum_ferrodiazotrophum" for consistent
     matching
+- timestamp: '2026-05-24T04:38:33.284210+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=1 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
+source_environment:
+- preferred_term: acid mine drainage
+  term:
+    id: ENVO:00002186
+    label: acid mine drainage
+  notes: 'Extremely acidic (pH 0.5-1.0) subaerial biofilm formed at the air-solution
+    interface of underground AMD streams and pools within the Richmond Mine. The mine
+    contains massive pyrite (FeS₂) deposits that undergo microbially-mediated oxidation,
+    generating sulfuric acid and solubilizing metals. Temperatures range from 30-50°C
+    at sampling sites and exceed 56°C deeper in the mine. Metal concentrations reach
+    decagrams per liter, creating one of Earth''s most extreme habitats.
+
+    '

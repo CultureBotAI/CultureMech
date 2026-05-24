@@ -51,6 +51,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-05-24T04:38:33.182473+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=2 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
 references:
 - reference: CCAP:TAP
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_TAP.pdf
@@ -226,3 +231,18 @@ target_organisms:
     snippet: Chlorella vulgaris and bacteria of the genus Delftia
     explanation: The source studied Chlorella vulgaris UTEX 395 growth in TAP medium
       and compared algal growth with and without Delftia sp. co-culture.
+source_environment:
+- preferred_term: laboratory bioreactor
+  term:
+    id: ENVO:01001405
+    label: laboratory environment
+- preferred_term: freshwater environment
+  term:
+    id: ENVO:01000306
+    label: freshwater environment
+  notes: 'Natural algae-bacteria association from freshwater habitat, maintained in
+    laboratory culture to study nitrogen stress responses and mutualistic interactions.
+    The consortium demonstrates stable co-occurrence and metabolic cooperation under
+    nutrient limitation.
+
+    '
