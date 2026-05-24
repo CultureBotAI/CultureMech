@@ -67,16 +67,23 @@ curation_history:
 - timestamp: '2026-03-17T19:46:27.033553+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Luria-Bertani (LB) medium" to
-    "luria_bertani_lb_medium" for consistent matching
+  notes: Normalized name from "Luria-Bertani (LB) medium" to "luria_bertani_lb_medium"
+    for consistent matching
+- timestamp: '2026-05-24T04:38:33.256049+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=1 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
 parent_media:
   path: data/normalized_yaml/bacterial/TOGO_M2897_LB_medium.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:009433
   name: lb_medium
-  notes: Reviewed TOGO LB/Luria-Bertani LB pair; records differ only in NaCl
-    concentration.
+  notes: Reviewed TOGO LB/Luria-Bertani LB pair; records differ only in NaCl concentration.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- NaCl increased from 0.5 g/L to 10 g/L while the TOGO LB formulation remains
-  unchanged.
+- NaCl increased from 0.5 g/L to 10 g/L while the TOGO LB formulation remains unchanged.
+source_environment:
+- preferred_term: rhizosphere
+  term:
+    id: ENVO:00005801

@@ -76,3 +76,18 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified Freshwater Medium for DIET Coculture" to "modified_freshwater_medium_for_diet_coculture"
     for consistent matching
+- timestamp: '2026-05-24T04:38:33.279095+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=1 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
+source_environment:
+- preferred_term: sediment
+  term:
+    id: ENVO:00002007
+  notes: 'Isolated from anaerobic sediments. DIET is an important process in anaerobic
+    soils and sediments generating methane. Cocultures form conductive aggregates
+    under strict anaerobic conditions, with direct cell-to-cell electron transfer
+    mediated by conductive pili and aggregate structures.
+
+    '

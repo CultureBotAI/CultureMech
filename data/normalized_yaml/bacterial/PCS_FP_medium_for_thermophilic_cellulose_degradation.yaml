@@ -92,3 +92,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PCS-FP medium for thermophilic cellulose degradation"
     to "pcs_fp_medium_for_thermophilic_cellulose_degradation" for consistent matching
+- timestamp: '2026-05-24T04:38:33.299025+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=1 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
+source_environment:
+- preferred_term: compost
+  term:
+    id: ENVO:00002170

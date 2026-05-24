@@ -70,4 +70,13 @@ curation_history:
   curator: cleanup_residual_errors.py
   action: CLEANUP_RESIDUAL_ERRORS
   notes: R04_fill_missing_explanation=1
+- timestamp: '2026-05-24T04:38:33.269053+00:00'
+  curator: backfill_source_environment.py
+  action: BACKFILLED_SOURCE_ENVIRONMENT
+  notes: added=1 env(s) from CommunityMech
+  source: CommunityMech (environment_term + culturemech_id linkage)
 kg_microbe_match: mediadive.medium:263
+source_environment:
+- preferred_term: rhizosphere
+  term:
+    id: ENVO:00005801
