@@ -127,3 +127,10 @@ data/embeddings/*.tsv.gz
 # KG-Microbe data files (too large for GitHub)
 data/kgm/merged-kg_edges.tsv
 data/kgm/merged-kg_nodes.tsv
+
+# Local-only / generated directories (cleanup 2026-05-23)
+# - backups/: ad-hoc pre-migration snapshots (git history is authoritative)
+# - tmp/:     LinkML codegen artifacts (canonical copies live in
+#             src/culturemech/schema/culturemech_dataclasses.py + docs/schema/)
+backups/
+tmp/
