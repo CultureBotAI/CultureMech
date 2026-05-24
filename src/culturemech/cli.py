@@ -75,7 +75,7 @@ def umap():
 @click.option(
     "--output",
     type=click.Path(path_type=Path),
-    default="docs/media_umap.html",
+    default="app/umap.html",
     help="Output HTML file path",
 )
 @click.option(
