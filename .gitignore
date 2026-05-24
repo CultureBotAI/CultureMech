@@ -58,6 +58,15 @@ pages/media/
 pages/index.html
 pages/style.css
 
+# Legacy per-category page output (renderer no longer writes here; the
+# active targets are pages/media/ and pages/normalized/). Block re-add
+# in case stale local copies exist from before the 2026-05-23 cleanup.
+pages/bacterial/
+pages/algae/
+pages/archaea/
+pages/fungal/
+pages/specialized/
+
 # OAK cache
 .oak_cache/
 references_cache/
