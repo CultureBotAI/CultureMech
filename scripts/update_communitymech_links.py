@@ -20,8 +20,13 @@ from typing import Dict, List, Any
 
 
 def generate_culturemech_url(culturemech_id: str) -> str:
-    """Generate GitHub URL for a CultureMech ID."""
-    return f"https://github.com/CultureBotAI/CultureMech/tree/main/kb/media/{culturemech_id}"
+    """Generate the GitHub Pages URL for a CultureMech ID.
+
+    Slug is the CURIE local part (`CultureMech:015437` -> `015437`),
+    matching `slug_for()` in src/culturemech/render_media_pages.py.
+    """
+    slug = culturemech_id.split(":", 1)[1] if ":" in culturemech_id else culturemech_id
+    return f"https://culturebotai.github.io/CultureMech/media/{slug}.html"
 
 
 def update_communitymech_yaml(

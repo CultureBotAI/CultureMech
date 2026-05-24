@@ -113,8 +113,8 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(description="Import ingredient roles from PFAS data")
-    parser.add_argument("--kb-dir", type=Path, default=Path("kb/media"),
-                        help="Knowledge base directory (default: kb/media)")
+    parser.add_argument("--kb-dir", type=Path, default=Path("data/normalized_yaml"),
+                        help="Knowledge base directory (default: data/normalized_yaml)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Show what would be changed without modifying files")
 
