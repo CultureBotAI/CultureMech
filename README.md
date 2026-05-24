@@ -214,7 +214,7 @@ Three major algae culture collections fully integrated:
 - Cyanobacteria (Spirulina, BG-11 variants)
 - Specialized media (diatoms, euglenoids, volvocales)
 
-See [docs/ALGAE_PIPELINE_COMPLETE.md](docs/ALGAE_PIPELINE_COMPLETE.md) for details.
+See [docs/archive/ALGAE_PIPELINE_COMPLETE.md](docs/archive/ALGAE_PIPELINE_COMPLETE.md) for details (archived 2026-05-23).
 
 ### Fetching Data
 
@@ -278,8 +278,8 @@ CultureMech/
 ├── docs/                         # Comprehensive documentation
 │   ├── QUICK_START.md           # 5-minute getting started
 │   ├── DATA_LAYERS.md           # Three-tier architecture
-│   ├── ALGAE_PIPELINE_COMPLETE.md  # Algae integration guide
-│   └── ... (27 more docs)
+│   ├── archive/                    # Dated/completion-summary docs
+│   └── ... (29 active guides)
 │
 ├── app/                          # Browser interface
 │   ├── index.html               # Faceted search UI
@@ -302,14 +302,14 @@ Comprehensive documentation is available in the [`docs/`](docs/) directory:
 
 ### Architecture
 - **[Data Layers](docs/DATA_LAYERS.md)** - Three-tier architecture explained
-- **[Migration Guide](docs/MIGRATION_GUIDE.md)** - Directory structure reference
-- **[Implementation Status](docs/IMPLEMENTATION_STATUS.md)** - Integration progress
+- **[Migration Guide](docs/archive/MIGRATION_GUIDE.md)** - Pre-tier-migration cookbook (archived 2026-05-23)
+- **[Implementation Status](docs/archive/IMPLEMENTATION_STATUS.md)** - Integration progress (archived 2026-05-23)
 
-### Integration Guides
-- **[Algae Pipeline](docs/ALGAE_PIPELINE_COMPLETE.md)** - UTEX/CCAP/SAG integration (242 recipes)
-- **[UTEX Deployment](docs/UTEX_PRODUCTION_DEPLOYMENT.md)** - Full UTEX pipeline details
-- **[CCAP/SAG Deployment](docs/CCAP_SAG_PRODUCTION_DEPLOYMENT.md)** - Metadata import details
-- **[Data Sources Summary](docs/DATA_SOURCES_SUMMARY.md)** - All source repositories
+### Integration Guides (archived)
+- **[Algae Pipeline](docs/archive/ALGAE_PIPELINE_COMPLETE.md)** - UTEX/CCAP/SAG integration (242 recipes)
+- **[UTEX Deployment](docs/archive/UTEX_PRODUCTION_DEPLOYMENT.md)** - Full UTEX pipeline details
+- **[CCAP/SAG Deployment](docs/archive/CCAP_SAG_PRODUCTION_DEPLOYMENT.md)** - Metadata import details
+- **[Data Sources Summary](docs/archive/DATA_SOURCES_SUMMARY.md)** - All source repositories
 
 ### Data Quality & Enrichment
 - **[Enrichment Guide](docs/ENRICHMENT_GUIDE.md)** - Data quality improvement workflow

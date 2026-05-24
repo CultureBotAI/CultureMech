@@ -5,7 +5,7 @@
 ```
 
 ```text
-Review this repo's CultureMech media records, especially `data/normalized_yaml/**/*.yaml`, with schema guidance from `tmp/docs/MediaRecipe.md` and `tmp/docs/MediaVariant.md`.
+Review this repo's CultureMech media records, especially `data/normalized_yaml/**/*.yaml`, with schema guidance from `docs/schema/MediaRecipe.md` and `docs/schema/MediaVariant.md`.
 
 Task:
 Use the repo's media YAML records themselves as the target media list. Research and report evidence for organisms that grow on each target medium or a close formulation variant. This is an open-ended medium-centered search across the YAML corpus, not a predeclared organism/media pair list. The organism list should be discovered from evidence for each YAML medium. The research question for each YAML record is: which specific organisms, strains, isolates, or genomes are documented to grow on this medium or a justified variant of it? Prefer evidence with strain identifiers, NCBI Taxonomy IDs, genome assembly accessions, BioSample IDs, or other genome identifiers. Use primary literature, culture collection pages, MediaDive/DSMZ/JCM/ATCC-style sources, and NCBI records where relevant.
