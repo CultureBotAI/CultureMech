@@ -180,7 +180,6 @@ source_environment:
 - preferred_term: sulfate-free anaerobic environment
   term:
     id: ENVO:01001405
-    label: laboratory bioreactor
   notes: 'Grown in continuous culture on lactate without sulfate under strict anaerobic
     conditions. In the absence of sulfate, D. vulgaris cannot use its typical respiratory
     pathway and must rely on syntrophic partnership with a H2-consuming organism.
@@ -191,11 +190,9 @@ source_environment:
 - preferred_term: soil
   term:
     id: ENVO:00001998
-    label: soil
 - preferred_term: acid mine drainage
   term:
     id: ENVO:00002186
-    label: acid mine drainage
   notes: 'Extremely acidic (pH 0.5-1.0) subaerial biofilm formed at the air-solution
     interface of underground AMD streams and pools within the Richmond Mine. The mine
     contains massive pyrite (FeS₂) deposits that undergo microbially-mediated oxidation,
@@ -207,7 +204,6 @@ source_environment:
 - preferred_term: anaerobic environment
   term:
     id: ENVO:00002229
-    label: anaerobic environment
   notes: 'Isolated from anaerobic granular sludge. Grown as syntrophic coculture under
     strict anaerobic conditions. S. fumaroxidans oxidizes propionate syntrophically
     in co-culture with the hydrogen- and formate-utilizing M. hungatei. The consortium

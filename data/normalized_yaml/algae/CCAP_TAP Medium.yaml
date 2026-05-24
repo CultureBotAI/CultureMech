@@ -235,11 +235,9 @@ source_environment:
 - preferred_term: laboratory bioreactor
   term:
     id: ENVO:01001405
-    label: laboratory environment
 - preferred_term: freshwater environment
   term:
     id: ENVO:01000306
-    label: freshwater environment
   notes: 'Natural algae-bacteria association from freshwater habitat, maintained in
     laboratory culture to study nitrogen stress responses and mutualistic interactions.
     The consortium demonstrates stable co-occurrence and metabolic cooperation under

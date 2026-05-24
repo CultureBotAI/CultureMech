@@ -119,7 +119,6 @@ source_environment:
 - preferred_term: mine tailing
   term:
     id: ENVO:00000072
-    label: mine tailing
   notes: 'Industrial copper sulfide ore heap leach operation. Crushed low-grade ore
     is piled in heaps and irrigated with acidic solution (pH 1.5-2.5) containing the
     microbial consortium. The heaps provide a heterogeneous environment with spatial
@@ -133,7 +132,6 @@ source_environment:
 - preferred_term: acid mine drainage
   term:
     id: ENVO:00002186
-    label: acid mine drainage
   notes: 'Extremely acidic (pH <2), metal-rich environments including natural acid
     mine drainage and industrial biomining operations. The consortium thrives on pyrite
     (FeS₂) and chalcopyrite (CuFeS₂) surfaces where ferrous iron concentrations are

@@ -102,7 +102,6 @@ source_environment:
 - preferred_term: sediment
   term:
     id: ENVO:00002007
-    label: sediment
   notes: 'Isolated from anaerobic sediments and biofilms. DIET is an important process
     in anaerobic soils and sediments generating methane. Cocultures form aggregates
     under strict anaerobic conditions, with direct cell-to-cell electron transfer

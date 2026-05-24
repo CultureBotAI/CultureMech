@@ -80,4 +80,3 @@ source_environment:
 - preferred_term: rhizosphere
   term:
     id: ENVO:00005801
-    label: rhizosphere

@@ -58,8 +58,13 @@ def collect_env_links(cm_root: Path) -> dict[str, list[dict[str, Any]]]:
         if any(rel.startswith(p) for p in SKIP_PREFIXES):
             continue
         try:
-            doc = yaml.safe_load(path.read_text())
-        except yaml.YAMLError:
+            # path.read_text() can raise OSError on permission/disk errors
+            # and UnicodeDecodeError on non-UTF-8 content — both should
+            # skip the file rather than crash a multi-thousand-file scan
+            # (Copilot caught this on PR #28).
+            text = path.read_text(encoding="utf-8")
+            doc = yaml.safe_load(text)
+        except (OSError, UnicodeDecodeError, yaml.YAMLError):
             continue
         if not isinstance(doc, dict):
             continue
@@ -70,19 +75,33 @@ def collect_env_links(cm_root: Path) -> dict[str, list[dict[str, Any]]]:
         _collect_culturemech_ids(doc, cm_ids)
         if not cm_ids:
             continue
-        envo_id = ((env.get("term") or {}).get("id") or "").strip()
-        # Build a SourceEnvironmentDescriptor-shaped dict.
-        # ENVO id missing? Still keep it (envo is recommended, not required).
-        descriptor: dict[str, Any] = {
-            "preferred_term": env.get("preferred_term") or "",
-        }
         term_section = env.get("term")
+        envo_id = ""
+        envo_label = ""
         if isinstance(term_section, dict):
-            descriptor["term"] = {k: term_section[k] for k in ("id", "label")
-                                  if term_section.get(k)}
+            envo_id = (term_section.get("id") or "").strip()
+            envo_label = (term_section.get("label") or "").strip()
+        # Build a SourceEnvironmentDescriptor-shaped dict. Fall back to
+        # the ENVO label or id when CommunityMech omitted preferred_term
+        # — empty strings make for hard-to-use entries and break dedup
+        # (Copilot caught this on PR #28).
+        preferred_term = env.get("preferred_term") or envo_label or envo_id
+        if not preferred_term:
+            # No identifying info at all; skip rather than emit an empty
+            # descriptor.
+            continue
+        descriptor: dict[str, Any] = {"preferred_term": preferred_term}
+        # Only emit term.id (not term.label): the same ENVO CURIE has
+        # been observed with different labels across CommunityMech
+        # curators (e.g., ENVO:01001405 → "laboratory bioreactor" vs
+        # "laboratory culture" vs "laboratory environment"), and Term.label
+        # is intended to be the *canonical* ontology label. Downstream
+        # consumers should resolve the label from ENVO directly.
+        if envo_id:
+            descriptor["term"] = {"id": envo_id}
         if env.get("notes"):
             descriptor["notes"] = env["notes"]
-        dedup_key = envo_id or descriptor["preferred_term"] or rel
+        dedup_key = envo_id or preferred_term
         for cmid in cm_ids:
             if dedup_key not in by_recipe[cmid]:
                 by_recipe[cmid][dedup_key] = descriptor
@@ -124,13 +143,47 @@ def index_recipes_by_id(data_root: Path) -> dict[str, Path]:
 def merge_into_recipe(
     recipe: dict[str, Any],
     new_envs: list[dict[str, Any]],
-) -> int:
+) -> tuple[int, int]:
     """Append new SourceEnvironmentDescriptor entries; skip if same ENVO
     id (or same preferred_term when no ENVO) already present.
 
-    Returns the count of newly-added entries.
+    Also strips stale `term.label` values from any existing entry that
+    appears to have come from a previous backfill — this script no
+    longer propagates labels from CommunityMech (see collect_env_links)
+    and re-running should normalize earlier writes.
+
+    Source slot may be missing, a single dict (LinkML dataclasses accept
+    one-or-many for multivalued slots), or a list. Normalize to a list
+    in place before processing — Copilot caught the dict-shape edge on
+    PR #28.
+
+    Returns ``(added, normalized)`` — count of newly-appended entries
+    and count of existing entries whose stale label was stripped.
     """
-    existing = recipe.setdefault("source_environment", [])
+    raw = recipe.get("source_environment")
+    if raw is None:
+        existing: list[dict[str, Any]] = []
+        recipe["source_environment"] = existing
+    elif isinstance(raw, list):
+        existing = raw
+    elif isinstance(raw, dict):
+        existing = [raw]
+        recipe["source_environment"] = existing
+    else:
+        # Unrecognized shape — overwrite to a clean list rather than
+        # silently corrupting the recipe.
+        existing = []
+        recipe["source_environment"] = existing
+
+    normalized = 0
+    for entry in existing:
+        if not isinstance(entry, dict):
+            continue
+        term = entry.get("term")
+        if isinstance(term, dict) and "label" in term:
+            del term["label"]
+            normalized += 1
+
     existing_keys: set[str] = set()
     for entry in existing:
         if not isinstance(entry, dict):
@@ -146,7 +199,7 @@ def merge_into_recipe(
         existing.append(env)
         existing_keys.add(key)
         added += 1
-    return added
+    return added, normalized
 
 
 def main() -> int:
@@ -183,21 +236,27 @@ def main() -> int:
             recipe = yaml.safe_load(f)
         if not isinstance(recipe, dict):
             continue
-        added = merge_into_recipe(recipe, envs)
-        if added == 0:
+        added, normalized = merge_into_recipe(recipe, envs)
+        if added == 0 and normalized == 0:
             continue
-        record_curation_event(
-            recipe,
-            curator=CURATOR,
-            action=ACTION,
-            notes=f"added={added} env(s) from CommunityMech",
-            source="CommunityMech (environment_term + culturemech_id linkage)",
-            skip_if_recent=True,
-        )
+        if added > 0:
+            record_curation_event(
+                recipe,
+                curator=CURATOR,
+                action=ACTION,
+                notes=f"added={added} env(s) from CommunityMech",
+                source="CommunityMech (environment_term + culturemech_id linkage)",
+                skip_if_recent=True,
+            )
         touched += 1
         total_added += added
         rel = path.relative_to(REPO_ROOT)
-        print(f"  + {cmid}: added {added} env(s) -> {rel}", file=sys.stderr)
+        marks = []
+        if added:
+            marks.append(f"added {added} env(s)")
+        if normalized:
+            marks.append(f"stripped {normalized} stale label(s)")
+        print(f"  + {cmid}: {', '.join(marks)} -> {rel}", file=sys.stderr)
         if not args.dry_run:
             with path.open("w") as f:
                 yaml.safe_dump(recipe, f, sort_keys=False, allow_unicode=True,
