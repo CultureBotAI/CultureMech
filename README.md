@@ -143,7 +143,7 @@ just serve-browser
 just gen-media-umap /path/to/embeddings.tsv.gz
 
 # View locally
-open docs/media_umap.html
+open app/umap.html
 
 # See docs/MEDIA_UMAP_GUIDE.md for detailed instructions
 ```

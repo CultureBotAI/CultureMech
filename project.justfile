@@ -1953,7 +1953,7 @@ gen-media-umap embeddings_path=kg_microbe_embeddings:
     echo "  Output: app/umap.html"
     echo ""
     echo "To view locally: just serve-browser"
-    echo "Or open: open docs/media_umap.html"
+    echo "Or open: open app/umap.html"
 
 [group('Visualization')]
 gen-media-umap-custom embeddings_path n_neighbors="15" min_dist="0.1" min_coverage="0.5":
