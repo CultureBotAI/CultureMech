@@ -143,3 +143,7 @@ data/kgm/merged-kg_nodes.tsv
 #             src/culturemech/schema/culturemech_dataclasses.py + docs/schema/)
 backups/
 tmp/
+
+# Legacy pre-three-tier-migration media directory (kb/media_backup +
+# kb/media_backup_old). Live data lives under data/normalized_yaml/.
+kb/

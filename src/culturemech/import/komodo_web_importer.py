@@ -40,7 +40,7 @@ class KomodoWebImporter:
 
         Args:
             input_dir: Directory with komodo_web_media.json
-            output_dir: Root directory for kb/media/
+            output_dir: Root output directory for category-organized YAMLs (e.g. data/normalized_yaml/)
             limit: Optional limit for testing (default: None = all media)
         """
         self.input_dir = Path(input_dir)

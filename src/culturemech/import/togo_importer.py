@@ -22,7 +22,7 @@ class TogoImporter:
 
         Args:
             raw_data_dir: Directory containing togo_media.json
-            output_dir: Root kb/media directory
+            output_dir: Root output directory for category-organized YAMLs (e.g. data/normalized_yaml/)
         """
         self.raw_data_dir = Path(raw_data_dir)
         self.output_dir = Path(output_dir)
