@@ -36,7 +36,7 @@ from linkml.validator import Validator
 from linkml.validator.plugins import JsonschemaValidationPlugin
 from linkml.validator.report import Severity, ValidationResult
 
-DEFAULT_SCHEMA_PATH = Path("src/culturemech/schema/culturemech.yaml")
+DEFAULT_SCHEMA_PATH = Path(__file__).resolve().parents[1] / "schema" / "culturemech.yaml"
 
 _VALIDATORS: dict[Path, Validator] = {}
 _VALIDATOR_LOCK = Lock()
@@ -123,12 +123,16 @@ def write_validated_recipe(
     errors = validate_recipe(recipe, target_class=target_class, schema_path=schema_path)
     if errors:
         raise ValidationFailedError(path, errors)
+    # Match the existing repo convention for yaml emission so re-running
+    # this helper over an existing file produces a byte-identical diff
+    # instead of churning block / flow style.
     opts = {
+        "default_flow_style": False,
         "sort_keys": False,
         "allow_unicode": True,
         "width": 80,
         **(yaml_kwargs or {}),
     }
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w") as f:
+    with path.open("w", encoding="utf-8") as f:
         yaml.safe_dump(recipe, f, **opts)

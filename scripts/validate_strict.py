@@ -34,10 +34,11 @@ from linkml.validator import Validator
 from linkml.validator.plugins import JsonschemaValidationPlugin
 from linkml.validator.report import Severity
 
-SCHEMA_PATH = Path("src/culturemech/schema/culturemech.yaml")
-OAK_CONFIG_PATH = Path("conf/oak_config.yaml")
-DEFAULT_ROOTS = [Path(f"data/normalized_yaml/{sub}") for sub in
-                 ("algae", "bacterial", "fungal", "archaea", "specialized")]
+_REPO_ROOT = Path(__file__).resolve().parents[1]
+SCHEMA_PATH = _REPO_ROOT / "src" / "culturemech" / "schema" / "culturemech.yaml"
+OAK_CONFIG_PATH = _REPO_ROOT / "conf" / "oak_config.yaml"
+DEFAULT_ROOTS = [_REPO_ROOT / "data" / "normalized_yaml" / sub
+                 for sub in ("algae", "bacterial", "fungal", "archaea", "specialized")]
 
 
 _SOLUTION_TERM_PREFIXES = ("mediadive.solution:", "MediaIngredientMech:")
