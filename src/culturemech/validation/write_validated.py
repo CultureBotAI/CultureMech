@@ -36,7 +36,7 @@ from linkml.validator import Validator
 from linkml.validator.plugins import JsonschemaValidationPlugin
 from linkml.validator.report import Severity, ValidationResult
 
-DEFAULT_SCHEMA_PATH = Path(__file__).resolve().parents[2] / "schema" / "culturemech.yaml"
+DEFAULT_SCHEMA_PATH = Path(__file__).resolve().parents[1] / "schema" / "culturemech.yaml"
 
 _VALIDATORS: dict[Path, Validator] = {}
 _VALIDATOR_LOCK = Lock()
