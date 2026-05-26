@@ -55,6 +55,29 @@ research-providers:
 research-provider provider:
     uv run --extra dev python scripts/research_media.py --provider {{provider}} --provider-info
 
+# Edison Scientific deep research via the `edison-client` SDK. Default
+# job is LITERATURE (PaperQA3). Pass `--job literature-high` etc. via
+# *args. Requires EDISON_PLATFORM_API_KEY (or EDISON_API_KEY) in env
+# or .env. See scripts/research_media_edison.py for details.
+[group('Research')]
+research-media-edison target *args="":
+    uv run --extra dev python scripts/research_media_edison.py \
+      --target {{target}} \
+      --template {{templates_dir}}/media_growth_research.md \
+      --out-dir {{research_dir}}/media \
+      {{args}}
+
+# Batch variant: walk a edison_batch.json priority list and research
+# the first N recipes. Default --limit is unset (run all 100); always
+# pass `--limit 5` (or similar) on first runs to bound credit spend.
+[group('Research')]
+research-media-edison-batch batch *args="":
+    uv run --extra dev python scripts/research_media_edison.py \
+      --batch {{batch}} \
+      --template {{templates_dir}}/media_growth_research.md \
+      --out-dir {{research_dir}}/media \
+      {{args}}
+
 [group('Data')]
 fetch-mediadive-raw:
     #!/usr/bin/env bash
