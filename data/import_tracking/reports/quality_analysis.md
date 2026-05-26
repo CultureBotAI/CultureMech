@@ -1,22 +1,22 @@
 # CultureMech Media Quality Analysis Report
 
 **Generated**: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CultureMech
-**Total Recipes Analyzed**: 500
-**Average Completeness Score**: 35.7/100
+**Total Recipes Analyzed**: 15,827
+**Average Completeness Score**: 62.6/100
 
 ## Quality Distribution
 
-- 🔴 **Critical** (< 50): 500 recipes (100.0%)
-- 🟡 **Needs Work** (50-69): 0 recipes (0.0%)
-- 🟢 **Good** (70-89): 0 recipes (0.0%)
+- 🔴 **Critical** (< 50): 540 recipes (3.4%)
+- 🟡 **Needs Work** (50-69): 9,134 recipes (57.7%)
+- 🟢 **Good** (70-89): 6,153 recipes (38.9%)
 - ⭐ **Excellent** (≥ 90): 0 recipes (0.0%)
 
 ## Common Issues
 
-- **Unmapped ingredients**: 9,690 occurrences
-- **Missing pH**: 510 occurrences
-- **Missing description**: 500 occurrences
-- **Missing/unmapped organisms**: 500 occurrences
+- **Unmapped ingredients**: 186,146 occurrences
+- **Missing pH**: 16,406 occurrences
+- **Missing/unmapped organisms**: 15,827 occurrences
+- **Missing description**: 15,139 occurrences
 
 ## Top Priority Recipes for Edison Review
 
