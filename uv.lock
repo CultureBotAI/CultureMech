@@ -930,9 +930,11 @@ dependencies = [
 dev = [
     { name = "black" },
     { name = "deep-research-client", extra = ["cyberian"], marker = "python_full_version >= '3.12'" },
+    { name = "edison-client", marker = "python_full_version >= '3.12'" },
     { name = "mypy" },
     { name = "pytest" },
     { name = "pytest-cov" },
+    { name = "python-dotenv" },
     { name = "ruff" },
 ]
 koza = [
@@ -947,6 +949,7 @@ requires-dist = [
     { name = "black", marker = "extra == 'dev'", specifier = ">=23.0.0" },
     { name = "click", specifier = ">=8.1.0" },
     { name = "deep-research-client", extras = ["cyberian"], marker = "python_full_version >= '3.12' and extra == 'dev'", specifier = ">=0.2.4" },
+    { name = "edison-client", marker = "python_full_version >= '3.12' and extra == 'dev'", specifier = ">=0.11.0" },
     { name = "jinja2", specifier = ">=3.1.0" },
     { name = "koza", marker = "extra == 'koza'", specifier = ">=0.6.0" },
     { name = "linkml", specifier = ">=1.7.0" },
@@ -961,6 +964,7 @@ requires-dist = [
     { name = "pypdf2", specifier = ">=3.0.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=7.4.0" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=4.1.0" },
+    { name = "python-dotenv", marker = "extra == 'dev'", specifier = ">=1.0.0" },
     { name = "pyyaml", specifier = ">=6.0" },
     { name = "rapidfuzz", specifier = ">=3.0.0" },
     { name = "requests", specifier = ">=2.31.0" },

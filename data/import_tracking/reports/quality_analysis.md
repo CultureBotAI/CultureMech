@@ -1,6 +1,6 @@
 # CultureMech Media Quality Analysis Report
 
-**Generated**: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CultureMech
+**Source dir**: `data/normalized_yaml`
 **Total Recipes Analyzed**: 15,827
 **Average Completeness Score**: 62.6/100
 

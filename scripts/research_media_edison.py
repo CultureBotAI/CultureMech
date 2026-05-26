@@ -17,10 +17,12 @@ Auth: reads ``EDISON_PLATFORM_API_KEY`` (SDK-native) or ``EDISON_API_KEY``
 (legacy alias from research_media.py) from environment. A repo-root
 ``.env`` is auto-loaded via python-dotenv.
 
-Outputs land under ``research/media/{slug}-edison-{job}.md`` (matching
-the existing DRC naming convention used by research_media.py). A
-sibling ``{slug}-edison-{job}-meta.yaml`` captures task_id, cost,
-status, and the prompt that was sent — useful for audit and re-runs.
+Outputs land under ``research/media/{slug}-edison-{job}.md``
+(``slug`` = YAML file stem to match research_media.py's DRC naming,
+``job`` = lowercase-hyphenated job name, e.g. ``literature-high``). A
+sibling ``{slug}-edison-{job}-meta.yaml`` captures the rendered query
+text, task_id, total_cost, status, template_path, and template_vars —
+sufficient for audit and re-runs.
 
 Usage::
 
@@ -34,7 +36,9 @@ Usage::
     # different job
     python scripts/research_media_edison.py --target lb_broth --job literature-high
 
-    # dry-run prints the rendered query without spending credits
+    # dry-run skips the API call but still writes the meta yaml
+    # (including the full rendered query) so you can inspect the
+    # prompt that would have been sent without spending credits.
     python scripts/research_media_edison.py --target lb_broth --dry-run
 """
 from __future__ import annotations
@@ -119,12 +123,35 @@ class _DefaultEmpty(dict):
 
 
 def slug_for(media_path: Path) -> str:
-    """Stable filename slug for output naming."""
-    doc = rm.load_media(media_path)
-    cid = str(doc.get("id") or "")
-    if ":" in cid:
-        return cid.split(":", 1)[1]
+    """Stable filename slug for output naming.
+
+    Uses the YAML file stem (e.g. ``luria_bertani_lb_medium``) — human-
+    readable and consistent with research_media.py's DRC outputs.
+    The CultureMech CURIE ID is captured separately in the meta file.
+    """
     return media_path.stem
+
+
+def _short_job(job) -> str:
+    """CLI-friendly filename suffix for a JobNames enum member.
+
+    ``JobNames.LITERATURE_HIGH`` -> ``literature-high`` (hyphens, not
+    underscores, to match the ``--job literature-high`` CLI alias).
+    """
+    return job.name.lower().replace("_", "-")
+
+
+def _display_path(path: Path) -> str:
+    """Show ``path`` relative to the repo when possible; else absolute.
+
+    ``Path.relative_to`` raises ValueError when the target is outside
+    REPO_ROOT (e.g. user passes ``--out-dir /tmp/research``); fall
+    back to absolute string for display rather than crashing.
+    """
+    try:
+        return str(path.relative_to(REPO_ROOT))
+    except ValueError:
+        return str(path)
 
 
 def run_one(
@@ -140,13 +167,34 @@ def run_one(
 
     query, variables = render_query(media_path, template_path)
     slug = slug_for(media_path)
-    job_short = job.name.lower()
+    job_short = _short_job(job)
     md_path = out_dir / f"{slug}-edison-{job_short}.md"
     meta_path = out_dir / f"{slug}-edison-{job_short}-meta.yaml"
 
+    def _safe_rel(p: Path) -> str:
+        return str(p.relative_to(REPO_ROOT)) if str(p).startswith(str(REPO_ROOT)) else str(p)
+
     if dry_run:
-        print(f"[DRY RUN] {media_path.relative_to(REPO_ROOT)} -> {md_path.relative_to(REPO_ROOT)}")
-        print(f"          job={job.name} query_chars={len(query)}")
+        # In dry-run we still write the meta + query alongside the
+        # planned md_path so callers can audit prompts without burning
+        # credits. The meta is the source of truth for "the prompt that
+        # was sent" referenced in the module docstring.
+        out_dir.mkdir(parents=True, exist_ok=True)
+        meta = {
+            "slug": slug,
+            "media_path": _safe_rel(media_path),
+            "media_id": str(rm.load_media(media_path).get("id") or ""),
+            "job": job.name,
+            "job_id": job.value,
+            "status": "dry-run",
+            "template_path": _safe_rel(template_path),
+            "template_vars": variables,
+            "query_chars": len(query),
+            "query": query,
+        }
+        meta_path.write_text(yaml.safe_dump(meta, sort_keys=False, allow_unicode=True, width=100))
+        print(f"[DRY RUN] {_display_path(media_path)} -> {_display_path(md_path)}")
+        print(f"          job={job.name} query_chars={len(query)} meta={_display_path(meta_path)}")
         return {"slug": slug, "status": "dry-run", "cost": 0.0}
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -163,7 +211,8 @@ def run_one(
 
     meta = {
         "slug": slug,
-        "media_path": str(media_path.relative_to(REPO_ROOT)),
+        "media_path": _safe_rel(media_path),
+        "media_id": str(rm.load_media(media_path).get("id") or ""),
         "job": job.name,
         "job_id": job.value,
         "task_id": str(getattr(response, "task_id", None) or ""),
@@ -172,11 +221,13 @@ def run_one(
         "total_cost": total_cost,
         "total_queries": getattr(response, "total_queries", None),
         "has_successful_answer": getattr(response, "has_successful_answer", None),
+        "template_path": _safe_rel(template_path),
         "template_vars": variables,
         "query_chars": len(query),
+        "query": query,
     }
     meta_path.write_text(yaml.safe_dump(meta, sort_keys=False, allow_unicode=True, width=100))
-    print(f"    -> {md_path.relative_to(REPO_ROOT)}  cost={total_cost}")
+    print(f"    -> {_display_path(md_path)}  cost={total_cost}")
     return {"slug": slug, "status": meta["status"], "cost": total_cost or 0.0}
 
 

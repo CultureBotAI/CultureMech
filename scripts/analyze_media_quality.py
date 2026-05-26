@@ -168,7 +168,8 @@ def analyze_directory(yaml_dir: Path) -> List[Dict[str, Any]]:
     return results
 
 
-def generate_report(results: List[Dict[str, Any]], output_file: Path, top_n: int = None):
+def generate_report(results: List[Dict[str, Any]], output_file: Path, top_n: int = None,
+                    yaml_dir: Path = None):
     """Generate prioritized report for Edison review."""
 
     if top_n:
@@ -203,7 +204,16 @@ def generate_report(results: List[Dict[str, Any]], output_file: Path, top_n: int
     # Write report
     with open(output_file, 'w') as f:
         f.write("# CultureMech Media Quality Analysis Report\n\n")
-        f.write(f"**Generated**: {Path.cwd()}\n")
+        # Report header shows the source dir as a repo-relative path —
+        # the previous `Path.cwd()` leaked the developer's absolute home
+        # path into a committed report (Copilot caught this on PR #33).
+        if yaml_dir is not None:
+            try:
+                anchor = output_file.resolve().parents[2]  # walk up reports/ → import_tracking/ → data/
+                source_label = str(yaml_dir.resolve().relative_to(anchor.parent))
+            except (ValueError, IndexError):
+                source_label = str(yaml_dir)
+            f.write(f"**Source dir**: `{source_label}`\n")
         f.write(f"**Total Recipes Analyzed**: {total_recipes:,}\n")
         f.write(f"**Average Completeness Score**: {avg_score:.1f}/100\n\n")
 
@@ -335,7 +345,7 @@ def main():
 
     # Generate report
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    generate_report(results, args.output, args.top_n)
+    generate_report(results, args.output, args.top_n, yaml_dir=args.yaml_dir)
 
     # Generate Edison batch file
     args.edison_batch.parent.mkdir(parents=True, exist_ok=True)
