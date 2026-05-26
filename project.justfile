@@ -78,6 +78,33 @@ research-media-edison-batch batch *args="":
       --out-dir {{research_dir}}/media \
       {{args}}
 
+# Phase-2 follow-up: drill into one organism reported in phase-1
+# results and extract the recipe + culture conditions + identifiers
+# from the primary publication. See
+# scripts/research_organism_recipe_edison.py for the full arg list
+# (--strain, --identifiers, --citation-hint, --phase1-snippet,
+# --organisms-batch, etc.).
+[group('Research')]
+research-organism-recipe-edison target organism *args="":
+    uv run --extra dev python scripts/research_organism_recipe_edison.py \
+      --target {{target}} \
+      --organism {{organism}} \
+      --template {{templates_dir}}/medium_organism_recipe_extraction.md \
+      --out-dir {{research_dir}}/media \
+      {{args}}
+
+# Batch variant of the phase-2 per-organism follow-up. Takes a JSON
+# list (one entry per organism: {target, organism, strain?,
+# identifiers?, citation_hint?, phase1_snippet?}). Always pass
+# `--limit N` on first runs to bound credit spend.
+[group('Research')]
+research-organism-recipe-edison-batch batch *args="":
+    uv run --extra dev python scripts/research_organism_recipe_edison.py \
+      --organisms-batch {{batch}} \
+      --template {{templates_dir}}/medium_organism_recipe_extraction.md \
+      --out-dir {{research_dir}}/media \
+      {{args}}
+
 [group('Data')]
 fetch-mediadive-raw:
     #!/usr/bin/env bash
