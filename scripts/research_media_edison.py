@@ -57,6 +57,7 @@ from dotenv import load_dotenv
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import research_media as rm  # noqa: E402  -- reuse template_vars + resolve
+import _edison_capture as ec  # noqa: E402  -- response/citation/agent capture
 
 DEFAULT_TEMPLATE = REPO_ROOT / "templates" / "media_growth_research.md"
 DEFAULT_OUT_DIR = REPO_ROOT / "research" / "media"
@@ -162,37 +163,45 @@ def run_one(
     out_dir: Path,
     dry_run: bool,
 ) -> dict[str, Any]:
-    """Submit one task; write results to out_dir; return a stats dict."""
+    """Submit one task; write results to out_dir; return a stats dict.
+
+    On a successful API call, ``_edison_capture.capture_full_response``
+    writes a primary answer .md plus four sibling files
+    (-response.json, -citations.md, -agent-state.json, -files.json)
+    for full provenance. See scripts/_edison_capture.py for details.
+    """
     from edison_client import TaskRequest
 
     query, variables = render_query(media_path, template_path)
     slug = slug_for(media_path)
     job_short = _short_job(job)
-    md_path = out_dir / f"{slug}-edison-{job_short}.md"
-    meta_path = out_dir / f"{slug}-edison-{job_short}-meta.yaml"
+    stem = f"{slug}-edison-{job_short}"
+    meta_path = out_dir / f"{stem}-meta.yaml"
 
     def _safe_rel(p: Path) -> str:
         return str(p.relative_to(REPO_ROOT)) if str(p).startswith(str(REPO_ROOT)) else str(p)
 
+    base_meta: dict[str, Any] = {
+        "slug": slug,
+        "media_path": _safe_rel(media_path),
+        "media_id": str(rm.load_media(media_path).get("id") or ""),
+        "job": job.name,
+        "job_id": job.value,
+        "template_path": _safe_rel(template_path),
+        "template_vars": variables,
+        "query_chars": len(query),
+        "query": query,
+        "submitted_at": datetime.now(timezone.utc).isoformat(),
+    }
+
     if dry_run:
-        # In dry-run we still write the meta + query alongside the
-        # planned md_path so callers can audit prompts without burning
-        # credits. The meta is the source of truth for "the prompt that
-        # was sent" referenced in the module docstring.
-        out_dir.mkdir(parents=True, exist_ok=True)
-        meta = {
-            "slug": slug,
-            "media_path": _safe_rel(media_path),
-            "media_id": str(rm.load_media(media_path).get("id") or ""),
-            "job": job.name,
-            "job_id": job.value,
-            "status": "dry-run",
-            "template_path": _safe_rel(template_path),
-            "template_vars": variables,
-            "query_chars": len(query),
-            "query": query,
-        }
-        meta_path.write_text(yaml.safe_dump(meta, sort_keys=False, allow_unicode=True, width=100))
+        # Render the meta yaml even in dry-run so callers can audit
+        # exactly what would be sent (and compare query_sha256 to
+        # detect identical re-runs). No .md is written; only meta.
+        meta = ec.capture_dry_run(out_dir=out_dir, stem=stem, query=query, base_meta=base_meta)
+        meta_path.write_text(yaml.safe_dump(meta, sort_keys=False,
+                                            allow_unicode=True, width=100))
+        md_path = out_dir / f"{stem}.md"
         print(f"[DRY RUN] {_display_path(media_path)} -> {_display_path(md_path)}")
         print(f"          job={job.name} query_chars={len(query)} meta={_display_path(meta_path)}")
         return {"slug": slug, "status": "dry-run", "cost": 0.0}
@@ -202,32 +211,21 @@ def run_one(
     print(f"  + submitting {slug} ({job.name})...", flush=True)
     [response] = client.run_tasks_until_done(task, progress_bar=False)
 
-    # PaperQA-family responses carry the answer + cost; other jobs may not.
-    formatted_answer = getattr(response, "formatted_answer", None)
-    answer = getattr(response, "answer", None)
-    total_cost = getattr(response, "total_cost", None)
-    body = formatted_answer or answer or "(no answer field on this job's response type)"
-    md_path.write_text(body)
-
-    meta = {
-        "slug": slug,
-        "media_path": _safe_rel(media_path),
-        "media_id": str(rm.load_media(media_path).get("id") or ""),
-        "job": job.name,
-        "job_id": job.value,
-        "task_id": str(getattr(response, "task_id", None) or ""),
-        "status": getattr(response, "status", None),
-        "submitted_at": datetime.now(timezone.utc).isoformat(),
-        "total_cost": total_cost,
-        "total_queries": getattr(response, "total_queries", None),
-        "has_successful_answer": getattr(response, "has_successful_answer", None),
-        "template_path": _safe_rel(template_path),
-        "template_vars": variables,
-        "query_chars": len(query),
-        "query": query,
-    }
-    meta_path.write_text(yaml.safe_dump(meta, sort_keys=False, allow_unicode=True, width=100))
-    print(f"    -> {_display_path(md_path)}  cost={total_cost}")
+    meta = ec.capture_full_response(
+        response=response,
+        client=client,
+        out_dir=out_dir,
+        stem=stem,
+        query=query,
+        base_meta=base_meta,
+    )
+    meta_path.write_text(yaml.safe_dump(meta, sort_keys=False,
+                                        allow_unicode=True, width=100))
+    md_path = out_dir / f"{stem}.md"
+    total_cost = meta.get("total_cost")
+    print(f"    -> {_display_path(md_path)}  cost={total_cost}  "
+          f"citations={meta.get('citations_parsed')}  "
+          f"agent_state={meta.get('sidecar_files', {}).get('agent_state_json', False)}")
     return {"slug": slug, "status": meta["status"], "cost": total_cost or 0.0}
 
 

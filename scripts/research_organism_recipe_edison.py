@@ -54,6 +54,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import research_media as rm  # noqa: E402  -- reuse template_vars + resolve
 import research_media_edison as rme  # noqa: E402  -- reuse auth/job/dry-run helpers
+import _edison_capture as ec  # noqa: E402  -- response/citation/agent capture
 
 DEFAULT_TEMPLATE = REPO_ROOT / "templates" / "medium_organism_recipe_extraction.md"
 DEFAULT_OUT_DIR = REPO_ROOT / "research" / "media"
@@ -115,12 +116,17 @@ def run_one(
     out_dir: Path,
     dry_run: bool,
 ) -> dict[str, Any]:
-    """Submit one per-organism task; write md + meta yaml; return stats dict."""
+    """Submit one per-organism task; capture md + sidecars + meta yaml.
+
+    See scripts/_edison_capture.py — the full provenance bundle
+    (-response.json, -citations.md, -agent-state.json, -files.json)
+    lands alongside the primary .md.
+    """
     media_slug = rme.slug_for(media_path)
     organism_slug = _slug_organism(organism, strain)
     job_short = rme._short_job(job)
-    md_path = out_dir / f"{media_slug}-organism-{organism_slug}-edison-{job_short}.md"
-    meta_path = out_dir / f"{media_slug}-organism-{organism_slug}-edison-{job_short}-meta.yaml"
+    stem = f"{media_slug}-organism-{organism_slug}-edison-{job_short}"
+    meta_path = out_dir / f"{stem}-meta.yaml"
 
     query, variables = render_organism_query(
         media_path,
@@ -135,7 +141,7 @@ def run_one(
     def _safe_rel(p: Path) -> str:
         return str(p.relative_to(REPO_ROOT)) if str(p).startswith(str(REPO_ROOT)) else str(p)
 
-    base_meta = {
+    base_meta: dict[str, Any] = {
         "media_slug": media_slug,
         "media_path": _safe_rel(media_path),
         "media_id": str(rm.load_media(media_path).get("id") or ""),
@@ -148,12 +154,14 @@ def run_one(
         "template_vars": variables,
         "query_chars": len(query),
         "query": query,
+        "submitted_at": datetime.now(timezone.utc).isoformat(),
     }
 
     if dry_run:
-        out_dir.mkdir(parents=True, exist_ok=True)
-        meta = {**base_meta, "status": "dry-run"}
-        meta_path.write_text(yaml.safe_dump(meta, sort_keys=False, allow_unicode=True, width=100))
+        meta = ec.capture_dry_run(out_dir=out_dir, stem=stem, query=query, base_meta=base_meta)
+        meta_path.write_text(yaml.safe_dump(meta, sort_keys=False,
+                                            allow_unicode=True, width=100))
+        md_path = out_dir / f"{stem}.md"
         print(f"[DRY RUN] {rme._display_path(media_path)} :: {organism!r}"
               f" -> {rme._display_path(md_path)}")
         print(f"          job={job.name} query_chars={len(query)} meta={rme._display_path(meta_path)}")
@@ -166,23 +174,21 @@ def run_one(
     print(f"  + submitting {organism!r} on {media_slug} ({job.name})...", flush=True)
     [response] = client.run_tasks_until_done(task, progress_bar=False)
 
-    formatted_answer = getattr(response, "formatted_answer", None)
-    answer = getattr(response, "answer", None)
-    total_cost = getattr(response, "total_cost", None)
-    body = formatted_answer or answer or "(no answer field on this job's response type)"
-    md_path.write_text(body)
-
-    meta = {
-        **base_meta,
-        "task_id": str(getattr(response, "task_id", None) or ""),
-        "status": getattr(response, "status", None),
-        "submitted_at": datetime.now(timezone.utc).isoformat(),
-        "total_cost": total_cost,
-        "total_queries": getattr(response, "total_queries", None),
-        "has_successful_answer": getattr(response, "has_successful_answer", None),
-    }
-    meta_path.write_text(yaml.safe_dump(meta, sort_keys=False, allow_unicode=True, width=100))
-    print(f"    -> {rme._display_path(md_path)}  cost={total_cost}")
+    meta = ec.capture_full_response(
+        response=response,
+        client=client,
+        out_dir=out_dir,
+        stem=stem,
+        query=query,
+        base_meta=base_meta,
+    )
+    meta_path.write_text(yaml.safe_dump(meta, sort_keys=False,
+                                        allow_unicode=True, width=100))
+    md_path = out_dir / f"{stem}.md"
+    total_cost = meta.get("total_cost")
+    print(f"    -> {rme._display_path(md_path)}  cost={total_cost}  "
+          f"citations={meta.get('citations_parsed')}  "
+          f"agent_state={meta.get('sidecar_files', {}).get('agent_state_json', False)}")
     return {"organism": organism, "status": meta["status"], "cost": total_cost or 0.0}
 
 

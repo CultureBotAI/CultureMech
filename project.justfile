@@ -84,6 +84,15 @@ research-media-edison-batch batch *args="":
 # scripts/research_organism_recipe_edison.py for the full arg list
 # (--strain, --identifiers, --citation-hint, --phase1-snippet,
 # --organisms-batch, etc.).
+# Retroactively pull verbose response + agent state + files +
+# parsed citations for every research/media/*-edison-*-meta.yaml
+# that has a real task_id but is missing sidecars. The fetch is
+# metadata-only — Edison serves cached task results, so no compute
+# is re-billed. See scripts/enrich_edison_response.py.
+[group('Research')]
+enrich-edison-response *args="":
+    uv run --extra dev python scripts/enrich_edison_response.py {{args}}
+
 # Rank every CultureMech media record for deep-research priority.
 # Writes:
 #   data/import_tracking/reports/deep_research_priority.json       (full list)

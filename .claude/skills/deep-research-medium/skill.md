@@ -106,13 +106,31 @@ uv run --extra dev python scripts/research_media_edison.py \
     --out-dir research/media
 ```
 
-Outputs:
-- `research/media/<slug>-edison-literature.md` (the Markdown answer)
-- `research/media/<slug>-edison-literature-meta.yaml` (task_id, cost,
-  status, full rendered query)
+Outputs (per task; `<stem>` is `<slug>-edison-literature`):
+- `<stem>.md` — primary Markdown answer
+  (`formatted_answer` preferred over `answer`).
+- `<stem>-meta.yaml` — task_id, cost, status, `query_sha256`,
+  full rendered query, template_vars, char counts, sidecar
+  inventory.
+- `<stem>-response.json` — full
+  `response.model_dump(mode="json")` plus the verbose-fetch dump.
+  Every SDK-exposed field, future-proof against new ones.
+- `<stem>-citations.md` — parsed reference list from the answer
+  (numbered entries with PMID / DOI / URL extracted).
+- `<stem>-agent-state.json` — PaperQA's `agent_state` (tool-call
+  trace), `environment_frame`, and verbose `metadata`. Only
+  written when the verbose fetch returns any of those.
+- `<stem>-files.json` — `client.list_files(trajectory_id)` —
+  inventory of any artifacts Edison produced during the run.
 
 In `--dry-run` mode, only the meta yaml is written and no API call is
-made.
+made. The meta still carries `query_sha256` so dry-run prompts can
+be diffed against prior runs.
+
+**Retroactive enrichment**: if a meta yaml has a `task_id` but is
+missing sidecars (e.g. captured by an older script version), run
+`just enrich-edison-response` to pull verbose + files + parse
+citations without re-billing the underlying job.
 
 ### Step 4 — Parse phase-1 candidate organisms
 
@@ -222,17 +240,28 @@ the curator's call after reading the summary.
 
 ## File outputs at a glance
 
+Every Edison task (phase 1 or phase 2) writes the same 5-file
+bundle. The provenance sidecars are not optional — they let you
+re-derive everything from a single git-checked-in directory
+without re-querying the API.
+
 ```
 research/media/
-├── <slug>-edison-literature.md                        # phase 1 answer
-├── <slug>-edison-literature-meta.yaml                 # phase 1 audit
-├── <slug>-organisms.json                              # phase 2 batch input
-├── <slug>-organism-<org1>-edison-literature.md        # phase 2, organism 1
+├── <slug>-edison-literature.md                  # phase 1 answer
+├── <slug>-edison-literature-meta.yaml           # phase 1 audit
+├── <slug>-edison-literature-response.json       # full SDK response
+├── <slug>-edison-literature-citations.md        # parsed refs
+├── <slug>-edison-literature-agent-state.json    # tool-call trace
+├── <slug>-edison-literature-files.json          # artifact inventory
+├── <slug>-organisms.json                        # phase 2 batch input
+├── <slug>-organism-<org1>-edison-literature.md  # phase 2, organism 1
 ├── <slug>-organism-<org1>-edison-literature-meta.yaml
-├── <slug>-organism-<org2>-edison-literature.md        # phase 2, organism 2
-├── <slug>-organism-<org2>-edison-literature-meta.yaml
-├── ...
-└── <slug>-deep-research-summary.md                    # roll-up for curator
+├── <slug>-organism-<org1>-edison-literature-response.json
+├── <slug>-organism-<org1>-edison-literature-citations.md
+├── <slug>-organism-<org1>-edison-literature-agent-state.json
+├── <slug>-organism-<org1>-edison-literature-files.json
+├── ... (one bundle per organism)
+└── <slug>-deep-research-summary.md              # roll-up for curator
 ```
 
 ## Cost & safety
@@ -294,12 +323,17 @@ phase 2.
 
 ## Related scripts
 
-- `scripts/research_media_edison.py` — phase-1 medium-level search
-  (existing).
+- `scripts/research_media_edison.py` — phase-1 medium-level search.
 - `scripts/research_organism_recipe_edison.py` — phase-2 per-organism
-  follow-up (new, ships with this skill).
+  follow-up (ships with this skill).
+- `scripts/_edison_capture.py` — shared response-capture helpers
+  (md + meta + response.json + citations.md + agent-state.json +
+  files.json). Used by both phase-1 and phase-2 scripts.
+- `scripts/enrich_edison_response.py` — retroactively fetch verbose
+  response + files for any meta with a `task_id` but missing
+  sidecars. No re-billing.
 - `scripts/apply_edison_results.py` — apply structured Edison results
-  to YAML records (existing).
+  to YAML records.
 
 ## Quick reference
 
