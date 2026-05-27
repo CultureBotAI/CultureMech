@@ -161,6 +161,7 @@ def enrich_one(client: Any, meta_path: Path, *, force: bool, dry_run: bool) -> d
             }, indent=2, default=str))
             wrote.append("agent_state_json")
 
+    files_listing = None
     if missing["files_json"]:
         try:
             files_listing = client.list_files(trajectory_id=task_id)
@@ -172,6 +173,25 @@ def enrich_one(client: Any, meta_path: Path, *, force: bool, dry_run: bool) -> d
                 json.dumps(ec._safe_model_dump(files_listing),  # pylint: disable=protected-access
                            indent=2, default=str))
             wrote.append("files_json")
+    # Pull named curation artifacts (separate from the files.json
+    # inventory). Always attempt, even when files.json already exists,
+    # so re-running picks up artifacts that were missed before.
+    artifacts_manifest: list[dict[str, Any]] = []
+    if files_listing is None and (out_dir / f"{stem}-files.json").exists():
+        try:
+            files_listing = json.loads(
+                (out_dir / f"{stem}-files.json").read_text())
+        except (OSError, json.JSONDecodeError):
+            files_listing = None
+    if files_listing is not None:
+        artifacts_manifest = ec.fetch_named_artifacts(
+            client=client,
+            files_listing=ec._safe_model_dump(files_listing),  # pylint: disable=protected-access
+            out_dir=out_dir,
+            stem=stem,
+        )
+        if any(a.get("status") == "fetched" for a in artifacts_manifest):
+            wrote.append("artifacts")
 
     # Refresh the meta yaml with the now-richer field set
     updates: dict[str, Any] = {
@@ -181,6 +201,8 @@ def enrich_one(client: Any, meta_path: Path, *, force: bool, dry_run: bool) -> d
         "answer_reasoning_chars": len(getattr(primary, "answer_reasoning", "") or ""),
         "citations_parsed": len(ec.parse_citations(formatted_answer or answer)),
         "sidecar_files": ec._existing_sidecars(out_dir, stem),  # pylint: disable=protected-access
+        "artifacts_fetched": [a for a in artifacts_manifest if a.get("status") == "fetched"],
+        "artifacts_skipped": [a for a in artifacts_manifest if a.get("status") != "fetched"],
         "enriched_at": ec._to_iso(__import__("datetime").datetime.now(  # pylint: disable=protected-access
             __import__("datetime").timezone.utc)),
     }

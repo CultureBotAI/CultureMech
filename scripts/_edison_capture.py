@@ -211,6 +211,144 @@ def _try_list_files(client: Any, task_id: str) -> Any:
         return None
 
 
+# Internal PaperQA artifacts we never want to download (giant pickles
+# carrying the indexed corpus — useful to PaperQA, not to curators).
+_INTERNAL_ARTIFACT_PREFIXES = ("pqa:",)
+
+# Hard cap on per-artifact size; protects against accidentally pulling
+# multi-GB binaries. Curation tables are typically < 100 KB.
+_DEFAULT_ARTIFACT_MAX_BYTES = 2_000_000
+
+
+def _safe_artifact_name(raw_name: str) -> str:
+    """Sanitize an Edison data-storage name for use as a filename."""
+    safe = "".join(c if c.isalnum() or c in "._- " else "_"
+                   for c in raw_name).strip().rstrip(".")
+    safe = "_".join(safe.split())  # collapse whitespace
+    return safe[:120] or "artifact"
+
+
+def _fetch_artifact_content(client: Any, data_storage_id: str) -> tuple[str, str | bytes] | None:
+    """Fetch one artifact's content. Returns (ext, content) or None on failure.
+
+    The SDK may return either a ``Path`` (GCS-backed, possibly extracted
+    zip) or a ``RawFetchResponse``-like object with a ``.content``
+    attribute. Both are handled — we always write the raw payload as
+    text when possible, falling back to bytes.
+    """
+    try:
+        result = client.fetch_data_from_storage(data_storage_id=data_storage_id)
+    except Exception:  # pylint: disable=broad-except
+        return None
+    if result is None:
+        return None
+    # RawFetchResponse-ish: has .content
+    if hasattr(result, "content"):
+        content = getattr(result, "content")
+        if isinstance(content, bytes):
+            try:
+                return ("txt", content.decode("utf-8"))
+            except UnicodeDecodeError:
+                return ("bin", content)
+        return ("txt", str(content))
+    # Path-ish (single file): read it
+    if hasattr(result, "read_text"):
+        try:
+            return ("txt", result.read_text())
+        except (UnicodeDecodeError, OSError):
+            try:
+                return ("bin", result.read_bytes())
+            except OSError:
+                return None
+    # list[Path]: write index plus contents in order
+    if isinstance(result, list):
+        parts: list[str] = []
+        for i, p in enumerate(result):
+            if hasattr(p, "read_text"):
+                try:
+                    parts.append(f"# file {i}: {p.name if hasattr(p, 'name') else p}\n"
+                                 + p.read_text())
+                except Exception:  # pylint: disable=broad-except
+                    parts.append(f"# file {i}: <binary, not inlined>")
+        return ("txt", "\n\n".join(parts))
+    return None
+
+
+def fetch_named_artifacts(
+    *,
+    client: Any,
+    files_listing: Any,
+    out_dir: Path,
+    stem: str,
+    max_bytes: int = _DEFAULT_ARTIFACT_MAX_BYTES,
+) -> list[dict[str, Any]]:
+    """Download named curation artifacts referenced by ``list_files``.
+
+    Writes per-artifact files under ``{stem}-artifacts/`` and returns a
+    manifest summarizing what was fetched, skipped, or failed. The
+    manifest is intentionally compact — full per-artifact metadata is
+    already in ``{stem}-files.json``.
+
+    Skips:
+      - PaperQA internal artifacts (name prefix ``pqa:`` — large pickles).
+      - Artifacts whose declared size exceeds ``max_bytes``.
+
+    Idempotent: an existing file in the artifacts dir is overwritten
+    (Edison artifacts are immutable per task, so re-fetching is fine).
+    """
+    manifest: list[dict[str, Any]] = []
+    if files_listing is None or client is None:
+        return manifest
+
+    # Normalize: list_files may return a dict with 'data', a list, or a
+    # pydantic-y object — pull the iterable of file entries.
+    entries: list[Any]
+    if isinstance(files_listing, dict) and isinstance(files_listing.get("data"), list):
+        entries = files_listing["data"]
+    elif isinstance(files_listing, list):
+        entries = files_listing
+    else:
+        return manifest
+
+    artifacts_dir = out_dir / f"{stem}-artifacts"
+    fetched_any = False
+    for entry in entries:
+        ds = entry.get("data_storage") if isinstance(entry, dict) else None
+        if not isinstance(ds, dict):
+            continue
+        ds_id = ds.get("id") or entry.get("data_storage_id")
+        name = ds.get("name") or "artifact"
+        if not ds_id:
+            continue
+        # Skip internal PaperQA cache
+        if any(name.lower().startswith(p) for p in _INTERNAL_ARTIFACT_PREFIXES):
+            manifest.append({"name": name, "id": str(ds_id), "status": "skipped-internal"})
+            continue
+        size = (ds.get("metadata") or {}).get("size")
+        if isinstance(size, int) and size > max_bytes:
+            manifest.append({"name": name, "id": str(ds_id),
+                             "status": "skipped-too-large", "size": size})
+            continue
+        fetched = _fetch_artifact_content(client, str(ds_id))
+        if fetched is None:
+            manifest.append({"name": name, "id": str(ds_id), "status": "fetch-failed"})
+            continue
+        ext, content = fetched
+        safe = _safe_artifact_name(name)
+        out_path = artifacts_dir / f"{safe}.{ext}"
+        if not fetched_any:
+            artifacts_dir.mkdir(parents=True, exist_ok=True)
+            fetched_any = True
+        if isinstance(content, bytes):
+            out_path.write_bytes(content)
+        else:
+            out_path.write_text(content)
+        manifest.append({"name": name, "id": str(ds_id), "status": "fetched",
+                         "path": str(out_path.relative_to(out_dir)),
+                         "chars": len(content) if isinstance(content, str) else None})
+    return manifest
+
+
 # -- main entry point -----------------------------------------------------
 
 def capture_full_response(
@@ -279,9 +417,18 @@ def capture_full_response(
             }, indent=2, default=str))
 
     files_listing = _try_list_files(client, task_id) if task_id else None
+    artifacts_manifest: list[dict[str, Any]] = []
     if files_listing is not None:
         files_path.write_text(json.dumps(_safe_model_dump(files_listing),
                                          indent=2, default=str))
+        # Pull the actual content of named curation artifacts (small,
+        # not internal PaperQA pickles) into a sibling artifacts/ dir.
+        artifacts_manifest = fetch_named_artifacts(
+            client=client,
+            files_listing=_safe_model_dump(files_listing),
+            out_dir=out_dir,
+            stem=stem,
+        )
 
     # Build the meta dict the caller will yaml-dump
     meta: dict[str, Any] = dict(base_meta)
@@ -307,6 +454,8 @@ def capture_full_response(
         "citations_parsed": len(citations),
         "query_sha256": query_sha256(query),
         "sidecar_files": _existing_sidecars(out_dir, stem),
+        "artifacts_fetched": [a for a in artifacts_manifest if a.get("status") == "fetched"],
+        "artifacts_skipped": [a for a in artifacts_manifest if a.get("status") != "fetched"],
     })
     return meta
 
