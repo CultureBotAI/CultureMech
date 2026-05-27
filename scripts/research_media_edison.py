@@ -326,8 +326,8 @@ def main(argv: list[str] | None = None) -> int:
         return 2
 
     print(f"Edison job:    {job.name} ({job.value})")
-    print(f"Template:      {args.template.relative_to(REPO_ROOT)}")
-    print(f"Output dir:    {args.out_dir.relative_to(REPO_ROOT)}")
+    print(f"Template:      {_display_path(args.template.resolve())}")
+    print(f"Output dir:    {_display_path(args.out_dir.resolve())}")
     print(f"Recipes:       {len(targets)}")
     if args.dry_run:
         print("Mode:          DRY RUN (no API calls, no credits spent)")

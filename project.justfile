@@ -84,6 +84,16 @@ research-media-edison-batch batch *args="":
 # scripts/research_organism_recipe_edison.py for the full arg list
 # (--strain, --identifiers, --citation-hint, --phase1-snippet,
 # --organisms-batch, etc.).
+# Rank every CultureMech media record for deep-research priority.
+# Writes:
+#   data/import_tracking/reports/deep_research_priority.json       (full list)
+#   data/import_tracking/reports/deep_research_priority_top100.json (top 100, batch-ready)
+#   data/import_tracking/reports/deep_research_priority.md          (human report)
+# The top-100 JSON is compatible with `research-media-edison-batch`.
+[group('Research')]
+prioritize-deep-research-candidates *args="":
+    uv run --extra dev python scripts/prioritize_deep_research_candidates.py {{args}}
+
 [group('Research')]
 research-organism-recipe-edison target organism *args="":
     uv run --extra dev python scripts/research_organism_recipe_edison.py \

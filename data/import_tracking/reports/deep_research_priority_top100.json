@@ -1,0 +1,4805 @@
+[
+  {
+    "recipe_name": "chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733",
+    "file_path": "bacterial/chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733.yaml",
+    "id": "CultureMech:009185",
+    "name": "chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733",
+    "original_name": "Chopped Meat Medium (ATCC 1490) with Formate and Fumarate (ATCC 9733)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2618 (TOGO:M2618)",
+    "score": 97.0,
+    "subtotal": 97,
+    "category_multiplier": 1.0,
+    "ingredient_count": 20,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 20,
+        "with_concentration": 20,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 15,
+        "markers": [
+          "culture_collection",
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "archaeoglobus_medium_dsm_399",
+    "file_path": "bacterial/archaeoglobus_medium_dsm_399.yaml",
+    "id": "CultureMech:009220",
+    "name": "archaeoglobus_medium_dsm_399",
+    "original_name": "Archaeoglobus medium (DSM 399)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2665 (TOGO:M2665)",
+    "score": 92.0,
+    "subtotal": 92,
+    "category_multiplier": 1.0,
+    "ingredient_count": 28,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 28,
+        "with_concentration": 28,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 15,
+        "markers": [
+          "culture_collection",
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "bacto_marine_broth_difco_2216_for_dsm_11879",
+    "file_path": "bacterial/bacto_marine_broth_difco_2216_for_dsm_11879.yaml",
+    "id": "CultureMech:008906",
+    "name": "bacto_marine_broth_difco_2216_for_dsm_11879",
+    "original_name": "Bacto Marine Broth (Difco 2216) (For DSM 11879)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2319 (TOGO:M2319)",
+    "score": 92.0,
+    "subtotal": 92,
+    "category_multiplier": 1.0,
+    "ingredient_count": 18,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 18,
+        "with_concentration": 18,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "beijerinckia_medium_lmg_18",
+    "file_path": "bacterial/beijerinckia_medium_lmg_18.yaml",
+    "id": "CultureMech:001213",
+    "name": "beijerinckia_medium_lmg_18",
+    "original_name": "BEIJERINCKIA MEDIUM (LMG 18)",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1736 (mediadive.medium:1736)",
+    "score": 92.0,
+    "subtotal": 92,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "caldicellulosiruptor_medium_for_dsm_10319",
+    "file_path": "bacterial/caldicellulosiruptor_medium_for_dsm_10319.yaml",
+    "id": "CultureMech:009111",
+    "name": "caldicellulosiruptor_medium_for_dsm_10319",
+    "original_name": "Caldicellulosiruptor Medium (For DSM 10319)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2542 (TOGO:M2542)",
+    "score": 92.0,
+    "subtotal": 92,
+    "category_multiplier": 1.0,
+    "ingredient_count": 20,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 20,
+        "with_concentration": 20,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "ignicoccus_medium_for_dsm_18386",
+    "file_path": "bacterial/ignicoccus_medium_for_dsm_18386.yaml",
+    "id": "CultureMech:009166",
+    "name": "ignicoccus_medium_for_dsm_18386",
+    "original_name": "Ignicoccus Medium (for DSM 18386)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2599 (TOGO:M2599)",
+    "score": 92.0,
+    "subtotal": 92,
+    "category_multiplier": 1.0,
+    "ingredient_count": 17,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 17,
+        "with_concentration": 17,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397",
+    "file_path": "bacterial/medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397.yaml",
+    "id": "CultureMech:008179",
+    "name": "medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397",
+    "original_name": "Medium for Co-culture of Strain JT with Methanospirillum hungatei NBRC 100397",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1624 (TOGO:M1624)",
+    "score": 92.0,
+    "subtotal": 92,
+    "category_multiplier": 1.0,
+    "ingredient_count": 35,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 35,
+        "with_concentration": 35,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 15,
+        "markers": [
+          "culture_collection",
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "medium_for_sulfospirillum_dsm_806",
+    "file_path": "bacterial/medium_for_sulfospirillum_dsm_806.yaml",
+    "id": "CultureMech:000678",
+    "name": "medium_for_sulfospirillum_dsm_806",
+    "original_name": "MEDIUM FOR SULFOSPIRILLUM DSM 806",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 121 (mediadive.medium:121)",
+    "score": 92.0,
+    "subtotal": 92,
+    "category_multiplier": 1.0,
+    "ingredient_count": 17,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 17,
+        "with_concentration": 17,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "sulfolobus_medium_anaerobic_for_dsm_2162",
+    "file_path": "bacterial/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+    "id": "CultureMech:009226",
+    "name": "sulfolobus_medium_anaerobic_for_dsm_2162",
+    "original_name": "Sulfolobus Medium (Anaerobic) (For DSM 2162)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2670 (TOGO:M2670)",
+    "score": 92.0,
+    "subtotal": 92,
+    "category_multiplier": 1.0,
+    "ingredient_count": 19,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 19,
+        "with_concentration": 19,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "sulfolobus_medium_for_dsm_5348",
+    "file_path": "bacterial/sulfolobus_medium_for_dsm_5348.yaml",
+    "id": "CultureMech:008908",
+    "name": "sulfolobus_medium_for_dsm_5348",
+    "original_name": "Sulfolobus Medium (For DSM 5348)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2320 (TOGO:M2320)",
+    "score": 92.0,
+    "subtotal": 92,
+    "category_multiplier": 1.0,
+    "ingredient_count": 17,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 17,
+        "with_concentration": 17,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "sulfolobus_medium_for_dsm_9790",
+    "file_path": "bacterial/sulfolobus_medium_for_dsm_9790.yaml",
+    "id": "CultureMech:008911",
+    "name": "sulfolobus_medium_for_dsm_9790",
+    "original_name": "Sulfolobus Medium (For DSM 9790)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2323 (TOGO:M2323)",
+    "score": 92.0,
+    "subtotal": 92,
+    "category_multiplier": 1.0,
+    "ingredient_count": 16,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 16,
+        "with_concentration": 16,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "wilkins_chalgren_anaerobe_broth_n2_co2_for_dsm_15567",
+    "file_path": "bacterial/wilkins_chalgren_anaerobe_broth_n2_co2_for_dsm_15567.yaml",
+    "id": "CultureMech:009286",
+    "name": "wilkins_chalgren_anaerobe_broth_n2_co2_for_dsm_15567",
+    "original_name": "Wilkins-Chalgren Anaerobe Broth (N2/CO2) (For DSM 15567)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2735 (TOGO:M2735)",
+    "score": 92.0,
+    "subtotal": 92,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3",
+    "file_path": "bacterial/syntrophomonas_medium_for_syntrophospora_cellicola_19j_3.yaml",
+    "id": "CultureMech:002870",
+    "name": "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3",
+    "original_name": "SYNTROPHOMONAS MEDIUM (for Syntrophospora cellicola 19J-3)",
+    "category": "bacterial",
+    "media_term": "JCM Medium J519 (mediadive.medium:J519)",
+    "score": 89.0,
+    "subtotal": 89,
+    "category_multiplier": 1.0,
+    "ingredient_count": 25,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 25,
+        "with_concentration": 25,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "leuconostoc_oenos_medium",
+    "file_path": "bacterial/TOGO_M1620_Leuconostoc_oenos_Medium.yaml",
+    "id": "CultureMech:008175",
+    "name": "leuconostoc_oenos_medium",
+    "original_name": "Leuconostoc oenos Medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1620 (TOGO:M1620)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "thermoproteus_neutrophilus_medium",
+    "file_path": "bacterial/TOGO_M1633_Thermoproteus_neutrophilus_Medium.yaml",
+    "id": "CultureMech:008188",
+    "name": "thermoproteus_neutrophilus_medium",
+    "original_name": "Thermoproteus neutrophilus Medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1633 (TOGO:M1633)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 21,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 21,
+        "with_concentration": 21,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "clostridium_thermocellum_medium_d58_medium",
+    "file_path": "bacterial/TOGO_M1766_Clostridium_thermocellum_Medium_D58_Medium.yaml",
+    "id": "CultureMech:008331",
+    "name": "clostridium_thermocellum_medium_d58_medium",
+    "original_name": "Clostridium thermocellum Medium (D58 Medium)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1766 (TOGO:M1766)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "pelobacter_carbinolicus_medium",
+    "file_path": "bacterial/TOGO_M1788_Pelobacter_carbinolicus_Medium.yaml",
+    "id": "CultureMech:008355",
+    "name": "pelobacter_carbinolicus_medium",
+    "original_name": "Pelobacter carbinolicus Medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1788 (TOGO:M1788)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 22,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 22,
+        "with_concentration": 22,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "medium_for_ectothiorhodospira",
+    "file_path": "bacterial/TOGO_M1789_Medium_for_Ectothiorhodospira.yaml",
+    "id": "CultureMech:008356",
+    "name": "medium_for_ectothiorhodospira",
+    "original_name": "Medium for Ectothiorhodospira",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1789 (TOGO:M1789)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 24,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 24,
+        "with_concentration": 24,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "pelobacter_acetylenicus_medium",
+    "file_path": "bacterial/TOGO_M1791_Pelobacter_acetylenicus_Medium.yaml",
+    "id": "CultureMech:008359",
+    "name": "pelobacter_acetylenicus_medium",
+    "original_name": "Pelobacter acetylenicus Medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1791 (TOGO:M1791)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 22,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 22,
+        "with_concentration": 22,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "desulfovibrio_medium",
+    "file_path": "bacterial/TOGO_M1796_Desulfovibrio_medium.yaml",
+    "id": "CultureMech:008364",
+    "name": "desulfovibrio_medium",
+    "original_name": "Desulfovibrio medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1796 (TOGO:M1796)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 13,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 13,
+        "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "medium_for_strains_ja145_ja193_ja310_ja334_ja415_ja430_ja447_and_ja643",
+    "file_path": "bacterial/TOGO_M1836_Medium_for_strains_JA145_JA193_JA310_JA334_JA415_JA430_JA447_and_JA643.yaml",
+    "id": "CultureMech:008409",
+    "name": "medium_for_strains_ja145_ja193_ja310_ja334_ja415_ja430_ja447_and_ja643",
+    "original_name": "Medium for strains JA145, JA193, JA310, JA334, JA415, JA430, JA447 and JA643",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1836 (TOGO:M1836)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "haloterrigena_medium",
+    "file_path": "bacterial/TOGO_M1858_Haloterrigena_medium.yaml",
+    "id": "CultureMech:008432",
+    "name": "haloterrigena_medium",
+    "original_name": "Haloterrigena medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1858 (TOGO:M1858)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "thermus_medium",
+    "file_path": "bacterial/TOGO_M1860_Thermus_medium.yaml",
+    "id": "CultureMech:008435",
+    "name": "thermus_medium",
+    "original_name": "Thermus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1860 (TOGO:M1860)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 24,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 24,
+        "with_concentration": 24,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "thermus_medium",
+    "file_path": "bacterial/TOGO_M1875_Thermus_medium.yaml",
+    "id": "CultureMech:008450",
+    "name": "thermus_medium",
+    "original_name": "Thermus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1875 (TOGO:M1875)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 23,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 23,
+        "with_concentration": 23,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "thermus_medium",
+    "file_path": "bacterial/TOGO_M1876_Thermus_medium.yaml",
+    "id": "CultureMech:008451",
+    "name": "thermus_medium",
+    "original_name": "Thermus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1876 (TOGO:M1876)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 12,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 12,
+        "with_concentration": 12,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "thermus_medium",
+    "file_path": "bacterial/TOGO_M1879_Thermus_medium.yaml",
+    "id": "CultureMech:008453",
+    "name": "thermus_medium",
+    "original_name": "Thermus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1879 (TOGO:M1879)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 24,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 24,
+        "with_concentration": 24,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "thermus_medium",
+    "file_path": "bacterial/TOGO_M1880_Thermus_medium.yaml",
+    "id": "CultureMech:008455",
+    "name": "thermus_medium",
+    "original_name": "Thermus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1880 (TOGO:M1880)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 13,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 13,
+        "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "thermus_medium",
+    "file_path": "bacterial/TOGO_M1885_Thermus_medium.yaml",
+    "id": "CultureMech:008459",
+    "name": "thermus_medium",
+    "original_name": "Thermus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1885 (TOGO:M1885)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 25,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 25,
+        "with_concentration": 25,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "thiobacillus_plumbophilus_medium",
+    "file_path": "bacterial/TOGO_M1927_Thiobacillus_plumbophilus_Medium.yaml",
+    "id": "CultureMech:008506",
+    "name": "thiobacillus_plumbophilus_medium",
+    "original_name": "Thiobacillus plumbophilus Medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1927 (TOGO:M1927)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 23,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 23,
+        "with_concentration": 23,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "friis_medium",
+    "file_path": "bacterial/TOGO_M2228_Friis_medium.yaml",
+    "id": "CultureMech:008816",
+    "name": "friis_medium",
+    "original_name": "Friis medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2228 (TOGO:M2228)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 23,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 23,
+        "with_concentration": 23,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "chocolate_agar",
+    "file_path": "bacterial/TOGO_M2274_Chocolate_agar.yaml",
+    "id": "CultureMech:008860",
+    "name": "chocolate_agar",
+    "original_name": "Chocolate agar",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2274 (TOGO:M2274)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "acidithiobacillus_ferrooxidans_medium",
+    "file_path": "bacterial/TOGO_M2297_Acidithiobacillus_ferrooxidans_Medium.yaml",
+    "id": "CultureMech:008883",
+    "name": "acidithiobacillus_ferrooxidans_medium",
+    "original_name": "Acidithiobacillus ferrooxidans Medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2297 (TOGO:M2297)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 16,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 16,
+        "with_concentration": 16,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "natronobacteria_medium",
+    "file_path": "bacterial/TOGO_M2378_Natronobacteria_medium.yaml",
+    "id": "CultureMech:008962",
+    "name": "natronobacteria_medium",
+    "original_name": "Natronobacteria medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2378 (TOGO:M2378)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 19,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 19,
+        "with_concentration": 19,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "pyrococcus_medium",
+    "file_path": "bacterial/TOGO_M2554_Pyrococcus_medium.yaml",
+    "id": "CultureMech:009123",
+    "name": "pyrococcus_medium",
+    "original_name": "Pyrococcus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2554 (TOGO:M2554)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 24,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 24,
+        "with_concentration": 24,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "dictyoglomus_medium",
+    "file_path": "bacterial/TOGO_M2569_Dictyoglomus_medium.yaml",
+    "id": "CultureMech:009137",
+    "name": "dictyoglomus_medium",
+    "original_name": "Dictyoglomus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2569 (TOGO:M2569)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 20,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 20,
+        "with_concentration": 20,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "tryptic_soy_agar_broth_with_5_sheep_blood_defibrinated",
+    "file_path": "bacterial/TOGO_M2573_Tryptic_Soy_Agar_Broth_with_5_Sheep_Blood_defibrinated.yaml",
+    "id": "CultureMech:009142",
+    "name": "tryptic_soy_agar_broth_with_5_sheep_blood_defibrinated",
+    "original_name": "Tryptic Soy Agar/Broth with 5% Sheep Blood (defibrinated)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2573 (TOGO:M2573)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "modified_chopped_meat_medium",
+    "file_path": "bacterial/TOGO_M2576_Modified_chopped_meat_medium.yaml",
+    "id": "CultureMech:009145",
+    "name": "modified_chopped_meat_medium",
+    "original_name": "Modified chopped meat medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2576 (TOGO:M2576)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "desulfurococcus_medium",
+    "file_path": "bacterial/TOGO_M2671_Desulfurococcus_medium.yaml",
+    "id": "CultureMech:009227",
+    "name": "desulfurococcus_medium",
+    "original_name": "Desulfurococcus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2671 (TOGO:M2671)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 19,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 19,
+        "with_concentration": 19,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "thermoproteus_medium",
+    "file_path": "bacterial/TOGO_M2677_Thermoproteus_medium.yaml",
+    "id": "CultureMech:009232",
+    "name": "thermoproteus_medium",
+    "original_name": "Thermoproteus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2677 (TOGO:M2677)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 20,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 20,
+        "with_concentration": 20,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "alkaline_xylan_medium",
+    "file_path": "bacterial/TOGO_M2692_Alkaline_xylan_medium.yaml",
+    "id": "CultureMech:009244",
+    "name": "alkaline_xylan_medium",
+    "original_name": "Alkaline xylan medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2692 (TOGO:M2692)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "clostridium_cellulolytic_medium",
+    "file_path": "bacterial/TOGO_M2711_Clostridium_Cellulolytic_medium.yaml",
+    "id": "CultureMech:009263",
+    "name": "clostridium_cellulolytic_medium",
+    "original_name": "Clostridium Cellulolytic medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2711 (TOGO:M2711)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 12,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 12,
+        "with_concentration": 12,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "clostridium_medium",
+    "file_path": "bacterial/TOGO_M2726_Clostridium_medium.yaml",
+    "id": "CultureMech:009276",
+    "name": "clostridium_medium",
+    "original_name": "Clostridium medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2726 (TOGO:M2726)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 23,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 23,
+        "with_concentration": 23,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose",
+    "file_path": "bacterial/TOGO_M2764_BHI_w_heat-inactivated_Fetal_Bovine_Serum_and_Glucose.yaml",
+    "id": "CultureMech:009312",
+    "name": "bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose",
+    "original_name": "BHI w/ heat-inactivated Fetal Bovine Serum and Glucose",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2764 (TOGO:M2764)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 12,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 12,
+        "with_concentration": 12,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "thiomonas_cuprina_medium",
+    "file_path": "bacterial/TOGO_M3035_Thiomonas_cuprina_medium.yaml",
+    "id": "CultureMech:009547",
+    "name": "thiomonas_cuprina_medium",
+    "original_name": "Thiomonas cuprina medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3035 (TOGO:M3035)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 22,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 22,
+        "with_concentration": 22,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "thiomonas_cuprina_medium",
+    "file_path": "bacterial/TOGO_M3036_Thiomonas_cuprina_medium.yaml",
+    "id": "CultureMech:009548",
+    "name": "thiomonas_cuprina_medium",
+    "original_name": "Thiomonas cuprina medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3036 (TOGO:M3036)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 22,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 22,
+        "with_concentration": 22,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "chloroflexus_medium",
+    "file_path": "bacterial/TOGO_M3142_Chloroflexus_medium.yaml",
+    "id": "CultureMech:009610",
+    "name": "chloroflexus_medium",
+    "original_name": "Chloroflexus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3142 (TOGO:M3142)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 20,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 20,
+        "with_concentration": 20,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "defined_minimal_medium",
+    "file_path": "bacterial/TOGO_M3198_Defined_minimal_medium.yaml",
+    "id": "CultureMech:009639",
+    "name": "defined_minimal_medium",
+    "original_name": "Defined minimal medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3198 (TOGO:M3198)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "defined_minimal_medium",
+    "file_path": "bacterial/TOGO_M3199_Defined_minimal_medium.yaml",
+    "id": "CultureMech:009640",
+    "name": "defined_minimal_medium",
+    "original_name": "Defined minimal medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3199 (TOGO:M3199)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "defined_minimal_medium",
+    "file_path": "bacterial/TOGO_M3200_Defined_minimal_medium.yaml",
+    "id": "CultureMech:009643",
+    "name": "defined_minimal_medium",
+    "original_name": "Defined minimal medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3200 (TOGO:M3200)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "defined_minimal_medium",
+    "file_path": "bacterial/TOGO_M3201_Defined_minimal_medium.yaml",
+    "id": "CultureMech:009644",
+    "name": "defined_minimal_medium",
+    "original_name": "Defined minimal medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3201 (TOGO:M3201)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "defined_minimal_medium",
+    "file_path": "bacterial/TOGO_M3202_Defined_minimal_medium.yaml",
+    "id": "CultureMech:009645",
+    "name": "defined_minimal_medium",
+    "original_name": "Defined minimal medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3202 (TOGO:M3202)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 16,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 16,
+        "with_concentration": 16,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "defined_medium",
+    "file_path": "bacterial/TOGO_M3228_Defined_medium.yaml",
+    "id": "CultureMech:009667",
+    "name": "defined_medium",
+    "original_name": "Defined medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3228 (TOGO:M3228)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 17,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 17,
+        "with_concentration": 17,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "minimal_media",
+    "file_path": "bacterial/TOGO_M3231_Minimal_media.yaml",
+    "id": "CultureMech:009671",
+    "name": "minimal_media",
+    "original_name": "Minimal media",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3231 (TOGO:M3231)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3",
+    "file_path": "bacterial/TOGO_M520_Syntrophomonas_Medium_for_Syntrophospora_cellicola_19J-3.yaml",
+    "id": "CultureMech:009912",
+    "name": "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3",
+    "original_name": "Syntrophomonas Medium (for Syntrophospora cellicola 19J-3)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M520 (TOGO:M520)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 22,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 22,
+        "with_concentration": 22,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "acidianus_manzaensis_medium_for_autotrophic_growth",
+    "file_path": "bacterial/acidianus_manzaensis_medium_for_autotrophic_growth.yaml",
+    "id": "CultureMech:008183",
+    "name": "acidianus_manzaensis_medium_for_autotrophic_growth",
+    "original_name": "Acidianus manzaensis Medium for Autotrophic Growth",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1628 (TOGO:M1628)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "acidianus_manzaensis_medium_for_heterotrophic_growth",
+    "file_path": "bacterial/acidianus_manzaensis_medium_for_heterotrophic_growth.yaml",
+    "id": "CultureMech:008184",
+    "name": "acidianus_manzaensis_medium_for_heterotrophic_growth",
+    "original_name": "Acidianus manzaensis Medium for Heterotrophic Growth",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1629 (TOGO:M1629)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "acidianus_medium",
+    "file_path": "bacterial/acidianus_medium.yaml",
+    "id": "CultureMech:008458",
+    "name": "acidianus_medium",
+    "original_name": "Acidianus medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1884 (TOGO:M1884)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 21,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 21,
+        "with_concentration": 21,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "acidolobus_aceticus_medium_for_dsm_16705",
+    "file_path": "bacterial/acidolobus_aceticus_medium_for_dsm_16705.yaml",
+    "id": "CultureMech:009233",
+    "name": "acidolobus_aceticus_medium_for_dsm_16705",
+    "original_name": "Acidolobus Aceticus Medium (For DSM 16705)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2679 (TOGO:M2679)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 31,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 31,
+        "with_concentration": 31,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "actinotalea_fermentas_medium",
+    "file_path": "bacterial/actinotalea_fermentas_medium.yaml",
+    "id": "CultureMech:008423",
+    "name": "actinotalea_fermentas_medium",
+    "original_name": "Actinotalea fermentas medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1849 (TOGO:M1849)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "alkaline_halophile_medium",
+    "file_path": "bacterial/alkaline_halophile_medium.yaml",
+    "id": "CultureMech:008289",
+    "name": "alkaline_halophile_medium",
+    "original_name": "Alkaline halophile medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1726 (TOGO:M1726)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 22,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 22,
+        "with_concentration": 22,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "allen_medium",
+    "file_path": "bacterial/allen_medium.yaml",
+    "id": "CultureMech:008820",
+    "name": "allen_medium",
+    "original_name": "Allen medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2231 (TOGO:M2231)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 23,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 23,
+        "with_concentration": 23,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "anaerobic_butyrate_rhodospirillaceae_medium_rm",
+    "file_path": "bacterial/anaerobic_butyrate_rhodospirillaceae_medium_rm.yaml",
+    "id": "CultureMech:009631",
+    "name": "anaerobic_butyrate_rhodospirillaceae_medium_rm",
+    "original_name": "Anaerobic butyrate Rhodospirillaceae medium (RM)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3181 (TOGO:M3181)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 24,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 24,
+        "with_concentration": 24,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "anaerobic_freshwater_fwm_medium_for_dsm_15978",
+    "file_path": "bacterial/anaerobic_freshwater_fwm_medium_for_dsm_15978.yaml",
+    "id": "CultureMech:009205",
+    "name": "anaerobic_freshwater_fwm_medium_for_dsm_15978",
+    "original_name": "Anaerobic Freshwater (FWM) Medium (for DSM 15978)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2649 (TOGO:M2649)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 34,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 34,
+        "with_concentration": 34,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "artificial_deep_lake_medium",
+    "file_path": "bacterial/artificial_deep_lake_medium.yaml",
+    "id": "CultureMech:008960",
+    "name": "artificial_deep_lake_medium",
+    "original_name": "Artificial deep lake medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2376 (TOGO:M2376)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 12,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 12,
+        "with_concentration": 12,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "basal_salt_medium_with_biphenyl",
+    "file_path": "bacterial/basal_salt_medium_with_biphenyl.yaml",
+    "id": "CultureMech:008625",
+    "name": "basal_salt_medium_with_biphenyl",
+    "original_name": "Basal Salt Medium with biphenyl",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2036 (TOGO:M2036)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 13,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 13,
+        "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "basal_salts_medium_bsm_modified_from_that_of_hareland_et_al_j_bacteriol_121_272_285_1975_by_removal_of_the_nitriloacetic_acid",
+    "file_path": "bacterial/basal_salts_medium_bsm_modified_from_that_of_hareland_et_al_j_bacteriol_121_272_285_1975_by_removal_of_the_nitriloacetic_acid.yaml",
+    "id": "CultureMech:008825",
+    "name": "basal_salts_medium_bsm_modified_from_that_of_hareland_et_al_j_bacteriol_121_272_285_1975_by_removal_of_the_nitriloacetic_acid",
+    "original_name": "Basal salts medium (BSM) modified from that of Hareland et al. ( J Bacteriol 121:272\u2013 285(1975)) by removal of the nitriloacetic acid",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2237 (TOGO:M2237)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 12,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 12,
+        "with_concentration": 12,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose",
+    "file_path": "bacterial/bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose.yaml",
+    "id": "CultureMech:009188",
+    "name": "bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose",
+    "original_name": "BHI w/ heat-inactivated Fetal Bovine Serum and Glucose",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2622 (TOGO:M2622)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 12,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 12,
+        "with_concentration": 12,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "brain_heart_infusion_agar_amended_with_5_v_v_laked_horse_blood",
+    "file_path": "bacterial/brain_heart_infusion_agar_amended_with_5_v_v_laked_horse_blood.yaml",
+    "id": "CultureMech:009466",
+    "name": "brain_heart_infusion_agar_amended_with_5_v_v_laked_horse_blood",
+    "original_name": "Brain Heart Infusion agar (amended with 5% (v/v) laked horse blood)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2932 (TOGO:M2932)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "brain_heart_infusion_bhi_broth_containing_c_difficile_supplement_and_0_04_cysteine",
+    "file_path": "bacterial/brain_heart_infusion_bhi_broth_containing_c_difficile_supplement_and_0_04_cysteine.yaml",
+    "id": "CultureMech:009359",
+    "name": "brain_heart_infusion_bhi_broth_containing_c_difficile_supplement_and_0_04_cysteine",
+    "original_name": "Brain heart infusion (BHI) broth containing C. difficile supplement and 0.04% cysteine",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2811 (TOGO:M2811)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 13,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 13,
+        "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "brain_heart_infusion_bhi_broth_oxoid",
+    "file_path": "bacterial/brain_heart_infusion_bhi_broth_oxoid.yaml",
+    "id": "CultureMech:008801",
+    "name": "brain_heart_infusion_bhi_broth_oxoid",
+    "original_name": "Brain heart infusion (BHI) broth (Oxoid)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2211 (TOGO:M2211)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 13,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 13,
+        "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1",
+    "file_path": "bacterial/brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1.yaml",
+    "id": "CultureMech:009246",
+    "name": "brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1",
+    "original_name": "Brucella agar plates supplemented with hemin and vitamin K1",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2694 (TOGO:M2694)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "byg_medium_for_acidiphilium_multivorum",
+    "file_path": "bacterial/byg_medium_for_acidiphilium_multivorum.yaml",
+    "id": "CultureMech:008199",
+    "name": "byg_medium_for_acidiphilium_multivorum",
+    "original_name": "BYG Medium (for Acidiphilium multivorum)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1643 (TOGO:M1643)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "carboxydothermus_medium_for_dsm_22663",
+    "file_path": "bacterial/carboxydothermus_medium_for_dsm_22663.yaml",
+    "id": "CultureMech:009229",
+    "name": "carboxydothermus_medium_for_dsm_22663",
+    "original_name": "Carboxydothermus Medium (For DSM 22663)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2674 (TOGO:M2674)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 32,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 32,
+        "with_concentration": 32,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "chocolate_agar_polyvitex_pvx",
+    "file_path": "bacterial/chocolate_agar_polyvitex_pvx.yaml",
+    "id": "CultureMech:008743",
+    "name": "chocolate_agar_polyvitex_pvx",
+    "original_name": "Chocolate agar + PolyViteX (PVX)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2149 (TOGO:M2149)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "chopped_meat_carbohydrate_medium_atcc_medium_593_with_0_1_cellobiose_0_1_maltose_and_0_1_starch",
+    "file_path": "bacterial/chopped_meat_carbohydrate_medium_atcc_medium_593_with_0_1_cellobiose_0_1_maltose_and_0_1_starch.yaml",
+    "id": "CultureMech:009257",
+    "name": "chopped_meat_carbohydrate_medium_atcc_medium_593_with_0_1_cellobiose_0_1_maltose_and_0_1_starch",
+    "original_name": "Chopped meat carbohydrate medium (ATCC Medium 593) with 0.1% cellobiose, 0.1% maltose and 0.1% starch",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2705 (TOGO:M2705)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 12,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 12,
+        "with_concentration": 12,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "chopped_meat_carbohydrates_with_rumen_fluid",
+    "file_path": "bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "id": "CultureMech:009143",
+    "name": "chopped_meat_carbohydrates_with_rumen_fluid",
+    "original_name": "Chopped meat carbohydrates with rumen fluid",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2574 (TOGO:M2574)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 21,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 21,
+        "with_concentration": 21,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "chopped_meat_medium_with_1_glucose",
+    "file_path": "bacterial/chopped_meat_medium_with_1_glucose.yaml",
+    "id": "CultureMech:009305",
+    "name": "chopped_meat_medium_with_1_glucose",
+    "original_name": "Chopped meat medium with 1% glucose",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2754 (TOGO:M2754)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "clostridia_growth_medium_cgm",
+    "file_path": "bacterial/clostridia_growth_medium_cgm.yaml",
+    "id": "CultureMech:009356",
+    "name": "clostridia_growth_medium_cgm",
+    "original_name": "Clostridia growth medium (CGM)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2808 (TOGO:M2808)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 12,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 12,
+        "with_concentration": 12,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "clostridium_cellulolytic_medium",
+    "file_path": "bacterial/clostridium_cellulolytic_medium.yaml",
+    "id": "CultureMech:009254",
+    "name": "clostridium_cellulolytic_medium",
+    "original_name": "Clostridium Cellulolytic medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2701 (TOGO:M2701)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 12,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 12,
+        "with_concentration": 12,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "clostridium_thermocellum_medium_d58_medium",
+    "file_path": "bacterial/clostridium_thermocellum_medium_d58_medium.yaml",
+    "id": "CultureMech:008330",
+    "name": "clostridium_thermocellum_medium_d58_medium",
+    "original_name": "Clostridium thermocellum Medium (D58 Medium)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1765 (TOGO:M1765)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2",
+    "file_path": "bacterial/columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2.yaml",
+    "id": "CultureMech:008843",
+    "name": "columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2",
+    "original_name": "Columbia broth supplemented with 0.01% 3-NAD and 25 mM CaCl2",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2256 (TOGO:M2256)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 16,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 16,
+        "with_concentration": 16,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "defined_medium",
+    "file_path": "bacterial/defined_medium.yaml",
+    "id": "CultureMech:009665",
+    "name": "defined_medium",
+    "original_name": "Defined medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3225 (TOGO:M3225)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 18,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 18,
+        "with_concentration": 18,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "defined_minimal_medium",
+    "file_path": "bacterial/defined_minimal_medium.yaml",
+    "id": "CultureMech:009638",
+    "name": "defined_minimal_medium",
+    "original_name": "Defined minimal medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3197 (TOGO:M3197)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "desulfobacter_medium_for_dsm_10631",
+    "file_path": "bacterial/desulfobacter_medium_for_dsm_10631.yaml",
+    "id": "CultureMech:009115",
+    "name": "desulfobacter_medium_for_dsm_10631",
+    "original_name": "Desulfobacter Medium (For DSM 10631)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2546 (TOGO:M2546)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 37,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 37,
+        "with_concentration": 37,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "desulfobacterium_medium_for_dsm_17291",
+    "file_path": "bacterial/desulfobacterium_medium_for_dsm_17291.yaml",
+    "id": "CultureMech:009116",
+    "name": "desulfobacterium_medium_for_dsm_17291",
+    "original_name": "Desulfobacterium Medium (For DSM 17291)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2547 (TOGO:M2547)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 37,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 37,
+        "with_concentration": 37,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "desulfobulbus_sp_medium_freshwater_for_dsm_14880",
+    "file_path": "bacterial/desulfobulbus_sp_medium_freshwater_for_dsm_14880.yaml",
+    "id": "CultureMech:009098",
+    "name": "desulfobulbus_sp_medium_freshwater_for_dsm_14880",
+    "original_name": "Desulfobulbus SP. Medium (Freshwater) (For DSM 14880)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2529 (TOGO:M2529)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 37,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 37,
+        "with_concentration": 37,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "desulfofarcimen_medium_for_dsm_7213",
+    "file_path": "bacterial/desulfofarcimen_medium_for_dsm_7213.yaml",
+    "id": "CultureMech:009103",
+    "name": "desulfofarcimen_medium_for_dsm_7213",
+    "original_name": "Desulfofarcimen Medium (For DSM 7213)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2533 (TOGO:M2533)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 35,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 35,
+        "with_concentration": 35,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "desulfovibrio_mv_medium_for_dsm_13257",
+    "file_path": "bacterial/desulfovibrio_mv_medium_for_dsm_13257.yaml",
+    "id": "CultureMech:009288",
+    "name": "desulfovibrio_mv_medium_for_dsm_13257",
+    "original_name": "Desulfovibrio (MV) Medium (For DSM 13257)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2738 (TOGO:M2738)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 35,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 35,
+        "with_concentration": 35,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "dsm_135_medium",
+    "file_path": "bacterial/dsm_135_medium.yaml",
+    "id": "CultureMech:009613",
+    "name": "dsm_135_medium",
+    "original_name": "DSM 135 medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3149 (TOGO:M3149)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 33,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 33,
+        "with_concentration": 33,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "elusimicrobium_minutum_medium",
+    "file_path": "bacterial/elusimicrobium_minutum_medium.yaml",
+    "id": "CultureMech:009172",
+    "name": "elusimicrobium_minutum_medium",
+    "original_name": "Elusimicrobium minutum medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2604 (TOGO:M2604)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 25,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 25,
+        "with_concentration": 25,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "enriched_anaerobe_medium",
+    "file_path": "bacterial/enriched_anaerobe_medium.yaml",
+    "id": "CultureMech:009304",
+    "name": "enriched_anaerobe_medium",
+    "original_name": "Enriched anaerobe medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2753 (TOGO:M2753)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "eubacterium_acidaminophilum_medium",
+    "file_path": "bacterial/eubacterium_acidaminophilum_medium.yaml",
+    "id": "CultureMech:009297",
+    "name": "eubacterium_acidaminophilum_medium",
+    "original_name": "Eubacterium acidaminophilum medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2746 (TOGO:M2746)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 21,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 21,
+        "with_concentration": 21,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "formate_medium",
+    "file_path": "bacterial/formate_medium.yaml",
+    "id": "CultureMech:009652",
+    "name": "formate_medium",
+    "original_name": "Formate medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M3211 (TOGO:M3211)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "frey_broth",
+    "file_path": "bacterial/frey_broth.yaml",
+    "id": "CultureMech:008822",
+    "name": "frey_broth",
+    "original_name": "Frey broth",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2233 (TOGO:M2233)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "gbs_salts_modified_for_thermocrinis_jamiesonii",
+    "file_path": "bacterial/gbs_salts_modified_for_thermocrinis_jamiesonii.yaml",
+    "id": "CultureMech:000953",
+    "name": "gbs_salts_modified_for_thermocrinis_jamiesonii",
+    "original_name": "GBS salts modified for Thermocrinis jamiesonii",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1486 (mediadive.medium:1486)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 18,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 18,
+        "with_concentration": 18,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "geobacter_pelophilus_medium_for_dsm_15288",
+    "file_path": "bacterial/geobacter_pelophilus_medium_for_dsm_15288.yaml",
+    "id": "CultureMech:009275",
+    "name": "geobacter_pelophilus_medium_for_dsm_15288",
+    "original_name": "Geobacter Pelophilus Medium (For DSM 15288)",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2725 (TOGO:M2725)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 35,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 35,
+        "with_concentration": 35,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "halobaculum_magnesiiphilum_medium",
+    "file_path": "bacterial/halobaculum_magnesiiphilum_medium.yaml",
+    "id": "CultureMech:008541",
+    "name": "halobaculum_magnesiiphilum_medium",
+    "original_name": "Halobaculum magnesiiphilum medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M1960 (TOGO:M1960)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "isosphaera_medium",
+    "file_path": "bacterial/isosphaera_medium.yaml",
+    "id": "CultureMech:008891",
+    "name": "isosphaera_medium",
+    "original_name": "Isosphaera medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2305 (TOGO:M2305)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 22,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 22,
+        "with_concentration": 22,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "k_101_flexibacter_medium",
+    "file_path": "bacterial/k_101_flexibacter_medium.yaml",
+    "id": "CultureMech:009160",
+    "name": "k_101_flexibacter_medium",
+    "original_name": "K-101 Flexibacter medium",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2593 (TOGO:M2593)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 19,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 19,
+        "with_concentration": 19,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "leeming_amp_notman_agar_lna_leeming_amp_notman_1987_in_the_yeasts_a_taxonomic_study_5th_edn",
+    "file_path": "bacterial/leeming_amp_notman_agar_lna_leeming_amp_notman_1987_in_the_yeasts_a_taxonomic_study_5th_edn.yaml",
+    "id": "CultureMech:008670",
+    "name": "leeming_amp_notman_agar_lna_leeming_amp_notman_1987_in_the_yeasts_a_taxonomic_study_5th_edn",
+    "original_name": "Leeming &amp; Notman agar (LNA) (Leeming &amp; Notman 1987) in The Yeasts, a Taxonomic Study, 5th edn",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2080 (TOGO:M2080)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  }
+]
