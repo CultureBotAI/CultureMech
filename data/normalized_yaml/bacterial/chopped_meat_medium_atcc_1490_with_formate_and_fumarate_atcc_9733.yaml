@@ -222,6 +222,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-05-28T06:12:21.648981+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Edison phase-2: Bacteroides ureolyticus ATCC 33387 is an exact parent match;
+    ATCC 1490 base (without formate/fumarate) and carbonate/CO2-buffered ATCC 1490
+    are variants. [added 7 organism(s), 2 variant(s)]'
 solutions:
 - preferred_term: Formate and Fumarate Solution
   composition: []
@@ -247,3 +253,108 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_2227_Vitamin_K1_solution.yaml for composition
   name: Unknown solution
+target_organisms:
+- preferred_term: Bacteroides ureolyticus
+  strain: ATCC 33387
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: 'O''Hanlon et al. 2011; EXACT parent-medium match (ATCC 1490 + formate
+      + fumarate). Warning: B. ureolyticus has since been reclassified as Campylobacter
+      ureolyticus, but that is external to this source. | Identifiers: ATCC 33387;
+      reclassified as Campylobacter ureolyticus (external to source)'
+    snippet: Bacteroides ureolyticus ATCC 33387 was grown in ATCC medium 1490 with
+      formate and fumarate. Each species was grown anaerobically without agitation
+      at 37C for 24 or 48 hours.
+- preferred_term: Parabacteroides distasonis
+  strain: ATCC 8503
+  evidence:
+  - reference: doi:10.1038/s41598-023-47003-0
+    supports: SUPPORT
+    explanation: Kleniewska et al. 2023; grown on ATCC 1490 base (no formate/fumarate
+      stated) -> see variant atcc_1490_base_no_formate_fumarate.
+    snippet: Parabacteroides distasonis (ATCC 8503) was cultivated in ATCC 1490 Modified
+      Chopped Meat medium at 37C anaerobically.
+- preferred_term: Fusobacterium nucleatum
+  strain: ATCC 25586
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: O'Hanlon et al. 2011; ATCC 1490 base without formate/fumarate ->
+      see variant atcc_1490_base_no_formate_fumarate.
+    snippet: Fusobacterium nucleatum ATCC 25586 ... grown in ATCC medium 1490 (Modified
+      chopped meat medium), anaerobically at 37C for 24 or 48 h.
+- preferred_term: Porphyromonas levii
+  strain: ATCC 29147
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: O'Hanlon et al. 2011; ATCC 1490 base without formate/fumarate ->
+      see variant atcc_1490_base_no_formate_fumarate.
+    snippet: Porphyromonas levii ATCC 29147 [was] grown in ATCC medium 1490 (Modified
+      chopped meat medium), anaerobically at 37C for 24 or 48 h.
+- preferred_term: Prevotella bivia
+  strain: ATCC 29303
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: O'Hanlon et al. 2011; ATCC 1490 base without formate/fumarate ->
+      see variant atcc_1490_base_no_formate_fumarate.
+    snippet: Prevotella bivia ATCC 29303 ... [was] grown in ATCC medium 1490 (Modified
+      chopped meat medium), anaerobically at 37C for 24 or 48 h.
+- preferred_term: Lactobacillus crispatus
+  strain: ATCC 33820
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: O'Hanlon et al. 2011; ATCC 1490 base without formate/fumarate ->
+      see variant atcc_1490_base_no_formate_fumarate.
+    snippet: Lactobacillus crispatus ATCC 33820 was grown in ATCC medium 1490 (Modified
+      chopped meat medium) anaerobically without agitation at 37C for 24 h.
+- preferred_term: Fusobacterium necrophorum
+  strain: ATCC 27852
+  evidence:
+  - reference: doi:10.1002/ptr.765
+    supports: SUPPORT
+    explanation: Johnston et al. 2001; carbonate/CO2-buffered ATCC 1490 -> see variant
+      atcc_1490_carbonate_co2_buffered.
+    snippet: Fusobacterium necrophorum (ATCC 27852) was grown in a modified chopped
+      meat medium (ATCC 1490) buffered with carbonate/CO2; 38C, anaerobic glove bag,
+      serum bottle technique.
+variants:
+- name: atcc_1490_base_no_formate_fumarate
+  relationship: OMITTED_COMPONENT_VARIANT
+  description: ATCC medium 1490 (Modified Chopped Meat medium) used WITHOUT the added
+    formate and fumarate of the parent record.
+  modifications:
+  - Formate and fumarate omitted relative to the parent (ATCC 1490 + formate + fumarate).
+  - Base ATCC 1490 Modified Chopped Meat medium; anaerobic, 37C, 24-48 h.
+  purpose: Several BV-associated and gut anaerobes are reported on plain ATCC 1490
+    without the formate/fumarate supplement; model as the base variant rather than
+    asserting growth on the formate+fumarate parent.
+  evidence:
+  - reference: doi:10.1186/1471-2334-11-200
+    supports: SUPPORT
+    explanation: O'Hanlon et al. 2011 distinguishes the plain ATCC 1490 base from
+      the formate+fumarate parent formulation.
+    snippet: Fusobacterium nucleatum ATCC 25586 and Porphyromonas levii ATCC 29147
+      were all grown in ATCC medium 1490 (Modified chopped meat medium).
+- name: atcc_1490_carbonate_co2_buffered
+  relationship: SUPPLEMENTED_VARIANT
+  description: ATCC 1490 modified chopped meat medium buffered with carbonate/CO2
+    (Johnston et al. 2001).
+  modifications:
+  - Carbonate/CO2 buffering added to ATCC 1490 base (exact carbonate species/concentration
+    and gas composition not printed).
+  - For MIC assays, medium clarified through a 0.8 um filter (assay-use processing).
+  - Anaerobic glove bag; serum bottle technique; 38C.
+  purpose: Capture the carbonate/CO2-buffered ATCC 1490 variant used for Fusobacterium
+    necrophorum growth and MIC assays.
+  evidence:
+  - reference: doi:10.1002/ptr.765
+    supports: SUPPORT
+    explanation: Johnston et al. 2001; ATCC 1490-derived variant with carbonate/CO2
+      buffering; no formate/fumarate, so distinct from the parent.
+    snippet: Fusobacterium necrophorum (ATCC 27852) was grown in a modified chopped
+      meat medium (ATCC 1490) buffered with carbonate/CO2. For MIC assays, this medium
+      was clarified through a 0.8 um filter.

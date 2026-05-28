@@ -334,6 +334,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-05-28T06:12:21.603198+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Edison phase-2: Archaeoglobus fulgidus DSM 4304 grows on the parent DSM
+    399 medium; STL medium is a recognizable Archaeoglobus-type variant. [added 1
+    organism(s), 1 variant(s)]'
 solutions:
 - preferred_term: Trace Elements Solution
   term:
@@ -344,3 +350,61 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_6129_Trace_elements_solution.yaml for composition
   name: Unknown solution
+target_organisms:
+- preferred_term: Archaeoglobus fulgidus
+  term:
+    id: NCBITaxon:2234
+    label: Archaeoglobus fulgidus
+  strain: DSM 4304
+  evidence:
+  - reference: doi:10.7888/juoeh.29.131
+    supports: SUPPORT
+    explanation: 'Tarui et al. 2007 (J UOEH) explicitly grows the A. fulgidus type
+      strain DSM 4304 in DSM399 Archaeoglobus medium, matching this parent record.
+      Conditions: static anaerobic, N2-CO2 4:1, 83C, 2-3 d. | Identifiers: DSM 4304;
+      ATCC 49558; strain VC-16'
+    snippet: Cells of A. fulgidus DSM4304 (VC-16) were grown statically and anaerobically
+      in 600 ml of DSM399 Archaeoglobus medium in a 1-L bottle with N2-CO2 (4:1) at
+      83C for 2 or 3 days.
+variants:
+- name: stl_medium_archaeoglobus_variant
+  relationship: DERIVED_FROM
+  description: STL (sulfate-thiosulfate-lactate) medium, a recognizable Archaeoglobus-type
+    defined/complex medium used to grow A. fulgidus VC-16, distinct in formulation
+    from the DSM 399 record.
+  modifications:
+  - 'Base built from a 10x salt solution (per L of 10x: NaCl 178 g, MgSO4 74 g, MgCl2.6H2O
+    27.5 g, KCl 3.4 g, NH4Cl 2.5 g; Salt II CaCl2.2H2O 1.4 g; Salt III K2HPO4 1.37
+    g) added at 100 ml/L.'
+  - PIPES buffer 20 ml of 1 M per L; base medium adjusted to pH 6.7 (Hartzell 1999).
+    Reed 2001 variant uses Tris+maleic acid 20 mM each, pH 6.1.
+  - 'Carbon/electron donor: sodium lactate 7 ml of 30% (w/v) per L (Hartzell 1999);
+    DL-sodium lactate ~22 mM (Reed 2001).'
+  - Yeast extract 0.5 g/L (replaceable by Wolfe's vitamin mixture 10 ml/L for defined
+    medium).
+  - 1000x trace element stock (1 ml/L) incl. Na2EDTA.2H2O, Mn/Co/Zn/Ni/Cu/B/Al/Mo/W/Se/V
+    salts; (NH4)2Fe(SO4)2 1 ml of 0.2% per L.
+  - 'Reductant: Na2S 100 mM + Na2S2O3 200 mM stock added at 0.5% v/v after autoclaving
+    (Hartzell); Na2S/Na2S2O3 ~1 mM each (Reed).'
+  - Resazurin redox indicator; anaerobic, boiled and N2-sparged; good growth 75-82C
+    (Hartzell), 83C in glass carboys (Reed).
+  purpose: Capture the STL Archaeoglobus-type medium recipe used for A. fulgidus biofilm
+    and enzyme studies as a variant of the DSM 399 parent rather than a duplicate
+    medium.
+  evidence:
+  - reference: doi:10.1016/s0076-6879(99)10027-2
+    supports: SUPPORT
+    explanation: Hartzell et al. 1999 (Methods in Enzymology) prints the full STL
+      medium recipe used to maintain A. fulgidus VC-16.
+    snippet: A. fulgidus was grown in STL medium ... 10x salt solution 100 ml/L, PIPES
+      buffer 20 ml of 1 M, trace element stock 1 ml of 1000x, yeast extract 0.5 g/L,
+      sodium lactate 7 ml of 30% per L, pH 6.7; reducing agent Na2S 100 mM / Na2S2O3
+      200 mM added 0.5% v/v; good growth at 75-82C.
+  - reference: doi:10.1128/jb.183.24.7007-7016.2001
+    supports: SUPPORT
+    explanation: Reed et al. 2001 (J Bacteriol) reports a modified STL medium 3 for
+      A. fulgidus, confirming the STL lineage and giving an alternate buffer/reductant
+      variant.
+    snippet: cells were grown anaerobically at 83C in glass carboys ... modified sulfate-thiosulfate-lactate
+      (STL) medium 3 ... 20 mM Tris plus maleic acid, pH 6.1; DL-sodium lactate 22
+      mM; yeast extract 0.5 g/L; Na2S and Na2S2O3 1 mM; resazurin.

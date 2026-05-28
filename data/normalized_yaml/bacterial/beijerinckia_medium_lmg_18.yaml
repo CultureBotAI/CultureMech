@@ -136,3 +136,40 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BEIJERINCKIA MEDIUM (LMG 18)" to "beijerinckia_medium_lmg_18"
     for consistent matching
+- timestamp: '2026-05-28T06:12:21.660196+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Edison phase-2 (medium-confidence): Beijerinckia lactocogenes NTCC 38849
+    grown on a Becking medium variant at pH 5 without CaCO3. [added 1 organism(s),
+    1 variant(s)]'
+target_organisms:
+- preferred_term: Beijerinckia lactocogenes
+  strain: NTCC 38849
+  evidence:
+  - reference: doi:10.1007/BF01999703
+    supports: PARTIAL
+    explanation: 'Brierley & Thornton 1979; Beijerinckia-type organism grown on a
+      Becking pH 5 no-CaCO3 variant (see variant becking_medium_ph5_no_caco3). Medium-confidence:
+      strain-to-run linkage is at the organism-set level.'
+    snippet: the same medium without CaCO3 adjusted to pH 5 was used for culturing
+      of Beijerinckia-type organisms; B. lactocogenes NTCC 38849 was one of the organisms
+      used; soil cultures incubated 21 days at 30C.
+variants:
+- name: becking_medium_ph5_no_caco3
+  relationship: DERIVED_FROM
+  description: 'Becking medium variant for Beijerinckia-type organisms: CaCO3 omitted
+    and pH adjusted to 5 (Brierley & Thornton 1979).'
+  modifications:
+  - CaCO3 omitted relative to standard Becking medium.
+  - pH adjusted to 5 (vs near-neutral parent).
+  - 'Base recipe context: glucose 20 g/L, KH2PO4 1.0 g/L, MgSO4.7H2O 0.5 g/L (CaCO3
+    2.0 g/L before omission); soil cultures 21 d at 30C.'
+  purpose: Capture the acid, CaCO3-free Becking variant used for culturing Beijerinckia-type
+    organisms.
+  evidence:
+  - reference: doi:10.1007/BF01999703
+    supports: PARTIAL
+    explanation: Brierley & Thornton 1979; explicit formulation change (no CaCO3,
+      pH 5) for Beijerinckia culturing.
+    snippet: the same medium without CaCO3 adjusted to pH 5 was used for culturing
+      of Beijerinckia-type organisms.

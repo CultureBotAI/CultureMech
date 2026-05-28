@@ -232,3 +232,91 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Bacto Marine Broth (Difco 2216) (For DSM 11879)" to
     "bacto_marine_broth_difco_2216_for_dsm_11879" for consistent matching
+- timestamp: '2026-05-28T06:12:21.617965+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Edison phase-1/phase-2: multiple type strains grown directly on DSMZ medium
+    514 / Marine Broth 2216 (parent); MB1/2 half-strength is a concentration variant.
+    [added 6 organism(s), 1 variant(s)]'
+target_organisms:
+- preferred_term: Cellulophaga algicola
+  strain: IC166T
+  evidence:
+  - reference: doi:10.4056/sigs.1543845
+    supports: SUPPORT
+    explanation: 'Abt et al. 2011 genome report; explicit type-strain growth on DSMZ
+      medium 514 (= this parent medium) at 15C. | Identifiers: DSM 14237; CIP 107446;
+      LMG 21425; INSDC CP002453; BioProject 41529; IMG 2503904003'
+    snippet: C. algicola IC166T, DSM 14237, was grown in DSMZ medium 514 (BACTO marine
+      broth) at 15C.
+- preferred_term: Kangiella koreensis
+  strain: SW-125T
+  evidence:
+  - reference: doi:10.4056/sigs.36635
+    supports: SUPPORT
+    explanation: 'Han et al. 2009; direct cultivation/growth testing of the type strain
+      on Marine Agar/Broth 2216 (= this parent medium family). | Identifiers: DSM
+      16069; KCTC 12182; 16S AY520560'
+    snippet: Colony morphology and temperature growth were determined on marine agar
+      2216 (Difco), and pH dependence was determined in marine broth 2216 (Difco).
+      Colonies after 7 d at 30C; optimum 30-37C; pH optimum 7.0-8.0.
+- preferred_term: Phaeobacter caeruleus
+  strain: DSM 24564T
+  evidence:
+  - reference: doi:10.4056/sigs.3927626
+    supports: SUPPORT
+    explanation: Beyersmann et al. 2013; explicit growth on DSMZ medium 514 / Marine
+      Broth 2216 at 20C.
+    snippet: P. caeruleus DSM 24564T was grown in DSMZ medium 514. After incubation
+      for 24 h in marine broth 2216 with shaking, visible growth was observed at 20C
+      but not at 28C (100 rpm).
+- preferred_term: Roseobacter ponti
+  strain: DSM 106830T
+  evidence:
+  - reference: doi:10.1093/gbe/evaa114
+    supports: SUPPORT
+    explanation: 'Hollensteiner et al. 2020; medium identity explicitly aliased to
+      this parent record; 30C, 180 rpm, 2 d. | Identifiers: DSM 106830T; KCTC 52469T;
+      NBRC 112431T'
+    snippet: A single colony was passed for 2 days in Medium 514, explicitly identified
+      as DSMZ Medium 514 Bacto Marine Broth Difco 2216, at 30C and 180 rpm.
+- preferred_term: Joostella marina
+  strain: En5T
+  evidence:
+  - reference: doi:10.4056/sigs.3537045
+    supports: SUPPORT
+    explanation: 'Stackebrandt et al. 2013; isolation on Marine Agar 2216 (recognizable
+      2216 formulation under this parent medium family). Agar isolation rather than
+      broth growth. | Identifiers: DSM 19592; KCTC 12518; CGMCC 1.6973'
+    snippet: J. marina strain En5T was isolated by dilution-plating on marine agar
+      2216 (Difco).
+- preferred_term: Rhodothermus profundi
+  strain: PRI 2902T
+  evidence:
+  - reference: doi:10.1099/ijs.0.012724-0
+    supports: SUPPORT
+    explanation: 'Marteinsson et al. 2010; type strain grown on the half-strength
+      MB1/2 variant of this parent medium (see variant mb_half_strength_marine_broth_2216).
+      Deep-sea isolate; pressure tests at 0.1 and 25 MPa. | Identifiers: DSM 22212T;
+      JCM 15944T'
+    snippet: MB1/2 defined as DSMZ medium 514 / Bacto Marine Broth Difco 2216 diluted
+      to half strength with water; PRI 2902T grown on agar MB1/2 and in liquid MB1/2;
+      colonies after 4 d at 70C.
+variants:
+- name: mb_half_strength_marine_broth_2216
+  relationship: CONCENTRATION_VARIANT
+  description: 'MB1/2: DSMZ medium 514 / Bacto Marine Broth (Difco 2216) diluted to
+    half strength with water, used for Rhodothermus profundi and related PRI isolates.'
+  modifications:
+  - Marine broth/agar 2216 (DSMZ medium 514) diluted to 0.5x strength with water.
+  - For single-carbon-source assays, peptone and yeast extract omitted from MB1/2
+    plates (assay variant, not routine MB1/2).
+  purpose: Half-strength marine broth/agar 2216 used to cultivate slow-growing deep-sea
+    Rhodothermus isolates; recognizable concentration variant, not a separate medium.
+  evidence:
+  - reference: doi:10.1099/ijs.0.012724-0
+    supports: SUPPORT
+    explanation: Marteinsson et al. 2010 defines MB1/2 explicitly as half-strength
+      DSMZ 514 / Bacto Marine Broth 2216.
+    snippet: MB1/2 ... diluted to half strength with water; growth on single carbon
+      sources tested on plates containing MB1/2 without peptone and yeast extract.
