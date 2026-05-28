@@ -81,7 +81,7 @@ python scripts/generate_ingredient_umap.py \
 ## Embeddings
 
 Auto-detected in this order:
-1. `data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_2026-02-01_05_54_01.tsv.gz` (local, preferred)
+1. `data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v2_2026-05-26_00_56_15.tsv.gz` (local, preferred)
 2. `../CommunityMech/CommunityMech/data/embeddings/...tsv.gz` (sibling repo fallback)
 
 First load parses the full 1.4M-node TSV and caches CHEBI-only nodes as pickle.
