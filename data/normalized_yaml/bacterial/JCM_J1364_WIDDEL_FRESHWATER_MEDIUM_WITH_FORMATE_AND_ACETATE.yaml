@@ -1,0 +1,160 @@
+id: CultureMech:015842
+name: widdel_freshwater_medium_with_formate_and_acetate
+original_name: WIDDEL FRESHWATER MEDIUM WITH FORMATE AND ACETATE
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J1364
+  term:
+    id: jcm.grmd:1364
+    label: WIDDEL FRESHWATER MEDIUM WITH FORMATE AND ACETATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1364'
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: Na2SO4
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: Na2SO4
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '980.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Trace element solution (see Medium No. 439 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Selenite-tungstate solution* (see Medium No. 431 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Vitamin mixture solution* (see Medium No. 1363 )
+  concentration:
+    value: '2.0'
+    unit: ML_PER_L
+- preferred_term: 1.0 M Sodium formate solution
+  concentration:
+    value: '7.5'
+    unit: ML_PER_L
+- preferred_term: 1.0 M Sodium acetate solution
+  concentration:
+    value: '9.0'
+    unit: ML_PER_L
+- preferred_term: 5% Na2S·9H2O solution
+  concentration:
+    value: '2.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components, adjust pH to 8 and autoclave under a N2 gas atmosphere.
+- step_number: 2
+  action: MIX
+  description: 'After cooling, add the following solutions from sterile anaerobic
+    stocks (autoclaved or *filter-sterilized): Readjust pH to 8, if necessary.'
+- step_number: 3
+  action: MIX
+  description: Separately autoclave and dry iron metal (grain).
+- step_number: 4
+  action: MIX
+  description: Aseptically distribute the medium and iron metal into culture vessels
+    (e.g., 10 ml medium and 100 mg iron in Hungate tubes) under a N2 gas stream and
+    seal with butyl rubber stoppers.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:08:50.834854+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1364. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.529848Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

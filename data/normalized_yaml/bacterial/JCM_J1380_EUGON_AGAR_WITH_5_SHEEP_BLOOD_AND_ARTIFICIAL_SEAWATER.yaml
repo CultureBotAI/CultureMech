@@ -1,0 +1,43 @@
+id: CultureMech:015847
+name: eugon_agar_with_5_sheep_blood_and_artificial_seawater
+original_name: EUGON AGAR WITH 5% SHEEP BLOOD AND ARTIFICIAL SEAWATER
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J1380
+  term:
+    id: jcm.grmd:1380
+    label: EUGON AGAR WITH 5% SHEEP BLOOD AND ARTIFICIAL SEAWATER
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1380'
+ingredients:
+- preferred_term: Eugon agar (BD-Difco)
+  concentration:
+    value: '45.4'
+    unit: G_PER_L
+- preferred_term: Sheep blood
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+- preferred_term: Artificial seawater (see Medium No. 736 )
+  concentration:
+    value: '950.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix ingredients except sheep blood, autoclave and cool to about 45C.
+- step_number: 2
+  action: MIX
+  description: Aseptically add 5% (final) sterile defibrinated sheep blood.
+- step_number: 3
+  action: MIX
+  description: Mix and quickly dispense into sterile petri dishes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:08:56.123574+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1380. Ingredients captured verbatim; CHEBI/MediaIngredientMech enrichment
+    and category (bacterial/archaea) review are downstream steps.

@@ -1,0 +1,112 @@
+id: CultureMech:015877
+name: solidesulfovibrio_medium
+original_name: SOLIDESULFOVIBRIO MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1479
+  term:
+    id: jcm.grmd:1479
+    label: SOLIDESULFOVIBRIO MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1479'
+ingredients:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.20'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: Fe(III)·EDTA
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:30729
+    label: ethylenediaminetetraacetatoferrate(1-)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+- preferred_term: Modified Wolfe’s mineral solution (see Medium No. 915 )
+  concentration:
+    value: '4.0'
+    unit: ML_PER_L
+- preferred_term: Sodium fumarate
+  concentration:
+    value: '0.58'
+    unit: G_PER_L
+  term:
+    id: CHEBI:115156
+    label: disodium fumarate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
+    label: Na2-fumarate
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.44'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+- preferred_term: Distilled water
+  concentration:
+    value: '985.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Vitamin solution* (see Medium No. 915 )
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: 5% L-Cysteine·HCl·H2O solution (pH 7.0)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components thoroughly, adjust pH to 7.0 and autoclave under a N2
+    gas atmosphere.
+- step_number: 2
+  action: MIX
+  description: 'After cooling, aseptically and anaerobically add the following solutions
+    from anaerobic stocks (autoclaved or *filter-sterilized): Readjust pH to 7.0,
+    if necessary.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:29.642056+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1479. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.568293Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

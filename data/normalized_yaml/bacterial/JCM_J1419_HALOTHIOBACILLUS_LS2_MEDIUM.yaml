@@ -1,0 +1,159 @@
+id: CultureMech:015859
+name: halothiobacillus_ls2_medium
+original_name: HALOTHIOBACILLUS LS2 MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J1419
+  term:
+    id: jcm.grmd:1419
+    label: HALOTHIOBACILLUS LS2 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1419'
+ingredients:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NaCl
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: Modified A5 solution (see below)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: 8% NaHCO3 solution
+  concentration:
+    value: '2.5'
+    unit: ML_PER_L
+- preferred_term: 0.1 M M FeCl2 solution
+  concentration:
+    value: '0.4'
+    unit: ML_PER_L
+- preferred_term: 1.0 M NH4Cl solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: 1.0 M Sodium thiosulfate solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: H3BO3
+  concentration:
+    value: '2.86'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '0.222'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+- preferred_term: Na2MoO4·2H2O
+  concentration:
+    value: '0.39'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: Na2MoO4·2H2O
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '1.86'
+    unit: G_PER_L
+- preferred_term: CuSO4·5H2O
+  concentration:
+    value: '0.079'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+- preferred_term: CoCl2·6H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 2 H2O
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components, adjust pH to 6.5-7.0, and autoclave.
+- step_number: 2
+  action: MIX
+  description: For preparation of solid media, add 15.0 g/L agar and 0.1 g/L Na2SO4
+    before autoclaving.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:09.442757+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1419. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.490469Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

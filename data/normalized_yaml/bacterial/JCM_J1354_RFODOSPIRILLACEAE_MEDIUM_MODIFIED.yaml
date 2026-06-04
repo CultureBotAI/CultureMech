@@ -1,0 +1,152 @@
+id: CultureMech:015837
+name: rfodospirillaceae_medium_modified
+original_name: RFODOSPIRILLACEAE MEDIUM (MODIFIED)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: JCM Medium J1354
+  term:
+    id: jcm.grmd:1354
+    label: RFODOSPIRILLACEAE MEDIUM (MODIFIED)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1354'
+ingredients:
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Sodium succinate
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
+    label: Sodium succinate
+- preferred_term: Ammonium acetate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62947
+    label: ammonium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62947
+    label: Ammonium acetate
+- preferred_term: 0.1% Fe(III) citrate solution
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: MgSO4 x 6 H2O
+- preferred_term: NaCl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: 0.01% Vitamin B12 solution
+  concentration:
+    value: '0.4'
+    unit: ML_PER_L
+- preferred_term: SL-6 Trace element solution (see Medium No. 167 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: L-Cysteine·HCl·H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components thoroughly and adjust pH 6.8.
+- step_number: 2
+  action: MIX
+  description: Bring to a boil, cool down under a stream of N2, distribute the medium
+    into culture vessels (e.g., 10 ml medium in Hungate type tubes) under N2, seal
+    with butyl rubber stoppers and autoclave.
+- step_number: 3
+  action: MIX
+  description: After inoculation, cultivate in the light using a tungsten lamp.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:08:45.577503+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1354. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.517682Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

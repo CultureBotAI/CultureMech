@@ -1,0 +1,177 @@
+id: CultureMech:015840
+name: methanobacterium_vt_medium
+original_name: METHANOBACTERIUM VT MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J1362
+  term:
+    id: jcm.grmd:1362
+    label: METHANOBACTERIUM VT MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1362'
+ingredients:
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+- preferred_term: KCl
+  concentration:
+    value: '0.34'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: MgSO4 x 6 H2O
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: NaCl
+  concentration:
+    value: '4.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Wolfe's mineral solution (see Medium No. 265 )
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: Trace vitamins (see Medium No. 197 )
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '980.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: 5% L-Cysteine·HCl·H2O solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: 5% Na2S·9H2O solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components thoroughly, except NaHCO3, and adjust pH to 6.5.
+- step_number: 2
+  action: MIX
+  description: Bring to a boil for 5-10 sec, then, cool down under a stream of H2-CO2
+    (80:20, v/v) and add NaHCO3 to the medium.
+- step_number: 3
+  action: MIX
+  description: Dispense the medium into suitable culture vessels (e.g., 5 ml medium
+    in Hungate tubes) under the same gas mixture and seal with butyl rubber stoppers.
+- step_number: 4
+  action: MIX
+  description: After autoclaving, stand the medium overnight.
+- step_number: 5
+  action: MIX
+  description: 'Aseptically and anaerobically add per liter the following solutions
+    (autoclaved and stored under a N2 atmosphere): Adjust pH of the medium to 6.7-7.0,
+    if necessary.'
+- step_number: 6
+  action: MIX
+  description: Pressurize the inoculated bottles to 200 kPa H2-CO2 (80:20, v/v).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:08:48.728871+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1362. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.331237Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

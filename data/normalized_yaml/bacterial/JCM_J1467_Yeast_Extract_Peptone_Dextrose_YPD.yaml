@@ -1,0 +1,67 @@
+id: CultureMech:015873
+name: yeast_extract_peptone_dextrose_ypd
+original_name: Yeast Extract Peptone Dextrose (YPD)
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J1467
+  term:
+    id: jcm.grmd:1467
+    label: Yeast Extract Peptone Dextrose (YPD)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1467'
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '950'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Polypepton (Nihon Seiyaku)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: glucose
+- preferred_term: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:25.455760+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1467. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.504848Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -1,0 +1,365 @@
+id: CultureMech:015879
+name: ycfa_medium_with_mannitol
+original_name: YCFA MEDIUM WITH MANNITOL
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1385
+  term:
+    id: jcm.grmd:1385
+    label: YCFA MEDIUM WITH MANNITOL
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1385
+  | Derivative medium: ingredients inherited from JCM GRMD=1130; apply the stated
+  modification (see preparation_steps) before use.'
+ingredients:
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: Glucose
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: glucose
+- preferred_term: Maltose
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18167
+    label: maltose
+- preferred_term: Cellobiose
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17057
+    label: cellobiose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
+    label: Cellobiose
+- preferred_term: L-Cysteine·HCl·H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+- preferred_term: Mineral solution I (see below)
+  concentration:
+    value: '150.0'
+    unit: ML_PER_L
+- preferred_term: Mineral solution II (see below)
+  concentration:
+    value: '150.0'
+    unit: ML_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: VFA mix (see below)
+  concentration:
+    value: '6.2'
+    unit: ML_PER_L
+- preferred_term: Hemin solution (see below)
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: Vitamin solution I (see below)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '660.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: K2HPO4
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: KH2PO4
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '6.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+- preferred_term: NaCl
+  concentration:
+    value: '6.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: MgSO4 x 6 H2O
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Acetic acid
+  concentration:
+    value: '17.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15366
+    label: acetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
+    label: Acetic acid
+- preferred_term: Propionic acid
+  concentration:
+    value: '6.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:30768
+    label: propionic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30768
+    label: Propionic acid
+- preferred_term: n -Valeric acid
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: iso -Valeric acid
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: iso -Butyric acid
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: 10 N NaOH
+  concentration:
+    value: '26.0'
+    unit: ML_PER_L
+- preferred_term: KOH
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: KOH
+- preferred_term: Ethanol
+  concentration:
+    value: '25.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:16236
+    label: ethanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: Ethanol
+- preferred_term: Hemin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50385
+    label: hemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: Haemin
+- preferred_term: Biotin
+  concentration:
+    value: '5.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Vitamin B12
+  concentration:
+    value: '5.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: Vitamin B12
+- preferred_term: p -Aminobenzoic acid
+  concentration:
+    value: '15.0'
+    unit: MG_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+- preferred_term: Folic acid
+  concentration:
+    value: '25.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: Folic acid
+- preferred_term: Pyridoxine·HCl
+  concentration:
+    value: '75.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131531
+    label: Pyridoxamine hydrochloride
+- preferred_term: Distilled water
+  concentration:
+    value: '500.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Thiamine·HCl
+  concentration:
+    value: '25.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+- preferred_term: Riboflavin
+  concentration:
+    value: '25.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: Riboflavin
+- preferred_term: Distilled water
+  concentration:
+    value: '500.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No.
+- step_number: 2
+  action: MIX
+  description: 1130 with 0.2% mannitol.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:13:38.246124+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: 'Direct import from JCM GRMD=1385. Derivative of GRMD=1130: ingredients inherited
+    from the base medium, stated modification preserved in preparation_steps and still
+    to be applied. CHEBI/MediaIngredientMech enrichment and category (bacterial/archaea)
+    review are downstream steps.'
+- timestamp: '2026-06-03T02:00:03.453129Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
