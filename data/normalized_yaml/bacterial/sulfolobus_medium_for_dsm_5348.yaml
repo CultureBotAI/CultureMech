@@ -247,6 +247,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-02T06:47:50.280515+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Phase-2: Metallosphaera sedula DSM 5348T (the type strain named in the record)
+    is directly supported on DSMZ medium 88 (Sulfolobus medium) at pH 2.0, 70C (Auernik
+    2008). Sulfolobus (Sulfuracidifex) metallicus DSM 6482 grows on recognizable DSM-88
+    variants. Sulfolobus acidocaldarius DSM 639 was deliberately EXCLUDED: phase-2
+    found it grows on Brock''s salts (DSM #88 MINUS yeast extract), a distinct medium
+    family that warrants its own record, not an addition here. [added 2 organism(s),
+    1 variant(s)]'
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []
@@ -254,3 +264,48 @@ solutions:
     value: '10'
     unit: G_PER_L
   name: Unknown solution
+target_organisms:
+- preferred_term: Metallosphaera sedula
+  strain: DSM 5348T (TH2)
+  genome_assembly_id:
+  - GCA_000016605.1
+  evidence:
+  - reference: doi:10.1128/AEM.02019-07
+    supports: SUPPORT
+    explanation: 'Auernik et al. 2008 directly reports DSMZ 88 cultivation of the
+      DSM 5348 type strain (exact parent match). Full DSMZ 88 recipe is referenced
+      by name rather than printed; parent formulation is inherited from this record.
+      | Identifiers: DSM 5348T; GenBank CP000682; RefSeq NC_009440.1'
+    snippet: M. sedula DSMZ 5348 grown aerobically on DSMZ 88 medium adjusted to pH
+      2 (70C); experiments added 0.1% yeast extract, ~7.5 g/L FeSO4.7H2O, or used
+      FeS2/pyrite.
+- preferred_term: Sulfolobus metallicus
+  strain: DSM 6482
+  genome_assembly_id:
+  - GCA_009729515.1
+  evidence:
+  - reference: doi:10.1128/mbio.01033-24
+    supports: SUPPORT
+    explanation: 'Willard et al. 2024 prints a DSM-88/Brock''s salts formulation for
+      DSM 6482. Relative to the parent (which lists sulfide ore) this is a recognizable
+      supplemented MediaVariant rather than the exact parent recipe. | Identifiers:
+      DSM 6482; also classified as Sulfuracidifex metallicus'
+    snippet: DSM6482 supplemented with 0.2 g/L yeast extract and 10 g/L elemental
+      sulfur, 65C, pH 2, on a DSM-88/Brock's salts recipe.
+variants:
+- name: dsmz88_sulfolobus_supplemented_yeast_extract_ferrous_iron
+  relationship: SUPPLEMENTED_VARIANT
+  description: DSMZ medium 88 / Sulfolobus medium with organic and/or ferrous-iron
+    supplementation used for M. sedula DSM 5348 cultivation (Auernik 2008).
+  modifications:
+  - Base DSMZ medium 88 (Brock's salts), pH 2.0, 70C, aerobic
+  - Add 0.1% yeast extract (mixotrophic) or 0.1% tryptone (heterotrophic)
+  - Optional ~7.5 g/L FeSO4.7H2O, or FeS2/pyrite as sole energy source
+  purpose: Mixotrophic/heterotrophic and iron/pyrite-oxidizing cultivation of Metallosphaera
+    sedula DSM 5348.
+  evidence:
+  - reference: doi:10.1128/AEM.02019-07
+    supports: SUPPORT
+    explanation: Auernik et al. 2008 documents the supplement set.
+    snippet: DSMZ 88 (pH 2) cultivation of DSMZ 5348 with 0.1% yeast extract; FeSO4.7H2O
+      or FeS2 additions.

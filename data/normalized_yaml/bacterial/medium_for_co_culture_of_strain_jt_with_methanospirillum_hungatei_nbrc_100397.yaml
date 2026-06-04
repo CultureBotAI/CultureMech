@@ -444,6 +444,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-02T06:47:50.262641+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Phase-2: this record is by definition the medium for syntrophic co-culture
+    of ''strain JT'' with M. hungatei NBRC 100397. Strain JT (a Pelotomaculum sp.)
+    and M. hungatei are both named in the record and both are supported as the intended
+    organisms (Qiu et al. 2004). CAVEAT: the basal-medium recipe is not printed in
+    Qiu 2004 (cited to Sekiguchi et al. 2000), and Qiu names the methanogen as DSM
+    864 rather than NBRC 100397; treat both as evidence-backed but recipe-unverified.
+    [added 2 organism(s), 0 variant(s)]'
 solutions:
 - preferred_term: Vitamin solution*
   term:
@@ -481,3 +491,29 @@ solutions:
     unit: G_PER_L
   notes: See mediadive_30_Resazurin_solution.yaml for composition
   name: Unknown solution
+target_organisms:
+- preferred_term: Pelotomaculum sp.
+  strain: strain JT
+  evidence:
+  - reference: doi:10.1128/AEM.70.3.1617-1626.2004
+    supports: SUPPORT
+    explanation: 'Qiu et al. 2004 is the defining study for strain JT, the organism
+      this co-culture medium is named for. Basal-medium recipe is cited transitively
+      (Sekiguchi et al. 2000), so the exact match to the TOGO/NBRC M1624 formulation
+      is not text-verified in this source. | Identifiers: 16S rRNA GenBank AB091329
+      (set AB091323-AB091329); no culture-collection ID reported'
+    snippet: Terephthalate-degrading bacterium strain JT degraded terephthalate/benzoate
+      only in coculture with Methanospirillum hungatei; 37C, pH 7.0, anaerobic N2/CO2
+      (80:20), 20 ml in 50-ml serum vials without shaking.
+- preferred_term: Methanospirillum hungatei
+  strain: NBRC 100397T (= DSM 864T = ATCC 27890T), JF-1T
+  evidence:
+  - reference: doi:10.1128/AEM.70.3.1617-1626.2004
+    supports: SUPPORT
+    explanation: 'M. hungatei NBRC 100397 is named in this medium record. Qiu 2004
+      identifies the partner as DSM 864 (type strain equivalent to NBRC 100397T) but
+      does not print the co-culture basal recipe; curate as the named co-culture partner
+      with recipe-identity flagged uncertain. | Identifiers: NBRC 100397T; DSM 864;
+      ATCC 27890T; genome CP000254'
+    snippet: M. hungatei (DSM 864) was used as the syntrophic partner for strain JT
+      in terephthalate-degrading co-culture.

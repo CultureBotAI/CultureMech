@@ -1,0 +1,307 @@
+{
+  "curator": "deep-research-edison-phase2",
+  "_provenance": "Authored from Edison phase-1 + phase-2 deep-research outputs in research/media/ for the batch-2 top-5 media (ignicoccus, co_culture/M.hungatei, sulfospirillum, sulfolobus_5348, sulfolobus_anaerobic_2162). Phase-2 recipe-extraction follow-ups frequently found that the cited growth medium recipe was NOT printed in the primary source (cited transitively) or differs from the parent formulation; verdicts reflect that. No NCBITaxon IDs are asserted (none were source-verified in this run). Only GCA_ assembly accessions that match the schema pattern are placed in genome_assembly_ids; all other identifiers are folded into evidence explanations. sulfospirillum_dsm_806 yielded zero curatable organisms (DSMZ-medium-121 naming collision with Wolin's vitamin solution) and is intentionally absent. For sulfolobus_medium_anaerobic_for_dsm_2162 the parent is explicitly ANAEROBIC (Na2S + N2); every literature strain was cultivated on AEROBIC low-sulfate Brock's salts (DSM-88), so those strains are scoped to an aerobic MediaVariant and their evidence explanations state they are NOT verified on the anaerobic parent.",
+  "proposals": [
+    {
+      "target": "bacterial/ignicoccus_medium_for_dsm_18386.yaml",
+      "curation_note": "Phase-2: I. hospitalis DSM 18386T (the type strain named in the record) is cultivated in '1/2 SME-Ignicoccus medium'; I. islandicus DSM 13165T and I. pacificus DSM 13166T grow in the closely related '1/2 SME+S0' formulation (Koschnitzki 2017, explicit recipe). The ingredient-level recipe of the parent (TOGO M2599 / DSMZ 897) is cited transitively (Paper 2007 / Huber 2000), so exact recipe identity is unverified; organism links are to the recognizable Ignicoccus-medium family.",
+      "add_target_organisms": [
+        {
+          "name": "Ignicoccus hospitalis",
+          "strain": "KIN4/I (= KIN4/IT), DSM 18386T",
+          "genome_assembly_ids": ["GCA_000017945.1"],
+          "other_identifiers": "DSM 18386T; RefSeq NC_009776.1; 16S Gene ID 5562932",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/JB.06130-11",
+              "supports": "SUPPORT",
+              "snippet": "I. hospitalis KIN4/IT (DSM 18386) was grown in 1/2 SME-Ignicoccus medium at 90C under H2/CO2 (80:20, v/v) at 250 kPa, H2 as electron donor and elemental sulfur as electron acceptor.",
+              "explanation": "Mayer et al. 2012 explicitly cultivates the DSM 18386 type strain in 1/2 SME-Ignicoccus medium, the medium this record represents. Ingredient-level recipe is cited transitively (Paper et al. 2007), so parent-formulation identity is strong by name but not printed in this source."
+            }
+          ]
+        },
+        {
+          "name": "Ignicoccus islandicus",
+          "strain": "Kol8, DSM 13165T",
+          "genome_assembly_ids": ["GCA_001481685.1"],
+          "other_identifiers": "DSM 13165T; NZ_CP006867",
+          "evidence": [
+            {
+              "reference": "doi:10.5283/epub.34741",
+              "supports": "SUPPORT",
+              "snippet": "Koschnitzki 2017 prints a '1/2 SME+S0 medium for all Ignicoccus representatives' recipe and lists I. islandicus Kol8 DSM 13165T among the strains; H2/CO2 80:20, ~90C, Na2S-reduced.",
+              "explanation": "Growth supported on the 1/2 SME+S0 variant of the Ignicoccus medium family (extra NaHCO3, SrCl2.6H2O, KI and different S0/Na2S vs parent). Curate against the half_sme_s0_ignicoccus variant rather than asserting identity with the parent."
+            }
+          ]
+        },
+        {
+          "name": "Ignicoccus pacificus",
+          "strain": "LPC33, DSM 13166T",
+          "other_identifiers": "DSM 13166T",
+          "evidence": [
+            {
+              "reference": "doi:10.5283/epub.34741",
+              "supports": "SUPPORT",
+              "snippet": "Koschnitzki 2017 reports cultivation of I. pacificus LPC33 (DSM 13166T) in '1/2 SME+S0 medium' with full recipe and anaerobic preparation.",
+              "explanation": "Growth supported on the 1/2 SME+S0 variant. Phase-2 flagged that this formulation differs from the parent (KI, SrCl2.6H2O, NaHCO3, different boric acid level); treat as variant-scoped evidence, not parent identity."
+            }
+          ]
+        }
+      ],
+      "add_variants": [
+        {
+          "name": "half_sme_s0_ignicoccus",
+          "relationship": "DERIVED_FROM",
+          "description": "Half-strength SME (synthetic seawater) medium supplemented with elemental sulfur and reduced with Na2S, used by Koschnitzki 2017 for all Ignicoccus representatives. Recognizable variant of the parent Ignicoccus medium.",
+          "modifications": [
+            "Half-strength SME synthetic-seawater base",
+            "Add elemental sulfur (S0) as electron acceptor",
+            "Reduce with Na2S",
+            "Additional/trace components vs parent: explicit NaHCO3, SrCl2.6H2O, KI",
+            "H2/CO2 (80:20) headspace, ~1.5 bar; pH 5.5-6.0; 90C"
+          ],
+          "purpose": "Routine cultivation of Ignicoccus representatives (I. hospitalis DSM 18386T, I. islandicus DSM 13165T, I. pacificus DSM 13166T) under sulfur-reducing chemolithoautotrophic conditions.",
+          "evidence": [
+            {
+              "reference": "doi:10.5283/epub.34741",
+              "supports": "SUPPORT",
+              "snippet": "1/2 SME+S0 medium for all Ignicoccus representatives (explicit table-style recipe).",
+              "explanation": "Koschnitzki 2017 prints the formulation and strain list."
+            }
+          ]
+        },
+        {
+          "name": "half_sme_ignicoccus_plus_0_1pct_yeast_extract",
+          "relationship": "SUPPLEMENTED_VARIANT",
+          "description": "Mixotrophic version of 1/2 SME-Ignicoccus medium with 0.1% (w/v) yeast extract added, used by Mayer 2012 to compare autotrophic vs mixotrophic growth of I. hospitalis DSM 18386.",
+          "modifications": ["Add yeast extract to 0.1% (w/v)"],
+          "purpose": "Mixotrophic growth / physiology comparison vs the autotrophic baseline.",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/JB.06130-11",
+              "supports": "SUPPORT",
+              "snippet": "Comparison of autotrophic growth with mixotrophic growth where 0.1% yeast extract was added to the normal culture medium of I. hospitalis DSM 18386.",
+              "explanation": "Mayer et al. 2012 describes the yeast-extract supplementation explicitly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "bacterial/medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397.yaml",
+      "curation_note": "Phase-2: this record is by definition the medium for syntrophic co-culture of 'strain JT' with M. hungatei NBRC 100397. Strain JT (a Pelotomaculum sp.) and M. hungatei are both named in the record and both are supported as the intended organisms (Qiu et al. 2004). CAVEAT: the basal-medium recipe is not printed in Qiu 2004 (cited to Sekiguchi et al. 2000), and Qiu names the methanogen as DSM 864 rather than NBRC 100397; treat both as evidence-backed but recipe-unverified.",
+      "add_target_organisms": [
+        {
+          "name": "Pelotomaculum sp.",
+          "strain": "strain JT",
+          "other_identifiers": "16S rRNA GenBank AB091329 (set AB091323-AB091329); no culture-collection ID reported",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/AEM.70.3.1617-1626.2004",
+              "supports": "SUPPORT",
+              "snippet": "Terephthalate-degrading bacterium strain JT degraded terephthalate/benzoate only in coculture with Methanospirillum hungatei; 37C, pH 7.0, anaerobic N2/CO2 (80:20), 20 ml in 50-ml serum vials without shaking.",
+              "explanation": "Qiu et al. 2004 is the defining study for strain JT, the organism this co-culture medium is named for. Basal-medium recipe is cited transitively (Sekiguchi et al. 2000), so the exact match to the TOGO/NBRC M1624 formulation is not text-verified in this source."
+            }
+          ]
+        },
+        {
+          "name": "Methanospirillum hungatei",
+          "strain": "NBRC 100397T (= DSM 864T = ATCC 27890T), JF-1T",
+          "other_identifiers": "NBRC 100397T; DSM 864; ATCC 27890T; genome CP000254",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/AEM.70.3.1617-1626.2004",
+              "supports": "SUPPORT",
+              "snippet": "M. hungatei (DSM 864) was used as the syntrophic partner for strain JT in terephthalate-degrading co-culture.",
+              "explanation": "M. hungatei NBRC 100397 is named in this medium record. Qiu 2004 identifies the partner as DSM 864 (type strain equivalent to NBRC 100397T) but does not print the co-culture basal recipe; curate as the named co-culture partner with recipe-identity flagged uncertain."
+            }
+          ]
+        }
+      ],
+      "add_variants": []
+    },
+    {
+      "target": "bacterial/sulfolobus_medium_for_dsm_5348.yaml",
+      "curation_note": "Phase-2: Metallosphaera sedula DSM 5348T (the type strain named in the record) is directly supported on DSMZ medium 88 (Sulfolobus medium) at pH 2.0, 70C (Auernik 2008). Sulfolobus (Sulfuracidifex) metallicus DSM 6482 grows on recognizable DSM-88 variants. Sulfolobus acidocaldarius DSM 639 was deliberately EXCLUDED: phase-2 found it grows on Brock's salts (DSM #88 MINUS yeast extract), a distinct medium family that warrants its own record, not an addition here.",
+      "add_target_organisms": [
+        {
+          "name": "Metallosphaera sedula",
+          "strain": "DSM 5348T (TH2)",
+          "genome_assembly_ids": ["GCA_000016605.1"],
+          "other_identifiers": "DSM 5348T; GenBank CP000682; RefSeq NC_009440.1",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/AEM.02019-07",
+              "supports": "SUPPORT",
+              "snippet": "M. sedula DSMZ 5348 grown aerobically on DSMZ 88 medium adjusted to pH 2 (70C); experiments added 0.1% yeast extract, ~7.5 g/L FeSO4.7H2O, or used FeS2/pyrite.",
+              "explanation": "Auernik et al. 2008 directly reports DSMZ 88 cultivation of the DSM 5348 type strain (exact parent match). Full DSMZ 88 recipe is referenced by name rather than printed; parent formulation is inherited from this record."
+            }
+          ]
+        },
+        {
+          "name": "Sulfolobus metallicus",
+          "strain": "DSM 6482",
+          "genome_assembly_ids": ["GCA_009729515.1"],
+          "other_identifiers": "DSM 6482; also classified as Sulfuracidifex metallicus",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/mbio.01033-24",
+              "supports": "SUPPORT",
+              "snippet": "DSM6482 supplemented with 0.2 g/L yeast extract and 10 g/L elemental sulfur, 65C, pH 2, on a DSM-88/Brock's salts recipe.",
+              "explanation": "Willard et al. 2024 prints a DSM-88/Brock's salts formulation for DSM 6482. Relative to the parent (which lists sulfide ore) this is a recognizable supplemented MediaVariant rather than the exact parent recipe."
+            }
+          ]
+        }
+      ],
+      "add_variants": [
+        {
+          "name": "dsmz88_sulfolobus_supplemented_yeast_extract_ferrous_iron",
+          "relationship": "SUPPLEMENTED_VARIANT",
+          "description": "DSMZ medium 88 / Sulfolobus medium with organic and/or ferrous-iron supplementation used for M. sedula DSM 5348 cultivation (Auernik 2008).",
+          "modifications": [
+            "Base DSMZ medium 88 (Brock's salts), pH 2.0, 70C, aerobic",
+            "Add 0.1% yeast extract (mixotrophic) or 0.1% tryptone (heterotrophic)",
+            "Optional ~7.5 g/L FeSO4.7H2O, or FeS2/pyrite as sole energy source"
+          ],
+          "purpose": "Mixotrophic/heterotrophic and iron/pyrite-oxidizing cultivation of Metallosphaera sedula DSM 5348.",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/AEM.02019-07",
+              "supports": "SUPPORT",
+              "snippet": "DSMZ 88 (pH 2) cultivation of DSMZ 5348 with 0.1% yeast extract; FeSO4.7H2O or FeS2 additions.",
+              "explanation": "Auernik et al. 2008 documents the supplement set."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "bacterial/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
+      "curation_note": "Phase-2 CAUTION: this parent record is explicitly ANAEROBIC (DSMZ 88a / TOGO M2670; Na2S reducing agent + N2 gas phase). Every literature strain retrieved (Willard et al. 2024) was cultivated on AEROBIC low-sulfate Brock's salts (DSM-88) in vented serum bottles, using NH4Cl instead of (NH4)2SO4 and without Na2S/N2. These strains are therefore scoped to an aerobic Brock's-salts MediaVariant and their evidence explanations explicitly state growth is NOT verified on the anaerobic parent. S. acidocaldarius MW001, Saccharolobus solfataricus P2, and Sulfuracidifex tepidarius DSM 104736 were EXCLUDED entirely because phase-2 judged their medium a distinct record, not a variant. Sulfodiicoccus acidiphilus HS-1T is the only strain with a genuinely anaerobic (MBSY + Na2S + H2/CO2) formulation and is the closest to the parent, though its basal recipe is also cited transitively.",
+      "add_target_organisms": [
+        {
+          "name": "Acidianus brierleyi",
+          "strain": "DSM 3772 (also DSM 1651)",
+          "other_identifiers": "DSM 3772; DSM 1651",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/mbio.01033-24",
+              "supports": "SUPPORT",
+              "snippet": "A. brierleyi DSM-3772 cultured in Brock's salts with 1 g/L yeast extract at 70C, acidified with concentrated H2SO4.",
+              "explanation": "Scoped to the aerobic_brocks_salts_dsm88 variant. NOT verified on the anaerobic parent (no Na2S/N2 reported); aerobic vented-bottle cultivation."
+            }
+          ]
+        },
+        {
+          "name": "Metallosphaera hakonensis",
+          "strain": "HO1-1, DSM 7519",
+          "genome_assembly_ids": ["GCA_003201675.2"],
+          "other_identifiers": "DSM 7519",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/mbio.01033-24",
+              "supports": "SUPPORT",
+              "snippet": "M. hakonensis HO1-1 in low-sulfate Brock's salts (DSM-88) + 10 g/L elemental sulfur + 1 g/L yeast extract, 70C, pH 3, vented serum bottles.",
+              "explanation": "Scoped to the aerobic_brocks_salts_dsm88 variant. Differs from anaerobic parent: NH4Cl vs (NH4)2SO4, no Na2S, no N2 phase."
+            }
+          ]
+        },
+        {
+          "name": "Metallosphaera prunae",
+          "strain": "RON 12/II, DSM 10039",
+          "other_identifiers": "DSM 10039",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/mbio.01033-24",
+              "supports": "SUPPORT",
+              "snippet": "M. prunae RON 12/II in low-sulfate Brock's salts (DSM-88) + 10 g/L elemental sulfur + 1 g/L yeast extract, 70C, pH 2, vented serum bottles.",
+              "explanation": "Scoped to the aerobic_brocks_salts_dsm88 variant. NOT the anaerobic parent formulation."
+            }
+          ]
+        },
+        {
+          "name": "Sulfurisphaera ohwakuensis",
+          "strain": "TA-1, DSM 12421",
+          "other_identifiers": "DSM 12421",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/mbio.01033-24",
+              "supports": "SUPPORT",
+              "snippet": "S. ohwakuensis TA-1 in low-sulfate Brock's salts (DSM-88) + 10 g/L elemental sulfur + 1 g/L yeast extract, 75C, pH 3.",
+              "explanation": "Scoped to the aerobic_brocks_salts_dsm88 variant. Vented bottles; not anaerobic parent."
+            }
+          ]
+        },
+        {
+          "name": "Sulfurisphaera tokodaii",
+          "strain": "str. 7, DSM 16993",
+          "other_identifiers": "DSM 16993",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/mbio.01033-24",
+              "supports": "SUPPORT",
+              "snippet": "S. tokodaii str. 7 in low-sulfate Brock's salts (DSM-88) + 10 g/L elemental sulfur + yeast extract (or glucose + casamino acids), 75C.",
+              "explanation": "Scoped to the aerobic_brocks_salts_dsm88 variant. NH4Cl, no Na2S, vented bottles; not the anaerobic parent."
+            }
+          ]
+        },
+        {
+          "name": "Sulfodiicoccus acidiphilus",
+          "strain": "HS-1T (= JCM 31740T = InaCC Ar79T)",
+          "genome_assembly_ids": ["GCA_003967175.1"],
+          "other_identifiers": "JCM 31740T; InaCC Ar79T; 16S LC061218; 23S LC176656",
+          "evidence": [
+            {
+              "reference": "doi:10.1099/ijsem.0.001881",
+              "supports": "SUPPORT",
+              "snippet": "Strain HS-1T grown in modified Brock's basal salt medium with yeast extract (MBSY); anaerobic tests used MBSY reduced with Na2S (0.5 g/L) + resazurin (1 mg/L), headspace H2/CO2 (80:20, 100 kPa), optional 10 g/L elemental sulfur.",
+              "explanation": "Closest match to the anaerobic parent of all DSM 2162 candidates (genuinely anaerobic: Na2S + reduced + H2/CO2). Basal MBS recipe is cited transitively, so exact identity is plausible but not provable from this source; scoped to the reduced_anaerobic_mbsy variant."
+            }
+          ]
+        }
+      ],
+      "add_variants": [
+        {
+          "name": "aerobic_brocks_salts_dsm88_sulfur_yeast_extract",
+          "relationship": "DERIVED_FROM",
+          "description": "Aerobic low-sulfate Brock's salts (DSMZ medium 88) formulation used by Willard et al. 2024 for a broad set of Sulfolobales. Distinct from the anaerobic parent in atmosphere and nitrogen source; grouped here as a derived aerobic variant.",
+          "modifications": [
+            "Low-sulfate Brock's salts base (MgSO4 reduced/replaced); NH4Cl instead of (NH4)2SO4",
+            "10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract (or sucrose + NZ-Amine)",
+            "AEROBIC: vented serum bottles with foam stoppers; NO Na2S reducing agent; NO N2 gas phase",
+            "65-75C; pH 2-3 (acidified with H2SO4 or HCl)"
+          ],
+          "purpose": "Aerobic sulfur-oxidation / comparative physiology cultivation of Sulfolobales (A. brierleyi, M. hakonensis, M. prunae, S. ohwakuensis, S. tokodaii).",
+          "evidence": [
+            {
+              "reference": "doi:10.1128/mbio.01033-24",
+              "supports": "SUPPORT",
+              "snippet": "Materials and Methods 'Strains and cultivation conditions' prints the low-sulfate Brock's salts (DSM-88) recipe and per-strain supplements.",
+              "explanation": "Willard et al. 2024 is the shared source for the aerobic DSM-88 variant across these strains."
+            }
+          ]
+        },
+        {
+          "name": "reduced_anaerobic_mbsy_h2_co2",
+          "relationship": "DERIVED_FROM",
+          "description": "Reduced anaerobic modified Brock's basal salt medium with yeast extract (MBSY) used by Sakai & Kurosawa 2017 for anaerobic growth tests of Sulfodiicoccus acidiphilus HS-1T. The genuinely anaerobic member of the DSM 2162 evidence set.",
+          "modifications": [
+            "Modified Brock's basal salts + 1 g/L yeast extract (MBSY)",
+            "Reduced with Na2S (0.5 g/L) + resazurin (1 mg/L)",
+            "Headspace H2/CO2 (80:20) at 100 kPa; optional 10 g/L elemental sulfur",
+            "65-75C; pH 3.0"
+          ],
+          "purpose": "Anaerobic growth testing of Sulfodiicoccus acidiphilus HS-1T.",
+          "evidence": [
+            {
+              "reference": "doi:10.1099/ijsem.0.001881",
+              "supports": "SUPPORT",
+              "snippet": "Anaerobic tests used MBSY reduced with Na2S and resazurin under H2/CO2 headspace.",
+              "explanation": "Sakai & Kurosawa 2017 Methods. Basal MBS recipe cited to another reference."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
