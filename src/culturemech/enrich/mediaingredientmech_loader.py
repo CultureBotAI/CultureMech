@@ -91,15 +91,29 @@ class MediaIngredientMechLoader:
         logger.info("Building lookup indexes...")
 
         for ingredient in self.ingredients:
-            mim_id = ingredient.get('id')
+            # MIM migrated from minting `MediaIngredientMech:NNNNNN` ids to a
+            # CHEBI-keyed schema: the entity id now lives in `identifier`
+            # (typically a CHEBI CURIE). Accept the new field, fall back to
+            # the legacy `id` for backwards compatibility.
+            mim_id = ingredient.get('identifier') or ingredient.get('id')
             if not mim_id:
                 continue
 
-            # Index by CHEBI ID (try both field names for compatibility)
-            chebi_id = ingredient.get('ontology_id') or ingredient.get('chebi_id')
+            # Index by CHEBI ID. Current schema carries it under
+            # `ontology_mapping.ontology_id`; older snapshots used flat
+            # `ontology_id`/`chebi_id`; and the `identifier` is itself a
+            # CHEBI CURIE in the migrated data.
+            ontology_mapping = ingredient.get('ontology_mapping') or {}
+            chebi_id = (
+                ontology_mapping.get('ontology_id')
+                or ingredient.get('ontology_id')
+                or ingredient.get('chebi_id')
+            )
+            if not chebi_id and str(mim_id).startswith('CHEBI:'):
+                chebi_id = mim_id
             if chebi_id:
                 # Normalize CHEBI ID format
-                if not chebi_id.startswith('CHEBI:'):
+                if not str(chebi_id).startswith('CHEBI:'):
                     chebi_id = f"CHEBI:{chebi_id}"
                 self.by_chebi[chebi_id] = ingredient
 

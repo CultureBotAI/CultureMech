@@ -43,8 +43,10 @@ class MediaIngredientMechLinker:
         Returns:
             True if match found and added, False otherwise
         """
-        # Skip if already has MediaIngredientMech link
-        if 'mediaingredientmech_term' in ingredient:
+        # Skip if already has a MediaIngredientMech link (legacy id-based or
+        # current CHEBI-keyed).
+        if ('mediaingredientmech_term' in ingredient
+                or 'mediaingredientmech_chebi_term' in ingredient):
             self.stats['already_linked'] += 1
             return False
 
@@ -59,14 +61,33 @@ class MediaIngredientMechLinker:
         match = self.loader.find_match(name, chebi_id)
 
         if match:
-            mim_id = match.get('id')
-            mim_name = match.get('name', name)
+            # MIM is now CHEBI-keyed: the entity identifier lives in
+            # `identifier` (a CHEBI CURIE), and the curated name in
+            # `preferred_term`. Fall back to the legacy `id`/`name` fields.
+            mim_name = match.get('preferred_term') or match.get('name', name)
             match_method = match.get('match_method', 'unknown')
 
-            # Add MediaIngredientMech term
-            ingredient['mediaingredientmech_term'] = {
-                'id': mim_id,
-                'label': mim_name
+            # MIM keys curated ingredients by mixed ontologies (mostly CHEBI,
+            # plus FOODON/ENVO/NCIT/...). The `mediaingredientmech_chebi_term`
+            # field is strictly CHEBI, so resolve the matched entity to its
+            # CHEBI grounding and only write the link when one exists.
+            ontology_mapping = match.get('ontology_mapping') or {}
+            chebi_id = ontology_mapping.get('ontology_id')
+            if not (chebi_id and str(chebi_id).startswith('CHEBI:')):
+                ident = match.get('identifier') or match.get('id') or ''
+                chebi_id = ident if str(ident).startswith('CHEBI:') else None
+
+            if not chebi_id:
+                # Matched a MIM entity that is not CHEBI-keyed -> no strictly
+                # CHEBI linkage to record.
+                self.stats['no_match'] += 1
+                self.stats.setdefault('matched_non_chebi', 0)
+                self.stats['matched_non_chebi'] += 1
+                return False
+
+            ingredient['mediaingredientmech_chebi_term'] = {
+                'id': chebi_id,
+                'label': mim_name,
             }
 
             # Track statistics
