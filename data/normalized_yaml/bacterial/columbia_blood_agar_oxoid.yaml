@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Columbia blood agar (Oxoid)
   concentration:
@@ -30,9 +30,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Starch
   concentration:
     value: '1'
@@ -42,9 +42,9 @@ ingredients:
   term:
     id: CHEBI:85248
     label: gellan gum
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000929
-    label: Starch
+  mediaingredientmech_chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
 - preferred_term: Agar
   concentration:
     value: '10'
@@ -53,9 +53,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Special peptone
   concentration:
     value: '23'
@@ -91,3 +91,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Columbia blood agar (Oxoid)" to "columbia_blood_agar_oxoid"
     for consistent matching
+- timestamp: '2026-06-05T07:40:54.671813+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

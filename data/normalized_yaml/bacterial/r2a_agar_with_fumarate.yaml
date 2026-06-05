@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '18.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: R2A agar
 - preferred_term: Disodium fumarate
   term:
@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '3.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
     label: Disodium fumarate
 preparation_steps:
 - step_number: 1
@@ -56,3 +56,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "R2A AGAR WITH FUMARATE" to "r2a_agar_with_fumarate"
     for consistent matching
+- timestamp: '2026-06-05T07:41:43.590508+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

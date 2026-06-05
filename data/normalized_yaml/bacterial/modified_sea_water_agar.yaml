@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000424
+  mediaingredientmech_chebi_term:
+    id: CHEBI:45296
     label: Hexadecane
 - preferred_term: NaCl
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '17.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '0.48'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '3.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -67,8 +67,8 @@ ingredients:
   concentration:
     value: '4.46'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -77,8 +77,8 @@ ingredients:
   concentration:
     value: '0.98'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Agar
   term:
@@ -87,15 +87,15 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust to pH 7.2. Add agar and autoclave at 121°C for 20 min. A
-    stock solution of calcium chloride should be sterilized separately and added
-    to the medium after autoclaving.
+  description: Adjust to pH 7.2. Add agar and autoclave at 121°C for 20 min. A stock
+    solution of calcium chloride should be sterilized separately and added to the
+    medium after autoclaving.
 applications:
 - Microbial cultivation
 curation_history:
@@ -114,12 +114,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.805674+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED SEA WATER AGAR" to
-    "modified_sea_water_agar" for consistent matching
+  notes: Normalized name from "MODIFIED SEA WATER AGAR" to "modified_sea_water_agar"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:37.724181+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_917_MODIFIED_SEA_WATER_AGAR.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006794
   name: modified_sea_water_agar
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

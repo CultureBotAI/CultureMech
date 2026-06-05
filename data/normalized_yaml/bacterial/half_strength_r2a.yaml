@@ -27,9 +27,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Starch
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Na-pyruvate
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Na-pyruvate
 - preferred_term: K2HPO4
   term:
@@ -67,8 +67,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -77,8 +77,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Agar
   term:
@@ -87,8 +87,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -122,16 +122,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:11.498606+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALF STRENGTH R2A" to "half_strength_r2a" for
-    consistent matching
+  notes: Normalized name from "HALF STRENGTH R2A" to "half_strength_r2a" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:07.183609+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/r3_a_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:000592
   name: r3_a_medium
-  notes: Both records are MediaDive/DSMZ R3 A/R2A solid agar formulations with
-    pH 7.2; the child is explicitly labeled half strength and preserves the agar
-    level.
+  notes: Both records are MediaDive/DSMZ R3 A/R2A solid agar formulations with pH
+    7.2; the child is explicitly labeled half strength and preserves the agar level.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
 - 'Half Strength R2A lowers the R3 A/R2A nutrient and salt components: yeast extract,

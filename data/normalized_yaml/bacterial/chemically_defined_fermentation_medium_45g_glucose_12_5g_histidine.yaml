@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '249.8'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Boric acid
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.1779'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Ferrous sulfate
   concentration:
@@ -60,9 +60,9 @@ ingredients:
   concentration:
     value: '0.4483'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -70,8 +70,8 @@ ingredients:
   concentration:
     value: '0.4057'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Zinc sulfate
   term:
@@ -80,9 +80,9 @@ ingredients:
   concentration:
     value: '0.6955'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.02933'
@@ -104,8 +104,8 @@ ingredients:
   concentration:
     value: '80.57'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000355
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27570
     label: Histidine
 preparation_steps:
 - step_number: 1
@@ -137,6 +137,12 @@ curation_history:
   notes: Normalized name from "'Chemically Defined Fermentation Medium (45g glucose
     + 12.5g histidine" to "chemically_defined_fermentation_medium_45g_glucose_12_5g_histidine"
     for consistent matching
+- timestamp: '2026-06-05T07:40:53.141257+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 339
   term:

@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:28971
     label: Ampicillin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000826
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28971
     label: Ampicillin
 - preferred_term: Kanamycin
   concentration:
@@ -32,8 +32,8 @@ ingredients:
   term:
     id: CHEBI:28077
     label: Rifampicin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000912
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28077
     label: Rifampicin
 - preferred_term: Tetracycline
   concentration:
@@ -143,3 +143,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Luria–Bertani (LB) + antibiotics" to "luria_bertani_lb_antibiotics"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.489122+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

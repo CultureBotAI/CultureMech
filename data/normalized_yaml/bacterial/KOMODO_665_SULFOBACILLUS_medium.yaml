@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: '4.28571'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KCl
   term:
@@ -32,8 +32,8 @@ ingredients:
   concentration:
     value: '0.142857'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: K2HPO4
   term:
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '0.714286'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -52,15 +52,15 @@ ingredients:
   concentration:
     value: '0.714286'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Ca(NO3)2
   concentration:
     value: '0.0142857'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000470
+  mediaingredientmech_chebi_term:
+    id: CHEBI:77732
     label: Ca(NO3)2
   term:
     id: CHEBI:77732
@@ -72,8 +72,8 @@ ingredients:
   concentration:
     value: '146.844'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: H2SO4
   term:
@@ -83,8 +83,8 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: ' (10 N)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
     label: H2SO4
 - preferred_term: Yeast extract
   concentration:
@@ -123,6 +123,12 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''1.9-2.4'' -> {''min'': 1.9, ''max'': 2.4}'
+- timestamp: '2026-06-05T07:40:25.303075+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/sulfobacillus_medium.yaml
   relationship: SOURCE_DUPLICATE

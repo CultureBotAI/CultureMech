@@ -13,8 +13,8 @@ ingredients:
     value: '25.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asn-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -30,8 +30,8 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
@@ -54,8 +54,8 @@ ingredients:
   concentration:
     value: '0.041'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: Nickel chloride
   concentration:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '18.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
@@ -163,6 +163,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Liquid ma minimal media + l-asparagine" to "liquid_ma_minimal_media_l_asparagine"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.276012+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 19
   term:

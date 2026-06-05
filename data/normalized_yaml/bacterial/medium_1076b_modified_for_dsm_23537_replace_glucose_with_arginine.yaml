@@ -44,8 +44,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: L-Glutamine
   term:
@@ -54,8 +54,8 @@ ingredients:
   concentration:
     value: '0.0496876'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
     label: L-Glutamine
 applications:
 - Microbial cultivation
@@ -86,4 +86,10 @@ curation_history:
   notes: Normalized name from "MEDIUM 1076b MODIFIED FOR DSM 23537_replace_Glucose_with_arginine"
     to "medium_1076b_modified_for_dsm_23537_replace_glucose_with_arginine" for consistent
     matching
+- timestamp: '2026-06-05T07:41:14.232858+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 7.4

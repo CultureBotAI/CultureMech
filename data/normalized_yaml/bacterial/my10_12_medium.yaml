@@ -26,8 +26,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Glucose
   term:
@@ -36,8 +36,8 @@ ingredients:
   concentration:
     value: '120'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -46,14 +46,14 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize by steaming for 30 min. Overheating will cause
-    softening. Final aw is 0.88.
+  description: Sterilize by steaming for 30 min. Overheating will cause softening.
+    Final aw is 0.88.
 applications:
 - Microbial cultivation
 curation_history:
@@ -72,12 +72,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.629167+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MY10-12 MEDIUM" to "my10_12_medium" for
-    consistent matching
+  notes: Normalized name from "MY10-12 MEDIUM" to "my10_12_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:38.992341+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_982_MY10-12_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006943
   name: my10_12_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

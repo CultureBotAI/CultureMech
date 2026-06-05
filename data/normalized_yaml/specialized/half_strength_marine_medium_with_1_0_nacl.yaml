@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -45,4 +45,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl" to "half_strength_marine_medium_with_1_0_nacl"
     for consistent matching
+- timestamp: '2026-06-05T07:41:57.770740+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:74

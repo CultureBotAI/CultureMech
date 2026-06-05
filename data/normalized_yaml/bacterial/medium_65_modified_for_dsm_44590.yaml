@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -38,8 +38,8 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: ' (if required)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: Agar
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -73,8 +73,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.131080+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 65 MODIFIED FOR DSM 44590" to
-    "medium_65_modified_for_dsm_44590" for consistent matching
+  notes: Normalized name from "MEDIUM 65 MODIFIED FOR DSM 44590" to "medium_65_modified_for_dsm_44590"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:26.508822+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 7.2
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_65_GYM_STREPTOMYCES_medium.yaml
@@ -83,5 +89,5 @@ parent_media:
   name: gym_streptomyces_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

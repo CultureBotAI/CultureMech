@@ -13,8 +13,8 @@ ingredients:
     value: '45.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000944
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30089
     label: Acetate
 - preferred_term: Biotin
   term:
@@ -24,8 +24,8 @@ ingredients:
     value: '8.1863e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Nicotinate
   concentration:
@@ -43,8 +43,8 @@ ingredients:
     value: '0.00013285'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Thiamine
   term:
@@ -73,9 +73,9 @@ ingredients:
     value: '0.0003645'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Lipoate
   concentration:
     value: '0.0002423'
@@ -92,8 +92,8 @@ ingredients:
     value: '0.00022807'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pnto-R'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000356
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16454
     label: Pantothenate
 - preferred_term: Vitamin B12
   term:
@@ -102,8 +102,8 @@ ingredients:
   concentration:
     value: '7.3781e-07'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Magnesium chloride
   concentration:
@@ -112,9 +112,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0068'
@@ -129,8 +129,8 @@ ingredients:
   concentration:
     value: '0.000808669'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Dibasic sodium phosphate
   concentration:
@@ -146,8 +146,8 @@ ingredients:
   concentration:
     value: '0.11196'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: Sodium molybdate
   concentration:
@@ -163,9 +163,9 @@ ingredients:
   concentration:
     value: '30.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '1.34'
@@ -173,9 +173,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.00048626'
@@ -183,9 +183,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
-    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -193,8 +193,8 @@ ingredients:
   concentration:
     value: '28.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
@@ -217,9 +217,9 @@ ingredients:
   concentration:
     value: '0.0069558'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0044829'
@@ -245,8 +245,8 @@ ingredients:
   concentration:
     value: '0.000105399'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001109
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86463
     label: Aluminum potassium sulfate
   term:
     id: CHEBI:86463
@@ -269,8 +269,8 @@ ingredients:
   concentration:
     value: '30.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000276
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
     label: PIPES
 preparation_steps:
 - step_number: 1
@@ -310,6 +310,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified M1 Medium with Acetate; Pinchuk et al" to
     "modified_m1_medium_with_acetate_pinchuk_et_al" for consistent matching
+- timestamp: '2026-06-05T07:41:36.867972+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 181
   term:

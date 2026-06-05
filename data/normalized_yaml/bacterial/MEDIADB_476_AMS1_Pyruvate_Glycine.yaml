@@ -24,8 +24,8 @@ ingredients:
     value: '1.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000367
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15361
     label: Pyruvate
 - preferred_term: Biotin
   term:
@@ -35,8 +35,8 @@ ingredients:
     value: 4e-06
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Nickel chloride
   concentration:
@@ -52,9 +52,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -63,8 +63,8 @@ ingredients:
     value: '0.05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: Sodium bicarbonate
   concentration:
@@ -73,8 +73,8 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: Sodium bicarbonate
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -97,8 +97,8 @@ ingredients:
   concentration:
     value: '28.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: DL-methionine
   term:
@@ -107,9 +107,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000774
-    label: DL-methionine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16811
+    label: DL-Methionine
 - preferred_term: Sodium selenite
   concentration:
     value: 1e-06
@@ -124,9 +124,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: 5e-07
@@ -141,15 +141,15 @@ ingredients:
   concentration:
     value: '481.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37583
     label: Sodium dihydrogen phosphate
   term:
     id: CHEBI:37583
@@ -161,9 +161,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: 9e-06
@@ -178,9 +178,9 @@ ingredients:
   concentration:
     value: 8e-07
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.000117'
@@ -218,6 +218,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'AMS1 (Pyruvate+Glycine" to "ams1_pyruvate_glycine"
     for consistent matching
+- timestamp: '2026-06-05T07:40:29.459239+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 476
   term:

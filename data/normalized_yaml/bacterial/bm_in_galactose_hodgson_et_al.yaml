@@ -13,8 +13,8 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gal'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000995
+  mediaingredientmech_chebi_term:
+    id: CHEBI:12936
     label: D-Galactose
 - preferred_term: Ethylene glycol
   term:
@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '80.5542'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000374
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30742
     label: Ethylene glycol
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '2.43437'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
@@ -64,9 +64,9 @@ ingredients:
   concentration:
     value: '0.0034779'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0044829'
@@ -81,8 +81,8 @@ ingredients:
   concentration:
     value: '24.9838'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: Ammonium nitrate
 preparation_steps:
 - step_number: 1
@@ -113,6 +113,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Bm in galactose; hodgson et al" to "bm_in_galactose_hodgson_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.221855+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 275
   term:

@@ -13,8 +13,8 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000367
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15361
     label: Pyruvate
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -44,8 +44,8 @@ ingredients:
   concentration:
     value: '0.8'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -54,8 +54,8 @@ ingredients:
   concentration:
     value: '9.3'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
@@ -93,6 +93,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient medium + pyruvate" to "nutrient_medium_pyruvate"
     for consistent matching
+- timestamp: '2026-06-05T07:41:40.216438+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 27
   term:

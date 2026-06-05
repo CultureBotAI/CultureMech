@@ -13,8 +13,8 @@ ingredients:
     value: '22.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fru'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000344
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15824
     label: D-Fructose
 - preferred_term: Sodium hydroxide
   concentration:
@@ -30,8 +30,8 @@ ingredients:
   concentration:
     value: '0.0033'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Magnesium sulfate
   term:
@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
@@ -54,8 +54,8 @@ ingredients:
   concentration:
     value: '11.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37583
     label: Sodium dihydrogen phosphate
   term:
     id: CHEBI:37583
@@ -67,9 +67,9 @@ ingredients:
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -99,6 +99,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M63 with thiamine-hcl with fructose" to "m63_with_thiamine_hcl_with_fructose"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.888778+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 135
   term:

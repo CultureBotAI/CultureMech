@@ -147,8 +147,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 preparation_steps:
 - step_number: 1
@@ -174,3 +174,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TRYPTICASE SOY BROTH WITH 5% NaCl" to "trypticase_soy_broth_with_5_nacl"
     for consistent matching
+- timestamp: '2026-06-05T07:41:54.524278+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

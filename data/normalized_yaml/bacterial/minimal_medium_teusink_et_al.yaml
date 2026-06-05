@@ -21,8 +21,8 @@ ingredients:
     value: '55.5062'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: L-Arginine
   term:
@@ -32,8 +32,8 @@ ingredients:
     value: '0.71757'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
     label: L-Arginine
 - preferred_term: Ascorbate
   concentration:
@@ -48,8 +48,8 @@ ingredients:
     value: '0.83775'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: L-Tryptophan
   term:
@@ -59,8 +59,8 @@ ingredients:
     value: '0.24482'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:trp-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001063
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16828
     label: L-Tryptophan
 - preferred_term: L-Phenylalanine
   term:
@@ -70,8 +70,8 @@ ingredients:
     value: '1.66475'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000312
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17295
     label: L-Phenylalanine
 - preferred_term: L-Tyrosine
   term:
@@ -81,8 +81,8 @@ ingredients:
     value: '1.37977'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: L-Tyrosine
 - preferred_term: Biotin
   term:
@@ -92,8 +92,8 @@ ingredients:
     value: '0.01203'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: L-Leucine
   term:
@@ -103,8 +103,8 @@ ingredients:
     value: '3.62125'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
     label: L-Leucine
 - preferred_term: L-Valine
   term:
@@ -114,8 +114,8 @@ ingredients:
     value: '2.77422'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:val-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000304
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16414
     label: L-Valine
 - preferred_term: L-Threonine
   term:
@@ -125,8 +125,8 @@ ingredients:
     value: '1.88885'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000310
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16857
     label: L-Threonine
 - preferred_term: Nicotinate
   concentration:
@@ -144,8 +144,8 @@ ingredients:
     value: '0.00266'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: L-Isoleucine
   term:
@@ -155,8 +155,8 @@ ingredients:
     value: '1.60098'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000294
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17191
     label: L-Isoleucine
 - preferred_term: Potassium dibasic phosphate
   concentration:
@@ -172,8 +172,8 @@ ingredients:
   concentration:
     value: '0.00456'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Pyridoxamine HCl
   concentration:
@@ -189,9 +189,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
-    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:52891
@@ -216,8 +216,8 @@ ingredients:
   concentration:
     value: '12.1901'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: Ammonium citrate
   concentration:
@@ -261,6 +261,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Minimal Medium; Teusink et al" to "minimal_medium_teusink_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:34.713399+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 2
   term:

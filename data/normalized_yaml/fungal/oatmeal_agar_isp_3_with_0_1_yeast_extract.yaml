@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Oatmeal agar
 - preferred_term: Yeast extract
   concentration:
@@ -45,4 +45,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT" to "oatmeal_agar_isp_3_with_0_1_yeast_extract"
     for consistent matching
+- timestamp: '2026-06-05T07:41:57.077835+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:12

@@ -26,8 +26,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Agar
   term:
@@ -37,14 +37,14 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg
-    MnSO4 x H2O is recommended for sporulation.
+  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4
+    x H2O is recommended for sporulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,13 +63,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.200203+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MYCOBACTERIUM INTRACELLULARE MEDIUM" to
-    "mycobacterium_intracellulare_medium" for consistent matching
+  notes: Normalized name from "MYCOBACTERIUM INTRACELLULARE MEDIUM" to "mycobacterium_intracellulare_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:39.016887+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_126_MYCOBACTERIUM_INTRACELLULARE_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_126_MYCOBACTERIUM_INTRACELLULARE_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004024
   name: mycobacterium_intracellulare_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 126; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 126; local ingredient
+    and concentration signatures match.

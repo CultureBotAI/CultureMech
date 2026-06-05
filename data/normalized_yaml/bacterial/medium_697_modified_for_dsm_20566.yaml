@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000243
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4167
     label: Dextrose
 - preferred_term: NaHCO3
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaCl
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2HPO4
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 applications:
 - Microbial cultivation
@@ -82,8 +82,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.863934+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 697 MODIFIED FOR DSM 20566" to
-    "medium_697_modified_for_dsm_20566" for consistent matching
+  notes: Normalized name from "MEDIUM 697 MODIFIED FOR DSM 20566" to "medium_697_modified_for_dsm_20566"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:26.829900+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 7.8
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_697_TODD-HEWITT_medium.yaml
@@ -92,5 +98,5 @@ parent_media:
   name: todd_hewitt_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

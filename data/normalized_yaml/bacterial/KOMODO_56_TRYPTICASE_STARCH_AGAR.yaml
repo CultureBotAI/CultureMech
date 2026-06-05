@@ -34,13 +34,12 @@ ingredients:
     value: '17.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Pancreatic enzymatic digest of casein providing amino acids and
-    peptides; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
-    commercial product
+  notes: Pancreatic enzymatic digest of casein providing amino acids and peptides;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: tryptone
     synonym_type: EXACT
@@ -56,13 +55,12 @@ ingredients:
     value: '3.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Peptic digest of soybean meal providing additional peptides and
-    carbohydrates; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar
-    (TSA) commercial product
+  notes: Peptic digest of soybean meal providing additional peptides and carbohydrates;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: soytone
     synonym_type: EXACT
@@ -78,12 +76,12 @@ ingredients:
     value: '2.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic
-    Soy Agar (TSA) commercial product
+  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy
+    Agar (TSA) commercial product
   synonyms:
   - synonym_text: dextrose
     synonym_type: EXACT
@@ -97,12 +95,12 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) /
-    Tryptic Soy Agar (TSA) commercial product
+  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic
+    Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -116,12 +114,12 @@ ingredients:
     value: '2.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar
-    (TSA) commercial product
+  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+    commercial product
   synonyms:
   - synonym_text: K2HPO4
     synonym_type: EXACT
@@ -137,12 +135,12 @@ ingredients:
     value: '15.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic
-    Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
+    Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -154,8 +152,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Agar
   term:
@@ -164,8 +162,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -189,16 +187,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.477377+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TRYPTICASE STARCH AGAR" to
-    "trypticase_starch_agar" for consistent matching
+  notes: Normalized name from "TRYPTICASE STARCH AGAR" to "trypticase_starch_agar"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:24.640146+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/trypticase_starch_agar.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001699
   name: trypticase_starch_agar
-  notes: KOMODO record states DSMZ Medium 56 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 56 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

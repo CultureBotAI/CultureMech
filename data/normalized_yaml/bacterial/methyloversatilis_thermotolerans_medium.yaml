@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KH2PO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaCl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Agar
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Methanol
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
     label: Methanol
 - preferred_term: Vitamin B12
   term:
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 preparation_steps:
 - step_number: 1
@@ -98,9 +98,8 @@ preparation_steps:
   description: Adjust to pH 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: After autoclaving add methanol (sterilized separately) to a
-    concentration of 0.5 % (v/v) and 0.1 ml vitamin solution B12 (10µg /ml,
-    filter sterilized).
+  description: After autoclaving add methanol (sterilized separately) to a concentration
+    of 0.5 % (v/v) and 0.1 ml vitamin solution B12 (10µg /ml, filter sterilized).
 applications:
 - Microbial cultivation
 curation_history:
@@ -119,8 +118,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.471726+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHYLOVERSATILIS THERMOTOLERANS MEDIUM" to
-    "methyloversatilis_thermotolerans_medium" for consistent matching
+  notes: Normalized name from "METHYLOVERSATILIS THERMOTOLERANS MEDIUM" to "methyloversatilis_thermotolerans_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:33.541508+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1122_MEDIUM_K.yaml
   relationship: SOURCE_DUPLICATE
@@ -128,5 +133,5 @@ parent_media:
   name: medium_k
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

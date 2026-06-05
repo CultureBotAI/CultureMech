@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '0.24975'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: NaHCO3
   term:
@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '1.4985'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '1.4985'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: NaCl
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '29.703'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '0.138614'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '0.138614'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '3.36634'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '4.13861'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
@@ -98,8 +98,8 @@ ingredients:
   concentration:
     value: '0.326733'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -108,8 +108,8 @@ ingredients:
   concentration:
     value: '0.00049505'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -118,8 +118,8 @@ ingredients:
   concentration:
     value: '0.00049505'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
@@ -128,8 +128,8 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000429
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76181
     label: Fe(NH4)2(SO4)2 x 6 H2O
 - preferred_term: Biotin
   term:
@@ -138,8 +138,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Folic acid
   term:
@@ -148,8 +148,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -158,8 +158,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
@@ -168,8 +168,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
@@ -178,8 +178,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
@@ -188,8 +188,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Calcium pantothenate
   term:
@@ -198,8 +198,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
@@ -208,8 +208,8 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -218,8 +218,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: Lipoic acid
   term:
@@ -228,16 +228,16 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
     label: Lipoic acid
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except NaHCO3, Na2S2O3 x 5H2O and Trace
-    vitamins, and autoclave. Filter-sterilize 8% (w/v) NaHCO3, 10% (w/v) Na2S2O3
-    x 5H2O and Trace vitamins and add to the medium. Replace the gas phase with
-    a N2-CO2-O2 (77:17:6, v/v) gas mixture, and pressurize to 200 kPa.
+  description: Mix ingredients, except NaHCO3, Na2S2O3 x 5H2O and Trace vitamins,
+    and autoclave. Filter-sterilize 8% (w/v) NaHCO3, 10% (w/v) Na2S2O3 x 5H2O and
+    Trace vitamins and add to the medium. Replace the gas phase with a N2-CO2-O2 (77:17:6,
+    v/v) gas mixture, and pressurize to 200 kPa.
 applications:
 - Microbial cultivation
 curation_history:
@@ -260,20 +260,25 @@ curation_history:
 - timestamp: '2026-03-17T19:45:28.584400+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MJ BASAL MEDIUM" to "mj_basal_medium" for
-    consistent matching
+  notes: Normalized name from "MJ BASAL MEDIUM" to "mj_basal_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:34.911151+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 22 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/mj_n_basal_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002733
   name: mj_n_basal_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
-- path:
-    data/normalized_yaml/bacterial/mj_medium_for_microaerophilic_autotrophs.yaml
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/mj_medium_for_microaerophilic_autotrophs.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:003251
   name: mj_medium_for_microaerophilic_autotrophs
-  notes: Reviewed MJ basal/autotroph pair; child keeps the marine salt, trace
-    metal, and vitamin base unchanged but raises NaHCO3 from 1.4985 to 5 g/L and
-    Na2S2O3 x 5 H2O from 1.4985 to 15 g/L, with pH 5.5 recorded in the child.
+  notes: Reviewed MJ basal/autotroph pair; child keeps the marine salt, trace metal,
+    and vitamin base unchanged but raises NaHCO3 from 1.4985 to 5 g/L and Na2S2O3
+    x 5 H2O from 1.4985 to 15 g/L, with pH 5.5 recorded in the child.

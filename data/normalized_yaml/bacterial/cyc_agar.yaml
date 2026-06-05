@@ -29,9 +29,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -69,11 +69,17 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "CYC AGAR" to "cyc_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:55.139228+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:550
 variant_children:
 - path: data/normalized_yaml/bacterial/cyc_agar_ph_8_0.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002580
   name: cyc_agar_ph_8_0
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

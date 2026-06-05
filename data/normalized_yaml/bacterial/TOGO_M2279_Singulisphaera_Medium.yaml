@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,8 +31,8 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: N-acetylglucosamine
   concentration:
@@ -43,8 +43,8 @@ ingredients:
   term:
     id: CHEBI:59640
     label: N-acetylglucosamine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000797
+  mediaingredientmech_chebi_term:
+    id: CHEBI:59640
     label: N-acetylglucosamine
 - preferred_term: Na-ampicillin (may be omitted for pure cultures)
   concentration:
@@ -73,9 +73,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4 x 7 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '3.34'
@@ -85,9 +85,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '599.0'
@@ -97,8 +97,8 @@ ingredients:
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Nitrilotriacetic acid (NTA)
   concentration:
@@ -109,9 +109,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid (NTA)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: (NH4)MoO7O24 x 4H2O
   concentration:
     value: '9.25'
@@ -130,9 +130,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -141,9 +141,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '1095'
@@ -153,9 +153,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
-    label: ZnSO4 x 7 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '39.2'
@@ -165,9 +165,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
-    label: CuSO4 x 5 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '154'
@@ -177,9 +177,9 @@ ingredients:
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: MnSO4 x H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75211
+    label: manganese(II) sulfate
 - preferred_term: Co(NO3)2 x 6 H2O
   concentration:
     value: '24.8'
@@ -189,8 +189,8 @@ ingredients:
   term:
     id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000525
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
@@ -209,9 +209,9 @@ ingredients:
   term:
     id: CHEBI:64734
     label: EDTA disodium salt (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
-    label: Na-EDTA
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -221,9 +221,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
-    label: H2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
 media_term:
   preferred_term: TOGO Medium M2279
   term:
@@ -269,4 +269,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:35.922085+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true

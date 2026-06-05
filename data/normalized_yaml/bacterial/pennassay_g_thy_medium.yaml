@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Thymine
   term:
@@ -32,8 +32,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000503
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17821
     label: Thymine
 applications:
 - Microbial cultivation
@@ -53,12 +53,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.575216+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PENNASSAY G-THY MEDIUM" to
-    "pennassay_g_thy_medium" for consistent matching
+  notes: Normalized name from "PENNASSAY G-THY MEDIUM" to "pennassay_g_thy_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:41.266749+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_542_PENNASSAY_G-THY_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005971
   name: pennassay_g_thy_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '125'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '160'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.13'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: K2SO4
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001064
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32036
     label: K2SO4
 - preferred_term: Casamino acids
   concentration:
@@ -59,9 +59,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Agar
   term:
@@ -83,8 +83,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -117,3 +117,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALOBACULUM MEDIUM" to "halobaculum_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:07.686437+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

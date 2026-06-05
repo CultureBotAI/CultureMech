@@ -21,8 +21,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
@@ -31,8 +31,8 @@ ingredients:
   concentration:
     value: '14'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
@@ -41,9 +41,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: DL-Asparagine x H2O
   term:
@@ -61,8 +61,8 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000907
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22653
     label: DL-Asparagine x H2O
 - preferred_term: L-Arginine x HCl
   concentration:
@@ -71,8 +71,8 @@ ingredients:
   term:
     id: CHEBI:31235
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000576
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31235
     label: L-Arginine x HCl
 - preferred_term: L-Glutamic acid
   term:
@@ -81,8 +81,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000562
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16015
     label: L-Glutamic acid
 - preferred_term: Glycine
   term:
@@ -91,8 +91,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: L-Histidine
   term:
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000272
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15971
     label: L-Histidine
 - preferred_term: L-Tryptophan
   term:
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001063
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16828
     label: L-Tryptophan
 - preferred_term: L-Proline
   term:
@@ -121,8 +121,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: (NH4)2SO4
   term:
@@ -131,8 +131,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: Glucose
   term:
@@ -141,8 +141,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Vitamin B12
   term:
@@ -151,8 +151,8 @@ ingredients:
   concentration:
     value: 4e-05
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 preparation_steps:
 - step_number: 1
@@ -189,6 +189,12 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''6.8-7.2'' -> {''min'': 6.8, ''max'': 7.2}'
+- timestamp: '2026-06-05T07:40:50.186828+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1270_B12_-_MEDIUM_GUTTMAN.yaml
   relationship: SOURCE_DUPLICATE

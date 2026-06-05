@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 - preferred_term: CaCO3
   term:
@@ -33,8 +33,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: Agar
   term:
@@ -43,8 +43,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -68,14 +68,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.812008+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CORYNEBACTERIUM MEDIUM CII" to
-    "corynebacterium_medium_cii" for consistent matching
+  notes: Normalized name from "CORYNEBACTERIUM MEDIUM CII" to "corynebacterium_medium_cii"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:54.891213+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:583
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_583_CORYNEBACTERIUM_medium_CII.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006054
   name: corynebacterium_medium_cii
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

@@ -22,8 +22,8 @@ ingredients:
   term:
     id: CHEBI:46020
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001094
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46020
     label: Tetramethyl ammonium
 - preferred_term: Agar
   concentration:
@@ -33,9 +33,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Standard mineral base (see below)
   concentration:
     value: '1'
@@ -54,8 +54,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: (NH4)2SO4
   concentration:
@@ -66,9 +66,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: Hutner's vitamin free mineral base (see below)
   concentration:
     value: '20'
@@ -109,9 +109,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
-    label: Nitrilotriacetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: (NH4)6Mo7O24・4H2O
   concentration:
     value: '9.25'
@@ -130,9 +130,9 @@ ingredients:
   term:
     id: CHEBI:32035
     label: potassium hydroxide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 - preferred_term: Metals ''44'' (see below)
   concentration:
     value: '50'
@@ -228,4 +228,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Tetramethyl Ammonium Medium" to "tetramethyl_ammonium_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:33.052462+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true

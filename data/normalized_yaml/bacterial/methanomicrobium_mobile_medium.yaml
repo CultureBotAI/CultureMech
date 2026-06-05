@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.23'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.23'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaCl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: (NH4)2SO4
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '0.09'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Indigocarmine
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000487
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31695
     label: Indigocarmine
 - preferred_term: NaHCO3
   term:
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '6.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Yeast extract
   concentration:
@@ -103,8 +103,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000793
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18320
     label: DL-Dithiothreitol
 - preferred_term: Na2S x 9 H2O
   term:
@@ -113,8 +113,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
@@ -157,3 +157,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOMICROBIUM MOBILE MEDIUM" to "methanomicrobium_mobile_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:32.027050+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

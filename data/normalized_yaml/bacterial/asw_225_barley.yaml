@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '212.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '3.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '13.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '1.65'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -58,14 +58,15 @@ ingredients:
   concentration:
     value: '0.65'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Add  20  ml of  the  autoclaved artificial seawater  with 255  psu
-    and  4 \r\nautoclaved barley grains to a T­25 tissue culture flask (Corning 25100)."
+  description: "Add  20  ml of  the  autoclaved artificial seawater  with 255  psu\
+    \ and  4 \r\nautoclaved barley grains to a T­25 tissue culture flask (Corning\
+    \ 25100)."
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,19 +85,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:05.931968+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ASW 225 + barley" to "asw_225_barley" for
-    consistent matching
+  notes: Normalized name from "ASW 225 + barley" to "asw_225_barley" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:49.942920+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true
 parent_media:
   path: data/normalized_yaml/bacterial/asw_150_barley.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:000382
   name: asw_150_barley
-  notes: CCAP artificial seawater plus barley formulation with higher stated
-    salinity; reviewed as salinity variant of ASW 150 + barley.
+  notes: CCAP artificial seawater plus barley formulation with higher stated salinity;
+    reviewed as salinity variant of ASW 150 + barley.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
 - Artificial seawater salinity increased relative to 150 psu parent; record name/source
-  ID indicate 225 psu, preparation text says 255 psu. NaCl, MgCl2 x 6 H2O, and
-  MgSO4 x 7 H2O concentrations differ from parent while ingredient identities
-  are unchanged.
+  ID indicate 225 psu, preparation text says 255 psu. NaCl, MgCl2 x 6 H2O, and MgSO4
+  x 7 H2O concentrations differ from parent while ingredient identities are unchanged.

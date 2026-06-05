@@ -20,8 +20,8 @@ ingredients:
   concentration:
     value: '10.5263'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: K2HPO4
   term:
@@ -30,8 +30,8 @@ ingredients:
   concentration:
     value: '0.842105'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '0.210526'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -50,8 +50,8 @@ ingredients:
   concentration:
     value: '0.105263'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -60,8 +60,8 @@ ingredients:
   concentration:
     value: '0.0210526'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: MnSO4 x 6 H2O
   term:
@@ -70,8 +70,8 @@ ingredients:
   concentration:
     value: '0.00210526'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000788
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131523
     label: MnSO4 x 6 H2O
 - preferred_term: ZnSO4 x 6 H2O
   term:
@@ -80,8 +80,8 @@ ingredients:
   concentration:
     value: '0.00526316'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000789
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132762
     label: ZnSO4 x 6 H2O
 - preferred_term: CuSO4 x 6 H2O
   term:
@@ -90,8 +90,8 @@ ingredients:
   concentration:
     value: '0.00421053'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000715
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91246
     label: CuSO4 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -100,8 +100,8 @@ ingredients:
   concentration:
     value: '0.00526316'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: Agar
   term:
@@ -110,8 +110,8 @@ ingredients:
   concentration:
     value: '15.7895'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -135,15 +135,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:36.918966+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BEIJERINCKIA MEDIUM" to "beijerinckia_medium" for
-    consistent matching
+  notes: Normalized name from "BEIJERINCKIA MEDIUM" to "beijerinckia_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:19.139827+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/beijerinckia_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000556
   name: beijerinckia_medium
-  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
-    concentration signature.
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same source medium number and matching ingredient/concentration signature.

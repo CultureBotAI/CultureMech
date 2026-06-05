@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000326
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22652
     label: Ascorbic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na2-ß-glycerolphosphate
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '9.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000486
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132089
     label: Na2-ß-glycerolphosphate
 - preferred_term: Lactose
   term:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17716
     label: Lactose
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 applications:
 - Microbial cultivation
@@ -109,6 +109,12 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''7.1-7.2'' -> {''min'': 7.1, ''max'': 7.2}'
+- timestamp: '2026-06-05T07:40:25.240646+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/m17_medium_modified.yaml
   relationship: SOURCE_DUPLICATE

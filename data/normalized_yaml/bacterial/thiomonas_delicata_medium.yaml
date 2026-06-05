@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2HPO4
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '4.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -78,14 +78,14 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: Optional ingredient (for solid medium)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissove ingredients, adjust medium to pH 6.0, dispense into
-    suitable culture vessels and autoclave.
+  description: Dissove ingredients, adjust medium to pH 6.0, dispense into suitable
+    culture vessels and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -104,13 +104,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.509214+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOMONAS DELICATA MEDIUM" to
-    "thiomonas_delicata_medium" for consistent matching
+  notes: Normalized name from "THIOMONAS DELICATA MEDIUM" to "thiomonas_delicata_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:51.627859+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_1037_THIOMONAS_DELICATA_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_1037_THIOMONAS_DELICATA_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003551
   name: thiomonas_delicata_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

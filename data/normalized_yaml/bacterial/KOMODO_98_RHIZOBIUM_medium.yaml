@@ -24,8 +24,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001010
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29864
     label: Mannitol
 - preferred_term: Agar
   term:
@@ -34,8 +34,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: air-dried garden soil
   concentration:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 applications:
 - Microbial cultivation
@@ -73,24 +73,30 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.326387+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RHIZOBIUM medium" to "rhizobium_medium" for
-    consistent matching
+  notes: Normalized name from "RHIZOBIUM medium" to "rhizobium_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:28.406989+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:98
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_98_modified_for_dsm_15010.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006941
   name: medium_98_modified_for_dsm_15010
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/rhizobium_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002171
   name: rhizobium_medium
-  notes: KOMODO record states DSMZ Medium 98 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 98 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

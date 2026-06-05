@@ -31,8 +31,8 @@ ingredients:
   concentration:
     value: '5.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: D(+)-Glucose
   term:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D(+)-Glucose
 applications:
 - Microbial cultivation
@@ -66,8 +66,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:47.475816+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 453 MODIFIED FOR DSM 6455" to
-    "medium_453_modified_for_dsm_6455" for consistent matching
+  notes: Normalized name from "MEDIUM 453 MODIFIED FOR DSM 6455" to "medium_453_modified_for_dsm_6455"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:19.191857+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 7.5
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_453_STANDARD_I_medium.yaml
@@ -76,5 +82,5 @@ parent_media:
   name: standard_i_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

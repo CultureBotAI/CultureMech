@@ -24,8 +24,8 @@ ingredients:
   concentration:
     value: '1.5191'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001045
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75832
     label: FeSO4
 - preferred_term: Acetate
   term:
@@ -34,8 +34,8 @@ ingredients:
   concentration:
     value: '0.118088'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000944
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30089
     label: Acetate
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -44,8 +44,8 @@ ingredients:
   concentration:
     value: '0.543478'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Resazurin
   term:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Ammonium chloride
   term:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '14'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ammonium acetate
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000701
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62947
     label: Ammonium acetate
 - preferred_term: Pyruvic acid sodium salt
   term:
@@ -108,8 +108,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000243
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4167
     label: Dextrose
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -118,8 +118,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -128,8 +128,8 @@ ingredients:
   concentration:
     value: '14'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: KH2PO4
   term:
@@ -138,8 +138,8 @@ ingredients:
   concentration:
     value: '14'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Vitamin B12
   term:
@@ -148,8 +148,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: HCl
   term:
@@ -158,8 +158,8 @@ ingredients:
   concentration:
     value: '1.925'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -168,8 +168,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnCl2
   term:
@@ -178,8 +178,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -188,8 +188,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
@@ -198,8 +198,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -208,8 +208,8 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -218,8 +218,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -228,8 +228,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -238,8 +238,8 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
@@ -263,30 +263,35 @@ curation_history:
 - timestamp: '2026-03-17T19:45:44.230403+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM FOR CHLOROBIUM FERROOXIDANS" to
-    "medium_for_chlorobium_ferrooxidans" for consistent matching
+  notes: Normalized name from "MEDIUM FOR CHLOROBIUM FERROOXIDANS" to "medium_for_chlorobium_ferrooxidans"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:22.239496+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_29_modified_for_dsm_12025.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004751
   name: medium_29_modified_for_dsm_12025
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
-- path:
-    data/normalized_yaml/bacterial/pfennigs_medium_ii_modified_1988_for_green_sulfur_bacteria.yaml
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/pfennigs_medium_ii_modified_1988_for_green_sulfur_bacteria.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004775
   name: pfennigs_medium_ii_modified_1988_for_green_sulfur_bacteria
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/medium_for_chlorobium_ferrooxidans.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001398
   name: medium_for_chlorobium_ferrooxidans
-  notes: KOMODO record states DSMZ Medium 29a provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 29a provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

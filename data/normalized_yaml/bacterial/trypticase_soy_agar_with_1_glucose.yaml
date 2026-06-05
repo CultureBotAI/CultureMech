@@ -147,8 +147,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 applications:
 - Microbial cultivation
@@ -170,3 +170,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TRYPTICASE SOY AGAR WITH 1% GLUCOSE" to "trypticase_soy_agar_with_1_glucose"
     for consistent matching
+- timestamp: '2026-06-05T07:41:54.419268+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '9.90099'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Glycerol
   term:
@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '9.90099'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Bacto peptone
   concentration:
@@ -46,8 +46,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 - preferred_term: Agar
   term:
@@ -56,8 +56,8 @@ ingredients:
   concentration:
     value: '14.8515'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -77,17 +77,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:31.184905+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TUA ACETOBACTER MEDIUM" to
-    "tua_acetobacter_medium" for consistent matching
+  notes: Normalized name from "TUA ACETOBACTER MEDIUM" to "tua_acetobacter_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:17.615388+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/tua_acetobacter_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000824
   name: tua_acetobacter_medium
-  notes: Both records are MediaDive TUA Acetobacter solid agar formulations; the
-    local differences are import rounding rather than a meaningful formulation
-    variant.
+  notes: Both records are MediaDive TUA Acetobacter solid agar formulations; the local
+    differences are import rounding rather than a meaningful formulation variant.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same TUA Acetobacter Medium formulation with only rounding-scale differences
-  in glucose, glycerol, peptone, yeast extract, and agar.
+- Same TUA Acetobacter Medium formulation with only rounding-scale differences in
+  glucose, glycerol, peptone, yeast extract, and agar.

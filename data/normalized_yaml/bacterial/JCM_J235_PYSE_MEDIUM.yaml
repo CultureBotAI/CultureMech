@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '0.35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '2.65'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaSO4 x 2 H2O
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '0.65'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000465
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32583
     label: CaSO4 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -67,8 +67,8 @@ ingredients:
   concentration:
     value: '5.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 preparation_steps:
 - step_number: 1
@@ -93,3 +93,9 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PYSE MEDIUM" to "pyse_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:16.886665+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

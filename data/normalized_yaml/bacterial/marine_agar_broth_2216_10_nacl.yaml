@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -71,16 +71,22 @@ curation_history:
 - timestamp: '2026-03-17T19:46:18.220271+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Marine Agar/Broth 2216 + 10 % NaCl" to
-    "marine_agar_broth_2216_10_nacl" for consistent matching
+  notes: Normalized name from "Marine Agar/Broth 2216 + 10 % NaCl" to "marine_agar_broth_2216_10_nacl"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:12.803430+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/marine_agar_broth_2216_3_nacl.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:009579
   name: marine_agar_broth_2216_3_nacl
-  notes: Reviewed TOGO Marine Agar/Broth 2216 salinity pair; records differ only
-    in added NaCl concentration.
+  notes: Reviewed TOGO Marine Agar/Broth 2216 salinity pair; records differ only in
+    added NaCl concentration.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- NaCl increased from 30 g/L to 100 g/L while Marine Broth 2216 and optional
-  agar remain unchanged.
+- NaCl increased from 30 g/L to 100 g/L while Marine Broth 2216 and optional agar
+  remain unchanged.

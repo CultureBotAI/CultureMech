@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '0.055'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Na-pyruvate
 - preferred_term: NaNO2
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000387
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78870
     label: NaNO2
 - preferred_term: MnSO4 x H2O
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '0.0338'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: H3BO3
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '0.0494'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -67,8 +67,8 @@ ingredients:
   concentration:
     value: '0.0431'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: (NH4)6Mo7O24
   concentration:
@@ -84,8 +84,8 @@ ingredients:
   concentration:
     value: '0.0973'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -94,8 +94,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: CaCO3
   term:
@@ -104,8 +104,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: NaCl
   term:
@@ -114,8 +114,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -124,8 +124,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
@@ -134,8 +134,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 applications:
 - Microbial cultivation
@@ -159,21 +159,27 @@ curation_history:
 - timestamp: '2026-03-17T19:45:57.823680+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MIXOTROPHIC NITROBACTER medium" to
-    "mixotrophic_nitrobacter_medium" for consistent matching
+  notes: Normalized name from "MIXOTROPHIC NITROBACTER medium" to "mixotrophic_nitrobacter_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:26.101545+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 8.6
 variant_children:
 - path: data/normalized_yaml/bacterial/10_mixotrophic_nitrobacter_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001890
   name: 10_mixotrophic_nitrobacter_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/mixotrophic_nitrobacter_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:001889
   name: mixotrophic_nitrobacter_medium
-  notes: Reviewed same-name Mixotrophic Nitrobacter medium records; child
-    increases yeast extract, peptone, and sodium pyruvate from 0.15/0.15/0.055
-    g/L to 1.5/1.5/0.55 g/L while the remaining parsed base ingredients are
-    unchanged; pH differs from 8.6 to 7.4.
+  notes: Reviewed same-name Mixotrophic Nitrobacter medium records; child increases
+    yeast extract, peptone, and sodium pyruvate from 0.15/0.15/0.055 g/L to 1.5/1.5/0.55
+    g/L while the remaining parsed base ingredients are unchanged; pH differs from
+    8.6 to 7.4.

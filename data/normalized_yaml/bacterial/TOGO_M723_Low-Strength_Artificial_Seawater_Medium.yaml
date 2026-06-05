@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '7'
@@ -52,9 +52,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Peptone
   concentration:
     value: '0.5'
@@ -91,18 +91,22 @@ curation_history:
 - timestamp: '2026-03-17T19:46:30.487254+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Low-Strength Artificial Seawater Medium" to
-    "low_strength_artificial_seawater_medium" for consistent matching
+  notes: Normalized name from "Low-Strength Artificial Seawater Medium" to "low_strength_artificial_seawater_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:43.902446+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/TOGO_M1022_Artificial_Seawater_Medium.yaml
+  path: data/normalized_yaml/bacterial/TOGO_M1022_Artificial_Seawater_Medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007536
   name: artificial_seawater_medium
-  notes: Both records are TOGO/NBRC liquid artificial seawater media with the
-    same salt base and lower organic nutrient concentrations in the low-strength
-    child.
+  notes: Both records are TOGO/NBRC liquid artificial seawater media with the same
+    salt base and lower organic nutrient concentrations in the low-strength child.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Yeast extract decreases from 3 g/L to 0.1 g/L and peptone decreases from 2.5
-  g/L to 0.5 g/L; seawater salts remain unchanged.
+- Yeast extract decreases from 3 g/L to 0.1 g/L and peptone decreases from 2.5 g/L
+  to 0.5 g/L; seawater salts remain unchanged.

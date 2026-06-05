@@ -30,8 +30,8 @@ ingredients:
   concentration:
     value: '0.029228'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
     label: L-Glutamine
 preparation_steps:
 - step_number: 1
@@ -92,4 +92,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BME/CTVM2 cell line medium (Occidentia massiliensis)"
     to "bme_ctvm2_cell_line_medium_occidentia_massiliensis" for consistent matching
+- timestamp: '2026-06-05T07:40:51.251646+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:1670

@@ -148,8 +148,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -179,3 +179,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALF STRENGTH TRYPTICASE SOY BROTH AGAR (pH 4.0)" to
     "half_strength_trypticase_soy_broth_agar_ph_4_0" for consistent matching
+- timestamp: '2026-06-05T07:41:07.202539+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

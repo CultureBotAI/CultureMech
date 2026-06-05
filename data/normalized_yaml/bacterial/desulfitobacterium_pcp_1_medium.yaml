@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.27'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: NH4Cl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.53'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -60,8 +60,8 @@ ingredients:
     value: '1.502'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.002, 1.5]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -70,8 +70,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -84,8 +84,8 @@ ingredients:
   concentration:
     value: '6.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Na-pyruvate
 - preferred_term: Sodium resazurin
   concentration:
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Na2SO3
   term:
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '0.63'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000988
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86477
     label: Na2SO3
 - preferred_term: Na2S x 9 H2O
   term:
@@ -121,8 +121,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: HCl
   term:
@@ -131,8 +131,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
 - preferred_term: ZnCl2
   term:
@@ -141,8 +141,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -151,8 +151,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
@@ -161,8 +161,8 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -171,8 +171,8 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -181,8 +181,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -191,8 +191,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -201,25 +201,24 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, sulfite and sulfide),
-    adjust pH of solution to 7.0 and sparge with 100% N2 gas for 30 - 45 min to
-    make it anoxic. Dispense under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Prior to use add sulfite and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
-    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas
-    atmosphere. The stock solution of sulfite should by freshly prepared and
-    sterilized by filtration. Prior to use check pH of complete medium and
-    adjust to 7.5, if necessary.
+  description: Dissolve ingredients (except carbonate, sulfite and sulfide), adjust
+    pH of solution to 7.0 and sparge with 100% N2 gas for 30 - 45 min to make it anoxic.
+    Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Prior to use add sulfite and sulfide from sterile anoxic stock
+    solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock
+    solution prepared under 80% N2 and 20% CO2 gas atmosphere. The stock solution
+    of sulfite should by freshly prepared and sterilized by filtration. Prior to use
+    check pH of complete medium and adjust to 7.5, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and
-    dissolve the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -242,12 +241,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.720126+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DESULFITOBACTERIUM PCP-1 MEDIUM" to
-    "desulfitobacterium_pcp_1_medium" for consistent matching
+  notes: Normalized name from "DESULFITOBACTERIUM PCP-1 MEDIUM" to "desulfitobacterium_pcp_1_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:56.050587+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 18 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_836_modified_for_dsm_13498.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006628
   name: medium_836_modified_for_dsm_13498
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Bacto peptone (BD-Difco)
   concentration:
     value: '5'
@@ -71,16 +71,22 @@ curation_history:
 - timestamp: '2026-03-17T19:46:27.850535+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Nutrient Broth With 1.0% NaCl" to
-    "nutrient_broth_with_1_0_nacl" for consistent matching
+  notes: Normalized name from "Nutrient Broth With 1.0% NaCl" to "nutrient_broth_with_1_0_nacl"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:41.081097+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/TOGO_M5_Nutrient_Broth_With_0.5_NaCl.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:009998
   name: nutrient_broth_with_0_5_nacl
-  notes: Reviewed TOGO nutrient broth pair; 0.5% NaCl parent and 1.0% NaCl child
-    share the same nutrient broth base formulation.
+  notes: Reviewed TOGO nutrient broth pair; 0.5% NaCl parent and 1.0% NaCl child share
+    the same nutrient broth base formulation.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- NaCl increased from 5 g/L to 10 g/L while Bacto peptone and beef extract
-  remain unchanged.
+- NaCl increased from 5 g/L to 10 g/L while Bacto peptone and beef extract remain
+  unchanged.

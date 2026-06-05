@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: MgCl2 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: Na-pyruvate
   concentration:
     value: '0.8'
@@ -38,8 +38,8 @@ ingredients:
   term:
     id: CHEBI:50144
     label: Na-pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Na-pyruvate
 - preferred_term: Na-citrate
   concentration:
@@ -58,9 +58,9 @@ ingredients:
   term:
     id: CHEBI:59640
     label: N-acetylglucosamine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000797
-    label: N-Acetylglucosamine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:59640
+    label: N-acetylglucosamine
 - preferred_term: Proteose yeastolate (TC) (DIFCO 5577-15)
   concentration:
     value: '1'
@@ -80,9 +80,9 @@ ingredients:
   term:
     id: CHEBI:18050
     label: L-glutamine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
-    label: L-Glutamine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
 - preferred_term: Proteose tryptone (DIFCO 0123-01)
   concentration:
     value: '1'
@@ -106,9 +106,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: gelatine
   concentration:
     value: '14'
@@ -117,9 +117,9 @@ ingredients:
   term:
     id: CHEBI:5291
     label: Gelatine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000940
-    label: gelatine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:5291
+    label: Gelatine
 - preferred_term: bidest. Water
   concentration:
     value: '343.0'
@@ -250,6 +250,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:36.517335+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: 'Solution A:'
   composition: []

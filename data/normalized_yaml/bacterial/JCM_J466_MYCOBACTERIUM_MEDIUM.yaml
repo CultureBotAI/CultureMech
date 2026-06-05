@@ -32,8 +32,8 @@ ingredients:
   concentration:
     value: '2.38095'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 12 H2O
 - preferred_term: KH2PO4
   term:
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '0.952381'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Trisodium citrate
   term:
@@ -52,8 +52,8 @@ ingredients:
   concentration:
     value: '1.42857'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Trisodium citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '0.571429'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Glycerol
   term:
@@ -72,8 +72,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Tween 80
   term:
@@ -82,8 +82,8 @@ ingredients:
   concentration:
     value: '0.47619'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 - preferred_term: Agar
   term:
@@ -92,8 +92,8 @@ ingredients:
   concentration:
     value: '14.2857'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -119,3 +119,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MYCOBACTERIUM MEDIUM" to "mycobacterium_medium" for
     consistent matching
+- timestamp: '2026-06-05T07:40:17.308186+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

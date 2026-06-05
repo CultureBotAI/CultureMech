@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: KH2PO4
   concentration:
@@ -26,8 +26,8 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Sodium glutamate
   concentration:
@@ -38,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
-    label: Sodium glutamate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: monosodium glutamate
 - preferred_term: Glycerol
   concentration:
     value: '6'
@@ -50,9 +50,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
-    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: Whole egg
   concentration:
     value: '200'
@@ -105,6 +105,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:44.553474+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: Solution I
   term:

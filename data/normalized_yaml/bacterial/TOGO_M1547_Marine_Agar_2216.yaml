@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Bacto Marine Agar 2216 (Difco)
   concentration:
@@ -37,15 +37,14 @@ applications:
 references:
 - reference: PMID:18319453
   year: 2008
-  notes: Primary literature source reporting colony formation by Sneathiella
-    glossodoripedis type strain MKT133T on Marine Agar 2216 at 30 C after 4-5
-    days.
-- reference: 'NCBI:GCF_000616095.1'
-  notes: NCBI Datasets genome assembly page for Sneathiella glossodoripedis JCM
-    23214, the same type strain lineage as MKT133T / IAM 15419 / KCTC 12842.
+  notes: Primary literature source reporting colony formation by Sneathiella glossodoripedis
+    type strain MKT133T on Marine Agar 2216 at 30 C after 4-5 days.
+- reference: NCBI:GCF_000616095.1
+  notes: NCBI Datasets genome assembly page for Sneathiella glossodoripedis JCM 23214,
+    the same type strain lineage as MKT133T / IAM 15419 / KCTC 12842.
 - reference: BacDive:134304
-  notes: BacDive type-strain record linking MKT133 / IAM 15419 / KCTC 12842 /
-    JCM 23214 to NCBI Taxonomy ID 1236958 and genome assembly GCA_000616095.
+  notes: BacDive type-strain record linking MKT133 / IAM 15419 / KCTC 12842 / JCM
+    23214 to NCBI Taxonomy ID 1236958 and genome assembly GCA_000616095.
 curation_history:
 - timestamp: '2026-01-27T06:35:57.821757Z'
   curator: togo-import
@@ -71,8 +70,14 @@ curation_history:
 - timestamp: '2026-05-05T00:00:00Z'
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
-  notes: Added strain-specific Marine Agar 2216 colony-formation evidence for
-    Sneathiella glossodoripedis MKT133T / JCM 23214.
+  notes: Added strain-specific Marine Agar 2216 colony-formation evidence for Sneathiella
+    glossodoripedis MKT133T / JCM 23214.
+- timestamp: '2026-06-05T07:40:33.219863+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 target_organisms:
 - preferred_term: Sneathiella glossodoripedis
   term:
@@ -84,22 +89,22 @@ target_organisms:
   strain: MKT133T; IAM 15419T; KCTC 12842T; JCM 23214T
   growth_metrics:
   - temperature_celsius: 30.0
-    measurement_conditions: Marine Agar 2216; aerobic incubation at 30 C; source
-      reports colonies less than 1 mm diameter after 4-5 days.
+    measurement_conditions: Marine Agar 2216; aerobic incubation at 30 C; source reports
+      colonies less than 1 mm diameter after 4-5 days.
     evidence:
     - reference: PMID:18319453
       supports: SUPPORT
       snippet: Colonies of the strain after 4-5 days incubation on marine agar 2216
         at 30 degrees C were less than 1 mm in diameter.
-      explanation: Kurahashi et al. report colony formation for strain MKT133T
-        on Marine Agar 2216, matching the CultureMech parent medium name.
+      explanation: Kurahashi et al. report colony formation for strain MKT133T on
+        Marine Agar 2216, matching the CultureMech parent medium name.
     is_max_attainment: false
   evidence:
   - reference: PMID:18319453
     supports: SUPPORT
-    explanation: The species-description paper identifies MKT133T as the type
-      strain and reports growth as colony formation on Marine Agar 2216.
-  - reference: 'NCBI:GCF_000616095.1'
+    explanation: The species-description paper identifies MKT133T as the type strain
+      and reports growth as colony formation on Marine Agar 2216.
+  - reference: NCBI:GCF_000616095.1
     supports: SUPPORT
-    explanation: NCBI Datasets lists the genome assembly for Sneathiella
-      glossodoripedis JCM 23214, an equivalent type-strain deposit.
+    explanation: NCBI Datasets lists the genome assembly for Sneathiella glossodoripedis
+      JCM 23214, an equivalent type-strain deposit.

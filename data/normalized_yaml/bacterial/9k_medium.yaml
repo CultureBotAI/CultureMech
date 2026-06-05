@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: (NH4)2SO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '2.997'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KCl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.0999001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -59,15 +59,15 @@ ingredients:
   concentration:
     value: '49.9501'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Ca(NO3)2
   concentration:
     value: '0.00999001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000470
+  mediaingredientmech_chebi_term:
+    id: CHEBI:77732
     label: Ca(NO3)2
   term:
     id: CHEBI:77732
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
     label: H2SO4
 preparation_steps:
 - step_number: 1
@@ -115,6 +115,12 @@ curation_history:
   action: BACKFILLED_SOURCE_ENVIRONMENT
   notes: added=2 env(s) from CommunityMech
   source: CommunityMech (environment_term + culturemech_id linkage)
+- timestamp: '2026-06-05T07:40:15.983714+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 source_environment:
 - preferred_term: mine tailing
   term:

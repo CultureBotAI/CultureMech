@@ -12,8 +12,8 @@ ingredients:
   concentration:
     value: '111.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Ammonium sulfate
   term:
@@ -22,9 +22,9 @@ ingredients:
   concentration:
     value: '37.84'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -32,8 +32,8 @@ ingredients:
   concentration:
     value: '0.002965'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: myo-Inositol
   term:
@@ -43,9 +43,9 @@ ingredients:
     value: '0.1388'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:inost'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000500
-    label: myo-Inositol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17268
+    label: Myo-inositol
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -54,9 +54,9 @@ ingredients:
     value: '0.1458'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.004863'
@@ -64,9 +64,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
-    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
 - preferred_term: Nicotinate
   concentration:
     value: '0.008123'
@@ -82,8 +82,8 @@ ingredients:
   concentration:
     value: '0.002099'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Histidine
   term:
@@ -92,8 +92,8 @@ ingredients:
   concentration:
     value: '1.063'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000355
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27570
     label: Histidine
 - preferred_term: Leucine
   concentration:
@@ -109,8 +109,8 @@ ingredients:
   concentration:
     value: '2.029'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: EDTA
   term:
@@ -119,8 +119,8 @@ ingredients:
   concentration:
     value: '0.05133'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: DL-Serine
   concentration:
@@ -149,8 +149,8 @@ ingredients:
     value: '0.4396'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: Tryptophan
   term:
@@ -159,8 +159,8 @@ ingredients:
   concentration:
     value: '3.251'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001025
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27897
     label: Tryptophan
 - preferred_term: Aspartate
   concentration:
@@ -209,8 +209,8 @@ ingredients:
     value: '0.0002047'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Potassium iodide
   term:
@@ -219,8 +219,8 @@ ingredients:
   concentration:
     value: '0.0006024'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000505
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8346
     label: Potassium iodide
 - preferred_term: Boric acid
   term:
@@ -229,8 +229,8 @@ ingredients:
   concentration:
     value: '0.01617'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Cobalt chloride
   concentration:
@@ -246,9 +246,9 @@ ingredients:
   concentration:
     value: '0.01565'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -287,6 +287,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Yeast Optimized Defined Medium (Glucose" to "yeast_optimized_defined_medium_glucose"
     for consistent matching
+- timestamp: '2026-06-05T07:41:57.339776+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 396
   term:

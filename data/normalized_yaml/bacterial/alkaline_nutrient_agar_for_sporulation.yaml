@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MnSO4 x H2O
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: MnSO4 x H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75211
+    label: manganese(II) sulfate
 - preferred_term: Agar, if necessary
   concentration:
     value: '15'
@@ -52,9 +52,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Na2CO3 anhydrous
   concentration:
     value: '5.3'
@@ -64,8 +64,8 @@ ingredients:
   term:
     id: CHEBI:29377
     label: Na2CO3 anhydrous
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3 anhydrous
 media_term:
   preferred_term: TOGO Medium M2421
@@ -115,6 +115,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:47.904851+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: Na-sesquicarbonate solution
   term:

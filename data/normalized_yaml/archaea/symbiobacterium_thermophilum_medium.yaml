@@ -21,8 +21,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: NaNO3
   term:
@@ -49,8 +49,8 @@ ingredients:
   term:
     id: CHEBI:184335
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000412
+  mediaingredientmech_chebi_term:
+    id: CHEBI:184335
     label: NH4HCO3
 preparation_steps:
 - step_number: 1
@@ -97,3 +97,9 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''7.5-7.8'' -> {''min'': 7.5, ''max'': 7.8}'
+- timestamp: '2026-06-05T07:40:15.123330+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

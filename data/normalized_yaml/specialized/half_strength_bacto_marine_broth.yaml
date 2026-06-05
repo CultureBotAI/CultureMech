@@ -20,8 +20,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Bacto peptone
   concentration:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000864
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Fe(III) citrate
 - preferred_term: NaCl
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '19.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '5.9'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
     label: MgCl2
 - preferred_term: Na2SO4
   term:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '3.24'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: CaCl2
   term:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: KCl
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '0.55'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaHCO3
   term:
@@ -98,8 +98,8 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: KBr
   term:
@@ -108,8 +108,8 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
     label: KBr
 - preferred_term: SrCl2
   term:
@@ -118,8 +118,8 @@ ingredients:
   concentration:
     value: '0.034'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000196
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36383
     label: SrCl2
 - preferred_term: H3BO3
   term:
@@ -128,8 +128,8 @@ ingredients:
   concentration:
     value: '0.022'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Na-silicate
   term:
@@ -138,8 +138,8 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000833
+  mediaingredientmech_chebi_term:
+    id: CHEBI:60720
     label: Na-silicate
 - preferred_term: NaF
   term:
@@ -148,8 +148,8 @@ ingredients:
   concentration:
     value: '0.0024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000182
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
     label: NaF
 - preferred_term: (NH4)NO3
   term:
@@ -158,8 +158,8 @@ ingredients:
   concentration:
     value: '0.0016'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: (NH4)NO3
 - preferred_term: Na2HPO4
   term:
@@ -168,8 +168,8 @@ ingredients:
   concentration:
     value: '0.008'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 preparation_steps:
 - step_number: 1
@@ -208,3 +208,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALF STRENGTH BACTO MARINE BROTH" to "half_strength_bacto_marine_broth"
     for consistent matching
+- timestamp: '2026-06-05T07:41:57.751938+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

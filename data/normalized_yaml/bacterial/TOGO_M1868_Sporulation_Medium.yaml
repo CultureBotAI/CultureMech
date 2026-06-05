@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '0.278'
@@ -47,9 +47,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -69,9 +69,9 @@ ingredients:
   term:
     id: CHEBI:86159
     label: calcium nitrate tetrahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
-    label: Ca(NO3)2·4H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86159
+    label: calcium nitrate tetrahydrate
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '1.979'
@@ -119,4 +119,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Sporulation Medium" to "sporulation_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:40:34.653099+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true

@@ -15,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Magnesium sulfate heptahydrate
   concentration:
@@ -27,8 +27,8 @@ ingredients:
   term:
     id: CHEBI:31795
     label: Magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: Magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
@@ -44,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: Ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Ferrous sulfate heptahydrate
   concentration:
     value: '1.2'
@@ -77,8 +77,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: Manganese sulfate monohydrate
   term:
     id: CHEBI:86364
@@ -104,16 +104,19 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: CAS amino acids
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
+  term:
+    id: CHEBI:78020
+    label: Casamino acids
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78020
     label: CAS amino acids
 media_term:
   preferred_term: TOGO Medium M2237
@@ -148,3 +151,9 @@ curation_history:
     et al. ( J Bacteriol 121:272– 285(1975)) by removal of the nitriloacetic acid"
     to "basal_salts_medium_bsm_modified_from_that_of_hareland_et_al_j_bacteriol_121_272_285_1975_by_removal_of_the_nitriloacetic_acid"
     for consistent matching
+- timestamp: '2026-06-05T07:40:50.562491+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

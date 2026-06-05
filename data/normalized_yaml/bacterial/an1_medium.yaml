@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: NaCl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na-thioglycolate
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
     label: Na-thioglycolate
 - preferred_term: Sulfur
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000927
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
     label: Sulfur
 - preferred_term: Resazurin
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 preparation_steps:
 - step_number: 1
@@ -78,9 +78,9 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 2
   action: MIX
-  description: Prepare the medium anaerobically under 100% nitrogen. Sterilize
-    thioglycolate and sulfur separately. Sterilize the sulfur by steaming for 3
-    h on each of three successive days.
+  description: Prepare the medium anaerobically under 100% nitrogen. Sterilize thioglycolate
+    and sulfur separately. Sterilize the sulfur by steaming for 3 h on each of three
+    successive days.
 applications:
 - Microbial cultivation
 curation_history:
@@ -103,12 +103,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.500686+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AN1 MEDIUM" to "an1_medium" for consistent
-    matching
+  notes: Normalized name from "AN1 MEDIUM" to "an1_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:48.673819+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_376_AN1_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005108
   name: an1_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 376; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 376; local ingredient
+    and concentration signatures match.

@@ -15,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -32,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
-    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: Ox bile, desiccated
   concentration:
     value: '8'
@@ -54,9 +54,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '12'
@@ -65,9 +65,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Glycerol monostearate
   concentration:
     value: '0.5'
@@ -76,9 +76,9 @@ ingredients:
   term:
     id: CHEBI:75456
     label: 2-stearoylglycerol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000691
-    label: Glycerol monostearate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75456
+    label: 2-stearoylglycerol
 - preferred_term: Tween 60
   concentration:
     value: '0.5'
@@ -87,9 +87,9 @@ ingredients:
   term:
     id: CHEBI:53425
     label: polysorbate 60
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000692
-    label: Tween 60
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53425
+    label: polysorbate 60
 - preferred_term: Bacteriological peptone
   concentration:
     value: '10'
@@ -131,3 +131,9 @@ curation_history:
   notes: Normalized name from "Leeming &amp; Notman agar (LNA) (Leeming &amp; Notman
     1987) in The Yeasts, a Taxonomic Study, 5th edn" to "leeming_amp_notman_agar_lna_leeming_amp_notman_1987_in_the_yeasts_a_taxonomic_study_5th_edn"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.038132+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

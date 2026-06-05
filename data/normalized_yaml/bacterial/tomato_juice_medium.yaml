@@ -31,8 +31,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 preparation_steps:
 - step_number: 1
@@ -56,13 +56,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.325889+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TOMATO JUICE MEDIUM" to "tomato_juice_medium" for
-    consistent matching
+  notes: Normalized name from "TOMATO JUICE MEDIUM" to "tomato_juice_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:53.882090+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:264
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_264_TOMATO_JUICE_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004667
   name: tomato_juice_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 264; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 264; local ingredient
+    and concentration signatures match.

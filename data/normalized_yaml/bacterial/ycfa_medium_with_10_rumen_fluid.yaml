@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '4.09417'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Glucose
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '2.04708'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Maltose
@@ -50,8 +50,8 @@ ingredients:
   concentration:
     value: '2.04708'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Cellobiose
@@ -61,8 +61,8 @@ ingredients:
   concentration:
     value: '2.04708'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001069
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
     label: Cellobiose
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: L-Cysteine HCl x H2O
@@ -72,8 +72,8 @@ ingredients:
   concentration:
     value: '1.02354'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Resazurin
@@ -83,8 +83,8 @@ ingredients:
   concentration:
     value: '0.00102354'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: K2HPO4
@@ -94,8 +94,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: KH2PO4
@@ -105,8 +105,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: (NH4)2SO4
@@ -116,8 +116,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: NaCl
@@ -127,8 +127,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: MgSO4 x 7 H2O
@@ -138,8 +138,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: CaCl2 x 2 H2O
@@ -149,8 +149,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Acetic acid
@@ -160,8 +160,8 @@ ingredients:
   concentration:
     value: '17'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000342
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
     label: Acetic acid
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Propionic acid
@@ -171,8 +171,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000366
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30768
     label: Propionic acid
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: n-Valeric acid
@@ -182,8 +182,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000303
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17418
     label: n-Valeric acid
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: iso-Valeric acid
@@ -204,8 +204,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000286
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16135
     label: iso-Butyric acid
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: KOH
@@ -215,8 +215,8 @@ ingredients:
   concentration:
     value: '11.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
     label: KOH
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Ethanol
@@ -226,8 +226,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Hemin
@@ -237,8 +237,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Hemin
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Biotin
@@ -248,8 +248,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Vitamin B12
@@ -259,8 +259,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: p-Aminobenzoic acid
@@ -270,8 +270,8 @@ ingredients:
   concentration:
     value: '0.015'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Folic acid
@@ -281,8 +281,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Pyridoxine hydrochloride
@@ -292,8 +292,8 @@ ingredients:
   concentration:
     value: '0.075'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Thiamine HCl
@@ -303,8 +303,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
   notes: Copied from referenced JCM Medium 1130
 - preferred_term: Riboflavin
@@ -314,8 +314,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
   notes: Copied from referenced JCM Medium 1130
 preparation_steps:
@@ -356,5 +356,11 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:55.634145+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 26 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 data_quality_flags:
 - resolved_reference

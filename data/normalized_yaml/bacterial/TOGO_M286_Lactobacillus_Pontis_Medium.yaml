@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Lactobacilli MRS broth (BD-Difco)
   concentration:
@@ -31,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000916
-    label: Maltose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18167
+    label: alpha-maltose
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '5'
@@ -51,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
-    label: Hemin chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: Triethanolamine
   concentration:
     value: '4'
@@ -63,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:28621
     label: triethanolamine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000660
-    label: Triethanolamine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28621
+    label: triethanolamine
 media_term:
   preferred_term: TOGO Medium M286
   term:
@@ -116,6 +116,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:39.464181+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: Maltose--hemin solution
   composition: []

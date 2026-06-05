@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '1.1236'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: KNO3
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.247191'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '33.7079'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 preparation_steps:
 - step_number: 1
@@ -84,3 +84,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHYLOPHAGA MURALIS MEDIUM" to "methylophaga_muralis_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:33.329668+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

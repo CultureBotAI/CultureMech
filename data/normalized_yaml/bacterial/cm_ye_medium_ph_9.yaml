@@ -20,9 +20,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Yeast extract
   concentration:
     value: '9.99001'
@@ -35,8 +35,8 @@ ingredients:
   concentration:
     value: '19.98'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
   notes: Copied from referenced JCM Medium 59
 - preferred_term: Trisodium citrate x 2 H2O
@@ -46,9 +46,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
   notes: Copied from referenced JCM Medium 59
 - preferred_term: KCl
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '1.998'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
   notes: Copied from referenced JCM Medium 59
 - preferred_term: NaCl
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '199.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
   notes: Copied from referenced JCM Medium 59
 - preferred_term: Agar
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '14.985'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
   notes: Copied from referenced JCM Medium 59
 - preferred_term: FeSO4 x 7 H2O
@@ -90,8 +90,8 @@ ingredients:
   concentration:
     value: '49.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
   notes: Copied from referenced JCM Medium 59
 preparation_steps:
@@ -135,5 +135,11 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:40:54.552437+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 data_quality_flags:
 - resolved_reference

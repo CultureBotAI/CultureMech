@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
   notes: Copied from referenced JCM Medium 461
 - preferred_term: Casitone
@@ -44,8 +44,8 @@ ingredients:
   concentration:
     value: '4.87805'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
   notes: Copied from referenced JCM Medium 461
 - preferred_term: Resazurin
@@ -55,8 +55,8 @@ ingredients:
   concentration:
     value: '0.00097561'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
   notes: Copied from referenced JCM Medium 461
 preparation_steps:
@@ -94,6 +94,12 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:40:17.302505+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 data_quality_flags:
 - resolved_reference
 kg_microbe_match: mediadive.medium:J461

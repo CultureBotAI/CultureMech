@@ -21,9 +21,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -52,8 +52,13 @@ curation_history:
 - timestamp: '2026-03-17T19:46:07.617151+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Nutrient Agar" to "nutrient_agar" for consistent
-    matching
+  notes: Normalized name from "Nutrient Agar" to "nutrient_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:29.551079+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 notes: General purpose medium for bacteria
 kg_microbe_match: mediadive.medium:12
 parent_media:
@@ -61,11 +66,11 @@ parent_media:
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003093
   name: nutrient_agar
-  notes: Reviewed exact same-name Nutrient Agar formulation across source
-    records; ingredient identity, concentrations, and agar state match, with
-    only missing pH metadata in the child.
+  notes: Reviewed exact same-name Nutrient Agar formulation across source records;
+    ingredient identity, concentrations, and agar state match, with only missing pH
+    metadata in the child.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Reviewed JCM/NBRC Nutrient Agar records; both parsed formulations contain beef
-  extract 3 g/L, peptone 5 g/L, and agar 15 g/L, with the JCM parent carrying pH
-  7.0 and the NBRC record not specifying pH.
+- Reviewed JCM/NBRC Nutrient Agar records; both parsed formulations contain beef extract
+  3 g/L, peptone 5 g/L, and agar 15 g/L, with the JCM parent carrying pH 7.0 and the
+  NBRC record not specifying pH.

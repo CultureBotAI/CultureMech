@@ -50,8 +50,8 @@ ingredients:
     value: '30.0'
     unit: G_PER_L
   notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Calf brains
   term:
@@ -64,8 +64,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain
-    tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
 - preferred_term: Beef heart
   term:
     id: UBERON:0000948
@@ -77,8 +77,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox
-    heart tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
 - preferred_term: Proteose peptone
   term:
     id: FOODON:03302071
@@ -90,8 +90,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Enzymatic digest of animal protein providing amino acids and peptides;
-    Constituent of Brain Heart Infusion commercial product
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
 - preferred_term: Dextrose
   term:
     id: CHEBI:17234
@@ -103,8 +103,7 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial
-    product
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
   synonyms:
   - synonym_text: glucose
     synonym_type: EXACT
@@ -123,8 +122,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion
-    commercial product
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -141,8 +140,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion
-    commercial product
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: Na2HPO4
     synonym_type: EXACT
@@ -165,8 +164,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -194,16 +193,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:47.169530+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BLOOD AGAR I" to "blood_agar_i" for consistent
-    matching
+  notes: Normalized name from "BLOOD AGAR I" to "blood_agar_i" for consistent matching
+- timestamp: '2026-06-05T07:40:23.166916+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/blood_agar_i.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001525
   name: blood_agar_i
-  notes: KOMODO record states DSMZ Medium 420 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 420 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

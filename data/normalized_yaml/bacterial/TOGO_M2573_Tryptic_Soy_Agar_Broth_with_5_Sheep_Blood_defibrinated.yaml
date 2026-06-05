@@ -140,9 +140,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Soytone
   concentration:
     value: '5'
@@ -202,3 +202,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Tryptic Soy Agar/Broth with 5% Sheep Blood (defibrinated)"
     to "tryptic_soy_agar_broth_with_5_sheep_blood_defibrinated" for consistent matching
+- timestamp: '2026-06-05T07:40:37.546727+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

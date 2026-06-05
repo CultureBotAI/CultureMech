@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Lactose
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:36218
     label: beta-lactose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001003
-    label: Lactose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
 - preferred_term: GAM broth (Nissui)
   concentration:
     value: '59'
@@ -68,3 +68,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GAM Broth With 1% Lactose" to "gam_broth_with_1_lactose"
     for consistent matching
+- timestamp: '2026-06-05T07:40:43.847886+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Sea salts (Sigma)
   concentration:
@@ -30,9 +30,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Reinforced clostridial medium (BD-Difco)
   concentration:
     value: '38'
@@ -70,13 +70,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:28.495417+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Reinforced Clostridial Medium With 3%  Sea Salt"
-    to "reinforced_clostridial_medium_with_3_sea_salt" for consistent matching
+  notes: Normalized name from "Reinforced Clostridial Medium With 3%  Sea Salt" to
+    "reinforced_clostridial_medium_with_3_sea_salt" for consistent matching
+- timestamp: '2026-06-05T07:40:41.763386+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/TOGO_M483_Reinforced_Clostridial_Medium_With_4_Sea_Salt.yaml
+- path: data/normalized_yaml/bacterial/TOGO_M483_Reinforced_Clostridial_Medium_With_4_Sea_Salt.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:009870
   name: reinforced_clostridial_medium_with_4_sea_salt
-  notes: Sea salts (Sigma) increased from 30 g/L to 40 g/L while reinforced
-    clostridial medium and agar remain unchanged.
+  notes: Sea salts (Sigma) increased from 30 g/L to 40 g/L while reinforced clostridial
+    medium and agar remain unchanged.

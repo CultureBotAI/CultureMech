@@ -24,8 +24,8 @@ ingredients:
   concentration:
     value: '3.46'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000276
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
     label: PIPES
 - preferred_term: Yeast extract
   concentration:
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000677
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33403
     label: Elemental sulphur
 - preferred_term: NH4Cl
   term:
@@ -52,8 +52,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '0.35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: CaCl2
   term:
@@ -72,8 +72,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: FeCl3
   term:
@@ -82,8 +82,8 @@ ingredients:
   concentration:
     value: '0.0067'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000705
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30808
     label: FeCl3
 - preferred_term: Na2WO4
   term:
@@ -92,8 +92,8 @@ ingredients:
   concentration:
     value: '0.0029'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000240
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63940
     label: Na2WO4
 - preferred_term: Resazurin
   term:
@@ -102,8 +102,8 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Na2S x 9 H2O
   term:
@@ -112,8 +112,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 applications:
 - Microbial cultivation
@@ -137,16 +137,21 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.331837+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YPS medium" to "yps_medium" for consistent
-    matching
+  notes: Normalized name from "YPS medium" to "yps_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:28.413354+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/DSMZ_990_YPS_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002172
   name: yps_medium
-  notes: KOMODO record states DSMZ Medium 990 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 990 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

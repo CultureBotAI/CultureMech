@@ -28,8 +28,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Yeast extract
   concentration:
@@ -58,6 +58,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "NY-AGAR" to "ny_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:22.319501+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 7.0
 kg_microbe_match: mediadive.medium:12
 parent_media:
@@ -65,10 +71,10 @@ parent_media:
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001405
   name: ny_agar
-  notes: KOMODO record explicitly cites DSMZ Medium 306; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 306; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 306; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 306; local ingredient
+  and concentration signatures match.

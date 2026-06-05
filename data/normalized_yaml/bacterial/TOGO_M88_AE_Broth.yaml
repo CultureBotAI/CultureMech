@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:16236
     label: ethanol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
-    label: Ethanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: ethanol
 - preferred_term: Acetic acid
   concentration:
     value: '65'
@@ -43,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:15366
     label: acetic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000342
-    label: Acetic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
+    label: acetic acid
 - preferred_term: Glucose
   concentration:
     value: '15'
@@ -55,9 +55,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Peptone
   concentration:
     value: '3'
@@ -95,3 +95,9 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "AE Broth" to "ae_broth" for consistent matching
+- timestamp: '2026-06-05T07:40:45.409803+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

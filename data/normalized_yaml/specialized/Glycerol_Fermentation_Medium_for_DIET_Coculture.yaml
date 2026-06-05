@@ -9,8 +9,9 @@ ingredients:
   concentration:
     value: '10.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: glycerol
   term:
     id: CHEBI:17754
     label: glycerol
@@ -18,8 +19,9 @@ ingredients:
   concentration:
     value: '0.82'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000175
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
   term:
     id: CHEBI:32954
     label: sodium acetate
@@ -27,8 +29,9 @@ ingredients:
   concentration:
     value: '2.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000178
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -39,15 +42,16 @@ ingredients:
   term:
     id: CHEBI:37583
     label: sodium dihydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: Sodium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37583
+    label: sodium dihydrogen phosphate
 - preferred_term: Disodium hydrogen phosphate
   concentration:
     value: '4.58'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000639
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogen phosphate
   term:
     id: CHEBI:34683
     label: disodium hydrogen phosphate
@@ -55,8 +59,9 @@ ingredients:
   concentration:
     value: '0.28'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000988
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -67,15 +72,16 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: Magnesium chloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '2.9'
     unit: MG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
   term:
     id: CHEBI:3312
     label: calcium dichloride
@@ -83,8 +89,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000277
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35235
+    label: L-cysteine
   term:
     id: CHEBI:35235
     label: L-cysteine
@@ -146,6 +153,12 @@ curation_history:
   action: BACKFILLED_SOURCE_ENVIRONMENT
   notes: added=1 env(s) from CommunityMech
   source: CommunityMech (environment_term + culturemech_id linkage)
+- timestamp: '2026-06-05T07:41:57.371680+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 source_environment:
 - preferred_term: laboratory culture
   term:

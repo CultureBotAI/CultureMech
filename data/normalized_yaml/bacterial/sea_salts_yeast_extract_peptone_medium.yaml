@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,17 +31,17 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Ferric citrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Simple component, Defined
     component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000281
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Ferric citrate
   term:
     id: CHEBI:144421
@@ -89,3 +89,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Sea Salts Yeast Extract Peptone Medium" to "sea_salts_yeast_extract_peptone_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:45.436826+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

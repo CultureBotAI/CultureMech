@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: (NH4)2SO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KCl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: K2HPO4
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -69,9 +69,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except yeast extract, adjust pH to 1.6-1.8 with
-    H2SO4, and filter-sterilize. Prior to use, add yeast extract as an
-    autoclaved 10% solution.
+  description: Mix ingredients except yeast extract, adjust pH to 1.6-1.8 with H2SO4,
+    and filter-sterilize. Prior to use, add yeast extract as an autoclaved 10% solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -90,17 +89,23 @@ curation_history:
 - timestamp: '2026-03-17T19:45:28.018084+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FERROPLASMA ACIDIPHILUM MEDIUM" to
-    "ferroplasma_acidiphilum_medium" for consistent matching
+  notes: Normalized name from "FERROPLASMA ACIDIPHILUM MEDIUM" to "ferroplasma_acidiphilum_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:16.996972+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J698_ACIDIMICROBIUM_MEDIUM.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:003043
   name: acidimicrobium_medium
-  notes: Reviewed Ferroplasma acidiphilum medium as a concentration variant of
-    JCM Acidimicrobium medium with iron sulfate and yeast-extract axes.
+  notes: Reviewed Ferroplasma acidiphilum medium as a concentration variant of JCM
+    Acidimicrobium medium with iron sulfate and yeast-extract axes.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Reviewed JCM Acidimicrobium/Ferroplasma pair; child keeps acidic pH 1.7 and
-  same component set but changes sulfate/phosphate salts, raises FeSO4 from
-  0.00998004 to 25 g/L, and lowers yeast extract from 2.5 to 0.16 g/L.
+- Reviewed JCM Acidimicrobium/Ferroplasma pair; child keeps acidic pH 1.7 and same
+  component set but changes sulfate/phosphate salts, raises FeSO4 from 0.00998004
+  to 25 g/L, and lowers yeast extract from 2.5 to 0.16 g/L.

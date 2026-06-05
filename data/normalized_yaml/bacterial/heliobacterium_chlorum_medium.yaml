@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -43,8 +43,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001044
+  mediaingredientmech_chebi_term:
+    id: CHEBI:113451
     label: Sodium ascorbate
 preparation_steps:
 - step_number: 1
@@ -52,15 +52,15 @@ preparation_steps:
   description: Adjust pH to 7.0 .
 - step_number: 2
   action: HEAT
-  description: "Boil the medium for few minutes under nitrogen gas. Add sodium ascorbate
-    (0.5 g) and\r\ncontinue to bubble with nitrogen gas."
+  description: "Boil the medium for few minutes under nitrogen gas. Add sodium ascorbate\
+    \ (0.5 g) and\r\ncontinue to bubble with nitrogen gas."
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.8.
 - step_number: 4
   action: MIX
-  description: Fill immediately about 10 ml medium in 15 mL hungate tubes (with
-    rubber septum).
+  description: Fill immediately about 10 ml medium in 15 mL hungate tubes (with rubber
+    septum).
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
@@ -82,13 +82,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.450195+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HELIOBACTERIUM CHLORUM MEDIUM" to
-    "heliobacterium_chlorum_medium" for consistent matching
+  notes: Normalized name from "HELIOBACTERIUM CHLORUM MEDIUM" to "heliobacterium_chlorum_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:08.367949+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_370_HELIOBACTERIUM_CHLORUM_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_370_HELIOBACTERIUM_CHLORUM_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005092
   name: heliobacterium_chlorum_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 370; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 370; local ingredient
+    and concentration signatures match.

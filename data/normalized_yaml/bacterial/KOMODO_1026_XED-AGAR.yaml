@@ -20,8 +20,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000407
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37166
     label: Xylan
 - preferred_term: Yeast extract
   concentration:
@@ -34,8 +34,8 @@ ingredients:
   concentration:
     value: '18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -60,6 +60,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "XED-AGAR" to "xed_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:18.210886+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:1026
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J581_XED_AGAR.yaml
@@ -68,5 +74,4 @@ parent_media:
   name: xed_agar
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Same ingredient identity signature but concentration signature differs from
-  parent.
+- Same ingredient identity signature but concentration signature differs from parent.

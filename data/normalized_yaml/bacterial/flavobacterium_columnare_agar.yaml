@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -30,9 +30,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Agar (if needed)
   concentration:
     value: '10'
@@ -80,16 +80,22 @@ curation_history:
 - timestamp: '2026-03-17T19:46:11.973735+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Flavobacterium columnare Agar" to
-    "flavobacterium_columnare_agar" for consistent matching
+  notes: Normalized name from "Flavobacterium columnare Agar" to "flavobacterium_columnare_agar"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:00.401969+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/TOGO_M1540_Enriched_Cytophaga_Agar.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:008088
   name: enriched_cytophaga_agar
-  notes: Both records are TOGO/NBRC solid complex agar records with the same
-    ingredient identity signature and a single agar concentration axis.
+  notes: Both records are TOGO/NBRC solid complex agar records with the same ingredient
+    identity signature and a single agar concentration axis.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Agar (if needed) decreases from 15 g/L to 10 g/L; all other parsed ingredients
-  and concentrations match.
+- Agar (if needed) decreases from 15 g/L to 10 g/L; all other parsed ingredients and
+  concentrations match.

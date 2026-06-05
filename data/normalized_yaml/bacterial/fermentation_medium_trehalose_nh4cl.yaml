@@ -18,8 +18,8 @@ ingredients:
     value: '0.0001228'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Riboflavin
   term:
@@ -29,8 +29,8 @@ ingredients:
     value: '0.0003986'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Magnesium sulfate
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '3.246'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Pyridoxine HCl
   concentration:
@@ -49,9 +49,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
-    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
 - preferred_term: Nicotinate
   concentration:
     value: '0.09747'
@@ -74,8 +74,8 @@ ingredients:
   concentration:
     value: '0.0001334'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Ammonium chloride
   term:
@@ -84,8 +84,8 @@ ingredients:
   concentration:
     value: '130.9'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 preparation_steps:
 - step_number: 1
@@ -125,6 +125,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Fermentation Medium (Trehalose+NH4Cl" to "fermentation_medium_trehalose_nh4cl"
     for consistent matching
+- timestamp: '2026-06-05T07:41:00.159029+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 348
   term:

@@ -13,8 +13,8 @@ ingredients:
   term:
     id: CHEBI:18012
     label: fumaric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000984
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18012
     label: fumaric acid
 - preferred_term: sodium formate
   concentration:
@@ -24,8 +24,8 @@ ingredients:
   term:
     id: CHEBI:62965
     label: sodium formate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
     label: sodium formate
 - preferred_term: Brucella Broth (BD 211088)
   concentration:
@@ -64,3 +64,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Brucella broth with formate and fumarate" to "brucella_broth_with_formate_and_fumarate"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.589873+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

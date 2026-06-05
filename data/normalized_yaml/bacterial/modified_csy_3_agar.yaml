@@ -31,8 +31,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
     label: Ferric ammonium citrate
 - preferred_term: Agar
   term:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Sea water
   concentration:
@@ -72,4 +72,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED CSY-3 AGAR" to "modified_csy_3_agar" for consistent
     matching
+- timestamp: '2026-06-05T07:41:36.475160+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:J802

@@ -21,8 +21,8 @@ ingredients:
     value: '2.6641'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: L-Alanine
   term:
@@ -32,8 +32,8 @@ ingredients:
     value: '2.24492'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ala-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000403
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16977
     label: L-Alanine
 - preferred_term: L-Lysine
   term:
@@ -43,8 +43,8 @@ ingredients:
     value: '3.4202'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lys-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000318
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18019
     label: L-Lysine
 - preferred_term: L-Aspartate
   concentration:
@@ -59,8 +59,8 @@ ingredients:
     value: '1.1481'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
     label: L-Arginine
 - preferred_term: L-Glutamine
   term:
@@ -70,8 +70,8 @@ ingredients:
     value: '1.36855'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gln-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
     label: L-Glutamine
 - preferred_term: L-Serine
   term:
@@ -81,8 +81,8 @@ ingredients:
     value: '1.9031'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ser-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000270
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17115
     label: L-Serine
 - preferred_term: L-Methionine
   term:
@@ -92,8 +92,8 @@ ingredients:
     value: '1.34039'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: L-Tryptophan
   term:
@@ -103,8 +103,8 @@ ingredients:
     value: '0.97928'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:trp-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001063
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16828
     label: L-Tryptophan
 - preferred_term: L-Phenylalanine
   term:
@@ -114,8 +114,8 @@ ingredients:
     value: '1.21073'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000312
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17295
     label: L-Phenylalanine
 - preferred_term: Glycerol
   term:
@@ -125,8 +125,8 @@ ingredients:
     value: '54.294'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: L-Leucine
   term:
@@ -136,8 +136,8 @@ ingredients:
     value: '1.5247'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
     label: L-Leucine
 - preferred_term: L-Histidine
   term:
@@ -147,8 +147,8 @@ ingredients:
     value: '1.28907'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:his-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000272
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15971
     label: L-Histidine
 - preferred_term: L-Proline
   term:
@@ -158,8 +158,8 @@ ingredients:
     value: '1.73716'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: L-Asparagine
   term:
@@ -169,8 +169,8 @@ ingredients:
     value: '1.51377'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asn-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: L-Valine
   term:
@@ -180,8 +180,8 @@ ingredients:
     value: '1.7072'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:val-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000304
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16414
     label: L-Valine
 - preferred_term: L-Threonine
   term:
@@ -191,8 +191,8 @@ ingredients:
     value: '1.67897'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000310
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16857
     label: L-Threonine
 - preferred_term: beta-D-Glucose
   concentration:
@@ -206,8 +206,8 @@ ingredients:
     value: '5.8428'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lcts'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17716
     label: Lactose
 - preferred_term: L-Isoleucine
   term:
@@ -217,8 +217,8 @@ ingredients:
     value: '1.5247'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000294
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17191
     label: L-Isoleucine
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -234,8 +234,8 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Dibasic sodium phosphate
   concentration:
@@ -272,8 +272,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Cobalt chloride
   concentration:
@@ -289,9 +289,9 @@ ingredients:
   concentration:
     value: '25.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.002'
@@ -352,6 +352,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PA-5052" to "pa_5052" for consistent matching
+- timestamp: '2026-06-05T07:41:40.772992+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 189
   term:

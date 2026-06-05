@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: NaCl
   term:
@@ -50,8 +50,8 @@ ingredients:
   concentration:
     value: '27.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -60,8 +60,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -70,8 +70,8 @@ ingredients:
   concentration:
     value: '5.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
@@ -80,8 +80,8 @@ ingredients:
   concentration:
     value: '0.65'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: KH2PO4
   term:
@@ -90,8 +90,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
@@ -100,8 +100,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: H3BO3
   term:
@@ -110,8 +110,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: NaBr
   term:
@@ -120,8 +120,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000189
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
     label: NaBr
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -130,8 +130,8 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: KI
   term:
@@ -150,22 +150,21 @@ ingredients:
   concentration:
     value: '0.015'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000463
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
     label: SrCl2 x 6 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve resazurin in seawater, then sparge medium with 80% H2
-    and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
-    under same gas atmosphere into serum vials (e.g., 20 ml medium per 100 ml
-    bottle) and autoclave. Add nitrate, yeast extract and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete
-    medium to 6.5, if necessary.
+  description: Dissolve resazurin in seawater, then sparge medium with 80% H2 and
+    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same
+    gas atmosphere into serum vials (e.g., 20 ml medium per 100 ml bottle) and autoclave.
+    Add nitrate, yeast extract and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize bottles to 2 bar overpressure with
-    sterile 80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize bottles to 2 bar overpressure with sterile
+    80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: FILTER_STERILIZE
   description: 'Note: Alternatively, aged filtered seawater can be used instead of
@@ -188,12 +187,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.379974+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOVIBRIO MEDIUM" to "thermovibrio_medium" for
-    consistent matching
+  notes: Normalized name from "THERMOVIBRIO MEDIUM" to "thermovibrio_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:50.987173+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_961_THERMOVIBRIO_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006917
   name: thermovibrio_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

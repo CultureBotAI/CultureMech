@@ -31,8 +31,8 @@ ingredients:
   concentration:
     value: '150'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -69,17 +69,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.055520+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NUTRIMENT AGAR WITH 150 G/L NACL" to
-    "nutriment_agar_with_150_g_l_nacl" for consistent matching
+  notes: Normalized name from "NUTRIMENT AGAR WITH 150 G/L NACL" to "nutriment_agar_with_150_g_l_nacl"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:40.256301+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:101
 parent_media:
   path: data/normalized_yaml/bacterial/nutriment_agar.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:000717
   name: nutriment_agar
-  notes: Reviewed DSMZ Nutriment agar salt pair; records differ only in NaCl
-    concentration.
+  notes: Reviewed DSMZ Nutriment agar salt pair; records differ only in NaCl concentration.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- NaCl increased from 5 g/L to 150 g/L while the DSMZ Nutriment agar formulation
-  remains unchanged.
+- NaCl increased from 5 g/L to 150 g/L while the DSMZ Nutriment agar formulation remains
+  unchanged.

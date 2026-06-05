@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Carrot, peeled and cut
   concentration:
@@ -30,9 +30,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Potato, peeled and cut
   concentration:
     value: '30'
@@ -70,17 +70,22 @@ curation_history:
 - timestamp: '2026-03-17T19:46:28.465822+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/10 Potato-Carrot Agar" to
-    "1_10_potato_carrot_agar" for consistent matching
+  notes: Normalized name from "1/10 Potato-Carrot Agar" to "1_10_potato_carrot_agar"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:41.729521+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/TOGO_M46_Potato-Carrot_Agar.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:009858
   name: potato_carrot_agar
-  notes: Both records are TOGO/NBRC Potato-Carrot Agar formulations; the child
-    is explicitly named 1/10 Potato-Carrot Agar and preserves the agar
-    concentration.
+  notes: Both records are TOGO/NBRC Potato-Carrot Agar formulations; the child is
+    explicitly named 1/10 Potato-Carrot Agar and preserves the agar concentration.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Carrot decreases from 25 g/L to 2.5 g/L and potato decreases from 300 g/L to
-  30 g/L; agar remains 15 g/L.
+- Carrot decreases from 25 g/L to 2.5 g/L and potato decreases from 300 g/L to 30
+  g/L; agar remains 15 g/L.
