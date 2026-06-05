@@ -1,20 +1,20 @@
-id: CultureMech:015861
-name: methanobrevibacter_cuticularis_medium
-original_name: METHANOBREVIBACTER CUTICULARIS MEDIUM
-category: bacterial
+id: CultureMech:015860
+name: methanobrevibacter_curvatus_medium
+original_name: METHANOBREVIBACTER CURVATUS MEDIUM
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 7.7
+ph_value: 7.2
 media_term:
-  preferred_term: JCM Medium J1424
+  preferred_term: JCM Medium J1423
   term:
-    id: jcm.grmd:1424
-    label: METHANOBREVIBACTER CUTICULARIS MEDIUM
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1424'
+    id: jcm.grmd:1423
+    label: METHANOBREVIBACTER CURVATUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1423'
 ingredients:
 - preferred_term: Rumen fluid, clarified (see Medium No. 266)
   concentration:
-    value: '20.0'
+    value: '50.0'
     unit: ML_PER_L
 - preferred_term: NaCl
   concentration:
@@ -94,6 +94,10 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+- preferred_term: Nutrient broth (BD Difco)
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
 - preferred_term: FeCl2 solution (see Medium No. 187 )
   concentration:
     value: '1.0'
@@ -118,7 +122,7 @@ ingredients:
     label: Resazurin
 - preferred_term: Distilled water
   concentration:
-    value: '900.0'
+    value: '890.0'
     unit: ML_PER_L
   term:
     id: CHEBI:15377
@@ -128,9 +132,9 @@ ingredients:
     label: Distilled water
 - preferred_term: 8% NaHCO3 solution*
   concentration:
-    value: '70.0'
+    value: '50.0'
     unit: ML_PER_L
-- preferred_term: 1.0 M HEPES solution (pH 7.7)
+- preferred_term: 1.0 M HEPES solution (pH 7.2)
   concentration:
     value: '10.0'
     unit: ML_PER_L
@@ -149,7 +153,7 @@ preparation_steps:
     cool down under a stream of H2-CO2 (80:20 v/v).
 - step_number: 2
   action: MIX
-  description: Distribute the medium into suitable culture vessels (e.g., 4.6 ml medium
+  description: Distribute the medium into suitable culture vessels (e.g., 4.7 ml medium
     in Hungate tubes) under the same gas mixture and seal with butyl rubber stoppers.
 - step_number: 3
   action: MIX
@@ -158,20 +162,20 @@ preparation_steps:
   action: MIX
   description: 'After cooling, aseptically and anaerobically add per liter the following
     solutions (autoclaved or *filter-sterilized): Prior to inoculation, add per liter
-    the following solution (freshly prepared and filtersterilized): Adjust pH 7.7,
+    the following solution (freshly prepared and filtersterilized): Adjust pH 7.2,
     if necessary.'
 - step_number: 5
   action: MIX
-  description: Pressurize the inoculated vessels to 200 kPa H2-CO2 (80:20v/ v).
+  description: Pressurize the inoculated vessels to 200 kPa H2-CO2 (80:20 v/v).
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-06-02T07:09:11.558514+00:00'
+- timestamp: '2026-06-02T07:09:10.499173+00:00'
   curator: jcm-grmd-import
   action: Scraped from JCM GRMD database
-  notes: Direct import from JCM GRMD=1424. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+  notes: Direct import from JCM GRMD=1423. Ingredients captured verbatim; CHEBI/MediaIngredientMech
     enrichment and category (bacterial/archaea) review are downstream steps.
-- timestamp: '2026-06-03T02:00:03.304298Z'
+- timestamp: '2026-06-03T02:00:03.359060Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

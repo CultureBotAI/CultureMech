@@ -1,7 +1,7 @@
 id: CultureMech:015871
 name: methanosarcina_t3_medium
 original_name: METHANOSARCINA T3 MEDIUM
-category: bacterial
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5

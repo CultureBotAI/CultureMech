@@ -1,7 +1,7 @@
 id: CultureMech:015858
 name: methanosarcina_z_7115_medium
 original_name: METHANOSARCINA Z-7115 MEDIUM
-category: bacterial
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0

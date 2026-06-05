@@ -1,7 +1,7 @@
 id: CultureMech:015873
 name: yeast_extract_peptone_dextrose_ypd
 original_name: Yeast Extract Peptone Dextrose (YPD)
-category: bacterial
+category: fungal
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 media_term:
