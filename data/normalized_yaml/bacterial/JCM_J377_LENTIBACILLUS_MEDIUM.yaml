@@ -16,12 +16,6 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:78020
-    label: heptacosanoate
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -136,6 +130,12 @@ curation_history:
   notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-08T23:19:27.320947+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J168_HALOBACTERIA_MEDIUM.yaml
   relationship: SALINITY_VARIANT

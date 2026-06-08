@@ -57,10 +57,10 @@ ingredients:
     value: '0.00998004'
     unit: G_PER_L
   term:
-    id: CHEBI:77732
-    label: ''
+    id: CHEBI:144434
+    label: Ferric citrate monohydrate
   mediaingredientmech_chebi_term:
-    id: CHEBI:77732
+    id: CHEBI:144434
     label: Ferric citrate monohydrate
 - preferred_term: Sodium resazurin
   concentration:
@@ -350,3 +350,9 @@ curation_history:
   notes: 'Replaced 25 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-08T23:19:36.105892+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).

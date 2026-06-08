@@ -123,11 +123,11 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
+    id: CHEBI:17754
+    label: Glycerol
   mediaingredientmech_chebi_term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
+    id: CHEBI:17754
+    label: Glycerol
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.4'
@@ -206,6 +206,12 @@ curation_history:
   notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-08T23:19:29.786154+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 solutions:
 - preferred_term: Trace element solution SL--10 (see Medium [M433])
   composition: []
