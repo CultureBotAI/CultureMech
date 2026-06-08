@@ -121,7 +121,12 @@ def migrate_file(path: Path, loader, divergences, dry_run: bool) -> int:
     if not isinstance(data, dict):
         return 0
     changed = 0
+    # ingredient lists live in three places: `ingredients`, the standalone
+    # solution-record `composition` (top level), and nested `solutions[].composition`.
     for ing in data.get("ingredients") or []:
+        if _rewrite_entry(ing, loader, divergences):
+            changed += 1
+    for ing in data.get("composition") or []:
         if _rewrite_entry(ing, loader, divergences):
             changed += 1
     for sol in data.get("solutions") or []:

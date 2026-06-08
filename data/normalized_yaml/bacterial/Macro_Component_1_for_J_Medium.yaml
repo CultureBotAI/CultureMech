@@ -20,8 +20,9 @@ composition:
   term:
     id: CHEBI:34683
     label: disodium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000684
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogen phosphate
 - preferred_term: Dipotassium phosphate
   concentration:
     value: '3.8'
@@ -29,8 +30,9 @@ composition:
   term:
     id: CHEBI:63036
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000854
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: dipotassium hydrogen phosphate
 - preferred_term: Tricine
   concentration:
     value: '25.0'
@@ -85,6 +87,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: references.reference_id->reference=3
+- timestamp: '2026-06-08T23:17:57.348542+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 references:
 - reference: https://utex.org/products/macro-component-1-for-j-medium
 - reference: UTEX:macro-component-1-for-j-medium

@@ -11,8 +11,9 @@ composition:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000211
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: Manganese sulfate monohydrate
   concentration:
     value: '1.5'
@@ -45,8 +46,9 @@ composition:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001112
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: Cobalt nitrate hexahydrate
   concentration:
     value: '0.15'
@@ -63,8 +65,9 @@ composition:
   term:
     id: CHEBI:8346
     label: potassium iodide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000505
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8346
+    label: potassium iodide
 notes: 'G9 Trace Metals solution for J Medium (UTEX).
 
   Provides essential micronutrients for freshwater algae culture.
@@ -105,6 +108,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: references.reference_id->reference=3
+- timestamp: '2026-06-08T23:17:55.834565+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 references:
 - reference: https://utex.org/products/g9-trace-metals-for-j-medium
 - reference: UTEX:g9-trace-metals-for-j-medium
