@@ -2506,3 +2506,54 @@ data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_6_5.ya
 data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_6_8.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
 data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_7_1.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
 data/normalized_yaml/specialized/uga_defined_nocarbon.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/bacterial/mediadive_1059_Main_sol_503a.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1266_Main_sol_590.yaml	Na2-DL-malate	chebi_term	CHEBI:32149	CHEBI:91261
+data/normalized_yaml/bacterial/mediadive_1366_Main_sol_641.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1369_Main_sol_645.yaml	Bacto Middlebrook 7H10 agar	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_1372_Main_sol_645a.yaml	Middlebrook 7H10 agar	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_1439_Main_sol_691.yaml	Na2-DL-malate	chebi_term	CHEBI:32149	CHEBI:91261
+data/normalized_yaml/bacterial/mediadive_1458_Main_sol_708.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_1473_Main_sol_722.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1508_Main_sol_737.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_1535_Main_sol_749.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1575_Main_sol_771.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_165_Solution_A.yaml	Na2-DL-malate	chebi_term	CHEBI:32149	CHEBI:91261
+data/normalized_yaml/bacterial/mediadive_1766_Solution_C.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1776_Solution_C.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1813_Solution_E.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1886_Solution_D.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_1992_Main_sol_968.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2057_Main_sol_1010.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2108_Main_sol_1040.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2133_Main_sol_1056.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_2157_Main_sol_1068.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2223_Trace_metals_solution_Pfennig_Lippert_1966.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_2558_Main_sol_1278.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2596_Main_sol_1298.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2617_Main_sol_1310.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2781_Trace_Element_Solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_280_Solution_A.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2909_Trace_Element_Solution_Pfennig_Lippert.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_3019_Trace_Element_Solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_3141_Trace_Element_Solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_3181_Main_sol_1536.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_3284_Main_sol_1589.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_3288_Main_sol_1590.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_3332_Trace_Element_Solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_3366_Main_sol_1619.yaml	ISP 7 Medium	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_3442_Main_sol_1660.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_3448_Main_sol_1663.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_348_Solution_C.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_354_Solution_C.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_3717_Solution_II.yaml	Whole egg	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_385_Solution_C.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_4113_Main_sol_J386.yaml	Middlebrook 7H10 agar	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_4280_Main_sol_J505.yaml	Mueller Hinton II agar	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_565_Main_sol_298a.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_5704_Acidic_trace_metals_Pfennig_Lippert_1965.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_5787_Trace_elements_solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_5787_Trace_elements_solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_837_Solution_A.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_91_Solution_A.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_981_Main_sol_480c.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_99_Solution_A.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228

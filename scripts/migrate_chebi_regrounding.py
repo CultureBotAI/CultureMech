@@ -59,6 +59,15 @@ REMAP_RULES = [
     # sodium monobasic + dibasic labels (no genuine trisodium), each to its own id.
     ("CHEBI:37583",  re.compile(r"dihydrogen|monobasic", re.I), None,            "CHEBI:37585"),  # NaH2PO4 (sodium dihydrogen phosphate)
     ("CHEBI:37583",  re.compile(r"dibasic|disodium", re.I), None,                "CHEBI:34683"),  # Na2HPO4 (disodium hydrogen phosphate)
+    # G24 — targeted shared-id garbage (verified individually). NOT a blanket
+    # exact-name remap: MIM itself mis-grounds glycerol/casamino, so trusting it
+    # wholesale would undo G21 and propagate MIM's own errors (6,519 such candidates).
+    # Only the audited, chemically-confident minority entries on shared ids:
+    ("CHEBI:32149",  re.compile(r"\blactate\b", re.I), None,                     "CHEBI:75228"),   # sodium lactate (was sodium sulfate)
+    ("CHEBI:32149",  re.compile(r"propionate", re.I), None,                      "CHEBI:132106"),  # sodium propionate
+    ("CHEBI:32149",  re.compile(r"nicl2|nickel", re.I), None,                    "CHEBI:34887"),   # nickel(II) chloride
+    ("CHEBI:32149",  re.compile(r"malate", re.I), None,                          "CHEBI:91261"),   # sodium malate
+    ("CHEBI:15978",  re.compile(r"agar|middlebrook|mueller|hinton|\bisp\b|whole\s*egg|broth", re.I), None, None),  # complex media de-grounded (not glycerol-3-phosphate)
 ]
 
 
