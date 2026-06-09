@@ -159,13 +159,16 @@ class MediaIngredientMechLinker:
 
             modified = False
 
-            # Enrich direct ingredients
-            ingredients = data.get('ingredients', [])
-            if isinstance(ingredients, list):
-                for ingredient in ingredients:
-                    if isinstance(ingredient, dict):
-                        if self.enrich_ingredient(ingredient):
-                            modified = True
+            # Enrich direct ingredients. Ingredient lists live in three places:
+            # `ingredients`, the standalone solution-record `composition` (top
+            # level), and nested `solutions[].composition`.
+            for list_key in ('ingredients', 'composition'):
+                entries = data.get(list_key, [])
+                if isinstance(entries, list):
+                    for ingredient in entries:
+                        if isinstance(ingredient, dict):
+                            if self.enrich_ingredient(ingredient):
+                                modified = True
 
             # Enrich solution ingredients
             solutions = data.get('solutions', [])
