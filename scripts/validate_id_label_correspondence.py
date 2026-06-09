@@ -122,11 +122,16 @@ class AdapterPool:
         return self._cache[prefix]
 
 
-def accepted_labels(adapter: Any, curie: str, scope: str) -> tuple[str | None, set[str], bool]:
+def accepted_labels(
+    adapter: Any, curie: str, scope: str, *, with_synonyms: bool = True
+) -> tuple[str | None, set[str], bool]:
     """Return (canonical_label, accepted_normalized_set, id_found).
 
     ``accepted_normalized_set`` always contains the canonical label; with a
     non-``canonical`` policy the caller widens it via ``scope`` synonyms.
+    When ``with_synonyms`` is False (e.g. a strict ``canonical`` policy) the
+    synonym lookup is skipped entirely — those aliases would never be
+    accepted, so building them is wasted work.
     ``id_found`` is False when the id is absent from the ontology.
     """
     try:
@@ -136,14 +141,15 @@ def accepted_labels(adapter: Any, curie: str, scope: str) -> tuple[str | None, s
     if canonical is None:
         return None, set(), False
     accepted = {normalize(canonical)}
-    alias_map: dict[str, list[str]] = {}
-    try:
-        alias_map = adapter.entity_alias_map(curie) or {}
-    except Exception:
-        alias_map = {}
-    for pred in _SYNONYM_PREDICATES.get(scope, _SYNONYM_PREDICATES["exact"]):
-        for alias in alias_map.get(pred, []) or []:
-            accepted.add(normalize(alias))
+    if with_synonyms:
+        alias_map: dict[str, list[str]] = {}
+        try:
+            alias_map = adapter.entity_alias_map(curie) or {}
+        except Exception:
+            alias_map = {}
+        for pred in _SYNONYM_PREDICATES.get(scope, _SYNONYM_PREDICATES["exact"]):
+            for alias in alias_map.get(pred, []) or []:
+                accepted.add(normalize(alias))
     return canonical, accepted, True
 
 
@@ -156,7 +162,9 @@ def classify(
     scope: str,
 ) -> dict[str, Any]:
     """Classify one (id, label) pair into a verdict dict."""
-    canonical, accepted, found = accepted_labels(adapter, curie, scope)
+    canonical, accepted, found = accepted_labels(
+        adapter, curie, scope, with_synonyms=(policy != "canonical")
+    )
     base = {"id": curie, "label": label, "canonical": canonical or ""}
     if not found:
         return {**base, "verdict": "ID_NOT_FOUND"}
@@ -172,32 +180,51 @@ def classify(
 
 # -- target readers -------------------------------------------------------
 
-def _read_tabular_rows(path: Path, fmt: str) -> tuple[list[str], list[dict[str, str]]]:
-    """Read a TSV/CSV, skipping SSSOM ``#`` comment-prelude lines."""
+def _read_tabular_rows(
+    path: Path, fmt: str
+) -> tuple[list[str], list[dict[str, str]], list[int]]:
+    """Read a TSV/CSV, skipping SSSOM ``#`` comment-prelude lines.
+
+    Also returns the true physical (1-based) file line number for each data
+    row, so locators stay accurate even when a ``#`` prelude was stripped.
+    Assumes one physical line per row (true for these SSSOM/TSV/CSV artifacts
+    — no multi-line quoted fields).
+    """
     delim = "," if fmt == "csv" else "\t"
     with path.open(newline="", encoding="utf-8") as fh:
-        lines = [ln for ln in fh if not ln.lstrip().startswith("#")]
-    if not lines:
-        return [], []
+        kept = [(n, ln) for n, ln in enumerate(fh, start=1)
+                if not ln.lstrip().startswith("#")]
+    if not kept:
+        return [], [], []
+    line_nums = [n for n, _ in kept]
+    lines = [ln for _, ln in kept]
     reader = csv.DictReader(lines, delimiter=delim)
-    return list(reader.fieldnames or []), list(reader)
+    rows = list(reader)
+    # kept[0] is the header; data rows start at the next physical line.
+    row_lines = line_nums[1:1 + len(rows)]
+    return list(reader.fieldnames or []), rows, row_lines
 
 
 def iter_tabular(path: Path, fmt: str, pairs: list[list[str]]) -> Iterator[tuple[str, str, str]]:
     """Yield (locator, id, label) for each configured id/label column pair."""
-    fields, rows = _read_tabular_rows(path, fmt)
+    fields, rows, row_lines = _read_tabular_rows(path, fmt)
     field_set = set(fields)
     usable = [(i, l) for (i, l) in pairs if i in field_set and l in field_set]
-    for n, row in enumerate(rows, start=2):  # row 1 is the header
+    for row, phys_line in zip(rows, row_lines):  # phys_line = true file line
         for id_col, label_col in usable:
             curie = (row.get(id_col) or "").strip()
             if not curie:
                 continue
             label = (row.get(label_col) or "").strip()
-            yield f"row {n} [{id_col}/{label_col}]", curie, label
+            yield f"line {phys_line} [{id_col}/{label_col}]", curie, label
 
 
-def _walk_yaml(node: Any, pairs: list[tuple[str, str]], path: str) -> Iterator[tuple[str, str, str]]:
+def _walk_yaml(
+    node: Any,
+    pairs: list[tuple[str, str]],
+    path: str,
+    exclude_keys: frozenset[str] = frozenset(),
+) -> Iterator[tuple[str, str, str]]:
     if isinstance(node, dict):
         for id_key, label_key in pairs:
             if id_key in node and label_key in node:
@@ -207,13 +234,20 @@ def _walk_yaml(node: Any, pairs: list[tuple[str, str]], path: str) -> Iterator[t
                     label = label if isinstance(label, str) else ""
                     yield f"{path}.{id_key}", curie.strip(), (label or "").strip()
         for k, v in node.items():
-            yield from _walk_yaml(v, pairs, f"{path}.{k}")
+            # Skip excluded grounding blocks (e.g. mediaingredientmech_chebi_term,
+            # whose label is intentionally MIM's preferred_term, not the OBO
+            # canonical label, so a `canonical` policy would false-MISMATCH it).
+            if k in exclude_keys:
+                continue
+            yield from _walk_yaml(v, pairs, f"{path}.{k}", exclude_keys)
     elif isinstance(node, list):
         for idx, item in enumerate(node):
-            yield from _walk_yaml(item, pairs, f"{path}[{idx}]")
+            yield from _walk_yaml(item, pairs, f"{path}[{idx}]", exclude_keys)
 
 
-def iter_yaml(path: Path, pairs: list[list[str]]) -> Iterator[tuple[str, str, str]]:
+def iter_yaml(
+    path: Path, pairs: list[list[str]], exclude_keys: frozenset[str] = frozenset()
+) -> Iterator[tuple[str, str, str]]:
     """Yield (locator, id, label) from a YAML doc by recursively finding dicts
     that carry BOTH an id key and its sibling label key."""
     try:
@@ -221,7 +255,7 @@ def iter_yaml(path: Path, pairs: list[list[str]]) -> Iterator[tuple[str, str, st
     except Exception as exc:  # pragma: no cover
         print(f"  ! failed to parse {path}: {exc}", file=sys.stderr)
         return
-    yield from _walk_yaml(doc, [(a, b) for a, b in pairs], path.name)
+    yield from _walk_yaml(doc, [(a, b) for a, b in pairs], path.name, exclude_keys)
 
 
 # -- driver ---------------------------------------------------------------
@@ -249,6 +283,7 @@ def run(config_path: Path, report_path: Path | None) -> int:
         policy = target.get("policy", "canonical_or_synonym")
         scope = target.get("synonym_scope", default_scope)
         pairs = target.get("pairs", [])
+        exclude_keys = frozenset(target.get("exclude_keys", []) or [])
         globs = target.get("glob")
         glob_list = globs if isinstance(globs, list) else [globs]
         paths: list[Path] = []
@@ -260,7 +295,7 @@ def run(config_path: Path, report_path: Path | None) -> int:
         for path in paths:
             rel = _safe_rel(path)
             if kind == "yaml":
-                pairs_iter = iter_yaml(path, pairs)
+                pairs_iter = iter_yaml(path, pairs, exclude_keys)
             else:
                 pairs_iter = iter_tabular(path, target.get("format", "tsv"), pairs)
             for locator, curie, label in pairs_iter:

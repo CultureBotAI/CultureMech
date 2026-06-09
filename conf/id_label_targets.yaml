@@ -21,6 +21,11 @@ targets:
     policy: canonical
     pairs:
       - [id, label]
+    # mediaingredientmech_chebi_term.label is intentionally MIM's preferred_term
+    # (not the OBO canonical label), so excluded from the canonical gate to
+    # avoid false MISMATCHes.
+    exclude_keys:
+      - mediaingredientmech_chebi_term
 
   # data products: CHEBI mapping SSSOM exports — canonical OR synonym
   - name: sssom
