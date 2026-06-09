@@ -792,8 +792,10 @@ validate-references file:
 validate-terms-all:
     #!/usr/bin/env bash
     set -uo pipefail
+    shopt -s globstar nullglob
     rc=0
-    for file in data/normalized_yaml/*/*.yaml; do
+    # `**/*.yaml` (recursive, matching Engine B) instead of one-level `*/*.yaml`.
+    for file in data/normalized_yaml/**/*.yaml; do
         [ -e "$file" ] || continue
         uv run linkml-term-validator validate-data "$file" -s {{schema_path}} -t MediaRecipe --labels -c {{oak_config}} || rc=1
     done

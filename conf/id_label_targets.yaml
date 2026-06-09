@@ -22,11 +22,13 @@ targets:
     pairs:
       - [id, label]
 
-  # data products: CHEBI mapping SSSOM exports — canonical OR synonym
+  # data products: CHEBI mapping SSSOM export — canonical OR synonym.
+  # Narrowed to the canonical base artifact only; `output/*.sssom.tsv` also
+  # matched ~18 intermediate/legacy exports (clean/enriched/exact/final/...).
   - name: sssom
     kind: tabular
     format: tsv
-    glob: "output/*.sssom.tsv"
+    glob: "output/culturemech_chebi_mappings.sssom.tsv"
     policy: canonical_or_synonym
     pairs:
       - [subject_id, subject_label]

@@ -172,29 +172,43 @@ def classify(
 
 # -- target readers -------------------------------------------------------
 
-def _read_tabular_rows(path: Path, fmt: str) -> tuple[list[str], list[dict[str, str]]]:
-    """Read a TSV/CSV, skipping SSSOM ``#`` comment-prelude lines."""
+def _read_tabular_rows(
+    path: Path, fmt: str
+) -> tuple[list[str], list[dict[str, str]], list[int]]:
+    """Read a TSV/CSV, skipping SSSOM ``#`` comment-prelude lines.
+
+    Also returns the true physical (1-based) file line number for each data
+    row, so locators stay accurate even when a ``#`` prelude was stripped.
+    Assumes one physical line per row (true for the SSSOM/TSV/CSV artifacts
+    here — no multi-line quoted fields).
+    """
     delim = "," if fmt == "csv" else "\t"
     with path.open(newline="", encoding="utf-8") as fh:
-        lines = [ln for ln in fh if not ln.lstrip().startswith("#")]
-    if not lines:
-        return [], []
+        kept = [(n, ln) for n, ln in enumerate(fh, start=1)
+                if not ln.lstrip().startswith("#")]
+    if not kept:
+        return [], [], []
+    line_nums = [n for n, _ in kept]
+    lines = [ln for _, ln in kept]
     reader = csv.DictReader(lines, delimiter=delim)
-    return list(reader.fieldnames or []), list(reader)
+    rows = list(reader)
+    # kept[0] is the header; data rows start at the next physical line.
+    row_lines = line_nums[1:1 + len(rows)]
+    return list(reader.fieldnames or []), rows, row_lines
 
 
 def iter_tabular(path: Path, fmt: str, pairs: list[list[str]]) -> Iterator[tuple[str, str, str]]:
     """Yield (locator, id, label) for each configured id/label column pair."""
-    fields, rows = _read_tabular_rows(path, fmt)
+    fields, rows, row_lines = _read_tabular_rows(path, fmt)
     field_set = set(fields)
     usable = [(i, l) for (i, l) in pairs if i in field_set and l in field_set]
-    for n, row in enumerate(rows, start=2):  # row 1 is the header
+    for row, phys_line in zip(rows, row_lines):  # phys_line = true file line
         for id_col, label_col in usable:
             curie = (row.get(id_col) or "").strip()
             if not curie:
                 continue
             label = (row.get(label_col) or "").strip()
-            yield f"row {n} [{id_col}/{label_col}]", curie, label
+            yield f"line {phys_line} [{id_col}/{label_col}]", curie, label
 
 
 def _walk_yaml(node: Any, pairs: list[tuple[str, str]], path: str) -> Iterator[tuple[str, str, str]]:
