@@ -79,7 +79,10 @@ def rewrite_entry(ing: dict, changelog: list) -> bool:
                     del ing[fld]
                     changelog.append((label, fld, from_id, "REMOVED"))
                 else:
-                    ing[fld] = {"id": to_id, "label": label}
+                    # Merge over the existing term dict so pre-existing
+                    # metadata (confidence, match_type, ...) survives the
+                    # regrounding rather than being dropped.
+                    ing[fld] = {**t, "id": to_id, "label": label}
                     changelog.append((label, fld, from_id, to_id))
                 changed = True
     return changed
