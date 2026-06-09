@@ -785,6 +785,32 @@ validate-references file:
     uv run linkml-reference-validator validate data {{file}} --schema {{schema_path}} --target-class MediaRecipe
     echo "✓ Reference validation passed"
 
+# id↔label gate (Engine A): the schema now binds every descriptor term slot,
+# so --labels verifies term.label is the CANONICAL ontology label for term.id
+# across all recipe files. Fails (non-zero) on any label drift.
+[group('QC')]
+validate-terms-all:
+    #!/usr/bin/env bash
+    set -uo pipefail
+    rc=0
+    for file in data/normalized_yaml/*/*.yaml; do
+        [ -e "$file" ] || continue
+        uv run linkml-term-validator validate-data "$file" -s {{schema_path}} -t MediaRecipe --labels -c {{oak_config}} || rc=1
+    done
+    exit $rc
+
+# id↔label gate (Engine B): verify (id,label) pairs in DATA PRODUCTS
+# (output/*.sssom.tsv) correspond to the ontology. Exits 2 on any mismatch.
+[group('QC')]
+validate-products:
+    uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
+
+# Baseline (non-failing): unified id↔label drift report across recipe YAMLs +
+# SSSOM products to reports/label_drift.tsv. Use before enforcing.
+[group('QC')]
+report-label-drift:
+    uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report reports/label_drift.tsv
+
 [group('QC')]
 validate-all:
     #!/usr/bin/env bash

@@ -1,0 +1,33 @@
+# Targets for scripts/validate_id_label_correspondence.py (Engine B).
+# See docs/ID_LABEL_CORRESPONDENCE.md. Prefixes not in `adapters`
+# (mediadive.compound, komodo.medium, DSMZ, TOGO, ATCC, MediaIngredientMech,
+# CultureMech, GTDB, …) are reported SKIPPED_NO_ADAPTER.
+
+adapters:
+  CHEBI: sqlite:obo:chebi
+  NCBITaxon: sqlite:obo:ncbitaxon
+  ENVO: sqlite:obo:envo
+  UBERON: sqlite:obo:uberon
+  NCIT: sqlite:obo:ncit
+  FOODON: sqlite:obo:foodon
+
+synonym_scope: exact_related
+
+targets:
+  # data inputs (recipe YAMLs) — every nested term.{id,label} block — canonical
+  - name: normalized_yaml
+    kind: yaml
+    glob: "data/normalized_yaml/**/*.yaml"
+    policy: canonical
+    pairs:
+      - [id, label]
+
+  # data products: CHEBI mapping SSSOM exports — canonical OR synonym
+  - name: sssom
+    kind: tabular
+    format: tsv
+    glob: "output/*.sssom.tsv"
+    policy: canonical_or_synonym
+    pairs:
+      - [subject_id, subject_label]
+      - [object_id, object_label]
