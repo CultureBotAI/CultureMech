@@ -81,7 +81,11 @@ def _resolve_chebi(ing: dict, loader, divergences):
                 mc = ident if ident.startswith("CHEBI:") else None
             if mc:
                 term_label = match.get("preferred_term") or ing.get("preferred_term")
-                set_term = {"id": str(mc), "label": str(term_label)}
+                # Only fill `term` when the ingredient has NO existing
+                # grounding (cid is "" -> term absent or its id is empty). An
+                # existing non-CHEBI grounding (FOODON/ENVO/NCIT) must be
+                # preserved, not clobbered by the name match.
+                set_term = {"id": str(mc), "label": str(term_label)} if not cid else None
                 return str(mc), str(ing.get("preferred_term") or term_label), set_term, \
                     f"namematch_{match.get('match_method', '?')}"
     return None, None, None, None
@@ -98,7 +102,10 @@ def _rewrite_entry(ing: dict, loader, divergences) -> bool:
     rebuilt = {}
     for k, v in ing.items():
         if k == "term" and set_term is not None:
-            rebuilt[k] = set_term  # close grounding gap (term was absent here)
+            # set_term is only non-None when the ingredient had no existing
+            # grounding (see _resolve_chebi), so this fills a true gap rather
+            # than overwriting an existing non-CHEBI term.
+            rebuilt[k] = set_term
         elif k == "mediaingredientmech_term":
             rebuilt["mediaingredientmech_chebi_term"] = {"id": chebi, "label": label}
         else:
