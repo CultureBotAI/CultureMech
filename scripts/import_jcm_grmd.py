@@ -76,7 +76,7 @@ UNIT_MAP = {
     "µg": "MICROG_PER_L",
     "ug": "MICROG_PER_L",
     "ml": "ML_PER_L",
-    "l": "ML_PER_L",        # whole-litre volumes are rare; treat as volume
+    "l": "ML_PER_L",        # litres -> mL basis; value scaled ×1000 in _to_concentration
 }
 
 # Components that mark a medium COMPLEX (chemically undefined inputs).
@@ -122,10 +122,10 @@ def is_real_medium(page_html: str) -> bool:
     medium — it is a derivative definition ("Use Medium No. N with ...")
     whose composition is inherited from a base recipe.
     """
-    return parse_name(page_html, 0) is not None
+    return parse_name(page_html) is not None
 
 
-def parse_name(page_html: str, grmd: int) -> str | None:
+def parse_name(page_html: str) -> str | None:
     m = re.search(r"<FONT SIZE=3>\s*(\d+)(?:&nbsp;|\s)+(.*?)</FONT>",
                   page_html, re.I | re.S)
     if not m:
@@ -180,6 +180,12 @@ def _to_concentration(amount: str, unit: str) -> dict | None:
     m = re.match(r"^[~<>]?\s*([0-9]*\.?[0-9]+)", amount)
     if m:
         val = m.group(1)
+        # Litres are recorded on a per-litre (mL_PER_L) basis: a whole-litre
+        # volume must be scaled ×1000 to mL, otherwise "1 l" would be emitted
+        # as "1 ML_PER_L" — a 1000× under-count.
+        if unit.lower() == "l":
+            scaled = float(val) * 1000
+            val = str(int(scaled)) if scaled.is_integer() else str(scaled)
     else:
         enum = enum or "VARIABLE"
     conc: dict = {"value": str(val), "unit": enum or "VARIABLE"}
@@ -214,7 +220,7 @@ def _snake(name: str) -> str:
 
 
 def build_record(grmd: int, page_html: str, cm_id: str) -> dict | None:
-    name = parse_name(page_html, grmd)
+    name = parse_name(page_html)
     if not name:
         return None
     table_rows = parse_tables(page_html)
@@ -312,15 +318,22 @@ def next_id_start() -> int:
     return (max(nums) + 1) if nums else 1
 
 
-def detect_missing(scan_max: int) -> list[int]:
-    """Real JCM media (within 1..scan_max) absent from the corpus."""
+def detect_missing(scan_max: int, delay: float = 0.0) -> dict[int, str]:
+    """Real JCM media (within 1..scan_max) absent from the corpus.
+
+    Returns a mapping of GRMD number -> fetched page HTML so the caller can
+    reuse the already-downloaded pages instead of fetching them a second
+    time. Honors ``delay`` (seconds) between network requests for politeness.
+    """
     have = ingested_grmd_numbers()
     missing_candidates = [n for n in range(1, scan_max + 1) if n not in have]
-    real = []
-    for n in missing_candidates:
+    real: dict[int, str] = {}
+    for i, n in enumerate(missing_candidates):
         page = fetch(n)
         if page and is_real_medium(page):
-            real.append(n)
+            real[n] = page
+        if delay and i < len(missing_candidates) - 1:
+            time.sleep(delay)
     return real
 
 
@@ -342,9 +355,11 @@ def main(argv: list[str] | None = None) -> int:
                     help="Seconds between JCM requests (politeness).")
     args = ap.parse_args(argv)
 
+    page_cache: dict[int, str] = {}
     if args.detect_missing:
         print(f"Scanning JCM 1..{args.scan_max} for media missing from the corpus...")
-        grmds = detect_missing(args.scan_max)
+        page_cache = detect_missing(args.scan_max, args.delay)
+        grmds = sorted(page_cache)
         print(f"Found {len(grmds)} real JCM media not yet ingested.")
     else:
         grmds = args.grmd
@@ -354,7 +369,13 @@ def main(argv: list[str] | None = None) -> int:
     skipped: list[int] = []
 
     for grmd in grmds:
-        page = fetch(grmd)
+        # Reuse the page already fetched during --detect-missing; only hit the
+        # network when we have no cached copy.
+        page = page_cache.get(grmd)
+        fetched = False
+        if page is None:
+            page = fetch(grmd)
+            fetched = True
         if page is None:
             skipped.append(grmd)
             continue
@@ -386,7 +407,9 @@ def main(argv: list[str] | None = None) -> int:
         out_path.write_text(yaml_text)
         written.append(out_path)
         print(f"  + {cm_id}  GRMD={grmd}  {rec['original_name'][:55]}  -> {out_path.name}")
-        if args.delay:
+        # Politeness sleep only when we actually made a network request here;
+        # cached pages from --detect-missing already paid their delay.
+        if fetched and args.delay:
             time.sleep(args.delay)
 
     if args.validate and written:
