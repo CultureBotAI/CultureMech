@@ -112,10 +112,16 @@ class MediaIngredientMechLoader:
             if not chebi_id and str(mim_id).startswith('CHEBI:'):
                 chebi_id = mim_id
             if chebi_id:
-                # Normalize CHEBI ID format
-                if not str(chebi_id).startswith('CHEBI:'):
+                chebi_id = str(chebi_id).strip()
+                # Normalize CHEBI ID format. Only a BARE NUMERIC value should be
+                # promoted to a CHEBI CURIE — otherwise a non-CHEBI grounding
+                # (FOODON/ENVO/NCIT, e.g. `FOODON:03304010`) would be mangled
+                # into a malformed key like `CHEBI:FOODON:03304010`.
+                if chebi_id.isdigit():
                     chebi_id = f"CHEBI:{chebi_id}"
-                self.by_chebi[chebi_id] = ingredient
+                # Only genuine CHEBI ids belong in the CHEBI-keyed index.
+                if chebi_id.startswith('CHEBI:'):
+                    self.by_chebi[chebi_id] = ingredient
 
             # Index by normalized name (try both field names)
             name = ingredient.get('preferred_term') or ingredient.get('name', '')

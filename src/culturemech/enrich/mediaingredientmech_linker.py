@@ -79,10 +79,18 @@ class MediaIngredientMechLinker:
 
             if not chebi_id:
                 # Matched a MIM entity that is not CHEBI-keyed -> no strictly
-                # CHEBI linkage to record.
+                # CHEBI linkage to record. Surface it in the unmatched report
+                # so name/synonym/fuzzy hits on non-CHEBI MIM entities are
+                # visible, not silently dropped.
                 self.stats['no_match'] += 1
                 self.stats.setdefault('matched_non_chebi', 0)
                 self.stats['matched_non_chebi'] += 1
+                self.unmatched_ingredients.append({
+                    'name': name,
+                    'chebi_id': chebi_id or 'N/A',
+                    'matched_non_chebi': match.get('identifier')
+                    or match.get('id') or 'N/A',
+                })
                 return False
 
             ingredient['mediaingredientmech_chebi_term'] = {
@@ -119,7 +127,9 @@ class MediaIngredientMechLinker:
         matched_count = 0
 
         # Skip if already has MediaIngredientMech link at solution level
-        if 'mediaingredientmech_term' in solution:
+        # (legacy id-based or current CHEBI-keyed), matching enrich_ingredient.
+        if ('mediaingredientmech_term' in solution
+                or 'mediaingredientmech_chebi_term' in solution):
             self.stats['already_linked'] += 1
 
         # Process composition ingredients
