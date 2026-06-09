@@ -147,3 +147,6 @@ tmp/
 # Legacy pre-three-tier-migration media directory (kb/media_backup +
 # kb/media_backup_old). Live data lives under data/normalized_yaml/.
 kb/
+
+# linkml-term-validator / OAK label cache
+cache/
