@@ -105,3 +105,24 @@ only their correct uses; corpus still validates clean (0 ERROR rows, closed mode
    NiCl₂ (~45); `CHEBI:15978` also tags Middlebrook/Mueller-Hinton agars and
    whole egg (6)). These need per-ingredient re-grounding by name (a CHEBI
    re-enrichment pass), not a fixed remap table — tracked as **G24**.
+
+## Follow-up resolution (G22 / G24 / G23 / G25)
+
+- **G22 (done)** — split `CHEBI:37583` (trisodium phosphate) into monobasic
+  `CHEBI:37585` (156) and dibasic `CHEBI:34683` (33); no genuine trisodium.
+- **G24 (targeted, done)** — re-grounded the *audited* shared-id garbage on
+  `CHEBI:32149` (lactate/propionate/NiCl₂/malate) and de-grounded complex media
+  on `CHEBI:15978` (51 refs). **A blanket exact-label-to-MIM remap was rejected
+  as unsafe**: it would touch 6,519 occurrences but MIM itself mis-grounds
+  glycerol and casamino acids, so trusting it wholesale would undo G21 and
+  propagate MIM's errors. The remainder needs a trusted CHEBI source + curation.
+- **G23 (done)** — `scripts/audit_chebi_consistency.py` + `just
+  check-chebi-grounding` + a CI workflow. Self-consistency (no external truth):
+  flags ingredient names grounded to >1 CHEBI on the **reliable** layer (primary
+  `term` / `exact_match` chebi_term). Baseline: **102** same-name, **222**
+  same-id; CI gates at the baseline so new inconsistencies fail.
+- **G25 (new, flagged)** — the probe surfaced a large low-confidence layer:
+  **21,146 `kg_fallback` + 2,746 ambiguous `chebi_term` fields (61% of all
+  chebi_terms)**, frequently wrong (e.g. "Distilled water" → `CHEBI:6636`
+  magnesium dichloride at confidence 0.7). The primary `term` grounding is
+  unaffected, but downstream consumers reading `chebi_term` are polluted.

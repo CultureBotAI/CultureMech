@@ -1,0 +1,48 @@
+name: chebi-consistency
+
+on:
+  pull_request:
+    paths:
+      - 'data/normalized_yaml/**'
+      - 'scripts/audit_chebi_consistency.py'
+      - 'project.justfile'
+      - '.github/workflows/chebi-consistency.yaml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: chebi-consistency-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  consistency:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install just
+        uses: extractions/setup-just@v2
+
+      - name: Sync dependencies
+        run: uv sync --frozen
+
+      # Gates at the current baseline (--max-allowed in the just target): a PR
+      # that introduces NEW same-name-multiple-CHEBI groundings fails, while the
+      # existing backlog (G24 garbage, G25 kg_fallback layer) does not block.
+      - name: Check CHEBI grounding consistency
+        run: just check-chebi-grounding
+
+      - name: Upload consistency report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: chebi-consistency-report
+          path: reports/chebi_consistency.tsv
