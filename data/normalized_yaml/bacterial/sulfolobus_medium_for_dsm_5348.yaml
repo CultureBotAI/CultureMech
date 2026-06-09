@@ -279,7 +279,7 @@ target_organisms:
     snippet: M. sedula DSMZ 5348 grown aerobically on DSMZ 88 medium adjusted to pH
       2 (70C); experiments added 0.1% yeast extract, ~7.5 g/L FeSO4.7H2O, or used
       FeS2/pyrite.
-- preferred_term: Sulfolobus metallicus
+- preferred_term: Sulfuracidifex metallicus
   strain: DSM 6482
   genome_assembly_id:
   - GCA_009729515.1
