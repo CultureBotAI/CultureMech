@@ -131,11 +131,11 @@ ingredients:
     value: '4.348'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:37583
+    id: CHEBI:37585
     label: Sodium dihydrogen phosphate
   term:
-    id: CHEBI:37583
-    label: ''
+    id: CHEBI:37585
+    label: Sodium dihydrogen phosphate
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -319,6 +319,12 @@ curation_history:
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
 - timestamp: '2026-06-08T23:19:28.881852+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-09T01:42:15.714805+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (audit G21/G22)
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).

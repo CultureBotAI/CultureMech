@@ -313,8 +313,8 @@ ingredients:
     value: '45.8'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:37583
-    label: trisodium phosphate
+    id: CHEBI:34683
+    label: Sodium phosphate dibasic
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Sodium phosphate monobasic
   concentration:
@@ -345,6 +345,12 @@ curation_history:
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1; concentration.unit aliases=10
 - timestamp: '2026-06-08T23:19:54.351776+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-09T01:42:27.340692+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (audit G21/G22)
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).

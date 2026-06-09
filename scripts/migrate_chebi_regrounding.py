@@ -55,6 +55,10 @@ REMAP_RULES = [
     ("CHEBI:77732",  re.compile(r"ferric\s*citrate|iron.{0,4}citrate", re.I), None, "CHEBI:144434"),  # ferric citrate monohydrate (also wrong on cadmium-nitrate id)
     ("CHEBI:32149",  re.compile(r"seo4|selena", re.I), None,                     "CHEBI:77775"),
     ("CHEBI:78020",  re.compile(r""), None,                                      None),  # heptacosanoate is never a real media ingredient: de-ground ALL (casamino, meat extract, nutrient broth, salts, ...)
+    # G22 — split CHEBI:37583 (trisodium phosphate) by speciation. It holds only
+    # sodium monobasic + dibasic labels (no genuine trisodium), each to its own id.
+    ("CHEBI:37583",  re.compile(r"dihydrogen|monobasic", re.I), None,            "CHEBI:37585"),  # NaH2PO4 (sodium dihydrogen phosphate)
+    ("CHEBI:37583",  re.compile(r"dibasic|disodium", re.I), None,                "CHEBI:34683"),  # Na2HPO4 (disodium hydrogen phosphate)
 ]
 
 
