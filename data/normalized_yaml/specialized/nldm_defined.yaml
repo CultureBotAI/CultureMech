@@ -266,7 +266,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: Sodium phosphate dibasic
+    label: disodium hydrogenphosphate
   notes: 'Mapping: micromediaparam (confidence: 0.95)'
 - preferred_term: Sodium phosphate monobasic
   concentration:

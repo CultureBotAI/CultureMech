@@ -68,7 +68,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:34683
-    label: Sodium phosphate dibasic
+    label: disodium hydrogenphosphate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Magnesium chloride hexahydrate
   concentration:

@@ -73,7 +73,7 @@ composition:
     label: NiCl2 x 2 H2O
   chebi_term:
     id: CHEBI:34887
-    label: NiCl2 x 2 H2O
+    label: nickel dichloride
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '0.2'

@@ -18,7 +18,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: ''
+    label: disodium hydrogenphosphate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -92,10 +92,10 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
   term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.004'

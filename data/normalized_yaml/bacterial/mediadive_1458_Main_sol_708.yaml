@@ -121,7 +121,7 @@ composition:
     label: Na-propionate
   chebi_term:
     id: CHEBI:132106
-    label: Na-propionate
+    label: sodium propionate
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.498008'

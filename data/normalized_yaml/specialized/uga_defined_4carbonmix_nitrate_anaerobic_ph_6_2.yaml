@@ -314,7 +314,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:34683
-    label: Sodium phosphate dibasic
+    label: disodium hydrogenphosphate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Sodium phosphate monobasic
   concentration:
@@ -323,7 +323,7 @@ ingredients:
   notes: 'CAS: 558-80-7; MW: 119.98'
   term:
     id: CHEBI:37585
-    label: ''
+    label: sodium dihydrogenphosphate
 description: Defined minimal media for 4CarbonMix Nitrate reducing for pH 6.2
 notes: 'Source: FEBA media definitions'
 category: specialized

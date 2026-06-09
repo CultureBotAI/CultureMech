@@ -13,7 +13,7 @@ composition:
     label: Na-propionate
   chebi_term:
     id: CHEBI:132106
-    label: Na-propionate
+    label: sodium propionate
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'

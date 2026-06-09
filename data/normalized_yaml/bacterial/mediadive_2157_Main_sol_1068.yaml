@@ -109,7 +109,7 @@ composition:
     label: Na-DL-lactate
   chebi_term:
     id: CHEBI:75228
-    label: Na-DL-lactate
+    label: sodium lactate
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '0.249501'

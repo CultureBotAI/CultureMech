@@ -41,20 +41,20 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
 - preferred_term: Disodium hydrogen phosphate
   concentration:
     value: '4.58'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: disodium hydrogenphosphate
   term:
     id: CHEBI:34683
-    label: disodium hydrogen phosphate
+    label: disodium hydrogenphosphate
 - preferred_term: Sodium sulfate
   concentration:
     value: '0.28'

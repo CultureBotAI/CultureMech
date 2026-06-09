@@ -147,10 +147,10 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
   term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.0004863'
@@ -232,7 +232,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557

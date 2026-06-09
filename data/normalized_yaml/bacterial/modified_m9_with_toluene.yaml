@@ -49,7 +49,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00031'
@@ -100,10 +100,10 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
   term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00015'

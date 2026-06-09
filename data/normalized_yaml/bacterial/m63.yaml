@@ -46,10 +46,10 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
   term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946

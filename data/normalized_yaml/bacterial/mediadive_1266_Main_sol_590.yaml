@@ -25,7 +25,7 @@ composition:
     label: Na2-DL-malate
   chebi_term:
     id: CHEBI:91261
-    label: Na2-DL-malate
+    label: disodium (S)-malate
 - preferred_term: Agar
   concentration:
     value: '18'

@@ -86,10 +86,10 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
   term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

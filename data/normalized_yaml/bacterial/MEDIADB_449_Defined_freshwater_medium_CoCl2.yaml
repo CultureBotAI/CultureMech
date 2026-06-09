@@ -165,7 +165,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '0.0003873'
@@ -189,10 +189,10 @@ ingredients:
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
   term:
     id: CHEBI:37585
-    label: Sodium dihydrogen phosphate
+    label: sodium dihydrogenphosphate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710

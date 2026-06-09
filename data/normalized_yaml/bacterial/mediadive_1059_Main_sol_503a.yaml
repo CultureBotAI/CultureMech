@@ -133,7 +133,7 @@ composition:
     label: Na-DL-lactate
   chebi_term:
     id: CHEBI:75228
-    label: Na-DL-lactate
+    label: sodium lactate
 - preferred_term: DL-Dithiothreitol
   concentration:
     value: '3'
