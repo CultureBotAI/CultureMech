@@ -121,11 +121,11 @@ ingredients:
     value: '0.44'
     unit: G_PER_L
   term:
-    id: CHEBI:32586
-    label: Na2SO4 x 10 H2O
+    id: CHEBI:77775
+    label: sodium selenate
   mediaingredientmech_chebi_term:
-    id: CHEBI:32586
-    label: Na2SeO4 x 10 H2O
+    id: CHEBI:77775
+    label: sodium selenate
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696

@@ -40,6 +40,7 @@ Usage
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -53,6 +54,21 @@ CURATOR = "mim-legacy-to-chebi-migration-v1.0"
 
 def _norm(s) -> str:
     return " ".join(str(s or "").lower().split())
+
+
+# Leading stereochemical descriptors. Two names with different descriptors
+# (e.g. "DL-alanine" vs "L-alanine") are distinct compounds and must not be
+# coalesced into a single authoritative CHEBI grounding.
+_STEREO_RE = re.compile(
+    r"^\s*(dl|d|l|rac|\(±\)|\(\+/-\)|\(\+\)|\(-\)|\(rs\)|\(r\)|\(s\))[-\s]",
+    re.IGNORECASE,
+)
+
+
+def _stereo_prefix(s) -> str:
+    """Return the normalized leading stereo descriptor of a name, or ''."""
+    m = _STEREO_RE.match(str(s or ""))
+    return m.group(1).lower() if m else ""
 
 
 def _resolve_chebi(ing: dict, loader, divergences):
@@ -71,23 +87,36 @@ def _resolve_chebi(ing: dict, loader, divergences):
         return cid, str(label), None, "chebi"
 
     if not cid.startswith("CHEBI:"):
-        # CHEBI-grounding gap: resolve by name/synonym against current MIM
-        match = loader.find_match(ing.get("preferred_term", ""), None)
-        if match:
-            om = match.get("ontology_mapping") or {}
-            mc = om.get("ontology_id")
-            if not (mc and str(mc).startswith("CHEBI:")):
-                ident = str(match.get("identifier", ""))
-                mc = ident if ident.startswith("CHEBI:") else None
-            if mc:
-                term_label = match.get("preferred_term") or ing.get("preferred_term")
-                # Only fill `term` when the ingredient has NO existing
-                # grounding (cid is "" -> term absent or its id is empty). An
-                # existing non-CHEBI grounding (FOODON/ENVO/NCIT) must be
-                # preserved, not clobbered by the name match.
-                set_term = {"id": str(mc), "label": str(term_label)} if not cid else None
-                return str(mc), str(ing.get("preferred_term") or term_label), set_term, \
-                    f"namematch_{match.get('match_method', '?')}"
+        # CHEBI-grounding gap: resolve by name/synonym against current MIM.
+        # Only EXACT name or synonym hits are allowed to mint an authoritative
+        # `term`. Sub-exact fuzzy hits are too unreliable -- they coalesce
+        # distinct compounds (sulfite/silicate, pyridoxine/pyridoxamine,
+        # sulfate/selenate) into wrong groundings -- so disable fuzzy here
+        # (fuzzy_threshold > 1.0) and reject anything that is not exact/synonym.
+        match = loader.find_match(
+            ing.get("preferred_term", ""), None, fuzzy_threshold=1.01
+        )
+        if match and match.get("match_method") in ("exact_name", "synonym"):
+            # Never coalesce DL/D/L stereoisomers: if the ingredient and the
+            # matched MIM entry carry different stereo descriptors, leave it
+            # ungrounded rather than mint a wrong authoritative grounding.
+            if _stereo_prefix(ing.get("preferred_term")) == _stereo_prefix(
+                match.get("preferred_term")
+            ):
+                om = match.get("ontology_mapping") or {}
+                mc = om.get("ontology_id")
+                if not (mc and str(mc).startswith("CHEBI:")):
+                    ident = str(match.get("identifier", ""))
+                    mc = ident if ident.startswith("CHEBI:") else None
+                if mc:
+                    term_label = match.get("preferred_term") or ing.get("preferred_term")
+                    # Only fill `term` when the ingredient has NO existing
+                    # grounding (cid is "" -> term absent or its id is empty).
+                    # An existing non-CHEBI grounding (FOODON/ENVO/NCIT) must
+                    # be preserved, not clobbered by the name match.
+                    set_term = {"id": str(mc), "label": str(term_label)} if not cid else None
+                    return str(mc), str(ing.get("preferred_term") or term_label), set_term, \
+                        f"namematch_{match.get('match_method', '?')}"
     return None, None, None, None
 
 
