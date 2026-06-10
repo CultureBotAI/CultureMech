@@ -33,7 +33,7 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '25'
     unit: G_PER_L
@@ -63,7 +63,7 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '20'
     unit: G_PER_L
@@ -126,7 +126,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '0.8'
@@ -200,7 +200,7 @@ ingredients:
 - preferred_term: Na2WO4
   term:
     id: CHEBI:63940
-    label: Na2WO4
+    label: sodium tungstate
   concentration:
     value: '0.02'
     unit: G_PER_L
@@ -367,4 +367,8 @@ curation_history:
   curator: primary-term-regrounding-v1.0
   action: Re-grounded wrong primary term id (OAK-verified)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:52.866673+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 high_metal: true

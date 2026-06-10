@@ -27,7 +27,7 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.247036'
     unit: G_PER_L
@@ -37,7 +37,7 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.06917'
     unit: G_PER_L
@@ -114,7 +114,7 @@ ingredients:
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '3.24'
     unit: G_PER_L
@@ -134,7 +134,7 @@ ingredients:
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -144,7 +144,7 @@ ingredients:
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -154,7 +154,7 @@ ingredients:
 - preferred_term: KBr
   term:
     id: CHEBI:32030
-    label: KBr
+    label: potassium bromide
   concentration:
     value: '0.08'
     unit: G_PER_L
@@ -174,7 +174,7 @@ ingredients:
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.062'
     unit: G_PER_L
@@ -195,7 +195,7 @@ ingredients:
 - preferred_term: NaF
   term:
     id: CHEBI:28741
-    label: NaF
+    label: sodium fluoride
   concentration:
     value: '0.0024'
     unit: G_PER_L
@@ -205,7 +205,7 @@ ingredients:
 - preferred_term: Na-silicate
   term:
     id: CHEBI:60720
-    label: Na-silicate
+    label: sodium silicate
   concentration:
     value: '0.0004'
     unit: G_PER_L
@@ -393,3 +393,7 @@ curation_history:
   curator: primary-term-regrounding-v1.0
   action: Re-grounded wrong primary term id (OAK-verified)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:10.634012+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 10 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

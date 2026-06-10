@@ -47,7 +47,7 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: KH2PO4
@@ -119,7 +119,7 @@ ingredients:
     component'
   term:
     id: CHEBI:50144
-    label: Na-pyruvate
+    label: sodium pyruvate
   mediaingredientmech_chebi_term:
     id: CHEBI:50144
     label: Na-pyruvate
@@ -471,6 +471,10 @@ curation_history:
   notes: 'Replaced 30 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:46:49.413301+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 solutions:
 - preferred_term: Trace element solution SL-4
   term:

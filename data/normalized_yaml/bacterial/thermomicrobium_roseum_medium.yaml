@@ -23,7 +23,7 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '1.3'
     unit: G_PER_L
@@ -43,7 +43,7 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.28'
     unit: G_PER_L
@@ -111,7 +111,7 @@ ingredients:
 - preferred_term: CuCl2 x H2O
   term:
     id: CHEBI:49553
-    label: CuCl2 x H2O
+    label: copper(II) chloride
   concentration:
     value: '0.5'
     unit: G_PER_L
@@ -175,6 +175,10 @@ curation_history:
   notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:47:13.094825+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_592_THERMOMICROBIUM_ROSEUM_medium.yaml
   relationship: SOURCE_DUPLICATE

@@ -25,7 +25,7 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: KH2PO4
@@ -263,7 +263,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:63041
-    label: ''
+    label: manganese(II) chloride
 - preferred_term: Pantothenate
   concentration:
     value: '1'
@@ -486,7 +486,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:91249
-    label: ''
+    label: ammonium molybdate
 - preferred_term: Guanine
   concentration:
     value: '27'
@@ -552,7 +552,7 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
   term:
     id: CHEBI:44115
-    label: ''
+    label: 3-(N-morpholino)propanesulfonic acid
   concentration:
     value: variable
     unit: VARIABLE
@@ -608,4 +608,8 @@ curation_history:
   notes: 'Replaced 31 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:46:54.376117+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 8 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 high_metal: true

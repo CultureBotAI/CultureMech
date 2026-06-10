@@ -28,7 +28,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:63038
-    label: ''
+    label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
     label: NH4NO3
@@ -75,7 +75,7 @@ ingredients:
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '8.0'
     unit: G_PER_L
@@ -96,7 +96,7 @@ ingredients:
 - preferred_term: KBr
   term:
     id: CHEBI:32030
-    label: KBr
+    label: potassium bromide
   concentration:
     value: '0.09996'
     unit: G_PER_L
@@ -106,7 +106,7 @@ ingredients:
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.025336'
     unit: G_PER_L
@@ -127,7 +127,7 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.021396'
     unit: G_PER_L
@@ -137,7 +137,7 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.0054434'
     unit: G_PER_L
@@ -147,7 +147,7 @@ ingredients:
 - preferred_term: NaF
   term:
     id: CHEBI:28741
-    label: NaF
+    label: sodium fluoride
   concentration:
     value: '0.00293917'
     unit: G_PER_L
@@ -410,6 +410,10 @@ curation_history:
   notes: 'Replaced 33 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:47:11.480265+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 7 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1282_SH_SEAWATER_medium.yaml
   relationship: SOURCE_DUPLICATE

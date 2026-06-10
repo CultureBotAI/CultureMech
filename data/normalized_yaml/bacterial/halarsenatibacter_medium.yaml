@@ -25,7 +25,7 @@ ingredients:
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '84'
     unit: G_PER_L
@@ -35,7 +35,7 @@ ingredients:
 - preferred_term: K2SO4
   term:
     id: CHEBI:32036
-    label: K2SO4
+    label: potassium sulfate
   concentration:
     value: '25'
     unit: G_PER_L
@@ -45,7 +45,7 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.05'
     unit: G_PER_L
@@ -55,7 +55,7 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.08'
     unit: G_PER_L
@@ -65,7 +65,7 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.15'
     unit: G_PER_L
@@ -85,7 +85,7 @@ ingredients:
 - preferred_term: Na2WO4
   term:
     id: CHEBI:63940
-    label: Na2WO4
+    label: sodium tungstate
   concentration:
     value: '0.075'
     unit: G_PER_L
@@ -95,7 +95,7 @@ ingredients:
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '4.3'
     unit: G_PER_L
@@ -116,7 +116,7 @@ ingredients:
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '36'
     unit: G_PER_L
@@ -142,7 +142,7 @@ ingredients:
 - preferred_term: Na-lactate
   term:
     id: CHEBI:75228
-    label: Na-lactate
+    label: sodium lactate
   concentration:
     value: '1.1206'
     unit: G_PER_L
@@ -392,4 +392,8 @@ curation_history:
   curator: primary-term-regrounding-v1.0
   action: Re-grounded wrong primary term id (OAK-verified)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:59.305657+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 10 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 high_metal: true

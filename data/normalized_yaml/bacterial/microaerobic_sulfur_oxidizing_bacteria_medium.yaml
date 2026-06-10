@@ -129,7 +129,7 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: KH2PO4
@@ -275,7 +275,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:77775
-    label: Na2SeO4
+    label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
     label: Na2SeO4
@@ -459,6 +459,10 @@ curation_history:
   notes: Re-grounded 4 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:07.784236+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 solutions:
 - preferred_term: KP buffer*
   composition: []

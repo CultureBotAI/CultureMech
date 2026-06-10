@@ -85,7 +85,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:64205
-    label: Ca(NO3)2
+    label: calcium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:64205
     label: Ca(NO3)2
@@ -140,3 +140,7 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
+- timestamp: '2026-06-10T07:46:51.809617+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

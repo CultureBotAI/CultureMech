@@ -43,7 +43,7 @@ ingredients:
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '1.59681'
     unit: G_PER_L
@@ -53,7 +53,7 @@ ingredients:
 - preferred_term: Na2-fumarate
   term:
     id: CHEBI:115156
-    label: Na2-fumarate
+    label: disodium fumarate
   concentration:
     value: '3.19361'
     unit: G_PER_L
@@ -163,7 +163,7 @@ ingredients:
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -349,6 +349,10 @@ curation_history:
   curator: primary-term-regrounding-v1.0
   action: Re-grounded wrong primary term id (OAK-verified)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:43.296871+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/desulfuromusa_ferrireducens_medium.yaml
   relationship: SOURCE_DUPLICATE

@@ -60,7 +60,7 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: KH2PO4
@@ -246,7 +246,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:77775
-    label: Na2SeO4
+    label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
     label: Na2SeO4
@@ -335,6 +335,10 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
+- timestamp: '2026-06-10T07:47:06.284608+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 solutions:
 - preferred_term: 0.001% Coenzyme M solution
   composition: []

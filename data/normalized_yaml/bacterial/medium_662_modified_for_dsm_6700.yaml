@@ -36,7 +36,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:63038
-    label: ''
+    label: ammonium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
     label: NH4NO3
@@ -70,6 +70,10 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:47:05.239284+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 ph_value: 7.0
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_662_YEPG_medium.yaml

@@ -26,7 +26,7 @@ ingredients:
     label: amphotericin  B
   term:
     id: CHEBI:2682
-    label: ''
+    label: amphotericin B
 - preferred_term: Eagle's  minimum  essential  medium  (MEM) (Nissui  Co.,  Tokyo)
   concentration:
     value: '1'
@@ -89,3 +89,7 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:46:56.608131+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
