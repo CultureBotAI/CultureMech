@@ -88,8 +88,8 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Na2S2O3
   term:
-    id: CHEBI:59168
-    label: Na2S2O3
+    id: CHEBI:132112
+    label: sodium thiosulfate
   concentration:
     value: '500'
     unit: G_PER_L
@@ -218,6 +218,10 @@ curation_history:
   notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:37:34.173707+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 ph_value: 10.0
 parent_media:
   path: data/normalized_yaml/bacterial/nitriliruptor_alkaliphilus_medium.yaml

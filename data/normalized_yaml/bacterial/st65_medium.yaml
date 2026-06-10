@@ -93,8 +93,8 @@ ingredients:
     label: NaHCO3
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
-    label: KNO3
+    id: CHEBI:63043
+    label: potassium nitrate
   concentration:
     value: '10'
     unit: G_PER_L
@@ -173,8 +173,8 @@ ingredients:
     label: CuCl2 x 2 H2O
 - preferred_term: Na2SeO4
   term:
-    id: CHEBI:59160
-    label: Na2SeO4
+    id: CHEBI:77775
+    label: sodium selenate
   concentration:
     value: '0.00945'
     unit: G_PER_L
@@ -414,3 +414,7 @@ curation_history:
   notes: 'Replaced 32 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:37:35.863951+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

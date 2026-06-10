@@ -48,8 +48,8 @@ ingredients:
     label: MgSO4 x 7 H2O
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
-    label: KNO3
+    id: CHEBI:63043
+    label: potassium nitrate
   concentration:
     value: '0.0952381'
     unit: G_PER_L
@@ -296,6 +296,10 @@ curation_history:
   notes: 'Replaced 23 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:37:35.381812+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 ph_value: 8.2
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_87_CHLOROFLEXUS_medium_modified.yaml

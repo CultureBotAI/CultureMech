@@ -14,8 +14,8 @@ notes: 'Source: KOMODO ModelSEED | ID: 1007 | DSMZ Medium: 1007 (mediadive.mediu
 ingredients:
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
-    label: KNO3
+    id: CHEBI:63043
+    label: potassium nitrate
   concentration:
     value: '0.25'
     unit: G_PER_L
@@ -162,6 +162,10 @@ curation_history:
   notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:37:34.125090+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/dsm_15672.yaml
   relationship: SOURCE_DUPLICATE

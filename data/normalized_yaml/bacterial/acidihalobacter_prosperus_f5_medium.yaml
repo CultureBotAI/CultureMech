@@ -151,8 +151,8 @@ ingredients:
     label: NiSO4 x 6 H2O
 - preferred_term: Na2SeO4
   term:
-    id: CHEBI:59160
-    label: Na2SeO4
+    id: CHEBI:77775
+    label: sodium selenate
   concentration:
     value: '1'
     unit: G_PER_L
@@ -231,4 +231,8 @@ curation_history:
   notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:37:34.470993+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 high_metal: true

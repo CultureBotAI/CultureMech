@@ -76,8 +76,8 @@ ingredients:
     label: MgSO4 x 7 H2O
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
-    label: KNO3
+    id: CHEBI:63043
+    label: potassium nitrate
   concentration:
     value: '0.5'
     unit: G_PER_L
@@ -210,6 +210,10 @@ curation_history:
   notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:37:35.216313+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_830_R2A_medium.yaml
   relationship: SOURCE_DUPLICATE
