@@ -360,8 +360,8 @@ variants:
     supports: SUPPORT
     explanation: Willard et al. 2024 is the shared source for the aerobic DSM-88 variant
       across these strains.
-    snippet: Materials and Methods 'Strains and cultivation conditions' prints the
-      low-sulfate Brock's salts (DSM-88) recipe and per-strain supplements.
+    snippet: 'All Sulfolobaceae species were grown in a low-sulfate formulation of
+      Brock’s Salts (DSM-88 medium) containing:'
 - name: reduced_anaerobic_mbsy_h2_co2
   relationship: DERIVED_FROM
   description: Reduced anaerobic modified Brock's basal salt medium with yeast extract
