@@ -90,11 +90,6 @@ composition:
   term:
     id: mediadive.compound:1784
     label: Trace vitamins (see Medium No. 197)
-  chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Decane
   concentration:
     value: '0.011098779134295227'
@@ -114,11 +109,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: "Mix components and adjust pH to 7.2 - 7.4. Boil Mineral medium\
   \ and cool down under a N2-CO2 (4:1, v/v) gas stream. Distribute Mineral medium\
   \ into culture vessels (e.g., 9.0 ml of the medium in tubes) under the same gas\
@@ -158,6 +148,11 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:19.189420+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

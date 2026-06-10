@@ -143,11 +143,6 @@ composition:
   term:
     id: mediadive.compound:96
     label: Trace element solution
-  chebi_term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: "Mix components thoroughly and autoclave. Aseptically add the following\
   \ solutions (autoclaved or *filter-sterilized): \nAdjust pH to 7.5.\n\nOriginal\
   \ volume: 1039 mL"
@@ -184,6 +179,11 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:23.341220+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -36,10 +36,9 @@ composition:
     id: mediadive.compound:79
     label: MgCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:86345
+    label: magnesium chloride hexahydrate
+    match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.0999001'
@@ -95,11 +94,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Casein peptone
   concentration:
     value: '1.998'
@@ -150,11 +144,6 @@ composition:
   term:
     id: mediadive.compound:1795
     label: Sugar
-  chebi_term:
-    id: CHEBI:8806
-    label: resazurin
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Dithiothreitol
   concentration:
     value: '0.04995004995004995'
@@ -166,7 +155,7 @@ composition:
     id: CHEBI:18320
     label: 1,4-dithiothreitol
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 preparation_notes: "Adjust pH to 7.2 - 7.4.\nPrepare the medium anaerobically, dispense\
   \ its 5 ml each in anaerobic tubes under a N2-CO2 atmosphere (80:20) and autoclave.\
   \ Add the following solutions via injection from sterile anaerobic stock solutions\
@@ -204,6 +193,11 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:19.316764+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '4 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

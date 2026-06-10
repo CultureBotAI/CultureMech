@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:2362
     label: Rye grass
-  chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: "Bring PJ (Mail sol. C 76) to the boil then add rye grass.  Continue\
   \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with deionized\
   \ water.  Filter through GF/C paper \r\nand autoclave at 15 psi for 15 minutes."
@@ -42,6 +37,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:56:28.543795+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:1941
     label: Leibovitz's L-15 medium
-  chebi_term:
-    id: CHEBI:26710
-    label: 1% sodium chloride
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Fetal bovine serum
   concentration:
     value: '50.0'
@@ -30,11 +25,6 @@ composition:
   term:
     id: mediadive.compound:1165
     label: Tryptose-phosphate
-  chebi_term:
-    id: CHEBI:2509
-    label: agar
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Glutamine
   concentration:
     value: '20.0'
@@ -46,7 +36,7 @@ composition:
     id: CHEBI:18050
     label: L-glutamine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 preparation_notes: "Cultivation of XTC-2 (from Xenopus laevis) cells \nFilter-sterilize\
   \ (0.2 µm) and keep no longer than 4 weeks. Store at room temperature to facilitate\
   \ detection of contamination.\nPrepare a 25 cm<sup>2</sup> flask and seed cells\
@@ -82,6 +72,11 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:11.071711+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '3 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

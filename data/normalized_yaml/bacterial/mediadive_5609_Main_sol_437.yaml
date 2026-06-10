@@ -30,11 +30,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.5'
@@ -58,7 +53,7 @@ composition:
     id: CHEBI:17234
     label: D-glucose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: Resazurin
   concentration:
     value: '0.001'
@@ -126,11 +121,6 @@ composition:
   term:
     id: mediadive.compound:2098
     label: Bovine serum
-  chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: 'Dissolve ingredients except cysteine-HCl in water, boil for 5
   min, cool to room temperature while gassing with 100% CO2, add cysteine-HCl and
   adjust pH to 6.9 with 8 N NaOH while gassing is continued. Switch to 100% N2 gas
@@ -174,6 +164,11 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:26.894821+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '3 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

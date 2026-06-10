@@ -830,7 +830,7 @@ validate-strict *args:
 check-chebi-grounding *args:
     #!/usr/bin/env bash
     uv run python scripts/audit_chebi_consistency.py \
-        --out reports/chebi_consistency.tsv --max-allowed 102 {{args}}
+        --out reports/chebi_consistency.tsv --max-allowed 101 {{args}}
 
 # Scan-only collision check for CultureMech:NNNNNN IDs. Exits non-zero if any
 # cross-file duplicates are detected. Use as a pre-commit / CI safety net.

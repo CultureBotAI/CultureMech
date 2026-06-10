@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:925
     label: Sigma Sea salts
-  chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: NH4Cl
   concentration:
     value: '0.5'
@@ -63,7 +58,7 @@ composition:
     id: CHEBI:17234
     label: D-glucose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 preparation_notes: Autoclave and cool the medium. Aseptically add from sterile stock
   solutions, 20 ml 50xPYE and 5 ml 0.2 mg/ml riboflavin (filter sterilised), and 2
   ml 50% glucose per liter of medium.
@@ -95,6 +90,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:56:07.997443+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

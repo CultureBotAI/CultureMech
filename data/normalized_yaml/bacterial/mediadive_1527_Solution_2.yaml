@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:275
     label: Potassium phosphate buffer
-  chebi_term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: "Boil both solutions under a stream of nitrogen gas for few minutes\
   \ and autoclave separately under anaerobic conditions at 121°C for 15 minutes. Mix\
   \ aseptically after autoclaving under a stream of sterile nitrogen gas and adjust\
@@ -44,6 +39,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:56:04.984137+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:
