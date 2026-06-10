@@ -19,8 +19,8 @@ composition:
     id: mediadive.compound:667
     label: Soytone
   chebi_term:
-    id: CHEBI:8150
-    label: CHEBI:8150
+    id: CHEBI:16247
+    label: phospholipid
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Yeast extract
