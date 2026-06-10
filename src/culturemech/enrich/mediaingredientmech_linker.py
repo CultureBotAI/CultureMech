@@ -72,16 +72,17 @@ class MediaIngredientMechLinker:
             # field is strictly CHEBI, so resolve the matched entity to its
             # CHEBI grounding and only write the link when one exists.
             ontology_mapping = match.get('ontology_mapping') or {}
-            chebi_id = ontology_mapping.get('ontology_id')
-            if not (chebi_id and str(chebi_id).startswith('CHEBI:')):
+            mim_chebi_id = ontology_mapping.get('ontology_id')
+            if not (mim_chebi_id and str(mim_chebi_id).startswith('CHEBI:')):
                 ident = match.get('identifier') or match.get('id') or ''
-                chebi_id = ident if str(ident).startswith('CHEBI:') else None
+                mim_chebi_id = ident if str(ident).startswith('CHEBI:') else None
 
-            if not chebi_id:
+            if not mim_chebi_id:
                 # Matched a MIM entity that is not CHEBI-keyed -> no strictly
                 # CHEBI linkage to record. Surface it in the unmatched report
                 # so name/synonym/fuzzy hits on non-CHEBI MIM entities are
-                # visible, not silently dropped.
+                # visible, not silently dropped. Report the ingredient's own
+                # query CHEBI id (not the MIM match, which has no CHEBI id).
                 self.stats['no_match'] += 1
                 self.stats.setdefault('matched_non_chebi', 0)
                 self.stats['matched_non_chebi'] += 1
@@ -94,7 +95,7 @@ class MediaIngredientMechLinker:
                 return False
 
             ingredient['mediaingredientmech_chebi_term'] = {
-                'id': chebi_id,
+                'id': mim_chebi_id,
                 'label': mim_name,
             }
 
