@@ -23,11 +23,6 @@ composition:
   term:
     id: mediadive.compound:724
     label: Horse blood
-  chebi_term:
-    id: CHEBI:2509
-    label: agar
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: Columbia agar base supplemented with 4% horse blood. Rehydrate
   pellets of freeze-dried ampoules in liquid medium 545, 215 or 1 (see below). For
   rehydration of Helicobacter and Campylobacter spp., use medium 215 (brain heart
@@ -55,6 +50,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:50:12.678393+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -112,3 +112,21 @@ guess**. Tier 1 also anchors 82% to the corpus's own reliable consensus.
   CI or pin a release.
 - Synonym ambiguity (e.g. glucose anomers, vitamer forms) — require exact match,
   defer ambiguous to the curator list rather than auto-picking.
+
+## Resolution status
+
+- **Phase 1 (done, PR #42):** internal consensus borrow — 15,319 fixed, 0 API.
+- **Phase 2 (done):** OAK `sqlite:obo:chebi` + OLS4 — 3,607 fixed across 2,635
+  records: 1,612 corpus-majority (hydrate-safe), 224 ontology-exact, 1,771
+  mixtures de-grounded. 281 labels left flagged in
+  `kg_fallback_phase2_curator_review.tsv` (no guessing).
+  - Caught + fixed a hydrate bug: normalising "MgSO4 x 7 H2O" -> "magnesium
+    sulfate" drops the hydrate, so an ontology lookup picks the hexahydrate;
+    corpus-majority-first (cross-checked) keeps the correct heptahydrate
+    (CHEBI:31795).
+- **Net (P1+P2):** kg_fallback chebi_terms 21,146 -> 3,818 (82% reduction);
+  low-confidence layer 23,998 -> 5,072; catastrophic errors (water->MgCl2,
+  CaCl2->B12) eliminated. Corpus validates 0 ERROR.
+- **Phase 3 (remaining):** curator review of the 281 flagged labels (mostly
+  stereochem-prefixed organics whose existing grounding is plausibly correct
+  but unconfirmed). Not auto-fixable — needs human judgement.

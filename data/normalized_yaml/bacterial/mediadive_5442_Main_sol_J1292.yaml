@@ -107,11 +107,6 @@ composition:
   term:
     id: mediadive.compound:85
     label: Beef extract
-  chebi_term:
-    id: CHEBI:2509
-    label: agar
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Resazurin
   concentration:
     value: '0.000489716'
@@ -168,11 +163,6 @@ composition:
   term:
     id: mediadive.compound:145
     label: Rumen fluid
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: "Mix components thoroughly and adjust pH to 7.0. Distribute the\
   \ medium into culture vessels (e.g., 20 ml medium in 60 ml serum bottle) under a\
   \ N2 gas atmosphere, seal with butyl rubber stoppers and autoclave.After cooling,\
@@ -206,6 +196,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:49:21.606632+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:
