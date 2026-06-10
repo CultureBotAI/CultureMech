@@ -190,8 +190,11 @@ class Resolver:
             if c in ols or (not ols and not ols_errored):
                 return "resolve", c, label, "oak_ols_exact"
 
-        # De-ground clear mixtures with no ontology grounding
-        if not oak and not ols and MIXTURE.search(label):
+        # De-ground clear mixtures with no ontology grounding. Only when OLS
+        # genuinely returned nothing — never when the OLS call errored/timed out
+        # (an error coalesces to an empty set and must not be read as "no match",
+        # mirroring the Path A safeguard above).
+        if not oak and not ols and not ols_errored and MIXTURE.search(label):
             return "deground", None, label, "mixture_no_chebi"
 
         return "flag", None, label, "ambiguous_or_unresolved"
