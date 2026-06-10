@@ -813,6 +813,31 @@ validate-products:
 report-label-drift:
     uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report reports/label_drift.tsv
 
+# Durability guard: fail if scripts/validate_id_label_correspondence.py drifts
+# from the pinned sha256 (it is vendored byte-identical across the Mech repos —
+# see the file's own docstring). CI runs this so an accidental edit to one copy
+# can't silently diverge. Uses sha256sum on CI (ubuntu), shasum -a 256 on macOS.
+[group('QC')]
+verify-validator-pin:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    if command -v sha256sum >/dev/null 2>&1; then
+        sha256sum -c scripts/.validate_id_label_correspondence.sha256
+    else
+        shasum -a 256 -c scripts/.validate_id_label_correspondence.sha256
+    fi
+
+# Intentional sync only: re-pin the sha256 to the CURRENT script contents after
+# a deliberate, all-repos byte-identical update. Run this in every Mech copy.
+[group('QC')]
+refresh-validator-pin:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    f=scripts/validate_id_label_correspondence.py
+    if command -v sha256sum >/dev/null 2>&1; then h=$(sha256sum "$f" | cut -d' ' -f1); else h=$(shasum -a 256 "$f" | cut -d' ' -f1); fi
+    printf '%s  %s\n' "$h" "$f" > scripts/.validate_id_label_correspondence.sha256
+    echo "re-pinned $f to $h"
+
 [group('QC')]
 validate-all:
     #!/usr/bin/env bash

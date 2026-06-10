@@ -23,9 +23,15 @@ repos already use, and classifies the pair:
 
     OK_CANONICAL        label == canonical OBO label
     OK_SYNONYM          label is an accepted synonym (policy-dependent)
+    OK_ID_ONLY          id resolves; label match WAIVED for this slot (the slot
+                        carries a curator-intended formula/common name, e.g.
+                        CHEBI:15377 "Distilled water" — see ``label_waived_keys``)
     MISMATCH            label is neither canonical nor an accepted synonym  (ERROR)
     ID_NOT_FOUND        id has an adapter but is absent from the ontology   (ERROR)
     EMPTY_LABEL         id present, label blank                             (ERROR)
+    MISSING_COLUMN      a CONFIGURED id/label column is absent from a       (ERROR)
+                        tabular target that has data rows — without this the
+                        pair silently drops and enforce false-greens on drift
     ADAPTER_ERROR       a CONFIGURED adapter failed to load                 (ERROR)
     SKIPPED_NO_ADAPTER  prefix has no configured OAK adapter (cas:, MIM:, …)
     SKIPPED_EMPTY_ADAPTER  configured adapter loaded but holds no terms (e.g. a
@@ -36,6 +42,25 @@ Policy (per target, ``conf/id_label_targets.yaml``)
                              mirrors the linkml-term-validator schema gate).
     ``canonical_or_synonym`` accept canonical OR a synonym within
                              ``synonym_scope`` (exact | exact_related | all).
+
+Per-target knobs (in addition to ``policy``/``synonym_scope``/``pairs``)
+    ``required: true``       fail enforce when the target's glob matches NO
+                             files (an expected artifact, e.g. an SSSOM export,
+                             wasn't built). Default false preserves the prior
+                             "skip-with-exit-0" behaviour for optional targets.
+    ``label_waived_keys``    slots that carry curator-intended labels (formula /
+                             common names) and so are EXEMPT from canonical-label
+                             matching but STILL id-existence checked (OK_ID_ONLY
+                             when the id resolves, ID_NOT_FOUND when it doesn't).
+                             For YAML targets the entries match the *parent key*
+                             of the id/label dict (e.g. ``term``, ``chebi_term``);
+                             for tabular targets they match the *id column name*
+                             (e.g. ``ontology_id``). This implements the product
+                             decision to KEEP labels like "D-glucose" / "NaCl"
+                             rather than relabel them to the OBO canonical form.
+                             Unlike ``exclude_keys`` (which prunes the whole
+                             subtree and checks nothing), label-waived slots are
+                             still validated for id existence.
 
 Modes
     ``--report PATH``  write a TSV of every non-OK pair and exit 0 (baseline).
@@ -72,8 +97,26 @@ def _safe_rel(path: Path) -> str:
 # Verdict classes that should fail an --enforce run.
 # ADAPTER_ERROR is fatal: a configured adapter that fails to LOAD must never be
 # silently downgraded to SKIPPED_NO_ADAPTER (which would let an enforce run pass
-# while checking nothing).
-_ERROR_VERDICTS = {"MISMATCH", "ID_NOT_FOUND", "EMPTY_LABEL", "ADAPTER_ERROR"}
+# while checking nothing). MISSING_COLUMN is likewise fatal: a configured
+# id/label column that is absent from a populated tabular target used to be a
+# stderr-only warning, so enforce exited 0 even though the pair was never
+# checked (Engine-B false-green). MISSING_GLOB is emitted for a ``required: true``
+# target whose glob matched no files (an expected artifact wasn't built).
+_ERROR_VERDICTS = {
+    "MISMATCH",
+    "ID_NOT_FOUND",
+    "EMPTY_LABEL",
+    "MISSING_COLUMN",
+    "MISSING_GLOB",
+    "ADAPTER_ERROR",
+}
+
+# Verdicts that are accepted (do NOT get recorded as findings and never fail
+# enforce). OK_ID_ONLY is a pass: the id resolved and the slot's label was
+# intentionally waived (curator-intended formula/common name).
+_OK_VERDICTS = {"OK_CANONICAL", "OK_SYNONYM", "OK_ID_ONLY"}
+# Benign skips: not OK (still surfaced in the report) but never fail enforce.
+_SKIP_VERDICTS = {"SKIPPED_NO_ADAPTER", "SKIPPED_EMPTY_ADAPTER"}
 
 _CURIE_RE = re.compile(r"^([A-Za-z][A-Za-z0-9.]*):(.+)$")
 _WS_RE = re.compile(r"\s+")
@@ -228,6 +271,7 @@ def classify(
     policy: str,
     scope: str,
     lookup_curie: str | None = None,
+    label_waived: bool = False,
 ) -> dict[str, Any]:
     """Classify one (id, label) pair into a verdict dict.
 
@@ -235,14 +279,24 @@ def classify(
     case-normalized CURIE actually passed to the adapter so that, e.g., a
     lowercase ``mesh:`` row resolves against OAK's uppercase ``MESH:`` ids.
     Synonyms are only built when the policy actually consults them.
+
+    ``label_waived`` marks slots that carry curator-intended formula/common
+    names (e.g. CHEBI:15377 "Distilled water"): id existence is still
+    enforced (ID_NOT_FOUND fires for a bogus id) but the canonical-label
+    match is skipped — a resolvable id yields OK_ID_ONLY regardless of label.
     """
-    include_synonyms = policy != "canonical"
+    # When the label is waived we never consult synonyms (the label isn't
+    # being compared at all), so skip the potentially expensive alias lookup.
+    include_synonyms = (policy != "canonical") and not label_waived
     canonical, accepted, found = accepted_labels(
         adapter, lookup_curie or curie, scope, include_synonyms=include_synonyms
     )
     base = {"id": curie, "label": label, "canonical": canonical or ""}
     if not found:
         return {**base, "verdict": "ID_NOT_FOUND"}
+    if label_waived:
+        # Id resolved; the curator label is intentional, so accept it as-is.
+        return {**base, "verdict": "OK_ID_ONLY"}
     if label is None or str(label).strip() == "":
         return {**base, "verdict": "EMPTY_LABEL"}
     norm_label = normalize(label)
@@ -288,26 +342,47 @@ def _read_tabular_rows(
     return list(reader.fieldnames or []), list(reader), data_line_numbers
 
 
-def iter_tabular(path: Path, fmt: str, pairs: list[list[str]]) -> Iterator[tuple[str, str, str]]:
-    """Yield (locator, id, label) for each configured id/label column pair."""
+def iter_tabular(
+    path: Path,
+    fmt: str,
+    pairs: list[list[str]],
+    label_waived_cols: frozenset[str] = frozenset(),
+) -> Iterator[tuple[str, str, str, bool, str | None]]:
+    """Yield (locator, id, label, label_waived, verdict_override) for each pair.
+
+    ``verdict_override`` is normally ``None`` (the caller classifies the pair).
+    For a configured id column that is ABSENT from a populated file it is
+    ``"MISSING_COLUMN"`` — an ERROR-class verdict, so enforce no longer
+    false-greens on column drift (it used to be a stderr-only warning that the
+    caller never saw as a finding). ``label_waived`` is True when the pair's id
+    column is listed in ``label_waived_cols`` (curator-intended label slot).
+    """
     fields, rows, line_numbers = _read_tabular_rows(path, fmt)
     field_set = set(fields)
     # Keep any pair whose id column exists; a missing label column is allowed
     # so an id present without its label still gets an EMPTY_LABEL verdict
     # rather than being silently dropped.
     usable = [(i, l) for (i, l) in pairs if i in field_set]
-    # RISK: a configured pair whose ID column is absent must NOT vanish silently.
-    # Warn loudly when the file has rows but a configured pair can't be applied
-    # at all. (A missing LABEL column alone is fine — it yields EMPTY_LABEL.)
+    # RISK (fixed): a configured pair whose ID or LABEL column is absent must
+    # NOT vanish silently. When the file has data rows, emit a MISSING_COLUMN
+    # ERROR finding per absent column so an enforce run FAILS instead of
+    # passing while checking nothing. (Still also warn to stderr for context.)
     if rows:
         for (i, l) in pairs:
-            if i not in field_set or l not in field_set:
-                missing = [c for c in (i, l) if c not in field_set]
+            missing = [c for c in (i, l) if c not in field_set]
+            if missing:
                 print(
                     f"  ! {_safe_rel(path)}: configured id/label pair "
                     f"[{i}/{l}] — missing column(s) {missing}; "
                     f"present columns: {sorted(field_set)}",
                     file=sys.stderr,
+                )
+                yield (
+                    f"columns [{i}/{l}]",
+                    f"missing:{','.join(missing)}",
+                    f"present:{sorted(field_set)}",
+                    False,
+                    "MISSING_COLUMN",
                 )
     for idx, row in enumerate(rows):
         # True physical line number when available (a quoted multiline field
@@ -318,7 +393,8 @@ def iter_tabular(path: Path, fmt: str, pairs: list[list[str]]) -> Iterator[tuple
             if not curie:
                 continue
             label = (row.get(label_col) or "").strip()
-            yield f"line {line_no} [{id_col}/{label_col}]", curie, label
+            waived = id_col in label_waived_cols
+            yield f"line {line_no} [{id_col}/{label_col}]", curie, label, waived, None
 
 
 def _walk_yaml(
@@ -326,7 +402,9 @@ def _walk_yaml(
     pairs: list[tuple[str, str]],
     path: str,
     exclude_keys: frozenset[str] = frozenset(),
-) -> Iterator[tuple[str, str, str]]:
+    label_waived_keys: frozenset[str] = frozenset(),
+    waived: bool = False,
+) -> Iterator[tuple[str, str, str, bool, str | None]]:
     if isinstance(node, dict):
         for id_key, label_key in pairs:
             # An id present without its sibling label must still be checked
@@ -336,30 +414,44 @@ def _walk_yaml(
                 if isinstance(curie, str) and curie.strip():
                     label = node.get(label_key)
                     label = label if isinstance(label, str) else ""
-                    yield f"{path}.{id_key}", curie.strip(), (label or "").strip()
+                    yield f"{path}.{id_key}", curie.strip(), (label or "").strip(), waived, None
         for k, v in node.items():
-            # Skip excluded grounding blocks (e.g. mediaingredientmech_chebi_term,
-            # whose label is intentionally MIM's preferred_term, not the OBO
-            # canonical label, so a `canonical` policy would false-MISMATCH it).
+            # Skip excluded grounding blocks entirely (no checks at all).
             if k in exclude_keys:
                 continue
-            yield from _walk_yaml(v, pairs, f"{path}.{k}", exclude_keys)
+            # label_waived_keys: descend, but mark everything under this key as
+            # label-waived so its id/label dicts get id-existence-only checking
+            # (curator-intended formula/common names, e.g. CHEBI:15377
+            # "Distilled water" under a `term:` block). ``waived`` is sticky
+            # for the subtree so a nested id/label pair stays waived.
+            child_waived = waived or (k in label_waived_keys)
+            yield from _walk_yaml(
+                v, pairs, f"{path}.{k}", exclude_keys, label_waived_keys, child_waived
+            )
     elif isinstance(node, list):
         for idx, item in enumerate(node):
-            yield from _walk_yaml(item, pairs, f"{path}[{idx}]", exclude_keys)
+            yield from _walk_yaml(
+                item, pairs, f"{path}[{idx}]", exclude_keys, label_waived_keys, waived
+            )
 
 
 def iter_yaml(
-    path: Path, pairs: list[list[str]], exclude_keys: frozenset[str] = frozenset()
-) -> Iterator[tuple[str, str, str]]:
-    """Yield (locator, id, label) from a YAML doc by recursively finding dicts
-    that carry an id key (and, when present, its sibling label key)."""
+    path: Path,
+    pairs: list[list[str]],
+    exclude_keys: frozenset[str] = frozenset(),
+    label_waived_keys: frozenset[str] = frozenset(),
+) -> Iterator[tuple[str, str, str, bool, str | None]]:
+    """Yield (locator, id, label, label_waived, verdict_override) from a YAML
+    doc by recursively finding dicts that carry an id key (and, when present,
+    its sibling label key)."""
     try:
         doc = yaml.safe_load(path.read_text())
     except Exception as exc:  # pragma: no cover
         print(f"  ! failed to parse {path}: {exc}", file=sys.stderr)
         return
-    yield from _walk_yaml(doc, [(a, b) for a, b in pairs], path.name, exclude_keys)
+    yield from _walk_yaml(
+        doc, [(a, b) for a, b in pairs], path.name, exclude_keys, label_waived_keys
+    )
 
 
 # -- driver ---------------------------------------------------------------
@@ -388,47 +480,69 @@ def run(config_path: Path, report_path: Path | None) -> int:
         scope = target.get("synonym_scope", default_scope)
         pairs = target.get("pairs", [])
         exclude_keys = frozenset(target.get("exclude_keys", []) or [])
+        label_waived_keys = frozenset(target.get("label_waived_keys", []) or [])
+        required = bool(target.get("required", False))
         globs = target.get("glob")
         glob_list = globs if isinstance(globs, list) else [globs]
         paths: list[Path] = []
         for g in glob_list:
             paths.extend(sorted(REPO_ROOT.glob(g)))
         if not paths:
-            print(f"  - {name}: no files match {glob_list}")
+            # RISK (fixed): a `required: true` target whose glob matches NO
+            # files means an expected artifact (e.g. output/*.sssom.tsv) was
+            # never built. That used to skip with exit 0, so validate-products
+            # greened on a missing product. Emit a MISSING_GLOB ERROR finding.
+            if required:
+                print(f"  ! {name}: REQUIRED target — no files match {glob_list}")
+                rec = {"id": ",".join(str(g) for g in glob_list), "label": "",
+                       "canonical": "", "verdict": "MISSING_GLOB"}
+                counts["MISSING_GLOB"] = counts.get("MISSING_GLOB", 0) + 1
+                findings.append({
+                    "surface": name, "file": "(no match)",
+                    "locator": f"glob {glob_list}", "policy": policy, **rec,
+                })
+            else:
+                print(f"  - {name}: no files match {glob_list}")
             continue
         for path in paths:
             rel = _safe_rel(path)
             if kind == "yaml":
-                pairs_iter = iter_yaml(path, pairs, exclude_keys)
+                pairs_iter = iter_yaml(path, pairs, exclude_keys, label_waived_keys)
             else:
-                pairs_iter = iter_tabular(path, target.get("format", "tsv"), pairs)
-            for locator, curie, label in pairs_iter:
-                prefix = prefix_of(curie)
-                adapter = pool.get(prefix)
-                if adapter is None:
+                pairs_iter = iter_tabular(
+                    path, target.get("format", "tsv"), pairs, label_waived_keys
+                )
+            for locator, curie, label, label_waived, verdict_override in pairs_iter:
+                if verdict_override is not None:
                     rec = {"id": curie, "label": label, "canonical": "",
-                           "verdict": "SKIPPED_NO_ADAPTER"}
-                elif adapter is LOAD_FAILED:
-                    rec = {"id": curie, "label": label, "canonical": "",
-                           "verdict": "ADAPTER_ERROR"}
-                elif adapter is EMPTY_ADAPTER:
-                    rec = {"id": curie, "label": label, "canonical": "",
-                           "verdict": "SKIPPED_EMPTY_ADAPTER"}
+                           "verdict": verdict_override}
                 else:
-                    # Rewrite the CURIE prefix to the canonical allowlist case
-                    # (e.g. mesh: -> MESH:) so OAK, which keys on uppercase OBO
-                    # prefixes, resolves the label instead of returning None.
-                    canonical_prefix = pool.canonical_prefix(prefix)
-                    lookup_curie = curie
-                    if canonical_prefix and prefix != canonical_prefix:
-                        lookup_curie = f"{canonical_prefix}:{curie.split(':', 1)[1]}"
-                    rec = classify(
-                        curie=curie, label=label, adapter=adapter, policy=policy,
-                        scope=scope, lookup_curie=lookup_curie,
-                    )
+                    prefix = prefix_of(curie)
+                    adapter = pool.get(prefix)
+                    if adapter is None:
+                        rec = {"id": curie, "label": label, "canonical": "",
+                               "verdict": "SKIPPED_NO_ADAPTER"}
+                    elif adapter is LOAD_FAILED:
+                        rec = {"id": curie, "label": label, "canonical": "",
+                               "verdict": "ADAPTER_ERROR"}
+                    elif adapter is EMPTY_ADAPTER:
+                        rec = {"id": curie, "label": label, "canonical": "",
+                               "verdict": "SKIPPED_EMPTY_ADAPTER"}
+                    else:
+                        # Rewrite the CURIE prefix to the canonical allowlist case
+                        # (e.g. mesh: -> MESH:) so OAK, which keys on uppercase OBO
+                        # prefixes, resolves the label instead of returning None.
+                        canonical_prefix = pool.canonical_prefix(prefix)
+                        lookup_curie = curie
+                        if canonical_prefix and prefix != canonical_prefix:
+                            lookup_curie = f"{canonical_prefix}:{curie.split(':', 1)[1]}"
+                        rec = classify(
+                            curie=curie, label=label, adapter=adapter, policy=policy,
+                            scope=scope, lookup_curie=lookup_curie,
+                            label_waived=label_waived,
+                        )
                 counts[rec["verdict"]] = counts.get(rec["verdict"], 0) + 1
-                if rec["verdict"] not in ("OK_CANONICAL", "OK_SYNONYM",
-                                          "SKIPPED_NO_ADAPTER", "SKIPPED_EMPTY_ADAPTER"):
+                if rec["verdict"] not in _OK_VERDICTS | _SKIP_VERDICTS:
                     findings.append({
                         "surface": name,
                         "file": str(rel),
@@ -442,9 +556,12 @@ def run(config_path: Path, report_path: Path | None) -> int:
     for verdict in (
         "OK_CANONICAL",
         "OK_SYNONYM",
+        "OK_ID_ONLY",
         "MISMATCH",
         "ID_NOT_FOUND",
         "EMPTY_LABEL",
+        "MISSING_COLUMN",
+        "MISSING_GLOB",
         "ADAPTER_ERROR",
         "SKIPPED_NO_ADAPTER",
         "SKIPPED_EMPTY_ADAPTER",
