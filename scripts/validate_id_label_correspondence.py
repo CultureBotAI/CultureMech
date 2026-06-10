@@ -28,6 +28,8 @@ repos already use, and classifies the pair:
     EMPTY_LABEL         id present, label blank                             (ERROR)
     ADAPTER_ERROR       a CONFIGURED adapter failed to load                 (ERROR)
     SKIPPED_NO_ADAPTER  prefix has no configured OAK adapter (cas:, MIM:, …)
+    SKIPPED_EMPTY_ADAPTER  configured adapter loaded but holds no terms (e.g. a
+                        0-byte sqlite stub); db needs populating, data isn't wrong
 
 Policy (per target, ``conf/id_label_targets.yaml``)
     ``canonical``            accept only the canonical OBO label (strict;
@@ -104,6 +106,13 @@ def prefix_of(curie: str) -> str | None:
 # caller can raise a fatal ADAPTER_ERROR instead of a benign SKIPPED_NO_ADAPTER.
 LOAD_FAILED = object()
 
+# Sentinel for a CONFIGURED adapter that loads but contains no terms (e.g. a
+# 0-byte ``~/.data/oaklib/micro.db`` stub that OAK opens happily but that yields
+# ``label() == None`` for every id). Without this, every id under such a prefix
+# would be reported as a false ``ID_NOT_FOUND``. Treated as a benign skip
+# (``SKIPPED_EMPTY_ADAPTER``) — the db needs populating, the data isn't wrong.
+EMPTY_ADAPTER = object()
+
 
 class AdapterPool:
     """Lazily loads OAK adapters, but ONLY for prefixes in the allowlist.
@@ -151,11 +160,33 @@ class AdapterPool:
             try:
                 from oaklib import get_adapter
 
-                self._cache[key] = get_adapter(self._selectors[key])
+                adapter = get_adapter(self._selectors[key])
             except Exception as exc:  # pragma: no cover - environment dependent
                 print(f"  ! failed to load adapter for {key}: {exc}", file=sys.stderr)
                 self._cache[key] = LOAD_FAILED
+            else:
+                self._cache[key] = EMPTY_ADAPTER if self._is_empty(adapter, key) else adapter
         return self._cache[key]
+
+    @staticmethod
+    def _is_empty(adapter: Any, key: str) -> bool:
+        """True if the adapter loaded but holds no terms (e.g. a 0-byte sqlite).
+
+        Peeks a single entity (O(1)) rather than counting. Two empty shapes:
+        a valid-but-termless db (``entities()`` yields nothing), and an
+        uninitialized 0-byte sqlite stub whose tables don't exist yet
+        (``entities()`` raises ``no such table`` — OAK's ``sqlite:obo:micro``
+        points at exactly such a stub). Any *other* probe error is treated as
+        non-empty so a genuinely broken adapter still surfaces per-id verdicts
+        rather than being masked as an empty skip.
+        """
+        try:
+            return next(iter(adapter.entities()), None) is None
+        except Exception as exc:  # pragma: no cover - environment dependent
+            if "no such table" in str(exc).lower():  # uninitialized/0-byte stub
+                return True
+            print(f"  ! emptiness probe failed for {key}: {exc}", file=sys.stderr)
+            return False
 
 
 def accepted_labels(
@@ -380,6 +411,9 @@ def run(config_path: Path, report_path: Path | None) -> int:
                 elif adapter is LOAD_FAILED:
                     rec = {"id": curie, "label": label, "canonical": "",
                            "verdict": "ADAPTER_ERROR"}
+                elif adapter is EMPTY_ADAPTER:
+                    rec = {"id": curie, "label": label, "canonical": "",
+                           "verdict": "SKIPPED_EMPTY_ADAPTER"}
                 else:
                     # Rewrite the CURIE prefix to the canonical allowlist case
                     # (e.g. mesh: -> MESH:) so OAK, which keys on uppercase OBO
@@ -393,7 +427,8 @@ def run(config_path: Path, report_path: Path | None) -> int:
                         scope=scope, lookup_curie=lookup_curie,
                     )
                 counts[rec["verdict"]] = counts.get(rec["verdict"], 0) + 1
-                if rec["verdict"] not in ("OK_CANONICAL", "OK_SYNONYM", "SKIPPED_NO_ADAPTER"):
+                if rec["verdict"] not in ("OK_CANONICAL", "OK_SYNONYM",
+                                          "SKIPPED_NO_ADAPTER", "SKIPPED_EMPTY_ADAPTER"):
                     findings.append({
                         "surface": name,
                         "file": str(rel),
@@ -412,6 +447,7 @@ def run(config_path: Path, report_path: Path | None) -> int:
         "EMPTY_LABEL",
         "ADAPTER_ERROR",
         "SKIPPED_NO_ADAPTER",
+        "SKIPPED_EMPTY_ADAPTER",
     ):
         if verdict in counts:
             print(f"  {verdict:>20}: {counts[verdict]}")
