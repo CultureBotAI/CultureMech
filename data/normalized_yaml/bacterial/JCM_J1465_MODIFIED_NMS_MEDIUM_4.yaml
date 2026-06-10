@@ -124,11 +124,11 @@ ingredients:
     value: '0.02'
     unit: G_PER_L
   term:
-    id: CHEBI:38267
-    label: H3BO2
+    id: CHEBI:33118
+    label: boric acid
   mediaingredientmech_chebi_term:
-    id: CHEBI:38267
-    label: H3BO2
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.05'

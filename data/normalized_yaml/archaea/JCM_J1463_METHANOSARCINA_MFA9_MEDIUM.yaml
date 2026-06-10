@@ -87,7 +87,7 @@ ingredients:
     unit: MG_PER_L
   term:
     id: CHEBI:76181
-    label: ''
+    label: ferrous ammonium sulfate hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:76181
     label: Fe(NH4)2(SO4)2 x 6 H2O

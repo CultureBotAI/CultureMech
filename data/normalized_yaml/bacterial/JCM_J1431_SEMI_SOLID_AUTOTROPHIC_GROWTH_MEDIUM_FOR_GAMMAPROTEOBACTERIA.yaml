@@ -3,7 +3,7 @@ name: semi_solid_autotrophic_growth_medium_for_gammaproteobacteria
 original_name: SEMI-SOLID AUTOTROPHIC GROWTH MEDIUM FOR GAMMAPROTEOBACTERIA
 category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SEMISOLID
 ph_value: 7.0
 media_term:
   preferred_term: JCM Medium J1431
