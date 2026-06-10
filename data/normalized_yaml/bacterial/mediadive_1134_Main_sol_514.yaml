@@ -156,10 +156,10 @@ composition:
     id: mediadive.compound:524
     label: Na-silicate
   chebi_term:
-    id: CHEBI:26710
-    label: 1% sodium chloride
+    id: CHEBI:60720
+    label: Na-silicate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaF
   concentration:
     value: '0.0024'
@@ -180,10 +180,10 @@ composition:
     id: mediadive.compound:528
     label: (NH4)NO3
   chebi_term:
-    id: CHEBI:17632
-    label: nitrate
+    id: CHEBI:63038
+    label: (NH4)NO3
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Na2HPO4
   concentration:
     value: '0.008'
@@ -204,10 +204,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium
   from Difco add 37.40 g to 1 litre water.
 
@@ -237,6 +237,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:14.373853+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

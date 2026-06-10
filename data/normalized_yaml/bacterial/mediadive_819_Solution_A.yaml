@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:461
     label: HEPES buffer
   chebi_term:
-    id: CHEBI:18050
-    label: L-glutamine
+    id: CHEBI:19708
+    label: HEPES buffer
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sodium citrate
   concentration:
     value: '0.7'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:113
     label: Na-pyruvate
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:50144
+    label: Na-pyruvate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: N-Acetylglucosamine
   concentration:
     value: '0.4'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:462
     label: N-Acetylglucosamine
   chebi_term:
-    id: CHEBI:506227
-    label: N-acetylglucosamine
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.3'
@@ -133,9 +133,9 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: L-glutamine
+    label: L-Glutamine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Double distilled water
   concentration:
     value: '900'
@@ -144,10 +144,10 @@ composition:
     id: mediadive.compound:1021
     label: Double distilled water
   chebi_term:
-    id: CHEBI:18050
-    label: L-glutamine
+    id: CHEBI:15377
+    label: Double distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Stir slowly at 4 - 10°C for 3 hours, adjust pH to 7.6 with 5 M
   NaOH. Filter sterilize.
 curation_history:
@@ -173,6 +173,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:42.825150+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 5 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

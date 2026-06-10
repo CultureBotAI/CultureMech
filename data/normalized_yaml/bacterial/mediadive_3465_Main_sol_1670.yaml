@@ -49,9 +49,9 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: L-glutamine
+    label: L-Glutamine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: "Cultivation of Occidentia massiliensis has to be carried out inBME/CTVM2\
   \ cells. The cell line is NOT available from DSMZ but has to be obtained from:\n\
   <https://www.liverpool.ac.uk/infection-and-global-health/research/tick-cell-biobank/tick-cell-lines/>\n\
@@ -101,6 +101,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:27.093906+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

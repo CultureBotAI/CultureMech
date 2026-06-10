@@ -25,9 +25,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Horse blood
   concentration:
     value: '40'
@@ -61,9 +61,9 @@ composition:
     label: FeCl3
   chebi_term:
     id: CHEBI:30808
-    label: iron trichloride
+    label: FeCl3
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Cysteine
   concentration:
     value: '1'
@@ -73,9 +73,9 @@ composition:
     label: Cysteine
   chebi_term:
     id: CHEBI:15356
-    label: cysteine
+    label: Cysteine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: Dissolve Columbia agar base in 70% artificial seawater and add
   additional 2 g agar per liter. Autoclave and mix solution with 4% horse or sheep
   blood after cooling to 50°C. Add 1% glucose, 2 mM FeCl3 and 0.1% cysteine, mix well
@@ -104,6 +104,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:43.047298+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

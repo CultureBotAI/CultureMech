@@ -25,9 +25,9 @@ composition:
     label: CoCl2 x 6 H2O
   chebi_term:
     id: CHEBI:35696
-    label: cobalt dichloride
+    label: CoCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '9'
@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:120
     label: (NH4)6Mo7O24 x 4 H2O
   chebi_term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
+    id: CHEBI:91249
+    label: CHEBI:91249
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '20'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:121
     label: CuSO4 x 5 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: "Make  up  to 100  ml with distilled  water.  This solution is\
   \  normally \r\ncloudy.  Acidify with a few drops of conc. HCl to give a clear solution.\n\
   \nOriginal volume: 100 mL"
@@ -90,6 +90,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:41.451404+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

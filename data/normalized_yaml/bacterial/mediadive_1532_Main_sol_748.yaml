@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:271
     label: EDTA
   chebi_term:
-    id: CHEBI:42191
-    label: EDTA(4-)
+    id: CHEBI:64755
+    label: EDTA
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.2'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Vitamin B12
   concentration:
     value: 2e-05
@@ -97,9 +97,9 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: biotin
+    label: Biotin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Na2S2O3 x 5 H2O
   concentration:
     value: '0.5'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:65
     label: Na2S2O3 x 5 H2O
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Soytone
   concentration:
     value: '4'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:667
     label: Soytone
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:8150
+    label: CHEBI:8150
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na-pyruvate
   concentration:
     value: '2.2'
@@ -132,10 +132,10 @@ composition:
     id: mediadive.compound:113
     label: Na-pyruvate
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:50144
+    label: Na-pyruvate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -144,10 +144,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 curation_history:
 - timestamp: '2026-03-13T06:20:16.891903Z'
   curator: culturemech-id-assigner-v1.0
@@ -171,6 +171,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:16.641281+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 8 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -14,6 +14,7 @@ composition:
   chebi_term:
     id: CHEBI:17754
     label: Glycerol
+    match_type: corpus_consensus
 - preferred_term: Malachite green
   concentration:
     value: '28.301886792452834'
@@ -75,6 +76,11 @@ curation_history:
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:38:28.236212+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

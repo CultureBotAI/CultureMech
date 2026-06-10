@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:74
     label: Trypticase
   chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
+    id: CHEBI:78018
+    label: dodecylphosphocholine
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '2.5'
@@ -73,9 +73,9 @@ composition:
     label: L-Asparagine
   chebi_term:
     id: CHEBI:17196
-    label: L-asparagine
+    label: L-Asparagine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Glucose
   concentration:
     value: '2'
@@ -97,9 +97,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Boil for 5 min, cool to 50°C while gassing with 80% N2 + 20% CO2.
   Distribute to anaerobic tubes under the same atmosphere and autoclave.
 curation_history:
@@ -137,6 +137,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:18.557980+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

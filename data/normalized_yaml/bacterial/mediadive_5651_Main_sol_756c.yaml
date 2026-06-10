@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: "Adjust pH to 8.6 with NaOH or KOH. Autoclave and leave the medium\
   \ to stand for 2 - 3\r\ndays so that pH can adjust itself to pH 7.4 - 7.6."
 curation_history:
@@ -53,6 +53,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:39.386790+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

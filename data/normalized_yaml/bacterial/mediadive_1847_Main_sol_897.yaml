@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.248016'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KCl
   concentration:
     value: '0.327381'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:353
     label: NaBr
   chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:63004
+    label: NaBr
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: H3BO3
   concentration:
     value: '0.014881'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:176
     label: SrCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:8346
-    label: potassium iodide
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KI
   concentration:
     value: '4.96032e-05'
@@ -144,10 +144,10 @@ composition:
     id: mediadive.compound:1852
     label: Sodium resazurin
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:8806
+    label: CHEBI:8806
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sulfur
   concentration:
     value: '4.96032'
@@ -156,10 +156,10 @@ composition:
     id: mediadive.compound:80
     label: Sulfur
   chebi_term:
-    id: CHEBI:17909
-    label: polysulfur
+    id: CHEBI:26833
+    label: Sulfur
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Meat extract
   concentration:
     value: '0.992063'
@@ -175,10 +175,10 @@ composition:
     id: mediadive.compound:54
     label: Na2S x 9 H2O
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '992.063492063492'
@@ -187,10 +187,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients except sulfur, meat extract and sulfide,
   adjust pH to 5.0 - 5.5 with 2 N H2SO4 and sparge medium with 80% H2 and 20% CO2
   gas mixture for 30 - 45 min to make it anoxic. Distribute medium under the same
@@ -234,6 +234,11 @@ curation_history:
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:38:18.384171+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 8 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

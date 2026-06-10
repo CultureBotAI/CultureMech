@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:113
     label: Na-pyruvate
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:50144
+    label: Na-pyruvate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: K2HPO4
   concentration:
     value: '0.15'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -121,9 +121,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.2 with K2HPO4 or KH2PO4.
 
   Add agar after adjusting the pH, then boil to dissolve the agar
@@ -152,6 +152,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:25.204026+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

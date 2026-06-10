@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NH4HCO3
   concentration:
     value: '100'
@@ -73,9 +73,9 @@ composition:
     label: NH4HCO3
   chebi_term:
     id: CHEBI:184335
-    label: Ammonium bicarbonate
+    label: CHEBI:184335
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: "Mix components and adjust pH to 8.0. Distribute the medium into\
   \ culture vessels and replace the gas phase with a N2-CO2-H2 (80:10:10, v/v) gas\
   \ mixture. Seal with butyl rubber stoppers and autoclave. After cooling, aseptically\
@@ -104,6 +104,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:32.631843+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

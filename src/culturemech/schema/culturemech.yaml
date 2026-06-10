@@ -2547,6 +2547,12 @@ enums:
         description: Produced by an automated expert-mapping pipeline (e.g. LLM-assisted).
       fuzzy:
         description: Fuzzy / approximate string match.
+      corpus_consensus:
+        description: >-
+          Borrowed from the unanimous reliable grounding of the same
+          ingredient label elsewhere in the corpus (G25 Phase 1) — used to
+          replace a low-confidence kg_fallback chebi_term without an external
+          lookup.
 
   SynonymTypeEnum:
     description: Type of synonym relationship for an IngredientSynonym.

@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: K2HPO4
   concentration:
     value: '0.6'
@@ -49,7 +49,8 @@ composition:
     label: Na-propionate
   chebi_term:
     id: CHEBI:132106
-    label: sodium propionate
+    label: Na-propionate
+    match_type: corpus_consensus
 - preferred_term: Glucose
   concentration:
     value: '0.48'
@@ -82,10 +83,10 @@ composition:
     id: mediadive.compound:1438
     label: Sodium succinate dibasic
   chebi_term:
-    id: CHEBI:17272
-    label: propionate
+    id: CHEBI:150903
+    label: Sodium succinate dibasic
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Pyruvic acid sodium salt
   concentration:
     value: '0.48'
@@ -94,10 +95,10 @@ composition:
     id: mediadive.compound:59
     label: Pyruvic acid sodium salt
   chebi_term:
-    id: CHEBI:17883
-    label: hydrogen chloride
+    id: CHEBI:113246
+    label: Pyruvic acid sodium salt
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sodium acetate
   concentration:
     value: '0.48'
@@ -109,7 +110,7 @@ composition:
     id: CHEBI:32954
     label: sodium acetate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.025'
@@ -130,10 +131,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -142,10 +143,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'The pH of the final solution is adjusted to 6.3.
 
   Note: Please autoclave the chelated iron solution before you add to the medium,
@@ -179,6 +180,11 @@ curation_history:
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:38:26.324029+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 7 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

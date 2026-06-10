@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:1852
     label: Sodium resazurin
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:8806
+    label: CHEBI:8806
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2CO3
   concentration:
     value: '0.98912'
@@ -98,9 +98,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '989.1196834817014'
@@ -109,10 +109,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients (except carbonate and fructose) and sparge
   medium with 100% N2 gas for at least 30 - 45 min to make it anoxic. Dispense medium
   under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
@@ -145,6 +145,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:19.306914+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:1062
     label: VOSO4 x n H2O
   chebi_term:
-    id: CHEBI:8806
-    label: resazurin
+    id: CHEBI:87020
+    label: VOSO4 x n H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.978474'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:12
     label: FeSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaHCO3
   concentration:
     value: '0.978474'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients except FeSO4 x 7H2O, NaHCO3, yeast extract
   and vitamins, and adjust pH to 7.0. Bring to a boil for 3 min, then cool to room
   temperature under a N2 gas stream. Dispense the medium under the same gas atmosphere
@@ -147,6 +147,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:31.025655+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

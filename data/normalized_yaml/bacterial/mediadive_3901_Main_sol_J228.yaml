@@ -39,7 +39,7 @@ composition:
     id: CHEBI:32954
     label: sodium acetate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:770
     label: L-Cysteine HCl x H2O
   chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.5'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:54
     label: Na2S x 9 H2O
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '485'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Mix ingredients, except cysteine x HCl and Na2S x 9H2O, and bring
   to a boil for 5-10 sec. Cool down under a stream of N2-CO2 (80:20). Dispense the
   medium into suitable culture vessels (e.g., 20 ml of the medium in 120 ml serum
@@ -143,6 +143,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:29.259800+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

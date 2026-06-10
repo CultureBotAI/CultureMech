@@ -25,9 +25,9 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: biotin
+    label: Biotin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Nicotinate
   concentration:
     value: '0.1'
@@ -49,9 +49,9 @@ composition:
     label: Pantothenate
   chebi_term:
     id: CHEBI:16454
-    label: pantothenate
+    label: Pantothenate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Pyridoxin
   concentration:
     value: '0.15'
@@ -73,9 +73,9 @@ composition:
     label: Thiamin
   chebi_term:
     id: CHEBI:18385
-    label: thiamine(1+)
+    label: Thiamin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Cyanocobalamine
   concentration:
     value: '0.05'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:847
     label: Cyanocobalamine
   chebi_term:
-    id: CHEBI:64734
-    label: EDTA disodium salt (anhydrous)
+    id: CHEBI:17439
+    label: CHEBI:17439
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Original volume: 100 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:18.971563Z'
@@ -124,6 +124,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:18.829466+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 5 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

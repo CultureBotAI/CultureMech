@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Bovine calf serum
   concentration:
     value: '25.0'
@@ -67,10 +67,10 @@ composition:
     id: mediadive.compound:339
     label: Urea
   chebi_term:
-    id: CHEBI:15676
-    label: allantoin
+    id: CHEBI:16199
+    label: Urea
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Urea
   concentration:
     value: '5'
@@ -79,10 +79,10 @@ composition:
     id: mediadive.compound:339
     label: Urea
   chebi_term:
-    id: CHEBI:15676
-    label: allantoin
+    id: CHEBI:16199
+    label: Urea
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '20'
@@ -103,10 +103,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: "Mix components, adjust pH to 6.0-6.2. After autoclaving and then\
   \ cooling to 50-55C, aseptically add the following solutions (filter-sterilized).\
   \ \n<i>1% Phenol red solution:</i>\nDissolve 1.0 g phenol red first in 10-20 ml\
@@ -141,6 +141,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:38.439545+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

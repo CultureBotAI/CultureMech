@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.1'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:82
     label: FeCl3 x 6 H2O
   chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.02'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:14
     label: MnSO4 x H2O
   chebi_term:
-    id: CHEBI:31604
-    label: ferric ammonium citrate
+    id: CHEBI:86364
+    label: MnSO4 x H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Agar
   concentration:
     value: '12'
@@ -98,9 +98,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2S2O3 x 5 H2O
   concentration:
     value: '10'
@@ -109,10 +109,10 @@ composition:
     id: mediadive.compound:65
     label: Na2S2O3 x 5 H2O
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -121,10 +121,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Dissolve ingredients except thiosulfate and adjust the pH to 6.6.
   Dispense in suitable culivation vials and autoclave. Add thiosulfate to the autoclaved
   medium from a sterile stock solution.
@@ -151,6 +151,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:39.615816+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

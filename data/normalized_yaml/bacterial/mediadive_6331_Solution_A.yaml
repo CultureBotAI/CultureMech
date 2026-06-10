@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:581
     label: ACES
   chebi_term:
-    id: CHEBI:39061
+    id: CHEBI:65994
     label: ACES
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '20.4082'
@@ -43,10 +43,10 @@ composition:
     id: mediadive.compound:1412
     label: Na2 alpha-ketoglutarate
   chebi_term:
-    id: CHEBI:2509
-    label: agar
+    id: CHEBI:16810
+    label: Na2 alpha-ketoglutarate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -55,10 +55,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add
   the other components and dissolve by boiling. Autoclave at 121°C for 15 minutes.
   Cool to 50 - 55°C.
@@ -88,6 +88,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:41.712424+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaNO3
   concentration:
     value: '0.11846'
@@ -75,7 +75,7 @@ composition:
     id: CHEBI:32954
     label: sodium acetate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '987.1668311944719'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 6.75 with NaOH.
 
 
@@ -115,6 +115,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:32.737046+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

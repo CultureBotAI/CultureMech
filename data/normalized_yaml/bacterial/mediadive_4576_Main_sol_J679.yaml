@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NH4Cl
   concentration:
     value: '0.248509'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KCl
   concentration:
     value: '0.497018'
@@ -87,7 +87,7 @@ composition:
     id: CHEBI:32954
     label: sodium acetate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '0.248509'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:770
     label: L-Cysteine HCl x H2O
   chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Resazurin
   concentration:
     value: '0.000994036'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaHCO3
   concentration:
     value: '29.821073558648113'
@@ -176,9 +176,9 @@ composition:
     label: Ampicillin
   chebi_term:
     id: CHEBI:28971
-    label: ampicillin
+    label: Ampicillin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Vancomycin x HCl
   concentration:
     value: '9.940357852882704'
@@ -199,10 +199,10 @@ composition:
     id: mediadive.compound:54
     label: Na2S x 9 H2O
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: 1,2-Dichloropropane
   concentration:
     value: '5.964214711729623'
@@ -211,10 +211,10 @@ composition:
     id: mediadive.compound:1859
     label: 1,2-Dichloropropane
   chebi_term:
-    id: CHEBI:82163
-    label: 1,2-dichloropropane
+    id: CHEBI:142468
+    label: 1,2-Dichloropropane
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: "Mix components and autoclave under a N2 atmosphere. After cooling,\
   \ anaerobically add the following sterile solutions (autoclaved or *filter-sterilized)\
   \ from anaerobic stocks: \nTo complete the medium, adjust pH to 7.0 with sterile\
@@ -252,6 +252,11 @@ curation_history:
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:38:32.854619+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 8 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:401
     label: Na acetate
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:32954
+    label: Na acetate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sodium Thiosulfate
   concentration:
     value: '0.5'
@@ -49,9 +49,9 @@ composition:
     label: Sodium Thiosulfate
   chebi_term:
     id: CHEBI:132112
-    label: sodium thiosulfate
+    label: Sodium Thiosulfate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: Supplement medium 28 with NaCl (10%), MgCl2 x 6 H2O (0.3%) Na-acetate
   (0.05%) and sodium thiosulfate (0.05%). Incubate at 500 to 1000 Lux light intensity.
 curation_history:
@@ -77,6 +77,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:42.962832+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

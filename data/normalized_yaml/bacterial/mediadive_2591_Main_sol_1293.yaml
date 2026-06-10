@@ -61,9 +61,9 @@ composition:
     label: NH4HCO3
   chebi_term:
     id: CHEBI:184335
-    label: Ammonium bicarbonate
+    label: CHEBI:184335
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients (except bicarbonate) and adjust pH to 8.0,
   sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
   Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
@@ -107,6 +107,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:22.846059+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

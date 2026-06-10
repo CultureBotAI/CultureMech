@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NH4Cl
   concentration:
     value: '0.271003'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaHCO3
   concentration:
     value: '2.71003'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:54
     label: Na2S x 9 H2O
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '2.71003'
@@ -132,10 +132,10 @@ composition:
     id: mediadive.compound:1000
     label: MnSO4 x n H2O
   chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
+    id: CHEBI:86360
+    label: CHEBI:86360
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaCl
   concentration:
     value: '0.903342'
@@ -156,10 +156,10 @@ composition:
     id: mediadive.compound:12
     label: FeSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: CoSO4 x 7 H2O
   concentration:
     value: '0.162602'
@@ -168,10 +168,10 @@ composition:
     id: mediadive.compound:198
     label: CoSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:33118
-    label: boric acid
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.0903342'
@@ -180,10 +180,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '0.162602'
@@ -192,10 +192,10 @@ composition:
     id: mediadive.compound:35
     label: ZnSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '0.00903342'
@@ -204,10 +204,10 @@ composition:
     id: mediadive.compound:121
     label: CuSO4 x 5 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.0162602'
@@ -216,10 +216,10 @@ composition:
     id: mediadive.compound:908
     label: AlK(SO4)2 x 12 H2O
   chebi_term:
-    id: CHEBI:39033
-    label: PIPES
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: H3BO3
   concentration:
     value: '0.00903342'
@@ -252,10 +252,10 @@ composition:
     id: mediadive.compound:739
     label: (NH4)2Ni(SO4)2 x 6 H2O
   chebi_term:
-    id: CHEBI:33118
-    label: boric acid
+    id: CHEBI:86149
+    label: (NH4)2Ni(SO4)2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2SeO4
   concentration:
     value: '0.00903342'
@@ -276,10 +276,10 @@ composition:
     id: mediadive.compound:249
     label: Na2WO4 x 2 H2O
   chebi_term:
-    id: CHEBI:48843
-    label: disodium selenite
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '90.33423667570008'
@@ -288,10 +288,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: "Mix components thoroughly, boil for a few seconds and cool down\
   \ under a stream of a N2-CO2(4:1, v/v) gas mixture. After cooling, add the following\
   \ components and adjust pH to 7.0: \nDispense the medium into culture vessels anaerobically\
@@ -321,6 +321,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:35.389666+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 13 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

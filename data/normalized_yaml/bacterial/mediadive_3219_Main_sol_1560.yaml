@@ -49,9 +49,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Double distilled water
   concentration:
     value: '730'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:1021
     label: Double distilled water
   chebi_term:
-    id: CHEBI:18050
-    label: L-glutamine
+    id: CHEBI:15377
+    label: Double distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: N-Acetylglucosamine
   concentration:
     value: '0.8'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:462
     label: N-Acetylglucosamine
   chebi_term:
-    id: CHEBI:506227
-    label: N-acetylglucosamine
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Glucose
   concentration:
     value: '0.25'
@@ -114,6 +114,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:26.041024+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

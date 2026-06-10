@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaCl
   concentration:
     value: '150'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:54
     label: Na2S x 9 H2O
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Glucose
   concentration:
     value: '5'
@@ -157,10 +157,10 @@ composition:
     id: mediadive.compound:400
     label: Cellulose
   chebi_term:
-    id: CHEBI:62968
-    label: cellulose
+    id: CHEBI:18246
+    label: Cellulose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Cellobiose
   concentration:
     value: '5'
@@ -171,9 +171,9 @@ composition:
     label: Cellobiose
   chebi_term:
     id: CHEBI:17057
-    label: cellobiose
+    label: Cellobiose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '990'
@@ -182,10 +182,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Prepare the medium without NaHCO3, Na2S, cellobiose or vitamins,
   boil and cool under a stream of nitrogen. Add the NaHCO3 and autoclave the medium.
   Na2S, cellobiose and vitamins are added from sterile, anaerobic stock solutions
@@ -216,6 +216,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:39.351874+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 5 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

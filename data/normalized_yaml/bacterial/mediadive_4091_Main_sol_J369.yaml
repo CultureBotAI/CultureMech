@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NH4Cl
   concentration:
     value: '0.24728'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:40
     label: NiCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2SeO3 x 5 H2O
   concentration:
     value: '0.00049456'
@@ -132,10 +132,10 @@ composition:
     id: mediadive.compound:1265
     label: Fe2(SO4)3 x n H2O
   chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
+    id: CHEBI:53438
+    label: Fe2(SO4)3 x n H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: H2WO4
   concentration:
     value: '0.0049456'
@@ -168,10 +168,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Mix ingredients except Fe2(SO4)3 x <I>x</I>H2O, Trace vitamins
   and NaHCO3, adjust pH to 6.8 and autoclave. Separately autoclave 0.5% Fe2(SO4)3
   x <I>x</I>H2O solution (in 0.1 N H2SO4), filter-sterilize Trace vitamins and 5%
@@ -206,6 +206,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:30.344448+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

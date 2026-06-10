@@ -37,9 +37,9 @@ composition:
     label: Cellobiose
   chebi_term:
     id: CHEBI:17057
-    label: cellobiose
+    label: Cellobiose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: "Autoclave at 121 °C for 20 min.\nBefore inoculation add from sterile\
   \ stock solutions: \nAdjust pH to 7.5 with 1 M HCl or 1 M NaHCO3"
 curation_history:
@@ -65,6 +65,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:26.121575+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

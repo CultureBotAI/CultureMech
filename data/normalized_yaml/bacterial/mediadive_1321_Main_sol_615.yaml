@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2SO4
   concentration:
     value: '4.48207'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.059761'
@@ -74,6 +74,7 @@ composition:
   chebi_term:
     id: CHEBI:17754
     label: Glycerol
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '0.996016'
@@ -94,10 +95,10 @@ composition:
     id: mediadive.compound:1249
     label: Trisodium citrate x 2 H2O
   chebi_term:
-    id: CHEBI:59640
-    label: N-acetylglucosamine
+    id: CHEBI:53258
+    label: sodium citrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000498008'
@@ -106,10 +107,10 @@ composition:
     id: mediadive.compound:1852
     label: Sodium resazurin
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:8806
+    label: CHEBI:8806
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.00398406'
@@ -118,10 +119,10 @@ composition:
     id: mediadive.compound:12
     label: FeSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na-thioglycolate
   concentration:
     value: '0.0996016'
@@ -142,10 +143,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients, adjust pH to 7.5 and sparge medium with
   100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
   into anoxic Hungate-type tubes or serum vials and autoclave.
@@ -181,6 +182,11 @@ curation_history:
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:38:15.407345+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 7 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

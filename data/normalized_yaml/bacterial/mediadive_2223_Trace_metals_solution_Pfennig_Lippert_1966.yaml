@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:271
     label: EDTA
   chebi_term:
-    id: CHEBI:42191
-    label: EDTA(4-)
+    id: CHEBI:64755
+    label: EDTA
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '2'
@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:12
     label: FeSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: ZnSO4
   concentration:
     value: '0.1'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:980
     label: MnCl2
   chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
+    id: CHEBI:63041
+    label: CHEBI:63041
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: H3BO3
   concentration:
     value: '0.3'
@@ -73,9 +73,9 @@ composition:
     label: CoCl2 x 6 H2O
   chebi_term:
     id: CHEBI:35696
-    label: cobalt dichloride
+    label: CoCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: CuCl2
   concentration:
     value: '0.01'
@@ -97,7 +97,8 @@ composition:
     label: NiCl2 x 2 H2O
   chebi_term:
     id: CHEBI:34887
-    label: nickel dichloride
+    label: NiCl2 x 2 H2O
+    match_type: corpus_consensus
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.02'
@@ -118,10 +119,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: pH final 3-4 by HCl
 curation_history:
 - timestamp: '2026-03-13T06:20:20.796363Z'
@@ -152,6 +153,11 @@ curation_history:
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:38:20.687890+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

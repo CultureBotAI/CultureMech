@@ -13,9 +13,9 @@ composition:
     label: Methanol
   chebi_term:
     id: CHEBI:17790
-    label: methanol
+    label: Methanol
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: (NH4)2SO4
   concentration:
     value: '2.9703'
@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2HPO4
   concentration:
     value: '2.9703'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:863
     label: Ferric citrate
   chebi_term:
-    id: CHEBI:31605
-    label: ferric citrate
+    id: CHEBI:144421
+    label: Ferric citrate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.029703'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '0.00495049'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:36
     label: MnCl2 x 4 H2O
   chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '0.00495049'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:35
     label: ZnSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '0.00049505'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:121
     label: CuSO4 x 5 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Thiamine HCl
   concentration:
     value: '0.00039604'
@@ -144,10 +144,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Thiamine x HCl can be replaced by 0.2 g of yeast extract.
 
   Adjust pH to 7.1.
@@ -177,6 +177,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:28.187454+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 8 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

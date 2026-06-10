@@ -13,9 +13,9 @@ composition:
     label: NH4NO3
   chebi_term:
     id: CHEBI:63038
-    label: ammonium nitrate
+    label: CHEBI:63038
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KH2PO4
   concentration:
     value: '0.00996016'
@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Fe(III)-EDTA
   concentration:
     value: '0.00249004'
@@ -37,9 +37,9 @@ composition:
     label: Fe(III)-EDTA
   chebi_term:
     id: CHEBI:30729
-    label: ethylenediaminetetraacetatoferrate
+    label: Fe(III)-EDTA
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: PIPES
   concentration:
     value: '14.99'
@@ -51,7 +51,7 @@ composition:
     id: CHEBI:39033
     label: PIPES
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Mix components, adjust pH to 6.5 with NaOH, then distribute the
   medium into culture vessels (e.g., 50 ml per 120 ml serum bottles), seal with butyl
   rubber stoppers and autoclave at 110C for 5 min. Replace the gas phase with N2-air-H2S-CO2
@@ -82,6 +82,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:36.768330+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

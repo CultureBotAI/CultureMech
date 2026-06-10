@@ -13,9 +13,9 @@ composition:
     label: NH4HCO3
   chebi_term:
     id: CHEBI:184335
-    label: Ammonium bicarbonate
+    label: CHEBI:184335
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaHCO3
   concentration:
     value: '59.2063'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sodium acetate
   concentration:
     value: '158.73015873015873'
@@ -63,7 +63,7 @@ composition:
     id: CHEBI:32954
     label: sodium acetate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: "Prepare all solutions and autoclave under a N2 atmosphere. After\
   \ cooling, combine the solutions and replace the gas phase with a N2-CO2 (4:1, v/v)\
   \ gas mixture. Then, aseptically and anaerobically add the following autoclaved\
@@ -100,6 +100,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:32.132689+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:
