@@ -24,8 +24,8 @@ composition:
     id: mediadive.compound:1238
     label: B12
   chebi_term:
-    id: CHEBI:176843
-    label: cyanocobalamin
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
     match_type: manual_curated
 - preferred_term: D-(+)-biotin
   concentration:

@@ -119,7 +119,7 @@ composition:
     label: Na2SeO3 x 5 H2O
   chebi_term:
     id: CHEBI:131361
-    label: sodium selenite
+    label: disodium selenite pentahydrate
     match_type: corpus_consensus
 - preferred_term: Fe2(SO4)3 x n H2O
   concentration:

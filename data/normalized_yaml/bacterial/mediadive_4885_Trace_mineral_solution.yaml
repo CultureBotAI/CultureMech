@@ -25,7 +25,7 @@ composition:
     label: Na2SeO3 x 5 H2O
   chebi_term:
     id: CHEBI:131361
-    label: sodium selenite
+    label: disodium selenite pentahydrate
     match_type: corpus_consensus
 curation_history:
 - timestamp: '2026-03-13T06:20:33.676337Z'
