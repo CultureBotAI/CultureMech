@@ -32,7 +32,7 @@ composition:
     label: Tris-HCl buffer
   chebi_term:
     id: CHEBI:9754
-    label: CHEBI:9754
+    label: tris
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O

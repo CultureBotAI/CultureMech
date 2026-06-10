@@ -97,7 +97,7 @@ composition:
     label: Sodium resazurin
   chebi_term:
     id: CHEBI:8806
-    label: CHEBI:8806
+    label: Resazurin
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2CO3
@@ -121,7 +121,7 @@ composition:
     label: Trimethylamine-HCl
   chebi_term:
     id: CHEBI:64700
-    label: CHEBI:64700
+    label: trimethylamine hydrochloride
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O

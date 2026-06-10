@@ -13,7 +13,7 @@ composition:
     label: Rice starch
   chebi_term:
     id: CHEBI:28017
-    label: CHEBI:28017
+    label: starch
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Deionized water

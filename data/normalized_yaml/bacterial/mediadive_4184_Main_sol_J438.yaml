@@ -97,7 +97,7 @@ composition:
     label: CAPSO
   chebi_term:
     id: CHEBI:183882
-    label: CHEBI:183882
+    label: 3-(cyclohexylamino)-2-hydroxy-1-propanesulfonic acid
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2SO4

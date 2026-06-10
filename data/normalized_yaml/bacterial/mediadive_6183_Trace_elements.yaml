@@ -133,7 +133,7 @@ composition:
     label: K2CrO4
   chebi_term:
     id: CHEBI:75249
-    label: CHEBI:75249
+    label: potassium chromate
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "There are 11 chemicals. Prepare Primary stock solutions first.\r\

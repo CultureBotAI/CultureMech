@@ -13,7 +13,7 @@ composition:
     label: Na-L-lactate
   chebi_term:
     id: CHEBI:232798
-    label: CHEBI:232798
+    label: sodium L-lactate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water

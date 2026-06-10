@@ -44,7 +44,7 @@ composition:
     label: Tris-HCl buffer
   chebi_term:
     id: CHEBI:9754
-    label: CHEBI:9754
+    label: tris
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Sea water
@@ -63,7 +63,7 @@ composition:
     label: Sodium resazurin
   chebi_term:
     id: CHEBI:8806
-    label: CHEBI:8806
+    label: Resazurin
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: L-Cysteine HCl x H2O

@@ -152,7 +152,7 @@ composition:
     label: Trimethylamine-HCl
   chebi_term:
     id: CHEBI:64700
-    label: CHEBI:64700
+    label: trimethylamine hydrochloride
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na2S x 9 H2O

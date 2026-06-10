@@ -49,7 +49,7 @@ composition:
     label: CAPS buffer
   chebi_term:
     id: CHEBI:191088
-    label: CHEBI:191088
+    label: Cyclohexylaminopropanesulfonic acid
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Agar

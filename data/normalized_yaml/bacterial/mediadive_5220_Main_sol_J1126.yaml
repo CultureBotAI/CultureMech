@@ -109,7 +109,7 @@ composition:
     label: Na2B4O7 x 10 H2O
   chebi_term:
     id: CHEBI:131366
-    label: CHEBI:131366
+    label: disodium tetraborate decahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: SrCl2 x 6 H2O

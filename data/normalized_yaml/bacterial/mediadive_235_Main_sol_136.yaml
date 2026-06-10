@@ -37,7 +37,7 @@ composition:
     label: Na-(DL)-lactate
   chebi_term:
     id: CHEBI:75228
-    label: CHEBI:75228
+    label: sodium lactate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na-thioglycolate

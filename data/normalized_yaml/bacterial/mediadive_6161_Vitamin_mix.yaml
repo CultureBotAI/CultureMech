@@ -13,7 +13,7 @@ composition:
     label: Cyanocobalamine
   chebi_term:
     id: CHEBI:17439
-    label: CHEBI:17439
+    label: cyanocob(III)alamin
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Biotin

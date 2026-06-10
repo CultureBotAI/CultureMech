@@ -85,7 +85,7 @@ composition:
     label: (NH4)6Mo7O24
   chebi_term:
     id: CHEBI:91249
-    label: CHEBI:91249
+    label: ammonium molybdate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: FeSO4 x 7 H2O
