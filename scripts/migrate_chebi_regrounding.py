@@ -72,6 +72,15 @@ REMAP_RULES = [
     # matches). Consistent with the stereo-neutral sodium-lactate rule above.
     ("CHEBI:32149",  re.compile(r"(?=.*\bdl\b)(?=.*malate)", re.I), None,        "CHEBI:91260"),   # disodium malate (racemic DL)
     ("CHEBI:32149",  re.compile(r"malate", re.I), None,                          "CHEBI:91261"),   # sodium malate
+    # Stereo-UNSPECIFIED sodium malate -> stereo-neutral disodium malate (NOT the
+    # (S)-specific CHEBI:91261). "Sodium malate" / "Na malate" / "Na-malate" name no
+    # stereochemistry, so the neutral parent is correct, consistent with the DL-malate
+    # rule above and the stereo-neutral sodium-lactate rule. The mustnot pattern keeps
+    # L-/D-/DL-malate off this rule (L = (S), correct on 91261; DL already routed to
+    # 91260). Fires from the current 91261 grounding, and is also reachable in a
+    # from-scratch run after the generic 32149->91261 rule rewrites the id within the
+    # same pass.
+    ("CHEBI:91261",  re.compile(r"malate", re.I), re.compile(r"(?:dl|[dl])-?\s*malate", re.I), "CHEBI:91260"),  # disodium malate (stereo-unspecified)
     ("CHEBI:15978",  re.compile(r"agar|middlebrook|mueller|hinton|\bisp\b|whole\s*egg|broth", re.I), None, None),  # complex media de-grounded (not glycerol-3-phosphate)
 ]
 
