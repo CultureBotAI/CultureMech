@@ -106,14 +106,14 @@ ingredients:
     label: Sodium succinate
 - preferred_term: DL-Sodium malate
   term:
-    id: CHEBI:91261
-    label: DL-Sodium malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '0.049505'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:91261
-    label: DL-Sodium malate
+    id: CHEBI:91260
+    label: disodium malate
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144

@@ -60,8 +60,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
-    id: CHEBI:91261
-    label: disodium (S)-malate
+    id: CHEBI:91260
+    label: disodium malate
 - preferred_term: 20 mM Potassium phosphate buffer (pH 7.8)
   concentration:
     value: '500'

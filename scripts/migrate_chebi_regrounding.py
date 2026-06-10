@@ -66,6 +66,11 @@ REMAP_RULES = [
     ("CHEBI:32149",  re.compile(r"\blactate\b", re.I), None,                     "CHEBI:75228"),   # sodium lactate (was sodium sulfate)
     ("CHEBI:32149",  re.compile(r"propionate", re.I), None,                      "CHEBI:132106"),  # sodium propionate
     ("CHEBI:32149",  re.compile(r"nicl2|nickel", re.I), None,                    "CHEBI:34887"),   # nickel(II) chloride
+    # Racemic DL-malate -> stereo-neutral disodium malate (NOT the (S)-specific
+    # CHEBI:91261). Must precede the generic malate rule so the DL match fires
+    # first (after it remaps the id off CHEBI:32149, the generic rule no longer
+    # matches). Consistent with the stereo-neutral sodium-lactate rule above.
+    ("CHEBI:32149",  re.compile(r"(?=.*\bdl\b)(?=.*malate)", re.I), None,        "CHEBI:91260"),   # disodium malate (racemic DL)
     ("CHEBI:32149",  re.compile(r"malate", re.I), None,                          "CHEBI:91261"),   # sodium malate
     ("CHEBI:15978",  re.compile(r"agar|middlebrook|mueller|hinton|\bisp\b|whole\s*egg|broth", re.I), None, None),  # complex media de-grounded (not glycerol-3-phosphate)
 ]
