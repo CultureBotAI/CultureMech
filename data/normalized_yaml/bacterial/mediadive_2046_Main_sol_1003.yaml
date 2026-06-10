@@ -37,7 +37,7 @@ composition:
     label: NaS2O3
   chebi_term:
     id: CHEBI:132112
-    label: CHEBI:132112
+    label: sodium thiosulfate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O

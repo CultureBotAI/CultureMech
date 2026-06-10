@@ -13,7 +13,7 @@ composition:
     label: Calcium D-(+)-pantothenate
   chebi_term:
     id: CHEBI:31345
-    label: CHEBI:31345
+    label: Calcium pantothenate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Choline chloride

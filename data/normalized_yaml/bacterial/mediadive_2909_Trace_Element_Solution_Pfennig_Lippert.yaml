@@ -49,7 +49,7 @@ composition:
     label: MnCl2
   chebi_term:
     id: CHEBI:63041
-    label: CHEBI:63041
+    label: manganese(II) chloride
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: H3BO3

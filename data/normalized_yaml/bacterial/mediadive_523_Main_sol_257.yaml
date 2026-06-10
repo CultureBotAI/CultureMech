@@ -37,7 +37,7 @@ composition:
     label: Tris-HCl buffer
   chebi_term:
     id: CHEBI:9754
-    label: CHEBI:9754
+    label: tris
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Preparation of double layered agar plates:<p>\r\n<b>Bottom layer:</b>\

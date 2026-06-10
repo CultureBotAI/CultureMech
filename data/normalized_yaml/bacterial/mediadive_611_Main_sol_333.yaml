@@ -61,7 +61,7 @@ composition:
     label: K2S4O6
   chebi_term:
     id: CHEBI:86466
-    label: CHEBI:86466
+    label: potassium tetrathionate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Bromocresol purple

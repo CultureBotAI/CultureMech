@@ -13,7 +13,7 @@ composition:
     label: NH4NO3
   chebi_term:
     id: CHEBI:63038
-    label: CHEBI:63038
+    label: ammonium nitrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Urea

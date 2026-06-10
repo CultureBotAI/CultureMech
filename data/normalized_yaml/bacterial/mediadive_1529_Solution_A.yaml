@@ -109,7 +109,7 @@ composition:
     label: MOPS buffer
   chebi_term:
     id: CHEBI:44115
-    label: CHEBI:44115
+    label: 3-(N-morpholino)propanesulfonic acid
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water

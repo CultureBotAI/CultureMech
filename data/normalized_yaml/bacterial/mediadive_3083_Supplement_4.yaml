@@ -13,7 +13,7 @@ composition:
     label: Cholesterol
   chebi_term:
     id: CHEBI:140435
-    label: CHEBI:140435
+    label: cholesterol-2,2,3,4,4,6-d6
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Ethanol

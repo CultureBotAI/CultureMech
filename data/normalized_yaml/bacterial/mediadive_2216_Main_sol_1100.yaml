@@ -109,7 +109,7 @@ composition:
     label: Sodium resazurin
   chebi_term:
     id: CHEBI:8806
-    label: CHEBI:8806
+    label: Resazurin
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaHCO3
@@ -133,7 +133,7 @@ composition:
     label: Na-L-lactate
   chebi_term:
     id: CHEBI:232798
-    label: CHEBI:232798
+    label: sodium L-lactate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
