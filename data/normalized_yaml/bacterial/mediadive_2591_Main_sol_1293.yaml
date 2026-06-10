@@ -50,7 +50,7 @@ composition:
     label: NH4HCO3
   chebi_term:
     id: CHEBI:184335
-    label: CHEBI:184335
+    label: Ammonium bicarbonate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water

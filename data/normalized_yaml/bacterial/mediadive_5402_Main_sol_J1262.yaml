@@ -72,7 +72,7 @@ composition:
     label: Disodium succinate x 6 H2O
   chebi_term:
     id: CHEBI:63686
-    label: CHEBI:63686
+    label: sodium succinate hexahydrate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Sodium acetate

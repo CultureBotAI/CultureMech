@@ -68,7 +68,7 @@ composition:
     label: Na2B4O7
   chebi_term:
     id: CHEBI:38892
-    label: CHEBI:38892
+    label: disodium tetraborate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water

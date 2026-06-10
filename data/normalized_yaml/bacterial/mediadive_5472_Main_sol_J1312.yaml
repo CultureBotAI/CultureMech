@@ -103,7 +103,7 @@ composition:
     label: Taurine
   chebi_term:
     id: CHEBI:15891
-    label: CHEBI:15891
+    label: taurine
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Sodium pyruvate

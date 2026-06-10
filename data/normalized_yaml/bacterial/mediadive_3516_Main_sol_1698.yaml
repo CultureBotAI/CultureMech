@@ -94,7 +94,7 @@ composition:
     label: MES acids
   chebi_term:
     id: CHEBI:39005
-    label: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Distilled water
