@@ -1,7 +1,18 @@
 # Targets for scripts/validate_id_label_correspondence.py (Engine B).
-# See docs/ID_LABEL_CORRESPONDENCE.md. Prefixes not in `adapters`
-# (mediadive.compound, komodo.medium, DSMZ, TOGO, ATCC, MediaIngredientMech,
-# CultureMech, GTDB, …) are reported SKIPPED_NO_ADAPTER.
+#
+# Declares which surfaces carry ontology (id, label) pairs and how strictly
+# the label must correspond to the id's ontology label.
+#
+# A CURIE prefix is handled three ways:
+#   * in `adapters`          → looked up against that OAK ontology.
+#   * in `ignored_prefixes`  → legitimate non-ontology id (cas:, MIM:, …);
+#                              SKIPPED_NO_ADAPTER, never looked up.
+#   * neither                → UNKNOWN_PREFIX (ERROR) — a typo (CHBEI:) or an
+#                              unexpected new prefix that must be triaged (added
+#                              to `adapters` or `ignored_prefixes`) rather than
+#                              silently passing the gate. Ids with NO prefix at
+#                              all (UNMAPPED_0001) are a benign skip.
+# See docs/ID_LABEL_CORRESPONDENCE.md.
 
 adapters:
   CHEBI: sqlite:obo:chebi
@@ -10,6 +21,29 @@ adapters:
   UBERON: sqlite:obo:uberon
   NCIT: sqlite:obo:ncit
   FOODON: sqlite:obo:foodon
+
+# Legitimate NON-ontology id prefixes — skipped without a lookup, but
+# acknowledged so a typoed ontology prefix (CHBEI:, CHEB:) is NOT mistaken for
+# one of these and instead fails as UNKNOWN_PREFIX. Keep in sync with the
+# prefixes actually emitted into (id, label) target fields. If `validate-products`
+# fires UNKNOWN_PREFIX on a real but uncovered prefix, triage it here.
+ignored_prefixes:
+  - CultureMech            # culture-media record ids (this repo)
+  - CommunityMech          # community record ids (sibling Mech)
+  - MediaIngredientMech    # ingredient record ids (sibling Mech, long form)
+  - MIM                    # MediaIngredientMech record ids (short form)
+  - cas                    # CAS registry numbers
+  - registry               # generic registry fallback
+  - kgmicrobe.compound     # KG-Microbe compound nodes
+  - kgmicrobe.ingredient   # KG-Microbe ingredient nodes
+  - mediadive.ingredient   # MediaDive ingredient nodes
+  - mediadive.solution     # MediaDive solution nodes
+  - mediadive.compound     # MediaDive compound nodes
+  - komodo.medium          # KOMODO media identifiers
+  - DSMZ                   # DSMZ culture-collection ids
+  - ATCC                   # ATCC culture-collection ids
+  - TOGO                   # TogoMedia ids
+  - GTDB                   # GTDB taxa (not in NCBITaxon namespace)
 
 synonym_scope: exact_related
 

@@ -33,7 +33,14 @@ repos already use, and classifies the pair:
                         tabular target that has data rows — without this the
                         pair silently drops and enforce false-greens on drift
     ADAPTER_ERROR       a CONFIGURED adapter failed to load                 (ERROR)
-    SKIPPED_NO_ADAPTER  prefix has no configured OAK adapter (cas:, MIM:, …)
+    UNKNOWN_PREFIX      CURIE prefix is neither a configured ontology       (ERROR)
+                        adapter NOR an explicitly ``ignored_prefixes`` entry —
+                        i.e. a typo (``CHBEI:``) or an unexpected new prefix.
+                        Without this such ids silently fell through as
+                        SKIPPED_NO_ADAPTER and enforce false-greened on them.
+    SKIPPED_NO_ADAPTER  prefix is an explicitly ignored non-ontology prefix
+                        (``cas:``, ``MIM:``, ``kgmicrobe.compound:`` …) or the
+                        id has no CURIE prefix at all (e.g. ``UNMAPPED_0001``)
     SKIPPED_EMPTY_ADAPTER  configured adapter loaded but holds no terms (e.g. a
                         0-byte sqlite stub); db needs populating, data isn't wrong
 
@@ -109,6 +116,7 @@ _ERROR_VERDICTS = {
     "MISSING_COLUMN",
     "MISSING_GLOB",
     "ADAPTER_ERROR",
+    "UNKNOWN_PREFIX",
 }
 
 # Verdicts that are accepted (do NOT get recorded as findings and never fail
@@ -215,20 +223,57 @@ class AdapterPool:
     def _is_empty(adapter: Any, key: str) -> bool:
         """True if the adapter loaded but holds no terms (e.g. a 0-byte sqlite).
 
-        Peeks a single entity (O(1)) rather than counting. Two empty shapes:
-        a valid-but-termless db (``entities()`` yields nothing), and an
-        uninitialized 0-byte sqlite stub whose tables don't exist yet
-        (``entities()`` raises ``no such table`` — OAK's ``sqlite:obo:micro``
-        points at exactly such a stub). Any *other* probe error is treated as
-        non-empty so a genuinely broken adapter still surfaces per-id verdicts
-        rather than being masked as an empty skip.
+        Peeks a single entity (O(1)) rather than counting.
+
+        When ``entities()`` yields nothing the db is a clean empty (valid schema,
+        no rows) and is treated as an empty stub. When ``entities()`` *raises*
+        (e.g. ``no such table: node``) we do NOT trust the error text alone —
+        a partially-migrated or corrupt LIVE ontology (real tables, one missing)
+        raises the same way, and masking it as a benign skip would let real drift
+        pass an enforce run (the exact false-pass this guards against). We only
+        return True when ``_is_uninitialized_stub`` POSITIVELY confirms the
+        backing sqlite is an uninitialized stub (0 bytes / 0 tables); otherwise
+        return False so the prefix's rows surface as ID_NOT_FOUND/error verdicts.
         """
         try:
             return next(iter(adapter.entities()), None) is None
         except Exception as exc:  # pragma: no cover - environment dependent
-            if "no such table" in str(exc).lower():  # uninitialized/0-byte stub
+            if AdapterPool._is_uninitialized_stub(adapter):
                 return True
             print(f"  ! emptiness probe failed for {key}: {exc}", file=sys.stderr)
+            return False
+
+    @staticmethod
+    def _is_uninitialized_stub(adapter: Any) -> bool:
+        """Positively confirm the adapter's sqlite backing store is an
+        uninitialized stub — a 0-byte file or a sqlite with NO tables at all.
+
+        Anything that has tables is a real (possibly broken/partial) db, not a
+        benign stub, and must not be masked. Returns False on any uncertainty
+        (path unresolvable, non-sqlite backend, probe error) so the caller never
+        silently downgrades a real defect to a skip.
+        """
+        url = getattr(getattr(adapter, "engine", None), "url", None)
+        db_path = getattr(url, "database", None)
+        if not db_path:
+            return False  # not a resolvable sqlite file → don't risk masking
+        try:
+            p = Path(db_path)
+            if not p.exists():
+                return False
+            if p.stat().st_size == 0:
+                return True  # 0-byte stub (OAK's sqlite:obo:micro shape)
+            import sqlite3
+
+            con = sqlite3.connect(f"file:{p}?mode=ro", uri=True)
+            try:
+                n = con.execute(
+                    "SELECT count(*) FROM sqlite_master WHERE type='table'"
+                ).fetchone()[0]
+            finally:
+                con.close()
+            return n == 0
+        except Exception:  # pragma: no cover - environment dependent
             return False
 
 
@@ -461,6 +506,7 @@ def load_config(config_path: Path) -> dict[str, Any]:
     if not isinstance(cfg, dict):
         raise SystemExit(f"Config is not a mapping: {config_path}")
     cfg.setdefault("adapters", {})
+    cfg.setdefault("ignored_prefixes", [])
     cfg.setdefault("synonym_scope", "exact_related")
     cfg.setdefault("targets", [])
     return cfg
@@ -470,6 +516,10 @@ def run(config_path: Path, report_path: Path | None) -> int:
     cfg = load_config(config_path)
     pool = AdapterPool(cfg["adapters"])
     default_scope = cfg["synonym_scope"]
+    # Explicitly-ignored non-ontology prefixes (cas:, MIM:, kgmicrobe.compound: …).
+    # A prefixed id whose prefix is neither a configured adapter NOR listed here
+    # is a typo / unexpected prefix → UNKNOWN_PREFIX (ERROR), not a silent skip.
+    ignored_prefixes_cf = {str(p).casefold() for p in cfg["ignored_prefixes"]}
 
     findings: list[dict[str, Any]] = []
     counts: dict[str, int] = {}
@@ -520,8 +570,17 @@ def run(config_path: Path, report_path: Path | None) -> int:
                     prefix = prefix_of(curie)
                     adapter = pool.get(prefix)
                     if adapter is None:
+                        # No configured adapter for this prefix. Distinguish an
+                        # explicitly-ignored non-ontology prefix (benign skip)
+                        # from an unexpected/typoed ontology prefix (ERROR). An
+                        # id with no CURIE prefix at all (UNMAPPED_0001) stays a
+                        # benign skip — it isn't claiming to be an ontology term.
+                        if prefix is not None and prefix.casefold() not in ignored_prefixes_cf:
+                            verdict = "UNKNOWN_PREFIX"
+                        else:
+                            verdict = "SKIPPED_NO_ADAPTER"
                         rec = {"id": curie, "label": label, "canonical": "",
-                               "verdict": "SKIPPED_NO_ADAPTER"}
+                               "verdict": verdict}
                     elif adapter is LOAD_FAILED:
                         rec = {"id": curie, "label": label, "canonical": "",
                                "verdict": "ADAPTER_ERROR"}
@@ -563,6 +622,7 @@ def run(config_path: Path, report_path: Path | None) -> int:
         "MISSING_COLUMN",
         "MISSING_GLOB",
         "ADAPTER_ERROR",
+        "UNKNOWN_PREFIX",
         "SKIPPED_NO_ADAPTER",
         "SKIPPED_EMPTY_ADAPTER",
     ):
