@@ -28,7 +28,10 @@ adapters:
 # prefixes actually emitted into (id, label) target fields. If `validate-products`
 # fires UNKNOWN_PREFIX on a real but uncovered prefix, triage it here.
 ignored_prefixes:
-  - CultureMech            # culture-media record ids (this repo)
+  - culturemech            # culture-media record ids (this repo) — the form
+                           #   carried in (id,label) ingredient pairs is LOWERCASE
+  - CultureMech            # CamelCase record ids (e.g. CultureMech:015440); not
+                           #   currently in any (id,label) pair, kept for safety
   - CommunityMech          # community record ids (sibling Mech)
   - MediaIngredientMech    # ingredient record ids (sibling Mech, long form)
   - MIM                    # MediaIngredientMech record ids (short form)
@@ -39,6 +42,8 @@ ignored_prefixes:
   - mediadive.ingredient   # MediaDive ingredient nodes
   - mediadive.solution     # MediaDive solution nodes
   - mediadive.compound     # MediaDive compound nodes
+  - mediadive.medium       # MediaDive medium nodes
+  - MEDIADB                # MediaDive medium DB ids (MEDIADB:NNN)
   - komodo.medium          # KOMODO media identifiers
   - DSMZ                   # DSMZ culture-collection ids
   - ATCC                   # ATCC culture-collection ids
