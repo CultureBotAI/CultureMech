@@ -21,7 +21,7 @@
   <h1>methanohalophilus_portucalensis_medium</h1>
   <div class="meta">
     <span class="curie">CultureMech:000262</span>
-      <span class="badge">ARCHAEA</span>
+      <span class="badge">archaea</span>
       <span class="badge">COMPLEX</span>
       <span class="badge">LIQUID</span>
   </div>
@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>7.3-7.4</dd>
+    <dd>{&#39;min&#39;: 7.3, &#39;max&#39;: 7.4}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium348.pdf</dd>
 </dl>
@@ -545,12 +545,24 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;METHANOHALOPHILUS PORTUCALENSIS MEDIUM&#34; to &#34;methanohalophilus_portucalensis_medium&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-16T09:02:57.595576+00:00</td>
+  <td>migrate_legacy_fields.py</td>
+  <td>MIGRATED_LEGACY_FIELDS</td>
+  <td class="small prewrap">category-&gt;lowercase=1</td>
+</tr>
+<tr>
+  <td class="muted small">2026-05-20T06:00:46.281932+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;7.3-7.4&#39; -&gt; {&#39;min&#39;: 7.3, &#39;max&#39;: 7.4}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:03:47+00:00 from
+    Generated 2026-06-12T07:00:59+00:00 from
     <code>data/normalized_yaml/archaea/methanohalophilus_portucalensis_medium.yaml</code>
   </small>
 </footer>

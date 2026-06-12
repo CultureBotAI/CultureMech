@@ -21,7 +21,7 @@
   <h1>se1</h1>
   <div class="meta">
     <span class="curie">CultureMech:000128</span>
-      <span class="badge">ALGAE</span>
+      <span class="badge">algae</span>
       <span class="badge">COMPLEX</span>
       <span class="badge">LIQUID</span>
   </div>
@@ -82,13 +82,13 @@ flowchart LR
 </thead>
 <tbody>
 <tr>
-  <td class="muted small"></td>
+  <td class="muted small">2026-01-28T00:00:00+00:00</td>
   <td>ccap-import</td>
   <td>Imported from CCAP Culture Collection</td>
   <td class="small prewrap">Source ID: SE1_Marine, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_SE1_Marine.pdf</td>
 </tr>
 <tr>
-  <td class="muted small"></td>
+  <td class="muted small">2026-02-03T00:00:00+00:00</td>
   <td>schema-defaulter-v1.0</td>
   <td>Applied schema defaults and normalizations</td>
   <td class="small prewrap">Added placeholder ingredients for missing composition</td>
@@ -111,12 +111,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;SE1&#34; to &#34;se1&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-16T09:02:56.967495+00:00</td>
+  <td>migrate_legacy_fields.py</td>
+  <td>MIGRATED_LEGACY_FIELDS</td>
+  <td class="small prewrap">curation_history.date-&gt;timestamp=2; references.reference_id-&gt;reference=2; category-&gt;lowercase=1</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:03:47+00:00 from
+    Generated 2026-06-12T07:00:58+00:00 from
     <code>data/normalized_yaml/algae/se1.yaml</code>
   </small>
 </footer>

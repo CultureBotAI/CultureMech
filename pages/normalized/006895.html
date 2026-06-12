@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>7.0-7.2</dd>
+    <dd>{&#39;min&#39;: 7.0, &#39;max&#39;: 7.2}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: KOMODO ModelSEED | ID: 952 | DSMZ Medium: 952 (mediadive.medium:952) | Aerobic: No</dd>
 </dl>
@@ -165,12 +165,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;1/10 NUTRIENT AGAR NO.2&#34; to &#34;1_10_nutrient_agar_no_2&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:00:55.095938+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;7.0-7.2&#39; -&gt; {&#39;min&#39;: 7.0, &#39;max&#39;: 7.2}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:03:56+00:00 from
+    Generated 2026-06-12T07:01:07+00:00 from
     <code>data/normalized_yaml/bacterial/KOMODO_952_1_10_NUTRIENT_AGAR_NO.2.yaml</code>
   </small>
 </footer>

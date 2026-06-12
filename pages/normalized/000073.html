@@ -21,7 +21,7 @@
   <h1>hsm</h1>
   <div class="meta">
     <span class="curie">CultureMech:000073</span>
-      <span class="badge">ALGAE</span>
+      <span class="badge">algae</span>
       <span class="badge">COMPLEX</span>
       <span class="badge">LIQUID</span>
   </div>
@@ -130,7 +130,7 @@ flowchart LR
   <td><strong>Sterile</strong></td>
   <td class="right">
       1
-      <span class="muted">PERCENT</span>
+      <span class="muted">PERCENT_W_V</span>
   </td>
   <td>
   </td>
@@ -146,13 +146,13 @@ flowchart LR
 </thead>
 <tbody>
 <tr>
-  <td class="muted small"></td>
+  <td class="muted small">2026-01-28T00:00:00+00:00</td>
   <td>ccap-import</td>
   <td>Imported from CCAP Culture Collection</td>
   <td class="small prewrap">Source ID: HSM, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_HSM.pdf</td>
 </tr>
 <tr>
-  <td class="muted small"></td>
+  <td class="muted small">2026-02-03T00:00:00+00:00</td>
   <td>schema-defaulter-v1.0</td>
   <td>Applied schema defaults and normalizations</td>
   <td class="small prewrap">Added placeholder ingredients for missing composition</td>
@@ -181,12 +181,24 @@ flowchart LR
   <td>EXPANDED_INGREDIENTS</td>
   <td class="small prewrap"></td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-16T08:57:02.399042+00:00</td>
+  <td>migrate_data_quality_flags.py</td>
+  <td>MIGRATED_DATA_QUALITY_FLAGS</td>
+  <td class="small prewrap">dict(4 keys) -&gt; list(3 entries)</td>
+</tr>
+<tr>
+  <td class="muted small">2026-05-16T09:02:56.596279+00:00</td>
+  <td>migrate_legacy_fields.py</td>
+  <td>MIGRATED_LEGACY_FIELDS</td>
+  <td class="small prewrap">curation_history.date-&gt;timestamp=2; references.reference_id-&gt;reference=2; category-&gt;lowercase=1; concentration.unit aliases=1</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:03:47+00:00 from
+    Generated 2026-06-12T07:00:58+00:00 from
     <code>data/normalized_yaml/algae/hsm.yaml</code>
   </small>
 </footer>

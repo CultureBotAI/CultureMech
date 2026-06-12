@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>8.0-8.5</dd>
+    <dd>{&#39;min&#39;: 8.0, &#39;max&#39;: 8.5}</dd>
     <dt>High-metal flag</dt>
     <dd>True</dd>
     <dt>Notes</dt>
@@ -379,12 +379,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;THIOALKALIVIBRIO HALOPHILUS MEDIUM&#34; to &#34;thioalkalivibrio_halophilus_medium&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:02:09.005457+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;8.0-8.5&#39; -&gt; {&#39;min&#39;: 8.0, &#39;max&#39;: 8.5}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:05:10+00:00 from
+    Generated 2026-06-12T07:02:19+00:00 from
     <code>data/normalized_yaml/bacterial/thioalkalivibrio_halophilus_medium.yaml</code>
   </small>
 </footer>

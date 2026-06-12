@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>3-4</dd>
+    <dd>{&#39;min&#39;: 3.0, &#39;max&#39;: 4.0}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 | DSMZ Medium: 2072 (mediadive.medium:2072) | Aerobic: No</dd>
 </dl>
@@ -105,7 +105,7 @@ flowchart LR
   <td class="small prewrap">Assigned stable identifier: CultureMech:004348</td>
 </tr>
 <tr>
-  <td class="muted small"></td>
+  <td class="muted small">2026-03-14T00:00:00+00:00</td>
   <td>schema-defaulter-v1.0</td>
   <td>Applied schema defaults and normalizations</td>
   <td class="small prewrap">Added default concentration for ingredient: HCl</td>
@@ -122,12 +122,24 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;Trace metals solution (Pfennig &amp; Lippert, 1966)_replace_Na2MoO4 x 2 H2O_with_NH4MoO4&#34; to &#34;trace_metals_solution_pfennig_lippert_1966_replace_na2moo4_x_2_h2o_with_nh4moo4&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-16T09:04:37.636813+00:00</td>
+  <td>migrate_legacy_fields.py</td>
+  <td>MIGRATED_LEGACY_FIELDS</td>
+  <td class="small prewrap">curation_history.date-&gt;timestamp=1</td>
+</tr>
+<tr>
+  <td class="muted small">2026-05-20T06:02:10.884146+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;3-4&#39; -&gt; {&#39;min&#39;: 3.0, &#39;max&#39;: 4.0}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:05:12+00:00 from
+    Generated 2026-06-12T07:02:21+00:00 from
     <code>data/normalized_yaml/bacterial/trace_metals_solution_pfennig_lippert_1966_replace_na2moo4_x_2_h2o_with_nh4moo4.yaml</code>
   </small>
 </footer>

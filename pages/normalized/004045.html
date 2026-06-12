@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>9.8-10.0</dd>
+    <dd>{&#39;min&#39;: 9.8, &#39;max&#39;: 10.0}</dd>
     <dt>High-metal flag</dt>
     <dd>True</dd>
     <dt>Notes</dt>
@@ -646,12 +646,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;AHT3 medium&#34; to &#34;aht3_medium&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:01:07.667929+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;9.8-10.0&#39; -&gt; {&#39;min&#39;: 9.8, &#39;max&#39;: 10.0}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:04:08+00:00 from
+    Generated 2026-06-12T07:01:20+00:00 from
     <code>data/normalized_yaml/bacterial/aht3_medium.yaml</code>
   </small>
 </footer>

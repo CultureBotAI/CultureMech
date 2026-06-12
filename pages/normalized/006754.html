@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>9.5-9.7</dd>
+    <dd>{&#39;min&#39;: 9.5, &#39;max&#39;: 9.7}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 898.1 | DSMZ Medium: 898 (mediadive.medium:898) | Aerobic: Yes</dd>
 </dl>
@@ -639,7 +639,7 @@ flowchart LR
   <td class="small prewrap">Assigned stable identifier: CultureMech:006754</td>
 </tr>
 <tr>
-  <td class="muted small"></td>
+  <td class="muted small">2026-03-14T00:00:00+00:00</td>
   <td>schema-defaulter-v1.0</td>
   <td>Applied schema defaults and normalizations</td>
   <td class="small prewrap">Added default concentration for ingredient: NaOH</td>
@@ -656,12 +656,24 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;For DSM 16504&#34; to &#34;for_dsm_16504&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-16T09:03:33.317925+00:00</td>
+  <td>migrate_legacy_fields.py</td>
+  <td>MIGRATED_LEGACY_FIELDS</td>
+  <td class="small prewrap">curation_history.date-&gt;timestamp=1</td>
+</tr>
+<tr>
+  <td class="muted small">2026-05-20T06:01:18.306782+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;9.5-9.7&#39; -&gt; {&#39;min&#39;: 9.5, &#39;max&#39;: 9.7}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:04:18+00:00 from
+    Generated 2026-06-12T07:01:29+00:00 from
     <code>data/normalized_yaml/bacterial/for_dsm_16504.yaml</code>
   </small>
 </footer>
