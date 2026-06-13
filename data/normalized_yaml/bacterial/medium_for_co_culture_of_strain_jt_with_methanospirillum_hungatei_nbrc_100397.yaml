@@ -507,6 +507,9 @@ solutions:
   name: Unknown solution
 target_organisms:
 - preferred_term: Pelotomaculum sp.
+  term:
+    id: NCBITaxon:2053590
+    label: Pelotomaculum sp.
   strain: strain JT
   evidence:
   - reference: doi:10.1128/AEM.70.3.1617-1626.2004
@@ -517,6 +520,9 @@ target_organisms:
       is not text-verified in this source. | Identifiers: 16S rRNA GenBank AB091329
       (set AB091323-AB091329); no culture-collection ID reported'
 - preferred_term: Methanospirillum hungatei
+  term:
+    id: NCBITaxon:2203
+    label: Methanospirillum hungatei
   strain: NBRC 100397T (= DSM 864T = ATCC 27890T), JF-1T
   evidence:
   - reference: doi:10.1128/AEM.70.3.1617-1626.2004

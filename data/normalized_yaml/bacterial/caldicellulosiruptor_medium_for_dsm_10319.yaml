@@ -316,6 +316,9 @@ solutions:
   name: Unknown solution
 target_organisms:
 - preferred_term: Caldicellulosiruptor bescii
+  term:
+    id: NCBITaxon:31899
+    label: Caldicellulosiruptor bescii
   strain: DSM 6725
   evidence:
   - reference: doi:10.1128/AEM.01400-10
@@ -327,6 +330,9 @@ target_organisms:
       ... into modified DSMZ medium 640 ... grown at 70C with orbital shaking; 50
       ml in 125 ml serum bottle, N2 headspace, 24 h.
 - preferred_term: Caldicellulosiruptor saccharolyticus
+  term:
+    id: NCBITaxon:44001
+    label: Caldicellulosiruptor saccharolyticus
   strain: DSM 8903
   evidence:
   - reference: doi:10.1128/AEM.01400-10
@@ -336,6 +342,9 @@ target_organisms:
     snippet: Subcultured into modified DSMZ 640; reported to grow on xylose, glucose,
       Avicel, pretreated switchgrass, and yeast extract control.
 - preferred_term: Caldicellulosiruptor hydrothermalis
+  term:
+    id: NCBITaxon:413888
+    label: Caldicellulosiruptor hydrothermalis
   strain: DSM 18901
   evidence:
   - reference: doi:10.1128/AEM.01400-10
@@ -352,6 +361,9 @@ target_organisms:
     snippet: Subcultured into modified DSMZ 640; explicitly noted to grow on xylose,
       to lower density than C. saccharolyticus.
 - preferred_term: Caldicellulosiruptor kronotskyensis
+  term:
+    id: NCBITaxon:413889
+    label: Caldicellulosiruptor kronotskyensis
   strain: DSM 18902
   evidence:
   - reference: doi:10.1128/AEM.01400-10
@@ -369,6 +381,9 @@ target_organisms:
     snippet: Subcultured into modified DSMZ 640; explicitly reported as showing no
       growth on glucose in this comparison.
 - preferred_term: Caldicellulosiruptor owensensis
+  term:
+    id: NCBITaxon:55205
+    label: Caldicellulosiruptor owensensis
   strain: DSM 13100
   evidence:
   - reference: doi:10.1128/AEM.01400-10
@@ -377,6 +392,9 @@ target_organisms:
     snippet: Subcultured into modified DSMZ 640 and included among seven species grown
       on selected substrates.
 - preferred_term: Caldicellulosiruptor acetigenus
+  term:
+    id: NCBITaxon:301953
+    label: Caldicellulosiruptor acetigenus
   strain: DSM 7040
   evidence:
   - reference: doi:10.1128/AEM.01400-10
@@ -386,6 +404,9 @@ target_organisms:
     snippet: Listed in Table 1 as available from DSMZ and stated in methods as among
       Caldicellulosiruptor species subcultured into modified DSMZ 640.
 - preferred_term: Thermoanaerobacterium calidifontis
+  term:
+    id: NCBITaxon:715028
+    label: Thermoanaerobacterium calidifontis
   strain: Rx1
   evidence:
   - reference: doi:10.1007/s00203-013-0895-5

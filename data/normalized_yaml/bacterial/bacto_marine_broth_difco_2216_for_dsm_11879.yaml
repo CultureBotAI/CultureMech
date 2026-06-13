@@ -250,6 +250,9 @@ curation_history:
   notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 target_organisms:
 - preferred_term: Cellulophaga algicola
+  term:
+    id: NCBITaxon:59600
+    label: Cellulophaga algicola
   strain: IC166T
   evidence:
   - reference: doi:10.4056/sigs.1543845
@@ -260,6 +263,9 @@ target_organisms:
     snippet: C. algicola IC166T, DSM 14237, was grown in DSMZ medium 514 (BACTO marine
       broth) at 15C.
 - preferred_term: Kangiella koreensis
+  term:
+    id: NCBITaxon:261964
+    label: Kangiella koreensis
   strain: SW-125T
   evidence:
   - reference: doi:10.4056/sigs.36635
@@ -281,6 +287,9 @@ target_organisms:
       for 24 h in marine broth 2216 with shaking, visible growth was observed at 20C
       but not at 28C (100 rpm).
 - preferred_term: Roseobacter ponti
+  term:
+    id: NCBITaxon:1891787
+    label: Roseobacter ponti
   strain: DSM 106830T
   evidence:
   - reference: doi:10.1093/gbe/evaa114
@@ -301,6 +310,9 @@ target_organisms:
     snippet: J. marina strain En5T was isolated by dilution-plating on marine agar
       2216 (Difco).
 - preferred_term: Rhodothermus profundi
+  term:
+    id: NCBITaxon:633813
+    label: Rhodothermus profundi
   strain: PRI 2902T
   evidence:
   - reference: doi:10.1099/ijs.0.012724-0

@@ -391,6 +391,9 @@ curation_history:
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: SPOROHALOBACTER LORTETII
+  term:
+    id: NCBITaxon:974
+    label: Sporohalobacter lortetii
 parent_media:
   path: data/normalized_yaml/bacterial/sporohalobacter_lortetii_medium.yaml
   relationship: SOURCE_DUPLICATE

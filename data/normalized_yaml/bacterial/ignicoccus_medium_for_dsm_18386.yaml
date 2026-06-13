@@ -272,6 +272,9 @@ solutions:
   name: Unknown solution
 target_organisms:
 - preferred_term: Ignicoccus hospitalis
+  term:
+    id: NCBITaxon:160233
+    label: Ignicoccus hospitalis
   strain: KIN4/I (= KIN4/IT), DSM 18386T
   genome_assembly_id:
   - GCA_000017945.1
@@ -287,6 +290,9 @@ target_organisms:
       at 90C under H2/CO2 (80:20, v/v) at 250 kPa, H2 as electron donor and elemental
       sulfur as electron acceptor.
 - preferred_term: Ignicoccus islandicus
+  term:
+    id: NCBITaxon:54259
+    label: Ignicoccus islandicus
   strain: Kol8, DSM 13165T
   genome_assembly_id:
   - GCA_001481685.1
@@ -300,6 +306,9 @@ target_organisms:
     snippet: Ignicoccus pacificus LPC33, DSM 13166T • Ignicoccus islandicus Kol8, DSM
       13165T
 - preferred_term: Ignicoccus pacificus
+  term:
+    id: NCBITaxon:114376
+    label: Ignicoccus pacificus
   strain: LPC33, DSM 13166T
   evidence:
   - reference: doi:10.5283/epub.34741

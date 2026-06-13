@@ -277,6 +277,9 @@ target_organisms:
       formate and fumarate. Each species was grown anaerobically without agitation
       at 37C for 24 or 48 hours.
 - preferred_term: Parabacteroides distasonis
+  term:
+    id: NCBITaxon:823
+    label: Parabacteroides distasonis
   strain: ATCC 8503
   evidence:
   - reference: doi:10.1038/s41598-023-47003-0
@@ -286,6 +289,9 @@ target_organisms:
     snippet: Parabacteroides distasonis (ATCC 8503) was cultivated in ATCC 1490 Modified
       Chopped Meat medium at 37C anaerobically.
 - preferred_term: Fusobacterium nucleatum
+  term:
+    id: NCBITaxon:851
+    label: Fusobacterium nucleatum
   strain: ATCC 25586
   evidence:
   - reference: doi:10.1186/1471-2334-11-200
@@ -295,6 +301,9 @@ target_organisms:
     snippet: Fusobacterium nucleatum ATCC 25586 ... grown in ATCC medium 1490 (Modified
       chopped meat medium), anaerobically at 37C for 24 or 48 h.
 - preferred_term: Porphyromonas levii
+  term:
+    id: NCBITaxon:28114
+    label: Porphyromonas levii
   strain: ATCC 29147
   evidence:
   - reference: doi:10.1186/1471-2334-11-200
@@ -304,6 +313,9 @@ target_organisms:
     snippet: Porphyromonas levii ATCC 29147 [was] grown in ATCC medium 1490 (Modified
       chopped meat medium), anaerobically at 37C for 24 or 48 h.
 - preferred_term: Prevotella bivia
+  term:
+    id: NCBITaxon:28125
+    label: Prevotella bivia
   strain: ATCC 29303
   evidence:
   - reference: doi:10.1186/1471-2334-11-200
@@ -313,6 +325,9 @@ target_organisms:
     snippet: Prevotella bivia ATCC 29303 ... [was] grown in ATCC medium 1490 (Modified
       chopped meat medium), anaerobically at 37C for 24 or 48 h.
 - preferred_term: Lactobacillus crispatus
+  term:
+    id: NCBITaxon:47770
+    label: Lactobacillus crispatus
   strain: ATCC 33820
   evidence:
   - reference: doi:10.1186/1471-2334-11-200
@@ -322,6 +337,9 @@ target_organisms:
     snippet: Lactobacillus crispatus ATCC 33820 was grown in ATCC medium 1490 (Modified
       chopped meat medium) anaerobically without agitation at 37C for 24 h.
 - preferred_term: Fusobacterium necrophorum
+  term:
+    id: NCBITaxon:859
+    label: Fusobacterium necrophorum
   strain: ATCC 27852
   evidence:
   - reference: doi:10.1002/ptr.765
