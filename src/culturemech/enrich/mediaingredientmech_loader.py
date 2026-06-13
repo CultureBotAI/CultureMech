@@ -119,6 +119,10 @@ class MediaIngredientMechLoader:
                 # into a malformed key like `CHEBI:FOODON:03304010`.
                 if chebi_id.isdigit():
                     chebi_id = f"CHEBI:{chebi_id}"
+                # Normalize a lowercase/mixed-case prefix (e.g. `chebi:1234`)
+                # so a case variant isn't silently dropped from the index.
+                elif chebi_id[:6].lower() == 'chebi:':
+                    chebi_id = f"CHEBI:{chebi_id[6:]}"
                 # Only genuine CHEBI ids belong in the CHEBI-keyed index.
                 if chebi_id.startswith('CHEBI:'):
                     self.by_chebi[chebi_id] = ingredient
