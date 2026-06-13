@@ -1,0 +1,96 @@
+id: CultureMech:015870
+name: modified_dixon_s_agar
+original_name: MODIFIED DIXON'S AGAR
+category: fungal
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 6.0
+media_term:
+  preferred_term: JCM Medium J1449
+  term:
+    id: jcm.grmd:1449
+    label: MODIFIED DIXON'S AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1449'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '36'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Desiccated ox bile
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Tween 40
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:53423
+    label: polysorbate 40
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53423
+    label: Tween 40
+- preferred_term: Glycerol
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15978
+    label: sn-Glycerol 3-phosphate lithium salt
+- preferred_term: Oleic acid
+  concentration:
+    value: '2'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:16196
+    label: oleic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16196
+    label: Oleic acid
+- preferred_term: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust pH to 6.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:21.674895+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1449. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.485712Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

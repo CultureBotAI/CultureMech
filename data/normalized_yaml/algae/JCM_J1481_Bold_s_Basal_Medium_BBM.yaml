@@ -1,0 +1,49 @@
+id: CultureMech:015878
+name: bold_s_basal_medium_bbm
+original_name: Bold's Basal Medium (BBM)
+category: algae
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J1481
+  term:
+    id: jcm.grmd:1481
+    label: Bold's Basal Medium (BBM)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1481'
+ingredients:
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+- preferred_term: Distilled water
+  concentration:
+    value: '980'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:30.690848+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1481. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.578976Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
