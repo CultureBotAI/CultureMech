@@ -1,5 +1,15 @@
 {
     "$defs": {
+        "AtmosphereEnum": {
+            "description": "Atmospheric conditions for incubation",
+            "enum": [
+                "AEROBIC",
+                "ANAEROBIC",
+                "MICROAEROPHILIC"
+            ],
+            "title": "AtmosphereEnum",
+            "type": "string"
+        },
         "CategoryEnum": {
             "description": "Organizational category for media recipes",
             "enum": [
@@ -30,10 +40,17 @@
             "title": "CellularRoleEnum",
             "type": "string"
         },
-        "ChemicalEntityTerm": {
+        "ChebiTerm": {
             "additionalProperties": false,
-            "description": "A CHEBI term representing a chemical entity",
+            "description": "A strictly-CHEBI term reference. Use for the `chebi_term` slot where the contract is \"this is the CHEBI grounding specifically\" \u2014 distinct from the polymorphic `ChemicalEntityTerm` used by `term` slots that may carry upstream non-CHEBI IDs.",
             "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "Ontology identifier (CURIE)",
                     "pattern": "^CHEBI:\\d+$",
@@ -45,6 +62,44 @@
                         "string",
                         "null"
                     ]
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "ChebiTerm",
+            "type": "object"
+        },
+        "ChemicalEntityTerm": {
+            "additionalProperties": false,
+            "description": "A term identifying a chemical or biological ingredient. Primarily CHEBI, with FOODON / UBERON / ENVO accepted for ingredients (food products, anatomical tissues, environmental samples) where no CHEBI equivalent exists upstream. `mediadive.compound:*` is also accepted as the upstream MediaDive grounding kept alongside CHEBI mappings on solution-composition entries.",
+            "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "pattern": "^(CHEBI|FOODON|UBERON|ENVO|mediadive\\.compound):\\w+$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "Ontology term label",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
                 }
             },
             "required": [
@@ -225,6 +280,10 @@
                 "MICROMOLAR",
                 "PERCENT_W_V",
                 "PERCENT_V_V",
+                "ML_PER_L",
+                "MG_PER_ML",
+                "FOLD_DILUTION",
+                "L",
                 "VARIABLE"
             ],
             "title": "ConcentrationUnitEnum",
@@ -257,6 +316,40 @@
             "title": "ConcentrationValue",
             "type": "object"
         },
+        "CultureMechTerm": {
+            "additionalProperties": false,
+            "description": "A CultureMech identifier for a media recipe used as component",
+            "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "CultureMech identifier (e.g., \"CultureMech:009592\")",
+                    "pattern": "^CultureMech:\\d{6}$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "Ontology term label",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "CultureMechTerm",
+            "type": "object"
+        },
         "CurationEvent": {
             "additionalProperties": false,
             "description": "Audit trail entry for curation",
@@ -265,12 +358,26 @@
                     "description": "Action taken (created, updated, validated, etc.)",
                     "type": "string"
                 },
+                "changes": {
+                    "description": "Structured summary of what changed in this event (free-text or semi-structured; used by automated curators e.g. `Set category to 'bacterial' (was: MISSING)`).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "curator": {
                     "description": "Name or identifier of curator",
                     "type": "string"
                 },
                 "notes": {
                     "description": "Additional context",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "source": {
+                    "description": "Source attribution for this curation event (e.g. a source PDF, a sibling CultureMech recipe, an external dataset).",
                     "type": [
                         "string",
                         "null"
@@ -298,11 +405,8 @@
                     "type": "string"
                 },
                 "dataset_type": {
-                    "description": "Type of omics data (genomics, transcriptomics, metabolomics, etc.)",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "$ref": "#/$defs/DatasetTypeEnum",
+                    "description": "Type of omics data (genomics, transcriptomics, metabolomics, etc.)"
                 },
                 "description": {
                     "description": "Brief description of the dataset",
@@ -323,6 +427,55 @@
                 "dataset_id"
             ],
             "title": "Dataset",
+            "type": "object"
+        },
+        "DatasetTypeEnum": {
+            "description": "Type of omics dataset linked by `Dataset.dataset_type`.",
+            "enum": [
+                "GENOMICS",
+                "TRANSCRIPTOMICS",
+                "PROTEOMICS",
+                "METABOLOMICS",
+                "FLUXOMICS",
+                "PHENOMICS",
+                "MULTI_OMICS",
+                "OTHER"
+            ],
+            "title": "DatasetTypeEnum",
+            "type": "string"
+        },
+        "EnvironmentTerm": {
+            "additionalProperties": false,
+            "description": "An ENVO term representing an environmental system or biome",
+            "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "ENVO identifier (7-8 digit format)",
+                    "pattern": "^ENVO:\\d{7,8}$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "Ontology term label",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "EnvironmentTerm",
             "type": "object"
         },
         "EvidenceItem": {
@@ -369,10 +522,27 @@
             "title": "EvidenceItemSupportEnum",
             "type": "string"
         },
+        "FingerprintModeEnum": {
+            "description": "Algorithm used to compute the ingredient fingerprint.",
+            "enum": [
+                "ORIGINAL",
+                "CHEMICAL",
+                "VARIANT"
+            ],
+            "title": "FingerprintModeEnum",
+            "type": "string"
+        },
         "GTDBTerm": {
             "additionalProperties": false,
             "description": "A GTDB genome identifier. id = GTDB accession (e.g. GTDB:RS_GCF_000006945.2), label = full GTDB lineage string (e.g. d__Bacteria;p__Proteobacteria;...)",
             "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "Ontology identifier (CURIE)",
                     "type": "string"
@@ -383,6 +553,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
                 }
             },
             "required": [
@@ -391,10 +565,237 @@
             "title": "GTDBTerm",
             "type": "object"
         },
+        "GrowthMetrics": {
+            "additionalProperties": false,
+            "description": "Quantitative growth measurements for an organism on a medium. Captures empirical growth performance (max OD, doubling time, growth rate) observed under defined conditions. Every non-empty record must cite at least one literature reference via the evidence list.",
+            "properties": {
+                "doubling_time_minutes": {
+                    "description": "Population doubling time in minutes",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Literature evidence supporting these growth measurements",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": "array"
+                },
+                "growth_mode": {
+                    "$ref": "#/$defs/GrowthModeEnum",
+                    "description": "Cultivation mode under which the metric was measured."
+                },
+                "growth_rate_per_hour": {
+                    "description": "Specific growth rate \u03bc in h\u207b\u00b9 (inverse hours)",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "is_max_attainment": {
+                    "description": "TRUE when the metric represents max-attained / standard / textbook growth on this medium for this organism. FALSE when it's conditional on a perturbation, mutation, or non-default condition (in which case `perturbations` and/or the OrganismDescriptor's `strain_modifications` should be populated). Optional; absence means \"not asserted either way\".",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "max_od600": {
+                    "description": "Maximum optical density observed (default wavelength 600 nm)",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "max_od_wavelength_nm": {
+                    "description": "Wavelength at which OD was measured, in nanometers (default 600)",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "measurement_conditions": {
+                    "description": "Free-text description of measurement context (e.g., \"shake flask, 200 rpm\", \"microtiter plate, 96-well, plate reader Tecan Spark\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "nutrient_overrides": {
+                    "description": "C/N/S/electron-source nutrients used in this observation that differ from the recipe's prescribed ingredients (e.g., \"succinate as sole carbon source\", \"L-phenylalanine as sole nitrogen source\").",
+                    "items": {
+                        "$ref": "#/$defs/NutrientOverride"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "perturbations": {
+                    "description": "Applied stresses, modifications, or non-default conditions that accompanied this growth observation. When non-empty, `is_max_attainment` should typically be FALSE.",
+                    "items": {
+                        "$ref": "#/$defs/PerturbationContext"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "ph_at_measurement": {
+                    "description": "Medium pH at the time of measurement",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "temperature_celsius": {
+                    "description": "Temperature at which the measurement was taken, in degrees Celsius",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "evidence"
+            ],
+            "title": "GrowthMetrics",
+            "type": "object"
+        },
+        "GrowthModeEnum": {
+            "description": "Cultivation mode under which a growth metric was measured. Distinct from MediaRecipe.culture_vessel which describes the vessel itself.",
+            "enum": [
+                "BATCH",
+                "CHEMOSTAT",
+                "TURBIDOSTAT",
+                "CONTINUOUS_FLOW",
+                "FED_BATCH",
+                "BIOFILM",
+                "SOLID_SURFACE",
+                "UNSPECIFIED"
+            ],
+            "title": "GrowthModeEnum",
+            "type": "string"
+        },
+        "GrowthPhaseEnum": {
+            "description": "Target microbial growth phase for a measurement / inoculum.",
+            "enum": [
+                "LAG",
+                "EXPONENTIAL",
+                "STATIONARY",
+                "DEATH",
+                "UNSPECIFIED"
+            ],
+            "title": "GrowthPhaseEnum",
+            "type": "string"
+        },
+        "ImportMetadata": {
+            "additionalProperties": false,
+            "description": "Tracking information for imported media records. Enables versioning, provenance tracking, and reproducible updates.",
+            "properties": {
+                "import_date": {
+                    "description": "ISO 8601 timestamp when this record was imported",
+                    "type": "string"
+                },
+                "import_skill": {
+                    "description": "Name of the skill or script that performed the import. Example: \"import-mediadive\", \"import-togo-skill\"",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "import_version": {
+                    "description": "Import version following format vMAJOR.MINOR.PATCH_YYYY-MM-DD. Example: v1.0.0_2026-01-27",
+                    "pattern": "^v\\d+\\.\\d+\\.\\d+_\\d{4}-\\d{2}-\\d{2}$",
+                    "type": "string"
+                },
+                "last_updated": {
+                    "description": "ISO 8601 timestamp of most recent update",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "source_database": {
+                    "$ref": "#/$defs/SourceDatabaseEnum",
+                    "description": "Source database from which this medium was imported"
+                },
+                "source_id": {
+                    "description": "Original identifier in source database (e.g., \"Medium 1234\", \"M3205\"). Preserved for traceability and update tracking.",
+                    "type": "string"
+                },
+                "update_history": {
+                    "description": "Chronological log of all updates applied to this record. Enables full audit trail from initial import to present.",
+                    "items": {
+                        "$ref": "#/$defs/UpdateEvent"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "source_database",
+                "source_id",
+                "import_version",
+                "import_date"
+            ],
+            "title": "ImportMetadata",
+            "type": "object"
+        },
+        "IngredientCurationMetadata": {
+            "additionalProperties": false,
+            "description": "Structured metadata describing how an ingredient mapping was produced (mapping quality, confidence, source). Populated by curation pipelines.",
+            "properties": {
+                "confidence_score": {
+                    "description": "Confidence score for the mapping (0.0-1.0).",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "curation_date": {
+                    "description": "When the curation was performed (ISO-8601).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "mapping_quality": {
+                    "description": "Quality tier of the mapping (e.g. EXACT, LLM_ASSISTED, KG_FALLBACK).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "ontology_source": {
+                    "description": "Ontology used as the mapping target (e.g. CHEBI).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "IngredientCurationMetadata",
+            "type": "object"
+        },
         "IngredientDescriptor": {
             "additionalProperties": false,
             "description": "Chemical or biological ingredient in a medium",
             "properties": {
+                "chebi_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ChebiTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "CHEBI-only grounding kept alongside `term` when `term` carries the upstream identifier (e.g. mediadive.compound on solution compositions)."
+                },
                 "chemical_formula": {
                     "description": "Molecular formula (e.g., \"C6H12O6\")",
                     "type": [
@@ -413,8 +814,47 @@
                     ]
                 },
                 "concentration": {
-                    "$ref": "#/$defs/ConcentrationValue",
-                    "description": "Amount of ingredient"
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ConcentrationValue"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Amount of ingredient. Recommended but not required: pH-adjustment ingredients (HCl/H2SO4/NaOH/KOH titrated \"to pH\") and similar \"to-effect\" reagents legitimately lack a fixed concentration."
+                },
+                "culturemech_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/CultureMechTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Reference to another CultureMech media recipe used as component"
+                },
+                "curation_metadata": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/IngredientCurationMetadata"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Structured curation metadata for this ingredient mapping (mapping quality, confidence score, ontology source, etc.)."
+                },
+                "data_quality_flags": {
+                    "description": "Ingredient-level data quality indicators.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "evidence": {
                     "description": "Evidence for this ingredient's role",
@@ -425,6 +865,28 @@
                         "array",
                         "null"
                     ]
+                },
+                "mediaingredientmech_chebi_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MediaIngredientMechChebiTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "CHEBI-keyed linkage to a curated MediaIngredientMech ingredient (current MIM schema)."
+                },
+                "mediaingredientmech_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MediaIngredientMechTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Legacy MediaIngredientMech:NNNNNN identifier for this ingredient (pre-CHEBI-keying)."
                 },
                 "modifier": {
                     "$ref": "#/$defs/ModifierEnum",
@@ -444,6 +906,17 @@
                         "null"
                     ]
                 },
+                "parent_ingredient": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/IngredientReference"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Reference to parent chemical entity from MediaIngredientMech"
+                },
                 "preferred_term": {
                     "description": "Human-readable ingredient name (e.g., \"Glucose\", \"Yeast Extract\")",
                     "type": "string"
@@ -458,6 +931,13 @@
                         "null"
                     ]
                 },
+                "source": {
+                    "description": "Provenance attribution for this ingredient entry.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "supplier_catalog": {
                     "anyOf": [
                         {
@@ -469,6 +949,16 @@
                     ],
                     "description": "Supplier information for sourcing"
                 },
+                "synonyms": {
+                    "description": "Alternate names for this ingredient (e.g. brand names, abbreviations). Each entry is an `IngredientSynonym` with `synonym_text` and `synonym_type`.",
+                    "items": {
+                        "$ref": "#/$defs/IngredientSynonym"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "term": {
                     "anyOf": [
                         {
@@ -478,14 +968,40 @@
                             "type": "null"
                         }
                     ],
-                    "description": "CHEBI term for the chemical entity"
+                    "description": "Primary ontology grounding (CHEBI, FOODON, UBERON, ENVO, or upstream mediadive.compound)."
+                },
+                "variant_type": {
+                    "$ref": "#/$defs/VariantTypeEnum",
+                    "description": "Type of chemical variant"
                 }
             },
             "required": [
-                "preferred_term",
-                "concentration"
+                "preferred_term"
             ],
             "title": "IngredientDescriptor",
+            "type": "object"
+        },
+        "IngredientReference": {
+            "additionalProperties": false,
+            "description": "Reference to canonical ingredient",
+            "properties": {
+                "mediaingredientmech_id": {
+                    "description": "MediaIngredientMech ID",
+                    "pattern": "^MediaIngredientMech:\\d{6}$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "preferred_term": {
+                    "description": "Name of parent ingredient",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "preferred_term"
+            ],
+            "title": "IngredientReference",
             "type": "object"
         },
         "IngredientRoleEnum": {
@@ -509,6 +1025,25 @@
             "title": "IngredientRoleEnum",
             "type": "string"
         },
+        "IngredientSynonym": {
+            "additionalProperties": false,
+            "description": "An alternate name for an ingredient (e.g. brand name, abbreviation).",
+            "properties": {
+                "synonym_text": {
+                    "description": "The alternate name string.",
+                    "type": "string"
+                },
+                "synonym_type": {
+                    "$ref": "#/$defs/SynonymTypeEnum",
+                    "description": "Synonym match type (e.g. EXACT, RELATED, BROAD)."
+                }
+            },
+            "required": [
+                "synonym_text"
+            ],
+            "title": "IngredientSynonym",
+            "type": "object"
+        },
         "LightConditionEnum": {
             "description": "Light exposure requirements",
             "enum": [
@@ -523,6 +1058,13 @@
             "additionalProperties": false,
             "description": "Identifier from authoritative media database",
             "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "Ontology identifier (CURIE)",
                     "type": "string"
@@ -533,12 +1075,84 @@
                         "string",
                         "null"
                     ]
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
                 }
             },
             "required": [
                 "id"
             ],
             "title": "MediaDatabaseTerm",
+            "type": "object"
+        },
+        "MediaIngredientMechChebiTerm": {
+            "additionalProperties": false,
+            "description": "CHEBI-keyed linkage to a MediaIngredientMech curated ingredient. MediaIngredientMech migrated from minting `MediaIngredientMech:NNNNNN` ids to keying its curated ingredient entities by CHEBI; this term records the matched MIM entity's CHEBI identifier (with the MIM `preferred_term` as label). Distinct from the ingredient's own `term`/`chebi_term` grounding: it asserts \"this ingredient corresponds to a curated MIM ingredient\", even though the id coincides with the CHEBI grounding.",
+            "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "pattern": "^CHEBI:\\d+$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "Ontology term label",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "MediaIngredientMechChebiTerm",
+            "type": "object"
+        },
+        "MediaIngredientMechTerm": {
+            "additionalProperties": false,
+            "description": "A legacy MediaIngredientMech identifier (MediaIngredientMech:NNNNNN) for a media ingredient. MediaIngredientMech has since migrated to a CHEBI-keyed schema and no longer mints these IDs; for new linkages use `mediaingredientmech_chebi_term` instead. Retained for the existing corpus, which still carries these IDs.",
+            "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "pattern": "^MediaIngredientMech:\\d{6}$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "Ontology term label",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "MediaIngredientMechTerm",
             "type": "object"
         },
         "MediaRecipe": {
@@ -575,6 +1189,13 @@
                 "category": {
                     "$ref": "#/$defs/CategoryEnum",
                     "description": "Broad category for organization"
+                },
+                "chemical_fingerprint": {
+                    "description": "SHA256 hash using parent ingredients (hierarchy-aware)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "culture_vessel": {
                     "description": "Recommended culture container (e.g., \"Erlenmeyer flask\", \"test tube\", \"petri dish\")",
@@ -630,6 +1251,13 @@
                         "null"
                     ]
                 },
+                "fingerprint_version": {
+                    "description": "Version of fingerprinting algorithm used",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "high_metal": {
                     "description": "Indicates media with total metal concentration above the 90th percentile threshold (\u22651049.84 mM). Metals include Fe, Cu, Zn, Mn, Co, Ni, Mo, Se, W, V, Cr, Ca, Mg, K, Na. Based on automated concentration analysis of ingredient composition.",
                     "type": [
@@ -644,12 +1272,43 @@
                         "null"
                     ]
                 },
+                "id": {
+                    "description": "Stable CultureMech identifier for this media recipe.",
+                    "pattern": "^CultureMech:\\d{6}$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "import_metadata": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ImportMetadata"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Import tracking and versioning information. Enables reproducible imports, provenance tracking, and update workflows."
+                },
+                "incubation_atmosphere": {
+                    "$ref": "#/$defs/AtmosphereEnum",
+                    "description": "Atmospheric conditions for incubation"
+                },
                 "ingredients": {
                     "description": "Chemical and biological ingredients",
                     "items": {
                         "$ref": "#/$defs/IngredientDescriptor"
                     },
                     "type": "array"
+                },
+                "kg_microbe_match": {
+                    "description": "KG-Microbe mediadive.medium node ID for exact ingredient match. Populated when this recipe's ingredients exactly match a medium in KG-Microbe (ignoring concentrations, considering hierarchical ingredient resolution).",
+                    "pattern": "^mediadive\\.medium:[0-9a-zA-Z_-]+$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "light_cycle": {
                     "description": "Photoperiod light:dark cycle (e.g., \"16:8\", \"continuous light\", \"24:0\")",
@@ -694,6 +1353,17 @@
                         "null"
                     ]
                 },
+                "merge_metadata": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MergeMetadata"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Metadata about merge process and quality"
+                },
                 "merged_from": {
                     "description": "Original recipe IDs that were merged into this record",
                     "items": {
@@ -726,12 +1396,27 @@
                         "null"
                     ]
                 },
+                "parent_media": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MediaRecipeReference"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Canonical parent medium when this record is a child/variant formulation. Used for parent-child media variant modeling where each variant remains a full MediaRecipe YAML record."
+                },
                 "ph_range": {
-                    "description": "Acceptable pH range (e.g., \"6.8-7.2\")",
-                    "type": [
-                        "string",
-                        "null"
-                    ]
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/PhRange"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Acceptable pH range. Structured as PhRange (min/max floats; notes for unparseable values)."
                 },
                 "ph_value": {
                     "description": "Target pH value",
@@ -775,6 +1460,37 @@
                     "description": "Pre-prepared stock solutions used as ingredients",
                     "items": {
                         "$ref": "#/$defs/SolutionDescriptor"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "source_data": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/SourceData"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Provenance tracking for records imported from other repositories"
+                },
+                "source_environment": {
+                    "description": "Environment(s) from which target organisms originate or for which this medium is designed. Enables environment-based queries and linking to CommunityMech environmental metadata.",
+                    "items": {
+                        "$ref": "#/$defs/SourceEnvironmentDescriptor"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "sources": {
+                    "description": "Upstream database attribution(s) for this record (e.g. MediaDive, CultureBotHT). Multivalued for cross-listings.",
+                    "items": {
+                        "$ref": "#/$defs/SourceReference"
                     },
                     "type": [
                         "array",
@@ -837,6 +1553,37 @@
                         "null"
                     ]
                 },
+                "variant_children": {
+                    "description": "Child MediaRecipe YAML records that are variants of this canonical parent medium.",
+                    "items": {
+                        "$ref": "#/$defs/MediaRecipeReference"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "variant_fingerprint": {
+                    "description": "SHA256 hash preserving variant distinctions",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "variant_modifications": {
+                    "description": "Summary of how this child formulation differs from its parent medium.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "variant_relationship": {
+                    "$ref": "#/$defs/MediaVariantRelationshipEnum",
+                    "description": "Relationship type to the parent medium when this recipe is a child variant record."
+                },
                 "variants": {
                     "description": "Related formulations or modifications",
                     "items": {
@@ -855,6 +1602,58 @@
                 "ingredients"
             ],
             "title": "MediaRecipe",
+            "type": "object"
+        },
+        "MediaRecipeReference": {
+            "additionalProperties": false,
+            "description": "Reference to another CultureMech media recipe record",
+            "properties": {
+                "evidence": {
+                    "description": "Evidence supporting the media parent-child relationship",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Stable CultureMech identifier for the referenced media record",
+                    "pattern": "^CultureMech:\\d{6}$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "Referenced media recipe name",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Curator notes about the relationship or unresolved mapping",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "path": {
+                    "description": "Repository-relative YAML path for the referenced media record",
+                    "pattern": "^data/normalized_yaml/.+\\.ya?ml$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "relationship": {
+                    "$ref": "#/$defs/MediaVariantRelationshipEnum",
+                    "description": "Parent-child relationship type for this link"
+                }
+            },
+            "title": "MediaRecipeReference",
             "type": "object"
         },
         "MediaTypeDescriptor": {
@@ -925,6 +1724,10 @@
                         "null"
                     ]
                 },
+                "relationship": {
+                    "$ref": "#/$defs/MediaVariantRelationshipEnum",
+                    "description": "Typed relationship to the base recipe, drawn from the same enum that MediaRecipeReference.relationship uses. Curators should set this whenever a clean enum value applies; the free-text `modifications` slot remains for nuance or for variants whose relationship is genuinely composite."
+                },
                 "supplier_info": {
                     "anyOf": [
                         {
@@ -943,6 +1746,24 @@
             "title": "MediaVariant",
             "type": "object"
         },
+        "MediaVariantRelationshipEnum": {
+            "description": "Type of parent-child relationship between media recipes",
+            "enum": [
+                "CONCENTRATION_VARIANT",
+                "PHYSICAL_STATE_VARIANT",
+                "SUPPLEMENTED_VARIANT",
+                "OMITTED_COMPONENT_VARIANT",
+                "SUBSTITUTED_COMPONENT_VARIANT",
+                "PH_VARIANT",
+                "SALINITY_VARIANT",
+                "STRAIN_SPECIFIC_VARIANT",
+                "SOURCE_DUPLICATE",
+                "DERIVED_FROM",
+                "UNCERTAIN"
+            ],
+            "title": "MediaVariantRelationshipEnum",
+            "type": "string"
+        },
         "MediumTypeEnum": {
             "description": "Classification of culture medium",
             "enum": [
@@ -951,9 +1772,77 @@
                 "SELECTIVE",
                 "DIFFERENTIAL",
                 "ENRICHMENT",
-                "MINIMAL"
+                "MINIMAL",
+                "BUFFER",
+                "NEGATIVE_CONTROL"
             ],
             "title": "MediumTypeEnum",
+            "type": "string"
+        },
+        "MergeMetadata": {
+            "additionalProperties": false,
+            "description": "Metadata about merge process and quality",
+            "properties": {
+                "fingerprint_mode": {
+                    "$ref": "#/$defs/FingerprintModeEnum",
+                    "description": "Fingerprinting mode used (chemical/variant/original)"
+                },
+                "hierarchy_conflicts": {
+                    "description": "Ingredients with conflicting merge signals",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "merge_confidence": {
+                    "description": "Confidence score for merge decision (0.0-1.0)",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "merge_mode": {
+                    "$ref": "#/$defs/MergeModeEnum",
+                    "description": "Merge mode used (conservative/aggressive/variant-aware)"
+                },
+                "merge_reason": {
+                    "$ref": "#/$defs/MergeReasonEnum",
+                    "description": "Why these recipes were merged together"
+                },
+                "merge_version": {
+                    "description": "Version of merge pipeline used",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "MergeMetadata",
+            "type": "object"
+        },
+        "MergeModeEnum": {
+            "description": "Merge pipeline mode used by `MergeMetadata.merge_mode`.",
+            "enum": [
+                "CONSERVATIVE",
+                "AGGRESSIVE",
+                "VARIANT_AWARE"
+            ],
+            "title": "MergeModeEnum",
+            "type": "string"
+        },
+        "MergeReasonEnum": {
+            "description": "Reason why recipes were merged together",
+            "enum": [
+                "EXPLICIT_MERGE_RULE",
+                "IDENTICAL_FINGERPRINT",
+                "SAME_PARENT_INGREDIENTS",
+                "HYDRATION_VARIANT_ONLY",
+                "NO_MATCH"
+            ],
+            "title": "MergeReasonEnum",
             "type": "string"
         },
         "ModifierEnum": {
@@ -964,6 +1853,66 @@
                 "ABSENT"
             ],
             "title": "ModifierEnum",
+            "type": "string"
+        },
+        "NutrientOverride": {
+            "additionalProperties": false,
+            "description": "A nutrient source used in this observation that differs from the medium's nominal recipe \u2014 typically a \"sole carbon source\", \"sole nitrogen source\", or specific electron donor/acceptor pairing the original recipe doesn't enforce. Distinct from the medium's prescribed `ingredients`; represents experimental substitution at observation time.",
+            "properties": {
+                "evidence": {
+                    "description": "Literature evidence supporting the nutrient-override claim.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "is_sole_source": {
+                    "description": "TRUE when this is the only source for that role in the experiment.",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "ontology_id": {
+                    "description": "Preferred CHEBI / FOODON CURIE for the source compound.",
+                    "pattern": "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "role": {
+                    "$ref": "#/$defs/NutrientRoleEnum",
+                    "description": "Functional role the override fills in the experiment."
+                },
+                "source": {
+                    "description": "e.g. \"succinate\", \"L-phenylalanine\", \"acetate\".",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "role",
+                "source"
+            ],
+            "title": "NutrientOverride",
+            "type": "object"
+        },
+        "NutrientRoleEnum": {
+            "description": "Functional role a NutrientOverride source fills in the experiment (carbon, nitrogen, electron donor/acceptor, etc.).",
+            "enum": [
+                "CARBON_SOURCE",
+                "NITROGEN_SOURCE",
+                "SULFUR_SOURCE",
+                "PHOSPHATE_SOURCE",
+                "ELECTRON_DONOR",
+                "ELECTRON_ACCEPTOR",
+                "LIGHT_SOURCE",
+                "OTHER"
+            ],
+            "title": "NutrientRoleEnum",
             "type": "string"
         },
         "OrganismCultureTypeEnum": {
@@ -1019,12 +1968,30 @@
                         "null"
                     ]
                 },
-                "growth_phase": {
-                    "description": "Target growth phase (e.g., \"exponential\", \"stationary\")",
+                "genome_assembly_id": {
+                    "description": "Genome assembly accession(s) for this organism, complementing gtdb_term. Accepts RefSeq (GCF_), GenBank (GCA_), or BioSample (SAMN) identifiers.",
+                    "items": {
+                        "pattern": "^(GCF_|GCA_|SAMN)[0-9.]+$",
+                        "type": "string"
+                    },
                     "type": [
-                        "string",
+                        "array",
                         "null"
                     ]
+                },
+                "growth_metrics": {
+                    "description": "Quantitative growth measurements observed for this organism on this medium",
+                    "items": {
+                        "$ref": "#/$defs/GrowthMetrics"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "growth_phase": {
+                    "$ref": "#/$defs/GrowthPhaseEnum",
+                    "description": "Target growth phase (e.g., \"exponential\", \"stationary\")"
                 },
                 "gtdb_term": {
                     "anyOf": [
@@ -1045,6 +2012,16 @@
                     "description": "Specific strain designation (e.g., \"K-12\", \"MG1655\")",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "strain_modifications": {
+                    "description": "Genotype/phenotype modifications relative to the wild-type or type strain. Strain-level (carries across observations) and distinct from per-observation `growth_metrics[].perturbations`.",
+                    "items": {
+                        "$ref": "#/$defs/StrainModification"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1087,6 +2064,13 @@
             "additionalProperties": false,
             "description": "An NCBITaxon term representing an organism",
             "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
                 "id": {
                     "description": "Ontology identifier (CURIE)",
                     "pattern": "^NCBITaxon:\\d+$",
@@ -1098,12 +2082,123 @@
                         "string",
                         "null"
                     ]
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
                 }
             },
             "required": [
                 "id"
             ],
             "title": "OrganismTerm",
+            "type": "object"
+        },
+        "PerturbationContext": {
+            "additionalProperties": false,
+            "description": "A non-default condition under which a growth metric was observed \u2014 chemical stress, temperature stress, nutrient limitation, adaptation, or non-batch culture mode. When PerturbationContext is non-empty, GrowthMetrics.is_max_attainment should be FALSE (the metric is conditional, not a max claim).",
+            "properties": {
+                "descriptor": {
+                    "description": "Free-text description (e.g. \"Cr(VI) at 10 mg/L\", \"magnetosome-deficient strain\", \"cellulose-adapted\", \"induced at OD600=0.6\").",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Literature evidence supporting the perturbation claim.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "level": {
+                    "description": "Quantitative level of the perturbation (e.g. 10.0 for 10 mg/L Cr(VI), 4.0 for 4 \u00b0C).",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "level_unit": {
+                    "description": "Unit for `level` (e.g. \"mg/L\", \"mM\", \"%\", \"\u00b0C\", \"\u00b5mol\u00b7m\u207b\u00b2\u00b7s\u207b\u00b9\").",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "ontology_id": {
+                    "description": "Optional ontology CURIE for the perturbation type or agent (CHEBI for chemical agents, ENVO for environmental stress, NCIT for genetic-modification class, PATO for phenotypic qualities). Curator-supplied; pipeline does not auto-resolve. Renamed from `ontology_term` (G13) to align with the `<provenance>_id` convention used for bare-string CURIEs elsewhere in the schema. The typed-Term-object convention is `<provenance>_term`.",
+                    "pattern": "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "perturbation_type": {
+                    "$ref": "#/$defs/PerturbationTypeEnum",
+                    "description": "Class of perturbation applied during the observation."
+                },
+                "target": {
+                    "description": "Subject of the perturbation \u2014 gene/locus for genetic, stressor compound for chemical, limiting nutrient for nutritional, substrate for adaptation.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "perturbation_type"
+            ],
+            "title": "PerturbationContext",
+            "type": "object"
+        },
+        "PerturbationTypeEnum": {
+            "description": "Class of perturbation applied during a growth observation. Used by PerturbationContext.perturbation_type to flag conditional growth claims so downstream consumers can distinguish them from max-attainment / standard-condition observations.",
+            "enum": [
+                "GENETIC_MODIFICATION",
+                "CHEMICAL_STRESS",
+                "TEMPERATURE_STRESS",
+                "OXIDATIVE_STRESS",
+                "NUTRIENT_LIMITATION",
+                "ADAPTATION",
+                "GROWTH_PHASE",
+                "CULTURE_MODE",
+                "PH_STRESS",
+                "OTHER"
+            ],
+            "title": "PerturbationTypeEnum",
+            "type": "string"
+        },
+        "PhRange": {
+            "additionalProperties": false,
+            "description": "Acceptable pH range for a medium. Use `min` and `max` (floats) for parseable ranges; `notes` preserves the original free-text whenever a value can't be parsed cleanly (avoids data loss during migration).",
+            "properties": {
+                "max": {
+                    "description": "Upper bound of the acceptable pH range (inclusive).",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "min": {
+                    "description": "Lower bound of the acceptable pH range (inclusive).",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Free-text qualifier or the original unparseable value (e.g. \"varies by species\", \"alkaline 9-10 for halophiles\").",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "PhRange",
             "type": "object"
         },
         "PhysicalStateEnum": {
@@ -1271,11 +2366,14 @@
             "description": "A pre-prepared stock solution used as an ingredient",
             "properties": {
                 "composition": {
-                    "description": "Ingredients in the stock solution",
+                    "description": "Ingredients in the stock solution. Optional when the solution is referenced by name only (no inline composition copied from the source).",
                     "items": {
                         "$ref": "#/$defs/IngredientDescriptor"
                     },
-                    "type": "array"
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "concentration": {
                     "anyOf": [
@@ -1287,6 +2385,53 @@
                         }
                     ],
                     "description": "Working concentration when added to medium"
+                },
+                "culturemech_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/CultureMechTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Reference to another CultureMech media recipe for this solution"
+                },
+                "mediaingredientmech_chebi_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MediaIngredientMechChebiTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "CHEBI-keyed linkage to a curated MediaIngredientMech ingredient (current MIM schema)."
+                },
+                "mediaingredientmech_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MediaIngredientMechTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Legacy MediaIngredientMech:NNNNNN identifier for this solution component (pre-CHEBI-keying)."
+                },
+                "name": {
+                    "description": "Human-readable solution label (kept alongside preferred_term).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Free-text notes about this solution as used in the parent recipe.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "preferred_term": {
                     "description": "Solution name (e.g., \"Trace Metal Solution\", \"Vitamin Stock\")",
@@ -1330,10 +2475,330 @@
                 }
             },
             "required": [
+                "preferred_term"
+            ],
+            "title": "SolutionDescriptor",
+            "type": "object"
+        },
+        "SolutionRecipe": {
+            "additionalProperties": false,
+            "description": "A standalone stock-solution record (one per YAML file). Used for pre-prepared solutions that are referenced as ingredients by MediaRecipes \u2014 e.g. MediaDive's \"Main sol.\" or \"Trace metals SL10\" records. SolutionDescriptor is the inlined-in-recipe form; this is the root form with its own id, curation history, and provenance.",
+            "properties": {
+                "category": {
+                    "$ref": "#/$defs/CategoryEnum",
+                    "description": "Source / collection category (algae, bacterial, fungal, \u2026)"
+                },
+                "composition": {
+                    "description": "Ingredients in the stock solution",
+                    "items": {
+                        "$ref": "#/$defs/IngredientDescriptor"
+                    },
+                    "type": "array"
+                },
+                "concentration": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ConcentrationValue"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Working concentration when added to a medium"
+                },
+                "culturemech_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/CultureMechTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Reference to another CultureMech recipe (if this solution is also catalogued there)"
+                },
+                "curation_history": {
+                    "description": "Audit trail of curation events",
+                    "items": {
+                        "$ref": "#/$defs/CurationEvent"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "data_quality_flags": {
+                    "description": "Data quality indicators",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Stable CultureMech identifier for this solution record.",
+                    "pattern": "^CultureMech:\\d{6}$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "ingredients": {
+                    "description": "Placeholder/stub ingredient entries from upstream imports (kept alongside the authoritative `composition`). Intended to be empty or carry a \"See source for composition\" marker.",
+                    "items": {
+                        "$ref": "#/$defs/IngredientDescriptor"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "mediaingredientmech_chebi_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MediaIngredientMechChebiTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "CHEBI-keyed linkage to a curated MediaIngredientMech ingredient (current MIM schema)."
+                },
+                "mediaingredientmech_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MediaIngredientMechTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Legacy MediaIngredientMech:NNNNNN identifier for this solution (pre-CHEBI-keying)."
+                },
+                "notes": {
+                    "description": "Additional free-text notes",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "preferred_term": {
+                    "description": "Solution name (e.g., \"Trace Metal Solution\", \"Vitamin Stock\")",
+                    "type": "string"
+                },
+                "preparation_notes": {
+                    "description": "How to prepare the stock solution",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "references": {
+                    "description": "Source references for this solution",
+                    "items": {
+                        "$ref": "#/$defs/PublicationReference"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "shelf_life": {
+                    "description": "Stability duration (e.g., \"6 months at 4\u00b0C\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "source_data": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/SourceData"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Provenance tracking for imported solution records"
+                },
+                "sources": {
+                    "description": "Upstream database attribution(s) for this solution record.",
+                    "items": {
+                        "$ref": "#/$defs/SourceReference"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "storage_conditions": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/StorageConditions"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Storage requirements"
+                },
+                "term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Term"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Ontology term identifying this solution"
+                }
+            },
+            "required": [
                 "preferred_term",
                 "composition"
             ],
-            "title": "SolutionDescriptor",
+            "title": "SolutionRecipe",
+            "type": "object"
+        },
+        "SourceData": {
+            "additionalProperties": false,
+            "description": "Provenance information for imported records",
+            "properties": {
+                "community_ids": {
+                    "description": "List of CommunityMech IDs this recipe was derived from",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Evidence records from source repository",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "import_date": {
+                    "description": "Date of import (ISO 8601)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "mediaingredientmech_id": {
+                    "description": "MediaIngredientMech identifier for this imported solution record (carried when origin is `MediaIngredientMech`). Format `UNMAPPED_NNNN` or `MediaIngredientMech:NNNNNN`.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Import notes and additional context",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "origin": {
+                    "description": "Source repository name",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "origin"
+            ],
+            "title": "SourceData",
+            "type": "object"
+        },
+        "SourceDatabaseEnum": {
+            "description": "External databases from which media recipes are imported",
+            "enum": [
+                "MEDIADIVE",
+                "TOGO",
+                "KOMODO",
+                "MEDIADB",
+                "UTEX",
+                "CCAP",
+                "SAG",
+                "CULTUREBOTHT",
+                "COMMUNITYMECH",
+                "BACDIVE",
+                "NBRC",
+                "ATCC",
+                "MANUAL"
+            ],
+            "title": "SourceDatabaseEnum",
+            "type": "string"
+        },
+        "SourceEnvironmentDescriptor": {
+            "additionalProperties": false,
+            "description": "Environment from which target organisms originate or for which the medium is designed. Enables environment-based discovery and cross-repository linking with CommunityMech.",
+            "properties": {
+                "notes": {
+                    "description": "Additional environmental context, conditions, or specificity",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "preferred_term": {
+                    "description": "Human-readable environment name (e.g., \"peatland\", \"marine\", \"soil\")",
+                    "type": "string"
+                },
+                "term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/EnvironmentTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "ENVO ontology term for the environment"
+                }
+            },
+            "required": [
+                "preferred_term"
+            ],
+            "title": "SourceEnvironmentDescriptor",
+            "type": "object"
+        },
+        "SourceReference": {
+            "additionalProperties": false,
+            "description": "Upstream database attribution for a record. Carried alongside curation_history; multivalued because a record can have multiple upstream sources (e.g. originally from MediaDive, also catalogued in CultureBotHT).",
+            "properties": {
+                "database": {
+                    "description": "Source database/repository name (e.g. CultureBotHT, MediaDive).",
+                    "type": "string"
+                },
+                "database_id": {
+                    "description": "Identifier or name in the source database.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "Direct URL to the source record.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "database"
+            ],
+            "title": "SourceReference",
             "type": "object"
         },
         "SterilizationDescriptor": {
@@ -1435,6 +2900,69 @@
             "title": "StorageConditions",
             "type": "object"
         },
+        "StrainModification": {
+            "additionalProperties": false,
+            "description": "A genotype/phenotype modification of the OrganismDescriptor's strain relative to the wild-type or type strain. Applies to the strain itself (carries across all media on which it grows), as distinct from PerturbationContext which applies per-observation.",
+            "properties": {
+                "description": {
+                    "description": "Curator free-text describing the modification.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Literature evidence supporting the modification claim.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "modification_type": {
+                    "$ref": "#/$defs/StrainModificationTypeEnum",
+                    "description": "Class of modification applied to the strain."
+                },
+                "ontology_id": {
+                    "description": "Optional CURIE \u2014 NCIT:C120956 (Knockout), NCIT:C17026 (Genetic Modification), PATO:0015009 (mutant), etc. Renamed from `ontology_term` (G13) to align with the `<provenance>_id` convention used for bare-string CURIEs.",
+                    "pattern": "^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "target": {
+                    "description": "Gene/locus name, phenotype label, or substrate the modification targets (e.g. \"magnetosome operon\", \"spo0A\", \"cellulose utilization\").",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "modification_type"
+            ],
+            "title": "StrainModification",
+            "type": "object"
+        },
+        "StrainModificationTypeEnum": {
+            "description": "Class of genetic or selection-derived modification carried by a strain relative to the wild-type or type strain.",
+            "enum": [
+                "KNOCKOUT",
+                "DELETION",
+                "INSERTION",
+                "POINT_MUTATION",
+                "OVEREXPRESSION",
+                "COMPLEMENTATION",
+                "ADAPTATION",
+                "SELECTION",
+                "OTHER"
+            ],
+            "title": "StrainModificationTypeEnum",
+            "type": "string"
+        },
         "SupplierInfo": {
             "additionalProperties": false,
             "description": "Commercial supplier information",
@@ -1471,6 +2999,18 @@
             "title": "SupplierInfo",
             "type": "object"
         },
+        "SynonymTypeEnum": {
+            "description": "Type of synonym relationship for an IngredientSynonym.",
+            "enum": [
+                "EXACT",
+                "RELATED",
+                "BROAD",
+                "NARROW",
+                "ABBREVIATION"
+            ],
+            "title": "SynonymTypeEnum",
+            "type": "string"
+        },
         "TemperatureUnitEnum": {
             "description": "Units for temperature",
             "enum": [
@@ -1500,6 +3040,19 @@
             ],
             "title": "TemperatureValue",
             "type": "object"
+        },
+        "TermMatchTypeEnum": {
+            "description": "Provenance of an ontology-term mapping (`Term.match_type`). Values use the lowercase-snake convention emitted by upstream grounding pipelines (kg-microbe, manual curation). Three values are observed in the current corpus (kg_fallback, exact_match, synonym_match_ambiguous); the others are reserved for explicit curator use.",
+            "enum": [
+                "exact_match",
+                "kg_fallback",
+                "synonym_match_ambiguous",
+                "manual_curated",
+                "automated_expert_mapping",
+                "fuzzy"
+            ],
+            "title": "TermMatchTypeEnum",
+            "type": "string"
         },
         "TransporterAnnotation": {
             "additionalProperties": false,
@@ -1588,6 +3141,73 @@
                 "FLUORIDE_EXPORTER"
             ],
             "title": "TransporterTypeEnum",
+            "type": "string"
+        },
+        "UpdateActionEnum": {
+            "description": "Type of update action applied to an imported record",
+            "enum": [
+                "INITIAL_IMPORT",
+                "ENRICHED",
+                "CORRECTED",
+                "MERGED",
+                "REFRESHED",
+                "NORMALIZED"
+            ],
+            "title": "UpdateActionEnum",
+            "type": "string"
+        },
+        "UpdateEvent": {
+            "additionalProperties": false,
+            "description": "Record of a single update to an imported media recipe. Captures what changed, when, and why.",
+            "properties": {
+                "action": {
+                    "$ref": "#/$defs/UpdateActionEnum",
+                    "description": "Type of update action performed"
+                },
+                "fields_changed": {
+                    "description": "List of field names that were modified in this update. Example: [\"ingredients\", \"ph_value\", \"description\"]",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "import_version": {
+                    "description": "Import version that applied this update",
+                    "type": "string"
+                },
+                "notes": {
+                    "description": "Human-readable explanation of the update. Why was this change made? What was the context?",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "timestamp": {
+                    "description": "ISO 8601 timestamp when update was applied",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "timestamp",
+                "import_version",
+                "action"
+            ],
+            "title": "UpdateEvent",
+            "type": "object"
+        },
+        "VariantTypeEnum": {
+            "description": "Type of chemical variant relationship to parent",
+            "enum": [
+                "HYDRATE",
+                "SALT_FORM",
+                "ANHYDROUS",
+                "NAMED_HYDRATE",
+                "CHEMICAL_VARIANT"
+            ],
+            "title": "VariantTypeEnum",
             "type": "string"
         }
     },
