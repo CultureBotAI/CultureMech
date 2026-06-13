@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>7.0-7.4</dd>
+    <dd>{&#39;min&#39;: 7.0, &#39;max&#39;: 7.4}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: KOMODO ModelSEED | ID: 860 | DSMZ Medium: 860 (mediadive.medium:860) | Aerobic: Yes</dd>
 </dl>
@@ -475,12 +475,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;HESP1/SR1/TMC4/LUP medium&#34; to &#34;hesp1_sr1_tmc4_lup_medium&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:01:22.542095+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;7.0-7.4&#39; -&gt; {&#39;min&#39;: 7.0, &#39;max&#39;: 7.4}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:04:22+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/hesp1_sr1_tmc4_lup_medium.yaml</code>
   </small>
 </footer>

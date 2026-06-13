@@ -13,7 +13,6 @@ Phase 2 of the dismech-pattern port; see
 from __future__ import annotations
 
 import argparse
-import datetime as _dt
 import re
 import sys
 from pathlib import Path
@@ -135,7 +134,6 @@ def render_one(env: Environment, source_path: Path, out_dir: Path,
         medium=medium,
         composition_graph=build_ingredient_composition_graph(medium),
         source_path=src_display,
-        generated_at=_dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds"),
     )
     out_path.write_text(html)
     return "rendered", medium, slug
@@ -153,7 +151,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <body>
 <header>
 <h1>CultureMech — Media index</h1>
-<p class="muted">{count:,} media records, generated {generated_at}.</p>
+<p class="muted">{count:,} media records.</p>
 <p><a href="media_growth_review.html">Media growth evidence review</a></p>
 </header>
 {by_category}
@@ -187,7 +185,6 @@ def write_index(out_dir: Path, all_records: list[dict]) -> None:
     rows_total = sum(len(v) for v in by_cat.values())
     html = INDEX_TEMPLATE.format(
         count=rows_total,
-        generated_at=_dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds"),
         by_category=sections,
     )
     out_dir.mkdir(parents=True, exist_ok=True)

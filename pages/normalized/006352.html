@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>7.0-7.2</dd>
+    <dd>{&#39;min&#39;: 7.0, &#39;max&#39;: 7.2}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: KOMODO ModelSEED | ID: 715 | DSMZ Medium: 715 (mediadive.medium:715) | Aerobic: No</dd>
 </dl>
@@ -169,12 +169,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;COLUMBIA AGAR&#34; to &#34;columbia_agar&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:00:53.360883+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;7.0-7.2&#39; -&gt; {&#39;min&#39;: 7.0, &#39;max&#39;: 7.2}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:03:54+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/KOMODO_715_COLUMBIA_AGAR.yaml</code>
   </small>
 </footer>

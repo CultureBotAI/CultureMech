@@ -79,11 +79,11 @@ ingredients:
     value: '1'
     unit: G_PER_L
   term:
-    id: CHEBI:86477
-    label: Na2SO3 x 5 H2O
+    id: CHEBI:60720
+    label: sodium silicate
   mediaingredientmech_chebi_term:
-    id: CHEBI:86477
-    label: Na2SiO3 x 5 H2O
+    id: CHEBI:60720
+    label: sodium silicate
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
