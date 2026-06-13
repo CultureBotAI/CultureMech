@@ -308,8 +308,6 @@ target_organisms:
       this formulation differs from the parent (KI, SrCl2.6H2O, NaHCO3, different
       boric acid level); treat as variant-scoped evidence, not parent identity. |
       Identifiers: DSM 13166T'
-    snippet: Koschnitzki 2017 reports cultivation of I. pacificus LPC33 (DSM 13166T)
-      in '1/2 SME+S0 medium' with full recipe and anaerobic preparation.
 variants:
 - name: half_sme_s0_ignicoccus
   relationship: DERIVED_FROM

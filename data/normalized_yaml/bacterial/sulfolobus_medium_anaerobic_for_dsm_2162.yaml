@@ -298,11 +298,9 @@ target_organisms:
   evidence:
   - reference: doi:10.1128/mbio.01033-24
     supports: SUPPORT
-    explanation: 'Scoped to the aerobic_brocks_salts_dsm88 variant. NOT verified on
+    explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. NOT verified on
       the anaerobic parent (no Na2S/N2 reported); aerobic vented-bottle cultivation.
       | Identifiers: DSM 3772; DSM 1651'
-    snippet: A. brierleyi DSM-3772 cultured in Brock's salts with 1 g/L yeast extract
-      at 70C, acidified with concentrated H2SO4.
 - preferred_term: Metallosphaera hakonensis
   strain: HO1-1, DSM 7519
   genome_assembly_id:
@@ -310,37 +308,29 @@ target_organisms:
   evidence:
   - reference: doi:10.1128/mbio.01033-24
     supports: SUPPORT
-    explanation: 'Scoped to the aerobic_brocks_salts_dsm88 variant. Differs from anaerobic
+    explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. Differs from anaerobic
       parent: NH4Cl vs (NH4)2SO4, no Na2S, no N2 phase. | Identifiers: DSM 7519'
-    snippet: M. hakonensis HO1-1 in low-sulfate Brock's salts (DSM-88) + 10 g/L elemental
-      sulfur + 1 g/L yeast extract, 70C, pH 3, vented serum bottles.
 - preferred_term: Metallosphaera prunae
   strain: RON 12/II, DSM 10039
   evidence:
   - reference: doi:10.1128/mbio.01033-24
     supports: SUPPORT
-    explanation: 'Scoped to the aerobic_brocks_salts_dsm88 variant. NOT the anaerobic
+    explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. NOT the anaerobic
       parent formulation. | Identifiers: DSM 10039'
-    snippet: M. prunae RON 12/II in low-sulfate Brock's salts (DSM-88) + 10 g/L elemental
-      sulfur + 1 g/L yeast extract, 70C, pH 2, vented serum bottles.
 - preferred_term: Sulfurisphaera ohwakuensis
   strain: TA-1, DSM 12421
   evidence:
   - reference: doi:10.1128/mbio.01033-24
     supports: SUPPORT
-    explanation: 'Scoped to the aerobic_brocks_salts_dsm88 variant. Vented bottles;
+    explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. Vented bottles;
       not anaerobic parent. | Identifiers: DSM 12421'
-    snippet: S. ohwakuensis TA-1 in low-sulfate Brock's salts (DSM-88) + 10 g/L elemental
-      sulfur + 1 g/L yeast extract, 75C, pH 3.
 - preferred_term: Sulfurisphaera tokodaii
   strain: str. 7, DSM 16993
   evidence:
   - reference: doi:10.1128/mbio.01033-24
     supports: SUPPORT
-    explanation: 'Scoped to the aerobic_brocks_salts_dsm88 variant. NH4Cl, no Na2S,
+    explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. NH4Cl, no Na2S,
       vented bottles; not the anaerobic parent. | Identifiers: DSM 16993'
-    snippet: S. tokodaii str. 7 in low-sulfate Brock's salts (DSM-88) + 10 g/L elemental
-      sulfur + yeast extract (or glucose + casamino acids), 75C.
 - preferred_term: Sulfodiicoccus acidiphilus
   strain: HS-1T (= JCM 31740T = InaCC Ar79T)
   genome_assembly_id:
@@ -351,7 +341,7 @@ target_organisms:
     explanation: 'Closest match to the anaerobic parent of all DSM 2162 candidates
       (genuinely anaerobic: Na2S + reduced + H2/CO2). Basal MBS recipe is cited transitively,
       so exact identity is plausible but not provable from this source; scoped to
-      the reduced_anaerobic_mbsy variant. | Identifiers: JCM 31740T; InaCC Ar79T;
+      the reduced_anaerobic_mbsy_h2_co2 variant. | Identifiers: JCM 31740T; InaCC Ar79T;
       16S LC061218; 23S LC176656'
     snippet: Strain HS-1T grown in modified Brock's basal salt medium with yeast extract
       (MBSY); anaerobic tests used MBSY reduced with Na2S (0.5 g/L) + resazurin (1
@@ -394,5 +384,3 @@ variants:
     supports: SUPPORT
     explanation: Sakai & Kurosawa 2017 Methods. Basal MBS recipe cited to another
       reference.
-    snippet: Anaerobic tests used MBSY reduced with Na2S and resazurin under H2/CO2
-      headspace.

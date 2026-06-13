@@ -516,9 +516,6 @@ target_organisms:
       (Sekiguchi et al. 2000), so the exact match to the TOGO/NBRC M1624 formulation
       is not text-verified in this source. | Identifiers: 16S rRNA GenBank AB091329
       (set AB091323-AB091329); no culture-collection ID reported'
-    snippet: Terephthalate-degrading bacterium strain JT degraded terephthalate/benzoate
-      only in coculture with Methanospirillum hungatei; 37C, pH 7.0, anaerobic N2/CO2
-      (80:20), 20 ml in 50-ml serum vials without shaking.
 - preferred_term: Methanospirillum hungatei
   strain: NBRC 100397T (= DSM 864T = ATCC 27890T), JF-1T
   evidence:
@@ -529,5 +526,3 @@ target_organisms:
       does not print the co-culture basal recipe; curate as the named co-culture partner
       with recipe-identity flagged uncertain. | Identifiers: NBRC 100397T; DSM 864;
       ATCC 27890T; genome CP000254'
-    snippet: M. hungatei (DSM 864) was used as the syntrophic partner for strain JT
-      in terephthalate-degrading co-culture.

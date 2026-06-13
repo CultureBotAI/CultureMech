@@ -270,9 +270,9 @@ curation_history:
     is directly supported on DSMZ medium 88 (Sulfolobus medium) at pH 2.0, 70C (Auernik
     2008). Sulfolobus (Sulfuracidifex) metallicus DSM 6482 grows on recognizable DSM-88
     variants. Sulfolobus acidocaldarius DSM 639 was deliberately EXCLUDED: phase-2
-    found it grows on Brock''s salts (DSM #88 MINUS yeast extract), a distinct medium
-    family that warrants its own record, not an addition here. [added 2 organism(s),
-    1 variant(s)]'
+    found it grows on a plain Brock''s basal-salts medium (a distinct medium family,
+    not the DSM-88 formulation captured here) that warrants its own record, not an
+    addition here. [added 2 organism(s), 1 variant(s)]'
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []
@@ -306,8 +306,6 @@ target_organisms:
       DSM 6482. Relative to the parent (which lists sulfide ore) this is a recognizable
       supplemented MediaVariant rather than the exact parent recipe. | Identifiers:
       DSM 6482; also classified as Sulfuracidifex metallicus'
-    snippet: DSM6482 supplemented with 0.2 g/L yeast extract and 10 g/L elemental
-      sulfur, 65C, pH 2, on a DSM-88/Brock's salts recipe.
 variants:
 - name: dsmz88_sulfolobus_supplemented_yeast_extract_ferrous_iron
   relationship: SUPPLEMENTED_VARIANT
@@ -323,5 +321,3 @@ variants:
   - reference: doi:10.1128/AEM.02019-07
     supports: SUPPORT
     explanation: Auernik et al. 2008 documents the supplement set.
-    snippet: DSMZ 88 (pH 2) cultivation of DSMZ 5348 with 0.1% yeast extract; FeSO4.7H2O
-      or FeS2 additions.
