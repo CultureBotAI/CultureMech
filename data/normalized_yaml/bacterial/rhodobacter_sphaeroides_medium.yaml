@@ -242,7 +242,7 @@ target_organisms:
 - preferred_term: Rhodobacter sphaeroides
   term:
     id: NCBITaxon:1063
-    label: Rhodobacter sphaeroides
+    label: Cereibacter sphaeroides
   growth_metrics:
   - doubling_time_minutes: 1080.0
     evidence:

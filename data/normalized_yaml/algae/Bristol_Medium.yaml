@@ -102,7 +102,7 @@ target_organisms:
 - preferred_term: Chlorella pyrenoidosa
   term:
     id: NCBITaxon:3077
-    label: Chlorella pyrenoidosa
+    label: Chlorella vulgaris
   growth_metrics:
   - measurement_conditions: Commercial Bristol medium comparator in settled and
       activated sewage growth study.

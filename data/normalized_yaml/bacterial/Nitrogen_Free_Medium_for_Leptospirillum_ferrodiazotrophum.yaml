@@ -109,6 +109,7 @@ source_environment:
 - preferred_term: acid mine drainage
   term:
     id: ENVO:00002186
+    label: contaminated water
   notes: 'Extremely acidic (pH 0.5-1.0) subaerial biofilm formed at the air-solution
     interface of underground AMD streams and pools within the Richmond Mine. The mine
     contains massive pyrite (FeS₂) deposits that undergo microbially-mediated oxidation,

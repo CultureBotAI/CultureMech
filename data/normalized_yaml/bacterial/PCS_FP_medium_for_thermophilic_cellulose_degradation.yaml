@@ -109,3 +109,4 @@ source_environment:
 - preferred_term: compost
   term:
     id: ENVO:00002170
+    label: compost

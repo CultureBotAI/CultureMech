@@ -169,6 +169,7 @@ source_environment:
 - preferred_term: laboratory culture
   term:
     id: ENVO:01001405
+    label: laboratory environment
   notes: 'Laboratory synthetic coculture developed to optimize glycerol fermentation
     toward 1,3-propanediol production. Cultured under strict anaerobic conditions
     using Hungate techniques at 35°C with N2 gas phase. DIET occurs through physical

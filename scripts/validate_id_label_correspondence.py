@@ -119,6 +119,16 @@ _ERROR_VERDICTS = {
     "UNKNOWN_PREFIX",
 }
 
+# Path segments under which a `term`/`chebi_term` label-waiver does NOT apply:
+# organism (NCBITaxon) and environment (ENVO) groundings must carry the canonical
+# ontology label. Everywhere else a waived key is an INGREDIENT grounding whose
+# label is a curator formula/common-name (CHEBI "NaCl", FOODON "Yeast extract",
+# UBERON "Calf brains") and stays waived regardless of ontology.
+_CANONICAL_LABEL_CONTEXTS = (
+    "target_organisms",
+    "source_environment",
+)
+
 # Verdicts that are accepted (do NOT get recorded as findings and never fail
 # enforce). OK_ID_ONLY is a pass: the id resolved and the slot's label was
 # intentionally waived (curator-intended formula/common name).
@@ -463,14 +473,19 @@ def _walk_yaml(
                     label = node.get(label_key)
                     label = label if isinstance(label, str) else ""
                     cur = curie.strip()
-                    # Scope the label waiver to CHEMISTRY (CHEBI) groundings: the
-                    # waiver exists for curator formula/common-name labels on
-                    # chemical terms (e.g. CHEBI:15377 "Distilled water"). A bare
-                    # `term` key also appears on organism (NCBITaxon) and
-                    # environment (ENVO) blocks, whose labels MUST stay canonical
-                    # (per the skill spec) — so a wrong NCBITaxon/ENVO label must
-                    # not be silently waived just because it sits under `term`.
-                    effective_waived = waived and cur.startswith("CHEBI:")
+                    # Scope the label waiver to INGREDIENT groundings by context.
+                    # The waiver exists for curator formula/common-name labels on
+                    # ingredient terms (CHEBI "NaCl", FOODON "Yeast extract",
+                    # UBERON "Calf brains"). The `term` key is reused on organism
+                    # (target_organisms) and environment (source_environment)
+                    # blocks, whose labels MUST stay canonical (per the skill
+                    # spec) — so a `term`/`chebi_term` waiver does NOT apply when
+                    # the term sits in an organism/environment context, even
+                    # though the key name matches. Keying on context (not the id
+                    # prefix) keeps curator ingredient labels of every ontology
+                    # waived while still canonical-checking taxon/environment.
+                    in_canonical_ctx = any(seg in path for seg in _CANONICAL_LABEL_CONTEXTS)
+                    effective_waived = waived and not in_canonical_ctx
                     yield f"{path}.{id_key}", cur, (label or "").strip(), effective_waived, None
         for k, v in node.items():
             # Skip excluded grounding blocks entirely (no checks at all).

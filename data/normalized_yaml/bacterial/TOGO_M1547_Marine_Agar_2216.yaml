@@ -82,7 +82,7 @@ target_organisms:
 - preferred_term: Sneathiella glossodoripedis
   term:
     id: NCBITaxon:1236958
-    label: Sneathiella glossodoripedis
+    label: Sneathiella glossodoripedis JCM 23214
   genome_assembly_id:
   - GCA_000616095
   - GCF_000616095.1
