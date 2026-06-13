@@ -197,6 +197,9 @@ curation_history:
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: METHYLOVIRGULA LIGNI
+  term:
+    id: NCBITaxon:569860
+    label: Methylovirgula ligni
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1219_METHYLOVIRGULA_LIGNI_medium.yaml
   relationship: SOURCE_DUPLICATE

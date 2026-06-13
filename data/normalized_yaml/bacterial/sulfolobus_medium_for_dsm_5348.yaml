@@ -282,6 +282,9 @@ solutions:
   name: Unknown solution
 target_organisms:
 - preferred_term: Metallosphaera sedula
+  term:
+    id: NCBITaxon:43687
+    label: Metallosphaera sedula
   strain: DSM 5348T (TH2)
   genome_assembly_id:
   - GCA_000016605.1
@@ -296,6 +299,9 @@ target_organisms:
       oil bath at 70 rpm on DSMZ 88 medium (pH 2), supplemented with 0.1% yeast extract
       (YE).'
 - preferred_term: Sulfuracidifex metallicus
+  term:
+    id: NCBITaxon:47303
+    label: Sulfuracidifex metallicus
   strain: DSM 6482
   genome_assembly_id:
   - GCA_009729515.1
