@@ -27,6 +27,8 @@ class MediaIngredientMechLinker:
             "ingredients_matched": 0,
             "solutions_matched": 0,
             "no_match": 0,
+            "matched_non_chebi": 0,
+            "fuzzy_skipped": 0,
             "already_linked": 0,
             "errors": 0,
             "match_methods": {}
@@ -43,8 +45,10 @@ class MediaIngredientMechLinker:
         Returns:
             True if match found and added, False otherwise
         """
-        # Skip if already has MediaIngredientMech link
-        if 'mediaingredientmech_term' in ingredient:
+        # Skip if already has a MediaIngredientMech link (legacy id-based or
+        # current CHEBI-keyed).
+        if ('mediaingredientmech_term' in ingredient
+                or 'mediaingredientmech_chebi_term' in ingredient):
             self.stats['already_linked'] += 1
             return False
 
@@ -59,14 +63,66 @@ class MediaIngredientMechLinker:
         match = self.loader.find_match(name, chebi_id)
 
         if match:
-            mim_id = match.get('id')
-            mim_name = match.get('name', name)
+            # MIM is now CHEBI-keyed: the entity identifier lives in
+            # `identifier` (a CHEBI CURIE), and the curated name in
+            # `preferred_term`. Fall back to the legacy `id`/`name` fields.
+            mim_name = match.get('preferred_term') or match.get('name', name)
             match_method = match.get('match_method', 'unknown')
 
-            # Add MediaIngredientMech term
-            ingredient['mediaingredientmech_term'] = {
-                'id': mim_id,
-                'label': mim_name
+            # MIM keys curated ingredients by mixed ontologies (mostly CHEBI,
+            # plus FOODON/ENVO/NCIT/...). The `mediaingredientmech_chebi_term`
+            # field is strictly CHEBI, so resolve the matched entity to its
+            # CHEBI grounding and only write the link when one exists.
+            # Resolve the matched entity to its CHEBI grounding. Current schema
+            # carries it under `ontology_mapping.ontology_id`; older snapshots
+            # used flat `ontology_id`/`chebi_id` (kept here for parity with the
+            # loader's index builder); and `identifier`/`id` is itself a CHEBI
+            # CURIE in the migrated data.
+            ontology_mapping = match.get('ontology_mapping') or {}
+            mim_chebi_id = (
+                ontology_mapping.get('ontology_id')
+                or match.get('ontology_id')
+                or match.get('chebi_id')
+            )
+            if not (mim_chebi_id and str(mim_chebi_id).startswith('CHEBI:')):
+                ident = match.get('identifier') or match.get('id') or ''
+                mim_chebi_id = ident if str(ident).startswith('CHEBI:') else None
+
+            if not mim_chebi_id:
+                # Matched a MIM entity that is not CHEBI-keyed -> no strictly
+                # CHEBI linkage to record. Surface it in the unmatched report
+                # so name/synonym/fuzzy hits on non-CHEBI MIM entities are
+                # visible, not silently dropped. Counted separately from true
+                # no-matches so the `no_match` total stays interpretable.
+                # Report the ingredient's own query CHEBI id (not the MIM
+                # match, which has no CHEBI id).
+                self.stats['matched_non_chebi'] += 1
+                self.unmatched_ingredients.append({
+                    'name': name,
+                    'chebi_id': chebi_id or 'N/A',
+                    'matched_non_chebi': match.get('identifier')
+                    or match.get('id') or 'N/A',
+                })
+                return False
+
+            if match_method.startswith('fuzzy'):
+                # A high-but-imperfect fuzzy name match (>=0.95) can resolve to
+                # a CHEBI-keyed MIM entity whose CHEBI id differs from this
+                # ingredient's own grounding. Do not assert a CHEBI linkage
+                # from a fuzzy hit -- only exact CHEBI-id/name/synonym matches
+                # are reliable enough. Record it for the report instead.
+                self.stats['fuzzy_skipped'] += 1
+                self.unmatched_ingredients.append({
+                    'name': name,
+                    'chebi_id': chebi_id or 'N/A',
+                    'fuzzy_match': mim_chebi_id,
+                    'match_method': match_method,
+                })
+                return False
+
+            ingredient['mediaingredientmech_chebi_term'] = {
+                'id': mim_chebi_id,
+                'label': mim_name,
             }
 
             # Track statistics
@@ -97,9 +153,11 @@ class MediaIngredientMechLinker:
         """
         matched_count = 0
 
-        # Skip if already has MediaIngredientMech link at solution level
-        if 'mediaingredientmech_term' in solution:
-            self.stats['already_linked'] += 1
+        # enrich_solution only links composition ingredients; it never writes a
+        # solution-level MIM term. A solution-level link (if any) is orthogonal
+        # to whether its composition ingredients are linked, so we do NOT skip
+        # here -- each enrich_ingredient() below handles its own already-linked
+        # bookkeeping.
 
         # Process composition ingredients
         composition = solution.get('composition', [])
@@ -239,6 +297,8 @@ class MediaIngredientMechLinker:
         logger.info(f"Solutions with matched ingredients: {self.stats['solutions_matched']}")
         logger.info(f"Already linked (skipped): {self.stats['already_linked']}")
         logger.info(f"No match found: {self.stats['no_match']}")
+        logger.info(f"Matched but non-CHEBI (skipped): {self.stats['matched_non_chebi']}")
+        logger.info(f"Fuzzy matches (skipped, not asserted): {self.stats['fuzzy_skipped']}")
 
         if self.stats['match_methods']:
             logger.info("\nMatch methods breakdown:")

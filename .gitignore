@@ -96,6 +96,9 @@ docs/schema/
 *.bak
 .cache/
 
+# Runtime CHEBI/term cache (regenerated at runtime, not source)
+cache/
+
 # Data layers (see docs/DATA_LAYERS.md)
 # Three-tier system: data/raw/ → data/raw_yaml/ → data/normalized_yaml/
 
