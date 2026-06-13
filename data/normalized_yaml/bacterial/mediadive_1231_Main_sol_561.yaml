@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: K2HPO4
   concentration:
     value: '0.137931'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:40
     label: NiCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2WO4 x 2 H2O
   concentration:
     value: '0.000492611'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:249
     label: Na2WO4 x 2 H2O
   chebi_term:
-    id: CHEBI:48843
-    label: disodium selenite
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '985.2216748768473'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients, adjust pH to 6.0 with H2SO4 and sparge medium
   with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense
   medium under same gas atmosphere into serum vials (e.g., 20 ml medium in 100 ml
@@ -157,6 +157,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:14.929263+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

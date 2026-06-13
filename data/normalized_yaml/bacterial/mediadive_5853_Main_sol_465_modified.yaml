@@ -13,9 +13,9 @@ composition:
     label: Na2HPO4 x 2 H2O
   chebi_term:
     id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    label: Na2HPO4 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KH2PO4
   concentration:
     value: '1'
@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.1'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:213
     label: Ca(NO3)2 x 4 H2O
   chebi_term:
-    id: CHEBI:2509
-    label: agar
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'pH 7.25
 
   Rehydrate and cultivate lyophilized cells in the complex medium recommended for
@@ -92,6 +92,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:40.216273+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

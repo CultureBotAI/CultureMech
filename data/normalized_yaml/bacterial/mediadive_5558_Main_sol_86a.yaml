@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:190
     label: CaSO4 x 2 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.1'
@@ -85,9 +85,9 @@ composition:
     label: Na2HPO4 x 2 H2O
   chebi_term:
     id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    label: Na2HPO4 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: FeCl3 x 6 H2O
   concentration:
     value: '0.00047'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:82
     label: FeCl3 x 6 H2O
   chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.0022'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:14
     label: MnSO4 x H2O
   chebi_term:
-    id: CHEBI:31604
-    label: ferric ammonium citrate
+    id: CHEBI:86364
+    label: MnSO4 x H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '0.0005'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:35
     label: ZnSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: H3BO3
   concentration:
     value: '0.0005'
@@ -144,10 +144,10 @@ composition:
     id: mediadive.compound:121
     label: CuSO4 x 5 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '2.5e-05'
@@ -169,9 +169,9 @@ composition:
     label: CoCl2 x 6 H2O
   chebi_term:
     id: CHEBI:35696
-    label: cobalt dichloride
+    label: CoCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Peptone
   concentration:
     value: '3'
@@ -216,10 +216,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Agar
   concentration:
     value: '25'
@@ -230,9 +230,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.8 with NaOH.
 
   Solid media is prepared by the addition of 2 - 2.5% agar.'
@@ -259,6 +259,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:38.928089+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 9 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

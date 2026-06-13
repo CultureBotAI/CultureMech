@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaH2PO4 x 2 H2O
   concentration:
     value: '0.2'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:678
     label: NaH2PO4 x 2 H2O
   chebi_term:
-    id: CHEBI:63005
-    label: sodium nitrate
+    id: CHEBI:37585
+    label: NaH2PO4 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2HPO4 x 12 H2O
   concentration:
     value: '0.4'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:95
     label: Na2HPO4 x 12 H2O
   chebi_term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na pyruvate
   concentration:
     value: '2'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:762
     label: Na pyruvate
   chebi_term:
-    id: CHEBI:2509
-    label: agar
+    id: CHEBI:50144
+    label: Na pyruvate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na acetate
   concentration:
     value: '0.5'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:401
     label: Na acetate
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:32954
+    label: Na acetate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na malate
   concentration:
     value: '0.5'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:1316
     label: Na malate
   chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+    id: CHEBI:91261
+    label: Na malate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Casein hydrolysate
   concentration:
     value: '2'
@@ -169,9 +169,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -180,10 +180,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Adjust to pH 7.1
 curation_history:
 - timestamp: '2026-03-13T06:20:24.882616Z'
@@ -208,6 +208,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:25.086329+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 8 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

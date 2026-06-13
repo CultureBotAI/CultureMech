@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:1471
     label: CAPS buffer
   chebi_term:
-    id: CHEBI:3312
-    label: calcium dichloride
+    id: CHEBI:191088
+    label: Cyclohexylaminopropanesulfonic acid
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -62,9 +62,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Double distilled water
   concentration:
     value: '1000'
@@ -73,10 +73,10 @@ composition:
     id: mediadive.compound:1021
     label: Double distilled water
   chebi_term:
-    id: CHEBI:18050
-    label: L-glutamine
+    id: CHEBI:15377
+    label: Double distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: K2HPO4
   concentration:
     value: '0.0522528'
@@ -109,10 +109,10 @@ composition:
     id: mediadive.compound:401
     label: Na acetate
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:32954
+    label: Na acetate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 11.0 with NaOH.
 
   Fill into screw-cap tubes, leaving 60% headspace.
@@ -149,6 +149,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:26.737478+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

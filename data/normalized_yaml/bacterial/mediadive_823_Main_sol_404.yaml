@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:456
     label: Fe(NH4)2(SO4)2 x 7 H2O
   chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+    id: CHEBI:131378
+    label: Fe(NH4)2(SO4)2 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.000199203'
@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:40
     label: NiCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na-acetate x 3 H2O
   concentration:
     value: '2.98805'
@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:294
     label: Na-acetate x 3 H2O
   chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
+    id: CHEBI:32138
+    label: sodium acetate trihydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '0.996016'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:1852
     label: Sodium resazurin
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:8806
+    label: Resazurin
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaHCO3
   concentration:
     value: '2.98805'
@@ -97,9 +97,9 @@ composition:
     label: Methanol
   chebi_term:
     id: CHEBI:17790
-    label: methanol
+    label: Methanol
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '0.298805'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:770
     label: L-Cysteine HCl x H2O
   chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.298805'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:54
     label: Na2S x 9 H2O
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '896.4143426294821'
@@ -132,10 +132,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients (except bicarbonate, methanol, vitamins,
   cysteine and sulfide), then sparge medium with 80% H2 and 20% CO2 gas mixture for
   30 - 45 min to make it anoxic. Add and dissolve bicarbonate and adjust pH to 7.0,
@@ -173,6 +173,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:42.850645+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 8 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -37,9 +37,9 @@ composition:
     label: D-Maltose
   chebi_term:
     id: CHEBI:17306
-    label: maltose
+    label: D-Maltose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: D-Mannitol
   concentration:
     value: '16'
@@ -51,7 +51,7 @@ composition:
     id: CHEBI:16899
     label: D-mannitol
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: D-Mannose
   concentration:
     value: '40'
@@ -85,9 +85,9 @@ composition:
     label: L-Fucose
   chebi_term:
     id: CHEBI:18287
-    label: L-fucose
+    label: L-Fucose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: D-Trehalose
   concentration:
     value: '40'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:510
     label: L-Rhamnose
   chebi_term:
-    id: CHEBI:26546
-    label: rhamnose
+    id: CHEBI:62345
+    label: L-Rhamnose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -132,10 +132,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Prepare Solutions E, flush with nitrogen to make them anoxic,
   filter-sterilize and store at -20°C
 
@@ -164,6 +164,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:25.277277+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 5 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

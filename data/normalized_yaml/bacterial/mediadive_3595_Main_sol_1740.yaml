@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:322
     label: Tap water
   chebi_term:
-    id: CHEBI:17992
-    label: sucrose
+    id: CHEBI:15377
+    label: Tap water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Adjust to pH 7.0. Autoclave at 121°C for 20 min.
 curation_history:
 - timestamp: '2026-03-13T06:20:27.232584Z'
@@ -148,6 +148,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:27.646214+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

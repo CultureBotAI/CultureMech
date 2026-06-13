@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:781
     label: Ca-folinate
   chebi_term:
-    id: CHEBI:9532
-    label: thiamine(1+) diphosphate
+    id: CHEBI:31340
+    label: Ca-folinate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: beta-NAD
   concentration:
     value: '0.05'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:783
     label: Coenzyme A
   chebi_term:
-    id: CHEBI:11814
-    label: 3-hydroxy-3-methylglutaryl-CoA
+    id: CHEBI:15346
+    label: Coenzyme A
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: FAD
   concentration:
     value: '0.05'
@@ -75,7 +75,7 @@ composition:
     id: CHEBI:16238
     label: FAD
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Nicotinamide
   concentration:
     value: '0.025'
@@ -109,9 +109,9 @@ composition:
     label: Riboflavin
   chebi_term:
     id: CHEBI:17015
-    label: riboflavin
+    label: Riboflavin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Hemin
   concentration:
     value: '0.065'
@@ -144,10 +144,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Adjust pH to 7.0 with 1 N NaOH and filter-sterilize.
 curation_history:
 - timestamp: '2026-03-13T06:20:30.805136Z'
@@ -172,6 +172,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:31.650014+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 5 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

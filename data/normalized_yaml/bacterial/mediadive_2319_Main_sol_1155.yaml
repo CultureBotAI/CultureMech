@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.75'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KCl
   concentration:
     value: '0.66'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:353
     label: NaBr
   chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:63004
+    label: NaBr
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: H3BO3
   concentration:
     value: '0.03'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:176
     label: SrCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:8346
-    label: potassium iodide
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KJ
   concentration:
     value: '50'
@@ -145,9 +145,9 @@ composition:
     label: Elemental sulfur
   chebi_term:
     id: CHEBI:33403
-    label: elemental sulfur
+    label: Elemental sulfur
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Double distilled water
   concentration:
     value: '1000'
@@ -156,10 +156,10 @@ composition:
     id: mediadive.compound:1021
     label: Double distilled water
   chebi_term:
-    id: CHEBI:18050
-    label: L-glutamine
+    id: CHEBI:15377
+    label: Double distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2S
   concentration:
     value: '0.5'
@@ -216,6 +216,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:21.257275+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

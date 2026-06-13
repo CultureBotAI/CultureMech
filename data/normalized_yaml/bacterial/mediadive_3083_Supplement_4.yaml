@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:2151
     label: Cholesterol
   chebi_term:
-    id: CHEBI:16113
-    label: cholesterol
+    id: CHEBI:140435
+    label: cholesterol-2,2,3,4,4,6-d6
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Ethanol
   concentration:
     value: '1'
@@ -25,9 +25,9 @@ composition:
     label: Ethanol
   chebi_term:
     id: CHEBI:16236
-    label: ethanol
+    label: Ethanol
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: 'Cholesterol (1 mg/ml); in Ethanol (100%); store at -20°C
 
 
@@ -55,6 +55,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:25.340559+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

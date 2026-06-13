@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:1852
     label: Sodium resazurin
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:8806
+    label: Resazurin
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Urea
   concentration:
     value: '1'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:339
     label: Urea
   chebi_term:
-    id: CHEBI:15676
-    label: allantoin
+    id: CHEBI:16199
+    label: Urea
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Na-thioglycolate
   concentration:
     value: '0.75'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Dissolve ingredients (except urea and thioglycolate), boil medium
   for 1 min, then cool to room temperature under 80% N2 and 20% CO2 gas mixture. Add
   thioglycolate, dispense medium under same gas atmosphere into anoxic Hungate-type
@@ -129,6 +129,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:20.485115+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

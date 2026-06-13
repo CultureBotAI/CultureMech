@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:65
     label: Na2S2O3 x 5 H2O
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sulfur
   concentration:
     value: '10'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:80
     label: Sulfur
   chebi_term:
-    id: CHEBI:17909
-    label: polysulfur
+    id: CHEBI:26833
+    label: Sulfur
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: 'Prepare the medium under an atmosphere of H2/CO2 (80:20) without
   adding NaNO3, Na2S2O3 x 5 H20 and NaHCO3 in serum bottles and seal the serum tubes
   with butyl rubber stoppers. Steam medium for 3 hours on each of 3 successive days.
@@ -84,6 +84,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:27.515250+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

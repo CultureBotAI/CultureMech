@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:678
     label: NaH2PO4 x 2 H2O
   chebi_term:
-    id: CHEBI:63005
-    label: sodium nitrate
+    id: CHEBI:37585
+    label: NaH2PO4 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2SiO3 x 9 H2O
   concentration:
     value: '1'
@@ -37,9 +37,9 @@ composition:
     label: Na2SiO3 x 9 H2O
   chebi_term:
     id: CHEBI:132108
-    label: sodium silicate nonahydrate
+    label: Na2SiO3 x 9 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Natural sea water
   concentration:
     value: '1000'
@@ -62,9 +62,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: "Make up to 1 litre with filtered natural seawater. Adjust pH to\
   \ 8.0 with 1M NaOH or 1 M HCl\r\nprior to autoclaving. For agar add 15g per litre\
   \ Bacteriological Agar. Autoclave at 15 psi for 15\r\nminutes.\nSilicate can react\
@@ -92,6 +92,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:41.175628+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

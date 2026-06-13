@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:1490
     label: (NH4)Cl
   chebi_term:
-    id: CHEBI:104586
-    label: tetrahexadecanoyl cardiolipin
+    id: CHEBI:31206
+    label: (NH4)Cl
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: KH2PO4
   concentration:
     value: '0.018'
@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: K2HPO4
   concentration:
     value: '0.044'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:753
     label: Na2HPO4 x 7 H2O
   chebi_term:
-    id: CHEBI:3448
-    label: Casein
+    id: CHEBI:34683
+    label: Na2HPO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.046'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:82
     label: FeCl3 x 6 H2O
   chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na-lactate
   concentration:
     value: '0.4'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:200
     label: Na-lactate
   chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:75228
+    label: Na-lactate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Peptone
   concentration:
     value: '1'
@@ -127,10 +127,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients (except vitamins) in distilled water.
 
   After sterilization add the 50 µl vitamin solution.'
@@ -157,6 +157,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:27.019881+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

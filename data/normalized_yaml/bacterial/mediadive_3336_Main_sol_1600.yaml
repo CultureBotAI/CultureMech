@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:1445
     label: DL-aspartic acid
   chebi_term:
-    id: CHEBI:17053
-    label: L-aspartic acid
+    id: CHEBI:22660
+    label: DL-aspartic acid
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Glutamic acid
   concentration:
     value: '1.39665'
@@ -37,9 +37,9 @@ composition:
     label: L-Glutamic acid
   chebi_term:
     id: CHEBI:16015
-    label: L-glutamic acid
+    label: L-Glutamic acid
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Glutamine
   concentration:
     value: '0.29228'
@@ -49,9 +49,9 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: L-glutamine
+    label: L-Glutamine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Proline
   concentration:
     value: '0.837989'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:1130
     label: L-Proline
   chebi_term:
-    id: CHEBI:16313
-    label: D-proline
+    id: CHEBI:17203
+    label: L-Proline
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: alpha-ketoglutaric acid
   concentration:
     value: '0.835196'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:1448
     label: Demineralized water
   chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:15377
+    label: Demineralized water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Demineralized water
   concentration:
     value: '69.83240223463687'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:1448
     label: Demineralized water
   chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
+    id: CHEBI:15377
+    label: Demineralized water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Tryptose-phosphate
   concentration:
     value: '13.966480446927374'
@@ -165,6 +165,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:26.462642+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

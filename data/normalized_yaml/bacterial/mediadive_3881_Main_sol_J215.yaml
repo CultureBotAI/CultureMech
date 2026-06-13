@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:247
     label: Fe(NH4)2(SO4)2 x 6 H2O
   chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:76181
+    label: ferrous ammonium sulfate hexahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:739
     label: (NH4)2Ni(SO4)2 x 6 H2O
   chebi_term:
-    id: CHEBI:33118
-    label: boric acid
+    id: CHEBI:86149
+    label: (NH4)2Ni(SO4)2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2SeO4
   concentration:
     value: '0.0001'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:249
     label: Na2WO4 x 2 H2O
   chebi_term:
-    id: CHEBI:48843
-    label: disodium selenite
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaHCO3
   concentration:
     value: '2.2'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:65
     label: Na2S2O3 x 5 H2O
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '865'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Adjust pH to 7.0 with 1 N H2SO4, and sterilize by filtration. Dispense
   the medium into bottles under a N2-CO2-O2 (80:20:1) atmosphere. Pressurize inoculated
   bottles to 200 kPa N2-CO2-O2 (80:20:1).
@@ -150,6 +150,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:29.128402+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:144
     label: Na-formate
   chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
+    id: CHEBI:62965
+    label: Na-formate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na-acetate
   concentration:
     value: '0.159521'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:23
     label: Na-acetate
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:32954
+    label: Na-acetate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '0.0199402'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:54
     label: Na2S x 9 H2O
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '997.0089730807578'
@@ -132,10 +132,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve sodium chloride and hydrogenphosphate, then sparge solution
   with 100% N2 gas for at least 30 - 45 min to make it anoxic. Add and dissolve hydrogencarbonate
   and carbonate while gassing the head space only, then dispense under 100% N2 gas
@@ -174,6 +174,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:26.344861+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

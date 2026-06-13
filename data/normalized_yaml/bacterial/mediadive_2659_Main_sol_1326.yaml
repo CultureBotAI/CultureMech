@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:461
     label: HEPES buffer
   chebi_term:
-    id: CHEBI:18050
-    label: L-glutamine
+    id: CHEBI:19708
+    label: HEPES buffer
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Ferric ammonium citrate
   concentration:
     value: '0.1'
@@ -62,9 +62,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: After autoclaving add 20ml 1M HEPES sterile buffer (pH 7.8) and
   0.1ml of a sterile 3mg/ml of ferric ammonium citrate. Final pH is 7.5. The medium
   may be solidified by adding 15 g/l agar.
@@ -91,6 +91,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:23.156327+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

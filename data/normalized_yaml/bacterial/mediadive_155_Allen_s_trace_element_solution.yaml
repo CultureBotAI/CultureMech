@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:36
     label: MnCl2 x 4 H2O
   chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.45'
@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:196
     label: Na2B4O7 x 10 H2O
   chebi_term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '0.022'
@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:35
     label: ZnSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: CuCl2 x 2 H2O
   concentration:
     value: '0.005'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:39
     label: CuCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.003'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:198
     label: CoSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:33118
-    label: boric acid
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Adjust pH of final solution to 2 with 1 N HCl.
 curation_history:
 - timestamp: '2026-03-13T06:20:17.022264Z'
@@ -124,6 +124,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:16.777016+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

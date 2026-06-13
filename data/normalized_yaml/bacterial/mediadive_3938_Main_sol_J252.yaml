@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:12
     label: FeSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2-EDTA
   concentration:
     value: '0.032'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.031'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:1000
     label: MnSO4 x n H2O
   chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
+    id: CHEBI:86360
+    label: manganese(II) sulfate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.0018'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:196
     label: Na2B4O7 x 10 H2O
   chebi_term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
+    id: CHEBI:131366
+    label: disodium tetraborate decahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Glycine
   concentration:
     value: '1.5'
@@ -156,10 +156,10 @@ composition:
     id: mediadive.compound:54
     label: Na2S x 9 H2O
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Resazurin
   concentration:
     value: '0.001'
@@ -180,10 +180,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Mix components except yeast extract, bovine serum albumin and Na2S
   x 9H2O. Bring to a boil for 5-10 sec and flush with N2. Adjust pH to 7.6 at 80-90C.
   After cooling to room temperature, dispense the medium into serum bottles under
@@ -215,6 +215,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:29.476716+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

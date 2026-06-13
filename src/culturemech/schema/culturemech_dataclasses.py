@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-06-03T00:14:05
+# Generation date: 2026-06-09T23:36:11
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -3207,6 +3207,9 @@ class TermMatchTypeEnum(EnumDefinitionImpl):
     fuzzy = PermissibleValue(
         text="fuzzy",
         description="Fuzzy / approximate string match.")
+    corpus_consensus = PermissibleValue(
+        text="corpus_consensus",
+        description="""Borrowed from the unanimous reliable grounding of the same ingredient label elsewhere in the corpus (G25 Phase 1) — used to replace a low-confidence kg_fallback chebi_term without an external lookup.""")
 
     _defn = EnumDefinition(
         name="TermMatchTypeEnum",

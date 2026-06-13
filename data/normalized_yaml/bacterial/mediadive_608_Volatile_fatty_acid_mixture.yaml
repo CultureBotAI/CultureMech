@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:380
     label: Acetic acid
   chebi_term:
-    id: CHEBI:15611
-    label: sarcosine
+    id: CHEBI:15366
+    label: Acetic acid
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Propionic acid
   concentration:
     value: '192.145'
@@ -25,9 +25,9 @@ composition:
     label: Propionic acid
   chebi_term:
     id: CHEBI:30768
-    label: propionic acid
+    label: Propionic acid
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Butyric acid
   concentration:
     value: '129'
@@ -111,6 +111,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:40.878951+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

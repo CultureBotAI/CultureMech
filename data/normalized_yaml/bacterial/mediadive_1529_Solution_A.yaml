@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: K2SO4
   concentration:
     value: '2.59875'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:23
     label: Na-acetate
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:32954
+    label: Na-acetate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2S2O3 x 5 H2O
   concentration:
     value: '0.10395'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:65
     label: Na2S2O3 x 5 H2O
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '0.779626'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:507
     label: MOPS buffer
   chebi_term:
-    id: CHEBI:75228
-    label: sodium lactate
+    id: CHEBI:44115
+    label: 3-(N-morpholino)propanesulfonic acid
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '997.9209979209979'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'The acronym MOPS stands for the organic buffer N-morpholinopropanesulfonic
   acid at pH 7.0. The pH of solution A is 7.0. Boil the medium under N2 gas and distribute
   about 13 ml in 15 ml Hungate tubes. Autoclave at 121°C for 15 minutes.
@@ -153,6 +153,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:16.625828+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 5 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

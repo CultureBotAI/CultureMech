@@ -13,9 +13,9 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: biotin
+    label: Biotin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Nicotinic acid
   concentration:
     value: '0.2'
@@ -37,9 +37,9 @@ composition:
     label: Thiamine
   chebi_term:
     id: CHEBI:26948
-    label: thiamine
+    label: Thiamine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '0.1'
@@ -61,9 +61,9 @@ composition:
     label: Pantothenate
   chebi_term:
     id: CHEBI:16454
-    label: pantothenate
+    label: Pantothenate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Pyridoxine hydrochloride
   concentration:
     value: '0.5'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 curation_history:
 - timestamp: '2026-03-13T06:20:19.212251Z'
   curator: culturemech-id-assigner-v1.0
@@ -135,6 +135,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:19.076870+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

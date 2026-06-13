@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:260
     label: FeCl2 x 4 H2O
   chebi_term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: H3BO3
   concentration:
     value: '0.0501505'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:39
     label: CuCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '0.0401204'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:36
     label: MnCl2 x 4 H2O
   chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '0.0501505'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:120
     label: (NH4)6Mo7O24 x 4 H2O
   chebi_term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
+    id: CHEBI:91249
+    label: ammonium molybdate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: AlCl3
   concentration:
     value: '0.0501505'
@@ -109,9 +109,9 @@ composition:
     label: CoCl2 x 6 H2O
   chebi_term:
     id: CHEBI:35696
-    label: cobalt dichloride
+    label: CoCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.0802407'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:40
     label: NiCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: EDTA
   concentration:
     value: '0.501505'
@@ -132,10 +132,10 @@ composition:
     id: mediadive.compound:271
     label: EDTA
   chebi_term:
-    id: CHEBI:42191
-    label: EDTA(4-)
+    id: CHEBI:64755
+    label: EDTA
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '989.9699097291875'
@@ -144,10 +144,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve FeCl2 x 4H2O in HCl solution at first. Then add 300 ml
   distilled water and dissolve the remaining components. Fill up to 1.0 L.
 
@@ -176,6 +176,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:33.180542+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 8 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -43,10 +43,10 @@ composition:
     id: mediadive.compound:322
     label: Tap water
   chebi_term:
-    id: CHEBI:17992
-    label: sucrose
+    id: CHEBI:15377
+    label: Tap water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.075'
@@ -67,10 +67,10 @@ composition:
     id: mediadive.compound:213
     label: Ca(NO3)2 x 4 H2O
   chebi_term:
-    id: CHEBI:2509
-    label: agar
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaHCO3
   concentration:
     value: '0.016'
@@ -103,10 +103,10 @@ composition:
     id: mediadive.compound:244
     label: K2HPO4 x 3 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -115,10 +115,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: "The following inorganic solution may substitute for tap water:\
   \ \nAdjust to pH 7.2."
 curation_history:
@@ -150,6 +150,11 @@ curation_history:
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:38:21.410747+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:462
     label: N-Acetylglucosamine
   chebi_term:
-    id: CHEBI:506227
-    label: N-acetylglucosamine
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Na-pyruvate
   concentration:
     value: '100'
@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:113
     label: Na-pyruvate
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:50144
+    label: Na-pyruvate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: "N-Acetylglucosamin and pyruvate solution per 50 ml : \n\nOriginal\
   \ volume: 50 mL"
 curation_history:
@@ -53,6 +53,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:38.989146+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

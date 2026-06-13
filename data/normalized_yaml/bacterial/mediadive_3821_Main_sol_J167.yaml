@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KCl
   concentration:
     value: '1'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:190
     label: CaSO4 x 2 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaCl
   concentration:
     value: '200'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:839
     label: Na glutamate
   chebi_term:
-    id: CHEBI:53426
-    label: tween 80
+    id: CHEBI:64220
+    label: Na glutamate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -133,9 +133,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Add components except Na2CO3 to distilled water and bring volume
   to 900 ml. Adjust pH to 6.5 and autoclave. Dissolve Na2CO3 in 100 ml distilled water
   and autoclave separately. Aseptically add the sterile Na2CO3 solution to the medium.
@@ -163,6 +163,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:28.803899+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:
