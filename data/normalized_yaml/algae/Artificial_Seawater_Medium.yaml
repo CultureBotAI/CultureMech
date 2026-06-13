@@ -178,7 +178,7 @@ target_organisms:
 - preferred_term: Richelia intracellularis
   term:
     id: NCBITaxon:98443
-    label: Richelia intracellularis
+    label: Richelia
   evidence:
   - reference: PMID:33083143
     supports: SUPPORT

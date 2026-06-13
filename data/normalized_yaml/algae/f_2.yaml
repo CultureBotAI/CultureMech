@@ -257,6 +257,7 @@ source_environment:
 - preferred_term: marine environment
   term:
     id: ENVO:00002149
+    label: sea water
   notes: 'Synthetic community assembled in laboratory culture to model diatom-bacteria
     interactions in marine phytoplankton. Members were isolated from marine environments
     and maintained under controlled conditions to study dynamic relationships between

@@ -100,7 +100,7 @@ target_organisms:
 - preferred_term: Arthrospira platensis
   term:
     id: NCBITaxon:118562
-    label: Arthrospira platensis
+    label: Limnospira platensis
   growth_metrics:
   - measurement_conditions: Conventional Spirulina medium control compared with
       effluent-based medium during Arthrospira platensis cultivation.
