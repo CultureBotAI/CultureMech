@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>6.4-6.8</dd>
+    <dd>{&#39;min&#39;: 6.4, &#39;max&#39;: 6.8}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: KOMODO ModelSEED | ID: 337_replace_rumen fluid_with_crude egg yolk phosphatidylcholine (Sigma, type IX-E) | DSMZ Medium: 337 (mediadive.medium:337) | Aerobic: Yes</dd>
 </dl>
@@ -577,12 +577,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;SYNTROPHOCOCCUS SUCROMUTANS medium_replace_rumen fluid_with_crude egg yolk phosphatidylcholine (Sigma, type IX-E)&#34; to &#34;syntrophococcus_sucromutans_medium_replace_rumen_fluid_with_crude_egg_yolk_phosphatidylcholine_sigma_type_ix_e&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:02:07.064058+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;6.4-6.8&#39; -&gt; {&#39;min&#39;: 6.4, &#39;max&#39;: 6.8}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:05:08+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/syntrophococcus_sucromutans_medium_replace_rumen_fluid_with_crude_egg_yolk_phosphatidylcholine_sigma_type_ix_e.yaml</code>
   </small>
 </footer>

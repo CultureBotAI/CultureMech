@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>6.5-7.0</dd>
+    <dd>{&#39;min&#39;: 6.5, &#39;max&#39;: 7.0}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: KOMODO ModelSEED | ID: 985 | DSMZ Medium: 985 (mediadive.medium:985) | Aerobic: Yes</dd>
 </dl>
@@ -683,12 +683,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;TEPIDIBACTER medium&#34; to &#34;tepidibacter_medium&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:02:07.504387+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;6.5-7.0&#39; -&gt; {&#39;min&#39;: 6.5, &#39;max&#39;: 7.0}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:05:08+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/tepidibacter_medium.yaml</code>
   </small>
 </footer>
