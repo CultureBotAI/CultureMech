@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:423
     label: Sea Salt
-  chebi_term:
-    id: CHEBI:63005
-    label: sodium nitrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: NH4Cl
   concentration:
     value: '0.0998004'
@@ -142,6 +137,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:48:52.451633+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -23,11 +23,6 @@ composition:
   term:
     id: mediadive.compound:1104
     label: Heart Infusion Broth
-  chebi_term:
-    id: CHEBI:2509
-    label: agar
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -156,10 +151,10 @@ composition:
     id: mediadive.compound:8
     label: MgSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '0.68'
@@ -179,11 +174,6 @@ composition:
   term:
     id: mediadive.compound:1648
     label: Clarified rumen fluid
-  chebi_term:
-    id: CHEBI:17057
-    label: cellobiose
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Distilled water
   concentration:
     value: '500'
@@ -242,6 +232,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:48:01.039191+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '3 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

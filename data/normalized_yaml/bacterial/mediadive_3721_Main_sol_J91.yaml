@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:191
     label: KNO3
   chebi_term:
-    id: CHEBI:17632
-    label: nitrate
+    id: CHEBI:63043
+    label: potassium nitrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: exact_match
 - preferred_term: NaHCO3
   concentration:
     value: '0.5'
@@ -63,6 +63,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:47:56.985360+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

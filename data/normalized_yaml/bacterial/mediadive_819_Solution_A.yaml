@@ -23,11 +23,6 @@ composition:
   term:
     id: mediadive.compound:458
     label: Proteose peptone no. 2
-  chebi_term:
-    id: CHEBI:59640
-    label: N-acetylglucosamine
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Tryptone peptone
   concentration:
     value: '1'
@@ -35,11 +30,6 @@ composition:
   term:
     id: mediadive.compound:164
     label: Tryptone peptone
-  chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Proteose yeastolate
   concentration:
     value: '1'
@@ -47,11 +37,6 @@ composition:
   term:
     id: mediadive.compound:460
     label: Proteose yeastolate
-  chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: HEPES buffer
   concentration:
     value: '6'
@@ -178,6 +163,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 5 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:50:10.884216+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '3 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

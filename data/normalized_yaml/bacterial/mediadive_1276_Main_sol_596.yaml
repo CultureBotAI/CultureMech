@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:191
     label: KNO3
   chebi_term:
-    id: CHEBI:17632
-    label: nitrate
+    id: CHEBI:63043
+    label: potassium nitrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: exact_match
 - preferred_term: Sodium glycerophosphate
   concentration:
     value: '0.1'
@@ -47,11 +47,6 @@ composition:
   term:
     id: mediadive.compound:71
     label: Tryptone
-  chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -71,11 +66,6 @@ composition:
   term:
     id: mediadive.compound:286
     label: Sea water
-  chebi_term:
-    id: CHEBI:75228
-    label: sodium lactate
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: 'pH 7.0
 
   Artificial sea water is prepared from a marine aquarium salts mixture.'
@@ -107,6 +97,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:44:58.050702+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '3 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

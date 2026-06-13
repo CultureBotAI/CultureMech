@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:8
     label: MgSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.05'
@@ -71,11 +71,6 @@ composition:
   term:
     id: mediadive.compound:646
     label: Meat peptone
-  chebi_term:
-    id: CHEBI:26710
-    label: 1% sodium chloride
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Soy peptone
   concentration:
     value: '3.3'
@@ -83,11 +78,6 @@ composition:
   term:
     id: mediadive.compound:75
     label: Soy peptone
-  chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -107,11 +97,6 @@ composition:
   term:
     id: mediadive.compound:208
     label: Proteose peptone
-  chebi_term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Meat extract
   concentration:
     value: '2'
@@ -178,6 +163,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:47:01.847729+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '4 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

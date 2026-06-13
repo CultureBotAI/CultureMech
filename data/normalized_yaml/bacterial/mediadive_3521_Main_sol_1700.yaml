@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:191
     label: KNO3
   chebi_term:
-    id: CHEBI:17632
-    label: nitrate
+    id: CHEBI:63043
+    label: potassium nitrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: exact_match
 - preferred_term: Na-acetate
   concentration:
     value: '0.798403'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:30
     label: Na-thioglycolate
   chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:86481
+    label: sodium thioglycolate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Ascorbic acid
   concentration:
     value: '0.0998004'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:8
     label: MgSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2CO3
   concentration:
     value: '0.998004'
@@ -175,6 +175,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:47:43.361775+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '3 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

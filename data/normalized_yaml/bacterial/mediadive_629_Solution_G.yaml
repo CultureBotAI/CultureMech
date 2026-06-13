@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:2082
     label: L-α-Phosphatidylcholine
   chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
+    id: CHEBI:86658
+    label: L-alpha-Phosphatidylcholine
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: exact_match
 - preferred_term: Methanol
   concentration:
     value: '792'
@@ -57,6 +57,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:50:04.476229+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

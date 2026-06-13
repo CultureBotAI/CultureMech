@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:124
     label: Trypticase peptone
-  chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -47,11 +42,6 @@ composition:
   term:
     id: mediadive.compound:491
     label: Meat infusion
-  chebi_term:
-    id: CHEBI:3312
-    label: calcium dichloride
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Glucose
   concentration:
     value: '5'
@@ -167,6 +157,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:50:14.345624+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

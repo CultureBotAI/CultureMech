@@ -23,11 +23,6 @@ composition:
   term:
     id: mediadive.compound:2152
     label: Natural sea water
-  chebi_term:
-    id: CHEBI:17632
-    label: nitrate
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: "Make up to 1 litre with filtered natural sea water.  Adjust the\
   \ pH to 7.6 – 7.8 with\r\n1N NaOH or 1N HCl. Autoclave at 15 psi.\nAlternatively\
   \ use \"Ultramarine Synthetica\" sea salts 33.6 g and make up to 1 \r\nlitre  with\
@@ -55,6 +50,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:49:58.360099+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

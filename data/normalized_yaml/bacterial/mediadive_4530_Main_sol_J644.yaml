@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:1607
     label: Marine broth 2216
-  chebi_term:
-    id: CHEBI:50144
-    label: sodium pyruvate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -35,11 +30,6 @@ composition:
   term:
     id: mediadive.compound:286
     label: Sea water
-  chebi_term:
-    id: CHEBI:75228
-    label: sodium lactate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Distilled water
   concentration:
     value: '250'
@@ -80,6 +70,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:48:36.326191+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

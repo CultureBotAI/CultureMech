@@ -1,6 +1,6 @@
 signal	key	variants
-A_name_multi_chebi	mgso4 x 7 h2o	{'CHEBI:31795': 3077, 'CHEBI:32599': 127}
-A_name_multi_chebi	na2moo4 x 2 h2o	{'CHEBI:75213': 2878, 'CHEBI:75215': 137}
+A_name_multi_chebi	mgso4 x 7 h2o	{'CHEBI:31795': 4322, 'CHEBI:32599': 127}
+A_name_multi_chebi	na2moo4 x 2 h2o	{'CHEBI:75213': 3196, 'CHEBI:75215': 137}
 A_name_multi_chebi	vitamin b12	{'CHEBI:17439': 1987, 'CHEBI:176843': 358}
 A_name_multi_chebi	glucose	{'CHEBI:17234': 1627, 'CHEBI:42758': 522}
 A_name_multi_chebi	mgcl2 x 6 h2o	{'CHEBI:86345': 1995, 'CHEBI:6636': 87}
@@ -8,18 +8,18 @@ A_name_multi_chebi	na2seo3 x 5 h2o	{'CHEBI:131361': 1228, 'CHEBI:48843': 73}
 A_name_multi_chebi	calcium pantothenate	{'CHEBI:31345': 998, 'CHEBI:3374': 7}
 A_name_multi_chebi	starch	{'CHEBI:28017': 577, 'CHEBI:85248': 29}
 A_name_multi_chebi	d-glucose	{'CHEBI:17634': 459, 'CHEBI:42758': 138}
+A_name_multi_chebi	kno3	{'CHEBI:58242': 309, 'CHEBI:63043': 158, 'CHEBI:17632': 98}
 A_name_multi_chebi	dipotassium phosphate	{'CHEBI:131527': 475, 'CHEBI:63036': 1}
-A_name_multi_chebi	kno3	{'CHEBI:58242': 309, 'CHEBI:17632': 98, 'CHEBI:63043': 2}
 A_name_multi_chebi	nano3	{'CHEBI:63005': 147, 'CHEBI:59148': 245}
 A_name_multi_chebi	cacl2·2h2o	{'CHEBI:86158': 390, 'CHEBI:64183': 1}
 A_name_multi_chebi	fe(iii) citrate	{'CHEBI:144421': 265, 'CHEBI:4991': 6}
 A_name_multi_chebi	dextrose	{'CHEBI:17234': 157, 'CHEBI:4167': 74, 'CHEBI:42758': 27}
+A_name_multi_chebi	na2seo4	{'CHEBI:59160': 104, 'CHEBI:77775': 145}
 A_name_multi_chebi	calcium chloride dihydrate	{'CHEBI:86158': 227, 'CHEBI:3312': 2}
 A_name_multi_chebi	mgcl2·6h2o	{'CHEBI:86345': 226, 'CHEBI:6635': 1}
 A_name_multi_chebi	d(+)-glucose	{'CHEBI:17634': 224, 'CHEBI:42758': 3}
 A_name_multi_chebi	hepes	{'CHEBI:46756': 156, 'CHEBI:42334': 65, 'CHEBI:143268': 1}
 A_name_multi_chebi	magnesium sulfate heptahydrate	{'CHEBI:31795': 58, 'CHEBI:32599': 2, 'CHEBI:86463': 160}
-A_name_multi_chebi	na2seo4	{'CHEBI:59160': 104, 'CHEBI:77775': 108}
 A_name_multi_chebi	iron (ii) sulfate heptahydrate	{'CHEBI:75836': 168, 'CHEBI:75832': 5}
 A_name_multi_chebi	zinc sulfate heptahydrate	{'CHEBI:62985': 3, 'CHEBI:32312': 167}
 A_name_multi_chebi	l-cysteine hcl	{'CHEBI:52891': 132, 'CHEBI:91247': 29}
@@ -33,19 +33,19 @@ A_name_multi_chebi	sodium citrate	{'CHEBI:53258': 67, 'CHEBI:32142': 47}
 A_name_multi_chebi	l-cysteine	{'CHEBI:17561': 111, 'CHEBI:35235': 3}
 A_name_multi_chebi	mes	{'CHEBI:39010': 76, 'CHEBI:39005': 34}
 A_name_multi_chebi	cysteine-hcl	{'CHEBI:52891': 104, 'CHEBI:91247': 4}
-A_name_multi_chebi	calcium chloride	{'CHEBI:86158': 88, 'CHEBI:3312': 6}
+A_name_multi_chebi	na-thioglycolate	{'CHEBI:86481': 97, 'CHEBI:30066': 4}
+A_name_multi_chebi	calcium chloride	{'CHEBI:86158': 91, 'CHEBI:3312': 6}
 A_name_multi_chebi	citric acid	{'CHEBI:53258': 51, 'CHEBI:30769': 42}
 A_name_multi_chebi	mops	{'CHEBI:39074': 74, 'CHEBI:44115': 17}
 A_name_multi_chebi	magnesium chloride hexahydrate	{'CHEBI:6636': 2, 'CHEBI:86345': 74}
-A_name_multi_chebi	na-thioglycolate	{'CHEBI:86481': 70, 'CHEBI:30066': 4}
 A_name_multi_chebi	voso4 x 2 h2o	{'CHEBI:87009': 54, 'CHEBI:87014': 11}
 A_name_multi_chebi	isovaleric acid	{'CHEBI:28484': 60, 'CHEBI:503742': 3}
+A_name_multi_chebi	na2s2o3	{'CHEBI:132112': 18, 'CHEBI:59168': 24, 'CHEBI:32150': 19}
 A_name_multi_chebi	fructose	{'CHEBI:28645': 21, 'CHEBI:28757': 39}
 A_name_multi_chebi	sodium nitrate	{'CHEBI:65246': 1, 'CHEBI:63005': 56, 'CHEBI:34754': 1}
 A_name_multi_chebi	mnso4 x 4 h2o	{'CHEBI:86358': 46, 'CHEBI:86360': 6}
 A_name_multi_chebi	(nh4)3 citrate	{'CHEBI:63037': 40, 'CHEBI:72699': 4}
 A_name_multi_chebi	dithiothreitol	{'CHEBI:18320': 13, 'CHEBI:42106': 30}
-A_name_multi_chebi	na2s2o3	{'CHEBI:59168': 24, 'CHEBI:32150': 19}
 A_name_multi_chebi	d-fructose	{'CHEBI:15824': 33, 'CHEBI:48095': 9}
 A_name_multi_chebi	tricine	{'CHEBI:35920': 29, 'CHEBI:39063': 12, 'CHEBI:9750': 1}
 A_name_multi_chebi	dl-dithiothreitol	{'CHEBI:18320': 40, 'CHEBI:42106': 1}
@@ -55,14 +55,15 @@ A_name_multi_chebi	bacto soytone	{'CHEBI:16247': 3, 'CHEBI:8150': 32}
 A_name_multi_chebi	fe(nh4)citrate	{'CHEBI:144421': 16, 'CHEBI:31604': 19}
 A_name_multi_chebi	l-sodium lactate	{'CHEBI:867561': 21, 'CHEBI:75228': 13}
 A_name_multi_chebi	iso-valeric acid	{'CHEBI:503742': 25, 'CHEBI:28484': 8}
+A_name_multi_chebi	mnso4 x 5 h2o	{'CHEBI:131524': 31, 'CHEBI:86360': 1}
 A_name_multi_chebi	sodium l-lactate	{'CHEBI:867561': 8, 'CHEBI:232798': 22}
+A_name_multi_chebi	malachite green	{'CHEBI:72449': 24, 'CHEBI:87106': 1}
 A_name_multi_chebi	inositol	{'CHEBI:24848': 18, 'CHEBI:17268': 7}
-A_name_multi_chebi	mnso4 x 5 h2o	{'CHEBI:131524': 22, 'CHEBI:86360': 1}
 A_name_multi_chebi	soytone	{'CHEBI:8150': 17, 'CHEBI:16247': 6}
 A_name_multi_chebi	n-acetyl-d-glucosamine	{'CHEBI:506227': 6, 'CHEBI:8006': 15}
-A_name_multi_chebi	malachite green	{'CHEBI:72449': 20, 'CHEBI:87106': 1}
 A_name_multi_chebi	xanthine	{'CHEBI:15318': 6, 'CHEBI:17712': 15}
 A_name_multi_chebi	m-inositol	{'CHEBI:10642': 20, 'CHEBI:166917': 1}
+A_name_multi_chebi	na-butyrate	{'CHEBI:64103': 17, 'CHEBI:17968': 1}
 A_name_multi_chebi	na3-edta	{'CHEBI:63125': 15, 'CHEBI:64734': 2}
 A_name_multi_chebi	thiamine pyrophosphate	{'CHEBI:18290': 14, 'CHEBI:9532': 2}
 A_name_multi_chebi	h2seo3	{'CHEBI:26642': 14, 'CHEBI:48854': 2}
@@ -70,10 +71,10 @@ A_name_multi_chebi	d-trehalose dihydrate	{'CHEBI:232797': 14, 'CHEBI:83760': 1}
 A_name_multi_chebi	sodium dl-malate	{'CHEBI:91260': 11, 'CHEBI:91261': 3}
 A_name_multi_chebi	triammonium citrate	{'CHEBI:63037': 12, 'CHEBI:86469': 2}
 A_name_multi_chebi	voso4 x 5 h2o	{'CHEBI:132758': 11, 'CHEBI:87014': 1}
-A_name_multi_chebi	na-butyrate	{'CHEBI:17968': 1, 'CHEBI:64103': 11}
 A_name_multi_chebi	d-mannose	{'CHEBI:16024': 7, 'CHEBI:37675': 4}
 A_name_multi_chebi	sodium succinate dibasic hexahydrate	{'CHEBI:63686': 10, 'CHEBI:82919': 1}
 A_name_multi_chebi	trehalose	{'CHEBI:27082': 8, 'CHEBI:16551': 2}
+A_name_multi_chebi	k-acetate	{'CHEBI:32029': 9, 'CHEBI:47622': 1}
 A_name_multi_chebi	monosodium glutamate	{'CHEBI:64220': 8, 'CHEBI:64243': 2}
 A_name_multi_chebi	nitrilotriacetate	{'CHEBI:25548': 8, 'CHEBI:44557': 2}
 A_name_multi_chebi	n-acetyl-glutamic acid	{'CHEBI:172431': 9, 'CHEBI:17533': 1}
@@ -83,7 +84,6 @@ A_name_multi_chebi	n-acetyl-lysine	{'CHEBI:35704': 9, 'CHEBI:61930': 1}
 A_name_multi_chebi	n-acetyl-muramic acid	{'CHEBI:47966': 9, 'CHEBI:40666': 1}
 A_name_multi_chebi	sn-glycero-3-phosphocholine	{'CHEBI:16870': 9, 'CHEBI:36702': 1}
 A_name_multi_chebi	na-malate	{'CHEBI:91261': 3, 'CHEBI:91260': 5}
-A_name_multi_chebi	k-acetate	{'CHEBI:32029': 6, 'CHEBI:47622': 1}
 A_name_multi_chebi	potassium phosphate	{'CHEBI:63036': 5, 'CHEBI:131527': 2}
 A_name_multi_chebi	na malate	{'CHEBI:91261': 3, 'CHEBI:91260': 4}
 A_name_multi_chebi	diaminopimelic acid	{'CHEBI:23674': 4, 'CHEBI:23673': 2}
@@ -112,18 +112,18 @@ A_name_multi_chebi	d-trehalose	{'CHEBI:27082': 2, 'CHEBI:16551': 1}
 A_name_multi_chebi	co carboxylase	{'CHEBI:18290': 1, 'CHEBI:45395': 1}
 B_chebi_multi_compound	CHEBI:26710	{'nacl': 6865, 'chloride': 1307}
 B_chebi_multi_compound	CHEBI:15377	{'distilled water': 6455, 'tap water': 109, 'distilled double water': 69, 'demineralized water': 15, 'h2o': 23, 'distiled water': 1, 'water': 28}
-B_chebi_multi_compound	CHEBI:86158	{'cacl2': 5752, 'chloride': 315, 'cacl': 2, 'cacl2x': 1, 'cacl2 x': 1}
+B_chebi_multi_compound	CHEBI:86158	{'cacl2': 5752, 'chloride': 318, 'cacl': 2, 'cacl2x': 1, 'cacl2 x': 1}
 B_chebi_multi_compound	CHEBI:63036	{'kh2po4': 5254, 'dihydrogen phosphate': 233, 'monopotassium phosphate': 22, 'phosphate': 6, 'monobasic phosphate': 88, 'dihydrogen orthophosphate': 1, 'kh po': 10}
 B_chebi_multi_compound	CHEBI:131527	{'k2hpo4': 3925, 'dibasic phosphate': 300, 'phosphate': 477, 'hydrogen phosphate': 5, 'k2hpo4x': 1, 'monophosphate': 2}
 B_chebi_multi_compound	CHEBI:31206	{'chloride': 426, 'nh4cl': 4193, 'cl': 13}
 B_chebi_multi_compound	CHEBI:2509	{'agar': 4439, 'agar inorganic salts starch': 8, '2216 agar marine': 32, 'agar corn meal': 17, '7h10 agar bacto middlebrook': 11, 'agar r2a': 16, 'agar r': 8, 'agar czapek dox': 3, 'agar brucella': 2, 'agar anaerobe fastidious': 2, 'agar anaerobic brewer': 2, '7h10 agar middlebrook': 3, 'agar bl': 2, 'agar bcye': 2, 'agar enrichment legionella': 1, 'agar gam': 1, 'agar hinton ii mueller': 1, 'agar oatmeal': 4, 'agar asparagine glycerol': 2, 'agar extract malt': 1, 'agar base blood columbia': 1, 'agar bacteriological': 2}
+B_chebi_multi_compound	CHEBI:31795	{'mgso4': 4345, 'mgso': 4, 'mgso4x': 3, 'hepta sulphate': 1, 'hepta sulfate': 58, 'mgso2': 2}
 B_chebi_multi_compound	CHEBI:33118	{'acid boric': 325, 'h3bo3': 3901, 'b3': 2, 'h3bo2': 1}
 B_chebi_multi_compound	CHEBI:32588	{'chloride': 226, 'kcl': 3714}
+B_chebi_multi_compound	CHEBI:75213	{'na2moo4': 3208, 'moo4': 28, 'na2mo4': 8, 'namoo4': 10, 'molybdate': 172, 'na2moso4': 6}
 B_chebi_multi_compound	CHEBI:34887	{'nicl2': 3220, 'chloride nickel': 92, 'nicl2x': 1, 'nicl': 5}
-B_chebi_multi_compound	CHEBI:31795	{'mgso4': 3100, 'mgso': 4, 'mgso4x': 3, 'hepta sulphate': 1, 'hepta sulfate': 58, 'mgso2': 2}
 B_chebi_multi_compound	CHEBI:32139	{'nahco3': 3019, 'bicarbonate': 134, 'nahco': 2}
 B_chebi_multi_compound	CHEBI:35696	{'cocl2': 2975, 'chloride cobalt': 141, '6h cocl o': 22}
-B_chebi_multi_compound	CHEBI:75213	{'na2moo4': 2890, 'moo4': 28, 'na2mo4': 8, 'namoo4': 10, 'molybdate': 172, 'na2moso4': 6}
 B_chebi_multi_compound	CHEBI:86368	{'mncl2': 3028, 'h licl o': 2, 'chloride manganese tetra': 79}
 B_chebi_multi_compound	CHEBI:75836	{'feso4': 2742, 'fe so4': 20, 'hepta sulfate': 169}
 B_chebi_multi_compound	CHEBI:86345	{'mgcl2': 2690, 'chloride': 121, 'chloride hexa': 74, 'mgcl': 2}
@@ -198,22 +198,23 @@ B_chebi_multi_compound	CHEBI:17992	{'sucrose': 226, 'd sucrose': 2}
 B_chebi_multi_compound	CHEBI:36385	{'srcl2': 224, 'chloride hexa strontium': 1}
 B_chebi_multi_compound	CHEBI:32035	{'koh': 192, 'hydroxide': 32}
 B_chebi_multi_compound	CHEBI:62965	{'formate': 213, 'formiate': 5}
-B_chebi_multi_compound	CHEBI:60720	{'silicate': 211, 'na2sio3': 2}
+B_chebi_multi_compound	CHEBI:60720	{'silicate': 211, 'na2sio3': 5}
 B_chebi_multi_compound	CHEBI:63005	{'nano3': 147, 'nitrate': 56, 'no3': 5}
 B_chebi_multi_compound	CHEBI:86159	{'ca2': 194, 'nitrate tetra': 3}
 B_chebi_multi_compound	CHEBI:9754	{'buffer tris': 70, 'tromethamine': 21, 'tris': 50, 'base tris': 38, 'trismethylamine': 3, '1m buffer tris': 1, 'trisaminomethane': 10, 'acid nitrilotriacetic trisodium': 1}
+B_chebi_multi_compound	CHEBI:77775	{'selenate': 44, 'na2seo4': 147}
 B_chebi_multi_compound	CHEBI:23414	{'cupric sulfate': 119, 'cuso4': 56, 'copper sulfate': 9, 'cuso': 2}
+B_chebi_multi_compound	CHEBI:63043	{'kno3': 158, 'kno': 14, 'nitrate': 11}
 B_chebi_multi_compound	CHEBI:16236	{'ethanol': 180, 'alcohol ethyl': 1}
 B_chebi_multi_compound	CHEBI:49553	{'chloride cupric': 77, 'cucl2': 99, 'cucl': 4}
 B_chebi_multi_compound	CHEBI:31604	{'ammmonium citrate': 1, 'citrate': 155, 'fecitrate': 19}
 B_chebi_multi_compound	CHEBI:17561	{'cysteine l': 112, 'cysteine h2o l': 49, 'cysteine h2o': 14}
+B_chebi_multi_compound	CHEBI:86481	{'thioglycolate': 158, 'thioglycollate': 8}
 B_chebi_multi_compound	CHEBI:64220	{'glutamate': 149, 'glutamate monosodium': 8}
 B_chebi_multi_compound	CHEBI:63041	{'mncl2': 33, 'chloride manganese': 123}
-B_chebi_multi_compound	CHEBI:77775	{'selenate': 44, 'na2seo4': 110}
 B_chebi_multi_compound	CHEBI:32583	{'caso4': 151, 'caso4 x': 1}
 B_chebi_multi_compound	CHEBI:16015	{'glutamate l': 73, 'acid glutamic l': 69}
 B_chebi_multi_compound	CHEBI:194474	{'4 acid aminobenzoic': 135, 'acid amino benzoic p': 7}
-B_chebi_multi_compound	CHEBI:86481	{'thioglycolate': 131, 'thioglycollate': 8}
 B_chebi_multi_compound	CHEBI:17836	{'4 aminobenzoate': 94, 'aminobenzoate p': 43, 'paba': 1}
 B_chebi_multi_compound	CHEBI:32036	{'sulfate': 22, 'k2so4': 114}
 B_chebi_multi_compound	CHEBI:17196	{'asparagine l': 128, 'asparagin l': 7}
@@ -241,15 +242,16 @@ B_chebi_multi_compound	CHEBI:86358	{'mnso4': 75, 'manganese sulfate tetra': 2}
 B_chebi_multi_compound	CHEBI:17905	{'2 mercaptoethanesulfonate': 36, 'coenzyme m': 31, '2 acid mercaptoethanesulfonic': 10}
 B_chebi_multi_compound	CHEBI:44115	{'acid morpholinopropane sulfonic': 6, 'mops': 17, 'buffer mops': 18, '3 acid propanesulfonic': 32}
 B_chebi_multi_compound	CHEBI:28484	{'acid isovaleric': 60, 'acid iso valeric': 8, '3 acid butyric methyl': 1, '3 acid methylbutyric': 2}
+B_chebi_multi_compound	CHEBI:132112	{'na2s2o3': 18, 'thiosulfate': 41, 'thiosulphate': 6, 'nas2o3': 3}
 B_chebi_multi_compound	CHEBI:30812	{'chloride': 36, 'fecl2': 31}
 B_chebi_multi_compound	CHEBI:42334	{'hepes': 65, '1 4 acid piperazineethanesulfonic': 1}
 B_chebi_multi_compound	CHEBI:30808	{'fecl3': 60, 'chloride': 5}
 B_chebi_multi_compound	CHEBI:63076	{'2 citrate': 32, 'citrate diammonium hydrogen': 22, 'citrate diammonium': 8}
 B_chebi_multi_compound	CHEBI:85248	{'gelrite': 21, 'starch': 29, 'gellan gum': 12}
 B_chebi_multi_compound	CHEBI:8346	{'ki': 36, 'iodide': 25}
+B_chebi_multi_compound	CHEBI:39005	{'mes': 34, '2 acid ethane mes sulfonic': 19, '2 acid ethanesulfonic': 3, 'acids mes': 2, 'buffer mes': 1, 'hydrat mes': 2}
 B_chebi_multi_compound	CHEBI:16709	{'pyridoxine': 54, 'b6 vitamin': 6}
 B_chebi_multi_compound	CHEBI:64700	{'trimethylamine': 57, 'methylamine': 1, 'chloride trimethylammonium': 2}
-B_chebi_multi_compound	CHEBI:39005	{'mes': 34, '2 acid ethane mes sulfonic': 19, '2 acid ethanesulfonic': 3, 'acids mes': 2}
 B_chebi_multi_compound	CHEBI:63037	{'citrate': 6, '3 citrate': 40, 'citrate triammonium': 12}
 B_chebi_multi_compound	CHEBI:87020	{'h2o n voso4': 53, 'voso4 xh2o': 4}
 B_chebi_multi_compound	CHEBI:91260	{'dl malate': 28, 'malate': 28}
@@ -258,7 +260,6 @@ B_chebi_multi_compound	CHEBI:18320	{'dithiothreitol dl': 40, 'dithiothreitol': 1
 B_chebi_multi_compound	CHEBI:15356	{'cysteine': 49, 'cystein': 2}
 B_chebi_multi_compound	CHEBI:113455	{'benzoate': 48, 'sodiumbenzoate': 2}
 B_chebi_multi_compound	CHEBI:76208	{'na2s': 41, 'sulfide': 4, 'h2o na2s': 5}
-B_chebi_multi_compound	CHEBI:132112	{'thiosulfate': 41, 'thiosulphate': 6, 'nas2o3': 3}
 B_chebi_multi_compound	CHEBI:8150	{'bacto soytone': 32, 'soytone': 17}
 B_chebi_multi_compound	CHEBI:30772	{'acid butyric': 27, 'acid butyric n': 18, 'acid butanoic': 2}
 B_chebi_multi_compound	CHEBI:17268	{'inositol myo': 38, 'inositol': 7}
@@ -273,6 +274,7 @@ B_chebi_multi_compound	CHEBI:53438	{'fe23 h2o n': 38, 'fe3 h2o n': 2}
 B_chebi_multi_compound	CHEBI:132108	{'na2sio3': 32, 'nasio3': 5}
 B_chebi_multi_compound	CHEBI:27570	{'histidine': 33, 'dl histidine': 3}
 B_chebi_multi_compound	CHEBI:17596	{'inosine': 22, 'inosin': 14}
+B_chebi_multi_compound	CHEBI:64103	{'butyrate': 32, '1 butyrate m': 2}
 B_chebi_multi_compound	CHEBI:6650	{'acid malic': 10, 'acid dl malic': 10, 'acid d l malic': 14}
 B_chebi_multi_compound	CHEBI:131378	{'fe22': 32, 'fe22x': 1}
 B_chebi_multi_compound	CHEBI:30627	{'moo3': 28, 'molybdenum trioxide': 4}
@@ -280,11 +282,9 @@ B_chebi_multi_compound	CHEBI:42106	{'dithiothreitol dl': 1, 'dithiothreitol': 30
 B_chebi_multi_compound	CHEBI:184335	{'nh4hco3': 28, 'hco3': 2}
 B_chebi_multi_compound	CHEBI:503742	{'acid iso valeric': 25, 'acid isovaleric': 3}
 B_chebi_multi_compound	CHEBI:75216	{'2h namoo o': 2, '2h moo o': 26}
-B_chebi_multi_compound	CHEBI:64103	{'butyrate': 26, '1 butyrate m': 2}
 B_chebi_multi_compound	CHEBI:86466	{'k2s4o6': 26, 'tetrathionate': 2}
 B_chebi_multi_compound	CHEBI:22653	{'asparagine': 25, 'asparagine dl h2o': 3}
 B_chebi_multi_compound	CHEBI:86477	{'na2so3': 24, 'sulfite': 2, 'na2sio3': 2}
-B_chebi_multi_compound	CHEBI:63043	{'kno': 14, 'nitrate': 11, 'kno3': 2}
 B_chebi_multi_compound	CHEBI:28645	{'fructose': 21, 'beta d fructose': 1}
 B_chebi_multi_compound	CHEBI:132089	{'beta glycerophosphate': 20, 'glycerolphosphate': 2}
 B_chebi_multi_compound	CHEBI:132095	{'navo': 18, 'h2o n navo3': 3}
