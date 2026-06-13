@@ -132,12 +132,6 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_chebi_term:
-    id: CHEBI:78020
-    label: heptacosanoate
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.024'
@@ -310,6 +304,12 @@ curation_history:
   notes: 'Replaced 18 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-08T23:19:39.506403+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 high_metal: true
 solutions:
 - preferred_term: Trace elements solution*

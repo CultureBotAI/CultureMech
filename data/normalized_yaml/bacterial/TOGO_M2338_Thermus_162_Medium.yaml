@@ -161,11 +161,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:75211
-    label: manganese(II) sulfate
+    id: CHEBI:86364
+    label: MnSO4 x H2O
   mediaingredientmech_chebi_term:
-    id: CHEBI:75211
-    label: manganese(II) sulfate
+    id: CHEBI:86364
+    label: MnSO4 x H2O
 - preferred_term: H2SO4
   concentration:
     value: '0.5'
@@ -260,6 +260,12 @@ curation_history:
   notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-08T23:19:32.108081+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 high_metal: true
 solutions:
 - preferred_term: Trace element solution

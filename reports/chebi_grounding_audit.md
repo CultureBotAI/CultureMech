@@ -72,4 +72,36 @@ glycerol/glycerol-3-phosphate swaps are subtler but equally wrong biochemically.
 4. The upstream source (MediaDive compound→CHEBI table) likely carries the same
    errors; fixes here should be reported upstream to avoid re-import.
 
-See `gap_fix_backlog.md` rows **G21–G23**.
+See `gap_fix_backlog.md` rows **G21–G24**.
+
+## Resolution (G21 applied)
+
+`scripts/migrate_chebi_regrounding.py` applied the confident, label-conditional
+fixes — **2,318 term references re-grounded across 1,233 records**
+(`data/import_tracking/reports/chebi_regrounding_changes.tsv`):
+
+| Fix | Count |
+|---|---|
+| Pyridoxine·HCl → `CHEBI:30961` (was pyridoxamine) | 801 |
+| Glycerol → `CHEBI:17754` (was glycerol-3-phosphate) | 201 |
+| Na₂SeO₄ → `CHEBI:77775` (was sodium sulfate) | 216 |
+| MnSO₄ → `CHEBI:86364` (was tannic acid) | 128 |
+| Ca(NO₃)₂ → `CHEBI:64205` (was cadmium nitrate) | 52 |
+| Ferric citrate → `CHEBI:144434` (was cadmium nitrate) | 4 |
+| `CHEBI:78020` (heptacosanoate) de-grounded — never a real ingredient | 916 |
+
+Pyridoxamine, sodium sulfate, and legitimate glycerol-3-phosphate entries were
+left untouched (label-conditional). Post-fix residuals of the corrected ids hold
+only their correct uses; corpus still validates clean (0 ERROR rows, closed mode).
+
+### Two findings uncovered during the fix
+1. **Traversal bug (now fixed in both migration scripts).** Standalone solution
+   records keep ingredients in a top-level `composition:` list (not `ingredients`).
+   The MIM migration and the first re-grounding pass missed it; both scripts now
+   walk `ingredients` + top-level `composition` + nested `solutions[].composition`.
+2. **Broader "shared-id garbage grounding" (→ G24).** Beyond the audited ids,
+   several CHEBI ids carry a *minority* of chemically-unrelated ingredients
+   (e.g. `CHEBI:32149` sodium sulfate also tags Na-DL-lactate / Na-propionate /
+   NiCl₂ (~45); `CHEBI:15978` also tags Middlebrook/Mueller-Hinton agars and
+   whole egg (6)). These need per-ingredient re-grounding by name (a CHEBI
+   re-enrichment pass), not a fixed remap table — tracked as **G24**.

@@ -47,11 +47,6 @@ composition:
   term:
     id: mediadive.compound:2
     label: Meat extract
-  chebi_term:
-    id: CHEBI:78020
-    label: heptacosanoate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Malt extract
   concentration:
     value: '5'
@@ -72,10 +67,8 @@ composition:
     id: mediadive.compound:72
     label: Glycerol
   chebi_term:
-    id: CHEBI:15978
-    label: glycerol
-    confidence: 0.9
-    match_type: synonym_match_ambiguous
+    id: CHEBI:17754
+    label: Glycerol
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '1'
@@ -148,6 +141,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-08T23:19:41.107165+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -183,11 +183,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32149
-    label: sodium sulfate
+    id: CHEBI:77775
+    label: Na2SeO4
   mediaingredientmech_chebi_term:
-    id: CHEBI:32149
-    label: sodium sulfate
+    id: CHEBI:77775
+    label: Na2SeO4
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -437,6 +437,12 @@ curation_history:
   notes: 'Replaced 22 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-08T23:19:50.594686+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 solutions:
 - preferred_term: Resazurin-solution (0.025 vol%)
   composition: []

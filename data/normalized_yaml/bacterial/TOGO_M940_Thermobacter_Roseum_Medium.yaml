@@ -160,11 +160,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine·HCl
   mediaingredientmech_chebi_term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine·HCl
 - preferred_term: Folic acid
   concentration:
     value: '10'
@@ -341,11 +341,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32149
-    label: sodium sulfate
+    id: CHEBI:77775
+    label: Na2SeO4
   mediaingredientmech_chebi_term:
-    id: CHEBI:32149
-    label: sodium sulfate
+    id: CHEBI:77775
+    label: Na2SeO4
 media_term:
   preferred_term: TOGO Medium M940
   term:
@@ -406,6 +406,12 @@ curation_history:
   notes: 'Replaced 25 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-08T23:19:35.216398+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 4 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 high_metal: true
 solutions:
 - preferred_term: Vitamin solution* (see below)
