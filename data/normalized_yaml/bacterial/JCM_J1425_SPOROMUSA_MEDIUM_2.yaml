@@ -1,0 +1,173 @@
+id: CultureMech:015862
+name: sporomusa_medium_2
+original_name: SPOROMUSA MEDIUM-2
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1425
+  term:
+    id: jcm.grmd:1425
+    label: SPOROMUSA MEDIUM-2
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1425'
+ingredients:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: MgSO4 x 6 H2O
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: NaCl
+  concentration:
+    value: '2.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: FeCl2 solution (see Medium No. 187 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Trace element solution (see Medium No. 187 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Se/W solution (see Medium No. 317 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: 0.1% FeSO4·7H2O solution (in 0.1 N H2SO4)
+  concentration:
+    value: '2.0'
+    unit: ML_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+- preferred_term: Casitone (BD-Difco)
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '860.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.23'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Distilled water
+  concentration:
+    value: '100.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Trace vitamins (see Medium No. 197 )
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: 8% NaHCO3 solution
+  concentration:
+    value: '30.0'
+    unit: ML_PER_L
+- preferred_term: 0.1 M Dithiothreitol solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Solution A: Autoclave under a N2 gas atmosphere.'
+- step_number: 2
+  action: MIX
+  description: 'Solution B: Autoclave under a N2 gas atmosphere.'
+- step_number: 3
+  action: MIX
+  description: 'After autoclaving, combine solutions A and B, then add the following
+    solutions (filtersterilized): To complete the medium, aseptically and anaerobically
+    distribute the medium into culture vessels (e.g., 10 ml in Hungate tubes) under
+    a H2-CO2 (80:20, v/v) gas stream and seal with butyl rubber stoppers.'
+- step_number: 4
+  action: MIX
+  description: 'Prior to inoculation, add per liter the following solution (freshly
+    prepared and filter-sterilized): Adjust pH to 7.0, if necessary.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:12.618147+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1425. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.388668Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

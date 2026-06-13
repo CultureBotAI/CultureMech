@@ -65,7 +65,7 @@ ingredients:
     value: '0.00286'
     unit: G_PER_L
   term:
-    id: CHEBI:33134
+    id: CHEBI:33118
     label: boric acid
   notes: 'CAS: 10043-35-3; MW: 61.83; From Trace metal mix A5'
 - preferred_term: Manganese (II) chloride tetrahydrate

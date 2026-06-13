@@ -69,8 +69,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
   term:
-    id: CHEBI:91261
-    label: disodium (S)-malate
+    id: CHEBI:91260
+    label: disodium malate
 media_term:
   preferred_term: TOGO Medium M192
   term:

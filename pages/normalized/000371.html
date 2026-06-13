@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>7.6-7.8</dd>
+    <dd>{&#39;min&#39;: 7.6, &#39;max&#39;: 7.8}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_Barley.pdf</dd>
 </dl>
@@ -335,7 +335,7 @@ required.</li>
   <td class="small prewrap">Source: CCAP, ID: C5</td>
 </tr>
 <tr>
-  <td class="muted small"></td>
+  <td class="muted small">2026-02-03T00:00:00+00:00</td>
   <td>schema-defaulter-v1.0</td>
   <td>Applied schema defaults and normalizations</td>
   <td class="small prewrap">Added default concentration for ingredient: Soil extract</td>
@@ -358,12 +358,24 @@ required.</li>
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;ASW + barley&#34; to &#34;asw_barley&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-16T09:03:25.076430+00:00</td>
+  <td>migrate_legacy_fields.py</td>
+  <td>MIGRATED_LEGACY_FIELDS</td>
+  <td class="small prewrap">curation_history.date-&gt;timestamp=1</td>
+</tr>
+<tr>
+  <td class="muted small">2026-05-20T06:01:09.245957+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;7.6-7.8&#39; -&gt; {&#39;min&#39;: 7.6, &#39;max&#39;: 7.8}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:04:10+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/asw_barley.yaml</code>
   </small>
 </footer>

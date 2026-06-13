@@ -68,14 +68,14 @@ ingredients:
   notes: Copied from referenced JCM Medium 193
 - preferred_term: Sodium DL-malate
   term:
-    id: CHEBI:91261
-    label: Sodium DL-malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '3.5964'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:91261
-    label: Sodium DL-malate
+    id: CHEBI:91260
+    label: disodium malate
   notes: Copied from referenced JCM Medium 193
 - preferred_term: Yeast extract
   concentration:

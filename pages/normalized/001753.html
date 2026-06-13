@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>7.2-7.4</dd>
+    <dd>{&#39;min&#39;: 7.2, &#39;max&#39;: 7.4}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium621a.pdf</dd>
 </dl>
@@ -581,7 +581,7 @@ flowchart LR
   <td class="small prewrap">Assigned stable identifier: CultureMech:001753</td>
 </tr>
 <tr>
-  <td class="muted small"></td>
+  <td class="muted small">2026-03-14T00:00:00+00:00</td>
   <td>schema-defaulter-v1.0</td>
   <td>Applied schema defaults and normalizations</td>
   <td class="small prewrap">Added default solution name</td>
@@ -598,12 +598,24 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;EKHO LAKE STRAINS MEDIUM&#34; to &#34;ekho_lake_strains_medium&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-16T09:03:31.386923+00:00</td>
+  <td>migrate_legacy_fields.py</td>
+  <td>MIGRATED_LEGACY_FIELDS</td>
+  <td class="small prewrap">curation_history.date-&gt;timestamp=1</td>
+</tr>
+<tr>
+  <td class="muted small">2026-05-20T06:01:16.149150+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;7.2-7.4&#39; -&gt; {&#39;min&#39;: 7.2, &#39;max&#39;: 7.4}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:04:16+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/ekho_lake_strains_medium.yaml</code>
   </small>
 </footer>

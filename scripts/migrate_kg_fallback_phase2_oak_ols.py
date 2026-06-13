@@ -124,7 +124,11 @@ class Resolver:
             return self._oak[q]
         out = set()
         try:
-            for cid in list(self.oak.basic_search(q))[:12]:
+            # Cap generously: a truncation that drops candidates BEFORE the
+            # exact-label/synonym filter could silently miss an exact match
+            # ranked beyond the cap. 50 keeps the search bounded while making a
+            # missed exact hit vanishingly unlikely.
+            for cid in list(self.oak.basic_search(q))[:50]:
                 if not str(cid).startswith("CHEBI:"):
                     continue
                 lbl = (self.oak.label(cid) or "").lower()
@@ -170,7 +174,10 @@ class Resolver:
         # normalisation, so an ontology lookup on the normalised name can pick
         # the WRONG hydrate (e.g. "MgSO4 x 7 H2O" -> magnesium sulfate ->
         # hexahydrate). For these, trust only the corpus majority, never Path A.
-        has_hydrate = bool(re.search(r"x\s*\d+\s*h2?o|hydrate", label, re.I))
+        # Match water-of-crystallisation regardless of separator: the `x N H2O`
+        # form AND the middot/×-times form (MgSO4·7H2O, MnCl2·4H2O, Na2S·9H2O),
+        # which is widespread in the corpus and would otherwise slip past Path A.
+        has_hydrate = bool(re.search(r"\d+\s*h2?o|hydrate", label, re.I))
 
         # Path B FIRST — corpus strong-majority cross-checked against the ontology.
         # The corpus's own dominant grounding is more reliable than a lossy
@@ -190,8 +197,11 @@ class Resolver:
             if c in ols or (not ols and not ols_errored):
                 return "resolve", c, label, "oak_ols_exact"
 
-        # De-ground clear mixtures with no ontology grounding
-        if not oak and not ols and MIXTURE.search(label):
+        # De-ground clear mixtures with no ontology grounding. Only when OLS
+        # genuinely returned nothing — never when the OLS call errored/timed out
+        # (an error coalesces to an empty set and must not be read as "no match",
+        # mirroring the Path A safeguard above).
+        if not oak and not ols and not ols_errored and MIXTURE.search(label):
             return "deground", None, label, "mixture_no_chebi"
 
         return "flag", None, label, "ambiguous_or_unresolved"
