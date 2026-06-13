@@ -123,6 +123,26 @@ def rewrite_entry(ing: dict, changelog: list) -> bool:
     return changed
 
 
+def _change_note(local: list) -> str:
+    """Build a change-specific curation note from the transitions applied here.
+
+    ``local`` holds (label, field, from_id, to_id) tuples; to_id is "REMOVED"
+    for a de-ground. Summarizes the distinct from->to transitions so the stamped
+    provenance describes what actually changed in this file (not boilerplate).
+    """
+    from collections import Counter
+    counts = Counter((frm, to) for _lbl, _fld, frm, to in local)
+    parts = []
+    for (frm, to), n in sorted(counts.items()):
+        if to == "REMOVED":
+            parts.append(f"{frm} de-grounded ×{n}")
+        else:
+            parts.append(f"{frm}→{to} ×{n}")
+    return (f"Re-grounded {len(local)} term reference(s) to the correct CHEBI "
+            f"(audit G21/G22/G24; see reports/chebi_grounding_audit.md): "
+            + "; ".join(parts) + ".")
+
+
 def migrate_file(path: Path, text: str, dry_run: bool, changelog: list) -> int:
     data = yaml.safe_load(text)
     if not isinstance(data, dict):
@@ -142,14 +162,11 @@ def migrate_file(path: Path, text: str, dry_run: bool, changelog: list) -> int:
         data.setdefault("curation_history", []).append({
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "curator": CURATOR,
-            "action": "Corrected CHEBI ingredient grounding (audit G21/G22)",
-            "notes": (f"Re-grounded {len(local)} term reference(s) to the correct CHEBI "
-                      "(see reports/chebi_grounding_audit.md). Label-conditional fixes for "
-                      "pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2, ferric citrate, "
-                      "selenate; CHEBI:78020 (heptacosanoate) de-grounded from all entries it "
-                      "mis-tagged (casamino acids + assorted salts/extracts: meat extract, "
-                      "nutrient broth, Czapek Dox agar, CuCl2·6H2O, K2SO4·7H2O, NaHSeO3, "
-                      "Vitamin B12 solution)."),
+            "action": "Corrected CHEBI ingredient grounding (audit G21/G22/G24)",
+            # Note is derived from the transitions actually applied in THIS file
+            # (not static boilerplate), so each stamped event truthfully records
+            # what that run changed here.
+            "notes": _change_note(local),
         })
         path.write_text(yaml.safe_dump(data, default_flow_style=False,
                                        allow_unicode=True, sort_keys=False))

@@ -39,11 +39,11 @@ ingredients:
     value: '2'
     unit: ML_PER_L
   term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
+    id: CHEBI:17754
+    label: Glycerol
   mediaingredientmech_chebi_term:
-    id: CHEBI:15978
-    label: sn-Glycerol 3-phosphate lithium salt
+    id: CHEBI:17754
+    label: Glycerol
 - preferred_term: Oleic acid
   concentration:
     value: '2'
@@ -94,3 +94,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-06-13T07:29:52.144530+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22/G24)
+  notes: 'Re-grounded 2 term reference(s) to the correct CHEBI (audit G21/G22/G24;
+    see reports/chebi_grounding_audit.md): CHEBI:15978→CHEBI:17754 ×2.'
