@@ -16,8 +16,8 @@ ingredients:
     value: '1.0'
     unit: G_PER_L
   term:
-    id: CHEBI:17632
-    label: nitrate
+    id: CHEBI:63043
+    label: potassium nitrate
   mediaingredientmech_chebi_term:
     id: CHEBI:63043
     label: KNO3
@@ -74,7 +74,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: KH2PO4
@@ -88,7 +88,7 @@ ingredients:
     unit: ML_PER_L
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water
@@ -163,7 +163,7 @@ ingredients:
     unit: ML_PER_L
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water

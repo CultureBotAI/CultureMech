@@ -134,19 +134,29 @@ def parse_name(page_html: str) -> str | None:
 
 
 def parse_tables(page_html: str) -> list[dict]:
-    """Parse every <TABLE BORDER> row into {name, amount, unit} ingredients."""
+    """Parse the PRIMARY recipe <TABLE> into {name, amount, unit} ingredients.
+
+    Only the first table is the medium's own recipe. JCM renders
+    separately-prepared sub-solutions (e.g. "Ni-Se-W solution") in their own
+    subsequent tables; flattening every table would merge those components into
+    the medium's top-level ingredients and double-count them (the sub-solution
+    is already listed by name + volume in the primary table). Parse the first
+    table only.
+    """
     rows: list[dict] = []
-    for table in re.findall(r"<TABLE[^>]*>(.*?)</TABLE>", page_html, re.I | re.S):
-        for tr in re.findall(r"<TR>(.*?)</TR>", table, re.I | re.S):
-            tds = re.findall(r"<TD[^>]*>(.*?)</TD>", tr, re.I | re.S)
-            if len(tds) < 2:
-                continue
-            name = _clean(tds[0])
-            amount = _clean(tds[1])
-            unit = _clean(tds[2]) if len(tds) > 2 else ""
-            if not name:
-                continue
-            rows.append({"name": name, "amount": amount, "unit": unit})
+    tables = re.findall(r"<TABLE[^>]*>(.*?)</TABLE>", page_html, re.I | re.S)
+    if not tables:
+        return rows
+    for tr in re.findall(r"<TR>(.*?)</TR>", tables[0], re.I | re.S):
+        tds = re.findall(r"<TD[^>]*>(.*?)</TD>", tr, re.I | re.S)
+        if len(tds) < 2:
+            continue
+        name = _clean(tds[0])
+        amount = _clean(tds[1])
+        unit = _clean(tds[2]) if len(tds) > 2 else ""
+        if not name:
+            continue
+        rows.append({"name": name, "amount": amount, "unit": unit})
     return rows
 
 
@@ -302,11 +312,16 @@ def build_record(grmd: int, page_html: str, cm_id: str) -> dict | None:
 
 
 def ingested_grmd_numbers() -> set[int]:
+    # Key on the media_term id (`jcm.grmd:NNN`), not `GRMD=NNN`. The latter also
+    # appears in derivative records' notes when they inherit a base recipe
+    # ("inherited from JCM GRMD=1462"), which would mark a base GRMD as already
+    # ingested even when it has no record of its own (a false negative that
+    # hides a genuinely missing medium from --detect-missing).
     out = subprocess.run(
-        ["grep", "-rhoE", "GRMD=[0-9]+", str(NORMALIZED_DIR)],
+        ["grep", "-rhoE", r"jcm\.grmd:[0-9]+", str(NORMALIZED_DIR)],
         capture_output=True, text=True,
     ).stdout
-    return {int(x.split("=")[1]) for x in out.split()}
+    return {int(x.split(":")[1]) for x in out.split()}
 
 
 def next_id_start() -> int:

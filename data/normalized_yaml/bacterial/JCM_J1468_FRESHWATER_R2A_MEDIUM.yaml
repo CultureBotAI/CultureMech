@@ -40,7 +40,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: KH2PO4
@@ -111,7 +111,7 @@ ingredients:
     unit: ML_PER_L
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water

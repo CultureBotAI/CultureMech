@@ -92,7 +92,7 @@ ingredients:
     unit: ML_PER_L
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water
@@ -192,7 +192,7 @@ ingredients:
     unit: ML_PER_L
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water
@@ -244,7 +244,7 @@ ingredients:
     unit: ML_PER_L
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water

@@ -30,7 +30,7 @@ ingredients:
     unit: ML_PER_L
   term:
     id: CHEBI:53423
-    label: Tween 40
+    label: polysorbate 40
   mediaingredientmech_chebi_term:
     id: CHEBI:53423
     label: Tween 40
@@ -50,7 +50,7 @@ ingredients:
     unit: ML_PER_L
   term:
     id: CHEBI:16196
-    label: Oleic acid
+    label: oleic acid
   mediaingredientmech_chebi_term:
     id: CHEBI:16196
     label: Oleic acid
@@ -70,7 +70,7 @@ ingredients:
     unit: ML_PER_L
   term:
     id: CHEBI:15377
-    label: Distilled water
+    label: water
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water
