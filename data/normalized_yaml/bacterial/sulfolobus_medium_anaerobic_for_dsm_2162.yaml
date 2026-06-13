@@ -294,6 +294,7 @@ solutions:
   name: Unknown solution
 target_organisms:
 - preferred_term: Acidianus brierleyi
+  scoped_to_variant: aerobic_brocks_salts_dsm88_sulfur_yeast_extract
   strain: DSM 3772 (also DSM 1651)
   evidence:
   - reference: doi:10.1128/mbio.01033-24
@@ -302,6 +303,7 @@ target_organisms:
       the anaerobic parent (no Na2S/N2 reported); aerobic vented-bottle cultivation.
       | Identifiers: DSM 3772; DSM 1651'
 - preferred_term: Metallosphaera hakonensis
+  scoped_to_variant: aerobic_brocks_salts_dsm88_sulfur_yeast_extract
   strain: HO1-1, DSM 7519
   genome_assembly_id:
   - GCA_003201675.2
@@ -311,6 +313,7 @@ target_organisms:
     explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. Differs from anaerobic
       parent: NH4Cl vs (NH4)2SO4, no Na2S, no N2 phase. | Identifiers: DSM 7519'
 - preferred_term: Metallosphaera prunae
+  scoped_to_variant: aerobic_brocks_salts_dsm88_sulfur_yeast_extract
   strain: RON 12/II, DSM 10039
   evidence:
   - reference: doi:10.1128/mbio.01033-24
@@ -318,6 +321,7 @@ target_organisms:
     explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. NOT the anaerobic
       parent formulation. | Identifiers: DSM 10039'
 - preferred_term: Sulfurisphaera ohwakuensis
+  scoped_to_variant: aerobic_brocks_salts_dsm88_sulfur_yeast_extract
   strain: TA-1, DSM 12421
   evidence:
   - reference: doi:10.1128/mbio.01033-24
@@ -325,6 +329,7 @@ target_organisms:
     explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. Vented bottles;
       not anaerobic parent. | Identifiers: DSM 12421'
 - preferred_term: Sulfurisphaera tokodaii
+  scoped_to_variant: aerobic_brocks_salts_dsm88_sulfur_yeast_extract
   strain: str. 7, DSM 16993
   evidence:
   - reference: doi:10.1128/mbio.01033-24
@@ -332,6 +337,7 @@ target_organisms:
     explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. NH4Cl, no Na2S,
       vented bottles; not the anaerobic parent. | Identifiers: DSM 16993'
 - preferred_term: Sulfodiicoccus acidiphilus
+  scoped_to_variant: reduced_anaerobic_mbsy_h2_co2
   strain: HS-1T (= JCM 31740T = InaCC Ar79T)
   genome_assembly_id:
   - GCA_003967175.1

@@ -914,6 +914,16 @@ classes:
         required: false
         inlined: true
 
+      scoped_to_variant:
+        description: >-
+          Name of the `variants[]` entry this organism's growth evidence is
+          scoped to, when growth is verified only on a specific variant of the
+          medium and NOT on the parent recipe. Must match a `variants[].name`
+          on the same record. Downstream KG builds should attach the
+          organism<->medium edge to the named variant rather than the parent,
+          so variant-only evidence is not propagated as a parent-medium claim.
+        range: string
+
       gtdb_term:
         description: GTDB genome or lineage identifier (alternative to NCBITaxon)
         range: GTDBTerm

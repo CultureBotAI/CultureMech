@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-06-09T23:36:11
+# Generation date: 2026-06-13T12:24:51
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -96,6 +96,7 @@ KOMODO_MEDIUM = CurieNamespace('komodo_medium', 'http://example.org/UNKNOWN/komo
 LINKML = CurieNamespace('linkml', 'https://w3id.org/linkml/')
 MEDIADIVE_COMPOUND = CurieNamespace('mediadive_compound', 'https://mediadive.dsmz.de/compound/')
 MEDIADIVE_MEDIUM = CurieNamespace('mediadive_medium', 'http://example.org/UNKNOWN/mediadive.medium/')
+RDFS = CurieNamespace('rdfs', 'http://www.w3.org/2000/01/rdf-schema#')
 SIGMA = CurieNamespace('sigma', 'https://www.sigmaaldrich.com/catalog/product/')
 SRA = CurieNamespace('sra', 'https://www.ncbi.nlm.nih.gov/sra/')
 THERMOFISHER = CurieNamespace('thermofisher', 'https://www.thermofisher.com/order/catalog/product/')
@@ -860,6 +861,7 @@ class OrganismDescriptor(Descriptor):
 
     preferred_term: Union[str, OrganismDescriptorPreferredTerm] = None
     term: Optional[Union[dict, "OrganismTerm"]] = None
+    scoped_to_variant: Optional[str] = None
     gtdb_term: Optional[Union[dict, "GTDBTerm"]] = None
     genome_assembly_id: Optional[Union[str, list[str]]] = empty_list()
     strain: Optional[str] = None
@@ -881,6 +883,9 @@ class OrganismDescriptor(Descriptor):
 
         if self.term is not None and not isinstance(self.term, OrganismTerm):
             self.term = OrganismTerm(**as_dict(self.term))
+
+        if self.scoped_to_variant is not None and not isinstance(self.scoped_to_variant, str):
+            self.scoped_to_variant = str(self.scoped_to_variant)
 
         if self.gtdb_term is not None and not isinstance(self.gtdb_term, GTDBTerm):
             self.gtdb_term = GTDBTerm(**as_dict(self.gtdb_term))
@@ -3515,7 +3520,7 @@ slots.mergeMetadata__fingerprint_mode = Slot(uri=CULTUREMECH.fingerprint_mode, n
 slots.term__id = Slot(uri=CULTUREMECH.id, name="term__id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.term__id, domain=None, range=URIRef)
 
-slots.term__label = Slot(uri=CULTUREMECH.label, name="term__label", curie=CULTUREMECH.curie('label'),
+slots.term__label = Slot(uri=RDFS.label, name="term__label", curie=RDFS.curie('label'),
                    model_uri=CULTUREMECH.term__label, domain=None, range=Optional[str])
 
 slots.term__confidence = Slot(uri=CULTUREMECH.confidence, name="term__confidence", curie=CULTUREMECH.curie('confidence'),
@@ -3634,6 +3639,9 @@ slots.organismDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, 
 
 slots.organismDescriptor__term = Slot(uri=CULTUREMECH.term, name="organismDescriptor__term", curie=CULTUREMECH.curie('term'),
                    model_uri=CULTUREMECH.organismDescriptor__term, domain=None, range=Optional[Union[dict, OrganismTerm]])
+
+slots.organismDescriptor__scoped_to_variant = Slot(uri=CULTUREMECH.scoped_to_variant, name="organismDescriptor__scoped_to_variant", curie=CULTUREMECH.curie('scoped_to_variant'),
+                   model_uri=CULTUREMECH.organismDescriptor__scoped_to_variant, domain=None, range=Optional[str])
 
 slots.organismDescriptor__gtdb_term = Slot(uri=CULTUREMECH.gtdb_term, name="organismDescriptor__gtdb_term", curie=CULTUREMECH.curie('gtdb_term'),
                    model_uri=CULTUREMECH.organismDescriptor__gtdb_term, domain=None, range=Optional[Union[dict, GTDBTerm]])
