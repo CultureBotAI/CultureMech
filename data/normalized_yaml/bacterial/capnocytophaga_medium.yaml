@@ -33,8 +33,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: NaCl
   term:
@@ -43,13 +43,13 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
-    label: KNO3
+    id: CHEBI:63043
+    label: potassium nitrate
   concentration:
     value: '3'
     unit: G_PER_L
@@ -63,8 +63,8 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 preparation_steps:
 - step_number: 1
@@ -72,8 +72,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: Sterilize glucose separately. Incubate in oxygen-free, 5 - 10%
-    CO2 containing atmosphere.
+  description: Sterilize glucose separately. Incubate in oxygen-free, 5 - 10% CO2
+    containing atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -96,12 +96,26 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.214097+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CAPNOCYTOPHAGA MEDIUM" to "capnocytophaga_medium"
-    for consistent matching
+  notes: Normalized name from "CAPNOCYTOPHAGA MEDIUM" to "capnocytophaga_medium" for
+    consistent matching
+- timestamp: '2026-06-05T07:40:52.491488+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.618121+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:54.289232+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_340_CAPNOCYTOPHAGA_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005049
   name: capnocytophaga_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 340; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 340; local ingredient
+    and concentration signatures match.

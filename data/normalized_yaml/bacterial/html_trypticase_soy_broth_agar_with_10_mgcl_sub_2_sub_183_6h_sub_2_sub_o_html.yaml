@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgCl2・6H2O
   concentration:
@@ -34,9 +34,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Pancreatic digest of casein
   term:
     id: FOODON:03316428
@@ -201,3 +201,9 @@ curation_history:
   notes: Normalized name from "<html>TRYPTICASE Soy Broth Agar With 10%  MgCl<sub>2</sub>&#183;6H<sub>2</sub>O</html>"
     to "html_trypticase_soy_broth_agar_with_10_mgcl_sub_2_sub_183_6h_sub_2_sub_o_html"
     for consistent matching
+- timestamp: '2026-06-05T07:41:08.830168+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

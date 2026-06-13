@@ -25,12 +25,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Citric acid
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000283
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30769
     label: Citric acid
 - preferred_term: Ammonium ferric citrate
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
     label: Ammonium ferric citrate
 - preferred_term: Na2-EDTA
   term:
@@ -79,18 +79,18 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '25.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Agar
   term:
@@ -100,18 +100,18 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '2.86'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -120,8 +120,8 @@ ingredients:
   concentration:
     value: '1.81'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -130,8 +130,8 @@ ingredients:
   concentration:
     value: '0.22'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -140,8 +140,8 @@ ingredients:
   concentration:
     value: '0.39'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -150,8 +150,8 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
@@ -160,8 +160,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000525
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
 preparation_steps:
 - step_number: 1
@@ -190,13 +190,12 @@ variants:
   - reference: PMID:29577667
     supports: SUPPORT
     snippet: Optimizing these growth conditions resulted in a so far highest growth
-      rate of 0.16 h-1 (4.3 h doubling time), which is significantly higher than
-      the textbook value of 0.09 h-1 (8 h doubling time).
+      rate of 0.16 h-1 (4.3 h doubling time), which is significantly higher than the
+      textbook value of 0.09 h-1 (8 h doubling time).
     explanation: Literature evidence supports a PCC 6803 optimized-growth condition
       variant under the parent BG11 record.
 - name: ambient_co2_bg11_synechococcus_pcc11801
-  description: Ambient-CO2 BG11 growth condition for Synechococcus elongatus PCC
-    11801.
+  description: Ambient-CO2 BG11 growth condition for Synechococcus elongatus PCC 11801.
   modifications:
   - Use Synechococcus elongatus PCC 11801 as the target strain.
   - Culture under ambient CO2 conditions.
@@ -206,8 +205,8 @@ variants:
     supports: SUPPORT
     snippet: PCC 11801 shows a doubling time of 2.3 h, that is the fastest growth
       for any cyanobacteria reported so far under ambient CO2 conditions.
-    explanation: Literature evidence supports an ambient-CO2 PCC 11801 condition
-      variant under the parent BG11 record.
+    explanation: Literature evidence supports an ambient-CO2 PCC 11801 condition variant
+      under the parent BG11 record.
 - name: high_co2_high_light_bg11_synechococcus_pcc11802
   description: High-CO2, high-light BG11 growth condition for Synechococcus elongatus
     PCC 11802.
@@ -219,12 +218,12 @@ variants:
   evidence:
   - reference: PMID:31932622
     supports: SUPPORT
-    snippet: The new isolate has a doubling time of 2.8 h at 1% CO2, 1000 µmole
-      photons.m-2.s-1 and grows faster under high CO2 and temperature compared to
-      PCC 11801 thus making it an attractive host for outdoor cultivations and eventual
-      applications in the biorefinery.
-    explanation: Literature evidence supports a high-CO2/high-light PCC 11802
-      condition variant under the parent BG11 record.
+    snippet: The new isolate has a doubling time of 2.8 h at 1% CO2, 1000 µmole photons.m-2.s-1
+      and grows faster under high CO2 and temperature compared to PCC 11801 thus making
+      it an attractive host for outdoor cultivations and eventual applications in
+      the biorefinery.
+    explanation: Literature evidence supports a high-CO2/high-light PCC 11802 condition
+      variant under the parent BG11 record.
 curation_history:
 - timestamp: '2026-01-26T17:53:19.526682Z'
   curator: mediadive-import
@@ -250,6 +249,16 @@ curation_history:
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
   notes: organisms_added=2 metrics_added=2 genomes_added=0
+- timestamp: '2026-06-05T07:40:50.800655+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:53.872276+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 target_organisms:
 - preferred_term: Synechocystis sp. PCC 6803
   term:

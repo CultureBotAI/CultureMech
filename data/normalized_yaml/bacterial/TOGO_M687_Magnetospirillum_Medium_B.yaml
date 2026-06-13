@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: KH2PO4
   concentration:
@@ -25,9 +25,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Sodium acetate
   concentration:
@@ -37,9 +37,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: NaNO3
   concentration:
     value: '0.12'
@@ -49,8 +49,8 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: Sodium succinate
   concentration:
@@ -61,9 +61,9 @@ ingredients:
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
-    label: Sodium succinate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
 - preferred_term: Sodium tartrate
   concentration:
     value: '0.37'
@@ -73,9 +73,9 @@ ingredients:
   term:
     id: CHEBI:63017
     label: sodium L-tartrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000449
-    label: Sodium tartrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63017
+    label: sodium L-tartrate
 - preferred_term: Sodium thioglycolate
   concentration:
     value: '0.05'
@@ -84,9 +84,9 @@ ingredients:
   term:
     id: CHEBI:86481
     label: sodium thioglycolate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
-    label: Sodium thioglycolate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -95,9 +95,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: FeCl3・6H2O
   concentration:
     value: '0.45'
@@ -116,9 +116,9 @@ ingredients:
   term:
     id: CHEBI:26493
     label: quinic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000544
-    label: Quinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26493
+    label: quinic acid
 media_term:
   preferred_term: TOGO Medium M687
   term:
@@ -174,6 +174,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:43.544069+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:51.332085+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 solutions:
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []

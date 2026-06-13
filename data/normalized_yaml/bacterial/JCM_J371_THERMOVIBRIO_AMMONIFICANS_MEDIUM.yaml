@@ -20,18 +20,18 @@ ingredients:
     value: '62.48911'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 6.08911, 55.4, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.49505'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -41,18 +41,18 @@ ingredients:
     value: '1.971287'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 0.371287, 1.5, 0.1]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.00990099'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KI
   term:
@@ -76,13 +76,13 @@ ingredients:
   concentration:
     value: '0.0019802'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
-    label: KNO3
+    id: CHEBI:63043
+    label: potassium nitrate
   concentration:
     value: '0.990099'
     unit: G_PER_L
@@ -96,8 +96,8 @@ ingredients:
   concentration:
     value: '4.9505'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000269
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39010
     label: MES
 - preferred_term: Na2S x 9 H2O
   term:
@@ -106,8 +106,8 @@ ingredients:
   concentration:
     value: '0.49505'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: Resazurin
   term:
@@ -116,8 +116,8 @@ ingredients:
   concentration:
     value: '0.000990099'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -127,8 +127,8 @@ ingredients:
     value: '17.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 14.0, 3.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -137,8 +137,8 @@ ingredients:
   concentration:
     value: '11'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
@@ -147,29 +147,29 @@ ingredients:
   concentration:
     value: '1.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000189
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
     label: NaBr
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.06999999999999999'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.06, 0.01]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: SrCl2 x 6 H2O
   term:
@@ -178,8 +178,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000463
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
     label: SrCl2 x 6 H2O
 - preferred_term: Trisodium citrate
   term:
@@ -188,8 +188,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Trisodium citrate
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -198,8 +198,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: MnSO4 x n H2O
   concentration:
@@ -207,7 +207,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -215,8 +215,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -225,8 +225,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
     label: CoSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -235,8 +235,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -245,8 +245,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: AlK(SO4)2
   term:
@@ -255,8 +255,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001074
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86463
     label: AlK(SO4)2
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -265,24 +265,24 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except KNO3, MES and Na2S x 9H2O, bring to boil,
-    and cool under a H2-CO2 (4:1, v/v) gas mixture. Slowly add 5% Na2S x 9H2O
-    solution to the medium, wait for the medium to become colorless, then adjust
-    pH to 5.5. Distribute medium into culture vessels under the same gas
-    mixture, seal with butyl rubber stoppers, and autoclave. Separately
-    autoclave 10% KNO3 and 20% MES solutions (pH 5.5) under a N2 atmosphere.
-    Prior to inoculation, add the sterile KNO3 and MES solutions. Pressurize the
-    inoculated bottles to 200 kPa H2-CO2 (4:1, v/v) gas mixture.
+  description: Mix ingredients, except KNO3, MES and Na2S x 9H2O, bring to boil, and
+    cool under a H2-CO2 (4:1, v/v) gas mixture. Slowly add 5% Na2S x 9H2O solution
+    to the medium, wait for the medium to become colorless, then adjust pH to 5.5.
+    Distribute medium into culture vessels under the same gas mixture, seal with butyl
+    rubber stoppers, and autoclave. Separately autoclave 10% KNO3 and 20% MES solutions
+    (pH 5.5) under a N2 atmosphere. Prior to inoculation, add the sterile KNO3 and
+    MES solutions. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v)
+    gas mixture.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH
-    solution. Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -305,12 +305,26 @@ curation_history:
 - timestamp: '2026-03-17T19:45:28.715588+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOVIBRIO AMMONIFICANS MEDIUM" to
-    "thermovibrio_ammonificans_medium" for consistent matching
+  notes: Normalized name from "THERMOVIBRIO AMMONIFICANS MEDIUM" to "thermovibrio_ammonificans_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:17.139754+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 22 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.087081+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:42.929243+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/tb2_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002791
   name: tb2_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

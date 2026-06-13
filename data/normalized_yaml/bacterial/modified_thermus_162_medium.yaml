@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '28'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -38,8 +38,8 @@ ingredients:
     value: '12.9'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.1, 12.8]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: CaSO4 x 2 H2O
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000465
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32583
     label: CaSO4 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Fe(III) citrate
   term:
@@ -68,18 +68,18 @@ ingredients:
   concentration:
     value: '0.00122472'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000864
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Fe(III) citrate
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '5.44'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2HPO4 x 12 H2O
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '43'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 12 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -98,8 +98,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -108,8 +108,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 4 H2O
   term:
@@ -118,8 +118,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 4 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -128,8 +128,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -138,18 +138,18 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -158,22 +158,22 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2 with NaOH. Autoclave at 121°C for 15 min.
-    Autoclave the phosphate buffer separately and then add to the medium.
+  description: Adjust pH to 7.2 with NaOH. Autoclave at 121°C for 15 min. Autoclave
+    the phosphate buffer separately and then add to the medium.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH
-    (about 8 - 9 g). Dissolve other salts separately, combine and adjust the pH
-    to 6.8 with NaOH or H2SO4.
+  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about
+    8 - 9 g). Dissolve other salts separately, combine and adjust the pH to 6.8 with
+    NaOH or H2SO4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -196,36 +196,46 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.281167+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED THERMUS 162 MEDIUM" to
-    "modified_thermus_162_medium" for consistent matching
+  notes: Normalized name from "MODIFIED THERMUS 162 MEDIUM" to "modified_thermus_162_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:37.904037+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:08.999215+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_630_modified_for_dsm_12048.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006140
   name: medium_630_modified_for_dsm_12048
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_630_modified_for_dsm_12049.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006141
   name: medium_630_modified_for_dsm_12049
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_630_modified_for_dsm_22673.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006142
   name: medium_630_modified_for_dsm_22673
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_630_modified_for_dsm_4252.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006143
   name: medium_630_modified_for_dsm_4252
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_630_modified_for_dsm_4253.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006144
   name: medium_630_modified_for_dsm_4253
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

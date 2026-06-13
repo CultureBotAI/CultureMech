@@ -381,8 +381,11 @@ def _read_tabular_rows(
     if not body:
         return [], [], []
     lines = [text for _, text in body]
-    # body[0] is the header; data rows begin at the next physical line.
-    data_line_numbers = [phys for phys, _ in body[1:]]
+    # body[0] is the header; data rows begin at the next physical line. Exclude
+    # truly-empty lines: csv.DictReader skips them (yields no row), so counting
+    # them here would shift every subsequent locator one line early. An
+    # all-whitespace line is NOT skipped by DictReader, so it stays counted.
+    data_line_numbers = [phys for phys, text in body[1:] if text.rstrip("\r\n") != ""]
     reader = csv.DictReader(lines, delimiter=delim)
     return list(reader.fieldnames or []), list(reader), data_line_numbers
 
@@ -459,7 +462,16 @@ def _walk_yaml(
                 if isinstance(curie, str) and curie.strip():
                     label = node.get(label_key)
                     label = label if isinstance(label, str) else ""
-                    yield f"{path}.{id_key}", curie.strip(), (label or "").strip(), waived, None
+                    cur = curie.strip()
+                    # Scope the label waiver to CHEMISTRY (CHEBI) groundings: the
+                    # waiver exists for curator formula/common-name labels on
+                    # chemical terms (e.g. CHEBI:15377 "Distilled water"). A bare
+                    # `term` key also appears on organism (NCBITaxon) and
+                    # environment (ENVO) blocks, whose labels MUST stay canonical
+                    # (per the skill spec) — so a wrong NCBITaxon/ENVO label must
+                    # not be silently waived just because it sits under `term`.
+                    effective_waived = waived and cur.startswith("CHEBI:")
+                    yield f"{path}.{id_key}", cur, (label or "").strip(), effective_waived, None
         for k, v in node.items():
             # Skip excluded grounding blocks entirely (no checks at all).
             if k in exclude_keys:

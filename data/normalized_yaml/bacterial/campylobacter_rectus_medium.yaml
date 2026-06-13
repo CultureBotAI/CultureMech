@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2HPO4
   term:
@@ -47,18 +47,18 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Haemin
   term:
@@ -67,18 +67,18 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: Na-formate
   term:
     id: CHEBI:62965
-    label: Na-formate
+    label: sodium formate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
     label: Na-formate
 - preferred_term: Na-fumarate
   term:
@@ -87,8 +87,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
     label: Na-fumarate
 - preferred_term: Resazurin
   term:
@@ -97,8 +97,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 preparation_steps:
 - step_number: 1
@@ -106,9 +106,8 @@ preparation_steps:
   description: Adjust pH to 7.5. Prepare the medium anaerobically under 100% N2.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave solutions of haemin (dissolved in 0.1 ml 1N NaOH, then
-    diluted with water to 10 ml and neutralized), formate, and fumarate
-    separately under nitrogen.
+  description: Autoclave solutions of haemin (dissolved in 0.1 ml 1N NaOH, then diluted
+    with water to 10 ml and neutralized), formate, and fumarate separately under nitrogen.
 applications:
 - Microbial cultivation
 curation_history:
@@ -131,13 +130,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.200974+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CAMPYLOBACTER RECTUS MEDIUM" to
-    "campylobacter_rectus_medium" for consistent matching
+  notes: Normalized name from "CAMPYLOBACTER RECTUS MEDIUM" to "campylobacter_rectus_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:52.478554+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:54.286326+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_338_CAMPYLOBACTER_RECTUS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_338_CAMPYLOBACTER_RECTUS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005035
   name: campylobacter_rectus_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 338; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 338; local ingredient
+    and concentration signatures match.

@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '0.990099'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000493
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64243
     label: Sodium glutamate monohydrate
   notes: Copied from referenced JCM Medium 624
 - preferred_term: NaCl
@@ -40,8 +40,8 @@ ingredients:
     value: '29.7814314'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 29.703, 0.0784314] | Copied from JCM Medium 624'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -50,8 +50,8 @@ ingredients:
   concentration:
     value: '0.980392'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
   notes: Copied from referenced JCM Medium 624
 - preferred_term: CaSO4 x 2 H2O
@@ -61,8 +61,8 @@ ingredients:
   concentration:
     value: '0.588235'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000465
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32583
     label: CaSO4 x 2 H2O
   notes: Copied from referenced JCM Medium 624
 - preferred_term: MgSO4 x 7 H2O
@@ -72,14 +72,14 @@ ingredients:
   concentration:
     value: '0.980392'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
   notes: Copied from referenced JCM Medium 624
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
-    label: KNO3
+    id: CHEBI:63043
+    label: potassium nitrate
   concentration:
     value: '1.0098'
     unit: G_PER_L
@@ -105,8 +105,8 @@ ingredients:
   concentration:
     value: '1.08824'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
   notes: Copied from referenced JCM Medium 624
 - preferred_term: FeCl3 x 6 H2O
@@ -116,8 +116,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
   notes: Copied from referenced JCM Medium 624
 preparation_steps:
@@ -155,5 +155,19 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:37.933648+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:35.668019+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:09.010273+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 data_quality_flags:
 - resolved_reference

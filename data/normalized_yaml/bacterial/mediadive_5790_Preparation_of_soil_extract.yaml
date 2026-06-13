@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:2159
     label: Garden soil
-  chebi_term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: "Fill 300ml garden soil in a 1 l laboratory flask and fill up with\
   \ H2Odist to 700 ml\r\n(The soil should not contain too much humus and not too much\
   \ clay – avoid soil\r\ncontaminated with fertilizers, herbicides or fungicides)\n\
@@ -47,6 +42,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:56:27.675331+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

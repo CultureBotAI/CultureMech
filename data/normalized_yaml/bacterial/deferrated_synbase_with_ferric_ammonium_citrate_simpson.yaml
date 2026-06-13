@@ -13,8 +13,8 @@ ingredients:
     value: '410.79'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Cl-
   concentration:
@@ -28,9 +28,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '28.7'
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '0.6265'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '22.059'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Manganese chloride
   concentration:
@@ -79,9 +79,9 @@ ingredients:
   concentration:
     value: '35.69'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
-    label: Sodium Succinate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
+    label: Sodium succinate
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '1.432'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
     label: Ferric ammonium citrate
 preparation_steps:
 - step_number: 1
@@ -125,6 +125,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Deferrated synbase with ferric ammonium citrate; simpson"
     to "deferrated_synbase_with_ferric_ammonium_citrate_simpson" for consistent matching
+- timestamp: '2026-06-05T07:40:55.374710+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 174
   term:

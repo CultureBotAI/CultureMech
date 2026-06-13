@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>5.0-5.8</dd>
+    <dd>{&#39;min&#39;: 5.0, &#39;max&#39;: 5.8}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: KOMODO ModelSEED | ID: 830_22489 | DSMZ Medium: 830 (mediadive.medium:830) | Aerobic: No</dd>
 </dl>
@@ -403,12 +403,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;MEDIUM 830 MODIFIED FOR DSM 22489&#34; to &#34;medium_830_modified_for_dsm_22489&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:01:53.255927+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;5.0-5.8&#39; -&gt; {&#39;min&#39;: 5.0, &#39;max&#39;: 5.8}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:04:54+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/medium_830_modified_for_dsm_22489.yaml</code>
   </small>
 </footer>

@@ -84,6 +84,9 @@ targets:
     kind: tabular
     format: tsv
     glob: "output/culturemech_chebi_mappings.sssom.tsv"
+    # required: enforce mode fails (MISSING_GLOB) if this product hasn't been
+    # built, instead of greening while validating nothing (false-green).
+    required: true
     policy: canonical_or_synonym
     pairs:
       - [subject_id, subject_label]

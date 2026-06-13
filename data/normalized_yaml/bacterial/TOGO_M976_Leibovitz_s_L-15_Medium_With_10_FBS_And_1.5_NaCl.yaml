@@ -14,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Fetal bovine serum
   concentration:
     value: '100'
@@ -61,4 +61,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Leibovitz's L-15 Medium With 10% FBS And 1.5% NaCl"
     to "leibovitzs_l_15_medium_with_10_fbs_and_1_5_nacl" for consistent matching
+- timestamp: '2026-06-05T07:40:46.204872+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:74

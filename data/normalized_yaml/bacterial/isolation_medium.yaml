@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '3.23e-06'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Dibasic sodium phosphate
   concentration:
@@ -36,9 +36,9 @@ ingredients:
   concentration:
     value: '17.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '11.0'
@@ -53,8 +53,8 @@ ingredients:
   concentration:
     value: '0.81'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -63,9 +63,9 @@ ingredients:
   concentration:
     value: '8.3e-06'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.036'
@@ -87,9 +87,9 @@ ingredients:
   concentration:
     value: '5.68e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: 4e-06
@@ -104,15 +104,15 @@ ingredients:
   concentration:
     value: '12.5'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: Ammonium nitrate
 - preferred_term: Molybdenum trioxide
   concentration:
     value: '1.39e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001119
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30627
     label: Molybdenum trioxide
   term:
     id: CHEBI:30627
@@ -146,6 +146,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Isolation medium" to "isolation_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:09.612613+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 252
   term:

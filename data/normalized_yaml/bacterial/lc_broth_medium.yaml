@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Glucose
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '0.735075'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '1.23238'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
@@ -66,8 +66,8 @@ preparation_steps:
   description: Adjust pH to 7.4.
 - step_number: 2
   action: HEAT
-  description: Sterilize at 121°C for 15 min. Cool to 50°C and add 5 ml 1 M
-    CaCl2 x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions.
+  description: Sterilize at 121°C for 15 min. Cool to 50°C and add 5 ml 1 M CaCl2
+    x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -86,12 +86,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.596256+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LC BROTH MEDIUM" to "lc_broth_medium" for
-    consistent matching
+  notes: Normalized name from "LC BROTH MEDIUM" to "lc_broth_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:10.975945+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_546_LC_BROTH_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005987
   name: lc_broth_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:423
     label: Sea Salt
-  chebi_term:
-    id: CHEBI:63005
-    label: sodium nitrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: NaNO3
   concentration:
     value: '0.995025'
@@ -24,10 +19,9 @@ composition:
     id: mediadive.compound:187
     label: NaNO3
   chebi_term:
-    id: CHEBI:65327
-    label: D-xylose
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:63005
+    label: sodium nitrate
+    match_type: manual_curated
 - preferred_term: VOSO4 x 5 H2O
   concentration:
     value: '4.97512e-05'
@@ -36,10 +30,9 @@ composition:
     id: mediadive.compound:277
     label: VOSO4 x 5 H2O
   chebi_term:
-    id: CHEBI:87014
-    label: vanadyl sulfate hexahydrate
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:33146
+    label: vanadyl sulfate
+    match_type: manual_curated
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000497512'
@@ -48,10 +41,10 @@ composition:
     id: mediadive.compound:1852
     label: Sodium resazurin
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:8806
+    label: Resazurin
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.0995025'
@@ -60,10 +53,10 @@ composition:
     id: mediadive.compound:12
     label: FeSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaHCO3
   concentration:
     value: '0.995025'
@@ -83,11 +76,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Na-pyruvate
   concentration:
     value: '0.995025'
@@ -96,10 +84,10 @@ composition:
     id: mediadive.compound:113
     label: Na-pyruvate
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:50144
+    label: Na-pyruvate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '995.0248756218906'
@@ -108,10 +96,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve ingredients (except ferrous sulfate, bicarbonate, yeast
   extract, pyruvate and vitamins), adjust pH to 7.0 and sparge medium with 100% N2
   gas for 30 - 45 min to make it anoxic. Dispense the medium under same gas atmosphere
@@ -152,6 +140,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:20.001091+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:46:20.714046+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:08.153466+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '3 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

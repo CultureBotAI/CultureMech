@@ -12,8 +12,8 @@ ingredients:
   concentration:
     value: '0.07848'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: Magnesium chloride
   concentration:
@@ -22,9 +22,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Pentanoate
   concentration:
     value: '0.04896'
@@ -37,8 +37,8 @@ ingredients:
     value: '7.032e-06'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:com'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000392
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17905
     label: 2-Mercaptoethanesulfonate
 - preferred_term: Sodium bicarbonate
   concentration:
@@ -47,8 +47,8 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: Sodium bicarbonate
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '0.0004363'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - &id001
   preferred_term: Tryptone
@@ -182,8 +182,8 @@ ingredients:
   concentration:
     value: '9.348'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Sodium chloride
   term:
@@ -192,9 +192,9 @@ ingredients:
   concentration:
     value: '376.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.004133'
@@ -216,9 +216,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Acetate
   term:
     id: CHEBI:30089
@@ -227,8 +227,8 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000944
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30089
     label: Acetate
 - preferred_term: Zinc sulfate
   term:
@@ -237,9 +237,9 @@ ingredients:
   concentration:
     value: '0.003478'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Sodium tungstate
   concentration:
     value: '0.003032'
@@ -261,8 +261,8 @@ ingredients:
   concentration:
     value: '14.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -271,9 +271,9 @@ ingredients:
   concentration:
     value: '0.005347'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -307,6 +307,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'McNA Medium (Lupa" to "mcna_medium_lupa" for consistent
     matching
+- timestamp: '2026-06-05T07:41:13.458120+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 474
   term:

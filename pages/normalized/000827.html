@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>4.8-5.5</dd>
+    <dd>{&#39;min&#39;: 4.8, &#39;max&#39;: 5.5}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1367.pdf</dd>
 </dl>
@@ -526,12 +526,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;TELMATOCOLA MEDIUM&#34; to &#34;telmatocola_medium&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:02:07.377630+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;4.8-5.5&#39; -&gt; {&#39;min&#39;: 4.8, &#39;max&#39;: 5.5}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:05:08+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/telmatocola_medium.yaml</code>
   </small>
 </footer>

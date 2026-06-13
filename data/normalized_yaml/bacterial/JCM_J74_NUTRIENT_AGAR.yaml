@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -52,20 +52,25 @@ curation_history:
 - timestamp: '2026-03-17T19:45:31.511963+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NUTRIENT AGAR" to "nutrient_agar" for consistent
-    matching
+  notes: Normalized name from "NUTRIENT AGAR" to "nutrient_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:17.668550+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:12
 variant_children:
 - path: data/normalized_yaml/bacterial/JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002194
   name: alkaline_nutrient_agar
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/NBRC_NUTRIENT_AGAR.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:007511
   name: nutrient_agar
-  notes: Reviewed JCM/NBRC Nutrient Agar records; both parsed formulations
-    contain beef extract 3 g/L, peptone 5 g/L, and agar 15 g/L, with the JCM
-    parent carrying pH 7.0 and the NBRC record not specifying pH.
+  notes: Reviewed JCM/NBRC Nutrient Agar records; both parsed formulations contain
+    beef extract 3 g/L, peptone 5 g/L, and agar 15 g/L, with the JCM parent carrying
+    pH 7.0 and the NBRC record not specifying pH.

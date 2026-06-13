@@ -785,9 +785,12 @@ validate-references file:
     uv run linkml-reference-validator validate data {{file}} --schema {{schema_path}} --target-class MediaRecipe
     echo "✓ Reference validation passed"
 
-# id↔label gate (Engine A): the schema now binds every descriptor term slot,
-# so --labels verifies term.label is the CANONICAL ontology label for term.id
-# across all recipe files. Fails (non-zero) on any label drift.
+# id↔label gate (Engine A): the schema binds the organism/environment/precursor/
+# substrate term slots, so --labels verifies their term.label is the CANONICAL
+# ontology label for term.id across all recipe files. The chemistry `term`/
+# `chebi_term` slots are deliberately NOT bound (they carry curator formula/
+# common-name labels; see the schema note and Engine-B's label waiver). Fails
+# (non-zero) on any canonical-label drift in the bound slots.
 [group('QC')]
 validate-terms-all:
     #!/usr/bin/env bash
@@ -801,8 +804,12 @@ validate-terms-all:
     done
     exit $rc
 
-# id↔label gate (Engine B): verify (id,label) pairs in DATA PRODUCTS
-# (output/*.sssom.tsv) correspond to the ontology. Exits 2 on any mismatch.
+# id↔label gate (Engine B): runs the shared OAK validator over the full
+# conf/id_label_targets.yaml — this gates BOTH the recipe YAML term blocks
+# (id-existence; chemistry term/chebi_term labels are waived, organism/
+# environment canonical) AND the SSSOM data products (output/*.sssom.tsv,
+# canonical-or-synonym). Exits non-zero on any ERROR-class verdict
+# (ID_NOT_FOUND / EMPTY_LABEL / MISMATCH / MISSING_COLUMN / MISSING_GLOB).
 [group('QC')]
 validate-products:
     uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
@@ -873,6 +880,21 @@ qc:
 validate-strict *args:
     #!/usr/bin/env bash
     uv run python scripts/validate_strict.py {{args}}
+
+# Grounding-consistency QC (G23): flags ingredient names grounded to >1 CHEBI id
+# (and CHEBI ids carrying >1 distinct compound) on the RELIABLE grounding layer,
+# and reports the low-confidence kg_fallback chebi_term layer separately.
+# CI gates at the current baseline so NEW inconsistencies fail without blocking
+# on the existing backlog (G24/G25). Re-baseline by bumping --max-allowed.
+# Baseline history: G25 Phase 1 promoting kg_fallback chebi_terms to corpus
+# consensus surfaced latent salt/hydrate/isomer name->multi-CHEBI ambiguities
+# (peaked at 111); the primary-term regrounding pass (483 wrong-id fixes) then
+# resolved two of them, tightening the reliable-layer backlog to 109.
+[group('QC')]
+check-chebi-grounding *args:
+    #!/usr/bin/env bash
+    uv run python scripts/audit_chebi_consistency.py \
+        --out reports/chebi_consistency.tsv --max-allowed 109 {{args}}
 
 # Scan-only collision check for CultureMech:NNNNNN IDs. Exits non-zero if any
 # cross-file duplicates are detected. Use as a pre-commit / CI safety net.

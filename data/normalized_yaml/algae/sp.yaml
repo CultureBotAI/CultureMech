@@ -48,6 +48,16 @@ curation_history:
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
     category->lowercase=1
+- timestamp: '2026-06-10T06:57:11.621516+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:37:34.007672+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 references:
 - reference: CCAP:SP
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_SP.pdf
@@ -173,7 +183,7 @@ ingredients:
   notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
 - preferred_term: Calcium pantothenate
   term:
-    id: CHEBI:3374
+    id: CHEBI:31345
     label: Calcium pantothenate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
@@ -334,8 +344,8 @@ ingredients:
   notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
 - preferred_term: MgSO .7H O
   term:
-    id: CHEBI:32599
-    label: MgSO .7H O
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

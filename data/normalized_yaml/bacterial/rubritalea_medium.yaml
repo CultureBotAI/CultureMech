@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Tris-HCl
   concentration:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '29.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -62,8 +62,8 @@ ingredients:
     value: '7.685'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 3.335, 4.35]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
@@ -71,7 +71,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:91249
-    label: ''
+    label: ammonium molybdate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -80,8 +80,8 @@ ingredients:
     value: '0.599'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.099, 0.5]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Na-EDTA
   term:
@@ -90,8 +90,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na-EDTA
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -100,8 +100,8 @@ ingredients:
   concentration:
     value: '1.095'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
@@ -110,8 +110,8 @@ ingredients:
   concentration:
     value: '0.154'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -120,8 +120,8 @@ ingredients:
   concentration:
     value: '0.0392'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
@@ -130,8 +130,8 @@ ingredients:
   concentration:
     value: '0.0248'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000525
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
@@ -147,18 +147,18 @@ ingredients:
   concentration:
     value: '70.43'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '11.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: NaHCO3
   term:
@@ -167,8 +167,8 @@ ingredients:
   concentration:
     value: '2.88'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: KCl
   term:
@@ -177,18 +177,18 @@ ingredients:
   concentration:
     value: '1.99'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: KBr
   term:
     id: CHEBI:32030
-    label: KBr
+    label: potassium bromide
   concentration:
     value: '0.29'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
     label: KBr
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -197,18 +197,18 @@ ingredients:
   concentration:
     value: '31.86'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.08'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 preparation_steps:
 - step_number: 1
@@ -216,17 +216,17 @@ preparation_steps:
   description: Adjust to pH 7.5
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH
-    (about 7.3 g). Dissolve other salts separately, combine and adjust the pH to
-    6.8 with NaOH or H2SO4.
+  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about
+    7.3 g). Dissolve other salts separately, combine and adjust the pH to 6.8 with
+    NaOH or H2SO4.
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to
-    retard precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Add NaHCO3 from a filter-sterilized stock solution when the
-    medium has cooled.
+  description: Add NaHCO3 from a filter-sterilized stock solution when the medium
+    has cooled.
 applications:
 - Microbial cultivation
 curation_history:
@@ -237,8 +237,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.150065Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:09:29.540392Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -254,12 +254,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.572849+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RUBRITALEA MEDIUM" to "rubritalea_medium" for
-    consistent matching
+  notes: Normalized name from "RUBRITALEA MEDIUM" to "rubritalea_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:44.746297+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 17 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:11.108142+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1137_RUBRITALEA_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003846
   name: rubritalea_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

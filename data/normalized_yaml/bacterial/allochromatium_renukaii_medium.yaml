@@ -14,12 +14,12 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.489716'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
   notes: Copied from referenced JCM Medium 561
 - preferred_term: CaCl2 x 2 H2O
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.146915'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
   notes: Copied from referenced JCM Medium 561
 - preferred_term: MgSO4 x 7 H2O
@@ -40,19 +40,19 @@ ingredients:
   concentration:
     value: '1.95886'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
   notes: Copied from referenced JCM Medium 561
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.333007'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
   notes: Copied from referenced JCM Medium 561
 - preferred_term: NaCl
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '19.5886'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
   notes: Copied from referenced JCM Medium 561
 - preferred_term: Yeast extract
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '2.9383'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
   notes: Copied from referenced JCM Medium 561
 - preferred_term: Ferric citrate
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000864
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Ferric citrate
   notes: Copied from referenced JCM Medium 561
 - preferred_term: NaHCO3
@@ -100,8 +100,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
   notes: Copied from referenced JCM Medium 561
 - preferred_term: Na2S x 9 H2O
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '0.240182'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
   notes: Copied from referenced JCM Medium 561
 - preferred_term: Na2S2O3 x 5 H2O
@@ -122,8 +122,8 @@ ingredients:
   concentration:
     value: '1.48912'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
   notes: Copied from referenced JCM Medium 561
 - preferred_term: HCl
@@ -133,8 +133,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
   notes: Copied from referenced JCM Medium 561
 - preferred_term: ZnCl2
@@ -144,8 +144,8 @@ ingredients:
   concentration:
     value: '0.0699301'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
   notes: Copied from referenced JCM Medium 561
 - preferred_term: MnCl2 x 4 H2O
@@ -155,19 +155,19 @@ ingredients:
   concentration:
     value: '0.0999001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
   notes: Copied from referenced JCM Medium 561
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.0599401'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
   notes: Copied from referenced JCM Medium 561
 - preferred_term: CoCl2 x 6 H2O
@@ -177,8 +177,8 @@ ingredients:
   concentration:
     value: '0.1998'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
   notes: Copied from referenced JCM Medium 561
 - preferred_term: CuCl2 x 2 H2O
@@ -188,8 +188,8 @@ ingredients:
   concentration:
     value: '0.01998'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
   notes: Copied from referenced JCM Medium 561
 - preferred_term: NiCl2 x 6 H2O
@@ -199,8 +199,8 @@ ingredients:
   concentration:
     value: '0.01998'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
   notes: Copied from referenced JCM Medium 561
 - preferred_term: Na2MoO4 x 2 H2O
@@ -210,8 +210,8 @@ ingredients:
   concentration:
     value: '0.03996'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   notes: Copied from referenced JCM Medium 561
 preparation_steps:
@@ -249,6 +249,16 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:40:48.284854+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 18 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:52.947612+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 data_quality_flags:
 - resolved_reference
 parent_media:

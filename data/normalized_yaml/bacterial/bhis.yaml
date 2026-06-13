@@ -14,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
-    label: Hemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: Menadione
   concentration:
     value: '0.5'
@@ -26,8 +26,8 @@ ingredients:
   term:
     id: CHEBI:28869
     label: Menadione
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000903
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28869
     label: Menadione
 - preferred_term: Calf brains
   term:
@@ -168,3 +168,9 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BHIS" to "bhis" for consistent matching
+- timestamp: '2026-06-05T07:40:50.947698+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

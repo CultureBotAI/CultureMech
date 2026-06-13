@@ -23,12 +23,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '5.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NH4H2PO4
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000515
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62982
     label: NH4H2PO4
 - preferred_term: Catalase
   term:
@@ -60,9 +60,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled
-    water each, and sterilize separately by filtration. Cool down autoclaved
-    main solution to 50°C, and aseptically add catalase and MgSO4 solution.
+  description: Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water
+    each, and sterilize separately by filtration. Cool down autoclaved main solution
+    to 50°C, and aseptically add catalase and MgSO4 solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,12 +81,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:17.663023+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YM-CATALASE MEDIUM" to "ym_catalase_medium" for
-    consistent matching
+  notes: Normalized name from "YM-CATALASE MEDIUM" to "ym_catalase_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:55.810644+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:14.697135+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_469_YM-CATALASE_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005582
   name: ym_catalase_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

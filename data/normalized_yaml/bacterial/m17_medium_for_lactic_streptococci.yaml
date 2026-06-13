@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000326
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22652
     label: Ascorbic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Sodium beta-glycerophosphate
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000486
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132089
     label: Sodium beta-glycerophosphate
 - preferred_term: Lactose
   term:
@@ -67,8 +67,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17716
     label: Lactose
 preparation_steps:
 - step_number: 1
@@ -101,6 +101,12 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''6.7-7.1'' -> {''min'': 6.7, ''max'': 7.1}'
+- timestamp: '2026-06-05T07:41:11.735282+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_449_M17_medium_FOR_LACTIC_STREPTOCOCCI.yaml
   relationship: SOURCE_DUPLICATE

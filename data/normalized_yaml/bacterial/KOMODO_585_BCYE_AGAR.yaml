@@ -25,7 +25,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ACES
   term:
-    id: CHEBI:65994
+    id: CHEBI:39061
     label: ACES
   concentration:
     value: '20.4082'
@@ -44,8 +44,8 @@ ingredients:
   concentration:
     value: '30.6122'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -54,8 +54,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Fe4(PO4)2
   term:
@@ -64,8 +64,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000760
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132767
     label: Fe4(PO4)2
 - preferred_term: KOH
   term:
@@ -75,9 +75,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
-    label: KOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 applications:
 - Microbial cultivation
 curation_history:
@@ -117,3 +117,13 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''6.4-7.4'' -> {''min'': 6.4, ''max'': 7.4}'
+- timestamp: '2026-06-05T07:40:24.701672+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.275013+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

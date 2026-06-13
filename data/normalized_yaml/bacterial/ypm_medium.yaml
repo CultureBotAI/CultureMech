@@ -26,8 +26,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001010
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29864
     label: Mannitol
 - preferred_term: Agar
   term:
@@ -37,8 +37,8 @@ ingredients:
     value: '12'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -65,13 +65,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.398515+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YPM MEDIUM" to "ypm_medium" for consistent
-    matching
+  notes: Normalized name from "YPM MEDIUM" to "ypm_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:55.870255+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:360
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_360_YPM_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005083
   name: ypm_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 360; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 360; local ingredient
+    and concentration signatures match.

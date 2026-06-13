@@ -23,14 +23,13 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: After autoclaving, adjust pH to 9.0 with sterilized 10% Na2CO3
-    solution.
+  description: After autoclaving, adjust pH to 9.0 with sterilized 10% Na2CO3 solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,19 +48,24 @@ curation_history:
 - timestamp: '2026-03-17T19:46:33.280739+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5%
-    NaCl (pH 9.0)" to "yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0"
-    for consistent matching
+  notes: Normalized name from "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl
+    (pH 9.0)" to "yeast_extract_malt_extract_agar_isp_2_with_5_nacl_ph_9_0" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:57.225048+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:74
 parent_media:
-  path:
-    data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2_with_2_nacl.yaml
+  path: data/normalized_yaml/fungal/yeast_extract_malt_extract_agar_isp_2_with_2_nacl.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:010493
   name: yeast_extract_malt_extract_agar_isp_2_with_2_nacl
-  notes: Reviewed JCM fungal ISP-2 agar salinity/pH variant; parent already
-    represents the 2% NaCl base and child is the 5% NaCl pH 9.0 variant.
+  notes: Reviewed JCM fungal ISP-2 agar salinity/pH variant; parent already represents
+    the 2% NaCl base and child is the 5% NaCl pH 9.0 variant.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- NaCl increased from 20 g/L to 50 g/L; child record also specifies pH 9.0 while
-  the yeast extract-malt extract agar ISP-2 base remains unchanged.
+- NaCl increased from 20 g/L to 50 g/L; child record also specifies pH 9.0 while the
+  yeast extract-malt extract agar ISP-2 base remains unchanged.

@@ -25,18 +25,18 @@ ingredients:
   concentration:
     value: '6.66667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '31.3725'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: NaCl
   term:
@@ -45,18 +45,18 @@ ingredients:
   concentration:
     value: '68.6274'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.980392'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: Yeast extract
   concentration:
@@ -65,8 +65,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix thoroughly and autoclave. After cooling, add the following
-    solution (autoclaved).
+  description: Mix thoroughly and autoclave. After cooling, add the following solution
+    (autoclaved).
 applications:
 - Microbial cultivation
 curation_history:
@@ -85,16 +85,25 @@ curation_history:
 - timestamp: '2026-03-17T19:45:24.239559+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ML-15 MEDIUM" to "ml_15_medium" for consistent
-    matching
+  notes: Normalized name from "ML-15 MEDIUM" to "ml_15_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:35.173794+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:08.211362+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 parent_media:
   path: data/normalized_yaml/bacterial/ml_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:003210
   name: ml_medium
-  notes: Reviewed ML-15 as a concentration variant of ML medium with yeast
-    extract as the main curated concentration axis.
+  notes: Reviewed ML-15 as a concentration variant of ML medium with yeast extract
+    as the main curated concentration axis.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Reviewed ML/ML-15 pair; child keeps the same alkaline salt base with small
-  normalization-scale differences and increases yeast extract from 5 to 20 g/L.
+- Reviewed ML/ML-15 pair; child keeps the same alkaline salt base with small normalization-scale
+  differences and increases yeast extract from 5 to 20 g/L.

@@ -27,8 +27,8 @@ ingredients:
   notes: From CCAP Medium MR_S77.pdf; Curated from CCAP Medium MR_S77.pdf specification
 - preferred_term: MgSO .7H O
   term:
-    id: CHEBI:32599
-    label: MgSO .7H O
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -112,7 +112,7 @@ ingredients:
 - preferred_term: KBr
   term:
     id: CHEBI:32030
-    label: KBr
+    label: potassium bromide
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -204,6 +204,16 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(4 keys) -> list(3 entries)
+- timestamp: '2026-06-10T06:58:31.585981+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:11.184895+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 data_quality_flags:
 - has_ontology_mappings
 - ingredients_curated

@@ -157,8 +157,8 @@ ingredients:
   concentration:
     value: '18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Sodium citrate dihydrate
   term:
@@ -167,8 +167,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000719
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32142
     label: Sodium citrate dihydrate
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -177,8 +177,8 @@ ingredients:
   concentration:
     value: '0.98'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na2HPO4 x 7 H2O
   term:
@@ -187,19 +187,19 @@ ingredients:
   concentration:
     value: '0.355'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.8600000000000001'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.34, 0.52]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
@@ -208,8 +208,8 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000429
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76181
     label: Fe(NH4)2(SO4)2 x 6 H2O
 - preferred_term: Sucrose
   term:
@@ -218,8 +218,8 @@ ingredients:
   concentration:
     value: '75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -228,8 +228,8 @@ ingredients:
   concentration:
     value: '1.53'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 2 H2O
 - preferred_term: Glutamic acid
   term:
@@ -238,8 +238,8 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000946
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18237
     label: Glutamic acid
 preparation_steps:
 - step_number: 1
@@ -324,3 +324,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACANTHAMOEBA MEDIUM" to "acanthamoeba_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:40:46.587098+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:52.336470+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

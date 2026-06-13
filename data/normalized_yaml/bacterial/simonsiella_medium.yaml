@@ -32,18 +32,18 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Yeast extract
   concentration:
@@ -61,15 +61,15 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Prepare the medium without horse serum. After autoclaving cool to
-    50°C, then add 100 ml/l of sterile horse serum. Transfer cultures when
-    actively growing. Cultures die rapidly in stationary growth phase!
+  description: Prepare the medium without horse serum. After autoclaving cool to 50°C,
+    then add 100 ml/l of sterile horse serum. Transfer cultures when actively growing.
+    Cultures die rapidly in stationary growth phase!
 applications:
 - Microbial cultivation
 curation_history:
@@ -92,13 +92,23 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.774926+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SIMONSIELLA MEDIUM" to "simonsiella_medium" for
-    consistent matching
+  notes: Normalized name from "SIMONSIELLA MEDIUM" to "simonsiella_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:45.855904+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:11.494868+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 kg_microbe_match: mediadive.medium:303
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_303_SIMONSIELLA_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004820
   name: simonsiella_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 303; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 303; local ingredient
+    and concentration signatures match.

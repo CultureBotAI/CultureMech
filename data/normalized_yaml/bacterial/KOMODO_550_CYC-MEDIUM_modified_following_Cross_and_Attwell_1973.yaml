@@ -20,8 +20,8 @@ ingredients:
   concentration:
     value: '48'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Czapek Dox agar
 - preferred_term: Yeast extract
   concentration:
@@ -31,12 +31,6 @@ ingredients:
   concentration:
     value: '6.1'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Tryptophan
   term:
     id: CHEBI:27897
@@ -44,8 +38,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001025
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27897
     label: Tryptophan
 - preferred_term: Agar
   term:
@@ -54,8 +48,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -79,25 +73,35 @@ curation_history:
 - timestamp: '2026-03-17T19:45:54.320321+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CYC-MEDIUM (modified following Cross and
-    Attwell,1973)" to "cyc_medium_modified_following_cross_and_attwell_1973" for
-    consistent matching
+  notes: Normalized name from "CYC-MEDIUM (modified following Cross and Attwell,1973)"
+    to "cyc_medium_modified_following_cross_and_attwell_1973" for consistent matching
+- timestamp: '2026-06-05T07:40:24.574648+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:28.349936+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_550_modified_for_dsm_17572.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005998
   name: medium_550_modified_for_dsm_17572
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/cyc_medium_modified_following_cross_and_attwell_1973.yaml
+  path: data/normalized_yaml/bacterial/cyc_medium_modified_following_cross_and_attwell_1973.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001686
   name: cyc_medium_modified_following_cross_and_attwell_1973
-  notes: KOMODO record states DSMZ Medium 550 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 550 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

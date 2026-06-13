@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Succinic acid
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:15741
     label: succinic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000373
-    label: Succinic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15741
+    label: succinic acid
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -37,9 +37,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: GAM broth (Nissui)
   concentration:
     value: '59'
@@ -79,3 +79,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GAM Agar With 1% Succinate" to "gam_agar_with_1_succinate"
     for consistent matching
+- timestamp: '2026-06-05T07:40:32.369653+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

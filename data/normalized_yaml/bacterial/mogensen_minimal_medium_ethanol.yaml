@@ -12,8 +12,8 @@ ingredients:
   concentration:
     value: '0.1779'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Ethanol
   term:
@@ -23,8 +23,8 @@ ingredients:
     value: '625.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:etoh'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 - preferred_term: Tromethamine
   concentration:
@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '2.16'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium molybdate
   concentration:
@@ -58,9 +58,9 @@ ingredients:
     value: '0.07292'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '11.17'
@@ -75,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -85,8 +85,8 @@ ingredients:
   concentration:
     value: '138.3'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Manganese chloride
   concentration:
@@ -127,9 +127,9 @@ ingredients:
   concentration:
     value: '0.07651'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -163,6 +163,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Mogensen Minimal Medium (Ethanol" to "mogensen_minimal_medium_ethanol"
     for consistent matching
+- timestamp: '2026-06-05T07:41:38.101433+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 345
   term:

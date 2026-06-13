@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: CaCl2 × 2 H2O
   concentration:
@@ -33,8 +33,8 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NH4Cl
   concentration:
     value: '18.7'
@@ -44,9 +44,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Na2HPO4 × 12 H2O
   concentration:
     value: '25'
@@ -76,9 +76,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: sodium gluconate
   concentration:
     value: '0.4'
@@ -87,8 +87,8 @@ ingredients:
   term:
     id: CHEBI:84997
     label: sodium gluconate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001052
+  mediaingredientmech_chebi_term:
+    id: CHEBI:84997
     label: sodium gluconate
 media_term:
   preferred_term: TOGO Medium M3209
@@ -120,3 +120,19 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SL7 solid medium" to "sl7_solid_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:45.899238+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:32.287362+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:11.509302+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

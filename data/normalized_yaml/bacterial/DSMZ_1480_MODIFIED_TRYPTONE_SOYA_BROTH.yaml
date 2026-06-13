@@ -148,8 +148,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: NaCO3
   concentration:
@@ -158,8 +158,8 @@ ingredients:
   term:
     id: CHEBI:29377
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: NaCO3
 - preferred_term: Agar
   term:
@@ -168,8 +168,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -199,3 +199,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED TRYPTONE SOYA BROTH" to "modified_tryptone_soya_broth"
     for consistent matching
+- timestamp: '2026-06-05T07:40:16.067329+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

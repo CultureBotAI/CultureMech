@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Potato
   concentration:
@@ -58,19 +58,25 @@ curation_history:
 - timestamp: '2026-03-17T19:45:39.178986+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "POTATO DEXTROSE AGAR" to "potato_dextrose_agar"
-    for consistent matching
+  notes: Normalized name from "POTATO DEXTROSE AGAR" to "potato_dextrose_agar" for
+    consistent matching
+- timestamp: '2026-06-05T07:40:20.702438+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 5.6
 parent_media:
   path: data/normalized_yaml/fungal/potato_dextrose_agar.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:010445
   name: potato_dextrose_agar
-  notes: KOMODO record states DSMZ Medium 129 provenance and exactly matches the
-    single DSMZ parent signature; parent is categorized fungal while the KOMODO
-    source duplicate is categorized bacterial.
+  notes: KOMODO record states DSMZ Medium 129 provenance and exactly matches the single
+    DSMZ parent signature; parent is categorized fungal while the KOMODO source duplicate
+    is categorized bacterial.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source. Category differs between source records and
-  should be treated as source metadata, not a formulation difference.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source. Category differs between source records and should be treated
+  as source metadata, not a formulation difference.

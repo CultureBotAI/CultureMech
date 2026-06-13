@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Glycerol
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Bacto peptone
   concentration:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 - preferred_term: Agar
   term:
@@ -58,15 +58,15 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: Make up the medium without the ethanol, adjust to pH 7.0 and
-    sterilize by autoclaving. Add sterile ethanol to the sterile cooled medium.
-    The medium may be solidified by adding 15.0 g/l agar.
+  description: Make up the medium without the ethanol, adjust to pH 7.0 and sterilize
+    by autoclaving. Add sterile ethanol to the sterile cooled medium. The medium may
+    be solidified by adding 15.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -85,12 +85,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.109632+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TUA ACETOBACTER MEDIUM" to
-    "tua_acetobacter_medium" for consistent matching
+  notes: Normalized name from "TUA ACETOBACTER MEDIUM" to "tua_acetobacter_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:54.731134+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/JCM_J709_TUA_ACETOBACTER_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003055
   name: tua_acetobacter_medium
-  notes: Same TUA Acetobacter Medium formulation with only rounding-scale
-    differences in glucose, glycerol, peptone, yeast extract, and agar.
+  notes: Same TUA Acetobacter Medium formulation with only rounding-scale differences
+    in glucose, glycerol, peptone, yeast extract, and agar.

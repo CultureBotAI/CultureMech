@@ -15,12 +15,12 @@ ingredients:
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '22'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: NaHCO3
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaCl
   term:
@@ -39,18 +39,18 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: Vitamin B12
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Isobutyramide
   concentration:
@@ -88,8 +88,8 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Na2S2O3
   term:
-    id: CHEBI:59168
-    label: Na2S2O3
+    id: CHEBI:132112
+    label: sodium thiosulfate
   concentration:
     value: '500'
     unit: G_PER_L
@@ -103,8 +103,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -113,18 +113,18 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4
   term:
     id: CHEBI:35176
-    label: ZnSO4
+    label: zinc sulfate
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
     label: ZnSO4
 - preferred_term: MnCl2
   concentration:
@@ -132,16 +132,16 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:63041
-    label: ''
+    label: manganese(II) chloride
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -150,18 +150,18 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2
   term:
     id: CHEBI:49553
-    label: CuCl2
+    label: copper(II) chloride
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000821
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49553
     label: CuCl2
 - preferred_term: NiCl2 x 2 H2O
   term:
@@ -170,8 +170,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 2 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -180,31 +180,29 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve in this order in 1L preferably MilliQ water. Sterilize
-    in closed bottles at 120°C 20 min. After cooling, usually there will be some
-    precipitate on the bottom. That´s why it is handy to have another empty 1L
-    bottle to decant clear top solution into it.
+  description: Dissolve in this order in 1L preferably MilliQ water. Sterilize in
+    closed bottles at 120°C 20 min. After cooling, usually there will be some precipitate
+    on the bottom. That´s why it is handy to have another empty 1L bottle to decant
+    clear top solution into it.
 - step_number: 2
   action: MIX
   description: 'After sterilization add from concentrated steril stock solutions:'
 - step_number: 3
   action: AUTOCLAVE
-  description: Trace metals, MgSO4 x 7 H2O and Na2S2O3 x 5 H2O solution you can
-    autoclave
+  description: Trace metals, MgSO4 x 7 H2O and Na2S2O3 x 5 H2O solution you can autoclave
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Vitamin B12 and Isobutyramide solution you have to
-    filter-sterilize
+  description: Vitamin B12 and Isobutyramide solution you have to filter-sterilize
 - step_number: 5
   action: FILTER_STERILIZE
-  description: 50% solution of Na2S2O3 (Fluka), pH 9-10 >> filter sterilize or
-    110°C 20 min
+  description: 50% solution of Na2S2O3 (Fluka), pH 9-10 >> filter sterilize or 110°C
+    20 min
 - step_number: 6
   action: MIX
   description: pH final 3-4 by HCl
@@ -218,8 +216,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.629971Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:18:56.210303Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -231,13 +229,25 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.261547+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NITRILIRUPTOR ALKALIPHILUS MEDIUM" to
-    "nitriliruptor_alkaliphilus_medium" for consistent matching
+  notes: Normalized name from "NITRILIRUPTOR ALKALIPHILUS MEDIUM" to "nitriliruptor_alkaliphilus_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:39.731575+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:35.695735+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:09.570005+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 7 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_1105_NITRILIRUPTOR_ALKALIPHILUS_MEDIUM.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_1105_NITRILIRUPTOR_ALKALIPHILUS_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003805
   name: nitriliruptor_alkaliphilus_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

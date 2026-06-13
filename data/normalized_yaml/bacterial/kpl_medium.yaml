@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '8.76424'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Galactose
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '8.76424'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000523
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28260
     label: Galactose
 - preferred_term: Tween 80
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 - preferred_term: Agar
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '13.1464'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Skim milk
   concentration:
@@ -63,16 +63,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Combine components, except white table wine. Adjust pH to 5.5.
-    Autoclave for 15 min at 121°C, Cool to 45-50°C. Aseptically add filter
-    sterilized white table wine. Mix thoroughly. Pour into sterile Petri dishes.
+  description: Combine components, except white table wine. Adjust pH to 5.5. Autoclave
+    for 15 min at 121°C, Cool to 45-50°C. Aseptically add filter sterilized white
+    table wine. Mix thoroughly. Pour into sterile Petri dishes.
 - step_number: 2
   action: HEAT
-  description: Adjust 10% skim milk to pH 5.5 with lactic acid and heat at 100°C
-    for 30 minutes. Remove precipitate by filtration. For preparing broth
-    medium, adjust filtrate to pH 7.0 with 2 N NaOH and heat at 100°C for 30
-    minutes. Remove precipitate by filtration. Adjust filtrate to pH 5.5 with 2
-    N HCl.
+  description: Adjust 10% skim milk to pH 5.5 with lactic acid and heat at 100°C for
+    30 minutes. Remove precipitate by filtration. For preparing broth medium, adjust
+    filtrate to pH 7.0 with 2 N NaOH and heat at 100°C for 30 minutes. Remove precipitate
+    by filtration. Adjust filtrate to pH 5.5 with 2 N HCl.
 - step_number: 3
   action: AUTOCLAVE
   description: Filter-sterilize and add to autoclaved basal medium.
@@ -94,12 +93,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:17.329285+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "KPL MEDIUM" to "kpl_medium" for consistent
-    matching
+  notes: Normalized name from "KPL MEDIUM" to "kpl_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:10.561057+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_456_KPL_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005306
   name: kpl_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

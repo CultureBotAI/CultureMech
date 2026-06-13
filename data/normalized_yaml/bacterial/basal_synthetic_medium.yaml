@@ -13,8 +13,8 @@ ingredients:
     value: '233.7'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lcts'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17716
     label: Lactose
 - preferred_term: Ammonium phosphate
   concentration:
@@ -34,8 +34,8 @@ ingredients:
   concentration:
     value: '0.0812'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
@@ -87,6 +87,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Basal synthetic medium" to "basal_synthetic_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:50.580637+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 301
   term:

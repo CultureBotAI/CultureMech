@@ -19,28 +19,28 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KCl
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -69,9 +69,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except yeast extract and adjust pH to 2.0
-    with H2SO4. After autoclaving add yeast extract from a sterile stock
-    solution.
+  description: Dissolve ingredients except yeast extract and adjust pH to 2.0 with
+    H2SO4. After autoclaving add yeast extract from a sterile stock solution.
 - step_number: 2
   action: ADJUST_PH
   description: 'Note: For autotrophic growth omit yeast extract and add to the medium
@@ -94,18 +93,28 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.041293+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDIMICROBIUM MEDIUM" to "acidimicrobium_medium"
-    for consistent matching
+  notes: Normalized name from "ACIDIMICROBIUM MEDIUM" to "acidimicrobium_medium" for
+    consistent matching
+- timestamp: '2026-06-05T07:40:47.297114+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:52.594456+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J698_ACIDIMICROBIUM_MEDIUM.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:003043
   name: acidimicrobium_medium
-  notes: Reviewed same-name Acidimicrobium medium concentration variant; child
-    shares the parsed base formulation and differs primarily in yeast extract
-    concentration with a small pH difference.
+  notes: Reviewed same-name Acidimicrobium medium concentration variant; child shares
+    the parsed base formulation and differs primarily in yeast extract concentration
+    with a small pH difference.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Reviewed same-name Acidimicrobium medium records; child rounds the inorganic
-  salts to the same effective levels but lowers yeast extract from 2.5 g/L to
-  0.25 g/L and changes pH from 1.7 to 2.0.
+- Reviewed same-name Acidimicrobium medium records; child rounds the inorganic salts
+  to the same effective levels but lowers yeast extract from 2.5 g/L to 0.25 g/L and
+  changes pH from 1.7 to 2.0.

@@ -19,12 +19,6 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Na glutamate
   term:
     id: CHEBI:64220
@@ -32,8 +26,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
     label: Na glutamate
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
@@ -42,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -52,8 +46,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaSO4 x 2 H2O
   term:
@@ -62,8 +56,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000465
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32583
     label: CaSO4 x 2 H2O
 - preferred_term: KCl
   term:
@@ -72,8 +66,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaCl
   term:
@@ -83,18 +77,18 @@ ingredients:
     value: '200.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 100.0, 100.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '80'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 preparation_steps:
 - step_number: 1
@@ -105,10 +99,10 @@ preparation_steps:
   description: Add components to distilled water and bring volume to 500 ml.
 - step_number: 3
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately and combine them after
-    cooling. For preparation of solid medium, add 18.0 g agar to Solution A (500
-    ml), combine them after cooling to 60-70C, mix well and quickly distribute
-    into sterile petri dishes or test tubes.
+  description: Autoclave solutions A and B separately and combine them after cooling.
+    For preparation of solid medium, add 18.0 g agar to Solution A (500 ml), combine
+    them after cooling to 60-70C, mix well and quickly distribute into sterile petri
+    dishes or test tubes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -135,18 +129,34 @@ curation_history:
 - timestamp: '2026-03-17T19:45:25.951739+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MODIFIED HALOALKALIPHILE MEDIUM" to
-    "modified_haloalkaliphile_medium" for consistent matching
+  notes: Normalized name from "MODIFIED HALOALKALIPHILE MEDIUM" to "modified_haloalkaliphile_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:36.644825+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:48.784417+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:08.649740+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 high_metal: true
 parent_media:
   path: data/normalized_yaml/bacterial/haloalkaliphile_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:002663
   name: haloalkaliphile_medium
-  notes: Reviewed Modified Haloalkaliphile concentration variant; child shares
-    the parent formulation with carbonate concentration as the curated axis.
+  notes: Reviewed Modified Haloalkaliphile concentration variant; child shares the
+    parent formulation with carbonate concentration as the curated axis.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Reviewed Haloalkaliphile pair; child keeps yeast extract, casamino acids, Na
-  glutamate, MgSO4, CaSO4, KCl, and NaCl unchanged while Na2CO3 increases from 8
-  to 80 g/L; citrate hydrate label differs.
+- Reviewed Haloalkaliphile pair; child keeps yeast extract, casamino acids, Na glutamate,
+  MgSO4, CaSO4, KCl, and NaCl unchanged while Na2CO3 increases from 8 to 80 g/L; citrate
+  hydrate label differs.

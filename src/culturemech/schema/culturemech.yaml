@@ -472,8 +472,14 @@ classes:
         inlined: true
 
       mediaingredientmech_term:
-        description: MediaIngredientMech identifier for this solution
+        description: Legacy MediaIngredientMech:NNNNNN identifier for this solution (pre-CHEBI-keying).
         range: MediaIngredientMechTerm
+        recommended: false
+        inlined: true
+
+      mediaingredientmech_chebi_term:
+        description: CHEBI-keyed linkage to a curated MediaIngredientMech ingredient (current MIM schema).
+        range: MediaIngredientMechChebiTerm
         recommended: false
         inlined: true
 
@@ -689,26 +695,36 @@ classes:
       term:
         description: Primary ontology grounding (CHEBI, FOODON, UBERON, ENVO, or upstream mediadive.compound).
         range: ChemicalEntityTerm
-        # id↔label gate: range-less binding → `linkml-term-validator --labels`
-        # verifies term.label is the canonical OBO label for term.id.
-        bindings:
-          - binds_value_of: id
-            obligation_level: REQUIRED
+        # NOTE: intentionally NO `binds_value_of: id` canonical-label binding.
+        # `term`/`chebi_term` carry CURATOR-intended formula/common-name labels
+        # (e.g. CHEBI:15377 "Distilled water", CHEBI:26710 "NaCl") that are
+        # deliberately not the OBO canonical label. Enforcing the canonical
+        # label here (linkml-term-validator --labels, Engine A) would directly
+        # contradict the Engine-B label waiver (conf/id_label_targets.yaml:
+        # label_waived_keys: [term, chebi_term]) and flag the very rows that
+        # waiver exists to accept. id-existence is still checked by Engine B.
+        # Canonical-label bindings ARE kept on organism/environment/precursor/
+        # substrate terms, whose labels are canonical.
         recommended: true
         inlined: true
 
       chebi_term:
         description: CHEBI-only grounding kept alongside `term` when `term` carries the upstream identifier (e.g. mediadive.compound on solution compositions).
         range: ChebiTerm
-        bindings:
-          - binds_value_of: id
-            obligation_level: REQUIRED
+        # No canonical-label binding — see the `term` slot note above; same
+        # curator-label policy and Engine-B waiver apply.
         recommended: false
         inlined: true
 
       mediaingredientmech_term:
-        description: MediaIngredientMech identifier for this ingredient
+        description: Legacy MediaIngredientMech:NNNNNN identifier for this ingredient (pre-CHEBI-keying).
         range: MediaIngredientMechTerm
+        recommended: false
+        inlined: true
+
+      mediaingredientmech_chebi_term:
+        description: CHEBI-keyed linkage to a curated MediaIngredientMech ingredient (current MIM schema).
+        range: MediaIngredientMechChebiTerm
         recommended: false
         inlined: true
 
@@ -833,8 +849,14 @@ classes:
         inlined: true
 
       mediaingredientmech_term:
-        description: MediaIngredientMech identifier for this solution component
+        description: Legacy MediaIngredientMech:NNNNNN identifier for this solution component (pre-CHEBI-keying).
         range: MediaIngredientMechTerm
+        recommended: false
+        inlined: true
+
+      mediaingredientmech_chebi_term:
+        description: CHEBI-keyed linkage to a curated MediaIngredientMech ingredient (current MIM schema).
+        range: MediaIngredientMechChebiTerm
         recommended: false
         inlined: true
 
@@ -1863,12 +1885,33 @@ classes:
 
   MediaIngredientMechTerm:
     is_a: Term
-    description: A MediaIngredientMech identifier for a media ingredient
+    description: >-
+      A legacy MediaIngredientMech identifier (MediaIngredientMech:NNNNNN)
+      for a media ingredient. MediaIngredientMech has since migrated to a
+      CHEBI-keyed schema and no longer mints these IDs; for new linkages use
+      `mediaingredientmech_chebi_term` instead. Retained for the existing
+      corpus, which still carries these IDs.
     slot_usage:
       id:
         pattern: "^MediaIngredientMech:\\d{6}$"
     id_prefixes:
       - MediaIngredientMech
+
+  MediaIngredientMechChebiTerm:
+    is_a: Term
+    description: >-
+      CHEBI-keyed linkage to a MediaIngredientMech curated ingredient.
+      MediaIngredientMech migrated from minting `MediaIngredientMech:NNNNNN`
+      ids to keying its curated ingredient entities by CHEBI; this term records
+      the matched MIM entity's CHEBI identifier (with the MIM `preferred_term`
+      as label). Distinct from the ingredient's own `term`/`chebi_term`
+      grounding: it asserts "this ingredient corresponds to a curated MIM
+      ingredient", even though the id coincides with the CHEBI grounding.
+    slot_usage:
+      id:
+        pattern: "^CHEBI:\\d+$"
+    id_prefixes:
+      - CHEBI
 
   CultureMechTerm:
     is_a: Term
@@ -2536,6 +2579,12 @@ enums:
         description: Produced by an automated expert-mapping pipeline (e.g. LLM-assisted).
       fuzzy:
         description: Fuzzy / approximate string match.
+      corpus_consensus:
+        description: >-
+          Borrowed from the unanimous reliable grounding of the same
+          ingredient label elsewhere in the corpus (G25 Phase 1) — used to
+          replace a low-confidence kg_fallback chebi_term without an external
+          lookup.
 
   SynonymTypeEnum:
     description: Type of synonym relationship for an IngredientSynonym.

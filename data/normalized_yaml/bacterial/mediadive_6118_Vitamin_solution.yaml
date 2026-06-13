@@ -13,9 +13,9 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: biotin
+    label: Biotin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Calcium pantothenate
   concentration:
     value: '0.02'
@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:847
     label: Cyanocobalamine
   chebi_term:
-    id: CHEBI:64734
-    label: EDTA disodium salt (anhydrous)
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Folic acid
   concentration:
     value: '0.0004'
@@ -63,7 +63,7 @@ composition:
     id: CHEBI:17268
     label: myo-inositol
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: Nicotinic acid
   concentration:
     value: '0.02'
@@ -97,9 +97,9 @@ composition:
     label: Thymine
   chebi_term:
     id: CHEBI:17821
-    label: thymine
+    label: Thymine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 curation_history:
 - timestamp: '2026-03-13T06:20:39.670678Z'
   curator: culturemech-id-assigner-v1.0
@@ -123,6 +123,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:40.987775+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:56:28.687682+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

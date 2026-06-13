@@ -13,8 +13,8 @@ ingredients:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -37,9 +37,9 @@ ingredients:
   concentration:
     value: '8.55578'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:52891
@@ -64,8 +64,8 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -74,8 +74,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Zinc sulfate
   term:
@@ -84,21 +84,19 @@ ingredients:
   concentration:
     value: '23.3019'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified
-    concentrations
+  description: Dissolve all ingredients in distilled water to specified concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
-    components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
 - timestamp: '2026-01-27T07:21:44.874643Z'
   curator: mediadb-import
@@ -116,9 +114,15 @@ curation_history:
 - timestamp: '2026-03-17T19:46:04.585185+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "M9 with 0.67% zinc sulfate and .05% cysteine HCl;
-    Park et al" to "m9_with_0_67_zinc_sulfate_and_05_cysteine_hcl_park_et_al"
-    for consistent matching
+  notes: Normalized name from "M9 with 0.67% zinc sulfate and .05% cysteine HCl; Park
+    et al" to "m9_with_0_67_zinc_sulfate_and_05_cysteine_hcl_park_et_al" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:12.160069+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 247
   term:
@@ -131,17 +135,15 @@ applications:
 - Metabolic modeling
 - Systems biology research
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/m9_with_3_35_zinc_sulfate_and_05_cysteine_hcl_park_et_al.yaml
+- path: data/normalized_yaml/bacterial/m9_with_3_35_zinc_sulfate_and_05_cysteine_hcl_park_et_al.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007145
   name: m9_with_3_35_zinc_sulfate_and_05_cysteine_hcl_park_et_al
-  notes: Zinc sulfate concentration increased from 23.3019 mM to 116.51 mM; all
-    other parsed ingredient concentrations match the parent.
-- path:
-    data/normalized_yaml/bacterial/m9_with_6_03_zinc_sulfate_and_05_cysteine_hcl_park_et_al.yaml
+  notes: Zinc sulfate concentration increased from 23.3019 mM to 116.51 mM; all other
+    parsed ingredient concentrations match the parent.
+- path: data/normalized_yaml/bacterial/m9_with_6_03_zinc_sulfate_and_05_cysteine_hcl_park_et_al.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007146
   name: m9_with_6_03_zinc_sulfate_and_05_cysteine_hcl_park_et_al
-  notes: Zinc sulfate concentration increased from 23.3019 mM to 209.717 mM; all
-    other parsed ingredient concentrations match the parent.
+  notes: Zinc sulfate concentration increased from 23.3019 mM to 209.717 mM; all other
+    parsed ingredient concentrations match the parent.

@@ -34,8 +34,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
   term:
-    id: CHEBI:91261
-    label: disodium (S)-malate
+    id: CHEBI:91260
+    label: disodium malate
 - preferred_term: Bacto Casamino Acids (Difco)
   concentration:
     value: '2'

@@ -21,7 +21,7 @@
   <h1>1_3_soil_seawater_medium</h1>
   <div class="meta">
     <span class="curie">CultureMech:000007</span>
-      <span class="badge">ALGAE</span>
+      <span class="badge">algae</span>
       <span class="badge">COMPLEX</span>
       <span class="badge">LIQUID</span>
   </div>
@@ -114,15 +114,15 @@ flowchart LR
 </section><section id="preparation">
 <h2>Preparation</h2>
 <ol class="prep">
-  <li class="prewrap">{&#39;step_number&#39;: 1, &#39;instruction&#39;: &#39;Important Notes To Consider: The quality of water, including natural seawater, is important.&#39;}</li>
-  <li class="prewrap">{&#39;step_number&#39;: 2, &#39;instruction&#39;: &#34;The term &#39;dH2O&#39; generally refers to distilled, deionized, distilled/deionized water, Milli-Q water (Millipore Corp.), etc.&#34;}</li>
-  <li class="prewrap">{&#39;step_number&#39;: 3, &#39;instruction&#39;: &#39;Natural seawater and natural freshwater should be obtained from a non-polluted source. When dissolving chemicals, wait for the first component to dissolve before adding the second.&#39;}</li>
-  <li class="prewrap">{&#39;step_number&#39;: 4, &#39;instruction&#39;: &#39;Stirring, and sometimes the addition of heat, is often required to dissolve the chemicals efficiently.&#39;}</li>
-  <li class="prewrap">{&#39;step_number&#39;: 5, &#39;instruction&#39;: &#39;Preparation of stock solutions for frequently made algal culture media make preparing media convenient but also necessary to avoid errors from weighing very tiny amounts. Attention should be given to the pH of the final medium.&#39;}</li>
-  <li class="prewrap">{&#39;step_number&#39;: 6, &#39;instruction&#39;: &#39;In most cases, if pH adjustment is required, this occurs before sterilization.&#39;}</li>
-  <li class="prewrap">{&#39;step_number&#39;: 7, &#39;instruction&#39;: &#39;Please note that autoclaving removes carbon dioxide from media lacking carbonate stabilizing buffers.&#39;}</li>
-  <li class="prewrap">{&#39;step_number&#39;: 8, &#39;instruction&#39;: &#39;This would make the medium very alkaline soon after removal from the autoclave.&#39;}</li>
-  <li class="prewrap">{&#39;step_number&#39;: 9, &#39;instruction&#39;: &#39;In these cases, you should wait approximately 24 hours for gaseous equilibrium before inoculating the medium.&#39;}</li>
+  <li class="prewrap">Important Notes To Consider: The quality of water, including natural seawater, is important.</li>
+  <li class="prewrap">The term &#39;dH2O&#39; generally refers to distilled, deionized, distilled/deionized water, Milli-Q water (Millipore Corp.), etc.</li>
+  <li class="prewrap">Natural seawater and natural freshwater should be obtained from a non-polluted source. When dissolving chemicals, wait for the first component to dissolve before adding the second.</li>
+  <li class="prewrap">Stirring, and sometimes the addition of heat, is often required to dissolve the chemicals efficiently.</li>
+  <li class="prewrap">Preparation of stock solutions for frequently made algal culture media make preparing media convenient but also necessary to avoid errors from weighing very tiny amounts. Attention should be given to the pH of the final medium.</li>
+  <li class="prewrap">In most cases, if pH adjustment is required, this occurs before sterilization.</li>
+  <li class="prewrap">Please note that autoclaving removes carbon dioxide from media lacking carbonate stabilizing buffers.</li>
+  <li class="prewrap">This would make the medium very alkaline soon after removal from the autoclave.</li>
+  <li class="prewrap">In these cases, you should wait approximately 24 hours for gaseous equilibrium before inoculating the medium.</li>
 </ol>
 </section><section id="provenance">
 <h2>Provenance</h2>
@@ -132,7 +132,7 @@ flowchart LR
 </thead>
 <tbody>
 <tr>
-  <td class="muted small"></td>
+  <td class="muted small">2026-01-28T00:00:00+00:00</td>
   <td>utex-import</td>
   <td>Imported from UTEX Culture Collection</td>
   <td class="small prewrap">Source ID: one-third-soil-plus-seawater-medium, URL: https://utex.org/products/one-third-soil-plus-seawater-medium</td>
@@ -149,12 +149,24 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;1/3 Soil + Seawater Medium&#34; to &#34;1_3_soil_seawater_medium&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-16T09:02:55.731422+00:00</td>
+  <td>migrate_legacy_fields.py</td>
+  <td>MIGRATED_LEGACY_FIELDS</td>
+  <td class="small prewrap">curation_history.date-&gt;timestamp=1; references.reference_id-&gt;reference=2; category-&gt;lowercase=1</td>
+</tr>
+<tr>
+  <td class="muted small">2026-05-16T09:11:00.929922+00:00</td>
+  <td>migrate_preparation_steps.py</td>
+  <td>MIGRATED_PREPARATION_STEPS</td>
+  <td class="small prewrap">instruction-&gt;action+description for 9 step(s)</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:03:46+00:00 from
+    Generated from
     <code>data/normalized_yaml/algae/1_3_soil_seawater_medium.yaml</code>
   </small>
 </footer>

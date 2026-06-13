@@ -1,0 +1,177 @@
+id: CultureMech:015838
+name: marinagarivorans_sp_ge09_medium
+original_name: Marinagarivorans sp. GE09 medium
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1357
+  term:
+    id: jcm.grmd:1357
+    label: Marinagarivorans sp. GE09 medium
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1357'
+ingredients:
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.132'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+- preferred_term: Cellobiose
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17057
+    label: cellobiose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
+    label: Cellobiose
+- preferred_term: Urea
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16199
+    label: urea
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16199
+    label: Urea
+- preferred_term: Trace mineral solution (see below)
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+- preferred_term: Artificial seawater
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Na2CO3
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: Sodium carbonate solution
+- preferred_term: Trace Metal Mix A5 (see below)
+  concentration:
+    value: '20.0'
+    unit: ML_PER_L
+- preferred_term: EDTA·Na2
+  concentration:
+    value: '20.0'
+    unit: MG_PER_L
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: KNO3
+  concentration:
+    value: '2.86'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63043
+    label: potassium nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63043
+    label: KNO3
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '1.81'
+    unit: G_PER_L
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '0.222'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+- preferred_term: Na2MnO4·2H2O
+  concentration:
+    value: '0.39'
+    unit: G_PER_L
+- preferred_term: CuSO4·5H2O
+  concentration:
+    value: '0.079'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+- preferred_term: Co(NO3)2·6H2O
+  concentration:
+    value: '49.4'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86214
+    label: cobalt dinitrate hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Filter-sterilize with 0.22 µm PES filter.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:08:46.627391+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1357. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.470271Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

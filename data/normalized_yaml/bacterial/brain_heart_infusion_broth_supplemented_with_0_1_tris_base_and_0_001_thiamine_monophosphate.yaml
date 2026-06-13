@@ -14,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:9754
     label: tris
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
-    label: Tris
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
+    label: tris
 - preferred_term: thiamine monophosphate
   concentration:
     value: '0.001'
@@ -60,3 +60,9 @@ curation_history:
   notes: Normalized name from "brain-heart infusion broth (supplemented with 0.1%
     Tris base and 0.001% thiamine monophosphate)" to "brain_heart_infusion_broth_supplemented_with_0_1_tris_base_and_0_001_thiamine_monophosphate"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.493800+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

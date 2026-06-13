@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +24,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -43,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.2'
@@ -55,9 +55,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: H3BO3
   concentration:
     value: '4'
@@ -67,9 +67,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -79,9 +79,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '30'
@@ -91,9 +91,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: KBr
   concentration:
     value: '16'
@@ -103,17 +103,17 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
-    label: KBr
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
 - preferred_term: Ferric citrate
   concentration:
     value: '0.02'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000281
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Ferric citrate
   term:
     id: CHEBI:144421
@@ -126,8 +126,8 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
 - preferred_term: SrCl2
   concentration:
@@ -138,9 +138,9 @@ ingredients:
   term:
     id: CHEBI:36383
     label: strontium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000196
-    label: SrCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36383
+    label: strontium dichloride
 - preferred_term: Starch from corn (SIGMA)
   concentration:
     value: '2'
@@ -172,9 +172,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000183
-    label: Na2MoO4·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '100'
@@ -193,9 +193,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: KI
   concentration:
     value: '20'
@@ -205,9 +205,9 @@ ingredients:
   term:
     id: CHEBI:8346
     label: potassium iodide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000505
-    label: KI
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8346
+    label: potassium iodide
 - preferred_term: CuSO4
   concentration:
     value: '10'
@@ -217,9 +217,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000855
-    label: CuSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
 - preferred_term: CoCl2
   concentration:
     value: '20'
@@ -229,9 +229,9 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
 - preferred_term: SnCl2·2H2O
   concentration:
     value: '5'
@@ -241,9 +241,9 @@ ingredients:
   term:
     id: CHEBI:78074
     label: tin(II) chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000905
-    label: SnCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78074
+    label: tin(II) chloride dihydrate
 - preferred_term: LiCl
   concentration:
     value: '5'
@@ -253,9 +253,9 @@ ingredients:
   term:
     id: CHEBI:48607
     label: lithium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000516
-    label: LiCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:48607
+    label: lithium chloride
 - preferred_term: Fe(III)-EDTA
   concentration:
     value: '8'
@@ -264,9 +264,9 @@ ingredients:
   term:
     id: CHEBI:30729
     label: ethylenediaminetetraacetatoferrate(1-)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000348
-    label: Fe(III)-EDTA
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30729
+    label: ethylenediaminetetraacetatoferrate(1-)
 media_term:
   preferred_term: TOGO Medium M1812
   term:
@@ -317,6 +317,22 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:36.017047+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 19 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:25.555605+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:08.453538+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 solutions:
 - preferred_term: Cyanocobalamin**
   composition: []

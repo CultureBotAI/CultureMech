@@ -15,22 +15,22 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86159
     label: Ca(NO3)2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -69,17 +69,16 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients and adjust pH to 2.0 with 10 N H2SO4.
-    Sterilize the medium by filtration. Alternatively, autoclave separately the
-    basal medium (pH adjusted to 2.0) and the ferrous sulfate (8.00 g FeSO4 x 7
-    H2O in 50 ml 0.1 N H2SO4, pH not adjusted, in a sealed vessel under nitrogen
-    gas atmosphere).
+  description: Dissolve ingredients and adjust pH to 2.0 with 10 N H2SO4. Sterilize
+    the medium by filtration. Alternatively, autoclave separately the basal medium
+    (pH adjusted to 2.0) and the ferrous sulfate (8.00 g FeSO4 x 7 H2O in 50 ml 0.1
+    N H2SO4, pH not adjusted, in a sealed vessel under nitrogen gas atmosphere).
 - step_number: 2
   action: MIX
   description: 'Note: Incubate statically without shaking.'
@@ -101,24 +100,34 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.371537+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDITHIOBACILLUS (APH) MEDIUM" to
-    "acidithiobacillus_aph_medium" for consistent matching
+  notes: Normalized name from "ACIDITHIOBACILLUS (APH) MEDIUM" to "acidithiobacillus_aph_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:47.324087+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:52.606022+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_271_modified_for_dsm_11477.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004696
   name: medium_271_modified_for_dsm_11477
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_271_modified_for_dsm_11478.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004697
   name: medium_271_modified_for_dsm_11478
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_271_modified_for_dsm_24413.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004698
   name: medium_271_modified_for_dsm_24413
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

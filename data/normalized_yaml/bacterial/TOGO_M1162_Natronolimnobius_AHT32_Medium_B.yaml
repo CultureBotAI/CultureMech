@@ -13,9 +13,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: 1 M Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: 1 M Sodium butyrate
   concentration:
     value: '20'
@@ -24,9 +24,9 @@ ingredients:
   term:
     id: CHEBI:64103
     label: sodium butyrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000529
-    label: 1 M Sodium butyrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64103
+    label: sodium butyrate
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -92,6 +92,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:30.918012+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: Soda based mineral medium (see Medium [M1150])
   composition: []

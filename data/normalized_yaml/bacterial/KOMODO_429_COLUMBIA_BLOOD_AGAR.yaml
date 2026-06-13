@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D(+)-Glucose
 - preferred_term: NaCl
   term:
@@ -59,18 +59,18 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Calf brains
   term:
@@ -83,8 +83,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain
-    tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
 - preferred_term: Beef heart
   term:
     id: UBERON:0000948
@@ -96,8 +96,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox
-    heart tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
 - preferred_term: Proteose peptone
   term:
     id: FOODON:03302071
@@ -109,8 +109,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Enzymatic digest of animal protein providing amino acids and peptides;
-    Constituent of Brain Heart Infusion commercial product
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
 - preferred_term: Dextrose
   term:
     id: CHEBI:17234
@@ -122,8 +122,7 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial
-    product
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
   synonyms:
   - synonym_text: glucose
     synonym_type: EXACT
@@ -142,8 +141,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion
-    commercial product
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -160,8 +159,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion
-    commercial product
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: Na2HPO4
     synonym_type: EXACT
@@ -181,32 +180,28 @@ applications:
 - Microbial cultivation
 variants:
 - name: columbia_blood_agar_staphylococcus_saccharolyticus_anaerobic
-  description: Columbia blood agar cultivation evidence for the type strain
-    Staphylococcus saccharolyticus ATCC 14953 / DSM 20359 / NCTC 11807, formerly
-    Peptococcus saccharolyticus.
+  description: Columbia blood agar cultivation evidence for the type strain Staphylococcus
+    saccharolyticus ATCC 14953 / DSM 20359 / NCTC 11807, formerly Peptococcus saccharolyticus.
   modifications:
-  - BacDive DSMZ Medium 693 specifies Columbia agar base with 50 g/L
-    defibrinated sheep blood; the local parent record contains a Columbia blood
-    agar base with horse blood at 40 g/L.
-  - Incubate anaerobically or under reduced oxygen at 37 C for this anaerobic
-    organism.
-  purpose: Capture strain-specific qualitative growth evidence while preserving
-    the blood-source and concentration difference as a variant-level formulation
-    note.
+  - BacDive DSMZ Medium 693 specifies Columbia agar base with 50 g/L defibrinated
+    sheep blood; the local parent record contains a Columbia blood agar base with
+    horse blood at 40 g/L.
+  - Incubate anaerobically or under reduced oxygen at 37 C for this anaerobic organism.
+  purpose: Capture strain-specific qualitative growth evidence while preserving the
+    blood-source and concentration difference as a variant-level formulation note.
   evidence:
   - reference: PMID:7077295
     supports: SUPPORT
-    snippet: The highest bacterial counts were obtained on Columbia blood agar
-      incubated anaerobically.
-    explanation: The primary literature reports quantitative culture of
-      Peptococcus saccharolyticus strains, now Staphylococcus saccharolyticus,
-      on Columbia blood agar under anaerobic incubation.
+    snippet: The highest bacterial counts were obtained on Columbia blood agar incubated
+      anaerobically.
+    explanation: The primary literature reports quantitative culture of Peptococcus
+      saccharolyticus strains, now Staphylococcus saccharolyticus, on Columbia blood
+      agar under anaerobic incubation.
   - reference: https://bacdive.dsmz.de/strain/14567
     supports: SUPPORT
-    explanation: BacDive identifies Staphylococcus saccharolyticus S1 as the
-      type strain with DSM 20359, ATCC 14953, JCM 1768, and NCTC 11807 aliases;
-      its cultivation data list Columbia Blood Medium with positive growth at 37
-      C.
+    explanation: BacDive identifies Staphylococcus saccharolyticus S1 as the type
+      strain with DSM 20359, ATCC 14953, JCM 1768, and NCTC 11807 aliases; its cultivation
+      data list Columbia Blood Medium with positive growth at 37 C.
 curation_history:
 - timestamp: 2026-01-27T01:15:02.fZ
   curator: komodo-web-import
@@ -227,14 +222,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:47.278865+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "COLUMBIA BLOOD AGAR" to "columbia_blood_agar" for
-    consistent matching
+  notes: Normalized name from "COLUMBIA BLOOD AGAR" to "columbia_blood_agar" for consistent
+    matching
 - timestamp: '2026-05-05T00:00:00+00:00'
   curator: literature_review_manual
   action: ADDED_GROWTH_EVIDENCE
-  notes: Added qualitative Columbia blood agar growth evidence for
-    Staphylococcus saccharolyticus ATCC 14953 / DSM 20359 / NCTC 11807 from
-    PMID:7077295 and BacDive strain 14567.
+  notes: Added qualitative Columbia blood agar growth evidence for Staphylococcus
+    saccharolyticus ATCC 14953 / DSM 20359 / NCTC 11807 from PMID:7077295 and BacDive
+    strain 14567.
+- timestamp: '2026-06-05T07:40:23.224407+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.854341+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 target_organisms:
 - preferred_term: Staphylococcus saccharolyticus
   term:
@@ -247,35 +252,33 @@ target_organisms:
   evidence:
   - reference: https://bacdive.dsmz.de/strain/14567
     supports: SUPPORT
-    explanation: BacDive lists the type strain aliases, NCBI taxon 33028,
-      Columbia Blood Medium cultivation, and positive growth at 37 C for this
-      strain.
+    explanation: BacDive lists the type strain aliases, NCBI taxon 33028, Columbia
+      Blood Medium cultivation, and positive growth at 37 C for this strain.
   growth_metrics:
   - temperature_celsius: 37.0
-    measurement_conditions: Columbia blood agar; anaerobic incubation;
-      qualitative positive growth/count evidence rather than OD or doubling-time
-      measurement.
+    measurement_conditions: Columbia blood agar; anaerobic incubation; qualitative
+      positive growth/count evidence rather than OD or doubling-time measurement.
     evidence:
     - reference: PMID:7077295
       supports: SUPPORT
-      snippet: The highest bacterial counts were obtained on Columbia blood agar
-        incubated anaerobically.
-      explanation: The abstract directly supports growth of Peptococcus
-        saccharolyticus, now Staphylococcus saccharolyticus, on Columbia blood
-        agar under anaerobic incubation.
+      snippet: The highest bacterial counts were obtained on Columbia blood agar incubated
+        anaerobically.
+      explanation: The abstract directly supports growth of Peptococcus saccharolyticus,
+        now Staphylococcus saccharolyticus, on Columbia blood agar under anaerobic
+        incubation.
     - reference: https://bacdive.dsmz.de/strain/14567
       supports: SUPPORT
-      explanation: BacDive strain 14567 links the ATCC 14953 / DSM 20359 / NCTC
-        11807 type strain to positive growth on Columbia Blood Medium at 37 C.
+      explanation: BacDive strain 14567 links the ATCC 14953 / DSM 20359 / NCTC 11807
+        type strain to positive growth on Columbia Blood Medium at 37 C.
     is_max_attainment: false
 parent_media:
   path: data/normalized_yaml/bacterial/columbia_blood_agar.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001533
   name: columbia_blood_agar
-  notes: KOMODO record states DSMZ Medium 429 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 429 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

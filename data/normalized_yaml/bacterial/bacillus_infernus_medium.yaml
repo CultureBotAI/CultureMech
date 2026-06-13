@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '5.14563'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000864
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Ferric citrate
 - preferred_term: NaCl
   term:
@@ -29,28 +29,28 @@ ingredients:
   concentration:
     value: '5.63107'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.970874'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.38835'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4 x 3 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.970874'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -73,22 +73,22 @@ ingredients:
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '0.776699'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Na-lactate
   term:
     id: CHEBI:75228
-    label: Na-lactate
+    label: sodium lactate
   concentration:
     value: '1.16505'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
     label: Na-lactate
 - preferred_term: 2-Mercaptoethanesulfonate
   term:
@@ -97,8 +97,8 @@ ingredients:
   concentration:
     value: '0.485437'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000392
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17905
     label: 2-Mercaptoethanesulfonate
 - preferred_term: Na2-EDTA x 2 H2O
   term:
@@ -107,8 +107,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA x 2 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -117,8 +117,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -127,8 +127,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -137,8 +137,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnCl2
   term:
@@ -147,8 +147,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: AlCl3 x 6 H2O
   term:
@@ -157,8 +157,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000728
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30115
     label: AlCl3 x 6 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
@@ -167,8 +167,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
     label: Na2WO4 x 2 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -177,8 +177,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -187,8 +187,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -197,18 +197,18 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -217,26 +217,26 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "First, dissolve ferric citrate in water by heating and adjust to pH
-    7.5 with NaOH, then add other\r\nmedium ingredients except acetate, lactate, and
-    coenzyme M. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
-    to make it anoxic. Dispense under 80% N2 and 20% CO2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Add acetate, lactate, and coenzyme
-    M from sterile anoxic stock solutions prepared under 100% N2 gas."
+  description: "First, dissolve ferric citrate in water by heating and adjust to pH\
+    \ 7.5 with NaOH, then add other\r\nmedium ingredients except acetate, lactate,\
+    \ and coenzyme M. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45\
+    \ min to make it anoxic. Dispense under 80% N2 and 20% CO2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add acetate, lactate,\
+    \ and coenzyme M from sterile anoxic stock solutions prepared under 100% N2 gas."
 - step_number: 2
   action: MIX
-  description: Prior to inoculation the pH of the complete medium should be
-    checked and adjusted to 7.5, if necessary.
+  description: Prior to inoculation the pH of the complete medium should be checked
+    and adjusted to 7.5, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7 using 2
-    N NaOH, then dissolve remaining compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7 using 2 N
+    NaOH, then dissolve remaining compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -255,8 +255,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.015434+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BACILLUS INFERNUS MEDIUM" to
-    "bacillus_infernus_medium" for consistent matching
+  notes: Normalized name from "BACILLUS INFERNUS MEDIUM" to "bacillus_infernus_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:50.261374+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 20 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:53.711510+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 parent_media:
   path: data/normalized_yaml/bacterial/msa_fe_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -264,5 +274,5 @@ parent_media:
   name: msa_fe_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

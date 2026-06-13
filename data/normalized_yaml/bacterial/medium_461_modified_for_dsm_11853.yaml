@@ -19,18 +19,18 @@ ingredients:
   concentration:
     value: '1.44135'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.248509'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: CaCl2
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.00994036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -49,28 +49,28 @@ ingredients:
   concentration:
     value: '0.497018'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4
   term:
     id: CHEBI:86360
-    label: MnSO4
+    label: manganese(II) sulfate
   concentration:
     value: '0.00994036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000605
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86360
     label: MnSO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.298211'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: NaCl
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '0.0497018'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Pyrrole-2-carboxylic acid
   concentration:
@@ -112,16 +112,25 @@ curation_history:
 - timestamp: '2026-03-17T19:45:49.227929+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 461 MODIFIED FOR DSM 11853" to
-    "medium_461_modified_for_dsm_11853" for consistent matching
+  notes: Normalized name from "MEDIUM 461 MODIFIED FOR DSM 11853" to "medium_461_modified_for_dsm_11853"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:21.841284+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:03.725435+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 high_metal: true
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/KOMODO_461a_MINERAL_MEDIUM_WITH_QUINOLINE.yaml
+  path: data/normalized_yaml/bacterial/KOMODO_461a_MINERAL_MEDIUM_WITH_QUINOLINE.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005481
   name: mineral_medium_with_quinoline
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

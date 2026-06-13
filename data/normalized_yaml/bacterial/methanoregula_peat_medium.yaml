@@ -15,22 +15,22 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.0283019'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.0146751'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: KCl
   term:
@@ -39,18 +39,18 @@ ingredients:
   concentration:
     value: '0.00209644'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '0.0178197'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Sodium resazurin
   concentration:
@@ -71,8 +71,8 @@ ingredients:
     value: '18.109432'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 18.0, 0.109432]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Nitrilotriacetate
   term:
@@ -81,8 +81,8 @@ ingredients:
   concentration:
     value: '0.458736'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000512
+  mediaingredientmech_chebi_term:
+    id: CHEBI:25548
     label: Nitrilotriacetate
 - preferred_term: TiCl3
   concentration:
@@ -99,8 +99,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000392
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17905
     label: 2-Mercaptoethanesulfonate
 - preferred_term: HCl
   term:
@@ -109,8 +109,8 @@ ingredients:
   concentration:
     value: '2.47525'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -119,8 +119,8 @@ ingredients:
   concentration:
     value: '1.32673'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000329
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
     label: FeCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -129,8 +129,8 @@ ingredients:
   concentration:
     value: '0.0237624'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: ZnCl2
   term:
@@ -139,18 +139,18 @@ ingredients:
   concentration:
     value: '0.0742574'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.0188119'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -159,8 +159,8 @@ ingredients:
   concentration:
     value: '0.0237624'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -169,8 +169,8 @@ ingredients:
   concentration:
     value: '0.0237624'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: MnSO4 x 4 H2O
   term:
@@ -179,8 +179,8 @@ ingredients:
   concentration:
     value: '0.0257426'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000711
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
     label: MnSO4 x 4 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -189,8 +189,8 @@ ingredients:
   concentration:
     value: '1.54455'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -199,8 +199,8 @@ ingredients:
   concentration:
     value: '2.31683'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -209,8 +209,8 @@ ingredients:
   concentration:
     value: '0.00891089'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: AlK(SO4)2 x 12 H2O
   term:
@@ -219,8 +219,8 @@ ingredients:
   concentration:
     value: '3.41584'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000293
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
     label: AlK(SO4)2 x 12 H2O
 - preferred_term: Biotin
   term:
@@ -229,8 +229,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Folic acid
   term:
@@ -239,8 +239,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -249,8 +249,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
@@ -259,8 +259,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
@@ -269,8 +269,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
@@ -279,8 +279,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
@@ -296,8 +296,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -306,8 +306,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
@@ -316,24 +316,24 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
     label: (DL)-alpha-Lipoic acid
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients of solution A, adjust pH to 5.0 with 0.1 N
-    HCl, and sparge with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense solution A under the same gas atmosphere into anoxic
-    serum vials (20 ml medium in 100 ml bottles) and autoclave. Solutions B to F
-    are prepared under a 100% N2 gas atmosphere and sterilized by filtration.
-    Before inoculation, complete the medium by adding the appropriate amounts of
-    solutions B to F to sterile solution A in the sequence indicated.
+  description: Dissolve ingredients of solution A, adjust pH to 5.0 with 0.1 N HCl,
+    and sparge with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense solution A under the same gas atmosphere into anoxic serum vials (20
+    ml medium in 100 ml bottles) and autoclave. Solutions B to F are prepared under
+    a 100% N2 gas atmosphere and sterilized by filtration. Before inoculation, complete
+    the medium by adding the appropriate amounts of solutions B to F to sterile solution
+    A in the sequence indicated.
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH of the complete medium to 5.1 with a sterile anoxic
-    solution of 1 N HCl. After inoculation pressurize vials to 1 bar
-    overpressure with sterile 80% H2 and 20% CO2 gas mixture.
+  description: Adjust pH of the complete medium to 5.1 with a sterile anoxic solution
+    of 1 N HCl. After inoculation pressurize vials to 1 bar overpressure with sterile
+    80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: MIX
   description: 'Note: Use 10-20% (v/v) as inoculum.'
@@ -342,8 +342,8 @@ preparation_steps:
   description: Adjust pH of buffer to 5.5.
 - step_number: 5
   action: DISSOLVE
-  description: First dissolve ferrous chloride in the HCl, then dilute in water
-    and dissolve the other salts. Finally make up to 1000 ml.
+  description: First dissolve ferrous chloride in the HCl, then dilute in water and
+    dissolve the other salts. Finally make up to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -354,8 +354,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.703066Z'
   curator: invalid-chebi-removal
   action: Removed 2 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:09:20.963365Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -371,8 +371,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.361084+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "METHANOREGULA (PEAT) MEDIUM" to
-    "methanoregula_peat_medium" for consistent matching
+  notes: Normalized name from "METHANOREGULA (PEAT) MEDIUM" to "methanoregula_peat_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:32.164596+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 28 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:07.211025+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 parent_media:
   path: data/normalized_yaml/bacterial/methanoregula_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -380,5 +390,5 @@ parent_media:
   name: methanoregula_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

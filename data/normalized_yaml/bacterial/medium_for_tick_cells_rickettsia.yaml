@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.4485'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000735
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17053
     label: L-Aspartic acid
 - preferred_term: L-Glutamine
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
     label: L-Glutamine
 - preferred_term: L-Proline
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: L-Glutamic acid
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000562
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16015
     label: L-Glutamic acid
 - preferred_term: alpha-ketoglutaric acid
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.4485'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000825
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30915
     label: alpha-ketoglutaric acid
 - preferred_term: D-Glucose
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '18.018'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: NaOH
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '0.199985'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Fetal bovine serum
   concentration:
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '5.9575'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
 - preferred_term: NaHCO3
   term:
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 preparation_steps:
 - step_number: 1
@@ -170,3 +170,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Medium for tick cells (Rickettsia)" to "medium_for_tick_cells_rickettsia"
     for consistent matching
+- timestamp: '2026-06-05T07:41:30.129443+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

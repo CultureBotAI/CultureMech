@@ -1,0 +1,161 @@
+id: CultureMech:015849
+name: ia91_medium
+original_name: IA91 MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1389
+  term:
+    id: jcm.grmd:1389
+    label: IA91 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1389'
+ingredients:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: NaCl
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: FeCl2 solution (see Medium No. 187 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Trace element solution (see Medium No. 187 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Selenite-tungstate solution (see Medium No. 431 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: Resazurin
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Trace vitamins* (see Medium No. 197 )
+  concentration:
+    value: '2.0'
+    unit: ML_PER_L
+- preferred_term: Culture supernatant (see below)
+  concentration:
+    value: '400.0'
+    unit: ML_PER_L
+- preferred_term: 5% L-Cysteine·HCl·H2O solution
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+- preferred_term: 5% Na2S·9H2O solution
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components, except NaHCO3, and adjust pH 7.0.
+- step_number: 2
+  action: MIX
+  description: Bring to a boil for 5-10 seconds, then, cool down under a stream of
+    N2-CO2 (80:20, v/v), add NaHCO3, and autoclave under the same gas mixture.
+- step_number: 3
+  action: MIX
+  description: 'After cooling. aseptically and anaerobically, add the following solutions
+    (autoclaved or *filter-sterilized, and stored under a N2 atmosphere): Distribute
+    the medium into culture vessels (e.g., 10 ml in Hungate tubes) under the same
+    gas mixture and seal with butyl rubber stoppers.'
+- step_number: 4
+  action: MIX
+  description: 'Finally, add per liter the following solutions (autoclaved and stored
+    under a N2 atmosphere): Culture supernatant: Centrifuge a grown culture of strain
+    Acc8 (=JCM 39386) in JCM Medium No.'
+- step_number: 5
+  action: MIX
+  description: 1388 (e.g., 10,000 xg, 10 min.), then, remove and autoclave the supernatant
+    under a N2-CO2 (80:20, v/v) gas mixture.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:08:58.808086+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1389. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.297643Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

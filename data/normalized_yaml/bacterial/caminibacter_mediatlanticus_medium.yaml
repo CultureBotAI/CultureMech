@@ -20,8 +20,8 @@ ingredients:
     value: '40.3337'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 30.3337, 10.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -31,8 +31,8 @@ ingredients:
     value: '33.53893'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 3.53893, 30.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '2.78059'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -52,8 +52,8 @@ ingredients:
     value: '1.7583419999999998'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.758342, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
@@ -62,29 +62,29 @@ ingredients:
   concentration:
     value: '0.33367'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
-    label: NaBr
+    label: sodium bromide
   concentration:
     value: '0.0505561'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000189
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
     label: NaBr
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.1151668'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0151668, 0.1]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: SrCl2 x 6 H2O
   term:
@@ -93,8 +93,8 @@ ingredients:
   concentration:
     value: '0.00707786'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000463
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
     label: SrCl2 x 6 H2O
 - preferred_term: KI
   term:
@@ -115,8 +115,8 @@ ingredients:
     label: ''
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
-    label: KNO3
+    id: CHEBI:63043
+    label: potassium nitrate
   concentration:
     value: '100'
     unit: G_PER_L
@@ -126,12 +126,12 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2S x 9 H2O
   term:
@@ -140,8 +140,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: MnSO4 x H2O
   term:
@@ -150,8 +150,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -160,8 +160,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -170,8 +170,8 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -180,8 +180,8 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -190,8 +190,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: AlK(SO4)2 x 12 H2O
   term:
@@ -200,8 +200,8 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000293
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
     label: AlK(SO4)2 x 12 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -210,8 +210,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
   term:
@@ -220,8 +220,8 @@ ingredients:
   concentration:
     value: '2.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001059
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86149
     label: (NH4)2Ni(SO4)2 x 6 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
@@ -230,13 +230,13 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
     label: Na2WO4 x 2 H2O
 - preferred_term: Na2SeO4
   term:
-    id: CHEBI:59160
-    label: Na2SeO4
+    id: CHEBI:77775
+    label: sodium selenate
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -246,25 +246,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45
-    min to make it anoxic, then dispense under same gas atmosphere into anoxic
-    serum vials (e.g., 20 ml medium in 100 ml bottles) and autoclave. Solution B
-    is autoclaved separately under 80% N2 and 20% CO2 gas mixture and solution C
-    is autoclaved under 100% N2 gas. To complete the medium appropriate amounts
-    of solutions B and C are added to solution A. Adjust pH of the complete
-    medium to 5.7.
+  description: Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic, then dispense under same gas atmosphere into anoxic serum vials
+    (e.g., 20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved
+    separately under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under
+    100% N2 gas. To complete the medium appropriate amounts of solutions B and C are
+    added to solution A. Adjust pH of the complete medium to 5.7.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize vials to 2 bar overpressure with
-    sterile 80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize vials to 2 bar overpressure with sterile
+    80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: STORE
   description: 'Note: Solution A has to be prepared freshly. It cannot be stored for
     a long period of time.'
 - step_number: 4
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve
-    the salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
+    salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -287,8 +286,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.037736+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CAMINIBACTER MEDIATLANTICUS MEDIUM" to
-    "caminibacter_mediatlanticus_medium" for consistent matching
+  notes: Normalized name from "CAMINIBACTER MEDIATLANTICUS MEDIUM" to "caminibacter_mediatlanticus_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:52.432951+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 19 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.612624+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:54.273657+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_792_PYROLOBUS_FUMARII_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
@@ -296,5 +309,5 @@ parent_media:
   name: pyrolobus_fumarii_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

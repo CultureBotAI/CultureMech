@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Disodium fumarate
   concentration:
@@ -25,9 +25,9 @@ ingredients:
   term:
     id: CHEBI:115156
     label: disodium fumarate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
-    label: Disodium fumarate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
+    label: disodium fumarate
 - preferred_term: R2A agar (BD-Difco)
   concentration:
     value: '18.2'
@@ -83,3 +83,9 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:32.373972+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

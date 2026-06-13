@@ -13,8 +13,8 @@ ingredients:
     value: '30.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000420
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26806
     label: Succinate
 - preferred_term: Biotin
   term:
@@ -24,8 +24,8 @@ ingredients:
     value: '0.00409316'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.000331323'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Magnesium sulfate
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '0.40572'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: '''Iron(III'
   concentration:
@@ -72,9 +72,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
-    label: Sodium Glutamate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: monosodium glutamate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -108,6 +108,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MM-Succinate with biotin; Dunn et al" to "mm_succinate_with_biotin_dunn_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:35.300544+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 152
   term:

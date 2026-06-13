@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '4.97512'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Phenol red
   term:
@@ -33,8 +33,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: Horse serum
   concentration:
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '1000000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001085
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17334
     label: Penicillin
 preparation_steps:
 - step_number: 1
@@ -78,3 +78,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PPLO-GLUCOSE BROTH" to "pplo_glucose_broth" for consistent
     matching
+- timestamp: '2026-06-05T07:41:42.449853+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

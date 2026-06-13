@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Dextrose
   concentration:
     value: '1'
@@ -43,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Dextrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '0.4'
@@ -55,8 +55,8 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: Sodium bicarbonate
 - preferred_term: Starch
   concentration:
@@ -67,9 +67,9 @@ ingredients:
   term:
     id: CHEBI:85248
     label: gellan gum
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000929
-    label: Starch
+  mediaingredientmech_chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1'
@@ -79,9 +79,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Sodium succinate
   concentration:
     value: '0.5'
@@ -91,9 +91,9 @@ ingredients:
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
-    label: Sodium succinate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
 - preferred_term: Arginine
   concentration:
     value: '1'
@@ -115,8 +115,8 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: Vitamin K
   concentration:
@@ -140,8 +140,8 @@ ingredients:
   term:
     id: CHEBI:86481
     label: Sodium thioglycollate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
     label: Sodium thioglycollate
 - preferred_term: Dithiothreitol
   concentration:
@@ -151,16 +151,16 @@ ingredients:
   term:
     id: CHEBI:18320
     label: Dithiothreitol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000793
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18320
     label: Dithiothreitol
 - preferred_term: L-Cysteine HCl
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Simple component, Organic compound, Defined component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000223
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91247
     label: L-Cysteine HCl
   term:
     id: CHEBI:91247
@@ -199,3 +199,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Anaerobe Basal Broth (Oxoid)" to "anaerobe_basal_broth_oxoid"
     for consistent matching
+- timestamp: '2026-06-05T07:40:48.780148+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

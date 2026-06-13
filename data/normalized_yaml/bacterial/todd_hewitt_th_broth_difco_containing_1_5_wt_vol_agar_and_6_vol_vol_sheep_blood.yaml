@@ -19,9 +19,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Todd–Hewitt (TH) broth (Difco)
   concentration:
     value: '1'
@@ -59,4 +59,10 @@ curation_history:
   notes: Normalized name from "Todd–Hewitt (TH) broth (Difco) containing 1.5% (wt/vol)
     agar and 6% (vol/vol) sheep blood" to "todd_hewitt_th_broth_difco_containing_1_5_wt_vol_agar_and_6_vol_vol_sheep_blood"
     for consistent matching
+- timestamp: '2026-06-05T07:41:52.058095+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:12

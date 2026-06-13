@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '80'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Agar
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '13.8889'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -60,3 +60,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "N-Z AMINE A MEDIUM" to "n_z_amine_a_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:39.094547+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

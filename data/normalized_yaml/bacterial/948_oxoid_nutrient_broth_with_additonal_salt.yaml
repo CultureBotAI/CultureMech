@@ -19,8 +19,8 @@ ingredients:
     value: '22.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 17.5, 5.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Lab-Lemco beef extract
   concentration:
@@ -65,4 +65,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "948 (OXOID NUTRIENT BROTH) WITH ADDITONAL SALT" to
     "948_oxoid_nutrient_broth_with_additonal_salt" for consistent matching
+- timestamp: '2026-06-05T07:40:15.971512+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:74

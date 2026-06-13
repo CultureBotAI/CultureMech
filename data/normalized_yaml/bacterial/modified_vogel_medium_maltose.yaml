@@ -28,8 +28,8 @@ ingredients:
     value: '58.43'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:malt'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
 - preferred_term: Magnesium sulfate
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '0.8115'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Boric acid
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.0008087'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Uridine
   concentration:
@@ -80,9 +80,9 @@ ingredients:
   concentration:
     value: '0.0002189'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous ammonium sulfate
   concentration:
     value: '0.00255'
@@ -94,9 +94,9 @@ ingredients:
   concentration:
     value: '0.01739'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.001002'
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '9.691'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: Ammonium nitrate
   term:
@@ -121,8 +121,8 @@ ingredients:
   concentration:
     value: '24.99'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: Ammonium nitrate
 preparation_steps:
 - step_number: 1
@@ -153,6 +153,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Modified Vogel Medium (maltose" to "modified_vogel_medium_maltose"
     for consistent matching
+- timestamp: '2026-06-05T07:41:37.969903+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 344
   term:

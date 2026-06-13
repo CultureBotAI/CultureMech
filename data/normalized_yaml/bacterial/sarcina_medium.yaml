@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Peptone
   concentration:
@@ -52,12 +52,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.088051+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SARCINA MEDIUM" to "sarcina_medium" for
-    consistent matching
+  notes: Normalized name from "SARCINA MEDIUM" to "sarcina_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:45.296508+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_21_SARCINA_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004430
   name: sarcina_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 21; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 21; local ingredient
+    and concentration signatures match.

@@ -24,8 +24,8 @@ ingredients:
     value: '2.38'
     unit: G_PER_L
   term:
-    id: CHEBI:143268
-    label: N-(2-hydroxyethyl)iminodiacetic acid
+    id: CHEBI:46756
+    label: HEPES
   notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7365-45-9; MW: 238.3012'
 - preferred_term: Nitrilotriacetic acid
   concentration:
@@ -444,4 +444,8 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-06-10T07:37:36.257694+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 data_quality_flags: []

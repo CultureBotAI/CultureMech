@@ -19,7 +19,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ACES
   term:
-    id: CHEBI:65994
+    id: CHEBI:39061
     label: ACES
   concentration:
     value: '10'
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -63,15 +63,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:35.342349+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BOSEA medium" to "bosea_medium" for consistent
-    matching
+  notes: Normalized name from "BOSEA medium" to "bosea_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:18.540533+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.160791+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 parent_media:
   path: data/normalized_yaml/bacterial/bosea_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000480
   name: bosea_medium
-  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
-    concentration signature.
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same source medium number and matching ingredient/concentration signature.

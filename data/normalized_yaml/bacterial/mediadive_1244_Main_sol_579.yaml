@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:863
     label: Ferric citrate
   chebi_term:
-    id: CHEBI:31605
-    label: ferric citrate
+    id: CHEBI:144421
+    label: Ferric citrate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: NH4Cl
   concentration:
     value: '1.48368'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:23
     label: Na-acetate
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:32954
+    label: Na-acetate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaHCO3
   concentration:
     value: '2.4728'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'First dissolve ferric citrate in water by heating and adjust to
   pH 6.0, then add other medium ingredients except bicarbonate and vitamins. Sparge
   medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then
@@ -124,6 +124,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:15.006931+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

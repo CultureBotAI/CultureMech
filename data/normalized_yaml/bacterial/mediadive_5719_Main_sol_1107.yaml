@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:265
     label: Na-L-lactate
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:232798
+    label: sodium L-lactate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Haemin
   concentration:
     value: '8.333333333333334'
@@ -51,7 +51,7 @@ composition:
     id: CHEBI:17234
     label: D-glucose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: Cystein-HCl x 2 H2O
   concentration:
     value: '0.0025'
@@ -60,10 +60,9 @@ composition:
     id: mediadive.compound:983
     label: Cystein-HCl x 2 H2O
   chebi_term:
-    id: CHEBI:26710
-    label: 1% sodium chloride
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+    match_type: manual_curated
 - preferred_term: DTT
   concentration:
     value: '0.000771255'
@@ -73,9 +72,9 @@ composition:
     label: DTT
   chebi_term:
     id: CHEBI:18320
-    label: 1,4-dithiothreitol
+    label: DTT
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Na-formate
   concentration:
     value: '0.03'
@@ -84,10 +83,10 @@ composition:
     id: mediadive.compound:144
     label: Na-formate
   chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
+    id: CHEBI:62965
+    label: Na-formate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na-fumarate
   concentration:
     value: '0.03'
@@ -96,10 +95,10 @@ composition:
     id: mediadive.compound:143
     label: Na-fumarate
   chebi_term:
-    id: CHEBI:78018
-    label: dodecylphosphocholine
+    id: CHEBI:115156
+    label: Na-fumarate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Horse blood
   concentration:
     value: '41.666666666666664'
@@ -107,11 +106,6 @@ composition:
   term:
     id: mediadive.compound:724
     label: Horse blood
-  chebi_term:
-    id: CHEBI:2509
-    label: agar
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: 'To 10 ml of the dialister medium add aseptically:
 
   Filter-sterilize all solutions and incubate them in oxygen-free atmosphere.
@@ -141,6 +135,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:39.691852+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:49:42.009364+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:27.371302+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

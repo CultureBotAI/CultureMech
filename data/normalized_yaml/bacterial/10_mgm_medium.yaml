@@ -28,8 +28,8 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: NaCl
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '240'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2
   term:
@@ -78,14 +78,14 @@ ingredients:
   concentration:
     value: '0.5549'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 7.0 with 2 M Tris-Base and sterilize by autoclaving.
-    The medium may be solidified by adding 20.0 g/l agar.
+  description: Adjust to pH 7.0 with 2 M Tris-Base and sterilize by autoclaving. The
+    medium may be solidified by adding 20.0 g/l agar.
 - step_number: 2
   action: MIX
   description: Adjust to pH 7.5 with 2 M Tris-Base and sterilize by autoclaving.
@@ -107,13 +107,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.826131+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "10% MGM-MEDIUM" to "10_mgm_medium" for consistent
-    matching
+  notes: Normalized name from "10% MGM-MEDIUM" to "10_mgm_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:15.260070+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true
 variant_children:
 - path: data/normalized_yaml/bacterial/15_mgm_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000848
   name: 15_mgm_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

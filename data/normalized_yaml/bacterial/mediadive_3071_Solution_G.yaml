@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:2150
     label: Asialofetuin
-  chebi_term:
-    id: CHEBI:16643
-    label: L-methionine
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: 'Prepare Solutions G, flush with nitrogen to make them anoxic,
   filter-sterilize and store at -20°C
 
@@ -44,6 +39,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:56:13.160715+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -21,8 +21,8 @@ ingredients:
     value: '2.6'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: L-Lysine
   term:
@@ -32,8 +32,8 @@ ingredients:
     value: '1.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lys-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000318
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18019
     label: L-Lysine
 - preferred_term: L-Arginine
   term:
@@ -43,8 +43,8 @@ ingredients:
     value: '1.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
     label: L-Arginine
 - preferred_term: L-Methionine
   term:
@@ -54,8 +54,8 @@ ingredients:
     value: '1.6'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: L-Tryptophan
   term:
@@ -65,8 +65,8 @@ ingredients:
     value: '0.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:trp-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001063
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16828
     label: L-Tryptophan
 - preferred_term: L-Phenylalanine
   term:
@@ -76,8 +76,8 @@ ingredients:
     value: '2.4'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000312
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17295
     label: L-Phenylalanine
 - preferred_term: L-Tyrosine
   term:
@@ -87,8 +87,8 @@ ingredients:
     value: '1.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: L-Tyrosine
 - preferred_term: L-Cysteine
   term:
@@ -98,8 +98,8 @@ ingredients:
     value: '1.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cys-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000923
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
     label: L-Cysteine
 - preferred_term: Biotin
   term:
@@ -109,8 +109,8 @@ ingredients:
     value: '0.002'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: L-Leucine
   term:
@@ -120,8 +120,8 @@ ingredients:
     value: '2.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
     label: L-Leucine
 - preferred_term: L-Proline
   term:
@@ -131,8 +131,8 @@ ingredients:
     value: '7.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: Citrate
   concentration:
@@ -150,8 +150,8 @@ ingredients:
     value: '6.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:val-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000304
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16414
     label: L-Valine
 - preferred_term: L-Threonine
   term:
@@ -161,8 +161,8 @@ ingredients:
     value: '1.4'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000310
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16857
     label: L-Threonine
 - preferred_term: Thiamine
   term:
@@ -183,8 +183,8 @@ ingredients:
     value: '3.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000294
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17191
     label: L-Isoleucine
 - preferred_term: Alanine
   concentration:
@@ -200,9 +200,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '2.5'
@@ -217,8 +217,8 @@ ingredients:
   concentration:
     value: '0.004'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Ammonium chloride
   term:
@@ -227,8 +227,8 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Manganese chloride
   concentration:
@@ -244,8 +244,8 @@ ingredients:
   concentration:
     value: '25.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
 - preferred_term: Ferrous chloride
   concentration:
@@ -261,15 +261,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified
-    concentrations
+  description: Dissolve all ingredients in distilled water to specified concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
-    components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
 - timestamp: '2026-01-27T07:21:42.914300Z'
   curator: mediadb-import
@@ -291,9 +289,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:06.537232+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Zahorchak et al medium; No exogenous ATP, 10 mM
-    Mg^2+" to "zahorchak_et_al_medium_no_exogenous_atp_10_mm_mg_2" for
-    consistent matching
+  notes: Normalized name from "Zahorchak et al medium; No exogenous ATP, 10 mM Mg^2+"
+    to "zahorchak_et_al_medium_no_exogenous_atp_10_mm_mg_2" for consistent matching
+- timestamp: '2026-06-05T07:41:56.526846+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 18 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 44
   term:
@@ -306,31 +309,27 @@ applications:
 - Metabolic modeling
 - Systems biology research
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_1_25_mm_mg_2.yaml
+- path: data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_1_25_mm_mg_2.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007321
   name: zahorchak_et_al_medium_no_exogenous_atp_1_25_mm_mg_2
-  notes: Same ingredient identity signature but concentration signature differs
-    from parent.
-- path:
-    data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_20_mm_mg_2.yaml
+  notes: Same ingredient identity signature but concentration signature differs from
+    parent.
+- path: data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_20_mm_mg_2.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007365
   name: zahorchak_et_al_medium_no_exogenous_atp_20_mm_mg_2
-  notes: Same ingredient identity signature but concentration signature differs
-    from parent.
-- path:
-    data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_2_5_mm_mg_2.yaml
+  notes: Same ingredient identity signature but concentration signature differs from
+    parent.
+- path: data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_2_5_mm_mg_2.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007332
   name: zahorchak_et_al_medium_no_exogenous_atp_2_5_mm_mg_2
-  notes: Same ingredient identity signature but concentration signature differs
-    from parent.
-- path:
-    data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_5_0_mm_mg_2.yaml
+  notes: Same ingredient identity signature but concentration signature differs from
+    parent.
+- path: data/normalized_yaml/bacterial/zahorchak_et_al_medium_no_exogenous_atp_5_0_mm_mg_2.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007343
   name: zahorchak_et_al_medium_no_exogenous_atp_5_0_mm_mg_2
-  notes: Same ingredient identity signature but concentration signature differs
-    from parent.
+  notes: Same ingredient identity signature but concentration signature differs from
+    parent.

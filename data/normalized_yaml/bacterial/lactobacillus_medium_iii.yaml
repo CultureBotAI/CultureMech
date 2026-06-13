@@ -31,8 +31,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Fructose
   term:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28757
     label: Fructose
 - preferred_term: Maltose
   term:
@@ -51,18 +51,18 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
 - preferred_term: Na-gluconate
   term:
     id: CHEBI:84997
-    label: Na-gluconate
+    label: sodium gluconate
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001052
+  mediaingredientmech_chebi_term:
+    id: CHEBI:84997
     label: Na-gluconate
 - preferred_term: Na-acetate x 3 H2O
   concentration:
@@ -78,18 +78,18 @@ ingredients:
   term:
     id: CHEBI:63076
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000400
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
     label: (NH4)2 citrate
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
-    label: K2HPO4 x 3 H2O
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '2.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4 x 3 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -98,8 +98,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x 4 H2O
   term:
@@ -108,8 +108,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000711
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
     label: MnSO4 x 4 H2O
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -118,8 +118,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Tween 80
   term:
@@ -128,8 +128,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 preparation_steps:
 - step_number: 1
@@ -157,12 +157,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.344917+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LACTOBACILLUS MEDIUM III" to
-    "lactobacillus_medium_iii" for consistent matching
+  notes: Normalized name from "LACTOBACILLUS MEDIUM III" to "lactobacillus_medium_iii"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:10.721322+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:00.470152+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_638_LACTOBACILLUS_medium_III.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006159
   name: lactobacillus_medium_iii
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

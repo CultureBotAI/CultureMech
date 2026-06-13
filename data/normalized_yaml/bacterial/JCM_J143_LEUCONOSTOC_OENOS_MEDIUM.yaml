@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '9.99001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Fructose
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '4.99501'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28757
     label: Fructose
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.1998'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x n H2O
   concentration:
@@ -57,7 +57,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 - preferred_term: Diammonium Citrate
   term:
     id: CHEBI:63076
@@ -65,8 +65,8 @@ ingredients:
   concentration:
     value: '3.4965'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000400
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
     label: Diammonium Citrate
 - preferred_term: Tween 80
   term:
@@ -75,8 +75,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 - preferred_term: Tomato juice
   concentration:
@@ -90,8 +90,8 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 preparation_steps:
 - step_number: 1
@@ -117,3 +117,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LEUCONOSTOC OENOS MEDIUM" to "leuconostoc_oenos_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:16.695062+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.786368+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
