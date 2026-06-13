@@ -24,10 +24,9 @@ composition:
     id: mediadive.compound:418
     label: Deionized water
   chebi_term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:15377
+    label: water
+    match_type: manual_curated
 preparation_notes: "Add stock solutions to deionized water and make up to 1 litre.\
   \ In suitable vessels thoroughly\r\ndisperse the agar in cold amoeba saline solution.\
   \ Autoclave at 15 psi for 15 minutes."
@@ -59,6 +58,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:56:28.496233+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

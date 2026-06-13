@@ -36,10 +36,9 @@ composition:
     id: mediadive.compound:79
     label: MgCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:86345
+    label: magnesium chloride hexahydrate
+    match_type: corpus_consensus
 - preferred_term: KCl
   concentration:
     value: '0.309819'
@@ -108,10 +107,9 @@ composition:
     id: mediadive.compound:354
     label: KI
   chebi_term:
-    id: CHEBI:138791
-    label: Asp-Lys-Ile
-    confidence: 0.9
-    match_type: synonym_match_ambiguous
+    id: CHEBI:8346
+    label: potassium iodide
+    match_type: manual_curated
 - preferred_term: Na2WO2 x 2 H2O
   concentration:
     value: '9.53289e-05'
@@ -120,10 +118,9 @@ composition:
     id: mediadive.compound:1743
     label: Na2WO2 x 2 H2O
   chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
+    match_type: manual_curated
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.714967'
@@ -167,11 +164,6 @@ composition:
   term:
     id: mediadive.compound:1883
     label: Trace minerals (see Medium No. 151
-  chebi_term:
-    id: CHEBI:33118
-    label: boric acid
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Resazurin
   concentration:
     value: '0.000953289'
@@ -273,6 +265,11 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:21.106993+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '4 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

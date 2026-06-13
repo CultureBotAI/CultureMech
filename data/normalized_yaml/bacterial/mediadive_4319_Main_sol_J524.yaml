@@ -60,10 +60,9 @@ composition:
     id: mediadive.compound:79
     label: MgCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:86345
+    label: magnesium chloride hexahydrate
+    match_type: corpus_consensus
 - preferred_term: KCl
   concentration:
     value: '0.324803'
@@ -84,10 +83,9 @@ composition:
     id: mediadive.compound:187
     label: NaNO3
   chebi_term:
-    id: CHEBI:65327
-    label: D-xylose
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:63005
+    label: sodium nitrate
+    match_type: manual_curated
 - preferred_term: NH4Cl
   concentration:
     value: '0.246063'
@@ -132,10 +130,9 @@ composition:
     id: mediadive.compound:107
     label: Na2SeO3 x 5 H2O
   chebi_term:
-    id: CHEBI:63940
-    label: sodium tungstate
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+    match_type: corpus_consensus
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.000492126'
@@ -224,6 +221,11 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:19.218100+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '3 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

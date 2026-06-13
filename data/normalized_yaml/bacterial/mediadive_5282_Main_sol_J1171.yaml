@@ -48,10 +48,9 @@ composition:
     id: mediadive.compound:187
     label: NaNO3
   chebi_term:
-    id: CHEBI:65327
-    label: D-xylose
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:63005
+    label: sodium nitrate
+    match_type: manual_curated
 - preferred_term: Distilled water
   concentration:
     value: '332.66799733865605'
@@ -83,11 +82,6 @@ composition:
   term:
     id: mediadive.compound:96
     label: Trace element solution
-  chebi_term:
-    id: CHEBI:30961
-    label: pyridoxine hydrochloride
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Vitamins solution
   concentration:
     value: '0.03326679973386561'
@@ -95,11 +89,6 @@ composition:
   term:
     id: mediadive.compound:284
     label: Vitamins solution
-  chebi_term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: CeCl3
   concentration:
     value: '0.03326679973386561'
@@ -243,7 +232,7 @@ composition:
     id: CHEBI:176843
     label: vitamin B12
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '8.3167e-05'
@@ -355,6 +344,11 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:24.899925+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '4 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

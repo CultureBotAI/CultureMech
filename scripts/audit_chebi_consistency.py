@@ -43,7 +43,7 @@ NORMALIZED_DIR = REPO_ROOT / "data" / "normalized_yaml"
 # counted/reported separately rather than treated as a grounding.
 # `corpus_consensus` is the G25-Phase-1 fix: a chebi_term borrowed from the
 # label's unanimous reliable grounding elsewhere, so it counts as reliable.
-RELIABLE_CHEBI_MATCH = {"exact_match", "corpus_consensus"}
+RELIABLE_CHEBI_MATCH = {"exact_match", "corpus_consensus", "manual_curated"}
 
 
 def reliable_chebi(ing: dict) -> str | None:

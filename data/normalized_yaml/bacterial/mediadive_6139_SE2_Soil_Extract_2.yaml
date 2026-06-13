@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:2350
     label: Soil
-  chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Deionized water
   concentration:
     value: '1000.0'
@@ -24,10 +19,9 @@ composition:
     id: mediadive.compound:418
     label: Deionized water
   chebi_term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:15377
+    label: water
+    match_type: manual_curated
 preparation_notes: "Site selection for a good soil is very important and for most\
   \ purposes a soil from \r\nundisturbed deciduous woodland is best.  Sites to avoid\
   \ are those showing obvious \r\nsigns of man's activity and particular care should\
@@ -66,6 +60,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:56:28.779096+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

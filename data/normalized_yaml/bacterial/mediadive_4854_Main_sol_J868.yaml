@@ -107,11 +107,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '0.496524'
@@ -171,7 +166,7 @@ composition:
     id: CHEBI:15824
     label: D-fructose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: Vitamin solution (see Medium No. 403)
   concentration:
     value: '0.9930486593843099'
@@ -179,11 +174,6 @@ composition:
   term:
     id: mediadive.compound:1855
     label: Vitamin solution (see Medium No. 403)
-  chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Thiamine solution (see Medium No. 403)
   concentration:
     value: '0.9930486593843099'
@@ -191,11 +181,6 @@ composition:
   term:
     id: mediadive.compound:1856
     label: Thiamine solution (see Medium No. 403)
-  chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Vitamin B12 solution (see Medium No. 403)
   concentration:
     value: '0.9930486593843099'
@@ -254,6 +239,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:56:22.122856+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '4 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

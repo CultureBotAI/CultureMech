@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:105
     label: Tomato juice
-  chebi_term:
-    id: CHEBI:53426
-    label: tween 80
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Neopeptone
   concentration:
     value: '15'
@@ -23,11 +18,6 @@ composition:
   term:
     id: mediadive.compound:263
     label: Neopeptone
-  chebi_term:
-    id: CHEBI:53258
-    label: citric acid
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '6'
@@ -35,11 +25,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Liver extract
   concentration:
     value: '75'
@@ -47,11 +32,6 @@ composition:
   term:
     id: mediadive.compound:1600
     label: Liver extract
-  chebi_term:
-    id: CHEBI:85248
-    label: gellan gum
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Glucose
   concentration:
     value: '20'
@@ -63,7 +43,7 @@ composition:
     id: CHEBI:17234
     label: D-glucose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: Starch
   concentration:
     value: '0.5'
@@ -156,6 +136,11 @@ curation_history:
   action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
   notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
     label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:56:16.162870+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '5 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

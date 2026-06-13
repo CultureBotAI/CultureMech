@@ -15,7 +15,7 @@ composition:
     id: CHEBI:16260
     label: 2-nitrophenol
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: Phosphate buffer
   concentration:
     value: '1000'
@@ -23,11 +23,6 @@ composition:
   term:
     id: mediadive.compound:625
     label: Phosphate buffer
-  chebi_term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: Dissolve 0.5 g o-nitrophenol per liter phosphate buffer (50 mM,
   pH 7.5) and sterilize by filtration.
 curation_history:
@@ -53,6 +48,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:56:26.955227+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

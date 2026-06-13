@@ -19,10 +19,9 @@ composition:
     id: mediadive.compound:187
     label: NaNO3
   chebi_term:
-    id: CHEBI:65327
-    label: D-xylose
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:63005
+    label: sodium nitrate
+    match_type: manual_curated
 - preferred_term: (NH4)Cl
   concentration:
     value: '1.5274'
@@ -55,10 +54,9 @@ composition:
     id: mediadive.compound:894
     label: H2SeO3
   chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:26642
+    label: selenous acid
+    match_type: manual_curated
 - preferred_term: Tris base
   concentration:
     value: '0.6181'
@@ -79,10 +77,9 @@ composition:
     id: mediadive.compound:418
     label: Deionized water
   chebi_term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:15377
+    label: water
+    match_type: manual_curated
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -134,6 +131,11 @@ curation_history:
   action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
   notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
     disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:28.939952+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '3 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:
