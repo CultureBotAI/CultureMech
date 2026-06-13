@@ -270,6 +270,21 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-02T06:47:50.294175+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Phase-2 CAUTION: this parent record is explicitly ANAEROBIC (DSMZ 88a /
+    TOGO M2670; Na2S reducing agent + N2 gas phase). Every literature strain retrieved
+    (Willard et al. 2024) was cultivated on AEROBIC low-sulfate Brock''s salts (DSM-88)
+    in vented serum bottles, using NH4Cl instead of (NH4)2SO4 and without Na2S/N2.
+    These strains are therefore scoped to an aerobic Brock''s-salts MediaVariant and
+    their evidence explanations explicitly state growth is NOT verified on the anaerobic
+    parent. S. acidocaldarius MW001, Saccharolobus solfataricus P2, and Sulfuracidifex
+    tepidarius DSM 104736 were EXCLUDED entirely because phase-2 judged their medium
+    a distinct record, not a variant. Sulfodiicoccus acidiphilus HS-1T is the only
+    strain with a genuinely anaerobic (MBSY + Na2S + H2/CO2) formulation and is the
+    closest to the parent, though its basal recipe is also cited transitively. [added
+    6 organism(s), 2 variant(s)]'
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []
@@ -277,3 +292,95 @@ solutions:
     value: '10'
     unit: G_PER_L
   name: Unknown solution
+target_organisms:
+- preferred_term: Acidianus brierleyi
+  strain: DSM 3772 (also DSM 1651)
+  evidence:
+  - reference: doi:10.1128/mbio.01033-24
+    supports: SUPPORT
+    explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. NOT verified on
+      the anaerobic parent (no Na2S/N2 reported); aerobic vented-bottle cultivation.
+      | Identifiers: DSM 3772; DSM 1651'
+- preferred_term: Metallosphaera hakonensis
+  strain: HO1-1, DSM 7519
+  genome_assembly_id:
+  - GCA_003201675.2
+  evidence:
+  - reference: doi:10.1128/mbio.01033-24
+    supports: SUPPORT
+    explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. Differs from anaerobic
+      parent: NH4Cl vs (NH4)2SO4, no Na2S, no N2 phase. | Identifiers: DSM 7519'
+- preferred_term: Metallosphaera prunae
+  strain: RON 12/II, DSM 10039
+  evidence:
+  - reference: doi:10.1128/mbio.01033-24
+    supports: SUPPORT
+    explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. NOT the anaerobic
+      parent formulation. | Identifiers: DSM 10039'
+- preferred_term: Sulfurisphaera ohwakuensis
+  strain: TA-1, DSM 12421
+  evidence:
+  - reference: doi:10.1128/mbio.01033-24
+    supports: SUPPORT
+    explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. Vented bottles;
+      not anaerobic parent. | Identifiers: DSM 12421'
+- preferred_term: Sulfurisphaera tokodaii
+  strain: str. 7, DSM 16993
+  evidence:
+  - reference: doi:10.1128/mbio.01033-24
+    supports: SUPPORT
+    explanation: 'Scoped to the aerobic_brocks_salts_dsm88_sulfur_yeast_extract variant. NH4Cl, no Na2S,
+      vented bottles; not the anaerobic parent. | Identifiers: DSM 16993'
+- preferred_term: Sulfodiicoccus acidiphilus
+  strain: HS-1T (= JCM 31740T = InaCC Ar79T)
+  genome_assembly_id:
+  - GCA_003967175.1
+  evidence:
+  - reference: doi:10.1099/ijsem.0.001881
+    supports: SUPPORT
+    explanation: 'Closest match to the anaerobic parent of all DSM 2162 candidates
+      (genuinely anaerobic: Na2S + reduced + H2/CO2). Basal MBS recipe is cited transitively,
+      so exact identity is plausible but not provable from this source; scoped to
+      the reduced_anaerobic_mbsy_h2_co2 variant. | Identifiers: JCM 31740T; InaCC Ar79T;
+      16S LC061218; 23S LC176656'
+    snippet: Strain HS-1T grown in modified Brock's basal salt medium with yeast extract
+      (MBSY); anaerobic tests used MBSY reduced with Na2S (0.5 g/L) + resazurin (1
+      mg/L), headspace H2/CO2 (80:20, 100 kPa), optional 10 g/L elemental sulfur.
+variants:
+- name: aerobic_brocks_salts_dsm88_sulfur_yeast_extract
+  relationship: DERIVED_FROM
+  description: Aerobic low-sulfate Brock's salts (DSMZ medium 88) formulation used
+    by Willard et al. 2024 for a broad set of Sulfolobales. Distinct from the anaerobic
+    parent in atmosphere and nitrogen source; grouped here as a derived aerobic variant.
+  modifications:
+  - Low-sulfate Brock's salts base (MgSO4 reduced/replaced); NH4Cl instead of (NH4)2SO4
+  - 10 g/L elemental sulfur; species-specific 0.2-1 g/L yeast extract (or sucrose
+    + NZ-Amine)
+  - 'AEROBIC: vented serum bottles with foam stoppers; NO Na2S reducing agent; NO
+    N2 gas phase'
+  - 65-75C; pH 2-3 (acidified with H2SO4 or HCl)
+  purpose: Aerobic sulfur-oxidation / comparative physiology cultivation of Sulfolobales
+    (A. brierleyi, M. hakonensis, M. prunae, S. ohwakuensis, S. tokodaii).
+  evidence:
+  - reference: doi:10.1128/mbio.01033-24
+    supports: SUPPORT
+    explanation: Willard et al. 2024 is the shared source for the aerobic DSM-88 variant
+      across these strains.
+    snippet: 'All Sulfolobaceae species were grown in a low-sulfate formulation of
+      Brock’s Salts (DSM-88 medium) containing:'
+- name: reduced_anaerobic_mbsy_h2_co2
+  relationship: DERIVED_FROM
+  description: Reduced anaerobic modified Brock's basal salt medium with yeast extract
+    (MBSY) used by Sakai & Kurosawa 2017 for anaerobic growth tests of Sulfodiicoccus
+    acidiphilus HS-1T. The genuinely anaerobic member of the DSM 2162 evidence set.
+  modifications:
+  - Modified Brock's basal salts + 1 g/L yeast extract (MBSY)
+  - Reduced with Na2S (0.5 g/L) + resazurin (1 mg/L)
+  - Headspace H2/CO2 (80:20) at 100 kPa; optional 10 g/L elemental sulfur
+  - 65-75C; pH 3.0
+  purpose: Anaerobic growth testing of Sulfodiicoccus acidiphilus HS-1T.
+  evidence:
+  - reference: doi:10.1099/ijsem.0.001881
+    supports: SUPPORT
+    explanation: Sakai & Kurosawa 2017 Methods. Basal MBS recipe cited to another
+      reference.
