@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: '23'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -32,8 +32,8 @@ ingredients:
   concentration:
     value: '5.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 2 H2O
   term:
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '6.16'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000419
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131394
     label: MgCl2 x 2 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -52,8 +52,8 @@ ingredients:
   concentration:
     value: '1.47'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Na2HPO4 x 7 H2O
   term:
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '0.89'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 7 H2O
 - preferred_term: NaNO3
   term:
@@ -82,8 +82,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Sodium pyruvate
   term:
@@ -92,8 +92,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 applications:
 - Microbial cultivation
@@ -123,6 +123,12 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''7.0-7.5'' -> {''min'': 7.0, ''max'': 7.5}'
+- timestamp: '2026-06-05T07:40:26.625333+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/alcanivorax_borkumensis_medium.yaml
   relationship: SOURCE_DUPLICATE

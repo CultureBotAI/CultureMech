@@ -18,8 +18,8 @@ ingredients:
     value: '17.4'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000944
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30089
     label: Acetate
 - preferred_term: Manganese
   concentration:
@@ -67,8 +67,8 @@ ingredients:
   concentration:
     value: '0.134'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: Magnesium
   concentration:
@@ -134,6 +134,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'TAP (hetero/mixo" to "tap_hetero_mixo" for consistent
     matching
+- timestamp: '2026-06-05T07:41:48.728473+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 36
   term:

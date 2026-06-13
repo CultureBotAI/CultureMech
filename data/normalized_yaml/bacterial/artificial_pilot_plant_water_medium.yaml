@@ -14,22 +14,22 @@ ingredients:
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '0.022'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: K2SO4
   term:
     id: CHEBI:32036
-    label: K2SO4
+    label: potassium sulfate
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001064
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32036
     label: K2SO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '3.24'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaSO4 x 2 H2O
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.515'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000465
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32583
     label: CaSO4 x 2 H2O
 - preferred_term: NaHCO3
   term:
@@ -58,18 +58,18 @@ ingredients:
   concentration:
     value: '0.058'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Al2(SO4)3 x 18 H2O
   term:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '0.014'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001043
+  mediaingredientmech_chebi_term:
+    id: CHEBI:74779
     label: Al2(SO4)3 x 18 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '1.344'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: MnCl4 x 6 H2O
   concentration:
@@ -102,8 +102,8 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 preparation_steps:
 - step_number: 1
@@ -129,3 +129,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ARTIFICIAL PILOT PLANT WATER MEDIUM" to "artificial_pilot_plant_water_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:49.726865+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:53.535822+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

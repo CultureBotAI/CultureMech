@@ -24,8 +24,8 @@ ingredients:
     value: '111.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fru'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000344
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15824
     label: D-Fructose
 - preferred_term: Zinc sulfate
   term:
@@ -34,9 +34,9 @@ ingredients:
   concentration:
     value: '0.03825'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.09011'
@@ -58,9 +58,9 @@ ingredients:
   concentration:
     value: '0.01121'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.1798'
@@ -75,8 +75,8 @@ ingredients:
   concentration:
     value: '4.587'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Citrate
   concentration:
@@ -126,6 +126,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MR Medium + D-fructose" to "mr_medium_d_fructose" for
     consistent matching
+- timestamp: '2026-06-05T07:41:38.359159+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 320
   term:

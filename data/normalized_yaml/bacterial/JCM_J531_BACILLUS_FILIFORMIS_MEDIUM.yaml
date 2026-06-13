@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '2.99401'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: KCl
   term:
@@ -33,28 +33,28 @@ ingredients:
   concentration:
     value: '1.99601'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x H2O
   term:
     id: CHEBI:32599
-    label: MgSO4 x H2O
+    label: magnesium sulfate
   concentration:
     value: '0.998004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4 x H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '2.99401'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: NaCl
   term:
@@ -63,8 +63,8 @@ ingredients:
   concentration:
     value: '99.8004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '0.36'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x H2O
   term:
@@ -83,8 +83,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000602
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75834
     label: FeSO4 x H2O
 preparation_steps:
 - step_number: 1
@@ -110,3 +110,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BACILLUS FILIFORMIS MEDIUM" to "bacillus_filiformis_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:17.466792+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.034249+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

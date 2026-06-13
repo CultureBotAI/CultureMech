@@ -12,10 +12,9 @@ composition:
     id: mediadive.compound:79
     label: MgCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:86345
+    label: magnesium chloride hexahydrate
+    match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '16.5'
@@ -24,10 +23,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KCl
   concentration:
     value: '16.5'
@@ -48,10 +47,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NH4Cl
   concentration:
     value: '12.5'
@@ -84,10 +83,10 @@ composition:
     id: mediadive.compound:375
     label: Na2SeO4
   chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
+    id: CHEBI:77775
+    label: sodium selenate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: exact_match
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '2.2'
@@ -96,10 +95,10 @@ composition:
     id: mediadive.compound:770
     label: L-Cysteine HCl x H2O
   chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: FeCl2 x 4 H2O
   concentration:
     value: '13'
@@ -108,10 +107,10 @@ composition:
     id: mediadive.compound:260
     label: FeCl2 x 4 H2O
   chebi_term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Add components except L-cysteine x HCl x H2O and FeCl2 x 4H2O
   to distilled water, bring volume to 1.0 L and adjust pH to 7.0. Distribute the medium
   into appropriate culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles)
@@ -149,6 +148,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:30.616584+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:48:20.576601+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:18.340163+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

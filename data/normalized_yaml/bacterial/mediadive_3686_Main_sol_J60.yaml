@@ -13,9 +13,9 @@ composition:
     label: L-Asparagine
   chebi_term:
     id: CHEBI:17196
-    label: L-asparagine
+    label: L-Asparagine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Glycerol
   concentration:
     value: '9.99001'
@@ -24,10 +24,9 @@ composition:
     id: mediadive.compound:72
     label: Glycerol
   chebi_term:
-    id: CHEBI:15978
-    label: glycerol
-    confidence: 0.9
-    match_type: synonym_match_ambiguous
+    id: CHEBI:17754
+    label: Glycerol
+    match_type: corpus_consensus
 - preferred_term: K2HPO4
   concentration:
     value: '0.999001'
@@ -49,9 +48,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '999.0009990009991'
@@ -60,10 +59,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 7.4.
 
 
@@ -91,6 +90,17 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-08T23:19:42.108191+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:38:28.077514+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

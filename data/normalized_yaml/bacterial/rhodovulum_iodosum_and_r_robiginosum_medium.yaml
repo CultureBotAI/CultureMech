@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '26.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '5.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '6.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
@@ -59,38 +59,38 @@ ingredients:
   concentration:
     value: '0.66'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: KBr
   term:
     id: CHEBI:32030
-    label: KBr
+    label: potassium bromide
   concentration:
     value: '0.09'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
     label: KBr
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -99,8 +99,8 @@ ingredients:
   concentration:
     value: '0.124'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: NaHCO3
   term:
@@ -109,8 +109,8 @@ ingredients:
   concentration:
     value: '2.52'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Sodium acetate
   term:
@@ -119,8 +119,8 @@ ingredients:
   concentration:
     value: '0.41015'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -130,8 +130,8 @@ ingredients:
     value: '4.88015'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 2.78015, 2.1]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Na2-EDTA
   term:
@@ -140,18 +140,18 @@ ingredients:
   concentration:
     value: '5.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -160,8 +160,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -170,8 +170,8 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -180,8 +180,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -190,8 +190,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -200,8 +200,8 @@ ingredients:
   concentration:
     value: '0.144'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -210,8 +210,8 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -220,8 +220,8 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
@@ -230,8 +230,8 @@ ingredients:
   concentration:
     value: '0.008'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
     label: Na2WO4 x 2 H2O
 - preferred_term: NaOH
   term:
@@ -240,8 +240,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Para-aminobenzoic acid
   term:
@@ -250,8 +250,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: Para-aminobenzoic acid
 - preferred_term: Biotin
   term:
@@ -260,8 +260,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Nicotinate
   concentration:
@@ -277,8 +277,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000356
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16454
     label: Pantothenate
 - preferred_term: Pyridoxin
   concentration:
@@ -291,15 +291,15 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18385
     label: Thiamin
 - preferred_term: Cyanocobalamine
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001039
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Cyanocobalamine
   term:
     id: CHEBI:17439
@@ -322,15 +322,14 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 6
   action: POUR_PLATES
-  description: Dispense into appropriate vessels, e.g. Hungate tubes, under N2
-    atmosphere
+  description: Dispense into appropriate vessels, e.g. Hungate tubes, under N2 atmosphere
 - step_number: 7
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
 - step_number: 8
   action: FILTER_STERILIZE
-  description: After autoclaving or before use add the following
-    filter-sterilzed solutions (to the given final concentrations).
+  description: After autoclaving or before use add the following filter-sterilzed
+    solutions (to the given final concentrations).
 - step_number: 9
   action: MIX
   description: 'Note: When the iron is added to the medium a white floculant precipitate
@@ -349,8 +348,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:24.551260Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T03:08:57.204554Z'
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
@@ -366,13 +365,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.974100+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RHODOVULUM IODOSUM AND R. ROBIGINOSUM MEDIUM" to
-    "rhodovulum_iodosum_and_r_robiginosum_medium" for consistent matching
+  notes: Normalized name from "RHODOVULUM IODOSUM AND R. ROBIGINOSUM MEDIUM" to "rhodovulum_iodosum_and_r_robiginosum_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:44.473761+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 28 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:11.011788+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_929_RHODOVULUM_IODOSUM_AND_R._ROBIGINOSUM_MEDIUM.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_929_RHODOVULUM_IODOSUM_AND_R._ROBIGINOSUM_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006847
   name: rhodovulum_iodosum_and_r_robiginosum_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

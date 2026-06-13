@@ -13,8 +13,8 @@ ingredients:
     value: '11.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: L-Tryptophan
   term:
@@ -24,8 +24,8 @@ ingredients:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:trp-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001063
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16828
     label: L-Tryptophan
 - preferred_term: L-Phenylalanine
   term:
@@ -35,8 +35,8 @@ ingredients:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000312
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17295
     label: L-Phenylalanine
 - preferred_term: L-Tyrosine
   term:
@@ -46,8 +46,8 @@ ingredients:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: L-Tyrosine
 - preferred_term: L-Proline
   term:
@@ -57,8 +57,8 @@ ingredients:
     value: '0.22'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: Citrate
   concentration:
@@ -82,8 +82,8 @@ ingredients:
   concentration:
     value: '0.33'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Magnesium sulfate
   term:
@@ -92,8 +92,8 @@ ingredients:
   concentration:
     value: '0.81'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
@@ -128,6 +128,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Vogel-Bonner Medium" to "vogel_bonner_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:55.167323+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 162
   term:

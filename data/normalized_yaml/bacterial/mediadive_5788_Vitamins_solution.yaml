@@ -13,9 +13,9 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: biotin
+    label: Biotin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Folic acid
   concentration:
     value: '0.02'
@@ -61,9 +61,9 @@ composition:
     label: Thiamine
   chebi_term:
     id: CHEBI:26948
-    label: thiamine
+    label: Thiamine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Nicotinic acid
   concentration:
     value: '0.05'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:135
     label: Pantothenic acid
   chebi_term:
-    id: CHEBI:46905
-    label: (R)-pantothenic acid
+    id: CHEBI:7916
+    label: Pantothenic acid
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Cobalamin
   concentration:
     value: '0.001'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:2157
     label: Cobalamin
   chebi_term:
-    id: CHEBI:30411
-    label: cobalamin
+    id: CHEBI:28911
+    label: cob(III)alamin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '0.05'
@@ -121,9 +121,9 @@ composition:
     label: Lipoic acid
   chebi_term:
     id: CHEBI:16494
-    label: lipoic acid
+    label: Lipoic acid
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 curation_history:
 - timestamp: '2026-03-13T06:20:38.756774Z'
   curator: culturemech-id-assigner-v1.0
@@ -147,6 +147,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:39.985860+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 5 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

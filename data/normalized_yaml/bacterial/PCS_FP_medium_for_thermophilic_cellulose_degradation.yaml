@@ -12,15 +12,16 @@ ingredients:
   term:
     id: CHEBI:18246
     label: cellulose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000114
-    label: Filter paper (cellulose substrate)
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18246
+    label: cellulose
 - preferred_term: Calcium carbonate
   concentration:
     value: '2.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000839
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
   term:
     id: CHEBI:3311
     label: calcium carbonate
@@ -36,8 +37,9 @@ ingredients:
   concentration:
     value: '5.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000187
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -97,6 +99,12 @@ curation_history:
   action: BACKFILLED_SOURCE_ENVIRONMENT
   notes: added=1 env(s) from CommunityMech
   source: CommunityMech (environment_term + culturemech_id linkage)
+- timestamp: '2026-06-05T07:40:29.566713+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 source_environment:
 - preferred_term: compost
   term:

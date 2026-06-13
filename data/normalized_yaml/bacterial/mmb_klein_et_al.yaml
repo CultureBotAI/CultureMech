@@ -17,8 +17,8 @@ ingredients:
     value: '0.65079'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gthrd'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000466
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16856
     label: Glutathione
 - preferred_term: L-Arginine
   term:
@@ -28,8 +28,8 @@ ingredients:
     value: '1.72216'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
     label: L-Arginine
 - preferred_term: Uracil
   term:
@@ -39,8 +39,8 @@ ingredients:
     value: '0.89216'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ura'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000501
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17568
     label: Uracil
 - preferred_term: D-Glutamate
   concentration:
@@ -62,9 +62,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.01982'
@@ -86,9 +86,9 @@ ingredients:
   concentration:
     value: '99.2471'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -96,8 +96,8 @@ ingredients:
   concentration:
     value: '0.0133'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
@@ -113,8 +113,8 @@ ingredients:
   concentration:
     value: '0.01534'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Hemin
 - preferred_term: Sodium Pantothenate
   concentration:
@@ -153,6 +153,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MMB; Klein et al" to "mmb_klein_et_al" for consistent
     matching
+- timestamp: '2026-06-05T07:41:35.365176+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 279
   term:

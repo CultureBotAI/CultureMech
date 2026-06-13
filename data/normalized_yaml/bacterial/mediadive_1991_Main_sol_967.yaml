@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2CO3
   concentration:
     value: '0.01'
@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:9
     label: Na2MoO4 x 2 H2O
   chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2-EDTA
   concentration:
     value: '0.0005'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:400
     label: Cellulose
   chebi_term:
-    id: CHEBI:62968
-    label: cellulose
+    id: CHEBI:18246
+    label: Cellulose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: NH4Cl
   concentration:
     value: '0.27'
@@ -107,11 +107,6 @@ composition:
   term:
     id: mediadive.compound:286
     label: Sea water
-  chebi_term:
-    id: CHEBI:75228
-    label: sodium lactate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Distilled water
   concentration:
     value: '250'
@@ -120,10 +115,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: As carbon source Sigmacell 101 or Whatman filter paper "1" can
   be used.
 curation_history:
@@ -149,6 +144,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:19.234976+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:46:11.772394+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

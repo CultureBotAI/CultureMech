@@ -44,8 +44,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: L-Glutamine
   term:
@@ -54,8 +54,8 @@ ingredients:
   concentration:
     value: '0.0496876'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
     label: L-Glutamine
 preparation_steps:
 - step_number: 1
@@ -86,12 +86,16 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.967698+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SP4 MEDIUM" to "sp4_medium" for consistent
-    matching
+  notes: Normalized name from "SP4 MEDIUM" to "sp4_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:46.118828+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1076_SP4_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003664
   name: sp4_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

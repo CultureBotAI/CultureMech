@@ -19,8 +19,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000174
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate heptahydrate
   term:
     id: CHEBI:32599
     label: magnesium sulfate heptahydrate
@@ -28,8 +29,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000485
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogenphosphate
   term:
     id: CHEBI:63036
     label: potassium dihydrogenphosphate
@@ -97,6 +99,12 @@ curation_history:
   action: BACKFILLED_SOURCE_ENVIRONMENT
   notes: added=1 env(s) from CommunityMech
   source: CommunityMech (environment_term + culturemech_id linkage)
+- timestamp: '2026-06-05T07:40:29.560526+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 source_environment:
 - preferred_term: acid mine drainage
   term:

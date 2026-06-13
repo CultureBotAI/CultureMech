@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: Ammonium Sulfate
 - preferred_term: Tris base
   term:
@@ -50,8 +50,8 @@ ingredients:
   concentration:
     value: '1.06'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
     label: Tris base
 - preferred_term: Calf brains
   term:
@@ -160,8 +160,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: L-Cysteine
   term:
@@ -170,8 +170,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000923
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
     label: L-Cysteine
 preparation_steps:
 - step_number: 1
@@ -208,3 +208,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "70:30 sporulation medium" to "70_30_sporulation_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:15.895336+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

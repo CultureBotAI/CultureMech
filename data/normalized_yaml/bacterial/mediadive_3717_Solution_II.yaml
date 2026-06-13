@@ -12,10 +12,9 @@ composition:
     id: mediadive.compound:72
     label: Glycerol
   chebi_term:
-    id: CHEBI:15978
-    label: glycerol
-    confidence: 0.9
-    match_type: synonym_match_ambiguous
+    id: CHEBI:17754
+    label: Glycerol
+    match_type: corpus_consensus
 - preferred_term: Malachite green
   concentration:
     value: '28.301886792452834'
@@ -24,10 +23,10 @@ composition:
     id: mediadive.compound:407
     label: Malachite green
   chebi_term:
-    id: CHEBI:44107
-    label: malachite green cation
+    id: CHEBI:72449
+    label: malachite green
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Whole egg
   concentration:
     value: '943.3962264150944'
@@ -35,11 +34,6 @@ composition:
   term:
     id: mediadive.compound:1621
     label: Whole egg
-  chebi_term:
-    id: CHEBI:15978
-    label: glycerol
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: 'Homogenize Solution II by stirring and filter through gauze. Mix
   solutions I and II, and sterilize at 90C for 60 min.
 
@@ -70,6 +64,28 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-08T23:19:42.134741+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-09T01:48:32.464227+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:38:28.236212+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:47:56.227950+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

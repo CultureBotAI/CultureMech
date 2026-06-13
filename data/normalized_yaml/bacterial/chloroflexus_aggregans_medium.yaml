@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '0.952381'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000527
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17201
     label: Glycyl-glycine
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -33,8 +33,8 @@ ingredients:
   concentration:
     value: '0.0952381'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -43,13 +43,13 @@ ingredients:
   concentration:
     value: '0.0952381'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
-    label: KNO3
+    id: CHEBI:63043
+    label: potassium nitrate
   concentration:
     value: '0.0952381'
     unit: G_PER_L
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '0.0952381'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -83,8 +83,8 @@ ingredients:
   concentration:
     value: '0.047619'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Fe(III) citrate
   term:
@@ -93,8 +93,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000864
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Fe(III) citrate
 - preferred_term: Nicotinic acid
   term:
@@ -103,8 +103,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -113,8 +113,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Biotin
   term:
@@ -123,8 +123,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -133,8 +133,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: Vitamin B12
   term:
@@ -143,8 +143,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Calcium pantothenate
   term:
@@ -153,8 +153,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -163,8 +163,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Folic acid
   term:
@@ -173,8 +173,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Na3-EDTA
   term:
@@ -183,8 +183,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000377
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63125
     label: Na3-EDTA
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -193,8 +193,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -203,18 +203,18 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -223,8 +223,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -233,8 +233,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -243,8 +243,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -253,8 +253,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -263,8 +263,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
@@ -272,31 +272,29 @@ preparation_steps:
   description: Adjust pH to 8.2.
 - step_number: 2
   action: AUTOCLAVE
-  description: Boil the medium under a stream of nitrogen gas for a few minutes
-    and distribute 90 ml medium into 100 ml screw-capped bottles. Bubble each
-    bottle with nitrogen gas and close immediately with a rubber septum and
-    screw tight. Autoclave at 121°C for 15 min. After autoclaving inject 1.0 ml
-    of neutralized sulfide solution (0.03% end concentration) to each bottle.
-    This medium can be stored for several months. Incubate the culture at 50°C
-    at a light intensity of 300 - 500 lux. For heavy cell suspension supplement
-    periodically with sterile yeast extract solution (0.1% end concentration,
-    for more details see Ref. 3365, 3366).
+  description: Boil the medium under a stream of nitrogen gas for a few minutes and
+    distribute 90 ml medium into 100 ml screw-capped bottles. Bubble each bottle with
+    nitrogen gas and close immediately with a rubber septum and screw tight. Autoclave
+    at 121°C for 15 min. After autoclaving inject 1.0 ml of neutralized sulfide solution
+    (0.03% end concentration) to each bottle. This medium can be stored for several
+    months. Incubate the culture at 50°C at a light intensity of 300 - 500 lux. For
+    heavy cell suspension supplement periodically with sterile yeast extract solution
+    (0.1% end concentration, for more details see Ref. 3365, 3366).
 - step_number: 3
   action: FILTER_STERILIZE
   description: Adjust pH to 7.5. The solution is filter-sterilized.
 - step_number: 4
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle
-    with a butyl rubber septum and a magnetic stirrer. The solution is bubbled
-    with nitrogen gas, closed and autoclaved for 15 min. at 121°C. After cooling
-    to room temperature the pH is adjusted to about 7.0 by adding of sterile 2 M
-    H2SO4 drop-wise with a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
 - step_number: 5
   action: ADJUST_PH
-  description: Appearance of a yellow colour indicates the drop of pH to about
-    8. The solution should be stirred continuously to avoid precipitation of
-    elemental sulfur. The final solution should be clear and is yellow in
-    colour.
+  description: Appearance of a yellow colour indicates the drop of pH to about 8.
+    The solution should be stirred continuously to avoid precipitation of elemental
+    sulfur. The final solution should be clear and is yellow in colour.
 applications:
 - Microbial cultivation
 curation_history:
@@ -315,15 +313,28 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.267972+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CHLOROFLEXUS AGGREGANS MEDIUM" to
-    "chloroflexus_aggregans_medium" for consistent matching
+  notes: Normalized name from "CHLOROFLEXUS AGGREGANS MEDIUM" to "chloroflexus_aggregans_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:53.309202+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 23 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.624396+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:54.473873+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/KOMODO_87_CHLOROFLEXUS_medium_modified.yaml
+  path: data/normalized_yaml/bacterial/KOMODO_87_CHLOROFLEXUS_medium_modified.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006719
   name: chloroflexus_medium_modified
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

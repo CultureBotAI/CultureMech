@@ -24,8 +24,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Tap water
   term:
@@ -34,8 +34,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 applications:
 - Microbial cultivation
@@ -59,15 +59,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:35.163048+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ANOXYBACILLUS AMYLOLYTICUS medium" to
-    "anoxybacillus_amylolyticus_medium" for consistent matching
+  notes: Normalized name from "ANOXYBACILLUS AMYLOLYTICUS medium" to "anoxybacillus_amylolyticus_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:18.445073+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/anoxybacillus_amylolyticus_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000469
   name: anoxybacillus_amylolyticus_medium
-  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and
-    concentration signature.
+  notes: Exact DSMZ/KOMODO medium-number match with matching ingredient and concentration
+    signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
 - Same source medium number and matching ingredient/concentration signature.

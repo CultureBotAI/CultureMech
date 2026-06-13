@@ -15,12 +15,12 @@ ingredients:
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
-    label: MgSO4
+    label: magnesium sulfate
   concentration:
     value: '0.12037'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4
 - preferred_term: CaCl2
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.011098'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.373301'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Glucose
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Na2HPO4
   term:
@@ -59,28 +59,28 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: NaCl
   term:
@@ -89,14 +89,14 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: The above solutions should be sterilized separately by filtration
-    (thiamine, glucose) or autoclaving.
+  description: The above solutions should be sterilized separately by filtration (thiamine,
+    glucose) or autoclaving.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.4.
@@ -118,13 +118,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.619199+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MINERAL MEDIUM M9 for E. coli JM strains" to
-    "mineral_medium_m9_for_e_coli_jm_strains" for consistent matching
+  notes: Normalized name from "MINERAL MEDIUM M9 for E. coli JM strains" to "mineral_medium_m9_for_e_coli_jm_strains"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:34.185378+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:07.897586+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_382_MINERAL_MEDIUM_M9_for_E._coli_JM_strains.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_382_MINERAL_MEDIUM_M9_for_E._coli_JM_strains.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005129
   name: mineral_medium_m9_for_e_coli_jm_strains
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 382; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 382; local ingredient
+    and concentration signatures match.

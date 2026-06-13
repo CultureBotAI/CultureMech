@@ -19,18 +19,18 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: KCl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NaHCO3
   term:
@@ -49,28 +49,28 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: KBr
   term:
     id: CHEBI:32030
-    label: KBr
+    label: potassium bromide
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
     label: KBr
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: MgCl2
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '5.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
     label: MgCl2
 - preferred_term: CaCl2
   term:
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: SrCl2
   term:
@@ -99,8 +99,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000196
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36383
     label: SrCl2
 - preferred_term: Tryptone
   concentration:
@@ -117,8 +117,8 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: Resazurin
   term:
@@ -127,8 +127,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Sulphur
   term:
@@ -137,8 +137,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000629
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17909
     label: Sulphur
 preparation_steps:
 - step_number: 1
@@ -146,9 +146,9 @@ preparation_steps:
   description: pH 7.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium anaerobically under N2. Steam the medium for 3
-    hours (in a boiling water bath) on three successive days. Alternatively,
-    sterilize in an autoclave at 110°C for 20 minutes.
+  description: Prepare the medium anaerobically under N2. Steam the medium for 3 hours
+    (in a boiling water bath) on three successive days. Alternatively, sterilize in
+    an autoclave at 110°C for 20 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -167,13 +167,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.054411+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOCOCCUS WAIOTAPUENSE MEDIUM" to
-    "thermococcus_waiotapuense_medium" for consistent matching
+  notes: Normalized name from "THERMOCOCCUS WAIOTAPUENSE MEDIUM" to "thermococcus_waiotapuense_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:49.971328+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:12.938538+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_934_THERMOCOCCUS_WAIOTAPUENSE_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_934_THERMOCOCCUS_WAIOTAPUENSE_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006854
   name: thermococcus_waiotapuense_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

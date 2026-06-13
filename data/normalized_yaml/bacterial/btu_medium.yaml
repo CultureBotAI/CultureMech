@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
     label: Na-formiate
 - preferred_term: Na-fumarate
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
     label: Na-fumarate
 - preferred_term: Ground beef
   concentration:
@@ -44,8 +44,8 @@ ingredients:
     value: '26.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 25.0, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Casitone
   concentration:
@@ -58,12 +58,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '4.87805'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Resazurin
   term:
@@ -72,8 +72,8 @@ ingredients:
   concentration:
     value: '0.00097561'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: L-Cysteine HCl
   term:
@@ -93,8 +93,8 @@ ingredients:
     value: '14.6341'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Haemin
   term:
@@ -103,8 +103,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: Vitamin K3
   concentration:
@@ -121,8 +121,8 @@ ingredients:
     value: '959.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 9.5, 950.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 - preferred_term: Vitamin K1
   term:
@@ -131,48 +131,47 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Add 30 µl Formiate/Fumarate Solution per ml of medium 78 before
-    inoculation.
+  description: Add 30 µl Formiate/Fumarate Solution per ml of medium 78 before inoculation.
 - step_number: 2
   action: FILTER_STERILIZE
   description: Filter sterilize.
 - step_number: 3
   action: AUTOCLAVE
-  description: To make medium anoxic bring it to a boil, cool under 100% N2 gas
-    atmosphere, add 0.5 g/l L-cysteine hydrochloride and adjust pH to 7.0.
-    Dispense under 100% N2 gas atmosphere by filling 7 ml medium into anoxic
-    Hungate-type tubes (for strains demanding meat particles put those first
-    into the tube (use 1 part meat particles to 4 or 5 parts fluid)). Autoclave
-    at 121°C for 30 min. For agar slants use 15.0 g agar per 1000.0 ml medium.
+  description: To make medium anoxic bring it to a boil, cool under 100% N2 gas atmosphere,
+    add 0.5 g/l L-cysteine hydrochloride and adjust pH to 7.0. Dispense under 100%
+    N2 gas atmosphere by filling 7 ml medium into anoxic Hungate-type tubes (for strains
+    demanding meat particles put those first into the tube (use 1 part meat particles
+    to 4 or 5 parts fluid)). Autoclave at 121°C for 30 min. For agar slants use 15.0
+    g agar per 1000.0 ml medium.
 - step_number: 4
   action: MIX
   description: 'In some cases (as indicated in the catalogue) the addition of Haemin
     and Vitamin K1 or Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:'
 - step_number: 5
   action: FILTER_STERILIZE
-  description: "Use lean beef or horse meat. Remove fat and connective tissue before
-    grinding. Mix\r\nmeat, water and NaOH, then boil for 15 min with stirring. Cool
-    to room temperature,\r\nskim fat off surface, and filter, retaining both meat
-    particles and filtrate. To the filtrate\r\nadd water to a final volume of 1000
-    ml, and then add:"
+  description: "Use lean beef or horse meat. Remove fat and connective tissue before\
+    \ grinding. Mix\r\nmeat, water and NaOH, then boil for 15 min with stirring. Cool\
+    \ to room temperature,\r\nskim fat off surface, and filter, retaining both meat\
+    \ particles and filtrate. To the filtrate\r\nadd water to a final volume of 1000\
+    \ ml, and then add:"
 - step_number: 6
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with
-    distilled water and filter sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
 - step_number: 7
   action: FILTER_STERILIZE
-  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05
-    mg/ml in water and filter sterilize. Store refrigerated in a brown bottle.
+  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
+    in water and filter sterilize. Store refrigerated in a brown bottle.
 - step_number: 8
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter
-    sterilize. Store refrigerated in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -195,12 +194,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:17.022364+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BTU MEDIUM" to "btu_medium" for consistent
-    matching
+  notes: Normalized name from "BTU MEDIUM" to "btu_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:51.793904+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:54.014489+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_413_BTU_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005240
   name: btu_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 413; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 413; local ingredient
+    and concentration signatures match.

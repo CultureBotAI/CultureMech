@@ -23,12 +23,12 @@ ingredients:
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Agar
   term:
@@ -38,8 +38,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if required)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: NaCl
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '24.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '6.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '4.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '1.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NaHCO3
   term:
@@ -98,8 +98,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 preparation_steps:
 - step_number: 1
@@ -110,8 +110,8 @@ preparation_steps:
   description: If natural sea water is used, the pH need not be adjusted.
 - step_number: 3
   action: AUTOCLAVE
-  description: To prevent precipitation, CaCl2 and NaHCO3 are autoclaved each as
-    separate stock solutions in 10 ml distilled water.
+  description: To prevent precipitation, CaCl2 and NaHCO3 are autoclaved each as separate
+    stock solutions in 10 ml distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -130,12 +130,21 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.935728+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SP2 MEDIUM" to "sp2_medium" for consistent
-    matching
+  notes: Normalized name from "SP2 MEDIUM" to "sp2_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:46.113115+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:11.570887+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_405_SP2_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005225
   name: sp2_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 405; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 405; local ingredient
+    and concentration signatures match.

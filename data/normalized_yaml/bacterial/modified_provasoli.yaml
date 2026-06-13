@@ -32,8 +32,8 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Thiamine
   term:
@@ -52,8 +52,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Agar
   term:
@@ -63,8 +63,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
@@ -73,8 +73,8 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000429
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76181
     label: Fe(NH4)2(SO4)2 x 6 H2O
 - preferred_term: Na2-EDTA
   term:
@@ -84,18 +84,18 @@ ingredients:
     value: '1.6'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.6, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '1.12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: MnSO4 x 4 H2O
   term:
@@ -104,8 +104,8 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000711
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
     label: MnSO4 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -114,8 +114,8 @@ ingredients:
   concentration:
     value: '0.022'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -124,8 +124,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000158
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
     label: CoSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
@@ -181,3 +181,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified Provasoli" to "modified_provasoli" for consistent
     matching
+- timestamp: '2026-06-05T07:41:37.632990+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:08.912184+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

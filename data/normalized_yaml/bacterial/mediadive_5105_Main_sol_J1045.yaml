@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:19
     label: Bacto peptone
-  chebi_term:
-    id: CHEBI:36218
-    label: beta-lactose
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: NaCl
   concentration:
     value: '4.98008'
@@ -63,7 +58,7 @@ composition:
     id: CHEBI:17234
     label: D-glucose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.996016'
@@ -84,10 +79,10 @@ composition:
     id: mediadive.compound:770
     label: L-Cysteine HCl x H2O
   chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sodium pyrophosphate
   concentration:
     value: '0.249004'
@@ -109,9 +104,9 @@ composition:
     label: L-Arginine
   chebi_term:
     id: CHEBI:16467
-    label: L-arginine
+    label: L-Arginine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Hemin
   concentration:
     value: '0.00996016'
@@ -132,10 +127,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Dithiothreitol
   concentration:
     value: '3.9840637450199203'
@@ -147,7 +142,7 @@ composition:
     id: CHEBI:18320
     label: 1,4-dithiothreitol
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 preparation_notes: "Mix components, adjust pH 7.2 and autoclave. Cool medium under\
   \ a N2-CO2 (4:1, v/v) gas stream and add anaerobically the following solution (filter-sterilized).\
   \ \nAseptically and anaerobically distribute the medium into culture vessels under\
@@ -176,6 +171,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:36.056701+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:49:02.584866+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:23.704871+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -21,12 +21,12 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001049
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2682
     label: amphotericin  B
   term:
     id: CHEBI:2682
-    label: ''
+    label: amphotericin B
 - preferred_term: Eagle's  minimum  essential  medium  (MEM) (Nissui  Co.,  Tokyo)
   concentration:
     value: '1'
@@ -40,9 +40,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001085
-    label: penicillin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17334
+    label: Penicillin
 media_term:
   preferred_term: TOGO Medium M2847
   term:
@@ -83,3 +83,13 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:59.273228+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:56.608131+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

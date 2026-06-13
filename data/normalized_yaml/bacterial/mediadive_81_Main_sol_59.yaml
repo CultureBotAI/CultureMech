@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:21
     label: Casein peptone
-  chebi_term:
-    id: CHEBI:22652
-    label: ascorbic acid
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '4.99501'
@@ -23,11 +18,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Glucose
   concentration:
     value: '9.99001'
@@ -39,7 +29,7 @@ composition:
     id: CHEBI:17234
     label: D-glucose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: Fructose
   concentration:
     value: '4.99501'
@@ -51,7 +41,7 @@ composition:
     id: CHEBI:15824
     label: D-fructose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.1998'
@@ -60,10 +50,10 @@ composition:
     id: mediadive.compound:8
     label: MgSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.04995'
@@ -72,10 +62,10 @@ composition:
     id: mediadive.compound:14
     label: MnSO4 x H2O
   chebi_term:
-    id: CHEBI:31604
-    label: ferric ammonium citrate
+    id: CHEBI:86364
+    label: MnSO4 x H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: (NH4) citrate
   concentration:
     value: '3.4965'
@@ -84,10 +74,10 @@ composition:
     id: mediadive.compound:104
     label: (NH4) citrate
   chebi_term:
-    id: CHEBI:16947
-    label: citrate
+    id: CHEBI:63037
+    label: triammonium citrate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Tween 80
   concentration:
     value: '0.999000999000999'
@@ -107,11 +97,6 @@ composition:
   term:
     id: mediadive.compound:105
     label: Tomato juice
-  chebi_term:
-    id: CHEBI:53426
-    label: tween 80
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '0.499501'
@@ -120,10 +105,10 @@ composition:
     id: mediadive.compound:770
     label: L-Cysteine HCl x H2O
   chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '899.1008991008991'
@@ -132,10 +117,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 4.8.
 
 
@@ -163,6 +148,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:42.833626+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:50:10.893743+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:30.495056+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '4 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

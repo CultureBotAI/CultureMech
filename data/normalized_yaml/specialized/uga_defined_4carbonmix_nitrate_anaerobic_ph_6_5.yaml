@@ -136,7 +136,7 @@ ingredients:
     value: '0.1'
     unit: MG_PER_L
   term:
-    id: CHEBI:33134
+    id: CHEBI:33118
     label: boric acid
   notes: 'CAS: 10043-35-3; MW: 61.83; From ATCC Wolfe''s mineral mix'
 - preferred_term: Sodium Molybdate Dihydrate
@@ -189,8 +189,8 @@ ingredients:
     value: '100.0'
     unit: MICROG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
     From ATCC Wolfe''s vitamin mix'
 - preferred_term: Riboflavin
@@ -313,8 +313,8 @@ ingredients:
     value: '45.8'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:37583
-    label: trisodium phosphate
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Sodium phosphate monobasic
   concentration:
@@ -323,7 +323,7 @@ ingredients:
   notes: 'CAS: 558-80-7; MW: 119.98'
   term:
     id: CHEBI:37585
-    label: ''
+    label: sodium dihydrogenphosphate
 description: Defined minimal media for 4CarbonMix Nitrate reducing for pH 6.5
 notes: 'Source: FEBA media definitions'
 category: specialized
@@ -344,5 +344,17 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1; concentration.unit aliases=10
+- timestamp: '2026-06-08T23:19:54.351776+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-09T01:42:27.340692+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 data_quality_flags:
 - has_unmapped_ingredients

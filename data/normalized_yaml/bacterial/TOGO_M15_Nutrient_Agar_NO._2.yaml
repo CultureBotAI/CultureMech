@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -37,9 +37,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Beef extract
   concentration:
     value: '10'
@@ -81,12 +81,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:12.534571+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Nutrient Agar NO. 2" to "nutrient_agar_no_2" for
-    consistent matching
+  notes: Normalized name from "Nutrient Agar NO. 2" to "nutrient_agar_no_2" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:33.526002+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/TOGO_M16_1_10_Nutrient_Agar_NO._2.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:008261
   name: 1_10_nutrient_agar_no_2
-  notes: NaCl decreases from 5 g/L to 0.5 g/L, beef extract from 10 g/L to 1
-    g/L, and peptone from 10 g/L to 1 g/L; agar remains 15 g/L.
+  notes: NaCl decreases from 5 g/L to 0.5 g/L, beef extract from 10 g/L to 1 g/L,
+    and peptone from 10 g/L to 1 g/L; agar remains 15 g/L.

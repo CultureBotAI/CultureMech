@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.249004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
   notes: Copied from referenced JCM Medium 363
 - preferred_term: Cellobiose
@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '0.249004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001069
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
     label: Cellobiose
   notes: Copied from referenced JCM Medium 363
 - preferred_term: Maltose
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '0.249004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
   notes: Copied from referenced JCM Medium 363
 - preferred_term: Starch
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '0.249004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
   notes: Copied from referenced JCM Medium 363
 - preferred_term: Sodium resazurin
@@ -77,12 +77,12 @@ ingredients:
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
   notes: Copied from referenced JCM Medium 363
 - preferred_term: L-Cysteine HCl x H2O
@@ -92,8 +92,8 @@ ingredients:
   concentration:
     value: '0.298805'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
   notes: Copied from referenced JCM Medium 363
 - preferred_term: Agar
@@ -103,8 +103,8 @@ ingredients:
   concentration:
     value: '14.9402'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
   notes: Copied from referenced JCM Medium 363
 preparation_steps:
@@ -142,5 +142,15 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:37.641010+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:08.915744+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 data_quality_flags:
 - resolved_reference

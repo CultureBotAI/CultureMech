@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:1861
     label: Acetate
   chebi_term:
-    id: CHEBI:16411
-    label: acetic acid
+    id: CHEBI:30089
+    label: Acetate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Thiosulfate
   concentration:
     value: '1'
@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:1862
     label: Thiosulfate
   chebi_term:
-    id: CHEBI:16094
-    label: thiosulfate
+    id: CHEBI:26977
+    label: Thiosulfate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: Supplement medium 28 with 2 mmol acetate and 1 mmol thiosulfate.
 curation_history:
 - timestamp: '2026-03-13T06:20:41.348179Z'
@@ -52,6 +52,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:42.966534+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

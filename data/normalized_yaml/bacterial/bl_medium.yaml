@@ -12,8 +12,8 @@ ingredients:
   concentration:
     value: '9.5'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: L-Valine
   term:
@@ -23,8 +23,8 @@ ingredients:
     value: '2.6'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:val-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000304
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16414
     label: L-Valine
 - preferred_term: L-Methionine
   term:
@@ -34,8 +34,8 @@ ingredients:
     value: '0.5'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: L-Leucine
   term:
@@ -45,8 +45,8 @@ ingredients:
     value: '1.5'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
     label: L-Leucine
 - preferred_term: L-Histidine
   term:
@@ -56,8 +56,8 @@ ingredients:
     value: '0.3'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:his-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000272
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15971
     label: L-Histidine
 - preferred_term: L-Glutamine
   term:
@@ -67,8 +67,8 @@ ingredients:
     value: '0.7'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gln-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000220
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18050
     label: L-Glutamine
 - preferred_term: L-Glutamate
   concentration:
@@ -86,8 +86,8 @@ ingredients:
     value: '0.002'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pnto-R'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000356
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16454
     label: Pantothenate
 - preferred_term: Boric acid
   term:
@@ -96,8 +96,8 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Riboflavin
   term:
@@ -107,8 +107,8 @@ ingredients:
     value: '0.0026'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Thiamine HCl
   term:
@@ -117,8 +117,8 @@ ingredients:
   concentration:
     value: '0.003'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Nicotinamide
   term:
@@ -128,8 +128,8 @@ ingredients:
     value: '0.008'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ncam'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000539
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17154
     label: Nicotinamide
 - preferred_term: L-Asparagine
   term:
@@ -139,8 +139,8 @@ ingredients:
     value: '0.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asn-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: L-Isoleucine
   term:
@@ -150,8 +150,8 @@ ingredients:
     value: '0.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000294
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17191
     label: L-Isoleucine
 - preferred_term: Potassium sulfate
   concentration:
@@ -188,8 +188,8 @@ ingredients:
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: Glucose
   term:
@@ -198,8 +198,8 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: MOPS
   term:
@@ -208,8 +208,8 @@ ingredients:
   concentration:
     value: '190.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000285
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39074
     label: MOPS
 - preferred_term: Tricine
   concentration:
@@ -232,9 +232,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01'
@@ -249,9 +249,9 @@ ingredients:
   concentration:
     value: '50.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Cupric sulfate
   concentration:
     value: 1e-05
@@ -266,9 +266,9 @@ ingredients:
   concentration:
     value: 1e-05
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Folate
   concentration:
     value: '0.0023'
@@ -285,8 +285,8 @@ ingredients:
     value: '0.0004'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Manganese chloride
   concentration:
@@ -305,15 +305,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified
-    concentrations
+  description: Dissolve all ingredients in distilled water to specified concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
-    components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
 - timestamp: '2026-01-27T07:21:46.266337Z'
   curator: mediadb-import
@@ -336,6 +334,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BL Medium" to "bl_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:51.029730+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 20 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 401
   term:
@@ -352,5 +356,5 @@ variant_children:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007305
   name: bl_medium_low_mops
-  notes: MOPS decreased from 190 mM to 40 mM while the MediaDB BL medium
-    formulation remains unchanged.
+  notes: MOPS decreased from 190 mM to 40 mM while the MediaDB BL medium formulation
+    remains unchanged.

@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Glucose
   concentration:
     value: '1'
@@ -43,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: NaHSO3
   concentration:
     value: '0.1'
@@ -54,8 +54,8 @@ ingredients:
   term:
     id: CHEBI:26709
     label: NaHSO3
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000838
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26709
     label: NaHSO3
 - preferred_term: Pancreatic digest of casein
   concentration:
@@ -82,31 +82,30 @@ applications:
 references:
 - reference: PMID:10609610
   year: 1999
-  notes: Primary literature source reporting Helicobacter pylori OMU89-362
-    growth in Brucella broth supplemented with fetal bovine serum and hydrogen
-    peroxide.
+  notes: Primary literature source reporting Helicobacter pylori OMU89-362 growth
+    in Brucella broth supplemented with fetal bovine serum and hydrogen peroxide.
 variants:
 - name: brucella_broth_fbs_h2o2_helicobacter_pylori
-  description: Brucella broth condition used for Helicobacter pylori liquid
-    growth, with fetal bovine serum supplementation and hydrogen-peroxide
-    detoxification of the bisulfite-containing parent broth.
+  description: Brucella broth condition used for Helicobacter pylori liquid growth,
+    with fetal bovine serum supplementation and hydrogen-peroxide detoxification of
+    the bisulfite-containing parent broth.
   modifications:
   - Supplement Brucella broth with 10% fetal bovine serum.
-  - Add hydrogen peroxide at sublethal concentrations, with maximum growth
-    stimulation reported at 3.5 mM H2O2.
-  - Incubate microaerobically at 37 C with shaking; source measured OD620 and
-    viable CFU after 24 h.
-  purpose: Capture strain-specific Helicobacter pylori growth evidence under
-    the shared Brucella broth parent while modeling serum and H2O2 as
-    study-specific variant conditions.
+  - Add hydrogen peroxide at sublethal concentrations, with maximum growth stimulation
+    reported at 3.5 mM H2O2.
+  - Incubate microaerobically at 37 C with shaking; source measured OD620 and viable
+    CFU after 24 h.
+  purpose: Capture strain-specific Helicobacter pylori growth evidence under the shared
+    Brucella broth parent while modeling serum and H2O2 as study-specific variant
+    conditions.
   evidence:
   - reference: PMID:10609610
     supports: SUPPORT
-    snippet: enhanced the growth of Helicobacter pylori in Brucella broth
-      supplemented with 10% fetal bovine serum (BB/FBS)
-    explanation: The source uses the same Brucella broth basal formulation,
-      supplemented with fetal bovine serum and hydrogen peroxide, to measure
-      Helicobacter pylori OMU89-362 growth.
+    snippet: enhanced the growth of Helicobacter pylori in Brucella broth supplemented
+      with 10% fetal bovine serum (BB/FBS)
+    explanation: The source uses the same Brucella broth basal formulation, supplemented
+      with fetal bovine serum and hydrogen peroxide, to measure Helicobacter pylori
+      OMU89-362 growth.
 curation_history:
 - timestamp: '2026-01-27T06:35:55.259218Z'
   curator: togo-import
@@ -132,8 +131,14 @@ curation_history:
 - timestamp: '2026-05-05T00:00:00+00:00'
   curator: literature_review_manual
   action: ADDED_GROWTH_EVIDENCE
-  notes: Added Helicobacter pylori OMU89-362 Brucella broth growth evidence
-    and FBS/H2O2 variant from PMID:10609610.
+  notes: Added Helicobacter pylori OMU89-362 Brucella broth growth evidence and FBS/H2O2
+    variant from PMID:10609610.
+- timestamp: '2026-06-05T07:40:42.331227+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 target_organisms:
 - preferred_term: Helicobacter pylori
   term:
@@ -144,25 +149,24 @@ target_organisms:
   - max_od600: 0.724
     max_od_wavelength_nm: 620
     temperature_celsius: 37
-    measurement_conditions: Bisulfite-less Brucella broth supplemented with
-      10% fetal bovine serum, pretreated with 3.5 mM H2O2 and catalase; source
-      compared this condition with standard bisulfite-containing Brucella broth
-      and H2O2-supplemented Brucella broth.
+    measurement_conditions: Bisulfite-less Brucella broth supplemented with 10% fetal
+      bovine serum, pretreated with 3.5 mM H2O2 and catalase; source compared this
+      condition with standard bisulfite-containing Brucella broth and H2O2-supplemented
+      Brucella broth.
     evidence:
     - reference: PMID:10609610
       supports: SUPPORT
       snippet: bacteria grew to a similar extent in bisulfite-less Brucella broth
         (BLBB0)/FBS compared to the bacterial growth in BHIB/FBS
-      explanation: The source abstract supports growth in the
-        Brucella-broth-derived variant; manual full-text review provides the
-        OD620 value and identifies Helicobacter pylori OMU89-362 as the
-        primary strain in the experiment.
+      explanation: The source abstract supports growth in the Brucella-broth-derived
+        variant; manual full-text review provides the OD620 value and identifies Helicobacter
+        pylori OMU89-362 as the primary strain in the experiment.
     is_max_attainment: true
   evidence:
   - reference: PMID:10609610
     supports: SUPPORT
-    snippet: The enhancement was evident at 0.1 mM HPOx and reached a maximun at
-      3.5 mM.
-    explanation: The source names Helicobacter pylori OMU89-362 and directly
-      reports enhanced growth in Brucella broth supplemented with fetal bovine
-      serum and hydrogen peroxide.
+    snippet: The enhancement was evident at 0.1 mM HPOx and reached a maximun at 3.5
+      mM.
+    explanation: The source names Helicobacter pylori OMU89-362 and directly reports
+      enhanced growth in Brucella broth supplemented with fetal bovine serum and hydrogen
+      peroxide.

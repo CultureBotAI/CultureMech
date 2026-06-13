@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: '18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: NaClO3
   concentration:
@@ -32,8 +32,8 @@ ingredients:
   term:
     id: CHEBI:65242
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000497
+  mediaingredientmech_chebi_term:
+    id: CHEBI:65242
     label: NaClO3
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 6 H2O
   term:
@@ -52,8 +52,8 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000327
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91243
     label: CaCl2 x 6 H2O
 - preferred_term: Na2HPO4
   term:
@@ -62,18 +62,18 @@ ingredients:
   concentration:
     value: '28.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '27.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 preparation_steps:
 - step_number: 1
@@ -102,3 +102,13 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PPG" to "ppg" for consistent matching
+- timestamp: '2026-06-05T07:41:42.417834+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:10.365203+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

@@ -25,12 +25,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Agar
   term:
@@ -69,15 +69,15 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2. Autoclave and dispense into slopes. When the
-    agar has solidified, place a strip of sterile filter paper onto the surface
-    of each slope. Inoculate onto the filter paper.
+  description: Adjust pH to 7.2. Autoclave and dispense into slopes. When the agar
+    has solidified, place a strip of sterile filter paper onto the surface of each
+    slope. Inoculate onto the filter paper.
 applications:
 - Microbial cultivation
 curation_history:
@@ -96,17 +96,27 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.084131+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DUBOS SALTS MEDIUM" to "dubos_salts_medium" for
-    consistent matching
+  notes: Normalized name from "DUBOS SALTS MEDIUM" to "dubos_salts_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:16.721039+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.794789+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 parent_media:
   path: data/normalized_yaml/bacterial/dubos_salts_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000601
   name: dubos_salts_medium
-  notes: Both records are MediaDive Dubos Salts Medium solid agar formulations
-    with identical parsed concentrations; model as a source duplicate under the
-    existing canonical Dubos Salts parent.
+  notes: Both records are MediaDive Dubos Salts Medium solid agar formulations with
+    identical parsed concentrations; model as a source duplicate under the existing
+    canonical Dubos Salts parent.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same Dubos Salts Medium ingredient and concentration signature; pH 7.2 and
-  solid agar state match.
+- Same Dubos Salts Medium ingredient and concentration signature; pH 7.2 and solid
+  agar state match.

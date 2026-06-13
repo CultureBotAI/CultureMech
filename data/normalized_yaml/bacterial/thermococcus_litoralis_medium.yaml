@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '19.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -37,18 +37,18 @@ ingredients:
   concentration:
     value: '12.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '3.42'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '2.38'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
@@ -67,28 +67,28 @@ ingredients:
   concentration:
     value: '0.55'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '0.61'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: KBr
   term:
     id: CHEBI:32030
-    label: KBr
+    label: potassium bromide
   concentration:
     value: '0.08'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
     label: KBr
 - preferred_term: SrCl2 x 6 H2O
   term:
@@ -97,8 +97,8 @@ ingredients:
   concentration:
     value: '0.057'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000463
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
     label: SrCl2 x 6 H2O
 - preferred_term: Boric acid
   term:
@@ -107,8 +107,8 @@ ingredients:
   concentration:
     value: '0.022'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Na-meta silicate
   concentration:
@@ -117,17 +117,17 @@ ingredients:
 - preferred_term: NaF
   term:
     id: CHEBI:28741
-    label: NaF
+    label: sodium fluoride
   concentration:
     value: '0.0024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000182
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
     label: NaF
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
-    label: KNO3
+    id: CHEBI:63043
+    label: potassium nitrate
   concentration:
     value: '0.0016'
     unit: G_PER_L
@@ -141,8 +141,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: Sulfur
   term:
@@ -151,8 +151,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000927
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
     label: Sulfur
 - preferred_term: Resazurin
   term:
@@ -161,16 +161,16 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare the medium under 100% N2 and adjust final pH to 6.5. The
-    medium, containing sulphur, is sterilized by steaming on three consecutive
-    days for 3 h. Reduce the medium with a sterile Na2S stock solution to give a
-    final concentration of 0.5 g/l.
+  description: Prepare the medium under 100% N2 and adjust final pH to 6.5. The medium,
+    containing sulphur, is sterilized by steaming on three consecutive days for 3
+    h. Reduce the medium with a sterile Na2S stock solution to give a final concentration
+    of 0.5 g/l.
 applications:
 - Microbial cultivation
 curation_history:
@@ -189,13 +189,26 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.233346+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOCOCCUS LITORALIS MEDIUM" to
-    "thermococcus_litoralis_medium" for consistent matching
+  notes: Normalized name from "THERMOCOCCUS LITORALIS MEDIUM" to "thermococcus_litoralis_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:49.903272+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:36.021611+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:12.911418+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_623_THERMOCOCCUS_LITORALIS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_623_THERMOCOCCUS_LITORALIS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006129
   name: thermococcus_litoralis_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
     label: Na glutamate
 - preferred_term: Sodium succinate
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
     label: Sodium succinate
 - preferred_term: Sodium acetate
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 - preferred_term: Yeast extract
   concentration:
@@ -50,21 +50,15 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: Sodium thiosulphate
   term:
@@ -73,8 +67,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000669
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132112
     label: Sodium thiosulphate
 - preferred_term: Na3-EDTA
   term:
@@ -84,8 +78,8 @@ ingredients:
     value: '6.53'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 4.53, 2.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000377
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63125
     label: Na3-EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -94,8 +88,8 @@ ingredients:
   concentration:
     value: '1.11'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -104,8 +98,8 @@ ingredients:
   concentration:
     value: '24.65'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -114,8 +108,8 @@ ingredients:
   concentration:
     value: '2.94'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NaCl
   term:
@@ -124,8 +118,8 @@ ingredients:
   concentration:
     value: '23.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MnSO4 x 4 H2O
   term:
@@ -134,8 +128,8 @@ ingredients:
   concentration:
     value: '0.112'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000711
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
     label: MnSO4 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -144,8 +138,8 @@ ingredients:
   concentration:
     value: '0.029'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
@@ -154,8 +148,8 @@ ingredients:
   concentration:
     value: '0.029'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000525
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -164,45 +158,48 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: Na2Mo4 x 2 H2O
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000120
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2Mo4 x 2 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.031'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '78'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Nicotinic acid
   term:
@@ -211,8 +208,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Thiamine
   term:
@@ -231,8 +228,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -241,8 +238,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: Vitamin B12
   term:
@@ -251,8 +248,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Calcium pantothenate
   term:
@@ -261,8 +258,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -271,8 +268,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Folic acid
   term:
@@ -281,8 +278,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 preparation_steps:
 - step_number: 1
@@ -290,8 +287,7 @@ preparation_steps:
   description: Final pH 7.5
 - step_number: 2
   action: AUTOCLAVE
-  description: Add the vitamin solution, aseptically to the cooled, autoclaved
-    medium.
+  description: Add the vitamin solution, aseptically to the cooled, autoclaved medium.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter sterilize.
@@ -321,14 +317,29 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.994164+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PORPHYROBACTER TEPIDARIUS MEDIUM" to
-    "porphyrobacter_tepidarius_medium" for consistent matching
+  notes: Normalized name from "PORPHYROBACTER TEPIDARIUS MEDIUM" to "porphyrobacter_tepidarius_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:42.356175+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 26 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:49.798222+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:10.354575+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 high_metal: true
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_791_PORPHYROBACTER_TEPIDARIUS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_791_PORPHYROBACTER_TEPIDARIUS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006498
   name: porphyrobacter_tepidarius_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

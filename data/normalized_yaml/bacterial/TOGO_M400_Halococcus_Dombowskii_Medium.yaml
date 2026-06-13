@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.2'
@@ -61,9 +61,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: sea salts (Sigma)
   concentration:
     value: '10'
@@ -77,9 +77,9 @@ ingredients:
   term:
     id: CHEBI:9754
     label: tris
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
-    label: Tris base
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
+    label: tris
 - preferred_term: Casamino acids (BD-Difco)
   concentration:
     value: '5'
@@ -119,4 +119,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Halococcus Dombowskii Medium" to "halococcus_dombowskii_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:41.086633+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true

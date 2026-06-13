@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -52,9 +52,9 @@ ingredients:
   term:
     id: CHEBI:16236
     label: ethanol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
-    label: Ethanol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
+    label: ethanol
 - preferred_term: Naphthalene
   concentration:
     value: '50'
@@ -64,8 +64,8 @@ ingredients:
   term:
     id: CHEBI:16482
     label: Naphthalene
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000762
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16482
     label: Naphthalene
 media_term:
   preferred_term: TOGO Medium M1847
@@ -113,6 +113,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:10.921937+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: Naphthalene solution (10,000 ppm)*
   composition: []

@@ -26,9 +26,9 @@ ingredients:
   concentration:
     value: '8.5557'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.045'
@@ -43,8 +43,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -53,8 +53,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Sodium Succinate
   term:
@@ -63,9 +63,9 @@ ingredients:
   concentration:
     value: '16.658'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
-    label: Sodium Succinate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
+    label: Sodium succinate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -95,6 +95,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M9 0.45% succinate" to "m9_0_45_succinate" for consistent
     matching
+- timestamp: '2026-06-05T07:41:11.934118+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 192
   term:

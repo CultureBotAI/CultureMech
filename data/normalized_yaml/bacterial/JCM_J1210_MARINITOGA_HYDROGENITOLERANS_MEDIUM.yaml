@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '3.86847'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000269
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39010
     label: MES
 - preferred_term: Yeast extract
   concentration:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '0.000483559'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Glucose
   term:
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '14'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Na2S x 9 H2O
   term:
@@ -61,8 +61,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -71,8 +71,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 preparation_steps:
 - step_number: 1
@@ -101,3 +101,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINITOGA HYDROGENITOLERANS MEDIUM" to "marinitoga_hydrogenitolerans_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:16.629699+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

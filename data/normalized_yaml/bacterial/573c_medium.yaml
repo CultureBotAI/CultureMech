@@ -20,28 +20,28 @@ ingredients:
     value: '2.49252'
     unit: G_PER_L
   notes: ' ( sodium salt)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000952
+  mediaingredientmech_chebi_term:
+    id: CHEBI:85146
     label: Carboxymethyl cellulose
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '1.29611'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.368893'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Glucose
   term:
@@ -50,8 +50,8 @@ ingredients:
   concentration:
     value: '0.997009'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -88,15 +88,15 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 4.8 - 5.0. Separately autoclave MgSO4 x 7H2O
-    solution, CaCl2 x 2H2O solution and FeCl3 x 6H2O solution. Aseptically add
-    all solutions to the medium.
+  description: Adjust pH to 4.8 - 5.0. Separately autoclave MgSO4 x 7H2O solution,
+    CaCl2 x 2H2O solution and FeCl3 x 6H2O solution. Aseptically add all solutions
+    to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -115,15 +115,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:24.298900+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "573C MEDIUM" to "573c_medium" for consistent
-    matching
+  notes: Normalized name from "573C MEDIUM" to "573c_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:15.853616+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.564011+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
+- path: data/normalized_yaml/bacterial/alicyclobacillus_cellulosilyticus_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:001166
   name: alicyclobacillus_cellulosilyticus_medium
-  notes: Reviewed 573C/Alicyclobacillus cellulosilyticus pair; child keeps the
-    cellulose, ammonium sulfate, phosphate, glucose, yeast extract, and tryptone
-    levels effectively unchanged but lowers MgSO4, CaCl2, and FeCl3
-    concentrations.
+  notes: Reviewed 573C/Alicyclobacillus cellulosilyticus pair; child keeps the cellulose,
+    ammonium sulfate, phosphate, glucose, yeast extract, and tryptone levels effectively
+    unchanged but lowers MgSO4, CaCl2, and FeCl3 concentrations.

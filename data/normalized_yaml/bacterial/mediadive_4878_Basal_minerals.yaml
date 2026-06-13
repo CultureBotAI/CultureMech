@@ -59,11 +59,6 @@ composition:
   term:
     id: mediadive.compound:1784
     label: Trace vitamins (see Medium No. 197)
-  chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: NH4Cl
   concentration:
     value: '18.51851851851852'
@@ -83,11 +78,6 @@ composition:
   term:
     id: mediadive.compound:1921
     label: Selenite-tungstate solution (see Medium No. 431)
-  chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: MgSO4
   concentration:
     value: '18.51851851851852'
@@ -107,11 +97,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Sodium butyrate
   concentration:
     value: '370.3703703703704'
@@ -135,7 +120,7 @@ composition:
     id: CHEBI:32954
     label: sodium acetate
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: "Add components to distilled water and bring volume to 1.0 L. Autoclave\
   \ and let it stand for three days. Decant the clear solution into another empty\
   \ sterile bottle. Then, aseptically add per liter the following solutions (autoclaved\
@@ -165,6 +150,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:34.642392+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:56:22.283425+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '3 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

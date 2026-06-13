@@ -13,8 +13,8 @@ ingredients:
     value: '123.21'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Biotin
   term:
@@ -24,8 +24,8 @@ ingredients:
     value: '4.5429e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Thiamine
   term:
@@ -46,9 +46,9 @@ ingredients:
     value: '0.00809302'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: 1-Butanol
   concentration:
     value: '147.695'
@@ -67,9 +67,9 @@ ingredients:
   concentration:
     value: '0.189918'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '4.07785'
@@ -84,8 +84,8 @@ ingredients:
   concentration:
     value: '0.900619'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -94,9 +94,9 @@ ingredients:
   concentration:
     value: '0.0656655'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0399165'
@@ -111,21 +111,19 @@ ingredients:
   concentration:
     value: '31.6775'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000701
-    label: Ammonium Acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62947
+    label: Ammonium acetate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified
-    concentrations
+  description: Dissolve all ingredients in distilled water to specified concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
-    components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
 - timestamp: '2026-01-27T07:21:43.421560Z'
   curator: mediadb-import
@@ -143,8 +141,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:07.454251+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "P2, 1.5% butanol challenge" to
-    "p2_1_5_butanol_challenge" for consistent matching
+  notes: Normalized name from "P2, 1.5% butanol challenge" to "p2_1_5_butanol_challenge"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:40.730272+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 91
   term:
@@ -161,9 +165,9 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007438
   name: p2_1_butanol_challenge
-  notes: Reviewed MediaDB P2 butanol challenge pair; both records share the same
-    P2 formulation and differ only in butanol challenge concentration.
+  notes: Reviewed MediaDB P2 butanol challenge pair; both records share the same P2
+    formulation and differ only in butanol challenge concentration.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- 1-Butanol increased from 98.4633 mM to 147.695 mM while the P2 challenge
-  medium base remains unchanged.
+- 1-Butanol increased from 98.4633 mM to 147.695 mM while the P2 challenge medium
+  base remains unchanged.

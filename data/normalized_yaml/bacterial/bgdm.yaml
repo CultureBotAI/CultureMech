@@ -35,8 +35,8 @@ ingredients:
     value: '0.002904'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:mndn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000903
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28869
     label: Menadione
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -63,9 +63,9 @@ ingredients:
   concentration:
     value: '1.7112'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:52891
@@ -90,8 +90,8 @@ ingredients:
   concentration:
     value: '2.8401'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Hemin
   term:
@@ -100,8 +100,8 @@ ingredients:
   concentration:
     value: '0.007669'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Hemin
 preparation_steps:
 - step_number: 1
@@ -131,6 +131,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BGDM" to "bgdm" for consistent matching
+- timestamp: '2026-06-05T07:40:50.854120+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 72
   term:

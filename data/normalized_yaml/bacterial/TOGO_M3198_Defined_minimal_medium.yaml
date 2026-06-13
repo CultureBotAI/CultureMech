@@ -14,20 +14,20 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: KH2PO4
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
@@ -38,9 +38,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: NaNO3
   notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
     Inorganic compound'
@@ -50,8 +50,8 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: Na2HPO4
   notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
@@ -62,9 +62,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: Sodium Succinate
   notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
     compound'
@@ -74,9 +74,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
-    label: Sodium Succinate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
 - preferred_term: MgSO4
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
@@ -86,9 +86,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -106,9 +106,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: CoCl2
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
@@ -118,9 +118,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
 - preferred_term: FeSO4
   notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
     compound'
@@ -130,9 +130,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001045
-    label: FeSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: MnCl2
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
@@ -141,7 +141,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:63041
-    label: ''
+    label: manganese(II) chloride
 - preferred_term: ZnSO4
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
@@ -151,9 +151,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: ZnSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
 - preferred_term: (NH4)6Mo7O24
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
@@ -162,7 +162,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:91249
-    label: ''
+    label: ammonium molybdate
 - preferred_term: EDTA
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
@@ -171,9 +171,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
-    label: EDTA
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
+    label: EDTA(2-)
 media_term:
   preferred_term: TOGO Medium M3198
   term:
@@ -237,6 +237,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:40.252418+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:50.258572+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 solutions:
 - preferred_term: Vishniac and Santer trace elements solution
   composition: []

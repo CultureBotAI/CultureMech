@@ -39,12 +39,12 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Vitamin B12
   term:
@@ -53,8 +53,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Biotin
   term:
@@ -63,8 +63,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Thiamine HCl
   term:
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Fe(III)-EDTA
   term:
@@ -83,8 +83,8 @@ ingredients:
   concentration:
     value: '259'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000348
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30729
     label: Fe(III)-EDTA
 - preferred_term: Mn(II) x EDTA
   concentration:
@@ -97,8 +97,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
     label: Tris(hydroxymethyl)aminomethane
 - preferred_term: Tryptone
   term:
@@ -185,4 +185,14 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "0.01% LB SEAWATER MEDIUM" to "0_01_lb_seawater_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:15.238806+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:42.430860+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 high_metal: true

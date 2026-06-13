@@ -38,28 +38,28 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86159
     label: Ca(NO3)2 x 4 H2O
 - preferred_term: Na2-EDTA
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -98,8 +98,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -108,8 +108,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -118,18 +118,18 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -138,8 +138,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -148,8 +148,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -158,8 +158,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -168,8 +168,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: Peptone
   concentration:
@@ -187,8 +187,8 @@ ingredients:
     value: '65.0'
     unit: G_PER_L
   notes: ' (for solid medium) [Merged 4 duplicates: 15.0, 15.0, 20.0, 15.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Casein peptone
   concentration:
@@ -205,8 +205,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Pancreatic digest of casein
   term:
@@ -216,13 +216,12 @@ ingredients:
     value: '17.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Pancreatic enzymatic digest of casein providing amino acids and
-    peptides; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
-    commercial product
+  notes: Pancreatic enzymatic digest of casein providing amino acids and peptides;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: tryptone
     synonym_type: EXACT
@@ -238,13 +237,12 @@ ingredients:
     value: '3.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Peptic digest of soybean meal providing additional peptides and
-    carbohydrates; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar
-    (TSA) commercial product
+  notes: Peptic digest of soybean meal providing additional peptides and carbohydrates;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: soytone
     synonym_type: EXACT
@@ -260,12 +258,12 @@ ingredients:
     value: '2.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic
-    Soy Agar (TSA) commercial product
+  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy
+    Agar (TSA) commercial product
   synonyms:
   - synonym_text: dextrose
     synonym_type: EXACT
@@ -279,12 +277,12 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) /
-    Tryptic Soy Agar (TSA) commercial product
+  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic
+    Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -298,12 +296,12 @@ ingredients:
     value: '2.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar
-    (TSA) commercial product
+  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+    commercial product
   synonyms:
   - synonym_text: K2HPO4
     synonym_type: EXACT
@@ -319,12 +317,12 @@ ingredients:
     value: '15.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic
-    Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
+    Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -337,12 +335,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -350,8 +342,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Starch
   term:
@@ -360,28 +352,28 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Na-pyruvate
   term:
     id: CHEBI:50144
-    label: Na-pyruvate
+    label: sodium pyruvate
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Na-pyruvate
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -390,8 +382,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 applications:
 - Microbial cultivation
@@ -419,282 +411,296 @@ curation_history:
 - timestamp: '2026-03-17T19:45:50.314003+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MINERAL MEDIUM PH 7.25" to
-    "mineral_medium_ph_7_25" for consistent matching
+  notes: Normalized name from "MINERAL MEDIUM PH 7.25" to "mineral_medium_ph_7_25"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:23.656318+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 22 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:28.053866+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-06-10T07:46:44.996670+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_6813.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005570
   name: for_dsm_6813
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/for_dsm_9675_and_dsm_9685.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005572
   name: for_dsm_9675_and_dsm_9685
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_10063.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005521
   name: medium_465_modified_for_dsm_10063
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_10064.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005522
   name: medium_465_modified_for_dsm_10064
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_10065.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005523
   name: medium_465_modified_for_dsm_10065
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_10066.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005524
   name: medium_465_modified_for_dsm_10066
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_10698.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005525
   name: medium_465_modified_for_dsm_10698
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_10699.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005526
   name: medium_465_modified_for_dsm_10699
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_10700.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005527
   name: medium_465_modified_for_dsm_10700
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_11098.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005528
   name: medium_465_modified_for_dsm_11098
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_11199.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005529
   name: medium_465_modified_for_dsm_11199
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_11414.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005530
   name: medium_465_modified_for_dsm_11414
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_11437.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005531
   name: medium_465_modified_for_dsm_11437
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_12578.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005532
   name: medium_465_modified_for_dsm_12578
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_12579.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005533
   name: medium_465_modified_for_dsm_12579
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_12584.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005534
   name: medium_465_modified_for_dsm_12584
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_12585.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005535
   name: medium_465_modified_for_dsm_12585
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_12678.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005536
   name: medium_465_modified_for_dsm_12678
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_12775.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005537
   name: medium_465_modified_for_dsm_12775
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_12877.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005538
   name: medium_465_modified_for_dsm_12877
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_13640.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005540
   name: medium_465_modified_for_dsm_13640
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_14773.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005541
   name: medium_465_modified_for_dsm_14773
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_16812.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005542
   name: medium_465_modified_for_dsm_16812
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_16843.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005543
   name: medium_465_modified_for_dsm_16843
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_16845.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005544
   name: medium_465_modified_for_dsm_16845
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_16851.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005545
   name: medium_465_modified_for_dsm_16851
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_16962.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005546
   name: medium_465_modified_for_dsm_16962
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_16963.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005547
   name: medium_465_modified_for_dsm_16963
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_16964.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005548
   name: medium_465_modified_for_dsm_16964
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_17507.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005549
   name: medium_465_modified_for_dsm_17507
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_17540.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005550
   name: medium_465_modified_for_dsm_17540
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_17854.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005551
   name: medium_465_modified_for_dsm_17854
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_18361.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005552
   name: medium_465_modified_for_dsm_18361
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_19529.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005553
   name: medium_465_modified_for_dsm_19529
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_19550.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005554
   name: medium_465_modified_for_dsm_19550
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_6383.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005555
   name: medium_465_modified_for_dsm_6383
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_6428.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005557
   name: medium_465_modified_for_dsm_6428
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_6431.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005558
   name: medium_465_modified_for_dsm_6431
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_6432.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005559
   name: medium_465_modified_for_dsm_6432
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_6434.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005560
   name: medium_465_modified_for_dsm_6434
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_6577.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005561
   name: medium_465_modified_for_dsm_6577
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_6708.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005562
   name: medium_465_modified_for_dsm_6708
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_6985.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005563
   name: medium_465_modified_for_dsm_6985
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_6986.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005564
   name: medium_465_modified_for_dsm_6986
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465_modified_for_dsm_7005.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005565
   name: medium_465_modified_for_dsm_7005
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_465b_modified_for_dsm_6824.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005568
   name: medium_465b_modified_for_dsm_6824
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

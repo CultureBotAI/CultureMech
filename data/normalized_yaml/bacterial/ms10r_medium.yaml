@@ -12,8 +12,8 @@ ingredients:
   concentration:
     value: '0.2448'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001025
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27897
     label: Tryptophan
 - preferred_term: Glucose
   term:
@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: '55.51'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Glycine
   term:
@@ -33,8 +33,8 @@ ingredients:
     value: '2.265'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: Nicotinate
   concentration:
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '1.403'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001023
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
     label: Cysteine
 - preferred_term: Glutamine
   concentration:
@@ -66,8 +66,8 @@ ingredients:
     value: '0.04093'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: DL-Serine
   concentration:
@@ -81,8 +81,8 @@ ingredients:
     value: '0.02973'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydam'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001024
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16410
     label: Pyridoxamine
 - preferred_term: Histidine
   term:
@@ -91,8 +91,8 @@ ingredients:
   concentration:
     value: '0.7089'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000355
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27570
     label: Histidine
 - preferred_term: Calcium pantothenate
   term:
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '0.002099'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
@@ -126,9 +126,9 @@ ingredients:
   concentration:
     value: '0.8042'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000774
-    label: DL-methionine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16811
+    label: DL-Methionine
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -137,8 +137,8 @@ ingredients:
     value: '0.002657'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Leucine
   concentration:
@@ -154,8 +154,8 @@ ingredients:
   concentration:
     value: '5.906'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000396
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26271
     label: Proline
 - preferred_term: Isoleucine
   concentration:
@@ -168,8 +168,11 @@ ingredients:
   concentration:
     value: '1.601'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  term:
+    id: CHEBI:17895
+    label: L-Tyrosine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: DL-Tyrosine
 - preferred_term: Alanine
   concentration:
@@ -185,8 +188,8 @@ ingredients:
   concentration:
     value: '0.6889'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000341
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29016
     label: Arginine
 - preferred_term: Phenylalanine
   concentration:
@@ -202,8 +205,8 @@ ingredients:
   concentration:
     value: '2.573'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000907
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22653
     label: Asparagine
 - preferred_term: Valine
   concentration:
@@ -219,9 +222,9 @@ ingredients:
   concentration:
     value: '1.362'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.9838'
@@ -229,9 +232,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '42.92'
@@ -276,6 +279,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MS10R Medium" to "ms10r_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:38.636023+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 409
   term:

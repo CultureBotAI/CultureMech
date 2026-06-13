@@ -33,13 +33,12 @@ ingredients:
     value: '17.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Pancreatic enzymatic digest of casein providing amino acids and
-    peptides; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
-    commercial product
+  notes: Pancreatic enzymatic digest of casein providing amino acids and peptides;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: tryptone
     synonym_type: EXACT
@@ -55,13 +54,12 @@ ingredients:
     value: '3.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Peptic digest of soybean meal providing additional peptides and
-    carbohydrates; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar
-    (TSA) commercial product
+  notes: Peptic digest of soybean meal providing additional peptides and carbohydrates;
+    Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: soytone
     synonym_type: EXACT
@@ -77,12 +75,12 @@ ingredients:
     value: '2.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic
-    Soy Agar (TSA) commercial product
+  notes: Carbon/energy source; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy
+    Agar (TSA) commercial product
   synonyms:
   - synonym_text: dextrose
     synonym_type: EXACT
@@ -96,12 +94,12 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) /
-    Tryptic Soy Agar (TSA) commercial product
+  notes: Maintains osmotic equilibrium; Constituent of Tryptic Soy Broth (TSB) / Tryptic
+    Soy Agar (TSA) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -115,12 +113,12 @@ ingredients:
     value: '2.5'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar
-    (TSA) commercial product
+  notes: pH buffer; Constituent of Tryptic Soy Broth (TSB) / Tryptic Soy Agar (TSA)
+    commercial product
   synonyms:
   - synonym_text: K2HPO4
     synonym_type: EXACT
@@ -136,12 +134,12 @@ ingredients:
     value: '15.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth
-      (TSB) / Tryptic Soy Agar (TSA)
+    supplier_name: Multiple suppliers (BD, Sigma, Neogen) Tryptic Soy Broth (TSB)
+      / Tryptic Soy Agar (TSA)
     catalog_number: Multiple (22092 Sigma, 211825 BD)
     product_url: https://en.wikipedia.org/wiki/Tryptic_soy_broth
-  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic
-    Soy Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
+  notes: Solidifying agent (for TSA only, not in TSB); Constituent of Tryptic Soy
+    Broth (TSB) / Tryptic Soy Agar (TSA) commercial product
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -150,8 +148,8 @@ ingredients:
     value: '0.09'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.03, 0.06]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Bovine serum
   concentration:
@@ -166,8 +164,8 @@ ingredients:
     value: '0.045'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.015, 0.03]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Air
   concentration:
@@ -180,15 +178,15 @@ preparation_steps:
   description: Incubate inoculated tubes in slanted position.
 - step_number: 2
   action: MIX
-  description: Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2
-    gas mixture in Hungate tubes (5 ml per tube).
+  description: Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2 gas
+    mixture in Hungate tubes (5 ml per tube).
 - step_number: 3
   action: COOL
   description: 'After autoclaving and cooling add (per tube):'
 - step_number: 4
   action: MIX
-  description: Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2
-    gas mixture in 100 ml serum bottles (10 ml per bottle).
+  description: Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2 gas
+    mixture in 100 ml serum bottles (10 ml per bottle).
 - step_number: 5
   action: COOL
   description: 'After autoclaving and cooling add per bottle:'
@@ -214,13 +212,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.758147+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SERPULINA MURDOCHII MEDIUM" to
-    "serpulina_murdochii_medium" for consistent matching
+  notes: Normalized name from "SERPULINA MURDOCHII MEDIUM" to "serpulina_murdochii_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:45.761662+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_840_SERPULINA_MURDOCHII_MEDIUM.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_840_SERPULINA_MURDOCHII_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006643
   name: serpulina_murdochii_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

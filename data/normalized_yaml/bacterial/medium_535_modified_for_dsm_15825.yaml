@@ -149,8 +149,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -176,3 +176,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM 535 MODIFIED FOR DSM 15825" to "medium_535_modified_for_dsm_15825"
     for consistent matching
+- timestamp: '2026-06-05T07:41:25.103626+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

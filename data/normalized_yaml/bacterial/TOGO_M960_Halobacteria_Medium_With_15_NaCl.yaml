@@ -14,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '20'
@@ -24,8 +24,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: NaCl
   concentration:
     value: '150'
@@ -35,9 +35,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KCl
   concentration:
     value: '2'
@@ -47,9 +47,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '0.36'
@@ -68,9 +68,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
-    label: Sodium glutamate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
+    label: monosodium glutamate
 - preferred_term: Trisodium citrate
   concentration:
     value: '3'
@@ -79,9 +79,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
-    label: Trisodium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: FeCl2・4H2O
   concentration:
     value: '36'
@@ -99,8 +99,8 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
@@ -144,17 +144,29 @@ curation_history:
 - timestamp: '2026-03-17T19:46:32.421339+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Halobacteria Medium With 15% NaCl" to
-    "halobacteria_medium_with_15_nacl" for consistent matching
+  notes: Normalized name from "Halobacteria Medium With 15% NaCl" to "halobacteria_medium_with_15_nacl"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:46.050120+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:34.234998+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
 high_metal: true
 parent_media:
   path: data/normalized_yaml/bacterial/TOGO_M160_Halobacteria_Medium.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:008163
   name: halobacteria_medium
-  notes: Reviewed TOGO solid Halobacteria salinity pair; 15% NaCl record differs
-    only in NaCl concentration.
+  notes: Reviewed TOGO solid Halobacteria salinity pair; 15% NaCl record differs only
+    in NaCl concentration.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- NaCl decreased from 200 g/L to 150 g/L while the TOGO solid Halobacteria
-  medium formulation remains unchanged.
+- NaCl decreased from 200 g/L to 150 g/L while the TOGO solid Halobacteria medium
+  formulation remains unchanged.

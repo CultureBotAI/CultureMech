@@ -21,7 +21,7 @@
   <h1>wees</h1>
   <div class="meta">
     <span class="curie">CultureMech:000216</span>
-      <span class="badge">ALGAE</span>
+      <span class="badge">algae</span>
       <span class="badge">COMPLEX</span>
       <span class="badge">LIQUID</span>
   </div>
@@ -82,13 +82,13 @@ flowchart LR
 </thead>
 <tbody>
 <tr>
-  <td class="muted small"></td>
+  <td class="muted small">2026-01-28T00:00:00+00:00</td>
   <td>sag-import</td>
   <td>Imported from SAG Culture Collection</td>
   <td class="small prewrap">Source ID: WEES, PDF URL: http://sagdb.uni-goettingen.de/culture_media/28 WEES Medium.pdf</td>
 </tr>
 <tr>
-  <td class="muted small"></td>
+  <td class="muted small">2026-02-03T00:00:00+00:00</td>
   <td>schema-defaulter-v1.0</td>
   <td>Applied schema defaults and normalizations</td>
   <td class="small prewrap">Added placeholder ingredients for missing composition</td>
@@ -111,12 +111,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;WEES&#34; to &#34;wees&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-16T09:02:57.131396+00:00</td>
+  <td>migrate_legacy_fields.py</td>
+  <td>MIGRATED_LEGACY_FIELDS</td>
+  <td class="small prewrap">curation_history.date-&gt;timestamp=2; references.reference_id-&gt;reference=2; category-&gt;lowercase=1</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:03:47+00:00 from
+    Generated from
     <code>data/normalized_yaml/algae/wees.yaml</code>
   </small>
 </footer>

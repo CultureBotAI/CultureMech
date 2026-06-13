@@ -34,12 +34,12 @@ ingredients:
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Na glutamate
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
     label: Na glutamate
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Biotin
   term:
@@ -68,18 +68,18 @@ ingredients:
   concentration:
     value: 5e-05
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '0.27'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Tris-HCl buffer
   concentration:
@@ -121,24 +121,34 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.538381+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CARYOPHANON LATUM medium" to
-    "caryophanon_latum_medium" for consistent matching
+  notes: Normalized name from "CARYOPHANON LATUM medium" to "caryophanon_latum_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:22.639864+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:44.657820+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_34_modified_for_dsm_513.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005047
   name: medium_34_modified_for_dsm_513
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/caryophanon_latum_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001449
   name: caryophanon_latum_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 34; one unlinked DSMZ parent
-    record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 34; one unlinked DSMZ parent record
+    exists and the local physical state, pH, ingredient, and concentration signatures
+    match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 34; local ingredient
-  and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 34; local ingredient and
+  concentration signatures match.

@@ -11,8 +11,9 @@ composition:
   term:
     id: CHEBI:64734
     label: edetate disodium
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001113
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
+    label: edetate disodium
 - preferred_term: Magnesium sulfate heptahydrate
   concentration:
     value: '10.0'
@@ -20,8 +21,9 @@ composition:
   term:
     id: CHEBI:32599
     label: magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000614
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate heptahydrate
 - preferred_term: Magnesium chloride hexahydrate
   concentration:
     value: '5.0'
@@ -29,8 +31,9 @@ composition:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000116
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: Ferric chloride hexahydrate
   concentration:
     value: '0.5'
@@ -87,6 +90,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: references.reference_id->reference=3
+- timestamp: '2026-06-08T23:17:57.352979+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 references:
 - reference: https://utex.org/products/macro-component-2-for-j-medium
 - reference: UTEX:macro-component-2-for-j-medium

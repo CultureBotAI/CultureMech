@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -38,8 +38,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -63,14 +63,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.429107+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ALCANIVORAX BALERICUS MEDIUM" to
-    "alcanivorax_balericus_medium" for consistent matching
+  notes: Normalized name from "ALCANIVORAX BALERICUS MEDIUM" to "alcanivorax_balericus_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:47.692949+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:101
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_1289_ALCANIVORAX_BALERICUS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_1289_ALCANIVORAX_BALERICUS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004039
   name: alcanivorax_balericus_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1289; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1289; local ingredient
+    and concentration signatures match.

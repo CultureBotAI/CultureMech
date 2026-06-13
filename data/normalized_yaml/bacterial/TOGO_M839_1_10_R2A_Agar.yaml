@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Agar
   concentration:
@@ -25,9 +25,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: R2A agar (BD-Difco)
   concentration:
     value: '1.82'
@@ -65,16 +65,21 @@ curation_history:
 - timestamp: '2026-03-17T19:46:31.378783+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/10 R2A Agar" to "1_10_r2a_agar" for consistent
-    matching
+  notes: Normalized name from "1/10 R2A Agar" to "1_10_r2a_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:44.909879+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:010300
   name: 1_2_r2a_agar
-  notes: Both records are TOGO/NBRC diluted R2A agar formulations; the child is
-    explicitly named 1/10 R2A Agar under the same base medium family.
+  notes: Both records are TOGO/NBRC diluted R2A agar formulations; the child is explicitly
+    named 1/10 R2A Agar under the same base medium family.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- 1/10 R2A Agar decreases R2A agar powder from 9.1 g/L to 1.82 g/L and adjusts
-  added agar from 7.5 g/L to 15 g/L.
+- 1/10 R2A Agar decreases R2A agar powder from 9.1 g/L to 1.82 g/L and adjusts added
+  agar from 7.5 g/L to 15 g/L.

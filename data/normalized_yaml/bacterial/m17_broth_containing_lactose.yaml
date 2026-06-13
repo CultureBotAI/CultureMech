@@ -13,9 +13,9 @@ ingredients:
   term:
     id: CHEBI:36218
     label: beta-lactose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001003
-    label: lactose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
 - preferred_term: M17 broth
   concentration:
     value: '1'
@@ -50,4 +50,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M17 broth (containing lactose)" to "m17_broth_containing_lactose"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.708969+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:J697

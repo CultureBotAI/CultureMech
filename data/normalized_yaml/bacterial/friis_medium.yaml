@@ -37,8 +37,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain
-    tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
 - preferred_term: Beef heart
   term:
     id: UBERON:0000948
@@ -50,8 +50,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox
-    heart tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
 - preferred_term: Proteose peptone
   term:
     id: FOODON:03302071
@@ -63,8 +63,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Enzymatic digest of animal protein providing amino acids and peptides;
-    Constituent of Brain Heart Infusion commercial product
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
 - preferred_term: Dextrose
   term:
     id: CHEBI:17234
@@ -76,8 +76,7 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial
-    product
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
   synonyms:
   - synonym_text: glucose
     synonym_type: EXACT
@@ -96,8 +95,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion
-    commercial product
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -114,8 +113,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion
-    commercial product
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: Na2HPO4
     synonym_type: EXACT
@@ -142,8 +141,8 @@ ingredients:
   concentration:
     value: '0.00133'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: NaCl
   term:
@@ -152,8 +151,8 @@ ingredients:
   concentration:
     value: '160'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -162,8 +161,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -172,8 +171,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -182,8 +181,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2
   term:
@@ -192,8 +191,8 @@ ingredients:
   concentration:
     value: '3.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -202,18 +201,18 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 preparation_steps:
 - step_number: 1
@@ -224,11 +223,11 @@ preparation_steps:
   description: 'After autoclaving add:'
 - step_number: 3
   action: AUTOCLAVE
-  description: 25 ml solution 1 (4 g NaCl, 0.2 g KCl, 0.05 g MgSO4 x 7 H2O, 0.05
-    g MgCl2 x 6 H2O dissolved in 25 ml distilled water; then 0.0925 g CaCl2
-    added and dissolved) and 25 ml of solution 2 (0.075 g Na2HPO4 x 2 H2O, 0.03
-    g KH2PO4 dissolved in 25 ml distilled water) are autoclaved separately and
-    then combined with 450 ml sterile H2O.
+  description: 25 ml solution 1 (4 g NaCl, 0.2 g KCl, 0.05 g MgSO4 x 7 H2O, 0.05 g
+    MgCl2 x 6 H2O dissolved in 25 ml distilled water; then 0.0925 g CaCl2 added and
+    dissolved) and 25 ml of solution 2 (0.075 g Na2HPO4 x 2 H2O, 0.03 g KH2PO4 dissolved
+    in 25 ml distilled water) are autoclaved separately and then combined with 450
+    ml sterile H2O.
 applications:
 - Microbial cultivation
 curation_history:
@@ -247,12 +246,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.987798+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FRIIS MEDIUM" to "friis_medium" for consistent
-    matching
+  notes: Normalized name from "FRIIS MEDIUM" to "friis_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:05.544761+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:58.826996+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1078_FRIIS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003730
   name: friis_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

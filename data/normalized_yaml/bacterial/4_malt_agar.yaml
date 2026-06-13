@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Malt extract (BD-Difco)
   concentration:
@@ -30,9 +30,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M245
   term:
@@ -65,16 +65,21 @@ curation_history:
 - timestamp: '2026-03-17T19:46:20.877800+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "4% Malt Agar" to "4_malt_agar" for consistent
-    matching
+  notes: Normalized name from "4% Malt Agar" to "4_malt_agar" for consistent matching
+- timestamp: '2026-06-05T07:40:15.837790+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/2_malt_agar.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:009585
   name: 2_malt_agar
-  notes: Reviewed TOGO 2% and 4% malt agar pair; records differ only in malt
-    extract concentration.
+  notes: Reviewed TOGO 2% and 4% malt agar pair; records differ only in malt extract
+    concentration.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Malt extract (BD-Difco) increased from 20 g/L to 40 g/L while the malt agar
-  base remains unchanged.
+- Malt extract (BD-Difco) increased from 20 g/L to 40 g/L while the malt agar base
+  remains unchanged.

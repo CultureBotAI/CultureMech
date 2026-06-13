@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -62,14 +62,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.754111+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM FOR PARACOCCUS AMINOPHILUS AND P.
-    AMINOVORANS" to "medium_for_paracoccus_aminophilus_and_p_aminovorans" for
-    consistent matching
+  notes: Normalized name from "MEDIUM FOR PARACOCCUS AMINOPHILUS AND P. AMINOVORANS"
+    to "medium_for_paracoccus_aminophilus_and_p_aminovorans" for consistent matching
+- timestamp: '2026-06-05T07:41:29.286077+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_774_medium_FOR_PARACOCCUS_AMINOPHILUS_AND_P._AMINOVORANS.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_774_medium_FOR_PARACOCCUS_AMINOPHILUS_AND_P._AMINOVORANS.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006431
   name: medium_for_paracoccus_aminophilus_and_p_aminovorans
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

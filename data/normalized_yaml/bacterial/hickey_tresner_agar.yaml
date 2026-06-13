@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001048
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28675
     label: Dextrin
 - preferred_term: Enzymatic digest of casein
   concentration:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: Agar
   term:
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -76,13 +76,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.551501+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HICKEY-TRESNER-AGAR" to "hickey_tresner_agar" for
-    consistent matching
+  notes: Normalized name from "HICKEY-TRESNER-AGAR" to "hickey_tresner_agar" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:08.505171+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:658
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_658_HICKEY-TRESNER-AGAR.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006235
   name: hickey_tresner_agar
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

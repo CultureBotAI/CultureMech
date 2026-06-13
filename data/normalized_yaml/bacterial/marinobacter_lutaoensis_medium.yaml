@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 preparation_steps:
 - step_number: 1
@@ -62,13 +62,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.888114+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINOBACTER LUTAOENSIS MEDIUM" to
-    "marinobacter_lutaoensis_medium" for consistent matching
+  notes: Normalized name from "MARINOBACTER LUTAOENSIS MEDIUM" to "marinobacter_lutaoensis_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:13.163556+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_1066_MARINOBACTER_LUTAOENSIS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_1066_MARINOBACTER_LUTAOENSIS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003649
   name: marinobacter_lutaoensis_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

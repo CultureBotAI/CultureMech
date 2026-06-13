@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Marine agar 2216
 - preferred_term: Tween 20
   term:
@@ -51,3 +51,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINE AGAR WITH 1% TWEEN 20" to "marine_agar_with_1_tween_20"
     for consistent matching
+- timestamp: '2026-06-05T07:41:57.884966+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

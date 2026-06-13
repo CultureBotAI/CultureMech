@@ -15,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Horse Serum (not inactivated)
   concentration:
@@ -67,3 +67,9 @@ curation_history:
   notes: Normalized name from "PPLO broth without CV (pH 7.8) with horse serum (not
     inactivated) and yeast extract" to "pplo_broth_without_cv_ph_7_8_with_horse_serum_not_inactivated_and_yeast_extract"
     for consistent matching
+- timestamp: '2026-06-05T07:41:42.445633+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

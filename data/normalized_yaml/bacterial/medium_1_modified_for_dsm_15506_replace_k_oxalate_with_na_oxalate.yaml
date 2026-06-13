@@ -28,8 +28,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Bromothymol blue
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '25'
     unit: MG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001021
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86155
     label: Bromothymol blue
 applications:
 - Microbial cultivation
@@ -66,3 +66,9 @@ curation_history:
   notes: Normalized name from "MEDIUM 1 MODIFIED FOR DSM 15506_replace_K-oxalate_with_Na-oxalate"
     to "medium_1_modified_for_dsm_15506_replace_k_oxalate_with_na_oxalate" for consistent
     matching
+- timestamp: '2026-06-05T07:41:16.118625+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

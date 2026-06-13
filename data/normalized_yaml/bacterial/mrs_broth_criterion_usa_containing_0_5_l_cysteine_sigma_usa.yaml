@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: L-cysteine (Sigma)
   concentration:
@@ -58,3 +58,9 @@ curation_history:
   notes: Normalized name from "MRS broth (Criterion, USA) containing 0.5%L-cysteine
     (Sigma, USA)" to "mrs_broth_criterion_usa_containing_0_5_l_cysteine_sigma_usa"
     for consistent matching
+- timestamp: '2026-06-05T07:41:38.442975+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

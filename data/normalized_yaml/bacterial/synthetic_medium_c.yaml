@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: L-Glutamate
   concentration:
     value: '1.767'
@@ -44,8 +44,8 @@ ingredients:
   concentration:
     value: '0.4057'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Folate
   concentration:
@@ -70,8 +70,8 @@ ingredients:
     value: '199.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:urea'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000301
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16199
     label: Urea
 - preferred_term: L-Sorbose
   concentration:
@@ -86,8 +86,8 @@ ingredients:
     value: '0.0007093'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydxn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000317
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16709
     label: Pyridoxine
 - preferred_term: DL-methionine
   term:
@@ -96,9 +96,9 @@ ingredients:
   concentration:
     value: '0.2681'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000774
-    label: DL-methionine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16811
+    label: DL-Methionine
 - preferred_term: Isoleucine
   concentration:
     value: '0.4574'
@@ -113,8 +113,8 @@ ingredients:
   concentration:
     value: '0.3222'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000355
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27570
     label: Histidine
 - preferred_term: Thiamine
   term:
@@ -141,8 +141,8 @@ ingredients:
   concentration:
     value: '0.08254'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001023
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
     label: Cysteine
 - preferred_term: Potassium chloride
   concentration:
@@ -151,9 +151,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Alanine
   concentration:
     value: '2.133'
@@ -175,8 +175,8 @@ ingredients:
   concentration:
     value: '0.287'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000341
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29016
     label: Arginine
 - preferred_term: Cupric chloride
   concentration:
@@ -193,8 +193,11 @@ ingredients:
   concentration:
     value: '0.1656'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  term:
+    id: CHEBI:17895
+    label: L-Tyrosine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: DL-Tyrosine
 - preferred_term: Lysine
   concentration:
@@ -215,8 +218,8 @@ ingredients:
     value: '7.971e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Pantothenate
   term:
@@ -226,8 +229,8 @@ ingredients:
     value: '0.0005246'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pnto-R'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000356
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16454
     label: Pantothenate
 - preferred_term: Aspartate
   concentration:
@@ -247,8 +250,8 @@ ingredients:
   concentration:
     value: '4.427e-06'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Sodium chloride
   term:
@@ -257,9 +260,9 @@ ingredients:
   concentration:
     value: '0.7651'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -293,6 +296,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Synthetic Medium C" to "synthetic_medium_c" for consistent
     matching
+- timestamp: '2026-06-05T07:41:48.239641+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 315
   term:

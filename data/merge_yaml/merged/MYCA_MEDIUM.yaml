@@ -14,8 +14,8 @@ notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1
 ingredients:
 - preferred_term: Sodium DL-malate
   term:
-    id: CHEBI:91261
-    label: Sodium DL-malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '1'
     unit: G_PER_L

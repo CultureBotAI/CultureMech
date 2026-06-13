@@ -11,8 +11,9 @@ composition:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000211
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 notes: 'Boron stock solution for Bold Basal Medium (BBM) and related algae culture
   media.
 
@@ -50,6 +51,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: references.reference_id->reference=3
+- timestamp: '2026-06-08T23:17:55.782622+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 references:
 - reference: https://utex.org/products/bbm-boron-stock-solution
 - reference: UTEX:bbm-boron-stock-solution

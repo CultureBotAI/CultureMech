@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '3.2e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
@@ -36,9 +36,9 @@ ingredients:
   concentration:
     value: '4.3'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '7.3'
@@ -53,8 +53,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -63,9 +63,9 @@ ingredients:
   concentration:
     value: '8.3e-06'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '56.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
@@ -90,9 +90,9 @@ ingredients:
   concentration:
     value: '5.7e-06'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '8.4e-06'
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '1.4e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001119
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30627
     label: Molybdenum trioxide
   term:
     id: CHEBI:30627
@@ -120,15 +120,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified
-    concentrations
+  description: Dissolve all ingredients in distilled water to specified concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
-    components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
 - timestamp: '2026-01-27T07:21:44.685696Z'
   curator: mediadb-import
@@ -146,8 +144,13 @@ curation_history:
 - timestamp: '2026-03-17T19:46:04.467659+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Fex5 medium" to "fex5_medium" for consistent
-    matching
+  notes: Normalized name from "Fex5 medium" to "fex5_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:00.346944+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 227
   term:
@@ -164,9 +167,9 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007121
   name: inorganic_medium
-  notes: Reviewed MediaDB inorganic/Fex5 pair; Fex5 is modeled as the
-    higher-ferrous-sulfate variant of the inorganic base medium.
+  notes: Reviewed MediaDB inorganic/Fex5 pair; Fex5 is modeled as the higher-ferrous-sulfate
+    variant of the inorganic base medium.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Ferrous sulfate increased from 0.05 mM to 0.25 mM while the inorganic medium
-  base remains unchanged.
+- Ferrous sulfate increased from 0.05 mM to 0.25 mM while the inorganic medium base
+  remains unchanged.

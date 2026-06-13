@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:423
     label: Sea Salt
-  chebi_term:
-    id: CHEBI:63005
-    label: sodium nitrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '0.999001'
@@ -23,11 +18,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Trypticase peptone
   concentration:
     value: '0.499501'
@@ -35,11 +25,6 @@ composition:
   term:
     id: mediadive.compound:124
     label: Trypticase peptone
-  chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Cellobiose
   concentration:
     value: '1.998'
@@ -49,9 +34,9 @@ composition:
     label: Cellobiose
   chebi_term:
     id: CHEBI:17057
-    label: cellobiose
+    label: Cellobiose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '999.0009990009991'
@@ -60,10 +45,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Dissolve compounds except cellobiose, adjust pH to 7.5 and dispense
   medium under air atmosphere into Hungate-type tubes or serum vials to 30% volume
   and autoclave. Add cellobiose after autoclaving from a stock solution sterilized
@@ -94,6 +79,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:21.601441+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:46:39.418187+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:09.709733+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

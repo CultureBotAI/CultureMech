@@ -13,9 +13,9 @@ composition:
     label: L-Histidin
   chebi_term:
     id: CHEBI:15971
-    label: L-histidine
+    label: L-Histidin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Serin
   concentration:
     value: '10'
@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:162
     label: L-Serin
   chebi_term:
-    id: CHEBI:16523
-    label: D-serine
+    id: CHEBI:17115
+    label: L-Serin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Glutamine
   concentration:
     value: '14'
@@ -37,9 +37,9 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: L-glutamine
+    label: L-Glutamine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: "Amino acid solution per 50 ml: \n\nOriginal volume: 50 mL"
 curation_history:
 - timestamp: '2026-03-13T06:20:37.840430Z'
@@ -64,6 +64,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:38.976426+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

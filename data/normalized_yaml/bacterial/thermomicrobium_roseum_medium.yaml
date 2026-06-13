@@ -23,12 +23,12 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '1.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -37,18 +37,18 @@ ingredients:
   concentration:
     value: '0.247'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.28'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '0.074'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -67,8 +67,8 @@ ingredients:
   concentration:
     value: '0.019'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: Agar
   term:
@@ -78,8 +78,8 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '18'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
@@ -105,18 +105,18 @@ ingredients:
   concentration:
     value: '2.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CuCl2 x H2O
   term:
     id: CHEBI:49553
-    label: CuCl2 x H2O
+    label: copper(II) chloride
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000821
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49553
     label: CuCl2 x H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -125,8 +125,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: VOSO4 x 2 H2O
   term:
@@ -135,8 +135,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000279
+  mediaingredientmech_chebi_term:
+    id: CHEBI:87009
     label: VOSO4 x 2 H2O
 preparation_steps:
 - step_number: 1
@@ -144,8 +144,8 @@ preparation_steps:
   description: Adjust pH to 8.5.
 - step_number: 2
   action: ADD_AGAR
-  description: Add 20.0 g/l agar for solid media and pour short slants with a
-    long butt in screw-capped tubes.
+  description: Add 20.0 g/l agar for solid media and pour short slants with a long
+    butt in screw-capped tubes.
 - step_number: 3
   action: MIX
   description: pH adjusted to 2.0 with H2SO4.
@@ -167,13 +167,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.887995+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOMICROBIUM ROSEUM MEDIUM" to
-    "thermomicrobium_roseum_medium" for consistent matching
+  notes: Normalized name from "THERMOMICROBIUM ROSEUM MEDIUM" to "thermomicrobium_roseum_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:50.364277+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:13.094825+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_592_THERMOMICROBIUM_ROSEUM_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_592_THERMOMICROBIUM_ROSEUM_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006074
   name: thermomicrobium_roseum_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.
