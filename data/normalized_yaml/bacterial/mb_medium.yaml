@@ -60,7 +60,7 @@ ingredients:
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
-    label: K2HPO4
+    label: dipotassium hydrogen phosphate
   concentration:
     value: '0.395648'
     unit: G_PER_L
@@ -70,7 +70,7 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.98912'
     unit: G_PER_L
@@ -105,7 +105,7 @@ ingredients:
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '1.58259'
     unit: G_PER_L
@@ -115,7 +115,7 @@ ingredients:
 - preferred_term: Na-formate
   term:
     id: CHEBI:62965
-    label: Na-formate
+    label: sodium formate
   concentration:
     value: '6.72601'
     unit: G_PER_L
@@ -225,7 +225,7 @@ ingredients:
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.01'
     unit: G_PER_L
@@ -411,6 +411,10 @@ curation_history:
   notes: 'Replaced 33 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:47:01.006712+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 ph_value: 7.2
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_14539_dsm_14646_and_dsm_14648.yaml

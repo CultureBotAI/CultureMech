@@ -15,7 +15,7 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '1.8'
     unit: G_PER_L
@@ -35,7 +35,7 @@ ingredients:
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: (NH4)2SO4
+    label: ammonium sulfate
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -68,7 +68,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:86360
-    label: ''
+    label: manganese(II) sulfate
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -81,8 +81,8 @@ ingredients:
     label: CaCl2 x 2 H2O
 - preferred_term: Na2S2O3
   term:
-    id: CHEBI:59168
-    label: Na2S2O3
+    id: CHEBI:132112
+    label: sodium thiosulfate
   concentration:
     value: '100'
     unit: G_PER_L
@@ -125,3 +125,11 @@ curation_history:
   notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:37:35.807438+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:47:11.182277+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

@@ -110,7 +110,7 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: KH2PO4
@@ -280,7 +280,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:77775
-    label: Na2SeO4
+    label: sodium selenate
   mediaingredientmech_chebi_term:
     id: CHEBI:77775
     label: Na2SeO4
@@ -462,6 +462,10 @@ curation_history:
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
   notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-06-10T07:46:48.076236+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 7 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 solutions:
 - preferred_term: KP buffer*
   composition: []

@@ -39,7 +39,7 @@ ingredients:
 - preferred_term: MgSO4 x H2O
   term:
     id: CHEBI:32599
-    label: MgSO4 x H2O
+    label: magnesium sulfate
   concentration:
     value: '0.998004'
     unit: G_PER_L
@@ -49,7 +49,7 @@ ingredients:
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
-    label: Na2CO3
+    label: sodium carbonate
   concentration:
     value: '2.99401'
     unit: G_PER_L
@@ -116,3 +116,7 @@ curation_history:
   notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:46:43.034249+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

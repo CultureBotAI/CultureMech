@@ -51,7 +51,7 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: KH2PO4
@@ -62,8 +62,8 @@ ingredients:
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
-    id: CHEBI:62476
-    label: (NH4)2HPO4
+    id: CHEBI:63051
+    label: diammonium hydrogen phosphate
   mediaingredientmech_term:
     id: MediaIngredientMech:000385
     label: (NH4)2HPO4
@@ -129,3 +129,11 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
+- timestamp: '2026-06-10T07:37:34.431484+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:47.007533+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

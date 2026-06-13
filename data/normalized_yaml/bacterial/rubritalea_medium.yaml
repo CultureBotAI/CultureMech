@@ -71,7 +71,7 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:91249
-    label: ''
+    label: ammonium molybdate
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -153,7 +153,7 @@ ingredients:
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
-    label: Na2SO4
+    label: sodium sulfate
   concentration:
     value: '11.75'
     unit: G_PER_L
@@ -183,7 +183,7 @@ ingredients:
 - preferred_term: KBr
   term:
     id: CHEBI:32030
-    label: KBr
+    label: potassium bromide
   concentration:
     value: '0.29'
     unit: G_PER_L
@@ -203,7 +203,7 @@ ingredients:
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.08'
     unit: G_PER_L
@@ -262,6 +262,10 @@ curation_history:
   notes: 'Replaced 17 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:47:11.108142+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1137_RUBRITALEA_medium.yaml
   relationship: SOURCE_DUPLICATE

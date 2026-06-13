@@ -40,7 +40,7 @@ ingredients:
     label: Dextrose
 - preferred_term: ACES
   term:
-    id: CHEBI:65994
+    id: CHEBI:39061
     label: ACES
   concentration:
     value: '3.64'
@@ -72,7 +72,7 @@ ingredients:
 - preferred_term: Na-ascorbate
   term:
     id: CHEBI:113451
-    label: Na-ascorbate
+    label: sodium ascorbate
   concentration:
     value: '10'
     unit: G_PER_L
@@ -110,3 +110,11 @@ curation_history:
   notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:37:34.922354+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:59.104616+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

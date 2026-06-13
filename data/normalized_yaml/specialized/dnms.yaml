@@ -124,7 +124,7 @@ ingredients:
     unit: MG_PER_L
   term:
     id: CHEBI:63036
-    label: ''
+    label: potassium dihydrogen phosphate
 - preferred_term: Folic Acid
   concentration:
     value: '0.02'
@@ -139,7 +139,7 @@ ingredients:
     unit: MG_PER_L
   term:
     id: CHEBI:30961
-    label: pyridoxine HCl
+    label: pyridoxine hydrochloride
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
 - preferred_term: Riboflavin
   concentration:
@@ -232,5 +232,9 @@ curation_history:
   notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
     Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
     selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T07:47:15.102456+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 data_quality_flags:
 - has_unmapped_ingredients

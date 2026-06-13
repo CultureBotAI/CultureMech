@@ -27,8 +27,8 @@ ingredients:
     unit: G_PER_L
 - preferred_term: (NH4)2HPO4
   term:
-    id: CHEBI:62476
-    label: (NH4)2HPO4
+    id: CHEBI:63051
+    label: diammonium hydrogen phosphate
   concentration:
     value: '0.264'
     unit: G_PER_L
@@ -85,6 +85,14 @@ curation_history:
   notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:37:34.222915+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:44.040918+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 parent_media:
   path: data/normalized_yaml/bacterial/kr_medium.yaml
   relationship: SOURCE_DUPLICATE

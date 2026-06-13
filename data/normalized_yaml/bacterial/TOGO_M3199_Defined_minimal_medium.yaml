@@ -22,7 +22,7 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: variable
     unit: VARIABLE
@@ -133,7 +133,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:63041
-    label: ''
+    label: manganese(II) chloride
 - preferred_term: ZnSO4
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
@@ -154,7 +154,7 @@ ingredients:
     unit: VARIABLE
   term:
     id: CHEBI:91249
-    label: ''
+    label: ammonium molybdate
 - preferred_term: EDTA
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
@@ -235,6 +235,10 @@ curation_history:
   notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:46:50.263685+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 solutions:
 - preferred_term: Vishniac and Santer trace elements solution
   composition: []

@@ -29,7 +29,7 @@ ingredients:
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   concentration:
     value: '0.498008'
     unit: G_PER_L
@@ -59,7 +59,7 @@ ingredients:
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: NH4Cl
+    label: ammonium chloride
   concentration:
     value: '0.398406'
     unit: G_PER_L
@@ -84,7 +84,7 @@ ingredients:
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
-    label: Na-acetate
+    label: sodium acetate
   concentration:
     value: '0.996016'
     unit: G_PER_L
@@ -94,7 +94,7 @@ ingredients:
 - preferred_term: Na-formate
   term:
     id: CHEBI:62965
-    label: Na-formate
+    label: sodium formate
   concentration:
     value: '1.99203'
     unit: G_PER_L
@@ -191,7 +191,7 @@ ingredients:
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
-    label: H3BO3
+    label: boric acid
   concentration:
     value: '0.006'
     unit: G_PER_L
@@ -409,6 +409,10 @@ curation_history:
   notes: 'Replaced 28 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:47:01.340290+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 ph_value: 7.6
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_119_METHANOBACTERIUM_medium.yaml

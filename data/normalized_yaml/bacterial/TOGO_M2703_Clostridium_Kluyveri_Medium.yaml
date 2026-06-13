@@ -42,7 +42,7 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: KH2PO4
@@ -113,8 +113,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:47622
-    label: acetate ester
+    id: CHEBI:32029
+    label: potassium acetate
   mediaingredientmech_term:
     id: MediaIngredientMech:000580
     label: K-acetate
@@ -431,6 +431,14 @@ curation_history:
   notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
     magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
     labels untouched.
+- timestamp: '2026-06-10T07:37:34.438540+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:49.660981+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 high_metal: true
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)

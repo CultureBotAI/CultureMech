@@ -169,7 +169,7 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:60720
-    label: Na-silicate
+    label: sodium silicate
   mediaingredientmech_chebi_term:
     id: CHEBI:60720
     label: Na-silicate
@@ -227,3 +227,7 @@ curation_history:
   notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:46:48.867753+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 5 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

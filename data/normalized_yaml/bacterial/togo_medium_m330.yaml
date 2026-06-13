@@ -37,7 +37,7 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
-    label: KH2PO4
+    label: potassium dihydrogen phosphate
   mediaingredientmech_chebi_term:
     id: CHEBI:63036
     label: KH2PO4
@@ -114,7 +114,7 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:32599
-    label: ''
+    label: magnesium sulfate
 - preferred_term: EDTA・3Na
   concentration:
     value: '0.04'
@@ -204,6 +204,10 @@ curation_history:
   notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-10T07:47:14.233643+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
 solutions:
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
