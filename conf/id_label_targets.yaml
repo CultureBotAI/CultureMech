@@ -1,0 +1,54 @@
+# Targets for scripts/validate_id_label_correspondence.py (Engine B).
+# See docs/ID_LABEL_CORRESPONDENCE.md. Prefixes not in `adapters`
+# (mediadive.compound, komodo.medium, DSMZ, TOGO, ATCC, MediaIngredientMech,
+# CultureMech, GTDB, …) are reported SKIPPED_NO_ADAPTER.
+
+adapters:
+  CHEBI: sqlite:obo:chebi
+  NCBITaxon: sqlite:obo:ncbitaxon
+  ENVO: sqlite:obo:envo
+  UBERON: sqlite:obo:uberon
+  NCIT: sqlite:obo:ncit
+  FOODON: sqlite:obo:foodon
+
+synonym_scope: exact_related
+
+targets:
+  # data inputs (recipe YAMLs) — every nested term.{id,label} block — canonical
+  - name: normalized_yaml
+    kind: yaml
+    glob: "data/normalized_yaml/**/*.yaml"
+    policy: canonical
+    pairs:
+      - [id, label]
+    # mediaingredientmech_chebi_term.label is intentionally MIM's preferred_term
+    # (not the OBO canonical label), so excluded from the canonical gate to
+    # avoid false MISMATCHes.
+    exclude_keys:
+      - mediaingredientmech_chebi_term
+    # PRODUCT DECISION (item 3c): the `term` and `chebi_term` blocks pair an
+    # OBO id (CHEBI/…) with a CURATOR-INTENDED formula/common-name label —
+    # e.g. CHEBI:15377 "Distilled water", CHEBI:26710 "NaCl",
+    # CHEBI:63036 "KH2PO4". We KEEP those labels (they are the human-facing
+    # recipe names) rather than relabel ~14,900 rows to the OBO canonical form,
+    # so these slots are EXEMPT from canonical-label matching. They are STILL
+    # id-existence checked (a bogus CHEBI id under `term`/`chebi_term` still
+    # surfaces as ID_NOT_FOUND); only the canonical-label match is waived.
+    label_waived_keys:
+      - term
+      - chebi_term
+
+  # data products: CHEBI mapping SSSOM export — canonical OR synonym.
+  # Narrowed to the canonical base artifact only; `output/*.sssom.tsv` also
+  # matched ~18 intermediate/legacy exports (clean/enriched/exact/final/...).
+  - name: sssom
+    kind: tabular
+    format: tsv
+    glob: "output/culturemech_chebi_mappings.sssom.tsv"
+    # required: enforce mode fails (MISSING_GLOB) if this product hasn't been
+    # built, instead of greening while validating nothing (false-green).
+    required: true
+    policy: canonical_or_synonym
+    pairs:
+      - [subject_id, subject_label]
+      - [object_id, object_label]

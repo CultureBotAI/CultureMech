@@ -11,6 +11,7 @@ prefixes:
   linkml: https://w3id.org/linkml/
   culturemech: https://w3id.org/culturemech/
   biolink: https://w3id.org/biolink/vocab/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
   # Chemicals
   CHEBI: http://purl.obolibrary.org/obo/CHEBI_
   # Organisms
@@ -651,7 +652,11 @@ classes:
         required: true
         range: string
       label:
-        description: Ontology term label
+        slot_uri: rdfs:label
+        description: >-
+          CANONICAL ontology label for `id` (e.g. "magnesium sulfate" for
+          CHEBI:32599). Verified against the ontology by the id↔label gate;
+          the sibling `preferred_term` holds the free/source name.
         range: string
       confidence:
         description: Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.
@@ -690,12 +695,24 @@ classes:
       term:
         description: Primary ontology grounding (CHEBI, FOODON, UBERON, ENVO, or upstream mediadive.compound).
         range: ChemicalEntityTerm
+        # NOTE: intentionally NO `binds_value_of: id` canonical-label binding.
+        # `term`/`chebi_term` carry CURATOR-intended formula/common-name labels
+        # (e.g. CHEBI:15377 "Distilled water", CHEBI:26710 "NaCl") that are
+        # deliberately not the OBO canonical label. Enforcing the canonical
+        # label here (linkml-term-validator --labels, Engine A) would directly
+        # contradict the Engine-B label waiver (conf/id_label_targets.yaml:
+        # label_waived_keys: [term, chebi_term]) and flag the very rows that
+        # waiver exists to accept. id-existence is still checked by Engine B.
+        # Canonical-label bindings ARE kept on organism/environment/precursor/
+        # substrate terms, whose labels are canonical.
         recommended: true
         inlined: true
 
       chebi_term:
         description: CHEBI-only grounding kept alongside `term` when `term` carries the upstream identifier (e.g. mediadive.compound on solution compositions).
         range: ChebiTerm
+        # No canonical-label binding — see the `term` slot note above; same
+        # curator-label policy and Engine-B waiver apply.
         recommended: false
         inlined: true
 
@@ -891,6 +908,9 @@ classes:
       term:
         description: NCBITaxon identifier
         range: OrganismTerm
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
         required: false
         inlined: true
 
@@ -983,6 +1003,9 @@ classes:
       term:
         description: ENVO ontology term for the environment
         range: EnvironmentTerm
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
         recommended: true
         inlined: true
         comments:
@@ -1011,6 +1034,9 @@ classes:
       term:
         description: CHEBI term for the cofactor
         range: ChemicalEntityTerm
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
         recommended: true
         inlined: true
 
@@ -1026,6 +1052,9 @@ classes:
       precursor_term:
         description: CHEBI term for precursor
         range: ChemicalEntityTerm
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
         inlined: true
 
       ec_associations:
@@ -1767,6 +1796,9 @@ classes:
       substrate_terms:
         description: CHEBI terms for substrates
         range: ChemicalEntityTerm
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
         multivalued: true
         inlined_as_list: true
 

@@ -5,6 +5,9 @@ ontology_adapters:
   # Chemicals - Chemical Entities of Biological Interest
   CHEBI: sqlite:obo:chebi
 
+  # Food materials - Food Ontology (819 recipe files ground ingredients to FOODON)
+  FOODON: sqlite:obo:foodon
+
   # Organisms - NCBI Taxonomy
   NCBITaxon: sqlite:obo:ncbitaxon
 

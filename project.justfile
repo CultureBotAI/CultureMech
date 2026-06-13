@@ -785,6 +785,66 @@ validate-references file:
     uv run linkml-reference-validator validate data {{file}} --schema {{schema_path}} --target-class MediaRecipe
     echo "✓ Reference validation passed"
 
+# id↔label gate (Engine A): the schema binds the organism/environment/precursor/
+# substrate term slots, so --labels verifies their term.label is the CANONICAL
+# ontology label for term.id across all recipe files. The chemistry `term`/
+# `chebi_term` slots are deliberately NOT bound (they carry curator formula/
+# common-name labels; see the schema note and Engine-B's label waiver). Fails
+# (non-zero) on any canonical-label drift in the bound slots.
+[group('QC')]
+validate-terms-all:
+    #!/usr/bin/env bash
+    set -uo pipefail
+    shopt -s globstar nullglob
+    rc=0
+    # `**/*.yaml` (recursive, matching Engine B) instead of one-level `*/*.yaml`.
+    for file in data/normalized_yaml/**/*.yaml; do
+        [ -e "$file" ] || continue
+        uv run linkml-term-validator validate-data "$file" -s {{schema_path}} -t MediaRecipe --labels -c {{oak_config}} || rc=1
+    done
+    exit $rc
+
+# id↔label gate (Engine B): runs the shared OAK validator over the full
+# conf/id_label_targets.yaml — this gates BOTH the recipe YAML term blocks
+# (id-existence; chemistry term/chebi_term labels are waived, organism/
+# environment canonical) AND the SSSOM data products (output/*.sssom.tsv,
+# canonical-or-synonym). Exits non-zero on any ERROR-class verdict
+# (ID_NOT_FOUND / EMPTY_LABEL / MISMATCH / MISSING_COLUMN / MISSING_GLOB).
+[group('QC')]
+validate-products:
+    uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml
+
+# Baseline (non-failing): unified id↔label drift report across recipe YAMLs +
+# SSSOM products to reports/label_drift.tsv. Use before enforcing.
+[group('QC')]
+report-label-drift:
+    uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report reports/label_drift.tsv
+
+# Durability guard: fail if scripts/validate_id_label_correspondence.py drifts
+# from the pinned sha256 (it is vendored byte-identical across the Mech repos —
+# see the file's own docstring). CI runs this so an accidental edit to one copy
+# can't silently diverge. Uses sha256sum on CI (ubuntu), shasum -a 256 on macOS.
+[group('QC')]
+verify-validator-pin:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    if command -v sha256sum >/dev/null 2>&1; then
+        sha256sum -c scripts/.validate_id_label_correspondence.sha256
+    else
+        shasum -a 256 -c scripts/.validate_id_label_correspondence.sha256
+    fi
+
+# Intentional sync only: re-pin the sha256 to the CURRENT script contents after
+# a deliberate, all-repos byte-identical update. Run this in every Mech copy.
+[group('QC')]
+refresh-validator-pin:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    f=scripts/validate_id_label_correspondence.py
+    if command -v sha256sum >/dev/null 2>&1; then h=$(sha256sum "$f" | cut -d' ' -f1); else h=$(shasum -a 256 "$f" | cut -d' ' -f1); fi
+    printf '%s  %s\n' "$h" "$f" > scripts/.validate_id_label_correspondence.sha256
+    echo "re-pinned $f to $h"
+
 [group('QC')]
 validate-all:
     #!/usr/bin/env bash

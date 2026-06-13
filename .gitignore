@@ -151,5 +151,6 @@ tmp/
 # kb/media_backup_old). Live data lives under data/normalized_yaml/.
 kb/
 
-# Runtime CHEBI/term cache (regenerated at runtime, not source)
+# Runtime CHEBI/term cache, linkml-term-validator / OAK label cache
+# (regenerated at runtime, not source)
 cache/

@@ -1,0 +1,62 @@
+name: label-correspondence
+
+# Phase 1 (report-only): generate the id↔label drift report and upload it as an
+# artifact. Does NOT fail the build — it surfaces existing label drift for
+# triage. Phase 2 will switch to the blocking gates (`just validate-terms-all`
+# + `just validate-products`).
+
+on:
+  pull_request:
+    paths: &trigger_paths
+      - "data/normalized_yaml/**"
+      - "output/**.sssom.tsv"
+      - "src/culturemech/schema/**"
+      - "scripts/validate_id_label_correspondence.py"
+      - "scripts/.validate_id_label_correspondence.sha256"
+      - "conf/id_label_targets.yaml"
+      - ".github/workflows/label-correspondence.yaml"
+  push:
+    branches: [main]
+    paths: *trigger_paths
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  label-drift-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: extractions/setup-just@v3
+      - uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+      - name: Set up Python
+        run: uv python install 3.12
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      # Cache OAK sqlite ontologies (CHEBI/NCBITaxon/ENVO/NCIT/...) across runs.
+      - name: Cache OAK ontologies
+        uses: actions/cache@v4
+        with:
+          path: ~/.data/oaklib
+          key: oaklib-${{ runner.os }}-v1
+
+      # Durability guard: fail the build if the vendored validator script has
+      # drifted from its pinned sha256 (the .py is byte-identical across the
+      # Mech repos; an accidental one-copy edit must not silently diverge).
+      - name: Verify id↔label validator pin
+        run: just verify-validator-pin
+
+      - name: Generate id↔label drift report (non-blocking)
+        run: just report-label-drift
+
+      - name: Upload drift report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: label-drift-report-${{ github.run_id }}
+          path: reports/label_drift.tsv
+          if-no-files-found: warn
