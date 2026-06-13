@@ -46,8 +46,8 @@ ingredients:
     unit: G_PER_L
 - preferred_term: DL-Na-malate
   term:
-    id: CHEBI:91261
-    label: DL-Na-malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '6.6'
     unit: G_PER_L

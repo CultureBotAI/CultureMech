@@ -138,7 +138,7 @@ ingredients:
     value: '0.0001'
     unit: G_PER_L
   term:
-    id: CHEBI:33134
+    id: CHEBI:33118
     label: boric acid
   notes: 'CAS: 10043-35-3; MW: 61.83; From Sulfur free mineral mix'
 - preferred_term: Sodium Molybdate Dihydrate

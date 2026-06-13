@@ -100,9 +100,12 @@ def test_mediaingredientmech_linker():
 
         result = linker.enrich_ingredient(ingredient)
 
+        # MIM migrated to CHEBI-keyed entities: an exact CHEBI-id match now
+        # writes `mediaingredientmech_chebi_term` carrying the matched MIM
+        # entity's CHEBI grounding (not the legacy MediaIngredientMech:NNNNNN id).
         assert result is True
-        assert 'mediaingredientmech_term' in ingredient
-        assert ingredient['mediaingredientmech_term']['id'] == 'MediaIngredientMech:000001'
+        assert 'mediaingredientmech_chebi_term' in ingredient
+        assert ingredient['mediaingredientmech_chebi_term']['id'] == 'CHEBI:17234'
         assert linker.stats['ingredients_matched'] == 1
 
 
@@ -147,8 +150,8 @@ def test_mediaingredientmech_linker_solution():
         matched = linker.enrich_solution(solution)
 
         assert matched == 1
-        assert 'mediaingredientmech_term' in solution['composition'][0]
-        assert solution['composition'][0]['mediaingredientmech_term']['id'] == 'MediaIngredientMech:000001'
+        assert 'mediaingredientmech_chebi_term' in solution['composition'][0]
+        assert solution['composition'][0]['mediaingredientmech_chebi_term']['id'] == 'CHEBI:17234'
 
 
 if __name__ == '__main__':

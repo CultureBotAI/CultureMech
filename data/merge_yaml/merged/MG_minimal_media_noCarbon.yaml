@@ -126,7 +126,7 @@ ingredients:
     value: 5e-05
     unit: G_PER_L
   term:
-    id: CHEBI:33134
+    id: CHEBI:33118
     label: boric acid
   notes: 'CAS: 10043-35-3; MW: 61.83; From Modified Wolfe''s Minerals'
 - preferred_term: Sodium Molybdate Dihydrate

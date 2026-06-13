@@ -1,0 +1,137 @@
+id: CultureMech:015858
+name: methanosarcina_z_7115_medium
+original_name: METHANOSARCINA Z-7115 MEDIUM
+category: archaea
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1415
+  term:
+    id: jcm.grmd:1415
+    label: METHANOSARCINA Z-7115 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1415'
+ingredients:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.33'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.33'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '0.33'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: Sodium acetate·3H2O
+- preferred_term: Trace element solution (see Medium No. 899 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '960.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: 8% NaHCO3 soluiton*
+  concentration:
+    value: '25.0'
+    unit: ML_PER_L
+- preferred_term: Trace vitamins* (see Medium No. 197 )
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: 50% (v/v) Methanol
+  concentration:
+    value: '4.0'
+    unit: ML_PER_L
+- preferred_term: 5% L-Cysteine·HCl·H2O solution
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+- preferred_term: 5% Na2S·9H2O solution
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components and adjust pH to 7.0.
+- step_number: 2
+  action: MIX
+  description: Autoclave the medium under a N2-CO2 (80:20 v/v) gas mixture.
+- step_number: 3
+  action: MIX
+  description: 'After cooling, aseptically and anaerobically, add the following solutions
+    (autoclaved or *filter-sterilized): Dispense the medium into culture vessels (e.g.,
+    20 ml of the medium in 60 ml serum bottles) under the same gas mixture and seal
+    with butyl rubber stoppers.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:08.381209+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1415. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.372111Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
