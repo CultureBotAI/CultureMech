@@ -826,11 +826,15 @@ validate-strict *args:
 # and reports the low-confidence kg_fallback chebi_term layer separately.
 # CI gates at the current baseline so NEW inconsistencies fail without blocking
 # on the existing backlog (G24/G25). Re-baseline by bumping --max-allowed.
+# Baseline 111 (G25 Phase 1): promoting low-confidence kg_fallback chebi_terms
+# to corpus-consensus groundings surfaced 9 additional latent salt/hydrate/isomer
+# name->multi-CHEBI ambiguities (e.g. heptahydrate vs anhydrous sulfates) that are
+# refined in G25 Phases 2-3 (OAK/OLS resolution + LLM curation).
 [group('QC')]
 check-chebi-grounding *args:
     #!/usr/bin/env bash
     uv run python scripts/audit_chebi_consistency.py \
-        --out reports/chebi_consistency.tsv --max-allowed 102 {{args}}
+        --out reports/chebi_consistency.tsv --max-allowed 111 {{args}}
 
 # Scan-only collision check for CultureMech:NNNNNN IDs. Exits non-zero if any
 # cross-file duplicates are detected. Use as a pre-commit / CI safety net.
