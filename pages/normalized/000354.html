@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>8.1-8.4</dd>
+    <dd>{&#39;min&#39;: 8.1, &#39;max&#39;: 8.4}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_K35.pdf</dd>
 </dl>
@@ -398,12 +398,18 @@ before adding the primary stocks in order:</li>
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;K35&#34; to &#34;k35&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:01:23.735695+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;8.1-8.4&#39; -&gt; {&#39;min&#39;: 8.1, &#39;max&#39;: 8.4}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:04:23+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/k35.yaml</code>
   </small>
 </footer>

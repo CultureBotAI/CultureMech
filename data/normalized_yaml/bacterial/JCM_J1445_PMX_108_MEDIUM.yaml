@@ -1,0 +1,154 @@
+id: CultureMech:015869
+name: pmx_108_medium
+original_name: PMX.108 MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1445
+  term:
+    id: jcm.grmd:1445
+    label: PMX.108 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1445'
+ingredients:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgCl2•6H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2•2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: Sodium aceate•3H2O
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.09'
+    unit: G_PER_L
+- preferred_term: Casamino acids (BD-Difico)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Tryptone (BD-Difico)
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Trace mineral solution (see Medium No. 852 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Se/W solution (see below)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Trace vitamins solution (see Medium No. 284 )
+  concentration:
+    value: '2.0'
+    unit: ML_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '970.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: 8% NaHCO3 solution*
+  concentration:
+    value: '30.0'
+    unit: ML_PER_L
+- preferred_term: 5% L-Cysteine•HCl•H2O solution
+  concentration:
+    value: '4.0'
+    unit: ML_PER_L
+- preferred_term: 5% Na2S•9H2O solution
+  concentration:
+    value: '4.0'
+    unit: ML_PER_L
+- preferred_term: Na2SeO3
+  concentration:
+    value: '2.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:48843
+    label: disodium selenite
+  mediaingredientmech_chebi_term:
+    id: CHEBI:48843
+    label: Na2SeO3·5H2O
+- preferred_term: Na2WO4•2H2O
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components thoroughly, bring to a boil, and cool down under a N2-CO2
+    (4:1, v/v) gas stream.
+- step_number: 2
+  action: MIX
+  description: Distribute the medium into culture vessels under the same gas mixture
+    (e. g., 20 ml medium in 60 ml serum bottles), seal with butyl rubber stoppers
+    and inject 10-20% gas-phase volume of H2, and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:20.624232+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1445. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.501087Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

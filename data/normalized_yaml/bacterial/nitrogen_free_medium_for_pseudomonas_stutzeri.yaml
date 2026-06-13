@@ -58,14 +58,14 @@ ingredients:
     label: FeCl3 x 6 H2O
 - preferred_term: DL-Na-malate
   term:
-    id: CHEBI:91261
-    label: DL-Na-malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '6.6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:91261
-    label: DL-Na-malate
+    id: CHEBI:91260
+    label: disodium malate
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH

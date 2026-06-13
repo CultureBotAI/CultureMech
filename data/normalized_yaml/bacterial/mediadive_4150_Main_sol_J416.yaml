@@ -144,8 +144,8 @@ composition:
     id: mediadive.compound:1756
     label: DL-Sodium malate
   chebi_term:
-    id: CHEBI:91261
-    label: disodium (s)-malate
+    id: CHEBI:91260
+    label: disodium malate
     confidence: 1.0
     match_type: exact_match
 - preferred_term: KNO3

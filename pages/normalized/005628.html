@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>7.2-7.5</dd>
+    <dd>{&#39;min&#39;: 7.2, &#39;max&#39;: 7.5}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: KOMODO ModelSEED | ID: 497.2 | DSMZ Medium: 497 (mediadive.medium:497) | Aerobic: Yes</dd>
 </dl>
@@ -657,12 +657,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;For DSM 5672 (strain Wo021)&#34; to &#34;for_dsm_5672_strain_wo021&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:01:19.748543+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;7.2-7.5&#39; -&gt; {&#39;min&#39;: 7.2, &#39;max&#39;: 7.5}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:04:19+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/for_dsm_5672_strain_wo021.yaml</code>
   </small>
 </footer>

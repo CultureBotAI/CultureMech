@@ -96,6 +96,9 @@ docs/schema/
 *.bak
 .cache/
 
+# Runtime CHEBI/term cache (regenerated at runtime, not source)
+cache/
+
 # Data layers (see docs/DATA_LAYERS.md)
 # Three-tier system: data/raw/ → data/raw_yaml/ → data/normalized_yaml/
 
@@ -147,3 +150,6 @@ tmp/
 # Legacy pre-three-tier-migration media directory (kb/media_backup +
 # kb/media_backup_old). Live data lives under data/normalized_yaml/.
 kb/
+
+# Runtime CHEBI/term cache (regenerated at runtime, not source)
+cache/
