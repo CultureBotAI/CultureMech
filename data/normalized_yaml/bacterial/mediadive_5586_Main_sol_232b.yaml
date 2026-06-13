@@ -82,7 +82,7 @@ composition:
     label: (NH4)2 citrate
   chebi_term:
     id: CHEBI:63076
-    label: CHEBI:63076
+    label: diammonium citrate
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O

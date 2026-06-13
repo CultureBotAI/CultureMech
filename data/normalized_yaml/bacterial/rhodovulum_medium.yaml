@@ -108,14 +108,14 @@ ingredients:
     label: Na-ascorbate
 - preferred_term: Na-malate
   term:
-    id: CHEBI:91261
-    label: Na-malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:91261
-    label: Na-malate
+    id: CHEBI:91260
+    label: disodium malate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439

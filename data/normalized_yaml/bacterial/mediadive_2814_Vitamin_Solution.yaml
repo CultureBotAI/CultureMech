@@ -24,8 +24,8 @@ composition:
     id: mediadive.compound:1238
     label: B12
   chebi_term:
-    id: CHEBI:176843
-    label: cyanocobalamin
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
     match_type: manual_curated
 - preferred_term: D-(+)-biotin
   concentration:
@@ -60,7 +60,7 @@ composition:
     label: Calcium D-(+)-pantothenate
   chebi_term:
     id: CHEBI:31345
-    label: CHEBI:31345
+    label: Calcium pantothenate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Pyridoxamine Dihydrochloride

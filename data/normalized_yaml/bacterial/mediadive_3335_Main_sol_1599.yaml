@@ -91,7 +91,7 @@ composition:
     label: Sodium resazurin
   chebi_term:
     id: CHEBI:8806
-    label: CHEBI:8806
+    label: Resazurin
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: NaHCO3
@@ -115,7 +115,7 @@ composition:
     label: NaCO3
   chebi_term:
     id: CHEBI:29377
-    label: CHEBI:29377
+    label: sodium carbonate
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Na-acetate

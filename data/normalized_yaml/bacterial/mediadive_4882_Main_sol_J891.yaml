@@ -38,7 +38,7 @@ composition:
     id: mediadive.compound:348
     label: Citric acid
   chebi_term:
-    id: CHEBI:53258
+    id: CHEBI:30769
     label: citric acid
     confidence: 0.9
     match_type: manual_curated

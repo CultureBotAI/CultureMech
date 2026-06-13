@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>4.5-5</dd>
+    <dd>{&#39;min&#39;: 4.5, &#39;max&#39;: 5.0}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1365a.pdf</dd>
 </dl>
@@ -221,12 +221,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;1/10 R2A MEDIUM MODIFIED (+ Yeast Extract)&#34; to &#34;1_10_r2a_medium_modified_yeast_extract&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:02:12.739363+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;4.5-5&#39; -&gt; {&#39;min&#39;: 4.5, &#39;max&#39;: 5.0}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:05:14+00:00 from
+    Generated from
     <code>data/normalized_yaml/fungal/1_10_r2a_medium_modified_yeast_extract.yaml</code>
   </small>
 </footer>

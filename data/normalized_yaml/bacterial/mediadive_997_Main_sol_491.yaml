@@ -119,7 +119,7 @@ composition:
     id: mediadive.compound:348
     label: Citric acid
   chebi_term:
-    id: CHEBI:53258
+    id: CHEBI:30769
     label: citric acid
     confidence: 0.9
     match_type: manual_curated
@@ -186,7 +186,7 @@ composition:
     label: Sodium resazurin
   chebi_term:
     id: CHEBI:8806
-    label: CHEBI:8806
+    label: Resazurin
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: Sulfur

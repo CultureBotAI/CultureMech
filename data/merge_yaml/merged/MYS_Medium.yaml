@@ -82,8 +82,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:91261
-    label: disodium (S)-malate
+    id: CHEBI:91260
+    label: disodium malate
   mediaingredientmech_term:
     id: MediaIngredientMech:000450
     label: Sodium DL-malate

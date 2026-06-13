@@ -72,14 +72,14 @@ ingredients:
     label: Sodium succinate
 - preferred_term: Sodium malate
   term:
-    id: CHEBI:91261
-    label: Sodium malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '0.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:91261
-    label: Sodium malate
+    id: CHEBI:91260
+    label: disodium malate
 - preferred_term: Sodium fumarate
   term:
     id: CHEBI:115156

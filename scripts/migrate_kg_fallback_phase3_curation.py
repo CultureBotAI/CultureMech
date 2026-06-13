@@ -161,17 +161,28 @@ class Oak:
         return out
 
     def resolve_name(self, name):
-        """Single CHEBI for a curated canonical name: OAK exact==1 confirmed by OLS."""
+        """Single CHEBI for a curated canonical name: OAK exact==1 confirmed by OLS.
+
+        Every candidate id is re-asserted against OAK (label/synonym must match
+        the curated name) before it is accepted. This blocks the failure mode
+        where an OLS-only or LLM-asserted name (e.g. "cyanocobalamin",
+        "citric acid") resolves to an id whose OAK label is a different
+        compound -- those now fail to resolve and stay flagged instead of
+        minting a wrong authoritative grounding.
+        """
         oak = self.exact(name)
         if len(oak) == 1:
             c = next(iter(oak))
             ols = self.ols(name)
-            if c in ols or not ols:
+            if (c in ols or not ols) and self.label_matches(c, name):
                 return c
-        # fall back to OLS single
+        # fall back to OLS single -- but only if OAK confirms the name maps to
+        # this id (reject when label doesn't match the id's OAK label/synonyms).
         ols = self.ols(name)
         if len(ols) == 1:
-            return next(iter(ols))
+            c = next(iter(ols))
+            if self.label_matches(c, name):
+                return c
         return None
 
 
@@ -228,7 +239,12 @@ def main(argv=None) -> int:
             was = str(ct.get("id"))
             if lk in name_to_chebi:
                 cid, nm, mt = name_to_chebi[lk]
-                ing["chebi_term"] = {"id": cid, "label": nm, "match_type": mt}
+                # Write OAK's canonical rdfs:label for the resolved id, NOT the
+                # curator/source name -- the curated name is only used to FIND
+                # the id; the stored label must agree with the id (fall back to
+                # the curated name only if OAK has no label for the id).
+                label = oak.label(cid) or nm
+                ing["chebi_term"] = {"id": cid, "label": label, "match_type": mt}
                 stats["resolved"] += 1; local += 1
                 changelog.append((lk, was, cid, "resolve_" + mt))
             elif curation.get(lk, ("", ""))[0] == "deground":
@@ -236,7 +252,9 @@ def main(argv=None) -> int:
                 stats["degrounded"] += 1; local += 1
                 changelog.append((lk, was, "REMOVED", "deground"))
             elif lk not in curation and oak.label_matches(was, ing.get("preferred_term", "")):
-                # not curated but current grounding is actually correct -> confirm
+                # not curated but current grounding is actually correct -> confirm,
+                # and normalize the stored label to OAK's canonical rdfs:label.
+                ct["label"] = oak.label(was) or ct.get("label", "")
                 ct["match_type"] = "manual_curated"
                 stats["confirmed"] += 1; local += 1
                 changelog.append((lk, was, was, "confirm"))

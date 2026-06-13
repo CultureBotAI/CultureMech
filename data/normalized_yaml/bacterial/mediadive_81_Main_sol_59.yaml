@@ -75,7 +75,7 @@ composition:
     label: (NH4) citrate
   chebi_term:
     id: CHEBI:63037
-    label: CHEBI:63037
+    label: triammonium citrate
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: Tween 80

@@ -290,7 +290,7 @@ ingredients:
     id: CHEBI:189426
     label: Pyridoxine dihydrochloride
   mediaingredientmech_chebi_term:
-    id: CHEBI:131532
+    id: CHEBI:189426
     label: Pyridoxine dihydrochloride
 - preferred_term: D(+)-Biotin
   concentration:

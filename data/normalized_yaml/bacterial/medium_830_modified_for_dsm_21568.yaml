@@ -206,10 +206,8 @@ curation_history:
     id scheme.'
 - timestamp: '2026-06-08T23:19:46.575593+00:00'
   curator: chebi-regrounding-v1.0
-  action: Corrected CHEBI ingredient grounding (audit G21/G22)
-  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
-    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
-    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 - timestamp: '2026-06-10T07:37:35.279572+00:00'
   curator: primary-term-regrounding-v1.0
   action: Re-grounded wrong primary term id (OAK-verified)

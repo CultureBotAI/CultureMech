@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>7.5-7.6</dd>
+    <dd>{&#39;min&#39;: 7.5, &#39;max&#39;: 7.6}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: KOMODO ModelSEED | ID: 473 | DSMZ Medium: 473 (mediadive.medium:473) | Aerobic: No</dd>
 </dl>
@@ -502,12 +502,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;MEDIUM WITH EDTA AS CARBON SOURCE&#34; to &#34;medium_with_edta_as_carbon_source&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:00:52.184699+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;7.5-7.6&#39; -&gt; {&#39;min&#39;: 7.5, &#39;max&#39;: 7.6}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:03:53+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/KOMODO_473_MEDIUM_WITH_EDTA_AS_CARBON_SOURCE.yaml</code>
   </small>
 </footer>

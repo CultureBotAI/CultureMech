@@ -62,7 +62,7 @@ composition:
     label: NH4HCO3
   chebi_term:
     id: CHEBI:184335
-    label: CHEBI:184335
+    label: Ammonium bicarbonate
     confidence: 0.7
     match_type: corpus_consensus
 preparation_notes: "Mix components and adjust pH to 8.0. Distribute the medium into\

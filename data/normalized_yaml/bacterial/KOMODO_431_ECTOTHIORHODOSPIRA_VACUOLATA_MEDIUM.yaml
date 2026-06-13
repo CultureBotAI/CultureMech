@@ -95,14 +95,14 @@ ingredients:
     label: Na2S2O3 x 5 H2O
 - preferred_term: Na-malate
   term:
-    id: CHEBI:91261
-    label: Na-malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '1'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:91261
-    label: Na-malate
+    id: CHEBI:91260
+    label: disodium malate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956

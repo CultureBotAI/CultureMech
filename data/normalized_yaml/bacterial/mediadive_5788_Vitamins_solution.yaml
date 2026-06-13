@@ -97,7 +97,7 @@ composition:
     label: Cobalamin
   chebi_term:
     id: CHEBI:28911
-    label: CHEBI:28911
+    label: cob(III)alamin
     confidence: 0.9
     match_type: corpus_consensus
 - preferred_term: p-Aminobenzoic acid

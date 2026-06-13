@@ -42,7 +42,7 @@
 <li>Microbial cultivation</li>      </ul>
     </dd>
     <dt>pH range</dt>
-    <dd>5.0-5.8</dd>
+    <dd>{&#39;min&#39;: 5.0, &#39;max&#39;: 5.8}</dd>
     <dt>Notes</dt>
     <dd class="prewrap">Source: KOMODO ModelSEED | ID: 1323 | DSMZ Medium: 1323 (mediadive.medium:1323) | Aerobic: No</dd>
 </dl>
@@ -332,12 +332,18 @@ flowchart LR
   <td>NAME_NORMALIZED</td>
   <td class="small prewrap">Normalized name from &#34;METHYLOCAPSA AUREA MEDIUM&#34; to &#34;methylocapsa_aurea_medium&#34; for consistent matching</td>
 </tr>
+<tr>
+  <td class="muted small">2026-05-20T06:00:50.112840+00:00</td>
+  <td>migrate_ph_range.py</td>
+  <td>MIGRATED_PH_RANGE</td>
+  <td class="small prewrap">ph_range &#39;5.0-5.8&#39; -&gt; {&#39;min&#39;: 5.0, &#39;max&#39;: 5.8}</td>
+</tr>
 </tbody>
 </table>
 </section>
 <footer>
   <small class="muted">
-    Generated 2026-05-16T08:03:51+00:00 from
+    Generated from
     <code>data/normalized_yaml/bacterial/KOMODO_1323_METHYLOCAPSA_AUREA_MEDIUM.yaml</code>
   </small>
 </footer>

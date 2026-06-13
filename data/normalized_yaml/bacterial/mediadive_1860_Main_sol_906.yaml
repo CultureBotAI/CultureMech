@@ -47,8 +47,8 @@ composition:
     id: mediadive.compound:825
     label: Na3-citrate x 5 H2O
   chebi_term:
-    id: CHEBI:32142
-    label: trisodium citrate
+    id: CHEBI:53258
+    label: sodium citrate
     match_type: manual_curated
 - preferred_term: Yeast extract
   concentration:
@@ -73,7 +73,7 @@ composition:
     label: Sodium resazurin
   chebi_term:
     id: CHEBI:8806
-    label: CHEBI:8806
+    label: Resazurin
     confidence: 0.7
     match_type: corpus_consensus
 - preferred_term: CaCl2 x 2 H2O

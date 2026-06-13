@@ -64,14 +64,14 @@ ingredients:
     label: CaCl2 x 2 H2O
 - preferred_term: Na-DL-malate
   term:
-    id: CHEBI:91261
-    label: Na-DL-malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '3.6'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:91261
-    label: Na-DL-malate
+    id: CHEBI:91260
+    label: disodium malate
 - preferred_term: Yeast extract
   concentration:
     value: '1'
