@@ -40,9 +40,9 @@ ingredients:
   concentration:
     value: '0.00061931'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.000313803'
@@ -64,8 +64,8 @@ ingredients:
   concentration:
     value: '15.5003'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: '''Iron(III'
   concentration:
@@ -111,6 +111,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Deshpande medium; fang et al" to "deshpande_medium_fang_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:40:55.726594+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 205
   term:

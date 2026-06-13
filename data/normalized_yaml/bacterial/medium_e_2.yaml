@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '7.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4 x 3 H2O
 - preferred_term: KH2PO4
   term:
@@ -33,8 +33,8 @@ ingredients:
   concentration:
     value: '3.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -43,8 +43,8 @@ ingredients:
   concentration:
     value: '0.246476'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Thiamine
   term:
@@ -63,14 +63,14 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0. n-Octane is evaporated in a desiccator as sole
-    source of carbon.
+  description: Adjust pH to 7.0. n-Octane is evaporated in a desiccator as sole source
+    of carbon.
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,12 +89,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.904226+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM E-2" to "medium_e_2" for consistent
-    matching
+  notes: Normalized name from "MEDIUM E-2" to "medium_e_2" for consistent matching
+- timestamp: '2026-06-05T07:41:28.794019+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_694_MEDIUM_E-2.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006312
   name: medium_e_2
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

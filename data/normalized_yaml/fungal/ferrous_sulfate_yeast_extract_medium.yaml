@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '7.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000700
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32586
     label: Na2SO4 x 10 H2O
 - preferred_term: (NH4)2SO4
   term:
@@ -33,8 +33,8 @@ ingredients:
   concentration:
     value: '22.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KCl
   term:
@@ -43,8 +43,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -53,8 +53,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
@@ -63,8 +63,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000586
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86159
     label: Ca(NO3)2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -83,8 +83,8 @@ ingredients:
   concentration:
     value: '278'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
@@ -116,4 +116,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "FERROUS SULFATE/YEAST EXTRACT MEDIUM" to "ferrous_sulfate_yeast_extract_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:56.831205+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true

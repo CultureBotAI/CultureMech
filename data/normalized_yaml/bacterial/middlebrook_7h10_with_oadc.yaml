@@ -14,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
-    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: DI Water
   concentration:
     value: '1000.0'
@@ -93,9 +93,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Dextrose (BD 215530)
   concentration:
     value: '2'
@@ -166,3 +166,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Middlebrook 7H10 with OADC" to "middlebrook_7h10_with_oadc"
     for consistent matching
+- timestamp: '2026-06-05T07:41:33.915646+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: 2e-05
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Vitamin B12
   term:
@@ -32,8 +32,8 @@ ingredients:
   concentration:
     value: 1e-06
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: Methanol
   term:
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '3.168'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
     label: Methanol
 - preferred_term: Agar
   term:
@@ -53,8 +53,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -75,10 +75,16 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BM MEDIUM" to "bm_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:51.246569+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1192_BM_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003929
   name: bm_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1192; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1192; local ingredient
+    and concentration signatures match.

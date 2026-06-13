@@ -24,8 +24,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000269
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39010
     label: MES
 - preferred_term: Yeast extract
   concentration:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Na2S x 9 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 applications:
 - Microbial cultivation
@@ -94,19 +94,24 @@ curation_history:
 - timestamp: '2026-03-17T19:46:01.655558+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINITOGA medium" to "marinitoga_medium" for
-    consistent matching
+  notes: Normalized name from "MARINITOGA medium" to "marinitoga_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:27.641452+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/for_dsm_15518_dsm_15807_and_dsm_16785.yaml
+- path: data/normalized_yaml/bacterial/for_dsm_15518_dsm_15807_and_dsm_16785.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006774
   name: for_dsm_15518_dsm_15807_and_dsm_16785
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/marinitoga_hydrogenitolerans_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002072
   name: marinitoga_hydrogenitolerans_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

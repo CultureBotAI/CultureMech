@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '4.49102'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: KH2PO4
   term:
@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '1.49701'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4NO3
   concentration:
@@ -38,8 +38,8 @@ ingredients:
   term:
     id: CHEBI:63038
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: NH4NO3
 - preferred_term: NaCl
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.998004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '0.199601'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2
   term:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '0.00998004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '0.00998004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: NiSO4 x 7 H2O
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '5.98802e-05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000599
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53001
     label: NiSO4 x 7 H2O
 - preferred_term: MoO3
   term:
@@ -98,8 +98,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000383
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30627
     label: MoO3
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -108,8 +108,8 @@ ingredients:
   concentration:
     value: '0.007'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -118,8 +118,8 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: H3BO3
   term:
@@ -128,8 +128,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: MnSO4 x n H2O
   concentration:
@@ -145,8 +145,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 applications:
 - Microbial cultivation
@@ -176,3 +176,9 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-06-05T07:40:14.610069+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '3.46'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000276
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
     label: PIPES
 - preferred_term: Yeast extract
   concentration:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000677
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33403
     label: Elemental sulphur
 - preferred_term: NH4Cl
   term:
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
@@ -61,8 +61,8 @@ ingredients:
   concentration:
     value: '0.35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: CaCl2
   term:
@@ -71,8 +71,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: FeCl3
   term:
@@ -81,8 +81,8 @@ ingredients:
   concentration:
     value: '0.0067'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000705
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30808
     label: FeCl3
 - preferred_term: Na2WO4
   term:
@@ -91,8 +91,8 @@ ingredients:
   concentration:
     value: '0.0029'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000240
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63940
     label: Na2WO4
 - preferred_term: Resazurin
   term:
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Na2S x 9 H2O
   term:
@@ -111,19 +111,19 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare the medium without the yeast extract, peptone and sodium
-    sulphide. Boil the medium and cool under nitrogen. Adjust the pH to 6.8.
-    Dispense into hungate tubes or serum bottles under a nitrogen atmosphere.
-    Sterilise the medium at 100°C for 3 hours on 3 consecutive days. Add the
-    peptone and yeast extract from sterile (10% w/v) stock solutions. The medium
-    is reduced by adding a sterile, neutralised 5% w/v sodium sulphide solution
-    to an end concentration of 0.025%. Final pH should be 6.8
+  description: Prepare the medium without the yeast extract, peptone and sodium sulphide.
+    Boil the medium and cool under nitrogen. Adjust the pH to 6.8. Dispense into hungate
+    tubes or serum bottles under a nitrogen atmosphere. Sterilise the medium at 100°C
+    for 3 hours on 3 consecutive days. Add the peptone and yeast extract from sterile
+    (10% w/v) stock solutions. The medium is reduced by adding a sterile, neutralised
+    5% w/v sodium sulphide solution to an end concentration of 0.025%. Final pH should
+    be 6.8
 applications:
 - Microbial cultivation
 curation_history:
@@ -142,12 +142,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.686698+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YPS MEDIUM" to "yps_medium" for consistent
-    matching
+  notes: Normalized name from "YPS MEDIUM" to "yps_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:16.384489+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_990_YPS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006962
   name: yps_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.04852'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Sodium molybdate
   concentration:
@@ -46,8 +46,8 @@ ingredients:
   concentration:
     value: '0.01491'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
@@ -63,8 +63,8 @@ ingredients:
   concentration:
     value: '4.86874'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Cobalt chloride
   concentration:
@@ -128,6 +128,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Ecoli bl21 medium; park et al" to "ecoli_bl21_medium_park_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:40:59.296413+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 277
   term:

@@ -13,8 +13,8 @@ ingredients:
     value: '22.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -44,8 +44,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 preparation_steps:
 - step_number: 1
@@ -76,6 +76,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "basal solution P" to "basal_solution_p" for consistent
     matching
+- timestamp: '2026-06-05T07:40:50.575570+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 137
   term:

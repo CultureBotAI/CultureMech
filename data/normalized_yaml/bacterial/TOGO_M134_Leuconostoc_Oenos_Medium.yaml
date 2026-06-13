@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
@@ -40,9 +40,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
-    label: Tween 80
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '0.05'
@@ -61,9 +61,9 @@ ingredients:
   term:
     id: CHEBI:63076
     label: diammonium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000400
-    label: Diammonium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
+    label: diammonium citrate
 - preferred_term: Fructose
   concentration:
     value: '5'
@@ -73,9 +73,9 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
-    label: Fructose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28645
+    label: beta-D-fructofuranose
 - preferred_term: Tomato juice, filtered
   concentration:
     value: '100'
@@ -90,9 +90,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '0.5'
@@ -140,3 +140,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Leuconostoc Oenos Medium" to "leuconostoc_oenos_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:32.559790+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

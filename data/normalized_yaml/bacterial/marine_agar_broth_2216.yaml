@@ -29,8 +29,8 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: Sodium Chloride
 - preferred_term: Boric Acid
   concentration:
@@ -41,9 +41,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: Boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: Boric Acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: Boric acid
 - preferred_term: Potassium Chloride
   concentration:
     value: '0.55'
@@ -53,9 +53,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium Chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Sodium Bicarbonate
   concentration:
     value: '0.16'
@@ -65,8 +65,8 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: Sodium Bicarbonate
 - preferred_term: Sodium Sulfate
   concentration:
@@ -74,8 +74,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium Sulfate
   term:
     id: CHEBI:32149
@@ -89,9 +89,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
-    label: Calcium Chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: Disodium Phosphate
   concentration:
     value: '0.008'
@@ -101,9 +101,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Disodium Phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: Ammonium Nitrate
   concentration:
     value: '0.0016'
@@ -113,9 +113,9 @@ ingredients:
   term:
     id: CHEBI:63038
     label: Ammonium nitrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
-    label: Ammonium Nitrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
+    label: Ammonium nitrate
 - preferred_term: Sodium Fluoride
   concentration:
     value: '0.0024'
@@ -131,8 +131,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
     label: Potassium Bromide
   term:
     id: CHEBI:32030
@@ -143,8 +143,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000281
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Ferric Citrate
   term:
     id: CHEBI:144421
@@ -167,9 +167,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium Chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Sodium Silicate
   concentration:
     value: '0.004'
@@ -179,9 +179,9 @@ ingredients:
   term:
     id: CHEBI:60720
     label: sodium silicate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000833
-    label: Sodium Silicate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:60720
+    label: sodium silicate
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -190,9 +190,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -229,3 +229,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Marine Agar/Broth 2216" to "marine_agar_broth_2216"
     for consistent matching
+- timestamp: '2026-06-05T07:41:12.796409+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

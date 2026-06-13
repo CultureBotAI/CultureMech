@@ -13,9 +13,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: Distilled water
   concentration:
     value: '200.0'
@@ -25,8 +25,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: hemin
   concentration:
@@ -37,8 +37,8 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: hemin
 - preferred_term: ethanol
   concentration:
@@ -49,8 +49,8 @@ ingredients:
   term:
     id: CHEBI:16236
     label: ethanol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: ethanol
 - preferred_term: menadione
   concentration:
@@ -60,9 +60,9 @@ ingredients:
   term:
     id: CHEBI:28869
     label: Menadione
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000903
-    label: menadione
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28869
+    label: Menadione
 media_term:
   preferred_term: TOGO Medium M470
   term:
@@ -114,6 +114,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:41.655752+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: TRYPTICASE SOY BLOOD AGAR (see Medium [M147])
   composition: []

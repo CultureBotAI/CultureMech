@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Agar (if needed)
   concentration:
@@ -59,8 +59,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:14.079614+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Nutrient Agar/Broth" to "nutrient_agar_broth" for
-    consistent matching
+  notes: Normalized name from "Nutrient Agar/Broth" to "nutrient_agar_broth" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:40.116331+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/bn_agar.yaml
   relationship: SOURCE_DUPLICATE
@@ -68,5 +74,5 @@ parent_media:
   name: bn_agar
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

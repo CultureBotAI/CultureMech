@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '19.802'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: NaHCO3
   term:
@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '9.90099'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaCl
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '4.9505'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: K2HPO4
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.990099'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KSCN
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '7.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000608
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30951
     label: KSCN
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: EDTA
   term:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -98,8 +98,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -108,8 +108,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -118,8 +118,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -128,8 +128,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -138,8 +138,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -148,8 +148,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: H3BO3
   term:
@@ -158,15 +158,15 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Filter-sterilize KSCN solution and separately autoclave Trace
-    elements solution and MgCl2 x 6H2O solution. Aseptically add KSCN solution,
-    Trace elements solution and MgCl2 x 6H2O solution to the medium.
+  description: Filter-sterilize KSCN solution and separately autoclave Trace elements
+    solution and MgCl2 x 6H2O solution. Aseptically add KSCN solution, Trace elements
+    solution and MgCl2 x 6H2O solution to the medium.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3 with HCl.
@@ -188,18 +188,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:28.210657+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "JCM MEDIUM No. 310" to "jcm_medium_no_310" for
-    consistent matching
+  notes: Normalized name from "JCM MEDIUM No. 310" to "jcm_medium_no_310" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:10.062546+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/jcm_medium_no_311.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002669
   name: jcm_medium_no_311
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/jcm_medium_no_312.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002670
   name: jcm_medium_no_312
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

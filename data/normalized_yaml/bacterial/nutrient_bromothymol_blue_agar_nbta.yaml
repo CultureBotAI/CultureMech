@@ -27,8 +27,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Bromothymol blue
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '25'
     unit: MG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001021
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86155
     label: Bromothymol blue
 preparation_steps:
 - step_number: 1
@@ -46,8 +46,8 @@ preparation_steps:
   description: Autoclave at 121 °C for 21 min.
 - step_number: 2
   action: MIX
-  description: After autoclavation add 4 mL from a sterile
-    2,3,5-triphenyltetrazolium chloride stock solution (1% w/v).
+  description: After autoclavation add 4 mL from a sterile 2,3,5-triphenyltetrazolium
+    chloride stock solution (1% w/v).
 applications:
 - Microbial cultivation
 references:
@@ -68,8 +68,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:14.863722+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Nutrient bromothymol blue agar NBTA" to
-    "nutrient_bromothymol_blue_agar_nbta" for consistent matching
+  notes: Normalized name from "Nutrient bromothymol blue agar NBTA" to "nutrient_bromothymol_blue_agar_nbta"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:40.156949+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1_NUTRIENT_AGAR.yaml
   relationship: SOURCE_DUPLICATE
@@ -77,5 +83,5 @@ parent_media:
   name: nutrient_agar
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
-  1 source record.
+- Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium 1
+  source record.

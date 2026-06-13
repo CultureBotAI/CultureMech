@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: NH4Cl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: KH2PO4
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2SO4
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -104,8 +104,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: Maltose monohydrate
   concentration:
@@ -118,20 +118,19 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000793
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18320
     label: DL-Dithiothreitol
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, maltose and DTT, then
-    sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave at 121°C for 20 minutes. Add maltose and DTT from
-    sterile anoxic stock solutions prepared under 100% N2 gas and sterilized by
-    filtration and carbonate from a sterile stock solution prepared under 80% N2
-    and 20% CO2 gas atmosphere. Check pH of complete medium and adjust to 7.4,
-    if necessary.
+  description: Dissolve ingredients except carbonate, maltose and DTT, then sparge
+    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave
+    at 121°C for 20 minutes. Add maltose and DTT from sterile anoxic stock solutions
+    prepared under 100% N2 gas and sterilized by filtration and carbonate from a sterile
+    stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Check pH of complete
+    medium and adjust to 7.4, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -150,12 +149,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.292743+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPHAEROCHAETA MEDIUM" to "sphaerochaeta_medium"
-    for consistent matching
+  notes: Normalized name from "SPHAEROCHAETA MEDIUM" to "sphaerochaeta_medium" for
+    consistent matching
+- timestamp: '2026-06-05T07:41:46.150633+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/spirochaeta_coccoides_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003952
   name: spirochaeta_coccoides_medium
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

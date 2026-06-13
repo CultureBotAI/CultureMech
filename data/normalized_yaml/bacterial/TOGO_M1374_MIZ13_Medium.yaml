@@ -14,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Sodium acetate
   concentration:
     value: '1.36'
@@ -25,9 +25,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1.1'
@@ -37,9 +37,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: MES
   concentration:
     value: '1.95'
@@ -48,8 +48,8 @@ ingredients:
   term:
     id: CHEBI:39010
     label: MES
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000269
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39010
     label: MES
 - preferred_term: Sodium fumarate
   concentration:
@@ -59,9 +59,9 @@ ingredients:
   term:
     id: CHEBI:115156
     label: disodium fumarate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
-    label: Sodium fumarate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
+    label: disodium fumarate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -120,6 +120,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:32.788992+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: Modified Wolfe's solution (see Medium [M641])
   composition: []

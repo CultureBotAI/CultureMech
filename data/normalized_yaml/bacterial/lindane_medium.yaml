@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000892
+  mediaingredientmech_chebi_term:
+    id: CHEBI:24536
     label: Hexachlorocyclo-hexane
 preparation_steps:
 - step_number: 1
@@ -48,12 +48,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:10.344862+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LINDANE MEDIUM" to "lindane_medium" for
-    consistent matching
+  notes: Normalized name from "LINDANE MEDIUM" to "lindane_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:11.207331+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_138_LINDANE_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004112
   name: lindane_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 138; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 138; local ingredient
+    and concentration signatures match.

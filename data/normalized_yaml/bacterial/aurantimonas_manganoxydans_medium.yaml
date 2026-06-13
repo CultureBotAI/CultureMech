@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
     label: Ferric ammonium citrate
 - preferred_term: Agar
   term:
@@ -48,8 +48,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: NaCl
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '17.55'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -68,8 +68,8 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '12.35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 7 H2O
   term:
@@ -88,15 +88,15 @@ ingredients:
   concentration:
     value: '1.46'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2 x 7 H2O
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: After autoclaving add 20ml 1M HEPES sterile buffer (pH 7.8) and
-    0.1ml of a sterile 3mg/ml of ferric ammonium citrate. Final pH is 7.5. The
-    medium may be solidified by adding 15 g/l agar.
+  description: After autoclaving add 20ml 1M HEPES sterile buffer (pH 7.8) and 0.1ml
+    of a sterile 3mg/ml of ferric ammonium citrate. Final pH is 7.5. The medium may
+    be solidified by adding 15 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -115,13 +115,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.724225+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AURANTIMONAS MANGANOXYDANS MEDIUM" to
-    "aurantimonas_manganoxydans_medium" for consistent matching
+  notes: Normalized name from "AURANTIMONAS MANGANOXYDANS MEDIUM" to "aurantimonas_manganoxydans_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:50.082086+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_1326_AURANTIMONAS_MANGANOXYDANS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_1326_AURANTIMONAS_MANGANOXYDANS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004082
   name: aurantimonas_manganoxydans_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1326; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1326; local ingredient
+    and concentration signatures match.

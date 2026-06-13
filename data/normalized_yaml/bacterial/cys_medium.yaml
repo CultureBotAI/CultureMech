@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: NaCl
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '0.125'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
     label: MgCl2
 - preferred_term: CaCl2
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -67,8 +67,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Gelrite
   term:
@@ -77,8 +77,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000929
+  mediaingredientmech_chebi_term:
+    id: CHEBI:85248
     label: Gelrite
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -87,8 +87,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: VOSO4 x H2O
   concentration:
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -121,8 +121,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -131,8 +131,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -141,8 +141,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 preparation_steps:
 - step_number: 1
@@ -151,8 +151,8 @@ preparation_steps:
     order:'
 - step_number: 2
   action: AUTOCLAVE
-  description: Adjust to pH 7.5 at room temperature and add water to the final
-    volume of 1 liter. Sterilize with and autoclave at 121°C for 15 min.
+  description: Adjust to pH 7.5 at room temperature and add water to the final volume
+    of 1 liter. Sterilize with and autoclave at 121°C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -171,13 +171,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.286348+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CYS MEDIUM" to "cys_medium" for consistent
-    matching
+  notes: Normalized name from "CYS MEDIUM" to "cys_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:55.187932+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/cys_medium_with_modified_nacl_concentration.yaml
+- path: data/normalized_yaml/bacterial/cys_medium_with_modified_nacl_concentration.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:000542
   name: cys_medium_with_modified_nacl_concentration
-  notes: CYS medium with modified NaCl concentration increases NaCl from 3 g/L
-    to 20 g/L while all other parsed ingredients remain unchanged.
+  notes: CYS medium with modified NaCl concentration increases NaCl from 3 g/L to
+    20 g/L while all other parsed ingredients remain unchanged.

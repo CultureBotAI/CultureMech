@@ -24,8 +24,8 @@ ingredients:
   concentration:
     value: '0.543478'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -35,8 +35,8 @@ ingredients:
     value: '44.8148'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 14.8148, 30.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: NaHCO3
   term:
@@ -45,8 +45,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Resazurin
   term:
@@ -55,8 +55,8 @@ ingredients:
   concentration:
     value: '0.0111111'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Ammonium chloride
   term:
@@ -65,8 +65,8 @@ ingredients:
   concentration:
     value: '13.4615'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Ammonium acetate
   term:
@@ -75,8 +75,8 @@ ingredients:
   concentration:
     value: '9.61539'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000701
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62947
     label: Ammonium acetate
 - preferred_term: Pyruvic acid sodium salt
   term:
@@ -95,8 +95,8 @@ ingredients:
   concentration:
     value: '9.61539'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000243
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4167
     label: Dextrose
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -105,8 +105,8 @@ ingredients:
   concentration:
     value: '19.2308'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -115,8 +115,8 @@ ingredients:
   concentration:
     value: '13.4615'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: KH2PO4
   term:
@@ -125,8 +125,8 @@ ingredients:
   concentration:
     value: '13.4615'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Vitamin B12
   term:
@@ -135,8 +135,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 applications:
 - Microbial cultivation
@@ -166,3 +166,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PFENNIG'S medium I WITH Yeast extract" to "pfennigs_medium_i_with_yeast_extract"
     for consistent matching
+- timestamp: '2026-06-05T07:41:41.596491+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

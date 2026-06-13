@@ -23,9 +23,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -66,4 +66,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RCM MEDIUM (with Casamino acids)" to "rcm_medium_with_casamino_acids"
     for consistent matching
+- timestamp: '2026-06-05T07:41:43.917509+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:634a

@@ -14,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
     value: '200'
@@ -35,9 +35,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: polyoxyethylene sorbitan mono-oleate (Tween 80)
   concentration:
     value: '1'
@@ -71,8 +71,8 @@ ingredients:
   term:
     id: CHEBI:18222
     label: xylose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000900
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18222
     label: xylose
 - preferred_term: arabinose
   concentration:
@@ -83,9 +83,9 @@ ingredients:
   term:
     id: CHEBI:22599
     label: Arabinose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001033
-    label: arabinose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22599
+    label: Arabinose
 - preferred_term: CH3COONa.3H2O
   concentration:
     value: '5'
@@ -100,9 +100,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Oxoid peptone
   concentration:
     value: '10'
@@ -147,4 +147,10 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS medium" to "mrs_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:39.420291+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true

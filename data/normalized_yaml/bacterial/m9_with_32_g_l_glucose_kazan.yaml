@@ -13,8 +13,8 @@ ingredients:
     value: '0.15247'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000278
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15603
     label: L-Leucine
 - preferred_term: L-Proline
   term:
@@ -24,8 +24,8 @@ ingredients:
     value: '0.17371'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000280
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17203
     label: L-Proline
 - preferred_term: beta-D-Glucose
   concentration:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '0.0001431'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000826
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28971
     label: Ampicillin
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -62,9 +62,9 @@ ingredients:
   concentration:
     value: '8.55578'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -72,8 +72,8 @@ ingredients:
   concentration:
     value: '1000.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -99,21 +99,19 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified
-    concentrations
+  description: Dissolve all ingredients in distilled water to specified concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
-    components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
 - timestamp: '2026-01-27T07:21:43.739655Z'
   curator: mediadb-import
@@ -131,8 +129,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.693456+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "'M9 with 32 g/l glucose (kazan" to
-    "m9_with_32_g_l_glucose_kazan" for consistent matching
+  notes: Normalized name from "'M9 with 32 g/l glucose (kazan" to "m9_with_32_g_l_glucose_kazan"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:12.216552+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 127
   term:
@@ -149,9 +153,9 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007011
   name: m9_with_2_g_l_glucose_kazan
-  notes: MediaDB M9 Kazan glucose-dose grid; reviewed as concentration variant
-    of the 2 g/L glucose record.
+  notes: MediaDB M9 Kazan glucose-dose grid; reviewed as concentration variant of
+    the 2 g/L glucose record.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Glucose concentration increased from 2 g/L (11.1012 mM) to 32 g/L (177.62 mM);
-  all other parsed ingredient concentrations match the parent.
+- Glucose concentration increased from 2 g/L (11.1012 mM) to 32 g/L (177.62 mM); all
+  other parsed ingredient concentrations match the parent.

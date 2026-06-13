@@ -1,0 +1,501 @@
+chebi_id	culturemech_label	mim_preferred_term	mim_ontology_label
+CHEBI:113451	Sodium Ascorbate	Na-ascorbate	Na-ascorbate
+CHEBI:113451	Sodium ascorbate	Na-ascorbate	Na-ascorbate
+CHEBI:113451	sodium ascorbate	Na-ascorbate	Na-ascorbate
+CHEBI:113455	Sodium benzoate	Na-benzoate	Na-benzoate
+CHEBI:113455	sodium benzoate	Na-benzoate	Na-benzoate
+CHEBI:114126	Sodium caproate	Na-caproate	Na-caproate
+CHEBI:115156	Disodium fumarate	Na2-fumarate	Na2-fumarate
+CHEBI:115156	Na-fumarate	Na2-fumarate	Na2-fumarate
+CHEBI:115156	Sodium fumarate	Na2-fumarate	Na2-fumarate
+CHEBI:115156	sodium fumarate	Na2-fumarate	Na2-fumarate
+CHEBI:131378	Fe(NH4)2(SO4)2 x 7H2O	Fe(NH4)2(SO4)2 x 7 H2O	Fe(NH4)2(SO4)2 x 7 H2O
+CHEBI:131524	MnSO4·5H2O	MnSO4 x 5 H2O	MnSO4 x 5 H2O
+CHEBI:131527	Dipotassium Phosphate	K2HPO4 x 3 H2O	K2HPO4 x 3 H2O
+CHEBI:131527	Dipotassium hydrogen phosphate	K2HPO4 x 3 H2O	K2HPO4 x 3 H2O
+CHEBI:131527	Dipotassium phosphate	K2HPO4 x 3 H2O	K2HPO4 x 3 H2O
+CHEBI:131527	K2HPO4	K2HPO4 x 3 H2O	K2HPO4 x 3 H2O
+CHEBI:131527	K2HPO4 x 3H2O	K2HPO4 x 3 H2O	K2HPO4 x 3 H2O
+CHEBI:131527	K2HPO4x 3 H2O	K2HPO4 x 3 H2O	K2HPO4 x 3 H2O
+CHEBI:131527	Potassium phosphate	K2HPO4 x 3 H2O	K2HPO4 x 3 H2O
+CHEBI:131531	Pyridoxamine-HCl	Pyridoxamine hydrochloride	Pyridoxamine hydrochloride
+CHEBI:131531	Pyridoxine HCl	Pyridoxamine hydrochloride	Pyridoxamine hydrochloride
+CHEBI:131531	Pyridoxine-HCl	Pyridoxamine hydrochloride	Pyridoxamine hydrochloride
+CHEBI:131531	Pyridoxine·HCl	Pyridoxamine hydrochloride	Pyridoxamine hydrochloride
+CHEBI:131531	pyridoxamine-HCl	Pyridoxamine hydrochloride	Pyridoxamine hydrochloride
+CHEBI:131531	pyridoxine-HCl	Pyridoxamine hydrochloride	Pyridoxamine hydrochloride
+CHEBI:132089	Na2-ß-glycerolphosphate	Sodium beta-glycerophosphate	Sodium beta-glycerophosphate
+CHEBI:132095	NaVO3 x n H2O	NaVO3 x H2O	NaVO3 x H2O
+CHEBI:132103	Sodium perchlorate	Sodium perchlorate monohydrate	sodium perchlorate
+CHEBI:132106	Sodium propionate	Na-propionate	Na-propionate
+CHEBI:132106	sodium propionate	Na-propionate	Na-propionate
+CHEBI:132108	Na2SiO3·9H2O	Na2SiO3 x 9 H2O	Na2SiO3 x 9 H2O
+CHEBI:132112	Na-thiosulfate	Na2S2O3	sodium thiosulfate
+CHEBI:132112	NaS2O3	Na2S2O3	sodium thiosulfate
+CHEBI:132112	Sodium Thiosulfate	Na2S2O3	sodium thiosulfate
+CHEBI:132112	Sodium thiosulfate	Na2S2O3	sodium thiosulfate
+CHEBI:132112	Sodium thiosulphate	Na2S2O3	sodium thiosulfate
+CHEBI:132112	sodium thiosulfate	Na2S2O3	sodium thiosulfate
+CHEBI:132764	Na-oxalate	Disodium oxalate	sodium oxalate
+CHEBI:132766	Nitrilotriacetic acid, trisodium salt	0.5 M Nitrilotriacetic acid, disodium salt	sodium nitrilotriacetate
+CHEBI:144421	Ferric Citrate	Fe(III) citrate	Fe(III) citrate
+CHEBI:144421	Ferric citrate	Fe(III) citrate	Fe(III) citrate
+CHEBI:144421	Iron(III) citrate	Fe(III) citrate	Fe(III) citrate
+CHEBI:144421	ferric citrate	Fe(III) citrate	Fe(III) citrate
+CHEBI:144421	iron(III) citrate	Fe(III) citrate	Fe(III) citrate
+CHEBI:15346	Coenzym A	Coenzyme A	Coenzyme A
+CHEBI:15356	Cystein	Cysteine	Cysteine
+CHEBI:15377	Demineralized water	Distilled water	Distilled water
+CHEBI:15377	Double distilled water	Distilled water	Distilled water
+CHEBI:15377	H2O	Distilled water	Distilled water
+CHEBI:15377	Tap water	Distilled water	Distilled water
+CHEBI:15377	Water	Distilled water	Distilled water
+CHEBI:15377	demineralized water	Distilled water	Distilled water
+CHEBI:15377	tap water	Distilled water	Distilled water
+CHEBI:15377	water	Distilled water	Distilled water
+CHEBI:15940	Niacin	Nicotinic acid	Nicotinic acid
+CHEBI:15940	niacin	Nicotinic acid	Nicotinic acid
+CHEBI:15956	Biotine	Biotin	Biotin
+CHEBI:15956	D(+)-Biotin	Biotin	Biotin
+CHEBI:15956	D-(+)-biotin	Biotin	Biotin
+CHEBI:15956	D-Biotin	Biotin	Biotin
+CHEBI:15956	D-biotin	Biotin	Biotin
+CHEBI:15956	d-Biotin	Biotin	Biotin
+CHEBI:15971	L-Histidin	L-Histidine	L-Histidine
+CHEBI:15978	Glycerol	sn-Glycerol 3-phosphate lithium salt	sn-glycerol 3-phosphate
+CHEBI:15978	glycerol	sn-Glycerol 3-phosphate lithium salt	sn-glycerol 3-phosphate
+CHEBI:16135	iso-Butyric acid	Isobutyric acid	Isobutyric acid
+CHEBI:16494	DL-6,8-thioctic acid	(DL)-alpha-Lipoic acid	(DL)-alpha-Lipoic acid
+CHEBI:16494	DL-alpha-lipoic acid	(DL)-alpha-Lipoic acid	(DL)-alpha-Lipoic acid
+CHEBI:16494	Lipoic acid	(DL)-alpha-Lipoic acid	(DL)-alpha-Lipoic acid
+CHEBI:16494	alpha-lipoic acid	(DL)-alpha-Lipoic acid	(DL)-alpha-Lipoic acid
+CHEBI:16810	2-Oxoglutarate	Na2 alpha-ketoglutarate	Na2 alpha-ketoglutarate
+CHEBI:16856	Glutathione	L-Glutathione	glutathione
+CHEBI:16991	DNA	Fish-Sperm DNA	deoxyribonucleic acid
+CHEBI:17015	Riboflavine	Riboflavin	Riboflavin
+CHEBI:17115	L-Serin	L-Serine	L-Serine
+CHEBI:17154	Niacinamide	Nicotinamide	Nicotinamide
+CHEBI:17154	Nicotinic acid amide	Nicotinamide	Nicotinamide
+CHEBI:17196	L-Asparagin	L-Asparagine	L-Asparagine
+CHEBI:17201	Glycyl-glycine	Glycylglycine	glycylglycine
+CHEBI:17306	D-Maltose	Maltose	Maltose
+CHEBI:17306	Maltose x H2O	Maltose	Maltose
+CHEBI:17418	n-Valeric acid	Valeric acid	Valeric acid
+CHEBI:17439	Cyanocobalamine	Cyanocobalamin	Cyanocobalamin
+CHEBI:17439	Vitamin B12	Cyanocobalamin	Cyanocobalamin
+CHEBI:17561	Cysteine-HCl x H2O	L-Cysteine	L-Cysteine
+CHEBI:17561	L-Cysteine-HCl x H2O	L-Cysteine	L-Cysteine
+CHEBI:17561	L-cysteine-HCL x H2O	L-Cysteine	L-Cysteine
+CHEBI:17596	Inosin	Inosine	inosine
+CHEBI:17634	D(+)-Glucose	D-Glucose	D-Glucose
+CHEBI:176843	VitaminB12	Vitamin B12	vitamin B12
+CHEBI:17750	Betaine	Betaine x H2O	Betaine x H2O
+CHEBI:17754	glycerin	Glycerol	Glycerol
+CHEBI:17836	p-Aminobenzoate	4-Aminobenzoate	4-aminobenzoate
+CHEBI:17905	2-Mercaptoethanesulfonic acid	2-Mercaptoethanesulfonate	2-Mercaptoethanesulfonate
+CHEBI:17905	Coenzyme M	2-Mercaptoethanesulfonate	2-Mercaptoethanesulfonate
+CHEBI:18246	Filter paper (cellulose substrate)	Cellulose	Cellulose
+CHEBI:18320	DTT	DL-Dithiothreitol	DL-Dithiothreitol
+CHEBI:18320	Dithiothreitol	DL-Dithiothreitol	DL-Dithiothreitol
+CHEBI:18385	Thiamin	Thiamine	thiamine(1+)
+CHEBI:184335	(NH4)HCO3	NH4HCO3	Ammonium bicarbonate
+CHEBI:22653	DL-Asparagine x H2O	Asparagine	Asparagine
+CHEBI:232798	Na-(L)-lactate	Na-L-lactate	sodium L-lactate
+CHEBI:232798	Sodium DL-lactate	Na-L-lactate	sodium L-lactate
+CHEBI:23414	Copper Sulfate	CuSO4 x 4 H2O	CuSO4 x 4 H2O
+CHEBI:23414	Copper sulfate	CuSO4 x 4 H2O	CuSO4 x 4 H2O
+CHEBI:23414	CuSO4	CuSO4 x 4 H2O	CuSO4 x 4 H2O
+CHEBI:23414	CuSO4 x 2 H2O	CuSO4 x 4 H2O	CuSO4 x 4 H2O
+CHEBI:23414	CuSO4 x H2O	CuSO4 x 4 H2O	CuSO4 x 4 H2O
+CHEBI:2509	BCYE agar	Agar	Agar
+CHEBI:2509	BL Agar	Agar	Agar
+CHEBI:2509	Bacto Middlebrook 7H10 agar	Agar	Agar
+CHEBI:2509	Brewer anaerobic agar	Agar	Agar
+CHEBI:2509	Brucella agar	Agar	Agar
+CHEBI:2509	Columbia blood agar base	Agar	Agar
+CHEBI:2509	Corn meal agar	Agar	Agar
+CHEBI:2509	Czapek Dox agar	Agar	Agar
+CHEBI:2509	Fastidious Anaerobe Agar	Agar	Agar
+CHEBI:2509	GAM agar	Agar	Agar
+CHEBI:2509	Glycerol-asparagine agar	Agar	Agar
+CHEBI:2509	Inorganic salts-starch agar	Agar	Agar
+CHEBI:2509	Legionella agar enrichment	Agar	Agar
+CHEBI:2509	Malt extract agar	Agar	Agar
+CHEBI:2509	Marine agar 2216	Agar	Agar
+CHEBI:2509	Middlebrook 7H10 agar	Agar	Agar
+CHEBI:2509	Mueller Hinton II agar	Agar	Agar
+CHEBI:2509	Oatmeal agar	Agar	Agar
+CHEBI:2509	R agar	Agar	Agar
+CHEBI:2509	R2A agar	Agar	Agar
+CHEBI:26710	Sodium Chloride	NaCl	NaCl
+CHEBI:26710	Sodium chloride	NaCl	NaCl
+CHEBI:26710	sodium chloride	NaCl	NaCl
+CHEBI:27082	D(+)-Trehalose	Trehalose	Trehalose
+CHEBI:27082	D-Trehalose	Trehalose	Trehalose
+CHEBI:27082	D-trehalose	Trehalose	Trehalose
+CHEBI:27570	Histidine	DL-Histidine	DL-Histidine
+CHEBI:27641	Cycloheximide	Cycloheximid	Cycloheximid
+CHEBI:27897	DL-Tryptophan	Tryptophan	Tryptophan
+CHEBI:28017	Corn Starch	Starch	Starch
+CHEBI:28017	Corn starch	Starch	Starch
+CHEBI:28484	3-Methyl-butyric acid	Isovaleric acid	Isovaleric acid
+CHEBI:28645	Fructose	Fructooligosaccharides (FOS)	beta-D-fructofuranose
+CHEBI:29377	 Na2CO3	Sodium carbonate solution	sodium carbonate
+CHEBI:29377	Na2CO3	Sodium carbonate solution	sodium carbonate
+CHEBI:29377	Na2CO3 anhydrous	Sodium carbonate solution	sodium carbonate
+CHEBI:29377	Na2CO3-CO2 buffer	Sodium carbonate solution	sodium carbonate
+CHEBI:29377	NaCO3	Sodium carbonate solution	sodium carbonate
+CHEBI:29377	Sodium Carbonate	Sodium carbonate solution	sodium carbonate
+CHEBI:29377	Sodium carbonate	Sodium carbonate solution	sodium carbonate
+CHEBI:30089	Acetate	Acetate (carbon source)	acetate
+CHEBI:30089	acetate	Acetate (carbon source)	acetate
+CHEBI:30115	AlCl3·6H2O	AlCl3 x 6 H2O	AlCl3 x 6 H2O
+CHEBI:30627	Molybdenum trioxide	MoO3	MoO3
+CHEBI:30753	4-Aminobenzoic Acid	p-Aminobenzoic acid	p-Aminobenzoic acid
+CHEBI:30753	4-Aminobenzoic acid	p-Aminobenzoic acid	p-Aminobenzoic acid
+CHEBI:30753	4-aminobenzoic acid	p-Aminobenzoic acid	p-Aminobenzoic acid
+CHEBI:30753	PABA	p-Aminobenzoic acid	p-Aminobenzoic acid
+CHEBI:30753	Para-aminobenzoic acid	p-Aminobenzoic acid	p-Aminobenzoic acid
+CHEBI:30753	p--Aminobenzoic acid	p-Aminobenzoic acid	p-Aminobenzoic acid
+CHEBI:30769	Citric acid	Citric Acid•H2O	citric acid
+CHEBI:30772	n-Butyric acid	Butyric acid	Butyric acid
+CHEBI:30776	Capronic acid	Caproic acid	Caproic acid
+CHEBI:30808	FeCl3	FeCl3 x 4 H2O	FeCl3 x 4 H2O
+CHEBI:30812	FeCl2	FeCl2 x 7 H2O	FeCl2 x 7 H2O
+CHEBI:30812	FeCl2 x 6 H2O	FeCl2 x 7 H2O	FeCl2 x 7 H2O
+CHEBI:31206	(NH4)Cl	NH4Cl	NH4Cl
+CHEBI:31206	Ammonium chloride	NH4Cl	NH4Cl
+CHEBI:31345	D-Calcium pantothenate	Calcium pantothenate	Calcium pantothenate
+CHEBI:31345	D-calcium pantothenate	Calcium pantothenate	Calcium pantothenate
+CHEBI:31345	DL-Calcium pantothenate	Calcium pantothenate	Calcium pantothenate
+CHEBI:31345	DL-calcium pantothenate	Calcium pantothenate	Calcium pantothenate
+CHEBI:31346	CaSO4	CaSO4 x 7 H2O	CaSO4 x 7 H2O
+CHEBI:31440	CuSO4 . 5H2O	CuSO4 x 5 H2O	CuSO4 x 5 H2O
+CHEBI:31440	CuSO4 .5H2O	CuSO4 x 5 H2O	CuSO4 x 5 H2O
+CHEBI:31440	CuSO4 x 5H2O	CuSO4 x 5 H2O	CuSO4 x 5 H2O
+CHEBI:31440	CuSO4.5H2O	CuSO4 x 5 H2O	CuSO4 x 5 H2O
+CHEBI:31440	CuSO4·5H2O	CuSO4 x 5 H2O	CuSO4 x 5 H2O
+CHEBI:31604	Ammonium ferric citrate	Ferric ammonium citrate	Ferric ammonium citrate
+CHEBI:31604	Fe(NH4)citrate	Ferric ammonium citrate	Ferric ammonium citrate
+CHEBI:31695	Indigo carmine	Indigocarmine	Indigocarmine
+CHEBI:31795	Magnesium sulfate heptahydrate	MgSO4·H2O	magnesium sulfate heptahydrate
+CHEBI:31795	Magnesium sulphate heptahydrate	MgSO4·H2O	magnesium sulfate heptahydrate
+CHEBI:31795	MgSO4 x 7 H2O	MgSO4·H2O	magnesium sulfate heptahydrate
+CHEBI:31795	MgSO4.7H2O	MgSO4·H2O	magnesium sulfate heptahydrate
+CHEBI:31795	MgSO47H2O	MgSO4·H2O	magnesium sulfate heptahydrate
+CHEBI:31795	MgSO4x7H2O	MgSO4·H2O	magnesium sulfate heptahydrate
+CHEBI:32029	Potassium acetate	K-acetate	K-acetate
+CHEBI:32030	Potassium Bromide	KBr	KBr
+CHEBI:32036	K2SO4	K2SO4 x 7 H2O	K2SO4 x 7 H2O
+CHEBI:32139	Sodium Bicarbonate	NaHCO3	NaHCO3
+CHEBI:32139	Sodium bicarbonate	NaHCO3	NaHCO3
+CHEBI:32139	sodium bicarbonate	NaHCO3	NaHCO3
+CHEBI:32142	Sodium Citrate	Na3-citrate x 2 H2O	sodium citrate dihydrate
+CHEBI:32142	Sodium citrate	Na3-citrate x 2 H2O	sodium citrate dihydrate
+CHEBI:32142	Sodium citrate dihydrate	Na3-citrate x 2 H2O	sodium citrate dihydrate
+CHEBI:32142	sodium citrate	Na3-citrate x 2 H2O	sodium citrate dihydrate
+CHEBI:32149	Na2SeO4	Na2SO4	Na2SO4
+CHEBI:32149	NaSO4	Na2SO4	Na2SO4
+CHEBI:32149	Sodium Sulfate	Na2SO4	Na2SO4
+CHEBI:32149	Sodium sulfate	Na2SO4	Na2SO4
+CHEBI:32150	Na2S2O3	Sodium Thiosulfate Pentahydrate	sodium thiosulfate pentahydrate
+CHEBI:32150	Na2S2O3 x 5 H2O	Sodium Thiosulfate Pentahydrate	sodium thiosulfate pentahydrate
+CHEBI:32150	Na2S2O3·5H2O	Sodium Thiosulfate Pentahydrate	sodium thiosulfate pentahydrate
+CHEBI:32150	NaS2O3 x 5 H2O	Sodium Thiosulfate Pentahydrate	sodium thiosulfate pentahydrate
+CHEBI:32312	ZnSO4 .7H2O	ZnSO4 x 7 H2O	ZnSO4 x 7 H2O
+CHEBI:32312	ZnSO4 x 7H2O	ZnSO4 x 7 H2O	ZnSO4 x 7 H2O
+CHEBI:32312	ZnSO4-7H2O	ZnSO4 x 7 H2O	ZnSO4 x 7 H2O
+CHEBI:32312	ZnSO4.7H2O	ZnSO4 x 7 H2O	ZnSO4 x 7 H2O
+CHEBI:32312	ZnSO4·7H2O	ZnSO4 x 7 H2O	ZnSO4 x 7 H2O
+CHEBI:32583	CaSO4 x 2H2O	CaSO4 x 2 H2O	CaSO4 x 2 H2O
+CHEBI:32583	CaSO4.2H2O	CaSO4 x 2 H2O	CaSO4 x 2 H2O
+CHEBI:32583	CaSO4·2H2O	CaSO4 x 2 H2O	CaSO4 x 2 H2O
+CHEBI:32588	Potassium Chloride	KCl	KCl
+CHEBI:32588	Potassium chloride	KCl	KCl
+CHEBI:32588	potassium chloride	KCl	KCl
+CHEBI:32599	Magnesium Sulfate	MgSO4 x 6 H2O	MgSO4 x 6 H2O
+CHEBI:32599	Magnesium sulfate	MgSO4 x 6 H2O	MgSO4 x 6 H2O
+CHEBI:32599	MgSO4	MgSO4 x 6 H2O	MgSO4 x 6 H2O
+CHEBI:32599	MgSO4 x 6H2O	MgSO4 x 6 H2O	MgSO4 x 6 H2O
+CHEBI:32599	MgSO4 x 7 H2O	MgSO4 x 6 H2O	MgSO4 x 6 H2O
+CHEBI:32599	MgSO4 x 7H2O	MgSO4 x 6 H2O	MgSO4 x 6 H2O
+CHEBI:32599	MgSO4 x H2O	MgSO4 x 6 H2O	MgSO4 x 6 H2O
+CHEBI:32599	MgSO4 x7H2O	MgSO4 x 6 H2O	MgSO4 x 6 H2O
+CHEBI:32599	MgSO4 ·7H2O	MgSO4 x 6 H2O	MgSO4 x 6 H2O
+CHEBI:32599	MgSO4·7H2O	MgSO4 x 6 H2O	MgSO4 x 6 H2O
+CHEBI:32954	1 M Sodium acetate	Sodium acetate·3H2O	sodium acetate
+CHEBI:32954	Na Acetate	Sodium acetate·3H2O	sodium acetate
+CHEBI:32954	Na acetate	Sodium acetate·3H2O	sodium acetate
+CHEBI:32954	Na-Acetate	Sodium acetate·3H2O	sodium acetate
+CHEBI:32954	Na-acetate	Sodium acetate·3H2O	sodium acetate
+CHEBI:32954	Sodium Acetate	Sodium acetate·3H2O	sodium acetate
+CHEBI:32954	Sodium acetate	Sodium acetate·3H2O	sodium acetate
+CHEBI:32954	sodium acetate	Sodium acetate·3H2O	sodium acetate
+CHEBI:3311	Calcium Carbonate	CaCO3	CaCO3
+CHEBI:3311	Calcium carbonate	CaCO3	CaCO3
+CHEBI:33118	Boric Acid	H3BO3	H3BO3
+CHEBI:33118	Boric acid	H3BO3	H3BO3
+CHEBI:3312	CaCl2	Calcium Chloride	calcium dichloride
+CHEBI:3312	CaCl2 x 7 H2O	Calcium Chloride	calcium dichloride
+CHEBI:3312	CaCl2 x H2O	Calcium Chloride	calcium dichloride
+CHEBI:3312	Calcium chloride dihydrate	Calcium Chloride	calcium dichloride
+CHEBI:33403	Elemental sulfur	Sulfur (powder)	elemental sulfur
+CHEBI:33403	Elemental sulphur	Sulfur (powder)	elemental sulfur
+CHEBI:34683	Disodium Phosphate	Na2HPO4 x 7 H2O	Na2HPO4 x 7 H2O
+CHEBI:34683	Disodium hydrogen phosphate	Na2HPO4 x 7 H2O	Na2HPO4 x 7 H2O
+CHEBI:34683	Disodium phosphate	Na2HPO4 x 7 H2O	Na2HPO4 x 7 H2O
+CHEBI:34683	Na2HPO4	Na2HPO4 x 7 H2O	Na2HPO4 x 7 H2O
+CHEBI:34683	Na2HPO4 x 12 H2O	Na2HPO4 x 7 H2O	Na2HPO4 x 7 H2O
+CHEBI:34683	Na2HPO4 x 2 H2O	Na2HPO4 x 7 H2O	Na2HPO4 x 7 H2O
+CHEBI:34683	Na2HPO4 x 3 H2O	Na2HPO4 x 7 H2O	Na2HPO4 x 7 H2O
+CHEBI:34683	Na2HPO4 x 6 H2O	Na2HPO4 x 7 H2O	Na2HPO4 x 7 H2O
+CHEBI:34683	Na2HPO4 x H2O	Na2HPO4 x 7 H2O	Na2HPO4 x 7 H2O
+CHEBI:34683	Na2HPO4·12H2O	Na2HPO4 x 7 H2O	Na2HPO4 x 7 H2O
+CHEBI:34683	Na2HPO4·2H2O	Na2HPO4 x 7 H2O	Na2HPO4 x 7 H2O
+CHEBI:34887	NiCl2	NiCl2 x 6 H2O	NiCl2 x 6 H2O
+CHEBI:34887	NiCl2 x 2 H2O	NiCl2 x 6 H2O	NiCl2 x 6 H2O
+CHEBI:34887	NiCl2 x 5 H2O	NiCl2 x 6 H2O	NiCl2 x 6 H2O
+CHEBI:34887	NiCl2 x 6 H2O (0.1% w/v)	NiCl2 x 6 H2O	NiCl2 x 6 H2O
+CHEBI:34887	NiCl2 x 6H2O	NiCl2 x 6 H2O	NiCl2 x 6 H2O
+CHEBI:34887	NiCl2 x H2O	NiCl2 x 6 H2O	NiCl2 x 6 H2O
+CHEBI:34887	NiCl2·6H2O	NiCl2 x 6 H2O	NiCl2 x 6 H2O
+CHEBI:35176	ZnSO4	Zinc sulfate	Zinc Sulfate
+CHEBI:35235	L-Cysteine	L-cysteine zwitterion	L-cysteine zwitterion
+CHEBI:35458	CeCl3	CeCl3 x 7 H2O	CeCl3 x 7 H2O
+CHEBI:35696	CoCl2	CoCl2 x 6 H2O	CoCl2 x 6 H2O
+CHEBI:35696	CoCl2 x 2 H2O	CoCl2 x 6 H2O	CoCl2 x 6 H2O
+CHEBI:35696	CoCl2 x 4 H2O	CoCl2 x 6 H2O	CoCl2 x 6 H2O
+CHEBI:35696	CoCl2 x 6H2O	CoCl2 x 6 H2O	CoCl2 x 6 H2O
+CHEBI:36218	Lactose	Beta-Lactose	beta-lactose
+CHEBI:36218	lactose	Beta-Lactose	beta-lactose
+CHEBI:36385	SrCl2 x 6 H2O (0.1% w/v)	SrCl2 x 6 H2O	SrCl2 x 6 H2O
+CHEBI:36385	SrCl2.6H2O	SrCl2 x 6 H2O	SrCl2 x 6 H2O
+CHEBI:36385	SrCl2·6H2O	SrCl2 x 6 H2O	SrCl2 x 6 H2O
+CHEBI:37070	2-Methyl-butyric acid	DL-2-Methylbutyric acid	DL-2-Methylbutyric acid
+CHEBI:37070	DL-2-Methyl butyric acid	DL-2-Methylbutyric acid	DL-2-Methylbutyric acid
+CHEBI:37070	DL-alpha-Methyl butyric acid	DL-2-Methylbutyric acid	DL-2-Methylbutyric acid
+CHEBI:37070	alpha-Methylbutyric acid	DL-2-Methylbutyric acid	DL-2-Methylbutyric acid
+CHEBI:37583	Sodium dihydrogen phosphate	Sodium phosphate dibasic	trisodium phosphate
+CHEBI:37585	NaH2PO4	NaH2PO4 x 2 H2O	NaH2PO4 x 2 H2O
+CHEBI:37585	NaH2PO4 x 2H2O	NaH2PO4 x 2 H2O	NaH2PO4 x 2 H2O
+CHEBI:37585	NaH2PO4 x H2O	NaH2PO4 x 2 H2O	NaH2PO4 x 2 H2O
+CHEBI:39005	2-(N-Morpholino)ethanesulfonic acid	MES [2-(N-morpholino) ethane sulfonic acid]	2-(N-morpholino)ethanesulfonic acid
+CHEBI:39005	MES acids	MES [2-(N-morpholino) ethane sulfonic acid]	2-(N-morpholino)ethanesulfonic acid
+CHEBI:41808	Decane	n-Decane	n-Decane
+CHEBI:42758	D(+)-Glucose	glucose	aldehydo-D-glucose
+CHEBI:42758	D-Glucose	glucose	aldehydo-D-glucose
+CHEBI:42758	D-glucose	glucose	aldehydo-D-glucose
+CHEBI:42758	Dextrose	glucose	aldehydo-D-glucose
+CHEBI:44115	MOPS buffer	3-(N-morpholino)propanesulfonic acid	3-(N-morpholino)propanesulfonic acid
+CHEBI:44115	Morpholinopropane sulfonic acid	3-(N-morpholino)propanesulfonic acid	3-(N-morpholino)propanesulfonic acid
+CHEBI:44115	Morpholinopropane sulfonic acid 	3-(N-morpholino)propanesulfonic acid	3-(N-morpholino)propanesulfonic acid
+CHEBI:44557	Nitrilotriacetate	Nitrilotriacetic acid disodium salt	nitrilotriacetic acid
+CHEBI:44557	Nitrilotriacetic Acid	Nitrilotriacetic acid disodium salt	nitrilotriacetic acid
+CHEBI:44557	Nitrilotriacetic acid	Nitrilotriacetic acid disodium salt	nitrilotriacetic acid
+CHEBI:44557	Nitrilotriacetic acid (NTA)	Nitrilotriacetic acid disodium salt	nitrilotriacetic acid
+CHEBI:44557	nitrilotriacetic acid	Nitrilotriacetic acid disodium salt	nitrilotriacetic acid
+CHEBI:46020	Tetramethyl ammonium	Tetramethyl ammonium chloride	tetramethylammonium
+CHEBI:46020	tetramethyl ammonium	Tetramethyl ammonium chloride	tetramethylammonium
+CHEBI:48607	LiCl	Lithium chloride hydrate	lithium chloride
+CHEBI:48843	Na2SeO3	Na2SeO3·5H2O	disodium selenite
+CHEBI:48843	Na2SeO3 x 5 H2O	Na2SeO3·5H2O	disodium selenite
+CHEBI:49105	Thiamin-HCl	Thiamine HCl	Thiamine HCl
+CHEBI:49105	Thiamine dihydrochloride	Thiamine HCl	Thiamine HCl
+CHEBI:49105	Thiamine hydrochloride	Thiamine HCl	Thiamine HCl
+CHEBI:49105	Thiamine-HCl	Thiamine HCl	Thiamine HCl
+CHEBI:49105	Thiamine·HCl	Thiamine HCl	Thiamine HCl
+CHEBI:49105	thiamine hydrochloride	Thiamine HCl	Thiamine HCl
+CHEBI:49105	thiamine-HCl	Thiamine HCl	Thiamine HCl
+CHEBI:49553	CuCl2	CuCl2 x 6 H2O	CuCl2 x 6 H2O
+CHEBI:49553	CuCl2 x H2O	CuCl2 x 6 H2O	CuCl2 x 6 H2O
+CHEBI:50144	Na pyruvate	Na-pyruvate	Na-pyruvate
+CHEBI:50144	Sodium Pyruvate	Na-pyruvate	Na-pyruvate
+CHEBI:50144	Sodium pyruvate	Na-pyruvate	Na-pyruvate
+CHEBI:50144	sodium pyruvate	Na-pyruvate	Na-pyruvate
+CHEBI:50385	Hemin	Haemin	Haemin
+CHEBI:50385	Hemin chloride	Haemin	Haemin
+CHEBI:50385	hemin	Haemin	Haemin
+CHEBI:5291	Gelatin	Gelatine	Gelatine
+CHEBI:5291	gelatin	Gelatine	Gelatine
+CHEBI:53001	NiSO4 x 6 H2O	NiSO4 x 7 H2O	NiSO4 x 7 H2O
+CHEBI:53258	Citric Acid	Trisodium citrate x 2 H2O	sodium citrate
+CHEBI:53258	Citric acid	Trisodium citrate x 2 H2O	sodium citrate
+CHEBI:53258	Na2-citrate	Trisodium citrate x 2 H2O	sodium citrate
+CHEBI:53258	Na3-citrate	Trisodium citrate x 2 H2O	sodium citrate
+CHEBI:53258	Sodium citrate	Trisodium citrate x 2 H2O	sodium citrate
+CHEBI:53258	Trisodium citrate	Trisodium citrate x 2 H2O	sodium citrate
+CHEBI:53258	Trisodium citrate x 3 H2O	Trisodium citrate x 2 H2O	sodium citrate
+CHEBI:53258	Trisodium citrate·2H2O	Trisodium citrate x 2 H2O	sodium citrate
+CHEBI:53258	Trisodium citrate・2H2O	Trisodium citrate x 2 H2O	sodium citrate
+CHEBI:53258	citric acid	Trisodium citrate x 2 H2O	sodium citrate
+CHEBI:53258	trisodium citrate	Trisodium citrate x 2 H2O	sodium citrate
+CHEBI:53470	CoSO4	CoSO4 x 7 H2O	CoSO4 x 7 H2O
+CHEBI:60720	Na silicate	Na-silicate	Na-silicate
+CHEBI:60720	Sodium Silicate	Na-silicate	Na-silicate
+CHEBI:60720	Sodium silicate	Na-silicate	Na-silicate
+CHEBI:60720	sodium silicate	Na-silicate	Na-silicate
+CHEBI:62946	(NH4)2S4	(NH4)2SO4	(NH4)2SO4
+CHEBI:62946	Ammonium Sulfate	(NH4)2SO4	(NH4)2SO4
+CHEBI:62946	Ammonium sulfate	(NH4)2SO4	(NH4)2SO4
+CHEBI:62965	Na-formiate	Na-formate	Na-formate
+CHEBI:62965	Sodium Formate	Na-formate	Na-formate
+CHEBI:62965	Sodium formate	Na-formate	Na-formate
+CHEBI:62965	sodium formate	Na-formate	Na-formate
+CHEBI:62982	(NH4)H2PO4	NH4H2PO4	ammonium dihydrogen phosphate
+CHEBI:63005	Na NO3	Sodium nitrate (nitrogen source)	sodium nitrate
+CHEBI:63005	NaNO3	Sodium nitrate (nitrogen source)	sodium nitrate
+CHEBI:63005	Sodium nitrate	Sodium nitrate (nitrogen source)	sodium nitrate
+CHEBI:63017	Na-tartrate	Sodium tartrate	Sodium tartrate
+CHEBI:63036	Monopotassium Phosphate	KH2PO4	KH2PO4
+CHEBI:63036	Monopotassium phosphate	KH2PO4	KH2PO4
+CHEBI:63036	Potassium Phosphate	KH2PO4	KH2PO4
+CHEBI:63037	(NH4) citrate	(NH4)3 citrate	(NH4)3 citrate
+CHEBI:63038	Ammonium Nitrate	(NH4)NO3	(NH4)NO3
+CHEBI:63038	Ammonium nitrate	(NH4)NO3	(NH4)NO3
+CHEBI:63038	NH4NO3	(NH4)NO3	(NH4)NO3
+CHEBI:63076	Diammonium Citrate	(NH4)2 citrate	diammonium citrate
+CHEBI:63076	Diammonium citrate	(NH4)2 citrate	diammonium citrate
+CHEBI:63076	Diammonium hydrogen citrate	(NH4)2 citrate	diammonium citrate
+CHEBI:63675	Disodium succinate	Sodium succinate	Sodium succinate
+CHEBI:63939	Na2WO4·2H2O	Na2WO4 x 2 H2O	Na2WO4 x 2 H2O
+CHEBI:64103	1 M Sodium butyrate	Na-butyrate	Na-butyrate
+CHEBI:64103	Sodium butyrate	Na-butyrate	Na-butyrate
+CHEBI:64220	Monosodium Glutamate	Na glutamate	Na glutamate
+CHEBI:64220	Monosodium glutamate	Na glutamate	Na glutamate
+CHEBI:64220	Na2-glutamate	Na glutamate	Na glutamate
+CHEBI:64220	Sodium Glutamate	Na glutamate	Na glutamate
+CHEBI:64220	Sodium glutamate	Na glutamate	Na glutamate
+CHEBI:64700	Methylamine-HCl	Trimethylamine-HCl	trimethylamine hydrochloride
+CHEBI:64700	Trimethylammonium chloride	Trimethylamine-HCl	trimethylamine hydrochloride
+CHEBI:64734	2Na-EDTA	Na2-EDTA x 2 H2O	Na2-EDTA x 2 H2O
+CHEBI:64734	Na-EDTA	Na2-EDTA x 2 H2O	Na2-EDTA x 2 H2O
+CHEBI:64734	Na-EDTA x 2 H2O	Na2-EDTA x 2 H2O	Na2-EDTA x 2 H2O
+CHEBI:64734	Na2-EDTA	Na2-EDTA x 2 H2O	Na2-EDTA x 2 H2O
+CHEBI:64734	Na2-EDTA·2H2O	Na2-EDTA x 2 H2O	Na2-EDTA x 2 H2O
+CHEBI:64734	Na2EDTA	Na2-EDTA x 2 H2O	Na2-EDTA x 2 H2O
+CHEBI:64734	Na3-EDTA	Na2-EDTA x 2 H2O	Na2-EDTA x 2 H2O
+CHEBI:64758	Na2EDTA· 2H2O	Na2EDTA·2H2O	EDTA disodium salt dihydrate
+CHEBI:6636	Magnesium chloride hexahydrate	MgCl2x 6 H2O	magnesium dichloride
+CHEBI:6636	MgCl2	MgCl2x 6 H2O	magnesium dichloride
+CHEBI:6636	MgCl2 x 6 H2O	MgCl2x 6 H2O	magnesium dichloride
+CHEBI:6636	MgCl2 x 6H2O	MgCl2x 6 H2O	magnesium dichloride
+CHEBI:6636	MgCl2 x 7 H2O	MgCl2x 6 H2O	magnesium dichloride
+CHEBI:6636	MgCl2 x 7H2O	MgCl2x 6 H2O	magnesium dichloride
+CHEBI:6650	Malic acid	DL-Malic acid	DL-Malic acid
+CHEBI:75211	MnSO4 x H2O	tannic acid	tannic acid
+CHEBI:75213	Na2 MoO4 x 2 H2O	Na2MoO4 x 2 H2O	Na2MoO4 x 2 H2O
+CHEBI:75213	Na2MoO4-2H2O	Na2MoO4 x 2 H2O	Na2MoO4 x 2 H2O
+CHEBI:75213	Na2MoO4.2H2O	Na2MoO4 x 2 H2O	Na2MoO4 x 2 H2O
+CHEBI:75213	Na2MoSO4 x 2 H2O	Na2MoO4 x 2 H2O	Na2MoO4 x 2 H2O
+CHEBI:75213	NaMoO4.2H2O	Na2MoO4 x 2 H2O	Na2MoO4 x 2 H2O
+CHEBI:75213	NaMoO4·2H2O	Na2MoO4 x 2 H2O	Na2MoO4 x 2 H2O
+CHEBI:75215	Na2MoO4	Na2MoO4·2H2O	sodium molybdate (anhydrous)
+CHEBI:75215	Na2MoO4 x 2 H2O	Na2MoO4·2H2O	sodium molybdate (anhydrous)
+CHEBI:75215	Na2MoO4 x 2H2O	Na2MoO4·2H2O	sodium molybdate (anhydrous)
+CHEBI:75215	Na2MoO4 x H2O	Na2MoO4·2H2O	sodium molybdate (anhydrous)
+CHEBI:75215	Na2MoO4. 2H2O	Na2MoO4·2H2O	sodium molybdate (anhydrous)
+CHEBI:75215	Na2MoO4.H2O	Na2MoO4·2H2O	sodium molybdate (anhydrous)
+CHEBI:75228	1 M Sodium lactate	Sodium lactate	Sodium lactate
+CHEBI:75228	DL-Na-lactate	Sodium lactate	Sodium lactate
+CHEBI:75228	Na-(DL)-lactate	Sodium lactate	Sodium lactate
+CHEBI:75228	Na-DL-lactate	Sodium lactate	Sodium lactate
+CHEBI:75228	Na-lactate	Sodium lactate	Sodium lactate
+CHEBI:75228	Sodium DL-lactate	Sodium lactate	Sodium lactate
+CHEBI:75832	FeSO4	FeSO4 x 7H2O	iron(2+) sulfate (anhydrous)
+CHEBI:75832	FeSO4 	FeSO4 x 7H2O	iron(2+) sulfate (anhydrous)
+CHEBI:75832	FeSO4 x 5 H2O	FeSO4 x 7H2O	iron(2+) sulfate (anhydrous)
+CHEBI:75832	FeSO4 x 6 H2O	FeSO4 x 7H2O	iron(2+) sulfate (anhydrous)
+CHEBI:75836	Fe SO4 x 7 H2O	FeSO4 x 7 H2O	FeSO4 x 7 H2O
+CHEBI:75836	FeSO4.7H2O	FeSO4 x 7 H2O	FeSO4 x 7 H2O
+CHEBI:76181	Fe(NH4)2(SO4)2 x 6 H2O (0.1% w/v)	Fe(NH4)2(SO4)2 x 6 H2O	ferrous ammonium sulfate hexahydrate
+CHEBI:76181	Fe(NH4)2(SO4)2·6H2O	Fe(NH4)2(SO4)2 x 6 H2O	ferrous ammonium sulfate hexahydrate
+CHEBI:76208	Na2S x H2O	Na2S	sodium sulfide (anhydrous)
+CHEBI:76209	Na2S x 9H2O	Na2S x 9 H2O	Na2S x 9 H2O
+CHEBI:76209	Na2S·9H2O	Na2S x 9 H2O	Na2S x 9 H2O
+CHEBI:77732	Ca(NO3)2	cadmium nitrate	cadmium nitrate
+CHEBI:77732	Ferric citrate monohydrate	cadmium nitrate	cadmium nitrate
+CHEBI:78020	Casamino acid	Casamino acids	heptacosanoate
+CHEBI:78020	casamino acid	Casamino acids	heptacosanoate
+CHEBI:78074	SnCl2 x 2H2O	SnCl2 x 2 H2O	SnCl2 x 2 H2O
+CHEBI:78074	SnCl2·2H2O	SnCl2 x 2 H2O	SnCl2 x 2 H2O
+CHEBI:7916	DL-Pantothenic acid	Pantothenic acid	Pantothenic acid
+CHEBI:82664	Iron metal	Iron powder	Iron powder
+CHEBI:8346	Potassium iodide	KI	potassium iodide
+CHEBI:84997	Na gluconate	Sodium gluconate	Sodium gluconate
+CHEBI:84997	Na-gluconate	Sodium gluconate	Sodium gluconate
+CHEBI:85146	Carboxymethylcellulose	Carboxymethyl cellulose	Carboxymethyl cellulose
+CHEBI:85248	Gellan Gum	Gelrite	Gelrite
+CHEBI:85248	Gellan gum	Gelrite	Gelrite
+CHEBI:85248	Starch	Gelrite	Gelrite
+CHEBI:85248	gellan gum	Gelrite	Gelrite
+CHEBI:86149	(NH4)2Ni(SO4)2	(NH4)2Ni(SO4)2 x 6 H2O	(NH4)2Ni(SO4)2 x 6 H2O
+CHEBI:86149	(NH4)2Ni(SO4)2·6H2O	(NH4)2Ni(SO4)2 x 6 H2O	(NH4)2Ni(SO4)2 x 6 H2O
+CHEBI:86149	(NH4)2Ni(SO4)2•6H2O	(NH4)2Ni(SO4)2 x 6 H2O	(NH4)2Ni(SO4)2 x 6 H2O
+CHEBI:86158	CaCl2 x 2H2O	CaCl2 x 2 H2O	CaCl2 x 2 H2O
+CHEBI:86158	CaCl2 x2H2O	CaCl2 x 2 H2O	CaCl2 x 2 H2O
+CHEBI:86158	CaCl22H2O	CaCl2 x 2 H2O	CaCl2 x 2 H2O
+CHEBI:86158	CaCl2x2H2O	CaCl2 x 2 H2O	CaCl2 x 2 H2O
+CHEBI:86158	CaCl2·2H2O	CaCl2 x 2 H2O	CaCl2 x 2 H2O
+CHEBI:86158	Calcium Chloride	CaCl2 x 2 H2O	CaCl2 x 2 H2O
+CHEBI:86158	Calcium chloride	CaCl2 x 2 H2O	CaCl2 x 2 H2O
+CHEBI:86158	Calcium chloride dihydrate	CaCl2 x 2 H2O	CaCl2 x 2 H2O
+CHEBI:86159	Ca(NO3)2·4H2O	Ca(NO3)2 x 4 H2O	Ca(NO3)2 x 4 H2O
+CHEBI:86214	Co(NO3)2 x 6H2O	Co(NO3)2 x 6 H2O	Co(NO3)2 x 6 H2O
+CHEBI:86214	Co(NO3)2.6H2O	Co(NO3)2 x 6 H2O	Co(NO3)2 x 6 H2O
+CHEBI:86214	Co(NO3)2·6H2O	Co(NO3)2 x 6 H2O	Co(NO3)2 x 6 H2O
+CHEBI:86249	FeCl2·4H2O	FeCl2 x 4 H2O	FeCl2 x 4 H2O
+CHEBI:86254	FeCl3.6H2O	FeCl3 x 6 H2O	iron trichloride hexahydrate
+CHEBI:86254	FeCl3·6H2O	FeCl3 x 6 H2O	iron trichloride hexahydrate
+CHEBI:86318	CuCl2 x 2H2O	CuCl2 x 2 H2O	CuCl2 x 2 H2O
+CHEBI:86318	CuCl2-2H2O	CuCl2 x 2 H2O	CuCl2 x 2 H2O
+CHEBI:86318	CuCl2·2H2O	CuCl2 x 2 H2O	CuCl2 x 2 H2O
+CHEBI:86345	Magnesium Chloride	MgCl2 x 6 H2O	MgCl2 x 6 H2O
+CHEBI:86345	Magnesium chloride	MgCl2 x 6 H2O	MgCl2 x 6 H2O
+CHEBI:86345	Magnesium chloride hexahydrate	MgCl2 x 6 H2O	MgCl2 x 6 H2O
+CHEBI:86345	MgCl2.6H2O	MgCl2 x 6 H2O	MgCl2 x 6 H2O
+CHEBI:86345	MgCl2·6 H2O	MgCl2 x 6 H2O	MgCl2 x 6 H2O
+CHEBI:86345	MgCl2·6H2O	MgCl2 x 6 H2O	MgCl2 x 6 H2O
+CHEBI:86345	magnesium chloride	MgCl2 x 6 H2O	MgCl2 x 6 H2O
+CHEBI:86358	MnSO4.4H2O	MnSO4 x 4 H2O	MnSO4 x 4 H2O
+CHEBI:86360	MnSO4	MnSO4 x 7 H2O	MnSO4 x 7 H2O
+CHEBI:86360	MnSO4 x 1 H2O	MnSO4 x 7 H2O	MnSO4 x 7 H2O
+CHEBI:86360	MnSO4 x 4 H2O	MnSO4 x 7 H2O	MnSO4 x 7 H2O
+CHEBI:86360	MnSO4 x 5 H2O	MnSO4 x 7 H2O	MnSO4 x 7 H2O
+CHEBI:86364	Manganese Sulfate	MnSO4 x H2O	MnSO4 x H2O
+CHEBI:86364	Manganese sulfate	MnSO4 x H2O	MnSO4 x H2O
+CHEBI:86364	Manganese sulfate monohydrate	MnSO4 x H2O	MnSO4 x H2O
+CHEBI:86368	MnCl2 x 4H2O	MnCl2 x 4 H2O	MnCl2 x 4 H2O
+CHEBI:86463	Aluminum potassium sulfate	AlK(SO4)2	AlK(SO4)2
+CHEBI:86463	KAl(SO4)2	AlK(SO4)2	AlK(SO4)2
+CHEBI:86465	AlK(SO4)2 x 12H2O	AlK(SO4)2 x 12 H2O	AlK(SO4)2 x 12 H2O
+CHEBI:86465	AlK(SO4)2·12H2O	AlK(SO4)2 x 12 H2O	AlK(SO4)2 x 12 H2O
+CHEBI:86465	KAl(SO4)2 x 12 H2O	AlK(SO4)2 x 12 H2O	AlK(SO4)2 x 12 H2O
+CHEBI:86465	KAl(SO4)2·12H2O	AlK(SO4)2 x 12 H2O	AlK(SO4)2 x 12 H2O
+CHEBI:86466	Potassium tetrathionate	K2S4O6	potassium tetrathionate
+CHEBI:86477	Na2SO3	Na2SO3 x 5 H2O	Na2SO3 x 5 H2O
+CHEBI:86477	Sodium sulfite	Na2SO3 x 5 H2O	Na2SO3 x 5 H2O
+CHEBI:86481	Sodium thioglycolate	Na-thioglycolate	Na-thioglycolate
+CHEBI:86481	Sodium thioglycollate	Na-thioglycolate	Na-thioglycolate
+CHEBI:867561	L-Sodium lactate	Sodium L-lactate	Sodium L-lactate
+CHEBI:87020	VOSO4·xH2O	VOSO4 x n H2O	VOSO4 x n H2O
+CHEBI:91248	Cysteine hydrochloride	L-Cysteine hydrochloride monohydrate	L-cysteine hydrochloride hydrate
+CHEBI:91248	L-Cysteine HCl x H2O	L-Cysteine hydrochloride monohydrate	L-cysteine hydrochloride hydrate
+CHEBI:91249	(NH4)2MoO4	Diammonium molybdate	ammonium molybdate
+CHEBI:91249	Ammonium Molybdate	Diammonium molybdate	ammonium molybdate
+CHEBI:91249	Ammonium molybdate	Diammonium molybdate	ammonium molybdate
+CHEBI:91261	DL-Na-malate	Sodium malate	Sodium malate
+CHEBI:91261	DL-Sodium malate	Sodium malate	Sodium malate
+CHEBI:91261	Na malate	Sodium malate	Sodium malate
+CHEBI:91261	Na-DL-malate	Sodium malate	Sodium malate
+CHEBI:91261	Na-L-malate	Sodium malate	Sodium malate
+CHEBI:91261	Na-malate	Sodium malate	Sodium malate
+CHEBI:91261	Na2-DL-malate	Sodium malate	Sodium malate
+CHEBI:91261	Sodium DL-malate	Sodium malate	Sodium malate
+CHEBI:91261	Sodium L-malate	Sodium malate	Sodium malate
+CHEBI:9532	Thiamine pyrophosphate	0.2% Thiamine pyrophosphate	thiamine(1+) diphosphate
+CHEBI:9754	TRIS	Tris base	Tris base
+CHEBI:9754	Tris	Tris base	Tris base
+CHEBI:9754	Tris buffer	Tris base	Tris base
+CHEBI:9754	Tris buffer 1M	Tris base	Tris base
+CHEBI:9754	Tris(hydroxymethyl)aminomethane	Tris base	Tris base
+CHEBI:9754	Tris(hydroxymethyl)methylamine	Tris base	Tris base

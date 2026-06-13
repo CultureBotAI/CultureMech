@@ -35,8 +35,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -60,8 +60,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:02.620291+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "OXOID NUTRIENT BROTH" to "oxoid_nutrient_broth"
-    for consistent matching
+  notes: Normalized name from "OXOID NUTRIENT BROTH" to "oxoid_nutrient_broth" for
+    consistent matching
+- timestamp: '2026-06-05T07:40:28.102470+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 7.2
 kg_microbe_match: mediadive.medium:74
 variant_children:
@@ -69,16 +75,16 @@ variant_children:
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006885
   name: medium_948_modified_for_dsm_16823
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/oxoid_nutrient_broth.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:002127
   name: oxoid_nutrient_broth
-  notes: KOMODO record states DSMZ Medium 948 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 948 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

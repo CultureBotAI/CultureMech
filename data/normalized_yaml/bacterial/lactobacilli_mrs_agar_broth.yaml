@@ -19,9 +19,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Lactobacilli MRS
   concentration:
     value: '55'
@@ -40,9 +40,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Dextrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Sodium Acetate
   concentration:
     value: '5'
@@ -51,9 +51,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium Acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Na2HPO4
   concentration:
     value: '2'
@@ -63,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.05'
@@ -75,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: MnSO4 x H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75211
+    label: manganese(II) sulfate
 - preferred_term: Sorbitan Monooleate
   concentration:
     value: '1'
@@ -132,3 +132,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Lactobacilli MRS Agar/Broth" to "lactobacilli_mrs_agar_broth"
     for consistent matching
+- timestamp: '2026-06-05T07:41:10.693893+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

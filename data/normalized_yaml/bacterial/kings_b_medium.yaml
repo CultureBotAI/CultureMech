@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Magnesium sulphate heptahydrate
   concentration:
@@ -23,8 +23,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000614
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: Magnesium sulphate heptahydrate
   term:
     id: CHEBI:31795
@@ -38,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: Dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: glycerol
   concentration:
     value: '15'
@@ -50,9 +50,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
-    label: glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: 'Proteose peptone '
   concentration:
     value: '20'
@@ -88,3 +88,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "King's B medium" to "kings_b_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:10.368918+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

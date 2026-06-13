@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Soil extract
   concentration:
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -67,18 +67,23 @@ curation_history:
 - timestamp: '2026-03-17T19:45:42.988419+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Peptone - MEAT EXTRACT - SOIL EXTRACT AGAR (PFE)"
-    to "peptone_meat_extract_soil_extract_agar_pfe" for consistent matching
+  notes: Normalized name from "Peptone - MEAT EXTRACT - SOIL EXTRACT AGAR (PFE)" to
+    "peptone_meat_extract_soil_extract_agar_pfe" for consistent matching
+- timestamp: '2026-06-05T07:40:21.884387+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
-  path:
-    data/normalized_yaml/bacterial/peptone_meat_extract_soil_extract_agar_pfe.yaml
+  path: data/normalized_yaml/bacterial/peptone_meat_extract_soil_extract_agar_pfe.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001350
   name: peptone_meat_extract_soil_extract_agar_pfe
-  notes: KOMODO record explicitly cites DSMZ Medium 251; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 251; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 251; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 251; local ingredient
+  and concentration signatures match.

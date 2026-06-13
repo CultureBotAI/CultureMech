@@ -12,9 +12,9 @@ ingredients:
   concentration:
     value: '0.1581'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000669
-    label: Sodium thiosulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132112
+    label: Sodium Thiosulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.7752'
@@ -43,8 +43,8 @@ ingredients:
   concentration:
     value: '28.04'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Glucose
   term:
@@ -53,8 +53,8 @@ ingredients:
   concentration:
     value: '5.551'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Manganese sulfate
   term:
@@ -63,9 +63,9 @@ ingredients:
   concentration:
     value: '0.006623'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '0.4057'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
@@ -112,6 +112,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Minimal medium (Jyssum 1959" to "minimal_medium_jyssum_1959"
     for consistent matching
+- timestamp: '2026-06-05T07:41:34.684282+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 395
   term:

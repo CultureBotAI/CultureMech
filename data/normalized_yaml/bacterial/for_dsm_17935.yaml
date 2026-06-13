@@ -20,8 +20,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -30,8 +30,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: NaCl
   term:
@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: NH4Cl
   term:
@@ -50,8 +50,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -60,8 +60,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -74,8 +74,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000864
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
     label: Ferric citrate
 - preferred_term: HCl
   term:
@@ -84,8 +84,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
 - preferred_term: ZnCl2
   term:
@@ -94,8 +94,8 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
     label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -104,8 +104,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
@@ -114,8 +114,8 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -124,8 +124,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -134,8 +134,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -144,8 +144,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -154,8 +154,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: NaHCO3
   term:
@@ -164,8 +164,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 applications:
 - Microbial cultivation
@@ -189,42 +189,47 @@ curation_history:
 - timestamp: '2026-03-17T19:45:36.997246+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 17935" to "for_dsm_17935" for consistent
-    matching
+  notes: Normalized name from "For DSM 17935" to "for_dsm_17935" for consistent matching
+- timestamp: '2026-06-05T07:41:02.882451+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/for_dsm_17936.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003834
   name: for_dsm_17936
-  notes: Same ingredient and concentration signature; reviewed as duplicate
-    phototrophic medium source record.
+  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
+    medium source record.
 - path: data/normalized_yaml/bacterial/for_dsm_18632.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003835
   name: for_dsm_18632
-  notes: Same ingredient and concentration signature; reviewed as duplicate
-    phototrophic medium source record.
+  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
+    medium source record.
 - path: data/normalized_yaml/bacterial/for_dsm_18805.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003836
   name: for_dsm_18805
-  notes: Same ingredient and concentration signature; reviewed as duplicate
-    phototrophic medium source record.
+  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
+    medium source record.
 - path: data/normalized_yaml/bacterial/for_dsm_18858.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003837
   name: for_dsm_18858
-  notes: Same ingredient and concentration signature; reviewed as duplicate
-    phototrophic medium source record.
+  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
+    medium source record.
 - path: data/normalized_yaml/bacterial/phototrophic_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003838
   name: phototrophic_medium
-  notes: Same ingredient and concentration signature; reviewed as duplicate
-    phototrophic medium source record.
+  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
+    medium source record.
 - path: data/normalized_yaml/specialized/phototrophic_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:015333
   name: phototrophic_medium
-  notes: Same ingredient and concentration signature; reviewed as duplicate
-    phototrophic medium source record.
+  notes: Same ingredient and concentration signature; reviewed as duplicate phototrophic
+    medium source record.

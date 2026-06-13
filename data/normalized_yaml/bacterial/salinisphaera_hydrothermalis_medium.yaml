@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '24'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KCl
   term:
@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Bacto peptone
   concentration:
@@ -57,15 +57,14 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add the vitamin B12 solution from a filter sterilised stock
-    solution to the autoclaved, cooled medium. Add 15.0 g/l agar for solid
-    media.
+  description: Add the vitamin B12 solution from a filter sterilised stock solution
+    to the autoclaved, cooled medium. Add 15.0 g/l agar for solid media.
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,13 +83,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:08.605353+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SALINISPHAERA HYDROTHERMALIS MEDIUM" to
-    "salinisphaera_hydrothermalis_medium" for consistent matching
+  notes: Normalized name from "SALINISPHAERA HYDROTHERMALIS MEDIUM" to "salinisphaera_hydrothermalis_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:45.076414+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_1216_SALINISPHAERA_HYDROTHERMALIS_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_1216_SALINISPHAERA_HYDROTHERMALIS_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003967
   name: salinisphaera_hydrothermalis_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1216; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1216; local ingredient
+    and concentration signatures match.

@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MnSO4 x H2O
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: MnSO4 x H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75211
+    label: manganese(II) sulfate
 - preferred_term: Agar, if necessary
   concentration:
     value: '15'
@@ -75,3 +75,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Nutrient Agar (For sporulation)" to "nutrient_agar_for_sporulation"
     for consistent matching
+- timestamp: '2026-06-05T07:41:40.120274+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

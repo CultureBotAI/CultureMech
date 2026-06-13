@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
@@ -44,8 +44,8 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2MoO4・2H2O
   concentration:
@@ -92,9 +92,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: FeCl3・6H2O
   concentration:
     value: '2'
@@ -165,14 +165,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:29.040148+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Modified Brock's Basal Salts-Yeast Extract
-    Medium" to "modified_brocks_basal_salts_yeast_extract_medium" for consistent
-    matching
+  notes: Normalized name from "Modified Brock's Basal Salts-Yeast Extract Medium"
+    to "modified_brocks_basal_salts_yeast_extract_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:36.381979+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/modified_brocks_basal_salts_yeast_extract_medeium_b.yaml
+- path: data/normalized_yaml/bacterial/modified_brocks_basal_salts_yeast_extract_medeium_b.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:009987
   name: modified_brocks_basal_salts_yeast_extract_medeium_b
-  notes: Yeast extract (BD-Difco) decreased from 5 g/L to 0.5 g/L while the
-    modified Brock basal salts medium remains unchanged.
+  notes: Yeast extract (BD-Difco) decreased from 5 g/L to 0.5 g/L while the modified
+    Brock basal salts medium remains unchanged.

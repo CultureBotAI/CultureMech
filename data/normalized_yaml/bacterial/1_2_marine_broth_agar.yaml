@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Agar (if needed)
   concentration:
@@ -59,19 +59,25 @@ curation_history:
 - timestamp: '2026-03-17T19:46:18.743496+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/2 Marine Broth (Agar)" to
-    "1_2_marine_broth_agar" for consistent matching
+  notes: Normalized name from "1/2 Marine Broth (Agar)" to "1_2_marine_broth_agar"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:15.490515+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/1_5_marine_agar_broth.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:008494
   name: 1_5_marine_agar_broth
-  notes: 1/5 Marine Agar/Broth decreases Bacto Marine Broth 2216 from 18.7 g/L
-    to 7 g/L while agar remains 15 g/L; parsed water amount differs and is
-    treated as a source normalization artifact for review.
+  notes: 1/5 Marine Agar/Broth decreases Bacto Marine Broth 2216 from 18.7 g/L to
+    7 g/L while agar remains 15 g/L; parsed water amount differs and is treated as
+    a source normalization artifact for review.
 - path: data/normalized_yaml/bacterial/1_10_marine_broth_agar.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:008340
   name: 1_10_marine_broth_agar
-  notes: 1/10 Marine Broth (Agar) decreases Bacto Marine Broth 2216 from 18.7
-    g/L to 3.7 g/L while agar remains 15 g/L.
+  notes: 1/10 Marine Broth (Agar) decreases Bacto Marine Broth 2216 from 18.7 g/L
+    to 3.7 g/L while agar remains 15 g/L.

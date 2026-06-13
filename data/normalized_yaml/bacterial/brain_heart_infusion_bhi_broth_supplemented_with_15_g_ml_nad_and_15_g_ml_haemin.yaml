@@ -15,8 +15,8 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: NAD
   concentration:
@@ -166,3 +166,9 @@ curation_history:
   notes: Normalized name from "Brain heart infusion (BHI) broth supplemented with
     15 μg/ml NAD and 15 μg/ml haemin" to "brain_heart_infusion_bhi_broth_supplemented_with_15_g_ml_nad_and_15_g_ml_haemin"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.459811+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

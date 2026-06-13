@@ -14,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Tryptone
   term:
     id: FOODON:03316428
@@ -114,4 +114,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB with addition of 1% (wt/vol) NaCl" to "lb_with_addition_of_1_wt_vol_nacl"
     for consistent matching
+- timestamp: '2026-06-05T07:41:10.955026+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:74

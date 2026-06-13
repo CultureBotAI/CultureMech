@@ -50,8 +50,8 @@ ingredients:
     value: '30.0'
     unit: G_PER_L
   notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Calf brains
   term:
@@ -164,8 +164,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -195,3 +195,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM 420 MODIFIED FOR DSM 4690" to "medium_420_modified_for_dsm_4690"
     for consistent matching
+- timestamp: '2026-06-05T07:41:18.987897+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

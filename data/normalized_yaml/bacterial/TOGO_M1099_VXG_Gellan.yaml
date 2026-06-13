@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MES
   concentration:
@@ -25,8 +25,8 @@ ingredients:
   term:
     id: CHEBI:39010
     label: MES
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000269
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39010
     label: MES
 - preferred_term: Gellan gum
   concentration:
@@ -36,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:85248
     label: Gellan Gum
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000929
-    label: Gellan gum
+  mediaingredientmech_chebi_term:
+    id: CHEBI:85248
+    label: Gellan Gum
 - preferred_term: Xylan
   concentration:
     value: '0.5'
@@ -47,9 +47,9 @@ ingredients:
   term:
     id: CHEBI:37166
     label: xylan
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000407
-    label: Xylan
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37166
+    label: xylan
 media_term:
   preferred_term: TOGO Medium M1099
   term:
@@ -97,6 +97,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:30.409184+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: 30 mM CaCl2・2H2O solution
   composition: []

@@ -21,8 +21,8 @@ ingredients:
     value: '0.025'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: L-Methionine
   term:
@@ -32,8 +32,8 @@ ingredients:
     value: '0.025'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: DL-Serine
   concentration:
@@ -46,8 +46,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001023
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
     label: Cysteine
 - preferred_term: Histidine
   term:
@@ -56,8 +56,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000355
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27570
     label: Histidine
 - preferred_term: Alanine
   concentration:
@@ -70,8 +70,11 @@ ingredients:
   concentration:
     value: '0.025'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  term:
+    id: CHEBI:17895
+    label: L-Tyrosine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: DL-Tyrosine
 - preferred_term: Phenylalanine
   concentration:
@@ -87,8 +90,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000341
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29016
     label: Arginine
 - preferred_term: Magnesium chloride
   concentration:
@@ -97,9 +100,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -107,15 +110,15 @@ ingredients:
   concentration:
     value: '0.0032346'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Sodium sulfate
   concentration:
     value: '1.5'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -152,8 +155,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000396
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26271
     label: Proline
 - preferred_term: Valine
   concentration:
@@ -180,9 +183,9 @@ ingredients:
   concentration:
     value: '330.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '1.34'
@@ -190,9 +193,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -200,8 +203,8 @@ ingredients:
   concentration:
     value: '28.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
@@ -263,8 +266,8 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000276
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39033
     label: PIPES
 - preferred_term: Sodium L-lactate
   term:
@@ -273,8 +276,8 @@ ingredients:
   concentration:
     value: '30.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000540
+  mediaingredientmech_chebi_term:
+    id: CHEBI:867561
     label: Sodium L-lactate
 - preferred_term: Threonine
   concentration:
@@ -314,6 +317,12 @@ curation_history:
   notes: Normalized name from "'Minimal Medium w/amino acids and salt stress (Tang
     et al 2009" to "minimal_medium_w_amino_acids_and_salt_stress_tang_et_al_2009"
     for consistent matching
+- timestamp: '2026-06-05T07:41:34.728580+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 185
   term:

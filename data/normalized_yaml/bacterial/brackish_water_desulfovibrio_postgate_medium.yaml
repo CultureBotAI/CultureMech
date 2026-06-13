@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.510204'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: NH4Cl
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '1.02041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Na2SO4
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '1.02041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: NaCl
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '10.2041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.102041'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '2.04082'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Na-DL-lactate
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '2.04082'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
     label: Na-DL-lactate
 - preferred_term: Yeast extract
   concentration:
@@ -100,8 +100,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Na-thioglycolate
   term:
@@ -110,8 +110,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
     label: Na-thioglycolate
 - preferred_term: Ascorbic acid
   term:
@@ -120,18 +120,17 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000326
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22652
     label: Ascorbic acid
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients of solution A, bring to the boil, then cool
-    to room temperature while sparging with 100% N2 gas. Add solutions B and C,
-    adjust pH to 7.8 with NaOH, and distribute under 100% N2 gas atmosphere into
-    anoxic Hungate-type tubes or serum vials. During distribution continuously
-    swirl the medium to keep the grey precipitate suspended. Autoclave 15 min at
-    121°C.
+  description: Dissolve ingredients of solution A, bring to the boil, then cool to
+    room temperature while sparging with 100% N2 gas. Add solutions B and C, adjust
+    pH to 7.8 with NaOH, and distribute under 100% N2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials. During distribution continuously swirl the medium to keep
+    the grey precipitate suspended. Autoclave 15 min at 121°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -150,17 +149,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.988983+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BRACKISH WATER DESULFOVIBRIO (POSTGATE) MEDIUM"
-    to "brackish_water_desulfovibrio_postgate_medium" for consistent matching
+  notes: Normalized name from "BRACKISH WATER DESULFOVIBRIO (POSTGATE) MEDIUM" to
+    "brackish_water_desulfovibrio_postgate_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:51.357213+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/desulfovibrio_marine_medium.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:004189
   name: desulfovibrio_marine_medium
-  notes: Desulfovibrio marine/brackish medium family; reviewed as salinity
-    variant of the marine medium because NaCl is the only parsed concentration
-    difference.
+  notes: Desulfovibrio marine/brackish medium family; reviewed as salinity variant
+    of the marine medium because NaCl is the only parsed concentration difference.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- NaCl concentration decreased from 25.5102 g/L to 10.2041 g/L; all other parsed
-  ingredient concentrations match the parent.
+- NaCl concentration decreased from 25.5102 g/L to 10.2041 g/L; all other parsed ingredient
+  concentrations match the parent.

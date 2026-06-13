@@ -11,8 +11,9 @@ composition:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000211
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: Manganese sulfate monohydrate
   concentration:
     value: '0.184'
@@ -54,8 +55,9 @@ composition:
   term:
     id: CHEBI:32030
     label: potassium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
 - preferred_term: Nickel ammonium sulfate hexahydrate
   concentration:
     value: '0.016'
@@ -72,8 +74,9 @@ composition:
   term:
     id: CHEBI:88217
     label: vanadyl sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001128
+  mediaingredientmech_chebi_term:
+    id: CHEBI:88217
+    label: vanadyl sulfate
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '0.0376'
@@ -81,8 +84,9 @@ composition:
   term:
     id: CHEBI:86463
     label: aluminium potassium sulfate dodecahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001109
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86463
+    label: aluminium potassium sulfate dodecahydrate
 notes: 'Minor Nutrients solution for Snow Algae Medium and related cold-adapted algae
   culture.
 
@@ -133,6 +137,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: references.reference_id->reference=3
+- timestamp: '2026-06-08T23:17:57.358366+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 references:
 - reference: https://utex.org/products/minor-nutrients
 - reference: UTEX:minor-nutrients

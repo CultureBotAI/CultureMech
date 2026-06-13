@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Inorganic salts-starch agar
 - preferred_term: Yeast extract
   concentration:
@@ -46,4 +46,10 @@ curation_history:
   notes: Normalized name from "INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST
     EXTRACT" to "inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract" for consistent
     matching
+- timestamp: '2026-06-05T07:41:56.935747+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:12

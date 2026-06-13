@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na2HPO4 x 12 H2O
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '2.39'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 12 H2O
 - preferred_term: Lab-Lemco beef extract
   concentration:
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -61,14 +61,14 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: To medium 605 add 0.45 g/l KH2PO4 and 2.39 g/l of Na2HPO4 x 12
-    H2O. Final pH of the medium should be 6.8.
+  description: To medium 605 add 0.45 g/l KH2PO4 and 2.39 g/l of Na2HPO4 x 12 H2O.
+    Final pH of the medium should be 6.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -87,13 +87,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.027928+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE" to
-    "nutrient_agar_oxoid_cm3_with_phosphate" for consistent matching
+  notes: Normalized name from "NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE" to "nutrient_agar_oxoid_cm3_with_phosphate"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:40.135646+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_605a_NUTRIENT_AGAR_OXOID_CM3_WITH_PHOSPHATE.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_605a_NUTRIENT_AGAR_OXOID_CM3_WITH_PHOSPHATE.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006094
   name: nutrient_agar_oxoid_cm3_with_phosphate
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

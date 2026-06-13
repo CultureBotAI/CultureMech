@@ -92,8 +92,8 @@ ingredients:
     value: '7.032e-06'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:com'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000392
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17905
     label: 2-Mercaptoethanesulfonate
 - preferred_term: Sodium bicarbonate
   concentration:
@@ -102,8 +102,8 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: Sodium bicarbonate
 - preferred_term: Potassium chloride
   concentration:
@@ -112,9 +112,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -122,8 +122,8 @@ ingredients:
   concentration:
     value: '0.0004363'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Sodium chloride
   term:
@@ -132,9 +132,9 @@ ingredients:
   concentration:
     value: '376.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: 2-Methylpropanoate
   concentration:
     value: '0.05675'
@@ -146,9 +146,9 @@ ingredients:
   concentration:
     value: '0.003478'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Sodium tungstate
   concentration:
     value: '0.003032'
@@ -163,8 +163,8 @@ ingredients:
   concentration:
     value: '0.07848'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: Manganese sulfate
   term:
@@ -173,9 +173,9 @@ ingredients:
   concentration:
     value: '0.005347'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Nickel chloride
   concentration:
     value: '0.001052'
@@ -190,8 +190,8 @@ ingredients:
   concentration:
     value: '9.348'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Magnesium sulfate
   term:
@@ -200,8 +200,8 @@ ingredients:
   concentration:
     value: '14.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium molybdate
   concentration:
@@ -217,9 +217,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.004203'
@@ -296,6 +296,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'McN Medium (Whitman" to "mcn_medium_whitman" for consistent
     matching
+- timestamp: '2026-06-05T07:41:13.442654+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 473
   term:

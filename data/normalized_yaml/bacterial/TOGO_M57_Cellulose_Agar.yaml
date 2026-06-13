@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
@@ -35,9 +35,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '5'
@@ -56,9 +56,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
-    label: CaCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: NH4NO3
   concentration:
     value: '0.2'
@@ -68,8 +68,8 @@ ingredients:
   term:
     id: CHEBI:63038
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: NH4NO3
 - preferred_term: Cellulose powder
   concentration:
@@ -91,8 +91,11 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
     component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L--Asparagine
 - preferred_term: Agar
   concentration:
@@ -102,9 +105,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.1'
@@ -118,9 +121,9 @@ ingredients:
   term:
     id: CHEBI:16199
     label: urea
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000301
-    label: Urea
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16199
+    label: urea
 - preferred_term: Casamino acids (BD-Difco)
   concentration:
     value: '0.1'
@@ -160,3 +163,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Cellulose Agar" to "cellulose_agar" for consistent
     matching
+- timestamp: '2026-06-05T07:40:42.708196+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

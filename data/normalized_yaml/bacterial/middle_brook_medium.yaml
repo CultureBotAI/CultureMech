@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Glycerol
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
-    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: Bacto Middlebrook 7H10 agar (Difco 262710)
   concentration:
     value: '19'
@@ -47,9 +47,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Dextrose
   concentration:
     value: '2'
@@ -59,9 +59,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Dextrose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Tryptone
   term:
     id: FOODON:03316428
@@ -124,8 +124,8 @@ ingredients:
   term:
     id: CHEBI:16196
     label: Oleic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001012
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16196
     label: Oleic acid
 - preferred_term: Catalase (beef)
   concentration:
@@ -182,3 +182,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Middle Brook Medium" to "middle_brook_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:33.881391+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

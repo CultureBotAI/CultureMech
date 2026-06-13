@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -43,26 +43,28 @@ curation_history:
 - timestamp: '2026-03-17T19:45:28.984890+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HORIKOSHI-I MEDIUM WITH 2% NaCl" to
-    "horikoshi_i_medium_with_2_nacl" for consistent matching
+  notes: Normalized name from "HORIKOSHI-I MEDIUM WITH 2% NaCl" to "horikoshi_i_medium_with_2_nacl"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:08.705051+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:74
 variant_children:
 - path: data/normalized_yaml/bacterial/horikoshi_i_medium_with_3_5_nacl.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:002211
   name: horikoshi_i_medium_with_3_5_nacl
-  notes: NaCl increased from 20 g/L to 35 g/L while Horikoshi-I medium remains
-    unchanged.
+  notes: NaCl increased from 20 g/L to 35 g/L while Horikoshi-I medium remains unchanged.
 - path: data/normalized_yaml/bacterial/horikoshi_i_medium_with_5_nacl.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:002762
   name: horikoshi_i_medium_with_5_nacl
-  notes: NaCl increased from 20 g/L to 50 g/L while Horikoshi-I medium remains
-    unchanged.
-- path:
-    data/normalized_yaml/bacterial/JCM_J345_HORIKOSHI-1_MEDIUM_WITH_10_NaCl.yaml
+  notes: NaCl increased from 20 g/L to 50 g/L while Horikoshi-I medium remains unchanged.
+- path: data/normalized_yaml/bacterial/JCM_J345_HORIKOSHI-1_MEDIUM_WITH_10_NaCl.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:002705
   name: horikoshi_1_medium_with_10_nacl
-  notes: NaCl increased from 20 g/L to 100 g/L while Horikoshi-I medium remains
-    unchanged.
+  notes: NaCl increased from 20 g/L to 100 g/L while Horikoshi-I medium remains unchanged.

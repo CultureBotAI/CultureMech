@@ -12,8 +12,8 @@ ingredients:
   concentration:
     value: '133.2'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000900
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18222
     label: Xylose
 - preferred_term: Sodium molybdate
   concentration:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.0008087'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Manganese sulfate
   term:
@@ -58,9 +58,9 @@ ingredients:
   concentration:
     value: '0.0002189'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -68,9 +68,9 @@ ingredients:
   concentration:
     value: '0.01739'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Citrate
   concentration:
     value: '0.02379'
@@ -86,8 +86,8 @@ ingredients:
   concentration:
     value: '9.691'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: Magnesium sulfate
   term:
@@ -96,8 +96,8 @@ ingredients:
   concentration:
     value: '0.8115'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -113,8 +113,8 @@ ingredients:
   concentration:
     value: '24.99'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: Ammonium nitrate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
@@ -152,6 +152,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Modified Vogel Medium (xylose" to "modified_vogel_medium_xylose"
     for consistent matching
+- timestamp: '2026-06-05T07:41:37.978028+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 311
   term:

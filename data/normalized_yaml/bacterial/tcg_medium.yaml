@@ -26,8 +26,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Sea water
   concentration:
@@ -40,14 +40,14 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Artifical seawater (ASW, eg., Instant Ocean) = 32 g seasalt
-    disolved in 1000 ml distilled water.
+  description: Artifical seawater (ASW, eg., Instant Ocean) = 32 g seasalt disolved
+    in 1000 ml distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -66,8 +66,13 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.175881+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TCG MEDIUM" to "tcg_medium" for consistent
-    matching
+  notes: Normalized name from "TCG MEDIUM" to "tcg_medium" for consistent matching
+- timestamp: '2026-06-05T07:41:48.750444+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J720_TCG_MEDIUM.yaml
   relationship: CONCENTRATION_VARIANT
@@ -75,5 +80,4 @@ parent_media:
   name: tcg_medium
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Same ingredient identity signature but concentration signature differs from
-  parent.
+- Same ingredient identity signature but concentration signature differs from parent.

@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.14'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Yeast extract
   concentration:
@@ -84,8 +84,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: Optional ingredient
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -93,11 +93,11 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Place a strip of sterile cellulose filter paper onto an agar
-    plate. Alternatively, place a strip of sterile cellulose filter paper into a
-    culture tube containing 5 ml of medium, thereby leaving 1 - 2 cm of the
-    strip outside of the medium. Inoculate the strain onto the cellulose filter
-    paper. The strain will grow on the cellulose paper only.
+  description: Place a strip of sterile cellulose filter paper onto an agar plate.
+    Alternatively, place a strip of sterile cellulose filter paper into a culture
+    tube containing 5 ml of medium, thereby leaving 1 - 2 cm of the strip outside
+    of the medium. Inoculate the strain onto the cellulose filter paper. The strain
+    will grow on the cellulose paper only.
 applications:
 - Microbial cultivation
 curation_history:
@@ -116,12 +116,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:13.533687+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPOROCYTOPHAGA MEDIUM" to "sporocytophaga_medium"
-    for consistent matching
+  notes: Normalized name from "SPOROCYTOPHAGA MEDIUM" to "sporocytophaga_medium" for
+    consistent matching
+- timestamp: '2026-06-05T07:41:46.618912+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_167_SPOROCYTOPHAGA_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004194
   name: sporocytophaga_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 167; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 167; local ingredient
+    and concentration signatures match.

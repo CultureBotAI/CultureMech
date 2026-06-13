@@ -32,8 +32,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Fructose
   term:
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28757
     label: Fructose
 - preferred_term: Maltose
   term:
@@ -52,8 +52,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
 - preferred_term: Na-gluconate
   term:
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001052
+  mediaingredientmech_chebi_term:
+    id: CHEBI:84997
     label: Na-gluconate
 - preferred_term: Na-acetate x 3 H2O
   concentration:
@@ -79,8 +79,8 @@ ingredients:
   term:
     id: CHEBI:63076
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000400
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
     label: (NH4)2 citrate
 - preferred_term: K2HPO4 x 3 H2O
   term:
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '2.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4 x 3 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -99,8 +99,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x 4 H2O
   term:
@@ -109,8 +109,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000711
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
     label: MnSO4 x 4 H2O
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -119,8 +119,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Tween 80
   term:
@@ -129,8 +129,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 applications:
 - Microbial cultivation
@@ -154,29 +154,35 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.642986+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LACTOBACILLUS medium III" to
-    "lactobacillus_medium_iii" for consistent matching
+  notes: Normalized name from "LACTOBACILLUS medium III" to "lactobacillus_medium_iii"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:25.129149+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_638_modified_for_dsm_17896.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006157
   name: medium_638_modified_for_dsm_17896
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_638_modified_for_dsm_22696.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006158
   name: medium_638_modified_for_dsm_22696
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/lactobacillus_medium_iii.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001771
   name: lactobacillus_medium_iii
-  notes: KOMODO record states DSMZ Medium 638 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 638 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

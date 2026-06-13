@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Phenol red
   concentration:
@@ -26,8 +26,8 @@ ingredients:
   term:
     id: CHEBI:31991
     label: Phenol red
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: L-Arginine
   concentration:
@@ -38,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:16467
     label: L-arginine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000289
-    label: L-Arginine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16467
+    label: L-arginine
 - preferred_term: Penicillin G** (20,000 U/ml)
   concentration:
     value: '5'
@@ -97,6 +97,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:52.923636+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: Horse serum*
   composition: []

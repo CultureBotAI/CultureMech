@@ -33,9 +33,9 @@ ingredients:
   term:
     id: CHEBI:16991
     label: deoxyribonucleic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000732
-    label: Fish-Sperm DNA
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16991
+    label: deoxyribonucleic acid
 - preferred_term: Phenol red
   term:
     id: CHEBI:31991
@@ -43,8 +43,8 @@ ingredients:
   concentration:
     value: '0.0285714'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: Urea
   term:
@@ -53,8 +53,8 @@ ingredients:
   concentration:
     value: '0.571429'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000301
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16199
     label: Urea
 - preferred_term: Yeast extract
   concentration:
@@ -98,3 +98,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "UREAPLASMA MEDIUM" to "ureaplasma_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:41:54.842706+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

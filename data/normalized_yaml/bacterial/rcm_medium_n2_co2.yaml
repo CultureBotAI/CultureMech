@@ -30,21 +30,20 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Sodium carbonate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve dehydrated RCM medium (available from BD BBL, OXOID, or
-    MERCK) in distilled water and add 0.5 ml/l Na-resazurin solution (0.1% w/v).
-    Bring to a boil and cool to room temperature while sparging with an 80% N2
-    and 20% CO2 gas mixture. Dispense medium under same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials and autoclave for 15 min at 121°C.
-    Before use, add 1.0 g of sodium carbonate per liter medium from a sterile
-    anoxic stock solution prepared under an 80% N2 and 20% CO2 gas mixture.
-    Check the pH of the medium after autoclaving and adjust the pH to 6.8 if
-    necessary.
+  description: Dissolve dehydrated RCM medium (available from BD BBL, OXOID, or MERCK)
+    in distilled water and add 0.5 ml/l Na-resazurin solution (0.1% w/v). Bring to
+    a boil and cool to room temperature while sparging with an 80% N2 and 20% CO2
+    gas mixture. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave for 15 min at 121°C. Before use, add 1.0 g
+    of sodium carbonate per liter medium from a sterile anoxic stock solution prepared
+    under an 80% N2 and 20% CO2 gas mixture. Check the pH of the medium after autoclaving
+    and adjust the pH to 6.8 if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -67,8 +66,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.317631+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "RCM MEDIUM (N2/CO2)" to "rcm_medium_n2_co2" for
-    consistent matching
+  notes: Normalized name from "RCM MEDIUM (N2/CO2)" to "rcm_medium_n2_co2" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:43.913401+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:634c
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_634_RCM_medium.yaml
@@ -77,5 +82,5 @@ parent_media:
   name: rcm_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

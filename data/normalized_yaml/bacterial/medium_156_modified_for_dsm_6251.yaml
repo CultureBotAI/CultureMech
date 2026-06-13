@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000403
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16977
     label: L-Alanine
 - preferred_term: Peptone
   concentration:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '0.018'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Potassium phosphate buffer
   concentration:
@@ -61,8 +61,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000924
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31346
     label: CaSO4
 - preferred_term: Sodium resazurin
   concentration:
@@ -78,8 +78,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -88,8 +88,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 applications:
 - Microbial cultivation
@@ -113,8 +113,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:40.605053+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 156 MODIFIED FOR DSM 6251" to
-    "medium_156_modified_for_dsm_6251" for consistent matching
+  notes: Normalized name from "MEDIUM 156 MODIFIED FOR DSM 6251" to "medium_156_modified_for_dsm_6251"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:15.486995+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/anaerotignum_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -122,5 +128,5 @@ parent_media:
   name: anaerotignum_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

@@ -13,8 +13,8 @@ ingredients:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Propenoate
   concentration:
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '0.00501375'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
@@ -56,8 +56,8 @@ ingredients:
   concentration:
     value: '35.2014'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -76,9 +76,9 @@ ingredients:
   concentration:
     value: '85.5578'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -86,8 +86,8 @@ ingredients:
   concentration:
     value: '4.05729'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Zinc sulfate
   term:
@@ -96,9 +96,9 @@ ingredients:
   concentration:
     value: '0.061931'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.00455014'
@@ -135,21 +135,19 @@ ingredients:
   concentration:
     value: '52.9445'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: Sodium nitrate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified
-    concentrations
+  description: Dissolve all ingredients in distilled water to specified concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
-    components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
 - timestamp: '2026-01-27T07:21:44.941889Z'
   curator: mediadb-import
@@ -167,8 +165,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:04.634949+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HMM with 1 g/L Junlon PW 110; Hobbs et al" to
-    "hmm_with_1_g_l_junlon_pw_110_hobbs_et_al" for consistent matching
+  notes: Normalized name from "HMM with 1 g/L Junlon PW 110; Hobbs et al" to "hmm_with_1_g_l_junlon_pw_110_hobbs_et_al"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:08.638034+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 254
   term:
@@ -182,27 +186,24 @@ applications:
 - Systems biology research
 high_metal: true
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/hmm_with_0_5_g_l_junlon_pw_110_hobbs_et_al.yaml
+- path: data/normalized_yaml/bacterial/hmm_with_0_5_g_l_junlon_pw_110_hobbs_et_al.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007151
   name: hmm_with_0_5_g_l_junlon_pw_110_hobbs_et_al
-  notes: Junlon PW 110 dose changes from 1 g/L parent to 0.5 g/L child; parsed
-    Propenoate concentration changes from 13.8773 mM to 6.93866 mM while all
-    other parsed ingredient concentrations match the parent.
-- path:
-    data/normalized_yaml/bacterial/hmm_with_1_5_g_l_junlon_pw_110_hobbs_et_al.yaml
+  notes: Junlon PW 110 dose changes from 1 g/L parent to 0.5 g/L child; parsed Propenoate
+    concentration changes from 13.8773 mM to 6.93866 mM while all other parsed ingredient
+    concentrations match the parent.
+- path: data/normalized_yaml/bacterial/hmm_with_1_5_g_l_junlon_pw_110_hobbs_et_al.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007153
   name: hmm_with_1_5_g_l_junlon_pw_110_hobbs_et_al
-  notes: Junlon PW 110 dose changes from 1 g/L parent to 1.5 g/L child; parsed
-    Propenoate concentration changes from 13.8773 mM to 20.816 mM while all
-    other parsed ingredient concentrations match the parent.
-- path:
-    data/normalized_yaml/bacterial/hmm_with_2_g_l_junlon_pw_110_hobbs_et_al.yaml
+  notes: Junlon PW 110 dose changes from 1 g/L parent to 1.5 g/L child; parsed Propenoate
+    concentration changes from 13.8773 mM to 20.816 mM while all other parsed ingredient
+    concentrations match the parent.
+- path: data/normalized_yaml/bacterial/hmm_with_2_g_l_junlon_pw_110_hobbs_et_al.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007154
   name: hmm_with_2_g_l_junlon_pw_110_hobbs_et_al
-  notes: Junlon PW 110 dose changes from 1 g/L parent to 2 g/L child; parsed
-    Propenoate concentration changes from 13.8773 mM to 27.7546 mM while all
-    other parsed ingredient concentrations match the parent.
+  notes: Junlon PW 110 dose changes from 1 g/L parent to 2 g/L child; parsed Propenoate
+    concentration changes from 13.8773 mM to 27.7546 mM while all other parsed ingredient
+    concentrations match the parent.

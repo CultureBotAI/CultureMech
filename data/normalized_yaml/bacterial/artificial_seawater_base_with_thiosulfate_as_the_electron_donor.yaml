@@ -20,9 +20,9 @@ ingredients:
   term:
     id: CHEBI:26977
     label: Thiosulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001096
-    label: thiosulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26977
+    label: Thiosulfate
 - preferred_term: O2
   notes: 'Properties: Gas'
   concentration:
@@ -67,3 +67,9 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:49.748748+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

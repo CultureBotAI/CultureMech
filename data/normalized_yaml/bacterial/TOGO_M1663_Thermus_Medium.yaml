@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '4'
@@ -47,9 +47,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 media_term:
   preferred_term: TOGO Medium M1663
   term:
@@ -65,11 +65,11 @@ applications:
 references:
 - reference: PMID:16233377
   year: 2003
-  notes: Primary literature source reporting Thermus thermophilus HB27 growth
-    kinetics in rich Thermus medium under controlled aeration and agitation.
-- reference: 'NCBI:GCF_000008125.1'
-  notes: NCBI Datasets genome assembly page for Thermus thermophilus HB27
-    assembly ASM812v1.
+  notes: Primary literature source reporting Thermus thermophilus HB27 growth kinetics
+    in rich Thermus medium under controlled aeration and agitation.
+- reference: NCBI:GCF_000008125.1
+  notes: NCBI Datasets genome assembly page for Thermus thermophilus HB27 assembly
+    ASM812v1.
 curation_history:
 - timestamp: '2026-01-27T06:35:58.090543Z'
   curator: togo-import
@@ -101,6 +101,12 @@ curation_history:
   action: ADDED_GROWTH_EVIDENCE
   notes: Added strain-specific Thermus thermophilus HB27 growth-kinetics evidence
     for rich Thermus medium.
+- timestamp: '2026-06-05T07:40:33.821009+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 target_organisms:
 - preferred_term: Thermus thermophilus HB27
   term:
@@ -114,25 +120,25 @@ target_organisms:
   - growth_rate_per_hour: 0.27
     doubling_time_minutes: 160.2
     temperature_celsius: 65.0
-    measurement_conditions: Rich Thermus medium in 3 L batch fermentors; 500 rpm
-      agitation and 2 vvm aeration with a mixture of air and oxygen; source
-      reports dry cell weight of 3 g/L under these oxygen transfer conditions.
+    measurement_conditions: Rich Thermus medium in 3 L batch fermentors; 500 rpm agitation
+      and 2 vvm aeration with a mixture of air and oxygen; source reports dry cell
+      weight of 3 g/L under these oxygen transfer conditions.
     evidence:
     - reference: PMID:16233377
       supports: SUPPORT
       snippet: The maximum growth rate (mu(max), h(-1)), doubling time (t(D), h),
-        and dry cell weight determined for T. thermophilus HB27 growing under
-        these conditions were 0.27 h(-1), 2.67 h, and 3g/l respectively.
-      explanation: The source directly reports quantitative growth kinetics for
-        Thermus thermophilus HB27 cultivated in rich Thermus medium, matching the
-        liquid CultureMech parent medium.
+        and dry cell weight determined for T. thermophilus HB27 growing under these
+        conditions were 0.27 h(-1), 2.67 h, and 3g/l respectively.
+      explanation: The source directly reports quantitative growth kinetics for Thermus
+        thermophilus HB27 cultivated in rich Thermus medium, matching the liquid CultureMech
+        parent medium.
     is_max_attainment: true
   evidence:
   - reference: PMID:16233377
     supports: SUPPORT
-    explanation: The abstract identifies Thermus thermophilus HB27 and states
-      that its growth kinetics were investigated in rich Thermus medium.
-  - reference: 'NCBI:GCF_000008125.1'
+    explanation: The abstract identifies Thermus thermophilus HB27 and states that
+      its growth kinetics were investigated in rich Thermus medium.
+  - reference: NCBI:GCF_000008125.1
     supports: SUPPORT
-    explanation: NCBI Datasets lists genome assembly ASM812v1 for Thermus
-      thermophilus HB27.
+    explanation: NCBI Datasets lists genome assembly ASM812v1 for Thermus thermophilus
+      HB27.

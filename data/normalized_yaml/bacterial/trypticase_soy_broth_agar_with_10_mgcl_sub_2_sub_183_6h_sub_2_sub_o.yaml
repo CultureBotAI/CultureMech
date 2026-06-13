@@ -148,8 +148,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Agar
   term:
@@ -158,8 +158,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -186,3 +186,9 @@ curation_history:
   notes: Normalized name from "TRYPTICASE SOY BROTH AGAR WITH 10%  MgCl<sub>2</sub>&#183;6H<sub>2</sub>O"
     to "trypticase_soy_broth_agar_with_10_mgcl_sub_2_sub_183_6h_sub_2_sub_o" for consistent
     matching
+- timestamp: '2026-06-05T07:41:54.464335+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

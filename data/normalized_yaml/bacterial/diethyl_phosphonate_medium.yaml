@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NH4Cl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Tris(hydroxymethyl)methylamine
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
     label: Tris(hydroxymethyl)methylamine
 - preferred_term: p-Hydroxybenzoate
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000881
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17879
     label: p-Hydroxybenzoate
 - preferred_term: Agar
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Diethyl phosphonate
   concentration:
@@ -79,9 +79,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 7.4. After sterilization add 100 ml of a
-    filter-sterilized solution of 1 mM diethyl phosphonate (Eastman Organic
-    Chemical Div., Rochester, N.Y., USA) or of 20 mM phosphate buffer.
+  description: Adjust pH to 7.4. After sterilization add 100 ml of a filter-sterilized
+    solution of 1 mM diethyl phosphonate (Eastman Organic Chemical Div., Rochester,
+    N.Y., USA) or of 20 mM phosphate buffer.
 applications:
 - Microbial cultivation
 curation_history:
@@ -100,13 +100,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.201147+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DIETHYL PHOSPHONATE MEDIUM" to
-    "diethyl_phosphonate_medium" for consistent matching
+  notes: Normalized name from "DIETHYL PHOSPHONATE MEDIUM" to "diethyl_phosphonate_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:58.702817+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_239_DIETHYL_PHOSPHONATE_MEDIUM.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_239_DIETHYL_PHOSPHONATE_MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004612
   name: diethyl_phosphonate_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 239; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 239; local ingredient
+    and concentration signatures match.

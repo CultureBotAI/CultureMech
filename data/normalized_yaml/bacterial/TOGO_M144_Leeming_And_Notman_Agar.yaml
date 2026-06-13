@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Glycerol
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
-    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: Cow's milk (whole fat)
   concentration:
     value: '10'
@@ -48,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '12'
@@ -59,9 +59,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.1'
@@ -80,9 +80,9 @@ ingredients:
   term:
     id: CHEBI:75456
     label: 2-stearoylglycerol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000691
-    label: Glycerol monostearate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75456
+    label: 2-stearoylglycerol
 - preferred_term: Tween 60
   concentration:
     value: '0.5'
@@ -91,9 +91,9 @@ ingredients:
   term:
     id: CHEBI:53425
     label: polysorbate 60
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000692
-    label: Tween 60
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53425
+    label: polysorbate 60
 media_term:
   preferred_term: TOGO Medium M144
   term:
@@ -128,3 +128,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Leeming And Notman Agar" to "leeming_and_notman_agar"
     for consistent matching
+- timestamp: '2026-06-05T07:40:33.099831+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

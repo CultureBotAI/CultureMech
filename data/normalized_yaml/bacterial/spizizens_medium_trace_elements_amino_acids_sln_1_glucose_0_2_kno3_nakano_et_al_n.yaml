@@ -22,8 +22,8 @@ ingredients:
     value: '83.2593'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Glycine
   term:
@@ -33,8 +33,8 @@ ingredients:
     value: '0.666045'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: L-Methionine
   term:
@@ -44,8 +44,8 @@ ingredients:
     value: '0.335098'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: Glutamine
   concentration:
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '0.412677'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001023
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15356
     label: Cysteine
 - preferred_term: Histidine
   term:
@@ -72,8 +72,8 @@ ingredients:
   concentration:
     value: '0.322269'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000355
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27570
     label: Histidine
 - preferred_term: Tryptophan
   term:
@@ -82,8 +82,8 @@ ingredients:
   concentration:
     value: '0.244822'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001025
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27897
     label: Tryptophan
 - preferred_term: Alanine
   concentration:
@@ -96,8 +96,11 @@ ingredients:
   concentration:
     value: '0.275953'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000316
+  term:
+    id: CHEBI:17895
+    label: L-Tyrosine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17895
     label: DL-Tyrosine
 - preferred_term: Phenylalanine
   concentration:
@@ -113,8 +116,8 @@ ingredients:
   concentration:
     value: '0.287026'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000341
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29016
     label: Arginine
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -155,8 +158,8 @@ ingredients:
   concentration:
     value: '0.434292'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000396
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26271
     label: Proline
 - preferred_term: Valine
   concentration:
@@ -172,8 +175,8 @@ ingredients:
   concentration:
     value: '0.378444'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000907
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22653
     label: Asparagine
 - preferred_term: Leucine
   concentration:
@@ -200,8 +203,8 @@ ingredients:
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -210,9 +213,9 @@ ingredients:
   concentration:
     value: '0.0044828'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0046211'
@@ -227,9 +230,9 @@ ingredients:
   concentration:
     value: '15.1355'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.0025222'
@@ -251,8 +254,8 @@ ingredients:
   concentration:
     value: '3.4002'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: '''Iron(III'
   concentration:
@@ -306,6 +309,12 @@ curation_history:
   notes: Normalized name from "Spizizen's medium + trace elements + amino acids sln
     + 1% glucose + 0.2% KNO3; Nakano et al','N" to "spizizens_medium_trace_elements_amino_acids_sln_1_glucose_0_2_kno3_nakano_et_al_n"
     for consistent matching
+- timestamp: '2026-06-05T07:41:46.513204+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 216
   term:

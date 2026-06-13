@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000243
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4167
     label: Dextrose
 - preferred_term: NaHCO3
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaCl
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2HPO4
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 applications:
 - Microbial cultivation
@@ -83,53 +83,59 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.876351+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TODD-HEWITT medium" to "todd_hewitt_medium" for
-    consistent matching
+  notes: Normalized name from "TODD-HEWITT medium" to "todd_hewitt_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:25.478432+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_697_modified_for_dsm_10695.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006315
   name: medium_697_modified_for_dsm_10695
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_697_modified_for_dsm_11867.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006316
   name: medium_697_modified_for_dsm_11867
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_697_modified_for_dsm_11868.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006317
   name: medium_697_modified_for_dsm_11868
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_697_modified_for_dsm_20566.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006318
   name: medium_697_modified_for_dsm_20566
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_697_modified_for_dsm_20617.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006319
   name: medium_697_modified_for_dsm_20617
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_697_modified_for_dsm_24048.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006320
   name: medium_697_modified_for_dsm_24048
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/todd_hewitt_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001834
   name: todd_hewitt_medium
-  notes: KOMODO record states DSMZ Medium 697 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 697 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

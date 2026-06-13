@@ -14,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
-    label: Monopotassium Phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: Glycerol
   concentration:
     value: '12'
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000588
-    label: Glycerol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: Magnesium Sulfate
   concentration:
     value: '0.24'
@@ -38,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: Magnesium Sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Sodium Citrate
   concentration:
     value: '0.6'
@@ -49,9 +49,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000719
-    label: Sodium Citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
 - preferred_term: 'Whole Egg '
   concentration:
     value: '1000'
@@ -66,9 +66,9 @@ ingredients:
   term:
     id: CHEBI:17196
     label: L-asparagine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
-    label: L-Asparagine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
+    label: L-asparagine
 - preferred_term: Malachite green
   concentration:
     value: '0.4'
@@ -78,8 +78,8 @@ ingredients:
   term:
     id: CHEBI:72449
     label: Malachite green
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000835
+  mediaingredientmech_chebi_term:
+    id: CHEBI:72449
     label: Malachite green
 - preferred_term: Potato Flour
   concentration:
@@ -118,3 +118,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Lowenstein Jenson medium" to "lowenstein_jenson_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.415955+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

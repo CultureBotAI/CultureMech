@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 applications:
 - Microbial cultivation
@@ -53,17 +53,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:46.656450+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YPD medium" to "ypd_medium" for consistent
-    matching
+  notes: Normalized name from "YPD medium" to "ypd_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:22.988482+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/ypd_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001500
   name: ypd_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 393; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 393; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 393; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 393; local ingredient
+  and concentration signatures match.

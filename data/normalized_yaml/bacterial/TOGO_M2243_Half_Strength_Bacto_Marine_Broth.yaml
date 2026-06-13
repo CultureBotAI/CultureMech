@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Difco Bacto Marine Broth (DIFCO 2216)
   concentration:
@@ -30,9 +30,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: H3BO3
   concentration:
     value: '22'
@@ -42,9 +42,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: KCl
   concentration:
     value: '0.55'
@@ -54,9 +54,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '0.16'
@@ -66,9 +66,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Na2SO4
   concentration:
     value: '3.24'
@@ -78,9 +78,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
-    label: Na2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: CaCl2
   concentration:
     value: '1.8'
@@ -90,9 +90,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: Na2HPO4
   concentration:
     value: '8'
@@ -102,9 +102,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
-    label: Na2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: (NH4)NO3
   concentration:
     value: '1.6'
@@ -114,8 +114,8 @@ ingredients:
   term:
     id: CHEBI:63038
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: (NH4)NO3
 - preferred_term: NaF
   concentration:
@@ -126,9 +126,9 @@ ingredients:
   term:
     id: CHEBI:28741
     label: sodium fluoride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000182
-    label: NaF
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28741
+    label: sodium fluoride
 - preferred_term: KBr
   concentration:
     value: '0.08'
@@ -138,9 +138,9 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
-    label: KBr
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
 - preferred_term: Fe(III) citrate
   concentration:
     value: '0.1'
@@ -162,9 +162,9 @@ ingredients:
   term:
     id: CHEBI:36383
     label: strontium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000196
-    label: SrCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36383
+    label: strontium dichloride
 - preferred_term: Na-silicate
   concentration:
     value: '4'
@@ -174,8 +174,8 @@ ingredients:
   term:
     id: CHEBI:60720
     label: Na-silicate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000833
+  mediaingredientmech_chebi_term:
+    id: CHEBI:60720
     label: Na-silicate
 - preferred_term: MgCl2 (anhydrous)
   concentration:
@@ -225,3 +225,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Half Strength Bacto Marine Broth" to "half_strength_bacto_marine_broth"
     for consistent matching
+- timestamp: '2026-06-05T07:40:35.820058+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

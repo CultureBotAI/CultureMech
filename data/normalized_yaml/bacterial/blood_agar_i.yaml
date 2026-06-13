@@ -49,8 +49,8 @@ ingredients:
     value: '30.0'
     unit: G_PER_L
   notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Calf brains
   term:
@@ -63,8 +63,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain
-    tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
 - preferred_term: Beef heart
   term:
     id: UBERON:0000948
@@ -76,8 +76,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox
-    heart tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
 - preferred_term: Proteose peptone
   term:
     id: FOODON:03302071
@@ -89,8 +89,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Enzymatic digest of animal protein providing amino acids and peptides;
-    Constituent of Brain Heart Infusion commercial product
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
 - preferred_term: Dextrose
   term:
     id: CHEBI:17234
@@ -102,8 +102,7 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial
-    product
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
   synonyms:
   - synonym_text: glucose
     synonym_type: EXACT
@@ -122,8 +121,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion
-    commercial product
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -140,8 +139,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion
-    commercial product
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: Na2HPO4
     synonym_type: EXACT
@@ -164,30 +163,30 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize blood agar No 2 (Oxoid). After autoclaving cool to
-    50°C, then add 40 ml/l of sterile horse blood.
+  description: Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50°C,
+    then add 40 ml/l of sterile horse blood.
 - step_number: 2
   action: STORE
-  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220
-    or 1. For rehydration of Helicobacter and Campylobacter spp., use medium 215
-    (brain heart infusion).
+  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or
+    1. For rehydration of Helicobacter and Campylobacter spp., use medium 215 (brain
+    heart infusion).
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 - step_number: 4
   action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is
-    recommended for sporulation.
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
+    for sporulation.
 - step_number: 5
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar
-    (Oxoid CM 131).
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    CM 131).
 applications:
 - Microbial cultivation
 curation_history:
@@ -210,12 +209,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:17.047478+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BLOOD AGAR I" to "blood_agar_i" for consistent
-    matching
+  notes: Normalized name from "BLOOD AGAR I" to "blood_agar_i" for consistent matching
+- timestamp: '2026-06-05T07:40:51.153429+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005245
   name: blood_agar_i
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: CaCO3
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: Sea water
   concentration:
@@ -52,14 +52,14 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: pH 7.0. Sterilize by autoclaving. Medium may be solidified by
-    adding 20.0 g/l agar.
+  description: pH 7.0. Sterilize by autoclaving. Medium may be solidified by adding
+    20.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -78,13 +78,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.014057+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "KISTIMONAS ASTERIAE MEDIUM" to
-    "kistimonas_asteriae_medium" for consistent matching
+  notes: Normalized name from "KISTIMONAS ASTERIAE MEDIUM" to "kistimonas_asteriae_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:10.410940+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_1252_KISTIMONAS_ASTERIAE_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_1252_KISTIMONAS_ASTERIAE_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004014
   name: kistimonas_asteriae_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1252; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 1252; local ingredient
+    and concentration signatures match.

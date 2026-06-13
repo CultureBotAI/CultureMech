@@ -20,8 +20,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001048
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28675
     label: Dextrin
 - preferred_term: Enzymatic digest of casein
   concentration:
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: Agar
   term:
@@ -52,8 +52,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -77,17 +77,23 @@ curation_history:
 - timestamp: '2026-03-17T19:45:56.244469+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HICKEY-TRESNER-AGAR" to "hickey_tresner_agar" for
-    consistent matching
+  notes: Normalized name from "HICKEY-TRESNER-AGAR" to "hickey_tresner_agar" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:25.234902+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:658
 parent_media:
   path: data/normalized_yaml/bacterial/hickey_tresner_agar.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001795
   name: hickey_tresner_agar
-  notes: KOMODO record states DSMZ Medium 658 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 658 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

@@ -13,8 +13,8 @@ ingredients:
     value: '27.7531'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Citrate
   concentration:
@@ -42,8 +42,8 @@ ingredients:
   concentration:
     value: '1.92926'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000355
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27570
     label: Histidine
 - preferred_term: Potassium dibasic phosphate
   concentration:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
@@ -69,15 +69,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified
-    concentrations
+  description: Dissolve all ingredients in distilled water to specified concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
-    components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
 - timestamp: '2026-01-27T07:21:43.646419Z'
   curator: mediadb-import
@@ -95,8 +93,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:03.628005+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "'thiamine limiting minimal media (Hassan et al"
-    to "thiamine_limiting_minimal_media_hassan_et_al" for consistent matching
+  notes: Normalized name from "'thiamine limiting minimal media (Hassan et al" to
+    "thiamine_limiting_minimal_media_hassan_et_al" for consistent matching
+- timestamp: '2026-06-05T07:41:51.058922+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 117
   term:
@@ -113,9 +117,9 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007002
   name: glucose_minimal_media_hassan_et_al
-  notes: MediaDB Hassan minimal-media limiting-nutrient grid; reviewed as
-    concentration variants of the glucose minimal medium record.
+  notes: MediaDB Hassan minimal-media limiting-nutrient grid; reviewed as concentration
+    variants of the glucose minimal medium record.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Thiamine concentration decreased from 0.113053 mM to 0.000188423 mM; all other
-  parsed ingredient concentrations match the parent.
+- Thiamine concentration decreased from 0.113053 mM to 0.000188423 mM; all other parsed
+  ingredient concentrations match the parent.
