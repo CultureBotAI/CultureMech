@@ -129,8 +129,8 @@ ingredients:
     label: Resazurin
 - preferred_term: Sodium malate
   term:
-    id: CHEBI:91261
-    label: Sodium malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '1'
     unit: G_PER_L

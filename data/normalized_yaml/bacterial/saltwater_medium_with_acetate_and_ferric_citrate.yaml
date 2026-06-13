@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '3333.33'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Na2SO4
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '666.667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
   notes: Copied from referenced JCM Medium 462
 - preferred_term: MgCl2 x 6 H2O
@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '500'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
   notes: Copied from referenced JCM Medium 462
 - preferred_term: CaCl2 x 2 H2O
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
   notes: Copied from referenced JCM Medium 462
 - preferred_term: NH4Cl
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '125'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
   notes: Copied from referenced JCM Medium 462
 - preferred_term: KH2PO4
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
   notes: Copied from referenced JCM Medium 462
 - preferred_term: KBr
@@ -84,8 +84,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001123
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32030
     label: KBr
   notes: Copied from referenced JCM Medium 462
 - preferred_term: KCl
@@ -95,8 +95,8 @@ ingredients:
   concentration:
     value: '83.3333'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
   notes: Copied from referenced JCM Medium 462
 - preferred_term: NaHCO3
@@ -106,8 +106,8 @@ ingredients:
   concentration:
     value: '416.667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Sodium lactate
@@ -117,8 +117,8 @@ ingredients:
   concentration:
     value: '375'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
     label: Sodium lactate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Na2S x 9 H2O
@@ -128,8 +128,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Resazurin
@@ -139,8 +139,8 @@ ingredients:
   concentration:
     value: '0.166667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Riboflavin
@@ -150,8 +150,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
   notes: Copied from referenced JCM Medium 462
 - preferred_term: HCl
@@ -161,8 +161,8 @@ ingredients:
   concentration:
     value: '12.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000150
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
     label: HCl
   notes: Copied from referenced JCM Medium 462
 - preferred_term: FeSO4 x 7 H2O
@@ -172,8 +172,8 @@ ingredients:
   concentration:
     value: '2.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
   notes: Copied from referenced JCM Medium 462
 - preferred_term: H3BO3
@@ -183,8 +183,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
   notes: Copied from referenced JCM Medium 462
 - preferred_term: MnCl2 x 4 H2O
@@ -194,8 +194,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
   notes: Copied from referenced JCM Medium 462
 - preferred_term: CoCl2 x 6 H2O
@@ -205,8 +205,8 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
   notes: Copied from referenced JCM Medium 462
 - preferred_term: NiCl2 x 6 H2O
@@ -216,8 +216,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
   notes: Copied from referenced JCM Medium 462
 - preferred_term: CuCl2 x 2 H2O
@@ -227,8 +227,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
   notes: Copied from referenced JCM Medium 462
 - preferred_term: ZnSO4 x 7 H2O
@@ -238,8 +238,8 @@ ingredients:
   concentration:
     value: '0.144'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Na2MoO4 x 2 H2O
@@ -249,8 +249,8 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   notes: Copied from referenced JCM Medium 462
 - preferred_term: p-Aminobenzoic acid
@@ -260,8 +260,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Biotin
@@ -271,8 +271,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Nicotinic acid
@@ -282,8 +282,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
   notes: Copied from referenced JCM Medium 462
 - preferred_term: DL-Calcium pantothenate
@@ -293,8 +293,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: DL-Calcium pantothenate
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Pyridoxine hydrochloride
@@ -304,8 +304,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Sodium phosphate buffer
@@ -321,8 +321,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Vitamin B12
@@ -332,8 +332,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
   notes: Copied from referenced JCM Medium 462
 - preferred_term: NaOH
@@ -343,8 +343,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Na2SeO3 x 5 H2O
@@ -354,8 +354,8 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
   notes: Copied from referenced JCM Medium 462
 - preferred_term: Na2WO4 x 2 H2O
@@ -365,8 +365,8 @@ ingredients:
   concentration:
     value: '0.008'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000309
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
     label: Na2WO4 x 2 H2O
   notes: Copied from referenced JCM Medium 462
 preparation_steps:
@@ -411,5 +411,11 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:45.240053+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 32 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 data_quality_flags:
 - resolved_reference

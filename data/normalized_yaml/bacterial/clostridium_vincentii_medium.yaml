@@ -23,8 +23,8 @@ ingredients:
   term:
     id: CHEBI:63038
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000287
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63038
     label: NH4NO3
 - preferred_term: Yeast extract
   concentration:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.999001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Na-phosphate buffer
   concentration:
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '1.998'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17716
     label: Lactose
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -72,8 +72,8 @@ ingredients:
   concentration:
     value: '0.2997'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -82,8 +82,8 @@ ingredients:
   concentration:
     value: '0.2997'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: Biotin
   term:
@@ -92,8 +92,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Folic acid
   term:
@@ -102,8 +102,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -112,8 +112,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Thiamine HCl
   term:
@@ -122,8 +122,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
@@ -132,8 +132,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
@@ -142,8 +142,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
@@ -159,8 +159,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -169,8 +169,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
@@ -179,21 +179,21 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000166
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
     label: (DL)-alpha-Lipoic acid
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, phosphate-buffer,
-    lactose, vitamins, cysteine and sulfide), then sparge medium with 80% N2 and
-    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and
-    autoclave. After sterilization add phosphate-buffer, lactose, cysteine and
-    sulfide from sterile anoxic stock solutions autoclaved under 100% N2 gas and
-    bicarbonate from a sterile anoxic stock solution prepared under 80% N2 and
-    20% CO2 gas mixture. Vitamins are prepared under N2 gas atmosphere and
-    sterilized by filtration. Adjust pH of complete medium to 6.5, if necessary.
+  description: Dissolve ingredients (except bicarbonate, phosphate-buffer, lactose,
+    vitamins, cysteine and sulfide), then sparge medium with 80% N2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization
+    add phosphate-buffer, lactose, cysteine and sulfide from sterile anoxic stock
+    solutions autoclaved under 100% N2 gas and bicarbonate from a sterile anoxic stock
+    solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins are prepared
+    under N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium
+    to 6.5, if necessary.
 - step_number: 2
   action: FILTER_STERILIZE
   description: 'Note: Sea salts can be replaced by 300.0 ml/l of filtered aged sea
@@ -212,8 +212,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:51.893102Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from
-    MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-03-13T06:19:08.270616Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
@@ -225,13 +225,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.694363+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM VINCENTII MEDIUM" to
-    "clostridium_vincentii_medium" for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM VINCENTII MEDIUM" to "clostridium_vincentii_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:54.468256+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006425
   name: clostridium_vincentii_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

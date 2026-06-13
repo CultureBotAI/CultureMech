@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '19.98'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Starch
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: CaCO3
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '3.99202'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001099
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3311
     label: CaCO3
 - preferred_term: K2HPO4
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '1.99601'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '1.99601'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '1.99601'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: (NH4)2SO4
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '3.99202'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -99,8 +99,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -109,19 +109,19 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: The pH should be between 7.0 and 7.4. Do not adjust if it is
-    within this range. Mix solutions I and II together. Add 20.0 g agar. Liquify
-    agar by steaming at 100°C for 10 to 20 min.
+  description: The pH should be between 7.0 and 7.4. Do not adjust if it is within
+    this range. Mix solutions I and II together. Add 20.0 g agar. Liquify agar by
+    steaming at 100°C for 10 to 20 min.
 - step_number: 2
   action: MIX
-  description: Difco soluble starch, 10.0 g. Make a paste of the starch with a
-    small amount of cold distilled water and bring to a volume of 500 ml.
+  description: Difco soluble starch, 10.0 g. Make a paste of the starch with a small
+    amount of cold distilled water and bring to a volume of 500 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -140,12 +140,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.601981+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ISP MEDIUM 4" to "isp_medium_4" for consistent
-    matching
+  notes: Normalized name from "ISP MEDIUM 4" to "isp_medium_4" for consistent matching
+- timestamp: '2026-06-05T07:41:09.707328+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_547_ISP_medium_4.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005991
   name: isp_medium_4
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

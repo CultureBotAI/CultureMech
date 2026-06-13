@@ -13,8 +13,8 @@ ingredients:
   term:
     id: CHEBI:2511
     label: agarose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000909
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2511
     label: agarose
 - preferred_term: water
   concentration:
@@ -24,9 +24,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Water
 - preferred_term: Leptospira Medium Base EMJH (Difco)
   concentration:
     value: '2.3'
@@ -68,3 +68,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Leptospira-Medium" to "leptospira_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:40:36.723345+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

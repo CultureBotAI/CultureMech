@@ -13,8 +13,8 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000420
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26806
     label: Succinate
 - preferred_term: Thiamine
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.83'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: '''Iron(III'
   concentration:
@@ -94,6 +94,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MMT-Succinate with NH4Cl and thiamine; Taboada et al"
     to "mmt_succinate_with_nh4cl_and_thiamine_taboada_et_al" for consistent matching
+- timestamp: '2026-06-05T07:41:35.789316+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 170
   term:

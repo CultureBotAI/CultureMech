@@ -26,8 +26,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Demineralized water
   term:
@@ -37,8 +37,8 @@ ingredients:
     value: '60.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 50.0, 10.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Demineralized water
 - preferred_term: Cycloheximid
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000731
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27641
     label: Cycloheximid
 preparation_steps:
 - step_number: 1
@@ -102,3 +102,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Chlamydia serpentis & poikilotherma Medium" to "chlamydia_serpentis_poikilotherma_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:53.296825+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

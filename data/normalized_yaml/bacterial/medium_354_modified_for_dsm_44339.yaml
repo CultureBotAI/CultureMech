@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '1.55087'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgSO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.148883'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4
 - preferred_term: Mg-citrate
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.372208'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000655
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131389
     label: Mg-citrate
 - preferred_term: L-Asparagin
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '2.23325'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagin
 - preferred_term: Potato flour
   concentration:
@@ -63,8 +63,8 @@ ingredients:
   concentration:
     value: '0.248139'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000835
+  mediaingredientmech_chebi_term:
+    id: CHEBI:72449
     label: Malachite green
 - preferred_term: Glycerol
   term:
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Fresh egg mixture
   concentration:
@@ -102,8 +102,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:45.590684+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 354 MODIFIED FOR DSM 44339" to
-    "medium_354_modified_for_dsm_44339" for consistent matching
+  notes: Normalized name from "MEDIUM 354 MODIFIED FOR DSM 44339" to "medium_354_modified_for_dsm_44339"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:18.469562+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 7.0
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_354_L_WENSTEIN-JENSEN_medium.yaml
@@ -112,5 +118,5 @@ parent_media:
   name: l_wenstein_jensen_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

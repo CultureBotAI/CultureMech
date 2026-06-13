@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Na2-citrate
 - preferred_term: KCl
   term:
@@ -33,8 +33,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -43,8 +43,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   term:
@@ -53,8 +53,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2CO3
   term:
@@ -63,8 +63,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -83,16 +83,16 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Liquid medium may be prepared by adding all components together.
-    Agar (2%) medium should be prepared without Na2CO3 and sterilised by
-    autoclaving. Add 20-30 ml of a sterile 10% Na2CO3 solution to the autoclaved
-    medium containing agar so that the final pH is 9.0.
+  description: Liquid medium may be prepared by adding all components together. Agar
+    (2%) medium should be prepared without Na2CO3 and sterilised by autoclaving. Add
+    20-30 ml of a sterile 10% Na2CO3 solution to the autoclaved medium containing
+    agar so that the final pH is 9.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -111,12 +111,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:20.549319+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HALOMONAS PANTELLERIENSE" to
-    "halomonas_pantelleriense" for consistent matching
+  notes: Normalized name from "HALOMONAS PANTELLERIENSE" to "halomonas_pantelleriense"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:07.892371+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_752_HALOMONAS_PANTELLERIENSE.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006404
   name: halomonas_pantelleriense
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

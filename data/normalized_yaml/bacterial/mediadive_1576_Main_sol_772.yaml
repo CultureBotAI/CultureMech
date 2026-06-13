@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2HPO4
   concentration:
     value: '3'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:8
     label: MgSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Fe(III) citrate
   concentration:
     value: '0.03'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '0.005'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:36
     label: MnCl2 x 4 H2O
   chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '0.005'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:35
     label: ZnSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: CuSO4 x 2 H2O
   concentration:
     value: '0.0005'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:719
     label: CuSO4 x 2 H2O
   chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
+    id: CHEBI:23414
+    label: CuSO4 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Thiamine-HCl x 2 H2O
   concentration:
     value: '0.0004'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:77
     label: Thiamine-HCl x 2 H2O
   chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -132,10 +132,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Methanol
   concentration:
     value: '7.92'
@@ -145,9 +145,9 @@ composition:
     label: Methanol
   chebi_term:
     id: CHEBI:17790
-    label: methanol
+    label: Methanol
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: Thiamine hydrochloride may be replaced by 2 g/l yeast extract.
   The pH of the medium is adjusted to pH 9.0 with filter sterilised 10% Na2CO3. 10
   ml sterile methanol (filter sterilised, or autoclaved in crimp top sealed bottles)
@@ -175,6 +175,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:16.858068+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 8 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:45:42.507522+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

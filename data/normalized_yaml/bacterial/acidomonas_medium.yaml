@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Peptone
   concentration:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -69,16 +69,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:26.051647+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDOMONAS MEDIUM" to "acidomonas_medium" for
-    consistent matching
+  notes: Normalized name from "ACIDOMONAS MEDIUM" to "acidomonas_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:47.440942+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/ym_agar.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:002617
   name: ym_agar
-  notes: Reviewed Acidomonas Medium as a concentration variant of the YM Agar
-    formulation with doubled base components and lower pH.
+  notes: Reviewed Acidomonas Medium as a concentration variant of the YM Agar formulation
+    with doubled base components and lower pH.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Reviewed YM Agar/Acidomonas Medium pair; child doubles glucose, peptone, yeast
-  extract, malt extract, and agar concentrations and changes pH from 6.2 to 4.0.
+- Reviewed YM Agar/Acidomonas Medium pair; child doubles glucose, peptone, yeast extract,
+  malt extract, and agar concentrations and changes pH from 6.2 to 4.0.

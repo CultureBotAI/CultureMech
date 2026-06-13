@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -76,14 +76,20 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "1/3 LB" to "1_3_lb" for consistent matching
+- timestamp: '2026-06-05T07:40:15.594689+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/lb_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:008037
   name: lb_medium
-  notes: Both records are TOGO/NBRC LB solid agar formulations; the child is
-    explicitly named 1/3 LB and preserves the same NaCl and agar levels.
+  notes: Both records are TOGO/NBRC LB solid agar formulations; the child is explicitly
+    named 1/3 LB and preserves the same NaCl and agar levels.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- 1/3 LB decreases yeast extract from 5 g/L to 1.67 g/L and peptone from 10 g/L
-  to 3.33 g/L while NaCl and agar remain unchanged.
+- 1/3 LB decreases yeast extract from 5 g/L to 1.67 g/L and peptone from 10 g/L to
+  3.33 g/L while NaCl and agar remain unchanged.

@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4 . 7H2O
   concentration:
@@ -24,8 +24,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Thiamine . HCl
   concentration:
     value: '1'
@@ -39,9 +39,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001027
-    label: Vitamin B12
+  mediaingredientmech_chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: KNO3
   concentration:
     value: '0.1'
@@ -63,9 +63,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: Sodium glycerophosphate
   concentration:
     value: '0.1'
@@ -80,8 +80,8 @@ ingredients:
   term:
     id: CHEBI:9754
     label: Tris buffer
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
     label: Tris buffer
 - preferred_term: Glucose
   concentration:
@@ -92,9 +92,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '10'
@@ -103,20 +103,14 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Casamino acids
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Na2MoO4 . 2H2O
   concentration:
     value: '25.2'
@@ -135,9 +129,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
-    label: H3BO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: MnCl2 . 4H2O
   concentration:
     value: '1.8'
@@ -174,9 +168,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000141
-    label: ZnCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: Sodium tartrate
   concentration:
     value: '1.77'
@@ -186,9 +180,9 @@ ingredients:
   term:
     id: CHEBI:63017
     label: sodium L-tartrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000449
-    label: Sodium tartrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63017
+    label: sodium L-tartrate
 - preferred_term: 'FeSO4 '
   concentration:
     value: '1.36'
@@ -198,9 +192,9 @@ ingredients:
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001045
-    label: 'FeSO4 '
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
 media_term:
   preferred_term: TOGO Medium M2593
   term:
@@ -249,6 +243,24 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:10.274624+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:40.250552+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+- timestamp: '2026-06-10T06:57:49.992181+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
 solutions:
 - preferred_term: Trace Elements
   term:

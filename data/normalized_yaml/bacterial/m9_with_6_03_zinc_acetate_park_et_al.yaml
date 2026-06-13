@@ -13,8 +13,8 @@ ingredients:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -37,9 +37,9 @@ ingredients:
   concentration:
     value: '8.55578'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0449'
@@ -54,8 +54,8 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
@@ -64,8 +64,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Zinc Acetate
   concentration:
@@ -74,15 +74,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified
-    concentrations
+  description: Dissolve all ingredients in distilled water to specified concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
-    components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
 - timestamp: '2026-01-27T07:21:44.802501Z'
   curator: mediadb-import
@@ -100,8 +98,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:04.546396+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "M9 with 6.03% zinc acetate; Park et al" to
-    "m9_with_6_03_zinc_acetate_park_et_al" for consistent matching
+  notes: Normalized name from "M9 with 6.03% zinc acetate; Park et al" to "m9_with_6_03_zinc_acetate_park_et_al"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:12.267578+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 240
   term:
@@ -119,9 +123,9 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007134
   name: m9_with_0_67_zinc_acetate_park_et_al
-  notes: MediaDB M9 Park zinc-dose grid; reviewed as concentration variant of
-    the lowest zinc-dose record.
+  notes: MediaDB M9 Park zinc-dose grid; reviewed as concentration variant of the
+    lowest zinc-dose record.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Zinc Acetate concentration increased from 30.5239 mM to 274.715 mM; all other
-  parsed ingredient concentrations match the parent.
+- Zinc Acetate concentration increased from 30.5239 mM to 274.715 mM; all other parsed
+  ingredient concentrations match the parent.

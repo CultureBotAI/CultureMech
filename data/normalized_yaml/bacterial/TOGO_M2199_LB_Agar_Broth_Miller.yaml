@@ -78,8 +78,8 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: Sodium Chloride
 - preferred_term: Tryptone
   concentration:
@@ -132,4 +132,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB Agar/Broth, Miller" to "lb_agar_broth_miller" for
     consistent matching
+- timestamp: '2026-06-05T07:40:35.693155+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:74

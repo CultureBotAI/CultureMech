@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '44'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
     label: Sodium lactate
 - preferred_term: Na2SO4
   term:
@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '56'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 preparation_steps:
 - step_number: 1
@@ -73,4 +73,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THERMODESULFOVIBRIO MEDIUM" to "thermodesulfovibrio_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:50.189408+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:J479

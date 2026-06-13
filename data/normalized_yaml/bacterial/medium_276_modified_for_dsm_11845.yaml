@@ -19,19 +19,13 @@ ingredients:
   concentration:
     value: '80'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Casamino acids
   concentration:
     value: '7.5'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Proteose peptone no. 3
   concentration:
     value: '5'
@@ -47,8 +41,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Na3-citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -57,8 +51,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4
   term:
@@ -67,8 +61,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
@@ -77,8 +71,8 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000429
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76181
     label: Fe(NH4)2(SO4)2 x 6 H2O
 - preferred_term: Agar
   term:
@@ -88,8 +82,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -113,8 +107,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:43.578219+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 276 MODIFIED FOR DSM 11845" to
-    "medium_276_modified_for_dsm_11845" for consistent matching
+  notes: Normalized name from "MEDIUM 276 MODIFIED FOR DSM 11845" to "medium_276_modified_for_dsm_11845"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:17.685276+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:43.795086+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 ph_value: 7.5
 parent_media:
   path: data/normalized_yaml/bacterial/halomonas_medium.yaml
@@ -123,5 +129,5 @@ parent_media:
   name: halomonas_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

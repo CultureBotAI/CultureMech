@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:1628
     label: Marine agar 2216
   chebi_term:
-    id: CHEBI:26710
-    label: 1% sodium chloride
+    id: CHEBI:2509
+    label: Marine agar 2216
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Casitone
   concentration:
     value: '1'
@@ -23,11 +23,6 @@ composition:
   term:
     id: mediadive.compound:84
     label: Casitone
-  chebi_term:
-    id: CHEBI:2509
-    label: agar
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Soytone
   concentration:
     value: '1'
@@ -36,10 +31,10 @@ composition:
     id: mediadive.compound:667
     label: Soytone
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:16247
+    label: phospholipid
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Malt extract
   concentration:
     value: '1'
@@ -47,11 +42,6 @@ composition:
   term:
     id: mediadive.compound:116
     label: Malt extract
-  chebi_term:
-    id: CHEBI:2509
-    label: agar
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: Adjust pH to 7.5.
 curation_history:
 - timestamp: '2026-03-13T06:20:33.847514Z'
@@ -76,6 +66,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:34.872829+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:48:53.336791+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

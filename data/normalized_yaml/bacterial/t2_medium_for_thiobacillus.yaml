@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NH4Cl
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: KNO3
   concentration:
     value: '2'
@@ -58,8 +58,8 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaHCO3
   concentration:
@@ -70,9 +70,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '0.8'
@@ -80,8 +80,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: FeSO4 . 7H2O (2%, w/v, in N HCl)
   concentration:
     value: '1'
@@ -97,9 +97,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: CuSO4
   concentration:
     value: '1.57'
@@ -109,9 +109,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000855
-    label: CuSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
 - preferred_term: CoCl2
   concentration:
     value: '1.61'
@@ -121,9 +121,9 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
-    label: CoCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
 - preferred_term: FeSO4
   concentration:
     value: '4.99'
@@ -133,9 +133,9 @@ ingredients:
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001045
-    label: FeSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: MnCl2
   concentration:
     value: '5.06'
@@ -154,9 +154,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: ZnSO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
 - preferred_term: Ammonium molybdate
   concentration:
     value: '1.1'
@@ -166,9 +166,9 @@ ingredients:
   term:
     id: CHEBI:91249
     label: ammonium molybdate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001093
-    label: Ammonium molybdate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91249
+    label: ammonium molybdate
 - preferred_term: EDTA
   concentration:
     value: '50'
@@ -177,9 +177,9 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
-    label: EDTA
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
+    label: EDTA(2-)
 media_term:
   preferred_term: TOGO Medium M2235
   term:
@@ -239,6 +239,18 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:48.644089+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:34.176755+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
 solutions:
 - preferred_term: Solution A
   term:

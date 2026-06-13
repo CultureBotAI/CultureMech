@@ -23,11 +23,6 @@ composition:
   term:
     id: mediadive.compound:275
     label: Potassium phosphate buffer
-  chebi_term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: Dissolve 10 mol pyrrole-2-carboxylic acid per liter potassium phosphate
   buffer (50 mM; pH 7.2) and sterilize the solution by membrane filtration.
 curation_history:
@@ -53,6 +48,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:56:26.950367+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

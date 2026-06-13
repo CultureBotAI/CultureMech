@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:74
     label: Trypticase
   chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
+    id: CHEBI:78018
+    label: dodecylphosphocholine
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '0.0005'
@@ -23,11 +23,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Glucose
   concentration:
     value: '1'
@@ -39,7 +34,7 @@ composition:
     id: CHEBI:17234
     label: D-glucose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: L-Cysteine HCl
   concentration:
     value: '0.0003'
@@ -72,10 +67,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'pH 7.0
 
   Prepare the medium without the vitamin solution under an atmosphere of N2 and dispense
@@ -107,6 +102,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:24.093831+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 2 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:56:12.063452+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

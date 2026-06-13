@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: KH2PO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -63,14 +63,14 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 2.0 with 10 N H2SO4. Separately autoclave yeast
-    extract and glucose as 10% solutions, and add aseptically to the medium.
+  description: Adjust pH to 2.0 with 10 N H2SO4. Separately autoclave yeast extract
+    and glucose as 10% solutions, and add aseptically to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,8 +89,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.238713+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOPLASMA MEDIUM" to "thermoplasma_medium" for
-    consistent matching
+  notes: Normalized name from "THERMOPLASMA MEDIUM" to "thermoplasma_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:50.415646+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/picrophilus_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -98,5 +104,5 @@ parent_media:
   name: picrophilus_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

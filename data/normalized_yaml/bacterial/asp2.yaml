@@ -12,9 +12,9 @@ ingredients:
   concentration:
     value: '308.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: '20.3'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Potassium chloride
   concentration:
@@ -32,9 +32,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.901'
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.588'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: Sodium nitrate
 - preferred_term: Potassium dibasic phosphate
   concentration:
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '1.48e-06'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 - preferred_term: EDTA
   term:
@@ -83,8 +83,8 @@ ingredients:
   concentration:
     value: '0.131'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000165
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64755
     label: EDTA
 - preferred_term: '''Iron(III'
   concentration:
@@ -125,8 +125,8 @@ ingredients:
   concentration:
     value: '9.7e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Thiamine HCl
   term:
@@ -135,8 +135,8 @@ ingredients:
   concentration:
     value: '0.00166'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Nicotinate
   concentration:
@@ -153,8 +153,8 @@ ingredients:
   concentration:
     value: '0.000456'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: 4-Aminobenzoate
   term:
@@ -164,9 +164,9 @@ ingredients:
     value: '7.29e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -175,8 +175,8 @@ ingredients:
     value: '4.09e-06'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: L-Inositol
   concentration:
@@ -198,8 +198,8 @@ ingredients:
     value: '0.0238'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thym'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000503
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17821
     label: Thymine
 - preferred_term: sodium silicate
   term:
@@ -208,9 +208,9 @@ ingredients:
   concentration:
     value: '1.23'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000833
-    label: sodium silicate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:60720
+    label: Sodium silicate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -248,6 +248,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Asp2" to "asp2" for consistent matching
+- timestamp: '2026-06-05T07:40:49.903202+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 295
   term:

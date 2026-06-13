@@ -28,8 +28,8 @@ ingredients:
     value: '33.129999999999995'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 5.0, 28.13]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: D(+)-Trehalose
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000545
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27082
     label: D(+)-Trehalose
 - preferred_term: Agar
   term:
@@ -49,8 +49,8 @@ ingredients:
     value: '19'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Tap water
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 - preferred_term: Natural sea water
   concentration:
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '0.77'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -83,8 +83,8 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -93,8 +93,8 @@ ingredients:
   concentration:
     value: '4.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: NaHCO3
   term:
@@ -103,8 +103,8 @@ ingredients:
   concentration:
     value: '0.11'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -113,8 +113,8 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
@@ -151,3 +151,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BRADYMONAS SEDIMINIS MEDIUM" to "bradymonas_sediminis_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:40:51.365698+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

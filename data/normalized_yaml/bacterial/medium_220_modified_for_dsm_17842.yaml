@@ -30,8 +30,8 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 5.0, 5.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: D(+)-Glucose
   term:
@@ -50,8 +50,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D(+)-Glucose
 - preferred_term: K2HPO4
   term:
@@ -60,8 +60,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 applications:
 - Microbial cultivation
@@ -91,4 +91,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM 220 MODIFIED FOR DSM 17842" to "medium_220_modified_for_dsm_17842"
     for consistent matching
+- timestamp: '2026-06-05T07:41:16.885910+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 7.3

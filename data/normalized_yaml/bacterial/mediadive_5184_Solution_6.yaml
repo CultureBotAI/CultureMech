@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:274
     label: L-Alanine
   chebi_term:
-    id: CHEBI:15570
-    label: D-alanine
+    id: CHEBI:16977
+    label: L-alanine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Arginine
   concentration:
     value: '0.25'
@@ -25,9 +25,9 @@ composition:
     label: L-Arginine
   chebi_term:
     id: CHEBI:16467
-    label: L-arginine
+    label: L-Arginine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Asparagine
   concentration:
     value: '0.25'
@@ -37,9 +37,9 @@ composition:
     label: L-Asparagine
   chebi_term:
     id: CHEBI:17196
-    label: L-asparagine
+    label: L-Asparagine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Aspartic acid
   concentration:
     value: '0.25'
@@ -51,7 +51,7 @@ composition:
     id: CHEBI:17053
     label: L-aspartic acid
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Cysteine
   concentration:
     value: '0.25'
@@ -63,7 +63,7 @@ composition:
     id: CHEBI:15356
     label: cysteine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: L-Glutamic acid
   concentration:
     value: '0.25'
@@ -73,9 +73,9 @@ composition:
     label: L-Glutamic acid
   chebi_term:
     id: CHEBI:16015
-    label: L-glutamic acid
+    label: L-Glutamic acid
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Glutamine
   concentration:
     value: '0.25'
@@ -85,9 +85,9 @@ composition:
     label: L-Glutamine
   chebi_term:
     id: CHEBI:18050
-    label: L-glutamine
+    label: L-Glutamine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Glycine
   concentration:
     value: '0.25'
@@ -99,7 +99,7 @@ composition:
     id: CHEBI:15428
     label: glycine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: L-Histidine
   concentration:
     value: '0.25'
@@ -109,9 +109,9 @@ composition:
     label: L-Histidine
   chebi_term:
     id: CHEBI:15971
-    label: L-histidine
+    label: L-Histidine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Isoleucine
   concentration:
     value: '0.25'
@@ -121,9 +121,9 @@ composition:
     label: L-Isoleucine
   chebi_term:
     id: CHEBI:17191
-    label: L-isoleucine
+    label: L-Isoleucine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Leucine
   concentration:
     value: '0.25'
@@ -133,9 +133,9 @@ composition:
     label: L-Leucine
   chebi_term:
     id: CHEBI:15603
-    label: L-leucine
+    label: L-Leucine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Lysine
   concentration:
     value: '0.25'
@@ -145,9 +145,9 @@ composition:
     label: L-Lysine
   chebi_term:
     id: CHEBI:18019
-    label: L-lysine
+    label: L-Lysine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Methionine
   concentration:
     value: '0.25'
@@ -157,9 +157,9 @@ composition:
     label: L-Methionine
   chebi_term:
     id: CHEBI:16643
-    label: L-methionine
+    label: L-Methionine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Phenylalanine
   concentration:
     value: '0.25'
@@ -169,9 +169,9 @@ composition:
     label: L-Phenylalanine
   chebi_term:
     id: CHEBI:17295
-    label: L-phenylalanine
+    label: L-Phenylalanine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Proline
   concentration:
     value: '0.25'
@@ -180,10 +180,10 @@ composition:
     id: mediadive.compound:1130
     label: L-Proline
   chebi_term:
-    id: CHEBI:16313
-    label: D-proline
+    id: CHEBI:17203
+    label: L-Proline
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Serine
   concentration:
     value: '0.25'
@@ -192,10 +192,10 @@ composition:
     id: mediadive.compound:133
     label: L-Serine
   chebi_term:
-    id: CHEBI:16523
-    label: D-serine
+    id: CHEBI:17115
+    label: L-Serine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Threonine
   concentration:
     value: '0.25'
@@ -204,10 +204,10 @@ composition:
     id: mediadive.compound:658
     label: L-Threonine
   chebi_term:
-    id: CHEBI:16398
-    label: D-threonine
+    id: CHEBI:16857
+    label: L-Threonine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Tryptophan
   concentration:
     value: '0.25'
@@ -216,10 +216,10 @@ composition:
     id: mediadive.compound:449
     label: L-Tryptophan
   chebi_term:
-    id: CHEBI:16296
-    label: D-tryptophan
+    id: CHEBI:16828
+    label: L-Tryptophan
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Tyrosine
   concentration:
     value: '0.25'
@@ -229,9 +229,9 @@ composition:
     label: L-Tyrosine
   chebi_term:
     id: CHEBI:17895
-    label: L-tyrosine
+    label: L-Tyrosine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: L-Valine
   concentration:
     value: '0.25'
@@ -241,9 +241,9 @@ composition:
     label: L-Valine
   chebi_term:
     id: CHEBI:16414
-    label: L-valine
+    label: L-Valine
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -252,10 +252,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Original volume: 400 mL'
 curation_history:
 - timestamp: '2026-03-13T06:20:35.542175Z'
@@ -280,6 +280,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:36.569634+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 19 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:56:24.209681+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

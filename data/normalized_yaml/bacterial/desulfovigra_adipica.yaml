@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000149
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
   term:
     id: CHEBI:29377
@@ -60,4 +60,10 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''7-7.2'' -> {''min'': 7.0, ''max'': 7.2}'
+- timestamp: '2026-06-05T07:40:58.063313+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:634c

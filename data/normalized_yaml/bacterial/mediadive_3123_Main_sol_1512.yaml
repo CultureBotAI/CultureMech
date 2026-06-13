@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:954
     label: Fetal bovine serum
-  chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: "Medium for maintenance of infected amoeba cultures\nCombine Solutions\
   \ A, B and C and add \nMaintenance conditions:\nInfected amoeba cultures can be\
   \ maintained e.g. in 25 cm2\r\nflasks (e.g. Nunc flasks,\r\nVWR, 734-2081, Thermo-Scientific,\
@@ -61,6 +56,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:47:17.216695+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

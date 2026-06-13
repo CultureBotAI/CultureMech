@@ -21,8 +21,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: N-Acetylglucosamine
   term:
@@ -31,8 +31,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000797
+  mediaingredientmech_chebi_term:
+    id: CHEBI:59640
     label: N-Acetylglucosamine
 - preferred_term: Peptone
   concentration:
@@ -46,12 +46,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -59,8 +53,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -70,8 +64,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -80,8 +74,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -90,8 +84,8 @@ ingredients:
   concentration:
     value: '29.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -100,8 +94,8 @@ ingredients:
   concentration:
     value: '3.335'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
@@ -118,8 +112,8 @@ ingredients:
     value: '1.099'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 0.099, 0.5, 0.5]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: Na-EDTA
   term:
@@ -129,8 +123,8 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.25, 0.25]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na-EDTA
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -140,8 +134,8 @@ ingredients:
     value: '2.19'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1.095, 1.095]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
@@ -151,8 +145,8 @@ ingredients:
     value: '0.308'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.154, 0.154]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -162,8 +156,8 @@ ingredients:
     value: '0.0784'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0392, 0.0392]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000284
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
     label: CuSO4 x 5 H2O
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
@@ -173,8 +167,8 @@ ingredients:
     value: '0.0496'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0248, 0.0248]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000525
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
@@ -241,6 +235,18 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''6-6.5'' -> {''min'': 6.0, ''max'': 6.5}'
+- timestamp: '2026-06-05T07:41:10.773500+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 14 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:40.311535+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1327_LARKINELLA_ARBORICOLA_medium.yaml
   relationship: SOURCE_DUPLICATE

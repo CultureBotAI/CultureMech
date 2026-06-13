@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.2'
@@ -43,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.1'
@@ -64,9 +64,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Sodium acetate
   concentration:
     value: '0.2'
@@ -75,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: NaNO3
   concentration:
     value: '0.5'
@@ -87,8 +87,8 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000388
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63005
     label: NaNO3
 - preferred_term: Sodium pyruvate
   concentration:
@@ -99,9 +99,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Sodium succinate
   concentration:
     value: '0.2'
@@ -111,9 +111,9 @@ ingredients:
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
-    label: Sodium succinate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
 - preferred_term: Sodium lactate
   concentration:
     value: '0.2'
@@ -123,9 +123,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
-    label: Sodium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
 - preferred_term: Sodium citrate
   concentration:
     value: '0.2'
@@ -134,9 +134,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000719
-    label: Sodium citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
 - preferred_term: CaCl2・H2O
   concentration:
     value: '0.1'
@@ -159,20 +159,20 @@ ingredients:
   term:
     id: CHEBI:62965
     label: sodium formate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
-    label: Sodium formate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
 - preferred_term: Sodium malate
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
-    id: CHEBI:91261
-    label: disodium (S)-malate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000450
-    label: Sodium malate
+    id: CHEBI:91260
+    label: disodium malate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91260
+    label: disodium malate
 - preferred_term: Sodium fumarate
   concentration:
     value: '0.2'
@@ -181,9 +181,9 @@ ingredients:
   term:
     id: CHEBI:115156
     label: disodium fumarate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
-    label: Sodium fumarate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
+    label: disodium fumarate
 media_term:
   preferred_term: TOGO Medium M1349
   term:
@@ -234,6 +234,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:32.550700+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true
 solutions:
 - preferred_term: Na2CO3 solution

@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:17790
     label: methanol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
     label: methanol
 - preferred_term: acetate
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:30089
     label: Acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000944
-    label: acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30089
+    label: Acetate
 - preferred_term: HS medium
   concentration:
     value: '1'
@@ -42,9 +42,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: Distilled Water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '0.4'
@@ -54,9 +54,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '5'
@@ -66,8 +66,8 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -78,9 +78,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: resazurin
   concentration:
     value: '4'
@@ -90,9 +90,9 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
-    label: resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: MgCl2 . 6H2O
   concentration:
     value: '54'
@@ -120,9 +120,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '45'
@@ -132,9 +132,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: CaCl2
   concentration:
     value: '2'
@@ -144,9 +144,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: cysteine . HCl
   concentration:
     value: '2.8'
@@ -183,3 +183,9 @@ curation_history:
   notes: Normalized name from "HS medium-methanol-acetate medium (125 and 40 mM, respectively)"
     to "hs_medium_methanol_acetate_medium_125_and_40_mm_respectively" for consistent
     matching
+- timestamp: '2026-06-05T07:41:08.759362+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

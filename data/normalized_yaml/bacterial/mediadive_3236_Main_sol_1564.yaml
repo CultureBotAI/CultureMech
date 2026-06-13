@@ -24,10 +24,9 @@ composition:
     id: mediadive.compound:2202
     label: α-D-Glucose monohydrate
   chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:17925
+    label: alpha-D-glucose
+    match_type: manual_curated
 - preferred_term: Cellobiose
   concentration:
     value: '0.4'
@@ -37,9 +36,9 @@ composition:
     label: Cellobiose
   chebi_term:
     id: CHEBI:17057
-    label: cellobiose
+    label: Cellobiose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 preparation_notes: "Autoclave at 121 °C for 20 min.\nBefore inoculation add from sterile\
   \ stock solutions: \nAdjust pH to 7.5 with 1 M HCl or 1 M NaHCO3"
 curation_history:
@@ -65,6 +64,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:26.121575+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:56:13.970805+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -12,8 +12,8 @@ ingredients:
   concentration:
     value: '0.244822'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001025
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27897
     label: Tryptophan
 - preferred_term: Potassium dibasic phosphate
   concentration:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '25.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000907
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22653
     label: Asparagine
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
@@ -46,8 +46,8 @@ ingredients:
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium sulfate
   term:
@@ -56,9 +56,9 @@ ingredients:
   concentration:
     value: '15.1355'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -66,8 +66,8 @@ ingredients:
   concentration:
     value: '3.4002'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 preparation_steps:
 - step_number: 1
@@ -98,6 +98,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Mm-asparagine; fillinger et al" to "mm_asparagine_fillinger_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:35.238269+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 222
   term:

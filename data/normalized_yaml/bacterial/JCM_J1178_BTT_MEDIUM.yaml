@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -66,18 +66,23 @@ curation_history:
 - timestamp: '2026-03-17T19:45:25.605969+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BTT MEDIUM" to "btt_medium" for consistent
-    matching
+  notes: Normalized name from "BTT MEDIUM" to "btt_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:16.573365+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1109_BTT_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:003810
   name: btt_medium
-  notes: Same ingredient identity signature but concentration signature differs
-    from parent.
+  notes: Same ingredient identity signature but concentration signature differs from
+    parent.
 - path: data/normalized_yaml/bacterial/btt_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:000543
   name: btt_medium
-  notes: Same ingredient identity signature but concentration signature differs
-    from parent.
+  notes: Same ingredient identity signature but concentration signature differs from
+    parent.

@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:36
     label: MnCl2 x 4 H2O
   chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '0.22'
@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:35
     label: ZnSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.39'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:9
     label: Na2MoO4 x 2 H2O
   chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '10'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:121
     label: CuSO4 x 5 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Co(NO3)2 x 6 H2O
   concentration:
     value: '10'
@@ -72,10 +72,10 @@ composition:
     id: mediadive.compound:541
     label: Co(NO3)2 x 6 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Make up to <span class='amount' data-volume='1000'>1000</span>
   ml with MilliQ water.
 curation_history:
@@ -101,6 +101,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:39.748461+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:49:42.062339+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

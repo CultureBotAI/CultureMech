@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: FeCl3 x 6 H2O
   concentration:
     value: '0.097'
@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:82
     label: FeCl3 x 6 H2O
   chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '0.041'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:36
     label: MnCl2 x 4 H2O
   chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: ZnCl2 x 6 H2O
   concentration:
     value: '0.005'
@@ -60,10 +60,9 @@ composition:
     id: mediadive.compound:2351
     label: ZnCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:49976
+    label: zinc dichloride
+    match_type: manual_curated
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.002'
@@ -73,9 +72,9 @@ composition:
     label: CoCl2 x 6 H2O
   chebi_term:
     id: CHEBI:35696
-    label: cobalt dichloride
+    label: CoCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.004'
@@ -84,10 +83,10 @@ composition:
     id: mediadive.compound:9
     label: Na2MoO4 x 2 H2O
   chebi_term:
-    id: CHEBI:35696
-    label: cobalt dichloride
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals\
   \ in exactly the \r\nfollowing sequence:"
 curation_history:
@@ -113,6 +112,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:41.278653+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:50:00.881535+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:28.967002+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

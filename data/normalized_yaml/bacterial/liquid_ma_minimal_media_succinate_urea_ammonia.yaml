@@ -13,8 +13,8 @@ ingredients:
     value: '25.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000420
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26806
     label: Succinate
 - preferred_term: Urea
   term:
@@ -24,8 +24,8 @@ ingredients:
     value: '20.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:urea'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000301
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16199
     label: Urea
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
@@ -65,8 +65,8 @@ ingredients:
   concentration:
     value: '0.041'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000233
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
     label: Nitrilotriacetic acid
 - preferred_term: Nickel chloride
   concentration:
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Cobalt chloride
   concentration:
@@ -164,6 +164,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Liquid MA minimal media + Succinate + Urea - Ammonia"
     to "liquid_ma_minimal_media_succinate_urea_ammonia" for consistent matching
+- timestamp: '2026-06-05T07:41:11.301791+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 25
   term:

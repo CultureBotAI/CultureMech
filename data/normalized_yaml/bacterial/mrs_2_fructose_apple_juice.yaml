@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
@@ -24,11 +24,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -43,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium acetate
   concentration:
     value: '5'
@@ -54,9 +54,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Tween 80
   concentration:
     value: '1'
@@ -66,9 +66,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
-    label: Tween 80
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: MnSO4·nH2O
   concentration:
     value: '0.05'
@@ -87,9 +87,9 @@ ingredients:
   term:
     id: CHEBI:63076
     label: diammonium citrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000400
-    label: Diammonium hydrogen citrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63076
+    label: diammonium citrate
 - preferred_term: Fructose
   concentration:
     value: '20'
@@ -99,9 +99,9 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
-    label: Fructose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28645
+    label: beta-D-fructofuranose
 - preferred_term: L-Cysteine
   concentration:
     value: '1'
@@ -111,9 +111,9 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000923
-    label: L-Cysteine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
+    label: L-cysteine
 - preferred_term: Glucose
   concentration:
     value: '20'
@@ -123,9 +123,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Apple Juice
   concentration:
     value: '200'
@@ -179,3 +179,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS + 2% Fructose + Apple Juice" to "mrs_2_fructose_apple_juice"
     for consistent matching
+- timestamp: '2026-06-05T07:41:38.408048+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:27.244888+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.

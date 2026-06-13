@@ -13,8 +13,8 @@ ingredients:
     value: '16.6518'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -37,9 +37,9 @@ ingredients:
   concentration:
     value: '8.55578'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '0.0033132'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
@@ -64,8 +64,8 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -74,9 +74,9 @@ ingredients:
   concentration:
     value: '0.00709975'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -84,8 +84,8 @@ ingredients:
   concentration:
     value: '14.9558'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
@@ -101,9 +101,9 @@ ingredients:
   concentration:
     value: '0.00626022'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00703894'
@@ -148,6 +148,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M9 medium; Fischer et al" to "m9_medium_fischer_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.989537+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 147
   term:

@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '0.277469'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: Na2SO4
   term:
@@ -33,8 +33,8 @@ ingredients:
   concentration:
     value: '3.88457'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Na2SO4
 - preferred_term: Resazurin
   term:
@@ -43,8 +43,8 @@ ingredients:
   concentration:
     value: '0.00110988'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: NaHCO3
   term:
@@ -53,8 +53,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Sodium pyruvate
   term:
@@ -63,8 +63,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 - preferred_term: Trace vitamins (see Medium No. 197)
   concentration:
@@ -77,8 +77,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000896
+  mediaingredientmech_chebi_term:
+    id: CHEBI:41808
     label: Decane
 - preferred_term: Yeast extract
   concentration:
@@ -91,8 +91,8 @@ ingredients:
   concentration:
     value: '12.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '12.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 preparation_steps:
 - step_number: 1
@@ -140,3 +140,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED DESULFOGLAEBA ALKANEXEDENS MEDIUM" to "modified_desulfoglaeba_alkanexedens_medium"
     for consistent matching
+- timestamp: '2026-06-05T07:41:36.521087+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

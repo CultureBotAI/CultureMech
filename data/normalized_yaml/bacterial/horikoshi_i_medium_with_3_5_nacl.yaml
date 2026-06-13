@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: '35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -43,17 +43,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:24.053824+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "HORIKOSHI-I MEDIUM WITH 3.5% NaCl" to
-    "horikoshi_i_medium_with_3_5_nacl" for consistent matching
+  notes: Normalized name from "HORIKOSHI-I MEDIUM WITH 3.5% NaCl" to "horikoshi_i_medium_with_3_5_nacl"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:08.708421+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:74
 parent_media:
   path: data/normalized_yaml/bacterial/horikoshi_i_medium_with_2_nacl.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:002765
   name: horikoshi_i_medium_with_2_nacl
-  notes: Reviewed JCM Horikoshi-I salinity grid; 2% NaCl is used as the
-    lowest-salt parent and 3.5% NaCl as a child variant.
+  notes: Reviewed JCM Horikoshi-I salinity grid; 2% NaCl is used as the lowest-salt
+    parent and 3.5% NaCl as a child variant.
 variant_relationship: SALINITY_VARIANT
 variant_modifications:
-- NaCl increased from 20 g/L to 35 g/L while Horikoshi-I medium remains
-  unchanged.
+- NaCl increased from 20 g/L to 35 g/L while Horikoshi-I medium remains unchanged.

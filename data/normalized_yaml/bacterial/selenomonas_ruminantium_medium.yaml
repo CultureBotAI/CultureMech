@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Trypticase
   concentration:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Na-acetate
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Yeast extract
   concentration:
@@ -63,8 +63,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000303
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17418
     label: n-Valeric acid
 - preferred_term: Resazurin
   term:
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Na2CO3
   term:
@@ -83,8 +83,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -93,8 +93,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 preparation_steps:
 - step_number: 1
@@ -125,13 +125,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:14.404917+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SELENOMONAS RUMINANTIUM MEDIUM" to
-    "selenomonas_ruminantium_medium" for consistent matching
+  notes: Normalized name from "SELENOMONAS RUMINANTIUM MEDIUM" to "selenomonas_ruminantium_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:45.681996+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_181_SELENOMONAS_RUMINANTIUM_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_181_SELENOMONAS_RUMINANTIUM_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004204
   name: selenomonas_ruminantium_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 181; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 181; local ingredient
+    and concentration signatures match.

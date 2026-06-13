@@ -13,8 +13,8 @@ ingredients:
     value: '0.0001329'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Biotin
   term:
@@ -24,8 +24,8 @@ ingredients:
     value: '4.093e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Glucose
   term:
@@ -34,8 +34,8 @@ ingredients:
   concentration:
     value: '555.1'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Nicotinate
   concentration:
@@ -52,18 +52,18 @@ ingredients:
   concentration:
     value: '3.246'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.0004863'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000703
+    id: CHEBI:30961
+    label: Pyridoxine HCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine HCl
 - preferred_term: Thiamine HCl
   term:
@@ -72,8 +72,8 @@ ingredients:
   concentration:
     value: '4.447e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '130.9'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Sodium acetate
   term:
@@ -99,8 +99,8 @@ ingredients:
   concentration:
     value: '73.14'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Sodium acetate
 preparation_steps:
 - step_number: 1
@@ -140,6 +140,18 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Complete Seed Medium (Liu 2004" to "complete_seed_medium_liu_2004"
     for consistent matching
+- timestamp: '2026-06-05T07:40:54.761096+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:36.453331+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 media_term:
   preferred_term: MediaDB Medium 379
   term:

@@ -32,8 +32,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 - preferred_term: Calf brains
   term:
@@ -138,8 +138,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -161,3 +161,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "R AGAR WITH 0.5% TWEEN 80" to "r_agar_with_0_5_tween_80"
     for consistent matching
+- timestamp: '2026-06-05T07:41:43.758864+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

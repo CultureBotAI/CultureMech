@@ -31,8 +31,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000243
+  mediaingredientmech_chebi_term:
+    id: CHEBI:4167
     label: Dextrose
 - preferred_term: Lactose
   term:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17716
     label: Lactose
 - preferred_term: Sucrose
   term:
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 - preferred_term: FeSO4
   term:
@@ -61,8 +61,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001045
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75832
     label: FeSO4
 - preferred_term: NaCl
   term:
@@ -71,8 +71,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2S2O3
   term:
@@ -91,8 +91,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: Agar
   term:
@@ -102,8 +102,8 @@ ingredients:
     value: '12'
     unit: G_PER_L
   notes: ' (if required)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -127,13 +127,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.926955+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TRIPLE-SUGAR-IRON MEDIUM (Difco)" to
-    "triple_sugar_iron_medium_difco" for consistent matching
+  notes: Normalized name from "TRIPLE-SUGAR-IRON MEDIUM (Difco)" to "triple_sugar_iron_medium_difco"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:54.248859+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_699_TRIPLE-SUGAR-IRON_medium_Difco.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_699_TRIPLE-SUGAR-IRON_medium_Difco.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006323
   name: triple_sugar_iron_medium_difco
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

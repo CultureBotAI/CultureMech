@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '11.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgSO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '7.85'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4
 - preferred_term: KCl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.74'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: Tris
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000880
+  mediaingredientmech_chebi_term:
+    id: CHEBI:9754
     label: Tris
 - preferred_term: NH4Cl
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: CaCl2
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '1.47'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: Yeast extract
   concentration:
@@ -102,13 +102,19 @@ curation_history:
 - timestamp: '2026-03-17T19:45:23.504913+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MARINOBACTER MEDIUM" to "marinobacter_medium" for
-    consistent matching
+  notes: Normalized name from "MARINOBACTER MEDIUM" to "marinobacter_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:13.168533+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:970
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_970_MARINOBACTER_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006927
   name: marinobacter_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

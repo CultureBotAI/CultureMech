@@ -14,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
-    label: NH4Cl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Sea salts (Sigma)
   concentration:
     value: '30'
@@ -59,9 +59,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
-    label: Riboflavin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
 media_term:
   preferred_term: TOGO Medium M2273
   term:
@@ -97,3 +97,9 @@ curation_history:
   notes: Normalized name from "Marine-Caulobacter medium SPYEM containing sea salts
     and NH4Cl" to "marine_caulobacter_medium_spyem_containing_sea_salts_and_nh4cl"
     for consistent matching
+- timestamp: '2026-06-05T07:41:12.879339+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

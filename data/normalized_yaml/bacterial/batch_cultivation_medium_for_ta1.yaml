@@ -26,8 +26,8 @@ ingredients:
   concentration:
     value: '66.61'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000900
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18222
     label: Xylose
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -43,9 +43,9 @@ ingredients:
   concentration:
     value: '34.22'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.01001'
@@ -60,9 +60,9 @@ ingredients:
   concentration:
     value: '0.07969'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -70,8 +70,8 @@ ingredients:
   concentration:
     value: '8.115'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
@@ -87,9 +87,9 @@ ingredients:
   concentration:
     value: '113.5'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -119,6 +119,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'Batch Cultivation Medium (for TA1" to "batch_cultivation_medium_for_ta1"
     for consistent matching
+- timestamp: '2026-06-05T07:40:50.619059+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 310
   term:

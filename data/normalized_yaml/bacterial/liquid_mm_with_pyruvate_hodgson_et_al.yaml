@@ -13,8 +13,8 @@ ingredients:
     value: '100.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000367
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15361
     label: Pyruvate
 - preferred_term: L-Asparagine
   term:
@@ -24,8 +24,8 @@ ingredients:
     value: '3.78444'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asn-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: Ethylene glycol
   term:
@@ -34,8 +34,8 @@ ingredients:
   concentration:
     value: '0.134257'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000374
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30742
     label: Ethylene glycol
 - preferred_term: Potassium hydroxide
   concentration:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
@@ -97,6 +97,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Liquid MM with pyruvate; Hodgson et al" to "liquid_mm_with_pyruvate_hodgson_et_al"
     for consistent matching
+- timestamp: '2026-06-05T07:41:11.365514+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 268
   term:

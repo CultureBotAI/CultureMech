@@ -12,10 +12,9 @@ composition:
     id: mediadive.compound:187
     label: NaNO3
   chebi_term:
-    id: CHEBI:65327
-    label: D-xylose
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:63005
+    label: sodium nitrate
+    match_type: manual_curated
 - preferred_term: (NH4)Cl
   concentration:
     value: '1.5274'
@@ -24,10 +23,10 @@ composition:
     id: mediadive.compound:1490
     label: (NH4)Cl
   chebi_term:
-    id: CHEBI:104586
-    label: tetrahexadecanoyl cardiolipin
+    id: CHEBI:31206
+    label: (NH4)Cl
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Sodium beta-glycerophosphate
   concentration:
     value: '1'
@@ -48,10 +47,9 @@ composition:
     id: mediadive.compound:894
     label: H2SeO3
   chebi_term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:26642
+    label: selenous acid
+    match_type: manual_curated
 - preferred_term: Tris base
   concentration:
     value: '0.6181'
@@ -91,6 +89,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:40.734719+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:56:28.403430+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

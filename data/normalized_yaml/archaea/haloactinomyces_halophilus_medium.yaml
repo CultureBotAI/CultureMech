@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '48'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '73.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
     label: MgCl2
 - preferred_term: CaCl2
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '21'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: KCl
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '7.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: K2HPO4
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4
 - preferred_term: Chitosan
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000841
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16261
     label: Chitosan
 - preferred_term: Casein hydrolysate
   concentration:
@@ -93,8 +93,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000907
+  mediaingredientmech_chebi_term:
+    id: CHEBI:22653
     label: Asparagine
 - preferred_term: Agar
   term:
@@ -103,8 +103,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -134,3 +134,9 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-06-05T07:40:14.538221+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

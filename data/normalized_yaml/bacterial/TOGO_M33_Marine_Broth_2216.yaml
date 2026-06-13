@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Marine broth 2216 (BD-Difco)
   concentration:
@@ -54,12 +54,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:27.334521+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Marine Broth 2216" to "marine_broth_2216" for
-    consistent matching
+  notes: Normalized name from "Marine Broth 2216" to "marine_broth_2216" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:40.546565+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/quarter_strength_marine_broth_2216.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007635
   name: quarter_strength_marine_broth_2216
-  notes: Marine broth 2216 (BD-Difco) decreased from 37.4 g/L to 9.35 g/L while
-    the liquid Marine Broth 2216 formulation remains unchanged.
+  notes: Marine broth 2216 (BD-Difco) decreased from 37.4 g/L to 9.35 g/L while the
+    liquid Marine Broth 2216 formulation remains unchanged.

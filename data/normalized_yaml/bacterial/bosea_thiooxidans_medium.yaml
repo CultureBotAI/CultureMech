@@ -21,8 +21,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4
 - preferred_term: KH2PO4
   term:
@@ -31,8 +31,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgCl2
   term:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
     label: MgCl2
 - preferred_term: Na glutamate
   term:
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000432
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64220
     label: Na glutamate
 - preferred_term: Yeast extract
   concentration:
@@ -65,8 +65,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: Sodium succinate
   term:
@@ -75,8 +75,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001088
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63675
     label: Sodium succinate
 preparation_steps:
 - step_number: 1
@@ -106,6 +106,12 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''7.5-8.5'' -> {''min'': 7.5, ''max'': 8.5}'
+- timestamp: '2026-06-05T07:40:51.314348+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_763_BOSEA_THIOOXIDANS_medium.yaml
   relationship: SOURCE_DUPLICATE

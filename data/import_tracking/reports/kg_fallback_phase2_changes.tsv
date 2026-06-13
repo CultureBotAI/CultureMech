@@ -1,0 +1,3608 @@
+label	from_chebi	to_chebi	method
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+difco marine broth	CHEBI:15956	REMOVED	mixture_no_chebi
+pancreatic digest of casein	CHEBI:85248	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+marine broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mnso4 x 5 h2o	CHEBI:31440	CHEBI:131524	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+pennassay broth	CHEBI:42758	REMOVED	mixture_no_chebi
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+phytone peptone	CHEBI:131527	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mnso4 x 5 h2o	CHEBI:31440	CHEBI:131524	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+lab-lemco beef extract	CHEBI:26710	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mnso4 x 5 h2o	CHEBI:31440	CHEBI:131524	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na-butyrate	CHEBI:31206	CHEBI:64103	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+horse serum	CHEBI:78018	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+standard i broth	CHEBI:2509	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+malachite green	CHEBI:44107	CHEBI:72449	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+marine broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+enzymatic digest of casein	CHEBI:2509	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+meat peptone	CHEBI:26710	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na-butyrate	CHEBI:31206	CHEBI:64103	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+vitamin-free casamino acids	CHEBI:2509	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptic digest of beef heart	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+meat infusion	CHEBI:3312	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+bacto beef extract	CHEBI:42758	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone mixture	CHEBI:26710	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+enzymatic digest of casein	CHEBI:2509	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+lab lemco powder	CHEBI:3312	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+(nh4)2co3	CHEBI:131527	CHEBI:229630	oak_ols_exact
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+(nh4)2co3	CHEBI:131527	CHEBI:229630	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+lab-lemco beef extract	CHEBI:26710	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+meat peptone	CHEBI:26710	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+calcium chloride	CHEBI:3312	CHEBI:86158	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+meat peptone	CHEBI:26710	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+meat peptone	CHEBI:26710	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+meat peptone	CHEBI:26710	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+meat peptone	CHEBI:26710	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na-butyrate	CHEBI:31206	CHEBI:64103	corpus_consensus
+malt extract broth	CHEBI:3311	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+lab-lemco beef extract	CHEBI:26710	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2sio3	CHEBI:29377	CHEBI:60720	oak_ols_exact
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+brain heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mes buffer	CHEBI:131527	CHEBI:39005	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+lactalbumin hydrolysate	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+pplo broth	CHEBI:16199	REMOVED	mixture_no_chebi
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+pplo broth	CHEBI:16199	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+pplo broth	CHEBI:16199	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+horse serum	CHEBI:78018	REMOVED	mixture_no_chebi
+pplo broth	CHEBI:16199	REMOVED	mixture_no_chebi
+pplo broth	CHEBI:16199	REMOVED	mixture_no_chebi
+horse serum	CHEBI:78018	REMOVED	mixture_no_chebi
+pplo broth	CHEBI:16199	REMOVED	mixture_no_chebi
+horse serum	CHEBI:78018	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+pplo broth	CHEBI:16199	REMOVED	mixture_no_chebi
+horse serum	CHEBI:78018	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na-butyrate	CHEBI:31206	CHEBI:64103	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mnso4 x 5 h2o	CHEBI:31440	CHEBI:131524	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+difco marine broth	CHEBI:15956	REMOVED	mixture_no_chebi
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 2	CHEBI:59640	REMOVED	mixture_no_chebi
+heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+man rogosa sharp broth	CHEBI:18167	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+marine broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract powder	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+k-acetate	CHEBI:76209	CHEBI:32029	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+tryptic digest of beef heart	CHEBI:2509	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+artificial sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto tryptone	CHEBI:2509	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+meat peptone	CHEBI:26710	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+malt extract powder	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+bacto tryptone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mnso4 x 5 h2o	CHEBI:31440	CHEBI:131524	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+k-acetate	CHEBI:76209	CHEBI:32029	oak_ols_exact
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+difco marine broth 2216	CHEBI:2509	REMOVED	mixture_no_chebi
+pancreatic digest of casein	CHEBI:85248	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+pancreatic digest of casein	CHEBI:85248	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+r2a broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptose-phosphate broth	CHEBI:32145	REMOVED	mixture_no_chebi
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+bacto tryptone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mnso4 x 5 h2o	CHEBI:31440	CHEBI:131524	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+enzymatic digest of casein	CHEBI:2509	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+bacto heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+marine broth	CHEBI:2509	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+anaerobe basal broth cm0957	CHEBI:17790	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone mixture	CHEBI:26710	REMOVED	mixture_no_chebi
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+lab-lemco beef extract	CHEBI:26710	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+phytone peptone	CHEBI:131527	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+lab-lemco beef extract	CHEBI:26710	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy agar	CHEBI:26710	REMOVED	mixture_no_chebi
+brain heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+marine broth 2216	CHEBI:50144	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+trypticase soy agar	CHEBI:26710	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+gyp-sodium acetate-mineral salts broth	CHEBI:26710	REMOVED	mixture_no_chebi
+brain heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase soy agar	CHEBI:26710	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+gam broth	CHEBI:50144	REMOVED	mixture_no_chebi
+gam broth	CHEBI:50144	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+malachite green	CHEBI:44107	CHEBI:72449	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+clarified rumen fluid	CHEBI:17057	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy agar	CHEBI:26710	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+pplo broth	CHEBI:16199	REMOVED	mixture_no_chebi
+horse serum	CHEBI:78018	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+fish meat extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+yeast extract-malt extract agar	CHEBI:26710	REMOVED	mixture_no_chebi
+ym broth	CHEBI:42758	REMOVED	mixture_no_chebi
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+phytone peptone	CHEBI:131527	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+phytone peptone	CHEBI:131527	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+todd hewitt broth	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+lactobacilli mrs broth	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+brain heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase soy agar	CHEBI:26710	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+lactobacilli mrs broth	CHEBI:2509	REMOVED	mixture_no_chebi
+lactobacilli mrs broth	CHEBI:2509	REMOVED	mixture_no_chebi
+lactobacilli mrs broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2sio3	CHEBI:29377	CHEBI:60720	oak_ols_exact
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+brain heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+marine broth 2216	CHEBI:50144	REMOVED	mixture_no_chebi
+na2sio3	CHEBI:29377	CHEBI:60720	oak_ols_exact
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+lactobacilli mrs broth	CHEBI:2509	REMOVED	mixture_no_chebi
+brain heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+lactobacillus mrs broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+yeast extract-malt extract agar	CHEBI:26710	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+pancreatic digest of casein	CHEBI:85248	REMOVED	mixture_no_chebi
+peptic digest of animal tissue	CHEBI:26710	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+clarified rumen fluid	CHEBI:17057	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+gam broth	CHEBI:50144	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+lactobacilli mrs broth	CHEBI:2509	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na-butyrate	CHEBI:31206	CHEBI:64103	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+phytone peptone	CHEBI:131527	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+marine broth 2216	CHEBI:50144	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy agar	CHEBI:26710	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+vancomycin x hcl	CHEBI:32588	CHEBI:9932	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+gam broth	CHEBI:50144	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+marine broth 2216	CHEBI:50144	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+brain heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+lactobacilli mrs broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+horse serum	CHEBI:78018	REMOVED	mixture_no_chebi
+marine broth 2216	CHEBI:50144	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+phytone peptone	CHEBI:131527	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+r2a broth	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+lactobacilli mrs broth	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+brain heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+marine broth 2216	CHEBI:50144	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+marine broth 2216	CHEBI:50144	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+lactobacilli mrs broth	CHEBI:2509	REMOVED	mixture_no_chebi
+phytone peptone	CHEBI:131527	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+lactobacilli mrs broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy agar	CHEBI:26710	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+fish peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+marine broth 2216	CHEBI:50144	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mnso4 x 5 h2o	CHEBI:31440	CHEBI:131524	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+lb broth powder	CHEBI:9754	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+marine broth 2216	CHEBI:50144	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+universal peptone	CHEBI:85248	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mnso4 x 5 h2o	CHEBI:31440	CHEBI:131524	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+yeast extract-malt extract agar	CHEBI:26710	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+phytone peptone	CHEBI:131527	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+gam broth	CHEBI:50144	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+meat peptone	CHEBI:26710	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+marine broth 2216	CHEBI:50144	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+phytone peptone	CHEBI:131527	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+fish peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+fish peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+brain heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+lb broth	CHEBI:176843	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+rumen fluid	CHEBI:86158	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2s2o3	CHEBI:31206	CHEBI:132112	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+pplo broth	CHEBI:16199	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+gam broth	CHEBI:50144	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+artificial sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+artificial sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+artificial sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+calf serum	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+horse serum	CHEBI:78018	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+pancreatic digest of casein	CHEBI:85248	REMOVED	mixture_no_chebi
+malachite green	CHEBI:44107	CHEBI:72449	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+lab-lemco beef extract	CHEBI:26710	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+calcium chloride	CHEBI:3312	CHEBI:86158	corpus_consensus
+infusion broth	CHEBI:62946	REMOVED	mixture_no_chebi
+pancreatic digest of casein	CHEBI:85248	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+wilkins-chalgren-anaerobe-broth	CHEBI:8806	REMOVED	mixture_no_chebi
+sterile serum	CHEBI:17561	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+horse serum	CHEBI:78018	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+lab-lemco beef extract	CHEBI:26710	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+artificial sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2seo4	CHEBI:32139	CHEBI:77775	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+lab lemco powder	CHEBI:3312	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+lab lemco powder	CHEBI:3312	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+horse serum	CHEBI:78018	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+liver digest	CHEBI:42758	REMOVED	mixture_no_chebi
+calf serum	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+liver digest	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+lab lemco powder	CHEBI:3312	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+liver digest	CHEBI:42758	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+calf serum	CHEBI:32588	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+l-α-phosphatidylcholine	CHEBI:34683	CHEBI:86658	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+malt extract broth	CHEBI:3311	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+natural sea water	CHEBI:17632	REMOVED	mixture_no_chebi
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+artificial sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mes hydrat	CHEBI:32599	CHEBI:39005	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone (oxoid)	CHEBI:17968	REMOVED	mixture_no_chebi
+na-butyrate	CHEBI:31206	CHEBI:64103	corpus_consensus
+mes hydrat	CHEBI:32599	CHEBI:39005	oak_ols_exact
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+calcium chloride	CHEBI:3312	CHEBI:86158	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+proteose peptone	CHEBI:62946	REMOVED	mixture_no_chebi
+brain heart infusion broth	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+k-acetate	CHEBI:76209	CHEBI:32029	oak_ols_exact
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+malachite green	CHEBI:44107	CHEBI:72449	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+beef extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+sea salt	CHEBI:63005	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 2	CHEBI:59640	REMOVED	mixture_no_chebi
+tryptone peptone	CHEBI:6636	REMOVED	mixture_no_chebi
+proteose yeastolate	CHEBI:42758	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+casein hydrolysate	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+brain heart infusion	CHEBI:131527	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+proteose peptone no. 3	CHEBI:42758	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+fetal bovine serum	CHEBI:42758	REMOVED	mixture_no_chebi
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+horse blood	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+soy peptone	CHEBI:32599	REMOVED	mixture_no_chebi
+bacto peptone	CHEBI:36218	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mnso4 x 5 h2o	CHEBI:31440	CHEBI:131524	corpus_consensus
+meat peptone	CHEBI:26710	REMOVED	mixture_no_chebi
+casein peptone	CHEBI:22652	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+meat infusion	CHEBI:3312	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na2moo4 x 2 h2o	CHEBI:35696	CHEBI:75213	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+trypticase soy broth	CHEBI:31206	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+peptone	CHEBI:42758	REMOVED	mixture_no_chebi
+casamino acids	CHEBI:32599	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+nutrient broth no. 2	CHEBI:42758	REMOVED	mixture_no_chebi
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+kno3	CHEBI:17632	CHEBI:63043	oak_ols_exact
+malt extract	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+na-thioglycolate	CHEBI:86158	CHEBI:86481	corpus_consensus
+casitone	CHEBI:2509	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+trypticase peptone	CHEBI:32588	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+tryptone	CHEBI:33118	REMOVED	mixture_no_chebi
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+mgso4 x 7 h2o	CHEBI:31206	CHEBI:31795	corpus_consensus
+sea water	CHEBI:75228	REMOVED	mixture_no_chebi

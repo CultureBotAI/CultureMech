@@ -114,7 +114,7 @@ ingredients:
     value: '1.92'
     unit: MICROMOLAR
   term:
-    id: CHEBI:33134
+    id: CHEBI:33118
     label: boric acid
   notes: 'CAS: 10043-35-3; MW: 61.83'
 - preferred_term: Nickel (II) sulfate hexahydrate
@@ -154,8 +154,8 @@ ingredients:
     value: '0.01'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: pyridoxine HCl
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Thauer''s vitamin
     mix'
 - preferred_term: 4-Aminobenzoic acid
@@ -268,5 +268,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
+- timestamp: '2026-06-08T23:19:53.110477+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 1 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 data_quality_flags:
 - has_unmapped_ingredients

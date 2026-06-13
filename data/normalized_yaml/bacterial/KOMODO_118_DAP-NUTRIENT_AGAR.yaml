@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000699
+  mediaingredientmech_chebi_term:
+    id: CHEBI:23674
     label: Diaminopimelic acid
 - preferred_term: Agar
   term:
@@ -38,8 +38,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 applications:
 - Microbial cultivation
@@ -63,18 +63,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:37.671585+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DAP-NUTRIENT AGAR" to "dap_nutrient_agar" for
-    consistent matching
+  notes: Normalized name from "DAP-NUTRIENT AGAR" to "dap_nutrient_agar" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:19.673836+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 7.0
 parent_media:
   path: data/normalized_yaml/bacterial/dap_nutrient_agar.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:000633
   name: dap_nutrient_agar
-  notes: KOMODO record explicitly cites DSMZ Medium 118; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 118; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 118; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 118; local ingredient
+  and concentration signatures match.

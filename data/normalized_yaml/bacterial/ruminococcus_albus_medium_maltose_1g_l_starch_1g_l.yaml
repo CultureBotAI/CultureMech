@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,8 +31,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Cellobiose
   concentration:
@@ -43,9 +43,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001069
-    label: Cellobiose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
 - preferred_term: Glucose
   concentration:
     value: '3'
@@ -55,9 +55,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Tryptone
   concentration:
     value: '5'
@@ -80,9 +80,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
-    label: Na2CO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: Starch
   concentration:
     value: '1'
@@ -92,9 +92,9 @@ ingredients:
   term:
     id: CHEBI:85248
     label: gellan gum
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000929
-    label: Starch
+  mediaingredientmech_chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
 - preferred_term: Maltose
   concentration:
     value: '1'
@@ -104,9 +104,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000916
-    label: Maltose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18167
+    label: alpha-maltose
 - preferred_term: Cysteine-HCl x H2O
   concentration:
     value: '500'
@@ -115,9 +115,9 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000923
-    label: Cysteine-HCl x H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
+    label: L-cysteine
 - preferred_term: Fatty acid mixture
   concentration:
     value: '1'
@@ -139,9 +139,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.25'
@@ -149,11 +149,11 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
     id: CHEBI:32599
     label: magnesium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
-    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   concentration:
     value: '1.2'
@@ -163,9 +163,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '0.6'
@@ -175,8 +175,8 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   concentration:
@@ -187,9 +187,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: CaCl2 x 7 H2O
   concentration:
     value: '0.16'
@@ -199,9 +199,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
-    label: CaCl2 x 7 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: Isovaleric acid
   concentration:
     value: '10'
@@ -211,9 +211,9 @@ ingredients:
   term:
     id: CHEBI:28484
     label: isovaleric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000305
-    label: Isovaleric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
 - preferred_term: Isobutyric acid
   concentration:
     value: '10'
@@ -223,9 +223,9 @@ ingredients:
   term:
     id: CHEBI:16135
     label: isobutyric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000286
-    label: Isobutyric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
 - preferred_term: Tryptone
   term:
     id: FOODON:03316428
@@ -347,6 +347,18 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:44.877997+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:58:31.539143+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
 solutions:
 - preferred_term: Mineral solution 1
   term:

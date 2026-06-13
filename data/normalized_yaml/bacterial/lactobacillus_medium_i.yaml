@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '0.0416667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000190
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53426
     label: Tween 80
 - preferred_term: Glucose
   term:
@@ -50,8 +50,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Lactose
   term:
@@ -60,8 +60,8 @@ ingredients:
   concentration:
     value: '1.66667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000339
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17716
     label: Lactose
 - preferred_term: Agar
   term:
@@ -70,8 +70,8 @@ ingredients:
   concentration:
     value: '12.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -97,3 +97,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LACTOBACILLUS MEDIUM I" to "lactobacillus_medium_i"
     for consistent matching
+- timestamp: '2026-06-05T07:41:10.705560+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

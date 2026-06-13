@@ -31,8 +31,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Agar
   term:
@@ -41,8 +41,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -66,14 +66,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:06.438620+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "FLAVOBACTERIUM AQUATILE MEDIUM" to
-    "flavobacterium_aquatile_medium" for consistent matching
+  notes: Normalized name from "FLAVOBACTERIUM AQUATILE MEDIUM" to "flavobacterium_aquatile_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:00.397202+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:102
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_102_FLAVOBACTERIUM_AQUATILE_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_102_FLAVOBACTERIUM_AQUATILE_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003542
   name: flavobacterium_aquatile_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

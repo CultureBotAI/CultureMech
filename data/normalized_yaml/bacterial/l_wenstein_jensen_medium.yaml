@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '1.55087'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: MgSO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.148883'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4
 - preferred_term: Mg-citrate
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.372208'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000655
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131389
     label: Mg-citrate
 - preferred_term: L-Asparagin
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '2.23325'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagin
 - preferred_term: Potato flour
   concentration:
@@ -63,8 +63,8 @@ ingredients:
   concentration:
     value: '0.248139'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000835
+  mediaingredientmech_chebi_term:
+    id: CHEBI:72449
     label: Malachite green
 - preferred_term: Glycerol
   term:
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Fresh egg mixture
   concentration:
@@ -89,8 +89,8 @@ preparation_steps:
   description: pH 7.0
 - step_number: 3
   action: HEAT
-  description: Sterilize medium for 30 min at 121°C, cool to 30°C and add fresh
-    egg mixture carefully to the medium.
+  description: Sterilize medium for 30 min at 121°C, cool to 30°C and add fresh egg
+    mixture carefully to the medium.
 - step_number: 4
   action: MIX
   description: '* You need for 1 l of egg mixture 20 - 25 fresh eggs (not older then
@@ -114,12 +114,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.352560+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "LÖWENSTEIN-JENSEN MEDIUM" to
-    "l_wenstein_jensen_medium" for consistent matching
+  notes: Normalized name from "LÖWENSTEIN-JENSEN MEDIUM" to "l_wenstein_jensen_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:10.619348+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_354_L_WENSTEIN-JENSEN_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005071
   name: l_wenstein_jensen_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 354; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 354; local ingredient
+    and concentration signatures match.

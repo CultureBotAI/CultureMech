@@ -1,0 +1,109 @@
+id: CultureMech:015855
+name: thiohalorhabdus_methylotrophus_medium
+original_name: THIOHALORHABDUS METHYLOTROPHUS MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: JCM Medium J1405
+  term:
+    id: jcm.grmd:1405
+    label: THIOHALORHABDUS METHYLOTROPHUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1405'
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '180.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: KCl
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: 1 M MgSO4 solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Trace element solution (see Medium No. 1079 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: 0.002% CuCl2·2H2O solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Trace vitamins* (see Medium No. 197 )
+  concentration:
+    value: '5.0'
+    unit: ML_PER_L
+- preferred_term: 3% Trimethylamine solution*
+  concentration:
+    value: '20.0'
+    unit: ML_PER_L
+- preferred_term: 2 M Sodium thiosulfate solution*
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add components to distilled water and bring volume to 1.0 L.
+- step_number: 2
+  action: MIX
+  description: Adjust pH to 6.8 by 10% K2HPO4 or KH2PO4 solution, and autoclave.
+- step_number: 3
+  action: MIX
+  description: 'After cooling, add the following solutions (autoclaved or *filter-sterilized):
+    Place the medium in culture vessels leaving >80% head space (e.g., 20 ml in 120
+    ml serum bottles) and seal with butyl rubber stoppers.'
+- step_number: 4
+  action: MIX
+  description: Cultivated at the designated temperature with shaking.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:05.168560+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1405. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.465152Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

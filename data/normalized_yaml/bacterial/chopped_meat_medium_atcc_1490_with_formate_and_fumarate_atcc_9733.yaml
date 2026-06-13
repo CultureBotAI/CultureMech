@@ -42,8 +42,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: N NaOH
   concentration:
@@ -75,9 +75,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -86,9 +86,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Trypticase Peptone (BD 211921)
   concentration:
     value: '30'
@@ -114,8 +114,8 @@ ingredients:
   term:
     id: CHEBI:18067
     label: Vitamin K1
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 - preferred_term: Distilled water to
   concentration:
@@ -132,9 +132,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
-    label: Hemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: DI Water
   concentration:
     value: '100'
@@ -150,9 +150,9 @@ ingredients:
   term:
     id: CHEBI:18012
     label: fumaric acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000984
-    label: Fumaric Acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18012
+    label: fumaric acid
 - preferred_term: Sodium Formate
   concentration:
     value: '6'
@@ -161,9 +161,9 @@ ingredients:
   term:
     id: CHEBI:62965
     label: sodium formate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
-    label: Sodium Formate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
 media_term:
   preferred_term: TOGO Medium M2618
   term:
@@ -228,6 +228,12 @@ curation_history:
   notes: 'Edison phase-2: Bacteroides ureolyticus ATCC 33387 is an exact parent match;
     ATCC 1490 base (without formate/fumarate) and carbonate/CO2-buffered ATCC 1490
     are variants. [added 7 organism(s), 2 variant(s)]'
+- timestamp: '2026-06-05T07:40:53.479044+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: Formate and Fumarate Solution
   composition: []

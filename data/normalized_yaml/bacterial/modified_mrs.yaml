@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4.7H2O
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
-    label: MgSO4.7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -43,8 +43,8 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -55,9 +55,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: FeSO4.7H2O
   concentration:
     value: '0.034'
@@ -67,9 +67,9 @@ ingredients:
   term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
-    label: FeSO4.7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: Polysorbate 80
   concentration:
     value: '1'
@@ -88,9 +88,9 @@ ingredients:
   term:
     id: CHEBI:86358
     label: manganese(II) sulfate tetrahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000711
-    label: MnSO4.4H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86358
+    label: manganese(II) sulfate tetrahydrate
 - preferred_term: Tri-ammonium citrate
   concentration:
     value: '2'
@@ -105,8 +105,8 @@ ingredients:
   term:
     id: CHEBI:32816
     label: Pyruvic acid
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000680
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32816
     label: Pyruvic acid
 - preferred_term: Cysteine-HCl
   concentration:
@@ -140,9 +140,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000916
-    label: Maltose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18167
+    label: alpha-maltose
 media_term:
   preferred_term: TOGO Medium M2782
   term:
@@ -181,3 +181,9 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified-MRS" to "modified_mrs" for consistent matching
+- timestamp: '2026-06-05T07:41:37.443554+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

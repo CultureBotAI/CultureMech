@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NaNO3
   concentration:
     value: '0.792079'
@@ -48,10 +48,9 @@ composition:
     id: mediadive.compound:187
     label: NaNO3
   chebi_term:
-    id: CHEBI:65327
-    label: D-xylose
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:63005
+    label: sodium nitrate
+    match_type: manual_curated
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '3.36634'
@@ -60,10 +59,10 @@ composition:
     id: mediadive.compound:8
     label: MgSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '4.13861'
@@ -72,10 +71,9 @@ composition:
     id: mediadive.compound:79
     label: MgCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:86345
+    label: magnesium chloride hexahydrate
+    match_type: corpus_consensus
 - preferred_term: KCl
   concentration:
     value: '0.326733'
@@ -96,10 +94,10 @@ composition:
     id: mediadive.compound:40
     label: NiCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2SeO3 x 5 H2O
   concentration:
     value: '0.00495049'
@@ -108,10 +106,9 @@ composition:
     id: mediadive.compound:107
     label: Na2SeO3 x 5 H2O
   chebi_term:
-    id: CHEBI:63940
-    label: sodium tungstate
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:131361
+    label: disodium selenite pentahydrate
+    match_type: corpus_consensus
 - preferred_term: Fe(SO4)3 x n H2O
   concentration:
     value: '0.049505'
@@ -120,10 +117,10 @@ composition:
     id: mediadive.compound:1742
     label: Fe(SO4)3 x n H2O
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:53438
+    label: Fe2(SO4)3 x n H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: H2WO4
   concentration:
     value: '0.00495049'
@@ -156,10 +153,10 @@ composition:
     id: mediadive.compound:770
     label: L-Cysteine HCl x H2O
   chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.49505'
@@ -168,10 +165,10 @@ composition:
     id: mediadive.compound:54
     label: Na2S x 9 H2O
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Resazurin
   concentration:
     value: '0.000990099'
@@ -192,10 +189,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Mix ingredients, except NaHCO3, L-cysteine x HCl x H2O and Na2S
   x 9H2O, adjust pH to 7.5 - 8.0, and autoclave. Separately autoclave NaHCO3, L-cysteine
   x HCl x H2O and Na2S x 9H2O solutions (5% each) under a N2 atmosphere. Distribute
@@ -230,6 +227,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:30.287578+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 6 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:48:15.704934+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:18.001749+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '3 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -8,8 +8,9 @@ composition:
   concentration:
     value: '8.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000178
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -17,8 +18,9 @@ composition:
   concentration:
     value: '1.0'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -29,8 +31,9 @@ composition:
   term:
     id: CHEBI:32599
     label: magnesium sulfate heptahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000614
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate heptahydrate
 notes: 'Stock solution for TAP Medium (Tris-Acetate-Phosphate) and related algae culture
   media.
 
@@ -68,6 +71,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: references.reference_id->reference=3
+- timestamp: '2026-06-08T23:17:55.772491+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 references:
 - reference: https://utex.org/products/beijerincks-solution
 - reference: UTEX:beijerincks-solution

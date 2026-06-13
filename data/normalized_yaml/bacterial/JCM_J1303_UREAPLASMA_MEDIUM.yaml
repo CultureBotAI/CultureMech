@@ -23,8 +23,8 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: Hipolypepton
   concentration:
@@ -42,8 +42,8 @@ ingredients:
     value: '15.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 10.0, 5.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000301
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16199
     label: Urea
 - preferred_term: Yeast extract
   concentration:
@@ -99,3 +99,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "UREAPLASMA MEDIUM" to "ureaplasma_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:40:16.682066+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

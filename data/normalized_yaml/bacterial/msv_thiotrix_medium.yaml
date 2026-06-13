@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: (NH4)2SO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.504541'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.100908'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.0504541'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: K2HPO4
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.110999'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '0.0857719'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '0.00201816'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 - preferred_term: Na2-EDTA
   term:
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '0.00302725'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000790
+  mediaingredientmech_chebi_term:
+    id: CHEBI:64734
     label: Na2-EDTA
 - preferred_term: Na-acetate
   term:
@@ -99,8 +99,8 @@ ingredients:
   concentration:
     value: '0.550959'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -109,8 +109,8 @@ ingredients:
   concentration:
     value: '0.403633'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: NaHCO3
   term:
@@ -119,8 +119,8 @@ ingredients:
   concentration:
     value: '52.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Inositol
   term:
@@ -129,8 +129,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000421
+  mediaingredientmech_chebi_term:
+    id: CHEBI:24848
     label: Inositol
 - preferred_term: Riboflavin
   term:
@@ -139,8 +139,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -149,8 +149,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000160
+  mediaingredientmech_chebi_term:
+    id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
 - preferred_term: Nicotinic acid
   term:
@@ -159,8 +159,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000730
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
     label: Nicotinic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
@@ -169,8 +169,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001016
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
     label: Pyridoxine hydrochloride
 - preferred_term: Calcium pantothenate
   term:
@@ -179,8 +179,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000926
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
     label: Calcium pantothenate
 - preferred_term: Biotin
   term:
@@ -189,8 +189,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Folic acid
   term:
@@ -199,8 +199,8 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000823
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
     label: Folic acid
 - preferred_term: Vitamin B12
   term:
@@ -209,8 +209,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000125
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
     label: Vitamin B12
 preparation_steps:
 - step_number: 1
@@ -224,8 +224,8 @@ preparation_steps:
   description: NaHCO3 2.625 g per 50 ml distilled water
 - step_number: 4
   action: AUTOCLAVE
-  description: Autoclave for 20 min. at 121°C and add 8 ml/l sterile solution II
-    shortly, before inoculation of bacterial culture.
+  description: Autoclave for 20 min. at 121°C and add 8 ml/l sterile solution II shortly,
+    before inoculation of bacterial culture.
 - step_number: 5
   action: MIX
   description: H3P-vitamine solution (see medium 428)
@@ -262,12 +262,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.767530+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MSV-THIOTRIX-MEDIUM" to "msv_thiotrix_medium" for
-    consistent matching
+  notes: Normalized name from "MSV-THIOTRIX-MEDIUM" to "msv_thiotrix_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:38.829696+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 20 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_841_MSV-THIOTRIX-MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006644
   name: msv_thiotrix_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

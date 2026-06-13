@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '16.6667'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: (NH4)2SO4
   term:
@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '0.222222'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '0.444444'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.111111'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -58,8 +58,8 @@ ingredients:
   concentration:
     value: '139'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: K2S4O6
   concentration:
@@ -68,8 +68,8 @@ ingredients:
   term:
     id: CHEBI:86466
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001076
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86466
     label: K2S4O6
 - preferred_term: Yeast extract
   concentration:
@@ -78,19 +78,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: Combine solution A and solution B after cooling and add solutions
-    C and D to complete the medium.
+  description: Combine solution A and solution B after cooling and add solutions C
+    and D to complete the medium.
 - step_number: 2
   action: MIX
   description: 'Note: Use 10% (v/v) as inoculum.'
 - step_number: 3
   action: AUTOCLAVE
-  description: Adjust the pH to 1.7 with H2SO4 and autoclave at 121°C for 20
-    min.
+  description: Adjust the pH to 1.7 with H2SO4 and autoclave at 121°C for 20 min.
 - step_number: 4
   action: AUTOCLAVE
-  description: Adjust the pH to 1.25 and autoclave solution at 115°C for 10 min
-    or sterilize by filtration.
+  description: Adjust the pH to 1.25 and autoclave solution at 115°C for 10 min or
+    sterilize by filtration.
 - step_number: 5
   action: MIX
   description: Sterilize by filtration.
@@ -119,8 +118,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.683857+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "ACIDIHALOBACTER FERROOXIDANS MEDIUM" to
-    "acidihalobacter_ferrooxidans_medium" for consistent matching
+  notes: Normalized name from "ACIDIHALOBACTER FERROOXIDANS MEDIUM" to "acidihalobacter_ferrooxidans_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:47.226882+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/acidihalobacter_medium.yaml
   relationship: SOURCE_DUPLICATE
@@ -128,5 +133,5 @@ parent_media:
   name: acidihalobacter_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

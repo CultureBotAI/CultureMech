@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Hemin
 - preferred_term: Glucose
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '0.477555'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Cellobiose
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '0.477555'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001069
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17057
     label: Cellobiose
 - preferred_term: Starch
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '0.477555'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Agar
   term:
@@ -67,8 +67,8 @@ ingredients:
   concentration:
     value: '17.192'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Resazurin
   term:
@@ -77,8 +77,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Toray silicone SH 5535
   concentration:
@@ -91,8 +91,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: L-Ascorbic acid
   term:
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001080
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29073
     label: L-Ascorbic acid
 - preferred_term: Na2SO3
   term:
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000988
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86477
     label: Na2SO3
 - preferred_term: Acetic acid
   term:
@@ -121,8 +121,8 @@ ingredients:
   concentration:
     value: '17'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000342
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
     label: Acetic acid
 - preferred_term: Propionic acid
   term:
@@ -131,8 +131,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000366
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30768
     label: Propionic acid
 - preferred_term: n-Butyric acid
   term:
@@ -141,8 +141,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000471
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30772
     label: n-Butyric acid
 - preferred_term: iso-Butyric acid
   term:
@@ -151,8 +151,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000286
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16135
     label: iso-Butyric acid
 - preferred_term: n-Valeric acid
   term:
@@ -161,8 +161,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000303
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17418
     label: n-Valeric acid
 - preferred_term: iso-Valeric acid
   term:
@@ -181,8 +181,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000939
+  mediaingredientmech_chebi_term:
+    id: CHEBI:37070
     label: DL-alpha-Methyl butyric acid
 - preferred_term: K2HPO4
   term:
@@ -191,8 +191,8 @@ ingredients:
   concentration:
     value: '7.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
@@ -201,8 +201,8 @@ ingredients:
   concentration:
     value: '4.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaCl
   term:
@@ -211,8 +211,8 @@ ingredients:
   concentration:
     value: '11.8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: (NH4)2SO4
   term:
@@ -221,8 +221,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: CaCl2
   term:
@@ -231,8 +231,8 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 - preferred_term: MgSO4 x H2O
   term:
@@ -241,8 +241,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: MgSO4 x H2O
 preparation_steps:
 - step_number: 1
@@ -267,3 +267,9 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM 10" to "medium_10" for consistent matching
+- timestamp: '2026-06-05T07:41:13.539361+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

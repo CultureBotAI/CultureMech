@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Bacto agar (BD-Difco)
   concentration:
     value: '15'
@@ -71,20 +71,24 @@ curation_history:
 - timestamp: '2026-03-17T19:46:21.153526+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MRS Medium With 10% NaCl" to
-    "mrs_medium_with_10_nacl" for consistent matching
+  notes: Normalized name from "MRS Medium With 10% NaCl" to "mrs_medium_with_10_nacl"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:37.069440+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/TOGO_M602_MRS_Medium_With_2.5_NaCl.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:010001
   name: mrs_medium_with_2_5_nacl
-  notes: NaCl concentration decreased from 100 g/L (10%) to 25 g/L (2.5%); all
-    other parsed ingredient concentrations match the parent.
-- path:
-    data/normalized_yaml/bacterial/TOGO_M977_MRS_Medium_With_2.5_NaCl_pH_9.0.yaml
+  notes: NaCl concentration decreased from 100 g/L (10%) to 25 g/L (2.5%); all other
+    parsed ingredient concentrations match the parent.
+- path: data/normalized_yaml/bacterial/TOGO_M977_MRS_Medium_With_2.5_NaCl_pH_9.0.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:010403
   name: mrs_medium_with_2_5_nacl_ph_9_0
-  notes: NaCl concentration decreased from 100 g/L (10%) to 25 g/L (2.5%) and pH
-    is specified as 9.0; all other parsed ingredient concentrations match the
-    parent.
+  notes: NaCl concentration decreased from 100 g/L (10%) to 25 g/L (2.5%) and pH is
+    specified as 9.0; all other parsed ingredient concentrations match the parent.

@@ -272,8 +272,8 @@ ingredients:
   concentration:
     value: '1.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Cysteine HCl
   concentration:
@@ -290,8 +290,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: NaOH
   term:
@@ -300,8 +300,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Vitamin K3
   concentration:
@@ -317,8 +317,8 @@ ingredients:
   concentration:
     value: '9.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 preparation_steps:
 - step_number: 1
@@ -364,3 +364,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Mucispirillum Spezial" to "mucispirillum_spezial" for
     consistent matching
+- timestamp: '2026-06-05T07:41:38.865233+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

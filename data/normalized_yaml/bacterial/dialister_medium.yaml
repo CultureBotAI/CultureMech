@@ -19,8 +19,8 @@ ingredients:
   term:
     id: CHEBI:232798
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001017
+  mediaingredientmech_chebi_term:
+    id: CHEBI:232798
     label: Na-L-lactate
 - preferred_term: Haemin
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: NaHCO3
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Glucose
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Cystein-HCl x 2 H2O
   concentration:
@@ -63,8 +63,8 @@ ingredients:
   concentration:
     value: '0.000771255'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000793
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18320
     label: DTT
 - preferred_term: Na-formate
   term:
@@ -73,8 +73,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
     label: Na-formate
 - preferred_term: Na-fumarate
   term:
@@ -83,8 +83,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
     label: Na-fumarate
 - preferred_term: Horse blood
   concentration:
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: KNO3
   term:
@@ -131,8 +131,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 - preferred_term: Ethanol
   term:
@@ -141,8 +141,8 @@ ingredients:
   concentration:
     value: '19'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 preparation_steps:
 - step_number: 1
@@ -150,8 +150,7 @@ preparation_steps:
   description: 'To 10 ml of the dialister medium add aseptically:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Filter-sterilize all solutions and incubate them in oxygen-free
-    atmosphere.
+  description: Filter-sterilize all solutions and incubate them in oxygen-free atmosphere.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.0.
@@ -160,8 +159,8 @@ preparation_steps:
   description: Incubate in oxygen-free, 5 - 10% CO2 containing atmosphere.
 - step_number: 5
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter
-    sterilize. Store refrigerated in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -184,12 +183,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:07.277792+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "DIALISTER MEDIUM" to "dialister_medium" for
-    consistent matching
+  notes: Normalized name from "DIALISTER MEDIUM" to "dialister_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:58.650832+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_1107_DIALISTER_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:003807
   name: dialister_medium
-  notes: Same source medium number and matching ingredient/concentration
-    signature.
+  notes: Same source medium number and matching ingredient/concentration signature.

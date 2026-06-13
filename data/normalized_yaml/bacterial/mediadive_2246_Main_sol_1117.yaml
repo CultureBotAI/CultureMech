@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:1
     label: Peptone
-  chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '4'
@@ -23,11 +18,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: NaCl
   concentration:
     value: '2'
@@ -48,10 +38,10 @@ composition:
     id: mediadive.compound:322
     label: Tap water
   chebi_term:
-    id: CHEBI:17992
-    label: sucrose
+    id: CHEBI:15377
+    label: Tap water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Adjust to pH 7.2
 curation_history:
 - timestamp: '2026-03-13T06:20:20.929237Z'
@@ -76,6 +66,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:20.827419+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:46:34.623945+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:08.950893+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

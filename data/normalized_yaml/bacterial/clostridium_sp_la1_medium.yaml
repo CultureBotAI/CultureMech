@@ -21,8 +21,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000624
+  mediaingredientmech_chebi_term:
+    id: CHEBI:41131
     label: Crotonic acid
 - preferred_term: NaOH
   term:
@@ -31,8 +31,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: (NH4)2HPO4
   term:
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -61,8 +61,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -71,8 +71,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: NH4Cl
   term:
@@ -81,8 +81,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -91,8 +91,8 @@ ingredients:
   concentration:
     value: '0.0006'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x 2 H2O
   term:
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000436
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86356
     label: MnSO4 x 2 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
@@ -128,8 +128,8 @@ ingredients:
   concentration:
     value: 4e-05
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: p-Aminobenzoic acid
   term:
@@ -138,8 +138,8 @@ ingredients:
   concentration:
     value: '0.0008'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000502
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
     label: p-Aminobenzoic acid
 - preferred_term: Tryptone
   concentration:
@@ -163,8 +163,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000596
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131526
     label: K2CO3
 preparation_steps:
 - step_number: 1
@@ -201,6 +201,12 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''6.8-7'' -> {''min'': 6.8, ''max'': 7.0}'
+- timestamp: '2026-06-05T07:40:54.200687+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/clostridium_medium.yaml
   relationship: SOURCE_DUPLICATE

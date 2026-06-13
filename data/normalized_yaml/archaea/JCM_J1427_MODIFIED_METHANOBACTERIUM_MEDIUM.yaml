@@ -1,0 +1,174 @@
+id: CultureMech:015863
+name: modified_methanobacterium_medium
+original_name: MODIFIED METHANOBACTERIUM MEDIUM
+category: archaea
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1427
+  term:
+    id: jcm.grmd:1427
+    label: MODIFIED METHANOBACTERIUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1427'
+ingredients:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: MgSO4 x 6 H2O
+- preferred_term: NaCl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: FeCl2 solution (see Medium No. 187 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Trace element solution (see Medium No. 187 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: Brain heart infusion (BD Difico)
+  concentration:
+    value: '6.0'
+    unit: G_PER_L
+- preferred_term: Proteose peptone (BD Difico)
+  concentration:
+    value: '6.0'
+    unit: G_PER_L
+- preferred_term: Yeast extract (Oxoid)
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: Sodium acetate·3H2O
+- preferred_term: Sodium formate
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62965
+    label: sodium formate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: Na-formate
+- preferred_term: Rumen fluid, clarified (see Medium No. 266 )
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Distilled water
+  concentration:
+    value: '940.0'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Vitamin solution (see Medium No. 898 )
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+- preferred_term: 8% NaHCO3 solution
+  concentration:
+    value: '50.0'
+    unit: ML_PER_L
+- preferred_term: 5% Na2S·9H2O solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+- preferred_term: 5% L-Cysteine·HCl·H2O solution
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components and autoclave under a N2-CO2 (80:20, v/v) gas mixture.
+- step_number: 2
+  action: MIX
+  description: 'After cooling, aseptically and anaerobically, add the following solutions
+    from anaerobic stocks (filtersterilized): Dispense the medium into culture vessels
+    (e.g., 5 ml medium in Hungate tubes) under a H2-CO2 (80:20, v/v) gas stream and
+    seal with butyl stoppers.'
+- step_number: 3
+  action: MIX
+  description: 'Prior to inoculation, add per liter the following solutions (autoclaved
+    and stored under a N2 atmosphere): After inoculation, pressurize the inoculated
+    culture vessels to 100 kPa H2-CO2 (80:20, v/v).'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-06-02T07:09:13.678761+00:00'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1427. Ingredients captured verbatim; CHEBI/MediaIngredientMech
+    enrichment and category (bacterial/archaea) review are downstream steps.
+- timestamp: '2026-06-03T02:00:03.523456Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-06-03T07:12:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

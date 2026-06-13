@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '4.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000644
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
     label: Na2HPO4 x 12 H2O
 - preferred_term: KH2PO4
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NH4Cl
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: Ferric ammonium citrate
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '0.018'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000541
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31604
     label: Ferric ammonium citrate
 - preferred_term: Na-acetate
   term:
@@ -80,8 +80,8 @@ ingredients:
     value: '3'
     unit: G_PER_L
   notes: Optional ingredient
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
     label: Na-acetate
 - preferred_term: Agar
   term:
@@ -91,8 +91,8 @@ ingredients:
     value: '12'
     unit: G_PER_L
   notes: Optional ingredient (for solid medium)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
@@ -121,8 +121,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000117
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
     label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -131,8 +131,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000126
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
     label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -141,8 +141,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000205
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
     label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -151,8 +151,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000202
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
     label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -161,8 +161,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
@@ -170,13 +170,13 @@ preparation_steps:
   description: Dissolve ingredients, adjust pH to 7.0 and autoclave.
 - step_number: 2
   action: MIX
-  description: For chemoautotrophic growth incubate under a gas atmosphere of a)
-    20 - 80% carbon monoxide + 10% O2 + 70 - 10% N2 or b) 70% H2 + 20% O2 + 10%
-    CO2 adding 2.50 g NaHCO3 per liter of medium.
+  description: For chemoautotrophic growth incubate under a gas atmosphere of a) 20
+    - 80% carbon monoxide + 10% O2 + 70 - 10% N2 or b) 70% H2 + 20% O2 + 10% CO2 adding
+    2.50 g NaHCO3 per liter of medium.
 - step_number: 3
   action: MIX
-  description: For chemoorganotrophic growth add 3.00 g sodium acetate and
-    incubate under air atmosphere.
+  description: For chemoorganotrophic growth add 3.00 g sodium acetate and incubate
+    under air atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -195,8 +195,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:09.833737+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CARBON MONOXIDE OXIDIZER MEDIUM" to
-    "carbon_monoxide_oxidizer_medium" for consistent matching
+  notes: Normalized name from "CARBON MONOXIDE OXIDIZER MEDIUM" to "carbon_monoxide_oxidizer_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:52.508822+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/for_dsm_1083.yaml
   relationship: SOURCE_DUPLICATE
@@ -204,5 +210,5 @@ parent_media:
   name: for_dsm_1083
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

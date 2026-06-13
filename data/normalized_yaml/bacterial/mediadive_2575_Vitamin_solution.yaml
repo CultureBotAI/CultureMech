@@ -37,9 +37,9 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: biotin
+    label: Biotin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Nicotinic acid
   concentration:
     value: '0.025'
@@ -73,9 +73,9 @@ composition:
     label: Riboflavin
   chebi_term:
     id: CHEBI:17015
-    label: riboflavin
+    label: Riboflavin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Thiamine hydrochloride
   concentration:
     value: '0.025'
@@ -108,10 +108,10 @@ composition:
     id: mediadive.compound:847
     label: Cyanocobalamine
   chebi_term:
-    id: CHEBI:64734
-    label: EDTA disodium salt (anhydrous)
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Lipoic acid
   concentration:
     value: '0.025'
@@ -121,9 +121,9 @@ composition:
     label: Lipoic acid
   chebi_term:
     id: CHEBI:16494
-    label: lipoic acid
+    label: Lipoic acid
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Double distilled water
   concentration:
     value: '1000'
@@ -132,10 +132,10 @@ composition:
     id: mediadive.compound:1021
     label: Double distilled water
   chebi_term:
-    id: CHEBI:18050
-    label: L-glutamine
+    id: CHEBI:15377
+    label: Double distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 curation_history:
 - timestamp: '2026-03-13T06:20:22.758976Z'
   curator: culturemech-id-assigner-v1.0
@@ -159,6 +159,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:22.750214+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 5 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
 ingredients:
 - preferred_term: See source for composition
   concentration:

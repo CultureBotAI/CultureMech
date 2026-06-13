@@ -13,8 +13,8 @@ ingredients:
     value: '40.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000944
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30089
     label: Acetate
 - preferred_term: Methanol
   term:
@@ -24,8 +24,8 @@ ingredients:
     value: '125.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:meoh'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000618
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
     label: Methanol
 - preferred_term: Sodium chloride
   term:
@@ -34,9 +34,9 @@ ingredients:
   concentration:
     value: '400.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -44,8 +44,8 @@ ingredients:
   concentration:
     value: '0.004'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -88,9 +88,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -98,8 +98,8 @@ ingredients:
   concentration:
     value: '19.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 - preferred_term: Sodium bicarbonate
   concentration:
@@ -108,8 +108,8 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: Sodium bicarbonate
 - preferred_term: Magnesium chloride
   concentration:
@@ -118,9 +118,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -154,6 +154,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "'HS Medium (Methanol-Acetate" to "hs_medium_methanol_acetate"
     for consistent matching
+- timestamp: '2026-06-05T07:41:08.750621+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 472
   term:

@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NH4Cl
   concentration:
     value: '0.315457'
@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:8
     label: MgSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '2.10305'
@@ -48,10 +48,9 @@ composition:
     id: mediadive.compound:79
     label: MgCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:86345
+    label: magnesium chloride hexahydrate
+    match_type: corpus_consensus
 - preferred_term: NaCl
   concentration:
     value: '21.0305'
@@ -72,10 +71,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2SO4
   concentration:
     value: '1.8612'
@@ -96,10 +95,8 @@ composition:
     id: mediadive.compound:204
     label: Na2-DL-malate
   chebi_term:
-    id: CHEBI:32149
-    label: sodium sulfate
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:91260
+    label: disodium malate
 - preferred_term: Yeast extract
   concentration:
     value: '0.525762'
@@ -107,11 +104,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000525762'
@@ -120,10 +112,10 @@ composition:
     id: mediadive.compound:1852
     label: Sodium resazurin
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:8806
+    label: Resazurin
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '998.9484752891692'
@@ -132,10 +124,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 6.0 with 2 N NaOH.
 
 
@@ -163,6 +155,25 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-09T01:48:31.752303+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-06-10T06:38:17.411049+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 5 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:45:49.152882+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:05.731438+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
     label: Na-formiate
 - preferred_term: Na-fumarate
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
     label: Na-fumarate
 - preferred_term: Ground beef
   concentration:
@@ -44,8 +44,8 @@ ingredients:
     value: '26.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 25.0, 1.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
     label: NaOH
 - preferred_term: Casitone
   concentration:
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '4.87805'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Resazurin
   term:
@@ -72,8 +72,8 @@ ingredients:
   concentration:
     value: '0.00097561'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: L-Cysteine HCl
   term:
@@ -93,8 +93,8 @@ ingredients:
     value: '14.6341'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Haemin
   term:
@@ -103,8 +103,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: Vitamin K3
   concentration:
@@ -121,8 +121,8 @@ ingredients:
     value: '959.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 9.5, 950.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: Ethanol
 - preferred_term: Vitamin K1
   term:
@@ -131,8 +131,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 applications:
 - Microbial cultivation
@@ -160,8 +160,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:47.125908+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 413 MODIFIED FOR DSM 6644" to
-    "medium_413_modified_for_dsm_6644" for consistent matching
+  notes: Normalized name from "MEDIUM 413 MODIFIED FOR DSM 6644" to "medium_413_modified_for_dsm_6644"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:18.978754+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 7.0
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_413_BTU_medium.yaml
@@ -170,5 +176,5 @@ parent_media:
   name: btu_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

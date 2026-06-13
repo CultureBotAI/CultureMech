@@ -19,8 +19,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Ground beef (fat free)
   concentration:
@@ -41,9 +41,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -53,8 +53,8 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Casitone
   concentration:
@@ -84,9 +84,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: haemin
   concentration:
     value: '50'
@@ -96,9 +96,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
-    label: haemin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
+    label: Haemin
 - preferred_term: 95% ethanol
   concentration:
     value: '20'
@@ -113,9 +113,9 @@ ingredients:
   term:
     id: CHEBI:18067
     label: Vitamin K1
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
-    label: vitamin K1
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
+    label: Vitamin K1
 media_term:
   preferred_term: TOGO Medium M2522
   term:
@@ -168,6 +168,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:53.430537+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: Haemin solution
   term:

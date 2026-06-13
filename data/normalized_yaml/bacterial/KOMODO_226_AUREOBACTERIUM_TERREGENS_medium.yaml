@@ -17,12 +17,6 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001071
-    label: Casamino acids
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -34,8 +28,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: (NH4) citrate
   concentration:
@@ -44,8 +38,8 @@ ingredients:
   term:
     id: CHEBI:63037
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000335
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63037
     label: (NH4) citrate
 - preferred_term: K2HPO4
   term:
@@ -54,8 +48,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -64,8 +58,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: FeCl3 x 6 H2O
   term:
@@ -74,8 +68,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000218
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86254
     label: FeCl3 x 6 H2O
 applications:
 - Microbial cultivation
@@ -99,17 +93,29 @@ curation_history:
 - timestamp: '2026-03-17T19:45:42.729289+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "AUREOBACTERIUM TERREGENS medium" to
-    "aureobacterium_terregens_medium" for consistent matching
+  notes: Normalized name from "AUREOBACTERIUM TERREGENS medium" to "aureobacterium_terregens_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:21.799580+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-08T23:19:27.848822+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22)
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
+    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
+    selenate; casamino acids de-grounded (mixture, no single CHEBI).
 parent_media:
   path: data/normalized_yaml/bacterial/aureobacterium_terregens_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001330
   name: aureobacterium_terregens_medium
-  notes: KOMODO record explicitly cites DSMZ Medium 226; one unlinked DSMZ
-    parent record exists and the local physical state, pH, ingredient, and
-    concentration signatures match exactly.
+  notes: KOMODO record explicitly cites DSMZ Medium 226; one unlinked DSMZ parent
+    record exists and the local physical state, pH, ingredient, and concentration
+    signatures match exactly.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- KOMODO record is an exact source duplicate of DSMZ Medium 226; local
-  ingredient and concentration signatures match.
+- KOMODO record is an exact source duplicate of DSMZ Medium 226; local ingredient
+  and concentration signatures match.

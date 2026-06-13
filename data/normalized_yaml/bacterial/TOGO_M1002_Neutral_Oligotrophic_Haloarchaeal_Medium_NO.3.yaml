@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -30,9 +30,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000873
-    label: Sodium acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.25'
@@ -42,9 +42,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Sodium lactate
   concentration:
     value: '0.25'
@@ -54,9 +54,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001047
-    label: Sodium lactate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
 - preferred_term: Fish peptone (Fluka)
   concentration:
     value: '0.25'
@@ -70,8 +70,8 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: agar
 - preferred_term: Sodium formate
   concentration:
@@ -81,9 +81,9 @@ ingredients:
   term:
     id: CHEBI:62965
     label: sodium formate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
-    label: Sodium formate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
 media_term:
   preferred_term: TOGO Medium M1002
   term:
@@ -131,6 +131,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:29.593631+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: MDS salt water (see Medium [M578])
   composition: []

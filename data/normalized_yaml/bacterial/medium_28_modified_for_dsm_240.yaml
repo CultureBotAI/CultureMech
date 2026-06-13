@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 applications:
 - Microbial cultivation
@@ -74,8 +74,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:43.665790+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 28 MODIFIED FOR DSM 240" to
-    "medium_28_modified_for_dsm_240" for consistent matching
+  notes: Normalized name from "MEDIUM 28 MODIFIED FOR DSM 240" to "medium_28_modified_for_dsm_240"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:18.029085+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 ph_value: 7.5
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_28_PFENNIG_S_MEDIUM_I.yaml
@@ -84,5 +90,5 @@ parent_media:
   name: pfennigs_medium_i
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

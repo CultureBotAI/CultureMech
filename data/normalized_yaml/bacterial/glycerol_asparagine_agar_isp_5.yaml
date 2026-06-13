@@ -19,8 +19,8 @@ ingredients:
   concentration:
     value: '0.999001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: Glycerol
   term:
@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '9.99001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: K2HPO4
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '0.999001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: Agar
   term:
@@ -49,8 +49,8 @@ ingredients:
   concentration:
     value: '14.985'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -59,8 +59,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -69,8 +69,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000127
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
     label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000229
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
     label: ZnSO4 x 7 H2O
 preparation_steps:
 - step_number: 1
@@ -104,18 +104,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:30.427663+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GLYCEROL-ASPARAGINE AGAR (ISP-5)" to
-    "glycerol_asparagine_agar_isp_5" for consistent matching
+  notes: Normalized name from "GLYCEROL-ASPARAGINE AGAR (ISP-5)" to "glycerol_asparagine_agar_isp_5"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:06.539918+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/isp_5_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:002175
   name: isp_5_medium
-  notes: Both records are MediaDive ISP-5/Glycerol-asparagine agar formulations
-    with the same defined base recipe and one practical agar concentration
-    difference.
+  notes: Both records are MediaDive ISP-5/Glycerol-asparagine agar formulations with
+    the same defined base recipe and one practical agar concentration difference.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Glycerol-asparagine agar ISP-5 keeps the ISP-5 defined ingredient set with
-  near-identical rounded concentrations and lowers agar from 20 g/L to about 15
-  g/L.
+- Glycerol-asparagine agar ISP-5 keeps the ISP-5 defined ingredient set with near-identical
+  rounded concentrations and lowers agar from 20 g/L to about 15 g/L.

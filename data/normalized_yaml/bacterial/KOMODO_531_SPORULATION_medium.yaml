@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
     label: MnSO4 x H2O
 - preferred_term: Marine Broth
   concentration:
@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Inosin
   term:
@@ -61,8 +61,8 @@ ingredients:
   concentration:
     value: '0.00134113'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000468
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17596
     label: Inosin
 applications:
 - Microbial cultivation
@@ -86,83 +86,89 @@ curation_history:
 - timestamp: '2026-03-17T19:45:53.919702+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPORULATION medium" to "sporulation_medium" for
-    consistent matching
+  notes: Normalized name from "SPORULATION medium" to "sporulation_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:24.424917+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_1314.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005898
   name: medium_531_modified_for_dsm_1314
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_4332.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005899
   name: medium_531_modified_for_dsm_4332
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_4333.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005900
   name: medium_531_modified_for_dsm_4333
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_4334.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005901
   name: medium_531_modified_for_dsm_4334
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_4335.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005902
   name: medium_531_modified_for_dsm_4335
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6800.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005903
   name: medium_531_modified_for_dsm_6800
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6801.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005904
   name: medium_531_modified_for_dsm_6801
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6802.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005905
   name: medium_531_modified_for_dsm_6802
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6803.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005906
   name: medium_531_modified_for_dsm_6803
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6804.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005907
   name: medium_531_modified_for_dsm_6804
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 - path: data/normalized_yaml/bacterial/medium_531_modified_for_dsm_6805.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005908
   name: medium_531_modified_for_dsm_6805
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/sporulation_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001663
   name: sporulation_medium
-  notes: KOMODO record states DSMZ Medium 531 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 531 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

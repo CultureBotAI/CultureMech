@@ -51,8 +51,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: Glucose
   term:
@@ -61,8 +61,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Resazurin
   term:
@@ -71,8 +71,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000813
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
     label: Resazurin
 - preferred_term: Haemin
   term:
@@ -81,8 +81,8 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: Vitamin K1
   term:
@@ -91,8 +91,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -111,8 +111,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -121,8 +121,8 @@ ingredients:
   concentration:
     value: '0.48'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4
   term:
@@ -131,8 +131,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
@@ -141,8 +141,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaHCO3
   term:
@@ -151,8 +151,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: NaCl
   term:
@@ -161,8 +161,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Acetic acid
   term:
@@ -171,8 +171,8 @@ ingredients:
   concentration:
     value: '17'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000342
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
     label: Acetic acid
 - preferred_term: Propionic acid
   term:
@@ -181,8 +181,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000366
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30768
     label: Propionic acid
 - preferred_term: n-Butyric acid
   term:
@@ -191,8 +191,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000471
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30772
     label: n-Butyric acid
 - preferred_term: n-Valeric acid
   term:
@@ -201,8 +201,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000303
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17418
     label: n-Valeric acid
 - preferred_term: iso-Valeric acid
   term:
@@ -221,8 +221,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000286
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16135
     label: iso-Butyric acid
 - preferred_term: Tryptone
   term:
@@ -232,14 +232,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and
-    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
-    commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -253,14 +251,13 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
-    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
-    formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -269,13 +266,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
-    Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -287,11 +283,11 @@ preparation_steps:
   description: Adjust pH to 6.9.
 - step_number: 2
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine-HCl in water, boil for 5
-    min, cool to room temperature while gassing with 100% CO2, add cysteine-HCl
-    and adjust pH to 6.9 with 8 N NaOH while gassing is continued. Switch to
-    100% N2 gas after pH has reached the desired value, distribute in anaerobic
-    tubes under nitrogen, and autoclave.
+  description: Dissolve ingredients except cysteine-HCl in water, boil for 5 min,
+    cool to room temperature while gassing with 100% CO2, add cysteine-HCl and adjust
+    pH to 6.9 with 8 N NaOH while gassing is continued. Switch to 100% N2 gas after
+    pH has reached the desired value, distribute in anaerobic tubes under nitrogen,
+    and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -314,13 +310,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:16.070853+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PYG MEDIUM WITH VOLATILE FATTY ACIDS" to
-    "pyg_medium_with_volatile_fatty_acids" for consistent matching
+  notes: Normalized name from "PYG MEDIUM WITH VOLATILE FATTY ACIDS" to "pyg_medium_with_volatile_fatty_acids"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:43.120952+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 17 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_328_PYG_medium_WITH_VOLATILE_FATTY_ACIDS.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_328_PYG_medium_WITH_VOLATILE_FATTY_ACIDS.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005021
   name: pyg_medium_with_volatile_fatty_acids
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 328; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 328; local ingredient
+    and concentration signatures match.

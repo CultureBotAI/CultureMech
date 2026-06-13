@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2HPO4 x 12 H2O
   concentration:
     value: '0.7'
@@ -36,10 +36,10 @@ composition:
     id: mediadive.compound:95
     label: Na2HPO4 x 12 H2O
   chebi_term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: (NH4)2HPO4
   concentration:
     value: '0.7'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:257
     label: (NH4)2HPO4
   chebi_term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
+    id: CHEBI:62476
+    label: (NH4)2HPO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NH4H2PO4
   concentration:
     value: '0.3'
@@ -60,10 +60,10 @@ composition:
     id: mediadive.compound:413
     label: NH4H2PO4
   chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: CHEBI:62982
+    label: NH4H2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.1'
@@ -84,10 +84,10 @@ composition:
     id: mediadive.compound:173
     label: CaCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:15956
-    label: biotin
+    id: CHEBI:91243
+    label: CaCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.25'
@@ -96,10 +96,10 @@ composition:
     id: mediadive.compound:8
     label: MgSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: H3BO3
   concentration:
     value: '0.0005'
@@ -120,10 +120,10 @@ composition:
     id: mediadive.compound:121
     label: CuSO4 x 5 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KI
   concentration:
     value: '0.0001'
@@ -132,10 +132,9 @@ composition:
     id: mediadive.compound:354
     label: KI
   chebi_term:
-    id: CHEBI:138791
-    label: Asp-Lys-Ile
-    confidence: 0.9
-    match_type: synonym_match_ambiguous
+    id: CHEBI:8346
+    label: potassium iodide
+    match_type: manual_curated
 - preferred_term: FeCl3 x 6 H2O
   concentration:
     value: '0.0002'
@@ -144,10 +143,10 @@ composition:
     id: mediadive.compound:82
     label: FeCl3 x 6 H2O
   chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MnSO4 x 4 H2O
   concentration:
     value: '0.0004'
@@ -168,10 +167,10 @@ composition:
     id: mediadive.compound:35
     label: ZnSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: (NH4)2MoO4
   concentration:
     value: '0.0002'
@@ -193,9 +192,9 @@ composition:
     label: Biotin
   chebi_term:
     id: CHEBI:15956
-    label: biotin
+    label: Biotin
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Vitamin B12
   concentration:
     value: 3e-05
@@ -207,7 +206,7 @@ composition:
     id: CHEBI:176843
     label: vitamin B12
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -216,10 +215,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 curation_history:
 - timestamp: '2026-03-13T06:20:40.815823Z'
   curator: culturemech-id-assigner-v1.0
@@ -243,6 +242,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:42.344647+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 10 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:50:09.601237+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:30.023509+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -20,8 +20,8 @@ ingredients:
   concentration:
     value: '0.118624'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: (NH4)2SO4
   term:
@@ -30,8 +30,8 @@ ingredients:
   concentration:
     value: '0.59312'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
     label: (NH4)2SO4
 - preferred_term: Fe(NH4)2(SO4)2
   concentration:
@@ -44,8 +44,8 @@ ingredients:
   concentration:
     value: '0.00284698'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000616
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -54,8 +54,8 @@ ingredients:
   concentration:
     value: '0.000177936'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000144
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
 - preferred_term: Tryptone
   concentration:
@@ -79,8 +79,8 @@ ingredients:
   concentration:
     value: '140'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
@@ -89,8 +89,8 @@ ingredients:
   concentration:
     value: '90'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: Glucose
   term:
@@ -99,8 +99,8 @@ ingredients:
   concentration:
     value: '360'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Na2CO3
   term:
@@ -109,8 +109,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -119,8 +119,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -129,8 +129,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 applications:
 - Microbial cultivation
@@ -154,8 +154,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:55.151421+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM THERMOACETICUM medium" to
-    "clostridium_thermoaceticum_medium" for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM THERMOACETICUM medium" to "clostridium_thermoaceticum_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:54.302190+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true
 parent_media:
   path: data/normalized_yaml/bacterial/moorella_medium.yaml
@@ -164,5 +170,5 @@ parent_media:
   name: moorella_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

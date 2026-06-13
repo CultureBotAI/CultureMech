@@ -29,8 +29,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001075
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31991
     label: Phenol red
 - preferred_term: Horse serum
   concentration:
@@ -43,8 +43,8 @@ ingredients:
   concentration:
     value: '4.7619'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000826
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28971
     label: Ampicillin
 - preferred_term: L-Arginine x HCl
   concentration:
@@ -53,8 +53,8 @@ ingredients:
   term:
     id: CHEBI:31235
     label: ''
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000576
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31235
     label: L-Arginine x HCl
 preparation_steps:
 - step_number: 1
@@ -96,3 +96,9 @@ curation_history:
   curator: migrate_ph_range.py
   action: MIGRATED_PH_RANGE
   notes: 'ph_range ''7-7.4'' -> {''min'': 7.0, ''max'': 7.4}'
+- timestamp: '2026-06-05T07:41:39.040872+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

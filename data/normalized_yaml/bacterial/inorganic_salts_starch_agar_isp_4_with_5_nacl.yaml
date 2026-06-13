@@ -18,8 +18,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Inorganic salts-starch agar
 - preferred_term: NaCl
   term:
@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 applications:
 - Microbial cultivation
@@ -51,4 +51,10 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 5% NaCl" to
     "inorganic_salts_starch_agar_isp_4_with_5_nacl" for consistent matching
+- timestamp: '2026-06-05T07:41:09.403273+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:101

@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaCl
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
@@ -62,8 +62,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000810
+  mediaingredientmech_chebi_term:
+    id: CHEBI:113455
     label: Sodium benzoate
 - preferred_term: Agar
   term:
@@ -73,8 +73,8 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: ' ( Noble)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -101,3 +101,9 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BENZOATE MEDIUM" to "benzoate_medium" for consistent
     matching
+- timestamp: '2026-06-05T07:40:50.769285+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '7'
@@ -52,9 +52,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Peptone
   concentration:
     value: '2.5'
@@ -91,13 +91,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:07.820800+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Artificial Seawater Medium" to
-    "artificial_seawater_medium" for consistent matching
+  notes: Normalized name from "Artificial Seawater Medium" to "artificial_seawater_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:29.753017+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/TOGO_M723_Low-Strength_Artificial_Seawater_Medium.yaml
+- path: data/normalized_yaml/bacterial/TOGO_M723_Low-Strength_Artificial_Seawater_Medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:010131
   name: low_strength_artificial_seawater_medium
-  notes: Yeast extract decreases from 3 g/L to 0.1 g/L and peptone decreases
-    from 2.5 g/L to 0.5 g/L; seawater salts remain unchanged.
+  notes: Yeast extract decreases from 3 g/L to 0.1 g/L and peptone decreases from
+    2.5 g/L to 0.5 g/L; seawater salts remain unchanged.

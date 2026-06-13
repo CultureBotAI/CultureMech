@@ -13,8 +13,8 @@ ingredients:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Thiamine
   term:
@@ -32,8 +32,11 @@ ingredients:
     value: '49.9698'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:male'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000610
+  term:
+    id: CHEBI:18300
+    label: Maleic acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18300
     label: Maleic acid
 - preferred_term: Tromethamine
   concentration:
@@ -49,15 +52,15 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
-    label: Magnesium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Sodium sulfate
   concentration:
     value: '0.929316'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000118
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32149
     label: Sodium sulfate
   term:
     id: CHEBI:32149
@@ -76,9 +79,9 @@ ingredients:
   concentration:
     value: '42.7789'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '26.8272'
@@ -86,9 +89,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: Potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -96,8 +99,8 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000121
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
     label: Ammonium chloride
 preparation_steps:
 - step_number: 1
@@ -132,6 +135,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MMGlu; Jasiecki et al" to "mmglu_jasiecki_et_al" for
     consistent matching
+- timestamp: '2026-06-05T07:41:35.425370+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 138
   term:

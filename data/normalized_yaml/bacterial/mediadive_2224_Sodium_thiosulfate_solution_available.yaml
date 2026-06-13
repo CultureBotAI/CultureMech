@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:552
     label: Na2S2O3
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:132112
+    label: sodium thiosulfate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: exact_match
 preparation_notes: '50% solution of Na2S2O3 (Fluka), pH 9-10 >> filter sterilize or
   110°C 20 min
 
@@ -44,6 +44,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:46:32.106665+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

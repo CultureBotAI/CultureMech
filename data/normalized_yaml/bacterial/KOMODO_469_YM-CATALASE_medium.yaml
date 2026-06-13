@@ -28,8 +28,8 @@ ingredients:
   concentration:
     value: '5.7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: NH4H2PO4
   term:
@@ -48,8 +48,8 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000515
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62982
     label: NH4H2PO4
 - preferred_term: Catalase
   term:
@@ -80,16 +80,22 @@ curation_history:
 - timestamp: '2026-03-17T19:45:50.496347+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "YM-CATALASE medium" to "ym_catalase_medium" for
-    consistent matching
+  notes: Normalized name from "YM-CATALASE medium" to "ym_catalase_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:40:23.878515+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/ym_catalase_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001598
   name: ym_catalase_medium
-  notes: KOMODO record states DSMZ Medium 469 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 469 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

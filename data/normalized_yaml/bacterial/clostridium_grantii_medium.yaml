@@ -30,8 +30,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000659
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
     label: Na2CO3
 - preferred_term: D-Glucose
   term:
@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -50,8 +50,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
@@ -60,20 +60,19 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
     label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve DIFCO Marine Broth powder and resazurin, bring the
-    medium to a boil, then cool to room temperature under 80% N2 and 20% CO2 gas
-    atmosphere. Dispense the medium under the same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Complete the medium by
-    adding glucose, cysteine, and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas and carbonate from a sterile anoxic stock
-    solution prepared under 80% N2 and 20% CO2 gas mixture. The pH of the
-    complete medium should be around 6.6.
+  description: Dissolve DIFCO Marine Broth powder and resazurin, bring the medium
+    to a boil, then cool to room temperature under 80% N2 and 20% CO2 gas atmosphere.
+    Dispense the medium under the same gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave. Complete the medium by adding glucose, cysteine,
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
+    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
+    gas mixture. The pH of the complete medium should be around 6.6.
 applications:
 - Microbial cultivation
 curation_history:
@@ -92,13 +91,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:19.497993+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CLOSTRIDIUM GRANTII MEDIUM" to
-    "clostridium_grantii_medium" for consistent matching
+  notes: Normalized name from "CLOSTRIDIUM GRANTII MEDIUM" to "clostridium_grantii_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:53.903335+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 4 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_648_CLOSTRIDIUM_GRANTII_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_648_CLOSTRIDIUM_GRANTII_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006195
   name: clostridium_grantii_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

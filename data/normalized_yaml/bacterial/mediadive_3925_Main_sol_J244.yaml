@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Bacto peptone
   concentration:
     value: '1.95122'
@@ -35,11 +35,6 @@ composition:
   term:
     id: mediadive.compound:19
     label: Bacto peptone
-  chebi_term:
-    id: CHEBI:36218
-    label: beta-lactose
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '0.97561'
@@ -47,11 +42,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Resazurin
   concentration:
     value: '0.000731707'
@@ -72,10 +62,10 @@ composition:
     id: mediadive.compound:54
     label: Na2S x 9 H2O
   chebi_term:
-    id: CHEBI:32588
-    label: potassium chloride
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sulfur
   concentration:
     value: '9.7561'
@@ -84,10 +74,10 @@ composition:
     id: mediadive.compound:80
     label: Sulfur
   chebi_term:
-    id: CHEBI:17909
-    label: polysulfur
+    id: CHEBI:26833
+    label: Sulfur
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '487.8048780487805'
@@ -96,10 +86,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH
   to 6.0 with H2SO4. Sterilize the medium by filtration. Steam sulfur for 3 hr on
   each of 3 successive days. Neutralize Na2S x 9H2O as a 5% solution, and autoclave
@@ -134,6 +124,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:29.413432+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:48:11.851224+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:17.111869+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

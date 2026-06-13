@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaHCO3
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.4'
@@ -38,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
-    label: Sodium pyruvate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: HEPES
   concentration:
     value: '3'
@@ -49,8 +49,8 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001034
+  mediaingredientmech_chebi_term:
+    id: CHEBI:46756
     label: HEPES
 - preferred_term: N-Acetyl-D-glucosamine
   concentration:
@@ -61,9 +61,9 @@ ingredients:
   term:
     id: CHEBI:8006
     label: Peptidoglycan(N-acetyl-D-glucosamine)
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000994
-    label: N-Acetyl-D-glucosamine
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8006
+    label: Peptidoglycan(N-acetyl-D-glucosamine)
 - preferred_term: Probumin Universal Grade (Millipore)
   concentration:
     value: '25'
@@ -84,8 +84,8 @@ ingredients:
     value: '0.35'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Trisodium citrate・2H2O
   term:
     id: CHEBI:53258
@@ -99,9 +99,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: MEM alpha Modification (BioWest)
   concentration:
     value: '5.2'
@@ -120,9 +120,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 media_term:
   preferred_term: TOGO Medium M937
   term:
@@ -165,3 +165,9 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:45.838336+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 8 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

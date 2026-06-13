@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-05-19T22:59:07
+# Generation date: 2026-06-09T23:36:11
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -150,6 +150,10 @@ class MediaDatabaseTermId(TermId):
 
 
 class MediaIngredientMechTermId(TermId):
+    pass
+
+
+class MediaIngredientMechChebiTermId(TermId):
     pass
 
 
@@ -429,6 +433,7 @@ class SolutionRecipe(YAMLRoot):
     id: Optional[str] = None
     term: Optional[Union[dict, "Term"]] = None
     mediaingredientmech_term: Optional[Union[dict, "MediaIngredientMechTerm"]] = None
+    mediaingredientmech_chebi_term: Optional[Union[dict, "MediaIngredientMechChebiTerm"]] = None
     culturemech_term: Optional[Union[dict, "CultureMechTerm"]] = None
     category: Optional[Union[str, "CategoryEnum"]] = None
     ingredients: Optional[Union[Union[dict, "IngredientDescriptor"], list[Union[dict, "IngredientDescriptor"]]]] = empty_list()
@@ -463,6 +468,9 @@ class SolutionRecipe(YAMLRoot):
 
         if self.mediaingredientmech_term is not None and not isinstance(self.mediaingredientmech_term, MediaIngredientMechTerm):
             self.mediaingredientmech_term = MediaIngredientMechTerm(**as_dict(self.mediaingredientmech_term))
+
+        if self.mediaingredientmech_chebi_term is not None and not isinstance(self.mediaingredientmech_chebi_term, MediaIngredientMechChebiTerm):
+            self.mediaingredientmech_chebi_term = MediaIngredientMechChebiTerm(**as_dict(self.mediaingredientmech_chebi_term))
 
         if self.culturemech_term is not None and not isinstance(self.culturemech_term, CultureMechTerm):
             self.culturemech_term = CultureMechTerm(**as_dict(self.culturemech_term))
@@ -680,6 +688,7 @@ class IngredientDescriptor(Descriptor):
     term: Optional[Union[dict, "ChemicalEntityTerm"]] = None
     chebi_term: Optional[Union[dict, "ChebiTerm"]] = None
     mediaingredientmech_term: Optional[Union[dict, "MediaIngredientMechTerm"]] = None
+    mediaingredientmech_chebi_term: Optional[Union[dict, "MediaIngredientMechChebiTerm"]] = None
     culturemech_term: Optional[Union[dict, "CultureMechTerm"]] = None
     parent_ingredient: Optional[Union[dict, "IngredientReference"]] = None
     variant_type: Optional[Union[str, "VariantTypeEnum"]] = None
@@ -711,6 +720,9 @@ class IngredientDescriptor(Descriptor):
 
         if self.mediaingredientmech_term is not None and not isinstance(self.mediaingredientmech_term, MediaIngredientMechTerm):
             self.mediaingredientmech_term = MediaIngredientMechTerm(**as_dict(self.mediaingredientmech_term))
+
+        if self.mediaingredientmech_chebi_term is not None and not isinstance(self.mediaingredientmech_chebi_term, MediaIngredientMechChebiTerm):
+            self.mediaingredientmech_chebi_term = MediaIngredientMechChebiTerm(**as_dict(self.mediaingredientmech_chebi_term))
 
         if self.culturemech_term is not None and not isinstance(self.culturemech_term, CultureMechTerm):
             self.culturemech_term = CultureMechTerm(**as_dict(self.culturemech_term))
@@ -783,6 +795,7 @@ class SolutionDescriptor(Descriptor):
     notes: Optional[str] = None
     term: Optional[Union[dict, Term]] = None
     mediaingredientmech_term: Optional[Union[dict, "MediaIngredientMechTerm"]] = None
+    mediaingredientmech_chebi_term: Optional[Union[dict, "MediaIngredientMechChebiTerm"]] = None
     culturemech_term: Optional[Union[dict, "CultureMechTerm"]] = None
     composition: Optional[Union[Union[dict, IngredientDescriptor], list[Union[dict, IngredientDescriptor]]]] = empty_list()
     concentration: Optional[Union[dict, "ConcentrationValue"]] = None
@@ -807,6 +820,9 @@ class SolutionDescriptor(Descriptor):
 
         if self.mediaingredientmech_term is not None and not isinstance(self.mediaingredientmech_term, MediaIngredientMechTerm):
             self.mediaingredientmech_term = MediaIngredientMechTerm(**as_dict(self.mediaingredientmech_term))
+
+        if self.mediaingredientmech_chebi_term is not None and not isinstance(self.mediaingredientmech_chebi_term, MediaIngredientMechChebiTerm):
+            self.mediaingredientmech_chebi_term = MediaIngredientMechChebiTerm(**as_dict(self.mediaingredientmech_chebi_term))
 
         if self.culturemech_term is not None and not isinstance(self.culturemech_term, CultureMechTerm):
             self.culturemech_term = CultureMechTerm(**as_dict(self.culturemech_term))
@@ -2096,7 +2112,9 @@ class MediaDatabaseTerm(Term):
 @dataclass(repr=False)
 class MediaIngredientMechTerm(Term):
     """
-    A MediaIngredientMech identifier for a media ingredient
+    A legacy MediaIngredientMech identifier (MediaIngredientMech:NNNNNN) for a media ingredient. MediaIngredientMech
+    has since migrated to a CHEBI-keyed schema and no longer mints these IDs; for new linkages use
+    `mediaingredientmech_chebi_term` instead. Retained for the existing corpus, which still carries these IDs.
     """
     _inherited_slots: ClassVar[list[str]] = []
 
@@ -2112,6 +2130,33 @@ class MediaIngredientMechTerm(Term):
             self.MissingRequiredField("id")
         if not isinstance(self.id, MediaIngredientMechTermId):
             self.id = MediaIngredientMechTermId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class MediaIngredientMechChebiTerm(Term):
+    """
+    CHEBI-keyed linkage to a MediaIngredientMech curated ingredient. MediaIngredientMech migrated from minting
+    `MediaIngredientMech:NNNNNN` ids to keying its curated ingredient entities by CHEBI; this term records the matched
+    MIM entity's CHEBI identifier (with the MIM `preferred_term` as label). Distinct from the ingredient's own
+    `term`/`chebi_term` grounding: it asserts "this ingredient corresponds to a curated MIM ingredient", even though
+    the id coincides with the CHEBI grounding.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["MediaIngredientMechChebiTerm"]
+    class_class_curie: ClassVar[str] = "culturemech:MediaIngredientMechChebiTerm"
+    class_name: ClassVar[str] = "MediaIngredientMechChebiTerm"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.MediaIngredientMechChebiTerm
+
+    id: Union[str, MediaIngredientMechChebiTermId] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, MediaIngredientMechChebiTermId):
+            self.id = MediaIngredientMechChebiTermId(self.id)
 
         super().__post_init__(**kwargs)
 
@@ -3162,6 +3207,9 @@ class TermMatchTypeEnum(EnumDefinitionImpl):
     fuzzy = PermissibleValue(
         text="fuzzy",
         description="Fuzzy / approximate string match.")
+    corpus_consensus = PermissibleValue(
+        text="corpus_consensus",
+        description="""Borrowed from the unanimous reliable grounding of the same ingredient label elsewhere in the corpus (G25 Phase 1) — used to replace a low-confidence kg_fallback chebi_term without an external lookup.""")
 
     _defn = EnumDefinition(
         name="TermMatchTypeEnum",
@@ -3389,6 +3437,9 @@ slots.solutionRecipe__term = Slot(uri=CULTUREMECH.term, name="solutionRecipe__te
 slots.solutionRecipe__mediaingredientmech_term = Slot(uri=CULTUREMECH.mediaingredientmech_term, name="solutionRecipe__mediaingredientmech_term", curie=CULTUREMECH.curie('mediaingredientmech_term'),
                    model_uri=CULTUREMECH.solutionRecipe__mediaingredientmech_term, domain=None, range=Optional[Union[dict, MediaIngredientMechTerm]])
 
+slots.solutionRecipe__mediaingredientmech_chebi_term = Slot(uri=CULTUREMECH.mediaingredientmech_chebi_term, name="solutionRecipe__mediaingredientmech_chebi_term", curie=CULTUREMECH.curie('mediaingredientmech_chebi_term'),
+                   model_uri=CULTUREMECH.solutionRecipe__mediaingredientmech_chebi_term, domain=None, range=Optional[Union[dict, MediaIngredientMechChebiTerm]])
+
 slots.solutionRecipe__culturemech_term = Slot(uri=CULTUREMECH.culturemech_term, name="solutionRecipe__culturemech_term", curie=CULTUREMECH.curie('culturemech_term'),
                    model_uri=CULTUREMECH.solutionRecipe__culturemech_term, domain=None, range=Optional[Union[dict, CultureMechTerm]])
 
@@ -3491,6 +3542,9 @@ slots.ingredientDescriptor__chebi_term = Slot(uri=CULTUREMECH.chebi_term, name="
 slots.ingredientDescriptor__mediaingredientmech_term = Slot(uri=CULTUREMECH.mediaingredientmech_term, name="ingredientDescriptor__mediaingredientmech_term", curie=CULTUREMECH.curie('mediaingredientmech_term'),
                    model_uri=CULTUREMECH.ingredientDescriptor__mediaingredientmech_term, domain=None, range=Optional[Union[dict, MediaIngredientMechTerm]])
 
+slots.ingredientDescriptor__mediaingredientmech_chebi_term = Slot(uri=CULTUREMECH.mediaingredientmech_chebi_term, name="ingredientDescriptor__mediaingredientmech_chebi_term", curie=CULTUREMECH.curie('mediaingredientmech_chebi_term'),
+                   model_uri=CULTUREMECH.ingredientDescriptor__mediaingredientmech_chebi_term, domain=None, range=Optional[Union[dict, MediaIngredientMechChebiTerm]])
+
 slots.ingredientDescriptor__culturemech_term = Slot(uri=CULTUREMECH.culturemech_term, name="ingredientDescriptor__culturemech_term", curie=CULTUREMECH.curie('culturemech_term'),
                    model_uri=CULTUREMECH.ingredientDescriptor__culturemech_term, domain=None, range=Optional[Union[dict, CultureMechTerm]])
 
@@ -3553,6 +3607,9 @@ slots.solutionDescriptor__term = Slot(uri=CULTUREMECH.term, name="solutionDescri
 
 slots.solutionDescriptor__mediaingredientmech_term = Slot(uri=CULTUREMECH.mediaingredientmech_term, name="solutionDescriptor__mediaingredientmech_term", curie=CULTUREMECH.curie('mediaingredientmech_term'),
                    model_uri=CULTUREMECH.solutionDescriptor__mediaingredientmech_term, domain=None, range=Optional[Union[dict, MediaIngredientMechTerm]])
+
+slots.solutionDescriptor__mediaingredientmech_chebi_term = Slot(uri=CULTUREMECH.mediaingredientmech_chebi_term, name="solutionDescriptor__mediaingredientmech_chebi_term", curie=CULTUREMECH.curie('mediaingredientmech_chebi_term'),
+                   model_uri=CULTUREMECH.solutionDescriptor__mediaingredientmech_chebi_term, domain=None, range=Optional[Union[dict, MediaIngredientMechChebiTerm]])
 
 slots.solutionDescriptor__culturemech_term = Slot(uri=CULTUREMECH.culturemech_term, name="solutionDescriptor__culturemech_term", curie=CULTUREMECH.curie('culturemech_term'),
                    model_uri=CULTUREMECH.solutionDescriptor__culturemech_term, domain=None, range=Optional[Union[dict, CultureMechTerm]])
@@ -4075,6 +4132,10 @@ slots.OrganismTerm_id = Slot(uri=CULTUREMECH.id, name="OrganismTerm_id", curie=C
 slots.MediaIngredientMechTerm_id = Slot(uri=CULTUREMECH.id, name="MediaIngredientMechTerm_id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.MediaIngredientMechTerm_id, domain=MediaIngredientMechTerm, range=Union[str, MediaIngredientMechTermId],
                    pattern=re.compile(r'^MediaIngredientMech:\d{6}$'))
+
+slots.MediaIngredientMechChebiTerm_id = Slot(uri=CULTUREMECH.id, name="MediaIngredientMechChebiTerm_id", curie=CULTUREMECH.curie('id'),
+                   model_uri=CULTUREMECH.MediaIngredientMechChebiTerm_id, domain=MediaIngredientMechChebiTerm, range=Union[str, MediaIngredientMechChebiTermId],
+                   pattern=re.compile(r'^CHEBI:\d+$'))
 
 slots.CultureMechTerm_id = Slot(uri=CULTUREMECH.id, name="CultureMechTerm_id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.CultureMechTerm_id, domain=CultureMechTerm, range=Union[str, CultureMechTermId],

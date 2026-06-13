@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -31,9 +31,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -42,9 +42,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M1423
   term:
@@ -77,17 +77,22 @@ curation_history:
 - timestamp: '2026-03-17T19:46:11.208430+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/5 Mycorrhiza Medium" to "1_5_mycorrhiza_medium"
-    for consistent matching
+  notes: Normalized name from "1/5 Mycorrhiza Medium" to "1_5_mycorrhiza_medium" for
+    consistent matching
+- timestamp: '2026-06-05T07:40:15.636479+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/mycorrhiza_medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007965
   name: mycorrhiza_medium
-  notes: Both records are TOGO/NBRC Mycorrhiza solid agar formulations; the
-    child is explicitly named 1/5 Mycorrhiza Medium and preserves the same agar
-    level.
+  notes: Both records are TOGO/NBRC Mycorrhiza solid agar formulations; the child
+    is explicitly named 1/5 Mycorrhiza Medium and preserves the same agar level.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- 1/5 Mycorrhiza Medium decreases yeast extract from 2 g/L to 0.4 g/L and
-  glucose from 20 g/L to 4 g/L while agar remains 15 g/L.
+- 1/5 Mycorrhiza Medium decreases yeast extract from 2 g/L to 0.4 g/L and glucose
+  from 20 g/L to 4 g/L while agar remains 15 g/L.

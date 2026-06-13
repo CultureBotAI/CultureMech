@@ -14,9 +14,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCL
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: H2O
   concentration:
     value: '1'
@@ -25,9 +25,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
-    label: H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Bacto-yeast
   concentration:
     value: '5'
@@ -73,3 +73,9 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "LB medium" to "lb_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:37.054875+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

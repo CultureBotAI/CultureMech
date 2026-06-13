@@ -20,8 +20,8 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000811
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50385
     label: Haemin
 - preferred_term: NAD
   concentration:
@@ -65,3 +65,9 @@ curation_history:
   notes: Normalized name from "Hib medium (Columbia agar supplemented with 5 g/l yeast
     extract, 15 μg/ml NAD and 15 μg/ml haemin)" to "hib_medium_columbia_agar_supplemented_with_5_g_l_yeast_extract_15_g_ml_nad_and_15_g_ml_haemin"
     for consistent matching
+- timestamp: '2026-06-05T07:41:08.495989+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Uracil
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:17568
     label: uracil
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000501
-    label: Uracil
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17568
+    label: uracil
 - preferred_term: Glucose
   concentration:
     value: '10'
@@ -38,9 +38,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000359
-    label: Glucose
+  mediaingredientmech_chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -49,9 +49,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
-    label: Agar
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '2'
@@ -75,9 +75,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000148
-    label: NaOH
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: ethanol
   concentration:
     value: '1'
@@ -87,8 +87,8 @@ ingredients:
   term:
     id: CHEBI:16236
     label: ethanol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000686
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16236
     label: ethanol
 - preferred_term: erythromycin
   concentration:
@@ -98,9 +98,9 @@ ingredients:
   term:
     id: CHEBI:48923
     label: Erythromycin
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000937
-    label: erythromycin
+  mediaingredientmech_chebi_term:
+    id: CHEBI:48923
+    label: Erythromycin
 media_term:
   preferred_term: TOGO Medium M256
   term:
@@ -150,6 +150,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:40:37.537397+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: erythromycin solution
   composition: []

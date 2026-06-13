@@ -19,8 +19,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Yeast extract
   concentration:
@@ -36,9 +36,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
-    label: K2HPO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.2'
@@ -48,9 +48,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000663
-    label: MgCl2 x 6 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.3'
@@ -60,9 +60,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000216
-    label: Na2S x 9 H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.02'
@@ -72,8 +72,8 @@ ingredients:
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000445
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
     label: FeSO4 x 7 H2O
 - preferred_term: (NH4)2SO4
   concentration:
@@ -84,9 +84,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: Na-formate
   concentration:
     value: '3'
@@ -95,8 +95,8 @@ ingredients:
   term:
     id: CHEBI:62965
     label: Na-formate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000985
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
     label: Na-formate
 - preferred_term: L-Cysteine-HCl x H2O
   concentration:
@@ -106,9 +106,9 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000923
-    label: L-Cysteine-HCl x H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
+    label: L-cysteine
 - preferred_term: Na2-fumarate
   concentration:
     value: '4'
@@ -117,8 +117,8 @@ ingredients:
   term:
     id: CHEBI:115156
     label: Na2-fumarate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000656
+  mediaingredientmech_chebi_term:
+    id: CHEBI:115156
     label: Na2-fumarate
 - preferred_term: N2
   notes: 'Properties: Gas'
@@ -168,3 +168,9 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:40:37.970979+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'

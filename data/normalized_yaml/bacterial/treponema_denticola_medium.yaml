@@ -50,8 +50,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain
-    tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
 - preferred_term: Beef heart
   term:
     id: UBERON:0000948
@@ -63,8 +63,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox
-    heart tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
 - preferred_term: Proteose peptone
   term:
     id: FOODON:03302071
@@ -76,8 +76,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Enzymatic digest of animal protein providing amino acids and peptides;
-    Constituent of Brain Heart Infusion commercial product
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
 - preferred_term: Dextrose
   term:
     id: CHEBI:17234
@@ -89,8 +89,7 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial
-    product
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
   synonyms:
   - synonym_text: glucose
     synonym_type: EXACT
@@ -109,8 +108,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion
-    commercial product
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -127,8 +126,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion
-    commercial product
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: Na2HPO4
     synonym_type: EXACT
@@ -157,8 +156,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000569
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86481
     label: Na-thioglycolate
 - preferred_term: L-Cysteine HCl
   term:
@@ -177,8 +176,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000282
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17196
     label: L-Asparagine
 - preferred_term: Glucose
   term:
@@ -187,8 +186,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Agar
   term:
@@ -197,8 +196,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Thiamine pyrophosphate
   term:
@@ -207,8 +206,8 @@ ingredients:
   concentration:
     value: '0.133333'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000431
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18290
     label: Thiamine pyrophosphate
 - preferred_term: NaHCO3
   term:
@@ -217,8 +216,8 @@ ingredients:
   concentration:
     value: '44.4444'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 - preferred_term: Rabbit serum
   concentration:
@@ -231,8 +230,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000213
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32035
     label: KOH
 - preferred_term: Isobutyric acid
   term:
@@ -241,8 +240,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000286
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16135
     label: Isobutyric acid
 - preferred_term: Tryptone
   term:
@@ -252,14 +251,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and
-    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
-    commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -273,14 +270,13 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
-    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
-    formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -289,13 +285,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
-    Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -308,8 +303,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000305
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28484
     label: Isovaleric acid
 - preferred_term: Valeric acid
   term:
@@ -318,22 +313,22 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000303
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17418
     label: Valeric acid
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Add 0.45 ml Sol. B to 10 ml Sol. A. Inoculate and pressurize the
-    tubes with H2 to 0.5 bar.
+  description: Add 0.45 ml Sol. B to 10 ml Sol. A. Inoculate and pressurize the tubes
+    with H2 to 0.5 bar.
 - step_number: 2
   action: AUTOCLAVE
-  description: Boil for 5 min, cool to 50°C while gassing with 80% N2 + 20% CO2.
-    Distribute to anaerobic tubes under the same atmosphere and autoclave.
+  description: Boil for 5 min, cool to 50°C while gassing with 80% N2 + 20% CO2. Distribute
+    to anaerobic tubes under the same atmosphere and autoclave.
 - step_number: 3
   action: MIX
-  description: Sterilize by filtration, add 20 ml rabbit serum, gas with 80% N2
-    + 20% CO2.
+  description: Sterilize by filtration, add 20 ml rabbit serum, gas with 80% N2 +
+    20% CO2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -356,13 +351,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:22.706313+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "TREPONEMA DENTICOLA MEDIUM" to
-    "treponema_denticola_medium" for consistent matching
+  notes: Normalized name from "TREPONEMA DENTICOLA MEDIUM" to "treponema_denticola_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:54.042634+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/KOMODO_909_TREPONEMA_DENTICOLA_medium.yaml
+- path: data/normalized_yaml/bacterial/KOMODO_909_TREPONEMA_DENTICOLA_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006781
   name: treponema_denticola_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

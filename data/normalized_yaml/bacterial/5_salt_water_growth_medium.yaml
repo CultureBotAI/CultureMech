@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '240'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000199
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
     label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -47,8 +47,8 @@ ingredients:
   concentration:
     value: '35'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
@@ -57,8 +57,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
     label: KCl
 - preferred_term: CaCl2
   term:
@@ -67,8 +67,8 @@ ingredients:
   concentration:
     value: '0.5549'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001104
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
     label: CaCl2
 preparation_steps:
 - step_number: 1
@@ -76,8 +76,8 @@ preparation_steps:
   description: Adjust pH to 7.5 with 1 M Tris base.
 - step_number: 2
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L.
-    Adjust pH to 7.5 with 1 M Tris base.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust
+    pH to 7.5 with 1 M Tris base.
 applications:
 - Microbial cultivation
 curation_history:
@@ -96,15 +96,20 @@ curation_history:
 - timestamp: '2026-03-17T19:45:32.763535+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "5% SALT WATER GROWTH MEDIUM" to
-    "5_salt_water_growth_medium" for consistent matching
+  notes: Normalized name from "5% SALT WATER GROWTH MEDIUM" to "5_salt_water_growth_medium"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:15.870947+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true
 variant_children:
-- path:
-    data/normalized_yaml/bacterial/modified_growth_medium_with_23_total_salt_concentration.yaml
+- path: data/normalized_yaml/bacterial/modified_growth_medium_with_23_total_salt_concentration.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:003304
   name: modified_growth_medium_with_23_total_salt_concentration
-  notes: Modified growth medium with 23% total salt keeps the parsed salt
-    concentrations unchanged and increases peptone from 5 to 10 g/L and yeast
-    extract from 1 to 2 g/L.
+  notes: Modified growth medium with 23% total salt keeps the parsed salt concentrations
+    unchanged and increases peptone from 5 to 10 g/L and yeast extract from 1 to 2
+    g/L.

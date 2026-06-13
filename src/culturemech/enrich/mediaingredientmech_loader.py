@@ -91,17 +91,41 @@ class MediaIngredientMechLoader:
         logger.info("Building lookup indexes...")
 
         for ingredient in self.ingredients:
-            mim_id = ingredient.get('id')
+            # MIM migrated from minting `MediaIngredientMech:NNNNNN` ids to a
+            # CHEBI-keyed schema: the entity id now lives in `identifier`
+            # (typically a CHEBI CURIE). Accept the new field, fall back to
+            # the legacy `id` for backwards compatibility.
+            mim_id = ingredient.get('identifier') or ingredient.get('id')
             if not mim_id:
                 continue
 
-            # Index by CHEBI ID (try both field names for compatibility)
-            chebi_id = ingredient.get('ontology_id') or ingredient.get('chebi_id')
+            # Index by CHEBI ID. Current schema carries it under
+            # `ontology_mapping.ontology_id`; older snapshots used flat
+            # `ontology_id`/`chebi_id`; and the `identifier` is itself a
+            # CHEBI CURIE in the migrated data.
+            ontology_mapping = ingredient.get('ontology_mapping') or {}
+            chebi_id = (
+                ontology_mapping.get('ontology_id')
+                or ingredient.get('ontology_id')
+                or ingredient.get('chebi_id')
+            )
+            if not chebi_id and str(mim_id).startswith('CHEBI:'):
+                chebi_id = mim_id
             if chebi_id:
-                # Normalize CHEBI ID format
-                if not chebi_id.startswith('CHEBI:'):
+                chebi_id = str(chebi_id).strip()
+                # Normalize CHEBI ID format. Only a BARE NUMERIC value should be
+                # promoted to a CHEBI CURIE — otherwise a non-CHEBI grounding
+                # (FOODON/ENVO/NCIT, e.g. `FOODON:03304010`) would be mangled
+                # into a malformed key like `CHEBI:FOODON:03304010`.
+                if chebi_id.isdigit():
                     chebi_id = f"CHEBI:{chebi_id}"
-                self.by_chebi[chebi_id] = ingredient
+                # Normalize a lowercase/mixed-case prefix (e.g. `chebi:1234`)
+                # so a case variant isn't silently dropped from the index.
+                elif chebi_id[:6].lower() == 'chebi:':
+                    chebi_id = f"CHEBI:{chebi_id[6:]}"
+                # Only genuine CHEBI ids belong in the CHEBI-keyed index.
+                if chebi_id.startswith('CHEBI:'):
+                    self.by_chebi[chebi_id] = ingredient
 
             # Index by normalized name (try both field names)
             name = ingredient.get('preferred_term') or ingredient.get('name', '')

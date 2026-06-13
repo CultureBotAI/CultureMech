@@ -13,8 +13,8 @@ ingredients:
     value: '8.2e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Riboflavin
   term:
@@ -24,8 +24,8 @@ ingredients:
     value: '5.3e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000345
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
     label: Riboflavin
 - preferred_term: Pyridoxine
   term:
@@ -35,8 +35,8 @@ ingredients:
     value: '0.00012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydxn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000317
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16709
     label: Pyridoxine
 - preferred_term: Mannitol
   term:
@@ -46,8 +46,8 @@ ingredients:
     value: '27.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:mnl'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001010
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29864
     label: Mannitol
 - preferred_term: 4-Aminobenzoate
   term:
@@ -57,9 +57,9 @@ ingredients:
     value: '0.00015'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
@@ -88,9 +88,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -98,8 +98,8 @@ ingredients:
   concentration:
     value: '6.6e-05'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000770
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
     label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
@@ -115,8 +115,8 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
@@ -132,9 +132,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -142,8 +142,8 @@ ingredients:
   concentration:
     value: '40.0'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000285
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39074
     label: MOPS
 preparation_steps:
 - step_number: 1
@@ -174,6 +174,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Gotz minimal medium with mannitol" to "gotz_minimal_medium_with_mannitol"
     for consistent matching
+- timestamp: '2026-06-05T07:41:06.633153+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 10 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 223
   term:

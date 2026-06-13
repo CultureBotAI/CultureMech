@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: Sorbitol
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:30911
     label: glucitol
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000447
-    label: Sorbitol
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30911
+    label: glucitol
 - preferred_term: Tryptone (BD 211705)
   concentration:
     value: '10'
@@ -94,6 +94,12 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-05T07:41:45.936532+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 solutions:
 - preferred_term: 0.1% Phenol red solution
   composition: []

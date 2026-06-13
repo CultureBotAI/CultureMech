@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Agar
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -62,18 +62,24 @@ curation_history:
 - timestamp: '2026-03-17T19:45:27.802945+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/100 NUTRIENT AGAR NO. 2" to
-    "1_100_nutrient_agar_no_2" for consistent matching
+  notes: Normalized name from "1/100 NUTRIENT AGAR NO. 2" to "1_100_nutrient_agar_no_2"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:16.919661+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 kg_microbe_match: mediadive.medium:101
 parent_media:
   path: data/normalized_yaml/bacterial/JCM_J23_1_10_NUTRIENT_AGAR_NO._2.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:002600
   name: 1_10_nutrient_agar_no_2
-  notes: Both records are MediaDive/JCM Nutrient Agar No. 2 formulations; the
-    child is explicitly labeled 1/100 relative to the 1/10 parent.
+  notes: Both records are MediaDive/JCM Nutrient Agar No. 2 formulations; the child
+    is explicitly labeled 1/100 relative to the 1/10 parent.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- 1/100 Nutrient Agar No. 2 decreases peptone from 1 to 0.1 g/L, beef extract
-  from 1 to 0.1 g/L, and NaCl from 0.5 to 0.05 g/L; agar remains 15 g/L and pH
-  remains 7.1.
+- 1/100 Nutrient Agar No. 2 decreases peptone from 1 to 0.1 g/L, beef extract from
+  1 to 0.1 g/L, and NaCl from 0.5 to 0.05 g/L; agar remains 15 g/L and pH remains
+  7.1.

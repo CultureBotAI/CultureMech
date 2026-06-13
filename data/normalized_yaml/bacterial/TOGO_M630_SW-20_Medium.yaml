@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
@@ -24,8 +24,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
   term:
-    id: CHEBI:32599
-    label: ''
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -40,9 +40,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.66'
@@ -70,9 +70,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000858
-    label: KCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '0.12'
@@ -82,9 +82,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
-    label: NaHCO3
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: NaBr
   concentration:
     value: '0.46'
@@ -94,9 +94,9 @@ ingredients:
   term:
     id: CHEBI:63004
     label: sodium bromide
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000189
-    label: NaBr
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
+    label: sodium bromide
 - preferred_term: agar
   concentration:
     value: '20'
@@ -105,8 +105,8 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: agar
 media_term:
   preferred_term: TOGO Medium M630
@@ -140,20 +140,31 @@ curation_history:
 - timestamp: '2026-03-17T19:46:29.752975+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SW-20 Medium" to "sw_20_medium" for consistent
-    matching
+  notes: Normalized name from "SW-20 Medium" to "sw_20_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:43.112499+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 6 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:31.942129+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
 high_metal: true
 variant_children:
 - path: data/normalized_yaml/bacterial/TOGO_M832_SW-10_Medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:010246
   name: sw_10_medium
-  notes: SW-10 agar medium halves the SW-20 salt and yeast extract
-    concentrations; agar changes from 20 g/L to 18 g/L.
+  notes: SW-10 agar medium halves the SW-20 salt and yeast extract concentrations;
+    agar changes from 20 g/L to 18 g/L.
 - path: data/normalized_yaml/bacterial/TOGO_M1033_Kushneria_Aurantia_Medium.yaml
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007548
   name: kushneria_aurantia_medium
-  notes: Reviewed TOGO SW-20/Kushneria Aurantia pair; child keeps the same solid
-    agar base but halves MgSO4, yeast extract, NaCl, CaCl2, MgCl2, KCl, NaHCO3,
-    and NaBr concentrations while agar remains 20 g/L.
+  notes: Reviewed TOGO SW-20/Kushneria Aurantia pair; child keeps the same solid agar
+    base but halves MgSO4, yeast extract, NaCl, CaCl2, MgCl2, KCl, NaHCO3, and NaBr
+    concentrations while agar remains 20 g/L.

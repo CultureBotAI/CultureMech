@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:8
     label: MgSO4 x 7 H2O
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '2.75'
@@ -36,10 +36,9 @@ composition:
     id: mediadive.compound:79
     label: MgCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:34887
-    label: nickel dichloride
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:86345
+    label: magnesium chloride hexahydrate
+    match_type: corpus_consensus
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -60,10 +59,10 @@ composition:
     id: mediadive.compound:353
     label: NaBr
   chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:63004
+    label: NaBr
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: H3BO3
   concentration:
     value: '0.015'
@@ -84,10 +83,10 @@ composition:
     id: mediadive.compound:176
     label: SrCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:8346
-    label: potassium iodide
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.01'
@@ -108,10 +107,10 @@ composition:
     id: mediadive.compound:348
     label: Citric acid
   chebi_term:
-    id: CHEBI:53258
+    id: CHEBI:30769
     label: citric acid
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: KI
   concentration:
     value: 5e-05
@@ -120,10 +119,9 @@ composition:
     id: mediadive.compound:354
     label: KI
   chebi_term:
-    id: CHEBI:138791
-    label: Asp-Lys-Ile
-    confidence: 0.9
-    match_type: synonym_match_ambiguous
+    id: CHEBI:8346
+    label: potassium iodide
+    match_type: manual_curated
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.75'
@@ -132,10 +130,10 @@ composition:
     id: mediadive.compound:7
     label: CaCl2 x 2 H2O
   chebi_term:
-    id: CHEBI:176843
-    label: vitamin B12
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -144,10 +142,10 @@ composition:
     id: mediadive.compound:11
     label: KH2PO4
   chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
+    id: CHEBI:63036
+    label: KH2PO4
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.002'
@@ -156,10 +154,10 @@ composition:
     id: mediadive.compound:40
     label: NiCl2 x 6 H2O
   chebi_term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -168,10 +166,10 @@ composition:
     id: mediadive.compound:1852
     label: Sodium resazurin
   chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:8806
+    label: Resazurin
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Sulfur
   concentration:
     value: '30'
@@ -180,10 +178,10 @@ composition:
     id: mediadive.compound:80
     label: Sulfur
   chebi_term:
-    id: CHEBI:17909
-    label: polysulfur
+    id: CHEBI:26833
+    label: Sulfur
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: corpus_consensus
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -191,11 +189,6 @@ composition:
   term:
     id: mediadive.compound:1
     label: Peptone
-  chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -203,11 +196,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Distilled water
   concentration:
     value: '960'
@@ -216,10 +204,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: Dissolve ingredients except for sulfur, peptone, yeast extract,
   and sulfide, adjust the pH to 6.5 and sparge medium with 100% N2 gas for 30 - 45
   min to make it anoxic. Distribute medium under the same gas atmosphere into anoxic
@@ -250,6 +238,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:42.433993+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 8 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:50:09.695489+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '2 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:30.116031+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '4 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

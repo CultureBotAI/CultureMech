@@ -1,8 +1,7 @@
 id: CultureMech:003613
-name:
-  for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553
-original_name: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522,
-  DSM 22681, DSM 23576 and DSM 24553
+name: for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553
+original_name: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522, DSM
+  22681, DSM 23576 and DSM 24553
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -13,8 +12,8 @@ media_term:
   preferred_term: KOMODO Medium 104b.1
   term:
     id: komodo.medium:104b.1
-    label: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522, DSM
-      22681, DSM 23576 and DSM 24553
+    label: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522, DSM 22681,
+      DSM 23576 and DSM 24553
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:
@@ -36,8 +35,8 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 8.0, 2.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: NaCl
 - preferred_term: Sodium resazurin
   concentration:
@@ -53,8 +52,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000153
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
     label: L-Cysteine HCl x H2O
 - preferred_term: D-Glucose
   term:
@@ -63,8 +62,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Na2S2O3 x 5 H2O
   term:
@@ -73,8 +72,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000492
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32150
     label: Na2S2O3 x 5 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -83,8 +82,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000484
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
     label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -93,8 +92,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4
   term:
@@ -103,8 +102,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000231
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
     label: K2HPO4
 - preferred_term: KH2PO4
   term:
@@ -113,8 +112,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: KH2PO4
 - preferred_term: NaHCO3
   term:
@@ -123,8 +122,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000830
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
     label: NaHCO3
 applications:
 - Microbial cultivation
@@ -152,10 +151,15 @@ curation_history:
 - timestamp: '2026-03-17T19:45:35.235927+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM
-    17592, DSM 19522, DSM 22681, DSM 23576 and DSM 24553" to
-    "for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553"
+  notes: Normalized name from "For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592,
+    DSM 19522, DSM 22681, DSM 23576 and DSM 24553" to "for_dsm_753_dsm_6589_dsm_7320_dsm_15930_dsm_17592_dsm_19522_dsm_22681_dsm_23576_and_dsm_24553"
     for consistent matching
+- timestamp: '2026-06-05T07:41:04.853844+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 9 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_104b_PYX-MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
@@ -163,5 +167,5 @@ parent_media:
   name: pyx_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

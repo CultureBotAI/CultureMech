@@ -14,8 +14,8 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
@@ -26,9 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.025'
@@ -143,13 +143,18 @@ curation_history:
 - timestamp: '2026-03-17T19:46:29.730466+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CYS Medium" to "cys_medium" for consistent
-    matching
+  notes: Normalized name from "CYS Medium" to "cys_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:43.088959+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 high_metal: true
 variant_children:
 - path: data/normalized_yaml/bacterial/TOGO_M628_CYS_Medium_For_YMO722.yaml
   relationship: SALINITY_VARIANT
   id: CultureMech:010028
   name: cys_medium_for_ymo722
-  notes: NaCl decreased from 20 g/L to 16 g/L while the TOGO CYS medium
-    formulation remains unchanged.
+  notes: NaCl decreased from 20 g/L to 16 g/L while the TOGO CYS medium formulation
+    remains unchanged.

@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '20.9945'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Bacto Middlebrook 7H10 agar
 - preferred_term: Glycerol
   term:
@@ -37,8 +37,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 applications:
 - Microbial cultivation
@@ -62,23 +62,29 @@ curation_history:
 - timestamp: '2026-03-17T19:45:58.604691+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MIDDLEBROOK MEDIUM WITH MYCOBACTIN" to
-    "middlebrook_medium_with_mycobactin" for consistent matching
+  notes: Normalized name from "MIDDLEBROOK MEDIUM WITH MYCOBACTIN" to "middlebrook_medium_with_mycobactin"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:26.308501+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/medium_780_modified_for_dsm_44133.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006478
   name: medium_780_modified_for_dsm_44133
-  notes: Same ingredient and concentration signature; review as possible
-    duplicate source record.
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
 parent_media:
   path: data/normalized_yaml/bacterial/middlebrook_medium_with_mycobactin.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:001916
   name: middlebrook_medium_with_mycobactin
-  notes: KOMODO record states DSMZ Medium 780 provenance and exactly matches the
-    single same-category DSMZ parent signature.
+  notes: KOMODO record states DSMZ Medium 780 provenance and exactly matches the single
+    same-category DSMZ parent signature.
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; KOMODO record copied from the
-  matching DSMZ medium source.
+- Same ingredient and concentration signature; KOMODO record copied from the matching
+  DSMZ medium source.

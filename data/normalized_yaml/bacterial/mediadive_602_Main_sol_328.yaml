@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:85
     label: Beef extract
-  chebi_term:
-    id: CHEBI:2509
-    label: agar
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Trypticase
   concentration:
     value: '5'
@@ -24,10 +19,10 @@ composition:
     id: mediadive.compound:74
     label: Trypticase
   chebi_term:
-    id: CHEBI:29377
-    label: sodium carbonate
+    id: CHEBI:78018
+    label: dodecylphosphocholine
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -35,11 +30,6 @@ composition:
   term:
     id: mediadive.compound:16
     label: Yeast extract
-  chebi_term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.5'
@@ -63,7 +53,7 @@ composition:
     id: CHEBI:17234
     label: D-glucose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: Resazurin
   concentration:
     value: '0.001'
@@ -108,10 +98,10 @@ composition:
     id: mediadive.compound:770
     label: L-Cysteine HCl x H2O
   chebi_term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Distilled water
   concentration:
     value: '960'
@@ -120,10 +110,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 preparation_notes: 'Adjust pH to 6.9.
 
   Dissolve ingredients except cysteine-HCl in water, boil for 5 min, cool to room
@@ -153,6 +143,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:40.726823+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 3 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:49:53.291946+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:28.394990+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

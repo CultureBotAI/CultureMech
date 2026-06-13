@@ -12,9 +12,9 @@ ingredients:
   concentration:
     value: '17.11'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -22,8 +22,8 @@ ingredients:
   concentration:
     value: '40.37'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Nickel chloride
   concentration:
@@ -39,9 +39,9 @@ ingredients:
   concentration:
     value: '0.02487'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '11.02'
@@ -70,8 +70,8 @@ ingredients:
   concentration:
     value: '4.057'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Ammonium sulfate
   term:
@@ -80,9 +80,9 @@ ingredients:
   concentration:
     value: '37.84'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000482
-    label: Ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.005006'
@@ -93,15 +93,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve all ingredients in distilled water to specified
-    concentrations
+  description: Dissolve all ingredients in distilled water to specified concentrations
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH if specified in original formulation
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive
-    components
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
 - timestamp: '2026-01-27T07:21:45.745511Z'
   curator: mediadb-import
@@ -119,8 +117,14 @@ curation_history:
 - timestamp: '2026-03-17T19:46:05.343971+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CDM for Continuous Cultivation" to
-    "cdm_for_continuous_cultivation" for consistent matching
+  notes: Normalized name from "CDM for Continuous Cultivation" to "cdm_for_continuous_cultivation"
+    for consistent matching
+- timestamp: '2026-06-05T07:40:52.754535+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 343
   term:
@@ -137,12 +141,11 @@ parent_media:
   relationship: CONCENTRATION_VARIANT
   id: CultureMech:007211
   name: cdm_for_batch_cultivation
-  notes: Reviewed defined CDM cultivation pair; continuous-cultivation child
-    shares the parent formulation with glucose and ammonium sulfate
-    concentration changes as the curated variant axis.
+  notes: Reviewed defined CDM cultivation pair; continuous-cultivation child shares
+    the parent formulation with glucose and ammonium sulfate concentration changes
+    as the curated variant axis.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- Reviewed CDM batch/continuous cultivation records; child keeps the same
-  defined base formulation but lowers glucose from 126.2 to 40.37 mM and
-  ammonium sulfate from 55.24 to 37.84 mM while the remaining parsed
-  concentrations match.
+- Reviewed CDM batch/continuous cultivation records; child keeps the same defined
+  base formulation but lowers glucose from 126.2 to 40.37 mM and ammonium sulfate
+  from 55.24 to 37.84 mM while the remaining parsed concentrations match.

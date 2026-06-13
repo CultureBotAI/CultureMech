@@ -36,8 +36,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain
-    tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 200 g/L; Tissue infusion - source material is calf brain tissue;
+    Constituent of Brain Heart Infusion commercial product
 - preferred_term: Beef heart
   term:
     id: UBERON:0000948
@@ -49,8 +49,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox
-    heart tissue; Constituent of Brain Heart Infusion commercial product
+  notes: infusion from 250 g/L; Tissue infusion - source material is beef/ox heart
+    tissue; Constituent of Brain Heart Infusion commercial product
 - preferred_term: Proteose peptone
   term:
     id: FOODON:03302071
@@ -62,8 +62,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Enzymatic digest of animal protein providing amino acids and peptides;
-    Constituent of Brain Heart Infusion commercial product
+  notes: Enzymatic digest of animal protein providing amino acids and peptides; Constituent
+    of Brain Heart Infusion commercial product
 - preferred_term: Dextrose
   term:
     id: CHEBI:17234
@@ -75,8 +75,7 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial
-    product
+  notes: Carbon/energy source; Constituent of Brain Heart Infusion commercial product
   synonyms:
   - synonym_text: glucose
     synonym_type: EXACT
@@ -95,8 +94,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion
-    commercial product
+  notes: Maintains osmotic equilibrium; Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -113,8 +112,8 @@ ingredients:
     supplier_name: Difco/BD Brain Heart Infusion
     catalog_number: '237500'
     product_url: https://microbenotes.com/brain-heart-infusion-bhi-agar/
-  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion
-    commercial product
+  notes: pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial
+    product
   synonyms:
   - synonym_text: Na2HPO4
     synonym_type: EXACT
@@ -133,8 +132,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Yeast extract
   concentration:
@@ -158,12 +157,17 @@ curation_history:
 - timestamp: '2026-03-17T19:45:15.077387+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "BHI/2 MEDIUM" to "bhi_2_medium" for consistent
-    matching
+  notes: Normalized name from "BHI/2 MEDIUM" to "bhi_2_medium" for consistent matching
+- timestamp: '2026-06-05T07:40:50.868525+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 1 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_217_BHI_2_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:004427
   name: bhi_2_medium
-  notes: KOMODO record is an exact source duplicate of DSMZ Medium 217; local
-    ingredient and concentration signatures match.
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 217; local ingredient
+    and concentration signatures match.

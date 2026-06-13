@@ -28,8 +28,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 - preferred_term: Bromothymol blue
   term:
@@ -38,8 +38,8 @@ ingredients:
   concentration:
     value: '25'
     unit: MG_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001021
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86155
     label: Bromothymol blue
 applications:
 - Microbial cultivation
@@ -63,8 +63,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:34.102102+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 1 MODIFIED FOR DSM 22905" to
-    "medium_1_modified_for_dsm_22905" for consistent matching
+  notes: Normalized name from "MEDIUM 1 MODIFIED FOR DSM 22905" to "medium_1_modified_for_dsm_22905"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:16.303612+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1_NUTRIENT_AGAR.yaml
   relationship: SOURCE_DUPLICATE
@@ -72,5 +78,5 @@ parent_media:
   name: nutrient_agar
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium
-  1 source record.
+- Same ingredient and concentration signature; reviewed as duplicate DSMZ Medium 1
+  source record.

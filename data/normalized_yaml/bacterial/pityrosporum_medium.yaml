@@ -26,8 +26,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000750
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53423
     label: Tween 40
 - preferred_term: Glycerol mono-oleate
   term:
@@ -36,8 +36,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000857
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75937
     label: Glycerol mono-oleate
 - preferred_term: Agar
   term:
@@ -46,8 +46,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -71,12 +71,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:17.688250+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "PITYROSPORUM MEDIUM" to "pityrosporum_medium" for
-    consistent matching
+  notes: Normalized name from "PITYROSPORUM MEDIUM" to "pityrosporum_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:42.045836+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_472_PITYROSPORUM_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:005586
   name: pityrosporum_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

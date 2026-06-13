@@ -13,8 +13,8 @@ ingredients:
     value: '5.32836'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000244
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15428
     label: Glycine
 - preferred_term: L-Aspartate
   concentration:
@@ -29,8 +29,8 @@ ingredients:
     value: '2.68078'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000274
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16643
     label: L-Methionine
 - preferred_term: Arginine
   term:
@@ -39,8 +39,8 @@ ingredients:
   concentration:
     value: '5.7405'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000341
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29016
     label: Arginine
 - preferred_term: Calcium chloride anhydrous
   concentration:
@@ -77,9 +77,9 @@ ingredients:
   concentration:
     value: '0.00061931'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000325
-    label: Zinc sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.000313803'
@@ -101,8 +101,8 @@ ingredients:
   concentration:
     value: '15.5003'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000776
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53258
     label: Sodium citrate
 - preferred_term: '''Iron(III'
   concentration:
@@ -148,6 +148,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Deshpande medium with Met, Asp, Gly, Arg; Fang et al"
     to "deshpande_medium_with_met_asp_gly_arg_fang_et_al" for consistent matching
+- timestamp: '2026-06-05T07:40:55.741935+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 207
   term:

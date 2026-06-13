@@ -46,8 +46,8 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: ' (dibasic)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000630
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
     label: Potassium Phosphate
 - preferred_term: Sodium Chloride
   term:
@@ -56,8 +56,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
     label: Sodium Chloride
 - preferred_term: Magnesium sulfate
   term:
@@ -66,8 +66,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Acetic acid
   term:
@@ -76,8 +76,8 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000342
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15366
     label: Acetic acid
 - preferred_term: Propionic acid
   term:
@@ -86,8 +86,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000366
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30768
     label: Propionic acid
 - preferred_term: n-Butyric acid
   term:
@@ -96,8 +96,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000471
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30772
     label: n-Butyric acid
 - preferred_term: n-Valeric acid
   term:
@@ -106,8 +106,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000303
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17418
     label: n-Valeric acid
 - preferred_term: Isovaleric acid
   term:
@@ -116,8 +116,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000305
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28484
     label: Isovaleric acid
 - preferred_term: Isobutyric acid
   term:
@@ -126,8 +126,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000286
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16135
     label: Isobutyric acid
 - preferred_term: Tryptone
   term:
@@ -137,14 +137,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Pancreatic digest of casein providing amino acids, peptides, and
-    nitrogen; Constituent of LB Medium (Luria-Bertani, Miller formulation)
-    commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Pancreatic digest of casein providing amino acids, peptides, and nitrogen;
+    Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: pancreatic digest of casein
     synonym_type: EXACT
@@ -158,14 +156,13 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids,
-    and trace elements; Constituent of LB Medium (Luria-Bertani, Miller
-    formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Autodigest of Saccharomyces cerevisiae providing vitamins, amino acids, and
+    trace elements; Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial
+    product
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -174,13 +171,12 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   supplier_catalog:
-    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium
-      (Luria-Bertani, Miller formulation)
+    supplier_name: Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani,
+      Miller formulation)
     catalog_number: Multiple (L3522 Sigma, 244520 BD)
-    product_url:
-      https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
-  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB
-    Medium (Luria-Bertani, Miller formulation) commercial product
+    product_url: https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/
+  notes: Maintains osmotic equilibrium (Miller formulation); Constituent of LB Medium
+    (Luria-Bertani, Miller formulation) commercial product
   synonyms:
   - synonym_text: NaCl
     synonym_type: EXACT
@@ -193,8 +189,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000567
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18067
     label: Vitamin K1
 - preferred_term: L-Cysteine
   term:
@@ -203,8 +199,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000923
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17561
     label: L-Cysteine
 - preferred_term: Fetal bovine serum
   concentration:
@@ -218,8 +214,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000138
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17234
     label: Glucose
 - preferred_term: Fructose
   term:
@@ -228,8 +224,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000288
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28757
     label: Fructose
 - preferred_term: Sucrose
   term:
@@ -238,8 +234,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000661
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17992
     label: Sucrose
 - preferred_term: Maltose
   term:
@@ -249,8 +245,8 @@ ingredients:
     value: '16.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 8.0, 8.0]'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000591
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17306
     label: Maltose
 - preferred_term: Ribose
   term:
@@ -259,8 +255,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000672
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33942
     label: Ribose
 - preferred_term: Xylose
   term:
@@ -269,8 +265,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000900
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18222
     label: Xylose
 - preferred_term: Pectin
   term:
@@ -279,8 +275,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000531
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17309
     label: Pectin
 - preferred_term: Starch
   term:
@@ -289,8 +285,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000169
+  mediaingredientmech_chebi_term:
+    id: CHEBI:28017
     label: Starch
 - preferred_term: Sodium pyruvate
   term:
@@ -299,8 +295,8 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001060
+  mediaingredientmech_chebi_term:
+    id: CHEBI:50144
     label: Sodium pyruvate
 - preferred_term: Thiamine pyrophosphate
   term:
@@ -309,8 +305,8 @@ ingredients:
   concentration:
     value: '0.00075'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000431
+  mediaingredientmech_chebi_term:
+    id: CHEBI:18290
     label: Thiamine pyrophosphate
 applications:
 - Microbial cultivation
@@ -338,8 +334,14 @@ curation_history:
 - timestamp: '2026-03-17T19:45:38.685834+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "MEDIUM 1245 MODIFIED FOR DSM 18691" to
-    "medium_1245_modified_for_dsm_18691" for consistent matching
+  notes: Normalized name from "MEDIUM 1245 MODIFIED FOR DSM 18691" to "medium_1245_modified_for_dsm_18691"
+    for consistent matching
+- timestamp: '2026-06-05T07:41:15.023858+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 21 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 parent_media:
   path: data/normalized_yaml/bacterial/KOMODO_1245_OTEB-MEDIUM.yaml
   relationship: SOURCE_DUPLICATE
@@ -347,5 +349,5 @@ parent_media:
   name: oteb_medium
 variant_relationship: SOURCE_DUPLICATE
 variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate
-  source record.
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

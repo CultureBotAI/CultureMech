@@ -26,8 +26,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000893
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
     label: MgSO4 x 7 H2O
 - preferred_term: Tap water
   term:
@@ -36,8 +36,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000710
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
     label: Tap water
 - preferred_term: Agar
   term:
@@ -47,8 +47,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
@@ -58,21 +58,19 @@ applications:
 - Microbial cultivation
 variants:
 - name: cold_growth_caulobacter_k31
-  description: Cold-growth condition for Caulobacter sp. K31 on Caulobacter
-    Medium.
+  description: Cold-growth condition for Caulobacter sp. K31 on Caulobacter Medium.
   modifications:
   - Incubate at 4 C.
   - Use Caulobacter sp. K31 as the target strain.
-  purpose: Capture strain-specific cold-growth evidence under the parent
-    Caulobacter Medium record.
+  purpose: Capture strain-specific cold-growth evidence under the parent Caulobacter
+    Medium record.
   evidence:
   - reference: PMID:25274120
     supports: SUPPORT
-    snippet: K31 is a novel Caulobacter isolate that has the ability to tolerate
-      copper and chlorophenols, and can grow at 4 ° C with a doubling time of 40
-      h.
-    explanation: Literature evidence supports a cold-growth variant for
-      Caulobacter sp. K31 on the parent Caulobacter Medium record.
+    snippet: K31 is a novel Caulobacter isolate that has the ability to tolerate copper
+      and chlorophenols, and can grow at 4 ° C with a doubling time of 40 h.
+    explanation: Literature evidence supports a cold-growth variant for Caulobacter
+      sp. K31 on the parent Caulobacter Medium record.
 curation_history:
 - timestamp: '2026-01-26T17:53:11.675863Z'
   curator: mediadive-import
@@ -89,8 +87,8 @@ curation_history:
 - timestamp: '2026-03-17T19:45:18.908067+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "CAULOBACTER MEDIUM" to "caulobacter_medium" for
-    consistent matching
+  notes: Normalized name from "CAULOBACTER MEDIUM" to "caulobacter_medium" for consistent
+    matching
 - timestamp: '2026-05-04T06:34:23.033204+00:00'
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
@@ -99,6 +97,12 @@ curation_history:
   curator: literature_review_apply
   action: ADDED_GROWTH_EVIDENCE
   notes: organisms_added=1 metrics_added=1 genomes_added=0
+- timestamp: '2026-06-05T07:40:52.727347+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 3 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 target_organisms:
 - preferred_term: Caulobacter sp. K31
   term:
@@ -109,9 +113,9 @@ target_organisms:
     evidence:
     - reference: PMID:25274120
       supports: SUPPORT
-      snippet: K31 is a novel Caulobacter isolate that has the ability to
-        tolerate copper and chlorophenols, and can grow at 4 ° C with a doubling
-        time of 40 h.
+      snippet: K31 is a novel Caulobacter isolate that has the ability to tolerate
+        copper and chlorophenols, and can grow at 4 ° C with a doubling time of 40
+        h.
       explanation: 'Auto-applied from literature query: backfill PMID:25274120'
     is_max_attainment: false
     growth_mode: BATCH
@@ -126,5 +130,5 @@ variant_children:
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006076
   name: caulobacter_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

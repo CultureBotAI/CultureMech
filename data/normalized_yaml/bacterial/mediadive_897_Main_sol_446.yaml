@@ -15,7 +15,7 @@ composition:
     id: CHEBI:165232
     label: 2,4-Dichlorophenoxyaceticacid
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 preparation_notes: To medium 442 add 0.05% 2,4-D as carbon source instead of toluene,
   sterilized by filtration.
 curation_history:
@@ -41,6 +41,11 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:56:30.797745+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '1 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

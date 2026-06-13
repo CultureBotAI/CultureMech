@@ -12,10 +12,10 @@ composition:
     id: mediadive.compound:581
     label: ACES
   chebi_term:
-    id: CHEBI:39061
+    id: CHEBI:65994
     label: ACES
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Na2 alpha-ketoglutarate
   concentration:
     value: '2'
@@ -24,10 +24,10 @@ composition:
     id: mediadive.compound:1412
     label: Na2 alpha-ketoglutarate
   chebi_term:
-    id: CHEBI:2509
-    label: agar
+    id: CHEBI:16810
+    label: Na2 alpha-ketoglutarate
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: KOH
   concentration:
     value: '3.75'
@@ -48,10 +48,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -62,9 +62,9 @@ composition:
     label: Agar
   chebi_term:
     id: CHEBI:2509
-    label: agar
+    label: Agar
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: Fetal bovine serum
   concentration:
     value: '150'
@@ -72,11 +72,6 @@ composition:
   term:
     id: mediadive.compound:954
     label: Fetal bovine serum
-  chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: TNM-FH Medium
   concentration:
     value: '300'
@@ -110,6 +105,16 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:26.020144+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 4 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:47:22.956238+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

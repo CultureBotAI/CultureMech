@@ -13,8 +13,8 @@ ingredients:
     value: '123.21'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000163
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17634
     label: D-Glucose
 - preferred_term: Biotin
   term:
@@ -24,8 +24,8 @@ ingredients:
     value: '4.5429e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000917
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
     label: Biotin
 - preferred_term: Thiamine
   term:
@@ -46,9 +46,9 @@ ingredients:
     value: '0.00809302'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001121
-    label: 4-Aminobenzoate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '3.18564'
@@ -63,9 +63,9 @@ ingredients:
   concentration:
     value: '0.189918'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:001035
-    label: Sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '4.07785'
@@ -80,8 +80,8 @@ ingredients:
   concentration:
     value: '0.900619'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000167
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
     label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
@@ -90,9 +90,9 @@ ingredients:
   concentration:
     value: '0.0656655'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000156
-    label: Manganese sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0399165'
@@ -107,9 +107,9 @@ ingredients:
   concentration:
     value: '31.6775'
     unit: MILLIMOLAR
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000701
-    label: Ammonium Acetate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62947
+    label: Ammonium acetate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -139,6 +139,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "P2, no butanol challenge" to "p2_no_butanol_challenge"
     for consistent matching
+- timestamp: '2026-06-05T07:41:40.746921+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 media_term:
   preferred_term: MediaDB Medium 89
   term:

@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:1112
     label: Man Rogosa Sharp broth
-  chebi_term:
-    id: CHEBI:18167
-    label: alpha-maltose
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Maltose
   concentration:
     value: '9.8912'
@@ -27,7 +22,7 @@ composition:
     id: CHEBI:17306
     label: maltose
     confidence: 0.9
-    match_type: synonym_match_ambiguous
+    match_type: manual_curated
 - preferred_term: Distilled water
   concentration:
     value: '890.2077151335312'
@@ -36,10 +31,10 @@ composition:
     id: mediadive.compound:4
     label: Distilled water
   chebi_term:
-    id: CHEBI:6636
-    label: magnesium dichloride
+    id: CHEBI:15377
+    label: Distilled water
     confidence: 0.7
-    match_type: kg_fallback
+    match_type: corpus_consensus
 - preferred_term: White wine
   concentration:
     value: '98.91196834817013'
@@ -47,11 +42,6 @@ composition:
   term:
     id: mediadive.compound:1113
     label: White wine
-  chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-    confidence: 0.7
-    match_type: kg_fallback
 preparation_notes: 'Add all products except white wine, hemin and cysteine solutions.
   Adjust pH to 6.5 and autoclave for 15 minutes. Cool to 50°C and add aseptically
   white wine, hemin and cysteine solutions.
@@ -81,6 +71,21 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-10T06:38:22.326276+00:00'
+  curator: kg-fallback-consensus-v1.0
+  action: Replaced low-confidence kg_fallback chebi_term with corpus consensus
+  notes: Re-grounded 1 chebi_term(s) to the unanimous reliable CHEBI for the ingredient
+    label seen elsewhere in the corpus (G25 Phase 1, zero external lookups).
+- timestamp: '2026-06-10T06:46:46.917818+00:00'
+  curator: kg-fallback-oak-ols-v1.0
+  action: Resolved/de-grounded low-confidence chebi_term via OAK+OLS (G25 Phase 2)
+  notes: '1 chebi_term(s): OAK sqlite:obo:chebi + OLS4 exact agreement, corpus-majority
+    disambiguation, or mixture de-ground.'
+- timestamp: '2026-06-10T06:56:10.438094+00:00'
+  curator: kg-fallback-llm-curation-v1.0
+  action: LLM-curated low-confidence chebi_term (G25 Phase 3)
+  notes: '2 chebi_term(s): curator-named compound resolved via OAK+OLS, or de-grounded
+    as a mixture, or confirmed correct.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

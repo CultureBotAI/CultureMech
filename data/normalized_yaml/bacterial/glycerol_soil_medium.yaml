@@ -27,8 +27,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000201
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
     label: Glycerol
 - preferred_term: Soil extract
   concentration:
@@ -41,18 +41,17 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  mediaingredientmech_term:
-    id: MediaIngredientMech:000543
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
     label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0. Soil extract is prepared by sieving air dried
-    garden soil through a coarse sieve and autoclaving 400 g with 960 ml of
-    distilled water at 121°C for one hour. After the mixture is cool and
-    settled, the supernatant is carefully decanted, filtered through paper,
-    autoclaved in 200 ml quantities, and stored at room temperature until
-    cleared by sedimentation.
+  description: Adjust pH to 7.0. Soil extract is prepared by sieving air dried garden
+    soil through a coarse sieve and autoclaving 400 g with 960 ml of distilled water
+    at 121°C for one hour. After the mixture is cool and settled, the supernatant
+    is carefully decanted, filtered through paper, autoclaved in 200 ml quantities,
+    and stored at room temperature until cleared by sedimentation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -71,12 +70,18 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.250861+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "GLYCEROL-SOIL MEDIUM" to "glycerol_soil_medium"
-    for consistent matching
+  notes: Normalized name from "GLYCEROL-SOIL MEDIUM" to "glycerol_soil_medium" for
+    consistent matching
+- timestamp: '2026-06-05T07:41:06.564995+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 2 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
 variant_children:
 - path: data/normalized_yaml/bacterial/KOMODO_80_GLYCEROL-SOIL_medium.yaml
   relationship: SOURCE_DUPLICATE
   id: CultureMech:006527
   name: glycerol_soil_medium
-  notes: Same ingredient and concentration signature; KOMODO record copied from
-    the matching DSMZ medium source.
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.
