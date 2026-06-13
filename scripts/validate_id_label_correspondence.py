@@ -26,6 +26,13 @@ repos already use, and classifies the pair:
     OK_ID_ONLY          id resolves; label match WAIVED for this slot (the slot
                         carries a curator-intended formula/common name, e.g.
                         CHEBI:15377 "Distilled water" — see ``label_waived_keys``)
+    OK_EXCEPTION        the exact (id, label) pair is on the target's
+                        ``exceptions`` allow-list — a curator-accepted residual
+                        (obsolete-no-successor, no clean term yet, or id absent
+                        from the current ontology snapshot) carrying a documented
+                        ``reason``. Overrides MISMATCH / ID_NOT_FOUND only; the
+                        match is exact, so a different wrong label on the same id
+                        still fails as MISMATCH.
     MISMATCH            label is neither canonical nor an accepted synonym  (ERROR)
     ID_NOT_FOUND        id has an adapter but is absent from the ontology   (ERROR)
     EMPTY_LABEL         id present, label blank                             (ERROR)
@@ -131,8 +138,11 @@ _CANONICAL_LABEL_CONTEXTS = (
 
 # Verdicts that are accepted (do NOT get recorded as findings and never fail
 # enforce). OK_ID_ONLY is a pass: the id resolved and the slot's label was
-# intentionally waived (curator-intended formula/common name).
-_OK_VERDICTS = {"OK_CANONICAL", "OK_SYNONYM", "OK_ID_ONLY"}
+# intentionally waived (curator-intended formula/common name). OK_EXCEPTION is a
+# pass: the exact (id, label) pair is on the target's ``exceptions`` allow-list —
+# a curator-accepted residual (obsolete-no-successor, no clean term yet, id
+# absent from the current ontology snapshot) with a documented ``reason``.
+_OK_VERDICTS = {"OK_CANONICAL", "OK_SYNONYM", "OK_ID_ONLY", "OK_EXCEPTION"}
 # Benign skips: not OK (still surfaced in the report) but never fail enforce.
 _SKIP_VERDICTS = {"SKIPPED_NO_ADAPTER", "SKIPPED_EMPTY_ADAPTER"}
 
@@ -526,6 +536,27 @@ def iter_yaml(
     )
 
 
+# -- exceptions allow-list ------------------------------------------------
+
+def load_exceptions(target: dict[str, Any]) -> set[tuple[str, str]]:
+    """Return the (curie, normalized_label) pairs the target accepts as-is.
+
+    The ``exceptions`` field on a target is a list of mappings, each with at
+    least ``id`` and ``label``. Optional ``reason`` is documentation only;
+    pairs are matched on (id, normalized(label)) so a missing or alternative
+    casing for ``reason`` doesn't affect matching. A target with no
+    ``exceptions`` key yields an empty set (no-op), so repos that don't use the
+    allow-list are unaffected.
+    """
+    out: set[tuple[str, str]] = set()
+    for entry in target.get("exceptions") or []:
+        curie = str(entry.get("id", "")).strip()
+        label = str(entry.get("label", ""))
+        if curie:
+            out.add((curie, normalize(label)))
+    return out
+
+
 # -- driver ---------------------------------------------------------------
 
 def load_config(config_path: Path) -> dict[str, Any]:
@@ -558,6 +589,7 @@ def run(config_path: Path, report_path: Path | None) -> int:
         pairs = target.get("pairs", [])
         exclude_keys = frozenset(target.get("exclude_keys", []) or [])
         label_waived_keys = frozenset(target.get("label_waived_keys", []) or [])
+        exceptions = load_exceptions(target)
         required = bool(target.get("required", False))
         globs = target.get("glob")
         glob_list = globs if isinstance(globs, list) else [globs]
@@ -627,6 +659,19 @@ def run(config_path: Path, report_path: Path | None) -> int:
                             scope=scope, lookup_curie=lookup_curie,
                             label_waived=label_waived,
                         )
+                # Curator-accepted residual: an EXACT (id, label) pair on the
+                # target's ``exceptions`` allow-list is accepted as OK_EXCEPTION
+                # (non-error, documented ``reason``). Applies ONLY to label/id
+                # residuals (MISMATCH / ID_NOT_FOUND) — never to structural
+                # errors (UNKNOWN_PREFIX, ADAPTER_ERROR, MISSING_COLUMN,
+                # MISSING_GLOB, EMPTY_LABEL), which signal real defects rather
+                # than a knowingly-accepted label. The match is exact, so a
+                # different wrong label on the same id still fails as MISMATCH.
+                if rec["verdict"] in ("MISMATCH", "ID_NOT_FOUND") and (
+                    curie,
+                    normalize(label),
+                ) in exceptions:
+                    rec["verdict"] = "OK_EXCEPTION"
                 counts[rec["verdict"]] = counts.get(rec["verdict"], 0) + 1
                 if rec["verdict"] not in _OK_VERDICTS | _SKIP_VERDICTS:
                     findings.append({
@@ -643,6 +688,7 @@ def run(config_path: Path, report_path: Path | None) -> int:
         "OK_CANONICAL",
         "OK_SYNONYM",
         "OK_ID_ONLY",
+        "OK_EXCEPTION",
         "MISMATCH",
         "ID_NOT_FOUND",
         "EMPTY_LABEL",
