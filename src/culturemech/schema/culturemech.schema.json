@@ -57,7 +57,7 @@
                     "type": "string"
                 },
                 "label": {
-                    "description": "Ontology term label",
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
                     "type": [
                         "string",
                         "null"
@@ -91,7 +91,7 @@
                     "type": "string"
                 },
                 "label": {
-                    "description": "Ontology term label",
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
                     "type": [
                         "string",
                         "null"
@@ -333,7 +333,7 @@
                     "type": "string"
                 },
                 "label": {
-                    "description": "Ontology term label",
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
                     "type": [
                         "string",
                         "null"
@@ -461,7 +461,7 @@
                     "type": "string"
                 },
                 "label": {
-                    "description": "Ontology term label",
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
                     "type": [
                         "string",
                         "null"
@@ -548,7 +548,7 @@
                     "type": "string"
                 },
                 "label": {
-                    "description": "Ontology term label",
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
                     "type": [
                         "string",
                         "null"
@@ -1070,7 +1070,7 @@
                     "type": "string"
                 },
                 "label": {
-                    "description": "Ontology term label",
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
                     "type": [
                         "string",
                         "null"
@@ -1104,7 +1104,7 @@
                     "type": "string"
                 },
                 "label": {
-                    "description": "Ontology term label",
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
                     "type": [
                         "string",
                         "null"
@@ -1138,7 +1138,7 @@
                     "type": "string"
                 },
                 "label": {
-                    "description": "Ontology term label",
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
                     "type": [
                         "string",
                         "null"
@@ -2008,6 +2008,13 @@
                     "description": "Organism name (e.g., \"Escherichia coli\")",
                     "type": "string"
                 },
+                "scoped_to_variant": {
+                    "description": "Name of the `variants[]` entry this organism's growth evidence is scoped to, when growth is verified only on a specific variant of the medium and NOT on the parent recipe. Must match a `variants[].name` on the same record. Downstream KG builds should attach the organism<->medium edge to the named variant rather than the parent, so variant-only evidence is not propagated as a parent-medium claim.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
                 "strain": {
                     "description": "Specific strain designation (e.g., \"K-12\", \"MG1655\")",
                     "type": [
@@ -2077,7 +2084,7 @@
                     "type": "string"
                 },
                 "label": {
-                    "description": "Ontology term label",
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
                     "type": [
                         "string",
                         "null"
@@ -3049,7 +3056,8 @@
                 "synonym_match_ambiguous",
                 "manual_curated",
                 "automated_expert_mapping",
-                "fuzzy"
+                "fuzzy",
+                "corpus_consensus"
             ],
             "title": "TermMatchTypeEnum",
             "type": "string"
