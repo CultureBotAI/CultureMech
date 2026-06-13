@@ -85,14 +85,14 @@ ingredients:
     label: Na2SO4
 - preferred_term: Na2-DL-malate
   term:
-    id: CHEBI:91261
-    label: Na2-DL-malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '2.79706'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:91261
-    label: Na2-DL-malate
+    id: CHEBI:91260
+    label: disodium malate
 - preferred_term: Yeast extract
   concentration:
     value: '0.525762'

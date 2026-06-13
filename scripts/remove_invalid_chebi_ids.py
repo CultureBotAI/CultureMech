@@ -58,22 +58,24 @@ def remove_invalid_chebi_from_recipe(recipe: dict) -> tuple[dict, list]:
     """
     removed_ids = []
 
-    # Process direct ingredients
-    for ingredient in recipe.get('ingredients', []):
-        term = ingredient.get('term', {})
-        if term and term.get('id'):
-            chebi_id = term['id']
-            is_valid, reason = is_valid_chebi_id(chebi_id)
+    # Process direct ingredients and standalone solution-record top-level
+    # `composition` (both are ingredient lists at the document root).
+    for list_key in ('ingredients', 'composition'):
+        for ingredient in recipe.get(list_key, []):
+            term = ingredient.get('term', {})
+            if term and term.get('id'):
+                chebi_id = term['id']
+                is_valid, reason = is_valid_chebi_id(chebi_id)
 
-            if not is_valid:
-                removed_ids.append({
-                    'chebi_id': chebi_id,
-                    'ingredient': ingredient.get('preferred_term', 'unknown'),
-                    'reason': reason,
-                    'location': 'ingredients'
-                })
-                # Remove the entire term field
-                del ingredient['term']
+                if not is_valid:
+                    removed_ids.append({
+                        'chebi_id': chebi_id,
+                        'ingredient': ingredient.get('preferred_term', 'unknown'),
+                        'reason': reason,
+                        'location': list_key
+                    })
+                    # Remove the entire term field
+                    del ingredient['term']
 
     # Process solutions
     for solution in recipe.get('solutions', []):

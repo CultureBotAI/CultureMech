@@ -49,7 +49,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.00031'
@@ -99,11 +99,11 @@ ingredients:
     value: '194.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:37583
-    label: Sodium dihydrogen phosphate
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
   term:
-    id: CHEBI:37583
-    label: ''
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00015'
@@ -157,6 +157,10 @@ curation_history:
   notes: 'Replaced 7 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
+- timestamp: '2026-06-09T01:42:25.058299+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 media_term:
   preferred_term: MediaDB Medium 198
   term:

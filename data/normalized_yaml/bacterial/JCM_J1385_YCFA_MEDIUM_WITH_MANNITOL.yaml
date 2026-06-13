@@ -293,11 +293,11 @@ ingredients:
     value: '75.0'
     unit: MG_PER_L
   term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine·HCl
   mediaingredientmech_chebi_term:
-    id: CHEBI:131531
-    label: Pyridoxamine hydrochloride
+    id: CHEBI:30961
+    label: Pyridoxine·HCl
 - preferred_term: Distilled water
   concentration:
     value: '500.0'
@@ -363,3 +363,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-06-13T07:29:40.977517+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (audit G21/G22/G24)
+  notes: 'Re-grounded 2 term reference(s) to the correct CHEBI (audit G21/G22/G24;
+    see reports/chebi_grounding_audit.md): CHEBI:131531→CHEBI:30961 ×2.'

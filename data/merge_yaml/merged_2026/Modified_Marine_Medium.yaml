@@ -88,8 +88,8 @@ ingredients:
     unit: G_PER_L
 - preferred_term: DL-Sodium malate
   term:
-    id: CHEBI:91261
-    label: DL-Sodium malate
+    id: CHEBI:91260
+    label: disodium malate
   concentration:
     value: '1.76471'
     unit: G_PER_L

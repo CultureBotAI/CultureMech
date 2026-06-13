@@ -1,0 +1,54 @@
+name: chebi-consistency
+
+on:
+  pull_request:
+    # NOTE: the probe (audit_chebi_consistency.py) and these path filters cover
+    # only data/normalized_yaml/**. The derived data/merge_yaml/** files are NOT
+    # validated here, on the assumption that merge_yaml is always regenerated
+    # from normalized_yaml — an inconsistency introduced *only* in merge_yaml
+    # would not be caught by this gate. If merge_yaml ever becomes hand-edited,
+    # add 'data/merge_yaml/**' here and extend the probe to scan it.
+    paths:
+      - 'data/normalized_yaml/**'
+      - 'scripts/audit_chebi_consistency.py'
+      - 'project.justfile'
+      - '.github/workflows/chebi-consistency.yaml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: chebi-consistency-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  consistency:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install just
+        uses: extractions/setup-just@v2
+
+      - name: Sync dependencies
+        run: uv sync --frozen
+
+      # Gates at the current baseline (--max-allowed in the just target): a PR
+      # that introduces NEW same-name-multiple-CHEBI groundings fails, while the
+      # existing backlog (G24 garbage, G25 kg_fallback layer) does not block.
+      - name: Check CHEBI grounding consistency
+        run: just check-chebi-grounding
+
+      - name: Upload consistency report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: chebi-consistency-report
+          path: reports/chebi_consistency.tsv

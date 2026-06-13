@@ -120,10 +120,8 @@ composition:
     id: mediadive.compound:301
     label: Na-propionate
   chebi_term:
-    id: CHEBI:32149
-    label: sodium sulfate
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:132106
+    label: sodium propionate
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.299103'
@@ -187,6 +185,10 @@ curation_history:
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=1
+- timestamp: '2026-06-09T01:48:31.894148+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 ingredients:
 - preferred_term: See source for composition
   concentration:

@@ -146,11 +146,11 @@ ingredients:
     value: '4.348'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:37583
-    label: Sodium dihydrogen phosphate
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
   term:
-    id: CHEBI:37583
-    label: ''
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.0004863'
@@ -232,7 +232,7 @@ ingredients:
     unit: MILLIMOLAR
   term:
     id: CHEBI:34887
-    label: ''
+    label: nickel dichloride
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -319,10 +319,12 @@ curation_history:
     id scheme.'
 - timestamp: '2026-06-08T23:19:29.390178+00:00'
   curator: chebi-regrounding-v1.0
-  action: Corrected CHEBI ingredient grounding (audit G21/G22)
-  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
-    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
-    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
+- timestamp: '2026-06-09T01:42:16.217974+00:00'
+  curator: chebi-regrounding-v1.0
+  action: Corrected CHEBI ingredient grounding (shared-id regrounding audit, G21/G22/G24)
+  notes: 'Part of the shared-id CHEBI regrounding audit (G21/G22/G24): one or more ingredient groundings on this record that had been collapsed onto a chemically non-specific or shared CHEBI id were re-grounded to the correct chemically-specific term, verified against OAK chebi.db rdfs:label. See reports/chebi_grounding_audit.md.'
 media_term:
   preferred_term: MediaDB Medium 450
   term:

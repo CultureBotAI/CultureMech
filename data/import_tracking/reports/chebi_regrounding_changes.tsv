@@ -2317,3 +2317,249 @@ data/normalized_yaml/specialized/uga_defined_nocarbon.yaml	Pyridoxine HCl	term	C
 data/normalized_yaml/specialized/uga_pipes_nocarbon.yaml	pyridoxine HCl	term	CHEBI:131531	CHEBI:30961
 data/normalized_yaml/specialized/xantho_mme_glucose_casamino.yaml	casamino acids	term	CHEBI:78020	REMOVED
 data/normalized_yaml/specialized/ycfa.yaml	pyridoxine HCl	term	CHEBI:131531	CHEBI:30961
+data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_416_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_417_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_417_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_418_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_418_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_419_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_419_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_420_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_420_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_421_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_421_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_422_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_422_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_423_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_423_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_424_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_424_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_425_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_425_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_426_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_426_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_427_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_427_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_428_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_428_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_429_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_429_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_430_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_431_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_431_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_432_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_432_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_433_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_433_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_434_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_434_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_435_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_435_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_436_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_436_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_437_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_437_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_438_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_438_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_439_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_439_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_440_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_440_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_441_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_441_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_442_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_442_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_443_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_443_Defined_freshwater_medium_CoSO4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_444_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_445_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_445_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_446_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_446_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_447_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_447_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_448_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_448_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_449_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_449_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_450_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_450_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_451_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_451_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_452_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_452_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_453_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_453_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_454_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_454_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_455_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_455_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_456_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_456_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_457_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_457_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_458_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_458_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_459_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_459_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_460_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_461_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_461_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_462_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_462_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_463_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_463_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_464_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_464_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_465_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_465_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_466_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_466_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_467_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_467_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_468_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_468_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_469_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_469_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_470_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_470_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_471_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_471_Defined_freshwater_medium_CoCl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_476_AMS1_Pyruvate_Glycine.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_476_AMS1_Pyruvate_Glycine.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_478_AMS1_Pyruvate_Serine.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/MEDIADB_478_AMS1_Pyruvate_Serine.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/ams1_pyruvate_glycine.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/ams1_pyruvate_glycine.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/ams1_pyruvate_serine.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/ams1_pyruvate_serine.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/defined_freshwater_medium_cocl2.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/defined_freshwater_medium_cocl2.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/defined_freshwater_medium_coso4.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/defined_freshwater_medium_coso4.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/fwafc.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/fwafc.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/glucose_minimal_media_zhao_zhu.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/gonzales_et_al.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/gonzales_et_al.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/m63.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/m63.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/m63_with_thiamine_hcl_with_fructose.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/m63_with_thiamine_hcl_with_fructose.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/m63_with_thiamine_hcl_with_gluconate.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/m63_with_thiamine_hcl_with_gluconate.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/m63_with_thiamine_hcl_with_glucose.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/m63_with_thiamine_hcl_with_glucose.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/modifed_m9_with_glucose.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/modified_m9_with_toluene.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_3_4_dhpa.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_3_4_dhpa.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_3_hpa.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_3_hpa.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_4_hpa.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_glucose.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_glucose.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_glycerol.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_glycerol.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_succinate.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/bacterial/pjc_with_succinate.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/specialized/2x_uga_defined_nocarbon.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/Glycerol_Fermentation_Medium_for_DIET_Coculture.yaml	Sodium dihydrogen phosphate	term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/specialized/Glycerol_Fermentation_Medium_for_DIET_Coculture.yaml	Sodium dihydrogen phosphate	mediaingredientmech_chebi_term	CHEBI:37583	CHEBI:37585
+data/normalized_yaml/specialized/hans_basal_media.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/hans_basal_media_bicarb.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/hans_basal_media_bicarb_nitrate.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/hans_basal_media_plus_0_2x_20aa_mix.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/nldm_defined.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/nldm_defined_no_iron.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/nldm_defined_nocarbon.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/nldm_defined_nocarbon_novitamin.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/nldm_defined_nocarbon_ph6.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/nldm_defined_nocarbon_ph7.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/nldm_defined_nocarbon_ph8.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/nldm_defined_novitamin.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/nldm_defined_ph6.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/nldm_defined_ph7.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/nldm_defined_ph8.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_4carbonmix_nitrate_anaerobic_ph_5_0.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_4carbonmix_nitrate_anaerobic_ph_5_3.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_4carbonmix_nitrate_anaerobic_ph_5_6.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_4carbonmix_nitrate_anaerobic_ph_5_9.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_4carbonmix_nitrate_anaerobic_ph_6_2.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_4carbonmix_nitrate_anaerobic_ph_6_5.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_4carbonmix_nitrate_anaerobic_ph_6_8.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_4carbonmix_nitrate_anaerobic_ph_7_1.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_5_0.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_5_3.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_5_6.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_5_9.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_6_2.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_6_5.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_6_8.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_lactate_nitrate_anaerobic_ph_7_1.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/specialized/uga_defined_nocarbon.yaml	Sodium phosphate dibasic	term	CHEBI:37583	CHEBI:34683
+data/normalized_yaml/bacterial/mediadive_1059_Main_sol_503a.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1266_Main_sol_590.yaml	Na2-DL-malate	chebi_term	CHEBI:32149	CHEBI:91260
+data/normalized_yaml/bacterial/mediadive_1366_Main_sol_641.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1369_Main_sol_645.yaml	Bacto Middlebrook 7H10 agar	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_1372_Main_sol_645a.yaml	Middlebrook 7H10 agar	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_1439_Main_sol_691.yaml	Na2-DL-malate	chebi_term	CHEBI:32149	CHEBI:91260
+data/normalized_yaml/bacterial/mediadive_1458_Main_sol_708.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_1473_Main_sol_722.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1508_Main_sol_737.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_1535_Main_sol_749.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1575_Main_sol_771.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_165_Solution_A.yaml	Na2-DL-malate	chebi_term	CHEBI:32149	CHEBI:91260
+data/normalized_yaml/bacterial/mediadive_1766_Solution_C.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1776_Solution_C.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1813_Solution_E.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_1886_Solution_D.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_1992_Main_sol_968.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2057_Main_sol_1010.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2108_Main_sol_1040.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2133_Main_sol_1056.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_2157_Main_sol_1068.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2223_Trace_metals_solution_Pfennig_Lippert_1966.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_2558_Main_sol_1278.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2596_Main_sol_1298.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2617_Main_sol_1310.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2781_Trace_Element_Solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_280_Solution_A.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_2909_Trace_Element_Solution_Pfennig_Lippert.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_3019_Trace_Element_Solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_3141_Trace_Element_Solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_3181_Main_sol_1536.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_3284_Main_sol_1589.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_3288_Main_sol_1590.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_3332_Trace_Element_Solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_3366_Main_sol_1619.yaml	ISP 7 Medium	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_3442_Main_sol_1660.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_3448_Main_sol_1663.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_348_Solution_C.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_354_Solution_C.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_3717_Solution_II.yaml	Whole egg	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_385_Solution_C.yaml	Na-propionate	chebi_term	CHEBI:32149	CHEBI:132106
+data/normalized_yaml/bacterial/mediadive_4113_Main_sol_J386.yaml	Middlebrook 7H10 agar	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_4280_Main_sol_J505.yaml	Mueller Hinton II agar	chebi_term	CHEBI:15978	REMOVED
+data/normalized_yaml/bacterial/mediadive_565_Main_sol_298a.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_5704_Acidic_trace_metals_Pfennig_Lippert_1965.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_5787_Trace_elements_solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_5787_Trace_elements_solution.yaml	NiCl2 x 2 H2O	chebi_term	CHEBI:32149	CHEBI:34887
+data/normalized_yaml/bacterial/mediadive_837_Solution_A.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_91_Solution_A.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_981_Main_sol_480c.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/mediadive_99_Solution_A.yaml	Na-DL-lactate	chebi_term	CHEBI:32149	CHEBI:75228
+data/normalized_yaml/bacterial/JCM_J1363_WIDDEL_FRESHWATER_MEDIUM_WITH_SPERMIDINE.yaml	Pyridoxine·HCl	term	CHEBI:131531	CHEBI:30961
+data/normalized_yaml/bacterial/JCM_J1363_WIDDEL_FRESHWATER_MEDIUM_WITH_SPERMIDINE.yaml	Pyridoxine·HCl	mediaingredientmech_chebi_term	CHEBI:131531	CHEBI:30961
+data/normalized_yaml/bacterial/JCM_J1385_YCFA_MEDIUM_WITH_MANNITOL.yaml	Pyridoxine·HCl	term	CHEBI:131531	CHEBI:30961
+data/normalized_yaml/bacterial/JCM_J1385_YCFA_MEDIUM_WITH_MANNITOL.yaml	Pyridoxine·HCl	mediaingredientmech_chebi_term	CHEBI:131531	CHEBI:30961
+data/normalized_yaml/fungal/JCM_J1449_MODIFIED_DIXON_S_AGAR.yaml	Glycerol	term	CHEBI:15978	CHEBI:17754
+data/normalized_yaml/fungal/JCM_J1449_MODIFIED_DIXON_S_AGAR.yaml	Glycerol	mediaingredientmech_chebi_term	CHEBI:15978	CHEBI:17754

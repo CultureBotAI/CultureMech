@@ -63,6 +63,33 @@ REMAP_RULES = [
     ("CHEBI:77732",  re.compile(r"ferric\s*citrate|iron.{0,4}citrate", re.I), None, "CHEBI:144434"),  # ferric citrate monohydrate (also wrong on cadmium-nitrate id)
     ("CHEBI:32149",  re.compile(r"na2seo4|sodium\s*selen", re.I), None,          "CHEBI:77775"),  # sodium-specific: don't remap other selenates to Na2SeO4
     ("CHEBI:78020",  re.compile(r""), None,                                      None),  # heptacosanoate is never a real media ingredient: de-ground ALL (casamino, meat extract, nutrient broth, salts, ...)
+    # G22 — split CHEBI:37583 (trisodium phosphate) by speciation. It holds only
+    # sodium monobasic + dibasic labels (no genuine trisodium), each to its own id.
+    ("CHEBI:37583",  re.compile(r"dihydrogen|monobasic", re.I), None,            "CHEBI:37585"),  # NaH2PO4 (sodium dihydrogen phosphate)
+    ("CHEBI:37583",  re.compile(r"dibasic|disodium", re.I), None,                "CHEBI:34683"),  # Na2HPO4 (disodium hydrogen phosphate)
+    # G24 — targeted shared-id garbage (verified individually). NOT a blanket
+    # exact-name remap: MIM itself mis-grounds glycerol/casamino, so trusting it
+    # wholesale would undo G21 and propagate MIM's own errors (6,519 such candidates).
+    # Only the audited, chemically-confident minority entries on shared ids:
+    ("CHEBI:32149",  re.compile(r"\blactate\b", re.I), None,                     "CHEBI:75228"),   # sodium lactate (was sodium sulfate)
+    ("CHEBI:32149",  re.compile(r"propionate", re.I), None,                      "CHEBI:132106"),  # sodium propionate
+    ("CHEBI:32149",  re.compile(r"nicl2|nickel", re.I), None,                    "CHEBI:34887"),   # nickel(II) chloride
+    # Racemic DL-malate -> stereo-neutral disodium malate (NOT the (S)-specific
+    # CHEBI:91261). Must precede the generic malate rule so the DL match fires
+    # first (after it remaps the id off CHEBI:32149, the generic rule no longer
+    # matches). Consistent with the stereo-neutral sodium-lactate rule above.
+    ("CHEBI:32149",  re.compile(r"(?=.*\bdl\b)(?=.*malate)", re.I), None,        "CHEBI:91260"),   # disodium malate (racemic DL)
+    ("CHEBI:32149",  re.compile(r"malate", re.I), None,                          "CHEBI:91261"),   # sodium malate
+    # Stereo-UNSPECIFIED sodium malate -> stereo-neutral disodium malate (NOT the
+    # (S)-specific CHEBI:91261). "Sodium malate" / "Na malate" / "Na-malate" name no
+    # stereochemistry, so the neutral parent is correct, consistent with the DL-malate
+    # rule above and the stereo-neutral sodium-lactate rule. The mustnot pattern keeps
+    # L-/D-/DL-malate off this rule (L = (S), correct on 91261; DL already routed to
+    # 91260). Fires from the current 91261 grounding, and is also reachable in a
+    # from-scratch run after the generic 32149->91261 rule rewrites the id within the
+    # same pass.
+    ("CHEBI:91261",  re.compile(r"malate", re.I), re.compile(r"(?:dl|[dl])-?\s*malate", re.I), "CHEBI:91260"),  # disodium malate (stereo-unspecified)
+    ("CHEBI:15978",  re.compile(r"agar|middlebrook|mueller|hinton|\bisp\b|whole\s*egg|broth", re.I), None, None),  # complex media de-grounded (not glycerol-3-phosphate)
 ]
 
 
@@ -96,6 +123,26 @@ def rewrite_entry(ing: dict, changelog: list) -> bool:
     return changed
 
 
+def _change_note(local: list) -> str:
+    """Build a change-specific curation note from the transitions applied here.
+
+    ``local`` holds (label, field, from_id, to_id) tuples; to_id is "REMOVED"
+    for a de-ground. Summarizes the distinct from->to transitions so the stamped
+    provenance describes what actually changed in this file (not boilerplate).
+    """
+    from collections import Counter
+    counts = Counter((frm, to) for _lbl, _fld, frm, to in local)
+    parts = []
+    for (frm, to), n in sorted(counts.items()):
+        if to == "REMOVED":
+            parts.append(f"{frm} de-grounded ×{n}")
+        else:
+            parts.append(f"{frm}→{to} ×{n}")
+    return (f"Re-grounded {len(local)} term reference(s) to the correct CHEBI "
+            f"(audit G21/G22/G24; see reports/chebi_grounding_audit.md): "
+            + "; ".join(parts) + ".")
+
+
 def migrate_file(path: Path, text: str, dry_run: bool, changelog: list) -> int:
     data = yaml.safe_load(text)
     if not isinstance(data, dict):
@@ -115,14 +162,11 @@ def migrate_file(path: Path, text: str, dry_run: bool, changelog: list) -> int:
         data.setdefault("curation_history", []).append({
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "curator": CURATOR,
-            "action": "Corrected CHEBI ingredient grounding (audit G21/G22)",
-            "notes": (f"Re-grounded {len(local)} term reference(s) to the correct CHEBI "
-                      "(see reports/chebi_grounding_audit.md). Label-conditional fixes for "
-                      "pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2, ferric citrate, "
-                      "selenate; CHEBI:78020 (heptacosanoate) de-grounded from all entries it "
-                      "mis-tagged (casamino acids + assorted salts/extracts: meat extract, "
-                      "nutrient broth, Czapek Dox agar, CuCl2·6H2O, K2SO4·7H2O, NaHSeO3, "
-                      "Vitamin B12 solution)."),
+            "action": "Corrected CHEBI ingredient grounding (audit G21/G22/G24)",
+            # Note is derived from the transitions actually applied in THIS file
+            # (not static boilerplate), so each stamped event truthfully records
+            # what that run changed here.
+            "notes": _change_note(local),
         })
         path.write_text(yaml.safe_dump(data, default_flow_style=False,
                                        allow_unicode=True, sort_keys=False))
