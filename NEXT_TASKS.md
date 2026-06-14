@@ -8,18 +8,20 @@ Keep the cross-Mech items in sync with the sibling repos' `NEXT_TASKS.md`
 
 Last reconciled: 2026-06-14.
 
-## 1. Phase-2 id↔label enforcement rollout (report-only → blocking)
+## 1. Phase-2 id↔label enforcement rollout (report-only → blocking) — DONE
 
-The id↔label correspondence validator (`scripts/validate_id_label_correspondence.py`,
-byte-identical across the Mechs) is live but **report-only**. `validate-terms-all`
-and `validate-products` exist in `project.justfile` but are deliberately NOT in
-the `qc` gate, and CI only runs the non-blocking drift report.
+**Done** (2026-06-14): the drift backlog was triaged to zero and the gate flipped
+to blocking. The `label-correspondence` CI job now builds the SSSOM product, then
+runs `just validate-products` (Engine B) as a **blocking** step; `qc` does the
+same locally. Recipe id↔label is clean (0 MISMATCH / ID_NOT_FOUND / EMPTY_LABEL;
+`jcm.grmd` ignored), and `generate_sssom_mappings.py` emits canonical object
+labels so the product is drift-free by construction.
 
-- Triage first: `just report-label-drift` → `reports/label_drift.tsv`, resolve
-  real MISMATCH/ID_NOT_FOUND rows (curate or add justified `exceptions`).
-- Then add `validate-terms-all` + `validate-products` to the `qc` recipe and
-  flip the CI step to blocking.
-- Don't flip the gate while drift rows remain — it will red-wall every PR.
+Note: Engine B (single-process) is the gate. `validate-terms-all` (per-file
+linkml-term-validator, Engine A) is **deliberately NOT in CI/qc** — it reloads
+the schema+OAK per file (~hours over the full corpus) and re-checks the same
+canonical-label surface Engine B already enforces in one pass; keep it as a
+targeted dev tool (`just validate-terms <file>`).
 
 ## 2. Page renderer skip logic ignores template/code changes
 
