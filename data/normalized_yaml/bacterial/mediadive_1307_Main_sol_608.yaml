@@ -85,11 +85,6 @@ composition:
   term:
     id: mediadive.compound:604
     label: Na-glycerol phosphate
-  chebi_term:
-    id: CHEBI:3311
-    label: calcium carbonate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: NaCl
   concentration:
     value: '30'
@@ -116,6 +111,10 @@ composition:
     match_type: corpus_consensus
 preparation_notes: Adjust pH to 7.0 ± 0.2 (at 25°C).
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 1 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:15.582815Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

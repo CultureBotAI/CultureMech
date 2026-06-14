@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:665
     label: NaNH4HPO4 x 4 H2O
-  chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: K2HPO4 x 3 H2O
   concentration:
     value: '7.5'
@@ -79,6 +74,10 @@ composition:
 preparation_notes: Adjust pH to 7.0. n-Octane is evaporated in a desiccator as sole
   source of carbon.
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 1 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:16.359356Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

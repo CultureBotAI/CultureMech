@@ -107,11 +107,6 @@ composition:
   term:
     id: mediadive.compound:1586
     label: La(NO3)3 x 6 H2O
-  chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Ce(NO3)3 x 6 H2O
   concentration:
     value: '0.06'
@@ -119,11 +114,6 @@ composition:
   term:
     id: mediadive.compound:1587
     label: Ce(NO3)3 x 6 H2O
-  chebi_term:
-    id: CHEBI:63940
-    label: sodium tungstate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -138,6 +128,10 @@ composition:
     match_type: corpus_consensus
 preparation_notes: "Contains the following components per liter\r\nof deionized water:"
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 2 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 2 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:38.863542Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

@@ -11,11 +11,6 @@ composition:
   term:
     id: mediadive.compound:228
     label: Na-aspartate
-  chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '0.2'
@@ -110,6 +105,10 @@ composition:
 preparation_notes: Adjust pH to 7.0. Phosphate and cysteine should be dissolved together
   in 1/10 vol. of water and sterilized separately.
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 1 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:20.651346Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

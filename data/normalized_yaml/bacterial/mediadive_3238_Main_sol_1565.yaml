@@ -25,11 +25,6 @@ composition:
   term:
     id: mediadive.compound:1423
     label: Na2-tartrate x 2 H2O
-  chebi_term:
-    id: CHEBI:32150
-    label: sodium thiosulfate pentahydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Na3-citrate
   concentration:
     value: '1'
@@ -145,6 +140,10 @@ preparation_notes: Dissolve ingredients except carbonate, bicarbonate, and thios
   under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium
   to 9.8 - 10.0.
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 1 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:25.885673Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

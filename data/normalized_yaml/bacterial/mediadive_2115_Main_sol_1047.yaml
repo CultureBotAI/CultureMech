@@ -68,11 +68,6 @@ composition:
   term:
     id: mediadive.compound:936
     label: Betaine Hydrochloride
-  chebi_term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Diammonium Citrate
   concentration:
     value: '2'
@@ -92,11 +87,6 @@ composition:
   term:
     id: mediadive.compound:938
     label: Potassium Aspartate
-  chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Magnesium sulfate
   concentration:
     value: '0.98'
@@ -152,11 +142,6 @@ composition:
   term:
     id: mediadive.compound:942
     label: Potassium Glutamate
-  chebi_term:
-    id: CHEBI:63076
-    label: diammonium citrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Agar
   concentration:
     value: '16'
@@ -182,6 +167,10 @@ composition:
     confidence: 0.7
     match_type: corpus_consensus
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 3 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 3 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:20.179188Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

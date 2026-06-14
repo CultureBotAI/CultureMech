@@ -23,11 +23,6 @@ composition:
   term:
     id: mediadive.compound:1930
     label: Nitrilotriacetic acid trisodium salt monohydrate
-  chebi_term:
-    id: CHEBI:31206
-    label: ammonium chloride
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: FeCl3 x 6 H2O
   concentration:
     value: '2.7'
@@ -49,6 +44,10 @@ preparation_notes: 'Firstly, dissolve NaHCO3 in 80 ml distilled water. Then, add
   100 mM Fe NTA solution can be replaced with Iron(III)citrate solution (see Medium
   No. 1014, autoclaved and stored under N2).'
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 1 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:33.799833Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
