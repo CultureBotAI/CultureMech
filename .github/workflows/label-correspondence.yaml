@@ -62,18 +62,21 @@ jobs:
       - name: Build SSSOM product
         run: just generate-sssom
 
-      # Triage artifact (non-blocking): full drift report across recipes + products.
-      - name: Generate id↔label drift report
+      # Phase-2 blocking gate: fail the build on any ERROR-class id↔label verdict.
+      # Single validator pass (the full corpus + OAK load is the expensive part).
+      - name: Enforce id↔label correspondence (Engine B)
+        run: just validate-products
+
+      # On FAILURE only, regenerate + upload the drift report so failures are
+      # triageable without paying the second validator pass on every green run.
+      - name: Generate id↔label drift report (on failure)
+        if: failure()
         run: just report-label-drift
 
-      - name: Upload drift report
-        if: always()
+      - name: Upload drift report (on failure)
+        if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: label-drift-report-${{ github.run_id }}
           path: reports/label_drift.tsv
           if-no-files-found: warn
-
-      # Phase-2 blocking gate: fail the build on any ERROR-class id↔label verdict.
-      - name: Enforce id↔label correspondence (Engine B)
-        run: just validate-products
