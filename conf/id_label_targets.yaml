@@ -45,6 +45,7 @@ ignored_prefixes:
   - mediadive.medium       # MediaDive medium nodes
   - MEDIADB                # MediaDive medium DB ids (MEDIADB:NNN)
   - komodo.medium          # KOMODO media identifiers
+  - jcm.grmd               # JCM GRMD media identifiers (media_term ids, no ontology adapter)
   - DSMZ                   # DSMZ culture-collection ids
   - ATCC                   # ATCC culture-collection ids
   - TOGO                   # TogoMedia ids
