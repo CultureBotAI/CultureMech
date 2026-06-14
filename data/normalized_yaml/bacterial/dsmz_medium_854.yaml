@@ -126,7 +126,7 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:14258
+    id: CHEBI:33403
     label: Sulfur powder
   mediaingredientmech_term:
     id: MediaIngredientMech:001072
@@ -431,6 +431,10 @@ notes: 'Source: https://togomedium.org/medium/M3131'
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-27T06:35:57.490639Z'
   curator: togo-import
   action: Imported from TOGO Medium

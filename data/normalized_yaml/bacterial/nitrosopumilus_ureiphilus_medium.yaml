@@ -103,9 +103,6 @@ ingredients:
     id: CHEBI:50144
     label: Na-pyruvate
 - preferred_term: Catalase
-  term:
-    id: CHEBI:3463
-    label: Catalase
   concentration:
     value: '0.0025'
     unit: G_PER_L
@@ -350,6 +347,10 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-26T17:53:15.053552Z'
   curator: mediadive-import
   action: Imported from MediaDive

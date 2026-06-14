@@ -237,7 +237,7 @@ ingredients:
   notes: From CCAP Medium MR_S88.pdf; Curated from CCAP Medium MR_S88.pdf specification
 - preferred_term: MnSO .4H O
   term:
-    id: CHEBI:75217
+    id: CHEBI:86358
     label: MnSO .4H O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
@@ -342,6 +342,10 @@ applications:
 references:
 - reference: doi.org/10.1017/S0025315400019238
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-26T17:53:19.813284Z'
   curator: mediadive-import
   action: Imported from MediaDive

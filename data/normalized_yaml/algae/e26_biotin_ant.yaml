@@ -15,6 +15,10 @@ applications:
 - Phytoplankton culture
 - Microalgae research
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - curator: ccap-import
   action: Imported from CCAP Culture Collection
   notes: 'Source ID: E26_Biotin_ANT, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_E26_Biotin_ANT.pdf'
@@ -152,7 +156,7 @@ ingredients:
     specification
 - preferred_term: MnSO .4H O
   term:
-    id: CHEBI:75217
+    id: CHEBI:86358
     label: MnSO .4H O
   curation_metadata:
     mapping_quality: LLM_ASSISTED

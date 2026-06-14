@@ -60,8 +60,8 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
-    id: CHEBI:14258
-    label: ''
+    id: CHEBI:33403
+    label: elemental sulfur
   mediaingredientmech_term:
     id: MediaIngredientMech:001072
     label: Sulfur (powder)
@@ -102,6 +102,10 @@ notes: 'Source: https://togomedium.org/medium/M259
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-27T06:35:54.717622Z'
   curator: togo-import
   action: Imported from TOGO Medium

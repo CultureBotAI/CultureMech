@@ -261,13 +261,13 @@ ingredients:
     label: PIPES
 - preferred_term: Sodium L-lactate
   term:
-    id: CHEBI:867561
+    id: CHEBI:232798
     label: Sodium L-lactate
   concentration:
     value: '30.0'
     unit: MILLIMOLAR
   mediaingredientmech_chebi_term:
-    id: CHEBI:867561
+    id: CHEBI:232798
     label: Sodium L-lactate
 - preferred_term: Threonine
   concentration:
@@ -284,6 +284,10 @@ preparation_steps:
   action: FILTER_STERILIZE
   description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 2 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-27T07:21:44.247454Z'
   curator: mediadb-import
   action: Imported from MediaDB

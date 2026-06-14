@@ -40,7 +40,7 @@ composition:
     id: mediadive.compound:461
     label: HEPES buffer
   chebi_term:
-    id: CHEBI:19708
+    id: CHEBI:46756
     label: HEPES buffer
     confidence: 0.7
     match_type: corpus_consensus
@@ -130,6 +130,10 @@ composition:
 preparation_notes: Stir slowly at 4 - 10°C for 3 hours, adjust pH to 7.6 with 5 M
   NaOH. Filter sterilize.
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-03-13T06:20:41.231620Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

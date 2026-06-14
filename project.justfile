@@ -888,13 +888,14 @@ validate-strict *args:
 # on the existing backlog (G24/G25). Re-baseline by bumping --max-allowed.
 # Baseline history: G25 Phase 1 promoting kg_fallback chebi_terms to corpus
 # consensus surfaced latent salt/hydrate/isomer name->multi-CHEBI ambiguities
-# (peaked at 111); the primary-term regrounding pass (483 wrong-id fixes) then
-# resolved two of them, tightening the reliable-layer backlog to 109.
+# (peaked at 111); the primary-term regrounding pass (483 wrong-id fixes) cut it
+# to 109; the ID_NOT_FOUND remediation (re-ground absent ids + de-ground mixtures)
+# cleared the last few, tightening the reliable-layer backlog to 101.
 [group('QC')]
 check-chebi-grounding *args:
     #!/usr/bin/env bash
     uv run python scripts/audit_chebi_consistency.py \
-        --out reports/chebi_consistency.tsv --max-allowed 109 {{args}}
+        --out reports/chebi_consistency.tsv --max-allowed 101 {{args}}
 
 # Scan-only collision check for CultureMech:NNNNNN IDs. Exits non-zero if any
 # cross-file duplicates are detected. Use as a pre-commit / CI safety net.

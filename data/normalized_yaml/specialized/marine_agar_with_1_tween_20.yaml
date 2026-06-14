@@ -23,7 +23,7 @@ ingredients:
     label: Marine agar 2216
 - preferred_term: Tween 20
   term:
-    id: CHEBI:9784
+    id: CHEBI:53424
     label: Tween 20
   concentration:
     value: '10'
@@ -34,6 +34,10 @@ ingredients:
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-26T17:53:17.541357Z'
   curator: mediadive-import
   action: Imported from MediaDive

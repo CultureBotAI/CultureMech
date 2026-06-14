@@ -23,13 +23,12 @@ composition:
   term:
     id: mediadive.compound:270
     label: Catalase
-  chebi_term:
-    id: CHEBI:3463
-    label: Catalase
-    confidence: 0.7
-    match_type: corpus_consensus
 preparation_notes: Separately sterilize catalase by filtration.
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-03-13T06:20:27.860526Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

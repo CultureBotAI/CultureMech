@@ -396,7 +396,7 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
   term:
-    id: CHEBI:503742
+    id: CHEBI:28484
     label: null
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 503-74-2; MW: 102.13'
 description: Mega medium
@@ -407,6 +407,10 @@ sources:
   database_id: Mega
   url: https://github.com/CultureBotAI/CultureBotHT
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-03-18T04:31:13.556421+00:00'
   curator: import_from_culturebotht.py
   action: IMPORTED

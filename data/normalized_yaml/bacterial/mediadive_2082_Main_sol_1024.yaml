@@ -47,7 +47,7 @@ composition:
     id: mediadive.compound:1312
     label: Sulfur powder
   chebi_term:
-    id: CHEBI:14258
+    id: CHEBI:33403
     label: Sulfur powder
     confidence: 0.7
     match_type: corpus_consensus
@@ -58,6 +58,10 @@ preparation_notes: 'Prepare the medium under an atmosphere of H2/CO2 (80:20) wit
 
   Increase the 80% H2 + 20% CO2 gas phase pressure to 300 kPa. The final pH is 7.0.'
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-03-13T06:20:19.989273Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

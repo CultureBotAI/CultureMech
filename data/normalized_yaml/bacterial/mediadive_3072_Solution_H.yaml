@@ -48,11 +48,6 @@ composition:
   term:
     id: mediadive.compound:1360
     label: Folinic acid
-  chebi_term:
-    id: CHEBI:42521
-    label: Folinic acid
-    confidence: 0.9
-    match_type: corpus_consensus
 - preferred_term: Nicotinamide
   concentration:
     value: '0.05'
@@ -107,6 +102,10 @@ preparation_notes: 'Prepare Solutions H, flush each with nitrogen to make them a
 
   Original volume: 100 mL'
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-03-13T06:20:25.072987Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

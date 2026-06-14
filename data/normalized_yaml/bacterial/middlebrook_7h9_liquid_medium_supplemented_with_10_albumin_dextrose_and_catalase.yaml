@@ -249,9 +249,6 @@ ingredients:
     value: '0.0015'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component'
-  term:
-    id: CHEBI:3463
-    label: Catalase
 media_term:
   preferred_term: TOGO Medium M2400
   term:
@@ -276,6 +273,10 @@ notes: 'Source: https://togomedium.org/medium/M2400
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-27T06:35:56.459711Z'
   curator: togo-import
   action: Imported from TOGO Medium

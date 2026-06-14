@@ -124,9 +124,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-  term:
-    id: CHEBI:8150
-    label: ''
 - preferred_term: Cysteine-HCl·H2O
   concentration:
     value: '0.5'
@@ -321,6 +318,10 @@ notes: 'Source: https://togomedium.org/medium/M2059
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-27T06:35:58.979062Z'
   curator: togo-import
   action: Imported from TOGO Medium
