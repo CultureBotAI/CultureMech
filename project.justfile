@@ -865,8 +865,13 @@ validate-all:
 [group('QC')]
 qc:
     #!/usr/bin/env bash
+    set -e
     echo "Running full QC pipeline..."
     just validate-all
+    echo ""
+    echo "Building SSSOM product + enforcing id↔label correspondence (Engine B)..."
+    just generate-sssom
+    just validate-products
     echo ""
     echo "✓ QC complete!"
 

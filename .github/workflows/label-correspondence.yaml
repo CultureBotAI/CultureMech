@@ -1,9 +1,15 @@
 name: label-correspondence
 
-# Phase 1 (report-only): generate the id↔label drift report and upload it as an
-# artifact. Does NOT fail the build — it surfaces existing label drift for
-# triage. Phase 2 will switch to the blocking gates (`just validate-terms-all`
-# + `just validate-products`).
+# Phase 2 (blocking): builds the SSSOM product, uploads the id↔label drift report
+# for triage (non-blocking), then ENFORCES id↔label correspondence with
+# `just validate-products` (Engine B) — the build fails on any ERROR-class verdict
+# (MISMATCH / ID_NOT_FOUND / EMPTY_LABEL / MISSING_COLUMN / MISSING_GLOB /
+# UNKNOWN_PREFIX) across recipe YAMLs + the SSSOM product.
+#
+# Engine B (single-process) is the CI gate; the per-file Engine A
+# (`just validate-terms-all`, linkml-term-validator) is a dev-only tool — it
+# reloads the schema+OAK per file (~hours over the full corpus) and covers the
+# same canonical-label surface Engine B already enforces in one pass.
 
 on:
   pull_request:
@@ -50,7 +56,14 @@ jobs:
       - name: Verify id↔label validator pin
         run: just verify-validator-pin
 
-      - name: Generate id↔label drift report (non-blocking)
+      # Build the SSSOM product so the `required: true` sssom target is satisfied
+      # (output/ is gitignored, so it is never checked in). The generator resolves
+      # canonical object labels via OAK, so the product is drift-free by construction.
+      - name: Build SSSOM product
+        run: just generate-sssom
+
+      # Triage artifact (non-blocking): full drift report across recipes + products.
+      - name: Generate id↔label drift report
         run: just report-label-drift
 
       - name: Upload drift report
@@ -60,3 +73,7 @@ jobs:
           name: label-drift-report-${{ github.run_id }}
           path: reports/label_drift.tsv
           if-no-files-found: warn
+
+      # Phase-2 blocking gate: fail the build on any ERROR-class id↔label verdict.
+      - name: Enforce id↔label correspondence (Engine B)
+        run: just validate-products
