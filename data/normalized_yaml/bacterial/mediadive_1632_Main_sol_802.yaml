@@ -75,9 +75,8 @@ composition:
     label: Tris-HCl
   chebi_term:
     id: CHEBI:9754
-    label: Tris-HCl
-    confidence: 0.7
-    match_type: kg_fallback
+    label: tris
+    match_type: exact_match
 - preferred_term: Distilled water
   concentration:
     value: '998'
@@ -131,6 +130,10 @@ preparation_notes: Adjust pH to 7.8 (with NaOH) before autoclaving. To the steri
   g/l), 2 ml FeCl2/MnCl2 (FeCl2 x 4 H2O, 20 g/l and MnCl2 x 4 H2O, 20 g/l), and glucose
   to a final concentration of 2 g/l.
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 1 re-grounded via OAK, 0 de-grounded (unverifiable id).'
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings

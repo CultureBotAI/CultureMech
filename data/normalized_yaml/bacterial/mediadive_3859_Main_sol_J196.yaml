@@ -59,11 +59,6 @@ composition:
   term:
     id: mediadive.compound:1677
     label: KH2PO3
-  chebi_term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: NaF
   concentration:
     value: '0.00084'
@@ -221,6 +216,10 @@ preparation_notes: Mix ingredients, except yeast extract, starch, sulfur and Na2
   add the yeast extract and starch solutions, and sulfur to the medium. Prior to inoculation,
   add the sterile Na2S x 9H2O solution, and adjust pH to 5.5 with sterile 1 N H2SO4.
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 1 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:28.386407Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

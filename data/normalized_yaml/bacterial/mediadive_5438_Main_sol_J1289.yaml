@@ -91,10 +91,9 @@ composition:
     id: mediadive.compound:2053
     label: Sodium crotonate
   chebi_term:
-    id: CHEBI:66870
-    label: sodium dithionite
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:35899
+    label: crotonate
+    match_type: manual_curated
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '104.16666666666666'
@@ -126,6 +125,10 @@ preparation_notes: "Add components to distilled water and bring volume to 1.0 L.
   \ stream, and seal with butyl rubber stoppers. Then, add per liter the following\
   \ solutions (autoclaved or *filter-sterilized): \n\nOriginal volume: 24 mL"
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 1 re-grounded via OAK, 0 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:37.193005Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

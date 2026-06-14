@@ -59,11 +59,6 @@ composition:
   term:
     id: mediadive.compound:1123
     label: Hemicalcium D-(+)-pantothenate
-  chebi_term:
-    id: CHEBI:27470
-    label: folic acid
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Pyridoxamine hydrochloride
   concentration:
     value: '0.05'
@@ -138,6 +133,10 @@ composition:
     match_type: corpus_consensus
 preparation_notes: Filter sterilize the solution.
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 1 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:22.535077Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

@@ -27,9 +27,8 @@ composition:
     label: Tris-HCl
   chebi_term:
     id: CHEBI:9754
-    label: Tris-HCl
-    confidence: 0.7
-    match_type: kg_fallback
+    label: tris
+    match_type: exact_match
 - preferred_term: Distilled water
   concentration:
     value: '934.5794392523364'
@@ -94,6 +93,10 @@ preparation_notes: "Autoclave, cool, and then add: \nMagnesium chloride should b
   \ sterilized separately by autoclaving, and the other ingredients should be sterilized\
   \ separately by filtration.\n\nOriginal volume: 1070 mL"
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 1 re-grounded via OAK, 0 de-grounded (unverifiable id).'
 - timestamp: '2026-06-14T05:58:58.561437+00:00'
   curator: idnf-grounding-fix-v1.0
   action: Fixed ID_NOT_FOUND term groundings

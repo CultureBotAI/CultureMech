@@ -82,11 +82,6 @@ composition:
   term:
     id: mediadive.compound:106
     label: Fe(NH4)2(SO4)2
-  chebi_term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.00886699'
@@ -147,6 +142,10 @@ preparation_notes: 'Dissolve ingredients (except carbonate, fumarate and vitamin
 
   Original volume: 1015 mL'
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 1 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:26.021628Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

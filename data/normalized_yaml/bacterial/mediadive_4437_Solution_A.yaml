@@ -188,11 +188,6 @@ composition:
   term:
     id: mediadive.compound:1816
     label: Ferrous citrate
-  chebi_term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Distilled water
   concentration:
     value: '974.6588693957115'
@@ -225,6 +220,10 @@ preparation_notes: "Mix ingredients and adjust pH to 6.8 with NaOH. Distribute t
   \ by volume) gas mixture and pressurize to 200 kPa with the same gas mixture.\n\n\
   Original volume: 1026 mL"
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 1 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:31.221145Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

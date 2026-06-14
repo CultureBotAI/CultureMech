@@ -61,11 +61,6 @@ composition:
   term:
     id: mediadive.compound:650
     label: Na3-citrate x 3 H2O
-  chebi_term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.1'
@@ -103,6 +98,10 @@ composition:
     confidence: 0.7
     match_type: corpus_consensus
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 1 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:16.097542Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

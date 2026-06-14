@@ -109,10 +109,9 @@ composition:
     id: mediadive.compound:1352
     label: Putrescine 2 HCl
   chebi_term:
-    id: CHEBI:15603
-    label: L-leucine
-    confidence: 0.7
-    match_type: kg_fallback
+    id: CHEBI:17148
+    label: putrescine
+    match_type: manual_curated
 - preferred_term: Phenol red
   concentration:
     value: '0.2'
@@ -144,6 +143,10 @@ preparation_notes: 'Prepare Solutions D, flush with nitrogen to make them anoxic
 
   Original volume: 100 mL'
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 1 re-grounded via OAK, 0 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:25.046990Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

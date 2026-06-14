@@ -23,11 +23,6 @@ composition:
   term:
     id: mediadive.compound:1938
     label: HOMOPIPES
-  chebi_term:
-    id: CHEBI:17905
-    label: coenzyme M
-    confidence: 0.7
-    match_type: kg_fallback
 - preferred_term: Yeast extract
   concentration:
     value: '0.04945598417408507'
@@ -69,6 +64,10 @@ preparation_notes: "Mix components thoroughly and adjust pH to 5.0 with HCl. Bri
   \ the final pH of the medium to be about 5.1. Pressurize inoculated tubes to 70\
   \ kPa H2-CO2 (80:20, v/v).\n\nOriginal volume: 1011 mL"
 curation_history:
+- timestamp: '2026-06-14T07:03:53.728571+00:00'
+  curator: kg-fallback-cleanup-v1.0
+  action: Cleaned residual kg_fallback chebi_terms
+  notes: 'Cleaned 1 low-confidence kg_fallback chebi_term(s): 0 re-grounded via OAK, 1 de-grounded (unverifiable id).'
 - timestamp: '2026-03-13T06:20:33.907684Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
