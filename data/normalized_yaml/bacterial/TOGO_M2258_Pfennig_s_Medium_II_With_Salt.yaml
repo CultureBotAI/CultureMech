@@ -134,7 +134,7 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-- preferred_term: MgSO4x7H2O
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L

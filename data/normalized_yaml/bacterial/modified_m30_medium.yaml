@@ -22,7 +22,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: MgCl2⋅6H2O
+- preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
@@ -60,7 +60,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:2509
     label: agar
-- preferred_term: MgSO4⋅7H2O
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '29.7'
     unit: G_PER_L
@@ -69,7 +69,7 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-- preferred_term: FeSO4⋅7H2O
+- preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '99'
     unit: G_PER_L
@@ -90,13 +90,13 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-- preferred_term: (NH4)6MoO7O24⋅4H2O
+- preferred_term: (NH4)6MoO7O24 x 4 H2O
   concentration:
     value: '9.3'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: CaCl2⋅7H2O
+- preferred_term: CaCl2 x 7 H2O
   concentration:
     value: '3.3'
     unit: G_PER_L
@@ -138,7 +138,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: CaCl2⋅2H2O
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -147,7 +147,7 @@ ingredients:
   term:
     id: CHEBI:86158
     label: ''
-- preferred_term: Na2MoO4⋅2H2O
+- preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.024'
     unit: G_PER_L
@@ -168,7 +168,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
-- preferred_term: MnCl2⋅4H2O
+- preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -177,7 +177,7 @@ ingredients:
   term:
     id: CHEBI:86368
     label: ''
-- preferred_term: CoCl2⋅6H2O
+- preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.024'
     unit: G_PER_L
@@ -186,7 +186,7 @@ ingredients:
   term:
     id: CHEBI:35696
     label: ''
-- preferred_term: NiCl2⋅6H2O
+- preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.12'
     unit: G_PER_L
@@ -195,7 +195,7 @@ ingredients:
   term:
     id: CHEBI:34887
     label: ''
-- preferred_term: ZnSO4⋅7H2O
+- preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '1.1'
     unit: G_PER_L
@@ -216,7 +216,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:49976
     label: zinc dichloride
-- preferred_term: FeCl2⋅6H2O
+- preferred_term: FeCl2 x 6 H2O
   concentration:
     value: '1.35'
     unit: G_PER_L
@@ -225,7 +225,7 @@ ingredients:
   term:
     id: CHEBI:30812
     label: ''
-- preferred_term: Na2B4O7⋅10H2O
+- preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.018'
     unit: G_PER_L
@@ -240,7 +240,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Complex component'
-- preferred_term: Na2HPO4⋅2H2O
+- preferred_term: Na2HPO4 x 2 H2O
   concentration:
     value: '0.01'
     unit: G_PER_L

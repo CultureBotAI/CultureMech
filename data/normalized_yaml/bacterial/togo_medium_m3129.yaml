@@ -65,7 +65,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
-- preferred_term: Na2S ∙ 9 H2O
+- preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.05'
     unit: PERCENT_W_V
@@ -152,7 +152,7 @@ ingredients:
   term:
     id: CHEBI:18276
     label: ''
-- preferred_term: Na2MoO4 ∙ 2 H2O
+- preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '36'
     unit: G_PER_L
@@ -173,7 +173,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
-- preferred_term: MnCl2 ∙ 4 H2O
+- preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '100'
     unit: G_PER_L
@@ -182,7 +182,7 @@ ingredients:
   term:
     id: CHEBI:86368
     label: ''
-- preferred_term: CoCl2 ∙ 6 H2O
+- preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '224'
     unit: G_PER_L
@@ -191,7 +191,7 @@ ingredients:
   term:
     id: CHEBI:35696
     label: ''
-- preferred_term: NiCl2 ∙ 6 H2O
+- preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '24'
     unit: G_PER_L
@@ -212,7 +212,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:49976
     label: zinc dichloride
-- preferred_term: FeCl2 ∙ 4 H2O
+- preferred_term: FeCl2 x 4 H2O
   concentration:
     value: '4'
     unit: G_PER_L

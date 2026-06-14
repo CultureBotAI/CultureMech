@@ -115,7 +115,7 @@ ingredients:
   term:
     id: CHEBI:31440
     label: ''
-- preferred_term: AlK(SO4)2 12H2O
+- preferred_term: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.0001'
     unit: G_PER_L

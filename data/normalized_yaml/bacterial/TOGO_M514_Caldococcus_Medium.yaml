@@ -169,7 +169,7 @@ ingredients:
   term:
     id: CHEBI:31440
     label: ''
-- preferred_term: CoSO47H2O
+- preferred_term: CoSO4 x 7 H2O
   concentration:
     value: '1'
     unit: G_PER_L

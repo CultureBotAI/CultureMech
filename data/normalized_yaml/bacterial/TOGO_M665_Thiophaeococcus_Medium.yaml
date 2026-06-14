@@ -27,7 +27,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: MgSO47H2O
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '2'
     unit: G_PER_L

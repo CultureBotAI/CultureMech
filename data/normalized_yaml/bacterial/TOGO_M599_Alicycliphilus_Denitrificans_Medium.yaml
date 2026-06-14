@@ -74,7 +74,7 @@ ingredients:
   term:
     id: CHEBI:32954
     label: ''
-- preferred_term: CaCl22H2O
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.11'
     unit: G_PER_L

@@ -99,7 +99,7 @@ ingredients:
     value: '12'
     unit: G_PER_L
   notes: 'Role: Solidifying component; Properties: Defined component'
-- preferred_term: Na2MoO42H2O
+- preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '20'
     unit: G_PER_L
@@ -123,19 +123,19 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: boric acid
-- preferred_term: MnCl24H2O
+- preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: CoCl26H2O
+- preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: NiCl26H2O
+- preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '10'
     unit: G_PER_L
@@ -165,7 +165,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:49976
     label: zinc dichloride
-- preferred_term: FeCl36H2O
+- preferred_term: FeCl3 x 6 H2O
   concentration:
     value: '2000'
     unit: G_PER_L
