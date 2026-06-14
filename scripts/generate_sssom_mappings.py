@@ -65,6 +65,43 @@ def extract_mapping_tool(curation_history: list) -> str:
     return 'CultureMech|manual'
 
 
+# Lazy per-prefix OAK adapters for canonical object labels. SSSOM object_label
+# should be the ONTOLOGY's own label (canonical), not the curator recipe label —
+# otherwise the product drifts against a canonical/synonym gate. Only the
+# prefixes that actually appear as mapping objects are loaded, on first use.
+_OAK_SOURCES = {
+    "CHEBI": "sqlite:obo:chebi",
+    "FOODON": "sqlite:obo:foodon",
+    "UBERON": "sqlite:obo:uberon",
+    "NCIT": "sqlite:obo:ncit",
+}
+_oak_adapters: Dict[str, object] = {}
+_label_cache: Dict[str, str] = {}
+
+
+def canonical_label(curie: str, fallback: str = "") -> str:
+    """Canonical OBO label for an ontology id (lazy OAK), else ``fallback``.
+
+    Prefixes without an OAK adapter (e.g. mediadive.compound) fall back to the
+    recipe-provided label so non-ontology objects are unaffected.
+    """
+    if curie in _label_cache:
+        return _label_cache[curie] or fallback
+    prefix = curie.split(":", 1)[0] if ":" in curie else ""
+    src = _OAK_SOURCES.get(prefix)
+    lbl = None
+    if src:
+        try:
+            if prefix not in _oak_adapters:
+                from oaklib import get_adapter
+                _oak_adapters[prefix] = get_adapter(src)
+            lbl = _oak_adapters[prefix].label(curie)
+        except Exception:
+            lbl = None
+    _label_cache[curie] = lbl or ""
+    return lbl or fallback
+
+
 def generate_sssom_mappings(
     normalized_dir: Path,
     confidence_threshold: float = 0.0,
@@ -138,7 +175,7 @@ def generate_sssom_mappings(
                         'subject_label': preferred_term,
                         'predicate_id': 'skos:exactMatch',
                         'object_id': object_id,
-                        'object_label': term.get('label', ''),
+                        'object_label': canonical_label(object_id, term.get('label', '')),
                         'mapping_justification': 'semapv:ManualMappingCuration',
                         'confidence': confidence,
                         'mapping_tool': mapping_tool,
@@ -185,7 +222,7 @@ def generate_sssom_mappings(
                             'subject_label': preferred_term,
                             'predicate_id': 'skos:exactMatch',
                             'object_id': object_id,
-                            'object_label': term.get('label', ''),
+                            'object_label': canonical_label(object_id, term.get('label', '')),
                             'mapping_justification': 'semapv:ManualMappingCuration',
                             'confidence': confidence,
                             'mapping_tool': mapping_tool,
