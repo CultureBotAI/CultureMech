@@ -60,7 +60,7 @@ composition:
     id: mediadive.compound:1312
     label: Sulfur powder
   chebi_term:
-    id: CHEBI:14258
+    id: CHEBI:33403
     label: Sulfur powder
     confidence: 0.7
     match_type: corpus_consensus
@@ -134,6 +134,10 @@ preparation_notes: 'Prepare the liquid medium. Dispense the medium into Hungate 
   or serum bottles under gassing with N2. Steam medium for 3h on each of 3 successive
   days. Before inoculation add from sterile stock solutions:'
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-03-13T06:20:24.835576Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

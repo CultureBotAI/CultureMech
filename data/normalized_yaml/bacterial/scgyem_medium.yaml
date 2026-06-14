@@ -16,9 +16,6 @@ ingredients:
     value: '100'
     unit: G_PER_L
 - preferred_term: Casein
-  term:
-    id: CHEBI:3448
-    label: Casein
   concentration:
     value: '12.5'
     unit: G_PER_L
@@ -147,6 +144,10 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 0 re-grounded to the correct CHEBI, 1 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-26T17:53:14.667295Z'
   curator: mediadive-import
   action: Imported from MediaDive

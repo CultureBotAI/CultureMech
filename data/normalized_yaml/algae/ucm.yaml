@@ -14,6 +14,10 @@ applications:
 - Phytoplankton culture
 - Microalgae research
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 3 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - curator: ccap-import
   action: Imported from CCAP Culture Collection
   notes: 'Source ID: UCM, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_UCM.pdf'
@@ -546,7 +550,7 @@ ingredients:
   notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
 - preferred_term: Pyridoxamine.2HCl
   term:
-    id: CHEBI:8668
+    id: CHEBI:131532
     label: Pyridoxamine.2HCl
   curation_metadata:
     mapping_quality: LLM_ASSISTED
@@ -588,7 +592,7 @@ ingredients:
   notes: From CCAP Medium MR_UCM.pdf; Curated from CCAP Medium MR_UCM.pdf specification
 - preferred_term: Pyridoxamine.2HCl
   term:
-    id: CHEBI:8668
+    id: CHEBI:131532
     label: Pyridoxamine.2HCl
   curation_metadata:
     mapping_quality: LLM_ASSISTED
@@ -623,7 +627,7 @@ ingredients:
   source: CCAP Medium MR_UCM.pdf
 - preferred_term: MgCl .6H O
   term:
-    id: CHEBI:6635
+    id: CHEBI:86345
     label: MgCl .6H O
   curation_metadata:
     mapping_quality: LLM_ASSISTED

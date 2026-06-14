@@ -81,13 +81,13 @@ ingredients:
     label: NaHCO3
 - preferred_term: L-Sodium lactate
   term:
-    id: CHEBI:867561
+    id: CHEBI:232798
     label: L-Sodium lactate
   concentration:
     value: '100'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:867561
+    id: CHEBI:232798
     label: L-Sodium lactate
 - preferred_term: Na2S x 9 H2O
   term:
@@ -260,6 +260,10 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 2 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-26T17:53:17.439931Z'
   curator: mediadive-import
   action: Imported from MediaDive

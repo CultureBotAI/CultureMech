@@ -48,7 +48,7 @@ composition:
     id: mediadive.compound:596
     label: Na-tartrate
   chebi_term:
-    id: CHEBI:1185531
+    id: CHEBI:9754
     label: Tris-HCl
     confidence: 0.7
     match_type: kg_fallback
@@ -113,6 +113,10 @@ composition:
     confidence: 0.7
     match_type: corpus_consensus
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-03-13T06:20:15.419943Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

@@ -277,7 +277,7 @@ ingredients:
     label: Phenyl acetic acid
 - preferred_term: Phenyl propionic acid
   term:
-    id: CHEBI:501520
+    id: CHEBI:28631
     label: Phenyl propionic acid
   concentration:
     value: '0.75'
@@ -328,6 +328,10 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-26T17:53:19.407864Z'
   curator: mediadive-import
   action: Imported from MediaDive

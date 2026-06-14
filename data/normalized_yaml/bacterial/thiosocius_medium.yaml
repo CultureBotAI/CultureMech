@@ -74,7 +74,7 @@ ingredients:
     label: K2HPO4
 - preferred_term: HEPES buffer
   term:
-    id: CHEBI:19708
+    id: CHEBI:46756
     label: HEPES buffer
   concentration:
     value: '4.766'
@@ -314,6 +314,10 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-26T17:53:15.273055Z'
   curator: mediadive-import
   action: Imported from MediaDive

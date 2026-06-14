@@ -27,7 +27,7 @@ ingredients:
   notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
 - preferred_term: MgCl2·6H2O
   term:
-    id: CHEBI:6635
+    id: CHEBI:86345
     label: MgCl2·6H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
@@ -169,6 +169,10 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-26T17:53:18.951706Z'
   curator: mediadive-import
   action: Imported from MediaDive

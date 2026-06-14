@@ -83,7 +83,7 @@ composition:
     id: mediadive.compound:461
     label: HEPES buffer
   chebi_term:
-    id: CHEBI:19708
+    id: CHEBI:46756
     label: HEPES buffer
     confidence: 0.7
     match_type: corpus_consensus
@@ -105,6 +105,10 @@ preparation_notes: "Mix components and autoclave. After cooling, add the followi
   \ rubber stoppers.\nFinally, replace the gas phase with 20% methane and 5% CO2 in\
   \ air (by volume).\n\nOriginal volume: 1002 mL"
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-03-13T06:20:30.938558Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

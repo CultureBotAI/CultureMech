@@ -411,8 +411,8 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:503742
-    label: ''
+    id: CHEBI:28484
+    label: isovaleric acid
   mediaingredientmech_term:
     id: MediaIngredientMech:000378
     label: iso-Valeric acid
@@ -578,6 +578,10 @@ notes: 'Source: https://togomedium.org/medium/M1833
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-27T06:35:58.458862Z'
   curator: togo-import
   action: Imported from TOGO Medium

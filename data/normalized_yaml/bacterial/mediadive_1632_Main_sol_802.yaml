@@ -74,7 +74,7 @@ composition:
     id: mediadive.compound:452
     label: Tris-HCl
   chebi_term:
-    id: CHEBI:1185531
+    id: CHEBI:9754
     label: Tris-HCl
     confidence: 0.7
     match_type: kg_fallback
@@ -131,6 +131,10 @@ preparation_notes: Adjust pH to 7.8 (with NaOH) before autoclaving. To the steri
   g/l), 2 ml FeCl2/MnCl2 (FeCl2 x 4 H2O, 20 g/l and MnCl2 x 4 H2O, 20 g/l), and glucose
   to a final concentration of 2 g/l.
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-03-13T06:20:17.446712Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID

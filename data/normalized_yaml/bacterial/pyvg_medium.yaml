@@ -166,7 +166,7 @@ ingredients:
     label: n-Valeric acid
 - preferred_term: iso-Valeric acid
   term:
-    id: CHEBI:503742
+    id: CHEBI:28484
     label: iso-Valeric acid
   concentration:
     value: '1'
@@ -199,6 +199,10 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
+- timestamp: '2026-06-14T05:58:58.561437+00:00'
+  curator: idnf-grounding-fix-v1.0
+  action: Fixed ID_NOT_FOUND term groundings
+  notes: 'Absent/obsolete CHEBI term ids fixed - 1 re-grounded to the correct CHEBI, 0 de-grounded (mixture or unverifiable).'
 - timestamp: '2026-01-26T17:53:18.272408Z'
   curator: mediadive-import
   action: Imported from MediaDive
