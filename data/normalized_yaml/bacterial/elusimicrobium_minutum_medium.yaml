@@ -5,7 +5,7 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: MgSO4x7H2O
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '3.45'
     unit: G_PER_L
@@ -34,7 +34,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: CaCl2x2H2O
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.14'
     unit: G_PER_L
@@ -106,7 +106,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: Fe(NH4)2(SO4)2x7H2O
+- preferred_term: Fe(NH4)2(SO4)2 x 7 H2O
   concentration:
     value: '2'
     unit: G_PER_L
@@ -115,7 +115,7 @@ ingredients:
   term:
     id: CHEBI:131378
     label: ''
-- preferred_term: MgCl2x7H2O
+- preferred_term: MgCl2 x 7 H2O
   concentration:
     value: '2.75'
     unit: G_PER_L
@@ -179,7 +179,7 @@ ingredients:
     value: '0.368'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
-- preferred_term: Na2MoO4xH2O
+- preferred_term: Na2MoO4 x H2O
   concentration:
     value: '0.03'
     unit: G_PER_L
@@ -224,7 +224,7 @@ ingredients:
   term:
     id: CHEBI:35696
     label: ''
-- preferred_term: NiCl2x6H2O
+- preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.02'
     unit: G_PER_L

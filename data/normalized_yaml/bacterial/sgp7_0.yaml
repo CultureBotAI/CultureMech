@@ -5,7 +5,7 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: MgSO4∙7H2O
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.041'
     unit: G_PER_L
@@ -14,7 +14,7 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-- preferred_term: CaCl2∙2H2O
+- preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.044'
     unit: G_PER_L
@@ -23,7 +23,7 @@ ingredients:
   term:
     id: CHEBI:86158
     label: ''
-- preferred_term: Na2HPO4∙12H2O
+- preferred_term: Na2HPO4 x 12 H2O
   concentration:
     value: '0.076'
     unit: G_PER_L
@@ -43,7 +43,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:46756
     label: HEPES
-- preferred_term: Na2SiO3∙9H2O
+- preferred_term: Na2SiO3 x 9 H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
@@ -52,7 +52,7 @@ ingredients:
   term:
     id: CHEBI:132108
     label: ''
-- preferred_term: KH2PO4∙2H2O
+- preferred_term: KH2PO4 x 2 H2O
   concentration:
     value: '0.02'
     unit: G_PER_L

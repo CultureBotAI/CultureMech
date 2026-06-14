@@ -17,7 +17,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: MgCl2∙6H2O
+- preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
@@ -64,7 +64,7 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-- preferred_term: FeSO4∙7H2O
+- preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -73,7 +73,7 @@ ingredients:
   term:
     id: CHEBI:75836
     label: ''
-- preferred_term: CoCl2∙6H2O
+- preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
@@ -82,7 +82,7 @@ ingredients:
   term:
     id: CHEBI:35696
     label: ''
-- preferred_term: CuSO4∙5H2O
+- preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L

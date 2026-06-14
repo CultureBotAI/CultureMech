@@ -17,7 +17,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: MgSO4⋅7H2O
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -79,7 +79,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
     label: Resazurin
-- preferred_term: Na2S⋅9H2O
+- preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
@@ -100,7 +100,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: Cysteine-HCl⋅H2O
+- preferred_term: Cysteine-HCl x H2O
   concentration:
     value: '0.5'
     unit: G_PER_L

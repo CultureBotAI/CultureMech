@@ -17,7 +17,7 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: MgSO4⋅7H2O
+- preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
@@ -26,7 +26,7 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
-- preferred_term: FeSO4⋅7H2O
+- preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '44'
     unit: G_PER_L
