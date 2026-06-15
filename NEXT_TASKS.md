@@ -23,17 +23,15 @@ the schema+OAK per file (~hours over the full corpus) and re-checks the same
 canonical-label surface Engine B already enforces in one pass; keep it as a
 targeted dev tool (`just validate-terms <file>`).
 
-## 2. Page renderer skip logic ignores template/code changes
+## 2. Page renderer skip logic ignores template/code changes — DONE
 
-`render_media_pages.py` skips a page when its HTML output is newer than the
-**source YAML** (mtime-based). It does NOT account for changes to the Jinja
-template or the renderer itself, so a template edit silently no-ops under
-`just gen-pages` — you must pass `--force` to actually re-render (discovered
-2026-06-14 fixing the wall-clock footer).
-
-- Improve: fold a hash of the template + renderer version into the skip decision
-  (re-render when either changes), or document the `--force` requirement
-  prominently so future template edits don't ship half-applied.
+**Done** (2026-06-14): `render_media_pages.py` now folds a build signature
+(sha256 of `media.html.j2` + the renderer source, 12 hex chars) into the skip
+decision and embeds it in each page (`<!-- culturemech-build-sig: … -->`). A
+page is skipped only when it is fresher than its source YAML AND carries the
+current signature; editing the template or the renderer changes the signature
+and forces a re-render under `just gen-pages` — no `--force` needed. Verified:
+edit template → all pages re-render.
 
 ## 3. Cross-Mech validator pin guard covers only the .py (cross-repo)
 
