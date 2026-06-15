@@ -4,8 +4,11 @@ Walks `data/merge_yaml/merged_2026/*.yaml` (configurable), applies the
 Jinja2 template at `src/culturemech/templates/media.html.j2`, writes
 output to `pages/media/{slug}.html`.
 
-Idempotent: skips records whose YAML mtime is older than the existing
-HTML's mtime. Pass --force to regenerate everything.
+Idempotent: skips a record when its HTML is fresher than the source YAML AND
+was built with the current template+renderer signature (a short hash embedded in
+each page). Editing the Jinja template or this renderer changes the signature, so
+stale pages are regenerated automatically — no --force needed. Pass --force to
+regenerate everything unconditionally.
 
 Phase 2 of the dismech-pattern port; see
 ../culturebotai-claw/docs/proposals/phase2_culturemech_html_pages_and_qc_dashboard.md
@@ -13,6 +16,7 @@ Phase 2 of the dismech-pattern port; see
 from __future__ import annotations
 
 import argparse
+import hashlib
 import re
 import sys
 from pathlib import Path
@@ -105,8 +109,26 @@ def make_env() -> Environment:
     return env
 
 
+# Embedded in every rendered page so a template/renderer change forces a
+# re-render even when the source YAML is unchanged. The mtime-only skip below
+# would otherwise silently no-op a template edit (you'd need --force).
+_SIG_MARKER = "<!-- culturemech-build-sig: {} -->"
+
+
+def build_signature() -> str:
+    """sha256 of the page template + this renderer's source (12 hex chars).
+
+    Folded into the skip decision: if either the Jinja template or the renderer
+    changes, the signature changes and stale pages are regenerated.
+    """
+    h = hashlib.sha256()
+    h.update((TEMPLATES_DIR / "media.html.j2").read_bytes())
+    h.update(Path(__file__).resolve().read_bytes())
+    return h.hexdigest()[:12]
+
+
 def render_one(env: Environment, source_path: Path, out_dir: Path,
-               force: bool = False) -> tuple[str, dict | None, str]:
+               build_sig: str, force: bool = False) -> tuple[str, dict | None, str]:
     """Returns (status, parsed_medium, slug). status is rendered/skipped/error:reason."""
     try:
         with open(source_path) as f:
@@ -118,8 +140,16 @@ def render_one(env: Environment, source_path: Path, out_dir: Path,
     slug = slug_for(medium, source_path)
     out_path = out_dir / f"{slug}.html"
     if not force and out_path.exists():
+        # Skip only when the page is fresher than its YAML AND was built with the
+        # current template+renderer signature; a template/renderer edit changes
+        # the signature and forces a re-render (mtime alone would miss it).
         if out_path.stat().st_mtime >= source_path.stat().st_mtime:
-            return "skipped", medium, slug
+            try:
+                fresh_build = _SIG_MARKER.format(build_sig) in out_path.read_text()
+            except OSError:
+                fresh_build = False
+            if fresh_build:
+                return "skipped", medium, slug
     template = env.get_template("media.html.j2")
     # source_path is shown in the footer; render it relative to the repo
     # root when reachable (matches index-link convention) and fall back to a
@@ -135,7 +165,7 @@ def render_one(env: Environment, source_path: Path, out_dir: Path,
         composition_graph=build_ingredient_composition_graph(medium),
         source_path=src_display,
     )
-    out_path.write_text(html)
+    out_path.write_text(html + f"\n{_SIG_MARKER.format(build_sig)}\n")
     return "rendered", medium, slug
 
 
@@ -210,6 +240,7 @@ def main() -> int:
     args.out_dir.mkdir(parents=True, exist_ok=True)
 
     env = make_env()
+    build_sig = build_signature()
     # ``rglob`` so the renderer works against both layouts: flat
     # (``data/merge_yaml/merged_2026/*.yaml``) and category-nested
     # (``data/normalized_yaml/<category>/*.yaml``). The latter is the
@@ -224,7 +255,7 @@ def main() -> int:
     successful: list[dict] = []
     for path in files:
         status, medium, slug = render_one(env, path, args.out_dir,
-                                          force=args.force)
+                                          build_sig, force=args.force)
         if status == "rendered":
             rendered += 1
         elif status == "skipped":
