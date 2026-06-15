@@ -33,10 +33,17 @@ current signature; editing the template or the renderer changes the signature
 and forces a re-render under `just gen-pages` — no `--force` needed. Verified:
 edit template → all pages re-render.
 
-## 3. Cross-Mech validator pin guard covers only the .py (cross-repo)
+## 3. Cross-Mech validator pin guard covers only the .py — DONE (CultureMech + MIM)
 
-The `verify-validator-pin` guard pins the validator **script** byte-for-byte
-across the Mechs, but NOT the vendored test files or the conf structure, so those
-can silently drift. Tracked in culturebotai-claw#6. Coordinate any fix across
-CultureMech / MIM / CommunityMech together (and decide whether TraitMech joins
-the trio — see TraitMech `NEXT_TASKS.md` item 2).
+**Done** (2026-06-14, culturebotai-claw#6 Option 1): `verify-validator-pin` /
+`refresh-validator-pin` now pin the full vendored set via a `VENDORED_IDLABEL_FILES`
+manifest — the validator `.py` **plus** the two byte-identical shared tests
+(`tests/test_id_label_empty_adapter.py`, `tests/test_id_label_unknown_prefix.py`).
+The pinned hashes are byte-identical across CultureMech (PR #64) and MIM
+(MIM PR #64), so the two guards jointly enforce the cross-repo invariant; editing
+a vendored test now fails CI. `conf/id_label_targets.yaml` is left **unpinned** —
+it is intentionally per-repo (different adapters/targets/exceptions).
+
+Remaining (lower priority): CommunityMech's checkout does not currently vendor the
+validator + tests (so it's a 2-repo invariant today); fold it (and decide on
+TraitMech) into the next coordinated sync if/when it adopts the validator.
