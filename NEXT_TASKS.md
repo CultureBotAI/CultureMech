@@ -6,7 +6,7 @@ deferrals here instead of letting them live only in your head or a closed PR.
 Keep the cross-Mech items in sync with the sibling repos' `NEXT_TASKS.md`
 (MIM / CommunityMech / TraitMech).
 
-Last reconciled: 2026-06-14.
+Last reconciled: 2026-06-15.
 
 ## 1. Phase-2 id↔label enforcement rollout (report-only → blocking) — DONE
 
@@ -33,7 +33,7 @@ current signature; editing the template or the renderer changes the signature
 and forces a re-render under `just gen-pages` — no `--force` needed. Verified:
 edit template → all pages re-render.
 
-## 3. Cross-Mech validator pin guard covers only the .py — DONE (CultureMech + MIM)
+## 3. Cross-Mech validator pin guard covers only the .py — DONE (all 4 Mech repos)
 
 **Done** (2026-06-14, culturebotai-claw#6 Option 1): `verify-validator-pin` /
 `refresh-validator-pin` now pin the full vendored set via a `VENDORED_IDLABEL_FILES`
@@ -44,6 +44,10 @@ The pinned hashes are byte-identical across CultureMech (PR #64) and MIM
 a vendored test now fails CI. `conf/id_label_targets.yaml` is left **unpinned** —
 it is intentionally per-repo (different adapters/targets/exceptions).
 
-Remaining (lower priority): CommunityMech's checkout does not currently vendor the
-validator + tests (so it's a 2-repo invariant today); fold it (and decide on
-TraitMech) into the next coordinated sync if/when it adopts the validator.
+Update (2026-06-15): the invariant now spans **all four** Mech repos. CommunityMech
+adopted the validator + tests (PR #132; its two test copies had cosmetically drifted
+and were resynced + pinned in PR #151) and TraitMech adopted and now enforces it
+(PR #110 Phase 1, PR #111 Phase 2 blocking gate — 14 wrong CURIEs fixed, gate green).
+All four repos pin the same 3-file manifest (`142bbe1…` / `55a432…` / `f01d22…`);
+the "decide on TraitMech" question is resolved. `conf/id_label_targets.yaml` stays
+unpinned everywhere by design (per-repo adapters/targets/exceptions).
