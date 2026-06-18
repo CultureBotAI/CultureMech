@@ -1,0 +1,18 @@
+<section id="datasets">
+<h2>Datasets <span class="muted">({{ medium.datasets|length }})</span></h2>
+<table class="datasets">
+<thead>
+<tr><th>Dataset</th><th>Type</th><th>Repository</th><th>Accession</th></tr>
+</thead>
+<tbody>
+{% for ds in medium.datasets %}
+<tr>
+  <td>{{ ds.title or ds.accession }}{% if ds.description %}<br><span class="muted small prewrap">{{ ds.description }}</span>{% endif %}</td>
+  <td>{% if ds.dataset_type %}<span class="badge">{{ ds.dataset_type }}</span>{% endif %}</td>
+  <td class="small">{{ ds.repository or '' }}</td>
+  <td class="small">{% if ds.url %}<a href="{{ ds.url }}" rel="nofollow noreferrer">{{ ds.accession or ds.url }}</a>{% else %}{{ ds.accession or '' }}{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</section>
