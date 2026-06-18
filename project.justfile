@@ -854,6 +854,28 @@ refresh-validator-pin:
         echo "re-pinned $f to $h"
     done
 
+# Durability guard for the shared LinkML module (Discussion + Dataset), vendored
+# byte-identical across the Mech repos — see culturebotai-claw#7.
+SHARED_SCHEMA_MODULE := "src/culturemech/schema/mech_shared.yaml"
+[group('QC')]
+verify-schema-pin:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    if command -v sha256sum >/dev/null 2>&1; then
+        sha256sum -c src/culturemech/schema/.mech_shared.sha256
+    else
+        shasum -a 256 -c src/culturemech/schema/.mech_shared.sha256
+    fi
+
+[group('QC')]
+refresh-schema-pin:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    f={{SHARED_SCHEMA_MODULE}}
+    if command -v sha256sum >/dev/null 2>&1; then h=$(sha256sum "$f" | cut -d' ' -f1); else h=$(shasum -a 256 "$f" | cut -d' ' -f1); fi
+    printf '%s  %s\n' "$h" "$f" > src/culturemech/schema/.mech_shared.sha256
+    echo "re-pinned $f to $h"
+
 [group('QC')]
 validate-all:
     #!/usr/bin/env bash

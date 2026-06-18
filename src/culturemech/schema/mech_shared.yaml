@@ -1,0 +1,332 @@
+id: https://w3id.org/kg-microbe/mech-shared
+name: mech_shared
+title: Mech shared module — Discussions (knowledge gaps) + Datasets
+description: >-
+  Canonical, byte-identical LinkML module shared across the Mech knowledge
+  bases (CultureMech / MIM / CommunityMech / TraitMech). It carries two
+  domain-general record sections ported from monarch-initiative/dismech:
+
+    * Discussion — the discourse / "knowledge gap" layer. A broad supertype
+      (kind = KNOWLEDGE_GAP, OPEN_QUESTION, CONTROVERSY, CURATION_TODO,
+      EMERGING_HYPOTHESIS, INTERPRETATION, HUMAN_MODEL_MISMATCH) with a
+      lifecycle status, hash-anchor `attaches_to` pointers into the importing
+      record's sections, optional `proposed_experiments` resolution sketches,
+      and a `SupportingReference` evidence block.
+
+    * Dataset — a lightweight reference to a public dataset (omics, sequence,
+      phenotype). Its `dataset_type` / `repository` enums are the faithful UNION
+      of the existing CultureMech and CommunityMech enums (plus microbial
+      additions) so the Phase-2 migration of those two repos is loss-preserving.
+
+  The module is SELF-CONTAINED: it defines its own `SupportingReference`
+  evidence class (and `SupportLevelEnum`) rather than referencing each repo's
+  `EvidenceItem`, so it validates standalone, imposes no per-repo dependency
+  (MIM has `MappingEvidence`, not `EvidenceItem`), and never collides with an
+  importing schema's classes. Each record keeps its own primary `EvidenceItem`
+  for record-level claims; discussions/datasets carry their own lightweight
+  `SupportingReference` citations.
+
+  Vendored byte-identical and sha-pinned across the Mech repos (see
+  culturebotai-claw#7). Do not edit one copy in isolation — change it once and
+  re-vendor + re-pin everywhere.
+
+license: https://creativecommons.org/publicdomain/zero/1.0/
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  mech_shared: https://w3id.org/kg-microbe/mech-shared/
+
+default_prefix: mech_shared
+default_range: string
+
+imports:
+  - linkml:types
+
+enums:
+
+  DiscussionKindEnum:
+    description: >-
+      Kind of unresolved / in-progress item captured by a Discussion.
+      Knowledge gaps are represented as a discussion kind so they reuse the
+      shared pointer, evidence, and lifecycle machinery, while optional
+      proposed experiments capture how a gap could be resolved.
+    permissible_values:
+      OPEN_QUESTION:
+        description: An unresolved scientific question posed by curators or experts.
+      KNOWLEDGE_GAP:
+        description: >-
+          A missing causal, evidentiary, model-system, or measurement
+          assertion whose resolution would materially improve the record.
+      CONTROVERSY:
+        description: A live disagreement or competing interpretation between published positions.
+      CURATION_TODO:
+        description: A curation task captured inline (e.g. "ingredient needs CHEBI refinement").
+      EMERGING_HYPOTHESIS:
+        description: A recently reported hypothesis under active discussion in the community.
+      INTERPRETATION:
+        description: A discussion about how to interpret existing evidence or model an edge.
+      HUMAN_MODEL_MISMATCH:
+        description: >-
+          A gap where evidence exists in one system but its fidelity to the
+          target context is uncertain (e.g. an in-vitro/model result whose
+          transfer to the in-situ or host-associated setting is unverified).
+
+  DiscussionStatusEnum:
+    description: Lifecycle status for a Discussion.
+    permissible_values:
+      OPEN:
+        description: Posed but not yet under active discussion.
+      UNDER_DISCUSSION:
+        description: Actively being discussed in one or more linked venues.
+      RESOLVED:
+        description: Closed with a documented resolution; kept for provenance.
+      ARCHIVED:
+        description: No longer active and not resolved (deferred, stale, or superseded).
+
+  SupportLevelEnum:
+    description: >-
+      How a SupportingReference bears on the claim it is attached to (mirrors
+      the supports semantics already used in the Mech EvidenceItem models).
+    permissible_values:
+      SUPPORT:
+        description: The source supports the claim.
+      REFUTE:
+        description: The source contradicts the claim.
+      PARTIAL:
+        description: The source partially supports the claim or supports it with caveats.
+      NO_EVIDENCE:
+        description: The source is relevant context but does not directly bear on the claim.
+      WRONG_STATEMENT:
+        description: The cited statement was found to be incorrect (kept for provenance).
+
+  DatasetTypeEnum:
+    description: >-
+      Type of dataset or data resource. Canonical UNION of CultureMech's and
+      CommunityMech's enums plus microbial additions. Migration map (old → this):
+      CultureMech values carry over unchanged; CommunityMech GENOME→GENOMICS,
+      METAGENOME→METAGENOMICS, METATRANSCRIPTOME→METATRANSCRIPTOMICS,
+      METAPROTEOME→METAPROTEOMICS (AMPLICON_16S / AMPLICON_ITS / METABOLOMICS /
+      PHENOTYPE / MULTI_OMICS / OTHER are unchanged).
+    permissible_values:
+      GENOMICS:
+        description: Isolate / single-organism genome data. (CultureMech GENOMICS; CommunityMech GENOME)
+      METAGENOMICS:
+        description: Shotgun metagenome sequencing. (CommunityMech METAGENOME)
+      AMPLICON_16S:
+        description: 16S rRNA marker-gene amplicon sequencing.
+      AMPLICON_ITS:
+        description: ITS marker-gene amplicon sequencing.
+      AMPLICON_OTHER:
+        description: Marker-gene amplicon sequencing other than 16S/ITS (e.g. 18S, rpoB).
+      TRANSCRIPTOMICS:
+        description: Single-organism RNA sequencing / expression.
+      METATRANSCRIPTOMICS:
+        description: Community-level RNA sequencing. (CommunityMech METATRANSCRIPTOME)
+      PROTEOMICS:
+        description: Single-organism protein expression profiling.
+      METAPROTEOMICS:
+        description: Community-level proteomics. (CommunityMech METAPROTEOME)
+      METABOLOMICS:
+        description: Metabolite profiling.
+      FLUXOMICS:
+        description: Metabolic flux profiling.
+      PHENOMICS:
+        description: High-throughput phenotype profiling.
+      PHENOTYPE:
+        description: Phenotype / trait measurement collection (e.g. growth, biochemical).
+      MULTI_OMICS:
+        description: Integrated multi-omics profiling.
+      OTHER:
+        description: A dataset type not covered by the above.
+
+  DatasetRepositoryEnum:
+    description: >-
+      Public repository hosting the dataset. Superset of CommunityMech's enum
+      (all values preserved) plus common additions; CultureMech datasets have
+      no repository field today and migrate with repository unset / OTHER.
+    permissible_values:
+      NCBI_SRA:
+        description: NCBI Sequence Read Archive.
+      NCBI_BIOPROJECT:
+        description: NCBI BioProject.
+      NCBI_GEO:
+        description: NCBI Gene Expression Omnibus.
+      NCBI_ASSEMBLY:
+        description: NCBI Assembly (genome assemblies).
+      ENA:
+        description: European Nucleotide Archive.
+      ARRAYEXPRESS:
+        description: EBI ArrayExpress / BioStudies.
+      MGNIFY:
+        description: EBI MGnify metagenomics resource.
+      JGI_GOLD:
+        description: JGI Genomes OnLine Database.
+      JGI_IMG:
+        description: JGI Integrated Microbial Genomes & Microbiomes.
+      NMDC:
+        description: National Microbiome Data Collaborative.
+      METABOLOMICS_WORKBENCH:
+        description: NIH Metabolomics Workbench.
+      METABOLIGHTS:
+        description: EBI MetaboLights metabolomics repository.
+      MASSIVE:
+        description: MassIVE mass-spectrometry repository.
+      GNPS:
+        description: Global Natural Products Social Molecular Networking.
+      PRIDE:
+        description: EBI PRIDE proteomics repository.
+      DBGAP:
+        description: NCBI database of Genotypes and Phenotypes.
+      GTEX:
+        description: Genotype-Tissue Expression project.
+      FIGSHARE:
+        description: Figshare general-purpose research data archive.
+      ZENODO:
+        description: Zenodo general-purpose research data archive.
+      OTHER:
+        description: A repository not covered by the above.
+
+classes:
+
+  SupportingReference:
+    description: >-
+      A lightweight literature/database citation supporting a Discussion or
+      Dataset. Self-contained (so this module has no dependency on each repo's
+      EvidenceItem); carries a verbatim `snippet` so the same anti-hallucination
+      snippet-vs-cached-abstract check the Mechs already run can validate it.
+    attributes:
+      reference:
+        description: PMID:..., DOI:..., a repository accession/CURIE, or an opaque URL.
+        required: true
+      reference_title:
+        description: Title of the cited source (optional; populated by tooling).
+      supports:
+        range: SupportLevelEnum
+      snippet:
+        description: Verbatim quote from the source supporting the attached claim.
+      explanation:
+        description: Why this source bears on the claim.
+      notes:
+
+  Discussion:
+    description: >-
+      A thread-like record of an open question, controversy, curation todo,
+      emerging hypothesis, knowledge gap, or interpretation debate attached to
+      a record or one of its sub-objects. Captures the discourse / knowledge-gap
+      layer of curation. External thread links (GitHub issues, forum posts) are
+      cited via the `evidence` block, not a separate slot.
+    attributes:
+      discussion_id:
+        description: Stable local identifier for this discussion thread.
+        required: true
+      prompt:
+        description: The open question, gap statement, or todo, in one or two sentences.
+        required: true
+      kind:
+        range: DiscussionKindEnum
+      status:
+        range: DiscussionStatusEnum
+      attaches_to:
+        description: >-
+          Hash-anchor pointers into the sections/nodes this discussion concerns:
+          `<section>#<anchor>`, e.g. `causal_graphs#edge_x`,
+          `composition#ingredient_y`, `ecological_interactions#z`,
+          `ontology_mapping#m`. Free-form so each Mech can anchor into its own
+          record structure.
+        multivalued: true
+      rationale:
+        description: Why this matters / what resolving it would change.
+      proposed_experiments:
+        description: Optional sketches of how the gap could be resolved.
+        range: ProposedExperiment
+        multivalued: true
+        inlined_as_list: true
+      evidence:
+        description: Supporting / contextual citations.
+        range: SupportingReference
+        multivalued: true
+        inlined_as_list: true
+      posed_by:
+        description: Curator or agent that raised the discussion.
+      posed_date:
+        range: date
+      resolved_date:
+        range: date
+      resolution_note:
+        description: How it was resolved (when status is RESOLVED).
+      notes:
+
+  ProposedExperiment:
+    description: >-
+      A lightweight, domain-neutral sketch of an experiment or analysis that
+      could resolve a knowledge gap. Records the idea and how its outcome would
+      decide the gap; intentionally simpler than a full study design.
+    attributes:
+      experiment_id:
+        description: Stable local id (optional; for cross-reference).
+      name:
+        recommended: true
+      description:
+      approach:
+        description: Method/assay in brief (e.g. "defined-coculture growth assay", "isolate WGS").
+      model_systems:
+        description: Systems to use (e.g. isolate, enrichment, defined coculture, metagenome).
+        multivalued: true
+      perturbations:
+        description: Interventions applied (e.g. gene knockout, nutrient removal).
+        multivalued: true
+      readouts:
+        description: What would be measured.
+        multivalued: true
+      decision_criterion:
+        description: The observation that would settle the question.
+      would_support:
+        description: Outcome that would support the hypothesis/assertion.
+      would_refute:
+        description: Outcome that would refute it.
+
+  Dataset:
+    description: >-
+      A reference to a publicly available dataset (omics, sequence, phenotype)
+      relevant to this record. A lightweight repository-accession reference, not
+      a full Datasheets-for-Datasets / DCAT description.
+    attributes:
+      accession:
+        description: >-
+          Repository accession or CURIE, e.g. `geo:GSE36701`, `NCBI_SRA:SRP...`.
+          (CultureMech `dataset_id` migrates here.)
+        recommended: true
+      title:
+        description: Short dataset title. (CommunityMech `name` migrates here.)
+      description:
+        description: Human-readable description; may add nuance beyond the title.
+        recommended: true
+      organism:
+        description: Source organism / community label (free text or CURIE).
+      dataset_type:
+        range: DatasetTypeEnum
+      repository:
+        range: DatasetRepositoryEnum
+      sample_types:
+        description: Sample/material types represented (free text or term labels).
+        multivalued: true
+      sample_count:
+        range: integer
+      conditions:
+        description: Experimental conditions / groups represented.
+        multivalued: true
+      platform:
+        description: Sequencing/assay platform.
+      url:
+        description: Direct URL to the dataset landing page, if no CURIE applies.
+        range: uri
+      publication:
+        description: Associated publication reference (e.g. PMID:...).
+      findings:
+        description: Brief note on what the dataset shows relevant to this record.
+      evidence:
+        description: Supporting citations.
+        range: SupportingReference
+        multivalued: true
+        inlined_as_list: true
+      notes:
