@@ -183,6 +183,10 @@ enums:
         description: Figshare general-purpose research data archive.
       ZENODO:
         description: Zenodo general-purpose research data archive.
+      BIOMODELS:
+        description: EBI BioModels repository of computational models.
+      KBASE:
+        description: DOE Systems Biology Knowledgebase (KBase).
       OTHER:
         description: A repository not covered by the above.
 
@@ -202,6 +206,10 @@ classes:
         description: Title of the cited source (optional; populated by tooling).
       supports:
         range: SupportLevelEnum
+      evidence_source:
+        description: >-
+          How the snippet was obtained (e.g. abstract, full_text, figure,
+          supplement, database). Free-form to stay self-contained.
       snippet:
         description: Verbatim quote from the source supporting the attached claim.
       explanation:
