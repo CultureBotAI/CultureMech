@@ -61,6 +61,10 @@ default_range: string
 
 imports:
   - linkml:types
+  # Shared, byte-identical Mech module: Discussion (knowledge gaps) + Dataset
+  # (+ DatasetTypeEnum/DatasetRepositoryEnum). Replaces the former local Dataset
+  # class + DatasetTypeEnum. Vendored + sha-pinned across the Mechs — claw#7.
+  - mech_shared
 
 # ================================================================
 # ROOT CLASS
@@ -391,8 +395,17 @@ classes:
         inlined_as_list: true
 
       datasets:
-        description: Omics datasets generated using this medium
+        description: Public datasets (omics/sequence/phenotype) generated using this medium
         range: Dataset
+        multivalued: true
+        inlined_as_list: true
+
+      discussions:
+        description: >-
+          Open questions, knowledge gaps, controversies, and curation todos
+          attached to this medium (shared Discussion supertype; anchor
+          `attaches_to` into e.g. `composition#<ingredient>` / `conditions#<x>`).
+        range: Discussion
         multivalued: true
         inlined_as_list: true
 
@@ -1655,26 +1668,6 @@ classes:
         range: string
         required: true
 
-  Dataset:
-    description: Omics dataset generated using this medium
-    attributes:
-      dataset_id:
-        description: Dataset identifier (GEO, SRA, etc.)
-        range: string
-        required: true
-
-      dataset_type:
-        description: Type of omics data (genomics, transcriptomics, metabolomics, etc.)
-        range: DatasetTypeEnum
-
-      description:
-        description: Brief description of the dataset
-        range: string
-
-      url:
-        description: Direct link to dataset
-        range: uri
-
   CurationEvent:
     description: Audit trail entry for curation
     attributes:
@@ -2609,15 +2602,3 @@ enums:
         description: Narrower concept.
       ABBREVIATION:
         description: Abbreviation or shorthand (e.g. "TSB" for "Tryptic Soy Broth").
-
-  DatasetTypeEnum:
-    description: Type of omics dataset linked by `Dataset.dataset_type`.
-    permissible_values:
-      GENOMICS:
-      TRANSCRIPTOMICS:
-      PROTEOMICS:
-      METABOLOMICS:
-      FLUXOMICS:
-      PHENOMICS:
-      MULTI_OMICS:
-      OTHER:
