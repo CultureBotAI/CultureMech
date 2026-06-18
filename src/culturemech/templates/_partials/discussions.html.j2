@@ -1,0 +1,41 @@
+<section id="discussions">
+<h2>Knowledge gaps &amp; discussions <span class="muted">({{ medium.discussions|length }})</span></h2>
+{% for d in medium.discussions %}
+<div class="discussion">
+  <h3>
+    {% if d.kind %}<span class="badge">{{ d.kind }}</span>{% endif %}
+    {% if d.status %}<span class="badge">{{ d.status }}</span>{% endif %}
+    {{ d.prompt }}
+  </h3>
+  {% if d.rationale %}<p class="prewrap">{{ d.rationale }}</p>{% endif %}
+  {% if d.attaches_to %}<p class="muted small">Attaches to: {% for a in d.attaches_to %}<code>{{ a }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+  {% if d.proposed_experiments %}
+  <details>
+    <summary class="muted small">{{ d.proposed_experiments|length }} proposed experiment(s)</summary>
+    {% for exp in d.proposed_experiments %}
+    <div class="experiment">
+      <strong>{{ exp.name or exp.experiment_id or 'Experiment ' ~ loop.index }}</strong>
+      {% if exp.approach %}<br><span class="small">Approach: {{ exp.approach }}</span>{% endif %}
+      {% if exp.decision_criterion %}<br><span class="small">Decision: {{ exp.decision_criterion }}</span>{% endif %}
+    </div>
+    {% endfor %}
+  </details>
+  {% endif %}
+  {% if d.evidence %}
+  <details>
+    <summary class="muted small">{{ d.evidence|length }} evidence item(s)</summary>
+    {% for ev in d.evidence %}
+    <div class="evidence">
+      {% if ev.evidence_source %}<span class="badge small">{{ ev.evidence_source }}</span>{% endif %}
+      {% if ev.supports %}<span class="badge small">{{ ev.supports }}</span>{% endif %}
+      {% if ev.reference %}{% set ref = ev.reference %}{% if ref.startswith('PMID:') %}<a href="https://pubmed.ncbi.nlm.nih.gov/{{ ref|replace('PMID:','') }}/" rel="nofollow noreferrer">{{ ref }}</a>{% else %}{{ ref }}{% endif %}{% endif %}
+      {% if ev.snippet %}<p class="small prewrap">{{ ev.snippet }}</p>{% endif %}
+      {% if ev.explanation %}<p class="muted small prewrap">{{ ev.explanation }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </details>
+  {% endif %}
+  {% if d.resolution_note %}<p class="small"><em>Resolution:</em> {{ d.resolution_note }}</p>{% endif %}
+</div>
+{% endfor %}
+</section>
