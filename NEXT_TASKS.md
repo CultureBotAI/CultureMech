@@ -51,3 +51,20 @@ and were resynced + pinned in PR #151) and TraitMech adopted and now enforces it
 All four repos pin the same 3-file manifest (`142bbe1…` / `55a432…` / `f01d22…`);
 the "decide on TraitMech" question is resolved. `conf/id_label_targets.yaml` stays
 unpinned everywhere by design (per-repo adapters/targets/exceptions).
+
+## Adopt DisMech knowledge-gaps + datasets + QC dashboard (claw#7)
+
+Coordinated cross-Mech adoption of DisMech's domain-general features. Full plan,
+locked decisions, and DisMech schema references live in culturebotai-claw#7 (the
+shared, pinned LinkML module is authored once and vendored across all four Mechs).
+This repo's slice:
+- Knowledge gaps — add a `discussions` slot (broad `Discussion` supertype; `kind`
+  enum incl. KNOWLEDGE_GAP / OPEN_QUESTION / CONTROVERSY / CURATION_TODO) to
+  `MediaRecipe`, imported from the shared module; bind `attaches_to` anchors to
+  `composition#…` / `conditions#…`. Wire a `knowledge-gap-scan` recipe over the
+  existing Edison harness.
+- Datasets — migrate the existing `Dataset` (omics `DatasetTypeEnum`) to the
+  canonical shared `Dataset` (data-preserving; canonical enum = omics types ∪
+  CommunityMech's repository/accession enum).
+- QC dashboard — this repo's rendered `dashboard/index.html` is the TEMPLATE for
+  Phase 3: extract it into a reusable generator the other three Mechs adopt.
