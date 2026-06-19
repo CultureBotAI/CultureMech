@@ -32,6 +32,13 @@ gen-qc-dashboard:
     PYTHONPATH=../culturebotai-claw/src /opt/homebrew/bin/python3.13 \
       -m kg_microbe_qc --config conf/qc_config.yaml --output dashboard
 
+# Knowledge-gap scan (Europe PMC, free) via shared kg_microbe_kgscan in claw.
+# Dry-run by default → reports/knowledge_gap_scan.{json,md}. Pass `--apply`
+# (and e.g. --limit/--min-score) to seed Discussion(kind=KNOWLEDGE_GAP).
+knowledge-gap-scan *args:
+    PYTHONPATH=../culturebotai-claw/src /opt/homebrew/bin/python3.13 \
+      -m kg_microbe_kgscan --config conf/kgscan_config.yaml {{args}}
+
 # Composite: media pages + QC dashboard (Phase 2 outputs).
 gen-phase2: gen-media-pages gen-qc-dashboard
 
