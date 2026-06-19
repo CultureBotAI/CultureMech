@@ -1,6 +1,6 @@
 ---
 name: manage-ingredient-hierarchy
-description: Manage ingredient hierarchy integration from MediaIngredientMech
+description: Use this skill to integrate the MediaIngredientMech ingredient variant hierarchy (parent/child relationships — purity levels, hydrates, stereoisomers) into CultureMech recipe ingredient references. Use when linking recipe ingredients to their canonical MIM records or resolving variant forms.
 category: workflow
 requires_database: false
 requires_internet: true

@@ -1,6 +1,6 @@
 ---
 name: manage-identifiers
-description: Generic identifier management for X-Mech repositories - finding highest IDs, minting new IDs, and adding records with proper ID placement
+description: Use this skill to manage CultureMech record identifiers — find the highest existing CultureMech id, mint the next id, and insert new media/solution records with correct id placement. Use when adding or importing recipe records, or reconciling id collisions.
 category: workflow
 requires_database: false
 requires_internet: false
