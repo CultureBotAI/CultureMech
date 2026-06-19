@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knowledge gaps & discussions</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#666; --line:#e2e2e2; --accent:#2a6; --bg:#fff; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, system-ui, sans-serif; color: var(--fg); margin: 0; background: var(--bg); }
+  header { padding: 1rem 1.25rem; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 1.25rem; margin: 0 0 .25rem; }
+  .metrics { color: var(--muted); font-size: .85rem; }
+  .layout { display: grid; grid-template-columns: 240px 1fr; gap: 1.25rem; max-width: 1200px; margin: 1rem auto; padding: 0 1.25rem; }
+  @media (max-width: 820px) { .layout { grid-template-columns: 1fr; } }
+  .sidebar h3 { font-size: .8rem; text-transform: uppercase; color: var(--muted); margin: 1rem 0 .35rem; }
+  .facet label { display: block; font-size: .85rem; padding: .1rem 0; cursor: pointer; }
+  #q { width: 100%; padding: .5rem .6rem; font-size: .95rem; border: 1px solid var(--line); border-radius: 6px; margin-bottom: .5rem; }
+  .count { color: var(--muted); font-size: .85rem; margin-bottom: .5rem; }
+  .card { border: 1px solid var(--line); border-radius: 8px; padding: .75rem .9rem; margin-bottom: .7rem; }
+  .card h2 { font-size: .98rem; margin: 0 0 .35rem; font-weight: 600; }
+  .badge { display: inline-block; font-size: .7rem; padding: .05rem .4rem; border-radius: 4px; background: #eef; color: #225; margin-right: .3rem; }
+  .badge.gap { background: #fee; color: #922; }
+  .src { color: var(--muted); font-size: .82rem; margin: .25rem 0; }
+  .rationale { font-size: .85rem; color: #333; margin: .35rem 0; white-space: pre-wrap; }
+  .refs { font-size: .8rem; color: var(--muted); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .empty { color: var(--muted); padding: 2rem; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">Knowledge gaps &amp; discussions</h1>
+  <div class="metrics" id="metrics"></div>
+</header>
+<div class="layout">
+  <div class="sidebar">
+    <input id="q" type="search" placeholder="Search prompts, sources, evidence…" autocomplete="off">
+    <div id="facets"></div>
+  </div>
+  <main>
+    <div class="count" id="count"></div>
+    <div id="results"></div>
+  </main>
+</div>
+<script src="data.js"></script>
+<script>
+(function () {
+  var DATA = window.searchData || [];
+  var METRICS = window.searchMetrics || {};
+  var REPO = window.repoName || "";
+  var FACETS = ["kind", "status", "is_gap"];
+  var active = {}; FACETS.forEach(function (f) { active[f] = new Set(); });
+
+  document.getElementById("title").textContent = (REPO ? REPO + " — " : "") + "Knowledge gaps & discussions";
+  document.getElementById("metrics").textContent =
+    (METRICS.total_discussions || 0) + " discussions · " +
+    (METRICS.total_knowledge_gaps || 0) + " knowledge gaps · " +
+    (METRICS.total_source_entries || 0) + " records";
+
+  function uniqCounts(field) {
+    var m = {}; DATA.forEach(function (r) { var v = r[field] || "—"; m[v] = (m[v] || 0) + 1; });
+    return m;
+  }
+  function renderFacets() {
+    var host = document.getElementById("facets"); host.innerHTML = "";
+    FACETS.forEach(function (f) {
+      var counts = uniqCounts(f);
+      var h = document.createElement("div"); h.className = "facet";
+      h.innerHTML = "<h3>" + f.replace("_", " ") + "</h3>";
+      Object.keys(counts).sort().forEach(function (val) {
+        var id = f + "::" + val;
+        var lbl = document.createElement("label");
+        lbl.innerHTML = '<input type="checkbox" data-f="' + f + '" data-v="' +
+          val.replace(/"/g, "&quot;") + '"> ' + val + " (" + counts[val] + ")";
+        h.appendChild(lbl);
+      });
+      host.appendChild(h);
+    });
+    host.querySelectorAll("input[type=checkbox]").forEach(function (cb) {
+      cb.addEventListener("change", function () {
+        var f = cb.getAttribute("data-f"), v = cb.getAttribute("data-v");
+        if (cb.checked) active[f].add(v); else active[f].delete(v);
+        render();
+      });
+    });
+  }
+  function matches(r, q) {
+    for (var f of FACETS) { if (active[f].size && !active[f].has(r[f] || "—")) return false; }
+    if (!q) return true;
+    var hay = [r.prompt, r.source_name, r.rationale, r.source_id,
+               (r.attaches_to || []).join(" "), (r.evidence_refs || []).join(" ")]
+      .join(" ").toLowerCase();
+    return q.toLowerCase().split(/\s+/).every(function (t) { return hay.indexOf(t) >= 0; });
+  }
+  function esc(s) { return (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function card(r) {
+    var title = r.page_url ? '<a href="' + esc(r.page_url) + '">' + esc(r.prompt) + "</a>" : esc(r.prompt);
+    var refs = (r.evidence_refs || []).map(function (ref) {
+      var m = /^PMID:(\d+)$/.exec(ref);
+      return m ? '<a href="https://pubmed.ncbi.nlm.nih.gov/' + m[1] + '/">' + esc(ref) + "</a>" : esc(ref);
+    }).join(", ");
+    return '<div class="card">' +
+      '<h2>' + title + "</h2>" +
+      '<span class="badge' + (r.is_gap === "Knowledge gap" ? " gap" : "") + '">' + esc(r.kind) + "</span>" +
+      '<span class="badge">' + esc(r.status) + "</span>" +
+      '<div class="src">in <strong>' + esc(r.source_name || r.source_id) + "</strong>" +
+        (r.posed_by ? " · posed by " + esc(r.posed_by) : "") + "</div>" +
+      (r.rationale ? '<div class="rationale">' + esc(r.rationale) + "</div>" : "") +
+      '<div class="refs">' + (r.num_experiments || 0) + " experiment(s) · " +
+        (r.num_evidence || 0) + " evidence" + (refs ? ": " + refs : "") + "</div>" +
+      "</div>";
+  }
+  function render() {
+    var q = document.getElementById("q").value.trim();
+    var hits = DATA.filter(function (r) { return matches(r, q); });
+    document.getElementById("count").textContent = hits.length + " of " + DATA.length + " shown";
+    document.getElementById("results").innerHTML =
+      hits.length ? hits.map(card).join("") : '<div class="empty">No discussions match.</div>';
+  }
+  document.getElementById("q").addEventListener("input", render);
+  renderFacets(); render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# CultureMech discussions browser config — drives kg_microbe_discussions (in culturebotai-claw).
+repo_name: CultureMech
+record_glob: ../data/merge_yaml/merged_2026/*.yaml
+name_fields: [name, preferred_term]
+id_field: id
+discussions_field: discussions
+page_url_template: "../pages/media/{stem}.html#{discussion_id}"
