@@ -1,0 +1,10 @@
+# CultureMech knowledge-gap scan config — drives kg_microbe_kgscan (in culturebotai-claw).
+# Europe PMC (free) per-record gap-signal search over canonical merged media records.
+repo_name: CultureMech
+record_glob: ../data/merge_yaml/merged_2026/*.yaml
+name_fields: [name, preferred_term]
+synonym_field: synonyms
+id_field: id
+discussions_field: discussions
+topic_context_terms: ["culture medium", "growth medium", "cultivation", "microbial", "microbiology"]
+min_score: 8
