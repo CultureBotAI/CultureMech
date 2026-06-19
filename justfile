@@ -91,3 +91,8 @@ validate-media-variant-links *args:
 # explicitly to write YAML edits.
 apply-media-variant-links *args:
     uv run python scripts/apply_media_variant_links.py {{args}}
+
+# Discussions / knowledge-gap browser (shared kg_microbe_discussions in claw).
+gen-discussions-data:
+    PYTHONPATH=../culturebotai-claw/src /opt/homebrew/bin/python3.13 \
+      -m kg_microbe_discussions --config conf/discussions_config.yaml --output app/discussions
