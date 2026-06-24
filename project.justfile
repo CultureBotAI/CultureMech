@@ -767,6 +767,7 @@ validate file:
 [group('QC')]
 validate-schema file:
     #!/usr/bin/env bash
+    set -euo pipefail
     echo "Validating schema structure..."
     uv run linkml-validate --schema {{schema_path}} --target-class MediaRecipe "{{file}}"
     echo "✓ Schema validation passed"
@@ -774,6 +775,7 @@ validate-schema file:
 [group('QC')]
 validate-terms file:
     #!/usr/bin/env bash
+    set -euo pipefail
     echo "Validating ontology terms..."
     uv run linkml-term-validator validate-data {{file}} -s {{schema_path}} -t MediaRecipe --labels -c {{oak_config}}
     echo "✓ Term validation passed"
@@ -781,6 +783,7 @@ validate-terms file:
 [group('QC')]
 validate-references file:
     #!/usr/bin/env bash
+    set -euo pipefail
     echo "Validating evidence references..."
     uv run linkml-reference-validator validate data {{file}} --schema {{schema_path}} --target-class MediaRecipe
     echo "✓ Reference validation passed"
