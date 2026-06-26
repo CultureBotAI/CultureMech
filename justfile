@@ -92,6 +92,20 @@ validate-media-variant-links *args:
 apply-media-variant-links *args:
     uv run python scripts/apply_media_variant_links.py {{args}}
 
+# Render the media recipe-validation deep-research prompt for one medium (and
+# its variant set) to stdout — for running validation natively in Claude Code,
+# no Edison credits. Pass --template / --out to override. e.g.
+#   just validate-media-recipe 1_10_r2a_medium
+validate-media-recipe target *args:
+    /opt/homebrew/bin/python3.13 scripts/render_media_prompt.py --target {{target}} {{args}}
+
+# Same validation, run through the Edison deep-research API (spends credits).
+# Pass --dry-run first to audit the rendered query. e.g.
+#   just validate-media-recipe-edison 1_10_r2a_medium --dry-run
+validate-media-recipe-edison target *args:
+    uv run --extra dev python scripts/research_media_edison.py \
+      --target {{target}} --template templates/media_recipe_validation.md {{args}}
+
 # Discussions / knowledge-gap browser (shared kg_microbe_discussions in claw).
 gen-discussions-data:
     PYTHONPATH=../culturebotai-claw/src /opt/homebrew/bin/python3.13 \

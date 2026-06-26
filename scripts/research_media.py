@@ -145,6 +145,44 @@ def summarize_variants(doc: dict[str, Any]) -> str:
     return " | ".join(rows)
 
 
+def _summarize_media_ref(ref: Any) -> str:
+    """One-line summary of a MediaRecipeReference (parent_media / variant_children entry)."""
+    if not isinstance(ref, dict):
+        return str(ref)
+    parts = [
+        ref.get("name") or ref.get("id"),
+        ref.get("id") if ref.get("name") else None,
+        ref.get("path"),
+        ref.get("relationship"),
+    ]
+    summary = " / ".join(str(part) for part in parts if part)
+    notes = ref.get("notes")
+    return f"{summary} — {notes}".strip(" —") if notes else summary
+
+
+def summarize_variant_records(doc: dict[str, Any]) -> str:
+    """Cross-record variant set: parent linkage + child records + this record's own variant role.
+
+    Complements ``summarize_variants`` (which only covers inline ``variants[]``).
+    Captures parent_media, variant_relationship/variant_modifications, and
+    variant_children so the deep-research prompt can validate *each set of variants*.
+    """
+    rows = []
+    parent = doc.get("parent_media")
+    if parent:
+        rows.append(f"PARENT: {_summarize_media_ref(parent)}")
+    relationship = doc.get("variant_relationship")
+    modifications = _join_values(doc.get("variant_modifications"))
+    if relationship or modifications:
+        own = f"THIS-RECORD-IS-VARIANT: relationship={relationship or ''}"
+        if modifications:
+            own += f"; modifications={modifications}"
+        rows.append(own.strip("; "))
+    for child in doc.get("variant_children", []) or []:
+        rows.append(f"CHILD: {_summarize_media_ref(child)}")
+    return " | ".join(rows)
+
+
 def summarize_evidence(doc: dict[str, Any]) -> str:
     rows = []
     for evidence in doc.get("evidence", []) or []:
@@ -192,6 +230,7 @@ def template_vars(doc: dict[str, Any], media_file: Path) -> dict[str, str]:
         "solutions": summarize_solutions(doc),
         "target_organisms": summarize_target_organisms(doc),
         "variants": summarize_variants(doc),
+        "variant_records": summarize_variant_records(doc),
         "evidence": summarize_evidence(doc),
         "notes": str(doc.get("notes", "")),
     }
