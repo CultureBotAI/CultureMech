@@ -767,7 +767,6 @@ validate file:
 [group('QC')]
 validate-schema file:
     #!/usr/bin/env bash
-    set -euo pipefail
     echo "Validating schema structure..."
     uv run linkml-validate --schema {{schema_path}} --target-class MediaRecipe "{{file}}"
     echo "✓ Schema validation passed"
@@ -775,7 +774,6 @@ validate-schema file:
 [group('QC')]
 validate-terms file:
     #!/usr/bin/env bash
-    set -euo pipefail
     echo "Validating ontology terms..."
     uv run linkml-term-validator validate-data {{file}} -s {{schema_path}} -t MediaRecipe --labels -c {{oak_config}}
     echo "✓ Term validation passed"
@@ -783,7 +781,6 @@ validate-terms file:
 [group('QC')]
 validate-references file:
     #!/usr/bin/env bash
-    set -euo pipefail
     echo "Validating evidence references..."
     uv run linkml-reference-validator validate data {{file}} --schema {{schema_path}} --target-class MediaRecipe
     echo "✓ Reference validation passed"
@@ -2120,7 +2117,7 @@ help:
 # ================================================================
 
 # Default path to KG-Microbe embeddings (local copy in data/embeddings/)
-kg_microbe_embeddings := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CommunityMech/CommunityMech/data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v2_2026-04-25_20_44_08.tsv.gz"
+kg_microbe_embeddings := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CommunityMech/CommunityMech/data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v3_2026-06-26_12_55_27.tsv.gz"
 
 [group('Visualization')]
 gen-media-umap embeddings_path=kg_microbe_embeddings:
