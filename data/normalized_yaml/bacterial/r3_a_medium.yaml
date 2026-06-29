@@ -134,11 +134,3 @@ variant_children:
   name: r3_a_medium
   notes: KOMODO record is an exact source duplicate of DSMZ Medium 1153; local ingredient
     and concentration signatures match.
-- path: data/normalized_yaml/bacterial/half_strength_r2a.yaml
-  relationship: CONCENTRATION_VARIANT
-  id: CultureMech:000960
-  name: half_strength_r2a
-  notes: 'Half Strength R2A lowers the R3 A/R2A nutrient and salt components: yeast
-    extract, proteose peptone, casamino acids, glucose, and starch from 1 g/L to 0.25
-    g/L; sodium pyruvate from 0.5 to 0.25 g/L; K2HPO4 from 0.6 to 0.15 g/L; MgSO4
-    x 7 H2O from 0.1 to 0.025 g/L; agar remains 15 g/L.'

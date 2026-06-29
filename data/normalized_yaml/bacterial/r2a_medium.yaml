@@ -138,3 +138,9 @@ variant_children:
   id: CultureMech:001052
   name: 1_10_r2a_medium
   notes: Uniform 1:10 dilution of full-strength R2A (mediadive.medium:830).
+- path: data/normalized_yaml/bacterial/half_strength_r2a.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000960
+  name: half_strength_r2a
+  notes: Half-strength dilution of full-strength R2A (mediadive.medium:830);
+    sodium pyruvate held at 0.25 g/L per DSMZ 1492, otherwise 0.5x.
