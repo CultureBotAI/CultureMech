@@ -144,3 +144,9 @@ variant_children:
   name: half_strength_r2a
   notes: Half-strength dilution of full-strength R2A (mediadive.medium:830);
     sodium pyruvate held at 0.25 g/L per DSMZ 1492, otherwise 0.5x.
+- path: data/normalized_yaml/bacterial/r3_a_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000592
+  name: r3_a_medium
+  notes: R3 A (DSMZ 1153) is a double-strength formulation of R2A (mediadive.medium:830);
+    salts/nutrients roughly 2x, agar held at 15 g/L, sodium pyruvate 0.5 g/L (1.67x).
