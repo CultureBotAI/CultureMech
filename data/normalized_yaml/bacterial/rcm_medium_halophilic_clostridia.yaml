@@ -3,6 +3,7 @@ name: rcm_medium_halophilic_clostridia
 original_name: RCM medium (halophilic clostridia)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 634b

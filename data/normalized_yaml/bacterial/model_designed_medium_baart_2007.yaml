@@ -3,6 +3,7 @@ name: model_designed_medium_baart_2007
 original_name: '''Model-designed medium (Baart 2007'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride

@@ -3,6 +3,7 @@ name: dilute_filtered_malt_extract_agar
 original_name: DILUTE FILTERED MALT EXTRACT AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1427

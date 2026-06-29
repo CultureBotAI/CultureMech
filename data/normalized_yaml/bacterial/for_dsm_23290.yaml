@@ -3,6 +3,7 @@ name: for_dsm_23290
 original_name: For DSM 23290
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.7
 media_term:

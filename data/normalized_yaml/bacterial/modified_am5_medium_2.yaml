@@ -3,6 +3,7 @@ name: modified_am5_medium_2
 original_name: MODIFIED AM5 MEDIUM 2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.3
 media_term:

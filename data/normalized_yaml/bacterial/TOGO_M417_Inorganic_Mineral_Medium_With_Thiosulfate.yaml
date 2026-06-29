@@ -3,6 +3,7 @@ name: inorganic_mineral_medium_with_thiosulfate
 original_name: Inorganic Mineral Medium With Thiosulfate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

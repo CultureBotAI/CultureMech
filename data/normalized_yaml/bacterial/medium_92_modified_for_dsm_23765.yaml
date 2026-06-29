@@ -3,6 +3,7 @@ name: medium_92_modified_for_dsm_23765
 original_name: MEDIUM 92 MODIFIED FOR DSM 23765
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 92_23765

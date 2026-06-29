@@ -3,6 +3,7 @@ name: yeast_extract_mineral_medium
 original_name: YEAST EXTRACT MINERAL MEDIUM
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.0

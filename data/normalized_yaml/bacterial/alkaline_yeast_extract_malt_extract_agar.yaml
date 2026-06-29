@@ -3,6 +3,7 @@ name: alkaline_yeast_extract_malt_extract_agar
 original_name: Alkaline yeast extract-malt extract agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto Malt Extract (Difco)

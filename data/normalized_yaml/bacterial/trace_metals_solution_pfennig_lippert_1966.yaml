@@ -3,6 +3,7 @@ name: trace_metals_solution_pfennig_lippert_1966
 original_name: Trace metals solution (Pfennig & Lippert, 1966)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 3.0

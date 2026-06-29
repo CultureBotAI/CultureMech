@@ -3,6 +3,7 @@ name: substrate_for_dsm_6736
 original_name: Substrate for DSM 6736
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

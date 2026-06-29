@@ -3,6 +3,7 @@ name: salt_potato_dextrose_agar_spda
 original_name: Salt Potato-Dextrose Agar (SPDA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

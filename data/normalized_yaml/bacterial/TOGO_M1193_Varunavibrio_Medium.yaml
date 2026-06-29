@@ -3,6 +3,7 @@ name: varunavibrio_medium
 original_name: Varunavibrio Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

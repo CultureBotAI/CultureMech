@@ -3,6 +3,7 @@ name: ethane_c_medium
 original_name: Ethane-C Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: KH2PO4

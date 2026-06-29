@@ -1,6 +1,7 @@
 id: CultureMech:015564
 name: McAA formate No FolicAcid
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3

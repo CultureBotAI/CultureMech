@@ -3,6 +3,7 @@ name: medium_1160_modified_for_dsm_23178
 original_name: MEDIUM 1160 MODIFIED FOR DSM 23178
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1160_23178

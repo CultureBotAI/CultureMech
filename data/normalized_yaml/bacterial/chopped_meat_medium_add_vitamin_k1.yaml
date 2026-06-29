@@ -3,6 +3,7 @@ name: chopped_meat_medium_add_vitamin_k1
 original_name: Chopped Meat Medium (add Vitamin K1)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaOH 1 N

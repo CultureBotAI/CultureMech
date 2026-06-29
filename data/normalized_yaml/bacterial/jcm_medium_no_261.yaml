@@ -3,6 +3,7 @@ name: jcm_medium_no_261
 original_name: JCM MEDIUM No. 261
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

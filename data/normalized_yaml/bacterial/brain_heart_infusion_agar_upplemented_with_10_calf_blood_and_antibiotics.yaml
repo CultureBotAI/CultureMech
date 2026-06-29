@@ -3,6 +3,7 @@ name: brain_heart_infusion_agar_upplemented_with_10_calf_blood_and_antibiotics
 original_name: brain–heart infusion agar (upplemented with 10% calf blood and antibiotics)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: amphotericin B

@@ -3,6 +3,7 @@ name: trace_element_solution_ho_le_medium_668
 original_name: Trace element solution Ho-le (medium 668)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3081

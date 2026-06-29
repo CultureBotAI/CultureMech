@@ -3,6 +3,7 @@ name: thauera_mechernichi_medium
 original_name: THAUERA MECHERNICHI MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.1
 media_term:

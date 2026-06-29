@@ -3,6 +3,7 @@ name: saccharolobus_mt_4_medium
 original_name: SACCHAROLOBUS (MT-4) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.5
 media_term:

@@ -1,6 +1,7 @@
 id: CultureMech:015514
 name: DM
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 3-(N-morpholino)propanesulfonic acid

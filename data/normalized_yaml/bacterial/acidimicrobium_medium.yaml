@@ -3,6 +3,7 @@ name: acidimicrobium_medium
 original_name: ACIDIMICROBIUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 2.0
 media_term:

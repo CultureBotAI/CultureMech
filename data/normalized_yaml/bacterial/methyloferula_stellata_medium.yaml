@@ -3,6 +3,7 @@ name: methyloferula_stellata_medium
 original_name: METHYLOFERULA STELLATA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 5.0

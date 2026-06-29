@@ -3,6 +3,7 @@ name: methanolobus_tindarius_medium
 original_name: METHANOLOBUS TINDARIUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

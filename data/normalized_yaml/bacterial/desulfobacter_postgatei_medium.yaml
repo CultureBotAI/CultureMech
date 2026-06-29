@@ -3,6 +3,7 @@ name: desulfobacter_postgatei_medium
 original_name: DESULFOBACTER POSTGATEI MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.1

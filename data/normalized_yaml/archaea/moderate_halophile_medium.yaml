@@ -3,6 +3,7 @@ name: moderate_halophile_medium
 original_name: MODERATE HALOPHILE MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.1
 media_term:

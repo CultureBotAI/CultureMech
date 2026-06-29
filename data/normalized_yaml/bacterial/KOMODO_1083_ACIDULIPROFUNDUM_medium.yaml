@@ -3,6 +3,7 @@ name: aciduliprofundum_medium
 original_name: ACIDULIPROFUNDUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.5
 media_term:

@@ -3,6 +3,7 @@ name: modified_nautilia_lithotrophica_medium
 original_name: Modified Nautilia Lithotrophica Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

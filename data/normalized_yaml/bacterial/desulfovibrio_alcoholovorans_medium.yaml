@@ -3,6 +3,7 @@ name: desulfovibrio_alcoholovorans_medium
 original_name: DESULFOVIBRIO ALCOHOLOVORANS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 488

@@ -3,6 +3,7 @@ name: mineral_medium_brunner
 original_name: MINERAL MEDIUM (BRUNNER)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.9
 media_term:

@@ -3,6 +3,7 @@ name: teredinibacter_turnerae_medium
 original_name: TEREDINIBACTER TURNERAE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:

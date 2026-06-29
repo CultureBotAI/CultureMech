@@ -3,6 +3,7 @@ name: bbm_v
 original_name: BBM + V
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.4
 media_term:

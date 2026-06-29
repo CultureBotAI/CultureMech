@@ -3,6 +3,7 @@ name: rhodovulum_marinum_medium_replace_sorbitol_with_na_pyruvate
 original_name: RHODOVULUM MARINUM MEDIUM_replace_Sorbitol_with_Na-pyruvate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

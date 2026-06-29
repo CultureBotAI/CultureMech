@@ -3,6 +3,7 @@ name: leitch_et_al
 original_name: Leitch et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

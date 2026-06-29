@@ -3,6 +3,7 @@ name: thermodesulfobacterium_hydrogenophilum_medium
 original_name: Thermodesulfobacterium Hydrogenophilum Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

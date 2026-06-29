@@ -3,6 +3,7 @@ name: for_dsm_11139_strain_rfm_1
 original_name: For DSM 11139 (strain RFM-1)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.7
 media_term:

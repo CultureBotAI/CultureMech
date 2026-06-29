@@ -3,6 +3,7 @@ name: semi_solid_autotrophic_growth_medium_for_gammaproteobacteria
 original_name: SEMI-SOLID AUTOTROPHIC GROWTH MEDIUM FOR GAMMAPROTEOBACTERIA
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SEMISOLID
 ph_value: 7.0
 media_term:

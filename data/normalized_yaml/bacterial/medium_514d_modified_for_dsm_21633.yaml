@@ -3,6 +3,7 @@ name: medium_514d_modified_for_dsm_21633
 original_name: MEDIUM 514d MODIFIED FOR DSM 21633
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 514d_21633

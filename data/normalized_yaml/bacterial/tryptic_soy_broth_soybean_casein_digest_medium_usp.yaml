@@ -3,6 +3,7 @@ name: tryptic_soy_broth_soybean_casein_digest_medium_usp
 original_name: Tryptic Soy Broth (Soybean-Casein Digest Medium, USP)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water

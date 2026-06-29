@@ -3,6 +3,7 @@ name: longimonas_haloalkaliphila_medium
 original_name: Longimonas Haloalkaliphila Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients: []
 media_term:

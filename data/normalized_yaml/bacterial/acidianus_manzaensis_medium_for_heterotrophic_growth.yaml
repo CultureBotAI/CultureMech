@@ -3,6 +3,7 @@ name: acidianus_manzaensis_medium_for_heterotrophic_growth
 original_name: Acidianus manzaensis Medium for Heterotrophic Growth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: artificial_sea_water_3_times_concentrated_medium_1137
 original_name: Artificial sea water, 3 times concentrated (medium 1137)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3007

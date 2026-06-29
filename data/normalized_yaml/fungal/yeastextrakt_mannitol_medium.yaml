@@ -3,6 +3,7 @@ name: yeastextrakt_mannitol_medium
 original_name: YEASTEXTRAKT MANNITOL MEDIUM
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

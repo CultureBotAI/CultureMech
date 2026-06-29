@@ -3,6 +3,7 @@ name: for_dsm_6150
 original_name: For DSM 6150
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.5

@@ -3,6 +3,7 @@ name: carboxymethyl_cellulose_medium
 original_name: CARBOXYMETHYL CELLULOSE medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1111

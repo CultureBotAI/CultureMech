@@ -4,6 +4,7 @@ original_name: Todd–Hewitt (TH) broth (Difco) containing 1.5% (wt/vol) agar an
   (vol/vol) sheep blood
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Sheep blood

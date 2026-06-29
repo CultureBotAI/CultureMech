@@ -3,6 +3,7 @@ name: methanogenium_medium_h2_co2
 original_name: Methanogenium Medium (H2/CO2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium resazurin (0.1% w/v)

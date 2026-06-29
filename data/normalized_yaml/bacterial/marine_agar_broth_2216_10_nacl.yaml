@@ -3,6 +3,7 @@ name: marine_agar_broth_2216_10_nacl
 original_name: Marine Agar/Broth 2216 + 10 % NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

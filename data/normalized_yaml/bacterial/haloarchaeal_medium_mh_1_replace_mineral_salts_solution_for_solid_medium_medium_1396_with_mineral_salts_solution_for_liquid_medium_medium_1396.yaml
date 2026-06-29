@@ -4,6 +4,7 @@ original_name: HALOARCHAEAL medium MH-1_replace_Mineral salts solution for solid
   (medium 1396)_with_Mineral salts solution for liquid medium (medium 1396)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 4.5
 media_term:

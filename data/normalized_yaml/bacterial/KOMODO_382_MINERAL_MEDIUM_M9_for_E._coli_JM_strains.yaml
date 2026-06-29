@@ -3,6 +3,7 @@ name: mineral_medium_m9_for_e_coli_jm_strains
 original_name: MINERAL MEDIUM M9 for E. coli JM strains
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 382

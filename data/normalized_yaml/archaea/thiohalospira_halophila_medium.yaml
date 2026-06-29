@@ -3,6 +3,7 @@ name: thiohalospira_halophila_medium
 original_name: THIOHALOSPIRA HALOPHILA MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

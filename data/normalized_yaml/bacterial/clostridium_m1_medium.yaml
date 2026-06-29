@@ -3,6 +3,7 @@ name: clostridium_m1_medium
 original_name: CLOSTRIDIUM M1 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.3

@@ -3,6 +3,7 @@ name: bordet_gengou_broth_medium
 original_name: Bordet Gengou Broth Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol

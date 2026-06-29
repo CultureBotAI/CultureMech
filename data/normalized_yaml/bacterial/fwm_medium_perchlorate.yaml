@@ -3,6 +3,7 @@ name: fwm_medium_perchlorate
 original_name: FWM MEDIUM (PERCHLORATE)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

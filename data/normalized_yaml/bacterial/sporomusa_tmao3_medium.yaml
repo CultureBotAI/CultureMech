@@ -3,6 +3,7 @@ name: sporomusa_tmao3_medium
 original_name: SPOROMUSA TMAO3 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

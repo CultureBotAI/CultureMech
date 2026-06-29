@@ -3,6 +3,7 @@ name: medium_for_strain_mp_01
 original_name: Medium For Strain MP-01
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

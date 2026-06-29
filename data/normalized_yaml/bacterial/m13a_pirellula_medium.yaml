@@ -3,6 +3,7 @@ name: m13a_pirellula_medium
 original_name: M13a (PIRELLULA) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 600a

@@ -3,6 +3,7 @@ name: alkaliphilus_namsaraevii_medium
 original_name: ALKALIPHILUS NAMSARAEVII MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.5
 media_term:

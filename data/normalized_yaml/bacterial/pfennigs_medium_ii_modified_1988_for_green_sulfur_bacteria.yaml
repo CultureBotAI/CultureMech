@@ -3,6 +3,7 @@ name: pfennigs_medium_ii_modified_1988_for_green_sulfur_bacteria
 original_name: PFENNIG'S MEDIUM II (modified 1988, for green sulfur bacteria)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

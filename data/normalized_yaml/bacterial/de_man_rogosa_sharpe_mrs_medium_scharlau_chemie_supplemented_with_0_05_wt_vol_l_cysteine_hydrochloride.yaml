@@ -4,6 +4,7 @@ original_name: de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie) supplemented 
   0.05% (wt/vol) l-cysteine hydrochloride
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-cysteine hydrochloride

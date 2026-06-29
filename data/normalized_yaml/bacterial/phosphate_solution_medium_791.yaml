@@ -3,6 +3,7 @@ name: phosphate_solution_medium_791
 original_name: Phosphate solution (medium 791)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3044

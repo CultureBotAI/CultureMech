@@ -3,6 +3,7 @@ name: brain_heart_infusion_bhi_medium_supplemented_with_antibiotics
 original_name: brain heart infusion (BHI) medium (supplemented with antibiotics)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: kanamycin

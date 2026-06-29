@@ -3,6 +3,7 @@ name: modified_leptospira_medium
 original_name: Modified Leptospira Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: NaCl

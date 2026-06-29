@@ -3,6 +3,7 @@ name: ectothiorhodospira_abdelmalekii_medium
 original_name: Ectothiorhodospira Abdelmalekii Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

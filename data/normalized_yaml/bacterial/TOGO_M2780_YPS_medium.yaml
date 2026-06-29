@@ -3,6 +3,7 @@ name: yps_medium
 original_name: YPS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: CaCl2

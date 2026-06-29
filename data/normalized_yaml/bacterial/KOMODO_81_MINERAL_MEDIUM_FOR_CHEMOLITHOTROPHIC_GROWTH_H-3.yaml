@@ -3,6 +3,7 @@ name: mineral_medium_for_chemolithotrophic_growth_h_3
 original_name: MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH (H-3)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:

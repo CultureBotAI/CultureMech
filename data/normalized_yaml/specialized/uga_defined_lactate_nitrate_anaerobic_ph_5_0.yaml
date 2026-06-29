@@ -1,6 +1,7 @@
 id: CultureMech:015761
 name: UGA defined Lactate Nitrate anaerobic pH 5.0
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium Chloride

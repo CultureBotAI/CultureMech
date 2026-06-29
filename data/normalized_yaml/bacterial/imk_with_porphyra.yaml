@@ -3,6 +3,7 @@ name: imk_with_porphyra
 original_name: IMK with Porphyra
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: See source for composition

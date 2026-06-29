@@ -3,6 +3,7 @@ name: 5_salt_water_growth_medium
 original_name: 5% SALT WATER GROWTH MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

@@ -3,6 +3,7 @@ name: tris_buffered_artificial_seawater_with_nh4cl_and_sulfolactate
 original_name: Tris-buffered artificial seawater with nh4cl and sulfolactate
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Biotin

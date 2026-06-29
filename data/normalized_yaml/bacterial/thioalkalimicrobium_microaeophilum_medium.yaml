@@ -3,6 +3,7 @@ name: thioalkalimicrobium_microaeophilum_medium
 original_name: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.0

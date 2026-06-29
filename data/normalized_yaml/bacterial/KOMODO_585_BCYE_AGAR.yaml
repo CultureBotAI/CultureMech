@@ -3,6 +3,7 @@ name: bcye_agar
 original_name: BCYE AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 6.4

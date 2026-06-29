@@ -3,6 +3,7 @@ name: mr_medium_d_fructose
 original_name: MR Medium + D-fructose
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium borate

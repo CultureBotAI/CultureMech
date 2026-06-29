@@ -3,6 +3,7 @@ name: halohasta_a2
 original_name: Halohasta (A2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.5

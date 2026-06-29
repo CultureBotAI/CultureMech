@@ -3,6 +3,7 @@ name: alkaliphilic_thermococcus_medium
 original_name: ALKALIPHILIC THERMOCOCCUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 926

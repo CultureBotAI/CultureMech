@@ -3,6 +3,7 @@ name: to_adapt_dsm_804_on_acetate
 original_name: to adapt DSM 804 on acetate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

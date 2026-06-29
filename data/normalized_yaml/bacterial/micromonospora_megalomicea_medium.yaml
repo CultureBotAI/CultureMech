@@ -3,6 +3,7 @@ name: micromonospora_megalomicea_medium
 original_name: MICROMONOSPORA MEGALOMICEA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 127

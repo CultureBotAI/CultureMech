@@ -3,6 +3,7 @@ name: medium_for_z_1701_z_1702
 original_name: MEDIUM for Z-1701, Z-1702
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.0

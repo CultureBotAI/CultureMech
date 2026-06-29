@@ -3,6 +3,7 @@ name: methylosinus_medium_mm2
 original_name: METHYLOSINUS MEDIUM MM2
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.0
 media_term:

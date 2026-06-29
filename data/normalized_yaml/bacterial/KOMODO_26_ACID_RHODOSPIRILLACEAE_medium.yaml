@@ -3,6 +3,7 @@ name: acid_rhodospirillaceae_medium
 original_name: ACID RHODOSPIRILLACEAE medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.7
 media_term:

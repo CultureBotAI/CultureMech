@@ -3,6 +3,7 @@ name: alkaliphilic_sulphur_respiring_strains_medium
 original_name: Alkaliphilic Sulphur Respiring Strains Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

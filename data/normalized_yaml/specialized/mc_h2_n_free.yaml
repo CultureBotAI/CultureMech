@@ -1,6 +1,7 @@
 id: CultureMech:015559
 name: Mc H2 N Free
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: KCl

@@ -3,6 +3,7 @@ name: tyc_solution_medium_391
 original_name: TYC-solution (medium 391)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3143

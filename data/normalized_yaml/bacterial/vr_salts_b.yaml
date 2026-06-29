@@ -3,6 +3,7 @@ name: vr_salts_b
 original_name: VR salts B
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 3133 | DSMZ Medium: 3133

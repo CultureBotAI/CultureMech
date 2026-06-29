@@ -3,6 +3,7 @@ name: vitamin_solution_according_to_wolin_and_coauthors
 original_name: Vitamin solution according to Wolin and coauthors
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 2104

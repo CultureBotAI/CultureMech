@@ -3,6 +3,7 @@ name: for_dsm_5849
 original_name: For DSM 5849
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

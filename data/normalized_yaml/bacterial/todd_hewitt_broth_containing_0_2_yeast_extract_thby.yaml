@@ -3,6 +3,7 @@ name: todd_hewitt_broth_containing_0_2_yeast_extract_thby
 original_name: Todd-Hewitt broth containing 0.2% yeast extract (THBY)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract

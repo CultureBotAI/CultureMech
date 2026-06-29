@@ -3,6 +3,7 @@ name: asw_barley
 original_name: ASW + barley
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.6

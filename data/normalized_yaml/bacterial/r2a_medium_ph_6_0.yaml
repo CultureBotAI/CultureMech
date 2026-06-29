@@ -3,6 +3,7 @@ name: r2a_medium_ph_6_0
 original_name: R2A medium (pH 6.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: chemically_de_ned_minimal_medium_mm
 original_name: Chemically-deﬁned minimal medium(MM)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MgSO4.7H2O

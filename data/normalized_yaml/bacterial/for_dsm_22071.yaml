@@ -3,6 +3,7 @@ name: for_dsm_22071
 original_name: For DSM 22071
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:

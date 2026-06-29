@@ -3,6 +3,7 @@ name: medium_785_modified_for_dsm_18337
 original_name: MEDIUM 785 MODIFIED FOR DSM 18337
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 785_18337

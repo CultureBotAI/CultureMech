@@ -3,6 +3,7 @@ name: modified_mb
 original_name: Modified MB
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

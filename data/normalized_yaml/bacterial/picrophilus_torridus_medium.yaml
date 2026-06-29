@@ -3,6 +3,7 @@ name: picrophilus_torridus_medium
 original_name: Picrophilus torridus Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: for_dsm_11379_dsm_11380_dsm_11381_and_dsm_11382
 original_name: For DSM 11379, DSM 11380, DSM 11381 and DSM 11382
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 311a.1

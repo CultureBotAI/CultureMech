@@ -3,6 +3,7 @@ name: msv_thiotrix_medium
 original_name: MSV-THIOTRIX-MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:

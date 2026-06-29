@@ -3,6 +3,7 @@ name: 2x_yeast_extract_tryptone_2xyt
 original_name: 2x Yeast Extract Tryptone (2xYT)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 2x Yeast Extract Tryptone (2xYT)

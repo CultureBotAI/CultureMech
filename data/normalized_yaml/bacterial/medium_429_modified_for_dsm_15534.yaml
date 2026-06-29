@@ -3,6 +3,7 @@ name: medium_429_modified_for_dsm_15534
 original_name: MEDIUM 429 MODIFIED FOR DSM 15534
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 429_15534

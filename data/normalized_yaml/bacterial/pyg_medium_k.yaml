@@ -3,6 +3,7 @@ name: pyg_medium_k
 original_name: PYG Medium (K)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

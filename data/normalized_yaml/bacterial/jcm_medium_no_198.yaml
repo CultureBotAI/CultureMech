@@ -3,6 +3,7 @@ name: jcm_medium_no_198
 original_name: JCM MEDIUM No. 198
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

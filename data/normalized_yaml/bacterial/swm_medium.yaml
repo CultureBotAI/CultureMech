@@ -3,6 +3,7 @@ name: swm_medium
 original_name: SWM-MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 504

@@ -3,6 +3,7 @@ name: paenibacillus_dc_8a_medium
 original_name: Paenibacillus DC-8A Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

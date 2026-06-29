@@ -3,6 +3,7 @@ name: bicarbonate_buffered_medium_with_acethylene
 original_name: Bicarbonate-Buffered Medium With Acethylene
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

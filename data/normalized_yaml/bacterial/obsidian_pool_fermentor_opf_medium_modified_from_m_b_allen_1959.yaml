@@ -3,6 +3,7 @@ name: obsidian_pool_fermentor_opf_medium_modified_from_m_b_allen_1959
 original_name: Obsidian Pool fermentor (OPF) medium (modified from M. B. Allen, 1959)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2MoO4 x2H2O (1 mg/ml)

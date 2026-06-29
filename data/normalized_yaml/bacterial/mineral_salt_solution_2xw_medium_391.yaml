@@ -3,6 +3,7 @@ name: mineral_salt_solution_2xw_medium_391
 original_name: Mineral salt solution "2xW" (medium 391)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3027

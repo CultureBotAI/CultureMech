@@ -3,6 +3,7 @@ name: glucose_m9_medium_peng_zhao
 original_name: '''glucose m9 medium (peng/zhao'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: beta-D-Glucose

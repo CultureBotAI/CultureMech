@@ -3,6 +3,7 @@ name: half_strength_marine_medium_with_1_0_nacl
 original_name: Half Strength Marine Medium With 1.0% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

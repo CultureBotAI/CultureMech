@@ -3,6 +3,7 @@ name: ignicoccus_medium
 original_name: IGNICOCCUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 5.0

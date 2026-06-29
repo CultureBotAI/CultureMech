@@ -3,6 +3,7 @@ name: cyanobacteria_medium_bg11_tes_buffered
 original_name: Cyanobacteria Medium BG11+ (TES buffered)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:

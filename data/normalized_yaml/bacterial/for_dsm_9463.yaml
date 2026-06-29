@@ -3,6 +3,7 @@ name: for_dsm_9463
 original_name: For DSM 9463
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 670.1 | DSMZ Medium: 670

@@ -3,6 +3,7 @@ name: aquifex_medium
 original_name: AQUIFEX MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

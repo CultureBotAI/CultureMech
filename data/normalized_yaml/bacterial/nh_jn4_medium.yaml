@@ -3,6 +3,7 @@ name: nh_jn4_medium
 original_name: NH-JN4 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

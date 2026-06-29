@@ -3,6 +3,7 @@ name: czapek_yeast_extract_agar_cya
 original_name: CZAPEK YEAST EXTRACT AGAR (CYA)
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J226

@@ -3,6 +3,7 @@ name: methanoculleus_chikugoensis_medium
 original_name: METHANOCULLEUS CHIKUGOENSIS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

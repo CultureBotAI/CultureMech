@@ -3,6 +3,7 @@ name: 5_salt_water_growth_medium
 original_name: 5% Salt Water Growth Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

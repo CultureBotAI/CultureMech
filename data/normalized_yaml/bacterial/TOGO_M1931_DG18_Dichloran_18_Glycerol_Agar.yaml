@@ -3,6 +3,7 @@ name: dg18_dichloran_18_glycerol_agar
 original_name: 'DG18: Dichloran 18% Glycerol Agar'
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: glucose_minimal_media_zhao_zhu
 original_name: '''glucose minimal media (zhao/zhu'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: beta-D-Glucose

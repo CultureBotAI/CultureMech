@@ -3,6 +3,7 @@ name: desulfosporosinus_sb140_medium
 original_name: DESULFOSPOROSINUS SB140 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

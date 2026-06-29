@@ -4,6 +4,7 @@ original_name: '257'
 category: bacterial
 description: 257. NBRC 256.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: ''

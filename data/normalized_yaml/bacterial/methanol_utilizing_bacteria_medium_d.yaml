@@ -3,6 +3,7 @@ name: methanol_utilizing_bacteria_medium_d
 original_name: METHANOL-UTILIZING BACTERIA MEDIUM D
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

@@ -3,6 +3,7 @@ name: m25y_medium
 original_name: M25Y Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

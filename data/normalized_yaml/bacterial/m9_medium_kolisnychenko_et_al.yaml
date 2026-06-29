@@ -3,6 +3,7 @@ name: m9_medium_kolisnychenko_et_al
 original_name: M9 medium; Kolisnychenko et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

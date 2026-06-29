@@ -3,6 +3,7 @@ name: modified_horikoshi_i_medium
 original_name: MODIFIED HORIKOSHI-I MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 9.0
 media_term:

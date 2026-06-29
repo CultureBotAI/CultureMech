@@ -1,6 +1,7 @@
 id: CultureMech:015797
 name: ZMB ALS noArginine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS

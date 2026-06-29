@@ -3,6 +3,7 @@ name: tmao3_tmpn3_medium
 original_name: TMAO3/TMPN3 medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

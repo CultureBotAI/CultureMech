@@ -3,6 +3,7 @@ name: picrophilus_medium
 original_name: PICROPHILUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 1.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 723 | DSMZ Medium: 723 (mediadive.medium:723)

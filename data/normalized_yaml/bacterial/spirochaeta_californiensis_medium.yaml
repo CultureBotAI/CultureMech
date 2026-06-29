@@ -3,6 +3,7 @@ name: spirochaeta_californiensis_medium
 original_name: SPIROCHAETA CALIFORNIENSIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.2
 media_term:

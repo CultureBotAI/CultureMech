@@ -3,6 +3,7 @@ name: medium_104_modified_for_dsm_9536
 original_name: MEDIUM 104 MODIFIED FOR DSM 9536
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 104_9536

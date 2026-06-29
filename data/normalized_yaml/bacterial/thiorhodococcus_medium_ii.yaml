@@ -3,6 +3,7 @@ name: thiorhodococcus_medium_ii
 original_name: THIORHODOCOCCUS MEDIUM II
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

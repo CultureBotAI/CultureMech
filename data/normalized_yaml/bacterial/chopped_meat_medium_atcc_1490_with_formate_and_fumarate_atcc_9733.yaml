@@ -3,6 +3,7 @@ name: chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733
 original_name: Chopped Meat Medium (ATCC 1490) with Formate and Fumarate (ATCC 9733)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: ATCC Medium 1490

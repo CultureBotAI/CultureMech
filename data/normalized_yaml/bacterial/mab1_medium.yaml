@@ -3,6 +3,7 @@ name: mab1_medium
 original_name: mAB1-MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

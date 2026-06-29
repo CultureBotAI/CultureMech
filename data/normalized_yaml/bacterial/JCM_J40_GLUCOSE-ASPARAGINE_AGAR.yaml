@@ -3,6 +3,7 @@ name: glucose_asparagine_agar
 original_name: GLUCOSE-ASPARAGINE AGAR
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.9
 media_term:

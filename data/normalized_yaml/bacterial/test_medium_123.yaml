@@ -4,6 +4,7 @@ original_name: Test Medium 123
 category: bacterial
 description: 'Media: Test Medium 123. Growth temperature: 30°C. pH: 7.2.'
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: See source for composition

@@ -3,6 +3,7 @@ name: bacillus_acidocaldarius_medium
 original_name: BACILLUS ACIDOCALDARIUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 3.0

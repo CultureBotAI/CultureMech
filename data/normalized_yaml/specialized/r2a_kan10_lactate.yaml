@@ -1,6 +1,7 @@
 id: CultureMech:015693
 name: R2A_Kan10_Lactate
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: R2A

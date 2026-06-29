@@ -3,6 +3,7 @@ name: alternative_rumen_bacteria_medium
 original_name: ALTERNATIVE RUMEN BACTERIA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.6

@@ -3,6 +3,7 @@ name: m1h_nag_asw
 original_name: M1H NAG ASW
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: medium_473_modified_for_dsm_6780
 original_name: MEDIUM 473 MODIFIED FOR DSM 6780
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 473_6780

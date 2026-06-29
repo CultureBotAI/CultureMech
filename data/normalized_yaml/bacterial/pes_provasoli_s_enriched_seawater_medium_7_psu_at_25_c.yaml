@@ -3,6 +3,7 @@ name: pes_provasoli_s_enriched_seawater_medium_7_psu_at_25_c
 original_name: PES - Provasoli´s Enriched Seawater-Medium (7 PSU at 25 °C)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1680a

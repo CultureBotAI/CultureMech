@@ -3,6 +3,7 @@ name: db_characterization_medium_no_2
 original_name: DB CHARACTERIZATION MEDIUM NO. 2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

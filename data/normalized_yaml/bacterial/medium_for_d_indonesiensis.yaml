@@ -3,6 +3,7 @@ name: medium_for_d_indonesiensis
 original_name: medium FOR D. INDONESIENSIS
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 63b

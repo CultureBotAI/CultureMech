@@ -3,6 +3,7 @@ name: alkaliphilic_spirochaete_medium
 original_name: ALKALIPHILIC SPIROCHAETE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.7
 media_term:

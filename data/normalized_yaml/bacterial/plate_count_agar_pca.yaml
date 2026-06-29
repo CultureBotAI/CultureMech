@@ -3,6 +3,7 @@ name: plate_count_agar_pca
 original_name: Plate Count Agar (PCA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Disrilled water

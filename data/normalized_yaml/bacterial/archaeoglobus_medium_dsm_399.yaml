@@ -3,6 +3,7 @@ name: archaeoglobus_medium_dsm_399
 original_name: Archaeoglobus medium (DSM 399)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: volatile_fatty_acid_solution_medium_909
 original_name: Volatile fatty acid solution (medium 909)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3132

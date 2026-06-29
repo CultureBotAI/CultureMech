@@ -3,6 +3,7 @@ name: mjy_medium_for_pyrolinea_marinus
 original_name: MJY MEDIUM FOR PYROLINEA MARINUS
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.2
 media_term:

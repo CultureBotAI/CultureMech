@@ -3,6 +3,7 @@ name: cm3_medium
 original_name: CM3 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 520 | DSMZ Medium: 520 (mediadive.medium:520)

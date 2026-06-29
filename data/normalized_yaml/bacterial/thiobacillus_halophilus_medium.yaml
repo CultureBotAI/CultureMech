@@ -3,6 +3,7 @@ name: thiobacillus_halophilus_medium
 original_name: THIOBACILLUS HALOPHILUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.3

@@ -3,6 +3,7 @@ name: mb_medium_for_methanobacterium
 original_name: MB MEDIUM FOR METHANOBACTERIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

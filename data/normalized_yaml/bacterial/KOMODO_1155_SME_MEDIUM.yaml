@@ -3,6 +3,7 @@ name: sme_medium
 original_name: SME MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1155 | DSMZ Medium: 1155

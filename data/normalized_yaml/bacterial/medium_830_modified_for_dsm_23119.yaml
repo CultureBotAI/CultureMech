@@ -3,6 +3,7 @@ name: medium_830_modified_for_dsm_23119
 original_name: MEDIUM 830 MODIFIED FOR DSM 23119
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

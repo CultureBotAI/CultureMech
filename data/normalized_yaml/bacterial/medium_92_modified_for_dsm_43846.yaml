@@ -3,6 +3,7 @@ name: medium_92_modified_for_dsm_43846
 original_name: MEDIUM 92 MODIFIED FOR DSM 43846
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 92_43846

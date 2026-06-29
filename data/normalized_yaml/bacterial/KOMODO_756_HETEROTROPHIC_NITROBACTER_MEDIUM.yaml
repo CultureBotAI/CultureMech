@@ -3,6 +3,7 @@ name: heterotrophic_nitrobacter_medium
 original_name: HETEROTROPHIC NITROBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 756 | DSMZ Medium: 756 (mediadive.medium:756)

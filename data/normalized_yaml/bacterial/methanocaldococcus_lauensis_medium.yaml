@@ -3,6 +3,7 @@ name: methanocaldococcus_lauensis_medium
 original_name: METHANOCALDOCOCCUS LAUENSIS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.2
 media_term:

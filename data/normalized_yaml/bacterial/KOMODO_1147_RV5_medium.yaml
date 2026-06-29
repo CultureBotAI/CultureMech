@@ -3,6 +3,7 @@ name: rv5_medium
 original_name: RV5 medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.5
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1147 | DSMZ Medium: 1147

@@ -3,6 +3,7 @@ name: ypgd_rich_medium
 original_name: YPGD (rich medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: yeast extract

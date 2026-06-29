@@ -3,6 +3,7 @@ name: mm_succinate_mms
 original_name: MM succinate (MMS)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

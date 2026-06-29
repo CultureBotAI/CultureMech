@@ -3,6 +3,7 @@ name: reactivation_with_liquid_medium_464
 original_name: REACTIVATION WITH LIQUID medium 464
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 464a

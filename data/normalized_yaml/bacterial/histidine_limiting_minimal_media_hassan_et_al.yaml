@@ -3,6 +3,7 @@ name: histidine_limiting_minimal_media_hassan_et_al
 original_name: '''histidine limiting minimal media (Hassan et al'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

@@ -3,6 +3,7 @@ name: desulfonatronum_lacustre_medium
 original_name: DESULFONATRONUM LACUSTRE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 8.8

@@ -3,6 +3,7 @@ name: trypticase_soy_yeast_tsy_broth
 original_name: trypticase soy yeast (TSY) broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: trypticase soy yeast (TSY) broth

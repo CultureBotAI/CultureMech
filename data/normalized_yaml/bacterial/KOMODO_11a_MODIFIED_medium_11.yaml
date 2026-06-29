@@ -3,6 +3,7 @@ name: modified_medium_11
 original_name: MODIFIED medium 11
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 11a

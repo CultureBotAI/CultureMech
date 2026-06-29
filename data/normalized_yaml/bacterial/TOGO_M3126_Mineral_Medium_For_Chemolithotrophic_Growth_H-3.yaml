@@ -3,6 +3,7 @@ name: mineral_medium_for_chemolithotrophic_growth_h_3
 original_name: Mineral Medium For Chemolithotrophic Growth (H-3)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Carbon dioxide gas

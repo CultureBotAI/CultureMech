@@ -3,6 +3,7 @@ name: sporomusa_silvacetica_medium
 original_name: SPOROMUSA SILVACETICA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

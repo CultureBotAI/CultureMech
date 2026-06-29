@@ -3,6 +3,7 @@ name: medium_215_modified_for_dsm_22834
 original_name: MEDIUM 215 MODIFIED FOR DSM 22834
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 215_22834

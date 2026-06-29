@@ -4,6 +4,7 @@ original_name: Anoxic bicarbonate-buffered basal medium (BBM) with 10 mM sodium 
   and various concentrations of sodium acetate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium acetate

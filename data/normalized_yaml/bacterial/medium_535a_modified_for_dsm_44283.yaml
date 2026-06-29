@@ -3,6 +3,7 @@ name: medium_535a_modified_for_dsm_44283
 original_name: MEDIUM 535a MODIFIED FOR DSM 44283
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 535a_44283

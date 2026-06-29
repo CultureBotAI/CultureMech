@@ -3,6 +3,7 @@ name: roseicyclus_medium
 original_name: ROSEICYCLUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 8.0

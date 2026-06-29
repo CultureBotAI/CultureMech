@@ -3,6 +3,7 @@ name: 1_2_tryptic_soy_broth_anaerobe
 original_name: 1/2 TRYPTIC SOY BROTH (ANAEROBE)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 1205 | DSMZ Medium: 1205 (mediadive.medium:1205)

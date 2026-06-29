@@ -3,6 +3,7 @@ name: modified_melin_norkrans_mmn_media
 original_name: Modified Melin Norkrans (MMN) Media
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

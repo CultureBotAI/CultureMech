@@ -3,6 +3,7 @@ name: glucose_peptone_medium
 original_name: GLUCOSE PEPTONE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.0
 media_term:

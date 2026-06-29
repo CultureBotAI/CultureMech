@@ -3,6 +3,7 @@ name: mitsuokella_dentalis_medium
 original_name: MITSUOKELLA DENTALIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 437

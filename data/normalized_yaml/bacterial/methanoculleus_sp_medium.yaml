@@ -3,6 +3,7 @@ name: methanoculleus_sp_medium
 original_name: METHANOCULLEUS SP. MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

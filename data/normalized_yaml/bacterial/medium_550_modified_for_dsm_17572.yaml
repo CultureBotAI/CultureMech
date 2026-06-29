@@ -3,6 +3,7 @@ name: medium_550_modified_for_dsm_17572
 original_name: MEDIUM 550 MODIFIED FOR DSM 17572
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 550_17572

@@ -3,6 +3,7 @@ name: for_dsm_18346_and_dsm_18979
 original_name: For DSM 18346 and DSM 18979
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.5
 media_term:

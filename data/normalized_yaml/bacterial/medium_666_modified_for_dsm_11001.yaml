@@ -3,6 +3,7 @@ name: medium_666_modified_for_dsm_11001
 original_name: MEDIUM 666 MODIFIED FOR DSM 11001
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 666_11001

@@ -3,6 +3,7 @@ name: halorhabdus_utahensis_medium
 original_name: HALORHABDUS UTAHENSIS medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.6
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 927 | DSMZ Medium: 927 (mediadive.medium:927)

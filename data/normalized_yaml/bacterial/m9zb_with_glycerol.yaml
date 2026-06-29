@@ -3,6 +3,7 @@ name: m9zb_with_glycerol
 original_name: M9zb with glycerol
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol

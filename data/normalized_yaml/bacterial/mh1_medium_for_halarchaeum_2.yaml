@@ -3,6 +3,7 @@ name: mh1_medium_for_halarchaeum_2
 original_name: MH1 MEDIUM FOR HALARCHAEUM-2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.5
 media_term:

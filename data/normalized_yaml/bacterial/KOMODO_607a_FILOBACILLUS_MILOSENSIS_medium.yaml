@@ -3,6 +3,7 @@ name: filobacillus_milosensis_medium
 original_name: FILOBACILLUS MILOSENSIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 607a

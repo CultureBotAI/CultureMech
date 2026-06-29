@@ -3,6 +3,7 @@ name: luria_bertani_lb_medium_buffered_mops
 original_name: Luria Bertani (LB) medium (buffered MOPS)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 3-[N-morpho- lino] propanesulfonic acid (MOPS)

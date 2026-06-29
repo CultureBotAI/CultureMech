@@ -3,6 +3,7 @@ name: liquid_basal_medium_for_methanosarcina
 original_name: Liquid Basal Medium For Methanosarcina
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

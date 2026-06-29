@@ -3,6 +3,7 @@ name: lactobacillus_pontis_medium
 original_name: Lactobacillus Pontis Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

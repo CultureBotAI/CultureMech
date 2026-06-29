@@ -3,6 +3,7 @@ name: for_dsm_15070_and_dsm_15071
 original_name: For DSM 15070 and DSM 15071
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

@@ -3,6 +3,7 @@ name: 2sna
 original_name: 2SNA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C96

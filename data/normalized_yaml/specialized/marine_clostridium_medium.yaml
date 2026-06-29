@@ -3,6 +3,7 @@ name: marine_clostridium_medium
 original_name: MARINE CLOSTRIDIUM MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

@@ -3,6 +3,7 @@ name: liquid_basal_medium_for_methanosarcina
 original_name: LIQUID BASAL MEDIUM FOR METHANOSARCINA
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

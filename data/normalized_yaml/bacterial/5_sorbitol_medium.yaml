@@ -3,6 +3,7 @@ name: 5_sorbitol_medium
 original_name: 5% SORBITOL MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.0
 media_term:

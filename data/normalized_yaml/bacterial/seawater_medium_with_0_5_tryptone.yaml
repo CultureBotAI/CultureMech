@@ -3,6 +3,7 @@ name: seawater_medium_with_0_5_tryptone
 original_name: seawater medium (with 0.5% tryptone)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: CrystalSea Marine Mix (Marine Enterprises International, Inc.)

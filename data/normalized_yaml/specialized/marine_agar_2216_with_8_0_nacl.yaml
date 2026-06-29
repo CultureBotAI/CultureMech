@@ -3,6 +3,7 @@ name: marine_agar_2216_with_8_0_nacl
 original_name: MARINE AGAR 2216 WITH  8.0% NaCl
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1015

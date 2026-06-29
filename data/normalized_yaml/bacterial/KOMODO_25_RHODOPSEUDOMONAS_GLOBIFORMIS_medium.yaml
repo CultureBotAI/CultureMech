@@ -3,6 +3,7 @@ name: rhodopseudomonas_globiformis_medium
 original_name: RHODOPSEUDOMONAS GLOBIFORMIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.9
 media_term:

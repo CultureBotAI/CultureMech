@@ -3,6 +3,7 @@ name: halo_2g
 original_name: Halo 2g
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: diazotrophic_medium_rba
 original_name: DIAZOTROPHIC medium (RBA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:

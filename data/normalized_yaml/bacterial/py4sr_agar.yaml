@@ -3,6 +3,7 @@ name: py4sr_agar
 original_name: PY4SR AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J364

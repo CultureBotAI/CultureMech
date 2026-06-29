@@ -3,6 +3,7 @@ name: vitamin_solution_ca_medium_87a
 original_name: Vitamin solution CA (medium 87a)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

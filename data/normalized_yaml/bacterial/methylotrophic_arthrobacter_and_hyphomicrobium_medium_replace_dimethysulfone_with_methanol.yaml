@@ -3,6 +3,7 @@ name: methylotrophic_arthrobacter_and_hyphomicrobium_medium_replace_dimethysulfo
 original_name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM_replace_dimethysulfone_with_Methanol
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

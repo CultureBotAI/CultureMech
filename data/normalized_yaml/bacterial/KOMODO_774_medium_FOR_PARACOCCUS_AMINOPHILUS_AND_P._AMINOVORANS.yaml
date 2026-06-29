@@ -3,6 +3,7 @@ name: medium_for_paracoccus_aminophilus_and_p_aminovorans
 original_name: medium FOR PARACOCCUS AMINOPHILUS AND P. AMINOVORANS
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:

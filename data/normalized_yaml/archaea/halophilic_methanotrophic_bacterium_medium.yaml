@@ -3,6 +3,7 @@ name: halophilic_methanotrophic_bacterium_medium
 original_name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

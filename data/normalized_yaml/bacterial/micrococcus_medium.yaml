@@ -3,6 +3,7 @@ name: micrococcus_medium
 original_name: MICROCOCCUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:

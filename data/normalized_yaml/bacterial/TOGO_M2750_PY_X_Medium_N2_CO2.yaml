@@ -3,6 +3,7 @@ name: py_x_medium_n2_co2
 original_name: PY + X Medium (N2/CO2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: medium_11_modified_for_dsm_20634
 original_name: MEDIUM 11 MODIFIED FOR DSM 20634
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 11_20634

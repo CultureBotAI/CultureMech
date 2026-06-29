@@ -3,6 +3,7 @@ name: tryptose_blood_agar_base
 original_name: Tryptose blood agar base
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tryptose blood agar base (Difco Laboratories, Detroit, MI)

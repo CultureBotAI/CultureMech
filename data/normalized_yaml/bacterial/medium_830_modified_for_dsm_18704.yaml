@@ -3,6 +3,7 @@ name: medium_830_modified_for_dsm_18704
 original_name: MEDIUM 830 MODIFIED FOR DSM 18704
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 4.5

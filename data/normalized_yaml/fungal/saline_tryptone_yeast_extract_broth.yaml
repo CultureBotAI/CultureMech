@@ -3,6 +3,7 @@ name: saline_tryptone_yeast_extract_broth
 original_name: SALINE TRYPTONE-YEAST EXTRACT BROTH
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.1
 media_term:

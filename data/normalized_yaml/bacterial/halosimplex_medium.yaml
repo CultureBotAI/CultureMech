@@ -3,6 +3,7 @@ name: halosimplex_medium
 original_name: HALOSIMPLEX MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.5
 media_term:

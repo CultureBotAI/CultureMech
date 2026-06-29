@@ -3,6 +3,7 @@ name: pfennig_thiofaba_medium
 original_name: PFENNIG THIOFABA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 4.5
 media_term:

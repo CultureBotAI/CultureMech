@@ -3,6 +3,7 @@ name: chopped_meat_medium_for_fretibacterium_sp
 original_name: CHOPPED MEAT MEDIUM FOR FRETIBACTERIUM SP.
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

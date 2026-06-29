@@ -3,6 +3,7 @@ name: rhodovulum_imhoffii_medium
 original_name: Rhodovulum Imhoffii Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ferric citrate (0.1%, w/v)

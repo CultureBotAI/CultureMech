@@ -3,6 +3,7 @@ name: thermoproteus_uzoniensis_medium
 original_name: THERMOPROTEUS UZONIENSIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 5.7

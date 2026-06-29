@@ -3,6 +3,7 @@ name: natroniella_medium_for_anb_phb2
 original_name: NATRONIELLA MEDIUM FOR ANB-PHB2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.6
 media_term:

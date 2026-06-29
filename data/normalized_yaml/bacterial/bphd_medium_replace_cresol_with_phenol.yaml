@@ -3,6 +3,7 @@ name: bphd_medium_replace_cresol_with_phenol
 original_name: BPHD Medium_replace_Cresol_with_Phenol
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

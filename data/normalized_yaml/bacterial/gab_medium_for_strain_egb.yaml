@@ -3,6 +3,7 @@ name: gab_medium_for_strain_egb
 original_name: GAB MEDIUM FOR STRAIN EGB
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.1
 media_term:

@@ -3,6 +3,7 @@ name: marine_spirochete_medium
 original_name: MARINE SPIROCHETE medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 1008 | DSMZ Medium: 1008 (mediadive.medium:1008)

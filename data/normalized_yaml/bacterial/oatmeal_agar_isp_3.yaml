@@ -3,6 +3,7 @@ name: oatmeal_agar_isp_3
 original_name: OATMEAL AGAR (ISP-3)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

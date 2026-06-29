@@ -3,6 +3,7 @@ name: ignicoccus_medium_for_dsm_18386
 original_name: Ignicoccus Medium (for DSM 18386)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium resazurin (0.1% w/v)

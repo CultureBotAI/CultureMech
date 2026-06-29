@@ -3,6 +3,7 @@ name: solution_a_medium_1145
 original_name: Solution A (medium 1145)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 4.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2026 | DSMZ Medium: 2026 (mediadive.medium:2026)

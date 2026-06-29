@@ -3,6 +3,7 @@ name: m17_medium_supplemented_with_20_g_l_of_lactose
 original_name: M17 medium supplemented with 20 g/L of lactose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Lactose

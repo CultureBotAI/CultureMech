@@ -3,6 +3,7 @@ name: mh1_medium_for_saliarchaeum_rubrodurum
 original_name: MH1 Medium For Saliarchaeum Rubrodurum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

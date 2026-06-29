@@ -3,6 +3,7 @@ name: halophilic_methanotrophic_bacterium_medium_replace_methane_with_methanol
 original_name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM_replace_methane_with_Methanol
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

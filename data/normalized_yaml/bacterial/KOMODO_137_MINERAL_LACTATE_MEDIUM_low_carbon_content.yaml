@@ -3,6 +3,7 @@ name: mineral_lactate_medium_low_carbon_content
 original_name: MINERAL LACTATE MEDIUM (low carbon content)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

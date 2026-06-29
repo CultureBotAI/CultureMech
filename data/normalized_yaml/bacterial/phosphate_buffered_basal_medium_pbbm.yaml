@@ -3,6 +3,7 @@ name: phosphate_buffered_basal_medium_pbbm
 original_name: Phosphate-buffered basal medium (Pbbm)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Resazurin (0.02%)

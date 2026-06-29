@@ -3,6 +3,7 @@ name: yeast_optimized_defined_medium_glucose
 original_name: '''Yeast Optimized Defined Medium (Glucose'
 category: fungal
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glucose

@@ -3,6 +3,7 @@ name: halomonas_desiderata_medium
 original_name: HALOMONAS DESIDERATA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.5

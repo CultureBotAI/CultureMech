@@ -3,6 +3,7 @@ name: fermentation_medium_trehalose_nh4cl
 original_name: '''Fermentation Medium (Trehalose+NH4Cl'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: alpha,alpha-Trehalose

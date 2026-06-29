@@ -3,6 +3,7 @@ name: s_w_ca
 original_name: S/W + Ca
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

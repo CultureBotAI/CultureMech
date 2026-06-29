@@ -3,6 +3,7 @@ name: campylobacter_rectus_medium
 original_name: CAMPYLOBACTER RECTUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

@@ -3,6 +3,7 @@ name: desulfofarcimen_medium_for_dsm_7213
 original_name: Desulfofarcimen Medium (For DSM 7213)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

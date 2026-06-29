@@ -3,6 +3,7 @@ name: isp_7_medium
 original_name: ISP 7 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1619

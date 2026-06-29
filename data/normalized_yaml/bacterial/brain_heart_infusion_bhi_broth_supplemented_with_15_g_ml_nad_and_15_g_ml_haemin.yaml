@@ -4,6 +4,7 @@ original_name: Brain heart infusion (BHI) broth supplemented with 15 μg/ml NAD 
   15 μg/ml haemin
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Haemin

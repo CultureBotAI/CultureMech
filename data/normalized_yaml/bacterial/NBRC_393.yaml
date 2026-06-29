@@ -4,6 +4,7 @@ original_name: '393'
 category: bacterial
 description: 393. NBRC 392.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''

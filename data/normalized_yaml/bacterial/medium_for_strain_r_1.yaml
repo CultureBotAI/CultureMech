@@ -3,6 +3,7 @@ name: medium_for_strain_r_1
 original_name: Medium for strain R-1
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

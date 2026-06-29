@@ -3,6 +3,7 @@ name: magnetospirillum_medium_a
 original_name: MAGNETOSPIRILLUM MEDIUM (A)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
 media_term:

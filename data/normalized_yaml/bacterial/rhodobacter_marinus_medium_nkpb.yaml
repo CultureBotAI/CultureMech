@@ -3,6 +3,7 @@ name: rhodobacter_marinus_medium_nkpb
 original_name: RHODOBACTER MARINUS MEDIUM (NKPB)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 media_term:

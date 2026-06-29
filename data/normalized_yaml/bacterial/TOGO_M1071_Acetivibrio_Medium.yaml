@@ -3,6 +3,7 @@ name: acetivibrio_medium
 original_name: Acetivibrio Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3 (5%, w/v)

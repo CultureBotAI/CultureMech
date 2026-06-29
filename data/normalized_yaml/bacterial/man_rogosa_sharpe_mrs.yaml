@@ -3,6 +3,7 @@ name: man_rogosa_sharpe_mrs
 original_name: Man-Rogosa-Sharpe (MRS)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Man-Rogosa-Sharpe (MRS) (Beijing Land Bridge Technology Co., Ltd.

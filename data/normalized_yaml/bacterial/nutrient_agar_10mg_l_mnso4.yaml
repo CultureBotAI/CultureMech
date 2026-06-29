@@ -3,6 +3,7 @@ name: nutrient_agar_10mg_l_mnso4
 original_name: Nutrient Agar + 10mg/L MnSO4
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

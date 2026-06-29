@@ -3,6 +3,7 @@ name: m9_phenanthrene
 original_name: M9-Phenanthrene
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: distilled water

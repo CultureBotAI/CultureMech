@@ -3,6 +3,7 @@ name: artificial_seawater_medium
 original_name: Artificial SEAWATER MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

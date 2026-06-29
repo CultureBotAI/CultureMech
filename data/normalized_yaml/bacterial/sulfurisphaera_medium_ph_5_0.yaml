@@ -3,6 +3,7 @@ name: sulfurisphaera_medium_ph_5_0
 original_name: Sulfurisphaera Medium (pH 5.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

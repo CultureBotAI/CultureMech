@@ -3,6 +3,7 @@ name: mops_medium_vanbogelen
 original_name: MOPS medium; VanBogelen
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

@@ -3,6 +3,7 @@ name: thermoplasma_volcanium_medium
 original_name: THERMOPLASMA VOLCANIUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 2.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 398 | DSMZ Medium: 398 (mediadive.medium:398)

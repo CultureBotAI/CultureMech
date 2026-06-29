@@ -3,6 +3,7 @@ name: hs_medium_methanol_acetate_medium_125_and_40_mm_respectively
 original_name: HS medium-methanol-acetate medium (125 and 40 mM, respectively)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: methanol

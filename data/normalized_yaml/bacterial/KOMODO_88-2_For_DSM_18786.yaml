@@ -3,6 +3,7 @@ name: for_dsm_18786
 original_name: For DSM 18786
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 0.8
 media_term:

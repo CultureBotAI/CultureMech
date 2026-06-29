@@ -4,6 +4,7 @@ original_name: '1311'
 category: bacterial
 description: 1311. NBRC 1308.
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''

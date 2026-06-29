@@ -3,6 +3,7 @@ name: blood_agar_no_2_oxoid
 original_name: blood agar No 2 (Oxoid)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

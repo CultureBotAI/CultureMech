@@ -3,6 +3,7 @@ name: anaerobic_double_strength_r2a_medium
 original_name: ANAEROBIC DOUBLE-STRENGTH R2A MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

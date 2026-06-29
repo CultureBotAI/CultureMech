@@ -3,6 +3,7 @@ name: cedears_standard_medium_3
 original_name: Cedears Standard Medium 3
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

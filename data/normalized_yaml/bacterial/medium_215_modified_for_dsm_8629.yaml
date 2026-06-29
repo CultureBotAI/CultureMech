@@ -3,6 +3,7 @@ name: medium_215_modified_for_dsm_8629
 original_name: MEDIUM 215 MODIFIED FOR DSM 8629
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 215_8629

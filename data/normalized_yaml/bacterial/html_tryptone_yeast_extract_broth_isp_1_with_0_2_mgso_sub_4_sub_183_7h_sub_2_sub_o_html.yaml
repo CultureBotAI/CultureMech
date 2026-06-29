@@ -3,6 +3,7 @@ name: html_tryptone_yeast_extract_broth_isp_1_with_0_2_mgso_sub_4_sub_183_7h_sub
 original_name: <html>TRYPTONE-Yeast Extract Broth (ISP-1) With 0.2% MgSO<sub>4</sub>&#183;7H<sub>2</sub>O</html>
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

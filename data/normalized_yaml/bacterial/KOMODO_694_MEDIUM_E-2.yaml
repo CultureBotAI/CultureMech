@@ -3,6 +3,7 @@ name: medium_e_2
 original_name: MEDIUM E-2
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

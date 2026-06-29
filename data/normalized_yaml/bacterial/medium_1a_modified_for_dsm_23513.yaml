@@ -3,6 +3,7 @@ name: medium_1a_modified_for_dsm_23513
 original_name: MEDIUM 1a MODIFIED FOR DSM 23513
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1a_23513

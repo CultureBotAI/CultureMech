@@ -3,6 +3,7 @@ name: haloanaerobacter_chitinovorans_medium_replace_glucose_with_chitin
 original_name: HALOANAEROBACTER CHITINOVORANS medium_replace_Glucose_with_chitin
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

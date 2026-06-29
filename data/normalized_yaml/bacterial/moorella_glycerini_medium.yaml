@@ -3,6 +3,7 @@ name: moorella_glycerini_medium
 original_name: MOORELLA GLYCERINI MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.7
 media_term:

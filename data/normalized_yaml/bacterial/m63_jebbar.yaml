@@ -3,6 +3,7 @@ name: m63_jebbar
 original_name: M63; jebbar
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol

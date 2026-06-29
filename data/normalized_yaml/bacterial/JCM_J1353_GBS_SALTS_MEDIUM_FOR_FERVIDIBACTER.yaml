@@ -3,6 +3,7 @@ name: gbs_salts_medium_for_fervidibacter
 original_name: GBS SALTS MEDIUM FOR FERVIDIBACTER
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

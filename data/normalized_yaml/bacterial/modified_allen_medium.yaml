@@ -3,6 +3,7 @@ name: modified_allen_medium
 original_name: Modified Allen Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

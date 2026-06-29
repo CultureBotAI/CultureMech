@@ -3,6 +3,7 @@ name: m9_with_iptg_oh
 original_name: '''M9 with iptg (oh'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: beta-D-Glucose

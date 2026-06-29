@@ -4,6 +4,7 @@ original_name: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522,
   22681, DSM 23576 and DSM 24553
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 104b.1 | DSMZ Medium: 104b

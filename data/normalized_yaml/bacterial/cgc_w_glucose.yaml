@@ -3,6 +3,7 @@ name: cgc_w_glucose
 original_name: CgC w/ glucose
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

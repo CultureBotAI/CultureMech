@@ -3,6 +3,7 @@ name: nitrobacter_medium_203
 original_name: Nitrobacter Medium 203
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water

@@ -3,6 +3,7 @@ name: pelobacter_venetianus_fresh_water_medium
 original_name: PELOBACTER VENETIANUS (fresh water) MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 299

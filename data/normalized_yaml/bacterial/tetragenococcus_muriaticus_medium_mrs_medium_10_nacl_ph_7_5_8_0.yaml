@@ -3,6 +3,7 @@ name: tetragenococcus_muriaticus_medium_mrs_medium_10_nacl_ph_7_5_8_0
 original_name: Tetragenococcus muriaticus Medium (MRS Medium + 10% NaCl, pH 7.5-8.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

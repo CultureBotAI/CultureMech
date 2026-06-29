@@ -3,6 +3,7 @@ name: gauzes_synthetic_medium_no_1_with_18_nacl
 original_name: GAUZE'S SYNTHETIC MEDIUM NO. 1 WITH 18% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.1
 media_term:

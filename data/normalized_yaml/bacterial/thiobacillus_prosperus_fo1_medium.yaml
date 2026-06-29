@@ -3,6 +3,7 @@ name: thiobacillus_prosperus_fo1_medium
 original_name: THIOBACILLUS PROSPERUS FO1 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

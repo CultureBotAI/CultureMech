@@ -3,6 +3,7 @@ name: desulfovibrio_inopinatus_medium_replace_na_pyruvate_with_1_2_4_trihydroxyb
 original_name: DESULFOVIBRIO INOPINATUS MEDIUM_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 799_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene

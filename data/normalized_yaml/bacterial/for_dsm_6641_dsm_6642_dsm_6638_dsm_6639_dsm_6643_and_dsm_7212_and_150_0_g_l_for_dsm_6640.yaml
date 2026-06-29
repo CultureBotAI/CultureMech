@@ -4,6 +4,7 @@ original_name: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM 721
   and 150.0 g/l for DSM 6640
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

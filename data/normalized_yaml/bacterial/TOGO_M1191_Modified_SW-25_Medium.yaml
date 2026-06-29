@@ -3,6 +3,7 @@ name: modified_sw_25_medium
 original_name: Modified SW-25 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract

@@ -3,6 +3,7 @@ name: brain_heart_infusion_broth
 original_name: Brain Heart Infusion Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water

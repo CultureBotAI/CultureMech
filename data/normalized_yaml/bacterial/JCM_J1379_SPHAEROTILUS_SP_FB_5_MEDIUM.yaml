@@ -3,6 +3,7 @@ name: sphaerotilus_sp_fb_5_medium
 original_name: SPHAEROTILUS SP. FB-5 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1379

@@ -3,6 +3,7 @@ name: r_8_a_h_medium
 original_name: R 8 A H MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.9
 media_term:

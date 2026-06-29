@@ -3,6 +3,7 @@ name: bs_107_medium
 original_name: Bs 107 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: See source for composition

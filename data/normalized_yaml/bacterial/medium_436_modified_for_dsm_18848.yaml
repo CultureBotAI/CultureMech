@@ -3,6 +3,7 @@ name: medium_436_modified_for_dsm_18848
 original_name: MEDIUM 436 MODIFIED FOR DSM 18848
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 436_18848

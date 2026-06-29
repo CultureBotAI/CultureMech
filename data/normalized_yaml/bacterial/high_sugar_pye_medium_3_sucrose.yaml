@@ -3,6 +3,7 @@ name: high_sugar_pye_medium_3_sucrose
 original_name: High-sugar PYE medium (3% sucrose)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: yeast extract

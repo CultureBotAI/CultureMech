@@ -3,6 +3,7 @@ name: medium_535_modified_for_dsm_43989_replace_sheep_blood_with_rabbit_blood
 original_name: MEDIUM 535 MODIFIED FOR DSM 43989_replace_sheep blood_with_rabbit blood
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 535_43989_replace_sheep blood_with_rabbit blood

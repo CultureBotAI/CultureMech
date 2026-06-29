@@ -3,6 +3,7 @@ name: mineral_medium_for_hydrogenophilus_islandicum
 original_name: MINERAL MEDIUM FOR HYDROGENOPHILUS ISLANDICUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

@@ -4,6 +4,7 @@ original_name: '116'
 category: bacterial
 description: 116. NBRC 114.
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto-Yeast Nitrogen Base w/o Amino acids (Difco)6.7gGlucose20gL-Leucine60mgL-Histidine20mgL-Tryptophan20mgL-Methionine20mgDistilled

@@ -3,6 +3,7 @@ name: trace_element_solution_medium_315
 original_name: Trace element solution (medium 315)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 2041 | DSMZ Medium: 2041 (mediadive.medium:2041)

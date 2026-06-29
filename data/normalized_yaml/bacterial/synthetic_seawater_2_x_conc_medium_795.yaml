@@ -3,6 +3,7 @@ name: synthetic_seawater_2_x_conc_medium_795
 original_name: Synthetic seawater (2 x conc.) (medium 795)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3057

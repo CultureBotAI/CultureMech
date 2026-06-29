@@ -3,6 +3,7 @@ name: halonatronum_saccharophilum_medium
 original_name: HALONATRONUM SACCHAROPHILUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.5

@@ -3,6 +3,7 @@ name: mrs_medium_pre_reduced
 original_name: MRS MEDIUM (pre-reduced)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.2

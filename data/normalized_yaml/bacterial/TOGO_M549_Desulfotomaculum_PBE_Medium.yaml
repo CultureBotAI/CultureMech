@@ -3,6 +3,7 @@ name: desulfotomaculum_pbe_medium
 original_name: Desulfotomaculum PBE Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

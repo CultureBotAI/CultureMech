@@ -3,6 +3,7 @@ name: hnw_medium
 original_name: HNW MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 997 | DSMZ Medium: 997 (mediadive.medium:997)

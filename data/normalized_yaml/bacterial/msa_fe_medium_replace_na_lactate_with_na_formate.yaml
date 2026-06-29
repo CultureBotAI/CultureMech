@@ -3,6 +3,7 @@ name: msa_fe_medium_replace_na_lactate_with_na_formate
 original_name: MSA-Fe medium_replace_Na-lactate_with_Na-formate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

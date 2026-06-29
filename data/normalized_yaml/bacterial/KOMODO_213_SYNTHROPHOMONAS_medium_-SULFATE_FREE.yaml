@@ -3,6 +3,7 @@ name: synthrophomonas_medium_sulfate_free
 original_name: SYNTHROPHOMONAS medium -SULFATE FREE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 213

@@ -3,6 +3,7 @@ name: ectothiorhodospira_vacuolata_medium
 original_name: ECTOTHIORHODOSPIRA VACUOLATA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.7
 media_term:

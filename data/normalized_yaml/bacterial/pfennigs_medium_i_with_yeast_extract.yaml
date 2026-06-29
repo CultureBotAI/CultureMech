@@ -3,6 +3,7 @@ name: pfennigs_medium_i_with_yeast_extract
 original_name: PFENNIG'S medium I WITH Yeast extract
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 39

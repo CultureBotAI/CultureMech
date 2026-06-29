@@ -3,6 +3,7 @@ name: modified_growth_medium_with_23_total_salt_concentration
 original_name: MODIFIED GROWTH MEDIUM WITH 23% TOTAL SALT CONCENTRATION
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: artificial_sea_water_tryptone_soy_broth_medium_asw_tsb_medium
 original_name: Artificial sea water - Tryptone soy broth Medium (ASW TSB Medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:

@@ -3,6 +3,7 @@ name: frr_6_frr_8_medium
 original_name: FRR-6, FRR-8 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

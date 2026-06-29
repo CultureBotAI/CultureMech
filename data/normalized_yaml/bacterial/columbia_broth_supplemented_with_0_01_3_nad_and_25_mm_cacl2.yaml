@@ -3,6 +3,7 @@ name: columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2
 original_name: Columbia broth supplemented with 0.01% 3-NAD and 25 mM CaCl2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: lb_broth_0_05_w_v_na2co3
 original_name: LB Broth + 0.05%(w/v) Na2CO3
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

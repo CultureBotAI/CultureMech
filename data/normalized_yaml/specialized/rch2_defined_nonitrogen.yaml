@@ -1,6 +1,7 @@
 id: CultureMech:015722
 name: RCH2 defined noNitrogen
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium Chloride

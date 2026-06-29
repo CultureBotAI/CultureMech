@@ -3,6 +3,7 @@ name: brain_heart_infusion_bhi_broth_supplemented_with_haemin_and_nad
 original_name: Brain–heart infusion (BHI) broth supplemented with haemin and NAD
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Haemin

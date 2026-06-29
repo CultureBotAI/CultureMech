@@ -3,6 +3,7 @@ name: medium_500_modified_for_dsm_10612
 original_name: MEDIUM 500 MODIFIED FOR DSM 10612
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 500_10612

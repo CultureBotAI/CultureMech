@@ -3,6 +3,7 @@ name: aspergillus_nidulans_minimal_medium
 original_name: ASPERGILLUS NIDULANS MINIMAL MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.5
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 204 | DSMZ Medium: 204 (mediadive.medium:204)

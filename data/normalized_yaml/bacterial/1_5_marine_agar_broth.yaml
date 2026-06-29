@@ -3,6 +3,7 @@ name: 1_5_marine_agar_broth
 original_name: 1/5 Marine Agar/Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: vxg_gellan
 original_name: VXG Gellan
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

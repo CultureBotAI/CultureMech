@@ -3,6 +3,7 @@ name: vulcano_low_salt_medium
 original_name: Vulcano Low Salt Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

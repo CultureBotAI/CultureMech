@@ -3,6 +3,7 @@ name: mineral_medium_for_thiomonas_islandicum
 original_name: MINERAL MEDIUM FOR THIOMONAS ISLANDICUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.0
 media_term:

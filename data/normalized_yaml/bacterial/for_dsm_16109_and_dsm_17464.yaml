@@ -3,6 +3,7 @@ name: for_dsm_16109_and_dsm_17464
 original_name: For DSM 16109 and DSM 17464
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

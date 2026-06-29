@@ -3,6 +3,7 @@ name: mmj_thi_medium
 original_name: MMJ/THI MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: for_dsm_15286_and_dsm_21156
 original_name: 'For DSM 15286 and DSM 21156:'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

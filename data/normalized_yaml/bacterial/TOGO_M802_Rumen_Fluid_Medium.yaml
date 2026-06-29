@@ -3,6 +3,7 @@ name: rumen_fluid_medium
 original_name: Rumen Fluid Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

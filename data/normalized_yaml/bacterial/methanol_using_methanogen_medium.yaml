@@ -3,6 +3,7 @@ name: methanol_using_methanogen_medium
 original_name: Methanol-using methanogen medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

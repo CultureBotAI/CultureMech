@@ -3,6 +3,7 @@ name: artficial_freshwater_medium_ii
 original_name: Artficial Freshwater Medium II
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

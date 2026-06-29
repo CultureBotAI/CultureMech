@@ -3,6 +3,7 @@ name: modified_pfennig_medium_with_acetate_and_fumarate
 original_name: MODIFIED PFENNIG MEDIUM WITH ACETATE AND FUMARATE
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1341

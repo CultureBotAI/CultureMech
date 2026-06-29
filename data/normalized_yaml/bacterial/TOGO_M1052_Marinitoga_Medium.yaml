@@ -3,6 +3,7 @@ name: marinitoga_medium
 original_name: Marinitoga Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

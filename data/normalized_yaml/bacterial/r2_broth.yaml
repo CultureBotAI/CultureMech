@@ -3,6 +3,7 @@ name: r2_broth
 original_name: R2 broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

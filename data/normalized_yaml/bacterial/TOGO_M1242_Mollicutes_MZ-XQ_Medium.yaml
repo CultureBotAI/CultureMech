@@ -3,6 +3,7 @@ name: mollicutes_mz_xq_medium
 original_name: Mollicutes MZ-XQ Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: alicycliphius_denitrificans_medium
 original_name: Alicycliphius denitrificans Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

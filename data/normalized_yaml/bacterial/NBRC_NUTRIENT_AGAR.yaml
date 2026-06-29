@@ -4,6 +4,7 @@ original_name: Nutrient Agar
 category: bacterial
 description: Nutrient Agar. NBRC No. 1.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Beef extract

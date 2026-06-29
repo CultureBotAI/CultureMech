@@ -3,6 +3,7 @@ name: acidithiobacillus_thiooxidans_medium
 original_name: ACIDITHIOBACILLUS THIOOXIDANS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 4.4

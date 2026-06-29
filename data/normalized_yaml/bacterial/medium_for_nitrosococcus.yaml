@@ -3,6 +3,7 @@ name: medium_for_nitrosococcus
 original_name: Medium for Nitrosococcus
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 0.04% Phenol red

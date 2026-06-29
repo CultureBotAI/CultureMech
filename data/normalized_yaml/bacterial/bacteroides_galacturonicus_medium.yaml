@@ -3,6 +3,7 @@ name: bacteroides_galacturonicus_medium
 original_name: BACTEROIDES GALACTURONICUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.1
 media_term:

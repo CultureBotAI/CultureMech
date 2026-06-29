@@ -3,6 +3,7 @@ name: acidic_mrs_medium_ph_5_2
 original_name: Acidic MRS Medium (pH 5.2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: n_c_0_4_glycerol
 original_name: N-c- 0.4% glycerol
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol

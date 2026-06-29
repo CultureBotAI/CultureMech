@@ -3,6 +3,7 @@ name: marine_aob_medium_b
 original_name: MARINE AOB MEDIUM (B)
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

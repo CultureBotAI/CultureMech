@@ -3,6 +3,7 @@ name: malt_extract_ebios_agar_meba
 original_name: Malt Extract Ebios Agar (MEBA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

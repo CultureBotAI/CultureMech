@@ -3,6 +3,7 @@ name: meiothermus_medium_r8
 original_name: MEIOTHERMUS MEDIUM R8
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

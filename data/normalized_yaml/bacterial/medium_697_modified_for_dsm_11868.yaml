@@ -3,6 +3,7 @@ name: medium_697_modified_for_dsm_11868
 original_name: MEDIUM 697 MODIFIED FOR DSM 11868
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 697_11868

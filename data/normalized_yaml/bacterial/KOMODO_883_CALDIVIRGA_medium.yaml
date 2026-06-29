@@ -3,6 +3,7 @@ name: caldivirga_medium
 original_name: CALDIVIRGA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 883 | DSMZ Medium: 883 (mediadive.medium:883)

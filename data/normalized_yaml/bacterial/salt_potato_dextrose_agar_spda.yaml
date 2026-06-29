@@ -3,6 +3,7 @@ name: salt_potato_dextrose_agar_spda
 original_name: SALT POTATO-DEXTROSE AGAR (SPDA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 5.5
 media_term:

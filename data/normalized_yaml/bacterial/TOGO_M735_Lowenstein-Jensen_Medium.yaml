@@ -3,6 +3,7 @@ name: lowenstein_jensen_medium
 original_name: Lowenstein-Jensen Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Lowenstein--Jensen medium slants (BD 220908)

@@ -3,6 +3,7 @@ name: saline_tryptone_yeast_extract_broth
 original_name: Saline Tryptone-Yeast Extract Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

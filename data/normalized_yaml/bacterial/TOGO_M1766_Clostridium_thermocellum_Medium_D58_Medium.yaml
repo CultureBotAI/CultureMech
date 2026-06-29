@@ -3,6 +3,7 @@ name: clostridium_thermocellum_medium_d58_medium
 original_name: Clostridium thermocellum Medium (D58 Medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

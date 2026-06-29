@@ -3,6 +3,7 @@ name: mineral_medium_ph_7_25
 original_name: MINERAL MEDIUM PH 7.25
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

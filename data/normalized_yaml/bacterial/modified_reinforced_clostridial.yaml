@@ -3,6 +3,7 @@ name: modified_reinforced_clostridial
 original_name: Modified Reinforced Clostridial
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Resazurin (0.025%)

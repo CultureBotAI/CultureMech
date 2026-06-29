@@ -3,6 +3,7 @@ name: anb_aerobic
 original_name: ANB aerobic
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1778a

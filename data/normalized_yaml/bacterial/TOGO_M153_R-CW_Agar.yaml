@@ -3,6 +3,7 @@ name: r_cw_agar
 original_name: R-CW Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MgSO4・7H2O

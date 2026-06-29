@@ -3,6 +3,7 @@ name: alkaliphilic_methanogen_medium
 original_name: ALKALIPHILIC METHANOGEN medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.2

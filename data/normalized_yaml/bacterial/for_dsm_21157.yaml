@@ -3,6 +3,7 @@ name: for_dsm_21157
 original_name: For DSM 21157
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

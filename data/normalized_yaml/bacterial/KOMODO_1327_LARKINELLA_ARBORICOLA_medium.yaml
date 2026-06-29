@@ -3,6 +3,7 @@ name: larkinella_arboricola_medium
 original_name: LARKINELLA ARBORICOLA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 6.0

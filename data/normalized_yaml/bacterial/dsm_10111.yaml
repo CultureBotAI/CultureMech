@@ -3,6 +3,7 @@ name: dsm_10111
 original_name: DSM 10111
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

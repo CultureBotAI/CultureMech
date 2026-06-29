@@ -3,6 +3,7 @@ name: bg11_0_015_mm_iron_shcolnick_2006
 original_name: '''BG11, 0.015 mM Iron (Shcolnick 2006'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Cobalt nitrate

@@ -3,6 +3,7 @@ name: ko2_nh4
 original_name: KO2(NH4)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: medium_514_modified_for_dsm_16628
 original_name: MEDIUM 514 MODIFIED FOR DSM 16628
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 514_16628

@@ -3,6 +3,7 @@ name: mrs_medium_containing_erythromycin
 original_name: MRS medium (containing erythromycin)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: erythromycin

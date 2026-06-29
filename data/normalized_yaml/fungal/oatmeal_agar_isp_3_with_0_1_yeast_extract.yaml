@@ -3,6 +3,7 @@ name: oatmeal_agar_isp_3_with_0_1_yeast_extract
 original_name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J51

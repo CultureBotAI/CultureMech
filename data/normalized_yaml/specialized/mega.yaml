@@ -1,6 +1,7 @@
 id: CultureMech:015582
 name: Mega
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate monobasic

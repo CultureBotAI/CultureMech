@@ -3,6 +3,7 @@ name: methanohalophilus_euhalobius_medium
 original_name: METHANOHALOPHILUS EUHALOBIUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

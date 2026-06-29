@@ -3,6 +3,7 @@ name: synbiobacterium_ka13_medium
 original_name: SYNBIOBACTERIUM KA13 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:

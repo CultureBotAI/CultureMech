@@ -3,6 +3,7 @@ name: for_dsm_7526
 original_name: For DSM 7526
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457b.1

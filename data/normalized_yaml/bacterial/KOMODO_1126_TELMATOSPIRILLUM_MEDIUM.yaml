@@ -3,6 +3,7 @@ name: telmatospirillum_medium
 original_name: TELMATOSPIRILLUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 notes: 'pH buffer: H3PO4 | Source: KOMODO ModelSEED | ID: 1126 | DSMZ Medium: 1126

@@ -3,6 +3,7 @@ name: phosphate_buffer_medium_878
 original_name: Phosphate buffer (medium 878)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

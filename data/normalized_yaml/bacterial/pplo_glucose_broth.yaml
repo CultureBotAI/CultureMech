@@ -3,6 +3,7 @@ name: pplo_glucose_broth
 original_name: PPLO-GLUCOSE BROTH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 media_term:

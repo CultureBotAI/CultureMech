@@ -4,6 +4,7 @@ original_name: '355'
 category: bacterial
 description: 355. NBRC 352.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Hipolypepton*10gYeast extract2gMethanol**5mlMgSO4·7H2O1gAgar (if

@@ -1,6 +1,7 @@
 id: CultureMech:015749
 name: Soil Defined Media (SDM)
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: SDM_noCarbon

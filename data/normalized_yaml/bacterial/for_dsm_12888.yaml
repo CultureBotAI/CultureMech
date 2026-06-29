@@ -3,6 +3,7 @@ name: for_dsm_12888
 original_name: For DSM 12888
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

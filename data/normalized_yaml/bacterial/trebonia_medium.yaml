@@ -3,6 +3,7 @@ name: trebonia_medium
 original_name: TREBONIA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 media_term:

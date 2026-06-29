@@ -2,6 +2,7 @@ id: CultureMech:000031
 name: bold_1nv_erdshreiber_4_1_medium
 category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.

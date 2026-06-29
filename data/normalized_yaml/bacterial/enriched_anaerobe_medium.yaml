@@ -3,6 +3,7 @@ name: enriched_anaerobe_medium
 original_name: Enriched anaerobe medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: 0.025% Resazurin

@@ -3,6 +3,7 @@ name: green_sulfur_bacterium_medium_1_nacl
 original_name: Green Sulfur Bacterium Medium (1% NaCl)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

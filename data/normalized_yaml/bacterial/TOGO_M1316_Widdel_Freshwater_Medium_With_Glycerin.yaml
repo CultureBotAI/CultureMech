@@ -3,6 +3,7 @@ name: widdel_freshwater_medium_with_glycerin
 original_name: Widdel Freshwater Medium With Glycerin
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

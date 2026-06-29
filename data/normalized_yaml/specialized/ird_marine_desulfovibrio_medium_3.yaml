@@ -3,6 +3,7 @@ name: ird_marine_desulfovibrio_medium_3
 original_name: IRD MARINE DESULFOVIBRIO MEDIUM-3
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1117

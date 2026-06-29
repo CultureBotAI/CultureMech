@@ -3,6 +3,7 @@ name: modified_marine_medium_for_dethiosulfobacter
 original_name: Modified Marine Medium For Dethiosulfobacter
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Carbon dioxide gas

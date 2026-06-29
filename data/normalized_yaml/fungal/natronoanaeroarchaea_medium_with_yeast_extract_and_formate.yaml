@@ -3,6 +3,7 @@ name: natronoanaeroarchaea_medium_with_yeast_extract_and_formate
 original_name: NATRONOANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND FORMATE
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1288

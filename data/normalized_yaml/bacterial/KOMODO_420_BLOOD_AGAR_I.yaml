@@ -3,6 +3,7 @@ name: blood_agar_i
 original_name: BLOOD AGAR I
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 420

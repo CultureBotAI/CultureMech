@@ -3,6 +3,7 @@ name: pelobacter_propionicus_medium_freshwater
 original_name: PELOBACTER PROPIONICUS MEDIUM (FRESHWATER)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

@@ -3,6 +3,7 @@ name: desulfacinum_hydrothermale_medium
 original_name: DESULFACINUM HYDROTHERMALE MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

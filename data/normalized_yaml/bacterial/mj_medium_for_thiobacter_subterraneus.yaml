@@ -3,6 +3,7 @@ name: mj_medium_for_thiobacter_subterraneus
 original_name: MJ MEDIUM FOR THIOBACTER SUBTERRANEUS
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1011a

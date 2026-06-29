@@ -3,6 +3,7 @@ name: medium_for_strain_t08
 original_name: Medium for Strain T08
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

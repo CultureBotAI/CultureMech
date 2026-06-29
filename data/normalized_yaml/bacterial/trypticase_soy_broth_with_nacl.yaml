@@ -3,6 +3,7 @@ name: trypticase_soy_broth_with_nacl
 original_name: Trypticase soy broth with NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl

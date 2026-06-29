@@ -3,6 +3,7 @@ name: marine_caulobacter_medium_spyem_containing_sea_salts_and_nh4cl
 original_name: Marine-Caulobacter medium SPYEM containing sea salts and NH4Cl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NH4Cl

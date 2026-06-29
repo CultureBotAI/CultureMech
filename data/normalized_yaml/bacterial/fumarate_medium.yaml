@@ -3,6 +3,7 @@ name: fumarate_medium
 original_name: FUMARATE MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.4
 notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 195a | DSMZ

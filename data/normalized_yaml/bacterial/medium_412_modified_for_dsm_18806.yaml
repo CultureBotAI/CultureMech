@@ -3,6 +3,7 @@ name: medium_412_modified_for_dsm_18806
 original_name: MEDIUM 412 MODIFIED FOR DSM 18806
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 412_18806

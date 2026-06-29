@@ -3,6 +3,7 @@ name: m9_minimal_media
 original_name: M9 Minimal Media
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 1M CaCl2

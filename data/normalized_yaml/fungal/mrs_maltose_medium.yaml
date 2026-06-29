@@ -3,6 +3,7 @@ name: mrs_maltose_medium
 original_name: MRS MALTOSE MEDIUM
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

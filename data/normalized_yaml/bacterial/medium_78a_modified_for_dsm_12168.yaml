@@ -3,6 +3,7 @@ name: medium_78a_modified_for_dsm_12168
 original_name: MEDIUM 78a MODIFIED FOR DSM 12168
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 78a_12168

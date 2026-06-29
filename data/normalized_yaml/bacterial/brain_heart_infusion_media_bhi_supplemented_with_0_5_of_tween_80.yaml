@@ -3,6 +3,7 @@ name: brain_heart_infusion_media_bhi_supplemented_with_0_5_of_tween_80
 original_name: Brain-heart-infusion media (BHI) supplemented with 0.5% of Tween 80
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: vero_b4_medium
 original_name: Vero B4 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1198

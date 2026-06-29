@@ -3,6 +3,7 @@ name: brain_heart_infusion_agar_containing_7_horse_blood_and_0_4_isovitalex
 original_name: brain heart infusion agar (containing 7% horse blood and 0.4% isovitalex)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: horse blood

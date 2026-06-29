@@ -3,6 +3,7 @@ name: syntrophococcus_sucromutans_medium_replace_trypticase_bbl_with_casitone
 original_name: SYNTROPHOCOCCUS SUCROMUTANS medium_replace_Trypticase (BBL)_with_Casitone
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.4

@@ -3,6 +3,7 @@ name: wilkins_chalgren_anaerobe_broth_n2_co2_for_dsm_15567
 original_name: Wilkins-Chalgren Anaerobe Broth (N2/CO2) (For DSM 15567)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

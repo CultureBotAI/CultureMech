@@ -3,6 +3,7 @@ name: luria_broth_lb_medium_supplemented_with_the_appropriate_antibiotics
 original_name: Luria Broth (LB) medium supplemented with the appropriate antibiotics
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Chloramphenicol

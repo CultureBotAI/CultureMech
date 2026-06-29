@@ -3,6 +3,7 @@ name: tryptone_soya_broth_tsb_oxoid
 original_name: Tryptone soya broth (TSB) (Oxoid)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Pancreatic digest of casein

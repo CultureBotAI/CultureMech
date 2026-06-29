@@ -1,6 +1,7 @@
 id: CultureMech:015771
 name: Varel Bryant medium
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate monobasic

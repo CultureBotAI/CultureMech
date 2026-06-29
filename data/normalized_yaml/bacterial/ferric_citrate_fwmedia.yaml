@@ -3,6 +3,7 @@ name: ferric_citrate_fwmedia
 original_name: FERRIC CITRATE FWMEDIA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J472

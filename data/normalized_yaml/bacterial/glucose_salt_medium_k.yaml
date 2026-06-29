@@ -3,6 +3,7 @@ name: glucose_salt_medium_k
 original_name: '''Glucose salt (Medium K'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

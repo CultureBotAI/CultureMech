@@ -3,6 +3,7 @@ name: trace_element_solution_medium_1272
 original_name: Trace element solution (medium 1272)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2114 | DSMZ Medium: 2114 (mediadive.medium:2114)

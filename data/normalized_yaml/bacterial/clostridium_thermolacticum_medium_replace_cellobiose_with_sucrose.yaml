@@ -3,6 +3,7 @@ name: clostridium_thermolacticum_medium_replace_cellobiose_with_sucrose
 original_name: CLOSTRIDIUM THERMOLACTICUM medium_replace_Cellobiose_with_sucrose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

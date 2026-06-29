@@ -3,6 +3,7 @@ name: modified_hayflick_broth_medium_containing_20_fetal_bovine_serum
 original_name: Modified Hayflick broth medium containing 20% fetal bovine serum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 0.5% phenol red (Flow)

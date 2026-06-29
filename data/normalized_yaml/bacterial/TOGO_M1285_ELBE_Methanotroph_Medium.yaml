@@ -3,6 +3,7 @@ name: elbe_methanotroph_medium
 original_name: ELBE Methanotroph Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

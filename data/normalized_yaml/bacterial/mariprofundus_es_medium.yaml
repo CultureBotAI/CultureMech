@@ -3,6 +3,7 @@ name: mariprofundus_es_medium
 original_name: MARIPROFUNDUS (ES) MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 6.1

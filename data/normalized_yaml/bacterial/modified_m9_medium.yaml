@@ -3,6 +3,7 @@ name: modified_m9_medium
 original_name: Modified M9 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

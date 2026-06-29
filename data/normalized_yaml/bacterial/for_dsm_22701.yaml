@@ -3,6 +3,7 @@ name: for_dsm_22701
 original_name: For DSM 22701
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 5.5

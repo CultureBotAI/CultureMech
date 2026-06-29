@@ -3,6 +3,7 @@ name: 15_mh_medium
 original_name: 15% MH Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

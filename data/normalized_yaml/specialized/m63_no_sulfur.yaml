@@ -1,6 +1,7 @@
 id: CultureMech:015539
 name: M63 no sulfur
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate monobasic

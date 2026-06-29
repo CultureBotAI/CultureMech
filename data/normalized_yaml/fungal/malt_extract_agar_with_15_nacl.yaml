@@ -3,6 +3,7 @@ name: malt_extract_agar_with_15_nacl
 original_name: MALT EXTRACT AGAR WITH 15% NaCl
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J125

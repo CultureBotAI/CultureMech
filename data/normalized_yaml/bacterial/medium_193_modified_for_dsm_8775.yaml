@@ -3,6 +3,7 @@ name: medium_193_modified_for_dsm_8775
 original_name: MEDIUM 193 MODIFIED FOR DSM 8775
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 193_8775

@@ -3,6 +3,7 @@ name: tepidibacter_8c15b_medium
 original_name: TEPIDIBACTER 8C15B MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

@@ -1,6 +1,7 @@
 id: CultureMech:015520
 name: Dv base Y medium
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Dv_base_medium

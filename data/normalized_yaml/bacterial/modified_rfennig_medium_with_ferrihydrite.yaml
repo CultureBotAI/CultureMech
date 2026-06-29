@@ -3,6 +3,7 @@ name: modified_rfennig_medium_with_ferrihydrite
 original_name: Modified Rfennig Medium With Ferrihydrite
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

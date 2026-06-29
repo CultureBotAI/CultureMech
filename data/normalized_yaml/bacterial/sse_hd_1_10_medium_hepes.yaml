@@ -3,6 +3,7 @@ name: sse_hd_1_10_medium_hepes
 original_name: SSE/HD 1:10 MEDIUM (HEPES)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: anaerobic_seawater_swm_medium
 original_name: ANAEROBIC SEAWATER (SWM) MEDIUM
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

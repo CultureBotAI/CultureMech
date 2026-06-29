@@ -3,6 +3,7 @@ name: medium_736_modified_for_dsm_22413
 original_name: MEDIUM 736 MODIFIED FOR DSM 22413
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 736_22413

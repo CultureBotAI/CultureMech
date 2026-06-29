@@ -3,6 +3,7 @@ name: half_strength_bacto_marine_broth
 original_name: Half Strength Bacto Marine Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

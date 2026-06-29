@@ -3,6 +3,7 @@ name: medium_340_modified_for_dsm_7271
 original_name: MEDIUM 340 MODIFIED FOR DSM 7271
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 340_7271

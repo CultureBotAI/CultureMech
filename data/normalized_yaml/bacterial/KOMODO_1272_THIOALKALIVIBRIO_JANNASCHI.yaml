@@ -3,6 +3,7 @@ name: thioalkalivibrio_jannaschi
 original_name: THIOALKALIVIBRIO JANNASCHI
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:

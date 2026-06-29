@@ -1,6 +1,7 @@
 id: CultureMech:015636
 name: MRS
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

@@ -3,6 +3,7 @@ name: hydrogenobacter_halophilus_medium
 original_name: HYDROGENOBACTER HALOPHILUS MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

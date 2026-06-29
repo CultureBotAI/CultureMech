@@ -3,6 +3,7 @@ name: serpulina_murdochii_medium
 original_name: Serpulina Murdochii Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: sterile bovine serum (heat inactivated at 56°C for 45 min)

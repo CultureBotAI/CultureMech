@@ -3,6 +3,7 @@ name: modified_castenholz_medium
 original_name: MODIFIED CASTENHOLZ medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.8
 notes: 'pH buffer: NAOH | Source: KOMODO ModelSEED | ID: 86a | DSMZ Medium: 86a (mediadive.medium:86a)

@@ -3,6 +3,7 @@ name: desulfobacula_toluolica_medium
 original_name: DESULFOBACULA TOLUOLICA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 383b

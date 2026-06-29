@@ -3,6 +3,7 @@ name: marine_broth_roth_cp73
 original_name: MARINE BROTH (ROTH CP73)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.4

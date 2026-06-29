@@ -3,6 +3,7 @@ name: schlesneria_paludicola_medium
 original_name: SCHLESNERIA PALUDICOLA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 5.5

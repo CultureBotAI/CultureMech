@@ -3,6 +3,7 @@ name: bg11
 original_name: BG11₀
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.1
 media_term:

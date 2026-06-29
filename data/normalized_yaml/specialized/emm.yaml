@@ -1,6 +1,7 @@
 id: CultureMech:015522
 name: EMM
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium D,L-Lactate

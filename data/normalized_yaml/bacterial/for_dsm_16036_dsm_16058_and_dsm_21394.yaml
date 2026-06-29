@@ -3,6 +3,7 @@ name: for_dsm_16036_dsm_16058_and_dsm_21394
 original_name: For DSM 16036, DSM 16058 and DSM 21394
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

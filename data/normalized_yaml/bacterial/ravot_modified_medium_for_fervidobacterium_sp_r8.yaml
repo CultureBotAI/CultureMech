@@ -3,6 +3,7 @@ name: ravot_modified_medium_for_fervidobacterium_sp_r8
 original_name: RAVOT MODIFIED MEDIUM FOR FERVIDOBACTERIUM SP. R8
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.3
 media_term:

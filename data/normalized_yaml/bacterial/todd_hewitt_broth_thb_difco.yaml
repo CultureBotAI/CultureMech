@@ -3,6 +3,7 @@ name: todd_hewitt_broth_thb_difco
 original_name: Todd-Hewitt broth (THB; Difco)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

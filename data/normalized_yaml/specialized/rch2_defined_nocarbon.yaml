@@ -1,6 +1,7 @@
 id: CultureMech:015715
 name: RCH2 defined noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride

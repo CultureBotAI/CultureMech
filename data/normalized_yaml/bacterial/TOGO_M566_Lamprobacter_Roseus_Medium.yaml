@@ -3,6 +3,7 @@ name: lamprobacter_roseus_medium
 original_name: Lamprobacter Roseus Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients: []
 media_term:

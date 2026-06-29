@@ -3,6 +3,7 @@ name: halarchaeum_neutrophilum_medium
 original_name: Halarchaeum Neutrophilum Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

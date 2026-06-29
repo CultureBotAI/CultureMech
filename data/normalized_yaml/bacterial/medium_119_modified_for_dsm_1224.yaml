@@ -3,6 +3,7 @@ name: medium_119_modified_for_dsm_1224
 original_name: MEDIUM 119 MODIFIED FOR DSM 1224
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

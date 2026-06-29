@@ -3,6 +3,7 @@ name: bacteroides_cellulosolvens_medium
 original_name: BACTEROIDES CELLULOSOLVENS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

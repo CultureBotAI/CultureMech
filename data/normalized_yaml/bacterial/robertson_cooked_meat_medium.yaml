@@ -3,6 +3,7 @@ name: robertson_cooked_meat_medium
 original_name: Robertson cooked meat medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Robertson cooked meat medium

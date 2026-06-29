@@ -3,6 +3,7 @@ name: modified_reinforced_clostridial_medium
 original_name: MODIFIED REINFORCED CLOSTRIDIAL MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.2
 media_term:

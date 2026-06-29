@@ -3,6 +3,7 @@ name: medium_547_modified_for_dsm_44048
 original_name: MEDIUM 547 MODIFIED FOR DSM 44048
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 547_44048

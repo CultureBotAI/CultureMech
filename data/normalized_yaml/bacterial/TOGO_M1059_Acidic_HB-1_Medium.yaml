@@ -3,6 +3,7 @@ name: acidic_hb_1_medium
 original_name: Acidic HB-1 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients: []
 media_term:

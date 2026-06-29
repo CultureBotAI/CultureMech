@@ -3,6 +3,7 @@ name: gifu_anaerobic_medium_gam_broth
 original_name: Gifu anaerobic medium (GAM) broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

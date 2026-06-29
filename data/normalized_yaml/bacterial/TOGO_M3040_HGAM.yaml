@@ -3,6 +3,7 @@ name: hgam
 original_name: HGAM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

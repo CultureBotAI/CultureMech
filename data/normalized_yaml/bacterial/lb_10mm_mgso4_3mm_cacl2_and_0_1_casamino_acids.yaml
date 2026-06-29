@@ -3,6 +3,7 @@ name: lb_10mm_mgso4_3mm_cacl2_and_0_1_casamino_acids
 original_name: LB + 10mM MgSO4, 3mM CaCl2 and 0.1% Casamino acids
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

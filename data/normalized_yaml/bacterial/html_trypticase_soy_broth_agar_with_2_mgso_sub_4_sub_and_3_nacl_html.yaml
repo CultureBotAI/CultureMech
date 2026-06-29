@@ -3,6 +3,7 @@ name: html_trypticase_soy_broth_agar_with_2_mgso_sub_4_sub_and_3_nacl_html
 original_name: <html>TRYPTICASE Soy Broth Agar With 2% MgSO<sub>4</sub> And 3% NaCl</html>
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

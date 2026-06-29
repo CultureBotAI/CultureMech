@@ -3,6 +3,7 @@ name: peat_medium_with_sucrose
 original_name: Peat Medium With Sucrose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

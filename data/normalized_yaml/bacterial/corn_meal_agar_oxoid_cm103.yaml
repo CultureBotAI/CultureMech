@@ -3,6 +3,7 @@ name: corn_meal_agar_oxoid_cm103
 original_name: Corn meal Agar (Oxoid CM103)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 5.8

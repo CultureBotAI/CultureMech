@@ -3,6 +3,7 @@ name: modified_1_10_pygv_medium
 original_name: Modified 1/10 PYGV Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

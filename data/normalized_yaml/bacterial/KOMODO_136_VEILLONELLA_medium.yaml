@@ -3,6 +3,7 @@ name: veillonella_medium
 original_name: VEILLONELLA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: K2CO3 | Source: KOMODO ModelSEED | ID: 136 | DSMZ Medium: 136 (mediadive.medium:136)

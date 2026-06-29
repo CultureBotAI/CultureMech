@@ -3,6 +3,7 @@ name: medium_413_modified_for_dsm_20703
 original_name: MEDIUM 413 MODIFIED FOR DSM 20703
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 413_20703

@@ -3,6 +3,7 @@ name: sulfolobus_medium_anaerobic
 original_name: SULFOLOBUS MEDIUM (ANAEROBIC)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.0
 media_term:

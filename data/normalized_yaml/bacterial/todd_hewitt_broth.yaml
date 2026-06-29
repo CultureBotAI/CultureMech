@@ -3,6 +3,7 @@ name: todd_hewitt_broth
 original_name: Todd–Hewitt broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Todd–Hewitt broth (Oxoid)

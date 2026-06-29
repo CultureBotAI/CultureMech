@@ -3,6 +3,7 @@ name: mitsuhashi_maramorosch_m_m_medium
 original_name: Mitsuhashi-Maramorosch (M&M) medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

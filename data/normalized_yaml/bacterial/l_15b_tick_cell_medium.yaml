@@ -3,6 +3,7 @@ name: l_15b_tick_cell_medium
 original_name: L-15B Tick Cell Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1591

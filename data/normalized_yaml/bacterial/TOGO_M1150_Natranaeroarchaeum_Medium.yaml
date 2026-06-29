@@ -3,6 +3,7 @@ name: natranaeroarchaeum_medium
 original_name: Natranaeroarchaeum Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Soda based mineral medium (sterilized, see below)

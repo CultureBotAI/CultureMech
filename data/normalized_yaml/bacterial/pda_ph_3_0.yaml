@@ -3,6 +3,7 @@ name: pda_ph_3_0
 original_name: PDA (pH 3.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

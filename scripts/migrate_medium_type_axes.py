@@ -115,6 +115,40 @@ def apply_additions(doc: dict[str, Any], additions: dict[str, Any]) -> None:
             anchor = key
 
 
+def _additions_as_lines(additions: dict[str, Any]) -> list[str]:
+    """Render additions as top-level YAML lines, in schema order."""
+    out: list[str] = []
+    for key in ("composition_type", "nutritional_class", "functional_role"):
+        if key not in additions:
+            continue
+        value = additions[key]
+        if isinstance(value, list):
+            out.append(f"{key}:")
+            out.extend(f"- {item}" for item in value)
+        else:
+            out.append(f"{key}: {value}")
+    return out
+
+
+def apply_additions_text(path: Path, additions: dict[str, Any]) -> bool:
+    """Insert axis lines right after the top-level `medium_type:` line, no reformatting.
+
+    Returns False (and leaves the file untouched) if no top-level medium_type line is
+    found. Avoids the line-rewrapping churn a full ruamel round-trip would introduce
+    across the corpus; provenance for the bulk pass lives in the commit, not a per-record
+    curation event.
+    """
+    text = path.read_text()
+    lines = text.split("\n")
+    for i, line in enumerate(lines):
+        if line.startswith("medium_type:") and not line[:1].isspace():
+            insert = _additions_as_lines(additions)
+            lines[i + 1 : i + 1] = insert
+            path.write_text("\n".join(lines))
+            return True
+    return False
+
+
 def iter_paths(args_paths: list[str]) -> list[Path]:
     if args_paths:
         return [REPO_ROOT / p if not Path(p).is_absolute() else Path(p) for p in args_paths]
@@ -125,6 +159,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("paths", nargs="*", help="Specific YAML files (default: whole corpus).")
     ap.add_argument("--apply", action="store_true", help="Write changes (default: dry-run).")
+    ap.add_argument("--text", action="store_true",
+                    help="Churn-free line insertion (no reformat, no per-record curation "
+                         "event). Recommended for the bulk corpus pass; provenance lives in "
+                         "the commit. Without it, a ruamel round-trip rewrites the whole file "
+                         "and records a curation event (use for small, targeted runs).")
     return ap.parse_args(argv)
 
 
@@ -139,7 +178,9 @@ def main(argv: list[str] | None = None) -> int:
 
     for path in iter_paths(args.paths):
         try:
-            doc = load_yaml(path)
+            # Text mode only needs a read-only parse to plan; fast pyyaml avoids the
+            # ruamel load cost and any reformatting on read.
+            doc = pyyaml.safe_load(path.read_text()) if args.text else load_yaml(path)
         except Exception as exc:  # noqa: BLE001
             print(f"  SKIP (parse error) {path}: {exc}", file=sys.stderr)
             continue
@@ -156,19 +197,24 @@ def main(argv: list[str] | None = None) -> int:
             unmapped[mt] += 1
         if not additions:
             continue
+        if args.apply:
+            if args.text:
+                if not apply_additions_text(path, additions):
+                    print(f"  SKIP (no top-level medium_type line) {path}", file=sys.stderr)
+                    continue
+            else:
+                apply_additions(doc, additions)
+                record_curation_event(
+                    doc,
+                    curator=CURATOR,
+                    action="Backfilled multi-axis media type",
+                    notes="Derived " + "; ".join(notes) + " from deprecated medium_type="
+                    + str(mt) + ".",
+                )
+                write_yaml(path, doc)
         for key in additions:
             add_counts[key] += 1
         changed += 1
-        if args.apply:
-            apply_additions(doc, additions)
-            record_curation_event(
-                doc,
-                curator=CURATOR,
-                action="Backfilled multi-axis media type",
-                notes="Derived " + "; ".join(notes) + " from deprecated medium_type="
-                + str(mt) + ".",
-            )
-            write_yaml(path, doc)
 
     verb = "Applied" if args.apply else "Would apply (dry-run)"
     print(f"Scanned: {scanned}")

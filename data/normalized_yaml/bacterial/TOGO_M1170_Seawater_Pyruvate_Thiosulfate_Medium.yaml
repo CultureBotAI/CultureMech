@@ -3,6 +3,7 @@ name: seawater_pyruvate_thiosulfate_medium
 original_name: Seawater Pyruvate Thiosulfate Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

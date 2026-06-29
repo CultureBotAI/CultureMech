@@ -3,6 +3,7 @@ name: bl_with_0_5_maltose
 original_name: BL With 0.5% Maltose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Maltose

@@ -3,6 +3,7 @@ name: treponema_zioleckii_medium
 original_name: Treponema Zioleckii Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Vitamin K1 (1 mg/ml)

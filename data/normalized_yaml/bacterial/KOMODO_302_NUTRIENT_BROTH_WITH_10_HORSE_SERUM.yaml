@@ -3,6 +3,7 @@ name: nutrient_broth_with_10_horse_serum
 original_name: NUTRIENT BROTH WITH 10% HORSE SERUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 302

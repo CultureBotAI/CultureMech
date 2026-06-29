@@ -3,6 +3,7 @@ name: paracoccus_alcaliphilus_medium
 original_name: PARACOCCUS ALCALIPHILUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

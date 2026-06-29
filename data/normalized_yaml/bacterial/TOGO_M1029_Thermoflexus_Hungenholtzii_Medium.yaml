@@ -3,6 +3,7 @@ name: thermoflexus_hungenholtzii_medium
 original_name: Thermoflexus Hungenholtzii Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

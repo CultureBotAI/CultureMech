@@ -3,6 +3,7 @@ name: fe_and_s_free_basal_medium
 original_name: Fe- and S-free basal medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl

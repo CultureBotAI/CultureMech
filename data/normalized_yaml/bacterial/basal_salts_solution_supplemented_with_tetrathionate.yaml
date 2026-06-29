@@ -3,6 +3,7 @@ name: basal_salts_solution_supplemented_with_tetrathionate
 original_name: Basal salts solution supplemented with tetrathionate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NH4Cl

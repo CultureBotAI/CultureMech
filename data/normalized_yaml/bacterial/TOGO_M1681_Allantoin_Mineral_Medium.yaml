@@ -3,6 +3,7 @@ name: allantoin_mineral_medium
 original_name: Allantoin Mineral Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: medium_131_modified_for_dsm_6216
 original_name: MEDIUM 131 MODIFIED FOR DSM 6216
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 131_6216

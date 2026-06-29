@@ -4,6 +4,7 @@ original_name: Middlebrook 7H9 (Difco) liquid medium supplemented with Middlebro
   albumin/dextrose/catalase and Tween 80
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

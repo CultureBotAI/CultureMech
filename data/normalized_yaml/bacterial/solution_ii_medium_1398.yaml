@@ -3,6 +3,7 @@ name: solution_ii_medium_1398
 original_name: solution II (medium 1398)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3054

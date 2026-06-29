@@ -3,6 +3,7 @@ name: modified_pfennigs_medium_ii_green_sulfur_bacteria
 original_name: Modified Pfennig's Medium II (green sulfur bacteria)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

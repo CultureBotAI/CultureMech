@@ -3,6 +3,7 @@ name: salt_glucose_agar_sga
 original_name: Salt Glucose Agar (SGA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

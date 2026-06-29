@@ -3,6 +3,7 @@ name: columbia_blood_medium
 original_name: COLUMBIA BLOOD MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 693

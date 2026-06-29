@@ -3,6 +3,7 @@ name: vulcanisaeta_medium
 original_name: Vulcanisaeta Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Resazurin

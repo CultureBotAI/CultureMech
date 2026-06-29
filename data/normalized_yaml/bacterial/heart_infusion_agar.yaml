@@ -3,6 +3,7 @@ name: heart_infusion_agar
 original_name: Heart infusion agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Heart infusion agar (Eiken)

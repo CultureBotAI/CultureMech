@@ -3,6 +3,7 @@ name: yeast_extract_medium_ye
 original_name: YEAST EXTRACT MEDIUM (YE)
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J249

@@ -3,6 +3,7 @@ name: methanospirillum_purgamenti_medium
 original_name: METHANOSPIRILLUM PURGAMENTI MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

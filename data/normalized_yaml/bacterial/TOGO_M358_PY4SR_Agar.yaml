@@ -3,6 +3,7 @@ name: py4sr_agar
 original_name: PY4SR Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: plant residue extract (see below)

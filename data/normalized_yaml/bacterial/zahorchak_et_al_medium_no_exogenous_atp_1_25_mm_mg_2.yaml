@@ -3,6 +3,7 @@ name: zahorchak_et_al_medium_no_exogenous_atp_1_25_mm_mg_2
 original_name: Zahorchak et al medium; No exogenous ATP, 1.25 mM Mg^2+
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Glutamate

@@ -3,6 +3,7 @@ name: clostridium_th7c1_medium
 original_name: Clostridium TH7C1 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: ignisphaera_medium
 original_name: IGNISPHAERA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

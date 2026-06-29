@@ -3,6 +3,7 @@ name: medium_for_iron_using_methanogen
 original_name: Medium for iron-using methanogen
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

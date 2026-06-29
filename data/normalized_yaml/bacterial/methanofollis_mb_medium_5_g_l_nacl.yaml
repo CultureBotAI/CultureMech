@@ -3,6 +3,7 @@ name: methanofollis_mb_medium_5_g_l_nacl
 original_name: METHANOFOLLIS MB MEDIUM (5 g/l NaCl)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

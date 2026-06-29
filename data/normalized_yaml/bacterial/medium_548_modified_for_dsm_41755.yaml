@@ -3,6 +3,7 @@ name: medium_548_modified_for_dsm_41755
 original_name: MEDIUM 548 MODIFIED FOR DSM 41755
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 4.5

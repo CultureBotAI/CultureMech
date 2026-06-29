@@ -3,6 +3,7 @@ name: soil_extract_medium_98
 original_name: Soil extract (medium 98)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

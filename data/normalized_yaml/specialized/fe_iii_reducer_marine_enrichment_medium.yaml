@@ -3,6 +3,7 @@ name: fe_iii_reducer_marine_enrichment_medium
 original_name: Fe(III)-REDUCER MARINE ENRICHMENT MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: tsb_ph_9_0_with_k2co3
 original_name: TSB (pH 9.0 with K2CO3)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

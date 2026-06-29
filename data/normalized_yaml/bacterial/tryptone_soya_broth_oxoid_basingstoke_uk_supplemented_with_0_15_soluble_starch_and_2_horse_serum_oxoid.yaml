@@ -4,6 +4,7 @@ original_name: Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented with 0.
   soluble starch and 2% horse serum (Oxoid)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

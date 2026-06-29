@@ -3,6 +3,7 @@ name: bacillus_aa_medium
 original_name: Bacillus AA Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 1.0 M Sodium acetate (filter--sterilized)

@@ -3,6 +3,7 @@ name: sulfolobus_medium_for_dsm_5348
 original_name: Sulfolobus Medium (For DSM 5348)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

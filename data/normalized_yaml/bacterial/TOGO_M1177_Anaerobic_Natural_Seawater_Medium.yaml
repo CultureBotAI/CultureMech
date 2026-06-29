@@ -3,6 +3,7 @@ name: anaerobic_natural_seawater_medium
 original_name: Anaerobic Natural Seawater Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

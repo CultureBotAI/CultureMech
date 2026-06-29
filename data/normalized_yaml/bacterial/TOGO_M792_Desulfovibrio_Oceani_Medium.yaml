@@ -3,6 +3,7 @@ name: desulfovibrio_oceani_medium
 original_name: Desulfovibrio Oceani Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

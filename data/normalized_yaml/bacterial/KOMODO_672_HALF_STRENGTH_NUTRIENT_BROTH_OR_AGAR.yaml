@@ -3,6 +3,7 @@ name: half_strength_nutrient_broth_or_agar
 original_name: HALF STRENGTH NUTRIENT BROTH OR AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 672

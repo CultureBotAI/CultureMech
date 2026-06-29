@@ -3,6 +3,7 @@ name: acidobacteriaceae_medium_modified_vsb_medium
 original_name: Acidobacteriaceae Medium (Modified VSB Medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.0
 media_term:

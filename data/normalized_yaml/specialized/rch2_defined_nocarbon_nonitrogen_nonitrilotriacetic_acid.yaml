@@ -1,6 +1,7 @@
 id: CultureMech:015718
 name: RCH2 defined noCarbon noNitrogen noNitrilotriacetic acid
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium Chloride

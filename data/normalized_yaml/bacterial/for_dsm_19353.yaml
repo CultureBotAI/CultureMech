@@ -3,6 +3,7 @@ name: for_dsm_19353
 original_name: For DSM 19353
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1053.1 | DSMZ Medium: 1053

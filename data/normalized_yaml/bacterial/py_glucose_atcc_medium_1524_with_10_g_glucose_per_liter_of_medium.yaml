@@ -3,6 +3,7 @@ name: py_glucose_atcc_medium_1524_with_10_g_glucose_per_liter_of_medium
 original_name: PY-glucose (ATCC medium 1524) with 10 g glucose per liter of medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 0.025% Resazurin, aqueous

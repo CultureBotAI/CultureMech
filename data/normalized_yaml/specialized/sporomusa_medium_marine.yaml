@@ -3,6 +3,7 @@ name: sporomusa_medium_marine
 original_name: SPOROMUSA MEDIUM (MARINE)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.5

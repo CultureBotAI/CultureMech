@@ -3,6 +3,7 @@ name: salt_solution_25_sea_water_sw_agar_plate
 original_name: salt solution 25% sea water (SW) agar plate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

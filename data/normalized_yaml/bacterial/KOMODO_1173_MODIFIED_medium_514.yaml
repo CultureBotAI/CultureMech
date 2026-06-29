@@ -3,6 +3,7 @@ name: modified_medium_514
 original_name: MODIFIED medium 514
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1173

@@ -3,6 +3,7 @@ name: neutral_oligotrophic_haloarchaeal_medium_no_3
 original_name: Neutral Oligotrophic Haloarchaeal Medium NO.3
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

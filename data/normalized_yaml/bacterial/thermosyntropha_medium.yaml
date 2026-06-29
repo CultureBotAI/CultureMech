@@ -3,6 +3,7 @@ name: thermosyntropha_medium
 original_name: THERMOSYNTROPHA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.5
 media_term:

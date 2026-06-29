@@ -3,6 +3,7 @@ name: for_dsm_11763
 original_name: For DSM 11763
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 815.1 | DSMZ Medium: 815

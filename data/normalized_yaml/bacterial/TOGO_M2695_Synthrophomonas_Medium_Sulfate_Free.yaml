@@ -3,6 +3,7 @@ name: synthrophomonas_medium_sulfate_free
 original_name: Synthrophomonas Medium (Sulfate Free)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

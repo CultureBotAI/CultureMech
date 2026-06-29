@@ -3,6 +3,7 @@ name: tindallia_texcoconensis_medium
 original_name: Tindallia Texcoconensis Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2S・9H2O

@@ -3,6 +3,7 @@ name: mops_morpholinethanesulfonic_acid_minimal_medium
 original_name: MOPS (morpholinethanesulfonic acid) minimal medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl

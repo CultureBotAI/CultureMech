@@ -3,6 +3,7 @@ name: for_dsm_18732
 original_name: For DSM 18732
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
 media_term:

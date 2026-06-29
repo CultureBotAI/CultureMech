@@ -3,6 +3,7 @@ name: ghiorsea_bivora_medium
 original_name: Ghiorsea Bivora Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3

@@ -3,6 +3,7 @@ name: ravot_modified_medium_for_thermoanaerovibrio_sp_r101
 original_name: Ravot Modified Medium For Thermoanaerovibrio SP. R101
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

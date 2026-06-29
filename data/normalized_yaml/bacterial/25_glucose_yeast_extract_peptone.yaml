@@ -3,6 +3,7 @@ name: 25_glucose_yeast_extract_peptone
 original_name: 25% Glucose-Yeast Extract-Peptone
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

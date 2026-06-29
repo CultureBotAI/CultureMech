@@ -3,6 +3,7 @@ name: dmj_synthetic_seawater_medium_997
 original_name: DMJ synthetic seawater (medium 997)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 2004

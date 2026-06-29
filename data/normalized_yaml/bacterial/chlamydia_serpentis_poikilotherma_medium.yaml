@@ -3,6 +3,7 @@ name: chlamydia_serpentis_poikilotherma_medium
 original_name: Chlamydia serpentis & poikilotherma Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1793

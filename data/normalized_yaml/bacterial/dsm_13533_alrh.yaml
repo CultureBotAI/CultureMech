@@ -3,6 +3,7 @@ name: dsm_13533_alrh
 original_name: DSM 13533 = ALRh
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 925.4

@@ -3,6 +3,7 @@ name: pennassay_g_thy_medium
 original_name: PENNASSAY G-THY MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 542

@@ -3,6 +3,7 @@ name: r2a_gellan_gum_plate
 original_name: R2A Gellan gum Plate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: CaCl2 (100 mM)

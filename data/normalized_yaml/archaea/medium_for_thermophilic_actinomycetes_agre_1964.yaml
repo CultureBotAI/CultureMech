@@ -3,6 +3,7 @@ name: medium_for_thermophilic_actinomycetes_agre_1964
 original_name: MEDIUM FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:

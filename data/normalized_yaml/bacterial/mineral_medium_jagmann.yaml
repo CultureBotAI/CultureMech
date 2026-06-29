@@ -3,6 +3,7 @@ name: mineral_medium_jagmann
 original_name: Mineral medium (Jagmann)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

@@ -1,6 +1,7 @@
 id: CultureMech:015551
 name: M9 plus defined noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Magnesium sulfate

@@ -3,6 +3,7 @@ name: archaeoglobus_mcr_medium
 original_name: Archaeoglobus MCR Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2SO4

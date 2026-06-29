@@ -1,6 +1,7 @@
 id: CultureMech:015483
 name: ACY
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptic digest of animal tissue

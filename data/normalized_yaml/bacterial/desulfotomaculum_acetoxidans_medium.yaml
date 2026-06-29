@@ -3,6 +3,7 @@ name: desulfotomaculum_acetoxidans_medium
 original_name: DESULFOTOMACULUM ACETOXIDANS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

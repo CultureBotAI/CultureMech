@@ -3,6 +3,7 @@ name: methanothermobacter_methanobacterium_transduction_medium
 original_name: METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: medium_843_modified_for_dsm_18056
 original_name: MEDIUM 843 MODIFIED FOR DSM 18056
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 843_18056

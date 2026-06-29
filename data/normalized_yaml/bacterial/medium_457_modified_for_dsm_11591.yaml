@@ -3,6 +3,7 @@ name: medium_457_modified_for_dsm_11591
 original_name: MEDIUM 457 MODIFIED FOR DSM 11591
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457_11591

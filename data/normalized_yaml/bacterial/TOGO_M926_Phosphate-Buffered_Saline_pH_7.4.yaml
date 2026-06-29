@@ -3,6 +3,7 @@ name: phosphate_buffered_saline_ph_7_4
 original_name: Phosphate-Buffered Saline (pH 7.4)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

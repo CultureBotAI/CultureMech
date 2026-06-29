@@ -1,6 +1,7 @@
 id: CultureMech:015689
 name: R2A_20mM_Nitrate
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptone

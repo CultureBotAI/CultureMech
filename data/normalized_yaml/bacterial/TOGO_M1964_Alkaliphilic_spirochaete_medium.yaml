@@ -3,6 +3,7 @@ name: alkaliphilic_spirochaete_medium
 original_name: Alkaliphilic spirochaete medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

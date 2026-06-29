@@ -1,6 +1,7 @@
 id: CultureMech:015681
 name: PM argon75 N2O25
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2HPO4

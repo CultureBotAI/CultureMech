@@ -3,6 +3,7 @@ name: pyrobaculum_neutrophilum_medium
 original_name: PYROBACULUM NEUTROPHILUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

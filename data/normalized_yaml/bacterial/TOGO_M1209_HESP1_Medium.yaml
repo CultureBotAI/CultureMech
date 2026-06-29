@@ -3,6 +3,7 @@ name: hesp1_medium
 original_name: HESP1 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

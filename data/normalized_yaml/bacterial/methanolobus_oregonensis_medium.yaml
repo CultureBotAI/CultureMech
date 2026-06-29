@@ -3,6 +3,7 @@ name: methanolobus_oregonensis_medium
 original_name: METHANOLOBUS OREGONENSIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.5
 media_term:

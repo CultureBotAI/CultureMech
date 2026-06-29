@@ -3,6 +3,7 @@ name: ym_broth
 original_name: YM BROTH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.2
 media_term:

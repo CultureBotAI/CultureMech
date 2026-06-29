@@ -3,6 +3,7 @@ name: modified_py4s_agar
 original_name: Modified PY4S Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: vitamin B12

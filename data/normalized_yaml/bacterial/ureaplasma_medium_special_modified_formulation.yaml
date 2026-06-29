@@ -3,6 +3,7 @@ name: ureaplasma_medium_special_modified_formulation
 original_name: Ureaplasma Medium – Special Modified Formulation
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Basal Medium

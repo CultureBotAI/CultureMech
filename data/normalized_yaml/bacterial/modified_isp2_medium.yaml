@@ -3,6 +3,7 @@ name: modified_isp2_medium
 original_name: Modified ISP2 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

@@ -3,6 +3,7 @@ name: merds_my75s
 original_name: MErds/MY75S
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C54

@@ -3,6 +3,7 @@ name: yeast_mineral_medium_7_9_g_l_ethanol
 original_name: '''Yeast Mineral Medium (7.9 g/L Ethanol'
 category: fungal
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: EDTA

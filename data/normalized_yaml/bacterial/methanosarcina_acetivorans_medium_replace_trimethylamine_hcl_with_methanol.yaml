@@ -3,6 +3,7 @@ name: methanosarcina_acetivorans_medium_replace_trimethylamine_hcl_with_methanol
 original_name: METHANOSARCINA ACETIVORANS medium_replace_Trimethylamine-HCl_with_Methanol
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

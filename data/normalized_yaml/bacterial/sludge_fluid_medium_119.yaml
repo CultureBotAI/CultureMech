@@ -3,6 +3,7 @@ name: sludge_fluid_medium_119
 original_name: Sludge fluid (medium 119)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3141

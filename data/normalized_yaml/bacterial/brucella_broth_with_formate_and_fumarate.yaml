@@ -3,6 +3,7 @@ name: brucella_broth_with_formate_and_fumarate
 original_name: Brucella broth with formate and fumarate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: fumaric acid

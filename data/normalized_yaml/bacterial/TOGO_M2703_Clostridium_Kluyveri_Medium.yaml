@@ -3,6 +3,7 @@ name: clostridium_kluyveri_medium
 original_name: Clostridium Kluyveri Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

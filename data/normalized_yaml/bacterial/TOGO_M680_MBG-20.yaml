@@ -3,6 +3,7 @@ name: mbg_20
 original_name: MBG-20
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

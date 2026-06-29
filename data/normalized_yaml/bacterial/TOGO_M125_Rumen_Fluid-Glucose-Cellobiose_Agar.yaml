@@ -3,6 +3,7 @@ name: rumen_fluid_glucose_cellobiose_agar
 original_name: Rumen Fluid-Glucose-Cellobiose Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: 0.1% Vitamin K1

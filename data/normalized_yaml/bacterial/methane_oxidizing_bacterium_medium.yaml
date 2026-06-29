@@ -3,6 +3,7 @@ name: methane_oxidizing_bacterium_medium
 original_name: METHANE OXIDIZING BACTERIUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.2
 media_term:

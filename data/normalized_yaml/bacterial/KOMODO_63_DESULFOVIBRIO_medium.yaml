@@ -3,6 +3,7 @@ name: desulfovibrio_medium
 original_name: DESULFOVIBRIO medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.8
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 63 | DSMZ Medium: 63 (mediadive.medium:63)

@@ -3,6 +3,7 @@ name: peat_medium_2_for_methanobacteria
 original_name: PEAT MEDIUM 2 FOR METHANOBACTERIA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

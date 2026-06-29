@@ -3,6 +3,7 @@ name: full_media_trypticase_soy_broth_medium
 original_name: Full media (Trypticase Soy Broth medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

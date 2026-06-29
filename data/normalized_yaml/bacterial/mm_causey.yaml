@@ -3,6 +3,7 @@ name: mm_causey
 original_name: MM; Causey
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

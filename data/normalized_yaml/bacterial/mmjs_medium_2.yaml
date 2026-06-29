@@ -3,6 +3,7 @@ name: mmjs_medium_2
 original_name: MMJS MEDIUM 2
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.2
 media_term:

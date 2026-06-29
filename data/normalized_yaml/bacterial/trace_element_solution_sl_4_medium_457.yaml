@@ -3,6 +3,7 @@ name: trace_element_solution_sl_4_medium_457
 original_name: Trace element solution SL-4 (medium 457)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

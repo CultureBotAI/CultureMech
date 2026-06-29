@@ -3,6 +3,7 @@ name: hutners_salts_medium_590
 original_name: Hutner's salts (medium 590)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2110 | DSMZ Medium: 2110

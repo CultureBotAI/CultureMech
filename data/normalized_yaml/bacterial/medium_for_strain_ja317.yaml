@@ -3,6 +3,7 @@ name: medium_for_strain_ja317
 original_name: Medium for strain JA317
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

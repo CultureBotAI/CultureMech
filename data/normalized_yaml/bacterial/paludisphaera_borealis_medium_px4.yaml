@@ -3,6 +3,7 @@ name: paludisphaera_borealis_medium_px4
 original_name: PALUDISPHAERA BOREALIS MEDIUM (PX4)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 5.8

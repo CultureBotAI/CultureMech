@@ -3,6 +3,7 @@ name: dsm_13542_arh1_thiosulphate_grown
 original_name: DSM 13542 = ARh1 (thiosulphate grown)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 925.3

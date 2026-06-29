@@ -3,6 +3,7 @@ name: methanosaeta_harundinacea_medium
 original_name: METHANOSAETA HARUNDINACEA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

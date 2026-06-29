@@ -3,6 +3,7 @@ name: methylobacter_medium_m10_xcf
 original_name: METHYLOBACTER MEDIUM M10 XCF
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 8.0

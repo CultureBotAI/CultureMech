@@ -3,6 +3,7 @@ name: half_strength_marine_medium_with_1_0_nacl
 original_name: HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J762

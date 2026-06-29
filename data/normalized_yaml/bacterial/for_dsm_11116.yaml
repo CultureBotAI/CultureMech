@@ -3,6 +3,7 @@ name: for_dsm_11116
 original_name: For DSM 11116
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 9.1 | DSMZ Medium: 9 (mediadive.medium:9)

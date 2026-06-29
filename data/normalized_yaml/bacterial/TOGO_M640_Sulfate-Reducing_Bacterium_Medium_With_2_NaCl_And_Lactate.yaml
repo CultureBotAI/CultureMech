@@ -3,6 +3,7 @@ name: sulfate_reducing_bacterium_medium_with_2_nacl_and_lactate
 original_name: Sulfate-Reducing Bacterium Medium With 2% NaCl And Lactate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

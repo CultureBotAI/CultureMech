@@ -3,6 +3,7 @@ name: artificial_seawater_base_with_thiosulfate_as_the_electron_donor
 original_name: Artificial seawater base with thiosulfate as the electron donor
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Artificial seawater

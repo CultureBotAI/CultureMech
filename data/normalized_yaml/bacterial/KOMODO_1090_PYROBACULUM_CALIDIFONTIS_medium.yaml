@@ -3,6 +3,7 @@ name: pyrobaculum_calidifontis_medium
 original_name: PYROBACULUM CALIDIFONTIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1090 | DSMZ Medium: 1090

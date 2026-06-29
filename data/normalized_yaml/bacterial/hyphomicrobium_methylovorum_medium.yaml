@@ -3,6 +3,7 @@ name: hyphomicrobium_methylovorum_medium
 original_name: HYPHOMICROBIUM METHYLOVORUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 619

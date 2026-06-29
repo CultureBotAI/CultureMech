@@ -3,6 +3,7 @@ name: trace_element_solution_medium_929
 original_name: Trace element solution (medium 929)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

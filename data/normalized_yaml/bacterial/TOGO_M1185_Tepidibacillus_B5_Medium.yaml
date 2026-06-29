@@ -3,6 +3,7 @@ name: tepidibacillus_b5_medium
 original_name: Tepidibacillus B5 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

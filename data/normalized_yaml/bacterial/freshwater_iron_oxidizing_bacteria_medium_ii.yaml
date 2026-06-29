@@ -3,6 +3,7 @@ name: freshwater_iron_oxidizing_bacteria_medium_ii
 original_name: FRESHWATER IRON-OXIDIZING BACTERIA MEDIUM-II
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1067

@@ -3,6 +3,7 @@ name: medium_for_chlorate_respirers
 original_name: Medium For Chlorate Respirers
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

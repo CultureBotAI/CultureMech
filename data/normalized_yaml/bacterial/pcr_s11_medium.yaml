@@ -3,6 +3,7 @@ name: pcr_s11_medium
 original_name: PCR-S11 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: (NH4)2SO4

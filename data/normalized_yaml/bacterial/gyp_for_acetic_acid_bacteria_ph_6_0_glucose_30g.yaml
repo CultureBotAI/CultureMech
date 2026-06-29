@@ -3,6 +3,7 @@ name: gyp_for_acetic_acid_bacteria_ph_6_0_glucose_30g
 original_name: GYP for Acetic acid bacteria (pH 6.0, Glucose 30g)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

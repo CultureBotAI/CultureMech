@@ -3,6 +3,7 @@ name: methanobacterium_medium_vi
 original_name: METHANOBACTERIUM MEDIUM (VI)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.1
 media_term:

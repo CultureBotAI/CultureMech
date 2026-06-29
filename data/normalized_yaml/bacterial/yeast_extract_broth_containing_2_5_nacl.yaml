@@ -3,6 +3,7 @@ name: yeast_extract_broth_containing_2_5_nacl
 original_name: yeast extract broth (containing 2.5% NaCl)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: yeast extract

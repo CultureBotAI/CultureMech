@@ -3,6 +3,7 @@ name: for_dsm_14760_dsm_14761_and_dsm_14762
 original_name: For DSM 14760, DSM 14761 and DSM 14762
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

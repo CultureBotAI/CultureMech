@@ -3,6 +3,7 @@ name: acidic_yeast_extract_malt_extract_agar_ph_5_0
 original_name: ACIDIC YEAST EXTRACT-MALT EXTRACT AGAR (pH 5.0)
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.0
 media_term:

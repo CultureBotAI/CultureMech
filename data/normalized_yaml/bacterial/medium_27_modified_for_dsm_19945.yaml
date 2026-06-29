@@ -3,6 +3,7 @@ name: medium_27_modified_for_dsm_19945
 original_name: MEDIUM 27 MODIFIED FOR DSM 19945
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 27_19945

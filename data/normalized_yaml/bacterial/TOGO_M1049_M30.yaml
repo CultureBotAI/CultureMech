@@ -3,6 +3,7 @@ name: m30
 original_name: M30
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 0.1 M Tris--HCl buffer (pH 7.5)

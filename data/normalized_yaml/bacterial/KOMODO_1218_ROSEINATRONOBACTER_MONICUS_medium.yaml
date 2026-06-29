@@ -3,6 +3,7 @@ name: roseinatronobacter_monicus_medium
 original_name: ROSEINATRONOBACTER MONICUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.0

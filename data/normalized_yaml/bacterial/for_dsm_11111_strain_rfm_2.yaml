@@ -3,6 +3,7 @@ name: for_dsm_11111_strain_rfm_2
 original_name: For DSM 11111 (strain RFM-2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

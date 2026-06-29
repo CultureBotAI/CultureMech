@@ -3,6 +3,7 @@ name: pjc_with_3_4_dhpa
 original_name: Pjc with 3,4-dhpa
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 3,4-Dihydroxyphenylacetate

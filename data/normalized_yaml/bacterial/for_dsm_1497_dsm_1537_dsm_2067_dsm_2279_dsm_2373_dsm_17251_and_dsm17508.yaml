@@ -4,6 +4,7 @@ original_name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 a
   DSM17508
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

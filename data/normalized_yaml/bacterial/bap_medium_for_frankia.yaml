@@ -3,6 +3,7 @@ name: bap_medium_for_frankia
 original_name: BAP+ MEDIUM FOR FRANKIA
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.3
 media_term:

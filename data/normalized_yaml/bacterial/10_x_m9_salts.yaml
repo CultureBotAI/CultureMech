@@ -3,6 +3,7 @@ name: 10_x_m9_salts
 original_name: 10 x M9 salts
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

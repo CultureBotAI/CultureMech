@@ -3,6 +3,7 @@ name: modified_sulfate_reducing_bacteria_medium
 original_name: Modified Sulfate Reducing Bacteria Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

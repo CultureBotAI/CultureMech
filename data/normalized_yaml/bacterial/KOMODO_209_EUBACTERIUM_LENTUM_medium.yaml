@@ -3,6 +3,7 @@ name: eubacterium_lentum_medium
 original_name: EUBACTERIUM LENTUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 209

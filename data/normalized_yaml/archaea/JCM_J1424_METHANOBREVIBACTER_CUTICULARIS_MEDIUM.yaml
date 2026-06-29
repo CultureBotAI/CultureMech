@@ -3,6 +3,7 @@ name: methanobrevibacter_cuticularis_medium
 original_name: METHANOBREVIBACTER CUTICULARIS MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.7
 media_term:

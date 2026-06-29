@@ -3,6 +3,7 @@ name: an1_medium
 original_name: AN1 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.3
 media_term:

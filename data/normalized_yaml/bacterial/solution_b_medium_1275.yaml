@@ -3,6 +3,7 @@ name: solution_b_medium_1275
 original_name: Solution B, medium 1275
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 4053

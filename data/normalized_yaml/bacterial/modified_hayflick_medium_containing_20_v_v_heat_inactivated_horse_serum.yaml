@@ -4,6 +4,7 @@ original_name: Modified Hayflick medium containing 20% (v/v) heat-inactivated ho
   serum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 0.5% Phenol red (Flow)

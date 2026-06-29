@@ -3,6 +3,7 @@ name: mrs_medium_with_10_tomato_juice
 original_name: MRS Medium With 10% Tomato Juice
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: medium_836_modified_for_dsm_13498
 original_name: MEDIUM 836 MODIFIED FOR DSM 13498
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 836_13498

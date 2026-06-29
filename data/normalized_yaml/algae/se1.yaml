@@ -2,6 +2,7 @@ id: CultureMech:000128
 name: se1
 category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
   algae cultivation. Recipe available in PDF format.

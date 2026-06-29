@@ -3,6 +3,7 @@ name: pyrodictium_abyssi_medium
 original_name: PYRODICTIUM ABYSSI medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 5.5

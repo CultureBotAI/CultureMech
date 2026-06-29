@@ -3,6 +3,7 @@ name: modified_baar_s_medium_for_sulfate_reducers
 original_name: Modified Baar’s Medium For Sulfate Reducers
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Component I

@@ -3,6 +3,7 @@ name: methane_oxidizing_bacterium_medium
 original_name: Methane Oxidizing Bacterium Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

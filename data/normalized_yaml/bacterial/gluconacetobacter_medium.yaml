@@ -3,6 +3,7 @@ name: gluconacetobacter_medium
 original_name: GLUCONACETOBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1430

@@ -3,6 +3,7 @@ name: leuconostoc_oenos_medium
 original_name: LEUCONOSTOC OENOS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.8
 media_term:

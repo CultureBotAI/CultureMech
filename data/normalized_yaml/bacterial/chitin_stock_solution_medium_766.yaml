@@ -3,6 +3,7 @@ name: chitin_stock_solution_medium_766
 original_name: Chitin stock solution (medium 766)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 2003 | DSMZ Medium: 2003 (mediadive.medium:2003)

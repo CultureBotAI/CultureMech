@@ -5,6 +5,7 @@ original_name: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15
   17763 and DSM 22608
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.0

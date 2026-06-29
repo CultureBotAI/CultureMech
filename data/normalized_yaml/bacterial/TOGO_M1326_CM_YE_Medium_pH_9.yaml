@@ -3,6 +3,7 @@ name: cm_ye_medium_ph_9
 original_name: CM+YE Medium (pH 9)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients: []
 media_term:

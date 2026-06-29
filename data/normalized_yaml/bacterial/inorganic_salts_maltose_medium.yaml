@@ -3,6 +3,7 @@ name: inorganic_salts_maltose_medium
 original_name: INORGANIC SALTS-MALTOSE medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 754 | DSMZ Medium: 754 (mediadive.medium:754)

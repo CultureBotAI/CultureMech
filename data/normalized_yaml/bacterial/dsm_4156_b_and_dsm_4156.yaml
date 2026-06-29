@@ -3,6 +3,7 @@ name: dsm_4156_b_and_dsm_4156
 original_name: DSM 4156 B and DSM 4156
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 409.1

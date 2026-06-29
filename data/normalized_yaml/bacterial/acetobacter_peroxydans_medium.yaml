@@ -3,6 +3,7 @@ name: acetobacter_peroxydans_medium
 original_name: ACETOBACTER PEROXYDANS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 254

@@ -4,6 +4,7 @@ original_name: '1358'
 category: bacterial
 description: 1358. NBRC 1356.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''

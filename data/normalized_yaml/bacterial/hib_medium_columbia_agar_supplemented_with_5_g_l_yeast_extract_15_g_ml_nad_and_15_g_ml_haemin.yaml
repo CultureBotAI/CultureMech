@@ -4,6 +4,7 @@ original_name: Hib medium (Columbia agar supplemented with 5 g/l yeast extract, 
   μg/ml NAD and 15 μg/ml haemin)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract

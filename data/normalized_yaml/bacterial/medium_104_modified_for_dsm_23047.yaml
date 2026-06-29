@@ -3,6 +3,7 @@ name: medium_104_modified_for_dsm_23047
 original_name: MEDIUM 104 MODIFIED FOR DSM 23047
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 104_23047

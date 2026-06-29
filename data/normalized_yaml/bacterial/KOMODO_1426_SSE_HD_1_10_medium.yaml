@@ -3,6 +3,7 @@ name: sse_hd_1_10_medium
 original_name: SSE/HD 1:10 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 media_term:

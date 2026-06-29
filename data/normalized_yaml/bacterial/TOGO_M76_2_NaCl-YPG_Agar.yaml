@@ -3,6 +3,7 @@ name: 2_nacl_ypg_agar
 original_name: 2% NaCl-YPG Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: medium_944a_modified_for_dsm_18852
 original_name: MEDIUM 944a MODIFIED FOR DSM 18852
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 944a_18852

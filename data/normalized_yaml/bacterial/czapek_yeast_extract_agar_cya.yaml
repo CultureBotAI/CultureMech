@@ -3,6 +3,7 @@ name: czapek_yeast_extract_agar_cya
 original_name: Czapek Yeast Extract Agar (CYA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

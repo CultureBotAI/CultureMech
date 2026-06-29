@@ -3,6 +3,7 @@ name: thermoterrabacterium_medium
 original_name: THERMOTERRABACTERIUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 778 | DSMZ Medium: 778

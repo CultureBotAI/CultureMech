@@ -3,6 +3,7 @@ name: m63_with_thiamine_hcl_with_fructose
 original_name: M63 with thiamine-hcl with fructose
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Fructose

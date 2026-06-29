@@ -3,6 +3,7 @@ name: mmb_succinate_with_nh4cl_and_biotin_taboada_et_al
 original_name: MMB-Succinate with NH4Cl and biotin; Taboada et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Succinate

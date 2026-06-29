@@ -3,6 +3,7 @@ name: leeming_and_notman_agar
 original_name: LEEMING AND NOTMAN AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J153

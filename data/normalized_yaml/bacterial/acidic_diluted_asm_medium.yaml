@@ -3,6 +3,7 @@ name: acidic_diluted_asm_medium
 original_name: ACIDIC DILUTED ASM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
 media_term:

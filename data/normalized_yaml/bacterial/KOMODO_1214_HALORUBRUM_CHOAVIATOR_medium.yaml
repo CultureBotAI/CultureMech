@@ -3,6 +3,7 @@ name: halorubrum_choaviator_medium
 original_name: HALORUBRUM CHOAVIATOR medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

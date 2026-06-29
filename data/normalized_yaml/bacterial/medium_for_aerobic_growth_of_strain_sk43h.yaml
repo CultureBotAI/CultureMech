@@ -3,6 +3,7 @@ name: medium_for_aerobic_growth_of_strain_sk43h
 original_name: Medium for aerobic growth of strain sk43H
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

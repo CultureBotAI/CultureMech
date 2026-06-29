@@ -3,6 +3,7 @@ name: alkaliphilus_halophilus_medium
 original_name: ALKALIPHILUS HALOPHILUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1290 | DSMZ Medium: 1290

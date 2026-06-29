@@ -3,6 +3,7 @@ name: for_dsm_15692
 original_name: For DSM 15692
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 215c.2 | DSMZ Medium: 215c

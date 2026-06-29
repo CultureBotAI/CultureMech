@@ -3,6 +3,7 @@ name: carboxydothermus_medium_for_dsm_22663
 original_name: Carboxydothermus Medium (For DSM 22663)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

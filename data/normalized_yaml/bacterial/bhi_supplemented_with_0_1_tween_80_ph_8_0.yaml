@@ -3,6 +3,7 @@ name: bhi_supplemented_with_0_1_tween_80_ph_8_0
 original_name: BHI supplemented with 0.1% Tween 80 (pH 8.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tween 80 (pH 8.0)

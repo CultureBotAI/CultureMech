@@ -4,6 +4,7 @@ original_name: '815'
 category: bacterial
 description: 815. NBRC 814.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Pancreatic digest of casein

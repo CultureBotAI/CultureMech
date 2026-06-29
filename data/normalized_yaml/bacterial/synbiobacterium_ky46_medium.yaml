@@ -3,6 +3,7 @@ name: synbiobacterium_ky46_medium
 original_name: SYNBIOBACTERIUM KY46 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:

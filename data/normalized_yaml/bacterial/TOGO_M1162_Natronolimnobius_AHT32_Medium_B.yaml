@@ -3,6 +3,7 @@ name: natronolimnobius_aht32_medium_b
 original_name: Natronolimnobius AHT32 Medium (B)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 1 M Sodium acetate

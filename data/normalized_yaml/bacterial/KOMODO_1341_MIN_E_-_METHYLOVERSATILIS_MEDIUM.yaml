@@ -3,6 +3,7 @@ name: min_e_methyloversatilis_medium
 original_name: MIN E - METHYLOVERSATILIS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1341

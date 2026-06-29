@@ -1,6 +1,7 @@
 id: CultureMech:015558
 name: Mc formate N Free
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3

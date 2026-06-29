@@ -3,6 +3,7 @@ name: thermococcus_litoralis_medium
 original_name: THERMOCOCCUS LITORALIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J161

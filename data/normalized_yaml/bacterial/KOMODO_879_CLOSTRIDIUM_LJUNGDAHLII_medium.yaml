@@ -3,6 +3,7 @@ name: clostridium_ljungdahlii_medium
 original_name: CLOSTRIDIUM LJUNGDAHLII medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.9
 media_term:

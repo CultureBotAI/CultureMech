@@ -3,6 +3,7 @@ name: gbs_salts_medium_for_rhodothermus
 original_name: GBS SALTS MEDIUM FOR RHODOTHERMUS
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

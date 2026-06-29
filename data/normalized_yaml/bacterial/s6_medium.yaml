@@ -3,6 +3,7 @@ name: s6_medium
 original_name: S6 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

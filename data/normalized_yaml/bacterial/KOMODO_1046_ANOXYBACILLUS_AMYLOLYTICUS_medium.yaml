@@ -3,6 +3,7 @@ name: anoxybacillus_amylolyticus_medium
 original_name: ANOXYBACILLUS AMYLOLYTICUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.6
 media_term:

@@ -3,6 +3,7 @@ name: rdm_20_mm_nacl
 original_name: RDM - 20 mM NaCl
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MOPS

@@ -3,6 +3,7 @@ name: acidianus_infernus_medium_b
 original_name: Acidianus Infernus Medium (B)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Resazurin

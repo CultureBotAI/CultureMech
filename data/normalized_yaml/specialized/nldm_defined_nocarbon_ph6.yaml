@@ -1,6 +1,7 @@
 id: CultureMech:015662
 name: NLDM_defined_nocarbon_pH6
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium Chloride

@@ -4,6 +4,7 @@ original_name: Medium for strains JA145, JA193, JA310, JA334, JA415, JA430, JA44
   and JA643
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Vitamin B12 (0.002% (w/v))

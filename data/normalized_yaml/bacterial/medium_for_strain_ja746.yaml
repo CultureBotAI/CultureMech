@@ -3,6 +3,7 @@ name: medium_for_strain_ja746
 original_name: Medium for Strain JA746
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Vitamin B12 (0.002% (w/v))

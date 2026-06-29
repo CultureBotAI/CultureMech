@@ -1,6 +1,7 @@
 id: CultureMech:015648
 name: NF with10percent fullN
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sucrose

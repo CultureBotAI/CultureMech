@@ -1,6 +1,7 @@
 id: CultureMech:015495
 name: BHIS_HOMOPIPES
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calf brains

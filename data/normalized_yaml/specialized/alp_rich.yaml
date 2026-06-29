@@ -1,6 +1,7 @@
 id: CultureMech:015490
 name: ALP rich
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium phosphate monobasic monohydrate

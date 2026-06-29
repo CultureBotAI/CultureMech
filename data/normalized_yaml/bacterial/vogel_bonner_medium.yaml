@@ -3,6 +3,7 @@ name: vogel_bonner_medium
 original_name: Vogel-Bonner Medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

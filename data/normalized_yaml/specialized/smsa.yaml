@@ -1,6 +1,7 @@
 id: CultureMech:015748
 name: SMSA
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Bacto Peptone

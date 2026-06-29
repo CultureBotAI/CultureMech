@@ -3,6 +3,7 @@ name: medium_13_modified_for_dsm_13609
 original_name: MEDIUM 13 MODIFIED FOR DSM 13609
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 13_13609

@@ -3,6 +3,7 @@ name: petrotoga_medium
 original_name: Petrotoga Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium resazurin (0.1% w/v)

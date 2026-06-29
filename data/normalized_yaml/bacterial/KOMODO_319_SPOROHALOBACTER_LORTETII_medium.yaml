@@ -3,6 +3,7 @@ name: sporohalobacter_lortetii_medium
 original_name: SPOROHALOBACTER LORTETII medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 319 | DSMZ Medium: 319 (mediadive.medium:319)

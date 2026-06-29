@@ -3,6 +3,7 @@ name: galenea_mj_medium_co2
 original_name: GALENEA MJ MEDIUM (CO2)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.7
 media_term:

@@ -3,6 +3,7 @@ name: acetobacterium_sp_komac1_medium
 original_name: ACETOBACTERIUM SP. KoMAc1 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 478

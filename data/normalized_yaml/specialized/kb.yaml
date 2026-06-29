@@ -1,6 +1,7 @@
 id: CultureMech:015533
 name: KB
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Bacto Peptone

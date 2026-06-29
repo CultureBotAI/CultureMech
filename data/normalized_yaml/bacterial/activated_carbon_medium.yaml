@@ -3,6 +3,7 @@ name: activated_carbon_medium
 original_name: ACTIVATED CARBON MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:

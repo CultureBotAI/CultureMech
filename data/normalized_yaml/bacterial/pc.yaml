@@ -3,6 +3,7 @@ name: pc
 original_name: PC
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C73

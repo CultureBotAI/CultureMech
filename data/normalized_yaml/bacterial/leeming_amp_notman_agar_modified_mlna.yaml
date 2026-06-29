@@ -3,6 +3,7 @@ name: leeming_amp_notman_agar_modified_mlna
 original_name: Leeming &amp; Notman agar Modified (MLNA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

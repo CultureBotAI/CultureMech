@@ -3,6 +3,7 @@ name: sulfurimonas_gd1_medium
 original_name: SULFURIMONAS GD1 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
 media_term:

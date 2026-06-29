@@ -3,6 +3,7 @@ name: medium_252_modified_for_dsm_41877
 original_name: MEDIUM 252 MODIFIED FOR DSM 41877
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 252_41877

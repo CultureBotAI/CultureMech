@@ -3,6 +3,7 @@ name: gyp_sodium_acetate_mineral_salts_broth
 original_name: GYP-SODIUM ACETATE-MINERAL SALTS BROTH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

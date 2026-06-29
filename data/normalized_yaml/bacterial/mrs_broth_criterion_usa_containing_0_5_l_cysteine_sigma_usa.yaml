@@ -3,6 +3,7 @@ name: mrs_broth_criterion_usa_containing_0_5_l_cysteine_sigma_usa
 original_name: MRS broth (Criterion, USA) containing 0.5%L-cysteine (Sigma, USA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

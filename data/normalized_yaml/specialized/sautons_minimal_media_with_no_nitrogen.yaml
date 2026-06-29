@@ -1,6 +1,7 @@
 id: CultureMech:015736
 name: Sautons minimal media with no nitrogen
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium Chloride

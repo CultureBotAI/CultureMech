@@ -3,6 +3,7 @@ name: mjanhox_no3_medium_with_supplement
 original_name: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.5

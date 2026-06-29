@@ -3,6 +3,7 @@ name: gyp_glucose_yeast_peptone_medium
 original_name: GYP GLUCOSE-YEAST-Peptone medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 852

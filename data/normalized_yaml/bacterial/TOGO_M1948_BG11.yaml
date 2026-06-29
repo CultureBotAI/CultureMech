@@ -3,6 +3,7 @@ name: bg11
 original_name: BG11
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 1M HEPES-KOH

@@ -3,6 +3,7 @@ name: verrucomicrobium_candidatus_medium_kam1
 original_name: VERRUCOMICROBIUM CANDIDATUS MEDIUM (KAM1)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.5
 media_term:

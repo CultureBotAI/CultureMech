@@ -3,6 +3,7 @@ name: bbl_actinomyces_broth
 original_name: BBL ACTINOMYCES BROTH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.9
 media_term:

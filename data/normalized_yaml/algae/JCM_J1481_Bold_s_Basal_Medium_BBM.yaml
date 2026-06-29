@@ -3,6 +3,7 @@ name: bold_s_basal_medium_bbm
 original_name: Bold's Basal Medium (BBM)
 category: algae
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1481

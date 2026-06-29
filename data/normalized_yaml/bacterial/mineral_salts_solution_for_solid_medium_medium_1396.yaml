@@ -3,6 +3,7 @@ name: mineral_salts_solution_for_solid_medium_medium_1396
 original_name: Mineral salts solution for solid medium (medium 1396)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3140

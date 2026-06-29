@@ -3,6 +3,7 @@ name: distilled_water
 original_name: Distilled Water
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: anaerobe_medium_no_1
 original_name: Anaerobe Medium NO. 1
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

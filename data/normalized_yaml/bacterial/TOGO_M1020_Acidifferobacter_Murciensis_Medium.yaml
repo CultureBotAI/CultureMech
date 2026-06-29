@@ -3,6 +3,7 @@ name: acidifferobacter_murciensis_medium
 original_name: Acidifferobacter Murciensis Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: rhodovulum_kholense_medium
 original_name: RHODOVULUM KHOLENSE medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1136

@@ -3,6 +3,7 @@ name: thermincola_medium
 original_name: THERMINCOLA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 1028 | DSMZ Medium: 1028 (mediadive.medium:1028)

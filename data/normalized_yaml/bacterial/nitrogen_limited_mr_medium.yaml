@@ -3,6 +3,7 @@ name: nitrogen_limited_mr_medium
 original_name: Nitrogen-limited MR medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium dihydrogen phosphate

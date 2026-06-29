@@ -3,6 +3,7 @@ name: modified_m63_medium_with_hydroxyectoine_and_2_5_m_nacl
 original_name: Modified m63 medium with hydroxyectoine and 2.5 m nacl
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium hydroxide

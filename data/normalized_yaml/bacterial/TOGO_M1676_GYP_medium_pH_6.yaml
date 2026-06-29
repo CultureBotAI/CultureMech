@@ -3,6 +3,7 @@ name: gyp_medium_ph_6
 original_name: GYP medium (pH 6)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

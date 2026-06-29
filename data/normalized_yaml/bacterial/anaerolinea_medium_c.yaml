@@ -3,6 +3,7 @@ name: anaerolinea_medium_c
 original_name: ANAEROLINEA MEDIUM C
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

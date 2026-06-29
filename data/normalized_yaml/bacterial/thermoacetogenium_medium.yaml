@@ -3,6 +3,7 @@ name: thermoacetogenium_medium
 original_name: THERMOACETOGENIUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

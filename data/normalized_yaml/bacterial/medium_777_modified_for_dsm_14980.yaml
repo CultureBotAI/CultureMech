@@ -3,6 +3,7 @@ name: medium_777_modified_for_dsm_14980
 original_name: MEDIUM 777 MODIFIED FOR DSM 14980
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 777_14980

@@ -3,6 +3,7 @@ name: microbacter_medium
 original_name: MICROBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 media_term:

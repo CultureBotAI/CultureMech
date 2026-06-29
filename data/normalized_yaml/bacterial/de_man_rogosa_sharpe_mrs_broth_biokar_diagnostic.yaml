@@ -3,6 +3,7 @@ name: de_man_rogosa_sharpe_mrs_broth_biokar_diagnostic
 original_name: De Man-Rogosa-Sharpe (MRS) broth (Biokar Diagnostic)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

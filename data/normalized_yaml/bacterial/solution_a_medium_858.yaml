@@ -3,6 +3,7 @@ name: solution_a_medium_858
 original_name: Solution A (medium 858)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 4050

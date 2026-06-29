@@ -3,6 +3,7 @@ name: medium_for_strain_gk12
 original_name: Medium for Strain GK12
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: desulfocarbo_indianensis_medium
 original_name: DESULFOCARBO INDIANENSIS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1020

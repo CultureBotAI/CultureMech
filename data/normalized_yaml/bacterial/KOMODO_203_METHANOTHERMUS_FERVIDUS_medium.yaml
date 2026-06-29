@@ -3,6 +3,7 @@ name: methanothermus_fervidus_medium
 original_name: METHANOTHERMUS FERVIDUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 203 | DSMZ Medium: 203 (mediadive.medium:203)

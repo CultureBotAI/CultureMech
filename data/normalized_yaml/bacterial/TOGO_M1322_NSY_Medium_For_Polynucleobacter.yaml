@@ -3,6 +3,7 @@ name: nsy_medium_for_polynucleobacter
 original_name: NSY Medium For Polynucleobacter
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

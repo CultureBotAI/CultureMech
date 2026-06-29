@@ -3,6 +3,7 @@ name: tryptic_soy_broth_containing_1_nacl
 original_name: Tryptic Soy Broth containing 1% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl

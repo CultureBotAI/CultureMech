@@ -3,6 +3,7 @@ name: methanol_utilizing_bacteria_medium_b
 original_name: Methanol-Utilizing Bacteria Medium B
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

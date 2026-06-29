@@ -3,6 +3,7 @@ name: html_mj_anhox_no_sub_3_sub_with_thiosulfate_medium_html
 original_name: <html>MJ/Anhox-NO<sub>3</sub> With Thiosulfate Medium</html>
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

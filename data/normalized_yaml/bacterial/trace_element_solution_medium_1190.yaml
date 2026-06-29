@@ -3,6 +3,7 @@ name: trace_element_solution_medium_1190
 original_name: Trace element solution (medium 1190)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.0
 media_term:

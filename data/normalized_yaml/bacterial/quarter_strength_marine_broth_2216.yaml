@@ -3,6 +3,7 @@ name: quarter_strength_marine_broth_2216
 original_name: Quarter Strength Marine Broth 2216
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

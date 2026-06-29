@@ -3,6 +3,7 @@ name: fermentation_medium_oleic_acid_nh4cl
 original_name: '''Fermentation Medium (Oleic acid+NH4Cl'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: '''(9Z'

@@ -3,6 +3,7 @@ name: pygv_marine_medium_a
 original_name: PYGV MARINE MEDIUM (A)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

@@ -3,6 +3,7 @@ name: lb_1_tween_80
 original_name: LB + 1% Tween 80
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

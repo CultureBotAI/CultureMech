@@ -3,6 +3,7 @@ name: for_dsm_14663_and_dsm_15483
 original_name: For DSM 14663 and DSM 15483
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.7
 media_term:

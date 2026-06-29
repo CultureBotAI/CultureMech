@@ -3,6 +3,7 @@ name: tris_yp_medium
 original_name: TRIS - YP medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 257

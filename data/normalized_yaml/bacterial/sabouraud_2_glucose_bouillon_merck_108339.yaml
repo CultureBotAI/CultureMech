@@ -3,6 +3,7 @@ name: sabouraud_2_glucose_bouillon_merck_108339
 original_name: SABOURAUD-2% Glucose-Bouillon (Merck 108339)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 8004

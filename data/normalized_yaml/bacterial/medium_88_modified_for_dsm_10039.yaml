@@ -3,6 +3,7 @@ name: medium_88_modified_for_dsm_10039
 original_name: MEDIUM 88 MODIFIED FOR DSM 10039
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 88_10039

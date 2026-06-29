@@ -1,6 +1,7 @@
 id: CultureMech:015497
 name: BHIS_K3_noGlucose
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calf brains

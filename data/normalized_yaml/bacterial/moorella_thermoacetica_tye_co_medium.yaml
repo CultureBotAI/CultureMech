@@ -3,6 +3,7 @@ name: moorella_thermoacetica_tye_co_medium
 original_name: MOORELLA THERMOACETICA (TYE-CO) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: medium_948_modified_for_dsm_16823
 original_name: MEDIUM 948 MODIFIED FOR DSM 16823
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 948_16823

@@ -3,6 +3,7 @@ name: for_dsm_3247
 original_name: For DSM 3247
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 345.1

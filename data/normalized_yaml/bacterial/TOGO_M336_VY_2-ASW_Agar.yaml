@@ -3,6 +3,7 @@ name: vy_2_asw_agar
 original_name: VY/2-ASW Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Vitamin B12

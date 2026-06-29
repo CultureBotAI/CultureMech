@@ -3,6 +3,7 @@ name: marine_acidophilic_sulfur_oxidizing_bacteria_medium
 original_name: Marine acidophilic sulfur-oxidizing bacteria Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

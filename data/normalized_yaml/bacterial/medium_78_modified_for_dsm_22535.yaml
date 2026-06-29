@@ -3,6 +3,7 @@ name: medium_78_modified_for_dsm_22535
 original_name: MEDIUM 78 MODIFIED FOR DSM 22535
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 78_22535

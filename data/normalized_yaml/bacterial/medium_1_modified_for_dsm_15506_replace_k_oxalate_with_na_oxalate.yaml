@@ -3,6 +3,7 @@ name: medium_1_modified_for_dsm_15506_replace_k_oxalate_with_na_oxalate
 original_name: MEDIUM 1 MODIFIED FOR DSM 15506_replace_K-oxalate_with_Na-oxalate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1_15506_replace_K-oxalate_with_Na-oxalate

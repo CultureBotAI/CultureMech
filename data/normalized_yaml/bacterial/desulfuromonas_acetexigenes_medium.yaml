@@ -3,6 +3,7 @@ name: desulfuromonas_acetexigenes_medium
 original_name: DESULFUROMONAS ACETEXIGENES MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

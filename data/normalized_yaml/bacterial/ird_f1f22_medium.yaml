@@ -3,6 +3,7 @@ name: ird_f1f22_medium
 original_name: IRD F1F22 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

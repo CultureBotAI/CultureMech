@@ -3,6 +3,7 @@ name: mineral_solution_1_medium_1033
 original_name: Mineral solution 1 (medium 1033)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.2
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3034 | DSMZ Medium: 3034 (mediadive.medium:3034)

@@ -3,6 +3,7 @@ name: aerobic_version
 original_name: Aerobic version
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 2.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 398.2 | DSMZ Medium: 398

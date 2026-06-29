@@ -3,6 +3,7 @@ name: pjc_with_4_hpa
 original_name: Pjc with 4-hpa
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 4-Hydroxyphenylacetate

@@ -3,6 +3,7 @@ name: nz_amine_with_soluble_starch_and_glucose_agar_medium
 original_name: NZ Amine with Soluble Starch and Glucose Agar Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: desulfurispirillum_indicum_medium
 original_name: DESULFURISPIRILLUM INDICUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

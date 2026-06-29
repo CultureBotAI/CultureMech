@@ -3,6 +3,7 @@ name: treponema_succinifaciens_medium
 original_name: TREPONEMA SUCCINIFACIENS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

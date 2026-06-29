@@ -3,6 +3,7 @@ name: cgc_w_acetate
 original_name: CgC w/ acetate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Acetate

@@ -3,6 +3,7 @@ name: trace_mineral_solution_medium_1000
 original_name: Trace mineral solution (medium 1000)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 2074

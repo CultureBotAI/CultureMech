@@ -3,6 +3,7 @@ name: medium_464_modified_for_dsm_11199
 original_name: MEDIUM 464 MODIFIED FOR DSM 11199
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 464_11199

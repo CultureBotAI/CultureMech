@@ -3,6 +3,7 @@ name: modified_p7_medium
 original_name: Modified P7 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract

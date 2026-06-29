@@ -3,6 +3,7 @@ name: medium_429b_modified_for_dsm_18554
 original_name: MEDIUM 429b MODIFIED FOR DSM 18554
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 429b_18554

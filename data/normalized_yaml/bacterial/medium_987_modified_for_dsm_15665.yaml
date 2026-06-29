@@ -3,6 +3,7 @@ name: medium_987_modified_for_dsm_15665
 original_name: MEDIUM 987 MODIFIED FOR DSM 15665
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 9.7
 media_term:

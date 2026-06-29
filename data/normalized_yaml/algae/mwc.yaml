@@ -2,6 +2,7 @@ id: CultureMech:000094
 name: mwc
 category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
   algae cultivation. Recipe available in PDF format.

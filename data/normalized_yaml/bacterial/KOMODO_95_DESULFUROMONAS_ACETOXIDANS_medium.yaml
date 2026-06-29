@@ -3,6 +3,7 @@ name: desulfuromonas_acetoxidans_medium
 original_name: DESULFUROMONAS ACETOXIDANS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 95 | DSMZ Medium: 95 (mediadive.medium:95)

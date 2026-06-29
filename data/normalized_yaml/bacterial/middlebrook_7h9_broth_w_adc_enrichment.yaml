@@ -3,6 +3,7 @@ name: middlebrook_7h9_broth_w_adc_enrichment
 original_name: Middlebrook 7H9 Broth w/ADC Enrichment
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol

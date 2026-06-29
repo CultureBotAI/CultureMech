@@ -3,6 +3,7 @@ name: haloarchaeal_complex_medium_ph_9_0
 original_name: Haloarchaeal Complex Medium PH 9.0
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

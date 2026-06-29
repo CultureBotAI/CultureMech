@@ -3,6 +3,7 @@ name: sulfurimonas_mj_medium
 original_name: SULFURIMONAS MJ MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.7
 media_term:

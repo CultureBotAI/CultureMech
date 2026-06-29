@@ -3,6 +3,7 @@ name: medium_87a_modified_for_dsm_13941
 original_name: MEDIUM 87a MODIFIED FOR DSM 13941
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 87a_13941

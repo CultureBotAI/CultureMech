@@ -3,6 +3,7 @@ name: natural_seawater_medium_for_halophile
 original_name: Natural Seawater Medium For Halophile
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: NaCl

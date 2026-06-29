@@ -3,6 +3,7 @@ name: methanobacterium_ii_medium_n2_co2
 original_name: METHANOBACTERIUM II MEDIUM (N2/CO2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

@@ -3,6 +3,7 @@ name: omiz_pat_medium_modified
 original_name: . OMIZ-PAT Medium (modified)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.9
 media_term:

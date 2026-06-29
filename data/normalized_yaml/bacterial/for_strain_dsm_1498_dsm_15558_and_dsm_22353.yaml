@@ -3,6 +3,7 @@ name: for_strain_dsm_1498_dsm_15558_and_dsm_22353
 original_name: For strain DSM 1498, DSM 15558 and DSM 22353
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

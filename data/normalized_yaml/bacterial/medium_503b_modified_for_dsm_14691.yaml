@@ -3,6 +3,7 @@ name: medium_503b_modified_for_dsm_14691
 original_name: MEDIUM 503b MODIFIED FOR DSM 14691
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 503b_14691

@@ -3,6 +3,7 @@ name: chopped_meat_carbohydrates_with_rumen_fluid
 original_name: Chopped meat carbohydrates with rumen fluid
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Starch

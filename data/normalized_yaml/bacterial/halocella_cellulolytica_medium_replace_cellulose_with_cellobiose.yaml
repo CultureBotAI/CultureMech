@@ -3,6 +3,7 @@ name: halocella_cellulolytica_medium_replace_cellulose_with_cellobiose
 original_name: HALOCELLA CELLULOLYTICA medium_replace_Cellulose_with_Cellobiose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: sulfolobus_solfataricus_medium
 original_name: Sulfolobus Solfataricus Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

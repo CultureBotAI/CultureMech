@@ -3,6 +3,7 @@ name: modified_9k_medium_for_ferroplasma_aeolicum
 original_name: Modified 9K Medium For Ferroplasma Aeolicum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

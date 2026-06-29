@@ -3,6 +3,7 @@ name: cmc_medium_n2_co2
 original_name: CMC MEDIUM (N2/CO2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

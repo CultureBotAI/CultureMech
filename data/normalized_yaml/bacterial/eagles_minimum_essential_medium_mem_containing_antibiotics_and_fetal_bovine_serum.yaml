@@ -4,6 +4,7 @@ original_name: Eagle's  minimum  essential  medium  (MEM) (containing antibiotic
   and fetal  bovine  serum)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: fetal  bovine  serum

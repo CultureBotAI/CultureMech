@@ -3,6 +3,7 @@ name: medium_820_modified_for_dsm_16960
 original_name: MEDIUM 820 MODIFIED FOR DSM 16960
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.8
 media_term:

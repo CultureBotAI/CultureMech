@@ -3,6 +3,7 @@ name: starch_casein_agar_sca_ph_5_5
 original_name: Starch casein agar (SCA, pH 5.5)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: universal_medium_for_yeasts_ym
 original_name: UNIVERSAL medium FOR YEASTS (YM)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 186

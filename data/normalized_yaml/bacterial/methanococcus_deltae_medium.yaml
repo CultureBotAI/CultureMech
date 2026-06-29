@@ -3,6 +3,7 @@ name: methanococcus_deltae_medium
 original_name: METHANOCOCCUS DELTAE MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 288

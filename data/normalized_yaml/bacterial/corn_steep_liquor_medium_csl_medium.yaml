@@ -3,6 +3,7 @@ name: corn_steep_liquor_medium_csl_medium
 original_name: Corn steep liquor medium (CSL medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

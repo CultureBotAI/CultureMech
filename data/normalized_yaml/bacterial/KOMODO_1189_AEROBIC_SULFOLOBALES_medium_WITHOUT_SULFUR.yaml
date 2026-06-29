@@ -3,6 +3,7 @@ name: aerobic_sulfolobales_medium_without_sulfur
 original_name: AEROBIC SULFOLOBALES medium WITHOUT SULFUR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1189

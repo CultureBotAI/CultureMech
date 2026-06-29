@@ -3,6 +3,7 @@ name: medium_for_dsm_14457_and_14458
 original_name: MEDIUM FOR DSM 14457 AND 14458
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

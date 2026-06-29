@@ -3,6 +3,7 @@ name: lamprobacter_medium
 original_name: LAMPROBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

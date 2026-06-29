@@ -3,6 +3,7 @@ name: modified_ba_medium
 original_name: MODIFIED BA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.9

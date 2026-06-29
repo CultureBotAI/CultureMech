@@ -3,6 +3,7 @@ name: tryptic_soy_broth_without_glucose_difco_media
 original_name: Tryptic soy broth without glucose (Difco) media
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

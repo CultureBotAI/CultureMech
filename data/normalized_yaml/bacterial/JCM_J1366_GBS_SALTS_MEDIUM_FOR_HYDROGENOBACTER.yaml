@@ -3,6 +3,7 @@ name: gbs_salts_medium_for_hydrogenobacter
 original_name: GBS SALTS MEDIUM FOR HYDROGENOBACTER
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1366

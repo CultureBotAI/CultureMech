@@ -3,6 +3,7 @@ name: alkaline_yeast_extract_malt_extract_agar
 original_name: Alkaline Yeast Extract-Malt Extract Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients: []
 media_term:

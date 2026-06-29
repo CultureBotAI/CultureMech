@@ -2,6 +2,7 @@ id: CultureMech:000036
 name: bristol_nacl_medium
 category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.

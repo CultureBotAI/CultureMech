@@ -5,6 +5,7 @@ original_name: DSM 2476, DSM 5473, DSM 5474, DSM 9503, DSM 10343, DSM 10394, DSM
   14981, DSM 15226, DSM 16538, DSM 17994, DSM 17882
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.0

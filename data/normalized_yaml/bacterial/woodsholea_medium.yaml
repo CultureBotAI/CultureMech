@@ -3,6 +3,7 @@ name: woodsholea_medium
 original_name: WOODSHOLEA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1238

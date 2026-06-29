@@ -3,6 +3,7 @@ name: mb_w_medium_fa
 original_name: MB/W medium + FA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: fermentation_medium_glucose_histidine
 original_name: '''Fermentation Medium (Glucose+Histidine'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Riboflavin

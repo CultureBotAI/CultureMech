@@ -3,6 +3,7 @@ name: tetragenococcus_halophilus_medium_to_mrs_medium_add_6_5_nacl
 original_name: Tetragenococcus halophilus Medium (To MRS Medium add 6.5% NaCl)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

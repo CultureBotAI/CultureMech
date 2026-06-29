@@ -3,6 +3,7 @@ name: nutrient_agar_with_0_05_yeast_extract_and_3_nacl
 original_name: NUTRIENT AGAR WITH 0.05% YEAST EXTRACT AND 3% NaCl
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1109

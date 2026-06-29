@@ -3,6 +3,7 @@ name: type_a_toxin_production_medium_tpm
 original_name: Type A Toxin Production medium (TPM)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

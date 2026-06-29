@@ -3,6 +3,7 @@ name: anoxic_medium_for_strain_acbe2_1
 original_name: ANOXIC MEDIUM FOR STRAIN AcBE2-1
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

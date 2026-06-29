@@ -3,6 +3,7 @@ name: pjc_with_3_hpa
 original_name: Pjc with 3-hpa
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 3-Hydroxypropanal

@@ -3,6 +3,7 @@ name: modified_isp5_medium_with_sodium_chloride
 original_name: MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 993c

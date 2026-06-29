@@ -3,6 +3,7 @@ name: brucella_agar_plates_supplemented_with_hemin_and_vitamin_k1
 original_name: Brucella agar plates supplemented with hemin and vitamin K1
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: methanogen_high_salt_medium
 original_name: Methanogen High Salt Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: medium_830c_modified_for_dsm_25221
 original_name: MEDIUM 830c MODIFIED FOR DSM 25221
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 830c_25221

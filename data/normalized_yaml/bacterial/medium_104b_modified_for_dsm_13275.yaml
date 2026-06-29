@@ -3,6 +3,7 @@ name: medium_104b_modified_for_dsm_13275
 original_name: MEDIUM 104b MODIFIED FOR DSM 13275
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 104b_13275 | DSMZ Medium:

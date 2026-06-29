@@ -3,6 +3,7 @@ name: thermoproteus_medium
 original_name: THERMOPROTEUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 185 | DSMZ Medium: 185 (mediadive.medium:185)

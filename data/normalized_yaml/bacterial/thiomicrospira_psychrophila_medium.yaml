@@ -3,6 +3,7 @@ name: thiomicrospira_psychrophila_medium
 original_name: THIOMICROSPIRA PSYCHROPHILA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.6
 notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 142a | DSMZ Medium: 142a

@@ -3,6 +3,7 @@ name: hs_tma
 original_name: HS TMA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

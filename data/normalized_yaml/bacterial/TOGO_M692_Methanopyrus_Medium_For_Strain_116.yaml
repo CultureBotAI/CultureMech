@@ -3,6 +3,7 @@ name: methanopyrus_medium_for_strain_116
 original_name: Methanopyrus Medium For Strain 116
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

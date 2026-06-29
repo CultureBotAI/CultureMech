@@ -3,6 +3,7 @@ name: f_2_si_for_heterotrophic_growth
 original_name: f/2 + Si for heterotrophic growth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:

@@ -3,6 +3,7 @@ name: rhodobaca_barguzinensis_medium
 original_name: RHODOBACA BARGUZINENSIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1227

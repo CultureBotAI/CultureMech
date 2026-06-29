@@ -3,6 +3,7 @@ name: db_characterization_medium_no_2
 original_name: DB Characterization Medium NO. 2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

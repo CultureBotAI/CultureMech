@@ -3,6 +3,7 @@ name: conexivisphaera_medium
 original_name: CONEXIVISPHAERA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 5.0

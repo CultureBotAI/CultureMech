@@ -3,6 +3,7 @@ name: liver_broth_oxoid_cm_77
 original_name: LIVER BROTH (Oxoid CM 77)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 77

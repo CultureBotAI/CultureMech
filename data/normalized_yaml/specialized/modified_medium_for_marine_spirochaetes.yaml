@@ -3,6 +3,7 @@ name: modified_medium_for_marine_spirochaetes
 original_name: MODIFIED MEDIUM FOR MARINE SPIROCHAETES
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

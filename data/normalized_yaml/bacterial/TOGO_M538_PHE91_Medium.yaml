@@ -3,6 +3,7 @@ name: phe91_medium
 original_name: PHE91 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: N2

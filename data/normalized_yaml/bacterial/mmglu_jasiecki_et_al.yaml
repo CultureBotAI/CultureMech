@@ -3,6 +3,7 @@ name: mmglu_jasiecki_et_al
 original_name: MMGlu; Jasiecki et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

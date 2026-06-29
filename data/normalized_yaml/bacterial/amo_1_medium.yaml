@@ -3,6 +3,7 @@ name: amo_1_medium
 original_name: AMO.1 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.3
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 683 | DSMZ Medium: 683 (mediadive.medium:683)

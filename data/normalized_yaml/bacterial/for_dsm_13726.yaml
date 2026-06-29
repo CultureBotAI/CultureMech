@@ -3,6 +3,7 @@ name: for_dsm_13726
 original_name: For DSM 13726
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

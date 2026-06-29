@@ -1,6 +1,7 @@
 id: CultureMech:015756
 name: UGA defined 4CarbonMix Nitrate anaerobic pH 5.9
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium Chloride

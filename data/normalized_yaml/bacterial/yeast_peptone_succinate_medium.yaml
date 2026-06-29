@@ -3,6 +3,7 @@ name: yeast_peptone_succinate_medium
 original_name: YEAST-Peptone-SUCCINATE medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

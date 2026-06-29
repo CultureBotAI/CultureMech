@@ -3,6 +3,7 @@ name: ms_ocm_base_medium
 original_name: MS-OCM Base Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium bicarbonate

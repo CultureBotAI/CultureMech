@@ -3,6 +3,7 @@ name: tsa_hemin_menadione_medium
 original_name: TSA HEMIN MENADIONE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J469

@@ -3,6 +3,7 @@ name: syntrophobacter_wolinii_medium
 original_name: SYNTROPHOBACTER WOLINII medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 307

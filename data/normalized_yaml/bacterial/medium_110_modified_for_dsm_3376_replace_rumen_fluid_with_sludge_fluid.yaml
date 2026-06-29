@@ -3,6 +3,7 @@ name: medium_110_modified_for_dsm_3376_replace_rumen_fluid_with_sludge_fluid
 original_name: MEDIUM 110 MODIFIED FOR DSM 3376_replace_rumen fluid_with_sludge fluid
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 110_3376_replace_rumen fluid_with_sludge fluid

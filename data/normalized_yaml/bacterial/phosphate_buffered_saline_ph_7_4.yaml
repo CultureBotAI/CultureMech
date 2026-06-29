@@ -3,6 +3,7 @@ name: phosphate_buffered_saline_ph_7_4
 original_name: PHOSPHATE-BUFFERED SALINE (pH 7.4)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J885

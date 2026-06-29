@@ -3,6 +3,7 @@ name: tryptone_soya_broth_tsb_with_additional_salts
 original_name: TRYPTONE SOYA BROTH (TSB) WITH ADDITIONAL SALTS
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.2

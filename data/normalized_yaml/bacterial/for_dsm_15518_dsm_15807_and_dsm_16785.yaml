@@ -3,6 +3,7 @@ name: for_dsm_15518_dsm_15807_and_dsm_16785
 original_name: For DSM 15518, DSM 15807 and DSM 16785
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

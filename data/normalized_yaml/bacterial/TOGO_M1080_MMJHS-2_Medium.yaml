@@ -3,6 +3,7 @@ name: mmjhs_2_medium
 original_name: MMJHS-2 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3

@@ -3,6 +3,7 @@ name: mj_basal_medium_with_thiosulfate_2
 original_name: MJ BASAL MEDIUM WITH THIOSULFATE/2
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

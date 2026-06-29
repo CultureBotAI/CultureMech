@@ -3,6 +3,7 @@ name: mineral_medium_with_sulfobenzoic_acid
 original_name: MINERAL MEDIUM WITH SULFOBENZOIC ACID
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 465e

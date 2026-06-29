@@ -3,6 +3,7 @@ name: thioalkalivibrio_halophilus_medium
 original_name: THIOALKALIVIBRIO HALOPHILUS MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 8.0

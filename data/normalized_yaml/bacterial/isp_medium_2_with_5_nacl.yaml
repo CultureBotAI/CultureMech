@@ -3,6 +3,7 @@ name: isp_medium_2_with_5_nacl
 original_name: ISP MEDIUM 2 WITH 5% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.3

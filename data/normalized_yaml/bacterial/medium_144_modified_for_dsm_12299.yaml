@@ -3,6 +3,7 @@ name: medium_144_modified_for_dsm_12299
 original_name: MEDIUM 144 MODIFIED FOR DSM 12299
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 144_12299

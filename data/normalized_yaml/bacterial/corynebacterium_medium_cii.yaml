@@ -3,6 +3,7 @@ name: corynebacterium_medium_cii
 original_name: CORYNEBACTERIUM MEDIUM CII
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:

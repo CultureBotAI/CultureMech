@@ -3,6 +3,7 @@ name: mma_klein_et_al
 original_name: MMA; Klein et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''

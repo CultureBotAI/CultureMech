@@ -3,6 +3,7 @@ name: cyanobacteria_medium_swes_seawater_soil_extract_salts
 original_name: Cyanobacteria Medium SWES (Seawater - Soil Extract - Salts)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1831

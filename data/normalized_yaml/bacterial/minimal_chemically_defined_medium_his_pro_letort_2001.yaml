@@ -3,6 +3,7 @@ name: minimal_chemically_defined_medium_his_pro_letort_2001
 original_name: '''Minimal chemically-defined medium + His +Pro (letort 2001'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Thiamine HCl

@@ -3,6 +3,7 @@ name: chemically_defined_fermentation_medium_45g_glucose_12_5g_histidine
 original_name: '''Chemically Defined Fermentation Medium (45g glucose + 12.5g histidine'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium dibasic phosphate

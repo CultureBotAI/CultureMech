@@ -3,6 +3,7 @@ name: thiobacillus_prosperus_fo1_medium
 original_name: Thiobacillus Prosperus FO1 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

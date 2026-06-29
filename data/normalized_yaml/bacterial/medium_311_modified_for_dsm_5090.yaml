@@ -3,6 +3,7 @@ name: medium_311_modified_for_dsm_5090
 original_name: MEDIUM 311 MODIFIED FOR DSM 5090
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 311_5090

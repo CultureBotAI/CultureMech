@@ -3,6 +3,7 @@ name: chocolate_agar_polyvitex_pvx
 original_name: Chocolate agar + PolyViteX (PVX)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

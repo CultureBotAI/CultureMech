@@ -3,6 +3,7 @@ name: thiobacillus_ferrooxidans_medium_aph
 original_name: THIOBACILLUS FERROOXIDANS MEDIUM (APH)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 271 | DSMZ Medium: 271 (mediadive.medium:271)

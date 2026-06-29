@@ -3,6 +3,7 @@ name: ird_marine_desulfovibrio_medium_3
 original_name: IRD Marine Desulfovibrio Medium-3
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

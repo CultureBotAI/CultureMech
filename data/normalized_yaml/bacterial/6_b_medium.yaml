@@ -3,6 +3,7 @@ name: 6_b_medium
 original_name: 6 B MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J47

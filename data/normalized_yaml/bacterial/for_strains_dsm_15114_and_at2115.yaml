@@ -3,6 +3,7 @@ name: for_strains_dsm_15114_and_at2115
 original_name: For strains DSM 15114 and AT2115
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

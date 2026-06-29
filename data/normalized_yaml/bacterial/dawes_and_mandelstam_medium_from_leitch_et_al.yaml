@@ -3,6 +3,7 @@ name: dawes_and_mandelstam_medium_from_leitch_et_al
 original_name: Dawes and Mandelstam medium; from Leitch et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

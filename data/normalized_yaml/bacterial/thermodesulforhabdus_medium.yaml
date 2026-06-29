@@ -3,6 +3,7 @@ name: thermodesulforhabdus_medium
 original_name: THERMODESULFORHABDUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 707 | DSMZ

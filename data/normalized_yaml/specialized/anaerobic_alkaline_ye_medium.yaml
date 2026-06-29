@@ -3,6 +3,7 @@ name: anaerobic_alkaline_ye_medium
 original_name: ANAEROBIC ALKALINE YE MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

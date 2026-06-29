@@ -3,6 +3,7 @@ name: methanococcus_mcc_medium
 original_name: Methanococcus McC Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

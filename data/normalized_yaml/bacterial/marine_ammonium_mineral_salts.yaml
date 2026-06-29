@@ -3,6 +3,7 @@ name: marine_ammonium_mineral_salts
 original_name: MARINE AMMONIUM MINERAL SALTS
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1313 | DSMZ Medium: 1313

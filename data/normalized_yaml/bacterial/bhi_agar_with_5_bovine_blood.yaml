@@ -3,6 +3,7 @@ name: bhi_agar_with_5_bovine_blood
 original_name: BHI agar with 5% bovine blood
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bovine blood

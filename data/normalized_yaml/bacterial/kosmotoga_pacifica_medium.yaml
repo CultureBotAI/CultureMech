@@ -3,6 +3,7 @@ name: kosmotoga_pacifica_medium
 original_name: KOSMOTOGA PACIFICA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J982

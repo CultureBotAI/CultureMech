@@ -3,6 +3,7 @@ name: medium_for_treponema_parvum
 original_name: medium FOR TREPONEMA PARVUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 78b

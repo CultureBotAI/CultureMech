@@ -3,6 +3,7 @@ name: de_man_rogosa_sharpe_mrs_broth
 original_name: de Man–Rogosa–Sharpe (MRS) broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 'de Man–Rogosa–Sharpe (MRS) broth (LabM) '

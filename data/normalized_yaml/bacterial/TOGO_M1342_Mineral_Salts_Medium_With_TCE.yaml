@@ -3,6 +3,7 @@ name: mineral_salts_medium_with_tce
 original_name: Mineral Salts Medium With TCE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

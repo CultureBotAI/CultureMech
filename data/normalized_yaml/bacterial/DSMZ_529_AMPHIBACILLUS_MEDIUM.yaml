@@ -3,6 +3,7 @@ name: amphibacillus_medium
 original_name: AMPHIBACILLUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 9.7
 media_term:

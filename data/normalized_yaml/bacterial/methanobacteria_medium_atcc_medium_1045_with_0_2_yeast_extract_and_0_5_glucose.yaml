@@ -4,6 +4,7 @@ original_name: Methanobacteria medium (ATCC medium 1045) with 0.2% yeast extract
   0.5% glucose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

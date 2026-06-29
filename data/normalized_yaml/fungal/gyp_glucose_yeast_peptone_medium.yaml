@@ -3,6 +3,7 @@ name: gyp_glucose_yeast_peptone_medium
 original_name: GYP GLUCOSE-YEAST-PEPTONE MEDIUM
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:

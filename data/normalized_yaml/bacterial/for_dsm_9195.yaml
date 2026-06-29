@@ -3,6 +3,7 @@ name: for_dsm_9195
 original_name: For DSM 9195
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

@@ -3,6 +3,7 @@ name: clostridium_thermocellum_medium
 original_name: Clostridium thermocellum medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Resazurin (0.1%)

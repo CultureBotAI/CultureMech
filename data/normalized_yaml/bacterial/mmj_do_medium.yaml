@@ -3,6 +3,7 @@ name: mmj_do_medium
 original_name: MMJ-DO MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

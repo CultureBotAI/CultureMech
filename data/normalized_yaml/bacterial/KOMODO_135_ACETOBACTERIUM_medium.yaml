@@ -3,6 +3,7 @@ name: acetobacterium_medium
 original_name: ACETOBACTERIUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.2
 notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 135 | DSMZ Medium: 135

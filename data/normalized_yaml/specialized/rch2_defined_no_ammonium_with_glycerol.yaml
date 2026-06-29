@@ -1,6 +1,7 @@
 id: CultureMech:015712
 name: RCH2 defined NO ammonium with Glycerol
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium Chloride

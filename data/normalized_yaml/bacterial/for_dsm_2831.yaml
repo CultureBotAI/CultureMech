@@ -3,6 +3,7 @@ name: for_dsm_2831
 original_name: For DSM 2831
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

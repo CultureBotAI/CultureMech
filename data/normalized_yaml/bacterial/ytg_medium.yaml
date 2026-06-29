@@ -3,6 +3,7 @@ name: ytg_medium
 original_name: YTG medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 10.1
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 616 | DSMZ Medium: 616 (mediadive.medium:616)

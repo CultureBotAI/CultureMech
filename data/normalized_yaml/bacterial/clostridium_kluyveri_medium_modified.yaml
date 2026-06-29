@@ -3,6 +3,7 @@ name: clostridium_kluyveri_medium_modified
 original_name: CLOSTRIDIUM KLUYVERI medium (modified)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

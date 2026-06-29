@@ -3,6 +3,7 @@ name: leuconostoc_oenos_medium
 original_name: Leuconostoc Oenos Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

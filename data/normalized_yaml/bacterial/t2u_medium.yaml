@@ -3,6 +3,7 @@ name: t2u_medium
 original_name: T2U MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.1
 media_term:

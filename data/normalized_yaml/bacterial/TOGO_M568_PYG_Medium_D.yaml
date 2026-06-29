@@ -3,6 +3,7 @@ name: pyg_medium_d
 original_name: PYG Medium (D)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L--cysteine・HCl・H2O

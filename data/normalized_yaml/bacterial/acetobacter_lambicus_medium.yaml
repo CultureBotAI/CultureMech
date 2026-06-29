@@ -3,6 +3,7 @@ name: acetobacter_lambicus_medium
 original_name: ACETOBACTER LAMBICUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.5
 media_term:

@@ -3,6 +3,7 @@ name: m9_with_3_35_zinc_sulfate_park_et_al
 original_name: M9 with 3.35% zinc sulfate; Park et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

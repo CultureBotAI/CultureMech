@@ -3,6 +3,7 @@ name: thermotoga_tf_c_medium
 original_name: THERMOTOGA TF(C) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

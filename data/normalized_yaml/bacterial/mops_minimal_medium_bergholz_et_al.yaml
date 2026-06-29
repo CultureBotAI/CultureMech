@@ -3,6 +3,7 @@ name: mops_minimal_medium_bergholz_et_al
 original_name: '''MOPS minimal medium (Bergholz et al'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

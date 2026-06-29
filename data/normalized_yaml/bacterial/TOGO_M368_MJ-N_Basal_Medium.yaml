@@ -3,6 +3,7 @@ name: mj_n_basal_medium
 original_name: MJ-N Basal Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaNO3

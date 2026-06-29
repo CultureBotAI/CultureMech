@@ -3,6 +3,7 @@ name: pyrodictium_brockii_medium
 original_name: Pyrodictium Brockii Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Resazurin

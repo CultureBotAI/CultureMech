@@ -3,6 +3,7 @@ name: zahorchak_et_al_medium_2_5_mm_exogenous_atp_10_mm_mg_2
 original_name: Zahorchak et al medium; 2.5 mM exogenous ATP, 10 mM Mg^2+
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''

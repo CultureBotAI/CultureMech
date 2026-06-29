@@ -3,6 +3,7 @@ name: 9k_medium
 original_name: 9K MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
 media_term:

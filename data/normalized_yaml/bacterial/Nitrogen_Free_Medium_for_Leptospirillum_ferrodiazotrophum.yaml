@@ -2,6 +2,7 @@ name: nitrogen_free_medium_for_leptospirillum_ferrodiazotrophum
 original_name: Nitrogen-Free Medium for Leptospirillum ferrodiazotrophum
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015436
 ingredients:

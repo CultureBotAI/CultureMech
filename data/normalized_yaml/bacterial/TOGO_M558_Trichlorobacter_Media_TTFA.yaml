@@ -3,6 +3,7 @@ name: trichlorobacter_media_ttfa
 original_name: Trichlorobacter Media (TTFA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

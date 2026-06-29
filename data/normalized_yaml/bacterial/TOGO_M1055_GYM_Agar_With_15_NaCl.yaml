@@ -3,6 +3,7 @@ name: gym_agar_with_15_nacl
 original_name: GYM Agar With 15% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

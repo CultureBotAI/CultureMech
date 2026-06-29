@@ -3,6 +3,7 @@ name: mn_ii_oxidation_medium
 original_name: Mn(II) oxidation medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

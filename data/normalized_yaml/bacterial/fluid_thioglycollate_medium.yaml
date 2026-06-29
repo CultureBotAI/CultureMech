@@ -3,6 +3,7 @@ name: fluid_thioglycollate_medium
 original_name: FLUID THIOGLYCOLLATE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.1
 media_term:

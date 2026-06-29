@@ -3,6 +3,7 @@ name: thermoanaerobacter_medium
 original_name: THERMOANAEROBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

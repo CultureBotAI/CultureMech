@@ -3,6 +3,7 @@ name: for_dsm_12503
 original_name: For DSM 12503
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

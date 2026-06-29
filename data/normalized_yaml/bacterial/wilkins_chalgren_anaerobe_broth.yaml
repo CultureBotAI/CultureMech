@@ -3,6 +3,7 @@ name: wilkins_chalgren_anaerobe_broth
 original_name: WILKINS-CHALGREN ANAEROBE BROTH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

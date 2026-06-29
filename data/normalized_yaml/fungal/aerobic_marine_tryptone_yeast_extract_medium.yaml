@@ -3,6 +3,7 @@ name: aerobic_marine_tryptone_yeast_extract_medium
 original_name: AEROBIC MARINE TRYPTONE YEAST EXTRACT MEDIUM
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

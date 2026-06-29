@@ -4,6 +4,7 @@ original_name: '1091'
 category: bacterial
 description: 1091. NBRC 1086.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''

@@ -3,6 +3,7 @@ name: magnetospirillum_gryphiswaldense_medium
 original_name: Magnetospirillum Gryphiswaldense Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

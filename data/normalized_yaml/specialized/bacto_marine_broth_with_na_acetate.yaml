@@ -3,6 +3,7 @@ name: bacto_marine_broth_with_na_acetate
 original_name: BACTO MARINE BROTH WITH NA-ACETATE
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 6.8

@@ -3,6 +3,7 @@ name: syntrophus_buswellii_ii_medium
 original_name: SYNTROPHUS BUSWELLII II MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 409

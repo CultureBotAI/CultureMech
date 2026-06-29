@@ -3,6 +3,7 @@ name: methanococcus_jannaschii_medium
 original_name: METHANOCOCCUS JANNASCHII MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

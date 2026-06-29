@@ -3,6 +3,7 @@ name: medium_402_modified_for_dsm_11983
 original_name: MEDIUM 402 MODIFIED FOR DSM 11983
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 402_11983

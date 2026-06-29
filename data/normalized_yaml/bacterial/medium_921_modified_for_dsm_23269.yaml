@@ -3,6 +3,7 @@ name: medium_921_modified_for_dsm_23269
 original_name: MEDIUM 921 MODIFIED FOR DSM 23269
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 921_23269

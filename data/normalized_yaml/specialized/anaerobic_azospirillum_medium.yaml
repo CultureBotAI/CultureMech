@@ -3,6 +3,7 @@ name: anaerobic_azospirillum_medium
 original_name: ANAEROBIC AZOSPIRILLUM MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

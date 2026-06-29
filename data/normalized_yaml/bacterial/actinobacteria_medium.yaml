@@ -3,6 +3,7 @@ name: actinobacteria_medium
 original_name: ACTINOBACTERIA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.0
 media_term:

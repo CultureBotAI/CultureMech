@@ -3,6 +3,7 @@ name: skirrows_selective_medium
 original_name: Skirrow's selective medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: sheep blood

@@ -3,6 +3,7 @@ name: for_dsm_15219_dsm_16458_and_dsm_18860
 original_name: For DSM 15219, DSM 16458 and DSM 18860
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 141.1 | DSMZ Medium: 141 (mediadive.medium:141)

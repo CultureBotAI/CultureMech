@@ -3,6 +3,7 @@ name: z_medium
 original_name: Z MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 563

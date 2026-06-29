@@ -3,6 +3,7 @@ name: rye_bran_mrs
 original_name: RYE-BRAN MRS
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J730

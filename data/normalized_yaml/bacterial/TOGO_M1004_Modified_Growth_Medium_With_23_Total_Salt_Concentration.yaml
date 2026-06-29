@@ -3,6 +3,7 @@ name: modified_growth_medium_with_23_total_salt_concentration
 original_name: Modified Growth Medium With 23% Total Salt Concentration
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: marine_desulfovibrio_complex_medium
 original_name: Marine Desulfovibrio Complex Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

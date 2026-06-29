@@ -3,6 +3,7 @@ name: modified_balchs_methanogen_medium_1_b
 original_name: Modified Balch's Methanogen Medium 1/B
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

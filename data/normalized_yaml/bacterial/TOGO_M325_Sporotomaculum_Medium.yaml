@@ -3,6 +3,7 @@ name: sporotomaculum_medium
 original_name: Sporotomaculum Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L--cysteine・HCl・H2O

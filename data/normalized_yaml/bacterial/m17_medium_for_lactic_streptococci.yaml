@@ -3,6 +3,7 @@ name: m17_medium_for_lactic_streptococci
 original_name: M17 MEDIUM FOR LACTIC STREPTOCOCCI
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.7

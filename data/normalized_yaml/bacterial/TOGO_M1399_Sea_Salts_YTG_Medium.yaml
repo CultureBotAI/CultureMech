@@ -3,6 +3,7 @@ name: sea_salts_ytg_medium
 original_name: Sea Salts YTG Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

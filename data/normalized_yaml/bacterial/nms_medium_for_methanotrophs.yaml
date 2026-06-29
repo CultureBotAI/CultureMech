@@ -3,6 +3,7 @@ name: nms_medium_for_methanotrophs
 original_name: NMS MEDIUM FOR METHANOTROPHS
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

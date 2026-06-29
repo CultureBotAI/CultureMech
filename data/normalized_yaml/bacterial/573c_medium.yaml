@@ -3,6 +3,7 @@ name: 573c_medium
 original_name: 573C MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.9
 media_term:

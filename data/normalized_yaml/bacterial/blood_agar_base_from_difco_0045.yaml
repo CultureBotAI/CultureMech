@@ -3,6 +3,7 @@ name: blood_agar_base_from_difco_0045
 original_name: Blood Agar Base from Difco 0045
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

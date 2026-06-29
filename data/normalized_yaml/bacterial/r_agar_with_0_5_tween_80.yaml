@@ -3,6 +3,7 @@ name: r_agar_with_0_5_tween_80
 original_name: R AGAR WITH 0.5% TWEEN 80
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J302

@@ -3,6 +3,7 @@ name: medium_1076b_modified_for_dsm_23979
 original_name: MEDIUM 1076b MODIFIED FOR DSM 23979
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1076b_23979

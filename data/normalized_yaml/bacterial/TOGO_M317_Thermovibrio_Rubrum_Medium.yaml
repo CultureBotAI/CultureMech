@@ -3,6 +3,7 @@ name: thermovibrio_rubrum_medium
 original_name: Thermovibrio Rubrum Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

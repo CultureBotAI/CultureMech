@@ -3,6 +3,7 @@ name: medium_58_modified_for_dsm_16839
 original_name: MEDIUM 58 MODIFIED FOR DSM 16839
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 58_16839

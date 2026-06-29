@@ -3,6 +3,7 @@ name: lactobacilli_mrs_agar_broth
 original_name: Lactobacilli MRS Agar/Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water

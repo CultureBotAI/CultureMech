@@ -3,6 +3,7 @@ name: micronutrient_solution_sl8_medium_1128
 original_name: Micronutrient solution SL8 (medium 1128)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

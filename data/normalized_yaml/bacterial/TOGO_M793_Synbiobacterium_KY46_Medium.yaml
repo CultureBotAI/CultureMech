@@ -3,6 +3,7 @@ name: synbiobacterium_ky46_medium
 original_name: Synbiobacterium KY46 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

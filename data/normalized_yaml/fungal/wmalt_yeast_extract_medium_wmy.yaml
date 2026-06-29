@@ -3,6 +3,7 @@ name: wmalt_yeast_extract_medium_wmy
 original_name: wMalt Yeast Extract Medium (wMY)
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C109

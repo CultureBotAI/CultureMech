@@ -3,6 +3,7 @@ name: mh1_medium_for_saliarchaeum_acidophilum
 original_name: MH1 Medium For Saliarchaeum Acidophilum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

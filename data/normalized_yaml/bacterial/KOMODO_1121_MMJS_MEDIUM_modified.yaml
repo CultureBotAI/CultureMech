@@ -3,6 +3,7 @@ name: mmjs_medium_modified
 original_name: MMJS MEDIUM (modified)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1121 | DSMZ Medium: 1121

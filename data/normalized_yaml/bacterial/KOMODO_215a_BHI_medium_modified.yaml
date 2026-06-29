@@ -3,6 +3,7 @@ name: bhi_medium_modified
 original_name: BHI medium (modified)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 215a

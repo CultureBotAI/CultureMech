@@ -3,6 +3,7 @@ name: reinforced_clostridial_medium_with_3_sea_salt
 original_name: REINFORCED CLOSTRIDIAL MEDIUM WITH 3%  SEA SALT
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J481

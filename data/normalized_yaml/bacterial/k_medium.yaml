@@ -3,6 +3,7 @@ name: k_medium
 original_name: K Medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:

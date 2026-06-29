@@ -3,6 +3,7 @@ name: alicyclobacillus_ferrooxydans_medium
 original_name: ALICYCLOBACILLUS FERROOXYDANS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 1.8

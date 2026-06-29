@@ -3,6 +3,7 @@ name: for_dsm_9120_dsm_17456_and_dsm_19275
 original_name: For DSM 9120, DSM 17456 and DSM 19275
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

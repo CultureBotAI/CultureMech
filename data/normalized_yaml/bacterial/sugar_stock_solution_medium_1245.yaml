@@ -3,6 +3,7 @@ name: sugar_stock_solution_medium_1245
 original_name: Sugar Stock Solution (medium 1245)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 6000

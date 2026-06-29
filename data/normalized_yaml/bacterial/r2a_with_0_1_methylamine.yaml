@@ -3,6 +3,7 @@ name: r2a_with_0_1_methylamine
 original_name: R2A with 0.1% methylamine
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

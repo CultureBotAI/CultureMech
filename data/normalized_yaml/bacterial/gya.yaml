@@ -3,6 +3,7 @@ name: gya
 original_name: GYA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DW

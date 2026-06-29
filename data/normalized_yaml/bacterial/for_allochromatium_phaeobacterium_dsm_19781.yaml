@@ -3,6 +3,7 @@ name: for_allochromatium_phaeobacterium_dsm_19781
 original_name: For Allochromatium phaeobacterium DSM 19781
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

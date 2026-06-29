@@ -3,6 +3,7 @@ name: haloplasma_contractile_medium
 original_name: HALOPLASMA CONTRACTILE medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

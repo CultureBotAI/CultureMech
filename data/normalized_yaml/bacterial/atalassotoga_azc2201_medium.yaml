@@ -3,6 +3,7 @@ name: atalassotoga_azc2201_medium
 original_name: ATALASSOTOGA AZC2201 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.0
 media_term:

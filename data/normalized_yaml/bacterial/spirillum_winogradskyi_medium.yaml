@@ -3,6 +3,7 @@ name: spirillum_winogradskyi_medium
 original_name: SPIRILLUM WINOGRADSKYI MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.2

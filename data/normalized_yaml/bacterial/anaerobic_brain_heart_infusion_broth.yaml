@@ -3,6 +3,7 @@ name: anaerobic_brain_heart_infusion_broth
 original_name: Anaerobic Brain Heart Infusion Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

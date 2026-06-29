@@ -3,6 +3,7 @@ name: sehel_for_halanaerobium
 original_name: SEHEL FOR HALANAEROBIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.3
 media_term:

@@ -3,6 +3,7 @@ name: alkalic_mrs_ph_8_5_3_nacl
 original_name: Alkalic MRS (pH 8.5) + 3% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

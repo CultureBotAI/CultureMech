@@ -3,6 +3,7 @@ name: medium_232_modified_for_dsm_20289
 original_name: MEDIUM 232 MODIFIED FOR DSM 20289
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.2
 media_term:

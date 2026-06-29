@@ -3,6 +3,7 @@ name: gam_broth_mod_gifu_anaerobic_medium_broth_modified
 original_name: GAM Broth, mod. (Gifu Anaerobic Medium Broth, modified)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1715

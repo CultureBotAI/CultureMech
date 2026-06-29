@@ -3,6 +3,7 @@ name: modified_nitrate_mineral_salts_medium_2
 original_name: Modified Nitrate  Mineral Salts Medium-2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

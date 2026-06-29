@@ -3,6 +3,7 @@ name: hi_plus_medium_w_ye_3
 original_name: 'HI Plus Medium w/ YE #3'
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Agar Noble

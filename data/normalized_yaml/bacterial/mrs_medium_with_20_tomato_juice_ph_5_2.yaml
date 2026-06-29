@@ -3,6 +3,7 @@ name: mrs_medium_with_20_tomato_juice_ph_5_2
 original_name: MRS medium with 20% Tomato Juice (pH 5.2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: skim_milk_hornmeal_mineral_agar
 original_name: SKIM MILK-HORNMEAL-MINERAL AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 440

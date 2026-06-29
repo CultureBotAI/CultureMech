@@ -3,6 +3,7 @@ name: yeast_extract_malt_extract_agar_isp_2_with_5_nacl
 original_name: Yeast Extract-Malt Extract Agar (ISP-2) With 5% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: NaCl

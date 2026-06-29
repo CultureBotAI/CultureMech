@@ -3,6 +3,7 @@ name: bsk_medium
 original_name: BSK-MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 403 | DSMZ Medium: 403 (mediadive.medium:403)

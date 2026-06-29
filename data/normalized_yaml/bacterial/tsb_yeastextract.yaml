@@ -1,6 +1,7 @@
 id: CultureMech:015474
 name: TSB_YeastExtract
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tryptone

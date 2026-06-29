@@ -4,6 +4,7 @@ original_name: Clostridium thermocellum medium (ATCC medium 1190) with 18.75 g f
   paper substituted for the glucose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Resazurin (0.1%)

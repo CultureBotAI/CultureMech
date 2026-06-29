@@ -3,6 +3,7 @@ name: zm_10
 original_name: ZM/10
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C108

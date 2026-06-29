@@ -3,6 +3,7 @@ name: modified_methanobacterium_medium_for_dsm_1093
 original_name: Modified Methanobacterium Medium (For DSM 1093)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

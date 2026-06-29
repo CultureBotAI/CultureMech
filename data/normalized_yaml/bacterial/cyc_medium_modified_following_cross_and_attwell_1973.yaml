@@ -3,6 +3,7 @@ name: cyc_medium_modified_following_cross_and_attwell_1973
 original_name: CYC-MEDIUM (modified following Cross and Attwell,1973)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

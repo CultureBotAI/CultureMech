@@ -2,6 +2,7 @@ name: glycerol_fermentation_medium_for_diet_coculture
 original_name: Glycerol Fermentation Medium for DIET Coculture
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015432
 ingredients:

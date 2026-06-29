@@ -3,6 +3,7 @@ name: medium_with_thiazole
 original_name: MEDIUM WITH THIAZOLE
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 639

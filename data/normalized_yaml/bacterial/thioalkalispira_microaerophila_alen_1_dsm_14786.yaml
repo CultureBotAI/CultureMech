@@ -3,6 +3,7 @@ name: thioalkalispira_microaerophila_alen_1_dsm_14786
 original_name: Thioalkalispira microaerophila, ALEN 1 = DSM 14786
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 925.7

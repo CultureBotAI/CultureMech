@@ -3,6 +3,7 @@ name: n27_rhodospirillaceae_medium_modified
 original_name: N27 RHODOSPIRILLACEAE MEDIUM (modified)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

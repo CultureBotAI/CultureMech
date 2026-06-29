@@ -1,6 +1,7 @@
 id: CultureMech:015729
 name: Romy basal defined aerobic
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium phosphate monobasic monohydrate

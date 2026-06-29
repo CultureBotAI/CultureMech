@@ -3,6 +3,7 @@ name: for_dsm_15011_and_dsm_24906
 original_name: For DSM 15011 and DSM 24906
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.3

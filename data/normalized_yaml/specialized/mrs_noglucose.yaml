@@ -1,6 +1,7 @@
 id: CultureMech:015637
 name: MRS_noGlucose
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Proteose Peptone

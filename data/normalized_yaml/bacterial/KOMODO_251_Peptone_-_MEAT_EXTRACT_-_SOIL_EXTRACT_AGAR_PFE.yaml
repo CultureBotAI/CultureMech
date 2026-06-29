@@ -3,6 +3,7 @@ name: peptone_meat_extract_soil_extract_agar_pfe
 original_name: Peptone - MEAT EXTRACT - SOIL EXTRACT AGAR (PFE)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:

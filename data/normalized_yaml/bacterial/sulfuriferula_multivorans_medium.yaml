@@ -3,6 +3,7 @@ name: sulfuriferula_multivorans_medium
 original_name: SULFURIFERULA MULTIVORANS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

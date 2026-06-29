@@ -3,6 +3,7 @@ name: m9_0_2_glycerol
 original_name: M9 0.2% glycerol
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol

@@ -3,6 +3,7 @@ name: luria_broth_lb
 original_name: Luria Broth (LB)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract

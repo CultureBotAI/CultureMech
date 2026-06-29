@@ -3,6 +3,7 @@ name: marine_aob_medium_b
 original_name: Marine AOB Medium (B)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Phenol red (0.04%)

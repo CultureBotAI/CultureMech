@@ -3,6 +3,7 @@ name: b12_medium_guttman
 original_name: B12 - MEDIUM GUTTMAN
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

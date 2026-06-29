@@ -3,6 +3,7 @@ name: wr_medium_for_methanobacteriaceae
 original_name: WR MEDIUM FOR METHANOBACTERIACEAE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

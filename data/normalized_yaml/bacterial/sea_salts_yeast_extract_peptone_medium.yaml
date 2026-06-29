@@ -3,6 +3,7 @@ name: sea_salts_yeast_extract_peptone_medium
 original_name: Sea Salts Yeast Extract Peptone Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

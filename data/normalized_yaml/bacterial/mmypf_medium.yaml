@@ -3,6 +3,7 @@ name: mmypf_medium
 original_name: MMYPF Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

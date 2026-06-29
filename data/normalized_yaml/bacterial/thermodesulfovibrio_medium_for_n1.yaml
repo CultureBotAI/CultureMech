@@ -3,6 +3,7 @@ name: thermodesulfovibrio_medium_for_n1
 original_name: THERMODESULFOVIBRIO MEDIUM FOR N1
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:

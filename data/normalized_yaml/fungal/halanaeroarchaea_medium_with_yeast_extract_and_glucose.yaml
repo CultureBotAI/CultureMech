@@ -3,6 +3,7 @@ name: halanaeroarchaea_medium_with_yeast_extract_and_glucose
 original_name: HALANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND GLUCOSE
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1286

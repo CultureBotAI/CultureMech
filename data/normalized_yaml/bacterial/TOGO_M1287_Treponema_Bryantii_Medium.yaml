@@ -3,6 +3,7 @@ name: treponema_bryantii_medium
 original_name: Treponema Bryantii Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

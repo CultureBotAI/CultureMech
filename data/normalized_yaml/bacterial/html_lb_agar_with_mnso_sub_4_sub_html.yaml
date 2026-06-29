@@ -3,6 +3,7 @@ name: html_lb_agar_with_mnso_sub_4_sub_html
 original_name: <html>LB Agar With MnSO<sub>4</sub></html>
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

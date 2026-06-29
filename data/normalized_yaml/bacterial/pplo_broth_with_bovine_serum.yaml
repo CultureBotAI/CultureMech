@@ -3,6 +3,7 @@ name: pplo_broth_with_bovine_serum
 original_name: PPLO broth with bovine serum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Deionized water

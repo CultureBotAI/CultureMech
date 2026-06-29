@@ -3,6 +3,7 @@ name: desulfovibrio_gigas_medium
 original_name: DESULFOVIBRIO GIGAS medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

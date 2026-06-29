@@ -3,6 +3,7 @@ name: for_dsm_19780
 original_name: For DSM 19780
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

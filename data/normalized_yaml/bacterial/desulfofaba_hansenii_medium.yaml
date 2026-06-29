@@ -3,6 +3,7 @@ name: desulfofaba_hansenii_medium
 original_name: DESULFOFABA HANSENII MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

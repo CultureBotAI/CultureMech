@@ -3,6 +3,7 @@ name: medium_911_modified_for_dsm_44536
 original_name: MEDIUM 911 MODIFIED FOR DSM 44536
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 911_44536

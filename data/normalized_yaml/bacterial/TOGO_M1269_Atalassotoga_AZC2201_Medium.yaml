@@ -3,6 +3,7 @@ name: atalassotoga_azc2201_medium
 original_name: Atalassotoga AZC2201 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

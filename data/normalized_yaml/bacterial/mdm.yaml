@@ -3,6 +3,7 @@ name: mdm
 original_name: MDM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.0

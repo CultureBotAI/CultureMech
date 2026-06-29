@@ -3,6 +3,7 @@ name: semi_solid_heterotrophic_growth_medium_for_alphaproteobacteria
 original_name: SEMI-SOLID HETEROTROPHIC GROWTH MEDIUM FOR ALPHAPROTEOBACTERIA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SEMISOLID
 ph_value: 6.7
 media_term:

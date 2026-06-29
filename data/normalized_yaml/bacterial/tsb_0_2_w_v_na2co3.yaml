@@ -3,6 +3,7 @@ name: tsb_0_2_w_v_na2co3
 original_name: TSB + 0.2%(w/v) Na2CO3
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: yeast_krainskys_agar
 original_name: YEAST-KRAINSKY'S AGAR
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:

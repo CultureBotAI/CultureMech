@@ -3,6 +3,7 @@ name: rs_medium_nutrient_medium_nm_component
 original_name: RS Medium - Nutrient Medium (NM) Component
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

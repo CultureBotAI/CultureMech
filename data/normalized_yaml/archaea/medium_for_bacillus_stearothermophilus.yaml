@@ -3,6 +3,7 @@ name: medium_for_bacillus_stearothermophilus
 original_name: MEDIUM FOR BACILLUS STEAROTHERMOPHILUS
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

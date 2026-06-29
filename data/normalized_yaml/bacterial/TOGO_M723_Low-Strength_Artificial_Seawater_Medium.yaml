@@ -3,6 +3,7 @@ name: low_strength_artificial_seawater_medium
 original_name: Low-Strength Artificial Seawater Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

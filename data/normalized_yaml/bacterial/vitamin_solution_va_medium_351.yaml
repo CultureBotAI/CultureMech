@@ -3,6 +3,7 @@ name: vitamin_solution_va_medium_351
 original_name: Vitamin solution (VA) (medium 351)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 2103

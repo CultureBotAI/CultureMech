@@ -3,6 +3,7 @@ name: methanol_utilizing_bacteria_medium_e
 original_name: Methanol-Utilizing Bacteria Medium E
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl

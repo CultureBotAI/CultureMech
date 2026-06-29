@@ -3,6 +3,7 @@ name: r_agar_with_0_5_tween_80
 original_name: R Agar With 0.5% Tween 80
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tween 80

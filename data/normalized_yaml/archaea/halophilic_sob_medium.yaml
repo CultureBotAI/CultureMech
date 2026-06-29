@@ -3,6 +3,7 @@ name: halophilic_sob_medium
 original_name: HALOPHILIC SOB MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

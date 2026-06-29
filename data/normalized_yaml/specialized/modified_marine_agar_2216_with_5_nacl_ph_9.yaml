@@ -3,6 +3,7 @@ name: modified_marine_agar_2216_with_5_nacl_ph_9
 original_name: MODIFIED MARINE AGAR 2216 WITH 5% NaCl (pH 9)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 9.0
 media_term:

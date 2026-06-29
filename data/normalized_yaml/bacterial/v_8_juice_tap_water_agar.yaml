@@ -3,6 +3,7 @@ name: v_8_juice_tap_water_agar
 original_name: V-8 Juice Tap Water Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tap water

@@ -3,6 +3,7 @@ name: nrmbb1_medium
 original_name: NRmbB1 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

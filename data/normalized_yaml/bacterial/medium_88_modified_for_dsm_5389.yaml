@@ -3,6 +3,7 @@ name: medium_88_modified_for_dsm_5389
 original_name: MEDIUM 88 MODIFIED FOR DSM 5389
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 3.0

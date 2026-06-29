@@ -3,6 +3,7 @@ name: medium_for_bacillus_stearothermophilus_phenol_degrading
 original_name: medium FOR BACILLUS STEAROTHERMOPHILUS - PHENOL DEGRADING
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

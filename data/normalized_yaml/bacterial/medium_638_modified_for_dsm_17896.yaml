@@ -3,6 +3,7 @@ name: medium_638_modified_for_dsm_17896
 original_name: MEDIUM 638 MODIFIED FOR DSM 17896
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 638_17896

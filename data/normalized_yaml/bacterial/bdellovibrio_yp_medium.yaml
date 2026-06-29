@@ -3,6 +3,7 @@ name: bdellovibrio_yp_medium
 original_name: BDELLOVIBRIO (YP) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

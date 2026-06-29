@@ -3,6 +3,7 @@ name: m2sgc_broth_containing_tetracycline_10_g_ml_or_rifampin_100_g_ml
 original_name: M2SGC broth containing tetracycline (10 μg/ml) or rifampin (100 μg/ml)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tetracycline

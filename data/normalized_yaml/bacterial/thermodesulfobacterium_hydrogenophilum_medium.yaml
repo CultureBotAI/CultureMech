@@ -3,6 +3,7 @@ name: thermodesulfobacterium_hydrogenophilum_medium
 original_name: THERMODESULFOBACTERIUM HYDROGENOPHILUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

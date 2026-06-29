@@ -3,6 +3,7 @@ name: medium_650_modified_for_dsm_8319
 original_name: MEDIUM 650 MODIFIED FOR DSM 8319
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 650_8319

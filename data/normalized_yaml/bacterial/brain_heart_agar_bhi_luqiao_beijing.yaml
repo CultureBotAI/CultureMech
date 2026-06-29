@@ -3,6 +3,7 @@ name: brain_heart_agar_bhi_luqiao_beijing
 original_name: Brain Heart Agar (BHI) (Luqiao, Beijing)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Calf brains

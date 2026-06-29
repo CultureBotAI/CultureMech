@@ -3,6 +3,7 @@ name: vl55_medium_modified
 original_name: VL55 MEDIUM modified
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
 media_term:

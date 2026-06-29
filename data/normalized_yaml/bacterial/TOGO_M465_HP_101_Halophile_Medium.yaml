@@ -3,6 +3,7 @@ name: hp_101_halophile_medium
 original_name: HP 101 Halophile Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: natronoarchaeum_medium
 original_name: NATRONOARCHAEUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.7
 media_term:

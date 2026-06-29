@@ -3,6 +3,7 @@ name: trace_mineral_solution_medium_1146
 original_name: Trace mineral solution (medium 1146)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2077 | DSMZ Medium: 2077 (mediadive.medium:2077)

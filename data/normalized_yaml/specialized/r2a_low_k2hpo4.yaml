@@ -1,6 +1,7 @@
 id: CultureMech:015696
 name: R2A_low_K2HPO4
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptone

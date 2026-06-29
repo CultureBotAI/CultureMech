@@ -3,6 +3,7 @@ name: maf6_se
 original_name: MAF6:SE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.6
 media_term:

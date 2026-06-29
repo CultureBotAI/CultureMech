@@ -3,6 +3,7 @@ name: bbl_actinomyces_broth_medium_1029
 original_name: BBL Actinomyces broth (medium 1029)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3135

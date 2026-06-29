@@ -3,6 +3,7 @@ name: minimal_medium_with_salt_stress_tang_et_al_2009
 original_name: '''Minimal medium with salt stress (tang et al 2009'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Magnesium chloride

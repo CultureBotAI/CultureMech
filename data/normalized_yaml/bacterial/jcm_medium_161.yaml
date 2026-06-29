@@ -3,6 +3,7 @@ name: jcm_medium_161
 original_name: JCM Medium 161
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 5% Na2S . 9H2O

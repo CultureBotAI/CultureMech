@@ -3,6 +3,7 @@ name: medium_bg_11_for_blue_green_algae
 original_name: Medium BG-11 for Blue-green Algae
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: MgSO4 x 7H2O

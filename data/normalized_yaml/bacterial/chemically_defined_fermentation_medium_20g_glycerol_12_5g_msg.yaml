@@ -3,6 +3,7 @@ name: chemically_defined_fermentation_medium_20g_glycerol_12_5g_msg
 original_name: '''Chemically Defined Fermentation Medium (20g glycerol + 12.5g MSG'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium dibasic phosphate

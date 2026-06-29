@@ -3,6 +3,7 @@ name: clostridium_r6_medium
 original_name: Clostridium R6 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2S・9H2O

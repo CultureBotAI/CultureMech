@@ -3,6 +3,7 @@ name: basal_salt_medium_with_biphenyl
 original_name: Basal Salt Medium with biphenyl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

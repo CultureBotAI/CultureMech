@@ -4,6 +4,7 @@ original_name: Trace metals solution (Pfennig & Lippert, 1966)_replace_Na2MoO4 x
   H2O_with_NH4MoO4
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 3.0

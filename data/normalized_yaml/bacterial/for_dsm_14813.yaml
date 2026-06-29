@@ -3,6 +3,7 @@ name: for_dsm_14813
 original_name: For DSM 14813
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

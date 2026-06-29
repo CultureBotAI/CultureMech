@@ -3,6 +3,7 @@ name: eugon_agar_with_5_sheep_blood_and_artificial_seawater
 original_name: EUGON AGAR WITH 5% SHEEP BLOOD AND ARTIFICIAL SEAWATER
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1380

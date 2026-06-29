@@ -3,6 +3,7 @@ name: thiomonas_intermedia_medium
 original_name: THIOMONAS INTERMEDIA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 5.5

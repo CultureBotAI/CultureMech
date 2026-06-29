@@ -3,6 +3,7 @@ name: anaerobic_mineral_medium_with_yeast_extract
 original_name: ANAEROBIC MINERAL MEDIUM WITH YEAST EXTRACT
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

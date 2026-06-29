@@ -3,6 +3,7 @@ name: modified_hb_1_medium
 original_name: Modified HB-1 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

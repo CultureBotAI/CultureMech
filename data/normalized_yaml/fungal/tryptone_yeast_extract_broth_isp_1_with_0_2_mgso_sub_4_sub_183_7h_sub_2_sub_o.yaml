@@ -3,6 +3,7 @@ name: tryptone_yeast_extract_broth_isp_1_with_0_2_mgso_sub_4_sub_183_7h_sub_2_su
 original_name: TRYPTONE-YEAST EXTRACT BROTH (ISP-1) WITH 0.2% MgSO<sub>4</sub>&#183;7H<sub>2</sub>O
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.1
 media_term:

@@ -3,6 +3,7 @@ name: cultivation_medium_for_chlamydiae
 original_name: CULTIVATION MEDIUM FOR CHLAMYDIAE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1193

@@ -3,6 +3,7 @@ name: geobacter_pelophilus_medium_for_dsm_15288
 original_name: Geobacter Pelophilus Medium (For DSM 15288)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

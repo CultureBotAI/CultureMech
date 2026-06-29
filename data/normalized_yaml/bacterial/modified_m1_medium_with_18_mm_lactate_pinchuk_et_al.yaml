@@ -3,6 +3,7 @@ name: modified_m1_medium_with_18_mm_lactate_pinchuk_et_al
 original_name: Modified m1 medium with 18 mm lactate; pinchuk et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Biotin

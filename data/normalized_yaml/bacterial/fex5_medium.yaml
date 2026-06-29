@@ -3,6 +3,7 @@ name: fex5_medium
 original_name: Fex5 medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calcium chloride anhydrous

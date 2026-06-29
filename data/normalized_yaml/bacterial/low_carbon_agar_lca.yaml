@@ -3,6 +3,7 @@ name: low_carbon_agar_lca
 original_name: Low Carbon Agar-LCA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1818

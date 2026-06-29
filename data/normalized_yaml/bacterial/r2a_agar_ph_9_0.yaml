@@ -3,6 +3,7 @@ name: r2a_agar_ph_9_0
 original_name: R2A AGAR (pH 9.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

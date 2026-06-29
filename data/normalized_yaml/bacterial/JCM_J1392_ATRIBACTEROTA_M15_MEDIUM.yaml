@@ -3,6 +3,7 @@ name: atribacterota_m15_medium
 original_name: ATRIBACTEROTA M15 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

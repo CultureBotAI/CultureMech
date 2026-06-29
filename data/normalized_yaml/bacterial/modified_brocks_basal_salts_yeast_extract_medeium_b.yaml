@@ -3,6 +3,7 @@ name: modified_brocks_basal_salts_yeast_extract_medeium_b
 original_name: Modified Brock's Basal Salts-Yeast Extract Medeium (B)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

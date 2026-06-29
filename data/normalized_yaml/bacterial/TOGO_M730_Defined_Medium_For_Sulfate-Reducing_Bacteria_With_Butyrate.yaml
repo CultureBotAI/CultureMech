@@ -3,6 +3,7 @@ name: defined_medium_for_sulfate_reducing_bacteria_with_butyrate
 original_name: Defined Medium For Sulfate-Reducing Bacteria With Butyrate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

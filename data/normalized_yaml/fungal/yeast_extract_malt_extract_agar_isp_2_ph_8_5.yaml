@@ -3,6 +3,7 @@ name: yeast_extract_malt_extract_agar_isp_2_ph_8_5
 original_name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) (pH 8.5)
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.5
 media_term:

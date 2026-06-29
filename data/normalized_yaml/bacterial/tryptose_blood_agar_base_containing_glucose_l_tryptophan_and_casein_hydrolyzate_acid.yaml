@@ -4,6 +4,7 @@ original_name: tryptose blood agar base (containing  glucose, L-tryptophan, and 
   hydrolyzate acid)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: glucose

@@ -3,6 +3,7 @@ name: basal_salts_medium
 original_name: basal salts medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: distilled or deionized water

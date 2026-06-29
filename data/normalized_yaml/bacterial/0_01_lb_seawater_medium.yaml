@@ -3,6 +3,7 @@ name: 0_01_lb_seawater_medium
 original_name: 0.01% LB SEAWATER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:

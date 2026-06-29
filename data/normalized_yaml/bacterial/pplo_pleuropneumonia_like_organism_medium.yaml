@@ -3,6 +3,7 @@ name: pplo_pleuropneumonia_like_organism_medium
 original_name: PPLO (pleuropneumonia-like organism) medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: PPLO (pleuropneumonia-like organism) medium

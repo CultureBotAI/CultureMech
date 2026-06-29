@@ -3,6 +3,7 @@ name: widdel_freshwater_medium_with_formate_and_acetate
 original_name: WIDDEL FRESHWATER MEDIUM WITH FORMATE AND ACETATE
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:

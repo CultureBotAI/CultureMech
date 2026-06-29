@@ -3,6 +3,7 @@ name: modified_bap_gfs_medium_for_frankia
 original_name: modified BAP+ (GFS) MEDIUM FOR FRANKIA
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.3
 media_term:

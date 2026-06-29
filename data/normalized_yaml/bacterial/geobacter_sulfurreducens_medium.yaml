@@ -3,6 +3,7 @@ name: geobacter_sulfurreducens_medium
 original_name: GEOBACTER SULFURREDUCENS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

@@ -3,6 +3,7 @@ name: malt_extract_peptone_agar
 original_name: MALT EXTRACT Peptone AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 5.6
 media_term:

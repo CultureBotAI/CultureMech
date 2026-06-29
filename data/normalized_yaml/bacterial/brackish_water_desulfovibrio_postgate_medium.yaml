@@ -3,6 +3,7 @@ name: brackish_water_desulfovibrio_postgate_medium
 original_name: BRACKISH WATER DESULFOVIBRIO (POSTGATE) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.8
 media_term:

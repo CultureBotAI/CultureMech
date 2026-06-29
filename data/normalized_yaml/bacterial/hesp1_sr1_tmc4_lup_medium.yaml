@@ -3,6 +3,7 @@ name: hesp1_sr1_tmc4_lup_medium
 original_name: HESP1/SR1/TMC4/LUP medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

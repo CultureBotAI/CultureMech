@@ -1,6 +1,7 @@
 id: CultureMech:015528
 name: Hans Basal Media
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: PIPES sesquisodium salt

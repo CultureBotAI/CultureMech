@@ -3,6 +3,7 @@ name: medium_520_modified_for_dsm_9801
 original_name: MEDIUM 520 MODIFIED FOR DSM 9801
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 520_9801

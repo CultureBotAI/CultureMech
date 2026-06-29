@@ -3,6 +3,7 @@ name: methanosphaerula_peat_medium_for_dsm_25616
 original_name: Methanosphaerula (Peat) Medium (for DSM 25616)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract

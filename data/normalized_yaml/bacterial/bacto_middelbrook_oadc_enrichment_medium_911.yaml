@@ -3,6 +3,7 @@ name: bacto_middelbrook_oadc_enrichment_medium_911
 original_name: Bacto Middelbrook OADC enrichment (medium 911)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3012

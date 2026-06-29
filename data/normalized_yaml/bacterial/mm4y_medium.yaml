@@ -3,6 +3,7 @@ name: mm4y_medium
 original_name: MM4Y MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1021

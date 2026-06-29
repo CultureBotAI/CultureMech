@@ -3,6 +3,7 @@ name: minimal_medium_jyssum_1959
 original_name: '''Minimal medium (Jyssum 1959'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium thiosulfate

@@ -3,6 +3,7 @@ name: jcm_medium_242
 original_name: JCM medium 242
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

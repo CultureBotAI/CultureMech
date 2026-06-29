@@ -3,6 +3,7 @@ name: dsm_16984_dsm_24478_24479_24480_24481_24492_24493_and_24527
 original_name: DSM 16984, DSM 24478, 24479, 24480, 24481, 24492, 24493 and 24527
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1007.3

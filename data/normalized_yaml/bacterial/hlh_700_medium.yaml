@@ -3,6 +3,7 @@ name: hlh_700_medium
 original_name: HLH-700 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:

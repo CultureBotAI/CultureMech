@@ -3,6 +3,7 @@ name: for_dsm_25088
 original_name: For DSM 25088
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

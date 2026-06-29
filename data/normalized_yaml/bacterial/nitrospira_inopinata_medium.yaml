@@ -3,6 +3,7 @@ name: nitrospira_inopinata_medium
 original_name: NITROSPIRA INOPINATA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.6
