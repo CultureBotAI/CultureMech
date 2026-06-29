@@ -106,6 +106,14 @@ validate-media-recipe-edison target *args:
     uv run --extra dev python scripts/research_media_edison.py \
       --target {{target}} --template templates/media_recipe_validation.md {{args}}
 
+# Backfill the multi-axis media-type vocabulary (composition_type /
+# nutritional_class / functional_role) from the deprecated medium_type slot.
+# Dry-run by default; pass --apply to write. Optionally pass specific paths. e.g.
+#   just migrate-medium-type-axes            # whole corpus, dry-run
+#   just migrate-medium-type-axes --apply
+migrate-medium-type-axes *args:
+    uv run --extra dev python scripts/migrate_medium_type_axes.py {{args}}
+
 # Discussions / knowledge-gap browser (shared kg_microbe_discussions in claw).
 gen-discussions-data:
     PYTHONPATH=../culturebotai-claw/src /opt/homebrew/bin/python3.13 \
