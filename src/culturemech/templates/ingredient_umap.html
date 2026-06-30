@@ -14,21 +14,20 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #1a7a4a 0%, #2d9665 100%);
-            color: #333;
+            background: linear-gradient(135deg, #FFE0B5 0%, #CDEBC5 100%);
+            color: #1a1a1a;
             padding: 20px;
         }
 
         header {
             text-align: center;
-            color: white;
+            color: #1a1a1a;
             margin-bottom: 30px;
         }
 
         header h1 {
             font-size: 2.4em;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         header p {
@@ -40,8 +39,8 @@
             display: inline-block;
             margin-top: 15px;
             padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
+            background: rgba(255, 255, 255, 0.5);
+            color: #1a1a1a;
             text-decoration: none;
             border-radius: 6px;
             font-size: 14px;
@@ -50,7 +49,7 @@
         }
 
         .nav-link:hover {
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.8);
         }
 
         .container {
@@ -68,7 +67,7 @@
         .plot-panel h2 {
             font-size: 1.5em;
             margin-bottom: 5px;
-            color: #1a7a4a;
+            color: #4B9E5F;
         }
 
         .plot-panel .subtitle {
@@ -146,7 +145,7 @@
 
         .search-container input:focus {
             outline: none;
-            border-color: #1a7a4a;
+            border-color: #4B9E5F;
         }
 
         .filter-group {
@@ -166,13 +165,13 @@
         }
 
         .filter-btn:hover {
-            border-color: #1a7a4a;
+            border-color: #4B9E5F;
         }
 
         .filter-btn.active {
-            background: #1a7a4a;
+            background: #4B9E5F;
             color: white;
-            border-color: #1a7a4a;
+            border-color: #4B9E5F;
         }
 
         .stats-bar {
@@ -185,7 +184,7 @@
         }
 
         .stat-item strong {
-            color: #1a7a4a;
+            color: #4B9E5F;
         }
 
         .legend {
@@ -253,7 +252,8 @@
             top500: {{ tier_counts.top500 }} &nbsp;|&nbsp;
             other: {{ tier_counts.other }}
         </p>
-        <a href="../index.html" class="nav-link">&larr; Back to Media Browser</a>
+        <a href="index.html" class="nav-link">&#127968; Home</a>
+        <a href="browser.html" class="nav-link">&larr; Back to Media Browser</a>
     </header>
 
     <div class="container">
