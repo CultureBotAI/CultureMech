@@ -35,8 +35,9 @@
         box-shadow:0 1px 3px rgba(0,0,0,.05);transition:transform .15s ease,box-shadow .15s ease}
   .card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.10)}
   .card .ic{font-size:2.1rem}
-  .card h2{margin:.45em 0 .35em;font-size:1.25rem}
-  .card p{margin:0 0 1.2em;color:var(--muted);font-size:.95rem}
+  .card .actions{margin:.55em 0 .9em;display:flex;flex-wrap:wrap;gap:.5em}
+  .card h2{margin:.1em 0 .35em;font-size:1.25rem}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
   .btn{display:inline-block;background:var(--accent);color:#fff;padding:.5em 1.15em;
        border-radius:999px;font-size:.9rem;font-weight:600}
   .btn:hover{filter:brightness(.93);text-decoration:none}
@@ -61,21 +62,21 @@
     <div class="cards">
       <div class="card">
         <div class="ic">&#128270;</div>
+        <div class="actions"><a class="btn" href="browser.html">Browse records &rarr;</a></div>
         <h2>Record browser</h2>
         <p>Faceted search across every media recipe — filter by category, medium type, physical state, target organism, and key ingredients.</p>
-        <a class="btn" href="browser.html">Browse records &rarr;</a>
       </div>
       <div class="card">
         <div class="ic">&#128506;&#65039;</div>
+        <div class="actions"><a class="btn" href="umap.html#umap-derived">Derived &rarr;</a><a class="btn" href="umap.html#umap-direct">Direct &rarr;</a></div>
         <h2>Embedding browser</h2>
-        <p>Interactive UMAP of media similarity from KG-Microbe deepwalk embeddings.</p>
-        <a class="btn" href="umap.html">Explore UMAP &rarr;</a>
+        <p>Interactive UMAP of media similarity from KG-Microbe deepwalk embeddings — derived (aggregated from ingredient embeddings) and direct (the medium's own graph-node embedding).</p>
       </div>
       <div class="card">
         <div class="ic">&#128187;</div>
+        <div class="actions"><a class="btn" href="https://github.com/CultureBotAI/CultureMech">View on GitHub &rarr;</a></div>
         <h2>GitHub</h2>
         <p>Source code, data, schema, and the curation workflow.</p>
-        <a class="btn" href="https://github.com/CultureBotAI/CultureMech">View on GitHub &rarr;</a>
       </div>
     </div>
   </main>
@@ -84,7 +85,7 @@
       <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a>&middot;<a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a>&middot;<a href="https://culturebotai.github.io/CommunityMech/">CommunityMech</a>&middot;<a href="https://culturebotai.github.io/TraitMech/">TraitMech</a>
     </div>
     <div class="fam">
-      <a href="https://github.com/Knowledge-Graph-Hub/kg-microbe">kg-microbe</a>&middot;<a href="https://w3id.org/metpo">METPO</a>
+      <a href="https://github.com/Knowledge-Graph-Hub/kg-microbe">kg-microbe</a>&middot;<a href="https://bioportal.bioontology.org/ontologies/METPO">METPO</a>
     </div>
   </footer>
 </body>
