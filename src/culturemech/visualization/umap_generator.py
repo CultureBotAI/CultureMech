@@ -30,6 +30,7 @@ class UMAPVisualizationGenerator:
         n_neighbors: int = 15,
         min_dist: float = 0.1,
         min_coverage: float = 0.5,
+        method: str = "pacmap",
     ) -> None:
         """
         Generate interactive UMAP visualization with both derived and direct embeddings.
@@ -43,6 +44,7 @@ class UMAPVisualizationGenerator:
             n_neighbors: UMAP n_neighbors parameter
             min_dist: UMAP min_dist parameter
             min_coverage: Minimum embedding coverage for derived embeddings
+            method: 2D reducer to use, one of "pacmap" (default) or "umap"
         """
         print("=" * 70)
         print("UMAP Visualization Generator - CultureMech")
@@ -77,13 +79,13 @@ class UMAPVisualizationGenerator:
         print("\n[4/6] Extracting direct embeddings...")
         direct_embeddings = aggregator.get_direct_embeddings(media_yamls)
 
-        # Step 5: Apply UMAP reduction
-        print("\n[5/6] Applying UMAP reduction...")
+        # Step 5: Apply 2D reduction (PaCMAP by default, UMAP optional)
+        print(f"\n[5/6] Applying 2D reduction ({method})...")
         derived_df = reduce_to_2d(
-            derived_embeddings, n_neighbors=n_neighbors, min_dist=min_dist
+            derived_embeddings, n_neighbors=n_neighbors, min_dist=min_dist, method=method
         )
         direct_df = reduce_to_2d(
-            direct_embeddings, n_neighbors=n_neighbors, min_dist=min_dist
+            direct_embeddings, n_neighbors=n_neighbors, min_dist=min_dist, method=method
         )
 
         # Step 6: Generate HTML visualization

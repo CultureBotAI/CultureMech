@@ -107,6 +107,12 @@ def umap():
     default=0.5,
     help="Minimum embedding coverage for derived embeddings (0-1)",
 )
+@click.option(
+    "--method",
+    type=click.Choice(["pacmap", "umap"]),
+    default="pacmap",
+    help="2D reducer to use (default: pacmap)",
+)
 def generate(
     media_dir,
     embeddings_path,
@@ -116,6 +122,7 @@ def generate(
     n_neighbors,
     min_dist,
     min_coverage,
+    method,
 ):
     """Generate interactive UMAP visualization of media embeddings."""
     from culturemech.visualization.umap_generator import UMAPVisualizationGenerator
@@ -131,6 +138,7 @@ def generate(
             n_neighbors=n_neighbors,
             min_dist=min_dist,
             min_coverage=min_coverage,
+            method=method,
         )
         click.echo(f"\n✓ Success! Visualization saved to: {output}")
         click.echo(f"\nTo view, open in browser or deploy to GitHub Pages")
