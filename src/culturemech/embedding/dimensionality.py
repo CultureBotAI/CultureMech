@@ -70,8 +70,16 @@ def reduce_to_2d(
             verbose=False,
         )
         coords = reducer.fit_transform(embedding_matrix)
+    elif method == "sfdp":
+        # Force-directed (Graphviz sfdp) layout of the mutual-kNN graph over the
+        # KG embeddings — a global-structure-first graph view.
+        from culturemech.embedding.graph_layout import sfdp_layout
+
+        coords = sfdp_layout(embedding_matrix, k=15, seed=random_state)
     else:
-        raise ValueError(f"Unknown reduction method: {method!r} (expected 'pacmap' or 'umap')")
+        raise ValueError(
+            f"Unknown reduction method: {method!r} (expected 'pacmap', 'umap', or 'sfdp')"
+        )
 
     # Create DataFrame (column names kept as umap_x/umap_y for downstream compat)
     df = pd.DataFrame(

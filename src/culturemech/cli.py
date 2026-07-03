@@ -109,7 +109,7 @@ def umap():
 )
 @click.option(
     "--method",
-    type=click.Choice(["pacmap", "umap"]),
+    type=click.Choice(["pacmap", "umap", "sfdp"]),
     default="pacmap",
     help="2D reducer to use (default: pacmap)",
 )
