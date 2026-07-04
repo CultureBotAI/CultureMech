@@ -262,8 +262,8 @@ class IngredientUMAPGenerator:
             if info is None:
                 continue
             count = info.occurrence_count
-            # Log-scale radius: min 3, max 14
-            radius = max(3, min(14, 3 + 3 * math.log10(max(count, 1))))
+            # Log-scale radius: min 5, max 14 (floor raised to 5px for legibility, dataviz #8/#9)
+            radius = max(5, min(14, 3 + 3 * math.log10(max(count, 1))))
             points.append({
                 "x": float(row["umap_x"]),
                 "y": float(row["umap_y"]),

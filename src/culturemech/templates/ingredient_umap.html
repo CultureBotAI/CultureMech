@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CultureMech Ingredient UMAP</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>CultureMech Ingredient PaCMAP</title>
+    <script src="d3.v7.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -242,6 +242,45 @@
             background: #e8e8e8;
         }
 
+        /* Accessible data-table fallback (dataviz #10) — theme-tokenized */
+        .data-table-details {
+            max-width: 1400px;
+            margin: 1.5rem auto 0;
+            padding: 1rem 1.25rem;
+            background: var(--card);
+            color: var(--ink);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+        }
+        .data-table-details summary {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--accent);
+        }
+        .data-table-wrap {
+            margin-top: 1rem;
+            max-height: 480px;
+            overflow: auto;
+        }
+        .data-table-details table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.82rem;
+        }
+        .data-table-details th,
+        .data-table-details td {
+            border: 1px solid var(--line);
+            padding: 0.35rem 0.5rem;
+            text-align: left;
+            white-space: nowrap;
+        }
+        .data-table-details thead th {
+            position: sticky;
+            top: 0;
+            background: var(--card);
+        }
+
         /* Token layer — light values match the hard-coded look above; consumed
            only by the injected theme-toggle button, so light appearance is unchanged. */
         :root{--card:#ffffff;--ink:#1a1a1a;--line:#e2e8f0;--accent:#4B9E5F;}
@@ -298,14 +337,14 @@
 </head>
 <body>
     <header>
-        <h1>CultureMech Ingredient UMAP</h1>
+        <h1>CultureMech Ingredient PaCMAP</h1>
         <p>
             {{ total_count }} CHEBI ingredients &mdash;
             top100: {{ tier_counts.top100 }} &nbsp;|&nbsp;
             top500: {{ tier_counts.top500 }} &nbsp;|&nbsp;
             other: {{ tier_counts.other }}
         </p>
-        <a href="index.html" class="nav-link">&#127968; Home</a>
+        <a href="index.html" class="nav-link">Home</a>
         <a href="browser.html" class="nav-link">&larr; Back to Media Browser</a>
     </header>
 
@@ -313,7 +352,7 @@
         <div class="plot-panel">
             <h2>Ingredient Embedding Space</h2>
             <p class="subtitle">
-                Each point = one CHEBI ingredient in KG-Microbe (512-dim DeepWalk, UMAP 2D).
+                Each point = one CHEBI ingredient in KG-Microbe (512-dim DeepWalk, PaCMAP 2D).
                 Size = occurrence frequency (log scale). Color = occurrence tier.
                 Scroll to zoom &bull; Drag to pan &bull; Hover for details.
             </p>
@@ -329,9 +368,9 @@
                 </div>
                 <div class="filter-group" id="tier-filters">
                     <button class="filter-btn active" data-tier="all">All</button>
-                    <button class="filter-btn" data-tier="top100" style="border-color: #e74c3c; color: #e74c3c;">Top 100</button>
-                    <button class="filter-btn" data-tier="top500" style="border-color: #e67e22; color: #e67e22;">Top 500</button>
-                    <button class="filter-btn" data-tier="other" style="border-color: #3498db; color: #3498db;">Other</button>
+                    <button class="filter-btn" data-tier="top100" style="border-color: #1f6b3f; color: #1f6b3f;">Top 100</button>
+                    <button class="filter-btn" data-tier="top500" style="border-color: #3d9e63; color: #3d9e63;">Top 500</button>
+                    <button class="filter-btn" data-tier="other" style="border-color: #7cc496; color: #7cc496;">Other</button>
                 </div>
                 <button class="reset-zoom" id="reset-zoom">Reset zoom</button>
             </div>
@@ -340,21 +379,37 @@
 
             <div class="legend">
                 <div class="legend-item">
-                    <div class="legend-dot" style="background: #e74c3c;"></div>
+                    <div class="legend-dot" style="background: #1f6b3f;"></div>
                     <span>Top 100 (most frequent)</span>
                 </div>
                 <div class="legend-item">
-                    <div class="legend-dot" style="background: #e67e22;"></div>
+                    <div class="legend-dot" style="background: #3d9e63;"></div>
                     <span>Top 500</span>
                 </div>
                 <div class="legend-item">
-                    <div class="legend-dot" style="background: #3498db;"></div>
+                    <div class="legend-dot" style="background: #7cc496;"></div>
                     <span>Other</span>
                 </div>
             </div>
             <div class="legend-size-hint">
                 Point size reflects log-scale occurrence frequency across CultureMech media.
             </div>
+
+            <!-- Accessible, keyboard-reachable data-table fallback (dataviz #10) -->
+            <details class="data-table-details">
+                <summary>View data as table</summary>
+                <div class="data-table-wrap">
+                    <table id="data-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th><th>CHEBI ID</th><th>CAS-RN</th>
+                                <th>Occurrences</th><th>Tier</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </details>
         </div>
     </div>
 
@@ -366,9 +421,9 @@
 
         // ---- Color by tier ----
         const tierColors = {
-            "top100": "#e74c3c",
-            "top500": "#e67e22",
-            "other":  "#3498db"
+            "top100": "#1f6b3f",
+            "top500": "#3d9e63",
+            "other":  "#7cc496"
         };
         const tierOpacity = {
             "top100": 0.85,
@@ -437,7 +492,7 @@
             .join("circle")
             .attr("cx", d => xScale(d.x))
             .attr("cy", d => yScale(d.y))
-            .attr("r",  d => d.radius)
+            .attr("r",  d => Math.max(5, d.radius))
             .attr("fill", d => tierColors[d.tier] || "#999")
             .attr("opacity", d => tierOpacity[d.tier] || 0.5)
             .style("cursor", "pointer")
@@ -496,6 +551,19 @@
             searchTerm = this.value.toLowerCase().trim();
             applyFilters();
         });
+
+        // ---- Data-table fallback: same data the plot renders (dataviz #10) ----
+        (function buildDataTable() {
+            const tbody = document.querySelector("#data-table tbody");
+            if (!tbody) return;
+            const esc = s => String(s == null ? "" : s)
+                .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            tbody.innerHTML = ingredientData.map(d =>
+                `<tr><td>${esc(d.name)}</td><td>${esc(d.chebi_id)}</td>` +
+                `<td>${esc(d.cas_rn)}</td><td>${esc(d.count)}</td>` +
+                `<td>${esc(d.tier)}</td></tr>`
+            ).join("");
+        })();
     </script>
     <script src="theme-toggle.js"></script>
 </body>
