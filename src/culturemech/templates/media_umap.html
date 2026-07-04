@@ -249,6 +249,61 @@
             font-size: 0.8rem;
             color: #64748b;
         }
+
+        /* Token layer — light values match the hard-coded look above; consumed
+           only by the injected theme-toggle button, so light appearance is unchanged. */
+        :root{--card:#ffffff;--ink:#1a1a1a;--line:#e2e8f0;--accent:#4B9E5F;}
+
+        /* ---- Dark theme (OS default; superseded by the toggle) ---- */
+        @media (prefers-color-scheme: dark){
+            :root:not([data-theme="light"]){--card:#1c2118;--ink:#eaf0e6;--line:#2e3a2c;--accent:#6cc47f;}
+            :root:not([data-theme="light"]) body{background:linear-gradient(135deg,#24331d 0%,#12160f 100%);color:#eaf0e6}
+            :root:not([data-theme="light"]) header{color:#eaf0e6}
+            :root:not([data-theme="light"]) .nav-link{background:rgba(255,255,255,.06);color:#eaf0e6}
+            :root:not([data-theme="light"]) .nav-link:hover{background:rgba(255,255,255,.12)}
+            :root:not([data-theme="light"]) .plot-panel{background:#1c2118}
+            :root:not([data-theme="light"]) .plot-panel h2{color:#6cc47f}
+            :root:not([data-theme="light"]) .plot-panel p{color:#9db09a}
+            :root:not([data-theme="light"]) svg{background:#12160f}
+            :root:not([data-theme="light"]) .search-container input{background:#12160f;color:#eaf0e6;border-color:#2e3a2c}
+            :root:not([data-theme="light"]) .search-container input:focus{border-color:#6cc47f}
+            :root:not([data-theme="light"]) .filter-btn{background:#1c2118;color:#eaf0e6;border-color:#2e3a2c}
+            :root:not([data-theme="light"]) .filter-btn:hover{border-color:#6cc47f}
+            :root:not([data-theme="light"]) .filter-btn.active{background:#6cc47f;color:#12160f;border-color:#6cc47f}
+            :root:not([data-theme="light"]) .stats{color:#9db09a}
+            :root:not([data-theme="light"]) .stat-item strong{color:#6cc47f}
+            :root:not([data-theme="light"]) circle:hover{stroke:#eaf0e6}
+            :root:not([data-theme="light"]) .facets{background:#1c2118;border-color:#2e3a2c}
+            :root:not([data-theme="light"]) .facets h3{color:#9db09a}
+            :root:not([data-theme="light"]) label.facet-opt .cnt{color:#9db09a}
+            :root:not([data-theme="light"]) .facet-showing{color:#9db09a}
+        }
+        :root[data-theme="dark"]{--card:#1c2118;--ink:#eaf0e6;--line:#2e3a2c;--accent:#6cc47f;}
+        :root[data-theme="dark"] body{background:linear-gradient(135deg,#24331d 0%,#12160f 100%);color:#eaf0e6}
+        :root[data-theme="dark"] header{color:#eaf0e6}
+        :root[data-theme="dark"] .nav-link{background:rgba(255,255,255,.06);color:#eaf0e6}
+        :root[data-theme="dark"] .nav-link:hover{background:rgba(255,255,255,.12)}
+        :root[data-theme="dark"] .plot-panel{background:#1c2118}
+        :root[data-theme="dark"] .plot-panel h2{color:#6cc47f}
+        :root[data-theme="dark"] .plot-panel p{color:#9db09a}
+        :root[data-theme="dark"] svg{background:#12160f}
+        :root[data-theme="dark"] .search-container input{background:#12160f;color:#eaf0e6;border-color:#2e3a2c}
+        :root[data-theme="dark"] .search-container input:focus{border-color:#6cc47f}
+        :root[data-theme="dark"] .filter-btn{background:#1c2118;color:#eaf0e6;border-color:#2e3a2c}
+        :root[data-theme="dark"] .filter-btn:hover{border-color:#6cc47f}
+        :root[data-theme="dark"] .filter-btn.active{background:#6cc47f;color:#12160f;border-color:#6cc47f}
+        :root[data-theme="dark"] .stats{color:#9db09a}
+        :root[data-theme="dark"] .stat-item strong{color:#6cc47f}
+        :root[data-theme="dark"] circle:hover{stroke:#eaf0e6}
+        :root[data-theme="dark"] .facets{background:#1c2118;border-color:#2e3a2c}
+        :root[data-theme="dark"] .facets h3{color:#9db09a}
+        :root[data-theme="dark"] label.facet-opt .cnt{color:#9db09a}
+        :root[data-theme="dark"] .facet-showing{color:#9db09a}
+
+        @media (prefers-reduced-motion: reduce){
+            *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
+                transition-duration:.01ms!important;scroll-behavior:auto!important;}
+        }
     </style>
 </head>
 <body>
@@ -583,5 +638,6 @@
         // Initial paint (applies all-checked facet state).
         applyAllFilters();
     </script>
+    <script src="theme-toggle.js"></script>
 </body>
 </html>
