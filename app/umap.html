@@ -201,6 +201,54 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .facets {
+            max-width: 1600px;
+            margin: 0 auto 1.5rem;
+            padding: 1rem 1.25rem;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+        .facets h3 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #64748b;
+            margin: 0 0 0.75rem;
+        }
+        .facet-groups {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.75rem;
+        }
+        .facet-group {
+            min-width: 180px;
+        }
+        .facet-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+        }
+        label.facet-opt {
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+            font-size: 0.85rem;
+            padding: 0.12rem 0;
+            cursor: pointer;
+        }
+        label.facet-opt .cnt {
+            margin-left: auto;
+            color: #64748b;
+            font-variant-numeric: tabular-nums;
+            padding-left: 1rem;
+        }
+        .facet-showing {
+            margin-top: 0.75rem;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
     </style>
 </head>
 <body>
@@ -274,6 +322,9 @@
             <div class="legend" id="legend-direct"></div>
         </div>
     </div>
+
+    <!-- Category facet panel: filters points in BOTH plots by category -->
+    <div class="facets" id="facet-panel"></div>
 
     <div class="tooltip" id="tooltip"></div>
 
@@ -377,21 +428,6 @@
                     window.location.href = d.url;
                 });
 
-            // Search functionality
-            d3.select(`#${searchId}`).on("input", function() {
-                const searchTerm = this.value.toLowerCase();
-                let visibleCount = 0;
-
-                circles.each(function(d) {
-                    const circle = d3.select(this);
-                    const isVisible = d.name.toLowerCase().includes(searchTerm);
-                    circle.style("opacity", isVisible ? 0.5 : 0.1);
-                    if (isVisible) visibleCount++;
-                });
-
-                d3.select(`#${visibleId}`).text(visibleCount);
-            });
-
             // Update visible count
             d3.select(`#${visibleId}`).text(data.length);
 
@@ -414,8 +450,8 @@
                         .text(`${entityType} (${count})`);
                 });
 
-            // Store circles and visible count ID for filter use
-            return { circles, visibleId };
+            // Store circles + refs for filter/facet use
+            return { circles, visibleId, data, searchId, entityFilter: "all" };
         }
 
         // Render both plots
@@ -429,7 +465,105 @@
             directComponents = renderUMAP(directData, "umap-direct", "search-direct", "direct-visible", "legend-direct");
         }
 
-        // Add filter button functionality
+        // --- Category facet: filters points in BOTH plots by `category` ---
+        // Categories start all-checked. Unchecking a category hides those points
+        // (display:none) in both the derived and direct plots.
+        const activeCategories = new Set();
+        function facetPass(d) { return activeCategories.has(d.category || "unknown"); }
+
+        // Compose category facet + entity_type filter + search for ONE panel.
+        function applyPanelFilters(components) {
+            if (!components) return;
+            const { circles, visibleId, searchId, entityFilter } = components;
+            const searchEl = document.getElementById(searchId);
+            const searchTerm = (searchEl ? searchEl.value : "").toLowerCase();
+            let visibleCount = 0;
+
+            circles.each(function(d) {
+                const circle = d3.select(this);
+
+                // 1) Category facet decides membership (hide entirely if unchecked).
+                if (!facetPass(d)) {
+                    circle.style("display", "none");
+                    return;
+                }
+                circle.style("display", null);
+
+                // 2) Entity-type filter (All / Media Only / Solutions Only).
+                const passesEntity = entityFilter === "all" || d.entity_type === entityFilter;
+                // 3) Search term.
+                const passesSearch = !searchTerm || d.name.toLowerCase().includes(searchTerm);
+
+                if (passesEntity) {
+                    circle.style("fill", entityTypeColors[d.entity_type] || categoryColors[d.category] || categoryColors.unknown);
+                    circle.style("pointer-events", "all");
+                    circle.style("opacity", passesSearch ? 0.5 : 0.1);
+                    if (passesSearch) visibleCount++;
+                } else {
+                    // Entity-filtered-out points stay visible but greyed (existing behavior).
+                    circle.style("fill", "#e0e0e0");
+                    circle.style("pointer-events", "none");
+                    circle.style("opacity", 0.3);
+                }
+            });
+
+            d3.select(`#${visibleId}`).text(visibleCount);
+        }
+
+        function applyAllFilters() {
+            applyPanelFilters(derivedComponents);
+            applyPanelFilters(directComponents);
+            const cnt = document.getElementById("facet-count");
+            if (cnt) {
+                const total = [...derivedData, ...directData];
+                cnt.textContent = total.filter(facetPass).length.toLocaleString();
+            }
+        }
+
+        // Build the shared category facet panel below both plots.
+        function buildFacets() {
+            const panel = document.getElementById("facet-panel");
+            if (!panel) return;
+            const allData = [...derivedData, ...directData];
+            const counts = {};
+            allData.forEach(d => {
+                const v = d.category || "unknown";
+                counts[v] = (counts[v] || 0) + 1;
+                activeCategories.add(v);  // all checked initially
+            });
+
+            panel.innerHTML = "<h3>Filter points</h3>";
+            const groups = document.createElement("div");
+            groups.className = "facet-groups";
+            const grp = document.createElement("div");
+            grp.className = "facet-group";
+            grp.innerHTML = '<div class="facet-title">Category</div>';
+            Object.keys(counts).sort().forEach(v => {
+                const lab = document.createElement("label");
+                lab.className = "facet-opt";
+                lab.innerHTML = `<input type="checkbox" checked><span>${v}</span><span class="cnt">${counts[v].toLocaleString()}</span>`;
+                lab.querySelector("input").addEventListener("change", (e) => {
+                    if (e.target.checked) activeCategories.add(v); else activeCategories.delete(v);
+                    applyAllFilters();
+                });
+                grp.appendChild(lab);
+            });
+            groups.appendChild(grp);
+            panel.appendChild(groups);
+
+            const showing = document.createElement("div");
+            showing.className = "facet-showing";
+            showing.innerHTML = `Showing <b id="facet-count">${allData.length.toLocaleString()}</b> of ${allData.length.toLocaleString()} points`;
+            panel.appendChild(showing);
+        }
+
+        buildFacets();
+
+        // Search: recompose filters for the affected panel.
+        d3.select("#search-derived").on("input", () => applyPanelFilters(derivedComponents));
+        d3.select("#search-direct").on("input", () => applyPanelFilters(directComponents));
+
+        // Entity-type filter buttons: update panel state then recompose.
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 const filter = this.getAttribute('data-filter');
@@ -439,34 +573,15 @@
                 this.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
 
-                // Get the relevant components
                 const components = target === 'derived' ? derivedComponents : directComponents;
                 if (!components) return;
-
-                const { circles, visibleId } = components;
-                let visibleCount = 0;
-
-                // Apply filter
-                circles.each(function(d) {
-                    const circle = d3.select(this);
-                    const isVisible = filter === 'all' || d.entity_type === filter;
-
-                    if (isVisible) {
-                        circle.style("opacity", 0.5);
-                        circle.style("fill", entityTypeColors[d.entity_type] || categoryColors[d.category] || categoryColors.unknown);
-                        circle.style("pointer-events", "all");  // Enable tooltips
-                        visibleCount++;
-                    } else {
-                        circle.style("opacity", 0.3);  // Light gray, visible
-                        circle.style("fill", "#e0e0e0");  // Light gray color
-                        circle.style("pointer-events", "none");  // Disable tooltips
-                    }
-                });
-
-                // Update visible count
-                d3.select(`#${visibleId}`).text(visibleCount);
+                components.entityFilter = filter;
+                applyPanelFilters(components);
             });
         });
+
+        // Initial paint (applies all-checked facet state).
+        applyAllFilters();
     </script>
 </body>
 </html>
