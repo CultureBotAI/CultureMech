@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CultureMech Media Embedding Map (PaCMAP)</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="d3.v7.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -250,6 +250,45 @@
             color: #64748b;
         }
 
+        /* Accessible data-table fallback (dataviz #10) — theme-tokenized */
+        .data-table-details {
+            max-width: 1600px;
+            margin: 0 auto 1.5rem;
+            padding: 1rem 1.25rem;
+            background: var(--card);
+            color: var(--ink);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+        }
+        .data-table-details summary {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--accent);
+        }
+        .data-table-wrap {
+            margin-top: 1rem;
+            max-height: 480px;
+            overflow: auto;
+        }
+        .data-table-details table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.82rem;
+        }
+        .data-table-details th,
+        .data-table-details td {
+            border: 1px solid var(--line);
+            padding: 0.35rem 0.5rem;
+            text-align: left;
+            white-space: nowrap;
+        }
+        .data-table-details thead th {
+            position: sticky;
+            top: 0;
+            background: var(--card);
+        }
+
         /* Token layer — light values match the hard-coded look above; consumed
            only by the injected theme-toggle button, so light appearance is unchanged. */
         :root{--card:#ffffff;--ink:#1a1a1a;--line:#e2e8f0;--accent:#4B9E5F;}
@@ -308,9 +347,9 @@
 </head>
 <body>
     <header>
-        <h1>🧫 CultureMech Media Embedding Map (PaCMAP)</h1>
+        <h1>CultureMech Media Embedding Map (PaCMAP)</h1>
         <p>Explore 14940 culture media recipes through semantic similarity</p>
-        <a href="index.html" class="nav-link">🏠 Home</a>
+        <a href="index.html" class="nav-link">Home</a>
         <a href="browser.html" class="nav-link">← Back to Media Browser</a>
     </header>
 
@@ -322,11 +361,11 @@
 
             <div class="stats">
                 <div class="stat-item">
-                    <span>📊 Total:</span>
+                    <span>Total:</span>
                     <strong id="derived-total">14666</strong>
                 </div>
                 <div class="stat-item">
-                    <span>🔍 Visible:</span>
+                    <span>Visible:</span>
                     <strong id="derived-visible">14666</strong>
                 </div>
             </div>
@@ -353,11 +392,11 @@
 
             <div class="stats">
                 <div class="stat-item">
-                    <span>📊 Total:</span>
+                    <span>Total:</span>
                     <strong id="direct-total">8098</strong>
                 </div>
                 <div class="stat-item">
-                    <span>🔍 Visible:</span>
+                    <span>Visible:</span>
                     <strong id="direct-visible">8098</strong>
                 </div>
             </div>
@@ -380,6 +419,22 @@
 
     <!-- Category facet panel: filters points in BOTH plots by category -->
     <div class="facets" id="facet-panel"></div>
+
+    <!-- Accessible, keyboard-reachable data-table fallback (dataviz #10) -->
+    <details class="data-table-details">
+        <summary>View data as table</summary>
+        <div class="data-table-wrap">
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Name</th><th>Entity type</th><th>Category</th><th>Type</th>
+                        <th>State</th><th>Ingredients</th><th>Organisms</th><th>Source</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </details>
 
     <div class="tooltip" id="tooltip"></div>
 
@@ -453,7 +508,7 @@
                 .join("circle")
                 .attr("cx", d => xScale(d.x))
                 .attr("cy", d => yScale(d.y))
-                .attr("r", 4)
+                .attr("r", 5)
                 .attr("fill", d => entityTypeColors[d.entity_type] || categoryColors[d.category] || categoryColors.unknown)
                 .attr("opacity", 0.5)
                 .attr("data-name", d => d.name.toLowerCase())
@@ -637,6 +692,21 @@
 
         // Initial paint (applies all-checked facet state).
         applyAllFilters();
+
+        // ---- Data-table fallback: same data the plot renders (dataviz #10) ----
+        (function buildDataTable() {
+            const tbody = document.querySelector("#data-table tbody");
+            if (!tbody) return;
+            const esc = s => String(s == null ? "" : s)
+                .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            const rows = [...derivedData, ...directData];
+            tbody.innerHTML = rows.map(d =>
+                `<tr><td>${esc(d.name)}</td><td>${esc(d.entity_type)}</td>` +
+                `<td>${esc(d.category)}</td><td>${esc(d.medium_type)}</td>` +
+                `<td>${esc(d.physical_state)}</td><td>${esc(d.num_ingredients)}</td>` +
+                `<td>${esc(d.num_organisms)}</td><td>${esc(d.source_database)}</td></tr>`
+            ).join("");
+        })();
     </script>
     <script src="theme-toggle.js"></script>
 </body>
