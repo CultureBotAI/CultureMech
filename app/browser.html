@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CultureMech - Microbial Growth Media Browser</title>
     <style>
+        /* Token layer — matches the hard-coded light values above; the only
+           consumer is the injected theme-toggle button, so light look is unchanged. */
+        :root{
+            --card:#ffffff;
+            --ink:#1a1a1a;
+            --line:#e2e8f0;
+            --accent:#4B9E5F;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -265,6 +274,65 @@
             .facets {
                 order: 2;
             }
+        }
+
+        /* ---- Dark theme (OS default; superseded by the toggle) ---- */
+        @media (prefers-color-scheme: dark){
+            :root:not([data-theme="light"]){--card:#1c2118;--ink:#eaf0e6;--line:#2e3a2c;--accent:#6cc47f;}
+            :root:not([data-theme="light"]) body{background:#12160f;color:#eaf0e6}
+            :root:not([data-theme="light"]) .header{background:linear-gradient(135deg,#24331d 0%,#12160f 100%);color:#eaf0e6}
+            :root:not([data-theme="light"]) .header-nav a{background:rgba(255,255,255,.06);color:#eaf0e6}
+            :root:not([data-theme="light"]) .header-nav a:hover{background:rgba(255,255,255,.12)}
+            :root:not([data-theme="light"]) .search-bar,
+            :root:not([data-theme="light"]) .facets,
+            :root:not([data-theme="light"]) .results{background:#1c2118;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+            :root:not([data-theme="light"]) .search-input{background:#12160f;color:#eaf0e6;border-color:#2e3a2c}
+            :root:not([data-theme="light"]) .search-input:focus{border-color:#6cc47f}
+            :root:not([data-theme="light"]) .facet h3,
+            :root:not([data-theme="light"]) .results-count,
+            :root:not([data-theme="light"]) .result-title,
+            :root:not([data-theme="light"]) .loading{color:#6cc47f}
+            :root:not([data-theme="light"]) .facet-option:hover{color:#6cc47f}
+            :root:not([data-theme="light"]) .facet-count,
+            :root:not([data-theme="light"]) .no-results{color:#9db09a}
+            :root:not([data-theme="light"]) .results-header{border-bottom-color:#2e3a2c}
+            :root:not([data-theme="light"]) .result-item{border-bottom-color:#2e3a2c}
+            :root:not([data-theme="light"]) .result-item:hover{background:#24331d}
+            :root:not([data-theme="light"]) .result-meta-label{color:#eaf0e6}
+            :root:not([data-theme="light"]) .result-description{color:#9db09a}
+            :root:not([data-theme="light"]) .tag{background:#2e3a2c;color:#eaf0e6}
+            :root:not([data-theme="light"]) .clear-filters{background:#24331d;border-color:#2e3a2c;color:#eaf0e6}
+            :root:not([data-theme="light"]) .clear-filters:hover{background:#2e3a2c}
+        }
+        :root[data-theme="dark"]{--card:#1c2118;--ink:#eaf0e6;--line:#2e3a2c;--accent:#6cc47f;}
+        :root[data-theme="dark"] body{background:#12160f;color:#eaf0e6}
+        :root[data-theme="dark"] .header{background:linear-gradient(135deg,#24331d 0%,#12160f 100%);color:#eaf0e6}
+        :root[data-theme="dark"] .header-nav a{background:rgba(255,255,255,.06);color:#eaf0e6}
+        :root[data-theme="dark"] .header-nav a:hover{background:rgba(255,255,255,.12)}
+        :root[data-theme="dark"] .search-bar,
+        :root[data-theme="dark"] .facets,
+        :root[data-theme="dark"] .results{background:#1c2118;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+        :root[data-theme="dark"] .search-input{background:#12160f;color:#eaf0e6;border-color:#2e3a2c}
+        :root[data-theme="dark"] .search-input:focus{border-color:#6cc47f}
+        :root[data-theme="dark"] .facet h3,
+        :root[data-theme="dark"] .results-count,
+        :root[data-theme="dark"] .result-title,
+        :root[data-theme="dark"] .loading{color:#6cc47f}
+        :root[data-theme="dark"] .facet-option:hover{color:#6cc47f}
+        :root[data-theme="dark"] .facet-count,
+        :root[data-theme="dark"] .no-results{color:#9db09a}
+        :root[data-theme="dark"] .results-header{border-bottom-color:#2e3a2c}
+        :root[data-theme="dark"] .result-item{border-bottom-color:#2e3a2c}
+        :root[data-theme="dark"] .result-item:hover{background:#24331d}
+        :root[data-theme="dark"] .result-meta-label{color:#eaf0e6}
+        :root[data-theme="dark"] .result-description{color:#9db09a}
+        :root[data-theme="dark"] .tag{background:#2e3a2c;color:#eaf0e6}
+        :root[data-theme="dark"] .clear-filters{background:#24331d;border-color:#2e3a2c;color:#eaf0e6}
+        :root[data-theme="dark"] .clear-filters:hover{background:#2e3a2c}
+
+        @media (prefers-reduced-motion: reduce){
+            *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
+                transition-duration:.01ms!important;scroll-behavior:auto!important;}
         }
     </style>
 </head>
@@ -607,5 +675,6 @@
             return text.substring(0, length) + '...';
         }
     </script>
+    <script src="theme-toggle.js"></script>
 </body>
 </html>

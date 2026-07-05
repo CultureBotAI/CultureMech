@@ -46,6 +46,39 @@
   footer .fam{margin:.2em 0}
   footer .fam a{margin:0 .45em;white-space:nowrap}
   footer strong{color:var(--ink)}
+
+  /* ---- Dark theme (OS default; superseded by the toggle) ---- */
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --pastel-a:#24331d;   /* hero gradient tint */
+      --pastel-b:#12160f;   /* page ground */
+      --accent:#6cc47f;
+      --ink:#eaf0e6;
+      --muted:#9db09a;
+      --card:#1c2118;
+      --line:#2e3a2c;
+    }
+    :root:not([data-theme="light"]) .stat{background:rgba(255,255,255,.05)}
+    :root:not([data-theme="light"]) footer{background:rgba(255,255,255,.05)}
+    :root:not([data-theme="light"]) .btn{color:#12160f}
+  }
+  :root[data-theme="dark"]{
+    --pastel-a:#24331d;
+    --pastel-b:#12160f;
+    --accent:#6cc47f;
+    --ink:#eaf0e6;
+    --muted:#9db09a;
+    --card:#1c2118;
+    --line:#2e3a2c;
+  }
+  :root[data-theme="dark"] .stat{background:rgba(255,255,255,.05)}
+  :root[data-theme="dark"] footer{background:rgba(255,255,255,.05)}
+  :root[data-theme="dark"] .btn{color:#12160f}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
+      transition-duration:.01ms!important;scroll-behavior:auto!important;}
+  }
 </style>
 </head>
 <body>
@@ -88,5 +121,6 @@
       <a href="https://github.com/Knowledge-Graph-Hub/kg-microbe">kg-microbe</a>&middot;<a href="https://bioportal.bioontology.org/ontologies/METPO">METPO</a>
     </div>
   </footer>
+  <script src="theme-toggle.js"></script>
 </body>
 </html>

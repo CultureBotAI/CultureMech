@@ -66,3 +66,40 @@ footer { margin-top: 3em; padding-top: 1em;
          border-top: 1px solid var(--line); color: var(--muted);
          font-size: 0.85em; }
 a { color: var(--accent); }
+
+/* ---- Dark theme (OS default; superseded by the toggle) ---- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fg: #eaf0e6;
+    --muted: #9db09a;
+    --line: #2e3a2c;
+    --bg-soft: #1c2118;
+    --accent: #6cc47f;
+    --pass: #34d399;
+    --warn: #fbbf24;
+    --fail: #f87171;
+  }
+  :root:not([data-theme="light"]) body { background: #12160f; }
+  :root:not([data-theme="light"]) .badge { color: var(--fg); }
+}
+:root[data-theme="dark"] {
+  --fg: #eaf0e6;
+  --muted: #9db09a;
+  --line: #2e3a2c;
+  --bg-soft: #1c2118;
+  --accent: #6cc47f;
+  --pass: #34d399;
+  --warn: #fbbf24;
+  --fail: #f87171;
+}
+:root[data-theme="dark"] body { background: #12160f; }
+:root[data-theme="dark"] .badge { color: var(--fg); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
