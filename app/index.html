@@ -61,6 +61,17 @@
     :root:not([data-theme="light"]) .stat{background:rgba(255,255,255,.05)}
     :root:not([data-theme="light"]) footer{background:rgba(255,255,255,.05)}
     :root:not([data-theme="light"]) .btn{color:#12160f}
+    /* keep the brand pastel PAIR visible in dark: darkened-pair hero fill + vivid-pair top edge */
+    :root:not([data-theme="light"]) .hero{
+      background:linear-gradient(135deg,#595341,#4a5646);
+      border-top:3px solid;
+      border-image:linear-gradient(90deg,#FFE0B5,#CDEBC5) 1;
+    }
+    :root:not([data-theme="light"]) .card{position:relative}
+    :root:not([data-theme="light"]) .card::before{
+      content:"";position:absolute;top:0;left:0;right:0;height:2px;
+      background:linear-gradient(90deg,#FFE0B5,#CDEBC5);border-radius:16px 16px 0 0;
+    }
   }
   :root[data-theme="dark"]{
     --pastel-a:#24331d;
@@ -74,6 +85,17 @@
   :root[data-theme="dark"] .stat{background:rgba(255,255,255,.05)}
   :root[data-theme="dark"] footer{background:rgba(255,255,255,.05)}
   :root[data-theme="dark"] .btn{color:#12160f}
+  /* keep the brand pastel PAIR visible in dark: darkened-pair hero fill + vivid-pair top edge */
+  :root[data-theme="dark"] .hero{
+    background:linear-gradient(135deg,#595341,#4a5646);
+    border-top:3px solid;
+    border-image:linear-gradient(90deg,#FFE0B5,#CDEBC5) 1;
+  }
+  :root[data-theme="dark"] .card{position:relative}
+  :root[data-theme="dark"] .card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,#FFE0B5,#CDEBC5);border-radius:16px 16px 0 0;
+  }
 
   @media (prefers-reduced-motion: reduce){
     *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
