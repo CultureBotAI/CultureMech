@@ -9,6 +9,35 @@ import yaml
 logger = logging.getLogger(__name__)
 
 
+# Legacy MIM `ingredient_roles.yaml` uses the retired flat vocabulary
+# (MINERAL / SALT / BUFFER / …). Map each legacy token to the faceted
+# slot + enum value that replaced it, following the same conventions as
+# `import/import_ingredient_roles.py`:
+# - "mineral" has no direct nutritional equivalent → TRACE_ELEMENT catch-all.
+# - "salt" has no nutritional equivalent → PhysicochemicalRoleEnum.OSMOTIC_AGENT.
+# - ELECTRON_DONOR / ELECTRON_ACCEPTOR / ENERGY_SOURCE / COFACTOR_PROVIDER
+#   in the legacy vocabulary spanned multiple facets; the mapping picks the
+#   most-common facet interpretation. Curators can refine post-import.
+_LEGACY_TOKEN_TO_FACET = {
+    "CARBON_SOURCE":     ("nutritional_roles",     "CARBON_SOURCE"),
+    "NITROGEN_SOURCE":   ("nutritional_roles",     "NITROGEN_SOURCE"),
+    "MINERAL":           ("nutritional_roles",     "TRACE_ELEMENT"),
+    "TRACE_ELEMENT":     ("nutritional_roles",     "TRACE_ELEMENT"),
+    "VITAMIN_SOURCE":    ("nutritional_roles",     "VITAMIN_SOURCE"),
+    "PROTEIN_SOURCE":    ("nutritional_roles",     "PROTEIN_SOURCE"),
+    "AMINO_ACID_SOURCE": ("nutritional_roles",     "AMINO_ACID_SOURCE"),
+    "ENERGY_SOURCE":     ("nutritional_roles",     "ENERGY_SOURCE"),
+    "COFACTOR_PROVIDER": ("nutritional_roles",     "COFACTOR_PROVIDER"),
+    "BUFFER":            ("physicochemical_roles", "BUFFER"),
+    "SALT":              ("physicochemical_roles", "OSMOTIC_AGENT"),
+    "SOLIDIFYING_AGENT": ("physicochemical_roles", "SOLIDIFYING_AGENT"),
+    "ELECTRON_DONOR":    ("cellular_metabolic_roles", "ELECTRON_DONOR"),
+    "ELECTRON_ACCEPTOR": ("cellular_metabolic_roles", "ELECTRON_ACCEPTOR"),
+}
+
+FACET_ROLE_SLOTS = ("nutritional_roles", "physicochemical_roles", "cellular_metabolic_roles")
+
+
 class RoleImporter:
     """Import ingredient role assignments from MediaIngredientMech."""
 
@@ -112,8 +141,9 @@ class RoleImporter:
         Returns:
             True if roles were added, False otherwise
         """
-        # Skip if already has role field
-        if 'role' in ingredient:
+        # Skip if any facet role slot is already populated (curator or a
+        # prior import pass wrote something — never overwrite).
+        if any(slot in ingredient for slot in FACET_ROLE_SLOTS):
             self.stats['already_has_role'] += 1
             return False
 
@@ -143,11 +173,32 @@ class RoleImporter:
             self.stats['no_roles_found'] += 1
             return False
 
-        # Add role field
-        ingredient['role'] = roles
+        # Bucket legacy tokens into faceted role slots. Tokens that don't
+        # map to any facet are dropped (previously they'd go into `role:`
+        # unfiltered; now the schema wouldn't accept them).
+        bucketed: Dict[str, List[str]] = {}
+        for token in roles:
+            mapping = _LEGACY_TOKEN_TO_FACET.get(token)
+            if mapping is None:
+                logger.warning(
+                    "Legacy role token %r has no faceted-slot mapping; dropping for ingredient %r",
+                    token, ingredient.get('preferred_term', 'unknown'),
+                )
+                continue
+            slot, facet_value = mapping
+            slot_list = bucketed.setdefault(slot, [])
+            if facet_value not in slot_list:
+                slot_list.append(facet_value)
+
+        if not bucketed:
+            self.stats['no_roles_found'] += 1
+            return False
+
+        for slot, values in bucketed.items():
+            ingredient[slot] = values
 
         self.stats['ingredients_assigned'] += 1
-        self.stats['roles_assigned'] += len(roles)
+        self.stats['roles_assigned'] += sum(len(v) for v in bucketed.values())
 
         return True
 

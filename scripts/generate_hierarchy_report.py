@@ -87,14 +87,17 @@ class HierarchyReporter:
             variant_type = ingredient['variant_type']
             self.stats['variant_types'][variant_type] += 1
 
-        # Track roles
-        if 'role' in ingredient:
+        # Track role assignments across the three facet slots.
+        _tracked_any_role = False
+        for slot in ('nutritional_roles', 'physicochemical_roles', 'cellular_metabolic_roles'):
+            if slot in ingredient:
+                _tracked_any_role = True
+                roles = ingredient[slot]
+                if isinstance(roles, list):
+                    for role in roles:
+                        self.stats['roles'][f'{slot}:{role}'] += 1
+        if _tracked_any_role:
             self.stats['ingredients_with_roles'] += 1
-            roles = ingredient['role']
-
-            if isinstance(roles, list):
-                for role in roles:
-                    self.stats['roles'][role] += 1
         else:
             # Track unmatched ingredients
             if mim_id and 'parent_ingredient' not in ingredient:

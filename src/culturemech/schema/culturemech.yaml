@@ -826,17 +826,6 @@ classes:
         description: Preparation notes specific to this ingredient
         range: string
 
-      role:
-        description: >-
-          Functional role(s) in the medium (legacy flat vocabulary).
-          Deprecated in favor of the three faceted slots below
-          (`nutritional_roles`, `physicochemical_roles`,
-          `cellular_metabolic_roles`). Retained for backward-compatibility
-          during the migration; a follow-up PR will retire this slot and
-          rewrite any records that use it.
-        range: IngredientRoleEnum
-        multivalued: true
-
       nutritional_roles:
         description: >-
           What element or macronutrient this ingredient supplies to the
@@ -1422,8 +1411,17 @@ classes:
       substitution at observation time.
     attributes:
       role:
-        description: Functional role the override fills in the experiment.
-        range: NutrientRoleEnum
+        description: >-
+          Functional role the override supplies to the experiment (e.g.
+          CARBON_SOURCE, NITROGEN_SOURCE, SULFUR_SOURCE, PHOSPHATE_SOURCE).
+          Retargeted from the retired NutrientRoleEnum to the MIM-imported
+          NutritionalRoleEnum (which is broader — 12 values covering all
+          macronutrient / vitamin / cofactor supply categories). Values
+          that used to fit under NutrientRoleEnum but not NutritionalRoleEnum
+          (ELECTRON_DONOR, ELECTRON_ACCEPTOR) belong on the cellular-metabolic
+          facet of the *ingredient* the override supplies, not on the
+          override itself.
+        range: NutritionalRoleEnum
         required: true
 
       source:
@@ -2265,38 +2263,6 @@ enums:
       community:
         description: Mixed/consortium culture of multiple organisms
 
-  IngredientRoleEnum:
-    description: Functional role of an ingredient in growth medium
-    permissible_values:
-      CARBON_SOURCE:
-        description: Primary carbon source for metabolism
-      NITROGEN_SOURCE:
-        description: Nitrogen source for biomass synthesis
-      MINERAL:
-        description: Mineral nutrient (major element)
-      TRACE_ELEMENT:
-        description: Trace element or micronutrient
-      BUFFER:
-        description: pH buffering agent
-      VITAMIN_SOURCE:
-        description: Provides vitamins or vitamin precursors
-      SALT:
-        description: Salt for osmotic balance or ionic strength
-      PROTEIN_SOURCE:
-        description: Complex protein source (e.g., peptone, casein)
-      AMINO_ACID_SOURCE:
-        description: Provides amino acids
-      SOLIDIFYING_AGENT:
-        description: Gelling agent (e.g., agar)
-      ENERGY_SOURCE:
-        description: Energy source (often overlaps with carbon source)
-      ELECTRON_ACCEPTOR:
-        description: Terminal electron acceptor for respiration
-      ELECTRON_DONOR:
-        description: Electron donor for chemolithotrophs
-      COFACTOR_PROVIDER:
-        description: Supplies essential cofactors or their precursors
-
   CofactorCategoryEnum:
     description: High-level classification of cofactor types
     permissible_values:
@@ -2525,28 +2491,6 @@ enums:
         description: Serial selection / experimental evolution producing a stable phenotype.
       SELECTION:
         description: Strain isolated by selective pressure (e.g. plate selection, enrichment).
-      OTHER:
-        description: Use sparingly; prefer a more specific value above.
-
-  NutrientRoleEnum:
-    description: >-
-      Functional role a NutrientOverride source fills in the experiment
-      (carbon, nitrogen, electron donor/acceptor, etc.).
-    permissible_values:
-      CARBON_SOURCE:
-        description: Sole or dominant carbon source.
-      NITROGEN_SOURCE:
-        description: Sole or dominant nitrogen source.
-      SULFUR_SOURCE:
-        description: Sole or dominant sulfur source.
-      PHOSPHATE_SOURCE:
-        description: Sole or dominant phosphorus source.
-      ELECTRON_DONOR:
-        description: Substrate oxidized for energy.
-      ELECTRON_ACCEPTOR:
-        description: Terminal acceptor for respiratory electron flow.
-      LIGHT_SOURCE:
-        description: For phototrophs — captures light intensity / wavelength as nutrient.
       OTHER:
         description: Use sparingly; prefer a more specific value above.
 

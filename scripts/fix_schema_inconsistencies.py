@@ -76,7 +76,11 @@ def fix_ingredient_schema(ingredient: Dict) -> Dict:
         }
 
     # Copy other fields
-    for key in ['term', 'notes', 'role', 'chemical_formula', 'molecular_weight']:
+    for key in [
+        'term', 'notes',
+        'nutritional_roles', 'physicochemical_roles', 'cellular_metabolic_roles', 'role_curie',
+        'chemical_formula', 'molecular_weight',
+    ]:
         if key in ingredient and key not in fixed:
             fixed[key] = ingredient[key]
 

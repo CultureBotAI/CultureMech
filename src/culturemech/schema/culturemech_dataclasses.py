@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-07-19T21:47:10
+# Generation date: 2026-07-20T09:29:02
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -709,7 +709,6 @@ class IngredientDescriptor(Descriptor):
     molecular_weight: Optional[float] = None
     supplier_catalog: Optional[Union[dict, "SupplierInfo"]] = None
     notes: Optional[str] = None
-    role: Optional[Union[Union[str, "IngredientRoleEnum"], list[Union[str, "IngredientRoleEnum"]]]] = empty_list()
     nutritional_roles: Optional[Union[Union[str, "NutritionalRoleEnum"], list[Union[str, "NutritionalRoleEnum"]]]] = empty_list()
     physicochemical_roles: Optional[Union[Union[str, "PhysicochemicalRoleEnum"], list[Union[str, "PhysicochemicalRoleEnum"]]]] = empty_list()
     cellular_metabolic_roles: Optional[Union[Union[str, "CellularMetabolicRoleEnum"], list[Union[str, "CellularMetabolicRoleEnum"]]]] = empty_list()
@@ -775,10 +774,6 @@ class IngredientDescriptor(Descriptor):
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
-
-        if not isinstance(self.role, list):
-            self.role = [self.role] if self.role is not None else []
-        self.role = [v if isinstance(v, IngredientRoleEnum) else IngredientRoleEnum(v) for v in self.role]
 
         if not isinstance(self.nutritional_roles, list):
             self.nutritional_roles = [self.nutritional_roles] if self.nutritional_roles is not None else []
@@ -1383,7 +1378,7 @@ class NutrientOverride(YAMLRoot):
     class_name: ClassVar[str] = "NutrientOverride"
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.NutrientOverride
 
-    role: Union[str, "NutrientRoleEnum"] = None
+    role: Union[str, "NutritionalRoleEnum"] = None
     source: str = None
     ontology_id: Optional[str] = None
     is_sole_source: Optional[Union[bool, Bool]] = None
@@ -1392,8 +1387,8 @@ class NutrientOverride(YAMLRoot):
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.role):
             self.MissingRequiredField("role")
-        if not isinstance(self.role, NutrientRoleEnum):
-            self.role = NutrientRoleEnum(self.role)
+        if not isinstance(self.role, NutritionalRoleEnum):
+            self.role = NutritionalRoleEnum(self.role)
 
         if self._is_empty(self.source):
             self.MissingRequiredField("source")
@@ -2896,58 +2891,6 @@ class OrganismCultureTypeEnum(EnumDefinitionImpl):
         description="Whether the medium targets a pure isolate or a mixed microbial community",
     )
 
-class IngredientRoleEnum(EnumDefinitionImpl):
-    """
-    Functional role of an ingredient in growth medium
-    """
-    CARBON_SOURCE = PermissibleValue(
-        text="CARBON_SOURCE",
-        description="Primary carbon source for metabolism")
-    NITROGEN_SOURCE = PermissibleValue(
-        text="NITROGEN_SOURCE",
-        description="Nitrogen source for biomass synthesis")
-    MINERAL = PermissibleValue(
-        text="MINERAL",
-        description="Mineral nutrient (major element)")
-    TRACE_ELEMENT = PermissibleValue(
-        text="TRACE_ELEMENT",
-        description="Trace element or micronutrient")
-    BUFFER = PermissibleValue(
-        text="BUFFER",
-        description="pH buffering agent")
-    VITAMIN_SOURCE = PermissibleValue(
-        text="VITAMIN_SOURCE",
-        description="Provides vitamins or vitamin precursors")
-    SALT = PermissibleValue(
-        text="SALT",
-        description="Salt for osmotic balance or ionic strength")
-    PROTEIN_SOURCE = PermissibleValue(
-        text="PROTEIN_SOURCE",
-        description="Complex protein source (e.g., peptone, casein)")
-    AMINO_ACID_SOURCE = PermissibleValue(
-        text="AMINO_ACID_SOURCE",
-        description="Provides amino acids")
-    SOLIDIFYING_AGENT = PermissibleValue(
-        text="SOLIDIFYING_AGENT",
-        description="Gelling agent (e.g., agar)")
-    ENERGY_SOURCE = PermissibleValue(
-        text="ENERGY_SOURCE",
-        description="Energy source (often overlaps with carbon source)")
-    ELECTRON_ACCEPTOR = PermissibleValue(
-        text="ELECTRON_ACCEPTOR",
-        description="Terminal electron acceptor for respiration")
-    ELECTRON_DONOR = PermissibleValue(
-        text="ELECTRON_DONOR",
-        description="Electron donor for chemolithotrophs")
-    COFACTOR_PROVIDER = PermissibleValue(
-        text="COFACTOR_PROVIDER",
-        description="Supplies essential cofactors or their precursors")
-
-    _defn = EnumDefinition(
-        name="IngredientRoleEnum",
-        description="Functional role of an ingredient in growth medium",
-    )
-
 class CofactorCategoryEnum(EnumDefinitionImpl):
     """
     High-level classification of cofactor types
@@ -3316,41 +3259,6 @@ class StrainModificationTypeEnum(EnumDefinitionImpl):
     _defn = EnumDefinition(
         name="StrainModificationTypeEnum",
         description="""Class of genetic or selection-derived modification carried by a strain relative to the wild-type or type strain.""",
-    )
-
-class NutrientRoleEnum(EnumDefinitionImpl):
-    """
-    Functional role a NutrientOverride source fills in the experiment (carbon, nitrogen, electron donor/acceptor,
-    etc.).
-    """
-    CARBON_SOURCE = PermissibleValue(
-        text="CARBON_SOURCE",
-        description="Sole or dominant carbon source.")
-    NITROGEN_SOURCE = PermissibleValue(
-        text="NITROGEN_SOURCE",
-        description="Sole or dominant nitrogen source.")
-    SULFUR_SOURCE = PermissibleValue(
-        text="SULFUR_SOURCE",
-        description="Sole or dominant sulfur source.")
-    PHOSPHATE_SOURCE = PermissibleValue(
-        text="PHOSPHATE_SOURCE",
-        description="Sole or dominant phosphorus source.")
-    ELECTRON_DONOR = PermissibleValue(
-        text="ELECTRON_DONOR",
-        description="Substrate oxidized for energy.")
-    ELECTRON_ACCEPTOR = PermissibleValue(
-        text="ELECTRON_ACCEPTOR",
-        description="Terminal acceptor for respiratory electron flow.")
-    LIGHT_SOURCE = PermissibleValue(
-        text="LIGHT_SOURCE",
-        description="For phototrophs — captures light intensity / wavelength as nutrient.")
-    OTHER = PermissibleValue(
-        text="OTHER",
-        description="Use sparingly; prefer a more specific value above.")
-
-    _defn = EnumDefinition(
-        name="NutrientRoleEnum",
-        description="""Functional role a NutrientOverride source fills in the experiment (carbon, nitrogen, electron donor/acceptor, etc.).""",
     )
 
 class GrowthModeEnum(EnumDefinitionImpl):
@@ -4204,9 +4112,6 @@ slots.ingredientDescriptor__supplier_catalog = Slot(uri=CULTUREMECH.supplier_cat
 slots.ingredientDescriptor__notes = Slot(uri=CULTUREMECH.notes, name="ingredientDescriptor__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.ingredientDescriptor__notes, domain=None, range=Optional[str])
 
-slots.ingredientDescriptor__role = Slot(uri=CULTUREMECH.role, name="ingredientDescriptor__role", curie=CULTUREMECH.curie('role'),
-                   model_uri=CULTUREMECH.ingredientDescriptor__role, domain=None, range=Optional[Union[Union[str, "IngredientRoleEnum"], list[Union[str, "IngredientRoleEnum"]]]])
-
 slots.ingredientDescriptor__nutritional_roles = Slot(uri=CULTUREMECH.nutritional_roles, name="ingredientDescriptor__nutritional_roles", curie=CULTUREMECH.curie('nutritional_roles'),
                    model_uri=CULTUREMECH.ingredientDescriptor__nutritional_roles, domain=None, range=Optional[Union[Union[str, "NutritionalRoleEnum"], list[Union[str, "NutritionalRoleEnum"]]]])
 
@@ -4467,7 +4372,7 @@ slots.strainModification__evidence = Slot(uri=CULTUREMECH.evidence, name="strain
                    model_uri=CULTUREMECH.strainModification__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
 
 slots.nutrientOverride__role = Slot(uri=CULTUREMECH.role, name="nutrientOverride__role", curie=CULTUREMECH.curie('role'),
-                   model_uri=CULTUREMECH.nutrientOverride__role, domain=None, range=Union[str, "NutrientRoleEnum"])
+                   model_uri=CULTUREMECH.nutrientOverride__role, domain=None, range=Union[str, "NutritionalRoleEnum"])
 
 slots.nutrientOverride__source = Slot(uri=CULTUREMECH.source, name="nutrientOverride__source", curie=CULTUREMECH.curie('source'),
                    model_uri=CULTUREMECH.nutrientOverride__source, domain=None, range=str)

@@ -1205,16 +1205,6 @@
                     "description": "Human-readable ingredient name (e.g., \"Glucose\", \"Yeast Extract\")",
                     "type": "string"
                 },
-                "role": {
-                    "description": "Functional role(s) in the medium (legacy flat vocabulary). Deprecated in favor of the three faceted slots below (`nutritional_roles`, `physicochemical_roles`, `cellular_metabolic_roles`). Retained for backward-compatibility during the migration; a follow-up PR will retire this slot and rewrite any records that use it.",
-                    "items": {
-                        "$ref": "#/$defs/IngredientRoleEnum"
-                    },
-                    "type": [
-                        "array",
-                        "null"
-                    ]
-                },
                 "role_curie": {
                     "description": "Escape-hatch CURIE(s) for out-of-vocabulary role terms not covered by the three facet enums. Should resolve within a recognized role namespace (CHEBI role subtree under CHEBI:50906, METPO, ENVO, GO, PATO, NCIT). Use sparingly \u2014 prefer a facet enum value where one fits.",
                     "items": {
@@ -1297,27 +1287,6 @@
             ],
             "title": "IngredientReference",
             "type": "object"
-        },
-        "IngredientRoleEnum": {
-            "description": "Functional role of an ingredient in growth medium",
-            "enum": [
-                "CARBON_SOURCE",
-                "NITROGEN_SOURCE",
-                "MINERAL",
-                "TRACE_ELEMENT",
-                "BUFFER",
-                "VITAMIN_SOURCE",
-                "SALT",
-                "PROTEIN_SOURCE",
-                "AMINO_ACID_SOURCE",
-                "SOLIDIFYING_AGENT",
-                "ENERGY_SOURCE",
-                "ELECTRON_ACCEPTOR",
-                "ELECTRON_DONOR",
-                "COFACTOR_PROVIDER"
-            ],
-            "title": "IngredientRoleEnum",
-            "type": "string"
         },
         "IngredientSynonym": {
             "additionalProperties": false,
@@ -2189,8 +2158,8 @@
                     ]
                 },
                 "role": {
-                    "$ref": "#/$defs/NutrientRoleEnum",
-                    "description": "Functional role the override fills in the experiment."
+                    "$ref": "#/$defs/NutritionalRoleEnum",
+                    "description": "Functional role the override supplies to the experiment (e.g. CARBON_SOURCE, NITROGEN_SOURCE, SULFUR_SOURCE, PHOSPHATE_SOURCE). Retargeted from the retired NutrientRoleEnum to the MIM-imported NutritionalRoleEnum (which is broader \u2014 12 values covering all macronutrient / vitamin / cofactor supply categories). Values that used to fit under NutrientRoleEnum but not NutritionalRoleEnum (ELECTRON_DONOR, ELECTRON_ACCEPTOR) belong on the cellular-metabolic facet of the *ingredient* the override supplies, not on the override itself."
                 },
                 "source": {
                     "description": "e.g. \"succinate\", \"L-phenylalanine\", \"acetate\".",
@@ -2203,21 +2172,6 @@
             ],
             "title": "NutrientOverride",
             "type": "object"
-        },
-        "NutrientRoleEnum": {
-            "description": "Functional role a NutrientOverride source fills in the experiment (carbon, nitrogen, electron donor/acceptor, etc.).",
-            "enum": [
-                "CARBON_SOURCE",
-                "NITROGEN_SOURCE",
-                "SULFUR_SOURCE",
-                "PHOSPHATE_SOURCE",
-                "ELECTRON_DONOR",
-                "ELECTRON_ACCEPTOR",
-                "LIGHT_SOURCE",
-                "OTHER"
-            ],
-            "title": "NutrientRoleEnum",
-            "type": "string"
         },
         "NutritionalRoleEnum": {
             "description": "What element or macronutrient an ingredient supplies to the medium. One of three orthogonal role facets (with PhysicochemicalRoleEnum and CellularMetabolicRoleEnum). A single ingredient may carry multiple nutritional roles (e.g. L-cysteine supplies both amino-acid and sulfur).",

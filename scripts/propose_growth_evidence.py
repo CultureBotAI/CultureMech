@@ -486,7 +486,16 @@ def find_snippet_for(text: str, needle: str) -> str | None:
 
 # ---------------- v2: perturbation / conditional-growth extraction ----------------
 
-def _normalize_role(raw: str) -> str:
+def _normalize_role(raw: str) -> str | None:
+    """Map free-text role hint to a NutritionalRoleEnum token, or None if no match.
+
+    NutrientOverride.role is typed against NutritionalRoleEnum (12 values,
+    element-supply concepts) after the Step 4b retirement of the flat
+    NutrientRoleEnum. Legacy hints like "electron" (formerly ELECTRON_DONOR)
+    and the OTHER fallback have no NutritionalRoleEnum equivalent — for
+    those, return None so callers skip the override rather than emit a
+    value that would fail schema validation.
+    """
     r = raw.strip().lower()
     return {
         "carbon": "CARBON_SOURCE",
@@ -494,8 +503,7 @@ def _normalize_role(raw: str) -> str:
         "sulfur": "SULFUR_SOURCE",
         "phosphate": "PHOSPHATE_SOURCE",
         "phosphorus": "PHOSPHATE_SOURCE",
-        "electron": "ELECTRON_DONOR",
-    }.get(r, "OTHER")
+    }.get(r)
 
 
 def _dedup_dicts(items: list[dict]) -> list[dict]:
@@ -713,8 +721,14 @@ def extract_nutrient_overrides(text: str) -> list[dict]:
             ).strip(" ,.;:-")
             if not source or len(source) < 2:
                 continue
+            role = _normalize_role(role_raw)
+            if role is None:
+                # Extractor caught a role hint (e.g. "electron") that has
+                # no valid NutritionalRoleEnum mapping. Skip the override
+                # rather than emit a value the schema will reject.
+                continue
             entry = {
-                "role": _normalize_role(role_raw),
+                "role": role,
                 "source": source,
                 "is_sole_source": True,
             }
