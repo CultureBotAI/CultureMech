@@ -4,10 +4,12 @@ title: MIM ingredient role facets (vendored from MediaIngredientMech)
 description: >-
   Vendored, byte-identical LinkML module carrying the three orthogonal
   ingredient-role facet enums authored in MediaIngredientMech
-  (CultureBotAI/MediaIngredientMech#129 + #134). MIM owns the ingredient
-  identity layer and the SSSOM anchor mappings; this shim carries the enum
-  vocabularies over into CultureMech so an `IngredientDescriptor` can be
-  typed against them without CultureMech growing a divergent parallel copy.
+  (as of CultureBotAI/MediaIngredientMech#134 — the head PR that finalized
+  the enums; introduced in #129 and polished by #134). MIM owns the
+  ingredient identity layer and the SSSOM anchor mappings; this shim
+  carries the enum vocabularies over into CultureMech so an
+  `IngredientDescriptor` can be typed against them without CultureMech
+  growing a divergent parallel copy.
 
     * NutritionalRoleEnum        — 12 values: what element/macronutrient
                                     the ingredient supplies to the medium.
