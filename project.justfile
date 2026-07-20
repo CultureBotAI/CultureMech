@@ -876,6 +876,28 @@ refresh-schema-pin:
     printf '%s  %s\n' "$h" "$f" > src/culturemech/schema/.mech_shared.sha256
     echo "re-pinned $f to $h"
 
+# Durability guard for the MIM-authored ingredient role facet enums, vendored
+# byte-identical from CultureBotAI/MediaIngredientMech.
+MIM_ROLES_MODULE := "src/culturemech/schema/mim_roles.yaml"
+[group('QC')]
+verify-mim-roles-pin:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    if command -v sha256sum >/dev/null 2>&1; then
+        sha256sum -c src/culturemech/schema/.mim_roles.sha256
+    else
+        shasum -a 256 -c src/culturemech/schema/.mim_roles.sha256
+    fi
+
+[group('QC')]
+refresh-mim-roles-pin:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    f={{MIM_ROLES_MODULE}}
+    if command -v sha256sum >/dev/null 2>&1; then h=$(sha256sum "$f" | cut -d' ' -f1); else h=$(shasum -a 256 "$f" | cut -d' ' -f1); fi
+    printf '%s  %s\n' "$h" "$f" > src/culturemech/schema/.mim_roles.sha256
+    echo "re-pinned $f to $h"
+
 [group('QC')]
 validate-all:
     #!/usr/bin/env bash

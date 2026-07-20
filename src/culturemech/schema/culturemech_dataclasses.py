@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-07-19T21:27:07
+# Generation date: 2026-07-19T21:47:10
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -58,8 +58,8 @@ from rdflib import (
     URIRef
 )
 
-from linkml_runtime.linkml_model.types import Boolean, Date, Float, Integer, String, Uri
-from linkml_runtime.utils.metamodelcore import Bool, URI, XSDDate
+from linkml_runtime.linkml_model.types import Boolean, Date, Float, Integer, String, Uri, Uriorcurie
+from linkml_runtime.utils.metamodelcore import Bool, URI, URIorCURIE, XSDDate
 
 metamodel_version = "1.7.0"
 version = None
@@ -710,6 +710,10 @@ class IngredientDescriptor(Descriptor):
     supplier_catalog: Optional[Union[dict, "SupplierInfo"]] = None
     notes: Optional[str] = None
     role: Optional[Union[Union[str, "IngredientRoleEnum"], list[Union[str, "IngredientRoleEnum"]]]] = empty_list()
+    nutritional_roles: Optional[Union[Union[str, "NutritionalRoleEnum"], list[Union[str, "NutritionalRoleEnum"]]]] = empty_list()
+    physicochemical_roles: Optional[Union[Union[str, "PhysicochemicalRoleEnum"], list[Union[str, "PhysicochemicalRoleEnum"]]]] = empty_list()
+    cellular_metabolic_roles: Optional[Union[Union[str, "CellularMetabolicRoleEnum"], list[Union[str, "CellularMetabolicRoleEnum"]]]] = empty_list()
+    role_curie: Optional[Union[Union[str, URIorCURIE], list[Union[str, URIorCURIE]]]] = empty_list()
     cofactors_provided: Optional[Union[Union[dict, "CofactorDescriptor"], list[Union[dict, "CofactorDescriptor"]]]] = empty_list()
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
 
@@ -775,6 +779,22 @@ class IngredientDescriptor(Descriptor):
         if not isinstance(self.role, list):
             self.role = [self.role] if self.role is not None else []
         self.role = [v if isinstance(v, IngredientRoleEnum) else IngredientRoleEnum(v) for v in self.role]
+
+        if not isinstance(self.nutritional_roles, list):
+            self.nutritional_roles = [self.nutritional_roles] if self.nutritional_roles is not None else []
+        self.nutritional_roles = [v if isinstance(v, NutritionalRoleEnum) else NutritionalRoleEnum(v) for v in self.nutritional_roles]
+
+        if not isinstance(self.physicochemical_roles, list):
+            self.physicochemical_roles = [self.physicochemical_roles] if self.physicochemical_roles is not None else []
+        self.physicochemical_roles = [v if isinstance(v, PhysicochemicalRoleEnum) else PhysicochemicalRoleEnum(v) for v in self.physicochemical_roles]
+
+        if not isinstance(self.cellular_metabolic_roles, list):
+            self.cellular_metabolic_roles = [self.cellular_metabolic_roles] if self.cellular_metabolic_roles is not None else []
+        self.cellular_metabolic_roles = [v if isinstance(v, CellularMetabolicRoleEnum) else CellularMetabolicRoleEnum(v) for v in self.cellular_metabolic_roles]
+
+        if not isinstance(self.role_curie, list):
+            self.role_curie = [self.role_curie] if self.role_curie is not None else []
+        self.role_curie = [v if isinstance(v, URIorCURIE) else URIorCURIE(v) for v in self.role_curie]
 
         if not isinstance(self.cofactors_provided, list):
             self.cofactors_provided = [self.cofactors_provided] if self.cofactors_provided is not None else []
@@ -3705,6 +3725,157 @@ class DatasetRepositoryEnum(EnumDefinitionImpl):
         description="""Public repository hosting the dataset. Superset of CommunityMech's enum (all values preserved) plus common additions; CultureMech datasets have no repository field today and migrate with repository unset / OTHER.""",
     )
 
+class NutritionalRoleEnum(EnumDefinitionImpl):
+    """
+    What element or macronutrient an ingredient supplies to the medium. One of three orthogonal role facets (with
+    PhysicochemicalRoleEnum and CellularMetabolicRoleEnum). A single ingredient may carry multiple nutritional roles
+    (e.g. L-cysteine supplies both amino-acid and sulfur).
+    """
+    CARBON_SOURCE = PermissibleValue(
+        text="CARBON_SOURCE",
+        description="Provides organic carbon for biosynthesis and energy.")
+    NITROGEN_SOURCE = PermissibleValue(
+        text="NITROGEN_SOURCE",
+        description="Provides nitrogen for amino acids, nucleotides, and other biomass components.")
+    SULFUR_SOURCE = PermissibleValue(
+        text="SULFUR_SOURCE",
+        description="Provides sulfur (typically for cysteine, methionine, Fe-S clusters).")
+    PHOSPHATE_SOURCE = PermissibleValue(
+        text="PHOSPHATE_SOURCE",
+        description="Provides phosphate for nucleotides, phospholipids, and energy carriers.")
+    IRON_SOURCE = PermissibleValue(
+        text="IRON_SOURCE",
+        description="Provides iron (typically for cytochromes, Fe-S clusters, and other metalloproteins).")
+    TRACE_ELEMENT = PermissibleValue(
+        text="TRACE_ELEMENT",
+        description="""Provides a micronutrient required in trace amounts (e.g., zinc, cobalt, manganese, molybdenum).""")
+    VITAMIN_SOURCE = PermissibleValue(
+        text="VITAMIN_SOURCE",
+        description="Provides vitamins or vitamin precursors.",
+        meaning=CHEBI["33229"])
+    AMINO_ACID_SOURCE = PermissibleValue(
+        text="AMINO_ACID_SOURCE",
+        description="Provides one or more specific amino acids as building blocks.")
+    PROTEIN_SOURCE = PermissibleValue(
+        text="PROTEIN_SOURCE",
+        description="""Provides peptides, proteins, or complex amino-acid mixtures (e.g., yeast extract, peptone, tryptone).""")
+    COFACTOR_PROVIDER = PermissibleValue(
+        text="COFACTOR_PROVIDER",
+        description="""Supplies enzyme cofactors or prosthetic groups to the medium (the compound acts as a source; contrast with CellularMetabolicRoleEnum.COFACTOR, which is the intracellular role).""")
+    ENERGY_SOURCE = PermissibleValue(
+        text="ENERGY_SOURCE",
+        description="Primary energy substrate for chemotrophic growth.")
+    LIGHT_SOURCE = PermissibleValue(
+        text="LIGHT_SOURCE",
+        description="""Radiant-energy source for phototrophic growth. No CHEBI or METPO term yet describes a radiant-energy *supply* role (METPO:1000656 is the organism metabolic-mode `photoautotrophic`, not a supply-side role); METPO submission pending.""")
+
+    _defn = EnumDefinition(
+        name="NutritionalRoleEnum",
+        description="""What element or macronutrient an ingredient supplies to the medium. One of three orthogonal role facets (with PhysicochemicalRoleEnum and CellularMetabolicRoleEnum). A single ingredient may carry multiple nutritional roles (e.g. L-cysteine supplies both amino-acid and sulfur).""",
+    )
+
+class PhysicochemicalRoleEnum(EnumDefinitionImpl):
+    """
+    Chemical or physical function an ingredient performs in the medium, independent of what element it supplies. One
+    of three orthogonal role facets (with NutritionalRoleEnum and CellularMetabolicRoleEnum).
+    """
+    BUFFER = PermissibleValue(
+        text="BUFFER",
+        description="Maintains stable pH via a conjugate acid–base system.",
+        meaning=CHEBI["35225"])
+    SOLIDIFYING_AGENT = PermissibleValue(
+        text="SOLIDIFYING_AGENT",
+        description="Gelling agent for solid or semi-solid media (e.g., agar, gellan gum, silica gel).")
+    CHELATOR = PermissibleValue(
+        text="CHELATOR",
+        description="""Sequesters metal ions to control availability, toxicity, or precipitation (e.g., EDTA, NTA, citrate).""",
+        meaning=CHEBI["38161"])
+    SURFACTANT = PermissibleValue(
+        text="SURFACTANT",
+        description="""Reduces surface tension for emulsification, solubilization, or membrane permeabilization (e.g., Tween, Triton X-100).""",
+        meaning=CHEBI["35195"])
+    REDUCING_AGENT = PermissibleValue(
+        text="REDUCING_AGENT",
+        description="""Lowers the redox potential of the medium (e.g., sodium sulfide, cysteine, thioglycolate, dithiothreitol).""",
+        meaning=CHEBI["63247"])
+    OXIDIZING_AGENT = PermissibleValue(
+        text="OXIDIZING_AGENT",
+        description="Raises the redox potential of the medium.",
+        meaning=CHEBI["63248"])
+    PH_INDICATOR = PermissibleValue(
+        text="PH_INDICATOR",
+        description="Colorimetric acid–base indicator dye (e.g., phenol red, bromothymol blue).",
+        meaning=CHEBI["50407"])
+    REDOX_INDICATOR = PermissibleValue(
+        text="REDOX_INDICATOR",
+        description="""Colorimetric indicator of redox potential (e.g., resazurin turns pink under mildly oxidizing conditions).""")
+    SELECTIVE_AGENT = PermissibleValue(
+        text="SELECTIVE_AGENT",
+        description="""Antimicrobial or otherwise selective agent used to enrich for or against particular organisms (e.g., antibiotics, bile salts, high salt, azide).""")
+    ANTIFOAM = PermissibleValue(
+        text="ANTIFOAM",
+        description="""Suppresses foaming in aerated or vigorously mixed cultures (e.g., silicone antifoam, polypropylene glycol).""",
+        meaning=CHEBI["77973"])
+    OSMOTIC_AGENT = PermissibleValue(
+        text="OSMOTIC_AGENT",
+        description="""Contributes primarily to the osmotic strength of the medium (e.g., NaCl at high concentration, sucrose, glycerol as osmolyte). NOTE: shares `mappings: CHEBI:25728 (osmolyte)` with CellularMetabolicRoleEnum.OSMOPROTECTANT. Auto-classifiers driven by the SSSOM must NOT fan a single CHEBI:25728 annotation out to both facets — this is a medium-side role, whereas OSMOPROTECTANT is an intracellular, organism-conditional role. Assign OSMOPROTECTANT only when there is organism-context evidence.""")
+    PRECIPITATION_INHIBITOR = PermissibleValue(
+        text="PRECIPITATION_INHIBITOR",
+        description="""Prevents precipitation of otherwise poorly-soluble medium components (e.g., citrate keeping iron soluble at neutral pH).""")
+
+    _defn = EnumDefinition(
+        name="PhysicochemicalRoleEnum",
+        description="""Chemical or physical function an ingredient performs in the medium, independent of what element it supplies. One of three orthogonal role facets (with NutritionalRoleEnum and CellularMetabolicRoleEnum).""",
+    )
+
+class CellularMetabolicRoleEnum(EnumDefinitionImpl):
+    """
+    Role of the ingredient inside or on the cultured microbe(s) — the compound's metabolic fate or biochemical
+    function at the cell level. One of three orthogonal role facets (with NutritionalRoleEnum and
+    PhysicochemicalRoleEnum). Values in this facet are often organism-conditional (e.g. ELECTRON_DONOR applies only
+    for organisms that oxidize the compound for energy; methanol is an electron donor for methylotrophs but only a
+    carbon source for others).
+    """
+    SUBSTRATE = PermissibleValue(
+        text="SUBSTRATE",
+        description="Consumed by the organism for biosynthesis, energy, or both (general-purpose substrate role).")
+    ELECTRON_DONOR = PermissibleValue(
+        text="ELECTRON_DONOR",
+        description="""Electron donor for chemolithotrophic or heterotrophic energy metabolism (organism-conditional).""",
+        meaning=CHEBI["15022"])
+    ELECTRON_ACCEPTOR = PermissibleValue(
+        text="ELECTRON_ACCEPTOR",
+        description="""Terminal electron acceptor for respiration (e.g., nitrate, oxygen, sulfate; organism-conditional).""",
+        meaning=CHEBI["17654"])
+    COFACTOR = PermissibleValue(
+        text="COFACTOR",
+        description="""Acts as an intracellular enzyme cofactor (contrast with NutritionalRoleEnum.COFACTOR_PROVIDER, the supply-side role).""",
+        meaning=CHEBI["23357"])
+    PROSTHETIC_GROUP_PRECURSOR = PermissibleValue(
+        text="PROSTHETIC_GROUP_PRECURSOR",
+        description="""Precursor for a covalently-bound cofactor / prosthetic group (e.g., δ-aminolevulinate for heme). Note the mapping below points at the parent role `prosthetic group` — CHEBI has no dedicated `prosthetic group precursor` role class, so the mapping is a hierarchy pointer, not identity.""")
+    MEMBRANE_COMPONENT = PermissibleValue(
+        text="MEMBRANE_COMPONENT",
+        description="Incorporated into cell membranes (e.g., fatty acids, sterols, isoprenoid lipids).")
+    OSMOPROTECTANT = PermissibleValue(
+        text="OSMOPROTECTANT",
+        description="""Accumulated intracellularly to balance external osmotic stress (e.g., glycine betaine, ectoine, trehalose). Organism-conditional — assign only with organism-context evidence (e.g., \"glycine betaine is imported and accumulated as an osmoprotectant by <organism>\"). NOTE: shares `mappings: CHEBI:25728 (osmolyte)` with PhysicochemicalRoleEnum.OSMOTIC_AGENT. See that value's description for cross-facet guidance.""")
+    INDUCER = PermissibleValue(
+        text="INDUCER",
+        description="Triggers expression of specific genes or pathways when present (e.g., IPTG, arabinose).")
+    INHIBITOR = PermissibleValue(
+        text="INHIBITOR",
+        description="Suppresses growth or a specific pathway (e.g., antibiotics targeting cellular processes).",
+        meaning=CHEBI["35222"])
+    QUENCHER = PermissibleValue(
+        text="QUENCHER",
+        description="Absorbs or dissipates a signal (e.g., quenches fluorescence, radicals, or light).")
+
+    _defn = EnumDefinition(
+        name="CellularMetabolicRoleEnum",
+        description="""Role of the ingredient inside or on the cultured microbe(s) — the compound's metabolic fate or biochemical function at the cell level. One of three orthogonal role facets (with NutritionalRoleEnum and PhysicochemicalRoleEnum). Values in this facet are often organism-conditional (e.g. ELECTRON_DONOR applies only for organisms that oxidize the compound for energy; methanol is an electron donor for methylotrophs but only a carbon source for others).""",
+    )
+
 # Slots
 class slots:
     pass
@@ -4035,6 +4206,18 @@ slots.ingredientDescriptor__notes = Slot(uri=CULTUREMECH.notes, name="ingredient
 
 slots.ingredientDescriptor__role = Slot(uri=CULTUREMECH.role, name="ingredientDescriptor__role", curie=CULTUREMECH.curie('role'),
                    model_uri=CULTUREMECH.ingredientDescriptor__role, domain=None, range=Optional[Union[Union[str, "IngredientRoleEnum"], list[Union[str, "IngredientRoleEnum"]]]])
+
+slots.ingredientDescriptor__nutritional_roles = Slot(uri=CULTUREMECH.nutritional_roles, name="ingredientDescriptor__nutritional_roles", curie=CULTUREMECH.curie('nutritional_roles'),
+                   model_uri=CULTUREMECH.ingredientDescriptor__nutritional_roles, domain=None, range=Optional[Union[Union[str, "NutritionalRoleEnum"], list[Union[str, "NutritionalRoleEnum"]]]])
+
+slots.ingredientDescriptor__physicochemical_roles = Slot(uri=CULTUREMECH.physicochemical_roles, name="ingredientDescriptor__physicochemical_roles", curie=CULTUREMECH.curie('physicochemical_roles'),
+                   model_uri=CULTUREMECH.ingredientDescriptor__physicochemical_roles, domain=None, range=Optional[Union[Union[str, "PhysicochemicalRoleEnum"], list[Union[str, "PhysicochemicalRoleEnum"]]]])
+
+slots.ingredientDescriptor__cellular_metabolic_roles = Slot(uri=CULTUREMECH.cellular_metabolic_roles, name="ingredientDescriptor__cellular_metabolic_roles", curie=CULTUREMECH.curie('cellular_metabolic_roles'),
+                   model_uri=CULTUREMECH.ingredientDescriptor__cellular_metabolic_roles, domain=None, range=Optional[Union[Union[str, "CellularMetabolicRoleEnum"], list[Union[str, "CellularMetabolicRoleEnum"]]]])
+
+slots.ingredientDescriptor__role_curie = Slot(uri=CULTUREMECH.role_curie, name="ingredientDescriptor__role_curie", curie=CULTUREMECH.curie('role_curie'),
+                   model_uri=CULTUREMECH.ingredientDescriptor__role_curie, domain=None, range=Optional[Union[Union[str, URIorCURIE], list[Union[str, URIorCURIE]]]])
 
 slots.ingredientDescriptor__cofactors_provided = Slot(uri=CULTUREMECH.cofactors_provided, name="ingredientDescriptor__cofactors_provided", curie=CULTUREMECH.curie('cofactors_provided'),
                    model_uri=CULTUREMECH.ingredientDescriptor__cofactors_provided, domain=None, range=Optional[Union[Union[dict, CofactorDescriptor], list[Union[dict, CofactorDescriptor]]]])
