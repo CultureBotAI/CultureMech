@@ -1,18 +1,31 @@
-"""Tests for the mechanistic role-backfill script (Step 7).
+"""Tests for the mechanistic role-backfill + missing-roles audit scripts (Step 7).
 
-Two test layers:
+Three test layers:
 
-1. **Unit** — `ChebiRoleResolver.facets_for` against a mocked oaklib adapter.
-   Fast, no `sqlite:obo:chebi` install required. Uses the actual gold-example
-   CHEBI ids + `has_role` axioms observed in live CHEBI (2026-07-20).
+1. **Unit** — `ChebiRoleResolver.facets_for` against a mocked oaklib adapter
+   plus small helpers on both scripts. Fast, no `sqlite:obo:chebi` install
+   required. The mocked adapter's has_role edges are direct output from live
+   CHEBI recorded 2026-07-20 (see `_LIVE_CHEBI_HAS_ROLE` — includes the
+   compound id and every RO:0000087 target verbatim). If CHEBI drifts, regen
+   by rerunning the probe:
+
+     uv run python -c "
+     from oaklib import get_adapter
+     ad = get_adapter('sqlite:obo:chebi')
+     for cid in ['CHEBI:17234', ...]:
+         print(cid, [t[2] for t in ad.relationships(subjects=[cid]) if t[1] == 'RO:0000087'])
+     "
 
 2. **Round-trip fixtures** — the 10 gold-example ingredients from
    `scripts/codex_prompts/review-ingredient-roles-gold-examples.md`. Each
-   fixture asserts what the mechanistic lane SHOULD propose and — equally
-   important — what it SHOULD NOT propose. The mechanistic lane is
-   deliberately narrow: many gold assignments (nutritional / conditional)
-   require the Step 7b literature lane and are documented here as
-   `mechanistic_expected=[]` with a comment explaining why.
+   fixture asserts exactly what the mechanistic lane produces (which is
+   often much narrower than the gold-example expectation, since many gold
+   assignments — nutritional CARBON_SOURCE, conditional ELECTRON_DONOR —
+   have no CHEBI role-class equivalent and need the Step 7b literature
+   lane). Per-fixture comments explain each empty result.
+
+3. **Audit-side smoke tests** — `load_sssom_chebi_to_mim` +
+   `pick_canonical_mim` correctness (finding from PR #95 review).
 """
 
 from __future__ import annotations
@@ -55,6 +68,10 @@ class FakeAdapter:
 
 
 # --- Fixture: labels + has_role edges observed in live sqlite:obo:chebi ---
+#
+# Live probe run 2026-07-20 in the worktree. Recorded exactly what
+# `adapter.relationships(subjects=[cid])` returns filtered to `RO:0000087`.
+# Regen by running the script in the module docstring below.
 
 _LIVE_CHEBI_LABELS = {
     # Compounds.
@@ -73,47 +90,55 @@ _LIVE_CHEBI_LABELS = {
     "CHEBI:26710": "sodium chloride",
     # Role classes referenced by the gold examples' has_role targets or by
     # the mim_roles.yaml facet-enum meanings.
-    "CHEBI:23357": "cofactor",
-    "CHEBI:35225": "buffer",
-    "CHEBI:38161": "chelator",
-    "CHEBI:63247": "reducing agent",
-    "CHEBI:63248": "oxidising agent",
-    "CHEBI:50407": "acid-base indicator",
-    "CHEBI:77973": "antifoaming agent",
-    "CHEBI:35222": "inhibitor",
-    "CHEBI:15022": "electron donor",
-    "CHEBI:17654": "electron acceptor",
-    "CHEBI:35195": "surfactant",
-    "CHEBI:33229": "vitamin",
-    "CHEBI:78016": "food gelling agent",
-    "CHEBI:84735": "algal metabolite",
-    "CHEBI:64577": "flour treatment agent",
-    "CHEBI:77703": "EC 4.3.1.3 (histidine ammonia-lyase) inhibitor",
-    "CHEBI:77746": "human metabolite",
-    "CHEBI:78675": "fundamental metabolite",
-    # Junk-role targets that must NOT trigger a facet match.
-    "CHEBI:64229": "emetic",
-    "CHEBI:35657": "flame retardant",
-    "CHEBI:33287": "fertilizer",
-    "CHEBI:35443": "astringent",
-    "CHEBI:75835": "NMR chemical shift reference compound",
+    "CHEBI:23357":  "cofactor",
+    "CHEBI:35225":  "buffer",
+    "CHEBI:38161":  "chelator",
+    "CHEBI:63247":  "reducing agent",
+    "CHEBI:63248":  "oxidising agent",
+    "CHEBI:50407":  "acid-base indicator",
+    "CHEBI:77973":  "antifoaming agent",
+    "CHEBI:35222":  "inhibitor",
+    "CHEBI:15022":  "electron donor",
+    "CHEBI:17654":  "electron acceptor",
+    "CHEBI:35195":  "surfactant",
+    "CHEBI:33229":  "vitamin",
+    "CHEBI:78016":  "food gelling agent",
+    "CHEBI:84735":  "algal metabolite",
+    "CHEBI:64577":  "flour treatment agent",
+    "CHEBI:77703":  "EC 4.3.1.3 (histidine ammonia-lyase) inhibitor",
+    "CHEBI:77746":  "human metabolite",
+    "CHEBI:78675":  "fundamental metabolite",
+    "CHEBI:173084": "ferroptosis inhibitor",
+    "CHEBI:131604": "Mycoplasma genitalium metabolite",
+    "CHEBI:33292":  "fuel",
+    "CHEBI:48360":  "amphiprotic solvent",
+    "CHEBI:75771":  "mouse metabolite",
+    "CHEBI:76971":  "Escherichia coli metabolite",
+    "CHEBI:78298":  "environmental contaminant",
+    # Junk-role targets on NaCl — must NOT trigger a facet match.
+    "CHEBI:149552": "emetic",
+    "CHEBI:79314":  "flame retardant",
+    "CHEBI:228364": "NMR chemical shift reference compound",
 }
 
+# Direct output of `adapter.relationships(subjects=[cid])` filtered to
+# `RO:0000087`, taken from live sqlite:obo:chebi 2026-07-20. If CHEBI drifts,
+# update this dict verbatim from the probe script in tests/README (below).
 _LIVE_CHEBI_HAS_ROLE = {
-    # From: `runoak -i sqlite:obo:chebi relationships -p RO:0000087 ...` on 2026-07-20.
-    "CHEBI:17234": [],  # glucose has no direct has_role in CHEBI head-of-2026
-    "CHEBI:2509":  ["CHEBI:78016", "CHEBI:84735"],  # agar
-    "CHEBI:8806":  [],  # resazurin
-    "CHEBI:64755": [],  # EDTA(2-)
-    "CHEBI:17561": ["CHEBI:64577", "CHEBI:77703", "CHEBI:77746"],  # L-cysteine
-    "CHEBI:31206": [],  # NH4Cl
-    "CHEBI:131527": [],  # K2HPO4
-    "CHEBI:9532":  ["CHEBI:23357", "CHEBI:78675"],  # thiamine PP
-    "CHEBI:76208": [],  # Na2S
-    "CHEBI:17790": [],  # methanol
-    "CHEBI:9754":  ["CHEBI:35225"],  # tris → buffer
-    "CHEBI:78673": ["CHEBI:78673", "CHEBI:63248"],  # cumene HP → oxidising agent (+ self)
-    "CHEBI:26710": ["CHEBI:64229", "CHEBI:75835", "CHEBI:35657"],  # NaCl → junk roles
+    "CHEBI:17234": ["CHEBI:78675"],                                    # glucose → fundamental metabolite
+    "CHEBI:2509":  ["CHEBI:78016", "CHEBI:84735"],                     # agar → food gelling agent, algal metabolite
+    "CHEBI:8806":  [],                                                 # Resazurin — no has_role
+    "CHEBI:64755": [],                                                 # EDTA(2-) — no has_role
+    "CHEBI:17561": ["CHEBI:64577", "CHEBI:77703", "CHEBI:77746"],      # L-cysteine → flour treatment / EC-inhibitor / human metabolite
+    "CHEBI:31206": ["CHEBI:173084"],                                   # NH4Cl → ferroptosis inhibitor
+    "CHEBI:131527": ["CHEBI:35225"],                                   # K2HPO4 → buffer
+    "CHEBI:9532":  ["CHEBI:23357", "CHEBI:78675"],                     # thiamine PP → cofactor, fundamental metabolite
+    "CHEBI:76208": [],                                                 # Na2S — no has_role
+    "CHEBI:17790": ["CHEBI:131604", "CHEBI:33292", "CHEBI:48360",      # methanol → Mgen metabolite / fuel / amphiprotic solvent /
+                    "CHEBI:75771", "CHEBI:76971", "CHEBI:77746"],       #            mouse metabolite / E.coli metabolite / human metabolite
+    "CHEBI:9754":  ["CHEBI:35225"],                                    # tris → buffer
+    "CHEBI:78673": ["CHEBI:131604", "CHEBI:63248", "CHEBI:78298"],     # cumene HP → Mgen metabolite / oxidising agent / environmental contaminant
+    "CHEBI:26710": ["CHEBI:149552", "CHEBI:228364", "CHEBI:79314"],    # NaCl → emetic / NMR ref / flame retardant
 }
 
 
@@ -201,13 +226,25 @@ _GOLD_EXAMPLES = [
         "CHEBI:31206",  # NH4Cl — gold: NUT[NITROGEN_SOURCE], CM[SUBSTRATE]
         [],
         id="nh4cl-mechanistic-empty",
+        # Live CHEBI:31206 has has_role → CHEBI:173084 (ferroptosis inhibitor),
+        # which is a specific-mechanism subclass of `inhibitor`. Under
+        # direct-hit matching this correctly produces no facet assignment —
+        # the mechanistic lane must not spuriously call NH4Cl an INHIBITOR.
     ),
     pytest.param(
         "CHEBI:131527",  # K2HPO4 — gold: NUT[PHOSPHATE_SOURCE], PC[BUFFER (conditional)], CM[SUBSTRATE]
-        [],
-        id="k2hpo4-mechanistic-empty",
-        # Recipe-conditional BUFFER (paired with KH2PO4) — belongs on
-        # curator/literature lane, not mechanistic.
+        [("physicochemical_roles", "BUFFER")],
+        id="k2hpo4-becomes-buffer",
+        # Live CHEBI:131527 has direct has_role → CHEBI:35225 (buffer).
+        # The gold example flagged BUFFER as "recipe-conditional" (paired with
+        # KH2PO4 for a phosphate buffer system) but CHEBI just says it IS a
+        # buffer regardless of the counterion — and dipotassium hydrogen
+        # phosphate at ~50 mM alone does hold pH ~7 without KH2PO4. The
+        # mechanistic proposal is a legitimate curator-review item; when
+        # applied to the full corpus this will generate ~3,769 K2HPO4 → BUFFER
+        # proposals (the ingredient appears in that many recipes). PHOSPHATE_SOURCE
+        # (nutritional) still requires the Step 7b literature lane — CHEBI has
+        # no "phosphate source" role class.
     ),
     pytest.param(
         "CHEBI:9532",  # Thiamine PP — gold: NUT[VITAMIN_SOURCE, COFACTOR_PROVIDER], CM[COFACTOR]
@@ -283,6 +320,31 @@ def test_l_cysteine_does_not_match_inhibitor(resolver):
     assert ("cellular_metabolic_roles", "INHIBITOR") not in slot_values
 
 
+def test_nh4cl_does_not_match_inhibitor_from_ferroptosis(resolver):
+    """Regression: NH4Cl's has_role → ferroptosis-inhibitor must not map to INHIBITOR.
+
+    CHEBI:173084 (ferroptosis inhibitor) is a mechanism-specific subclass
+    of inhibitor. Under direct-hit matching we correctly reject — the
+    mechanistic lane must not silently claim NH4Cl is a general growth
+    inhibitor in the culture-media sense.
+    """
+    hits = resolver.facets_for("CHEBI:31206")
+    assert hits == []
+
+
+def test_k2hpo4_becomes_buffer(resolver):
+    """Positive control — K2HPO4 has direct has_role → buffer.
+
+    Contradicts the gold-example doc's "recipe-conditional BUFFER" caveat:
+    CHEBI encodes K2HPO4 as an unconditional buffer. Whether the assignment
+    is "right" for every culture-media context is a curator call; the
+    mechanistic lane surfaces the CHEBI fact.
+    """
+    hits = resolver.facets_for("CHEBI:131527")
+    slot_values = {(s, v) for s, v, _ in hits}
+    assert ("physicochemical_roles", "BUFFER") in slot_values
+
+
 def test_evidence_records_role_curie_and_label(resolver):
     """Evidence entries must carry both the CHEBI role CURIE and its label."""
     hits = resolver.facets_for("CHEBI:9532")  # TPP → cofactor
@@ -347,3 +409,100 @@ def test_build_proposal_returns_none_on_empty_hits(tmp_path):
         path=tmp_path / "r.yaml", idx=0, ing={}, chebi_id="CHEBI:X",
         facet_hits=[], role_labels={}, yaml_root=tmp_path,
     ) is None
+
+
+def test_build_proposal_carries_existing_slots_when_populated(tmp_path):
+    """`--include-populated` needs to see existing state alongside proposals."""
+    ing = {
+        "preferred_term": "K2HPO4",
+        "term": {"id": "CHEBI:131527"},
+        # A curator already flagged nutritional_roles; we still propose BUFFER.
+        "nutritional_roles": ["PHOSPHATE_SOURCE"],
+    }
+    proposal = _backfill.build_proposal(
+        path=tmp_path / "r.yaml", idx=1, ing=ing, chebi_id="CHEBI:131527",
+        facet_hits=[("physicochemical_roles", "BUFFER", "CHEBI:35225")],
+        role_labels={"CHEBI:35225": "buffer"},
+        yaml_root=tmp_path,
+    )
+    assert proposal["proposed_slots"] == {"physicochemical_roles": ["BUFFER"]}
+    assert proposal["existing_slots"] == {"nutritional_roles": ["PHOSPHATE_SOURCE"]}
+
+
+def test_build_proposal_omits_existing_slots_when_greenfield(tmp_path):
+    """A greenfield ingredient (no facet slots populated) must not carry `existing_slots`."""
+    ing = {"preferred_term": "Tris", "term": {"id": "CHEBI:9754"}}
+    proposal = _backfill.build_proposal(
+        path=tmp_path / "r.yaml", idx=0, ing=ing, chebi_id="CHEBI:9754",
+        facet_hits=[("physicochemical_roles", "BUFFER", "CHEBI:35225")],
+        role_labels={"CHEBI:35225": "buffer"},
+        yaml_root=tmp_path,
+    )
+    assert "existing_slots" not in proposal
+
+
+# ---------------- Audit-side helpers ----------------
+
+# Load audit_missing_roles.py the same way as the backfill script.
+_AUDIT_PATH = Path(__file__).parent.parent / "scripts" / "audit_missing_roles.py"
+_AUDIT_SPEC = importlib.util.spec_from_file_location("_audit_missing_roles", _AUDIT_PATH)
+_audit = importlib.util.module_from_spec(_AUDIT_SPEC)
+sys.modules["_audit_missing_roles"] = _audit
+_AUDIT_SPEC.loader.exec_module(_audit)  # type: ignore[union-attr]
+
+
+def test_audit_pick_canonical_mim_prefers_exact_over_close():
+    candidates = [
+        ("MIM:foo_close", "skos:closeMatch", 0.99),
+        ("MIM:foo_exact", "skos:exactMatch", 0.50),
+    ]
+    assert _audit.pick_canonical_mim(candidates) == ("MIM:foo_exact", "skos:exactMatch")
+
+
+def test_audit_pick_canonical_mim_uses_confidence_as_tiebreak():
+    candidates = [
+        ("MIM:foo_a", "skos:exactMatch", 0.50),
+        ("MIM:foo_b", "skos:exactMatch", 0.99),
+    ]
+    assert _audit.pick_canonical_mim(candidates) == ("MIM:foo_b", "skos:exactMatch")
+
+
+def test_audit_pick_canonical_mim_handles_empty_list():
+    assert _audit.pick_canonical_mim([]) is None
+
+
+def test_audit_load_sssom_skips_comments_and_bad_rows(tmp_path):
+    """SSSOM parser must skip `#` metadata lines and reject non-MIM/non-CHEBI rows."""
+    tsv = tmp_path / "mini.sssom.tsv"
+    tsv.write_text(
+        "# curie_map:\n"
+        "#   MIM: https://example/\n"
+        "subject_id\tsubject_label\tpredicate_id\tobject_id\tobject_label\t"
+        "object_source\tmapping_justification\tsource\tmapping_date\tconfidence\t"
+        "comment\tother\tvalidation_method\n"
+        # Valid rows.
+        "MIM:Glucose\tGlucose\tskos:exactMatch\tCHEBI:17234\tglucose\t\t\t\t\t0.95\t\t\t\n"
+        "MIM:K2hpo4\tK2HPO4\tskos:exactMatch\tCHEBI:131527\tK2HPO4\t\t\t\t\t\t\t\t\n"
+        "MIM:Salt\tSalt\tskos:closeMatch\tCHEBI:26710\tNaCl\t\t\t\t\t0.7\t\t\t\n"
+        # Invalid rows — must be filtered.
+        "OTHER:Foo\tFoo\tskos:exactMatch\tCHEBI:99999\tfoo\t\t\t\t\t\t\t\t\n"
+        "MIM:Bar\tBar\tskos:exactMatch\tGO:0009058\tbio\t\t\t\t\t\t\t\t\n"
+    )
+    index = _audit.load_sssom_chebi_to_mim(tsv)
+    assert set(index.keys()) == {"CHEBI:17234", "CHEBI:131527", "CHEBI:26710"}
+    # Confidence defaulted to 0.0 for the missing-cell row.
+    assert index["CHEBI:131527"] == [("MIM:K2hpo4", "skos:exactMatch", 0.0)]
+    # Missing-file raises with a clear message.
+    with pytest.raises(FileNotFoundError):
+        _audit.load_sssom_chebi_to_mim(tmp_path / "nope.tsv")
+
+
+def test_audit_ingredient_chebi_id_matches_backfill():
+    """Both scripts must agree on how to extract a CHEBI id from an ingredient."""
+    for shape in (
+        {"term": {"id": "CHEBI:17234"}},
+        {"term": {"id": "mediadive.compound:5"}, "chebi_term": {"id": "CHEBI:17234"}},
+        {"mediaingredientmech_chebi_term": {"id": "CHEBI:17234"}},
+    ):
+        assert _audit.ingredient_chebi_id(shape) == _backfill.ingredient_chebi_id(shape) == "CHEBI:17234"
+    assert _audit.ingredient_chebi_id({"term": {"id": "GO:0009058"}}) is None

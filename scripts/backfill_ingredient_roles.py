@@ -70,9 +70,10 @@ CHEBI_ID_PATHS = (
     ("mediaingredientmech_chebi_term", "id"),
 )
 
-# CHEBI has_role predicate. Uses the Relation Ontology (RO) namespace; a
-# handful of tools also expose it under a chebi-local IRI so we accept both.
-HAS_ROLE_PREDICATES = frozenset({"RO:0000087", "BFO:0000023"})
+# CHEBI has_role predicate — the Relation Ontology `RO:0000087` object
+# property. Live sqlite:obo:chebi emits triples under this predicate id
+# only (verified 2026-07-20).
+HAS_ROLE_PREDICATES = frozenset({"RO:0000087"})
 
 # The root of CHEBI's role subtree. Walking is-a ancestors of a has_role
 # target and stopping when we hit this class (or its subclass we've mapped)
@@ -141,7 +142,7 @@ class ChebiRoleResolver:
         # Cache CHEBI id → label for evidence strings.
         self._label_cache: dict[str, str] = {}
 
-    def _label(self, curie: str) -> str:
+    def label(self, curie: str) -> str:
         if curie in self._label_cache:
             return self._label_cache[curie]
         try:
@@ -243,7 +244,12 @@ def build_proposal(
         file_display = path.relative_to(yaml_root.parent).as_posix()
     except ValueError:
         file_display = path.as_posix()
-    return {
+    existing_slots = {
+        slot: list(ing.get(slot) or [])
+        for slot in FACET_SLOTS
+        if ing.get(slot)
+    }
+    proposal: dict = {
         "file": file_display,
         "ingredient_index": idx,
         "ingredient_name": (ing.get("preferred_term") or "").strip() or None,
@@ -251,6 +257,12 @@ def build_proposal(
         "proposed_slots": dict(proposed_slots),
         "evidence": evidence,
     }
+    if existing_slots:
+        # Under --include-populated the caller wants to see proposals for
+        # already-populated ingredients; expose the existing state so an
+        # applier can compute per-facet adds without re-loading the YAML.
+        proposal["existing_slots"] = existing_slots
+    return proposal
 
 
 def main() -> int:
@@ -354,7 +366,7 @@ def main() -> int:
         # Preload labels for the evidence-role CURIEs.
         role_labels: dict[str, str] = {}
         for _slot, _value, role_curie in facet_hits:
-            role_labels[role_curie] = resolver._label(role_curie)
+            role_labels[role_curie] = resolver.label(role_curie)
         proposal = build_proposal(
             path=path,
             idx=idx,
