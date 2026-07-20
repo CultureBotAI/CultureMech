@@ -23,6 +23,23 @@
             "title": "CategoryEnum",
             "type": "string"
         },
+        "CellularMetabolicRoleEnum": {
+            "description": "Role of the ingredient inside or on the cultured microbe(s) \u2014 the compound's metabolic fate or biochemical function at the cell level. One of three orthogonal role facets (with NutritionalRoleEnum and PhysicochemicalRoleEnum). Values in this facet are often organism-conditional (e.g. ELECTRON_DONOR applies only for organisms that oxidize the compound for energy; methanol is an electron donor for methylotrophs but only a carbon source for others).",
+            "enum": [
+                "SUBSTRATE",
+                "ELECTRON_DONOR",
+                "ELECTRON_ACCEPTOR",
+                "COFACTOR",
+                "PROSTHETIC_GROUP_PRECURSOR",
+                "MEMBRANE_COMPONENT",
+                "OSMOPROTECTANT",
+                "INDUCER",
+                "INHIBITOR",
+                "QUENCHER"
+            ],
+            "title": "CellularMetabolicRoleEnum",
+            "type": "string"
+        },
         "ChebiTerm": {
             "additionalProperties": false,
             "description": "A strictly-CHEBI term reference. Use for the `chebi_term` slot where the contract is \"this is the CHEBI grounding specifically\" \u2014 distinct from the polymorphic `ChemicalEntityTerm` used by `term` slots that may carry upstream non-CHEBI IDs.",
@@ -1022,6 +1039,16 @@
             "additionalProperties": false,
             "description": "Chemical or biological ingredient in a medium",
             "properties": {
+                "cellular_metabolic_roles": {
+                    "description": "Role of this ingredient inside/on the cultured microbe (facet 3 of 3) \u2014 SUBSTRATE, ELECTRON_DONOR, COFACTOR, INHIBITOR, etc. Often organism-conditional (e.g., methanol \u2192 ELECTRON_DONOR only for methylotrophs). Vocabulary imported from MIM (`mim_roles.CellularMetabolicRoleEnum`).",
+                    "items": {
+                        "$ref": "#/$defs/CellularMetabolicRoleEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "chebi_term": {
                     "anyOf": [
                         {
@@ -1143,6 +1170,16 @@
                         "null"
                     ]
                 },
+                "nutritional_roles": {
+                    "description": "What element or macronutrient this ingredient supplies to the medium (facet 1 of 3). Multiple values allowed \u2014 L-cysteine \u2192 [AMINO_ACID_SOURCE, SULFUR_SOURCE]. Vocabulary imported from MIM (`mim_roles.NutritionalRoleEnum`); MIM owns the ingredient identity layer + evidence-bearing assignment surface, this slot carries CultureMech recipe-scoped assertions or overrides.",
+                    "items": {
+                        "$ref": "#/$defs/NutritionalRoleEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "parent_ingredient": {
                     "anyOf": [
                         {
@@ -1154,14 +1191,34 @@
                     ],
                     "description": "Reference to parent chemical entity from MediaIngredientMech"
                 },
+                "physicochemical_roles": {
+                    "description": "Chemical or physical function this ingredient performs in the medium (facet 2 of 3), independent of what element it supplies \u2014 BUFFER, CHELATOR, REDUCING_AGENT, PH_INDICATOR, etc. Vocabulary imported from MIM (`mim_roles.PhysicochemicalRoleEnum`).",
+                    "items": {
+                        "$ref": "#/$defs/PhysicochemicalRoleEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "preferred_term": {
                     "description": "Human-readable ingredient name (e.g., \"Glucose\", \"Yeast Extract\")",
                     "type": "string"
                 },
                 "role": {
-                    "description": "Functional role(s) in the medium",
+                    "description": "Functional role(s) in the medium (legacy flat vocabulary). Deprecated in favor of the three faceted slots below (`nutritional_roles`, `physicochemical_roles`, `cellular_metabolic_roles`). Retained for backward-compatibility during the migration; a follow-up PR will retire this slot and rewrite any records that use it.",
                     "items": {
                         "$ref": "#/$defs/IngredientRoleEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "role_curie": {
+                    "description": "Escape-hatch CURIE(s) for out-of-vocabulary role terms not covered by the three facet enums. Should resolve within a recognized role namespace (CHEBI role subtree under CHEBI:50906, METPO, ENVO, GO, PATO, NCIT). Use sparingly \u2014 prefer a facet enum value where one fits.",
+                    "items": {
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -2162,6 +2219,25 @@
             "title": "NutrientRoleEnum",
             "type": "string"
         },
+        "NutritionalRoleEnum": {
+            "description": "What element or macronutrient an ingredient supplies to the medium. One of three orthogonal role facets (with PhysicochemicalRoleEnum and CellularMetabolicRoleEnum). A single ingredient may carry multiple nutritional roles (e.g. L-cysteine supplies both amino-acid and sulfur).",
+            "enum": [
+                "CARBON_SOURCE",
+                "NITROGEN_SOURCE",
+                "SULFUR_SOURCE",
+                "PHOSPHATE_SOURCE",
+                "IRON_SOURCE",
+                "TRACE_ELEMENT",
+                "VITAMIN_SOURCE",
+                "AMINO_ACID_SOURCE",
+                "PROTEIN_SOURCE",
+                "COFACTOR_PROVIDER",
+                "ENERGY_SOURCE",
+                "LIGHT_SOURCE"
+            ],
+            "title": "NutritionalRoleEnum",
+            "type": "string"
+        },
         "OrganismCultureTypeEnum": {
             "description": "Whether the medium targets a pure isolate or a mixed microbial community",
             "enum": [
@@ -2464,6 +2540,25 @@
                 "BIPHASIC"
             ],
             "title": "PhysicalStateEnum",
+            "type": "string"
+        },
+        "PhysicochemicalRoleEnum": {
+            "description": "Chemical or physical function an ingredient performs in the medium, independent of what element it supplies. One of three orthogonal role facets (with NutritionalRoleEnum and CellularMetabolicRoleEnum).",
+            "enum": [
+                "BUFFER",
+                "SOLIDIFYING_AGENT",
+                "CHELATOR",
+                "SURFACTANT",
+                "REDUCING_AGENT",
+                "OXIDIZING_AGENT",
+                "PH_INDICATOR",
+                "REDOX_INDICATOR",
+                "SELECTIVE_AGENT",
+                "ANTIFOAM",
+                "OSMOTIC_AGENT",
+                "PRECIPITATION_INHIBITOR"
+            ],
+            "title": "PhysicochemicalRoleEnum",
             "type": "string"
         },
         "PreparationActionEnum": {

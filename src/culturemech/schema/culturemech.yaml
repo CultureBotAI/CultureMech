@@ -65,6 +65,11 @@ imports:
   # (+ DatasetTypeEnum/DatasetRepositoryEnum). Replaces the former local Dataset
   # class + DatasetTypeEnum. Vendored + sha-pinned across the Mechs — claw#7.
   - mech_shared
+  # MIM-authored ingredient role facet enums (NutritionalRoleEnum /
+  # PhysicochemicalRoleEnum / CellularMetabolicRoleEnum). Vendored + sha-pinned;
+  # source of truth lives in MediaIngredientMech#129 + #134. Referenced by the
+  # three faceted role slots on IngredientDescriptor.
+  - mim_roles
 
 # ================================================================
 # ROOT CLASS
@@ -822,10 +827,55 @@ classes:
         range: string
 
       role:
-        description: Functional role(s) in the medium
+        description: >-
+          Functional role(s) in the medium (legacy flat vocabulary).
+          Deprecated in favor of the three faceted slots below
+          (`nutritional_roles`, `physicochemical_roles`,
+          `cellular_metabolic_roles`). Retained for backward-compatibility
+          during the migration; a follow-up PR will retire this slot and
+          rewrite any records that use it.
         range: IngredientRoleEnum
         multivalued: true
-        recommended: true
+
+      nutritional_roles:
+        description: >-
+          What element or macronutrient this ingredient supplies to the
+          medium (facet 1 of 3). Multiple values allowed — L-cysteine
+          → [AMINO_ACID_SOURCE, SULFUR_SOURCE]. Vocabulary imported
+          from MIM (`mim_roles.NutritionalRoleEnum`); MIM owns the ingredient
+          identity layer + evidence-bearing assignment surface, this slot
+          carries CultureMech recipe-scoped assertions or overrides.
+        range: NutritionalRoleEnum
+        multivalued: true
+
+      physicochemical_roles:
+        description: >-
+          Chemical or physical function this ingredient performs in the
+          medium (facet 2 of 3), independent of what element it supplies —
+          BUFFER, CHELATOR, REDUCING_AGENT, PH_INDICATOR, etc. Vocabulary
+          imported from MIM (`mim_roles.PhysicochemicalRoleEnum`).
+        range: PhysicochemicalRoleEnum
+        multivalued: true
+
+      cellular_metabolic_roles:
+        description: >-
+          Role of this ingredient inside/on the cultured microbe (facet 3
+          of 3) — SUBSTRATE, ELECTRON_DONOR, COFACTOR, INHIBITOR, etc.
+          Often organism-conditional (e.g., methanol → ELECTRON_DONOR only
+          for methylotrophs). Vocabulary imported from MIM
+          (`mim_roles.CellularMetabolicRoleEnum`).
+        range: CellularMetabolicRoleEnum
+        multivalued: true
+
+      role_curie:
+        description: >-
+          Escape-hatch CURIE(s) for out-of-vocabulary role terms not covered
+          by the three facet enums. Should resolve within a recognized role
+          namespace (CHEBI role subtree under CHEBI:50906, METPO, ENVO, GO,
+          PATO, NCIT). Use sparingly — prefer a facet enum value where one
+          fits.
+        range: uriorcurie
+        multivalued: true
 
       cofactors_provided:
         description: Cofactors supplied by this ingredient
