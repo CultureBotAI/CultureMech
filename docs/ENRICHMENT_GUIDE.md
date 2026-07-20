@@ -45,27 +45,29 @@ ingredients:
     term:
       id: CHEBI:17234
       label: glucose
-    # NEW: Functional roles (multivalued)
-    role:
-      - CARBON_SOURCE
-      - ENERGY_SOURCE
+    # NEW: role facets — three orthogonal slots (all multivalued)
+    nutritional_roles: [CARBON_SOURCE, ENERGY_SOURCE]
+    cellular_metabolic_roles: [SUBSTRATE]
 ```
 
-**Available roles:**
-- `CARBON_SOURCE` - Primary carbon source
-- `NITROGEN_SOURCE` - Nitrogen source
-- `MINERAL` - Major mineral nutrient
-- `TRACE_ELEMENT` - Micronutrient
-- `BUFFER` - pH buffering agent
-- `VITAMIN_SOURCE` - Provides vitamins
-- `SALT` - Osmotic balance/ionic strength
-- `PROTEIN_SOURCE` - Complex protein source
-- `AMINO_ACID_SOURCE` - Amino acids
-- `SOLIDIFYING_AGENT` - Gelling agent (agar)
-- `ENERGY_SOURCE` - Energy source
-- `ELECTRON_ACCEPTOR` - Terminal electron acceptor
-- `ELECTRON_DONOR` - Electron donor
-- `COFACTOR_PROVIDER` - Supplies cofactors
+**Three orthogonal role facets** (imported from MediaIngredientMech via `mim_roles.yaml`):
+
+`nutritional_roles` (`NutritionalRoleEnum`, 12 values) — what element / macronutrient the ingredient supplies:
+- `CARBON_SOURCE`, `NITROGEN_SOURCE`, `SULFUR_SOURCE`, `PHOSPHATE_SOURCE`, `IRON_SOURCE`, `TRACE_ELEMENT`
+- `VITAMIN_SOURCE`, `AMINO_ACID_SOURCE`, `PROTEIN_SOURCE`, `COFACTOR_PROVIDER`
+- `ENERGY_SOURCE`, `LIGHT_SOURCE`
+
+`physicochemical_roles` (`PhysicochemicalRoleEnum`, 12 values) — chemical / physical function in the medium:
+- `BUFFER`, `SOLIDIFYING_AGENT`, `CHELATOR`, `SURFACTANT`
+- `REDUCING_AGENT`, `OXIDIZING_AGENT`, `PH_INDICATOR`, `REDOX_INDICATOR`
+- `SELECTIVE_AGENT`, `ANTIFOAM`, `OSMOTIC_AGENT`, `PRECIPITATION_INHIBITOR`
+
+`cellular_metabolic_roles` (`CellularMetabolicRoleEnum`, 10 values) — role inside/on the microbe (often organism-conditional):
+- `SUBSTRATE`, `ELECTRON_DONOR`, `ELECTRON_ACCEPTOR`, `COFACTOR`
+- `PROSTHETIC_GROUP_PRECURSOR`, `MEMBRANE_COMPONENT`, `OSMOPROTECTANT`
+- `INDUCER`, `INHIBITOR`, `QUENCHER`
+
+Also: `role_curie` (multivalued `uriorcurie`) — escape hatch for out-of-vocabulary role terms (CHEBI role subtree, METPO, ENVO, GO, PATO, NCIT).
 
 ---
 
@@ -82,9 +84,7 @@ ingredients:
     term:
       id: CHEBI:31795
       label: MgSO4·7H2O
-    role:
-      - MINERAL
-      - COFACTOR_PROVIDER
+    nutritional_roles: [SULFUR_SOURCE, COFACTOR_PROVIDER]  # Mg is a cofactor cation; sulfate supplies sulfur
     # NEW: Cofactors provided
     cofactors_provided:
       - preferred_term: Magnesium ion
@@ -302,16 +302,19 @@ def add_roles_to_recipe(recipe_path: Path):
     with open(recipe_path) as f:
         recipe = yaml.safe_load(f)
 
-    # Example: Add roles based on ingredient names
+    # Example: assign faceted roles by ingredient name.
     for ingredient in recipe.get('ingredients', []):
         name = ingredient['preferred_term'].lower()
 
         if 'glucose' in name:
-            ingredient['role'] = ['CARBON_SOURCE', 'ENERGY_SOURCE']
+            ingredient['nutritional_roles'] = ['CARBON_SOURCE', 'ENERGY_SOURCE']
+            ingredient['cellular_metabolic_roles'] = ['SUBSTRATE']
         elif 'kno3' in name or 'nitrate' in name:
-            ingredient['role'] = ['NITROGEN_SOURCE', 'ELECTRON_ACCEPTOR']
+            ingredient['nutritional_roles'] = ['NITROGEN_SOURCE']
+            ingredient['cellular_metabolic_roles'] = ['ELECTRON_ACCEPTOR']  # organism-conditional
         elif 'buffer' in name or 'phosphate' in name:
-            ingredient['role'] = ['BUFFER', 'MINERAL']
+            ingredient['nutritional_roles'] = ['PHOSPHATE_SOURCE']
+            ingredient['physicochemical_roles'] = ['BUFFER']
         # Add more mappings...
 
     # Write back
@@ -344,27 +347,30 @@ for recipe_file in recipe_dir.glob("*.yaml"):
 
 ```yaml
 - preferred_term: Glucose
-  role: [CARBON_SOURCE, ENERGY_SOURCE]
+  nutritional_roles: [CARBON_SOURCE, ENERGY_SOURCE]
+  cellular_metabolic_roles: [SUBSTRATE]
 
 - preferred_term: NH4Cl
-  role: [NITROGEN_SOURCE]
+  nutritional_roles: [NITROGEN_SOURCE]
 ```
 
 ### Pattern 2: Buffer System
 
 ```yaml
 - preferred_term: KH2PO4
-  role: [BUFFER, MINERAL]
+  nutritional_roles: [PHOSPHATE_SOURCE]
+  physicochemical_roles: [BUFFER]
 
 - preferred_term: Na2HPO4
-  role: [BUFFER, MINERAL]
+  nutritional_roles: [PHOSPHATE_SOURCE]
+  physicochemical_roles: [BUFFER]
 ```
 
 ### Pattern 3: Metal Cofactor Provider
 
 ```yaml
 - preferred_term: FeSO4
-  role: [TRACE_ELEMENT, COFACTOR_PROVIDER]
+  nutritional_roles: [IRON_SOURCE, SULFUR_SOURCE, COFACTOR_PROVIDER]
   cofactors_provided:
     - preferred_term: Iron(II) ion
       term:
