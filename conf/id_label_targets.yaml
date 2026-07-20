@@ -43,6 +43,32 @@ ignored_prefixes:
   - mediadive.solution     # MediaDive solution nodes
   - mediadive.compound     # MediaDive compound nodes
   - mediadive.medium       # MediaDive medium nodes
+  - MICRO                  # Ontology of Prokaryotic Phenotypic and Metabolic
+                           #   Characters. Holds the correct terms for enzymatic
+                           #   protein digests (tryptone, peptone, proteose
+                           #   peptone, casein hydrolysate) — ChEBI has none of
+                           #   them, because CHEBI:59999 "chemical substance"
+                           #   requires constant composition — and is what MIM
+                           #   already grounds them to. Listed here rather than
+                           #   under `adapters` because OAK has no local MICRO
+                           #   build; ids are verified against EBI OLS4 at
+                           #   curation time instead.
+                           #
+                           #   ⚠ HAZARD: ~1,472 of MicrO's 3,450 classes are
+                           #   minted under a malformed IRI
+                           #   (…/obo/MicrO.owl/MICRO_nnnnnnn instead of
+                           #   …/obo/MICRO_nnnnnnn). OLS4 reports
+                           #   is_defining_ontology=false for those and the CURIE
+                           #   will not round-trip, so they must NOT be emitted.
+                           #   Before adding a new MICRO id, check OLS4 reports
+                           #   is_defining_ontology=true and the IRI has no
+                           #   "MicrO.owl/" segment. Verified safe and in use
+                           #   here: MICRO:0000178 peptone, MICRO:0000180
+                           #   proteose peptone, MICRO:0000181 soy peptone,
+                           #   MICRO:0000182 tryptone, MICRO:0001366 casein
+                           #   hydrolysate. (Term-level PURLs 404 for ALL of
+                           #   MicrO, well-formed or not — a separate upstream
+                           #   gap, not a signal about a given id.)
   - MEDIADB                # MediaDive medium DB ids (MEDIADB:NNN)
   - komodo.medium          # KOMODO media identifiers
   - jcm.grmd               # JCM GRMD media identifiers (media_term ids, no ontology adapter)
@@ -52,6 +78,23 @@ ignored_prefixes:
   - GTDB                   # GTDB taxa (not in NCBITaxon namespace)
 
 synonym_scope: exact_related
+
+# Severity of IMPLAUSIBLE_LABEL (from `label_waiver_mode: plausible`). New gate
+# over pre-existing data, so it ships as `warn`: findings land in the drift
+# report, build stays green. Flip to `error` once the backlog clears — the same
+# report-then-enforce rollout the original gate used.
+plausibility_severity: warn
+
+# Numeric accession ceiling per ontology. An id that does NOT resolve AND sits
+# above the ceiling is a foreign identifier wearing an OBO prefix (PubChem CIDs
+# reach 8 digits; CHEBI:10716816 was asserted for "Nicotinate") rather than a
+# retired accession — a different repair, so it gets its own verdict.
+max_accession:
+  CHEBI: 300000
+  FOODON: 4000000
+  UBERON: 9000000
+  ENVO: 9000000
+  NCIT: 900000
 
 targets:
   # data inputs (recipe YAMLs) — every nested term.{id,label} block — canonical
@@ -77,6 +120,196 @@ targets:
     label_waived_keys:
       - term
       - chebi_term
+    # ...but exemption is NOT a blank cheque. Existence-checking alone let a
+    # valid-but-wrong id pass undetected: CHEBI:86457, asserted for "MnCl .4H O",
+    # resolves fine — it is 2-hydroxybenzoyl-AMP. `plausible` additionally
+    # requires a waived label to bear SOME relationship to its term: the label
+    # parses as a formula whose element skeleton matches the term's molecular
+    # formula (hydration tolerated), or it shares a content word with the term's
+    # label/synonyms. "Distilled water"/CHEBI:15377 and "KH2PO4"/CHEBI:63036
+    # still pass; the manganese-chloride case does not.
+    label_waiver_mode: plausible
+    # Curator-accepted residuals: grounding CORRECT, heuristic cannot see it.
+    exceptions:
+      - id: CHEBI:144434
+        label: "Eisencitrat"
+        reason: >-
+          Correct grounding (iron(III) citrate monohydrate). German ingredient
+          name; shares no word with the English ontology label.
+      - id: CHEBI:64734
+        label: "EDTANa"
+        reason: >-
+          Correct grounding (EDTA disodium salt). The name's lost subscript
+          cannot distinguish the di- from the tri-sodium salt, so the asserted
+          disodium term is retained rather than guessed at.
+      - id: CHEBI:132089
+        label: "Na2-ß-glycerolphosphate"
+        reason: >-
+          Correct grounding (sodium glycerol 2-phosphate). Greek-letter and
+          hyphenation variant the lexical check cannot bridge.
+      - id: CHEBI:24536
+        label: "Hexachlorocyclo-hexane"
+        reason: >-
+          Correct grounding (hexachlorocyclohexane). Spurious hyphen only.
+      - id: CHEBI:53471
+        label: "Cr2(SO4)3 x n H2O"
+        reason: >-
+          Correct grounding (chromium(III) sulfate). Indefinite "n H2O" hydrate
+          cannot be parsed to a formula.
+      - id: CHEBI:30411
+        label: "Cobalamine"
+        reason: >-
+          Correct grounding (cobalamin). Spelling variant.
+      - id: CHEBI:78672
+        label: "RbCl"
+        reason: >-
+          Correct grounding (rubidium chloride). Formula label; CHEBI publishes
+          no molecular formula for this term, so no formula evidence exists.
+      - id: CHEBI:34683
+        label: "Na HPO anydrous"
+        reason: >-
+          Correct grounding (disodium hydrogenphosphate). Name is both
+          subscript-damaged and misspelt ("anydrous"); no corpus twin.
+      - id: CHEBI:9532
+        label: "Co Carboxylase"
+        reason: >-
+          Correct grounding: cocarboxylase is a common name for thiamine
+          diphosphate. Shares no word with the systematic ontology label.
+      - id: UBERON:0000955
+        label: "Calf brains"
+        reason: >-
+          Accepted specificity loss: UBERON has no calf-specific brain term, so
+          the generic organ is the closest available. Species detail is carried
+          by the ingredient name.
+      - id: FOODON:03315720
+        label: "soy peptone"
+        reason: >-
+          MIM-curated grounding; soy peptone IS a hydrolysed vegetable protein.
+          Shares no word with the FOODON label, which the gate cannot bridge.
+      - id: CHEBI:53438
+        label: "Fe2(SO4)3 x n H2O"
+        reason: >-
+          Correct grounding (iron(3+) sulfate). The indefinite "n H2O" hydrate
+          cannot be parsed to a formula, so no formula evidence is available.
+      - id: CHEBI:30621
+        label: "As O"
+        reason: >-
+          Correct grounding (diarsenic trioxide, As2O3). Name lost its
+          subscripts and no corpus twin exists to repair from.
+      - id: CHEBI:132767
+        label: "Fe4(PO4)2"
+        reason: >-
+          Correct grounding (ferric pyrophosphate). The source name's
+          stoichiometry is itself irregular; needs a source-side decision.
+      - id: CHEBI:3312
+        label: "CaCl .6H O"
+        reason: >-
+          Correct grounding (calcium dichloride, hydrate-relaxed). Name lost its
+          subscripts; no corpus twin at this hydration.
+
+  # data inputs (merged recipe YAMLs). Previously UNVALIDATED — the only YAML
+  # target was normalized_yaml/**, leaving ~10,400 merged recipe files unchecked,
+  # and that is where the hallucinated LLM_ASSISTED groundings live.
+  - name: merge_yaml
+    kind: yaml
+    glob: "data/merge_yaml/**/*.yaml"
+    # Onboarding as `warn`: never validated before, so it opens with a real
+    # backlog of bad ids. Flip to `error` once that clears.
+    severity: warn
+    policy: canonical
+    pairs:
+      - [id, label]
+    exclude_keys:
+      - mediaingredientmech_chebi_term
+    label_waived_keys:
+      - term
+      - chebi_term
+    # ...but exemption is NOT a blank cheque. Existence-checking alone let a
+    # valid-but-wrong id pass undetected: CHEBI:86457, asserted for "MnCl .4H O",
+    # resolves fine — it is 2-hydroxybenzoyl-AMP. `plausible` additionally
+    # requires a waived label to bear SOME relationship to its term: the label
+    # parses as a formula whose element skeleton matches the term's molecular
+    # formula (hydration tolerated), or it shares a content word with the term's
+    # label/synonyms. "Distilled water"/CHEBI:15377 and "KH2PO4"/CHEBI:63036
+    # still pass; the manganese-chloride case does not.
+    label_waiver_mode: plausible
+    # Curator-accepted residuals: grounding CORRECT, heuristic cannot see it.
+    exceptions:
+      - id: CHEBI:144434
+        label: "Eisencitrat"
+        reason: >-
+          Correct grounding (iron(III) citrate monohydrate). German ingredient
+          name; shares no word with the English ontology label.
+      - id: CHEBI:64734
+        label: "EDTANa"
+        reason: >-
+          Correct grounding (EDTA disodium salt). The name's lost subscript
+          cannot distinguish the di- from the tri-sodium salt, so the asserted
+          disodium term is retained rather than guessed at.
+      - id: CHEBI:132089
+        label: "Na2-ß-glycerolphosphate"
+        reason: >-
+          Correct grounding (sodium glycerol 2-phosphate). Greek-letter and
+          hyphenation variant the lexical check cannot bridge.
+      - id: CHEBI:24536
+        label: "Hexachlorocyclo-hexane"
+        reason: >-
+          Correct grounding (hexachlorocyclohexane). Spurious hyphen only.
+      - id: CHEBI:53471
+        label: "Cr2(SO4)3 x n H2O"
+        reason: >-
+          Correct grounding (chromium(III) sulfate). Indefinite "n H2O" hydrate
+          cannot be parsed to a formula.
+      - id: CHEBI:30411
+        label: "Cobalamine"
+        reason: >-
+          Correct grounding (cobalamin). Spelling variant.
+      - id: CHEBI:78672
+        label: "RbCl"
+        reason: >-
+          Correct grounding (rubidium chloride). Formula label; CHEBI publishes
+          no molecular formula for this term, so no formula evidence exists.
+      - id: CHEBI:34683
+        label: "Na HPO anydrous"
+        reason: >-
+          Correct grounding (disodium hydrogenphosphate). Name is both
+          subscript-damaged and misspelt ("anydrous"); no corpus twin.
+      - id: CHEBI:9532
+        label: "Co Carboxylase"
+        reason: >-
+          Correct grounding: cocarboxylase is a common name for thiamine
+          diphosphate. Shares no word with the systematic ontology label.
+      - id: UBERON:0000955
+        label: "Calf brains"
+        reason: >-
+          Accepted specificity loss: UBERON has no calf-specific brain term, so
+          the generic organ is the closest available. Species detail is carried
+          by the ingredient name.
+      - id: FOODON:03315720
+        label: "soy peptone"
+        reason: >-
+          MIM-curated grounding; soy peptone IS a hydrolysed vegetable protein.
+          Shares no word with the FOODON label, which the gate cannot bridge.
+      - id: CHEBI:53438
+        label: "Fe2(SO4)3 x n H2O"
+        reason: >-
+          Correct grounding (iron(3+) sulfate). The indefinite "n H2O" hydrate
+          cannot be parsed to a formula, so no formula evidence is available.
+      - id: CHEBI:30621
+        label: "As O"
+        reason: >-
+          Correct grounding (diarsenic trioxide, As2O3). Name lost its
+          subscripts and no corpus twin exists to repair from.
+      - id: CHEBI:132767
+        label: "Fe4(PO4)2"
+        reason: >-
+          Correct grounding (ferric pyrophosphate). The source name's
+          stoichiometry is itself irregular; needs a source-side decision.
+      - id: CHEBI:3312
+        label: "CaCl .6H O"
+        reason: >-
+          Correct grounding (calcium dichloride, hydrate-relaxed). Name lost its
+          subscripts; no corpus twin at this hydration.
 
   # data products: CHEBI mapping SSSOM export — canonical OR synonym.
   # Narrowed to the canonical base artifact only; `output/*.sssom.tsv` also

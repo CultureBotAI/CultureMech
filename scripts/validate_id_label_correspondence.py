@@ -97,7 +97,17 @@ from typing import Any, Iterator
 
 import yaml
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+# ``chem_formula`` is a sibling module in this same scripts/ directory. Import it
+# by way of an explicit sys.path entry so the validator works both when run as a
+# script (scripts/ already on sys.path) and when loaded by file path via
+# importlib, as the tests do.
+_SCRIPTS_DIR = Path(__file__).resolve().parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+import chem_formula  # noqa: E402
+
+REPO_ROOT = _SCRIPTS_DIR.parent
 
 
 def _safe_rel(path: Path) -> str:
@@ -124,7 +134,19 @@ _ERROR_VERDICTS = {
     "MISSING_GLOB",
     "ADAPTER_ERROR",
     "UNKNOWN_PREFIX",
+    # A waived (curator-intended) label that has no plausible relationship to
+    # the term it grounds: element skeletons conflict, or no content word is
+    # shared. This is the class the blanket waiver used to hide.
+    "IMPLAUSIBLE_LABEL",
+    # An unresolvable accession numerically beyond the ontology's real range —
+    # a foreign identifier (typically a PubChem CID) wearing an OBO prefix.
+    "ID_OUT_OF_RANGE",
 }
+
+# Reported, actionable, but NOT fatal: the grounding is correct and only the
+# label lost its subscript glyphs upstream ("NaCO3" for Na2CO3). Repairing the
+# name is a data-cleanup task, not a mapping error, so it must not fail enforce.
+_WARN_VERDICTS = {"LABEL_SUBSCRIPTS_LOST"}
 
 # Path segments under which a `term`/`chebi_term` label-waiver does NOT apply:
 # organism (NCBITaxon) and environment (ENVO) groundings must carry the canonical
@@ -297,6 +319,11 @@ class AdapterPool:
             return False
 
 
+_LABEL_CACHE: dict[tuple[int, str, str, bool], tuple[str | None, set[str], bool]] = {}
+# One bulk-loaded formula lookup per adapter (see chem_formula.build_formula_lookup).
+_FORMULA_LOOKUPS: dict[int, Any] = {}
+
+
 def accepted_labels(
     adapter: Any, curie: str, scope: str, *, include_synonyms: bool = True
 ) -> tuple[str | None, set[str], bool]:
@@ -309,11 +336,15 @@ def accepted_labels(
     ``entity_alias_map`` lookup entirely. ``id_found`` is False when the id is
     absent from the ontology.
     """
+    cache_key = (id(adapter), curie, scope, include_synonyms)
+    if cache_key in _LABEL_CACHE:
+        return _LABEL_CACHE[cache_key]
     try:
         canonical = adapter.label(curie)
     except Exception:
         canonical = None
     if canonical is None:
+        _LABEL_CACHE[cache_key] = (None, set(), False)
         return None, set(), False
     accepted = {normalize(canonical)}
     if include_synonyms:
@@ -325,7 +356,82 @@ def accepted_labels(
         for pred in _SYNONYM_PREDICATES.get(scope, _SYNONYM_PREDICATES["exact"]):
             for alias in alias_map.get(pred, []) or []:
                 accepted.add(normalize(alias))
+    _LABEL_CACHE[cache_key] = (canonical, accepted, True)
     return canonical, accepted, True
+
+
+def _plausibility_verdict(
+    *,
+    label: str,
+    canonical: str | None,
+    accepted: set[str],
+    adapter: Any,
+    lookup_curie: str,
+    formula_lookup: Any = None,
+) -> tuple[str, str]:
+    """Decide whether a waived (curator-intended) label is *plausible* for its id.
+
+    The waiver exists so curators can write "Distilled water" on CHEBI:15377 or
+    "NaCl" on CHEBI:26710 without churn. It must not extend to a label that has
+    nothing to do with the term — "MnCl .4H O" on 2-hydroxybenzoyl-AMP.
+
+    Two independent ways to pass, either sufficient:
+      * FORMULA — the label parses as a chemical formula whose element skeleton
+        matches the term's molecular formula (hydration and lost subscripts
+        tolerated; see ``chem_formula``).
+      * LEXICAL — the label shares a content word with the canonical label or
+        any accepted synonym.
+
+    Returns (verdict, detail). Anything that parses as a formula and *conflicts*
+    is rejected outright; a label we cannot judge at all is accepted, so the
+    gate never fails on absent evidence.
+    """
+    if formula_lookup is None:
+        akey = id(adapter)
+        if akey not in _FORMULA_LOOKUPS:
+            _FORMULA_LOOKUPS[akey] = chem_formula.build_formula_lookup(adapter)
+        formula_lookup = _FORMULA_LOOKUPS[akey]
+    formula = formula_lookup(lookup_curie) or ""
+
+
+    if formula and chem_formula.looks_like_formula(label):
+        cmp = chem_formula.compare_formulas(label, formula)
+        if cmp in ("MATCH", "HYDRATE_RELAXED"):
+            return "OK_ID_ONLY", f"formula {cmp.lower()}"
+        if cmp == "SUBSCRIPTS_LOST":
+            # Correct grounding, damaged label — flag for name repair, not as a
+            # mapping error.
+            return "LABEL_SUBSCRIPTS_LOST", f"same elements as {formula}, wrong counts"
+        if cmp == "CONFLICT":
+            return "IMPLAUSIBLE_LABEL", f"label elements conflict with {formula}"
+
+    # Lexical fallback: any shared content word. Deliberately permissive —
+    # tightening it (requiring two shared words or head-word agreement) was
+    # measured at 26k false positives, because correct chemical names routinely
+    # share only the stem: "L-Cysteine HCl x H2O" vs "L-cysteine hydrochloride
+    # hydrate" shares just "cysteine". The cost is that a one-word overlap on a
+    # wrong term slips through ("Magnesium citrate" on "magnesium dihydroxide");
+    # that residue is left to curation rather than paid for 26k times over.
+    label_words = {w for w in re.split(r"[^a-z0-9]+", normalize(label)) if len(w) > 2}
+    if not label_words:
+        # No comparable content (blank or purely numeric label). The id resolved,
+        # and an absent label is EMPTY_LABEL's business, not plausibility's.
+        return "OK_ID_ONLY", "no comparable label content"
+    for candidate in {normalize(canonical or "")} | accepted:
+        cand_words = {w for w in re.split(r"[^a-z0-9]+", candidate) if len(w) > 2}
+        if label_words & cand_words:
+            return "OK_ID_ONLY", "shares a term word"
+
+    # No lexical support and no formula agreement. Formula evidence being
+    # UNAVAILABLE is not innocence: a formula-shaped label grounded to a term
+    # that publishes no formula (a polymer, a FOODON class) is unverifiable in
+    # both directions, which is exactly how "ZnCl .6H O" sat undetected on
+    # peptidoglycosaminoglycan. Flag it rather than wave it through.
+    if chem_formula.looks_like_formula(label) and not formula:
+        return ("IMPLAUSIBLE_LABEL",
+                f"formula-style label, but '{canonical or ''}' publishes no "
+                "molecular formula — grounding cannot be verified either way")
+    return "IMPLAUSIBLE_LABEL", f"no word shared with '{canonical or ''}'"
 
 
 def classify(
@@ -337,6 +443,9 @@ def classify(
     scope: str,
     lookup_curie: str | None = None,
     label_waived: bool = False,
+    waiver_mode: str = "id_only",
+    max_accession: int | None = None,
+    formula_lookup: Any = None,
 ) -> dict[str, Any]:
     """Classify one (id, label) pair into a verdict dict.
 
@@ -350,18 +459,41 @@ def classify(
     enforced (ID_NOT_FOUND fires for a bogus id) but the canonical-label
     match is skipped — a resolvable id yields OK_ID_ONLY regardless of label.
     """
-    # When the label is waived we never consult synonyms (the label isn't
-    # being compared at all), so skip the potentially expensive alias lookup.
-    include_synonyms = (policy != "canonical") and not label_waived
+    # A waived label under the `plausible` mode still needs synonyms — they are
+    # what the lexical half of the plausibility check compares against.
+    plausible_mode = label_waived and waiver_mode == "plausible"
+    # Plausibility asks a different question from policy conformance: "is this
+    # label related to this term at all?" Synonyms answer it, so they are loaded
+    # even under `policy: canonical`, which otherwise skips them. Without this,
+    # every legitimate common name ("Vitamin B12" for cyanocob(III)alamin,
+    # "Tween 80" for polysorbate 80) is a false positive.
+    include_synonyms = plausible_mode or (
+        (policy != "canonical") and not label_waived
+    )
     canonical, accepted, found = accepted_labels(
         adapter, lookup_curie or curie, scope, include_synonyms=include_synonyms
     )
     base = {"id": curie, "label": label, "canonical": canonical or ""}
     if not found:
+        # An unresolvable accession above the ontology's real range is almost
+        # always a foreign identifier wearing an OBO prefix (PubChem CIDs reach
+        # 8 digits; CHEBI does not), which is a different repair from a dead
+        # legacy accession — so report it distinctly.
+        if max_accession is not None:
+            local = (lookup_curie or curie).split(":", 1)[-1]
+            if local.isdigit() and int(local) > max_accession:
+                return {**base, "verdict": "ID_OUT_OF_RANGE"}
         return {**base, "verdict": "ID_NOT_FOUND"}
     if label_waived:
-        # Id resolved; the curator label is intentional, so accept it as-is.
-        return {**base, "verdict": "OK_ID_ONLY"}
+        if not plausible_mode:
+            # Legacy behaviour: id resolved, curator label accepted as-is.
+            return {**base, "verdict": "OK_ID_ONLY"}
+        verdict, detail = _plausibility_verdict(
+            label=label, canonical=canonical, accepted=accepted,
+            adapter=adapter, lookup_curie=lookup_curie or curie,
+            formula_lookup=formula_lookup,
+        )
+        return {**base, "verdict": verdict, "detail": detail}
     if label is None or str(label).strip() == "":
         return {**base, "verdict": "EMPTY_LABEL"}
     norm_label = normalize(label)
@@ -567,6 +699,8 @@ def load_config(config_path: Path) -> dict[str, Any]:
     cfg.setdefault("ignored_prefixes", [])
     cfg.setdefault("synonym_scope", "exact_related")
     cfg.setdefault("targets", [])
+    cfg.setdefault("max_accession", {})
+    cfg.setdefault("plausibility_severity", "warn")
     return cfg
 
 
@@ -578,6 +712,21 @@ def run(config_path: Path, report_path: Path | None) -> int:
     # A prefixed id whose prefix is neither a configured adapter NOR listed here
     # is a typo / unexpected prefix → UNKNOWN_PREFIX (ERROR), not a silent skip.
     ignored_prefixes_cf = {str(p).casefold() for p in cfg["ignored_prefixes"]}
+    # Per-ontology numeric accession ceiling. An unresolvable id above the
+    # ceiling is a foreign identifier wearing an OBO prefix (PubChem CIDs run to
+    # 8 digits) rather than a retired accession — a different repair.
+    max_accessions: dict[str, int] = {
+        str(k): int(v) for k, v in (cfg.get("max_accession") or {}).items()
+    }
+    # Plausibility is a NEW gate over pre-existing data, so it defaults to
+    # `warn`: reported in full, but not build-breaking. Flip to `error` once the
+    # backlog it surfaces is cleared — the repo's standard report-then-enforce
+    # rollout. ID_OUT_OF_RANGE stays fatal regardless: it is a strictly better
+    # diagnosis of an id that already failed as ID_NOT_FOUND.
+    severity = str(cfg.get("plausibility_severity", "warn")).lower()
+    error_verdicts = set(_ERROR_VERDICTS)
+    if severity != "error":
+        error_verdicts.discard("IMPLAUSIBLE_LABEL")
 
     findings: list[dict[str, Any]] = []
     counts: dict[str, int] = {}
@@ -589,6 +738,15 @@ def run(config_path: Path, report_path: Path | None) -> int:
         pairs = target.get("pairs", [])
         exclude_keys = frozenset(target.get("exclude_keys", []) or [])
         label_waived_keys = frozenset(target.get("label_waived_keys", []) or [])
+        # `id_only` (default) preserves the historical blanket waiver; set
+        # `plausible` to additionally require that a waived label bear some
+        # relationship to the term it grounds.
+        waiver_mode = str(target.get("label_waiver_mode", "id_only"))
+        # Per-target severity. Defaults to `error` (historical behaviour). A
+        # NEWLY-ADDED target over pre-existing data can start at `warn` so its
+        # backlog is reported without breaking the build, then be flipped once
+        # cleared — the repo's standard report-then-enforce onboarding.
+        target_severity = str(target.get("severity", "error")).lower()
         exceptions = load_exceptions(target)
         required = bool(target.get("required", False))
         globs = target.get("glob")
@@ -657,7 +815,8 @@ def run(config_path: Path, report_path: Path | None) -> int:
                         rec = classify(
                             curie=curie, label=label, adapter=adapter, policy=policy,
                             scope=scope, lookup_curie=lookup_curie,
-                            label_waived=label_waived,
+                            label_waived=label_waived, waiver_mode=waiver_mode,
+                            max_accession=max_accessions.get(prefix),
                         )
                 # Curator-accepted residual: an EXACT (id, label) pair on the
                 # target's ``exceptions`` allow-list is accepted as OK_EXCEPTION
@@ -667,14 +826,21 @@ def run(config_path: Path, report_path: Path | None) -> int:
                 # MISSING_GLOB, EMPTY_LABEL), which signal real defects rather
                 # than a knowingly-accepted label. The match is exact, so a
                 # different wrong label on the same id still fails as MISMATCH.
-                if rec["verdict"] in ("MISMATCH", "ID_NOT_FOUND") and (
-                    curie,
-                    normalize(label),
-                ) in exceptions:
+                # IMPLAUSIBLE_LABEL and LABEL_SUBSCRIPTS_LOST are label/id
+                # residuals of exactly the kind the allow-list exists for — a
+                # correct grounding the heuristic cannot see is correct
+                # ("soy peptone" on FOODON "vegetable protein, hydrolyzed"
+                # shares no word) — so they are waivable too. Structural errors
+                # (UNKNOWN_PREFIX, ADAPTER_ERROR, MISSING_*) remain unwaivable.
+                if rec["verdict"] in (
+                    "MISMATCH", "ID_NOT_FOUND", "IMPLAUSIBLE_LABEL",
+                    "LABEL_SUBSCRIPTS_LOST", "ID_OUT_OF_RANGE",
+                ) and (curie, normalize(label)) in exceptions:
                     rec["verdict"] = "OK_EXCEPTION"
                 counts[rec["verdict"]] = counts.get(rec["verdict"], 0) + 1
                 if rec["verdict"] not in _OK_VERDICTS | _SKIP_VERDICTS:
                     findings.append({
+                        "severity": target_severity,
                         "surface": name,
                         "file": str(rel),
                         "locator": locator,
@@ -696,6 +862,9 @@ def run(config_path: Path, report_path: Path | None) -> int:
         "MISSING_GLOB",
         "ADAPTER_ERROR",
         "UNKNOWN_PREFIX",
+        "IMPLAUSIBLE_LABEL",
+        "ID_OUT_OF_RANGE",
+        "LABEL_SUBSCRIPTS_LOST",
         "SKIPPED_NO_ADAPTER",
         "SKIPPED_EMPTY_ADAPTER",
     ):
@@ -708,17 +877,20 @@ def run(config_path: Path, report_path: Path | None) -> int:
             w = csv.writer(fh, delimiter="\t")
             w.writerow(
                 ["surface", "file", "locator", "id", "current_label",
-                 "canonical_label", "verdict", "policy"]
+                 "canonical_label", "verdict", "severity", "policy", "detail"]
             )
             for f in findings:
                 w.writerow([
                     f["surface"], f["file"], f["locator"], f["id"],
-                    f["label"], f["canonical"], f["verdict"], f["policy"],
+                    f["label"], f["canonical"], f["verdict"],
+                    f.get("severity", "error"), f["policy"], f.get("detail", ""),
                 ])
         print(f"\nWrote {len(findings)} flagged pairs to {_safe_rel(report_path)}")
         return 0
 
-    errors = [f for f in findings if f["verdict"] in _ERROR_VERDICTS]
+    errors = [f for f in findings
+              if f["verdict"] in error_verdicts
+              and f.get("severity", "error") == "error"]
     if errors:
         print(f"\n❌ {len(errors)} id↔label correspondence error(s):")
         for f in errors[:50]:
@@ -727,6 +899,13 @@ def run(config_path: Path, report_path: Path | None) -> int:
         if len(errors) > 50:
             print(f"  ... {len(errors) - 50} more")
         return 2
+    warned = [f for f in findings
+              if f["verdict"] in (_ERROR_VERDICTS | _WARN_VERDICTS)
+              and not (f["verdict"] in error_verdicts
+                       and f.get("severity", "error") == "error")]
+    if warned:
+        print(f"\n⚠️  {len(warned)} non-blocking id↔label warning(s) "
+              f"(plausibility_severity={severity}); see the report for detail.")
     print("\n✅ All id↔label pairs correspond.")
     return 0
 

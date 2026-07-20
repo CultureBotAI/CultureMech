@@ -4,7 +4,12 @@ name: label-correspondence
 # for triage (non-blocking), then ENFORCES id↔label correspondence with
 # `just validate-products` (Engine B) — the build fails on any ERROR-class verdict
 # (MISMATCH / ID_NOT_FOUND / EMPTY_LABEL / MISSING_COLUMN / MISSING_GLOB /
-# UNKNOWN_PREFIX) across recipe YAMLs + the SSSOM product.
+# UNKNOWN_PREFIX / ID_OUT_OF_RANGE) across recipe YAMLs + the SSSOM product.
+#
+# IMPLAUSIBLE_LABEL (a waived curator label with no plausible relationship to the
+# term it grounds) is reported but NON-blocking while
+# `plausibility_severity: warn` is set in conf/id_label_targets.yaml. Flip that to
+# `error` once the surfaced backlog is cleared.
 #
 # Engine B (single-process) is the CI gate; the per-file Engine A
 # (`just validate-terms-all`, linkml-term-validator) is a dev-only tool — it
@@ -15,6 +20,7 @@ on:
   pull_request:
     paths: &trigger_paths
       - "data/normalized_yaml/**"
+      - "data/merge_yaml/**"
       - "output/**.sssom.tsv"
       - "src/culturemech/schema/**"
       - "scripts/validate_id_label_correspondence.py"
