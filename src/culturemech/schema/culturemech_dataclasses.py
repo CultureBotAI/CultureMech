@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-06-13T12:24:51
+# Generation date: 2026-07-19T21:27:07
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -58,8 +58,8 @@ from rdflib import (
     URIRef
 )
 
-from linkml_runtime.linkml_model.types import Boolean, Float, Integer, String, Uri
-from linkml_runtime.utils.metamodelcore import Bool, URI
+from linkml_runtime.linkml_model.types import Boolean, Date, Float, Integer, String, Uri
+from linkml_runtime.utils.metamodelcore import Bool, URI, XSDDate
 
 metamodel_version = "1.7.0"
 version = None
@@ -94,6 +94,7 @@ CULTUREMECH = CurieNamespace('culturemech', 'https://w3id.org/culturemech/')
 GEO = CurieNamespace('geo', 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=')
 KOMODO_MEDIUM = CurieNamespace('komodo_medium', 'http://example.org/UNKNOWN/komodo.medium/')
 LINKML = CurieNamespace('linkml', 'https://w3id.org/linkml/')
+MECH_SHARED = CurieNamespace('mech_shared', 'https://w3id.org/kg-microbe/mech-shared/')
 MEDIADIVE_COMPOUND = CurieNamespace('mediadive_compound', 'https://mediadive.dsmz.de/compound/')
 MEDIADIVE_MEDIUM = CurieNamespace('mediadive_medium', 'http://example.org/UNKNOWN/mediadive.medium/')
 RDFS = CurieNamespace('rdfs', 'http://www.w3.org/2000/01/rdf-schema#')
@@ -225,6 +226,7 @@ class MediaRecipe(YAMLRoot):
     notes: Optional[str] = None
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
     datasets: Optional[Union[Union[dict, "Dataset"], list[Union[dict, "Dataset"]]]] = empty_list()
+    discussions: Optional[Union[Union[dict, "Discussion"], list[Union[dict, "Discussion"]]]] = empty_list()
     import_metadata: Optional[Union[dict, "ImportMetadata"]] = None
     curation_history: Optional[Union[Union[dict, "CurationEvent"], list[Union[dict, "CurationEvent"]]]] = empty_list()
     data_quality_flags: Optional[Union[str, list[str]]] = empty_list()
@@ -390,6 +392,10 @@ class MediaRecipe(YAMLRoot):
         if not isinstance(self.datasets, list):
             self.datasets = [self.datasets] if self.datasets is not None else []
         self.datasets = [v if isinstance(v, Dataset) else Dataset(**as_dict(v)) for v in self.datasets]
+
+        if not isinstance(self.discussions, list):
+            self.discussions = [self.discussions] if self.discussions is not None else []
+        self.discussions = [v if isinstance(v, Discussion) else Discussion(**as_dict(v)) for v in self.discussions]
 
         if self.import_metadata is not None and not isinstance(self.import_metadata, ImportMetadata):
             self.import_metadata = ImportMetadata(**as_dict(self.import_metadata))
@@ -867,7 +873,7 @@ class OrganismDescriptor(Descriptor):
     strain: Optional[str] = None
     growth_phase: Optional[Union[str, "GrowthPhaseEnum"]] = None
     growth_metrics: Optional[Union[Union[dict, "GrowthMetrics"], list[Union[dict, "GrowthMetrics"]]]] = empty_list()
-    community_role: Optional[Union[Union[str, "CellularRoleEnum"], list[Union[str, "CellularRoleEnum"]]]] = empty_list()
+    community_role: Optional[Union[Union[str, "CommunityOrganismRoleEnum"], list[Union[str, "CommunityOrganismRoleEnum"]]]] = empty_list()
     target_abundance: Optional[float] = None
     community_function: Optional[Union[str, list[str]]] = empty_list()
     cofactor_requirements: Optional[Union[Union[dict, "CofactorRequirement"], list[Union[dict, "CofactorRequirement"]]]] = empty_list()
@@ -906,7 +912,7 @@ class OrganismDescriptor(Descriptor):
 
         if not isinstance(self.community_role, list):
             self.community_role = [self.community_role] if self.community_role is not None else []
-        self.community_role = [v if isinstance(v, CellularRoleEnum) else CellularRoleEnum(v) for v in self.community_role]
+        self.community_role = [v if isinstance(v, CommunityOrganismRoleEnum) else CommunityOrganismRoleEnum(v) for v in self.community_role]
 
         if self.target_abundance is not None and not isinstance(self.target_abundance, float):
             self.target_abundance = float(self.target_abundance)
@@ -1774,41 +1780,6 @@ class EvidenceItem(YAMLRoot):
 
 
 @dataclass(repr=False)
-class Dataset(YAMLRoot):
-    """
-    Omics dataset generated using this medium
-    """
-    _inherited_slots: ClassVar[list[str]] = []
-
-    class_class_uri: ClassVar[URIRef] = CULTUREMECH["Dataset"]
-    class_class_curie: ClassVar[str] = "culturemech:Dataset"
-    class_name: ClassVar[str] = "Dataset"
-    class_model_uri: ClassVar[URIRef] = CULTUREMECH.Dataset
-
-    dataset_id: str = None
-    dataset_type: Optional[Union[str, "DatasetTypeEnum"]] = None
-    description: Optional[str] = None
-    url: Optional[Union[str, URI]] = None
-
-    def __post_init__(self, *_: str, **kwargs: Any):
-        if self._is_empty(self.dataset_id):
-            self.MissingRequiredField("dataset_id")
-        if not isinstance(self.dataset_id, str):
-            self.dataset_id = str(self.dataset_id)
-
-        if self.dataset_type is not None and not isinstance(self.dataset_type, DatasetTypeEnum):
-            self.dataset_type = DatasetTypeEnum(self.dataset_type)
-
-        if self.description is not None and not isinstance(self.description, str):
-            self.description = str(self.description)
-
-        if self.url is not None and not isinstance(self.url, URI):
-            self.url = URI(self.url)
-
-        super().__post_init__(**kwargs)
-
-
-@dataclass(repr=False)
 class CurationEvent(YAMLRoot):
     """
     Audit trail entry for curation
@@ -2310,6 +2281,276 @@ class UpdateEvent(YAMLRoot):
         super().__post_init__(**kwargs)
 
 
+@dataclass(repr=False)
+class SupportingReference(YAMLRoot):
+    """
+    A lightweight literature/database citation supporting a Discussion or Dataset. Self-contained (so this module has
+    no dependency on each repo's EvidenceItem); carries a verbatim `snippet` so the same anti-hallucination
+    snippet-vs-cached-abstract check the Mechs already run can validate it.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = MECH_SHARED["SupportingReference"]
+    class_class_curie: ClassVar[str] = "mech_shared:SupportingReference"
+    class_name: ClassVar[str] = "SupportingReference"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.SupportingReference
+
+    reference: str = None
+    reference_title: Optional[str] = None
+    supports: Optional[Union[str, "SupportLevelEnum"]] = None
+    evidence_source: Optional[str] = None
+    snippet: Optional[str] = None
+    explanation: Optional[str] = None
+    notes: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.reference):
+            self.MissingRequiredField("reference")
+        if not isinstance(self.reference, str):
+            self.reference = str(self.reference)
+
+        if self.reference_title is not None and not isinstance(self.reference_title, str):
+            self.reference_title = str(self.reference_title)
+
+        if self.supports is not None and not isinstance(self.supports, SupportLevelEnum):
+            self.supports = SupportLevelEnum(self.supports)
+
+        if self.evidence_source is not None and not isinstance(self.evidence_source, str):
+            self.evidence_source = str(self.evidence_source)
+
+        if self.snippet is not None and not isinstance(self.snippet, str):
+            self.snippet = str(self.snippet)
+
+        if self.explanation is not None and not isinstance(self.explanation, str):
+            self.explanation = str(self.explanation)
+
+        if self.notes is not None and not isinstance(self.notes, str):
+            self.notes = str(self.notes)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class Discussion(YAMLRoot):
+    """
+    A thread-like record of an open question, controversy, curation todo, emerging hypothesis, knowledge gap, or
+    interpretation debate attached to a record or one of its sub-objects. Captures the discourse / knowledge-gap layer
+    of curation. External thread links (GitHub issues, forum posts) are cited via the `evidence` block, not a separate
+    slot.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = MECH_SHARED["Discussion"]
+    class_class_curie: ClassVar[str] = "mech_shared:Discussion"
+    class_name: ClassVar[str] = "Discussion"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.Discussion
+
+    discussion_id: str = None
+    prompt: str = None
+    kind: Optional[Union[str, "DiscussionKindEnum"]] = None
+    status: Optional[Union[str, "DiscussionStatusEnum"]] = None
+    attaches_to: Optional[Union[str, list[str]]] = empty_list()
+    rationale: Optional[str] = None
+    proposed_experiments: Optional[Union[Union[dict, "ProposedExperiment"], list[Union[dict, "ProposedExperiment"]]]] = empty_list()
+    evidence: Optional[Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]] = empty_list()
+    posed_by: Optional[str] = None
+    posed_date: Optional[Union[str, XSDDate]] = None
+    resolved_date: Optional[Union[str, XSDDate]] = None
+    resolution_note: Optional[str] = None
+    notes: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.discussion_id):
+            self.MissingRequiredField("discussion_id")
+        if not isinstance(self.discussion_id, str):
+            self.discussion_id = str(self.discussion_id)
+
+        if self._is_empty(self.prompt):
+            self.MissingRequiredField("prompt")
+        if not isinstance(self.prompt, str):
+            self.prompt = str(self.prompt)
+
+        if self.kind is not None and not isinstance(self.kind, DiscussionKindEnum):
+            self.kind = DiscussionKindEnum(self.kind)
+
+        if self.status is not None and not isinstance(self.status, DiscussionStatusEnum):
+            self.status = DiscussionStatusEnum(self.status)
+
+        if not isinstance(self.attaches_to, list):
+            self.attaches_to = [self.attaches_to] if self.attaches_to is not None else []
+        self.attaches_to = [v if isinstance(v, str) else str(v) for v in self.attaches_to]
+
+        if self.rationale is not None and not isinstance(self.rationale, str):
+            self.rationale = str(self.rationale)
+
+        if not isinstance(self.proposed_experiments, list):
+            self.proposed_experiments = [self.proposed_experiments] if self.proposed_experiments is not None else []
+        self.proposed_experiments = [v if isinstance(v, ProposedExperiment) else ProposedExperiment(**as_dict(v)) for v in self.proposed_experiments]
+
+        if not isinstance(self.evidence, list):
+            self.evidence = [self.evidence] if self.evidence is not None else []
+        self.evidence = [v if isinstance(v, SupportingReference) else SupportingReference(**as_dict(v)) for v in self.evidence]
+
+        if self.posed_by is not None and not isinstance(self.posed_by, str):
+            self.posed_by = str(self.posed_by)
+
+        if self.posed_date is not None and not isinstance(self.posed_date, XSDDate):
+            self.posed_date = XSDDate(self.posed_date)
+
+        if self.resolved_date is not None and not isinstance(self.resolved_date, XSDDate):
+            self.resolved_date = XSDDate(self.resolved_date)
+
+        if self.resolution_note is not None and not isinstance(self.resolution_note, str):
+            self.resolution_note = str(self.resolution_note)
+
+        if self.notes is not None and not isinstance(self.notes, str):
+            self.notes = str(self.notes)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class ProposedExperiment(YAMLRoot):
+    """
+    A lightweight, domain-neutral sketch of an experiment or analysis that could resolve a knowledge gap. Records the
+    idea and how its outcome would decide the gap; intentionally simpler than a full study design.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = MECH_SHARED["ProposedExperiment"]
+    class_class_curie: ClassVar[str] = "mech_shared:ProposedExperiment"
+    class_name: ClassVar[str] = "ProposedExperiment"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.ProposedExperiment
+
+    experiment_id: Optional[str] = None
+    name: Optional[str] = None
+    description: Optional[str] = None
+    approach: Optional[str] = None
+    model_systems: Optional[Union[str, list[str]]] = empty_list()
+    perturbations: Optional[Union[str, list[str]]] = empty_list()
+    readouts: Optional[Union[str, list[str]]] = empty_list()
+    decision_criterion: Optional[str] = None
+    would_support: Optional[str] = None
+    would_refute: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self.experiment_id is not None and not isinstance(self.experiment_id, str):
+            self.experiment_id = str(self.experiment_id)
+
+        if self.name is not None and not isinstance(self.name, str):
+            self.name = str(self.name)
+
+        if self.description is not None and not isinstance(self.description, str):
+            self.description = str(self.description)
+
+        if self.approach is not None and not isinstance(self.approach, str):
+            self.approach = str(self.approach)
+
+        if not isinstance(self.model_systems, list):
+            self.model_systems = [self.model_systems] if self.model_systems is not None else []
+        self.model_systems = [v if isinstance(v, str) else str(v) for v in self.model_systems]
+
+        if not isinstance(self.perturbations, list):
+            self.perturbations = [self.perturbations] if self.perturbations is not None else []
+        self.perturbations = [v if isinstance(v, str) else str(v) for v in self.perturbations]
+
+        if not isinstance(self.readouts, list):
+            self.readouts = [self.readouts] if self.readouts is not None else []
+        self.readouts = [v if isinstance(v, str) else str(v) for v in self.readouts]
+
+        if self.decision_criterion is not None and not isinstance(self.decision_criterion, str):
+            self.decision_criterion = str(self.decision_criterion)
+
+        if self.would_support is not None and not isinstance(self.would_support, str):
+            self.would_support = str(self.would_support)
+
+        if self.would_refute is not None and not isinstance(self.would_refute, str):
+            self.would_refute = str(self.would_refute)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class Dataset(YAMLRoot):
+    """
+    A reference to a publicly available dataset (omics, sequence, phenotype) relevant to this record. A lightweight
+    repository-accession reference, not a full Datasheets-for-Datasets / DCAT description.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = MECH_SHARED["Dataset"]
+    class_class_curie: ClassVar[str] = "mech_shared:Dataset"
+    class_name: ClassVar[str] = "Dataset"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.Dataset
+
+    accession: Optional[str] = None
+    title: Optional[str] = None
+    description: Optional[str] = None
+    organism: Optional[str] = None
+    dataset_type: Optional[Union[str, "DatasetTypeEnum"]] = None
+    repository: Optional[Union[str, "DatasetRepositoryEnum"]] = None
+    sample_types: Optional[Union[str, list[str]]] = empty_list()
+    sample_count: Optional[int] = None
+    conditions: Optional[Union[str, list[str]]] = empty_list()
+    platform: Optional[str] = None
+    url: Optional[Union[str, URI]] = None
+    publication: Optional[str] = None
+    findings: Optional[str] = None
+    evidence: Optional[Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]] = empty_list()
+    notes: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self.accession is not None and not isinstance(self.accession, str):
+            self.accession = str(self.accession)
+
+        if self.title is not None and not isinstance(self.title, str):
+            self.title = str(self.title)
+
+        if self.description is not None and not isinstance(self.description, str):
+            self.description = str(self.description)
+
+        if self.organism is not None and not isinstance(self.organism, str):
+            self.organism = str(self.organism)
+
+        if self.dataset_type is not None and not isinstance(self.dataset_type, DatasetTypeEnum):
+            self.dataset_type = DatasetTypeEnum(self.dataset_type)
+
+        if self.repository is not None and not isinstance(self.repository, DatasetRepositoryEnum):
+            self.repository = DatasetRepositoryEnum(self.repository)
+
+        if not isinstance(self.sample_types, list):
+            self.sample_types = [self.sample_types] if self.sample_types is not None else []
+        self.sample_types = [v if isinstance(v, str) else str(v) for v in self.sample_types]
+
+        if self.sample_count is not None and not isinstance(self.sample_count, int):
+            self.sample_count = int(self.sample_count)
+
+        if not isinstance(self.conditions, list):
+            self.conditions = [self.conditions] if self.conditions is not None else []
+        self.conditions = [v if isinstance(v, str) else str(v) for v in self.conditions]
+
+        if self.platform is not None and not isinstance(self.platform, str):
+            self.platform = str(self.platform)
+
+        if self.url is not None and not isinstance(self.url, URI):
+            self.url = URI(self.url)
+
+        if self.publication is not None and not isinstance(self.publication, str):
+            self.publication = str(self.publication)
+
+        if self.findings is not None and not isinstance(self.findings, str):
+            self.findings = str(self.findings)
+
+        if not isinstance(self.evidence, list):
+            self.evidence = [self.evidence] if self.evidence is not None else []
+        self.evidence = [v if isinstance(v, SupportingReference) else SupportingReference(**as_dict(v)) for v in self.evidence]
+
+        if self.notes is not None and not isinstance(self.notes, str):
+            self.notes = str(self.notes)
+
+        super().__post_init__(**kwargs)
+
+
 # Enumerations
 class MediumTypeEnum(EnumDefinitionImpl):
     """
@@ -2712,9 +2953,11 @@ class CofactorCategoryEnum(EnumDefinitionImpl):
         description="High-level classification of cofactor types",
     )
 
-class CellularRoleEnum(EnumDefinitionImpl):
+class CommunityOrganismRoleEnum(EnumDefinitionImpl):
     """
-    Functional role of organism in microbial community
+    Role an organism plays in a microbial community (formerly `CellularRoleEnum`; renamed 2026-07-19 for consistency
+    with the MIM #120 rename and to disambiguate from a forthcoming `CellularMetabolicRoleEnum` on ingredient records
+    — these values describe organisms, not ingredients).
     """
     PRIMARY_DEGRADER = PermissibleValue(
         text="PRIMARY_DEGRADER",
@@ -2748,8 +2991,8 @@ class CellularRoleEnum(EnumDefinitionImpl):
         description="Competitive organism")
 
     _defn = EnumDefinition(
-        name="CellularRoleEnum",
-        description="Functional role of organism in microbial community",
+        name="CommunityOrganismRoleEnum",
+        description="""Role an organism plays in a microbial community (formerly `CellularRoleEnum`; renamed 2026-07-19 for consistency with the MIM #120 rename and to disambiguate from a forthcoming `CellularMetabolicRoleEnum` on ingredient records — these values describe organisms, not ingredients).""",
     )
 
 class TransporterTypeEnum(EnumDefinitionImpl):
@@ -3246,22 +3489,220 @@ class SynonymTypeEnum(EnumDefinitionImpl):
         description="Type of synonym relationship for an IngredientSynonym.",
     )
 
+class DiscussionKindEnum(EnumDefinitionImpl):
+    """
+    Kind of unresolved / in-progress item captured by a Discussion. Knowledge gaps are represented as a discussion
+    kind so they reuse the shared pointer, evidence, and lifecycle machinery, while optional proposed experiments
+    capture how a gap could be resolved.
+    """
+    OPEN_QUESTION = PermissibleValue(
+        text="OPEN_QUESTION",
+        description="An unresolved scientific question posed by curators or experts.")
+    KNOWLEDGE_GAP = PermissibleValue(
+        text="KNOWLEDGE_GAP",
+        description="""A missing causal, evidentiary, model-system, or measurement assertion whose resolution would materially improve the record.""")
+    CONTROVERSY = PermissibleValue(
+        text="CONTROVERSY",
+        description="A live disagreement or competing interpretation between published positions.")
+    CURATION_TODO = PermissibleValue(
+        text="CURATION_TODO",
+        description="A curation task captured inline (e.g. \"ingredient needs CHEBI refinement\").")
+    EMERGING_HYPOTHESIS = PermissibleValue(
+        text="EMERGING_HYPOTHESIS",
+        description="A recently reported hypothesis under active discussion in the community.")
+    INTERPRETATION = PermissibleValue(
+        text="INTERPRETATION",
+        description="A discussion about how to interpret existing evidence or model an edge.")
+    HUMAN_MODEL_MISMATCH = PermissibleValue(
+        text="HUMAN_MODEL_MISMATCH",
+        description="""A gap where evidence exists in one system but its fidelity to the target context is uncertain (e.g. an in-vitro/model result whose transfer to the in-situ or host-associated setting is unverified).""")
+
+    _defn = EnumDefinition(
+        name="DiscussionKindEnum",
+        description="""Kind of unresolved / in-progress item captured by a Discussion. Knowledge gaps are represented as a discussion kind so they reuse the shared pointer, evidence, and lifecycle machinery, while optional proposed experiments capture how a gap could be resolved.""",
+    )
+
+class DiscussionStatusEnum(EnumDefinitionImpl):
+    """
+    Lifecycle status for a Discussion.
+    """
+    OPEN = PermissibleValue(
+        text="OPEN",
+        description="Posed but not yet under active discussion.")
+    UNDER_DISCUSSION = PermissibleValue(
+        text="UNDER_DISCUSSION",
+        description="Actively being discussed in one or more linked venues.")
+    RESOLVED = PermissibleValue(
+        text="RESOLVED",
+        description="Closed with a documented resolution; kept for provenance.")
+    ARCHIVED = PermissibleValue(
+        text="ARCHIVED",
+        description="No longer active and not resolved (deferred, stale, or superseded).")
+
+    _defn = EnumDefinition(
+        name="DiscussionStatusEnum",
+        description="Lifecycle status for a Discussion.",
+    )
+
+class SupportLevelEnum(EnumDefinitionImpl):
+    """
+    How a SupportingReference bears on the claim it is attached to (mirrors the supports semantics already used in the
+    Mech EvidenceItem models).
+    """
+    SUPPORT = PermissibleValue(
+        text="SUPPORT",
+        description="The source supports the claim.")
+    REFUTE = PermissibleValue(
+        text="REFUTE",
+        description="The source contradicts the claim.")
+    PARTIAL = PermissibleValue(
+        text="PARTIAL",
+        description="The source partially supports the claim or supports it with caveats.")
+    NO_EVIDENCE = PermissibleValue(
+        text="NO_EVIDENCE",
+        description="The source is relevant context but does not directly bear on the claim.")
+    WRONG_STATEMENT = PermissibleValue(
+        text="WRONG_STATEMENT",
+        description="The cited statement was found to be incorrect (kept for provenance).")
+
+    _defn = EnumDefinition(
+        name="SupportLevelEnum",
+        description="""How a SupportingReference bears on the claim it is attached to (mirrors the supports semantics already used in the Mech EvidenceItem models).""",
+    )
+
 class DatasetTypeEnum(EnumDefinitionImpl):
     """
-    Type of omics dataset linked by `Dataset.dataset_type`.
+    Type of dataset or data resource. Canonical UNION of CultureMech's and CommunityMech's enums plus microbial
+    additions. Migration map (old → this): CultureMech values carry over unchanged; CommunityMech GENOME→GENOMICS,
+    METAGENOME→METAGENOMICS, METATRANSCRIPTOME→METATRANSCRIPTOMICS, METAPROTEOME→METAPROTEOMICS (AMPLICON_16S /
+    AMPLICON_ITS / METABOLOMICS / PHENOTYPE / MULTI_OMICS / OTHER are unchanged).
     """
-    GENOMICS = PermissibleValue(text="GENOMICS")
-    TRANSCRIPTOMICS = PermissibleValue(text="TRANSCRIPTOMICS")
-    PROTEOMICS = PermissibleValue(text="PROTEOMICS")
-    METABOLOMICS = PermissibleValue(text="METABOLOMICS")
-    FLUXOMICS = PermissibleValue(text="FLUXOMICS")
-    PHENOMICS = PermissibleValue(text="PHENOMICS")
-    MULTI_OMICS = PermissibleValue(text="MULTI_OMICS")
-    OTHER = PermissibleValue(text="OTHER")
+    GENOMICS = PermissibleValue(
+        text="GENOMICS",
+        description="Isolate / single-organism genome data. (CultureMech GENOMICS; CommunityMech GENOME)")
+    METAGENOMICS = PermissibleValue(
+        text="METAGENOMICS",
+        description="Shotgun metagenome sequencing. (CommunityMech METAGENOME)")
+    AMPLICON_16S = PermissibleValue(
+        text="AMPLICON_16S",
+        description="16S rRNA marker-gene amplicon sequencing.")
+    AMPLICON_ITS = PermissibleValue(
+        text="AMPLICON_ITS",
+        description="ITS marker-gene amplicon sequencing.")
+    AMPLICON_OTHER = PermissibleValue(
+        text="AMPLICON_OTHER",
+        description="Marker-gene amplicon sequencing other than 16S/ITS (e.g. 18S, rpoB).")
+    TRANSCRIPTOMICS = PermissibleValue(
+        text="TRANSCRIPTOMICS",
+        description="Single-organism RNA sequencing / expression.")
+    METATRANSCRIPTOMICS = PermissibleValue(
+        text="METATRANSCRIPTOMICS",
+        description="Community-level RNA sequencing. (CommunityMech METATRANSCRIPTOME)")
+    PROTEOMICS = PermissibleValue(
+        text="PROTEOMICS",
+        description="Single-organism protein expression profiling.")
+    METAPROTEOMICS = PermissibleValue(
+        text="METAPROTEOMICS",
+        description="Community-level proteomics. (CommunityMech METAPROTEOME)")
+    METABOLOMICS = PermissibleValue(
+        text="METABOLOMICS",
+        description="Metabolite profiling.")
+    FLUXOMICS = PermissibleValue(
+        text="FLUXOMICS",
+        description="Metabolic flux profiling.")
+    PHENOMICS = PermissibleValue(
+        text="PHENOMICS",
+        description="High-throughput phenotype profiling.")
+    PHENOTYPE = PermissibleValue(
+        text="PHENOTYPE",
+        description="Phenotype / trait measurement collection (e.g. growth, biochemical).")
+    MULTI_OMICS = PermissibleValue(
+        text="MULTI_OMICS",
+        description="Integrated multi-omics profiling.")
+    OTHER = PermissibleValue(
+        text="OTHER",
+        description="A dataset type not covered by the above.")
 
     _defn = EnumDefinition(
         name="DatasetTypeEnum",
-        description="Type of omics dataset linked by `Dataset.dataset_type`.",
+        description="""Type of dataset or data resource. Canonical UNION of CultureMech's and CommunityMech's enums plus microbial additions. Migration map (old → this): CultureMech values carry over unchanged; CommunityMech GENOME→GENOMICS, METAGENOME→METAGENOMICS, METATRANSCRIPTOME→METATRANSCRIPTOMICS, METAPROTEOME→METAPROTEOMICS (AMPLICON_16S / AMPLICON_ITS / METABOLOMICS / PHENOTYPE / MULTI_OMICS / OTHER are unchanged).""",
+    )
+
+class DatasetRepositoryEnum(EnumDefinitionImpl):
+    """
+    Public repository hosting the dataset. Superset of CommunityMech's enum (all values preserved) plus common
+    additions; CultureMech datasets have no repository field today and migrate with repository unset / OTHER.
+    """
+    NCBI_SRA = PermissibleValue(
+        text="NCBI_SRA",
+        description="NCBI Sequence Read Archive.")
+    NCBI_BIOPROJECT = PermissibleValue(
+        text="NCBI_BIOPROJECT",
+        description="NCBI BioProject.")
+    NCBI_GEO = PermissibleValue(
+        text="NCBI_GEO",
+        description="NCBI Gene Expression Omnibus.")
+    NCBI_ASSEMBLY = PermissibleValue(
+        text="NCBI_ASSEMBLY",
+        description="NCBI Assembly (genome assemblies).")
+    ENA = PermissibleValue(
+        text="ENA",
+        description="European Nucleotide Archive.")
+    ARRAYEXPRESS = PermissibleValue(
+        text="ARRAYEXPRESS",
+        description="EBI ArrayExpress / BioStudies.")
+    MGNIFY = PermissibleValue(
+        text="MGNIFY",
+        description="EBI MGnify metagenomics resource.")
+    JGI_GOLD = PermissibleValue(
+        text="JGI_GOLD",
+        description="JGI Genomes OnLine Database.")
+    JGI_IMG = PermissibleValue(
+        text="JGI_IMG",
+        description="JGI Integrated Microbial Genomes & Microbiomes.")
+    NMDC = PermissibleValue(
+        text="NMDC",
+        description="National Microbiome Data Collaborative.")
+    METABOLOMICS_WORKBENCH = PermissibleValue(
+        text="METABOLOMICS_WORKBENCH",
+        description="NIH Metabolomics Workbench.")
+    METABOLIGHTS = PermissibleValue(
+        text="METABOLIGHTS",
+        description="EBI MetaboLights metabolomics repository.")
+    MASSIVE = PermissibleValue(
+        text="MASSIVE",
+        description="MassIVE mass-spectrometry repository.")
+    GNPS = PermissibleValue(
+        text="GNPS",
+        description="Global Natural Products Social Molecular Networking.")
+    PRIDE = PermissibleValue(
+        text="PRIDE",
+        description="EBI PRIDE proteomics repository.")
+    DBGAP = PermissibleValue(
+        text="DBGAP",
+        description="NCBI database of Genotypes and Phenotypes.")
+    GTEX = PermissibleValue(
+        text="GTEX",
+        description="Genotype-Tissue Expression project.")
+    FIGSHARE = PermissibleValue(
+        text="FIGSHARE",
+        description="Figshare general-purpose research data archive.")
+    ZENODO = PermissibleValue(
+        text="ZENODO",
+        description="Zenodo general-purpose research data archive.")
+    BIOMODELS = PermissibleValue(
+        text="BIOMODELS",
+        description="EBI BioModels repository of computational models.")
+    KBASE = PermissibleValue(
+        text="KBASE",
+        description="DOE Systems Biology Knowledgebase (KBase).")
+    OTHER = PermissibleValue(
+        text="OTHER",
+        description="A repository not covered by the above.")
+
+    _defn = EnumDefinition(
+        name="DatasetRepositoryEnum",
+        description="""Public repository hosting the dataset. Superset of CommunityMech's enum (all values preserved) plus common additions; CultureMech datasets have no repository field today and migrate with repository unset / OTHER.""",
     )
 
 # Slots
@@ -3410,6 +3851,9 @@ slots.mediaRecipe__evidence = Slot(uri=CULTUREMECH.evidence, name="mediaRecipe__
 
 slots.mediaRecipe__datasets = Slot(uri=CULTUREMECH.datasets, name="mediaRecipe__datasets", curie=CULTUREMECH.curie('datasets'),
                    model_uri=CULTUREMECH.mediaRecipe__datasets, domain=None, range=Optional[Union[Union[dict, Dataset], list[Union[dict, Dataset]]]])
+
+slots.mediaRecipe__discussions = Slot(uri=CULTUREMECH.discussions, name="mediaRecipe__discussions", curie=CULTUREMECH.curie('discussions'),
+                   model_uri=CULTUREMECH.mediaRecipe__discussions, domain=None, range=Optional[Union[Union[dict, Discussion], list[Union[dict, Discussion]]]])
 
 slots.mediaRecipe__import_metadata = Slot(uri=CULTUREMECH.import_metadata, name="mediaRecipe__import_metadata", curie=CULTUREMECH.curie('import_metadata'),
                    model_uri=CULTUREMECH.mediaRecipe__import_metadata, domain=None, range=Optional[Union[dict, ImportMetadata]])
@@ -3660,7 +4104,7 @@ slots.organismDescriptor__growth_metrics = Slot(uri=CULTUREMECH.growth_metrics, 
                    model_uri=CULTUREMECH.organismDescriptor__growth_metrics, domain=None, range=Optional[Union[Union[dict, GrowthMetrics], list[Union[dict, GrowthMetrics]]]])
 
 slots.organismDescriptor__community_role = Slot(uri=CULTUREMECH.community_role, name="organismDescriptor__community_role", curie=CULTUREMECH.curie('community_role'),
-                   model_uri=CULTUREMECH.organismDescriptor__community_role, domain=None, range=Optional[Union[Union[str, "CellularRoleEnum"], list[Union[str, "CellularRoleEnum"]]]])
+                   model_uri=CULTUREMECH.organismDescriptor__community_role, domain=None, range=Optional[Union[Union[str, "CommunityOrganismRoleEnum"], list[Union[str, "CommunityOrganismRoleEnum"]]]])
 
 slots.organismDescriptor__target_abundance = Slot(uri=CULTUREMECH.target_abundance, name="organismDescriptor__target_abundance", curie=CULTUREMECH.curie('target_abundance'),
                    model_uri=CULTUREMECH.organismDescriptor__target_abundance, domain=None, range=Optional[float])
@@ -4001,18 +4445,6 @@ slots.evidenceItem__snippet = Slot(uri=CULTUREMECH.snippet, name="evidenceItem__
 slots.evidenceItem__explanation = Slot(uri=CULTUREMECH.explanation, name="evidenceItem__explanation", curie=CULTUREMECH.curie('explanation'),
                    model_uri=CULTUREMECH.evidenceItem__explanation, domain=None, range=str)
 
-slots.dataset__dataset_id = Slot(uri=CULTUREMECH.dataset_id, name="dataset__dataset_id", curie=CULTUREMECH.curie('dataset_id'),
-                   model_uri=CULTUREMECH.dataset__dataset_id, domain=None, range=str)
-
-slots.dataset__dataset_type = Slot(uri=CULTUREMECH.dataset_type, name="dataset__dataset_type", curie=CULTUREMECH.curie('dataset_type'),
-                   model_uri=CULTUREMECH.dataset__dataset_type, domain=None, range=Optional[Union[str, "DatasetTypeEnum"]])
-
-slots.dataset__description = Slot(uri=CULTUREMECH.description, name="dataset__description", curie=CULTUREMECH.curie('description'),
-                   model_uri=CULTUREMECH.dataset__description, domain=None, range=Optional[str])
-
-slots.dataset__url = Slot(uri=CULTUREMECH.url, name="dataset__url", curie=CULTUREMECH.curie('url'),
-                   model_uri=CULTUREMECH.dataset__url, domain=None, range=Optional[Union[str, URI]])
-
 slots.curationEvent__timestamp = Slot(uri=CULTUREMECH.timestamp, name="curationEvent__timestamp", curie=CULTUREMECH.curie('timestamp'),
                    model_uri=CULTUREMECH.curationEvent__timestamp, domain=None, range=str)
 
@@ -4124,6 +4556,141 @@ slots.updateEvent__fields_changed = Slot(uri=CULTUREMECH.fields_changed, name="u
 
 slots.updateEvent__notes = Slot(uri=CULTUREMECH.notes, name="updateEvent__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.updateEvent__notes, domain=None, range=Optional[str])
+
+slots.supportingReference__reference = Slot(uri=MECH_SHARED.reference, name="supportingReference__reference", curie=MECH_SHARED.curie('reference'),
+                   model_uri=CULTUREMECH.supportingReference__reference, domain=None, range=str)
+
+slots.supportingReference__reference_title = Slot(uri=MECH_SHARED.reference_title, name="supportingReference__reference_title", curie=MECH_SHARED.curie('reference_title'),
+                   model_uri=CULTUREMECH.supportingReference__reference_title, domain=None, range=Optional[str])
+
+slots.supportingReference__supports = Slot(uri=MECH_SHARED.supports, name="supportingReference__supports", curie=MECH_SHARED.curie('supports'),
+                   model_uri=CULTUREMECH.supportingReference__supports, domain=None, range=Optional[Union[str, "SupportLevelEnum"]])
+
+slots.supportingReference__evidence_source = Slot(uri=MECH_SHARED.evidence_source, name="supportingReference__evidence_source", curie=MECH_SHARED.curie('evidence_source'),
+                   model_uri=CULTUREMECH.supportingReference__evidence_source, domain=None, range=Optional[str])
+
+slots.supportingReference__snippet = Slot(uri=MECH_SHARED.snippet, name="supportingReference__snippet", curie=MECH_SHARED.curie('snippet'),
+                   model_uri=CULTUREMECH.supportingReference__snippet, domain=None, range=Optional[str])
+
+slots.supportingReference__explanation = Slot(uri=MECH_SHARED.explanation, name="supportingReference__explanation", curie=MECH_SHARED.curie('explanation'),
+                   model_uri=CULTUREMECH.supportingReference__explanation, domain=None, range=Optional[str])
+
+slots.supportingReference__notes = Slot(uri=MECH_SHARED.notes, name="supportingReference__notes", curie=MECH_SHARED.curie('notes'),
+                   model_uri=CULTUREMECH.supportingReference__notes, domain=None, range=Optional[str])
+
+slots.discussion__discussion_id = Slot(uri=MECH_SHARED.discussion_id, name="discussion__discussion_id", curie=MECH_SHARED.curie('discussion_id'),
+                   model_uri=CULTUREMECH.discussion__discussion_id, domain=None, range=str)
+
+slots.discussion__prompt = Slot(uri=MECH_SHARED.prompt, name="discussion__prompt", curie=MECH_SHARED.curie('prompt'),
+                   model_uri=CULTUREMECH.discussion__prompt, domain=None, range=str)
+
+slots.discussion__kind = Slot(uri=MECH_SHARED.kind, name="discussion__kind", curie=MECH_SHARED.curie('kind'),
+                   model_uri=CULTUREMECH.discussion__kind, domain=None, range=Optional[Union[str, "DiscussionKindEnum"]])
+
+slots.discussion__status = Slot(uri=MECH_SHARED.status, name="discussion__status", curie=MECH_SHARED.curie('status'),
+                   model_uri=CULTUREMECH.discussion__status, domain=None, range=Optional[Union[str, "DiscussionStatusEnum"]])
+
+slots.discussion__attaches_to = Slot(uri=MECH_SHARED.attaches_to, name="discussion__attaches_to", curie=MECH_SHARED.curie('attaches_to'),
+                   model_uri=CULTUREMECH.discussion__attaches_to, domain=None, range=Optional[Union[str, list[str]]])
+
+slots.discussion__rationale = Slot(uri=MECH_SHARED.rationale, name="discussion__rationale", curie=MECH_SHARED.curie('rationale'),
+                   model_uri=CULTUREMECH.discussion__rationale, domain=None, range=Optional[str])
+
+slots.discussion__proposed_experiments = Slot(uri=MECH_SHARED.proposed_experiments, name="discussion__proposed_experiments", curie=MECH_SHARED.curie('proposed_experiments'),
+                   model_uri=CULTUREMECH.discussion__proposed_experiments, domain=None, range=Optional[Union[Union[dict, ProposedExperiment], list[Union[dict, ProposedExperiment]]]])
+
+slots.discussion__evidence = Slot(uri=MECH_SHARED.evidence, name="discussion__evidence", curie=MECH_SHARED.curie('evidence'),
+                   model_uri=CULTUREMECH.discussion__evidence, domain=None, range=Optional[Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]])
+
+slots.discussion__posed_by = Slot(uri=MECH_SHARED.posed_by, name="discussion__posed_by", curie=MECH_SHARED.curie('posed_by'),
+                   model_uri=CULTUREMECH.discussion__posed_by, domain=None, range=Optional[str])
+
+slots.discussion__posed_date = Slot(uri=MECH_SHARED.posed_date, name="discussion__posed_date", curie=MECH_SHARED.curie('posed_date'),
+                   model_uri=CULTUREMECH.discussion__posed_date, domain=None, range=Optional[Union[str, XSDDate]])
+
+slots.discussion__resolved_date = Slot(uri=MECH_SHARED.resolved_date, name="discussion__resolved_date", curie=MECH_SHARED.curie('resolved_date'),
+                   model_uri=CULTUREMECH.discussion__resolved_date, domain=None, range=Optional[Union[str, XSDDate]])
+
+slots.discussion__resolution_note = Slot(uri=MECH_SHARED.resolution_note, name="discussion__resolution_note", curie=MECH_SHARED.curie('resolution_note'),
+                   model_uri=CULTUREMECH.discussion__resolution_note, domain=None, range=Optional[str])
+
+slots.discussion__notes = Slot(uri=MECH_SHARED.notes, name="discussion__notes", curie=MECH_SHARED.curie('notes'),
+                   model_uri=CULTUREMECH.discussion__notes, domain=None, range=Optional[str])
+
+slots.proposedExperiment__experiment_id = Slot(uri=MECH_SHARED.experiment_id, name="proposedExperiment__experiment_id", curie=MECH_SHARED.curie('experiment_id'),
+                   model_uri=CULTUREMECH.proposedExperiment__experiment_id, domain=None, range=Optional[str])
+
+slots.proposedExperiment__name = Slot(uri=MECH_SHARED.name, name="proposedExperiment__name", curie=MECH_SHARED.curie('name'),
+                   model_uri=CULTUREMECH.proposedExperiment__name, domain=None, range=Optional[str])
+
+slots.proposedExperiment__description = Slot(uri=MECH_SHARED.description, name="proposedExperiment__description", curie=MECH_SHARED.curie('description'),
+                   model_uri=CULTUREMECH.proposedExperiment__description, domain=None, range=Optional[str])
+
+slots.proposedExperiment__approach = Slot(uri=MECH_SHARED.approach, name="proposedExperiment__approach", curie=MECH_SHARED.curie('approach'),
+                   model_uri=CULTUREMECH.proposedExperiment__approach, domain=None, range=Optional[str])
+
+slots.proposedExperiment__model_systems = Slot(uri=MECH_SHARED.model_systems, name="proposedExperiment__model_systems", curie=MECH_SHARED.curie('model_systems'),
+                   model_uri=CULTUREMECH.proposedExperiment__model_systems, domain=None, range=Optional[Union[str, list[str]]])
+
+slots.proposedExperiment__perturbations = Slot(uri=MECH_SHARED.perturbations, name="proposedExperiment__perturbations", curie=MECH_SHARED.curie('perturbations'),
+                   model_uri=CULTUREMECH.proposedExperiment__perturbations, domain=None, range=Optional[Union[str, list[str]]])
+
+slots.proposedExperiment__readouts = Slot(uri=MECH_SHARED.readouts, name="proposedExperiment__readouts", curie=MECH_SHARED.curie('readouts'),
+                   model_uri=CULTUREMECH.proposedExperiment__readouts, domain=None, range=Optional[Union[str, list[str]]])
+
+slots.proposedExperiment__decision_criterion = Slot(uri=MECH_SHARED.decision_criterion, name="proposedExperiment__decision_criterion", curie=MECH_SHARED.curie('decision_criterion'),
+                   model_uri=CULTUREMECH.proposedExperiment__decision_criterion, domain=None, range=Optional[str])
+
+slots.proposedExperiment__would_support = Slot(uri=MECH_SHARED.would_support, name="proposedExperiment__would_support", curie=MECH_SHARED.curie('would_support'),
+                   model_uri=CULTUREMECH.proposedExperiment__would_support, domain=None, range=Optional[str])
+
+slots.proposedExperiment__would_refute = Slot(uri=MECH_SHARED.would_refute, name="proposedExperiment__would_refute", curie=MECH_SHARED.curie('would_refute'),
+                   model_uri=CULTUREMECH.proposedExperiment__would_refute, domain=None, range=Optional[str])
+
+slots.dataset__accession = Slot(uri=MECH_SHARED.accession, name="dataset__accession", curie=MECH_SHARED.curie('accession'),
+                   model_uri=CULTUREMECH.dataset__accession, domain=None, range=Optional[str])
+
+slots.dataset__title = Slot(uri=MECH_SHARED.title, name="dataset__title", curie=MECH_SHARED.curie('title'),
+                   model_uri=CULTUREMECH.dataset__title, domain=None, range=Optional[str])
+
+slots.dataset__description = Slot(uri=MECH_SHARED.description, name="dataset__description", curie=MECH_SHARED.curie('description'),
+                   model_uri=CULTUREMECH.dataset__description, domain=None, range=Optional[str])
+
+slots.dataset__organism = Slot(uri=MECH_SHARED.organism, name="dataset__organism", curie=MECH_SHARED.curie('organism'),
+                   model_uri=CULTUREMECH.dataset__organism, domain=None, range=Optional[str])
+
+slots.dataset__dataset_type = Slot(uri=MECH_SHARED.dataset_type, name="dataset__dataset_type", curie=MECH_SHARED.curie('dataset_type'),
+                   model_uri=CULTUREMECH.dataset__dataset_type, domain=None, range=Optional[Union[str, "DatasetTypeEnum"]])
+
+slots.dataset__repository = Slot(uri=MECH_SHARED.repository, name="dataset__repository", curie=MECH_SHARED.curie('repository'),
+                   model_uri=CULTUREMECH.dataset__repository, domain=None, range=Optional[Union[str, "DatasetRepositoryEnum"]])
+
+slots.dataset__sample_types = Slot(uri=MECH_SHARED.sample_types, name="dataset__sample_types", curie=MECH_SHARED.curie('sample_types'),
+                   model_uri=CULTUREMECH.dataset__sample_types, domain=None, range=Optional[Union[str, list[str]]])
+
+slots.dataset__sample_count = Slot(uri=MECH_SHARED.sample_count, name="dataset__sample_count", curie=MECH_SHARED.curie('sample_count'),
+                   model_uri=CULTUREMECH.dataset__sample_count, domain=None, range=Optional[int])
+
+slots.dataset__conditions = Slot(uri=MECH_SHARED.conditions, name="dataset__conditions", curie=MECH_SHARED.curie('conditions'),
+                   model_uri=CULTUREMECH.dataset__conditions, domain=None, range=Optional[Union[str, list[str]]])
+
+slots.dataset__platform = Slot(uri=MECH_SHARED.platform, name="dataset__platform", curie=MECH_SHARED.curie('platform'),
+                   model_uri=CULTUREMECH.dataset__platform, domain=None, range=Optional[str])
+
+slots.dataset__url = Slot(uri=MECH_SHARED.url, name="dataset__url", curie=MECH_SHARED.curie('url'),
+                   model_uri=CULTUREMECH.dataset__url, domain=None, range=Optional[Union[str, URI]])
+
+slots.dataset__publication = Slot(uri=MECH_SHARED.publication, name="dataset__publication", curie=MECH_SHARED.curie('publication'),
+                   model_uri=CULTUREMECH.dataset__publication, domain=None, range=Optional[str])
+
+slots.dataset__findings = Slot(uri=MECH_SHARED.findings, name="dataset__findings", curie=MECH_SHARED.curie('findings'),
+                   model_uri=CULTUREMECH.dataset__findings, domain=None, range=Optional[str])
+
+slots.dataset__evidence = Slot(uri=MECH_SHARED.evidence, name="dataset__evidence", curie=MECH_SHARED.curie('evidence'),
+                   model_uri=CULTUREMECH.dataset__evidence, domain=None, range=Optional[Union[Union[dict, SupportingReference], list[Union[dict, SupportingReference]]]])
+
+slots.dataset__notes = Slot(uri=MECH_SHARED.notes, name="dataset__notes", curie=MECH_SHARED.curie('notes'),
+                   model_uri=CULTUREMECH.dataset__notes, domain=None, range=Optional[str])
 
 slots.ChemicalEntityTerm_id = Slot(uri=CULTUREMECH.id, name="ChemicalEntityTerm_id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.ChemicalEntityTerm_id, domain=ChemicalEntityTerm, range=Union[str, ChemicalEntityTermId],

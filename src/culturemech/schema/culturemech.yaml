@@ -971,8 +971,8 @@ classes:
           - Each entry should be tied to a literature reference via its evidence list
 
       community_role:
-        description: Functional role in microbial community
-        range: CellularRoleEnum
+        description: Functional role in microbial community (e.g., PRIMARY_DEGRADER, SYNERGIST, COMMENSAL, COMPETITOR).
+        range: CommunityOrganismRoleEnum
         multivalued: true
 
       target_abundance:
@@ -2261,8 +2261,12 @@ enums:
       OTHER_SPECIALIZED:
         description: Specialized cofactors (PQQ, F420, etc.)
 
-  CellularRoleEnum:
-    description: Functional role of organism in microbial community
+  CommunityOrganismRoleEnum:
+    description: >-
+      Role an organism plays in a microbial community (formerly `CellularRoleEnum`;
+      renamed 2026-07-19 for consistency with the MIM #120 rename and to
+      disambiguate from a forthcoming `CellularMetabolicRoleEnum` on ingredient
+      records — these values describe organisms, not ingredients).
     permissible_values:
       PRIMARY_DEGRADER:
         description: Primary degrader with direct substrate degradation capability (40-60% abundance)
