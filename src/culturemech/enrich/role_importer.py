@@ -141,12 +141,6 @@ class RoleImporter:
         Returns:
             True if roles were added, False otherwise
         """
-        # Skip if any facet role slot is already populated (curator or a
-        # prior import pass wrote something — never overwrite).
-        if any(slot in ingredient for slot in FACET_ROLE_SLOTS):
-            self.stats['already_has_role'] += 1
-            return False
-
         # Get MediaIngredientMech ID
         mim_term = ingredient.get('mediaingredientmech_term')
         if not mim_term:
@@ -194,11 +188,30 @@ class RoleImporter:
             self.stats['no_roles_found'] += 1
             return False
 
+        # Per-slot "never overwrite" — matches import_ingredient_roles.py:
+        # if a curator already populated `physicochemical_roles`, we still
+        # add to `nutritional_roles` if that facet is untouched. Skip
+        # per-facet rather than skip the whole ingredient.
+        assigned = 0
+        skipped_any = False
         for slot, values in bucketed.items():
+            if slot in ingredient:
+                skipped_any = True
+                continue
             ingredient[slot] = values
+            assigned += len(values)
+
+        if assigned == 0:
+            self.stats['already_has_role'] += 1
+            return False
+
+        if skipped_any:
+            # Partial-write case: at least one slot was already populated
+            # (respected) but at least one other slot got new values.
+            self.stats['already_has_role'] += 1
 
         self.stats['ingredients_assigned'] += 1
-        self.stats['roles_assigned'] += sum(len(v) for v in bucketed.values())
+        self.stats['roles_assigned'] += assigned
 
         return True
 

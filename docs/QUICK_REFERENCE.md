@@ -18,11 +18,25 @@ just validate-all
 
 ## Field Reference
 
-### Ingredient.role (multivalued)
+### Ingredient roles — three orthogonal facet slots (all multivalued)
+
+The retired flat `role:` slot has been split into three orthogonal facets so
+a single ingredient can carry non-conflicting assignments across axes
+(e.g. L-cysteine → `AMINO_ACID_SOURCE + SULFUR_SOURCE` nutritionally,
+`REDUCING_AGENT` physicochemically, `SUBSTRATE` metabolically).
+
 ```yaml
-role: [CARBON_SOURCE, ENERGY_SOURCE]
+nutritional_roles: [CARBON_SOURCE, ENERGY_SOURCE]
+physicochemical_roles: [BUFFER]
+cellular_metabolic_roles: [SUBSTRATE]
+role_curie: [CHEBI:35225]        # escape hatch for out-of-vocabulary role terms
 ```
-Values: `CARBON_SOURCE`, `NITROGEN_SOURCE`, `MINERAL`, `TRACE_ELEMENT`, `BUFFER`, `VITAMIN_SOURCE`, `SALT`, `PROTEIN_SOURCE`, `AMINO_ACID_SOURCE`, `SOLIDIFYING_AGENT`, `ENERGY_SOURCE`, `ELECTRON_ACCEPTOR`, `ELECTRON_DONOR`, `COFACTOR_PROVIDER`
+
+- `nutritional_roles` (`NutritionalRoleEnum`, 12 values) — what element/macronutrient the ingredient supplies: `CARBON_SOURCE`, `NITROGEN_SOURCE`, `SULFUR_SOURCE`, `PHOSPHATE_SOURCE`, `IRON_SOURCE`, `TRACE_ELEMENT`, `VITAMIN_SOURCE`, `AMINO_ACID_SOURCE`, `PROTEIN_SOURCE`, `COFACTOR_PROVIDER`, `ENERGY_SOURCE`, `LIGHT_SOURCE`.
+- `physicochemical_roles` (`PhysicochemicalRoleEnum`, 12 values) — chemical/physical function: `BUFFER`, `SOLIDIFYING_AGENT`, `CHELATOR`, `SURFACTANT`, `REDUCING_AGENT`, `OXIDIZING_AGENT`, `PH_INDICATOR`, `REDOX_INDICATOR`, `SELECTIVE_AGENT`, `ANTIFOAM`, `OSMOTIC_AGENT`, `PRECIPITATION_INHIBITOR`.
+- `cellular_metabolic_roles` (`CellularMetabolicRoleEnum`, 10 values) — role inside/on the microbe (often organism-conditional): `SUBSTRATE`, `ELECTRON_DONOR`, `ELECTRON_ACCEPTOR`, `COFACTOR`, `PROSTHETIC_GROUP_PRECURSOR`, `MEMBRANE_COMPONENT`, `OSMOPROTECTANT`, `INDUCER`, `INHIBITOR`, `QUENCHER`.
+
+Enum vocabularies are vendored from MediaIngredientMech via `mim_roles.yaml`.
 
 ### Ingredient.cofactors_provided (multivalued)
 ```yaml
@@ -75,7 +89,8 @@ Values: `bacterial`, `fungal`, `archaea`, `specialized`, `algae`, `imported`
 ```yaml
 - preferred_term: Glucose
   concentration: {value: '10', unit: G_PER_L}
-  role: [CARBON_SOURCE]
+  nutritional_roles: [CARBON_SOURCE, ENERGY_SOURCE]
+  cellular_metabolic_roles: [SUBSTRATE]
 ```
 
 ### Full Ingredient Enrichment
@@ -83,7 +98,7 @@ Values: `bacterial`, `fungal`, `archaea`, `specialized`, `algae`, `imported`
 - preferred_term: MgSO4
   concentration: {value: '1', unit: G_PER_L}
   term: {id: CHEBI:31795, label: MgSO4}
-  role: [MINERAL, COFACTOR_PROVIDER]
+  nutritional_roles: [SULFUR_SOURCE, COFACTOR_PROVIDER]  # Mg is a cofactor cation, sulfate supplies sulfur
   cofactors_provided:
     - preferred_term: Magnesium ion
       term: {id: CHEBI:18420, label: magnesium(2+)}
