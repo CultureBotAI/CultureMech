@@ -34,7 +34,7 @@ ingredients:
     label: MgSO4 x 7 H2O
 - preferred_term: (NH4)2HPO4
   term:
-    id: CHEBI:62476
+    id: CHEBI:63051
     label: (NH4)2HPO4
   concentration:
     value: '1'
@@ -44,7 +44,7 @@ ingredients:
     label: (NH4)2HPO4
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
+    id: CHEBI:63043
     label: KNO3
   concentration:
     value: '1'

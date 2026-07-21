@@ -137,7 +137,7 @@ ingredients:
     label: NaHCO3
 - preferred_term: Na2S2O3
   term:
-    id: CHEBI:59168
+    id: CHEBI:132112
     label: Na2S2O3
   concentration:
     value: '5'

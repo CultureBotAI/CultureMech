@@ -41,7 +41,7 @@ ingredients:
   notes: ' [Merged 3 duplicates: 600.0, 300.0, 100.0]'
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
+    id: CHEBI:63043
     label: KNO3
   concentration:
     value: '3.33333'

@@ -24,7 +24,7 @@ ingredients:
     value: '10'
     unit: G_PER_L
   term:
-    id: FOODON:03302071
+    id: MICRO:0000180
     label: Proteose peptone
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 91079-38-8'
 - preferred_term: Sodium Chloride

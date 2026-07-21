@@ -230,7 +230,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Calcium D-(+)-pantothenate
   term:
-    id: CHEBI:1687714
+    id: CHEBI:31345
     label: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'

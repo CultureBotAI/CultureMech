@@ -87,7 +87,7 @@ ingredients:
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:62476
+    id: CHEBI:63051
     label: (NH4)2HPO4
   mediaingredientmech_term:
     id: MediaIngredientMech:000385

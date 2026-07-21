@@ -114,7 +114,7 @@ ingredients:
     label: Citric acid
 - preferred_term: Eisencitrat
   term:
-    id: CHEBI:55553
+    id: CHEBI:144434
     label: Eisencitrat
   concentration:
     value: '10'

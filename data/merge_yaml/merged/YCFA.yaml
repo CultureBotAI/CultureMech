@@ -213,7 +213,7 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
   term:
-    id: CHEBI:503742
+    id: CHEBI:28484
     label: null
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 503-74-2; MW: 102.13'
 description: Yeast Casitone Fatty Acids broth

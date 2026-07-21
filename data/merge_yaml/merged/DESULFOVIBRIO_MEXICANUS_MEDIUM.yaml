@@ -128,7 +128,7 @@ ingredients:
     label: Na2S x 9 H2O
 - preferred_term: L-Sodium lactate
   term:
-    id: CHEBI:867561
+    id: CHEBI:232798
     label: L-Sodium lactate
   concentration:
     value: '125'

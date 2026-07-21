@@ -64,7 +64,7 @@ ingredients:
     label: NaHCO3
 - preferred_term: Na2S2O3
   term:
-    id: CHEBI:59168
+    id: CHEBI:132112
     label: Na2S2O3
   concentration:
     value: '10'
@@ -182,7 +182,7 @@ ingredients:
     label: KBr
 - preferred_term: KF
   term:
-    id: CHEBI:73605
+    id: CHEBI:66872
     label: KF
   concentration:
     value: '0.004'

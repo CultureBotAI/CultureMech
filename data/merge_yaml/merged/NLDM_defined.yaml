@@ -370,7 +370,7 @@ ingredients:
     value: '525.0'
     unit: MICROMOLAR
   term:
-    id: CHEBI:82919
+    id: CHEBI:63675
     label: sodium succinate
   notes: 'Mapping: manual (confidence: 0.90); CAS: 6106-21-4; MW: 270.14; From NLDM_metabolites'
 - preferred_term: Sodium pyruvate

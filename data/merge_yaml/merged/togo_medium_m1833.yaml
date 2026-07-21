@@ -317,7 +317,7 @@ ingredients:
     label: Co(NO3)2·6H2O
 - preferred_term: Tryptone
   term:
-    id: FOODON:03316428
+    id: MICRO:0000182
     label: tryptone
   concentration:
     value: '10.0'
@@ -336,7 +336,7 @@ ingredients:
     synonym_type: EXACT
 - preferred_term: Yeast extract
   term:
-    id: FOODON:00002960
+    id: FOODON:03315426
     label: yeast extract
   concentration:
     value: '5.0'
@@ -411,7 +411,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:503742
+    id: CHEBI:28484
     label: ''
   mediaingredientmech_term:
     id: MediaIngredientMech:000378

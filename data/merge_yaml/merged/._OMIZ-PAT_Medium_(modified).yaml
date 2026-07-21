@@ -45,7 +45,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: L-Cysteine HCl
   term:
-    id: CHEBI:52891
+    id: CHEBI:91247
     label: L-Cysteine HCl
   concentration:
     value: '7'
@@ -197,7 +197,7 @@ ingredients:
   notes: ' (trisodium salt)'
 - preferred_term: Calcium D-(+)-pantothenate
   term:
-    id: CHEBI:1687714
+    id: CHEBI:31345
     label: Calcium D-(+)-pantothenate
   concentration:
     value: '0.1'
@@ -477,7 +477,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Folinic acid
   term:
-    id: CHEBI:42521
+    id: CHEBI:15640
     label: Folinic acid
   concentration:
     value: '0.1'

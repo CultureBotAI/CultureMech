@@ -43,7 +43,7 @@ ingredients:
     label: CaCl2 x 2 H2O
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '0.17'
@@ -53,7 +53,7 @@ ingredients:
     label: NaNO3
 - preferred_term: HEPES buffer
   term:
-    id: CHEBI:19708
+    id: CHEBI:46756
     label: HEPES buffer
   concentration:
     value: '5'

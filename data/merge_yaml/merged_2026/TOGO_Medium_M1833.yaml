@@ -271,7 +271,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:503742
+    id: CHEBI:28484
     label: ''
 - preferred_term: iso-Butyric acid
   concentration:

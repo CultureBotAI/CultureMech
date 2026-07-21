@@ -40,7 +40,7 @@ ingredients:
     label: Dextrose
 - preferred_term: ACES
   term:
-    id: CHEBI:65994
+    id: CHEBI:39061
     label: ACES
   concentration:
     value: '3.64'

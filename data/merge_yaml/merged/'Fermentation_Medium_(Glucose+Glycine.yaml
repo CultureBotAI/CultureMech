@@ -41,7 +41,7 @@ ingredients:
   notes: 'Cross-references: KEGG:gly'
 - preferred_term: Nicotinate
   term:
-    id: CHEBI:10716816
+    id: CHEBI:32544
     label: Nicotinate
   concentration:
     value: '0.09747'

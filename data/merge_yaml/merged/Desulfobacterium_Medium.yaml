@@ -135,7 +135,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
     compound'
   term:
-    id: CHEBI:867561
+    id: CHEBI:232798
     label: ''
   mediaingredientmech_term:
     id: MediaIngredientMech:000540

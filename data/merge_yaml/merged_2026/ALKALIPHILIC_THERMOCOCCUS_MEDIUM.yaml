@@ -72,7 +72,7 @@ ingredients:
   notes: ' [Merged 2 duplicates: 2.5e-05, 0.1]'
 - preferred_term: KI
   term:
-    id: CHEBI:74559
+    id: CHEBI:8346
     label: KI
   concentration:
     value: '0.0075'

@@ -86,7 +86,7 @@ ingredients:
     label: NaCl
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
+    id: CHEBI:63043
     label: KNO3
   concentration:
     value: '2'
@@ -150,7 +150,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Cysteine-HCl
   term:
-    id: CHEBI:52891
+    id: CHEBI:91247
     label: Cysteine-HCl
   concentration:
     value: '0.5'

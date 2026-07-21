@@ -23,7 +23,7 @@ ingredients:
     label: Marine agar 2216
 - preferred_term: Tween 20
   term:
-    id: CHEBI:9784
+    id: CHEBI:53424
     label: Tween 20
   concentration:
     value: '10'

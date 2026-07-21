@@ -94,7 +94,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: DL-Malate
   term:
-    id: CHEBI:65947
+    id: CHEBI:15595
     label: DL-Malate
   concentration:
     value: '40'

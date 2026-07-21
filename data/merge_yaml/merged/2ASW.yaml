@@ -17,7 +17,7 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   term:
-    id: CHEBI:35920
+    id: CHEBI:46760
     label: ''
 - preferred_term: NaCl
   term:
@@ -31,7 +31,7 @@ ingredients:
     label: NaCl
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '30'

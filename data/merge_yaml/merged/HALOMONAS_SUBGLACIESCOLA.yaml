@@ -66,7 +66,7 @@ ingredients:
     label: (NH4)2SO4
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
+    id: CHEBI:63043
     label: KNO3
   concentration:
     value: '0.1'

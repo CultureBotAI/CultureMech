@@ -41,8 +41,8 @@ ingredients:
     label: Na2HPO4 x 2 H2O
 - preferred_term: Peptone
   term:
-    id: FOODON:03316428
-    label: tryptone
+    id: MICRO:0000178
+    label: peptone
   concentration:
     value: '17.0'
     unit: G_PER_L
@@ -60,7 +60,7 @@ ingredients:
     synonym_type: EXACT
 - preferred_term: Proteose peptone
   term:
-    id: FOODON:03302071
+    id: MICRO:0000180
     label: proteose peptone
   concentration:
     value: '3.0'

@@ -162,7 +162,7 @@ ingredients:
     label: KBr
 - preferred_term: KF
   term:
-    id: CHEBI:73605
+    id: CHEBI:66872
     label: KF
   concentration:
     value: '0.004'
