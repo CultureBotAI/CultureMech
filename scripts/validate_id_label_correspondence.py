@@ -386,6 +386,16 @@ def _plausibility_verdict(
     is rejected outright; a label we cannot judge at all is accepted, so the
     gate never fails on absent evidence.
     """
+    # An exact match to the term's OWN label or a synonym is plausible by
+    # definition, and must win before the formula check -- otherwise an all-caps
+    # abbreviation that happens to parse as element symbols is rejected against
+    # the term's real formula. "CCCP" IS the canonical label of CHEBI:3259
+    # (formula C9H5ClN4); read as a formula it is C3P, which "conflicts", so the
+    # ontology's own label was reported IMPLAUSIBLE_LABEL. `accepted` already
+    # holds normalized canonical + synonyms.
+    if normalize(label) in accepted:
+        return "OK_ID_ONLY", "matches the term's own label or a synonym"
+
     if formula_lookup is None:
         akey = id(adapter)
         if akey not in _FORMULA_LOOKUPS:

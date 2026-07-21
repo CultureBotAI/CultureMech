@@ -61,6 +61,9 @@ ADAPTER = FakeAdapter({
     "CHEBI:33141": {"label": "dichromate(2-)", "formula": "Cr2O7"},
     # correct grounding whose LABEL lost its subscripts upstream
     "CHEBI:29377": {"label": "sodium carbonate", "formula": "CO3.2Na"},
+    # an ALL-CAPS abbreviation that IS the canonical label but parses as a
+    # formula (C,C,C,P) conflicting with the real formula C9H5ClN4.
+    "CHEBI:3259": {"label": "CCCP", "formula": "C9H5ClN4"},
 })
 
 
@@ -90,6 +93,16 @@ def test_curator_labels_still_pass(label, curie):
 ])
 def test_unrelated_compound_is_flagged(label, curie):
     assert _classify(label, curie) == "IMPLAUSIBLE_LABEL"
+
+
+def test_abbreviation_matching_canonical_label_is_not_a_formula_conflict():
+    """An exact match to the term's own label must win before the formula check.
+
+    "CCCP" is CHEBI:3259's canonical label; read as a formula it is C3P, which
+    conflicts with the real C9H5ClN4. Without the exact-match short-circuit the
+    ontology's own label was reported IMPLAUSIBLE_LABEL.
+    """
+    assert _classify("CCCP", "CHEBI:3259") == "OK_ID_ONLY"
 
 
 def test_lost_subscripts_reported_separately():
