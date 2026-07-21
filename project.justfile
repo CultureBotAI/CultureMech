@@ -125,6 +125,14 @@ prioritize-role-research-candidates *args="":
 extract-roles-from-edison inputs="../MediaIngredientMech/research/ingredients/roles" *args="":
     uv run --extra dev python scripts/extract_roles_from_edison.py {{inputs}} {{args}}
 
+# Apply the scalar-projection role batch (from `extract-roles-from-edison --out-cm`)
+# across every recipe under data/normalized_yaml/. Fills empty facet slots on
+# ingredient descriptors whose CHEBI id matches a batch proposal; never overwrites
+# curator assignments. Adds a curation-history event per changed recipe.
+[group('Research')]
+apply-ingredient-roles batch *args="":
+    uv run --extra dev python scripts/apply_ingredient_roles.py {{batch}} {{args}}
+
 [group('Research')]
 research-organism-recipe-edison target organism *args="":
     uv run --extra dev python scripts/research_organism_recipe_edison.py \
