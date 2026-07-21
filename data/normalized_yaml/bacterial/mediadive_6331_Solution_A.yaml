@@ -12,7 +12,7 @@ composition:
     id: mediadive.compound:581
     label: ACES
   chebi_term:
-    id: CHEBI:65994
+    id: CHEBI:39061
     label: ACES
     confidence: 0.7
     match_type: corpus_consensus

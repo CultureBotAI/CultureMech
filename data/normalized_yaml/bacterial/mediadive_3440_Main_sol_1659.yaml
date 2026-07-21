@@ -108,7 +108,7 @@ composition:
     id: mediadive.compound:472
     label: DL-Malate
   chebi_term:
-    id: CHEBI:65947
+    id: CHEBI:15595
     label: DL-Malate
     confidence: 0.9
     match_type: corpus_consensus

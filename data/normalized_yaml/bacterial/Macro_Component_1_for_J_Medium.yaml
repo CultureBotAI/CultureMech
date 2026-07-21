@@ -9,7 +9,7 @@ composition:
     value: '67.0'
     unit: G_PER_L
   term:
-    id: CHEBI:65246
+    id: CHEBI:63005
     label: sodium nitrate
   mediaingredientmech_term:
     id: MediaIngredientMech:000388
@@ -38,7 +38,7 @@ composition:
     value: '25.0'
     unit: G_PER_L
   term:
-    id: CHEBI:9750
+    id: CHEBI:46760
     label: tricine
 notes: 'Macro Component 1 for J Medium (UTEX).
 

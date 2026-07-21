@@ -59,7 +59,7 @@ composition:
     id: mediadive.compound:1438
     label: Sodium succinate dibasic
   chebi_term:
-    id: CHEBI:150903
+    id: CHEBI:63675
     label: Sodium succinate dibasic
     confidence: 0.7
     match_type: corpus_consensus
@@ -71,7 +71,7 @@ composition:
     id: mediadive.compound:59
     label: Pyruvic acid sodium salt
   chebi_term:
-    id: CHEBI:113246
+    id: CHEBI:50144
     label: Pyruvic acid sodium salt
     confidence: 0.7
     match_type: corpus_consensus

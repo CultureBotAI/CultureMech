@@ -14,7 +14,7 @@ notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1
 ingredients:
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '0.5'

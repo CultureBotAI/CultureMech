@@ -120,7 +120,7 @@ ingredients:
   term:
     id: CHEBI:34887
     label: ''
-- preferred_term: ZnCl
+- preferred_term: ZnCl2
   concentration:
     value: '0.13'
     unit: G_PER_L

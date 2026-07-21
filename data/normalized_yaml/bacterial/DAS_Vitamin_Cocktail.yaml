@@ -9,11 +9,11 @@ composition:
     value: '9.0'
     unit: G_PER_L
   term:
-    id: CHEBI:9750
+    id: CHEBI:46760
     label: tricine
   notes: Buffer adjusted to pH 8.0
   mediaingredientmech_chebi_term:
-    id: CHEBI:9750
+    id: CHEBI:46760
     label: tricine
 - preferred_term: Thiamine (Vitamin B1)
   concentration:

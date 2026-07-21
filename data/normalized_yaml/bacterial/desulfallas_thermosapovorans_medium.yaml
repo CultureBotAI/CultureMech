@@ -355,13 +355,13 @@ ingredients:
     label: (DL)-alpha-Lipoic acid
 - preferred_term: Na2S2O4
   term:
-    id: CHEBI:61278
+    id: CHEBI:66870
     label: Na2S2O4
   concentration:
     value: '50'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:61278
+    id: CHEBI:66870
     label: Na2S2O4
 preparation_steps:
 - step_number: 1

@@ -199,10 +199,10 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
   term:
-    id: CHEBI:61278
+    id: CHEBI:66870
     label: Na2S2O4
   mediaingredientmech_chebi_term:
-    id: CHEBI:61278
+    id: CHEBI:66870
     label: Na2S2O4
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'

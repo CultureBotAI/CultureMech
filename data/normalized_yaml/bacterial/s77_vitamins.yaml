@@ -39,10 +39,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_S77.pdf
   notes: From CCAP Medium MR_S77.pdf; Curated from CCAP Medium MR_S77.pdf specification
-- preferred_term: CaSO .2H O
+- preferred_term: CaSO4 x 2 H2O
   term:
-    id: CHEBI:88481
-    label: CaSO .2H O
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -95,10 +95,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_S77.pdf
   notes: From CCAP Medium MR_S77.pdf; Curated from CCAP Medium MR_S77.pdf specification
-- preferred_term: K HPO
+- preferred_term: K2HPO4
   term:
-    id: CHEBI:32030
-    label: K HPO
+    id: CHEBI:131527
+    label: K2HPO4
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -123,10 +123,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_S77.pdf
   notes: From CCAP Medium MR_S77.pdf; Curated from CCAP Medium MR_S77.pdf specification
-- preferred_term: SrCl .6H O
+- preferred_term: SrCl2 x 6 H2O
   term:
-    id: CHEBI:82444
-    label: SrCl .6H O
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -151,10 +151,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_S77.pdf
   notes: From CCAP Medium MR_S77.pdf; Curated from CCAP Medium MR_S77.pdf specification
-- preferred_term: FeSO .7H O
+- preferred_term: FeSO4 x 7H2O
   term:
     id: CHEBI:75832
-    label: FeSO .7H O
+    label: FeSO4 x 7H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

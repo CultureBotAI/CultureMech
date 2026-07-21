@@ -74,13 +74,13 @@ ingredients:
     label: Fructose
 - preferred_term: Sodium succinate dibasic
   term:
-    id: CHEBI:150903
+    id: CHEBI:63675
     label: Sodium succinate dibasic
   concentration:
     value: '0.48'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:150903
+    id: CHEBI:63675
     label: Sodium succinate dibasic
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -144,7 +144,7 @@ ingredients:
     label: Citric acid
 - preferred_term: Eisencitrat
   term:
-    id: CHEBI:55553
+    id: CHEBI:144434
     label: Eisencitrat
   concentration:
     value: '10'

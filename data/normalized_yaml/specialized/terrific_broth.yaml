@@ -8,7 +8,7 @@ ingredients:
     value: '11.8'
     unit: G_PER_L
   term:
-    id: FOODON:03310375
+    id: MICRO:0000182
     label: Tryptone
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 91079-40-2'
 - preferred_term: Yeast Extract

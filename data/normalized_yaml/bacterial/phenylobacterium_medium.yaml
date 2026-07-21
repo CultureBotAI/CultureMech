@@ -113,7 +113,7 @@ ingredients:
     label: CuSO4 x 5 H2O
 - preferred_term: KI
   term:
-    id: CHEBI:74559
+    id: CHEBI:8346
     label: KI
   concentration:
     value: '0.0001'

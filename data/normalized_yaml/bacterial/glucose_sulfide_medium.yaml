@@ -124,7 +124,7 @@ ingredients:
     label: Calcium pantothenate
 - preferred_term: Co Carboxylase
   term:
-    id: CHEBI:45395
+    id: CHEBI:9532
     label: Co Carboxylase
   concentration:
     value: '0.0001'

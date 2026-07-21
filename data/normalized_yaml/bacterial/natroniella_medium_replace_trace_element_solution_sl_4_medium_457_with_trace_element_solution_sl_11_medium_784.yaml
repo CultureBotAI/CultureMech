@@ -100,7 +100,7 @@ ingredients:
     label: NaHCO3
 - preferred_term: Ethanol absolute
   term:
-    id: CHEBI:64175
+    id: CHEBI:16236
     label: Ethanol absolute
   concentration:
     value: '5'

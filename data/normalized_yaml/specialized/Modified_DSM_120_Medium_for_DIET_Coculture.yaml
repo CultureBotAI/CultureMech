@@ -62,7 +62,7 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000988
   term:
-    id: CHEBI:85357
+    id: CHEBI:76208
     label: sodium sulfide
 temperature_value: 37.0
 incubation_atmosphere: ANAEROBIC

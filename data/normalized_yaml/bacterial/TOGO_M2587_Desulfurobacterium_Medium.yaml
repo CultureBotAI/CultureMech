@@ -116,7 +116,7 @@ ingredients:
 - &id001
   preferred_term: Tryptone
   term:
-    id: FOODON:03316428
+    id: MICRO:0000182
     label: tryptone
   concentration:
     value: '10.0'
@@ -136,7 +136,7 @@ ingredients:
 - &id002
   preferred_term: Yeast extract
   term:
-    id: FOODON:00002960
+    id: FOODON:03315426
     label: yeast extract
   concentration:
     value: '5.0'
@@ -445,10 +445,10 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
   term:
-    id: CHEBI:61278
+    id: CHEBI:66870
     label: Na2S2O4
   mediaingredientmech_chebi_term:
-    id: CHEBI:61278
+    id: CHEBI:66870
     label: Na2S2O4
 media_term:
   preferred_term: TOGO Medium M2587

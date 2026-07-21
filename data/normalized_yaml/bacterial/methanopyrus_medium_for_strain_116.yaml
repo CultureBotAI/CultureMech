@@ -216,7 +216,7 @@ ingredients:
     label: H3BO3
 - preferred_term: KI
   term:
-    id: CHEBI:74559
+    id: CHEBI:8346
     label: KI
   concentration:
     value: '0.01125'

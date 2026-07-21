@@ -48,7 +48,7 @@ composition:
     id: mediadive.compound:1548
     label: 3-Indolyl acetic acid
   chebi_term:
-    id: CHEBI:87514
+    id: CHEBI:16411
     label: 3-Indolyl acetic acid
     confidence: 0.7
     match_type: corpus_consensus
