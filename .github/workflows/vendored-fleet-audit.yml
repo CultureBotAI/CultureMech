@@ -1,0 +1,21 @@
+name: vendored-fleet-audit
+
+# Nightly cross-repo audit: the per-repo drift check verifies each spoke against
+# the hub, but nothing checks the hub itself or a spoke whose pinned ref lags.
+# This compares all four Mech repos' vendored files on main and fails on any
+# disagreement. Dependency-free (checkout + curl).
+on:
+  schedule:
+    - cron: "17 8 * * *"   # 08:17 UTC daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit vendored files across the fleet
+        run: bash scripts/audit_vendored_fleet.sh
