@@ -139,3 +139,67 @@ def test_unparseable_formula_refuses_to_judge():
     """Returning None means 'cannot judge' — never a mismatch."""
     assert chem.parse_formula("Not a formula at all") is None
     assert chem.parse_ontology_formula("C12H20O2R") is None  # generic R group
+
+
+# --- hydrate separators -----------------------------------------------------
+# Regression cases from a live scan of 23,129 real CultureMech ingredient
+# labels. The separator before a hydrate tail appears as whitespace, a dot, a
+# middot, or an "x", sometimes combined; getting any of them wrong silently
+# fabricates an element multiset, which is worse than declining to judge.
+
+
+@pytest.mark.parametrize(
+    "label, expected",
+    [
+        # Whitespace alone is a separator. Requiring x/·/* absorbed the
+        # multiplier into the preceding element: "CaCl2 2H2O" parsed to Cl:22
+        # and produced a false SUBSCRIPTS_LOST on a correct label.
+        ("CaCl2 2H2O", {"Ca": 1, "Cl": 2, "H": 4, "O": 2}),
+        ("MgSO4 7H2O", {"Mg": 1, "S": 1, "O": 11, "H": 14}),
+        # A dot separator with surrounding spaces. Both forms occur in
+        # CultureMech (CuSO4 . 5H2O x14, Na2MoO4. 2H2O x2); accepting
+        # whitespace as a separator must not strand the dot in the core.
+        ("CuSO4 . 5H2O", {"Cu": 1, "S": 1, "O": 9, "H": 10}),
+        ("Na2MoO4. 2H2O", {"Na": 2, "Mo": 1, "O": 6, "H": 4}),
+        # Long-standing forms that must keep working.
+        ("CaCl2 x 2 H2O", {"Ca": 1, "Cl": 2, "H": 4, "O": 2}),
+        ("CuSO4·5H2O", {"Cu": 1, "S": 1, "O": 9, "H": 10}),
+        # "x" as separator with no count is a monohydrate, not a variable.
+        ("MnSO4 x H2O", {"Mn": 1, "S": 1, "O": 5, "H": 2}),
+    ],
+)
+def test_hydrate_separator_forms(label, expected):
+    assert chem.parse_formula(label) == expected
+
+
+@pytest.mark.parametrize("label", ["VOSO4·xH2O", "MnSO4 x n H2O", "Fe2(SO4)3 x n H2O"])
+def test_variable_hydrate_refuses_to_judge(label):
+    """An unknown multiplier must return None, not a guess of 1.
+
+    The spaced form already did; the contiguous "·xH2O" form guessed, so the
+    same meaning got two answers.
+    """
+    assert chem.parse_formula(label) is None
+
+
+# --- R-prefixed element symbols ---------------------------------------------
+
+
+@pytest.mark.parametrize(
+    "formula, expected",
+    [
+        ("ClRb", {"Cl": 1, "Rb": 1}),   # rubidium chloride — "RbCl" is a real label
+        ("Cl3Ru", {"Cl": 3, "Ru": 1}),
+        ("Cl3Rh", {"Cl": 3, "Rh": 1}),
+        ("O2Re", {"O": 2, "Re": 1}),
+    ],
+)
+def test_r_prefixed_elements_are_not_generic_r_groups(formula, expected):
+    """A substring test for "R" also matched Rb/Ru/Rh/Re/Ra/Rn, dropping the
+    formula check and leaving correct labels reported IMPLAUSIBLE_LABEL."""
+    assert chem.parse_ontology_formula(formula) == expected
+
+
+@pytest.mark.parametrize("formula", ["RCOOH", "C10H18RO"])
+def test_generic_r_group_still_refused(formula):
+    assert chem.parse_ontology_formula(formula) is None
