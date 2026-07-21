@@ -832,9 +832,14 @@ def run(config_path: Path, report_path: Path | None) -> int:
                 # ("soy peptone" on FOODON "vegetable protein, hydrolyzed"
                 # shares no word) — so they are waivable too. Structural errors
                 # (UNKNOWN_PREFIX, ADAPTER_ERROR, MISSING_*) remain unwaivable.
+                # ID_OUT_OF_RANGE explicitly signals a foreign identifier
+                # wearing an OBO prefix (e.g. PubChem CID as CHEBI:) — that's
+                # the one class the allow-list must NOT cover; a curator who
+                # really wants to keep such an id should add its true prefix
+                # to `ignored_prefixes` instead.
                 if rec["verdict"] in (
                     "MISMATCH", "ID_NOT_FOUND", "IMPLAUSIBLE_LABEL",
-                    "LABEL_SUBSCRIPTS_LOST", "ID_OUT_OF_RANGE",
+                    "LABEL_SUBSCRIPTS_LOST",
                 ) and (curie, normalize(label)) in exceptions:
                     rec["verdict"] = "OK_EXCEPTION"
                 counts[rec["verdict"]] = counts.get(rec["verdict"], 0) + 1
