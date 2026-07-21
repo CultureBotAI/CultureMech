@@ -47,8 +47,30 @@ _ELEM_RE = re.compile(r"(" + "|".join(sorted(ELEMENTS, key=len, reverse=True)) +
 # Roman-numeral oxidation states: "Fe(III)PO4" — strip before element parsing,
 # otherwise "III" parses as iodine ×3.
 _OXSTATE_RE = re.compile(r"\((?:I{1,3}|IV|V|VI{0,3}|IX|X)\)", re.IGNORECASE)
-_HYDRATE_TAIL_RE = re.compile(r"[x·・*]\s*(\d*)\s*H2\s*O\s*$", re.IGNORECASE)
+# The separator is optional: "MgSO4 7H2O" is as common a rendering as
+# "MgSO4 x 7H2O". Without whitespace as a separator the space was stripped and
+# the multiplier absorbed into the preceding element -- "CaCl2 2H2O" parsed to
+# Cl:22, which then produced a false SUBSCRIPTS_LOST on a correct label.
+# "R" NOT followed by the lowercase letter of an R-prefixed element symbol.
+_GENERIC_R_RE = re.compile(r"R(?![abefghnu])")
+
+_HYDRATE_TAIL_RE = re.compile(
+    r"(?:[x·・*]|\s)\s*(\d*)\s*H2\s*O\s*$", re.IGNORECASE
+)
 _HYDRATE_DOT_RE = re.compile(r"^(.*?)\.\s*(\d*)\s*H2O$", re.IGNORECASE)
+
+# A hydrate whose multiplier is a VARIABLE ("VOSO4·xH2O", "MnSO4 x n H2O") --
+# the count is unknown, so guessing 1 would be a fabricated multiset. The
+# spaced form already returned None; the contiguous form silently guessed,
+# giving two answers for the same meaning. None = "cannot judge".
+# Two readings of a trailing "x":
+#   "MnSO4 x H2O"  -- x is the SEPARATOR, count implied 1 (a monohydrate)
+#   "VOSO4·xH2O"   -- the separator is the dot, so x is the MULTIPLIER, unknown
+# Only the second is variable. "n" is never a separator, so a bare n before H2O
+# is always variable.
+_VARIABLE_HYDRATE_RE = re.compile(
+    r"(?:[·.・*]\s*x|(?<![A-Za-z0-9])n)\s*H2\s*O\s*$", re.IGNORECASE
+)
 
 
 def looks_like_formula(name: str) -> bool:
@@ -79,6 +101,8 @@ def parse_formula(text: str) -> dict[str, int] | None:
     if not text:
         return None
     s = _OXSTATE_RE.sub("", text.strip())
+    if _VARIABLE_HYDRATE_RE.search(s):
+        return None
     counts: dict[str, int] = {}
 
     def add(elem: str, n: int) -> None:
@@ -89,7 +113,12 @@ def parse_formula(text: str) -> dict[str, int] | None:
         n = int(m.group(1) or 1)
         add("H", 2 * n)
         add("O", n)
-        s = s[: m.start()].strip()
+        # Strip a separator dot left behind by forms like "CuSO4 . 5H2O" and
+        # "Na2MoO4. 2H2O", where the whitespace matched above but the actual
+        # separator is the dot. Without this the core is "CuSO4 ." and fails to
+        # parse -- these labels parsed correctly before whitespace was accepted
+        # as a separator, so leaving it would be a regression.
+        s = s[: m.start()].strip().rstrip(".·・")
     m = _HYDRATE_DOT_RE.match(s)
     if m:
         n = int(m.group(2) or 1)
@@ -130,7 +159,11 @@ def parse_ontology_formula(formula: str) -> dict[str, int] | None:
     carrying an ``R`` group or ``*`` are unparseable by design (generic
     structures) and yield None.
     """
-    if not formula or "R" in formula or "*" in formula:
+    # A bare "R" is a generic substituent placeholder, but a substring test also
+    # matches the R of real element symbols (Rb, Ru, Rh, Re, Ra, Rn), which
+    # dropped the formula check for e.g. rubidium chloride and left the label
+    # falling through to a false IMPLAUSIBLE_LABEL.
+    if not formula or _GENERIC_R_RE.search(formula) or "*" in formula:
         return None
     total: dict[str, int] = {}
     for part in formula.split("."):
