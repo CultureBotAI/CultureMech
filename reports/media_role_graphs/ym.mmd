@@ -1,0 +1,27 @@
+flowchart LR
+MEDIUM["`**ym**`"]:::medium
+FOODON_03315426["`Yeast Extract\n(FOODON:03315426)`"]:::ingredient
+MEDIUM --> FOODON_03315426
+CHEBI_16899["`D-Mannitol\n(CHEBI:16899)`"]:::ingredient
+MEDIUM --> CHEBI_16899
+CHEBI_131527["`Potassium phosphate dibasic\n(CHEBI:131527)`"]:::ingredient
+MEDIUM --> CHEBI_131527
+CHEBI_32599["`Magnesium sulfate\n(CHEBI:32599)`"]:::ingredient
+MEDIUM --> CHEBI_32599
+CHEBI_26710["`Sodium Chloride\n(CHEBI:26710)`"]:::ingredient
+MEDIUM --> CHEBI_26710
+CHEBI_3311["`Calcium carbonate\n(CHEBI:3311)`"]:::ingredient
+MEDIUM --> CHEBI_3311
+
+classDef nutritional_roles stroke:#2ca02c,stroke-width:2px,color:#2ca02c
+classDef physicochemical_roles stroke:#1f77b4,stroke-width:2px,color:#1f77b4
+classDef cellular_metabolic_roles stroke:#d62728,stroke-width:2px,color:#d62728
+classDef medium fill:#f5f5f5,stroke:#333,stroke-width:2px,font-weight:bold
+classDef ingredient fill:#fff,stroke:#666,color:#333
+classDef solution fill:#e6f2ff,stroke:#3366aa,color:#000
+classDef organism fill:#fff2e6,stroke:#cc6600,color:#000,font-weight:bold
+classDef community_role fill:#e6ffe6,stroke:#009900,color:#005500
+classDef nutrient_override fill:#f0e6ff,stroke:#7733aa,color:#330066
+classDef role_curie stroke-dasharray:5 5
+classDef truncated fill:#fee,stroke:#c33,color:#833
+classDef note fill:#fefee0,stroke:#cca,color:#663,font-style:italic

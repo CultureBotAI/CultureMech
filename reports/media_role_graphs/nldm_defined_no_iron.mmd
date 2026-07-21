@@ -1,0 +1,65 @@
+flowchart LR
+MEDIUM["`**nldm_defined_no_iron**`"]:::medium
+CHEBI_31206["`Ammonium Chloride\n(CHEBI:31206)`"]:::ingredient
+MEDIUM --> CHEBI_31206
+CHEBI_32588["`Potassium Chloride\n(CHEBI:32588)`"]:::ingredient
+MEDIUM --> CHEBI_32588
+CHEBI_31795["`Magnesium sulfate heptahydrate\n(CHEBI:31795)`"]:::ingredient
+MEDIUM --> CHEBI_31795
+CHEBI_86158["`Calcium chloride dihydrate\n(CHEBI:86158)`"]:::ingredient
+MEDIUM --> CHEBI_86158
+CHEBI_64755["`EDTA\n(CHEBI:64755)`"]:::ingredient
+MEDIUM --> CHEBI_64755
+CHEBI_86463["`Magnesium Sulfate Heptahydrate\n(CHEBI:86463)`"]:::ingredient
+MEDIUM --> CHEBI_86463
+CHEBI_86364["`Manganese (II) sulfate monohydrate\n(CHEBI:86364)`"]:::ingredient
+MEDIUM --> CHEBI_86364
+CHEBI_26710["`Sodium Chloride\n(CHEBI:26710)`"]:::ingredient
+MEDIUM --> CHEBI_26710
+CHEBI_75836["`Iron (II) sulfate heptahydrate\n(CHEBI:75836)`"]:::ingredient
+MEDIUM --> CHEBI_75836
+CHEBI_86214["`Cobalt(II) nitrate hexahydrate\n(CHEBI:86214)`"]:::ingredient
+MEDIUM --> CHEBI_86214
+MEDIUM --> CHEBI_86158
+CHEBI_32312["`Zinc sulfate heptahydrate\n(CHEBI:32312)`"]:::ingredient
+MEDIUM --> CHEBI_32312
+CHEBI_31440["`Copper (II) sulfate pentahydrate\n(CHEBI:31440)`"]:::ingredient
+MEDIUM --> CHEBI_31440
+CHEBI_86465["`Aluminum potassium sulfate dodecahydrate\n(CHEBI:86465)`"]:::ingredient
+MEDIUM --> CHEBI_86465
+CHEBI_33118["`Boric Acid\n(CHEBI:33118)`"]:::ingredient
+MEDIUM --> CHEBI_33118
+CHEBI_75213["`Sodium Molybdate Dihydrate\n(CHEBI:75213)`"]:::ingredient
+MEDIUM --> CHEBI_75213
+CHEBI_131361["`Sodium selenite pentahydrate\n(CHEBI:131361)`"]:::ingredient
+MEDIUM --> CHEBI_131361
+CHEBI_63939["`Sodium tungstate dihydrate\n(CHEBI:63939)`"]:::ingredient
+MEDIUM --> CHEBI_63939
+CHEBI_53542["`Nickel (II) chloride hexahydrate\n(CHEBI:53542)`"]:::ingredient
+MEDIUM --> CHEBI_53542
+MEDIUM --> CHEBI_64755
+MEDIUM --> CHEBI_86463
+MEDIUM --> CHEBI_86364
+MEDIUM --> CHEBI_26710
+MEDIUM --> CHEBI_86214
+MEDIUM --> CHEBI_86158
+MEDIUM --> CHEBI_32312
+MEDIUM --> CHEBI_31440
+MEDIUM --> CHEBI_86465
+MEDIUM --> CHEBI_33118
+MEDIUM --> CHEBI_75213
+MORE["`...69 more ingredients (cap: 30)`"]:::truncated
+MEDIUM --> MORE
+
+classDef nutritional_roles stroke:#2ca02c,stroke-width:2px,color:#2ca02c
+classDef physicochemical_roles stroke:#1f77b4,stroke-width:2px,color:#1f77b4
+classDef cellular_metabolic_roles stroke:#d62728,stroke-width:2px,color:#d62728
+classDef medium fill:#f5f5f5,stroke:#333,stroke-width:2px,font-weight:bold
+classDef ingredient fill:#fff,stroke:#666,color:#333
+classDef solution fill:#e6f2ff,stroke:#3366aa,color:#000
+classDef organism fill:#fff2e6,stroke:#cc6600,color:#000,font-weight:bold
+classDef community_role fill:#e6ffe6,stroke:#009900,color:#005500
+classDef nutrient_override fill:#f0e6ff,stroke:#7733aa,color:#330066
+classDef role_curie stroke-dasharray:5 5
+classDef truncated fill:#fee,stroke:#c33,color:#833
+classDef note fill:#fefee0,stroke:#cca,color:#663,font-style:italic
