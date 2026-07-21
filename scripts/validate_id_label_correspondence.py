@@ -705,6 +705,15 @@ def load_config(config_path: Path) -> dict[str, Any]:
 
 
 def run(config_path: Path, report_path: Path | None) -> int:
+    # These caches are keyed on id(adapter). CPython reuses an id after an
+    # object is freed, so a new adapter can collide with a freed one and
+    # inherit its labels -- a stale label here is a silent false PASS, the
+    # exact failure this validator exists to prevent. Harmless within one
+    # CLI run (AdapterPool pins adapters), but run() is called repeatedly in
+    # the same process by the test suite.
+    _LABEL_CACHE.clear()
+    _FORMULA_LOOKUPS.clear()
+
     cfg = load_config(config_path)
     pool = AdapterPool(cfg["adapters"])
     default_scope = cfg["synonym_scope"]
