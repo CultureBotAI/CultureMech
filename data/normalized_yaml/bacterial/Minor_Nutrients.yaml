@@ -28,14 +28,14 @@ composition:
     value: '0.023'
     unit: G_PER_L
   term:
-    id: CHEBI:62985
+    id: CHEBI:32312
     label: zinc sulfate heptahydrate
 - preferred_term: Ammonium molybdate tetrahydrate
   concentration:
     value: '0.007'
     unit: G_PER_L
   term:
-    id: CHEBI:79321
+    id: CHEBI:86244
     label: ammonium heptamolybdate tetrahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001110
@@ -44,7 +44,7 @@ composition:
     value: '0.012'
     unit: G_PER_L
   term:
-    id: CHEBI:78034
+    id: CHEBI:86214
     label: cobalt dinitrate hexahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001111
@@ -63,7 +63,7 @@ composition:
     value: '0.016'
     unit: G_PER_L
   term:
-    id: CHEBI:90884
+    id: CHEBI:86151
     label: ammonium nickel sulfate
   mediaingredientmech_term:
     id: MediaIngredientMech:001120
@@ -72,10 +72,10 @@ composition:
     value: '0.0016'
     unit: G_PER_L
   term:
-    id: CHEBI:88217
+    id: CHEBI:33146
     label: vanadyl sulfate
   mediaingredientmech_chebi_term:
-    id: CHEBI:88217
+    id: CHEBI:33146
     label: vanadyl sulfate
 - preferred_term: Aluminum potassium sulfate
   concentration:

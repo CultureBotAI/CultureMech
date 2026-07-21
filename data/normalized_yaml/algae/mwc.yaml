@@ -66,10 +66,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_MWC.pdf
   notes: From CCAP Medium MR_MWC.pdf; Curated from CCAP Medium MR_MWC.pdf specification
-- preferred_term: FeCl .6H O
+- preferred_term: FeCl3 x 6 H2O
   term:
-    id: CHEBI:30527
-    label: FeCl .6H O
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 0.95
@@ -80,10 +80,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_MWC.pdf
   notes: From CCAP Medium MR_MWC.pdf; Curated from CCAP Medium MR_MWC.pdf specification
-- preferred_term: CuSO .5H O
+- preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: CuSO .5H O
+    label: CuSO4 x 5 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -94,10 +94,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_MWC.pdf
   notes: From CCAP Medium MR_MWC.pdf; Curated from CCAP Medium MR_MWC.pdf specification
-- preferred_term: ZnSO .7H O
+- preferred_term: ZnSO4 x 7 H2O
   term:
-    id: CHEBI:86463
-    label: ZnSO .7H O
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -108,10 +108,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_MWC.pdf
   notes: From CCAP Medium MR_MWC.pdf; Curated from CCAP Medium MR_MWC.pdf specification
-- preferred_term: CoCl .6H O
+- preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: CoCl .6H O
+    label: CoCl2 x 6 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -122,10 +122,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_MWC.pdf
   notes: From CCAP Medium MR_MWC.pdf; Curated from CCAP Medium MR_MWC.pdf specification
-- preferred_term: MnCl .4H O
+- preferred_term: MnCl2 x 4 H2O
   term:
-    id: CHEBI:86457
-    label: MnCl .4H O
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -136,10 +136,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_MWC.pdf
   notes: From CCAP Medium MR_MWC.pdf; Curated from CCAP Medium MR_MWC.pdf specification
-- preferred_term: Na MoO .2H O
+- preferred_term: Na2MoO4 x 2 H2O
   term:
-    id: CHEBI:75216
-    label: Na MoO .2H O
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -152,7 +152,7 @@ ingredients:
   notes: From CCAP Medium MR_MWC.pdf; Curated from CCAP Medium MR_MWC.pdf specification
 - preferred_term: H BO
   term:
-    id: CHEBI:33141
+    id: CHEBI:33118
     label: H BO
   curation_metadata:
     mapping_quality: LLM_ASSISTED

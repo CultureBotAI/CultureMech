@@ -24,7 +24,7 @@ composition:
     id: mediadive.compound:257
     label: (NH4)2HPO4
   chebi_term:
-    id: CHEBI:62476
+    id: CHEBI:63051
     label: (NH4)2HPO4
     confidence: 0.7
     match_type: corpus_consensus

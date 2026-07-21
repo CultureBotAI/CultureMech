@@ -31,7 +31,7 @@ composition:
     id: mediadive.compound:60
     label: Dextrose
   chebi_term:
-    id: CHEBI:17634
+    id: CHEBI:15824
     label: D-fructose
     confidence: 0.9
     match_type: manual_curated

@@ -267,7 +267,7 @@ ingredients:
     label: Na2WO4 x 2 H2O
 - preferred_term: Phenyl acetic acid
   term:
-    id: CHEBI:103822
+    id: CHEBI:30745
     label: Phenyl acetic acid
   concentration:
     value: '0.68'
@@ -287,7 +287,7 @@ ingredients:
     label: Phenyl propionic acid
 - preferred_term: 4-Hydroxyphenyl acetic acid
   term:
-    id: CHEBI:156387
+    id: CHEBI:18101
     label: 4-Hydroxyphenyl acetic acid
   concentration:
     value: '0.76'
@@ -297,7 +297,7 @@ ingredients:
     label: 4-Hydroxyphenyl acetic acid
 - preferred_term: 3-Indolyl acetic acid
   term:
-    id: CHEBI:87514
+    id: CHEBI:16411
     label: 3-Indolyl acetic acid
   concentration:
     value: '0.88'

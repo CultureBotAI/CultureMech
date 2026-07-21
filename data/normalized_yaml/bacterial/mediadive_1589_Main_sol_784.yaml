@@ -114,7 +114,7 @@ composition:
     id: mediadive.compound:89
     label: Ethanol absolute
   chebi_term:
-    id: CHEBI:64175
+    id: CHEBI:16236
     label: Ethanol absolute
     confidence: 0.7
     match_type: corpus_consensus

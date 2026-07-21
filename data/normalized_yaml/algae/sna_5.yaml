@@ -69,8 +69,8 @@ references:
 ingredients:
 - preferred_term: Peptone
   term:
-    id: FOODON:03316428
-    label: tryptone
+    id: MICRO:0000178
+    label: peptone
   concentration:
     value: '5.0'
     unit: G_PER_L

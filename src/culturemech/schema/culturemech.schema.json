@@ -76,7 +76,7 @@
         },
         "ChemicalEntityTerm": {
             "additionalProperties": false,
-            "description": "A term identifying a chemical or biological ingredient. Primarily CHEBI, with FOODON / UBERON / ENVO accepted for ingredients (food products, anatomical tissues, environmental samples) where no CHEBI equivalent exists upstream. `mediadive.compound:*` is also accepted as the upstream MediaDive grounding kept alongside CHEBI mappings on solution-composition entries.",
+            "description": "A term identifying a chemical or biological ingredient. Primarily CHEBI, with FOODON / UBERON / ENVO accepted for ingredients (food products, anatomical tissues, environmental samples) where no CHEBI equivalent exists upstream. `mediadive.compound:*` is also accepted as the upstream MediaDive grounding kept alongside CHEBI mappings on solution-composition entries. MICRO (Ontology of Prokaryotic Phenotypic and Metabolic Characters) is accepted for enzymatic protein digests (tryptone, peptone, proteose peptone, soy peptone, casein hydrolysate) which ChEBI cannot represent because CHEBI:59999 \"chemical substance\" requires constant composition.",
             "properties": {
                 "confidence": {
                     "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
@@ -87,7 +87,7 @@
                 },
                 "id": {
                     "description": "Ontology identifier (CURIE)",
-                    "pattern": "^(CHEBI|FOODON|UBERON|ENVO|mediadive\\.compound):\\w+$",
+                    "pattern": "^(CHEBI|FOODON|MICRO|UBERON|ENVO|mediadive\\.compound):\\w+$",
                     "type": "string"
                 },
                 "label": {

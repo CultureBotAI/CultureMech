@@ -83,7 +83,7 @@ ingredients:
     label: Ammonium acetate
 - preferred_term: Pyruvic acid sodium salt
   term:
-    id: CHEBI:113246
+    id: CHEBI:50144
     label: Pyruvic acid sodium salt
   concentration:
     value: '19.615389999999998'

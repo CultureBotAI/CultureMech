@@ -28,14 +28,14 @@ composition:
     value: '0.3'
     unit: G_PER_L
   term:
-    id: CHEBI:62985
+    id: CHEBI:32312
     label: zinc sulfate heptahydrate
 - preferred_term: Ammonium molybdate tetrahydrate
   concentration:
     value: '0.08'
     unit: G_PER_L
   term:
-    id: CHEBI:79321
+    id: CHEBI:86244
     label: ammonium heptamolybdate tetrahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001110
@@ -54,7 +54,7 @@ composition:
     value: '0.15'
     unit: G_PER_L
   term:
-    id: CHEBI:78034
+    id: CHEBI:86214
     label: cobalt dinitrate hexahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001111

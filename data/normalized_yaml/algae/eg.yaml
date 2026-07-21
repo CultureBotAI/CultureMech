@@ -71,7 +71,7 @@ ingredients:
   source: CCAP Medium MR_EG.pdf
 - preferred_term: Tryptone
   term:
-    id: FOODON:03310387
+    id: MICRO:0000182
     label: Tryptone
   curation_metadata:
     mapping_quality: LLM_ASSISTED
@@ -85,7 +85,7 @@ ingredients:
   notes: From CCAP Medium MR_EG.pdf; Curated from CCAP Medium MR_EG.pdf specification
 - preferred_term: Yeast extract
   term:
-    id: FOODON:00002441
+    id: FOODON:03315426
     label: Yeast extract
   curation_metadata:
     mapping_quality: LLM_ASSISTED

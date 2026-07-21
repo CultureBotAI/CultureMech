@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-07-20T09:29:02
+# Generation date: 2026-07-20T20:45:30
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -78,6 +78,7 @@ FOODON = CurieNamespace('FOODON', 'http://purl.obolibrary.org/obo/FOODON_')
 GTDB = CurieNamespace('GTDB', 'https://gtdb.ecogenomic.org/genome?gid=')
 GENBANK = CurieNamespace('GenBank', 'https://www.ncbi.nlm.nih.gov/assembly/')
 KEGG = CurieNamespace('KEGG', 'https://www.genome.jp/entry/')
+MICRO = CurieNamespace('MICRO', 'http://example.org/UNKNOWN/MICRO/')
 MEDIAINGREDIENTMECH = CurieNamespace('MediaIngredientMech', 'http://example.org/UNKNOWN/MediaIngredientMech/')
 NCBITAXON = CurieNamespace('NCBITaxon', 'http://purl.obolibrary.org/obo/NCBITaxon_')
 NCIT = CurieNamespace('NCIT', 'http://purl.obolibrary.org/obo/NCIT_')
@@ -1985,7 +1986,9 @@ class ChemicalEntityTerm(Term):
     A term identifying a chemical or biological ingredient. Primarily CHEBI, with FOODON / UBERON / ENVO accepted for
     ingredients (food products, anatomical tissues, environmental samples) where no CHEBI equivalent exists upstream.
     `mediadive.compound:*` is also accepted as the upstream MediaDive grounding kept alongside CHEBI mappings on
-    solution-composition entries.
+    solution-composition entries. MICRO (Ontology of Prokaryotic Phenotypic and Metabolic Characters) is accepted for
+    enzymatic protein digests (tryptone, peptone, proteose peptone, soy peptone, casein hydrolysate) which ChEBI
+    cannot represent because CHEBI:59999 "chemical substance" requires constant composition.
     """
     _inherited_slots: ClassVar[list[str]] = []
 
@@ -4782,7 +4785,7 @@ slots.dataset__notes = Slot(uri=MECH_SHARED.notes, name="dataset__notes", curie=
 
 slots.ChemicalEntityTerm_id = Slot(uri=CULTUREMECH.id, name="ChemicalEntityTerm_id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.ChemicalEntityTerm_id, domain=ChemicalEntityTerm, range=Union[str, ChemicalEntityTermId],
-                   pattern=re.compile(r'^(CHEBI|FOODON|UBERON|ENVO|mediadive\.compound):\w+$'))
+                   pattern=re.compile(r'^(CHEBI|FOODON|MICRO|UBERON|ENVO|mediadive\.compound):\w+$'))
 
 slots.ChebiTerm_id = Slot(uri=CULTUREMECH.id, name="ChebiTerm_id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.ChebiTerm_id, domain=ChebiTerm, range=Union[str, ChebiTermId],

@@ -45,7 +45,7 @@ ingredients:
     tissue; Constituent of Brain Heart Infusion commercial product
 - preferred_term: Proteose peptone
   term:
-    id: FOODON:03302071
+    id: MICRO:0000180
     label: proteose peptone
   concentration:
     value: '10.0'

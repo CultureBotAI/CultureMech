@@ -52,10 +52,10 @@ references:
 - reference: CCAP:BB
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_BB.pdf
 ingredients:
-- preferred_term: ZnSO .7H O
+- preferred_term: ZnSO4 x 7 H2O
   term:
-    id: CHEBI:86463
-    label: ZnSO .7H O
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -66,10 +66,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_BB.pdf
   notes: From CCAP Medium MR_BB.pdf; Curated from CCAP Medium MR_BB.pdf specification
-- preferred_term: MnCl .4H O
+- preferred_term: MnCl2 x 4 H2O
   term:
-    id: CHEBI:86457
-    label: MnCl .4H O
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -87,10 +87,10 @@ ingredients:
     value: '0.71'
     unit: G_PER_L
   source: CCAP Medium MR_BB.pdf
-- preferred_term: CuSO .5H O
+- preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: CuSO .5H O
+    label: CuSO4 x 5 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
