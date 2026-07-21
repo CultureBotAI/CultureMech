@@ -1882,13 +1882,18 @@ classes:
       anatomical tissues, environmental samples) where no CHEBI equivalent
       exists upstream. `mediadive.compound:*` is also accepted as the
       upstream MediaDive grounding kept alongside CHEBI mappings on
-      solution-composition entries.
+      solution-composition entries. MICRO (Ontology of Prokaryotic
+      Phenotypic and Metabolic Characters) is accepted for enzymatic
+      protein digests (tryptone, peptone, proteose peptone, soy peptone,
+      casein hydrolysate) which ChEBI cannot represent because
+      CHEBI:59999 "chemical substance" requires constant composition.
     slot_usage:
       id:
-        pattern: "^(CHEBI|FOODON|UBERON|ENVO|mediadive\\.compound):\\w+$"
+        pattern: "^(CHEBI|FOODON|MICRO|UBERON|ENVO|mediadive\\.compound):\\w+$"
     id_prefixes:
       - CHEBI
       - FOODON
+      - MICRO
       - UBERON
       - ENVO
       - mediadive.compound
