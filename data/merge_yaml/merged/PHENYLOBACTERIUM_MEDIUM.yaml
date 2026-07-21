@@ -44,7 +44,7 @@ ingredients:
     label: Na2HPO4 x 12 H2O
 - preferred_term: (NH4)2HPO4
   term:
-    id: CHEBI:62476
+    id: CHEBI:63051
     label: (NH4)2HPO4
   concentration:
     value: '0.7'
@@ -114,7 +114,7 @@ ingredients:
     label: CuSO4 x 5 H2O
 - preferred_term: KI
   term:
-    id: CHEBI:74559
+    id: CHEBI:8346
     label: KI
   concentration:
     value: '0.0001'

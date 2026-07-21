@@ -83,7 +83,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Eisencitrat
   term:
-    id: CHEBI:55553
+    id: CHEBI:144434
     label: Eisencitrat
   concentration:
     value: '10'

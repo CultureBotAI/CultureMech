@@ -94,7 +94,7 @@ ingredients:
     label: NaCl
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
+    id: CHEBI:63043
     label: KNO3
   concentration:
     value: '1.02897'
@@ -104,7 +104,7 @@ ingredients:
     label: KNO3
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '6.88312'

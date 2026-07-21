@@ -15,7 +15,7 @@ media_term:
 ingredients:
 - preferred_term: HEPES buffer
   term:
-    id: CHEBI:19708
+    id: CHEBI:46756
     label: HEPES buffer
   concentration:
     value: '6'

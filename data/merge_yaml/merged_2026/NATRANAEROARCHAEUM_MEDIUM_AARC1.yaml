@@ -50,7 +50,7 @@ ingredients:
   notes: ' [Merged 2 duplicates: 22.5, 0.105009]'
 - preferred_term: Sulfur powder
   term:
-    id: CHEBI:14258
+    id: CHEBI:33403
     label: Sulfur powder
   concentration:
     value: '2'

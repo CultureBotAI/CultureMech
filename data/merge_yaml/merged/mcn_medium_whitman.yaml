@@ -8,7 +8,7 @@ ingredients:
 - &id001
   preferred_term: Tryptone
   term:
-    id: FOODON:03316428
+    id: MICRO:0000182
     label: tryptone
   concentration:
     value: '10.0'
@@ -28,7 +28,7 @@ ingredients:
 - &id002
   preferred_term: Yeast extract
   term:
-    id: FOODON:00002960
+    id: FOODON:03315426
     label: yeast extract
   concentration:
     value: '5.0'
@@ -73,7 +73,7 @@ ingredients:
     label: ''
 - preferred_term: Cysteine-HCl
   term:
-    id: CHEBI:52891
+    id: CHEBI:91247
     label: Cysteine-HCl
   concentration:
     value: '3.172'

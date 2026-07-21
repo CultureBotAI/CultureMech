@@ -13,7 +13,7 @@ notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_
 ingredients:
 - preferred_term: Casein
   term:
-    id: CHEBI:3448
+    id: FOODON:03420180
     label: Casein
   concentration:
     value: '17'

@@ -8,7 +8,7 @@ ingredients:
     value: '17'
     unit: G_PER_L
   term:
-    id: FOODON:03310375
+    id: MICRO:0000182
     label: Tryptone
   notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 91079-40-2'
 - preferred_term: soytone
@@ -16,7 +16,7 @@ ingredients:
     value: '3'
     unit: G_PER_L
   term:
-    id: CHEBI:8150
+    id: MICRO:0000181
     label: null
   notes: 'Mapping: micromediaparam (confidence: 0.95)'
 - preferred_term: D-Glucose

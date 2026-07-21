@@ -19,8 +19,8 @@ ingredients:
     acids and nitrogen
   source: Columbia Agar Base (Oxoid CM331 equivalent)
   term:
-    id: FOODON:03316427
-    label: casein hydrolysate
+    id: MICRO:0000182
+    label: tryptone
   curation_metadata:
     mapping_quality: MANUAL
     confidence_score: 1.0
@@ -33,7 +33,7 @@ ingredients:
   notes: From Columbia Agar Base (for anaerobic use); Peptone providing nutrients
   source: Columbia Agar Base (Oxoid CM331 equivalent)
   term:
-    id: FOODON:03316428
+    id: MICRO:0000178
     label: peptone
   curation_metadata:
     mapping_quality: MANUAL

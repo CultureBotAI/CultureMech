@@ -48,7 +48,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '1'
@@ -175,7 +175,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: KI
   term:
-    id: CHEBI:74559
+    id: CHEBI:8346
     label: KI
   concentration:
     value: '0.01'
@@ -252,7 +252,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Calcium D-(+)-pantothenate
   term:
-    id: CHEBI:1687714
+    id: CHEBI:31345
     label: Calcium D-(+)-pantothenate
   concentration:
     value: '0.005'

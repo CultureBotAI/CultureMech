@@ -290,28 +290,28 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Phenyl acetic acid
   term:
-    id: CHEBI:103822
+    id: CHEBI:30745
     label: Phenyl acetic acid
   concentration:
     value: '0.019021'
     unit: G_PER_L
 - preferred_term: Phenyl propionic acid
   term:
-    id: CHEBI:501520
+    id: CHEBI:28631
     label: Phenyl propionic acid
   concentration:
     value: '0.020979'
     unit: G_PER_L
 - preferred_term: 4-Hydroxyphenyl acetic acid
   term:
-    id: CHEBI:156387
+    id: CHEBI:18101
     label: 4-Hydroxyphenyl acetic acid
   concentration:
     value: '0.0212587'
     unit: G_PER_L
 - preferred_term: 3-Indolyl acetic acid
   term:
-    id: CHEBI:87514
+    id: CHEBI:16411
     label: 3-Indolyl acetic acid
   concentration:
     value: '0.0246154'

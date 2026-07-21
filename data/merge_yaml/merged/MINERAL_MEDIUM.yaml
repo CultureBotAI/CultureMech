@@ -14,7 +14,7 @@ notes: 'Source: KOMODO ModelSEED | ID: 1007 | DSMZ Medium: 1007 (mediadive.mediu
 ingredients:
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
+    id: CHEBI:63043
     label: KNO3
   concentration:
     value: '0.25'

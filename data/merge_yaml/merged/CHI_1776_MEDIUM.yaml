@@ -36,7 +36,7 @@ ingredients:
     label: MgCl2
 - preferred_term: Diaminopimelic acid
   term:
-    id: CHEBI:23674
+    id: CHEBI:23673
     label: Diaminopimelic acid
   concentration:
     value: '0.1'

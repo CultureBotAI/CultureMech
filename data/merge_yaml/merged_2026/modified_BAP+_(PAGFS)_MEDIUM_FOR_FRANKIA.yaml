@@ -56,14 +56,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Sodium succinate dibasic
   term:
-    id: CHEBI:150903
+    id: CHEBI:63675
     label: Sodium succinate dibasic
   concentration:
     value: '0.48'
     unit: G_PER_L
 - preferred_term: Pyruvic acid sodium salt
   term:
-    id: CHEBI:113246
+    id: CHEBI:50144
     label: Pyruvic acid sodium salt
   concentration:
     value: '0.48'
@@ -119,7 +119,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Eisencitrat
   term:
-    id: CHEBI:55553
+    id: CHEBI:144434
     label: Eisencitrat
   concentration:
     value: '10'

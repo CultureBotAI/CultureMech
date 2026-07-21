@@ -65,7 +65,7 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
-    id: CHEBI:14258
+    id: CHEBI:33403
     label: ''
 - preferred_term: Na2HPO4・2H2O
   concentration:

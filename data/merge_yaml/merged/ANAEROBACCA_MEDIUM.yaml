@@ -35,7 +35,7 @@ ingredients:
     label: MgCl2 x 6 H2O
 - preferred_term: Na2S2O4
   term:
-    id: CHEBI:61278
+    id: CHEBI:66870
     label: Na2S2O4
   concentration:
     value: '0.98912'

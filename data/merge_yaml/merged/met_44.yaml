@@ -127,10 +127,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_MET44.pdf
   notes: From CCAP Medium MR_MET44.pdf; Curated from CCAP Medium MR_MET44.pdf specification
-- preferred_term: Na SiO .9H O
+- preferred_term: Na2SiO3 x 9 H2O
   term:
-    id: CHEBI:86463
-    label: Na SiO .9H O
+    id: CHEBI:132108
+    label: Na2SiO3 x 9 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 0.95

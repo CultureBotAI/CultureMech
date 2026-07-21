@@ -41,7 +41,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: MnCl2
   term:
-    id: CHEBI:7773015
+    id: CHEBI:63041
     label: MnCl2
   concentration:
     value: '0.013'

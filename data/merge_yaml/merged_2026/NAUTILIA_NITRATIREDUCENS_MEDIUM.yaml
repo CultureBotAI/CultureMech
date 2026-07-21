@@ -74,14 +74,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: KI
   term:
-    id: CHEBI:74559
+    id: CHEBI:8346
     label: KI
   concentration:
     value: '5.21921e-05'
     unit: G_PER_L
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
+    id: CHEBI:63043
     label: KNO3
   concentration:
     value: '100'
@@ -172,7 +172,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Na2SeO4
   term:
-    id: CHEBI:59160
+    id: CHEBI:77775
     label: Na2SeO4
   concentration:
     value: '0.1'

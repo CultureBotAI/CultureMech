@@ -38,7 +38,7 @@ ingredients:
   notes: ' [Merged 3 duplicates: 0.0441045, 0.088209, 4.4]'
 - preferred_term: (NH4)2HPO4
   term:
-    id: CHEBI:62476
+    id: CHEBI:63051
     label: (NH4)2HPO4
   concentration:
     value: '2.679236'

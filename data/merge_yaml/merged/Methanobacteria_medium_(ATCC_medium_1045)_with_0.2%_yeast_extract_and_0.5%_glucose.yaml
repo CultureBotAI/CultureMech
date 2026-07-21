@@ -282,7 +282,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:1687714
+    id: CHEBI:31345
     label: Calcium D-(+)-pantothenate
 - preferred_term: Pyridoxine hydrochloride
   concentration:

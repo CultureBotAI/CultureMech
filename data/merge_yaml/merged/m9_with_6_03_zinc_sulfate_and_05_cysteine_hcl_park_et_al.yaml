@@ -36,7 +36,7 @@ ingredients:
     label: Sodium chloride
 - preferred_term: Cysteine-HCl
   term:
-    id: CHEBI:52891
+    id: CHEBI:91247
     label: Cysteine-HCl
   concentration:
     value: '3.17219'

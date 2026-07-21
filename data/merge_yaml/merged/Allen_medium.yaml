@@ -29,7 +29,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Solution'
   term:
-    id: CHEBI:19708
+    id: CHEBI:46756
     label: HEPES buffer
   mediaingredientmech_term:
     id: MediaIngredientMech:000426

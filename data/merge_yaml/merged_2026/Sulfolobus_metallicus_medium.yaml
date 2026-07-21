@@ -105,7 +105,7 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:14258
+    id: CHEBI:33403
     label: ''
 - preferred_term: VOSO4·nH2O
   concentration:

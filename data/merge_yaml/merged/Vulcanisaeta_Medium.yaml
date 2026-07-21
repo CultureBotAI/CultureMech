@@ -33,7 +33,7 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
-    id: CHEBI:14258
+    id: CHEBI:33403
     label: ''
   mediaingredientmech_term:
     id: MediaIngredientMech:001072

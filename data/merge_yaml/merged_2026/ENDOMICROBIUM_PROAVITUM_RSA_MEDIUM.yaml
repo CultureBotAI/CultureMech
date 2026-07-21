@@ -97,7 +97,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source'
   term:
-    id: CHEBI:501520
+    id: CHEBI:28631
     label: ''
 - preferred_term: Phenyl acetic acid
   concentration:

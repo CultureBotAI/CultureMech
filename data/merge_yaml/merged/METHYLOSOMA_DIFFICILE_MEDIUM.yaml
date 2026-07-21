@@ -63,7 +63,7 @@ ingredients:
     label: Na2SO4
 - preferred_term: HEPES buffer
   term:
-    id: CHEBI:19708
+    id: CHEBI:46756
     label: HEPES buffer
   concentration:
     value: '5'
@@ -73,7 +73,7 @@ ingredients:
     label: HEPES buffer
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
+    id: CHEBI:63043
     label: KNO3
   concentration:
     value: '0.544'

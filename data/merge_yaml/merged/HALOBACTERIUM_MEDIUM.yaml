@@ -77,7 +77,7 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
-    id: CHEBI:75211
+    id: CHEBI:86360
     label: manganese(II) sulfate
   mediaingredientmech_term:
     id: MediaIngredientMech:000156

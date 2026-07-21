@@ -85,7 +85,7 @@ ingredients:
   notes: Copied from referenced JCM Medium 552
 - preferred_term: L-Sodium lactate
   term:
-    id: CHEBI:867561
+    id: CHEBI:232798
     label: L-Sodium lactate
   concentration:
     value: '2.29312'

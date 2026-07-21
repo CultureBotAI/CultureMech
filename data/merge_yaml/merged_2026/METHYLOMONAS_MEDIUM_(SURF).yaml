@@ -42,7 +42,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '0.85'
@@ -195,7 +195,7 @@ ingredients:
   notes: ' [Merged 2 duplicates: 0.4, 11.8]'
 - preferred_term: Na2SeO4
   term:
-    id: CHEBI:59160
+    id: CHEBI:77775
     label: Na2SeO4
   concentration:
     value: '0.11'

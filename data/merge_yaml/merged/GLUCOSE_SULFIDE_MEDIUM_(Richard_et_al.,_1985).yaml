@@ -34,7 +34,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Ca(NO3)2
   term:
-    id: CHEBI:10124375
+    id: CHEBI:64205
     label: Ca(NO3)2
   concentration:
     value: '0.1'
