@@ -3,11 +3,14 @@
 Drafted from `deep_research_priority_top100.json` (regenerated 2026-07-21;
 15,496 candidates scored, already-researched records filtered out).
 
-All ten are **bacterial**, all have **0 real target organisms** (max
-information gain), all carry **fully-quantified recipes** (every ingredient
-has a concentration → clean recipe diff against the publication), and all are
-anchored to a citable source ID (TOGO / JCM). This is a homogeneous, high-
-confidence batch — safe to run straight through phase-1.
+Eight are **bacterial** and **two are archaeal** — #1 *Sulfolobus* and #5
+*Thermoproteus* (both Crenarchaeota), which are currently mis-filed under
+`bacterial/` (see issue #114). All ten have **0 real target organisms** (max
+information gain), carry **fully-quantified recipes** (every ingredient has a
+concentration → clean recipe diff against the publication), and are anchored to
+a citable source ID (TOGO / JCM). The batch is otherwise uniform and
+high-confidence — safe to run through phase-1, but the two archaeal media should
+be recategorized (#114) before their domain is trusted downstream.
 
 | # | Score | Recipe | Source ID | Ingredients | Action |
 |--:|------:|--------|-----------|------------:|--------|
@@ -34,6 +37,9 @@ confidence batch — safe to run straight through phase-1.
   the phase-2 follow-up should reconcile the current NCBITaxon.
 - **#8 `medium_for_ectothiorhodospira`** names a *genus*, not a strain —
   slightly higher chance phase-1 returns multiple candidate organisms.
+- **#1 *Sulfolobus* and #5 *Thermoproteus* are archaea mis-filed under
+  `bacterial/`** (issue #114). Phase-1 works regardless, but don't infer domain
+  from the directory for these; recategorize before any Bacteria-scoped rollup.
 
 ## How to run
 
