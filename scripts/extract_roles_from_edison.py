@@ -64,8 +64,35 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUT_MIM = REPO_ROOT / "data" / "import_tracking" / "reports" / "edison_role_batch_mim.json"
 DEFAULT_OUT_CM = REPO_ROOT / "data" / "import_tracking" / "reports" / "edison_role_batch_cm.json"
+DEFAULT_MIM_ROLES_SCHEMA = REPO_ROOT / "src" / "culturemech" / "schema" / "mim_roles.yaml"
 
 FACET_SLOTS = ("nutritional_roles", "physicochemical_roles", "cellular_metabolic_roles")
+
+# Map facet slot name → enum class name in mim_roles.yaml.
+_FACET_ENUM_NAMES = {
+    "nutritional_roles": "NutritionalRoleEnum",
+    "physicochemical_roles": "PhysicochemicalRoleEnum",
+    "cellular_metabolic_roles": "CellularMetabolicRoleEnum",
+}
+
+
+def load_facet_enums(schema_path: Path = DEFAULT_MIM_ROLES_SCHEMA) -> dict[str, frozenset[str]]:
+    """Load {facet_slot: frozenset(permissible_values)} from the vendored mim_roles schema.
+
+    Single source of truth: read enum permissible values from mim_roles.yaml (whose
+    sha is pinned in project.justfile:verify-schema-pin). No hand-typed token lists.
+    """
+    if not schema_path.is_file():
+        raise SystemExit(f"mim_roles schema not found at {schema_path}")
+    doc = yaml.safe_load(schema_path.read_text()) or {}
+    enums = (doc.get("enums") or {}) if isinstance(doc, dict) else {}
+    result: dict[str, frozenset[str]] = {}
+    for slot, enum_name in _FACET_ENUM_NAMES.items():
+        pv = ((enums.get(enum_name) or {}).get("permissible_values") or {})
+        if not isinstance(pv, dict) or not pv:
+            raise SystemExit(f"{enum_name}.permissible_values missing or empty in {schema_path}")
+        result[slot] = frozenset(pv.keys())
+    return result
 
 # Regex catches ```yaml … ``` blocks; case-insensitive on the language tag.
 _YAML_FENCE_RE = re.compile(r"```(?:yaml|yml)\s*\n(.*?)\n```", re.DOTALL | re.IGNORECASE)
@@ -186,8 +213,31 @@ def _shape_role_entry(role_entry: Any) -> dict[str, Any] | None:
     return out
 
 
-def extract_one(response_md: Path) -> dict[str, Any] | None:
-    """Parse one Edison response .md into a proposal dict, or None if unparseable."""
+def _mim_relative_source_run(response_md: Path, mim_repo: Path | None) -> str:
+    """Return the MIM-repo-relative path of the response file if inside `mim_repo`;
+    otherwise return just the filename stem (backwards-compatible fallback)."""
+    if mim_repo is not None:
+        try:
+            return str(response_md.resolve().relative_to(mim_repo.resolve()))
+        except ValueError:
+            pass
+    return response_md.stem
+
+
+def extract_one(
+    response_md: Path,
+    valid_tokens: dict[str, frozenset[str]] | None = None,
+    mim_repo: Path | None = None,
+    validation_errors: list[dict[str, Any]] | None = None,
+) -> dict[str, Any] | None:
+    """Parse one Edison response .md into a proposal dict, or None if unparseable.
+
+    When `valid_tokens` is provided (a `{facet: frozenset(...)}` map from
+    `load_facet_enums()`), each role token is validated against its facet's
+    permissible values. Invalid or wrong-facet tokens are DROPPED from the
+    proposal and appended to `validation_errors` (if given) as
+    `{source_file, facet, role, reason, correct_facet?}` records.
+    """
     md_text = response_md.read_text()
     rr = find_role_yaml_block(md_text)
     if rr is None:
@@ -216,6 +266,31 @@ def extract_one(response_md: Path) -> dict[str, Any] | None:
             s = _shape_role_entry(entry)
             if s is None:
                 continue
+            token = s["role"]
+
+            # Token validation against the facet's enum permissible values.
+            if valid_tokens is not None:
+                if token in valid_tokens[slot]:
+                    pass  # canonical, keep
+                else:
+                    # Check whether it belongs to a DIFFERENT facet (misfiling).
+                    other_facet = next(
+                        (other for other, allowed in valid_tokens.items()
+                         if other != slot and token in allowed),
+                        None,
+                    )
+                    if validation_errors is not None:
+                        record: dict[str, Any] = {
+                            "source_file": str(response_md),
+                            "facet": slot,
+                            "role": token,
+                            "reason": "wrong_facet" if other_facet else "unknown_token",
+                        }
+                        if other_facet:
+                            record["correct_facet"] = other_facet
+                        validation_errors.append(record)
+                    continue  # drop the entry either way
+
             s["evidence"] = _upgrade_evidence(s["evidence"], citations_lookup)
             # metabolic_context is only schema-legal on cellular_metabolic; drop elsewhere.
             if slot != "cellular_metabolic_roles":
@@ -229,15 +304,16 @@ def extract_one(response_md: Path) -> dict[str, Any] | None:
 
     proposal: dict[str, Any] = {
         "ingredient_slug": slug,
-        "source_run": response_md.stem,
+        "source_run": _mim_relative_source_run(response_md, mim_repo),
         "role_assignments": role_assignments,
     }
     if ingredient_identifier:
         proposal["ingredient_identifier"] = ingredient_identifier
     if ingredient_path:
         proposal["ingredient_path"] = ingredient_path
-    if rr.get("warnings"):
-        proposal["warnings"] = list(rr["warnings"]) if isinstance(rr["warnings"], list) else [str(rr["warnings"])]
+    # `warnings:` from the YAML block are human-only per the applier contract —
+    # they never appear in the emitted batch. If a --warnings-report is passed
+    # at the CLI layer, warnings are surfaced there instead.
     return proposal
 
 
@@ -278,6 +354,17 @@ def discover_inputs(inputs: list[Path]) -> list[Path]:
     return uniq
 
 
+def _collect_warnings(response_md: Path) -> list[str]:
+    """Return the human-only `warnings:` list from a response.md, if any."""
+    rr = find_role_yaml_block(response_md.read_text())
+    if not isinstance(rr, dict):
+        return []
+    w = rr.get("warnings") or []
+    if isinstance(w, list):
+        return [str(x) for x in w]
+    return [str(w)]
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("inputs", type=Path, nargs="+",
@@ -286,8 +373,19 @@ def main(argv: list[str] | None = None) -> int:
                         help="Output path for the rich MIM applier batch.")
     parser.add_argument("--out-cm", type=Path, default=DEFAULT_OUT_CM,
                         help="Output path for the scalar CultureMech applier batch.")
+    parser.add_argument("--mim-repo", type=Path, default=REPO_ROOT.parent / "MediaIngredientMech",
+                        help="MediaIngredientMech checkout root. Used to render `source_run` as a "
+                             "MIM-repo-relative path per the applier contract.")
+    parser.add_argument("--schema", type=Path, default=DEFAULT_MIM_ROLES_SCHEMA,
+                        help="mim_roles.yaml with the three facet enums (source of truth for token validation).")
+    parser.add_argument("--no-validate", action="store_true",
+                        help="Skip token-vs-enum validation. Emits every role token unchanged. "
+                             "Default: validate; drop invalid tokens; surface them in --validation-report.")
     parser.add_argument("--skipped-report", type=Path, default=None,
                         help="Optional path to write a report of files skipped with reasons.")
+    parser.add_argument("--validation-report", type=Path, default=None,
+                        help="Optional path to write invalid/wrong-facet token records "
+                             "and the human-only `warnings:` blocks that never enter the batch.")
     parser.add_argument("--verbose", "-v", action="store_true")
     args = parser.parse_args(argv)
 
@@ -296,18 +394,29 @@ def main(argv: list[str] | None = None) -> int:
         print("No input files found. Pass a file or directory.", file=sys.stderr)
         return 2
 
+    valid_tokens = None if args.no_validate else load_facet_enums(args.schema)
+    mim_repo = args.mim_repo if args.mim_repo.is_dir() else None
+
     proposals: list[dict[str, Any]] = []
     skipped: list[tuple[Path, str]] = []
+    validation_errors: list[dict[str, Any]] = []
+    warnings_by_file: dict[str, list[str]] = {}
+
     for f in input_files:
         try:
-            proposal = extract_one(f)
+            proposal = extract_one(f, valid_tokens=valid_tokens, mim_repo=mim_repo,
+                                   validation_errors=validation_errors)
         except Exception as exc:
             skipped.append((f, f"error: {exc}"))
             continue
         if proposal is None:
-            skipped.append((f, "no `role_research:` fenced YAML block found"))
+            skipped.append((f, "no `role_research:` fenced YAML block or no valid role tokens"))
             continue
         proposals.append(proposal)
+        # Collect human-only warnings for the validation report (never enter the batch).
+        ws = _collect_warnings(f)
+        if ws:
+            warnings_by_file[str(f)] = ws
         if args.verbose:
             print(f"OK  {f.name}  → {sum(len(v) for v in proposal['role_assignments'].values())} roles")
 
@@ -322,11 +431,30 @@ def main(argv: list[str] | None = None) -> int:
             lines.append(f"- `{f}` — {reason}")
         args.skipped_report.write_text("\n".join(lines))
 
+    if args.validation_report and (validation_errors or warnings_by_file):
+        lines = ["# Extraction validation report\n"]
+        if validation_errors:
+            lines.append(f"## Rejected role tokens ({len(validation_errors)})\n")
+            for err in validation_errors:
+                corr = f" — belongs in `{err['correct_facet']}`" if err.get("correct_facet") else ""
+                lines.append(f"- `{err['role']}` in `{err['facet']}` ({err['reason']}){corr}")
+                lines.append(f"    source: `{err['source_file']}`")
+        if warnings_by_file:
+            lines.append(f"\n## Curator warnings ({sum(len(v) for v in warnings_by_file.values())})\n")
+            for fpath, ws in warnings_by_file.items():
+                lines.append(f"### `{fpath}`")
+                for w in ws:
+                    lines.append(f"- {w}")
+        args.validation_report.write_text("\n".join(lines))
+
     print(f"Scanned {len(input_files)} input file(s)")
     print(f"Parsed {len(proposals)} proposal(s) → {args.out_mim}")
     print(f"                             → {args.out_cm}")
     if skipped:
         print(f"Skipped {len(skipped)} file(s){' (see report)' if args.skipped_report else ''}")
+    if validation_errors:
+        print(f"Rejected {len(validation_errors)} role token(s)"
+              f"{' (see validation report)' if args.validation_report else ''}")
     return 0
 
 

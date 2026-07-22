@@ -207,6 +207,7 @@ def test_extract_one_full_bundle(tmp_path):
     assert proposal["ingredient_slug"] == "L-cysteine"
     assert proposal["ingredient_identifier"] == "CHEBI:17561"
     assert proposal["ingredient_path"] == "data/ingredients/mapped/L-cysteine.yaml"
+    # Without --mim-repo, source_run falls back to the file's stem.
     assert proposal["source_run"] == "L-cysteine-edison-literature"
 
     ra = proposal["role_assignments"]
@@ -228,7 +229,8 @@ def test_extract_one_full_bundle(tmp_path):
     assert cm[0]["role"] == "SUBSTRATE"
     assert cm[0]["metabolic_context"] == "assimilatory sulfate reduction"
 
-    assert proposal["warnings"] == ["Do not confuse with cystine."]
+    # Warnings are human-only per the applier contract — never in the batch.
+    assert "warnings" not in proposal
 
 
 def test_extract_one_returns_none_when_no_yaml_block(tmp_path):
@@ -397,3 +399,196 @@ def test_main_records_skipped_files(tmp_path):
     assert rc == 0
     assert "no `role_research:` fenced YAML block" in skipped.read_text()
     assert json.loads(out_mim.read_text())["proposals"] == []
+
+
+# ---------------- load_facet_enums ----------------
+
+
+def test_load_facet_enums_reads_permissible_values(tmp_path):
+    """Verify the schema loader parses the three enum permissible-value sets."""
+    schema = tmp_path / "mim_roles.yaml"
+    schema.write_text(yaml.safe_dump({
+        "enums": {
+            "NutritionalRoleEnum": {"permissible_values": {
+                "CARBON_SOURCE": {}, "NITROGEN_SOURCE": {}}},
+            "PhysicochemicalRoleEnum": {"permissible_values": {
+                "BUFFER": {}, "REDUCING_AGENT": {}}},
+            "CellularMetabolicRoleEnum": {"permissible_values": {
+                "SUBSTRATE": {}, "COFACTOR": {}}},
+        }
+    }))
+    enums = _ext.load_facet_enums(schema)
+    assert enums["nutritional_roles"] == frozenset({"CARBON_SOURCE", "NITROGEN_SOURCE"})
+    assert enums["physicochemical_roles"] == frozenset({"BUFFER", "REDUCING_AGENT"})
+    assert enums["cellular_metabolic_roles"] == frozenset({"SUBSTRATE", "COFACTOR"})
+
+
+def test_load_facet_enums_raises_on_missing_schema(tmp_path):
+    with pytest.raises(SystemExit, match="mim_roles schema not found"):
+        _ext.load_facet_enums(tmp_path / "does_not_exist.yaml")
+
+
+def test_load_facet_enums_raises_on_missing_enum(tmp_path):
+    schema = tmp_path / "mim_roles.yaml"
+    schema.write_text(yaml.safe_dump({"enums": {"NutritionalRoleEnum": {"permissible_values": {"X": {}}}}}))
+    with pytest.raises(SystemExit, match="PhysicochemicalRoleEnum.permissible_values missing"):
+        _ext.load_facet_enums(schema)
+
+
+def test_load_facet_enums_reads_real_shipped_schema():
+    """Sanity-check that the actual vendored schema loads and contains expected tokens."""
+    enums = _ext.load_facet_enums()  # uses DEFAULT_MIM_ROLES_SCHEMA
+    assert "CARBON_SOURCE" in enums["nutritional_roles"]
+    assert "SULFUR_SOURCE" in enums["nutritional_roles"]
+    assert "BUFFER" in enums["physicochemical_roles"]
+    assert "REDUCING_AGENT" in enums["physicochemical_roles"]
+    assert "SUBSTRATE" in enums["cellular_metabolic_roles"]
+    assert "ELECTRON_DONOR" in enums["cellular_metabolic_roles"]
+
+
+# ---------------- extract_one with token validation ----------------
+
+
+_VALID_TOKENS_FIXTURE = {
+    "nutritional_roles": frozenset({"CARBON_SOURCE", "SULFUR_SOURCE", "AMINO_ACID_SOURCE"}),
+    "physicochemical_roles": frozenset({"BUFFER", "REDUCING_AGENT"}),
+    "cellular_metabolic_roles": frozenset({"SUBSTRATE", "COFACTOR"}),
+}
+
+
+def test_extract_one_drops_unknown_tokens_and_records_them(tmp_path):
+    body = textwrap.dedent("""\
+        ```yaml
+        role_research:
+          ingredient: X
+          nutritional_roles:
+            - role: CARBON_SOURCE   # valid
+            - role: FROBNICATOR     # bogus — should be dropped and reported
+          physicochemical_roles:
+            - role: BUFFER          # valid
+        ```
+        """)
+    md = _write_bundle(tmp_path, "X", body)
+    errors: list = []
+    proposal = _ext.extract_one(md, valid_tokens=_VALID_TOKENS_FIXTURE,
+                                 validation_errors=errors)
+    nut = proposal["role_assignments"]["nutritional_roles"]
+    assert [r["role"] for r in nut] == ["CARBON_SOURCE"]
+    assert len(errors) == 1
+    assert errors[0]["role"] == "FROBNICATOR"
+    assert errors[0]["reason"] == "unknown_token"
+    assert errors[0]["facet"] == "nutritional_roles"
+    assert "source_file" in errors[0]
+
+
+def test_extract_one_drops_wrong_facet_tokens_and_flags_correct_facet(tmp_path):
+    """A valid PhysicochemicalRoleEnum token filed under nutritional_roles is misfiled."""
+    body = textwrap.dedent("""\
+        ```yaml
+        role_research:
+          ingredient: X
+          nutritional_roles:
+            - role: BUFFER   # this is a Physicochemical value; wrong facet
+        ```
+        """)
+    md = _write_bundle(tmp_path, "X", body)
+    errors: list = []
+    proposal = _ext.extract_one(md, valid_tokens=_VALID_TOKENS_FIXTURE,
+                                 validation_errors=errors)
+    # Proposal becomes None because after dropping, no valid roles remain.
+    assert proposal is None
+    assert len(errors) == 1
+    assert errors[0]["reason"] == "wrong_facet"
+    assert errors[0]["role"] == "BUFFER"
+    assert errors[0]["facet"] == "nutritional_roles"
+    assert errors[0]["correct_facet"] == "physicochemical_roles"
+
+
+def test_extract_one_no_validation_when_valid_tokens_is_none(tmp_path):
+    """Without a token whitelist, extractor is permissive (backwards compat)."""
+    body = textwrap.dedent("""\
+        ```yaml
+        role_research:
+          ingredient: X
+          nutritional_roles:
+            - role: FROBNICATOR
+        ```
+        """)
+    md = _write_bundle(tmp_path, "X", body)
+    proposal = _ext.extract_one(md, valid_tokens=None)
+    assert proposal["role_assignments"]["nutritional_roles"][0]["role"] == "FROBNICATOR"
+
+
+def test_extract_one_source_run_is_mim_relative_when_repo_given(tmp_path):
+    """With --mim-repo pointing at the containing dir, source_run becomes MIM-relative."""
+    mim = tmp_path / "MIM"
+    roles_dir = mim / "research" / "ingredients" / "roles"
+    roles_dir.mkdir(parents=True)
+    body = "```yaml\nrole_research:\n  ingredient: X\n  nutritional_roles: [{role: CARBON_SOURCE}]\n```"
+    md = _write_bundle(roles_dir, "X", body)
+    proposal = _ext.extract_one(md, valid_tokens=_VALID_TOKENS_FIXTURE, mim_repo=mim)
+    assert proposal["source_run"] == "research/ingredients/roles/X-edison-literature.md"
+
+
+def test_extract_one_source_run_falls_back_when_file_outside_mim_repo(tmp_path):
+    """File that isn't inside --mim-repo falls back to stem — never crashes."""
+    mim = tmp_path / "MIM"
+    mim.mkdir()
+    md = _write_bundle(tmp_path, "X",
+                       "```yaml\nrole_research:\n  ingredient: X\n  nutritional_roles: [{role: CARBON_SOURCE}]\n```")
+    proposal = _ext.extract_one(md, valid_tokens=_VALID_TOKENS_FIXTURE, mim_repo=mim)
+    assert proposal["source_run"] == "X-edison-literature"
+
+
+# ---------------- main() with validation ----------------
+
+
+def test_main_validation_report_records_dropped_tokens_and_warnings(tmp_path):
+    body = textwrap.dedent("""\
+        ```yaml
+        role_research:
+          ingredient: X
+          nutritional_roles:
+            - role: CARBON_SOURCE
+            - role: BOGUS_TOKEN
+          warnings:
+            - "Curator note: needs review of concentration ranges"
+        ```
+        """)
+    _write_bundle(tmp_path, "X", body)
+    schema = tmp_path / "mim_roles.yaml"
+    schema.write_text(yaml.safe_dump({"enums": {
+        "NutritionalRoleEnum": {"permissible_values": {"CARBON_SOURCE": {}}},
+        "PhysicochemicalRoleEnum": {"permissible_values": {"BUFFER": {}}},
+        "CellularMetabolicRoleEnum": {"permissible_values": {"SUBSTRATE": {}}},
+    }}))
+    out_mim = tmp_path / "mim.json"
+    out_cm = tmp_path / "cm.json"
+    report = tmp_path / "validation.md"
+    rc = _ext.main([str(tmp_path), "--out-mim", str(out_mim), "--out-cm", str(out_cm),
+                    "--schema", str(schema), "--validation-report", str(report)])
+    assert rc == 0
+    # Batch shipped with only the valid token.
+    p = json.loads(out_mim.read_text())["proposals"][0]
+    assert [r["role"] for r in p["role_assignments"]["nutritional_roles"]] == ["CARBON_SOURCE"]
+    # Batch is silent on warnings (contract).
+    assert "warnings" not in p
+    # But the validation report captured both.
+    report_text = report.read_text()
+    assert "BOGUS_TOKEN" in report_text
+    assert "unknown_token" in report_text
+    assert "needs review of concentration ranges" in report_text
+
+
+def test_main_no_validate_flag_disables_token_check(tmp_path):
+    """--no-validate lets any token through (backwards-compat safety valve)."""
+    body = ("```yaml\nrole_research:\n  ingredient: X\n"
+            "  nutritional_roles: [{role: NOT_A_REAL_TOKEN}]\n```")
+    _write_bundle(tmp_path, "X", body)
+    out_mim = tmp_path / "mim.json"
+    out_cm = tmp_path / "cm.json"
+    rc = _ext.main([str(tmp_path), "--out-mim", str(out_mim), "--out-cm", str(out_cm),
+                    "--no-validate"])
+    assert rc == 0
+    p = json.loads(out_mim.read_text())["proposals"][0]
+    assert p["role_assignments"]["nutritional_roles"][0]["role"] == "NOT_A_REAL_TOKEN"
