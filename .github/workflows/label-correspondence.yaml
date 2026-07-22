@@ -24,7 +24,6 @@ on:
       - "output/**.sssom.tsv"
       - "src/culturemech/schema/**"
       - "scripts/validate_id_label_correspondence.py"
-      - "scripts/.validate_id_label_correspondence.sha256"
       - "conf/id_label_targets.yaml"
       - ".github/workflows/label-correspondence.yaml"
   push:
@@ -56,11 +55,13 @@ jobs:
           path: ~/.data/oaklib
           key: oaklib-${{ runner.os }}-v1
 
-      # Durability guard: fail the build if the vendored validator script has
-      # drifted from its pinned sha256 (the .py is byte-identical across the
-      # Mech repos; an accidental one-copy edit must not silently diverge).
-      - name: Verify id↔label validator pin
-        run: just verify-validator-pin
+      # Vendored-file drift is no longer guarded by a self-generated sha256 pin
+      # (retired — it compared this copy to a hash from this same repo). As the
+      # canonical hub, CultureMech is covered by the nightly fleet audit
+      # (.github/workflows/vendored-fleet-audit.yml, which compares all four
+      # repos) and by validate-products below, which exercises the validator on
+      # the full corpus. The spokes fail their own CI on drift via
+      # scripts/check_vendored_sync.sh (shared-reference check against this hub).
 
       # Build the SSSOM product so the `required: true` sssom target is satisfied
       # (output/ is gitignored, so it is never checked in). The generator resolves

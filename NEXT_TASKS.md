@@ -52,6 +52,20 @@ All four repos pin the same 3-file manifest (`142bbe1…` / `55a432…` / `f01d2
 the "decide on TraitMech" question is resolved. `conf/id_label_targets.yaml` stays
 unpinned everywhere by design (per-repo adapters/targets/exceptions).
 
+Update (2026-07-21): the self-generated sha256 pin was **retired** (Phase 2 step 2d).
+It could only compare a copy to a hash from the *same* repo, so all four could pass
+`verify-validator-pin` while holding three different versions — and that actually
+happened. Drift is now caught by a shared-reference check: each spoke's CI runs
+`scripts/check_vendored_sync.sh`, which fetches the vendored files from
+`CultureBotAI/CultureMech` at the commit pinned in `scripts/.vendored_canon_ref` and
+diffs (the reference lives in *another* repo, so a one-copy edit fails CI). This
+canonical hub is covered by the nightly `vendored-fleet-audit.yml`, which compares
+all four repos and fails on any disagreement. `verify-/refresh-validator-pin`, the
+`VENDORED_IDLABEL_FILES` manifest, and `scripts/.validate_id_label_correspondence.sha256`
+were deleted from all four repos. `schema-pin` / `mim-roles-pin` are unaffected — those
+sets have no drift-check replacement yet. Propagating a shared-file change is now:
+PR into this hub → merge → bump `.vendored_canon_ref` in the spokes.
+
 ## Adopt DisMech knowledge-gaps + datasets + QC dashboard (claw#7)
 
 Coordinated cross-Mech adoption of DisMech's domain-general features. Full plan,
