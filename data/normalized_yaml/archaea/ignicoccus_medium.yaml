@@ -1,0 +1,206 @@
+id: CultureMech:002060
+name: ignicoccus_medium
+original_name: IGNICOCCUS MEDIUM
+category: archaea
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range:
+  min: 5.0
+  max: 5.5
+media_term:
+  preferred_term: DSMZ Medium 897
+  term:
+    id: mediadive.medium:897
+    label: IGNICOCCUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium897.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '13.5417'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.47222'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2.72817'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.496032'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  concentration:
+    value: '0.248016'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.376984'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.327381'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: sodium bromide
+  concentration:
+    value: '0.0496032'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
+    label: NaBr
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.014881'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.00694444'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+- preferred_term: KI
+  term:
+    id: CHEBI:8346
+    label: KI
+  concentration:
+    value: '4.96032e-05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000232
+    label: KI
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000496032'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '4.96032'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
+    label: Sulfur
+- preferred_term: Meat extract
+  concentration:
+    value: '0.992063'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.198413'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Dissolve ingredients except sulfur, meat extract and sulfide, adjust
+    pH to 5.0 - 5.5 with 2 N H2SO4 and sparge medium with 80% H2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic. Distribute medium under the same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials already containing the appropriate
+    amount of sulfur, only to 30% of their volume to allow for a large head space.
+    For sterilization heat cultivation vessels in boiling water for 1 -2 hours on
+    each of 3 successive days. Add meat extract and sulfide from sterile anoxic stock
+    solutions prepared under 100% N2 gas atmosphere.
+- step_number: 2
+  action: MIX
+  description: After inoculation pressurize the vessels with sterile 80% H2 and 20%
+    CO2 gas mixture to 2 bar overpressure.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.660247Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 897'
+- timestamp: '2026-03-13T06:19:09.898444Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002060'
+- timestamp: '2026-03-17T06:30:15.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:22.506684+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "IGNICOCCUS MEDIUM" to "ignicoccus_medium" for consistent
+    matching
+- timestamp: '2026-05-20T06:01:23.090885+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''5-5.5'' -> {''min'': 5.0, ''max'': 5.5}'
+- timestamp: '2026-06-05T07:41:09.283338+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 12 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:00.014705+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

@@ -1,0 +1,356 @@
+id: CultureMech:009166
+name: ignicoccus_medium_for_dsm_18386
+original_name: Ignicoccus Medium (for DSM 18386)
+category: archaea
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sodium resazurin (0.1% w/v)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Solution, Defined component'
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: NaCl
+  concentration:
+    value: '13.65'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.38'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '2.75'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: H3BO3
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: KCl
+  concentration:
+    value: '0.33'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Sulfur (powdered)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: NaBr
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:63004
+    label: sodium bromide
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
+    label: sodium bromide
+- preferred_term: 2 N H2SO4
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M2599
+  term:
+    id: TOGO:M2599
+    label: Ignicoccus Medium (for DSM 18386)
+notes: 'Source: https://togomedium.org/medium/M2599
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium897.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.831971Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2599'
+- timestamp: '2026-01-28T19:48:33.568051Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 2 N H2SO4; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    N2; Added default concentration for ingredient: Hydrogen gas'
+  timestamp: '2026-02-03T00:00:00+00:00'
+- timestamp: '2026-03-09T08:04:55.653355+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:03.512450Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009166'
+- curator: schema-defaulter-v1.0
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+  timestamp: '2026-03-14T00:00:00+00:00'
+- timestamp: '2026-03-17T06:30:36.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.238533+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Ignicoccus Medium (for DSM 18386)" to "ignicoccus_medium_for_dsm_18386"
+    for consistent matching
+- timestamp: '2026-05-16T09:03:37.720366+00:00'
+  curator: migrate_legacy_fields.py
+  action: MIGRATED_LEGACY_FIELDS
+  notes: curation_history.date->timestamp=2
+- timestamp: '2026-06-05T07:41:09.294319+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T06:57:49.327627+00:00'
+  curator: mgso4-heptahydrate-term-fix-v1.0
+  action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
+    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
+    labels untouched.
+- timestamp: '2026-06-10T07:47:00.018762+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-02T06:47:50.241127+00:00'
+  curator: deep-research-edison-phase2
+  action: ENRICHED
+  notes: 'Phase-2: I. hospitalis DSM 18386T (the type strain named in the record)
+    is cultivated in ''1/2 SME-Ignicoccus medium''; I. islandicus DSM 13165T and I.
+    pacificus DSM 13166T grow in the closely related ''1/2 SME+S0'' formulation (Koschnitzki
+    2017, explicit recipe). The ingredient-level recipe of the parent (TOGO M2599
+    / DSMZ 897) is cited transitively (Paper 2007 / Huber 2000), so exact recipe identity
+    is unverified; organism links are to the recognizable Ignicoccus-medium family.
+    [added 3 organism(s), 2 variant(s)]'
+solutions:
+- preferred_term: SrCl2 x 6 H2O solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Solution, Defined component'
+  name: Unknown solution
+- preferred_term: KI solution (0.01% w/v)
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Solution, Defined component, Inorganic
+    compound'
+  name: Unknown solution
+target_organisms:
+- preferred_term: Ignicoccus hospitalis
+  term:
+    id: NCBITaxon:160233
+    label: Ignicoccus hospitalis
+  strain: KIN4/I (= KIN4/IT), DSM 18386T
+  genome_assembly_id:
+  - GCA_000017945.1
+  evidence:
+  - reference: doi:10.1128/JB.06130-11
+    supports: SUPPORT
+    explanation: 'Mayer et al. 2012 explicitly cultivates the DSM 18386 type strain
+      in 1/2 SME-Ignicoccus medium, the medium this record represents. Ingredient-level
+      recipe is cited transitively (Paper et al. 2007), so parent-formulation identity
+      is strong by name but not printed in this source. | Identifiers: DSM 18386T;
+      RefSeq NC_009776.1; 16S Gene ID 5562932'
+    snippet: I. hospitalis KIN4/IT (DSM 18386) was grown in 1/2 SME-Ignicoccus medium
+      at 90C under H2/CO2 (80:20, v/v) at 250 kPa, H2 as electron donor and elemental
+      sulfur as electron acceptor.
+- preferred_term: Ignicoccus islandicus
+  term:
+    id: NCBITaxon:54259
+    label: Ignicoccus islandicus
+  strain: Kol8, DSM 13165T
+  genome_assembly_id:
+  - GCA_001481685.1
+  evidence:
+  - reference: doi:10.5283/epub.34741
+    supports: SUPPORT
+    explanation: 'Growth supported on the 1/2 SME+S0 variant of the Ignicoccus medium
+      family (extra NaHCO3, SrCl2.6H2O, KI and different S0/Na2S vs parent). Curate
+      against the half_sme_s0_ignicoccus variant rather than asserting identity with
+      the parent. | Identifiers: DSM 13165T; NZ_CP006867'
+    snippet: Ignicoccus pacificus LPC33, DSM 13166T • Ignicoccus islandicus Kol8, DSM
+      13165T
+- preferred_term: Ignicoccus pacificus
+  term:
+    id: NCBITaxon:114376
+    label: Ignicoccus pacificus
+  strain: LPC33, DSM 13166T
+  evidence:
+  - reference: doi:10.5283/epub.34741
+    supports: SUPPORT
+    explanation: 'Growth supported on the 1/2 SME+S0 variant. Phase-2 flagged that
+      this formulation differs from the parent (KI, SrCl2.6H2O, NaHCO3, different
+      boric acid level); treat as variant-scoped evidence, not parent identity. |
+      Identifiers: DSM 13166T'
+variants:
+- name: half_sme_s0_ignicoccus
+  relationship: DERIVED_FROM
+  description: Half-strength SME (synthetic seawater) medium supplemented with elemental
+    sulfur and reduced with Na2S, used by Koschnitzki 2017 for all Ignicoccus representatives.
+    Recognizable variant of the parent Ignicoccus medium.
+  modifications:
+  - Half-strength SME synthetic-seawater base
+  - Add elemental sulfur (S0) as electron acceptor
+  - Reduce with Na2S
+  - 'Additional/trace components vs parent: explicit NaHCO3, SrCl2.6H2O, KI'
+  - H2/CO2 (80:20) headspace, ~1.5 bar; pH 5.5-6.0; 90C
+  purpose: Routine cultivation of Ignicoccus representatives (I. hospitalis DSM 18386T,
+    I. islandicus DSM 13165T, I. pacificus DSM 13166T) under sulfur-reducing chemolithoautotrophic
+    conditions.
+  evidence:
+  - reference: doi:10.5283/epub.34741
+    supports: SUPPORT
+    explanation: Koschnitzki 2017 prints the formulation and strain list.
+    snippet: '½ SME+S0 medium for all Ignicoccus representatives (Paper et al., 2007)
+      Substance Amount Concentration SME 500 ml ½ x KH2PO4 0.5 g 3.7 mM (NH4)2SO4 0.25
+      g 1.9 mM NaHCO3 0.16 g 1.9 mM Resazurin (0.1 %) 1 ml 0.0001 % Na2S x 7-9 H2O 0.5
+      g 2.1 mM ddH2O ad 1000 ml'
+- name: half_sme_ignicoccus_plus_0_1pct_yeast_extract
+  relationship: SUPPLEMENTED_VARIANT
+  description: Mixotrophic version of 1/2 SME-Ignicoccus medium with 0.1% (w/v) yeast
+    extract added, used by Mayer 2012 to compare autotrophic vs mixotrophic growth
+    of I. hospitalis DSM 18386.
+  modifications:
+  - Add yeast extract to 0.1% (w/v)
+  purpose: Mixotrophic growth / physiology comparison vs the autotrophic baseline.
+  evidence:
+  - reference: doi:10.1128/JB.06130-11
+    supports: SUPPORT
+    explanation: Mayer et al. 2012 describes the yeast-extract supplementation explicitly.
+    snippet: Comparison of autotrophic growth with mixotrophic growth where 0.1% yeast
+      extract was added to the normal culture medium of I. hospitalis DSM 18386.
