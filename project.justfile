@@ -829,49 +829,19 @@ report-label-drift:
 # plus the nightly fleet audit here (.github/workflows/vendored-fleet-audit.yml).
 # See culturebotai-claw vendored_sync_action_plan (Phase 2).
 
-# Durability guard for the shared LinkML module (Discussion + Dataset), vendored
-# byte-identical across the Mech repos — see culturebotai-claw#7.
-SHARED_SCHEMA_MODULE := "src/culturemech/schema/mech_shared.yaml"
-[group('QC')]
-verify-schema-pin:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    if command -v sha256sum >/dev/null 2>&1; then
-        sha256sum -c src/culturemech/schema/.mech_shared.sha256
-    else
-        shasum -a 256 -c src/culturemech/schema/.mech_shared.sha256
-    fi
-
-[group('QC')]
-refresh-schema-pin:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    f={{SHARED_SCHEMA_MODULE}}
-    if command -v sha256sum >/dev/null 2>&1; then h=$(sha256sum "$f" | cut -d' ' -f1); else h=$(shasum -a 256 "$f" | cut -d' ' -f1); fi
-    printf '%s  %s\n' "$h" "$f" > src/culturemech/schema/.mech_shared.sha256
-    echo "re-pinned $f to $h"
-
-# Durability guard for the MIM-authored ingredient role facet enums, vendored
-# byte-identical from CultureBotAI/MediaIngredientMech.
-MIM_ROLES_MODULE := "src/culturemech/schema/mim_roles.yaml"
-[group('QC')]
-verify-mim-roles-pin:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    if command -v sha256sum >/dev/null 2>&1; then
-        sha256sum -c src/culturemech/schema/.mim_roles.sha256
-    else
-        shasum -a 256 -c src/culturemech/schema/.mim_roles.sha256
-    fi
-
-[group('QC')]
-refresh-mim-roles-pin:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    f={{MIM_ROLES_MODULE}}
-    if command -v sha256sum >/dev/null 2>&1; then h=$(sha256sum "$f" | cut -d' ' -f1); else h=$(shasum -a 256 "$f" | cut -d' ' -f1); fi
-    printf '%s  %s\n' "$h" "$f" > src/culturemech/schema/.mim_roles.sha256
-    echo "re-pinned $f to $h"
+# NOTE: the shared LinkML module (mech_shared.yaml) is vendored byte-identical
+# across the Mech repos (package-namespaced path per repo). Its self-generated
+# sha256 pin (verify-/refresh-schema-pin) was retired — same self-referential
+# flaw as the id-label pin. mech_shared.yaml is now covered by the shared-
+# reference drift check (spokes' scripts/check_vendored_sync.sh diffs their
+# src/<pkg>/schema/mech_shared.yaml against this hub's copy) and the nightly
+# vendored-fleet-audit.yml here. Propagation: change it in this hub → sync the
+# spokes → bump their .vendored_canon_ref.
+#
+# The former mim-roles-pin was also retired: mim_roles.yaml is NOT a shared set —
+# it is empty in MIM/CommunityMech/TraitMech (the real role facets live in MIM's
+# src/mediaingredientmech/utils/role_facets.py) and has content only here, so the
+# self-pin guarded a lone, dormant file. Nothing in CI referenced either pin.
 
 [group('QC')]
 validate-all:
