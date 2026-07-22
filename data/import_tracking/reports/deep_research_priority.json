@@ -1,246 +1,5 @@
 [
   {
-    "recipe_name": "ignicoccus_medium_for_dsm_18386",
-    "file_path": "bacterial/ignicoccus_medium_for_dsm_18386.yaml",
-    "id": "CultureMech:009166",
-    "name": "ignicoccus_medium_for_dsm_18386",
-    "original_name": "Ignicoccus Medium (for DSM 18386)",
-    "category": "bacterial",
-    "media_term": "TOGO Medium M2599 (TOGO:M2599)",
-    "score": 92.0,
-    "subtotal": 92,
-    "category_multiplier": 1.0,
-    "ingredient_count": 17,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 17,
-        "with_concentration": 17,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "TOGO",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 10,
-        "markers": [
-          "culture_collection"
-        ]
-      }
-    }
-  },
-  {
-    "recipe_name": "medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397",
-    "file_path": "bacterial/medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397.yaml",
-    "id": "CultureMech:008179",
-    "name": "medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397",
-    "original_name": "Medium for Co-culture of Strain JT with Methanospirillum hungatei NBRC 100397",
-    "category": "bacterial",
-    "media_term": "TOGO Medium M1624 (TOGO:M1624)",
-    "score": 92.0,
-    "subtotal": 92,
-    "category_multiplier": 1.0,
-    "ingredient_count": 35,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 30,
-        "count": 35,
-        "with_concentration": 35,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "TOGO",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 15,
-        "markers": [
-          "culture_collection",
-          "binomial"
-        ]
-      }
-    }
-  },
-  {
-    "recipe_name": "medium_for_sulfospirillum_dsm_806",
-    "file_path": "bacterial/medium_for_sulfospirillum_dsm_806.yaml",
-    "id": "CultureMech:000678",
-    "name": "medium_for_sulfospirillum_dsm_806",
-    "original_name": "MEDIUM FOR SULFOSPIRILLUM DSM 806",
-    "category": "bacterial",
-    "media_term": "DSMZ Medium 121 (mediadive.medium:121)",
-    "score": 92.0,
-    "subtotal": 92,
-    "category_multiplier": 1.0,
-    "ingredient_count": 17,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 17,
-        "with_concentration": 17,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 10,
-        "markers": [
-          "culture_collection"
-        ]
-      }
-    }
-  },
-  {
-    "recipe_name": "sulfolobus_medium_anaerobic_for_dsm_2162",
-    "file_path": "bacterial/sulfolobus_medium_anaerobic_for_dsm_2162.yaml",
-    "id": "CultureMech:009226",
-    "name": "sulfolobus_medium_anaerobic_for_dsm_2162",
-    "original_name": "Sulfolobus Medium (Anaerobic) (For DSM 2162)",
-    "category": "bacterial",
-    "media_term": "TOGO Medium M2670 (TOGO:M2670)",
-    "score": 92.0,
-    "subtotal": 92,
-    "category_multiplier": 1.0,
-    "ingredient_count": 19,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 19,
-        "with_concentration": 19,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "TOGO",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 10,
-        "markers": [
-          "culture_collection"
-        ]
-      }
-    }
-  },
-  {
-    "recipe_name": "sulfolobus_medium_for_dsm_5348",
-    "file_path": "bacterial/sulfolobus_medium_for_dsm_5348.yaml",
-    "id": "CultureMech:008908",
-    "name": "sulfolobus_medium_for_dsm_5348",
-    "original_name": "Sulfolobus Medium (For DSM 5348)",
-    "category": "bacterial",
-    "media_term": "TOGO Medium M2320 (TOGO:M2320)",
-    "score": 92.0,
-    "subtotal": 92,
-    "category_multiplier": 1.0,
-    "ingredient_count": 17,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 17,
-        "with_concentration": 17,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "TOGO",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 10,
-        "markers": [
-          "culture_collection"
-        ]
-      }
-    }
-  },
-  {
     "recipe_name": "sulfolobus_medium_for_dsm_9790",
     "file_path": "bacterial/sulfolobus_medium_for_dsm_9790.yaml",
     "id": "CultureMech:008911",
@@ -11489,6 +11248,1294 @@
     }
   },
   {
+    "recipe_name": "desulfurivibrio_ames2_medium",
+    "file_path": "bacterial/JCM_J1333_DESULFURIVIBRIO_AMeS2_MEDIUM.yaml",
+    "id": "CultureMech:015831",
+    "name": "desulfurivibrio_ames2_medium",
+    "original_name": "DESULFURIVIBRIO AMeS2 MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1333 (jcm.grmd:1333)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "modified_pfennig_medium_with_acetate_and_fumarate",
+    "file_path": "bacterial/JCM_J1341_MODIFIED_PFENNIG_MEDIUM_WITH_ACETATE_AND_FUMARATE.yaml",
+    "id": "CultureMech:015833",
+    "name": "modified_pfennig_medium_with_acetate_and_fumarate",
+    "original_name": "MODIFIED PFENNIG MEDIUM WITH ACETATE AND FUMARATE",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1341 (jcm.grmd:1341)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "sea_water_medium_with_acetate",
+    "file_path": "bacterial/JCM_J1344_SEA_WATER_MEDIUM_WITH_ACETATE.yaml",
+    "id": "CultureMech:015834",
+    "name": "sea_water_medium_with_acetate",
+    "original_name": "SEA WATER MEDIUM WITH ACETATE",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1344 (jcm.grmd:1344)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "pelosinus_bkl1_medium",
+    "file_path": "bacterial/JCM_J1351_PELOSINUS_BKL1_MEDIUM.yaml",
+    "id": "CultureMech:015835",
+    "name": "pelosinus_bkl1_medium",
+    "original_name": "PELOSINUS BKL1 MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1351 (jcm.grmd:1351)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 13,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 13,
+        "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "rfodospirillaceae_medium_modified",
+    "file_path": "bacterial/JCM_J1354_RFODOSPIRILLACEAE_MEDIUM_MODIFIED.yaml",
+    "id": "CultureMech:015837",
+    "name": "rfodospirillaceae_medium_modified",
+    "original_name": "RFODOSPIRILLACEAE MEDIUM (MODIFIED)",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1354 (jcm.grmd:1354)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "marinagarivorans_sp_ge09_medium",
+    "file_path": "bacterial/JCM_J1357_Marinagarivorans_sp_GE09_medium.yaml",
+    "id": "CultureMech:015838",
+    "name": "marinagarivorans_sp_ge09_medium",
+    "original_name": "Marinagarivorans sp. GE09 medium",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1357 (jcm.grmd:1357)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 18,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 18,
+        "with_concentration": 18,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "mineral_carbonate_medium_with_casein_peptone",
+    "file_path": "bacterial/JCM_J1359_MINERAL_CARBONATE_MEDIUM_WITH_CASEIN_PEPTONE.yaml",
+    "id": "CultureMech:015839",
+    "name": "mineral_carbonate_medium_with_casein_peptone",
+    "original_name": "MINERAL CARBONATE MEDIUM WITH CASEIN PEPTONE",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1359 (jcm.grmd:1359)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "widdel_freshwater_medium_with_spermidine",
+    "file_path": "bacterial/JCM_J1363_WIDDEL_FRESHWATER_MEDIUM_WITH_SPERMIDINE.yaml",
+    "id": "CultureMech:015841",
+    "name": "widdel_freshwater_medium_with_spermidine",
+    "original_name": "WIDDEL FRESHWATER MEDIUM WITH SPERMIDINE",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1363 (jcm.grmd:1363)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 25,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 25,
+        "with_concentration": 25,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "widdel_freshwater_medium_with_formate_and_acetate",
+    "file_path": "bacterial/JCM_J1364_WIDDEL_FRESHWATER_MEDIUM_WITH_FORMATE_AND_ACETATE.yaml",
+    "id": "CultureMech:015842",
+    "name": "widdel_freshwater_medium_with_formate_and_acetate",
+    "original_name": "WIDDEL FRESHWATER MEDIUM WITH FORMATE AND ACETATE",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1364 (jcm.grmd:1364)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "acidic_low_salt_mineral_medium",
+    "file_path": "bacterial/JCM_J1365_ACIDIC_LOW_SALT_MINERAL_MEDIUM.yaml",
+    "id": "CultureMech:015843",
+    "name": "acidic_low_salt_mineral_medium",
+    "original_name": "ACIDIC LOW SALT MINERAL MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1365 (jcm.grmd:1365)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 17,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 17,
+        "with_concentration": 17,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "gbs_salts_medium_for_hydrogenobacter",
+    "file_path": "bacterial/JCM_J1366_GBS_SALTS_MEDIUM_FOR_HYDROGENOBACTER.yaml",
+    "id": "CultureMech:015844",
+    "name": "gbs_salts_medium_for_hydrogenobacter",
+    "original_name": "GBS SALTS MEDIUM FOR HYDROGENOBACTER",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1366 (jcm.grmd:1366)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "modified_low_salt_medium_for_b11",
+    "file_path": "bacterial/JCM_J1375_MODIFIED_LOW_SALT_MEDIUM_FOR_B11.yaml",
+    "id": "CultureMech:015845",
+    "name": "modified_low_salt_medium_for_b11",
+    "original_name": "MODIFIED LOW SALT MEDIUM FOR B11",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1375 (jcm.grmd:1375)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "acc8_medium",
+    "file_path": "bacterial/JCM_J1388_ACC8_MEDIUM.yaml",
+    "id": "CultureMech:015848",
+    "name": "acc8_medium",
+    "original_name": "ACC8 MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1388 (jcm.grmd:1388)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "ia91_medium",
+    "file_path": "bacterial/JCM_J1389_IA91_MEDIUM.yaml",
+    "id": "CultureMech:015849",
+    "name": "ia91_medium",
+    "original_name": "IA91 MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1389 (jcm.grmd:1389)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "atribacterota_m15_medium",
+    "file_path": "bacterial/JCM_J1392_ATRIBACTEROTA_M15_MEDIUM.yaml",
+    "id": "CultureMech:015850",
+    "name": "atribacterota_m15_medium",
+    "original_name": "ATRIBACTEROTA M15 MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1392 (jcm.grmd:1392)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "pfennig_thiofaba_medium",
+    "file_path": "bacterial/JCM_J1393_PFENNIG_THIOFABA_MEDIUM.yaml",
+    "id": "CultureMech:015851",
+    "name": "pfennig_thiofaba_medium",
+    "original_name": "PFENNIG THIOFABA MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1393 (jcm.grmd:1393)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "pfennig_thermodesulfobium_medium",
+    "file_path": "bacterial/JCM_J1395_PFENNIG_THERMODESULFOBIUM_MEDIUM.yaml",
+    "id": "CultureMech:015852",
+    "name": "pfennig_thermodesulfobium_medium",
+    "original_name": "PFENNIG THERMODESULFOBIUM MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1395 (jcm.grmd:1395)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 12,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 12,
+        "with_concentration": 12,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "artificial_brackish_water_medium_2",
+    "file_path": "bacterial/JCM_J1399_ARTIFICIAL_BRACKISH_WATER_MEDIUM_2.yaml",
+    "id": "CultureMech:015853",
+    "name": "artificial_brackish_water_medium_2",
+    "original_name": "ARTIFICIAL BRACKISH WATER MEDIUM 2",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1399 (jcm.grmd:1399)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 18,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 18,
+        "with_concentration": 18,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "mineral_carbonate_medium_with_cellobiose",
+    "file_path": "bacterial/JCM_J1404_MINERAL_CARBONATE_MEDIUM_WITH_CELLOBIOSE.yaml",
+    "id": "CultureMech:015854",
+    "name": "mineral_carbonate_medium_with_cellobiose",
+    "original_name": "MINERAL CARBONATE MEDIUM WITH CELLOBIOSE",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1404 (jcm.grmd:1404)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "thiohalorhabdus_methylotrophus_medium",
+    "file_path": "bacterial/JCM_J1405_THIOHALORHABDUS_METHYLOTROPHUS_MEDIUM.yaml",
+    "id": "CultureMech:015855",
+    "name": "thiohalorhabdus_methylotrophus_medium",
+    "original_name": "THIOHALORHABDUS METHYLOTROPHUS MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1405 (jcm.grmd:1405)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "tepidibacter_8c15b_medium",
+    "file_path": "bacterial/JCM_J1406_TEPIDIBACTER_8C15B_MEDIUM.yaml",
+    "id": "CultureMech:015856",
+    "name": "tepidibacter_8c15b_medium",
+    "original_name": "TEPIDIBACTER 8C15B MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1406 (jcm.grmd:1406)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "mangrovibacterium_z1_71_medium",
+    "file_path": "bacterial/JCM_J1412_MANGROVIBACTERIUM_Z1_71_MEDIUM.yaml",
+    "id": "CultureMech:015857",
+    "name": "mangrovibacterium_z1_71_medium",
+    "original_name": "MANGROVIBACTERIUM Z1-71 MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1412 (jcm.grmd:1412)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "halothiobacillus_ls2_medium",
+    "file_path": "bacterial/JCM_J1419_HALOTHIOBACILLUS_LS2_MEDIUM.yaml",
+    "id": "CultureMech:015859",
+    "name": "halothiobacillus_ls2_medium",
+    "original_name": "HALOTHIOBACILLUS LS2 MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1419 (jcm.grmd:1419)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 16,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 16,
+        "with_concentration": 16,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "sporomusa_medium_2",
+    "file_path": "bacterial/JCM_J1425_SPOROMUSA_MEDIUM_2.yaml",
+    "id": "CultureMech:015862",
+    "name": "sporomusa_medium_2",
+    "original_name": "SPOROMUSA MEDIUM-2",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1425 (jcm.grmd:1425)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 18,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 18,
+        "with_concentration": 18,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "m1h_nag_asw",
+    "file_path": "bacterial/JCM_J1429_M1H_NAG_ASW.yaml",
+    "id": "CultureMech:015864",
+    "name": "m1h_nag_asw",
+    "original_name": "M1H NAG ASW",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1429 (jcm.grmd:1429)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "semi_solid_heterotrophic_growth_medium_for_alphaproteobacteria",
+    "file_path": "bacterial/JCM_J1430_SEMI_SOLID_HETEROTROPHIC_GROWTH_MEDIUM_FOR_ALPHAPROTEOBACTERIA.yaml",
+    "id": "CultureMech:015865",
+    "name": "semi_solid_heterotrophic_growth_medium_for_alphaproteobacteria",
+    "original_name": "SEMI-SOLID HETEROTROPHIC GROWTH MEDIUM FOR ALPHAPROTEOBACTERIA",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1430 (jcm.grmd:1430)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 18,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 18,
+        "with_concentration": 18,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "semi_solid_autotrophic_growth_medium_for_gammaproteobacteria",
+    "file_path": "bacterial/JCM_J1431_SEMI_SOLID_AUTOTROPHIC_GROWTH_MEDIUM_FOR_GAMMAPROTEOBACTERIA.yaml",
+    "id": "CultureMech:015866",
+    "name": "semi_solid_autotrophic_growth_medium_for_gammaproteobacteria",
+    "original_name": "SEMI-SOLID AUTOTROPHIC GROWTH MEDIUM FOR GAMMAPROTEOBACTERIA",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1431 (jcm.grmd:1431)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 16,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 16,
+        "with_concentration": 16,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "r2a_agar_ph_5_5",
+    "file_path": "bacterial/JCM_J1438_R2A_AGAR_pH_5_5.yaml",
+    "id": "CultureMech:015880",
+    "name": "r2a_agar_ph_5_5",
+    "original_name": "R2A AGAR (pH 5.5)",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1438 (jcm.grmd:1438)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
     "recipe_name": "leuconostoc_oenos_medium",
     "file_path": "bacterial/JCM_J143_LEUCONOSTOC_OENOS_MEDIUM.yaml",
     "id": "CultureMech:002502",
@@ -11507,6 +12554,236 @@
         "score": 35,
         "count": 10,
         "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "desulfosporosinus_sb140_medium",
+    "file_path": "bacterial/JCM_J1444_DESULFOSPOROSINUS_SB140_MEDIUM.yaml",
+    "id": "CultureMech:015868",
+    "name": "desulfosporosinus_sb140_medium",
+    "original_name": "DESULFOSPOROSINUS SB140 MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1444 (jcm.grmd:1444)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "pmx_108_medium",
+    "file_path": "bacterial/JCM_J1445_PMX_108_MEDIUM.yaml",
+    "id": "CultureMech:015869",
+    "name": "pmx_108_medium",
+    "original_name": "PMX.108 MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1445 (jcm.grmd:1445)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 19,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 19,
+        "with_concentration": 19,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "modified_nms_medium_4",
+    "file_path": "bacterial/JCM_J1465_MODIFIED_NMS_MEDIUM_4.yaml",
+    "id": "CultureMech:015872",
+    "name": "modified_nms_medium_4",
+    "original_name": "MODIFIED NMS MEDIUM-4",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1465 (jcm.grmd:1465)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 18,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 18,
+        "with_concentration": 18,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "freshwater_r2a_medium",
+    "file_path": "bacterial/JCM_J1468_FRESHWATER_R2A_MEDIUM.yaml",
+    "id": "CultureMech:015874",
+    "name": "freshwater_r2a_medium",
+    "original_name": "FRESHWATER R2A MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1468 (jcm.grmd:1468)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 19,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 19,
+        "with_concentration": 19,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "desulfobacter_medium_with_horse_serum",
+    "file_path": "bacterial/JCM_J1475_DESULFOBACTER_MEDIUM_WITH_HORSE_SERUM.yaml",
+    "id": "CultureMech:015875",
+    "name": "desulfobacter_medium_with_horse_serum",
+    "original_name": "DESULFOBACTER MEDIUM WITH HORSE SERUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1475 (jcm.grmd:1475)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 16,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 16,
+        "with_concentration": 16,
         "bonus": 5
       },
       "source": {
@@ -138977,6 +140254,374 @@
     }
   },
   {
+    "recipe_name": "natronoarchaea_medium_ii",
+    "file_path": "archaea/JCM_J1334_NATRONOARCHAEA_MEDIUM_II.yaml",
+    "id": "CultureMech:015832",
+    "name": "natronoarchaea_medium_ii",
+    "original_name": "NATRONOARCHAEA MEDIUM II",
+    "category": "archaea",
+    "media_term": "JCM Medium J1334 (jcm.grmd:1334)",
+    "score": 79.8,
+    "subtotal": 84,
+    "category_multiplier": 0.95,
+    "ingredient_count": 13,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 13,
+        "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "methanobacterium_vt_medium",
+    "file_path": "archaea/JCM_J1362_METHANOBACTERIUM_VT_MEDIUM.yaml",
+    "id": "CultureMech:015840",
+    "name": "methanobacterium_vt_medium",
+    "original_name": "METHANOBACTERIUM VT MEDIUM",
+    "category": "archaea",
+    "media_term": "JCM Medium J1362 (jcm.grmd:1362)",
+    "score": 79.8,
+    "subtotal": 84,
+    "category_multiplier": 0.95,
+    "ingredient_count": 16,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 16,
+        "with_concentration": 16,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "methanosarcina_z_7115_medium",
+    "file_path": "archaea/JCM_J1415_METHANOSARCINA_Z_7115_MEDIUM.yaml",
+    "id": "CultureMech:015858",
+    "name": "methanosarcina_z_7115_medium",
+    "original_name": "METHANOSARCINA Z-7115 MEDIUM",
+    "category": "archaea",
+    "media_term": "JCM Medium J1415 (jcm.grmd:1415)",
+    "score": 79.8,
+    "subtotal": 84,
+    "category_multiplier": 0.95,
+    "ingredient_count": 13,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 13,
+        "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "methanobrevibacter_curvatus_medium",
+    "file_path": "archaea/JCM_J1423_METHANOBREVIBACTER_CURVATUS_MEDIUM.yaml",
+    "id": "CultureMech:015860",
+    "name": "methanobrevibacter_curvatus_medium",
+    "original_name": "METHANOBREVIBACTER CURVATUS MEDIUM",
+    "category": "archaea",
+    "media_term": "JCM Medium J1423 (jcm.grmd:1423)",
+    "score": 79.8,
+    "subtotal": 84,
+    "category_multiplier": 0.95,
+    "ingredient_count": 20,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 20,
+        "with_concentration": 20,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "methanobrevibacter_cuticularis_medium",
+    "file_path": "archaea/JCM_J1424_METHANOBREVIBACTER_CUTICULARIS_MEDIUM.yaml",
+    "id": "CultureMech:015861",
+    "name": "methanobrevibacter_cuticularis_medium",
+    "original_name": "METHANOBREVIBACTER CUTICULARIS MEDIUM",
+    "category": "archaea",
+    "media_term": "JCM Medium J1424 (jcm.grmd:1424)",
+    "score": 79.8,
+    "subtotal": 84,
+    "category_multiplier": 0.95,
+    "ingredient_count": 19,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 19,
+        "with_concentration": 19,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "modified_methanobacterium_medium",
+    "file_path": "archaea/JCM_J1427_MODIFIED_METHANOBACTERIUM_MEDIUM.yaml",
+    "id": "CultureMech:015863",
+    "name": "modified_methanobacterium_medium",
+    "original_name": "MODIFIED METHANOBACTERIUM MEDIUM",
+    "category": "archaea",
+    "media_term": "JCM Medium J1427 (jcm.grmd:1427)",
+    "score": 79.8,
+    "subtotal": 84,
+    "category_multiplier": 0.95,
+    "ingredient_count": 19,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 19,
+        "with_concentration": 19,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "methanosarcina_t3_medium",
+    "file_path": "archaea/JCM_J1462_METHANOSARCINA_T3_MEDIUM.yaml",
+    "id": "CultureMech:015871",
+    "name": "methanosarcina_t3_medium",
+    "original_name": "METHANOSARCINA T3 MEDIUM",
+    "category": "archaea",
+    "media_term": "JCM Medium J1462 (jcm.grmd:1462)",
+    "score": 79.8,
+    "subtotal": 84,
+    "category_multiplier": 0.95,
+    "ingredient_count": 21,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 21,
+        "with_concentration": 21,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "methanosarcina_mfa9_medium",
+    "file_path": "archaea/JCM_J1463_METHANOSARCINA_MFA9_MEDIUM.yaml",
+    "id": "CultureMech:015881",
+    "name": "methanosarcina_mfa9_medium",
+    "original_name": "METHANOSARCINA MFA9 MEDIUM",
+    "category": "archaea",
+    "media_term": "JCM Medium J1463 (jcm.grmd:1463)",
+    "score": 79.8,
+    "subtotal": 84,
+    "category_multiplier": 0.95,
+    "ingredient_count": 17,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 17,
+        "with_concentration": 17,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
     "recipe_name": "pseudomonas_halophila_medium",
     "file_path": "archaea/JCM_J433_PSEUDOMONAS_HALOPHILA_MEDIUM.yaml",
     "id": "CultureMech:000297",
@@ -139821,6 +141466,144 @@
         "score": 30,
         "count": 28,
         "with_concentration": 28,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "gbs_salts_medium_for_fervidibacter",
+    "file_path": "bacterial/JCM_J1353_GBS_SALTS_MEDIUM_FOR_FERVIDIBACTER.yaml",
+    "id": "CultureMech:015836",
+    "name": "gbs_salts_medium_for_fervidibacter",
+    "original_name": "GBS SALTS MEDIUM FOR FERVIDIBACTER",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1353 (jcm.grmd:1353)",
+    "score": 79.0,
+    "subtotal": 79,
+    "category_multiplier": 1.0,
+    "ingredient_count": 29,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 29,
+        "with_concentration": 29,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "ycfa_medium_with_mannitol",
+    "file_path": "bacterial/JCM_J1385_YCFA_MEDIUM_WITH_MANNITOL.yaml",
+    "id": "CultureMech:015879",
+    "name": "ycfa_medium_with_mannitol",
+    "original_name": "YCFA MEDIUM WITH MANNITOL",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1385 (jcm.grmd:1385)",
+    "score": 79.0,
+    "subtotal": 79,
+    "category_multiplier": 1.0,
+    "ingredient_count": 40,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 40,
+        "with_concentration": 40,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "limnochordia_ln_medium",
+    "file_path": "bacterial/JCM_J1435_LIMNOCHORDIA_LN_MEDIUM.yaml",
+    "id": "CultureMech:015867",
+    "name": "limnochordia_ln_medium",
+    "original_name": "LIMNOCHORDIA LN MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1435 (jcm.grmd:1435)",
+    "score": 79.0,
+    "subtotal": 79,
+    "category_multiplier": 1.0,
+    "ingredient_count": 30,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 30,
+        "with_concentration": 30,
         "bonus": 5
       },
       "source": {
@@ -161021,52 +162804,6 @@
         "score": 20,
         "raw_count": 0,
         "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
-  },
-  {
-    "recipe_name": "methylovirgula_ligni_medium",
-    "file_path": "bacterial/methylovirgula_ligni_medium.yaml",
-    "id": "CultureMech:000677",
-    "name": "methylovirgula_ligni_medium",
-    "original_name": "METHYLOVIRGULA LIGNI MEDIUM",
-    "category": "bacterial",
-    "media_term": "DSMZ Medium 1219 (mediadive.medium:1219)",
-    "score": 79.0,
-    "subtotal": 79,
-    "category_multiplier": 1.0,
-    "ingredient_count": 14,
-    "real_organism_count": 1,
-    "expected_research_yield": "expand thin organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 14,
-        "with_concentration": 14,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 17,
-        "raw_count": 1,
-        "real_count": 1,
         "with_taxon": 0
       },
       "discoverability": {
@@ -229729,6 +231466,52 @@
     }
   },
   {
+    "recipe_name": "methylovirgula_ligni_medium",
+    "file_path": "bacterial/methylovirgula_ligni_medium.yaml",
+    "id": "CultureMech:000677",
+    "name": "methylovirgula_ligni_medium",
+    "original_name": "METHYLOVIRGULA LIGNI MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1219 (mediadive.medium:1219)",
+    "score": 74.0,
+    "subtotal": 74,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 1,
+    "expected_research_yield": "expand thin organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 12,
+        "raw_count": 1,
+        "real_count": 1,
+        "with_taxon": 1
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
     "recipe_name": "middelbrook_medium",
     "file_path": "bacterial/middelbrook_medium.yaml",
     "id": "CultureMech:006190",
@@ -268140,6 +269923,144 @@
         "score": 20,
         "count": 5,
         "with_concentration": 5,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "sphaerotilus_sp_fb_5_medium",
+    "file_path": "bacterial/JCM_J1379_SPHAEROTILUS_SP_FB_5_MEDIUM.yaml",
+    "id": "CultureMech:015846",
+    "name": "sphaerotilus_sp_fb_5_medium",
+    "original_name": "SPHAEROTILUS SP. FB-5 MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1379 (jcm.grmd:1379)",
+    "score": 69.0,
+    "subtotal": 69,
+    "category_multiplier": 1.0,
+    "ingredient_count": 5,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 20,
+        "count": 5,
+        "with_concentration": 5,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "gibbons_modified_medium",
+    "file_path": "bacterial/JCM_J1477_GIBBONS_MODIFIED_MEDIUM.yaml",
+    "id": "CultureMech:015876",
+    "name": "gibbons_modified_medium",
+    "original_name": "GIBBONS MODIFIED MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1477 (jcm.grmd:1477)",
+    "score": 69.0,
+    "subtotal": 69,
+    "category_multiplier": 1.0,
+    "ingredient_count": 9,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 20,
+        "count": 9,
+        "with_concentration": 9,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "solidesulfovibrio_medium",
+    "file_path": "bacterial/JCM_J1479_SOLIDESULFOVIBRIO_MEDIUM.yaml",
+    "id": "CultureMech:015877",
+    "name": "solidesulfovibrio_medium",
+    "original_name": "SOLIDESULFOVIBRIO MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1479 (jcm.grmd:1479)",
+    "score": 69.0,
+    "subtotal": 69,
+    "category_multiplier": 1.0,
+    "ingredient_count": 9,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 20,
+        "count": 9,
+        "with_concentration": 9,
         "bonus": 5
       },
       "source": {
@@ -399379,52 +401300,6 @@
     }
   },
   {
-    "recipe_name": "gluconobacter_oxydans_medium",
-    "file_path": "bacterial/gluconobacter_oxydans_medium.yaml",
-    "id": "CultureMech:000492",
-    "name": "gluconobacter_oxydans_medium",
-    "original_name": "GLUCONOBACTER OXYDANS MEDIUM",
-    "category": "bacterial",
-    "media_term": "DSMZ Medium 105 (mediadive.medium:105)",
-    "score": 64.0,
-    "subtotal": 64,
-    "category_multiplier": 1.0,
-    "ingredient_count": 4,
-    "real_organism_count": 1,
-    "expected_research_yield": "expand thin organism set; MediaDive-anchored citations",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 20,
-        "count": 4,
-        "with_concentration": 4,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 17,
-        "raw_count": 1,
-        "real_count": 1,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
-  },
-  {
     "recipe_name": "glucose_asparagine_agar",
     "file_path": "bacterial/glucose_asparagine_agar.yaml",
     "id": "CultureMech:001231",
@@ -402647,51 +404522,6 @@
     }
   },
   {
-    "recipe_name": "sporohalobacter_lortetii_medium",
-    "file_path": "bacterial/KOMODO_319_SPOROHALOBACTER_LORTETII_medium.yaml",
-    "id": "CultureMech:005007",
-    "name": "sporohalobacter_lortetii_medium",
-    "original_name": "SPOROHALOBACTER LORTETII medium",
-    "category": "bacterial",
-    "media_term": "KOMODO Medium 319 (komodo.medium:319)",
-    "score": 63.0,
-    "subtotal": 63,
-    "category_multiplier": 1.0,
-    "ingredient_count": 34,
-    "real_organism_count": 1,
-    "expected_research_yield": "expand thin organism set; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 30,
-        "count": 34,
-        "with_concentration": 34,
-        "bonus": 5
-      },
-      "source": {
-        "score": 10,
-        "kind": "OTHER",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 17,
-        "raw_count": 1,
-        "real_count": 1,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 6,
-        "hits": [
-          "applications",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
-  },
-  {
     "recipe_name": "clostridium_thermolacticum_medium_replace_cellobiose_with_sucrose",
     "file_path": "bacterial/clostridium_thermolacticum_medium_replace_cellobiose_with_sucrose.yaml",
     "id": "CultureMech:005018",
@@ -402983,6 +404813,98 @@
         "score": 20,
         "count": 8,
         "with_concentration": 8,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "modified_dixon_s_agar",
+    "file_path": "fungal/JCM_J1449_MODIFIED_DIXON_S_AGAR.yaml",
+    "id": "CultureMech:015870",
+    "name": "modified_dixon_s_agar",
+    "original_name": "MODIFIED DIXON'S AGAR",
+    "category": "fungal",
+    "media_term": "JCM Medium J1449 (jcm.grmd:1449)",
+    "score": 62.1,
+    "subtotal": 69,
+    "category_multiplier": 0.9,
+    "ingredient_count": 8,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 20,
+        "count": 8,
+        "with_concentration": 8,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "yeast_extract_peptone_dextrose_ypd",
+    "file_path": "fungal/JCM_J1467_Yeast_Extract_Peptone_Dextrose_YPD.yaml",
+    "id": "CultureMech:015873",
+    "name": "yeast_extract_peptone_dextrose_ypd",
+    "original_name": "Yeast Extract Peptone Dextrose (YPD)",
+    "category": "fungal",
+    "media_term": "JCM Medium J1467 (jcm.grmd:1467)",
+    "score": 62.1,
+    "subtotal": 69,
+    "category_multiplier": 0.9,
+    "ingredient_count": 5,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 20,
+        "count": 5,
+        "with_concentration": 5,
         "bonus": 5
       },
       "source": {
@@ -408175,7 +410097,7 @@
         "score": 12,
         "raw_count": 2,
         "real_count": 2,
-        "with_taxon": 1
+        "with_taxon": 2
       },
       "discoverability": {
         "score": 9,
@@ -409913,6 +411835,52 @@
         "score": 10,
         "count": 1,
         "with_concentration": 1,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "eugon_agar_with_5_sheep_blood_and_artificial_seawater",
+    "file_path": "bacterial/JCM_J1380_EUGON_AGAR_WITH_5_SHEEP_BLOOD_AND_ARTIFICIAL_SEAWATER.yaml",
+    "id": "CultureMech:015847",
+    "name": "eugon_agar_with_5_sheep_blood_and_artificial_seawater",
+    "original_name": "EUGON AGAR WITH 5% SHEEP BLOOD AND ARTIFICIAL SEAWATER",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1380 (jcm.grmd:1380)",
+    "score": 59.0,
+    "subtotal": 59,
+    "category_multiplier": 1.0,
+    "ingredient_count": 3,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 10,
+        "count": 3,
+        "with_concentration": 3,
         "bonus": 5
       },
       "source": {
@@ -414527,6 +416495,52 @@
         "raw_count": 0,
         "real_count": 0,
         "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "gluconobacter_oxydans_medium",
+    "file_path": "bacterial/gluconobacter_oxydans_medium.yaml",
+    "id": "CultureMech:000492",
+    "name": "gluconobacter_oxydans_medium",
+    "original_name": "GLUCONOBACTER OXYDANS MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 105 (mediadive.medium:105)",
+    "score": 59.0,
+    "subtotal": 59,
+    "category_multiplier": 1.0,
+    "ingredient_count": 4,
+    "real_organism_count": 1,
+    "expected_research_yield": "expand thin organism set; MediaDive-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 20,
+        "count": 4,
+        "with_concentration": 4,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 12,
+        "raw_count": 1,
+        "real_count": 1,
+        "with_taxon": 1
       },
       "discoverability": {
         "score": 9,
@@ -424335,6 +426349,51 @@
         "markers": [
           "binomial"
         ]
+      }
+    }
+  },
+  {
+    "recipe_name": "sporohalobacter_lortetii_medium",
+    "file_path": "bacterial/KOMODO_319_SPOROHALOBACTER_LORTETII_medium.yaml",
+    "id": "CultureMech:005007",
+    "name": "sporohalobacter_lortetii_medium",
+    "original_name": "SPOROHALOBACTER LORTETII medium",
+    "category": "bacterial",
+    "media_term": "KOMODO Medium 319 (komodo.medium:319)",
+    "score": 58.0,
+    "subtotal": 58,
+    "category_multiplier": 1.0,
+    "ingredient_count": 34,
+    "real_organism_count": 1,
+    "expected_research_yield": "expand thin organism set; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 34,
+        "with_concentration": 34,
+        "bonus": 5
+      },
+      "source": {
+        "score": 10,
+        "kind": "OTHER",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 12,
+        "raw_count": 1,
+        "real_count": 1,
+        "with_taxon": 1
+      },
+      "discoverability": {
+        "score": 6,
+        "hits": [
+          "applications",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
       }
     }
   },
@@ -465551,6 +467610,52 @@
       "discoverability": {
         "score": 0,
         "hits": []
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "bold_s_basal_medium_bbm",
+    "file_path": "algae/JCM_J1481_Bold_s_Basal_Medium_BBM.yaml",
+    "id": "CultureMech:015878",
+    "name": "bold_s_basal_medium_bbm",
+    "original_name": "Bold's Basal Medium (BBM)",
+    "category": "algae",
+    "media_term": "JCM Medium J1481 (jcm.grmd:1481)",
+    "score": 50.15,
+    "subtotal": 59,
+    "category_multiplier": 0.85,
+    "ingredient_count": 2,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 10,
+        "count": 2,
+        "with_concentration": 2,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
       },
       "strain_markers": {
         "score": 0,
