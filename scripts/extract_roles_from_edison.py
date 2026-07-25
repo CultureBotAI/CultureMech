@@ -47,7 +47,13 @@ Follows the "never fabricate" rule from the plan: an ingredient whose
 Edison output has no parseable `role_research:` block is skipped and
 recorded in `--skipped-report`; a role whose token is not in the facet's
 enum permissible values (typo, hallucination, wrong facet) is dropped and
-logged. The applier repeats the enum check as a defense-in-depth.
+logged.
+
+This is the ONLY enum check in the pipeline — `apply_ingredient_roles.py`
+deliberately does not repeat it, so a batch produced with `--no-validate`
+(or hand-edited afterwards) can carry invalid tokens into the corpus, where
+they surface only at `just validate-strict`. Do not pass `--no-validate` on
+a batch you intend to apply.
 """
 
 from __future__ import annotations
@@ -79,8 +85,10 @@ _FACET_ENUM_NAMES = {
 def load_facet_enums(schema_path: Path = DEFAULT_MIM_ROLES_SCHEMA) -> dict[str, frozenset[str]]:
     """Load {facet_slot: frozenset(permissible_values)} from the vendored mim_roles schema.
 
-    Single source of truth: read enum permissible values from mim_roles.yaml (whose
-    sha is pinned in project.justfile:verify-schema-pin). No hand-typed token lists.
+    Single source of truth: read enum permissible values from mim_roles.yaml.
+    No hand-typed token lists. (The old `verify-schema-pin` sha guard on this file
+    was retired in #112 — see project.justfile:841 — so this is now the only check
+    tying emitted tokens to the schema.)
     """
     if not schema_path.is_file():
         raise SystemExit(f"mim_roles schema not found at {schema_path}")
