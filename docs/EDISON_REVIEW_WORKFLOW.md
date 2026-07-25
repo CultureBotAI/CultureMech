@@ -434,6 +434,26 @@ Prioritize authoritative microbiology sources and culture collection databases.
 3. Provide more context (organism type, source database)
 4. Review individual literature for each medium
 
+## Role Research (Step 7b Literature Lane)
+
+This document describes the manual per-recipe review workflow. For **ingredient
+role facets** (nutritional / physicochemical / cellular-metabolic), Step 7b of
+the ingredient-roles migration adds a fully SDK-driven pipeline that
+supersedes the browser-based workflow for role assignments:
+
+- `just prioritize-role-research-candidates` — rank MIM ingredients by facet-gap × occurrence
+- MIM `just research-ingredient-roles-edison-batch` — dispatch Edison against the top-N
+- `just extract-roles-from-edison` — parse the fenced YAML block into dual applier batches
+- MIM `just apply-role-research-results` — write rich per-facet RoleAssignments to MIM
+- `just apply-ingredient-roles` — populate scalar facet tokens on CultureMech recipe descriptors
+
+See the runbook in `.claude/skills/research-ingredient-roles/SKILL.md` for the
+full sequence, dry-run flags, and the mechanistic-vs-literature merge policy.
+
+Use the manual workflow below for **medium-level** enrichment (descriptions,
+pH values, target organisms, ingredient identity mapping) that the SDK pipeline
+does not cover.
+
 ## Next Steps
 
 1. **Review quality report**: `data/import_tracking/reports/quality_analysis.md`
