@@ -14,9 +14,13 @@ closes #114); **#112** extended the drift check to `mech_shared.yaml` and retire
 the last two self-generated pins. All merged 2026-07-22; nothing merged 2026-07-23
 or 2026-07-24.
 
-Open PRs right now: **#105 / #106 / #107** — the ingredient-roles research
-pipeline, all green and `MERGEABLE`/`CLEAN`, awaiting review (see §
-"Ingredient-roles research pipeline" below).
+Also shipped 2026-07-24: **#105**, the role-research prioritizer — first of the
+three ingredient-roles pipeline PRs.
+
+Open PRs right now: **#106 / #107** — the rest of the ingredient-roles research
+pipeline, both reviewed and rebased on post-#105 `main`, ready to merge (see §
+"Ingredient-roles research pipeline" below; #107 had a blocking schema bug that
+is now fixed).
 
 ## 1. Phase-2 id↔label enforcement rollout (report-only → blocking) — DONE
 
@@ -104,30 +108,47 @@ This repo's slice:
 - QC dashboard — this repo's rendered `dashboard/index.html` is the TEMPLATE for
   Phase 3: extract it into a reusable generator the other three Mechs adopt.
 
-## Ingredient-roles research pipeline (#105 / #106 / #107) — IN PROGRESS, needs review + merge
+## Ingredient-roles research pipeline (#105 / #106 / #107) — #105 MERGED, two left
 
-Three open PRs complete the loop that fills the three faceted role slots added in
+Three PRs complete the loop that fills the three faceted role slots added in
 #93 / #94 / #95 (nutritional / physicochemical / cellular-metabolic on
-`IngredientDescriptor`). All three branch from `main`, all report
-`MERGEABLE` / `CLEAN` with `validate` + `consistency` green (last touched
-2026-07-21/22) — they are waiting on human review, not on CI or on each other's
-logic:
+`IngredientDescriptor`). Reviewed 2026-07-24:
 
 - **#105** `feat/prioritize-role-research-candidates` — ranks MIM ingredients by
-  facet-gap × corpus occurrence to pick research targets.
-  `scripts/prioritize_role_research_candidates.py` + test + `project.justfile`.
+  facet-gap × corpus occurrence to pick research targets. **Merged 2026-07-24**
+  (squash, `6088b74914`).
 - **#106** `feat/extract-roles-from-edison` — parses the Edison YAML block and emits
-  dual applier batches. `scripts/extract_roles_from_edison.py` + test +
-  `project.justfile`.
+  dual applier batches. Rebased on `main`; two stale docstring claims corrected
+  (the `verify-schema-pin` guard it cited was retired in #112, and it claimed an
+  applier-side enum recheck that does not exist). 35 tests pass. **Ready to merge.**
 - **#107** `feat/apply-ingredient-roles` — the applier itself, plus the
-  `research-ingredient-roles` skill and `docs/EDISON_REVIEW_WORKFLOW.md`.
-  `scripts/apply_ingredient_roles.py` + test + `project.justfile`.
+  `research-ingredient-roles` skill and `docs/EDISON_REVIEW_WORKFLOW.md`. Rebased
+  on `main`; had a **blocking schema bug** — see below. 24 tests pass.
+  **Ready to merge.**
 
-**Merge order caveat:** all three add recipes to `project.justfile`, so whichever
-merges first will leave the other two needing a rebase on that one file (mechanical
-— disjoint recipe blocks). Natural order is pipeline order: #105 → #106 → #107.
-Nothing else in the corpus depends on them, so they can also be merged
-independently in any order.
+**#107's blocking bug (fixed 2026-07-24):** `_add_curation_event` wrote a
+`fields_changed` key, which is not a slot on `CurationEvent` (`timestamp`,
+`curator`, `action`, `notes`, `changes`, `source`). Because `validate-strict` runs
+linkml-validate with `closed=True`, the first live `just apply-ingredient-roles`
+run would have failed CI on **every recipe it touched**. PR CI was green only
+because the PR ships no data changes — the bug was latent until first use. Now
+writes `changes` (range is string, so comma-joined), with a regression test that
+reads `CurationEvent`'s declared attributes out of `culturemech.yaml` and asserts
+the emitted keys are a subset. **Lesson for future appliers: a script that writes
+YAML needs at least one test that validates its output against the schema — the
+unit tests alone cannot catch a wrong slot name.**
+
+**Merge order:** all three add recipes to `project.justfile` at the same anchor
+(after `prioritize-deep-research-candidates`), so they genuinely conflict rather
+than auto-merging — #105 then #106 then #107 each needed a hands-on resolve
+(accept both hunks). #106 and #107 are already rebased on post-#105 `main`, so
+whichever merges next will leave the other needing one more trivial resolve.
+
+**Known gap, deliberately not fixed:** enum validation of role tokens lives only
+in `extract_roles_from_edison.py`. The applier does not repeat it, so a batch
+produced with `--no-validate` or hand-edited afterwards can carry invalid tokens
+into the corpus, surfacing only at `just validate-strict`. Both docstrings now say
+so. Decide whether to add a defense-in-depth check in the applier.
 
 Related already-merged context: #95 shipped the mechanistic (CHEBI `has_role`)
 backfill + missing-roles audit as a dry-run; these three turn that into a
