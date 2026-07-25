@@ -113,6 +113,18 @@ prioritize-deep-research-candidates *args="":
 prioritize-role-research-candidates *args="":
     uv run --extra dev python scripts/prioritize_role_research_candidates.py {{args}}
 
+# Extract structured role assignments from Edison role-research bundles.
+# Consumes `-edison-literature.md` files under a directory (or single files) and
+# emits two batch JSONs:
+#   --out-mim  → rich shape for MIM `apply_role_research_results.py`
+#   --out-cm   → scalar shape for CultureMech's future `apply_ingredient_roles`
+#
+# Default: scans ../MediaIngredientMech/research/ingredients/roles/
+# Example: just extract-roles-from-edison
+[group('Research')]
+extract-roles-from-edison inputs="../MediaIngredientMech/research/ingredients/roles" *args="":
+    uv run --extra dev python scripts/extract_roles_from_edison.py {{inputs}} {{args}}
+
 [group('Research')]
 research-organism-recipe-edison target organism *args="":
     uv run --extra dev python scripts/research_organism_recipe_edison.py \
