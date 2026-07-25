@@ -103,6 +103,16 @@ enrich-edison-response *args="":
 prioritize-deep-research-candidates *args="":
     uv run --extra dev python scripts/prioritize_deep_research_candidates.py {{args}}
 
+# Rank MediaIngredientMech ingredients for Step 7b Edison role-research.
+# Cross-repo scan of ../MediaIngredientMech/data/ingredients/**/*.yaml scored by
+# (# facets missing) × log(occurrence) × mapped-mult × chebi-mult, minus records
+# that already have completed Edison role research. Writes:
+#   data/import_tracking/reports/role_research_priority.json  (batch-ready)
+# Output is a batch payload accepted by MIM's `research-ingredient-roles-edison-batch`.
+[group('Research')]
+prioritize-role-research-candidates *args="":
+    uv run --extra dev python scripts/prioritize_role_research_candidates.py {{args}}
+
 [group('Research')]
 research-organism-recipe-edison target organism *args="":
     uv run --extra dev python scripts/research_organism_recipe_edison.py \
