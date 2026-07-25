@@ -70,6 +70,9 @@ research-media-edison target *args="":
 # Batch variant: walk a edison_batch.json priority list and research
 # the first N recipes. Default --limit is unset (run all 100); always
 # pass `--limit 5` (or similar) on first runs to bound credit spend.
+# Records with a completed run for the same job are skipped, so `--limit 5`
+# advances 5 FRESH records per invocation rather than re-billing the first
+# five. Pass `--force` to re-submit them anyway.
 [group('Research')]
 research-media-edison-batch batch *args="":
     uv run --extra dev python scripts/research_media_edison.py \
