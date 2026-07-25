@@ -8,19 +8,24 @@ Keep the cross-Mech items in sync with the sibling repos' `NEXT_TASKS.md`
 
 Last reconciled: 2026-07-24.
 
-Recently shipped: **#113** refresh deep-research priority reports + top-10 triage;
-**#115** recategorized 629 mis-filed archaeal media (`bacterial/` → `archaea/`,
-closes #114); **#112** extended the drift check to `mech_shared.yaml` and retired
-the last two self-generated pins. All merged 2026-07-22; nothing merged 2026-07-23
-or 2026-07-24.
+Shipped 2026-07-22: **#112** drift check extended to `mech_shared.yaml` + last two
+self-generated pins retired; **#113** deep-research priority report refresh +
+top-10 triage; **#115** recategorized 629 mis-filed archaeal media.
 
-Also shipped 2026-07-24: **#105**, the role-research prioritizer — first of the
-three ingredient-roles pipeline PRs.
+Shipped 2026-07-24 (six PRs): **#105 / #106 / #107** the ingredient-roles research
+pipeline (reviewed together — #107 carried a blocking schema bug, see below);
+**#120** recategorized 73 more archaeal media + a reusable domain audit;
+**#123** the Edison batch skip-already-done guard (closes #117); **#126** made the
+deep-research priority reports reproducible from tracked data (closes #121).
 
-Open PRs right now: **#106 / #107** — the rest of the ingredient-roles research
-pipeline, both reviewed and rebased on post-#105 `main`, ready to merge (see §
-"Ingredient-roles research pipeline" below; #107 had a blocking schema bug that
-is now fixed).
+Open issues: **#124** (4,774 solutions stamped `category: bacterial`), **#125**
+(recipe indexes ~4 months stale), **#116**, **#118**, **#119**, **#89**.
+No open PRs beyond this one.
+
+**Do this first:** regenerate the priority reports. They are stale for the 73
+records #120 moved, and #126 deliberately did not refresh them to avoid colliding
+with #120 in flight. Now that both have landed the diff is finally reviewable —
+but read the #124 note below before trusting the ranking.
 
 ## 1. Phase-2 id↔label enforcement rollout (report-only → blocking) — DONE
 
@@ -108,23 +113,20 @@ This repo's slice:
 - QC dashboard — this repo's rendered `dashboard/index.html` is the TEMPLATE for
   Phase 3: extract it into a reusable generator the other three Mechs adopt.
 
-## Ingredient-roles research pipeline (#105 / #106 / #107) — #105 MERGED, two left
+## Ingredient-roles research pipeline (#105 / #106 / #107) — ALL MERGED 2026-07-24
 
 Three PRs complete the loop that fills the three faceted role slots added in
 #93 / #94 / #95 (nutritional / physicochemical / cellular-metabolic on
-`IngredientDescriptor`). Reviewed 2026-07-24:
+`IngredientDescriptor`). Reviewed and merged together on 2026-07-24:
 
-- **#105** `feat/prioritize-role-research-candidates` — ranks MIM ingredients by
-  facet-gap × corpus occurrence to pick research targets. **Merged 2026-07-24**
-  (squash, `6088b74914`).
-- **#106** `feat/extract-roles-from-edison` — parses the Edison YAML block and emits
-  dual applier batches. Rebased on `main`; two stale docstring claims corrected
-  (the `verify-schema-pin` guard it cited was retired in #112, and it claimed an
-  applier-side enum recheck that does not exist). 35 tests pass. **Ready to merge.**
-- **#107** `feat/apply-ingredient-roles` — the applier itself, plus the
-  `research-ingredient-roles` skill and `docs/EDISON_REVIEW_WORKFLOW.md`. Rebased
-  on `main`; had a **blocking schema bug** — see below. 24 tests pass.
-  **Ready to merge.**
+- **#105** ranks MIM ingredients by facet-gap × corpus occurrence to pick research
+  targets. Merged as-is — no findings.
+- **#106** parses the Edison YAML block and emits dual applier batches. Two stale
+  docstring claims corrected before merge (the `verify-schema-pin` guard it cited
+  was retired in #112, and it claimed an applier-side enum recheck that does not
+  exist).
+- **#107** the applier itself, plus the `research-ingredient-roles` skill and
+  `docs/EDISON_REVIEW_WORKFLOW.md`. Carried a **blocking schema bug** — see below.
 
 **#107's blocking bug (fixed 2026-07-24):** `_add_curation_event` wrote a
 `fields_changed` key, which is not a slot on `CurationEvent` (`timestamp`,
@@ -138,11 +140,11 @@ the emitted keys are a subset. **Lesson for future appliers: a script that write
 YAML needs at least one test that validates its output against the schema — the
 unit tests alone cannot catch a wrong slot name.**
 
-**Merge order:** all three add recipes to `project.justfile` at the same anchor
-(after `prioritize-deep-research-candidates`), so they genuinely conflict rather
-than auto-merging — #105 then #106 then #107 each needed a hands-on resolve
-(accept both hunks). #106 and #107 are already rebased on post-#105 `main`, so
-whichever merges next will leave the other needing one more trivial resolve.
+**Merge order (for future stacked PRs here):** all three added recipes to
+`project.justfile` at the same anchor (after `prioritize-deep-research-candidates`),
+so they genuinely conflicted rather than auto-merging — each of #106 and #107
+needed a hands-on resolve (accept both hunks) after the one before it landed.
+Stack justfile recipes at distinct anchors to avoid repeating this.
 
 **Known gap, deliberately not fixed:** enum validation of role tokens lives only
 in `extract_roles_from_edison.py`. The applier does not repeat it, so a batch
@@ -177,8 +179,19 @@ State (2026-07-22):
   medium; *M. sedula* DSM 5348T → sulfolobus record. NCBITaxon IDs intentionally
   omitted (unverified in source); names + citations only, curator verifies.
 
+**⚠ The top-10 triage list this section is built on is not trustworthy as-is.**
+It came from a report generated before #126, i.e. from one machine's gitignored
+`research/` state (#121), and before #120 recategorized 73 records. Two further
+issues (#124, #125) attack the same ranking from other directions. Regenerate the
+reports on post-#120/#126 `main` and re-derive the triage list **before** spending
+any more Edison credits on it — otherwise the next 6 media are chosen by an
+artifact.
+
 Next actions (pick up cold):
-- **Phase-2 the remaining 6 triage media** (#2 `wilkins_chalgren_..._dsm_15567`,
+- **Regenerate the priority reports first** (see #124/#125 caveats), then re-derive
+  the top-10.
+- **Phase-2 the remaining 6 triage media** — *pending the regeneration above; this
+  list is from the old ranking*: (#2 `wilkins_chalgren_..._dsm_15567`,
   #4 `leuconostoc_oenos` M1620, #5 `thermoproteus` M1633, #6 `clostridium_thermocellum`
   M1766, #7 `pelobacter_carbinolicus` M1788, #8 `ectothiorhodospira` M1789): parse
   phase-1 organisms → write `<slug>-organisms.json` → `just
@@ -192,14 +205,39 @@ Next actions (pick up cold):
   19J-3, *Pelobacter acetylenicus*, *D. desulfuricans* DSM 642 (0 citations), and
   *D. vulgaris* DSM 644 were deliberately left out (evidence-only / deferred).
 
-## Batch runner: skip-already-done guard (#117) — PENDING, actionable
+## Batch runner: skip-already-done guard (#117) — DONE (#123, 2026-07-24)
 
-`scripts/research_media_edison.py --batch` calls `run_one()` on every entry with
-no existing-meta check, so overlapping re-runs re-submit (re-bill) researched
-records — and `--start`/`--limit` windows aren't idempotent. Fix: skip records
-with a non-dry-run meta by default (reuse `has_existing_research()`-style logic
-from `prioritize_deep_research_candidates.py`), add `--force`, print
-`N submitted / M skipped`. Small, self-contained. Issue #117.
+`research_media_edison.py` now skips records with a completed run for the same job
+and takes `--force` to override. The skip is applied **before** `--start`/`--limit`,
+which is what makes those windows idempotent — repeating `--limit 5` advances 5
+fresh records instead of resubmitting the first five. Scoped to the same job so
+`--job literature-high` after `literature` is not blocked. Applies to `--target`
+too. Measured 4 of the then-current top-100 would have been re-billed.
+
+## Reproducible priority reports (#121) — DONE (#126, 2026-07-24)
+
+The prioritizer read gitignored `research/media/`, so the committed reports were a
+snapshot of whoever last ran it — with `research/` present vs absent the old code
+scored 15485 vs 15506 records and produced a completely different top-3. Now:
+
+    research/media/*-meta.yaml          untracked, machine-local
+          |  just refresh-researched-manifest   <- only crossing point
+          v
+    data/import_tracking/researched_media.json  tracked, reviewable
+          v
+    deep_research_priority*.json = f(corpus, manifest)
+
+Verified byte-identical with `research/` deleted entirely.
+
+Two things to know when working with it:
+- **Merge is a union, never a replace** — each machine sees only its own
+  `research/`. The manifest committed in #126 holds the **53 runs visible on one
+  machine (21 medium-level)**; #121 was filed from a machine reporting 391 local
+  summaries. **Anyone with a fuller `research/` should run
+  `just refresh-researched-manifest` and commit the diff.**
+- Phase-2 per-organism runs are tagged `kind: organism` and do **not** satisfy the
+  medium-level filter — researching one organism against a medium is not the same
+  as researching the medium.
 
 ## Ingredient mis-normalization audit (#118) — PENDING, actionable
 
@@ -223,8 +261,10 @@ Blocks curating any organism to this record (gates the sulfolobus entry in the
 apply-now JSON). Needs a human to check archived DSMZ Medium 88 + TOGO M2323
 provenance before renaming — do NOT blind-rename. Issue #119.
 
-## Duplicate media sharing filenames across bacterial/ and archaea/ (#116) — PENDING, actionable
+## Duplicate media sharing filenames across bacterial/ and archaea/ (#116) — PENDING
 
+Still open after #120 (which moved 73 more archaeal media and added a reusable
+domain audit, but did not resolve the filename collisions).
 Fallout from the #115 archaea recategorization: **11 `methano*` media** exist under
 both `data/normalized_yaml/bacterial/` and `data/normalized_yaml/archaea/` with the
 **same filename but different content**, so #115 deliberately excluded them from the
@@ -233,6 +273,20 @@ resolver has a multi-match ambiguity — it hit
 `syntrophomonas_medium_for_syntrophospora_cellicola_19j_3`, which has a
 `TOGO_M520_*` sibling of the same recipe. Two pieces of work: merge/choose per
 colliding filename, and disambiguate the resolver. Issue #116.
+
+## Solutions stamped `category: bacterial` (#124) — PENDING, actionable
+
+**4,774 solution records carry `category: bacterial`**, which defeats the
+prioritizer's "solutions excluded entirely" hard filter — solutions have no
+organism associations to find, so every one of them that surfaces in the ranking
+is wasted Edison spend. Directly degrades the top-100 that drives the deep-research
+lane. Fix before regenerating the reports for real. Issue #124.
+
+## Recipe indexes ~4 months stale (#125) — PENDING, actionable
+
+The committed recipe indexes miss ~5,000 recipes. Anything reading them
+(dashboards, resolvers, downstream exports) is working from a partial corpus.
+Issue #125.
 
 ## Remaining web-design-review item (#89) — PENDING, cosmetic
 
