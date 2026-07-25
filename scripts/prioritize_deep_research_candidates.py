@@ -408,6 +408,68 @@ def expected_yield(breakdown: dict[str, Any]) -> str:
     return "; ".join(bits) or "low yield"
 
 
+def strict_identity_key(doc: dict[str, Any]) -> tuple:
+    """Ingredient identities AND concentrations — a stricter test than the fingerprint.
+
+    `culturemech.merge.fingerprint` deliberately hashes only the ingredient SET:
+    its docstring says "regardless of order or concentration", and
+    `test_fingerprint_concentration_independence` pins that as a contract. That is
+    the right equivalence for merge_yaml, which `docs/DATA_LAYERS.md` defines as
+    "the same base formulation ... not identical recipes".
+
+    It is the wrong equivalence here. Deep research asks what grows in *this*
+    medium at *these* concentrations, so collapsing on the fingerprint would merge
+    records that differ in the ingredient that defines them — e.g. Pfennig's
+    Medium I *with salt* exists at both 10 and 30 G_PER_L NaCl under one name, with
+    identical fingerprints (#127).
+    """
+    items = []
+    for ing in doc.get("ingredients") or []:
+        if not isinstance(ing, dict):
+            continue
+        term = ing.get("term") if isinstance(ing.get("term"), dict) else {}
+        ident = (term or {}).get("id") or ing.get("preferred_term")
+        conc = ing.get("concentration") or {}
+        items.append((str(ident), str(conc.get("value")), str(conc.get("unit"))))
+    return tuple(sorted(items))
+
+
+def collapse_identical_records(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Keep one entry per (name + exact composition); attach the ones dropped.
+
+    Only *exact* redundancy is collapsed. Records sharing a name but differing in
+    composition are all kept — 1613 such groups exist and they are distinct media,
+    not import artifacts (thermus_medium alone is 12 different recipes). Those get
+    `name_collision_count` instead, so a curator can see the name is ambiguous
+    rather than silently researching an arbitrary one of them.
+    """
+    by_identity: dict[tuple, list[dict[str, Any]]] = {}
+    for entry in entries:
+        key = (entry["recipe_name"], entry.pop("_identity"))
+        by_identity.setdefault(key, []).append(entry)
+
+    kept: list[dict[str, Any]] = []
+    for group in by_identity.values():
+        group.sort(key=lambda e: (-e["score"], e["file_path"]))
+        primary, rest = group[0], group[1:]
+        if rest:
+            primary["identical_records"] = [e["file_path"] for e in rest]
+            primary["identical_record_count"] = len(rest)
+        kept.append(primary)
+
+    # Flag remaining same-name-different-composition ambiguity.
+    by_name: dict[str, int] = {}
+    for entry in kept:
+        by_name[entry["recipe_name"]] = by_name.get(entry["recipe_name"], 0) + 1
+    for entry in kept:
+        n = by_name[entry["recipe_name"]]
+        if n > 1:
+            entry["name_collision_count"] = n
+
+    kept.sort(key=lambda e: e["score"], reverse=True)
+    return kept
+
+
 def collect_records(researched: set[str] | None = None) -> list[dict[str, Any]]:
     """Walk the corpus and score every candidate record.
 
@@ -464,10 +526,10 @@ def collect_records(researched: set[str] | None = None) -> list[dict[str, Any]]:
                 "real_organism_count": scored["breakdown"]["organism_gap"]["real_count"],
                 "expected_research_yield": expected_yield(scored["breakdown"]),
                 "score_breakdown": scored["breakdown"],
+                "_identity": strict_identity_key(doc),
             }
             out.append(entry)
-    out.sort(key=lambda e: e["score"], reverse=True)
-    return out
+    return collapse_identical_records(out)
 
 
 def write_markdown(entries: list[dict[str, Any]], path: Path, top_n: int = 100) -> None:
@@ -484,6 +546,17 @@ def write_markdown(entries: list[dict[str, Any]], path: Path, top_n: int = 100) 
     lines.append("")
     lines.append(f"- Total scored candidates: **{len(entries)}**")
     lines.append(f"- Top-N shown below: **{min(top_n, len(entries))}**")
+    collapsed = sum(e.get("identical_record_count", 0) for e in entries)
+    ambiguous = sum(1 for e in entries if e.get("name_collision_count"))
+    lines.append(
+        f"- Exact-duplicate records collapsed: **{collapsed}** "
+        f"(same name, same ingredients, same concentrations; the dropped paths are "
+        f"listed under `identical_records` in the JSON)"
+    )
+    lines.append(
+        f"- Rows whose `recipe_name` is shared by other DISTINCT media: **{ambiguous}** "
+        f"(marked ⚠N below — same name, different composition, so all are kept)"
+    )
     lines.append("")
     lines.append("## Scoring rubric (max 110, before category multiplier)")
     lines.append("")
@@ -521,16 +594,21 @@ def write_markdown(entries: list[dict[str, Any]], path: Path, top_n: int = 100) 
     lines.append(f"## Top {min(top_n, len(entries))} candidates")
     lines.append("")
     lines.append(
-        "| # | Score | Category | Recipe | Ingredients | Orgs | Source ID | Expected yield |"
+        "| # | Score | Category | ID | Recipe | Ingredients | Orgs | Source ID | Expected yield |"
     )
-    lines.append("|--:|------:|----------|--------|------------:|-----:|-----------|----------------|")
+    lines.append("|--:|------:|----------|----|--------|------------:|-----:|-----------|----------------|")
     for i, e in enumerate(entries[:top_n], start=1):
         name = e["recipe_name"]
         if len(name) > 50:
             name = name[:47] + "..."
+        # `recipe_name` is NOT unique — 1613 names cover several distinct media
+        # each. Show the id, and mark rows whose name is shared, so a curator
+        # picking from this table knows which record they are picking (#127).
+        if e.get("name_collision_count"):
+            name = f"{name} ⚠{e['name_collision_count']}"
         src_kind = e["score_breakdown"]["source"].get("kind", "")
         lines.append(
-            f"| {i} | {e['score']:.1f} | {e['category']} | "
+            f"| {i} | {e['score']:.1f} | {e['category']} | `{e['id']}` | "
             f"`{name}` ([yaml](../../data/normalized_yaml/{e['file_path']})) | "
             f"{e['ingredient_count']} | {e['real_organism_count']} | "
             f"{src_kind} | {e['expected_research_yield']} |"

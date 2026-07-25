@@ -45,7 +45,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 12
   },
   {
     "recipe_name": "thermus_medium",
@@ -93,7 +94,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 12
   },
   {
     "recipe_name": "thermus_medium",
@@ -141,7 +143,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 12
   },
   {
     "recipe_name": "thermus_medium",
@@ -189,7 +192,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 12
   },
   {
     "recipe_name": "thermus_medium",
@@ -237,7 +241,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 12
   },
   {
     "recipe_name": "thermus_medium",
@@ -285,7 +290,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 12
   },
   {
     "recipe_name": "thiobacillus_plumbophilus_medium",
@@ -333,7 +339,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "friis_medium",
@@ -381,7 +388,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "chocolate_agar",
@@ -429,7 +437,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 5
   },
   {
     "recipe_name": "acidithiobacillus_ferrooxidans_medium",
@@ -477,7 +486,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "natronobacteria_medium",
@@ -525,7 +535,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 3
   },
   {
     "recipe_name": "dictyoglomus_medium",
@@ -573,7 +584,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "tryptic_soy_agar_broth_with_5_sheep_blood_defibrinated",
@@ -621,7 +633,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "modified_chopped_meat_medium",
@@ -669,7 +682,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "alkaline_xylan_medium",
@@ -717,7 +731,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 3
   },
   {
     "recipe_name": "clostridium_cellulolytic_medium",
@@ -765,7 +780,11 @@
           "binomial"
         ]
       }
-    }
+    },
+    "identical_records": [
+      "bacterial/clostridium_cellulolytic_medium.yaml"
+    ],
+    "identical_record_count": 1
   },
   {
     "recipe_name": "clostridium_medium",
@@ -813,7 +832,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose",
@@ -861,7 +881,11 @@
           "binomial"
         ]
       }
-    }
+    },
+    "identical_records": [
+      "bacterial/bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose.yaml"
+    ],
+    "identical_record_count": 1
   },
   {
     "recipe_name": "thiomonas_cuprina_medium",
@@ -909,7 +933,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 3
   },
   {
     "recipe_name": "thiomonas_cuprina_medium",
@@ -957,7 +982,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 3
   },
   {
     "recipe_name": "chloroflexus_medium",
@@ -1005,7 +1031,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 3
   },
   {
     "recipe_name": "defined_minimal_medium",
@@ -1053,7 +1080,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 5
   },
   {
     "recipe_name": "defined_minimal_medium",
@@ -1101,7 +1129,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 5
   },
   {
     "recipe_name": "defined_minimal_medium",
@@ -1149,55 +1178,12 @@
           "binomial"
         ]
       }
-    }
-  },
-  {
-    "recipe_name": "defined_minimal_medium",
-    "file_path": "bacterial/TOGO_M3201_Defined_minimal_medium.yaml",
-    "id": "CultureMech:009644",
-    "name": "defined_minimal_medium",
-    "original_name": "Defined minimal medium",
-    "category": "bacterial",
-    "media_term": "TOGO Medium M3201 (TOGO:M3201)",
-    "score": 87.0,
-    "subtotal": 87,
-    "category_multiplier": 1.0,
-    "ingredient_count": 15,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 15,
-        "with_concentration": 15,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "TOGO",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 5,
-        "markers": [
-          "binomial"
-        ]
-      }
-    }
+    },
+    "identical_records": [
+      "bacterial/TOGO_M3201_Defined_minimal_medium.yaml"
+    ],
+    "identical_record_count": 1,
+    "name_collision_count": 5
   },
   {
     "recipe_name": "defined_minimal_medium",
@@ -1245,7 +1231,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 5
   },
   {
     "recipe_name": "defined_medium",
@@ -1293,7 +1280,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "minimal_media",
@@ -1341,7 +1329,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3",
@@ -1533,7 +1522,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "anaerobic_butyrate_rhodospirillaceae_medium_rm",
@@ -1735,54 +1725,6 @@
     "original_name": "Basal salts medium (BSM) modified from that of Hareland et al. ( J Bacteriol 121:272\u2013 285(1975)) by removal of the nitriloacetic acid",
     "category": "bacterial",
     "media_term": "TOGO Medium M2237 (TOGO:M2237)",
-    "score": 87.0,
-    "subtotal": 87,
-    "category_multiplier": 1.0,
-    "ingredient_count": 12,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 12,
-        "with_concentration": 12,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "TOGO",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 5,
-        "markers": [
-          "binomial"
-        ]
-      }
-    }
-  },
-  {
-    "recipe_name": "bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose",
-    "file_path": "bacterial/bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose.yaml",
-    "id": "CultureMech:009188",
-    "name": "bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose",
-    "original_name": "BHI w/ heat-inactivated Fetal Bovine Serum and Glucose",
-    "category": "bacterial",
-    "media_term": "TOGO Medium M2622 (TOGO:M2622)",
     "score": 87.0,
     "subtotal": 87,
     "category_multiplier": 1.0,
@@ -2352,54 +2294,6 @@
     }
   },
   {
-    "recipe_name": "clostridium_cellulolytic_medium",
-    "file_path": "bacterial/clostridium_cellulolytic_medium.yaml",
-    "id": "CultureMech:009254",
-    "name": "clostridium_cellulolytic_medium",
-    "original_name": "Clostridium Cellulolytic medium",
-    "category": "bacterial",
-    "media_term": "TOGO Medium M2701 (TOGO:M2701)",
-    "score": 87.0,
-    "subtotal": 87,
-    "category_multiplier": 1.0,
-    "ingredient_count": 12,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 12,
-        "with_concentration": 12,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "TOGO",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 5,
-        "markers": [
-          "binomial"
-        ]
-      }
-    }
-  },
-  {
     "recipe_name": "clostridium_thermocellum_medium_d58_medium",
     "file_path": "bacterial/clostridium_thermocellum_medium_d58_medium.yaml",
     "id": "CultureMech:008330",
@@ -2541,7 +2435,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "defined_minimal_medium",
@@ -2589,7 +2484,8 @@
           "binomial"
         ]
       }
-    }
+    },
+    "name_collision_count": 5
   },
   {
     "recipe_name": "desulfobacter_medium_for_dsm_10631",
@@ -4770,6 +4666,150 @@
         "score": 35,
         "count": 10,
         "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "mmb_medium_atcc_2254",
+    "file_path": "bacterial/mmb_medium_atcc_2254.yaml",
+    "id": "CultureMech:001205",
+    "name": "mmb_medium_atcc_2254",
+    "original_name": "MMB MEDIUM (ATCC 2254)",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1728 (mediadive.medium:1728)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 26,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 26,
+        "with_concentration": 26,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 10,
+        "markers": [
+          "culture_collection"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12",
+    "file_path": "bacterial/mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12.yaml",
+    "id": "CultureMech:009056",
+    "name": "mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12",
+    "original_name": "MN Marine medium (ATCC Medium 957) with 20 mcg/L of vitamin B12",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2482 (TOGO:M2482)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 19,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 19,
+        "with_concentration": 19,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 5,
+        "markers": [
+          "binomial"
+        ]
+      }
+    }
+  },
+  {
+    "recipe_name": "modified_schaedler_medium_infect_immun_29_768_777_1980_without_glucose_but_supplemented_with_0_1_m_sodium_lactate",
+    "file_path": "bacterial/modified_schaedler_medium_infect_immun_29_768_777_1980_without_glucose_but_supplemented_with_0_1_m_sodium_lactate.yaml",
+    "id": "CultureMech:009251",
+    "name": "modified_schaedler_medium_infect_immun_29_768_777_1980_without_glucose_but_supplemented_with_0_1_m_sodium_lactate",
+    "original_name": "Modified Schaedler medium (Infect. Immun. 29:768-777,1980) without glucose but supplemented with 0.1 M sodium lactate",
+    "category": "bacterial",
+    "media_term": "TOGO Medium M2699 (TOGO:M2699)",
+    "score": 87.0,
+    "subtotal": 87,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; TOGO-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
         "bonus": 5
       },
       "source": {
