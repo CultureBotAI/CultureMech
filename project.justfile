@@ -1360,7 +1360,7 @@ gen-page file:
 test:
     #!/usr/bin/env bash
     echo "Running test suite..."
-    uv run pytest tests/ -v
+    uv run --extra dev pytest tests/ -v
 
 [group('Test')]
 test-kgx:

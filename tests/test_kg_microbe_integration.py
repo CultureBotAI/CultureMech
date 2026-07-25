@@ -14,6 +14,7 @@ Key query patterns:
 
 import json
 import pytest
+import yaml
 from pathlib import Path
 from culturemech.export.kgx_export import transform
 
@@ -45,17 +46,17 @@ ingredients:
         recipe_file.write(recipe_yaml)
 
         # Transform to KGX
-        edges = transform(str(recipe_file))
+        edges = list(transform(yaml.safe_load(recipe_yaml)))
 
         # Find organism edges
         organism_edges = [
             e for e in edges
-            if e.get("predicate") == "biolink:used_to_culture"
-            and e.get("object") == "NCBITaxon:562"
+            if e.get("predicate") == "METPO:2000517"
+            and e.get("subject") == "NCBITaxon:562"
         ]
 
         assert len(organism_edges) > 0, "Should find E. coli edge"
-        assert organism_edges[0]["object"] == "NCBITaxon:562"
+        assert organism_edges[0]["subject"] == "NCBITaxon:562"
 
     def test_organism_with_strain_designation(self, tmpdir):
         """Test organism with strain designation is queryable."""
@@ -80,10 +81,10 @@ ingredients:
         recipe_file = tmpdir / "k12_recipe.yaml"
         recipe_file.write(recipe_yaml)
 
-        edges = transform(str(recipe_file))
+        edges = list(transform(yaml.safe_load(recipe_yaml)))
         organism_edges = [
             e for e in edges
-            if e.get("predicate") == "biolink:used_to_culture"
+            if e.get("predicate") == "METPO:2000517"
         ]
 
         assert len(organism_edges) > 0
@@ -115,10 +116,10 @@ ingredients:
         recipe_file = tmpdir / "dsm_strain.yaml"
         recipe_file.write(recipe_yaml)
 
-        edges = transform(str(recipe_file))
+        edges = list(transform(yaml.safe_load(recipe_yaml)))
         organism_edges = [
             e for e in edges
-            if "used_to_culture" in e.get("predicate", "")
+            if e.get("predicate") == "METPO:2000517"
         ]
 
         assert len(organism_edges) > 0
@@ -142,8 +143,10 @@ class TestCrossDatabaseIntegration:
         with open(merge_stats_file) as f:
             stats = json.load(f)
 
-        # Check that we have merged groups with multiple sources
-        assert stats.get("total_groups", 0) > 0
+        # Dedup actually collapsed something: fewer outputs than inputs, and
+        # at least one group held more than one recipe.
+        assert stats["input_recipes"] > stats["output_recipes"] > 0
+        assert stats.get("largest_group_size", 0) > 1
 
         # Verify reduction happened (duplicates found)
         input_count = stats.get("input_recipes", 0)
@@ -190,7 +193,7 @@ ingredients:
         recipe_file = tmpdir / "glucose_medium.yaml"
         recipe_file.write(recipe_yaml)
 
-        edges = transform(str(recipe_file))
+        edges = list(transform(yaml.safe_load(recipe_yaml)))
 
         # Find ingredient edges
         glucose_edges = [
@@ -221,7 +224,7 @@ ingredients:
         recipe_file = tmpdir / "nacl_medium.yaml"
         recipe_file.write(recipe_yaml)
 
-        edges = transform(str(recipe_file))
+        edges = list(transform(yaml.safe_load(recipe_yaml)))
         nacl_edges = [
             e for e in edges
             if e.get("object") == "CHEBI:26710"
@@ -255,7 +258,7 @@ ingredients:
         recipe_file = tmpdir / "agar_plate.yaml"
         recipe_file.write(recipe_yaml)
 
-        edges = transform(str(recipe_file))
+        edges = list(transform(yaml.safe_load(recipe_yaml)))
 
         # Physical state should generate an edge
         state_edges = [
@@ -279,7 +282,7 @@ ingredients:
         recipe_file = tmpdir / "ph_medium.yaml"
         recipe_file.write(recipe_yaml)
 
-        edges = transform(str(recipe_file))
+        edges = list(transform(yaml.safe_load(recipe_yaml)))
 
         # pH should be in some edge or property
         assert len(edges) > 0
@@ -307,10 +310,10 @@ ingredients:
         recipe_file = tmpdir / "isolate.yaml"
         recipe_file.write(recipe_yaml)
 
-        edges = transform(str(recipe_file))
+        edges = list(transform(yaml.safe_load(recipe_yaml)))
         organism_edges = [
             e for e in edges
-            if "culture" in e.get("predicate", "")
+            if e.get("predicate") == "METPO:2000517"
         ]
 
         assert len(organism_edges) > 0
@@ -338,10 +341,10 @@ ingredients:
         recipe_file = tmpdir / "community.yaml"
         recipe_file.write(recipe_yaml)
 
-        edges = transform(str(recipe_file))
+        edges = list(transform(yaml.safe_load(recipe_yaml)))
         organism_edges = [
             e for e in edges
-            if "culture" in e.get("predicate", "")
+            if e.get("predicate") == "METPO:2000517"
         ]
 
         # Should have edges for both organisms
@@ -383,7 +386,7 @@ class TestRealDataIntegration:
         # Verify stats structure
         assert "input_recipes" in stats
         assert "output_recipes" in stats
-        assert "duplicate_groups" in stats
+        assert "top_duplicates" in stats
 
         # Verify significant deduplication occurred
         assert stats["input_recipes"] > stats["output_recipes"]
