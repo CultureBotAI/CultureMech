@@ -6,7 +6,17 @@ deferrals here instead of letting them live only in your head or a closed PR.
 Keep the cross-Mech items in sync with the sibling repos' `NEXT_TASKS.md`
 (MIM / CommunityMech / TraitMech).
 
-Last reconciled: 2026-06-15.
+Last reconciled: 2026-07-24.
+
+Recently shipped: **#113** refresh deep-research priority reports + top-10 triage;
+**#115** recategorized 629 mis-filed archaeal media (`bacterial/` → `archaea/`,
+closes #114); **#112** extended the drift check to `mech_shared.yaml` and retired
+the last two self-generated pins. All merged 2026-07-22; nothing merged 2026-07-23
+or 2026-07-24.
+
+Open PRs right now: **#105 / #106 / #107** — the ingredient-roles research
+pipeline, all green and `MERGEABLE`/`CLEAN`, awaiting review (see §
+"Ingredient-roles research pipeline" below).
 
 ## 1. Phase-2 id↔label enforcement rollout (report-only → blocking) — DONE
 
@@ -62,9 +72,20 @@ diffs (the reference lives in *another* repo, so a one-copy edit fails CI). This
 canonical hub is covered by the nightly `vendored-fleet-audit.yml`, which compares
 all four repos and fails on any disagreement. `verify-/refresh-validator-pin`, the
 `VENDORED_IDLABEL_FILES` manifest, and `scripts/.validate_id_label_correspondence.sha256`
-were deleted from all four repos. `schema-pin` / `mim-roles-pin` are unaffected — those
-sets have no drift-check replacement yet. Propagating a shared-file change is now:
+were deleted from all four repos. Propagating a shared-file change is now:
 PR into this hub → merge → bump `.vendored_canon_ref` in the spokes.
+
+Update (2026-07-22, #112): the two remaining self-pins are **also retired**, so no
+self-referential pin survives anywhere. `mech_shared.yaml` (byte-identical across all
+four Mechs, md5 `3cf80648`) moved onto the shared-reference check —
+`audit_vendored_fleet.sh` now compares **6** vendored files across 4 repos, and each
+spoke's `check_vendored_sync.sh` diffs it against this hub. `verify-/refresh-schema-pin`
++ `SHARED_SCHEMA_MODULE` + `.mech_shared.sha256` deleted. `mim-roles-pin` was retired
+outright rather than added to the drift check: `mim_roles.yaml` is **empty** in
+MIM/CommunityMech/TraitMech (the real facets live in MIM's
+`src/mediaingredientmech/utils/role_facets.py`) and has content only here, so it is not
+a shared set. No CI referenced either pin. Rationale is recorded inline at
+`project.justfile:834` and `:841`.
 
 ## Adopt DisMech knowledge-gaps + datasets + QC dashboard (claw#7)
 
@@ -82,3 +103,120 @@ This repo's slice:
   CommunityMech's repository/accession enum).
 - QC dashboard — this repo's rendered `dashboard/index.html` is the TEMPLATE for
   Phase 3: extract it into a reusable generator the other three Mechs adopt.
+
+## Ingredient-roles research pipeline (#105 / #106 / #107) — IN PROGRESS, needs review + merge
+
+Three open PRs complete the loop that fills the three faceted role slots added in
+#93 / #94 / #95 (nutritional / physicochemical / cellular-metabolic on
+`IngredientDescriptor`). All three branch from `main`, all report
+`MERGEABLE` / `CLEAN` with `validate` + `consistency` green (last touched
+2026-07-21/22) — they are waiting on human review, not on CI or on each other's
+logic:
+
+- **#105** `feat/prioritize-role-research-candidates` — ranks MIM ingredients by
+  facet-gap × corpus occurrence to pick research targets.
+  `scripts/prioritize_role_research_candidates.py` + test + `project.justfile`.
+- **#106** `feat/extract-roles-from-edison` — parses the Edison YAML block and emits
+  dual applier batches. `scripts/extract_roles_from_edison.py` + test +
+  `project.justfile`.
+- **#107** `feat/apply-ingredient-roles` — the applier itself, plus the
+  `research-ingredient-roles` skill and `docs/EDISON_REVIEW_WORKFLOW.md`.
+  `scripts/apply_ingredient_roles.py` + test + `project.justfile`.
+
+**Merge order caveat:** all three add recipes to `project.justfile`, so whichever
+merges first will leave the other two needing a rebase on that one file (mechanical
+— disjoint recipe blocks). Natural order is pipeline order: #105 → #106 → #107.
+Nothing else in the corpus depends on them, so they can also be merged
+independently in any order.
+
+Related already-merged context: #95 shipped the mechanistic (CHEBI `has_role`)
+backfill + missing-roles audit as a dry-run; these three turn that into a
+curatable research loop. Local review prompts are tracked under
+`scripts/codex_prompts/` (#97) with before/after reports from #100.
+
+## Deep-research curation of prioritized media — IN PROGRESS
+
+Edison two-phase deep research over the top-10 prioritized media (from
+`data/import_tracking/reports/deep_research_priority_top100.json`, refreshed in
+#113). All Edison-reported costs were 0.0000 this run. Outputs live under
+`research/media/` (**gitignored** — local artifacts, not committed):
+`<slug>-edison-literature.*` (phase 1), `<slug>-organism-*-edison-literature.*`
+(phase 2), and `<slug>-deep-research-summary.md` (curator roll-up).
+
+State (2026-07-22):
+- **Phase 1 (medium-level) done for all 10** triage media.
+- **Phase 2 (per-organism) done for 4 leaders**: `sulfolobus_medium_for_dsm_9790`
+  (CultureMech:008911), `syntrophomonas_medium_for_syntrophospora_cellicola_19j_3`,
+  `TOGO_M1791_Pelobacter_acetylenicus_Medium` (CultureMech:008359),
+  `TOGO_M1796_Desulfovibrio_medium` (CultureMech:008364) — 6 organism tasks total.
+- **Apply-now JSON built + dry-run clean**:
+  `research/media/triage_top10_apply_now.json` (schema for
+  `scripts/apply_edison_results.py`). Adds 2 high/medium-confidence parent-match
+  target organisms: *D. vulgaris* subsp. *vulgaris* ATCC 29579 → Desulfovibrio
+  medium; *M. sedula* DSM 5348T → sulfolobus record. NCBITaxon IDs intentionally
+  omitted (unverified in source); names + citations only, curator verifies.
+
+Next actions (pick up cold):
+- **Phase-2 the remaining 6 triage media** (#2 `wilkins_chalgren_..._dsm_15567`,
+  #4 `leuconostoc_oenos` M1620, #5 `thermoproteus` M1633, #6 `clostridium_thermocellum`
+  M1766, #7 `pelobacter_carbinolicus` M1788, #8 `ectothiorhodospira` M1789): parse
+  phase-1 organisms → write `<slug>-organisms.json` → `just
+  research-organism-recipe-edison-batch <json> --dry-run` then live. **Auth note:**
+  a stale shell `EDISON_PLATFORM_API_KEY` (2nd account) shadows the repo `.env`
+  key; run with `env -u EDISON_PLATFORM_API_KEY` until a fresh shell/app restart
+  clears it (source already removed from `~/.bash_profile`).
+- **Curator review of `triage_top10_apply_now.json`** before any live apply. The
+  Desulfovibrio entry: ATCC 29579 may equal DSM 644 (Hildenborough) — dedupe.
+  The sulfolobus entry is **blocked by #119** (see below). *Syntrophomonas cellicola*
+  19J-3, *Pelobacter acetylenicus*, *D. desulfuricans* DSM 642 (0 citations), and
+  *D. vulgaris* DSM 644 were deliberately left out (evidence-only / deferred).
+
+## Batch runner: skip-already-done guard (#117) — PENDING, actionable
+
+`scripts/research_media_edison.py --batch` calls `run_one()` on every entry with
+no existing-meta check, so overlapping re-runs re-submit (re-bill) researched
+records — and `--start`/`--limit` windows aren't idempotent. Fix: skip records
+with a non-dry-run meta by default (reuse `has_existing_research()`-style logic
+from `prioritize_deep_research_candidates.py`), add `--force`, print
+`N submitted / M skipped`. Small, self-contained. Issue #117.
+
+## Ingredient mis-normalization audit (#118) — PENDING, actionable
+
+Deep research surfaced a systematic corpus bug: trace-element **stock-solution**
+concentrations and unit slips stored as **final** per-liter values. Confirmed
+cases: `sulfolobus_medium_for_dsm_9790` (water `2000 G_PER_L` = 2-L prep artifact;
+MnCl2 `180`, Na2B4O7 `450`, ZnSO4 `22` G_PER_L = stock values);
+`TOGO_M1791_Pelobacter_acetylenicus_Medium` (same pattern); `TOGO_M1796_Desulfovibrio_medium`
+(Resazurin `1 G_PER_L`, ~1000× too high — should be ~1 mg/L). Fix: corpus-wide
+magnitude audit (water ≥ ~1000 g/L; trace salts ≫ plausible; redox/vitamin in
+G_PER_L that should be MG_PER_L) + nest detected trace cocktails under stock
+`solution` objects + add a plausibility validator (extend the schema-gap /
+label-plausibility harness). Issue #118.
+
+## sulfolobus_medium_for_dsm_9790 naming conflict (#119) — PENDING, needs manual source check
+
+Record named "Sulfolobus Medium (For DSM 9790)" but **DSM 9790 = _Picrophilus
+torridus_**, not Sulfolobus; all retrieved growth evidence for TOGO M2323 / DSMZ
+Medium 88 supports **_Metallosphaera sedula_ DSM 5348T** (GenBank CP000682).
+Blocks curating any organism to this record (gates the sulfolobus entry in the
+apply-now JSON). Needs a human to check archived DSMZ Medium 88 + TOGO M2323
+provenance before renaming — do NOT blind-rename. Issue #119.
+
+## Duplicate media sharing filenames across bacterial/ and archaea/ (#116) — PENDING, actionable
+
+Fallout from the #115 archaea recategorization: **11 `methano*` media** exist under
+both `data/normalized_yaml/bacterial/` and `data/normalized_yaml/archaea/` with the
+**same filename but different content**, so #115 deliberately excluded them from the
+move rather than clobber either copy (list is in issue #116). Separately, the
+resolver has a multi-match ambiguity — it hit
+`syntrophomonas_medium_for_syntrophospora_cellicola_19j_3`, which has a
+`TOGO_M520_*` sibling of the same recipe. Two pieces of work: merge/choose per
+colliding filename, and disambiguate the resolver. Issue #116.
+
+## Remaining web-design-review item (#89) — PENDING, cosmetic
+
+Issue #89's checklist is otherwise fully addressed (#87 / #88 / #90 / #91 shipped dark
+mode, reduced-motion, vendored d3, the green sequential ramp, data-table fallbacks,
+de-emoji'd nav, plain-text footer). **One unchecked item remains:** `browser.html`'s
+pure-gray ground should adopt the hue-biased neutral used elsewhere on the site. Small
+and purely cosmetic — closing it closes #89.
