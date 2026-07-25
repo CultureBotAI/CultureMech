@@ -102,9 +102,23 @@ enrich-edison-response *args="":
 #   data/import_tracking/reports/deep_research_priority_top100.json (top 100, batch-ready)
 #   data/import_tracking/reports/deep_research_priority.md          (human report)
 # The top-100 JSON is compatible with `research-media-edison-batch`.
+# Already-researched records are excluded via the TRACKED manifest
+# data/import_tracking/researched_media.json — not by scanning the gitignored
+# research/ tree — so the reports are reproducible from git alone (#121).
+# If the manifest is stale, run `just refresh-researched-manifest` FIRST and
+# commit that diff separately, so a report refresh never mixes the two.
 [group('Research')]
 prioritize-deep-research-candidates *args="":
     uv run --extra dev python scripts/prioritize_deep_research_candidates.py {{args}}
+
+# Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
+# into the tracked researched-media manifest. This is the only step that reads
+# untracked research state; review and commit the resulting diff. Entries are
+# merged, never dropped, so several machines can contribute safely.
+#   just refresh-researched-manifest --dry-run   # preview additions
+[group('Research')]
+refresh-researched-manifest *args="":
+    uv run --extra dev python scripts/refresh_researched_manifest.py {{args}}
 
 # Rank MediaIngredientMech ingredients for Step 7b Edison role-research.
 # Cross-repo scan of ../MediaIngredientMech/data/ingredients/**/*.yaml scored by

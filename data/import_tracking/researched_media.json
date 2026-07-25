@@ -1,0 +1,355 @@
+{
+  "description": "Media records with a completed (non-dry-run) Edison deep-research run. Tracked so that deep_research_priority*.json are reproducible from git alone (see issue #121). Refresh with `just refresh-researched-manifest`; entries are merged, never dropped, so multiple machines can contribute.",
+  "entries": [
+    {
+      "slug": "TOGO_M1620_Leuconostoc_oenos_Medium",
+      "job": "literature",
+      "task_id": "8d102d3a-72bc-4310-ad6d-8ebc51a33574",
+      "kind": "medium"
+    },
+    {
+      "slug": "TOGO_M1633_Thermoproteus_neutrophilus_Medium",
+      "job": "literature",
+      "task_id": "1d348fb9-bed7-4ae5-a2d5-dbaa67dbbc96",
+      "kind": "medium"
+    },
+    {
+      "slug": "TOGO_M1766_Clostridium_thermocellum_Medium_D58_Medium",
+      "job": "literature",
+      "task_id": "ec509e68-490e-4ab4-ae0e-da99c8cf32e9",
+      "kind": "medium"
+    },
+    {
+      "slug": "TOGO_M1788_Pelobacter_carbinolicus_Medium",
+      "job": "literature",
+      "task_id": "23d82ac8-ed4a-4e4d-92ef-f06f8db48868",
+      "kind": "medium"
+    },
+    {
+      "slug": "TOGO_M1789_Medium_for_Ectothiorhodospira",
+      "job": "literature",
+      "task_id": "65016cfa-f8f2-4dce-966e-2405ac31a39f",
+      "kind": "medium"
+    },
+    {
+      "slug": "TOGO_M1791_Pelobacter_acetylenicus_Medium",
+      "job": "literature",
+      "task_id": "5bca6404-1edd-48e0-b409-389dab1f8f27",
+      "kind": "medium"
+    },
+    {
+      "slug": "TOGO_M1791_Pelobacter_acetylenicus_Medium-organism-pelobacter-acetylenicus",
+      "job": "literature",
+      "task_id": "16086e43-13fa-4b27-8ca9-6f20f66b7dde",
+      "kind": "organism",
+      "media_slug": "TOGO_M1791_Pelobacter_acetylenicus_Medium"
+    },
+    {
+      "slug": "TOGO_M1796_Desulfovibrio_medium",
+      "job": "literature",
+      "task_id": "1be413df-3604-49e8-9f10-73668371039a",
+      "kind": "medium"
+    },
+    {
+      "slug": "TOGO_M1796_Desulfovibrio_medium-organism-desulfovibrio-desulfuricans-essex-6-dsm-642",
+      "job": "literature",
+      "task_id": "fe467609-026b-4557-8228-3f4e09d355b6",
+      "kind": "organism",
+      "media_slug": "TOGO_M1796_Desulfovibrio_medium"
+    },
+    {
+      "slug": "TOGO_M1796_Desulfovibrio_medium-organism-desulfovibrio-vulgaris-hildenborough-dsm-644",
+      "job": "literature",
+      "task_id": "da185bea-78a5-4fa7-82e9-457f3a9f3a59",
+      "kind": "organism",
+      "media_slug": "TOGO_M1796_Desulfovibrio_medium"
+    },
+    {
+      "slug": "TOGO_M1796_Desulfovibrio_medium-organism-desulfovibrio-vulgaris-subsp-vulgaris-atcc-29579",
+      "job": "literature",
+      "task_id": "0d4cc2be-dcc0-4b55-a349-63891cddd618",
+      "kind": "organism",
+      "media_slug": "TOGO_M1796_Desulfovibrio_medium"
+    },
+    {
+      "slug": "TOGO_M1836_Medium_for_strains_JA145_JA193_JA310_JA334_JA415_JA430_JA447_and_JA643",
+      "job": "literature",
+      "task_id": "358754b4-7d84-4191-a46b-4f8d7fb48d5a",
+      "kind": "medium"
+    },
+    {
+      "slug": "archaeoglobus_medium_dsm_399",
+      "job": "literature",
+      "task_id": "b62d20b4-56f6-439b-aacc-4b24ae41ee10",
+      "kind": "medium"
+    },
+    {
+      "slug": "archaeoglobus_medium_dsm_399-organism-archaeoglobus-fulgidus-dsm-4304-vc-16",
+      "job": "literature",
+      "task_id": "199fbc1a-d07e-4b38-809a-27a7fe9900dc",
+      "kind": "organism",
+      "media_slug": "archaeoglobus_medium_dsm_399"
+    },
+    {
+      "slug": "archaeoglobus_medium_dsm_399-organism-archaeoglobus-fulgidus-stl-medium-variant",
+      "job": "literature",
+      "task_id": "b7f11290-9184-4cf8-9d75-de1207086390",
+      "kind": "organism",
+      "media_slug": "archaeoglobus_medium_dsm_399"
+    },
+    {
+      "slug": "bacto_marine_broth_difco_2216_for_dsm_11879",
+      "job": "literature",
+      "task_id": "c8c06263-f605-420c-af7e-7efbf6c056d0",
+      "kind": "medium"
+    },
+    {
+      "slug": "bacto_marine_broth_difco_2216_for_dsm_11879-organism-cellulophaga-algicola-ic166t",
+      "job": "literature",
+      "task_id": "9849501a-253e-4e20-9028-2e493802bf99",
+      "kind": "organism",
+      "media_slug": "bacto_marine_broth_difco_2216_for_dsm_11879"
+    },
+    {
+      "slug": "bacto_marine_broth_difco_2216_for_dsm_11879-organism-rhodothermus-profundi-pri-2902t",
+      "job": "literature",
+      "task_id": "2e3765eb-ccec-4506-8012-bfcfab97723f",
+      "kind": "organism",
+      "media_slug": "bacto_marine_broth_difco_2216_for_dsm_11879"
+    },
+    {
+      "slug": "beijerinckia_medium_lmg_18",
+      "job": "literature",
+      "task_id": "f09bfb0c-f432-473d-9e79-2efb08cb81aa",
+      "kind": "medium"
+    },
+    {
+      "slug": "beijerinckia_medium_lmg_18-organism-beijerinckia-lactocogenes-ntcc-38849",
+      "job": "literature",
+      "task_id": "508d2c0f-5395-4de1-beac-aeae745ac4ac",
+      "kind": "organism",
+      "media_slug": "beijerinckia_medium_lmg_18"
+    },
+    {
+      "slug": "caldicellulosiruptor_medium_for_dsm_10319",
+      "job": "literature",
+      "task_id": "6b70021e-a69d-4ec6-a2b9-0617e8210180",
+      "kind": "medium"
+    },
+    {
+      "slug": "caldicellulosiruptor_medium_for_dsm_10319-organism-caldicellulosiruptor-bescii-dsm-6725",
+      "job": "literature",
+      "task_id": "e3c5a5ed-1419-47d2-a28f-e8662adf20aa",
+      "kind": "organism",
+      "media_slug": "caldicellulosiruptor_medium_for_dsm_10319"
+    },
+    {
+      "slug": "caldicellulosiruptor_medium_for_dsm_10319-organism-thermoanaerobacterium-calidifontis-rx1",
+      "job": "literature",
+      "task_id": "68d3d8d5-a2b2-4d95-9b29-c9de4dc567e6",
+      "kind": "organism",
+      "media_slug": "caldicellulosiruptor_medium_for_dsm_10319"
+    },
+    {
+      "slug": "chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733",
+      "job": "literature",
+      "task_id": "d405081b-7c1b-4964-878b-306bf8e58a29",
+      "kind": "medium"
+    },
+    {
+      "slug": "chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733-organism-bacteroides-ureolyticus-atcc-33387",
+      "job": "literature",
+      "task_id": "ccb63acc-a0a2-4204-9c78-80b96d54dd04",
+      "kind": "organism",
+      "media_slug": "chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733"
+    },
+    {
+      "slug": "chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733-organism-fusobacterium-necrophorum-atcc-27852",
+      "job": "literature",
+      "task_id": "7b85f497-1d1a-4e75-84d2-13c7fa85d851",
+      "kind": "organism",
+      "media_slug": "chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733"
+    },
+    {
+      "slug": "ignicoccus_medium_for_dsm_18386",
+      "job": "literature",
+      "task_id": "69f6f5e4-5667-4bbe-9141-785dd7561e0e",
+      "kind": "medium"
+    },
+    {
+      "slug": "ignicoccus_medium_for_dsm_18386-organism-ignicoccus-hospitalis-kin4-i-kin4-it-dsm-18386t",
+      "job": "literature",
+      "task_id": "6fc87f89-50ff-4e12-865e-417dbe4f7b41",
+      "kind": "organism",
+      "media_slug": "ignicoccus_medium_for_dsm_18386"
+    },
+    {
+      "slug": "ignicoccus_medium_for_dsm_18386-organism-ignicoccus-islandicus-kol8-dsm-13165t",
+      "job": "literature",
+      "task_id": "8765f36f-d7be-4035-a0a7-bec0335fdd20",
+      "kind": "organism",
+      "media_slug": "ignicoccus_medium_for_dsm_18386"
+    },
+    {
+      "slug": "ignicoccus_medium_for_dsm_18386-organism-ignicoccus-pacificus-lpc33-dsm-13166t",
+      "job": "literature",
+      "task_id": "17761c99-32b3-492b-bae3-5c7fa0ccefc8",
+      "kind": "organism",
+      "media_slug": "ignicoccus_medium_for_dsm_18386"
+    },
+    {
+      "slug": "medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397",
+      "job": "literature",
+      "task_id": "2008b204-5b8f-41bd-9523-acfa060c7689",
+      "kind": "medium"
+    },
+    {
+      "slug": "medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397-organism-methanospirillum-hungatei-nbrc-100397t-dsm-864t-atcc-27890t-jf-1t",
+      "job": "literature",
+      "task_id": "af1adad4-d7d3-440a-829f-47ff875aff8a",
+      "kind": "organism",
+      "media_slug": "medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397"
+    },
+    {
+      "slug": "medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397-organism-pelotomaculum-sp-strain-jt",
+      "job": "literature",
+      "task_id": "5ed47abd-1be5-465d-b773-e612684572c7",
+      "kind": "organism",
+      "media_slug": "medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397"
+    },
+    {
+      "slug": "medium_for_sulfospirillum_dsm_806",
+      "job": "literature",
+      "task_id": "427ad7fa-79e5-405f-96ab-6cd47e1ff792",
+      "kind": "medium"
+    },
+    {
+      "slug": "sulfolobus_medium_anaerobic_for_dsm_2162",
+      "job": "literature",
+      "task_id": "7fad3ac2-5763-4ff3-b022-67f8d9d2adc8",
+      "kind": "medium"
+    },
+    {
+      "slug": "sulfolobus_medium_anaerobic_for_dsm_2162-organism-acidianus-brierleyi-dsm-1651-dsm-3772",
+      "job": "literature",
+      "task_id": "f59621d4-bff8-4efd-a990-831e9fe3de10",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_anaerobic_for_dsm_2162"
+    },
+    {
+      "slug": "sulfolobus_medium_anaerobic_for_dsm_2162-organism-metallosphaera-hakonensis-ho1-1-dsm-7519",
+      "job": "literature",
+      "task_id": "a93372d3-e41f-4edf-9c13-4286361127b5",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_anaerobic_for_dsm_2162"
+    },
+    {
+      "slug": "sulfolobus_medium_anaerobic_for_dsm_2162-organism-metallosphaera-prunae-ron-12-ii-dsm-10039",
+      "job": "literature",
+      "task_id": "933dc8b5-f4fb-4c15-9c91-af363b0a549f",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_anaerobic_for_dsm_2162"
+    },
+    {
+      "slug": "sulfolobus_medium_anaerobic_for_dsm_2162-organism-saccharolobus-solfataricus-p2-dsm-1617",
+      "job": "literature",
+      "task_id": "c36e4f68-6a03-4775-bf8c-cf462ec35dd6",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_anaerobic_for_dsm_2162"
+    },
+    {
+      "slug": "sulfolobus_medium_anaerobic_for_dsm_2162-organism-sulfodiicoccus-acidiphilus-hs-1t-jcm-31740t-inacc-ar79t",
+      "job": "literature",
+      "task_id": "03cbde46-43e9-4604-9e1f-26090c71ab30",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_anaerobic_for_dsm_2162"
+    },
+    {
+      "slug": "sulfolobus_medium_anaerobic_for_dsm_2162-organism-sulfolobus-acidocaldarius-mw001",
+      "job": "literature",
+      "task_id": "c40e9182-bc76-4249-99c4-414f88963722",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_anaerobic_for_dsm_2162"
+    },
+    {
+      "slug": "sulfolobus_medium_anaerobic_for_dsm_2162-organism-sulfuracidifex-tepidarius-ic-007-dsm-104736",
+      "job": "literature",
+      "task_id": "81c377c2-8180-40a7-8667-343556745820",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_anaerobic_for_dsm_2162"
+    },
+    {
+      "slug": "sulfolobus_medium_anaerobic_for_dsm_2162-organism-sulfurisphaera-ohwakuensis-ta-1-dsm-12421",
+      "job": "literature",
+      "task_id": "497fcd9e-c59f-435e-b91d-3d75466d0f40",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_anaerobic_for_dsm_2162"
+    },
+    {
+      "slug": "sulfolobus_medium_anaerobic_for_dsm_2162-organism-sulfurisphaera-tokodaii-str-7-dsm-16993",
+      "job": "literature",
+      "task_id": "cd4bef65-2778-4a5e-8cd3-75ee93252f47",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_anaerobic_for_dsm_2162"
+    },
+    {
+      "slug": "sulfolobus_medium_for_dsm_5348",
+      "job": "literature",
+      "task_id": "80dd5f14-6352-4b4e-8372-1801807cc616",
+      "kind": "medium"
+    },
+    {
+      "slug": "sulfolobus_medium_for_dsm_5348-organism-metallosphaera-sedula-dsm-5348t-th2",
+      "job": "literature",
+      "task_id": "0295b11b-30c1-4e59-99bc-0f224c584928",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_for_dsm_5348"
+    },
+    {
+      "slug": "sulfolobus_medium_for_dsm_5348-organism-sulfolobus-acidocaldarius-dsm-639",
+      "job": "literature",
+      "task_id": "195e3848-cb8d-40b5-9ac5-666c1365a287",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_for_dsm_5348"
+    },
+    {
+      "slug": "sulfolobus_medium_for_dsm_5348-organism-sulfolobus-metallicus-dsm-6482",
+      "job": "literature",
+      "task_id": "96a4fbf1-b7c8-43e1-9bbc-d0ce3af82764",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_for_dsm_5348"
+    },
+    {
+      "slug": "sulfolobus_medium_for_dsm_9790",
+      "job": "literature",
+      "task_id": "24bed858-1f37-4ef4-aad1-85af2f6bff80",
+      "kind": "medium"
+    },
+    {
+      "slug": "sulfolobus_medium_for_dsm_9790-organism-metallosphaera-sedula-dsm-5348t",
+      "job": "literature",
+      "task_id": "f4595f49-8d19-40dd-8aea-8f2f2556fee4",
+      "kind": "organism",
+      "media_slug": "sulfolobus_medium_for_dsm_9790"
+    },
+    {
+      "slug": "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3",
+      "job": "literature",
+      "task_id": "d64f279d-51cb-446f-8c50-b6bc31a7393c",
+      "kind": "medium"
+    },
+    {
+      "slug": "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3-organism-syntrophomonas-cellicola-19j-3",
+      "job": "literature",
+      "task_id": "c487cb2a-b01e-43f0-856c-5d6af96e1c56",
+      "kind": "organism",
+      "media_slug": "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3"
+    },
+    {
+      "slug": "wilkins_chalgren_anaerobe_broth_n2_co2_for_dsm_15567",
+      "job": "literature",
+      "task_id": "a66b292a-8a02-4991-88c3-74ce1a248373",
+      "kind": "medium"
+    }
+  ]
+}
