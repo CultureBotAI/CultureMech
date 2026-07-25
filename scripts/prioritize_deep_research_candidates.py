@@ -56,9 +56,17 @@ Scoring rubric (all components additive; final score in [0, 110]):
 Hard filters (record is dropped before scoring):
 
   - 0 ingredients
-  - category == solutions (no organism associations expected)
+  - stock-solution records (no organism associations expected — see below)
   - already-researched: the slug appears in the TRACKED manifest
     data/import_tracking/researched_media.json
+
+Solution filter (#124): this used to be documented as "category == solutions",
+which never fired — `CategoryEnum` has no `solutions` member, so no record can
+carry that value. The ~4,784 MediaDive stock-solution records live in
+`bacterial/` stamped `category: bacterial`, and 4,772 of them were being scored
+and ranked as candidate media (31% of the committed report). They are now
+detected structurally via `record_kinds.is_solution_record`, the same rule
+`validate_strict.py` uses to route them to `SolutionRecipe`.
 
 Reproducibility (#121): the already-researched filter reads that tracked
 manifest, never the gitignored `research/media/` tree. Scanning the latter made
@@ -110,6 +118,7 @@ except ImportError:
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 import researched_manifest as rmf  # noqa: E402  -- tracked already-researched set
+from record_kinds import is_solution_record  # noqa: E402  -- shared medium/solution rule
 
 NORMALIZED_DIR = REPO_ROOT / "data" / "normalized_yaml"
 REPORTS_DIR = REPO_ROOT / "data" / "import_tracking" / "reports"
@@ -416,6 +425,12 @@ def collect_records(researched: set[str] | None = None) -> list[dict[str, Any]]:
         for yaml_path in sorted(cat_dir.glob("*.yaml")):
             doc = load_yaml(yaml_path)
             if not doc:
+                continue
+            # Stock solutions have no organism to associate by construction, so
+            # researching one can only ever spend credits for nothing. They sit
+            # in bacterial/ stamped `category: bacterial`, so this has to be a
+            # structural check — see the module docstring (#124).
+            if is_solution_record(doc):
                 continue
             slug = yaml_path.stem
             if slug in researched:
