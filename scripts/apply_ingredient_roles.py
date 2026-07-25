@@ -41,6 +41,11 @@ Usage:
 Curation history: one event per changed recipe, with `curator=<--curator>`,
 `action=ANNOTATED`, `changes=` listing facet slot names, and a `notes`
 field naming the source Edison run and the ingredient identifiers touched.
+
+Role tokens are NOT re-validated against the facet enums here — that check
+lives in `extract_roles_from_edison.py`. A batch produced with its
+`--no-validate` flag, or hand-edited afterwards, can carry invalid tokens
+into the corpus, where they surface only at `just validate-strict`.
 """
 
 from __future__ import annotations
@@ -74,15 +79,26 @@ def _load_batch(path: Path) -> list[dict[str, Any]]:
     return proposals
 
 
-def _index_by_identifier(proposals: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
-    """Index proposals by ingredient_identifier for O(1) lookup during the walk."""
+def _index_by_identifier(
+    proposals: list[dict[str, Any]],
+    skipped: list[dict[str, Any]] | None = None,
+) -> dict[str, dict[str, Any]]:
+    """Index proposals by ingredient_identifier for O(1) lookup during the walk.
+
+    A proposal with no `ingredient_identifier` cannot be matched to a descriptor
+    and is dropped; dropped proposals are appended to `skipped` so the caller can
+    report them rather than losing them silently.
+    """
     idx: dict[str, dict[str, Any]] = {}
     for p in proposals:
         ident = p.get("ingredient_identifier")
         if not ident:
+            if skipped is not None:
+                skipped.append(p)
             continue
         if ident in idx:
-            # Merge: prefer the later proposal's roles, but never lose earlier facets.
+            # Merge: first proposal wins per facet; later ones only fill facets
+            # the earlier proposal left empty.
             existing = idx[ident].get("roles") or {}
             new = p.get("roles") or {}
             merged = dict(existing)
@@ -94,10 +110,13 @@ def _index_by_identifier(proposals: list[dict[str, Any]]) -> dict[str, dict[str,
 
 
 def _descriptor_identifier(ing: dict[str, Any]) -> str | None:
-    """Best-effort CHEBI id for an ingredient descriptor in a normalized recipe.
+    """Best-effort ontology id for an ingredient descriptor in a normalized recipe.
 
-    Prefers `mediaingredientmech_chebi_term.id` (MIM-mapped anchor); falls
-    back to `term.id`. Returns None if neither is a CHEBI curie.
+    Prefers `mediaingredientmech_chebi_term.id` (MIM-mapped anchor); falls back to
+    `term.id`, then `ingredient_term.id`. The id is returned as-is whatever its
+    namespace — no CHEBI filter — since matching is by equality against the batch's
+    `ingredient_identifier`, which is itself CHEBI in practice. Returns None only
+    when no descriptor term carries an id at all.
     """
     for key in ("mediaingredientmech_chebi_term", "term", "ingredient_term"):
         term = ing.get(key)
@@ -140,13 +159,19 @@ def _add_curation_event(
     fields_changed: list[str],
     notes: str,
 ) -> None:
-    """Append a curation_history event to the recipe."""
+    """Append a curation_history event to the recipe.
+
+    `CurationEvent` has no `fields_changed` slot — the slot is `changes`, and its
+    range is a plain string, so the facet list is rendered comma-joined. The class
+    is validated closed (`validate-strict` runs linkml-validate with closed=True),
+    so any extra key here fails CI on every recipe this script writes.
+    """
     history = recipe.setdefault("curation_history", [])
     history.append({
         "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
         "curator": curator_name,
         "action": "ANNOTATED",
-        "fields_changed": fields_changed,
+        "changes": ", ".join(fields_changed),
         "notes": notes,
     })
 
@@ -214,7 +239,14 @@ def main(argv: list[str] | None = None) -> int:
         return 2
 
     proposals = _load_batch(args.batch)
-    proposals_by_id = _index_by_identifier(proposals)
+    unidentified: list[dict[str, Any]] = []
+    proposals_by_id = _index_by_identifier(proposals, skipped=unidentified)
+    if unidentified:
+        print(f"WARNING: {len(unidentified)} proposal(s) have no `ingredient_identifier` "
+              f"and cannot be matched to a descriptor — they will NOT be applied:")
+        for p in unidentified:
+            print(f"  - slug={p.get('ingredient_slug') or '(none)'} "
+                  f"source_run={p.get('source_run') or '(none)'}")
     if not proposals_by_id:
         print("No proposals with an ingredient_identifier; nothing to apply.")
         return 0

@@ -205,8 +205,43 @@ def test_apply_to_recipe_adds_curation_event_when_changed():
     assert len(events) == 1
     assert events[0]["curator"] == "test-curator"
     assert events[0]["action"] == "ANNOTATED"
-    assert events[0]["fields_changed"] == ["nutritional_roles"]
+    assert events[0]["changes"] == "nutritional_roles"
     assert "L-cysteine-edison-literature" in events[0]["notes"]
+
+
+def test_curation_event_keys_are_all_curation_event_slots():
+    """Every key we emit must be a declared CurationEvent slot.
+
+    `validate-strict` runs linkml-validate with closed=True, so an undeclared key
+    (e.g. the `fields_changed` this script originally wrote) fails CI on every
+    recipe the applier touches — and nothing else in this suite would catch it,
+    since the applier's own tests never validate against the schema.
+    """
+    schema = yaml.safe_load(
+        (Path(__file__).resolve().parent.parent
+         / "src" / "culturemech" / "schema" / "culturemech.yaml").read_text()
+    )
+    allowed = set(schema["classes"]["CurationEvent"]["attributes"])
+    assert "changes" in allowed and "fields_changed" not in allowed  # guards the fixture itself
+
+    recipe = _sample_recipe(("CHEBI:17561", "L-cysteine"))
+    proposals = [_sample_proposal("CHEBI:17561", "L-cysteine", nutritional_roles=["SULFUR_SOURCE"])]
+    _ap.apply_to_recipe(recipe, _ap._index_by_identifier(proposals), "test-curator")
+
+    emitted = set(recipe["curation_history"][0])
+    assert emitted <= allowed, f"undeclared CurationEvent key(s): {sorted(emitted - allowed)}"
+
+
+def test_proposals_without_identifier_are_reported_not_silently_dropped():
+    skipped = []
+    proposals = [
+        _sample_proposal("CHEBI:17561", "L-cysteine", nutritional_roles=["SULFUR_SOURCE"]),
+        {"ingredient_slug": "mystery", "source_run": "mystery-edison-literature",
+         "roles": {"nutritional_roles": ["CARBON_SOURCE"]}},  # no ingredient_identifier
+    ]
+    idx = _ap._index_by_identifier(proposals, skipped=skipped)
+    assert set(idx) == {"CHEBI:17561"}
+    assert [p["ingredient_slug"] for p in skipped] == ["mystery"]
 
 
 def test_apply_to_recipe_no_change_no_curation_event():
