@@ -134,7 +134,9 @@ def read_recipe(path: Path) -> Recipe:
         elif line.startswith("composition:"):
             rec.is_solution = True
 
-    match = re.search(r"Source:\s*(\S+)", text)
+    # only the record-level `notes:` line carries the provenance; ingredient notes
+    # further down can also contain "Source:" and must not win
+    match = re.search(r"^notes:.*?Source:\s*(\S+)", text, re.M)
     if match:
         rec.source = match.group(1)
     for pattern, template in SOURCE_ID_PATTERNS:
@@ -158,25 +160,33 @@ def slugify_for_filename(text: str) -> str:
     return re.sub(r"_+", "_", re.sub(r"[^A-Za-z0-9]+", "_", text)).strip("_")
 
 
-def target_path(rec: Recipe, dest_dir: Path) -> Path:
+def target_path(rec: Recipe, dest_dir: Path, reserved: set[Path]) -> Path:
     """Where `rec` should live, disambiguated by source prefix if the name is taken.
 
     Multiple registries (KOMODO / TOGO / JCM / DSMZ) publish distinct media that
     slugify to the same filename; the repo already disambiguates these with a
     source prefix (e.g. ``KOMODO_372_HALOBACTERIA_medium.yaml`` and
     ``TOGO_M159_Halobacteria_Medium.yaml`` both carry ``name: halobacteria_medium``).
-    """
-    candidate = dest_dir / rec.path.name
-    if not candidate.exists():
-        return candidate
 
-    prefix = rec.source_id or slugify_for_filename(rec.source)[:12] or "DUP"
-    stem = slugify_for_filename(rec.display_name) or rec.path.stem
-    candidate = dest_dir / f"{prefix}_{stem}.yaml"
-    suffix = 2
-    while candidate.exists():
-        candidate = dest_dir / f"{prefix}_{stem}_{suffix}.yaml"
-        suffix += 1
+    `reserved` accumulates the targets already handed out in this run. Every target
+    is chosen before *any* file is moved, so an on-disk existence check alone would
+    hand the same name to two different recipes and silently destroy one of them.
+    """
+
+    def free(candidate: Path) -> bool:
+        return not candidate.exists() and candidate not in reserved
+
+    candidate = dest_dir / rec.path.name
+    if not free(candidate):
+        prefix = rec.source_id or slugify_for_filename(rec.source)[:12] or "DUP"
+        stem = slugify_for_filename(rec.display_name) or rec.path.stem
+        candidate = dest_dir / f"{prefix}_{stem}.yaml"
+        suffix = 2
+        while not free(candidate):
+            candidate = dest_dir / f"{prefix}_{stem}_{suffix}.yaml"
+            suffix += 1
+
+    reserved.add(candidate)
     return candidate
 
 
@@ -237,6 +247,7 @@ def main() -> int:
 
     # --- bacterial/ holding archaeal media -------------------------------------
     moves: list[tuple[Recipe, Path]] = []
+    reserved: set[Path] = set()
     for path in sorted((RECIPE_ROOT / "bacterial").glob("*.yaml")):
         rec = read_recipe(path)
         classify(rec, archaeal, bacterial)
@@ -253,7 +264,7 @@ def main() -> int:
         if rec.mixed:
             findings["mixed"].append(entry)
             continue
-        dest = target_path(rec, RECIPE_ROOT / "archaea")
+        dest = target_path(rec, RECIPE_ROOT / "archaea", reserved)
         entry["moves_to"] = f"archaea/{dest.name}"
         entry["renamed"] = dest.name != path.name
         findings["misfiled"].append(entry)
@@ -303,10 +314,20 @@ def main() -> int:
         )
 
     if args.apply:
+        unstamped = []
         for rec, dest in moves:
             git_mv(rec.path, dest)
-            restamp_category(dest, "archaea")
+            if not restamp_category(dest, "archaea"):
+                unstamped.append(dest.name)
         print(f"\nApplied: moved {len(moves)} recipes into archaea/ with category: archaea")
+        if unstamped:
+            # a moved file with no category: line would sit in archaea/ still
+            # claiming to be bacterial to anything that reads the field
+            print(
+                f"WARNING: {len(unstamped)} moved file(s) had no 'category:' line to "
+                f"restamp: {', '.join(unstamped[:5])}",
+                file=sys.stderr,
+            )
     else:
         print("\n(report only — rerun with --apply to move these files)")
 
