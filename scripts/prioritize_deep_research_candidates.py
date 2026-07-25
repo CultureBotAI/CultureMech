@@ -57,8 +57,16 @@ Hard filters (record is dropped before scoring):
 
   - 0 ingredients
   - category == solutions (no organism associations expected)
-  - already-researched: a non-dry-run meta yaml exists in research/media/
-    for this slug (status != 'dry-run', task_id present)
+  - already-researched: the slug appears in the TRACKED manifest
+    data/import_tracking/researched_media.json
+
+Reproducibility (#121): the already-researched filter reads that tracked
+manifest, never the gitignored `research/media/` tree. Scanning the latter made
+the committed reports a function of whoever last ran the script — regenerating
+on another machine reordered the entire top-10, producing a diff that could not
+be told apart from a real data change. The outputs here are now a pure function
+of tracked inputs: the corpus plus the manifest. Refresh the manifest explicitly
+with `just refresh-researched-manifest` and commit that diff separately.
 
 Outputs:
 
@@ -100,8 +108,10 @@ except ImportError:
     _Loader = yaml.SafeLoader  # type: ignore[misc, assignment]
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+import researched_manifest as rmf  # noqa: E402  -- tracked already-researched set
+
 NORMALIZED_DIR = REPO_ROOT / "data" / "normalized_yaml"
-RESEARCH_DIR = REPO_ROOT / "research" / "media"
 REPORTS_DIR = REPO_ROOT / "data" / "import_tracking" / "reports"
 
 # Categories that may contain real microbial culture media
@@ -135,23 +145,20 @@ def load_yaml(path: Path) -> dict[str, Any] | None:
         return None
 
 
-def has_existing_research(slug: str) -> bool:
-    """True iff a successful (non-dry-run) Edison meta yaml exists for this slug.
+def has_existing_research(slug: str, researched: set[str] | None = None) -> bool:
+    """True iff `slug` has a completed run, per the TRACKED manifest.
 
-    Spending API credits twice on the same record is the failure mode we
-    want to prevent, so a dry-run-only meta does NOT count as "researched".
+    Reads `data/import_tracking/researched_media.json`, never `research/media/`.
+    That directory is gitignored, so scanning it made the generated reports a
+    function of whoever last ran the script — regenerating elsewhere reordered
+    the whole top-10 (#121). Refresh the manifest explicitly with
+    `just refresh-researched-manifest` and commit the diff.
+
+    Pass `researched` to avoid re-reading the manifest per record.
     """
-    if not RESEARCH_DIR.is_dir():
-        return False
-    for meta_path in RESEARCH_DIR.glob(f"{slug}-edison-*-meta.yaml"):
-        meta = load_yaml(meta_path)
-        if not meta:
-            continue
-        status = str(meta.get("status") or "").lower()
-        task_id = str(meta.get("task_id") or "")
-        if status and status != "dry-run" and task_id:
-            return True
-    return False
+    if researched is None:
+        researched = rmf.researched_slugs()
+    return slug in researched
 
 
 def score_ingredients(doc: dict[str, Any]) -> tuple[int, dict[str, Any]]:
@@ -392,8 +399,15 @@ def expected_yield(breakdown: dict[str, Any]) -> str:
     return "; ".join(bits) or "low yield"
 
 
-def collect_records() -> list[dict[str, Any]]:
-    """Walk the corpus and score every candidate record."""
+def collect_records(researched: set[str] | None = None) -> list[dict[str, Any]]:
+    """Walk the corpus and score every candidate record.
+
+    `researched` is the tracked already-researched slug set (empty set = exclude
+    nothing). Resolved once by the caller so the output depends only on inputs
+    passed in — not on whatever happens to be in the local `research/` dir.
+    """
+    if researched is None:
+        researched = rmf.researched_slugs()
     out: list[dict[str, Any]] = []
     for cat in CANDIDATE_CATEGORIES:
         cat_dir = NORMALIZED_DIR / cat
@@ -404,7 +418,7 @@ def collect_records() -> list[dict[str, Any]]:
             if not doc:
                 continue
             slug = yaml_path.stem
-            if has_existing_research(slug):
+            if slug in researched:
                 continue
             scored = score_record(doc, yaml_path)
             if not scored:
@@ -532,10 +546,25 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--top", type=int, default=100,
                     help="How many entries to include in the markdown report and *_top100.json. Default 100.")
     ap.add_argument("--reports-dir", type=Path, default=REPORTS_DIR)
+    ap.add_argument("--researched-manifest", type=Path, default=rmf.DEFAULT_MANIFEST,
+                    help="Tracked manifest of already-researched slugs to exclude. "
+                         "Refresh it with `just refresh-researched-manifest`.")
+    ap.add_argument("--no-exclude-researched", action="store_true",
+                    help="Score every record, including already-researched ones.")
     args = ap.parse_args(argv)
 
+    researched: set[str] = set()
+    if not args.no_exclude_researched:
+        researched = rmf.researched_slugs(args.researched_manifest)
+        if not researched:
+            print(f"Note: no entries in {args.researched_manifest}; excluding nothing. "
+                  f"Run `just refresh-researched-manifest` if local runs exist.",
+                  flush=True)
+
     print(f"Scanning {NORMALIZED_DIR.relative_to(REPO_ROOT)}/ ...", flush=True)
-    entries = collect_records()
+    print(f"Excluding {len(researched)} already-researched record(s) "
+          f"(source: tracked manifest, not research/).", flush=True)
+    entries = collect_records(researched)
     print(f"Scored {len(entries)} candidate records.")
 
     args.reports_dir.mkdir(parents=True, exist_ok=True)
