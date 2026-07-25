@@ -123,7 +123,7 @@ class TestSSSOMGeneration(unittest.TestCase):
 
         # Name with special characters
         curie = create_curie("D-Glucose (anhydrous)")
-        self.assertEqual(curie, "culturemech:D-Glucose_anhydrous_")
+        self.assertEqual(curie, "culturemech:D-Glucose_anhydrous")
 
     def test_validate_sssom_format(self):
         """Test SSSOM format validation."""

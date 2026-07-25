@@ -9,6 +9,8 @@ from pathlib import Path
 import json
 import tempfile
 
+import requests
+
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
@@ -103,10 +105,16 @@ class TestOLSClient(unittest.TestCase):
     @patch('culturemech.ontology.ols_client.requests.get')
     def test_verify_invalid_chebi_id(self, mock_get):
         """Test verification of invalid CHEBI ID."""
-        # Mock 404 response
+        # Mock 404 response. The side effect must be a real
+        # requests.exceptions.HTTPError carrying the response: _make_request
+        # catches HTTPError specifically and inspects e.response.status_code.
+        # A bare Exception() sails straight past that handler, so this test
+        # used to fail against correct production code.
         mock_response = Mock()
         mock_response.status_code = 404
-        mock_response.raise_for_status.side_effect = Exception("404 Not Found")
+        mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError(
+            "404 Not Found", response=mock_response
+        )
         mock_get.return_value = mock_response
 
         # Test verification

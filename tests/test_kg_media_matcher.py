@@ -14,8 +14,17 @@ class TestKGMediaMatcher:
         # Adjust this path based on your local setup
         kg_dir = Path(__file__).parent.parent.parent.parent / "kg-microbe"
 
-        if not kg_dir.exists():
-            pytest.skip(f"KG-Microbe not found at {kg_dir}")
+        # KGMediaMatcher needs the TRANSFORMED mediadive tables, not merely the
+        # repo checkout. Guarding on the directory alone let these tests error
+        # with FileNotFoundError on a machine that has the repo but has not run
+        # the transform — which is every CI runner.
+        mediadive = kg_dir / "data" / "transformed" / "mediadive"
+        missing = [f for f in ("edges.tsv", "nodes.tsv") if not (mediadive / f).exists()]
+        if missing:
+            pytest.skip(
+                f"KG-Microbe mediadive data not available at {mediadive} "
+                f"(missing: {', '.join(missing)}). Clone kg-microbe and run its transform."
+            )
 
         return kg_dir
 
@@ -167,8 +176,17 @@ class TestMatchRecipeToKGMicrobe:
         """Path to kg-microbe repository."""
         kg_dir = Path(__file__).parent.parent.parent.parent / "kg-microbe"
 
-        if not kg_dir.exists():
-            pytest.skip(f"KG-Microbe not found at {kg_dir}")
+        # KGMediaMatcher needs the TRANSFORMED mediadive tables, not merely the
+        # repo checkout. Guarding on the directory alone let these tests error
+        # with FileNotFoundError on a machine that has the repo but has not run
+        # the transform — which is every CI runner.
+        mediadive = kg_dir / "data" / "transformed" / "mediadive"
+        missing = [f for f in ("edges.tsv", "nodes.tsv") if not (mediadive / f).exists()]
+        if missing:
+            pytest.skip(
+                f"KG-Microbe mediadive data not available at {mediadive} "
+                f"(missing: {', '.join(missing)}). Clone kg-microbe and run its transform."
+            )
 
         return kg_dir
 
