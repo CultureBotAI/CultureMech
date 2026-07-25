@@ -41,26 +41,20 @@ DEFAULT_ROOTS = [_REPO_ROOT / "data" / "normalized_yaml" / sub
                  for sub in ("algae", "bacterial", "fungal", "archaea", "specialized")]
 
 
-_SOLUTION_TERM_PREFIXES = ("mediadive.solution:", "MediaIngredientMech:")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from record_kinds import is_solution_record  # noqa: E402  -- shared medium/solution rule
 
 
 def infer_target_class(instance: dict) -> str:
     """Pick the right root class for this record.
 
     A standalone stock-solution record (e.g. mediadive_*_Main_sol_*.yaml)
-    is identified by its `term.id` prefix — `mediadive.solution:*` or
-    `MediaIngredientMech:*`. Both correspond to ~4,784 records that
-    look like SolutionDescriptors with their own id and curation
-    history, not full MediaRecipes. Everything else is MediaRecipe.
+    is identified by its `term.id` prefix — see `record_kinds.is_solution_record`,
+    which is shared with the deep-research prioritizer so the two cannot drift
+    (#124). ~4,784 records look like SolutionDescriptors with their own id and
+    curation history, not full MediaRecipes. Everything else is MediaRecipe.
     """
-    if not isinstance(instance, dict):
-        return "MediaRecipe"
-    term = instance.get("term")
-    if isinstance(term, dict):
-        tid = term.get("id")
-        if isinstance(tid, str) and tid.startswith(_SOLUTION_TERM_PREFIXES):
-            return "SolutionRecipe"
-    return "MediaRecipe"
+    return "SolutionRecipe" if is_solution_record(instance) else "MediaRecipe"
 
 # Per-worker singleton — built lazily after fork so the schema parses once per
 # worker process, not once per file.
