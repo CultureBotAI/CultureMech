@@ -122,3 +122,152 @@ def test_resolve_job_known_aliases(rme):
 def test_resolve_job_unknown_raises(rme):
     with pytest.raises(SystemExit, match="Unknown --job"):
         rme.resolve_job("not-a-real-job")
+
+
+# --- skip-already-done guard (#117) ---------------------------------------
+
+
+def _write_meta(out_dir: Path, slug: str, job_short: str, *, status: str, task_id: str) -> Path:
+    """Write the meta yaml that run_one() would leave behind."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    path = out_dir / f"{slug}-edison-{job_short}-meta.yaml"
+    body = f"slug: {slug}\nstatus: {status}\n"
+    if task_id:
+        body += f"task_id: {task_id}\n"
+    path.write_text(body)
+    return path
+
+
+def test_has_existing_research_true_for_completed_run(rme, tmp_path):
+    _write_meta(tmp_path, "lb_broth", "literature", status="success", task_id="abc123")
+    assert rme.has_existing_research(tmp_path, "lb_broth", "literature") is True
+
+
+def test_has_existing_research_false_for_dry_run_stub(rme, tmp_path):
+    """A dry run costs nothing and produces no answer — it must not block a real run."""
+    _write_meta(tmp_path, "lb_broth", "literature", status="dry-run", task_id="")
+    assert rme.has_existing_research(tmp_path, "lb_broth", "literature") is False
+
+
+def test_has_existing_research_false_without_task_id(rme, tmp_path):
+    """Status set but no task_id means the submission never landed."""
+    _write_meta(tmp_path, "lb_broth", "literature", status="success", task_id="")
+    assert rme.has_existing_research(tmp_path, "lb_broth", "literature") is False
+
+
+def test_has_existing_research_is_scoped_to_the_same_job(rme, tmp_path):
+    """`--job literature-high` after `literature` is a different, deeper question."""
+    _write_meta(tmp_path, "lb_broth", "literature", status="success", task_id="abc123")
+    assert rme.has_existing_research(tmp_path, "lb_broth", "literature") is True
+    assert rme.has_existing_research(tmp_path, "lb_broth", "literature-high") is False
+
+
+def test_has_existing_research_false_when_out_dir_missing(rme, tmp_path):
+    assert rme.has_existing_research(tmp_path / "nope", "lb_broth", "literature") is False
+
+
+def test_has_existing_research_survives_corrupt_meta(rme, tmp_path):
+    """A truncated/corrupt meta must not crash a batch — treat it as not-researched."""
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    (tmp_path / "lb_broth-edison-literature-meta.yaml").write_text("status: [unclosed\n")
+    assert rme.has_existing_research(tmp_path, "lb_broth", "literature") is False
+
+
+def test_partition_already_researched_preserves_order(rme, tmp_path):
+    data = tmp_path / "data"
+    paths = [_make_recipe(data, f"medium_{i}") for i in range(4)]
+    out_dir = tmp_path / "research"
+    _write_meta(out_dir, "medium_1", "literature", status="success", task_id="t1")
+    _write_meta(out_dir, "medium_3", "literature", status="success", task_id="t3")
+
+    to_submit, already = rme.partition_already_researched(paths, out_dir, "literature")
+    assert [p.stem for p in to_submit] == ["medium_0", "medium_2"]
+    assert [p.stem for p in already] == ["medium_1", "medium_3"]
+
+
+def test_partition_with_no_prior_runs_submits_everything(rme, tmp_path):
+    data = tmp_path / "data"
+    paths = [_make_recipe(data, f"medium_{i}") for i in range(3)]
+    to_submit, already = rme.partition_already_researched(paths, tmp_path / "research", "literature")
+    assert len(to_submit) == 3
+    assert already == []
+
+
+def _batch_of(tmp_path: Path, rel_paths: list[str]) -> Path:
+    batch = tmp_path / "batch.json"
+    batch.write_text(json.dumps(
+        [{"recipe_name": Path(p).stem, "file_path": p} for p in rel_paths]
+    ))
+    return batch
+
+
+# Four real corpus records — main() resolves batch entries against the live
+# data/normalized_yaml/ tree, so these cannot be tmp_path fixtures.
+_REAL = [
+    "bacterial/tyl_medium.yaml",
+    "bacterial/mediadive_4367_SL10_elements.yaml",
+    "bacterial/mediadive_1448_Main_sol_697.yaml",
+    "bacterial/mediadive_3695_Main_sol_J68.yaml",
+]
+
+
+def _submitted_slugs(capsys) -> list[str]:
+    """Slugs the dry run reported it would submit."""
+    out = capsys.readouterr().out
+    return [line.split("] ")[1].split(" -> ")[0].split("/")[-1].removesuffix(".yaml")
+            for line in out.splitlines() if line.startswith("[DRY RUN]")]
+
+
+def test_limit_window_advances_instead_of_resubmitting(rme, tmp_path, capsys):
+    """The #117 property: repeating `--limit 2` must walk forward.
+
+    Before the guard, `--limit 2` always took batch entries 0-1, so a second run
+    re-submitted (re-billed) the same two records and never reached entries 2-3.
+    """
+    out_dir = tmp_path / "research"
+    batch = _batch_of(tmp_path, _REAL)
+    argv = ["--batch", str(batch), "--out-dir", str(out_dir), "--limit", "2", "--dry-run"]
+
+    assert rme.main(argv) == 0
+    first = _submitted_slugs(capsys)
+    assert len(first) == 2
+
+    # Dry runs don't count as researched, so mark them completed as a real run would.
+    for slug in first:
+        _write_meta(out_dir, slug, "literature", status="success", task_id=f"t-{slug}")
+
+    assert rme.main(argv) == 0
+    second = _submitted_slugs(capsys)
+    assert len(second) == 2
+    assert set(first).isdisjoint(second), f"re-submitted {set(first) & set(second)}"
+
+
+def test_force_resubmits_already_researched(rme, tmp_path, capsys):
+    out_dir = tmp_path / "research"
+    batch = _batch_of(tmp_path, _REAL[:2])
+    base = ["--batch", str(batch), "--out-dir", str(out_dir), "--dry-run"]
+
+    assert rme.main(base) == 0
+    done = _submitted_slugs(capsys)
+    for slug in done:
+        _write_meta(out_dir, slug, "literature", status="success", task_id=f"t-{slug}")
+
+    # Default: everything is skipped, exit 0, nothing submitted.
+    assert rme.main(base) == 0
+    assert _submitted_slugs(capsys) == []
+
+    # --force: submitted again.
+    assert rme.main(base + ["--force"]) == 0
+    assert set(_submitted_slugs(capsys)) == set(done)
+
+
+def test_single_target_is_skipped_when_already_researched(rme, tmp_path, capsys):
+    out_dir = tmp_path / "research"
+    argv = ["--target", "tyl_medium", "--out-dir", str(out_dir), "--dry-run"]
+
+    assert rme.main(argv) == 0
+    assert _submitted_slugs(capsys) == ["tyl_medium"]
+
+    _write_meta(out_dir, "tyl_medium", "literature", status="success", task_id="t1")
+    assert rme.main(argv) == 0
+    assert _submitted_slugs(capsys) == []
