@@ -957,6 +957,16 @@ validation-stats:
         --report-only \
         --input-dir {{normalized_yaml_dir}}
 
+# Cross-check every recipe's name against NCBITaxon and report media filed under
+# the wrong domain directory (e.g. an archaeon under bacterial/). Report-only;
+# pass args="--apply" to move the unambiguous cases. Needs the NCBITaxon sqlite:
+#   runoak -i sqlite:obo:ncbitaxon info NCBITaxon:2157
+[group('Validation')]
+audit-domain-categories *args="":
+    #!/usr/bin/env bash
+    uv run --extra dev python scripts/audit_domain_categories.py \
+        --json data/import_tracking/reports/domain_category_audit.json {{args}}
+
 # ================================================================
 # ENRICHMENT (Track 2: KOMODO-DSMZ Resolution)
 # ================================================================
