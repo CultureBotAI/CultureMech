@@ -111,6 +111,15 @@ enrich-edison-response *args="":
 prioritize-deep-research-candidates *args="":
     uv run --extra dev python scripts/prioritize_deep_research_candidates.py {{args}}
 
+# Triage recipes that share a filename across category directories (#116).
+# Classifies each collision IDENTICAL / EQUIVALENT / DIFFERENT so the manual
+# curation pass is tractable. Read-only — moves, renames and deletes are
+# deliberately NOT automated here. Writes:
+#   data/import_tracking/reports/filename_collisions.tsv
+[group('QC')]
+audit-filename-collisions *args="":
+    uv run --extra dev python scripts/audit_filename_collisions.py {{args}}
+
 # Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
 # into the tracked researched-media manifest. This is the only step that reads
 # untracked research state; review and commit the resulting diff. Entries are
