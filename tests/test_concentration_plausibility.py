@@ -31,6 +31,17 @@ def acp():
     return _load("audit_concentration_plausibility")
 
 
+@pytest.fixture(scope="module")
+def corpus_findings(acp):
+    """One full-corpus audit shared by the corpus-level tests.
+
+    `audit()` parses ~11,000 YAML records; at ~90s a call, running it per test
+    pushed the CI suite past its 20-minute timeout. Module scope keeps the
+    coverage and pays for the walk once.
+    """
+    return acp.audit()
+
+
 def _ing(name, value, unit="G_PER_L", ident=None):
     return {"preferred_term": name, "term": ({"id": ident} if ident else None),
             "concentration": {"value": value, "unit": unit}}
@@ -150,10 +161,9 @@ def test_single_flagged_row_is_not_a_cocktail(acp, tmp_path):
 # --- corpus ---------------------------------------------------------------
 
 
-def test_the_three_records_named_in_issue_118_are_flagged(acp):
+def test_the_three_records_named_in_issue_118_are_flagged(corpus_findings):
     """Regression: the cases that motivated the issue must stay detected."""
-    rows = acp.audit()
-    flagged = {r["file_path"] for r in rows}
+    flagged = {r["file_path"] for r in corpus_findings}
     for expected in (
         "archaea/sulfolobus_medium_for_dsm_9790.yaml",
         "bacterial/TOGO_M1791_Pelobacter_acetylenicus_Medium.yaml",
@@ -162,7 +172,7 @@ def test_the_three_records_named_in_issue_118_are_flagged(acp):
         assert expected in flagged, f"{expected} no longer flagged"
 
 
-def test_stock_solution_records_are_excluded(acp):
+def test_stock_solution_records_are_excluded(corpus_findings):
     """High magnitudes are correct in a stock-solution record by definition.
 
     Without this exclusion the audit would flag thousands of the ~4,784 MediaDive
@@ -171,8 +181,8 @@ def test_stock_solution_records_are_excluded(acp):
     from record_kinds import is_solution_record
     import yaml as _yaml
 
-    rows = acp.audit()
     normalized = REPO_ROOT / "data" / "normalized_yaml"
-    for r in rows[:400]:
-        doc = _yaml.safe_load((normalized / r["file_path"]).read_text())
-        assert not is_solution_record(doc), f"solution record flagged: {r['file_path']}"
+    # Distinct records only — the row list repeats a file once per flagged row.
+    for file_path in sorted({r["file_path"] for r in corpus_findings})[:400]:
+        doc = _yaml.safe_load((normalized / file_path).read_text())
+        assert not is_solution_record(doc), f"solution record flagged: {file_path}"

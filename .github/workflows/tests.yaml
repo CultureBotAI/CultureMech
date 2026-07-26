@@ -24,7 +24,12 @@ concurrency:
 jobs:
   pytest:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # Higher than the data-integrity workflows' 20. Several tests walk the whole
+    # ~11,000-record corpus (record kinds, ranking duplicates, index freshness,
+    # concentration plausibility), and parsing that much YAML is markedly slower
+    # on a runner than locally — a 3-minute local suite has taken >20 minutes
+    # here. Coverage is not the cost; it accounts for ~7s of that.
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
 
