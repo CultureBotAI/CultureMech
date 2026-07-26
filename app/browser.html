@@ -8,9 +8,9 @@
         /* Token layer — matches the hard-coded light values above; the only
            consumer is the injected theme-toggle button, so light look is unchanged. */
         :root{
-            --card:#ffffff;
-            --ink:#1a1a1a;
-            --line:#e2e8f0;
+            --card:#fcfdfb;
+            --ink:#2e3a2c;
+            --line:#d3ddcd;
             --accent:#4B9E5F;
         }
 
@@ -22,14 +22,14 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #f5f5f5;
-            color: #1a1a1a;
+            background: #eaf0e6;
+            color: #2e3a2c;
             line-height: 1.6;
         }
 
         .header {
             background: linear-gradient(135deg, #FFE0B5 0%, #CDEBC5 100%);
-            color: #1a1a1a;
+            color: #2e3a2c;
             padding: 2rem;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
@@ -55,7 +55,7 @@
             display: inline-block;
             padding: 8px 18px;
             background: rgba(255,255,255,0.5);
-            color: #1a1a1a;
+            color: #2e3a2c;
             text-decoration: none;
             border-radius: 6px;
             font-size: 14px;
@@ -85,7 +85,7 @@
             width: 100%;
             padding: 0.75rem 1rem;
             font-size: 1rem;
-            border: 2px solid #e2e8f0;
+            border: 2px solid #d3ddcd;
             border-radius: 6px;
             transition: border-color 0.3s;
         }
@@ -139,7 +139,7 @@
 
         .facet-count {
             margin-left: auto;
-            color: #999;
+            color: #626e5e;
             font-size: 0.85rem;
         }
 
@@ -156,7 +156,7 @@
             align-items: center;
             margin-bottom: 1.5rem;
             padding-bottom: 1rem;
-            border-bottom: 2px solid #e2e8f0;
+            border-bottom: 2px solid #d3ddcd;
         }
 
         .results-count {
@@ -167,12 +167,12 @@
 
         .result-item {
             padding: 1.5rem;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid #d3ddcd;
             transition: background 0.2s;
         }
 
         .result-item:hover {
-            background: #f8f9fa;
+            background: #f2f6ef;
         }
 
         .result-item:last-child {
@@ -223,18 +223,18 @@
         .result-meta-label {
             font-weight: 600;
             margin-right: 0.5rem;
-            color: #666;
+            color: #5b6858;
         }
 
         .result-description {
-            color: #555;
+            color: #4c5849;
             line-height: 1.5;
         }
 
         .tag {
             display: inline-block;
             padding: 0.2rem 0.5rem;
-            background: #e2e8f0;
+            background: #d3ddcd;
             border-radius: 3px;
             margin-right: 0.25rem;
             margin-bottom: 0.25rem;
@@ -244,7 +244,7 @@
         .no-results {
             text-align: center;
             padding: 3rem;
-            color: #999;
+            color: #626e5e;
         }
 
         .loading {
@@ -255,15 +255,15 @@
 
         .clear-filters {
             padding: 0.5rem 1rem;
-            background: #f8f9fa;
-            border: 1px solid #e2e8f0;
+            background: #f2f6ef;
+            border: 1px solid #d3ddcd;
             border-radius: 4px;
             cursor: pointer;
             font-size: 0.9rem;
         }
 
         .clear-filters:hover {
-            background: #e2e8f0;
+            background: #d3ddcd;
         }
 
         @media (max-width: 768px) {
@@ -667,7 +667,7 @@
         }
 
         function getColor(value) {
-            return window.searchSchema.colors[value] || '#6b7280';
+            return window.searchSchema.colors[value] || '#77836f';
         }
 
         function truncate(text, length) {
