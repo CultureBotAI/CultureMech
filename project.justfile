@@ -120,6 +120,15 @@ prioritize-deep-research-candidates *args="":
 audit-filename-collisions *args="":
     uv run --extra dev python scripts/audit_filename_collisions.py {{args}}
 
+# Flag implausible ingredient concentrations (#118): stock-solution values and
+# unit slips stored as final per-litre medium concentrations. Read-only. Writes:
+#   data/import_tracking/reports/concentration_plausibility.tsv            (per row)
+#   data/import_tracking/reports/concentration_plausibility_by_record.tsv  (per record,
+#     with a `flattened_cocktail` flag marking the actionable subset)
+[group('QC')]
+audit-concentration-plausibility *args="":
+    uv run --extra dev python scripts/audit_concentration_plausibility.py {{args}}
+
 # Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
 # into the tracked researched-media manifest. This is the only step that reads
 # untracked research state; review and commit the resulting diff. Entries are
