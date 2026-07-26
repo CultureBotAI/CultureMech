@@ -6,7 +6,7 @@ deferrals here instead of letting them live only in your head or a closed PR.
 Keep the cross-Mech items in sync with the sibling repos' `NEXT_TASKS.md`
 (MIM / CommunityMech / TraitMech).
 
-Last reconciled: 2026-07-24.
+Last reconciled: 2026-07-25.
 
 Shipped 2026-07-22: **#112** drift check extended to `mech_shared.yaml` + last two
 self-generated pins retired; **#113** deep-research priority report refresh +
@@ -18,14 +18,35 @@ pipeline (reviewed together — #107 carried a blocking schema bug, see below);
 **#123** the Edison batch skip-already-done guard (closes #117); **#126** made the
 deep-research priority reports reproducible from tracked data (closes #121).
 
-Open issues: **#124** (4,774 solutions stamped `category: bacterial`), **#125**
-(recipe indexes ~4 months stale), **#116**, **#118**, **#119**, **#89**.
-No open PRs beyond this one.
+Shipped 2026-07-25: **#128** filtered 4,772 stock-solution records out of the
+deep-research ranking (closes #124); **#130** added the pytest CI gate and
+repaired 27 long-broken tests (closes #129); **#131** collapsed exact duplicate
+records in the ranking and made the rest identifiable (closes #127).
 
-**Do this first:** regenerate the priority reports. They are stale for the 73
-records #120 moved, and #126 deliberately did not refresh them to avoid colliding
-with #120 in flight. Now that both have landed the diff is finally reviewable —
-but read the #124 note below before trusting the ranking.
+Open issues: **#125** (recipe indexes ~4 months stale), **#118**, **#116**,
+**#89**, **#119**. No open PRs.
+
+### The deep-research ranking is now trustworthy — read this before using it
+
+Four defects compounded on the priority reports, all now fixed. Anyone returning
+to that lane should know what changed, because the old top-10 triage list predates
+all of it:
+
+- **#121** — the prioritizer read gitignored `research/`, so the committed reports
+  were one machine's state. Regenerating elsewhere reordered the whole top-3.
+- **#124** — the documented `category == solutions` hard filter could never fire
+  (`CategoryEnum` has no `solutions` member), so 4,772 stock solutions — 31% of
+  the report — were ranked as candidate media.
+- **#127** — `recipe_name` is not unique. 1,613 name groups hold genuinely
+  *different* media (`thermus_medium` is 12 distinct recipes), so the table now
+  carries the CultureMech id and a ⚠N ambiguity marker; only exact repeats
+  (816) were collapsed.
+- **#129** — none of this was verified by anything: no workflow ran pytest, and
+  27 tests had been failing on `main` unnoticed.
+
+Ranking went 15,496 → 9,895 entries across those fixes. **The reports are
+regenerated and current as of #131.** Re-derive any triage list from the current
+top-100; do not reuse the pre-#131 one.
 
 ## 1. Phase-2 id↔label enforcement rollout (report-only → blocking) — DONE
 
@@ -179,19 +200,23 @@ State (2026-07-22):
   medium; *M. sedula* DSM 5348T → sulfolobus record. NCBITaxon IDs intentionally
   omitted (unverified in source); names + citations only, curator verifies.
 
-**⚠ The top-10 triage list this section is built on is not trustworthy as-is.**
-It came from a report generated before #126, i.e. from one machine's gitignored
-`research/` state (#121), and before #120 recategorized 73 records. Two further
-issues (#124, #125) attack the same ranking from other directions. Regenerate the
-reports on post-#120/#126 `main` and re-derive the triage list **before** spending
-any more Edison credits on it — otherwise the next 6 media are chosen by an
-artifact.
+**⚠ The top-10 triage list this section is built on came from the pre-#131
+ranking and is superseded.** It was produced before #121/#124/#127 were fixed —
+i.e. from one machine's gitignored `research/` state, with 31% stock solutions in
+the list, and with `recipe_name` treated as an identity key. The reports have
+since been regenerated (current as of #131). **Re-derive the triage list from the
+current `deep_research_priority_top100.json` before spending any Edison credits.**
+
+The phase-1/phase-2 work already done (below) is still valid — those media were
+genuinely researched and the results stand. It is only the *choice of what to
+research next* that was driven by a bad ranking.
 
 Next actions (pick up cold):
-- **Regenerate the priority reports first** (see #124/#125 caveats), then re-derive
-  the top-10.
-- **Phase-2 the remaining 6 triage media** — *pending the regeneration above; this
-  list is from the old ranking*: (#2 `wilkins_chalgren_..._dsm_15567`,
+- **Re-derive the top-10** from the current top-100 JSON. Note the ⚠N markers:
+  a flagged row shares its name with other distinct media, so pick by
+  CultureMech id, not by name.
+- **Phase-2 the remaining 6 triage media** — *superseded; this list came from the
+  old ranking and should be re-derived*: (#2 `wilkins_chalgren_..._dsm_15567`,
   #4 `leuconostoc_oenos` M1620, #5 `thermoproteus` M1633, #6 `clostridium_thermocellum`
   M1766, #7 `pelobacter_carbinolicus` M1788, #8 `ectothiorhodospira` M1789): parse
   phase-1 organisms → write `<slug>-organisms.json` → `just
@@ -274,19 +299,59 @@ resolver has a multi-match ambiguity — it hit
 `TOGO_M520_*` sibling of the same recipe. Two pieces of work: merge/choose per
 colliding filename, and disambiguate the resolver. Issue #116.
 
-## Solutions stamped `category: bacterial` (#124) — PENDING, actionable
+## Solutions stamped `category: bacterial` (#124) — DONE (#128, 2026-07-25)
 
-**4,774 solution records carry `category: bacterial`**, which defeats the
-prioritizer's "solutions excluded entirely" hard filter — solutions have no
-organism associations to find, so every one of them that surfaces in the ranking
-is wasted Edison spend. Directly degrades the top-100 that drives the deep-research
-lane. Fix before regenerating the reports for real. Issue #124.
+The prioritizer's documented `category == solutions` hard filter was unreachable:
+`CategoryEnum` has no `solutions` member, so no record can carry the value. The
+~4,784 MediaDive stock-solution records live in `bacterial/` stamped
+`category: bacterial` and 4,772 were ranked as candidate media. Now detected
+structurally by `scripts/record_kinds.is_solution_record` (keyed on the `term.id`
+prefix), which `validate_strict.py` also imports so the two cannot drift.
+
+**Not done — the real data-model fix:** solutions arguably belong in
+`data/normalized_yaml/solutions/` (which holds only an index JSON today).
+Restamping is not an option without a schema change, and the domain axis does not
+apply to a stock solution anyway — `SL10_elements` is neither bacterial nor
+archaeal. Moving 4,784 files is its own PR.
+
+## Ranking duplicates and record identity (#127) — DONE (#131, 2026-07-25)
+
+`recipe_name` is **not** an identity key. Of 2,240 name-collision groups, 1,613
+hold genuinely different media — `thermus_medium` is 12 distinct TOGO recipes with
+different ingredient counts. Only exact repeats (816 entries) were collapsed; the
+markdown now carries a CultureMech ID column and a ⚠N marker on ambiguous names.
+
+**Why not the merge fingerprint:** it hashes the ingredient SET only —
+"regardless of order or concentration", pinned by
+`test_fingerprint_concentration_independence`. Real case: Pfennig's Medium I
+*with salt* exists at 10 and 30 G_PER_L NaCl under one name with identical
+fingerprints. For the same reason **`merge_yaml` is not the right ranking input**:
+`docs/DATA_LAYERS.md` defines it as "the same base formulation … not identical
+recipes … may differ in concentrations, pH", which erases exactly what deep
+research resolves.
+
+## No CI test gate (#129) — DONE (#130, 2026-07-25)
+
+No workflow ran pytest. All six were data-integrity or rendering gates, so a PR's
+green checks said nothing about the tests — which is how 27 tests came to be
+failing on `main` unnoticed, and how #107 shipped a latent schema bug through a
+green PR. `.github/workflows/tests.yaml` now runs `just test` with **no `paths:`
+filter** (tests here span `scripts/`, `src/`, *and* the corpus, and path-filtered
+gates are precisely how a scripts-only PR could land unchecked).
+
+None of the 27 were production bugs — all were tests encoding contracts the code
+had moved away from, plus one fixture guarding on the wrong thing. Details in the
+#130 commit message.
 
 ## Recipe indexes ~4 months stale (#125) — PENDING, actionable
 
-The committed recipe indexes miss ~5,000 recipes. Anything reading them
-(dashboards, resolvers, downstream exports) is working from a partial corpus.
-Issue #125.
+`data/normalized_yaml/*_index.json` were generated 2026-03-16 and miss ~5,000
+recipes (bacterial 10,136 indexed vs 14,275 actual; archaea 63 vs 773). Each entry
+also records a `filename`, so the bulk moves in #115 and #120 left stale paths even
+where the id is present. Any consumer enumerating via the index rather than
+globbing silently sees ~a third less corpus. `just generate-all-indexes`
+regenerates them. Worth adding a CI check that fails when an index disagrees with
+its directory, so this cannot drift silently again. Issue #125.
 
 ## Remaining web-design-review item (#89) — PENDING, cosmetic
 
