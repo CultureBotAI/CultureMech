@@ -1,7 +1,7 @@
 id: CultureMech:000248
 name: halophilic_methanotrophic_bacterium_medium
 original_name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
-category: archaea
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range:

@@ -9205,6 +9205,57 @@
     "name_collision_count": 2
   },
   {
+    "recipe_name": "pseudomonas_halophila_medium",
+    "file_path": "bacterial/JCM_J433_PSEUDOMONAS_HALOPHILA_MEDIUM.yaml",
+    "id": "CultureMech:000297",
+    "name": "pseudomonas_halophila_medium",
+    "original_name": "PSEUDOMONAS HALOPHILA MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J433 (mediadive.medium:J433)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 23,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 23,
+        "with_concentration": 23,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/DSMZ_470_PSEUDOMONAS_HALOPHILA_MEDIUM.yaml"
+    ],
+    "identical_record_count": 1,
+    "name_collision_count": 3
+  },
+  {
     "recipe_name": "acetivibrio_medium",
     "file_path": "bacterial/JCM_J1013_ACETIVIBRIO_MEDIUM.yaml",
     "id": "CultureMech:002198",
@@ -9552,6 +9603,53 @@
         "score": 35,
         "count": 13,
         "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "name_collision_count": 3
+  },
+  {
+    "recipe_name": "hydrogenobacter_halophilus_medium",
+    "file_path": "bacterial/JCM_J128_HYDROGENOBACTER_HALOPHILUS_MEDIUM.yaml",
+    "id": "CultureMech:000292",
+    "name": "hydrogenobacter_halophilus_medium",
+    "original_name": "HYDROGENOBACTER HALOPHILUS MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J128 (mediadive.medium:J128)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
         "bonus": 5
       },
       "source": {
@@ -11191,6 +11289,53 @@
         "markers": []
       }
     }
+  },
+  {
+    "recipe_name": "hydrogenobacter_thermophilus_medium",
+    "file_path": "bacterial/JCM_J154_HYDROGENOBACTER_THERMOPHILUS_MEDIUM.yaml",
+    "id": "CultureMech:000294",
+    "name": "hydrogenobacter_thermophilus_medium",
+    "original_name": "HYDROGENOBACTER THERMOPHILUS MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J154 (mediadive.medium:J154)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 14,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 14,
+        "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "hydrogenobacter_acidophilus_medium",
@@ -17025,6 +17170,52 @@
       }
     },
     "name_collision_count": 2
+  },
+  {
+    "recipe_name": "exilispira_thermophila_medium",
+    "file_path": "bacterial/exilispira_thermophila_medium.yaml",
+    "id": "CultureMech:000302",
+    "name": "exilispira_thermophila_medium",
+    "original_name": "EXILISPIRA THERMOPHILA MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J622 (mediadive.medium:J622)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 22,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 22,
+        "with_concentration": 22,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
   },
   {
     "recipe_name": "fastidious_anaerobe_broth_medium",
@@ -31862,6 +32053,153 @@
     "name_collision_count": 4
   },
   {
+    "recipe_name": "thioalkalivibrio_halophilus_medium",
+    "file_path": "bacterial/DSMZ_1014_THIOALKALIVIBRIO_HALOPHILUS_MEDIUM.yaml",
+    "id": "CultureMech:000243",
+    "name": "thioalkalivibrio_halophilus_medium",
+    "original_name": "THIOALKALIVIBRIO HALOPHILUS MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1014 (mediadive.medium:1014)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 16,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 16,
+        "with_concentration": 16,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/thioalkalivibrio_halophilus_medium.yaml"
+    ],
+    "identical_record_count": 1
+  },
+  {
+    "recipe_name": "thiohalophilus_medium",
+    "file_path": "bacterial/DSMZ_1058_THIOHALOPHILUS_MEDIUM.yaml",
+    "id": "CultureMech:000244",
+    "name": "thiohalophilus_medium",
+    "original_name": "THIOHALOPHILUS MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1058 (mediadive.medium:1058)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 23,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 23,
+        "with_concentration": 23,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "name_collision_count": 2
+  },
+  {
+    "recipe_name": "halophilic_methanotrophic_bacterium_medium",
+    "file_path": "bacterial/DSMZ_1156_HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM.yaml",
+    "id": "CultureMech:000248",
+    "name": "halophilic_methanotrophic_bacterium_medium",
+    "original_name": "HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1156 (mediadive.medium:1156)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 13,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 13,
+        "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/halophilic_methanotrophic_bacterium_medium.yaml"
+    ],
+    "identical_record_count": 1
+  },
+  {
     "recipe_name": "methylonatrum_medium",
     "file_path": "bacterial/DSMZ_1170_METHYLONATRUM_MEDIUM.yaml",
     "id": "CultureMech:000612",
@@ -31911,6 +32249,56 @@
     ],
     "identical_record_count": 1,
     "name_collision_count": 2
+  },
+  {
+    "recipe_name": "thioalkalibacter_halophilus_medium",
+    "file_path": "bacterial/DSMZ_1225_THIOALKALIBACTER_HALOPHILUS_MEDIUM.yaml",
+    "id": "CultureMech:000250",
+    "name": "thioalkalibacter_halophilus_medium",
+    "original_name": "THIOALKALIBACTER HALOPHILUS MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1225 (mediadive.medium:1225)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 16,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 16,
+        "with_concentration": 16,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/thioalkalibacter_halophilus_medium.yaml"
+    ],
+    "identical_record_count": 1
   },
   {
     "recipe_name": "cyanobacteria_medium_bg11",
@@ -32101,6 +32489,56 @@
     "name_collision_count": 2
   },
   {
+    "recipe_name": "pediococcus_halophilus_medium",
+    "file_path": "bacterial/DSMZ_227_PEDIOCOCCUS_HALOPHILUS_MEDIUM.yaml",
+    "id": "CultureMech:000258",
+    "name": "pediococcus_halophilus_medium",
+    "original_name": "PEDIOCOCCUS HALOPHILUS MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 227 (mediadive.medium:227)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 11,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 11,
+        "with_concentration": 11,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/pediococcus_halophilus_medium.yaml"
+    ],
+    "identical_record_count": 1
+  },
+  {
     "recipe_name": "pfennigs_medium_i_with_salt",
     "file_path": "bacterial/DSMZ_46_PFENNIG_S_MEDIUM_I_WITH_SALT.yaml",
     "id": "CultureMech:001599",
@@ -32197,6 +32635,107 @@
     ],
     "identical_record_count": 1,
     "name_collision_count": 2
+  },
+  {
+    "recipe_name": "thermophilic_hydrogen_bacteria_medium",
+    "file_path": "bacterial/DSMZ_533_THERMOPHILIC_HYDROGEN_BACTERIA_MEDIUM.yaml",
+    "id": "CultureMech:000271",
+    "name": "thermophilic_hydrogen_bacteria_medium",
+    "original_name": "THERMOPHILIC HYDROGEN BACTERIA MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 533 (mediadive.medium:533)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 13,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 13,
+        "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/thermophilic_hydrogen_bacteria_medium.yaml"
+    ],
+    "identical_record_count": 1,
+    "name_collision_count": 2
+  },
+  {
+    "recipe_name": "dichotomicrobium_thermohalophilum_medium",
+    "file_path": "bacterial/DSMZ_590_DICHOTOMICROBIUM_THERMOHALOPHILUM_MEDIUM.yaml",
+    "id": "CultureMech:000274",
+    "name": "dichotomicrobium_thermohalophilum_medium",
+    "original_name": "DICHOTOMICROBIUM THERMOHALOPHILUM MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 590 (mediadive.medium:590)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 21,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 21,
+        "with_concentration": 21,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/dichotomicrobium_thermohalophilum_medium.yaml"
+    ],
+    "identical_record_count": 1
   },
   {
     "recipe_name": "planctomyces_medium",
@@ -32346,6 +32885,57 @@
     ],
     "identical_record_count": 1,
     "name_collision_count": 2
+  },
+  {
+    "recipe_name": "hydrogenobacter_halophilus_medium",
+    "file_path": "bacterial/DSMZ_744_HYDROGENOBACTER_HALOPHILUS_MEDIUM.yaml",
+    "id": "CultureMech:000281",
+    "name": "hydrogenobacter_halophilus_medium",
+    "original_name": "HYDROGENOBACTER HALOPHILUS MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 744 (mediadive.medium:744)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 13,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 13,
+        "with_concentration": 13,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/hydrogenobacter_halophilus_medium.yaml"
+    ],
+    "identical_record_count": 1,
+    "name_collision_count": 3
   },
   {
     "recipe_name": "glucose_sulfide_medium",
@@ -79689,6 +80279,52 @@
     }
   },
   {
+    "recipe_name": "desulfocella_halophila_medium",
+    "file_path": "bacterial/desulfocella_halophila_medium.yaml",
+    "id": "CultureMech:000283",
+    "name": "desulfocella_halophila_medium",
+    "original_name": "DESULFOCELLA HALOPHILA MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 815a (mediadive.medium:815a)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 23,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 23,
+        "with_concentration": 23,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
     "recipe_name": "desulfohalotomaculum_medium",
     "file_path": "bacterial/desulfohalotomaculum_medium.yaml",
     "id": "CultureMech:001962",
@@ -82679,6 +83315,52 @@
       "source": {
         "score": 18,
         "kind": "TOGO",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "haloactinomyces_halophilus_medium",
+    "file_path": "bacterial/haloactinomyces_halophilus_medium.yaml",
+    "id": "CultureMech:000257",
+    "name": "haloactinomyces_halophilus_medium",
+    "original_name": "HALOACTINOMYCES HALOPHILUS MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1742 (mediadive.medium:1742)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
         "via": "media_term"
       },
       "organism_gap": {
@@ -86204,6 +86886,52 @@
         "score": 35,
         "count": 14,
         "with_concentration": 14,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "medium_for_bacillus_stearothermophilus",
+    "file_path": "bacterial/medium_for_bacillus_stearothermophilus.yaml",
+    "id": "CultureMech:000264",
+    "name": "medium_for_bacillus_stearothermophilus",
+    "original_name": "MEDIUM FOR BACILLUS STEAROTHERMOPHILUS",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 458 (mediadive.medium:458)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 15,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 15,
+        "with_concentration": 15,
         "bonus": 5
       },
       "source": {
@@ -96978,6 +97706,52 @@
     }
   },
   {
+    "recipe_name": "salinibacter_halophilic_medium",
+    "file_path": "bacterial/salinibacter_halophilic_medium.yaml",
+    "id": "CultureMech:000253",
+    "name": "salinibacter_halophilic_medium",
+    "original_name": "SALINIBACTER HALOPHILIC MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1400 (mediadive.medium:1400)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
     "recipe_name": "salt_solution_25_sea_water_sw",
     "file_path": "bacterial/salt_solution_25_sea_water_sw.yaml",
     "id": "CultureMech:009368",
@@ -99766,6 +100540,52 @@
     }
   },
   {
+    "recipe_name": "thiocapsa_halophila_medium",
+    "file_path": "bacterial/thiocapsa_halophila_medium.yaml",
+    "id": "CultureMech:000272",
+    "name": "thiocapsa_halophila_medium",
+    "original_name": "THIOCAPSA HALOPHILA MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 536 (mediadive.medium:536)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 19,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 19,
+        "with_concentration": 19,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
     "recipe_name": "thiohalobacter_thiocyanaticus_medium",
     "file_path": "bacterial/thiohalobacter_thiocyanaticus_medium.yaml",
     "id": "CultureMech:000490",
@@ -99865,6 +100685,52 @@
     "original_name": "THIOHALORHABDUS DENITRIFICANS MEDIUM",
     "category": "bacterial",
     "media_term": "DSMZ Medium 1058c (mediadive.medium:1058c)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 23,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 23,
+        "with_concentration": 23,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
+    "recipe_name": "thiohalospira_halophila_medium",
+    "file_path": "bacterial/thiohalospira_halophila_medium.yaml",
+    "id": "CultureMech:000245",
+    "name": "thiohalospira_halophila_medium",
+    "original_name": "THIOHALOSPIRA HALOPHILA MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1058a (mediadive.medium:1058a)",
     "score": 82.0,
     "subtotal": 82,
     "category_multiplier": 1.0,
@@ -130603,53 +131469,6 @@
     "name_collision_count": 3
   },
   {
-    "recipe_name": "hydrogenobacter_halophilus_medium",
-    "file_path": "archaea/JCM_J128_HYDROGENOBACTER_HALOPHILUS_MEDIUM.yaml",
-    "id": "CultureMech:000292",
-    "name": "hydrogenobacter_halophilus_medium",
-    "original_name": "HYDROGENOBACTER HALOPHILUS MEDIUM",
-    "category": "archaea",
-    "media_term": "JCM Medium J128 (mediadive.medium:J128)",
-    "score": 79.8,
-    "subtotal": 84,
-    "category_multiplier": 0.95,
-    "ingredient_count": 14,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 14,
-        "with_concentration": 14,
-        "bonus": 5
-      },
-      "source": {
-        "score": 20,
-        "kind": "JCM",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "name_collision_count": 3
-  },
-  {
     "recipe_name": "natronoarchaea_medium_ii",
     "file_path": "archaea/JCM_J1334_NATRONOARCHAEA_MEDIUM_II.yaml",
     "id": "CultureMech:015832",
@@ -131303,57 +132122,6 @@
     "name_collision_count": 5
   },
   {
-    "recipe_name": "pseudomonas_halophila_medium",
-    "file_path": "archaea/JCM_J433_PSEUDOMONAS_HALOPHILA_MEDIUM.yaml",
-    "id": "CultureMech:000297",
-    "name": "pseudomonas_halophila_medium",
-    "original_name": "PSEUDOMONAS HALOPHILA MEDIUM",
-    "category": "archaea",
-    "media_term": "JCM Medium J433 (mediadive.medium:J433)",
-    "score": 79.8,
-    "subtotal": 84,
-    "category_multiplier": 0.95,
-    "ingredient_count": 23,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 23,
-        "with_concentration": 23,
-        "bonus": 5
-      },
-      "source": {
-        "score": 20,
-        "kind": "JCM",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "archaea/pseudomonas_halophila_medium.yaml"
-    ],
-    "identical_record_count": 1,
-    "name_collision_count": 3
-  },
-  {
     "recipe_name": "ignisphaera_medium",
     "file_path": "archaea/JCM_J506_IGNISPHAERA_MEDIUM.yaml",
     "id": "CultureMech:002856",
@@ -131824,52 +132592,6 @@
     "name_collision_count": 2
   },
   {
-    "recipe_name": "exilispira_thermophila_medium",
-    "file_path": "archaea/exilispira_thermophila_medium.yaml",
-    "id": "CultureMech:000302",
-    "name": "exilispira_thermophila_medium",
-    "original_name": "EXILISPIRA THERMOPHILA MEDIUM",
-    "category": "archaea",
-    "media_term": "JCM Medium J622 (mediadive.medium:J622)",
-    "score": 79.8,
-    "subtotal": 84,
-    "category_multiplier": 0.95,
-    "ingredient_count": 22,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 22,
-        "with_concentration": 22,
-        "bonus": 5
-      },
-      "source": {
-        "score": 20,
-        "kind": "JCM",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
-  },
-  {
     "recipe_name": "halalkaliarchaeum_medium",
     "file_path": "archaea/halalkaliarchaeum_medium.yaml",
     "id": "CultureMech:002262",
@@ -132196,53 +132918,6 @@
       }
     },
     "name_collision_count": 3
-  },
-  {
-    "recipe_name": "hydrogenobacter_thermophilus_medium",
-    "file_path": "archaea/hydrogenobacter_thermophilus_medium.yaml",
-    "id": "CultureMech:000294",
-    "name": "hydrogenobacter_thermophilus_medium",
-    "original_name": "HYDROGENOBACTER THERMOPHILUS MEDIUM",
-    "category": "archaea",
-    "media_term": "JCM Medium J154 (mediadive.medium:J154)",
-    "score": 79.8,
-    "subtotal": 84,
-    "category_multiplier": 0.95,
-    "ingredient_count": 14,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 14,
-        "with_concentration": 14,
-        "bonus": 5
-      },
-      "source": {
-        "score": 20,
-        "kind": "JCM",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "name_collision_count": 2
   },
   {
     "recipe_name": "marine_methanogenic_medium",
@@ -134353,6 +135028,53 @@
       }
     },
     "name_collision_count": 3
+  },
+  {
+    "recipe_name": "treponema_thermophilum_medium",
+    "file_path": "bacterial/JCM_J1237_TREPONEMA_THERMOPHILUM_MEDIUM.yaml",
+    "id": "CultureMech:000291",
+    "name": "treponema_thermophilum_medium",
+    "original_name": "TREPONEMA THERMOPHILUM MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J1237 (mediadive.medium:J1237)",
+    "score": 79.0,
+    "subtotal": 79,
+    "category_multiplier": 1.0,
+    "ingredient_count": 32,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 32,
+        "with_concentration": 32,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "name_collision_count": 2
   },
   {
     "recipe_name": "gbs_salts_medium_for_fervidibacter",
@@ -158250,6 +158972,52 @@
     "name_collision_count": 2
   },
   {
+    "recipe_name": "sporolituus_thermophilus_medium",
+    "file_path": "bacterial/sporolituus_thermophilus_medium.yaml",
+    "id": "CultureMech:000303",
+    "name": "sporolituus_thermophilus_medium",
+    "original_name": "SPOROLITUUS THERMOPHILUS MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J718 (mediadive.medium:J718)",
+    "score": 79.0,
+    "subtotal": 79,
+    "category_multiplier": 1.0,
+    "ingredient_count": 31,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 31,
+        "with_concentration": 31,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
     "recipe_name": "sporomusa_medium",
     "file_path": "bacterial/sporomusa_medium.yaml",
     "id": "CultureMech:003076",
@@ -160503,56 +161271,6 @@
     "identical_record_count": 1
   },
   {
-    "recipe_name": "dichotomicrobium_thermohalophilum_medium",
-    "file_path": "archaea/dichotomicrobium_thermohalophilum_medium.yaml",
-    "id": "CultureMech:000274",
-    "name": "dichotomicrobium_thermohalophilum_medium",
-    "original_name": "DICHOTOMICROBIUM THERMOHALOPHILUM MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 590 (mediadive.medium:590)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 21,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 21,
-        "with_concentration": 21,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "bacterial/dichotomicrobium_thermohalophilum_medium.yaml"
-    ],
-    "identical_record_count": 1
-  },
-  {
     "recipe_name": "halophile_medium",
     "file_path": "archaea/halophile_medium.yaml",
     "id": "CultureMech:000276",
@@ -160599,308 +161317,6 @@
     },
     "identical_records": [
       "bacterial/halophile_medium.yaml"
-    ],
-    "identical_record_count": 1
-  },
-  {
-    "recipe_name": "halophilic_methanotrophic_bacterium_medium",
-    "file_path": "archaea/halophilic_methanotrophic_bacterium_medium.yaml",
-    "id": "CultureMech:000248",
-    "name": "halophilic_methanotrophic_bacterium_medium",
-    "original_name": "HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 1156 (mediadive.medium:1156)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 13,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 13,
-        "with_concentration": 13,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "bacterial/halophilic_methanotrophic_bacterium_medium.yaml"
-    ],
-    "identical_record_count": 1
-  },
-  {
-    "recipe_name": "hydrogenobacter_halophilus_medium",
-    "file_path": "archaea/hydrogenobacter_halophilus_medium.yaml",
-    "id": "CultureMech:000281",
-    "name": "hydrogenobacter_halophilus_medium",
-    "original_name": "HYDROGENOBACTER HALOPHILUS MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 744 (mediadive.medium:744)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 13,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 13,
-        "with_concentration": 13,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "bacterial/hydrogenobacter_halophilus_medium.yaml"
-    ],
-    "identical_record_count": 1,
-    "name_collision_count": 3
-  },
-  {
-    "recipe_name": "pediococcus_halophilus_medium",
-    "file_path": "archaea/pediococcus_halophilus_medium.yaml",
-    "id": "CultureMech:000258",
-    "name": "pediococcus_halophilus_medium",
-    "original_name": "PEDIOCOCCUS HALOPHILUS MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 227 (mediadive.medium:227)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 11,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 11,
-        "with_concentration": 11,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "bacterial/pediococcus_halophilus_medium.yaml"
-    ],
-    "identical_record_count": 1
-  },
-  {
-    "recipe_name": "thermophilic_hydrogen_bacteria_medium",
-    "file_path": "archaea/thermophilic_hydrogen_bacteria_medium.yaml",
-    "id": "CultureMech:000271",
-    "name": "thermophilic_hydrogen_bacteria_medium",
-    "original_name": "THERMOPHILIC HYDROGEN BACTERIA MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 533 (mediadive.medium:533)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 13,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 13,
-        "with_concentration": 13,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "bacterial/thermophilic_hydrogen_bacteria_medium.yaml"
-    ],
-    "identical_record_count": 1,
-    "name_collision_count": 2
-  },
-  {
-    "recipe_name": "thioalkalibacter_halophilus_medium",
-    "file_path": "archaea/thioalkalibacter_halophilus_medium.yaml",
-    "id": "CultureMech:000250",
-    "name": "thioalkalibacter_halophilus_medium",
-    "original_name": "THIOALKALIBACTER HALOPHILUS MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 1225 (mediadive.medium:1225)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 16,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 16,
-        "with_concentration": 16,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "bacterial/thioalkalibacter_halophilus_medium.yaml"
-    ],
-    "identical_record_count": 1
-  },
-  {
-    "recipe_name": "thioalkalivibrio_halophilus_medium",
-    "file_path": "archaea/thioalkalivibrio_halophilus_medium.yaml",
-    "id": "CultureMech:000243",
-    "name": "thioalkalivibrio_halophilus_medium",
-    "original_name": "THIOALKALIVIBRIO HALOPHILUS MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 1014 (mediadive.medium:1014)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 16,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 16,
-        "with_concentration": 16,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "bacterial/thioalkalivibrio_halophilus_medium.yaml"
     ],
     "identical_record_count": 1
   },
@@ -167828,52 +168244,6 @@
     }
   },
   {
-    "recipe_name": "desulfocella_halophila_medium",
-    "file_path": "archaea/desulfocella_halophila_medium.yaml",
-    "id": "CultureMech:000283",
-    "name": "desulfocella_halophila_medium",
-    "original_name": "DESULFOCELLA HALOPHILA MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 815a (mediadive.medium:815a)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 23,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 23,
-        "with_concentration": 23,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
-  },
-  {
     "recipe_name": "halarchaeum_medium_rs94",
     "file_path": "archaea/halarchaeum_medium_rs94.yaml",
     "id": "CultureMech:000951",
@@ -167892,52 +168262,6 @@
         "score": 35,
         "count": 23,
         "with_concentration": 23,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
-  },
-  {
-    "recipe_name": "haloactinomyces_halophilus_medium",
-    "file_path": "archaea/haloactinomyces_halophilus_medium.yaml",
-    "id": "CultureMech:000257",
-    "name": "haloactinomyces_halophilus_medium",
-    "original_name": "HALOACTINOMYCES HALOPHILUS MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 1742 (mediadive.medium:1742)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 10,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 10,
-        "with_concentration": 10,
         "bonus": 5
       },
       "source": {
@@ -168335,52 +168659,6 @@
       }
     },
     "name_collision_count": 2
-  },
-  {
-    "recipe_name": "medium_for_bacillus_stearothermophilus",
-    "file_path": "archaea/medium_for_bacillus_stearothermophilus.yaml",
-    "id": "CultureMech:000264",
-    "name": "medium_for_bacillus_stearothermophilus",
-    "original_name": "MEDIUM FOR BACILLUS STEAROTHERMOPHILUS",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 458 (mediadive.medium:458)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 15,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 15,
-        "with_concentration": 15,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
   },
   {
     "recipe_name": "medium_for_iron_using_methanogen",
@@ -169367,52 +169645,6 @@
     "name_collision_count": 2
   },
   {
-    "recipe_name": "salinibacter_halophilic_medium",
-    "file_path": "archaea/salinibacter_halophilic_medium.yaml",
-    "id": "CultureMech:000253",
-    "name": "salinibacter_halophilic_medium",
-    "original_name": "SALINIBACTER HALOPHILIC MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 1400 (mediadive.medium:1400)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 10,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 10,
-        "with_concentration": 10,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
-  },
-  {
     "recipe_name": "sulfolobus_medium",
     "file_path": "archaea/sulfolobus_medium.yaml",
     "id": "CultureMech:002050",
@@ -169691,145 +169923,6 @@
       }
     },
     "name_collision_count": 4
-  },
-  {
-    "recipe_name": "thiocapsa_halophila_medium",
-    "file_path": "archaea/thiocapsa_halophila_medium.yaml",
-    "id": "CultureMech:000272",
-    "name": "thiocapsa_halophila_medium",
-    "original_name": "THIOCAPSA HALOPHILA MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 536 (mediadive.medium:536)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 19,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 19,
-        "with_concentration": 19,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
-  },
-  {
-    "recipe_name": "thiohalophilus_medium",
-    "file_path": "archaea/thiohalophilus_medium.yaml",
-    "id": "CultureMech:000244",
-    "name": "thiohalophilus_medium",
-    "original_name": "THIOHALOPHILUS MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 1058 (mediadive.medium:1058)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 23,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 23,
-        "with_concentration": 23,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "name_collision_count": 2
-  },
-  {
-    "recipe_name": "thiohalospira_halophila_medium",
-    "file_path": "archaea/thiohalospira_halophila_medium.yaml",
-    "id": "CultureMech:000245",
-    "name": "thiohalospira_halophila_medium",
-    "original_name": "THIOHALOSPIRA HALOPHILA MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 1058a (mediadive.medium:1058a)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 23,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 23,
-        "with_concentration": 23,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
   },
   {
     "recipe_name": "zestosphaera_medium",
@@ -193944,6 +194037,52 @@
     }
   },
   {
+    "recipe_name": "petrotoga_halophila_medium",
+    "file_path": "bacterial/petrotoga_halophila_medium.yaml",
+    "id": "CultureMech:000279",
+    "name": "petrotoga_halophila_medium",
+    "original_name": "PETROTOGA HALOPHILA MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 718a (mediadive.medium:718a)",
+    "score": 77.0,
+    "subtotal": 77,
+    "category_multiplier": 1.0,
+    "ingredient_count": 35,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 35,
+        "with_concentration": 35,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
     "recipe_name": "petrotoga_medium",
     "file_path": "bacterial/petrotoga_medium.yaml",
     "id": "CultureMech:001856",
@@ -196020,6 +196159,52 @@
       }
     },
     "name_collision_count": 2
+  },
+  {
+    "recipe_name": "spirochaeta_thermophila_medium",
+    "file_path": "bacterial/spirochaeta_thermophila_medium.yaml",
+    "id": "CultureMech:000268",
+    "name": "spirochaeta_thermophila_medium",
+    "original_name": "SPIROCHAETA THERMOPHILA MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 509 (mediadive.medium:509)",
+    "score": 77.0,
+    "subtotal": 77,
+    "category_multiplier": 1.0,
+    "ingredient_count": 33,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 30,
+        "count": 33,
+        "with_concentration": 33,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
   },
   {
     "recipe_name": "sporobacter_medium",
@@ -219098,52 +219283,6 @@
     "name_collision_count": 3
   },
   {
-    "recipe_name": "sporolituus_thermophilus_medium",
-    "file_path": "archaea/sporolituus_thermophilus_medium.yaml",
-    "id": "CultureMech:000303",
-    "name": "sporolituus_thermophilus_medium",
-    "original_name": "SPOROLITUUS THERMOPHILUS MEDIUM",
-    "category": "archaea",
-    "media_term": "JCM Medium J718 (mediadive.medium:J718)",
-    "score": 75.05,
-    "subtotal": 79,
-    "category_multiplier": 0.95,
-    "ingredient_count": 31,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 30,
-        "count": 31,
-        "with_concentration": 31,
-        "bonus": 5
-      },
-      "source": {
-        "score": 20,
-        "kind": "JCM",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
-  },
-  {
     "recipe_name": "synthetic_crenarchaeota_medium_scm",
     "file_path": "archaea/synthetic_crenarchaeota_medium_scm.yaml",
     "id": "CultureMech:001114",
@@ -219243,53 +219382,6 @@
     "original_name": "THERMOCOCCUS MEDIUM (pH 6.0)",
     "category": "archaea",
     "media_term": "JCM Medium J350 (mediadive.medium:J350)",
-    "score": 75.05,
-    "subtotal": 79,
-    "category_multiplier": 0.95,
-    "ingredient_count": 32,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 30,
-        "count": 32,
-        "with_concentration": 32,
-        "bonus": 5
-      },
-      "source": {
-        "score": 20,
-        "kind": "JCM",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "name_collision_count": 2
-  },
-  {
-    "recipe_name": "treponema_thermophilum_medium",
-    "file_path": "archaea/treponema_thermophilum_medium.yaml",
-    "id": "CultureMech:000291",
-    "name": "treponema_thermophilum_medium",
-    "original_name": "TREPONEMA THERMOPHILUM MEDIUM",
-    "category": "archaea",
-    "media_term": "JCM Medium J1237 (mediadive.medium:J1237)",
     "score": 75.05,
     "subtotal": 79,
     "category_multiplier": 0.95,
@@ -236528,52 +236620,6 @@
     }
   },
   {
-    "recipe_name": "petrotoga_halophila_medium",
-    "file_path": "archaea/petrotoga_halophila_medium.yaml",
-    "id": "CultureMech:000279",
-    "name": "petrotoga_halophila_medium",
-    "original_name": "PETROTOGA HALOPHILA MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 718a (mediadive.medium:718a)",
-    "score": 73.15,
-    "subtotal": 77,
-    "category_multiplier": 0.95,
-    "ingredient_count": 35,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 30,
-        "count": 35,
-        "with_concentration": 35,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
-  },
-  {
     "recipe_name": "pyrobaculum_bs_medium",
     "file_path": "archaea/pyrobaculum_bs_medium.yaml",
     "id": "CultureMech:001740",
@@ -236898,52 +236944,6 @@
       }
     },
     "name_collision_count": 3
-  },
-  {
-    "recipe_name": "spirochaeta_thermophila_medium",
-    "file_path": "archaea/spirochaeta_thermophila_medium.yaml",
-    "id": "CultureMech:000268",
-    "name": "spirochaeta_thermophila_medium",
-    "original_name": "SPIROCHAETA THERMOPHILA MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 509 (mediadive.medium:509)",
-    "score": 73.15,
-    "subtotal": 77,
-    "category_multiplier": 0.95,
-    "ingredient_count": 33,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 30,
-        "count": 33,
-        "with_concentration": 33,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
   },
   {
     "recipe_name": "stetteria_medium",
@@ -283609,6 +283609,56 @@
     "name_collision_count": 7
   },
   {
+    "recipe_name": "symbiobacterium_thermophilum_medium",
+    "file_path": "bacterial/DSMZ_1293_SYMBIOBACTERIUM_THERMOPHILUM_MEDIUM.yaml",
+    "id": "CultureMech:000251",
+    "name": "symbiobacterium_thermophilum_medium",
+    "original_name": "SYMBIOBACTERIUM THERMOPHILUM MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1293 (mediadive.medium:1293)",
+    "score": 67.0,
+    "subtotal": 67,
+    "category_multiplier": 1.0,
+    "ingredient_count": 5,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 20,
+        "count": 5,
+        "with_concentration": 5,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/symbiobacterium_thermophilum_medium.yaml"
+    ],
+    "identical_record_count": 1
+  },
+  {
     "recipe_name": "pyg_medium_modified",
     "file_path": "bacterial/DSMZ_1405_PYG_MEDIUM_MODIFIED.yaml",
     "id": "CultureMech:000866",
@@ -283983,6 +284033,56 @@
       }
     },
     "name_collision_count": 5
+  },
+  {
+    "recipe_name": "medium_for_thermophilic_actinomycetes_agre_1964",
+    "file_path": "bacterial/DSMZ_570_MEDIUM_FOR_THERMOPHILIC_ACTINOMYCETES_AGRE_1964.yaml",
+    "id": "CultureMech:000273",
+    "name": "medium_for_thermophilic_actinomycetes_agre_1964",
+    "original_name": "MEDIUM FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 570 (mediadive.medium:570)",
+    "score": 67.0,
+    "subtotal": 67,
+    "category_multiplier": 1.0,
+    "ingredient_count": 6,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 20,
+        "count": 6,
+        "with_concentration": 6,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/medium_for_thermophilic_actinomycetes_agre_1964.yaml"
+    ],
+    "identical_record_count": 1
   },
   {
     "recipe_name": "gye_medium",
@@ -384217,106 +384317,6 @@
     "identical_record_count": 1
   },
   {
-    "recipe_name": "medium_for_thermophilic_actinomycetes_agre_1964",
-    "file_path": "archaea/medium_for_thermophilic_actinomycetes_agre_1964.yaml",
-    "id": "CultureMech:000273",
-    "name": "medium_for_thermophilic_actinomycetes_agre_1964",
-    "original_name": "MEDIUM FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 570 (mediadive.medium:570)",
-    "score": 63.65,
-    "subtotal": 67,
-    "category_multiplier": 0.95,
-    "ingredient_count": 6,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 20,
-        "count": 6,
-        "with_concentration": 6,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "bacterial/medium_for_thermophilic_actinomycetes_agre_1964.yaml"
-    ],
-    "identical_record_count": 1
-  },
-  {
-    "recipe_name": "symbiobacterium_thermophilum_medium",
-    "file_path": "archaea/symbiobacterium_thermophilum_medium.yaml",
-    "id": "CultureMech:000251",
-    "name": "symbiobacterium_thermophilum_medium",
-    "original_name": "SYMBIOBACTERIUM THERMOPHILUM MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 1293 (mediadive.medium:1293)",
-    "score": 63.65,
-    "subtotal": 67,
-    "category_multiplier": 0.95,
-    "ingredient_count": 5,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 20,
-        "count": 5,
-        "with_concentration": 5,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "bacterial/symbiobacterium_thermophilum_medium.yaml"
-    ],
-    "identical_record_count": 1
-  },
-  {
     "recipe_name": "halorubrum_medium",
     "file_path": "archaea/DSMZ_1422_HALORUBRUM_MEDIUM.yaml",
     "id": "CultureMech:000886",
@@ -411899,6 +411899,106 @@
     "name_collision_count": 2
   },
   {
+    "recipe_name": "medium_for_halophilic_bacilli",
+    "file_path": "bacterial/DSMZ_73_MEDIUM_FOR_HALOPHILIC_BACILLI.yaml",
+    "id": "CultureMech:000280",
+    "name": "medium_for_halophilic_bacilli",
+    "original_name": "MEDIUM FOR HALOPHILIC BACILLI",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 73 (mediadive.medium:73)",
+    "score": 57.0,
+    "subtotal": 57,
+    "category_multiplier": 1.0,
+    "ingredient_count": 3,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 10,
+        "count": 3,
+        "with_concentration": 3,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/medium_for_halophilic_bacilli.yaml"
+    ],
+    "identical_record_count": 1
+  },
+  {
+    "recipe_name": "thermus_thermophilus_medium",
+    "file_path": "bacterial/DSMZ_74_THERMUS_THERMOPHILUS_MEDIUM.yaml",
+    "id": "CultureMech:000282",
+    "name": "thermus_thermophilus_medium",
+    "original_name": "THERMUS THERMOPHILUS MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 74 (mediadive.medium:74)",
+    "score": 57.0,
+    "subtotal": 57,
+    "category_multiplier": 1.0,
+    "ingredient_count": 3,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 10,
+        "count": 3,
+        "with_concentration": 3,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "bacterial/thermus_thermophilus_medium.yaml"
+    ],
+    "identical_record_count": 1
+  },
+  {
     "recipe_name": "xed_agar",
     "file_path": "bacterial/xed_agar.yaml",
     "id": "CultureMech:000448",
@@ -429634,106 +429734,6 @@
         "markers": []
       }
     }
-  },
-  {
-    "recipe_name": "medium_for_halophilic_bacilli",
-    "file_path": "archaea/medium_for_halophilic_bacilli.yaml",
-    "id": "CultureMech:000280",
-    "name": "medium_for_halophilic_bacilli",
-    "original_name": "MEDIUM FOR HALOPHILIC BACILLI",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 73 (mediadive.medium:73)",
-    "score": 54.15,
-    "subtotal": 57,
-    "category_multiplier": 0.95,
-    "ingredient_count": 3,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 10,
-        "count": 3,
-        "with_concentration": 3,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "bacterial/medium_for_halophilic_bacilli.yaml"
-    ],
-    "identical_record_count": 1
-  },
-  {
-    "recipe_name": "thermus_thermophilus_medium",
-    "file_path": "archaea/thermus_thermophilus_medium.yaml",
-    "id": "CultureMech:000282",
-    "name": "thermus_thermophilus_medium",
-    "original_name": "THERMUS THERMOPHILUS MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 74 (mediadive.medium:74)",
-    "score": 54.15,
-    "subtotal": 57,
-    "category_multiplier": 0.95,
-    "ingredient_count": 3,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 10,
-        "count": 3,
-        "with_concentration": 3,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "bacterial/thermus_thermophilus_medium.yaml"
-    ],
-    "identical_record_count": 1
   },
   {
     "recipe_name": "methanococcoides_medium",

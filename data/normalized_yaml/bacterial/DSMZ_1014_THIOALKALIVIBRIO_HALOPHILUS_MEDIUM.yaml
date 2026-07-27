@@ -1,42 +1,25 @@
-id: CultureMech:000250
-name: thioalkalibacter_halophilus_medium
-original_name: THIOALKALIBACTER HALOPHILUS MEDIUM
-category: archaea
+id: CultureMech:000243
+name: thioalkalivibrio_halophilus_medium
+original_name: THIOALKALIVIBRIO HALOPHILUS MEDIUM
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
+ph_range:
+  min: 8.0
+  max: 8.5
 media_term:
-  preferred_term: DSMZ Medium 1225
+  preferred_term: DSMZ Medium 1014
   term:
-    id: mediadive.medium:1225
-    label: THIOALKALIBACTER HALOPHILUS MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1225.pdf'
+    id: mediadive.medium:1014
+    label: THIOALKALIVIBRIO HALOPHILUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1014.pdf'
 ingredients:
-- preferred_term: Na2CO3
-  term:
-    id: CHEBI:29377
-    label: sodium carbonate
-  concentration:
-    value: '95'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:29377
-    label: Na2CO3
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32139
-    label: NaHCO3
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '16'
+    value: '174.825'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
@@ -46,47 +29,67 @@ ingredients:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
   concentration:
-    value: '1'
+    value: '1.4985'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:131527
     label: K2HPO4
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-- preferred_term: Sodium thiosulfate pentahydrate
-  term:
-    id: CHEBI:32150
-    label: Sodium thiosulfate pentahydrate
-  concentration:
-    value: '4.96372'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32150
-    label: Sodium thiosulfate pentahydrate
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: ammonium chloride
   concentration:
-    value: '0.21396'
+    value: '0.499501'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31206
     label: NH4Cl
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.1998'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.24975'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: Na2S2O3
+  term:
+    id: CHEBI:132112
+    label: sodium thiosulfate
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000321
+    label: Na2S2O3
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '3.996'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
     label: EDTA
   concentration:
-    value: '0.005'
+    value: '5'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:64755
@@ -96,7 +99,7 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.002'
+    value: '2.2'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:75836
@@ -121,6 +124,16 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -131,12 +144,22 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.02'
+    value: '0.03'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:34887
@@ -151,72 +174,57 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: CuCl2 x 2 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86318
-    label: CuCl2 x 2 H2O
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: boric acid
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:33118
-    label: H3BO3
 preparation_steps:
 - step_number: 1
-  action: HEAT
-  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube or
-    bottle) with an air to liquid ratio of 10:1. pH after sterilization will be about
-    10.
+  action: AUTOCLAVE
+  description: Dissolve sodium chloride, hydrogenphosphate, ammonium chloride and
+    trace elements and fill solution in screw capped Erlenmeyer flasks to 10% of volume.
+    Autoclave at 110°C for 30 min. Add magnesium chloride, magnesium sulfate, thiosulfate
+    and bicarbonat from sterile stock solutions and adjust pH of the medium to 8.0
+    - 8.5.
 - step_number: 2
   action: MIX
-  description: 'After sterilization add:'
-- step_number: 3
-  action: DISSOLVE
-  description: (a white colloid will form which will rapidly dissolve after mixing)
-- step_number: 4
-  action: HEAT
-  description: Final pH should be 3, add HCl if needed. Sterilization - 120°C 20 min.
+  description: pH 3.0-4.0
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:13.768163Z'
+- timestamp: '2026-01-26T17:53:13.115261Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 1225'
-- timestamp: '2026-03-13T06:18:53.774780Z'
+  notes: 'Source: DSMZ, ID: 1014'
+- timestamp: '2026-03-13T06:18:53.716259Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000250'
+  notes: 'Assigned stable identifier: CultureMech:000243'
 - timestamp: '2026-03-17T17:06:12.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:04.681996+00:00'
+- timestamp: '2026-03-17T19:45:04.618766+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THIOALKALIBACTER HALOPHILUS MEDIUM" to "thioalkalibacter_halophilus_medium"
+  notes: Normalized name from "THIOALKALIVIBRIO HALOPHILUS MEDIUM" to "thioalkalivibrio_halophilus_medium"
     for consistent matching
-- timestamp: '2026-05-16T09:02:57.851886+00:00'
+- timestamp: '2026-05-16T09:02:57.862094+00:00'
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
-- timestamp: '2026-06-05T07:40:15.154552+00:00'
+- timestamp: '2026-05-20T06:00:46.489141+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8-8.5'' -> {''min'': 8.0, ''max'': 8.5}'
+- timestamp: '2026-06-05T07:40:15.165156+00:00'
   curator: mim-legacy-to-chebi-migration-v1.0
   action: Refreshed legacy MediaIngredientMech links to CHEBI keying
-  notes: 'Replaced 16 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+  notes: 'Replaced 15 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-- timestamp: '2026-06-10T07:46:42.401052+00:00'
+- timestamp: '2026-06-10T07:37:34.038690+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:42.405106+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+high_metal: true

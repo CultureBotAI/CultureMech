@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26T02:25:24.668162+00:00",
+  "generated": "2026-07-27T19:48:26.090336+00:00",
   "total_recipes": 15878,
   "by_source": {
     "KOMODO": 3637,
@@ -9,8 +9,8 @@
   },
   "by_category": {
     "algae": 249,
-    "archaea": 773,
-    "bacterial": 14275,
+    "archaea": 746,
+    "bacterial": 14302,
     "fungal": 126,
     "specialized": 455
   },

@@ -1,7 +1,7 @@
 id: CultureMech:000264
 name: medium_for_bacillus_stearothermophilus
 original_name: MEDIUM FOR BACILLUS STEAROTHERMOPHILUS
-category: archaea
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4

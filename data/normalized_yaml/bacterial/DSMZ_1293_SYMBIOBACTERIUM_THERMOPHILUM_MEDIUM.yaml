@@ -1,7 +1,7 @@
 id: CultureMech:000251
 name: symbiobacterium_thermophilum_medium
 original_name: SYMBIOBACTERIUM THERMOPHILUM MEDIUM
-category: archaea
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range:

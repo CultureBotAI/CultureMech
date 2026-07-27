@@ -1,20 +1,39 @@
-id: CultureMech:000271
-name: thermophilic_hydrogen_bacteria_medium
-original_name: THERMOPHILIC HYDROGEN BACTERIA MEDIUM
-category: archaea
+id: CultureMech:000294
+name: hydrogenobacter_thermophilus_medium
+original_name: HYDROGENOBACTER THERMOPHILUS MEDIUM
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
-ph_value: 7.0
 media_term:
-  preferred_term: DSMZ Medium 533
+  preferred_term: JCM Medium J154
   term:
-    id: mediadive.medium:533
-    label: THERMOPHILIC HYDROGEN BACTERIA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium533.pdf'
+    id: mediadive.medium:J154
+    label: HYDROGENOBACTER THERMOPHILUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=154'
 ingredients:
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '4.49102'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34683
+    label: Na2HPO4
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '1.49701'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NH4NO3
   concentration:
-    value: '1'
+    value: '0.998004'
     unit: G_PER_L
   term:
     id: CHEBI:63038
@@ -22,72 +41,62 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:63038
     label: NH4NO3
-- preferred_term: Na2HPO4 x 12 H2O
-  term:
-    id: CHEBI:34683
-    label: Na2HPO4 x 12 H2O
-  concentration:
-    value: '4.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:34683
-    label: Na2HPO4 x 12 H2O
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '1'
+    value: '0.998004'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
     label: NaCl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.199601'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.00998004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: CaCl2
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.00998004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: NiSO4 x 7 H2O
+  term:
+    id: CHEBI:53001
+    label: NiSO4 x 7 H2O
+  concentration:
+    value: '5.98802e-05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53001
+    label: NiSO4 x 7 H2O
 - preferred_term: MoO3
   term:
     id: CHEBI:30627
     label: MoO3
   concentration:
-    value: '0.004'
+    value: '0.001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30627
@@ -97,7 +106,7 @@ ingredients:
     id: CHEBI:32312
     label: ZnSO4 x 7 H2O
   concentration:
-    value: '0.028'
+    value: '0.007'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:32312
@@ -107,7 +116,7 @@ ingredients:
     id: CHEBI:31440
     label: CuSO4 x 5 H2O
   concentration:
-    value: '0.002'
+    value: '0.0005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:31440
@@ -117,74 +126,63 @@ ingredients:
     id: CHEBI:33118
     label: boric acid
   concentration:
-    value: '0.004'
+    value: '0.001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:33118
     label: H3BO3
-- preferred_term: MnSO4 x 5 H2O
-  term:
-    id: CHEBI:131524
-    label: MnSO4 x 5 H2O
+- preferred_term: MnSO4 x n H2O
   concentration:
-    value: '0.004'
+    value: '0.001'
     unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131524
-    label: MnSO4 x 5 H2O
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
   concentration:
-    value: '0.004'
+    value: '0.001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
-preparation_steps:
-- step_number: 1
-  action: MIX
-  description: pH 7.0
-- step_number: 2
-  action: MIX
-  description: Incubate (e.g., in a serum bottle) with a headspace of 5% (v/v) O2,
-    85% H2, 10% CO2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.547636Z'
+- timestamp: '2026-01-26T17:53:15.834041Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 533'
-- timestamp: '2026-01-28T19:48:44.751998Z'
+  notes: 'Source: JCM, ID: J154'
+- timestamp: '2026-01-28T19:48:44.639332Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-03-13T06:18:54.005394Z'
+- timestamp: '2026-03-13T06:18:54.225434Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000271'
+  notes: 'Assigned stable identifier: CultureMech:000294'
 - timestamp: '2026-03-17T17:06:12.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:04.933918+00:00'
+- timestamp: '2026-03-17T19:45:05.178379+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "THERMOPHILIC HYDROGEN BACTERIA MEDIUM" to "thermophilic_hydrogen_bacteria_medium"
+  notes: Normalized name from "HYDROGENOBACTER THERMOPHILUS MEDIUM" to "hydrogenobacter_thermophilus_medium"
     for consistent matching
-- timestamp: '2026-05-16T09:02:57.838979+00:00'
+- timestamp: '2026-05-16T09:02:57.335213+00:00'
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
-- timestamp: '2026-06-05T07:40:15.140738+00:00'
+- timestamp: '2026-06-05T07:40:14.610069+00:00'
   curator: mim-legacy-to-chebi-migration-v1.0
   action: Refreshed legacy MediaIngredientMech links to CHEBI keying
   notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-- timestamp: '2026-06-10T07:46:42.397729+00:00'
+- timestamp: '2026-06-10T07:46:42.205114+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
-  notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
