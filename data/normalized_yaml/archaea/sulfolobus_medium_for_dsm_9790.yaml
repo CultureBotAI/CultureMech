@@ -9,8 +9,8 @@ ingredients:
   concentration:
     value: '2000.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [Merged 2 duplicates: 1000.0, 1000.0]'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Merged 2 duplicates:
+    1000.0, 1000.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,8 +21,7 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
@@ -33,8 +32,7 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -45,8 +43,7 @@ ingredients:
   concentration:
     value: '0.28'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
@@ -57,8 +54,7 @@ ingredients:
   concentration:
     value: '1.3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -69,8 +65,7 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
@@ -83,8 +78,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -98,8 +92,7 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
@@ -110,8 +103,7 @@ ingredients:
   concentration:
     value: '180'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   mediaingredientmech_chebi_term:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
@@ -122,8 +114,7 @@ ingredients:
   concentration:
     value: '22'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
@@ -134,8 +125,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
@@ -146,8 +136,7 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:87014
     label: vanadyl sulfate hexahydrate
@@ -158,8 +147,7 @@ ingredients:
   concentration:
     value: '450'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:131366
     label: ''
@@ -167,8 +155,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:53470
     label: cobalt(2+) sulfate
@@ -176,8 +163,7 @@ ingredients:
     id: CHEBI:53470
     label: cobalt(2+) sulfate
 - preferred_term: HCl
-  notes: 'Role: Solvating media; Properties: Defined component, Solution, Inorganic
-    compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Solution, Inorganic compound'
   term:
     id: CHEBI:17883
     label: hydrogen chloride
@@ -208,8 +194,7 @@ curation_history:
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
-    for ingredient: HCl'
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration for ingredient: HCl'
   timestamp: '2026-02-03T00:00:00+00:00'
 - timestamp: '2026-03-09T08:04:39.152848+00:00'
   curator: solution-migrator-v1.0
@@ -234,8 +219,7 @@ curation_history:
 - timestamp: '2026-03-17T19:46:19.944916+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "Sulfolobus Medium (For DSM 9790)" to "sulfolobus_medium_for_dsm_9790"
-    for consistent matching
+  notes: Normalized name from "Sulfolobus Medium (For DSM 9790)" to "sulfolobus_medium_for_dsm_9790" for consistent matching
 - timestamp: '2026-05-16T09:04:32.801256+00:00'
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
@@ -243,19 +227,25 @@ curation_history:
 - timestamp: '2026-06-05T07:41:47.456636+00:00'
   curator: mim-legacy-to-chebi-migration-v1.0
   action: Refreshed legacy MediaIngredientMech links to CHEBI keying
-  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
-    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
-    id scheme.'
+  notes: 'Replaced 13 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term (id-safe: ingredient''s
+    own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN id scheme.'
 - timestamp: '2026-06-10T06:58:33.354387+00:00'
   curator: mgso4-heptahydrate-term-fix-v1.0
   action: Corrected MgSO4·7H2O primary term grounding to heptahydrate
-  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic
-    magnesium sulfate) to CHEBI:31795 (magnesium sulfate heptahydrate). Generic/hexahydrate
-    labels untouched.
+  notes: Re-grounded 1 heptahydrate-labelled ingredient(s) from CHEBI:32599 (generic magnesium sulfate) to CHEBI:31795 (magnesium
+    sulfate heptahydrate). Generic/hexahydrate labels untouched.
 - timestamp: '2026-06-10T07:47:12.022634+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-07-27T23:49:08.037390Z'
+  curator: provenance-review
+  action: ANNOTATED
+  changes: target_organisms
+  notes: 'Added Picrophilus oshimae strain DSM 9790, per BacDive strain record 11901 (DSMZ Medium 88, growth: yes, 55 C).
+    Resolves issue #119 as no-rename: ''Sulfolobus Medium'' is DSMZ''s own name for Medium 88 and ''(For DSM 9790)'' is accurate
+    TOGO provenance. Metallosphaera sedula deliberately NOT added here - it belongs to the sibling record CultureMech:008908
+    ''Sulfolobus Medium (For DSM 5348)'' (TOGO M2320), where it is already curated.'
 solutions:
 - preferred_term: Allen’s trace element solution
   composition: []
@@ -263,3 +253,19 @@ solutions:
     value: '10'
     unit: G_PER_L
   name: Unknown solution
+target_organisms:
+- preferred_term: Picrophilus oshimae
+  term:
+    id: NCBITaxon:46632
+    label: Picrophilus oshimae
+  strain: DSM 9790 (KAW 2/3, JCM 10055, NBRC 100828)
+  evidence:
+  - reference: https://bacdive.dsmz.de/strain/11901
+    supports: SUPPORT
+    explanation: 'BacDive strain record 11901 — culture collection numbers DSM 9790, JCM 10055, KAW 2/3, NBRC 100828 — lists
+      culture medium ''SULFOLOBUS MEDIUM (DSMZ Medium 88)'' with growth: yes at 55 C, linking to mediadive.dsmz.de/medium/88.
+      That is the medium this record transcribes (TOGO M2323 -> DSMZ_Medium88.pdf), and DSM 9790 is the strain the record
+      is named for. TAXONOMY: DSM 9790 was described as the Picrophilus torridus type strain (Zillig et al. 1996), but NCBI
+      has since synonymized P. torridus with P. oshimae - NCBITaxon:46632 carries ''Picrophilus torridus'' as a related synonym,
+      and the former strain id NCBITaxon:263820 (''Picrophilus torridus DSM 9790'') is now an alternative id of NCBITaxon:1122961.
+      Curated to the current species term, with the strain designation preserved above.'
