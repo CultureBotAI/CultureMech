@@ -69,15 +69,28 @@ class KGMediaMatcher:
 
         logger.info(f"Loading KG-Microbe data from {self.mediadive_dir}")
 
-        # Load nodes for medium names and ingredient labels
+        # Load nodes for medium names and ingredient labels.
+        #
+        # Column order is read from the header rather than assumed. The previous
+        # code took `parts[1]`, which is the `category` column — so every medium
+        # "name" was really the biolink category string
+        # ("biolink:GrowthMedium|biolink:ComplexMolecularMixture"). The bug
+        # survived because the only test asserted the result was a non-empty
+        # string, which a category satisfies.
         with open(self.nodes_file) as f:
+            header = f.readline().rstrip('\n').split('\t')
+            try:
+                name_idx = header.index('name')
+            except ValueError:
+                name_idx = 2  # kg-microbe KGX default: id, category, name, ...
+
             for line in f:
-                parts = line.strip().split('\t')
+                parts = line.rstrip('\n').split('\t')
                 if len(parts) < 2:
                     continue
 
                 node_id = parts[0]
-                name = parts[1] if len(parts) > 1 and parts[1] else parts[2] if len(parts) > 2 else ""
+                name = parts[name_idx] if len(parts) > name_idx else ""
 
                 if node_id.startswith('mediadive.medium:'):
                     medium_id = node_id.replace('mediadive.medium:', '')
