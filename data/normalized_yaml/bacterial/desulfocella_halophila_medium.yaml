@@ -1,7 +1,7 @@
 id: CultureMech:000283
 name: desulfocella_halophila_medium
 original_name: DESULFOCELLA HALOPHILA MEDIUM
-category: archaea
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2

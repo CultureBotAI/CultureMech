@@ -1,16 +1,16 @@
-id: CultureMech:000265
+id: CultureMech:000297
 name: pseudomonas_halophila_medium
 original_name: PSEUDOMONAS HALOPHILA MEDIUM
-category: archaea
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:
-  preferred_term: DSMZ Medium 470
+  preferred_term: JCM Medium J433
   term:
-    id: mediadive.medium:470
+    id: mediadive.medium:J433
     label: PSEUDOMONAS HALOPHILA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium470.pdf'
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=433'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -244,47 +244,47 @@ ingredients:
     label: Vitamin B12
 preparation_steps:
 - step_number: 1
-  action: AUTOCLAVE
-  description: Vitamin solution is filter-sterilized and added after autoclaving.
-    Solution A and B are autoclaved separately and combined after cooling.
-- step_number: 2
-  action: ADJUST_PH
-  description: Adjust pH to 7.0 with 6 M NaOH or HCl.
-- step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
+    and add the remaining salts.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave Solutions A and B separately and combine after cooling. Filter-sterilize
+    vitamin solution and add to the autoclaved medium.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.276956Z'
+- timestamp: '2026-01-26T17:53:16.605310Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 470'
-- timestamp: '2026-03-13T06:18:53.923701Z'
+  notes: 'Source: JCM, ID: J433'
+- timestamp: '2026-03-13T06:18:54.266051Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000265'
+  notes: 'Assigned stable identifier: CultureMech:000297'
 - timestamp: '2026-03-17T17:06:12.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:04.844274+00:00'
+- timestamp: '2026-03-17T19:45:05.223539+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PSEUDOMONAS HALOPHILA MEDIUM" to "pseudomonas_halophila_medium"
     for consistent matching
-- timestamp: '2026-05-16T09:02:57.775564+00:00'
+- timestamp: '2026-05-16T09:02:57.190454+00:00'
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
-- timestamp: '2026-06-05T07:40:15.072560+00:00'
+- timestamp: '2026-06-05T07:40:14.452621+00:00'
   curator: mim-legacy-to-chebi-migration-v1.0
   action: Refreshed legacy MediaIngredientMech links to CHEBI keying
   notes: 'Replaced 23 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-- timestamp: '2026-06-10T07:46:42.373021+00:00'
+- timestamp: '2026-06-10T07:46:42.147852+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 3 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

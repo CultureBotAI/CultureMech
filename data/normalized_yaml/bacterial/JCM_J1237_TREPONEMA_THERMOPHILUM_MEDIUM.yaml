@@ -1,25 +1,45 @@
-id: CultureMech:000268
-name: spirochaeta_thermophila_medium
-original_name: SPIROCHAETA THERMOPHILA MEDIUM
-category: archaea
+id: CultureMech:000291
+name: treponema_thermophilum_medium
+original_name: TREPONEMA THERMOPHILUM MEDIUM
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_range:
-  min: 7.2
-  max: 7.4
+ph_value: 7.0
 media_term:
-  preferred_term: DSMZ Medium 509
+  preferred_term: JCM Medium J1237
   term:
-    id: mediadive.medium:509
-    label: SPIROCHAETA THERMOPHILA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium509.pdf'
+    id: mediadive.medium:J1237
+    label: TREPONEMA THERMOPHILUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1237'
 ingredients:
+- preferred_term: Meat peptone
+  concentration:
+    value: '4.94071'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '4.94071'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '9.88142'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.296443'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '15.7563'
+    value: '0.592885'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
@@ -29,122 +49,48 @@ ingredients:
     id: CHEBI:86345
     label: MgCl2 x 6 H2O
   concentration:
-    value: '2.41597'
+    value: '0.0988142'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
     label: MgCl2 x 6 H2O
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '0.52521'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32588
-    label: KCl
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-  concentration:
-    value: '0.315126'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:31206
-    label: NH4Cl
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: potassium dihydrogen phosphate
-  concentration:
-    value: '0.210084'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63036
-    label: KH2PO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0315126'
+    value: '0.0790514'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
-- preferred_term: Yeast extract
-  concentration:
-    value: '1.05042'
-    unit: G_PER_L
 - preferred_term: Sodium resazurin
   concentration:
-    value: '0.00052521'
+    value: '0.000494071'
     unit: G_PER_L
   term:
     id: CHEBI:8806
     label: ''
-- preferred_term: Na2CO3
+- preferred_term: L-Cysteine HCl x H2O
   term:
-    id: CHEBI:29377
-    label: sodium carbonate
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
   concentration:
-    value: '50'
+    value: '0.247036'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:29377
-    label: Na2CO3
-- preferred_term: Starch
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Xylan
   term:
-    id: CHEBI:28017
-    label: Starch
+    id: CHEBI:37166
+    label: Xylan
   concentration:
-    value: '100'
+    value: '0.988142'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
-    id: CHEBI:28017
-    label: Starch
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:32145
-    label: NaOH
-- preferred_term: Na2SeO3 x 5 H2O
-  term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
-  concentration:
-    value: '0.003'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
-- preferred_term: Na2WO4 x 2 H2O
-  term:
-    id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
-  concentration:
-    value: '0.004'
-    unit: G_PER_L
-  mediaingredientmech_chebi_term:
-    id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
+    id: CHEBI:37166
+    label: Xylan
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -235,12 +181,42 @@ ingredients:
   mediaingredientmech_chebi_term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32145
+    label: NaOH
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
     label: Biotin
   concentration:
-    value: '0.02'
+    value: '0.002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15956
@@ -250,7 +226,7 @@ ingredients:
     id: CHEBI:27470
     label: Folic acid
   concentration:
-    value: '0.02'
+    value: '0.002'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:27470
@@ -260,7 +236,7 @@ ingredients:
     id: CHEBI:30961
     label: Pyridoxine hydrochloride
   concentration:
-    value: '0.1'
+    value: '0.01'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30961
@@ -270,7 +246,7 @@ ingredients:
     id: CHEBI:49105
     label: Thiamine HCl
   concentration:
-    value: '0.05'
+    value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:49105
@@ -280,7 +256,7 @@ ingredients:
     id: CHEBI:17015
     label: Riboflavin
   concentration:
-    value: '0.05'
+    value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17015
@@ -290,24 +266,27 @@ ingredients:
     id: CHEBI:15940
     label: Nicotinic acid
   concentration:
-    value: '0.05'
+    value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:15940
     label: Nicotinic acid
-- preferred_term: Calcium D-(+)-pantothenate
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
+- preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
-    label: ''
+    label: Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.001'
+    value: '0.0001'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:17439
@@ -317,76 +296,64 @@ ingredients:
     id: CHEBI:30753
     label: p-Aminobenzoic acid
   concentration:
-    value: '0.05'
+    value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:30753
     label: p-Aminobenzoic acid
-- preferred_term: (DL)-alpha-Lipoic acid
+- preferred_term: Lipoic acid
   term:
     id: CHEBI:16494
-    label: (DL)-alpha-Lipoic acid
+    label: Lipoic acid
   concentration:
-    value: '0.05'
+    value: '0.005'
     unit: G_PER_L
   mediaingredientmech_chebi_term:
     id: CHEBI:16494
-    label: (DL)-alpha-Lipoic acid
+    label: Lipoic acid
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
-    a pH below 6 (at least 30 -45 min), then distributed under the same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved
-    separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved
-    under 100% N2 gas atmosphere. Solution D is prepared under 100% N2 gas atmosphere
-    and sterilized by filtration. To complete the medium appropriate amounts of solutions
-    B to F are added to the sterile solution A in the sequence as indicated. Final
-    pH of the medium should be 7.2 - 7.4.
+  description: Dissolve ingredients (except cysteine), boil medium for 1 min, then
+    cool to room temperature under 100% N2 gas atmosphere. Dispense medium under the
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Before inoculation, add cysteine and xylan from a sterile anoxic stock solution
+    prepared under 100% N2 gas and adjust pH of complete medium to 7.0.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
+    and add the remaining salts.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.459878Z'
+- timestamp: '2026-01-26T17:53:19.122432Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 509'
-- timestamp: '2026-02-06T05:10:57.276633Z'
-  curator: invalid-chebi-removal
-  action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
-- timestamp: '2026-03-13T06:18:53.961942Z'
+  notes: 'Source: JCM, ID: J1237'
+- timestamp: '2026-03-13T06:18:54.194915Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:000268'
+  notes: 'Assigned stable identifier: CultureMech:000291'
 - timestamp: '2026-03-17T17:06:12.000000Z'
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
-- timestamp: '2026-03-17T19:45:04.886346+00:00'
+- timestamp: '2026-03-17T19:45:05.143487+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "SPIROCHAETA THERMOPHILA MEDIUM" to "spirochaeta_thermophila_medium"
+  notes: Normalized name from "TREPONEMA THERMOPHILUM MEDIUM" to "treponema_thermophilum_medium"
     for consistent matching
-- timestamp: '2026-05-16T09:02:57.797716+00:00'
+- timestamp: '2026-05-16T09:02:57.912741+00:00'
   curator: migrate_legacy_fields.py
   action: MIGRATED_LEGACY_FIELDS
   notes: category->lowercase=1
-- timestamp: '2026-05-20T06:00:46.439752+00:00'
-  curator: migrate_ph_range.py
-  action: MIGRATED_PH_RANGE
-  notes: 'ph_range ''7.2-7.4'' -> {''min'': 7.2, ''max'': 7.4}'
-- timestamp: '2026-06-05T07:40:15.096232+00:00'
+- timestamp: '2026-06-05T07:40:15.226169+00:00'
   curator: mim-legacy-to-chebi-migration-v1.0
   action: Refreshed legacy MediaIngredientMech links to CHEBI keying
-  notes: 'Replaced 30 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+  notes: 'Replaced 28 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
     (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
     id scheme.'
-- timestamp: '2026-06-10T07:46:42.380984+00:00'
+- timestamp: '2026-06-10T07:46:42.424679+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
-  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.

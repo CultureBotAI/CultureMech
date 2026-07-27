@@ -2,7 +2,7 @@
   "misfiled": [],
   "mixed": [
     {
-      "file": "TOGO_M478_Methanosaeta_Brevibacterium_Medium.yaml",
+      "file": "bacterial/TOGO_M478_Methanosaeta_Brevibacterium_Medium.yaml",
       "id": "CultureMech:009864",
       "name": "Methanosaeta Brevibacterium Medium",
       "archaeal_evidence": [
@@ -14,7 +14,7 @@
       "is_solution": false
     },
     {
-      "file": "methanosaeta_brevibacterium_medium.yaml",
+      "file": "bacterial/methanosaeta_brevibacterium_medium.yaml",
       "id": "CultureMech:002826",
       "name": "METHANOSAETA BREVIBACTERIUM MEDIUM",
       "archaeal_evidence": [
@@ -26,214 +26,81 @@
       "is_solution": false
     }
   ],
-  "reverse": [
+  "unresolved": [
     {
-      "file": "JCM_J128_HYDROGENOBACTER_HALOPHILUS_MEDIUM.yaml",
-      "id": "CultureMech:000292",
-      "name": "HYDROGENOBACTER HALOPHILUS MEDIUM",
-      "bacterial_evidence": [
-        "hydrogenobacter"
-      ]
+      "file": "archaea/DSMZ_1399_HALOPHILIC_MEDIUM.yaml",
+      "id": "CultureMech:000252",
+      "name": "HALOPHILIC MEDIUM"
     },
     {
-      "file": "JCM_J433_PSEUDOMONAS_HALOPHILA_MEDIUM.yaml",
-      "id": "CultureMech:000297",
-      "name": "PSEUDOMONAS HALOPHILA MEDIUM",
-      "bacterial_evidence": [
-        "pseudomonas"
-      ]
+      "file": "archaea/JCM_J1334_NATRONOARCHAEA_MEDIUM_II.yaml",
+      "id": "CultureMech:015832",
+      "name": "NATRONOARCHAEA MEDIUM II"
     },
     {
-      "file": "desulfocella_halophila_medium.yaml",
-      "id": "CultureMech:000283",
-      "name": "DESULFOCELLA HALOPHILA MEDIUM",
-      "bacterial_evidence": [
-        "desulfocella"
-      ]
+      "file": "archaea/JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml",
+      "id": "CultureMech:000299",
+      "name": "HP 101 HALOPHILE MEDIUM"
     },
     {
-      "file": "dichotomicrobium_thermohalophilum_medium.yaml",
-      "id": "CultureMech:000274",
-      "name": "DICHOTOMICROBIUM THERMOHALOPHILUM MEDIUM",
-      "bacterial_evidence": [
-        "dichotomicrobium"
-      ]
+      "file": "archaea/acido_thermophile_medium.yaml",
+      "id": "CultureMech:000256",
+      "name": "ACIDO-THERMOPHILE MEDIUM"
     },
     {
-      "file": "exilispira_thermophila_medium.yaml",
-      "id": "CultureMech:000302",
-      "name": "EXILISPIRA THERMOPHILA MEDIUM",
-      "bacterial_evidence": [
-        "exilispira"
-      ]
+      "file": "archaea/alkalophilic_halophile_medium.yaml",
+      "id": "CultureMech:000255",
+      "name": "ALKALOPHILIC HALOPHILE MEDIUM"
     },
     {
-      "file": "haloactinomyces_halophilus_medium.yaml",
-      "id": "CultureMech:000257",
-      "name": "HALOACTINOMYCES HALOPHILUS MEDIUM",
-      "bacterial_evidence": [
-        "haloactinomyces"
-      ]
+      "file": "archaea/artificial_seawater_for_halophiles.yaml",
+      "id": "CultureMech:000298",
+      "name": "ARTIFICIAL SEAWATER FOR HALOPHILES"
     },
     {
-      "file": "halophilic_methanotrophic_bacterium_medium.yaml",
-      "id": "CultureMech:000248",
-      "name": "HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM",
-      "bacterial_evidence": [
-        "bacterium"
-      ]
+      "file": "archaea/halophile_medium.yaml",
+      "id": "CultureMech:000276",
+      "name": "HALOPHILE MEDIUM"
     },
     {
-      "file": "hydrogenobacter_halophilus_medium.yaml",
-      "id": "CultureMech:000281",
-      "name": "HYDROGENOBACTER HALOPHILUS MEDIUM",
-      "bacterial_evidence": [
-        "hydrogenobacter"
-      ]
+      "file": "archaea/halophile_starch_casein_medium.yaml",
+      "id": "CultureMech:000284",
+      "name": "HALOPHILE STARCH-CASEIN MEDIUM"
     },
     {
-      "file": "hydrogenobacter_thermophilus_medium.yaml",
-      "id": "CultureMech:000294",
-      "name": "HYDROGENOBACTER THERMOPHILUS MEDIUM",
-      "bacterial_evidence": [
-        "hydrogenobacter"
-      ]
+      "file": "archaea/halophilic_medium.yaml",
+      "id": "CultureMech:000247",
+      "name": "HALOPHILIC MEDIUM"
     },
     {
-      "file": "medium_for_halophilic_bacilli.yaml",
-      "id": "CultureMech:000280",
-      "name": "MEDIUM FOR HALOPHILIC BACILLI",
-      "bacterial_evidence": [
-        "bacilli"
-      ]
+      "file": "archaea/halophilic_sob_medium.yaml",
+      "id": "CultureMech:000285",
+      "name": "HALOPHILIC SOB MEDIUM"
     },
     {
-      "file": "medium_for_thermophilic_actinomycetes_agre_1964.yaml",
-      "id": "CultureMech:000273",
-      "name": "MEDIUM FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)",
-      "bacterial_evidence": [
-        "actinomycetes"
-      ]
+      "file": "archaea/hp_101_halophile_medium.yaml",
+      "id": "CultureMech:000275",
+      "name": "HP 101 HALOPHILE MEDIUM"
     },
     {
-      "file": "pediococcus_halophilus_medium.yaml",
-      "id": "CultureMech:000258",
-      "name": "PEDIOCOCCUS HALOPHILUS MEDIUM",
-      "bacterial_evidence": [
-        "pediococcus"
-      ]
+      "file": "archaea/medium_for_aciduric_thermophilic_bacillus_strains.yaml",
+      "id": "CultureMech:000277",
+      "name": "MEDIUM FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS"
     },
     {
-      "file": "petrotoga_halophila_medium.yaml",
-      "id": "CultureMech:000279",
-      "name": "PETROTOGA HALOPHILA MEDIUM",
-      "bacterial_evidence": [
-        "petrotoga"
-      ]
+      "file": "archaea/moderate_halophile_medium.yaml",
+      "id": "CultureMech:000301",
+      "name": "MODERATE HALOPHILE MEDIUM"
     },
     {
-      "file": "pseudomonas_halophila_medium.yaml",
-      "id": "CultureMech:000265",
-      "name": "PSEUDOMONAS HALOPHILA MEDIUM",
-      "bacterial_evidence": [
-        "pseudomonas"
-      ]
+      "file": "archaea/moderate_halophile_medium_2.yaml",
+      "id": "CultureMech:000290",
+      "name": "MODERATE HALOPHILE MEDIUM 2"
     },
     {
-      "file": "salinibacter_halophilic_medium.yaml",
-      "id": "CultureMech:000253",
-      "name": "SALINIBACTER HALOPHILIC MEDIUM",
-      "bacterial_evidence": [
-        "salinibacter"
-      ]
-    },
-    {
-      "file": "spirochaeta_thermophila_medium.yaml",
-      "id": "CultureMech:000268",
-      "name": "SPIROCHAETA THERMOPHILA MEDIUM",
-      "bacterial_evidence": [
-        "spirochaeta"
-      ]
-    },
-    {
-      "file": "sporolituus_thermophilus_medium.yaml",
-      "id": "CultureMech:000303",
-      "name": "SPOROLITUUS THERMOPHILUS MEDIUM",
-      "bacterial_evidence": [
-        "sporolituus"
-      ]
-    },
-    {
-      "file": "symbiobacterium_thermophilum_medium.yaml",
-      "id": "CultureMech:000251",
-      "name": "SYMBIOBACTERIUM THERMOPHILUM MEDIUM",
-      "bacterial_evidence": [
-        "symbiobacterium"
-      ]
-    },
-    {
-      "file": "thermophilic_hydrogen_bacteria_medium.yaml",
-      "id": "CultureMech:000271",
-      "name": "THERMOPHILIC HYDROGEN BACTERIA MEDIUM",
-      "bacterial_evidence": [
-        "bacteria"
-      ]
-    },
-    {
-      "file": "thermus_thermophilus_medium.yaml",
-      "id": "CultureMech:000282",
-      "name": "THERMUS THERMOPHILUS MEDIUM",
-      "bacterial_evidence": [
-        "thermus"
-      ]
-    },
-    {
-      "file": "thioalkalibacter_halophilus_medium.yaml",
-      "id": "CultureMech:000250",
-      "name": "THIOALKALIBACTER HALOPHILUS MEDIUM",
-      "bacterial_evidence": [
-        "thioalkalibacter"
-      ]
-    },
-    {
-      "file": "thioalkalivibrio_halophilus_medium.yaml",
-      "id": "CultureMech:000243",
-      "name": "THIOALKALIVIBRIO HALOPHILUS MEDIUM",
-      "bacterial_evidence": [
-        "thioalkalivibrio"
-      ]
-    },
-    {
-      "file": "thiocapsa_halophila_medium.yaml",
-      "id": "CultureMech:000272",
-      "name": "THIOCAPSA HALOPHILA MEDIUM",
-      "bacterial_evidence": [
-        "thiocapsa"
-      ]
-    },
-    {
-      "file": "thiohalophilus_medium.yaml",
-      "id": "CultureMech:000244",
-      "name": "THIOHALOPHILUS MEDIUM",
-      "bacterial_evidence": [
-        "thiohalophilus"
-      ]
-    },
-    {
-      "file": "thiohalospira_halophila_medium.yaml",
-      "id": "CultureMech:000245",
-      "name": "THIOHALOSPIRA HALOPHILA MEDIUM",
-      "bacterial_evidence": [
-        "thiohalospira"
-      ]
-    },
-    {
-      "file": "treponema_thermophilum_medium.yaml",
-      "id": "CultureMech:000291",
-      "name": "TREPONEMA THERMOPHILUM MEDIUM",
-      "bacterial_evidence": [
-        "treponema"
-      ]
+      "file": "archaea/thermanaerobacter_thermophila_medium.yaml",
+      "id": "CultureMech:000305",
+      "name": "THERMANAEROBACTER THERMOPHILA MEDIUM"
     }
   ]
 }

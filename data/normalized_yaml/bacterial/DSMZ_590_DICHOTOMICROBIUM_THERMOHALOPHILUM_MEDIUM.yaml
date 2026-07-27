@@ -1,7 +1,7 @@
 id: CultureMech:000274
 name: dichotomicrobium_thermohalophilum_medium
 original_name: DICHOTOMICROBIUM THERMOHALOPHILUM MEDIUM
-category: archaea
+category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ph_range:

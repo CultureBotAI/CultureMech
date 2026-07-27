@@ -1,7 +1,7 @@
 id: CultureMech:000282
 name: thermus_thermophilus_medium
 original_name: THERMUS THERMOPHILUS MEDIUM
-category: archaea
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0

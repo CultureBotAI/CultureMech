@@ -19,8 +19,15 @@ Including higher ranks matters for the same reason: *Halobacteria* (class),
 *Sulfolobales* / *Thermococcales* (order) and *Methanobacteriaceae* (family) are not
 genera and are invisible to a genus-only audit.
 
+The check runs in **both** directions: `bacterial/` holding archaeal media
+(#114) and `archaea/` holding bacterial media (#116) are the same defect, and the
+original 71-file `archaea/` import turned out to be 29 archaeal / 26 bacterial /
+16 undecidable, so neither directory can be trusted as ground truth.
+
 A record naming taxa from *both* domains (e.g. a Methanosaeta/Brevibacterium
-co-culture medium) is reported as MIXED and never moved automatically.
+co-culture medium) is reported as MIXED and never moved automatically. A record
+naming no taxon at all ("halophile medium" — halophiles span both domains) is
+reported as unresolved and likewise left alone.
 
 Usage::
 
@@ -47,6 +54,8 @@ DEFAULT_DB = Path.home() / ".data" / "oaklib" / "ncbitaxon.db"
 
 ARCHAEA, BACTERIA, EUKARYOTA = "NCBITaxon:2157", "NCBITaxon:2", "NCBITaxon:2759"
 RANKS = ("genus", "family", "order", "class", "phylum")
+# Where importers put recipes they could not classify; see the unresolved bucket.
+DEFAULT_DOMAIN_DIR = "bacterial"
 
 # Wording that denotes a domain without naming a taxon.
 ARCHAEAL_WORDS = re.compile(
@@ -85,6 +94,36 @@ def taxon_names(con: sqlite3.Connection, root: str) -> set[str]:
     }
 
 
+def binomial_names(con: sqlite3.Connection, root: str) -> set[str]:
+    """Lowercased two-word species binomials under `root`.
+
+    Genus names alone are sometimes homonyms across domains and get discarded —
+    *Bacillus* is both a bacterial genus and a diatom genus, so it can never be
+    evidence on its own. The full binomial usually is unambiguous, which recovers
+    records like ``medium_for_bacillus_stearothermophilus``.
+    """
+    query = """
+        select distinct s.value
+          from entailed_edge e
+          join statements r
+            on r.subject = e.subject
+           and r.predicate = 'obo:ncbitaxon#has_rank'
+           and r.object = 'NCBITaxon:species'
+          join statements s
+            on s.subject = e.subject
+           and (s.predicate = 'rdfs:label' or s.predicate like '%synonym%')
+         where e.object = ? and e.predicate = 'rdfs:subClassOf'
+    """
+    out = set()
+    for (value,) in con.execute(query, (root,)):
+        if not value:
+            continue
+        parts = value.lower().split()
+        if len(parts) == 2 and all(p.isalpha() for p in parts):
+            out.add(" ".join(parts))
+    return out
+
+
 @dataclass
 class Recipe:
     path: Path
@@ -116,6 +155,12 @@ SOURCE_ID_PATTERNS = (
     (re.compile(r"\bID:\s*(\d+)"), "ID_{}"),
 )
 
+# MediaDive republishes DSMZ and JCM media, so a `mediadive.medium:` id alone does
+# not name the registry. The corpus prefixes those by the originating registry —
+# `DSMZ_1422_HALORUBRUM_MEDIUM.yaml`, `JCM_J168_HALOBACTERIA_MEDIUM.yaml` — and
+# reserves the bare `mediadive_` prefix for stock-solution records.
+REGISTRY_BY_SOURCE = {"dsmz": "DSMZ", "jcm": "JCM"}
+
 
 def read_recipe(path: Path) -> Recipe:
     rec = Recipe(path=path)
@@ -138,22 +183,61 @@ def read_recipe(path: Path) -> Recipe:
     # further down can also contain "Source:" and must not win
     match = re.search(r"^notes:.*?Source:\s*(\S+)", text, re.M)
     if match:
-        rec.source = match.group(1)
+        # `notes: 'Source: DSMZ'` — the closing quote of the YAML scalar rides
+        # along whenever Source is the last field on the line
+        rec.source = match.group(1).strip("'\"")
+    registry = REGISTRY_BY_SOURCE.get(rec.source.lower())
     for pattern, template in SOURCE_ID_PATTERNS:
         found = pattern.search(text)
         if found:
+            if registry and template.startswith("mediadive_"):
+                template = registry + "_{}"
             rec.source_id = template.format(found.group(1))
             break
     return rec
 
 
-def classify(rec: Recipe, archaeal: set[str], bacterial: set[str]) -> None:
-    blob = " ".join(
-        [rec.path.stem, rec.name, rec.original_name, rec.preferred_term]
-    ).lower()
-    tokens = set(NON_WORD.split(blob))
-    rec.archaeal = sorted(tokens & archaeal) or sorted(set(ARCHAEAL_WORDS.findall(blob)))
-    rec.bacterial = sorted(tokens & bacterial) or sorted(set(BACTERIAL_WORDS.findall(blob)))
+@dataclass
+class Evidence:
+    """Name evidence for one domain: taxon names, binomials and generic wording."""
+
+    taxa: set[str]
+    binomials: set[str]
+    words: re.Pattern
+
+
+def classify(rec: Recipe, archaea: Evidence, bacteria: Evidence) -> None:
+    # Separators are normalised to spaces before matching: `\b` treats `_` as a
+    # word character, so `\bmethanogen\b` would never fire on the slugified
+    # filename `methanogen_high_salt_medium`, only on a spaced `original_name`.
+    blob = NON_WORD.sub(
+        " ",
+        " ".join(
+            [rec.path.stem, rec.name, rec.original_name, rec.preferred_term]
+        ).lower(),
+    )
+    tokens = [t for t in blob.split() if t]
+    pairs = {f"{a} {b}" for a, b in zip(tokens, tokens[1:])}
+    unique = set(tokens)
+
+    def hits(ev: Evidence) -> tuple[list[str], set[str]]:
+        binomials = pairs & ev.binomials
+        found = sorted(unique & ev.taxa) + sorted(binomials)
+        return (found or sorted(set(ev.words.findall(blob)))), binomials
+
+    arch_hits, arch_bi = hits(archaea)
+    bact_hits, bact_bi = hits(bacteria)
+
+    def drop_epithets(found: list[str], other_binomials: set[str]) -> list[str]:
+        """Discard single-word hits that are only the epithet of the other domain's
+        binomial. *Methanocalculus alkaliphilus* is an archaeon; matching the
+        bacterial genus *Alkaliphilus* on its species epithet is not evidence that
+        the medium has anything to do with that genus."""
+        words = {w for b in other_binomials for w in b.split()}
+        return [f for f in found if " " in f or f not in words]
+
+    rec.archaeal = drop_epithets(arch_hits, bact_bi)
+    rec.bacterial = drop_epithets(bact_hits, arch_bi)
 
 
 def slugify_for_filename(text: str) -> str:
@@ -234,68 +318,87 @@ def main() -> int:
     arch_all = taxon_names(con, ARCHAEA)
     bact_all = taxon_names(con, BACTERIA)
     euk_all = taxon_names(con, EUKARYOTA)
+    arch_bi = binomial_names(con, ARCHAEA)
+    bact_bi = binomial_names(con, BACTERIA)
     # only names unique to one domain are usable as evidence
-    archaeal = arch_all - bact_all - euk_all
-    bacterial = bact_all - arch_all - euk_all
-
-    print(
-        f"NCBITaxon: {len(archaeal)} archaea-only and {len(bacterial)} bacteria-only "
-        f"names at ranks {'/'.join(RANKS)}"
+    archaea = Evidence(
+        taxa=arch_all - bact_all - euk_all,
+        binomials=arch_bi - bact_bi,
+        words=ARCHAEAL_WORDS,
+    )
+    bacteria = Evidence(
+        taxa=bact_all - arch_all - euk_all,
+        binomials=bact_bi - arch_bi,
+        words=BACTERIAL_WORDS,
     )
 
-    findings: dict[str, list[dict]] = {"misfiled": [], "mixed": [], "reverse": []}
+    print(
+        f"NCBITaxon: {len(archaea.taxa)} archaea-only and {len(bacteria.taxa)} "
+        f"bacteria-only names at ranks {'/'.join(RANKS)}; "
+        f"{len(archaea.binomials)}/{len(bacteria.binomials)} species binomials"
+    )
 
-    # --- bacterial/ holding archaeal media -------------------------------------
-    moves: list[tuple[Recipe, Path]] = []
+    findings: dict[str, list[dict]] = {"misfiled": [], "mixed": [], "unresolved": []}
+
+    # Both directions are the same defect (#114 put archaea under bacterial/, #116
+    # the mirror image), so they are handled by one symmetric pass.
+    moves: list[tuple[Recipe, Path, str]] = []
     reserved: set[Path] = set()
-    for path in sorted((RECIPE_ROOT / "bacterial").glob("*.yaml")):
-        rec = read_recipe(path)
-        classify(rec, archaeal, bacterial)
-        if not rec.archaeal:
-            continue
-        entry = {
-            "file": path.name,
-            "id": rec.identifier,
-            "name": rec.display_name,
-            "archaeal_evidence": rec.archaeal,
-            "bacterial_evidence": rec.bacterial,
-            "is_solution": rec.is_solution,
-        }
-        if rec.mixed:
-            findings["mixed"].append(entry)
-            continue
-        dest = target_path(rec, RECIPE_ROOT / "archaea", reserved)
-        entry["moves_to"] = f"archaea/{dest.name}"
-        entry["renamed"] = dest.name != path.name
-        findings["misfiled"].append(entry)
-        moves.append((rec, dest))
-
-    # --- archaea/ holding bacterial media (reported, never auto-moved) ---------
-    for path in sorted((RECIPE_ROOT / "archaea").glob("*.yaml")):
-        rec = read_recipe(path)
-        classify(rec, archaeal, bacterial)
-        if rec.bacterial and not rec.archaeal:
-            findings["reverse"].append(
-                {
-                    "file": path.name,
-                    "id": rec.identifier,
-                    "name": rec.display_name,
-                    "bacterial_evidence": rec.bacterial,
-                }
+    for src_dir, dest_dir, dest_category in (
+        ("bacterial", "archaea", "archaea"),
+        ("archaea", "bacterial", "bacterial"),
+    ):
+        for path in sorted((RECIPE_ROOT / src_dir).glob("*.yaml")):
+            rec = read_recipe(path)
+            classify(rec, archaea, bacteria)
+            own, other = (
+                (rec.bacterial, rec.archaeal)
+                if src_dir == "bacterial"
+                else (rec.archaeal, rec.bacterial)
             )
+            if not other:
+                # No evidence for the other domain, so nothing to move. Absence of
+                # evidence is only *reportable* outside the default directory:
+                # `bacterial/` is where the importers put anything they could not
+                # classify, so "chocolate agar" naming no taxon there is unremarkable.
+                # In `archaea/` someone positively asserted a domain, so a name with
+                # no taxonomic support is an unsubstantiated claim worth surfacing.
+                if not own and src_dir != DEFAULT_DOMAIN_DIR:
+                    findings["unresolved"].append(
+                        {"file": f"{src_dir}/{path.name}", "id": rec.identifier,
+                         "name": rec.display_name}
+                    )
+                continue
+            entry = {
+                "file": f"{src_dir}/{path.name}",
+                "id": rec.identifier,
+                "name": rec.display_name,
+                "archaeal_evidence": rec.archaeal,
+                "bacterial_evidence": rec.bacterial,
+                "is_solution": rec.is_solution,
+            }
+            if own:  # names taxa from both domains -> a curator's call, never ours
+                findings["mixed"].append(entry)
+                continue
+            dest = target_path(rec, RECIPE_ROOT / dest_dir, reserved)
+            entry["moves_to"] = f"{dest_dir}/{dest.name}"
+            entry["renamed"] = dest.name != path.name
+            findings["misfiled"].append(entry)
+            moves.append((rec, dest, dest_category))
 
-    renamed = sum(1 for e in findings["misfiled"] if e["renamed"])
-    print(
-        f"\nbacterial/ -> archaea/ : {len(findings['misfiled'])} misfiled "
-        f"({renamed} need a source-prefixed filename to avoid a collision)"
-    )
-    for entry in findings["misfiled"]:
-        flag = " [RENAME]" if entry["renamed"] else ""
-        flag += " [SOLUTION RECORD]" if entry["is_solution"] else ""
+    for direction in ("archaea", "bacterial"):
+        rows = [e for e in findings["misfiled"] if e["moves_to"].startswith(direction)]
+        renamed = sum(1 for e in rows if e["renamed"])
+        src = "bacterial" if direction == "archaea" else "archaea"
         print(
-            f"  {entry['file'][:58]:<60} "
-            f"{','.join(entry['archaeal_evidence'])[:24]:<26}{flag}"
+            f"\n{src}/ -> {direction}/ : {len(rows)} misfiled "
+            f"({renamed} need a source-prefixed filename to avoid a collision)"
         )
+        for entry in rows:
+            flag = " [RENAME]" if entry["renamed"] else ""
+            flag += " [SOLUTION RECORD]" if entry["is_solution"] else ""
+            ev = entry["archaeal_evidence"] or entry["bacterial_evidence"]
+            print(f"  {entry['file'][:58]:<60} {','.join(ev)[:24]:<26}{flag}")
 
     print(f"\nMIXED domain, left in place for curation: {len(findings['mixed'])}")
     for entry in findings["mixed"]:
@@ -305,24 +408,22 @@ def main() -> int:
         )
 
     print(
-        f"\narchaea/ naming a bacterium (pre-existing, reported only): "
-        f"{len(findings['reverse'])}"
+        f"\nFiled outside {DEFAULT_DOMAIN_DIR}/ but naming no taxon at all "
+        f"(unsubstantiated domain claim): {len(findings['unresolved'])}"
     )
-    for entry in findings["reverse"]:
-        print(
-            f"  {entry['file'][:58]:<60} {','.join(entry['bacterial_evidence'])[:30]}"
-        )
+    for entry in findings["unresolved"]:
+        print(f"  {entry['file'][:58]:<60} {entry['name'][:34]}")
 
     if args.apply:
         unstamped = []
-        for rec, dest in moves:
+        for rec, dest, dest_category in moves:
             git_mv(rec.path, dest)
-            if not restamp_category(dest, "archaea"):
+            if not restamp_category(dest, dest_category):
                 unstamped.append(dest.name)
-        print(f"\nApplied: moved {len(moves)} recipes into archaea/ with category: archaea")
+        print(f"\nApplied: moved {len(moves)} recipes and restamped their category")
         if unstamped:
-            # a moved file with no category: line would sit in archaea/ still
-            # claiming to be bacterial to anything that reads the field
+            # a moved file with no category: line keeps advertising its old
+            # domain to anything that reads the field
             print(
                 f"WARNING: {len(unstamped)} moved file(s) had no 'category:' line to "
                 f"restamp: {', '.join(unstamped[:5])}",
