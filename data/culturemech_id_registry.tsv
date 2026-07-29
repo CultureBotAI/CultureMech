@@ -253,7 +253,7 @@ CultureMech:000252	data/normalized_yaml/archaea/DSMZ_1399_HALOPHILIC_MEDIUM.yaml
 CultureMech:000253	data/normalized_yaml/archaea/salinibacter_halophilic_medium.yaml
 CultureMech:000254	data/normalized_yaml/archaea/methanogenium_medium_h2_co2.yaml
 CultureMech:000255	data/normalized_yaml/archaea/alkalophilic_halophile_medium.yaml
-CultureMech:000256	data/normalized_yaml/archaea/acido_thermophile_medium.yaml
+CultureMech:000256	data/normalized_yaml/bacterial/acido_thermophile_medium.yaml
 CultureMech:000257	data/normalized_yaml/archaea/haloactinomyces_halophilus_medium.yaml
 CultureMech:000258	data/normalized_yaml/archaea/pediococcus_halophilus_medium.yaml
 CultureMech:000259	data/normalized_yaml/archaea/methanosarcina_thermophila_medium.yaml
@@ -296,9 +296,9 @@ CultureMech:000295	data/normalized_yaml/archaea/methanogenium_medium.yaml
 CultureMech:000296	data/normalized_yaml/archaea/methanosaeta_thermophila_medium.yaml
 CultureMech:000297	data/normalized_yaml/archaea/JCM_J433_PSEUDOMONAS_HALOPHILA_MEDIUM.yaml
 CultureMech:000298	data/normalized_yaml/archaea/artificial_seawater_for_halophiles.yaml
-CultureMech:000299	data/normalized_yaml/archaea/JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml
+CultureMech:000299	data/normalized_yaml/bacterial/JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml
 CultureMech:000300	data/normalized_yaml/archaea/modified_balchs_methanogens_medium.yaml
-CultureMech:000301	data/normalized_yaml/archaea/moderate_halophile_medium.yaml
+CultureMech:000301	data/normalized_yaml/bacterial/JCM_J599_moderate_halophile_medium.yaml
 CultureMech:000302	data/normalized_yaml/archaea/exilispira_thermophila_medium.yaml
 CultureMech:000303	data/normalized_yaml/archaea/sporolituus_thermophilus_medium.yaml
 CultureMech:000304	data/normalized_yaml/archaea/modified_balchs_methanogen_medium_1_b.yaml

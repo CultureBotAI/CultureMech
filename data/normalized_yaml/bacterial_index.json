@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-27T19:46:37.947640+00:00",
+  "generated": "2026-07-29T02:09:42.254632+00:00",
   "category": "bacterial",
-  "count": 14302,
+  "count": 14305,
   "recipes": {
     "CultureMech:002439": {
       "name": "0_01_lb_seawater_medium",
@@ -3162,6 +3162,18 @@
         "bacterial"
       ]
     },
+    "CultureMech:000299": {
+      "name": "hp_101_halophile_medium",
+      "filename": "JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:000299",
+      "source_id": "mediadive.medium:J464",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true
+    },
     "CultureMech:002813": {
       "name": "chopped_meat_medium_with_carbohydrates",
       "filename": "JCM_J465_CHOPPED_MEAT_MEDIUM_WITH_CARBOHYDRATES.yaml",
@@ -3346,6 +3358,17 @@
       "ingredient_count": 3,
       "id": "CultureMech:002929",
       "source_id": "mediadive.medium:J581",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ]
+    },
+    "CultureMech:000301": {
+      "name": "moderate_halophile_medium",
+      "filename": "JCM_J599_moderate_halophile_medium.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:000301",
+      "source_id": "mediadive.medium:J599",
       "source": "MediaDive",
       "categories": [
         "bacterial"
@@ -32672,6 +32695,17 @@
         "bacterial"
       ],
       "has_hierarchy_enrichment": true
+    },
+    "CultureMech:000256": {
+      "name": "acido_thermophile_medium",
+      "filename": "acido_thermophile_medium.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:000256",
+      "source_id": "mediadive.medium:1433",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ]
     },
     "CultureMech:001175": {
       "name": "acidobacteriaceae_medium_modified_vsb_medium",

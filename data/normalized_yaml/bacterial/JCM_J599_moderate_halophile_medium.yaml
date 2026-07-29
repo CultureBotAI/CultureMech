@@ -1,7 +1,7 @@
 id: CultureMech:000301
 name: moderate_halophile_medium
 original_name: MODERATE HALOPHILE MEDIUM
-category: archaea
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -139,3 +139,9 @@ curation_history:
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+
+- timestamp: '2026-07-29T02:09:00.657591Z'
+  curator: domain-growth-evidence
+  action: ANNOTATED
+  changes: category
+  notes: 'Moved archaea/ -> bacterial/ and restamped category on growth evidence: kg-microbe records only bacterial taxa growing in this medium (Salinicoccus hispanicus, Salinicoccus roseus). The name carries a physiology (halophile/thermophile) that spans both domains, so the previous archaea/ placement was unsubstantiated (#138). Filename disambiguated with the source id because a DIFFERENT medium already occupies the original name in bacterial/ (#116).'

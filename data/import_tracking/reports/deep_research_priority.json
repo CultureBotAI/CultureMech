@@ -12429,6 +12429,53 @@
     "name_collision_count": 3
   },
   {
+    "recipe_name": "moderate_halophile_medium",
+    "file_path": "bacterial/JCM_J599_moderate_halophile_medium.yaml",
+    "id": "CultureMech:000301",
+    "name": "moderate_halophile_medium",
+    "original_name": "MODERATE HALOPHILE MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J599 (mediadive.medium:J599)",
+    "score": 84.0,
+    "subtotal": 84,
+    "category_multiplier": 1.0,
+    "ingredient_count": 10,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 10,
+        "with_concentration": 10,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "name_collision_count": 3
+  },
+  {
     "recipe_name": "ancalomicrobium_medium",
     "file_path": "bacterial/JCM_J601_ANCALOMICROBIUM_MEDIUM.yaml",
     "id": "CultureMech:002949",
@@ -74425,6 +74472,52 @@
     "name_collision_count": 4
   },
   {
+    "recipe_name": "acido_thermophile_medium",
+    "file_path": "bacterial/acido_thermophile_medium.yaml",
+    "id": "CultureMech:000256",
+    "name": "acido_thermophile_medium",
+    "original_name": "ACIDO-THERMOPHILE MEDIUM",
+    "category": "bacterial",
+    "media_term": "DSMZ Medium 1433 (mediadive.medium:1433)",
+    "score": 82.0,
+    "subtotal": 82,
+    "category_multiplier": 1.0,
+    "ingredient_count": 16,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 35,
+        "count": 16,
+        "with_concentration": 16,
+        "bonus": 5
+      },
+      "source": {
+        "score": 18,
+        "kind": "MediaDive",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    }
+  },
+  {
     "recipe_name": "activated_carbon_medium",
     "file_path": "bacterial/activated_carbon_medium.yaml",
     "id": "CultureMech:001956",
@@ -133202,53 +133295,6 @@
     "name_collision_count": 2
   },
   {
-    "recipe_name": "moderate_halophile_medium",
-    "file_path": "archaea/moderate_halophile_medium.yaml",
-    "id": "CultureMech:000301",
-    "name": "moderate_halophile_medium",
-    "original_name": "MODERATE HALOPHILE MEDIUM",
-    "category": "archaea",
-    "media_term": "JCM Medium J599 (mediadive.medium:J599)",
-    "score": 79.8,
-    "subtotal": 84,
-    "category_multiplier": 0.95,
-    "ingredient_count": 10,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; JCM-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 10,
-        "with_concentration": 10,
-        "bonus": 5
-      },
-      "source": {
-        "score": 20,
-        "kind": "JCM",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "name_collision_count": 3
-  },
-  {
     "recipe_name": "moderate_halophile_medium_2",
     "file_path": "archaea/moderate_halophile_medium_2.yaml",
     "id": "CultureMech:000290",
@@ -168078,52 +168124,6 @@
         "score": 35,
         "count": 14,
         "with_concentration": 14,
-        "bonus": 5
-      },
-      "source": {
-        "score": 18,
-        "kind": "MediaDive",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    }
-  },
-  {
-    "recipe_name": "acido_thermophile_medium",
-    "file_path": "archaea/acido_thermophile_medium.yaml",
-    "id": "CultureMech:000256",
-    "name": "acido_thermophile_medium",
-    "original_name": "ACIDO-THERMOPHILE MEDIUM",
-    "category": "archaea",
-    "media_term": "DSMZ Medium 1433 (mediadive.medium:1433)",
-    "score": 77.9,
-    "subtotal": 82,
-    "category_multiplier": 0.95,
-    "ingredient_count": 16,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; MediaDive-anchored citations; recipe diff feasible",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 35,
-        "count": 16,
-        "with_concentration": 16,
         "bonus": 5
       },
       "source": {
@@ -260824,6 +260824,58 @@
       }
     },
     "name_collision_count": 7
+  },
+  {
+    "recipe_name": "hp_101_halophile_medium",
+    "file_path": "bacterial/JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml",
+    "id": "CultureMech:000299",
+    "name": "hp_101_halophile_medium",
+    "original_name": "HP 101 HALOPHILE MEDIUM",
+    "category": "bacterial",
+    "media_term": "JCM Medium J464 (mediadive.medium:J464)",
+    "score": 69.0,
+    "subtotal": 69,
+    "category_multiplier": 1.0,
+    "ingredient_count": 6,
+    "real_organism_count": 0,
+    "expected_research_yield": "net-new organism set; JCM-anchored citations",
+    "score_breakdown": {
+      "ingredients": {
+        "score": 20,
+        "count": 6,
+        "with_concentration": 6,
+        "bonus": 5
+      },
+      "source": {
+        "score": 20,
+        "kind": "JCM",
+        "via": "media_term"
+      },
+      "organism_gap": {
+        "score": 20,
+        "raw_count": 0,
+        "real_count": 0,
+        "with_taxon": 0
+      },
+      "discoverability": {
+        "score": 9,
+        "hits": [
+          "applications",
+          "notes_url",
+          "original_name"
+        ]
+      },
+      "strain_markers": {
+        "score": 0,
+        "markers": []
+      }
+    },
+    "identical_records": [
+      "archaea/hp_101_halophile_medium.yaml",
+      "bacterial/hp_101_halophile_medium.yaml"
+    ],
+    "identical_record_count": 2,
+    "name_collision_count": 2
   },
   {
     "recipe_name": "chopped_meat_medium_with_carbohydrates",
@@ -378702,58 +378754,6 @@
         "markers": []
       }
     }
-  },
-  {
-    "recipe_name": "hp_101_halophile_medium",
-    "file_path": "archaea/JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml",
-    "id": "CultureMech:000299",
-    "name": "hp_101_halophile_medium",
-    "original_name": "HP 101 HALOPHILE MEDIUM",
-    "category": "archaea",
-    "media_term": "JCM Medium J464 (mediadive.medium:J464)",
-    "score": 65.55,
-    "subtotal": 69,
-    "category_multiplier": 0.95,
-    "ingredient_count": 6,
-    "real_organism_count": 0,
-    "expected_research_yield": "net-new organism set; JCM-anchored citations",
-    "score_breakdown": {
-      "ingredients": {
-        "score": 20,
-        "count": 6,
-        "with_concentration": 6,
-        "bonus": 5
-      },
-      "source": {
-        "score": 20,
-        "kind": "JCM",
-        "via": "media_term"
-      },
-      "organism_gap": {
-        "score": 20,
-        "raw_count": 0,
-        "real_count": 0,
-        "with_taxon": 0
-      },
-      "discoverability": {
-        "score": 9,
-        "hits": [
-          "applications",
-          "notes_url",
-          "original_name"
-        ]
-      },
-      "strain_markers": {
-        "score": 0,
-        "markers": []
-      }
-    },
-    "identical_records": [
-      "archaea/hp_101_halophile_medium.yaml",
-      "bacterial/hp_101_halophile_medium.yaml"
-    ],
-    "identical_record_count": 2,
-    "name_collision_count": 2
   },
   {
     "recipe_name": "halobacteria_medium",
