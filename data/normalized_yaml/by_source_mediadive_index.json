@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T19:48:25.990031+00:00",
+  "generated": "2026-07-29T02:11:07.782530+00:00",
   "source": "MediaDive",
   "count": 3325,
   "recipes": {
@@ -257,19 +257,6 @@
       "has_hierarchy_enrichment": true,
       "category_dir": "archaea"
     },
-    "CultureMech:000299": {
-      "name": "hp_101_halophile_medium",
-      "filename": "JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml",
-      "ingredient_count": 6,
-      "id": "CultureMech:000299",
-      "source_id": "mediadive.medium:J464",
-      "source": "MediaDive",
-      "categories": [
-        "archaea"
-      ],
-      "has_hierarchy_enrichment": true,
-      "category_dir": "archaea"
-    },
     "CultureMech:002856": {
       "name": "ignisphaera_medium",
       "filename": "JCM_J506_IGNISPHAERA_MEDIUM.yaml",
@@ -420,18 +407,6 @@
       "ingredient_count": 28,
       "id": "CultureMech:003282",
       "source_id": "mediadive.medium:J934",
-      "source": "MediaDive",
-      "categories": [
-        "archaea"
-      ],
-      "category_dir": "archaea"
-    },
-    "CultureMech:000256": {
-      "name": "acido_thermophile_medium",
-      "filename": "acido_thermophile_medium.yaml",
-      "ingredient_count": 16,
-      "id": "CultureMech:000256",
-      "source_id": "mediadive.medium:1433",
       "source": "MediaDive",
       "categories": [
         "archaea"
@@ -2789,18 +2764,6 @@
       "ingredient_count": 23,
       "id": "CultureMech:003290",
       "source_id": "mediadive.medium:J942",
-      "source": "MediaDive",
-      "categories": [
-        "archaea"
-      ],
-      "category_dir": "archaea"
-    },
-    "CultureMech:000301": {
-      "name": "moderate_halophile_medium",
-      "filename": "moderate_halophile_medium.yaml",
-      "ingredient_count": 10,
-      "id": "CultureMech:000301",
-      "source_id": "mediadive.medium:J599",
       "source": "MediaDive",
       "categories": [
         "archaea"
@@ -6063,6 +6026,19 @@
       ],
       "category_dir": "bacterial"
     },
+    "CultureMech:000299": {
+      "name": "hp_101_halophile_medium",
+      "filename": "JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:000299",
+      "source_id": "mediadive.medium:J464",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true,
+      "category_dir": "bacterial"
+    },
     "CultureMech:002813": {
       "name": "chopped_meat_medium_with_carbohydrates",
       "filename": "JCM_J465_CHOPPED_MEAT_MEDIUM_WITH_CARBOHYDRATES.yaml",
@@ -6263,6 +6239,18 @@
       "ingredient_count": 3,
       "id": "CultureMech:002929",
       "source_id": "mediadive.medium:J581",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ],
+      "category_dir": "bacterial"
+    },
+    "CultureMech:000301": {
+      "name": "moderate_halophile_medium",
+      "filename": "JCM_J599_moderate_halophile_medium.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:000301",
+      "source_id": "mediadive.medium:J599",
       "source": "MediaDive",
       "categories": [
         "bacterial"
@@ -7533,6 +7521,18 @@
         "bacterial"
       ],
       "has_hierarchy_enrichment": true,
+      "category_dir": "bacterial"
+    },
+    "CultureMech:000256": {
+      "name": "acido_thermophile_medium",
+      "filename": "acido_thermophile_medium.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:000256",
+      "source_id": "mediadive.medium:1433",
+      "source": "MediaDive",
+      "categories": [
+        "bacterial"
+      ],
       "category_dir": "bacterial"
     },
     "CultureMech:001175": {

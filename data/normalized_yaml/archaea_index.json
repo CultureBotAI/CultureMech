@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-27T19:46:29.456684+00:00",
+  "generated": "2026-07-29T02:09:35.493057+00:00",
   "category": "archaea",
-  "count": 746,
+  "count": 743,
   "recipes": {
     "CultureMech:000252": {
       "name": "halophilic_medium",
@@ -318,18 +318,6 @@
       "ingredient_count": 37,
       "id": "CultureMech:002715",
       "source_id": "mediadive.medium:J355",
-      "source": "MediaDive",
-      "categories": [
-        "archaea"
-      ],
-      "has_hierarchy_enrichment": true
-    },
-    "CultureMech:000299": {
-      "name": "hp_101_halophile_medium",
-      "filename": "JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml",
-      "ingredient_count": 6,
-      "id": "CultureMech:000299",
-      "source_id": "mediadive.medium:J464",
       "source": "MediaDive",
       "categories": [
         "archaea"
@@ -4345,17 +4333,6 @@
         "archaea"
       ]
     },
-    "CultureMech:000256": {
-      "name": "acido_thermophile_medium",
-      "filename": "acido_thermophile_medium.yaml",
-      "ingredient_count": 16,
-      "id": "CultureMech:000256",
-      "source_id": "mediadive.medium:1433",
-      "source": "MediaDive",
-      "categories": [
-        "archaea"
-      ]
-    },
     "CultureMech:002067": {
       "name": "acidolobus_aceticus_medium",
       "filename": "acidolobus_aceticus_medium.yaml",
@@ -7300,17 +7277,6 @@
       "ingredient_count": 23,
       "id": "CultureMech:003290",
       "source_id": "mediadive.medium:J942",
-      "source": "MediaDive",
-      "categories": [
-        "archaea"
-      ]
-    },
-    "CultureMech:000301": {
-      "name": "moderate_halophile_medium",
-      "filename": "moderate_halophile_medium.yaml",
-      "ingredient_count": 10,
-      "id": "CultureMech:000301",
-      "source_id": "mediadive.medium:J599",
       "source": "MediaDive",
       "categories": [
         "archaea"

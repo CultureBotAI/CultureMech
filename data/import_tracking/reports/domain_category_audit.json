@@ -38,16 +38,6 @@
       "name": "NATRONOARCHAEA MEDIUM II"
     },
     {
-      "file": "archaea/JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml",
-      "id": "CultureMech:000299",
-      "name": "HP 101 HALOPHILE MEDIUM"
-    },
-    {
-      "file": "archaea/acido_thermophile_medium.yaml",
-      "id": "CultureMech:000256",
-      "name": "ACIDO-THERMOPHILE MEDIUM"
-    },
-    {
       "file": "archaea/alkalophilic_halophile_medium.yaml",
       "id": "CultureMech:000255",
       "name": "ALKALOPHILIC HALOPHILE MEDIUM"
@@ -86,11 +76,6 @@
       "file": "archaea/medium_for_aciduric_thermophilic_bacillus_strains.yaml",
       "id": "CultureMech:000277",
       "name": "MEDIUM FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS"
-    },
-    {
-      "file": "archaea/moderate_halophile_medium.yaml",
-      "id": "CultureMech:000301",
-      "name": "MODERATE HALOPHILE MEDIUM"
     },
     {
       "file": "archaea/moderate_halophile_medium_2.yaml",
