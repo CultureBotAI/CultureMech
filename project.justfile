@@ -965,6 +965,16 @@ check-chebi-grounding *args:
     uv run python scripts/audit_chebi_consistency.py \
         --out reports/chebi_consistency.tsv --max-allowed 101 {{args}}
 
+# Rebuild data/culturemech_id_registry.tsv from the corpus. A category move
+# changes a record's path but not its id, so bulk recategorizations rot the
+# registry silently (#144 — it reached 5,511 rows pointing at missing files).
+# Never mints, retires or reassigns an id; refuses to run on duplicate ids or on
+# records with no `id:` — those are `assign-ids`' job.
+#     just refresh-id-registry --dry-run   # report drift only
+[group('QC')]
+refresh-id-registry *args="":
+    uv run --extra dev python scripts/refresh_id_registry.py {{args}}
+
 # Scan-only collision check for CultureMech:NNNNNN IDs. Exits non-zero if any
 # cross-file duplicates are detected. Use as a pre-commit / CI safety net.
 [group('QC')]
