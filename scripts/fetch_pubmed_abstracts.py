@@ -1,4 +1,4 @@
-#!/usr/bin/env /opt/homebrew/bin/python3.13
+#!/usr/bin/env python3
 """Fetch PubMed abstracts for every PMID referenced by CultureMech recipe
 YAMLs and cache them as Markdown files in
 `CultureMech/references_cache/PMID_NNNNNNNN.md`.

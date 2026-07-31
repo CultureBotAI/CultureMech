@@ -3,6 +3,24 @@
 
 set dotenv-load := true
 
+# Shared tooling lives in the culturebotai-claw checkout. Override CLAW_SRC when
+# claw is not the default sibling directory — CI checks it out elsewhere.
+claw_src := env_var_or_default("CLAW_SRC", "../culturebotai-claw/src")
+claw_root := parent_directory(claw_src)
+
+# Fail loudly when a shared claw module is missing, rather than running on and
+# producing an empty or wrong result. A skip-when-missing variant of this check
+# is exactly what let a vendored-sync job pass while verifying nothing
+# (CultureMech#112 lane).
+_require-claw module:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    if [ ! -d "{{claw_src}}/{{module}}" ]; then
+      echo "error: shared module '{{module}}' not found under '{{claw_src}}'." >&2
+      echo "Set CLAW_SRC to the src/ directory of a culturebotai-claw checkout." >&2
+      exit 1
+    fi
+
 import 'project.justfile'
 
 # Default recipe: show help
@@ -24,20 +42,20 @@ vs file:
 # different YAML source via culturemech.render). See
 # ../culturebotai-claw/docs/proposals/phase2_culturemech_html_pages_and_qc_dashboard.md
 gen-media-pages *args:
-    /opt/homebrew/bin/python3.13 src/culturemech/render_media_pages.py {{args}}
+    uv run python src/culturemech/render_media_pages.py {{args}}
 
 # Generate the QC dashboard (slot coverage + matplotlib chart) into
 # dashboard/. Driven by conf/qc_config.yaml.
-gen-qc-dashboard:
-    PYTHONPATH=../culturebotai-claw/src /opt/homebrew/bin/python3.13 \
+gen-qc-dashboard: (_require-claw "kg_microbe_qc")
+    PYTHONPATH={{claw_src}} uv run python \
       -m kg_microbe_qc --config conf/qc_config.yaml --output dashboard
 
 # Knowledge-gap scan (Europe PMC, free) via shared kg_microbe_kgscan in claw.
 # Dry-run by default → reports/knowledge_gap_scan.{json,md}. Pass `--apply`
 # (and e.g. --limit/--min-score) to seed Discussion(kind=KNOWLEDGE_GAP).
-knowledge-gap-scan *args:
-    PYTHONPATH=../culturebotai-claw/src /opt/homebrew/bin/python3.13 \
-      -m kg_microbe_kgscan --config conf/kgscan_config.yaml {{args}}
+knowledge-gap-scan *args: (_require-claw "kg_microbe_kgscan")
+    PYTHONPATH={{claw_src}} uv run python -m kg_microbe_kgscan \
+      --config conf/kgscan_config.yaml {{args}}
 
 # Composite: media pages + QC dashboard (Phase 2 outputs).
 gen-phase2: gen-media-pages gen-qc-dashboard
@@ -49,43 +67,43 @@ gen-phase2: gen-media-pages gen-qc-dashboard
 # evidence) tuples per MediaRecipe and emit one proposal YAML per medium
 # under workspace/reports/growth_evidence_proposals/. Default dry-run.
 propose-growth *args:
-    /opt/homebrew/bin/python3.13 scripts/propose_growth_evidence.py {{args}}
+    uv run python scripts/propose_growth_evidence.py {{args}}
 
 # Phase B: harvest PMIDs from data/normalized_yaml/**/*.yaml evidence blocks
 # and cache abstracts as Markdown under references_cache/. Idempotent.
 fetch-pubmed *args:
-    /opt/homebrew/bin/python3.13 scripts/fetch_pubmed_abstracts.py {{args}}
+    uv run python scripts/fetch_pubmed_abstracts.py {{args}}
 
 # Phase C: read curator-vetted proposals from
 # workspace/reports/growth_evidence_proposals/ and write target_organisms /
 # growth_metrics / genome_assembly_id blocks into the MediaRecipe YAMLs.
 apply-growth *args:
-    /opt/homebrew/bin/python3.13 scripts/apply_growth_evidence.py {{args}}
+    uv run python scripts/apply_growth_evidence.py {{args}}
 
 # Phase D: anti-hallucination gate. Verify every evidence snippet attached
 # to a target_organisms or growth_metrics block appears verbatim in the
 # cached PubMed abstract for the cited PMID. Exit 2 on any mismatch.
 validate-growth *args:
-    /opt/homebrew/bin/python3.13 scripts/validate_evidence_references.py {{args}}
+    uv run python scripts/validate_evidence_references.py {{args}}
 
 # Phase E: fill missing genome_assembly_id values for organisms with a
 # resolved NCBITaxon term — local SAMN TSV first, then NCBI Datasets API
 # fallback. Default dry-run.
 enrich-genomes *args:
-    /opt/homebrew/bin/python3.13 scripts/enrich_genome_ids.py {{args}}
+    uv run python scripts/enrich_genome_ids.py {{args}}
 
 # Assess ingredient, concentration, and candidate media-variant state across
 # data/normalized_yaml/**/*.yaml.
 review-media-content *args:
-    /opt/homebrew/bin/python3.13 scripts/build_media_content_review_manifest.py {{args}}
+    uv run python scripts/build_media_content_review_manifest.py {{args}}
 
 # Propose parent/child MediaRecipe variant links from the content review manifest.
 propose-media-variant-links *args:
-    /opt/homebrew/bin/python3.13 scripts/propose_media_variant_links.py {{args}}
+    uv run python scripts/propose_media_variant_links.py {{args}}
 
 # Validate bidirectional parent/child MediaRecipe variant links.
 validate-media-variant-links *args:
-    /opt/homebrew/bin/python3.13 scripts/validate_media_variant_links.py {{args}}
+    uv run python scripts/validate_media_variant_links.py {{args}}
 
 # Dry-run or apply proposed parent/child MediaRecipe variant links. Pass --apply
 # explicitly to write YAML edits.
@@ -115,6 +133,6 @@ migrate-medium-type-axes *args:
     uv run --extra dev python scripts/migrate_medium_type_axes.py {{args}}
 
 # Discussions / knowledge-gap browser (shared kg_microbe_discussions in claw).
-gen-discussions-data:
-    PYTHONPATH=../culturebotai-claw/src /opt/homebrew/bin/python3.13 \
+gen-discussions-data: (_require-claw "kg_microbe_discussions")
+    PYTHONPATH={{claw_src}} uv run python \
       -m kg_microbe_discussions --config conf/discussions_config.yaml --output app/discussions
