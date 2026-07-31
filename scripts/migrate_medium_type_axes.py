@@ -70,12 +70,25 @@ def load_yaml(path: Path) -> dict[str, Any]:
 
 
 def write_yaml(path: Path, data: dict[str, Any]) -> None:
-    if ROUND_TRIP_YAML:
-        with path.open("w") as handle:
-            ROUND_TRIP_YAML.dump(data, handle)
-        path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n")
-    else:
-        path.write_text(pyyaml.safe_dump(data, sort_keys=False, allow_unicode=True))
+    """Round-trip write. Refuses to write at all without ruamel (#153).
+
+    The old fallback here was `pyyaml.safe_dump`, which reflows the whole record
+    and drops comments — measured at a 37-line diff on a 164-line record where
+    ruamel produces 1. Reached only via a bare `except ImportError`, that turned
+    a missing transitive dependency into silent corpus-wide churn, which is the
+    failure #141 describes. Refusing is the safe direction: the caller loses a
+    write, not the provenance in the file.
+    """
+    if not ROUND_TRIP_YAML:
+        raise RuntimeError(
+            f"refusing to write {path}: ruamel.yaml is unavailable, and the pyyaml "
+            "fallback reflows records and strips comments. Install it "
+            "(`uv sync`) — it is a declared dependency — or use --text, which "
+            "splices lines in without a YAML writer."
+        )
+    with path.open("w") as handle:
+        ROUND_TRIP_YAML.dump(data, handle)
+    path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n")
 
 
 def _set_after(doc: dict[str, Any], anchor: str, key: str, value: Any) -> None:

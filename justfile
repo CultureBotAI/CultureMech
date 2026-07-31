@@ -97,7 +97,7 @@ apply-media-variant-links *args:
 # no Edison credits. Pass --template / --out to override. e.g.
 #   just validate-media-recipe 1_10_r2a_medium
 validate-media-recipe target *args:
-    /opt/homebrew/bin/python3.13 scripts/render_media_prompt.py --target {{target}} {{args}}
+    uv run python scripts/render_media_prompt.py --target {{target}} {{args}}
 
 # Same validation, run through the Edison deep-research API (spends credits).
 # Pass --dry-run first to audit the rendered query. e.g.
