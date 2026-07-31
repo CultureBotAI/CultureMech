@@ -221,6 +221,11 @@ def template_vars(doc: dict[str, Any], media_file: Path) -> dict[str, str]:
         "original_name": str(doc.get("original_name", "")),
         "category": str(doc.get("category", media_file.parent.name)),
         "medium_type": str(doc.get("medium_type", "")),
+        # The three axes that supersede medium_type. Shown alongside it rather
+        # than instead of it: most records still carry only the deprecated slot.
+        "composition_type": str(doc.get("composition_type", "")),
+        "nutritional_class": str(doc.get("nutritional_class", "")),
+        "functional_role": _join_values(doc.get("functional_role")),
         "physical_state": str(doc.get("physical_state", "")),
         "media_term": _name_with_id(media_term) if media_term else "",
         "conditions": summarize_conditions(doc),

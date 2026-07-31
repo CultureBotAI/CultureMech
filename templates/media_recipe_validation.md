@@ -13,7 +13,10 @@ and returns curator-ready corrections.
 - **Name:** {media_name}
 - **Original/source name:** {original_name}
 - **Category:** {category}
-- **Medium type:** {medium_type}
+- **Medium type (deprecated):** {medium_type}
+- **Composition type:** {composition_type}
+- **Nutritional class:** {nutritional_class}
+- **Functional role:** {functional_role}
 - **Physical state:** {physical_state}
 - **Media term (authoritative source ref):** {media_term}
 - **Synonyms:** {synonyms}
