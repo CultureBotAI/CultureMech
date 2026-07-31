@@ -121,7 +121,7 @@ MediaIngredientMech maintains **conservative chemical distinctions**:
 
 #### Files Created
 
-1. **`.claude/skills/manage-ingredient-hierarchy/skill.md`**
+1. **`.claude/skills/manage-ingredient-hierarchy/SKILL.md`**
    - Claude Code skill for interactive hierarchy management
    - Actions:
      - Import hierarchy from MediaIngredientMech

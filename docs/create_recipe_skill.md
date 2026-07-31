@@ -298,7 +298,7 @@ just validate-recipes summary
 
 ## 📚 **Related**
 
-- **Skill definition**: `.claude/skills/create-recipe/skill.md`
+- **Skill definition**: `.claude/skills/create-recipe/SKILL.md`
 - **Schema**: `src/culturemech/schema/culturemech.yaml`
 - **ID management**: `manage-identifiers` skill
 - **Validation**: `just validate-schema {file}`

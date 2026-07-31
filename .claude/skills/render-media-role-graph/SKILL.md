@@ -152,8 +152,8 @@ Facet color legend (matches matplotlib tab10 palette):
 ## Related skills
 
 - `.claude/skills/audit-schema-gaps/SKILL.md` — check what facet slots exist / are populated before rendering.
-- `.claude/skills/review-recipes/skill.md` — the recipe-review workflow that consumes these graphs during curator review.
-- `.claude/skills/deep-research-medium/skill.md` — feeds role assignments this skill visualizes (Step 7b lane).
+- `.claude/skills/review-recipes/SKILL.md` — the recipe-review workflow that consumes these graphs during curator review.
+- `.claude/skills/deep-research-medium/SKILL.md` — feeds role assignments this skill visualizes (Step 7b lane).
 
 ## Related scripts
 

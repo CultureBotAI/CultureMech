@@ -10,7 +10,7 @@ version: 2.1.0
 # Schema gap analysis (CultureMech)
 
 The conceptual framework — why three axes, error-class heuristics, common anti-patterns — lives once at the cross-Mech version in claw:
-https://github.com/CultureBotAI/culturebotai-claw/blob/main/.claude/skills/schema-gap-analysis/skill.md
+https://github.com/CultureBotAI/culturebotai-claw/blob/main/.claude/skills/schema-gap-analysis/SKILL.md
 
 This file is the CultureMech-specific operational version. Every command below runs as-is.
 
@@ -119,4 +119,4 @@ Total: 2,943 errors across 4,289 records (2026-05-17). Same data, deeper audit i
 - Custom validator (tolerant): `src/culturemech/validation/validator.py`
 - Renderer (writes to `pages/`, not validated YAML): `src/culturemech/render_media_pages.py`
 - Deeper audit skill: `.claude/skills/audit-schema-gaps/SKILL.md`
-- Cross-Mech framework + new-Mech bootstrap template: [claw/.claude/skills/schema-gap-analysis](https://github.com/CultureBotAI/culturebotai-claw/blob/main/.claude/skills/schema-gap-analysis/skill.md)
+- Cross-Mech framework + new-Mech bootstrap template: [claw/.claude/skills/schema-gap-analysis](https://github.com/CultureBotAI/culturebotai-claw/blob/main/.claude/skills/schema-gap-analysis/SKILL.md)

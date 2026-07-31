@@ -1,6 +1,6 @@
 # Validation Rule Definitions
 
-*Reference for the **review-recipes** skill — see [`../skill.md`](../skill.md) for the overview, workflows, and rule summary.*
+*Reference for the **review-recipes** skill — see [`../SKILL.md`](../SKILL.md) for the overview, workflows, and rule summary.*
 
 ---
 
