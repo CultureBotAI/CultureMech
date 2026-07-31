@@ -6,7 +6,7 @@ deferrals here instead of letting them live only in your head or a closed PR.
 Keep the cross-Mech items in sync with the sibling repos' `NEXT_TASKS.md`
 (MIM / CommunityMech / TraitMech).
 
-Last reconciled: 2026-07-30.
+Last reconciled: 2026-07-31.
 
 Shipped 2026-07-22: **#112** drift check extended to `mech_shared.yaml` + last two
 self-generated pins retired; **#113** deep-research priority report refresh +
@@ -48,35 +48,51 @@ rows) and added the six-assertion guard that keeps it honest (closes #144).
 Open issues: **#141** (curation scripts bury changes in reflow noise), **#142**
 (`organism_culture_type` unset on 80% of applicable records), **#145** (record
 moves silently invalidate tracked derived artifacts), **#146** (the unmerged
-`validate-media-recipes` branch). No open PRs.
+`validate-media-recipes` branch), **#149** (generated dataclasses drift silently
+from the schema), plus **#150** and **#151** filed 2026-07-30 — see immediately
+below. No open PRs.
 
 **Three issues are closed on GitHub but their work is not finished** — **#116**,
 **#118** and **#138**. In each case the PR body and merge commit say explicitly
 that it does not close the issue (`Does NOT close #118; the corpus repair
-remains.`), and the issue was closed anyway. The residue is tracked in the
-sections below; do not read "closed" as "done" for those three.
+remains.`), and the issue was closed anyway. Do not read "closed" as "done" for
+those three.
 
-### Read this first: the working tree is on `validate-media-recipes`, not `main`
+Two of the three now have successor issues carrying the residue, filed rather than
+reopened so the audit trail stays legible: **#150** is the corpus repair left over
+from #118, and **#151** is the per-pair collision curation left over from #116.
+Both restate the measured numbers from the committed report artifacts, so neither
+depends on this file staying accurate.
 
-This checkout sits on **`validate-media-recipes`**, which carries a schema axis and
-an 11,088-record backfill that are **not on `main` by any route**. Full detail in
-the #146 section below; the short version is that its state has moved twice since
-the issue was filed and **both of the issue's headline claims are now stale**:
+**#138's residue is still untracked.** It was closed 2026-07-29 the same way, and
+nobody has written down what it left behind. That needs someone who worked it;
+until then it is the one gap here with no issue and no section.
 
-- The branch **is** on the remote — `origin/validate-media-recipes` holds all six
-  original commits (tip `7a2ff6f`). #146 says "never pushed, exists only on one
-  machine"; that was true when filed and is no longer.
-- The **~1,504-conflict merge has already been done, and it was clean.** Local
-  HEAD is `64f5765` "Merge main into validate-media-recipes" (2026-07-30), which
-  merges `origin/main` at #147 into the branch. Its message records why the
-  predicted conflicts did not materialize: the 1,502 doubly-touched records merge
-  cleanly because this branch adds a `composition_type` line while main's
-  recategorizations and id↔label passes edited other lines. Verified: no conflict
-  markers anywhere in the tree, working tree clean.
+### `validate-media-recipes` is merged-forward and pushed — #146 is out of date
 
-**That merge commit is the one thing here that exists on no remote.** It is the
-whole reconciliation, and a `git checkout main` plus a stray branch delete would
-lose it. Push it before doing anything else on this checkout.
+The branch carries a media-type schema axis and an 11,088-record
+`composition_type` backfill that are still **not on `main`**. That part of #146
+stands. **Both of the issue's headline claims do not**, and re-reading the issue
+without this note will send you chasing a problem that has already been solved:
+
+- **It is on the remote.** #146 says "never pushed, exists only on one machine".
+  `origin/validate-media-recipes` now holds the branch.
+- **The predicted ~1,504-conflict merge is done, and it was clean.** Commit
+  `64f5765` "Merge main into validate-media-recipes" merges `origin/main` at #147
+  into the branch, and it is pushed — verified 2026-07-30, no commit reachable
+  from the branch tip is missing from a remote. The conflicts did not materialize
+  because the 1,502 doubly-touched records diverge on different lines: this branch
+  adds a `composition_type` line, while main's recategorizations and id↔label
+  passes edited others. No conflict markers anywhere; working tree clean.
+
+So the remaining question is not "how do we merge this" but **"does the schema axis
+land on `main`, and as what"** — which is a review decision, not a merge problem.
+Update or close #146 accordingly; leaving it as written keeps advertising a
+data-loss risk that no longer exists.
+
+Note this checkout moves between branches frequently (several sessions work these
+repos concurrently), so do not trust a "the working tree is on X" claim in this
+file — check.
 
 ### The deep-research ranking is now trustworthy — read this before using it
 
@@ -364,7 +380,7 @@ Two things to know when working with it:
   medium-level filter — researching one organism against a medium is not the same
   as researching the medium.
 
-## Ingredient mis-normalization (#118) — AUDIT DONE (#135, 2026-07-25), REPAIR PENDING
+## Ingredient mis-normalization (#118, repair now #150) — AUDIT DONE (#135, 2026-07-25), REPAIR PENDING
 
 **Issue #118 is closed on GitHub, but only the audit shipped.** #135's merge
 commit says it outright: `Does NOT close #118; the corpus repair remains.` The
@@ -404,7 +420,7 @@ Still not done from the original ask: nesting the detected cocktails under stock
 `solution` objects, and adding a plausibility validator to the schema-gap /
 label-plausibility harness so new imports cannot reintroduce this.
 
-## Duplicate media sharing filenames across bacterial/ and archaea/ (#116) — PARTLY DONE, closed early
+## Duplicate media sharing filenames across bacterial/ and archaea/ (#116, curation now #151) — PARTLY DONE, closed early
 
 **#116 is closed on GitHub (2026-07-25) but the per-pair curation it asked for is
 still outstanding.** It was closed on #134's landing, and #134 states explicitly
