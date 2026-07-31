@@ -1415,6 +1415,16 @@ gen-docs:
     uv run gen-markdown --dir docs/schema {{schema_path}}
     echo "✓ Schema docs generated at docs/schema/"
 
+# Regenerate the Python dataclasses from the schema. Run this after any edit to
+# culturemech.yaml — tests/test_dataclasses_current.py fails if you forget.
+[group('Schema')]
+gen-dataclasses:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    echo "Generating Python dataclasses from schema..."
+    uv run gen-python {{schema_path}} > src/culturemech/schema/culturemech_dataclasses.py
+    echo "✓ Dataclasses regenerated at src/culturemech/schema/culturemech_dataclasses.py"
+
 [group('Schema')]
 validate-schema-file:
     #!/usr/bin/env bash
