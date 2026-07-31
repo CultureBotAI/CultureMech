@@ -3,6 +3,7 @@ name: medium_966_modified_for_dsm_17972
 original_name: MEDIUM 966 MODIFIED FOR DSM 17972
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 966_17972

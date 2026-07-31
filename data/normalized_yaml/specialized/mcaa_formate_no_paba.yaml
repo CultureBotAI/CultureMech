@@ -1,6 +1,7 @@
 id: CultureMech:015567
 name: McAA formate No pABA
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3

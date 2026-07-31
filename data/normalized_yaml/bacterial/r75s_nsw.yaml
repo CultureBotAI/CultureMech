@@ -3,6 +3,7 @@ name: r75s_nsw
 original_name: R75S:NSW
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C88

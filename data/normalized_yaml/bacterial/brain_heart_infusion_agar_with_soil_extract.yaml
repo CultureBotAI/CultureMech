@@ -3,6 +3,7 @@ name: brain_heart_infusion_agar_with_soil_extract
 original_name: BRAIN HEART INFUSION AGAR WITH SOIL EXTRACT
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J342

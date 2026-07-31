@@ -3,6 +3,7 @@ name: natroniella_medium_for_anb_phb2
 original_name: Natroniella Medium For ANB-PHB2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

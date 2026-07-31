@@ -3,6 +3,7 @@ name: g_1_medium
 original_name: G?1 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

@@ -1,6 +1,7 @@
 id: CultureMech:015634
 name: MoYLS4
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast Extract

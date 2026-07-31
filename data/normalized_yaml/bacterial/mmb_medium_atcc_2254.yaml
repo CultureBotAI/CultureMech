@@ -3,6 +3,7 @@ name: mmb_medium_atcc_2254
 original_name: MMB MEDIUM (ATCC 2254)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.0

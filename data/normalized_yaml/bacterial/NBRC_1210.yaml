@@ -4,6 +4,7 @@ original_name: '1210'
 category: bacterial
 description: 1210. NBRC 1209.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto Yeast Extract (Difco)2.5gBacto Proteose Peptone No. 3 (Difco)2.5gBacto

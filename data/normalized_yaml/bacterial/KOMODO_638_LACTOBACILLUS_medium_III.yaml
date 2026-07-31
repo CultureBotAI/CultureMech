@@ -3,6 +3,7 @@ name: lactobacillus_medium_iii
 original_name: LACTOBACILLUS medium III
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.3
 media_term:

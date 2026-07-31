@@ -3,6 +3,7 @@ name: desulfobacter_medium_with_lactate
 original_name: Desulfobacter Medium With Lactate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

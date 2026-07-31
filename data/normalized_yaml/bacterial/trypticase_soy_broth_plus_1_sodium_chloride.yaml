@@ -3,6 +3,7 @@ name: trypticase_soy_broth_plus_1_sodium_chloride
 original_name: Trypticase soy broth (plus 1% sodium chloride)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: sodium chloride

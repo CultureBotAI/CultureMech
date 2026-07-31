@@ -3,6 +3,7 @@ name: saltwater_medium_with_hydrogen
 original_name: Saltwater Medium With Hydrogen
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

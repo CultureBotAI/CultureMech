@@ -3,6 +3,7 @@ name: agc2_medium
 original_name: AGC2 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 1.8
 media_term:

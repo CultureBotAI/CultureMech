@@ -3,6 +3,7 @@ name: peptone_yeast_medium_with_mgso4
 original_name: PEPTONE-YEAST MEDIUM with MgSO4
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

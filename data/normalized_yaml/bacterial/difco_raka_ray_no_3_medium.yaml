@@ -3,6 +3,7 @@ name: difco_raka_ray_no_3_medium
 original_name: DIFCO RAKA-RAY NO.3 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 5.4
 media_term:

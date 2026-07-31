@@ -3,6 +3,7 @@ name: msv_medium_for_tetracoccus_cechii
 original_name: MSV MEDIUM FOR TETRACOCCUS CECHII
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1587

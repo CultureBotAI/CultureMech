@@ -3,6 +3,7 @@ name: medium_88_modified_for_dsm_7519
 original_name: MEDIUM 88 MODIFIED FOR DSM 7519
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.0
 media_term:

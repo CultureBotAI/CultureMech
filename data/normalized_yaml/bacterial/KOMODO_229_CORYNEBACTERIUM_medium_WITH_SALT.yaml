@@ -3,6 +3,7 @@ name: corynebacterium_medium_with_salt
 original_name: CORYNEBACTERIUM medium WITH SALT
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 229

@@ -3,6 +3,7 @@ name: rhizomicrobium_medium
 original_name: RHIZOMICROBIUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

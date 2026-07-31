@@ -3,6 +3,7 @@ name: cyanobacteria_medium_mcl
 original_name: Cyanobacteria Medium MCL
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1680

@@ -3,6 +3,7 @@ name: medium_246_modified_for_dsm_2165
 original_name: MEDIUM 246 MODIFIED FOR DSM 2165
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 246_2165

@@ -3,6 +3,7 @@ name: tryptic_soy_agar_tsa_carl_roth_gmbh_co
 original_name: Tryptic Soy Agar [TSA] (Carl Roth GmbH & Co.)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Pancreatic digest of casein

@@ -3,6 +3,7 @@ name: thioalkalivibrio_nitratireducens_alen_2_dsm_14787
 original_name: Thioalkalivibrio nitratireducens ALEN 2 = DSM 14787
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 925.8

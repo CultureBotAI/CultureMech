@@ -3,6 +3,7 @@ name: medium_81_modified_for_dsm_21442
 original_name: MEDIUM 81 MODIFIED FOR DSM 21442
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 81_21442

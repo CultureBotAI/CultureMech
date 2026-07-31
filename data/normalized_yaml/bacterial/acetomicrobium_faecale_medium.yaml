@@ -3,6 +3,7 @@ name: acetomicrobium_faecale_medium
 original_name: ACETOMICROBIUM FAECALE MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1057

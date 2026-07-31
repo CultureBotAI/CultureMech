@@ -3,6 +3,7 @@ name: for_dsm_15841_and_dsm_16925
 original_name: For DSM 15841 and DSM 16925
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.5

@@ -2,6 +2,7 @@ name: nitrogen_free_plant_nutrient_solution_for_soybean_growth
 original_name: Nitrogen-free plant nutrient solution for soybean growth
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015438
 ingredients:

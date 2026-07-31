@@ -3,6 +3,7 @@ name: desulfobulbus_sp_medium_marine
 original_name: DESULFOBULBUS SP. MEDIUM (MARINE)
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.1

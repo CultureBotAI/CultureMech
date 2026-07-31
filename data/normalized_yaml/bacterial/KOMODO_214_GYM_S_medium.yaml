@@ -3,6 +3,7 @@ name: gym_s_medium
 original_name: GYM+S medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 214

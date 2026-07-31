@@ -3,6 +3,7 @@ name: desulfotomaculum_halophilum_medium
 original_name: DESULFOTOMACULUM HALOPHILUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 815 | DSMZ Medium: 815 (mediadive.medium:815)

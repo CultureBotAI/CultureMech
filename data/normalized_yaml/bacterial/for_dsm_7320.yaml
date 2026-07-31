@@ -3,6 +3,7 @@ name: for_dsm_7320
 original_name: For DSM 7320
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.3
 media_term:

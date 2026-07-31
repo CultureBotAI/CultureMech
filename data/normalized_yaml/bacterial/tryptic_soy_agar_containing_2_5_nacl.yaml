@@ -3,6 +3,7 @@ name: tryptic_soy_agar_containing_2_5_nacl
 original_name: tryptic soy agar (containing 2.5% NaCl)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: NaCl

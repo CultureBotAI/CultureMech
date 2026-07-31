@@ -3,6 +3,7 @@ name: semi_solid_autotrophic_growth_medium_for_magnetococcus_marinus
 original_name: SEMI-SOLID AUTOTROPHIC GROWTH MEDIUM FOR MAGNETOCOCCUS MARINUS
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.1
 media_term:

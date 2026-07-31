@@ -3,6 +3,7 @@ name: m9_0_27_acetate
 original_name: M9 0.27% acetate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calcium chloride anhydrous

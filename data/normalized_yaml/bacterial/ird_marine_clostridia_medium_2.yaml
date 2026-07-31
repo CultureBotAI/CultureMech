@@ -3,6 +3,7 @@ name: ird_marine_clostridia_medium_2
 original_name: IRD Marine Clostridia Medium-2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: sodium acetate

@@ -3,6 +3,7 @@ name: desulfurobacterium_atlanticum_medium
 original_name: DESULFUROBACTERIUM ATLANTICUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

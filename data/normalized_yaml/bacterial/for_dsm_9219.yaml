@@ -3,6 +3,7 @@ name: for_dsm_9219
 original_name: For DSM 9219
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

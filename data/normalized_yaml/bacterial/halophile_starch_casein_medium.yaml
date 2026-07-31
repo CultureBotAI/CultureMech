@@ -3,6 +3,7 @@ name: halophile_starch_casein_medium
 original_name: Halophile Starch-Casein Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

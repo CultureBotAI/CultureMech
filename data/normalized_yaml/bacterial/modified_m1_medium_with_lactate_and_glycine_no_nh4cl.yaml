@@ -3,6 +3,7 @@ name: modified_m1_medium_with_lactate_and_glycine_no_nh4cl
 original_name: '''Modified M1 Medium with Lactate and Glycine (no NH4Cl'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycine

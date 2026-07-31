@@ -3,6 +3,7 @@ name: modified_m17_medium
 original_name: Modified M17 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 1.0 M MgSO4.7H2O (May and Baker)

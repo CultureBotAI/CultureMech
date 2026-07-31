@@ -3,6 +3,7 @@ name: trypticase_soy_broth_agar_blood
 original_name: TRYPTICASE SOY BROTH AGAR+BLOOD
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 535a

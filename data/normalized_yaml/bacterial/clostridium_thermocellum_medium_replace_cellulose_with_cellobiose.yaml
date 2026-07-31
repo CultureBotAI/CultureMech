@@ -3,6 +3,7 @@ name: clostridium_thermocellum_medium_replace_cellulose_with_cellobiose
 original_name: CLOSTRIDIUM THERMOCELLUM medium_replace_Cellulose_with_Cellobiose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

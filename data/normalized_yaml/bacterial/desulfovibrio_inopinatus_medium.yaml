@@ -3,6 +3,7 @@ name: desulfovibrio_inopinatus_medium
 original_name: DESULFOVIBRIO INOPINATUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 799

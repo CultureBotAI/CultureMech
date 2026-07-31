@@ -3,6 +3,7 @@ name: true_blue_trace_elements_medium_748
 original_name: True Blue Trace Elements (medium 748)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3101

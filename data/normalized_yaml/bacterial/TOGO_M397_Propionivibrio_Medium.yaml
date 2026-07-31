@@ -3,6 +3,7 @@ name: propionivibrio_medium
 original_name: Propionivibrio Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 5 mM Quinic acid

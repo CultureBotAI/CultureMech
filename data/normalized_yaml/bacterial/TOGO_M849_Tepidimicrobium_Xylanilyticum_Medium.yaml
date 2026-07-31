@@ -3,6 +3,7 @@ name: tepidimicrobium_xylanilyticum_medium
 original_name: Tepidimicrobium Xylanilyticum Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Carbon dioxide gas

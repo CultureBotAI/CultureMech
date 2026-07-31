@@ -3,6 +3,7 @@ name: verrucomicrobium_medium
 original_name: Verrucomicrobium Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 0.1 M Tris-HCl (pH 7.5)

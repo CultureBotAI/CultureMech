@@ -3,6 +3,7 @@ name: hemin_medium_for_mycobacterium
 original_name: HEMIN medium FOR MYCOBACTERIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 645a

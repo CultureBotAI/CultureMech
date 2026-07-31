@@ -3,6 +3,7 @@ name: kosmotoga_olearia_medium
 original_name: KOSMOTOGA OLEARIA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

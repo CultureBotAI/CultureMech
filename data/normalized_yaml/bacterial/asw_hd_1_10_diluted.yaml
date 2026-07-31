@@ -3,6 +3,7 @@ name: asw_hd_1_10_diluted
 original_name: ASW-HD (1:10 diluted)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:

@@ -1,6 +1,7 @@
 id: CultureMech:015544
 name: M9 2percentGlucose 100mMammonium
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

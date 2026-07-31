@@ -3,6 +3,7 @@ name: lactic_acid_bacteria_broth
 original_name: LACTIC ACID BACTERIA BROTH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.2
 media_term:

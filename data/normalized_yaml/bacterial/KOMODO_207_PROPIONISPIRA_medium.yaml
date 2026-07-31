@@ -3,6 +3,7 @@ name: propionispira_medium
 original_name: PROPIONISPIRA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 207 | DSMZ Medium: 207 (mediadive.medium:207)

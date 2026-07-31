@@ -3,6 +3,7 @@ name: half_strength_marine_agar
 original_name: Half Strength Marine Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

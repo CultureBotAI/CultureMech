@@ -3,6 +3,7 @@ name: malt_extract_glucose_agar
 original_name: MALT EXTRACT GLUCOSE AGAR
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 5.4
 media_term:

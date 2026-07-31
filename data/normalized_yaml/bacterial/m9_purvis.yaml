@@ -3,6 +3,7 @@ name: m9_purvis
 original_name: M9; Purvis
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

@@ -3,6 +3,7 @@ name: m9_minimal_medium_with_l_lactate
 original_name: M9 minimal medium with l-lactate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: '''(S'

@@ -3,6 +3,7 @@ name: cyanobacteria_medium_ba_50_b_n_2
 original_name: Cyanobacteria Medium BA+50+B+N/2
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1678

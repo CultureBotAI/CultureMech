@@ -3,6 +3,7 @@ name: halorhodospira_neutriphila_medium
 original_name: Halorhodospira Neutriphila Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3 (10%, w/v)

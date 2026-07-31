@@ -3,6 +3,7 @@ name: nmm_with_acetate
 original_name: NMM with acetate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Acetate

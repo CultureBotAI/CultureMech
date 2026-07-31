@@ -3,6 +3,7 @@ name: collimonas_medium
 original_name: COLLIMONAS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

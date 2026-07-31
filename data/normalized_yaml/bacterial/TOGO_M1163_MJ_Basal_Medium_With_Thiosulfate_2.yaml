@@ -3,6 +3,7 @@ name: mj_basal_medium_with_thiosulfate_2
 original_name: MJ Basal Medium With Thiosulfate/2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

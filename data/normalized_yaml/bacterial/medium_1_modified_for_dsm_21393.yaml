@@ -3,6 +3,7 @@ name: medium_1_modified_for_dsm_21393
 original_name: MEDIUM 1 MODIFIED FOR DSM 21393
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1_21393

@@ -3,6 +3,7 @@ name: jcm_medium_no_335
 original_name: JCM MEDIUM No. 335
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
 media_term:

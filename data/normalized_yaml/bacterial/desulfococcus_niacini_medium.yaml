@@ -3,6 +3,7 @@ name: desulfococcus_niacini_medium
 original_name: DESULFOCOCCUS NIACINI MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

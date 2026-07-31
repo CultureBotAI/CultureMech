@@ -1,6 +1,7 @@
 id: CultureMech:015531
 name: Hans Basal Media plus 0.2x 20AA mix
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: PIPES sesquisodium salt

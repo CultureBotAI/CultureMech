@@ -3,6 +3,7 @@ name: clostridium_methylpentosum_medium
 original_name: CLOSTRIDIUM METHYLPENTOSUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 492 | DSMZ Medium: 492 (mediadive.medium:492)

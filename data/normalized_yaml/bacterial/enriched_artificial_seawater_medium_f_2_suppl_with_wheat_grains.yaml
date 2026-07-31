@@ -3,6 +3,7 @@ name: enriched_artificial_seawater_medium_f_2_suppl_with_wheat_grains
 original_name: Enriched Artificial Seawater Medium f/2 suppl. with Wheat Grains
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1723a

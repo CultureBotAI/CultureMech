@@ -3,6 +3,7 @@ name: thiomonas_islandica_medium
 original_name: THIOMONAS ISLANDICA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.0
 media_term:

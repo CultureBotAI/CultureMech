@@ -3,6 +3,7 @@ name: inorganic_salts_starch_agar_isp_4
 original_name: Inorganic Salts-Starch Agar (ISP-4)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: deferrated_synbase_with_ferric_ammonium_citrate_simpson
 original_name: Deferrated synbase with ferric ammonium citrate; simpson
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol

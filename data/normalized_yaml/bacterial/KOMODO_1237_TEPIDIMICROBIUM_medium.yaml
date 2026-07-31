@@ -3,6 +3,7 @@ name: tepidimicrobium_medium
 original_name: TEPIDIMICROBIUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.5
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1237 | DSMZ Medium: 1237

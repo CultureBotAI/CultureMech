@@ -3,6 +3,7 @@ name: nutrient_medium_quinate
 original_name: Nutrient medium + quinate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Quinate

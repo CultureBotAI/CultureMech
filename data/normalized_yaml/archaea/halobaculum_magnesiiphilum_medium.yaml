@@ -3,6 +3,7 @@ name: halobaculum_magnesiiphilum_medium
 original_name: Halobaculum magnesiiphilum medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

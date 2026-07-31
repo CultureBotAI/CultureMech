@@ -3,6 +3,7 @@ name: r2a
 original_name: R2A
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: R2A (Difco)

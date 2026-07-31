@@ -3,6 +3,7 @@ name: seleniivibrio_medium_arsenate
 original_name: SELENIIVIBRIO MEDIUM (ARSENATE)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

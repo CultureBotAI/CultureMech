@@ -3,6 +3,7 @@ name: kaminskyj_minimal_medium
 original_name: Kaminskyj Minimal Medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium nitrate

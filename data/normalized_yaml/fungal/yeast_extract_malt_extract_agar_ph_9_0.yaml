@@ -3,6 +3,7 @@ name: yeast_extract_malt_extract_agar_ph_9_0
 original_name: YEAST EXTRACT-MALT EXTRACT AGAR (pH 9.0)
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

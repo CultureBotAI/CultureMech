@@ -3,6 +3,7 @@ name: medium_545a_modified_for_dsm_17448
 original_name: MEDIUM 545a MODIFIED FOR DSM 17448
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 545a_17448

@@ -3,6 +3,7 @@ name: marine_methanobacterium_medium
 original_name: MARINE METHANOBACTERIUM MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

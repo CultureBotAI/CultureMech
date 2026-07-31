@@ -3,6 +3,7 @@ name: marine_agar_2216_ph_8_5
 original_name: MARINE AGAR 2216 (pH 8.5)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.5
 media_term:

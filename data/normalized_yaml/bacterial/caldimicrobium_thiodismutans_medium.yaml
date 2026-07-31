@@ -3,6 +3,7 @@ name: caldimicrobium_thiodismutans_medium
 original_name: CALDIMICROBIUM THIODISMUTANS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.5

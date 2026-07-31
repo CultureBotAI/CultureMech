@@ -3,6 +3,7 @@ name: ktm_medium
 original_name: KTM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1163 | DSMZ Medium: 1163

@@ -3,6 +3,7 @@ name: medium_426_modified_for_dsm_46365
 original_name: MEDIUM 426 MODIFIED FOR DSM 46365
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 426_46365

@@ -3,6 +3,7 @@ name: medium_662_modified_for_dsm_6699
 original_name: MEDIUM 662 MODIFIED FOR DSM 6699
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 662_6699

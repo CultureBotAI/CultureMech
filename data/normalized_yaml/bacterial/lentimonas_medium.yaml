@@ -3,6 +3,7 @@ name: lentimonas_medium
 original_name: LENTIMONAS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.8
 media_term:

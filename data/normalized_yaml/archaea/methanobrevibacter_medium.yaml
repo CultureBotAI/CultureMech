@@ -3,6 +3,7 @@ name: methanobrevibacter_medium
 original_name: METHANOBREVIBACTER MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

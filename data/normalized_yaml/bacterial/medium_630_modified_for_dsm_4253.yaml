@@ -3,6 +3,7 @@ name: medium_630_modified_for_dsm_4253
 original_name: MEDIUM 630 MODIFIED FOR DSM 4253
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 630_4253

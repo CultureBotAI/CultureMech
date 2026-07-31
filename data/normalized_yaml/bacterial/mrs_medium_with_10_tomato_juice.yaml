@@ -3,6 +3,7 @@ name: mrs_medium_with_10_tomato_juice
 original_name: MRS MEDIUM WITH 10% TOMATO JUICE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.2
 media_term:

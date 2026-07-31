@@ -3,6 +3,7 @@ name: pyrolobus_fumarii_medium
 original_name: PYROLOBUS FUMARII MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.8
 media_term:

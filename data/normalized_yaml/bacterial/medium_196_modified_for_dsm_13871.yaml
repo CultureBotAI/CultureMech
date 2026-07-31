@@ -3,6 +3,7 @@ name: medium_196_modified_for_dsm_13871
 original_name: MEDIUM 196 MODIFIED FOR DSM 13871
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 196_13871

@@ -3,6 +3,7 @@ name: casman_agar_base
 original_name: Casman-Agar-Base
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 5007

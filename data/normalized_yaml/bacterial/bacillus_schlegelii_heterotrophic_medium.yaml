@@ -3,6 +3,7 @@ name: bacillus_schlegelii_heterotrophic_medium
 original_name: BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.1
 media_term:

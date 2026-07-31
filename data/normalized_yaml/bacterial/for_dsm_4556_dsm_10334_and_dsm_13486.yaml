@@ -3,6 +3,7 @@ name: for_dsm_4556_dsm_10334_and_dsm_13486
 original_name: For DSM 4556, DSM 10334 and DSM 13486
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

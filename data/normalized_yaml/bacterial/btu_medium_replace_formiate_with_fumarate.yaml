@@ -3,6 +3,7 @@ name: btu_medium_replace_formiate_with_fumarate
 original_name: BTU medium_replace_Formiate_with_Fumarate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 413_replace_Formiate_with_Fumarate

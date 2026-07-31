@@ -3,6 +3,7 @@ name: mineral_medium_brunner
 original_name: Mineral Medium (Brunner)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

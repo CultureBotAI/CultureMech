@@ -3,6 +3,7 @@ name: 50_x_pye
 original_name: 50 x PYE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 8001

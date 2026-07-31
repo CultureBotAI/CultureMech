@@ -3,6 +3,7 @@ name: defined_medium_for_sulfate_reducing_bacteria_with_butyrate
 original_name: DEFINED MEDIUM FOR SULFATE-REDUCING BACTERIA WITH BUTYRATE
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

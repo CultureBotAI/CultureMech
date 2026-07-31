@@ -3,6 +3,7 @@ name: methanobacterium_adherens_medium
 original_name: METHANOBACTERIUM ADHERENS MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.7
 media_term:

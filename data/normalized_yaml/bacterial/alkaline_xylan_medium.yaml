@@ -3,6 +3,7 @@ name: alkaline_xylan_medium
 original_name: ALKALINE XYLAN MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:

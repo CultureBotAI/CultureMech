@@ -3,6 +3,7 @@ name: embryonated_antibiotic_free_and_pathogen_free_eggs
 original_name: Embryonated, antibiotic-free, and pathogen-free eggs
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Whole egg

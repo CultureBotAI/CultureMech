@@ -4,6 +4,7 @@ original_name: Middlebrook 7H9 liquid medium supplemented with 10% albumin, dext
   and catalase
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

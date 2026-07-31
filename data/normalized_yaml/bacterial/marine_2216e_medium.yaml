@@ -3,6 +3,7 @@ name: marine_2216e_medium
 original_name: Marine 2216E medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

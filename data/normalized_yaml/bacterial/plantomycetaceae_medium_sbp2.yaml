@@ -3,6 +3,7 @@ name: plantomycetaceae_medium_sbp2
 original_name: PLANTOMYCETACEAE MEDIUM SBP2
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.6

@@ -3,6 +3,7 @@ name: for_growth_on_nitrogen_free_medium
 original_name: For growth on nitrogen-free medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:

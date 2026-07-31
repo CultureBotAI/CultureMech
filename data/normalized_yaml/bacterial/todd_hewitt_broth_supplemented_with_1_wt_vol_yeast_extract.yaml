@@ -3,6 +3,7 @@ name: todd_hewitt_broth_supplemented_with_1_wt_vol_yeast_extract
 original_name: Todd Hewitt broth (supplemented with 1% (wt/vol) yeast extract)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Todd Hewitt broth (Becton, Dickinson and Company, Franklin Lakes,

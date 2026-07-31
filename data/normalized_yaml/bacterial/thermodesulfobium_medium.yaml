@@ -3,6 +3,7 @@ name: thermodesulfobium_medium
 original_name: THERMODESULFOBIUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 5.5

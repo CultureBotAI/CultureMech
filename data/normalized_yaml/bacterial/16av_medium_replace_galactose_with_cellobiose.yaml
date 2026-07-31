@@ -3,6 +3,7 @@ name: 16av_medium_replace_galactose_with_cellobiose
 original_name: 16AV medium_replace_galactose_with_Cellobiose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 298f_replace_galactose_with_Cellobiose

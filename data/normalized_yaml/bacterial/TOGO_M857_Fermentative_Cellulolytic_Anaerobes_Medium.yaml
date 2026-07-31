@@ -3,6 +3,7 @@ name: fermentative_cellulolytic_anaerobes_medium
 original_name: Fermentative Cellulolytic Anaerobes Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

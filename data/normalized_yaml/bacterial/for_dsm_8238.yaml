@@ -3,6 +3,7 @@ name: for_dsm_8238
 original_name: For DSM 8238
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

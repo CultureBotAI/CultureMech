@@ -3,6 +3,7 @@ name: clostridium_r6_medium
 original_name: CLOSTRIDIUM R6 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J637

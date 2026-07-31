@@ -3,6 +3,7 @@ name: ruminococcus_albus_medium_maltose_1g_l_starch_1g_l
 original_name: Ruminococcus Albus Medium + maltose (1g/L), starch (1g/L)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

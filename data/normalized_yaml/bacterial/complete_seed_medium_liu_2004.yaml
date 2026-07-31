@@ -3,6 +3,7 @@ name: complete_seed_medium_liu_2004
 original_name: '''Complete Seed Medium (Liu 2004'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Riboflavin

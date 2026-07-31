@@ -3,6 +3,7 @@ name: thiomicrospira_v2501_medium
 original_name: THIOMICROSPIRA V2501 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

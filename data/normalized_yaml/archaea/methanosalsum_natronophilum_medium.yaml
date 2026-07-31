@@ -3,6 +3,7 @@ name: methanosalsum_natronophilum_medium
 original_name: METHANOSALSUM NATRONOPHILUM MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.5
 media_term:

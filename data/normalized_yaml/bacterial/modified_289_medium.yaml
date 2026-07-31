@@ -3,6 +3,7 @@ name: modified_289_medium
 original_name: Modified 289 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

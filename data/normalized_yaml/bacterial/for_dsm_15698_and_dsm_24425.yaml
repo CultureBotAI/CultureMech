@@ -3,6 +3,7 @@ name: for_dsm_15698_and_dsm_24425
 original_name: For DSM 15698 and DSM 24425
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.7
 media_term:

@@ -3,6 +3,7 @@ name: acetobacterium_sp_medium
 original_name: ACETOBACTERIUM SP. medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 614 | DSMZ Medium: 614 (mediadive.medium:614)

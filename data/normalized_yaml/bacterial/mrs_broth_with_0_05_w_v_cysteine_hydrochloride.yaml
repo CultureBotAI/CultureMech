@@ -3,6 +3,7 @@ name: mrs_broth_with_0_05_w_v_cysteine_hydrochloride
 original_name: MRS broth with 0.05% (w/v) cysteine hydrochloride
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Cysteine hydrochloride

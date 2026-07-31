@@ -3,6 +3,7 @@ name: togo_medium_m158
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Sol. 1

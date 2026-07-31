@@ -4,6 +4,7 @@ original_name: NATRONIELLA medium_replace_Trace element solution SL-4 (medium 45
   element solution SL-11 (medium 784)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 784_replace_Trace element solution SL-4 (medium 457)_with_Trace

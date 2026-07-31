@@ -3,6 +3,7 @@ name: medium_343_modified_for_dsm_5068
 original_name: MEDIUM 343 MODIFIED FOR DSM 5068
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 343_5068

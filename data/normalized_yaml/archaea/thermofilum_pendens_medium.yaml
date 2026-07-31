@@ -3,6 +3,7 @@ name: thermofilum_pendens_medium
 original_name: THERMOFILUM PENDENS MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.2
 media_term:

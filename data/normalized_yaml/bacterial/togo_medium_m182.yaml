@@ -3,6 +3,7 @@ name: togo_medium_m182
 original_name: (Unnamed medium)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: distilled water

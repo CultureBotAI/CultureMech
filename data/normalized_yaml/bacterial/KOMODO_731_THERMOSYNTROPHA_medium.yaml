@@ -3,6 +3,7 @@ name: thermosyntropha_medium
 original_name: THERMOSYNTROPHA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.5
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 731 | DSMZ Medium: 731 (mediadive.medium:731)

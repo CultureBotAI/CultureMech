@@ -3,6 +3,7 @@ name: alkaline_tryptone_yeast_extract_medium
 original_name: Alkaline Tryptone-Yeast Extract Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

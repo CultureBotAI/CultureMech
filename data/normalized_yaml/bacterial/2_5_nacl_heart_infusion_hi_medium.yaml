@@ -3,6 +3,7 @@ name: 2_5_nacl_heart_infusion_hi_medium
 original_name: 2.5% NaCl heart infusion (HI) medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

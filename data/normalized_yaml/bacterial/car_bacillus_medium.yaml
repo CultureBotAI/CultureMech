@@ -3,6 +3,7 @@ name: car_bacillus_medium
 original_name: CAR BACILLUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J996

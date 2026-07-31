@@ -3,6 +3,7 @@ name: mrs_sodium_glutamate
 original_name: MRS + Sodium glutamate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

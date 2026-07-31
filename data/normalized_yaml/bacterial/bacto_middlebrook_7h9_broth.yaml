@@ -3,6 +3,7 @@ name: bacto_middlebrook_7h9_broth
 original_name: BACTO MIDDLEBROOK 7H9 BROTH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.4

@@ -2,6 +2,7 @@ id: CultureMech:000202
 name: enriched_seawater
 category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
   for saltwater algae cultivation. Recipe available in PDF format.

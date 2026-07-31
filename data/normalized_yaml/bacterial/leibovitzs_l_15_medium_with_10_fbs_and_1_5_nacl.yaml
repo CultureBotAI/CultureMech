@@ -3,6 +3,7 @@ name: leibovitzs_l_15_medium_with_10_fbs_and_1_5_nacl
 original_name: LEIBOVITZ'S L-15 MEDIUM WITH 10% FBS AND 1.5% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J930

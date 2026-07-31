@@ -4,6 +4,7 @@ original_name: Thioalkalimicrobium aerophilum AL 3 = DSM 13739 and Tm.sibericum 
   7 = DSM 13740
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 925.6

@@ -4,6 +4,7 @@ original_name: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 
   DSM11431, DSM 11432, DSM 11433 and DSM 11434
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

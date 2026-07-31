@@ -3,6 +3,7 @@ name: m17_medium_oxoid_supplemented_with_0_5_wt_vol_glucose
 original_name: M17 medium (Oxoid) supplemented with 0.5% (wt/vol) glucose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

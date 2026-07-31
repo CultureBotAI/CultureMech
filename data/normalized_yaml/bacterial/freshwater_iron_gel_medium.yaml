@@ -3,6 +3,7 @@ name: freshwater_iron_gel_medium
 original_name: FRESHWATER IRON GEL MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

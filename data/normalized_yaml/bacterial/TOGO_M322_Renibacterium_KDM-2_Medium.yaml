@@ -3,6 +3,7 @@ name: renibacterium_kdm_2_medium
 original_name: Renibacterium KDM-2 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

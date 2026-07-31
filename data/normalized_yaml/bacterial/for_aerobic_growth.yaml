@@ -3,6 +3,7 @@ name: for_aerobic_growth
 original_name: For aerobic growth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 350.1 | DSMZ Medium: 350

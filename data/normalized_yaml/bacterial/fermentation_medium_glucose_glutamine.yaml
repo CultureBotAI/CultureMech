@@ -3,6 +3,7 @@ name: fermentation_medium_glucose_glutamine
 original_name: '''Fermentation Medium (Glucose+Glutamine'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Riboflavin

@@ -3,6 +3,7 @@ name: microvirga_medium_hv12
 original_name: MICROVIRGA MEDIUM (HV12)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

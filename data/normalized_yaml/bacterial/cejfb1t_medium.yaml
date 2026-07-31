@@ -3,6 +3,7 @@ name: cejfb1t_medium
 original_name: CEJFB1T MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 media_term:

@@ -4,6 +4,7 @@ original_name: '1275'
 category: bacterial
 description: 1275. NBRC 1274.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''

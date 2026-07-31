@@ -3,6 +3,7 @@ name: vitamin_solution_medium_461
 original_name: Vitamin solution (medium 461)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 2092

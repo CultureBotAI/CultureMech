@@ -3,6 +3,7 @@ name: medium_28_modified_for_dsm_1713
 original_name: MEDIUM 28 MODIFIED FOR DSM 1713
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 28_1713

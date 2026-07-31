@@ -3,6 +3,7 @@ name: complete_chemically_defined_medium
 original_name: Complete Chemically-defined Medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Pyridoxamine HCl

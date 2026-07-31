@@ -3,6 +3,7 @@ name: medium_586_modified_for_dsm_14793
 original_name: MEDIUM 586 MODIFIED FOR DSM 14793
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
 media_term:

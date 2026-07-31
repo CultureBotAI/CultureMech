@@ -3,6 +3,7 @@ name: desulfuromonas_medium_tce
 original_name: DESULFUROMONAS MEDIUM (TCE)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

@@ -3,6 +3,7 @@ name: nb_fumarate_nbaf_medium
 original_name: NB FUMARATE (NBAF) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J473

@@ -3,6 +3,7 @@ name: fundibacter_jadensis_medium_replace_hexadecane_with_sodium_acetate
 original_name: FUNDIBACTER JADENSIS medium_replace_Hexadecane_with_sodium acetate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 821_replace_Hexadecane_with_sodium acetate

@@ -3,6 +3,7 @@ name: tyb
 original_name: TYB
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: dt_medium_ph_3_5
 original_name: DT medium (pH 3.5)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: CaCl2 · 2H2O

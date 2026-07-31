@@ -3,6 +3,7 @@ name: halobacteria_medium_with_15_nacl
 original_name: HALOBACTERIA MEDIUM WITH 15% NaCl
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J914

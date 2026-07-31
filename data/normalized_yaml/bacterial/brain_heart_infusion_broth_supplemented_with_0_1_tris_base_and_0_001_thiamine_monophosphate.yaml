@@ -4,6 +4,7 @@ original_name: brain-heart infusion broth (supplemented with 0.1% Tris base and 
   thiamine monophosphate)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tris

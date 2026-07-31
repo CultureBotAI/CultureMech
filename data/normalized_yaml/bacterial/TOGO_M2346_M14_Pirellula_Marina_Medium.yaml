@@ -3,6 +3,7 @@ name: m14_pirellula_marina_medium
 original_name: M14 (Pirellula Marina) Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 0.1M Tris/HCl buffer pH 7.5

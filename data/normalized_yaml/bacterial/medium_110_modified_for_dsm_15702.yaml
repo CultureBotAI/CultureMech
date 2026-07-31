@@ -3,6 +3,7 @@ name: medium_110_modified_for_dsm_15702
 original_name: MEDIUM 110 MODIFIED FOR DSM 15702
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 110_15702

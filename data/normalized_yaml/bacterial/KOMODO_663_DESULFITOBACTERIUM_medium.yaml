@@ -3,6 +3,7 @@ name: desulfitobacterium_medium
 original_name: DESULFITOBACTERIUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 663 | DSMZ Medium: 663 (mediadive.medium:663)

@@ -3,6 +3,7 @@ name: mh1_medium_for_saliarchaeum_acidophilum
 original_name: MH1 MEDIUM FOR SALIARCHAEUM ACIDOPHILUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.5
 media_term:

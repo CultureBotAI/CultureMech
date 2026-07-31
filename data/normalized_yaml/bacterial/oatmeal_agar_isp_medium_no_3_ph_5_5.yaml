@@ -3,6 +3,7 @@ name: oatmeal_agar_isp_medium_no_3_ph_5_5
 original_name: Oatmeal Agar (ISP medium No.3, pH 5.5)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

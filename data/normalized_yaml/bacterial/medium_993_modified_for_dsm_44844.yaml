@@ -3,6 +3,7 @@ name: medium_993_modified_for_dsm_44844
 original_name: MEDIUM 993 MODIFIED FOR DSM 44844
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 993_44844

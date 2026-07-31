@@ -3,6 +3,7 @@ name: 1_5_tsb_ph_6_5
 original_name: 1/5 TSB (pH 6.5)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: thermodesulfobium_medium
 original_name: THERMODESULFOBIUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1005 | DSMZ Medium: 1005

@@ -3,6 +3,7 @@ name: modified_9k_medium_for_ferroplasma_aeolicum
 original_name: MODIFIED 9K MEDIUM FOR FERROPLASMA AEOLICUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 1.6
 media_term:

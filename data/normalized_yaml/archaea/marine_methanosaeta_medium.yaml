@@ -3,6 +3,7 @@ name: marine_methanosaeta_medium
 original_name: Marine Methanosaeta Medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

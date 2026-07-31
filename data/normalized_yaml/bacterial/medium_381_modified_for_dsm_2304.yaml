@@ -3,6 +3,7 @@ name: medium_381_modified_for_dsm_2304
 original_name: MEDIUM 381 MODIFIED FOR DSM 2304
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 381_2304

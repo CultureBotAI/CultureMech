@@ -3,6 +3,7 @@ name: mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12
 original_name: MN Marine medium (ATCC Medium 957) with 20 mcg/L of vitamin B12
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

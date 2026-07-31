@@ -3,6 +3,7 @@ name: bacillus_selenitireducens_medium
 original_name: BACILLUS SELENITIREDUCENS medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.8
 media_term:

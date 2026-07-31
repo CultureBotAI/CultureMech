@@ -3,6 +3,7 @@ name: halorubrum_californiense_medium
 original_name: HALORUBRUM CALIFORNIENSE MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

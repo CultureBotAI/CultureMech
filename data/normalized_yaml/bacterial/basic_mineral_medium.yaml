@@ -3,6 +3,7 @@ name: basic_mineral_medium
 original_name: Basic mineral medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

@@ -3,6 +3,7 @@ name: nutrient_medium_pyruvate
 original_name: Nutrient medium + pyruvate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Pyruvate

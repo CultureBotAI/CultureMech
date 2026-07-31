@@ -3,6 +3,7 @@ name: granulicella_medium
 original_name: GRANULICELLA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 4.5

@@ -3,6 +3,7 @@ name: r2a_medium_microaerobic
 original_name: R2A MEDIUM (MICROAEROBIC)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 5.0

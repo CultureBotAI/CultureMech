@@ -3,6 +3,7 @@ name: vogels_medium_n
 original_name: Vogels Medium N
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Orthophosphate

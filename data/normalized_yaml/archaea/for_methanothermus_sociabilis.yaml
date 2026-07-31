@@ -3,6 +3,7 @@ name: for_methanothermus_sociabilis
 original_name: For Methanothermus sociabilis
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 203.1 | DSMZ Medium: 203

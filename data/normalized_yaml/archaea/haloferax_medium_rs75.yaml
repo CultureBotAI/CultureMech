@@ -3,6 +3,7 @@ name: haloferax_medium_rs75
 original_name: HALOFERAX MEDIUM RS75
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:

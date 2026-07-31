@@ -3,6 +3,7 @@ name: medium_710_modified_for_dsm_12299
 original_name: MEDIUM 710 MODIFIED FOR DSM 12299
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

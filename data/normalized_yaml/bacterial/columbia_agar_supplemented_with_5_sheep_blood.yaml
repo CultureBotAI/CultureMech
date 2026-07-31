@@ -3,6 +3,7 @@ name: columbia_agar_supplemented_with_5_sheep_blood
 original_name: Columbia agar (supplemented with 5% sheep blood)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: sheep blood

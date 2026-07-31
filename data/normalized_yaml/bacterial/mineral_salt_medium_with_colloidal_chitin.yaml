@@ -3,6 +3,7 @@ name: mineral_salt_medium_with_colloidal_chitin
 original_name: Mineral salt medium with colloidal chitin
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

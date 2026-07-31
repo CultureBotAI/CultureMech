@@ -3,6 +3,7 @@ name: half_strength_r2a_medium_in_75_seawater
 original_name: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1320

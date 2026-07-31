@@ -3,6 +3,7 @@ name: medium_r2a_modified
 original_name: MEDIUM R2A MODIFIED
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

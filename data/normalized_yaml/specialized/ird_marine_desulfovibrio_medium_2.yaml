@@ -3,6 +3,7 @@ name: ird_marine_desulfovibrio_medium_2
 original_name: IRD MARINE DESULFOVIBRIO MEDIUM-2
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

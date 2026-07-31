@@ -3,6 +3,7 @@ name: nss_low
 original_name: NSS Low
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C70

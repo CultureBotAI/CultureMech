@@ -3,6 +3,7 @@ name: medium_for_strain_hc45_anaerobic_cultivation
 original_name: Medium for Strain HC45 (Anaerobic cultivation)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

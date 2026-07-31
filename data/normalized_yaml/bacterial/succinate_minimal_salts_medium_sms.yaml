@@ -3,6 +3,7 @@ name: succinate_minimal_salts_medium_sms
 original_name: SUCCINATE MINIMAL SALTS MEDIUM (SMS)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

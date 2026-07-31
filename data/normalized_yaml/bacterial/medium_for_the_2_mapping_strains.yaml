@@ -3,6 +3,7 @@ name: medium_for_the_2_mapping_strains
 original_name: Medium for the 2μ Mapping Strains
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

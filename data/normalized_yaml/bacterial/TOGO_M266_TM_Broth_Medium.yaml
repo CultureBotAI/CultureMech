@@ -3,6 +3,7 @@ name: tm_broth_medium
 original_name: TM Broth Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

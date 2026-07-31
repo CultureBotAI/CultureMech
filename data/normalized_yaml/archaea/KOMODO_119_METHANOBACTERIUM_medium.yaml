@@ -3,6 +3,7 @@ name: methanobacterium_medium
 original_name: METHANOBACTERIUM medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 119 | DSMZ Medium: 119 (mediadive.medium:119)

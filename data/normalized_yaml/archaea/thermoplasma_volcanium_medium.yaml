@@ -3,6 +3,7 @@ name: thermoplasma_volcanium_medium
 original_name: THERMOPLASMA VOLCANIUM MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 398

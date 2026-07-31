@@ -3,6 +3,7 @@ name: minimal_medium_whitchurch_et_al
 original_name: Minimal medium; whitchurch et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Magnesium chloride

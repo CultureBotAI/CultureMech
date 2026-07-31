@@ -3,6 +3,7 @@ name: ia91_medium
 original_name: IA91 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

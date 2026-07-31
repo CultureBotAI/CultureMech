@@ -3,6 +3,7 @@ name: vulcanisaeta_medium
 original_name: VULCANISAETA MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 4.5
 media_term:

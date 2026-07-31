@@ -3,6 +3,7 @@ name: deshpande_medium_fang_et_al
 original_name: Deshpande medium; fang et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calcium chloride anhydrous

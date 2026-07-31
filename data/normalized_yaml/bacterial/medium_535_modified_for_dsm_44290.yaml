@@ -3,6 +3,7 @@ name: medium_535_modified_for_dsm_44290
 original_name: MEDIUM 535 MODIFIED FOR DSM 44290
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 535_44290

@@ -3,6 +3,7 @@ name: acetobacter_peroxydans_medium
 original_name: ACETOBACTER PEROXYDANS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 254

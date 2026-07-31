@@ -3,6 +3,7 @@ name: hmm_with_1_5_g_l_junlon_pw_110_hobbs_et_al
 original_name: HMM with 1.5 g/L Junlon PW 110; Hobbs et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

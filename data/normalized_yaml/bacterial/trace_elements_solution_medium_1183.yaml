@@ -3,6 +3,7 @@ name: trace_elements_solution_medium_1183
 original_name: Trace elements solution (medium 1183)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 3096 | DSMZ Medium: 3096 (mediadive.medium:3096)

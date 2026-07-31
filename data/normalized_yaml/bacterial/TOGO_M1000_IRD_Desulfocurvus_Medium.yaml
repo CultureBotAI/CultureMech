@@ -3,6 +3,7 @@ name: ird_desulfocurvus_medium
 original_name: IRD Desulfocurvus Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

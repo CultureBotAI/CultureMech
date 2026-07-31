@@ -3,6 +3,7 @@ name: desulfovibrio_medium_choline
 original_name: DESULFOVIBRIO medium (choline)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 272

@@ -3,6 +3,7 @@ name: mueller_hinton_ii_agar_with_1_glucose_and_1_glycerol
 original_name: Mueller Hinton II Agar With 1% Glucose And 1% Glycerol
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

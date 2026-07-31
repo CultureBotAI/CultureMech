@@ -3,6 +3,7 @@ name: medium_852_modified_for_dsm_45026
 original_name: MEDIUM 852 MODIFIED FOR DSM 45026
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 10.0
 media_term:

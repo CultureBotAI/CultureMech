@@ -3,6 +3,7 @@ name: solidesulfovibrio_marrakechensis_medium
 original_name: SOLIDESULFOVIBRIO MARRAKECHENSIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

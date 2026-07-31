@@ -3,6 +3,7 @@ name: halanaerobium_hydrogeniformans_medium_sl_hp
 original_name: HALANAEROBIUM HYDROGENIFORMANS MEDIUM (SL-HP)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 11.0
 media_term:

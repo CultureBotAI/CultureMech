@@ -3,6 +3,7 @@ name: medium_for_strain_m6_x2
 original_name: Medium for Strain M6.X2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

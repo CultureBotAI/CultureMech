@@ -3,6 +3,7 @@ name: medium_531_modified_for_dsm_4333
 original_name: MEDIUM 531 MODIFIED FOR DSM 4333
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 531_4333

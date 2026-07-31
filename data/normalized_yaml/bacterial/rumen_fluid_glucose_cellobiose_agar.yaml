@@ -3,6 +3,7 @@ name: rumen_fluid_glucose_cellobiose_agar
 original_name: RUMEN FLUID-GLUCOSE-CELLOBIOSE AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J134

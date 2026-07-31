@@ -3,6 +3,7 @@ name: oatmeal_agar
 original_name: OATMEAL AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.0

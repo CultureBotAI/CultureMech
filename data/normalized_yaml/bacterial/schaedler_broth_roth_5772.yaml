@@ -3,6 +3,7 @@ name: schaedler_broth_roth_5772
 original_name: SCHAEDLER BROTH (Roth; 5772)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 media_term:

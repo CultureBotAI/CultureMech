@@ -3,6 +3,7 @@ name: methanogenium_medium
 original_name: METHANOGENIUM MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

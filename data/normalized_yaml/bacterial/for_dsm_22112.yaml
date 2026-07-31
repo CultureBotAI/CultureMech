@@ -3,6 +3,7 @@ name: for_dsm_22112
 original_name: For DSM 22112
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.3
 media_term:

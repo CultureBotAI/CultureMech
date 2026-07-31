@@ -3,6 +3,7 @@ name: fe_iii_reducer_freshwater_enrichment_medium
 original_name: Fe(III)-Reducer Freshwater Enrichment Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

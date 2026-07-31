@@ -3,6 +3,7 @@ name: thermobacter_roseum_medium
 original_name: THERMOBACTER ROSEUM MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J899

@@ -3,6 +3,7 @@ name: desulfovibrio_mg_1_medium
 original_name: DESULFOVIBRIO (MG-1) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

@@ -3,6 +3,7 @@ name: brain_heart_infusion_agar
 original_name: Brain Heart Infusion Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DI Water

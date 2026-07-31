@@ -3,6 +3,7 @@ name: sme_medium_modified_for_is7
 original_name: SME MEDIUM MODIFIED FOR IS7
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

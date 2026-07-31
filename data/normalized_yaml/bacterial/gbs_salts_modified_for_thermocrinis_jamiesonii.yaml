@@ -3,6 +3,7 @@ name: gbs_salts_modified_for_thermocrinis_jamiesonii
 original_name: GBS salts modified for Thermocrinis jamiesonii
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

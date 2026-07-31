@@ -3,6 +3,7 @@ name: streptococcus_suis_medium
 original_name: STREPTOCOCCUS SUIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

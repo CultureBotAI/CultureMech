@@ -3,6 +3,7 @@ name: mrs_agar_slants
 original_name: MRS agar slants
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

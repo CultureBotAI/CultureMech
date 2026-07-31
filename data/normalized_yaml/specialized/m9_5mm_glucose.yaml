@@ -1,6 +1,7 @@
 id: CultureMech:015545
 name: M9 5mM Glucose
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

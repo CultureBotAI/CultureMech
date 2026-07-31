@@ -3,6 +3,7 @@ name: amh_medium
 original_name: AmH MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

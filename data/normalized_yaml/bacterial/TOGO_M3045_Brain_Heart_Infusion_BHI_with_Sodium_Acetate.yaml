@@ -3,6 +3,7 @@ name: brain_heart_infusion_bhi_with_sodium_acetate
 original_name: Brain Heart Infusion (BHI) with Sodium Acetate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

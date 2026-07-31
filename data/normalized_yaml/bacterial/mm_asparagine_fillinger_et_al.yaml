@@ -3,6 +3,7 @@ name: mm_asparagine_fillinger_et_al
 original_name: Mm-asparagine; fillinger et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tryptophan

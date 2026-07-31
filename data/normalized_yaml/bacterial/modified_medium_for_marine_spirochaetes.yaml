@@ -3,6 +3,7 @@ name: modified_medium_for_marine_spirochaetes
 original_name: Modified Medium For Marine Spirochaetes
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

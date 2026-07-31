@@ -3,6 +3,7 @@ name: vallitalea_70b_a_medium
 original_name: VALLITALEA 70B-A MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.9
 media_term:

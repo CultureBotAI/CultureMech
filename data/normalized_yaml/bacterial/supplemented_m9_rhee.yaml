@@ -3,6 +3,7 @@ name: supplemented_m9_rhee
 original_name: '''Supplemented m9 (rhee'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Proline

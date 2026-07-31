@@ -3,6 +3,7 @@ name: m17_broth_containing_glucose
 original_name: M17 broth (containing glucose)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: glucose

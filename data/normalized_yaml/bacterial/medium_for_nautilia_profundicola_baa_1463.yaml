@@ -3,6 +3,7 @@ name: medium_for_nautilia_profundicola_baa_1463
 original_name: Medium for Nautilia profundicola BAA-1463
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl

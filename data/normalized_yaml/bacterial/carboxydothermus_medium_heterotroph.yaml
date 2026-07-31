@@ -3,6 +3,7 @@ name: carboxydothermus_medium_heterotroph
 original_name: CARBOXYDOTHERMUS MEDIUM (HETEROTROPH)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

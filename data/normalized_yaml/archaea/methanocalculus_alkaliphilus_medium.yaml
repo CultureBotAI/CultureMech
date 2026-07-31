@@ -3,6 +3,7 @@ name: methanocalculus_alkaliphilus_medium
 original_name: METHANOCALCULUS ALKALIPHILUS MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.5
 media_term:

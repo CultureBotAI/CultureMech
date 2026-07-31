@@ -3,6 +3,7 @@ name: desulfovectis_medium
 original_name: DESULFOVECTIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

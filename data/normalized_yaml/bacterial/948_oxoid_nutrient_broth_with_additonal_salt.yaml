@@ -3,6 +3,7 @@ name: 948_oxoid_nutrient_broth_with_additonal_salt
 original_name: 948 (OXOID NUTRIENT BROTH) WITH ADDITONAL SALT
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1551

@@ -3,6 +3,7 @@ name: medium_for_hydrogenophilus
 original_name: MEDIUM FOR HYDROGENOPHILUS
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

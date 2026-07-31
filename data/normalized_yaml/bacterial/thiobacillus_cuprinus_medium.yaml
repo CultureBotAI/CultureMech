@@ -3,6 +3,7 @@ name: thiobacillus_cuprinus_medium
 original_name: THIOBACILLUS CUPRINUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 493 | DSMZ Medium: 493 (mediadive.medium:493)

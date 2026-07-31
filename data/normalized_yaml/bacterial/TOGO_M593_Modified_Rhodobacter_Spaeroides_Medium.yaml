@@ -3,6 +3,7 @@ name: modified_rhodobacter_spaeroides_medium
 original_name: Modified Rhodobacter Spaeroides Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

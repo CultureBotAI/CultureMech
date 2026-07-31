@@ -3,6 +3,7 @@ name: 1_2_isp_2_15_nacl
 original_name: 1/2 ISP-2 + 15% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

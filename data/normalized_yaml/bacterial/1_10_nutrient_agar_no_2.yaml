@@ -3,6 +3,7 @@ name: 1_10_nutrient_agar_no_2
 original_name: 1/10 NUTRIENT AGAR NO.2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.0

@@ -3,6 +3,7 @@ name: medium_1190_modified_for_dsm_19514
 original_name: MEDIUM 1190 MODIFIED FOR DSM 19514
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 1.8

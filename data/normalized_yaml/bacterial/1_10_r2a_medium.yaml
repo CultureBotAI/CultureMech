@@ -3,6 +3,7 @@ name: 1_10_r2a_medium
 original_name: 1/10 R2A MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -67,7 +68,7 @@ ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.005'
     unit: G_PER_L
@@ -77,7 +78,7 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
@@ -87,9 +88,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding
-    agar. Add agar, heat medium to boiling to dissolve agar, and autoclave for 15
-    min at 121°C.
+  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before
+    adding agar. Add agar, heat medium to boiling to dissolve agar, and
+    autoclave for 15 min at 121°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -112,8 +113,8 @@ curation_history:
 - timestamp: '2026-03-17T19:45:12.433928+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "1/10 R2A MEDIUM" to "1_10_r2a_medium" for consistent
-    matching
+  notes: Normalized name from "1/10 R2A MEDIUM" to "1_10_r2a_medium" for
+    consistent matching
 - timestamp: '2026-06-05T07:40:15.420302+00:00'
   curator: mim-legacy-to-chebi-migration-v1.0
   action: Refreshed legacy MediaIngredientMech links to CHEBI keying
@@ -123,23 +124,28 @@ curation_history:
 - timestamp: '2026-06-08T23:19:27.145594+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (audit G21/G22)
-  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
-    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
-    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see
+    reports/chebi_grounding_audit.md). Label-conditional fixes for
+    pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2, selenate; casamino acids
+    de-grounded (mixture, no single CHEBI).
 - timestamp: '2026-06-10T07:46:42.477587+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-29T07:04:23.249062+00:00'
+  curator: medium-type-axis-migration-v1.0
+  action: Backfilled multi-axis media type
+  notes: Derived composition_type=UNDEFINED from deprecated medium_type=COMPLEX.
 parent_media:
-  path: data/normalized_yaml/bacterial/r3_a_medium.yaml
+  path: data/normalized_yaml/bacterial/r2a_medium.yaml
   relationship: CONCENTRATION_VARIANT
-  id: CultureMech:000592
-  name: r3_a_medium
-  notes: Both records are MediaDive/DSMZ R3 A/R2A solid agar formulations with pH
-    7.2; the child is explicitly labeled 1/10 R2A Medium.
+  id: CultureMech:001984
+  name: r2a_medium
+  notes: 1/10 R2A is a uniform 1:10 dilution of full-strength R2A Medium
+    (mediadive.medium:830 / DSMZ 830). Both are R2A-family solid agar, pH 7.2.
 variant_relationship: CONCENTRATION_VARIANT
 variant_modifications:
-- '1/10 R2A Medium lowers the R3 A/R2A nutrient and salt components ten-fold or near
-  ten-fold: yeast extract, proteose peptone, casamino acids, glucose, and starch from
-  1 g/L to 0.05 g/L; sodium pyruvate from 0.5 to 0.03 g/L; K2HPO4 from 0.6 to 0.03
-  g/L; MgSO4 x 7 H2O from 0.1 to 0.005 g/L; agar remains 15 g/L.'
+- '1/10 R2A Medium is a uniform ten-fold dilution of full-strength R2A: yeast extract,
+  proteose peptone, casamino acids, glucose, and starch from 0.5 to 0.05 g/L; sodium
+  pyruvate from 0.3 to 0.03 g/L; K2HPO4 from 0.3 to 0.03 g/L; MgSO4 x 7 H2O from 0.05
+  to 0.005 g/L; agar remains 15 g/L.'

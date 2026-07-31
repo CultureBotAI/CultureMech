@@ -3,6 +3,7 @@ name: azoarcus_taiwanensis_medium
 original_name: AZOARCUS TAIWANENSIS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 8.5

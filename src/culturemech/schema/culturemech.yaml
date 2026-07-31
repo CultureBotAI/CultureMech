@@ -251,9 +251,34 @@ classes:
         recommended: true
 
       medium_type:
-        description: Classification of the medium
+        description: >-
+          DEPRECATED single-axis classification. Superseded by composition_type,
+          nutritional_class, and functional_role. Retained for backward compatibility;
+          do not populate on new records.
         range: MediumTypeEnum
-        required: true
+        deprecated: Use composition_type / nutritional_class / functional_role instead.
+
+      composition_type:
+        description: >-
+          Composition axis — how chemically defined the medium is (DEFINED / UNDEFINED /
+          SEMI_DEFINED). Supersedes the DEFINED/COMPLEX values of the deprecated
+          medium_type slot.
+        range: MediumCompositionTypeEnum
+        recommended: true
+
+      nutritional_class:
+        description: >-
+          Nutritional-level axis — MINIMAL / RICH / GENERAL_PURPOSE. Orthogonal to
+          composition_type and functional_role.
+        range: MediumNutritionalClassEnum
+
+      functional_role:
+        description: >-
+          Functional-role axis — what the medium is designed to do (SELECTIVE, DIFFERENTIAL,
+          ENRICHMENT, GENERAL_PURPOSE, TRANSPORT, ASSAY, ENUMERATION). Multivalued: a medium
+          may have more than one role.
+        range: MediumFunctionalRoleEnum
+        multivalued: true
 
       physical_state:
         description: Physical form of the medium
@@ -2083,26 +2108,105 @@ classes:
 
 enums:
   MediumTypeEnum:
-    description: Classification of culture medium
+    description: >-
+      DEPRECATED single-axis classification of culture medium. It conflated three
+      orthogonal properties (composition, nutritional level, functional role) into one
+      single-valued slot. Superseded by MediumCompositionTypeEnum (composition_type),
+      MediumNutritionalClassEnum (nutritional_class), and MediumFunctionalRoleEnum
+      (functional_role). Retained for backward compatibility; populate the three axis
+      slots on new and migrated records instead.
+    deprecated: Use composition_type / nutritional_class / functional_role instead.
     permissible_values:
       DEFINED:
-        description: Chemically defined medium with known composition
+        description: Chemically defined medium with known composition. Migrates to
+          composition_type=DEFINED.
         meaning: NCIT:C64372
       COMPLEX:
-        description: Medium with undefined components (e.g., yeast extract)
+        description: Medium with undefined components (e.g., yeast extract). Migrates to
+          composition_type=UNDEFINED.
         meaning: NCIT:C64371
       SELECTIVE:
-        description: Medium that selects for specific organisms
+        description: Medium that selects for specific organisms. Migrates to
+          functional_role=[SELECTIVE].
       DIFFERENTIAL:
-        description: Medium that differentiates organism types
+        description: Medium that differentiates organism types. Migrates to
+          functional_role=[DIFFERENTIAL].
       ENRICHMENT:
-        description: Medium that enriches for specific organisms
+        description: Medium that enriches for specific organisms. Migrates to
+          functional_role=[ENRICHMENT].
       MINIMAL:
-        description: Medium with minimal nutrients required for growth
+        description: Medium with minimal nutrients required for growth. Migrates to
+          nutritional_class=MINIMAL.
       BUFFER:
         description: Buffer solution (e.g. PBS) — not a growth medium per se but stored alongside media for context.
       NEGATIVE_CONTROL:
         description: Negative-control "medium" used as an experimental baseline (e.g. distilled water).
+
+  MediumCompositionTypeEnum:
+    description: >-
+      Composition axis: how chemically defined the medium is. Single-valued and
+      orthogonal to nutritional level (MediumNutritionalClassEnum) and functional role
+      (MediumFunctionalRoleEnum).
+    permissible_values:
+      DEFINED:
+        description: Chemically defined (synthetic) medium; every component and its exact
+          quantity is known. Synonyms —synthetic.
+        meaning: NCIT:C64372
+      UNDEFINED:
+        description: Medium containing one or more chemically undefined components (e.g.
+          yeast extract, peptone, casamino acids, tissue or plant extracts). Replaces the
+          deprecated MediumTypeEnum value COMPLEX. Synonyms —complex.
+        meaning: NCIT:C64371
+      SEMI_DEFINED:
+        description: Predominantly defined medium supplemented with a small amount of one
+          or more undefined components (e.g. a defined base plus a trace of yeast extract).
+          Synonyms —semisynthetic.
+
+  MediumNutritionalClassEnum:
+    description: >-
+      Nutritional-level axis: how nutrient-rich the medium is. Single-valued and
+      orthogonal to composition (MediumCompositionTypeEnum) and functional role
+      (MediumFunctionalRoleEnum).
+    permissible_values:
+      MINIMAL:
+        description: Provides only the minimal nutrients required for growth of the target
+          organism — typically a defined medium with a single carbon/energy source plus
+          essential salts (e.g. M9).
+      RICH:
+        description: Provides nutrients in excess (abundant amino acids, peptides, vitamins,
+          and carbon sources), supporting rapid growth of fastidious or general organisms
+          (e.g. LB, TSB, BHI).
+      GENERAL_PURPOSE:
+        description: Standard nutrient level for routine cultivation — neither deliberately
+          minimal nor deliberately enriched. Use when a medium is not clearly MINIMAL or RICH.
+
+  MediumFunctionalRoleEnum:
+    description: >-
+      Functional-role axis: what the medium is designed to do. MULTIVALUED — a medium may
+      be both selective and differential, etc. Orthogonal to composition
+      (MediumCompositionTypeEnum) and nutritional level (MediumNutritionalClassEnum).
+    permissible_values:
+      GENERAL_PURPOSE:
+        description: Non-selective, non-differential medium for routine growth of a broad
+          range of organisms. Synonyms —non-selective, basal.
+      SELECTIVE:
+        description: Suppresses or prevents growth of unwanted organisms (via antibiotics,
+          dyes, bile salts, NaCl, pH, etc.) to favor a target group.
+      DIFFERENTIAL:
+        description: Distinguishes organism types by a visible biochemical reaction (e.g.
+          color change from fermentation, or hemolysis) without necessarily inhibiting growth.
+      ENRICHMENT:
+        description: Promotes growth of a target organism to detectable numbers from a mixed
+          population, typically prior to isolation.
+      TRANSPORT:
+        description: Maintains organism viability without significant multiplication during
+          transport or storage.
+      ASSAY:
+        description: Standardized medium for a specific assay (e.g. antibiotic potency,
+          vitamin or growth-factor bioassay).
+      ENUMERATION:
+        description: Supports viable-count / colony enumeration (e.g. heterotrophic plate
+          count media such as R2A).
 
   PhysicalStateEnum:
     description: Physical form of the medium

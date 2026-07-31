@@ -3,6 +3,7 @@ name: spirochaeta_caldaria_medium
 original_name: SPIROCHAETA CALDARIA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 635 | DSMZ Medium: 635 (mediadive.medium:635)

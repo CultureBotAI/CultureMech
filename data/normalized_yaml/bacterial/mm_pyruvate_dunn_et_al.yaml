@@ -3,6 +3,7 @@ name: mm_pyruvate_dunn_et_al
 original_name: MM-Pyruvate; Dunn et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Pyruvate

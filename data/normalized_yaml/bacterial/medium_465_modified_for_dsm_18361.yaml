@@ -3,6 +3,7 @@ name: medium_465_modified_for_dsm_18361
 original_name: MEDIUM 465 MODIFIED FOR DSM 18361
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465_18361

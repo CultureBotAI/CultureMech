@@ -3,6 +3,7 @@ name: mycoplasma_medium_cip_medium_89
 original_name: MYCOPLASMA MEDIUM (CIP MEDIUM 89)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

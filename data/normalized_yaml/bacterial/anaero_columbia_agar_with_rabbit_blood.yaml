@@ -3,6 +3,7 @@ name: anaero_columbia_agar_with_rabbit_blood
 original_name: ANAERO COLUMBIA AGAR WITH RABBIT BLOOD
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J690

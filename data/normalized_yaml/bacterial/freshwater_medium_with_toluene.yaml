@@ -3,6 +3,7 @@ name: freshwater_medium_with_toluene
 original_name: FRESHWATER MEDIUM WITH TOLUENE
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

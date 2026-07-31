@@ -3,6 +3,7 @@ name: geoglobus_medium
 original_name: GEOGLOBUS medium
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

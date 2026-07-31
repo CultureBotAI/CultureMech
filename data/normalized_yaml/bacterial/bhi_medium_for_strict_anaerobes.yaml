@@ -3,6 +3,7 @@ name: bhi_medium_for_strict_anaerobes
 original_name: BHI MEDIUM FOR STRICT ANAEROBES
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

@@ -3,6 +3,7 @@ name: pye_rich_medium
 original_name: PYE Rich medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: yeast extract

@@ -3,6 +3,7 @@ name: n75s
 original_name: N75S
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C61

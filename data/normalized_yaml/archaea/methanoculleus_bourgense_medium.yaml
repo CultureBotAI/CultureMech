@@ -3,6 +3,7 @@ name: methanoculleus_bourgense_medium
 original_name: Methanoculleus Bourgense Medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

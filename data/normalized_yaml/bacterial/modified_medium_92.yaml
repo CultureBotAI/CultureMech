@@ -3,6 +3,7 @@ name: modified_medium_92
 original_name: MODIFIED MEDIUM 92
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 92a

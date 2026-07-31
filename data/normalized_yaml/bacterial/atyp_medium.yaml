@@ -3,6 +3,7 @@ name: atyp_medium
 original_name: ATYP MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.9
 media_term:

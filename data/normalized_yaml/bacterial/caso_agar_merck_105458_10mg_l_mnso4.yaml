@@ -3,6 +3,7 @@ name: caso_agar_merck_105458_10mg_l_mnso4
 original_name: CASO Agar (Merck 105458) + 10mg/L MnSO4
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

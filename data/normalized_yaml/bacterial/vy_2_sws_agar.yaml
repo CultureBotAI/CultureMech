@@ -3,6 +3,7 @@ name: vy_2_sws_agar
 original_name: VY/2-SWS AGAR
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J373

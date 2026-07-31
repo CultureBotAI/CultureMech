@@ -3,6 +3,7 @@ name: medium_for_sulfur_disproportionating_bacterium
 original_name: Medium for sulfur-disproportionating bacterium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

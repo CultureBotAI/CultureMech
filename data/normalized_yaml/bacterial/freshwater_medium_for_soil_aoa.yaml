@@ -3,6 +3,7 @@ name: freshwater_medium_for_soil_aoa
 original_name: FRESHWATER MEDIUM FOR SOIL AOA
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

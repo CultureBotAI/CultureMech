@@ -3,6 +3,7 @@ name: methanohalophilus_profundi_medium
 original_name: METHANOHALOPHILUS PROFUNDI MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

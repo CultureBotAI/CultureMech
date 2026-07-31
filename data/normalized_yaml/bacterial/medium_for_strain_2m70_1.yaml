@@ -3,6 +3,7 @@ name: medium_for_strain_2m70_1
 original_name: MEDIUM FOR STRAIN 2M70-1
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

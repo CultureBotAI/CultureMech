@@ -3,6 +3,7 @@ name: medium_78_modified_for_dsm_19528
 original_name: MEDIUM 78 MODIFIED FOR DSM 19528
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 78_19528

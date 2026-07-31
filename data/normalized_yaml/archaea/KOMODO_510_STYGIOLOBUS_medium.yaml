@@ -3,6 +3,7 @@ name: stygiolobus_medium
 original_name: STYGIOLOBUS medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 2.5

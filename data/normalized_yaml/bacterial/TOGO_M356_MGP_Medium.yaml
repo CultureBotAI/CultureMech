@@ -3,6 +3,7 @@ name: mgp_medium
 original_name: MGP Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L--cysteine・HCl・H2O

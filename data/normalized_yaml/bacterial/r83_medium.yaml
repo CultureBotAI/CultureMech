@@ -3,6 +3,7 @@ name: r83_medium
 original_name: R83 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

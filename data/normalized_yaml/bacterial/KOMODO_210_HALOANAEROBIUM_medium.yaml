@@ -3,6 +3,7 @@ name: haloanaerobium_medium
 original_name: HALOANAEROBIUM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

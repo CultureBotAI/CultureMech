@@ -3,6 +3,7 @@ name: for_dsm_15102
 original_name: For DSM 15102
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.1

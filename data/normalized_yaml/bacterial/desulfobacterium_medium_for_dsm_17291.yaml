@@ -3,6 +3,7 @@ name: desulfobacterium_medium_for_dsm_17291
 original_name: Desulfobacterium Medium (For DSM 17291)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water 960.00

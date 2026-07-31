@@ -3,6 +3,7 @@ name: for_dsm_15218_dsm_15521_dsm_15522_dsm_16304
 original_name: For DSM 15218, DSM 15521, DSM 15522, DSM 16304
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.0

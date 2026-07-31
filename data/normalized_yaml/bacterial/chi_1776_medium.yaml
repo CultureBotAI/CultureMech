@@ -3,6 +3,7 @@ name: chi_1776_medium
 original_name: CHI 1776 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 394

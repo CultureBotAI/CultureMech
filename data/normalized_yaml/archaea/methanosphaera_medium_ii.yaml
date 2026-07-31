@@ -3,6 +3,7 @@ name: methanosphaera_medium_ii
 original_name: METHANOSPHAERA medium II
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

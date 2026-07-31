@@ -3,6 +3,7 @@ name: haloalkaliphilic_growth_medium
 original_name: HALOALKALIPHILIC GROWTH MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:

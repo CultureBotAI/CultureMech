@@ -3,6 +3,7 @@ name: medium_514b_modified_for_dsm_21020
 original_name: MEDIUM 514b MODIFIED FOR DSM 21020
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 514b_21020

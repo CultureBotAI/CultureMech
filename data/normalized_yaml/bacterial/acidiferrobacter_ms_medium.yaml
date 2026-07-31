@@ -3,6 +3,7 @@ name: acidiferrobacter_ms_medium
 original_name: ACIDIFERROBACTER (MS) MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.2
 media_term:

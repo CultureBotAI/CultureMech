@@ -3,6 +3,7 @@ name: haloanaerobacter_salinarius_medium
 original_name: HALOANAEROBACTER SALINARIUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

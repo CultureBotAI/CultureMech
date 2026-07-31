@@ -3,6 +3,7 @@ name: peptone_broth
 original_name: PEPTONE BROTH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1471

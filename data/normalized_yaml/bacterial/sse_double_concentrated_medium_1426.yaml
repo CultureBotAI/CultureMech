@@ -3,6 +3,7 @@ name: sse_double_concentrated_medium_1426
 original_name: SSE (double concentrated) (medium 1426)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3055

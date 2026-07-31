@@ -3,6 +3,7 @@ name: sulfolobus_medium_b
 original_name: SULFOLOBUS MEDIUM (B)
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.5
 media_term:

@@ -2,6 +2,7 @@ id: CultureMech:000205
 name: note_on_biphasic_soilwater_media_20081216
 category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
   for freshwater algae cultivation. Recipe available in PDF format.

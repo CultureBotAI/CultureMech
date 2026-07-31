@@ -3,6 +3,7 @@ name: supplemented_bg11_glucose
 original_name: 'Supplemented BG11 + Glucose '
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: '''Fe(III'

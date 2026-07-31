@@ -3,6 +3,7 @@ name: desulfovibrio_postgate_medium
 original_name: Desulfovibrio (Postgate) Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: N2 gas

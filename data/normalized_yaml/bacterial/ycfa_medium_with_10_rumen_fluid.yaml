@@ -3,6 +3,7 @@ name: ycfa_medium_with_10_rumen_fluid
 original_name: YCFA MEDIUM WITH 10% RUMEN FLUID
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1318

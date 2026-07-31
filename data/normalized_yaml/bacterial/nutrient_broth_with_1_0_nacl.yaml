@@ -3,6 +3,7 @@ name: nutrient_broth_with_1_0_nacl
 original_name: NUTRIENT BROTH WITH 1.0% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

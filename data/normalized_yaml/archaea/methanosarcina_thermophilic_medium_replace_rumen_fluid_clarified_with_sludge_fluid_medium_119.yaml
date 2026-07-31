@@ -4,6 +4,7 @@ original_name: METHANOSARCINA (thermophilic) medium_replace_Rumen fluid, clarifi
   fluid (medium 119)
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 164_replace_Rumen fluid, clarified_with_Sludge fluid

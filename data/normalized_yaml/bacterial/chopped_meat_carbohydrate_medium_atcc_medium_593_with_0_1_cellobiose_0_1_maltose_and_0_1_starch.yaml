@@ -4,6 +4,7 @@ original_name: Chopped meat carbohydrate medium (ATCC Medium 593) with 0.1% cell
   0.1% maltose and 0.1% starch
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

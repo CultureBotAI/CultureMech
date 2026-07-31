@@ -3,6 +3,7 @@ name: bacto_photobacterium_broth
 original_name: BACTO PHOTOBACTERIUM BROTH
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

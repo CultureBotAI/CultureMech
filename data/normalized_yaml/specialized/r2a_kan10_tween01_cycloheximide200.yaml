@@ -1,6 +1,7 @@
 id: CultureMech:015694
 name: R2A_Kan10_Tween01_Cycloheximide200
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: R2A

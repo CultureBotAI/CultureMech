@@ -3,6 +3,7 @@ name: m9_with_1_0_glucose_and_40_emulsion
 original_name: M9 with 1.0% glucose and 40% emulsion
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

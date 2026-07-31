@@ -3,6 +3,7 @@ name: dsm_15673
 original_name: DSM 15673
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1007.2

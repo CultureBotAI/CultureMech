@@ -3,6 +3,7 @@ name: methanosalsum_zhilinae_medium
 original_name: METHANOSALSUM ZHILINAE MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.2

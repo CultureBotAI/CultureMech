@@ -3,6 +3,7 @@ name: for_dsm_12927_supplement_medium_with_10_g_l_nacl
 original_name: For DSM 12927 supplement medium with 10 g/l NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.8
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 63.1 | DSMZ Medium: 63 (mediadive.medium:63)

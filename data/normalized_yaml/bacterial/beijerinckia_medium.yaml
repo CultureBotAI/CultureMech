@@ -3,6 +3,7 @@ name: beijerinckia_medium
 original_name: BEIJERINCKIA MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:

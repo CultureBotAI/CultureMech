@@ -3,6 +3,7 @@ name: microcella_alkaliphila_medium
 original_name: MICROCELLA ALKALIPHILA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.5
 notes: 'pH buffer: Na-sesquicarbonate | Source: KOMODO ModelSEED | ID: 1063 | DSMZ

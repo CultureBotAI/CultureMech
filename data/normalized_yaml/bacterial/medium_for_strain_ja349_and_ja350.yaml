@@ -3,6 +3,7 @@ name: medium_for_strain_ja349_and_ja350
 original_name: Medium for strain JA349 and JA350
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Vitamin B12 (0.002% (w/v))

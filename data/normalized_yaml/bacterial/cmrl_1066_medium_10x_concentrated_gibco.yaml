@@ -3,6 +3,7 @@ name: cmrl_1066_medium_10x_concentrated_gibco
 original_name: CMRL-1066 medium (10x concentrated; GIBCO)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 5008

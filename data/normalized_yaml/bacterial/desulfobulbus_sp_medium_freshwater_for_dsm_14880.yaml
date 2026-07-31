@@ -3,6 +3,7 @@ name: desulfobulbus_sp_medium_freshwater_for_dsm_14880
 original_name: Desulfobulbus SP. Medium (Freshwater) (For DSM 14880)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

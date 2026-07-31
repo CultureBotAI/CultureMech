@@ -3,6 +3,7 @@ name: cuniculiplasma_medium
 original_name: CUNICULIPLASMA MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 1.1
 media_term:

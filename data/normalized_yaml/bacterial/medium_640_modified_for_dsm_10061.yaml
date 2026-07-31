@@ -3,6 +3,7 @@ name: medium_640_modified_for_dsm_10061
 original_name: MEDIUM 640 MODIFIED FOR DSM 10061
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

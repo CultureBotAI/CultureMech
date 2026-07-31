@@ -3,6 +3,7 @@ name: medium_for_methylotrophs
 original_name: Medium for Methylotrophs
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

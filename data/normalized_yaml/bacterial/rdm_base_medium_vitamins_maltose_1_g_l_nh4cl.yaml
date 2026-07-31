@@ -3,6 +3,7 @@ name: rdm_base_medium_vitamins_maltose_1_g_l_nh4cl
 original_name: '''RDM Base Medium + Vitamins + Maltose (1 g/L NH4Cl'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Maltose

@@ -3,6 +3,7 @@ name: methanogenium_olentangyi_medium
 original_name: METHANOGENIUM OLENTANGYI MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.9
 media_term:

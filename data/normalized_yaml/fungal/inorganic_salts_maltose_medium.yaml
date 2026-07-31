@@ -3,6 +3,7 @@ name: inorganic_salts_maltose_medium
 original_name: INORGANIC SALTS-MALTOSE MEDIUM
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

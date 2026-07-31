@@ -3,6 +3,7 @@ name: medium_for_mitsuaria
 original_name: MEDIUM FOR MITSUARIA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1735

@@ -3,6 +3,7 @@ name: halo_1a
 original_name: Halo 1a
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

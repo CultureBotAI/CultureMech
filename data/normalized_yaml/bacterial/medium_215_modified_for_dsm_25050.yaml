@@ -3,6 +3,7 @@ name: medium_215_modified_for_dsm_25050
 original_name: MEDIUM 215 MODIFIED FOR DSM 25050
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 215_25050

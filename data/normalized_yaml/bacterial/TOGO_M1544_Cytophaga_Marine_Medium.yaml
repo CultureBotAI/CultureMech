@@ -3,6 +3,7 @@ name: cytophaga_marine_medium
 original_name: Cytophaga (Marine) Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract

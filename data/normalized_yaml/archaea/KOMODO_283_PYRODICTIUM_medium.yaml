@@ -3,6 +3,7 @@ name: pyrodictium_medium
 original_name: PYRODICTIUM medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 283 | DSMZ Medium: 283 (mediadive.medium:283)

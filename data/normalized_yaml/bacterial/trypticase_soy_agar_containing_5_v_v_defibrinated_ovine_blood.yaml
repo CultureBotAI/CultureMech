@@ -3,6 +3,7 @@ name: trypticase_soy_agar_containing_5_v_v_defibrinated_ovine_blood
 original_name: Trypticase soy agar (containing 5% (v/v) defibrinated ovine blood)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: defibrinated ovine blood

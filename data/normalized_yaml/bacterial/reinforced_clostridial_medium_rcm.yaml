@@ -3,6 +3,7 @@ name: reinforced_clostridial_medium_rcm
 original_name: Reinforced clostridial medium (RCM)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Reinforced clostridial medium (Oxoid)

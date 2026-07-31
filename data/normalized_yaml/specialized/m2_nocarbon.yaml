@@ -1,6 +1,7 @@
 id: CultureMech:015536
 name: M2 noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Disodium phosphate

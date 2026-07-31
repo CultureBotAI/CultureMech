@@ -3,6 +3,7 @@ name: mj_medium_for_microaerophilic_autotrophs
 original_name: MJ Medium For Microaerophilic Autotrophs
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NH4Cl

@@ -3,6 +3,7 @@ name: beijerinckia_medium_for_isolation
 original_name: Beijerinckia medium for isolation
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 6.3

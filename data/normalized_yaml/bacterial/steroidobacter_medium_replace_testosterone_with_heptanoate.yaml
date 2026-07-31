@@ -3,6 +3,7 @@ name: steroidobacter_medium_replace_testosterone_with_heptanoate
 original_name: STEROIDOBACTER MEDIUM_replace_testosterone_with_heptanoate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

@@ -1,6 +1,7 @@
 id: CultureMech:015573
 name: McCas formate Fe Free
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3

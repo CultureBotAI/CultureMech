@@ -3,6 +3,7 @@ name: bacto_marine_broth_difco_2216
 original_name: BACTO MARINE BROTH (DIFCO 2216)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.4

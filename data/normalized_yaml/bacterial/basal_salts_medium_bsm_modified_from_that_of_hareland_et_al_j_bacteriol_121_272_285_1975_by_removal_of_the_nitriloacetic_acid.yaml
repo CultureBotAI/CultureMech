@@ -4,6 +4,7 @@ original_name: Basal salts medium (BSM) modified from that of Hareland et al. ( 
   Bacteriol 121:272– 285(1975)) by removal of the nitriloacetic acid
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: pae_ii_medium
 original_name: Pae II Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

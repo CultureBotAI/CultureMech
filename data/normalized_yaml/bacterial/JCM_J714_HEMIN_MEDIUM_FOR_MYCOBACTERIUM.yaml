@@ -3,6 +3,7 @@ name: hemin_medium_for_mycobacterium
 original_name: HEMIN MEDIUM FOR MYCOBACTERIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J714

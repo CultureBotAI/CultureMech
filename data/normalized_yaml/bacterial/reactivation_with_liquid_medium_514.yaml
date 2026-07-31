@@ -3,6 +3,7 @@ name: reactivation_with_liquid_medium_514
 original_name: REACTIVATION WITH LIQUID MEDIUM 514
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.6
 media_term:

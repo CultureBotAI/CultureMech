@@ -3,6 +3,7 @@ name: alkaline_yeast_extract_malt_extract_agar
 original_name: ALKALINE YEAST EXTRACT-MALT EXTRACT AGAR
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:

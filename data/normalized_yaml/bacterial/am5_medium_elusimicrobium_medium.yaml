@@ -3,6 +3,7 @@ name: am5_medium_elusimicrobium_medium
 original_name: AM5 MEDIUM (ELUSIMICROBIUM MEDIUM)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

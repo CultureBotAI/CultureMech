@@ -3,6 +3,7 @@ name: phosphate_buffer_ph_6_8_see_medium_1132
 original_name: Phosphate buffer (pH 6.8, see medium 1132)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

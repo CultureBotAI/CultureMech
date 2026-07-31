@@ -3,6 +3,7 @@ name: medium_457_modified_for_dsm_7346
 original_name: MEDIUM 457 MODIFIED FOR DSM 7346
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 6.0
 media_term:

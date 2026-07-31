@@ -3,6 +3,7 @@ name: medium_641_modified_for_dsm_16056
 original_name: MEDIUM 641 MODIFIED FOR DSM 16056
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 641_16056

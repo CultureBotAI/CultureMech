@@ -3,6 +3,7 @@ name: marine_h2_using_methanogen_medium
 original_name: Marine H2-using Methanogen Medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

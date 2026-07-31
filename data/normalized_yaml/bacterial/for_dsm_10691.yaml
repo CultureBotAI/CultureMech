@@ -3,6 +3,7 @@ name: for_dsm_10691
 original_name: 'For DSM 10691:'
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

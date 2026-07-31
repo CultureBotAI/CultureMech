@@ -3,6 +3,7 @@ name: vulcano_low_salt_medium
 original_name: VULCANO LOW SALT MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.9
 media_term:

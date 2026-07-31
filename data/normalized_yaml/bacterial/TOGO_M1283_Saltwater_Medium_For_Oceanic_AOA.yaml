@@ -3,6 +3,7 @@ name: saltwater_medium_for_oceanic_aoa
 original_name: Saltwater Medium For Oceanic AOA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: medium_339_modified_for_dsm_5676
 original_name: MEDIUM 339 MODIFIED FOR DSM 5676
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 339_5676

@@ -3,6 +3,7 @@ name: modified_mj_synthetic_sea_water_medium_1131
 original_name: Modified MJ synthetic sea water (medium 1131)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 2017

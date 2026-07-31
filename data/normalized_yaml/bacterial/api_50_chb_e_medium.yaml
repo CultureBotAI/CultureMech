@@ -3,6 +3,7 @@ name: api_50_chb_e_medium
 original_name: API 50 CHB/E Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: API 50 CHB/E Medium

@@ -3,6 +3,7 @@ name: marichromatium_imhoffii_medium
 original_name: Marichromatium Imhoffii Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2S

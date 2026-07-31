@@ -3,6 +3,7 @@ name: medium_67_modified_for_dsm_21789
 original_name: MEDIUM 67 MODIFIED FOR DSM 21789
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 67_21789

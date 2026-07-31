@@ -3,6 +3,7 @@ name: medium_9_modified_for_dsm_53191
 original_name: MEDIUM 9 MODIFIED FOR DSM 53191
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 9_53191

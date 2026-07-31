@@ -3,6 +3,7 @@ name: methanococcoides_medium_n2_co2
 original_name: METHANOCOCCOIDES MEDIUM (N2/CO2)
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

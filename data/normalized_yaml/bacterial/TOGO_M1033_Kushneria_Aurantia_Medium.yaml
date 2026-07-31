@@ -3,6 +3,7 @@ name: kushneria_aurantia_medium
 original_name: Kushneria Aurantia Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

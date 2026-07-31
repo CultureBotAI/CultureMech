@@ -3,6 +3,7 @@ name: triple_sugar_iron_medium_difco
 original_name: Triple-Sugar-Iron Medium (Difco)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

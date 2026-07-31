@@ -3,6 +3,7 @@ name: for_strains_dsm_23438_dsm_21056_dsm_21166_dsm_21888_dsm_5160
 original_name: For strains DSM 23438, DSM 21056, DSM 21166, DSM 21888, DSM 5160
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.6
 media_term:

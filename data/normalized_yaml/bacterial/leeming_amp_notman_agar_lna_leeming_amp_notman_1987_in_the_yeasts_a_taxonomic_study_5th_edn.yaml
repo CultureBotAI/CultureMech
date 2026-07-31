@@ -4,6 +4,7 @@ original_name: Leeming &amp; Notman agar (LNA) (Leeming &amp; Notman 1987) in Th
   Yeasts, a Taxonomic Study, 5th edn
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

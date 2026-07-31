@@ -3,6 +3,7 @@ name: thiobacillus_ferrooxidans_medium_with_tetrathionate
 original_name: THIOBACILLUS FERROOXIDANS MEDIUM WITH TETRATHIONATE
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 72

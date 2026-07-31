@@ -3,6 +3,7 @@ name: methanolobus_i_medium
 original_name: METHANOLOBUS-I-MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

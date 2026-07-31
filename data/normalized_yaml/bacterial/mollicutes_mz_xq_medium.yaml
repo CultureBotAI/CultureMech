@@ -3,6 +3,7 @@ name: mollicutes_mz_xq_medium
 original_name: MOLLICUTES MZ-XQ MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

@@ -3,6 +3,7 @@ name: gauzes_synthetic_medium_no_1_with_18_nacl
 original_name: Gauze's Synthetic Medium NO. 1 With 18% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

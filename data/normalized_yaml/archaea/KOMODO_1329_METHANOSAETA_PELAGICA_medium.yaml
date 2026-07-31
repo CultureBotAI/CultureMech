@@ -3,6 +3,7 @@ name: methanosaeta_pelagica_medium
 original_name: METHANOSAETA PELAGICA medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

@@ -3,6 +3,7 @@ name: lb_luria_bertani_agar_with_10_mm_glucose
 original_name: LB (LURIA-BERTANI) AGAR WITH 10 mM GLUCOSE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:

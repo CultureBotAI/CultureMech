@@ -3,6 +3,7 @@ name: mineral_solution_c_medium_492
 original_name: Mineral solution C (medium 492)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 2015

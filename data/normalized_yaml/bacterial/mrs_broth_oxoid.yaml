@@ -3,6 +3,7 @@ name: mrs_broth_oxoid
 original_name: MRS broth (Oxoid)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

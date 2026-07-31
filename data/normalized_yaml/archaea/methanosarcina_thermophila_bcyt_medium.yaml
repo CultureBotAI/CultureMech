@@ -3,6 +3,7 @@ name: methanosarcina_thermophila_bcyt_medium
 original_name: METHANOSARCINA THERMOPHILA (BCYT) MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

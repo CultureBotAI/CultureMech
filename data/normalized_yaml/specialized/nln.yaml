@@ -1,6 +1,7 @@
 id: CultureMech:015672
 name: NLN
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sucrose

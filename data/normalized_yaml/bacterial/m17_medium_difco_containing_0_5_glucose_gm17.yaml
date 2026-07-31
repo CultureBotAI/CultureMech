@@ -3,6 +3,7 @@ name: m17_medium_difco_containing_0_5_glucose_gm17
 original_name: M17 medium (Difco) containing 0.5% glucose (GM17)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glucose

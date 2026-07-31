@@ -3,6 +3,7 @@ name: medium_for_nitrite_oxidizer
 original_name: Medium for nitrite oxidizer
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

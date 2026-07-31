@@ -3,6 +3,7 @@ name: allochromatium_renukaii_medium
 original_name: Allochromatium Renukaii Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients: []
 media_term:

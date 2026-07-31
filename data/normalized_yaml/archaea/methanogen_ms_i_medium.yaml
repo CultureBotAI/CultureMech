@@ -3,6 +3,7 @@ name: methanogen_ms_i_medium
 original_name: METHANOGEN MS-I MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

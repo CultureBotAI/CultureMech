@@ -3,6 +3,7 @@ name: medium_s
 original_name: MEDIUM S
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.7
 media_term:

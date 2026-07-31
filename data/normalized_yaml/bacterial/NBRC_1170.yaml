@@ -4,6 +4,7 @@ original_name: '1170'
 category: bacterial
 description: 1170. NBRC 1169.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''

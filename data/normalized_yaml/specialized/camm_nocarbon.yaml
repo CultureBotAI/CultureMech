@@ -1,6 +1,7 @@
 id: CultureMech:015501
 name: CaMM noCarbon
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: K2HPO4

@@ -3,6 +3,7 @@ name: sulfurospirillum_ii_medium
 original_name: SULFUROSPIRILLUM II medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.3
 media_term:

@@ -3,6 +3,7 @@ name: for_dsm_23669
 original_name: For DSM 23669
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.0

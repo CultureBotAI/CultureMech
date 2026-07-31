@@ -3,6 +3,7 @@ name: zeikus_trace_elements_solution_medium_1343
 original_name: Zeikus trace elements solution (medium 1343)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3134 | DSMZ Medium: 3134 (mediadive.medium:3134)

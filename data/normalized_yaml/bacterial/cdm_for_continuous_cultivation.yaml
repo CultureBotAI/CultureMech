@@ -3,6 +3,7 @@ name: cdm_for_continuous_cultivation
 original_name: CDM for Continuous Cultivation
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium chloride

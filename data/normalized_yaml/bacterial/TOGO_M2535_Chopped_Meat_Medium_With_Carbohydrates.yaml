@@ -3,6 +3,7 @@ name: chopped_meat_medium_with_carbohydrates
 original_name: Chopped Meat Medium With Carbohydrates
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaOH 1 N

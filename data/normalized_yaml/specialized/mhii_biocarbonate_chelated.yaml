@@ -1,6 +1,7 @@
 id: CultureMech:015595
 name: MHII biocarbonate Chelated
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Pancreatic digest of casein

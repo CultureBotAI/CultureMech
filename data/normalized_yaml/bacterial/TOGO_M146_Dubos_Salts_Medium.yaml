@@ -3,6 +3,7 @@ name: dubos_salts_medium
 original_name: Dubos Salts Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

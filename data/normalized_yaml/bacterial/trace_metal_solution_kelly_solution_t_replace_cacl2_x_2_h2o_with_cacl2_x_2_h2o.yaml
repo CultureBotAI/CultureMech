@@ -4,6 +4,7 @@ original_name: Trace metal solution (Kelly solution T)_replace_CaCl2 x 2 H2O_wit
   x 2 H2O
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2070_replace_CaCl2 x 2 H2O_with_CaCl2

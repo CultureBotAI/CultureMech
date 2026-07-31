@@ -3,6 +3,7 @@ name: corynebacterium_medium_with_salt
 original_name: CORYNEBACTERIUM MEDIUM WITH SALT
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.2

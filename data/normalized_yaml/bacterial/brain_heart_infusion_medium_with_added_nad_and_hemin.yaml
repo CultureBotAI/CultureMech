@@ -3,6 +3,7 @@ name: brain_heart_infusion_medium_with_added_nad_and_hemin
 original_name: brain heart infusion medium (with added NAD and hemin)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calf brains

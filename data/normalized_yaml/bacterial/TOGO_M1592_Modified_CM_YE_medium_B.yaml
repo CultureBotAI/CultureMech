@@ -3,6 +3,7 @@ name: modified_cm_ye_medium_b
 original_name: Modified CM + YE medium (B)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

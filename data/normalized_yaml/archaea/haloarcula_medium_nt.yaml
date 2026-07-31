@@ -3,6 +3,7 @@ name: haloarcula_medium_nt
 original_name: HALOARCULA MEDIUM (NT)
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

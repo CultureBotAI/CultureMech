@@ -3,6 +3,7 @@ name: medium_with_met_asp_gly_arg_fang_et_al
 original_name: Medium with Met, Asp, Gly, Arg; Fang et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycine

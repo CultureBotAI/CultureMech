@@ -3,6 +3,7 @@ name: ekho_lake_strains_medium
 original_name: EKHO LAKE STRAINS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.2

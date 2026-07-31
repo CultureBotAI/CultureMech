@@ -3,6 +3,7 @@ name: medium_88_modified_for_dsm_12421
 original_name: MEDIUM 88 MODIFIED FOR DSM 12421
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.5
 media_term:

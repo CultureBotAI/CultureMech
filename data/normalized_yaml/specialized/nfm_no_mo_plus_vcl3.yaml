@@ -1,6 +1,7 @@
 id: CultureMech:015652
 name: NFM No Mo Plus VCl3
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2HPO4

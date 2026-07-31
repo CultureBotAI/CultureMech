@@ -4,6 +4,7 @@ original_name: '26'
 category: bacterial
 description: 26. NBRC 25.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Proteose peptone1gYeast extract1gGlucose1gDistilled water1LAgar15g

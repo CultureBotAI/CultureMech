@@ -3,6 +3,7 @@ name: hqg_1_medium
 original_name: HQG?1 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 notes: 'pH buffer: bicarbonate | Source: KOMODO ModelSEED | ID: 298a | DSMZ Medium:

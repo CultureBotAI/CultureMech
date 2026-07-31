@@ -3,6 +3,7 @@ name: trypticase_soy_broth_agar
 original_name: TRYPTICASE SOY BROTH AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J475

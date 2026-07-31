@@ -3,6 +3,7 @@ name: for_dsm_2392_dsm_9464_and_dsm_9465
 original_name: For DSM 2392, DSM 9464 and DSM 9465
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.2
 media_term:

@@ -3,6 +3,7 @@ name: sulfurisphaera_medium_ph_2_5
 original_name: Sulfurisphaera Medium (pH 2.5)
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

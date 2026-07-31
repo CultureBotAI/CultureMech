@@ -3,6 +3,7 @@ name: dsm_13531_arh1_and_dsm_13532_arh2_kscn_grown
 original_name: DSM 13531 = ARh1 and DSM 13532 = ARh2 (KSCN grown)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 925.1

@@ -3,6 +3,7 @@ name: thermoplasma_medium
 original_name: THERMOPLASMA MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 2.0
 media_term:

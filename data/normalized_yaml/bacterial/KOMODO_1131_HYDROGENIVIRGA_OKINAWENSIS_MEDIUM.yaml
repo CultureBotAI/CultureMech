@@ -3,6 +3,7 @@ name: hydrogenivirga_okinawensis_medium
 original_name: HYDROGENIVIRGA OKINAWENSIS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1131 | DSMZ Medium: 1131

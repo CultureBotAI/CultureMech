@@ -3,6 +3,7 @@ name: halococcus_dombowskii_medium
 original_name: Halococcus Dombowskii Medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

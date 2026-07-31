@@ -3,6 +3,7 @@ name: bicarbonate_buffered_medium_with_acethylene
 original_name: BICARBONATE-BUFFERED MEDIUM WITH ACETHYLENE
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

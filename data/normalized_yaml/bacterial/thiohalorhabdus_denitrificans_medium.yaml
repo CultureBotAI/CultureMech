@@ -3,6 +3,7 @@ name: thiohalorhabdus_denitrificans_medium
 original_name: THIOHALORHABDUS DENITRIFICANS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.5

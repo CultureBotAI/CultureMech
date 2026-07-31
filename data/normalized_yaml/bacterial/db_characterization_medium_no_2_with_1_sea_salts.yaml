@@ -3,6 +3,7 @@ name: db_characterization_medium_no_2_with_1_sea_salts
 original_name: DB CHARACTERIZATION MEDIUM NO.2 WITH 1% SEA SALTS
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1058

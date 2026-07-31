@@ -3,6 +3,7 @@ name: nissui_plate_sheep_blood_agar
 original_name: Nissui Plate Sheep Blood Agar*
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: See source for composition

@@ -3,6 +3,7 @@ name: mannitol_yeast_extract_peptone_myp
 original_name: MANNITOL-Yeast extract-Peptone (MYP)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1087

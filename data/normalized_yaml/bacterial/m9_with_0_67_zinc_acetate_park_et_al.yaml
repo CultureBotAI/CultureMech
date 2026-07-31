@@ -3,6 +3,7 @@ name: m9_with_0_67_zinc_acetate_park_et_al
 original_name: M9 with 0.67% zinc acetate; Park et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

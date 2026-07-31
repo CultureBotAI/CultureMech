@@ -1,6 +1,7 @@
 id: CultureMech:015750
 name: Streptomyces growth medium 65
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

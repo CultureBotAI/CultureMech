@@ -4,6 +4,7 @@ original_name: '848'
 category: bacterial
 description: 848. NBRC 847.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''

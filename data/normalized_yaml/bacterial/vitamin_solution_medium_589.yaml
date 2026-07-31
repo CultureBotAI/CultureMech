@@ -3,6 +3,7 @@ name: vitamin_solution_medium_589
 original_name: Vitamin solution (medium 589)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3120

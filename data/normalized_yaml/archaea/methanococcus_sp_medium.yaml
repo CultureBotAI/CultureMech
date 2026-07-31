@@ -3,6 +3,7 @@ name: methanococcus_sp_medium
 original_name: METHANOCOCCUS SP. medium
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.7
 media_term:

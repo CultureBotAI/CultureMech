@@ -3,6 +3,7 @@ name: modified_syntrophomonas_medium_for_ol4
 original_name: MODIFIED SYNTROPHOMONAS MEDIUM FOR OL4
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

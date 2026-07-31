@@ -3,6 +3,7 @@ name: de_man_rogosa_and_sharpe_mrs_broth_sigma
 original_name: de Man, Rogosa, and Sharpe (MRS) broth (Sigma)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

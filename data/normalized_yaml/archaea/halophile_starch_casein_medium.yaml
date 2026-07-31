@@ -3,6 +3,7 @@ name: halophile_starch_casein_medium
 original_name: HALOPHILE STARCH-CASEIN MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.3
 media_term:

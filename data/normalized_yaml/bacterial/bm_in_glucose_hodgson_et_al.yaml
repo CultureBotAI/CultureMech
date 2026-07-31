@@ -3,6 +3,7 @@ name: bm_in_glucose_hodgson_et_al
 original_name: BM in glucose; Hodgson et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

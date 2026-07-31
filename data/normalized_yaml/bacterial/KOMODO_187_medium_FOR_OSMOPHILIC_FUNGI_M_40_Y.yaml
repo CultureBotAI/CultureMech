@@ -3,6 +3,7 @@ name: medium_for_osmophilic_fungi_m_40_y
 original_name: medium FOR OSMOPHILIC FUNGI (M 40 Y)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 187

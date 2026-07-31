@@ -3,6 +3,7 @@ name: medium_220_modified_for_dsm_17723
 original_name: MEDIUM 220 MODIFIED FOR DSM 17723
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 220_17723

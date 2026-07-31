@@ -3,6 +3,7 @@ name: middlebrook_7h10_agar_with_oadc_enrichment
 original_name: MIDDLEBROOK 7H10 AGAR WITH OADC ENRICHMENT
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J386

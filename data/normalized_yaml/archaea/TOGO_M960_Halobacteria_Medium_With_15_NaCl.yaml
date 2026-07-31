@@ -3,6 +3,7 @@ name: halobacteria_medium_with_15_nacl
 original_name: Halobacteria Medium With 15% NaCl
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: distilled water

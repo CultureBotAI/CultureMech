@@ -3,6 +3,7 @@ name: trichococcus_skbg_medium
 original_name: Trichococcus SKBG Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

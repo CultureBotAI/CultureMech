@@ -3,6 +3,7 @@ name: medium_280_modified_for_dsm_6242
 original_name: MEDIUM 280 MODIFIED FOR DSM 6242
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

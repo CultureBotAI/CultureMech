@@ -3,6 +3,7 @@ name: colby_and_zathman_medium
 original_name: COLBY AND ZATHMAN MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:

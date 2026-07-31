@@ -3,6 +3,7 @@ name: modified_norkans_c_mnc
 original_name: Modified Norkans' C (MNC)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

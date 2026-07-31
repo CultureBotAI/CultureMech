@@ -3,6 +3,7 @@ name: g5g6_medium
 original_name: G5G6 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Carbon dioxide gas

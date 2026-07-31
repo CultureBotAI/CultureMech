@@ -3,6 +3,7 @@ name: mineral_medium_for_hydrogenophilus_islandicum
 original_name: Mineral Medium For Hydrogenophilus Islandicum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sol. 1

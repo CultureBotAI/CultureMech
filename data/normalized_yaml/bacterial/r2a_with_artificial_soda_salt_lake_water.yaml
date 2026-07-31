@@ -3,6 +3,7 @@ name: r2a_with_artificial_soda_salt_lake_water
 original_name: R2A WITH ARTIFICIAL SODA-SALT LAKE WATER
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 9.0
 media_term:

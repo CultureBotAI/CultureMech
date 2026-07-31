@@ -3,6 +3,7 @@ name: modified_m1_medium_with_acetate_pinchuk_et_al
 original_name: Modified M1 Medium with Acetate; Pinchuk et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Acetate

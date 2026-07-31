@@ -3,6 +3,7 @@ name: mineral_salt_solution_medium_289
 original_name: Mineral salt solution (medium 289)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 3028 | DSMZ Medium: 3028

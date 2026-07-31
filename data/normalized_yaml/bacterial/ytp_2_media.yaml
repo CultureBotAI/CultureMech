@@ -3,6 +3,7 @@ name: ytp_2_media
 original_name: YTP-2 media
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

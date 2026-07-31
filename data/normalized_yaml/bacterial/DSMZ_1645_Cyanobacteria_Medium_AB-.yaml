@@ -3,6 +3,7 @@ name: cyanobacteria_medium_ab
 original_name: Cyanobacteria Medium AB-
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1645

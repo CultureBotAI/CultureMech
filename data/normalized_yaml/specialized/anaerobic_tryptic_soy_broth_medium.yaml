@@ -3,6 +3,7 @@ name: anaerobic_tryptic_soy_broth_medium
 original_name: ANAEROBIC TRYPTIC SOY BROTH MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 media_term:

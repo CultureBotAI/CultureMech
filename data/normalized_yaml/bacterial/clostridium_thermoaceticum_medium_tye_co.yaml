@@ -3,6 +3,7 @@ name: clostridium_thermoaceticum_medium_tye_co
 original_name: CLOSTRIDIUM THERMOACETICUM medium (TYE-CO)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

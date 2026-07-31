@@ -3,6 +3,7 @@ name: reinforced_clostridial_medium_rcm_difco
 original_name: Reinforced Clostridial Medium (RCM) (Difco)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

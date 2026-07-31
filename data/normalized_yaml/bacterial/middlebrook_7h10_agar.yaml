@@ -3,6 +3,7 @@ name: middlebrook_7h10_agar
 original_name: Middlebrook 7H10 agar
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.4

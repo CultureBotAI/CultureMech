@@ -3,6 +3,7 @@ name: for_dsm_16632_and_dsm_16643
 original_name: For DSM 16632 and DSM 16643
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 119.1 | DSMZ Medium: 119

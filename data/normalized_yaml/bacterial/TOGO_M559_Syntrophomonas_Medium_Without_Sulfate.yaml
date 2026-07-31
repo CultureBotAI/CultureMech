@@ -3,6 +3,7 @@ name: syntrophomonas_medium_without_sulfate
 original_name: Syntrophomonas Medium Without Sulfate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2S・9H2O

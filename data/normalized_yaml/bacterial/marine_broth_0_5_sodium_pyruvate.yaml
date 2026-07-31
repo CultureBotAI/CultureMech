@@ -3,6 +3,7 @@ name: marine_broth_0_5_sodium_pyruvate
 original_name: Marine Broth + 0.5% Sodium Pyruvate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: alkaline_diluted_ams_medium
 original_name: Alkaline Diluted AMS Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

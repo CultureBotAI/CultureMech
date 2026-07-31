@@ -3,6 +3,7 @@ name: medium_for_tick_cells_rickettsia
 original_name: Medium for tick cells (Rickettsia)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

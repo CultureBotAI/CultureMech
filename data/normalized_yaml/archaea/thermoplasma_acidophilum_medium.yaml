@@ -3,6 +3,7 @@ name: thermoplasma_acidophilum_medium
 original_name: THERMOPLASMA ACIDOPHILUM MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 1.0
 media_term:

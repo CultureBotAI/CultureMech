@@ -3,6 +3,7 @@ name: roseococcus_suduntuyensis_medium
 original_name: ROSEOCOCCUS SUDUNTUYENSIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.5
 media_term:

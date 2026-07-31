@@ -3,6 +3,7 @@ name: medium_232_modified_for_dsm_20243
 original_name: MEDIUM 232 MODIFIED FOR DSM 20243
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 232_20243

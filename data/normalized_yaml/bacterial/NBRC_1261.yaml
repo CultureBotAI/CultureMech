@@ -4,6 +4,7 @@ original_name: '1261'
 category: bacterial
 description: 1261. NBRC 1257.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''

@@ -3,6 +3,7 @@ name: anaerobic_alkaline_ye_medium
 original_name: Anaerobic Alkaline YE Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

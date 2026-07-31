@@ -3,6 +3,7 @@ name: for_dsm_14828
 original_name: For DSM 14828
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

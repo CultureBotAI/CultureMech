@@ -3,6 +3,7 @@ name: tindallia_texcocoensis_medium
 original_name: TINDALLIA TEXCOCOENSIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 1223 | DSMZ Medium: 1223 (mediadive.medium:1223)

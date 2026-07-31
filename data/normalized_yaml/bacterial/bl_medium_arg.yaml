@@ -3,6 +3,7 @@ name: bl_medium_arg
 original_name: BL Medium + Arg
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Valine

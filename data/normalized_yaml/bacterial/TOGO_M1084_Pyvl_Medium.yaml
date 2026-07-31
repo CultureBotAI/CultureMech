@@ -3,6 +3,7 @@ name: pyvl_medium
 original_name: Pyvl Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 8% (w/v) Na2CO3

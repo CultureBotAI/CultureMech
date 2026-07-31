@@ -1,6 +1,7 @@
 id: CultureMech:015554
 name: marine broth 2216
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptone

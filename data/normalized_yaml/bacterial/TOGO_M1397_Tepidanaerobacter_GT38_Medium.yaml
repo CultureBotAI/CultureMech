@@ -3,6 +3,7 @@ name: tepidanaerobacter_gt38_medium
 original_name: Tepidanaerobacter GT38 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

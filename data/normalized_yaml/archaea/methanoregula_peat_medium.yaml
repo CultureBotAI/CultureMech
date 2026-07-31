@@ -3,6 +3,7 @@ name: methanoregula_peat_medium
 original_name: METHANOREGULA (PEAT) MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.1
 media_term:

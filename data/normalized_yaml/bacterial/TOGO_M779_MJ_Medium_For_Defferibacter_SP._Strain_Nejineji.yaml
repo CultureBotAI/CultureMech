@@ -3,6 +3,7 @@ name: mj_medium_for_defferibacter_sp_strain_nejineji
 original_name: MJ Medium For Defferibacter SP. Strain Nejineji
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

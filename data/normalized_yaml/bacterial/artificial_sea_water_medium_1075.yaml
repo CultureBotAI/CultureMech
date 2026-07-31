@@ -3,6 +3,7 @@ name: artificial_sea_water_medium_1075
 original_name: Artificial sea water (medium 1075)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3005

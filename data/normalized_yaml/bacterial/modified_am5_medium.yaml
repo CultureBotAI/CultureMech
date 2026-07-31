@@ -3,6 +3,7 @@ name: modified_am5_medium
 original_name: MODIFIED AM5 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J661

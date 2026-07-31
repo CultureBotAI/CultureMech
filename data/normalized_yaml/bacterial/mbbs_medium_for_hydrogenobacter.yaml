@@ -3,6 +3,7 @@ name: mbbs_medium_for_hydrogenobacter
 original_name: MBBS MEDIUM FOR HYDROGENOBACTER
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

@@ -3,6 +3,7 @@ name: pyruvate_minimal_media
 original_name: pyruvate minimal media
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Pyruvate

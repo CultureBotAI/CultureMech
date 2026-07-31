@@ -3,6 +3,7 @@ name: enriched_artificial_seawater_medium_f_2_suppl_with_50_g_l_nacl
 original_name: Enriched Artificial Seawater Medium f/2  suppl. with 50 g/l NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1750

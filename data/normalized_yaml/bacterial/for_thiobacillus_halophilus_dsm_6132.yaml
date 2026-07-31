@@ -3,6 +3,7 @@ name: for_thiobacillus_halophilus_dsm_6132
 original_name: For Thiobacillus halophilus DSM 6132
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.3

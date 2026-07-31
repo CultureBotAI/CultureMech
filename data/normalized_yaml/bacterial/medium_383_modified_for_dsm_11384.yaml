@@ -3,6 +3,7 @@ name: medium_383_modified_for_dsm_11384
 original_name: MEDIUM 383 MODIFIED FOR DSM 11384
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

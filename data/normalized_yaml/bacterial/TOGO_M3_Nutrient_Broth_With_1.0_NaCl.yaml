@@ -3,6 +3,7 @@ name: nutrient_broth_with_1_0_nacl
 original_name: Nutrient Broth With 1.0% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

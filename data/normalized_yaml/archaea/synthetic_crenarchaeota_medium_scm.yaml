@@ -3,6 +3,7 @@ name: synthetic_crenarchaeota_medium_scm
 original_name: Synthetic Crenarchaeota Medium (SCM)
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.6
 media_term:

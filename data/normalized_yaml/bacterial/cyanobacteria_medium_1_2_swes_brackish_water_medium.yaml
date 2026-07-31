@@ -3,6 +3,7 @@ name: cyanobacteria_medium_1_2_swes_brackish_water_medium
 original_name: Cyanobacteria Medium 1/2 SWES - Brackish Water Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1831a

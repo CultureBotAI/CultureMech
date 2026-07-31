@@ -3,6 +3,7 @@ name: tepidanaerobacter_acetatoxydans_medium
 original_name: Tepidanaerobacter Acetatoxydans Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

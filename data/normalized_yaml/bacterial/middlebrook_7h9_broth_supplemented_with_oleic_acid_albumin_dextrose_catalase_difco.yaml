@@ -4,6 +4,7 @@ original_name: Middlebrook 7H9 broth supplemented with oleic acid-albumin-dextro
   (Difco)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol

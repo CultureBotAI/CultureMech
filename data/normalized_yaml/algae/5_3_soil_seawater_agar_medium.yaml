@@ -2,6 +2,7 @@ id: CultureMech:000019
 name: 5_3_soil_seawater_agar_medium
 category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.

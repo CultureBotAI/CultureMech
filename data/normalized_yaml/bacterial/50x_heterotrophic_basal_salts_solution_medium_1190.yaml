@@ -3,6 +3,7 @@ name: 50x_heterotrophic_basal_salts_solution_medium_1190
 original_name: 50x Heterotrophic basal salts solution (medium 1190)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3001

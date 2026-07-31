@@ -3,6 +3,7 @@ name: anaerobic_alkaline_glucose_medium
 original_name: ANAEROBIC ALKALINE GLUCOSE MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.2
 media_term:

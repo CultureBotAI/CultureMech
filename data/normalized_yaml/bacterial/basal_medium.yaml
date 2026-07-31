@@ -3,6 +3,7 @@ name: basal_medium
 original_name: BASAL MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.9
 media_term:

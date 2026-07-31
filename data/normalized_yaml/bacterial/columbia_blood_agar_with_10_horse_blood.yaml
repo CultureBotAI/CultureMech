@@ -3,6 +3,7 @@ name: columbia_blood_agar_with_10_horse_blood
 original_name: COLUMBIA BLOOD AGAR WITH 10% HORSE BLOOD
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J218

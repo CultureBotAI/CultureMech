@@ -1,6 +1,7 @@
 id: CultureMech:015810
 name: ZMB ALS noIsoleucine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS

@@ -3,6 +3,7 @@ name: chopped_meat_medium_add_vitamin_k3_and_agar
 original_name: Chopped Meat Medium (add Vitamin K3 and agar)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: NaOH 1 N

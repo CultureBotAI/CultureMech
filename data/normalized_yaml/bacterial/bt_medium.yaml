@@ -3,6 +3,7 @@ name: bt_medium
 original_name: BT medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 816 | DSMZ Medium: 816

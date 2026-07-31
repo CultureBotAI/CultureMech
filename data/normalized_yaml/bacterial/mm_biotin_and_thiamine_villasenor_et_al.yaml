@@ -3,6 +3,7 @@ name: mm_biotin_and_thiamine_villasenor_et_al
 original_name: MM-biotin and thiamine; Villasenor et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Succinate

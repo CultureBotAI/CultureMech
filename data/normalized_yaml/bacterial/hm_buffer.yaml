@@ -3,6 +3,7 @@ name: hm_buffer
 original_name: HM Buffer
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: HEPES

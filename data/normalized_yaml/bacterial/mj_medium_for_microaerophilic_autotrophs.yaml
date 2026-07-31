@@ -3,6 +3,7 @@ name: mj_medium_for_microaerophilic_autotrophs
 original_name: MJ MEDIUM FOR MICROAEROPHILIC AUTOTROPHS
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
 media_term:

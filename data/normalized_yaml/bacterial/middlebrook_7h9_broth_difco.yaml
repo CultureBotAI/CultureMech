@@ -3,6 +3,7 @@ name: middlebrook_7h9_broth_difco
 original_name: Middlebrook 7H9 broth (Difco)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Middlebrook 7H9 broth (Difco)

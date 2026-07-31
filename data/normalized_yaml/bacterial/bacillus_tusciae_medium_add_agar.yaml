@@ -3,6 +3,7 @@ name: bacillus_tusciae_medium_add_agar
 original_name: Bacillus Tusciae Medium (add agar)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

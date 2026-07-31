@@ -3,6 +3,7 @@ name: solution_of_growth_stimulating_factors_medium_829
 original_name: Solution of growth-stimulating factors (medium 829)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2027 | DSMZ Medium: 2027

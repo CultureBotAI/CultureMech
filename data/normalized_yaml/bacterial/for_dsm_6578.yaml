@@ -3,6 +3,7 @@ name: for_dsm_6578
 original_name: For DSM 6578
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.9

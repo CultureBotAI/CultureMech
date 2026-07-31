@@ -3,6 +3,7 @@ name: medium_with_met_asp_fang_et_al
 original_name: Medium with Met, Asp; Fang et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Aspartate

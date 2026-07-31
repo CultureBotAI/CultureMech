@@ -3,6 +3,7 @@ name: modified_halobacteria_medium_3
 original_name: MODIFIED HALOBACTERIA MEDIUM-3
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

@@ -3,6 +3,7 @@ name: medium_636_modified_for_dsm_14598
 original_name: MEDIUM 636 MODIFIED FOR DSM 14598
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 636_14598

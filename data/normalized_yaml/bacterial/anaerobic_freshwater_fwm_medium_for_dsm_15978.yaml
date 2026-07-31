@@ -3,6 +3,7 @@ name: anaerobic_freshwater_fwm_medium_for_dsm_15978
 original_name: Anaerobic Freshwater (FWM) Medium (for DSM 15978)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

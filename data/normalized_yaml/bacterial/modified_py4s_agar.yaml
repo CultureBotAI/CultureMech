@@ -3,6 +3,7 @@ name: modified_py4s_agar
 original_name: MODIFIED PY4S AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.8
 media_term:

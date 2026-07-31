@@ -3,6 +3,7 @@ name: for_strains_dsm_23437_dsm_23508_dsm23509_dsm_21076_dsm_26132
 original_name: For strains DSM 23437, DSM 23508, DSM23509, DSM 21076, DSM 26132
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.6
 media_term:

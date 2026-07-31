@@ -3,6 +3,7 @@ name: brucella_blood_agar_with_hemin_menadione
 original_name: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J677

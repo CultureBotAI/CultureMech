@@ -3,6 +3,7 @@ name: alcaliphilic_amphibacillus_strains_medium
 original_name: ALCALIPHILIC AMPHIBACILLUS STRAINS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.5

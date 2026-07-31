@@ -3,6 +3,7 @@ name: acidic_hb_1_medium
 original_name: ACIDIC HB-1 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
 media_term:

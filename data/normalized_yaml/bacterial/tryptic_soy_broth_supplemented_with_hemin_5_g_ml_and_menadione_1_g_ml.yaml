@@ -4,6 +4,7 @@ original_name: Tryptic soy broth supplemented with hemin (5 μg/mL) and menadion
   μg/mL)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Hemin

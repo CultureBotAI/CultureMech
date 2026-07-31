@@ -3,6 +3,7 @@ name: for_dsm_14539_dsm_14646_and_dsm_14648
 original_name: For DSM 14539, DSM 14646 and DSM 14648
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

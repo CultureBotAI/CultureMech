@@ -3,6 +3,7 @@ name: nitrosotalea_aoa_fresh_water_medium_fw
 original_name: Nitrosotalea (AOA) Fresh Water Medium (FW)
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.1
 media_term:

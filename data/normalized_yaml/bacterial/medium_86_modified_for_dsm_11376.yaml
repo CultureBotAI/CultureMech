@@ -3,6 +3,7 @@ name: medium_86_modified_for_dsm_11376
 original_name: MEDIUM 86 MODIFIED FOR DSM 11376
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 86_11376

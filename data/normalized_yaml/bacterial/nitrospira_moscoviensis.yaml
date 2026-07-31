@@ -3,6 +3,7 @@ name: nitrospira_moscoviensis
 original_name: NITROSPIRA MOSCOVIENSIS
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.4

@@ -1,6 +1,7 @@
 id: CultureMech:015808
 name: ZMB ALS noGuanine
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ZMB_ALS

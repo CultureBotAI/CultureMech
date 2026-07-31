@@ -3,6 +3,7 @@ name: fervidicoccus_medium
 original_name: FERVIDICOCCUS MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.0

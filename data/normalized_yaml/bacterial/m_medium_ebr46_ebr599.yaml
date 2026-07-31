@@ -3,6 +3,7 @@ name: m_medium_ebr46_ebr599
 original_name: M medium (EBR46, EBR599)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

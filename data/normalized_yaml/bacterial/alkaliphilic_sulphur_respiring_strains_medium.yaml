@@ -3,6 +3,7 @@ name: alkaliphilic_sulphur_respiring_strains_medium
 original_name: ALKALIPHILIC SULPHUR RESPIRING STRAINS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:

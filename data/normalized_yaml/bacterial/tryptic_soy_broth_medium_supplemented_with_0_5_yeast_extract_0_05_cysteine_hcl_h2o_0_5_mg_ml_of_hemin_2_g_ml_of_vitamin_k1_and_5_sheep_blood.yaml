@@ -4,6 +4,7 @@ original_name: Tryptic soy broth medium supplemented with 0.5% yeast extract, 0.
   cysteine HCl-H2O, 0.5 mg/ml of hemin, 2 μg/ml of vitamin K1, and 5% sheep blood
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract

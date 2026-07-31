@@ -3,6 +3,7 @@ name: bacto_middelbrook_7h11_agar_medium_911
 original_name: Bacto Middelbrook 7H11 agar (medium 911)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.4

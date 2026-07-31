@@ -3,6 +3,7 @@ name: desulfovibrio_aerotolerans_dvo5_medium
 original_name: Desulfovibrio Aerotolerans DVO5 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

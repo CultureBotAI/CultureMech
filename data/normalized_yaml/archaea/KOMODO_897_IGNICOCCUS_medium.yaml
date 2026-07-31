@@ -3,6 +3,7 @@ name: ignicoccus_medium
 original_name: IGNICOCCUS medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 897 | DSMZ Medium: 897 (mediadive.medium:897)

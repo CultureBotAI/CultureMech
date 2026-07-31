@@ -3,6 +3,7 @@ name: gauzes_synthetic_medium_no_1
 original_name: GAUZE'S SYNTHETIC MEDIUM NO. 1
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:

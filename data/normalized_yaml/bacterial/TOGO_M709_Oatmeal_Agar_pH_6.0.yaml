@@ -3,6 +3,7 @@ name: oatmeal_agar_ph_6_0
 original_name: Oatmeal Agar (pH 6.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients: []
 media_term:

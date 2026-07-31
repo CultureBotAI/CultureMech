@@ -3,6 +3,7 @@ name: autoinducer_bioassay_ab_medium
 original_name: Autoinducer Bioassay (AB) Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Base Medium

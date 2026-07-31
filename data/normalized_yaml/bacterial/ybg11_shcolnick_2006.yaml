@@ -3,6 +3,7 @@ name: ybg11_shcolnick_2006
 original_name: '''YBG11 (Shcolnick 2006'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium dibasic phosphate

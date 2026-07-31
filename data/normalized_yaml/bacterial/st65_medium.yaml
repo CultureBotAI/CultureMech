@@ -3,6 +3,7 @@ name: st65_medium
 original_name: ST65 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1033

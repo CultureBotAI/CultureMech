@@ -3,6 +3,7 @@ name: methanoregula_medium
 original_name: METHANOREGULA medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.1
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 1280 | DSMZ Medium: 1280 (mediadive.medium:1280)

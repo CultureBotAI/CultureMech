@@ -1,6 +1,7 @@
 id: CultureMech:015577
 name: McCas H2 Fe Free
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: KCl

@@ -3,6 +3,7 @@ name: yeast_mineral_medium_25_g_l_glucose
 original_name: '''Yeast Mineral Medium (25 g/L Glucose'
 category: fungal
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: EDTA

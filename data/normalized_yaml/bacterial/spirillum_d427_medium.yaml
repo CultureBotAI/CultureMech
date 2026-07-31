@@ -3,6 +3,7 @@ name: spirillum_d427_medium
 original_name: SPIRILLUM D427 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.2

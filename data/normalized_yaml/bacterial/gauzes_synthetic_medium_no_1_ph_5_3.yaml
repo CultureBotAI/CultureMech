@@ -3,6 +3,7 @@ name: gauzes_synthetic_medium_no_1_ph_5_3
 original_name: GAUZE'S SYNTHETIC MEDIUM NO. 1 (pH 5.3)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.3
 media_term:

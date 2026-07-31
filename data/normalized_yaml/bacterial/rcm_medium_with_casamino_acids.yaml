@@ -3,6 +3,7 @@ name: rcm_medium_with_casamino_acids
 original_name: RCM MEDIUM (with Casamino acids)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

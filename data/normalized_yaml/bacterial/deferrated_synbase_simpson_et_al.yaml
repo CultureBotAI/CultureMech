@@ -3,6 +3,7 @@ name: deferrated_synbase_simpson_et_al
 original_name: Deferrated synbase; simpson et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol

@@ -3,6 +3,7 @@ name: marine_agar_2216_with_5_nacl
 original_name: Marine Agar 2216 with 5% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: NaCl

@@ -3,6 +3,7 @@ name: acidianus_brierleyi_medium
 original_name: ACIDIANUS BRIERLEYI MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 1.5

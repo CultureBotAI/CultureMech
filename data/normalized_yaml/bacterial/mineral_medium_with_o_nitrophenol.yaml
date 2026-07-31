@@ -3,6 +3,7 @@ name: mineral_medium_with_o_nitrophenol
 original_name: MINERAL MEDIUM WITH O-NITROPHENOL
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 461c

@@ -3,6 +3,7 @@ name: glucose_bicarbonate_buffered_medium
 original_name: Glucose+bicarbonate-Buffered Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Carbon dioxide gas

@@ -3,6 +3,7 @@ name: bhi_w_heat_inactivated_fetal_bovine_serum_and_glucose
 original_name: BHI w/ heat-inactivated Fetal Bovine Serum and Glucose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water

@@ -3,6 +3,7 @@ name: heliobacillus_mobilis_medium
 original_name: HELIOBACILLUS MOBILIS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.1
 media_term:

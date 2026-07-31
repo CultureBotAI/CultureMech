@@ -1,6 +1,7 @@
 id: CultureMech:015608
 name: MoLS4 no ammonia
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium sulfate

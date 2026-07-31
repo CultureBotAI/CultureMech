@@ -3,6 +3,7 @@ name: r2a_medium_with_25_salt
 original_name: R2A MEDIUM WITH 25% SALT
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

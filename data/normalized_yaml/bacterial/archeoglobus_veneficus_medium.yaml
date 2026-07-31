@@ -3,6 +3,7 @@ name: archeoglobus_veneficus_medium
 original_name: ARCHEOGLOBUS VENEFICUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 796 | DSMZ Medium: 796 (mediadive.medium:796)

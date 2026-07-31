@@ -3,6 +3,7 @@ name: m9_seo
 original_name: '''M9 (Seo'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

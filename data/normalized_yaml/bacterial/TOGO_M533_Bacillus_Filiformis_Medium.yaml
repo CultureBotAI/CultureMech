@@ -3,6 +3,7 @@ name: bacillus_filiformis_medium
 original_name: Bacillus Filiformis Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

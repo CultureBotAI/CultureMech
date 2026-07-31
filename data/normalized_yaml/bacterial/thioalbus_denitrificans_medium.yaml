@@ -3,6 +3,7 @@ name: thioalbus_denitrificans_medium
 original_name: THIOALBUS DENITRIFICANS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

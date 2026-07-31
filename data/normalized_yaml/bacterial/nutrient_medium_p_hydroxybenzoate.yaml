@@ -3,6 +3,7 @@ name: nutrient_medium_p_hydroxybenzoate
 original_name: Nutrient medium + p-hydroxybenzoate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 4-Hydroxybenzoate

@@ -3,6 +3,7 @@ name: medium_58_modified_for_dsm_7201
 original_name: MEDIUM 58 MODIFIED FOR DSM 7201
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 58_7201

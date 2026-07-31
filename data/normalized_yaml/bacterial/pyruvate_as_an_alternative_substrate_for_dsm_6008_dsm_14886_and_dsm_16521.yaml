@@ -4,6 +4,7 @@ original_name: pyruvate as an alternative substrate for DSM 6008, DSM 14886 and 
   16521
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

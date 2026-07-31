@@ -3,6 +3,7 @@ name: freshwater_medium_for_soil_aoa
 original_name: Freshwater Medium For Soil AOA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

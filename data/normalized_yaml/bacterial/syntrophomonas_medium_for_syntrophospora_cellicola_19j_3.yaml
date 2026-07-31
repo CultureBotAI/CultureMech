@@ -3,6 +3,7 @@ name: syntrophomonas_medium_for_syntrophospora_cellicola_19j_3
 original_name: SYNTROPHOMONAS MEDIUM (for Syntrophospora cellicola 19J-3)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

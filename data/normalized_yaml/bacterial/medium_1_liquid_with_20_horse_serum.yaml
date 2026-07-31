@@ -3,6 +3,7 @@ name: medium_1_liquid_with_20_horse_serum
 original_name: Medium 1 liquid, with 20 % horse serum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

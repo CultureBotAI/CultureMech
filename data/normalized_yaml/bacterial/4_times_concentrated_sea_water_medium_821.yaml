@@ -3,6 +3,7 @@ name: 4_times_concentrated_sea_water_medium_821
 original_name: 4 times concentrated sea water (medium 821)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3144

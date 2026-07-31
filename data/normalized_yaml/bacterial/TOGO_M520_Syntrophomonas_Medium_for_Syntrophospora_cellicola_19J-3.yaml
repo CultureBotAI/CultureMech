@@ -3,6 +3,7 @@ name: syntrophomonas_medium_for_syntrophospora_cellicola_19j_3
 original_name: Syntrophomonas Medium (for Syntrophospora cellicola 19J-3)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Carbon dioxide gas

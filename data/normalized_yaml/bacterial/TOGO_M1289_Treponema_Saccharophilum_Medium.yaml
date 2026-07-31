@@ -3,6 +3,7 @@ name: treponema_saccharophilum_medium
 original_name: Treponema Saccharophilum Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

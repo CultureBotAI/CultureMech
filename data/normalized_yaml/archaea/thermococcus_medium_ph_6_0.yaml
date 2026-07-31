@@ -3,6 +3,7 @@ name: thermococcus_medium_ph_6_0
 original_name: THERMOCOCCUS MEDIUM (pH 6.0)
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

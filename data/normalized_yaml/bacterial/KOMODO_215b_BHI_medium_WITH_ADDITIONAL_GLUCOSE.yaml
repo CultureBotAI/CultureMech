@@ -3,6 +3,7 @@ name: bhi_medium_with_additional_glucose
 original_name: BHI medium WITH ADDITIONAL GLUCOSE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 215b

@@ -3,6 +3,7 @@ name: methylothermus_subterraneus_medium
 original_name: Methylothermus Subterraneus Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

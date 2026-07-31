@@ -3,6 +3,7 @@ name: yeast_starch_agar_a
 original_name: YEAST STARCH AGAR (A)
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:

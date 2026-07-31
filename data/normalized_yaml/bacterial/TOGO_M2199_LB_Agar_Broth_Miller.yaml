@@ -3,6 +3,7 @@ name: lb_agar_broth_miller
 original_name: LB Agar/Broth, Miller
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water

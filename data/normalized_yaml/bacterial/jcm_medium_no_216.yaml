@@ -3,6 +3,7 @@ name: jcm_medium_no_216
 original_name: JCM MEDIUM No. 216
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

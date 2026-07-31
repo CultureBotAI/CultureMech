@@ -3,6 +3,7 @@ name: fwafc
 original_name: FWAFC
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Acetate

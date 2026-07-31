@@ -3,6 +3,7 @@ name: modified_ba_medium_replace_cellobiose_with_cellulose
 original_name: MODIFIED BA medium_replace_Cellobiose_with_Cellulose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.9

@@ -2,6 +2,7 @@ id: CultureMech:000147
 name: f_2_si_for_heterotrophic_growth
 category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
   algae cultivation. Recipe available in PDF format.

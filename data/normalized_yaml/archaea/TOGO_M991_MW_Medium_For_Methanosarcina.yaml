@@ -3,6 +3,7 @@ name: mw_medium_for_methanosarcina
 original_name: MW Medium For Methanosarcina
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

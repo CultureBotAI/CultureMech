@@ -3,6 +3,7 @@ name: chromagertm_malassezia_candida
 original_name: CHROMagerTM Malassezia/Candida*
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients: []
 media_term:

@@ -3,6 +3,7 @@ name: alkalibacterium_olivapovliticus
 original_name: ALKALIBACTERIUM OLIVAPOVLITICUS
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 923

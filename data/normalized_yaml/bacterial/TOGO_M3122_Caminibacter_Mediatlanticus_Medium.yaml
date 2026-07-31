@@ -3,6 +3,7 @@ name: caminibacter_mediatlanticus_medium
 original_name: Caminibacter Mediatlanticus Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Carbon dioxide gas

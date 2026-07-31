@@ -3,6 +3,7 @@ name: methanohalobium_medium
 original_name: METHANOHALOBIUM MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

@@ -3,6 +3,7 @@ name: m13_3x_pirellula_medium
 original_name: M13 (3x) PIRELLULA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 600b

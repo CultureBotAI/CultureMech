@@ -3,6 +3,7 @@ name: ginger_beer_plant_medium
 original_name: GINGER BEER PLANT MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 267

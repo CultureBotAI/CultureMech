@@ -3,6 +3,7 @@ name: modified_gam_agar_horse_blood_acetate
 original_name: Modified GAM agar + horse blood & acetate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

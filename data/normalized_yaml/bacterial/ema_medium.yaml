@@ -3,6 +3,7 @@ name: ema_medium
 original_name: EMA medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

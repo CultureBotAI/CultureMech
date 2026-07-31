@@ -3,6 +3,7 @@ name: desulforhabdus_amnigenus_medium
 original_name: DESULFORHABDUS AMNIGENUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

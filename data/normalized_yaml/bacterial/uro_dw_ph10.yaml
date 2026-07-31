@@ -3,6 +3,7 @@ name: uro_dw_ph10
 original_name: URO (DW pH10)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: MgSO4·7H2O

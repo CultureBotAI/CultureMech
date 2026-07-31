@@ -3,6 +3,7 @@ name: fastidious_anaerobe_broth_medium
 original_name: Fastidious Anaerobe Broth Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

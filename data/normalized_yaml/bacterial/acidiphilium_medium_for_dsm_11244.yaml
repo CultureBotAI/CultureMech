@@ -3,6 +3,7 @@ name: acidiphilium_medium_for_dsm_11244
 original_name: Acidiphilium Medium (For DSM 11244)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

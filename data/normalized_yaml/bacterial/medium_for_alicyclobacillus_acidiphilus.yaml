@@ -3,6 +3,7 @@ name: medium_for_alicyclobacillus_acidiphilus
 original_name: Medium for Alicyclobacillus acidiphilus
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

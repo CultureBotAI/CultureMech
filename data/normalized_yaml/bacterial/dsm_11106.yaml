@@ -3,6 +3,7 @@ name: dsm_11106
 original_name: DSM 11106
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

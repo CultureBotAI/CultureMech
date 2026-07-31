@@ -3,6 +3,7 @@ name: fwm_medium
 original_name: FWM-MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

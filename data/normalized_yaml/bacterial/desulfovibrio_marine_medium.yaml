@@ -3,6 +3,7 @@ name: desulfovibrio_marine_medium
 original_name: DESULFOVIBRIO (marine) medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 163

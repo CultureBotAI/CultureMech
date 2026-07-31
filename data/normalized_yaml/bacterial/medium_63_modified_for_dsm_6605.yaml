@@ -3,6 +3,7 @@ name: medium_63_modified_for_dsm_6605
 original_name: MEDIUM 63 MODIFIED FOR DSM 6605
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

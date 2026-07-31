@@ -3,6 +3,7 @@ name: methylophaga_muralis_medium
 original_name: METHYLOPHAGA MURALIS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

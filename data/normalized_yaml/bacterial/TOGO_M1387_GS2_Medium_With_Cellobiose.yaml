@@ -3,6 +3,7 @@ name: gs2_medium_with_cellobiose
 original_name: GS2 Medium With Cellobiose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

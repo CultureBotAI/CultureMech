@@ -3,6 +3,7 @@ name: ym_liquid_medium
 original_name: YM Liquid Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

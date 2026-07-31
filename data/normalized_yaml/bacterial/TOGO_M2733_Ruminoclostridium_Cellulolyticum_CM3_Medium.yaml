@@ -3,6 +3,7 @@ name: ruminoclostridium_cellulolyticum_cm3_medium
 original_name: Ruminoclostridium Cellulolyticum (CM3) Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

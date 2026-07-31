@@ -3,6 +3,7 @@ name: cherry_agar_cbs_formula
 original_name: CHERRY AGAR (CBS formula)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 3.8

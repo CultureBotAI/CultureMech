@@ -3,6 +3,7 @@ name: asw_150_barley
 original_name: ASW 150 + barley
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C6

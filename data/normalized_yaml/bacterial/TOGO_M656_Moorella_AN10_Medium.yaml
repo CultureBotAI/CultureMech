@@ -3,6 +3,7 @@ name: moorella_an10_medium
 original_name: Moorella AN10 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2S・9H2O

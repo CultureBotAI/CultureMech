@@ -3,6 +3,7 @@ name: for_dsm_18378_and_dsm_18379
 original_name: For DSM 18378 and DSM 18379
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

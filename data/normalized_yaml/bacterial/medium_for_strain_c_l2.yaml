@@ -3,6 +3,7 @@ name: medium_for_strain_c_l2
 original_name: Medium for strain C/L2
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

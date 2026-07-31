@@ -3,6 +3,7 @@ name: marine_agar_2216_ph_9_0
 original_name: Marine Agar 2216 (pH 9.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients: []
 media_term:

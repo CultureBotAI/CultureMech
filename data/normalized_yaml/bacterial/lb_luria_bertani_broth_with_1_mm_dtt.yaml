@@ -3,6 +3,7 @@ name: lb_luria_bertani_broth_with_1_mm_dtt
 original_name: LB (LURIA-BERTANI) BROTH WITH 1 mM DTT
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

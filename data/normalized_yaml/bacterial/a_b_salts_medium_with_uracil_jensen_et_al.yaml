@@ -3,6 +3,7 @@ name: a_b_salts_medium_with_uracil_jensen_et_al
 original_name: A+B Salts Medium with Uracil; Jensen et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

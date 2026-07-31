@@ -3,6 +3,7 @@ name: yeast_extract_medium_ye
 original_name: Yeast Extract Medium (YE)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: See source for composition

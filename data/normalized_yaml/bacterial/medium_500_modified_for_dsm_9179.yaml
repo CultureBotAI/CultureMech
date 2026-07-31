@@ -3,6 +3,7 @@ name: medium_500_modified_for_dsm_9179
 original_name: MEDIUM 500 MODIFIED FOR DSM 9179
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

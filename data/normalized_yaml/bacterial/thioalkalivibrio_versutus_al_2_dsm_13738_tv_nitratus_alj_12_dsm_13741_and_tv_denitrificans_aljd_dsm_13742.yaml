@@ -4,6 +4,7 @@ original_name: Thioalkalivibrio versutus AL 2 = DSM 13738, Tv.nitratus ALJ 12 = 
   13741, and Tv.denitrificans ALJD = DSM 13742
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 925.5

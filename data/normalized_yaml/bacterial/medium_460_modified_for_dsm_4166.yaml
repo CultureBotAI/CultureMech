@@ -3,6 +3,7 @@ name: medium_460_modified_for_dsm_4166
 original_name: MEDIUM 460 MODIFIED FOR DSM 4166
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 460_4166

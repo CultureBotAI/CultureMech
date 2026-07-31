@@ -3,6 +3,7 @@ name: medium_461_modified_for_dsm_11853_replace_2_4_dichlorophenol_with_2_6_dich
 original_name: MEDIUM 461 MODIFIED FOR DSM 11853_replace_2,4-dichlorophenol_with_2,6-dichlorophenol
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 461_11853_replace_2,4-dichlorophenol_with_2,6-dichlorophenol

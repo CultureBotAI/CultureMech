@@ -3,6 +3,7 @@ name: mineral_medium_brunner_supplemented_with_toluene
 original_name: Mineral Medium (Brunner) Supplemented With Toluene
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

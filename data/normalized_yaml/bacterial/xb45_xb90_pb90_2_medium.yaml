@@ -3,6 +3,7 @@ name: xb45_xb90_pb90_2_medium
 original_name: XB45/XB90/PB90-2 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

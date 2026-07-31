@@ -3,6 +3,7 @@ name: lyu03_medium
 original_name: LYU03 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.3
 media_term:

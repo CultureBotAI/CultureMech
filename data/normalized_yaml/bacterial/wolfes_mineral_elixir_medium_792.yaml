@@ -3,6 +3,7 @@ name: wolfes_mineral_elixir_medium_792
 original_name: Wolfes Mineral Elixir (medium 792)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 1.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 2106 | DSMZ Medium: 2106

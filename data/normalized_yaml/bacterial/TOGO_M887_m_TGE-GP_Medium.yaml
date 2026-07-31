@@ -3,6 +3,7 @@ name: m_tge_gp_medium
 original_name: m TGE-GP Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: glycerol

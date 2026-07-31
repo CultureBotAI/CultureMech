@@ -3,6 +3,7 @@ name: basal_synthetic_medium_vitamins
 original_name: Basal Synthetic Medium + vitamins
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: 4-Hydroxy-L-proline

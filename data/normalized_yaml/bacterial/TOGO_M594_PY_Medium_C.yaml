@@ -3,6 +3,7 @@ name: py_medium_c
 original_name: PY Medium (C)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: aam_medium
 original_name: AAM medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.4
 media_term:

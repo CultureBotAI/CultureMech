@@ -3,6 +3,7 @@ name: cellulomonas_fermentans_medium
 original_name: CELLULOMONAS FERMENTANS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 350 | DSMZ Medium: 350 (mediadive.medium:350)

@@ -3,6 +3,7 @@ name: nitrososphaera_gargensis_medium
 original_name: Nitrososphaera gargensis medium
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.5
 media_term:

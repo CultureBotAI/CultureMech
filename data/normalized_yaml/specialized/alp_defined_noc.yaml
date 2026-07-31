@@ -1,6 +1,7 @@
 id: CultureMech:015487
 name: ALP defined noC
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium phosphate monobasic monohydrate

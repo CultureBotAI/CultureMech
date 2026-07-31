@@ -3,6 +3,7 @@ name: methyloceanus_cenitepidus_medium
 original_name: METHYLOCEANUS CENITEPIDUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1488

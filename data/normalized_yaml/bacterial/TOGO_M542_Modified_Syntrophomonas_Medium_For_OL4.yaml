@@ -3,6 +3,7 @@ name: modified_syntrophomonas_medium_for_ol4
 original_name: Modified Syntrophomonas Medium For OL4
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2S・9H2O

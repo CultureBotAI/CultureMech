@@ -3,6 +3,7 @@ name: mh1_medium_for_saliarchaeum_rubrodurum
 original_name: MH1 MEDIUM FOR SALIARCHAEUM RUBRODURUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 4.0
 media_term:

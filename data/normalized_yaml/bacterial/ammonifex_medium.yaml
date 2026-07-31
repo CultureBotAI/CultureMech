@@ -3,6 +3,7 @@ name: ammonifex_medium
 original_name: AMMONIFEX MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 716

@@ -3,6 +3,7 @@ name: for_dsm_12261_and_dsm_12262
 original_name: For DSM 12261 and DSM 12262
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

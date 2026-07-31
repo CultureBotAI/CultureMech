@@ -3,6 +3,7 @@ name: halophile_medium
 original_name: HALOPHILE MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.5

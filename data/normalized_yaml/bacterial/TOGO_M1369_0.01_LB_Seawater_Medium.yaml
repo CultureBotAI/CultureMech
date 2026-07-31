@@ -3,6 +3,7 @@ name: 0_01_lb_seawater_medium
 original_name: 0.01% LB Seawater Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: K2HPO4

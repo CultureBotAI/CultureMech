@@ -3,6 +3,7 @@ name: fe_iii_reducer_freshwater_enrichment_medium
 original_name: Fe(III)-REDUCER FRESHWATER ENRICHMENT MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: modified_pfennig_medium_with_glucose
 original_name: Modified Pfennig Medium With Glucose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: rich_medium
 original_name: RICH medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

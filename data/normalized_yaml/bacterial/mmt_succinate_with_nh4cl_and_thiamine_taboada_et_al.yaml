@@ -3,6 +3,7 @@ name: mmt_succinate_with_nh4cl_and_thiamine_taboada_et_al
 original_name: MMT-Succinate with NH4Cl and thiamine; Taboada et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Succinate

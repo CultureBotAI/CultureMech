@@ -3,6 +3,7 @@ name: low_salt_luria_broth_lslb
 original_name: Low-Salt Luria-Broth (LSLB)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

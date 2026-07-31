@@ -3,6 +3,7 @@ name: 10_mixotrophic_nitrobacter_medium
 original_name: 10% MIXOTROPHIC NITROBACTER medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.6
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 756b | DSMZ Medium: 756b

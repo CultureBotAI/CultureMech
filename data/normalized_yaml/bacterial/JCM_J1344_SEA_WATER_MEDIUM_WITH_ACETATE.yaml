@@ -3,6 +3,7 @@ name: sea_water_medium_with_acetate
 original_name: SEA WATER MEDIUM WITH ACETATE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1344

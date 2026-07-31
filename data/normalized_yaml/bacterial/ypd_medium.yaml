@@ -3,6 +3,7 @@ name: ypd_medium
 original_name: YPD MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

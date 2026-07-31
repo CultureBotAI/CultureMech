@@ -3,6 +3,7 @@ name: natronospira_proteinivora_medium
 original_name: Natronospira Proteinivora Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Basic mineral salt medium 1 (see below)

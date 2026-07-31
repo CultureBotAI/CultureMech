@@ -3,6 +3,7 @@ name: trace_element_solution_630
 original_name: Trace element solution (630)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3061 | DSMZ Medium: 3061 (mediadive.medium:3061)

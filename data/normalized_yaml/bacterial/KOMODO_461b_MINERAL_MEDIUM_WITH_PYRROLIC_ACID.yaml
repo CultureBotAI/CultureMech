@@ -3,6 +3,7 @@ name: mineral_medium_with_pyrrolic_acid
 original_name: MINERAL MEDIUM WITH PYRROLIC ACID
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

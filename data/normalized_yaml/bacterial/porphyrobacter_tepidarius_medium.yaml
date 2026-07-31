@@ -3,6 +3,7 @@ name: porphyrobacter_tepidarius_medium
 original_name: PORPHYROBACTER TEPIDARIUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

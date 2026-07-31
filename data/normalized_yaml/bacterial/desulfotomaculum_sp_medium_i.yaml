@@ -3,6 +3,7 @@ name: desulfotomaculum_sp_medium_i
 original_name: DESULFOTOMACULUM SP. medium I
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.5

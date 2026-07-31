@@ -3,6 +3,7 @@ name: fervidicoccus_fontis_medium
 original_name: FERVIDICOCCUS FONTIS MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.8
 media_term:

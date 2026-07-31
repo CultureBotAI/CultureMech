@@ -2,6 +2,7 @@ name: half_strength_murashige_skoog_medium_for_arabidopsis_growth
 original_name: Half-strength Murashige-Skoog medium for Arabidopsis growth
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015433
 ingredients:

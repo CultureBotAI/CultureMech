@@ -3,6 +3,7 @@ name: difco_nutrient_agar_broth
 original_name: Difco Nutrient Agar/Broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: postgate_j_rs_medium_c
 original_name: POSTGATE J. R'S MEDIUM C
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J654

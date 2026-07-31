@@ -3,6 +3,7 @@ name: gym_streptomyces_medium
 original_name: GYM Streptomyces Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

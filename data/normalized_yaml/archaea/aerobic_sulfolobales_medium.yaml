@@ -3,6 +3,7 @@ name: aerobic_sulfolobales_medium
 original_name: AEROBIC SULFOLOBALES MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 2.5
 media_term:

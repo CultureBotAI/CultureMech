@@ -3,6 +3,7 @@ name: malt_extract_agar
 original_name: MALT EXTRACT AGAR
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J31

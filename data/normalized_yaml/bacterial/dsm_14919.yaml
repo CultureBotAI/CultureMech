@@ -3,6 +3,7 @@ name: dsm_14919
 original_name: DSM 14919
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.6
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 950.2 | DSMZ Medium: 950

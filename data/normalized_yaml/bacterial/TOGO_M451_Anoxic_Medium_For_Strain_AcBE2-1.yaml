@@ -3,6 +3,7 @@ name: anoxic_medium_for_strain_acbe2_1
 original_name: Anoxic Medium For Strain AcBE2-1
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

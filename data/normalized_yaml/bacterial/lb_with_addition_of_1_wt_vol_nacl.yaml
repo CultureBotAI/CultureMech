@@ -3,6 +3,7 @@ name: lb_with_addition_of_1_wt_vol_nacl
 original_name: LB with addition of 1% (wt/vol) NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl

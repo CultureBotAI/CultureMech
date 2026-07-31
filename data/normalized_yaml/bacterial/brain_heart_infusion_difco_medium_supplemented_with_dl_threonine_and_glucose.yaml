@@ -4,6 +4,7 @@ original_name: Brain heart infusion (Difco) medium supplemented with DL-threonin
   and glucose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DL-threonine

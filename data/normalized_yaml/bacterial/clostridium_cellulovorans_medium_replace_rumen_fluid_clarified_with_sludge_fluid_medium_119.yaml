@@ -4,6 +4,7 @@ original_name: CLOSTRIDIUM CELLULOVORANS medium_replace_Rumen fluid, clarified_w
   fluid (medium 119)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

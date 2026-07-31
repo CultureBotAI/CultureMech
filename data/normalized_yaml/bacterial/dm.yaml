@@ -3,6 +3,7 @@ name: dm
 original_name: DM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.9
 media_term:

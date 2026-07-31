@@ -3,6 +3,7 @@ name: thermofilum_medium
 original_name: THERMOFILUM MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 5.8

@@ -3,6 +3,7 @@ name: l1
 original_name: L1
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:

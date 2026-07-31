@@ -3,6 +3,7 @@ name: methanosaeta_brevibacterium_medium
 original_name: Methanosaeta Brevibacterium Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

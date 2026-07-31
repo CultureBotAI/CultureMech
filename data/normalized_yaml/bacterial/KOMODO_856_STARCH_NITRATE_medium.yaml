@@ -3,6 +3,7 @@ name: starch_nitrate_medium
 original_name: STARCH NITRATE medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 856

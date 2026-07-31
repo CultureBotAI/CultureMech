@@ -3,6 +3,7 @@ name: methanothermococcus_hhb_medium
 original_name: METHANOTHERMOCOCCUS HHB MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1194

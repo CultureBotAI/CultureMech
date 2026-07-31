@@ -1,6 +1,7 @@
 id: CultureMech:015525
 name: FilteredGW Cell lysate 1/2500
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Spring sampling GW821 filtered with 0.2uM filter

@@ -3,6 +3,7 @@ name: ekho_lake_strains_medium
 original_name: Ekho Lake Strains Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

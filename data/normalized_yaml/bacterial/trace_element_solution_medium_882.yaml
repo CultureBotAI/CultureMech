@@ -3,6 +3,7 @@ name: trace_element_solution_medium_882
 original_name: Trace element solution (medium 882)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 1.8
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 2052 | DSMZ Medium: 2052

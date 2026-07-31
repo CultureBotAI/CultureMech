@@ -3,6 +3,7 @@ name: th7c1_medium
 original_name: TH7C1 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

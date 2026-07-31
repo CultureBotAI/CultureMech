@@ -3,6 +3,7 @@ name: thermosyntropha_l_60_medium
 original_name: Thermosyntropha L-60 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Carbon dioxide gas

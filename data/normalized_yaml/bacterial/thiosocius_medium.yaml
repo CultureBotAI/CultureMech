@@ -3,6 +3,7 @@ name: thiosocius_medium
 original_name: THIOSOCIUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.0
 media_term:

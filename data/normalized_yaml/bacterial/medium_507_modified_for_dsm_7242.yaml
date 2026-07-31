@@ -3,6 +3,7 @@ name: medium_507_modified_for_dsm_7242
 original_name: MEDIUM 507 MODIFIED FOR DSM 7242
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

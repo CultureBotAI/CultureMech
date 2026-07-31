@@ -3,6 +3,7 @@ name: payne_seghal_gibbons_medium
 original_name: Payne, Seghal & Gibbons Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

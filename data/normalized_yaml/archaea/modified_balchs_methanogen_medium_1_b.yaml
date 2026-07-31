@@ -3,6 +3,7 @@ name: modified_balchs_methanogen_medium_1_b
 original_name: MODIFIED BALCH'S METHANOGEN MEDIUM 1/B
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J948

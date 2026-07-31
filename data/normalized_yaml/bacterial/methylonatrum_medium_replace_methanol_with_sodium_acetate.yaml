@@ -3,6 +3,7 @@ name: methylonatrum_medium_replace_methanol_with_sodium_acetate
 original_name: METHYLONATRUM MEDIUM_replace_Methanol_with_Sodium acetate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:

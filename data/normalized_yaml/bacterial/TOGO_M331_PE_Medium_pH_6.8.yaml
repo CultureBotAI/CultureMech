@@ -3,6 +3,7 @@ name: pe_medium_ph_6_8
 original_name: PE Medium (pH 6.8)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients: []
 media_term:

@@ -1,6 +1,7 @@
 id: CultureMech:015535
 name: LS4D
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium sulfate

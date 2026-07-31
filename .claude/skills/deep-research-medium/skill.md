@@ -41,6 +41,68 @@ recent — re-running spends API credits.
   dev-extras).
 - Phase-1 template: `templates/media_growth_research.md`
 - Phase-2 template: `templates/medium_organism_recipe_extraction.md`
+- Recipe-validation template: `templates/media_recipe_validation.md`
+
+## Recipe-validation mode (single phase, no organism discovery)
+
+Separate from the two-phase organism flow above. Use this to **audit the
+formulation** of one medium and **each of its modeled variants** against
+authoritative sources, returning curator-ready corrections rather than new
+organisms.
+
+### Native Claude Code path (default — no Edison credits)
+
+Run the validation with this harness's own web tools (or the `deep-research`
+skill) instead of the Edison API. Render the filled prompt, then research
+it yourself:
+
+```bash
+# print the validation prompt for one medium + its variant set:
+just validate-media-recipe <SLUG-OR-PATH>
+# or with a different template / write to a file:
+just validate-media-recipe <SLUG-OR-PATH> --template <tpl> --out prompt.md
+```
+
+`render_media_prompt.py` is render-only — it makes **no** external calls and
+does not need the `edison-client` SDK. Take the rendered Markdown as your
+research brief: do the web searches / source fetches, verify each claim
+against a cited source line, and write the report to
+`research/media/<slug>-recipe-validation.md` in the output format the
+template specifies (verdict table → findings → proposed YAML → gaps).
+
+### Edison API path (spends credits)
+
+Reuses the phase-1 wrapper with the validation template — swap `--template`:
+
+```bash
+just validate-media-recipe-edison <SLUG-OR-PATH>            # via just, or:
+uv run --extra dev python scripts/research_media_edison.py \
+    --target <SLUG-OR-PATH> \
+    --job literature \
+    --template templates/media_recipe_validation.md \
+    --out-dir research/media
+# audit the rendered query first without spending credits:
+... --dry-run
+```
+
+The template validates the base recipe (ingredient identity, amounts/units
+with unit normalization + hydrate handling, pH/conditions, solutions) and
+then validates **each variant set separately**:
+
+- inline `variants[]` — via the `{variants}` template var, and
+- cross-record variants (`parent_media` / `variant_children` / this
+  record's `variant_relationship` + `variant_modifications`) — via the
+  `{variant_records}` template var added to `scripts/research_media.py`'s
+  `template_vars` (`summarize_variant_records`).
+
+When `{variant_records}` names a linked parent/child YAML by path, run the
+validation against that record too — each linked record is its own
+validation unit, and the relationship is checked in both directions.
+
+Output is a single Markdown report: a verdict table (one row per
+validation unit, `CONFIRMED | DISCREPANCY | UNVERIFIABLE`), findings with
+P1/P2/P3 severity and a cited source line, proposed YAML fragments, and
+unresolved gaps. Hand off to `review-recipes` before applying any change.
 
 ## Inputs
 

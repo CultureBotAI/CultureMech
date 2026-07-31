@@ -3,6 +3,7 @@ name: methanobacterium_adherens_medium
 original_name: Methanobacterium Adherens Medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

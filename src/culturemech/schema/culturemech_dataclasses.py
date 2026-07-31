@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-07-20T20:45:30
+# Generation date: 2026-07-30T21:23:00
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -181,7 +181,6 @@ class MediaRecipe(YAMLRoot):
     class_model_uri: ClassVar[URIRef] = CULTUREMECH.MediaRecipe
 
     name: Union[str, MediaRecipeName] = None
-    medium_type: Union[str, "MediumTypeEnum"] = None
     physical_state: Union[str, "PhysicalStateEnum"] = None
     ingredients: Union[Union[dict, "IngredientDescriptor"], list[Union[dict, "IngredientDescriptor"]]] = None
     id: Optional[str] = None
@@ -203,6 +202,10 @@ class MediaRecipe(YAMLRoot):
     target_organisms: Optional[Union[dict[Union[str, OrganismDescriptorPreferredTerm], Union[dict, "OrganismDescriptor"]], list[Union[dict, "OrganismDescriptor"]]]] = empty_dict()
     source_environment: Optional[Union[Union[dict, "SourceEnvironmentDescriptor"], list[Union[dict, "SourceEnvironmentDescriptor"]]]] = empty_list()
     organism_culture_type: Optional[Union[str, "OrganismCultureTypeEnum"]] = None
+    medium_type: Optional[Union[str, "MediumTypeEnum"]] = None
+    composition_type: Optional[Union[str, "MediumCompositionTypeEnum"]] = None
+    nutritional_class: Optional[Union[str, "MediumNutritionalClassEnum"]] = None
+    functional_role: Optional[Union[Union[str, "MediumFunctionalRoleEnum"], list[Union[str, "MediumFunctionalRoleEnum"]]]] = empty_list()
     ph_value: Optional[float] = None
     ph_range: Optional[Union[dict, "PhRange"]] = None
     light_intensity: Optional[str] = None
@@ -240,11 +243,6 @@ class MediaRecipe(YAMLRoot):
             self.MissingRequiredField("name")
         if not isinstance(self.name, MediaRecipeName):
             self.name = MediaRecipeName(self.name)
-
-        if self._is_empty(self.medium_type):
-            self.MissingRequiredField("medium_type")
-        if not isinstance(self.medium_type, MediumTypeEnum):
-            self.medium_type = MediumTypeEnum(self.medium_type)
 
         if self._is_empty(self.physical_state):
             self.MissingRequiredField("physical_state")
@@ -316,6 +314,19 @@ class MediaRecipe(YAMLRoot):
 
         if self.organism_culture_type is not None and not isinstance(self.organism_culture_type, OrganismCultureTypeEnum):
             self.organism_culture_type = OrganismCultureTypeEnum(self.organism_culture_type)
+
+        if self.medium_type is not None and not isinstance(self.medium_type, MediumTypeEnum):
+            self.medium_type = MediumTypeEnum(self.medium_type)
+
+        if self.composition_type is not None and not isinstance(self.composition_type, MediumCompositionTypeEnum):
+            self.composition_type = MediumCompositionTypeEnum(self.composition_type)
+
+        if self.nutritional_class is not None and not isinstance(self.nutritional_class, MediumNutritionalClassEnum):
+            self.nutritional_class = MediumNutritionalClassEnum(self.nutritional_class)
+
+        if not isinstance(self.functional_role, list):
+            self.functional_role = [self.functional_role] if self.functional_role is not None else []
+        self.functional_role = [v if isinstance(v, MediumFunctionalRoleEnum) else MediumFunctionalRoleEnum(v) for v in self.functional_role]
 
         if self.ph_value is not None and not isinstance(self.ph_value, float):
             self.ph_value = float(self.ph_value)
@@ -2572,28 +2583,32 @@ class Dataset(YAMLRoot):
 # Enumerations
 class MediumTypeEnum(EnumDefinitionImpl):
     """
-    Classification of culture medium
+    DEPRECATED single-axis classification of culture medium. It conflated three orthogonal properties (composition,
+    nutritional level, functional role) into one single-valued slot. Superseded by MediumCompositionTypeEnum
+    (composition_type), MediumNutritionalClassEnum (nutritional_class), and MediumFunctionalRoleEnum
+    (functional_role). Retained for backward compatibility; populate the three axis slots on new and migrated records
+    instead.
     """
     DEFINED = PermissibleValue(
         text="DEFINED",
-        description="Chemically defined medium with known composition",
+        description="Chemically defined medium with known composition. Migrates to composition_type=DEFINED.",
         meaning=NCIT["C64372"])
     COMPLEX = PermissibleValue(
         text="COMPLEX",
-        description="Medium with undefined components (e.g., yeast extract)",
+        description="""Medium with undefined components (e.g., yeast extract). Migrates to composition_type=UNDEFINED.""",
         meaning=NCIT["C64371"])
     SELECTIVE = PermissibleValue(
         text="SELECTIVE",
-        description="Medium that selects for specific organisms")
+        description="Medium that selects for specific organisms. Migrates to functional_role=[SELECTIVE].")
     DIFFERENTIAL = PermissibleValue(
         text="DIFFERENTIAL",
-        description="Medium that differentiates organism types")
+        description="Medium that differentiates organism types. Migrates to functional_role=[DIFFERENTIAL].")
     ENRICHMENT = PermissibleValue(
         text="ENRICHMENT",
-        description="Medium that enriches for specific organisms")
+        description="Medium that enriches for specific organisms. Migrates to functional_role=[ENRICHMENT].")
     MINIMAL = PermissibleValue(
         text="MINIMAL",
-        description="Medium with minimal nutrients required for growth")
+        description="Medium with minimal nutrients required for growth. Migrates to nutritional_class=MINIMAL.")
     BUFFER = PermissibleValue(
         text="BUFFER",
         description="""Buffer solution (e.g. PBS) — not a growth medium per se but stored alongside media for context.""")
@@ -2603,7 +2618,82 @@ class MediumTypeEnum(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="MediumTypeEnum",
-        description="Classification of culture medium",
+        description="""DEPRECATED single-axis classification of culture medium. It conflated three orthogonal properties (composition, nutritional level, functional role) into one single-valued slot. Superseded by MediumCompositionTypeEnum (composition_type), MediumNutritionalClassEnum (nutritional_class), and MediumFunctionalRoleEnum (functional_role). Retained for backward compatibility; populate the three axis slots on new and migrated records instead.""",
+    )
+
+class MediumCompositionTypeEnum(EnumDefinitionImpl):
+    """
+    Composition axis: how chemically defined the medium is. Single-valued and orthogonal to nutritional level
+    (MediumNutritionalClassEnum) and functional role (MediumFunctionalRoleEnum).
+    """
+    DEFINED = PermissibleValue(
+        text="DEFINED",
+        description="""Chemically defined (synthetic) medium; every component and its exact quantity is known. Synonyms —synthetic.""",
+        meaning=NCIT["C64372"])
+    UNDEFINED = PermissibleValue(
+        text="UNDEFINED",
+        description="""Medium containing one or more chemically undefined components (e.g. yeast extract, peptone, casamino acids, tissue or plant extracts). Replaces the deprecated MediumTypeEnum value COMPLEX. Synonyms —complex.""",
+        meaning=NCIT["C64371"])
+    SEMI_DEFINED = PermissibleValue(
+        text="SEMI_DEFINED",
+        description="""Predominantly defined medium supplemented with a small amount of one or more undefined components (e.g. a defined base plus a trace of yeast extract). Synonyms —semisynthetic.""")
+
+    _defn = EnumDefinition(
+        name="MediumCompositionTypeEnum",
+        description="""Composition axis: how chemically defined the medium is. Single-valued and orthogonal to nutritional level (MediumNutritionalClassEnum) and functional role (MediumFunctionalRoleEnum).""",
+    )
+
+class MediumNutritionalClassEnum(EnumDefinitionImpl):
+    """
+    Nutritional-level axis: how nutrient-rich the medium is. Single-valued and orthogonal to composition
+    (MediumCompositionTypeEnum) and functional role (MediumFunctionalRoleEnum).
+    """
+    MINIMAL = PermissibleValue(
+        text="MINIMAL",
+        description="""Provides only the minimal nutrients required for growth of the target organism — typically a defined medium with a single carbon/energy source plus essential salts (e.g. M9).""")
+    RICH = PermissibleValue(
+        text="RICH",
+        description="""Provides nutrients in excess (abundant amino acids, peptides, vitamins, and carbon sources), supporting rapid growth of fastidious or general organisms (e.g. LB, TSB, BHI).""")
+    GENERAL_PURPOSE = PermissibleValue(
+        text="GENERAL_PURPOSE",
+        description="""Standard nutrient level for routine cultivation — neither deliberately minimal nor deliberately enriched. Use when a medium is not clearly MINIMAL or RICH.""")
+
+    _defn = EnumDefinition(
+        name="MediumNutritionalClassEnum",
+        description="""Nutritional-level axis: how nutrient-rich the medium is. Single-valued and orthogonal to composition (MediumCompositionTypeEnum) and functional role (MediumFunctionalRoleEnum).""",
+    )
+
+class MediumFunctionalRoleEnum(EnumDefinitionImpl):
+    """
+    Functional-role axis: what the medium is designed to do. MULTIVALUED — a medium may be both selective and
+    differential, etc. Orthogonal to composition (MediumCompositionTypeEnum) and nutritional level
+    (MediumNutritionalClassEnum).
+    """
+    GENERAL_PURPOSE = PermissibleValue(
+        text="GENERAL_PURPOSE",
+        description="""Non-selective, non-differential medium for routine growth of a broad range of organisms. Synonyms —non-selective, basal.""")
+    SELECTIVE = PermissibleValue(
+        text="SELECTIVE",
+        description="""Suppresses or prevents growth of unwanted organisms (via antibiotics, dyes, bile salts, NaCl, pH, etc.) to favor a target group.""")
+    DIFFERENTIAL = PermissibleValue(
+        text="DIFFERENTIAL",
+        description="""Distinguishes organism types by a visible biochemical reaction (e.g. color change from fermentation, or hemolysis) without necessarily inhibiting growth.""")
+    ENRICHMENT = PermissibleValue(
+        text="ENRICHMENT",
+        description="""Promotes growth of a target organism to detectable numbers from a mixed population, typically prior to isolation.""")
+    TRANSPORT = PermissibleValue(
+        text="TRANSPORT",
+        description="Maintains organism viability without significant multiplication during transport or storage.")
+    ASSAY = PermissibleValue(
+        text="ASSAY",
+        description="""Standardized medium for a specific assay (e.g. antibiotic potency, vitamin or growth-factor bioassay).""")
+    ENUMERATION = PermissibleValue(
+        text="ENUMERATION",
+        description="Supports viable-count / colony enumeration (e.g. heterotrophic plate count media such as R2A).")
+
+    _defn = EnumDefinition(
+        name="MediumFunctionalRoleEnum",
+        description="""Functional-role axis: what the medium is designed to do. MULTIVALUED — a medium may be both selective and differential, etc. Orthogonal to composition (MediumCompositionTypeEnum) and nutritional level (MediumNutritionalClassEnum).""",
     )
 
 class PhysicalStateEnum(EnumDefinitionImpl):
@@ -3854,7 +3944,16 @@ slots.mediaRecipe__organism_culture_type = Slot(uri=CULTUREMECH.organism_culture
                    model_uri=CULTUREMECH.mediaRecipe__organism_culture_type, domain=None, range=Optional[Union[str, "OrganismCultureTypeEnum"]])
 
 slots.mediaRecipe__medium_type = Slot(uri=CULTUREMECH.medium_type, name="mediaRecipe__medium_type", curie=CULTUREMECH.curie('medium_type'),
-                   model_uri=CULTUREMECH.mediaRecipe__medium_type, domain=None, range=Union[str, "MediumTypeEnum"])
+                   model_uri=CULTUREMECH.mediaRecipe__medium_type, domain=None, range=Optional[Union[str, "MediumTypeEnum"]])
+
+slots.mediaRecipe__composition_type = Slot(uri=CULTUREMECH.composition_type, name="mediaRecipe__composition_type", curie=CULTUREMECH.curie('composition_type'),
+                   model_uri=CULTUREMECH.mediaRecipe__composition_type, domain=None, range=Optional[Union[str, "MediumCompositionTypeEnum"]])
+
+slots.mediaRecipe__nutritional_class = Slot(uri=CULTUREMECH.nutritional_class, name="mediaRecipe__nutritional_class", curie=CULTUREMECH.curie('nutritional_class'),
+                   model_uri=CULTUREMECH.mediaRecipe__nutritional_class, domain=None, range=Optional[Union[str, "MediumNutritionalClassEnum"]])
+
+slots.mediaRecipe__functional_role = Slot(uri=CULTUREMECH.functional_role, name="mediaRecipe__functional_role", curie=CULTUREMECH.curie('functional_role'),
+                   model_uri=CULTUREMECH.mediaRecipe__functional_role, domain=None, range=Optional[Union[Union[str, "MediumFunctionalRoleEnum"], list[Union[str, "MediumFunctionalRoleEnum"]]]])
 
 slots.mediaRecipe__physical_state = Slot(uri=CULTUREMECH.physical_state, name="mediaRecipe__physical_state", curie=CULTUREMECH.curie('physical_state'),
                    model_uri=CULTUREMECH.mediaRecipe__physical_state, domain=None, range=Union[str, "PhysicalStateEnum"])

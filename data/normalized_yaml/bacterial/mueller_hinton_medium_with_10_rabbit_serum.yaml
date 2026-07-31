@@ -3,6 +3,7 @@ name: mueller_hinton_medium_with_10_rabbit_serum
 original_name: Mueller Hinton Medium with 10% Rabbit Serum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: DI Water

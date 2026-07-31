@@ -1,6 +1,7 @@
 id: CultureMech:015465
 name: LB_0.1x
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tryptone

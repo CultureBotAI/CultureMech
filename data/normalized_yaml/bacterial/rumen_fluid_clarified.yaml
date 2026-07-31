@@ -3,6 +3,7 @@ name: rumen_fluid_clarified
 original_name: Rumen fluid, clarified
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 6003

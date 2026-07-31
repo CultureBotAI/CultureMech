@@ -3,6 +3,7 @@ name: corynebacterium_medium_cii
 original_name: CORYNEBACTERIUM medium CII
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 583

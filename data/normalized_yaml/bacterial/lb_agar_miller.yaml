@@ -3,6 +3,7 @@ name: lb_agar_miller
 original_name: LB Agar, Miller
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DI Water

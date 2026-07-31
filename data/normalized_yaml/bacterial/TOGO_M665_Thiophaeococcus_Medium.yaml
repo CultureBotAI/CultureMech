@@ -3,6 +3,7 @@ name: thiophaeococcus_medium
 original_name: Thiophaeococcus Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Vitamin B12 (2 mg/ml)

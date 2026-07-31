@@ -3,6 +3,7 @@ name: desulfonema_limicola_medium
 original_name: DESULFONEMA LIMICOLA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 media_term:

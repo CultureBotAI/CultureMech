@@ -3,6 +3,7 @@ name: phosphate_solution_medium_1191
 original_name: Phosphate solution (medium 1191)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

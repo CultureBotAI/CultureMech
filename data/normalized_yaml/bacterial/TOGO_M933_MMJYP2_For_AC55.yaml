@@ -3,6 +3,7 @@ name: mmjyp2_for_ac55
 original_name: MMJYP2 For AC55
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract

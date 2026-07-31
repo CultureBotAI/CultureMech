@@ -3,6 +3,7 @@ name: dsm_5262
 original_name: DSM 5262
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.0

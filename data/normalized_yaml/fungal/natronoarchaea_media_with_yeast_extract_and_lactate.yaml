@@ -3,6 +3,7 @@ name: natronoarchaea_media_with_yeast_extract_and_lactate
 original_name: NATRONOARCHAEA MEDIA WITH YEAST EXTRACT AND LACTATE
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1285

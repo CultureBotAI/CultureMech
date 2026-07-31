@@ -3,6 +3,7 @@ name: ectothiorhodospira_abdelmalekii_medium
 original_name: ECTOTHIORHODOSPIRA ABDELMALEKII MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.5
 notes: 'pH buffer: Na2S | Source: KOMODO ModelSEED | ID: 430 | DSMZ Medium: 430 (mediadive.medium:430)

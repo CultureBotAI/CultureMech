@@ -3,6 +3,7 @@ name: methanocaldococcus_leighii_medium
 original_name: METHANOCALDOCOCCUS LEIGHII MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

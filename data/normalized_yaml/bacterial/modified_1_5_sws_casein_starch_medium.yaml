@@ -3,6 +3,7 @@ name: modified_1_5_sws_casein_starch_medium
 original_name: Modified 1/5 SWS-Casein Starch Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

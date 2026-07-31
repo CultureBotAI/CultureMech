@@ -3,6 +3,7 @@ name: sulfurimonas_hongkongensis_medium
 original_name: Sulfurimonas Hongkongensis Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: N2

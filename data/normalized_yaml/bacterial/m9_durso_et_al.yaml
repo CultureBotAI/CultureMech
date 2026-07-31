@@ -3,6 +3,7 @@ name: m9_durso_et_al
 original_name: '''M9 (Durso et al'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

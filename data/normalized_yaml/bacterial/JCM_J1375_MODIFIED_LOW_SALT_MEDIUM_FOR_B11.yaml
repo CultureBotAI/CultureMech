@@ -3,6 +3,7 @@ name: modified_low_salt_medium_for_b11
 original_name: MODIFIED LOW SALT MEDIUM FOR B11
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

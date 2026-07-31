@@ -3,6 +3,7 @@ name: mm_succinate_with_nh4cl_encarnacion_et_al
 original_name: MM-Succinate with NH4Cl; Encarnacion et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Succinate

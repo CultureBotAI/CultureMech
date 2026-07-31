@@ -3,6 +3,7 @@ name: thermoclostridium_a_g_medium
 original_name: Thermoclostridium (A-GÖ) Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

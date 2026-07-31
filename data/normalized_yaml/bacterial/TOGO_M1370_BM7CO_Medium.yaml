@@ -3,6 +3,7 @@ name: bm7co_medium
 original_name: BM7CO Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

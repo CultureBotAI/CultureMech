@@ -3,6 +3,7 @@ name: trace_element_solution_medium_939
 original_name: Trace element solution (medium 939)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2058 | DSMZ Medium: 2058

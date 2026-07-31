@@ -3,6 +3,7 @@ name: lactic_acid_whey_medium_456
 original_name: Lactic acid whey (medium 456)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 notes: 'pH buffer: lactic acid | Source: KOMODO ModelSEED | ID: 3137 | DSMZ Medium:

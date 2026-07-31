@@ -3,6 +3,7 @@ name: for_strains_dsm_12138_12139_12140_and_12143
 original_name: For strains DSM 12138, 12139, 12140 and 12143
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.1

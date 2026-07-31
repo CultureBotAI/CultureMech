@@ -3,6 +3,7 @@ name: bacillus_filiformis_medium
 original_name: BACILLUS FILIFORMIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

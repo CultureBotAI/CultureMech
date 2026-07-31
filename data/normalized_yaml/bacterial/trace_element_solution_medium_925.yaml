@@ -3,6 +3,7 @@ name: trace_element_solution_medium_925
 original_name: Trace element solution (medium 925)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2056 | DSMZ Medium: 2056 (mediadive.medium:2056)

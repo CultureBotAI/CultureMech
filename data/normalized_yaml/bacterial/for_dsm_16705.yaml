@@ -3,6 +3,7 @@ name: for_dsm_16705
 original_name: For DSM 16705
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 3.5

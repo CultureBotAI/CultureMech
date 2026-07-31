@@ -3,6 +3,7 @@ name: ncl
 original_name: NCL
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C63

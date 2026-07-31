@@ -3,6 +3,7 @@ name: bacillus_thermantarcticus_medium
 original_name: BACILLUS THERMANTARCTICUS medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 5.6

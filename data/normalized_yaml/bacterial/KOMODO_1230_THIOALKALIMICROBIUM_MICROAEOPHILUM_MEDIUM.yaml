@@ -3,6 +3,7 @@ name: thioalkalimicrobium_microaeophilum_medium
 original_name: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 1230 | DSMZ Medium: 1230 (mediadive.medium:1230)

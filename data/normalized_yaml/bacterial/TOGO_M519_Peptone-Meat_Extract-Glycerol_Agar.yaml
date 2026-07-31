@@ -3,6 +3,7 @@ name: peptone_meat_extract_glycerol_agar
 original_name: Peptone-Meat Extract-Glycerol Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: pirellula_medium_m31
 original_name: PIRELLULA MEDIUM (M31)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:

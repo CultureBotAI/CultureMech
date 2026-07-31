@@ -3,6 +3,7 @@ name: medium_797_modified_for_dsm_11619
 original_name: MEDIUM 797 MODIFIED FOR DSM 11619
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 797_11619

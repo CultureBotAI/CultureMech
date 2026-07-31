@@ -3,6 +3,7 @@ name: thermosulfidibacter_medium
 original_name: THERMOSULFIDIBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

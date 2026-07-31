@@ -3,6 +3,7 @@ name: acidifferobacter_murciensis_medium
 original_name: ACIDIFFEROBACTER MURCIENSIS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.0
 media_term:

@@ -3,6 +3,7 @@ name: aml60_medium
 original_name: AML60 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.8
 media_term:

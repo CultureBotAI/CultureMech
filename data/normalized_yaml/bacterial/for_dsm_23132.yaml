@@ -3,6 +3,7 @@ name: for_dsm_23132
 original_name: For DSM 23132
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 507.6 | DSMZ Medium: 507

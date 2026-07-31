@@ -3,6 +3,7 @@ name: ptyg_medium
 original_name: PTYG-MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

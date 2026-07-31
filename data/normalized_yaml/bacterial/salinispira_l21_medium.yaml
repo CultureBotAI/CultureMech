@@ -3,6 +3,7 @@ name: salinispira_l21_medium
 original_name: SALINISPIRA L21 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

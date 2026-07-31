@@ -3,6 +3,7 @@ name: nms_medium
 original_name: NMS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

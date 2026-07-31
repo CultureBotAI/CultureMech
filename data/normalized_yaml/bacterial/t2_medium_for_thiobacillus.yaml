@@ -3,6 +3,7 @@ name: t2_medium_for_thiobacillus
 original_name: T2 medium for Thiobacillus
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

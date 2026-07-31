@@ -3,6 +3,7 @@ name: 4_yaco_media
 original_name: 4-YACo media
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: yeast autolysate

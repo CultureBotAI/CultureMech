@@ -3,6 +3,7 @@ name: mineral_solution_2_medium_404
 original_name: Mineral solution 2 (medium 404)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3036

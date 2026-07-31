@@ -3,6 +3,7 @@ name: medium_6_modified_for_dsm_1306
 original_name: MEDIUM 6 MODIFIED FOR DSM 1306
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 6_1306

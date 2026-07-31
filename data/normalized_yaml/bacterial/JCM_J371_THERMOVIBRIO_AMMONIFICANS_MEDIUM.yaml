@@ -3,6 +3,7 @@ name: thermovibrio_ammonificans_medium
 original_name: THERMOVIBRIO AMMONIFICANS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
 media_term:

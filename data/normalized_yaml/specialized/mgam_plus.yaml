@@ -1,6 +1,7 @@
 id: CultureMech:015591
 name: mGAM plus
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Peptone

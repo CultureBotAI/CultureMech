@@ -3,6 +3,7 @@ name: thermus_macronutrients_10x_solution
 original_name: Thermus macronutrients 10X solution
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3058

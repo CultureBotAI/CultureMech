@@ -3,6 +3,7 @@ name: medium_621a_modified_for_dsm_11439
 original_name: MEDIUM 621a MODIFIED FOR DSM 11439
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 621a_11439

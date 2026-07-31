@@ -3,6 +3,7 @@ name: brain_heart_infusion_broth_bhi_oxoid
 original_name: Brain heart infusion broth (BHI; Oxoid)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calf brains

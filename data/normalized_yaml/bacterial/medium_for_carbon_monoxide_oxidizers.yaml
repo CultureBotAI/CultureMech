@@ -3,6 +3,7 @@ name: medium_for_carbon_monoxide_oxidizers
 original_name: MEDIUM FOR CARBON MONOXIDE OXIDIZERS
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:

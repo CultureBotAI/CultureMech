@@ -3,6 +3,7 @@ name: db_characterization_medium_no_2_with_1_sea_salts
 original_name: DB Characterization Medium NO.2 With 1% Sea Salts
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: sea salts (Sigma)

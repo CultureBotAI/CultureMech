@@ -3,6 +3,7 @@ name: for_dsm_2805
 original_name: For DSM 2805
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 307.1

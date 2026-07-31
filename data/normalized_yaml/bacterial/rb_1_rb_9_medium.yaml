@@ -3,6 +3,7 @@ name: rb_1_rb_9_medium
 original_name: RB-1/RB-9 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 3.5

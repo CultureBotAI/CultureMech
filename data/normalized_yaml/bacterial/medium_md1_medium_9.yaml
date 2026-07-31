@@ -3,6 +3,7 @@ name: medium_md1_medium_9
 original_name: medium MD1 (medium 9)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3138

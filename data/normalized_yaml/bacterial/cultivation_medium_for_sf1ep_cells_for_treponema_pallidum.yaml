@@ -3,6 +3,7 @@ name: cultivation_medium_for_sf1ep_cells_for_treponema_pallidum
 original_name: Cultivation Medium for Sf1Ep cells for Treponema pallidum
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1850

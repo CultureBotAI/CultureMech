@@ -3,6 +3,7 @@ name: for_dsm_12596
 original_name: For DSM 12596
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.6
 media_term:

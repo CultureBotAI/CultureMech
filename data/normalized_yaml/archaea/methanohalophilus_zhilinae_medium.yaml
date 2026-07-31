@@ -3,6 +3,7 @@ name: methanohalophilus_zhilinae_medium
 original_name: METHANOHALOPHILUS ZHILINAE medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.2

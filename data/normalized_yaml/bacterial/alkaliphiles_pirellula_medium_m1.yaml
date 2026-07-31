@@ -3,6 +3,7 @@ name: alkaliphiles_pirellula_medium_m1
 original_name: ALKALIPHILES PIRELLULA MEDIUM (M1)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

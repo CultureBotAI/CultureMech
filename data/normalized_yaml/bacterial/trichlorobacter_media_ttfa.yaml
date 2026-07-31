@@ -3,6 +3,7 @@ name: trichlorobacter_media_ttfa
 original_name: TRICHLOROBACTER MEDIA (TTFA)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J554

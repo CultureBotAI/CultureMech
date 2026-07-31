@@ -3,6 +3,7 @@ name: metals_44_medium_590
 original_name: Metals 44 (medium 590)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 2111

@@ -3,6 +3,7 @@ name: jcm_medium_no_116
 original_name: JCM MEDIUM No. 116
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.5
 media_term:

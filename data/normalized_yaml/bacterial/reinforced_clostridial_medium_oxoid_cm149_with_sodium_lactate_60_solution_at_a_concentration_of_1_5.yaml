@@ -4,6 +4,7 @@ original_name: Reinforced Clostridial medium (Oxoid CM149) with sodium lactate (
   solution) at a concentration of 1.5%
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

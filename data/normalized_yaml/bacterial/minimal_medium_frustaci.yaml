@@ -3,6 +3,7 @@ name: minimal_medium_frustaci
 original_name: Minimal medium; frustaci
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycerol

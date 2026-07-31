@@ -3,6 +3,7 @@ name: tissierella_amo_1_medium
 original_name: TISSIERELLA (AMO.1) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.3
 media_term:

@@ -3,6 +3,7 @@ name: medium_172_modified_for_dsm_6480
 original_name: MEDIUM 172 MODIFIED FOR DSM 6480
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 172_6480

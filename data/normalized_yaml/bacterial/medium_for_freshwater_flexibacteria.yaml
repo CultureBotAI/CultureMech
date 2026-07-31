@@ -3,6 +3,7 @@ name: medium_for_freshwater_flexibacteria
 original_name: Medium for Freshwater Flexibacteria
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

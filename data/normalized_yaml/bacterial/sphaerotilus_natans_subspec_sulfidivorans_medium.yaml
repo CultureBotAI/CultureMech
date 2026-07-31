@@ -3,6 +3,7 @@ name: sphaerotilus_natans_subspec_sulfidivorans_medium
 original_name: Sphaerotilus natans subspec. sulfidivorans medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1664

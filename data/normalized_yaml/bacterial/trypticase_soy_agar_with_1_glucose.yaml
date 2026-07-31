@@ -3,6 +3,7 @@ name: trypticase_soy_agar_with_1_glucose
 original_name: TRYPTICASE SOY AGAR WITH 1% GLUCOSE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J67

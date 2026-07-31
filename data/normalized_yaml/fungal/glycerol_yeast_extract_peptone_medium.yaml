@@ -3,6 +3,7 @@ name: glycerol_yeast_extract_peptone_medium
 original_name: Glycerol-Yeast extract-Peptone Medium
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

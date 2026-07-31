@@ -3,6 +3,7 @@ name: butyrivibrio_sp_medium
 original_name: BUTYRIVIBRIO SP. medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 704

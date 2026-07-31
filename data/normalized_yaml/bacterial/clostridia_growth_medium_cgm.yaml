@@ -3,6 +3,7 @@ name: clostridia_growth_medium_cgm
 original_name: Clostridia growth medium (CGM)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

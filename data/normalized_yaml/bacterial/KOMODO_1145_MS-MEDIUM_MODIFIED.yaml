@@ -3,6 +3,7 @@ name: ms_medium_modified
 original_name: MS-MEDIUM (MODIFIED)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1145

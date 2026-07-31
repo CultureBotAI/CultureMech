@@ -3,6 +3,7 @@ name: for_dsm_14283
 original_name: For DSM 14283
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 945.1 | DSMZ Medium: 945

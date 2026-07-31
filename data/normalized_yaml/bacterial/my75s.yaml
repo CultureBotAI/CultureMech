@@ -3,6 +3,7 @@ name: my75s
 original_name: MY75S
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C60

@@ -3,6 +3,7 @@ name: caldococcus_medium
 original_name: CALDOCOCCUS MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 2.7
 media_term:

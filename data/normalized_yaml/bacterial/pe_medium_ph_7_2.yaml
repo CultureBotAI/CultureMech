@@ -3,6 +3,7 @@ name: pe_medium_ph_7_2
 original_name: PE MEDIUM (pH 7.2)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

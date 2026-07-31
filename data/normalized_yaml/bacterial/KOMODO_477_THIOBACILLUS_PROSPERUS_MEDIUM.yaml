@@ -3,6 +3,7 @@ name: thiobacillus_prosperus_medium
 original_name: THIOBACILLUS PROSPERUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 477 | DSMZ Medium: 477 (mediadive.medium:477)

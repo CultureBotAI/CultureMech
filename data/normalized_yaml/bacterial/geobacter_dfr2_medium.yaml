@@ -3,6 +3,7 @@ name: geobacter_dfr2_medium
 original_name: GEOBACTER Dfr2 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

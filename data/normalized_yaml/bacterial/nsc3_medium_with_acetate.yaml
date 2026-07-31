@@ -3,6 +3,7 @@ name: nsc3_medium_with_acetate
 original_name: NSC3-MEDIUM WITH ACETATE
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 8.5

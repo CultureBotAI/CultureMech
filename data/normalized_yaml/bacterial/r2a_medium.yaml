@@ -3,6 +3,11 @@ name: r2a_medium
 original_name: R2A MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
+nutritional_class: GENERAL_PURPOSE
+functional_role:
+- GENERAL_PURPOSE
+- ENUMERATION
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
@@ -67,7 +72,7 @@ ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
-    label: MgSO4 x 7 H2O
+    label: magnesium sulfate heptahydrate
   concentration:
     value: '0.05'
     unit: G_PER_L
@@ -77,7 +82,7 @@ ingredients:
 - preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: Agar
+    label: agar
   concentration:
     value: '15'
     unit: G_PER_L
@@ -87,9 +92,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding
-    agar. Add agar, heat medium to boiling to dissolve agar, and autoclave for 15
-    min at 121°C.
+  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before
+    adding agar. Add agar, heat medium to boiling to dissolve agar, and
+    autoclave for 15 min at 121°C.
 - step_number: 2
   action: MIX
   description: 'Note: this equals BD 218263'
@@ -115,7 +120,8 @@ curation_history:
 - timestamp: '2026-03-17T19:45:21.628098+00:00'
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
-  notes: Normalized name from "R2A MEDIUM" to "r2a_medium" for consistent matching
+  notes: Normalized name from "R2A MEDIUM" to "r2a_medium" for consistent
+    matching
 - timestamp: '2026-06-05T07:41:43.616032+00:00'
   curator: mim-legacy-to-chebi-migration-v1.0
   action: Refreshed legacy MediaIngredientMech links to CHEBI keying
@@ -125,10 +131,34 @@ curation_history:
 - timestamp: '2026-06-08T23:19:50.008039+00:00'
   curator: chebi-regrounding-v1.0
   action: Corrected CHEBI ingredient grounding (audit G21/G22)
-  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see reports/chebi_grounding_audit.md).
-    Label-conditional fixes for pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2,
-    selenate; casamino acids de-grounded (mixture, no single CHEBI).
+  notes: Re-grounded 2 term reference(s) to the correct CHEBI (see
+    reports/chebi_grounding_audit.md). Label-conditional fixes for
+    pyridoxine/pyridoxamine, glycerol, MnSO4, Ca(NO3)2, selenate; casamino acids
+    de-grounded (mixture, no single CHEBI).
 - timestamp: '2026-06-10T07:47:10.777349+00:00'
   curator: primary-term-label-canonicalization-v1.0
   action: Canonicalized primary term label to OBO canonical (OAK)
   notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-29T07:04:23.233660+00:00'
+  curator: medium-type-axis-migration-v1.0
+  action: Backfilled multi-axis media type
+  notes: Derived composition_type=UNDEFINED from deprecated medium_type=COMPLEX.
+variant_children:
+- path: data/normalized_yaml/bacterial/1_10_r2a_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:001052
+  name: 1_10_r2a_medium
+  notes: Uniform 1:10 dilution of full-strength R2A (mediadive.medium:830).
+- path: data/normalized_yaml/bacterial/half_strength_r2a.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000960
+  name: half_strength_r2a
+  notes: Half-strength dilution of full-strength R2A (mediadive.medium:830);
+    sodium pyruvate held at 0.25 g/L per DSMZ 1492, otherwise 0.5x.
+- path: data/normalized_yaml/bacterial/r3_a_medium.yaml
+  relationship: CONCENTRATION_VARIANT
+  id: CultureMech:000592
+  name: r3_a_medium
+  notes: R3 A (DSMZ 1153) is a double-strength formulation of R2A
+    (mediadive.medium:830); salts/nutrients roughly 2x, agar held at 15 g/L,
+    sodium pyruvate 0.5 g/L (1.67x).

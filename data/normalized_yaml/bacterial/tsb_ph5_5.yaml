@@ -3,6 +3,7 @@ name: tsb_ph5_5
 original_name: TSB (pH5.5)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

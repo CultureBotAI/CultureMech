@@ -3,6 +3,7 @@ name: syntrophomonas_medium_without_sulfate
 original_name: SYNTROPHOMONAS MEDIUM WITHOUT SULFATE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J555

@@ -3,6 +3,7 @@ name: acidianus_sp_jp7_medium
 original_name: Acidianus SP. JP7 Medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sol. 1

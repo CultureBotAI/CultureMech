@@ -3,6 +3,7 @@ name: for_dsm_13639_and_dsm_13655
 original_name: For DSM 13639 and DSM 13655
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

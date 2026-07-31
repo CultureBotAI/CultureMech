@@ -3,6 +3,7 @@ name: amino_acid_solution_medium_78
 original_name: Amino acid solution (medium 78)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3002

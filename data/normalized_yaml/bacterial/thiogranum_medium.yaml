@@ -3,6 +3,7 @@ name: thiogranum_medium
 original_name: THIOGRANUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.7
 media_term:

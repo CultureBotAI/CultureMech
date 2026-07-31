@@ -3,6 +3,7 @@ name: 3_8m_characterization_medium_no_1
 original_name: 3.8M CHARACTERIZATION MEDIUM NO. 1
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

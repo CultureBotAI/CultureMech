@@ -3,6 +3,7 @@ name: medium_910_modified_for_dsm_44618
 original_name: MEDIUM 910 MODIFIED FOR DSM 44618
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 910_44618

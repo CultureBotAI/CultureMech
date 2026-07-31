@@ -3,6 +3,7 @@ name: modified_sap2_medium
 original_name: Modified SAP2 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract (BD-Difco)

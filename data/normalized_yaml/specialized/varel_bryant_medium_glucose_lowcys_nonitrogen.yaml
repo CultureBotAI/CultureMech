@@ -1,6 +1,7 @@
 id: CultureMech:015776
 name: Varel Bryant medium Glucose lowCys noNitrogen
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Potassium phosphate monobasic

@@ -3,6 +3,7 @@ name: medium_163_modified_for_dsm_10520
 original_name: MEDIUM 163 MODIFIED FOR DSM 10520
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 163_10520 |

@@ -3,6 +3,7 @@ name: spirulina_ogawa_terui_sot_medium
 original_name: Spirulina–Ogawa–Terui (SOT) medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

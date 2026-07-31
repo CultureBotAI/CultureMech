@@ -3,6 +3,7 @@ name: ms10_medium_supplements_for_continuous_cultivation
 original_name: MS10 Medium + Supplements for Continuous Cultivation
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tryptophan

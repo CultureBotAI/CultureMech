@@ -1,6 +1,7 @@
 id: CultureMech:015586
 name: MELiSSA defined noCarbon noNitrogen phosphatebuffered
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Manganese (II) chloride tetrahydrate

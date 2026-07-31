@@ -3,6 +3,7 @@ name: pelotomaculum_medium_for_dsm_17711
 original_name: Pelotomaculum Medium (For DSM 17711)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

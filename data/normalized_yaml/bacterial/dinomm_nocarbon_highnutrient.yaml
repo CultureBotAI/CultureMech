@@ -1,6 +1,7 @@
 id: CultureMech:015459
 name: DinoMM noCarbon HighNutrient
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sea salts

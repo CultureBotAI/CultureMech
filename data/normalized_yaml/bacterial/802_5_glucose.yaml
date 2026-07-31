@@ -3,6 +3,7 @@ name: 802_5_glucose
 original_name: 802 + 5% Glucose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

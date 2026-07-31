@@ -3,6 +3,7 @@ name: mmp_biotin_thiamine_and_ca_pantothenate_villasenor_et_al
 original_name: MMP-biotin, thiamine, and Ca pantothenate; Villasenor et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Succinate

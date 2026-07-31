@@ -3,6 +3,7 @@ name: elusimicrobium_minutum_medium
 original_name: Elusimicrobium minutum medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MgSO4 x 7 H2O

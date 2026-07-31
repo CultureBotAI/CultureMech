@@ -3,6 +3,7 @@ name: marine_broth_with_0_5_methanol
 original_name: Marine Broth with 0.5% Methanol
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

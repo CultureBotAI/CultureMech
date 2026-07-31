@@ -3,6 +3,7 @@ name: methanogenium_aggregans_medium
 original_name: METHANOGENIUM AGGREGANS medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

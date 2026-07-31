@@ -3,6 +3,7 @@ name: na_0_5_yeast_extract
 original_name: NA + 0.5% Yeast Extract
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

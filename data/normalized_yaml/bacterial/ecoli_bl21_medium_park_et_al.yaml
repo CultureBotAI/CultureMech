@@ -3,6 +3,7 @@ name: ecoli_bl21_medium_park_et_al
 original_name: Ecoli bl21 medium; park et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Citrate

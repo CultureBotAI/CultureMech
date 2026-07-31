@@ -3,6 +3,7 @@ name: acidithiobacillus_ferrivorans_medium
 original_name: ACIDITHIOBACILLUS FERRIVORANS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1234

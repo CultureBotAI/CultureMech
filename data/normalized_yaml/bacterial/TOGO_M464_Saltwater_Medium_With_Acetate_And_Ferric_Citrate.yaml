@@ -3,6 +3,7 @@ name: saltwater_medium_with_acetate_and_ferric_citrate
 original_name: Saltwater Medium With Acetate And Ferric Citrate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sol. 1

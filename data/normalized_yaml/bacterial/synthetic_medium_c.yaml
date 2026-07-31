@@ -3,6 +3,7 @@ name: synthetic_medium_c
 original_name: Synthetic Medium C
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Valine

@@ -3,6 +3,7 @@ name: reactivation_with_liquid_medium_115
 original_name: REACTIVATION WITH LIQUID MEDIUM 115
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 115a

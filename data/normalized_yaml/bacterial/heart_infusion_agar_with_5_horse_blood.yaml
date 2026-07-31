@@ -3,6 +3,7 @@ name: heart_infusion_agar_with_5_horse_blood
 original_name: HEART INFUSION AGAR WITH 5% HORSE BLOOD
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1099

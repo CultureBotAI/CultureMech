@@ -3,6 +3,7 @@ name: blood_agar_base_oxoid_cm55
 original_name: BLOOD AGAR BASE (OXOID CM55)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:

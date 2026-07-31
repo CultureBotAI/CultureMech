@@ -3,6 +3,7 @@ name: for_dsm_5700_dsm_5701_dsm_5702_dsm_5703_and_dsm_5814
 original_name: For DSM 5700, DSM 5701, DSM 5702, DSM 5703 and DSM 5814
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.9

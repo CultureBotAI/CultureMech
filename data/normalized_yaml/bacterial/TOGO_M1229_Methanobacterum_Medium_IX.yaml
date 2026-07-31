@@ -3,6 +3,7 @@ name: methanobacterum_medium_ix
 original_name: Methanobacterum Medium (IX)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: for_dsm_12857_dsm_13479_and_dsm_13480
 original_name: For DSM 12857, DSM 13479 and DSM 13480
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

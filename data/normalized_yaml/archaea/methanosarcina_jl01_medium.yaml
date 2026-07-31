@@ -3,6 +3,7 @@ name: methanosarcina_jl01_medium
 original_name: METHANOSARCINA JL01 MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.9
 media_term:

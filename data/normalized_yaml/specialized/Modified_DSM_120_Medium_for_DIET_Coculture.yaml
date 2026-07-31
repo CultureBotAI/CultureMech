@@ -2,6 +2,7 @@ name: modified_dsm_120_medium_for_diet_coculture
 original_name: Modified DSM 120 Medium for DIET Coculture
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 id: CultureMech:015434
 ingredients:

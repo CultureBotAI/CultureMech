@@ -3,6 +3,7 @@ name: for_dsm_6139
 original_name: For DSM 6139
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.7

@@ -3,6 +3,7 @@ name: m9_with_2_g_l_glucose_kazan
 original_name: '''M9 with 2 g/l glucose (kazan'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Leucine

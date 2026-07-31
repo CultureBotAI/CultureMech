@@ -3,6 +3,7 @@ name: am3_nalidixic_acid_medium
 original_name: AM3 + Nalidixic acid medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

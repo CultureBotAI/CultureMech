@@ -3,6 +3,7 @@ name: bsw3_agar
 original_name: BSW3 Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Malt extract (BD-Difco)

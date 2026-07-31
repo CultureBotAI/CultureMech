@@ -3,6 +3,7 @@ name: methanobacterium_medium_for_strain_can
 original_name: Methanobacterium Medium For Strain CAN
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

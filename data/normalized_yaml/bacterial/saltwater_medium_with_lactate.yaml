@@ -3,6 +3,7 @@ name: saltwater_medium_with_lactate
 original_name: SALTWATER MEDIUM WITH LACTATE
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: halobacteria_medium_ph_8_0
 original_name: Halobacteria Medium (pH 8.0)
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients: []
 media_term:

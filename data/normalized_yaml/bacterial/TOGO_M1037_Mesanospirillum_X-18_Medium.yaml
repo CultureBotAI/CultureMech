@@ -3,6 +3,7 @@ name: mesanospirillum_x_18_medium
 original_name: Mesanospirillum X-18 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: pyrobaculum_medium
 original_name: PYROBACULUM MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
 media_term:

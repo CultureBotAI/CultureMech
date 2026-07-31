@@ -3,6 +3,7 @@ name: h3p_vitamin_solution_medium_428
 original_name: H3P-Vitamin solution (medium 428)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3018

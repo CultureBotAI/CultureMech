@@ -3,6 +3,7 @@ name: defined_medium
 original_name: Defined medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MgSO4·7H2O

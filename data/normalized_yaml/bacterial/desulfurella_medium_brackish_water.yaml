@@ -3,6 +3,7 @@ name: desulfurella_medium_brackish_water
 original_name: DESULFURELLA MEDIUM (BRACKISH WATER)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

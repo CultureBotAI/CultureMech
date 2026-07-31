@@ -3,6 +3,7 @@ name: tryptic_soy_broth
 original_name: tryptic soy broth
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Pancreatic digest of casein

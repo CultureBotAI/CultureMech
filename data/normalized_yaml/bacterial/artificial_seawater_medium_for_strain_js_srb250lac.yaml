@@ -3,6 +3,7 @@ name: artificial_seawater_medium_for_strain_js_srb250lac
 original_name: Artificial seawater medium for strain JS_SRB250Lac
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

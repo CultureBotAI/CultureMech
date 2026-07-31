@@ -3,6 +3,7 @@ name: 1650_medium_for_strain_j5b
 original_name: '1650: Medium for Strain J5B'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

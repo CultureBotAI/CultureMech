@@ -3,6 +3,7 @@ name: cornmeal_yeast_extract_seawater_agar_cmyswa
 original_name: Cornmeal Yeast Extract Seawater Agar (CMYSWA)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract

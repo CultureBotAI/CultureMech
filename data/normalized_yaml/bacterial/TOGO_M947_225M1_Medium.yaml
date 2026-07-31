@@ -3,6 +3,7 @@ name: 225m1_medium
 original_name: 225M1 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: anaerobacillus_medium
 original_name: ANAEROBACILLUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 8.5

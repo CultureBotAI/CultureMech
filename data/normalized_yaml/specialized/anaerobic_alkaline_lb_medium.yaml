@@ -3,6 +3,7 @@ name: anaerobic_alkaline_lb_medium
 original_name: ANAEROBIC ALKALINE LB MEDIUM
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.5
 media_term:

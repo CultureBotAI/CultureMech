@@ -3,6 +3,7 @@ name: halobacteria_medium
 original_name: HALOBACTERIA MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.0

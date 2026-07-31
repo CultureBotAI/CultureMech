@@ -3,6 +3,7 @@ name: marine_medium_with_thiosulfate
 original_name: MARINE MEDIUM WITH THIOSULFATE
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J376

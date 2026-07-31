@@ -3,6 +3,7 @@ name: 10_mixotrophic_nitrobacter_medium
 original_name: 10% MIXOTROPHIC NITROBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.6
 media_term:

@@ -3,6 +3,7 @@ name: peat_medium_2_for_methanobacteria
 original_name: Peat Medium 2 For Methanobacteria
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

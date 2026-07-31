@@ -3,6 +3,7 @@ name: trypticase_soy_agar_with_2_nacl
 original_name: TRYPTICASE SOY AGAR WITH 2% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J943

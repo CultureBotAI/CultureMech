@@ -3,6 +3,7 @@ name: rb_1_rb_9_medium_replace_glucose_with_starch
 original_name: RB-1/RB-9 medium_replace_Glucose_with_Starch
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 3.5

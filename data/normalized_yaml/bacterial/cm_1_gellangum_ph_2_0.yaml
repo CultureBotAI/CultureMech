@@ -3,6 +3,7 @@ name: cm_1_gellangum_ph_2_0
 original_name: CM+1%Gellangum (pH 2.0)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

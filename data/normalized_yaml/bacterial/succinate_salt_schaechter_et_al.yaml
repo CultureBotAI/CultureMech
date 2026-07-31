@@ -3,6 +3,7 @@ name: succinate_salt_schaechter_et_al
 original_name: Succinate salt; Schaechter et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Succinate

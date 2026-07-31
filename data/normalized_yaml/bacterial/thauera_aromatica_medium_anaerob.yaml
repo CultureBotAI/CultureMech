@@ -3,6 +3,7 @@ name: thauera_aromatica_medium_anaerob
 original_name: THAUERA AROMATICA MEDIUM (ANAEROB)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

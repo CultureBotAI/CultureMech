@@ -3,6 +3,7 @@ name: pyrolobus_fumarii_medium
 original_name: Pyrolobus Fumarii Medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Na2CO3

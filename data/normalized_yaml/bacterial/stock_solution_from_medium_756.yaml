@@ -3,6 +3,7 @@ name: stock_solution_from_medium_756
 original_name: Stock solution (from medium 756)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 2107

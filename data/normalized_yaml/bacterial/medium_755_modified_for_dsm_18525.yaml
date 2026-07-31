@@ -3,6 +3,7 @@ name: medium_755_modified_for_dsm_18525
 original_name: MEDIUM 755 MODIFIED FOR DSM 18525
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 755_18525

@@ -3,6 +3,7 @@ name: sulfolobus_medium_b
 original_name: Sulfolobus Medium (B)
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: H2SO4

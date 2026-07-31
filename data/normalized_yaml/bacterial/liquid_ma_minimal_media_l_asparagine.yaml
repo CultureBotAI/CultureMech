@@ -3,6 +3,7 @@ name: liquid_ma_minimal_media_l_asparagine
 original_name: Liquid ma minimal media + l-asparagine
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Asparagine

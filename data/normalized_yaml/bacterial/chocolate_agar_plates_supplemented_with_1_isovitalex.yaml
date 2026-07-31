@@ -3,6 +3,7 @@ name: chocolate_agar_plates_supplemented_with_1_isovitalex
 original_name: chocolate agar plates (supplemented with 1% isovitalex)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: isovitalex (BD Biosciences)

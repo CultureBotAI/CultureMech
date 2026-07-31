@@ -3,6 +3,7 @@ name: for_dsm_21860
 original_name: For DSM 21860
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

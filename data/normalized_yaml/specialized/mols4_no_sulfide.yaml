@@ -1,6 +1,7 @@
 id: CultureMech:015625
 name: MoLS4 no sulfide
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: MoLS4

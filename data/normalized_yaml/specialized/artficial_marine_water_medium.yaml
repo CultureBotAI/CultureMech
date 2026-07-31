@@ -3,6 +3,7 @@ name: artficial_marine_water_medium
 original_name: ARTFICIAL MARINE WATER MEDIUM
 category: specialized
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J1123

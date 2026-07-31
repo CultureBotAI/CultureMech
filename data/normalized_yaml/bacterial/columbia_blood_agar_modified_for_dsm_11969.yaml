@@ -3,6 +3,7 @@ name: columbia_blood_agar_modified_for_dsm_11969
 original_name: COLUMBIA BLOOD AGAR MODIFIED FOR DSM 11969
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 429_11969

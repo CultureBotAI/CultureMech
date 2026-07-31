@@ -3,6 +3,7 @@ name: marine_medium_with_sulfur
 original_name: Marine Medium With Sulfur
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

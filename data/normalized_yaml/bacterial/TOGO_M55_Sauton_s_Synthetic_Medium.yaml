@@ -3,6 +3,7 @@ name: sautons_synthetic_medium
 original_name: Sauton's Synthetic Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

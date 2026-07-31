@@ -3,6 +3,7 @@ name: saltwater_medium_with_acetate_and_ferric_citrate
 original_name: SALTWATER MEDIUM WITH ACETATE AND FERRIC CITRATE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J463

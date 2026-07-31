@@ -3,6 +3,7 @@ name: medium_for_sm250
 original_name: MEDIUM for SM250
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1689

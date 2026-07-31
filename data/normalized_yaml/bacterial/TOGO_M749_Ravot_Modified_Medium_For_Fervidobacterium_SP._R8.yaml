@@ -3,6 +3,7 @@ name: ravot_modified_medium_for_fervidobacterium_sp_r8
 original_name: Ravot Modified Medium For Fervidobacterium SP. R8
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaCl

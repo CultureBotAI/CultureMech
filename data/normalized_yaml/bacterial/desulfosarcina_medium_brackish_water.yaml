@@ -3,6 +3,7 @@ name: desulfosarcina_medium_brackish_water
 original_name: DESULFOSARCINA MEDIUM (BRACKISH WATER)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.1

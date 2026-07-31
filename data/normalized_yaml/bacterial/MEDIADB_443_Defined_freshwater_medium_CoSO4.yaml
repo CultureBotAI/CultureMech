@@ -3,6 +3,7 @@ name: defined_freshwater_medium_coso4
 original_name: '''Defined freshwater medium (CoSO4'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium bicarbonate

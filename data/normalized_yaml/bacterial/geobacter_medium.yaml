@@ -3,6 +3,7 @@ name: geobacter_medium
 original_name: GEOBACTER MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.7

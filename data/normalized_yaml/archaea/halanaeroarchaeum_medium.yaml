@@ -3,6 +3,7 @@ name: halanaeroarchaeum_medium
 original_name: HALANAEROARCHAEUM MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.6
 media_term:

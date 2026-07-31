@@ -3,6 +3,7 @@ name: moorella_glycerini_medium
 original_name: MOORELLA GLYCERINI medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.7
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 793 | DSMZ Medium: 793 (mediadive.medium:793)

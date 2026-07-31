@@ -3,6 +3,7 @@ name: diluted_asm_medium
 original_name: Diluted ASM Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients: []
 media_term:

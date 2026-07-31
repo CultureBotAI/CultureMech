@@ -3,6 +3,7 @@ name: mj_media
 original_name: Mj media
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Urea

@@ -3,6 +3,7 @@ name: modified_sw_25_medium
 original_name: MODIFIED SW-25 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

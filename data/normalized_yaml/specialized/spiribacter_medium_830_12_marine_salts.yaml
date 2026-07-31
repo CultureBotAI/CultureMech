@@ -3,6 +3,7 @@ name: spiribacter_medium_830_12_marine_salts
 original_name: SPIRIBACTER MEDIUM (830 + 12% Marine salts)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.0

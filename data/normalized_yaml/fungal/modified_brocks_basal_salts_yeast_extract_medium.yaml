@@ -3,6 +3,7 @@ name: modified_brocks_basal_salts_yeast_extract_medium
 original_name: MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT MEDIUM
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

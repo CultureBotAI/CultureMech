@@ -3,6 +3,7 @@ name: vng_medium
 original_name: VNG MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.1
 media_term:

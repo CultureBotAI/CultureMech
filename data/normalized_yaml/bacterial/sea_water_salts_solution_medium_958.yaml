@@ -3,6 +3,7 @@ name: sea_water_salts_solution_medium_958
 original_name: Sea water salts solution (medium 958)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 3051

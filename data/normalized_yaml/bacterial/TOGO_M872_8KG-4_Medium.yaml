@@ -3,6 +3,7 @@ name: 8kg_4_medium
 original_name: 8KG-4 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L--cysteine・HCl・H2O

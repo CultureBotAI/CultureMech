@@ -3,6 +3,7 @@ name: modified_bacto_marine_broth_difco_2216
 original_name: MODIFIED BACTO MARINE BROTH (DIFCO 2216)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.4

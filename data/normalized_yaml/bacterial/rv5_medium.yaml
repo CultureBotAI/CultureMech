@@ -3,6 +3,7 @@ name: rv5_medium
 original_name: RV5 MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.5
 media_term:

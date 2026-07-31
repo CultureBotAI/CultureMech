@@ -3,6 +3,7 @@ name: acetobacterium_medium
 original_name: Acetobacterium medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: caldicellulosiruptor_medium_for_dsm_10319
 original_name: Caldicellulosiruptor Medium (For DSM 10319)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

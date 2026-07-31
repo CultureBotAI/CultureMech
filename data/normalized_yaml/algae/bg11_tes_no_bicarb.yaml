@@ -1,6 +1,7 @@
 id: CultureMech:015453
 name: BG11 TES no bicarb
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sodium nitrate

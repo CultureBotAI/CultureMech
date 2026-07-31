@@ -3,6 +3,7 @@ name: 1_2_r2a_medium_with_75_artificial_seawater
 original_name: 1/2 R2A MEDIUM WITH 75% ARTIFICIAL SEAWATER
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

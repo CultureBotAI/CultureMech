@@ -3,6 +3,7 @@ name: francisella_halioticida_medium_replace_horse_blood_with_sheep_blood
 original_name: FRANCISELLA HALIOTICIDA medium_replace_horse blood_with_sheep blood
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 429d_replace_horse blood_with_sheep blood

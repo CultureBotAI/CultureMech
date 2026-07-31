@@ -3,6 +3,7 @@ name: r2a_agar_with_1_nacl
 original_name: R2A Agar With 1% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: medium_65_modified_for_dsm_7487
 original_name: MEDIUM 65 MODIFIED FOR DSM 7487
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 65_7487

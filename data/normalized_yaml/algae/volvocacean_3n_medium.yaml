@@ -2,6 +2,7 @@ id: CultureMech:000235
 name: volvocacean_3n_medium
 category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.

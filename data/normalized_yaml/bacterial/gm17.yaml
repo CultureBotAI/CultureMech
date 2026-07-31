@@ -3,6 +3,7 @@ name: gm17
 original_name: GM17
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: glucose

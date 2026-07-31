@@ -3,6 +3,7 @@ name: msgg_medium_for_matrix_production_of_nbrc_xxxxxx
 original_name: MSgg medium for matrix production of NBRC XXXXXX
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

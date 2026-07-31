@@ -3,6 +3,7 @@ name: methanosphaerula_peat_medium
 original_name: Methanosphaerula (Peat) Medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Carbon dioxide gas

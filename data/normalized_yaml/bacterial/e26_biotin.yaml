@@ -3,6 +3,7 @@ name: e26_biotin
 original_name: E26 + Biotin
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: CCAP Medium C28

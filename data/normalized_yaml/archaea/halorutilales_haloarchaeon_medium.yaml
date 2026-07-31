@@ -3,6 +3,7 @@ name: halorutilales_haloarchaeon_medium
 original_name: Halorutilales haloarchaeon medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.8
 media_term:

@@ -3,6 +3,7 @@ name: tryptone_yeast_extract_medium_modified
 original_name: TRYPTONE-YEAST EXTRACT MEDIUM modified
 category: fungal
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

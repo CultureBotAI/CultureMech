@@ -3,6 +3,7 @@ name: propionivibrio_medium
 original_name: PROPIONIVIBRIO MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

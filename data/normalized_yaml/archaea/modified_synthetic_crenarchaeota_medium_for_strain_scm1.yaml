@@ -3,6 +3,7 @@ name: modified_synthetic_crenarchaeota_medium_for_strain_scm1
 original_name: Modified synthetic Crenarchaeota medium for strain SCM1
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

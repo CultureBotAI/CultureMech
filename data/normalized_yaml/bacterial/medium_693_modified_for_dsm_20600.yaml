@@ -3,6 +3,7 @@ name: medium_693_modified_for_dsm_20600
 original_name: MEDIUM 693 MODIFIED FOR DSM 20600
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 693_20600

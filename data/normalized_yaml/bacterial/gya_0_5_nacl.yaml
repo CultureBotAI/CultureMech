@@ -3,6 +3,7 @@ name: gya_0_5_nacl
 original_name: GYA(0.5% NaCl)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DW

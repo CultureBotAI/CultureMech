@@ -3,6 +3,7 @@ name: os_medium
 original_name: OS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 887 | DSMZ Medium: 887 (mediadive.medium:887)

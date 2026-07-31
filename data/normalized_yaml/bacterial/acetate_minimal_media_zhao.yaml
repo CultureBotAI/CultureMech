@@ -3,6 +3,7 @@ name: acetate_minimal_media_zhao
 original_name: '''acetate minimal media (zhao'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Acetate

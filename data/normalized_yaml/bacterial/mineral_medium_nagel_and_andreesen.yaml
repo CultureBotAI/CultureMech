@@ -3,6 +3,7 @@ name: mineral_medium_nagel_and_andreesen
 original_name: MINERAL MEDIUM (NAGEL AND ANDREESEN)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

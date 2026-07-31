@@ -3,6 +3,7 @@ name: for_dsm_8686_and_dsm_8690
 original_name: For DSM 8686 and DSM 8690
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.2
 media_term:

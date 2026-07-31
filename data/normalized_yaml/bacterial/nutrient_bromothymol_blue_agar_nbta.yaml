@@ -3,6 +3,7 @@ name: nutrient_bromothymol_blue_agar_nbta
 original_name: Nutrient bromothymol blue agar NBTA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1c

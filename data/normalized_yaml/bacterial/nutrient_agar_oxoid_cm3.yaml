@@ -3,6 +3,7 @@ name: nutrient_agar_oxoid_cm3
 original_name: NUTRIENT AGAR (OXOID CM3)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 605

@@ -3,6 +3,7 @@ name: histidine_salt_schaechter_et_al
 original_name: Histidine salt; schaechter et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L-Histidine

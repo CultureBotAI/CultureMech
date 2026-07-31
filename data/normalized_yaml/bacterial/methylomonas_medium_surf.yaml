@@ -3,6 +3,7 @@ name: methylomonas_medium_surf
 original_name: METHYLOMONAS MEDIUM (SURF)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.8

@@ -3,6 +3,7 @@ name: malt_extract_glucose_agar
 original_name: MALT EXTRACT GLUCOSE AGAR
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 735

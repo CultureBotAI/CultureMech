@@ -3,6 +3,7 @@ name: pyg_medium_modified
 original_name: PYG-MEDIUM (modified)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 104 | DSMZ Medium: 104 (mediadive.medium:104)

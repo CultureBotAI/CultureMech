@@ -3,6 +3,7 @@ name: 2_5_nacl_bpg_agar
 original_name: 2.5% NaCl-BPG Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

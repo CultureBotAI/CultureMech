@@ -3,6 +3,7 @@ name: eubacterium_acidaminophilum_medium
 original_name: Eubacterium acidaminophilum medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

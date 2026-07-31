@@ -3,6 +3,7 @@ name: for_dsm_16494_and_dsm_22288
 original_name: For DSM 16494 and DSM 22288
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

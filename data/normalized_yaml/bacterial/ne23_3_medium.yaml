@@ -3,6 +3,7 @@ name: ne23_3_medium
 original_name: NE23-3 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J504

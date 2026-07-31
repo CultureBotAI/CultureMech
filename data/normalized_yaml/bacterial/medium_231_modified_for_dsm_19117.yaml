@@ -3,6 +3,7 @@ name: medium_231_modified_for_dsm_19117
 original_name: MEDIUM 231 MODIFIED FOR DSM 19117
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 231_19117

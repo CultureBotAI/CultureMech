@@ -3,6 +3,7 @@ name: medium_for_chlorate_respirers
 original_name: MEDIUM FOR CHLORATE RESPIRERS
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

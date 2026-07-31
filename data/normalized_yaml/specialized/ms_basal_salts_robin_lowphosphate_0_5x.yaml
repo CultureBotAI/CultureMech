@@ -1,6 +1,7 @@
 id: CultureMech:015641
 name: MS Basal Salts Robin LowPhosphate 0.5x
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium Nitrate

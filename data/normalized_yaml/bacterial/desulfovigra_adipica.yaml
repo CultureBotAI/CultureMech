@@ -3,6 +3,7 @@ name: desulfovigra_adipica
 original_name: DESULFOVIGRA ADIPICA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

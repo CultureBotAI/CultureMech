@@ -3,6 +3,7 @@ name: for_dsm_13106_and_dsm_23801
 original_name: For DSM 13106 and DSM 23801
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

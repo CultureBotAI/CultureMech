@@ -3,6 +3,7 @@ name: medium_461_modified_for_dsm_9506
 original_name: MEDIUM 461 MODIFIED FOR DSM 9506
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 461_9506

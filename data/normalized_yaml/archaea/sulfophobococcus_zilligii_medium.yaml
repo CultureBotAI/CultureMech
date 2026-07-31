@@ -3,6 +3,7 @@ name: sulfophobococcus_zilligii_medium
 original_name: SULFOPHOBOCOCCUS ZILLIGII MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

@@ -4,6 +4,7 @@ original_name: Modified Schaedler medium (Infect. Immun. 29:768-777,1980) withou
   glucose but supplemented with 0.1 M sodium lactate
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

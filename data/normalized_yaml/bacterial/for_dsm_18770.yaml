@@ -3,6 +3,7 @@ name: for_dsm_18770
 original_name: For DSM 18770
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.7
 media_term:

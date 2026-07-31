@@ -3,6 +3,7 @@ name: medium_53_modified_for_dsm_16377
 original_name: MEDIUM 53 MODIFIED FOR DSM 16377
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 53_16377

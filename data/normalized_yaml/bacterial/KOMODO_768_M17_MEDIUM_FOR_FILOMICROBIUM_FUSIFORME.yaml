@@ -3,6 +3,7 @@ name: m17_medium_for_filomicrobium_fusiforme
 original_name: M17 MEDIUM FOR FILOMICROBIUM FUSIFORME
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

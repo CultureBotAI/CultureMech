@@ -3,6 +3,7 @@ name: for_dsm_17935
 original_name: For DSM 17935
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

@@ -3,6 +3,7 @@ name: limisalsivibrio_l21_ls_medium
 original_name: LIMISALSIVIBRIO (L21 LS) MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

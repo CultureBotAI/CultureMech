@@ -3,6 +3,7 @@ name: brain_heart_infusion_with_5_nacl
 original_name: Brain Heart Infusion With 5% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

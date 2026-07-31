@@ -3,6 +3,7 @@ name: azospirillum_amazonense_medium
 original_name: Azospirillum amazonense medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Bromophenol blue (0.5% in 0.2N KOH)

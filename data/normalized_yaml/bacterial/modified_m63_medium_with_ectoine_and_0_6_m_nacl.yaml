@@ -3,6 +3,7 @@ name: modified_m63_medium_with_ectoine_and_0_6_m_nacl
 original_name: Modified m63 medium with ectoine and 0.6 m nacl
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ectoine

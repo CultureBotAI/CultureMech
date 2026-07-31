@@ -3,6 +3,7 @@ name: r2a_with_asw
 original_name: R2A with ASW
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: MgSO4·7H2O

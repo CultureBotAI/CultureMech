@@ -3,6 +3,7 @@ name: acidithiobacillus_medium
 original_name: ACIDITHIOBACILLUS MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 4.2
 media_term:

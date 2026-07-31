@@ -3,6 +3,7 @@ name: mmys_iii_medium
 original_name: MMYS-III MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J199

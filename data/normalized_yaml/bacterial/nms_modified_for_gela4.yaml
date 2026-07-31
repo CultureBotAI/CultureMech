@@ -3,6 +3,7 @@ name: nms_modified_for_gela4
 original_name: NMS modified for Gela4
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: CaCl2·2H2O

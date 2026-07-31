@@ -3,6 +3,7 @@ name: clostridium_acetate_1_medium
 original_name: CLOSTRIDIUM ACETATE 1 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J781

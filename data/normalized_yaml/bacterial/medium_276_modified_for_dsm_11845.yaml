@@ -3,6 +3,7 @@ name: medium_276_modified_for_dsm_11845
 original_name: MEDIUM 276 MODIFIED FOR DSM 11845
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 276_11845

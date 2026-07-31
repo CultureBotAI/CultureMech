@@ -3,6 +3,7 @@ name: bme_ctvm2_cell_line_medium_occidentia_massiliensis
 original_name: BME/CTVM2 cell line medium (Occidentia massiliensis)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1670

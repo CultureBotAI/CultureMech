@@ -3,6 +3,7 @@ name: jcm_medium_no_1262
 original_name: JCM MEDIUM No. 1262
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:

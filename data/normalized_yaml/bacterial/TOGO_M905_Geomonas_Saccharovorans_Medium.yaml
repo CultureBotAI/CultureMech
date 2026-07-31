@@ -3,6 +3,7 @@ name: geomonas_saccharovorans_medium
 original_name: Geomonas Saccharovorans Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

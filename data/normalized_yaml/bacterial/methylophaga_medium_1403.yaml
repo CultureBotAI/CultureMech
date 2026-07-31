@@ -3,6 +3,7 @@ name: methylophaga_medium_1403
 original_name: Methylophaga Medium 1403
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: methanol

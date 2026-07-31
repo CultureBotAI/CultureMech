@@ -3,6 +3,7 @@ name: phaeovibrio_sulphidiphilus_medium
 original_name: PHAEOVIBRIO SULPHIDIPHILUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.6

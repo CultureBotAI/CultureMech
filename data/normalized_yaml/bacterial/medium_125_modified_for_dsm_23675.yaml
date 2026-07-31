@@ -3,6 +3,7 @@ name: medium_125_modified_for_dsm_23675
 original_name: MEDIUM 125 MODIFIED FOR DSM 23675
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 125_23675

@@ -3,6 +3,7 @@ name: mh1_medium_for_halarchaeum_2
 original_name: MH1 Medium For Halarchaeum-2
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

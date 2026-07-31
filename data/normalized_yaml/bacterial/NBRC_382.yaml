@@ -4,6 +4,7 @@ original_name: '382'
 category: bacterial
 description: 382. NBRC 380.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Pepton5gBeef extract3gYeast extract5gNaCl3gAgar (if needed)15gDistilled

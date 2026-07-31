@@ -3,6 +3,7 @@ name: geoalkalibacter_medium
 original_name: GEOALKALIBACTER medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.0

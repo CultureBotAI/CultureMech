@@ -3,6 +3,7 @@ name: chitinivibrio_medium
 original_name: CHITINIVIBRIO MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:

@@ -3,6 +3,7 @@ name: sulfolobus_mt_4_medium
 original_name: SULFOLOBUS MT-4 medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 182a | DSMZ Medium: 182a

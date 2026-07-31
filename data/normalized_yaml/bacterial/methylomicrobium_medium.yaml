@@ -3,6 +3,7 @@ name: methylomicrobium_medium
 original_name: METHYLOMICROBIUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 8.5

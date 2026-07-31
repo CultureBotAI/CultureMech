@@ -3,6 +3,7 @@ name: methanococcus_mcc_medium
 original_name: METHANOCOCCUS McC MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

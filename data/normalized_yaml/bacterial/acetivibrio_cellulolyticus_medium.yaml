@@ -3,6 +3,7 @@ name: acetivibrio_cellulolyticus_medium
 original_name: ACETIVIBRIO CELLULOLYTICUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

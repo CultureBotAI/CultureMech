@@ -1,6 +1,7 @@
 id: CultureMech:015702
 name: RCH2 defined glucose 0.25xMineral
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride

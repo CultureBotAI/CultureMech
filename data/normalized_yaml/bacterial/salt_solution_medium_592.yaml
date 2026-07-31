@@ -3,6 +3,7 @@ name: salt_solution_medium_592
 original_name: Salt solution (medium 592)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 4002 | DSMZ Medium: 4002

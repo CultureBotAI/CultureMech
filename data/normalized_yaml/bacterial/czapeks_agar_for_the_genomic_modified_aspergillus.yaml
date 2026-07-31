@@ -3,6 +3,7 @@ name: czapeks_agar_for_the_genomic_modified_aspergillus
 original_name: Czapek's Agar (for the Genomic Modified Aspergillus)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

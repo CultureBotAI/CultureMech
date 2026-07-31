@@ -3,6 +3,7 @@ name: sulfolobus_medium
 original_name: SULFOLOBUS medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 2.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 88 | DSMZ Medium: 88 (mediadive.medium:88)

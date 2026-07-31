@@ -3,6 +3,7 @@ name: pelobacter_propionicus_medium
 original_name: PELOBACTER PROPIONICUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

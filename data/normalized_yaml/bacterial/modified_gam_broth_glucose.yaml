@@ -3,6 +3,7 @@ name: modified_gam_broth_glucose
 original_name: Modified GAM broth + glucose
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

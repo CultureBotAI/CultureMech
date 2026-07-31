@@ -4,6 +4,7 @@ original_name: YPG Medium
 category: bacterial
 description: YPG Medium. NBRC No. 802.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract

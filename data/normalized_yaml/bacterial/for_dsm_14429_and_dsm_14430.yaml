@@ -3,6 +3,7 @@ name: for_dsm_14429_and_dsm_14430
 original_name: For DSM 14429 and DSM 14430
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 88.1 | DSMZ Medium: 88 (mediadive.medium:88)

@@ -3,6 +3,7 @@ name: yim_medium_10_nacl
 original_name: YIM medium + 10 % NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

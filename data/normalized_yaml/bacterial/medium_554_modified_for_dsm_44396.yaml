@@ -3,6 +3,7 @@ name: medium_554_modified_for_dsm_44396
 original_name: MEDIUM 554 MODIFIED FOR DSM 44396
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.5

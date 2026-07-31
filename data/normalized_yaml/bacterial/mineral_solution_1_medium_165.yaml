@@ -3,6 +3,7 @@ name: mineral_solution_1_medium_165
 original_name: Mineral solution 1 (medium 165)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 2011

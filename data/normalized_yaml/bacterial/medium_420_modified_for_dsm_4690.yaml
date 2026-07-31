@@ -3,6 +3,7 @@ name: medium_420_modified_for_dsm_4690
 original_name: MEDIUM 420 MODIFIED FOR DSM 4690
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 420_4690

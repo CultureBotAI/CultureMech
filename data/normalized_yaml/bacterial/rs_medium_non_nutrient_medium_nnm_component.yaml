@@ -3,6 +3,7 @@ name: rs_medium_non_nutrient_medium_nnm_component
 original_name: RS Medium - Non-Nutrient Medium (NNM) Component
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

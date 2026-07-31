@@ -3,6 +3,7 @@ name: medium_514c_modified_for_dsm_23364
 original_name: MEDIUM 514c MODIFIED FOR DSM 23364
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 514c_23364

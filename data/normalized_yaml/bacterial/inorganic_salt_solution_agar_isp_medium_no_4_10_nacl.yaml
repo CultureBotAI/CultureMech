@@ -3,6 +3,7 @@ name: inorganic_salt_solution_agar_isp_medium_no_4_10_nacl
 original_name: Inorganic Salt Solution Agar (ISP Medium No. 4) + 10% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

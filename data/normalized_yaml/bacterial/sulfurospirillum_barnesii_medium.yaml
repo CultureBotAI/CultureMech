@@ -3,6 +3,7 @@ name: sulfurospirillum_barnesii_medium
 original_name: SULFUROSPIRILLUM BARNESII MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.2

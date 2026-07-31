@@ -3,6 +3,7 @@ name: modified_hmm_ozergin_ulgen_et_al
 original_name: Modified HMM; Ozergin-Ulgen et al
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

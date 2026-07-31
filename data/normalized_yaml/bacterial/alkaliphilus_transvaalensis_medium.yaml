@@ -3,6 +3,7 @@ name: alkaliphilus_transvaalensis_medium
 original_name: ALKALIPHILUS TRANSVAALENSIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.8

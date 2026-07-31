@@ -3,6 +3,7 @@ name: modified_gs_2_medium
 original_name: Modified GS-2 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

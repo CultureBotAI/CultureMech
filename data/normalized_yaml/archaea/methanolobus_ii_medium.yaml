@@ -3,6 +3,7 @@ name: methanolobus_ii_medium
 original_name: METHANOLOBUS II medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

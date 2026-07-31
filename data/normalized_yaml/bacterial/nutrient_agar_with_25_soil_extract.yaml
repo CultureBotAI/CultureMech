@@ -3,6 +3,7 @@ name: nutrient_agar_with_25_soil_extract
 original_name: NUTRIENT AGAR WITH 25% SOIL EXTRACT
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:

@@ -3,6 +3,7 @@ name: sterile_human_urine
 original_name: Sterile human urine
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Sterile human urine

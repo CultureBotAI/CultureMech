@@ -3,6 +3,7 @@ name: for_dsm_5974_and_dsm_17427
 original_name: For DSM 5974 and DSM 17427
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

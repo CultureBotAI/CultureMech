@@ -3,6 +3,7 @@ name: lg_medium
 original_name: Lg medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: beta-D-Glucose

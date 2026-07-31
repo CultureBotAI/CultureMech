@@ -3,6 +3,7 @@ name: archaeoglobus_profundus_medium
 original_name: ARCHAEOGLOBUS PROFUNDUS medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

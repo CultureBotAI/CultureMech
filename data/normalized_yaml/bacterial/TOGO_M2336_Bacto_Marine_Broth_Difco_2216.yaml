@@ -3,6 +3,7 @@ name: bacto_marine_broth_difco_2216
 original_name: Bacto Marine Broth (Difco 2216)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

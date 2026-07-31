@@ -3,6 +3,7 @@ name: marinifilum_medium_ird_medium
 original_name: MARINIFILUM MEDIUM (IRD MEDIUM)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

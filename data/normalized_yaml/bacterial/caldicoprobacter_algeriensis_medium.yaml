@@ -3,6 +3,7 @@ name: caldicoprobacter_algeriensis_medium
 original_name: CALDICOPROBACTER ALGERIENSIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

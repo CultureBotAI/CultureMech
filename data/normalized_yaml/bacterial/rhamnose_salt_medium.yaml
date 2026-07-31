@@ -3,6 +3,7 @@ name: rhamnose_salt_medium
 original_name: Rhamnose Salt Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

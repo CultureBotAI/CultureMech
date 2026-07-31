@@ -3,6 +3,7 @@ name: nas_02_medium
 original_name: NAS-02 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.2
 media_term:

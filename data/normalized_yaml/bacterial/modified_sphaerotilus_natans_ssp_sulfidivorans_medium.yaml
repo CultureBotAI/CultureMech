@@ -3,6 +3,7 @@ name: modified_sphaerotilus_natans_ssp_sulfidivorans_medium
 original_name: Modified Sphaerotilus natans ssp. sulfidivorans medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1664a

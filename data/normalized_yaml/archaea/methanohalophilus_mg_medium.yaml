@@ -3,6 +3,7 @@ name: methanohalophilus_mg_medium
 original_name: METHANOHALOPHILUS (MG) MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.9

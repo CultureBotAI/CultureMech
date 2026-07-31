@@ -3,6 +3,7 @@ name: mm_w_medium_meoh
 original_name: MM/W medium + MeOH
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

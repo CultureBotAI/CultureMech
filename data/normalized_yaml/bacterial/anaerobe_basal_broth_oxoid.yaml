@@ -3,6 +3,7 @@ name: anaerobe_basal_broth_oxoid
 original_name: Anaerobe Basal Broth (Oxoid)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

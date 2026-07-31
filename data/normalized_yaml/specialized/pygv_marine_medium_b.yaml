@@ -3,6 +3,7 @@ name: pygv_marine_medium_b
 original_name: PYGV MARINE MEDIUM (B)
 category: specialized
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.3
 media_term:

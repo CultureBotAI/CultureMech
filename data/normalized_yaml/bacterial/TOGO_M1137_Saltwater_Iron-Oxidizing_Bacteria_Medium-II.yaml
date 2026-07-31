@@ -3,6 +3,7 @@ name: saltwater_iron_oxidizing_bacteria_medium_ii
 original_name: Saltwater Iron-Oxidizing Bacteria  Medium-II
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Carbon dioxide gas

@@ -3,6 +3,7 @@ name: salt_base_solution_medium_88
 original_name: Salt base solution (medium 88)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 4004

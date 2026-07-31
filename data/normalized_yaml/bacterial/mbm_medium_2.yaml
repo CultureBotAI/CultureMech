@@ -3,6 +3,7 @@ name: mbm_medium_2
 original_name: MBM MEDIUM 2
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

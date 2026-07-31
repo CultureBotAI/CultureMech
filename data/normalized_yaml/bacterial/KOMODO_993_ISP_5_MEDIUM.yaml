@@ -3,6 +3,7 @@ name: isp_5_medium
 original_name: ISP 5 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 7.0

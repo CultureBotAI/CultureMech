@@ -3,6 +3,7 @@ name: liquid_ma_minimal_media_d_2_3_butanediol
 original_name: Liquid ma minimal media + d-2,3-butanediol
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: '''(R,R'

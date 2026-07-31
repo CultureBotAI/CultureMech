@@ -3,6 +3,7 @@ name: modified_vogel_medium_maltose
 original_name: '''Modified Vogel Medium (maltose'
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Calcium chloride anhydrous

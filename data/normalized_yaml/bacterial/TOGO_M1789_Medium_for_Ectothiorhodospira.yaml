@@ -3,6 +3,7 @@ name: medium_for_ectothiorhodospira
 original_name: Medium for Ectothiorhodospira
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

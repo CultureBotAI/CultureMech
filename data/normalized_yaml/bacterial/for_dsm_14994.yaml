@@ -3,6 +3,7 @@ name: for_dsm_14994
 original_name: for DSM 14994
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

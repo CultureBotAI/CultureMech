@@ -3,6 +3,7 @@ name: acidianus_infernus_medium
 original_name: ACIDIANUS INFERNUS medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 2.5
 media_term:

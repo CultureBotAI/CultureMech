@@ -3,6 +3,7 @@ name: halorhabdus_utahensis_medium
 original_name: HALORHABDUS UTAHENSIS MEDIUM
 category: archaea
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.6
 media_term:

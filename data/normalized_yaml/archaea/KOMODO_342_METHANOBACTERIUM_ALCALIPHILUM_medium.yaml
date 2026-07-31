@@ -3,6 +3,7 @@ name: methanobacterium_alcaliphilum_medium
 original_name: METHANOBACTERIUM ALCALIPHILUM medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 8.3

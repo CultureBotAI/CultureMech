@@ -3,6 +3,7 @@ name: medium_r2a_modified
 original_name: medium R2A MODIFIED
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 830a

@@ -1,6 +1,7 @@
 id: CultureMech:015502
 name: Chakraborty Basal
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Ammonium chloride

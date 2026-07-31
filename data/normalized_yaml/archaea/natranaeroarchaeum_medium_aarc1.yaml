@@ -3,6 +3,7 @@ name: natranaeroarchaeum_medium_aarc1
 original_name: NATRANAEROARCHAEUM MEDIUM AARC1
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 3.0

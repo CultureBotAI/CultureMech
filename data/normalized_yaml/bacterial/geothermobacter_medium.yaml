@@ -3,6 +3,7 @@ name: geothermobacter_medium
 original_name: GEOTHERMOBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.2
 media_term:

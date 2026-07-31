@@ -3,6 +3,7 @@ name: blood_agar_base_bab_broth_or_agar
 original_name: Blood Agar Base (BAB) broth or agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

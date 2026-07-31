@@ -3,6 +3,7 @@ name: nicotinic_acid_medium
 original_name: NICOTINIC ACID medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 8.2
 media_term:

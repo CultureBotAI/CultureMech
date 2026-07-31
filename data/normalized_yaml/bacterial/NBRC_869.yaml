@@ -4,6 +4,7 @@ original_name: '869'
 category: bacterial
 description: 869. NBRC 868.
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto Marine Broth 2216 (Difco)7.5gSodium pyruvate5gAgar (if needed)15gSea

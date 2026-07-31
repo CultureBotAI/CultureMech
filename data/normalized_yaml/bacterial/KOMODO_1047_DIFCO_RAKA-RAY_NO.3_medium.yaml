@@ -3,6 +3,7 @@ name: difco_raka_ray_no_3_medium
 original_name: DIFCO RAKA-RAY NO.3 medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1047

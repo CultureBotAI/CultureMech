@@ -3,6 +3,7 @@ name: medium_119_modified_for_dsm_11975
 original_name: MEDIUM 119 MODIFIED FOR DSM 11975
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 119_11975

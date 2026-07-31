@@ -3,6 +3,7 @@ name: modified_m30_medium
 original_name: Modified M30 Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: 0.1 M Tris/HCl (pH7.5)

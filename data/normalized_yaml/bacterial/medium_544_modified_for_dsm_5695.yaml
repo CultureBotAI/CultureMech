@@ -3,6 +3,7 @@ name: medium_544_modified_for_dsm_5695
 original_name: MEDIUM 544 MODIFIED FOR DSM 5695
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 544_5695

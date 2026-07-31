@@ -3,6 +3,7 @@ name: semi_solid_autotrophic_growth_medium_for_magnetococcus_marinus
 original_name: Semi-Solid Autotrophic Growth Medium For Magnetococcus Marinus
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

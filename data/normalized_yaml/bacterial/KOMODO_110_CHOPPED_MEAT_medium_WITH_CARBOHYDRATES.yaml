@@ -3,6 +3,7 @@ name: chopped_meat_medium_with_carbohydrates
 original_name: CHOPPED MEAT medium WITH CARBOHYDRATES
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 110

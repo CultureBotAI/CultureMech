@@ -3,6 +3,7 @@ name: medium_31_modified_for_dsm_9473
 original_name: MEDIUM 31 MODIFIED FOR DSM 9473
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 31_9473

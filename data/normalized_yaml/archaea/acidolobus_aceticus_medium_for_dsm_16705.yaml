@@ -3,6 +3,7 @@ name: acidolobus_aceticus_medium_for_dsm_16705
 original_name: Acidolobus Aceticus Medium (For DSM 16705)
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -3,6 +3,7 @@ name: sulfur_oxidizer_medium
 original_name: Sulfur-oxidizer Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

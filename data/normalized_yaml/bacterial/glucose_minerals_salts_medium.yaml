@@ -3,6 +3,7 @@ name: glucose_minerals_salts_medium
 original_name: Glucose minerals salts medium
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:

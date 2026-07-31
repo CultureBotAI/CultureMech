@@ -3,6 +3,7 @@ name: medium_1008_modified_for_dsm_19230
 original_name: MEDIUM 1008 MODIFIED FOR DSM 19230
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1008_19230

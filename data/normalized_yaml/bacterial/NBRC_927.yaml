@@ -4,6 +4,7 @@ original_name: '927'
 category: bacterial
 description: 927. NBRC 925.
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: ''

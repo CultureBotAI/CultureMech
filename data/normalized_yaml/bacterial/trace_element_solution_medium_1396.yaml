@@ -3,6 +3,7 @@ name: trace_element_solution_medium_1396
 original_name: Trace Element solution (medium 1396)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 4.0
 media_term:

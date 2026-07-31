@@ -3,6 +3,7 @@ name: medium_520_modified_for_dsm_7093
 original_name: MEDIUM 520 MODIFIED FOR DSM 7093
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 520_7093 | DSMZ Medium:

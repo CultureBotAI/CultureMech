@@ -3,6 +3,7 @@ name: nutrient_broth_nb_ii
 original_name: Nutrient broth (NB II)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

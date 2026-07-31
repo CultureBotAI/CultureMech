@@ -3,6 +3,7 @@ name: wilkins_chalgren_anaerobe_broth_oxoid_cm_643
 original_name: WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.0

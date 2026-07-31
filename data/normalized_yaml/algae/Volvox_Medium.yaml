@@ -2,6 +2,7 @@ id: CultureMech:000238
 name: volvox_medium
 category: algae
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.

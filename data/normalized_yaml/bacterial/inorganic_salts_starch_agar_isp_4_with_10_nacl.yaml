@@ -3,6 +3,7 @@ name: inorganic_salts_starch_agar_isp_4_with_10_nacl
 original_name: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 10% NaCl
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J351

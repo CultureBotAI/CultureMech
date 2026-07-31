@@ -3,6 +3,7 @@ name: medium_215b_modified_for_dsm_41834
 original_name: MEDIUM 215b MODIFIED FOR DSM 41834
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.5

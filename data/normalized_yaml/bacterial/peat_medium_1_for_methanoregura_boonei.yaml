@@ -3,6 +3,7 @@ name: peat_medium_1_for_methanoregura_boonei
 original_name: PEAT MEDIUM 1 FOR METHANOREGURA BOONEI
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 5.1
 media_term:

@@ -3,6 +3,7 @@ name: py4s_agar
 original_name: PY4S Agar
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: 8% (w/v) Na2CO3

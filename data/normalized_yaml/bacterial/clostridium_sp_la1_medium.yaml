@@ -3,6 +3,7 @@ name: clostridium_sp_la1_medium
 original_name: CLOSTRIDIUM SP. LA1 MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

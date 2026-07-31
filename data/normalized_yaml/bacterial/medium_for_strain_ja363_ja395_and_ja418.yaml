@@ -3,6 +3,7 @@ name: medium_for_strain_ja363_ja395_and_ja418
 original_name: Medium for strain JA363, JA395 and JA418
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: NaHCO3 (10% (w/v))

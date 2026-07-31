@@ -3,6 +3,7 @@ name: modified_m63_medium_with_glucose_and_2_5_m_nacl
 original_name: Modified M63 medium with glucose and 2.5 M NaCl
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

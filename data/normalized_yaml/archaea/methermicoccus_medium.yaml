@@ -3,6 +3,7 @@ name: methermicoccus_medium
 original_name: METHERMICOCCUS medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.0

@@ -3,6 +3,7 @@ name: tomato_juice_milk_medium
 original_name: TOMATO JUICE MILK Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

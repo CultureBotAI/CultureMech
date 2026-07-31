@@ -3,6 +3,7 @@ name: medium_983_modified_for_dsm_14852
 original_name: MEDIUM 983 MODIFIED FOR DSM 14852
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 983_14852

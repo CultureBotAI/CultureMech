@@ -3,6 +3,7 @@ name: microcella_alkaliphila_medium
 original_name: MICROCELLA ALKALIPHILA MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 9.5
 media_term:

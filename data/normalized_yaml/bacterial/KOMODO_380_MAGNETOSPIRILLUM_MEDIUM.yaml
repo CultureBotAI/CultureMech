@@ -3,6 +3,7 @@ name: magnetospirillum_medium
 original_name: MAGNETOSPIRILLUM MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.75
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 380 | DSMZ Medium: 380 (mediadive.medium:380)

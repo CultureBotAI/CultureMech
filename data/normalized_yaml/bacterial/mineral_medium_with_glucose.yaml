@@ -3,6 +3,7 @@ name: mineral_medium_with_glucose
 original_name: MINERAL MEDIUM WITH GLUCOSE
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

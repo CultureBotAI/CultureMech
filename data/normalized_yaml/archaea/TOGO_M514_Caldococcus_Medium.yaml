@@ -3,6 +3,7 @@ name: caldococcus_medium
 original_name: Caldococcus Medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

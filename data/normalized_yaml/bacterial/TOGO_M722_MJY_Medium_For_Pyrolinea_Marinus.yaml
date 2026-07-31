@@ -3,6 +3,7 @@ name: mjy_medium_for_pyrolinea_marinus
 original_name: MJY Medium For Pyrolinea Marinus
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract

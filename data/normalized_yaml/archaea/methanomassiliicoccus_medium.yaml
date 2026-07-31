@@ -3,6 +3,7 @@ name: methanomassiliicoccus_medium
 original_name: METHANOMASSILIICOCCUS MEDIUM
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.6
 media_term:

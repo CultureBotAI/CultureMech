@@ -3,6 +3,7 @@ name: flexistipes_medium
 original_name: FLEXISTIPES medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 524 | DSMZ Medium: 524 (mediadive.medium:524)

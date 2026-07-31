@@ -3,6 +3,7 @@ name: solution_1_10x_nms_salts_medium_921
 original_name: Solution 1 (10x NMS salts) (medium 921)
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 2024

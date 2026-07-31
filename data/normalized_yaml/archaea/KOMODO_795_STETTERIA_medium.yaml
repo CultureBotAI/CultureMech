@@ -3,6 +3,7 @@ name: stetteria_medium
 original_name: STETTERIA medium
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 795 | DSMZ Medium: 795 (mediadive.medium:795)

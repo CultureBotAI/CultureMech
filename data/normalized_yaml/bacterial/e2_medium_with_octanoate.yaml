@@ -3,6 +3,7 @@ name: e2_medium_with_octanoate
 original_name: E2 medium with octanoate
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Magnesium chloride

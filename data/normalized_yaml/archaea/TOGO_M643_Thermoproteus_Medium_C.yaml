@@ -3,6 +3,7 @@ name: thermoproteus_medium_c
 original_name: Thermoproteus Medium (C)
 category: archaea
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients: []
 media_term:

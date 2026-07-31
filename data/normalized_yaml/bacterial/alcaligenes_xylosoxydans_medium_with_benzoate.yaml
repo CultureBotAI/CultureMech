@@ -3,6 +3,7 @@ name: alcaligenes_xylosoxydans_medium_with_benzoate
 original_name: ALCALIGENES XYLOSOXYDANS MEDIUM WITH BENZOATE
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.2
 media_term:

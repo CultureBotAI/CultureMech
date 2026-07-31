@@ -5,6 +5,7 @@ original_name: For DSM 749, DSM 1741, DSM 7074, DSM 7075, DSM 8344, DSM 15449, D
   DSM 18033, DSM 19190, DSM 19191, DSM 19430, DSM 19637 and DSM 23265
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

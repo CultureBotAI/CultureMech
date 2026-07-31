@@ -3,6 +3,7 @@ name: k_101_flexibacter_medium
 original_name: K-101 Flexibacter medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

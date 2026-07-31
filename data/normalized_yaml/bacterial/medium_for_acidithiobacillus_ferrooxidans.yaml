@@ -3,6 +3,7 @@ name: medium_for_acidithiobacillus_ferrooxidans
 original_name: Medium for Acidithiobacillus ferrooxidans
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

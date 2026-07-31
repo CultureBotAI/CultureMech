@@ -3,6 +3,7 @@ name: thiomonas_h_5_medium
 original_name: THIOMONAS (HÖ5) MEDIUM
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 3.5
 media_term:

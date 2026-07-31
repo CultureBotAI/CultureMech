@@ -3,6 +3,7 @@ name: medium_104_modified_for_dsm_19450
 original_name: MEDIUM 104 MODIFIED FOR DSM 19450
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 104_19450

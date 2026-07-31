@@ -3,6 +3,7 @@ name: middlebrook_7h11_agar_difco
 original_name: Middlebrook 7H11 agar (Difco)
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

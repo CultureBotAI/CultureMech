@@ -3,6 +3,7 @@ name: gc_agar_broth_medium
 original_name: GC Agar/Broth Medium
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: IsoVitaleX (BD 211876)

@@ -1,6 +1,7 @@
 id: CultureMech:015828
 name: ZMB Gut
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: D-Glucose

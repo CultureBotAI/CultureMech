@@ -3,6 +3,7 @@ name: medium_49_modified_for_dsm_435
 original_name: MEDIUM 49 MODIFIED FOR DSM 435
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 49_435
