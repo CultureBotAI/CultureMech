@@ -114,9 +114,7 @@ def test_text_mode_adds_exactly_one_line_and_deletes_none(mig, tmp_path: Path) -
     after = path.read_text().splitlines()
 
     assert len(after) == len(before) + 1
-    assert [line for line in before] == [
-        line for line in after if line != "composition_type: UNDEFINED"
-    ]
+    assert before == [line for line in after if line != "composition_type: UNDEFINED"]
 
 
 def test_text_mode_preserves_comments(mig, tmp_path: Path) -> None:
