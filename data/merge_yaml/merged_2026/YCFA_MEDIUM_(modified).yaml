@@ -78,7 +78,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: L-Cysteine HCl
   term:
-    id: CHEBI:52891
+    id: CHEBI:91247
     label: L-Cysteine HCl
   concentration:
     value: '1'
@@ -120,7 +120,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: iso-Valeric acid
   term:
-    id: CHEBI:503742
+    id: CHEBI:28484
     label: iso-Valeric acid
   concentration:
     value: '31.0333'

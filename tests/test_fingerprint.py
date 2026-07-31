@@ -151,7 +151,7 @@ class TestRecipeFingerprinter:
             'ingredients': []
         }
 
-        with pytest.raises(ValueError, match="no ingredients"):
+        with pytest.raises(ValueError, match="empty ingredients"):
             self.fingerprinter.fingerprint(recipe)
 
     def test_extract_identifier_priority(self):

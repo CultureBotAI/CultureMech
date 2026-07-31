@@ -201,7 +201,7 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:7773015
+    id: CHEBI:63041
     label: ''
 - preferred_term: Pantothenate
   concentration:

@@ -1,0 +1,51 @@
+name: tests
+
+# Deliberately NO `paths:` filter, unlike the data-integrity workflows.
+#
+# Two reasons. First, this repo's tests span scripts/, src/, AND the corpus —
+# tests/test_record_kinds.py asserts against the real data/normalized_yaml/
+# tree, so a data-only PR can legitimately break them. Second, path-filtered
+# gates are how the repo ended up here: validate-strict and chebi-consistency
+# are both scoped to data/normalized_yaml/**, so a pure scripts/ + tests/ PR
+# could land with no checks at all (#129).
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    # Higher than the data-integrity workflows' 20. Several tests walk the whole
+    # ~11,000-record corpus (record kinds, ranking duplicates, index freshness,
+    # concentration plausibility), and parsing that much YAML is markedly slower
+    # on a runner than locally — a 3-minute local suite has taken >20 minutes
+    # here. Coverage is not the cost; it accounts for ~7s of that.
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install just
+        uses: extractions/setup-just@v2
+
+      # `--extra dev` is required: pytest lives in [project.optional-dependencies]
+      # dev, which a plain `uv sync` does not install. The other workflows omit it
+      # because they only invoke runtime deps.
+      - name: Sync dependencies
+        run: uv sync --frozen --extra dev
+
+      - name: Run test suite
+        run: just test

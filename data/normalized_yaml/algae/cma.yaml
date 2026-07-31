@@ -79,7 +79,7 @@ ingredients:
   notes: From CCAP Medium MR_CMA.pdf; Curated from CCAP Medium MR_CMA.pdf specification
 - preferred_term: Yeast extract
   term:
-    id: FOODON:00002441
+    id: FOODON:03315426
     label: Yeast extract
   curation_metadata:
     mapping_quality: LLM_ASSISTED

@@ -19,7 +19,7 @@ ingredients:
   notes: ' [Merged 2 duplicates: 800.0, 1000.0]'
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '1'

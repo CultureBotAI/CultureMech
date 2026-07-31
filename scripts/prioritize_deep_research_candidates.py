@@ -56,9 +56,25 @@ Scoring rubric (all components additive; final score in [0, 110]):
 Hard filters (record is dropped before scoring):
 
   - 0 ingredients
-  - category == solutions (no organism associations expected)
-  - already-researched: a non-dry-run meta yaml exists in research/media/
-    for this slug (status != 'dry-run', task_id present)
+  - stock-solution records (no organism associations expected — see below)
+  - already-researched: the slug appears in the TRACKED manifest
+    data/import_tracking/researched_media.json
+
+Solution filter (#124): this used to be documented as "category == solutions",
+which never fired — `CategoryEnum` has no `solutions` member, so no record can
+carry that value. The ~4,784 MediaDive stock-solution records live in
+`bacterial/` stamped `category: bacterial`, and 4,772 of them were being scored
+and ranked as candidate media (31% of the committed report). They are now
+detected structurally via `record_kinds.is_solution_record`, the same rule
+`validate_strict.py` uses to route them to `SolutionRecipe`.
+
+Reproducibility (#121): the already-researched filter reads that tracked
+manifest, never the gitignored `research/media/` tree. Scanning the latter made
+the committed reports a function of whoever last ran the script — regenerating
+on another machine reordered the entire top-10, producing a diff that could not
+be told apart from a real data change. The outputs here are now a pure function
+of tracked inputs: the corpus plus the manifest. Refresh the manifest explicitly
+with `just refresh-researched-manifest` and commit that diff separately.
 
 Outputs:
 
@@ -100,8 +116,11 @@ except ImportError:
     _Loader = yaml.SafeLoader  # type: ignore[misc, assignment]
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+import researched_manifest as rmf  # noqa: E402  -- tracked already-researched set
+from record_kinds import is_solution_record  # noqa: E402  -- shared medium/solution rule
+
 NORMALIZED_DIR = REPO_ROOT / "data" / "normalized_yaml"
-RESEARCH_DIR = REPO_ROOT / "research" / "media"
 REPORTS_DIR = REPO_ROOT / "data" / "import_tracking" / "reports"
 
 # Categories that may contain real microbial culture media
@@ -135,23 +154,20 @@ def load_yaml(path: Path) -> dict[str, Any] | None:
         return None
 
 
-def has_existing_research(slug: str) -> bool:
-    """True iff a successful (non-dry-run) Edison meta yaml exists for this slug.
+def has_existing_research(slug: str, researched: set[str] | None = None) -> bool:
+    """True iff `slug` has a completed run, per the TRACKED manifest.
 
-    Spending API credits twice on the same record is the failure mode we
-    want to prevent, so a dry-run-only meta does NOT count as "researched".
+    Reads `data/import_tracking/researched_media.json`, never `research/media/`.
+    That directory is gitignored, so scanning it made the generated reports a
+    function of whoever last ran the script — regenerating elsewhere reordered
+    the whole top-10 (#121). Refresh the manifest explicitly with
+    `just refresh-researched-manifest` and commit the diff.
+
+    Pass `researched` to avoid re-reading the manifest per record.
     """
-    if not RESEARCH_DIR.is_dir():
-        return False
-    for meta_path in RESEARCH_DIR.glob(f"{slug}-edison-*-meta.yaml"):
-        meta = load_yaml(meta_path)
-        if not meta:
-            continue
-        status = str(meta.get("status") or "").lower()
-        task_id = str(meta.get("task_id") or "")
-        if status and status != "dry-run" and task_id:
-            return True
-    return False
+    if researched is None:
+        researched = rmf.researched_slugs()
+    return slug in researched
 
 
 def score_ingredients(doc: dict[str, Any]) -> tuple[int, dict[str, Any]]:
@@ -392,8 +408,77 @@ def expected_yield(breakdown: dict[str, Any]) -> str:
     return "; ".join(bits) or "low yield"
 
 
-def collect_records() -> list[dict[str, Any]]:
-    """Walk the corpus and score every candidate record."""
+def strict_identity_key(doc: dict[str, Any]) -> tuple:
+    """Ingredient identities AND concentrations — a stricter test than the fingerprint.
+
+    `culturemech.merge.fingerprint` deliberately hashes only the ingredient SET:
+    its docstring says "regardless of order or concentration", and
+    `test_fingerprint_concentration_independence` pins that as a contract. That is
+    the right equivalence for merge_yaml, which `docs/DATA_LAYERS.md` defines as
+    "the same base formulation ... not identical recipes".
+
+    It is the wrong equivalence here. Deep research asks what grows in *this*
+    medium at *these* concentrations, so collapsing on the fingerprint would merge
+    records that differ in the ingredient that defines them — e.g. Pfennig's
+    Medium I *with salt* exists at both 10 and 30 G_PER_L NaCl under one name, with
+    identical fingerprints (#127).
+    """
+    items = []
+    for ing in doc.get("ingredients") or []:
+        if not isinstance(ing, dict):
+            continue
+        term = ing.get("term") if isinstance(ing.get("term"), dict) else {}
+        ident = (term or {}).get("id") or ing.get("preferred_term")
+        conc = ing.get("concentration") or {}
+        items.append((str(ident), str(conc.get("value")), str(conc.get("unit"))))
+    return tuple(sorted(items))
+
+
+def collapse_identical_records(entries: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Keep one entry per (name + exact composition); attach the ones dropped.
+
+    Only *exact* redundancy is collapsed. Records sharing a name but differing in
+    composition are all kept — 1613 such groups exist and they are distinct media,
+    not import artifacts (thermus_medium alone is 12 different recipes). Those get
+    `name_collision_count` instead, so a curator can see the name is ambiguous
+    rather than silently researching an arbitrary one of them.
+    """
+    by_identity: dict[tuple, list[dict[str, Any]]] = {}
+    for entry in entries:
+        key = (entry["recipe_name"], entry.pop("_identity"))
+        by_identity.setdefault(key, []).append(entry)
+
+    kept: list[dict[str, Any]] = []
+    for group in by_identity.values():
+        group.sort(key=lambda e: (-e["score"], e["file_path"]))
+        primary, rest = group[0], group[1:]
+        if rest:
+            primary["identical_records"] = [e["file_path"] for e in rest]
+            primary["identical_record_count"] = len(rest)
+        kept.append(primary)
+
+    # Flag remaining same-name-different-composition ambiguity.
+    by_name: dict[str, int] = {}
+    for entry in kept:
+        by_name[entry["recipe_name"]] = by_name.get(entry["recipe_name"], 0) + 1
+    for entry in kept:
+        n = by_name[entry["recipe_name"]]
+        if n > 1:
+            entry["name_collision_count"] = n
+
+    kept.sort(key=lambda e: e["score"], reverse=True)
+    return kept
+
+
+def collect_records(researched: set[str] | None = None) -> list[dict[str, Any]]:
+    """Walk the corpus and score every candidate record.
+
+    `researched` is the tracked already-researched slug set (empty set = exclude
+    nothing). Resolved once by the caller so the output depends only on inputs
+    passed in — not on whatever happens to be in the local `research/` dir.
+    """
+    if researched is None:
+        researched = rmf.researched_slugs()
     out: list[dict[str, Any]] = []
     for cat in CANDIDATE_CATEGORIES:
         cat_dir = NORMALIZED_DIR / cat
@@ -403,8 +488,14 @@ def collect_records() -> list[dict[str, Any]]:
             doc = load_yaml(yaml_path)
             if not doc:
                 continue
+            # Stock solutions have no organism to associate by construction, so
+            # researching one can only ever spend credits for nothing. They sit
+            # in bacterial/ stamped `category: bacterial`, so this has to be a
+            # structural check — see the module docstring (#124).
+            if is_solution_record(doc):
+                continue
             slug = yaml_path.stem
-            if has_existing_research(slug):
+            if slug in researched:
                 continue
             scored = score_record(doc, yaml_path)
             if not scored:
@@ -435,10 +526,10 @@ def collect_records() -> list[dict[str, Any]]:
                 "real_organism_count": scored["breakdown"]["organism_gap"]["real_count"],
                 "expected_research_yield": expected_yield(scored["breakdown"]),
                 "score_breakdown": scored["breakdown"],
+                "_identity": strict_identity_key(doc),
             }
             out.append(entry)
-    out.sort(key=lambda e: e["score"], reverse=True)
-    return out
+    return collapse_identical_records(out)
 
 
 def write_markdown(entries: list[dict[str, Any]], path: Path, top_n: int = 100) -> None:
@@ -455,6 +546,17 @@ def write_markdown(entries: list[dict[str, Any]], path: Path, top_n: int = 100) 
     lines.append("")
     lines.append(f"- Total scored candidates: **{len(entries)}**")
     lines.append(f"- Top-N shown below: **{min(top_n, len(entries))}**")
+    collapsed = sum(e.get("identical_record_count", 0) for e in entries)
+    ambiguous = sum(1 for e in entries if e.get("name_collision_count"))
+    lines.append(
+        f"- Exact-duplicate records collapsed: **{collapsed}** "
+        f"(same name, same ingredients, same concentrations; the dropped paths are "
+        f"listed under `identical_records` in the JSON)"
+    )
+    lines.append(
+        f"- Rows whose `recipe_name` is shared by other DISTINCT media: **{ambiguous}** "
+        f"(marked ⚠N below — same name, different composition, so all are kept)"
+    )
     lines.append("")
     lines.append("## Scoring rubric (max 110, before category multiplier)")
     lines.append("")
@@ -492,16 +594,21 @@ def write_markdown(entries: list[dict[str, Any]], path: Path, top_n: int = 100) 
     lines.append(f"## Top {min(top_n, len(entries))} candidates")
     lines.append("")
     lines.append(
-        "| # | Score | Category | Recipe | Ingredients | Orgs | Source ID | Expected yield |"
+        "| # | Score | Category | ID | Recipe | Ingredients | Orgs | Source ID | Expected yield |"
     )
-    lines.append("|--:|------:|----------|--------|------------:|-----:|-----------|----------------|")
+    lines.append("|--:|------:|----------|----|--------|------------:|-----:|-----------|----------------|")
     for i, e in enumerate(entries[:top_n], start=1):
         name = e["recipe_name"]
         if len(name) > 50:
             name = name[:47] + "..."
+        # `recipe_name` is NOT unique — 1613 names cover several distinct media
+        # each. Show the id, and mark rows whose name is shared, so a curator
+        # picking from this table knows which record they are picking (#127).
+        if e.get("name_collision_count"):
+            name = f"{name} ⚠{e['name_collision_count']}"
         src_kind = e["score_breakdown"]["source"].get("kind", "")
         lines.append(
-            f"| {i} | {e['score']:.1f} | {e['category']} | "
+            f"| {i} | {e['score']:.1f} | {e['category']} | `{e['id']}` | "
             f"`{name}` ([yaml](../../data/normalized_yaml/{e['file_path']})) | "
             f"{e['ingredient_count']} | {e['real_organism_count']} | "
             f"{src_kind} | {e['expected_research_yield']} |"
@@ -532,10 +639,25 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--top", type=int, default=100,
                     help="How many entries to include in the markdown report and *_top100.json. Default 100.")
     ap.add_argument("--reports-dir", type=Path, default=REPORTS_DIR)
+    ap.add_argument("--researched-manifest", type=Path, default=rmf.DEFAULT_MANIFEST,
+                    help="Tracked manifest of already-researched slugs to exclude. "
+                         "Refresh it with `just refresh-researched-manifest`.")
+    ap.add_argument("--no-exclude-researched", action="store_true",
+                    help="Score every record, including already-researched ones.")
     args = ap.parse_args(argv)
 
+    researched: set[str] = set()
+    if not args.no_exclude_researched:
+        researched = rmf.researched_slugs(args.researched_manifest)
+        if not researched:
+            print(f"Note: no entries in {args.researched_manifest}; excluding nothing. "
+                  f"Run `just refresh-researched-manifest` if local runs exist.",
+                  flush=True)
+
     print(f"Scanning {NORMALIZED_DIR.relative_to(REPO_ROOT)}/ ...", flush=True)
-    entries = collect_records()
+    print(f"Excluding {len(researched)} already-researched record(s) "
+          f"(source: tracked manifest, not research/).", flush=True)
+    entries = collect_records(researched)
     print(f"Scored {len(entries)} candidate records.")
 
     args.reports_dir.mkdir(parents=True, exist_ok=True)

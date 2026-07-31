@@ -43,7 +43,7 @@ ingredients:
   notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: Pancreatic digest of casein
   term:
-    id: FOODON:03316428
+    id: MICRO:0000182
     label: tryptone
   concentration:
     value: '17.0'
@@ -64,7 +64,7 @@ ingredients:
     synonym_type: EXACT
 - preferred_term: Peptic digest of soybean meal
   term:
-    id: FOODON:03303126
+    id: FOODON:03315720
     label: soy peptone
   concentration:
     value: '3.0'

@@ -67,7 +67,7 @@ ingredients:
     label: Na2SO4
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '0.00029703'
@@ -122,7 +122,7 @@ ingredients:
     label: Na2WO4 x 2 H2O
 - preferred_term: Na2SeO4
   term:
-    id: CHEBI:59160
+    id: CHEBI:77775
     label: Na2SeO4
   concentration:
     value: '9.90099e-05'

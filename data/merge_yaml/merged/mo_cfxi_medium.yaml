@@ -112,7 +112,7 @@ ingredients:
     label: NaHCO3
 - preferred_term: Cysteine-HCl
   term:
-    id: CHEBI:52891
+    id: CHEBI:91247
     label: Cysteine-HCl
   concentration:
     value: '0.3'
@@ -172,7 +172,7 @@ ingredients:
     label: MnCl2 x 4 H2O
 - preferred_term: Na2SeO4
   term:
-    id: CHEBI:59160
+    id: CHEBI:77775
     label: Na2SeO4
   concentration:
     value: '0.002'

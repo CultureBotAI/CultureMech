@@ -31,7 +31,7 @@ ingredients:
     value: '0.5'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:85357
+    id: CHEBI:76208
     label: sodium sulfide
   mediaingredientmech_term:
     id: MediaIngredientMech:000120

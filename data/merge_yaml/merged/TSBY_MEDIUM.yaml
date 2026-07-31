@@ -41,7 +41,7 @@ notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1
 ingredients:
 - preferred_term: Pancreatic digest of casein
   term:
-    id: FOODON:03316428
+    id: MICRO:0000182
     label: tryptone
   concentration:
     value: '17.0'
@@ -62,7 +62,7 @@ ingredients:
     synonym_type: EXACT
 - preferred_term: Peptic digest of soybean meal
   term:
-    id: FOODON:03303126
+    id: FOODON:03315720
     label: soy peptone
   concentration:
     value: '3.0'
@@ -182,7 +182,7 @@ ingredients:
     tissue; Constituent of Brain Heart Infusion commercial product
 - preferred_term: Proteose peptone
   term:
-    id: FOODON:03302071
+    id: MICRO:0000180
     label: proteose peptone
   concentration:
     value: '10.0'

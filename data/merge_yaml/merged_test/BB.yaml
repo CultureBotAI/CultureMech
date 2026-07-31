@@ -12,7 +12,7 @@ notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_BB.pdf
 ingredients:
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '10'

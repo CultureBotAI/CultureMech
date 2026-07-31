@@ -1,8 +1,43 @@
 """Tests for KG-Microbe media matcher."""
 
+import os
+
 import pytest
 from pathlib import Path
 from culturemech.match import KGMediaMatcher, match_recipe_to_kg_microbe
+
+
+# kg-microbe's checkout layout varies: the repo may sit directly at
+# <workspace>/kg-microbe, or nested one level down at
+# <workspace>/kg-microbe/kg-microbe when the outer directory is a workspace
+# container. Probing beats hard-coding — the previous single hard-coded guess
+# pointed at the container, so these tests silently skipped on a machine that
+# had the data all along.
+def _resolve_kg_microbe_dir() -> Path | None:
+    """First candidate that actually holds the transformed mediadive tables."""
+    env = os.environ.get("KG_MICROBE_DIR")
+    workspace = Path(__file__).resolve().parent.parent.parent.parent
+    candidates = [
+        *( [Path(env)] if env else [] ),
+        workspace / "kg-microbe" / "kg-microbe",
+        workspace / "kg-microbe",
+        Path(__file__).resolve().parent.parent.parent / "kg-microbe",
+    ]
+    for cand in candidates:
+        mediadive = cand / "data" / "transformed" / "mediadive"
+        if (mediadive / "edges.tsv").is_file() and (mediadive / "nodes.tsv").is_file():
+            return cand
+    return None
+
+
+_KG_MICROBE_DIR = _resolve_kg_microbe_dir()
+_SKIP_REASON = (
+    "KG-Microbe mediadive data not found. Looked for "
+    "data/transformed/mediadive/{edges,nodes}.tsv under $KG_MICROBE_DIR and the "
+    "usual checkout layouts. Clone kg-microbe and run its transform, or set "
+    "KG_MICROBE_DIR."
+)
+
 
 
 class TestKGMediaMatcher:
@@ -10,14 +45,10 @@ class TestKGMediaMatcher:
 
     @pytest.fixture
     def kg_microbe_dir(self):
-        """Path to kg-microbe repository."""
-        # Adjust this path based on your local setup
-        kg_dir = Path(__file__).parent.parent.parent.parent / "kg-microbe"
-
-        if not kg_dir.exists():
-            pytest.skip(f"KG-Microbe not found at {kg_dir}")
-
-        return kg_dir
+        """Path to the kg-microbe checkout holding the transformed mediadive tables."""
+        if _KG_MICROBE_DIR is None:
+            pytest.skip(_SKIP_REASON)
+        return _KG_MICROBE_DIR
 
     @pytest.fixture
     def matcher(self, kg_microbe_dir):
@@ -40,12 +71,17 @@ class TestKGMediaMatcher:
         assert matcher._normalize_ontology_id("UNKNOWN:123") == "UNKNOWN:123"
 
     def test_get_medium_name(self, matcher):
-        """Test retrieving medium names."""
-        # Test known medium
+        """Test retrieving medium names.
+
+        This used to assert only `isinstance(str)` and `len > 0`, which a
+        biolink category string satisfies — and that is exactly what the loader
+        was storing, having read the `category` column instead of `name`. Assert
+        the actual name so the bug cannot come back silently.
+        """
         if '514' in matcher.medium_names:
             name = matcher.get_medium_name('514')
-            assert isinstance(name, str)
-            assert len(name) > 0
+            assert name == "BACTO MARINE BROTH DIFCO 2216"
+            assert not name.startswith("biolink:"), "reading the category column again"
 
         # Test unknown medium
         unknown_name = matcher.get_medium_name('99999999')
@@ -102,27 +138,39 @@ class TestKGMediaMatcher:
         assert only2 == {'CHEBI:1'}
 
     def test_find_matches(self, matcher):
-        """Test finding matches."""
-        # Use ingredients from a known medium if available
+        """Test finding matches.
+
+        Medium ids are NOT uniquely determined by their ingredient set: 514,
+        760, 1173, 1517 and 1753 all share the same 17 ingredients (1173 is
+        literally "MODIFIED MEDIUM 514"). So this asserts every perfect-Jaccard
+        hit really is one, and that 514 is among them — not that it sorts first,
+        which is an arbitrary tie-break.
+        """
         if '514' in matcher.medium_ingredients:
             test_ingredients = matcher.get_medium_ingredients('514')
 
             matches = matcher.find_matches(test_ingredients, min_jaccard=1.0, max_results=5)
 
+            # find_matches yields (medium_id, jaccard, shared, only_a, only_b).
             assert len(matches) > 0
-            # First match should be exact
-            assert matches[0][0] == '514'
-            assert matches[0][1] == 1.0  # Jaccard score
+            assert all(m[1] == 1.0 for m in matches)
+            assert all(matcher.get_medium_ingredients(m[0]) == test_ingredients
+                       for m in matches)
+            assert '514' in {m[0] for m in matches}
 
     def test_find_exact_match(self, matcher):
-        """Test finding exact matches."""
-        # Use ingredients from a known medium if available
+        """Test finding exact matches.
+
+        Returns *an* exact match, not a canonical one — see test_find_matches for
+        why 514's ingredient set maps to five media.
+        """
         if '514' in matcher.medium_ingredients:
             test_ingredients = matcher.get_medium_ingredients('514')
 
             exact_match = matcher.find_exact_match(test_ingredients)
 
-            assert exact_match == '514'
+            assert exact_match is not None
+            assert matcher.get_medium_ingredients(exact_match) == test_ingredients
 
     def test_find_exact_match_no_match(self, matcher):
         """Test finding exact match when none exists."""
@@ -164,13 +212,10 @@ class TestMatchRecipeToKGMicrobe:
 
     @pytest.fixture
     def kg_microbe_dir(self):
-        """Path to kg-microbe repository."""
-        kg_dir = Path(__file__).parent.parent.parent.parent / "kg-microbe"
-
-        if not kg_dir.exists():
-            pytest.skip(f"KG-Microbe not found at {kg_dir}")
-
-        return kg_dir
+        """Path to the kg-microbe checkout holding the transformed mediadive tables."""
+        if _KG_MICROBE_DIR is None:
+            pytest.skip(_SKIP_REASON)
+        return _KG_MICROBE_DIR
 
     def test_match_recipe_exact(self, kg_microbe_dir, tmp_path):
         """Test matching recipe with exact match."""

@@ -203,7 +203,7 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
   term:
-    id: CHEBI:113246
+    id: CHEBI:50144
     label: Pyruvic acid sodium salt
   mediaingredientmech_term:
     id: MediaIngredientMech:000399

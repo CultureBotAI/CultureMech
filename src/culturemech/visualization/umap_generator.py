@@ -30,6 +30,7 @@ class UMAPVisualizationGenerator:
         n_neighbors: int = 15,
         min_dist: float = 0.1,
         min_coverage: float = 0.5,
+        method: str = "pacmap",
     ) -> None:
         """
         Generate interactive UMAP visualization with both derived and direct embeddings.
@@ -43,6 +44,7 @@ class UMAPVisualizationGenerator:
             n_neighbors: UMAP n_neighbors parameter
             min_dist: UMAP min_dist parameter
             min_coverage: Minimum embedding coverage for derived embeddings
+            method: 2D reducer to use, one of "pacmap" (default) or "umap"
         """
         print("=" * 70)
         print("UMAP Visualization Generator - CultureMech")
@@ -77,13 +79,13 @@ class UMAPVisualizationGenerator:
         print("\n[4/6] Extracting direct embeddings...")
         direct_embeddings = aggregator.get_direct_embeddings(media_yamls)
 
-        # Step 5: Apply UMAP reduction
-        print("\n[5/6] Applying UMAP reduction...")
+        # Step 5: Apply 2D reduction (PaCMAP by default, UMAP optional)
+        print(f"\n[5/6] Applying 2D reduction ({method})...")
         derived_df = reduce_to_2d(
-            derived_embeddings, n_neighbors=n_neighbors, min_dist=min_dist
+            derived_embeddings, n_neighbors=n_neighbors, min_dist=min_dist, method=method
         )
         direct_df = reduce_to_2d(
-            direct_embeddings, n_neighbors=n_neighbors, min_dist=min_dist
+            direct_embeddings, n_neighbors=n_neighbors, min_dist=min_dist, method=method
         )
 
         # Step 6: Generate HTML visualization
@@ -205,47 +207,51 @@ class UMAPVisualizationGenerator:
         return plot_data
 
     def _extract_metadata(self, medium_id: str, media_dir: Path) -> dict:
-        """Extract metadata from media or solution YAML file."""
-        # Check if this is a solution (starts with mediadive_)
-        if medium_id.startswith("mediadive_"):
-            # Look in solutions directory
-            solutions_dir = media_dir / "solutions" / "mediadive"
-            yaml_path = solutions_dir / f"{medium_id}.yaml"
-            if yaml_path.exists():
-                try:
-                    with open(yaml_path, "r") as f:
-                        data = yaml.safe_load(f)
-                        return {
-                            "name": data.get("preferred_term", medium_id),
-                            "entity_type": "solution",
-                            "category": "solution",
-                            "medium_type": "solution",
-                            "physical_state": "solution",
-                            "source_database": "mediadive",
-                        }
-                except Exception:
-                    pass
+        """Extract metadata from media or solution YAML file.
 
-        # Otherwise, find YAML file in category subdirectories (media)
-        for category_dir in media_dir.iterdir():
+        Solutions are identified by the ``mediadive_`` id prefix (every such
+        record carries a ``mediadive.solution:`` term). They are tagged
+        ``entity_type: solution`` regardless of which directory the YAML lives
+        in — the MediaDive solution YAMLs are currently materialised under the
+        ``bacterial/`` category dir, not the (legacy/empty)
+        ``solutions/mediadive/`` path the importer once used.
+        """
+        is_solution = medium_id.startswith("mediadive_")
+
+        # Search the legacy solutions dir first, then the category dirs.
+        candidates = [media_dir / "solutions" / "mediadive" / f"{medium_id}.yaml"]
+        for category_dir in sorted(media_dir.iterdir()):
             if category_dir.is_dir() and category_dir.name != "solutions":
-                yaml_path = category_dir / f"{medium_id}.yaml"
-                if yaml_path.exists():
-                    try:
-                        with open(yaml_path, "r") as f:
-                            data = yaml.safe_load(f)
-                            return {
-                                "name": data.get("name", medium_id),
-                                "entity_type": "medium",
-                                "category": category_dir.name,
-                                "medium_type": data.get("medium_type", "unknown"),
-                                "physical_state": data.get("physical_state", "unknown"),
-                                "source_database": self._infer_source_database(data),
-                            }
-                    except Exception:
-                        pass
+                candidates.append(category_dir / f"{medium_id}.yaml")
 
-        return {"entity_type": "medium"}
+        for yaml_path in candidates:
+            if not yaml_path.exists():
+                continue
+            try:
+                with open(yaml_path, "r") as f:
+                    data = yaml.safe_load(f) or {}
+            except Exception:
+                continue
+
+            if is_solution:
+                return {
+                    "name": data.get("preferred_term", medium_id),
+                    "entity_type": "solution",
+                    "category": "solution",
+                    "medium_type": "solution",
+                    "physical_state": "solution",
+                    "source_database": "mediadive",
+                }
+            return {
+                "name": data.get("name", medium_id),
+                "entity_type": "medium",
+                "category": yaml_path.parent.name,
+                "medium_type": data.get("medium_type", "unknown"),
+                "physical_state": data.get("physical_state", "unknown"),
+                "source_database": self._infer_source_database(data),
+            }
+
+        return {"entity_type": "solution" if is_solution else "medium"}
 
     def _infer_source_database(self, media_data: dict) -> str:
         """Infer source database from media term ID."""

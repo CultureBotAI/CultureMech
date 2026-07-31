@@ -55,7 +55,7 @@ references:
 ingredients:
 - preferred_term: Proteose peptone
   term:
-    id: FOODON:00002992
+    id: MICRO:0000180
     label: Proteose peptone
   curation_metadata:
     mapping_quality: LLM_ASSISTED
@@ -69,7 +69,7 @@ ingredients:
   notes: From CCAP Medium MR_PPY.pdf; Curated from CCAP Medium MR_PPY.pdf specification
 - preferred_term: Yeast extract
   term:
-    id: FOODON:00002441
+    id: FOODON:03315426
     label: Yeast extract
   curation_metadata:
     mapping_quality: LLM_ASSISTED

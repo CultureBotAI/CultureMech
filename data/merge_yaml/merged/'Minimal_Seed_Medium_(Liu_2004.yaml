@@ -36,7 +36,7 @@ ingredients:
     label: pyridoxamine hydrochloride
 - preferred_term: Nicotinate
   term:
-    id: CHEBI:10716816
+    id: CHEBI:32544
     label: Nicotinate
   concentration:
     value: '0.03249'

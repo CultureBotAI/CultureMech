@@ -1,0 +1,319 @@
+id: CultureMech:001961
+name: methanobacterium_subterraneum_medium
+original_name: METHANOBACTERIUM SUBTERRANEUM MEDIUM
+category: archaea
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_range:
+  min: 8.0
+  max: 8.5
+media_term:
+  preferred_term: DSMZ Medium 814
+  term:
+    id: mediadive.medium:814
+    label: METHANOBACTERIUM SUBTERRANEUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium814.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.394867'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.029615'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1.4442249999999999'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.444225, 1.0]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '0.493583'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.10296150000000001'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0029615, 0.1]'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: Tryptone
+  concentration:
+    value: '0.987167'
+    unit: G_PER_L
+- preferred_term: Na-formate
+  term:
+    id: CHEBI:62965
+    label: sodium formate
+  concentration:
+    value: '3.15893'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62965
+    label: Na-formate
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  concentration:
+    value: '0.987167'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32954
+    label: Na-acetate
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000493583'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  concentration:
+    value: '0.987167'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:29377
+    label: Na2CO3
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.246792'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.246792'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+- preferred_term: AlK(SO4)2 x 12 H2O
+  term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.0003'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except carbonate, vitamins, cysteine and sulfide,
+    then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
+    medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Add vitamins (sterilized by filtration), cysteine and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a
+    sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior
+    to use adjust pH of complete medium to 8.0 - 8.5.
+- step_number: 2
+  action: ADJUST_PH
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.342534Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 814'
+- timestamp: '2026-03-13T03:09:20.855266Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:08.844314Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001961'
+- timestamp: '2026-03-17T06:30:28.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:21.328561+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOBACTERIUM SUBTERRANEUM MEDIUM" to "methanobacterium_subterraneum_medium"
+    for consistent matching
+- timestamp: '2026-05-20T06:01:55.143948+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''8-8.5'' -> {''min'': 8.0, ''max'': 8.5}'
+- timestamp: '2026-06-05T07:41:30.821124+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 23 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:06.704808+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 6 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_814_METHANOBACTERIUM_SUBTERRANEUM_MEDIUM.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006537
+  name: methanobacterium_subterraneum_medium
+  notes: Same ingredient and concentration signature; KOMODO record copied from the
+    matching DSMZ medium source.

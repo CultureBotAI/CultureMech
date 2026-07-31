@@ -16,7 +16,7 @@ notes: 'Source: KOMODO ModelSEED | ID: 167 | DSMZ Medium: 167 (mediadive.medium:
 ingredients:
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '2'

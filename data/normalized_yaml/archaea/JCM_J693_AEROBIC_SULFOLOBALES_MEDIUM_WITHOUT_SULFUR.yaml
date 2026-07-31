@@ -1,0 +1,201 @@
+id: CultureMech:003038
+name: aerobic_sulfolobales_medium_without_sulfur
+original_name: AEROBIC SULFOLOBALES MEDIUM WITHOUT SULFUR
+category: archaea
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J693
+  term:
+    id: mediadive.medium:J693
+    label: AEROBIC SULFOLOBALES MEDIUM WITHOUT SULFUR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=693'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 691
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
+    label: Sulfur
+  notes: Copied from referenced JCM Medium 691
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  notes: Copied from referenced JCM Medium 691
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+  notes: Copied from referenced JCM Medium 691
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 691
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  notes: Copied from referenced JCM Medium 691
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.0018'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  notes: Copied from referenced JCM Medium 691
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.0045'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 691
+  term:
+    id: CHEBI:131366
+    label: ''
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.00022'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 691
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  notes: Copied from referenced JCM Medium 691
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: 3e-05
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  notes: Copied from referenced JCM Medium 691
+- preferred_term: VOSO4 x n H2O
+  term:
+    id: CHEBI:87020
+    label: VOSO4 x n H2O
+  concentration:
+    value: 3e-05
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:87020
+    label: VOSO4 x n H2O
+  notes: Copied from referenced JCM Medium 691
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 691
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 691 without sulfur.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.313982Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J693'
+- timestamp: '2026-02-03T11:26:55.749760'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:17.338659Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003038'
+- timestamp: '2026-03-17T19:45:31.015877+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "AEROBIC SULFOLOBALES MEDIUM WITHOUT SULFUR" to "aerobic_sulfolobales_medium_without_sulfur"
+    for consistent matching
+- timestamp: '2026-04-04T18:49:19.929413'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (13 ingredients)
+  source: CultureMech:003037
+  notes: Resolved reference by copying from aerobic_sulfolobales_medium (CultureMech:003037)
+- timestamp: '2026-05-16T08:57:04.795018+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:40:17.589249+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 11 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.071077+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 2 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+data_quality_flags:
+- resolved_reference
+variant_children:
+- path: data/normalized_yaml/bacterial/aerobic_sulfolobales_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003037
+  name: aerobic_sulfolobales_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

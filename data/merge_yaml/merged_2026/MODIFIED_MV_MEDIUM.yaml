@@ -80,7 +80,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Sodium L-lactate
   term:
-    id: CHEBI:867561
+    id: CHEBI:232798
     label: Sodium L-lactate
   concentration:
     value: '20'

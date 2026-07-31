@@ -31,8 +31,8 @@ ingredients:
     value: '13.0'
     unit: G_PER_L
   term:
-    id: FOODON:03310387
-    label: casein hydrolysate
+    id: MICRO:0000182
+    label: tryptone
   curation_metadata:
     mapping_quality: MANUAL
     confidence_score: 1.0
@@ -45,7 +45,7 @@ ingredients:
     value: '5.0'
     unit: G_PER_L
   term:
-    id: FOODON:00002951
+    id: FOODON:03315426
     label: yeast extract
   curation_metadata:
     mapping_quality: MANUAL

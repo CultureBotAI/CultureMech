@@ -73,10 +73,10 @@ ingredients:
   source: CCAP Medium MR_E31_ANT.pdf
   notes: From CCAP Medium MR_E31_ANT.pdf; Curated from CCAP Medium MR_E31_ANT.pdf
     specification
-- preferred_term: K HPO
+- preferred_term: K2HPO4
   term:
-    id: CHEBI:32030
-    label: K HPO
+    id: CHEBI:131527
+    label: K2HPO4
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -110,10 +110,10 @@ ingredients:
   source: CCAP Medium MR_E31_ANT.pdf
   notes: From CCAP Medium MR_E31_ANT.pdf; Curated from CCAP Medium MR_E31_ANT.pdf
     specification
-- preferred_term: FeCl .6H O
+- preferred_term: FeCl3 x 6 H2O
   term:
-    id: CHEBI:30527
-    label: FeCl .6H O
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 0.95
@@ -125,10 +125,10 @@ ingredients:
   source: CCAP Medium MR_E31_ANT.pdf
   notes: From CCAP Medium MR_E31_ANT.pdf; Curated from CCAP Medium MR_E31_ANT.pdf
     specification
-- preferred_term: MnSO .4H O
+- preferred_term: MnSO4 x 4 H2O
   term:
     id: CHEBI:86358
-    label: MnSO .4H O
+    label: MnSO4 x 4 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -140,10 +140,10 @@ ingredients:
   source: CCAP Medium MR_E31_ANT.pdf
   notes: From CCAP Medium MR_E31_ANT.pdf; Curated from CCAP Medium MR_E31_ANT.pdf
     specification
-- preferred_term: ZnSO .7H O
+- preferred_term: ZnSO4 x 7 H2O
   term:
-    id: CHEBI:86463
-    label: ZnSO .7H O
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -155,10 +155,10 @@ ingredients:
   source: CCAP Medium MR_E31_ANT.pdf
   notes: From CCAP Medium MR_E31_ANT.pdf; Curated from CCAP Medium MR_E31_ANT.pdf
     specification
-- preferred_term: Na MoO .2H O
+- preferred_term: Na2MoO4 x 2 H2O
   term:
-    id: CHEBI:75216
-    label: Na MoO .2H O
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -170,10 +170,10 @@ ingredients:
   source: CCAP Medium MR_E31_ANT.pdf
   notes: From CCAP Medium MR_E31_ANT.pdf; Curated from CCAP Medium MR_E31_ANT.pdf
     specification
-- preferred_term: CuSO .5H O
+- preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: CuSO .5H O
+    label: CuSO4 x 5 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -185,10 +185,10 @@ ingredients:
   source: CCAP Medium MR_E31_ANT.pdf
   notes: From CCAP Medium MR_E31_ANT.pdf; Curated from CCAP Medium MR_E31_ANT.pdf
     specification
-- preferred_term: CoSO .7H O
+- preferred_term: CoSO4 x 7 H2O
   term:
-    id: CHEBI:86455
-    label: CoSO .7H O
+    id: CHEBI:91244
+    label: CoSO4 x 7 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -215,10 +215,10 @@ ingredients:
   source: CCAP Medium MR_E31_ANT.pdf
   notes: From CCAP Medium MR_E31_ANT.pdf; Curated from CCAP Medium MR_E31_ANT.pdf
     specification
-- preferred_term: NaH PO .2H O
+- preferred_term: NaH2PO4 x 2 H2O
   term:
     id: CHEBI:37585
-    label: NaH PO .2H O
+    label: NaH2PO4 x 2 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

@@ -146,7 +146,7 @@ ingredients:
   notes: Copied from referenced JCM Medium 151
 - preferred_term: KI
   term:
-    id: CHEBI:74559
+    id: CHEBI:8346
     label: KI
   concentration:
     value: 5e-05

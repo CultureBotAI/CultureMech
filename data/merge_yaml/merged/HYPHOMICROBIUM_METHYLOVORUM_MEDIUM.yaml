@@ -24,7 +24,7 @@ ingredients:
     label: Methanol
 - preferred_term: (NH4)2HPO4
   term:
-    id: CHEBI:62476
+    id: CHEBI:63051
     label: (NH4)2HPO4
   concentration:
     value: '3'

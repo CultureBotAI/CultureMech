@@ -148,7 +148,7 @@ ingredients:
     label: NiSO4 x 6 H2O
 - preferred_term: Na2SeO4
   term:
-    id: CHEBI:59160
+    id: CHEBI:77775
     label: Na2SeO4
   concentration:
     value: '1'

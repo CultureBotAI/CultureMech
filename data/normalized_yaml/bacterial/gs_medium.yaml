@@ -346,7 +346,7 @@ ingredients:
     label: Lipoic acid
 - preferred_term: Cysteine-HCl
   term:
-    id: CHEBI:52891
+    id: CHEBI:91247
     label: Cysteine-HCl
   concentration:
     value: '50'

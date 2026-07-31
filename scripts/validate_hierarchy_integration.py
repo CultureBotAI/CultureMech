@@ -66,14 +66,30 @@ class HierarchyValidator:
             'NAMED_HYDRATE', 'CHEMICAL_VARIANT'
         }
 
-        # Valid roles from schema
-        self.valid_roles = {
-            'CARBON_SOURCE', 'NITROGEN_SOURCE', 'MINERAL',
-            'TRACE_ELEMENT', 'BUFFER', 'VITAMIN_SOURCE',
-            'SALT', 'PROTEIN_SOURCE', 'AMINO_ACID_SOURCE',
-            'SOLIDIFYING_AGENT', 'ENERGY_SOURCE',
-            'ELECTRON_ACCEPTOR', 'ELECTRON_DONOR',
-            'COFACTOR_PROVIDER'
+        # Valid role tokens across the three facet enums vendored from MIM
+        # (NutritionalRoleEnum / PhysicochemicalRoleEnum /
+        # CellularMetabolicRoleEnum). Kept as a hardcoded union rather than a
+        # SchemaView derivation because this script is a lightweight validator
+        # and shouldn't grow a LinkML-load dependency. If a facet enum gains a
+        # value upstream, this set needs updating alongside.
+        self.valid_role_by_slot = {
+            'nutritional_roles': {
+                'CARBON_SOURCE', 'NITROGEN_SOURCE', 'SULFUR_SOURCE',
+                'PHOSPHATE_SOURCE', 'IRON_SOURCE', 'TRACE_ELEMENT',
+                'VITAMIN_SOURCE', 'AMINO_ACID_SOURCE', 'PROTEIN_SOURCE',
+                'COFACTOR_PROVIDER', 'ENERGY_SOURCE', 'LIGHT_SOURCE',
+            },
+            'physicochemical_roles': {
+                'BUFFER', 'SOLIDIFYING_AGENT', 'CHELATOR', 'SURFACTANT',
+                'REDUCING_AGENT', 'OXIDIZING_AGENT', 'PH_INDICATOR',
+                'REDOX_INDICATOR', 'SELECTIVE_AGENT', 'ANTIFOAM',
+                'OSMOTIC_AGENT', 'PRECIPITATION_INHIBITOR',
+            },
+            'cellular_metabolic_roles': {
+                'SUBSTRATE', 'ELECTRON_DONOR', 'ELECTRON_ACCEPTOR',
+                'COFACTOR', 'PROSTHETIC_GROUP_PRECURSOR', 'MEMBRANE_COMPONENT',
+                'OSMOPROTECTANT', 'INDUCER', 'INHIBITOR', 'QUENCHER',
+            },
         }
 
     def validate_ingredient(
@@ -171,32 +187,37 @@ class HierarchyValidator:
             else:
                 self.stats['valid_variant_types'] += 1
 
-        # Check role field
-        if 'role' in ingredient:
+        # Check the three facet role slots (nutritional/physicochemical/
+        # cellular_metabolic). Each slot has its own valid-value set; a value
+        # in the wrong facet is a validation error.
+        for slot, valid_values in self.valid_role_by_slot.items():
+            if slot not in ingredient:
+                continue
             self.stats['ingredients_with_roles'] += 1
-            roles = ingredient['role']
-
+            roles = ingredient[slot]
             if not isinstance(roles, list):
                 issues.append({
                     'type': 'invalid_role_structure',
                     'recipe': recipe_name,
                     'ingredient': ingredient_name,
-                    'message': 'role must be a list'
+                    'slot': slot,
+                    'message': f'{slot} must be a list'
                 })
-            else:
-                for role in roles:
-                    if role not in self.valid_roles:
-                        issues.append({
-                            'type': 'invalid_role_value',
-                            'recipe': recipe_name,
-                            'ingredient': ingredient_name,
-                            'role': role,
-                            'message': f'Invalid role: {role}',
-                            'valid_values': list(self.valid_roles)
-                        })
-                        self.stats['invalid_roles'] += 1
-                    else:
-                        self.stats['valid_roles'] += 1
+                continue
+            for role in roles:
+                if role not in valid_values:
+                    issues.append({
+                        'type': 'invalid_role_value',
+                        'recipe': recipe_name,
+                        'ingredient': ingredient_name,
+                        'slot': slot,
+                        'role': role,
+                        'message': f'Invalid {slot} value: {role}',
+                        'valid_values': sorted(valid_values),
+                    })
+                    self.stats['invalid_roles'] += 1
+                else:
+                    self.stats['valid_roles'] += 1
 
         return issues
 

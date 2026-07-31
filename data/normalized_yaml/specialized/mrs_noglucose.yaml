@@ -32,7 +32,7 @@ ingredients:
     value: '0.2'
     unit: G_PER_L
   term:
-    id: CHEBI:86469
+    id: CHEBI:63037
     label: triammonium citrate
   notes: 'CAS: 3458-72-8; MW: 243.216'
 - preferred_term: Sodium acetate
@@ -65,7 +65,7 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
   term:
-    id: CHEBI:75219
+    id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
   notes: 'CAS: 10034-96-5; MW: 169.02'
 - preferred_term: L-Cysteine

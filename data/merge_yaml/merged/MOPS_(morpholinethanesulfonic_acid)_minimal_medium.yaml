@@ -115,7 +115,7 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
-    id: CHEBI:7773015
+    id: CHEBI:63041
     label: ''
   concentration:
     value: variable

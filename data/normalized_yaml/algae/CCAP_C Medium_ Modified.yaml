@@ -61,10 +61,10 @@ ingredients:
     value: '0.75'
     unit: G_PER_L
   source: CCAP Medium MR_C_Modified.pdf
-- preferred_term: FeCl .6H O
+- preferred_term: FeCl3 x 6 H2O
   term:
-    id: CHEBI:30527
-    label: FeCl .6H O
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 0.95
@@ -76,10 +76,10 @@ ingredients:
   source: CCAP Medium MR_C_Modified.pdf
   notes: From CCAP Medium MR_C_Modified.pdf; Curated from CCAP Medium MR_C_Modified.pdf
     specification
-- preferred_term: MnCl .4H O
+- preferred_term: MnCl2 x 4 H2O
   term:
-    id: CHEBI:86457
-    label: MnCl .4H O
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -93,7 +93,7 @@ ingredients:
     specification
 - preferred_term: ZnCl .6H O
   term:
-    id: CHEBI:86469
+    id: CHEBI:49976
     label: ZnCl .6H O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
@@ -106,10 +106,10 @@ ingredients:
   source: CCAP Medium MR_C_Modified.pdf
   notes: From CCAP Medium MR_C_Modified.pdf; Curated from CCAP Medium MR_C_Modified.pdf
     specification
-- preferred_term: CoCl .6H O
+- preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
-    label: CoCl .6H O
+    label: CoCl2 x 6 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -121,10 +121,10 @@ ingredients:
   source: CCAP Medium MR_C_Modified.pdf
   notes: From CCAP Medium MR_C_Modified.pdf; Curated from CCAP Medium MR_C_Modified.pdf
     specification
-- preferred_term: Na MoO .2H O
+- preferred_term: Na2MoO4 x 2 H2O
   term:
-    id: CHEBI:75216
-    label: Na MoO .2H O
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

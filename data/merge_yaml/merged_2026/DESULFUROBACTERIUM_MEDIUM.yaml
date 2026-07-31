@@ -311,7 +311,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
   term:
-    id: CHEBI:61278
+    id: CHEBI:66870
     label: Na2S2O4
 media_term:
   preferred_term: TOGO Medium M2587

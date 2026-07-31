@@ -66,7 +66,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Undefined component'
   term:
-    id: CHEBI:3448
+    id: FOODON:03420180
     label: ''
 - preferred_term: Agar (if needed)
   concentration:

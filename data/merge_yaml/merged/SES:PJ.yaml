@@ -26,7 +26,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
+    id: CHEBI:63043
     label: KNO3
   concentration:
     value: '20'

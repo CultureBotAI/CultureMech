@@ -284,16 +284,20 @@ def solution_to_ingredient_edge(solution_id: str, ingredient: Dict) -> Optional[
                 "qualifier_value": f"{val} {unit}"
             })
 
-    # Add role if present
-    roles = ingredient.get("role")
-    if roles:
-        if isinstance(roles, list):
-            roles_str = ", ".join(roles)
+    # Combine role tokens across the three facet slots (facet vocabulary
+    # replaced the retired flat `role: IngredientRoleEnum` slot). Preserves
+    # the biolink:role qualifier surface while sourcing from the new schema.
+    roles = []
+    for slot in ("nutritional_roles", "physicochemical_roles", "cellular_metabolic_roles"):
+        slot_values = ingredient.get(slot) or []
+        if isinstance(slot_values, list):
+            roles.extend(slot_values)
         else:
-            roles_str = roles
+            roles.append(slot_values)
+    if roles:
         qualifiers.append({
             "qualifier_type_id": "biolink:role",
-            "qualifier_value": roles_str
+            "qualifier_value": ", ".join(roles)
         })
 
     return _make_association(
@@ -335,16 +339,20 @@ def medium_to_ingredient_edge(medium_id: str, ingredient: Dict) -> Optional[dict
                 "qualifier_value": f"{val} {unit}"
             })
 
-    # Add role if present
-    roles = ingredient.get("role")
-    if roles:
-        if isinstance(roles, list):
-            roles_str = ", ".join(roles)
+    # Combine role tokens across the three facet slots (facet vocabulary
+    # replaced the retired flat `role: IngredientRoleEnum` slot). Preserves
+    # the biolink:role qualifier surface while sourcing from the new schema.
+    roles = []
+    for slot in ("nutritional_roles", "physicochemical_roles", "cellular_metabolic_roles"):
+        slot_values = ingredient.get(slot) or []
+        if isinstance(slot_values, list):
+            roles.extend(slot_values)
         else:
-            roles_str = roles
+            roles.append(slot_values)
+    if roles:
         qualifiers.append({
             "qualifier_type_id": "biolink:role",
-            "qualifier_value": roles_str
+            "qualifier_value": ", ".join(roles)
         })
 
     pubs, _ = _format_evidence(ingredient.get("evidence"))

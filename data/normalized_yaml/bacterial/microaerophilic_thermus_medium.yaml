@@ -80,7 +80,7 @@ ingredients:
   notes: Copied from referenced JCM Medium 276
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '6.7549'

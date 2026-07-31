@@ -141,7 +141,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: iso-Valeric acid
   term:
-    id: CHEBI:503742
+    id: CHEBI:28484
     label: iso-Valeric acid
   concentration:
     value: '1'

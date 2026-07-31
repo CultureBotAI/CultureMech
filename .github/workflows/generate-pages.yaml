@@ -66,11 +66,18 @@ jobs:
       - name: Stage site
         run: |
           mkdir -p site
-          cp -r CultureMech/pages/* site/
+          # Site root mirrors the repo layout so existing relative links work:
+          #   /              -> redirect to app/  (root index.html)
+          #   /app/          -> landing (index.html) + browser + UMAPs + data
+          #   /pages/        -> per-record media pages (browser links ../pages/<page>)
+          #   /dashboard/    -> QC dashboard
+          cp CultureMech/index.html site/index.html
+          cp -r CultureMech/app site/app
+          cp -r CultureMech/pages site/pages
           if [ -d CultureMech/dashboard ]; then
-            mkdir -p site/dashboard
-            cp -r CultureMech/dashboard/* site/dashboard/
+            cp -r CultureMech/dashboard site/dashboard
           fi
+          touch site/.nojekyll
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

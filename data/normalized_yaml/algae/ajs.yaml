@@ -67,10 +67,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_AJS.pdf
   notes: From CCAP Medium MR_AJS.pdf; Curated from CCAP Medium MR_AJS.pdf specification
-- preferred_term: MnCl .4H O
+- preferred_term: MnCl2 x 4 H2O
   term:
-    id: CHEBI:86457
-    label: MnCl .4H O
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

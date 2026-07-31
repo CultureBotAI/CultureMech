@@ -20,8 +20,8 @@ ingredients:
     and nitrogen
   source: Oxoid CM331
   term:
-    id: FOODON:03316427
-    label: casein hydrolysate
+    id: MICRO:0000182
+    label: tryptone
   curation_metadata:
     mapping_quality: MANUAL
     confidence_score: 1.0
@@ -34,7 +34,7 @@ ingredients:
   notes: From Oxoid CM331 (Columbia Agar Base); Peptone providing nutrients
   source: Oxoid CM331
   term:
-    id: FOODON:03316428
+    id: MICRO:0000178
     label: peptone
   curation_metadata:
     mapping_quality: MANUAL

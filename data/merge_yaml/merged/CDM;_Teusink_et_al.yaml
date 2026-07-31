@@ -175,7 +175,7 @@ ingredients:
   notes: 'Cross-references: KEGG:gua'
 - preferred_term: Nicotinate
   term:
-    id: CHEBI:10716816
+    id: CHEBI:32544
     label: Nicotinate
   concentration:
     value: '0.00812'
@@ -261,7 +261,7 @@ ingredients:
     unit: MILLIMOLAR
 - preferred_term: Cysteine-HCl
   term:
-    id: CHEBI:52891
+    id: CHEBI:91247
     label: Cysteine-HCl
   concentration:
     value: '0.82477'

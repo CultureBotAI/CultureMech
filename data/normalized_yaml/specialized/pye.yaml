@@ -9,7 +9,7 @@ ingredients:
     value: '2'
     unit: G_PER_L
   term:
-    id: FOODON:03302071
+    id: MICRO:0000178
     label: Peptone
   notes: 'Mapping: curated_dict (confidence: 0.98)'
 - preferred_term: Yeast Extract

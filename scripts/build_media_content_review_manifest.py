@@ -85,7 +85,10 @@ EXPECTED_INGREDIENT_KEYS = {
     "molecular_weight",
     "supplier_catalog",
     "notes",
-    "role",
+    "nutritional_roles",
+    "physicochemical_roles",
+    "cellular_metabolic_roles",
+    "role_curie",
     "cofactors_provided",
     "evidence",
 }

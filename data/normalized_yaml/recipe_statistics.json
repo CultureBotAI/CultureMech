@@ -1,25 +1,24 @@
 {
-  "generated": "2026-03-16T05:30:18.097277+00:00",
-  "total_recipes": 10675,
+  "generated": "2026-07-29T02:11:07.870344+00:00",
+  "total_recipes": 15878,
   "by_source": {
     "KOMODO": 3637,
-    "MediaDive": 3327,
+    "MediaDive": 3325,
     "TOGO": 2917,
-    "unknown": 794
+    "unknown": 5999
   },
   "by_category": {
-    "ALGAE": 242,
-    "ARCHAEA": 63,
-    "bacterial": 10136,
-    "fungal": 119,
-    "solutions": 10,
-    "specialized": 105
+    "algae": 249,
+    "archaea": 743,
+    "bacterial": 14305,
+    "fungal": 126,
+    "specialized": 455
   },
   "merged_recipes": 0,
-  "with_hierarchy_enrichment": 8,
+  "with_hierarchy_enrichment": 1499,
   "ingredient_statistics": {
     "min": 0,
-    "max": 96,
-    "avg": 14.2
+    "max": 99,
+    "avg": 10.8
   }
 }

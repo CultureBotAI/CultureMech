@@ -20,14 +20,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Na2SiO3
   term:
-    id: CHEBI:1344098
+    id: CHEBI:60720
     label: Na2SiO3
   concentration:
     value: '0.599401'
     unit: G_PER_L
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '0.849151'

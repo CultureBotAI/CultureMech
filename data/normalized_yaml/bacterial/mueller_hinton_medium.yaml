@@ -22,8 +22,8 @@ ingredients:
     of Mueller-Hinton Agar commercial product
 - preferred_term: Acid hydrolysate of casein
   term:
-    id: FOODON:03316428
-    label: tryptone
+    id: MICRO:0001366
+    label: casein hydrolysate
   concentration:
     value: '17.5'
     unit: G_PER_L

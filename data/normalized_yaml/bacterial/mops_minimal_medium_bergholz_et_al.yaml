@@ -138,7 +138,7 @@ ingredients:
     value: '4.0'
     unit: MILLIMOLAR
   term:
-    id: CHEBI:35920
+    id: CHEBI:46760
     label: ''
 preparation_steps:
 - step_number: 1

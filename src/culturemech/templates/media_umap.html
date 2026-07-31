@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CultureMech Media UMAP Visualization</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>CultureMech Media Embedding Map</title>
+    <script src="d3.v7.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -14,21 +14,20 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
+            background: linear-gradient(135deg, #FFE0B5 0%, #CDEBC5 100%);
+            color: #1a1a1a;
             padding: 20px;
         }
 
         header {
             text-align: center;
-            color: white;
+            color: #1a1a1a;
             margin-bottom: 30px;
         }
 
         header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         header p {
@@ -40,8 +39,8 @@
             display: inline-block;
             margin-top: 15px;
             padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
+            background: rgba(255, 255, 255, 0.5);
+            color: #1a1a1a;
             text-decoration: none;
             border-radius: 6px;
             font-size: 14px;
@@ -50,7 +49,7 @@
         }
 
         .nav-link:hover {
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.8);
         }
 
         .container {
@@ -71,7 +70,7 @@
         .plot-panel h2 {
             font-size: 1.5em;
             margin-bottom: 5px;
-            color: #667eea;
+            color: #4B9E5F;
         }
 
         .plot-panel p {
@@ -139,7 +138,7 @@
 
         .search-container input:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #4B9E5F;
         }
 
         .filter-container {
@@ -160,13 +159,13 @@
         }
 
         .filter-btn:hover {
-            border-color: #667eea;
+            border-color: #4B9E5F;
         }
 
         .filter-btn.active {
-            background: #667eea;
+            background: #4B9E5F;
             color: white;
-            border-color: #667eea;
+            border-color: #4B9E5F;
         }
 
         .stats {
@@ -184,7 +183,7 @@
         }
 
         .stat-item strong {
-            color: #667eea;
+            color: #4B9E5F;
         }
 
         circle {
@@ -202,13 +201,156 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .facets {
+            max-width: 1600px;
+            margin: 0 auto 1.5rem;
+            padding: 1rem 1.25rem;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+        .facets h3 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #64748b;
+            margin: 0 0 0.75rem;
+        }
+        .facet-groups {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.75rem;
+        }
+        .facet-group {
+            min-width: 180px;
+        }
+        .facet-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+        }
+        label.facet-opt {
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+            font-size: 0.85rem;
+            padding: 0.12rem 0;
+            cursor: pointer;
+        }
+        label.facet-opt .cnt {
+            margin-left: auto;
+            color: #64748b;
+            font-variant-numeric: tabular-nums;
+            padding-left: 1rem;
+        }
+        .facet-showing {
+            margin-top: 0.75rem;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        /* Accessible data-table fallback (dataviz #10) — theme-tokenized */
+        .data-table-details {
+            max-width: 1600px;
+            margin: 0 auto 1.5rem;
+            padding: 1rem 1.25rem;
+            background: var(--card);
+            color: var(--ink);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+        }
+        .data-table-details summary {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--accent);
+        }
+        .data-table-wrap {
+            margin-top: 1rem;
+            max-height: 480px;
+            overflow: auto;
+        }
+        .data-table-details table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 0.82rem;
+        }
+        .data-table-details th,
+        .data-table-details td {
+            border: 1px solid var(--line);
+            padding: 0.35rem 0.5rem;
+            text-align: left;
+            white-space: nowrap;
+        }
+        .data-table-details thead th {
+            position: sticky;
+            top: 0;
+            background: var(--card);
+        }
+
+        /* Token layer — light values match the hard-coded look above; consumed
+           only by the injected theme-toggle button, so light appearance is unchanged. */
+        :root{--card:#ffffff;--ink:#1a1a1a;--line:#e2e8f0;--accent:#4B9E5F;}
+
+        /* ---- Dark theme (OS default; superseded by the toggle) ---- */
+        @media (prefers-color-scheme: dark){
+            :root:not([data-theme="light"]){--card:#1c2118;--ink:#eaf0e6;--line:#2e3a2c;--accent:#6cc47f;}
+            :root:not([data-theme="light"]) body{background:linear-gradient(135deg,#24331d 0%,#12160f 100%);color:#eaf0e6}
+            :root:not([data-theme="light"]) header{color:#eaf0e6}
+            :root:not([data-theme="light"]) .nav-link{background:rgba(255,255,255,.06);color:#eaf0e6}
+            :root:not([data-theme="light"]) .nav-link:hover{background:rgba(255,255,255,.12)}
+            :root:not([data-theme="light"]) .plot-panel{background:#1c2118}
+            :root:not([data-theme="light"]) .plot-panel h2{color:#6cc47f}
+            :root:not([data-theme="light"]) .plot-panel p{color:#9db09a}
+            :root:not([data-theme="light"]) svg{background:#12160f}
+            :root:not([data-theme="light"]) .search-container input{background:#12160f;color:#eaf0e6;border-color:#2e3a2c}
+            :root:not([data-theme="light"]) .search-container input:focus{border-color:#6cc47f}
+            :root:not([data-theme="light"]) .filter-btn{background:#1c2118;color:#eaf0e6;border-color:#2e3a2c}
+            :root:not([data-theme="light"]) .filter-btn:hover{border-color:#6cc47f}
+            :root:not([data-theme="light"]) .filter-btn.active{background:#6cc47f;color:#12160f;border-color:#6cc47f}
+            :root:not([data-theme="light"]) .stats{color:#9db09a}
+            :root:not([data-theme="light"]) .stat-item strong{color:#6cc47f}
+            :root:not([data-theme="light"]) circle:hover{stroke:#eaf0e6}
+            :root:not([data-theme="light"]) .facets{background:#1c2118;border-color:#2e3a2c}
+            :root:not([data-theme="light"]) .facets h3{color:#9db09a}
+            :root:not([data-theme="light"]) label.facet-opt .cnt{color:#9db09a}
+            :root:not([data-theme="light"]) .facet-showing{color:#9db09a}
+        }
+        :root[data-theme="dark"]{--card:#1c2118;--ink:#eaf0e6;--line:#2e3a2c;--accent:#6cc47f;}
+        :root[data-theme="dark"] body{background:linear-gradient(135deg,#24331d 0%,#12160f 100%);color:#eaf0e6}
+        :root[data-theme="dark"] header{color:#eaf0e6}
+        :root[data-theme="dark"] .nav-link{background:rgba(255,255,255,.06);color:#eaf0e6}
+        :root[data-theme="dark"] .nav-link:hover{background:rgba(255,255,255,.12)}
+        :root[data-theme="dark"] .plot-panel{background:#1c2118}
+        :root[data-theme="dark"] .plot-panel h2{color:#6cc47f}
+        :root[data-theme="dark"] .plot-panel p{color:#9db09a}
+        :root[data-theme="dark"] svg{background:#12160f}
+        :root[data-theme="dark"] .search-container input{background:#12160f;color:#eaf0e6;border-color:#2e3a2c}
+        :root[data-theme="dark"] .search-container input:focus{border-color:#6cc47f}
+        :root[data-theme="dark"] .filter-btn{background:#1c2118;color:#eaf0e6;border-color:#2e3a2c}
+        :root[data-theme="dark"] .filter-btn:hover{border-color:#6cc47f}
+        :root[data-theme="dark"] .filter-btn.active{background:#6cc47f;color:#12160f;border-color:#6cc47f}
+        :root[data-theme="dark"] .stats{color:#9db09a}
+        :root[data-theme="dark"] .stat-item strong{color:#6cc47f}
+        :root[data-theme="dark"] circle:hover{stroke:#eaf0e6}
+        :root[data-theme="dark"] .facets{background:#1c2118;border-color:#2e3a2c}
+        :root[data-theme="dark"] .facets h3{color:#9db09a}
+        :root[data-theme="dark"] label.facet-opt .cnt{color:#9db09a}
+        :root[data-theme="dark"] .facet-showing{color:#9db09a}
+
+        @media (prefers-reduced-motion: reduce){
+            *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
+                transition-duration:.01ms!important;scroll-behavior:auto!important;}
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>🧫 CultureMech Media UMAP Visualization</h1>
+        <h1>CultureMech Media Embedding Map</h1>
         <p>Explore {{ unique_count }} culture media recipes through semantic similarity</p>
-        <a href="../index.html" class="nav-link">← Back to Media Browser</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="browser.html" class="nav-link">← Back to Media Browser</a>
     </header>
 
     <div class="container">
@@ -219,11 +361,11 @@
 
             <div class="stats">
                 <div class="stat-item">
-                    <span>📊 Total:</span>
+                    <span>Total:</span>
                     <strong id="derived-total">{{ derived_count }}</strong>
                 </div>
                 <div class="stat-item">
-                    <span>🔍 Visible:</span>
+                    <span>Visible:</span>
                     <strong id="derived-visible">{{ derived_count }}</strong>
                 </div>
             </div>
@@ -250,11 +392,11 @@
 
             <div class="stats">
                 <div class="stat-item">
-                    <span>📊 Total:</span>
+                    <span>Total:</span>
                     <strong id="direct-total">{{ direct_count }}</strong>
                 </div>
                 <div class="stat-item">
-                    <span>🔍 Visible:</span>
+                    <span>Visible:</span>
                     <strong id="direct-visible">{{ direct_count }}</strong>
                 </div>
             </div>
@@ -274,6 +416,25 @@
             <div class="legend" id="legend-direct"></div>
         </div>
     </div>
+
+    <!-- Category facet panel: filters points in BOTH plots by category -->
+    <div class="facets" id="facet-panel"></div>
+
+    <!-- Accessible, keyboard-reachable data-table fallback (dataviz #10) -->
+    <details class="data-table-details">
+        <summary>View data as table</summary>
+        <div class="data-table-wrap">
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Name</th><th>Entity type</th><th>Category</th><th>Type</th>
+                        <th>State</th><th>Ingredients</th><th>Organisms</th><th>Source</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </details>
 
     <div class="tooltip" id="tooltip"></div>
 
@@ -347,7 +508,7 @@
                 .join("circle")
                 .attr("cx", d => xScale(d.x))
                 .attr("cy", d => yScale(d.y))
-                .attr("r", 4)
+                .attr("r", 5)
                 .attr("fill", d => entityTypeColors[d.entity_type] || categoryColors[d.category] || categoryColors.unknown)
                 .attr("opacity", 0.5)
                 .attr("data-name", d => d.name.toLowerCase())
@@ -377,21 +538,6 @@
                     window.location.href = d.url;
                 });
 
-            // Search functionality
-            d3.select(`#${searchId}`).on("input", function() {
-                const searchTerm = this.value.toLowerCase();
-                let visibleCount = 0;
-
-                circles.each(function(d) {
-                    const circle = d3.select(this);
-                    const isVisible = d.name.toLowerCase().includes(searchTerm);
-                    circle.style("opacity", isVisible ? 0.5 : 0.1);
-                    if (isVisible) visibleCount++;
-                });
-
-                d3.select(`#${visibleId}`).text(visibleCount);
-            });
-
             // Update visible count
             d3.select(`#${visibleId}`).text(data.length);
 
@@ -414,8 +560,8 @@
                         .text(`${entityType} (${count})`);
                 });
 
-            // Store circles and visible count ID for filter use
-            return { circles, visibleId };
+            // Store circles + refs for filter/facet use
+            return { circles, visibleId, data, searchId, entityFilter: "all" };
         }
 
         // Render both plots
@@ -429,7 +575,105 @@
             directComponents = renderUMAP(directData, "umap-direct", "search-direct", "direct-visible", "legend-direct");
         }
 
-        // Add filter button functionality
+        // --- Category facet: filters points in BOTH plots by `category` ---
+        // Categories start all-checked. Unchecking a category hides those points
+        // (display:none) in both the derived and direct plots.
+        const activeCategories = new Set();
+        function facetPass(d) { return activeCategories.has(d.category || "unknown"); }
+
+        // Compose category facet + entity_type filter + search for ONE panel.
+        function applyPanelFilters(components) {
+            if (!components) return;
+            const { circles, visibleId, searchId, entityFilter } = components;
+            const searchEl = document.getElementById(searchId);
+            const searchTerm = (searchEl ? searchEl.value : "").toLowerCase();
+            let visibleCount = 0;
+
+            circles.each(function(d) {
+                const circle = d3.select(this);
+
+                // 1) Category facet decides membership (hide entirely if unchecked).
+                if (!facetPass(d)) {
+                    circle.style("display", "none");
+                    return;
+                }
+                circle.style("display", null);
+
+                // 2) Entity-type filter (All / Media Only / Solutions Only).
+                const passesEntity = entityFilter === "all" || d.entity_type === entityFilter;
+                // 3) Search term.
+                const passesSearch = !searchTerm || d.name.toLowerCase().includes(searchTerm);
+
+                if (passesEntity) {
+                    circle.style("fill", entityTypeColors[d.entity_type] || categoryColors[d.category] || categoryColors.unknown);
+                    circle.style("pointer-events", "all");
+                    circle.style("opacity", passesSearch ? 0.5 : 0.1);
+                    if (passesSearch) visibleCount++;
+                } else {
+                    // Entity-filtered-out points stay visible but greyed (existing behavior).
+                    circle.style("fill", "#e0e0e0");
+                    circle.style("pointer-events", "none");
+                    circle.style("opacity", 0.3);
+                }
+            });
+
+            d3.select(`#${visibleId}`).text(visibleCount);
+        }
+
+        function applyAllFilters() {
+            applyPanelFilters(derivedComponents);
+            applyPanelFilters(directComponents);
+            const cnt = document.getElementById("facet-count");
+            if (cnt) {
+                const total = [...derivedData, ...directData];
+                cnt.textContent = total.filter(facetPass).length.toLocaleString();
+            }
+        }
+
+        // Build the shared category facet panel below both plots.
+        function buildFacets() {
+            const panel = document.getElementById("facet-panel");
+            if (!panel) return;
+            const allData = [...derivedData, ...directData];
+            const counts = {};
+            allData.forEach(d => {
+                const v = d.category || "unknown";
+                counts[v] = (counts[v] || 0) + 1;
+                activeCategories.add(v);  // all checked initially
+            });
+
+            panel.innerHTML = "<h3>Filter points</h3>";
+            const groups = document.createElement("div");
+            groups.className = "facet-groups";
+            const grp = document.createElement("div");
+            grp.className = "facet-group";
+            grp.innerHTML = '<div class="facet-title">Category</div>';
+            Object.keys(counts).sort().forEach(v => {
+                const lab = document.createElement("label");
+                lab.className = "facet-opt";
+                lab.innerHTML = `<input type="checkbox" checked><span>${v}</span><span class="cnt">${counts[v].toLocaleString()}</span>`;
+                lab.querySelector("input").addEventListener("change", (e) => {
+                    if (e.target.checked) activeCategories.add(v); else activeCategories.delete(v);
+                    applyAllFilters();
+                });
+                grp.appendChild(lab);
+            });
+            groups.appendChild(grp);
+            panel.appendChild(groups);
+
+            const showing = document.createElement("div");
+            showing.className = "facet-showing";
+            showing.innerHTML = `Showing <b id="facet-count">${allData.length.toLocaleString()}</b> of ${allData.length.toLocaleString()} points`;
+            panel.appendChild(showing);
+        }
+
+        buildFacets();
+
+        // Search: recompose filters for the affected panel.
+        d3.select("#search-derived").on("input", () => applyPanelFilters(derivedComponents));
+        d3.select("#search-direct").on("input", () => applyPanelFilters(directComponents));
+
+        // Entity-type filter buttons: update panel state then recompose.
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 const filter = this.getAttribute('data-filter');
@@ -439,34 +683,31 @@
                 this.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
 
-                // Get the relevant components
                 const components = target === 'derived' ? derivedComponents : directComponents;
                 if (!components) return;
-
-                const { circles, visibleId } = components;
-                let visibleCount = 0;
-
-                // Apply filter
-                circles.each(function(d) {
-                    const circle = d3.select(this);
-                    const isVisible = filter === 'all' || d.entity_type === filter;
-
-                    if (isVisible) {
-                        circle.style("opacity", 0.5);
-                        circle.style("fill", entityTypeColors[d.entity_type] || categoryColors[d.category] || categoryColors.unknown);
-                        circle.style("pointer-events", "all");  // Enable tooltips
-                        visibleCount++;
-                    } else {
-                        circle.style("opacity", 0.3);  // Light gray, visible
-                        circle.style("fill", "#e0e0e0");  // Light gray color
-                        circle.style("pointer-events", "none");  // Disable tooltips
-                    }
-                });
-
-                // Update visible count
-                d3.select(`#${visibleId}`).text(visibleCount);
+                components.entityFilter = filter;
+                applyPanelFilters(components);
             });
         });
+
+        // Initial paint (applies all-checked facet state).
+        applyAllFilters();
+
+        // ---- Data-table fallback: same data the plot renders (dataviz #10) ----
+        (function buildDataTable() {
+            const tbody = document.querySelector("#data-table tbody");
+            if (!tbody) return;
+            const esc = s => String(s == null ? "" : s)
+                .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            const rows = [...derivedData, ...directData];
+            tbody.innerHTML = rows.map(d =>
+                `<tr><td>${esc(d.name)}</td><td>${esc(d.entity_type)}</td>` +
+                `<td>${esc(d.category)}</td><td>${esc(d.medium_type)}</td>` +
+                `<td>${esc(d.physical_state)}</td><td>${esc(d.num_ingredients)}</td>` +
+                `<td>${esc(d.num_organisms)}</td><td>${esc(d.source_database)}</td></tr>`
+            ).join("");
+        })();
     </script>
+    <script src="theme-toggle.js"></script>
 </body>
 </html>

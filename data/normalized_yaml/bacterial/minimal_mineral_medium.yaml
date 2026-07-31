@@ -102,7 +102,7 @@ ingredients:
   term:
     id: CHEBI:49553
     label: copper(II) chloride
-- preferred_term: ZnCl
+- preferred_term: ZnCl2
   concentration:
     value: '0.25'
     unit: G_PER_L

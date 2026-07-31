@@ -108,7 +108,7 @@ ingredients:
   notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: Tryptone
   term:
-    id: FOODON:03316428
+    id: MICRO:0000182
     label: tryptone
   concentration:
     value: '10.0'
@@ -127,7 +127,7 @@ ingredients:
     synonym_type: EXACT
 - preferred_term: Yeast extract
   term:
-    id: FOODON:00002960
+    id: FOODON:03315426
     label: yeast extract
   concentration:
     value: '5.0'

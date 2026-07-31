@@ -69,7 +69,7 @@ ingredients:
     tissue; Constituent of Brain Heart Infusion commercial product
 - preferred_term: Proteose peptone
   term:
-    id: FOODON:03302071
+    id: MICRO:0000180
     label: proteose peptone
   concentration:
     value: '10.0'
@@ -163,7 +163,7 @@ ingredients:
     label: Na-thioglycolate
 - preferred_term: L-Cysteine HCl
   term:
-    id: CHEBI:52891
+    id: CHEBI:91247
     label: L-Cysteine HCl
   concentration:
     value: '1'
@@ -247,7 +247,7 @@ ingredients:
     label: Isobutyric acid
 - preferred_term: Tryptone
   term:
-    id: FOODON:03316428
+    id: MICRO:0000182
     label: tryptone
   concentration:
     value: '10.0'
@@ -266,7 +266,7 @@ ingredients:
     synonym_type: EXACT
 - preferred_term: Yeast extract
   term:
-    id: FOODON:00002960
+    id: FOODON:03315426
     label: yeast extract
   concentration:
     value: '5.0'

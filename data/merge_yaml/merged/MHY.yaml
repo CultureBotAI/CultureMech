@@ -14,7 +14,7 @@ notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MHY.pd
 ingredients:
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
+    id: CHEBI:63043
     label: KNO3
   concentration:
     value: '0.25'

@@ -132,7 +132,7 @@ ingredients:
     label: Na2WO4 x 2 H2O
 - preferred_term: Na2SeO4
   term:
-    id: CHEBI:59160
+    id: CHEBI:77775
     label: Na2SeO4
   concentration:
     value: '4.94071e-05'
@@ -274,7 +274,7 @@ ingredients:
 - &id001
   preferred_term: Tryptone
   term:
-    id: FOODON:03316428
+    id: MICRO:0000182
     label: tryptone
   concentration:
     value: '10.0'
@@ -294,7 +294,7 @@ ingredients:
 - &id002
   preferred_term: Yeast extract
   term:
-    id: FOODON:00002960
+    id: FOODON:03315426
     label: yeast extract
   concentration:
     value: '5.0'

@@ -68,10 +68,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_E27.pdf
   notes: From CCAP Medium MR_E27.pdf; Curated from CCAP Medium MR_E27.pdf specification
-- preferred_term: K HPO
+- preferred_term: K2HPO4
   term:
-    id: CHEBI:32030
-    label: K HPO
+    id: CHEBI:131527
+    label: K2HPO4
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

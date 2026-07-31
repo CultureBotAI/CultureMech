@@ -23,21 +23,21 @@
             "title": "CategoryEnum",
             "type": "string"
         },
-        "CellularRoleEnum": {
-            "description": "Functional role of organism in microbial community",
+        "CellularMetabolicRoleEnum": {
+            "description": "Role of the ingredient inside or on the cultured microbe(s) \u2014 the compound's metabolic fate or biochemical function at the cell level. One of three orthogonal role facets (with NutritionalRoleEnum and PhysicochemicalRoleEnum). Values in this facet are often organism-conditional (e.g. ELECTRON_DONOR applies only for organisms that oxidize the compound for energy; methanol is an electron donor for methylotrophs but only a carbon source for others).",
             "enum": [
-                "PRIMARY_DEGRADER",
-                "REDUCTIVE_DEGRADER",
-                "OXIDATIVE_DEGRADER",
-                "BIOTRANSFORMER",
-                "SYNERGIST",
-                "BRIDGE_ORGANISM",
-                "ELECTRON_SHUTTLE",
-                "DETOXIFIER",
-                "COMMENSAL",
-                "COMPETITOR"
+                "SUBSTRATE",
+                "ELECTRON_DONOR",
+                "ELECTRON_ACCEPTOR",
+                "COFACTOR",
+                "PROSTHETIC_GROUP_PRECURSOR",
+                "MEMBRANE_COMPONENT",
+                "OSMOPROTECTANT",
+                "INDUCER",
+                "INHIBITOR",
+                "QUENCHER"
             ],
-            "title": "CellularRoleEnum",
+            "title": "CellularMetabolicRoleEnum",
             "type": "string"
         },
         "ChebiTerm": {
@@ -76,7 +76,7 @@
         },
         "ChemicalEntityTerm": {
             "additionalProperties": false,
-            "description": "A term identifying a chemical or biological ingredient. Primarily CHEBI, with FOODON / UBERON / ENVO accepted for ingredients (food products, anatomical tissues, environmental samples) where no CHEBI equivalent exists upstream. `mediadive.compound:*` is also accepted as the upstream MediaDive grounding kept alongside CHEBI mappings on solution-composition entries.",
+            "description": "A term identifying a chemical or biological ingredient. Primarily CHEBI, with FOODON / UBERON / ENVO accepted for ingredients (food products, anatomical tissues, environmental samples) where no CHEBI equivalent exists upstream. `mediadive.compound:*` is also accepted as the upstream MediaDive grounding kept alongside CHEBI mappings on solution-composition entries. MICRO (Ontology of Prokaryotic Phenotypic and Metabolic Characters) is accepted for enzymatic protein digests (tryptone, peptone, proteose peptone, soy peptone, casein hydrolysate) which ChEBI cannot represent because CHEBI:59999 \"chemical substance\" requires constant composition.",
             "properties": {
                 "confidence": {
                     "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
@@ -87,7 +87,7 @@
                 },
                 "id": {
                     "description": "Ontology identifier (CURIE)",
-                    "pattern": "^(CHEBI|FOODON|UBERON|ENVO|mediadive\\.compound):\\w+$",
+                    "pattern": "^(CHEBI|FOODON|MICRO|UBERON|ENVO|mediadive\\.compound):\\w+$",
                     "type": "string"
                 },
                 "label": {
@@ -269,6 +269,23 @@
             "title": "CofactorRequirement",
             "type": "object"
         },
+        "CommunityOrganismRoleEnum": {
+            "description": "Role an organism plays in a microbial community (formerly `CellularRoleEnum`; renamed 2026-07-19 for consistency with the MIM #120 rename and to disambiguate from a forthcoming `CellularMetabolicRoleEnum` on ingredient records \u2014 these values describe organisms, not ingredients).",
+            "enum": [
+                "PRIMARY_DEGRADER",
+                "REDUCTIVE_DEGRADER",
+                "OXIDATIVE_DEGRADER",
+                "BIOTRANSFORMER",
+                "SYNERGIST",
+                "BRIDGE_ORGANISM",
+                "ELECTRON_SHUTTLE",
+                "DETOXIFIER",
+                "COMMENSAL",
+                "COMPETITOR"
+            ],
+            "title": "CommunityOrganismRoleEnum",
+            "type": "string"
+        },
         "ConcentrationUnitEnum": {
             "description": "Units for concentration",
             "enum": [
@@ -398,50 +415,287 @@
         },
         "Dataset": {
             "additionalProperties": false,
-            "description": "Omics dataset generated using this medium",
+            "description": "A reference to a publicly available dataset (omics, sequence, phenotype) relevant to this record. A lightweight repository-accession reference, not a full Datasheets-for-Datasets / DCAT description.",
             "properties": {
-                "dataset_id": {
-                    "description": "Dataset identifier (GEO, SRA, etc.)",
-                    "type": "string"
+                "accession": {
+                    "description": "Repository accession or CURIE, e.g. `geo:GSE36701`, `NCBI_SRA:SRP...`. (CultureMech `dataset_id` migrates here.)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "conditions": {
+                    "description": "Experimental conditions / groups represented.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
                 },
                 "dataset_type": {
-                    "$ref": "#/$defs/DatasetTypeEnum",
-                    "description": "Type of omics data (genomics, transcriptomics, metabolomics, etc.)"
+                    "$ref": "#/$defs/DatasetTypeEnum"
                 },
                 "description": {
-                    "description": "Brief description of the dataset",
+                    "description": "Human-readable description; may add nuance beyond the title.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Supporting citations.",
+                    "items": {
+                        "$ref": "#/$defs/SupportingReference"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "findings": {
+                    "description": "Brief note on what the dataset shows relevant to this record.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "organism": {
+                    "description": "Source organism / community label (free text or CURIE).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "platform": {
+                    "description": "Sequencing/assay platform.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "publication": {
+                    "description": "Associated publication reference (e.g. PMID:...).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "repository": {
+                    "$ref": "#/$defs/DatasetRepositoryEnum"
+                },
+                "sample_count": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                },
+                "sample_types": {
+                    "description": "Sample/material types represented (free text or term labels).",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "title": {
+                    "description": "Short dataset title. (CommunityMech `name` migrates here.)",
                     "type": [
                         "string",
                         "null"
                     ]
                 },
                 "url": {
-                    "description": "Direct link to dataset",
+                    "description": "Direct URL to the dataset landing page, if no CURIE applies.",
                     "type": [
                         "string",
                         "null"
                     ]
                 }
             },
-            "required": [
-                "dataset_id"
-            ],
             "title": "Dataset",
             "type": "object"
         },
+        "DatasetRepositoryEnum": {
+            "description": "Public repository hosting the dataset. Superset of CommunityMech's enum (all values preserved) plus common additions; CultureMech datasets have no repository field today and migrate with repository unset / OTHER.",
+            "enum": [
+                "NCBI_SRA",
+                "NCBI_BIOPROJECT",
+                "NCBI_GEO",
+                "NCBI_ASSEMBLY",
+                "ENA",
+                "ARRAYEXPRESS",
+                "MGNIFY",
+                "JGI_GOLD",
+                "JGI_IMG",
+                "NMDC",
+                "METABOLOMICS_WORKBENCH",
+                "METABOLIGHTS",
+                "MASSIVE",
+                "GNPS",
+                "PRIDE",
+                "DBGAP",
+                "GTEX",
+                "FIGSHARE",
+                "ZENODO",
+                "BIOMODELS",
+                "KBASE",
+                "OTHER"
+            ],
+            "title": "DatasetRepositoryEnum",
+            "type": "string"
+        },
         "DatasetTypeEnum": {
-            "description": "Type of omics dataset linked by `Dataset.dataset_type`.",
+            "description": "Type of dataset or data resource. Canonical UNION of CultureMech's and CommunityMech's enums plus microbial additions. Migration map (old \u2192 this): CultureMech values carry over unchanged; CommunityMech GENOME\u2192GENOMICS, METAGENOME\u2192METAGENOMICS, METATRANSCRIPTOME\u2192METATRANSCRIPTOMICS, METAPROTEOME\u2192METAPROTEOMICS (AMPLICON_16S / AMPLICON_ITS / METABOLOMICS / PHENOTYPE / MULTI_OMICS / OTHER are unchanged).",
             "enum": [
                 "GENOMICS",
+                "METAGENOMICS",
+                "AMPLICON_16S",
+                "AMPLICON_ITS",
+                "AMPLICON_OTHER",
                 "TRANSCRIPTOMICS",
+                "METATRANSCRIPTOMICS",
                 "PROTEOMICS",
+                "METAPROTEOMICS",
                 "METABOLOMICS",
                 "FLUXOMICS",
                 "PHENOMICS",
+                "PHENOTYPE",
                 "MULTI_OMICS",
                 "OTHER"
             ],
             "title": "DatasetTypeEnum",
+            "type": "string"
+        },
+        "Discussion": {
+            "additionalProperties": false,
+            "description": "A thread-like record of an open question, controversy, curation todo, emerging hypothesis, knowledge gap, or interpretation debate attached to a record or one of its sub-objects. Captures the discourse / knowledge-gap layer of curation. External thread links (GitHub issues, forum posts) are cited via the `evidence` block, not a separate slot.",
+            "properties": {
+                "attaches_to": {
+                    "description": "Hash-anchor pointers into the sections/nodes this discussion concerns: `<section>#<anchor>`, e.g. `causal_graphs#edge_x`, `composition#ingredient_y`, `ecological_interactions#z`, `ontology_mapping#m`. Free-form so each Mech can anchor into its own record structure.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "discussion_id": {
+                    "description": "Stable local identifier for this discussion thread.",
+                    "type": "string"
+                },
+                "evidence": {
+                    "description": "Supporting / contextual citations.",
+                    "items": {
+                        "$ref": "#/$defs/SupportingReference"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "kind": {
+                    "$ref": "#/$defs/DiscussionKindEnum"
+                },
+                "notes": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "posed_by": {
+                    "description": "Curator or agent that raised the discussion.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "posed_date": {
+                    "format": "date",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "prompt": {
+                    "description": "The open question, gap statement, or todo, in one or two sentences.",
+                    "type": "string"
+                },
+                "proposed_experiments": {
+                    "description": "Optional sketches of how the gap could be resolved.",
+                    "items": {
+                        "$ref": "#/$defs/ProposedExperiment"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "rationale": {
+                    "description": "Why this matters / what resolving it would change.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "resolution_note": {
+                    "description": "How it was resolved (when status is RESOLVED).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "resolved_date": {
+                    "format": "date",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "status": {
+                    "$ref": "#/$defs/DiscussionStatusEnum"
+                }
+            },
+            "required": [
+                "discussion_id",
+                "prompt"
+            ],
+            "title": "Discussion",
+            "type": "object"
+        },
+        "DiscussionKindEnum": {
+            "description": "Kind of unresolved / in-progress item captured by a Discussion. Knowledge gaps are represented as a discussion kind so they reuse the shared pointer, evidence, and lifecycle machinery, while optional proposed experiments capture how a gap could be resolved.",
+            "enum": [
+                "OPEN_QUESTION",
+                "KNOWLEDGE_GAP",
+                "CONTROVERSY",
+                "CURATION_TODO",
+                "EMERGING_HYPOTHESIS",
+                "INTERPRETATION",
+                "HUMAN_MODEL_MISMATCH"
+            ],
+            "title": "DiscussionKindEnum",
+            "type": "string"
+        },
+        "DiscussionStatusEnum": {
+            "description": "Lifecycle status for a Discussion.",
+            "enum": [
+                "OPEN",
+                "UNDER_DISCUSSION",
+                "RESOLVED",
+                "ARCHIVED"
+            ],
+            "title": "DiscussionStatusEnum",
             "type": "string"
         },
         "EnvironmentTerm": {
@@ -785,6 +1039,16 @@
             "additionalProperties": false,
             "description": "Chemical or biological ingredient in a medium",
             "properties": {
+                "cellular_metabolic_roles": {
+                    "description": "Role of this ingredient inside/on the cultured microbe (facet 3 of 3) \u2014 SUBSTRATE, ELECTRON_DONOR, COFACTOR, INHIBITOR, etc. Often organism-conditional (e.g., methanol \u2192 ELECTRON_DONOR only for methylotrophs). Vocabulary imported from MIM (`mim_roles.CellularMetabolicRoleEnum`).",
+                    "items": {
+                        "$ref": "#/$defs/CellularMetabolicRoleEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "chebi_term": {
                     "anyOf": [
                         {
@@ -906,6 +1170,16 @@
                         "null"
                     ]
                 },
+                "nutritional_roles": {
+                    "description": "What element or macronutrient this ingredient supplies to the medium (facet 1 of 3). Multiple values allowed \u2014 L-cysteine \u2192 [AMINO_ACID_SOURCE, SULFUR_SOURCE]. Vocabulary imported from MIM (`mim_roles.NutritionalRoleEnum`); MIM owns the ingredient identity layer + evidence-bearing assignment surface, this slot carries CultureMech recipe-scoped assertions or overrides.",
+                    "items": {
+                        "$ref": "#/$defs/NutritionalRoleEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "parent_ingredient": {
                     "anyOf": [
                         {
@@ -917,14 +1191,24 @@
                     ],
                     "description": "Reference to parent chemical entity from MediaIngredientMech"
                 },
+                "physicochemical_roles": {
+                    "description": "Chemical or physical function this ingredient performs in the medium (facet 2 of 3), independent of what element it supplies \u2014 BUFFER, CHELATOR, REDUCING_AGENT, PH_INDICATOR, etc. Vocabulary imported from MIM (`mim_roles.PhysicochemicalRoleEnum`).",
+                    "items": {
+                        "$ref": "#/$defs/PhysicochemicalRoleEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "preferred_term": {
                     "description": "Human-readable ingredient name (e.g., \"Glucose\", \"Yeast Extract\")",
                     "type": "string"
                 },
-                "role": {
-                    "description": "Functional role(s) in the medium",
+                "role_curie": {
+                    "description": "Escape-hatch CURIE(s) for out-of-vocabulary role terms not covered by the three facet enums. Should resolve within a recognized role namespace (CHEBI role subtree under CHEBI:50906, METPO, ENVO, GO, PATO, NCIT). Use sparingly \u2014 prefer a facet enum value where one fits.",
                     "items": {
-                        "$ref": "#/$defs/IngredientRoleEnum"
+                        "type": "string"
                     },
                     "type": [
                         "array",
@@ -1003,27 +1287,6 @@
             ],
             "title": "IngredientReference",
             "type": "object"
-        },
-        "IngredientRoleEnum": {
-            "description": "Functional role of an ingredient in growth medium",
-            "enum": [
-                "CARBON_SOURCE",
-                "NITROGEN_SOURCE",
-                "MINERAL",
-                "TRACE_ELEMENT",
-                "BUFFER",
-                "VITAMIN_SOURCE",
-                "SALT",
-                "PROTEIN_SOURCE",
-                "AMINO_ACID_SOURCE",
-                "SOLIDIFYING_AGENT",
-                "ENERGY_SOURCE",
-                "ELECTRON_ACCEPTOR",
-                "ELECTRON_DONOR",
-                "COFACTOR_PROVIDER"
-            ],
-            "title": "IngredientRoleEnum",
-            "type": "string"
         },
         "IngredientSynonym": {
             "additionalProperties": false,
@@ -1225,7 +1488,7 @@
                     ]
                 },
                 "datasets": {
-                    "description": "Omics datasets generated using this medium",
+                    "description": "Public datasets (omics/sequence/phenotype) generated using this medium",
                     "items": {
                         "$ref": "#/$defs/Dataset"
                     },
@@ -1238,6 +1501,16 @@
                     "description": "Overview of the medium and its purpose",
                     "type": [
                         "string",
+                        "null"
+                    ]
+                },
+                "discussions": {
+                    "description": "Open questions, knowledge gaps, controversies, and curation todos attached to this medium (shared Discussion supertype; anchor `attaches_to` into e.g. `composition#<ingredient>` / `conditions#<x>`).",
+                    "items": {
+                        "$ref": "#/$defs/Discussion"
+                    },
+                    "type": [
+                        "array",
                         "null"
                     ]
                 },
@@ -1885,8 +2158,8 @@
                     ]
                 },
                 "role": {
-                    "$ref": "#/$defs/NutrientRoleEnum",
-                    "description": "Functional role the override fills in the experiment."
+                    "$ref": "#/$defs/NutritionalRoleEnum",
+                    "description": "Functional role the override supplies to the experiment (e.g. CARBON_SOURCE, NITROGEN_SOURCE, SULFUR_SOURCE, PHOSPHATE_SOURCE). Retargeted from the retired NutrientRoleEnum to the MIM-imported NutritionalRoleEnum (which is broader \u2014 12 values covering all macronutrient / vitamin / cofactor supply categories). Values that used to fit under NutrientRoleEnum but not NutritionalRoleEnum (ELECTRON_DONOR, ELECTRON_ACCEPTOR) belong on the cellular-metabolic facet of the *ingredient* the override supplies, not on the override itself."
                 },
                 "source": {
                     "description": "e.g. \"succinate\", \"L-phenylalanine\", \"acetate\".",
@@ -1900,19 +2173,23 @@
             "title": "NutrientOverride",
             "type": "object"
         },
-        "NutrientRoleEnum": {
-            "description": "Functional role a NutrientOverride source fills in the experiment (carbon, nitrogen, electron donor/acceptor, etc.).",
+        "NutritionalRoleEnum": {
+            "description": "What element or macronutrient an ingredient supplies to the medium. One of three orthogonal role facets (with PhysicochemicalRoleEnum and CellularMetabolicRoleEnum). A single ingredient may carry multiple nutritional roles (e.g. L-cysteine supplies both amino-acid and sulfur).",
             "enum": [
                 "CARBON_SOURCE",
                 "NITROGEN_SOURCE",
                 "SULFUR_SOURCE",
                 "PHOSPHATE_SOURCE",
-                "ELECTRON_DONOR",
-                "ELECTRON_ACCEPTOR",
-                "LIGHT_SOURCE",
-                "OTHER"
+                "IRON_SOURCE",
+                "TRACE_ELEMENT",
+                "VITAMIN_SOURCE",
+                "AMINO_ACID_SOURCE",
+                "PROTEIN_SOURCE",
+                "COFACTOR_PROVIDER",
+                "ENERGY_SOURCE",
+                "LIGHT_SOURCE"
             ],
-            "title": "NutrientRoleEnum",
+            "title": "NutritionalRoleEnum",
             "type": "string"
         },
         "OrganismCultureTypeEnum": {
@@ -1949,9 +2226,9 @@
                     ]
                 },
                 "community_role": {
-                    "description": "Functional role in microbial community",
+                    "description": "Functional role in microbial community (e.g., PRIMARY_DEGRADER, SYNERGIST, COMMENSAL, COMPETITOR).",
                     "items": {
-                        "$ref": "#/$defs/CellularRoleEnum"
+                        "$ref": "#/$defs/CommunityOrganismRoleEnum"
                     },
                     "type": [
                         "array",
@@ -2219,6 +2496,25 @@
             "title": "PhysicalStateEnum",
             "type": "string"
         },
+        "PhysicochemicalRoleEnum": {
+            "description": "Chemical or physical function an ingredient performs in the medium, independent of what element it supplies. One of three orthogonal role facets (with NutritionalRoleEnum and CellularMetabolicRoleEnum).",
+            "enum": [
+                "BUFFER",
+                "SOLIDIFYING_AGENT",
+                "CHELATOR",
+                "SURFACTANT",
+                "REDUCING_AGENT",
+                "OXIDIZING_AGENT",
+                "PH_INDICATOR",
+                "REDOX_INDICATOR",
+                "SELECTIVE_AGENT",
+                "ANTIFOAM",
+                "OSMOTIC_AGENT",
+                "PRECIPITATION_INHIBITOR"
+            ],
+            "title": "PhysicochemicalRoleEnum",
+            "type": "string"
+        },
         "PreparationActionEnum": {
             "description": "Controlled vocabulary for preparation steps",
             "enum": [
@@ -2292,6 +2588,91 @@
                 "description"
             ],
             "title": "PreparationStep",
+            "type": "object"
+        },
+        "ProposedExperiment": {
+            "additionalProperties": false,
+            "description": "A lightweight, domain-neutral sketch of an experiment or analysis that could resolve a knowledge gap. Records the idea and how its outcome would decide the gap; intentionally simpler than a full study design.",
+            "properties": {
+                "approach": {
+                    "description": "Method/assay in brief (e.g. \"defined-coculture growth assay\", \"isolate WGS\").",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "decision_criterion": {
+                    "description": "The observation that would settle the question.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "experiment_id": {
+                    "description": "Stable local id (optional; for cross-reference).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "model_systems": {
+                    "description": "Systems to use (e.g. isolate, enrichment, defined coculture, metagenome).",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "perturbations": {
+                    "description": "Interventions applied (e.g. gene knockout, nutrient removal).",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "readouts": {
+                    "description": "What would be measured.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "would_refute": {
+                    "description": "Outcome that would refute it.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "would_support": {
+                    "description": "Outcome that would support the hypothesis/assertion.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "ProposedExperiment",
             "type": "object"
         },
         "PublicationReference": {
@@ -3004,6 +3385,70 @@
                 "supplier_name"
             ],
             "title": "SupplierInfo",
+            "type": "object"
+        },
+        "SupportLevelEnum": {
+            "description": "How a SupportingReference bears on the claim it is attached to (mirrors the supports semantics already used in the Mech EvidenceItem models).",
+            "enum": [
+                "SUPPORT",
+                "REFUTE",
+                "PARTIAL",
+                "NO_EVIDENCE",
+                "WRONG_STATEMENT"
+            ],
+            "title": "SupportLevelEnum",
+            "type": "string"
+        },
+        "SupportingReference": {
+            "additionalProperties": false,
+            "description": "A lightweight literature/database citation supporting a Discussion or Dataset. Self-contained (so this module has no dependency on each repo's EvidenceItem); carries a verbatim `snippet` so the same anti-hallucination snippet-vs-cached-abstract check the Mechs already run can validate it.",
+            "properties": {
+                "evidence_source": {
+                    "description": "How the snippet was obtained (e.g. abstract, full_text, figure, supplement, database). Free-form to stay self-contained.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "explanation": {
+                    "description": "Why this source bears on the claim.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "reference": {
+                    "description": "PMID:..., DOI:..., a repository accession/CURIE, or an opaque URL.",
+                    "type": "string"
+                },
+                "reference_title": {
+                    "description": "Title of the cited source (optional; populated by tooling).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "snippet": {
+                    "description": "Verbatim quote from the source supporting the attached claim.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "supports": {
+                    "$ref": "#/$defs/SupportLevelEnum"
+                }
+            },
+            "required": [
+                "reference"
+            ],
+            "title": "SupportingReference",
             "type": "object"
         },
         "SynonymTypeEnum": {

@@ -1,0 +1,91 @@
+{
+  "misfiled": [],
+  "mixed": [
+    {
+      "file": "bacterial/TOGO_M478_Methanosaeta_Brevibacterium_Medium.yaml",
+      "id": "CultureMech:009864",
+      "name": "Methanosaeta Brevibacterium Medium",
+      "archaeal_evidence": [
+        "methanosaeta"
+      ],
+      "bacterial_evidence": [
+        "brevibacterium"
+      ],
+      "is_solution": false
+    },
+    {
+      "file": "bacterial/methanosaeta_brevibacterium_medium.yaml",
+      "id": "CultureMech:002826",
+      "name": "METHANOSAETA BREVIBACTERIUM MEDIUM",
+      "archaeal_evidence": [
+        "methanosaeta"
+      ],
+      "bacterial_evidence": [
+        "brevibacterium"
+      ],
+      "is_solution": false
+    }
+  ],
+  "unresolved": [
+    {
+      "file": "archaea/DSMZ_1399_HALOPHILIC_MEDIUM.yaml",
+      "id": "CultureMech:000252",
+      "name": "HALOPHILIC MEDIUM"
+    },
+    {
+      "file": "archaea/JCM_J1334_NATRONOARCHAEA_MEDIUM_II.yaml",
+      "id": "CultureMech:015832",
+      "name": "NATRONOARCHAEA MEDIUM II"
+    },
+    {
+      "file": "archaea/alkalophilic_halophile_medium.yaml",
+      "id": "CultureMech:000255",
+      "name": "ALKALOPHILIC HALOPHILE MEDIUM"
+    },
+    {
+      "file": "archaea/artificial_seawater_for_halophiles.yaml",
+      "id": "CultureMech:000298",
+      "name": "ARTIFICIAL SEAWATER FOR HALOPHILES"
+    },
+    {
+      "file": "archaea/halophile_medium.yaml",
+      "id": "CultureMech:000276",
+      "name": "HALOPHILE MEDIUM"
+    },
+    {
+      "file": "archaea/halophile_starch_casein_medium.yaml",
+      "id": "CultureMech:000284",
+      "name": "HALOPHILE STARCH-CASEIN MEDIUM"
+    },
+    {
+      "file": "archaea/halophilic_medium.yaml",
+      "id": "CultureMech:000247",
+      "name": "HALOPHILIC MEDIUM"
+    },
+    {
+      "file": "archaea/halophilic_sob_medium.yaml",
+      "id": "CultureMech:000285",
+      "name": "HALOPHILIC SOB MEDIUM"
+    },
+    {
+      "file": "archaea/hp_101_halophile_medium.yaml",
+      "id": "CultureMech:000275",
+      "name": "HP 101 HALOPHILE MEDIUM"
+    },
+    {
+      "file": "archaea/medium_for_aciduric_thermophilic_bacillus_strains.yaml",
+      "id": "CultureMech:000277",
+      "name": "MEDIUM FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS"
+    },
+    {
+      "file": "archaea/moderate_halophile_medium_2.yaml",
+      "id": "CultureMech:000290",
+      "name": "MODERATE HALOPHILE MEDIUM 2"
+    },
+    {
+      "file": "archaea/thermanaerobacter_thermophila_medium.yaml",
+      "id": "CultureMech:000305",
+      "name": "THERMANAEROBACTER THERMOPHILA MEDIUM"
+    }
+  ]
+}

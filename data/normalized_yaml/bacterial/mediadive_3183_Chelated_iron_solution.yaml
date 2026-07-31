@@ -24,7 +24,7 @@ composition:
     id: mediadive.compound:1401
     label: Eisencitrat
   chebi_term:
-    id: CHEBI:55553
+    id: CHEBI:144434
     label: Eisencitrat
     confidence: 0.7
     match_type: corpus_consensus

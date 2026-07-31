@@ -103,7 +103,7 @@ ingredients:
   notes: From CCAP Medium MR_PPG.pdf; Curated from CCAP Medium MR_PPG.pdf specification
 - preferred_term: Proteose peptone
   term:
-    id: FOODON:00002992
+    id: MICRO:0000180
     label: Proteose peptone
   curation_metadata:
     mapping_quality: LLM_ASSISTED

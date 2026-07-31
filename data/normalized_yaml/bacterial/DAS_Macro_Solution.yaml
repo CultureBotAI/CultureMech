@@ -9,7 +9,7 @@ composition:
     value: '25.0'
     unit: PERCENT_V_V
   term:
-    id: CHEBI:65246
+    id: CHEBI:63005
     label: sodium nitrate
   notes: Add 10 mL of 0.70 M NaNO3 stock solution
   mediaingredientmech_term:
@@ -19,7 +19,7 @@ composition:
     value: '75.0'
     unit: PERCENT_V_V
   term:
-    id: CHEBI:131825
+    id: CHEBI:34683
     label: disodium hydrogen phosphate heptahydrate
   notes: Add 30 mL of 0.02 M Na2HPO4·7H2O stock solution
   mediaingredientmech_term:

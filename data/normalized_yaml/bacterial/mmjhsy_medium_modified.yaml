@@ -65,7 +65,7 @@ ingredients:
     label: NH4Cl
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '1'
@@ -246,7 +246,7 @@ ingredients:
     label: NaBr
 - preferred_term: KI
   term:
-    id: CHEBI:74559
+    id: CHEBI:8346
     label: KI
   concentration:
     value: '0.01'

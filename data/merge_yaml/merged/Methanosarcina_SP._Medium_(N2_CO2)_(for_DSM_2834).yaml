@@ -300,7 +300,7 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:75211
+    id: CHEBI:86360
     label: manganese(II) sulfate
 - preferred_term: KOH solution
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
@@ -395,7 +395,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component'
   term:
-    id: CHEBI:1687714
+    id: CHEBI:31345
     label: Calcium D-(+)-pantothenate
 - preferred_term: N2
   notes: 'Properties: Gas'

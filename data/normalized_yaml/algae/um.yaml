@@ -67,10 +67,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_UM.pdf
   notes: From CCAP Medium MR_UM.pdf; Curated from CCAP Medium MR_UM.pdf specification
-- preferred_term: Na HPO
+- preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: Na HPO
+    label: Na2HPO4
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -81,10 +81,10 @@ ingredients:
     unit: G_PER_L
   source: CCAP Medium MR_UM.pdf
   notes: From CCAP Medium MR_UM.pdf; Curated from CCAP Medium MR_UM.pdf specification
-- preferred_term: K HPO
+- preferred_term: K2HPO4
   term:
-    id: CHEBI:32030
-    label: K HPO
+    id: CHEBI:131527
+    label: K2HPO4
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0
@@ -97,7 +97,7 @@ ingredients:
   notes: From CCAP Medium MR_UM.pdf; Curated from CCAP Medium MR_UM.pdf specification
 - preferred_term: Tricine
   term:
-    id: CHEBI:35920
+    id: CHEBI:46760
     label: Tricine
   curation_metadata:
     mapping_quality: LLM_ASSISTED

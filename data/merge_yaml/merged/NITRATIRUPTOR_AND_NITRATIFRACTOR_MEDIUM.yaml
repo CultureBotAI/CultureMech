@@ -14,7 +14,7 @@ notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_
 ingredients:
 - preferred_term: NaNO3
   term:
-    id: CHEBI:59148
+    id: CHEBI:63005
     label: NaNO3
   concentration:
     value: '1'
@@ -44,7 +44,7 @@ ingredients:
     label: Na2S2O3 x 5 H2O
 - preferred_term: Sulfur powder
   term:
-    id: CHEBI:14258
+    id: CHEBI:33403
     label: Sulfur powder
   concentration:
     value: '3'

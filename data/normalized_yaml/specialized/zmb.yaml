@@ -353,7 +353,7 @@ ingredients:
     value: '0.00038'
     unit: G_PER_L
   term:
-    id: CHEBI:75219
+    id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
   notes: 'CAS: 10034-96-5; MW: 169.02'
 - preferred_term: Calcium chloride dihydrate

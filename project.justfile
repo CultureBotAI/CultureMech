@@ -70,6 +70,9 @@ research-media-edison target *args="":
 # Batch variant: walk a edison_batch.json priority list and research
 # the first N recipes. Default --limit is unset (run all 100); always
 # pass `--limit 5` (or similar) on first runs to bound credit spend.
+# Records with a completed run for the same job are skipped, so `--limit 5`
+# advances 5 FRESH records per invocation rather than re-billing the first
+# five. Pass `--force` to re-submit them anyway.
 [group('Research')]
 research-media-edison-batch batch *args="":
     uv run --extra dev python scripts/research_media_edison.py \
@@ -99,9 +102,71 @@ enrich-edison-response *args="":
 #   data/import_tracking/reports/deep_research_priority_top100.json (top 100, batch-ready)
 #   data/import_tracking/reports/deep_research_priority.md          (human report)
 # The top-100 JSON is compatible with `research-media-edison-batch`.
+# Already-researched records are excluded via the TRACKED manifest
+# data/import_tracking/researched_media.json — not by scanning the gitignored
+# research/ tree — so the reports are reproducible from git alone (#121).
+# If the manifest is stale, run `just refresh-researched-manifest` FIRST and
+# commit that diff separately, so a report refresh never mixes the two.
 [group('Research')]
 prioritize-deep-research-candidates *args="":
     uv run --extra dev python scripts/prioritize_deep_research_candidates.py {{args}}
+
+# Triage recipes that share a filename across category directories (#116).
+# Classifies each collision IDENTICAL / EQUIVALENT / DIFFERENT so the manual
+# curation pass is tractable. Read-only — moves, renames and deletes are
+# deliberately NOT automated here. Writes:
+#   data/import_tracking/reports/filename_collisions.tsv
+[group('QC')]
+audit-filename-collisions *args="":
+    uv run --extra dev python scripts/audit_filename_collisions.py {{args}}
+
+# Flag implausible ingredient concentrations (#118): stock-solution values and
+# unit slips stored as final per-litre medium concentrations. Read-only. Writes:
+#   data/import_tracking/reports/concentration_plausibility.tsv            (per row)
+#   data/import_tracking/reports/concentration_plausibility_by_record.tsv  (per record,
+#     with a `flattened_cocktail` flag marking the actionable subset)
+[group('QC')]
+audit-concentration-plausibility *args="":
+    uv run --extra dev python scripts/audit_concentration_plausibility.py {{args}}
+
+# Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
+# into the tracked researched-media manifest. This is the only step that reads
+# untracked research state; review and commit the resulting diff. Entries are
+# merged, never dropped, so several machines can contribute safely.
+#   just refresh-researched-manifest --dry-run   # preview additions
+[group('Research')]
+refresh-researched-manifest *args="":
+    uv run --extra dev python scripts/refresh_researched_manifest.py {{args}}
+
+# Rank MediaIngredientMech ingredients for Step 7b Edison role-research.
+# Cross-repo scan of ../MediaIngredientMech/data/ingredients/**/*.yaml scored by
+# (# facets missing) × log(occurrence) × mapped-mult × chebi-mult, minus records
+# that already have completed Edison role research. Writes:
+#   data/import_tracking/reports/role_research_priority.json  (batch-ready)
+# Output is a batch payload accepted by MIM's `research-ingredient-roles-edison-batch`.
+[group('Research')]
+prioritize-role-research-candidates *args="":
+    uv run --extra dev python scripts/prioritize_role_research_candidates.py {{args}}
+
+# Extract structured role assignments from Edison role-research bundles.
+# Consumes `-edison-literature.md` files under a directory (or single files) and
+# emits two batch JSONs:
+#   --out-mim  → rich shape for MIM `apply_role_research_results.py`
+#   --out-cm   → scalar shape for CultureMech's future `apply_ingredient_roles`
+#
+# Default: scans ../MediaIngredientMech/research/ingredients/roles/
+# Example: just extract-roles-from-edison
+[group('Research')]
+extract-roles-from-edison inputs="../MediaIngredientMech/research/ingredients/roles" *args="":
+    uv run --extra dev python scripts/extract_roles_from_edison.py {{inputs}} {{args}}
+
+# Apply the scalar-projection role batch (from `extract-roles-from-edison --out-cm`)
+# across every recipe under data/normalized_yaml/. Fills empty facet slots on
+# ingredient descriptors whose CHEBI id matches a batch proposal; never overwrites
+# curator assignments. Adds a curation-history event per changed recipe.
+[group('Research')]
+apply-ingredient-roles batch *args="":
+    uv run --extra dev python scripts/apply_ingredient_roles.py {{batch}} {{args}}
 
 [group('Research')]
 research-organism-recipe-edison target organism *args="":
@@ -820,61 +885,28 @@ validate-products:
 report-label-drift:
     uv run python scripts/validate_id_label_correspondence.py -c conf/id_label_targets.yaml --report reports/label_drift.tsv
 
-# Vendored-file manifest: the id-label files that are byte-identical across the
-# Mech repos and must not silently diverge. conf/id_label_targets.yaml is
-# deliberately per-repo (different adapters/targets/exceptions) so it is NOT here.
-VENDORED_IDLABEL_FILES := "scripts/validate_id_label_correspondence.py tests/test_id_label_empty_adapter.py tests/test_id_label_unknown_prefix.py"
+# NOTE: the id↔label validator + its shared tests are vendored byte-identical
+# across the Mech repos. The old self-generated sha256 pin (verify-/refresh-
+# validator-pin) was retired — it could only compare a copy to a hash from the
+# SAME repo, so all four could pass while holding three different versions. Drift
+# is now caught by the shared-reference check in the spokes (scripts/
+# check_vendored_sync.sh, against CultureBotAI/CultureMech@<.vendored_canon_ref>)
+# plus the nightly fleet audit here (.github/workflows/vendored-fleet-audit.yml).
+# See culturebotai-claw vendored_sync_action_plan (Phase 2).
 
-# Durability guard: fail if any vendored id-label file (the validator + its two
-# shared tests) drifts from its pinned sha256 (vendored byte-identical across the
-# Mech repos — see the validator's docstring + culturebotai-claw#6). CI runs this
-# so an accidental edit to one copy can't silently diverge. Uses sha256sum on CI
-# (ubuntu), shasum -a 256 on macOS.
-[group('QC')]
-verify-validator-pin:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    if command -v sha256sum >/dev/null 2>&1; then
-        sha256sum -c scripts/.validate_id_label_correspondence.sha256
-    else
-        shasum -a 256 -c scripts/.validate_id_label_correspondence.sha256
-    fi
-
-# Intentional sync only: re-pin the sha256 manifest to the CURRENT contents of the
-# vendored files after a deliberate, all-repos byte-identical update. Run this in
-# every Mech copy.
-[group('QC')]
-refresh-validator-pin:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    : > scripts/.validate_id_label_correspondence.sha256
-    for f in {{VENDORED_IDLABEL_FILES}}; do
-        if command -v sha256sum >/dev/null 2>&1; then h=$(sha256sum "$f" | cut -d' ' -f1); else h=$(shasum -a 256 "$f" | cut -d' ' -f1); fi
-        printf '%s  %s\n' "$h" "$f" >> scripts/.validate_id_label_correspondence.sha256
-        echo "re-pinned $f to $h"
-    done
-
-# Durability guard for the shared LinkML module (Discussion + Dataset), vendored
-# byte-identical across the Mech repos — see culturebotai-claw#7.
-SHARED_SCHEMA_MODULE := "src/culturemech/schema/mech_shared.yaml"
-[group('QC')]
-verify-schema-pin:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    if command -v sha256sum >/dev/null 2>&1; then
-        sha256sum -c src/culturemech/schema/.mech_shared.sha256
-    else
-        shasum -a 256 -c src/culturemech/schema/.mech_shared.sha256
-    fi
-
-[group('QC')]
-refresh-schema-pin:
-    #!/usr/bin/env bash
-    set -euo pipefail
-    f={{SHARED_SCHEMA_MODULE}}
-    if command -v sha256sum >/dev/null 2>&1; then h=$(sha256sum "$f" | cut -d' ' -f1); else h=$(shasum -a 256 "$f" | cut -d' ' -f1); fi
-    printf '%s  %s\n' "$h" "$f" > src/culturemech/schema/.mech_shared.sha256
-    echo "re-pinned $f to $h"
+# NOTE: the shared LinkML module (mech_shared.yaml) is vendored byte-identical
+# across the Mech repos (package-namespaced path per repo). Its self-generated
+# sha256 pin (verify-/refresh-schema-pin) was retired — same self-referential
+# flaw as the id-label pin. mech_shared.yaml is now covered by the shared-
+# reference drift check (spokes' scripts/check_vendored_sync.sh diffs their
+# src/<pkg>/schema/mech_shared.yaml against this hub's copy) and the nightly
+# vendored-fleet-audit.yml here. Propagation: change it in this hub → sync the
+# spokes → bump their .vendored_canon_ref.
+#
+# The former mim-roles-pin was also retired: mim_roles.yaml is NOT a shared set —
+# it is empty in MIM/CommunityMech/TraitMech (the real role facets live in MIM's
+# src/mediaingredientmech/utils/role_facets.py) and has content only here, so the
+# self-pin guarded a lone, dormant file. Nothing in CI referenced either pin.
 
 [group('QC')]
 validate-all:
@@ -933,6 +965,16 @@ check-chebi-grounding *args:
     uv run python scripts/audit_chebi_consistency.py \
         --out reports/chebi_consistency.tsv --max-allowed 101 {{args}}
 
+# Rebuild data/culturemech_id_registry.tsv from the corpus. A category move
+# changes a record's path but not its id, so bulk recategorizations rot the
+# registry silently (#144 — it reached 5,511 rows pointing at missing files).
+# Never mints, retires or reassigns an id; refuses to run on duplicate ids or on
+# records with no `id:` — those are `assign-ids`' job.
+#     just refresh-id-registry --dry-run   # report drift only
+[group('QC')]
+refresh-id-registry *args="":
+    uv run --extra dev python scripts/refresh_id_registry.py {{args}}
+
 # Scan-only collision check for CultureMech:NNNNNN IDs. Exits non-zero if any
 # cross-file duplicates are detected. Use as a pre-commit / CI safety net.
 [group('QC')]
@@ -989,6 +1031,16 @@ validation-stats:
     .venv/bin/python scripts/fix_validation_errors.py \
         --report-only \
         --input-dir {{normalized_yaml_dir}}
+
+# Cross-check every recipe's name against NCBITaxon and report media filed under
+# the wrong domain directory (e.g. an archaeon under bacterial/). Report-only;
+# pass args="--apply" to move the unambiguous cases. Needs the NCBITaxon sqlite:
+#   runoak -i sqlite:obo:ncbitaxon info NCBITaxon:2157
+[group('Validation')]
+audit-domain-categories *args="":
+    #!/usr/bin/env bash
+    uv run --extra dev python scripts/audit_domain_categories.py \
+        --json data/import_tracking/reports/domain_category_audit.json {{args}}
 
 # ================================================================
 # ENRICHMENT (Track 2: KOMODO-DSMZ Resolution)
@@ -1336,7 +1388,7 @@ gen-page file:
 test:
     #!/usr/bin/env bash
     echo "Running test suite..."
-    uv run pytest tests/ -v
+    uv run --extra dev pytest tests/ -v
 
 [group('Test')]
 test-kgx:
@@ -2117,7 +2169,7 @@ help:
 # ================================================================
 
 # Default path to KG-Microbe embeddings (local copy in data/embeddings/)
-kg_microbe_embeddings := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CommunityMech/CommunityMech/data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v2_2026-04-25_20_44_08.tsv.gz"
+kg_microbe_embeddings := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CommunityMech/CommunityMech/data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_v3_2026-06-26_12_55_27.tsv.gz"
 
 [group('Visualization')]
 gen-media-umap embeddings_path=kg_microbe_embeddings:

@@ -1,0 +1,134 @@
+id: CultureMech:000936
+name: halococcus_medium
+original_name: HALOCOCCUS MEDIUM
+category: archaea
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: SOLID_AGAR
+ph_value: 8.4
+media_term:
+  preferred_term: DSMZ Medium 146
+  term:
+    id: mediadive.medium:146
+    label: HALOCOCCUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium146.pdf'
+ingredients:
+- preferred_term: Skim milk
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: KNO3
+  term:
+    id: CHEBI:63043
+    label: potassium nitrate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2000'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '0'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+- preferred_term: Neopeptone
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17754
+    label: Glycerol
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '62.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:2509
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Steam the three solutions separately, mix together solutions B and
+    C and adjust pH to 8.4. Autoclave the skim milk at 112°C for 15 min, and the agar
+    salt mixture at 121°C for 20 min. Add the hot mixture to the warm skim milk aseptically.
+- step_number: 2
+  action: MIX
+  description: Use trace of Fe(III)citrate.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.343011Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 146'
+- timestamp: '2026-03-13T06:18:59.702072Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000936'
+- timestamp: '2026-03-17T06:30:15.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.241007+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOCOCCUS MEDIUM" to "halococcus_medium" for consistent
+    matching
+- timestamp: '2026-06-05T07:41:07.740840+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 5 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:37:34.948504+00:00'
+  curator: primary-term-regrounding-v1.0
+  action: Re-grounded wrong primary term id (OAK-verified)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+- timestamp: '2026-06-10T07:46:59.506202+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 1 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+high_metal: true
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_146_HALOCOCCUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:004167
+  name: halococcus_medium
+  notes: KOMODO record is an exact source duplicate of DSMZ Medium 146; local ingredient
+    and concentration signatures match.

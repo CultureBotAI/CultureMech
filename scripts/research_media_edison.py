@@ -40,6 +40,13 @@ Usage::
     # (including the full rendered query) so you can inspect the
     # prompt that would have been sent without spending credits.
     python scripts/research_media_edison.py --target lb_broth --dry-run
+
+Records that already have a completed (non-dry-run) run for the SAME job are
+skipped by default, so re-running a batch does not re-spend credits; pass
+``--force`` to re-submit anyway. The skip is applied BEFORE ``--start`` /
+``--limit``, which makes those windows count work still to do: repeating
+``--limit 5`` walks forward 5 fresh records at a time instead of resubmitting
+the same first five.
 """
 from __future__ import annotations
 
@@ -153,6 +160,48 @@ def _display_path(path: Path) -> str:
         return str(path.relative_to(REPO_ROOT))
     except ValueError:
         return str(path)
+
+
+def has_existing_research(out_dir: Path, slug: str, job_short: str) -> bool:
+    """True iff a completed (non-dry-run) Edison run already exists for this slug+job.
+
+    Mirrors ``prioritize_deep_research_candidates.has_existing_research`` — a
+    dry-run meta does NOT count, since it cost nothing and produced no answer.
+
+    Scoped to the SAME job rather than any job (the prioritizer's
+    ``{slug}-edison-*`` glob), because ``--job literature-high`` after
+    ``--job literature`` is a deliberately different, more expensive question.
+    Blocking that would be wrong; blocking an identical re-submission is the
+    point.
+    """
+    meta_path = out_dir / f"{slug}-edison-{job_short}-meta.yaml"
+    if not meta_path.is_file():
+        return False
+    try:
+        meta = yaml.safe_load(meta_path.read_text()) or {}
+    except (yaml.YAMLError, OSError):
+        return False
+    if not isinstance(meta, dict):
+        return False
+    status = str(meta.get("status") or "").lower()
+    task_id = str(meta.get("task_id") or "")
+    return bool(status and status != "dry-run" and task_id)
+
+
+def partition_already_researched(
+    targets: list[Path],
+    out_dir: Path,
+    job_short: str,
+) -> tuple[list[Path], list[Path]]:
+    """Split resolved targets into (to_submit, already_done), preserving order."""
+    to_submit: list[Path] = []
+    already: list[Path] = []
+    for path in targets:
+        if has_existing_research(out_dir, slug_for(path), job_short):
+            already.append(path)
+        else:
+            to_submit.append(path)
+    return to_submit, already
 
 
 def run_one(
@@ -270,6 +319,9 @@ def main(argv: list[str] | None = None) -> int:
                     help="When using --batch, skip this many entries before submitting.")
     ap.add_argument("--dry-run", action="store_true",
                     help="Render queries + print plan; do NOT call the API.")
+    ap.add_argument("--force", action="store_true",
+                    help="Re-submit records that already have a completed run for this "
+                         "job, re-spending credits. Default: skip them.")
     args = ap.parse_args(argv)
 
     job = resolve_job(args.job)
@@ -279,9 +331,6 @@ def main(argv: list[str] | None = None) -> int:
         targets = [rm.resolve_media_file(args.target)]
     else:
         candidate_lists = load_batch_targets(args.batch)
-        candidate_lists = candidate_lists[args.start:]
-        if args.limit is not None:
-            candidate_lists = candidate_lists[: args.limit]
         targets = []
         unresolved: list[str] = []
         media_dir = REPO_ROOT / "data" / "normalized_yaml"
@@ -323,13 +372,44 @@ def main(argv: list[str] | None = None) -> int:
         print("No targets to research.", file=sys.stderr)
         return 2
 
+    # Drop already-researched records BEFORE applying --start/--limit, so the
+    # window counts work still to do. Windowing first would make `--limit 5` mean
+    # "the first 5 batch entries" — re-billing any of them already done, and
+    # advancing by fewer than 5 new records per run.
+    job_short = _short_job(job)
+    skipped: list[Path] = []
+    if not args.force:
+        targets, skipped = partition_already_researched(targets, args.out_dir, job_short)
+
+    if args.batch:
+        targets = targets[args.start:]
+        if args.limit is not None:
+            targets = targets[: args.limit]
+
+    if not targets:
+        if skipped:
+            print(f"All {len(skipped)} resolved record(s) already have a completed "
+                  f"{job.name} run; nothing to submit. Use --force to re-run them.")
+            return 0
+        print("No targets to research.", file=sys.stderr)
+        return 2
+
     print(f"Edison job:    {job.name} ({job.value})")
     print(f"Template:      {_display_path(args.template.resolve())}")
     print(f"Output dir:    {_display_path(args.out_dir.resolve())}")
-    print(f"Recipes:       {len(targets)}")
+    print(f"Recipes:       {len(targets)} to submit"
+          + (f", {len(skipped)} skipped (already researched)" if skipped else ""))
+    if args.force:
+        print("Mode:          --force (re-submitting regardless of existing runs)")
     if args.dry_run:
         print("Mode:          DRY RUN (no API calls, no credits spent)")
     print()
+    if skipped:
+        for p in skipped[:5]:
+            print(f"  skip {slug_for(p)} — completed {job_short} run exists")
+        if len(skipped) > 5:
+            print(f"  skip ... {len(skipped) - 5} more")
+        print()
 
     client = None
     if not args.dry_run:
@@ -347,10 +427,11 @@ def main(argv: list[str] | None = None) -> int:
         if client is not None:
             client.close()
 
+    print()
+    print(f"Done. {len(results)} submitted / {len(skipped)} skipped (already researched).")
     if not args.dry_run:
         total_cost = sum(r["cost"] or 0.0 for r in results)
-        print()
-        print(f"Done. {len(results)} recipes researched. Total reported cost: {total_cost:.4f}")
+        print(f"Total reported cost: {total_cost:.4f}")
     return 0
 
 

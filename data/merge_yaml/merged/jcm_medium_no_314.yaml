@@ -43,7 +43,7 @@ ingredients:
     label: NaCl
 - preferred_term: Na2S2O3
   term:
-    id: CHEBI:59168
+    id: CHEBI:132112
     label: Na2S2O3
   concentration:
     value: '20'
@@ -53,7 +53,7 @@ ingredients:
     label: Na2S2O3
 - preferred_term: KNO3
   term:
-    id: CHEBI:58242
+    id: CHEBI:63043
     label: KNO3
   concentration:
     value: '5'

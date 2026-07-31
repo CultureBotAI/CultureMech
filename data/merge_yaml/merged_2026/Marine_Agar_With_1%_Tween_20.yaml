@@ -20,7 +20,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Tween 20
   term:
-    id: CHEBI:9784
+    id: CHEBI:53424
     label: Tween 20
   concentration:
     value: '10'

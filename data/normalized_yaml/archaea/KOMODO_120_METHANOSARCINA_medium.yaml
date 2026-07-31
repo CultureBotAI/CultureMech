@@ -1,0 +1,438 @@
+id: CultureMech:003958
+name: methanosarcina_medium
+original_name: METHANOSARCINA medium
+category: archaea
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+ph_range:
+  min: 6.5
+  max: 6.8
+media_term:
+  preferred_term: KOMODO Medium 120
+  term:
+    id: komodo.medium:120
+    label: METHANOSARCINA medium
+notes: 'Source: KOMODO ModelSEED | ID: 120 | DSMZ Medium: 120 (mediadive.medium:120)
+  | Aerobic: Yes'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  concentration:
+    value: '0.341797'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:131527
+    label: K2HPO4
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.224609'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  concentration:
+    value: '0.488281'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31206
+    label: NH4Cl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.488281'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.244141'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2.19727'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.95312'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '1.95312'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000488281'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8806
+    label: ''
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.830078'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32139
+    label: NaHCO3
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '15.4688'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17790
+    label: Methanol
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.292969'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.292969'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: H2SO4
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26836
+    label: H2SO4
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17883
+    label: HCl
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49976
+    label: ZnCl2
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15956
+    label: Biotin
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:27470
+    label: Folic acid
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17015
+    label: Riboflavin
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+- preferred_term: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: ''
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:17439
+    label: Vitamin B12
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+- preferred_term: (DL)-alpha-Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 120'
+- timestamp: '2026-02-03T11:19:17.973241'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 120
+- timestamp: '2026-02-06T05:10:52.220137Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:23.644301Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003958'
+- timestamp: '2026-03-17T06:30:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:38.238207+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOSARCINA medium" to "methanosarcina_medium" for
+    consistent matching
+- timestamp: '2026-05-20T06:00:49.456625+00:00'
+  curator: migrate_ph_range.py
+  action: MIGRATED_PH_RANGE
+  notes: 'ph_range ''6.5-6.8'' -> {''min'': 6.5, ''max'': 6.8}'
+- timestamp: '2026-06-05T07:40:19.890535+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 30 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:46:43.806590+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_120b_METHANOMICROCOCCUS_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003960
+  name: methanomicrococcus_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/for_dsm_21571.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003946
+  name: for_dsm_21571
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/for_dsm_4556_dsm_10334_and_dsm_13486.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003944
+  name: for_dsm_4556_dsm_10334_and_dsm_13486
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/for_dsm_9195.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003945
+  name: for_dsm_9195
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/for_strains_of_methanosarcina_mazei_and_dsm_1538_dsm_11429_dsm_11430_dsm11431_dsm_11432_dsm_11433_and_dsm_11434.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003943
+  name: for_strains_of_methanosarcina_mazei_and_dsm_1538_dsm_11429_dsm_11430_dsm11431_dsm_11432_dsm_11433_and_dsm_11434
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/g_1_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003959
+  name: g_1_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/medium_120_modified_for_dsm_7058.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003947
+  name: medium_120_modified_for_dsm_7058
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/methanosarcina_barkeri_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:000661
+  name: methanosarcina_barkeri_medium
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.
+- path: data/normalized_yaml/bacterial/to_adapt_dsm_804_on_acetate.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:003942
+  name: to_adapt_dsm_804_on_acetate
+  notes: Same ingredient and concentration signature; review as possible duplicate
+    source record.

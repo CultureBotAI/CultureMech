@@ -78,7 +78,7 @@ ingredients:
   notes: ' [Merged 2 duplicates: 4.0, 0.3]'
 - preferred_term: Na2SeO4
   term:
-    id: CHEBI:59160
+    id: CHEBI:77775
     label: Na2SeO4
   concentration:
     value: 1e-05

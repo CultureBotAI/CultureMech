@@ -39,7 +39,7 @@ composition:
     value: '0.5'
     unit: G_PER_L
   term:
-    id: CHEBI:82824
+    id: CHEBI:86254
     label: ferric chloride hexahydrate
   mediaingredientmech_term:
     id: MediaIngredientMech:001116

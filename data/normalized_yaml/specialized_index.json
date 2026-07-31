@@ -1,22 +1,11 @@
 {
-  "generated": "2026-03-16T05:30:17.554236+00:00",
+  "generated": "2026-07-29T02:11:04.625514+00:00",
   "category": "specialized",
-  "count": 105,
+  "count": 455,
   "recipes": {
-    "CultureMech:015333": {
-      "name": "PHOTOTROPHIC MEDIUM",
-      "filename": "DSMZ_1129_PHOTOTROPHIC_MEDIUM.yaml",
-      "ingredient_count": 16,
-      "id": "CultureMech:015333",
-      "source_id": "mediadive.medium:1129",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
     "CultureMech:015334": {
-      "name": "1/2 TRYPTIC SOY BROTH (ANAEROBIC)",
-      "filename": "DSMZ_1205_1_2_TRYPTIC_SOY_BROTH_ANAEROBIC.yaml",
+      "name": "1_2_tryptic_soy_broth_anaerobic",
+      "filename": "1_2_tryptic_soy_broth_anaerobic.yaml",
       "ingredient_count": 5,
       "id": "CultureMech:015334",
       "source_id": "mediadive.medium:1205",
@@ -25,1012 +14,48 @@
         "specialized"
       ]
     },
-    "CultureMech:015335": {
-      "name": "MARINE AGAR",
-      "filename": "DSMZ_123_MARINE_AGAR.yaml",
-      "ingredient_count": 15,
-      "id": "CultureMech:015335",
-      "source_id": "mediadive.medium:123",
-      "source": "MediaDive",
+    "CultureMech:015480": {
+      "name": "2x UGA defined nocarbon",
+      "filename": "2x_uga_defined_nocarbon.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:015480",
+      "source": "unknown",
       "categories": [
         "specialized"
       ]
     },
-    "CultureMech:015336": {
-      "name": "MARINE MEDIUM WITH PYRUVATE",
-      "filename": "DSMZ_1303_MARINE_MEDIUM_WITH_PYRUVATE.yaml",
-      "ingredient_count": 9,
-      "id": "CultureMech:015336",
-      "source_id": "mediadive.medium:1303",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015337": {
-      "name": "MARINE AMMONIUM MINERAL SALTS",
-      "filename": "DSMZ_1313_MARINE_AMMONIUM_MINERAL_SALTS.yaml",
-      "ingredient_count": 27,
-      "id": "CultureMech:015337",
-      "source_id": "mediadive.medium:1313",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015338": {
-      "name": "ANAEROBIC THAUERA MEDIUM",
-      "filename": "DSMZ_1315_ANAEROBIC_THAUERA_MEDIUM.yaml",
-      "ingredient_count": 33,
-      "id": "CultureMech:015338",
-      "source_id": "mediadive.medium:1315",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015339": {
-      "name": "BACTO MARINE BROTH WITH NA-ACETATE",
-      "filename": "DSMZ_1354_BACTO_MARINE_BROTH_WITH_NA-ACETATE.yaml",
-      "ingredient_count": 18,
-      "id": "CultureMech:015339",
-      "source_id": "mediadive.medium:1354",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015340": {
-      "name": "ACETOBACTERIUM MEDIUM (MARINE)",
-      "filename": "DSMZ_135a_ACETOBACTERIUM_MEDIUM_MARINE.yaml",
-      "ingredient_count": 34,
-      "id": "CultureMech:015340",
-      "source_id": "mediadive.medium:135a",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015341": {
-      "name": "MODIFIED BACTO MARINE BROTH (DIFCO 2216)",
-      "filename": "DSMZ_1517_MODIFIED_BACTO_MARINE_BROTH_DIFCO_2216.yaml",
+    "CultureMech:015481": {
+      "name": "7H9",
+      "filename": "7h9.yaml",
       "ingredient_count": 16,
-      "id": "CultureMech:015341",
-      "source_id": "mediadive.medium:1517",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015342": {
-      "name": "SPIRIBACTER MEDIUM (830 + 12% Marine salts)",
-      "filename": "DSMZ_1537_SPIRIBACTER_MEDIUM_830_12_Marine_salts.yaml",
-      "ingredient_count": 8,
-      "id": "CultureMech:015342",
-      "source_id": "mediadive.medium:1537",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015343": {
-      "name": "MARINES PLANCTOMYCES MEDIUM",
-      "filename": "DSMZ_1560_MARINES_PLANCTOMYCES_MEDIUM.yaml",
-      "ingredient_count": 45,
-      "id": "CultureMech:015343",
-      "source_id": "mediadive.medium:1560",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015344": {
-      "name": "Medium for broad range phototrophic bacteria",
-      "filename": "DSMZ_1561_Medium_for_broad_range_phototrophic_bacteria.yaml",
-      "ingredient_count": 33,
-      "id": "CultureMech:015344",
-      "source_id": "mediadive.medium:1561",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015345": {
-      "name": "MARINES PLANCTOMYCES MEDIUM MODIFIED I",
-      "filename": "DSMZ_1695_MARINES_PLANCTOMYCES_MEDIUM_MODIFIED_I.yaml",
-      "ingredient_count": 45,
-      "id": "CultureMech:015345",
-      "source_id": "mediadive.medium:1695",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015346": {
-      "name": "ANAEROBIC AZOSPIRILLUM MEDIUM",
-      "filename": "DSMZ_1701_ANAEROBIC_AZOSPIRILLUM_MEDIUM.yaml",
-      "ingredient_count": 20,
-      "id": "CultureMech:015346",
-      "source_id": "mediadive.medium:1701",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015347": {
-      "name": "GAM Broth (Gifu Anaerobic Medium Broth)",
-      "filename": "DSMZ_1713_GAM_Broth_Gifu_Anaerobic_Medium_Broth.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015347",
-      "source_id": "mediadive.medium:1713",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015348": {
-      "name": "GAM Broth, mod. (Gifu Anaerobic Medium Broth, modified)",
-      "filename": "DSMZ_1715_GAM_Broth_mod._Gifu_Anaerobic_Medium_Broth_modified.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015348",
-      "source_id": "mediadive.medium:1715",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015349": {
-      "name": "CYTOPHAGA (marine) MEDIUM",
-      "filename": "DSMZ_172_CYTOPHAGA_marine_MEDIUM.yaml",
-      "ingredient_count": 9,
-      "id": "CultureMech:015349",
-      "source_id": "mediadive.medium:172",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015350": {
-      "name": "DESULFOBULBUS SP. MEDIUM (MARINE)",
-      "filename": "DSMZ_195b_DESULFOBULBUS_SP._MEDIUM_MARINE.yaml",
-      "ingredient_count": 33,
-      "id": "CultureMech:015350",
-      "source_id": "mediadive.medium:195b",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015351": {
-      "name": "PROPIONIGENIUM MODESTUM MEDIUM (MARINE)",
-      "filename": "DSMZ_293_PROPIONIGENIUM_MODESTUM_MEDIUM_MARINE.yaml",
-      "ingredient_count": 19,
-      "id": "CultureMech:015351",
-      "source_id": "mediadive.medium:293",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015352": {
-      "name": "SPOROMUSA MEDIUM (MARINE)",
-      "filename": "DSMZ_311b_SPOROMUSA_MEDIUM_MARINE.yaml",
-      "ingredient_count": 36,
-      "id": "CultureMech:015352",
-      "source_id": "mediadive.medium:311b",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015353": {
-      "name": "PHOTOBACTERIUM MEDIUM",
-      "filename": "DSMZ_32_PHOTOBACTERIUM_MEDIUM.yaml",
-      "ingredient_count": 8,
-      "id": "CultureMech:015353",
-      "source_id": "mediadive.medium:32",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015354": {
-      "name": "ACIDIANUS MEDIUM (ANAEROBIC)",
-      "filename": "DSMZ_358a_ACIDIANUS_MEDIUM_ANAEROBIC.yaml",
-      "ingredient_count": 14,
-      "id": "CultureMech:015354",
-      "source_id": "mediadive.medium:358a",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015355": {
-      "name": "ANAEROBIC FRESHWATER (FWM) MEDIUM",
-      "filename": "DSMZ_503_ANAEROBIC_FRESHWATER_FWM_MEDIUM.yaml",
-      "ingredient_count": 29,
-      "id": "CultureMech:015355",
-      "source_id": "mediadive.medium:503",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015356": {
-      "name": "ANAEROBIC SEAWATER (SWM) MEDIUM",
-      "filename": "DSMZ_504_ANAEROBIC_SEAWATER_SWM_MEDIUM.yaml",
-      "ingredient_count": 29,
-      "id": "CultureMech:015356",
-      "source_id": "mediadive.medium:504",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015357": {
-      "name": "BACTO MARINE BROTH (DIFCO 2216)",
-      "filename": "DSMZ_514_BACTO_MARINE_BROTH_DIFCO_2216.yaml",
-      "ingredient_count": 16,
-      "id": "CultureMech:015357",
-      "source_id": "mediadive.medium:514",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015358": {
-      "name": "HALF STRENGTH BACTO MARINE BROTH",
-      "filename": "DSMZ_514a_HALF_STRENGTH_BACTO_MARINE_BROTH.yaml",
-      "ingredient_count": 17,
-      "id": "CultureMech:015358",
-      "source_id": "mediadive.medium:514a",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015359": {
-      "name": "MODIFIED BACTO MARINE BROTH",
-      "filename": "DSMZ_514d_MODIFIED_BACTO_MARINE_BROTH.yaml",
-      "ingredient_count": 5,
-      "id": "CultureMech:015359",
-      "source_id": "mediadive.medium:514d",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015360": {
-      "name": "MARINE BROTH (ANAEROB)",
-      "filename": "DSMZ_514e_MARINE_BROTH_ANAEROB.yaml",
-      "ingredient_count": 17,
-      "id": "CultureMech:015360",
-      "source_id": "mediadive.medium:514e",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015361": {
-      "name": "MARINE BROTH (ROTH CP73)",
-      "filename": "DSMZ_514f_MARINE_BROTH_ROTH_CP73.yaml",
-      "ingredient_count": 17,
-      "id": "CultureMech:015361",
-      "source_id": "mediadive.medium:514f",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015362": {
-      "name": "HALF STRENGTH BACTO MARINE BROTH with 50% Seawater",
-      "filename": "DSMZ_514g_HALF_STRENGTH_BACTO_MARINE_BROTH_with_50_Seawater.yaml",
-      "ingredient_count": 18,
-      "id": "CultureMech:015362",
-      "source_id": "mediadive.medium:514g",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015363": {
-      "name": "MARINE CAULOBACTER MEDIUM",
-      "filename": "DSMZ_601_MARINE_CAULOBACTER_MEDIUM.yaml",
-      "ingredient_count": 3,
-      "id": "CultureMech:015363",
-      "source_id": "mediadive.medium:601",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015364": {
-      "name": "BACTO MARINE AGAR",
-      "filename": "DSMZ_604_BACTO_MARINE_AGAR.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015364",
-      "source_id": "mediadive.medium:604",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015365": {
-      "name": "BACTO PHOTOBACTERIUM BROTH",
-      "filename": "DSMZ_608_BACTO_PHOTOBACTERIUM_BROTH.yaml",
-      "ingredient_count": 9,
-      "id": "CultureMech:015365",
-      "source_id": "mediadive.medium:608",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015366": {
-      "name": "MEDIUM FOR MARINE METHYLOTROPHS",
-      "filename": "DSMZ_750_MEDIUM_FOR_MARINE_METHYLOTROPHS.yaml",
-      "ingredient_count": 7,
-      "id": "CultureMech:015366",
-      "source_id": "mediadive.medium:750",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015367": {
-      "name": "MARINE THERMOCOCCUS MEDIUM",
-      "filename": "DSMZ_760_MARINE_THERMOCOCCUS_MEDIUM.yaml",
-      "ingredient_count": 16,
-      "id": "CultureMech:015367",
-      "source_id": "mediadive.medium:760",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015368": {
-      "name": "ANAEROBIC CHOLESTEROL MEDIUM",
-      "filename": "DSMZ_858_ANAEROBIC_CHOLESTEROL_MEDIUM.yaml",
-      "ingredient_count": 29,
-      "id": "CultureMech:015368",
-      "source_id": "mediadive.medium:858",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015369": {
-      "name": "ANAEROBIC TRYPTIC SOY BROTH MEDIUM",
-      "filename": "DSMZ_869_ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml",
-      "ingredient_count": 3,
-      "id": "CultureMech:015369",
-      "source_id": "mediadive.medium:869",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015370": {
-      "name": "SULFOLOBUS MEDIUM (ANAEROBIC)",
-      "filename": "DSMZ_88a_SULFOLOBUS_MEDIUM_ANAEROBIC.yaml",
-      "ingredient_count": 15,
-      "id": "CultureMech:015370",
-      "source_id": "mediadive.medium:88a",
-      "source": "MediaDive",
+      "id": "CultureMech:015481",
+      "source": "unknown",
       "categories": [
         "specialized"
       ]
     },
     "CultureMech:015432": {
-      "name": "Glycerol Fermentation Medium for DIET Coculture",
+      "name": "glycerol_fermentation_medium_for_diet_coculture",
       "filename": "Glycerol_Fermentation_Medium_for_DIET_Coculture.yaml",
       "ingredient_count": 9,
       "id": "CultureMech:015432",
       "source": "unknown",
       "categories": [
         "specialized"
-      ],
-      "has_hierarchy_enrichment": true
+      ]
     },
     "CultureMech:015433": {
-      "name": "Half-strength Murashige-Skoog medium for Arabidopsis growth",
+      "name": "half_strength_murashige_skoog_medium_for_arabidopsis_growth",
       "filename": "Half_strength_Murashige_Skoog_medium_for_Arabidopsis_growth.yaml",
       "ingredient_count": 3,
       "id": "CultureMech:015433",
       "source": "unknown",
       "categories": [
         "specialized"
-      ],
-      "has_hierarchy_enrichment": true
-    },
-    "CultureMech:015371": {
-      "name": "MARINE AGAR 2216 (pH 8.5)",
-      "filename": "JCM_J1001_MARINE_AGAR_2216_pH_8.5.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015371",
-      "source_id": "mediadive.medium:J1001",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015372": {
-      "name": "MARINE AGAR 2216 WITH  8.0% NaCl",
-      "filename": "JCM_J1015_MARINE_AGAR_2216_WITH_8.0_NaCl.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015372",
-      "source_id": "mediadive.medium:J1015",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015373": {
-      "name": "MARINE AGAR 2216 (pH 9.0)",
-      "filename": "JCM_J1016_MARINE_AGAR_2216_pH_9.0.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015373",
-      "source_id": "mediadive.medium:J1016",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015374": {
-      "name": "IRD MARINE DESULFOVIBRIO MEDIUM",
-      "filename": "JCM_J1043_IRD_MARINE_DESULFOVIBRIO_MEDIUM.yaml",
-      "ingredient_count": 23,
-      "id": "CultureMech:015374",
-      "source_id": "mediadive.medium:J1043",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015375": {
-      "name": "QUARTER STRENGTH MARINE BROTH 2216",
-      "filename": "JCM_J1049_QUARTER_STRENGTH_MARINE_BROTH_2216.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015375",
-      "source_id": "mediadive.medium:J1049",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015376": {
-      "name": "MARINE AOB MEDIUM (A)",
-      "filename": "JCM_J1055_MARINE_AOB_MEDIUM_A.yaml",
-      "ingredient_count": 16,
-      "id": "CultureMech:015376",
-      "source_id": "mediadive.medium:J1055",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015377": {
-      "name": "MARINE AOB MEDIUM (B)",
-      "filename": "JCM_J1056_MARINE_AOB_MEDIUM_B.yaml",
-      "ingredient_count": 16,
-      "id": "CultureMech:015377",
-      "source_id": "mediadive.medium:J1056",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015378": {
-      "name": "PYGV MARINE MEDIUM (B)",
-      "filename": "JCM_J1059_PYGV_MARINE_MEDIUM_B.yaml",
-      "ingredient_count": 32,
-      "id": "CultureMech:015378",
-      "source_id": "mediadive.medium:J1059",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015379": {
-      "name": "MARINE SRB MEDIUM",
-      "filename": "JCM_J1073_MARINE_SRB_MEDIUM.yaml",
-      "ingredient_count": 32,
-      "id": "CultureMech:015379",
-      "source_id": "mediadive.medium:J1073",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015380": {
-      "name": "ANAEROBIC NATURAL SEAWATER MEDIUM",
-      "filename": "JCM_J1102_ANAEROBIC_NATURAL_SEAWATER_MEDIUM.yaml",
-      "ingredient_count": 6,
-      "id": "CultureMech:015380",
-      "source_id": "mediadive.medium:J1102",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015381": {
-      "name": "ANAEROBIC ALKALINE LB MEDIUM",
-      "filename": "JCM_J1111_ANAEROBIC_ALKALINE_LB_MEDIUM.yaml",
-      "ingredient_count": 4,
-      "id": "CultureMech:015381",
-      "source_id": "mediadive.medium:J1111",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015382": {
-      "name": "IRD MARINE DESULFOVIBRIO MEDIUM-2",
-      "filename": "JCM_J1116_IRD_MARINE_DESULFOVIBRIO_MEDIUM-2.yaml",
-      "ingredient_count": 22,
-      "id": "CultureMech:015382",
-      "source_id": "mediadive.medium:J1116",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015383": {
-      "name": "IRD MARINE DESULFOVIBRIO MEDIUM-3",
-      "filename": "JCM_J1117_IRD_MARINE_DESULFOVIBRIO_MEDIUM-3.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015383",
-      "source_id": "mediadive.medium:J1117",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015384": {
-      "name": "ARTFICIAL MARINE WATER MEDIUM",
-      "filename": "JCM_J1123_ARTFICIAL_MARINE_WATER_MEDIUM.yaml",
-      "ingredient_count": 23,
-      "id": "CultureMech:015384",
-      "source_id": "mediadive.medium:J1123",
-      "source": "MediaDive",
-      "solution_count": 3,
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015385": {
-      "name": "MARINE BROTH 2216 WITH CELLOBIOSE",
-      "filename": "JCM_J1127_MARINE_BROTH_2216_WITH_CELLOBIOSE.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015385",
-      "source_id": "mediadive.medium:J1127",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015386": {
-      "name": "MEDIUM FOR MARINE SPIROCHAETES",
-      "filename": "JCM_J1150_MEDIUM_FOR_MARINE_SPIROCHAETES.yaml",
-      "ingredient_count": 32,
-      "id": "CultureMech:015386",
-      "source_id": "mediadive.medium:J1150",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015387": {
-      "name": "MARINE AGAR 2216 WITH 1% STARCH",
-      "filename": "JCM_J1164_MARINE_AGAR_2216_WITH_1_STARCH.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015387",
-      "source_id": "mediadive.medium:J1164",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015388": {
-      "name": "MODIFIED MEDIUM FOR MARINE SPIROCHAETES",
-      "filename": "JCM_J1172_MODIFIED_MEDIUM_FOR_MARINE_SPIROCHAETES.yaml",
-      "ingredient_count": 30,
-      "id": "CultureMech:015388",
-      "source_id": "mediadive.medium:J1172",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015389": {
-      "name": "MARINE METHANOBACTERIUM MEDIUM",
-      "filename": "JCM_J1186_MARINE_METHANOBACTERIUM_MEDIUM.yaml",
-      "ingredient_count": 31,
-      "id": "CultureMech:015389",
-      "source_id": "mediadive.medium:J1186",
-      "source": "MediaDive",
-      "solution_count": 1,
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015390": {
-      "name": "MARINE CLOSTRIDIUM MEDIUM",
-      "filename": "JCM_J1187_MARINE_CLOSTRIDIUM_MEDIUM.yaml",
-      "ingredient_count": 30,
-      "id": "CultureMech:015390",
-      "source_id": "mediadive.medium:J1187",
-      "source": "MediaDive",
-      "solution_count": 1,
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015391": {
-      "name": "MARINE CHLOROFLEXI MEDIUM",
-      "filename": "JCM_J1188_MARINE_CHLOROFLEXI_MEDIUM.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015391",
-      "source_id": "mediadive.medium:J1188",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015392": {
-      "name": "MODIFIED MARINE AGAR 2216 WITH 5% NaCl (pH 9)",
-      "filename": "JCM_J1189_MODIFIED_MARINE_AGAR_2216_WITH_5_NaCl_pH_9.yaml",
-      "ingredient_count": 15,
-      "id": "CultureMech:015392",
-      "source_id": "mediadive.medium:J1189",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015393": {
-      "name": "MARINE AGAR 2216",
-      "filename": "JCM_J118_MARINE_AGAR_2216.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015393",
-      "source_id": "mediadive.medium:J118",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015394": {
-      "name": "ANAEROBIC ALKALINE GLUCOSE MEDIUM",
-      "filename": "JCM_J1228_ANAEROBIC_ALKALINE_GLUCOSE_MEDIUM.yaml",
-      "ingredient_count": 30,
-      "id": "CultureMech:015394",
-      "source_id": "mediadive.medium:J1228",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015395": {
-      "name": "MARINE BROTH 2216 WITH PYRUVATE",
-      "filename": "JCM_J1244_MARINE_BROTH_2216_WITH_PYRUVATE.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015395",
-      "source_id": "mediadive.medium:J1244",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015396": {
-      "name": "MODIFIED MARINE AGAR 2216",
-      "filename": "JCM_J1251_MODIFIED_MARINE_AGAR_2216.yaml",
-      "ingredient_count": 4,
-      "id": "CultureMech:015396",
-      "source_id": "mediadive.medium:J1251",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015397": {
-      "name": "ANAEROBIC DOUBLE-STRENGTH R2A MEDIUM",
-      "filename": "JCM_J1325_ANAEROBIC_DOUBLE-STRENGTH_R2A_MEDIUM.yaml",
-      "ingredient_count": 9,
-      "id": "CultureMech:015397",
-      "source_id": "mediadive.medium:J1325",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015398": {
-      "name": "SWMTY-MARINE MEDIUM",
-      "filename": "JCM_J227_SWMTY-MARINE_MEDIUM.yaml",
-      "ingredient_count": 15,
-      "id": "CultureMech:015398",
-      "source_id": "mediadive.medium:J227",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015399": {
-      "name": "PYGV MARINE MEDIUM (A)",
-      "filename": "JCM_J304_PYGV_MARINE_MEDIUM_A.yaml",
-      "ingredient_count": 33,
-      "id": "CultureMech:015399",
-      "source_id": "mediadive.medium:J304",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015400": {
-      "name": "MARINE AGAR 2216 WITH  3.1% NaCl",
-      "filename": "JCM_J357_MARINE_AGAR_2216_WITH_3.1_NaCl.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015400",
-      "source_id": "mediadive.medium:J357",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015401": {
-      "name": "MARINE MEDIUM WITH SULFUR",
-      "filename": "JCM_J375_MARINE_MEDIUM_WITH_SULFUR.yaml",
-      "ingredient_count": 10,
-      "id": "CultureMech:015401",
-      "source_id": "mediadive.medium:J375",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015402": {
-      "name": "MARINE MEDIUM WITH THIOSULFATE",
-      "filename": "JCM_J376_MARINE_MEDIUM_WITH_THIOSULFATE.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015402",
-      "source_id": "mediadive.medium:J376",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015403": {
-      "name": "MARINE DESULFOSARCINA MEDIUM",
-      "filename": "JCM_J391_MARINE_DESULFOSARCINA_MEDIUM.yaml",
-      "ingredient_count": 31,
-      "id": "CultureMech:015403",
-      "source_id": "mediadive.medium:J391",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015404": {
-      "name": "Fe(III)-REDUCER MARINE ENRICHMENT MEDIUM",
-      "filename": "JCM_J411_Fe_III_-REDUCER_MARINE_ENRICHMENT_MEDIUM.yaml",
-      "ingredient_count": 24,
-      "id": "CultureMech:015404",
-      "source_id": "mediadive.medium:J411",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015405": {
-      "name": "MODIFIED MARINE MEDIUM",
-      "filename": "JCM_J416_MODIFIED_MARINE_MEDIUM.yaml",
-      "ingredient_count": 24,
-      "id": "CultureMech:015405",
-      "source_id": "mediadive.medium:J416",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015406": {
-      "name": "MARINE BROTH 2216",
-      "filename": "JCM_J41_MARINE_BROTH_2216.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015406",
-      "source_id": "mediadive.medium:J41",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015407": {
-      "name": "A1 MARINE MEDIUM",
-      "filename": "JCM_J425_A1_MARINE_MEDIUM.yaml",
-      "ingredient_count": 18,
-      "id": "CultureMech:015407",
-      "source_id": "mediadive.medium:J425",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015408": {
-      "name": "MODIFIED MARINE MEDIUM FOR DETHIOSULFOBACTER",
-      "filename": "JCM_J501_MODIFIED_MARINE_MEDIUM_FOR_DETHIOSULFOBACTER.yaml",
-      "ingredient_count": 31,
-      "id": "CultureMech:015408",
-      "source_id": "mediadive.medium:J501",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015409": {
-      "name": "MODIFIED MARINE MEDIUM FOR DESULFOVIBRIO TOKYOENSIS",
-      "filename": "JCM_J502_MODIFIED_MARINE_MEDIUM_FOR_DESULFOVIBRIO_TOKYOENSIS.yaml",
-      "ingredient_count": 30,
-      "id": "CultureMech:015409",
-      "source_id": "mediadive.medium:J502",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015410": {
-      "name": "MARINE AGAR 2216 WITH 8% NaCl",
-      "filename": "JCM_J532_MARINE_AGAR_2216_WITH_8_NaCl.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015410",
-      "source_id": "mediadive.medium:J532",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015411": {
-      "name": "DILUTED MARINE AGAR",
-      "filename": "JCM_J644_DILUTED_MARINE_AGAR.yaml",
-      "ingredient_count": 3,
-      "id": "CultureMech:015411",
-      "source_id": "mediadive.medium:J644",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015412": {
-      "name": "BREWER ANAEROBIC AGAR WITH 2% NaCl",
-      "filename": "JCM_J667_BREWER_ANAEROBIC_AGAR_WITH_2_NaCl.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015412",
-      "source_id": "mediadive.medium:J667",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015413": {
-      "name": "ANAEROBIC TYEG MEDIUM",
-      "filename": "JCM_J684_ANAEROBIC_TYEG_MEDIUM.yaml",
-      "ingredient_count": 31,
-      "id": "CultureMech:015413",
-      "source_id": "mediadive.medium:J684",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015414": {
-      "name": "ANAEROBIC SULFOLOBALES MEDIUM",
-      "filename": "JCM_J692_ANAEROBIC_SULFOLOBALES_MEDIUM.yaml",
-      "ingredient_count": 15,
-      "id": "CultureMech:015414",
-      "source_id": "mediadive.medium:J692",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015415": {
-      "name": "ANAEROBIC MARINE BROTH 2216",
-      "filename": "JCM_J719_ANAEROBIC_MARINE_BROTH_2216.yaml",
-      "ingredient_count": 4,
-      "id": "CultureMech:015415",
-      "source_id": "mediadive.medium:J719",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015416": {
-      "name": "ANAEROBIC BRAIN HEART INFUSION BROTH",
-      "filename": "JCM_J723_ANAEROBIC_BRAIN_HEART_INFUSION_BROTH.yaml",
-      "ingredient_count": 3,
-      "id": "CultureMech:015416",
-      "source_id": "mediadive.medium:J723",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015417": {
-      "name": "MARINE AGAR 2216 with 5% NaCl",
-      "filename": "JCM_J732_MARINE_AGAR_2216_with_5_NaCl.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015417",
-      "source_id": "mediadive.medium:J732",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015418": {
-      "name": "MARINE AGAR 2216 WITH 10% NaCl",
-      "filename": "JCM_J733_MARINE_AGAR_2216_WITH_10_NaCl.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015418",
-      "source_id": "mediadive.medium:J733",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015419": {
-      "name": "DESULFOVIBRIO MARINE MEDIUM",
-      "filename": "JCM_J750_DESULFOVIBRIO_MARINE_MEDIUM.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015419",
-      "source_id": "mediadive.medium:J750",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015420": {
-      "name": "HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl",
-      "filename": "JCM_J762_HALF_STRENGTH_MARINE_MEDIUM_WITH_1.0_NaCl.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015420",
-      "source_id": "mediadive.medium:J762",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015421": {
-      "name": "MARINE AGAR WITH 1% TWEEN 20",
-      "filename": "JCM_J768_MARINE_AGAR_WITH_1_TWEEN_20.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015421",
-      "source_id": "mediadive.medium:J768",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015422": {
-      "name": "ANAEROBIC TYECas MEDIUM",
-      "filename": "JCM_J858_ANAEROBIC_TYECas_MEDIUM.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015422",
-      "source_id": "mediadive.medium:J858",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015423": {
-      "name": "IRD MARINE CLOSTRIDA MEDIUM",
-      "filename": "JCM_J909_IRD_MARINE_CLOSTRIDA_MEDIUM.yaml",
-      "ingredient_count": 23,
-      "id": "CultureMech:015423",
-      "source_id": "mediadive.medium:J909",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
       ]
     },
     "CultureMech:015424": {
-      "name": "MODIFIED MARINE AGAR 2216",
+      "name": "modified_marine_agar_2216",
       "filename": "JCM_J913_MODIFIED_MARINE_AGAR_2216.yaml",
       "ingredient_count": 4,
       "id": "CultureMech:015424",
@@ -1040,85 +65,8 @@
         "specialized"
       ]
     },
-    "CultureMech:015425": {
-      "name": "HALF STRENGTH MARINE AGAR",
-      "filename": "JCM_J916_HALF_STRENGTH_MARINE_AGAR.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015425",
-      "source_id": "mediadive.medium:J916",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015426": {
-      "name": "MARINE AGAR 2216 WITH 1% NaCl",
-      "filename": "JCM_J922_MARINE_AGAR_2216_WITH_1_NaCl.yaml",
-      "ingredient_count": 2,
-      "id": "CultureMech:015426",
-      "source_id": "mediadive.medium:J922",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015427": {
-      "name": "IRD MARINE CLOSTRIDIA MEDIUM-2",
-      "filename": "JCM_J938_IRD_MARINE_CLOSTRIDIA_MEDIUM-2.yaml",
-      "ingredient_count": 1,
-      "id": "CultureMech:015427",
-      "source_id": "mediadive.medium:J938",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015428": {
-      "name": "ANAEROBIC BICARBONATE-BUFFERED MEDIUM WITH PHENOL",
-      "filename": "JCM_J981_ANAEROBIC_BICARBONATE-BUFFERED_MEDIUM_WITH_PHENOL.yaml",
-      "ingredient_count": 31,
-      "id": "CultureMech:015428",
-      "source_id": "mediadive.medium:J981",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015429": {
-      "name": "ANAEROBIC ALKALINE YE MEDIUM",
-      "filename": "JCM_J993_ANAEROBIC_ALKALINE_YE_MEDIUM.yaml",
-      "ingredient_count": 21,
-      "id": "CultureMech:015429",
-      "source_id": "mediadive.medium:J993",
-      "source": "MediaDive",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015430": {
-      "name": "Tris-buffered artificial seawater with nh4cl and sulfolactate",
-      "filename": "MEDIADB_16_Tris-buffered_artificial_seawater_with_nh4cl_and_s.yaml",
-      "ingredient_count": 24,
-      "id": "CultureMech:015430",
-      "source_id": "MEDIADB:16",
-      "source": "unknown",
-      "categories": [
-        "specialized"
-      ]
-    },
-    "CultureMech:015431": {
-      "name": "Tris-buffered artificial seawater with NH4Cl and acetate",
-      "filename": "MEDIADB_17_Tris-buffered_artificial_seawater_with_NH4Cl_and_a.yaml",
-      "ingredient_count": 24,
-      "id": "CultureMech:015431",
-      "source_id": "MEDIADB:17",
-      "source": "unknown",
-      "categories": [
-        "specialized"
-      ]
-    },
     "CultureMech:015434": {
-      "name": "Modified DSM 120 Medium for DIET Coculture",
+      "name": "modified_dsm_120_medium_for_diet_coculture",
       "filename": "Modified_DSM_120_Medium_for_DIET_Coculture.yaml",
       "ingredient_count": 6,
       "id": "CultureMech:015434",
@@ -1129,7 +77,7 @@
       "has_hierarchy_enrichment": true
     },
     "CultureMech:015435": {
-      "name": "Modified Freshwater Medium for DIET Coculture",
+      "name": "modified_freshwater_medium_for_diet_coculture",
       "filename": "Modified_Freshwater_Medium_for_DIET_Coculture.yaml",
       "ingredient_count": 3,
       "id": "CultureMech:015435",
@@ -1139,27 +87,4586 @@
       ],
       "has_hierarchy_enrichment": true
     },
-    "CultureMech:015437": {
-      "name": "Nitrogen-free B&D medium for Lotus japonicus growth",
-      "filename": "Nitrogen_free_B&D_medium_for_Lotus_japonicus_growth.yaml",
-      "ingredient_count": 4,
-      "id": "CultureMech:015437",
-      "source": "unknown",
-      "categories": [
-        "specialized"
-      ],
-      "has_hierarchy_enrichment": true
-    },
     "CultureMech:015438": {
-      "name": "Nitrogen-free plant nutrient solution for soybean growth",
+      "name": "nitrogen_free_plant_nutrient_solution_for_soybean_growth",
       "filename": "Nitrogen_free_plant_nutrient_solution_for_soybean_growth.yaml",
       "ingredient_count": 4,
       "id": "CultureMech:015438",
       "source": "unknown",
       "categories": [
         "specialized"
+      ]
+    },
+    "CultureMech:015407": {
+      "name": "a1_marine_medium",
+      "filename": "a1_marine_medium.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015407",
+      "source_id": "mediadive.medium:J425",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015482": {
+      "name": "ABB",
+      "filename": "abb.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015482",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015340": {
+      "name": "acetobacterium_medium_marine",
+      "filename": "acetobacterium_medium_marine.yaml",
+      "ingredient_count": 34,
+      "id": "CultureMech:015340",
+      "source_id": "mediadive.medium:135a",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015354": {
+      "name": "acidianus_medium_anaerobic",
+      "filename": "acidianus_medium_anaerobic.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015354",
+      "source_id": "mediadive.medium:358a",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015483": {
+      "name": "ACY",
+      "filename": "acy.yaml",
+      "ingredient_count": 42,
+      "id": "CultureMech:015483",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015484": {
+      "name": "Agro defined trehalose",
+      "filename": "agro_defined_trehalose.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015484",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015485": {
+      "name": "ALP defined",
+      "filename": "alp_defined.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015485",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015486": {
+      "name": "ALP defined chlorate",
+      "filename": "alp_defined_chlorate.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:015486",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015487": {
+      "name": "ALP defined noC",
+      "filename": "alp_defined_noc.yaml",
+      "ingredient_count": 28,
+      "id": "CultureMech:015487",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015488": {
+      "name": "ALP defined noN",
+      "filename": "alp_defined_non.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015488",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015489": {
+      "name": "ALP defined perchlorate",
+      "filename": "alp_defined_perchlorate.yaml",
+      "ingredient_count": 22,
+      "id": "CultureMech:015489",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015490": {
+      "name": "ALP rich",
+      "filename": "alp_rich.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:015490",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015491": {
+      "name": "ALP richB",
+      "filename": "alp_richb.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015491",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015394": {
+      "name": "anaerobic_alkaline_glucose_medium",
+      "filename": "anaerobic_alkaline_glucose_medium.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015394",
+      "source_id": "mediadive.medium:J1228",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
       ],
       "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015381": {
+      "name": "anaerobic_alkaline_lb_medium",
+      "filename": "anaerobic_alkaline_lb_medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015381",
+      "source_id": "mediadive.medium:J1111",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015429": {
+      "name": "anaerobic_alkaline_ye_medium",
+      "filename": "anaerobic_alkaline_ye_medium.yaml",
+      "ingredient_count": 21,
+      "id": "CultureMech:015429",
+      "source_id": "mediadive.medium:J993",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015346": {
+      "name": "anaerobic_azospirillum_medium",
+      "filename": "anaerobic_azospirillum_medium.yaml",
+      "ingredient_count": 20,
+      "id": "CultureMech:015346",
+      "source_id": "mediadive.medium:1701",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015428": {
+      "name": "anaerobic_bicarbonate_buffered_medium_with_phenol",
+      "filename": "anaerobic_bicarbonate_buffered_medium_with_phenol.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015428",
+      "source_id": "mediadive.medium:J981",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015416": {
+      "name": "anaerobic_brain_heart_infusion_broth",
+      "filename": "anaerobic_brain_heart_infusion_broth.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015416",
+      "source_id": "mediadive.medium:J723",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015368": {
+      "name": "anaerobic_cholesterol_medium",
+      "filename": "anaerobic_cholesterol_medium.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015368",
+      "source_id": "mediadive.medium:858",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015397": {
+      "name": "anaerobic_double_strength_r2a_medium",
+      "filename": "anaerobic_double_strength_r2a_medium.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015397",
+      "source_id": "mediadive.medium:J1325",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015355": {
+      "name": "anaerobic_freshwater_fwm_medium",
+      "filename": "anaerobic_freshwater_fwm_medium.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015355",
+      "source_id": "mediadive.medium:503",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015415": {
+      "name": "anaerobic_marine_broth_2216",
+      "filename": "anaerobic_marine_broth_2216.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015415",
+      "source_id": "mediadive.medium:J719",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015380": {
+      "name": "anaerobic_natural_seawater_medium",
+      "filename": "anaerobic_natural_seawater_medium.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015380",
+      "source_id": "mediadive.medium:J1102",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015356": {
+      "name": "anaerobic_seawater_swm_medium",
+      "filename": "anaerobic_seawater_swm_medium.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015356",
+      "source_id": "mediadive.medium:504",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015414": {
+      "name": "anaerobic_sulfolobales_medium",
+      "filename": "anaerobic_sulfolobales_medium.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015414",
+      "source_id": "mediadive.medium:J692",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015338": {
+      "name": "anaerobic_thauera_medium",
+      "filename": "anaerobic_thauera_medium.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015338",
+      "source_id": "mediadive.medium:1315",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015369": {
+      "name": "anaerobic_tryptic_soy_broth_medium",
+      "filename": "anaerobic_tryptic_soy_broth_medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015369",
+      "source_id": "mediadive.medium:869",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015422": {
+      "name": "anaerobic_tyecas_medium",
+      "filename": "anaerobic_tyecas_medium.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015422",
+      "source_id": "mediadive.medium:J858",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015413": {
+      "name": "anaerobic_tyeg_medium",
+      "filename": "anaerobic_tyeg_medium.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015413",
+      "source_id": "mediadive.medium:J684",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015384": {
+      "name": "artficial_marine_water_medium",
+      "filename": "artficial_marine_water_medium.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:015384",
+      "source_id": "mediadive.medium:J1123",
+      "source": "MediaDive",
+      "solution_count": 3,
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015364": {
+      "name": "bacto_marine_agar",
+      "filename": "bacto_marine_agar.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015364",
+      "source_id": "mediadive.medium:604",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015357": {
+      "name": "bacto_marine_broth_difco_2216",
+      "filename": "bacto_marine_broth_difco_2216.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015357",
+      "source_id": "mediadive.medium:514",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015339": {
+      "name": "bacto_marine_broth_with_na_acetate",
+      "filename": "bacto_marine_broth_with_na_acetate.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015339",
+      "source_id": "mediadive.medium:1354",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015365": {
+      "name": "bacto_photobacterium_broth",
+      "filename": "bacto_photobacterium_broth.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015365",
+      "source_id": "mediadive.medium:608",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015492": {
+      "name": "BHI",
+      "filename": "bhi.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:015492",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015493": {
+      "name": "BHIS",
+      "filename": "bhis.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015493",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015494": {
+      "name": "BHIS_CaCl2",
+      "filename": "bhis_cacl2.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015494",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015495": {
+      "name": "BHIS_HOMOPIPES",
+      "filename": "bhis_homopipes.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015495",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015496": {
+      "name": "BHIS_K3",
+      "filename": "bhis_k3.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:015496",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015497": {
+      "name": "BHIS_K3_noGlucose",
+      "filename": "bhis_k3_noglucose.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015497",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015498": {
+      "name": "BHIS_PIPES",
+      "filename": "bhis_pipes.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015498",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015412": {
+      "name": "brewer_anaerobic_agar_with_2_nacl",
+      "filename": "brewer_anaerobic_agar_with_2_nacl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015412",
+      "source_id": "mediadive.medium:J667",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015499": {
+      "name": "Brucella",
+      "filename": "brucella.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015499",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015500": {
+      "name": "CAAc",
+      "filename": "caac.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015500",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015501": {
+      "name": "CaMM noCarbon",
+      "filename": "camm_nocarbon.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015501",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015502": {
+      "name": "Chakraborty Basal",
+      "filename": "chakraborty_basal.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015502",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015503": {
+      "name": "Columbia",
+      "filename": "columbia.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015503",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015504": {
+      "name": "CPG",
+      "filename": "cpg.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015504",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015505": {
+      "name": "CRBTM UGA Aerobic MES",
+      "filename": "crbtm_uga_aerobic_mes.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:015505",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015506": {
+      "name": "CRBTM UGA Aerobic MOPS",
+      "filename": "crbtm_uga_aerobic_mops.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:015506",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015507": {
+      "name": "CRBTM UGA Anaerobic MES",
+      "filename": "crbtm_uga_anaerobic_mes.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015507",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015508": {
+      "name": "CRBTM UGA Anaerobic MOPS",
+      "filename": "crbtm_uga_anaerobic_mops.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015508",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015349": {
+      "name": "cytophaga_marine_medium",
+      "filename": "cytophaga_marine_medium.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015349",
+      "source_id": "mediadive.medium:172",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015509": {
+      "name": "DefinedMedia AdamsLab Glucose",
+      "filename": "definedmedia_adamslab_glucose.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015509",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015510": {
+      "name": "DefinedMedia AdamsLab Glucose YeastExtract",
+      "filename": "definedmedia_adamslab_glucose_yeastextract.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015510",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015350": {
+      "name": "desulfobulbus_sp_medium_marine",
+      "filename": "desulfobulbus_sp_medium_marine.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015350",
+      "source_id": "mediadive.medium:195b",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015419": {
+      "name": "desulfovibrio_marine_medium",
+      "filename": "desulfovibrio_marine_medium.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:015419",
+      "source_id": "mediadive.medium:J750",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015411": {
+      "name": "diluted_marine_agar",
+      "filename": "diluted_marine_agar.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015411",
+      "source_id": "mediadive.medium:J644",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015511": {
+      "name": "DinoMM alphaKetoGlutAcid NoNitrogen",
+      "filename": "dinomm_alphaketoglutacid_nonitrogen.yaml",
+      "ingredient_count": 27,
+      "id": "CultureMech:015511",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015512": {
+      "name": "DinoMM noCarbon",
+      "filename": "dinomm_nocarbon.yaml",
+      "ingredient_count": 27,
+      "id": "CultureMech:015512",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015513": {
+      "name": "DinoMM noNitrogen",
+      "filename": "dinomm_nonitrogen.yaml",
+      "ingredient_count": 27,
+      "id": "CultureMech:015513",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015514": {
+      "name": "DM",
+      "filename": "dm.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015514",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015515": {
+      "name": "dNMS",
+      "filename": "dnms.yaml",
+      "ingredient_count": 25,
+      "id": "CultureMech:015515",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015516": {
+      "name": "Dv base medium",
+      "filename": "dv_base_medium.yaml",
+      "ingredient_count": 28,
+      "id": "CultureMech:015516",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015517": {
+      "name": "Dv base medium no Mo",
+      "filename": "dv_base_medium_no_mo.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015517",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015518": {
+      "name": "Dv base medium no Mo no W",
+      "filename": "dv_base_medium_no_mo_no_w.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015518",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015519": {
+      "name": "Dv base medium no W",
+      "filename": "dv_base_medium_no_w.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015519",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015520": {
+      "name": "Dv base Y medium",
+      "filename": "dv_base_y_medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015520",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015521": {
+      "name": "Dv base Y medium no Fe",
+      "filename": "dv_base_y_medium_no_fe.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015521",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015522": {
+      "name": "EMM",
+      "filename": "emm.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015522",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015523": {
+      "name": "EMM noCarbon",
+      "filename": "emm_nocarbon.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:015523",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015404": {
+      "name": "fe_iii_reducer_marine_enrichment_medium",
+      "filename": "fe_iii_reducer_marine_enrichment_medium.yaml",
+      "ingredient_count": 24,
+      "id": "CultureMech:015404",
+      "source_id": "mediadive.medium:J411",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015524": {
+      "name": "FilteredGW Cell lysate 1/250",
+      "filename": "filteredgw_cell_lysate_1_250.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015524",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015525": {
+      "name": "FilteredGW Cell lysate 1/2500",
+      "filename": "filteredgw_cell_lysate_1_2500.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015525",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015526": {
+      "name": "FilteredGW noC",
+      "filename": "filteredgw_noc.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015526",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015347": {
+      "name": "gam_broth_gifu_anaerobic_medium_broth",
+      "filename": "gam_broth_gifu_anaerobic_medium_broth.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015347",
+      "source_id": "mediadive.medium:1713",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015348": {
+      "name": "gam_broth_mod_gifu_anaerobic_medium_broth_modified",
+      "filename": "gam_broth_mod_gifu_anaerobic_medium_broth_modified.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015348",
+      "source_id": "mediadive.medium:1715",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015527": {
+      "name": "growth medium 707",
+      "filename": "growth_medium_707.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015527",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015358": {
+      "name": "half_strength_bacto_marine_broth",
+      "filename": "half_strength_bacto_marine_broth.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015358",
+      "source_id": "mediadive.medium:514a",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015362": {
+      "name": "half_strength_bacto_marine_broth_with_50_seawater",
+      "filename": "half_strength_bacto_marine_broth_with_50_seawater.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015362",
+      "source_id": "mediadive.medium:514g",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015425": {
+      "name": "half_strength_marine_agar",
+      "filename": "half_strength_marine_agar.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015425",
+      "source_id": "mediadive.medium:J916",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015420": {
+      "name": "half_strength_marine_medium_with_1_0_nacl",
+      "filename": "half_strength_marine_medium_with_1_0_nacl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015420",
+      "source_id": "mediadive.medium:J762",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015528": {
+      "name": "Hans Basal Media",
+      "filename": "hans_basal_media.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015528",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015529": {
+      "name": "Hans Basal Media bicarb",
+      "filename": "hans_basal_media_bicarb.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015529",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015530": {
+      "name": "Hans Basal Media bicarb nitrate",
+      "filename": "hans_basal_media_bicarb_nitrate.yaml",
+      "ingredient_count": 34,
+      "id": "CultureMech:015530",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015531": {
+      "name": "Hans Basal Media plus 0.2x 20AA mix",
+      "filename": "hans_basal_media_plus_0_2x_20aa_mix.yaml",
+      "ingredient_count": 53,
+      "id": "CultureMech:015531",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015423": {
+      "name": "ird_marine_clostrida_medium",
+      "filename": "ird_marine_clostrida_medium.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:015423",
+      "source_id": "mediadive.medium:J909",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015427": {
+      "name": "ird_marine_clostridia_medium_2",
+      "filename": "ird_marine_clostridia_medium_2.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:015427",
+      "source_id": "mediadive.medium:J938",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015374": {
+      "name": "ird_marine_desulfovibrio_medium",
+      "filename": "ird_marine_desulfovibrio_medium.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:015374",
+      "source_id": "mediadive.medium:J1043",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015382": {
+      "name": "ird_marine_desulfovibrio_medium_2",
+      "filename": "ird_marine_desulfovibrio_medium_2.yaml",
+      "ingredient_count": 22,
+      "id": "CultureMech:015382",
+      "source_id": "mediadive.medium:J1116",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015383": {
+      "name": "ird_marine_desulfovibrio_medium_3",
+      "filename": "ird_marine_desulfovibrio_medium_3.yaml",
+      "ingredient_count": 22,
+      "id": "CultureMech:015383",
+      "source_id": "mediadive.medium:J1117",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015532": {
+      "name": "JBEI Ralstonia defined",
+      "filename": "jbei_ralstonia_defined.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:015532",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015533": {
+      "name": "KB",
+      "filename": "kb.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015533",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015534": {
+      "name": "KB-half",
+      "filename": "kb_half.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015534",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015535": {
+      "name": "LS4D",
+      "filename": "ls4d.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015535",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015536": {
+      "name": "M2 noCarbon",
+      "filename": "m2_nocarbon.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:015536",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015537": {
+      "name": "M2 noNitrogen",
+      "filename": "m2_nonitrogen.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:015537",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015538": {
+      "name": "M5G",
+      "filename": "m5g.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:015538",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015539": {
+      "name": "M63 no sulfur",
+      "filename": "m63_no_sulfur.yaml",
+      "ingredient_count": 20,
+      "id": "CultureMech:015539",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015540": {
+      "name": "M63 quarter strength",
+      "filename": "m63_quarter_strength.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:015540",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015541": {
+      "name": "M63 quarter strength noCarbon",
+      "filename": "m63_quarter_strength_nocarbon.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015541",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015542": {
+      "name": "M9",
+      "filename": "m9.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:015542",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015543": {
+      "name": "M9 1percentGlucose",
+      "filename": "m9_1percentglucose.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:015543",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015544": {
+      "name": "M9 2percentGlucose 100mMammonium",
+      "filename": "m9_2percentglucose_100mmammonium.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:015544",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015545": {
+      "name": "M9 5mM Glucose",
+      "filename": "m9_5mm_glucose.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:015545",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015546": {
+      "name": "M9-D2O",
+      "filename": "m9_d2o.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015546",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015547": {
+      "name": "M9 minimal media aromix noCarbon",
+      "filename": "m9_minimal_media_aromix_nocarbon.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:015547",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015548": {
+      "name": "M9 minimal media noCarbon",
+      "filename": "m9_minimal_media_nocarbon.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015548",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015549": {
+      "name": "M9 minimal media noNitrogen",
+      "filename": "m9_minimal_media_nonitrogen.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015549",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015550": {
+      "name": "M9 minimal media plus",
+      "filename": "m9_minimal_media_plus.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015550",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015551": {
+      "name": "M9 plus defined noCarbon",
+      "filename": "m9_plus_defined_nocarbon.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015551",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015552": {
+      "name": "M9 Thauers",
+      "filename": "m9_thauers.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015552",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015553": {
+      "name": "M9 Thauers noBiotin",
+      "filename": "m9_thauers_nobiotin.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015553",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015335": {
+      "name": "marine_agar",
+      "filename": "marine_agar.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015335",
+      "source_id": "mediadive.medium:123",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015393": {
+      "name": "marine_agar_2216",
+      "filename": "marine_agar_2216.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015393",
+      "source_id": "mediadive.medium:J118",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015371": {
+      "name": "marine_agar_2216_ph_8_5",
+      "filename": "marine_agar_2216_ph_8_5.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015371",
+      "source_id": "mediadive.medium:J1001",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015373": {
+      "name": "marine_agar_2216_ph_9_0",
+      "filename": "marine_agar_2216_ph_9_0.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015373",
+      "source_id": "mediadive.medium:J1016",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015418": {
+      "name": "marine_agar_2216_with_10_nacl",
+      "filename": "marine_agar_2216_with_10_nacl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015418",
+      "source_id": "mediadive.medium:J733",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015426": {
+      "name": "marine_agar_2216_with_1_nacl",
+      "filename": "marine_agar_2216_with_1_nacl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015426",
+      "source_id": "mediadive.medium:J922",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015387": {
+      "name": "marine_agar_2216_with_1_starch",
+      "filename": "marine_agar_2216_with_1_starch.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015387",
+      "source_id": "mediadive.medium:J1164",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015400": {
+      "name": "marine_agar_2216_with_3_1_nacl",
+      "filename": "marine_agar_2216_with_3_1_nacl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015400",
+      "source_id": "mediadive.medium:J357",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015417": {
+      "name": "marine_agar_2216_with_5_nacl",
+      "filename": "marine_agar_2216_with_5_nacl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015417",
+      "source_id": "mediadive.medium:J732",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015372": {
+      "name": "marine_agar_2216_with_8_0_nacl",
+      "filename": "marine_agar_2216_with_8_0_nacl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015372",
+      "source_id": "mediadive.medium:J1015",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015410": {
+      "name": "marine_agar_2216_with_8_nacl",
+      "filename": "marine_agar_2216_with_8_nacl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015410",
+      "source_id": "mediadive.medium:J532",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015421": {
+      "name": "marine_agar_with_1_tween_20",
+      "filename": "marine_agar_with_1_tween_20.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015421",
+      "source_id": "mediadive.medium:J768",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015337": {
+      "name": "marine_ammonium_mineral_salts",
+      "filename": "marine_ammonium_mineral_salts.yaml",
+      "ingredient_count": 27,
+      "id": "CultureMech:015337",
+      "source_id": "mediadive.medium:1313",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015376": {
+      "name": "marine_aob_medium_a",
+      "filename": "marine_aob_medium_a.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015376",
+      "source_id": "mediadive.medium:J1055",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015377": {
+      "name": "marine_aob_medium_b",
+      "filename": "marine_aob_medium_b.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015377",
+      "source_id": "mediadive.medium:J1056",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015554": {
+      "name": "marine broth 2216",
+      "filename": "marine_broth_2216.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015554",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015385": {
+      "name": "marine_broth_2216_with_cellobiose",
+      "filename": "marine_broth_2216_with_cellobiose.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015385",
+      "source_id": "mediadive.medium:J1127",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015395": {
+      "name": "marine_broth_2216_with_pyruvate",
+      "filename": "marine_broth_2216_with_pyruvate.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015395",
+      "source_id": "mediadive.medium:J1244",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015360": {
+      "name": "marine_broth_anaerob",
+      "filename": "marine_broth_anaerob.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015360",
+      "source_id": "mediadive.medium:514e",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015361": {
+      "name": "marine_broth_roth_cp73",
+      "filename": "marine_broth_roth_cp73.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015361",
+      "source_id": "mediadive.medium:514f",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015363": {
+      "name": "marine_caulobacter_medium",
+      "filename": "marine_caulobacter_medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015363",
+      "source_id": "mediadive.medium:601",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015391": {
+      "name": "marine_chloroflexi_medium",
+      "filename": "marine_chloroflexi_medium.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015391",
+      "source_id": "mediadive.medium:J1188",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015390": {
+      "name": "marine_clostridium_medium",
+      "filename": "marine_clostridium_medium.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015390",
+      "source_id": "mediadive.medium:J1187",
+      "source": "MediaDive",
+      "solution_count": 1,
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015403": {
+      "name": "marine_desulfosarcina_medium",
+      "filename": "marine_desulfosarcina_medium.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015403",
+      "source_id": "mediadive.medium:J391",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015336": {
+      "name": "marine_medium_with_pyruvate",
+      "filename": "marine_medium_with_pyruvate.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015336",
+      "source_id": "mediadive.medium:1303",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015401": {
+      "name": "marine_medium_with_sulfur",
+      "filename": "marine_medium_with_sulfur.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:015401",
+      "source_id": "mediadive.medium:J375",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015402": {
+      "name": "marine_medium_with_thiosulfate",
+      "filename": "marine_medium_with_thiosulfate.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015402",
+      "source_id": "mediadive.medium:J376",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015389": {
+      "name": "marine_methanobacterium_medium",
+      "filename": "marine_methanobacterium_medium.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015389",
+      "source_id": "mediadive.medium:J1186",
+      "source": "MediaDive",
+      "solution_count": 1,
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015379": {
+      "name": "marine_srb_medium",
+      "filename": "marine_srb_medium.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:015379",
+      "source_id": "mediadive.medium:J1073",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015367": {
+      "name": "marine_thermococcus_medium",
+      "filename": "marine_thermococcus_medium.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015367",
+      "source_id": "mediadive.medium:760",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015343": {
+      "name": "marines_planctomyces_medium",
+      "filename": "marines_planctomyces_medium.yaml",
+      "ingredient_count": 45,
+      "id": "CultureMech:015343",
+      "source_id": "mediadive.medium:1560",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015345": {
+      "name": "marines_planctomyces_medium_modified_i",
+      "filename": "marines_planctomyces_medium_modified_i.yaml",
+      "ingredient_count": 45,
+      "id": "CultureMech:015345",
+      "source_id": "mediadive.medium:1695",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015555": {
+      "name": "Mc defined formate",
+      "filename": "mc_defined_formate.yaml",
+      "ingredient_count": 26,
+      "id": "CultureMech:015555",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015556": {
+      "name": "Mc defined H2",
+      "filename": "mc_defined_h2.yaml",
+      "ingredient_count": 25,
+      "id": "CultureMech:015556",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015557": {
+      "name": "Mc formate",
+      "filename": "mc_formate.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015557",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015558": {
+      "name": "Mc formate N Free",
+      "filename": "mc_formate_n_free.yaml",
+      "ingredient_count": 36,
+      "id": "CultureMech:015558",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015559": {
+      "name": "Mc H2 N Free",
+      "filename": "mc_h2_n_free.yaml",
+      "ingredient_count": 25,
+      "id": "CultureMech:015559",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015560": {
+      "name": "McAA formate",
+      "filename": "mcaa_formate.yaml",
+      "ingredient_count": 57,
+      "id": "CultureMech:015560",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015561": {
+      "name": "McAA formate No B12",
+      "filename": "mcaa_formate_no_b12.yaml",
+      "ingredient_count": 58,
+      "id": "CultureMech:015561",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015562": {
+      "name": "McAA formate No biotin",
+      "filename": "mcaa_formate_no_biotin.yaml",
+      "ingredient_count": 58,
+      "id": "CultureMech:015562",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015563": {
+      "name": "McAA formate No CaPantothenate",
+      "filename": "mcaa_formate_no_capantothenate.yaml",
+      "ingredient_count": 58,
+      "id": "CultureMech:015563",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015564": {
+      "name": "McAA formate No FolicAcid",
+      "filename": "mcaa_formate_no_folicacid.yaml",
+      "ingredient_count": 58,
+      "id": "CultureMech:015564",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015565": {
+      "name": "McAA formate No lipolicAcid",
+      "filename": "mcaa_formate_no_lipolicacid.yaml",
+      "ingredient_count": 58,
+      "id": "CultureMech:015565",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015566": {
+      "name": "McAA formate No NicotinicAcid",
+      "filename": "mcaa_formate_no_nicotinicacid.yaml",
+      "ingredient_count": 58,
+      "id": "CultureMech:015566",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015567": {
+      "name": "McAA formate No pABA",
+      "filename": "mcaa_formate_no_paba.yaml",
+      "ingredient_count": 58,
+      "id": "CultureMech:015567",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015568": {
+      "name": "McAA formate No Pyroxidine",
+      "filename": "mcaa_formate_no_pyroxidine.yaml",
+      "ingredient_count": 58,
+      "id": "CultureMech:015568",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015569": {
+      "name": "McAA formate No Riboflavin",
+      "filename": "mcaa_formate_no_riboflavin.yaml",
+      "ingredient_count": 58,
+      "id": "CultureMech:015569",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015570": {
+      "name": "McAA formate No Thiamine",
+      "filename": "mcaa_formate_no_thiamine.yaml",
+      "ingredient_count": 58,
+      "id": "CultureMech:015570",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015571": {
+      "name": "McCas",
+      "filename": "mccas.yaml",
+      "ingredient_count": 36,
+      "id": "CultureMech:015571",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015572": {
+      "name": "McCas formate complete",
+      "filename": "mccas_formate_complete.yaml",
+      "ingredient_count": 38,
+      "id": "CultureMech:015572",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015573": {
+      "name": "McCas formate Fe Free",
+      "filename": "mccas_formate_fe_free.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015573",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015574": {
+      "name": "McCas formate SO4",
+      "filename": "mccas_formate_so4.yaml",
+      "ingredient_count": 39,
+      "id": "CultureMech:015574",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015575": {
+      "name": "McCas formate SO4Free BicarbFree",
+      "filename": "mccas_formate_so4free_bicarbfree.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015575",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015576": {
+      "name": "McCas H2 complete",
+      "filename": "mccas_h2_complete.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015576",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015577": {
+      "name": "McCas H2 Fe Free",
+      "filename": "mccas_h2_fe_free.yaml",
+      "ingredient_count": 36,
+      "id": "CultureMech:015577",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015578": {
+      "name": "McCas H2 No Na2S",
+      "filename": "mccas_h2_no_na2s.yaml",
+      "ingredient_count": 36,
+      "id": "CultureMech:015578",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015579": {
+      "name": "McCas MOPS",
+      "filename": "mccas_mops.yaml",
+      "ingredient_count": 38,
+      "id": "CultureMech:015579",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015580": {
+      "name": "MDC",
+      "filename": "mdc.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015580",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015581": {
+      "name": "MDC bicarb",
+      "filename": "mdc_bicarb.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015581",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015344": {
+      "name": "medium_for_broad_range_phototrophic_bacteria",
+      "filename": "medium_for_broad_range_phototrophic_bacteria.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015344",
+      "source_id": "mediadive.medium:1561",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015366": {
+      "name": "medium_for_marine_methylotrophs",
+      "filename": "medium_for_marine_methylotrophs.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:015366",
+      "source_id": "mediadive.medium:750",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015386": {
+      "name": "medium_for_marine_spirochaetes",
+      "filename": "medium_for_marine_spirochaetes.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:015386",
+      "source_id": "mediadive.medium:J1150",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015582": {
+      "name": "Mega",
+      "filename": "mega.yaml",
+      "ingredient_count": 48,
+      "id": "CultureMech:015582",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015583": {
+      "name": "MELiSSA defined 50mMCarbonate noCarbon",
+      "filename": "melissa_defined_50mmcarbonate_nocarbon.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015583",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015584": {
+      "name": "MELiSSA defined Malic noNitrogen phosphatebuffered",
+      "filename": "melissa_defined_malic_nonitrogen_phosphatebuffered.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015584",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015585": {
+      "name": "MELiSSA defined noCarbon",
+      "filename": "melissa_defined_nocarbon.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015585",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015586": {
+      "name": "MELiSSA defined noCarbon noNitrogen phosphatebuffered",
+      "filename": "melissa_defined_nocarbon_nonitrogen_phosphatebuffered.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015586",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015587": {
+      "name": "MG minimal media",
+      "filename": "mg_minimal_media.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015587",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015588": {
+      "name": "MG minimal media noCarbon",
+      "filename": "mg_minimal_media_nocarbon.yaml",
+      "ingredient_count": 26,
+      "id": "CultureMech:015588",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015589": {
+      "name": "MG minimal media noIron",
+      "filename": "mg_minimal_media_noiron.yaml",
+      "ingredient_count": 27,
+      "id": "CultureMech:015589",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015590": {
+      "name": "mGAM",
+      "filename": "mgam.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015590",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015591": {
+      "name": "mGAM plus",
+      "filename": "mgam_plus.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015591",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015592": {
+      "name": "MGL",
+      "filename": "mgl.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015592",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015593": {
+      "name": "MHII",
+      "filename": "mhii.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015593",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015594": {
+      "name": "MHII biocarbonate",
+      "filename": "mhii_biocarbonate.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015594",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015595": {
+      "name": "MHII biocarbonate Chelated",
+      "filename": "mhii_biocarbonate_chelated.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015595",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015596": {
+      "name": "MHII biocarbonate serum",
+      "filename": "mhii_biocarbonate_serum.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:015596",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015597": {
+      "name": "MHII biocarbonate serum Chelated",
+      "filename": "mhii_biocarbonate_serum_chelated.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:015597",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015598": {
+      "name": "MHII Chelated",
+      "filename": "mhii_chelated.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015598",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015599": {
+      "name": "MME noCarbon",
+      "filename": "mme_nocarbon.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015599",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015600": {
+      "name": "MME noNitrogen noCarbon",
+      "filename": "mme_nonitrogen_nocarbon.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015600",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015601": {
+      "name": "MMX casamino",
+      "filename": "mmx_casamino.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015601",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015602": {
+      "name": "MMX dropout",
+      "filename": "mmx_dropout.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015602",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015359": {
+      "name": "modified_bacto_marine_broth",
+      "filename": "modified_bacto_marine_broth.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:015359",
+      "source_id": "mediadive.medium:514d",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015341": {
+      "name": "modified_bacto_marine_broth_difco_2216",
+      "filename": "modified_bacto_marine_broth_difco_2216.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015341",
+      "source_id": "mediadive.medium:1517",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015396": {
+      "name": "modified_marine_agar_2216",
+      "filename": "modified_marine_agar_2216.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015396",
+      "source_id": "mediadive.medium:J1251",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015392": {
+      "name": "modified_marine_agar_2216_with_5_nacl_ph_9",
+      "filename": "modified_marine_agar_2216_with_5_nacl_ph_9.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015392",
+      "source_id": "mediadive.medium:J1189",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015405": {
+      "name": "modified_marine_medium",
+      "filename": "modified_marine_medium.yaml",
+      "ingredient_count": 24,
+      "id": "CultureMech:015405",
+      "source_id": "mediadive.medium:J416",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015409": {
+      "name": "modified_marine_medium_for_desulfovibrio_tokyoensis",
+      "filename": "modified_marine_medium_for_desulfovibrio_tokyoensis.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015409",
+      "source_id": "mediadive.medium:J502",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015408": {
+      "name": "modified_marine_medium_for_dethiosulfobacter",
+      "filename": "modified_marine_medium_for_dethiosulfobacter.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015408",
+      "source_id": "mediadive.medium:J501",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015388": {
+      "name": "modified_medium_for_marine_spirochaetes",
+      "filename": "modified_medium_for_marine_spirochaetes.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015388",
+      "source_id": "mediadive.medium:J1172",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015603": {
+      "name": "Modified MS plus RCH2 0.2x each",
+      "filename": "modified_ms_plus_rch2_0_2x_each.yaml",
+      "ingredient_count": 42,
+      "id": "CultureMech:015603",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015604": {
+      "name": "Modified MS plus RCH2 0.2x each no Nitrate",
+      "filename": "modified_ms_plus_rch2_0_2x_each_no_nitrate.yaml",
+      "ingredient_count": 40,
+      "id": "CultureMech:015604",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015605": {
+      "name": "Modified YM",
+      "filename": "modified_ym.yaml",
+      "ingredient_count": 27,
+      "id": "CultureMech:015605",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015606": {
+      "name": "MOKA",
+      "filename": "moka.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015606",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015607": {
+      "name": "MoLS4",
+      "filename": "mols4.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015607",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015608": {
+      "name": "MoLS4 no ammonia",
+      "filename": "mols4_no_ammonia.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015608",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015609": {
+      "name": "MoLS4 no ammonium",
+      "filename": "mols4_no_ammonium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015609",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015610": {
+      "name": "MoLS4 no ammonium no Mo",
+      "filename": "mols4_no_ammonium_no_mo.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015610",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015611": {
+      "name": "MoLS4 no ammonium no Mo no W",
+      "filename": "mols4_no_ammonium_no_mo_no_w.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015611",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015612": {
+      "name": "MoLS4 no ammonium no W",
+      "filename": "mols4_no_ammonium_no_w.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015612",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015613": {
+      "name": "MoLS4 no ammonnia noEDTA",
+      "filename": "mols4_no_ammonnia_noedta.yaml",
+      "ingredient_count": 28,
+      "id": "CultureMech:015613",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015614": {
+      "name": "MoLS4 no B12",
+      "filename": "mols4_no_b12.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015614",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015615": {
+      "name": "MoLS4 no Biotin",
+      "filename": "mols4_no_biotin.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015615",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015616": {
+      "name": "MoLS4 no Choline chloride",
+      "filename": "mols4_no_choline_chloride.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015616",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015617": {
+      "name": "MoLS4 no Folic acid",
+      "filename": "mols4_no_folic_acid.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015617",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015618": {
+      "name": "MoLS4 no lactate",
+      "filename": "mols4_no_lactate.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015618",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015619": {
+      "name": "MoLS4 no lipoic acid",
+      "filename": "mols4_no_lipoic_acid.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015619",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015620": {
+      "name": "MoLS4 no Mo",
+      "filename": "mols4_no_mo.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015620",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015621": {
+      "name": "MoLS4 no Mo no W",
+      "filename": "mols4_no_mo_no_w.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015621",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015622": {
+      "name": "MoLS4 no nicotinic acid",
+      "filename": "mols4_no_nicotinic_acid.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015622",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015623": {
+      "name": "MoLS4 no Pantothenic acid",
+      "filename": "mols4_no_pantothenic_acid.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015623",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015624": {
+      "name": "MoLS4 no Pyridoxine",
+      "filename": "mols4_no_pyridoxine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015624",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015625": {
+      "name": "MoLS4 no sulfide",
+      "filename": "mols4_no_sulfide.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015625",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015626": {
+      "name": "MoLS4 no thiamine",
+      "filename": "mols4_no_thiamine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015626",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015627": {
+      "name": "MoLS4 no vitamins",
+      "filename": "mols4_no_vitamins.yaml",
+      "ingredient_count": 19,
+      "id": "CultureMech:015627",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015628": {
+      "name": "MoLS4 no W",
+      "filename": "mols4_no_w.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015628",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015629": {
+      "name": "MOPS minimal media Glucose20mM",
+      "filename": "mops_minimal_media_glucose20mm.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015629",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015630": {
+      "name": "MOPS minimal media Glucose noNitrogen",
+      "filename": "mops_minimal_media_glucose_nonitrogen.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015630",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015631": {
+      "name": "MOPS minimal media noCarbon",
+      "filename": "mops_minimal_media_nocarbon.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015631",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015632": {
+      "name": "MOPS minimal media Succinate noNitrogen",
+      "filename": "mops_minimal_media_succinate_nonitrogen.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015632",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015633": {
+      "name": "MOPS Rich Defined media noCarbon",
+      "filename": "mops_rich_defined_media_nocarbon.yaml",
+      "ingredient_count": 45,
+      "id": "CultureMech:015633",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015634": {
+      "name": "MoYLS4",
+      "filename": "moyls4.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015634",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015635": {
+      "name": "MoYLS4 no iron",
+      "filename": "moyls4_no_iron.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015635",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015636": {
+      "name": "MRS",
+      "filename": "mrs.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:015636",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015637": {
+      "name": "MRS_noGlucose",
+      "filename": "mrs_noglucose.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:015637",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015638": {
+      "name": "MRS_recovery",
+      "filename": "mrs_recovery.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015638",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015639": {
+      "name": "MS Basal Salts Robin",
+      "filename": "ms_basal_salts_robin.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015639",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015640": {
+      "name": "MS Basal Salts Robin 0.5x",
+      "filename": "ms_basal_salts_robin_0_5x.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015640",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015641": {
+      "name": "MS Basal Salts Robin LowPhosphate 0.5x",
+      "filename": "ms_basal_salts_robin_lowphosphate_0_5x.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015641",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015642": {
+      "name": "MS media",
+      "filename": "ms_media.yaml",
+      "ingredient_count": 20,
+      "id": "CultureMech:015642",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015643": {
+      "name": "MS media noCarbon",
+      "filename": "ms_media_nocarbon.yaml",
+      "ingredient_count": 19,
+      "id": "CultureMech:015643",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015644": {
+      "name": "MSB",
+      "filename": "msb.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015644",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015645": {
+      "name": "MTM noNitrogen noCarbon",
+      "filename": "mtm_nonitrogen_nocarbon.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015645",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015646": {
+      "name": "Nematode growth medium agar",
+      "filename": "nematode_growth_medium_agar.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:015646",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015647": {
+      "name": "NF",
+      "filename": "nf.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:015647",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015648": {
+      "name": "NF with10percent fullN",
+      "filename": "nf_with10percent_fulln.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:015648",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015649": {
+      "name": "NF with fullN",
+      "filename": "nf_with_fulln.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:015649",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015650": {
+      "name": "NFM",
+      "filename": "nfm.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015650",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015651": {
+      "name": "NFM No Mo",
+      "filename": "nfm_no_mo.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015651",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015652": {
+      "name": "NFM No Mo Plus VCl3",
+      "filename": "nfm_no_mo_plus_vcl3.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015652",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015437": {
+      "name": "nitrogen_free_b_d_medium_for_lotus_japonicus_growth",
+      "filename": "nitrogen_free_b_d_medium_for_lotus_japonicus_growth.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015437",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015653": {
+      "name": "NL-CCM",
+      "filename": "nl_ccm.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:015653",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015654": {
+      "name": "NLDM_defined",
+      "filename": "nldm_defined.yaml",
+      "ingredient_count": 95,
+      "id": "CultureMech:015654",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015655": {
+      "name": "NLDM_defined_no_iron",
+      "filename": "nldm_defined_no_iron.yaml",
+      "ingredient_count": 99,
+      "id": "CultureMech:015655",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015656": {
+      "name": "NLDM_defined_no_P",
+      "filename": "nldm_defined_no_p.yaml",
+      "ingredient_count": 93,
+      "id": "CultureMech:015656",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015657": {
+      "name": "NLDM_defined_nocarbon",
+      "filename": "nldm_defined_nocarbon.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015657",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015658": {
+      "name": "NLDM_defined_nocarbon_novitamin",
+      "filename": "nldm_defined_nocarbon_novitamin.yaml",
+      "ingredient_count": 21,
+      "id": "CultureMech:015658",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015659": {
+      "name": "NLDM_defined_nocarbon_pH4",
+      "filename": "nldm_defined_nocarbon_ph4.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015659",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015660": {
+      "name": "NLDM_defined_nocarbon_pH4.5",
+      "filename": "nldm_defined_nocarbon_ph4_5.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015660",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015661": {
+      "name": "NLDM_defined_nocarbon_pH5",
+      "filename": "nldm_defined_nocarbon_ph5.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015661",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015662": {
+      "name": "NLDM_defined_nocarbon_pH6",
+      "filename": "nldm_defined_nocarbon_ph6.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015662",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015663": {
+      "name": "NLDM_defined_nocarbon_pH7",
+      "filename": "nldm_defined_nocarbon_ph7.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015663",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015664": {
+      "name": "NLDM_defined_nocarbon_pH8",
+      "filename": "nldm_defined_nocarbon_ph8.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015664",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015665": {
+      "name": "NLDM_defined_novitamin",
+      "filename": "nldm_defined_novitamin.yaml",
+      "ingredient_count": 85,
+      "id": "CultureMech:015665",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015666": {
+      "name": "NLDM_defined_pH4",
+      "filename": "nldm_defined_ph4.yaml",
+      "ingredient_count": 95,
+      "id": "CultureMech:015666",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015667": {
+      "name": "NLDM_defined_pH4.5",
+      "filename": "nldm_defined_ph4_5.yaml",
+      "ingredient_count": 95,
+      "id": "CultureMech:015667",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015668": {
+      "name": "NLDM_defined_pH5",
+      "filename": "nldm_defined_ph5.yaml",
+      "ingredient_count": 95,
+      "id": "CultureMech:015668",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015669": {
+      "name": "NLDM_defined_pH6",
+      "filename": "nldm_defined_ph6.yaml",
+      "ingredient_count": 95,
+      "id": "CultureMech:015669",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015670": {
+      "name": "NLDM_defined_pH7",
+      "filename": "nldm_defined_ph7.yaml",
+      "ingredient_count": 95,
+      "id": "CultureMech:015670",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015671": {
+      "name": "NLDM_defined_pH8",
+      "filename": "nldm_defined_ph8.yaml",
+      "ingredient_count": 95,
+      "id": "CultureMech:015671",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015672": {
+      "name": "NLN",
+      "filename": "nln.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:015672",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015673": {
+      "name": "NMS",
+      "filename": "nms.yaml",
+      "ingredient_count": 21,
+      "id": "CultureMech:015673",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015674": {
+      "name": "NoS",
+      "filename": "nos.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015674",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015675": {
+      "name": "PBS",
+      "filename": "pbs.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015675",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015353": {
+      "name": "photobacterium_medium",
+      "filename": "photobacterium_medium.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015353",
+      "source_id": "mediadive.medium:32",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015333": {
+      "name": "phototrophic_medium",
+      "filename": "phototrophic_medium.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015333",
+      "source_id": "mediadive.medium:1129",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015676": {
+      "name": "PIPES ion free glucose ph 7",
+      "filename": "pipes_ion_free_glucose_ph_7.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:015676",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015677": {
+      "name": "Planctomyces medium DSMZ1560",
+      "filename": "planctomyces_medium_dsmz1560.yaml",
+      "ingredient_count": 48,
+      "id": "CultureMech:015677",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015678": {
+      "name": "PM",
+      "filename": "pm.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015678",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015679": {
+      "name": "PM acetate",
+      "filename": "pm_acetate.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015679",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015680": {
+      "name": "PM argon",
+      "filename": "pm_argon.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015680",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015681": {
+      "name": "PM argon75 N2O25",
+      "filename": "pm_argon75_n2o25.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015681",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015682": {
+      "name": "PM N2O",
+      "filename": "pm_n2o.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015682",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015683": {
+      "name": "Potato Dextrose Broth",
+      "filename": "potato_dextrose_broth.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015683",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015684": {
+      "name": "Pro99 seawater",
+      "filename": "pro99_seawater.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:015684",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015351": {
+      "name": "propionigenium_modestum_medium_marine",
+      "filename": "propionigenium_modestum_medium_marine.yaml",
+      "ingredient_count": 19,
+      "id": "CultureMech:015351",
+      "source_id": "mediadive.medium:293",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015685": {
+      "name": "PYE",
+      "filename": "pye.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015685",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015686": {
+      "name": "PYE_noCalcium",
+      "filename": "pye_nocalcium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015686",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015399": {
+      "name": "pygv_marine_medium_a",
+      "filename": "pygv_marine_medium_a.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015399",
+      "source_id": "mediadive.medium:J304",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015378": {
+      "name": "pygv_marine_medium_b",
+      "filename": "pygv_marine_medium_b.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:015378",
+      "source_id": "mediadive.medium:J1059",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015375": {
+      "name": "quarter_strength_marine_broth_2216",
+      "filename": "quarter_strength_marine_broth_2216.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015375",
+      "source_id": "mediadive.medium:J1049",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015687": {
+      "name": "R2A",
+      "filename": "r2a.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015687",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015688": {
+      "name": "R2A_.1x",
+      "filename": "r2a_1x.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015688",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015689": {
+      "name": "R2A_20mM_Nitrate",
+      "filename": "r2a_20mm_nitrate.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015689",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015690": {
+      "name": "R2A_HEPES",
+      "filename": "r2a_hepes.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015690",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015691": {
+      "name": "R2A_high_K2HPO4",
+      "filename": "r2a_high_k2hpo4.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015691",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015692": {
+      "name": "R2A_HOMOPIPES",
+      "filename": "r2a_homopipes.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015692",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015693": {
+      "name": "R2A_Kan10_Lactate",
+      "filename": "r2a_kan10_lactate.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015693",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015694": {
+      "name": "R2A_Kan10_Tween01_Cycloheximide200",
+      "filename": "r2a_kan10_tween01_cycloheximide200.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015694",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015695": {
+      "name": "R2A_Kan50_Tween01_Cycloheximide200",
+      "filename": "r2a_kan50_tween01_cycloheximide200.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015695",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015696": {
+      "name": "R2A_low_K2HPO4",
+      "filename": "r2a_low_k2hpo4.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015696",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015697": {
+      "name": "R2A_MES",
+      "filename": "r2a_mes.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015697",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015698": {
+      "name": "R2A_PIPES",
+      "filename": "r2a_pipes.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015698",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015699": {
+      "name": "RCH2 defined",
+      "filename": "rch2_defined.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015699",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015700": {
+      "name": "RCH2 defined 1percent glucose",
+      "filename": "rch2_defined_1percent_glucose.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015700",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015701": {
+      "name": "RCH2 defined glucose",
+      "filename": "rch2_defined_glucose.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015701",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015702": {
+      "name": "RCH2 defined glucose 0.25xMineral",
+      "filename": "rch2_defined_glucose_0_25xmineral.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015702",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015703": {
+      "name": "RCH2 defined glucose 5mM",
+      "filename": "rch2_defined_glucose_5mm.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015703",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015704": {
+      "name": "RCH2 defined glucose CAPS",
+      "filename": "rch2_defined_glucose_caps.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015704",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015705": {
+      "name": "RCH2 defined glucose MES",
+      "filename": "rch2_defined_glucose_mes.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015705",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015706": {
+      "name": "RCH2 defined Glucose noNitrogen",
+      "filename": "rch2_defined_glucose_nonitrogen.yaml",
+      "ingredient_count": 28,
+      "id": "CultureMech:015706",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015707": {
+      "name": "RCH2 defined glucose noVitamin",
+      "filename": "rch2_defined_glucose_novitamin.yaml",
+      "ingredient_count": 19,
+      "id": "CultureMech:015707",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015708": {
+      "name": "RCH2 defined glucose TAPS",
+      "filename": "rch2_defined_glucose_taps.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015708",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015709": {
+      "name": "RCH2 defined glucose YE",
+      "filename": "rch2_defined_glucose_ye.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015709",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015710": {
+      "name": "RCH2 defined glucose YE 10mMNitrate",
+      "filename": "rch2_defined_glucose_ye_10mmnitrate.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015710",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015711": {
+      "name": "RCH2 defined NAG",
+      "filename": "rch2_defined_nag.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015711",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015712": {
+      "name": "RCH2 defined NO ammonium with Glycerol",
+      "filename": "rch2_defined_no_ammonium_with_glycerol.yaml",
+      "ingredient_count": 28,
+      "id": "CultureMech:015712",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015713": {
+      "name": "RCH2 defined NO salts with Glycerol",
+      "filename": "rch2_defined_no_salts_with_glycerol.yaml",
+      "ingredient_count": 25,
+      "id": "CultureMech:015713",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015714": {
+      "name": "RCH2 defined no vitamin",
+      "filename": "rch2_defined_no_vitamin.yaml",
+      "ingredient_count": 19,
+      "id": "CultureMech:015714",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015715": {
+      "name": "RCH2 defined noCarbon",
+      "filename": "rch2_defined_nocarbon.yaml",
+      "ingredient_count": 28,
+      "id": "CultureMech:015715",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015716": {
+      "name": "RCH2 defined noCarbon ATCC",
+      "filename": "rch2_defined_nocarbon_atcc.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015716",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015717": {
+      "name": "RCH2 defined noCarbon minimalN",
+      "filename": "rch2_defined_nocarbon_minimaln.yaml",
+      "ingredient_count": 27,
+      "id": "CultureMech:015717",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015718": {
+      "name": "RCH2 defined noCarbon noNitrogen noNitrilotriacetic acid",
+      "filename": "rch2_defined_nocarbon_nonitrogen_nonitrilotriacetic_acid.yaml",
+      "ingredient_count": 26,
+      "id": "CultureMech:015718",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015719": {
+      "name": "RCH2 defined noCarbon noVitamins",
+      "filename": "rch2_defined_nocarbon_novitamins.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015719",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015720": {
+      "name": "RCH2 defined noCarbon SeaSalts",
+      "filename": "rch2_defined_nocarbon_seasalts.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015720",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015721": {
+      "name": "RCH2 defined noCarbon YE",
+      "filename": "rch2_defined_nocarbon_ye.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015721",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015722": {
+      "name": "RCH2 defined noNitrogen",
+      "filename": "rch2_defined_nonitrogen.yaml",
+      "ingredient_count": 28,
+      "id": "CultureMech:015722",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015723": {
+      "name": "RCH2 defined TAPS",
+      "filename": "rch2_defined_taps.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015723",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015724": {
+      "name": "RCH2 defined Tween",
+      "filename": "rch2_defined_tween.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015724",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015725": {
+      "name": "RCH2 defined with Glycerol",
+      "filename": "rch2_defined_with_glycerol.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015725",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015726": {
+      "name": "RCH2 defined YE",
+      "filename": "rch2_defined_ye.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015726",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015727": {
+      "name": "RCH2 defined YE 10mM Nitrate",
+      "filename": "rch2_defined_ye_10mm_nitrate.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015727",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015728": {
+      "name": "RCM",
+      "filename": "rcm.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015728",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015729": {
+      "name": "Romy basal defined aerobic",
+      "filename": "romy_basal_defined_aerobic.yaml",
+      "ingredient_count": 28,
+      "id": "CultureMech:015729",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015730": {
+      "name": "Romy basal defined anaerobic",
+      "filename": "romy_basal_defined_anaerobic.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015730",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015731": {
+      "name": "RPMI",
+      "filename": "rpmi.yaml",
+      "ingredient_count": 41,
+      "id": "CultureMech:015731",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015732": {
+      "name": "RPMI with Fetal bovine serum",
+      "filename": "rpmi_with_fetal_bovine_serum.yaml",
+      "ingredient_count": 42,
+      "id": "CultureMech:015732",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015733": {
+      "name": "RPMI with Fetal bovine serum Conditioned",
+      "filename": "rpmi_with_fetal_bovine_serum_conditioned.yaml",
+      "ingredient_count": 42,
+      "id": "CultureMech:015733",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015734": {
+      "name": "RZM G",
+      "filename": "rzm_g.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015734",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015735": {
+      "name": "Sautons minimal media with no carbon",
+      "filename": "sautons_minimal_media_with_no_carbon.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:015735",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015736": {
+      "name": "Sautons minimal media with no nitrogen",
+      "filename": "sautons_minimal_media_with_no_nitrogen.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015736",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015737": {
+      "name": "SCFM",
+      "filename": "scfm.yaml",
+      "ingredient_count": 56,
+      "id": "CultureMech:015737",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015738": {
+      "name": "SCFM 10mMNitrate",
+      "filename": "scfm_10mmnitrate.yaml",
+      "ingredient_count": 57,
+      "id": "CultureMech:015738",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015739": {
+      "name": "SDM noCarbon",
+      "filename": "sdm_nocarbon.yaml",
+      "ingredient_count": 26,
+      "id": "CultureMech:015739",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015740": {
+      "name": "SGW Northen Exometabolite mix 1",
+      "filename": "sgw_northen_exometabolite_mix_1.yaml",
+      "ingredient_count": 72,
+      "id": "CultureMech:015740",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015741": {
+      "name": "SGW Northen Exometabolite mix 2x",
+      "filename": "sgw_northen_exometabolite_mix_2x.yaml",
+      "ingredient_count": 72,
+      "id": "CultureMech:015741",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015742": {
+      "name": "SGW Northen Exometabolite mix 5x",
+      "filename": "sgw_northen_exometabolite_mix_5x.yaml",
+      "ingredient_count": 72,
+      "id": "CultureMech:015742",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015743": {
+      "name": "ShewMM",
+      "filename": "shewmm.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015743",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015744": {
+      "name": "ShewMM MES buffer",
+      "filename": "shewmm_mes_buffer.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015744",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015745": {
+      "name": "ShewMM noCarbon",
+      "filename": "shewmm_nocarbon.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015745",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015746": {
+      "name": "ShewMM noNitrogen",
+      "filename": "shewmm_nonitrogen.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015746",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015747": {
+      "name": "SMN rich",
+      "filename": "smn_rich.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015747",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015748": {
+      "name": "SMSA",
+      "filename": "smsa.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015748",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015749": {
+      "name": "Soil Defined Media (SDM)",
+      "filename": "soil_defined_media_sdm.yaml",
+      "ingredient_count": 47,
+      "id": "CultureMech:015749",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015342": {
+      "name": "spiribacter_medium_830_12_marine_salts",
+      "filename": "spiribacter_medium_830_12_marine_salts.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015342",
+      "source_id": "mediadive.medium:1537",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015352": {
+      "name": "sporomusa_medium_marine",
+      "filename": "sporomusa_medium_marine.yaml",
+      "ingredient_count": 36,
+      "id": "CultureMech:015352",
+      "source_id": "mediadive.medium:311b",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015750": {
+      "name": "Streptomyces growth medium 65",
+      "filename": "streptomyces_growth_medium_65.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015750",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015370": {
+      "name": "sulfolobus_medium_anaerobic",
+      "filename": "sulfolobus_medium_anaerobic.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015370",
+      "source_id": "mediadive.medium:88a",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015398": {
+      "name": "swmty_marine_medium",
+      "filename": "swmty_marine_medium.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015398",
+      "source_id": "mediadive.medium:J227",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015751": {
+      "name": "terrific broth",
+      "filename": "terrific_broth.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015751",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015431": {
+      "name": "tris_buffered_artificial_seawater_with_nh4cl_and_acetate",
+      "filename": "tris_buffered_artificial_seawater_with_nh4cl_and_acetate.yaml",
+      "ingredient_count": 24,
+      "id": "CultureMech:015431",
+      "source_id": "MEDIADB:17",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015430": {
+      "name": "tris_buffered_artificial_seawater_with_nh4cl_and_sulfolactate",
+      "filename": "tris_buffered_artificial_seawater_with_nh4cl_and_sulfolactate.yaml",
+      "ingredient_count": 24,
+      "id": "CultureMech:015430",
+      "source_id": "MEDIADB:16",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015752": {
+      "name": "TYG",
+      "filename": "tyg.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015752",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015753": {
+      "name": "UGA defined 4CarbonMix Nitrate anaerobic pH 5.0",
+      "filename": "uga_defined_4carbonmix_nitrate_anaerobic_ph_5_0.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015753",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015754": {
+      "name": "UGA defined 4CarbonMix Nitrate anaerobic pH 5.3",
+      "filename": "uga_defined_4carbonmix_nitrate_anaerobic_ph_5_3.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015754",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015755": {
+      "name": "UGA defined 4CarbonMix Nitrate anaerobic pH 5.6",
+      "filename": "uga_defined_4carbonmix_nitrate_anaerobic_ph_5_6.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015755",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015756": {
+      "name": "UGA defined 4CarbonMix Nitrate anaerobic pH 5.9",
+      "filename": "uga_defined_4carbonmix_nitrate_anaerobic_ph_5_9.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015756",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015757": {
+      "name": "UGA defined 4CarbonMix Nitrate anaerobic pH 6.2",
+      "filename": "uga_defined_4carbonmix_nitrate_anaerobic_ph_6_2.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015757",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015758": {
+      "name": "UGA defined 4CarbonMix Nitrate anaerobic pH 6.5",
+      "filename": "uga_defined_4carbonmix_nitrate_anaerobic_ph_6_5.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015758",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015759": {
+      "name": "UGA defined 4CarbonMix Nitrate anaerobic pH 6.8",
+      "filename": "uga_defined_4carbonmix_nitrate_anaerobic_ph_6_8.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015759",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015760": {
+      "name": "UGA defined 4CarbonMix Nitrate anaerobic pH 7.1",
+      "filename": "uga_defined_4carbonmix_nitrate_anaerobic_ph_7_1.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:015760",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015761": {
+      "name": "UGA defined Lactate Nitrate anaerobic pH 5.0",
+      "filename": "uga_defined_lactate_nitrate_anaerobic_ph_5_0.yaml",
+      "ingredient_count": 34,
+      "id": "CultureMech:015761",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015762": {
+      "name": "UGA defined Lactate Nitrate anaerobic pH 5.3",
+      "filename": "uga_defined_lactate_nitrate_anaerobic_ph_5_3.yaml",
+      "ingredient_count": 34,
+      "id": "CultureMech:015762",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015763": {
+      "name": "UGA defined Lactate Nitrate anaerobic pH 5.6",
+      "filename": "uga_defined_lactate_nitrate_anaerobic_ph_5_6.yaml",
+      "ingredient_count": 34,
+      "id": "CultureMech:015763",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015764": {
+      "name": "UGA defined Lactate Nitrate anaerobic pH 5.9",
+      "filename": "uga_defined_lactate_nitrate_anaerobic_ph_5_9.yaml",
+      "ingredient_count": 34,
+      "id": "CultureMech:015764",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015765": {
+      "name": "UGA defined Lactate Nitrate anaerobic pH 6.2",
+      "filename": "uga_defined_lactate_nitrate_anaerobic_ph_6_2.yaml",
+      "ingredient_count": 34,
+      "id": "CultureMech:015765",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015766": {
+      "name": "UGA defined Lactate Nitrate anaerobic pH 6.5",
+      "filename": "uga_defined_lactate_nitrate_anaerobic_ph_6_5.yaml",
+      "ingredient_count": 34,
+      "id": "CultureMech:015766",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015767": {
+      "name": "UGA defined Lactate Nitrate anaerobic pH 6.8",
+      "filename": "uga_defined_lactate_nitrate_anaerobic_ph_6_8.yaml",
+      "ingredient_count": 34,
+      "id": "CultureMech:015767",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015768": {
+      "name": "UGA defined Lactate Nitrate anaerobic pH 7.1",
+      "filename": "uga_defined_lactate_nitrate_anaerobic_ph_7_1.yaml",
+      "ingredient_count": 34,
+      "id": "CultureMech:015768",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015769": {
+      "name": "UGA defined nocarbon",
+      "filename": "uga_defined_nocarbon.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015769",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015770": {
+      "name": "UGA PIPES noCarbon",
+      "filename": "uga_pipes_nocarbon.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015770",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015771": {
+      "name": "Varel Bryant medium",
+      "filename": "varel_bryant_medium.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015771",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015772": {
+      "name": "Varel Bryant medium Glucose",
+      "filename": "varel_bryant_medium_glucose.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015772",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015773": {
+      "name": "Varel Bryant medium Glucose DTT NaS noNitrogen",
+      "filename": "varel_bryant_medium_glucose_dtt_nas_nonitrogen.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015773",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015774": {
+      "name": "Varel Bryant medium Glucose DTT noNitrogen",
+      "filename": "varel_bryant_medium_glucose_dtt_nonitrogen.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015774",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015775": {
+      "name": "Varel Bryant medium Glucose HOMOPIPES",
+      "filename": "varel_bryant_medium_glucose_homopipes.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015775",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015776": {
+      "name": "Varel Bryant medium Glucose lowCys noNitrogen",
+      "filename": "varel_bryant_medium_glucose_lowcys_nonitrogen.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015776",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015777": {
+      "name": "Varel Bryant medium Glucose MES",
+      "filename": "varel_bryant_medium_glucose_mes.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015777",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015778": {
+      "name": "Varel Bryant medium Glucose minusP",
+      "filename": "varel_bryant_medium_glucose_minusp.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015778",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015779": {
+      "name": "Varel Bryant medium Glucose noMET",
+      "filename": "varel_bryant_medium_glucose_nomet.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015779",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015780": {
+      "name": "Varel Bryant medium Glucose noMET DTT NaS B12 noNitrogen",
+      "filename": "varel_bryant_medium_glucose_nomet_dtt_nas_b12_nonitrogen.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015780",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015781": {
+      "name": "Varel Bryant medium Glucose noMET noCYS",
+      "filename": "varel_bryant_medium_glucose_nomet_nocys.yaml",
+      "ingredient_count": 12,
+      "id": "CultureMech:015781",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015782": {
+      "name": "Varel Bryant medium Glucose PIPES",
+      "filename": "varel_bryant_medium_glucose_pipes.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015782",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015783": {
+      "name": "Varel Bryant medium lowCys",
+      "filename": "varel_bryant_medium_lowcys.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015783",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015784": {
+      "name": "Varel Bryant medium lowCys lowMet",
+      "filename": "varel_bryant_medium_lowcys_lowmet.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015784",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015785": {
+      "name": "Varel Bryant medium noNitrogen",
+      "filename": "varel_bryant_medium_nonitrogen.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:015785",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015786": {
+      "name": "Water",
+      "filename": "water.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015786",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015787": {
+      "name": "Xantho MME glucose casamino",
+      "filename": "xantho_mme_glucose_casamino.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015787",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015788": {
+      "name": "Xantho MME glucose dropout LTH",
+      "filename": "xantho_mme_glucose_dropout_lth.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015788",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015789": {
+      "name": "YCFA",
+      "filename": "ycfa.yaml",
+      "ingredient_count": 26,
+      "id": "CultureMech:015789",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015790": {
+      "name": "YM",
+      "filename": "ym.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015790",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015791": {
+      "name": "ZMB",
+      "filename": "zmb.yaml",
+      "ingredient_count": 54,
+      "id": "CultureMech:015791",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015792": {
+      "name": "ZMB ALS",
+      "filename": "zmb_als.yaml",
+      "ingredient_count": 56,
+      "id": "CultureMech:015792",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015793": {
+      "name": "ZMB ALS GHP",
+      "filename": "zmb_als_ghp.yaml",
+      "ingredient_count": 39,
+      "id": "CultureMech:015793",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015794": {
+      "name": "ZMB ALS GLCMD",
+      "filename": "zmb_als_glcmd.yaml",
+      "ingredient_count": 41,
+      "id": "CultureMech:015794",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015795": {
+      "name": "ZMB ALS noAdenine",
+      "filename": "zmb_als_noadenine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015795",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015796": {
+      "name": "ZMB ALS noAlanine",
+      "filename": "zmb_als_noalanine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015796",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015797": {
+      "name": "ZMB ALS noArginine",
+      "filename": "zmb_als_noarginine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015797",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015798": {
+      "name": "ZMB ALS noAsparagine",
+      "filename": "zmb_als_noasparagine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015798",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015799": {
+      "name": "ZMB ALS noAsparticAcid",
+      "filename": "zmb_als_noasparticacid.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015799",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015800": {
+      "name": "ZMB ALS noBiotin",
+      "filename": "zmb_als_nobiotin.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015800",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015801": {
+      "name": "ZMB ALS noCyanocobalamin",
+      "filename": "zmb_als_nocyanocobalamin.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015801",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015802": {
+      "name": "ZMB ALS noCysteine",
+      "filename": "zmb_als_nocysteine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015802",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015803": {
+      "name": "ZMB ALS noCytosine",
+      "filename": "zmb_als_nocytosine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015803",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015804": {
+      "name": "ZMB ALS noGlutamate",
+      "filename": "zmb_als_noglutamate.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015804",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015805": {
+      "name": "ZMB ALS noGlutamine",
+      "filename": "zmb_als_noglutamine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015805",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015806": {
+      "name": "ZMB ALS noGlutathione",
+      "filename": "zmb_als_noglutathione.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015806",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015807": {
+      "name": "ZMB ALS noGlycine",
+      "filename": "zmb_als_noglycine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015807",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015808": {
+      "name": "ZMB ALS noGuanine",
+      "filename": "zmb_als_noguanine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015808",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015809": {
+      "name": "ZMB ALS noHistidine",
+      "filename": "zmb_als_nohistidine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015809",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015810": {
+      "name": "ZMB ALS noIsoleucine",
+      "filename": "zmb_als_noisoleucine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015810",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015811": {
+      "name": "ZMB ALS noLeucine",
+      "filename": "zmb_als_noleucine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015811",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015812": {
+      "name": "ZMB ALS noLipoicAcid",
+      "filename": "zmb_als_nolipoicacid.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015812",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015813": {
+      "name": "ZMB ALS noLysine",
+      "filename": "zmb_als_nolysine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015813",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015814": {
+      "name": "ZMB ALS noMethionine",
+      "filename": "zmb_als_nomethionine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015814",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015815": {
+      "name": "ZMB ALS noNicotinicAcic",
+      "filename": "zmb_als_nonicotinicacic.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015815",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015816": {
+      "name": "ZMB ALS noPantothenate",
+      "filename": "zmb_als_nopantothenate.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015816",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015817": {
+      "name": "ZMB ALS noPhenylalanine",
+      "filename": "zmb_als_nophenylalanine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015817",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015818": {
+      "name": "ZMB ALS noProline",
+      "filename": "zmb_als_noproline.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015818",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015819": {
+      "name": "ZMB ALS noPyridoxamine",
+      "filename": "zmb_als_nopyridoxamine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015819",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015820": {
+      "name": "ZMB ALS noRiboflavin",
+      "filename": "zmb_als_noriboflavin.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015820",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015821": {
+      "name": "ZMB ALS noSerine",
+      "filename": "zmb_als_noserine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015821",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015822": {
+      "name": "ZMB ALS noThiamine",
+      "filename": "zmb_als_nothiamine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015822",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015823": {
+      "name": "ZMB ALS noThreonine",
+      "filename": "zmb_als_nothreonine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015823",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015824": {
+      "name": "ZMB ALS noTryptophan",
+      "filename": "zmb_als_notryptophan.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015824",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015825": {
+      "name": "ZMB ALS noTyrosine",
+      "filename": "zmb_als_notyrosine.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015825",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015826": {
+      "name": "ZMB ALS noUracil",
+      "filename": "zmb_als_nouracil.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015826",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015827": {
+      "name": "ZMB ALS noValine",
+      "filename": "zmb_als_novaline.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015827",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015828": {
+      "name": "ZMB Gut",
+      "filename": "zmb_gut.yaml",
+      "ingredient_count": 59,
+      "id": "CultureMech:015828",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015829": {
+      "name": "ZMB no carbon",
+      "filename": "zmb_no_carbon.yaml",
+      "ingredient_count": 53,
+      "id": "CultureMech:015829",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015830": {
+      "name": "ZMB noFolicAcid",
+      "filename": "zmb_nofolicacid.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015830",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
     }
   }
 }

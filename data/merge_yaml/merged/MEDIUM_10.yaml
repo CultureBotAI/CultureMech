@@ -166,7 +166,7 @@ ingredients:
     label: n-Valeric acid
 - preferred_term: iso-Valeric acid
   term:
-    id: CHEBI:503742
+    id: CHEBI:28484
     label: iso-Valeric acid
   concentration:
     value: '1'

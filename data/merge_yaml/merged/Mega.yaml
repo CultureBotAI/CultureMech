@@ -258,7 +258,7 @@ ingredients:
     value: '5.0'
     unit: MG_PER_L
   term:
-    id: CHEBI:75219
+    id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
   notes: 'CAS: 10034-96-5; MW: 169.02; From ATCC Wolfe''s mineral mix'
 - preferred_term: Sodium Chloride
@@ -396,7 +396,7 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
   term:
-    id: CHEBI:503742
+    id: CHEBI:28484
     label: null
   notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 503-74-2; MW: 102.13'
 description: Mega medium

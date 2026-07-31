@@ -43,7 +43,7 @@ ingredients:
     label: CaCl2 x 2 H2O
 - preferred_term: HEPES buffer
   term:
-    id: CHEBI:19708
+    id: CHEBI:46756
     label: HEPES buffer
   concentration:
     value: '2.383'

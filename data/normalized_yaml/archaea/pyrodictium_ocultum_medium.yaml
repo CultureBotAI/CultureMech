@@ -1,0 +1,335 @@
+id: CultureMech:002566
+name: pyrodictium_ocultum_medium
+original_name: PYRODICTIUM OCULTUM MEDIUM
+category: archaea
+medium_type: COMPLEX
+composition_type: UNDEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J204
+  term:
+    id: mediadive.medium:J204
+    label: PYRODICTIUM OCULTUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=204'
+ingredients:
+- preferred_term: Citric acid
+  term:
+    id: CHEBI:30769
+    label: Citric acid
+  concentration:
+    value: '0.00490196'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:30769
+    label: Citric acid
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.96078'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '29.4118'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26833
+    label: Sulfur
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000980392'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:8806
+    label: Resazurin
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '14.85'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 13.85, 1.0] | Copied from JCM Medium 203'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: NaCl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '6.5'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.5, 3.0] | Copied from JCM Medium 203'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2.75'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.325'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32588
+    label: KCl
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: sodium bromide
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63004
+    label: NaBr
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.015, 0.01] | Copied from JCM Medium 203'
+  mediaingredientmech_chebi_term:
+    id: CHEBI:33118
+    label: H3BO3
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.0075'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: KI
+  term:
+    id: CHEBI:8346
+    label: KI
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000232
+    label: KI
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:3312
+    label: CaCl2
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: KH2PO4
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
+  term:
+    id: CHEBI:86149
+    label: (NH4)2Ni(SO4)2 x 6 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86149
+    label: (NH4)2Ni(SO4)2 x 6 H2O
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 203
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: AlK(SO4)2
+  term:
+    id: CHEBI:86463
+    label: AlK(SO4)2
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86463
+    label: AlK(SO4)2
+  notes: Copied from referenced JCM Medium 203
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_chebi_term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  notes: Copied from referenced JCM Medium 203
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 203 with 0.2 g/L (final) yeast extract.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.956210Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J204'
+- timestamp: '2026-02-03T11:26:54.132478'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:14.203652Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002566'
+- timestamp: '2026-03-17T19:45:27.420200+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PYRODICTIUM OCULTUM MEDIUM" to "pyrodictium_ocultum_medium"
+    for consistent matching
+- timestamp: '2026-04-04T18:49:19.226792'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (25 ingredients)
+  source: CultureMech:002565
+  notes: Resolved reference by copying from pyrodictium_brockii_medium (CultureMech:002565)
+- timestamp: '2026-05-16T08:58:13.702066+00:00'
+  curator: migrate_data_quality_flags.py
+  action: MIGRATED_DATA_QUALITY_FLAGS
+  notes: dict(2 keys) -> list(1 entries)
+- timestamp: '2026-06-05T07:41:43.447941+00:00'
+  curator: mim-legacy-to-chebi-migration-v1.0
+  action: Refreshed legacy MediaIngredientMech links to CHEBI keying
+  notes: 'Replaced 22 legacy mediaingredientmech_term link(s) with mediaingredientmech_chebi_term
+    (id-safe: ingredient''s own CHEBI + label). MIM deprecated the MediaIngredientMech:NNNNNN
+    id scheme.'
+- timestamp: '2026-06-10T07:47:10.721946+00:00'
+  curator: primary-term-label-canonicalization-v1.0
+  action: Canonicalized primary term label to OBO canonical (OAK)
+  notes: 4 primary term(s); ingredient name resolved by OAK sqlite:obo:chebi.
+data_quality_flags:
+- resolved_reference
+parent_media:
+  path: data/normalized_yaml/bacterial/pyrodictium_abysii_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:002567
+  name: pyrodictium_abysii_medium
+variant_relationship: SOURCE_DUPLICATE
+variant_modifications:
+- Same ingredient and concentration signature; review as possible duplicate source
+  record.

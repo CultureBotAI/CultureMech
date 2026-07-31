@@ -69,7 +69,7 @@ ingredients:
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:62476
+    id: CHEBI:63051
     label: (NH4)2HPO4
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'

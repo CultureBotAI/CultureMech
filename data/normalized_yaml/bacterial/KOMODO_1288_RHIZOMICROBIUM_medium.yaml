@@ -100,7 +100,7 @@ ingredients:
     label: Na2CO3
 - preferred_term: L-Cysteine HCl
   term:
-    id: CHEBI:52891
+    id: CHEBI:91247
     label: L-Cysteine HCl
   concentration:
     value: '0.3'

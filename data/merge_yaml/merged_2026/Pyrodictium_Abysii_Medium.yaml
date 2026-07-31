@@ -27,7 +27,7 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
-    id: CHEBI:14258
+    id: CHEBI:33403
     label: ''
 - preferred_term: Yeast extract (BD-Difco)
   concentration:

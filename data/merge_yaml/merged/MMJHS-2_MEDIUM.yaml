@@ -29,7 +29,7 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
-    id: CHEBI:14258
+    id: CHEBI:33403
     label: ''
 - preferred_term: Na2S2O3・5H2O
   concentration:

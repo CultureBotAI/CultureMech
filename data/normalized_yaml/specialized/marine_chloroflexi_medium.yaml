@@ -42,7 +42,7 @@ ingredients:
   notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
 - preferred_term: CaCl2·2H2O
   term:
-    id: CHEBI:64183
+    id: CHEBI:86158
     label: CaCl2·2H2O
   curation_metadata:
     mapping_quality: LLM_ASSISTED
@@ -84,7 +84,7 @@ ingredients:
   notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
 - preferred_term: Yeast extract
   term:
-    id: FOODON:00002441
+    id: FOODON:03315426
     label: Yeast extract
   curation_metadata:
     mapping_quality: LLM_ASSISTED
@@ -98,7 +98,7 @@ ingredients:
   notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
 - preferred_term: Peptone
   term:
-    id: FOODON:03310061
+    id: MICRO:0000178
     label: Peptone
   curation_metadata:
     mapping_quality: LLM_ASSISTED

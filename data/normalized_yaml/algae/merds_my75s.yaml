@@ -53,10 +53,10 @@ references:
 - reference: CCAP:MErds_MY75S
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_MErds_MY75S.pdf
 ingredients:
-- preferred_term: Na HPO
+- preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
-    label: Na HPO
+    label: Na2HPO4
   curation_metadata:
     mapping_quality: LLM_ASSISTED
     confidence_score: 1.0

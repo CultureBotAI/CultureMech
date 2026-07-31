@@ -37,7 +37,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
   term:
-    id: CHEBI:8150
+    id: MICRO:0000181
     label: ''
 - preferred_term: Peptone
   concentration:
