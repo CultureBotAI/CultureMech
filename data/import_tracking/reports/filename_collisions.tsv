@@ -62,7 +62,6 @@ czapek_solution_agar_b.yaml	bacterial,fungal	DIFFERENT	6/8 ingredient rows share
 czapek_yeast_extract_agar_cya.yaml	bacterial,fungal	DIFFERENT	0/21 ingredient rows shared; sizes [10, 11]	CultureMech:008792,CultureMech:010511	12,10
 czapeks_solution_agar_with_200_g_sucrose.yaml	bacterial,fungal	DIFFERENT	6/8 ingredient rows shared; sizes [7, 7]	CultureMech:009642,CultureMech:010524	8,7
 desulfovibrio_marine_medium.yaml	bacterial,specialized	DIFFERENT	0/23 ingredient rows shared; sizes [11, 12]	CultureMech:004189,CultureMech:015419	12,11
-dichotomicrobium_thermohalophilum_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:006070,CultureMech:000274	21,21
 dilute_filtered_malt_extract_agar.yaml	bacterial,fungal	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:004153,CultureMech:010452	2,2
 diluted_marine_agar.yaml	bacterial,specialized	DIFFERENT	1/5 ingredient rows shared; sizes [3, 3]	CultureMech:010060,CultureMech:015411	4,3
 dm.yaml	bacterial,algae,specialized	DIFFERENT	0/24 ingredient rows shared; sizes [5, 6, 13]	CultureMech:000333,CultureMech:000063,CultureMech:015514	13,5,6
@@ -93,13 +92,10 @@ halophile_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, gro
 halophile_starch_casein_medium.yaml	bacterial,archaea	DIFFERENT	7/8 ingredient rows shared; sizes [7, 8]	CultureMech:007578,CultureMech:000284	9,7
 halophile_yeast_extract_medium.yaml	bacterial,fungal	DIFFERENT	8/9 ingredient rows shared; sizes [8, 9]	CultureMech:009941,CultureMech:010535	10,8
 halophilic_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:003829,CultureMech:000247	9,9
-halophilic_methanotrophic_bacterium_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:003866,CultureMech:000248	13,13
 halophilic_sob_medium.yaml	bacterial,archaea	DIFFERENT	0/49 ingredient rows shared; sizes [17, 32]	CultureMech:007580,CultureMech:000285	18,32
 hepes_peptone_yeast_extract_medium.yaml	bacterial,fungal	DIFFERENT	0/43 ingredient rows shared; sizes [11, 32]	CultureMech:010201,CultureMech:010548	12,32
 hp_101_halophile_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:006131,CultureMech:000275	6,6
 hsm.yaml	bacterial,algae	DIFFERENT	1/10 ingredient rows shared; sizes [5, 6]	CultureMech:000348,CultureMech:000073	6,5
-hydrogenobacter_halophilus_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:006395,CultureMech:000281	13,13
-hydrogenobacter_thermophilus_medium.yaml	bacterial,archaea	DIFFERENT	0/22 ingredient rows shared; sizes [8, 14]	CultureMech:008001,CultureMech:000294	9,14
 inorganic_salts_maltose_medium.yaml	bacterial,fungal	DIFFERENT	6/7 ingredient rows shared; sizes [6, 7]	CultureMech:006406,CultureMech:010476	7,6
 inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract.yaml	bacterial,fungal	DIFFERENT	1/2 ingredient rows shared; sizes [1, 2]	CultureMech:008702,CultureMech:010510	1,2
 ird_marine_clostrida_medium.yaml	bacterial,specialized	DIFFERENT	0/34 ingredient rows shared; sizes [11, 23]	CultureMech:010377,CultureMech:015423	12,23
@@ -161,14 +157,11 @@ mc_ii.yaml	bacterial,algae	DIFFERENT	0/9 ingredient rows shared; sizes [3, 6]	Cu
 mch.yaml	bacterial,algae	DIFFERENT	0/6 ingredient rows shared; sizes [1, 5]	CultureMech:000362,CultureMech:000087	5,1
 mdy_v.yaml	bacterial,algae	DIFFERENT	4/19 ingredient rows shared; sizes [6, 17]	CultureMech:000363,CultureMech:000088	17,6
 medium_for_aciduric_thermophilic_bacillus_strains.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:006270,CultureMech:000277	9,9
-medium_for_halophilic_bacilli.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:006389,CultureMech:000280	3,3
 medium_for_marine_methylotrophs.yaml	bacterial,specialized	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:006402,CultureMech:015366	7,7
 medium_for_marine_spirochaetes.yaml	bacterial,specialized	DIFFERENT	0/42 ingredient rows shared; sizes [10, 32]	CultureMech:007761,CultureMech:015386	11,32
-medium_for_thermophilic_actinomycetes_agre_1964.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:006018,CultureMech:000273	6,6
 merds.yaml	bacterial,algae	DIFFERENT	0/8 ingredient rows shared; sizes [1, 7]	CultureMech:000364,CultureMech:000089	7,1
 merds_my75s.yaml	bacterial,algae	DIFFERENT	0/13 ingredient rows shared; sizes [2, 11]	CultureMech:000365,CultureMech:000090	11,2
 mhy.yaml	bacterial,algae	DIFFERENT	5/21 ingredient rows shared; sizes [12, 14]	CultureMech:000366,CultureMech:000091	14,12
-moderate_halophile_medium.yaml	bacterial,archaea	DIFFERENT	9/11 ingredient rows shared; sizes [10, 10]	CultureMech:010004,CultureMech:000301	11,10
 moderate_halophile_medium_2.yaml	bacterial,archaea	EQUIVALENT	same after normalizing ingredient labels and ignoring water	CultureMech:007846,CultureMech:000290	12,11
 modified_bacto_marine_broth.yaml	bacterial,specialized	DIFFERENT	1/22 ingredient rows shared; sizes [5, 18]	CultureMech:005870,CultureMech:015359	18,5
 modified_brocks_basal_salts_yeast_extract_medeium_b.yaml	bacterial,fungal	DIFFERENT	4/22 ingredient rows shared; sizes [13, 13]	CultureMech:009987,CultureMech:010539	14,13
@@ -200,7 +193,6 @@ oatmeal_agar_isp_3_with_0_1_yeast_extract.yaml	bacterial,fungal	DIFFERENT	0/3 in
 pas.yaml	bacterial,algae	DIFFERENT	0/8 ingredient rows shared; sizes [3, 5]	CultureMech:000385,CultureMech:000108	5,3
 pc.yaml	bacterial,algae	DIFFERENT	0/8 ingredient rows shared; sizes [3, 5]	CultureMech:000386,CultureMech:000109	5,3
 pe.yaml	bacterial,algae	DIFFERENT	0/9 ingredient rows shared; sizes [4, 5]	CultureMech:000387,CultureMech:000110	4,5
-pediococcus_halophilus_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:004581,CultureMech:000258	11,11
 peptone_czapeks_agar.yaml	bacterial,fungal	DIFFERENT	5/9 ingredient rows shared; sizes [7, 7]	CultureMech:009965,CultureMech:010544	8,7
 peptone_yeast_medium_with_mgso4.yaml	bacterial,fungal	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:006497,CultureMech:010477	4,4
 per.yaml	bacterial,algae	DIFFERENT	0/6 ingredient rows shared; sizes [1, 5]	CultureMech:000388,CultureMech:000111	5,1
@@ -213,7 +205,6 @@ potato_dextrose_agar.yaml	bacterial,fungal	DIFFERENT	2/4 ingredient rows shared;
 pp.yaml	bacterial,algae	DIFFERENT	0/7 ingredient rows shared; sizes [2, 5]	CultureMech:000392,CultureMech:000115	5,2
 ppg.yaml	bacterial,algae	DIFFERENT	0/12 ingredient rows shared; sizes [5, 7]	CultureMech:000394,CultureMech:000116	7,5
 ppy.yaml	bacterial,algae	DIFFERENT	1/3 ingredient rows shared; sizes [2, 2]	CultureMech:000395,CultureMech:000117	2,2
-pseudomonas_halophila_medium.yaml	bacterial,archaea	DIFFERENT	23/24 ingredient rows shared; sizes [23, 24]	CultureMech:005583,CultureMech:000265	24,23
 pygv_marine_medium_a.yaml	bacterial,specialized	DIFFERENT	7/54 ingredient rows shared; sizes [28, 33]	CultureMech:009516,CultureMech:015399	29,33
 pygv_marine_medium_b.yaml	bacterial,specialized	DIFFERENT	0/35 ingredient rows shared; sizes [3, 32]	CultureMech:007647,CultureMech:015378	4,32
 quarter_strength_marine_broth_2216.yaml	bacterial,specialized	DIFFERENT	0/2 ingredient rows shared; sizes [1, 1]	CultureMech:007635,CultureMech:015375	2,1
@@ -249,14 +240,7 @@ standard_i_malt_agar.yaml	bacterial,fungal	IDENTICAL	verbatim same ingredients, 
 sucrose_nitrate_agar_czapek_dox_agar.yaml	bacterial,fungal	DIFFERENT	6/8 ingredient rows shared; sizes [7, 7]	CultureMech:009827,CultureMech:010529	8,7
 sulfolobus_medium_anaerobic.yaml	archaea,specialized	DIFFERENT	6/27 ingredient rows shared; sizes [15, 18]	CultureMech:008970,CultureMech:015370	19,15
 swmty_marine_medium.yaml	bacterial,specialized	DIFFERENT	4/26 ingredient rows shared; sizes [15, 15]	CultureMech:008800,CultureMech:015398	16,15
-symbiobacterium_thermophilum_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:004043,CultureMech:000251	5,5
 thermanaerobacter_thermophila_medium.yaml	bacterial,archaea	DIFFERENT	0/25 ingredient rows shared; sizes [12, 13]	CultureMech:007521,CultureMech:000305	13,13
-thermophilic_hydrogen_bacteria_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:005911,CultureMech:000271	13,13
-thermus_thermophilus_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:006401,CultureMech:000282	3,3
-thioalkalibacter_halophilus_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:003979,CultureMech:000250	16,16
-thioalkalivibrio_halophilus_medium.yaml	bacterial,archaea	IDENTICAL	verbatim same ingredients, groundings, concentrations and units	CultureMech:003524,CultureMech:000243	16,16
-thiohalophilus_medium.yaml	bacterial,archaea	DIFFERENT	16/30 ingredient rows shared; sizes [23, 23]	CultureMech:003641,CultureMech:000244	23,23
-treponema_thermophilum_medium.yaml	bacterial,archaea	DIFFERENT	0/42 ingredient rows shared; sizes [10, 32]	CultureMech:007867,CultureMech:000291	11,32
 trypticase_soy_yeast_extract_medium.yaml	bacterial,fungal	DIFFERENT	2/9 ingredient rows shared; sizes [3, 8]	CultureMech:006848,CultureMech:010482	8,3
 tryptone_peptone_yeast_extract_glucose_medium.yaml	bacterial,fungal	DIFFERENT	9/14 ingredient rows shared; sizes [11, 12]	CultureMech:010054,CultureMech:010543	13,11
 tryptone_yeast_extract_agar.yaml	bacterial,fungal	DIFFERENT	2/6 ingredient rows shared; sizes [4, 4]	CultureMech:007856,CultureMech:010506	5,4

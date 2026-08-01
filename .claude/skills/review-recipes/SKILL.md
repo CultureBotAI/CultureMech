@@ -152,9 +152,9 @@ Issues are graded by priority. Full definitions (checks, impact, fixes) are in
 
 ## Related Skills
 
-- [`create-recipe`](../create-recipe/skill.md) — create new media/solution YAML records
-- [`manage-identifiers`](../manage-identifiers/skill.md) — CultureMech ID assignment
-- [`manage-ingredient-hierarchy`](../manage-ingredient-hierarchy/skill.md) — MediaIngredientMech integration
+- [`create-recipe`](../create-recipe/SKILL.md) — create new media/solution YAML records
+- [`manage-identifiers`](../manage-identifiers/SKILL.md) — CultureMech ID assignment
+- [`manage-ingredient-hierarchy`](../manage-ingredient-hierarchy/SKILL.md) — MediaIngredientMech integration
 
 ---
 
