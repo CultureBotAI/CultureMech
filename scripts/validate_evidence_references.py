@@ -1,4 +1,4 @@
-#!/usr/bin/env /opt/homebrew/bin/python3.13
+#!/usr/bin/env python3
 """Verify that every literature snippet attached to a CultureMech evidence
 claim appears verbatim in the cached PubMed abstract for the cited
 PMID/DOI.

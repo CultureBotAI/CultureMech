@@ -279,4 +279,4 @@ Mapping tool breakdown (legacy):
 
 ---
 
-**Questions?** See [NORMALIZATION_IMPROVEMENTS.md](NORMALIZATION_IMPROVEMENTS.md) for full integration details.
+**Questions?** See [NORMALIZATION_IMPROVEMENTS.md](archive/NORMALIZATION_IMPROVEMENTS.md) for full integration details.

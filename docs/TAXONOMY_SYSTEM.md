@@ -1,5 +1,30 @@
 # Media Taxonomy System
 
+> **Status (2026-07-30): the 4-level classifier described below was never
+> completed and has been removed (#154).**
+>
+> `TaxonomyClassifier` and `scripts/assign_taxonomy.py` wrote a `taxonomy:` block
+> whose schema class (`MediaTaxonomy`, `FunctionalDomainEnum`) was **never added
+> to `culturemech.yaml`** — git history has no trace of either. Any record it
+> wrote would have failed validation with
+> `Additional properties are not allowed ('taxonomy' was unexpected)`, so the
+> script was never runnable and no record in the corpus carries a `taxonomy:`
+> block.
+>
+> Its Level-1 "functional domain" also conflated three things that #148 has since
+> separated into orthogonal slots: `composition_type` (DEFINED / UNDEFINED /
+> SEMI_DEFINED), `nutritional_class` (MINIMAL / RICH / GENERAL_PURPOSE) and
+> `functional_role` (GENERAL_PURPOSE / SELECTIVE / DIFFERENTIAL / ENRICHMENT,
+> multivalued). Reviving classification means designing against those axes, not
+> restoring this design.
+>
+> **Still live and unaffected:** the similarity and unit-conversion halves —
+> `SimilarityCalculator` and `UnitConverter` — which have tests and are described
+> under "Similarity Calculation" and "Concentration-Aware Merging" below.
+>
+> The taxonomy sections are kept as a design record of the intended hierarchy,
+> not as documentation of working code.
+
 ## Overview
 
 The CultureMech taxonomy system provides **4-level hierarchical classification** for 10,675 media recipes based on functional domain, environmental context, and nutritional composition.
@@ -144,18 +169,8 @@ concentration_variants:
 
 ### Assign Taxonomy to Recipes
 
-```bash
-cd ~/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CultureMech
+_Removed — `scripts/assign_taxonomy.py` and `TaxonomyClassifier` no longer exist (#154). See the status note at the top._
 
-# Dry run (preview)
-python scripts/assign_taxonomy.py --sample 100 --dry-run
-
-# Process all recipes
-python scripts/assign_taxonomy.py
-
-# Process specific directory
-python scripts/assign_taxonomy.py --data-dir data/normalized_yaml/bacterial
-```
 
 ### Calculate Recipe Similarity
 
@@ -174,17 +189,7 @@ metrics = calc.calculate_all_metrics(recipe_a, recipe_b)
 
 ### Classify Individual Recipe
 
-```python
-from culturemech.taxonomy import TaxonomyClassifier
-
-classifier = TaxonomyClassifier()
-taxonomy = classifier.classify_recipe(recipe)
-
-print(f"Domain: {taxonomy['domain']}")  # COMPLEX
-print(f"Context: {taxonomy['context']}")  # ['TERRESTRIAL', 'CLINICAL']
-print(f"Carbon: {taxonomy['profile']['carbon_sources']}")  # ['UNDEFINED_ORGANIC']
-print(f"Confidence: {taxonomy['confidence_score']:.2f}")  # 0.85
-```
+_Removed — `TaxonomyClassifier` no longer exists (#154). The live per-record signals are the `composition_type`, `nutritional_class` and `functional_role` slots on the record itself._
 
 ---
 
@@ -202,7 +207,7 @@ print(f"Confidence: {taxonomy['confidence_score']:.2f}")  # 0.85
 - Uses ChEBI molecular weight cache (when available)
 - Supports common units without MW lookup (MILLIMOLAR, MICROMOLAR)
 
-**TaxonomyClassifier** (`src/culturemech/taxonomy/classifier.py`):
+**TaxonomyClassifier** (removed in #154; formerly `src/culturemech/taxonomy/classifier.py`):
 - Rule-based classification from recipe properties
 - Signal extraction from ingredients, pH, temperature
 - Confidence scoring based on signal strength
@@ -285,5 +290,5 @@ CONTEXT DISTRIBUTION:
 - LinkML schema: `src/culturemech/schema/culturemech.yaml`
 - Implementation: `src/culturemech/taxonomy/`
 - Tests: `tests/test_similarity_calculator.py`
-- Assignment script: `scripts/assign_taxonomy.py`
+- Assignment script: _removed (#154)_
 - Plan: `/Users/marcin/.claude/plans/unified-puzzling-eagle.md`
