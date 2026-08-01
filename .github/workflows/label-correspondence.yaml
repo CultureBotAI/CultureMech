@@ -58,7 +58,7 @@ jobs:
       # Vendored-file drift is no longer guarded by a self-generated sha256 pin
       # (retired — it compared this copy to a hash from this same repo). As the
       # canonical hub, CultureMech is covered by the nightly fleet audit
-      # (.github/workflows/vendored-fleet-audit.yml, which compares all four
+      # (culturebotai-claw's fleet-audit job, which compares all four
       # repos) and by validate-products below, which exercises the validator on
       # the full corpus. The spokes fail their own CI on drift via
       # scripts/check_vendored_sync.sh (shared-reference check against this hub).
