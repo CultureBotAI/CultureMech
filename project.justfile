@@ -891,7 +891,7 @@ report-label-drift:
 # SAME repo, so all four could pass while holding three different versions. Drift
 # is now caught by the shared-reference check in the spokes (scripts/
 # check_vendored_sync.sh, against CultureBotAI/CultureMech@<.vendored_canon_ref>)
-# plus the nightly fleet audit here (.github/workflows/vendored-fleet-audit.yml).
+# plus the nightly fleet audit in culturebotai-claw (fleet-audit job).
 # See culturebotai-claw vendored_sync_action_plan (Phase 2).
 
 # NOTE: the shared LinkML module (mech_shared.yaml) is vendored byte-identical
@@ -900,7 +900,7 @@ report-label-drift:
 # flaw as the id-label pin. mech_shared.yaml is now covered by the shared-
 # reference drift check (spokes' scripts/check_vendored_sync.sh diffs their
 # src/<pkg>/schema/mech_shared.yaml against this hub's copy) and the nightly
-# vendored-fleet-audit.yml here. Propagation: change it in this hub → sync the
+# claw's fleet-audit job. Propagation: change it in this hub → sync the
 # spokes → bump their .vendored_canon_ref.
 #
 # The former mim-roles-pin was also retired: mim_roles.yaml is NOT a shared set —

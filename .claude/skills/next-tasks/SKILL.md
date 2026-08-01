@@ -115,7 +115,8 @@ Run them yourself if an item claims they do.
   to a hash from the *same* repo, so all four could pass while diverged). Drift is now
   caught by a **shared-reference check**: each spoke runs `scripts/check_vendored_sync.sh`
   against `CultureBotAI/CultureMech@<scripts/.vendored_canon_ref>`; this hub is covered
-  by the nightly `vendored-fleet-audit.yml`. To propagate a change: PR into this hub →
+  by culturebotai-claw's nightly `fleet-audit` job (scripts/audit_idlabel_fleet.sh),
+  which audits all four Mechs and claw's mirror in one pass. To propagate a change: PR into this hub →
   merge → bump `.vendored_canon_ref` in the spokes. (`schema-pin` / `mim-roles-pin` are
   a separate scheme, still self-pinned — no drift-check replacement yet.)
 - Without `gh` or a network, reconcile from `git log` alone and say so.
