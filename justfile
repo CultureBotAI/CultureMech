@@ -3,6 +3,12 @@
 
 set dotenv-load := true
 
+# Binds recipe arguments to "$@" in shebang recipes so multi-word arguments keep
+# their quoting. Needed by `new-history`, whose --summary/--details are prose;
+# plain `{{args}}` interpolation splits them on whitespace. No existing recipe
+# uses $1/$@, so enabling this changes nothing else.
+set positional-arguments := true
+
 # Shared tooling lives in the culturebotai-claw checkout. Override CLAW_SRC when
 # claw is not the default sibling directory — CI checks it out elsewhere.
 claw_src := env_var_or_default("CLAW_SRC", "../culturebotai-claw/src")
@@ -136,3 +142,53 @@ migrate-medium-type-axes *args:
 gen-discussions-data: (_require-claw "kg_microbe_discussions")
     PYTHONPATH={{claw_src}} uv run python \
       -m kg_microbe_discussions --config conf/discussions_config.yaml --output app/discussions
+
+# ============== Curation history ==============
+
+# Scaffold an append-only curation-history record. See history/README.md. e.g.
+#   just new-history --kind record --slug 1_10_r2a_medium \
+#     --target-root data/normalized_yaml/bacterial \
+#     --event EDIT --outcome changed --sections ingredients \
+#     --summary "Ground two ingredients to CHEBI" \
+#     --details "What was done, what evidence was used, how it was validated."
+new-history *args:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    claw_src="${CLAW_SRC:-../culturebotai-claw/src}"
+    if [ ! -d "$claw_src/kg_microbe_history" ]; then
+      echo "new-history: kg_microbe_history not found under '$claw_src'." >&2
+      echo "Set CLAW_SRC to the src/ directory of a culturebotai-claw checkout." >&2
+      exit 1
+    fi
+    # "$@" not {{args}} — see `set positional-arguments` at the top of this file.
+    # `uv run python`, not `python3`: bare python3 is whatever the machine puts
+    # first on PATH, which is the same undeclared-interpreter problem that has
+    # bitten other recipes here.
+    PYTHONPATH="$claw_src" uv run python -m kg_microbe_history new "$@"
+
+# Validate one history record, or a directory of them. Uses the VENDORED schema,
+# so this works with no claw checkout — same as CI.
+validate-history target="history":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    target="{{target}}"
+    if [ -z "$target" ]; then
+      echo "validate-history: empty target. Pass a record path or a directory." >&2
+      exit 2
+    fi
+    if [ ! -e "$target" ]; then
+      echo "validate-history: '$target' does not exist." >&2
+      exit 2
+    fi
+    if [ -d "$target" ]; then
+      if [ -z "$(find "$target" -name '*.yaml' -print -quit)" ]; then
+        echo "No history records under '$target'."
+        exit 0
+      fi
+      find "$target" -name '*.yaml' -print0 \
+        | xargs -0 uv run linkml-validate \
+            --schema src/culturemech/schema/history.yaml --target-class HistoryRecord
+    else
+      uv run linkml-validate \
+        --schema src/culturemech/schema/history.yaml --target-class HistoryRecord "$target"
+    fi

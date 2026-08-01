@@ -1,0 +1,265 @@
+id: https://w3id.org/kg-microbe/history
+name: mech_history
+title: Mech curation-history module — append-only provenance records
+description: >-
+  Append-only provenance for curation sessions across the Mech knowledge bases
+  (CultureMech / MIM / CommunityMech / TraitMech). Ported from
+  monarch-initiative/dismech's `history/` layer.
+
+  One record per session per target, written once and never edited. Records live
+  at `history/<kind-dir>/<slug>/<TIMESTAMP>-<actor>-<shortid>.yaml`. The
+  directory-per-slug layout with an unguessable `shortid` is the whole point:
+  concurrent agents curating the same record never write the same file, so the
+  layer has ZERO merge-conflict surface. Compare a single shared CHANGELOG,
+  which conflicts on every parallel PR.
+
+  This answers a question nothing else in the fleet can: which model, using which
+  tool, changed what, why, and under which issue. That matters more as autonomous
+  agents start doing the changing — see culturebotai-claw docs/AUTONOMOUS_LOOPS.md.
+
+  ENFORCEMENT IS DELIBERATELY SPLIT. Presence of a record is *advisory* — CI
+  warns, it does not block, because a hard gate on provenance blocks legitimate
+  work at inconvenient moments and trains people to route around it. But if a
+  record IS written it must be schema-valid, and that check is hard.
+
+  Do not hand-write records or filenames. Scaffold with `just new-history`, which
+  guarantees a schema-valid skeleton and a collision-free name, then edit the
+  `details` field.
+
+license: BSD-3-Clause
+default_range: string
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  mech_history: https://w3id.org/kg-microbe/history/
+
+default_prefix: mech_history
+
+imports:
+  - linkml:types
+
+# ============================== Enums ==============================
+
+enums:
+
+  HistoryTargetKindEnum:
+    description: >-
+      What kind of thing the session acted on. Repo-agnostic: each Mech maps its
+      own record type onto one of these, and `other` exists so a repo never has
+      to invent an enum value to record real work.
+    permissible_values:
+      record:
+        description: >-
+          A knowledge-base record — a CultureMech media recipe, a MIM ingredient,
+          a CommunityMech community, a TraitMech trait.
+      schema:
+        description: A LinkML schema or schema module.
+      mapping:
+        description: A mapping artifact such as an SSSOM file or a grounding table.
+      report:
+        description: A generated report, audit, dashboard, or ranking artifact.
+      infrastructure:
+        description: >-
+          Tooling, CI, justfile recipes, skills — changes to how the repo works
+          rather than to what it knows.
+      other:
+        description: >-
+          Anything not covered above. Requires an explicit path when scaffolding,
+          since the target cannot be derived from a slug.
+
+  HistoryActorTypeEnum:
+    description: Who or what performed the session.
+    permissible_values:
+      human:
+        description: A person working directly.
+      ai_agent:
+        description: >-
+          An LLM-driven agent, whether human-supervised or autonomous. Record the
+          model and the harness in `model` / `agent_tool`.
+      automation:
+        description: >-
+          A deterministic script or scheduled job with no model in the loop —
+          a cron scan, a regeneration step.
+      other:
+        description: Anything else.
+
+  HistoryEventTypeEnum:
+    description: >-
+      What the session did. Kept deliberately small; reach for `outcome` rather
+      than inventing a new type for "tried and failed".
+    permissible_values:
+      GENERAL:
+        description: Unclassified or legacy. Prefer a specific type.
+      CREATE:
+        description: Created a target that did not previously exist.
+      EDIT:
+        description: Modified an existing target.
+      REVIEW:
+        description: >-
+          Reviewed a target. May or may not have produced edits — say which via
+          `outcome`.
+      AUDIT:
+        description: >-
+          Structured inspection, compliance check, or triage across one or many
+          targets.
+
+  HistoryOutcomeEnum:
+    description: >-
+      What actually happened. Orthogonal to event type on purpose: it lets you
+      record a REVIEW that changed nothing (`no_change`) or an EDIT that got
+      stuck (`blocked`) without multiplying event types.
+    permissible_values:
+      changed:
+        description: The target was modified.
+      no_change:
+        description: >-
+          The session ran to completion and deliberately changed nothing. This is
+          a real result, not a non-event — it records that something was checked.
+      needs_followup:
+        description: Partial progress; specific remaining work is named in `details`.
+      blocked:
+        description: >-
+          Could not proceed. `details` must say what blocked it, so the next
+          session does not rediscover the same wall.
+
+# ============================== Classes ==============================
+
+classes:
+
+  HistoryRecord:
+    tree_root: true
+    description: >-
+      One curation session against one target. Append-only: write it once, never
+      edit it. Corrections go in a new record that references the old one in its
+      `details`.
+    attributes:
+      history_version:
+        description: Schema version of this record. Currently always 1.
+        range: integer
+        required: true
+        ifabsent: int(1)
+      target:
+        range: HistoryTarget
+        required: true
+      session:
+        range: HistorySession
+        required: true
+      links:
+        range: HistoryLinks
+        required: false
+      events:
+        description: >-
+          What happened, in order. At least one — a record with no events carries
+          no information.
+        range: HistoryEvent
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+
+  HistoryTarget:
+    description: What the session acted on.
+    attributes:
+      kind:
+        range: HistoryTargetKindEnum
+        required: true
+      slug:
+        description: >-
+          Stable identifier for the target within its kind — usually the record
+          filename stem. Also the directory name under `history/<kind-dir>/`.
+        required: false
+      path:
+        description: Repo-relative path to the target.
+        required: true
+
+  HistorySession:
+    description: When the session ran and who ran it.
+    attributes:
+      id:
+        description: >-
+          Stable session identifier. Always equals the record's filename stem, so
+          a record can be located from its id alone.
+        required: true
+      timestamp:
+        description: ISO-8601 UTC start time.
+        required: true
+        pattern: '^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+\-]\d{2}:\d{2})$'
+      actors:
+        description: >-
+          Everyone involved. A list even when there is one actor, because
+          human-plus-agent sessions are the common case and retrofitting a list
+          later would break every existing record.
+        range: HistoryActor
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+
+  HistoryActor:
+    description: A participant in the session.
+    attributes:
+      type:
+        range: HistoryActorTypeEnum
+        required: true
+      name:
+        description: >-
+          Identifier for the actor — a GitHub login for a human, a harness name
+          such as `claude-code` or `codex` for an agent.
+        required: true
+      model:
+        description: >-
+          Model identifier when the actor is an AI agent, e.g. `claude-opus-5`.
+          This is the field that makes the layer worth having; fill it in.
+        required: false
+      agent_tool:
+        description: Harness that ran the model, e.g. `claude-code`, `codex`.
+        required: false
+      agent_version:
+        description: Version of the harness, when known.
+        required: false
+
+  HistoryLinks:
+    description: Pointers to related discussion. All optional.
+    attributes:
+      issues:
+        range: uri
+        multivalued: true
+      prs:
+        range: uri
+        multivalued: true
+      urls:
+        range: uri
+        multivalued: true
+
+  HistoryEvent:
+    description: One thing the session did.
+    attributes:
+      type:
+        range: HistoryEventTypeEnum
+        required: true
+      outcome:
+        range: HistoryOutcomeEnum
+        required: true
+      sections:
+        description: >-
+          Which parts of the target were touched, in the target's own vocabulary
+          (e.g. `composition`, `causal_graphs`, `ontology_mapping`).
+        multivalued: true
+        required: false
+      summary:
+        description: One short line. Shows up in listings; keep it scannable.
+        required: true
+      details:
+        description: >-
+          The substance, and the reason this layer exists. Required, because a
+          record without it is just a timestamp. Write what a colleague picking
+          this up cold would need: what was done, what evidence or provider was
+          used, how it was validated, and anything deliberately left undone.
+
+          The pattern rejects the scaffolder's TODO placeholder. That check lives
+          in the schema rather than only in the CLI so that a repo validating with
+          plain `linkml-validate` against its vendored copy — which is how the
+          spokes do it, to avoid depending on this private repo — catches an
+          unfilled record too.
+        required: true
+        pattern: '^(?!TODO: replace this placeholder)'

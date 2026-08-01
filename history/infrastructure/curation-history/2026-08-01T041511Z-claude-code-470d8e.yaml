@@ -1,0 +1,34 @@
+history_version: 1
+target:
+  kind: infrastructure
+  path: src/culturemech/schema/history.yaml
+  slug: curation-history
+session:
+  id: 2026-08-01T041511Z-claude-code-470d8e
+  timestamp: '2026-08-01T04:15:11Z'
+  actors:
+  - type: ai_agent
+    name: claude-code
+    model: claude-opus-5
+    agent_tool: claude-code
+events:
+- type: CREATE
+  outcome: changed
+  sections:
+  - schema
+  - justfile
+  - ci
+  - docs
+  summary: Port the append-only curation-history layer from TraitMech
+  details: 'Ported TraitMech''s curation-history surface into CultureMech: vendored src/culturemech/schema/history.yaml
+    byte-identical from culturebotai-claw/shared/history/history.yaml (md5 3742bc2068b637868c48aba406f6569d,
+    verified against both the canonical copy and TraitMech''s vendored copy); added the new-history
+    and validate-history justfile recipes, with validate-history pointing at the local vendored
+    schema so CI needs no claw checkout; added history/README.md; added .github/workflows/curation-history.yaml
+    with blocking record validation and an advisory missing-record check scoped to data/normalized_yaml/**.
+    Enabling ''set positional-arguments := true'' was required for new-history to preserve
+    multi-word --summary/--details prose; verified beforehand that no recipe in justfile or
+    project.justfile uses $1/$@/$*, so nothing else changes. Verified: just --list recipe
+    count went 211 to 213; a scaffolded record without --details fails validate-history on
+    the schema''s TODO-placeholder pattern; CLAW_SRC=/nonexistent fails loudly with exit 1;
+    empty and nonexistent validate-history targets exit 2. No media records were changed.'

@@ -1,0 +1,94 @@
+name: Curation history
+
+# Two-part check, deliberately asymmetric (see history/README.md):
+#
+#   * VALIDITY is blocking. A malformed history record fails like any other
+#     validation error.
+#   * PRESENCE is advisory. If a media recipe changes without a matching history
+#     record, this warns in the job summary and passes. A hard gate on provenance
+#     blocks legitimate work at inconvenient moments and trains people to route
+#     around it.
+#
+# Validation uses the VENDORED schema at src/culturemech/schema/history.yaml, so
+# this job has no dependency on the private culturebotai-claw repo. Only the
+# `just new-history` scaffolder needs claw, and that is a dev-time tool.
+
+on:
+  pull_request:
+    paths:
+      - "data/normalized_yaml/**"
+      - "history/**"
+      - "src/culturemech/schema/history.yaml"
+      - ".github/workflows/curation-history.yaml"
+  push:
+    branches: [main]
+    paths:
+      - "data/normalized_yaml/**"
+      - "history/**"
+      - "src/culturemech/schema/history.yaml"
+      - ".github/workflows/curation-history.yaml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: curation-history-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # need the merge base to diff against
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Install deps
+        run: uv sync
+
+      - name: Validate history records (blocking)
+        run: |
+          set -euo pipefail
+          if [ ! -d history ] || [ -z "$(find history -name '*.yaml' -print -quit)" ]; then
+            echo "No history records to validate."
+            exit 0
+          fi
+          find history -name '*.yaml' -print0 \
+            | xargs -0 uv run linkml-validate \
+                --schema src/culturemech/schema/history.yaml \
+                --target-class HistoryRecord
+
+      - name: Check for missing history records (advisory)
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin "${{ github.base_ref }}"
+          base="origin/${{ github.base_ref }}"
+
+          changed_media=$(git diff --name-only "$base"...HEAD -- 'data/normalized_yaml/**/*.yaml' | wc -l | tr -d ' ')
+          new_history=$(git diff --name-only --diff-filter=A "$base"...HEAD -- 'history/**/*.yaml' | wc -l | tr -d ' ')
+
+          {
+            echo "## Curation history"
+            echo
+            echo "- media recipes changed: **$changed_media**"
+            echo "- history records added: **$new_history**"
+            echo
+            if [ "$changed_media" -gt 0 ] && [ "$new_history" -eq 0 ]; then
+              echo "> [!WARNING]"
+              echo "> This PR changes media recipes but adds no history record."
+              echo "> Scaffold one with \`just new-history\` — see \`history/README.md\`."
+              echo ">"
+              echo "> Advisory only; this does not block the build."
+            elif [ "$changed_media" -gt 0 ]; then
+              echo "Provenance recorded for this change."
+            else
+              echo "No media recipes changed; nothing to record."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
