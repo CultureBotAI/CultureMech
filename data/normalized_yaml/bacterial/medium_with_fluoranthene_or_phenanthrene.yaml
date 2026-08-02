@@ -3,7 +3,7 @@ name: medium_with_fluoranthene_or_phenanthrene
 original_name: MEDIUM WITH FLUORANTHENE OR PHENANTHRENE
 category: bacterial
 medium_type: DEFINED
-composition_type: DEFINED
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457b

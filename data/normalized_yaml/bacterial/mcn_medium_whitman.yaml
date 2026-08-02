@@ -3,7 +3,7 @@ name: mcn_medium_whitman
 original_name: '''McN Medium (Whitman'
 category: bacterial
 medium_type: DEFINED
-composition_type: DEFINED
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - &id001

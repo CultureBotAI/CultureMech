@@ -3,7 +3,7 @@ name: medium_457_modified_for_dsm_16274
 original_name: MEDIUM 457 MODIFIED FOR DSM 16274
 category: bacterial
 medium_type: DEFINED
-composition_type: DEFINED
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457_16274

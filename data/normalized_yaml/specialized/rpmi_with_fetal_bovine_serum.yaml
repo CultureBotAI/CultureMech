@@ -1,7 +1,7 @@
 id: CultureMech:015732
 name: RPMI with Fetal bovine serum
 medium_type: DEFINED
-composition_type: DEFINED
+composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Glycine

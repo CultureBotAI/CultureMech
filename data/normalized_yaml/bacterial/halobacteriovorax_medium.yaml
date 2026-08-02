@@ -3,7 +3,7 @@ name: halobacteriovorax_medium
 original_name: HALOBACTERIOVORAX MEDIUM
 category: bacterial
 medium_type: DEFINED
-composition_type: DEFINED
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.5

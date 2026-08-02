@@ -111,6 +111,15 @@ enrich-edison-response *args="":
 prioritize-deep-research-candidates *args="":
     uv run --extra dev python scripts/prioritize_deep_research_candidates.py {{args}}
 
+# Find records whose composition_type contradicts their own ingredient list (#158):
+# `DEFINED` asserted while listing yeast extract, peptone, tryptone etc. Reports by
+# default; `--apply` restamps only records carrying >= 5 g/L of undefined material,
+# where SEMI_DEFINED's "a small amount" cannot apply. Writes:
+#   data/import_tracking/reports/composition_type_conflicts.tsv
+[group('QC')]
+audit-composition-type *args="":
+    uv run --extra dev python scripts/audit_composition_type.py {{args}}
+
 # Triage recipes that share a filename across category directories (#116).
 # Classifies each collision IDENTICAL / EQUIVALENT / DIFFERENT so the manual
 # curation pass is tractable. Read-only — moves, renames and deletes are
