@@ -2,7 +2,7 @@ id: CultureMech:005460
 name: medium_with_chloroacrylic_acid_replace_3_chloroacrylic_acid_with_glucose
 original_name: MEDIUM WITH CHLOROACRYLIC ACID_replace_3-chloroacrylic acid_with_Glucose
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:

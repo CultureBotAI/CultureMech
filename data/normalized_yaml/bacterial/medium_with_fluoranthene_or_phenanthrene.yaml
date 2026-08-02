@@ -2,7 +2,7 @@ id: CultureMech:005459
 name: medium_with_fluoranthene_or_phenanthrene
 original_name: MEDIUM WITH FLUORANTHENE OR PHENANTHRENE
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:

@@ -2,7 +2,7 @@ id: CultureMech:005432
 name: medium_457_modified_for_dsm_7516_replace_chloroacetate_with_fluoroacetate
 original_name: MEDIUM 457 MODIFIED FOR DSM 7516_replace_chloroacetate_with_fluoroacetate
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:

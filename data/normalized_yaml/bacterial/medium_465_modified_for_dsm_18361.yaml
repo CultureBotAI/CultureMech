@@ -2,7 +2,7 @@ id: CultureMech:005552
 name: medium_465_modified_for_dsm_18361
 original_name: MEDIUM 465 MODIFIED FOR DSM 18361
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:

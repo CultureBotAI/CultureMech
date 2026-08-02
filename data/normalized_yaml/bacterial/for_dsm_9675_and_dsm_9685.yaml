@@ -2,7 +2,7 @@ id: CultureMech:005572
 name: for_dsm_9675_and_dsm_9685
 original_name: For DSM 9675 and DSM 9685
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:

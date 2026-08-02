@@ -2,7 +2,7 @@ id: CultureMech:000435
 name: halobacteriovorax_medium
 original_name: HALOBACTERIOVORAX MEDIUM
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ph_range:

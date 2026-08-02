@@ -2,7 +2,7 @@ id: CultureMech:005576
 name: mineral_medium_with_cyanuric_acid_as_nitrogen_source
 original_name: MINERAL MEDIUM WITH CYANURIC ACID AS NITROGEN SOURCE
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:

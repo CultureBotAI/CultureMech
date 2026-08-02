@@ -2,7 +2,7 @@ id: CultureMech:005447
 name: medium_457_modified_for_dsm_8628
 original_name: MEDIUM 457 MODIFIED FOR DSM 8628
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:

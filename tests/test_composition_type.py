@@ -132,3 +132,38 @@ def test_no_defined_record_carries_a_bulk_undefined_component(act):
         f">= {act.DEFAULT_THRESHOLD:g} g/L of chemically undefined components "
         f"(e.g. {offenders[:3]}) — run `just audit-composition-type --apply`"
     )
+
+
+def test_medium_type_and_composition_type_do_not_contradict():
+    """The deprecated slot must not disagree with the live one (#165).
+
+    `medium_type` is deprecated and #154 removed its last reader, but it is still
+    present on 11,092 records and still schema-valid, so a reader could pick it
+    up. Restamping only `composition_type` in #164 broke this invariant on 239
+    records — 0 disagreements before, 239 after — which is how this test came to
+    exist.
+
+    Mapping is the schema's own: `composition_type: UNDEFINED` "replaces the
+    deprecated MediumTypeEnum value COMPLEX".
+
+    Dropping `medium_type` from the corpus entirely is the better long-term fix
+    and is tracked in #165; this only holds the line until then.
+    """
+    import yaml as _yaml
+    from record_kinds import is_solution_record
+
+    expect = {"COMPLEX": "UNDEFINED", "DEFINED": "DEFINED"}
+    bad = []
+    for path in (REPO_ROOT / "data" / "normalized_yaml").rglob("*.yaml"):
+        doc = _yaml.safe_load(path.read_text(errors="replace"))
+        if not isinstance(doc, dict) or is_solution_record(doc):
+            continue
+        mt, ct = doc.get("medium_type"), doc.get("composition_type")
+        if mt is None or ct is None:
+            continue
+        if expect.get(str(mt), str(mt)) != str(ct):
+            bad.append(f"{path.name}: medium_type={mt} composition_type={ct}")
+    assert not bad, (
+        f"{len(bad)} record(s) have a deprecated medium_type contradicting "
+        f"composition_type (e.g. {bad[:3]}) — see #165"
+    )

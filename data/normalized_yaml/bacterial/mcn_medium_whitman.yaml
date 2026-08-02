@@ -2,7 +2,7 @@ id: CultureMech:007380
 name: mcn_medium_whitman
 original_name: '''McN Medium (Whitman'
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:

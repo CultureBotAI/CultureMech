@@ -2,7 +2,7 @@ id: CultureMech:005415
 name: medium_457_modified_for_dsm_6900_replace_naphthalene_with_3_xylene
 original_name: MEDIUM 457 MODIFIED FOR DSM 6900_replace_naphthalene_with_3-xylene
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:

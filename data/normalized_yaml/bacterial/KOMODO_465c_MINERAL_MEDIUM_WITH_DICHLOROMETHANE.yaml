@@ -2,7 +2,7 @@ id: CultureMech:005571
 name: mineral_medium_with_dichloromethane
 original_name: MINERAL MEDIUM WITH DICHLOROMETHANE
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:

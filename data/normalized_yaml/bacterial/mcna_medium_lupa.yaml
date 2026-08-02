@@ -2,7 +2,7 @@ id: CultureMech:007381
 name: mcna_medium_lupa
 original_name: '''McNA Medium (Lupa'
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID
 ingredients:

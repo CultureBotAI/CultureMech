@@ -2,7 +2,7 @@ id: CultureMech:001587
 name: mineral_medium_with_pcp
 original_name: MINERAL MEDIUM WITH PCP
 category: bacterial
-medium_type: DEFINED
+medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
