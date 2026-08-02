@@ -2,8 +2,8 @@ id: CultureMech:005573
 name: mineral_medium_with_benzylcyanide_as_nitrogen_source
 original_name: MINERAL MEDIUM WITH BENZYLCYANIDE AS NITROGEN SOURCE
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465d

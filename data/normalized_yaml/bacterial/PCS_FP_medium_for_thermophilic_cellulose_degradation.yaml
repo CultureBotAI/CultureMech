@@ -1,8 +1,8 @@
 name: pcs_fp_medium_for_thermophilic_cellulose_degradation
 original_name: PCS-FP medium for thermophilic cellulose degradation
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 id: CultureMech:015439
 ingredients:

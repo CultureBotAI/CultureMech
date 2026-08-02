@@ -2,8 +2,8 @@ id: CultureMech:005355
 name: medium_457_modified_for_dsm_15090
 original_name: MEDIUM 457 MODIFIED FOR DSM 15090
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457_15090

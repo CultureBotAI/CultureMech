@@ -2,8 +2,8 @@ id: CultureMech:002753
 name: td3_medium
 original_name: TD3 MEDIUM
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

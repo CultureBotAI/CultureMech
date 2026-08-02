@@ -2,8 +2,8 @@ id: CultureMech:005556
 name: medium_465_modified_for_dsm_6428_replace_phenol_with_2_4_6_trichlorophenol
 original_name: MEDIUM 465 MODIFIED FOR DSM 6428_replace_phenol_with_2,4,6-trichlorophenol
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465_6428_replace_phenol_with_2,4,6-trichlorophenol

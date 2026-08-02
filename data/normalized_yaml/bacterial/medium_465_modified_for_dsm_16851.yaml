@@ -2,8 +2,8 @@ id: CultureMech:005545
 name: medium_465_modified_for_dsm_16851
 original_name: MEDIUM 465 MODIFIED FOR DSM 16851
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465_16851

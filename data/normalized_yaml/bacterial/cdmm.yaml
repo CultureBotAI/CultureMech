@@ -2,8 +2,8 @@ id: CultureMech:001228
 name: cdmm
 original_name: CDMM
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: DSMZ Medium 1757

@@ -2,8 +2,8 @@ id: CultureMech:005458
 name: for_dsm_13022
 original_name: For DSM 13022
 category: bacterial
-medium_type: DEFINED
-composition_type: DEFINED
+medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457b.2
