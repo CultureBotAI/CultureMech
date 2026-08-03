@@ -134,9 +134,15 @@ audit-filename-collisions *args="":
 #   data/import_tracking/reports/concentration_plausibility.tsv            (per row)
 #   data/import_tracking/reports/concentration_plausibility_by_record.tsv  (per record,
 #     with a `flattened_cocktail` flag marking the actionable subset)
+# Baseline history (#150): 11,540 rows across 3,914 records at the time the gate
+# was added — the backlog #135's audit found and #118 never repaired. The gate
+# blocks NEW implausible concentrations without demanding the backlog be cleared
+# first, the same convention as `check-chebi-grounding`. LOWER the baseline as
+# records are repaired; raising it to make a run pass defeats the point.
 [group('QC')]
 audit-concentration-plausibility *args="":
-    uv run --extra dev python scripts/audit_concentration_plausibility.py {{args}}
+    uv run --extra dev python scripts/audit_concentration_plausibility.py \
+        --max-allowed 11540 {{args}}
 
 # Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
 # into the tracked researched-media manifest. This is the only step that reads

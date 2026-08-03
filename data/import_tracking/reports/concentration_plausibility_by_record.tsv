@@ -32,7 +32,6 @@ archaea/JCM_J1149_METHANOMASSILIICOCCUS_ALVUS_MEDIUM.yaml	CultureMech:002322	1	0
 archaea/JCM_J230_METHANOSARCINA_MEDIUM.yaml	CultureMech:002591	1	0	1	0	no	no
 archaea/JCM_J243_METHANOTHRIX_MEDIUM.yaml	CultureMech:002604	1	0	1	0	no	no
 archaea/JCM_J283_FERROPLASMA_ACIDIPHILUM_MEDIUM.yaml	CultureMech:002641	1	0	1	0	no	no
-archaea/JCM_J433_PSEUDOMONAS_HALOPHILA_MEDIUM.yaml	CultureMech:000297	1	0	1	0	no	no
 archaea/JCM_J507_METHANOCELLA_MEDIUM.yaml	CultureMech:002857	1	0	1	0	no	no
 archaea/JCM_J911_METHANOCELLA_CONRADII_MEDIUM.yaml	CultureMech:003260	4	0	1	3	no	yes
 archaea/KOMODO_1083_ACIDULIPROFUNDUM_medium.yaml	CultureMech:003735	4	0	4	0	no	yes
@@ -282,10 +281,8 @@ archaea/caldivirga_medium.yaml	CultureMech:002043	1	0	0	1	no	no
 archaea/caldococcus_medium.yaml	CultureMech:002864	3	0	3	0	no	yes
 archaea/cm1a_halorubrum_medium.yaml	CultureMech:001165	3	0	1	2	no	no
 archaea/conexivisphaera_medium.yaml	CultureMech:001193	1	0	0	1	no	no
-archaea/desulfocella_halophila_medium.yaml	CultureMech:000283	1	0	1	0	no	no
 archaea/desulfurococcus_amylolyticus_medium.yaml	CultureMech:002548	1	0	1	0	no	no
 archaea/desulfurococcus_medium.yaml	CultureMech:001502	2	0	1	1	no	no
-archaea/dichotomicrobium_thermohalophilum_medium.yaml	CultureMech:000274	1	0	1	0	no	no
 archaea/ferroglobus_placidus_medium.yaml	CultureMech:001865	1	0	0	1	no	no
 archaea/ferroplasma_acidiphilum_medium.yaml	CultureMech:002032	2	0	2	0	no	no
 archaea/fervidicoccus_fontis_medium.yaml	CultureMech:003283	1	0	1	0	no	no
@@ -432,9 +429,7 @@ archaea/nitrosotalea_aoa_fresh_water_medium_fw.yaml	CultureMech:001267	1	1	0	0	n
 archaea/norris_ferroplasma_medium.yaml	CultureMech:002877	1	0	1	0	no	no
 archaea/palaeococcus_medium.yaml	CultureMech:001479	1	0	0	1	no	no
 archaea/peat_medium_2_for_methanobacteria.yaml	CultureMech:003271	3	0	2	1	no	no
-archaea/petrotoga_halophila_medium.yaml	CultureMech:000279	1	0	0	1	no	no
 archaea/pfennig_ignisphaera_medium.yaml	CultureMech:009692	1	0	0	1	yes	no
-archaea/pseudomonas_halophila_medium.yaml	CultureMech:000265	1	0	1	0	no	no
 archaea/pyrobaculum_ferrireducens_medium.yaml	CultureMech:001053	2	0	1	1	no	no
 archaea/pyrococcus_medium_2.yaml	CultureMech:008136	2	0	1	1	yes	no
 archaea/pyrodictium_abyssi_medium.yaml	CultureMech:005709	5	0	0	5	no	yes
@@ -444,8 +439,6 @@ archaea/pyrolobus_fumarii_medium.yaml	CultureMech:001932	8	0	4	4	no	yes
 archaea/pyrolobus_medium.yaml	CultureMech:003204	4	0	4	0	no	yes
 archaea/revised_sulfolobus_medium.yaml	CultureMech:008895	2	0	2	0	no	no
 archaea/saccharolobus_mt_4_medium.yaml	CultureMech:001258	1	0	1	0	no	no
-archaea/spirochaeta_thermophila_medium.yaml	CultureMech:000268	2	0	1	1	no	no
-archaea/sporolituus_thermophilus_medium.yaml	CultureMech:000303	1	0	1	0	no	no
 archaea/sulfolobus_medium_anaerobic.yaml	CultureMech:008970	7	1	6	0	yes	no
 archaea/sulfolobus_medium_anaerobic_for_dsm_2162.yaml	CultureMech:009226	7	1	6	0	yes	no
 archaea/sulfolobus_medium_for_dsm_5348.yaml	CultureMech:008908	7	1	6	0	yes	no
@@ -464,11 +457,6 @@ archaea/thermoproteus_tenax_medium.yaml	CultureMech:002558	3	0	3	0	no	yes
 archaea/thermoproteus_tenax_medium_2.yaml	CultureMech:008190	3	0	2	1	no	no
 archaea/thermoproteus_uzoniensis_medium.yaml	CultureMech:001609	1	0	1	0	no	no
 archaea/thermosphaera_medium.yaml	CultureMech:001964	1	0	0	1	no	no
-archaea/thioalkalivibrio_halophilus_medium.yaml	CultureMech:000243	1	0	1	0	no	no
-archaea/thiocapsa_halophila_medium.yaml	CultureMech:000272	2	0	1	1	no	no
-archaea/thiohalophilus_medium.yaml	CultureMech:000244	5	0	1	4	no	yes
-archaea/thiohalospira_halophila_medium.yaml	CultureMech:000245	5	0	1	4	no	yes
-archaea/treponema_thermophilum_medium.yaml	CultureMech:000291	1	0	1	0	no	no
 archaea/wr_medium_for_methanobacteriaceae.yaml	CultureMech:003152	1	0	1	0	no	no
 bacterial/0_01_lb_seawater_medium.yaml	CultureMech:002439	4	1	0	3	no	yes
 bacterial/0_3_x_hyphomicrobium_medium.yaml	CultureMech:002268	3	0	2	1	no	no
@@ -490,6 +478,8 @@ bacterial/7way_8_7_medium.yaml	CultureMech:003179	1	0	1	0	no	no
 bacterial/8kg_4_medium.yaml	CultureMech:003180	1	0	1	0	no	no
 bacterial/9k_medium.yaml	CultureMech:003277	1	0	1	0	no	no
 bacterial/CCAP_C18_BG11₀.yaml	CultureMech:000325	2	0	2	0	no	no
+bacterial/DSMZ_1014_THIOALKALIVIBRIO_HALOPHILUS_MEDIUM.yaml	CultureMech:000243	1	0	1	0	no	no
+bacterial/DSMZ_1058_THIOHALOPHILUS_MEDIUM.yaml	CultureMech:000244	5	0	1	4	no	yes
 bacterial/DSMZ_1170_METHYLONATRUM_MEDIUM.yaml	CultureMech:000612	1	0	0	1	no	no
 bacterial/DSMZ_1419_HYPHOMICROBIUM_MEDIUM.yaml	CultureMech:000880	2	0	2	0	no	no
 bacterial/DSMZ_1593_Cyanobacteria_Medium_BG11.yaml	CultureMech:001070	4	0	3	1	no	yes
@@ -497,7 +487,9 @@ bacterial/DSMZ_1645_Cyanobacteria_Medium_AB-.yaml	CultureMech:001128	3	0	3	0	no	
 bacterial/DSMZ_1753_SEAWATER_MEDIUM.yaml	CultureMech:001226	1	1	0	0	no	no
 bacterial/DSMZ_1828_MWC.yaml	CultureMech:001255	9	0	6	3	no	yes
 bacterial/DSMZ_46_PFENNIG_S_MEDIUM_I_WITH_SALT.yaml	CultureMech:001599	1	0	0	1	no	no
+bacterial/DSMZ_470_PSEUDOMONAS_HALOPHILA_MEDIUM.yaml	CultureMech:000265	1	0	1	0	no	no
 bacterial/DSMZ_572_GYE_-_MEDIUM.yaml	CultureMech:001700	1	1	0	0	no	no
+bacterial/DSMZ_590_DICHOTOMICROBIUM_THERMOHALOPHILUM_MEDIUM.yaml	CultureMech:000274	1	0	1	0	no	no
 bacterial/DSMZ_628_MMB_MEDIUM.yaml	CultureMech:001759	1	0	1	0	no	no
 bacterial/DSMZ_647a_DESULFUROMONAS_THIOPHILA_MEDIUM.yaml	CultureMech:001786	5	0	1	4	no	yes
 bacterial/DSMZ_668_FLEXIBACTER_MEDIUM.yaml	CultureMech:001809	4	1	3	0	no	yes
@@ -512,6 +504,7 @@ bacterial/JCM_J1104_HYPNOCYCLICUS_MEDIUM.yaml	CultureMech:002282	3	0	1	2	no	no
 bacterial/JCM_J1192_GEOTHERMOBACTER_MEDIUM.yaml	CultureMech:002359	1	0	1	0	no	no
 bacterial/JCM_J1203_TREPONEMA_SACCHAROPHILUM_MEDIUM.yaml	CultureMech:002372	1	0	0	1	no	no
 bacterial/JCM_J1204_SPOROMUSA_ACIDOVORANS_MEDIUM.yaml	CultureMech:002373	2	0	2	0	no	no
+bacterial/JCM_J1237_TREPONEMA_THERMOPHILUM_MEDIUM.yaml	CultureMech:000291	1	0	1	0	no	no
 bacterial/JCM_J1303_UREAPLASMA_MEDIUM.yaml	CultureMech:002467	1	0	0	1	no	no
 bacterial/JCM_J1353_GBS_SALTS_MEDIUM_FOR_FERVIDIBACTER.yaml	CultureMech:015836	2	0	2	0	no	no
 bacterial/JCM_J1357_Marinagarivorans_sp_GE09_medium.yaml	CultureMech:015838	1	0	1	0	no	no
@@ -527,6 +520,7 @@ bacterial/JCM_J330_SPOROTOMACULUM_MEDIUM.yaml	CultureMech:002689	1	0	1	0	no	no
 bacterial/JCM_J370_TEPIDANAEROBACTER_MEDIUM.yaml	CultureMech:002729	1	0	1	0	no	no
 bacterial/JCM_J381_TRICHOCOCCUS_MEDIUM.yaml	CultureMech:002738	1	0	1	0	no	no
 bacterial/JCM_J383_DESULFOBACTERIUM_MEDIUM.yaml	CultureMech:002740	2	0	2	0	no	no
+bacterial/JCM_J433_PSEUDOMONAS_HALOPHILA_MEDIUM.yaml	CultureMech:000297	1	0	1	0	no	no
 bacterial/JCM_J434_ANAEROLINEA_MEDIUM.yaml	CultureMech:002785	1	0	1	0	no	no
 bacterial/JCM_J436_VY_2_AGAR.yaml	CultureMech:002787	1	1	0	0	no	no
 bacterial/JCM_J470_VULCANIBACILLUS_MEDIUM.yaml	CultureMech:002819	4	0	4	0	no	yes
@@ -2023,6 +2017,7 @@ bacterial/desulfobulbus_sp_medium_freshwater.yaml	CultureMech:001288	2	0	1	1	no	
 bacterial/desulfobulbus_sp_medium_freshwater_for_dsm_14880.yaml	CultureMech:009098	20	1	10	9	yes	no
 bacterial/desulfocapsa_sulfexigens_medium.yaml	CultureMech:001295	2	0	2	0	no	no
 bacterial/desulfocastaena_medium.yaml	CultureMech:001492	2	0	1	1	no	no
+bacterial/desulfocella_halophila_medium.yaml	CultureMech:000283	1	0	1	0	no	no
 bacterial/desulfocella_medium.yaml	CultureMech:002422	1	0	1	0	no	no
 bacterial/desulfofaba_hansenii_medium.yaml	CultureMech:002084	2	0	1	1	no	no
 bacterial/desulfofaba_medium.yaml	CultureMech:001287	5	0	1	4	no	yes
@@ -3343,6 +3338,7 @@ bacterial/pes_provasoli_s_enriched_seawater_medium_7_psu_at_25_c.yaml	CultureMec
 bacterial/petc_medium.yaml	CultureMech:009267	15	1	6	8	yes	no
 bacterial/petc_mes_medium.yaml	CultureMech:009617	8	0	1	7	yes	no
 bacterial/petrothermobacter_medium.yaml	CultureMech:008708	18	0	10	8	yes	no
+bacterial/petrotoga_halophila_medium.yaml	CultureMech:000279	1	0	0	1	no	no
 bacterial/petrotoga_medium.yaml	CultureMech:001856	1	0	0	1	no	no
 bacterial/pfennig_s_medium.yaml	CultureMech:008863	6	1	4	1	yes	no
 bacterial/pfennigs_medium.yaml	CultureMech:003027	1	0	1	0	no	no
@@ -3508,11 +3504,13 @@ bacterial/spirochaeta_cellobiosiphila_medium.yaml	CultureMech:000630	4	0	4	0	no	
 bacterial/spirochaeta_medium.yaml	CultureMech:003198	1	0	1	0	no	no
 bacterial/spirochaeta_ri_19_b1_medium.yaml	CultureMech:001643	2	0	1	1	no	no
 bacterial/spirochaeta_sp_medium.yaml	CultureMech:000723	1	0	0	1	no	no
+bacterial/spirochaeta_thermophila_medium.yaml	CultureMech:000268	2	0	1	1	no	no
 bacterial/spirochete_thermophile_medium.yaml	CultureMech:005711	2	0	1	1	no	no
 bacterial/spirulina_ogawa_terui_sot_medium.yaml	CultureMech:008795	4	0	4	0	no	yes
 bacterial/sporobacter_medium.yaml	CultureMech:001849	2	0	1	1	no	no
 bacterial/sporohalobacter_lortetii_medium.yaml	CultureMech:001420	1	0	0	1	no	no
 bacterial/sporolituus_medium.yaml	CultureMech:000695	1	0	1	0	no	no
+bacterial/sporolituus_thermophilus_medium.yaml	CultureMech:000303	1	0	1	0	no	no
 bacterial/sporomusa_acidovorans_medium.yaml	CultureMech:001412	2	0	1	1	no	no
 bacterial/sporomusa_medium.yaml	CultureMech:003076	1	0	1	0	no	no
 bacterial/sporomusa_medium_betaine.yaml	CultureMech:001410	2	0	1	1	no	no
@@ -3710,6 +3708,7 @@ bacterial/thiobacillus_thioparus_ii_medium.yaml	CultureMech:005609	4	0	3	1	no	ye
 bacterial/thiobacillus_thioparus_tk_m_medium.yaml	CultureMech:001614	4	0	3	1	no	yes
 bacterial/thiobacillus_thyasiris_and_t_halophilus_medium.yaml	CultureMech:005607	3	0	3	0	no	yes
 bacterial/thiobacter_mj_medium.yaml	CultureMech:000428	1	0	0	1	no	no
+bacterial/thiocapsa_halophila_medium.yaml	CultureMech:000272	2	0	1	1	no	no
 bacterial/thiocapsa_medium.yaml	CultureMech:002993	1	0	0	1	no	no
 bacterial/thiofaba_medium.yaml	CultureMech:000550	1	0	0	1	no	no
 bacterial/thiogranum_medium.yaml	CultureMech:001047	1	0	0	1	no	no
@@ -3719,6 +3718,7 @@ bacterial/thiohalomonas_denitrificans_medium.yaml	CultureMech:000489	5	0	1	4	no	
 bacterial/thiohalophilus_medium.yaml	CultureMech:003641	5	0	1	4	no	yes
 bacterial/thiohalorhabdus_denitrificans_medium.yaml	CultureMech:000488	5	0	1	4	no	yes
 bacterial/thiohalospira_alkaliphila_medium.yaml	CultureMech:000687	1	0	0	1	no	no
+bacterial/thiohalospira_halophila_medium.yaml	CultureMech:000245	5	0	1	4	no	yes
 bacterial/thiomicrorhabdus_medium.yaml	CultureMech:000893	5	0	1	4	no	yes
 bacterial/thiomicrospira_pelophila_medium.yaml	CultureMech:000892	9	0	5	4	no	yes
 bacterial/thiomicrospira_psychrophila_medium.yaml	CultureMech:004156	9	0	5	4	no	yes

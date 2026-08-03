@@ -237,6 +237,11 @@ def main(argv: list[str] | None = None) -> int:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--normalized-dir", type=Path, default=NORMALIZED)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    ap.add_argument("--max-allowed", type=int, default=None,
+                    help="Exit non-zero when flagged rows exceed this baseline. Gates "
+                         "NEW defects without blocking on the existing backlog — the "
+                         "same convention as `check-chebi-grounding`. Lower it as the "
+                         "backlog is repaired; never raise it to make a run pass.")
     args = ap.parse_args(argv)
 
     rows = audit(args.normalized_dir)
@@ -277,6 +282,12 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Wrote {summary_path.relative_to(REPO_ROOT)}")
     print("\nRead-only. Repairing the trace-element case means nesting the cocktail "
           "under a stock `solution` object with an addition volume — per-record curation.")
+
+    if args.max_allowed is not None and len(rows) > args.max_allowed:
+        print(f"\nFAIL: {len(rows)} implausible concentration rows > baseline "
+              f"{args.max_allowed}. A new import or edit has introduced rows beyond the "
+              f"known backlog; see the report for which records.", file=sys.stderr)
+        return 1
     return 0
 
 
