@@ -254,3 +254,28 @@ def test_all_three_composition_axes_are_populated_in_the_corpus():
             seen[str(doc["composition_type"])] += 1
     for value in ("DEFINED", "UNDEFINED", "SEMI_DEFINED"):
         assert seen[value] > 0, f"no record carries composition_type: {value} — {dict(seen)}"
+
+
+def test_semi_defined_report_is_idempotent_and_covers_both_verdicts():
+    """The report must not change shape between the promoting run and the next (#172).
+
+    Scanning only UNDEFINED records meant a re-run dropped every PROMOTED row,
+    because those records are SEMI_DEFINED by then — so the committed artifact
+    looked like 197 near-misses with no record of the 612 promotions. Including
+    already-promoted records fixes that; `restamp()` is a no-op when the value
+    already matches, so the promoted COUNT stays honest.
+    """
+    import csv
+
+    report = (REPO_ROOT / "data" / "import_tracking" / "reports"
+              / "composition_type_semi_defined.tsv")
+    assert report.is_file(), "run `just audit-composition-type --promote-semi-defined`"
+    rows = list(csv.DictReader(report.open(), delimiter="\t"))
+    verdicts = {r["verdict"].split(":")[0] for r in rows}
+    assert "PROMOTED" in verdicts, "no promoted rows — the report is not idempotent"
+    assert "CURATOR" in verdicts, "no near-miss rows — the actionable subset is missing"
+
+    near = [r for r in rows if r["verdict"].startswith("CURATOR")]
+    assert all(r["ungrounded_siblings"] for r in near), (
+        "a near-miss row names no ungrounded sibling, which is the thing a curator acts on"
+    )

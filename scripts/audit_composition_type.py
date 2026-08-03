@@ -241,6 +241,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.promote_semi_defined:
         promoted = 0
         skipped: dict[str, int] = {}
+        # Near-misses are the actionable subset: exactly one small undefined
+        # component, held back only because a sibling ingredient is ungrounded.
+        # Either that sibling needs grounding (record becomes promotable) or it is
+        # an unrecognised extract (word list needs the name) — both decidable per
+        # record, and neither findable if only aggregate counts are printed (#172).
+        report_rows: list[dict[str, str]] = []
         for path in sorted(args.normalized_dir.rglob("*.yaml")):
             try:
                 doc = yaml.safe_load(path.read_text(errors="replace"))
@@ -248,17 +254,54 @@ def main(argv: list[str] | None = None) -> int:
                 continue
             if not isinstance(doc, dict) or is_solution_record(doc):
                 continue
-            if str(doc.get("composition_type")) != "UNDEFINED":
+            current = str(doc.get("composition_type"))
+            # Include records already promoted, so the report is IDEMPOTENT. Scanning
+            # only UNDEFINED means a re-run drops every promoted row and the artifact
+            # silently changes shape between the promoting run and the next one.
+            if current not in ("UNDEFINED", "SEMI_DEFINED"):
                 continue
             ok, why = semi_defined_candidate(doc)
+            hits = undefined_components(doc)
             if ok:
-                promoted += restamp(path, "SEMI_DEFINED")
-            else:
-                skipped[why.split(";")[0]] = skipped.get(why.split(";")[0], 0) + 1
+                if current == "UNDEFINED":
+                    promoted += restamp(path, "SEMI_DEFINED")
+                report_rows.append({
+                    "file_path": str(path.relative_to(args.normalized_dir)),
+                    "record_id": str(doc.get("id") or ""),
+                    "verdict": "PROMOTED",
+                    "detail": why,
+                    "ungrounded_siblings": "",
+                })
+                continue
+            skipped[why.split(";")[0]] = skipped.get(why.split(";")[0], 0) + 1
+            if "not CHEBI-grounded" not in why:
+                continue  # only near-misses are worth a row
+            others = [i for i in doc.get("ingredients") or []
+                      if isinstance(i, dict) and i not in hits]
+            report_rows.append({
+                "file_path": str(path.relative_to(args.normalized_dir)),
+                "record_id": str(doc.get("id") or ""),
+                "verdict": "CURATOR: ground the sibling, or add it to the undefined list",
+                "detail": why,
+                "ungrounded_siblings": "; ".join(
+                    str(i.get("preferred_term")) for i in others if not _chebi_id(i)),
+            })
+
+        semi_out = args.out.with_name(args.out.stem.replace("_conflicts", "") + "_semi_defined.tsv")
+        semi_out.parent.mkdir(parents=True, exist_ok=True)
+        with semi_out.open("w", newline="", encoding="utf-8") as fh:
+            w = csv.DictWriter(fh, delimiter="\t", fieldnames=[
+                "file_path", "record_id", "verdict", "detail", "ungrounded_siblings"])
+            w.writeheader()
+            w.writerows(report_rows)
+
+        near = sum(1 for r in report_rows if r["verdict"].startswith("CURATOR"))
         print(f"\nPromoted {promoted} UNDEFINED record(s) -> SEMI_DEFINED.")
+        print(f"Near-misses held back only by an ungrounded sibling: {near}")
         print("Not promoted, by reason:")
         for why, n in sorted(skipped.items(), key=lambda kv: -kv[1])[:6]:
             print(f"  {n:5d}  {why}")
+        print(f"\nWrote {_display(semi_out)}")
         return 0
 
     if not args.apply:
