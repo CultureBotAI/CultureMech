@@ -968,6 +968,11 @@ validate-strict *args:
 # (peaked at 111); the primary-term regrounding pass (483 wrong-id fixes) cut it
 # to 109; the ID_NOT_FOUND remediation (re-ground absent ids + de-ground mixtures)
 # cleared the last few, tightening the reliable-layer backlog to 101.
+# NOTE: reports/chebi_consistency.tsv is NOT tracked (#157). It is regenerated
+# from the corpus on every run and nothing reads the committed copy, so tracking it
+# only produced silent rot — the gate compares against --max-allowed, never against
+# the file. The chebi-consistency workflow uploads a fresh copy as an artifact
+# (`if: always()`) if you need it from CI.
 [group('QC')]
 check-chebi-grounding *args:
     #!/usr/bin/env bash
