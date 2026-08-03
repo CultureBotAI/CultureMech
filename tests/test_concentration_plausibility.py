@@ -186,3 +186,42 @@ def test_stock_solution_records_are_excluded(corpus_findings):
     for file_path in sorted({r["file_path"] for r in corpus_findings})[:400]:
         doc = _yaml.safe_load((normalized / file_path).read_text())
         assert not is_solution_record(doc), f"solution record flagged: {file_path}"
+
+
+CONCENTRATION_BACKLOG_BASELINE = 11_540
+
+
+def test_implausible_row_count_does_not_exceed_the_known_backlog(corpus_findings):
+    """Gate NEW implausible concentrations without blocking on the backlog (#150).
+
+    #135 shipped the audit; the repair never happened, so 11,540 rows across
+    3,914 records are known-bad today. A guard demanding zero would fail
+    immediately and be switched off — the #129 lesson about wiring a gate to a red
+    suite. So this baselines at the current count, exactly as
+    `check-chebi-grounding --max-allowed 101` does for grounding.
+
+    LOWER this number as records are repaired. Raising it to make a run pass is
+    the one move that defeats the purpose: it would let a fresh import land the
+    same defect shape that #118 documented and #135 measured.
+    """
+    assert len(corpus_findings) <= CONCENTRATION_BACKLOG_BASELINE, (
+        f"{len(corpus_findings)} implausible concentration rows exceeds the baseline "
+        f"{CONCENTRATION_BACKLOG_BASELINE}. Something new introduced rows beyond the "
+        f"known backlog — see data/import_tracking/reports/concentration_plausibility.tsv. "
+        f"Do NOT raise the baseline to make this pass."
+    )
+
+
+def test_the_baseline_is_not_far_above_reality(corpus_findings):
+    """A baseline left far above the real count silently stops gating.
+
+    If the backlog is repaired but the number here is not lowered, this test keeps
+    passing while permitting thousands of new defects. Fails once the gap exceeds
+    10%, prompting the baseline to be tightened.
+    """
+    actual = len(corpus_findings)
+    slack = CONCENTRATION_BACKLOG_BASELINE - actual
+    assert slack <= CONCENTRATION_BACKLOG_BASELINE * 0.10, (
+        f"baseline {CONCENTRATION_BACKLOG_BASELINE} is {slack} above the actual "
+        f"{actual}; lower it to {actual} so the gate keeps biting"
+    )
