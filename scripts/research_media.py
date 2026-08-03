@@ -33,40 +33,82 @@ def _normal_key(value: str) -> str:
 
 
 def _candidate_paths(target: str) -> list[Path]:
+    """All records matching `target` on any identifier. Kept for callers that want
+    the full set; `resolve_media_file` ranks these rather than treating them as
+    equally good."""
+    return [p for tier in _tiered_candidates(target) for p in tier]
+
+
+def _tiered_candidates(target: str) -> list[list[Path]]:
+    """Matches grouped by how specific the match is, most specific first.
+
+    Ranking matters because 2,291 record `name:` values are shared by more than one
+    record, and every one of them is also some other record's filename. So
+    `lb_broth` matches both `bacterial/lb_broth.yaml` (by filename) and
+    `bacterial/TOGO_M3227_LB_broth.yaml` (by its `name:` field). Treating those as
+    equally good made the resolver raise on 2,291 slugs, which blocked any
+    slug-driven batch (#151).
+
+    Tiers, in order:
+      1. CultureMech id — unique by construction, guarded by tests/test_id_registry.
+      2. filename stem or full filename — unique within a directory, and the
+         corpus keeps filenames unique across directories except for the
+         collisions tracked in #151.
+      3. `name` / `original_name` / `media_term.preferred_term` — NOT unique.
+    """
     target_path = Path(target)
     if target_path.exists():
-        return [target_path.resolve()]
+        return [[target_path.resolve()]]
 
     normalized_target = _normal_key(target)
-    matches = []
+    by_id: list[Path] = []
+    by_filename: list[Path] = []
+    by_field: list[Path] = []
+
     for path in sorted(MEDIA_DIR.glob("*/*.yaml")):
-        if _normal_key(path.stem) == normalized_target or _normal_key(path.name) == normalized_target:
-            matches.append(path)
+        if _normal_key(path.stem) == normalized_target or \
+                _normal_key(path.name) == normalized_target:
+            by_filename.append(path)
             continue
+        # Cheap reject before parsing: the identifier must appear somewhere.
         if normalized_target not in path.read_text().casefold():
             continue
         doc = load_media(path)
+        if doc.get("id") is not None and \
+                _normal_key(str(doc["id"])) == normalized_target:
+            by_id.append(path)
+            continue
         media_term = doc.get("media_term")
         identifiers = [
-            doc.get("id"),
             doc.get("name"),
             doc.get("original_name"),
             media_term.get("preferred_term") if isinstance(media_term, dict) else None,
         ]
-        if any(value is not None and _normal_key(str(value)) == normalized_target for value in identifiers):
-            matches.append(path)
-    return matches
+        if any(v is not None and _normal_key(str(v)) == normalized_target
+               for v in identifiers):
+            by_field.append(path)
+
+    return [tier for tier in (by_id, by_filename, by_field) if tier]
 
 
 def resolve_media_file(target: str) -> Path:
-    """Resolve a path, slug, CultureMech ID, name, or original name to one media YAML file."""
-    matches = _candidate_paths(target)
-    if len(matches) == 1:
-        return matches[0]
-    if len(matches) > 1:
-        choices = ", ".join(str(path.relative_to(REPO_ROOT)) for path in matches[:20])
-        raise ValueError(f"Target matched multiple media records: {choices}")
-    raise FileNotFoundError(f"Media target not found under {MEDIA_DIR}: {target}")
+    """Resolve a path, slug, CultureMech ID, name, or original name to one media YAML.
+
+    Takes the most specific tier that matches. Raises only when that tier is itself
+    ambiguous — i.e. the target genuinely does not identify one record — rather
+    than when a broader tier happens to match something else too.
+    """
+    tiers = _tiered_candidates(target)
+    if not tiers:
+        raise FileNotFoundError(f"Media target not found under {MEDIA_DIR}: {target}")
+    best = tiers[0]
+    if len(best) == 1:
+        return best[0]
+    choices = ", ".join(str(path.relative_to(REPO_ROOT)) for path in best[:20])
+    raise ValueError(
+        f"Target {target!r} matched multiple media records equally specifically: "
+        f"{choices}. Pass a file path or a CultureMech id to disambiguate."
+    )
 
 
 def _join_values(values: Any) -> str:
