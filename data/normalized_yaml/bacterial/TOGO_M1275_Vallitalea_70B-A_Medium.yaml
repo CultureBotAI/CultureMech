@@ -3,7 +3,7 @@ name: vallitalea_70b_a_medium
 original_name: Vallitalea 70B-A Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

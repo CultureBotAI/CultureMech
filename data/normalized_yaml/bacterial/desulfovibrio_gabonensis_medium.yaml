@@ -3,7 +3,7 @@ name: desulfovibrio_gabonensis_medium
 original_name: DESULFOVIBRIO GABONENSIS medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_range:
   min: 7.0

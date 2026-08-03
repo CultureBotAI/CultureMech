@@ -3,7 +3,7 @@ name: thermanaerobacter_thermophila_medium
 original_name: THERMANAEROBACTER THERMOPHILA MEDIUM
 category: archaea
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

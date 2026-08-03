@@ -3,7 +3,7 @@ name: sulfate_reducing_bacterium_medium_with_lactate
 original_name: SULFATE REDUCING BACTERIUM MEDIUM WITH LACTATE
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:

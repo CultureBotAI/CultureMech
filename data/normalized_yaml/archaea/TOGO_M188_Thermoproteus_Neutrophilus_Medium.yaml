@@ -3,7 +3,7 @@ name: thermoproteus_neutrophilus_medium
 original_name: Thermoproteus Neutrophilus Medium
 category: archaea
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Resazurin

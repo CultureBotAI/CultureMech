@@ -3,7 +3,7 @@ name: dsm_10409
 original_name: DSM 10409
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_range:
   min: 6.8

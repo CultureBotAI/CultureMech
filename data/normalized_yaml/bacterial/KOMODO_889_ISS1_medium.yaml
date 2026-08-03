@@ -3,7 +3,7 @@ name: iss1_medium
 original_name: ISS1 medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 889 | DSMZ Medium: 889 (mediadive.medium:889)

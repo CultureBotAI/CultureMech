@@ -3,7 +3,7 @@ name: isosphaera_pallida_medium
 original_name: ISOSPHAERA PALLIDA MEDIUM
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 7.9
 media_term:

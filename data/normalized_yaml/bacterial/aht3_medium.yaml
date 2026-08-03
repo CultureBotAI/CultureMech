@@ -3,7 +3,7 @@ name: aht3_medium
 original_name: AHT3 medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.8

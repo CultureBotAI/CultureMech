@@ -3,7 +3,7 @@ name: desulfotomaculum_lam5_medium
 original_name: DESULFOTOMACULUM Lam5 MEDIUM
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

@@ -3,7 +3,7 @@ name: phototrophic_medium
 original_name: PHOTOTROPHIC MEDIUM
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 1129

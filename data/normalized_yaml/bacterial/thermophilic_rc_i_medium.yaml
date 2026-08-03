@@ -3,7 +3,7 @@ name: thermophilic_rc_i_medium
 original_name: Thermophilic RC-I medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

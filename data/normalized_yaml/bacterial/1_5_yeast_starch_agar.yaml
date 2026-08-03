@@ -3,7 +3,7 @@ name: 1_5_yeast_starch_agar
 original_name: 1/5 Yeast-Starch Agar
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water

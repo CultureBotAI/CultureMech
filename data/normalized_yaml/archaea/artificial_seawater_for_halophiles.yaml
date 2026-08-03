@@ -3,7 +3,7 @@ name: artificial_seawater_for_halophiles
 original_name: ARTIFICIAL SEAWATER FOR HALOPHILES
 category: archaea
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 7.4
 media_term:

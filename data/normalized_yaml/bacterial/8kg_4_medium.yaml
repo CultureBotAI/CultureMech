@@ -3,7 +3,7 @@ name: 8kg_4_medium
 original_name: 8KG-4 MEDIUM
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: JCM Medium J836

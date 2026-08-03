@@ -3,7 +3,7 @@ name: norris_ferroplasma_medium
 original_name: NORRIS FERROPLASMA MEDIUM
 category: archaea
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 1.2
 media_term:

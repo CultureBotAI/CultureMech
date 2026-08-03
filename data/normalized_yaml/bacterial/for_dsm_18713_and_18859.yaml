@@ -3,7 +3,7 @@ name: for_dsm_18713_and_18859
 original_name: For DSM 18713 and 18859
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:
