@@ -3,7 +3,7 @@ name: medium_269_modified_for_dsm_11245
 original_name: MEDIUM 269 MODIFIED FOR DSM 11245
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 269_11245

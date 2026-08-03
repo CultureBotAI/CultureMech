@@ -3,7 +3,7 @@ name: deferrisoma_medium
 original_name: DEFERRISOMA MEDIUM
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 6.5
 media_term:

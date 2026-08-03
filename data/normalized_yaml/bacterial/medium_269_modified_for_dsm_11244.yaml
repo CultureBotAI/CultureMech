@@ -3,7 +3,7 @@ name: medium_269_modified_for_dsm_11244
 original_name: MEDIUM 269 MODIFIED FOR DSM 11244
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 3.5
 media_term:

@@ -3,7 +3,7 @@ name: ectothiorhodospira_variabilis_medium
 original_name: ECTOTHIORHODOSPIRA VARIABILIS medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_range:
   min: 9.0

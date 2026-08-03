@@ -3,7 +3,7 @@ name: methanofollis_ethanolicus_medium
 original_name: METHANOFOLLIS ETHANOLICUS MEDIUM
 category: archaea
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

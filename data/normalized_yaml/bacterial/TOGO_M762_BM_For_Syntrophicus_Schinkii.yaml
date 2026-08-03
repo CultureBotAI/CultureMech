@@ -3,7 +3,7 @@ name: bm_for_syntrophicus_schinkii
 original_name: BM For Syntrophicus Schinkii
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

@@ -1,0 +1,810 @@
+file_path	record_id	verdict	detail	ungrounded_siblings
+archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml	CultureMech:002536	PROMOTED	0.2 g/L Yeast extract; 6 others all CHEBI-grounded	
+archaea/JCM_J283_FERROPLASMA_ACIDIPHILUM_MEDIUM.yaml	CultureMech:002641	PROMOTED	0.16 g/L Yeast extract; 5 others all CHEBI-grounded	
+archaea/JCM_J507_METHANOCELLA_MEDIUM.yaml	CultureMech:002857	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+archaea/JCM_J911_METHANOCELLA_CONRADII_MEDIUM.yaml	CultureMech:003260	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sodium phosphate buffer
+archaea/KOMODO_1091_HALOQUADRATUM_WALSBYI_medium.yaml	CultureMech:003742	PROMOTED	0.05 g/L Yeast extract; 11 others all CHEBI-grounded	
+archaea/KOMODO_1257_METHANOCELLA_medium.yaml	CultureMech:004017	PROMOTED	0.0998004 g/L Yeast extract; 32 others all CHEBI-grounded	
+archaea/KOMODO_1273_METHANOSPIRILLUM_LACUNAE_MEDIUM.yaml	CultureMech:004027	PROMOTED	0.197824 g/L Yeast extract; 33 others all CHEBI-grounded	
+archaea/KOMODO_1318_METHANOCELLA_CONRADII_medium.yaml	CultureMech:004073	PROMOTED	0.199203 g/L Yeast extract; 35 others all CHEBI-grounded	
+archaea/KOMODO_185_THERMOPROTEUS_medium.yaml	CultureMech:004209	PROMOTED	0.2 g/L Yeast extract; 17 others all CHEBI-grounded	
+archaea/KOMODO_265_THERMOFILUM_PENDENS_medium.yaml	CultureMech:004668	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Polar lipid fraction
+archaea/KOMODO_329_METHANOHALOPHILUS_HALOPHILUS_medium.yaml	CultureMech:005022	PROMOTED	0.0499002 g/L Yeast extract; 31 others all CHEBI-grounded	
+archaea/KOMODO_375_METHANOHALOBIUM_medium.yaml	CultureMech:005107	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Cystein-HCl x 2 H2O
+archaea/KOMODO_399_ARCHAEOGLOBUS_medium.yaml	CultureMech:005188	PROMOTED	0.494071 g/L Yeast extract; 24 others all CHEBI-grounded	
+archaea/KOMODO_480d_THERMOPROTEUS_UZONIENSIS_medium.yaml	CultureMech:005602	PROMOTED	0.0998004 g/L Yeast extract; 30 others all CHEBI-grounded	
+archaea/KOMODO_519_ARCHAEOGLOBUS_PROFUNDUS_medium.yaml	CultureMech:005877	PROMOTED	0.494071 g/L Yeast extract; 25 others all CHEBI-grounded	
+archaea/KOMODO_883_CALDIVIRGA_medium.yaml	CultureMech:006733	PROMOTED	0.49456 g/L Yeast extract; 27 others all CHEBI-grounded	
+archaea/KOMODO_991_CALDISPHAERA_medium.yaml	CultureMech:006963	PROMOTED	0.49456 g/L Yeast extract; 27 others all CHEBI-grounded	
+archaea/TOGO_M1090_Methanogens_Saline_Water_Medium.yaml	CultureMech:007607	PROMOTED	0.1 g/L yeast extract; 12 others all CHEBI-grounded	
+archaea/TOGO_M1183_Marine_Methanogenic_Medium.yaml	CultureMech:007709	PROMOTED	0.2 g/L Yeast extract (BD--Difco); 10 others all CHEBI-grounded	
+archaea/TOGO_M1265_Modified_Cellulolytic_Haloarchaea_Medium.yaml	CultureMech:007797	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	1 M NH4Cl
+archaea/TOGO_M1266_Modified_Cellulolytic_Haloarchaea_Medium.yaml	CultureMech:007798	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	1 M NH4Cl
+archaea/TOGO_M1333_Thermoplasma_Kamchatkensis_Medium.yaml	CultureMech:007869	PROMOTED	0.1 g/L Yeast extract; 10 others all CHEBI-grounded	
+archaea/TOGO_M1633_Thermoproteus_neutrophilus_Medium.yaml	CultureMech:008188	PROMOTED	0.2 g/L Bacto Yeast Extract (Difco); 20 others all CHEBI-grounded	
+archaea/TOGO_M1634_Methanosarcina_Medium.yaml	CultureMech:008189	PROMOTED	0.1 g/L Bacto Yeast Extract (Difco); 33 others all CHEBI-grounded	
+archaea/TOGO_M1655_Methanopyrus_Medium.yaml	CultureMech:008212	PROMOTED	0.2 g/L Bacto Yeast Extract (Difco); 49 others all CHEBI-grounded	
+archaea/TOGO_M1673_Methanobacterium_Medium.yaml	CultureMech:008231	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Polypeptone
+archaea/TOGO_M169_Acidianus_Brierleyi_Medium.yaml	CultureMech:008260	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 8 others all CHEBI-grounded	
+archaea/TOGO_M1732_Methanolinea_Medium.yaml	CultureMech:008296	PROMOTED	0.1 g/L Bacto Yeast Extract (Difco); 33 others all CHEBI-grounded	
+archaea/TOGO_M1795_Methanofollis_ethanolicus_medium.yaml	CultureMech:008363	PROMOTED	0.1 g/L Yeast extract; 35 others all CHEBI-grounded	
+archaea/TOGO_M1834_Methanobacterium_Medium.yaml	CultureMech:008407	PROMOTED	0.2 g/L Bacto Yeast Extract (Difco); 36 others all CHEBI-grounded	
+archaea/TOGO_M1882_Methanoregula_medium.yaml	CultureMech:008456	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Polypepton; KAl(SO4)2·2H2O
+archaea/TOGO_M188_Thermoproteus_Neutrophilus_Medium.yaml	CultureMech:008464	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 7 others all CHEBI-grounded	
+archaea/TOGO_M189_Thermoproteus_Tenax_Medium.yaml	CultureMech:008475	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Na2MoO7・2H2O; KH2PO3
+archaea/TOGO_M1910_Methanohalophilus_medium.yaml	CultureMech:008488	PROMOTED	0.05 g/L Bacto Yeast Extract (Difco); 34 others all CHEBI-grounded	
+archaea/TOGO_M197_Pyrodictium_Ocultum_Medium.yaml	CultureMech:008562	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 6 others all CHEBI-grounded	
+archaea/TOGO_M1990_Methanomethylovorans_medium.yaml	CultureMech:008574	PROMOTED	0.2 g/L Bacto Yeast Extract (Difco); 34 others all CHEBI-grounded	
+archaea/TOGO_M2092_Hydrogen-using_marine_methanogen_medium.yaml	CultureMech:008683	PROMOTED	0.2 g/L Bacto Yeast Extract (Difco); 39 others all CHEBI-grounded	
+archaea/TOGO_M2375_Haloquadratum_Walsbyi_Medium.yaml	CultureMech:008959	PROMOTED	0.05 g/L Yeast extract; 12 others all CHEBI-grounded	
+archaea/TOGO_M2561_Methanocella_Conradii_Medium.yaml	CultureMech:009130	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	HCl (25%; 7.7 M); N2 gas
+archaea/TOGO_M2564_Desulfurococcus_Medium.yaml	CultureMech:009133	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Sulfur, powdered; HCl (25%; 7.7 M); N2 gas
+archaea/TOGO_M2647_Methanohalobium_Medium.yaml	CultureMech:009203	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	HCl (25%; 7.7 M)
+archaea/TOGO_M2654_Methanoregula_Peat_Medium.yaml	CultureMech:009209	CURATOR: ground the sibling, or add it to the undefined list	6 other ingredient(s) not CHEBI-grounded	1 N HCl; HCl (25%); Homo-PIPES (SIGMA); N2 gas; NaOH (0.38 M); 2-Mercaptoethanesulfonate (coenzyme M)
+archaea/TOGO_M2676_Thermoproteus_Medium.yaml	CultureMech:009231	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Sulfur, powdered; N2 gas
+archaea/TOGO_M2677_Thermoproteus_medium.yaml	CultureMech:009232	PROMOTED	0.2 g/L Yeast extract; 19 others all CHEBI-grounded	
+archaea/TOGO_M277_Ferroplasma_Acidiphilum_Medium.yaml	CultureMech:009328	PROMOTED	0.16 g/L Yeast extract (BD-Difco); 7 others all CHEBI-grounded	
+archaea/TOGO_M303_Acidilobus_Medium.yaml	CultureMech:009552	PROMOTED	0.3 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+archaea/TOGO_M424_Methanolinea_Medium.yaml	CultureMech:009810	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 13 others all CHEBI-grounded	
+archaea/TOGO_M508_Methanocella_Medium.yaml	CultureMech:009898	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 10 others all CHEBI-grounded	
+archaea/TOGO_M526_Acidianus_SP._JP7_Medium.yaml	CultureMech:009918	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Sol. 1; Sol. 2; VOSO4・xH2O
+archaea/TOGO_M527_Norris_Ferroplasma_Medium.yaml	CultureMech:009919	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 7 others all CHEBI-grounded	
+archaea/TOGO_M598_Modified_9K_Medium_For_Ferroplasma_Aeolicum.yaml	CultureMech:009995	PROMOTED	0.2 g/L Yeast extract; 7 others all CHEBI-grounded	
+archaea/TOGO_M701_Methanofollis_Ethanolicus_Medium.yaml	CultureMech:010109	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 33 others all CHEBI-grounded	
+archaea/TOGO_M827_Methanobacterium_Medium_III.yaml	CultureMech:010240	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	5% L--Cysteine・HCl・H2O
+archaea/TOGO_M956_Methanocella_Conradii_Medium.yaml	CultureMech:010380	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	5% Na2S・9H2O
+archaea/TOGO_M980_Acidilobus_Saccharovorans_Medium.yaml	CultureMech:010407	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 13 others all CHEBI-grounded	
+archaea/TOGO_M995_Modified_Balch_s_Methanogen_Medium_1_B.yaml	CultureMech:010423	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 15 others all CHEBI-grounded	
+archaea/acidianus_brierleyi_medium.yaml	CultureMech:000980	PROMOTED	0.2 g/L Yeast extract; 6 others all CHEBI-grounded	
+archaea/acidianus_infernus_medium.yaml	CultureMech:005077	PROMOTED	0.49505 g/L Yeast extract; 13 others all CHEBI-grounded	
+archaea/acidianus_sp_jp7_medium.yaml	CultureMech:002876	PROMOTED	0.1 g/L Yeast extract; 12 others all CHEBI-grounded	
+archaea/acidilobus_medium.yaml	CultureMech:002665	PROMOTED	0.296443 g/L Yeast extract; 27 others all CHEBI-grounded	
+archaea/acidilobus_saccharovorans_medium.yaml	CultureMech:003282	PROMOTED	0.296443 g/L Yeast extract; 27 others all CHEBI-grounded	
+archaea/acidolobus_aceticus_medium_for_dsm_16705.yaml	CultureMech:009233	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Sulfur, powdered; CO2  gas; HCl (25%; 7.7 M)
+archaea/alkaliphilic_methanogen_medium.yaml	CultureMech:006297	PROMOTED	0.489237 g/L Yeast extract; 22 others all CHEBI-grounded	
+archaea/archaeoglobus_infectus_medium.yaml	CultureMech:000529	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sea Salt
+archaea/archaeoglobus_medium.yaml	CultureMech:001508	PROMOTED	0.494071 g/L Yeast extract; 24 others all CHEBI-grounded	
+archaea/archaeoglobus_neptunius_medium.yaml	CultureMech:001509	PROMOTED	0.498504 g/L Yeast extract; 34 others all CHEBI-grounded	
+archaea/archaeoglobus_profundus_medium.yaml	CultureMech:001651	PROMOTED	0.494071 g/L Yeast extract; 25 others all CHEBI-grounded	
+archaea/artificial_seawater_for_halophiles.yaml	CultureMech:000298	PROMOTED	0.05 g/L Yeast extract; 10 others all CHEBI-grounded	
+archaea/caldisphaera_medium.yaml	CultureMech:002173	PROMOTED	0.49456 g/L Yeast extract; 26 others all CHEBI-grounded	
+archaea/caldivirga_medium.yaml	CultureMech:002043	PROMOTED	0.49456 g/L Yeast extract; 26 others all CHEBI-grounded	
+archaea/conexivisphaera_medium.yaml	CultureMech:001193	PROMOTED	0.49456 g/L Yeast extract; 24 others all CHEBI-grounded	
+archaea/desulfurococcus_medium.yaml	CultureMech:001502	PROMOTED	0.199601 g/L Yeast extract; 29 others all CHEBI-grounded	
+archaea/geoglobus_ahangari_medium.yaml	CultureMech:001006	PROMOTED	0.0998004 g/L Yeast extract; 32 others all CHEBI-grounded	
+archaea/geoglobus_medium.yaml	CultureMech:000665	PROMOTED	0.199402 g/L Yeast extract; 32 others all CHEBI-grounded	
+archaea/halalkaliarchaeum_medium.yaml	CultureMech:002262	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Basal mineral NaCl medium; Trace vitamins (see Medium No. 197)
+archaea/halanaeroarchaeum_medium.yaml	CultureMech:002259	PROMOTED	0.2 g/L Yeast extract; 20 others all CHEBI-grounded	
+archaea/halophilic_medium.yaml	CultureMech:000247	PROMOTED	0.1 g/L Yeast extract; 8 others all CHEBI-grounded	
+archaea/haloquadratum_walsbyi_medium.yaml	CultureMech:000523	PROMOTED	0.05 g/L Yeast extract; 11 others all CHEBI-grounded	
+archaea/halorussus_varius_medium_msc_15_2.yaml	CultureMech:001167	PROMOTED	0.1 g/L Yeast extract; 28 others all CHEBI-grounded	
+archaea/hydrogen_using_marine_methanogen_medium.yaml	CultureMech:008597	PROMOTED	0.2 g/L Bacto Yeast Extract (Difco); 38 others all CHEBI-grounded	
+archaea/marine_h2_using_methanogen_medium.yaml	CultureMech:008267	PROMOTED	0.02 g/L Bacto Yeast Extract (Difco); 38 others all CHEBI-grounded	
+archaea/marine_methanobacterium_medium.yaml	CultureMech:007804	PROMOTED	0.1 g/L Yeast extract; 11 others all CHEBI-grounded	
+archaea/marine_methanogenic_medium.yaml	CultureMech:000288	PROMOTED	0.2 g/L Yeast extract; 23 others all CHEBI-grounded	
+archaea/medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397.yaml	CultureMech:008179	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na-terephthalate
+archaea/medium_for_natronophilic_methylotrophic_methanogen.yaml	CultureMech:008603	PROMOTED	0.02 g/L Bacto Yeast Extract (Difco); 34 others all CHEBI-grounded	
+archaea/methanobacterium_medium_ii.yaml	CultureMech:003048	PROMOTED	0.473934 g/L Yeast extract; 32 others all CHEBI-grounded	
+archaea/methanobacterium_medium_iii.yaml	CultureMech:003138	PROMOTED	0.192308 g/L Yeast extract; 30 others all CHEBI-grounded	
+archaea/methanocalculus_alkaliphilus_medium.yaml	CultureMech:001074	PROMOTED	0.0199402 g/L Yeast extract; 31 others all CHEBI-grounded	
+archaea/methanocella_conradii_medium.yaml	CultureMech:000776	PROMOTED	0.199203 g/L Yeast extract; 35 others all CHEBI-grounded	
+archaea/methanocella_medium.yaml	CultureMech:000715	PROMOTED	0.0998004 g/L Yeast extract; 32 others all CHEBI-grounded	
+archaea/methanofollis_ethanolicus_medium.yaml	CultureMech:003028	PROMOTED	0.0997009 g/L Yeast extract; 28 others all CHEBI-grounded	
+archaea/methanohalobium_medium.yaml	CultureMech:001476	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Cystein-HCl x 2 H2O
+archaea/methanohalophilus_halophilus_medium.yaml	CultureMech:000261	PROMOTED	0.0499002 g/L Yeast extract; 31 others all CHEBI-grounded	
+archaea/methanolinea_medium.yaml	CultureMech:002777	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+archaea/methanomethylovorans_thermophila_medium.yaml	CultureMech:008491	PROMOTED	0.2 g/L Bacto Yeast Extract (Difco); 34 others all CHEBI-grounded	
+archaea/methanosalsum_wen5_medium.yaml	CultureMech:001829	PROMOTED	0.489237 g/L Yeast extract; 22 others all CHEBI-grounded	
+archaea/methanosphaerula_peat_medium_for_dsm_25616.yaml	CultureMech:009216	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	2 N NaOH; 2-(N-Morpholino)ethanesulfonic acid (MES); 2-Mercaptoethanesulfonic acid (Coenzyme M)
+archaea/methanospirillum_lacunae_medium.yaml	CultureMech:000735	PROMOTED	0.197824 g/L Yeast extract; 33 others all CHEBI-grounded	
+archaea/methanothermobacter_medium.yaml	CultureMech:008141	PROMOTED	0.2 g/L Bacto Yeast Extract (Difco); 33 others all CHEBI-grounded	
+archaea/modified_9k_medium_for_ferroplasma_aeolicum.yaml	CultureMech:002941	PROMOTED	0.199601 g/L Yeast extract; 14 others all CHEBI-grounded	
+archaea/modified_balchs_methanogen_medium_1_b.yaml	CultureMech:000304	PROMOTED	0.192308 g/L Yeast extract; 32 others all CHEBI-grounded	
+archaea/modified_cellulolytic_haloarchaea_medium.yaml	CultureMech:002353	PROMOTED	0.114155 g/L Yeast extract; 28 others all CHEBI-grounded	
+archaea/natranaeroarchaeum_medium.yaml	CultureMech:002261	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Basal mineral NaCl medium; Trace vitamins (see Medium No. 197)
+archaea/natranaeroarchaeum_medium_aarc1.yaml	CultureMech:000945	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	B12
+archaea/natronolimnobius_aht32_medium_a.yaml	CultureMech:003235	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Trace vitamins (see Medium No. 197)
+archaea/natronolimnobius_aht32_medium_b.yaml	CultureMech:002272	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Trace vitamins (see Medium No. 197)
+archaea/norris_ferroplasma_medium.yaml	CultureMech:002877	PROMOTED	0.1 g/L Yeast extract; 5 others all CHEBI-grounded	
+archaea/peat_medium_2_for_methanobacteria.yaml	CultureMech:003271	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	TiCl3
+archaea/pyrobaculum_bs_medium.yaml	CultureMech:001740	PROMOTED	0.494071 g/L Yeast extract; 31 others all CHEBI-grounded	
+archaea/pyrodictium_abyssi_medium.yaml	CultureMech:005709	PROMOTED	0.0494071 g/L Yeast extract; 31 others all CHEBI-grounded	
+archaea/pyrodictium_delaneyi_medium.yaml	CultureMech:000667	PROMOTED	0.199402 g/L Yeast extract; 32 others all CHEBI-grounded	
+archaea/thermanaerobacter_thermophila_medium.yaml	CultureMech:000305	PROMOTED	0.49554 g/L Yeast extract; 12 others all CHEBI-grounded	
+archaea/thermocladium_medium.yaml	CultureMech:002596	PROMOTED	0.49505 g/L Yeast extract; 26 others all CHEBI-grounded	
+archaea/thermofilum_pendens_medium.yaml	CultureMech:001364	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Polar lipid fraction
+archaea/thermoplasma_kamchatkensis_medium.yaml	CultureMech:002405	PROMOTED	0.1 g/L Yeast extract; 6 others all CHEBI-grounded	
+archaea/thermoproteus_medium.yaml	CultureMech:001275	PROMOTED	0.2 g/L Yeast extract; 16 others all CHEBI-grounded	
+archaea/thermoproteus_neutrophilus_medium.yaml	CultureMech:002557	PROMOTED	0.2 g/L Yeast extract; 16 others all CHEBI-grounded	
+archaea/thermoproteus_tenax_medium.yaml	CultureMech:002558	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	KH2PO3; Na2MoO7 x 2 H2O
+archaea/thermoproteus_tenax_medium_2.yaml	CultureMech:008190	PROMOTED	0.2 g/L Bacto Yeast Extract (Difco); 20 others all CHEBI-grounded	
+archaea/thermoproteus_uzoniensis_medium.yaml	CultureMech:001609	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Casitone
+bacterial/1_10_yeast_starch_agar.yaml	CultureMech:007824	PROMOTED	0.2 g/L Yeast extract; 3 others all CHEBI-grounded	
+bacterial/1_2_sme_medium_for_ya.yaml	CultureMech:003320	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Modified Wolfe's minerals
+bacterial/1_5_mycorrhiza_medium.yaml	CultureMech:007961	PROMOTED	0.4 g/L Yeast extract; 3 others all CHEBI-grounded	
+bacterial/1_5_yeast_starch_agar.yaml	CultureMech:008540	PROMOTED	0.4 g/L Yeast extract; 3 others all CHEBI-grounded	
+bacterial/480g_medium.yaml	CultureMech:003312	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Casitone
+bacterial/7way_8_7_medium.yaml	CultureMech:003179	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/8kg_4_medium.yaml	CultureMech:003180	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/DSMZ_1419_HYPHOMICROBIUM_MEDIUM.yaml	CultureMech:000880	PROMOTED	0.25 g/L Bacto peptone; 26 others all CHEBI-grounded	
+bacterial/DSMZ_162_HYPHOMICROBIUM_MEDIUM.yaml	CultureMech:001109	PROMOTED	0.1 g/L Yeast extract; 9 others all CHEBI-grounded	
+bacterial/DSMZ_969_SULFOBACILLUS_MEDIUM.yaml	CultureMech:002151	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na-tetrathionate
+bacterial/JCM_J1013_ACETIVIBRIO_MEDIUM.yaml	CultureMech:002198	PROMOTED	0.0499002 g/L Yeast extract; 20 others all CHEBI-grounded	
+bacterial/JCM_J1080_HALODESULFURIARCHAEUM_MEDIUM.yaml	CultureMech:002260	PROMOTED	0.2 g/L Yeast extract; 20 others all CHEBI-grounded	
+bacterial/JCM_J1351_PELOSINUS_BKL1_MEDIUM.yaml	CultureMech:015835	CURATOR: ground the sibling, or add it to the undefined list	6 other ingredient(s) not CHEBI-grounded	FeCl2 solution (see Medium No. 187 ); Trace element solution (see Medium No. 187 ); 8.0% NaHCO3 solution*; Trace vitamins* (see Medium No. 197 ); 1.0 M Sodium lactate solution; 5% L-Cysteine·HCl·H2O solution
+bacterial/JCM_J1354_RFODOSPIRILLACEAE_MEDIUM_MODIFIED.yaml	CultureMech:015837	CURATOR: ground the sibling, or add it to the undefined list	4 other ingredient(s) not CHEBI-grounded	0.1% Fe(III) citrate solution; 0.01% Vitamin B12 solution; SL-6 Trace element solution (see Medium No. 167 ); L-Cysteine·HCl·H2O
+bacterial/JCM_J1404_MINERAL_CARBONATE_MEDIUM_WITH_CELLOBIOSE.yaml	CultureMech:015854	CURATOR: ground the sibling, or add it to the undefined list	5 other ingredient(s) not CHEBI-grounded	1 M MgSO4 solution; 1 M NH4Cl solution; Trace element solution (see Medium No. 1079 ); Trace vitamins* (see Medium No. 197 ); 10% Cellobiose solution*
+bacterial/JCM_J1406_TEPIDIBACTER_8C15B_MEDIUM.yaml	CultureMech:015856	CURATOR: ground the sibling, or add it to the undefined list	6 other ingredient(s) not CHEBI-grounded	FeCl2 solution (see Medium No. 187 ); Trace element solution (see Medium No. 187 ); Selenite-tungstate solution (see Medium No. 431 ); 8% NaHCO3 solution*; 1 M Glucose solution; 5% Na2S·9H2O solution
+bacterial/JCM_J1430_SEMI_SOLID_HETEROTROPHIC_GROWTH_MEDIUM_FOR_ALPHAPROTEOBACTERIA.yaml	CultureMech:015865	CURATOR: ground the sibling, or add it to the undefined list	5 other ingredient(s) not CHEBI-grounded	Modified Wolfe’s mineral solution (see Medium No. 915 ); 0.5 M Potassium phosphate buffer (pH 7.0); Vitamin solution* (see Medium No. 915 ); 0.01 M FeSO4·7H2O solution (in 0.02 N HCl); 5% L-Cysteine·HCl·H2O solution
+bacterial/JCM_J330_SPOROTOMACULUM_MEDIUM.yaml	CultureMech:002689	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/JCM_J347_SME_MEDIUM.yaml	CultureMech:002707	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/JCM_J370_TEPIDANAEROBACTER_MEDIUM.yaml	CultureMech:002729	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/JCM_J383_DESULFOBACTERIUM_MEDIUM.yaml	CultureMech:002740	PROMOTED	0.0988142 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/JCM_J434_ANAEROLINEA_MEDIUM.yaml	CultureMech:002785	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/JCM_J470_VULCANIBACILLUS_MEDIUM.yaml	CultureMech:002819	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sea Salt
+bacterial/JCM_J471_DESULFONAUTICUS_MEDIUM.yaml	CultureMech:002820	PROMOTED	0.0988142 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/JCM_J496_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM.yaml	CultureMech:002847	PROMOTED	0.2997 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/JCM_J515_RHODOVULUM_VISAKHUM_MEDIUM.yaml	CultureMech:002866	PROMOTED	0.399202 g/L Yeast extract; 17 others all CHEBI-grounded	
+bacterial/JCM_J649_RHODOVULUM_KHOLENSE_MEDIUM.yaml	CultureMech:002995	PROMOTED	0.499501 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml	CultureMech:003030	PROMOTED	0.2 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/JCM_J784_DESULFOSPOROSINUS_ACIDOPHILUS_MEDIUM.yaml	CultureMech:003127	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Trace vitamins (see Medium No. 197)
+bacterial/JCM_J918_DESULFAMPLUS_MEDIUM.yaml	CultureMech:003265	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Potassium phosphate buffer
+bacterial/KOMODO_1002_ECTOTHIORHODOSYNUS_medium.yaml	CultureMech:003499	PROMOTED	0.1 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/KOMODO_1023_MANNING_medium.yaml	CultureMech:003535	PROMOTED	0.2 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/KOMODO_1038_ACIDICALDUS_medium.yaml	CultureMech:003552	PROMOTED	0.2 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/KOMODO_1042_VULCANIBACILLUS_medium.yaml	CultureMech:003601	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sea Salt
+bacterial/KOMODO_1055_DESULFOHALOBIUM_UTAHENSE_medium.yaml	CultureMech:003634	PROMOTED	0.498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/KOMODO_1059_GEOALKALIBACTER_medium.yaml	CultureMech:003642	PROMOTED	0.0998004 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/KOMODO_1069_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM.yaml	CultureMech:003657	PROMOTED	0.4 g/L Yeast extract; 14 others all CHEBI-grounded	
+bacterial/KOMODO_1086_DESULFATIRHABDIUM_medium.yaml	CultureMech:003738	PROMOTED	0.0199402 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/KOMODO_1099_DESULFOLUNA_medium.yaml	CultureMech:003751	PROMOTED	0.499501 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/KOMODO_109_RHODOPSEUDOMONAS_SULFOVIRIDIS_medium.yaml	CultureMech:003752	PROMOTED	0.3 g/L Yeast extract; 20 others all CHEBI-grounded	
+bacterial/KOMODO_1100_DESULFACINUM_medium.yaml	CultureMech:003800	PROMOTED	0.491159 g/L Yeast extract; 24 others all CHEBI-grounded	
+bacterial/KOMODO_1101_DESULFONATRONOSPIRA_medium.yaml	CultureMech:003802	PROMOTED	0.0498504 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/KOMODO_1104_DETHIOBACTER_medium.yaml	CultureMech:003804	PROMOTED	0.0498008 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/KOMODO_1127_TPT_18_medium.yaml	CultureMech:003831	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Casitone
+bacterial/KOMODO_1128_RHODOVULUM_VISAKHUM_medium.yaml	CultureMech:003832	PROMOTED	0.4 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/KOMODO_1142_RHODOBLASTUS_medium.yaml	CultureMech:003852	PROMOTED	0.1 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/KOMODO_1151_SDO_medium.yaml	CultureMech:003862	PROMOTED	0.1 g/L Yeast extract; 27 others all CHEBI-grounded	
+bacterial/KOMODO_1155_SME_MEDIUM.yaml	CultureMech:003864	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	KJ
+bacterial/KOMODO_1162_THIOPHAEOCOCCUS_MANGROVI_medium.yaml	CultureMech:003873	PROMOTED	0.4 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/KOMODO_1174_NITRINCOLA_medium.yaml	CultureMech:003894	PROMOTED	0.1 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml	CultureMech:003895	PROMOTED	0.2 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/KOMODO_1176_HALOVIBRIO_medium.yaml	CultureMech:003896	PROMOTED	0.2 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/KOMODO_1187_ANOYXNATRONUM_medium.yaml	CultureMech:003907	PROMOTED	0.2 g/L Yeast extract; 27 others all CHEBI-grounded	
+bacterial/KOMODO_1191_EGGC.yaml	CultureMech:003928	PROMOTED	0.3 g/L Casamino acids; 20 others all CHEBI-grounded	
+bacterial/KOMODO_1197_RHODOBACTER_THIOCAPSA_medium.yaml	CultureMech:003935	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/KOMODO_1201_ALICYCLOBACILLUS_FERROOXYDANS_medium.yaml	CultureMech:003949	PROMOTED	0.215054 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium.yaml	CultureMech:003956	PROMOTED	0.05 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/KOMODO_1219_METHYLOVIRGULA_LIGNI_medium.yaml	CultureMech:003970	PROMOTED	0.1 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/KOMODO_1220_ACIDOSOMA_medium.yaml	CultureMech:003973	PROMOTED	0.1 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/KOMODO_1224_ECTOTHIORHODOSPIRA_VARIABILIS_medium.yaml	CultureMech:003978	PROMOTED	0.1 g/L Yeast extract; 20 others all CHEBI-grounded	
+bacterial/KOMODO_1226_THIOHALOCAPSA_MARINA_medium.yaml	CultureMech:003981	PROMOTED	0.4 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/KOMODO_1239_DESULFURISPIRILLUM_medium.yaml	CultureMech:003996	PROMOTED	0.05 g/L Yeast extract; 17 others all CHEBI-grounded	
+bacterial/KOMODO_1250_DESULFOSPOROSINUS_ACIDOPHILUS_medium.yaml	CultureMech:004012	PROMOTED	0.498504 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/KOMODO_1301_TEPIDANAEROBACTER_ACETATOXYDANS_medium.yaml	CultureMech:004056	PROMOTED	0.2 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/KOMODO_1352_FUCHSIELLA_ALKALIACETIGENA_medium.yaml	CultureMech:004106	PROMOTED	0.0489716 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/KOMODO_1360_HIPPEA_JASONIAE_medium.yaml	CultureMech:004108	PROMOTED	0.49456 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/KOMODO_1381_S_HELIORESTIS_medium.yaml	CultureMech:004111	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	NaHSeO3
+bacterial/KOMODO_1451_DEFERRISOMA_medium.yaml	CultureMech:004165	PROMOTED	0.199402 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/KOMODO_162_HYPHOMICROBIUM_medium.yaml	CultureMech:004187	PROMOTED	0.1 g/L Yeast extract; 10 others all CHEBI-grounded	
+bacterial/KOMODO_167_SPOROCYTOPHAGA_medium.yaml	CultureMech:004194	PROMOTED	0.02 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/KOMODO_188_CHAETOMIUM_medium.yaml	CultureMech:004212	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Fe2(SO4)3 x H2O; Cellulose MN 300
+bacterial/KOMODO_221_AZOSPIRILLUM_medium.yaml	CultureMech:004576	PROMOTED	0.05 g/L Yeast extract; 12 others all CHEBI-grounded	
+bacterial/KOMODO_242_BMM_-_medium.yaml	CultureMech:004614	PROMOTED	0.1 g/L Yeast extract; 11 others all CHEBI-grounded	
+bacterial/KOMODO_253_medium_FOR_ECTOTHIORHODOSPIRA.yaml	CultureMech:004655	PROMOTED	0.49456 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/KOMODO_25_RHODOPSEUDOMONAS_GLOBIFORMIS_medium.yaml	CultureMech:004663	PROMOTED	0.25 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/KOMODO_269_ACIDIPHILIUM_medium.yaml	CultureMech:004675	PROMOTED	0.3 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/KOMODO_26_ACID_RHODOSPIRILLACEAE_medium.yaml	CultureMech:004676	PROMOTED	0.2 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/KOMODO_27_RHODOSPIRILLACEAE_medium_modified.yaml	CultureMech:004707	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/KOMODO_292_ACIDAMINOBACTER_medium.yaml	CultureMech:004754	PROMOTED	0.199402 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/KOMODO_312_SCY_-_medium.yaml	CultureMech:004977	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Casitone; Pancreatic digest of casein; Peptic digest of soybean meal
+bacterial/KOMODO_351_RHODOBACTER_ADRIATICUS_MEDIUM.yaml	CultureMech:005067	PROMOTED	0.1 g/L Yeast extract; 25 others all CHEBI-grounded	
+bacterial/KOMODO_358-1_For_aerobic_growth.yaml	CultureMech:005075	PROMOTED	0.49505 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/KOMODO_378_ARTHROBACTER_medium.yaml	CultureMech:005114	PROMOTED	0.08 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/KOMODO_405_SP2_medium.yaml	CultureMech:005225	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Casitone
+bacterial/KOMODO_441_DIAZOTROPHIC_medium_RBA.yaml	CultureMech:005288	PROMOTED	0.0524659 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/KOMODO_460_NITROGEN-FREE_medium_FOR_PSEUDOMONAS_STUTZERI.yaml	CultureMech:005466	PROMOTED	0.2 g/L Yeast extract; 5 others all CHEBI-grounded	
+bacterial/KOMODO_480_DESULFURELLA_medium.yaml	CultureMech:005596	PROMOTED	0.0998004 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/KOMODO_480b_TTD-MEDIUM.yaml	CultureMech:005598	PROMOTED	0.0998004 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml	CultureMech:005623	PROMOTED	0.049456 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/KOMODO_507_CARBOXYDOTHERMUS_medium.yaml	CultureMech:005708	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/KOMODO_516_ANAEROCELLUM_medium.yaml	CultureMech:005874	PROMOTED	0.499002 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/KOMODO_538_HERBASPIRILLUM_medium.yaml	CultureMech:005964	PROMOTED	0.05 g/L Yeast extract; 9 others all CHEBI-grounded	
+bacterial/KOMODO_662_YEPG_medium.yaml	CultureMech:006244	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Polypeptone
+bacterial/KOMODO_665_SULFOBACILLUS_medium.yaml	CultureMech:006248	PROMOTED	0.2 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/KOMODO_684_MPOB_medium.yaml	CultureMech:006289	PROMOTED	0.199402 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/KOMODO_709_ACIDIMICROBIUM_medium.yaml	CultureMech:006343	PROMOTED	0.25 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/KOMODO_717_DESULFITOBACTERIUM_PCE_MEDIUM.yaml	CultureMech:006354	PROMOTED	0.0988142 g/L Yeast extract; 35 others all CHEBI-grounded	
+bacterial/KOMODO_749_THERMODESULFOVIBRIO_YELLOWSTONII_medium.yaml	CultureMech:006400	PROMOTED	0.49456 g/L Yeast extract; 35 others all CHEBI-grounded	
+bacterial/KOMODO_763_BOSEA_THIOOXIDANS_medium.yaml	CultureMech:006418	PROMOTED	0.1 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/KOMODO_784_NATRONIELLA_medium.yaml	CultureMech:006484	PROMOTED	0.19861 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/KOMODO_789_DILUTE_POTATO_medium.yaml	CultureMech:006490	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Diced potato
+bacterial/KOMODO_793_MOORELLA_GLYCERINI_medium.yaml	CultureMech:006502	PROMOTED	0.497018 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/KOMODO_812_SULFOBACILLUS_DISULFIDOOXIDANS_medium.yaml	CultureMech:006534	PROMOTED	0.1 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/KOMODO_827_THERMOANAEROBACTER_SULFUROPHILUS_medium.yaml	CultureMech:006558	PROMOTED	0.499002 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/KOMODO_842_HALOANAEROBACTER_SALINARIUS_medium.yaml	CultureMech:006645	PROMOTED	0.1 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/KOMODO_847_MACROMONAS_medium.yaml	CultureMech:006654	PROMOTED	0.2 g/L Yeast extract; 22 others all CHEBI-grounded	
+bacterial/KOMODO_854_HIPPEA_medium.yaml	CultureMech:006671	PROMOTED	0.098912 g/L Yeast extract; 35 others all CHEBI-grounded	
+bacterial/KOMODO_885_PHC_medium.yaml	CultureMech:006736	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Poly hexamethylene carbonate; Surfactant
+bacterial/KOMODO_889_ISS1_medium.yaml	CultureMech:006739	PROMOTED	0.2 g/L Yeast extract; 22 others all CHEBI-grounded	
+bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml	CultureMech:006773	PROMOTED	0.249252 g/L Trypticase peptone; 28 others all CHEBI-grounded	
+bacterial/KOMODO_930_NATRONINCOLA_HISTIDINOVORANS_medium.yaml	CultureMech:006850	PROMOTED	0.2 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/KOMODO_931_ALCALIPHILIC_AMPHIBACILLUS_STRAINS_medium.yaml	CultureMech:006851	PROMOTED	0.2 g/L Yeast extract; 24 others all CHEBI-grounded	
+bacterial/KOMODO_932_HALONATRONUM_SACCHAROPHILUM_medium.yaml	CultureMech:006852	PROMOTED	0.2 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/KOMODO_935_DEFERRIBACTER_medium.yaml	CultureMech:006857	PROMOTED	0.49456 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/KOMODO_938_ST21_AGAR_FOR_CELLULOSE_DEGRADERS.yaml	CultureMech:006861	PROMOTED	0.0333333 g/L Yeast extract; 9 others all CHEBI-grounded	
+bacterial/KOMODO_941_medium_FOR_ARHODOMONAS_AND_MARINOBACTER.yaml	CultureMech:006873	PROMOTED	0.1 g/L Bacto peptone; 26 others all CHEBI-grounded	
+bacterial/KOMODO_957_MICROVIRGULA_medium.yaml	CultureMech:006901	PROMOTED	0.25 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/KOMODO_960_PELOTOMACULUM_medium.yaml	CultureMech:006916	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/KOMODO_962_THERMOVENABULUM_medium.yaml	CultureMech:006919	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/KOMODO_963_THERMOANAEROMONAS_medium.yaml	CultureMech:006920	PROMOTED	0.49456 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/KOMODO_981_GEOTHERMOBACTER_medium.yaml	CultureMech:006942	PROMOTED	0.0997009 g/L Yeast extract; 35 others all CHEBI-grounded	
+bacterial/TOGO_M1041_MPOB_Medium.yaml	CultureMech:007557	PROMOTED	0.4 g/L Yeast extract (BD-Difco); 13 others all CHEBI-grounded	
+bacterial/TOGO_M1043_Modified_MPOB_Medium.yaml	CultureMech:007559	PROMOTED	0.4 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+bacterial/TOGO_M1053_Desulfosporosinus_Acidodurans_Medium.yaml	CultureMech:007569	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 11 others all CHEBI-grounded	
+bacterial/TOGO_M1054_Desulfosporosinus_Acidodurans_Medium.yaml	CultureMech:007570	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+bacterial/TOGO_M1070_Acidithrix_Ferrooydans_Medium.yaml	CultureMech:007588	PROMOTED	0.2 g/L Yeast extract; 3 others all CHEBI-grounded	
+bacterial/TOGO_M1082_MM4Y_Medium.yaml	CultureMech:007598	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Agar (Purified)
+bacterial/TOGO_M1100_EGGC_Liquid_Medium.yaml	CultureMech:007619	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	0.5 M Na2HPO4--NaH2PO4 buffer (pH 7.3)
+bacterial/TOGO_M1134_Acidified_MPOB_Medium.yaml	CultureMech:007656	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 9 others all CHEBI-grounded	
+bacterial/TOGO_M1135_M25Y_Medium.yaml	CultureMech:007657	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	0.2% Fe(NH4)2(SO4)・6H2O (in 0.037% HCl)
+bacterial/TOGO_M1140_MO-YS_Medium.yaml	CultureMech:007663	PROMOTED	0.05 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+bacterial/TOGO_M1152_Desulfurella_TR1_Medium.yaml	CultureMech:007676	PROMOTED	0.1 g/L Yeast extract; 12 others all CHEBI-grounded	
+bacterial/TOGO_M1165_Bicarbonate_Buffered_Medium.yaml	CultureMech:007689	PROMOTED	0.1 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/TOGO_M1166_Bicarbonate_Buffered_Medium.yaml	CultureMech:007690	PROMOTED	0.1 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/TOGO_M1167_Bicarbonate_Buffered_Medium.yaml	CultureMech:007691	PROMOTED	0.1 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/TOGO_M1168_Bicarbonate_Buffered_Medium.yaml	CultureMech:007692	PROMOTED	0.1 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/TOGO_M1174_Halolactibacillus_9G_Medium.yaml	CultureMech:007699	PROMOTED	0.1 g/L Yeast extract; 10 others all CHEBI-grounded	
+bacterial/TOGO_M1189_Mineral_Medium_With_Glucose.yaml	CultureMech:007714	PROMOTED	0.1 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/TOGO_M1227_Modified_Roseospira_Medium.yaml	CultureMech:007755	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Ferric citrate (0.1%, w/v)
+bacterial/TOGO_M1239_Desulfonatronum_PAR180_Medium.yaml	CultureMech:007768	PROMOTED	0.2 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/TOGO_M1275_Vallitalea_70B-A_Medium.yaml	CultureMech:007808	PROMOTED	0.2 g/L Yeast extract; 9 others all CHEBI-grounded	
+bacterial/TOGO_M1278_Desulfobotulus_Par22n_Medium.yaml	CultureMech:007811	PROMOTED	0.2 g/L Yeast extract; 9 others all CHEBI-grounded	
+bacterial/TOGO_M1281_Acidihalobacter_Medium.yaml	CultureMech:007815	PROMOTED	0.1 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/TOGO_M1339_Trichococcus_SKBG_Medium.yaml	CultureMech:007875	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 8 others all CHEBI-grounded	
+bacterial/TOGO_M1377_Glucose_bicarbonate-Buffered_Medium.yaml	CultureMech:007916	PROMOTED	0.2 g/L Yeast extract; 9 others all CHEBI-grounded	
+bacterial/TOGO_M1379_SIUC-3_Medium.yaml	CultureMech:007918	PROMOTED	0.1 g/L Yeast extract; 12 others all CHEBI-grounded	
+bacterial/TOGO_M1695_Sulfur-oxidizing_bacteria_Medium.yaml	CultureMech:008255	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Oxygen gas
+bacterial/TOGO_M1783_Acidimicrobium_Medium.yaml	CultureMech:008350	PROMOTED	0.25 g/L yeast extract; 7 others all CHEBI-grounded	
+bacterial/TOGO_M1939_Petrotoga_Medium.yaml	CultureMech:008517	PROMOTED	0.1 g/L Bacto Yeast Extract (Difco); 33 others all CHEBI-grounded	
+bacterial/TOGO_M1956_Modified_288_medium.yaml	CultureMech:008536	PROMOTED	0.1 g/L Bacto Yeast Extract (Difco); 8 others all CHEBI-grounded	
+bacterial/TOGO_M230_Artificial_Soil_Agar.yaml	CultureMech:008896	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Soil extract (see below); leafy soil
+bacterial/TOGO_M2332_Acidimicrobium_Medium.yaml	CultureMech:008919	PROMOTED	0.25 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/TOGO_M2334_Chthonomonas_Medium.yaml	CultureMech:008921	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Gellan Gum (Phytagel)
+bacterial/TOGO_M2343_Tepidanaerobacter_Acetatoxydans_Medium.yaml	CultureMech:008931	PROMOTED	0.2 g/L Yeast extract; 36 others all CHEBI-grounded	
+bacterial/TOGO_M2477_Pfennig_s_Medium_II_With_Salt.yaml	CultureMech:009053	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Sol. 1; Resazurin (0,1%); HCl (25%)
+bacterial/TOGO_M2602_Deferribacter_Desulfuricans_Medium.yaml	CultureMech:009171	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	AIK(SO4)2 x 12 H2O
+bacterial/TOGO_M2609_Carboxydothermus_Medium.yaml	CultureMech:009176	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	2 N NaOH; 2 M H2SO4
+bacterial/TOGO_M2610_Carboxydothermus_Medium_Heterotroph.yaml	CultureMech:009178	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Sodium resazurin (0.1% w/v); 2 N NaOH
+bacterial/TOGO_M2625_Petrotoga_Medium.yaml	CultureMech:009190	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Sodium resazurin (0.1% w/v); Fe(NH4)2(SO4)2 x 7 H2O (0.1% w/v); AIK(SO4)2 x 12 H2O
+bacterial/TOGO_M2719_Acetohalobium_Medium.yaml	CultureMech:009270	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	N2 gas
+bacterial/TOGO_M2720_Acetohalobium_medium.yaml	CultureMech:009271	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Trimethylamine . HCl
+bacterial/TOGO_M2745_Dehalobacter_Restrictus_Medium_TCE.yaml	CultureMech:009296	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	(NH4)2CO3; N2 gas; 2N NaOH
+bacterial/TOGO_M2773_Serpulina_Murdochii_Medium.yaml	CultureMech:009321	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Pancreatic digest of casein; Peptic digest of soybean meal; air
+bacterial/TOGO_M278_SI_Medium.yaml	CultureMech:009337	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	DL--Calcium pantothenate
+bacterial/TOGO_M280_Hydrogenothermus_Medium.yaml	CultureMech:009358	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	air
+bacterial/TOGO_M290_EGGC_Medium.yaml	CultureMech:009446	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	0.5 M Na2HPO4--NaH2PO4 buffer (pH 7.3)
+bacterial/TOGO_M2999_Acidobacterium_Medium.yaml	CultureMech:009515	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 7 others all CHEBI-grounded	
+bacterial/TOGO_M3000_Acidobacterium_Medium.yaml	CultureMech:009519	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 8 others all CHEBI-grounded	
+bacterial/TOGO_M3130_Desulfurella_Medium.yaml	CultureMech:009601	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Sodium resazurin (0.1% w/v); HCl (25%)
+bacterial/TOGO_M3132_Hippea_Medium.yaml	CultureMech:009603	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Sodium resazurin (0.1% w/v); Sulfur (powdered); MOPS buffer (SIGMA)
+bacterial/TOGO_M3195_YEM_broth.yaml	CultureMech:009636	PROMOTED	0.4 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/TOGO_M325_Sporotomaculum_Medium.yaml	CultureMech:009687	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+bacterial/TOGO_M334_SD0_Medium.yaml	CultureMech:009712	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 10 others all CHEBI-grounded	
+bacterial/TOGO_M338_Miura_Medium_LCA.yaml	CultureMech:009716	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 7 others all CHEBI-grounded	
+bacterial/TOGO_M342_SME_Medium.yaml	CultureMech:009721	PROMOTED	0.4 g/L Yeast extract (BD-Difco); 10 others all CHEBI-grounded	
+bacterial/TOGO_M347_JT_Medium.yaml	CultureMech:009726	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+bacterial/TOGO_M356_MGP_Medium.yaml	CultureMech:009736	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+bacterial/TOGO_M359_Deferribacter_Abyssi_Medium.yaml	CultureMech:009739	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 11 others all CHEBI-grounded	
+bacterial/TOGO_M360_Vulcanithermus_Mediatlanticus_Medium.yaml	CultureMech:009741	PROMOTED	0.3 g/L Yeast extract (BD-Difco); 10 others all CHEBI-grounded	
+bacterial/TOGO_M361_Caminibacter_Medium.yaml	CultureMech:009742	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+bacterial/TOGO_M376_Trichococcus_Medium.yaml	CultureMech:009757	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	D--Glucose
+bacterial/TOGO_M378_Desulfobacterium_Medium.yaml	CultureMech:009759	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 15 others all CHEBI-grounded	
+bacterial/TOGO_M385_JI_Medium.yaml	CultureMech:009766	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	o--phthalic acid
+bacterial/TOGO_M401_Acetobacterium_Submarinus_Medium.yaml	CultureMech:009785	CURATOR: ground the sibling, or add it to the undefined list	4 other ingredient(s) not CHEBI-grounded	Sea salts (Sigma); Sodium phosphate buffer (10 mM, pH 7.1); DL--Calcium pantothenate; Sodium phosphate buffer (25 mM, pH 3.4)
+bacterial/TOGO_M434_Anaerolinea_Medium.yaml	CultureMech:009820	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+bacterial/TOGO_M447_Mjtso_Medium.yaml	CultureMech:009833	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Oxygen gas
+bacterial/TOGO_M496_MMJ-DO_Medium.yaml	CultureMech:009884	PROMOTED	0.1 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/TOGO_M497_Modified_Biebl_And_Pfennig_s_Medium.yaml	CultureMech:009885	PROMOTED	0.3 g/L Yeast extract (BD-Difco); 16 others all CHEBI-grounded	
+bacterial/TOGO_M504_UI_Medium.yaml	CultureMech:009894	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+bacterial/TOGO_M516_Rhodovulum_Visakhum_Medium.yaml	CultureMech:009907	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Vitamin B12 (20 μg/ml) (filter--sterilized)
+bacterial/TOGO_M517_Rhodobium_Gokurnum_Medium.yaml	CultureMech:009908	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	HCl (25%, v/v)
+bacterial/TOGO_M521_Rhodovulum_Imhoffii_Medium.yaml	CultureMech:009913	CURATOR: ground the sibling, or add it to the undefined list	4 other ingredient(s) not CHEBI-grounded	Ferric citrate (0.1%, w/v); Vitamin B12 (2 mg/ml); Sodium L--malate; HCl (25%, v/v)
+bacterial/TOGO_M535_Marichromatium_Bheemlicum_Medium.yaml	CultureMech:009927	CURATOR: ground the sibling, or add it to the undefined list	4 other ingredient(s) not CHEBI-grounded	Ferric citrate (0.1%, w/v); Vitamin B12 (2 mg/ml); Na2S・9H2O (final conc.); HCl (25%, v/v)
+bacterial/TOGO_M546_Thermodesulfovibrio_Hydrogeniphilus_Medium.yaml	CultureMech:009939	PROMOTED	0.1 g/L Yeast extract; 17 others all CHEBI-grounded	
+bacterial/TOGO_M547_Desulfotomaculum_Lam5_Medium.yaml	CultureMech:009940	PROMOTED	0.1 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/TOGO_M565_Thiorhodococcus_Bheemlicum_Medium.yaml	CultureMech:009960	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Ferric citrate (0.1%, w/v); NaHCO3 (10%, w/v)
+bacterial/TOGO_M569_Desulfovibrio_HEB233_Medium.yaml	CultureMech:009964	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sol. 1
+bacterial/TOGO_M572_Roseospira_Medium.yaml	CultureMech:009968	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Ferric citrate (0.1%, w/v); HCl (25%, v/v)
+bacterial/TOGO_M581_Desulfatibacillus_Olefinivorans_Medium.yaml	CultureMech:009977	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 22 others all CHEBI-grounded	
+bacterial/TOGO_M582_Desulfatirhabdium_Butyrativorans_Medium.yaml	CultureMech:009978	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 14 others all CHEBI-grounded	
+bacterial/TOGO_M585_Rhodobacter_Sphaeroides_Medium.yaml	CultureMech:009981	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	HCl (25%, v/v)
+bacterial/TOGO_M662_Thiocapsa_Medium.yaml	CultureMech:010065	CURATOR: ground the sibling, or add it to the undefined list	5 other ingredient(s) not CHEBI-grounded	Ferric citrate (0.1%, w/v); Vitamin B12 (2 mg/ml); NaHCO3 (10%, w/v); Na2S・9H2O(final conc.); Na2S2O3・5H2O(final conc.)
+bacterial/TOGO_M663_Rhodobacter_Dangmalensis_Medium.yaml	CultureMech:010066	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Ferric citrate (0.1%, w/v)
+bacterial/TOGO_M665_Thiophaeococcus_Medium.yaml	CultureMech:010068	CURATOR: ground the sibling, or add it to the undefined list	4 other ingredient(s) not CHEBI-grounded	Vitamin B12 (2 mg/ml); NaHCO3 (10%, w/v); Na2S・9H2O (final conc.); Na2S2O3・5H2O (final conc.)
+bacterial/TOGO_M673_Phaeospirillum_Medium.yaml	CultureMech:010077	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Ferric citrate (0.1%, w/v); Na2S2O3・5H2O(final conc.)
+bacterial/TOGO_M677_Magnetospirillum_Gryphiswaldense_Medium.yaml	CultureMech:010081	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 7 others all CHEBI-grounded	
+bacterial/TOGO_M678_Magnetospirillum_Gryphiswaldense_Medium.yaml	CultureMech:010082	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 8 others all CHEBI-grounded	
+bacterial/TOGO_M704_Alicyclobacillus_Ferrooxydans_Medium.yaml	CultureMech:010111	PROMOTED	0.2 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/TOGO_M705_Alicyclobacillus_Ferrooxydans_Medium.yaml	CultureMech:010112	PROMOTED	0.2 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/TOGO_M736_Thermovorax_Subterraneus_Medium.yaml	CultureMech:010145	CURATOR: ground the sibling, or add it to the undefined list	4 other ingredient(s) not CHEBI-grounded	24% Na2S・9H2O; 25% HCl (7.7 M); (NH4)6Mo7O7・4H2O; DL--Calcium pantothenate
+bacterial/TOGO_M744_Thioalbus_Denitrificans_Medium.yaml	CultureMech:010149	PROMOTED	0.1 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/TOGO_M751_Desulfosporosinus_Acidiphilus_Medium.yaml	CultureMech:010157	PROMOTED	0.1 g/L Yeast extract; 10 others all CHEBI-grounded	
+bacterial/TOGO_M762_BM_For_Syntrophicus_Schinkii.yaml	CultureMech:010169	PROMOTED	0.2 g/L Yeast extract; 10 others all CHEBI-grounded	
+bacterial/TOGO_M763_BM_For_Tepidanaerobacter_Acetoxydans.yaml	CultureMech:010170	PROMOTED	0.2 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/TOGO_M798_Betaine_bicarbonate_Buffered_Medium.yaml	CultureMech:010208	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	32% HCl; DL--Calcium pantothenate
+bacterial/TOGO_M857_Fermentative_Cellulolytic_Anaerobes_Medium.yaml	CultureMech:010273	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	1.0 M Phosphate buffer (see below); 5% L--Cysteine・HCl・H2O
+bacterial/TOGO_M858_Tepidibacter_Mesophilus_Medium.yaml	CultureMech:010274	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Casitone (BD-Difco)
+bacterial/TOGO_M866_Desulfovibrio_B0109P2_Medium.yaml	CultureMech:010283	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	1.0 M Sodium lactate
+bacterial/TOGO_M871_7WAY-8-7_Medium.yaml	CultureMech:010289	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+bacterial/TOGO_M893_Lactate_bicarbonate_Buffered_Medium.yaml	CultureMech:010311	PROMOTED	0.2 g/L Yeast extract; 9 others all CHEBI-grounded	
+bacterial/TOGO_M912_NM-57_Medium.yaml	CultureMech:010332	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 12 others all CHEBI-grounded	
+bacterial/TOGO_M923_Dethiosulfovibrio_Belb1_Medium.yaml	CultureMech:010344	PROMOTED	0.1 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/TOGO_M924_Petrotoga_AR80_Medium.yaml	CultureMech:010345	PROMOTED	0.1 g/L Yeast extract (BD-Difco); 17 others all CHEBI-grounded	
+bacterial/TOGO_M964_Desulfamplus_Medium.yaml	CultureMech:010389	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	0.5 M Potassium phosphate buffer (pH 7.0)
+bacterial/TOGO_M966_Hydrogenispora_Medium.yaml	CultureMech:010391	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 9 others all CHEBI-grounded	
+bacterial/TOGO_M973_Desulfatiferula_Berrense_Medium.yaml	CultureMech:010399	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Substrate
+bacterial/TOGO_M982_LX-D_Medium.yaml	CultureMech:010409	PROMOTED	0.2 g/L Yeast extract (BD-Difco); 9 others all CHEBI-grounded	
+bacterial/a2_medium.yaml	CultureMech:001227	PROMOTED	0.15 g/L Yeast extract; 12 others all CHEBI-grounded	
+bacterial/acetivibrio_alkalicellulosi_medium.yaml	CultureMech:000459	PROMOTED	0.199601 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/acetobacterium_fimetarium_medium.yaml	CultureMech:001743	PROMOTED	0.49456 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/acetobacterium_sp_medium.yaml	CultureMech:006105	PROMOTED	0.49456 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/acetobacterium_submarinus_medium.yaml	CultureMech:002759	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Sea Salt; Sodium phosphate buffer
+bacterial/acetobacteroides_medium.yaml	CultureMech:001130	PROMOTED	0.2 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/acetohalobium_medium.yaml	CultureMech:001622	PROMOTED	0.049456 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml	CultureMech:005622	PROMOTED	0.049456 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/acid_rhodospirillaceae_medium.yaml	CultureMech:001369	PROMOTED	0.2 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/acidaminobacter_medium.yaml	CultureMech:001391	PROMOTED	0.199402 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/acidibacter_medium.yaml	CultureMech:001106	PROMOTED	0.2 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/acidicaldus_medium.yaml	CultureMech:000461	PROMOTED	0.2 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/acidified_mpob_medium.yaml	CultureMech:002245	PROMOTED	0.193798 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/acidimicrobium_medium.yaml	CultureMech:001846	PROMOTED	0.25 g/L Yeast extract; 5 others all CHEBI-grounded	
+bacterial/acidiphilium_medium.yaml	CultureMech:001368	PROMOTED	0.3 g/L Yeast extract; 5 others all CHEBI-grounded	
+bacterial/acidiphilium_medium_for_dsm_11244.yaml	CultureMech:008912	PROMOTED	0.1 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/acidithrix_ferrooydans_medium.yaml	CultureMech:002197	PROMOTED	0.177778 g/L Yeast extract; 24 others all CHEBI-grounded	
+bacterial/acidobacterium_medium.yaml	CultureMech:002501	PROMOTED	0.1 g/L Yeast extract; 5 others all CHEBI-grounded	
+bacterial/acidosoma_medium.yaml	CultureMech:000679	PROMOTED	0.1 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/actinobacteria_medium.yaml	CultureMech:001170	PROMOTED	0.1 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/aht3_medium.yaml	CultureMech:004045	PROMOTED	0.199402 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/alcaliphilic_amphibacillus_strains_medium.yaml	CultureMech:002104	PROMOTED	0.2 g/L Yeast extract; 24 others all CHEBI-grounded	
+bacterial/alicyclobacillus_ferrooxydans_medium.yaml	CultureMech:000651	PROMOTED	0.215054 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/alkaliflexus_medium.yaml	CultureMech:000617	PROMOTED	0.2 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/allocatenococcus_medium.yaml	CultureMech:001781	PROMOTED	0.2 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/allochromatium_renukaii_medium.yaml	CultureMech:002919	PROMOTED	0.391773 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/anaerobacillus_arseniciselenatis_medium.yaml	CultureMech:002149	PROMOTED	0.199601 g/L Yeast extract; 24 others all CHEBI-grounded	
+bacterial/anaerobacillus_medium.yaml	CultureMech:002062	PROMOTED	0.499002 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/anaerobic_alkaline_glucose_medium.yaml	CultureMech:007857	PROMOTED	0.05 g/L Yeast extract; 9 others all CHEBI-grounded	
+bacterial/anaerobic_mineral_medium_with_yeast_extract.yaml	CultureMech:007716	PROMOTED	0.1 g/L Yeast extract; 9 others all CHEBI-grounded	
+bacterial/anaerocellum_medium.yaml	CultureMech:001648	PROMOTED	0.499002 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/anaerolinea_medium_b.yaml	CultureMech:002786	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/anb_aerobic.yaml	CultureMech:001235	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Melezitose; B12
+bacterial/anoxybacillus_medium.yaml	CultureMech:002061	PROMOTED	0.499002 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/anoyxnatronum_medium.yaml	CultureMech:000629	PROMOTED	0.2 g/L Yeast extract; 27 others all CHEBI-grounded	
+bacterial/ap11mh_medium.yaml	CultureMech:008415	PROMOTED	0.02 g/L Bacto Yeast Extract (Difco); 39 others all CHEBI-grounded	
+bacterial/arc51_medium.yaml	CultureMech:003750	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sea Salt
+bacterial/arthrobacter_medium.yaml	CultureMech:001481	PROMOTED	0.08 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/artificial_seawater_for_halophiles.yaml	CultureMech:009844	PROMOTED	0.05 g/L Yeast extract; 12 others all CHEBI-grounded	
+bacterial/artificial_soil_agar.yaml	CultureMech:002598	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Soil extract
+bacterial/aso4_medium.yaml	CultureMech:003884	PROMOTED	0.0498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/athalassotoga_medium.yaml	CultureMech:001085	PROMOTED	0.49456 g/L Yeast extract; 24 others all CHEBI-grounded	
+bacterial/autotrophic_growth_on_ferrous_sulfate.yaml	CultureMech:006342	PROMOTED	0.25 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/azospirillum_medium.yaml	CultureMech:001325	PROMOTED	0.05 g/L Yeast extract; 12 others all CHEBI-grounded	
+bacterial/bacillus_alkalidiazotrophicus_medium.yaml	CultureMech:000658	PROMOTED	0.05 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/betaine_bicarbonate_buffered_medium.yaml	CultureMech:003112	PROMOTED	0.218579 g/L Yeast extract; 36 others all CHEBI-grounded	
+bacterial/bicarbonate_buffered_medium.yaml	CultureMech:002274	PROMOTED	0.0986193 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/bm_for_syntrophicus_schinkii.yaml	CultureMech:003080	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Trace vitamins (see Medium No. 197)
+bacterial/bmm_medium.yaml	CultureMech:001344	PROMOTED	0.1 g/L Yeast extract; 11 others all CHEBI-grounded	
+bacterial/bosea_thiooxidans_medium.yaml	CultureMech:001896	PROMOTED	0.1 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/bryocella_elongata_medium.yaml	CultureMech:000750	PROMOTED	0.05 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/bs_medium.yaml	CultureMech:006101	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	bicarbonate
+bacterial/bsm_medium.yaml	CultureMech:001146	PROMOTED	0.2 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/byg_medium_for_acidiphilium_multivorum.yaml	CultureMech:008199	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Agar (if needed)
+bacterial/caldanaerobius_medium.yaml	CultureMech:002070	PROMOTED	0.249252 g/L Trypticase peptone; 28 others all CHEBI-grounded	
+bacterial/calderihabitans_medium.yaml	CultureMech:000978	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sea Salt
+bacterial/caloramator_medium.yaml	CultureMech:001924	PROMOTED	0.199402 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/caloramator_proteoclasticus_medium.yaml	CultureMech:006489	PROMOTED	0.199402 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/caloramator_viterbensis_medium.yaml	CultureMech:006884	PROMOTED	0.299103 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/caloramator_viterbiensis_medium.yaml	CultureMech:002126	PROMOTED	0.299103 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/caminibacter_medium.yaml	CultureMech:002726	PROMOTED	0.0980392 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/carboxydocella_manganica_medium.yaml	CultureMech:001641	PROMOTED	0.197824 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/carboxydothermus_medium.yaml	CultureMech:001639	PROMOTED	0.0489237 g/L Yeast extract; 27 others all CHEBI-grounded	
+bacterial/carboxydothermus_medium_heterotroph.yaml	CultureMech:001642	PROMOTED	0.0494071 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/carboxydothermus_siderophilus_medium.yaml	CultureMech:001640	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/carcboxydibrachium_medium.yaml	CultureMech:002069	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2SiO3
+bacterial/carcboxydobrachium_pacificum_medium.yaml	CultureMech:006772	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2SiO3
+bacterial/catenococcus_medium.yaml	CultureMech:006184	PROMOTED	0.2 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/cellulolytic_natronoarchaea_medium.yaml	CultureMech:002352	PROMOTED	0.2 g/L Yeast extract; 27 others all CHEBI-grounded	
+bacterial/chaetomium_medium.yaml	CultureMech:001280	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Fe2(SO4)3 x H2O; Cellulose MN 300
+bacterial/chitinispirillum_medium.yaml	CultureMech:000931	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Chitin; B12
+bacterial/chitinivibrio_medium.yaml	CultureMech:000930	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Chitin; B12
+bacterial/chthonomonas_medium.yaml	CultureMech:000754	PROMOTED	0.01 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/clostridium_alkalicellum_medium.yaml	CultureMech:003549	PROMOTED	0.199601 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/clostridium_termitidis_medium.yaml	CultureMech:005966	PROMOTED	0.499501 g/L Yeast extract; 20 others all CHEBI-grounded	
+bacterial/clostridium_termitidis_medium_replace_cellulose_with_cellobiose.yaml	CultureMech:005965	PROMOTED	0.499501 g/L Yeast extract; 20 others all CHEBI-grounded	
+bacterial/contubernalis_medium.yaml	CultureMech:001079	PROMOTED	0.2 g/L Yeast extract; 23 others all CHEBI-grounded	
+bacterial/cy_3_seawater_medium.yaml	CultureMech:001083	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Casitone
+bacterial/deferribacter_abyssi_medium.yaml	CultureMech:002724	PROMOTED	0.0980392 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/deferribacter_autotrophicus_medium.yaml	CultureMech:002167	PROMOTED	0.199402 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/deferribacter_desulfuricans_medium.yaml	CultureMech:002109	PROMOTED	0.49456 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/deferrisoma_medium.yaml	CultureMech:000917	PROMOTED	0.199402 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/dehalobacter_restrictus_medium.yaml	CultureMech:006377	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	(NH4)2CO3
+bacterial/dehalobacter_restrictus_medium_tce.yaml	CultureMech:001867	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	(NH4)2CO3
+bacterial/desulfacinum_medium.yaml	CultureMech:000533	PROMOTED	0.491159 g/L Yeast extract; 23 others all CHEBI-grounded	
+bacterial/desulfallas_thermosapovorans_medium.yaml	CultureMech:001808	PROMOTED	0.4111 g/L Yeast extract; 35 others all CHEBI-grounded	
+bacterial/desulfamplus_medium.yaml	CultureMech:001149	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	K-phosphate buffer
+bacterial/desulfatibacillus_olefinivorans_medium.yaml	CultureMech:002924	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sodium phosphate buffer
+bacterial/desulfatiferula_berrense_medium.yaml	CultureMech:003274	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sodium phosphate buffer
+bacterial/desulfatirhabdium_butyrativorans_medium.yaml	CultureMech:002925	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/desulfatirhabdium_medium.yaml	CultureMech:000520	PROMOTED	0.0199402 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/desulfitobacterium_pce_medium.yaml	CultureMech:001855	PROMOTED	0.0988142 g/L Yeast extract; 35 others all CHEBI-grounded	
+bacterial/desulfobacterium_niacini_medium.yaml	CultureMech:002749	PROMOTED	0.0988142 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/desulfobacterium_vacuolatum_medium.yaml	CultureMech:002750	PROMOTED	0.0988142 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/desulfobotulus_par22n_medium.yaml	CultureMech:002360	PROMOTED	0.196657 g/L Yeast extract; 22 others all CHEBI-grounded	
+bacterial/desulfoglaeba_medium.yaml	CultureMech:000506	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sea Salt
+bacterial/desulfohalobium_utahense_medium.yaml	CultureMech:003305	PROMOTED	0.496032 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/desulfoluna_medium.yaml	CultureMech:000530	PROMOTED	0.499501 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/desulfonatronospira_medium.yaml	CultureMech:000534	PROMOTED	0.0498504 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/desulfonatronum_par180_medium.yaml	CultureMech:002329	PROMOTED	0.0984252 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/desulfonatronum_thioautotrophicum_medium.yaml	CultureMech:000607	PROMOTED	0.0498504 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/desulfonatronum_zhilinae_medium.yaml	CultureMech:000535	PROMOTED	0.199402 g/L Yeast extract; 27 others all CHEBI-grounded	
+bacterial/desulfopila_msl86_medium.yaml	CultureMech:000500	PROMOTED	0.499002 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/desulfosalsimonas_medium.yaml	CultureMech:000485	PROMOTED	0.498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/desulfosarcina_ovata_medium.yaml	CultureMech:002752	PROMOTED	0.0988142 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/desulfosporosinus_acidiphilus_medium.yaml	CultureMech:003072	PROMOTED	0.1 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/desulfosporosinus_acidodurans_medium.yaml	CultureMech:003347	PROMOTED	0.193798 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/desulfosporosinus_acidophilus_medium.yaml	CultureMech:000710	PROMOTED	0.498504 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/desulfosporosinus_bsrei1_medium.yaml	CultureMech:003211	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Trace vitamins (see Medium No. 197)
+bacterial/desulfothermus_mj_medium_h2_co2.yaml	CultureMech:000430	PROMOTED	0.0988142 g/L Yeast extract; 36 others all CHEBI-grounded	
+bacterial/desulfotomaculum_lam5_medium.yaml	CultureMech:002893	PROMOTED	0.0990099 g/L Yeast extract; 22 others all CHEBI-grounded	
+bacterial/desulfotomaculum_thermosapovorans_medium.yaml	CultureMech:006256	PROMOTED	0.4111 g/L Yeast extract; 35 others all CHEBI-grounded	
+bacterial/desulfovermiculus_medium.yaml	CultureMech:000484	PROMOTED	0.498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/desulfovibrio_aerotolerans_dvo5_medium.yaml	CultureMech:002790	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sodium phosphate buffer
+bacterial/desulfovibrio_as36_medium.yaml	CultureMech:002896	PROMOTED	0.05 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/desulfovibrio_b0109p2_medium.yaml	CultureMech:003174	PROMOTED	0.0999001 g/L Yeast extract; 23 others all CHEBI-grounded	
+bacterial/desulfovibrio_fss_1_medium.yaml	CultureMech:002374	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Potassium phosphate buffer
+bacterial/desulfovibrio_gabonensis_medium.yaml	CultureMech:006365	PROMOTED	0.1 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/desulfovibrio_heb233_medium.yaml	CultureMech:002914	PROMOTED	0.110865 g/L Yeast extract; 22 others all CHEBI-grounded	
+bacterial/desulfovibrio_marinus_medium.yaml	CultureMech:002899	PROMOTED	0.05 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/desulfurella_ii_medium.yaml	CultureMech:005601	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/desulfurella_k_119_medium.yaml	CultureMech:001608	PROMOTED	0.0998004 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/desulfurella_medium.yaml	CultureMech:001605	PROMOTED	0.0998004 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/desulfurella_medium_brackish_water.yaml	CultureMech:001606	PROMOTED	0.0998004 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/desulfurella_multipotens_medium.yaml	CultureMech:005597	PROMOTED	0.0998004 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/desulfurella_tr1_medium.yaml	CultureMech:002263	PROMOTED	0.0979432 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/desulfuribacillus_medium_arsenate.yaml	CultureMech:000608	PROMOTED	0.0498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/desulfurispirillum_medium.yaml	CultureMech:000698	PROMOTED	0.05 g/L Yeast extract; 17 others all CHEBI-grounded	
+bacterial/desulfuromonas_medium_tce.yaml	CultureMech:001868	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	(NH4)2CO3
+bacterial/dethiobacter_medium.yaml	CultureMech:000537	PROMOTED	0.0498008 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/dethiosulfovibrio_belb1_medium.yaml	CultureMech:003230	PROMOTED	0.0992064 g/L Yeast extract; 23 others all CHEBI-grounded	
+bacterial/diazotrophic_medium_rba.yaml	CultureMech:001550	PROMOTED	0.0524659 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/dilute_potato_medium.yaml	CultureMech:001925	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Diced potato
+bacterial/dsm_10409.yaml	CultureMech:005599	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/dsm_10410.yaml	CultureMech:005600	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/e27.yaml	CultureMech:000339	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Natural sea water; Liver digest; Soil
+bacterial/ectothiorhodospira_magna_medium.yaml	CultureMech:000829	PROMOTED	0.1 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/ectothiorhodospira_variabilis_medium.yaml	CultureMech:000683	PROMOTED	0.1 g/L Yeast extract; 20 others all CHEBI-grounded	
+bacterial/ectothiorhodosynus_medium.yaml	CultureMech:000418	PROMOTED	0.1 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/eggc.yaml	CultureMech:000634	PROMOTED	0.3 g/L Casamino acids; 20 others all CHEBI-grounded	
+bacterial/eggc_liquid_medium.yaml	CultureMech:002220	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2HPO4-NaH2PO4 buffer
+bacterial/eggc_medium.yaml	CultureMech:002653	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2HPO4-NaH2PO4 buffer
+bacterial/emssdq4_medium.yaml	CultureMech:003950	PROMOTED	0.0997009 g/L Yeast extract; 35 others all CHEBI-grounded	
+bacterial/fe_iii_reducer_marine_enrichment_medium.yaml	CultureMech:009793	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Poorly crystalline iron(III) oxide (see below)
+bacterial/fermentative_cellulolytic_anaerobes_medium.yaml	CultureMech:003166	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Trace vitamins (see Medium No. 197)
+bacterial/ferrous_sulfate_yeast_extract_medium.yaml	CultureMech:003927	PROMOTED	0.2 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/for_allochromatium_phaeobacterium_dsm_19781.yaml	CultureMech:003980	PROMOTED	0.4 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/for_anaerobic_growth.yaml	CultureMech:005076	PROMOTED	0.49505 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/for_arhodomonas.yaml	CultureMech:006871	PROMOTED	0.1 g/L Bacto peptone; 26 others all CHEBI-grounded	
+bacterial/for_dsm_11321.yaml	CultureMech:005595	PROMOTED	0.0998004 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/for_dsm_12326.yaml	CultureMech:005701	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/for_dsm_13726.yaml	CultureMech:006375	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	(NH4)2CO3
+bacterial/for_dsm_13752_and_dsm_21041.yaml	CultureMech:006907	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/for_dsm_14005.yaml	CultureMech:006918	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/for_dsm_14795.yaml	CultureMech:006908	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/for_dsm_14813.yaml	CultureMech:006856	PROMOTED	0.49456 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/for_dsm_14823.yaml	CultureMech:006286	PROMOTED	0.199402 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/for_dsm_14947.yaml	CultureMech:006909	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/for_dsm_15200_and_dsm_15578.yaml	CultureMech:006910	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/for_dsm_15941.yaml	CultureMech:006376	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	(NH4)2CO3
+bacterial/for_dsm_16121.yaml	CultureMech:006911	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/for_dsm_16145.yaml	CultureMech:006912	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/for_dsm_16494_and_dsm_22288.yaml	CultureMech:006913	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/for_dsm_16547.yaml	CultureMech:006557	PROMOTED	0.499002 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/for_dsm_17232.yaml	CultureMech:006288	PROMOTED	0.199402 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/for_dsm_17711_and_dsm_23604.yaml	CultureMech:006914	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/for_dsm_17721.yaml	CultureMech:003631	PROMOTED	0.498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/for_dsm_17771.yaml	CultureMech:006915	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/for_dsm_17935.yaml	CultureMech:003833	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/for_dsm_17936.yaml	CultureMech:003834	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/for_dsm_18064.yaml	CultureMech:003651	PROMOTED	0.4 g/L Yeast extract; 14 others all CHEBI-grounded	
+bacterial/for_dsm_18632.yaml	CultureMech:003835	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/for_dsm_18709.yaml	CultureMech:006906	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/for_dsm_18713_and_18859.yaml	CultureMech:003652	PROMOTED	0.4 g/L Yeast extract; 14 others all CHEBI-grounded	
+bacterial/for_dsm_18774.yaml	CultureMech:003933	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/for_dsm_18805.yaml	CultureMech:003836	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/for_dsm_18834.yaml	CultureMech:003632	PROMOTED	0.498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/for_dsm_18858.yaml	CultureMech:003837	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/for_dsm_18923.yaml	CultureMech:005702	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/for_dsm_18985.yaml	CultureMech:003654	PROMOTED	0.4 g/L Yeast extract; 14 others all CHEBI-grounded	
+bacterial/for_dsm_19089.yaml	CultureMech:003803	PROMOTED	0.0498008 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/for_dsm_19306.yaml	CultureMech:006946	PROMOTED	0.199402 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/for_dsm_19491.yaml	CultureMech:003801	PROMOTED	0.0498504 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/for_dsm_19780.yaml	CultureMech:003934	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/for_dsm_19947_and_19784.yaml	CultureMech:003653	PROMOTED	0.4 g/L Yeast extract; 14 others all CHEBI-grounded	
+bacterial/for_dsm_21278.yaml	CultureMech:005703	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/for_dsm_21808_and_21809.yaml	CultureMech:003655	PROMOTED	0.4 g/L Yeast extract; 14 others all CHEBI-grounded	
+bacterial/for_dsm_21830.yaml	CultureMech:005704	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/for_dsm_22071.yaml	CultureMech:003879	PROMOTED	0.0498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/for_dsm_22131.yaml	CultureMech:003600	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sea Salt
+bacterial/for_dsm_22410.yaml	CultureMech:003881	PROMOTED	0.0498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/for_dsm_23132.yaml	CultureMech:005705	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/for_dsm_23698.yaml	CultureMech:005707	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/for_dsm_24176_and_dsm_24629.yaml	CultureMech:003882	PROMOTED	0.0498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/for_dsm_24179.yaml	CultureMech:003883	PROMOTED	0.0498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/for_dsm_24312.yaml	CultureMech:003633	PROMOTED	0.498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/for_dsm_24400.yaml	CultureMech:003880	PROMOTED	0.0498504 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/for_dsm_24766.yaml	CultureMech:003656	PROMOTED	0.4 g/L Yeast extract; 14 others all CHEBI-grounded	
+bacterial/for_dsm_6724.yaml	CultureMech:005872	PROMOTED	0.499002 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/for_dsm_8238.yaml	CultureMech:006104	PROMOTED	0.49456 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/for_marinobacter.yaml	CultureMech:006872	PROMOTED	0.1 g/L Bacto peptone; 26 others all CHEBI-grounded	
+bacterial/frr_medium.yaml	CultureMech:003029	PROMOTED	0.1 g/L Yeast extract; 17 others all CHEBI-grounded	
+bacterial/fuchsiella_alkaliacetigena_medium.yaml	CultureMech:000811	PROMOTED	0.0489716 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/gal1_medium.yaml	CultureMech:003310	PROMOTED	0.483559 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/geoalkalibacter_medium.yaml	CultureMech:000491	PROMOTED	0.0998004 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/geosporobacter_subterreneus_medium.yaml	CultureMech:002895	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sea Salt
+bacterial/geothermobacter_medium.yaml	CultureMech:002163	PROMOTED	0.0997009 g/L Yeast extract; 35 others all CHEBI-grounded	
+bacterial/glucose_bicarbonate_buffered_medium.yaml	CultureMech:002448	PROMOTED	0.218579 g/L Yeast extract; 36 others all CHEBI-grounded	
+bacterial/gys_medium.yaml	CultureMech:008483	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Agar (if needed)
+bacterial/half_strenghs_hyphomicrobium_medium.yaml	CultureMech:000884	PROMOTED	0.125 g/L Bacto peptone; 26 others all CHEBI-grounded	
+bacterial/haloanaerobacter_salinarius_medium.yaml	CultureMech:001998	PROMOTED	0.1 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/halodesulfuriarchaeum_medium.yaml	CultureMech:000946	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	B12
+bacterial/halolactibacillus_9g_medium.yaml	CultureMech:002280	PROMOTED	0.098912 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/halonatronum_saccharophilum_medium.yaml	CultureMech:002105	PROMOTED	0.2 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/halophilic_medium.yaml	CultureMech:003829	PROMOTED	0.1 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/halovibrio_medium.yaml	CultureMech:000618	PROMOTED	0.2 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/herbaspirillum_medium.yaml	CultureMech:001670	PROMOTED	0.05 g/L Yeast extract; 9 others all CHEBI-grounded	
+bacterial/heterotrophic_growth_on_yeast_extract.yaml	CultureMech:006341	PROMOTED	0.25 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/hippea_jasoniae_medium.yaml	CultureMech:000821	PROMOTED	0.49456 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/hippea_medium.yaml	CultureMech:002013	PROMOTED	0.098912 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/hydrogen_using_marine_sulfate_reducer_medium.yaml	CultureMech:008598	PROMOTED	0.2 g/L Bacto Yeast Extract (Difco); 41 others all CHEBI-grounded	
+bacterial/hydrogenispora_medium.yaml	CultureMech:003268	PROMOTED	0.195122 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/ird_f1f22_medium.yaml	CultureMech:002309	PROMOTED	0.49554 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/ird_sm40_medium.yaml	CultureMech:002218	PROMOTED	0.49554 g/L Yeast extract; 22 others all CHEBI-grounded	
+bacterial/isosphaera_medium.yaml	CultureMech:008891	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Agar, Noble (BD 214050), if needed; Hydrochloric acid, 25%
+bacterial/isosphaera_pallida_medium.yaml	CultureMech:001898	PROMOTED	0.25 g/L Casamino acids; 21 others all CHEBI-grounded	
+bacterial/iss1_medium.yaml	CultureMech:002049	PROMOTED	0.2 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/jcm_medium_no_197.yaml	CultureMech:002559	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Polypeptone
+bacterial/jcm_medium_no_315.yaml	CultureMech:002673	PROMOTED	0.490196 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/jt_medium.yaml	CultureMech:002713	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/lactate_bicarbonate_buffered_medium.yaml	CultureMech:003203	PROMOTED	0.218579 g/L Yeast extract; 36 others all CHEBI-grounded	
+bacterial/lamprobacter_roseus_medium.yaml	CultureMech:002911	PROMOTED	0.391773 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/lca.yaml	CultureMech:008306	PROMOTED	0.2 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/low_carbon_agar_lca.yaml	CultureMech:001251	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Mg(SO4) x 7 H2O
+bacterial/lx_d_medium.yaml	CultureMech:003284	PROMOTED	0.195122 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/lys_medium.yaml	CultureMech:002552	PROMOTED	0.499501 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/lyu03_medium.yaml	CultureMech:000802	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Taps; NaHSeO3
+bacterial/m25y_medium.yaml	CultureMech:002246	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Trace vitamins (see Medium No. 197)
+bacterial/m_medium_ebr45.yaml	CultureMech:008259	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Cellulose (or Cellobiose)
+bacterial/macromonas_medium.yaml	CultureMech:002004	PROMOTED	0.2 g/L Yeast extract; 22 others all CHEBI-grounded	
+bacterial/magnetospirillum_gryphiswaldense_medium.yaml	CultureMech:003006	PROMOTED	0.1 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/magnetospirillum_medium.yaml	CultureMech:001484	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	(-)-Quinic acid
+bacterial/magnetovibrio_medium.yaml	CultureMech:000954	PROMOTED	0.49456 g/L Casamino acids; 34 others all CHEBI-grounded	
+bacterial/manning_medium.yaml	CultureMech:000445	PROMOTED	0.2 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/marichromatium_bheemlicum_medium.yaml	CultureMech:002881	PROMOTED	0.397219 g/L Yeast extract; 17 others all CHEBI-grounded	
+bacterial/marichromatium_imhoffii_medium.yaml	CultureMech:002868	PROMOTED	0.397614 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/medium_1190_modified_for_dsm_19497.yaml	CultureMech:003925	PROMOTED	0.2 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/medium_1190_modified_for_dsm_19514.yaml	CultureMech:003926	PROMOTED	0.2 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/medium_269_modified_for_dsm_11237.yaml	CultureMech:004672	PROMOTED	0.3 g/L Yeast extract; 5 others all CHEBI-grounded	
+bacterial/medium_269_modified_for_dsm_11244.yaml	CultureMech:004673	PROMOTED	0.3 g/L Yeast extract; 5 others all CHEBI-grounded	
+bacterial/medium_269_modified_for_dsm_11245.yaml	CultureMech:004674	PROMOTED	0.3 g/L Yeast extract; 5 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_10138.yaml	CultureMech:004677	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_10139.yaml	CultureMech:004678	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_13233.yaml	CultureMech:004679	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_13235.yaml	CultureMech:004680	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_1374.yaml	CultureMech:004681	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_17143.yaml	CultureMech:004682	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_18633.yaml	CultureMech:004683	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_18937.yaml	CultureMech:004684	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_19785.yaml	CultureMech:004685	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_19945.yaml	CultureMech:004686	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_19946.yaml	CultureMech:004687	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_2132.yaml	CultureMech:004688	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_2351.yaml	CultureMech:004689	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_2698.yaml	CultureMech:004690	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_2780.yaml	CultureMech:004691	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_4180.yaml	CultureMech:004692	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_5909.yaml	CultureMech:004693	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_9894.yaml	CultureMech:004694	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_27_modified_for_dsm_9987.yaml	CultureMech:004695	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/medium_460_modified_for_dsm_4166.yaml	CultureMech:005465	PROMOTED	0.2 g/L Yeast extract; 5 others all CHEBI-grounded	
+bacterial/medium_507_modified_for_dsm_7242.yaml	CultureMech:005706	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/medium_516_modified_for_dsm_9003.yaml	CultureMech:005873	PROMOTED	0.499002 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/medium_662_modified_for_dsm_6699.yaml	CultureMech:006242	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Polypeptone
+bacterial/medium_662_modified_for_dsm_6700.yaml	CultureMech:006243	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Polypeptone
+bacterial/medium_684_modified_for_dsm_14055.yaml	CultureMech:006285	PROMOTED	0.199402 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/medium_684_modified_for_dsm_23957.yaml	CultureMech:006287	PROMOTED	0.199402 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/medium_935_modified_for_dsm_14783.yaml	CultureMech:006855	PROMOTED	0.49456 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/medium_for_arhodomonas_and_marinobacter.yaml	CultureMech:002117	PROMOTED	0.1 g/L Bacto peptone; 26 others all CHEBI-grounded	
+bacterial/medium_for_campylobacter_dsm_806.yaml	CultureMech:003971	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na-aspartate
+bacterial/medium_for_ectothiorhodospira.yaml	CultureMech:001352	PROMOTED	0.49456 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/medium_for_hydrogenophilus.yaml	CultureMech:001210	PROMOTED	0.002 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/medium_for_lichenibacterium.yaml	CultureMech:001168	PROMOTED	0.2 g/L Yeast extract; 14 others all CHEBI-grounded	
+bacterial/medium_for_strain_ja746.yaml	CultureMech:008530	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Vitamin B12 (0.002% (w/v)); HCl (25%; 7.7 M)
+bacterial/medium_for_strain_kc3.yaml	CultureMech:008608	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	K2HPO; Cysteine HCl
+bacterial/medium_for_strain_mp_01.yaml	CultureMech:010405	PROMOTED	0.1 g/L Yeast extract; 24 others all CHEBI-grounded	
+bacterial/medium_for_strain_r_1.yaml	CultureMech:008433	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Agar (if needed)
+bacterial/medium_for_strain_sanae.yaml	CultureMech:008264	PROMOTED	0.1 g/L Bacto Yeast Extract (Difco); 33 others all CHEBI-grounded	
+bacterial/medium_for_strain_ug1.yaml	CultureMech:008481	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2SiO3
+bacterial/medium_for_sulfospirillum_dsm_806.yaml	CultureMech:000678	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na-aspartate
+bacterial/medium_h.yaml	CultureMech:008311	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Seawater; Agar (if needed)
+bacterial/medium_modified_for_dechloromonas_spp.yaml	CultureMech:002121	PROMOTED	0.111111 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/medium_ycfagsc.yaml	CultureMech:009196	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Casitone
+bacterial/methylovirgula_ligni_medium.yaml	CultureMech:000677	PROMOTED	0.1 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/mgp_medium.yaml	CultureMech:002721	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/microvirgula_medium.yaml	CultureMech:002135	PROMOTED	0.25 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/mineral_medium_with_glucose.yaml	CultureMech:002288	PROMOTED	0.0977517 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/miura_medium_lca.yaml	CultureMech:002703	PROMOTED	0.2 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/mm3.yaml	CultureMech:001236	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Hemicalcium D-(+)-pantothenate
+bacterial/mm4y_medium.yaml	CultureMech:002205	PROMOTED	0.05 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/mmj_do_medium.yaml	CultureMech:002846	PROMOTED	0.1 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/mmj_s304_medium.yaml	CultureMech:003098	PROMOTED	0.492126 g/L Yeast extract; 23 others all CHEBI-grounded	
+bacterial/mo_ys_medium.yaml	CultureMech:002252	PROMOTED	0.044964 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/modified_1_10_hd_medium.yaml	CultureMech:008728	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Agar (if needed)
+bacterial/modified_1_5_sws_casein_starch_medium.yaml	CultureMech:008383	CURATOR: ground the sibling, or add it to the undefined list	4 other ingredient(s) not CHEBI-grounded	Starch from corn (SIGMA); Casein sodium; β-glycerophosphate-2Na; Bacto Agar (Difco)
+bacterial/modified_288_medium.yaml	CultureMech:008535	PROMOTED	0.1 g/L Bacto Yeast Extract (Difco); 7 others all CHEBI-grounded	
+bacterial/modified_biebl_and_pfennigs_medium.yaml	CultureMech:000501	PROMOTED	0.4 g/L Yeast extract; 14 others all CHEBI-grounded	
+bacterial/modified_desulfoglaeba_alkanexedens_medium.yaml	CultureMech:002872	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Sea Salt; Trace vitamins (see Medium No. 197)
+bacterial/modified_desulfoglaeba_medium.yaml	CultureMech:003661	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sea Salt
+bacterial/modified_eichler_and_pfennigs_medium.yaml	CultureMech:002848	PROMOTED	0.499002 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/modified_marine_medium.yaml	CultureMech:009799	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	DL--Sodium malate
+bacterial/modified_mmjy_medium.yaml	CultureMech:008216	PROMOTED	0.1 g/L Bacto Yeast Extract (Difco); 40 others all CHEBI-grounded	
+bacterial/modified_mpob_medium.yaml	CultureMech:003340	PROMOTED	0.395648 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/modified_pfennig_medium_with_glucose.yaml	CultureMech:009529	PROMOTED	0.1 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/modified_sulfate_reducing_bacteria_medium.yaml	CultureMech:002714	PROMOTED	0.49505 g/L Tryptone; 23 others all CHEBI-grounded	
+bacterial/modified_vy_2_agar.yaml	CultureMech:008725	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Dry yeast; β-glycerophosphate-2Na; Bacto Agar
+bacterial/modified_ws_medium.yaml	CultureMech:008371	PROMOTED	0.1 g/L Bacto Yeast Extract (Difco); 35 others all CHEBI-grounded	
+bacterial/moorella_glycerini_medium.yaml	CultureMech:001936	PROMOTED	0.497018 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/mp_medium.yaml	CultureMech:000842	PROMOTED	0.1 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/mpob_medium.yaml	CultureMech:003337	PROMOTED	0.395257 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/msl86_medium.yaml	CultureMech:003650	PROMOTED	0.499002 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/nad_s1_medium.yaml	CultureMech:003128	PROMOTED	0.46729 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/nasu_iron_reducer_medium.yaml	CultureMech:002199	PROMOTED	0.484966 g/L Yeast extract; 23 others all CHEBI-grounded	
+bacterial/natroniella_medium.yaml	CultureMech:001920	PROMOTED	0.19861 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/natroniella_medium_replace_trace_element_solution_sl_4_medium_457_with_trace_element_solution_sl_11_medium_784.yaml	CultureMech:006483	PROMOTED	0.19861 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/natroniella_sulfidigena_medium.yaml	CultureMech:000759	PROMOTED	0.199402 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/natronincola_histidinovorans_medium.yaml	CultureMech:002103	PROMOTED	0.2 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/natronoarchaea_medium_with_glucosamine.yaml	CultureMech:002376	PROMOTED	0.2 g/L Yeast extract; 27 others all CHEBI-grounded	
+bacterial/natronoarchaea_medium_with_starch.yaml	CultureMech:002375	PROMOTED	0.2 g/L Yeast extract; 27 others all CHEBI-grounded	
+bacterial/ne23_3_medium.yaml	CultureMech:002854	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/nitrate_mineral_salts_medium_nms_0_01_tryptone.yaml	CultureMech:008446	CURATOR: ground the sibling, or add it to the undefined list	6 other ingredient(s) not CHEBI-grounded	Distilled deionized water; Purified Agar (e.g., Oxoid L28); Methane gas; Air; HCl (concentrated); EDTA, sodium salt
+bacterial/nitrincola_medium.yaml	CultureMech:000616	PROMOTED	0.1 g/L Yeast extract; 5 others all CHEBI-grounded	
+bacterial/nitrogen_free_medium_for_pseudomonas_stutzeri.yaml	CultureMech:001574	PROMOTED	0.2 g/L Yeast extract; 5 others all CHEBI-grounded	
+bacterial/nm_57_medium.yaml	CultureMech:003220	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/oceanidesulfovibrio_medium.yaml	CultureMech:001860	PROMOTED	0.1 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/opitutus_terrae_medium.yaml	CultureMech:003095	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/orenia_chitinitropha.yaml	CultureMech:001045	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Chitin; B12
+bacterial/orenia_metallireducens_medium.yaml	CultureMech:002316	PROMOTED	0.478927 g/L Yeast extract; 37 others all CHEBI-grounded	
+bacterial/peat_medium_1_for_methanoregura_boonei.yaml	CultureMech:003270	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	HOMOPIPES; TiCl3
+bacterial/peg_basal_medium.yaml	CultureMech:008681	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Polypropylene glycol 4000 (PEG 4000); Agar (if needed)
+bacterial/pelotomaculum_medium.yaml	CultureMech:002140	PROMOTED	0.0998004 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/pelotomaculum_medium_for_dsm_17711.yaml	CultureMech:009211	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	N2 gas
+bacterial/petrotoga_ar80_medium.yaml	CultureMech:003231	PROMOTED	0.098912 g/L Yeast extract; 25 others all CHEBI-grounded	
+bacterial/phaeospirillum_medium.yaml	CultureMech:003002	PROMOTED	0.397614 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/phc_medium.yaml	CultureMech:002045	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Poly hexamethylene carbonate; Surfactant
+bacterial/phototrophic_medium.yaml	CultureMech:003838	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/pirellula_medium_m33a.yaml	CultureMech:000905	PROMOTED	0.25 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/planctomyces_pyreformis_medium.yaml	CultureMech:001009	PROMOTED	0.2 g/L Yeast extract; 25 others all CHEBI-grounded	
+bacterial/planctomycetales_bacterium_medium.yaml	CultureMech:000822	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Cysteine HCl
+bacterial/planctomycetes_medium_nh11.yaml	CultureMech:000995	PROMOTED	0.33557 g/L Peptone; 27 others all CHEBI-grounded	
+bacterial/plantomycetaceae_medium.yaml	CultureMech:000940	PROMOTED	0.05 g/L Yeast extract; 27 others all CHEBI-grounded	
+bacterial/ppg_medium.yaml	CultureMech:008679	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Polypropylene glycol 2000 (PPG 2000); Agar (if needed)
+bacterial/ppll_medium.yaml	CultureMech:002470	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sodium phosphate buffer
+bacterial/pseudothermotoga_medium.yaml	CultureMech:001625	PROMOTED	0.488281 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/pyruvate_as_an_alternative_substrate_for_dsm_6008_dsm_14886_and_dsm_16521.yaml	CultureMech:005700	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/raeh_medium.yaml	CultureMech:002480	PROMOTED	0.496032 g/L Yeast extract; 12 others all CHEBI-grounded	
+bacterial/rhodobacter_adriaticus_medium.yaml	CultureMech:001451	PROMOTED	0.1 g/L Yeast extract; 25 others all CHEBI-grounded	
+bacterial/rhodobacter_dangmalensis_medium.yaml	CultureMech:002994	PROMOTED	0.397614 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/rhodobacter_sphaeroides_medium.yaml	CultureMech:002928	PROMOTED	0.399202 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/rhodobacter_thiocapsa_medium.yaml	CultureMech:000640	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/rhodobium_gokurnum_medium.yaml	CultureMech:002867	PROMOTED	0.397614 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/rhodoblastus_medium.yaml	CultureMech:000580	PROMOTED	0.1 g/L Yeast extract; 13 others all CHEBI-grounded	
+bacterial/rhodomicrobium_medium.yaml	CultureMech:008166	PROMOTED	0.2 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/rhodoplanes_medium.yaml	CultureMech:003003	PROMOTED	0.497018 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/rhodopseudomonas_globiformis_medium.yaml	CultureMech:001358	PROMOTED	0.25 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/rhodopseudomonas_sulfoviridis_medium.yaml	CultureMech:000531	PROMOTED	0.3 g/L Yeast extract; 20 others all CHEBI-grounded	
+bacterial/rhodospirillaceae_medium_modified.yaml	CultureMech:001375	PROMOTED	0.3 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/rhodovulum_imhoffii_medium.yaml	CultureMech:002871	PROMOTED	0.397219 g/L Yeast extract; 17 others all CHEBI-grounded	
+bacterial/rhodovulum_medium.yaml	CultureMech:000851	PROMOTED	0.1 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/rhodovulum_visakhum_medium.yaml	CultureMech:000565	PROMOTED	0.4 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/roseospira_medium.yaml	CultureMech:002917	PROMOTED	0.397614 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/ruminiclostridium_cellobioparum_medium.yaml	CultureMech:001671	PROMOTED	0.499501 g/L Yeast extract; 20 others all CHEBI-grounded	
+bacterial/s_heliorestis_medium.yaml	CultureMech:000841	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	NaHSeO3
+bacterial/sa_medium.yaml	CultureMech:008107	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Agar (if needed); Niacine; Pyridoxal-HCl
+bacterial/scy_medium.yaml	CultureMech:001413	CURATOR: ground the sibling, or add it to the undefined list	3 other ingredient(s) not CHEBI-grounded	Casitone; Pancreatic digest of casein; Peptic digest of soybean meal
+bacterial/sd0_medium.yaml	CultureMech:002698	PROMOTED	0.098912 g/L Yeast extract; 27 others all CHEBI-grounded	
+bacterial/sdo_medium.yaml	CultureMech:000590	PROMOTED	0.1 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/si_medium.yaml	CultureMech:002642	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/siuc_3_medium.yaml	CultureMech:002450	PROMOTED	0.098912 g/L Yeast extract; 25 others all CHEBI-grounded	
+bacterial/sme_medium.yaml	CultureMech:000594	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	KJ
+bacterial/solidesulfovibrio_marrakechensis_medium.yaml	CultureMech:000652	PROMOTED	0.0997009 g/L Yeast extract; 35 others all CHEBI-grounded	
+bacterial/sp2_medium.yaml	CultureMech:001515	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Casitone
+bacterial/sporobacter_medium.yaml	CultureMech:001849	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	3,4,5-Trimethoxycinnamic acid
+bacterial/sporocytophaga_medium.yaml	CultureMech:001161	PROMOTED	0.02 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/st21_agar_for_cellulose_degraders.yaml	CultureMech:002113	PROMOTED	0.0333333 g/L Yeast extract; 8 others all CHEBI-grounded	
+bacterial/starkeya_novella_medium.yaml	CultureMech:001837	PROMOTED	0.332594 g/L Yeast extract; 15 others all CHEBI-grounded	
+bacterial/succinate_minimal_salts_medium_sms.yaml	CultureMech:000833	PROMOTED	0.1 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/sulfate_reducing_bacterium_medium_with_2_nacl_and_lactate.yaml	CultureMech:002973	PROMOTED	0.498504 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/sulfate_reducing_bacterium_medium_with_lactate.yaml	CultureMech:002900	PROMOTED	0.498504 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/sulfate_reducing_bacterium_medium_with_pyruvate.yaml	CultureMech:002901	PROMOTED	0.498504 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/sulfobacillus_disulfidooxidans_medium.yaml	CultureMech:001957	PROMOTED	0.1 g/L Yeast extract; 6 others all CHEBI-grounded	
+bacterial/sulfobacillus_medium.yaml	CultureMech:001804	PROMOTED	0.2 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/sulfurospirillum_alkalitolerans_medium.yaml	CultureMech:000760	PROMOTED	0.02 g/L Yeast extract; 24 others all CHEBI-grounded	
+bacterial/syntrophobacter_mpob_medium.yaml	CultureMech:001821	PROMOTED	0.199402 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/syntrophomonas_palmiticicum_medium.yaml	CultureMech:002923	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/t49_medium.yaml	CultureMech:004041	PROMOTED	0.01 g/L Yeast extract; 21 others all CHEBI-grounded	
+bacterial/tanner_mod2_medium.yaml	CultureMech:002404	PROMOTED	0.479846 g/L Yeast extract; 31 others all CHEBI-grounded	
+bacterial/telmatocola_medium.yaml	CultureMech:000827	PROMOTED	0.1 g/L Yeast extract; 23 others all CHEBI-grounded	
+bacterial/tepidanaerobacter_acetatoxydans_medium.yaml	CultureMech:000764	PROMOTED	0.2 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/tepidibacillus_decaturensis_medium.yaml	CultureMech:002315	PROMOTED	0.480769 g/L Yeast extract; 36 others all CHEBI-grounded	
+bacterial/tepidibacillus_medium.yaml	CultureMech:001120	PROMOTED	0.0998004 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/tepidibacter_medium.yaml	CultureMech:006947	PROMOTED	0.199402 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/tepidibacter_mesophilus_medium.yaml	CultureMech:003167	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Casitone
+bacterial/the_basal_medium.yaml	CultureMech:009163	CURATOR: ground the sibling, or add it to the undefined list	4 other ingredient(s) not CHEBI-grounded	NiCl3 . 6H2O; Anaerobic digestor sludge supernatant (SS); Sludge fluid; 1M HCl
+bacterial/thermincola_ferriacetica_medium.yaml	CultureMech:002142	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Na2-9,10-anthraquinone-2,6-disulfonate
+bacterial/thermincola_medium.yaml	CultureMech:003540	PROMOTED	0.199402 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/thermincola_medium_co.yaml	CultureMech:000449	PROMOTED	0.199402 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/thermoanaerobacter_sulfurophilus_medium.yaml	CultureMech:001976	PROMOTED	0.499002 g/L Yeast extract; 29 others all CHEBI-grounded	
+bacterial/thermoanaerobaculum_aquaticum_medium.yaml	CultureMech:003281	PROMOTED	0.0982318 g/L Yeast extract; 33 others all CHEBI-grounded	
+bacterial/thermoanaerobaculum_medium.yaml	CultureMech:001169	PROMOTED	0.100604 g/L Yeast extract; 20 others all CHEBI-grounded	
+bacterial/thermoanaeromonas_medium.yaml	CultureMech:002144	PROMOTED	0.49456 g/L Yeast extract; 34 others all CHEBI-grounded	
+bacterial/thermodesulfovibrio_hydrogeniphilus_medium.yaml	CultureMech:002892	PROMOTED	0.0999001 g/L Yeast extract; 22 others all CHEBI-grounded	
+bacterial/thermodesulfovibrio_yellowstonii_medium.yaml	CultureMech:001883	PROMOTED	0.49456 g/L Yeast extract; 35 others all CHEBI-grounded	
+bacterial/thermophilic_rc_i_medium.yaml	CultureMech:008425	PROMOTED	0.1 g/L Bacto Yeast Extract (Difco); 35 others all CHEBI-grounded	
+bacterial/thermosipho_mj_medium.yaml	CultureMech:000429	PROMOTED	0.0998004 g/L Yeast extract; 30 others all CHEBI-grounded	
+bacterial/thermosulfurimonas_medium.yaml	CultureMech:000666	PROMOTED	0.199402 g/L Yeast extract; 32 others all CHEBI-grounded	
+bacterial/thermotoga_ii_medium.yaml	CultureMech:005631	PROMOTED	0.488281 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/thermotoga_medium.yaml	CultureMech:002597	PROMOTED	0.492611 g/L Yeast extract; 23 others all CHEBI-grounded	
+bacterial/thioalbus_denitrificans_medium.yaml	CultureMech:003066	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sodium phosphate buffer
+bacterial/thiobacillus_novellus_medium.yaml	CultureMech:006324	PROMOTED	0.332594 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/thiocapsa_medium.yaml	CultureMech:002993	PROMOTED	0.393314 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/thiohalocapsa_marina_medium.yaml	CultureMech:000684	PROMOTED	0.4 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/thiophaeococcus_mangrovi_medium.yaml	CultureMech:000602	PROMOTED	0.4 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/thiophaeococcus_medium.yaml	CultureMech:002996	PROMOTED	0.395257 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/thiorhodococcus_bheemlicum_medium.yaml	CultureMech:002910	PROMOTED	0.391773 g/L Yeast extract; 18 others all CHEBI-grounded	
+bacterial/thiorhodococcus_medium.yaml	CultureMech:000816	PROMOTED	0.3 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/togo_medium_m1452.yaml	CultureMech:007993	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Bromophenol blue
+bacterial/togo_medium_m1502.yaml	CultureMech:008047	CURATOR: ground the sibling, or add it to the undefined list	2 other ingredient(s) not CHEBI-grounded	Agar (if needed); Bacto Casitone (Difco)
+bacterial/togo_medium_m1506.yaml	CultureMech:008050	PROMOTED	0.1 g/L Bacto Yeast Extract (Difco); 7 others all CHEBI-grounded	
+bacterial/togo_medium_m1507.yaml	CultureMech:008051	PROMOTED	0.1 g/L Bacto Yeast Extract (Difco); 8 others all CHEBI-grounded	
+bacterial/togo_medium_m1560.yaml	CultureMech:008109	CURATOR: ground the sibling, or add it to the undefined list	4 other ingredient(s) not CHEBI-grounded	Agar (if needed); Neutralized Na2S·9H2O; Niacine; Pyridoxal-HCl
+bacterial/togo_medium_m1611.yaml	CultureMech:008165	PROMOTED	0.3 g/L Yeast extract; 20 others all CHEBI-grounded	
+bacterial/togo_medium_m178.yaml	CultureMech:008357	PROMOTED	0.02 g/L Yeast extract (BD-Difco); 3 others all CHEBI-grounded	
+bacterial/togo_medium_m179.yaml	CultureMech:008368	PROMOTED	0.002 g/L Yeast extract (BD-Difco); 7 others all CHEBI-grounded	
+bacterial/togo_medium_m190.yaml	CultureMech:008487	CURATOR: ground the sibling, or add it to the undefined list	4 other ingredient(s) not CHEBI-grounded	NaS2・9H2O; Trimethylamine・HCl; Polypepton (Nihon Pharm. Co.); Trace vitamins (see below)
+bacterial/togo_medium_m2120.yaml	CultureMech:008713	CURATOR: ground the sibling, or add it to the undefined list	5 other ingredient(s) not CHEBI-grounded	Na2S2O4 (sodium dithionite); HCl (35%); Pyridoxine-HCl (VitaminB6); Riboflavin (Vitamine B2); Thiamine-HCl·H2O (Vitamin B1)
+bacterial/togo_medium_m2759.yaml	CultureMech:009309	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	AlK(SO4)
+bacterial/tpt_18_medium.yaml	CultureMech:000564	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Casitone
+bacterial/trichococcus_skbg_medium.yaml	CultureMech:002411	PROMOTED	0.201613 g/L Yeast extract; 26 others all CHEBI-grounded	
+bacterial/ui_medium.yaml	CultureMech:002853	PROMOTED	0.110619 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/v24n_medium.yaml	CultureMech:002051	PROMOTED	0.2 g/L Yeast extract; 16 others all CHEBI-grounded	
+bacterial/vallitalea_70b_a_medium.yaml	CultureMech:002357	PROMOTED	0.197824 g/L Yeast extract; 19 others all CHEBI-grounded	
+bacterial/vulcanibacillus_medium.yaml	CultureMech:000465	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Sea Salt
+bacterial/vulcanithermus_mediatlanticus_medium.yaml	CultureMech:002725	PROMOTED	0.294118 g/L Yeast extract; 28 others all CHEBI-grounded	
+bacterial/ycfag_medium.yaml	CultureMech:009194	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Casitone
+bacterial/yem_agar.yaml	CultureMech:009635	PROMOTED	0.4 g/L Yeast extract; 7 others all CHEBI-grounded	
+bacterial/yepg_medium.yaml	CultureMech:001800	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Polypeptone
+bacterial/yma_medium.yaml	CultureMech:000453	PROMOTED	0.3 g/L Yeast extract; 5 others all CHEBI-grounded	
+fungal/1_10_yeast_starch_agar.yaml	CultureMech:010505	PROMOTED	0.2 g/L Yeast extract; 2 others all CHEBI-grounded	
+fungal/1_5_yeast_starch_agar.yaml	CultureMech:010508	PROMOTED	0.4 g/L Yeast extract; 2 others all CHEBI-grounded	
+fungal/ferrous_sulfate_yeast_extract_medium.yaml	CultureMech:010443	PROMOTED	0.2 g/L Yeast extract; 7 others all CHEBI-grounded	
+fungal/tap_water_yeast_extract_medium_twye.yaml	CultureMech:010456	PROMOTED	0.25 g/L Yeast extract; 3 others all CHEBI-grounded	
+fungal/yeast_nitrogen_base_glucose_ynbg.yaml	CultureMech:010458	CURATOR: ground the sibling, or add it to the undefined list	1 other ingredient(s) not CHEBI-grounded	Yeast Nitrogen Base
+specialized/acidianus_medium_anaerobic.yaml	CultureMech:015354	PROMOTED	0.49505 g/L Yeast extract; 13 others all CHEBI-grounded	
+specialized/ird_marine_clostrida_medium.yaml	CultureMech:015423	PROMOTED	0.491159 g/L Yeast extract; 22 others all CHEBI-grounded	
+specialized/ird_marine_clostridia_medium_2.yaml	CultureMech:015427	PROMOTED	0.491159 g/L Yeast extract; 22 others all CHEBI-grounded	
+specialized/marine_methanobacterium_medium.yaml	CultureMech:015389	PROMOTED	0.0960615 g/L Yeast extract; 30 others all CHEBI-grounded	
+specialized/marine_srb_medium.yaml	CultureMech:015379	PROMOTED	0.491159 g/L Yeast extract; 31 others all CHEBI-grounded	
+specialized/medium_for_broad_range_phototrophic_bacteria.yaml	CultureMech:015344	PROMOTED	0.3 g/L Yeast extract; 32 others all CHEBI-grounded	
+specialized/modified_marine_medium.yaml	CultureMech:015405	PROMOTED	0.196078 g/L Yeast extract; 23 others all CHEBI-grounded	
+specialized/nl_ccm.yaml	CultureMech:015653	PROMOTED	0.1 g/L Yeast Extract; 10 others all CHEBI-grounded	
+specialized/phototrophic_medium.yaml	CultureMech:015333	PROMOTED	0.4 g/L Yeast extract; 15 others all CHEBI-grounded	

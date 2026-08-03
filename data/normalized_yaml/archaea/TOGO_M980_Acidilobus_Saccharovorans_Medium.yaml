@@ -3,7 +3,7 @@ name: acidilobus_saccharovorans_medium
 original_name: Acidilobus Saccharovorans Medium
 category: archaea
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water

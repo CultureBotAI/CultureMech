@@ -3,7 +3,7 @@ name: medium_for_arhodomonas_and_marinobacter
 original_name: medium FOR ARHODOMONAS AND MARINOBACTER
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 7.2
 media_term:

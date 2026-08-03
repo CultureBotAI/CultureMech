@@ -3,7 +3,7 @@ name: sulfurospirillum_alkalitolerans_medium
 original_name: SULFUROSPIRILLUM ALKALITOLERANS MEDIUM
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 9.0
 media_term:

@@ -3,7 +3,7 @@ name: mmj_do_medium
 original_name: MMJ-DO Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: Yeast extract

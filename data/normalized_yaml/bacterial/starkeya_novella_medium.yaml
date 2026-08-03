@@ -3,7 +3,7 @@ name: starkeya_novella_medium
 original_name: STARKEYA NOVELLA MEDIUM
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ph_value: 8.5
 media_term:

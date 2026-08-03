@@ -3,7 +3,7 @@ name: fuchsiella_alkaliacetigena_medium
 original_name: FUCHSIELLA ALKALIACETIGENA MEDIUM
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_range:
   min: 8.8

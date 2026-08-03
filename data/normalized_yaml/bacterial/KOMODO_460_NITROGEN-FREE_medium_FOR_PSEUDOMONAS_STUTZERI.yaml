@@ -3,7 +3,7 @@ name: nitrogen_free_medium_for_pseudomonas_stutzeri
 original_name: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 7.0
 media_term:

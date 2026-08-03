@@ -3,7 +3,7 @@ name: 7way_8_7_medium
 original_name: 7WAY-8-7 Medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ingredients:
 - preferred_term: L--cysteine・HCl・H2O

@@ -3,7 +3,7 @@ name: bmm_medium
 original_name: BMM - medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:

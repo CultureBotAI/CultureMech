@@ -158,9 +158,25 @@ def iter_media(normalized_dir: Path) -> Iterator[tuple[Path, dict[str, Any]]]:
             yield path, doc
 
 
-def audit(normalized_dir: Path = NORMALIZED) -> list[dict[str, str]]:
+def _rel(path: Path, root: Path) -> str:
+    """Path relative to `root`, or its name if it lies outside — a caller may pass
+    records parsed from a different tree (tmp_path fixtures do)."""
+    try:
+        return str(path.relative_to(root))
+    except ValueError:
+        return path.name
+
+
+def audit_parsed(records, normalized_dir: Path = NORMALIZED) -> list[dict[str, str]]:
+    """audit() over already-parsed (path, doc) pairs.
+
+    Split out so the test suite's session-scoped corpus fixture does not re-read
+    ~15,900 files just to re-derive what it already holds.
+    """
     rows: list[dict[str, str]] = []
-    for path, doc in iter_media(normalized_dir):
+    for path, doc in records:
+        if not isinstance(doc, dict) or is_solution_record(doc):
+            continue
         for ing in doc.get("ingredients") or []:
             if not isinstance(ing, dict):
                 continue
@@ -171,7 +187,7 @@ def audit(normalized_dir: Path = NORMALIZED) -> list[dict[str, str]]:
             conc = ing.get("concentration") or {}
             rows.append({
                 "finding": finding,
-                "file_path": str(path.relative_to(normalized_dir)),
+                "file_path": _rel(path, normalized_dir),
                 "record_id": str(doc.get("id") or ""),
                 "ingredient": str(ing.get("preferred_term") or ""),
                 "value": str(conc.get("value")),
@@ -179,6 +195,11 @@ def audit(normalized_dir: Path = NORMALIZED) -> list[dict[str, str]]:
                 "detail": detail,
             })
     return rows
+
+
+def audit(normalized_dir: Path = NORMALIZED) -> list[dict[str, str]]:
+    """Read the corpus from disk, then delegate to audit_parsed()."""
+    return audit_parsed(list(iter_media(normalized_dir)), normalized_dir)
 
 
 COCKTAIL_MIN_ROWS = 3

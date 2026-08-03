@@ -3,7 +3,7 @@ name: diazotrophic_medium_rba
 original_name: DIAZOTROPHIC MEDIUM (RBA)
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 441

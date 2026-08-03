@@ -116,13 +116,58 @@ def undefined_mass(ingredients: list[dict[str, Any]]) -> float | None:
     return total
 
 
-def audit(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
+SEMI_DEFINED_MAX_G_PER_L = 0.5
+
+
+def _chebi_id(ing: dict[str, Any]) -> str | None:
+    for key in ("mediaingredientmech_chebi_term", "term"):
+        term = ing.get(key)
+        if isinstance(term, dict) and isinstance(term.get("id"), str) \
+                and term["id"].startswith("CHEBI:"):
+            return term["id"]
+    return None
+
+
+def semi_defined_candidate(doc: dict[str, Any]) -> tuple[bool, str]:
+    """Is this UNDEFINED record actually SEMI_DEFINED, on evidence rather than assumption?
+
+    SEMI_DEFINED is "predominantly defined ... supplemented with a small amount of
+    one or more undefined components". Both halves must be shown, and the second
+    is the hard one.
+
+    Presence of an undefined component is provable; ABSENCE is not, because the
+    name list is finite. So "predominantly defined" is not inferred from "no other
+    undefined component matched" — that would be the #158 asymmetry run backwards,
+    and an unrecognised extract at 10 g/L would be silently promoted. Instead every
+    other ingredient must carry a CHEBI id, which is positive evidence that it is a
+    known chemical.
+    """
+    hits = undefined_components(doc)
+    if len(hits) != 1:
+        return False, "not exactly one undefined component"
+    mass = undefined_mass(hits)
+    if mass is None:
+        return False, "undefined component is unquantified"
+    if mass >= SEMI_DEFINED_MAX_G_PER_L:
+        return False, f"{mass:g} g/L is not 'a small amount'"
+    others = [i for i in doc.get("ingredients") or []
+              if isinstance(i, dict) and i not in hits]
+    if not others:
+        return False, "no other ingredients to be predominantly defined"
+    ungrounded = [str(i.get("preferred_term")) for i in others if not _chebi_id(i)]
+    if ungrounded:
+        return False, f"{len(ungrounded)} other ingredient(s) not CHEBI-grounded"
+    return True, f"{mass:g} g/L {hits[0].get('preferred_term')}; {len(others)} others all CHEBI-grounded"
+
+
+def audit_parsed(records, normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
+    """audit() over already-parsed (path, doc) pairs.
+
+    Split out so callers holding the corpus in memory — the test suite's
+    session-scoped fixture — do not re-read ~15,900 files just to re-derive it.
+    """
     rows: list[dict[str, Any]] = []
-    for path in sorted(normalized.rglob("*.yaml")):
-        try:
-            doc = yaml.safe_load(path.read_text(errors="replace"))
-        except (yaml.YAMLError, OSError):
-            continue
+    for path, doc in records:
         if not isinstance(doc, dict) or is_solution_record(doc):
             continue
         if str(doc.get("composition_type")) != "DEFINED":
@@ -145,6 +190,17 @@ def audit(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
     return rows
 
 
+def audit(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
+    """Read the corpus from disk, then delegate to audit_parsed()."""
+    records = []
+    for path in sorted(normalized.rglob("*.yaml")):
+        try:
+            records.append((path, yaml.safe_load(path.read_text(errors="replace"))))
+        except (yaml.YAMLError, OSError):
+            continue
+    return audit_parsed(records, normalized)
+
+
 def restamp(path: Path, new_value: str) -> bool:
     """Rewrite the composition_type line in place, leaving all other lines byte-identical."""
     text = path.read_text()
@@ -163,6 +219,10 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--undefined-threshold", type=float, default=DEFAULT_THRESHOLD,
                     help="g/L of undefined components at or above which UNDEFINED is "
                          "unambiguous (default: 5.0)")
+    ap.add_argument("--promote-semi-defined", action="store_true",
+                    help="Promote UNDEFINED records to SEMI_DEFINED where the evidence "
+                         "supports it: exactly one undefined component below "
+                         "0.5 g/L, and every other ingredient CHEBI-grounded.")
     ap.add_argument("--apply", action="store_true",
                     help="restamp records at or above the threshold to UNDEFINED")
     args = ap.parse_args(argv)
@@ -189,6 +249,72 @@ def main(argv: list[str] | None = None) -> int:
     print(f"  <  {args.undefined_threshold:g} g/L — curator call (SEMI_DEFINED?): {len(borderline)}")
     print(f"  unquantified undefined component            : {len(unmeasured)}")
     print(f"\nWrote {_display(args.out)}")
+
+    if args.promote_semi_defined:
+        promoted = 0
+        skipped: dict[str, int] = {}
+        # Near-misses are the actionable subset: exactly one small undefined
+        # component, held back only because a sibling ingredient is ungrounded.
+        # Either that sibling needs grounding (record becomes promotable) or it is
+        # an unrecognised extract (word list needs the name) — both decidable per
+        # record, and neither findable if only aggregate counts are printed (#172).
+        report_rows: list[dict[str, str]] = []
+        for path in sorted(args.normalized_dir.rglob("*.yaml")):
+            try:
+                doc = yaml.safe_load(path.read_text(errors="replace"))
+            except (yaml.YAMLError, OSError):
+                continue
+            if not isinstance(doc, dict) or is_solution_record(doc):
+                continue
+            current = str(doc.get("composition_type"))
+            # Include records already promoted, so the report is IDEMPOTENT. Scanning
+            # only UNDEFINED means a re-run drops every promoted row and the artifact
+            # silently changes shape between the promoting run and the next one.
+            if current not in ("UNDEFINED", "SEMI_DEFINED"):
+                continue
+            ok, why = semi_defined_candidate(doc)
+            hits = undefined_components(doc)
+            if ok:
+                if current == "UNDEFINED":
+                    promoted += restamp(path, "SEMI_DEFINED")
+                report_rows.append({
+                    "file_path": str(path.relative_to(args.normalized_dir)),
+                    "record_id": str(doc.get("id") or ""),
+                    "verdict": "PROMOTED",
+                    "detail": why,
+                    "ungrounded_siblings": "",
+                })
+                continue
+            skipped[why.split(";")[0]] = skipped.get(why.split(";")[0], 0) + 1
+            if "not CHEBI-grounded" not in why:
+                continue  # only near-misses are worth a row
+            others = [i for i in doc.get("ingredients") or []
+                      if isinstance(i, dict) and i not in hits]
+            report_rows.append({
+                "file_path": str(path.relative_to(args.normalized_dir)),
+                "record_id": str(doc.get("id") or ""),
+                "verdict": "CURATOR: ground the sibling, or add it to the undefined list",
+                "detail": why,
+                "ungrounded_siblings": "; ".join(
+                    str(i.get("preferred_term")) for i in others if not _chebi_id(i)),
+            })
+
+        semi_out = args.out.with_name(args.out.stem.replace("_conflicts", "") + "_semi_defined.tsv")
+        semi_out.parent.mkdir(parents=True, exist_ok=True)
+        with semi_out.open("w", newline="", encoding="utf-8") as fh:
+            w = csv.DictWriter(fh, delimiter="\t", fieldnames=[
+                "file_path", "record_id", "verdict", "detail", "ungrounded_siblings"])
+            w.writeheader()
+            w.writerows(report_rows)
+
+        near = sum(1 for r in report_rows if r["verdict"].startswith("CURATOR"))
+        print(f"\nPromoted {promoted} UNDEFINED record(s) -> SEMI_DEFINED.")
+        print(f"Near-misses held back only by an ungrounded sibling: {near}")
+        print("Not promoted, by reason:")
+        for why, n in sorted(skipped.items(), key=lambda kv: -kv[1])[:6]:
+            print(f"  {n:5d}  {why}")
+        print(f"\nWrote {_display(semi_out)}")
+        return 0
 
     if not args.apply:
         print("\nReport only. Re-run with --apply to restamp the unambiguous ones.")

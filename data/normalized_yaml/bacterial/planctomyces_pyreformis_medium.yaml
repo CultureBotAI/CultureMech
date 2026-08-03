@@ -3,7 +3,7 @@ name: planctomyces_pyreformis_medium
 original_name: PLANCTOMYCES PYREFORMIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ph_range:
   min: 5.8

@@ -3,7 +3,7 @@ name: planctomycetes_medium_nh11
 original_name: PLANCTOMYCETES MEDIUM NH11
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:

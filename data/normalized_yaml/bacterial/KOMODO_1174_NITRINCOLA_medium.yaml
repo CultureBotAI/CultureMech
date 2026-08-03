@@ -3,7 +3,7 @@ name: nitrincola_medium
 original_name: NITRINCOLA medium
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 9.0
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1174 | DSMZ Medium: 1174

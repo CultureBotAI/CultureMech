@@ -3,7 +3,7 @@ name: for_dsm_24176_and_dsm_24629
 original_name: For DSM 24176 and DSM 24629
 category: bacterial
 medium_type: COMPLEX
-composition_type: UNDEFINED
+composition_type: SEMI_DEFINED
 physical_state: LIQUID
 ph_value: 10.0
 media_term:
