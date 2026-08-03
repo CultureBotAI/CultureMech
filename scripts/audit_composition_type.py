@@ -160,13 +160,14 @@ def semi_defined_candidate(doc: dict[str, Any]) -> tuple[bool, str]:
     return True, f"{mass:g} g/L {hits[0].get('preferred_term')}; {len(others)} others all CHEBI-grounded"
 
 
-def audit(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
+def audit_parsed(records, normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
+    """audit() over already-parsed (path, doc) pairs.
+
+    Split out so callers holding the corpus in memory — the test suite's
+    session-scoped fixture — do not re-read ~15,900 files just to re-derive it.
+    """
     rows: list[dict[str, Any]] = []
-    for path in sorted(normalized.rglob("*.yaml")):
-        try:
-            doc = yaml.safe_load(path.read_text(errors="replace"))
-        except (yaml.YAMLError, OSError):
-            continue
+    for path, doc in records:
         if not isinstance(doc, dict) or is_solution_record(doc):
             continue
         if str(doc.get("composition_type")) != "DEFINED":
@@ -187,6 +188,17 @@ def audit(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
             "_mass": mass,
         })
     return rows
+
+
+def audit(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
+    """Read the corpus from disk, then delegate to audit_parsed()."""
+    records = []
+    for path in sorted(normalized.rglob("*.yaml")):
+        try:
+            records.append((path, yaml.safe_load(path.read_text(errors="replace"))))
+        except (yaml.YAMLError, OSError):
+            continue
+    return audit_parsed(records, normalized)
 
 
 def restamp(path: Path, new_value: str) -> bool:

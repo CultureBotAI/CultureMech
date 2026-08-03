@@ -32,14 +32,14 @@ def acp():
 
 
 @pytest.fixture(scope="module")
-def corpus_findings(acp):
+def corpus_findings(acp, media_records):
     """One full-corpus audit shared by the corpus-level tests.
 
     `audit()` parses ~11,000 YAML records; at ~90s a call, running it per test
     pushed the CI suite past its 20-minute timeout. Module scope keeps the
     coverage and pays for the walk once.
     """
-    return acp.audit()
+    return acp.audit_parsed(media_records)
 
 
 def _ing(name, value, unit="G_PER_L", ident=None):

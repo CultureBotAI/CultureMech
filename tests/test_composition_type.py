@@ -116,7 +116,7 @@ def test_restamp_reports_false_when_slot_absent(act, tmp_path):
 # --- the corpus -----------------------------------------------------------
 
 
-def test_no_defined_record_carries_a_bulk_undefined_component(act):
+def test_no_defined_record_carries_a_bulk_undefined_component(act, media_records):
     """One-directional by design — see the module docstring.
 
     The threshold matches the repair: at >= 5 g/L, no reading of SEMI_DEFINED's
@@ -124,7 +124,7 @@ def test_no_defined_record_carries_a_bulk_undefined_component(act):
     """
     offenders = [
         (r["file_path"], r["undefined_g_per_l"])
-        for r in act.audit()
+        for r in act.audit_parsed(media_records)
         if r["_mass"] is not None and r["_mass"] >= act.DEFAULT_THRESHOLD
     ]
     assert not offenders, (
@@ -134,7 +134,7 @@ def test_no_defined_record_carries_a_bulk_undefined_component(act):
     )
 
 
-def test_medium_type_and_composition_type_do_not_contradict():
+def test_medium_type_and_composition_type_do_not_contradict(media_records):
     """The deprecated slot must not disagree with the live one (#165).
 
     `medium_type` is deprecated and #154 removed its last reader, but it is still
@@ -149,9 +149,6 @@ def test_medium_type_and_composition_type_do_not_contradict():
     Dropping `medium_type` from the corpus entirely is the better long-term fix
     and is tracked in #165; this only holds the line until then.
     """
-    import yaml as _yaml
-    from record_kinds import is_solution_record
-
     # The deprecated vocabulary is COARSER than the live one: it has no
     # SEMI_DEFINED. A record that is SEMI_DEFINED today was legitimately COMPLEX
     # under the old single-axis enum, because COMPLEX meant "contains an undefined
@@ -163,10 +160,7 @@ def test_medium_type_and_composition_type_do_not_contradict():
     # so it cannot legitimately pair with either of the others.
     expect = {"COMPLEX": {"UNDEFINED", "SEMI_DEFINED"}, "DEFINED": {"DEFINED"}}
     bad = []
-    for path in (REPO_ROOT / "data" / "normalized_yaml").rglob("*.yaml"):
-        doc = _yaml.safe_load(path.read_text(errors="replace"))
-        if not isinstance(doc, dict) or is_solution_record(doc):
-            continue
+    for path, doc in media_records:
         mt, ct = doc.get("medium_type"), doc.get("composition_type")
         if mt is None or ct is None:
             continue
@@ -234,22 +228,17 @@ def test_semi_defined_rejects_a_record_with_no_other_ingredients(act):
     assert not ok and "no other ingredients" in why
 
 
-def test_all_three_composition_axes_are_populated_in_the_corpus():
+def test_all_three_composition_axes_are_populated_in_the_corpus(media_records):
     """#152: the schema advertised three values and only two were ever emitted.
 
     Asserts SEMI_DEFINED is non-empty so it cannot silently regress to zero — a
     coverage check on `composition_type` alone read as complete while one of its
     permissible values had no records at all.
     """
-    import yaml as _yaml
-    from record_kinds import is_solution_record
     from collections import Counter
 
     seen = Counter()
-    for path in (REPO_ROOT / "data" / "normalized_yaml").rglob("*.yaml"):
-        doc = _yaml.safe_load(path.read_text(errors="replace"))
-        if not isinstance(doc, dict) or is_solution_record(doc):
-            continue
+    for _, doc in media_records:
         if doc.get("composition_type"):
             seen[str(doc["composition_type"])] += 1
     for value in ("DEFINED", "UNDEFINED", "SEMI_DEFINED"):
