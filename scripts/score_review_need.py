@@ -85,6 +85,12 @@ MANGLED = re.compile(_QTY_UNIT + r".*?" + _QTY_UNIT)
 STRAIN_POINTER = re.compile(r"\s*(?:for\s+)?(?:dsm|atcc|jcm|nbrc|ncimb)\s*[\s:_-]*\d+\s*", re.I)
 CONDITION_SLOTS = ("ph_value", "ph_range", "temperature_value", "temperature_range")
 
+# Signals common enough to be the corpus norm rather than a defect. They refine the
+# ranking among records that are ALREADY suspect, but must not qualify a record on
+# their own — "no pH" fires on 51% of media, so emitting on it alone made the
+# report 60% of the corpus and buried the 42 genuinely broken records (#177).
+NORM_LEVEL_SIGNALS = frozenset({"no pH and no temperature"})
+
 
 def _grounded(ing: dict[str, Any]) -> bool:
     for key in ("term", "mediaingredientmech_chebi_term"):
@@ -151,7 +157,8 @@ def collect(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
         if not isinstance(doc, dict) or is_solution_record(doc):
             continue
         score, reasons = score_record(doc)
-        if not score:
+        # A record qualifies only on a signal that is not merely the corpus norm.
+        if not any(r not in NORM_LEVEL_SIGNALS for r in reasons):
             continue
         rows.append({
             "score": score,

@@ -155,3 +155,47 @@ def test_most_of_the_corpus_is_not_flagged_as_severe(srn):
     rows = srn.collect()
     severe = [r for r in rows if r["score"] >= 50]
     assert len(severe) < 500, f"{len(severe)} records scored >=50; the weights are too loose"
+
+
+def test_a_norm_level_signal_alone_does_not_qualify_a_record(srn, tmp_path):
+    """#177: any non-zero score used to emit a row, so 4,332 records appeared in
+    the report solely for lacking a pH value — a slot 51% of the corpus omits.
+
+    That is the failure this whole scorer exists to avoid, one layer up: 60% of the
+    corpus in a "needs review" file buries the 42 that are genuinely broken.
+    Conditions refine the ranking among already-suspect records; they must not
+    qualify one on their own.
+    """
+    import yaml as _yaml
+
+    d = tmp_path / "bacterial"
+    d.mkdir()
+    healthy_but_no_conditions = {
+        "id": "CultureMech:1", "name": "x", "original_name": "Nutrient Agar",
+        "media_term": {"preferred_term": "DSMZ 1"}, "notes": "Source: DSMZ",
+        # 3 ingredients: fewer would also trip the "only 1-2 ingredients" signal
+        # and the record would no longer be conditions-only.
+        "ingredients": [{"preferred_term": n, "term": {"id": "CHEBI:1"}}
+                        for n in ("Peptone", "Yeast extract", "NaCl")],
+    }
+    (d / "a.yaml").write_text(_yaml.dump(healthy_but_no_conditions))
+
+    score, reasons = srn.score_record(healthy_but_no_conditions)
+    assert score > 0 and reasons == ["no pH and no temperature"], reasons
+    assert srn.collect(tmp_path) == [], "a conditions-only record must not be emitted"
+
+
+def test_conditions_still_contribute_when_something_else_is_wrong(srn, tmp_path):
+    """The signal is a tiebreaker, not deleted — a suspect record missing
+    conditions should outrank an otherwise identical one that has them."""
+    import yaml as _yaml
+
+    d = tmp_path / "bacterial"
+    d.mkdir()
+    broken = {"id": "CultureMech:2", "name": "y", "original_name": "Y",
+              "media_term": {"preferred_term": "z"}, "notes": "n", "ingredients": []}
+    (d / "b.yaml").write_text(_yaml.dump(broken))
+    rows = srn.collect(tmp_path)
+    assert len(rows) == 1
+    assert "no pH and no temperature" in rows[0]["reasons"]
+    assert rows[0]["score"] > srn.score_record(broken | {"ph_value": 7.0})[0]
