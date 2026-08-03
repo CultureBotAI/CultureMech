@@ -141,7 +141,8 @@ audit-filename-collisions *args="":
 # records are repaired; raising it to make a run pass defeats the point.
 [group('QC')]
 audit-concentration-plausibility *args="":
-    uv run --extra dev python scripts/audit_concentration_plausibility.py {{args}}
+    uv run --extra dev python scripts/audit_concentration_plausibility.py \
+        --max-allowed 11540 {{args}}
 
 # Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
 # into the tracked researched-media manifest. This is the only step that reads

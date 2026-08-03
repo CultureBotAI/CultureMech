@@ -225,3 +225,25 @@ def test_the_baseline_is_not_far_above_reality(corpus_findings):
         f"baseline {CONCENTRATION_BACKLOG_BASELINE} is {slack} above the actual "
         f"{actual}; lower it to {actual} so the gate keeps biting"
     )
+
+
+def test_justfile_baseline_matches_the_test_baseline():
+    """Two hardcoded copies of a number that is meant to change is a drift bug (#170).
+
+    The baseline lives in `project.justfile` (so `just
+    audit-concentration-plausibility` gates outside pytest) and here (so CI gates
+    without invoking just). Both must be lowered together as the backlog is
+    repaired. Miss one and either the gate stops biting or local runs fail while
+    CI passes — the same drift class as #144 and #157, which is why this asserts
+    rather than trusts.
+    """
+    import re
+
+    justfile = (REPO_ROOT / "project.justfile").read_text()
+    block = justfile.split("audit-concentration-plausibility", 1)[1][:400]
+    match = re.search(r"--max-allowed\s+(\d+)", block)
+    assert match, "the recipe no longer passes --max-allowed; it has stopped gating"
+    assert int(match.group(1)) == CONCENTRATION_BACKLOG_BASELINE, (
+        f"project.justfile gates at {match.group(1)} but this file baselines at "
+        f"{CONCENTRATION_BACKLOG_BASELINE}; lower both together"
+    )
