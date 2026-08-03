@@ -154,3 +154,11 @@ kb/
 # Runtime CHEBI/term cache, linkml-term-validator / OAK label cache
 # (regenerated at runtime, not source)
 cache/
+
+# Regenerated diagnostic report, not an artifact anyone reads (#157). `just
+# check-chebi-grounding` rewrites it from the corpus, and the chebi-consistency
+# workflow uploads a fresh copy on every run (`if: always()`). Tracking it only
+# produced silent rot: the committed copy drifted to 73 insertions / 82 deletions
+# behind the corpus while the gate stayed green, because the gate compares against
+# --max-allowed rather than against the file.
+reports/chebi_consistency.tsv
