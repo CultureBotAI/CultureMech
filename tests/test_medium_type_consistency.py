@@ -54,24 +54,76 @@ def test_the_schema_still_documents_a_composition_mapping(composition_mapping):
     assert composition_mapping.get("COMPLEX") == "UNDEFINED"
 
 
-def test_medium_type_never_contradicts_composition_type(media_records, composition_mapping):
-    """The invariant #164 broke and #165 asks to keep settled."""
+def contradictions(records, mapping) -> list[str]:
+    """Records whose deprecated slot disagrees with the schema's own mapping.
+
+    Factored out so the negative tests below can call it with constructed records.
+    The corpus has 0 contradictions, so a corpus-only check passes trivially and
+    proves nothing about whether the guard still works (#197).
+    """
     bad = []
-    for path, doc in media_records:
+    for path, doc in records:
         mt = doc.get("medium_type")
         ct = doc.get("composition_type")
         if mt is None or ct is None:
             continue
-        expected = composition_mapping.get(str(mt))
+        expected = mapping.get(str(mt))
         if expected is None:
             continue  # value maps to another axis; covered by its own test below
         allowed = REFINEMENTS.get(expected, {expected})
         if str(ct) not in allowed:
-            bad.append(f"{path.name}: medium_type={mt} but composition_type={ct} "
-                       f"(schema says {expected})")
+            bad.append(f"{getattr(path, 'name', path)}: medium_type={mt} but "
+                       f"composition_type={ct} (schema says {expected})")
+    return bad
+
+
+def test_medium_type_never_contradicts_composition_type(media_records, composition_mapping):
+    """The invariant #164 broke and #165 asks to keep settled."""
+    bad = contradictions(media_records, composition_mapping)
     assert not bad, (
         f"{len(bad)} records contradict the schema's own migration mapping:\n  "
         + "\n  ".join(bad[:10]))
+
+
+# --- proof the guard can fail (#197) ---------------------------------------
+#
+# The corpus is clean, so every corpus assertion here is trivially satisfied. These
+# construct the violation instead.
+
+
+def _rec(name, mt, ct):
+    return (Path(name), {"medium_type": mt, "composition_type": ct})
+
+
+def test_the_guard_catches_the_defect_it_was_written_for(composition_mapping):
+    """#164's exact shape: composition_type restamped, deprecated slot left behind."""
+    assert contradictions([_rec("a.yaml", "DEFINED", "UNDEFINED")], composition_mapping)
+
+
+def test_the_guard_catches_the_reverse_disagreement(composition_mapping):
+    assert contradictions([_rec("b.yaml", "COMPLEX", "DEFINED")], composition_mapping)
+
+
+@pytest.mark.parametrize("mt,ct", [("COMPLEX", "UNDEFINED"), ("DEFINED", "DEFINED"),
+                                   ("COMPLEX", "SEMI_DEFINED")])
+def test_the_guard_accepts_agreement_and_the_documented_refinement(composition_mapping, mt, ct):
+    """SEMI_DEFINED under COMPLEX is #171's refinement, not a contradiction — and a
+    guard that flagged it would be switched off within a week."""
+    assert not contradictions([_rec("c.yaml", mt, ct)], composition_mapping)
+
+
+def test_a_widened_refinement_would_be_caught(composition_mapping):
+    """REFINEMENTS is hardcoded, so widening it wrongly would silently accept the
+    #164 defect. This pins that DEFINED admits only itself."""
+    assert REFINEMENTS.get("DEFINED", {"DEFINED"}) == {"DEFINED"}
+
+
+def test_an_empty_mapping_cannot_pass_silently(composition_mapping):
+    """If the schema wording changes, `composition_mapping` empties and every
+    contradiction becomes invisible. Guard the guard."""
+    assert not contradictions([_rec("d.yaml", "DEFINED", "UNDEFINED")], {}), \
+        "precondition: an empty mapping finds nothing"
+    assert composition_mapping, "the real mapping must be non-empty"
 
 
 def test_every_medium_type_value_in_use_has_a_successor_slot(media_records, schema):
