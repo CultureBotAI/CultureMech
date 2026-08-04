@@ -145,8 +145,8 @@ def test_corpus_count_matches_the_documented_baseline(aud, corpus):
     """
     normalized = REPO_ROOT / "data" / "normalized_yaml"
     rows = aud.audit_parsed([(str(p.relative_to(normalized)), d) for p, d in corpus])
-    assert len(rows) <= 17, (
-        f"{len(rows)} records now mismatch, above the documented baseline of 17. "
+    assert len(rows) <= 2, (
+        f"{len(rows)} records now mismatch, above the documented baseline of 2. "
         "Either a new defect landed or the agent list grew — update both the gate "
         "and #181.")
 
@@ -173,3 +173,42 @@ def test_the_unit_slash_does_not_split_a_segment(aud):
     column — a regression that looked exactly like "no data available"."""
     rows = aud.audit_parsed([_rec("LB + 50 ug/ml Kanamycin medium", [])])
     assert rows[0]["named_conc"] == "kanamycin=50 ug/ml"
+
+
+# --- the slot that made 15 of 17 findings false ----------------------------
+
+
+def test_an_agent_supplied_as_a_solution_is_not_missing(aud):
+    """The correction that shrank this audit from 17 records to 2.
+
+    A stock-supplied antibiotic is a SOLUTION, not an ingredient.
+    `lb_rifampicin_medium`'s `ingredients` really are plain LB — the rifampicin
+    sits in `solutions`. Checking only `ingredients` called 15 complete records
+    defective.
+    """
+    rows = aud.audit_parsed([("x.yaml", {
+        "id": "CultureMech:1", "original_name": "LB + Rifampicin medium",
+        "ingredients": [{"preferred_term": "Yeast extract"},
+                        {"preferred_term": "NaCl"}],
+        "solutions": [{"preferred_term": "Rifampicin solution (50 mg/ml)*"}]})])
+    assert rows == [], f"agent present in `solutions` reported as missing: {rows}"
+
+
+def test_an_agent_nested_in_a_solution_composition_is_not_missing(aud):
+    rows = aud.audit_parsed([("x.yaml", {
+        "id": "CultureMech:1", "original_name": "LB + Kanamycin medium",
+        "ingredients": [{"preferred_term": "Yeast extract"}],
+        "solutions": [{"preferred_term": "Antibiotic stock",
+                       "composition": [{"preferred_term": "Kanamycin sulfate"}]}]})])
+    assert rows == []
+
+
+def test_an_agent_in_neither_slot_is_still_reported(aud):
+    """The suppression must not swallow the genuine case — DSMZ 309 has no
+    `solutions` entry and no neomycin anywhere."""
+    rows = aud.audit_parsed([("x.yaml", {
+        "id": "CultureMech:1", "original_name": "NEOMYCIN AGAR",
+        "ingredients": [{"preferred_term": "Beef extract"},
+                        {"preferred_term": "Peptone"}],
+        "solutions": []})])
+    assert len(rows) == 1 and "neomycin" in rows[0]["missing_agents"]
