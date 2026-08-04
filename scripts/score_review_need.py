@@ -147,13 +147,16 @@ def score_record(doc: dict[str, Any]) -> tuple[int, list[str]]:
     return score, reasons
 
 
-def collect(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
+def score_parsed(records: list[tuple[str, dict[str, Any]]]) -> list[dict[str, Any]]:
+    """Rank already-parsed records, so callers that hold the corpus need not re-read it.
+
+    Split out from `collect` for the corpus guards: each was calling `collect()`
+    and re-parsing ~15,900 files, and five such tests were enough to cancel the
+    pytest job at the 40-minute CI ceiling (#189). Tests pass the session-scoped
+    `corpus` fixture here instead.
+    """
     rows: list[dict[str, Any]] = []
-    for path in sorted(normalized.rglob("*.yaml")):
-        try:
-            doc = yaml.safe_load(path.read_text(errors="replace"))
-        except (yaml.YAMLError, OSError):
-            continue
+    for rel, doc in records:
         if not isinstance(doc, dict) or is_solution_record(doc):
             continue
         score, reasons = score_record(doc)
@@ -162,7 +165,7 @@ def collect(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
             continue
         rows.append({
             "score": score,
-            "file_path": str(path.relative_to(normalized)),
+            "file_path": rel,
             "record_id": str(doc.get("id") or ""),
             "name": str(doc.get("original_name") or doc.get("name") or ""),
             "n_ingredients": str(len(doc.get("ingredients") or [])),
@@ -170,6 +173,18 @@ def collect(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
         })
     rows.sort(key=lambda r: (-r["score"], r["file_path"]))
     return rows
+
+
+def collect(normalized: Path = NORMALIZED) -> list[dict[str, Any]]:
+    """Parse the corpus from disk, then score it."""
+    records: list[tuple[str, dict[str, Any]]] = []
+    for path in sorted(normalized.rglob("*.yaml")):
+        try:
+            doc = yaml.safe_load(path.read_text(errors="replace"))
+        except (yaml.YAMLError, OSError):
+            continue
+        records.append((str(path.relative_to(normalized)), doc))
+    return score_parsed(records)
 
 
 def main(argv: list[str] | None = None) -> int:
