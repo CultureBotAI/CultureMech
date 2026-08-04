@@ -154,7 +154,6 @@ def test_the_docstring_does_not_advertise_commands_that_do_not_exist(ruc):
     """
     import inspect
     import re
-    from pathlib import Path
 
     doc = inspect.getdoc(ruc) or ""
     justfile = (REPO_ROOT / "project.justfile").read_text()
