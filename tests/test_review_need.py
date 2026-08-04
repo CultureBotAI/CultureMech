@@ -137,22 +137,28 @@ def test_signals_accumulate(srn):
 # --- the corpus -----------------------------------------------------------
 
 
-def test_known_bad_records_rank_near_the_top(srn):
+def _rank(srn, corpus):
+    """Score the session-scoped corpus instead of re-reading it (#189)."""
+    normalized = REPO_ROOT / "data" / "normalized_yaml"
+    return srn.score_parsed([(str(p.relative_to(normalized)), d) for p, d in corpus])
+
+
+def test_known_bad_records_rank_near_the_top(srn, corpus):
     """Validation against records independently confirmed broken.
 
     NBRC_1197 carries an unparsed recipe (#166); test_medium_123 is a literal test
     fixture sitting in the production corpus.
     """
-    rows = srn.collect()
+    rows = _rank(srn, corpus)
     assert rows, "scorer returned nothing"
     top = [r["file_path"] for r in rows[:60]]
     for expected in ("bacterial/NBRC_1197.yaml", "bacterial/test_medium_123.yaml"):
         assert expected in top, f"{expected} not in the worst 60"
 
 
-def test_most_of_the_corpus_is_not_flagged_as_severe(srn):
+def test_most_of_the_corpus_is_not_flagged_as_severe(srn, corpus):
     """If a large share scored severe, the ranking would carry no information."""
-    rows = srn.collect()
+    rows = _rank(srn, corpus)
     severe = [r for r in rows if r["score"] >= 50]
     assert len(severe) < 500, f"{len(severe)} records scored >=50; the weights are too loose"
 
