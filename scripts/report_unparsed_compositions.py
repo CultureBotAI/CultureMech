@@ -47,10 +47,13 @@ So this tool REPORTS and never writes. It turns 25 opaque records into a
 structured worklist — proposed parse, trailing note, and the specific reason each
 held record is ambiguous — for a curator to confirm against the source.
 
+Named `report_` rather than `repair_` on purpose. This tool cannot write, and a
+name promising repair is an invitation to add the write path back — which would
+reintroduce exactly the defect documented above.
+
 Usage::
 
-    just repair-unparsed-compositions              # report what would change
-    just repair-unparsed-compositions --apply
+    just report-unparsed-compositions
 """
 
 from __future__ import annotations

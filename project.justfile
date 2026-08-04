@@ -151,7 +151,7 @@ score-review-need *args="":
 #   data/import_tracking/reports/unparsed_compositions.tsv
 [group('QC')]
 report-unparsed-compositions *args="":
-    uv run --extra dev python scripts/repair_unparsed_compositions.py {{args}}
+    uv run --extra dev python scripts/report_unparsed_compositions.py {{args}}
 
 # Find records whose composition_type contradicts their own ingredient list (#158):
 # `DEFINED` asserted while listing yeast extract, peptone, tryptone etc. Reports by

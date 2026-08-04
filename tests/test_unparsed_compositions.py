@@ -30,7 +30,7 @@ def _load(name: str):
 
 @pytest.fixture(scope="module")
 def ruc():
-    return _load("repair_unparsed_compositions")
+    return _load("report_unparsed_compositions")
 
 
 def test_parses_a_simple_crammed_composition(ruc):
@@ -143,3 +143,25 @@ def test_every_crammed_record_gets_a_verdict(ruc):
             assert verdict["verdict"].startswith(("PROPOSED", "HOLD")), verdict
             assert verdict["detail"], f"{path.name} has no reason recorded"
     assert seen == 25, f"expected 25 crammed records, found {seen}"
+
+
+def test_the_docstring_does_not_advertise_commands_that_do_not_exist(ruc):
+    """#180: the usage block outlived the --apply flag it documented.
+
+    Third instance this week of a docstring describing behaviour the code lacks,
+    so this checks its own module rather than trusting review to catch the next one.
+    """
+    import inspect
+    import re
+    from pathlib import Path
+
+    doc = inspect.getdoc(ruc) or ""
+    justfile = (REPO_ROOT / "project.justfile").read_text()
+
+    for recipe in re.findall(r"just ([a-z][a-z0-9-]+)", doc):
+        assert f"\n{recipe} " in justfile or f"\n{recipe}:" in justfile, (
+            f"docstring references `just {recipe}`, which is not a recipe")
+
+    src = inspect.getsource(ruc)
+    for flag in set(re.findall(r"(--[a-z][a-z-]+)", doc)):
+        assert f'"{flag}"' in src, f"docstring documents {flag}, which the CLI does not define"
