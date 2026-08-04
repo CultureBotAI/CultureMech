@@ -19,17 +19,17 @@ defect.
   327  KOMODO ModelSEED, no ingredients and no solutions
   101  a single placeholder ingredient ("See source for composition")
 
-Of the 327 KOMODO records, **183 are named like a stock solution rather than a
-medium** — "Trace element solution (medium 929)", "Solution C, medium 1275",
+**162 of the 428 are named like a stock solution rather than a medium** —
+"Trace element solution (medium 929)", "Solution C, medium 1275",
 "10 x M9 salts". These are not media missing a composition; they are solutions
 imported as media records. `record_kinds.is_solution_record()` does not catch them
 because it keys on a `term.id` prefix these records lack, deliberately: an id
 prefix is an explicit provenance assertion, whereas guessing from a name would
 also swallow genuine media.
 
-## The trap — why 214 records are NOT auto-repairable
+## The trap — why 217 records are NOT auto-repairable
 
-Those names cite a medium number, and 214 of them resolve to a composition file in
+Those names cite a medium number, and 217 of them resolve to a composition file in
 `data/raw/mediadive/compositions/`. Applying it would be wrong.
 
 "Trace element solution (medium 1072)" means *the trace element solution defined
@@ -38,7 +38,7 @@ whole medium: KH2PO4, MgSO4, NH4Cl, KCl, CaCl2, Na-acetate, yeast extract,
 casamino acids, NaCl at 15 g/L — plus a line reading "Trace element solution (see
 below) 2.0ml", which is the thing actually wanted.
 
-So the mapping that looks like a 214-record fix would write an entire medium's
+So the mapping that looks like a 217-record fix would write an entire medium's
 recipe into each solution record. That is #166 at scale: plausible, round-trips,
 validates, and wrong.
 

@@ -3,7 +3,7 @@
 The load-bearing tests here are the two NEGATIVE ones: that `solutions` counts as
 a composition, and that a solution record naming a medium is not treated as
 repairable from that medium. Both were mistakes made while building this — the
-first inflated the count by 35, the second looked like a 214-record fix and would
+first inflated the count by 35, the second looked like a 217-record fix and would
 have written a whole medium's recipe into each solution record.
 """
 from __future__ import annotations
@@ -64,7 +64,7 @@ def test_a_real_composition_is_not_reported(tmc):
 
 
 def test_solution_named_records_are_flagged_as_mis_typed(tmc):
-    """183 of the 327 KOMODO empties are stock solutions imported as media. They
+    """162 of the 428 are stock solutions imported as media. They
     are not media missing a recipe, and counting them as such overstates the
     data-quality problem."""
     rows = tmc.triage_parsed([_rec(
