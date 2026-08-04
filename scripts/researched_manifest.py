@@ -40,6 +40,9 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_MANIFEST = REPO_ROOT / "data" / "import_tracking" / "researched_media.json"
 DEFAULT_RESEARCH_DIR = REPO_ROOT / "research" / "media"
+# Axis classification writes to its own directory so its reports cannot claim the
+# `<slug>-edison-literature.md` filenames growth research keys its skip on.
+AXIS_RESEARCH_DIR = REPO_ROOT / "research" / "media_axis"
 
 _DESCRIPTION = (
     "Media records with a completed (non-dry-run) Edison deep-research run. "
@@ -49,8 +52,20 @@ _DESCRIPTION = (
 )
 
 
-def _entry_key(entry: dict[str, Any]) -> tuple[str, str]:
-    return (str(entry.get("slug") or ""), str(entry.get("job") or ""))
+def _entry_key(entry: dict[str, Any]) -> tuple[str, str, str]:
+    """Identity of a run, for dedup and stable sort.
+
+    `kind` is part of the key because growth research and axis classification run
+    under the SAME job ("literature") on the same slug. Keyed on (slug, job) alone
+    they collide, and since `merge_entries` unions by key, whichever ran first
+    would permanently mask the other — a real growth run silently dropped as a
+    duplicate of an axis run.
+
+    Entries written before `kind` existed default to "medium", matching
+    `researched_slugs()`, so legacy rows keep their identity and do not re-add.
+    """
+    return (str(entry.get("slug") or ""), str(entry.get("job") or ""),
+            str(entry.get("kind") or "medium"))
 
 
 def load_manifest(path: Path = DEFAULT_MANIFEST) -> list[dict[str, Any]]:
@@ -91,6 +106,19 @@ def researched_slugs(path: Path = DEFAULT_MANIFEST) -> set[str]:
     }
 
 
+AXIS_TEMPLATE_STEM = "media_axis_classification"
+
+
+def _is_axis_run(meta: dict[str, Any]) -> bool:
+    """True iff this meta came from the axis-classification template.
+
+    Keyed on the template rather than the output directory: the directory is a
+    caller-supplied argument, so a run written elsewhere would be misclassified,
+    while `template_path` is stamped into the meta by the runner itself.
+    """
+    return AXIS_TEMPLATE_STEM in str(meta.get("template_path") or "")
+
+
 def scan_research_dir(research_dir: Path = DEFAULT_RESEARCH_DIR) -> list[dict[str, Any]]:
     """Read local `*-edison-*-meta.yaml` files into manifest entries.
 
@@ -129,6 +157,20 @@ def scan_research_dir(research_dir: Path = DEFAULT_RESEARCH_DIR) -> list[dict[st
         if "-organism-" in slug:
             entry["kind"] = "organism"
             entry["media_slug"] = slug.split("-organism-", 1)[0]
+        elif _is_axis_run(meta):
+            # Axis classification (#152) asks which nutritional_class / functional_role
+            # a medium has. It runs under the SAME job ("literature") as growth
+            # research and produces the same `<slug>-edison-literature-meta.yaml`
+            # filename, so job and filename cannot tell them apart — only the
+            # template can.
+            #
+            # This distinction is load-bearing, not cosmetic. `researched_slugs()`
+            # feeds the deep-research prioritizer's already-researched filter, so
+            # tagging these "medium" would drop every axis-classified record out of
+            # the growth-research queue — silently, since a smaller candidate list
+            # looks like progress. Same failure the separate out-dir prevents one
+            # layer down.
+            entry["kind"] = "axis"
         else:
             entry["kind"] = "medium"
         found.append(entry)

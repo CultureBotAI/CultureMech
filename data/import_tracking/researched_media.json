@@ -2,6 +2,18 @@
   "description": "Media records with a completed (non-dry-run) Edison deep-research run. Tracked so that deep_research_priority*.json are reproducible from git alone (see issue #121). Refresh with `just refresh-researched-manifest`; entries are merged, never dropped, so multiple machines can contribute.",
   "entries": [
     {
+      "slug": "JCM_J1425_SPOROMUSA_MEDIUM_2",
+      "job": "literature",
+      "task_id": "ad65fc0f-ff36-4321-8d32-3a9ba32673b3",
+      "kind": "axis"
+    },
+    {
+      "slug": "KOMODO_221_AZOSPIRILLUM_medium",
+      "job": "literature",
+      "task_id": "fbdb863d-312d-4357-9df5-a07c44dd8621",
+      "kind": "axis"
+    },
+    {
       "slug": "TOGO_M1620_Leuconostoc_oenos_Medium",
       "job": "literature",
       "task_id": "8d102d3a-72bc-4310-ad6d-8ebc51a33574",
@@ -78,6 +90,36 @@
       "kind": "medium"
     },
     {
+      "slug": "TOGO_M1875_Thermus_medium",
+      "job": "literature",
+      "task_id": "77bcc09e-dfa3-47c1-b5cb-cb410c98d108",
+      "kind": "axis"
+    },
+    {
+      "slug": "TOGO_M2297_Acidithiobacillus_ferrooxidans_Medium",
+      "job": "literature",
+      "task_id": "8d573b07-e5b5-45f0-8f99-cb331f42a2be",
+      "kind": "axis"
+    },
+    {
+      "slug": "TOGO_M923_Dethiosulfovibrio_Belb1_Medium",
+      "job": "literature",
+      "task_id": "608e71bf-01dd-4f17-b70e-5897b71ebb79",
+      "kind": "axis"
+    },
+    {
+      "slug": "allen_medium",
+      "job": "literature",
+      "task_id": "a5e618eb-304b-4971-b14d-5374e5266609",
+      "kind": "axis"
+    },
+    {
+      "slug": "anaerobic_sulfolobales_medium",
+      "job": "literature",
+      "task_id": "5730f28d-21d4-4c93-8e2e-e5eab6d76314",
+      "kind": "axis"
+    },
+    {
       "slug": "archaeoglobus_medium_dsm_399",
       "job": "literature",
       "task_id": "b62d20b4-56f6-439b-aacc-4b24ae41ee10",
@@ -131,6 +173,18 @@
       "media_slug": "beijerinckia_medium_lmg_18"
     },
     {
+      "slug": "brain_heart_infusion_agar_containing_7_horse_blood_and_0_4_isovitalex",
+      "job": "literature",
+      "task_id": "aec1ca62-d931-4ad0-a63a-18b21f448aca",
+      "kind": "axis"
+    },
+    {
+      "slug": "brain_heart_infusion_bhi_broth_containing_c_difficile_supplement_and_0_04_cysteine",
+      "job": "literature",
+      "task_id": "ffda4aec-965d-499d-a741-b49f8f1afc0f",
+      "kind": "axis"
+    },
+    {
       "slug": "caldicellulosiruptor_medium_for_dsm_10319",
       "job": "literature",
       "task_id": "6b70021e-a69d-4ec6-a2b9-0617e8210180",
@@ -171,6 +225,48 @@
       "media_slug": "chopped_meat_medium_atcc_1490_with_formate_and_fumarate_atcc_9733"
     },
     {
+      "slug": "chthonomonas_medium",
+      "job": "literature",
+      "task_id": "56ee703e-04ae-4485-a75f-1812dbac6959",
+      "kind": "axis"
+    },
+    {
+      "slug": "desulfobulbus_sp_medium_freshwater_for_dsm_14880",
+      "job": "literature",
+      "task_id": "1b450442-33f2-4200-b0f6-049923a8d767",
+      "kind": "axis"
+    },
+    {
+      "slug": "desulfoglaeba_medium",
+      "job": "literature",
+      "task_id": "cf14a7f7-76ef-41c1-929f-03f0c6256258",
+      "kind": "axis"
+    },
+    {
+      "slug": "for_arhodomonas",
+      "job": "literature",
+      "task_id": "9f2f9903-04da-4b30-9189-b3a9ddb0428e",
+      "kind": "axis"
+    },
+    {
+      "slug": "for_dsm_17771",
+      "job": "literature",
+      "task_id": "bb0e6b2e-3804-42ca-a0f8-573b8b981a8a",
+      "kind": "axis"
+    },
+    {
+      "slug": "frey_broth",
+      "job": "literature",
+      "task_id": "e6274512-dcb0-45c4-9656-2d361b13856f",
+      "kind": "axis"
+    },
+    {
+      "slug": "gemmatimonas_medium",
+      "job": "literature",
+      "task_id": "26804135-0d18-4ce3-91ef-89f3a327c6dd",
+      "kind": "axis"
+    },
+    {
       "slug": "ignicoccus_medium_for_dsm_18386",
       "job": "literature",
       "task_id": "69f6f5e4-5667-4bbe-9141-785dd7561e0e",
@@ -198,6 +294,12 @@
       "media_slug": "ignicoccus_medium_for_dsm_18386"
     },
     {
+      "slug": "lb_rifampicin_medium",
+      "job": "literature",
+      "task_id": "c089d7f2-96c1-4e63-ab85-1c1bcd8c2cd8",
+      "kind": "axis"
+    },
+    {
       "slug": "medium_for_co_culture_of_strain_jt_with_methanospirillum_hungatei_nbrc_100397",
       "job": "literature",
       "task_id": "2008b204-5b8f-41bd-9523-acfa060c7689",
@@ -222,6 +324,30 @@
       "job": "literature",
       "task_id": "427ad7fa-79e5-405f-96ab-6cd47e1ff792",
       "kind": "medium"
+    },
+    {
+      "slug": "methanobacterium_medium_ii",
+      "job": "literature",
+      "task_id": "68474bdc-4d16-4c4a-acf5-50472ca8839d",
+      "kind": "axis"
+    },
+    {
+      "slug": "nutrient_agar_broth",
+      "job": "literature",
+      "task_id": "08b4fc8c-e69e-41a5-bc46-299365ed0c94",
+      "kind": "axis"
+    },
+    {
+      "slug": "rc_medium",
+      "job": "literature",
+      "task_id": "e2ba5e77-5f54-400c-9b65-580a8c402aeb",
+      "kind": "axis"
+    },
+    {
+      "slug": "sd0_medium",
+      "job": "literature",
+      "task_id": "28a41a6e-8f6b-439d-b395-0cac4264221e",
+      "kind": "axis"
     },
     {
       "slug": "sulfolobus_medium_anaerobic_for_dsm_2162",
@@ -346,10 +472,34 @@
       "media_slug": "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3"
     },
     {
+      "slug": "tryptic_soy_agar_containing_2_5_nacl",
+      "job": "literature",
+      "task_id": "113c5097-76c0-4773-8281-78295c416935",
+      "kind": "axis"
+    },
+    {
+      "slug": "tryptic_soy_agar_tsa_carl_roth_gmbh_co",
+      "job": "literature",
+      "task_id": "b5ec290d-ea3c-4fec-8974-e565e1cdbbd8",
+      "kind": "axis"
+    },
+    {
+      "slug": "v2_medium",
+      "job": "literature",
+      "task_id": "c75d8395-f313-4f7d-92bc-f7d1f5853369",
+      "kind": "axis"
+    },
+    {
       "slug": "wilkins_chalgren_anaerobe_broth_n2_co2_for_dsm_15567",
       "job": "literature",
       "task_id": "a66b292a-8a02-4991-88c3-74ce1a248373",
       "kind": "medium"
+    },
+    {
+      "slug": "yeast_extract_malt_extract_agar_isp_2_with_5_nacl",
+      "job": "literature",
+      "task_id": "c79bf577-2531-4dbc-88a3-cf4997dea03c",
+      "kind": "axis"
     }
   ]
 }

@@ -73,6 +73,29 @@ research-media-edison target *args="":
 # Records with a completed run for the same job are skipped, so `--limit 5`
 # advances 5 FRESH records per invocation rather than re-billing the first
 # five. Pass `--force` to re-submit them anyway.
+# Draw a stratified sample of media for Edison axis classification (#152), across
+# SEMI_DEFINED / deep-research-ranked / well-known / other. Seeded, so a rerun
+# researches the same records rather than a new set. Writes:
+#   data/import_tracking/reports/axis_research_batch.json
+[group('Research')]
+sample-axis-research-batch *args="":
+    uv run --extra dev python scripts/sample_axis_research_batch.py {{args}}
+
+# Edison axis classification (#152) — nutritional_class / functional_role.
+#
+# Deliberately a SEPARATE recipe with a SEPARATE out-dir, not a --template flag on
+# research-media-edison-batch. Both templates run under job LITERATURE and the
+# output filename is <slug>-edison-literature.md, so writing axis reports into
+# research/media/ would make a later growth-research run on those slugs skip
+# itself as "already researched" — a silent no-op, not an error.
+[group('Research')]
+research-media-edison-axis batch *args="":
+    uv run --extra dev python scripts/research_media_edison.py \
+      --batch {{batch}} \
+      --template {{templates_dir}}/media_axis_classification.md \
+      --out-dir {{research_dir}}/media_axis \
+      {{args}}
+
 [group('Research')]
 research-media-edison-batch batch *args="":
     uv run --extra dev python scripts/research_media_edison.py \
