@@ -34,12 +34,16 @@ def main(argv: list[str] | None = None) -> int:
                     help="Tracked manifest to update.")
     ap.add_argument("--research-dir", type=Path, default=rmf.DEFAULT_RESEARCH_DIR,
                     help="Local (gitignored) Edison output directory to scan.")
+    ap.add_argument("--axis-research-dir", type=Path, default=rmf.AXIS_RESEARCH_DIR,
+                    help="Axis-classification output dir, also scanned. Its entries are\n"
+                         "tagged kind=axis and excluded from the medium-level filter.")
     ap.add_argument("--dry-run", action="store_true",
                     help="Report what would be added without writing.")
     args = ap.parse_args(argv)
 
     existing = rmf.load_manifest(args.manifest)
-    discovered = rmf.scan_research_dir(args.research_dir)
+    discovered = (rmf.scan_research_dir(args.research_dir)
+                  + rmf.scan_research_dir(args.axis_research_dir))
     merged, added = rmf.merge_entries(existing, discovered)
 
     print(f"Manifest:     {args.manifest}")

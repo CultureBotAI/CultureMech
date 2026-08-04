@@ -183,3 +183,70 @@ def test_prioritizer_output_does_not_depend_on_local_research_dir(tmp_path, monk
 
     assert [e["recipe_name"] for e in first] == [e["recipe_name"] for e in second]
     assert "tyl_medium" not in {e["recipe_name"] for e in first}
+
+
+# --- axis classification vs growth research (#152) -------------------------
+#
+# Both run under job "literature" on the same slug and write the same
+# `<slug>-edison-literature-meta.yaml` filename, so only the template
+# distinguishes them. These pin that they stay distinct, because every failure
+# mode here is silent: a shorter candidate list looks like progress.
+
+
+def _meta(tmp_path, slug, template, task_id="t1"):
+    d = tmp_path
+    d.mkdir(parents=True, exist_ok=True)
+    (d / f"{slug}-edison-literature-meta.yaml").write_text(
+        f"slug: {slug}\nstatus: success\ntask_id: {task_id}\ntemplate_path: {template}\n")
+    return d
+
+
+def test_axis_runs_are_tagged_axis_not_medium(tmp_path):
+    rmf = _load("researched_manifest")
+    d = _meta(tmp_path / "media_axis", "lb_broth", "templates/media_axis_classification.md")
+    entries = rmf.scan_research_dir(d)
+    assert [e["kind"] for e in entries] == ["axis"]
+
+
+def test_growth_runs_are_still_tagged_medium(tmp_path):
+    rmf = _load("researched_manifest")
+    d = _meta(tmp_path / "media", "lb_broth", "templates/media_growth_research.md")
+    assert [e["kind"] for e in rmf.scan_research_dir(d)] == ["medium"]
+
+
+def test_axis_run_does_not_mark_a_medium_researched(tmp_path):
+    """The load-bearing one: researched_slugs() feeds the prioritizer's
+    already-researched filter, so tagging axis runs "medium" would drop every
+    axis-classified record out of the growth-research queue."""
+    rmf = _load("researched_manifest")
+    d = _meta(tmp_path / "media_axis", "lb_broth", "templates/media_axis_classification.md")
+    manifest = tmp_path / "m.json"
+    rmf.write_manifest(rmf.scan_research_dir(d), manifest)
+    assert rmf.researched_slugs(manifest) == set(), \
+        "an axis run must not count as the medium having been researched"
+
+
+def test_axis_and_growth_runs_for_one_slug_coexist(tmp_path):
+    """Keyed on (slug, job) alone these collide and the union drops one."""
+    rmf = _load("researched_manifest")
+    axis = rmf.scan_research_dir(
+        _meta(tmp_path / "media_axis", "lb_broth", "templates/media_axis_classification.md", "a1"))
+    growth = rmf.scan_research_dir(
+        _meta(tmp_path / "media", "lb_broth", "templates/media_growth_research.md", "g1"))
+    merged, added = rmf.merge_entries(axis, growth)
+    assert len(merged) == 2, f"growth run masked by the axis run: {merged}"
+    assert {e["kind"] for e in merged} == {"axis", "medium"}
+    assert len(added) == 1
+
+    manifest = tmp_path / "m.json"
+    rmf.write_manifest(merged, manifest)
+    assert rmf.researched_slugs(manifest) == {"lb_broth"}
+
+
+def test_legacy_entries_without_kind_do_not_re_add(tmp_path):
+    """_entry_key gained a third element; legacy rows must keep their identity."""
+    rmf = _load("researched_manifest")
+    legacy = [{"slug": "lb_broth", "job": "literature", "task_id": "old"}]
+    same = [{"slug": "lb_broth", "job": "literature", "task_id": "old", "kind": "medium"}]
+    merged, added = rmf.merge_entries(legacy, same)
+    assert added == [] and len(merged) == 1
