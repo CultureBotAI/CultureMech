@@ -134,11 +134,42 @@ def test_solution_records_are_skipped(aud):
     assert rows == []
 
 
-def test_corpus_count_matches_the_documented_baseline(aud):
+def test_corpus_count_matches_the_documented_baseline(aud, corpus):
     """The gate's --max-allowed is set from this number; if it drifts, one of them
-    is wrong."""
-    rows = aud.collect()
+    is wrong.
+
+    Uses the session-scoped `corpus` fixture rather than `aud.collect()`. Calling
+    collect() re-parsed all ~15,900 records for this one test, costing 118s and
+    making it the fifth full-corpus scan in the suite — enough to push the pytest
+    job past the 40-minute CI ceiling (#189).
+    """
+    normalized = REPO_ROOT / "data" / "normalized_yaml"
+    rows = aud.audit_parsed([(str(p.relative_to(normalized)), d) for p, d in corpus])
     assert len(rows) <= 17, (
         f"{len(rows)} records now mismatch, above the documented baseline of 17. "
         "Either a new defect landed or the agent list grew — update both the gate "
         "and #181.")
+
+
+# --- #188: the concentration must belong to ITS agent ----------------------
+
+
+def test_a_second_agents_concentration_is_not_stolen(aud):
+    """A +/-40 character window reached back across the comma and reported
+    `ampicillin=50 ug/ml` for a name that plainly says 100 — the #166 failure
+    inside the tool written to prevent it."""
+    rows = aud.audit_parsed([_rec("LB + 50 ug/ml Kanamycin, 100 ug/ml Ampicillin medium", [])])
+    assert rows[0]["named_conc"] == "ampicillin=100 ug/ml; kanamycin=50 ug/ml"
+
+
+def test_only_the_agent_that_has_a_concentration_gets_one(aud):
+    rows = aud.audit_parsed([_rec("LB + Ampicillin, 100 ug/ml Kanamycin medium", [])])
+    assert rows[0]["named_conc"] == "kanamycin=100 ug/ml"
+
+
+def test_the_unit_slash_does_not_split_a_segment(aud):
+    """Units are written "ug/ml". An early fix treated "/" as a segment separator,
+    which turned every concentration into "50 ug" + "ml" and silently emptied the
+    column — a regression that looked exactly like "no data available"."""
+    rows = aud.audit_parsed([_rec("LB + 50 ug/ml Kanamycin medium", [])])
+    assert rows[0]["named_conc"] == "kanamycin=50 ug/ml"

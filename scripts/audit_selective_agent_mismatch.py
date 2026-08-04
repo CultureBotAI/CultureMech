@@ -96,6 +96,13 @@ SELECTIVE_AGENTS: list[tuple[str, str]] = [
     ("thallous acetate", r"thallous"),
 ]
 
+# Name separators. A concentration belongs to the agent in ITS OWN segment; the
+# comma in "50 ug/ml Kanamycin, 100 ug/ml Ampicillin" is what keeps the two apart.
+#
+# "/" is NOT a separator: units are written "ug/ml", so splitting on it turns
+# every concentration into "50 ug" + "ml" and the column silently empties.
+_SEGMENT = re.compile(r"\s*(?:[,;+]|\band\b)\s*", re.I)
+
 # An either/or formulation: the record holds one alternative, not both.
 _EITHER_OR = re.compile(r"\bor\b", re.I)
 
@@ -108,18 +115,26 @@ def _compiled() -> list[tuple[str, re.Pattern[str]]]:
 
 
 def named_concentration(name: str, agent_rx: re.Pattern[str]) -> str:
-    """A concentration adjacent to the agent in the NAME, if the source kept one.
+    """A concentration attached to THIS agent in the NAME, if the source kept one.
 
     "LB + 50 ug/ml Kanamycin medium" is the useful case: the value survived in the
     name even though it never reached `ingredients`, so it is recoverable from
     tracked data rather than invented.
+
+    Scoped to the name SEGMENT holding the agent, not a character window. A window
+    reaches across separators and picks up the neighbouring agent's value —
+    "LB + 50 ug/ml Kanamycin, 100 ug/ml Ampicillin" yielded `ampicillin=50 ug/ml`
+    (#188). That is the #166 failure inside the very tool meant to prevent it: a
+    plausible, confident, wrong concentration presented as recovered fact.
+
+    Returns "" when the segment carries no concentration. Silence is the correct
+    answer; a guess is not.
     """
-    m = agent_rx.search(name)
-    if not m:
-        return ""
-    window = name[max(0, m.start() - 40): m.end() + 40]
-    found = re.search(_CONC, window, re.I)
-    return found.group(0) if found else ""
+    for segment in _SEGMENT.split(name):
+        if agent_rx.search(segment):
+            found = re.search(_CONC, segment, re.I)
+            return found.group(0) if found else ""
+    return ""
 
 
 def audit_parsed(records: list[tuple[str, dict[str, Any]]]) -> list[dict[str, str]]:
