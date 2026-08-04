@@ -1,0 +1,26 @@
+file_path	record_id	verdict	n_recovered	detail	trailing_note
+bacterial/NBRC_1063.yaml	CultureMech:007453	HOLD: parse does not round-trip	0	reassembly differs from the source; the split is ambiguous (e.g. 'Tween 800.3g' — is 80 a grade or part of the value?)	Tris-HCl buffer.
+bacterial/NBRC_1135.yaml	CultureMech:007458	PROPOSED	4	4 ingredients parsed	*Manufactured by Asahi Breweries, Ltd., Tokyo, Japan. Distributed by Tanabe Seiyaku Co. Ltd., Osaka, Japan.
+bacterial/NBRC_1158.yaml	CultureMech:007459	PROPOSED	4	4 ingredients parsed	
+bacterial/NBRC_116.yaml	CultureMech:007460	PROPOSED	8	8 ingredients parsed	
+bacterial/NBRC_1197.yaml	CultureMech:007463	HOLD: possible truncated formula	15	KH2PO, Na2HPO4·7H2O, MgSO4·7H2O, FeSO4·7H2O, MgO, CaCO, ZnSO4·7H2O, MnSO4·4H2O, CuSO4·5H2O, CoSO4·7H2O, H3BO — a trailing subscript may have been absorbed into the value; both splits round-trip	*Vanillic acid and syringic acid etc.
+bacterial/NBRC_1210.yaml	CultureMech:007464	HOLD: possible truncated formula	9	K2HPO, MgSO4·7H2O — a trailing subscript may have been absorbed into the value; both splits round-trip	Distilled water1LpH 7.2+/-0.2
+bacterial/NBRC_1287.yaml	CultureMech:007469	PROPOSED	4	4 ingredients parsed	Agar15gpH 7.0Biphenyl crystal is supplied on a lid of petri dish as vapor phase.
+bacterial/NBRC_1379.yaml	CultureMech:007475	HOLD: implausible value	5	Sucrose 500g	
+bacterial/NBRC_14.yaml	CultureMech:007476	PROPOSED	3	3 ingredients parsed	Agar15gpH 8.2*Dilute artificial seawater or natural seawater with distilled water.
+bacterial/NBRC_1401.yaml	CultureMech:007477	HOLD: parse does not round-trip	0	reassembly differs from the source; the split is ambiguous (e.g. 'Tween 800.3g' — is 80 a grade or part of the value?)	Agar (if needed)15gpH 5.6
+bacterial/NBRC_229.yaml	CultureMech:007479	PROPOSED	5	5 ingredients parsed	Agar20gpH 7.3
+bacterial/NBRC_245.yaml	CultureMech:007480	PROPOSED	5	5 ingredients parsed	Agar (if needed)20gpH 7.6
+bacterial/NBRC_26.yaml	CultureMech:007482	PROPOSED	5	5 ingredients parsed	
+bacterial/NBRC_280.yaml	CultureMech:007484	PROPOSED	4	4 ingredients parsed	Agar20gpH 7.0
+bacterial/NBRC_310.yaml	CultureMech:007486	HOLD: possible truncated formula	9	K2HPO, KH2PO, MgSO4·7H2O, CaCl2·2H2O, FeSO4·7H2O — a trailing subscript may have been absorbed into the value; both splits round-trip	Distilled water1LpH 7.0
+bacterial/NBRC_355.yaml	CultureMech:007489	HOLD: possible truncated formula	5	MgSO4·7H2O — a trailing subscript may have been absorbed into the value; both splits round-trip	Distilled water1LpH 7.0*Wako Pure Chemical Ind., Ltd., Osaka, Japan.**Sterilize separately by filtration.
+bacterial/NBRC_367.yaml	CultureMech:007490	HOLD: parse does not round-trip	0	reassembly differs from the source; the split is ambiguous (e.g. 'Tween 800.3g' — is 80 a grade or part of the value?)	Agar (if needed)15gpH 5.5
+bacterial/NBRC_382.yaml	CultureMech:007491	PROPOSED	5	5 ingredients parsed	Distilled water1LpH 7.0
+bacterial/NBRC_404.yaml	CultureMech:007493	HOLD: possible truncated formula	9	K2HPO, KH2PO, MgSO4·7H2O, CaCO — a trailing subscript may have been absorbed into the value; both splits round-trip	Distilled water1LpH 6.7±0.2
+bacterial/NBRC_804.yaml	CultureMech:007494	HOLD: parse does not round-trip	0	reassembly differs from the source; the split is ambiguous (e.g. 'Tween 800.3g' — is 80 a grade or part of the value?)	Agar (if needed)15gpH 6.5 - 6.8*Wako Pure Chemical Ind., Ltd., Osaka, Japan.
+bacterial/NBRC_869.yaml	CultureMech:007500	PROPOSED	4	4 ingredients parsed	Distilled water200mlpH 7.6*Filtered, aged seawater or artificial seawater (Daigo's Artificial Seawater SP**)**Wako Pure 
+bacterial/NBRC_892.yaml	CultureMech:007502	PROPOSED	4	4 ingredients parsed	Distilled water1LpH 7.1-7.5
+bacterial/NBRC_915.yaml	CultureMech:007504	HOLD: possible truncated formula	9	K2HPO, MgSO4·7H2O, FeSO4·7H2O — a trailing subscript may have been absorbed into the value; both splits round-trip	
+bacterial/NBRC_948.yaml	CultureMech:007507	PROPOSED	3	3 ingredients parsed	Distilled water1LpH unadjusted*Sterilize separately by filtration.
+bacterial/NBRC_960.yaml	CultureMech:007508	PROPOSED	5	5 ingredients parsed	
