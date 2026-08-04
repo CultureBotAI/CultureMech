@@ -144,6 +144,15 @@ prioritize-deep-research-candidates *args="":
 score-review-need *args="":
     uv run --extra dev python scripts/score_review_need.py {{args}}
 
+# Turn the 25 NBRC records whose composition was crammed into one ingredient name
+# into a structured worklist (#166). REPORT ONLY — it never writes, because a parse
+# can round-trip and still be wrong: "KH2PO40.85g" splits equally well into
+# KH2PO4+0.85g and KH2PO+40.85g. Writes:
+#   data/import_tracking/reports/unparsed_compositions.tsv
+[group('QC')]
+report-unparsed-compositions *args="":
+    uv run --extra dev python scripts/report_unparsed_compositions.py {{args}}
+
 # Find records whose composition_type contradicts their own ingredient list (#158):
 # `DEFINED` asserted while listing yeast extract, peptone, tryptone etc. Reports by
 # default; `--apply` restamps only records carrying >= 5 g/L of undefined material,
