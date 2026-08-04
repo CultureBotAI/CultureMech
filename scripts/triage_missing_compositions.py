@@ -19,7 +19,7 @@ defect.
   327  KOMODO ModelSEED, no ingredients and no solutions
   101  a single placeholder ingredient ("See source for composition")
 
-**162 of the 428 are named like a stock solution rather than a medium** —
+**202 of the 428 are named like a stock solution rather than a medium** —
 "Trace element solution (medium 929)", "Solution C, medium 1275",
 "10 x M9 salts". These are not media missing a composition; they are solutions
 imported as media records. `record_kinds.is_solution_record()` does not catch them
@@ -79,10 +79,19 @@ PLACEHOLDER = re.compile(
     r"see\s+source|refer\s+to|not\s+specified|composition\s+not\s+available|"
     r"contact\s+source|proprietary", re.I)
 
-# "Trace element solution (medium 929)", "Solution C, medium 1275", "10 x M9 salts"
+# "Trace element solution (medium 929)", "Solution C, medium 1275", "10 x M9 salts",
+# "Phosphate buffer (10x) (medium 1341)".
+#
+# Matches the word "solution" directly rather than enumerating the reagents that
+# may precede it. An earlier version listed trace element / vitamin / mineral /
+# salts and missed 34 records — "Amino acid solution", "Haemin solution",
+# "Chelated iron solution", "Na-sesquicarbonate solution" (#194). The reagent list
+# was never going to be completable; the word "solution" is the signal.
+# `mixture` and the SL-nn / SL8 series are the same thing under another word:
+# "Vitamin mixture (medium 1001)", "Trace elements SL-12".
 SOLUTION_NAMED = re.compile(
-    r"\b(?:trace\s+(?:element|salts|metal)s?|vitamin|mineral|selenite|tungstate|"
-    r"salts?)\b.*\bsolution\b|\bsolution\s+[A-Z]\b|^\d+\s*x\s+|\bstock\b", re.I)
+    r"\bsolutions?\b|\bbuffer\b|\bstock\b|\bmixture\b|\bSL-?\d+\b|"
+    r"^\s*\d+\s*x\b|\(\s*\d+\s*x\s*\)", re.I)
 NAME_CITES_MEDIUM = re.compile(r"\bmedium\s+(\d+)\b", re.I)
 
 

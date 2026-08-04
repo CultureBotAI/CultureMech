@@ -64,7 +64,7 @@ def test_a_real_composition_is_not_reported(tmc):
 
 
 def test_solution_named_records_are_flagged_as_mis_typed(tmc):
-    """162 of the 428 are stock solutions imported as media. They
+    """202 of the 428 are stock solutions imported as media. They
     are not media missing a recipe, and counting them as such overstates the
     data-quality problem."""
     rows = tmc.triage_parsed([_rec(
@@ -104,3 +104,23 @@ def test_corpus_baseline(tmc, corpus):
     assert len(rows) <= 428, (
         f"{len(rows)} records lack a composition, above the documented baseline of "
         "428 — a new import dropped one, or the detector widened.")
+
+
+def test_the_solution_classifier_does_not_enumerate_reagents(tmc):
+    """#194: requiring a known word before "solution" missed 34 records —
+    "Amino acid solution", "Haemin solution", "Na-sesquicarbonate solution". The
+    reagent list was never completable; the word "solution" is the signal."""
+    for name in ("Amino acid solution (medium 78)", "Haemin solution (medium 104)",
+                 "Chelated iron solution (medium 737)", "LIP-solution (medium 391)",
+                 "Na-sesquicarbonate solution (medium 31)",
+                 "Phosphate buffer (10x) (medium 1341)",
+                 "Vitamin mixture (medium 1001)", "Trace elements SL-12"):
+        rows = tmc.triage_parsed([_rec(original_name=name, ingredients=[], solutions=[])], set())
+        assert rows and rows[0]["looks_like_a_solution"] == "yes", name
+
+
+def test_a_real_medium_name_is_not_called_a_solution(tmc):
+    for name in ("DESULFOBACTERIUM ANILINI MEDIUM", "Fastidious Anaerobe Agar",
+                 "NEOMYCIN AGAR", "Nutrient broth"):
+        rows = tmc.triage_parsed([_rec(original_name=name, ingredients=[], solutions=[])], set())
+        assert rows and not rows[0]["looks_like_a_solution"], name
