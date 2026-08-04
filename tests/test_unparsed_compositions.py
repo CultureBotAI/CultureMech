@@ -127,16 +127,17 @@ def test_the_tool_cannot_write(ruc):
     assert "path.write_text" not in src, "the reporter has regained a write path"
 
 
-def test_every_crammed_record_gets_a_verdict(ruc):
-    """25 opaque records become a structured worklist, each with a reason."""
-    import yaml
-    from record_kinds import is_solution_record
+def test_every_crammed_record_gets_a_verdict(ruc, media_records):
+    """25 opaque records become a structured worklist, each with a reason.
 
+    Uses the session-scoped `media_records` fixture rather than walking the corpus
+    again: this test cost 102s on its own, and five such scans were enough to
+    cancel the pytest job at the 40-minute CI ceiling with every test passing
+    (#189). The fixture also already excludes stock solutions, which this test was
+    re-implementing.
+    """
     seen = 0
-    for path in (REPO_ROOT / "data" / "normalized_yaml").rglob("*.yaml"):
-        doc = yaml.safe_load(path.read_text(errors="replace"))
-        if not isinstance(doc, dict) or is_solution_record(doc):
-            continue
+    for path, doc in media_records:
         verdict = ruc.assess(doc)
         if verdict:
             seen += 1
