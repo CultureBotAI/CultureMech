@@ -124,3 +124,37 @@ def test_a_real_medium_name_is_not_called_a_solution(tmc):
                  "NEOMYCIN AGAR", "Nutrient broth"):
         rows = tmc.triage_parsed([_rec(original_name=name, ingredients=[], solutions=[])], set())
         assert rows and not rows[0]["looks_like_a_solution"], name
+
+
+# --- #196: the report must not depend on untracked local state --------------
+
+
+def test_the_report_does_not_read_the_gitignored_dump(tmc):
+    """`data/raw/**/*.json` is gitignored, so a report that lists that directory is
+    a function of whoever last ran it: this column gave 217 hits on one machine and
+    0 in a fresh worktree of the same commit.
+
+    That is #121's defect — a tracked report scanning an untracked tree, producing
+    diffs indistinguishable from real change. Review missed it because the baseline
+    test asserts the row COUNT, which is identical either way; the machine
+    dependence lived entirely in a column no test read.
+    """
+    import inspect
+    src = inspect.getsource(tmc._mediadive_ids)
+    assert "MEDIADIVE_INDEX" in src, "_mediadive_ids must read the TRACKED index"
+    assert "listdir" not in src and "glob" not in src, (
+        "_mediadive_ids scans a directory again; it must read the tracked index")
+
+
+def test_the_tracked_index_exists_and_is_populated(tmc):
+    ids = tmc._mediadive_ids()
+    assert len(ids) > 1000, f"tracked mediadive index looks empty: {len(ids)} ids"
+    assert all(i.isdigit() for i in ids)
+
+
+def test_refreshing_the_index_is_the_only_step_that_reads_untracked_state(tmc):
+    """The one crossing from untracked to tracked, matching the #121 pattern:
+    an explicit refresh producing a reviewable diff."""
+    import inspect
+    assert "listdir" in inspect.getsource(tmc._scan_untracked_dump)
+    assert "--refresh-mediadive-index" in inspect.getsource(tmc.main)
