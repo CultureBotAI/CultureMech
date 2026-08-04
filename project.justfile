@@ -81,6 +81,21 @@ research-media-edison target *args="":
 sample-axis-research-batch *args="":
     uv run --extra dev python scripts/sample_axis_research_batch.py {{args}}
 
+# Edison axis classification (#152) — nutritional_class / functional_role.
+#
+# Deliberately a SEPARATE recipe with a SEPARATE out-dir, not a --template flag on
+# research-media-edison-batch. Both templates run under job LITERATURE and the
+# output filename is <slug>-edison-literature.md, so writing axis reports into
+# research/media/ would make a later growth-research run on those slugs skip
+# itself as "already researched" — a silent no-op, not an error.
+[group('Research')]
+research-media-edison-axis batch *args="":
+    uv run --extra dev python scripts/research_media_edison.py \
+      --batch {{batch}} \
+      --template {{templates_dir}}/media_axis_classification.md \
+      --out-dir {{research_dir}}/media_axis \
+      {{args}}
+
 [group('Research')]
 research-media-edison-batch batch *args="":
     uv run --extra dev python scripts/research_media_edison.py \

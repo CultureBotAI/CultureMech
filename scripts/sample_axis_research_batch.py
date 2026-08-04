@@ -33,7 +33,8 @@ set.
 Usage::
 
     just sample-axis-research-batch --size 200
-    just research-media-edison-batch data/import_tracking/reports/axis_research_batch.json --limit 1 --dry-run
+    just research-media-edison-batch data/import_tracking/reports/axis_research_batch.json \\
+        --limit 25 --dry-run
 """
 
 from __future__ import annotations
@@ -146,11 +147,11 @@ def main(argv: list[str] | None = None) -> int:
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(batch, indent=2) + "\n")
-    print(f"\nDrew {len(batch)} records (seed {args.seed}) -> "
-          f"{args.out.relative_to(REPO) if args.out.is_relative_to(REPO) else args.out}")
+    rel = args.out.relative_to(REPO) if args.out.is_relative_to(REPO) else args.out
+    print(f"\nDrew {len(batch)} records (seed {args.seed}) -> {rel}")
     print("\nCanary the BATCH path before running it — --target and --batch are\n"
           "different code paths, and only the batch one resolves by slug:\n"
-          f"  just research-media-edison-batch {args.out.name} --limit 1 --dry-run")
+          f"  just research-media-edison-batch {rel} --limit 1 --dry-run")
     return 0
 
 
