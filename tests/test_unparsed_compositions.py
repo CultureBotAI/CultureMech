@@ -165,3 +165,51 @@ def test_the_docstring_does_not_advertise_commands_that_do_not_exist(ruc):
     src = inspect.getsource(ruc)
     for flag in set(re.findall(r"(--[a-z][a-z-]+)", doc)):
         assert f'"{flag}"' in src, f"docstring documents {flag}, which the CLI does not define"
+
+
+# --- #192: PROPOSED must mean the whole composition was extracted -----------
+
+
+def _crammed(text):
+    return {"id": "CultureMech:1", "name": "x",
+            "ingredients": [{"preferred_term": text}, {}]}
+
+
+def test_an_ingredient_left_in_the_tail_downgrades_to_hold(ruc):
+    """Tokenising stops at the last quantity before a `pH` marker, sweeping the
+    final ingredient into the tail. That hit 9 of 14 PROPOSED records, and the
+    dropped ingredient was usually agar — solid vs liquid medium — or distilled
+    water, the basis the rest of the recipe is relative to.
+
+    PROPOSED reads as "safe to apply", so an incomplete parse must not carry it.
+    """
+    v = ruc.assess(_crammed("Tryptone5gYeast extract3gNaCl10gAgar15gpH 7.0"))
+    assert v["verdict"].startswith("HOLD"), v
+    assert "tail" in v["verdict"]
+
+
+def test_round_trip_alone_does_not_earn_proposed(ruc):
+    """`items + tail == text` holds however much is left in the tail, so round-trip
+    proves the parse invented nothing — not that it extracted everything. The #166
+    lesson in a second place."""
+    # >40 chars, or is_crammed() declines to look at it at all.
+    text = "Tryptone5gYeast extract3gNaCl10gAgar15gpH 7.0"
+    items, tail = ruc.parse_composition(text)
+    assert ruc.round_trips(text, items, tail), "precondition: this parse round-trips"
+    assert ruc.assess(_crammed(text))["verdict"].startswith("HOLD")
+
+
+def test_a_footnote_tail_without_a_quantity_stays_proposed(ruc):
+    """Only a QUANTITY in the tail means a lost ingredient. NBRC_1135's tail is
+    '*Manufactured by Asahi Breweries...' — a note, not a composition."""
+    v = ruc.assess(_crammed(
+        "Tryptone5gYeast extract3gNaCl10g*Manufactured by Asahi Breweries, Ltd."))
+    assert v["verdict"] == "PROPOSED", v
+
+
+def test_the_tail_check_does_not_rely_on_a_word_boundary(ruc):
+    """The tail reads "Agar15gpH": no word boundary between the "g" and the "p",
+    so a `\\b` pattern matches nothing and reports the defect does not exist. That
+    measured "0 of 14" before it was spotted."""
+    assert ruc.TAIL_HAS_INGREDIENT.search("Agar15gpH 8.2"), \
+        "the tail check regressed to a \\b pattern and now sees nothing"

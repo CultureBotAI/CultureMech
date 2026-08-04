@@ -18,7 +18,7 @@ splitting on numbers is unsafe. The split anchors on a `<number><unit>` pair who
 unit is followed by an uppercase letter, a bracket, whitespace, or end-of-string,
 which is where the next ingredient name begins.
 
-## Three checks — and they are why this tool does not write
+## Four checks — and they are why this tool does not write
 
 **Round trip.** Reassembling `name + value + unit` for every parsed item, plus the
 unconsumed tail, must reproduce the original string EXACTLY. If it does, the parse
@@ -42,6 +42,16 @@ The flag is a formula-shaped name ending in an uppercase letter. It cannot be us
 to auto-CORRECT, only to refuse, because it also matches `MgO`, which is a real
 compound. That asymmetry is the whole argument: the ambiguity is chemical, and
 resolving it needs the NBRC catalogue rather than a heuristic.
+
+**Complete extraction.** Round trip proves the parse invented nothing; it does not
+prove it extracted everything, since `items + tail == text` holds however much is
+left over. Tokenising stops at the last quantity before a `pH` marker, so the final
+ingredient is swept into the tail with it — 9 of 14 records that would otherwise
+read PROPOSED, and the lost ingredient was usually agar (solid vs liquid medium) or
+distilled water (the basis the recipe is relative to). A tail still holding a
+quantity is held back (#192).
+
+Current split: 5 PROPOSED, 20 HOLD.
 
 So this tool REPORTS and never writes. It turns 25 opaque records into a
 structured worklist — proposed parse, trailing note, and the specific reason each
@@ -91,6 +101,13 @@ UNIT_TO_ENUM = {"g": "G_PER_L", "mg": "MG_PER_L", "ml": "ML_PER_L",
 # So a volume basis is kept as an ingredient without a concentration, and recorded
 # in notes instead.
 VOLUME_BASIS_UNITS = {"l", "L", "kg"}
+
+# A quantity still sitting in the unconsumed tail means an ingredient was not
+# extracted (#192). Reuses `_QTY_UNIT` — which uses a LOOKAHEAD, not `\b`,
+# because the tail reads "Agar15gpH 8.2": there is no word boundary between the
+# "g" and the "p", so a `\b` pattern matches nothing and reports the problem
+# does not exist. Measured "0 of 14" that way before spotting it.
+TAIL_HAS_INGREDIENT = re.compile(_QTY_UNIT, re.I)
 
 # A non-water solid above this is almost certainly a bad split, not a recipe.
 IMPLAUSIBLE_G_PER_L = 100.0
@@ -160,6 +177,20 @@ def assess(doc: dict[str, Any]) -> dict[str, Any] | None:
         return {"verdict": "HOLD: possible truncated formula", "items": items, "tail": tail,
                 "detail": f"{', '.join(truncated)} — a trailing subscript may have been "
                           f"absorbed into the value; both splits round-trip"}
+    # Round-trip proves the parse INVENTED nothing. It does not prove the parse
+    # EXTRACTED everything: `items + tail == text` holds however much is left in
+    # the tail. Tokenising stops at the last quantity before a `pH` marker, because
+    # "pH 7.0" is not a quantity — so the final ingredient is swept into the tail
+    # with it. That was 9 of 14 PROPOSED records, and the dropped ingredient was
+    # usually agar (solid vs liquid medium) or distilled water (the solvent basis
+    # the rest of the recipe is relative to) — see #192.
+    #
+    # PROPOSED reads as "safe to apply", so an incomplete parse must not carry it.
+    if TAIL_HAS_INGREDIENT.search(tail):
+        return {"verdict": "HOLD: ingredient remains in the tail", "items": items,
+                "tail": tail,
+                "detail": f"{len(items)} parsed, but the tail still holds a "
+                          f"quantity: {tail[:60]!r}"}
     return {"verdict": "PROPOSED", "items": items, "tail": tail,
             "detail": f"{len(items)} ingredients parsed"}
 
