@@ -149,6 +149,13 @@ audit-filename-collisions *args="":
 # blocks NEW implausible concentrations without demanding the backlog be cleared
 # first, the same convention as `check-chebi-grounding`. LOWER the baseline as
 # records are repaired; raising it to make a run pass defeats the point.
+# Report media named for a selective agent their ingredient list omits (#181).
+# Report-only: recovering a lost concentration needs the upstream record, and a
+# plausible guess that round-trips is still false chemistry (#166).
+[group('QC')]
+audit-selective-agent-mismatch *args="":
+    uv run --extra dev python scripts/audit_selective_agent_mismatch.py {{args}}
+
 [group('QC')]
 audit-concentration-plausibility *args="":
     uv run --extra dev python scripts/audit_concentration_plausibility.py \

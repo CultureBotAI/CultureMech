@@ -1,0 +1,18 @@
+file_path	record_id	name	missing_agents	named_conc	n_ingredients
+bacterial/KOMODO_309_NEOMYCIN_AGAR.yaml	CultureMech:004886	NEOMYCIN AGAR	neomycin		5
+bacterial/am3_nalidixic_acid_kanamycin_medium.yaml	CultureMech:008611	AM3 + Nalidixic acid, Kanamycin medium	kanamycin; nalidixic acid		9
+bacterial/am3_nalidixic_acid_medium.yaml	CultureMech:008610	AM3 + Nalidixic acid medium	nalidixic acid		9
+bacterial/lb_50_ug_ml_kanamycin_medium.yaml	CultureMech:008689	LB + 50 ug/ml Kanamycin medium	kanamycin	kanamycin=50 ug/ml	5
+bacterial/lb_ampicilin_hygromycin_medium.yaml	CultureMech:008514	LB + Ampicilin, Hygromycin medium	ampicillin; hygromycin		5
+bacterial/lb_ampicillin_cefpodoxime_kanamycin_medium.yaml	CultureMech:008599	LB + Ampicillin, Cefpodoxime, Kanamycin medium	ampicillin; cefpodoxime; kanamycin		5
+bacterial/lb_ampicillin_kanamycin_medium.yaml	CultureMech:008641	LB + Ampicillin, Kanamycin medium	ampicillin; kanamycin		5
+bacterial/lb_ampicillin_medium.yaml	CultureMech:008244	LB + Ampicillin medium	ampicillin		5
+bacterial/lb_chloramphenicol_medium.yaml	CultureMech:008474	LB + Chloramphenicol medium	chloramphenicol		5
+bacterial/lb_kanamycin_hygromycin_medium.yaml	CultureMech:008513	LB + Kanamycin, Hygromycin medium	hygromycin; kanamycin		5
+bacterial/lb_kanamycin_medium.yaml	CultureMech:008515	LB + Kanamycin medium	kanamycin		5
+bacterial/lb_nalidixic_acid_ciprofloxacin_medium.yaml	CultureMech:008600	LB + Nalidixic acid, Ciprofloxacin medium	ciprofloxacin; nalidixic acid		5
+bacterial/lb_rifampicin_medium.yaml	CultureMech:008553	LB + Rifampicin medium	rifampicin		5
+bacterial/lb_streptomycin_medium.yaml	CultureMech:008552	LB + Streptomycin medium	streptomycin		5
+bacterial/lb_streptomycin_rifampicin_medium.yaml	CultureMech:008554	LB + Streptomycin, Rifampicin medium	rifampicin; streptomycin		5
+bacterial/neomycin_agar.yaml	CultureMech:001407	NEOMYCIN AGAR	neomycin		5
+bacterial/pda_hygromycin_medium.yaml	CultureMech:008534	PDA +Hygromycin medium	hygromycin		4
