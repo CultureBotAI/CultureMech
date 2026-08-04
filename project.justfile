@@ -184,6 +184,13 @@ audit-filename-collisions *args="":
 # Report media named for a selective agent their ingredient list omits (#181).
 # Report-only: recovering a lost concentration needs the upstream record, and a
 # plausible guess that round-trips is still false chemistry (#166).
+# Triage the media that carry no usable composition (#175). Report-only: the
+# obvious repair — resolving "X solution (medium N)" to medium N's composition —
+# would write a whole medium's recipe into a solution record. See the docstring.
+[group('QC')]
+triage-missing-compositions *args="":
+    uv run --extra dev python scripts/triage_missing_compositions.py {{args}}
+
 [group('QC')]
 audit-selective-agent-mismatch *args="":
     uv run --extra dev python scripts/audit_selective_agent_mismatch.py {{args}}
