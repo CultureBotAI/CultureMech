@@ -33,7 +33,7 @@ set.
 Usage::
 
     just sample-axis-research-batch --size 200
-    just research-media-edison-batch data/import_tracking/reports/axis_research_batch.json \\
+    just research-media-edison-axis data/import_tracking/reports/axis_research_batch.json \\
         --limit 25 --dry-run
 """
 
@@ -96,6 +96,39 @@ def assign_strata(records, ranking_paths: set[str], normalized: Path
     return strata
 
 
+def allocate(size: int, capacity: dict[str, int]) -> dict[str, int]:
+    """Split `size` across strata as evenly as their capacity allows.
+
+    Flooring `size // n_strata` is not enough, and neither is handing the
+    remainder to the biggest pools. Strata are genuinely uneven — DEEP_RESEARCH
+    holds only 99 records against OTHER's 9,730 — so once a small stratum is
+    exhausted its unused quota has to go somewhere, or the batch comes back short
+    while reporting success (#185).
+
+    Fills in rounds: each round shares what is still needed among the strata that
+    still have room, so a stratum that runs out donates its remainder to the ones
+    that can absorb it. Returns exactly `size` unless the whole corpus is smaller.
+    """
+    quota = dict.fromkeys(capacity, 0)
+    remaining = min(size, sum(capacity.values()))
+    while remaining > 0:
+        open_strata = [n for n in capacity if quota[n] < capacity[n]]
+        if not open_strata:
+            break
+        # Largest-capacity first, so the leftover single records land in the pools
+        # deep enough to absorb them without skewing their character.
+        share, extra = divmod(remaining, len(open_strata))
+        order = sorted(open_strata, key=lambda n: -capacity[n])
+        if share == 0:  # fewer records left than open strata
+            share, extra = 0, remaining
+        for i, name in enumerate(order):
+            want = share + (1 if i < extra else 0)
+            take = min(want, capacity[name] - quota[name])
+            quota[name] += take
+            remaining -= take
+    return quota
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -116,14 +149,11 @@ def main(argv: list[str] | None = None) -> int:
     strata = assign_strata(records, ranking_paths, args.normalized_dir)
 
     rng = random.Random(args.seed)
-    per = args.size // len(strata)
+    quota = allocate(args.size, {k: len(v) for k, v in strata.items()})
     drawn: dict[str, list[dict[str, Any]]] = {}
     print(f"{'stratum':16s} {'available':>10s} {'drawn':>7s}")
     for name, pool in strata.items():
-        take = min(per, len(pool))
-        if take < per:
-            print(f"  NOTE: {name} has only {len(pool)}; drawing all of them",
-                  file=sys.stderr)
+        take = min(quota[name], len(pool))
         drawn[name] = [{
             "recipe_name": path.stem,
             "file_path": str(path.relative_to(args.normalized_dir)),
@@ -148,10 +178,16 @@ def main(argv: list[str] | None = None) -> int:
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(batch, indent=2) + "\n")
     rel = args.out.relative_to(REPO) if args.out.is_relative_to(REPO) else args.out
+    # `allocate` already caps each stratum at its capacity, so a shortfall can
+    # only mean the corpus itself is smaller than --size. Say so rather than
+    # returning a short batch that reads as full coverage.
+    if len(batch) < args.size:
+        print(f"  NOTE: corpus holds only {len(batch)} eligible records; "
+              f"--size {args.size} was capped", file=sys.stderr)
     print(f"\nDrew {len(batch)} records (seed {args.seed}) -> {rel}")
     print("\nCanary the BATCH path before running it — --target and --batch are\n"
           "different code paths, and only the batch one resolves by slug:\n"
-          f"  just research-media-edison-batch {rel} --limit 1 --dry-run")
+          f"  just research-media-edison-axis {rel} --limit 25 --dry-run")
     return 0
 
 
