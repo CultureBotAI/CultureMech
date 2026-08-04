@@ -1,0 +1,429 @@
+file_path	record_id	name	kind	source	looks_like_a_solution	name_cites_medium	cited_medium_in_local_dump
+archaea/KOMODO_131_METHANOBACTERIUM_THERMOAUTOTROPHICUM_MEDIUM.yaml	CultureMech:004074	METHANOBACTERIUM THERMOAUTOTROPHICUM MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+archaea/KOMODO_304_METHANOSARCINA_ACETIVORANS_medium.yaml	CultureMech:004832	METHANOSARCINA ACETIVORANS medium	no ingredients and no solutions	KOMODO ModelSEED			
+archaea/KOMODO_510_STYGIOLOBUS_medium.yaml	CultureMech:005712	STYGIOLOBUS medium	no ingredients and no solutions	KOMODO ModelSEED			
+archaea/aeropyrum_jxt_medium.yaml	CultureMech:006547	AEROPYRUM-JXT medium	no ingredients and no solutions	KOMODO ModelSEED			
+archaea/metallosphaera_medium.yaml	CultureMech:005608	METALLOSPHAERA medium	no ingredients and no solutions	KOMODO ModelSEED			
+archaea/methanocorpusculum_medium.yaml	CultureMech:004706	METHANOCORPUSCULUM medium	no ingredients and no solutions	KOMODO ModelSEED			
+archaea/methanogenium_sp_medium.yaml	CultureMech:005910	METHANOGENIUM SP. medium	no ingredients and no solutions	KOMODO ModelSEED			
+archaea/methanolobus_ii_medium.yaml	CultureMech:005015	METHANOLOBUS II medium	no ingredients and no solutions	KOMODO ModelSEED			
+archaea/methanosarcina_acetivorans_medium_replace_trimethylamine_hcl_with_methanol.yaml	CultureMech:004821	METHANOSARCINA ACETIVORANS medium_replace_Trimethylamine-HCl_with_Methanol	no ingredients and no solutions	KOMODO ModelSEED			
+archaea/methanosarcina_frisia_medium.yaml	CultureMech:005072	METHANOSARCINA FRISIA medium	no ingredients and no solutions	KOMODO ModelSEED			
+archaea/methanosarcina_thermophilic_medium.yaml	CultureMech:004191	METHANOSARCINA (thermophilic) medium	no ingredients and no solutions	KOMODO ModelSEED			
+archaea/methanosarcina_thermophilic_medium_replace_rumen_fluid_clarified_with_sludge_fluid_medium_119.yaml	CultureMech:004190	METHANOSARCINA (thermophilic) medium_replace_Rumen fluid, clarified_with_Sludge fluid (medium 119)	no ingredients and no solutions	KOMODO ModelSEED		119	yes
+archaea/thermophilic_methanosaeta_medium.yaml	CultureMech:005164	THERMOPHILIC METHANOSAETA MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/100x_vitamin_solution_medium_1398.yaml	CultureMech:004994	100x Vitamin solution (medium 1398)	no ingredients and no solutions	KOMODO ModelSEED	yes	1398	yes
+bacterial/10_x_m9_salts.yaml	CultureMech:004267	10 x M9 salts	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/4_times_concentrated_sea_water_medium_821.yaml	CultureMech:004993	4 times concentrated sea water (medium 821)	no ingredients and no solutions	KOMODO ModelSEED		821	yes
+bacterial/50_x_pye.yaml	CultureMech:006514	50 x PYE	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/50x_heterotrophic_basal_salts_solution_medium_1190.yaml	CultureMech:004779	50x Heterotrophic basal salts solution (medium 1190)	no ingredients and no solutions	KOMODO ModelSEED	yes	1190	yes
+bacterial/KOMODO_1254_NAUTILIA_NITRATIREDUCENS_MEDIUM.yaml	CultureMech:004015	NAUTILIA NITRATIREDUCENS MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/KOMODO_272_DESULFOVIBRIO_medium_choline.yaml	CultureMech:004700	DESULFOVIBRIO medium (choline)	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/KOMODO_3018_H3P-Vitamin_solution_medium_428.yaml	CultureMech:004797	H3P-Vitamin solution (medium 428)	no ingredients and no solutions	KOMODO ModelSEED	yes	428	yes
+bacterial/KOMODO_3071_Trace_element_solution_medium_155.yaml	CultureMech:004857	Trace element solution (medium 155)	no ingredients and no solutions	KOMODO ModelSEED	yes	155	yes
+bacterial/KOMODO_3077_Trace_element_solution_medium_84.yaml	CultureMech:004863	Trace element solution (medium 84)	no ingredients and no solutions	KOMODO ModelSEED	yes	84	yes
+bacterial/KOMODO_3087_Trace_element_solution_SL-8.yaml	CultureMech:004873	Trace element solution SL-8	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/KOMODO_3136_Fastidious_Anaerobe_Agar.yaml	CultureMech:004984	Fastidious Anaerobe Agar	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/KOMODO_7001_Trace_elements_medium_596.yaml	CultureMech:006327	Trace elements (medium 596)	no ingredients and no solutions	KOMODO ModelSEED		596	yes
+bacterial/KOMODO_787_ACETOBACTERIUM_DEHALOGENANS_medium.yaml	CultureMech:006488	ACETOBACTERIUM DEHALOGENANS medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/acetobacterium_2_medium.yaml	CultureMech:005062	ACETOBACTERIUM 2 medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/acetobacterium_carbinolicum_medium.yaml	CultureMech:004988	ACETOBACTERIUM CARBINOLICUM medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/acetobacterium_sp_komac1_medium.yaml	CultureMech:005592	ACETOBACTERIUM SP. KoMAc1 medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/acetonema_medium.yaml	CultureMech:005871	ACETONEMA medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/amino_acid_solution_medium_78.yaml	CultureMech:004780	Amino acid solution (medium 78)	no ingredients and no solutions	KOMODO ModelSEED	yes	78	yes
+bacterial/anaerobic_acetoin_medium.yaml	CultureMech:005020	ANAEROBIC ACETOIN medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/anaerobic_oxalate_medium.yaml	CultureMech:005624	ANAEROBIC OXALATE MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/anaerovibrio_burkinabensis_medium.yaml	CultureMech:006022	ANAEROVIBRIO BURKINABENSIS medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/artificial_sea_water_3_times_concentrated_medium_1137.yaml	CultureMech:004785	Artificial sea water, 3 times concentrated (medium 1137)	no ingredients and no solutions	KOMODO ModelSEED		1137	yes
+bacterial/artificial_sea_water_3_times_concentrated_medium_590.yaml	CultureMech:004389	Artificial sea water, 3 times concentrated (medium 590)	no ingredients and no solutions	KOMODO ModelSEED		590	yes
+bacterial/artificial_sea_water_from_a_marine_aquarium_salts_mixture.yaml	CultureMech:005655	Artificial sea water from a marine aquarium salts mixture	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/artificial_sea_water_medium_1075.yaml	CultureMech:004783	Artificial sea water (medium 1075)	no ingredients and no solutions	KOMODO ModelSEED		1075	yes
+bacterial/artificial_sea_water_medium_246.yaml	CultureMech:004996	Artificial sea water (medium 246)	no ingredients and no solutions	KOMODO ModelSEED		246	yes
+bacterial/artificial_sea_water_medium_343.yaml	CultureMech:004782	Artificial sea water (medium 343)	no ingredients and no solutions	KOMODO ModelSEED		343	yes
+bacterial/artificial_sea_water_medium_405.yaml	CultureMech:004784	Artificial sea water (medium 405)	no ingredients and no solutions	KOMODO ModelSEED		405	yes
+bacterial/artificial_sea_water_medium_600.yaml	CultureMech:004395	Artificial sea water (medium 600)	no ingredients and no solutions	KOMODO ModelSEED		600	yes
+bacterial/artificial_sea_water_medium_600a.yaml	CultureMech:004995	Artificial sea water (medium 600a)	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/artificial_sea_water_medium_607.yaml	CultureMech:004781	Artificial sea water (medium 607)	no ingredients and no solutions	KOMODO ModelSEED		607	yes
+bacterial/artificial_seawater_medium_1231.yaml	CultureMech:004786	Artificial seawater (medium 1231)	no ingredients and no solutions	KOMODO ModelSEED		1231	yes
+bacterial/artificial_seawater_medium_1326.yaml	CultureMech:004787	Artificial seawater (medium 1326)	no ingredients and no solutions	KOMODO ModelSEED		1326	yes
+bacterial/artificial_tap_water_medium_1167.yaml	CultureMech:004789	Artificial tap water (medium 1167)	no ingredients and no solutions	KOMODO ModelSEED		1167	yes
+bacterial/bacto_middelbrook_7h11_agar_medium_911.yaml	CultureMech:004790	Bacto Middelbrook 7H11 agar (medium 911)	no ingredients and no solutions	KOMODO ModelSEED		911	yes
+bacterial/bacto_middelbrook_oadc_enrichment_medium_911.yaml	CultureMech:004791	Bacto Middelbrook OADC enrichment (medium 911)	no ingredients and no solutions	KOMODO ModelSEED		911	yes
+bacterial/basal_salts_solution_medium_791.yaml	CultureMech:004792	Basal salts solution (medium 791)	no ingredients and no solutions	KOMODO ModelSEED	yes	791	yes
+bacterial/bbl_actinomyces_broth_medium_1029.yaml	CultureMech:004983	BBL Actinomyces broth (medium 1029)	no ingredients and no solutions	KOMODO ModelSEED		1029	yes
+bacterial/blood_agar_base_from_difco_0045.yaml	CultureMech:006515	Blood Agar Base from Difco 0045	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/blood_agar_no_2_oxoid.yaml	CultureMech:006086	blood agar No 2 (Oxoid)	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/bordet_gengou_agar_base.yaml	CultureMech:005645	Bordet-Gengou-Agar-Base	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/brucella_broth_becton_dickinson.yaml	CultureMech:005646	Brucella Broth (Becton Dickinson)	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/casman_agar_base.yaml	CultureMech:005647	Casman-Agar-Base	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/chelated_iron_solution_medium_737.yaml	CultureMech:004268	Chelated iron solution (medium 737)	no ingredients and no solutions	KOMODO ModelSEED	yes	737	yes
+bacterial/chelated_iron_solution_medium_748.yaml	CultureMech:004793	Chelated Iron solution (medium 748)	no ingredients and no solutions	KOMODO ModelSEED	yes	748	yes
+bacterial/clostridium_estertheticum_medium.yaml	CultureMech:006182	CLOSTRIDIUM ESTERTHETICUM medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/clostridium_longisporum_medium.yaml	CultureMech:006392	CLOSTRIDIUM LONGISPORUM medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/clostridium_neopropionicum_medium.yaml	CultureMech:005884	CLOSTRIDIUM NEOPROPIONICUM medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/cmrl_1066_medium_10x_concentrated_gibco.yaml	CultureMech:005648	CMRL-1066 medium (10x concentrated; GIBCO)	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/co_factors_solution_medium_843.yaml	CultureMech:006083	Co-factors solution (medium 843)	no ingredients and no solutions	KOMODO ModelSEED	yes	843	yes
+bacterial/columbia_agar_base.yaml	CultureMech:005649	Columbia agar base	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/corn_meal_agar_oxoid_cm103.yaml	CultureMech:005651	Corn meal Agar (Oxoid CM103)	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/czapek_dox_agar_merck.yaml	CultureMech:005643	Czapek Dox agar (Merck)	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfobacterium_anilini_medium.yaml	CultureMech:005590	DESULFOBACTERIUM ANILINI MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfococcus_medium.yaml	CultureMech:004258	DESULFOCOCCUS MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfococcus_niacini_medium.yaml	CultureMech:004752	DESULFOCOCCUS NIACINI MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfomicrobium_whb_medium.yaml	CultureMech:006367	DESULFOMICROBIUM WHB MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfotomaculum_geothermicum_medium.yaml	CultureMech:005226	DESULFOTOMACULUM GEOTHERMICUM MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfotomaculum_sp_medium_ii.yaml	CultureMech:006282	DESULFOTOMACULUM SP. MEDIUM II	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfovibrio_aespoeensis_medium.yaml	CultureMech:006364	DESULFOVIBRIO AESPOEENSIS MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfovibrio_alcoholovorans_medium.yaml	CultureMech:005613	DESULFOVIBRIO ALCOHOLOVORANS medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfovibrio_alcoholovorans_medium_replace_desulfovibrio_medium_with_desulfobulbus_medium.yaml	CultureMech:005612	DESULFOVIBRIO ALCOHOLOVORANS medium_replace_DESULFOVIBRIO medium_with_DESULFOBULBUS MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfovibrio_baarsii_medium.yaml	CultureMech:004368	DESULFOVIBRIO BAARSII MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfovibrio_carbinolicus_medium.yaml	CultureMech:005160	DESULFOVIBRIO CARBINOLICUS medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfovibrio_giganteus_medium.yaml	CultureMech:005196	DESULFOVIBRIO GIGANTEUS MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfovibrio_inopinatus_medium.yaml	CultureMech:006511	DESULFOVIBRIO INOPINATUS MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfovibrio_inopinatus_medium_replace_na_pyruvate_with_1_2_4_trihydroxybenzene.yaml	CultureMech:006510	DESULFOVIBRIO INOPINATUS MEDIUM_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfovibrio_sapovorans_medium.yaml	CultureMech:004260	DESULFOVIBRIO SAPOVORANS MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfovibrio_shv_medium.yaml	CultureMech:006368	DESULFOVIBRIO SHV MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/desulfovibrio_sp_medium.yaml	CultureMech:004276	DESULFOVIBRIO SP. MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/dmj_synthetic_seawater_medium_997.yaml	CultureMech:004270	DMJ synthetic seawater (medium 997)	no ingredients and no solutions	KOMODO ModelSEED		997	yes
+bacterial/dsm_4156_b_and_dsm_4156.yaml	CultureMech:005229	DSM 4156 B and DSM 4156	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/fatty_acid_mixture_medium_119.yaml	CultureMech:004794	Fatty acid mixture (medium 119)	no ingredients and no solutions	KOMODO ModelSEED	yes	119	yes
+bacterial/fatty_acid_mixture_medium_328.yaml	CultureMech:004795	Fatty acid mixture (medium 328)	no ingredients and no solutions	KOMODO ModelSEED	yes	328	yes
+bacterial/fatty_acid_mixture_medium_436.yaml	CultureMech:004796	Fatty acid mixture (medium 436)	no ingredients and no solutions	KOMODO ModelSEED	yes	436	yes
+bacterial/ferric_quinate_solution_medium_380.yaml	CultureMech:004272	Ferric Quinate Solution (medium 380)	no ingredients and no solutions	KOMODO ModelSEED	yes	380	yes
+bacterial/for_dsm_2805.yaml	CultureMech:004855	For DSM 2805	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/for_dsm_3246.yaml	CultureMech:005056	For DSM 3246	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/for_dsm_3247.yaml	CultureMech:005055	For DSM 3247	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/for_s_buswellii_dsm_2612m.yaml	CultureMech:006276	For S. buswellii DSM 2612M	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/for_s_wolinii_dsm_2805m.yaml	CultureMech:006277	For S. wolinii DSM 2805M	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/glutarate_medium.yaml	CultureMech:006014	GLUTARATE medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/h3p_vitamin_solution_medium_428.yaml	CultureMech:004397	H3P-vitamin solution (medium 428)	no ingredients and no solutions	KOMODO ModelSEED	yes	428	yes
+bacterial/haemin_solution_medium_104.yaml	CultureMech:004798	Haemin solution (medium 104)	no ingredients and no solutions	KOMODO ModelSEED	yes	104	yes
+bacterial/hanks_balanced_salt_solution_bss_medium_1078.yaml	CultureMech:004800	Hank's balanced salt solution (BSS, medium 1078)	no ingredients and no solutions	KOMODO ModelSEED	yes	1078	yes
+bacterial/heavy_metal_solution_medium_867.yaml	CultureMech:004273	Heavy metal solution (medium 867)	no ingredients and no solutions	KOMODO ModelSEED	yes	867	yes
+bacterial/ilyobacter_tartaricus_medium.yaml	CultureMech:004761	ILYOBACTER TARTARICUS MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/inorganic_salt_solution_medium_754.yaml	CultureMech:004801	Inorganic salt solution (medium 754)	no ingredients and no solutions	KOMODO ModelSEED	yes	754	yes
+bacterial/isovitalex.yaml	CultureMech:005642	Isovitalex	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/lip_solution_medium_391.yaml	CultureMech:004802	LIP-solution (medium 391)	no ingredients and no solutions	KOMODO ModelSEED	yes	391	yes
+bacterial/mab1_medium.yaml	CultureMech:006272	mAB1-MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/marine_medium_synthetic_seawater_mix_medium_611.yaml	CultureMech:004803	Marine-Medium/Synthetic seawater-mix (medium 611)	no ingredients and no solutions	KOMODO ModelSEED		611	yes
+bacterial/marine_trace_elements_medium_511.yaml	CultureMech:004274	Marine trace elements (medium 511)	no ingredients and no solutions	KOMODO ModelSEED		511	yes
+bacterial/medium_131_modified_for_dsm_6216.yaml	CultureMech:004066	MEDIUM 131 MODIFIED FOR DSM 6216	no ingredients and no solutions	KOMODO ModelSEED		131	
+bacterial/medium_777_modified_for_dsm_14980.yaml	CultureMech:006434	MEDIUM 777 MODIFIED FOR DSM 14980	no ingredients and no solutions	KOMODO ModelSEED		777	
+bacterial/medium_820_modified_for_dsm_16960.yaml	CultureMech:006546	MEDIUM 820 MODIFIED FOR DSM 16960	no ingredients and no solutions	KOMODO ModelSEED		820	
+bacterial/medium_md1_medium_9.yaml	CultureMech:004986	medium MD1 (medium 9)	no ingredients and no solutions	KOMODO ModelSEED		9	yes
+bacterial/metals_44_medium_590.yaml	CultureMech:004393	Metals 44 (medium 590)	no ingredients and no solutions	KOMODO ModelSEED		590	yes
+bacterial/micronutrient_solution_sl8_medium_1128.yaml	CultureMech:004804	Micronutrient solution SL8 (medium 1128)	no ingredients and no solutions	KOMODO ModelSEED	yes	1128	yes
+bacterial/middlebrook_7h10_agar.yaml	CultureMech:004805	Middlebrook 7H10 agar	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/min_e_base_10x.yaml	CultureMech:004275	MIN E - Base (10x)	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/mineral_mix_medium_1001.yaml	CultureMech:004277	Mineral Mix (medium 1001)	no ingredients and no solutions	KOMODO ModelSEED		1001	yes
+bacterial/mineral_salt_solution_2xw_medium_391.yaml	CultureMech:004806	"Mineral salt solution ""2xW"" (medium 391)"	no ingredients and no solutions	KOMODO ModelSEED	yes	391	yes
+bacterial/mineral_salts_solution_for_liquid_medium_medium_1396.yaml	CultureMech:004987	Mineral salts solution for liquid medium (medium 1396)	no ingredients and no solutions	KOMODO ModelSEED	yes	1396	yes
+bacterial/mineral_salts_solution_for_solid_medium_medium_1396.yaml	CultureMech:004989	Mineral salts solution for solid medium (medium 1396)	no ingredients and no solutions	KOMODO ModelSEED	yes	1396	yes
+bacterial/mineral_solution_1_medium_165.yaml	CultureMech:004278	Mineral solution 1 (medium 165)	no ingredients and no solutions	KOMODO ModelSEED	yes	165	yes
+bacterial/mineral_solution_2_medium_1033.yaml	CultureMech:004815	Mineral solution 2 (medium 1033)	no ingredients and no solutions	KOMODO ModelSEED	yes	1033	yes
+bacterial/mineral_solution_2_medium_165.yaml	CultureMech:004279	Mineral solution 2 (medium 165)	no ingredients and no solutions	KOMODO ModelSEED	yes	165	yes
+bacterial/mineral_solution_2_medium_203.yaml	CultureMech:004997	Mineral solution 2 (medium 203)	no ingredients and no solutions	KOMODO ModelSEED	yes	203	yes
+bacterial/mineral_solution_2_medium_404.yaml	CultureMech:004816	Mineral solution 2 (medium 404)	no ingredients and no solutions	KOMODO ModelSEED	yes	404	yes
+bacterial/mineral_solution_2_medium_436.yaml	CultureMech:004817	Mineral solution 2 (medium 436)	no ingredients and no solutions	KOMODO ModelSEED	yes	436	yes
+bacterial/mineral_solution_a_medium_492.yaml	CultureMech:004280	Mineral solution A (medium 492)	no ingredients and no solutions	KOMODO ModelSEED	yes	492	yes
+bacterial/mineral_solution_b_medium_492.yaml	CultureMech:004281	Mineral solution B (medium 492)	no ingredients and no solutions	KOMODO ModelSEED	yes	492	yes
+bacterial/mineral_solution_c_medium_492.yaml	CultureMech:004282	Mineral solution C (medium 492)	no ingredients and no solutions	KOMODO ModelSEED	yes	492	yes
+bacterial/mineral_solution_medium_212.yaml	CultureMech:005195	Mineral solution (medium 212)	no ingredients and no solutions	KOMODO ModelSEED	yes	212	yes
+bacterial/mineral_solution_medium_317.yaml	CultureMech:004818	Mineral solution (medium 317)	no ingredients and no solutions	KOMODO ModelSEED	yes	317	yes
+bacterial/mineral_solution_medium_321.yaml	CultureMech:004810	Mineral solution (medium 321)	no ingredients and no solutions	KOMODO ModelSEED	yes	321	yes
+bacterial/mineral_solution_medium_328.yaml	CultureMech:004811	Mineral solution (medium 328)	no ingredients and no solutions	KOMODO ModelSEED	yes	328	yes
+bacterial/mineral_solution_medium_330.yaml	CultureMech:004812	Mineral solution (medium 330)	no ingredients and no solutions	KOMODO ModelSEED	yes	330	yes
+bacterial/mineral_solution_medium_335.yaml	CultureMech:004813	Mineral solution (medium 335)	no ingredients and no solutions	KOMODO ModelSEED	yes	335	yes
+bacterial/modified_hoagland_trace_element_solution_medium_867.yaml	CultureMech:004283	Modified hoagland trace element solution (medium 867)	no ingredients and no solutions	KOMODO ModelSEED	yes	867	yes
+bacterial/modified_mj_synthetic_sea_water_medium_1131.yaml	CultureMech:004284	Modified MJ synthetic sea water (medium 1131)	no ingredients and no solutions	KOMODO ModelSEED		1131	yes
+bacterial/mtp4_medium.yaml	CultureMech:006012	MTP4 MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/mueller_hinton_broth.yaml	CultureMech:005193	Mueller-Hinton broth	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/na_sesquicarbonate_solution_medium_31.yaml	CultureMech:004819	Na-sesquicarbonate solution (medium 31)	no ingredients and no solutions	KOMODO ModelSEED	yes	31	yes
+bacterial/nutrient_broth_difco.yaml	CultureMech:005652	Nutrient broth (Difco)	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/nutrient_broth_oxoid_medium_948.yaml	CultureMech:004822	Nutrient broth (Oxoid) (medium 948)	no ingredients and no solutions	KOMODO ModelSEED		948	yes
+bacterial/pelobacter_acetylenicus_medium.yaml	CultureMech:005057	PELOBACTER ACETYLENICUS MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/pelobacter_medium.yaml	CultureMech:005242	PELOBACTER medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/pelobacter_venetianus_fresh_water_medium.yaml	CultureMech:004774	PELOBACTER VENETIANUS (fresh water) MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/pelobacter_venetianus_marine_medium.yaml	CultureMech:004760	PELOBACTER VENETIANUS (marine) MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/pennassay_broth.yaml	CultureMech:005653	Pennassay Broth	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/phosphate_buffer_10x_medium_1341.yaml	CultureMech:004285	Phosphate buffer (10x) (medium 1341)	no ingredients and no solutions	KOMODO ModelSEED	yes	1341	yes
+bacterial/phosphate_buffer_medium_878.yaml	CultureMech:004823	Phosphate buffer (medium 878)	no ingredients and no solutions	KOMODO ModelSEED	yes	878	yes
+bacterial/phosphate_buffer_medium_921.yaml	CultureMech:004286	Phosphate buffer (medium 921)	no ingredients and no solutions	KOMODO ModelSEED	yes	921	yes
+bacterial/phosphate_buffer_ph_6_8_see_medium_1132.yaml	CultureMech:004287	Phosphate buffer (pH 6.8, see medium 1132)	no ingredients and no solutions	KOMODO ModelSEED	yes	1132	yes
+bacterial/phosphate_buffer_ph_7_2.yaml	CultureMech:004824	Phosphate buffer pH 7.2	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/phosphate_solution_medium_1191.yaml	CultureMech:004825	Phosphate solution (medium 1191)	no ingredients and no solutions	KOMODO ModelSEED	yes	1191	yes
+bacterial/phosphate_solution_medium_791.yaml	CultureMech:004826	Phosphate solution (medium 791)	no ingredients and no solutions	KOMODO ModelSEED	yes	791	yes
+bacterial/pplo_broth.yaml	CultureMech:005654	PPLO broth	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/propionigenium_maris_medium.yaml	CultureMech:006291	PROPIONIGENIUM MARIS medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/rumen_fluid_clarified.yaml	CultureMech:006085	Rumen fluid, clarified	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/sabouraud_2_glucose_bouillon_merck_108339.yaml	CultureMech:006517	SABOURAUD-2% Glucose-Bouillon (Merck 108339)	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/salt_base_solution_medium_88.yaml	CultureMech:005194	Salt base solution (medium 88)	no ingredients and no solutions	KOMODO ModelSEED	yes	88	yes
+bacterial/salt_concentrate_medium_517.yaml	CultureMech:004288	Salt concentrate (medium 517)	no ingredients and no solutions	KOMODO ModelSEED		517	yes
+bacterial/salt_solution_medium_104.yaml	CultureMech:004828	salt solution (medium 104)	no ingredients and no solutions	KOMODO ModelSEED	yes	104	yes
+bacterial/salt_solution_medium_1191.yaml	CultureMech:004829	salt solution (medium 1191)	no ingredients and no solutions	KOMODO ModelSEED	yes	1191	yes
+bacterial/salt_solution_medium_58.yaml	CultureMech:004830	salt solution (medium 58)	no ingredients and no solutions	KOMODO ModelSEED	yes	58	yes
+bacterial/salt_solution_medium_852.yaml	CultureMech:004831	salt solution (medium 852)	no ingredients and no solutions	KOMODO ModelSEED	yes	852	yes
+bacterial/salts_solution_medium_1139.yaml	CultureMech:004833	salts solution (medium 1139)	no ingredients and no solutions	KOMODO ModelSEED	yes	1139	yes
+bacterial/sb_sw_medium.yaml	CultureMech:006278	SB/SW MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/sea_water_salts_solution_medium_958.yaml	CultureMech:004834	Sea water salts solution (medium 958)	no ingredients and no solutions	KOMODO ModelSEED	yes	958	yes
+bacterial/selenite_tungstate_solution_medium_385.yaml	CultureMech:004289	Selenite/tungstate solution (medium 385)	no ingredients and no solutions	KOMODO ModelSEED	yes	385	yes
+bacterial/seven_vitamin_solution_medium_1332.yaml	CultureMech:004835	Seven Vitamin solution (medium 1332)	no ingredients and no solutions	KOMODO ModelSEED	yes	1332	yes
+bacterial/seven_vitamins_solution_medium_503.yaml	CultureMech:004290	Seven vitamins solution (medium 503)	no ingredients and no solutions	KOMODO ModelSEED	yes	503	yes
+bacterial/sludge_fluid_medium_119.yaml	CultureMech:004990	Sludge fluid (medium 119)	no ingredients and no solutions	KOMODO ModelSEED		119	yes
+bacterial/soil_extract_medium_98.yaml	CultureMech:004991	Soil extract (medium 98)	no ingredients and no solutions	KOMODO ModelSEED		98	yes
+bacterial/solution_1_10x_nms_salts_medium_921.yaml	CultureMech:004291	Solution 1 (10x NMS salts) (medium 921)	no ingredients and no solutions	KOMODO ModelSEED	yes	921	yes
+bacterial/solution_a_medium_1267.yaml	CultureMech:005221	Solution A (medium 1267)	no ingredients and no solutions	KOMODO ModelSEED	yes	1267	yes
+bacterial/solution_a_medium_1275.yaml	CultureMech:005222	Solution A, medium 1275	no ingredients and no solutions	KOMODO ModelSEED	yes	1275	yes
+bacterial/solution_a_medium_858.yaml	CultureMech:005220	Solution A (medium 858)	no ingredients and no solutions	KOMODO ModelSEED	yes	858	yes
+bacterial/solution_b_medium_1275.yaml	CultureMech:005223	Solution B, medium 1275	no ingredients and no solutions	KOMODO ModelSEED	yes	1275	yes
+bacterial/solution_b_medium_807.yaml	CultureMech:006084	Solution B (medium 807)	no ingredients and no solutions	KOMODO ModelSEED	yes	807	yes
+bacterial/solution_c_medium_1275.yaml	CultureMech:005224	Solution C, medium 1275	no ingredients and no solutions	KOMODO ModelSEED	yes	1275	yes
+bacterial/solution_ii_medium_1308.yaml	CultureMech:004836	solution II (medium 1308)	no ingredients and no solutions	KOMODO ModelSEED	yes	1308	yes
+bacterial/solution_ii_medium_1398.yaml	CultureMech:004837	solution II (medium 1398)	no ingredients and no solutions	KOMODO ModelSEED	yes	1398	yes
+bacterial/spirochaeta_aurantia_medium.yaml	CultureMech:004195	SPIROCHAETA AURANTIA medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/spirochaeta_isovalerica_medium.yaml	CultureMech:004701	SPIROCHAETA ISOVALERICA medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/sporomusa_silvacetica_medium.yaml	CultureMech:006435	SPOROMUSA SILVACETICA medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/sse_double_concentrated_medium_1426.yaml	CultureMech:004838	SSE (double concentrated) (medium 1426)	no ingredients and no solutions	KOMODO ModelSEED		1426	yes
+bacterial/stearate_solution_0_1_m_medium_517.yaml	CultureMech:004295	Stearate solution (0.1 M) (medium 517)	no ingredients and no solutions	KOMODO ModelSEED	yes	517	yes
+bacterial/stock_solution_from_medium_756.yaml	CultureMech:004387	Stock solution (from medium 756)	no ingredients and no solutions	KOMODO ModelSEED	yes	756	yes
+bacterial/stock_solution_medium_462.yaml	CultureMech:004398	Stock solution (medium 462)	no ingredients and no solutions	KOMODO ModelSEED	yes	462	yes
+bacterial/sugar_stock_solution_medium_1245.yaml	CultureMech:006082	Sugar Stock Solution (medium 1245)	no ingredients and no solutions	KOMODO ModelSEED	yes	1245	yes
+bacterial/synthetic_sea_water_medium_79.yaml	CultureMech:004839	Synthetic sea water (medium 79)	no ingredients and no solutions	KOMODO ModelSEED		79	yes
+bacterial/synthetic_seawater_2_x_conc_medium_795.yaml	CultureMech:004840	Synthetic seawater (2 x conc.) (medium 795)	no ingredients and no solutions	KOMODO ModelSEED		795	yes
+bacterial/syntrophobacter_wolinii_medium.yaml	CultureMech:004866	SYNTROPHOBACTER WOLINII medium	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/syntrophus_buswellii_ii_medium.yaml	CultureMech:005230	SYNTROPHUS BUSWELLII II MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/syntrophus_medium_sulfate_free.yaml	CultureMech:004742	SYNTROPHUS medium - SULFATE FREE	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/thermus_macronutrients_10x_solution.yaml	CultureMech:004841	Thermus macronutrients 10X solution	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/thermus_micronutrients_100x_solution.yaml	CultureMech:004842	Thermus micronutrients 100X solution	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/thiobacillus_ferrooxidans_medium_with_tetrathionate.yaml	CultureMech:006372	THIOBACILLUS FERROOXIDANS MEDIUM WITH TETRATHIONATE	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/thioglycolate_ascorbate_solution_medium_210.yaml	CultureMech:004844	Thioglycolate-ascorbate solution (medium 210)	no ingredients and no solutions	KOMODO ModelSEED	yes	210	yes
+bacterial/trace_element_solution_a_medium_537.yaml	CultureMech:004865	Trace element solution A (medium 537)	no ingredients and no solutions	KOMODO ModelSEED	yes	537	yes
+bacterial/trace_element_solution_b_medium_537.yaml	CultureMech:004867	Trace element solution B (medium 537)	no ingredients and no solutions	KOMODO ModelSEED	yes	537	yes
+bacterial/trace_element_solution_from_medium_756.yaml	CultureMech:004388	Trace element solution (from medium 756)	no ingredients and no solutions	KOMODO ModelSEED	yes	756	yes
+bacterial/trace_element_solution_ho_le_medium_668.yaml	CultureMech:004868	Trace element solution Ho-le (medium 668)	no ingredients and no solutions	KOMODO ModelSEED	yes	668	yes
+bacterial/trace_element_solution_medium_1007.yaml	CultureMech:004296	Trace element solution (medium 1007)	no ingredients and no solutions	KOMODO ModelSEED	yes	1007	yes
+bacterial/trace_element_solution_medium_1072.yaml	CultureMech:004847	Trace element solution (medium 1072)	no ingredients and no solutions	KOMODO ModelSEED	yes	1072	yes
+bacterial/trace_element_solution_medium_1149.yaml	CultureMech:004848	Trace element solution (medium 1149)	no ingredients and no solutions	KOMODO ModelSEED	yes	1149	yes
+bacterial/trace_element_solution_medium_1156.yaml	CultureMech:004302	Trace element solution (medium 1156)	no ingredients and no solutions	KOMODO ModelSEED	yes	1156	yes
+bacterial/trace_element_solution_medium_1165.yaml	CultureMech:004849	Trace element solution (medium 1165)	no ingredients and no solutions	KOMODO ModelSEED	yes	1165	yes
+bacterial/trace_element_solution_medium_1180.yaml	CultureMech:004303	Trace element solution (medium 1180)	no ingredients and no solutions	KOMODO ModelSEED	yes	1180	yes
+bacterial/trace_element_solution_medium_1181.yaml	CultureMech:004304	Trace element solution (medium 1181)	no ingredients and no solutions	KOMODO ModelSEED	yes	1181	yes
+bacterial/trace_element_solution_medium_1190.yaml	CultureMech:005000	Trace element solution (medium 1190)	no ingredients and no solutions	KOMODO ModelSEED	yes	1190	yes
+bacterial/trace_element_solution_medium_124.yaml	CultureMech:004850	Trace element solution (medium 124)	no ingredients and no solutions	KOMODO ModelSEED	yes	124	yes
+bacterial/trace_element_solution_medium_1282.yaml	CultureMech:004852	Trace element solution (medium 1282)	no ingredients and no solutions	KOMODO ModelSEED	yes	1282	yes
+bacterial/trace_element_solution_medium_131.yaml	CultureMech:004308	Trace element solution (medium 131)	no ingredients and no solutions	KOMODO ModelSEED	yes	131	
+bacterial/trace_element_solution_medium_1396.yaml	CultureMech:004853	Trace Element solution (medium 1396)	no ingredients and no solutions	KOMODO ModelSEED	yes	1396	yes
+bacterial/trace_element_solution_medium_1403.yaml	CultureMech:004309	Trace element solution (medium 1403)	no ingredients and no solutions	KOMODO ModelSEED	yes	1403	yes
+bacterial/trace_element_solution_medium_150a.yaml	CultureMech:004312	Trace element solution (medium 150a)	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/trace_element_solution_medium_155.yaml	CultureMech:004399	Trace element solution (medium 155)	no ingredients and no solutions	KOMODO ModelSEED	yes	155	yes
+bacterial/trace_element_solution_medium_158.yaml	CultureMech:004858	Trace element solution (medium 158)	no ingredients and no solutions	KOMODO ModelSEED	yes	158	yes
+bacterial/trace_element_solution_medium_333.yaml	CultureMech:004314	Trace element solution (medium 333)	no ingredients and no solutions	KOMODO ModelSEED	yes	333	yes
+bacterial/trace_element_solution_medium_463.yaml	CultureMech:004315	Trace element solution (medium 463)	no ingredients and no solutions	KOMODO ModelSEED	yes	463	yes
+bacterial/trace_element_solution_medium_463a.yaml	CultureMech:004316	Trace element solution (medium 463a)	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/trace_element_solution_medium_533.yaml	CultureMech:004317	Trace element solution (medium 533)	no ingredients and no solutions	KOMODO ModelSEED	yes	533	yes
+bacterial/trace_element_solution_medium_534.yaml	CultureMech:004318	Trace element solution (medium 534)	no ingredients and no solutions	KOMODO ModelSEED	yes	534	yes
+bacterial/trace_element_solution_medium_632.yaml	CultureMech:004320	Trace element solution (medium 632)	no ingredients and no solutions	KOMODO ModelSEED	yes	632	yes
+bacterial/trace_element_solution_medium_652.yaml	CultureMech:004860	Trace element solution (medium 652)	no ingredients and no solutions	KOMODO ModelSEED	yes	652	yes
+bacterial/trace_element_solution_medium_705.yaml	CultureMech:004862	Trace element solution (medium 705)	no ingredients and no solutions	KOMODO ModelSEED	yes	705	yes
+bacterial/trace_element_solution_medium_737.yaml	CultureMech:004323	Trace element solution (medium 737)	no ingredients and no solutions	KOMODO ModelSEED	yes	737	yes
+bacterial/trace_element_solution_medium_84.yaml	CultureMech:004401	Trace element solution (medium 84)	no ingredients and no solutions	KOMODO ModelSEED	yes	84	yes
+bacterial/trace_element_solution_medium_878.yaml	CultureMech:004864	Trace element solution (medium 878)	no ingredients and no solutions	KOMODO ModelSEED	yes	878	yes
+bacterial/trace_element_solution_medium_918.yaml	CultureMech:004326	Trace element solution (medium 918)	no ingredients and no solutions	KOMODO ModelSEED	yes	918	yes
+bacterial/trace_element_solution_medium_921.yaml	CultureMech:004327	Trace element solution (medium 921)	no ingredients and no solutions	KOMODO ModelSEED	yes	921	yes
+bacterial/trace_element_solution_medium_922.yaml	CultureMech:004328	Trace element solution (medium 922)	no ingredients and no solutions	KOMODO ModelSEED	yes	922	yes
+bacterial/trace_element_solution_medium_929.yaml	CultureMech:004330	Trace element solution (medium 929)	no ingredients and no solutions	KOMODO ModelSEED	yes	929	yes
+bacterial/trace_element_solution_medium_976.yaml	CultureMech:004332	Trace element solution (medium 976)	no ingredients and no solutions	KOMODO ModelSEED	yes	976	yes
+bacterial/trace_element_solution_medium_996.yaml	CultureMech:004334	Trace element solution (medium 996)	no ingredients and no solutions	KOMODO ModelSEED	yes	996	yes
+bacterial/trace_element_solution_sl12_medium_998.yaml	CultureMech:004870	Trace element solution SL12 (medium 998)	no ingredients and no solutions	KOMODO ModelSEED	yes	998	yes
+bacterial/trace_element_solution_sl7.yaml	CultureMech:004871	Trace element solution SL7	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/trace_element_solution_sl8_medium_1119.yaml	CultureMech:004874	Trace element solution SL8 (medium 1119)	no ingredients and no solutions	KOMODO ModelSEED	yes	1119	yes
+bacterial/trace_element_solution_sl_10_b.yaml	CultureMech:004337	Trace element solution SL-10 B	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/trace_element_solution_sl_10_medium_320.yaml	CultureMech:004336	Trace element solution SL-10 (medium 320)	no ingredients and no solutions	KOMODO ModelSEED	yes	320	yes
+bacterial/trace_element_solution_sl_11_medium_784.yaml	CultureMech:004869	Trace element solution SL-11 (medium 784)	no ingredients and no solutions	KOMODO ModelSEED	yes	784	yes
+bacterial/trace_element_solution_sl_12_b.yaml	CultureMech:004338	Trace element solution SL-12 B	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/trace_element_solution_sl_6_medium_457.yaml	CultureMech:004340	Trace element solution SL-6 (medium 457)	no ingredients and no solutions	KOMODO ModelSEED	yes	457	yes
+bacterial/trace_element_solution_sl_7_medium_660.yaml	CultureMech:004341	Trace element solution SL-7 (medium 660)	no ingredients and no solutions	KOMODO ModelSEED	yes	660	yes
+bacterial/trace_element_solution_sl_7_medium_941.yaml	CultureMech:004872	Trace element solution SL-7 (medium 941)	no ingredients and no solutions	KOMODO ModelSEED	yes	941	yes
+bacterial/trace_element_solution_sl_8.yaml	CultureMech:004342	Trace element solution SL-8	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/trace_element_solution_sl_9_medium_828.yaml	CultureMech:004343	Trace element solution SL-9 (medium 828)	no ingredients and no solutions	KOMODO ModelSEED	yes	828	yes
+bacterial/trace_element_solution_sla.yaml	CultureMech:004335	Trace element solution (SLA)	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/trace_elements_medium_1108a.yaml	CultureMech:006328	Trace elements (medium 1108a)	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/trace_elements_medium_1147.yaml	CultureMech:004875	Trace elements (medium 1147)	no ingredients and no solutions	KOMODO ModelSEED		1147	yes
+bacterial/trace_elements_medium_596.yaml	CultureMech:004877	Trace elements (medium 596)	no ingredients and no solutions	KOMODO ModelSEED		596	yes
+bacterial/trace_elements_medium_651.yaml	CultureMech:004878	Trace elements (medium 651)	no ingredients and no solutions	KOMODO ModelSEED		651	yes
+bacterial/trace_elements_pfennig_medium_1264.yaml	CultureMech:004879	Trace elements (Pfennig) (medium 1264)	no ingredients and no solutions	KOMODO ModelSEED		1264	yes
+bacterial/trace_elements_sl_12.yaml	CultureMech:004880	Trace elements SL-12	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/trace_elements_solution_medium_1280.yaml	CultureMech:004883	Trace elements solution (medium 1280)	no ingredients and no solutions	KOMODO ModelSEED	yes	1280	yes
+bacterial/trace_metals_500x_medium_1341.yaml	CultureMech:004347	Trace Metals (500x) (medium 1341)	no ingredients and no solutions	KOMODO ModelSEED	yes	1341	yes
+bacterial/trace_metals_solution_medium_802.yaml	CultureMech:004884	Trace metals solution (medium 802)	no ingredients and no solutions	KOMODO ModelSEED	yes	802	yes
+bacterial/trace_mineral_solution_medium_1000.yaml	CultureMech:004351	Trace mineral solution (medium 1000)	no ingredients and no solutions	KOMODO ModelSEED	yes	1000	yes
+bacterial/trace_mineral_solution_medium_1121.yaml	CultureMech:004353	Trace mineral solution (medium 1121)	no ingredients and no solutions	KOMODO ModelSEED	yes	1121	yes
+bacterial/trace_mineral_solution_medium_997.yaml	CultureMech:004355	Trace mineral solution (medium 997)	no ingredients and no solutions	KOMODO ModelSEED	yes	997	yes
+bacterial/trace_salt_solution_medium_609.yaml	CultureMech:005191	Trace salt solution (medium 609)	no ingredients and no solutions	KOMODO ModelSEED	yes	609	yes
+bacterial/trace_salt_solution_medium_856.yaml	CultureMech:004885	Trace salt solution (medium 856)	no ingredients and no solutions	KOMODO ModelSEED	yes	856	yes
+bacterial/trace_salts_solution_medium_978.yaml	CultureMech:004938	Trace salts solution (medium 978)	no ingredients and no solutions	KOMODO ModelSEED	yes	978	yes
+bacterial/true_blue_trace_elements_medium_748.yaml	CultureMech:004939	True Blue Trace Elements (medium 748)	no ingredients and no solutions	KOMODO ModelSEED		748	yes
+bacterial/tyc_solution_medium_391.yaml	CultureMech:004992	TYC-solution (medium 391)	no ingredients and no solutions	KOMODO ModelSEED	yes	391	yes
+bacterial/vitamin_b12_solution_medium_867.yaml	CultureMech:004356	Vitamin B12 solution (medium 867)	no ingredients and no solutions	KOMODO ModelSEED	yes	867	yes
+bacterial/vitamin_b_solution_medium_978.yaml	CultureMech:004940	Vitamin B solution (medium 978)	no ingredients and no solutions	KOMODO ModelSEED	yes	978	yes
+bacterial/vitamin_k1_solution_medium_104.yaml	CultureMech:004941	Vitamin K1 solution (medium 104)	no ingredients and no solutions	KOMODO ModelSEED	yes	104	yes
+bacterial/vitamin_mixture_medium_1001.yaml	CultureMech:004358	Vitamin mixture (medium 1001)	no ingredients and no solutions	KOMODO ModelSEED	yes	1001	yes
+bacterial/vitamin_mixture_medium_484.yaml	CultureMech:004359	Vitamin mixture (medium 484)	no ingredients and no solutions	KOMODO ModelSEED	yes	484	yes
+bacterial/vitamin_mixture_medium_619.yaml	CultureMech:004360	Vitamin mixture (medium 619)	no ingredients and no solutions	KOMODO ModelSEED	yes	619	yes
+bacterial/vitamin_solution_7_medium_842.yaml	CultureMech:004975	Vitamin solution 7 (medium 842)	no ingredients and no solutions	KOMODO ModelSEED	yes	842	yes
+bacterial/vitamin_solution_according_to_wolin_and_coauthors.yaml	CultureMech:004384	Vitamin solution according to Wolin and coauthors	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/vitamin_solution_b_medium_253.yaml	CultureMech:004942	Vitamin solution (B) (medium 253)	no ingredients and no solutions	KOMODO ModelSEED	yes	253	yes
+bacterial/vitamin_solution_ca_medium_87a.yaml	CultureMech:004976	Vitamin solution CA (medium 87a)	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/vitamin_solution_double_conc_medium_621.yaml	CultureMech:004943	Vitamin solution (double conc.) (medium 621)	no ingredients and no solutions	KOMODO ModelSEED	yes	621	yes
+bacterial/vitamin_solution_medium_1072.yaml	CultureMech:004945	Vitamin solution (medium 1072)	no ingredients and no solutions	KOMODO ModelSEED	yes	1072	yes
+bacterial/vitamin_solution_medium_1116.yaml	CultureMech:004361	Vitamin solution (medium 1116)	no ingredients and no solutions	KOMODO ModelSEED	yes	1116	yes
+bacterial/vitamin_solution_medium_1121.yaml	CultureMech:004362	Vitamin solution (medium 1121)	no ingredients and no solutions	KOMODO ModelSEED	yes	1121	yes
+bacterial/vitamin_solution_medium_1131.yaml	CultureMech:004363	Vitamin solution (medium 1131)	no ingredients and no solutions	KOMODO ModelSEED	yes	1131	yes
+bacterial/vitamin_solution_medium_1149.yaml	CultureMech:004946	Vitamin solution (medium 1149)	no ingredients and no solutions	KOMODO ModelSEED	yes	1149	yes
+bacterial/vitamin_solution_medium_1165.yaml	CultureMech:004947	Vitamin solution (medium 1165)	no ingredients and no solutions	KOMODO ModelSEED	yes	1165	yes
+bacterial/vitamin_solution_medium_1183.yaml	CultureMech:004954	Vitamin solution (medium 1183)	no ingredients and no solutions	KOMODO ModelSEED	yes	1183	yes
+bacterial/vitamin_solution_medium_1191.yaml	CultureMech:004955	Vitamin solution (medium 1191)	no ingredients and no solutions	KOMODO ModelSEED	yes	1191	yes
+bacterial/vitamin_solution_medium_124.yaml	CultureMech:005001	Vitamin solution (medium 124)	no ingredients and no solutions	KOMODO ModelSEED	yes	124	yes
+bacterial/vitamin_solution_medium_1263.yaml	CultureMech:004956	Vitamin solution (medium 1263)	no ingredients and no solutions	KOMODO ModelSEED	yes	1263	yes
+bacterial/vitamin_solution_medium_1275.yaml	CultureMech:004364	Vitamin solution (medium 1275)	no ingredients and no solutions	KOMODO ModelSEED	yes	1275	yes
+bacterial/vitamin_solution_medium_1282.yaml	CultureMech:004957	Vitamin solution (medium 1282)	no ingredients and no solutions	KOMODO ModelSEED	yes	1282	yes
+bacterial/vitamin_solution_medium_1306.yaml	CultureMech:004958	Vitamin solution (medium 1306)	no ingredients and no solutions	KOMODO ModelSEED	yes	1306	yes
+bacterial/vitamin_solution_medium_131.yaml	CultureMech:004365	Vitamin solution (medium 131)	no ingredients and no solutions	KOMODO ModelSEED	yes	131	
+bacterial/vitamin_solution_medium_1315.yaml	CultureMech:004366	Vitamin solution (medium 1315)	no ingredients and no solutions	KOMODO ModelSEED	yes	1315	yes
+bacterial/vitamin_solution_medium_141.yaml	CultureMech:004367	Vitamin solution (medium 141)	no ingredients and no solutions	KOMODO ModelSEED	yes	141	yes
+bacterial/vitamin_solution_medium_1426.yaml	CultureMech:004959	Vitamin solution (medium 1426)	no ingredients and no solutions	KOMODO ModelSEED	yes	1426	yes
+bacterial/vitamin_solution_medium_1457.yaml	CultureMech:006516	Vitamin solution (medium 1457)	no ingredients and no solutions	KOMODO ModelSEED	yes	1457	yes
+bacterial/vitamin_solution_medium_148.yaml	CultureMech:004369	Vitamin solution (medium 148)	no ingredients and no solutions	KOMODO ModelSEED	yes	148	yes
+bacterial/vitamin_solution_medium_212.yaml	CultureMech:004960	Vitamin solution (medium 212)	no ingredients and no solutions	KOMODO ModelSEED	yes	212	yes
+bacterial/vitamin_solution_medium_315.yaml	CultureMech:004370	Vitamin solution (medium 315)	no ingredients and no solutions	KOMODO ModelSEED	yes	315	yes
+bacterial/vitamin_solution_medium_322.yaml	CultureMech:004961	Vitamin solution (medium 322)	no ingredients and no solutions	KOMODO ModelSEED	yes	322	yes
+bacterial/vitamin_solution_medium_461.yaml	CultureMech:004371	Vitamin solution (medium 461)	no ingredients and no solutions	KOMODO ModelSEED	yes	461	yes
+bacterial/vitamin_solution_medium_463.yaml	CultureMech:004372	Vitamin solution (medium 463)	no ingredients and no solutions	KOMODO ModelSEED	yes	463	yes
+bacterial/vitamin_solution_medium_463a.yaml	CultureMech:004373	Vitamin solution (medium 463a)	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/vitamin_solution_medium_473.yaml	CultureMech:004374	Vitamin solution (medium 473)	no ingredients and no solutions	KOMODO ModelSEED	yes	473	yes
+bacterial/vitamin_solution_medium_521.yaml	CultureMech:004962	Vitamin solution (medium 521)	no ingredients and no solutions	KOMODO ModelSEED	yes	521	yes
+bacterial/vitamin_solution_medium_559.yaml	CultureMech:004963	Vitamin solution (medium 559)	no ingredients and no solutions	KOMODO ModelSEED	yes	559	yes
+bacterial/vitamin_solution_medium_589.yaml	CultureMech:004967	Vitamin solution (medium 589)	no ingredients and no solutions	KOMODO ModelSEED	yes	589	yes
+bacterial/vitamin_solution_medium_598.yaml	CultureMech:004944	Vitamin solution (medium 598)	no ingredients and no solutions	KOMODO ModelSEED	yes	598	yes
+bacterial/vitamin_solution_medium_600.yaml	CultureMech:004394	Vitamin solution (medium 600)	no ingredients and no solutions	KOMODO ModelSEED	yes	600	yes
+bacterial/vitamin_solution_medium_600a.yaml	CultureMech:004969	Vitamin solution (medium 600a)	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/vitamin_solution_medium_602.yaml	CultureMech:004970	Vitamin solution (medium 602)	no ingredients and no solutions	KOMODO ModelSEED	yes	602	yes
+bacterial/vitamin_solution_medium_603.yaml	CultureMech:004375	Vitamin solution (medium 603)	no ingredients and no solutions	KOMODO ModelSEED	yes	603	yes
+bacterial/vitamin_solution_medium_628.yaml	CultureMech:004968	Vitamin solution (medium 628)	no ingredients and no solutions	KOMODO ModelSEED	yes	628	yes
+bacterial/vitamin_solution_medium_651.yaml	CultureMech:004971	Vitamin solution (medium 651)	no ingredients and no solutions	KOMODO ModelSEED	yes	651	yes
+bacterial/vitamin_solution_medium_663.yaml	CultureMech:004972	Vitamin solution (medium 663)	no ingredients and no solutions	KOMODO ModelSEED	yes	663	yes
+bacterial/vitamin_solution_medium_78.yaml	CultureMech:004973	Vitamin solution (medium 78)	no ingredients and no solutions	KOMODO ModelSEED	yes	78	yes
+bacterial/vitamin_solution_medium_791.yaml	CultureMech:004974	Vitamin solution (medium 791)	no ingredients and no solutions	KOMODO ModelSEED	yes	791	yes
+bacterial/vitamin_solution_medium_867.yaml	CultureMech:004376	Vitamin solution (medium 867)	no ingredients and no solutions	KOMODO ModelSEED	yes	867	yes
+bacterial/vitamin_solution_medium_908.yaml	CultureMech:004377	Vitamin solution (medium 908)	no ingredients and no solutions	KOMODO ModelSEED	yes	908	yes
+bacterial/vitamin_solution_medium_929.yaml	CultureMech:004378	Vitamin solution (medium 929)	no ingredients and no solutions	KOMODO ModelSEED	yes	929	yes
+bacterial/vitamin_solution_medium_944.yaml	CultureMech:004382	Vitamin solution (medium 944)	no ingredients and no solutions	KOMODO ModelSEED	yes	944	yes
+bacterial/vitamin_solution_medium_951.yaml	CultureMech:004380	Vitamin solution (medium 951)	no ingredients and no solutions	KOMODO ModelSEED	yes	951	yes
+bacterial/vitamin_solution_schlegel_medium_462.yaml	CultureMech:004381	Vitamin solution (Schlegel, medium 462)	no ingredients and no solutions	KOMODO ModelSEED	yes	462	yes
+bacterial/vitamin_solution_v10.yaml	CultureMech:004385	Vitamin solution V10	no ingredients and no solutions	KOMODO ModelSEED	yes		
+bacterial/vitamin_solution_va_medium_351.yaml	CultureMech:004383	Vitamin solution (VA) (medium 351)	no ingredients and no solutions	KOMODO ModelSEED	yes	351	yes
+bacterial/vitamins_v7_solution_medium_998.yaml	CultureMech:004978	Vitamins V7 solution (medium 998)	no ingredients and no solutions	KOMODO ModelSEED	yes	998	yes
+bacterial/vitox.yaml	CultureMech:005644	Vitox	no ingredients and no solutions	KOMODO ModelSEED			
+bacterial/volatile_fatty_acid_mixture_medium_330.yaml	CultureMech:004979	Volatile fatty acid mixture (medium 330)	no ingredients and no solutions	KOMODO ModelSEED	yes	330	yes
+bacterial/volatile_fatty_acid_solution_medium_909.yaml	CultureMech:004980	Volatile fatty acid solution (medium 909)	no ingredients and no solutions	KOMODO ModelSEED	yes	909	yes
+bacterial/xb45_xb90_pb90_2_medium.yaml	CultureMech:006693	XB45/XB90/PB90-2 MEDIUM	no ingredients and no solutions	KOMODO ModelSEED			
+algae/artificial_seawater.yaml	CultureMech:000189	Artificial_Seawater	placeholder ingredient only				
+algae/bacillariophycean.yaml	CultureMech:000192	Bacillariophycean	placeholder ingredient only				
+algae/basal.yaml	CultureMech:000191	Basal	placeholder ingredient only				
+algae/beggiatoa.yaml	CultureMech:000193	Beggiatoa	placeholder ingredient only				
+algae/bold_modified_basal.yaml	CultureMech:000194	Bold_Modified_Basal	placeholder ingredient only				
+algae/bold_modified_basal_tom.yaml	CultureMech:000195	Bold_Modified_Basal&TOM	placeholder ingredient only				
+algae/brackish_water_medium.yaml	CultureMech:000196	Brackish_water_medium	placeholder ingredient only				
+algae/ch.yaml	CultureMech:000059	CH	placeholder ingredient only				
+algae/chapman_andresens_modified_pringsheims_solution.yaml	CultureMech:000062	Chapman-Andresen's Modified Pringsheim's Solution	placeholder ingredient only		yes		
+algae/chilomonas.yaml	CultureMech:000197	Chilomonas	placeholder ingredient only				
+algae/cyanidium.yaml	CultureMech:000198	Cyanidium	placeholder ingredient only				
+algae/desmidiacean.yaml	CultureMech:000199	Desmidiacean	placeholder ingredient only				
+algae/dunaliella.yaml	CultureMech:000200	Dunaliella	placeholder ingredient only				
+algae/dunaliella_acid.yaml	CultureMech:000201	Dunaliella_acid	placeholder ingredient only				
+algae/enriched_seawater.yaml	CultureMech:000202	Enriched_Seawater	placeholder ingredient only				
+algae/euglena.yaml	CultureMech:000203	Euglena	placeholder ingredient only				
+algae/malt_peptone.yaml	CultureMech:000204	Malt_Peptone	placeholder ingredient only				
+algae/merds.yaml	CultureMech:000089	MErds	placeholder ingredient only				
+algae/mw.yaml	CultureMech:000093	MW	placeholder ingredient only				
+algae/note_on_biphasic_soilwater_media_20081216.yaml	CultureMech:000205	Note_on_biphasic_soilwater_media_20081216	placeholder ingredient only				
+algae/ochromonas.yaml	CultureMech:000206	Ochromonas	placeholder ingredient only				
+algae/pes.yaml	CultureMech:000207	PES	placeholder ingredient only				
+algae/polytoma.yaml	CultureMech:000208	Polytoma	placeholder ingredient only				
+algae/polytomella.yaml	CultureMech:000209	Polytomella	placeholder ingredient only				
+algae/porphyridium.yaml	CultureMech:000210	Porphyridium	placeholder ingredient only				
+algae/s_w.yaml	CultureMech:000138	S/W	placeholder ingredient only				
+algae/s_w_amp.yaml	CultureMech:000136	S/W + AMP	placeholder ingredient only				
+algae/s_w_ca.yaml	CultureMech:000137	S/W + Ca	placeholder ingredient only				
+algae/se1.yaml	CultureMech:000128	SE1	placeholder ingredient only				
+algae/se2.yaml	CultureMech:000129	SE2	placeholder ingredient only				
+algae/seawater.yaml	CultureMech:000211	Seawater	placeholder ingredient only				
+algae/ses.yaml	CultureMech:000130	SES	placeholder ingredient only				
+algae/soil_water_media.yaml	CultureMech:000212	Soil_Water_Media	placeholder ingredient only				
+algae/spirulina.yaml	CultureMech:000213	Spirulina	placeholder ingredient only				
+algae/unicellular_green_algae.yaml	CultureMech:000214	Unicellular_Green_Algae	placeholder ingredient only				
+algae/volvox.yaml	CultureMech:000215	Volvox	placeholder ingredient only				
+algae/wees.yaml	CultureMech:000216	WEES	placeholder ingredient only				
+algae/woods_hole_mbl_medium.yaml	CultureMech:000217	Woods Hole MBL Medium	placeholder ingredient only				
+algae/yel.yaml	CultureMech:000144	YEL	placeholder ingredient only				
+algae/z_medium_for_cyanos.yaml	CultureMech:000218	Z-Medium_for_Cyanos	placeholder ingredient only				
+bacterial/test_medium_123.yaml	CultureMech:000306	Test Medium 123	placeholder ingredient only			123	yes
+bacterial/2sna.yaml	CultureMech:000411	2SNA	placeholder ingredient only	CCAP			
+bacterial/nss_low.yaml	CultureMech:000383	NSS Low	placeholder ingredient only	CCAP			
+fungal/wmalt_yeast_extract_medium_wmy.yaml	CultureMech:010440	wMalt Yeast Extract Medium (wMY)	placeholder ingredient only	CCAP			
+bacterial/cultivation_medium_for_sf1ep_cells_for_treponema_pallidum.yaml	CultureMech:001271	Cultivation Medium for Sf1Ep cells for Treponema pallidum	placeholder ingredient only	DSMZ			
+bacterial/l_15b_tick_cell_medium.yaml	CultureMech:001068	L-15B Tick Cell Medium	placeholder ingredient only	DSMZ			
+bacterial/liver_broth_oxoid_cm_77.yaml	CultureMech:001915	LIVER BROTH (Oxoid CM 77)	placeholder ingredient only	DSMZ			
+bacterial/rhodocyclus_purpureus_medium.yaml	CultureMech:001559	RHODOCYCLUS PURPUREUS MEDIUM	placeholder ingredient only	DSMZ			
+archaea/archaeoglobus_mcr_medium.yaml	CultureMech:002362	ARCHAEOGLOBUS MCR MEDIUM	placeholder ingredient only	JCM			
+archaea/methanobacterium_medium_ii_with_formae.yaml	CultureMech:003049	METHANOBACTERIUM MEDIUM (II) WITH FORMAE	placeholder ingredient only	JCM			
+archaea/methanocaldococcus_indiensis_medium.yaml	CultureMech:002720	METHANOCALDOCOCCUS INDIENSIS MEDIUM	placeholder ingredient only	JCM			
+archaea/modified_halosimplex_medium.yaml	CultureMech:003286	MODIFIED HALOSIMPLEX MEDIUM	placeholder ingredient only	JCM			
+archaea/thermoproteus_medium_c.yaml	CultureMech:002977	THERMOPROTEUS MEDIUM (C)	placeholder ingredient only	JCM			
+bacterial/JCM_J806_GS_MEDIUM.yaml	CultureMech:003151	GS MEDIUM	placeholder ingredient only	JCM			
+bacterial/agc2_medium.yaml	CultureMech:002739	AGC2 MEDIUM	placeholder ingredient only	JCM			
+bacterial/beer_medium.yaml	CultureMech:002778	BEER MEDIUM	placeholder ingredient only	JCM			
+bacterial/bm_for_tepidanaerobacter_acetoxydans.yaml	CultureMech:003081	BM FOR TEPIDANAEROBACTER ACETOXYDANS	placeholder ingredient only	JCM			
+bacterial/bs_107_medium.yaml	CultureMech:003213	Bs 107 MEDIUM	placeholder ingredient only	JCM			
+bacterial/car_bacillus_medium.yaml	CultureMech:003345	CAR BACILLUS MEDIUM	placeholder ingredient only	JCM			
+bacterial/clostridium_bovis_medium.yaml	CultureMech:002982	CLOSTRIDIUM BOVIS MEDIUM	placeholder ingredient only	JCM			
+bacterial/desulfovibrio_piger_medium.yaml	CultureMech:002756	DESULFOVIBRIO PIGER MEDIUM	placeholder ingredient only	JCM			
+bacterial/diluted_asm_medium.yaml	CultureMech:003160	DILUTED ASM MEDIUM	placeholder ingredient only	JCM			
+bacterial/eg_medium_with_10_nacl.yaml	CultureMech:002618	EG MEDIUM WITH 10% NaCl	placeholder ingredient only	JCM			
+bacterial/ferric_citrate_fwmedia.yaml	CultureMech:002821	FERRIC CITRATE FWMEDIA	placeholder ingredient only	JCM			
+bacterial/fresh_water_media.yaml	CultureMech:002823	FRESH WATER MEDIA	placeholder ingredient only	JCM			
+bacterial/jcm_medium_no_1324.yaml	CultureMech:002488	JCM MEDIUM No. 1324	placeholder ingredient only	JCM			
+bacterial/jcm_medium_no_313.yaml	CultureMech:002671	JCM MEDIUM No. 313	placeholder ingredient only	JCM			
+bacterial/ji_medium.yaml	CultureMech:002747	JI MEDIUM	placeholder ingredient only	JCM			
+bacterial/lind_8a_medium.yaml	CultureMech:003136	LIND 8A MEDIUM	placeholder ingredient only	JCM			
+bacterial/medium_10_broth.yaml	CultureMech:002539	MEDIUM 10 BROTH	placeholder ingredient only	JCM		10	yes
+bacterial/methanosaeta_brevibacterium_medium.yaml	CultureMech:002826	METHANOSAETA BREVIBACTERIUM MEDIUM	placeholder ingredient only	JCM			
+bacterial/mg50_medium.yaml	CultureMech:002841	Mg50 MEDIUM	placeholder ingredient only	JCM			
+bacterial/modified_medium_10.yaml	CultureMech:002572	MODIFIED MEDIUM 10	placeholder ingredient only	JCM		10	yes
+bacterial/modified_roseospira_medium.yaml	CultureMech:002318	MODIFIED ROSEOSPIRA MEDIUM	placeholder ingredient only	JCM			
+bacterial/nb_fumarate_nbaf_medium.yaml	CultureMech:002822	NB FUMARATE (NBAF) MEDIUM	placeholder ingredient only	JCM			
+bacterial/poremedia_b_cye_945_agar_medium.yaml	CultureMech:002267	POREMEDIA B-CYE&#945; AGAR MEDIUM	placeholder ingredient only	JCM			
+bacterial/r2a_agar_ph_9_0.yaml	CultureMech:002475	R2A AGAR (pH 9.0)	placeholder ingredient only	JCM			
+bacterial/rumen_fluid_medium.yaml	CultureMech:003115	RUMEN FLUID MEDIUM	placeholder ingredient only	JCM			
+bacterial/smy_medium.yaml	CultureMech:003297	SMY MEDIUM	placeholder ingredient only	JCM			
+bacterial/thermovenbulum_medium.yaml	CultureMech:003202	THERMOVENBULUM MEDIUM	placeholder ingredient only	JCM			
+bacterial/widdel_freshwater_medium_with_glycerin.yaml	CultureMech:002391	WIDDEL FRESHWATER MEDIUM WITH GLYCERIN	placeholder ingredient only	JCM			
+bacterial/widdel_freshwater_medium_with_pyruvate.yaml	CultureMech:002392	WIDDEL FRESHWATER MEDIUM WITH PYRUVATE	placeholder ingredient only	JCM			
+bacterial/xylanobacter_medium.yaml	CultureMech:002873	XYLANOBACTER MEDIUM	placeholder ingredient only	JCM			
+fungal/yeast_extract_medium_ye.yaml	CultureMech:010512	YEAST EXTRACT MEDIUM (YE)	placeholder ingredient only	JCM			
+specialized/marine_medium_with_thiosulfate.yaml	CultureMech:015402	MARINE MEDIUM WITH THIOSULFATE	placeholder ingredient only	JCM			
+bacterial/nissui_plate_sheep_blood_agar.yaml	CultureMech:008099	Nissui Plate Sheep Blood Agar*	placeholder ingredient only	https://togomedium.org/medium/M1550			
+bacterial/imk_with_porphyra.yaml	CultureMech:008334	IMK with Porphyra	placeholder ingredient only	https://togomedium.org/medium/M1769			
+bacterial/seawater_with_porphyra.yaml	CultureMech:008336	Seawater with Porphyra	placeholder ingredient only	https://togomedium.org/medium/M1770			
+bacterial/yeast_extract_medium_ye.yaml	CultureMech:009002	Yeast Extract Medium (YE)	placeholder ingredient only	https://togomedium.org/medium/M241			
+bacterial/TOGO_M904_Bs_107_Medium.yaml	CultureMech:010323	Bs 107 Medium	placeholder ingredient only	https://togomedium.org/medium/M904			
+bacterial/togo_medium_m967.yaml	CultureMech:010392	(Unnamed medium)	placeholder ingredient only	https://togomedium.org/medium/M967			
+bacterial/bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo.yaml	CultureMech:010430	BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)	placeholder ingredient only	public			
+bacterial/haha_agar.yaml	CultureMech:010431	HaHa agar	placeholder ingredient only	public			
+bacterial/king_b.yaml	CultureMech:010433	King B	placeholder ingredient only	public			
+bacterial/m9_sng_medium.yaml	CultureMech:010438	M9-SNG medium	placeholder ingredient only	public			
+bacterial/mta10.yaml	CultureMech:010436	mTA10	placeholder ingredient only	public			
+bacterial/n27_rhodospirillaceae_medium_modified.yaml	CultureMech:010437	N27 RHODOSPIRILLACEAE MEDIUM (modified)	placeholder ingredient only	public			
+bacterial/pdb_sng_medium.yaml	CultureMech:010439	PDB-SNG medium	placeholder ingredient only	public			
+bacterial/rs_medium_non_nutrient_medium_nnm_component.yaml	CultureMech:010434	RS Medium - Non-Nutrient Medium (NNM) Component	placeholder ingredient only	public			
+bacterial/rs_medium_nutrient_medium_nm_component.yaml	CultureMech:010435	RS Medium - Nutrient Medium (NM) Component	placeholder ingredient only	public			
+bacterial/taiyang_medium_no_9_prototype.yaml	CultureMech:010432	Taiyang Medium No.9 (prototype)	placeholder ingredient only	public			

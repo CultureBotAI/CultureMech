@@ -1,39 +1,58 @@
 #!/usr/bin/env python3
-"""Report media named for a selective agent their ingredient list omits (#181).
+"""Report media named for a selective agent their composition omits (#181).
 
-Found by the Edison axis-classification probe, not by any existing gate. Asked to
-classify `lb_rifampicin_medium`, the model declined `functional_role: SELECTIVE`
-because "the supplied ingredient list contains no rifampicin entry or
-concentration", and declined `GENERAL_PURPOSE` too rather than resolve the
-contradiction. It was right: the record is plain LB.
+An antibiotic-selective medium whose composition has no antibiotic is a real
+defect: the record asserts a formulation that is not the medium it names, so
+growth inference, grounding and axis classification all get a confident wrong
+answer with no signal.
 
-Why this matters more than a missing ingredient usually would: the record asserts
-a composition that is not the medium it names. Anything reading it — growth
-inference, ingredient grounding, axis classification — gets a confident wrong
-answer with no signal. A `functional_role` assigned from the name would launder
-the defect into the schema.
+## What "composition" means here — the correction that halved this audit twice
 
-REPORT ONLY. It does not repair, for the #166 reason: a plausible-looking
-concentration that round-trips, validates, and passes every gate is still false
-chemistry, and only reading the output catches it. Where the source recorded a
-concentration in the NAME ("LB + 50 ug/ml Kanamycin medium"), the value is
-recoverable from tracked data and is surfaced in the `named_conc` column for a
-curator to act on — surfaced, not applied.
+A stock-supplied antibiotic is recorded as a SOLUTION, not an ingredient.
+`lb_rifampicin_medium` carries "Rifampicin solution (50 mg/ml)*" under
+`solutions`, and its `ingredients` really are just plain LB. An earlier version of
+this script checked only `ingredients` and reported 17 records; 15 were FALSE
+POSITIVES on exactly that basis.
 
-Two traps, both hit while scoping this:
+That mattered beyond the count. The Edison axis probe which prompted #181 declined
+to classify `lb_rifampicin_medium` as SELECTIVE, saying "the supplied ingredient
+list contains no rifampicin entry". That was accurate about the ingredient list it
+was handed — which is precisely the slot the research template passes. The record
+was not defective; the VIEW of it was partial, and this script reproduced the same
+partial view before concluding the corpus was broken.
 
-  * Match on WORD BOUNDARIES. A substring matcher reported 28 records because
-    `streptomyc` matches the GENUS *Streptomyces* (`GYM_Streptomyces_Medium`) and
-    `bile` matches `alkalispirillum_mobile_medium`. More than half the initial
-    hits were artifacts of the matcher, not defects in the corpus.
+`composition_terms()` therefore spans `ingredients`, `solutions`, and the nested
+`solutions[].composition`. Current baseline: **2** records, both DSMZ Medium 309
+reached via two sources. Neither has a `solutions` entry, and the local mediadive
+extraction of medium 309 lacks the neomycin too — so the gap is upstream, not in
+this import, and is not locally recoverable.
+
+## REPORT ONLY
+
+Recovering a lost concentration needs the upstream record, and a plausible guess
+that round-trips and validates is still false chemistry (#166). Where the source
+kept a concentration in the NAME ("LB + 50 ug/ml Kanamycin medium"), it is
+surfaced in `named_conc` for a curator — surfaced, not applied.
+
+## Traps, each hit while building this
+
+  * Match on WORD BOUNDARIES. A substring matcher reported 28 because `streptomyc`
+    matches the GENUS *Streptomyces* and `bile` matches
+    `alkalispirillum_mobile_medium`. Sixteen of the twenty-eight were artifacts.
+  * "A or B" names an either/or formulation. The record holds one alternative and
+    is complete, so it is suppressed — but only when at least one named agent is
+    actually present.
+  * A concentration belongs to the agent in ITS OWN name segment. A character
+    window reached across the comma and reported `ampicillin=50 ug/ml` for a name
+    reading "...Kanamycin, 100 ug/ml Ampicillin" (#188).
   * Presence in a name proves the agent belongs; ABSENCE from a finite agent list
-    proves nothing. This bounds a known family. It does not certify the rest of
-    the corpus, and `--max-allowed 0` would be a claim this script cannot support.
+    proves nothing. This bounds a known family; `--max-allowed 0` would be a claim
+    this script cannot support.
 
 Usage::
 
     just audit-selective-agent-mismatch
-    just audit-selective-agent-mismatch --max-allowed 17   # current baseline
+    just audit-selective-agent-mismatch --max-allowed 2    # current baseline
 """
 
 from __future__ import annotations
@@ -110,6 +129,34 @@ _EITHER_OR = re.compile(r"\bor\b", re.I)
 _CONC = r"\d+(?:\.\d+)?\s*(?:%|ug/ml|µg/ml|mg/ml|mg/l|g/l|u/ml)"
 
 
+def composition_terms(doc: dict[str, Any]) -> list[str]:
+    """Every term naming something actually IN the medium.
+
+    Must span `ingredients` AND `solutions`, and the nested `solutions[].composition`.
+    Checking only `ingredients` reported 15 false positives out of 17: an
+    antibiotic supplied as a stock is recorded as a SOLUTION, so
+    `lb_rifampicin_medium` carries "Rifampicin solution (50 mg/ml)*" under
+    `solutions` and reads as antibiotic-free if you look only at `ingredients`.
+
+    The Edison probe that started #181 said "the supplied ingredient list contains
+    no rifampicin entry" — accurate about the ingredient list it was given, which
+    is exactly the slot the research template passes. The record was not defective;
+    the view of it was partial.
+    """
+    terms: list[str] = []
+    for ing in doc.get("ingredients") or []:
+        if isinstance(ing, dict):
+            terms.append(str(ing.get("preferred_term") or ""))
+    for sol in doc.get("solutions") or []:
+        if not isinstance(sol, dict):
+            continue
+        terms.append(str(sol.get("preferred_term") or ""))
+        for sub in sol.get("composition") or []:
+            if isinstance(sub, dict):
+                terms.append(str(sub.get("preferred_term") or ""))
+    return [t for t in terms if t]
+
+
 def _compiled() -> list[tuple[str, re.Pattern[str]]]:
     return [(label, re.compile(rf"\b{rx}\b", re.I)) for label, rx in SELECTIVE_AGENTS]
 
@@ -146,7 +193,7 @@ def audit_parsed(records: list[tuple[str, dict[str, Any]]]) -> list[dict[str, st
             continue
         name = f"{doc.get('name') or ''} {doc.get('original_name') or ''}".strip()
         ingredients = [i for i in doc.get("ingredients") or [] if isinstance(i, dict)]
-        ing_text = " ".join(str(i.get("preferred_term") or "") for i in ingredients)
+        ing_text = " ".join(composition_terms(doc))
         missing, concs = [], []
         present = False
         for label, rx in agents:
