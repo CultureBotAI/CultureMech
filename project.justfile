@@ -111,6 +111,16 @@ enrich-edison-response *args="":
 prioritize-deep-research-candidates *args="":
     uv run --extra dev python scripts/prioritize_deep_research_candidates.py {{args}}
 
+# Rank media records by how badly they need curation review — the INVERSE of
+# prioritize-deep-research-candidates, which ranks by expected research yield and
+# hard-filters zero-ingredient records. Signals: absent/placeholder/unparsed
+# composition, ungrounded ingredients, untraceable provenance, strain-pointer
+# names. Writes data/import_tracking/reports/review_need_ranking.tsv
+#     just score-review-need --top 40
+[group('QC')]
+score-review-need *args="":
+    uv run --extra dev python scripts/score_review_need.py {{args}}
+
 # Find records whose composition_type contradicts their own ingredient list (#158):
 # `DEFINED` asserted while listing yeast extract, peptone, tryptone etc. Reports by
 # default; `--apply` restamps only records carrying >= 5 g/L of undefined material,
