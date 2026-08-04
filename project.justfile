@@ -73,6 +73,14 @@ research-media-edison target *args="":
 # Records with a completed run for the same job are skipped, so `--limit 5`
 # advances 5 FRESH records per invocation rather than re-billing the first
 # five. Pass `--force` to re-submit them anyway.
+# Draw a stratified sample of media for Edison axis classification (#152), across
+# SEMI_DEFINED / deep-research-ranked / well-known / other. Seeded, so a rerun
+# researches the same records rather than a new set. Writes:
+#   data/import_tracking/reports/axis_research_batch.json
+[group('Research')]
+sample-axis-research-batch *args="":
+    uv run --extra dev python scripts/sample_axis_research_batch.py {{args}}
+
 [group('Research')]
 research-media-edison-batch batch *args="":
     uv run --extra dev python scripts/research_media_edison.py \
