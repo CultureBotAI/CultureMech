@@ -116,21 +116,33 @@ def main(argv: list[str] | None = None) -> int:
 
     rng = random.Random(args.seed)
     per = args.size // len(strata)
-    batch: list[dict[str, Any]] = []
+    drawn: dict[str, list[dict[str, Any]]] = {}
     print(f"{'stratum':16s} {'available':>10s} {'drawn':>7s}")
     for name, pool in strata.items():
         take = min(per, len(pool))
         if take < per:
             print(f"  NOTE: {name} has only {len(pool)}; drawing all of them",
                   file=sys.stderr)
-        for path, doc in rng.sample(pool, take):
-            batch.append({
-                "recipe_name": path.stem,
-                "file_path": str(path.relative_to(args.normalized_dir)),
-                "culturemech_id": str(doc.get("id") or ""),
-                "stratum": name,
-            })
+        drawn[name] = [{
+            "recipe_name": path.stem,
+            "file_path": str(path.relative_to(args.normalized_dir)),
+            "culturemech_id": str(doc.get("id") or ""),
+            "stratum": name,
+        } for path, doc in rng.sample(pool, take)]
         print(f"{name:16s} {len(pool):10d} {take:7d}")
+
+    # Round-robin the strata rather than concatenating them, so EVERY PREFIX of the
+    # batch is itself stratified. This matters because the runner researches in file
+    # order and `--limit N` takes the first N: with the strata concatenated, a
+    # 25-record probe would have drawn all 25 from SEMI_DEFINED and measured nothing
+    # about the other three. Interleaved, `--limit 25` samples all four ~evenly, and
+    # the probe is a strict subset of the full run — so the remaining records can be
+    # finished later without re-researching any.
+    batch: list[dict[str, Any]] = []
+    for i in range(max((len(v) for v in drawn.values()), default=0)):
+        for name in strata:
+            if i < len(drawn[name]):
+                batch.append(drawn[name][i])
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(batch, indent=2) + "\n")

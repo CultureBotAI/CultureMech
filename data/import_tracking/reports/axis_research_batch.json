@@ -6,597 +6,9 @@
     "stratum": "SEMI_DEFINED"
   },
   {
-    "recipe_name": "TOGO_M923_Dethiosulfovibrio_Belb1_Medium",
-    "file_path": "bacterial/TOGO_M923_Dethiosulfovibrio_Belb1_Medium.yaml",
-    "culturemech_id": "CultureMech:010344",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "sd0_medium",
-    "file_path": "bacterial/sd0_medium.yaml",
-    "culturemech_id": "CultureMech:002698",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "for_arhodomonas",
-    "file_path": "bacterial/for_arhodomonas.yaml",
-    "culturemech_id": "CultureMech:006871",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "methanobacterium_medium_ii",
-    "file_path": "archaea/methanobacterium_medium_ii.yaml",
-    "culturemech_id": "CultureMech:003048",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "chthonomonas_medium",
-    "file_path": "bacterial/chthonomonas_medium.yaml",
-    "culturemech_id": "CultureMech:000754",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "for_dsm_17771",
-    "file_path": "bacterial/for_dsm_17771.yaml",
-    "culturemech_id": "CultureMech:006915",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "desulfotomaculum_lam5_medium",
-    "file_path": "bacterial/desulfotomaculum_lam5_medium.yaml",
-    "culturemech_id": "CultureMech:002893",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "artificial_seawater_for_halophiles",
-    "file_path": "bacterial/artificial_seawater_for_halophiles.yaml",
-    "culturemech_id": "CultureMech:009844",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "TOGO_M1041_MPOB_Medium",
-    "file_path": "bacterial/TOGO_M1041_MPOB_Medium.yaml",
-    "culturemech_id": "CultureMech:007557",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "methanolinea_medium",
-    "file_path": "archaea/methanolinea_medium.yaml",
-    "culturemech_id": "CultureMech:002777",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "KOMODO_253_medium_FOR_ECTOTHIORHODOSPIRA",
-    "file_path": "bacterial/KOMODO_253_medium_FOR_ECTOTHIORHODOSPIRA.yaml",
-    "culturemech_id": "CultureMech:004655",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "TOGO_M1377_Glucose_bicarbonate-Buffered_Medium",
-    "file_path": "bacterial/TOGO_M1377_Glucose_bicarbonate-Buffered_Medium.yaml",
-    "culturemech_id": "CultureMech:007916",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "acidianus_medium_anaerobic",
-    "file_path": "specialized/acidianus_medium_anaerobic.yaml",
-    "culturemech_id": "CultureMech:015354",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "thiorhodococcus_medium",
-    "file_path": "bacterial/thiorhodococcus_medium.yaml",
-    "culturemech_id": "CultureMech:000816",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "for_dsm_17721",
-    "file_path": "bacterial/for_dsm_17721.yaml",
-    "culturemech_id": "CultureMech:003631",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "yem_agar",
-    "file_path": "bacterial/yem_agar.yaml",
-    "culturemech_id": "CultureMech:009635",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "TOGO_M1634_Methanosarcina_Medium",
-    "file_path": "archaea/TOGO_M1634_Methanosarcina_Medium.yaml",
-    "culturemech_id": "CultureMech:008189",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "thermodesulfovibrio_yellowstonii_medium",
-    "file_path": "bacterial/thermodesulfovibrio_yellowstonii_medium.yaml",
-    "culturemech_id": "CultureMech:001883",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "KOMODO_1038_ACIDICALDUS_medium",
-    "file_path": "bacterial/KOMODO_1038_ACIDICALDUS_medium.yaml",
-    "culturemech_id": "CultureMech:003552",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "lactate_bicarbonate_buffered_medium",
-    "file_path": "bacterial/lactate_bicarbonate_buffered_medium.yaml",
-    "culturemech_id": "CultureMech:003203",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "medium_for_strain_mp_01",
-    "file_path": "bacterial/medium_for_strain_mp_01.yaml",
-    "culturemech_id": "CultureMech:010405",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "sdo_medium",
-    "file_path": "bacterial/sdo_medium.yaml",
-    "culturemech_id": "CultureMech:000590",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "TOGO_M678_Magnetospirillum_Gryphiswaldense_Medium",
-    "file_path": "bacterial/TOGO_M678_Magnetospirillum_Gryphiswaldense_Medium.yaml",
-    "culturemech_id": "CultureMech:010082",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "marine_h2_using_methanogen_medium",
-    "file_path": "archaea/marine_h2_using_methanogen_medium.yaml",
-    "culturemech_id": "CultureMech:008267",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "KOMODO_1174_NITRINCOLA_medium",
-    "file_path": "bacterial/KOMODO_1174_NITRINCOLA_medium.yaml",
-    "culturemech_id": "CultureMech:003894",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "methanosalsum_wen5_medium",
-    "file_path": "archaea/methanosalsum_wen5_medium.yaml",
-    "culturemech_id": "CultureMech:001829",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "acidianus_infernus_medium",
-    "file_path": "archaea/acidianus_infernus_medium.yaml",
-    "culturemech_id": "CultureMech:005077",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "marichromatium_bheemlicum_medium",
-    "file_path": "bacterial/marichromatium_bheemlicum_medium.yaml",
-    "culturemech_id": "CultureMech:002881",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "for_dsm_24312",
-    "file_path": "bacterial/for_dsm_24312.yaml",
-    "culturemech_id": "CultureMech:003633",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "succinate_minimal_salts_medium_sms",
-    "file_path": "bacterial/succinate_minimal_salts_medium_sms.yaml",
-    "culturemech_id": "CultureMech:000833",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "nasu_iron_reducer_medium",
-    "file_path": "bacterial/nasu_iron_reducer_medium.yaml",
-    "culturemech_id": "CultureMech:002199",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "KOMODO_749_THERMODESULFOVIBRIO_YELLOWSTONII_medium",
-    "file_path": "bacterial/KOMODO_749_THERMODESULFOVIBRIO_YELLOWSTONII_medium.yaml",
-    "culturemech_id": "CultureMech:006400",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "rhodovulum_imhoffii_medium",
-    "file_path": "bacterial/rhodovulum_imhoffii_medium.yaml",
-    "culturemech_id": "CultureMech:002871",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "marine_methanobacterium_medium",
-    "file_path": "archaea/marine_methanobacterium_medium.yaml",
-    "culturemech_id": "CultureMech:007804",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "TOGO_M1275_Vallitalea_70B-A_Medium",
-    "file_path": "bacterial/TOGO_M1275_Vallitalea_70B-A_Medium.yaml",
-    "culturemech_id": "CultureMech:007808",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine",
-    "file_path": "bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml",
-    "culturemech_id": "CultureMech:005622",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "methanospirillum_lacunae_medium",
-    "file_path": "archaea/methanospirillum_lacunae_medium.yaml",
-    "culturemech_id": "CultureMech:000735",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "KOMODO_1360_HIPPEA_JASONIAE_medium",
-    "file_path": "bacterial/KOMODO_1360_HIPPEA_JASONIAE_medium.yaml",
-    "culturemech_id": "CultureMech:004108",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "natroniella_medium_replace_trace_element_solution_sl_4_medium_457_with_trace_element_solution_sl_11_medium_784",
-    "file_path": "bacterial/natroniella_medium_replace_trace_element_solution_sl_4_medium_457_with_trace_element_solution_sl_11_medium_784.yaml",
-    "culturemech_id": "CultureMech:006483",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "norris_ferroplasma_medium",
-    "file_path": "archaea/norris_ferroplasma_medium.yaml",
-    "culturemech_id": "CultureMech:002877",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "geothermobacter_medium",
-    "file_path": "bacterial/geothermobacter_medium.yaml",
-    "culturemech_id": "CultureMech:002163",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "ird_marine_clostrida_medium",
-    "file_path": "specialized/ird_marine_clostrida_medium.yaml",
-    "culturemech_id": "CultureMech:015423",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "for_dsm_19306",
-    "file_path": "bacterial/for_dsm_19306.yaml",
-    "culturemech_id": "CultureMech:006946",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "lca",
-    "file_path": "bacterial/lca.yaml",
-    "culturemech_id": "CultureMech:008306",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "t49_medium",
-    "file_path": "bacterial/t49_medium.yaml",
-    "culturemech_id": "CultureMech:004041",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "rhodomicrobium_medium",
-    "file_path": "bacterial/rhodomicrobium_medium.yaml",
-    "culturemech_id": "CultureMech:008166",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "rhodobium_gokurnum_medium",
-    "file_path": "bacterial/rhodobium_gokurnum_medium.yaml",
-    "culturemech_id": "CultureMech:002867",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "modified_balchs_methanogen_medium_1_b",
-    "file_path": "archaea/modified_balchs_methanogen_medium_1_b.yaml",
-    "culturemech_id": "CultureMech:000304",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
-    "recipe_name": "planctomyces_pyreformis_medium",
-    "file_path": "bacterial/planctomyces_pyreformis_medium.yaml",
-    "culturemech_id": "CultureMech:001009",
-    "stratum": "SEMI_DEFINED"
-  },
-  {
     "recipe_name": "brain_heart_infusion_bhi_broth_containing_c_difficile_supplement_and_0_04_cysteine",
     "file_path": "bacterial/brain_heart_infusion_bhi_broth_containing_c_difficile_supplement_and_0_04_cysteine.yaml",
     "culturemech_id": "CultureMech:009359",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "frey_broth",
-    "file_path": "bacterial/frey_broth.yaml",
-    "culturemech_id": "CultureMech:008822",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "desulfobulbus_sp_medium_freshwater_for_dsm_14880",
-    "file_path": "bacterial/desulfobulbus_sp_medium_freshwater_for_dsm_14880.yaml",
-    "culturemech_id": "CultureMech:009098",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M1875_Thermus_medium",
-    "file_path": "bacterial/TOGO_M1875_Thermus_medium.yaml",
-    "culturemech_id": "CultureMech:008450",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "allen_medium",
-    "file_path": "bacterial/allen_medium.yaml",
-    "culturemech_id": "CultureMech:008820",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M2297_Acidithiobacillus_ferrooxidans_Medium",
-    "file_path": "bacterial/TOGO_M2297_Acidithiobacillus_ferrooxidans_Medium.yaml",
-    "culturemech_id": "CultureMech:008883",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12",
-    "file_path": "bacterial/mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12.yaml",
-    "culturemech_id": "CultureMech:009056",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M3231_Minimal_media",
-    "file_path": "bacterial/TOGO_M3231_Minimal_media.yaml",
-    "culturemech_id": "CultureMech:009671",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M2726_Clostridium_medium",
-    "file_path": "bacterial/TOGO_M2726_Clostridium_medium.yaml",
-    "culturemech_id": "CultureMech:009276",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "mag_modified_arabinose_gluconate_medium",
-    "file_path": "bacterial/mag_modified_arabinose_gluconate_medium.yaml",
-    "culturemech_id": "CultureMech:001150",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M2228_Friis_medium",
-    "file_path": "bacterial/TOGO_M2228_Friis_medium.yaml",
-    "culturemech_id": "CultureMech:008816",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "anaerobic_freshwater_fwm_medium_for_dsm_15978",
-    "file_path": "bacterial/anaerobic_freshwater_fwm_medium_for_dsm_15978.yaml",
-    "culturemech_id": "CultureMech:009205",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "mineral_medium_jagmann",
-    "file_path": "bacterial/mineral_medium_jagmann.yaml",
-    "culturemech_id": "CultureMech:001199",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "medium_for_strain_r_1",
-    "file_path": "bacterial/medium_for_strain_r_1.yaml",
-    "culturemech_id": "CultureMech:008433",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "chopped_meat_medium_with_1_glucose",
-    "file_path": "bacterial/chopped_meat_medium_with_1_glucose.yaml",
-    "culturemech_id": "CultureMech:009305",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "formate_medium",
-    "file_path": "bacterial/formate_medium.yaml",
-    "culturemech_id": "CultureMech:009652",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "clostridium_thermocellum_medium_d58_medium",
-    "file_path": "bacterial/clostridium_thermocellum_medium_d58_medium.yaml",
-    "culturemech_id": "CultureMech:008330",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "dsm_135_medium",
-    "file_path": "bacterial/dsm_135_medium.yaml",
-    "culturemech_id": "CultureMech:009613",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "gbs_salts_modified_for_thermocrinis_jamiesonii",
-    "file_path": "bacterial/gbs_salts_modified_for_thermocrinis_jamiesonii.yaml",
-    "culturemech_id": "CultureMech:000953",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M3036_Thiomonas_cuprina_medium",
-    "file_path": "bacterial/TOGO_M3036_Thiomonas_cuprina_medium.yaml",
-    "culturemech_id": "CultureMech:009548",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M2692_Alkaline_xylan_medium",
-    "file_path": "bacterial/TOGO_M2692_Alkaline_xylan_medium.yaml",
-    "culturemech_id": "CultureMech:009244",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "medium_for_strains_ja121_and_ja322",
-    "file_path": "bacterial/medium_for_strains_ja121_and_ja322.yaml",
-    "culturemech_id": "CultureMech:008370",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "minimal_medium_containing_nicotin",
-    "file_path": "bacterial/minimal_medium_containing_nicotin.yaml",
-    "culturemech_id": "CultureMech:009420",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "medium_for_freshwater_flexibacteria",
-    "file_path": "bacterial/medium_for_freshwater_flexibacteria.yaml",
-    "culturemech_id": "CultureMech:008096",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M2576_Modified_chopped_meat_medium",
-    "file_path": "bacterial/TOGO_M2576_Modified_chopped_meat_medium.yaml",
-    "culturemech_id": "CultureMech:009145",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "actinotalea_fermentas_medium",
-    "file_path": "bacterial/actinotalea_fermentas_medium.yaml",
-    "culturemech_id": "CultureMech:008423",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M3199_Defined_minimal_medium",
-    "file_path": "bacterial/TOGO_M3199_Defined_minimal_medium.yaml",
-    "culturemech_id": "CultureMech:009640",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "medium_for_marine_flexibacteria",
-    "file_path": "bacterial/medium_for_marine_flexibacteria.yaml",
-    "culturemech_id": "CultureMech:008091",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M3228_Defined_medium",
-    "file_path": "bacterial/TOGO_M3228_Defined_medium.yaml",
-    "culturemech_id": "CultureMech:009667",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "leeming_amp_notman_agar_lna_leeming_amp_notman_1987_in_the_yeasts_a_taxonomic_study_5th_edn",
-    "file_path": "bacterial/leeming_amp_notman_agar_lna_leeming_amp_notman_1987_in_the_yeasts_a_taxonomic_study_5th_edn.yaml",
-    "culturemech_id": "CultureMech:008670",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "leeming_amp_notman_agar_modified_mlna",
-    "file_path": "bacterial/leeming_amp_notman_agar_modified_mlna.yaml",
-    "culturemech_id": "CultureMech:008353",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M2378_Natronobacteria_medium",
-    "file_path": "bacterial/TOGO_M2378_Natronobacteria_medium.yaml",
-    "culturemech_id": "CultureMech:008962",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "enriched_anaerobe_medium",
-    "file_path": "bacterial/enriched_anaerobe_medium.yaml",
-    "culturemech_id": "CultureMech:009304",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "clostridia_growth_medium_cgm",
-    "file_path": "bacterial/clostridia_growth_medium_cgm.yaml",
-    "culturemech_id": "CultureMech:009356",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "medium_for_strains_ja145_ja193_ja310_ja334_ja415_ja430_ja447_and_ja643",
-    "file_path": "bacterial/medium_for_strains_ja145_ja193_ja310_ja334_ja415_ja430_ja447_and_ja643.yaml",
-    "culturemech_id": "CultureMech:008408",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "chocolate_agar_polyvitex_pvx",
-    "file_path": "bacterial/chocolate_agar_polyvitex_pvx.yaml",
-    "culturemech_id": "CultureMech:008743",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "basal_salts_medium_bsm_modified_from_that_of_hareland_et_al_j_bacteriol_121_272_285_1975_by_removal_of_the_nitriloacetic_acid",
-    "file_path": "bacterial/basal_salts_medium_bsm_modified_from_that_of_hareland_et_al_j_bacteriol_121_272_285_1975_by_removal_of_the_nitriloacetic_acid.yaml",
-    "culturemech_id": "CultureMech:008825",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "brain_heart_infusion_bhi_broth_oxoid",
-    "file_path": "bacterial/brain_heart_infusion_bhi_broth_oxoid.yaml",
-    "culturemech_id": "CultureMech:008801",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "isosphaera_medium",
-    "file_path": "bacterial/isosphaera_medium.yaml",
-    "culturemech_id": "CultureMech:008891",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "meiothermus_hypogaeus_medium",
-    "file_path": "bacterial/meiothermus_hypogaeus_medium.yaml",
-    "culturemech_id": "CultureMech:000920",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M3200_Defined_minimal_medium",
-    "file_path": "bacterial/TOGO_M3200_Defined_minimal_medium.yaml",
-    "culturemech_id": "CultureMech:009643",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "brain_heart_infusion_agar_amended_with_5_v_v_laked_horse_blood",
-    "file_path": "bacterial/brain_heart_infusion_agar_amended_with_5_v_v_laked_horse_blood.yaml",
-    "culturemech_id": "CultureMech:009466",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "desulfovibrio_mv_medium_for_dsm_13257",
-    "file_path": "bacterial/desulfovibrio_mv_medium_for_dsm_13257.yaml",
-    "culturemech_id": "CultureMech:009288",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "alkaline_halophile_medium",
-    "file_path": "bacterial/alkaline_halophile_medium.yaml",
-    "culturemech_id": "CultureMech:008289",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "medium_for_tick_cells_rickettsia",
-    "file_path": "bacterial/medium_for_tick_cells_rickettsia.yaml",
-    "culturemech_id": "CultureMech:001032",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M2573_Tryptic_Soy_Agar_Broth_with_5_Sheep_Blood_defibrinated",
-    "file_path": "bacterial/TOGO_M2573_Tryptic_Soy_Agar_Broth_with_5_Sheep_Blood_defibrinated.yaml",
-    "culturemech_id": "CultureMech:009142",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "TOGO_M2711_Clostridium_Cellulolytic_medium",
-    "file_path": "bacterial/TOGO_M2711_Clostridium_Cellulolytic_medium.yaml",
-    "culturemech_id": "CultureMech:009263",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2",
-    "file_path": "bacterial/columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2.yaml",
-    "culturemech_id": "CultureMech:008843",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "k_101_flexibacter_medium",
-    "file_path": "bacterial/k_101_flexibacter_medium.yaml",
-    "culturemech_id": "CultureMech:009160",
-    "stratum": "DEEP_RESEARCH"
-  },
-  {
-    "recipe_name": "defined_minimal_medium",
-    "file_path": "bacterial/defined_minimal_medium.yaml",
-    "culturemech_id": "CultureMech:009638",
     "stratum": "DEEP_RESEARCH"
   },
   {
@@ -606,304 +18,28 @@
     "stratum": "WELL_KNOWN"
   },
   {
-    "recipe_name": "brain_heart_infusion_agar_containing_7_horse_blood_and_0_4_isovitalex",
-    "file_path": "bacterial/brain_heart_infusion_agar_containing_7_horse_blood_and_0_4_isovitalex.yaml",
-    "culturemech_id": "CultureMech:009397",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "lb_rifampicin_medium",
-    "file_path": "bacterial/lb_rifampicin_medium.yaml",
-    "culturemech_id": "CultureMech:008553",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "tryptic_soy_agar_tsa_carl_roth_gmbh_co",
-    "file_path": "bacterial/tryptic_soy_agar_tsa_carl_roth_gmbh_co.yaml",
-    "culturemech_id": "CultureMech:009450",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "nutrient_agar_broth",
-    "file_path": "bacterial/nutrient_agar_broth.yaml",
-    "culturemech_id": "CultureMech:008307",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "yeast_extract_malt_extract_agar_isp_2_with_5_nacl",
-    "file_path": "bacterial/yeast_extract_malt_extract_agar_isp_2_with_5_nacl.yaml",
-    "culturemech_id": "CultureMech:008596",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "1_100_nutrient_agar_no_2",
-    "file_path": "bacterial/1_100_nutrient_agar_no_2.yaml",
-    "culturemech_id": "CultureMech:002131",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "yeast_extract_malt_extract_agar_isp_2",
-    "file_path": "fungal/yeast_extract_malt_extract_agar_isp_2.yaml",
-    "culturemech_id": "CultureMech:010528",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "2_malt_extract_agar",
-    "file_path": "bacterial/2_malt_extract_agar.yaml",
-    "culturemech_id": "CultureMech:008671",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "r2a_agar",
-    "file_path": "bacterial/r2a_agar.yaml",
-    "culturemech_id": "CultureMech:002706",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "blood_agar_tsa_with_5_sheep_blood_remel",
-    "file_path": "bacterial/blood_agar_tsa_with_5_sheep_blood_remel.yaml",
-    "culturemech_id": "CultureMech:009339",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M2199_LB_Agar_Broth_Miller",
-    "file_path": "bacterial/TOGO_M2199_LB_Agar_Broth_Miller.yaml",
-    "culturemech_id": "CultureMech:008791",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "JCM_J100_ALKALINE_NUTRIENT_AGAR",
-    "file_path": "bacterial/JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml",
-    "culturemech_id": "CultureMech:002194",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "m9_farmer_et_al",
-    "file_path": "bacterial/m9_farmer_et_al.yaml",
-    "culturemech_id": "CultureMech:007010",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR",
-    "file_path": "bacterial/KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR.yaml",
-    "culturemech_id": "CultureMech:006268",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "sea_water_luria_bertani_medium",
-    "file_path": "bacterial/sea_water_luria_bertani_medium.yaml",
-    "culturemech_id": "CultureMech:001039",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "mueller_hinton_medium",
-    "file_path": "bacterial/mueller_hinton_medium.yaml",
-    "culturemech_id": "CultureMech:009463",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "r2a_with_artificial_soda_salt_lake_water",
-    "file_path": "bacterial/r2a_with_artificial_soda_salt_lake_water.yaml",
-    "culturemech_id": "CultureMech:001197",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M2362_Columbia_Blood_Agar",
-    "file_path": "bacterial/TOGO_M2362_Columbia_Blood_Agar.yaml",
-    "culturemech_id": "CultureMech:008948",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "r2a_agar_with_2_nacl",
-    "file_path": "bacterial/r2a_agar_with_2_nacl.yaml",
-    "culturemech_id": "CultureMech:002325",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "modified_m9_medium",
-    "file_path": "bacterial/modified_m9_medium.yaml",
-    "culturemech_id": "CultureMech:009533",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "nutrient_agar_oxoid_cm3_with_phosphate",
-    "file_path": "bacterial/nutrient_agar_oxoid_cm3_with_phosphate.yaml",
-    "culturemech_id": "CultureMech:001733",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M492_1_2_MRS_1_2_BHI_Agar",
-    "file_path": "bacterial/TOGO_M492_1_2_MRS_1_2_BHI_Agar.yaml",
-    "culturemech_id": "CultureMech:009880",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M18_YM_Agar",
-    "file_path": "bacterial/TOGO_M18_YM_Agar.yaml",
-    "culturemech_id": "CultureMech:008476",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "m9_minimal_media_plus",
-    "file_path": "specialized/m9_minimal_media_plus.yaml",
-    "culturemech_id": "CultureMech:015550",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "brain_heart_infusion_2_nacl",
-    "file_path": "bacterial/brain_heart_infusion_2_nacl.yaml",
-    "culturemech_id": "CultureMech:008546",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M1707_Casamino_acids-peptone-Czapek_s_agar",
-    "file_path": "bacterial/TOGO_M1707_Casamino_acids-peptone-Czapek_s_agar.yaml",
-    "culturemech_id": "CultureMech:008269",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "anaerobic_tryptic_soy_broth_medium",
-    "file_path": "specialized/anaerobic_tryptic_soy_broth_medium.yaml",
-    "culturemech_id": "CultureMech:015369",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "r2a_fumarate_anaerobic",
-    "file_path": "bacterial/r2a_fumarate_anaerobic.yaml",
-    "culturemech_id": "CultureMech:009554",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "malt_extract_agar",
-    "file_path": "fungal/malt_extract_agar.yaml",
-    "culturemech_id": "CultureMech:010520",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "KOMODO_952_1_10_NUTRIENT_AGAR_NO.2",
-    "file_path": "bacterial/KOMODO_952_1_10_NUTRIENT_AGAR_NO.2.yaml",
-    "culturemech_id": "CultureMech:006895",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "brain_heart_infusion_bhi_with_sodium_acetate",
-    "file_path": "bacterial/brain_heart_infusion_bhi_with_sodium_acetate.yaml",
-    "culturemech_id": "CultureMech:009557",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "m9_minimal_medium_with_acetate",
-    "file_path": "bacterial/m9_minimal_medium_with_acetate.yaml",
-    "culturemech_id": "CultureMech:007300",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M2511_brain_heart_infusion_broth",
-    "file_path": "bacterial/TOGO_M2511_brain_heart_infusion_broth.yaml",
-    "culturemech_id": "CultureMech:009083",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M94_Nutrient_Agar_With_25_Soil_Extract",
-    "file_path": "bacterial/TOGO_M94_Nutrient_Agar_With_25_Soil_Extract.yaml",
-    "culturemech_id": "CultureMech:010373",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M2520_R2A_Medium",
-    "file_path": "bacterial/TOGO_M2520_R2A_Medium.yaml",
-    "culturemech_id": "CultureMech:009090",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "czapek_yeast_extract_agar_cya",
-    "file_path": "fungal/czapek_yeast_extract_agar_cya.yaml",
-    "culturemech_id": "CultureMech:010511",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M21_Brain_Heart_Infusion_Agar",
-    "file_path": "bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml",
-    "culturemech_id": "CultureMech:008793",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "brain_heart_infusion_agar_with_soil_extract",
-    "file_path": "bacterial/brain_heart_infusion_agar_with_soil_extract.yaml",
-    "culturemech_id": "CultureMech:002702",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "columbia_blood_agar_containing_10_bovine_blood",
-    "file_path": "bacterial/columbia_blood_agar_containing_10_bovine_blood.yaml",
-    "culturemech_id": "CultureMech:009496",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "luria_bertani_lb_medium_buffered_mops",
-    "file_path": "bacterial/luria_bertani_lb_medium_buffered_mops.yaml",
-    "culturemech_id": "CultureMech:009075",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M16_1_10_Nutrient_Agar_NO._2",
-    "file_path": "bacterial/TOGO_M16_1_10_Nutrient_Agar_NO._2.yaml",
-    "culturemech_id": "CultureMech:008261",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "tryptic_soy_broth_medium_supplemented_with_0_5_yeast_extract_0_05_cysteine_hcl_h2o_0_5_mg_ml_of_hemin_2_g_ml_of_vitamin_k1_and_5_sheep_blood",
-    "file_path": "bacterial/tryptic_soy_broth_medium_supplemented_with_0_5_yeast_extract_0_05_cysteine_hcl_h2o_0_5_mg_ml_of_hemin_2_g_ml_of_vitamin_k1_and_5_sheep_blood.yaml",
-    "culturemech_id": "CultureMech:009342",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "bhi_glucose_medium",
-    "file_path": "bacterial/bhi_glucose_medium.yaml",
-    "culturemech_id": "CultureMech:001983",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater",
-    "file_path": "fungal/yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater.yaml",
-    "culturemech_id": "CultureMech:010536",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "half_strength_nutrient_broth_or_agar",
-    "file_path": "bacterial/half_strength_nutrient_broth_or_agar.yaml",
-    "culturemech_id": "CultureMech:001813",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "yeast_extract_malt_extract_agar_isp_medium_no_2_ph_5_5",
-    "file_path": "bacterial/yeast_extract_malt_extract_agar_isp_medium_no_2_ph_5_5.yaml",
-    "culturemech_id": "CultureMech:008390",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M942_Brain_Heart_Infusion_Agar_With_5_Rabbit_Blood",
-    "file_path": "bacterial/TOGO_M942_Brain_Heart_Infusion_Agar_With_5_Rabbit_Blood.yaml",
-    "culturemech_id": "CultureMech:010365",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "TOGO_M3116_Nutrient_Agar",
-    "file_path": "bacterial/TOGO_M3116_Nutrient_Agar.yaml",
-    "culturemech_id": "CultureMech:009588",
-    "stratum": "WELL_KNOWN"
-  },
-  {
-    "recipe_name": "lb_luria_bertani_medium",
-    "file_path": "bacterial/lb_luria_bertani_medium.yaml",
-    "culturemech_id": "CultureMech:001486",
-    "stratum": "WELL_KNOWN"
-  },
-  {
     "recipe_name": "anaerobic_sulfolobales_medium",
     "file_path": "archaea/anaerobic_sulfolobales_medium.yaml",
     "culturemech_id": "CultureMech:010119",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "TOGO_M923_Dethiosulfovibrio_Belb1_Medium",
+    "file_path": "bacterial/TOGO_M923_Dethiosulfovibrio_Belb1_Medium.yaml",
+    "culturemech_id": "CultureMech:010344",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "frey_broth",
+    "file_path": "bacterial/frey_broth.yaml",
+    "culturemech_id": "CultureMech:008822",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "brain_heart_infusion_agar_containing_7_horse_blood_and_0_4_isovitalex",
+    "file_path": "bacterial/brain_heart_infusion_agar_containing_7_horse_blood_and_0_4_isovitalex.yaml",
+    "culturemech_id": "CultureMech:009397",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "JCM_J1425_SPOROMUSA_MEDIUM_2",
@@ -912,10 +48,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "sd0_medium",
+    "file_path": "bacterial/sd0_medium.yaml",
+    "culturemech_id": "CultureMech:002698",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "desulfobulbus_sp_medium_freshwater_for_dsm_14880",
+    "file_path": "bacterial/desulfobulbus_sp_medium_freshwater_for_dsm_14880.yaml",
+    "culturemech_id": "CultureMech:009098",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "lb_rifampicin_medium",
+    "file_path": "bacterial/lb_rifampicin_medium.yaml",
+    "culturemech_id": "CultureMech:008553",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "desulfoglaeba_medium",
     "file_path": "bacterial/desulfoglaeba_medium.yaml",
     "culturemech_id": "CultureMech:000506",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "for_arhodomonas",
+    "file_path": "bacterial/for_arhodomonas.yaml",
+    "culturemech_id": "CultureMech:006871",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M1875_Thermus_medium",
+    "file_path": "bacterial/TOGO_M1875_Thermus_medium.yaml",
+    "culturemech_id": "CultureMech:008450",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "tryptic_soy_agar_tsa_carl_roth_gmbh_co",
+    "file_path": "bacterial/tryptic_soy_agar_tsa_carl_roth_gmbh_co.yaml",
+    "culturemech_id": "CultureMech:009450",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "rc_medium",
@@ -924,10 +96,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "methanobacterium_medium_ii",
+    "file_path": "archaea/methanobacterium_medium_ii.yaml",
+    "culturemech_id": "CultureMech:003048",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "allen_medium",
+    "file_path": "bacterial/allen_medium.yaml",
+    "culturemech_id": "CultureMech:008820",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "nutrient_agar_broth",
+    "file_path": "bacterial/nutrient_agar_broth.yaml",
+    "culturemech_id": "CultureMech:008307",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "gemmatimonas_medium",
     "file_path": "bacterial/gemmatimonas_medium.yaml",
     "culturemech_id": "CultureMech:001129",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "chthonomonas_medium",
+    "file_path": "bacterial/chthonomonas_medium.yaml",
+    "culturemech_id": "CultureMech:000754",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M2297_Acidithiobacillus_ferrooxidans_Medium",
+    "file_path": "bacterial/TOGO_M2297_Acidithiobacillus_ferrooxidans_Medium.yaml",
+    "culturemech_id": "CultureMech:008883",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "yeast_extract_malt_extract_agar_isp_2_with_5_nacl",
+    "file_path": "bacterial/yeast_extract_malt_extract_agar_isp_2_with_5_nacl.yaml",
+    "culturemech_id": "CultureMech:008596",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "v2_medium",
@@ -936,10 +144,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "for_dsm_17771",
+    "file_path": "bacterial/for_dsm_17771.yaml",
+    "culturemech_id": "CultureMech:006915",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12",
+    "file_path": "bacterial/mn_marine_medium_atcc_medium_957_with_20_mcg_l_of_vitamin_b12.yaml",
+    "culturemech_id": "CultureMech:009056",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "1_100_nutrient_agar_no_2",
+    "file_path": "bacterial/1_100_nutrient_agar_no_2.yaml",
+    "culturemech_id": "CultureMech:002131",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "JCM_J54_POTATO-CARROT_AGAR",
     "file_path": "bacterial/JCM_J54_POTATO-CARROT_AGAR.yaml",
     "culturemech_id": "CultureMech:002897",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "desulfotomaculum_lam5_medium",
+    "file_path": "bacterial/desulfotomaculum_lam5_medium.yaml",
+    "culturemech_id": "CultureMech:002893",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M3231_Minimal_media",
+    "file_path": "bacterial/TOGO_M3231_Minimal_media.yaml",
+    "culturemech_id": "CultureMech:009671",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "yeast_extract_malt_extract_agar_isp_2",
+    "file_path": "fungal/yeast_extract_malt_extract_agar_isp_2.yaml",
+    "culturemech_id": "CultureMech:010528",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "KOMODO_651_R_8_A_H_medium",
@@ -948,10 +192,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "artificial_seawater_for_halophiles",
+    "file_path": "bacterial/artificial_seawater_for_halophiles.yaml",
+    "culturemech_id": "CultureMech:009844",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M2726_Clostridium_medium",
+    "file_path": "bacterial/TOGO_M2726_Clostridium_medium.yaml",
+    "culturemech_id": "CultureMech:009276",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "2_malt_extract_agar",
+    "file_path": "bacterial/2_malt_extract_agar.yaml",
+    "culturemech_id": "CultureMech:008671",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "varel_bryant_medium_glucose_nomet_dtt_nas_b12_nonitrogen",
     "file_path": "specialized/varel_bryant_medium_glucose_nomet_dtt_nas_b12_nonitrogen.yaml",
     "culturemech_id": "CultureMech:015780",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "TOGO_M1041_MPOB_Medium",
+    "file_path": "bacterial/TOGO_M1041_MPOB_Medium.yaml",
+    "culturemech_id": "CultureMech:007557",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "mag_modified_arabinose_gluconate_medium",
+    "file_path": "bacterial/mag_modified_arabinose_gluconate_medium.yaml",
+    "culturemech_id": "CultureMech:001150",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "r2a_agar",
+    "file_path": "bacterial/r2a_agar.yaml",
+    "culturemech_id": "CultureMech:002706",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "m17_broth_containing_glucose",
@@ -960,10 +240,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "methanolinea_medium",
+    "file_path": "archaea/methanolinea_medium.yaml",
+    "culturemech_id": "CultureMech:002777",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M2228_Friis_medium",
+    "file_path": "bacterial/TOGO_M2228_Friis_medium.yaml",
+    "culturemech_id": "CultureMech:008816",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "blood_agar_tsa_with_5_sheep_blood_remel",
+    "file_path": "bacterial/blood_agar_tsa_with_5_sheep_blood_remel.yaml",
+    "culturemech_id": "CultureMech:009339",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "trace_element_solution_medium_929",
     "file_path": "bacterial/trace_element_solution_medium_929.yaml",
     "culturemech_id": "CultureMech:004330",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "KOMODO_253_medium_FOR_ECTOTHIORHODOSPIRA",
+    "file_path": "bacterial/KOMODO_253_medium_FOR_ECTOTHIORHODOSPIRA.yaml",
+    "culturemech_id": "CultureMech:004655",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "anaerobic_freshwater_fwm_medium_for_dsm_15978",
+    "file_path": "bacterial/anaerobic_freshwater_fwm_medium_for_dsm_15978.yaml",
+    "culturemech_id": "CultureMech:009205",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M2199_LB_Agar_Broth_Miller",
+    "file_path": "bacterial/TOGO_M2199_LB_Agar_Broth_Miller.yaml",
+    "culturemech_id": "CultureMech:008791",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "medium_104_modified_for_dsm_21651",
@@ -972,10 +288,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "TOGO_M1377_Glucose_bicarbonate-Buffered_Medium",
+    "file_path": "bacterial/TOGO_M1377_Glucose_bicarbonate-Buffered_Medium.yaml",
+    "culturemech_id": "CultureMech:007916",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "mineral_medium_jagmann",
+    "file_path": "bacterial/mineral_medium_jagmann.yaml",
+    "culturemech_id": "CultureMech:001199",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "JCM_J100_ALKALINE_NUTRIENT_AGAR",
+    "file_path": "bacterial/JCM_J100_ALKALINE_NUTRIENT_AGAR.yaml",
+    "culturemech_id": "CultureMech:002194",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "th_agar",
     "file_path": "bacterial/th_agar.yaml",
     "culturemech_id": "CultureMech:002731",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "acidianus_medium_anaerobic",
+    "file_path": "specialized/acidianus_medium_anaerobic.yaml",
+    "culturemech_id": "CultureMech:015354",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "medium_for_strain_r_1",
+    "file_path": "bacterial/medium_for_strain_r_1.yaml",
+    "culturemech_id": "CultureMech:008433",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "m9_farmer_et_al",
+    "file_path": "bacterial/m9_farmer_et_al.yaml",
+    "culturemech_id": "CultureMech:007010",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "NBRC_1021",
@@ -984,10 +336,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "thiorhodococcus_medium",
+    "file_path": "bacterial/thiorhodococcus_medium.yaml",
+    "culturemech_id": "CultureMech:000816",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "chopped_meat_medium_with_1_glucose",
+    "file_path": "bacterial/chopped_meat_medium_with_1_glucose.yaml",
+    "culturemech_id": "CultureMech:009305",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR",
+    "file_path": "bacterial/KOMODO_672_HALF_STRENGTH_NUTRIENT_BROTH_OR_AGAR.yaml",
+    "culturemech_id": "CultureMech:006268",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM",
     "file_path": "bacterial/KOMODO_492_CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml",
     "culturemech_id": "CultureMech:005620",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "for_dsm_17721",
+    "file_path": "bacterial/for_dsm_17721.yaml",
+    "culturemech_id": "CultureMech:003631",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "formate_medium",
+    "file_path": "bacterial/formate_medium.yaml",
+    "culturemech_id": "CultureMech:009652",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "sea_water_luria_bertani_medium",
+    "file_path": "bacterial/sea_water_luria_bertani_medium.yaml",
+    "culturemech_id": "CultureMech:001039",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "trace_elements_solution_medium_1019",
@@ -996,10 +384,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "yem_agar",
+    "file_path": "bacterial/yem_agar.yaml",
+    "culturemech_id": "CultureMech:009635",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "clostridium_thermocellum_medium_d58_medium",
+    "file_path": "bacterial/clostridium_thermocellum_medium_d58_medium.yaml",
+    "culturemech_id": "CultureMech:008330",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "mueller_hinton_medium",
+    "file_path": "bacterial/mueller_hinton_medium.yaml",
+    "culturemech_id": "CultureMech:009463",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "batch_cultivation_medium_for_ta1",
     "file_path": "bacterial/batch_cultivation_medium_for_ta1.yaml",
     "culturemech_id": "CultureMech:007209",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "TOGO_M1634_Methanosarcina_Medium",
+    "file_path": "archaea/TOGO_M1634_Methanosarcina_Medium.yaml",
+    "culturemech_id": "CultureMech:008189",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "dsm_135_medium",
+    "file_path": "bacterial/dsm_135_medium.yaml",
+    "culturemech_id": "CultureMech:009613",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "r2a_with_artificial_soda_salt_lake_water",
+    "file_path": "bacterial/r2a_with_artificial_soda_salt_lake_water.yaml",
+    "culturemech_id": "CultureMech:001197",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "KOMODO_391-1_For_DSM_4254",
@@ -1008,10 +432,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "thermodesulfovibrio_yellowstonii_medium",
+    "file_path": "bacterial/thermodesulfovibrio_yellowstonii_medium.yaml",
+    "culturemech_id": "CultureMech:001883",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "gbs_salts_modified_for_thermocrinis_jamiesonii",
+    "file_path": "bacterial/gbs_salts_modified_for_thermocrinis_jamiesonii.yaml",
+    "culturemech_id": "CultureMech:000953",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M2362_Columbia_Blood_Agar",
+    "file_path": "bacterial/TOGO_M2362_Columbia_Blood_Agar.yaml",
+    "culturemech_id": "CultureMech:008948",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "medium_402_modified_for_dsm_18237",
     "file_path": "bacterial/medium_402_modified_for_dsm_18237.yaml",
     "culturemech_id": "CultureMech:005203",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "KOMODO_1038_ACIDICALDUS_medium",
+    "file_path": "bacterial/KOMODO_1038_ACIDICALDUS_medium.yaml",
+    "culturemech_id": "CultureMech:003552",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M3036_Thiomonas_cuprina_medium",
+    "file_path": "bacterial/TOGO_M3036_Thiomonas_cuprina_medium.yaml",
+    "culturemech_id": "CultureMech:009548",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "r2a_agar_with_2_nacl",
+    "file_path": "bacterial/r2a_agar_with_2_nacl.yaml",
+    "culturemech_id": "CultureMech:002325",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "KOMODO_1181_METHYLOCELLA_SILVERSTRIS_MEDIUM",
@@ -1020,10 +480,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "lactate_bicarbonate_buffered_medium",
+    "file_path": "bacterial/lactate_bicarbonate_buffered_medium.yaml",
+    "culturemech_id": "CultureMech:003203",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M2692_Alkaline_xylan_medium",
+    "file_path": "bacterial/TOGO_M2692_Alkaline_xylan_medium.yaml",
+    "culturemech_id": "CultureMech:009244",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "modified_m9_medium",
+    "file_path": "bacterial/modified_m9_medium.yaml",
+    "culturemech_id": "CultureMech:009533",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "DSMZ_1405_PYG_MEDIUM_MODIFIED",
     "file_path": "bacterial/DSMZ_1405_PYG_MEDIUM_MODIFIED.yaml",
     "culturemech_id": "CultureMech:000866",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "medium_for_strain_mp_01",
+    "file_path": "bacterial/medium_for_strain_mp_01.yaml",
+    "culturemech_id": "CultureMech:010405",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "medium_for_strains_ja121_and_ja322",
+    "file_path": "bacterial/medium_for_strains_ja121_and_ja322.yaml",
+    "culturemech_id": "CultureMech:008370",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "nutrient_agar_oxoid_cm3_with_phosphate",
+    "file_path": "bacterial/nutrient_agar_oxoid_cm3_with_phosphate.yaml",
+    "culturemech_id": "CultureMech:001733",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "histidine_salt_schaechter_et_al",
@@ -1032,10 +528,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "sdo_medium",
+    "file_path": "bacterial/sdo_medium.yaml",
+    "culturemech_id": "CultureMech:000590",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "minimal_medium_containing_nicotin",
+    "file_path": "bacterial/minimal_medium_containing_nicotin.yaml",
+    "culturemech_id": "CultureMech:009420",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M492_1_2_MRS_1_2_BHI_Agar",
+    "file_path": "bacterial/TOGO_M492_1_2_MRS_1_2_BHI_Agar.yaml",
+    "culturemech_id": "CultureMech:009880",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "TOGO_M970_Peat_Medium_2_For_Methanobacteria",
     "file_path": "archaea/TOGO_M970_Peat_Medium_2_For_Methanobacteria.yaml",
     "culturemech_id": "CultureMech:010396",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "TOGO_M678_Magnetospirillum_Gryphiswaldense_Medium",
+    "file_path": "bacterial/TOGO_M678_Magnetospirillum_Gryphiswaldense_Medium.yaml",
+    "culturemech_id": "CultureMech:010082",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "medium_for_freshwater_flexibacteria",
+    "file_path": "bacterial/medium_for_freshwater_flexibacteria.yaml",
+    "culturemech_id": "CultureMech:008096",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M18_YM_Agar",
+    "file_path": "bacterial/TOGO_M18_YM_Agar.yaml",
+    "culturemech_id": "CultureMech:008476",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "medium_830_modified_for_dsm_18704",
@@ -1044,10 +576,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "marine_h2_using_methanogen_medium",
+    "file_path": "archaea/marine_h2_using_methanogen_medium.yaml",
+    "culturemech_id": "CultureMech:008267",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M2576_Modified_chopped_meat_medium",
+    "file_path": "bacterial/TOGO_M2576_Modified_chopped_meat_medium.yaml",
+    "culturemech_id": "CultureMech:009145",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "m9_minimal_media_plus",
+    "file_path": "specialized/m9_minimal_media_plus.yaml",
+    "culturemech_id": "CultureMech:015550",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "beijerinckia_medium",
     "file_path": "bacterial/beijerinckia_medium.yaml",
     "culturemech_id": "CultureMech:000556",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "KOMODO_1174_NITRINCOLA_medium",
+    "file_path": "bacterial/KOMODO_1174_NITRINCOLA_medium.yaml",
+    "culturemech_id": "CultureMech:003894",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "actinotalea_fermentas_medium",
+    "file_path": "bacterial/actinotalea_fermentas_medium.yaml",
+    "culturemech_id": "CultureMech:008423",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "brain_heart_infusion_2_nacl",
+    "file_path": "bacterial/brain_heart_infusion_2_nacl.yaml",
+    "culturemech_id": "CultureMech:008546",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "KOMODO_726_RHIZOMONAS_SUBERIFACIENS_medium",
@@ -1056,10 +624,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "methanosalsum_wen5_medium",
+    "file_path": "archaea/methanosalsum_wen5_medium.yaml",
+    "culturemech_id": "CultureMech:001829",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M3199_Defined_minimal_medium",
+    "file_path": "bacterial/TOGO_M3199_Defined_minimal_medium.yaml",
+    "culturemech_id": "CultureMech:009640",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M1707_Casamino_acids-peptone-Czapek_s_agar",
+    "file_path": "bacterial/TOGO_M1707_Casamino_acids-peptone-Czapek_s_agar.yaml",
+    "culturemech_id": "CultureMech:008269",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "TOGO_M160_Halobacteria_Medium",
     "file_path": "archaea/TOGO_M160_Halobacteria_Medium.yaml",
     "culturemech_id": "CultureMech:008163",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "acidianus_infernus_medium",
+    "file_path": "archaea/acidianus_infernus_medium.yaml",
+    "culturemech_id": "CultureMech:005077",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "medium_for_marine_flexibacteria",
+    "file_path": "bacterial/medium_for_marine_flexibacteria.yaml",
+    "culturemech_id": "CultureMech:008091",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "anaerobic_tryptic_soy_broth_medium",
+    "file_path": "specialized/anaerobic_tryptic_soy_broth_medium.yaml",
+    "culturemech_id": "CultureMech:015369",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "thiobacillus_thioparus_tk_m_medium",
@@ -1068,10 +672,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "marichromatium_bheemlicum_medium",
+    "file_path": "bacterial/marichromatium_bheemlicum_medium.yaml",
+    "culturemech_id": "CultureMech:002881",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M3228_Defined_medium",
+    "file_path": "bacterial/TOGO_M3228_Defined_medium.yaml",
+    "culturemech_id": "CultureMech:009667",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "r2a_fumarate_anaerobic",
+    "file_path": "bacterial/r2a_fumarate_anaerobic.yaml",
+    "culturemech_id": "CultureMech:009554",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "mme_nonitrogen_nocarbon",
     "file_path": "specialized/mme_nonitrogen_nocarbon.yaml",
     "culturemech_id": "CultureMech:015600",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "for_dsm_24312",
+    "file_path": "bacterial/for_dsm_24312.yaml",
+    "culturemech_id": "CultureMech:003633",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "leeming_amp_notman_agar_lna_leeming_amp_notman_1987_in_the_yeasts_a_taxonomic_study_5th_edn",
+    "file_path": "bacterial/leeming_amp_notman_agar_lna_leeming_amp_notman_1987_in_the_yeasts_a_taxonomic_study_5th_edn.yaml",
+    "culturemech_id": "CultureMech:008670",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "malt_extract_agar",
+    "file_path": "fungal/malt_extract_agar.yaml",
+    "culturemech_id": "CultureMech:010520",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "KOMODO_877_LUEDEMANN_medium_LUEDEMANN_1968",
@@ -1080,10 +720,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "succinate_minimal_salts_medium_sms",
+    "file_path": "bacterial/succinate_minimal_salts_medium_sms.yaml",
+    "culturemech_id": "CultureMech:000833",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "leeming_amp_notman_agar_modified_mlna",
+    "file_path": "bacterial/leeming_amp_notman_agar_modified_mlna.yaml",
+    "culturemech_id": "CultureMech:008353",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "KOMODO_952_1_10_NUTRIENT_AGAR_NO.2",
+    "file_path": "bacterial/KOMODO_952_1_10_NUTRIENT_AGAR_NO.2.yaml",
+    "culturemech_id": "CultureMech:006895",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "levulinic_acid_medium",
     "file_path": "bacterial/levulinic_acid_medium.yaml",
     "culturemech_id": "CultureMech:008697",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "nasu_iron_reducer_medium",
+    "file_path": "bacterial/nasu_iron_reducer_medium.yaml",
+    "culturemech_id": "CultureMech:002199",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M2378_Natronobacteria_medium",
+    "file_path": "bacterial/TOGO_M2378_Natronobacteria_medium.yaml",
+    "culturemech_id": "CultureMech:008962",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "brain_heart_infusion_bhi_with_sodium_acetate",
+    "file_path": "bacterial/brain_heart_infusion_bhi_with_sodium_acetate.yaml",
+    "culturemech_id": "CultureMech:009557",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "KOMODO_650_CENTENUM_medium",
@@ -1092,10 +768,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "KOMODO_749_THERMODESULFOVIBRIO_YELLOWSTONII_medium",
+    "file_path": "bacterial/KOMODO_749_THERMODESULFOVIBRIO_YELLOWSTONII_medium.yaml",
+    "culturemech_id": "CultureMech:006400",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "enriched_anaerobe_medium",
+    "file_path": "bacterial/enriched_anaerobe_medium.yaml",
+    "culturemech_id": "CultureMech:009304",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "m9_minimal_medium_with_acetate",
+    "file_path": "bacterial/m9_minimal_medium_with_acetate.yaml",
+    "culturemech_id": "CultureMech:007300",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "reactivation_with_liquid_medium_115",
     "file_path": "bacterial/reactivation_with_liquid_medium_115.yaml",
     "culturemech_id": "CultureMech:000599",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "rhodovulum_imhoffii_medium",
+    "file_path": "bacterial/rhodovulum_imhoffii_medium.yaml",
+    "culturemech_id": "CultureMech:002871",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "clostridia_growth_medium_cgm",
+    "file_path": "bacterial/clostridia_growth_medium_cgm.yaml",
+    "culturemech_id": "CultureMech:009356",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M2511_brain_heart_infusion_broth",
+    "file_path": "bacterial/TOGO_M2511_brain_heart_infusion_broth.yaml",
+    "culturemech_id": "CultureMech:009083",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "caryophanon_latum_medium",
@@ -1104,10 +816,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "marine_methanobacterium_medium",
+    "file_path": "archaea/marine_methanobacterium_medium.yaml",
+    "culturemech_id": "CultureMech:007804",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "medium_for_strains_ja145_ja193_ja310_ja334_ja415_ja430_ja447_and_ja643",
+    "file_path": "bacterial/medium_for_strains_ja145_ja193_ja310_ja334_ja415_ja430_ja447_and_ja643.yaml",
+    "culturemech_id": "CultureMech:008408",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M94_Nutrient_Agar_With_25_Soil_Extract",
+    "file_path": "bacterial/TOGO_M94_Nutrient_Agar_With_25_Soil_Extract.yaml",
+    "culturemech_id": "CultureMech:010373",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "zmb_als_novaline",
     "file_path": "specialized/zmb_als_novaline.yaml",
     "culturemech_id": "CultureMech:015827",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "TOGO_M1275_Vallitalea_70B-A_Medium",
+    "file_path": "bacterial/TOGO_M1275_Vallitalea_70B-A_Medium.yaml",
+    "culturemech_id": "CultureMech:007808",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "chocolate_agar_polyvitex_pvx",
+    "file_path": "bacterial/chocolate_agar_polyvitex_pvx.yaml",
+    "culturemech_id": "CultureMech:008743",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M2520_R2A_Medium",
+    "file_path": "bacterial/TOGO_M2520_R2A_Medium.yaml",
+    "culturemech_id": "CultureMech:009090",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "medium_for_aciduric_thermophilic_bacillus_strains",
@@ -1116,10 +864,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine",
+    "file_path": "bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml",
+    "culturemech_id": "CultureMech:005622",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "basal_salts_medium_bsm_modified_from_that_of_hareland_et_al_j_bacteriol_121_272_285_1975_by_removal_of_the_nitriloacetic_acid",
+    "file_path": "bacterial/basal_salts_medium_bsm_modified_from_that_of_hareland_et_al_j_bacteriol_121_272_285_1975_by_removal_of_the_nitriloacetic_acid.yaml",
+    "culturemech_id": "CultureMech:008825",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "czapek_yeast_extract_agar_cya",
+    "file_path": "fungal/czapek_yeast_extract_agar_cya.yaml",
+    "culturemech_id": "CultureMech:010511",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "bicarbonate_buffered_medium_with_acethylene",
     "file_path": "bacterial/bicarbonate_buffered_medium_with_acethylene.yaml",
     "culturemech_id": "CultureMech:002412",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "methanospirillum_lacunae_medium",
+    "file_path": "archaea/methanospirillum_lacunae_medium.yaml",
+    "culturemech_id": "CultureMech:000735",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "brain_heart_infusion_bhi_broth_oxoid",
+    "file_path": "bacterial/brain_heart_infusion_bhi_broth_oxoid.yaml",
+    "culturemech_id": "CultureMech:008801",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M21_Brain_Heart_Infusion_Agar",
+    "file_path": "bacterial/TOGO_M21_Brain_Heart_Infusion_Agar.yaml",
+    "culturemech_id": "CultureMech:008793",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "medium_693_modified_for_dsm_22886",
@@ -1128,10 +912,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "KOMODO_1360_HIPPEA_JASONIAE_medium",
+    "file_path": "bacterial/KOMODO_1360_HIPPEA_JASONIAE_medium.yaml",
+    "culturemech_id": "CultureMech:004108",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "isosphaera_medium",
+    "file_path": "bacterial/isosphaera_medium.yaml",
+    "culturemech_id": "CultureMech:008891",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "brain_heart_infusion_agar_with_soil_extract",
+    "file_path": "bacterial/brain_heart_infusion_agar_with_soil_extract.yaml",
+    "culturemech_id": "CultureMech:002702",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "medium_65_modified_for_dsm_41868",
     "file_path": "bacterial/medium_65_modified_for_dsm_41868.yaml",
     "culturemech_id": "CultureMech:006201",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "natroniella_medium_replace_trace_element_solution_sl_4_medium_457_with_trace_element_solution_sl_11_medium_784",
+    "file_path": "bacterial/natroniella_medium_replace_trace_element_solution_sl_4_medium_457_with_trace_element_solution_sl_11_medium_784.yaml",
+    "culturemech_id": "CultureMech:006483",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "meiothermus_hypogaeus_medium",
+    "file_path": "bacterial/meiothermus_hypogaeus_medium.yaml",
+    "culturemech_id": "CultureMech:000920",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "columbia_blood_agar_containing_10_bovine_blood",
+    "file_path": "bacterial/columbia_blood_agar_containing_10_bovine_blood.yaml",
+    "culturemech_id": "CultureMech:009496",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "for_dsm_21650",
@@ -1140,10 +960,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "norris_ferroplasma_medium",
+    "file_path": "archaea/norris_ferroplasma_medium.yaml",
+    "culturemech_id": "CultureMech:002877",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M3200_Defined_minimal_medium",
+    "file_path": "bacterial/TOGO_M3200_Defined_minimal_medium.yaml",
+    "culturemech_id": "CultureMech:009643",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "luria_bertani_lb_medium_buffered_mops",
+    "file_path": "bacterial/luria_bertani_lb_medium_buffered_mops.yaml",
+    "culturemech_id": "CultureMech:009075",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "ysg_medium_ph_4_5",
     "file_path": "bacterial/ysg_medium_ph_4_5.yaml",
     "culturemech_id": "CultureMech:008347",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "geothermobacter_medium",
+    "file_path": "bacterial/geothermobacter_medium.yaml",
+    "culturemech_id": "CultureMech:002163",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "brain_heart_infusion_agar_amended_with_5_v_v_laked_horse_blood",
+    "file_path": "bacterial/brain_heart_infusion_agar_amended_with_5_v_v_laked_horse_blood.yaml",
+    "culturemech_id": "CultureMech:009466",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M16_1_10_Nutrient_Agar_NO._2",
+    "file_path": "bacterial/TOGO_M16_1_10_Nutrient_Agar_NO._2.yaml",
+    "culturemech_id": "CultureMech:008261",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "Bristol_Medium",
@@ -1152,10 +1008,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "ird_marine_clostrida_medium",
+    "file_path": "specialized/ird_marine_clostrida_medium.yaml",
+    "culturemech_id": "CultureMech:015423",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "desulfovibrio_mv_medium_for_dsm_13257",
+    "file_path": "bacterial/desulfovibrio_mv_medium_for_dsm_13257.yaml",
+    "culturemech_id": "CultureMech:009288",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "tryptic_soy_broth_medium_supplemented_with_0_5_yeast_extract_0_05_cysteine_hcl_h2o_0_5_mg_ml_of_hemin_2_g_ml_of_vitamin_k1_and_5_sheep_blood",
+    "file_path": "bacterial/tryptic_soy_broth_medium_supplemented_with_0_5_yeast_extract_0_05_cysteine_hcl_h2o_0_5_mg_ml_of_hemin_2_g_ml_of_vitamin_k1_and_5_sheep_blood.yaml",
+    "culturemech_id": "CultureMech:009342",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "KOMODO_1108a_CYS_MEDIUM_WITH_MODIFIED_NACL_CONCENTRATION",
     "file_path": "bacterial/KOMODO_1108a_CYS_MEDIUM_WITH_MODIFIED_NACL_CONCENTRATION.yaml",
     "culturemech_id": "CultureMech:003809",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "for_dsm_19306",
+    "file_path": "bacterial/for_dsm_19306.yaml",
+    "culturemech_id": "CultureMech:006946",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "alkaline_halophile_medium",
+    "file_path": "bacterial/alkaline_halophile_medium.yaml",
+    "culturemech_id": "CultureMech:008289",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "bhi_glucose_medium",
+    "file_path": "bacterial/bhi_glucose_medium.yaml",
+    "culturemech_id": "CultureMech:001983",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "s_w",
@@ -1164,10 +1056,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "lca",
+    "file_path": "bacterial/lca.yaml",
+    "culturemech_id": "CultureMech:008306",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "medium_for_tick_cells_rickettsia",
+    "file_path": "bacterial/medium_for_tick_cells_rickettsia.yaml",
+    "culturemech_id": "CultureMech:001032",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater",
+    "file_path": "fungal/yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater.yaml",
+    "culturemech_id": "CultureMech:010536",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "JCM_J1429_M1H_NAG_ASW",
     "file_path": "bacterial/JCM_J1429_M1H_NAG_ASW.yaml",
     "culturemech_id": "CultureMech:015864",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "t49_medium",
+    "file_path": "bacterial/t49_medium.yaml",
+    "culturemech_id": "CultureMech:004041",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M2573_Tryptic_Soy_Agar_Broth_with_5_Sheep_Blood_defibrinated",
+    "file_path": "bacterial/TOGO_M2573_Tryptic_Soy_Agar_Broth_with_5_Sheep_Blood_defibrinated.yaml",
+    "culturemech_id": "CultureMech:009142",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "half_strength_nutrient_broth_or_agar",
+    "file_path": "bacterial/half_strength_nutrient_broth_or_agar.yaml",
+    "culturemech_id": "CultureMech:001813",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "mycoplasma_medium_with_sucrose",
@@ -1176,10 +1104,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "rhodomicrobium_medium",
+    "file_path": "bacterial/rhodomicrobium_medium.yaml",
+    "culturemech_id": "CultureMech:008166",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "TOGO_M2711_Clostridium_Cellulolytic_medium",
+    "file_path": "bacterial/TOGO_M2711_Clostridium_Cellulolytic_medium.yaml",
+    "culturemech_id": "CultureMech:009263",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "yeast_extract_malt_extract_agar_isp_medium_no_2_ph_5_5",
+    "file_path": "bacterial/yeast_extract_malt_extract_agar_isp_medium_no_2_ph_5_5.yaml",
+    "culturemech_id": "CultureMech:008390",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "medium_971_modified_for_dsm_18087",
     "file_path": "bacterial/medium_971_modified_for_dsm_18087.yaml",
     "culturemech_id": "CultureMech:006928",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "rhodobium_gokurnum_medium",
+    "file_path": "bacterial/rhodobium_gokurnum_medium.yaml",
+    "culturemech_id": "CultureMech:002867",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2",
+    "file_path": "bacterial/columbia_broth_supplemented_with_0_01_3_nad_and_25_mm_cacl2.yaml",
+    "culturemech_id": "CultureMech:008843",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M942_Brain_Heart_Infusion_Agar_With_5_Rabbit_Blood",
+    "file_path": "bacterial/TOGO_M942_Brain_Heart_Infusion_Agar_With_5_Rabbit_Blood.yaml",
+    "culturemech_id": "CultureMech:010365",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "medium_for_chlorobium_ferrooxidans",
@@ -1188,10 +1152,46 @@
     "stratum": "OTHER"
   },
   {
+    "recipe_name": "modified_balchs_methanogen_medium_1_b",
+    "file_path": "archaea/modified_balchs_methanogen_medium_1_b.yaml",
+    "culturemech_id": "CultureMech:000304",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "k_101_flexibacter_medium",
+    "file_path": "bacterial/k_101_flexibacter_medium.yaml",
+    "culturemech_id": "CultureMech:009160",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "TOGO_M3116_Nutrient_Agar",
+    "file_path": "bacterial/TOGO_M3116_Nutrient_Agar.yaml",
+    "culturemech_id": "CultureMech:009588",
+    "stratum": "WELL_KNOWN"
+  },
+  {
     "recipe_name": "TOGO_M1117_Halomonas_CUG_Medium",
     "file_path": "bacterial/TOGO_M1117_Halomonas_CUG_Medium.yaml",
     "culturemech_id": "CultureMech:007637",
     "stratum": "OTHER"
+  },
+  {
+    "recipe_name": "planctomyces_pyreformis_medium",
+    "file_path": "bacterial/planctomyces_pyreformis_medium.yaml",
+    "culturemech_id": "CultureMech:001009",
+    "stratum": "SEMI_DEFINED"
+  },
+  {
+    "recipe_name": "defined_minimal_medium",
+    "file_path": "bacterial/defined_minimal_medium.yaml",
+    "culturemech_id": "CultureMech:009638",
+    "stratum": "DEEP_RESEARCH"
+  },
+  {
+    "recipe_name": "lb_luria_bertani_medium",
+    "file_path": "bacterial/lb_luria_bertani_medium.yaml",
+    "culturemech_id": "CultureMech:001486",
+    "stratum": "WELL_KNOWN"
   },
   {
     "recipe_name": "cornmeal_seawater_agar_cmswa",
