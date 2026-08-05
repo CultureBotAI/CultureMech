@@ -194,6 +194,19 @@ audit-filename-collisions *args="":
 retype-solution-records *args="":
     uv run --extra dev python scripts/retype_solution_records.py {{args}}
 
+# Inventory and classify every tracked derived artifact, and verify that the
+# freshness-checkable ones still match a fresh run (#145). A record move leaves
+# stale paths in artifacts nothing refreshes; only the indexes failed loudly.
+[group('QC')]
+audit-derived-artifacts *args="":
+    uv run --extra dev python scripts/audit_derived_artifacts.py {{args}}
+
+# The one follow-up step after a bulk record move: regenerate the current-view
+# artifacts, then review and commit the diff.
+[group('Curation')]
+refresh-derived:
+    uv run --extra dev python scripts/audit_derived_artifacts.py --refresh
+
 [group('QC')]
 triage-missing-compositions *args="":
     uv run --extra dev python scripts/triage_missing_compositions.py {{args}}

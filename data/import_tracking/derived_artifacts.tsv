@@ -1,0 +1,94 @@
+artifact	kind	reason	writer	freshness_checked
+data/MEDIA_SOURCES.tsv	UNKNOWN	no writer found		
+data/chemical_name_to_chebi_mapping.json	UNKNOWN	writer purity unestablished (build_compound_to_chebi_mapping.py)	scripts/build_compound_to_chebi_mapping.py	
+data/chemical_name_to_chebi_mapping_enhanced.json	CURRENT_VIEW	generate_ingredient_umap.py	scripts/build_enhanced_compound_mapping.py; scripts/build_fast_compound_mapping.py; scripts/generate_ingredient_umap.py; src/culturemech/visualization/umap_generator.py	
+data/compound_to_chebi_mapping.json	UNKNOWN	writer purity unestablished (build_compound_to_chebi_mapping.py)	scripts/build_compound_to_chebi_mapping.py	
+data/compound_to_chebi_mapping_enhanced.json	UNKNOWN	writer purity unestablished (build_enhanced_compound_mapping.py)	scripts/build_enhanced_compound_mapping.py; scripts/build_fast_compound_mapping.py; scripts/enrich_solutions_with_chebi.py	
+data/culturemech_id_registry.tsv	CURRENT_VIEW	refresh_id_registry.py	scripts/assign_culturemech_ids.py; scripts/refresh_id_registry.py; src/culturemech/utils/id_utils.py	
+data/curation/atcc_crossref_candidates.json	UNKNOWN	no writer found		
+data/curation/multi_db_crossref_candidates.json	UNKNOWN	writer purity unestablished (multi_database_crossref.py)	src/culturemech/enrich/multi_database_crossref.py	
+data/curation/organism_candidates.json	UNKNOWN	writer purity unestablished (curation_validator.py)	src/culturemech/curate/curation_validator.py; src/culturemech/curate/organism_extractor.py; src/culturemech/enrich/backfill_pipeline.py	
+data/curation/organism_review.csv	UNKNOWN	writer purity unestablished (curation_validator.py)	src/culturemech/curate/curation_validator.py	
+data/import_tracking/communitymech_imports.json	UNKNOWN	writer purity unestablished (import_from_communitymech.py)	scripts/import_from_communitymech.py; scripts/update_communitymech_links.py	
+data/import_tracking/derived_artifacts.tsv	UNKNOWN	no writer found		
+data/import_tracking/mediadive_composition_ids.json	CURRENT_VIEW	triage_missing_compositions.py	scripts/triage_missing_compositions.py	
+data/import_tracking/mediaingredientmech_migration_log.json	UNKNOWN	no writer found		
+data/import_tracking/new_solution_ingredients_vs_mediaingredientmech.tsv	UNKNOWN	no writer found		
+data/import_tracking/reports/axis_research_batch.json	CURRENT_VIEW	sample_axis_research_batch.py	scripts/sample_axis_research_batch.py	
+data/import_tracking/reports/batch2-curation-proposals.json	UNKNOWN	no writer found		
+data/import_tracking/reports/chebi_regrounding_changes.tsv	SNAPSHOT	one-time migration (migrate_chebi_regrounding.py)	scripts/migrate_chebi_regrounding.py	
+data/import_tracking/reports/composition_type_conflicts.tsv	CURRENT_VIEW	audit_composition_type.py	scripts/audit_composition_type.py	yes
+data/import_tracking/reports/composition_type_semi_defined.tsv	UNKNOWN	no writer found		
+data/import_tracking/reports/concentration_plausibility.tsv	CURRENT_VIEW	audit_concentration_plausibility.py	scripts/audit_concentration_plausibility.py	yes
+data/import_tracking/reports/concentration_plausibility_by_record.tsv	UNKNOWN	no writer found		
+data/import_tracking/reports/deep_research_priority.json	CURRENT_VIEW	prioritize_deep_research_candidates.py	scripts/prioritize_deep_research_candidates.py	
+data/import_tracking/reports/deep_research_priority_top100.json	CURRENT_VIEW	prioritize_deep_research_candidates.py	scripts/prioritize_deep_research_candidates.py; scripts/sample_axis_research_batch.py	
+data/import_tracking/reports/domain_category_audit.json	UNKNOWN	no writer found		
+data/import_tracking/reports/edison_batch.json	CURRENT_VIEW	prioritize_deep_research_candidates.py	scripts/analyze_media_quality.py; scripts/prioritize_deep_research_candidates.py; scripts/research_media_edison.py	
+data/import_tracking/reports/filename_collisions.tsv	CURRENT_VIEW	audit_filename_collisions.py	scripts/audit_filename_collisions.py	yes
+data/import_tracking/reports/g25_phase3_llm_curation.tsv	SNAPSHOT	one-time migration (migrate_kg_fallback_phase3_curation.py)	scripts/migrate_kg_fallback_phase3_curation.py	
+data/import_tracking/reports/kg_fallback_consensus_changes.tsv	SNAPSHOT	one-time migration (migrate_kg_fallback_to_consensus.py)	scripts/migrate_kg_fallback_to_consensus.py	
+data/import_tracking/reports/kg_fallback_phase2_changes.tsv	SNAPSHOT	one-time migration (migrate_kg_fallback_phase2_oak_ols.py)	scripts/migrate_kg_fallback_phase2_oak_ols.py	
+data/import_tracking/reports/kg_fallback_phase2_curator_review.tsv	SNAPSHOT	one-time migration (migrate_kg_fallback_phase2_oak_ols.py)	scripts/migrate_kg_fallback_phase2_oak_ols.py	
+data/import_tracking/reports/kg_fallback_phase3_changes.tsv	SNAPSHOT	one-time migration (migrate_kg_fallback_phase3_curation.py)	scripts/migrate_kg_fallback_phase3_curation.py	
+data/import_tracking/reports/mim_grounding_divergences.tsv	SNAPSHOT	one-time migration (migrate_legacy_mim_to_chebi.py)	scripts/migrate_legacy_mim_to_chebi.py	
+data/import_tracking/reports/missing_compositions.tsv	CURRENT_VIEW	triage_missing_compositions.py	scripts/triage_missing_compositions.py	yes
+data/import_tracking/reports/primary_term_canonicalize_changes.tsv	UNKNOWN	no writer found		
+data/import_tracking/reports/primary_term_reground_changes.tsv	UNKNOWN	no writer found		
+data/import_tracking/reports/review_need_ranking.tsv	CURRENT_VIEW	score_review_need.py	scripts/score_review_need.py	yes
+data/import_tracking/reports/selective_agent_mismatch.tsv	CURRENT_VIEW	audit_selective_agent_mismatch.py	scripts/audit_selective_agent_mismatch.py	yes
+data/import_tracking/reports/top5-curation-proposals.json	UNKNOWN	writer purity unestablished (apply_curation_proposals.py)	scripts/apply_curation_proposals.py	
+data/import_tracking/reports/unparsed_compositions.tsv	CURRENT_VIEW	report_unparsed_compositions.py	scripts/report_unparsed_compositions.py	yes
+data/import_tracking/researched_media.json	CURRENT_VIEW	prioritize_deep_research_candidates.py	scripts/prioritize_deep_research_candidates.py; scripts/refresh_researched_manifest.py; scripts/researched_manifest.py	
+data/import_tracking/schemas/manifest_v1.schema.json	UNKNOWN	no writer found		
+data/merge_yaml/merge_stats.json	UNKNOWN	writer purity unestablished (verify_merges.py)	scripts/verify_merges.py; src/culturemech/merge/merge_recipes.py	
+data/merge_yaml/merge_stats_2026.json	UNKNOWN	no writer found		
+data/merge_yaml/merge_stats_test.json	UNKNOWN	no writer found		
+data/merge_yaml/merged_2026/recipe_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/merge_yaml/merged_2026/recipe_statistics.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/algae_index.json	UNKNOWN	no writer found		
+data/normalized_yaml/archaea_index.json	UNKNOWN	no writer found		
+data/normalized_yaml/bacterial_index.json	UNKNOWN	no writer found		
+data/normalized_yaml/by_source_komodo_index.json	UNKNOWN	no writer found		
+data/normalized_yaml/by_source_mediadive_index.json	UNKNOWN	no writer found		
+data/normalized_yaml/by_source_togo_index.json	UNKNOWN	no writer found		
+data/normalized_yaml/by_source_unknown_index.json	UNKNOWN	no writer found		
+data/normalized_yaml/fungal_index.json	UNKNOWN	no writer found		
+data/normalized_yaml/recipe_index.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/recipe_statistics.json	CURRENT_VIEW	generate_recipe_indexes.py	scripts/generate_recipe_indexes.py	
+data/normalized_yaml/solutions/mediadive_solution_index.json	UNKNOWN	writer purity unestablished (import_mediadive_solutions.py)	scripts/import_mediadive_solutions.py; scripts/migrate_solutions_from_ingredients.py	
+data/normalized_yaml/solutions_index.json	UNKNOWN	no writer found		
+data/normalized_yaml/specialized_index.json	UNKNOWN	no writer found		
+data/raw/microbe-media-param/compound_mappings_strict_final.tsv	UNKNOWN	writer purity unestablished (chemical_mappings.py)	src/culturemech/import/chemical_mappings.py	
+data/raw/microbe-media-param/compound_mappings_strict_final_hydrate.tsv	UNKNOWN	writer purity unestablished (chemical_mappings.py)	src/culturemech/import/chemical_mappings.py	
+data/solution_to_chebi_mapping.json	UNKNOWN	writer purity unestablished (build_compound_to_chebi_mapping.py)	scripts/build_compound_to_chebi_mapping.py; scripts/build_enhanced_compound_mapping.py; scripts/build_fast_compound_mapping.py; src/culturemech/embedding/aggregator.py; src/culturemech/embedding/aggregator_yaml_source.py; src/culturemech/visualization/umap_generator.py	
+reports/archive/mim_algae_enrichment.json	SNAPSHOT	archived		
+reports/archive/mim_archaea_enrichment.json	SNAPSHOT	archived		
+reports/archive/mim_bacterial_dryrun.json	SNAPSHOT	archived		
+reports/archive/mim_bacterial_enrichment.json	SNAPSHOT	archived		
+reports/archive/mim_fungal_enrichment.json	SNAPSHOT	archived		
+reports/archive/mim_specialized_enrichment.json	SNAPSHOT	archived		
+reports/archive/validation_20260316.json	SNAPSHOT	archived		
+reports/archive/validation_20260316.tsv	SNAPSHOT	archived		
+reports/archive/validation_corrected_20260316.json	SNAPSHOT	archived		
+reports/archive/validation_corrected_20260316.tsv	SNAPSHOT	archived		
+reports/archive/validation_final_20260316.json	SNAPSHOT	archived		
+reports/archive/validation_final_20260316.tsv	SNAPSHOT	archived		
+reports/gap_fix_backlog.tsv	UNKNOWN	no writer found		
+reports/instance_validation_failures.tsv	UNKNOWN	writer purity unestablished (validate_strict.py)	scripts/validate_strict.py	
+reports/label_plausibility_2026-07-19.tsv	SNAPSHOT	dated filename		
+reports/label_plausibility_after_fixes.tsv	UNKNOWN	no writer found		
+reports/media_content_review_manifest.json	UNKNOWN	writer purity unestablished (build_media_content_review_manifest.py)	scripts/build_media_content_review_manifest.py	
+reports/media_content_review_manifest.tsv	UNKNOWN	writer purity unestablished (build_media_content_review_manifest.py)	scripts/build_media_content_review_manifest.py; scripts/propose_media_variant_links.py	
+reports/media_growth_review_manifest.json	UNKNOWN	writer purity unestablished (build_media_growth_review_manifest.py)	scripts/build_media_growth_review_manifest.py	
+reports/media_growth_review_manifest.tsv	UNKNOWN	writer purity unestablished (build_media_growth_review_html.py)	scripts/build_media_growth_review_html.py; scripts/build_media_growth_review_manifest.py	
+reports/media_variant_link_apply_plan.json	UNKNOWN	writer purity unestablished (apply_media_variant_links.py)	scripts/apply_media_variant_links.py	
+reports/media_variant_link_apply_plan.tsv	UNKNOWN	writer purity unestablished (apply_media_variant_links.py)	scripts/apply_media_variant_links.py	
+reports/media_variant_link_proposals.json	UNKNOWN	writer purity unestablished (propose_media_variant_links.py)	scripts/propose_media_variant_links.py	
+reports/media_variant_link_proposals.tsv	UNKNOWN	writer purity unestablished (apply_media_variant_links.py)	scripts/apply_media_variant_links.py; scripts/propose_media_variant_links.py	
+reports/media_variant_link_validation.tsv	UNKNOWN	writer purity unestablished (validate_media_variant_links.py)	scripts/validate_media_variant_links.py	
+reports/media_variant_parent_group_proposals.json	UNKNOWN	writer purity unestablished (propose_media_variant_links.py)	scripts/propose_media_variant_links.py	
+reports/media_variant_parent_group_proposals.tsv	UNKNOWN	writer purity unestablished (propose_media_variant_links.py)	scripts/propose_media_variant_links.py	
+reports/media_variation_candidate_groups.json	UNKNOWN	writer purity unestablished (build_media_content_review_manifest.py)	scripts/build_media_content_review_manifest.py	
+reports/media_variation_candidate_groups.tsv	UNKNOWN	writer purity unestablished (build_media_content_review_manifest.py)	scripts/build_media_content_review_manifest.py	
+reports/pipeline_writers_audit.tsv	UNKNOWN	no writer found		
