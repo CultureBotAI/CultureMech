@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-07-30T21:23:00
+# Generation date: 2026-08-04T18:26:13
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -2583,11 +2583,13 @@ class Dataset(YAMLRoot):
 # Enumerations
 class MediumTypeEnum(EnumDefinitionImpl):
     """
-    DEPRECATED single-axis classification of culture medium. It conflated three orthogonal properties (composition,
-    nutritional level, functional role) into one single-valued slot. Superseded by MediumCompositionTypeEnum
-    (composition_type), MediumNutritionalClassEnum (nutritional_class), and MediumFunctionalRoleEnum
-    (functional_role). Retained for backward compatibility; populate the three axis slots on new and migrated records
-    instead.
+    Single-axis classification of culture medium, MAINTAINED alongside the three orthogonal axes rather than replaced
+    by them. It conflates composition, nutritional level and functional role into one slot, which is why
+    MediumCompositionTypeEnum (composition_type), MediumNutritionalClassEnum (nutritional_class) and
+    MediumFunctionalRoleEnum (functional_role) exist and are the primary axes for new curation. This enum remains the
+    published single-valued view: populate BOTH, and keep this slot derived from composition_type. The per-value
+    "Migrates to" notes below define that derivation and are parsed by the consistency guard, so they are load-bearing
+    documentation rather than historical commentary.
     """
     DEFINED = PermissibleValue(
         text="DEFINED",
@@ -2618,7 +2620,7 @@ class MediumTypeEnum(EnumDefinitionImpl):
 
     _defn = EnumDefinition(
         name="MediumTypeEnum",
-        description="""DEPRECATED single-axis classification of culture medium. It conflated three orthogonal properties (composition, nutritional level, functional role) into one single-valued slot. Superseded by MediumCompositionTypeEnum (composition_type), MediumNutritionalClassEnum (nutritional_class), and MediumFunctionalRoleEnum (functional_role). Retained for backward compatibility; populate the three axis slots on new and migrated records instead.""",
+        description="""Single-axis classification of culture medium, MAINTAINED alongside the three orthogonal axes rather than replaced by them. It conflates composition, nutritional level and functional role into one slot, which is why MediumCompositionTypeEnum (composition_type), MediumNutritionalClassEnum (nutritional_class) and MediumFunctionalRoleEnum (functional_role) exist and are the primary axes for new curation. This enum remains the published single-valued view: populate BOTH, and keep this slot derived from composition_type. The per-value \"Migrates to\" notes below define that derivation and are parsed by the consistency guard, so they are load-bearing documentation rather than historical commentary.""",
     )
 
 class MediumCompositionTypeEnum(EnumDefinitionImpl):
