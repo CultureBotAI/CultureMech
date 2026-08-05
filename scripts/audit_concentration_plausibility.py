@@ -52,8 +52,9 @@ import argparse
 import csv
 import re
 import sys
+from collections.abc import Iterator
 from pathlib import Path
-from typing import Any, Iterator
+from typing import Any
 
 import yaml
 
@@ -226,8 +227,7 @@ def summarize_records(rows: list[dict[str, str]],
 
     out: list[dict[str, str]] = []
     for file_path, found in sorted(by_record.items()):
-        counts = {k: 0 for k in ("WATER_AS_VOLUME", "TRACE_SALT_AS_STOCK",
-                                 "INDICATOR_UNIT_SLIP")}
+        counts = dict.fromkeys(("WATER_AS_VOLUME", "TRACE_SALT_AS_STOCK", "INDICATOR_UNIT_SLIP"), 0)
         for r in found:
             counts[r["finding"]] += 1
         try:
@@ -299,8 +299,11 @@ def main(argv: list[str] | None = None) -> int:
     print(f"\nRecords holding a FLATTENED STOCK COCKTAIL: {cocktails}")
     print("  (>=3 flagged vitamin or trace rows and no `solutions:` block — "
           "the actionable subset)")
-    print(f"\nWrote {args.out.relative_to(REPO_ROOT)}")
-    print(f"Wrote {summary_path.relative_to(REPO_ROOT)}")
+    rel = args.out.relative_to(REPO_ROOT) if args.out.is_relative_to(REPO_ROOT) else args.out
+    print(f"\nWrote {rel}")
+    srel = (summary_path.relative_to(REPO_ROOT)
+            if summary_path.is_relative_to(REPO_ROOT) else summary_path)
+    print(f"Wrote {srel}")
     print("\nRead-only. Repairing the trace-element case means nesting the cocktail "
           "under a stock `solution` object with an addition volume — per-record curation.")
 

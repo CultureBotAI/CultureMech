@@ -206,7 +206,8 @@ def main(argv: list[str] | None = None) -> int:
     for k in ("IDENTICAL", "EQUIVALENT", "DIFFERENT", "UNREADABLE"):
         if k in tally:
             print(f"  {k:11s} {tally[k]}")
-    print(f"\nWrote {args.out.relative_to(REPO_ROOT)}")
+    rel = args.out.relative_to(REPO_ROOT) if args.out.is_relative_to(REPO_ROOT) else args.out
+    print(f"\nWrote {rel}")
     print("\nNothing was moved, renamed or deleted — classification only (#116 is curation).")
     return 0
 
