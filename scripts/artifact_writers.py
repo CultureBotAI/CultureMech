@@ -34,6 +34,13 @@ Deliberately conservative: an unparseable module, or a path built too indirectly
 to follow, yields "unknown" rather than a guess. A wrong "yes" is worse than an
 honest "unknown", because the whole point is to stop asserting things that are not
 established.
+
+## Known limitation
+
+There is no scope analysis, so a local variable that shadows a module constant and
+writes somewhere else produces a false "yes". No script in this repo currently does
+that, and ten spot-checked attributions all held up, but it is a real hole —
+tracked in #211 rather than left to be discovered.
 """
 
 from __future__ import annotations

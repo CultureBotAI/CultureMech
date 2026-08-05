@@ -141,3 +141,21 @@ def test_the_manifest_separates_writes_from_mentions():
     assert "research_media.py" in registry["mentioned_by"]
     assert "research_media.py" not in registry["writes"], (
         "a reader is listed as a writer again (#209)")
+
+
+def test_shadowing_is_a_known_false_positive(aw):
+    """#211. Pinned as CURRENT behaviour, not as desired behaviour.
+
+    Without scope analysis a local rebinding of a module constant's name looks
+    like a write to the constant's path. No script here does this today. If a fix
+    lands, this test should flip to expecting "no" — it exists so the hole is
+    visible rather than forgotten.
+    """
+    src = '''
+from pathlib import Path
+OUT = Path("data/report.tsv")
+def unrelated():
+    OUT = Path("/tmp/other.tsv")
+    OUT.write_text("x")
+'''
+    assert aw.writes_artifact(src, "report.tsv") == "yes"
