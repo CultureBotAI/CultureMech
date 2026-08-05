@@ -10,7 +10,6 @@ from pathlib import Path
 import pytest
 import yaml
 
-
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _SCRIPT_PATH = _REPO_ROOT / "scripts" / "prioritize_role_research_candidates.py"
 

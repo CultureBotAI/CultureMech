@@ -3,17 +3,22 @@
 Integration tests for SSSOM pipeline
 """
 
-import unittest
-import tempfile
-import yaml
-from pathlib import Path
-import pandas as pd
-
 import sys
+import tempfile
+import unittest
+from pathlib import Path
+
+import pandas as pd
+import yaml
+
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from scripts.extract_unique_ingredients import extract_unique_ingredients, extract_source_from_path
-from scripts.generate_sssom_mappings import generate_sssom_mappings, create_curie, validate_sssom_format
+from scripts.extract_unique_ingredients import extract_source_from_path, extract_unique_ingredients
+from scripts.generate_sssom_mappings import (
+    create_curie,
+    generate_sssom_mappings,
+    validate_sssom_format,
+)
 
 
 class TestIngredientExtraction(unittest.TestCase):

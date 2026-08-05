@@ -4,12 +4,10 @@ from __future__ import annotations
 
 import importlib.util
 import sys
-import textwrap
 from pathlib import Path
 
 import pytest
 import yaml
-
 
 _SCRIPT_PATH = Path(__file__).parent.parent / "scripts" / "render_media_role_graph.py"
 _SPEC = importlib.util.spec_from_file_location("_render_media_role_graph", _SCRIPT_PATH)

@@ -4,19 +4,18 @@ Unit tests for KGX export module.
 Tests the transform functions that extract edges from recipe YAML.
 """
 
-import pytest
 from culturemech.export.kgx_export import (
-    transform,
+    _format_evidence,
+    _get_term_id,
+    _make_edge_id,
+    _sanitize_id,
+    application_to_edge,
+    database_reference_to_edge,
     ingredient_to_edge,
     organism_to_edge,
-    application_to_edge,
     physical_state_to_edge,
-    database_reference_to_edge,
+    transform,
     variant_to_edge,
-    _get_term_id,
-    _format_evidence,
-    _sanitize_id,
-    _make_edge_id,
 )
 
 

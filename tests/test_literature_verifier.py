@@ -1,10 +1,9 @@
 """Tests for literature verifier."""
 
-import pytest
-from pathlib import Path
-from unittest.mock import Mock, patch, MagicMock
-import tempfile
 import os
+import tempfile
+from pathlib import Path
+from unittest.mock import Mock, patch
 
 from culturemech.enrich.literature_verifier import LiteratureVerifier
 

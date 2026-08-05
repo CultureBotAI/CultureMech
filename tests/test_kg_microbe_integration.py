@@ -13,9 +13,11 @@ Key query patterns:
 """
 
 import json
+from pathlib import Path
+
 import pytest
 import yaml
-from pathlib import Path
+
 from culturemech.export.kgx_export import transform
 
 

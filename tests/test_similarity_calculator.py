@@ -1,6 +1,7 @@
 """Tests for media similarity calculator."""
 
 import pytest
+
 from culturemech.taxonomy.similarity import SimilarityCalculator
 from culturemech.taxonomy.unit_converter import UnitConverter
 
