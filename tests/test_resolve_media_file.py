@@ -126,3 +126,49 @@ def test_repeated_resolution_does_not_rescan_the_corpus(rm, media_records):
     per_call = (time.perf_counter() - start) / len(targets)
     assert per_call < 0.05, (
         f"{per_call*1000:.0f} ms/resolution — the per-call corpus scan is back")
+
+
+# --- #208: the cached file list must not resurrect deleted records ----------
+
+
+def test_resolution_never_returns_a_path_that_does_not_exist(rm, tmp_path):
+    """`_media_files()` is cached, so it can name records that have since been
+    deleted. A fresh glob could not, which is why the pre-index version needed no
+    existence check in the scan tier — the cache introduced the hazard.
+
+    The caller does `load_media(path)` next, so a stale hit surfaced as a
+    FileNotFoundError from further away than the resolution that caused it.
+    """
+    rm.reset_resolution_caches()
+    victim = sorted(rm.MEDIA_DIR.glob("bacterial/*.yaml"))[0]
+    backup = victim.read_text()
+    rm._filename_index()
+    rm._media_files()
+    victim.unlink()
+    try:
+        try:
+            resolved = rm.resolve_media_file(victim.stem)
+        except (FileNotFoundError, ValueError):
+            return  # refusing is also correct
+        assert resolved.exists(), (
+            f"resolved to {resolved}, which no longer exists — the cached file "
+            "list resurrected a deleted record")
+    finally:
+        victim.write_text(backup)
+        rm.reset_resolution_caches()
+
+
+def test_reset_makes_a_newly_created_record_visible(rm):
+    """The other direction. A record created after the cache warms is invisible
+    until reset — inherent to caching, and why curation scripts that mutate the
+    corpus mid-run must call reset_resolution_caches()."""
+    rm.reset_resolution_caches()
+    rm._filename_index()
+    new = rm.MEDIA_DIR / "bacterial" / "zz_test_resolution_cache_probe.yaml"
+    new.write_text("id: CultureMech:999999\nname: zz_test_resolution_cache_probe\n")
+    try:
+        rm.reset_resolution_caches()
+        assert rm.resolve_media_file("zz_test_resolution_cache_probe").name == new.name
+    finally:
+        new.unlink()
+        rm.reset_resolution_caches()

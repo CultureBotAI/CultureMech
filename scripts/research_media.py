@@ -100,7 +100,14 @@ def _filename_index() -> dict[str, list[Path]]:
 
 
 def reset_resolution_caches() -> None:
-    """Drop the cached indexes. For tests that move records mid-process."""
+    """Drop the cached indexes.
+
+    Call this after CREATING, moving or deleting records inside a process that has
+    already resolved something. The caches are built once and never invalidated, so
+    a record added afterwards is invisible to resolution until they are dropped —
+    inherent to caching, and fine for a batch run that only reads, but curation
+    scripts that mutate the corpus mid-run must reset (#208).
+    """
     global _ID_INDEX, _FILENAME_INDEX, _MEDIA_FILES
     _ID_INDEX = _FILENAME_INDEX = _MEDIA_FILES = None
 
@@ -148,6 +155,11 @@ def _tiered_candidates(target: str) -> list[list[Path]]:
     by_field: list[Path] = []
 
     for path in _media_files():
+        # The file list is cached, so it can name records that have since been
+        # deleted or moved. A fresh glob could not, which is why the pre-index
+        # version needed no check here (#208).
+        if not path.exists():
+            continue
         if _normal_key(path.stem) == normalized_target or \
                 _normal_key(path.name) == normalized_target:
             by_filename.append(path)
