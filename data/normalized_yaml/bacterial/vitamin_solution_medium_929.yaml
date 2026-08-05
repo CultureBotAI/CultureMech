@@ -2,6 +2,7 @@ id: CultureMech:004378
 name: vitamin_solution_medium_929
 original_name: Vitamin solution (medium 929)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

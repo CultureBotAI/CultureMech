@@ -250,6 +250,19 @@ classes:
         range: OrganismCultureTypeEnum
         recommended: true
 
+      record_kind:
+        description: >-
+          What kind of record this is: a growth MEDIUM, or a standalone stock
+          SOLUTION. Normally inferred from the `term.id` prefix
+          (`mediadive.solution:*`), and only stated explicitly for solutions that
+          carry no upstream solution identifier — 202 records imported from KOMODO
+          as media ("Trace element solution (medium 929)", "10 x M9 salts") whose
+          composition was flattened into their parent medium.
+          A curated assertion, written by `just retype-solution-records` and
+          reviewable in the diff. It is NOT derived from the name at read time:
+          matching "*solution*" would silently reclassify a genuine medium such as
+          Ringer's solution.
+        range: RecordKindEnum
       medium_type:
         description: >-
           DEPRECATED single-axis classification. Superseded by composition_type,
@@ -2107,6 +2120,18 @@ classes:
 # ================================================================
 
 enums:
+  RecordKindEnum:
+    description: >-
+      Whether a normalized_yaml record describes a growth medium or a standalone
+      stock solution. See the `record_kind` slot: this is stated only where the
+      `term.id` prefix cannot carry the distinction.
+    permissible_values:
+      MEDIUM:
+        description: A growth medium.
+      SOLUTION:
+        description: >-
+          A standalone stock solution (trace elements, vitamins, buffers). Excluded
+          from media-level audits and from the deep-research ranking.
   MediumTypeEnum:
     description: >-
       DEPRECATED single-axis classification of culture medium. It conflated three

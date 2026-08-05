@@ -2,6 +2,7 @@ id: CultureMech:004334
 name: trace_element_solution_medium_996
 original_name: Trace element solution (medium 996)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

@@ -2,6 +2,7 @@ id: CultureMech:004880
 name: trace_elements_sl_12
 original_name: Trace elements SL-12
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

@@ -2,6 +2,7 @@ id: CultureMech:004335
 name: trace_element_solution_sla
 original_name: Trace element solution (SLA)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

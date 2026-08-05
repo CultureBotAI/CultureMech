@@ -2,6 +2,7 @@ id: CultureMech:004780
 name: amino_acid_solution_medium_78
 original_name: Amino acid solution (medium 78)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

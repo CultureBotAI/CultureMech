@@ -2,6 +2,7 @@ id: CultureMech:004869
 name: trace_element_solution_sl_11_medium_784
 original_name: Trace element solution SL-11 (medium 784)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

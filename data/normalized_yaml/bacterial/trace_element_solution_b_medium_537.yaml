@@ -2,6 +2,7 @@ id: CultureMech:004867
 name: trace_element_solution_b_medium_537
 original_name: Trace element solution B (medium 537)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

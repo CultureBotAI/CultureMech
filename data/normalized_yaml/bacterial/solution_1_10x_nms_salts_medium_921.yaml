@@ -2,6 +2,7 @@ id: CultureMech:004291
 name: solution_1_10x_nms_salts_medium_921
 original_name: Solution 1 (10x NMS salts) (medium 921)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

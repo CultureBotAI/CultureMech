@@ -2,6 +2,7 @@ id: CultureMech:004987
 name: mineral_salts_solution_for_liquid_medium_medium_1396
 original_name: Mineral salts solution for liquid medium (medium 1396)
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

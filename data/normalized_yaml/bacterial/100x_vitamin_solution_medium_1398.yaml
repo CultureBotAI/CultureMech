@@ -2,6 +2,7 @@ id: CultureMech:004994
 name: 100x_vitamin_solution_medium_1398
 original_name: 100x Vitamin solution (medium 1398)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

@@ -2,6 +2,7 @@ id: CultureMech:004868
 name: trace_element_solution_ho_le_medium_668
 original_name: Trace element solution Ho-le (medium 668)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID
