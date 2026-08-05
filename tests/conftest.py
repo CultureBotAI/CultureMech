@@ -89,6 +89,19 @@ def pytest_runtest_logreport(report) -> None:
 
 
 def pytest_sessionfinish(session, exitstatus) -> None:  # noqa: ARG001
+    # Under pytest-xdist each worker holds its own `_call_durations`, and the
+    # CONTROLLER's copy is empty — so this check would pass unconditionally while
+    # appearing to run. xdist is not installed today, but `-n auto` is the obvious
+    # response to a slow suite, and silently losing the guard is the exact failure
+    # class it exists to prevent. Fail loudly instead (#213).
+    if hasattr(session.config, "workerinput"):
+        return  # a worker; the controller does the reporting
+    if session.config.pluginmanager.hasplugin("xdist") and \
+            getattr(session.config.option, "numprocesses", None):
+        print("\nSLOW-TEST BUDGET DISABLED: running under pytest-xdist, where "
+              "per-worker durations never reach the controller. See #213.")
+        session.exitstatus = 1
+        return
     over = {
         nodeid: seconds
         for nodeid, seconds in _call_durations.items()
