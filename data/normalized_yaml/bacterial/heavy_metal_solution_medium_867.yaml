@@ -2,6 +2,7 @@ id: CultureMech:004273
 name: heavy_metal_solution_medium_867
 original_name: Heavy metal solution (medium 867)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

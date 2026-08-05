@@ -2,6 +2,7 @@ id: CultureMech:004979
 name: volatile_fatty_acid_mixture_medium_330
 original_name: Volatile fatty acid mixture (medium 330)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

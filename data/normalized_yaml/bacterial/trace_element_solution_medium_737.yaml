@@ -2,6 +2,7 @@ id: CultureMech:004323
 name: trace_element_solution_medium_737
 original_name: Trace element solution (medium 737)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

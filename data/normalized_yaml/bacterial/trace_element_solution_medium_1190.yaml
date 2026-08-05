@@ -2,6 +2,7 @@ id: CultureMech:005000
 name: trace_element_solution_medium_1190
 original_name: Trace element solution (medium 1190)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

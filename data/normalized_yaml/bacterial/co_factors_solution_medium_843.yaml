@@ -2,6 +2,7 @@ id: CultureMech:006083
 name: co_factors_solution_medium_843
 original_name: Co-factors solution (medium 843)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

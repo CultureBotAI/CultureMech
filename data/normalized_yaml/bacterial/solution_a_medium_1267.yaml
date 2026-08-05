@@ -2,6 +2,7 @@ id: CultureMech:005221
 name: solution_a_medium_1267
 original_name: Solution A (medium 1267)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

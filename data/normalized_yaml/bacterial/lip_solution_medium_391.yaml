@@ -2,6 +2,7 @@ id: CultureMech:004802
 name: lip_solution_medium_391
 original_name: LIP-solution (medium 391)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

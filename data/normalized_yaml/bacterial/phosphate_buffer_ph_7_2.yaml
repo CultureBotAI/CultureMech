@@ -2,6 +2,7 @@ id: CultureMech:004824
 name: phosphate_buffer_ph_7_2
 original_name: Phosphate buffer pH 7.2
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

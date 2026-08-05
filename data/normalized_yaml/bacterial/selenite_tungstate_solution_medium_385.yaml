@@ -2,6 +2,7 @@ id: CultureMech:004289
 name: selenite_tungstate_solution_medium_385
 original_name: Selenite/tungstate solution (medium 385)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

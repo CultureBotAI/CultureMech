@@ -2,6 +2,7 @@ id: CultureMech:004347
 name: trace_metals_500x_medium_1341
 original_name: Trace Metals (500x) (medium 1341)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

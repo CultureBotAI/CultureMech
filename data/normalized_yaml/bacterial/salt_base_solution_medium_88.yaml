@@ -2,6 +2,7 @@ id: CultureMech:005194
 name: salt_base_solution_medium_88
 original_name: Salt base solution (medium 88)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

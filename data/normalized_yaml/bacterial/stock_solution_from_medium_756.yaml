@@ -2,6 +2,7 @@ id: CultureMech:004387
 name: stock_solution_from_medium_756
 original_name: Stock solution (from medium 756)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

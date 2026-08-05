@@ -2,6 +2,7 @@ id: CultureMech:004819
 name: na_sesquicarbonate_solution_medium_31
 original_name: Na-sesquicarbonate solution (medium 31)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

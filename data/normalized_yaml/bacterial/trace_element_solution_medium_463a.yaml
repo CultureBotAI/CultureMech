@@ -2,6 +2,7 @@ id: CultureMech:004316
 name: trace_element_solution_medium_463a
 original_name: Trace element solution (medium 463a)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

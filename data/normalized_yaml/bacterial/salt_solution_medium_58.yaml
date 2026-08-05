@@ -2,6 +2,7 @@ id: CultureMech:004830
 name: salt_solution_medium_58
 original_name: salt solution (medium 58)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

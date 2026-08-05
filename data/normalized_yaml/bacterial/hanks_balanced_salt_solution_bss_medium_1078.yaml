@@ -2,6 +2,7 @@ id: CultureMech:004800
 name: hanks_balanced_salt_solution_bss_medium_1078
 original_name: Hank's balanced salt solution (BSS, medium 1078)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

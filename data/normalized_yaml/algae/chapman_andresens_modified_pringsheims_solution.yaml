@@ -1,6 +1,7 @@
 id: CultureMech:000062
 name: chapman_andresens_modified_pringsheims_solution
 category: algae
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

@@ -2,6 +2,7 @@ id: CultureMech:004340
 name: trace_element_solution_sl_6_medium_457
 original_name: Trace element solution SL-6 (medium 457)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

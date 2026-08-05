@@ -2,6 +2,7 @@ id: CultureMech:004844
 name: thioglycolate_ascorbate_solution_medium_210
 original_name: Thioglycolate-ascorbate solution (medium 210)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

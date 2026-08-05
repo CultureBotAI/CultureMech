@@ -2,6 +2,7 @@ id: CultureMech:004825
 name: phosphate_solution_medium_1191
 original_name: Phosphate solution (medium 1191)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

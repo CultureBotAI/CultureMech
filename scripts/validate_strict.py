@@ -42,19 +42,25 @@ DEFAULT_ROOTS = [_REPO_ROOT / "data" / "normalized_yaml" / sub
 
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from record_kinds import is_solution_record  # noqa: E402  -- shared medium/solution rule
+from record_kinds import has_solution_shape  # noqa: E402  -- shared medium/solution rule
 
 
 def infer_target_class(instance: dict) -> str:
     """Pick the right root class for this record.
 
     A standalone stock-solution record (e.g. mediadive_*_Main_sol_*.yaml)
-    is identified by its `term.id` prefix — see `record_kinds.is_solution_record`,
-    which is shared with the deep-research prioritizer so the two cannot drift
-    (#124). ~4,784 records look like SolutionDescriptors with their own id and
-    curation history, not full MediaRecipes. Everything else is MediaRecipe.
+    is identified by its `term.id` prefix — see `record_kinds.has_solution_shape`,
+    shared so this and the deep-research prioritizer cannot drift (#124). ~4,784
+    records look like SolutionDescriptors with their own id and curation history,
+    not full MediaRecipes. Everything else is MediaRecipe.
+
+    Deliberately `has_solution_shape`, NOT `is_solution_record`. The latter also
+    honours the curated `record_kind: SOLUTION` (#175), which says what a record
+    MEANS — but those 202 records were imported with MediaRecipe shape, so routing
+    them to SolutionRecipe produced 606 spurious errors. A curatorial assertion
+    cannot change what a record structurally is.
     """
-    return "SolutionRecipe" if is_solution_record(instance) else "MediaRecipe"
+    return "SolutionRecipe" if has_solution_shape(instance) else "MediaRecipe"
 
 # Per-worker singleton — built lazily after fork so the schema parses once per
 # worker process, not once per file.
