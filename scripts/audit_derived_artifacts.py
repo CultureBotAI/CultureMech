@@ -61,6 +61,8 @@ REPO = Path(__file__).resolve().parent.parent
 DEFAULT_OUT = REPO / "data" / "import_tracking" / "derived_artifacts.tsv"
 
 ARTIFACT_SUFFIX = re.compile(r"\.(tsv|json|csv)$")
+# Script-name prefixes that mean "regenerates a view of the corpus".
+GENERATOR = re.compile(r"(audit_|score_|triage_|report_|prioritize_|sample_|refresh_|generate_)")
 DATED = re.compile(r"\d{4}-\d{2}-\d{2}|_\d{8}")
 
 # Artifacts whose writer takes `--out` and does not mutate the corpus, so a
@@ -92,13 +94,28 @@ def tracked_artifacts() -> list[str]:
                   and (f.startswith("reports/") or f.startswith("data/")))
 
 
-def find_writer(artifact: str) -> str | None:
-    """A script mentioning this artifact's basename, if any."""
+SELF = "scripts/audit_derived_artifacts.py"
+
+
+def find_writers(artifact: str) -> list[str]:
+    """Every script mentioning this artifact's basename.
+
+    Returns ALL candidates, not the first. Nine artifacts have more than one, and
+    first-match-wins resolved them arbitrarily: `culturemech_id_registry.tsv` has
+    three (`refresh_id_registry`, `assign_culturemech_ids`, `id_utils`) and got the
+    right one by alphabetical luck, while `media_content_review_manifest.tsv` has
+    two genuinely different tools. Ambiguity a curator can see beats a confident
+    wrong answer.
+
+    Excludes this script. It names every CHECKABLE artifact, so it matched all of
+    them — and sorted first for `unparsed_compositions.tsv`, making the manifest
+    report the auditor as that report's writer (#204). A tool must not attribute
+    artifacts to itself.
+    """
     base = os.path.basename(artifact)
     res = subprocess.run(["grep", "-rl", "--include=*.py", "--", base, "scripts", "src"],
                          capture_output=True, text=True, cwd=REPO)
-    files = [f for f in res.stdout.split() if f]
-    return files[0] if files else None
+    return sorted(f for f in res.stdout.split() if f and f != SELF)
 
 
 def classify(artifact: str, writer: str | None) -> tuple[str, str]:
@@ -113,7 +130,7 @@ def classify(artifact: str, writer: str | None) -> tuple[str, str]:
         return "SNAPSHOT", f"one-time migration ({base})"
     if artifact in CHECKABLE:
         return "CURRENT_VIEW", base
-    if re.match(r"(audit_|score_|triage_|report_|prioritize_|sample_|refresh_|generate_)", base):
+    if GENERATOR.match(base):
         return "CURRENT_VIEW", base
     return "UNKNOWN", f"writer purity unestablished ({base})"
 
@@ -121,13 +138,25 @@ def classify(artifact: str, writer: str | None) -> tuple[str, str]:
 def inventory() -> list[dict[str, str]]:
     rows = []
     for art in tracked_artifacts():
-        writer = find_writer(art)
-        kind, why = classify(art, writer)
+        writers = find_writers(art)
+        # A declared checkable artifact's writer is known exactly; re-deriving it
+        # by grep would be guessing at something already stated.
+        declared = CHECKABLE.get(art)
+        if declared:
+            writers = [declared[0]] + [w for w in writers if w != declared[0]]
+        # Classify from the REGENERATING writer when several touch the artifact.
+        # `culturemech_id_registry.tsv` is written by assign_culturemech_ids (which
+        # MINTS ids), refresh_id_registry (which rebuilds it) and id_utils. Taking
+        # the alphabetically first made it UNKNOWN and lost a correct answer; the
+        # refresher is the one that determines whether the file is current.
+        primary = next((w for w in writers if GENERATOR.match(os.path.basename(w))),
+                       writers[0] if writers else None)
+        kind, why = classify(art, primary)
         rows.append({
             "artifact": art,
             "kind": kind,
             "reason": why,
-            "writer": writer or "",
+            "writer": "; ".join(writers),
             "freshness_checked": "yes" if art in CHECKABLE else "",
         })
     return rows

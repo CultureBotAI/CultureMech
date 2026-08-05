@@ -91,8 +91,8 @@ def test_unknowns_are_reported_not_hidden(ada):
     exist. It is a ceiling, not a target: driving it to 0 by guessing would be
     worse than leaving them listed."""
     unknown = [r for r in ada.inventory() if r["kind"] == "UNKNOWN"]
-    assert len(unknown) <= 55, (
-        f"{len(unknown)} unclassified artifacts, above the documented 55. A new "
+    assert len(unknown) <= 54, (
+        f"{len(unknown)} unclassified artifacts, above the documented 54. A new "
         "tracked artifact was added without a classification.")
 
 
@@ -109,3 +109,42 @@ def test_a_corrupted_artifact_is_detected(ada, tmp_path, monkeypatch):
     fake.write_text(real.read_text() + "bogus\tstale\trow\n")
     assert fake.read_bytes() != real.read_bytes(), (
         "the byte comparison the check relies on would not notice a changed file")
+
+
+# --- #204: the tool must not attribute artifacts to itself -----------------
+
+
+def test_the_auditor_is_never_recorded_as_a_writer(ada):
+    """`audit_derived_artifacts.py` names every CHECKABLE artifact, so a plain grep
+    matched all of them — and sorted first for unparsed_compositions.tsv, making
+    the manifest report the auditor as that report's writer. The writer column is
+    the evidence for each classification, so circular attribution undermines it."""
+    for row in ada.inventory():
+        assert ada.SELF not in row["writer"], (
+            f"{row['artifact']} attributes itself to the auditor")
+
+
+def test_all_candidate_writers_are_recorded_not_just_the_first(ada):
+    """Nine artifacts have several. Ambiguity a curator can see beats a confident
+    wrong answer."""
+    multi = [r for r in ada.inventory() if ";" in r["writer"]]
+    assert multi, "no multi-writer artifacts recorded; find_writers regressed to first-match"
+
+
+def test_a_checkable_artifact_uses_its_declared_writer(ada):
+    """Re-deriving by grep would be guessing at something already stated."""
+    for art, cmd in ada.CHECKABLE.items():
+        row = next(r for r in ada.inventory() if r["artifact"] == art)
+        assert row["writer"].split(";")[0].strip() == cmd[0]
+
+
+def test_the_regenerating_writer_wins_when_several_touch_an_artifact(ada):
+    """`culturemech_id_registry.tsv` is written by assign_culturemech_ids (which
+    MINTS ids), refresh_id_registry (which rebuilds it) and id_utils. Taking the
+    alphabetically first classified it UNKNOWN and lost a correct answer."""
+    row = next((r for r in ada.inventory()
+                if r["artifact"] == "data/culturemech_id_registry.tsv"), None)
+    if row is None:
+        pytest.skip("id registry not tracked")
+    assert row["kind"] == "CURRENT_VIEW"
+    assert "refresh_id_registry" in row["reason"]
