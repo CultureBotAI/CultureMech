@@ -108,8 +108,11 @@ def test_report_only_by_default(cmt, tmp_path):
     assert (d / "a.yaml").read_text() == before
 
 
-def test_the_corpus_needs_no_stamping(cmt, maps):
-    """If this fails, `just curate-medium-type --apply` was not run before commit."""
+def test_the_corpus_needs_no_stamping(cmt, maps, corpus):
+    """If this fails, `just curate-medium-type --apply` was not run before commit.
+
+    Uses the session fixture: `scan()` re-parsed the whole corpus at 328s (#191).
+    """
     mapping, inv = maps
-    drift = cmt.scan(REPO_ROOT / "data" / "normalized_yaml", mapping, inv)
+    drift = cmt.scan_parsed(corpus, mapping, inv)
     assert not drift, f"{len(drift)} records drifted, e.g. {[str(p) for p,_,_,_ in drift[:5]]}"

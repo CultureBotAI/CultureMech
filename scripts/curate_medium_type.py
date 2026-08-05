@@ -113,20 +113,33 @@ def assess(doc: dict[str, Any], mapping: dict[str, str], inv: dict[str, str]) ->
     return f"{current} contradicts composition_type={ct} -> {want}"
 
 
-def scan(normalized: Path, mapping: dict[str, str], inv: dict[str, str]
-         ) -> list[tuple[Path, dict[str, Any], str, str | None]]:
+def scan_parsed(records, mapping: dict[str, str], inv: dict[str, str]
+                ) -> list[tuple[Path, dict[str, Any], str, str | None]]:
+    """Drift among already-parsed records.
+
+    Split out so the corpus guard can use the session-scoped fixture rather than
+    re-parsing all ~15,900 files, which cost 328s (#191).
+    """
     out = []
-    for path in sorted(normalized.rglob("*.yaml")):
-        try:
-            doc = yaml.safe_load(path.read_text(errors="replace"))
-        except (yaml.YAMLError, OSError):
-            continue
+    for path, doc in records:
         if not isinstance(doc, dict) or is_solution_record(doc):
             continue
         reason = assess(doc, mapping, inv)
         if reason:
             out.append((path, doc, reason, expected_medium_type(doc, inv)))
     return out
+
+
+def scan(normalized: Path, mapping: dict[str, str], inv: dict[str, str]
+         ) -> list[tuple[Path, dict[str, Any], str, str | None]]:
+    records = []
+    for path in sorted(normalized.rglob("*.yaml")):
+        try:
+            doc = yaml.safe_load(path.read_text(errors="replace"))
+        except (yaml.YAMLError, OSError):
+            continue
+        records.append((path, doc))
+    return scan_parsed(records, mapping, inv)
 
 
 def main(argv: list[str] | None = None) -> int:
