@@ -2,6 +2,7 @@ id: CultureMech:004779
 name: 50x_heterotrophic_basal_salts_solution_medium_1190
 original_name: 50x Heterotrophic basal salts solution (medium 1190)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

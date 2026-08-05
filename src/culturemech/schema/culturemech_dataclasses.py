@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-08-04T18:41:17
+# Generation date: 2026-08-04T19:26:36
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -202,6 +202,7 @@ class MediaRecipe(YAMLRoot):
     target_organisms: Optional[Union[dict[Union[str, OrganismDescriptorPreferredTerm], Union[dict, "OrganismDescriptor"]], list[Union[dict, "OrganismDescriptor"]]]] = empty_dict()
     source_environment: Optional[Union[Union[dict, "SourceEnvironmentDescriptor"], list[Union[dict, "SourceEnvironmentDescriptor"]]]] = empty_list()
     organism_culture_type: Optional[Union[str, "OrganismCultureTypeEnum"]] = None
+    record_kind: Optional[Union[str, "RecordKindEnum"]] = None
     medium_type: Optional[Union[str, "MediumTypeEnum"]] = None
     composition_type: Optional[Union[str, "MediumCompositionTypeEnum"]] = None
     nutritional_class: Optional[Union[str, "MediumNutritionalClassEnum"]] = None
@@ -314,6 +315,9 @@ class MediaRecipe(YAMLRoot):
 
         if self.organism_culture_type is not None and not isinstance(self.organism_culture_type, OrganismCultureTypeEnum):
             self.organism_culture_type = OrganismCultureTypeEnum(self.organism_culture_type)
+
+        if self.record_kind is not None and not isinstance(self.record_kind, RecordKindEnum):
+            self.record_kind = RecordKindEnum(self.record_kind)
 
         if self.medium_type is not None and not isinstance(self.medium_type, MediumTypeEnum):
             self.medium_type = MediumTypeEnum(self.medium_type)
@@ -2581,6 +2585,23 @@ class Dataset(YAMLRoot):
 
 
 # Enumerations
+class RecordKindEnum(EnumDefinitionImpl):
+    """
+    Whether a normalized_yaml record describes a growth medium or a standalone stock solution. See the `record_kind`
+    slot: this is stated only where the `term.id` prefix cannot carry the distinction.
+    """
+    MEDIUM = PermissibleValue(
+        text="MEDIUM",
+        description="A growth medium.")
+    SOLUTION = PermissibleValue(
+        text="SOLUTION",
+        description="""A standalone stock solution (trace elements, vitamins, buffers). Excluded from media-level audits and from the deep-research ranking.""")
+
+    _defn = EnumDefinition(
+        name="RecordKindEnum",
+        description="""Whether a normalized_yaml record describes a growth medium or a standalone stock solution. See the `record_kind` slot: this is stated only where the `term.id` prefix cannot carry the distinction.""",
+    )
+
 class MediumTypeEnum(EnumDefinitionImpl):
     """
     Single-axis classification of culture medium, MAINTAINED alongside the three orthogonal axes rather than replaced
@@ -3944,6 +3965,9 @@ slots.mediaRecipe__source_environment = Slot(uri=CULTUREMECH.source_environment,
 
 slots.mediaRecipe__organism_culture_type = Slot(uri=CULTUREMECH.organism_culture_type, name="mediaRecipe__organism_culture_type", curie=CULTUREMECH.curie('organism_culture_type'),
                    model_uri=CULTUREMECH.mediaRecipe__organism_culture_type, domain=None, range=Optional[Union[str, "OrganismCultureTypeEnum"]])
+
+slots.mediaRecipe__record_kind = Slot(uri=CULTUREMECH.record_kind, name="mediaRecipe__record_kind", curie=CULTUREMECH.curie('record_kind'),
+                   model_uri=CULTUREMECH.mediaRecipe__record_kind, domain=None, range=Optional[Union[str, "RecordKindEnum"]])
 
 slots.mediaRecipe__medium_type = Slot(uri=CULTUREMECH.medium_type, name="mediaRecipe__medium_type", curie=CULTUREMECH.curie('medium_type'),
                    model_uri=CULTUREMECH.mediaRecipe__medium_type, domain=None, range=Optional[Union[str, "MediumTypeEnum"]])

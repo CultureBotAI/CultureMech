@@ -2,6 +2,7 @@ id: CultureMech:006082
 name: sugar_stock_solution_medium_1245
 original_name: Sugar Stock Solution (medium 1245)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

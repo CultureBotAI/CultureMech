@@ -2,6 +2,7 @@ id: CultureMech:004978
 name: vitamins_v7_solution_medium_998
 original_name: Vitamins V7 solution (medium 998)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

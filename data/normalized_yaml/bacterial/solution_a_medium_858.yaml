@@ -2,6 +2,7 @@ id: CultureMech:005220
 name: solution_a_medium_858
 original_name: Solution A (medium 858)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

@@ -2,6 +2,7 @@ id: CultureMech:004795
 name: fatty_acid_mixture_medium_328
 original_name: Fatty acid mixture (medium 328)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

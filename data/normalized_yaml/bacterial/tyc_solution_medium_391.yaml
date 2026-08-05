@@ -2,6 +2,7 @@ id: CultureMech:004992
 name: tyc_solution_medium_391
 original_name: TYC-solution (medium 391)
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

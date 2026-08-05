@@ -2,6 +2,7 @@ id: CultureMech:004940
 name: vitamin_b_solution_medium_978
 original_name: Vitamin B solution (medium 978)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

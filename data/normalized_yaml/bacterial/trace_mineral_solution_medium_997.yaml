@@ -2,6 +2,7 @@ id: CultureMech:004355
 name: trace_mineral_solution_medium_997
 original_name: Trace mineral solution (medium 997)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

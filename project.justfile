@@ -187,6 +187,13 @@ audit-filename-collisions *args="":
 # Triage the media that carry no usable composition (#175). Report-only: the
 # obvious repair — resolving "X solution (medium N)" to medium N's composition —
 # would write a whole medium's recipe into a solution record. See the docstring.
+# Mark stock solutions that were imported as media records (#175). Asserts
+# `record_kind: SOLUTION` — a curated claim, not derived from the name at read
+# time, so it lands in a reviewable diff. Report-only without --apply.
+[group('Curation')]
+retype-solution-records *args="":
+    uv run --extra dev python scripts/retype_solution_records.py {{args}}
+
 [group('QC')]
 triage-missing-compositions *args="":
     uv run --extra dev python scripts/triage_missing_compositions.py {{args}}

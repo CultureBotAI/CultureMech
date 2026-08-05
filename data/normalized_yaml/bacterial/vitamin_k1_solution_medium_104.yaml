@@ -2,6 +2,7 @@ id: CultureMech:004941
 name: vitamin_k1_solution_medium_104
 original_name: Vitamin K1 solution (medium 104)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

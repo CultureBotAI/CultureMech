@@ -2,6 +2,7 @@ id: CultureMech:004943
 name: vitamin_solution_double_conc_medium_621
 original_name: Vitamin solution (double conc.) (medium 621)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

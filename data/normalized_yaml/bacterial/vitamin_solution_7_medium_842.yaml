@@ -2,6 +2,7 @@ id: CultureMech:004975
 name: vitamin_solution_7_medium_842
 original_name: Vitamin solution 7 (medium 842)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

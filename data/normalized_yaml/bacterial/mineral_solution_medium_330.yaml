@@ -2,6 +2,7 @@ id: CultureMech:004812
 name: mineral_solution_medium_330
 original_name: Mineral solution (medium 330)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

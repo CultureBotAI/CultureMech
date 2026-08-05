@@ -2,6 +2,7 @@ id: CultureMech:004836
 name: solution_ii_medium_1308
 original_name: solution II (medium 1308)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

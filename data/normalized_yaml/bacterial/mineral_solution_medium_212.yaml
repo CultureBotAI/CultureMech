@@ -2,6 +2,7 @@ id: CultureMech:005195
 name: mineral_solution_medium_212
 original_name: Mineral solution (medium 212)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

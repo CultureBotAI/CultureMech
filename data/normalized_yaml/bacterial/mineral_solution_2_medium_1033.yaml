@@ -2,6 +2,7 @@ id: CultureMech:004815
 name: mineral_solution_2_medium_1033
 original_name: Mineral solution 2 (medium 1033)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

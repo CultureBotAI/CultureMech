@@ -2,6 +2,7 @@ id: CultureMech:006514
 name: 50_x_pye
 original_name: 50 x PYE
 category: bacterial
+record_kind: SOLUTION
 medium_type: COMPLEX
 composition_type: UNDEFINED
 physical_state: LIQUID

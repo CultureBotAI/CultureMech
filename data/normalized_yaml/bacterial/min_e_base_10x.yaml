@@ -2,6 +2,7 @@ id: CultureMech:004275
 name: min_e_base_10x
 original_name: MIN E - Base (10x)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

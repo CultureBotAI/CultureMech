@@ -2,6 +2,7 @@ id: CultureMech:004833
 name: salts_solution_medium_1139
 original_name: salts solution (medium 1139)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

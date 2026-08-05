@@ -2,6 +2,7 @@ id: CultureMech:004874
 name: trace_element_solution_sl8_medium_1119
 original_name: Trace element solution SL8 (medium 1119)
 category: bacterial
+record_kind: SOLUTION
 medium_type: DEFINED
 composition_type: DEFINED
 physical_state: LIQUID

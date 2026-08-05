@@ -5,27 +5,30 @@ Classifies every record with nothing to work from, so the backlog can be attacke
 by cause rather than one record at a time. REPORT ONLY — see "the trap" below for
 why the obvious repair is not attempted.
 
-## The count is 428, not 463
+## The count is 226 — it was reported as 463, then 428
 
-The original issue measured `ingredients` alone. A stock-supplied component is
-recorded under `solutions`, so 35 records that look empty are not: they carry
-their whole composition there. The same oversight made 15 of 17 findings in #181
-false positives, so it is worth stating plainly — a record's composition lives in
-`ingredients` AND `solutions`, and any audit that reads one slot will invent a
-defect.
+Two corrections, both of which shrank the problem:
 
-## What the 428 are
+  463 -> 428  The original issue measured `ingredients` alone. A stock-supplied
+              component is recorded under `solutions`, and 35 records that look
+              empty carry their whole composition there. The same oversight made
+              15 of 17 findings in #181 false positives, so it is worth stating
+              plainly: a record's composition lives in `ingredients` AND
+              `solutions`, and any audit reading one slot will invent a defect.
 
-  327  KOMODO ModelSEED, no ingredients and no solutions
-  101  a single placeholder ingredient ("See source for composition")
+  428 -> 226  202 of the remainder were stock solutions imported as media, not
+              media at all. They now carry `record_kind: SOLUTION`, so
+              `is_solution_record()` excludes them (#175). Their contents were
+              flattened into their parent media by the KOMODO import, so nothing
+              is missing — the stubs are leftovers.
 
-**202 of the 428 are named like a stock solution rather than a medium** —
-"Trace element solution (medium 929)", "Solution C, medium 1275",
-"10 x M9 salts". These are not media missing a composition; they are solutions
-imported as media records. `record_kinds.is_solution_record()` does not catch them
-because it keys on a `term.id` prefix these records lack, deliberately: an id
-prefix is an explicit provenance assertion, whereas guessing from a name would
-also swallow genuine media.
+## What the remaining 226 are
+
+  126  KOMODO ModelSEED, no ingredients and no solutions
+  100  a single placeholder ingredient ("See source for composition")
+
+These are the genuine gap: media whose recipe the corpus does not hold. Unlike the
+202, no other record carries their composition.
 
 ## The trap — why 217 records are NOT auto-repairable
 
