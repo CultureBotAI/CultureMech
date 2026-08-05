@@ -122,3 +122,35 @@ def test_no_corpus_writer_passes_a_width_override():
     assert not offenders, (
         "these scripts write corpus records with a width override, which reflows "
         f"every long scalar: {offenders}. Use `record_io.write_record`.")
+
+
+# --- #206: the comparison must not depend on decoding ----------------------
+
+
+def test_a_record_that_is_not_valid_utf8_is_rewritten_not_raised_on(rio, tmp_path):
+    """`except OSError` did not catch UnicodeDecodeError, which is a ValueError.
+
+    Not hypothetical: every corpus reader here uses `errors="replace"` precisely
+    because some records do not decode cleanly, so a curation script would have
+    crashed partway through a batch rather than repairing the file.
+    """
+    p = tmp_path / "b.yaml"
+    p.write_bytes(b"\xff\xfe\x00binary")
+    assert rio.write_record(p, {"id": "CultureMech:1"}) is True
+    assert p.read_text().startswith("id: CultureMech:1")
+
+
+def test_a_missing_parent_directory_is_created(rio, tmp_path):
+    """This writer also CREATES records (import_jcm_grmd), not only edits them."""
+    p = tmp_path / "nested" / "deeper" / "r.yaml"
+    assert rio.write_record(p, {"id": "CultureMech:2"}) is True
+    assert p.is_file()
+
+
+def test_the_no_op_check_survives_unicode(rio, tmp_path):
+    """Byte comparison must still recognise an unchanged non-ASCII record."""
+    p = tmp_path / "u.yaml"
+    doc = {"id": "CultureMech:3", "name": "Müller-Hinton · agar ≥99%"}
+    rio.write_record(p, doc)
+    assert rio.write_record(p, doc) is False
+    assert "Müller" in p.read_text()

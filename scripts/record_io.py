@@ -72,12 +72,24 @@ def write_record(path: Path, doc: dict[str, Any]) -> bool:
 
     Skips the write when the serialization is identical to what is already there,
     so a no-op curation pass leaves no mtime churn and no diff at all.
+
+    The comparison is done in BYTES. Reading as text raised UnicodeDecodeError on
+    a record that is not valid UTF-8 — and that is not hypothetical: every corpus
+    reader here uses `errors="replace"` precisely because some records do not
+    decode cleanly, so a curation script would have crashed partway through a
+    batch instead of repairing the file (#206). Comparing bytes sidesteps decoding
+    entirely and is closer to what the check actually means.
+
+    Creates the parent directory: this writer is also used to create new records
+    (`import_jcm_grmd`), not only to edit existing ones.
     """
     text = dump_record(doc)
+    data = text.encode("utf-8")
     try:
-        if path.read_text() == text:
+        if path.read_bytes() == data:
             return False
     except OSError:
         pass
-    path.write_text(text)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(data)
     return True
