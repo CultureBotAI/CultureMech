@@ -191,6 +191,13 @@ audit-filename-collisions *args="":
 triage-missing-compositions *args="":
     uv run --extra dev python scripts/triage_missing_compositions.py {{args}}
 
+# Keep medium_type populated and derived from composition_type (#165). It is a
+# MAINTAINED axis: kgx_export emits one edge per record from it, so a missing value
+# silently drops an edge from the knowledge graph. Report-only without --apply.
+[group('Curation')]
+curate-medium-type *args="":
+    uv run --extra dev python scripts/curate_medium_type.py {{args}}
+
 [group('QC')]
 audit-selective-agent-mismatch *args="":
     uv run --extra dev python scripts/audit_selective_agent_mismatch.py {{args}}

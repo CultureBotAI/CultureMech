@@ -151,11 +151,27 @@ def test_every_medium_type_value_in_use_has_a_successor_slot(media_records, sche
         "Extend MediumFunctionalRoleEnum before adding more.")
 
 
-def test_no_new_record_populates_the_deprecated_slot_without_the_new_one(media_records):
-    """`medium_type` is documented "do not populate on new records". A record with
-    the deprecated slot and no `composition_type` is a regression in the importer,
-    not merely untidy — the axis slots are what everything downstream reads."""
-    bad = [p.name for p, d in media_records
-           if d.get("medium_type") is not None and d.get("composition_type") is None]
-    assert len(bad) <= 2, (
-        f"{len(bad)} records carry medium_type but no composition_type: {bad[:10]}")
+def test_every_media_record_carries_a_medium_type(media_records):
+    """`medium_type` is a MAINTAINED axis, not a vestige (#165).
+
+    kgx_export emits one edge per record from this slot, so a record missing it
+    contributes no type edge to the knowledge graph — silently, among ~11,092. That
+    is why this asserts presence rather than merely consistency: an absent value is
+    invisible in every downstream artifact until someone counts edges.
+
+    Stamp with `just curate-medium-type --apply`.
+    """
+    missing = [p.name for p, d in media_records if d.get("medium_type") is None]
+    assert not missing, (
+        f"{len(missing)} media records have no medium_type: {missing[:10]}. "
+        "Run `just curate-medium-type --apply`.")
+
+
+def test_a_record_has_either_a_composition_type_or_a_directly_curated_value(media_records):
+    """The two records with no composition_type are BUFFER and NEGATIVE_CONTROL,
+    curated directly because the composition axis cannot express them. A third
+    record in that state is an importer regression."""
+    stranded = [p.name for p, d in media_records
+                if d.get("composition_type") is None
+                and str(d.get("medium_type")) not in {"BUFFER", "NEGATIVE_CONTROL"}]
+    assert not stranded, f"records with neither axis populated: {stranded[:10]}"
