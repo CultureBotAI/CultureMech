@@ -59,6 +59,9 @@ from typing import Any
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from record_io import write_record  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_YAML_DIR = REPO_ROOT / "data" / "normalized_yaml"
 
@@ -283,9 +286,9 @@ def main(argv: list[str] | None = None) -> int:
         if args.limit is not None and recipes_written >= args.limit:
             continue
 
-        with open(yaml_path, "w", encoding="utf-8") as f:
-            yaml.dump(recipe, f, default_flow_style=False, sort_keys=False,
-                      allow_unicode=True, width=120)
+        # Shared writer: `width=120` re-wrapped every long scalar in the file, so
+        # half of PR #140's diff was churn in untouched `notes:` (#141).
+        write_record(yaml_path, recipe)
         recipes_written += 1
         if args.verbose:
             print(f"WROTE {yaml_path.relative_to(args.yaml_dir)}: {fields_changed}")
