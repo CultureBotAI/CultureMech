@@ -1,4 +1,4 @@
-"""Backfill the multi-axis media-type vocabulary from the deprecated medium_type slot.
+"""Backfill the multi-axis media-type vocabulary from the single-valued medium_type slot.
 
 medium_type (MediumTypeEnum) conflated three orthogonal properties into one
 single-valued slot. This migration derives the new axis slots from it without
@@ -221,7 +221,7 @@ def main(argv: list[str] | None = None) -> int:
                     doc,
                     curator=CURATOR,
                     action="Backfilled multi-axis media type",
-                    notes="Derived " + "; ".join(notes) + " from deprecated medium_type="
+                    notes="Derived " + "; ".join(notes) + " from medium_type="
                     + str(mt) + ".",
                 )
                 write_yaml(path, doc)

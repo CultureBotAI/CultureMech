@@ -135,21 +135,24 @@ def test_no_defined_record_carries_a_bulk_undefined_component(act, media_records
 
 
 def test_medium_type_and_composition_type_do_not_contradict(media_records):
-    """The deprecated slot must not disagree with the live one (#165).
+    """The two axes must not disagree (#165).
 
-    `medium_type` is deprecated and #154 removed its last reader, but it is still
-    present on 11,092 records and still schema-valid, so a reader could pick it
-    up. Restamping only `composition_type` in #164 broke this invariant on 239
-    records — 0 disagreements before, 239 after — which is how this test came to
-    exist.
+    `medium_type` is a MAINTAINED compatibility axis, not a vestige. An earlier
+    version of this docstring said it was deprecated and that #154 had removed its
+    last reader; both were wrong, and that claim is what led #165 to propose
+    deleting the slot. `kgx_export` emits one edge per record from it
+    (`medium_to_type_edge`), and browser_export, umap_generator, dsmz_resolver and
+    multi_database_crossref all read it.
 
-    Mapping is the schema's own: `composition_type: UNDEFINED` "replaces the
-    deprecated MediumTypeEnum value COMPLEX".
+    Restamping only `composition_type` in #164 broke this invariant on 239 records
+    — 0 disagreements before, 239 after — which is how this test came to exist.
+    `just curate-medium-type` now keeps the derivation, and
+    tests/test_medium_type_consistency.py holds the fuller guard.
 
-    Dropping `medium_type` from the corpus entirely is the better long-term fix
-    and is tracked in #165; this only holds the line until then.
+    Mapping is the schema's own: `composition_type: UNDEFINED` is the multi-axis
+    counterpart of `MediumTypeEnum: COMPLEX`.
     """
-    # The deprecated vocabulary is COARSER than the live one: it has no
+    # The single-valued vocabulary is COARSER than the multi-axis one: it has no
     # SEMI_DEFINED. A record that is SEMI_DEFINED today was legitimately COMPLEX
     # under the old single-axis enum, because COMPLEX meant "contains an undefined
     # component" and a SEMI_DEFINED medium does. So COMPLEX maps to a SET.
@@ -167,7 +170,7 @@ def test_medium_type_and_composition_type_do_not_contradict(media_records):
         if str(ct) not in expect.get(str(mt), {str(mt)}):
             bad.append(f"{path.name}: medium_type={mt} composition_type={ct}")
     assert not bad, (
-        f"{len(bad)} record(s) have a deprecated medium_type contradicting "
+        f"{len(bad)} record(s) have a medium_type contradicting "
         f"composition_type (e.g. {bad[:3]}) — see #165"
     )
 

@@ -2162,8 +2162,9 @@ enums:
         meaning: NCIT:C64372
       UNDEFINED:
         description: Medium containing one or more chemically undefined components (e.g.
-          yeast extract, peptone, casamino acids, tissue or plant extracts). Replaces the
-          deprecated MediumTypeEnum value COMPLEX. Synonyms —complex.
+          yeast extract, peptone, casamino acids, tissue or plant extracts). Multi-axis
+          counterpart of MediumTypeEnum value COMPLEX, which remains maintained
+          and derived from this slot. Synonyms —complex.
         meaning: NCIT:C64371
       SEMI_DEFINED:
         description: Predominantly defined medium supplemented with a small amount of one

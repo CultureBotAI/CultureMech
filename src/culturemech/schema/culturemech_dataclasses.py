@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-08-04T18:26:13
+# Generation date: 2026-08-04T18:41:17
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -2634,7 +2634,7 @@ class MediumCompositionTypeEnum(EnumDefinitionImpl):
         meaning=NCIT["C64372"])
     UNDEFINED = PermissibleValue(
         text="UNDEFINED",
-        description="""Medium containing one or more chemically undefined components (e.g. yeast extract, peptone, casamino acids, tissue or plant extracts). Replaces the deprecated MediumTypeEnum value COMPLEX. Synonyms —complex.""",
+        description="""Medium containing one or more chemically undefined components (e.g. yeast extract, peptone, casamino acids, tissue or plant extracts). Multi-axis counterpart of MediumTypeEnum value COMPLEX, which remains maintained and derived from this slot. Synonyms —complex.""",
         meaning=NCIT["C64371"])
     SEMI_DEFINED = PermissibleValue(
         text="SEMI_DEFINED",
