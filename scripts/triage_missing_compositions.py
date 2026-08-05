@@ -50,15 +50,23 @@ component — a section header parsed as a chemical. It is
 Recovering these needs the sub-solution block within each medium's DSMZ record,
 which the local extraction does not preserve.
 
+Reproducibility: the `cited_medium_in_local_dump` column reads a TRACKED index of
+upstream composition ids, never the gitignored `data/raw` tree. Reading that tree
+directly gave 217 hits on one machine and 0 on a fresh clone of the same commit
+(#196) — the #121 defect, where a report scanning untracked state produces diffs
+indistinguishable from real change.
+
 Usage::
 
     just triage-missing-compositions
+    just triage-missing-compositions --refresh-mediadive-index   # then commit the diff
 """
 
 from __future__ import annotations
 
 import argparse
 import csv
+import json
 import os
 import re
 import sys
@@ -72,7 +80,15 @@ sys.path.insert(0, str(REPO / "scripts"))
 from record_kinds import is_solution_record  # noqa: E402
 
 NORMALIZED = REPO / "data" / "normalized_yaml"
+# Untracked (`.gitignore: data/raw/**/*.json`), so it can only ever be an input to
+# BUILDING the index below — never read at report time. See `MEDIADIVE_INDEX`.
 MEDIADIVE_COMPOSITIONS = REPO / "data" / "raw" / "mediadive" / "compositions"
+# Tracked index of which mediadive composition ids exist upstream. A few kB, and it
+# makes this report a pure function of tracked data: reading the gitignored dump
+# directly gave 217 hits on one machine and 0 on a fresh clone (#196, and #121
+# before it, where a report scanning an untracked tree reordered per-machine and
+# produced diffs indistinguishable from real change).
+MEDIADIVE_INDEX = REPO / "data" / "import_tracking" / "mediadive_composition_ids.json"
 DEFAULT_OUT = REPO / "data" / "import_tracking" / "reports" / "missing_compositions.tsv"
 
 PLACEHOLDER = re.compile(
@@ -114,7 +130,8 @@ def has_no_usable_composition(doc: dict[str, Any]) -> str | None:
     return None
 
 
-def _mediadive_ids() -> set[str]:
+def _scan_untracked_dump() -> set[str]:
+    """Composition ids present in the local, gitignored dump. Refresh path only."""
     if not MEDIADIVE_COMPOSITIONS.is_dir():
         return set()
     out = set()
@@ -123,6 +140,17 @@ def _mediadive_ids() -> set[str]:
         if m:
             out.add(m.group(1))
     return out
+
+
+def _mediadive_ids() -> set[str]:
+    """Read the TRACKED index, so the report reproduces on any checkout."""
+    if not MEDIADIVE_INDEX.is_file():
+        return set()
+    try:
+        doc = json.loads(MEDIADIVE_INDEX.read_text())
+    except (json.JSONDecodeError, OSError):
+        return set()
+    return {str(i) for i in (doc.get("composition_ids") or [])}
 
 
 def triage_parsed(records: list[tuple[str, dict[str, Any]]],
@@ -178,7 +206,25 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
     ap.add_argument("--max-allowed", type=int, default=None,
                     help="Exit 1 if more than N records lack a composition.")
+    ap.add_argument("--refresh-mediadive-index", action="store_true",
+                    help="Rebuild the tracked index from the local gitignored dump. "
+                         "The one step that reads untracked state; commit the diff.")
     args = ap.parse_args(argv)
+
+    if args.refresh_mediadive_index:
+        ids = sorted(_scan_untracked_dump(), key=lambda s: (len(s), s))
+        if not ids:
+            print(f"No local dump at {MEDIADIVE_COMPOSITIONS}; index not written.",
+                  file=sys.stderr)
+            return 1
+        MEDIADIVE_INDEX.parent.mkdir(parents=True, exist_ok=True)
+        MEDIADIVE_INDEX.write_text(json.dumps({
+            "description": "Mediadive composition ids available upstream. Tracked so "
+                           "triage_missing_compositions.py is reproducible from git "
+                           "alone (#196). Refresh with --refresh-mediadive-index.",
+            "composition_ids": ids}, indent=2) + "\n")
+        print(f"Wrote {len(ids)} ids -> {MEDIADIVE_INDEX.relative_to(REPO)}")
+        return 0
 
     rows = collect(args.normalized_dir)
     args.out.parent.mkdir(parents=True, exist_ok=True)
