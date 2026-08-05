@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import os
 import shlex
 import subprocess
@@ -30,6 +31,85 @@ def load_media(path: Path) -> dict[str, Any]:
 
 def _normal_key(value: str) -> str:
     return value.strip().casefold()
+
+
+# --- resolution indexes -----------------------------------------------------
+#
+# `_tiered_candidates` re-globbed and re-read the whole corpus on EVERY call, so
+# each resolution cost ~0.8s and a 200-entry batch spent ~3 minutes doing nothing
+# but re-reading the same 15,878 files (#174).
+#
+# Measured build costs decide the design:
+#     glob only        0.11s
+#     read_text all    0.53s
+#     yaml parse all   112s     <- so a fully parsed index is not an option
+#
+# Two indexes are therefore built lazily and cached per process, and only the
+# third tier still falls back to scanning:
+#   1. CultureMech id -> path, read from the TRACKED id registry. No corpus scan
+#      at all, and the registry is already guarded against drift by #144.
+#   2. filename stem/name -> paths, from the glob alone. No parsing needed.
+#   3. name / original_name / media_term — genuinely needs record contents, so it
+#      still scans, but over a cached file list.
+
+_ID_INDEX: dict[str, Path] | None = None
+_FILENAME_INDEX: dict[str, list[Path]] | None = None
+_MEDIA_FILES: list[Path] | None = None
+
+ID_REGISTRY = REPO_ROOT / "data" / "culturemech_id_registry.tsv"
+
+
+def _media_files() -> list[Path]:
+    global _MEDIA_FILES
+    if _MEDIA_FILES is None:
+        _MEDIA_FILES = sorted(MEDIA_DIR.glob("*/*.yaml"))
+    return _MEDIA_FILES
+
+
+def _id_index() -> dict[str, Path]:
+    """CultureMech id -> path, from the tracked registry.
+
+    A stale registry entry must not become a wrong answer, so every hit is checked
+    for existence by the caller and falls through to a scan if the file has moved.
+    """
+    global _ID_INDEX
+    if _ID_INDEX is None:
+        index: dict[str, Path] = {}
+        try:
+            with ID_REGISTRY.open(encoding="utf-8") as fh:
+                reader = csv.DictReader(fh, delimiter="\t")
+                for row in reader:
+                    cid, rel = row.get("culturemech_id"), row.get("file_path")
+                    if cid and rel:
+                        index[_normal_key(cid)] = REPO_ROOT / rel
+        except (OSError, csv.Error):
+            index = {}
+        _ID_INDEX = index
+    return _ID_INDEX
+
+
+def _filename_index() -> dict[str, list[Path]]:
+    global _FILENAME_INDEX
+    if _FILENAME_INDEX is None:
+        index: dict[str, list[Path]] = {}
+        for path in _media_files():
+            for key in (_normal_key(path.stem), _normal_key(path.name)):
+                index.setdefault(key, []).append(path)
+        _FILENAME_INDEX = index
+    return _FILENAME_INDEX
+
+
+def reset_resolution_caches() -> None:
+    """Drop the cached indexes.
+
+    Call this after CREATING, moving or deleting records inside a process that has
+    already resolved something. The caches are built once and never invalidated, so
+    a record added afterwards is invisible to resolution until they are dropped —
+    inherent to caching, and fine for a batch run that only reads, but curation
+    scripts that mutate the corpus mid-run must reset (#208).
+    """
+    global _ID_INDEX, _FILENAME_INDEX, _MEDIA_FILES
+    _ID_INDEX = _FILENAME_INDEX = _MEDIA_FILES = None
 
 
 def _candidate_paths(target: str) -> list[Path]:
@@ -61,11 +141,25 @@ def _tiered_candidates(target: str) -> list[list[Path]]:
         return [[target_path.resolve()]]
 
     normalized_target = _normal_key(target)
+
+    # Tier 1 and 2 are answered from cached indexes; only tier 3 needs a scan.
+    hit = _id_index().get(normalized_target)
+    if hit is not None and hit.exists():
+        return [[hit]]
+    by_name = [p for p in _filename_index().get(normalized_target, []) if p.exists()]
+    if by_name:
+        return [by_name]
+
     by_id: list[Path] = []
     by_filename: list[Path] = []
     by_field: list[Path] = []
 
-    for path in sorted(MEDIA_DIR.glob("*/*.yaml")):
+    for path in _media_files():
+        # The file list is cached, so it can name records that have since been
+        # deleted or moved. A fresh glob could not, which is why the pre-index
+        # version needed no check here (#208).
+        if not path.exists():
+            continue
         if _normal_key(path.stem) == normalized_target or \
                 _normal_key(path.name) == normalized_target:
             by_filename.append(path)
