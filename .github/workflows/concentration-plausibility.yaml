@@ -1,0 +1,62 @@
+name: concentration-plausibility
+
+# Gate for #150: stops a fresh import re-flattening a stock solution inline.
+#
+# #118 asked for an audit AND a corpus repair; #135 shipped the audit only, and
+# nothing has since stopped the defect being reintroduced. The corpus backlog
+# (3,914 records, 579 flattened cocktails) is NOT fixed by this workflow — the
+# baselines hold the line while it is worked through, per the --max-allowed
+# convention already used by check-chebi-grounding.
+#
+# The cocktail count is the sharper of the two baselines. A raw row count drifts
+# with corpus size; a new flattened cocktail is a specific defect shape that an
+# import has reintroduced.
+
+on:
+  pull_request:
+    # Scoped to normalized_yaml: the detectors read only that tree. merge_yaml is
+    # derived from it, so a defect introduced *only* in merge_yaml would not be
+    # caught here — same caveat as chebi-consistency.
+    paths:
+      - 'data/normalized_yaml/**'
+      - 'scripts/audit_concentration_plausibility.py'
+      - 'project.justfile'
+      - '.github/workflows/concentration-plausibility.yaml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: concentration-plausibility-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  plausibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Install just
+        uses: extractions/setup-just@v2
+
+      - name: Sync dependencies
+        run: uv sync --frozen
+
+      - name: Check concentration plausibility
+        run: just audit-concentration-plausibility
+
+      - name: Upload plausibility report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: concentration-plausibility-report
+          path: |
+            data/import_tracking/reports/concentration_plausibility.tsv
+            data/import_tracking/reports/concentration_plausibility_by_record.tsv

@@ -225,7 +225,7 @@ audit-selective-agent-mismatch *args="":
 [group('QC')]
 audit-concentration-plausibility *args="":
     uv run --extra dev python scripts/audit_concentration_plausibility.py \
-        --max-allowed 11540 {{args}}
+        --max-allowed 11540 --max-cocktails 579 {{args}}
 
 # Merge locally-completed Edison runs (research/media/*-meta.yaml, gitignored)
 # into the tracked researched-media manifest. This is the only step that reads

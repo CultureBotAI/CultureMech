@@ -189,6 +189,9 @@ def test_stock_solution_records_are_excluded(corpus_findings):
 
 
 CONCENTRATION_BACKLOG_BASELINE = 11_540
+# The sharper baseline (#150): a raw row count drifts with corpus size, whereas a
+# new flattened cocktail is a specific defect shape an import has reintroduced.
+COCKTAIL_BASELINE = 579
 
 
 def test_implausible_row_count_does_not_exceed_the_known_backlog(corpus_findings):
@@ -247,3 +250,48 @@ def test_justfile_baseline_matches_the_test_baseline():
         f"project.justfile gates at {match.group(1)} but this file baselines at "
         f"{CONCENTRATION_BACKLOG_BASELINE}; lower both together"
     )
+
+
+# --- the prevention gate (#150) ---------------------------------------------
+
+
+def test_the_cocktail_baseline_matches_the_justfile(acp):
+    """Same drift guard as the row baseline: two copies of a number meant to
+    change must be lowered together (#170)."""
+    import re
+    justfile = (REPO_ROOT / "project.justfile").read_text()
+    block = justfile.split("audit-concentration-plausibility", 1)[1][:400]
+    match = re.search(r"--max-cocktails\s+(\d+)", block)
+    assert match, "the recipe no longer passes --max-cocktails; the sharper gate is off"
+    assert int(match.group(1)) == COCKTAIL_BASELINE, (
+        f"justfile gates cocktails at {match.group(1)} but this file baselines at "
+        f"{COCKTAIL_BASELINE}; lower both together")
+
+
+def test_the_gate_baselines_match_the_current_corpus(acp, media_records):
+    """#118 asked for an audit AND a repair; #135 shipped the audit, and nothing
+    stopped the defect being reintroduced for another 15 issues.
+
+    These baselines hold the line while the 3,914-record backlog is worked
+    through. They must track the corpus: a baseline above the real count is a gate
+    that cannot fail.
+    """
+    rows = acp.audit_parsed(media_records)
+    rows_baseline = CONCENTRATION_BACKLOG_BASELINE
+    assert len(rows) <= rows_baseline, (
+        f"{len(rows)} rows exceeds the gate baseline {rows_baseline}")
+    # A baseline far above the real count cannot fail, which is worse than no gate.
+    assert rows_baseline - len(rows) <= 200, (
+        f"gate baseline {rows_baseline} is {rows_baseline - len(rows)} above the "
+        "actual count — tighten it or it will never fire")
+    assert COCKTAIL_BASELINE > 0
+
+
+def test_the_gate_is_wired_into_ci():
+    """A --max-allowed flag nobody runs is not a gate. The audit carried one for
+    15 issues without ever being invoked."""
+    wf = REPO_ROOT / ".github" / "workflows" / "concentration-plausibility.yaml"
+    assert wf.is_file(), "no workflow runs the plausibility gate"
+    text = wf.read_text()
+    assert "just audit-concentration-plausibility" in text
+    assert "data/normalized_yaml/**" in text, "gate not triggered by corpus edits"
