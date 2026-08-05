@@ -67,8 +67,12 @@ from triage_missing_compositions import (  # noqa: E402
 NORMALIZED = REPO / "data" / "normalized_yaml"
 
 
-def candidates(normalized: Path = NORMALIZED) -> list[tuple[Path, dict[str, Any]]]:
-    """Records that are named like a stock solution AND carry no composition.
+def candidates_from(records) -> list[tuple[Path, dict[str, Any]]]:
+    """Candidates among already-parsed records.
+
+    Split out so the corpus guard can use the session-scoped fixture instead of
+    re-parsing all ~15,900 files, which cost 421s and made this the single
+    slowest test in the suite (#191).
 
     BOTH conditions are required. A record named "...solution" that has a real
     ingredient list is a medium as far as this corpus is concerned — Ringer's and
@@ -76,11 +80,7 @@ def candidates(normalized: Path = NORMALIZED) -> list[tuple[Path, dict[str, Any]
     them would remove them from media audits that should still see them.
     """
     out = []
-    for path in sorted(normalized.rglob("*.yaml")):
-        try:
-            doc = yaml.safe_load(path.read_text(errors="replace"))
-        except (yaml.YAMLError, OSError):
-            continue
+    for path, doc in records:
         if not isinstance(doc, dict) or is_solution_record(doc):
             continue
         if not has_no_usable_composition(doc):
@@ -89,6 +89,18 @@ def candidates(normalized: Path = NORMALIZED) -> list[tuple[Path, dict[str, Any]
         if SOLUTION_NAMED.search(name):
             out.append((path, doc))
     return out
+
+
+def candidates(normalized: Path = NORMALIZED) -> list[tuple[Path, dict[str, Any]]]:
+    """Parse the corpus from disk, then select candidates."""
+    records = []
+    for path in sorted(normalized.rglob("*.yaml")):
+        try:
+            doc = yaml.safe_load(path.read_text(errors="replace"))
+        except (yaml.YAMLError, OSError):
+            continue
+        records.append((path, doc))
+    return candidates_from(records)
 
 
 def stamp(path: Path, doc: dict[str, Any]) -> bool:

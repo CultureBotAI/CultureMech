@@ -112,9 +112,13 @@ def test_the_term_id_rule_still_works(rk):
     assert rk.is_solution_record({"term": {"id": "MediaIngredientMech:1"}})
 
 
-def test_the_corpus_has_no_untyped_solution_stubs_left(rt):
-    """If this fails, `just retype-solution-records --apply` was not run."""
-    left = rt.candidates()
+def test_the_corpus_has_no_untyped_solution_stubs_left(rt, corpus):
+    """If this fails, `just retype-solution-records --apply` was not run.
+
+    Uses the session fixture: calling `candidates()` re-parsed the whole corpus
+    and made this the slowest test in the suite at 421s (#191).
+    """
+    left = rt.candidates_from(corpus)
     assert not left, f"{len(left)} stubs still untyped, e.g. {[p.name for p,_ in left[:5]]}"
 
 
