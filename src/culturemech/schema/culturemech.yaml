@@ -252,11 +252,16 @@ classes:
 
       medium_type:
         description: >-
-          DEPRECATED single-axis classification. Superseded by composition_type,
-          nutritional_class, and functional_role. Retained for backward compatibility;
-          do not populate on new records.
+          MAINTAINED compatibility axis, derived from composition_type. It is the
+          single-valued classification published to downstream consumers: kgx_export
+          emits one edge per record from this slot, so it is load-bearing rather than
+          vestigial. Populate it on every record, and keep it consistent with
+          composition_type — DEFINED maps to DEFINED, UNDEFINED and SEMI_DEFINED both
+          map to COMPLEX. BUFFER and NEGATIVE_CONTROL have no composition_type
+          counterpart and are curated directly. Use `just curate-medium-type` to stamp
+          it; a guard fails the build if any record is missing it or contradicts
+          composition_type.
         range: MediumTypeEnum
-        deprecated: Use composition_type / nutritional_class / functional_role instead.
 
       composition_type:
         description: >-
@@ -2109,13 +2114,16 @@ classes:
 enums:
   MediumTypeEnum:
     description: >-
-      DEPRECATED single-axis classification of culture medium. It conflated three
-      orthogonal properties (composition, nutritional level, functional role) into one
-      single-valued slot. Superseded by MediumCompositionTypeEnum (composition_type),
-      MediumNutritionalClassEnum (nutritional_class), and MediumFunctionalRoleEnum
-      (functional_role). Retained for backward compatibility; populate the three axis
-      slots on new and migrated records instead.
-    deprecated: Use composition_type / nutritional_class / functional_role instead.
+      Single-axis classification of culture medium, MAINTAINED alongside the three
+      orthogonal axes rather than replaced by them. It conflates composition,
+      nutritional level and functional role into one slot, which is why
+      MediumCompositionTypeEnum (composition_type), MediumNutritionalClassEnum
+      (nutritional_class) and MediumFunctionalRoleEnum (functional_role) exist and
+      are the primary axes for new curation. This enum remains the published
+      single-valued view: populate BOTH, and keep this slot derived from
+      composition_type. The per-value "Migrates to" notes below define that
+      derivation and are parsed by the consistency guard, so they are load-bearing
+      documentation rather than historical commentary.
     permissible_values:
       DEFINED:
         description: Chemically defined medium with known composition. Migrates to
