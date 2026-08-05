@@ -62,7 +62,8 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-import yaml
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from record_io import dump_record  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 NORMALIZED_DIR = REPO_ROOT / "data" / "normalized_yaml"
@@ -408,7 +409,9 @@ def main(argv: list[str] | None = None) -> int:
 
         fname = f"JCM_J{grmd}_{re.sub(r'[^A-Za-z0-9]+', '_', rec['original_name']).strip('_')[:80]}.yaml"
         out_path = args.out_dir / fname
-        yaml_text = yaml.safe_dump(rec, sort_keys=False, allow_unicode=True, width=100)
+        # Corpus convention is PyYAML's default width; width=100 created records
+        # that every later curation pass would re-wrap (#141).
+        yaml_text = dump_record(rec)
 
         if args.dry_run:
             print(f"\n[DRY RUN] GRMD={grmd} -> {out_path.relative_to(REPO_ROOT)}  "
