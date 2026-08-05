@@ -178,8 +178,8 @@ def test_stock_solution_records_are_excluded(corpus_findings):
     Without this exclusion the audit would flag thousands of the ~4,784 MediaDive
     solution records that live in bacterial/ (#124).
     """
-    from record_kinds import is_solution_record
     import yaml as _yaml
+    from record_kinds import is_solution_record
 
     normalized = REPO_ROOT / "data" / "normalized_yaml"
     # Distinct records only — the row list repeats a file once per flagged row.

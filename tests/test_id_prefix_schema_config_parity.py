@@ -34,10 +34,9 @@ place in the ingredient-id pattern.
 from __future__ import annotations
 
 import re
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
 
-import pytest
 import yaml
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent

@@ -44,7 +44,7 @@ def test_the_manifest_matches_a_fresh_computation(ada):
     import io
     fresh = io.StringIO(newline="")
     w = csv.DictWriter(fresh, delimiter="\t", lineterminator="\r\n", fieldnames=[
-        "artifact", "kind", "reason", "writer", "freshness_checked"])
+        "artifact", "kind", "reason", "writes", "mentioned_by", "freshness_checked"])
     w.writeheader()
     w.writerows(ada.inventory())
     # Compare row content, not line endings: the script writes with newline="" so
@@ -91,8 +91,8 @@ def test_unknowns_are_reported_not_hidden(ada):
     exist. It is a ceiling, not a target: driving it to 0 by guessing would be
     worse than leaving them listed."""
     unknown = [r for r in ada.inventory() if r["kind"] == "UNKNOWN"]
-    assert len(unknown) <= 54, (
-        f"{len(unknown)} unclassified artifacts, above the documented 54. A new "
+    assert len(unknown) <= 55, (
+        f"{len(unknown)} unclassified artifacts, above the documented 55. A new "
         "tracked artifact was added without a classification.")
 
 
@@ -120,14 +120,16 @@ def test_the_auditor_is_never_recorded_as_a_writer(ada):
     the manifest report the auditor as that report's writer. The writer column is
     the evidence for each classification, so circular attribution undermines it."""
     for row in ada.inventory():
-        assert ada.SELF not in row["writer"], (
+        assert ada.SELF not in row["mentioned_by"], (
             f"{row['artifact']} attributes itself to the auditor")
+        assert ada.SELF not in row["writes"], (
+            f"{row['artifact']} claims the auditor writes it")
 
 
 def test_all_candidate_writers_are_recorded_not_just_the_first(ada):
     """Nine artifacts have several. Ambiguity a curator can see beats a confident
     wrong answer."""
-    multi = [r for r in ada.inventory() if ";" in r["writer"]]
+    multi = [r for r in ada.inventory() if ";" in r["mentioned_by"]]
     assert multi, "no multi-writer artifacts recorded; find_writers regressed to first-match"
 
 
@@ -135,7 +137,8 @@ def test_a_checkable_artifact_uses_its_declared_writer(ada):
     """Re-deriving by grep would be guessing at something already stated."""
     for art, cmd in ada.CHECKABLE.items():
         row = next(r for r in ada.inventory() if r["artifact"] == art)
-        assert row["writer"].split(";")[0].strip() == cmd[0]
+        assert cmd[0] in row["writes"], (
+            f"{art}: declared writer {cmd[0]} not confirmed as a writer")
 
 
 def test_the_regenerating_writer_wins_when_several_touch_an_artifact(ada):

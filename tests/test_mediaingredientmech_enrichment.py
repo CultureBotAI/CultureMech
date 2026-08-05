@@ -2,10 +2,11 @@
 
 import tempfile
 from pathlib import Path
+
 import yaml
 
-from culturemech.enrich.mediaingredientmech_loader import MediaIngredientMechLoader
 from culturemech.enrich.mediaingredientmech_linker import MediaIngredientMechLinker
+from culturemech.enrich.mediaingredientmech_loader import MediaIngredientMechLoader
 
 
 def test_mediaingredientmech_loader():

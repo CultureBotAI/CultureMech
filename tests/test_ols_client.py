@@ -3,15 +3,14 @@
 Unit tests for OLS API Client
 """
 
-import unittest
-from unittest.mock import Mock, patch, MagicMock
-from pathlib import Path
-import json
+import sys
 import tempfile
+import unittest
+from pathlib import Path
+from unittest.mock import Mock, patch
 
 import requests
 
-import sys
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
 from culturemech.ontology.ols_client import OLSClient

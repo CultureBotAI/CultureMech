@@ -32,11 +32,10 @@ from __future__ import annotations
 
 import importlib.util
 import sys
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
 
 import pytest
-
 
 # Load the backfill script as a module without touching sys.path — the
 # script lives outside the `culturemech` package.

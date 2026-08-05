@@ -1,9 +1,10 @@
 """Tests for KG-Microbe media matcher."""
 
 import os
+from pathlib import Path
 
 import pytest
-from pathlib import Path
+
 from culturemech.match import KGMediaMatcher, match_recipe_to_kg_microbe
 
 

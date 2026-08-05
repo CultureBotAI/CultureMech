@@ -57,6 +57,9 @@ import sys
 import tempfile
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from artifact_writers import classify_file  # noqa: E402
+
 REPO = Path(__file__).resolve().parent.parent
 DEFAULT_OUT = REPO / "data" / "import_tracking" / "derived_artifacts.tsv"
 
@@ -138,7 +141,13 @@ def classify(artifact: str, writer: str | None) -> tuple[str, str]:
 def inventory() -> list[dict[str, str]]:
     rows = []
     for art in tracked_artifacts():
-        writers = find_writers(art)
+        mentions = find_writers(art)
+        base = os.path.basename(art)
+        # Grep cannot tell a reader from a writer: research_media.py READS the id
+        # registry to build an index and appeared among its "writers" (#209). This
+        # traces the binding through the module instead.
+        writers = [m for m in mentions
+                   if classify_file(REPO / m, base) == "yes"] or mentions
         # A declared checkable artifact's writer is known exactly; re-deriving it
         # by grep would be guessing at something already stated.
         declared = CHECKABLE.get(art)
@@ -152,11 +161,13 @@ def inventory() -> list[dict[str, str]]:
         primary = next((w for w in writers if GENERATOR.match(os.path.basename(w))),
                        writers[0] if writers else None)
         kind, why = classify(art, primary)
+        confirmed = [m for m in mentions if classify_file(REPO / m, base) == "yes"]
         rows.append({
             "artifact": art,
             "kind": kind,
             "reason": why,
-            "writer": "; ".join(writers),
+            "writes": "; ".join(confirmed),
+            "mentioned_by": "; ".join(mentions),
             "freshness_checked": "yes" if art in CHECKABLE else "",
         })
     return rows
@@ -199,7 +210,8 @@ def main(argv: list[str] | None = None) -> int:
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, delimiter="\t", fieldnames=[
-            "artifact", "kind", "reason", "writer", "freshness_checked"])
+            "artifact", "kind", "reason", "writes", "mentioned_by",
+            "freshness_checked"])
         w.writeheader()
         w.writerows(rows)
 

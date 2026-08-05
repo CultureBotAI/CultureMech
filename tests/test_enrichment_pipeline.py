@@ -72,7 +72,7 @@ class TestATCCCrossRefBackfill:
         self.pipeline.apply_atcc_crossrefs(self.temp_dir, crossref_file, dry_run=False)
 
         # Load updated file
-        with open(yaml_file, 'r', encoding='utf-8') as f:
+        with open(yaml_file, encoding='utf-8') as f:
             updated = yaml.safe_load(f)
 
         # Verify ATCC reference added to notes
@@ -114,7 +114,7 @@ class TestATCCCrossRefBackfill:
         self.pipeline.apply_atcc_crossrefs(self.temp_dir, crossref_file, dry_run=False)
 
         # Load file
-        with open(yaml_file, 'r', encoding='utf-8') as f:
+        with open(yaml_file, encoding='utf-8') as f:
             updated = yaml.safe_load(f)
 
         # Should not have duplicate entry
@@ -141,7 +141,7 @@ class TestATCCCrossRefBackfill:
         self.pipeline.apply_atcc_crossrefs(self.temp_dir, crossref_file, dry_run=True)
 
         # Load file
-        with open(yaml_file, 'r', encoding='utf-8') as f:
+        with open(yaml_file, encoding='utf-8') as f:
             updated = yaml.safe_load(f)
 
         # Should be unchanged
@@ -204,7 +204,7 @@ class TestOrganismDataBackfill:
         self.pipeline.apply_organism_data(self.temp_dir, organism_file, dry_run=False)
 
         # Load updated file
-        with open(yaml_file, 'r', encoding='utf-8') as f:
+        with open(yaml_file, encoding='utf-8') as f:
             updated = yaml.safe_load(f)
 
         # Verify organism_culture_type added
@@ -254,7 +254,7 @@ class TestOrganismDataBackfill:
         self.pipeline.apply_organism_data(self.temp_dir, organism_file, dry_run=False)
 
         # Load file
-        with open(yaml_file, 'r', encoding='utf-8') as f:
+        with open(yaml_file, encoding='utf-8') as f:
             updated = yaml.safe_load(f)
 
         # Should NOT overwrite existing data
@@ -288,7 +288,7 @@ class TestOrganismDataBackfill:
         self.pipeline.apply_organism_data(self.temp_dir, organism_file, dry_run=False)
 
         # File should remain unchanged (invalid name skipped)
-        with open(self.temp_dir / "test_file.yaml", 'r', encoding='utf-8') as f:
+        with open(self.temp_dir / "test_file.yaml", encoding='utf-8') as f:
             updated = yaml.safe_load(f)
 
         assert "target_organisms" not in updated
@@ -506,7 +506,7 @@ class TestEnrichmentPipelineIntegration:
         )
 
         # Load enriched file
-        with open(self.temp_dir / "DSMZ_1_NUTRIENT_AGAR.yaml", 'r', encoding='utf-8') as f:
+        with open(self.temp_dir / "DSMZ_1_NUTRIENT_AGAR.yaml", encoding='utf-8') as f:
             enriched = yaml.safe_load(f)
 
         # Verify ATCC cross-reference added
@@ -568,7 +568,7 @@ class TestEnrichmentPipelineIntegration:
         self.pipeline.apply_organism_data(self.temp_dir, organism_file, dry_run=False)
 
         # Load enriched file
-        with open(yaml_file, 'r', encoding='utf-8') as f:
+        with open(yaml_file, encoding='utf-8') as f:
             enriched = yaml.safe_load(f)
 
         # Verify required schema fields are present
@@ -656,8 +656,8 @@ class TestATCCLiteratureVerification:
 
     def test_atcc_crossref_verifier_integration(self):
         """Test basic ATCCCrossRefVerifier integration."""
-        from culturemech.enrich.literature_verifier import LiteratureVerifier
         from culturemech.enrich.atcc_crossref_verifier import ATCCCrossRefVerifier
+        from culturemech.enrich.literature_verifier import LiteratureVerifier
 
         # Create verifier chain
         lit_verifier = LiteratureVerifier(use_fallback_pdf=False)
@@ -669,7 +669,7 @@ class TestATCCLiteratureVerification:
     def test_scihub_environment_variable_integration(self):
         """Test that ENABLE_SCIHUB_FALLBACK environment variable works."""
         import os
-        from culturemech.enrich.literature_verifier import LiteratureVerifier
+
 
         # Set environment variable
         os.environ["ENABLE_SCIHUB_FALLBACK"] = "true"

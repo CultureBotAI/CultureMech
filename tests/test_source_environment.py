@@ -4,12 +4,10 @@ Tests schema validation of the SourceEnvironmentDescriptor and EnvironmentTerm
 classes added for environmental linking (issue #2).
 """
 
-import os
 import re
 import subprocess
 from pathlib import Path
 
-import pytest
 import yaml
 
 SCHEMA_PATH = Path(__file__).parent.parent / "src" / "culturemech" / "schema" / "culturemech.yaml"
@@ -108,9 +106,8 @@ class TestDataclassGeneration:
         if src_path not in sys.path:
             sys.path.insert(0, src_path)
         from culturemech.schema.culturemech_dataclasses import (
-            SourceEnvironmentDescriptor,
             EnvironmentTerm,
-            MediaRecipe,
+            SourceEnvironmentDescriptor,
         )
         assert SourceEnvironmentDescriptor is not None
         assert EnvironmentTerm is not None
