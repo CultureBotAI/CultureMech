@@ -116,3 +116,33 @@ def test_the_corpus_has_no_untyped_solution_stubs_left(rt):
     """If this fails, `just retype-solution-records --apply` was not run."""
     left = rt.candidates()
     assert not left, f"{len(left)} stubs still untyped, e.g. {[p.name for p,_ in left[:5]]}"
+
+
+# --- shape vs meaning (the 606-error lesson) --------------------------------
+
+
+def test_a_curated_solution_does_not_have_solution_SHAPE(rk):
+    """`is_solution_record` answers "should media audits skip this?".
+    `has_solution_shape` answers "which schema class does this match?".
+
+    Conflating them routed 202 MediaRecipe-shaped records to SolutionRecipe and
+    produced 606 validation errors. A curatorial assertion about what a record
+    MEANS cannot change what it structurally IS.
+    """
+    stub = {"record_kind": "SOLUTION", "name": "x", "ingredients": []}
+    assert rk.is_solution_record(stub)
+    assert not rk.has_solution_shape(stub)
+
+
+def test_an_upstream_solution_is_both(rk):
+    up = {"term": {"id": "mediadive.solution:4367"}}
+    assert rk.is_solution_record(up) and rk.has_solution_shape(up)
+
+
+def test_validate_strict_routes_on_shape_not_meaning():
+    """Guard against re-merging the two: routing on `is_solution_record` here is
+    what broke validation."""
+    src = (REPO_ROOT / "scripts" / "validate_strict.py").read_text()
+    assert "has_solution_shape" in src
+    assert "is_solution_record(instance)" not in src, (
+        "validate_strict routes on meaning again; it must route on shape")

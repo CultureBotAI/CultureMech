@@ -56,6 +56,33 @@ SOLUTION_TERM_PREFIXES = ("mediadive.solution:", "MediaIngredientMech:")
 RECORD_KIND_SOLUTION = "SOLUTION"
 
 
+def has_solution_shape(instance: Any) -> bool:
+    """True if the record is STRUCTURED as a SolutionRecipe.
+
+    Distinct from `is_solution_record`, and the distinction is load-bearing.
+
+    `is_solution_record` answers "should media-level audits and rankings skip
+    this?" — a question about what the record IS. This one answers "which schema
+    class does this record's SHAPE match?", which is what `validate_strict` needs.
+
+    The 202 records carrying a curated `record_kind: SOLUTION` (#175) are stock
+    solutions conceptually, but they were imported with MediaRecipe shape — `name`,
+    `original_name`, `ingredients` — not the `preferred_term` / `composition` /
+    `term` shape of a SolutionRecipe. Validating them as SolutionRecipe produced
+    606 spurious errors across exactly those 202 files.
+
+    So shape routing keys on the upstream `term.id` prefix only. A curated
+    assertion about what a record means cannot change what it structurally is.
+    """
+    if not isinstance(instance, dict):
+        return False
+    term = instance.get("term")
+    if not isinstance(term, dict):
+        return False
+    tid = term.get("id")
+    return isinstance(tid, str) and tid.startswith(SOLUTION_TERM_PREFIXES)
+
+
 def is_solution_record(instance: Any) -> bool:
     """True if `instance` is a standalone stock-solution record, not a medium.
 
