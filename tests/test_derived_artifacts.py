@@ -156,18 +156,26 @@ def test_the_regenerating_writer_wins_when_several_touch_an_artifact(ada):
 # --- the slow-test budget itself (#191, #213) -------------------------------
 
 
+def _conftest():
+    """conftest.py is loaded by pytest as a plugin, not importable by name."""
+    spec = importlib.util.spec_from_file_location(
+        "_cm_conftest", REPO_ROOT / "tests" / "conftest.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
 def test_the_slow_test_budget_is_configured():
     """The guard against a fifth corpus-rescan regression. Pinned because an
     empty allowlist and a real threshold are the two things that make it work."""
-    import conftest  # noqa: PLC0415
-    assert conftest.SLOW_TEST_BUDGET_S >= 60, "budget too tight to be stable in CI"
-    assert conftest.SLOW_TEST_BUDGET_S <= 200, (
+    cft = _conftest()
+    assert cft.SLOW_TEST_BUDGET_S >= 60, "budget too tight to be stable in CI"
+    assert cft.SLOW_TEST_BUDGET_S <= 200, (
         "budget too loose to catch the 328s/421s regressions that motivated it")
 
 
 def test_the_slow_test_allowlist_entries_all_carry_a_reason():
     """An entry must be a decision, not a mute button. Empty is the current and
     preferred state."""
-    import conftest  # noqa: PLC0415
-    for nodeid, reason in conftest.SLOW_TEST_ALLOWLIST.items():
+    for nodeid, reason in _conftest().SLOW_TEST_ALLOWLIST.items():
         assert reason and len(reason) > 20, f"{nodeid} exempted without a real reason"
