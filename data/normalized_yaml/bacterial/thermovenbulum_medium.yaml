@@ -12,12 +12,7 @@ media_term:
     id: mediadive.medium:J856
     label: THERMOVENBULUM MEDIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=856'
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: Full composition available at source database
+ingredients: []
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -53,6 +48,12 @@ curation_history:
   curator: migrate_data_quality_flags.py
   action: MIGRATED_DATA_QUALITY_FLAGS
   notes: dict(2 keys) -> list(2 entries)
+- timestamp: '2026-08-06T07:56:36.140437+00:00'
+  curator: curate_placeholder_composition.py
+  action: REMOVED_PLACEHOLDER_INGREDIENT
+  notes: Removed the 'See source for composition' placeholder ingredient; the record
+    carries no imported composition and is flagged incomplete (#175).
+  changes: Dropped placeholder ingredient 'See source for composition'
 data_quality_flags:
 - incomplete_composition
 - source_information_unavailable

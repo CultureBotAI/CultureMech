@@ -41,14 +41,16 @@ curation_history:
   action: MIGRATED_LEGACY_FIELDS
   notes: curation_history.date->timestamp=2; references.reference_id->reference=2;
     category->lowercase=1
+- timestamp: '2026-08-06T07:56:36.052589+00:00'
+  curator: curate_placeholder_composition.py
+  action: REMOVED_PLACEHOLDER_INGREDIENT
+  notes: Removed the 'See source for composition' placeholder ingredient; the record
+    carries no imported composition and is flagged incomplete (#175).
+  changes: Dropped placeholder ingredient 'See source for composition'
 references:
 - reference: CCAP:SE1_Marine
 - reference: https://www.ccap.ac.uk/wp-content/uploads/MR_SE1_Marine.pdf
-ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: VARIABLE
+ingredients: []
 data_quality_flags:
 - incomplete_composition
 original_name: SE1

@@ -226,6 +226,13 @@ curate-medium-type *args="":
 curate-organism-culture-type *args="":
     uv run --extra dev python scripts/curate_organism_culture_type.py {{args}}
 
+# Remove the "See source for composition" placeholder ingredient (#175): a fake
+# component that pollutes text scans. The incomplete_composition flag carries the
+# state instead. Report-only without --apply.
+[group('Curation')]
+curate-placeholder-composition *args="":
+    uv run --extra dev python scripts/curate_placeholder_composition.py {{args}}
+
 [group('QC')]
 audit-selective-agent-mismatch *args="":
     uv run --extra dev python scripts/audit_selective_agent_mismatch.py {{args}}

@@ -17,10 +17,13 @@ unidentifiable — and each was calibrated against its corpus frequency so a
 signal firing on half the corpus cannot dominate one firing on 3%.
 
 STRUCTURAL — the composition is absent or unusable:
-  no ingredients               30   362 records (3.3%)
-  placeholder ingredient text  25   167 (1.5%)   "see source", "not specified"
+  no ingredients               30   261 media (2.4%)
+  placeholder ingredient text  25    66 (0.6%)    "not specified"; the 100 "see
+                                                  source" placeholders were lifted
+                                                  to `ingredients: []` in #175, so
+                                                  they now score `no ingredients`
   mangled ingredient name      25     1 (0.0%)   a whole recipe in one field (#166)
-  only 1-2 ingredients         15   627 (5.7%)
+  only 1-2 ingredients         15  1063 (9.6%)
 
 GROUNDING — present but not machine-usable:
   no ingredient grounded       20   398 (3.6%)
