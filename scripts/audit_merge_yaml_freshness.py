@@ -112,7 +112,7 @@ class DriftReport:
 
 
 def compare_corpora(tracked_dir: Path, fresh_dir: Path) -> DriftReport:
-    """Diff two directories of ``*.yaml`` records by filename and bytes.
+    """Diff two directories of ``*.yaml`` records by filename and normalized content.
 
     Pure and side-effect-free so it can be unit-tested without running the merge.
     A record is ``changed`` when the same filename exists in both but its content
@@ -152,6 +152,11 @@ def regenerate(dest: Path) -> None:
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    # Defaults to merged/, which merge-recipes writes. merged_2026/ is a separate,
+    # more-drifted generation that gen-media-pages actually renders; it is NOT a
+    # valid target here because a fresh run uses this tool's default fingerprinting,
+    # which may not match how merged_2026/ was produced (see the HierarchyAware
+    # fingerprinter). Reconciling the two corpora is the policy half of #215.
     ap.add_argument("--tracked-dir", type=Path, default=TRACKED_MERGED_DIR,
                     help="The tracked merged corpus a fresh run must reproduce.")
     ap.add_argument("--json", action="store_true",
