@@ -136,14 +136,19 @@ def compare_corpora(tracked_dir: Path, fresh_dir: Path) -> DriftReport:
 
 
 def regenerate(dest: Path) -> None:
-    """Run the merger into ``dest`` exactly as ``just merge-recipes`` does."""
+    """Run the merger into ``dest`` exactly as ``just merge-recipes`` does.
+
+    The merger's progress bars and stats are diagnostic, so its stdout is routed
+    to stderr — otherwise it would pollute this tool's stdout and break ``--json``,
+    whose contract is that stdout carries only the JSON summary.
+    """
     dest.mkdir(parents=True, exist_ok=True)
     res = subprocess.run(
         ["uv", "run", "python", "-m", "culturemech.merge.merge_recipes",
          "--normalized-dir", str(NORMALIZED_DIR),
          "--output-dir", str(dest),
          "--stats-file", str(dest.parent / "merge_stats.json")],
-        cwd=REPO,
+        cwd=REPO, stdout=sys.stderr,
     )
     if res.returncode != 0:
         raise SystemExit(f"merge_recipes failed with exit code {res.returncode}")

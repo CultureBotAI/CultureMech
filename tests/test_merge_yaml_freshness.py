@@ -9,6 +9,7 @@ part with logic in it — the merge itself is exercised by the Merge recipes.
 from __future__ import annotations
 
 import importlib.util
+import json
 import sys
 from pathlib import Path
 
@@ -96,6 +97,32 @@ def test_real_change_survives_timestamp_normalization(amf, tmp_path):
            "name: R\ncategory: archaeal\ncuration_history:\n- action: MERGED_RECIPES\n  timestamp: '2026-08-05T00:00:00Z'\n")
     report = amf.compare_corpora(tracked, fresh)
     assert report.changed == ["r.yaml"]
+
+
+def test_json_mode_emits_only_json(amf, tmp_path, monkeypatch, capsys):
+    """--json must put nothing but the summary on stdout. The merge subprocess is
+    noisy (progress bars, stats), so regenerate routes its stdout to stderr; this
+    guards that contract without running the real ~3-min merge."""
+    tracked = tmp_path / "tracked"
+    tracked.mkdir()
+    _write(tracked, "a.yaml", "id: 1\n")
+
+    def fake_regenerate(dest):
+        dest.mkdir(parents=True, exist_ok=True)
+        # The real regenerate routes the merge subprocess's stdout to stderr, so
+        # simulate its noise on stderr — the point is that main's OWN stdout stays
+        # pure JSON.
+        print("Progress: [####] noise on stderr", file=sys.stderr)
+        _write(dest, "a.yaml", "id: 1\n")
+
+    monkeypatch.setattr(amf, "regenerate", fake_regenerate)
+    rc = amf.main(["--tracked-dir", str(tracked), "--json"])
+    assert rc == 0  # corpora match
+
+    out = capsys.readouterr().out
+    payload = json.loads(out)  # raises if anything but JSON landed on stdout
+    assert payload["unchanged"] == 1
+    assert payload["changed"] == 0
 
 
 def test_only_yaml_files_are_compared(amf, tmp_path):
