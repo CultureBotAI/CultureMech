@@ -38,7 +38,7 @@ CultureMech uses `uv`-managed `.venv/`:
 ### 1. Validate the canonical merged set
 
 ```bash
-find data/merge_yaml/merged_2026 -name "*.yaml" -print0 \
+find data/merge_yaml/merged -name "*.yaml" -print0 \
   | xargs -0 .venv/bin/linkml-validate \
       -s src/culturemech/schema/culturemech.yaml \
       -C MediaRecipe \
@@ -94,7 +94,7 @@ grep -rn '"reference_id":' src/ scripts/ --include='*.py' | head -10
 ### 5. Re-validate after fixes
 
 ```bash
-find data/merge_yaml/merged_2026 -name "*.yaml" -print0 \
+find data/merge_yaml/merged -name "*.yaml" -print0 \
   | xargs -0 .venv/bin/linkml-validate \
       -s src/culturemech/schema/culturemech.yaml \
       -C MediaRecipe \
