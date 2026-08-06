@@ -125,6 +125,25 @@ def test_json_mode_emits_only_json(amf, tmp_path, monkeypatch, capsys):
     assert payload["changed"] == 0
 
 
+def test_tracked_dir_outside_repo_does_not_crash(amf, tmp_path, monkeypatch, capsys):
+    """A --tracked-dir outside the repo must not raise (relative_to would), and it
+    must not raise AFTER the merge — the crash-after-work bug #203 fixed elsewhere.
+    tmp_path is outside the repo, so it exercises the is_relative_to guard."""
+    tracked = tmp_path / "tracked"
+    tracked.mkdir()
+    _write(tracked, "a.yaml", "id: 1\n")
+
+    def fake_regenerate(dest):
+        dest.mkdir(parents=True, exist_ok=True)
+        _write(dest, "a.yaml", "id: 1\n")
+
+    monkeypatch.setattr(amf, "regenerate", fake_regenerate)
+    rc = amf.main(["--tracked-dir", str(tracked)])  # human output, prints the path
+    assert rc == 0
+    out = capsys.readouterr().out
+    assert str(tracked) in out  # shown verbatim, not crashed on relative_to
+
+
 def test_only_yaml_files_are_compared(amf, tmp_path):
     """A stray stats JSON or index in the corpus dir must not count as a record."""
     tracked, fresh = tmp_path / "t", tmp_path / "f"

@@ -187,11 +187,16 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(summary, indent=2))
         return 0 if report.is_current else 1
 
+    # Display the path repo-relative when it is inside the repo, else verbatim.
+    # A bare .relative_to(REPO) raises on a --tracked-dir outside the repo, and it
+    # would raise only AFTER the ~3-min merge — the crash-after-work footgun #203
+    # fixed in two sibling audit scripts.
+    td_disp = (args.tracked_dir.relative_to(REPO)
+               if args.tracked_dir.is_relative_to(REPO) else args.tracked_dir)
     print("\n" + "=" * 60)
     print("merge_yaml derivation freshness (#215)")
     print("=" * 60)
-    print(f"  tracked corpus : {summary['tracked_total']:>6} records  "
-          f"({args.tracked_dir.relative_to(REPO)})")
+    print(f"  tracked corpus : {summary['tracked_total']:>6} records  ({td_disp})")
     print(f"  fresh run      : {summary['fresh_total']:>6} records")
     print(f"  unchanged      : {summary['unchanged']:>6}")
     print(f"  changed        : {summary['changed']:>6}")
