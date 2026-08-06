@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T02:11:04.135160+00:00",
+  "generated": "2026-08-06T22:51:48.312919+00:00",
   "category": "fungal",
   "count": 126,
   "recipes": {
@@ -1091,7 +1091,7 @@
     "CultureMech:010440": {
       "name": "wmalt_yeast_extract_medium_wmy",
       "filename": "wmalt_yeast_extract_medium_wmy.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 0,
       "id": "CultureMech:010440",
       "source_id": "mediadive.medium:C109",
       "source": "MediaDive",
@@ -1223,7 +1223,7 @@
     "CultureMech:010512": {
       "name": "yeast_extract_medium_ye",
       "filename": "yeast_extract_medium_ye.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 0,
       "id": "CultureMech:010512",
       "source_id": "mediadive.medium:J249",
       "source": "MediaDive",

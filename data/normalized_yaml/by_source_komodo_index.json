@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T02:11:07.757111+00:00",
+  "generated": "2026-08-06T22:51:52.016931+00:00",
   "source": "KOMODO",
   "count": 3637,
   "recipes": {
@@ -2348,6 +2348,7 @@
       "categories": [
         "bacterial"
       ],
+      "organism_culture_type": "isolate",
       "category_dir": "bacterial"
     },
     "CultureMech:003731": {
@@ -3498,6 +3499,7 @@
       "categories": [
         "bacterial"
       ],
+      "organism_culture_type": "isolate",
       "category_dir": "bacterial"
     },
     "CultureMech:003941": {
@@ -6058,7 +6060,7 @@
     "CultureMech:004886": {
       "name": "neomycin_agar",
       "filename": "KOMODO_309_NEOMYCIN_AGAR.yaml",
-      "ingredient_count": 5,
+      "ingredient_count": 6,
       "id": "CultureMech:004886",
       "source_id": "komodo.medium:309",
       "source": "KOMODO",
@@ -6945,6 +6947,7 @@
       "categories": [
         "bacterial"
       ],
+      "organism_culture_type": "isolate",
       "category_dir": "bacterial"
     },
     "CultureMech:005269": {
@@ -9819,6 +9822,7 @@
       "categories": [
         "bacterial"
       ],
+      "organism_culture_type": "isolate",
       "has_hierarchy_enrichment": true,
       "category_dir": "bacterial"
     },

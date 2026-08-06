@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-29T02:11:07.870344+00:00",
-  "total_recipes": 15878,
+  "generated": "2026-08-06T22:51:52.128543+00:00",
+  "total_recipes": 15877,
   "by_source": {
     "KOMODO": 3637,
     "MediaDive": 3325,
     "TOGO": 2917,
-    "unknown": 5999
+    "unknown": 5998
   },
   "by_category": {
     "algae": 249,
     "archaea": 743,
-    "bacterial": 14305,
+    "bacterial": 14304,
     "fungal": 126,
     "specialized": 455
   },

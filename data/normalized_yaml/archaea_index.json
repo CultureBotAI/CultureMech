@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T02:09:35.493057+00:00",
+  "generated": "2026-08-06T22:50:03.851163+00:00",
   "category": "archaea",
   "count": 743,
   "recipes": {
@@ -4474,7 +4474,7 @@
     "CultureMech:002362": {
       "name": "archaeoglobus_mcr_medium",
       "filename": "archaeoglobus_mcr_medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 0,
       "id": "CultureMech:002362",
       "source_id": "mediadive.medium:J1195",
       "source": "MediaDive",
@@ -4503,7 +4503,8 @@
       "solution_count": 1,
       "categories": [
         "archaea"
-      ]
+      ],
+      "organism_culture_type": "isolate"
     },
     "CultureMech:001509": {
       "name": "archaeoglobus_neptunius_medium",
@@ -5438,7 +5439,8 @@
       "solution_count": 2,
       "categories": [
         "archaea"
-      ]
+      ],
+      "organism_culture_type": "isolate"
     },
     "CultureMech:000466": {
       "name": "ignisphaera_medium",
@@ -5574,6 +5576,7 @@
       "categories": [
         "archaea"
       ],
+      "organism_culture_type": "community",
       "has_hierarchy_enrichment": true
     },
     "CultureMech:000249": {
@@ -5748,7 +5751,7 @@
     "CultureMech:003049": {
       "name": "methanobacterium_medium_ii_with_formae",
       "filename": "methanobacterium_medium_ii_with_formae.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 0,
       "id": "CultureMech:003049",
       "source_id": "mediadive.medium:J703",
       "source": "MediaDive",
@@ -5926,7 +5929,7 @@
     "CultureMech:002720": {
       "name": "methanocaldococcus_indiensis_medium",
       "filename": "methanocaldococcus_indiensis_medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 0,
       "id": "CultureMech:002720",
       "source_id": "mediadive.medium:J361",
       "source": "MediaDive",
@@ -6938,7 +6941,8 @@
       "source": "MediaDive",
       "categories": [
         "archaea"
-      ]
+      ],
+      "organism_culture_type": "isolate"
     },
     "CultureMech:005004": {
       "name": "methanosarcina_mp_medium",
@@ -7373,7 +7377,7 @@
     "CultureMech:003286": {
       "name": "modified_halosimplex_medium",
       "filename": "modified_halosimplex_medium.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 0,
       "id": "CultureMech:003286",
       "source_id": "mediadive.medium:J939",
       "source": "MediaDive",
@@ -7812,6 +7816,7 @@
       "categories": [
         "archaea"
       ],
+      "organism_culture_type": "isolate",
       "has_hierarchy_enrichment": true
     },
     "CultureMech:008136": {
@@ -8048,6 +8053,7 @@
       "categories": [
         "archaea"
       ],
+      "organism_culture_type": "isolate",
       "has_hierarchy_enrichment": true
     },
     "CultureMech:002532": {
@@ -8083,6 +8089,7 @@
       "categories": [
         "archaea"
       ],
+      "organism_culture_type": "isolate",
       "has_hierarchy_enrichment": true
     },
     "CultureMech:008911": {
@@ -8096,6 +8103,7 @@
       "categories": [
         "archaea"
       ],
+      "organism_culture_type": "isolate",
       "has_hierarchy_enrichment": true
     },
     "CultureMech:002441": {
@@ -8472,7 +8480,7 @@
     "CultureMech:002977": {
       "name": "thermoproteus_medium_c",
       "filename": "thermoproteus_medium_c.yaml",
-      "ingredient_count": 1,
+      "ingredient_count": 0,
       "id": "CultureMech:002977",
       "source_id": "mediadive.medium:J630",
       "source": "MediaDive",

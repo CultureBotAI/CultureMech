@@ -303,7 +303,6 @@ CultureMech:000302	data/normalized_yaml/bacterial/exilispira_thermophila_medium.
 CultureMech:000303	data/normalized_yaml/bacterial/sporolituus_thermophilus_medium.yaml
 CultureMech:000304	data/normalized_yaml/archaea/modified_balchs_methanogen_medium_1_b.yaml
 CultureMech:000305	data/normalized_yaml/archaea/thermanaerobacter_thermophila_medium.yaml
-CultureMech:000306	data/normalized_yaml/bacterial/test_medium_123.yaml
 CultureMech:000307	data/normalized_yaml/bacterial/s_w_amp.yaml
 CultureMech:000308	data/normalized_yaml/bacterial/s_w_ca.yaml
 CultureMech:000309	data/normalized_yaml/bacterial/s77_vitamins.yaml
