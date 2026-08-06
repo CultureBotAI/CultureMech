@@ -29,6 +29,7 @@ __all__ = [
     "parse_formula",
     "parse_ontology_formula",
     "compare_formulas",
+    "hydration_states",
     "build_formula_lookup",
 ]
 
