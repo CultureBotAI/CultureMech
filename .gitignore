@@ -169,3 +169,11 @@ reports/media_content_review_manifest.json
 reports/media_content_review_manifest_summary.md
 reports/media_variation_candidate_groups.tsv
 reports/media_variation_candidate_groups.json
+
+# Growth-review manifest: derived from gitignored workspace/ growth-evidence
+# proposals, so it is machine-local and not reproducible from tracked data (#224).
+# Regenerate with `python scripts/build_media_growth_review_manifest.py` (needs the
+# local proposals). The hand-written corpus_scope.md doc stays tracked.
+reports/media_growth_review_manifest.tsv
+reports/media_growth_review_manifest.json
+reports/media_growth_review_manifest_summary.md

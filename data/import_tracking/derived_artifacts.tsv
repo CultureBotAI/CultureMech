@@ -79,8 +79,6 @@ reports/instance_validation_failures.tsv	UNKNOWN	writer purity unestablished (va
 reports/label_plausibility_2026-07-19.tsv	SNAPSHOT	dated filename			
 reports/label_plausibility_after_fixes.tsv	UNKNOWN	no writer found			
 reports/media_content_review_manifest.tsv	CURRENT_VIEW	build_media_content_review_manifest.py	scripts/build_media_content_review_manifest.py	scripts/build_media_content_review_manifest.py; scripts/propose_media_variant_links.py	yes
-reports/media_growth_review_manifest.json	UNKNOWN	writer purity unestablished (build_media_growth_review_manifest.py)	scripts/build_media_growth_review_manifest.py	scripts/build_media_growth_review_manifest.py	
-reports/media_growth_review_manifest.tsv	UNKNOWN	writer purity unestablished (build_media_growth_review_manifest.py)	scripts/build_media_growth_review_manifest.py	scripts/build_media_growth_review_html.py; scripts/build_media_growth_review_manifest.py	
 reports/media_variant_link_apply_plan.json	UNKNOWN	writer purity unestablished (apply_media_variant_links.py)	scripts/apply_media_variant_links.py	scripts/apply_media_variant_links.py	
 reports/media_variant_link_apply_plan.tsv	UNKNOWN	writer purity unestablished (apply_media_variant_links.py)	scripts/apply_media_variant_links.py	scripts/apply_media_variant_links.py	
 reports/media_variant_link_proposals.json	UNKNOWN	writer purity unestablished (propose_media_variant_links.py)	scripts/propose_media_variant_links.py	scripts/propose_media_variant_links.py	
